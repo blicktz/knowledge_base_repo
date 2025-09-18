@@ -1,10 +1,14 @@
-.PHONY: help install convert test clean example
+.PHONY: help install convert test clean example batch batch-custom setup-dirs
 .DEFAULT_GOAL := help
 
 # Variables
 PYTHON := poetry run python
 SCRIPT := pdf2text/pdf_to_markdown.py
 VENV := .venv
+
+# Default directories for batch processing
+PDF_INPUT := /Volumes/J15/copy-writing/dk_books_pdf
+MD_OUTPUT := /Volumes/J15/copy-writing/dk_books_md 
 
 help: ## Show this help message
 	@echo "PDF to Markdown Converter"
@@ -14,11 +18,16 @@ help: ## Show this help message
 	@echo ""
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2}'
 	@echo ""
-	@echo "Examples:"
+	@echo "Single file examples:"
 	@echo "  make convert INPUT=document.pdf"
 	@echo "  make convert INPUT=document.pdf OUTPUT=output.md"
 	@echo "  make convert INPUT=document.pdf PAGES=0,2-4"
 	@echo "  make convert INPUT=document.pdf IMAGES=true"
+	@echo ""
+	@echo "Batch processing examples:"
+	@echo "  make setup-dirs    # Create default directories"
+	@echo "  make batch         # Convert all PDFs in $(PDF_INPUT)/"
+	@echo "  make batch-custom INPUT_DIR=my_pdfs OUTPUT_DIR=my_md"
 
 install: ## Install dependencies using Poetry
 	@echo "Installing dependencies..."
@@ -105,10 +114,42 @@ example: ## Show usage examples
 	@echo "7. Direct Python usage:"
 	@echo "   poetry run python pdf2text/pdf_to_markdown.py document.pdf -o output.md"
 
+setup-dirs: ## Create default input/output directories
+	@echo "Creating default directories..."
+	mkdir -p $(PDF_INPUT)
+	mkdir -p $(MD_OUTPUT)
+	@echo "✓ Created directories:"
+	@echo "  Input:  $(PDF_INPUT)/"
+	@echo "  Output: $(MD_OUTPUT)/"
+	@echo ""
+	@echo "You can now place PDF files in $(PDF_INPUT)/ and run 'make batch'"
+
+batch: setup-dirs ## Batch convert all PDFs in default input folder
+	@echo "Converting all PDFs from $(PDF_INPUT)/ to $(MD_OUTPUT)/"
+	$(PYTHON) $(SCRIPT) --batch --input-dir $(PDF_INPUT) --output-dir $(MD_OUTPUT)
+
+batch-custom: ## Batch convert with custom folders (INPUT_DIR=... OUTPUT_DIR=...)
+ifndef INPUT_DIR
+	@echo "Error: INPUT_DIR parameter required"
+	@echo "Usage: make batch-custom INPUT_DIR=my_pdfs OUTPUT_DIR=my_markdown"
+	@exit 1
+endif
+ifndef OUTPUT_DIR
+	@echo "Error: OUTPUT_DIR parameter required"
+	@echo "Usage: make batch-custom INPUT_DIR=my_pdfs OUTPUT_DIR=my_markdown"
+	@exit 1
+endif
+	@echo "Converting all PDFs from $(INPUT_DIR)/ to $(OUTPUT_DIR)/"
+	@mkdir -p $(OUTPUT_DIR)
+	$(PYTHON) $(SCRIPT) --batch --input-dir $(INPUT_DIR) --output-dir $(OUTPUT_DIR)
+
 env-info: ## Show environment information
 	@echo "Environment Information"
 	@echo "======================"
 	@echo "Python version: $$(poetry run python --version)"
 	@echo "Poetry version: $$(poetry --version)"
+	@echo "Default directories:"
+	@echo "  PDF Input:  $(PDF_INPUT)/"
+	@echo "  MD Output:  $(MD_OUTPUT)/"
 	@echo "Project dependencies:"
 	@poetry show --tree

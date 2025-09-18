@@ -8,6 +8,8 @@ A simple Python script to convert text-selectable PDFs to clean Markdown format,
 - 🤖 **LLM-Optimized**: Clean output perfect for AI analysis
 - 📄 **Flexible**: Convert entire documents or specific pages
 - 🖼️ **Image Support**: Extract images when needed
+- 📁 **Batch Processing**: Convert entire folders of PDFs automatically
+- ⏭️ **Smart Skipping**: Automatically skip already converted files
 - 🛠️ **Easy Setup**: Poetry dependency management + Makefile commands
 
 ## Quick Start
@@ -17,14 +19,17 @@ A simple Python script to convert text-selectable PDFs to clean Markdown format,
    make install
    ```
 
-2. **Convert a PDF**:
+2. **Single file conversion**:
    ```bash
    make convert INPUT=your_document.pdf
+   make save FILE=your_document.pdf
    ```
 
-3. **Save to file**:
+3. **Batch processing**:
    ```bash
-   make save FILE=your_document.pdf
+   make setup-dirs              # Create pdf_input/ and md_output/ folders
+   # Place your PDFs in pdf_input/
+   make batch                   # Convert all PDFs
    ```
 
 ## Installation
@@ -49,6 +54,7 @@ make test
 
 ### Using Makefile (Recommended)
 
+**Single File Processing:**
 ```bash
 # Convert PDF to stdout
 make convert INPUT=document.pdf
@@ -69,8 +75,21 @@ make quick FILE=document.pdf
 make save FILE=document.pdf
 ```
 
+**Batch Processing:**
+```bash
+# Set up default directories
+make setup-dirs
+
+# Convert all PDFs in pdf_input/ to md_output/
+make batch
+
+# Convert with custom directories
+make batch-custom INPUT_DIR=my_pdfs OUTPUT_DIR=my_markdown
+```
+
 ### Direct Python Usage
 
+**Single File Mode:**
 ```bash
 # Basic conversion
 poetry run python pdf2text/pdf_to_markdown.py document.pdf
@@ -83,6 +102,15 @@ poetry run python pdf2text/pdf_to_markdown.py document.pdf -p 0,2-4 -o output.md
 
 # Extract images
 poetry run python pdf2text/pdf_to_markdown.py document.pdf -i --image-dir images
+```
+
+**Batch Mode:**
+```bash
+# Batch convert all PDFs in a folder
+poetry run python pdf2text/pdf_to_markdown.py --batch --input-dir pdf_folder --output-dir md_folder
+
+# Short form
+poetry run python pdf2text/pdf_to_markdown.py -b --input-dir pdfs --output-dir markdown
 
 # See all options
 poetry run python pdf2text/pdf_to_markdown.py --help
@@ -94,28 +122,82 @@ poetry run python pdf2text/pdf_to_markdown.py --help
 |---------|-------------|
 | `make help` | Show all available commands |
 | `make install` | Install dependencies |
-| `make convert` | Convert PDF (see examples above) |
+| `make convert` | Convert single PDF (see examples above) |
 | `make quick FILE=x.pdf` | Quick convert to stdout |
 | `make save FILE=x.pdf` | Quick save to .md file |
+| `make setup-dirs` | Create default input/output directories |
+| `make batch` | Batch convert all PDFs in pdf_input/ |
+| `make batch-custom` | Batch convert with custom directories |
 | `make test` | Test the installation |
 | `make clean` | Clean up generated files |
 | `make example` | Show usage examples |
 
 ## Examples
 
-### Convert entire PDF
+### Single File Examples
+
+**Convert entire PDF:**
 ```bash
 make convert INPUT=research_paper.pdf OUTPUT=paper.md
 ```
 
-### Convert first 3 pages only
+**Convert first 3 pages only:**
 ```bash
 make convert INPUT=book.pdf PAGES=0-2 OUTPUT=chapter1.md
 ```
 
-### Extract text and images
+**Extract text and images:**
 ```bash
 make convert INPUT=presentation.pdf IMAGES=true OUTPUT=slides.md
+```
+
+### Batch Processing Examples
+
+**Basic batch conversion:**
+```bash
+# 1. Create directories and place PDFs
+make setup-dirs
+cp *.pdf pdf_input/
+
+# 2. Convert all PDFs
+make batch
+
+# Results will be in md_output/
+ls md_output/
+```
+
+**Custom directories:**
+```bash
+make batch-custom INPUT_DIR=research_papers OUTPUT_DIR=converted_papers
+```
+
+**File naming examples:**
+- `document.pdf` → `document.md`
+- `Research Paper 2024.pdf` → `Research Paper 2024.md`
+- `report_final.pdf` → `report_final.md`
+
+### Batch Processing Workflow
+
+1. **Automatic skipping**: Already converted files are automatically skipped
+2. **Progress tracking**: See real-time conversion progress
+3. **Error handling**: Failed conversions don't stop the batch process
+4. **Summary report**: Get statistics when processing completes
+
+```
+Found 5 PDF file(s) in 'pdf_input'
+Output directory: 'md_output'
+--------------------------------------------------
+[1/5] ✓ Converting: document1.pdf → document1.md
+[2/5] ⏭️  Skipping: document2.pdf ('document2.md' already exists)
+[3/5] ✓ Converting: document3.pdf → document3.md
+[4/5] ✓ Converting: document4.pdf → document4.md
+[5/5] ❌ Error converting 'corrupted.pdf': Invalid PDF
+--------------------------------------------------
+Batch Processing Summary:
+  Total PDFs found:      5
+  Successfully converted: 3
+  Skipped (existing):     1
+  Failed:                 1
 ```
 
 ## Output Format
