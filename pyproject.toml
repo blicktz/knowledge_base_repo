@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pdf-to-markdown"
+version = "0.1.0"
+description = "Simple PDF to Markdown converter for LLM analysis"
+authors = ["User <user@example.com>"]
+readme = "README.md"
+packages = [{include = "pdf2text"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pymupdf4llm = "^0.0.17"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
