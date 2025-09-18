@@ -10,6 +10,7 @@ packages = [{include = "pdf2text"}]
 python = "^3.10"
 pymupdf4llm = "^0.0.17"
 openai = "^1.12.0"
+litellm = "^1.52.0"
 pyyaml = "^6.0.1"
 numpy = "^1.24.0"
 scikit-learn = "^1.3.0"

@@ -11,7 +11,8 @@ from pathlib import Path
 from typing import Optional
 
 from dotenv import load_dotenv
-from openai import OpenAI
+from litellm import completion
+from openai import APIError, RateLimitError, APITimeoutError  # For exception handling
 from rag_system import SimpleRAG
 from prompts import MASTER_PROMPT_TEMPLATE, get_query_for_task
 
@@ -26,31 +27,32 @@ class DKCopywriter:
         """Initialize the copywriter with configuration"""
         self.config_path = config_path
         self.rag = SimpleRAG(config_path)
-        self.client = None
-        self._setup_client()
+        self._setup_litellm()
     
-    def _setup_client(self):
-        """Setup OpenAI client for OpenRouter"""
+    def _setup_litellm(self):
+        """Setup LiteLLM environment variables and configuration"""
         config = self.rag.config
         llm_config = config.get('llm', {}).get('config', {})
         
         api_key = llm_config.get('api_key')
-        base_url = llm_config.get('base_url')
-        
         if not api_key:
             raise ValueError("OPENROUTER_API_KEY not found in environment variables")
         
-        self.client = OpenAI(
-            api_key=api_key,
-            base_url=base_url
-        )
+        # Set environment variables for LiteLLM
+        os.environ["OPENROUTER_API_KEY"] = api_key
         
-        # Set extra headers if specified
-        extra_headers = llm_config.get('extra_headers', {})
-        if extra_headers:
-            self.client.default_headers.update(extra_headers)
+        # Set OpenRouter-specific environment variables for proper attribution
+        site_url = llm_config.get('site_url', 'https://dk-copywriter.com')
+        app_name = llm_config.get('app_name', 'DK AI Copywriting Assistant')
         
-        self.model = llm_config.get('model', 'anthropic/claude-3-haiku')
+        os.environ["OR_SITE_URL"] = site_url
+        os.environ["OR_APP_NAME"] = app_name
+        
+        # Store model and retry configuration
+        self.model = llm_config.get('model', 'openrouter/openai/gpt-5')
+        self.num_retries = llm_config.get('num_retries', 2)
+        self.timeout = llm_config.get('timeout', 30)
+        self.fallback_models = llm_config.get('fallback_models', [])
     
     def ensure_knowledge_base(self, documents_dir: str, force_rebuild: bool = False):
         """Ensure the knowledge base is ready"""
@@ -84,28 +86,84 @@ class DKCopywriter:
             user_task=task
         )
         
-        # Step 4: Generate copy
+        # Step 4: Generate copy using LiteLLM
         print("Generating copy with LLM...")
+        
+        messages = [
+            {
+                "role": "system", 
+                "content": "You are a world-class direct response copywriter. Generate compelling, action-driving copy that follows proven direct response principles."
+            },
+            {
+                "role": "user", 
+                "content": master_prompt
+            }
+        ]
+        
         try:
-            response = self.client.chat.completions.create(
+            if debug:
+                print(f"DEBUG: Using model: {self.model}")
+                print(f"DEBUG: Retry attempts: {self.num_retries}")
+                print(f"DEBUG: Timeout: {self.timeout}s")
+                print(f"DEBUG: Fallback models: {self.fallback_models}")
+            
+            # Primary model attempt with LiteLLM
+            response = completion(
                 model=self.model,
-                messages=[
-                    {
-                        "role": "system", 
-                        "content": "You are a world-class direct response copywriter. Generate compelling, action-driving copy that follows proven direct response principles."
-                    },
-                    {
-                        "role": "user", 
-                        "content": master_prompt
-                    }
-                ],
+                messages=messages,
                 max_tokens=2000,
-                temperature=0.7
+                temperature=0.7,
+                num_retries=self.num_retries,
+                timeout=self.timeout
             )
+            
+            if debug:
+                print(f"DEBUG: LiteLLM response received successfully")
+                print(f"DEBUG: Response type: {type(response)}")
+                content = response.choices[0].message.content
+                print(f"DEBUG: Content length: {len(content)}")
+                print(f"DEBUG: Content preview: {content[:200]}...")
             
             return response.choices[0].message.content
             
+        except (APIError, RateLimitError, APITimeoutError) as e:
+            if debug:
+                print(f"DEBUG: Primary model failed: {type(e).__name__}: {str(e)}")
+                print(f"DEBUG: Attempting fallback models...")
+            
+            # Try fallback models
+            for fallback_model in self.fallback_models:
+                try:
+                    if debug:
+                        print(f"DEBUG: Trying fallback model: {fallback_model}")
+                    
+                    response = completion(
+                        model=fallback_model,
+                        messages=messages,
+                        max_tokens=2000,
+                        temperature=0.7,
+                        num_retries=1,  # Fewer retries for fallbacks
+                        timeout=self.timeout
+                    )
+                    
+                    if debug:
+                        print(f"DEBUG: Fallback model {fallback_model} succeeded")
+                    
+                    return f"[Generated using fallback model: {fallback_model}]\n\n{response.choices[0].message.content}"
+                    
+                except Exception as fallback_error:
+                    if debug:
+                        print(f"DEBUG: Fallback model {fallback_model} failed: {str(fallback_error)}")
+                    continue
+            
+            # All models failed
+            return f"Error: All models failed. Primary error: {str(e)}"
+            
         except Exception as e:
+            if debug:
+                print(f"DEBUG: Unexpected error: {type(e).__name__}: {str(e)}")
+                import traceback
+                print(f"DEBUG: Traceback: {traceback.format_exc()}")
             return f"Error generating copy: {str(e)}"
     
     def interactive_mode(self, debug: bool = False):
