@@ -16,6 +16,20 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
+def format_excerpt_preview(content: str, source_info: str, max_chars: int = 300) -> str:
+    """Format excerpt preview showing beginning and end"""
+    if len(content) <= max_chars * 2:
+        # Short excerpt - show full content
+        return f"FULL CONTENT: \"{content.strip()}\""
+    
+    beginning = content[:max_chars].strip()
+    ending = content[-max_chars:].strip()
+    
+    return f"""BEGINNING: "{beginning}..."
+[...MIDDLE CONTENT OMITTED...]
+ENDING: "...{ending}\""""
+
+
 class SimpleRAG:
     """
     A simple Retrieval-Augmented Generation system using TF-IDF and cosine similarity
@@ -189,9 +203,15 @@ class SimpleRAG:
         
         for idx in top_indices[:max_results * 2]:  # Check more candidates
             if similarities[idx] >= similarity_threshold:
-                results.append(self.documents[idx]['content'])
+                content = self.documents[idx]['content']
+                results.append(content)
                 if debug:
+                    source_info = f"{self.documents[idx]['source']}_chunk_{self.documents[idx]['chunk_id']}"
                     print(f"DEBUG: Added result with similarity {similarities[idx]:.4f}")
+                    print(f"SOURCE: {source_info}")
+                    print("PREVIEW:")
+                    print(format_excerpt_preview(content, source_info))
+                    print("---")
         
         # If no results and similarity threshold is too high, lower it temporarily
         if not results and similarity_threshold > 0.05:
@@ -199,9 +219,15 @@ class SimpleRAG:
                 print("DEBUG: No results found, trying with lower threshold...")
             for idx in top_indices[:max_results]:
                 if similarities[idx] >= 0.05:  # Much lower fallback threshold
-                    results.append(self.documents[idx]['content'])
+                    content = self.documents[idx]['content']
+                    results.append(content)
                     if debug:
+                        source_info = f"{self.documents[idx]['source']}_chunk_{self.documents[idx]['chunk_id']}"
                         print(f"DEBUG: Fallback result with similarity {similarities[idx]:.4f}")
+                        print(f"SOURCE: {source_info}")
+                        print("PREVIEW:")
+                        print(format_excerpt_preview(content, source_info))
+                        print("---")
         
         return results[:max_results]
     

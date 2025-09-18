@@ -64,7 +64,7 @@ class DKCopywriter:
         else:
             print("✓ Using existing knowledge base")
     
-    def generate_copy(self, task: str) -> str:
+    def generate_copy(self, task: str, debug: bool = False) -> str:
         """Generate copy for the given task"""
         print(f"Generating copy for: {task}")
         print("=" * 60)
@@ -74,8 +74,9 @@ class DKCopywriter:
         print(f"Searching knowledge base with query: {query}")
         
         # Step 2: Retrieve relevant context
-        context = self.rag.get_context(query)
-        print(f"Retrieved {len(context.split('EXCERPT'))-1 if 'EXCERPT' in context else 0} relevant excerpts")
+        context = self.rag.get_context(query, debug=debug)
+        num_excerpts = len(context.split('EXCERPT'))-1 if 'EXCERPT' in context else 0
+        print(f"Retrieved {num_excerpts} relevant excerpts")
         
         # Step 3: Build master prompt
         master_prompt = MASTER_PROMPT_TEMPLATE.format(
@@ -107,11 +108,14 @@ class DKCopywriter:
         except Exception as e:
             return f"Error generating copy: {str(e)}"
     
-    def interactive_mode(self):
+    def interactive_mode(self, debug: bool = False):
         """Run in interactive mode"""
         print("\n" + "="*60)
         print("DK AI COPYWRITING ASSISTANT")
         print("="*60)
+        if debug:
+            print("🐛 DEBUG MODE ENABLED")
+            print("="*60)
         print("Enter your copywriting tasks. Type 'quit' to exit.\n")
         
         while True:
@@ -127,7 +131,7 @@ class DKCopywriter:
                     continue
                 
                 print()
-                copy = self.generate_copy(task)
+                copy = self.generate_copy(task, debug=debug)
                 
                 print("\n" + "="*60)
                 print("GENERATED COPY:")
@@ -192,6 +196,12 @@ Examples:
         help="Only setup the knowledge base, don't generate copy"
     )
     
+    parser.add_argument(
+        "--debug",
+        action="store_true",
+        help="Enable debug mode with detailed similarity scores"
+    )
+    
     args = parser.parse_args()
     
     # Validate config file exists
@@ -212,9 +222,9 @@ Examples:
             return
         
         if args.interactive:
-            copywriter.interactive_mode()
+            copywriter.interactive_mode(debug=args.debug)
         elif args.task:
-            copy = copywriter.generate_copy(args.task)
+            copy = copywriter.generate_copy(args.task, debug=args.debug)
             print("\n" + "="*60)
             print("GENERATED COPY:")
             print("="*60)

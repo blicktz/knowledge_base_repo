@@ -201,3 +201,12 @@ dk-rebuild: ## Rebuild DK knowledge base
 dk-test: ## Test DK assistant with sample task
 	@echo "Testing DK assistant with sample task..."
 	$(PYTHON) dk_rag/generate_copy.py "Write a short email promoting a marketing webinar for developers" --documents-dir $(MD_OUTPUT)
+
+dk-debug: ## Test with debug mode enabled (TASK="your task here")
+ifndef TASK
+	@echo "Error: TASK parameter required"
+	@echo "Usage: make dk-debug TASK=\"Write an email for a webinar about marketing\""
+	@exit 1
+endif
+	@echo "Generating copy with DK assistant (DEBUG MODE)..."
+	$(PYTHON) dk_rag/generate_copy.py "$(TASK)" --documents-dir $(MD_OUTPUT) --debug
