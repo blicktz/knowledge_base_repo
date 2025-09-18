@@ -9,6 +9,11 @@ packages = [{include = "pdf2text"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 pymupdf4llm = "^0.0.17"
+openai = "^1.12.0"
+pyyaml = "^6.0.1"
+numpy = "^1.24.0"
+scikit-learn = "^1.3.0"
+python-dotenv = "^1.0.0"
 
 
 [build-system]

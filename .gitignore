@@ -218,7 +218,7 @@ $RECYCLE.BIN/
 
 # Project-specific
 # Generated markdown files (optional - remove if you want to track converted files)
-*.md
+
 !README.md
 
 # Extracted images from PDFs
@@ -234,3 +234,7 @@ output_*.md
 temp/
 tmp/
 .tmp/
+
+# DK RAG database and cache
+dk_rag/db/
+dk_rag/__pycache__/

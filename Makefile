@@ -8,7 +8,7 @@ VENV := .venv
 
 # Default directories for batch processing
 PDF_INPUT := /Volumes/J15/copy-writing/dk_books_pdf
-MD_OUTPUT := /Volumes/J15/copy-writing/dk_books_md 
+MD_OUTPUT := ./dk_books
 
 help: ## Show this help message
 	@echo "PDF to Markdown Converter"
@@ -153,3 +153,51 @@ env-info: ## Show environment information
 	@echo "  MD Output:  $(MD_OUTPUT)/"
 	@echo "Project dependencies:"
 	@poetry show --tree
+
+dk-setup: ## Setup DK RAG copywriting assistant
+	@echo "Setting up DK RAG Copywriting Assistant..."
+	@echo "=========================================="
+	@if [ ! -f ".env" ]; then \
+		echo "⚠️  No .env file found. Creating from template..."; \
+		cp .env.example .env; \
+		echo "📝 Please edit .env file with your API keys:"; \
+		echo "   - OPENROUTER_API_KEY (get from https://openrouter.ai/keys)"; \
+		echo "   - OPENAI_API_KEY (get from https://platform.openai.com/api-keys)"; \
+		echo ""; \
+		echo "After setting up API keys, run 'make dk-setup' again."; \
+		exit 1; \
+	fi
+	@if [ ! -d "$(MD_OUTPUT)" ]; then echo "Error: MD_OUTPUT directory not found: $(MD_OUTPUT)"; exit 1; fi
+	@echo "✓ Found markdown documents directory"
+	@if [ -z "$$(grep '^OPENROUTER_API_KEY=' .env | cut -d= -f2)" ]; then \
+		echo "❌ OPENROUTER_API_KEY not set in .env file"; \
+		exit 1; \
+	fi
+	@if [ -z "$$(grep '^OPENAI_API_KEY=' .env | cut -d= -f2)" ]; then \
+		echo "❌ OPENAI_API_KEY not set in .env file"; \
+		exit 1; \
+	fi
+	@echo "✓ API keys configured"
+	$(PYTHON) dk_rag/generate_copy.py --setup-only --documents-dir $(MD_OUTPUT)
+	@echo "✓ DK RAG setup complete!"
+
+dk-generate: ## Generate copy with DK assistant (TASK="your task here")
+ifndef TASK
+	@echo "Error: TASK parameter required"
+	@echo "Usage: make dk-generate TASK=\"Write an email for a webinar about marketing\""
+	@exit 1
+endif
+	@echo "Generating copy with DK assistant..."
+	$(PYTHON) dk_rag/generate_copy.py "$(TASK)" --documents-dir $(MD_OUTPUT)
+
+dk-interactive: ## Run DK assistant in interactive mode
+	@echo "Starting DK assistant in interactive mode..."
+	$(PYTHON) dk_rag/generate_copy.py --interactive --documents-dir $(MD_OUTPUT)
+
+dk-rebuild: ## Rebuild DK knowledge base
+	@echo "Rebuilding DK knowledge base..."
+	$(PYTHON) dk_rag/generate_copy.py --setup-only --rebuild-kb --documents-dir $(MD_OUTPUT)
+
+dk-test: ## Test DK assistant with sample task
+	@echo "Testing DK assistant with sample task..."
+	$(PYTHON) dk_rag/generate_copy.py "Write a short email promoting a marketing webinar for developers" --documents-dir $(MD_OUTPUT)
