@@ -28,6 +28,11 @@ help: ## Show this help message
 	@echo "  make setup-dirs    # Create default directories"
 	@echo "  make batch         # Convert all PDFs in $(PDF_INPUT)/"
 	@echo "  make batch-custom INPUT_DIR=my_pdfs OUTPUT_DIR=my_md"
+	@echo ""
+	@echo "Audio transcription examples:"
+	@echo "  make audio-setup   # Verify audio setup"
+	@echo "  make audio-transcribe INPUT=podcast.mp3"
+	@echo "  make audio-batch INPUT_DIR=podcasts OUTPUT_DIR=transcripts"
 
 install: ## Install dependencies using Poetry
 	@echo "Installing dependencies..."
@@ -210,3 +215,188 @@ ifndef TASK
 endif
 	@echo "Generating copy with DK assistant (DEBUG MODE)..."
 	$(PYTHON) dk_rag/generate_copy.py "$(TASK)" --documents-dir $(MD_OUTPUT) --debug
+
+# Audio Transcription Targets
+# ============================
+
+audio-setup: ## Verify audio transcription setup
+	@echo "Checking audio transcription setup..."
+	@echo "=========================================="
+	@if ! command -v ffmpeg >/dev/null 2>&1; then \
+		echo "❌ ffmpeg not found. Install with: brew install ffmpeg"; \
+		exit 1; \
+	fi
+	@echo "✓ ffmpeg installed"
+	@echo "Testing Whisper model loading..."
+	$(PYTHON) audio2text/audio_to_text.py --setup-only
+	@echo "✓ Audio transcription setup complete!"
+
+audio-transcribe: ## Transcribe single audio file (INPUT=file.mp3 [OUTPUT=file.txt])
+ifndef INPUT
+	@echo "Error: INPUT parameter required"
+	@echo "Usage: make audio-transcribe INPUT=podcast.mp3 [OUTPUT=transcript.txt]"
+	@exit 1
+endif
+	@echo "Transcribing $(INPUT)..."
+	@cmd="$(PYTHON) audio2text/audio_to_text.py '$(INPUT)'"; \
+	if [ -n "$(OUTPUT)" ]; then cmd="$$cmd -o '$(OUTPUT)'"; fi; \
+	if [ -n "$(MODEL)" ]; then cmd="$$cmd --model '$(MODEL)'"; fi; \
+	eval $$cmd
+
+audio-quick: ## Quick transcribe to auto-named file (FILE=audio.mp3)
+ifndef FILE
+	@echo "Error: FILE parameter required"
+	@echo "Usage: make audio-quick FILE=podcast.mp3"
+	@exit 1
+endif
+	@output_file="$$(basename '$(FILE)' .mp3).txt"; \
+	echo "Transcribing $(FILE) to $$output_file..."; \
+	$(PYTHON) audio2text/audio_to_text.py "$(FILE)" -o "$$output_file"
+
+audio-batch: ## Batch transcribe MP3 files (INPUT_DIR=... OUTPUT_DIR=...)
+ifndef INPUT_DIR
+	@echo "Error: INPUT_DIR parameter required"
+	@echo "Usage: make audio-batch INPUT_DIR=/path/to/mp3s OUTPUT_DIR=/path/to/texts"
+	@exit 1
+endif
+ifndef OUTPUT_DIR
+	@echo "Error: OUTPUT_DIR parameter required"
+	@echo "Usage: make audio-batch INPUT_DIR=/path/to/mp3s OUTPUT_DIR=/path/to/texts"
+	@exit 1
+endif
+	@echo "Batch transcribing MP3 files..."
+	@echo "Input:  $(INPUT_DIR)/"
+	@echo "Output: $(OUTPUT_DIR)/"
+	@mkdir -p $(OUTPUT_DIR)
+	$(PYTHON) audio2text/audio_to_text.py --batch --input-dir "$(INPUT_DIR)" --output-dir "$(OUTPUT_DIR)"
+
+audio-batch-model: ## Batch transcribe with specific model (INPUT_DIR=... OUTPUT_DIR=... MODEL=...)
+ifndef INPUT_DIR
+	@echo "Error: INPUT_DIR parameter required"
+	@echo "Usage: make audio-batch-model INPUT_DIR=/path/to/mp3s OUTPUT_DIR=/path/to/texts MODEL=medium"
+	@exit 1
+endif
+ifndef OUTPUT_DIR
+	@echo "Error: OUTPUT_DIR parameter required"
+	@echo "Usage: make audio-batch-model INPUT_DIR=/path/to/mp3s OUTPUT_DIR=/path/to/texts MODEL=medium"
+	@exit 1
+endif
+ifndef MODEL
+	@echo "Error: MODEL parameter required"
+	@echo "Available models: tiny, base, small, medium, large, large-v2, large-v3, turbo, large-v3-turbo"
+	@exit 1
+endif
+	@echo "Batch transcribing with model: $(MODEL)"
+	@echo "Input:  $(INPUT_DIR)/"
+	@echo "Output: $(OUTPUT_DIR)/"
+	@mkdir -p $(OUTPUT_DIR)
+	$(PYTHON) audio2text/audio_to_text.py --batch --input-dir "$(INPUT_DIR)" --output-dir "$(OUTPUT_DIR)" --model "$(MODEL)"
+
+audio-test: ## Test transcription with sample audio
+	@echo "Running audio transcription test..."
+	@if [ -f "test_audio.mp3" ]; then \
+		$(PYTHON) audio2text/audio_to_text.py test_audio.mp3 -o test_transcript.txt; \
+		echo "✓ Test complete! Check test_transcript.txt"; \
+	else \
+		echo "Please provide a test_audio.mp3 file"; \
+		echo "You can download a sample podcast or create a short recording"; \
+	fi
+
+audio-info: ## Show audio transcription settings and model info
+	@echo "Audio Transcription Configuration"
+	@echo "================================="
+	@echo "Script: audio2text/audio_to_text.py"
+	@echo "Default model: large-v3"
+	@echo "Available models:"
+	@echo "  tiny:     ~39 MB, fastest, lowest accuracy"
+	@echo "  base:     ~74 MB"
+	@echo "  small:    ~244 MB"
+	@echo "  medium:   ~769 MB"
+	@echo "  large:    ~1550 MB"
+	@echo "  large-v2: ~1550 MB, better accuracy"
+	@echo "  large-v3: ~1550 MB, best accuracy (default)
+  turbo:    ~1550 MB, 8x faster than large-v3, near same quality"
+	@echo ""
+	@echo "Device support:"
+	@$(PYTHON) -c "import torch; print(f'  MPS (Metal): {torch.backends.mps.is_available()}')"
+	@$(PYTHON) -c "import torch; print(f'  CUDA: {torch.cuda.is_available()}')"
+	@echo ""
+	@echo "Example usage:"
+	@echo "  make audio-batch INPUT_DIR=/path/to/podcasts OUTPUT_DIR=/path/to/transcripts"
+
+audio-examples: ## Show audio transcription examples
+	@echo "Audio Transcription - Usage Examples"
+	@echo "===================================="
+	@echo ""
+	@echo "1. Transcribe single file to terminal:"
+	@echo "   make audio-transcribe INPUT=podcast.mp3"
+	@echo ""
+	@echo "2. Transcribe single file to specific output:"
+	@echo "   make audio-transcribe INPUT=episode1.mp3 OUTPUT=episode1.txt"
+	@echo ""
+	@echo "3. Quick transcribe with auto-generated filename:"
+	@echo "   make audio-quick FILE=podcast.mp3"
+	@echo ""
+	@echo "4. Batch transcribe entire directory:"
+	@echo "   make audio-batch INPUT_DIR=/Users/you/podcasts OUTPUT_DIR=/Users/you/transcripts"
+	@echo ""
+	@echo "5. Batch with specific model (faster but less accurate):"
+	@echo "   make audio-batch-model INPUT_DIR=./mp3s OUTPUT_DIR=./texts MODEL=medium"
+	@echo ""
+	@echo "6. Format existing transcript files:"
+	@echo "   make format-text INPUT=transcript.txt OUTPUT=formatted.txt"
+	@echo "   make format-batch INPUT_DIR=./transcripts OUTPUT_DIR=./formatted"
+	@echo ""
+	@echo "7. Direct Python usage:"
+	@echo "   poetry run python audio2text/audio_to_text.py --batch \\"
+	@echo "     --input-dir /path/to/mp3s --output-dir /path/to/texts"
+
+# Text Formatting Targets
+# ========================
+
+format-text: ## Format single text file with semantic paragraphs (INPUT=file.txt [OUTPUT=formatted.txt])
+ifndef INPUT
+	@echo "Error: INPUT parameter required"
+	@echo "Usage: make format-text INPUT=transcript.txt [OUTPUT=formatted.txt]"
+	@exit 1
+endif
+	@echo "Formatting text file: $(INPUT)"
+	@cmd="$(PYTHON) audio2text/format_text.py '$(INPUT)'"; \
+	if [ -n "$(OUTPUT)" ]; then cmd="$$cmd -o '$(OUTPUT)'"; fi; \
+	if [ -n "$(DEVICE)" ]; then cmd="$$cmd --device '$(DEVICE)'"; fi; \
+	eval $$cmd
+
+format-batch: ## Batch format text files (INPUT_DIR=... OUTPUT_DIR=...)
+ifndef INPUT_DIR
+	@echo "Error: INPUT_DIR parameter required"
+	@echo "Usage: make format-batch INPUT_DIR=/path/to/texts OUTPUT_DIR=/path/to/formatted"
+	@exit 1
+endif
+ifndef OUTPUT_DIR
+	@echo "Error: OUTPUT_DIR parameter required"
+	@echo "Usage: make format-batch INPUT_DIR=/path/to/texts OUTPUT_DIR=/path/to/formatted"
+	@exit 1
+endif
+	@echo "Batch formatting text files..."
+	@echo "Input:  $(INPUT_DIR)/"
+	@echo "Output: $(OUTPUT_DIR)/"
+	@mkdir -p $(OUTPUT_DIR)
+	$(PYTHON) audio2text/format_text.py --batch --input-dir "$(INPUT_DIR)" --output-dir "$(OUTPUT_DIR)"
+
+format-inplace: ## Format text file in place (overwrites original) (INPUT=file.txt)
+ifndef INPUT
+	@echo "Error: INPUT parameter required"
+	@echo "Usage: make format-inplace INPUT=transcript.txt"
+	@exit 1
+endif
+	@echo "Formatting text file in place: $(INPUT)"
+	$(PYTHON) audio2text/format_text.py "$(INPUT)"
+
+format-test: ## Test formatting on sample text file
+	@if [ -f "1.txt" ]; then \
+		echo "Testing text formatting on 1.txt..."; \
+		$(PYTHON) audio2text/format_text.py 1.txt -o 1_formatted.txt; \
+		echo "✓ Test complete! Check 1_formatted.txt"; \
+	else \
+		echo "Please provide a 1.txt file to test formatting"; \
+	fi
