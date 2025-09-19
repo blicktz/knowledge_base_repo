@@ -10,6 +10,7 @@ import os
 import sys
 import time
 import re
+import unicodedata
 from pathlib import Path
 from typing import Optional, List
 import warnings
@@ -164,6 +165,118 @@ def format_transcript_semantic(text: str, device: str = "mps", verbose: bool = F
         return '\n\n'.join(paragraphs)
 
 
+def slugify_filename(filename: str, max_length: int = 100) -> str:
+    """
+    Convert a filename to a safe, filesystem-friendly slug.
+    
+    Args:
+        filename: Original filename (with or without extension)
+        max_length: Maximum length of the resulting slug
+    
+    Returns:
+        Safe filename slug
+    """
+    # Remove file extension if present
+    if '.' in filename:
+        name, ext = filename.rsplit('.', 1)
+    else:
+        name, ext = filename, ''
+    
+    # Normalize unicode characters to ASCII
+    name = unicodedata.normalize('NFKD', name).encode('ascii', 'ignore').decode('ascii')
+    
+    # Convert to lowercase
+    name = name.lower()
+    
+    # Replace problematic characters with underscores or remove them
+    # Handle common problematic characters found in YouTube downloads
+    char_replacements = {
+        '$': 'dollar',
+        '⧸': '_',  # Big solidus (unicode)
+        '/': '_',
+        '\\': '_',
+        ':': '_',
+        '*': '_',
+        '?': '_',
+        '"': '_',
+        '<': '_',
+        '>': '_',
+        '|': '_',
+        '(': '_',
+        ')': '_',
+        '[': '_',
+        ']': '_',
+        '{': '_',
+        '}': '_',
+        '&': 'and',
+        '%': 'percent',
+        '#': '_',
+        '@': 'at',
+        '+': 'plus',
+        '=': '_',
+        '!': '_',
+        '~': '_',
+        '`': '_',
+        '^': '_',
+    }
+    
+    for char, replacement in char_replacements.items():
+        name = name.replace(char, replacement)
+    
+    # Replace spaces and multiple underscores with single underscore
+    name = re.sub(r'[\s\-]+', '_', name)
+    name = re.sub(r'_+', '_', name)
+    
+    # Remove leading/trailing underscores
+    name = name.strip('_')
+    
+    # Ensure it's not empty
+    if not name:
+        name = 'transcript'
+    
+    # Truncate if too long
+    if len(name) > max_length:
+        name = name[:max_length].rstrip('_')
+    
+    return name
+
+
+
+
+def is_hidden_file(file_path: Path) -> bool:
+    """
+    Check if a file is hidden (starts with .) or is a macOS system file.
+    
+    Args:
+        file_path: Path to check
+    
+    Returns:
+        True if file should be skipped
+    """
+    filename = file_path.name
+    
+    # Skip hidden files (starting with .)
+    if filename.startswith('.'):
+        return True
+    
+    # Skip common macOS system files
+    system_files = {
+        'Thumbs.db',      # Windows
+        'desktop.ini',    # Windows
+        'Icon\r',         # macOS custom icons
+        '__MACOSX',       # macOS archive metadata
+    }
+    
+    if filename in system_files:
+        return True
+    
+    # Skip macOS resource fork files
+    if filename.startswith('._'):
+        return True
+    
+    return False
+
+
 def transcribe_audio(
     audio_path: Path,
     output_path: Optional[Path] = None,
@@ -248,10 +361,16 @@ def batch_transcribe(
     if not input_dir.exists():
         raise FileNotFoundError(f"Input directory not found: {input_dir}")
     
-    # Find all MP3 files
-    audio_files = sorted(input_dir.glob("*.mp3"))
+    # Find all MP3 files, excluding hidden files
+    all_mp3_files = sorted(input_dir.glob("*.mp3"))
+    audio_files = [f for f in all_mp3_files if not is_hidden_file(f)]
+    
+    hidden_count = len(all_mp3_files) - len(audio_files)
+    if hidden_count > 0:
+        print(f"Excluded {hidden_count} hidden/system file(s)")
+    
     if not audio_files:
-        print(f"No MP3 files found in {input_dir}")
+        print(f"No valid MP3 files found in {input_dir}")
         return {"total": 0, "processed": 0, "skipped": 0, "failed": 0}
     
     # Create output directory
@@ -275,10 +394,13 @@ def batch_transcribe(
     
     # Process each file
     for i, audio_file in enumerate(audio_files, 1):
-        # Generate output path with .txt extension
-        output_file = output_dir / f"{audio_file.stem}.txt"
+        # Generate safe output filename
+        safe_name = slugify_filename(audio_file.stem)
+        output_file = output_dir / f"{safe_name}.txt"
         
         print(f"[{i}/{len(audio_files)}] Processing: {audio_file.name}")
+        if safe_name != audio_file.stem:
+            print(f"  Output filename: {output_file.name}")
         
         # Skip if already exists
         if skip_existing and output_file.exists():
@@ -425,8 +547,12 @@ Note: Larger models are more accurate but slower. 'turbo' is fastest with near l
             parser.error("Batch mode requires --input-dir and --output-dir")
         
         # Batch processing
-        input_dir = Path(args.input_dir)
-        output_dir = Path(args.output_dir)
+        try:
+            input_dir = Path(args.input_dir).expanduser().resolve()
+            output_dir = Path(args.output_dir).expanduser().resolve()
+        except (OSError, ValueError) as e:
+            print(f"Error: Invalid directory path: {e}", file=sys.stderr)
+            sys.exit(1)
         
         try:
             batch_transcribe(

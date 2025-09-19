@@ -400,3 +400,67 @@ format-test: ## Test formatting on sample text file
 	else \
 		echo "Please provide a 1.txt file to test formatting"; \
 	fi
+
+# Safe Audio Processing Targets (handles problematic filenames)
+# ==============================================================
+
+
+audio-batch-safe: ## Batch transcribe with safe filenames (INPUT_DIR=... OUTPUT_DIR=...)
+ifndef INPUT_DIR
+	@echo "Error: INPUT_DIR parameter required"
+	@echo "Usage: make audio-batch-safe INPUT_DIR=/path/to/mp3s OUTPUT_DIR=/path/to/texts"
+	@exit 1
+endif
+ifndef OUTPUT_DIR
+	@echo "Error: OUTPUT_DIR parameter required"
+	@echo "Usage: make audio-batch-safe INPUT_DIR=/path/to/mp3s OUTPUT_DIR=/path/to/texts"
+	@exit 1
+endif
+	@echo "Batch transcribing with safe filename generation..."
+	@echo "Input:  $(INPUT_DIR)/"
+	@echo "Output: $(OUTPUT_DIR)/"
+	@echo "Note: Hidden files will be excluded, filenames will be sanitized"
+	@mkdir -p $(OUTPUT_DIR)
+	$(PYTHON) audio2text/audio_to_text.py --batch --input-dir "$(INPUT_DIR)" --output-dir "$(OUTPUT_DIR)"
+
+filename-test: ## Test filename slugification
+	@echo "Testing filename slugification..."
+	@$(PYTHON) -c "\
+from audio2text.audio_to_text import slugify_filename; \
+test_names = [ \
+    'ChatGPT Operator Built a \$$500⧸Day Business in 30 Minutes (tutorial)', \
+    'Episode #123: How to Make \$$1000⧸Month Online! (AMAZING)', \
+    'The Best Marketing Tips & Tricks [2024] - MUST WATCH!!!', \
+    'File with spaces and (parentheses) & symbols', \
+    '._hidden_file_with_weird_chars' \
+]; \
+print('Filename Slugification Test:'); \
+print('=' * 60); \
+[print(f'Original: {name}\\nSafe:     {slugify_filename(name)}.txt\\n{\"=\"*40}') for name in test_names] \
+"
+
+audio-help: ## Show all audio-related commands
+	@echo "Audio Transcription Commands"
+	@echo "============================="
+	@echo ""
+	@echo "Basic Commands:"
+	@echo "  make audio-transcribe INPUT=file.mp3 OUTPUT=transcript.txt"
+	@echo "  make audio-batch INPUT_DIR=./mp3s OUTPUT_DIR=./texts"
+	@echo ""
+	@echo "Safe Commands (handles problematic filenames):"
+	@echo "  make audio-batch-safe INPUT_DIR=./mp3s OUTPUT_DIR=./texts"
+	@echo ""
+	@echo "Text Formatting:"
+	@echo "  make format-text INPUT=transcript.txt OUTPUT=formatted.txt"
+	@echo "  make format-batch INPUT_DIR=./texts OUTPUT_DIR=./formatted"
+	@echo ""
+	@echo "Testing & Info:"
+	@echo "  make audio-setup     # Verify setup"
+	@echo "  make audio-info      # Show configuration"
+	@echo "  make filename-test   # Test filename sanitization"
+	@echo ""
+	@echo "Recommended for 250 podcasts with problematic filenames:"
+	@echo "  make audio-batch-safe INPUT_DIR=\"/path/to/podcasts\" OUTPUT_DIR=./transcripts"
+	@echo ""
+	@echo "Note: For single files with special characters, create a directory"
+	@echo "      with just that file and use batch mode instead."
