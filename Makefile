@@ -17,7 +17,7 @@ DOCKER_TAG ?= latest
 DOCKER_FULL_NAME := $(DOCKER_USERNAME)/$(DOCKER_IMAGE_NAME):$(DOCKER_TAG)
 RUNPOD_POD_NAME ?= whisper-transcription-$(shell date +%s)
 RUNPOD_GPU_TYPE ?= NVIDIA RTX A5000
-RUNPOD_API_KEY_ENV ?= your-secret-api-key-$(shell python3 -c "import secrets; print(secrets.token_urlsafe(16))" 2>/dev/null || echo "change-me")
+TRANSCRIBE_API_KEY_ENV := mv_mtvG2X4U_dqRgdWMvSEoFtpMjRJkL4zlkwEXYH2I
 
 help: ## Show this help message
 	@echo "PDF to Markdown Converter"
@@ -556,7 +556,7 @@ runpod-create: runpod-check ## Create and deploy RunPod instance
 		--volumeSize 20 \
 		--containerDiskSize 10 \
 		--ports "8080/http" \
-		--env "RUNPOD_API_KEY=$(RUNPOD_API_KEY_ENV)" 2>&1); \
+		--env "TRANSCRIBE_API_KEY=$(TRANSCRIBE_API_KEY_ENV)" 2>&1); \
 	if echo "$$pod_output" | grep -q "error\|Error\|ERROR"; then \
 		echo "❌ Failed to create pod:"; \
 		echo "$$pod_output"; \
@@ -658,13 +658,13 @@ endif
 	@pod_id=$$(cat .runpod_pod_id); \
 	url="https://$$pod_id-8080.proxy.runpod.net"; \
 	output_dir="$(if $(OUTPUT),$(OUTPUT),./transcripts)"; \
-	api_key="$(RUNPOD_API_KEY_ENV)"; \
+	api_key="$(TRANSCRIBE_API_KEY_ENV)"; \
 	echo "🎵 Input: $(INPUT)"; \
 	echo "📁 Output: $$output_dir"; \
 	echo "🌐 Server: $$url"; \
 	echo ""; \
 	export RUNPOD_SERVER_URL="$$url"; \
-	export RUNPOD_API_KEY="$$api_key"; \
+	export TRANSCRIBE_API_KEY="$$api_key"; \
 	$(PYTHON) transcribe_client.py "$(INPUT)" "$$output_dir"
 
 runpod-batch: ## Batch transcribe directory using RunPod (INPUT_DIR=... [OUTPUT_DIR=./transcripts])
@@ -686,13 +686,13 @@ endif
 	@pod_id=$$(cat .runpod_pod_id); \
 	url="https://$$pod_id-8080.proxy.runpod.net"; \
 	output_dir="$(if $(OUTPUT_DIR),$(OUTPUT_DIR),./transcripts)"; \
-	api_key="$(RUNPOD_API_KEY_ENV)"; \
+	api_key="$(TRANSCRIBE_API_KEY_ENV)"; \
 	echo "📁 Input: $(INPUT_DIR)"; \
 	echo "📁 Output: $$output_dir"; \
 	echo "🌐 Server: $$url"; \
 	echo ""; \
 	export RUNPOD_SERVER_URL="$$url"; \
-	export RUNPOD_API_KEY="$$api_key"; \
+	export TRANSCRIBE_API_KEY="$$api_key"; \
 	$(PYTHON) transcribe_client.py "$(INPUT_DIR)" "$$output_dir"
 
 runpod-logs: ## Show RunPod instance logs

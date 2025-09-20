@@ -36,7 +36,7 @@ except ImportError as e:
     sys.exit(1)
 
 # Configuration
-API_KEY = os.environ.get("RUNPOD_API_KEY", "your-secret-api-key-here")
+API_KEY = os.environ.get("TRANSCRIBE_API_KEY", "mv_mtvG2X4U_dqRgdWMvSEoFtpMjRJkL4zlkwEXYH2I")
 UPLOAD_DIR = Path("/workspace/uploads")
 OUTPUT_DIR = Path("/workspace/outputs")
 JOBS_DIR = Path("/workspace/jobs")

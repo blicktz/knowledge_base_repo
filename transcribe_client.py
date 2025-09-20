@@ -16,6 +16,7 @@ import requests
 from requests.exceptions import RequestException
 from requests_toolbelt.multipart.encoder import MultipartEncoder, MultipartEncoderMonitor
 from tqdm import tqdm
+from dotenv import load_dotenv
 
 class TranscriptionClient:
     """Client for RunPod FastAPI transcription server."""
@@ -319,6 +320,9 @@ def find_audio_files(input_path: Path) -> List[Path]:
 
 def main():
     """Main entry point."""
+    # Load environment variables from .env file
+    load_dotenv()
+    
     parser = argparse.ArgumentParser(
         description="Simple client for RunPod FastAPI Transcription Server",
         formatter_class=argparse.RawDescriptionHelpFormatter,
@@ -341,7 +345,7 @@ Examples:
     parser.add_argument("input", type=Path, help="Input directory containing audio files or single audio file")
     parser.add_argument("output", type=Path, help="Output directory for transcripts")
     parser.add_argument("--server", default="http://localhost:8080", help="Server URL (default: http://localhost:8080)")
-    parser.add_argument("--api-key", default="your-secret-api-key-here", help="API key for authentication")
+    parser.add_argument("--api-key", default="your-secret-api-key-here", help="API key for authentication (overrides TRANSCRIBE_API_KEY from .env)")
     parser.add_argument("--model", default="turbo", 
                        choices=["tiny", "base", "small", "medium", "large", "large-v2", "large-v3", "turbo"],
                        help="Whisper model to use (default: turbo)")
@@ -372,7 +376,9 @@ Examples:
     
     # Get server URL from environment or use default
     server_url = os.environ.get("RUNPOD_SERVER_URL", args.server)
-    api_key = os.environ.get("RUNPOD_API_KEY", args.api_key)
+    
+    # Get API key: prioritize TRANSCRIBE_API_KEY from .env, then command line argument
+    api_key = os.environ.get("TRANSCRIBE_API_KEY", args.api_key)
     
     # Initialize client
     client = TranscriptionClient(server_url, api_key)

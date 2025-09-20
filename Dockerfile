@@ -40,7 +40,7 @@ ENV CUDA_VISIBLE_DEVICES=0
 ENV PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:512
 
 # Set default API key (override with environment variable)
-ENV RUNPOD_API_KEY=your-secret-api-key-here
+ENV TRANSCRIBE_API_KEY=mv_mtvG2X4U_dqRgdWMvSEoFtpMjRJkL4zlkwEXYH2I
 
 # Expose HTTP port
 EXPOSE 8080
