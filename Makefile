@@ -1,4 +1,4 @@
-.PHONY: help install convert test clean example batch batch-custom setup-dirs docker-build docker-deploy runpod-create runpod-info runpod-stop runpod-start runpod-delete runpod-logs
+.PHONY: help install convert test clean example batch batch-custom setup-dirs docker-build docker-deploy runpod-create runpod-info runpod-stop runpod-start runpod-delete runpod-delete-auto runpod-batch-auto runpod-logs
 .DEFAULT_GOAL := help
 
 # Variables
@@ -17,6 +17,7 @@ DOCKER_TAG ?= latest
 DOCKER_FULL_NAME := $(DOCKER_USERNAME)/$(DOCKER_IMAGE_NAME):$(DOCKER_TAG)
 RUNPOD_POD_NAME ?= whisper-transcription-$(shell date +%s)
 RUNPOD_GPU_TYPE ?= NVIDIA RTX A5000
+RUNPOD_AUTO_SHUTDOWN ?= false
 TRANSCRIBE_API_KEY_ENV := mv_mtvG2X4U_dqRgdWMvSEoFtpMjRJkL4zlkwEXYH2I
 
 help: ## Show this help message
@@ -732,7 +733,19 @@ endif
 	echo ""; \
 	export RUNPOD_SERVER_URL="$$url"; \
 	export TRANSCRIBE_API_KEY="$$api_key"; \
-	$(PYTHON) transcribe_client.py "$(INPUT_DIR)" "$$output_dir"
+	$(PYTHON) transcribe_client.py "$(INPUT_DIR)" "$$output_dir"; \
+	if [ "$(RUNPOD_AUTO_SHUTDOWN)" = "true" ]; then \
+		echo ""; \
+		echo "💰 Auto-shutdown enabled - deleting pod to save costs..."; \
+		$(MAKE) runpod-delete-auto; \
+	else \
+		echo ""; \
+		echo "💡 Pod is still running. Use 'make runpod-stop' or 'make runpod-delete' to save costs."; \
+		echo "   Or set RUNPOD_AUTO_SHUTDOWN=true for automatic cleanup."; \
+	fi
+
+runpod-batch-auto: ## Batch transcribe with auto-shutdown (INPUT_DIR=... [OUTPUT_DIR=./transcripts])
+	@$(MAKE) runpod-batch RUNPOD_AUTO_SHUTDOWN=true INPUT_DIR="$(INPUT_DIR)" OUTPUT_DIR="$(OUTPUT_DIR)"
 
 runpod-logs: ## Show RunPod instance logs
 	@echo "RunPod Instance Logs"
@@ -791,6 +804,19 @@ runpod-delete: ## Delete RunPod instance
 		echo "Cancelled."; \
 	fi
 
+runpod-delete-auto: ## Delete RunPod instance automatically (no confirmation)
+	@echo "🔄 Auto-deleting RunPod instance..."
+	@if [ ! -f ".runpod_pod_id" ]; then \
+		echo "❌ No pod ID found. Nothing to delete."; \
+		exit 1; \
+	fi
+	@pod_id=$$(cat .runpod_pod_id); \
+	echo "🆔 Pod ID: $$pod_id"; \
+	echo "🗑️  Deleting pod automatically..."; \
+	runpodctl remove pod $$pod_id; \
+	rm -f .runpod_pod_id; \
+	echo "✅ Pod deleted successfully (auto-shutdown)"
+
 runpod-status: ## Quick status check of RunPod instance
 	@if [ ! -f ".runpod_pod_id" ]; then \
 		echo "❌ No pod found. Run 'make runpod-create' to deploy."; \
@@ -816,6 +842,7 @@ runpod-help: ## Show all RunPod-related commands
 	@echo "Usage:"
 	@echo "  make runpod-transcribe INPUT=audio.mp3      # Transcribe single file"
 	@echo "  make runpod-batch INPUT_DIR=./mp3s          # Transcribe directory"
+	@echo "  make runpod-batch-auto INPUT_DIR=./mp3s     # Auto-shutdown after batch"
 	@echo ""
 	@echo "Management:"
 	@echo "  make runpod-info      # Get status and connection URL"
@@ -831,4 +858,5 @@ runpod-help: ## Show all RunPod-related commands
 	@echo "💰 Cost Management:"
 	@echo "  - Pods auto-stop when idle (~5-10 minutes)"
 	@echo "  - Use 'make runpod-stop' when done to save costs"
+	@echo "  - Auto-shutdown: Set RUNPOD_AUTO_SHUTDOWN=true for batch jobs"
 	@echo "  - RTX A5000: ~$$0.50/hour (~$$2.50 for 30min of audio)"

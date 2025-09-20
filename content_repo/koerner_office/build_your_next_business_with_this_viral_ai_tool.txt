@@ -1,0 +1,473 @@
+Oh my gosh. I mean, every single one of these flows is a business. Pay me $300 a month.
+
+I'll send you an email every Friday with your top three competitors, fully automated. And as far as your customers know, you're spending four hours a week doing this for them. We actually hired one of our experts because he was just so good.
+
+I was like, what if you could do this for our largest enterprise accounts? All he had to do was like learn this drag and drop tool. And now he has a new career.
+
+You can build software that is immensely valuable without needing to be an engineer. Almost everything that people really build on Gumblip and find valuable, they could have never done on Zapier. Use AI and be more efficient.
+
+If you're not using AI, you're going to fall behind. All right. You're going to love today's episode.
+
+You may have heard of this company out of Silicon Valley called Gumblip. They are a Y Combinator backed company blowing up like crazy. If you've heard of Zapier, I talk about Zapier a lot.
+
+It's an automation platform that's easy for anyone to use. These guys are the Zapier for this new AI age. It's like Zapier, but very easy to use.
+
+I had the co-founder on to talk about how people are using Gumloop in interesting ways, how people are making money with Gumloop agencies that can be built on top of Gumloop, how to become a Gumloop expert. So you could charge money to implement Gumloop. And I just want you to know upfront, this is not a sponsored video or podcast.
+
+I was paid $0 to do this, but the way I look at it is what if we could have talked to the Zapier founder in year two or year one, and you could have got ahead of that curve and started an agency on top of Zapier. That would have been amazing, right? Well, I look at Gumloop as the next Zapier.
+
+And so anyone listening to this will have a leg up to anyone else in the future that wants to build an agency on top of Gumloop. But if you do want to support this podcast, you can use my affiliate link. You'll get a discount.
+
+I'll get a little kick back. It's linked in the show notes. You're going to love it.
+
+Enjoy. How would you explain Gumloop in one sentence to someone that has no idea what it is? We're an automation platform where you drag and drop, build really powerful AI workflows without needing to be an engineer.
+
+You can just play around with these Lego blocks and deploy super useful tools for your team. Okay. Here's an analogy I would use.
+
+Tell me if this is accurate or not, but like Instagram was like Facebook except pictures only and mobile first. Right. And this kind of reminds me of Zapier except AI first, like AI front and foremost, whereas Zapier is like, you can use AI, you can integrate open AI's API, but it's not like AI first.
+
+It's automation first. Is that pretty accurate? Yeah.
+
+I think that's accurate. In the early days, people would describe us as a, an AI first Zapier on steroids. So it's the AI part is, is a big component of Gumloop, but also just the complexity of the sorts of things you could build are very different.
+
+So what I've noticed is most of the things are almost everything that people really build on Gumloop and find valuable. They could have never done on Zapier. It's kind of like expanding what is possible instead of replacing them.
+
+If someone just wants to connect to APIs and get a notification or something, I would say totally use Zapier. That's, that's the bread and butter, much simpler, probably cheaper for the task, but for anything else, more complex use Gumloop for sure. What's a good example of like a common flow that is just not possible on, on Zapier.
+
+I can give some examples of the ones that we use internally. So like every time someone signs up for our products, we do a ton of like AI web research to figure out everything we can about them. Like every signal that would be valuable in terms of scoring that lead, we run it through a bunch of AI categorization steps that apply like our reasoning to what is this account, a key account that we should be emailing.
+
+It drafts a personalized email and it puts it in my email inbox and I'm able to send those out at the end of the day. But there's a lot of nuance, like four different models being used, tons of different endpoints being pulled from to enrich data, to scrape the web, to look at their website. That's one workflow that I use every single day or like hundreds of times a day.
+
+Every time someone talks to our customer support chatbot called Gummi, they normally are curious about something or they can't figure something out. It would be super useful if I could go and read every chat, but I don't have the hours and they did do that. We're doing like 60,000 messages a week on our chatbot.
+
+So I have a Gumloop workflow that runs at 5pm every day. It reads every single thread. So every conversation with every customer tells me what they were confused about.
+
+And then with all of those summaries, it makes one large report that tells me the top five things with the substantiated evidence. Like this email was having a ton of trouble with this sorted from most to least important. So we kind of have this like product manager report that is totally autonomously done without needing an engineer or to waste any hours doing that.
+
+You're like passively collecting feedback on your product with an agent basically that you built. Exactly. And it's, it's using our own product to help us figure out how to improve our own product.
+
+It's a nice little tight loop of feedback. You're eating your own dog food. Yeah, we eat a lot of it.
+
+I feel like people throw around the word agent a lot. Is this, is, would you call Gumloop a proper agent builder or is it agent like? So we make AI powered workflows at the moment.
+
+I think the term agent was super, it was a big buzz term two years ago when the first agent frameworks came out. Those are definitely much more autonomous and inherently unreliable and more expensive in, in like the previous state of how agents existed. You kind of had to cross your fingers and hope that the agent would do something useful because it just had so much autonomy and there was so much AI being used to every step.
+
+I think we're getting to a point now where agents are becoming useful, but we've taken the approach of instead of promising people the world and then underwhelming them and losing their trust, which I think is what a lot of these open source agent frameworks did. Like everyone tried it and is kind of scorned because they spent six hours getting nothing except for making a really big open AI bill. We promised very little in the early days where like you can do this step and then you can do another step after it.
+
+And it's very rigid and defined. And we're kind of continuously adding these agentic features. Like if you wanted to split a path of your workflow and have an AI step decide what path to pursue, that is somewhat agentic, but it's pretty constrained and rigid.
+
+I think one thing, that direction we will be heading in is if you want to make agents useful, they need to have useful tools, which are essentially just workflows in their little toolbox. So there's a layer on top of what we're building that can be more agentic, but fundamentally we're making AI powered workflows, which I think is the shortest path to just extreme, extremely obvious business value. Yeah.
+
+So if you come at customers and say, we're basically an AI at first AI enabled Zapier, and then they, they sign up, they log in, they start playing around and they learn on their own. Oh my gosh, like this has a lot of agentic features. I could, I could make an agent with this.
+
+Like they're, they're super users and they're super evangelists of the product. Whereas if you come at them promising agentic features, maybe they're disappointed and it's a net loss in the end. Yeah.
+
+I think people who, who are, get super excited by agents specifically often think like it'll abstract away all of the hard work of solving or like automating a problem. Like it'll just figure things out. But I think the nuance of really automating something well is kind of like encoding what you understand to be like true, whatever you deeply understand some workflow that takes a bit of like, you're kind of building this workflow with all of your expertise in mind and encoding that into the workflow.
+
+If you just ask an agent to go write a sales email, it's going to write some slop, you know, and then technically it did the work for you, but it's not that valuable. So our AI workflows are kind of like assisting the human, making someone 10 times more productive, but not just like hand waving away all of the complexity of how you do work. I feel like a lot of the problems that we're having with AI today is that everyone knows that AGI is not here yet, but they treat it as if it is right.
+
+And I think you need to treat AI like an employee, like you onboard a new employee and you're not going to tell them on day one, write this new sales email for me when they have no idea, like what your branding is, like how you like to speak to the customer, how many automated follow-ups you want, if any, like you're just setting that employee up for failure and you're setting the AI up for failure, unless you, you bring it something, right? Like this is what I'm doing on a daily basis. It takes me about 30 minutes a day.
+
+I've done it a thousand times. I'm sick of doing it. I know exactly how it's done inside and out.
+
+Do it for me. You show it exactly what to do. You're getting, you know, where it's going to break because it breaks for you.
+
+Sometimes would you agree that that's where people have the most success when they kind of bring it. Totally. Yeah.
+
+We like to say that if you can define something as a list of steps, it's kind of ripe for automation. If you have a workflow that you can't actually break down into a list of steps or it gets into a bunch of conditionals like, oh, if it's not here, go check there and get them a phone call. If like there's a bunch of random edge cases, then it's not really great to automate.
+
+But normally a workflow that you understand that so deeply that you can write it in like a point form list, give it to an intern and have them perform it accurately. That is exactly the sort of thing you should be automating. And the context you're talking about is like kind of the biggest pitfall with people who approach agents or automation.
+
+They say like, write me a sales email with no context. And if you would have given that to your new hire who started today with no information about the company, they would write an equally bad email. You know, there's...
+
+Yeah. Unless they were agentic and went and found the information in your Google Docs and then figured out the branding from your website. That's definitely like the direction AI will end up in this sort of like totally agentic software.
+
+But I think the path there is workflows and tooling around how AI does work. Yeah. Okay.
+
+Now I want to know like the 80, 20 of how people are using Gumloop. Like that's one of my favorite things to do on this podcast is to talk to the people behind the scenes and say, how are people making money with this? Like what's the one customer that comes to mind that's really using your tool in an interesting way that could other people could benefit from, right?
+
+It would benefit you because you'd get more customers and you would benefit them because they can make money or they could save money with it. So what's the 80, 20? Like what are most people using it for?
+
+And then what are those really interesting edge cases? That's a loaded question, but I want you to take one at each other. Yeah.
+
+So people ask this all the time and it's, I don't have a great answer for what the most common use case is. Cause I think Gumloop is more comparable to Python, for example, than it is to a normal vertical SAS that has like five features or something. So, I mean, when you ask yourself, like, what are people doing with Python?
+
+They're building like crazy things and each one nichier than the next. There's definitely like local Maxima that we see. So there's tons of like web scraping, outbound sales automation, CRM related enrichments, document processing is a huge one, like general admin tasks, like preparation, data labeling and categorization, lead scoring.
+
+There's kind of like patterns we see. Content generation is another really big one. But when we, like our most successful customers are doing everything.
+
+So like Instacart has a thousand seats on Gumloop out of the 3,000 employees. And it's almost evenly spread across 10 departments. So there's not one killer use case.
+
+It's like 150 really solid automations and they're all kind of empowered to automate work. Almost none of them are, I think like 18% of them are engineers. When we did the breakdown, we did the breakdown with a Gumloop workflow.
+
+Actually, we loaded the entire user list into a research workflow that found their role and categorized them. Yeah. That's our favorite type of customer because like big scale, high volume, you can automate so many things I've never even heard of.
+
+And that's like really the power of this platform. 18% of their employees are engineers and 33% of their employees have our active Gumloop users. 18% of the active Gumloop users are engineers.
+
+When we did the pie chart. Oh, wow. That's even more impressive.
+
+Yeah. I think engineers appreciate just how much easier we make auth and security. Like you don't need to spin up a little side project and then deal with compliance and like OAuth apps and all of that stuff.
+
+Gumloop makes it super, super easy and engineers pick it up like so easily. It's like, the fundamentals are the same for loops and thinking in systems, passing inputs to outputs. Let's talk about like a local business owner.
+
+Let's say I own a plumbing business in the middle of the country. I've got several crews, $10 million in revenue. What's a normal use case for this?
+
+It really depends what they're struggling with. So sometimes people are getting tons of orders via PDF emailed to them and they have someone sitting in an office, like extracting the order number, the amounts and the address and putting that into a Google sheet. That is a Gumloop workflow that could be set up in like 30 seconds.
+
+It's super easy. They might have a list of leads that they're buying from some sourcing company, like people they should be reaching out to, but they don't, they know in their head what a good lead looks like. It's like they have these five signals, or sometimes they have this, which means they're really valuable or you shouldn't reach out to them.
+
+If they have that, they do a bunch of enrichment on the platform with our AI scraping, AI web research nodes. And then they have a categorization step and then they press run their whole leads list gets processed and categorized and then sorted by the most valuable. They save all of that time.
+
+And then if they want to go above and beyond and like generate the outbound or the messaging or like the call, the phone call transcript. So sometimes people will make like a research report for each qualified lead and then have that dumped out as a Google doc. So when they're actually making the call, they have all this ammunition for like kind of like a research report on who they're about to speak to.
+
+You can really go down the rabbit hole. Like the more niche, the better, to be honest. Scumloop is just like the infrastructure that lets you convert what you understand to be a workflow into a functional tool that's deployed.
+
+Yeah. I'm thinking like if I'm a, if I'm a local handyman or I own a handyman business and my best customer is an investor because they're going to use me every month or a property manager, they're going to use me every day or every week or every month. And I have a form that they fill out on the website with just a radio button that says, are you a homeowner or an investor?
+
+Right. And I just kind of know instinctively if I get an email that says investor, I want to call them more quickly. Whereas if they're a homeowner, only 20% close rate, it might be a hundred dollar job.
+
+It's not really worth it. Gumloop could help. Like who I want to get a text on my phone marked as urgent when that's an investor.
+
+And I just want to, you know, one click, I want to call them. Whereas if it's a homeowner, put them in my CRM, put them in an automation to send them emails because it's not worth my time to call. Is that kind of a decent use case?
+
+Yeah. That's, that's a good, nice and simple one for sure. It'd be really easy to set up.
+
+We have a texting node. I have a bunch of text notifications that get sent to me when important things happen. Yeah.
+
+Totally doable. And then you can expand upon that. The text could include all of the background research and the person who submitted the form's Twitter account and their LinkedIn and their company website.
+
+Like you can really go deeper with it. I think that's a big problem that people have is they hear about these cool tools and they're like, Oh, this is amazing. And then they log in and they're like, what do I do?
+
+You know, like what, all right, what can I do? I wonder if this is an interesting framework where whatever you're doing, you know, control, find control, C control V, whatever you're, you know, control, finding, copying or pasting, there's probably an automation to be found there. Like we have a, a GPT wrapper in our holding company that helps skilled nursing facilities bill for more codes.
+
+And so they'll onboard a new client and then upload thousands of pages of PDFs and medical records. And for the last hundred years, what the, the, the medical billing manager does is they do control, find Alzheimer's control, find diabetes control, find, and they miss stuff. And so there's thousands of dollars a month that they could be billing for that they're not.
+
+And so we just built a wrapper that you upload all the PDFs and it tells them and it saves them thousands of dollars a month. Right? So that just kind of made me think control, finding control, find that's inefficient.
+
+That's repetitive. Right. How could we automate that?
+
+Yeah. There's definitely little signals like that throughout your workday where you, you should be thinking in terms of automation. I think that's a good one, like the control, find, but also just whenever you're applying reasoning to like a really repetitive thing, that's really where LLM shine.
+
+Like, even if it's a little more nuanced, like you're seeing emails coming into your inbox and you know what an email you should be forwarding to your support team looks like. There's some signals, like it's, it's clearly from a customer. They seem, yeah, they seem upset.
+
+Maybe those are the only ones you, you forward, but you go through 800 emails a day because your inbox is flooded. That's the sort of thing that you could set up in like five minutes with GPT 4.0 mini, just doing the same reasoning, doing the same work for you. You only have to set it up one time.
+
+And then you have this like totally autonomous support email bot that works for you. Yeah. And it can analyze sentiment, right?
+
+Like you could, if negative, yeah. Yeah. It's, it's really tremendous at just reasoning.
+
+So like categorizing into negative, you can even put it into buckets. Like, oh, this customer's complaining about this specific issue. And I know who to route that to that sort of even more nuanced reason beyond negative is something that you could set up so quickly.
+
+You mentioned that like at five o'clock every night you push all the emails through, are you or your customers using any email automations that they fully trust to just fully send without any human interaction? If so, what do those look like? Yeah, I do that sometimes, but rarely I normally like to be in the loop.
+
+So I always save emails as drafts and then I'm the one sending it off. The only ones I fully blast off are like, let's say every, every week we like monitor the really high value signups on gum loop that customers that look like they, their companies could be so much more efficient with the tool. I'll blast out like a template, an email that's to the point.
+
+It's just my calendar basically like saying, I'll help you out, but let's talk next week that I trust. Cause there's, there's not much nuance there, but if it's a really thoughtful, like researched email with all these different hooks and personalizations, I'll review that. Sometimes like there's a customer within that list that you're personalizing for, that's just so high value.
+
+You want to throw in like an extra something. Yeah. But yeah, review it, it just gives you more peace of mind.
+
+I think that's the, you'd never want to be someone spamming or like flooding someone's inbox with more spam that needs to be processed by AI itself to be deleted. So when someone signs up as a new user, what kind of research are your agents doing or your automation is doing? Are you just taking their email and then running it against LinkedIn databases or what does that look like?
+
+So we take their email and then if it's able to identify their full name in their email, then we have a search that goes and looks up like their full name, their company name that they signed up with. It's only, we only do it for non Gmail, sort of like corporate emails. And then we find their LinkedIn profile, their title.
+
+We'll find the company's current like kind of fundraising stage, whether they've raised venture capital, if they're like a growth seed or whatever stage fund or a company, we'll get a one line blurb of what they do, the industry that they're in the city that they're located in. We'll stitch that all together and then maybe enrich it with even more contact information. Like there's a bunch of data enrichment providers that we support on Gumloop to get the more niche signals, like exact head count or their monthly web traffic, for example, like extra signals that you wouldn't normally get just by scouring the web.
+
+But like linking all of that publicly available data, plus like the data repositories together into one classification step. And then running that through the LLM step is where the magic is because it kind of, it's like it did all the work in half a second and then just has to reason around the data that it's great. And then are you assigning like a score to them?
+
+I tend to do categorization instead of scoring because we have a scoring node that goes from like zero to a hundred, but whenever the AI is uncertain, it'll just give like a mediocre score. And I want some certainty in this. So I like doing like high value, extremely high value, normal and low value lead.
+
+The more discrete buckets, LLMs are just much better at like placing things in those sort of much more clear holes. Do you know of any customers building businesses on top of Gumloop or agencies or AI implementation agencies? Tell me, tell me what you've seen there.
+
+One of our first customers was this healthcare company in Australia that was processing thousands of research papers for academic institutions. And all of it was powered via like a really complex Gumloop workflow. It was called Agent Hub at the time.
+
+So an Agent Hub workflow, but same, same product. And we're doing things I literally did not understand. I didn't understand the value of it, but I knew it was valuable because they were like reselling.
+
+From what I understood, it was like at scale, extracting like the insights from all these papers and doing this cross analysis to determine like what the academic institution should be investing in or what their weak spots are based on the research that their like PhD and master's students were doing. But that service would have been hundreds or thousands of hours of human work. But this person just kind of cobbled together a workflow and then built a business on top of that.
+
+Interesting. And they're still going? Yeah.
+
+They're still one of our favorite customers. What do you think is next for Gumloop that people should be excited about? We're working on our agent feature.
+
+So not an agent in the normal sense of like you're building agents that'll come at some point, but we are making a co-pilot basically in the product. So right now we're, we have like really good growth and things are working, but we could be growing way faster if the learning curve was flatter. Like there's so many people who come to the product and they have a desperate need.
+
+They really want to automate something, but they can't figure it out because it takes a bit of time, maybe like half an hour of thinking around with things to figure stuff out and people are busy. So this co-pilot feature will let you kind of go from natural language to this sort of bolts like experience or V0 like experience of building for you. And that will change everything.
+
+Maybe. So you just tell it what you want and instead of telling you how to build it, it will build it for you. Exactly.
+
+It'll build it with you. I think that's the main distinction. You get to guide it, steer it in the right direction, work with it.
+
+And it has, it is all knowing and knows everything about gum loop and how it works. You don't have to read our docs. You don't have to watch a video.
+
+It's already done that for you. Have you ever thought of a feature where people could just like, I would love to go into one of my employees and say, Hey, I want you to loom everything you do today. Like turn off your front facing camera, hit record on loom.
+
+I just want to record everything that happens on your screen. And this is to empower you not to take your job. And then like have gum loop or something, manis, whatever, just watch that and say, all right, oh, I know exactly what you need.
+
+You keep doing this over and over. And that's something that that employee just might not even think to tell you. It's just second nature to them.
+
+Have you thought about something like that, or at least part like enabling that more easily so people could have more ideas of how to use it? I think there's a lot of companies that are doing that as like a Chrome extension or as a sort of screen recording automation tool. I think that is another sort of product that has a big promise and might under deliver greatly, which we're kind of wary of because there's only so much user trust you can burn before you destroy the viability of the company.
+
+So I don't know when I think about the tasks I'm doing every day, like I'm actually thinking a ton in a way that is not visible on my screen. When I'm when I'm about to do something, it might seem like I did it for one reason, but I thought about 10 other reasons why to do it this way and why not to do it another way. And that might not be captured with screen recording.
+
+So I don't know. I feel like I would be massively disappointed by current implementation of that. We might explore it at some point, but maybe that would be better suited for like browser automation tools that actually just click around for you and like internal portals and stuff.
+
+I'm sure that we have a Chrome extension that does that, that records your actions and replays it. It's a feature I don't really promote because it's a little hard to use, but I'm sure that sort of thing is coming. I like that something to ideate for you to watch you and then give you ideas for what you can automate.
+
+There's, there's probably something there in terms of like a valuable product. What does your growth look like today? Our investors always tell us never to give numbers, but we're doing well.
+
+Like we grew 50% two months ago, 30% last month. It kind of, we're hitting a bit of an inflection point. Yeah.
+
+I mean, you're, you're on a tidal wave, right? And you've got a beautiful, beautifully designed product and it just works. What about like outside of Gumloop?
+
+Are there any AI opportunities or business ideas that you're too focused on to chase, but you think other people should be chasing down, whether it's just a simple wrapper or something more complex? That's a good question. All I think about is Gumloop.
+
+It really kind of encompasses my entire life and all of my thinking time. A product that other people should pursue. Basically one huge value prop of Gumloop is that all of these companies have this kind of top-down directive of use AI and be more efficient.
+
+If you don't, if you're not using AI, you're going to fall behind. So we are kind of the spoon that is feeding them AI, but there's also tons of people at these really large companies that are kind of resistant and don't want to move faster. And like, it's kind of hindering the growth of the company because they're living in their old ways.
+
+I think this is kind of like a controversial topic, but like one engineer with AI can have, can do the work of 20. Like I see that every day with my co-founder. He's like the most exceptional builder I've ever seen.
+
+We can move as fast as a large company because he just gets six hours to focus. So video is cool, but you know what's better? Long form audio via podcast and my newsletter, tkopod.com.
+
+Go there to subscribe for free to my newsletter. It's one email a week, very tactical. And then go to my audio podcast, three episodes a week, stuff like this.
+
+You're going to love it. All free, no sleazy sales pitch, tkopod.com. If I was running a business that was kind of transitioning into AI, I would focus on those people.
+
+And I know LLMs can actually understand code at scale and understand what people are working on and flag people who are those 10X engineers. Because I think like great businesses will be built by really small teams of exceptional people. So being able to identify which at a, like a huge company with 500 or a thousand engineers, flagging the ones with AI that are exceptional, paying them double, you know, like treating them well, so you don't lose those, those people.
+
+I think that's a really cool business that an engineering manager is kind of tasked to do, but AI could do it at scale. Yeah. So it would basically be someone coming into a big company and using LLMs to read the code of their engineers and using certain markers to say, Hey, this guy, this is your guy.
+
+Yeah. Right. Exactly.
+
+This guy. I think it's a code review, but honestly, like there's a lot of startups that do code review. Like you raise a pull request to introduce a new feature and it's actually like making sure there's no bugs, but it has such a deep understanding of the context of your code base and what the work you just did and what you added.
+
+And it can aggregate that over time, make like weekly reports about who's really moving the needle for your business. And then you should never lose that person because they'll get paid more at another company that recognizes that they're great. Hmm.
+
+So it's kind of a retention tool, especially in this age of AI where people are going to be chasing money. Exactly. I think it could be positioned as like a cost cutting tool because you can like focus on not the good performance, but the bad ones and then let them go.
+
+That's a more negative way to position it. But honestly, I think it's about rewarding the great people and putting them into place of leadership so that like people will follow suit. Yeah.
+
+Have you ever seen just a completely random business or use case for Gumloop that just kind of made you cock your head and say, huh? Huh? A completely random use case for Gumloop that made me cock my head.
+
+In the early days, we had some crazy hobbyist use cases. Like one guy recorded three hour sessions of Dungeons and Dragons, if you've heard of that. And then we use our like video to text node in order to transcribe it.
+
+And then he would make chapters of the stories with a bunch of LLM steps that were kind of like digesting the content into this storyline. And then it would make a Google doc and send it to his team. So he was watching the three hour video and then it was just like text.
+
+So you would get this big blurb of what was said. And then he was processing that in a bunch of like really nuanced, thoughtful ways, injecting like what the plot of their, their storyline is and stuff. And then he was getting this really thoughtful Google doc as if he spent like five hours making like a post game summary for his clan.
+
+I thought that was pretty cool. Really creative. That is interesting.
+
+Yeah. I feel like the use case for AI watching video is still very early. But I feel like there's a lot of opportunity there.
+
+Totally. I mean, a lot of Gumloop workflows are like video to blog posts. So when I talk about the content moderation stuff, like someone records a two hour customer interview, they want to make a case study.
+
+You can actually drop that in a workflow that's like pre set up in order to focus on what is the most valuable five topics that they discussed. How do we structure this? Like our old content, you can set up that workflow.
+
+And then every time you have a customer interview, you can get the same quality of output by just dragging in a video file and pressing run. Wow. I mean, you could just integrate it with fathom, right?
+
+And like, totally anytime you have any fathom call, you could just publish that to your website for SEO purposes. Totally. Okay.
+
+Do you want to show me some use cases or some some flows and how to build them? Sure. Let me share my screen.
+
+So this was one that I always show off. This was like the one that changed everything for us in the early days when I figured out there's a scalable way to get meetings with customers. So I was really good at getting eyeballs on the product and people would try it out, but they had that problem we were discussing.
+
+Like they couldn't figure out what they wanted to automate. It took like a bit of discovery in order to list like five ideas that are really going to help them out. So this workflow takes in their email.
+
+So every time someone signs up, I won't click on this because it actually shares my credentials, but it is, it gives you a code snippet. So you can trigger this via like an API, basically you're triggering it from your own code base. So in our case, when you press create an account on Gumloop, it is throwing your email into this workflow and pressing run.
+
+And then that email flows through all of these additional steps. So just to- Could you zoom in on the additional one? Yeah.
+
+Let me, at a high level, I'll just move this aside just to show you what Gumloop, Okay. Like how things are structured. So we have all these integrations.
+
+Like let's say you want to read emails from your Gmail inbox. You would drag a Gmail reading node, pick the inbox. And then I have all these emails to pass to another step.
+
+Let's say I wanted to categorize those emails. I would drag in an AI categorizer step next, drag this in. And then I would specify the categories, pick the model, add a bunch of additional context.
+
+And then I'm doing GPT-40 email categorization in like two clicks, basically. So you're kind of connecting data with these nuanced AI steps. And then you're able to build tools that would normally take an engineer like a couple of days or a week in order to get like off the ground and deployed and usable for everyone.
+
+So this workflow is doing a couple interesting things. So it's not, this node is not one you could find in our menu. It is what we call a sub flow.
+
+So it is a flow within a flow. So if I click open sub flow, I'll see that that, that node is actually an entirely separate workflow that's doing research. So you're able to build these like composite creations that get more and more complex.
+
+And the cool thing is if you build like the best customer research flow that does the most nuanced research about your industry and your type of customer, your coworker can use that workflow in their stuff, in their workflow as well. Like they can use that as a sub flow. So they're kind of like reusable tools.
+
+Okay. Can you share flows between like completely unconnected Gumloop accounts? Yes.
+
+Yeah. You can share all flows like exactly like you would at Google docs. So you would change the shareability, like viewability settings, and you can send those around.
+
+So people are sharing tons of flows. Do you have people selling flows? Yes.
+
+So we have Gumloop experts, people who do contract work building for people. They're kind of like flow builders for hire. We are going to have a marketplace at one point.
+
+Yeah. But I want to make sure it's safe because it's kind of a unique product to expose really sensitive credentials and shareable tools. So I don't want someone accidentally leaking their login on the box.
+
+Yeah. Yeah. Now, how are Gumloop experts finding jobs today if you don't have a marketplace?
+
+We have an expert marketplace. It's an air table base. So it's like 10 different people in this little directory.
+
+And whenever someone reaches out to us for an expert, we actually introduce them to the experts directory in like a, we are like the facilitator to send them that link, but it'll be much more official in the near future. Yeah. Would you say as of today, is there more demand for experts or more supply than you need for experts?
+
+More demand. Really? So they're each getting more experts.
+
+Yeah. But the thing is, each expert has different expectations of like, well, how much they should be paid. And so sometimes they might get four leads, but only one is qualified to them in a given day.
+
+So they have enough inbound, but it does take some work in order to filter out the noise. Because they've got to close them. Like you're just connecting dots.
+
+You're not helping. Exactly. Yeah.
+
+You're not helping. What are they charging on average? I know it's probably all over the map, but.
+
+It's all over the map. It could be like a hundred bucks. It could be $5,000.
+
+It really, it really varies depending on the scale of the work and what the expert expectations are. Yeah. Sometimes people want a ton of work.
+
+They want to like totally automate their business for 200 bucks. And that's just not possible. Yeah.
+
+It's about finding the right customers. Yeah. I mean, conversely, someone could build a flow for a hundred bucks and then that could, that could turn into a job making a thousand dollars a month, right?
+
+Really automating everything. So that could be one kind of unique way that people listening might be able to make money is just by learning to use it themselves as a user and then becoming an expert. It's a pretty interesting sort of transition.
+
+We actually hired one of our experts internally. Cause he was just so good. Like he was blowing everyone away.
+
+And I was like, what if you could do this for our largest enterprise accounts? You know, like when a really large customer has a basic need, he can hop on a call, blow their mind with what AI can do. And all he had to do was like learn this drag and drop tool.
+
+And now he has a new career, which is pretty cool. So their email gets run through this sub flow, which takes the email, scrapes their website, extracts the name of the company, summarizes what the company does. It enriches all this information, like industry revenue and country.
+
+Cause we're using all these different data providers, but you can get like monthly web traffic, like I mentioned, or LinkedIn URL, formats, all of it in this nice little paragraph. And then that paragraph goes to our Slack. So like 10 seconds after you sign up, we get this notification saying how big your company is, where your base, what you do.
+
+And then it also drafts an outbound email and into my Gmail inbox, like really basic, like, Hey, I'm the founder, your company looked awesome. I saw you just signed up today. I'd love to chat with my calendar sort of thing, but light touches a personalization and just like automated into my inbox.
+
+Yeah. I could, and it only sends that if it's kind of worth your time. Yeah.
+
+So our, the one that's actually in production is more complex. It's in our like private workspace. It has a bunch more quality qualification steps.
+
+So it does like much more research. And then it has the AI categorization steps. And then if they're lower value, I mean, just like hobbyist users, we put them into like a loan, a learning cohort sort of email chain.
+
+And if not, then we do this personalized outreach for me. So I can hop on a column and meet them. Do you have like plug and play flows that people can just tap into like this more complex ones, or are they kind of basic?
+
+Yeah. We have a whole templates directory. Honestly, templates feel like a bandaid over the problem to me.
+
+If you need a template, it's because you couldn't go from idea to exactly what you wanted with the tool. They might help spark ideas, but you can definitely get started with a template. I wouldn't like dissuade you.
+
+Yeah. I really, I'm excited for the future where I can go from an idea to a workflow in five minutes without ever having to scratch my head or assuming I was a new user. Yeah.
+
+Now, what about like sales prospecting? I think this workflow has a couple of those properties. So this one before 15 minutes before every meeting, it will look at the attendees, filter out all the ones that aren't me or internal people that come loop.
+
+It'll read my email inbox. So this is kind of like a sales workflow. Like when I'm hopping on a demo call with a big customer, I want to know why the email was set up or why the meeting was set up.
+
+I want to know what the person's role is at the company, what they do, their background, any socials I can possibly scour so I can understand more about who they are. And then I want to understand what the company does. So like this research company step, this workflow is a little complex because I actually just use it all the time, but this flow here will take their email, search their inbox for all the reasonings for why we might be meeting.
+
+And then it has two different outputs, one being research about the person I'm meeting and one being the research from my email inbox. So I get this like big digest, just like you would go to your Gmail, look at the 50 most recent emails with you and Mark and figure out like, oh, we actually set this meeting up two months ago. It's about talking about like growth or something.
+
+So you have an LLM do that sort of digesting. And then here we do company research. So this is another complex one, but this is where the crux of it is just this AI web research node.
+
+So given a company's URL, identify the company's name, their current stage, whether they're pre-launched seed growth or non-VC backed, find their LinkedIn and their Twitter URL. And this sort of information is what I normally just check on my phone before the meeting to understand like, who am I actually talking to today? There's a bunch of like conditional paths here because I, sometimes people don't have social, like there's, there's edge cases that I built into the workflow.
+
+And then all of that gets synthesized into one big prompt where I say essentially like write a text, take all of this information and give me the most important things that I need to know before the call. And then send me my text notification here to my phone. Hmm.
+
+Seeing these ideas, just give me so many more ideas. It's going to be cool when you can, when you have this idea, you can go to your keyboard and get the actual tool built in like two minutes. That's going to be super exciting.
+
+This is another random one. I made this with a pretty large HR software company. I don't say which one, but essentially what it's doing is there's these things, things called gum loop interfaces.
+
+I'm not sure if you've seen these, but this is like a UI layer on top of your flow. So you can abstract away all the crazy workflow stuff and just have an interface. You would put a competitor domain and then it uses SEMrush gets the hundred keywords that that competitor ranks for.
+
+So we built this because this, this SEO expert was having to look at competitors, look at all the keywords they rank for, and then figure out which ones aren't name like brand related. So it's like a Samsung and the 50 top keywords they're ranking for out of the top 500 are like Samsung or misspellings of the word Samsung. They like erase those from the list and focus on the other ones.
+
+But that sort of reasoning, like, is this a brand keyword? Is it not at scale is so time consuming. So they just built a workflow.
+
+And I think this actually took like four minutes to put together and it was taking them hours every day because they're doing this for so many different brands, so many different keywords. And then it dumps all of the non brand ones into a Google sheet. And then they start doing all this other automation on those keywords.
+
+Oh, man. Do you have anyone using gum loop to build like programmatic SEO sites? Yes, definitely.
+
+This was one workflow. I had it over here. So I mean, like posting and making structured content is great on the platform.
+
+So this takes a YouTube URL. This is like an hour and a half long Stanford lecture, I think about what LLMs are running the workflow here. The blog is live right here already.
+
+And this is like a really, Oh man. Gen Z sort of like post about trying to make a boring topic. Interesting.
+
+All of that is engineered into this workflow here, which is just like a three step. Oh, one workflow, taking the YouTube content, making really good blog sort of output from it. And then the cool thing is you can take this whole workflow and run it at scale by looping it over a Google sheet of a thousand links if you want.
+
+So you can make your like the same reasoning you would apply to make the perfect programmatic SEO page for like one topic. You could feed in 800 topics and apply the same reasoning. Just over time, go get a coffee and come back and all your contents then.
+
+So for instance, we have a programmatic site for pet cremation leads and we have 5,500 landing pages, which represents the top 1100 cities in the U S and Canada by population. And then we have like three keywords, pet cremation, horse cremation, pet euthanasia. And it's all in web flow.
+
+You're saying that we could put like all the keywords in a Google sheet, all the city names in a Google sheet, a prompt, maybe the same sheet, different columns, a prompt that says like, Hey, give us a fun fact about this city. And then tell us the population of this city and something unique. And it can just generate all these different landing pages for.
+
+So no two, no two landing pages are the same. A hundred percent. Yeah.
+
+Also the founder of web flow is an advisor to gum loop because they're big users. The guy who was doing education at web flow most recently, Aaron, he joined our team. So he does education for gum loop now because he loves gum loop so much.
+
+That's amazing. But you can totally do that. That's a slam dunk use case.
+
+Aaron Norris I mean, people, people charge a lot of money for programmatic SEO as a service. And it could just be built on top of this without much technical knowledge. Aaron Norris Exactly.
+
+You just play with some Lego blocks and get the value. Aaron Norris What about the meta ads one? Aaron Norris This one is really cool.
+
+I mean, you put in a link to your competitor's Facebook page. It gets all of the ads they have running off Instagram, WhatsApp, Facebook, like the whole meta stack. Aaron Norris It runs all of those through Gemini to watch the ad, look at the copy, tell me what they're advertising.
+
+Like what is this strategy for this specific ad? And then for, let's say there's 50 of them, it stitches all of that together into one massive prompt, all of the descriptions and runs it through a one, which is just like the thoughtful, large model. And it makes a report saying what this editor is focusing on from an ad's perspective right now.
+
+So you get this thoughtful report that's formatted with logos and stuff and links embedded, like the whole research report in your inbox. And you can schedule it to run every Friday at 9am. So you get like the week's update on your competitors ad strategy.
+
+Aaron Norris Oh my gosh. I mean, every single one of these flows is a business. Like that's how I see the world, right?
+
+Like you see the world as gum loop and you should, that's what you're building. But like, I see this as like, I could, I could start a Facebook ads reverse engineering as a service, right? Pay me $300 a month.
+
+I'll send you an email every Friday with your top three competitors. It's going to tell you, are they doing 34% display ads, 13% stories, you know, Facebook, Instagram, or the Instagram video post carousel fully automated. And as far as your customers know, you're spending four hours a week doing this for them by hand.
+
+Jeff Lerner It's awesome. And then you can also do it for like 10 different competitors and string that into one larger report. So you can do the comparative analysis against like six at the same time or 10 at the same time.
+
+Aaron Norris What I would like to use this for is I have a paid, I have a newsletter, a free newsletter, but sometimes I use meta ads to acquire subscribers. And I would love it to run a report from the Facebook ad library every Friday and say, show me any Facebook or meta ads that have been active for six months, which tells me that they're high performing ads that have the word newsletter or podcast in them. And then every week I can just kind of see what other people are doing, like what ads have been around for six months, AKA what ads are performing really well.
+
+Or you can even have it cross reference the UK version of the meta ads library, because in the UK, they have to disclose like how much money people are spending on their ads. Aaron Norris This is like the reason gum loop exists. So like, I would never have known that an ad that is up for six months is valuable, or that the UK has to give you the ad spend that people have on it.
+
+But if you have that knowledge, and you know how to use tools, you can build software that is immensely valuable without needing to be an engineer. It's just a matter of like applying niche knowledge to tooling. Aaron Norris I feel like there needs to be a whole community built around just people, people starting businesses on gum, not just using it, right?
+
+Like that's sure. But like starting businesses reselling services, white labeling gum, gum loop in unique, or even I think white labeling gum loop in simple ways is even more unique, you know? Jason Tucker Yeah.
+
+Yeah. I mean, if you use our web hook, you can build your own web flow page, for example, with a form where you put in like the competitors ad Facebook ad link, and then the email will be sent and they don't even know gum loops involved. It's just powering the product that is customer facing for you.
+
+So white labeling is, is really easy in that regard. Aaron Norris Oh, that's beautiful. Well, this has been awesome.
+
+Is there anything else you want to leave us with or show us? Aaron Norris There's a bunch of features I didn't show off, like the ability to make custom integrations with LLMs. That's really powerful.
+
+Aaron Norris That remind me of a question for you too, but yeah, please. Aaron Norris I won't go too deep into it. It's going to look different in a week from now.
+
+So there's no point demoing it. But essentially, like if we don't have an integration that you really want, that's going to change. We're scaling integrations, first and foremost, with this new MCP paradigm that I haven't touched on.
+
+But also you can make your own custom integration that is just a prompt away. Basically, you ask for what the API you want to hit is, or like the third party we're not integrated with. And then it will write the code for you deploy for your team.
+
+And then you have this like totally custom little tool. Aaron Norris Kind of like a mini replet inside of Gumloop. Aaron Norris Exactly.
+
+Yeah, code gen, but simplified into workflows. Aaron Norris That's powerful. So the question I had is, when you were describing the meta ads analyzer, you said you sent it through Gemini first, then you finished with a one like, what do you suggest people use?
+
+What models do you suggest people use for different tasks? When to use Gemini, when to use Claude, etc? Aaron Norris Good question.
+
+It really is an artistic choice. I think like it's a preference, like some people like Pepsi, some people like Diet Coke, some people like Claude, some people like OpenAI. I always go for the most powerful model when I need the most reasoning.
+
+So for like the analysis for each ad, I might use a GPT-4-0 because it's smart. And then when I want to do the analysis over 50 ads from the GPT-4 analyses like stitched together, that's more of a long term or long form reasoning task that needs an O-1 or would perform better with an O-1. And then if like, let's say, Instacart is labeling 80,000 lines of produce, I would say don't use O-1 for each labeling task.
+
+I use like GPT-4-0 mini or Gemini 2.0 or Gemini 2.5 now, whatever they call it, Gemini Flash. Use like a cheaper model that is faster because sometimes the task is so easy. It's like, there's a produce label, there's the name of the item and there's an image.
+
+And I'm saying like, is this beer supposed to be labeled produce? Like that is an obvious task. So I use a cheap, fast model for that.
+
+And then it costs almost no money to get reasoning at scale. What about just for web research, like for your inbound leads and then for writing emails? I am not really cost sensitive.
+
+Like all of these workflows are so important to me that I would rather have better reasoning than to save like half a cent by using a worse model. So I'll normally just stick with GPT-4-0 or Cloud 3.7 is exceptional. Okay.
+
+For either one of those? Yeah. I normally like just switch between them.
+
+I think Cloud is a little bit better at the creative writing style stuff. So I use it for that, but some people would probably disagree with me. Awesome.
+
+Well, this is perfect. Max, thank you for your time. Obviously we can find you at gumloop.com.
+
+If people want to reach out to you, where can they find you? I'm on Twitter a lot. It's my full name.
+
+So just Max Broder Urbis. Maybe it's- We'll link to it. Sweet.
+
+I'm pretty active there. Same thing with LinkedIn. Full name.
+
+Yeah. Okay. Well, thank you for your time.
+
+Sweet. Great to meet you. All right.
+
+What'd you think? Please share it with a friend and we'll see you next time. On the Kerner Office.
