@@ -1,248 +1,267 @@
-# PDF to Markdown Converter
+# RunPod FastAPI Transcription Service
 
-A simple Python script to convert text-selectable PDFs to clean Markdown format, optimized for LLM analysis and processing.
+A simplified HTTP API-based solution for audio transcription using RunPod GPU pods. This replaces the complex SSH-based file transfer approach with simple HTTP requests.
 
-## Features
+## 🚀 Quick Start
 
-- 🚀 **Simple & Fast**: Convert PDFs to Markdown in seconds
-- 🤖 **LLM-Optimized**: Clean output perfect for AI analysis
-- 📄 **Flexible**: Convert entire documents or specific pages
-- 🖼️ **Image Support**: Extract images when needed
-- 📁 **Batch Processing**: Convert entire folders of PDFs automatically
-- ⏭️ **Smart Skipping**: Automatically skip already converted files
-- 🛠️ **Easy Setup**: Poetry dependency management + Makefile commands
+### 1. Build and Deploy Container
 
-## Quick Start
-
-1. **Install dependencies**:
-   ```bash
-   make install
-   ```
-
-2. **Single file conversion**:
-   ```bash
-   make convert INPUT=your_document.pdf
-   make save FILE=your_document.pdf
-   ```
-
-3. **Batch processing**:
-   ```bash
-   make setup-dirs              # Create pdf_input/ and md_output/ folders
-   # Place your PDFs in pdf_input/
-   make batch                   # Convert all PDFs
-   ```
-
-## Installation
-
-### Prerequisites
-- Python 3.10 or higher
-- Poetry (install from [python-poetry.org](https://python-poetry.org/docs/#installation))
-
-### Setup
 ```bash
-# Clone or download this project
-cd pdf_2_text
+# Use the automated deployment script
+./deploy.sh your-docker-username
 
-# Install dependencies
-make install
+# Or manually:
+docker build -t your-username/whisper-transcription .
+docker push your-username/whisper-transcription
 
-# Test installation
-make test
+# Deploy to RunPod using the Docker image
+# Set environment variable: RUNPOD_API_KEY=your-secret-api-key
 ```
 
-## Usage
+### 2. Use the Client
 
-### Using Makefile (Recommended)
-
-**Single File Processing:**
 ```bash
-# Convert PDF to stdout
-make convert INPUT=document.pdf
+# Install client dependencies
+pip install requests
 
-# Convert and save to file
-make convert INPUT=document.pdf OUTPUT=result.md
-
-# Convert specific pages (0-based indexing)
-make convert INPUT=document.pdf PAGES=0,2-4,7
-
-# Convert with image extraction
-make convert INPUT=document.pdf IMAGES=true
-
-# Quick convert (print to terminal)
-make quick FILE=document.pdf
-
-# Quick save (auto-generates filename)
-make save FILE=document.pdf
+# Transcribe audio files
+python transcribe_client.py /path/to/audio /path/to/output \
+  --server https://your-pod-id.runpod.io:8080 \
+  --api-key your-secret-api-key
 ```
 
-**Batch Processing:**
+## 📋 What's Included
+
+### Files Included:
+- `runpod_fastapi_server.py` - FastAPI server with HTTP endpoints
+- `Dockerfile` - Optimized Dockerfile without SSH
+- `transcribe_client.py` - Simple Python client for uploads/downloads
+
+### Features:
+- ✅ **Simple HTTP API** - No SSH keys or complex setup
+- ✅ **Individual file uploads** - Upload files one-by-one with progress bars
+- ✅ **Extended timeouts** - 30-minute timeouts + 3-attempt retry logic
+- ✅ **Real-time progress** - tqdm progress bars and upload speed display
+- ✅ **Multi-job processing** - Parallel processing with live status updates
+- ✅ **API key authentication** - Simple security
+- ✅ **Auto cleanup** - Server manages temporary files
+- ✅ **Multiple formats** - Supports MP3, WAV, M4A, FLAC, OGG
+- ✅ **Robust error handling** - Automatic retry and graceful failure recovery
+
+## 🔧 API Endpoints
+
+### Upload Files
 ```bash
-# Set up default directories
-make setup-dirs
-
-# Convert all PDFs in pdf_input/ to md_output/
-make batch
-
-# Convert with custom directories
-make batch-custom INPUT_DIR=my_pdfs OUTPUT_DIR=my_markdown
+curl -X POST "https://your-pod.runpod.io:8080/upload" \
+  -H "Authorization: Bearer your-api-key" \
+  -F "files=@audio1.mp3" \
+  -F "files=@audio2.mp3" \
+  -F "model=turbo"
 ```
 
-### Direct Python Usage
-
-**Single File Mode:**
+### Check Status
 ```bash
-# Basic conversion
-poetry run python pdf2text/pdf_to_markdown.py document.pdf
-
-# Save to file
-poetry run python pdf2text/pdf_to_markdown.py document.pdf -o output.md
-
-# Convert specific pages
-poetry run python pdf2text/pdf_to_markdown.py document.pdf -p 0,2-4 -o output.md
-
-# Extract images
-poetry run python pdf2text/pdf_to_markdown.py document.pdf -i --image-dir images
+curl "https://your-pod.runpod.io:8080/status/job-id" \
+  -H "Authorization: Bearer your-api-key"
 ```
 
-**Batch Mode:**
+### Download Results
 ```bash
-# Batch convert all PDFs in a folder
-poetry run python pdf2text/pdf_to_markdown.py --batch --input-dir pdf_folder --output-dir md_folder
-
-# Short form
-poetry run python pdf2text/pdf_to_markdown.py -b --input-dir pdfs --output-dir markdown
-
-# See all options
-poetry run python pdf2text/pdf_to_markdown.py --help
+curl "https://your-pod.runpod.io:8080/download/job-id" \
+  -H "Authorization: Bearer your-api-key" \
+  -o transcripts.zip
 ```
 
-## Command Reference
-
-| Command | Description |
-|---------|-------------|
-| `make help` | Show all available commands |
-| `make install` | Install dependencies |
-| `make convert` | Convert single PDF (see examples above) |
-| `make quick FILE=x.pdf` | Quick convert to stdout |
-| `make save FILE=x.pdf` | Quick save to .md file |
-| `make setup-dirs` | Create default input/output directories |
-| `make batch` | Batch convert all PDFs in pdf_input/ |
-| `make batch-custom` | Batch convert with custom directories |
-| `make test` | Test the installation |
-| `make clean` | Clean up generated files |
-| `make example` | Show usage examples |
-
-## Examples
-
-### Single File Examples
-
-**Convert entire PDF:**
+### Health Check
 ```bash
-make convert INPUT=research_paper.pdf OUTPUT=paper.md
+curl "https://your-pod.runpod.io:8080/health" \
+  -H "Authorization: Bearer your-api-key"
 ```
 
-**Convert first 3 pages only:**
+## 🎯 Usage Examples
+
+### Basic Usage
 ```bash
-make convert INPUT=book.pdf PAGES=0-2 OUTPUT=chapter1.md
+# Transcribe a directory of MP3s
+python transcribe_client.py ~/podcasts ~/transcripts
+
+# Transcribe a single file
+python transcribe_client.py ~/audio/meeting.mp3 ~/transcripts
 ```
 
-**Extract text and images:**
+### Advanced Usage
 ```bash
-make convert INPUT=presentation.pdf IMAGES=true OUTPUT=slides.md
+# Use different model
+python transcribe_client.py ~/audio ~/output --model large-v3
+
+# Custom server and API key
+python transcribe_client.py ~/audio ~/output \
+  --server https://abc123.runpod.io:8080 \
+  --api-key your-secret-key
+
+# Keep job on server (don't auto-cleanup)
+python transcribe_client.py ~/audio ~/output --no-cleanup
 ```
 
-### Batch Processing Examples
-
-**Basic batch conversion:**
+### Environment Variables
 ```bash
-# 1. Create directories and place PDFs
-make setup-dirs
-cp *.pdf pdf_input/
+# Set default server and API key
+export RUNPOD_SERVER_URL=https://your-pod.runpod.io:8080
+export RUNPOD_API_KEY=your-secret-api-key
 
-# 2. Convert all PDFs
-make batch
-
-# Results will be in md_output/
-ls md_output/
+# Now you can use simple commands
+python transcribe_client.py ~/audio ~/output
 ```
 
-**Custom directories:**
+## 🏗️ Deployment Steps
+
+### 1. RunPod Setup
+1. Create RunPod account and get API key
+2. Build and push Docker image to registry
+3. Create pod with your Docker image
+4. Set environment variable `RUNPOD_API_KEY=your-secret-key`
+5. Expose port 8080
+
+### 2. Local Client Setup
 ```bash
-make batch-custom INPUT_DIR=research_papers OUTPUT_DIR=converted_papers
+# Install Python dependencies
+pip install requests
+
+# Make client executable
+chmod +x transcribe_client.py
+
+# Test connection
+python transcribe_client.py --help
 ```
 
-**File naming examples:**
-- `document.pdf` → `document.md`
-- `Research Paper 2024.pdf` → `Research Paper 2024.md`
-- `report_final.pdf` → `report_final.md`
+## 🔒 Security
 
-### Batch Processing Workflow
+- **API Key Authentication**: All endpoints require Bearer token
+- **Input Validation**: File type and model validation
+- **Temporary Storage**: Files auto-deleted after processing
+- **Error Handling**: Graceful error responses
 
-1. **Automatic skipping**: Already converted files are automatically skipped
-2. **Progress tracking**: See real-time conversion progress
-3. **Error handling**: Failed conversions don't stop the batch process
-4. **Summary report**: Get statistics when processing completes
+## 🎚️ Model Options
 
+- `tiny` - Fastest, lowest quality
+- `base` - Fast, basic quality  
+- `small` - Good balance
+- `medium` - Better quality
+- `large` - Best quality, slower
+- `large-v2` - Enhanced large model
+- `large-v3` - Latest large model
+- `turbo` - **Default** - 8x faster than large with similar quality
+
+## 📊 Response Formats
+
+### Upload Response
+```json
+{
+  "job_id": "uuid-string",
+  "status": "pending",
+  "files_count": 5,
+  "message": "Files uploaded successfully. Processing started.",
+  "status_url": "/status/uuid-string"
+}
 ```
-Found 5 PDF file(s) in 'pdf_input'
-Output directory: 'md_output'
---------------------------------------------------
-[1/5] ✓ Converting: document1.pdf → document1.md
-[2/5] ⏭️  Skipping: document2.pdf ('document2.md' already exists)
-[3/5] ✓ Converting: document3.pdf → document3.md
-[4/5] ✓ Converting: document4.pdf → document4.md
-[5/5] ❌ Error converting 'corrupted.pdf': Invalid PDF
---------------------------------------------------
-Batch Processing Summary:
-  Total PDFs found:      5
-  Successfully converted: 3
-  Skipped (existing):     1
-  Failed:                 1
+
+### Status Response
+```json
+{
+  "job_id": "uuid-string",
+  "status": "processing",
+  "created_at": "2024-01-01T12:00:00",
+  "updated_at": "2024-01-01T12:05:00",
+  "files_count": 5,
+  "processed_count": 3,
+  "failed_count": 0,
+  "error": null,
+  "download_url": "/download/uuid-string"
+}
 ```
 
-## Output Format
-
-The converter produces clean Markdown with:
-- ✅ Proper headers (detected by font size)
-- ✅ **Bold** and *italic* text formatting
-- ✅ Tables and lists
-- ✅ Code blocks (monospaced text)
-- ✅ Logical reading order
-- ✅ GitHub-compatible markdown syntax
-
-Perfect for feeding into LLMs like Claude, GPT, or local models!
-
-## Why This Tool?
-
-- **Built for LLMs**: PyMuPDF4LLM is specifically designed for AI/LLM consumption
-- **No Heavy Dependencies**: No PyTorch or complex ML models required
-- **Fast & Reliable**: Works great with text-selectable PDFs
-- **Developer Friendly**: Poetry + Makefile = smooth workflow
-
-## Troubleshooting
+## 🛠️ Troubleshooting
 
 ### Common Issues
 
-1. **"pymupdf4llm not installed"**
+1. **Connection Failed**
    ```bash
-   make install
+   # Check if pod is running
+   curl https://your-pod.runpod.io:8080/health
    ```
 
-2. **"Poetry not found"**
-   - Install Poetry: https://python-poetry.org/docs/#installation
+2. **Authentication Failed**
+   ```bash
+   # Verify API key matches pod environment variable
+   echo $RUNPOD_API_KEY
+   ```
 
-3. **Poor conversion quality**
-   - Ensure your PDF has selectable text (not scanned images)
-   - Try extracting images: `make convert INPUT=file.pdf IMAGES=true`
+3. **Upload Timeout**
+   ```bash
+   # Check file sizes and network connection
+   # Large files may take several minutes to upload
+   ```
 
-### Getting Help
+4. **No Audio Files Found**
+   ```bash
+   # Verify file extensions are supported
+   ls -la /path/to/audio/*.{mp3,wav,m4a,flac,ogg}
+   ```
 
+### Performance Tips
+
+- Use `turbo` model for best speed/quality balance
+- Upload files in batches rather than one-by-one
+- Use RunPod's high-bandwidth regions
+- Monitor GPU utilization in RunPod console
+
+## 🆚 Comparison: Old vs New
+
+| Feature | SSH Method | FastAPI Method |
+|---------|------------|----------------|
+| **Setup** | Complex SSH keys | Simple HTTP |
+| **File Transfer** | SCP + zip files | Direct HTTP upload |
+| **Authentication** | SSH keys | API key |
+| **Progress** | Manual checking | Real-time API |
+| **Error Handling** | Manual retry | Automatic retry |
+| **Client Code** | 800+ lines bash | 200 lines Python |
+| **Dependencies** | ssh, scp, zip | requests |
+
+## 🎉 Benefits
+
+1. **Dramatically Simpler**: No SSH setup, just HTTP requests
+2. **More Reliable**: Better error handling and retries
+3. **Real-time Progress**: Monitor job status via API
+4. **Cross-platform**: Works on Windows, Mac, Linux
+5. **Easier Debugging**: Clear HTTP error messages
+6. **Scalable**: Easy to integrate into other applications
+
+This FastAPI solution eliminates all the complexity of SSH file transfers while providing a much more robust and user-friendly experience!
+
+## 📚 Documentation
+
+- **[DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)** - Complete deployment instructions
+- **[deploy.sh](deploy.sh)** - Automated deployment script
+
+## 🚀 Quick Reference
+
+### Deploy
 ```bash
-make help          # Show available commands
-make example       # Show usage examples
-make env-info      # Show environment details
+./deploy.sh your-docker-username
 ```
 
-## License
+### Use
+```bash
+export RUNPOD_SERVER_URL=https://your-pod-url
+export RUNPOD_API_KEY=your-secret-key
+python transcribe_client.py ~/audio ~/transcripts
+```
 
-MIT License - feel free to use and modify!
+### Monitor
+```bash
+# Check pod status
+curl https://your-pod-url/health
+
+# View processing costs in RunPod console
+# Typical cost: $0.50/hour for RTX A5000
+```

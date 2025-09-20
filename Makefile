@@ -1,4 +1,4 @@
-.PHONY: help install convert test clean example batch batch-custom setup-dirs
+.PHONY: help install convert test clean example batch batch-custom setup-dirs docker-build docker-deploy runpod-create runpod-info runpod-stop runpod-start runpod-delete runpod-logs
 .DEFAULT_GOAL := help
 
 # Variables
@@ -9,6 +9,15 @@ VENV := .venv
 # Default directories for batch processing
 PDF_INPUT := /Volumes/J15/copy-writing/dk_books_pdf
 MD_OUTPUT := ./dk_books
+
+# Docker and RunPod variables
+DOCKER_USERNAME ?= blickt123
+DOCKER_IMAGE_NAME := whisper-transcription
+DOCKER_TAG ?= latest
+DOCKER_FULL_NAME := $(DOCKER_USERNAME)/$(DOCKER_IMAGE_NAME):$(DOCKER_TAG)
+RUNPOD_POD_NAME ?= whisper-transcription-$(shell date +%s)
+RUNPOD_GPU_TYPE ?= NVIDIA RTX A5000
+RUNPOD_API_KEY_ENV ?= your-secret-api-key-$(shell python3 -c "import secrets; print(secrets.token_urlsafe(16))" 2>/dev/null || echo "change-me")
 
 help: ## Show this help message
 	@echo "PDF to Markdown Converter"
@@ -33,6 +42,11 @@ help: ## Show this help message
 	@echo "  make audio-setup   # Verify audio setup"
 	@echo "  make audio-transcribe INPUT=podcast.mp3"
 	@echo "  make audio-batch INPUT_DIR=podcasts OUTPUT_DIR=transcripts"
+	@echo ""
+	@echo "RunPod deployment examples:"
+	@echo "  make docker-deploy DOCKER_USERNAME=myuser  # Build and push to Docker Hub"
+	@echo "  make runpod-create    # Create and deploy RunPod instance"
+	@echo "  make runpod-info      # Get pod status and connection URL"
 
 install: ## Install dependencies using Poetry
 	@echo "Installing dependencies..."
@@ -464,3 +478,318 @@ audio-help: ## Show all audio-related commands
 	@echo ""
 	@echo "Note: For single files with special characters, create a directory"
 	@echo "      with just that file and use batch mode instead."
+
+# Docker and RunPod Deployment Targets
+# ====================================
+
+docker-build: ## Build Docker image for RunPod deployment
+	@echo "Building Docker image: $(DOCKER_FULL_NAME)"
+	@echo "========================================"
+	@if ! command -v docker >/dev/null 2>&1; then \
+		echo "❌ Docker not found. Please install Docker first."; \
+		exit 1; \
+	fi
+	@if ! docker info >/dev/null 2>&1; then \
+		echo "❌ Docker is not running. Please start Docker."; \
+		exit 1; \
+	fi
+	@echo "✓ Docker is running"
+	@echo "Building image..."
+	docker build -t $(DOCKER_FULL_NAME) .
+	@echo "✅ Docker image built successfully: $(DOCKER_FULL_NAME)"
+
+docker-push: docker-build ## Push Docker image to Docker Hub
+	@echo "Pushing Docker image: $(DOCKER_FULL_NAME)"
+	@echo "========================================="
+	@if ! docker info | grep -q "Username"; then \
+		echo "🔑 Logging into Docker Hub..."; \
+		docker login; \
+	fi
+	@echo "📤 Pushing image..."
+	docker push $(DOCKER_FULL_NAME)
+	@echo "✅ Image pushed successfully to Docker Hub"
+
+docker-deploy: docker-push ## Build and push Docker image (shortcut)
+	@echo "🎉 Docker deployment complete!"
+	@echo ""
+	@echo "📋 Next steps:"
+	@echo "1. Create RunPod instance: make runpod-create"
+	@echo "2. Get connection URL: make runpod-info"
+	@echo "3. Start transcribing: make runpod-transcribe INPUT=audio.mp3"
+	@echo ""
+	@echo "🐳 Your image: $(DOCKER_FULL_NAME)"
+	@echo "🌐 Docker Hub: https://hub.docker.com/r/$(DOCKER_USERNAME)/$(DOCKER_IMAGE_NAME)"
+
+runpod-check: ## Check RunPod CLI installation
+	@echo "Checking RunPod CLI installation..."
+	@if ! command -v runpodctl >/dev/null 2>&1; then \
+		echo "❌ runpodctl not found. Installing..."; \
+		pip install runpodctl; \
+	fi
+	@echo "✓ runpodctl installed"
+	@if [ -z "$$RUNPOD_API_KEY" ]; then \
+		echo "⚠️  RUNPOD_API_KEY environment variable not set"; \
+		echo "Please run: export RUNPOD_API_KEY=your-api-key"; \
+		echo "Get your API key from: https://www.runpod.io/console/user/settings"; \
+		exit 1; \
+	fi
+	@echo "✓ RUNPOD_API_KEY configured"
+
+runpod-create: runpod-check ## Create and deploy RunPod instance
+	@echo "Creating RunPod instance..."
+	@echo "==========================="
+	@echo "📦 Image: $(DOCKER_FULL_NAME)"
+	@echo "🔧 GPU: $(RUNPOD_GPU_TYPE)"
+	@echo "🏷️  Name: $(RUNPOD_POD_NAME)"
+	@echo ""
+	@read -p "Continue? (y/N): " confirm; \
+	if [ "$$confirm" != "y" ] && [ "$$confirm" != "Y" ]; then \
+		echo "Cancelled."; \
+		exit 1; \
+	fi
+	@echo "🚀 Creating pod..."
+	@pod_output=$$(runpodctl create pod \
+		--name "$(RUNPOD_POD_NAME)" \
+		--imageName "$(DOCKER_FULL_NAME)" \
+		--gpuType "$(RUNPOD_GPU_TYPE)" \
+		--gpuCount 1 \
+		--volumeSize 20 \
+		--containerDiskSize 10 \
+		--ports "8080/http" \
+		--env "RUNPOD_API_KEY=$(RUNPOD_API_KEY_ENV)" 2>&1); \
+	if echo "$$pod_output" | grep -q "error\|Error\|ERROR"; then \
+		echo "❌ Failed to create pod:"; \
+		echo "$$pod_output"; \
+		exit 1; \
+	fi; \
+	pod_id=$$(echo "$$pod_output" | grep -oE '"[a-z0-9-]+"' | head -1 | tr -d '"'); \
+	if [ -n "$$pod_id" ]; then \
+		echo "$$pod_id" > .runpod_pod_id; \
+		echo "✅ Pod created successfully!"; \
+		echo "🆔 Pod ID: $$pod_id"; \
+		echo "💾 Pod ID saved to .runpod_pod_id"; \
+		echo ""; \
+		echo "⏳ Pod is starting up (this may take 2-3 minutes)..."; \
+		echo "🔍 Check status: make runpod-info"; \
+	else \
+		echo "❌ Could not extract pod ID from output:"; \
+		echo "$$pod_output"; \
+	fi
+
+runpod-info: ## Get RunPod instance status and connection URL
+	@echo "RunPod Instance Information"
+	@echo "=========================="
+	@if [ ! -f ".runpod_pod_id" ]; then \
+		echo "❌ No pod ID found. Run 'make runpod-create' first."; \
+		exit 1; \
+	fi
+	@pod_id=$$(cat .runpod_pod_id); \
+	echo "🆔 Pod ID: $$pod_id"; \
+	echo ""; \
+	echo "📊 Status:"; \
+	pod_info=$$(runpodctl get pod $$pod_id 2>/dev/null); \
+	if [ $$? -eq 0 ]; then \
+		echo "$$pod_info" | grep -E "(Status|Runtime|GPU|Container)"; \
+		echo ""; \
+		if echo "$$pod_info" | grep -q "RUNNING"; then \
+			echo "✅ Pod is running!"; \
+			echo ""; \
+			echo "🌐 Getting connection URL..."; \
+			url_info=$$(runpodctl get pod $$pod_id | grep -E "Connect With|Mapped Port" || echo ""); \
+			if [ -n "$$url_info" ]; then \
+				echo "$$url_info"; \
+			fi; \
+			echo ""; \
+			echo "🔗 Typical URL format: https://$$pod_id-8080.proxy.runpod.net"; \
+			echo "🏥 Health check: curl https://$$pod_id-8080.proxy.runpod.net/health"; \
+			echo ""; \
+			echo "🎵 Ready for transcription!"; \
+			echo "💡 Usage: make runpod-transcribe INPUT=audio.mp3"; \
+		else \
+			echo "⏳ Pod is not yet running. Status check:"; \
+			echo "$$pod_info" | grep "Status"; \
+		fi; \
+	else \
+		echo "❌ Could not get pod information. Pod may not exist."; \
+	fi
+
+runpod-url: ## Get just the RunPod connection URL
+	@if [ ! -f ".runpod_pod_id" ]; then \
+		echo "❌ No pod ID found. Run 'make runpod-create' first."; \
+		exit 1; \
+	fi
+	@pod_id=$$(cat .runpod_pod_id); \
+	echo "https://$$pod_id-8080.proxy.runpod.net"
+
+runpod-test: ## Test RunPod instance health
+	@echo "Testing RunPod instance..."
+	@if [ ! -f ".runpod_pod_id" ]; then \
+		echo "❌ No pod ID found. Run 'make runpod-create' first."; \
+		exit 1; \
+	fi
+	@pod_id=$$(cat .runpod_pod_id); \
+	url="https://$$pod_id-8080.proxy.runpod.net"; \
+	echo "🔗 Testing: $$url/health"; \
+	response=$$(curl -s -w "%{http_code}" "$$url/health" || echo "000"); \
+	if echo "$$response" | grep -q "200"; then \
+		echo "✅ Pod is healthy and ready!"; \
+		echo "🌐 Server URL: $$url"; \
+	else \
+		echo "❌ Pod not responding (HTTP: $$response)"; \
+		echo "💡 Pod might still be starting up. Try: make runpod-info"; \
+	fi
+
+runpod-transcribe: ## Transcribe audio using RunPod instance (INPUT=file.mp3 [OUTPUT=./transcripts])
+ifndef INPUT
+	@echo "Error: INPUT parameter required"
+	@echo "Usage: make runpod-transcribe INPUT=audio.mp3 [OUTPUT=./transcripts]"
+	@exit 1
+endif
+	@echo "Transcribing with RunPod..."
+	@echo "=========================="
+	@if [ ! -f ".runpod_pod_id" ]; then \
+		echo "❌ No pod ID found. Run 'make runpod-create' first."; \
+		exit 1; \
+	fi
+	@if [ ! -f "$(INPUT)" ]; then \
+		echo "❌ Input file not found: $(INPUT)"; \
+		exit 1; \
+	fi
+	@pod_id=$$(cat .runpod_pod_id); \
+	url="https://$$pod_id-8080.proxy.runpod.net"; \
+	output_dir="$(if $(OUTPUT),$(OUTPUT),./transcripts)"; \
+	api_key="$(RUNPOD_API_KEY_ENV)"; \
+	echo "🎵 Input: $(INPUT)"; \
+	echo "📁 Output: $$output_dir"; \
+	echo "🌐 Server: $$url"; \
+	echo ""; \
+	export RUNPOD_SERVER_URL="$$url"; \
+	export RUNPOD_API_KEY="$$api_key"; \
+	$(PYTHON) transcribe_client.py "$(INPUT)" "$$output_dir"
+
+runpod-batch: ## Batch transcribe directory using RunPod (INPUT_DIR=... [OUTPUT_DIR=./transcripts])
+ifndef INPUT_DIR
+	@echo "Error: INPUT_DIR parameter required"
+	@echo "Usage: make runpod-batch INPUT_DIR=/path/to/mp3s [OUTPUT_DIR=./transcripts]"
+	@exit 1
+endif
+	@echo "Batch transcribing with RunPod..."
+	@echo "================================"
+	@if [ ! -f ".runpod_pod_id" ]; then \
+		echo "❌ No pod ID found. Run 'make runpod-create' first."; \
+		exit 1; \
+	fi
+	@if [ ! -d "$(INPUT_DIR)" ]; then \
+		echo "❌ Input directory not found: $(INPUT_DIR)"; \
+		exit 1; \
+	fi
+	@pod_id=$$(cat .runpod_pod_id); \
+	url="https://$$pod_id-8080.proxy.runpod.net"; \
+	output_dir="$(if $(OUTPUT_DIR),$(OUTPUT_DIR),./transcripts)"; \
+	api_key="$(RUNPOD_API_KEY_ENV)"; \
+	echo "📁 Input: $(INPUT_DIR)"; \
+	echo "📁 Output: $$output_dir"; \
+	echo "🌐 Server: $$url"; \
+	echo ""; \
+	export RUNPOD_SERVER_URL="$$url"; \
+	export RUNPOD_API_KEY="$$api_key"; \
+	$(PYTHON) transcribe_client.py "$(INPUT_DIR)" "$$output_dir"
+
+runpod-logs: ## Show RunPod instance logs
+	@echo "RunPod Instance Logs"
+	@echo "==================="
+	@if [ ! -f ".runpod_pod_id" ]; then \
+		echo "❌ No pod ID found. Run 'make runpod-create' first."; \
+		exit 1; \
+	fi
+	@pod_id=$$(cat .runpod_pod_id); \
+	echo "🆔 Pod ID: $$pod_id"; \
+	echo ""; \
+	runpodctl logs $$pod_id
+
+runpod-stop: ## Stop RunPod instance
+	@echo "Stopping RunPod instance..."
+	@if [ ! -f ".runpod_pod_id" ]; then \
+		echo "❌ No pod ID found. Run 'make runpod-create' first."; \
+		exit 1; \
+	fi
+	@pod_id=$$(cat .runpod_pod_id); \
+	echo "🆔 Pod ID: $$pod_id"; \
+	echo "🛑 Stopping pod..."; \
+	runpodctl stop pod $$pod_id; \
+	echo "✅ Pod stopped successfully"
+
+runpod-start: ## Start RunPod instance
+	@echo "Starting RunPod instance..."
+	@if [ ! -f ".runpod_pod_id" ]; then \
+		echo "❌ No pod ID found. Run 'make runpod-create' first."; \
+		exit 1; \
+	fi
+	@pod_id=$$(cat .runpod_pod_id); \
+	echo "🆔 Pod ID: $$pod_id"; \
+	echo "🚀 Starting pod..."; \
+	runpodctl start pod $$pod_id; \
+	echo "✅ Pod started successfully"; \
+	echo "⏳ Give it 1-2 minutes to become ready"; \
+	echo "🔍 Check status: make runpod-info"
+
+runpod-delete: ## Delete RunPod instance
+	@echo "Deleting RunPod instance..."
+	@if [ ! -f ".runpod_pod_id" ]; then \
+		echo "❌ No pod ID found. Nothing to delete."; \
+		exit 1; \
+	fi
+	@pod_id=$$(cat .runpod_pod_id); \
+	echo "🆔 Pod ID: $$pod_id"; \
+	echo "⚠️  This will permanently delete the pod and all its data."; \
+	read -p "Are you sure? (y/N): " confirm; \
+	if [ "$$confirm" = "y" ] || [ "$$confirm" = "Y" ]; then \
+		echo "🗑️  Deleting pod..."; \
+		runpodctl remove pod $$pod_id; \
+		rm -f .runpod_pod_id; \
+		echo "✅ Pod deleted successfully"; \
+	else \
+		echo "Cancelled."; \
+	fi
+
+runpod-status: ## Quick status check of RunPod instance
+	@if [ ! -f ".runpod_pod_id" ]; then \
+		echo "❌ No pod found. Run 'make runpod-create' to deploy."; \
+	else \
+		pod_id=$$(cat .runpod_pod_id); \
+		echo "🆔 Pod: $$pod_id"; \
+		status=$$(runpodctl get pod $$pod_id 2>/dev/null | grep "Status" || echo "Status: Unknown"); \
+		echo "📊 $$status"; \
+		if echo "$$status" | grep -q "RUNNING"; then \
+			url="https://$$pod_id-8080.proxy.runpod.net"; \
+			echo "🌐 URL: $$url"; \
+		fi; \
+	fi
+
+runpod-help: ## Show all RunPod-related commands
+	@echo "RunPod Management Commands"
+	@echo "=========================="
+	@echo ""
+	@echo "Deployment:"
+	@echo "  make docker-deploy DOCKER_USERNAME=myuser  # Build and push Docker image"
+	@echo "  make runpod-create                          # Create RunPod instance"
+	@echo ""
+	@echo "Usage:"
+	@echo "  make runpod-transcribe INPUT=audio.mp3      # Transcribe single file"
+	@echo "  make runpod-batch INPUT_DIR=./mp3s          # Transcribe directory"
+	@echo ""
+	@echo "Management:"
+	@echo "  make runpod-info      # Get status and connection URL"
+	@echo "  make runpod-status    # Quick status check"
+	@echo "  make runpod-test      # Test health endpoint"
+	@echo "  make runpod-logs      # View container logs"
+	@echo ""
+	@echo "Control:"
+	@echo "  make runpod-stop      # Stop instance (saves money)"
+	@echo "  make runpod-start     # Start stopped instance"
+	@echo "  make runpod-delete    # Delete instance permanently"
+	@echo ""
+	@echo "💰 Cost Management:"
+	@echo "  - Pods auto-stop when idle (~5-10 minutes)"
+	@echo "  - Use 'make runpod-stop' when done to save costs"
+	@echo "  - RTX A5000: ~$$0.50/hour (~$$2.50 for 30min of audio)"

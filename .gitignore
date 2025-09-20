@@ -241,3 +241,11 @@ dk_rag/__pycache__/
 
 *.mp3
 test_mp3/
+
+# Temporary test files
+test_output/
+test_uploads/
+test_outputs/
+
+# RunPod deployment files
+.runpod_pod_id

@@ -1,4 +1,4 @@
-# Optimized Dockerfile for RunPod Whisper Audio Transcription
+# Optimized Dockerfile for RunPod FastAPI Whisper Transcription
 # Base: CUDA-enabled PyTorch image for fast GPU processing
 
 FROM pytorch/pytorch:2.1.0-cuda12.1-cudnn8-runtime
@@ -18,26 +18,32 @@ RUN apt-get update && apt-get install -y \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Python dependencies
-COPY pyproject.toml poetry.lock* ./
-RUN pip install poetry && \
-    poetry config virtualenvs.create false && \
-    poetry install --only=main --no-root --no-interaction --no-ansi
+# Install Python dependencies including FastAPI
+RUN pip install --no-cache-dir \
+    openai-whisper \
+    fastapi \
+    uvicorn[standard] \
+    python-multipart \
+    aiofiles
 
 # Pre-download Whisper turbo model to avoid runtime delays
-# Turbo model provides 8x faster processing with near-identical quality
 RUN python -c "import whisper; whisper.load_model('turbo')"
 
 # Copy application code
-COPY audio2text/ ./audio2text/
-COPY runpod_batch_transcribe.py ./
+COPY runpod_fastapi_server.py ./
 
-# Create directories for input/output
-RUN mkdir -p /workspace/input /workspace/output
+# Create directories for uploads and outputs
+RUN mkdir -p /workspace/uploads /workspace/outputs /workspace/jobs
 
 # Set environment variables for optimal GPU performance
 ENV CUDA_VISIBLE_DEVICES=0
 ENV PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:512
 
-# Default command - can be overridden by RunPod
-CMD ["python", "runpod_batch_transcribe.py"]
+# Set default API key (override with environment variable)
+ENV RUNPOD_API_KEY=your-secret-api-key-here
+
+# Expose HTTP port
+EXPOSE 8080
+
+# Start FastAPI server
+CMD ["python", "runpod_fastapi_server.py"]
