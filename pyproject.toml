@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "pdf2text"}]
 
 [tool.poetry.dependencies]
-python = "^3.13"
+python = "^3.10"
 pymupdf4llm = "^0.0.17"
 openai = "^1.12.0"
 litellm = "^1.52.0"
