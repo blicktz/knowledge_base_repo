@@ -10,11 +10,12 @@ import time
 import json
 import argparse
 import zipfile
+import random
+import uuid
 from pathlib import Path
 from typing import List, Optional
-import requests
-from requests.exceptions import RequestException
-from requests_toolbelt.multipart.encoder import MultipartEncoder, MultipartEncoderMonitor
+import httpx
+from httpx import RequestError
 from tqdm import tqdm
 from dotenv import load_dotenv
 
@@ -24,12 +25,16 @@ class TranscriptionClient:
     def __init__(self, server_url: str, api_key: str):
         self.server_url = server_url.rstrip('/')
         self.api_key = api_key
-        self.headers = {"Authorization": f"Bearer {api_key}"}
+        self.headers = {
+            "Authorization": f"Bearer {api_key}",
+            "Connection": "keep-alive",
+            "User-Agent": "transcription-client/1.0"
+        }
     
     def health_check(self) -> bool:
         """Check if server is healthy."""
         try:
-            response = requests.get(f"{self.server_url}/health", headers=self.headers, timeout=60)
+            response = httpx.get(f"{self.server_url}/health", headers=self.headers, timeout=30)
             if response.status_code == 200:
                 data = response.json()
                 print(f"✅ Server is healthy (Device: {data.get('device', 'unknown')})")
@@ -37,11 +42,11 @@ class TranscriptionClient:
             else:
                 print(f"❌ Server returned status {response.status_code}")
                 return False
-        except RequestException as e:
+        except RequestError as e:
             print(f"❌ Cannot connect to server: {e}")
             return False
     
-    def upload_file_with_progress(self, audio_file: Path, model: str = "turbo", max_retries: int = 3) -> Optional[str]:
+    def upload_file_with_progress(self, audio_file: Path, model: str = "turbo", max_retries: int = 5) -> Optional[str]:
         """Upload a single audio file with progress tracking and retry logic."""
         file_size = audio_file.stat().st_size
         file_size_mb = file_size / (1024 * 1024)
@@ -59,32 +64,24 @@ class TranscriptionClient:
                     leave=False
                 )
                 
-                def progress_callback(monitor):
-                    progress_bar.update(monitor.bytes_read - progress_bar.n)
-                
-                # Prepare multipart encoder with progress monitoring
+                # Use httpx native file upload (simpler but with basic progress)
                 with open(audio_file, 'rb') as f:
-                    encoder = MultipartEncoder(
-                        fields={
-                            'file': (audio_file.name, f, 'audio/mpeg'),
-                            'model': model
-                        }
-                    )
+                    files = {'file': (audio_file.name, f, 'audio/mpeg')}
+                    data = {'model': model}
                     
-                    monitor = MultipartEncoderMonitor(encoder, progress_callback)
+                    # Start upload indicator
+                    progress_bar.update(0)
                     
-                    # Upload with progress tracking
-                    headers = {
-                        **self.headers,
-                        'Content-Type': monitor.content_type
-                    }
-                    
-                    response = requests.post(
+                    response = httpx.post(
                         f"{self.server_url}/upload-single",
-                        data=monitor,
-                        headers=headers,
+                        files=files,
+                        data=data,
+                        headers=self.headers,
                         timeout=1800  # 30 minutes timeout for large files
                     )
+                    
+                    # Complete progress bar (we can't track real-time progress with basic httpx)
+                    progress_bar.update(file_size)
                 
                 progress_bar.close()
                 
@@ -99,7 +96,7 @@ class TranscriptionClient:
                         print(f"⏳ Retrying in 5 seconds...")
                         time.sleep(5)
                     
-            except RequestException as e:
+            except RequestError as e:
                 progress_bar.close() if 'progress_bar' in locals() else None
                 print(f"❌ Upload error (attempt {attempt + 1}/{max_retries}): {e}")
                 if attempt < max_retries - 1:
@@ -142,16 +139,16 @@ class TranscriptionClient:
         
         return job_ids
     
-    def start_processing(self, job_id: str, max_retries: int = 3) -> bool:
+    def start_processing(self, job_id: str, max_retries: int = 5) -> bool:
         """Start processing an uploaded file."""
         print(f"🚀 Starting processing for job {job_id[:8]}...")
         
         for attempt in range(max_retries):
             try:
-                response = requests.post(
+                response = httpx.post(
                     f"{self.server_url}/process/{job_id}",
                     headers=self.headers,
-                    timeout=60
+                    timeout=30
                 )
                 
                 if response.status_code == 200:
@@ -166,7 +163,7 @@ class TranscriptionClient:
                         print(f"⏳ Retrying in 3 seconds...")
                         time.sleep(3)
                         
-            except RequestException as e:
+            except RequestError as e:
                 print(f"❌ Processing start error (attempt {attempt + 1}/{max_retries}): {e}")
                 if attempt < max_retries - 1:
                     print(f"⏳ Retrying in 3 seconds...")
@@ -176,37 +173,74 @@ class TranscriptionClient:
         return False
     
     def check_status(self, job_id: str) -> Optional[dict]:
-        """Check job status."""
+        """Check job status with CloudFlare-optimized timeout and request tracking."""
+        request_id = str(uuid.uuid4())[:8]
+        start_time = time.time()
+        
         try:
-            response = requests.get(
+            # Add request ID header for tracking
+            headers_with_id = {**self.headers, "X-Request-ID": request_id}
+            
+            response = httpx.get(
                 f"{self.server_url}/status/{job_id}",
-                headers=self.headers,
-                timeout=60
+                headers=headers_with_id,
+                timeout=30  # Reduced from 60s for faster CloudFlare failures
             )
             
+            elapsed = time.time() - start_time
+            
             if response.status_code == 200:
+                # Only log on slow responses or occasional success for tracking
+                if elapsed > 10 or random.random() < 0.1:  # Log 10% of fast responses
+                    print(f"🔍 Status check {request_id}: {elapsed:.1f}s")
                 return response.json()
             else:
-                print(f"❌ Status check failed: {response.text}")
+                print(f"❌ Status check {request_id} failed ({elapsed:.1f}s): {response.text}")
                 return None
                 
-        except RequestException as e:
-            print(f"❌ Status check error: {e}")
+        except httpx.ReadTimeout:
+            elapsed = time.time() - start_time
+            print(f"❌ Status check {request_id} timeout ({elapsed:.1f}s) - likely CloudFlare proxy issue")
+            return None
+        except httpx.ConnectTimeout:
+            elapsed = time.time() - start_time
+            print(f"❌ Status check {request_id} connection timeout ({elapsed:.1f}s) - CloudFlare connection issue")
+            return None
+        except RequestError as e:
+            elapsed = time.time() - start_time
+            print(f"❌ Status check {request_id} error ({elapsed:.1f}s): {e}")
             return None
     
     def wait_for_completion(self, job_id: str, check_interval: int = 5) -> bool:
-        """Wait for job to complete."""
+        """Wait for job to complete with exponential backoff for CloudFlare timeouts."""
         print(f"\n⏳ Processing job {job_id}...")
         
         last_status = None
         spinner = ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏']
         spinner_idx = 0
+        consecutive_errors = 0
+        max_consecutive_errors = 10
+        base_retry_delay = 2  # Start with 2 seconds
         
         while True:
             status = self.check_status(job_id)
             
             if not status:
-                return False
+                consecutive_errors += 1
+                if consecutive_errors >= max_consecutive_errors:
+                    print(f"\n❌ Too many consecutive network errors ({consecutive_errors}). Giving up.")
+                    return False
+                
+                # Exponential backoff with jitter for CloudFlare issues
+                retry_delay = min(base_retry_delay * (2 ** (consecutive_errors - 1)), 30)  # Cap at 30s
+                jitter = random.uniform(0.5, 1.5)  # Add 50% jitter
+                actual_delay = retry_delay * jitter
+                
+                print(f"\n⚠️  Network error ({consecutive_errors}/{max_consecutive_errors}), retrying in {actual_delay:.1f} seconds...")
+                time.sleep(actual_delay)
+                continue
+            else:
+                consecutive_errors = 0  # Reset error counter on successful response
             
             # Update progress display
             if status != last_status:
@@ -288,11 +322,10 @@ class TranscriptionClient:
         print(f"\n📥 Downloading results...")
         
         try:
-            response = requests.get(
+            response = httpx.get(
                 f"{self.server_url}/download/{job_id}",
                 headers=self.headers,
-                stream=True,
-                timeout=60
+                timeout=120  # Keep longer timeout for download due to file size
             )
             
             if response.status_code == 200:
@@ -301,7 +334,7 @@ class TranscriptionClient:
                 zip_path = output_dir / f"transcripts_{job_id}.zip"
                 
                 with open(zip_path, 'wb') as f:
-                    for chunk in response.iter_content(chunk_size=8192):
+                    for chunk in response.iter_bytes(chunk_size=8192):
                         f.write(chunk)
                 
                 print(f"✅ Downloaded archive: {zip_path}")
@@ -323,14 +356,14 @@ class TranscriptionClient:
                 print(f"❌ Download failed: {response.text}")
                 return False
                 
-        except RequestException as e:
+        except RequestError as e:
             print(f"❌ Download error: {e}")
             return False
     
     def cleanup_job(self, job_id: str):
         """Delete job from server."""
         try:
-            response = requests.delete(
+            response = httpx.delete(
                 f"{self.server_url}/job/{job_id}",
                 headers=self.headers,
                 timeout=10
@@ -354,6 +387,8 @@ def find_audio_files(input_path: Path) -> List[Path]:
         for ext in audio_extensions:
             audio_files.extend(input_path.glob(f"*{ext}"))
             audio_files.extend(input_path.glob(f"*{ext.upper()}"))
+        # Filter out hidden files (starting with '.')
+        audio_files = [f for f in audio_files if not f.name.startswith('.')]
         return sorted(audio_files)
     else:
         return []
