@@ -1,0 +1,893 @@
+So I've got a sort of a specific tactical question related to a B2B service. And very briefly, the situation is that I work with online, typically online publishing companies. So companies that publish magazines and such.
+
+A lot of it's like specific trade publications. So print, but also online. And deals are closed on the phone.
+
+The work is performed virtually, so to speak. And so my highly specific question here is, what do you recommend, if anything, for invoicing and collecting payments? Really, to make it easy for the customer and for me.
+
+Is it recurring at all or is it one-time invoicing? It can be. No.
+
+Okay. Yes. I was going to answer too quickly.
+
+Not typically recurring. There can be repeat customers. But generally, it would be a one-time.
+
+Once at a time. Who do you use as your payment processor for like credit card payments? Well, I haven't done it that way yet.
+
+I've done this in a very manual, old-fashioned way because I haven't jumped to anything. So I've provided bank information for people to send me payments. But I'm looking to expand to use a processor too.
+
+Okay. So if I were you, I would do one of two things. So you can use Stripe for your payment processing, which is great because it has all the recurring features that you need.
+
+But it's expensive. So if you want the simple way but a little more expensive, then use Stripe. If you want something that's a little more headache and set up on the front end but is cheaper, then I would use Authorize.net with something like, I think it's HoneyBook.
+
+So it's not just going to be Authorize.net. You're going to need a payment processor as well. I don't remember the name of the site.
+
+But there's a couple sites out there that will shop around for you. What you want is Interchange Plus pricing. So Stripe and Shopify and all the big guys, they don't like that because Interchange Plus means you basically don't pay anything for debit cards, maybe a tenth of a percent.
+
+But you will pay two to three plus percent for Amex. But most people use non-Amex or debit cards. And so Stripe makes a ton of money when people pay you with a debit card.
+
+And then they make just a little bit when they use Amex or a credit card. So I would definitely suggest using Authorize.net, which is like the gateway for your processor, and then finding a processor that will do Interchange Plus pricing. And shoot for a quarter of a percent or less.
+
+Interchange Plus just means like cost, like the non-negotiable cost that they can't even get down, plus a fraction of a percent for their gross profit. Okay, that makes sense. And just to clarify one thing, I don't know if this would change your answer.
+
+I did include this information in what I sent to Heath, so you may have already factored it in. But I'm not taking orders on a website. So very old-fashioned way of doing business, I understand.
+
+But does that change your answer at all? No, I just think you should integrate some form of a website. Like use Card, C-A-R-R-D.
+
+Yeah. They have like a payment widget. Or even PayPal.
+
+But PayPal is going to charge their own flat fees, which are comparable to Stripes. It's not cheap. So honestly, I would go to Upwork and just post a job for exactly what you need.
+
+Like I just need a simple website interface where I can send people a link to an invoice. You might not even need a website if you use something like HoneyBook. You'll just kind of use the software to send them a link.
+
+And then that link will include a way for them to pay that's linked to your payment processor through authorized.net. Okay. It's kind of a mouthful, but that's what I would do.
+
+No, not a mouthful. That's super helpful. I will look at that first.
+
+I'm not at the point where I'm running ads or doing any of the stuff that I hear a lot of people doing. So I'm starting without a site. So maybe that's a good way to do it at first.
+
+But I like your idea of Card, too. So I'll keep that in my back pocket. Awesome.
+
+Well, glad I could help. Thank you so much. Yep.
+
+Have a good day. Heath, thank you. All right.
+
+Heath, are you there? Let's see. It looks like he got disconnected.
+
+All right. There you are, Heath. All right.
+
+Sorry. Kicked me out of the hosting. Corey's up next.
+
+He was with us last week, but we couldn't get to him. I'm still working on the other folk. So, Corey, you're up.
+
+Hey, Heath. Hey, Chris. Can you guys hear me okay?
+
+Yeah, it's perfect. Awesome. Awesome.
+
+I just want to say that last week's call was awesome. Even though I didn't get to talk, I got so much out of it. I remember you mentioned something about Card last week, and I ended up using that and set up a quick website for my business as well.
+
+Awesome. So, I already started implementing what you mentioned. Love it.
+
+A little bit about me. I am the son of an entrepreneur. My parents are in real estate.
+
+I mean, you guys do mobile home parks. My family has done self-storage and single-family homes. I'm studying finance right now at a university in Michigan, and I'm looking to do something a little bit outside of my family business about three or four months ago, and that's what I wanted to get a little bit of advice for right now.
+
+So, we are running a cold email agency that connects staffing and recruiting companies with businesses that need very specialized talent. We have a pretty good system set up. We started our first campaign last week, and we got three booked meetings in the first day, which was amazing.
+
+I'm so blessed and so grateful for that. And I think that that was a little bit of a fluke. We have not had that much success continued so far, but the reason for my question today was I just wanted to get your input.
+
+It might be different from something like that. We're targeting staffing and recruiting companies with specialized talent. We want to connect them with businesses that might benefit from that.
+
+Okay. So, you did break up a couple times there during critical points. So, are you running a cold email campaign for your agency or you have a cold email agency for staffing?
+
+So, it's both. The cold email is both my method of collecting my clients and my method of connecting my clients with other companies. Okay.
+
+And what exactly do you sell? So, we've got a couple different ideas right now. So, the first thing that we're running with is connecting a staffing and recruiting agency with a company that would need specialized talent.
+
+So, for example, we talked to a couple different businesses. They do like they find people who have very niche knowledge in law, for example, or in the medical field. So, connecting the recruiter, that would be our client with a company that they can fill a space for.
+
+Okay. And then what is your revenue model? Well, that's something we haven't got to yet.
+
+We have made an idea for that. But, you know, we haven't sold anything yet. What we're thinking is a flat fee for setup.
+
+You know, we're thinking something very cheap to start off maybe $500 for the first month as like an onboarding and a technology fee to set up their campaigns and then a price per book meeting. So, we're thinking $500 for the setup and everything and then $300 per meeting set up with a client. Okay.
+
+So, it's a cold email agency targeted at recruiting and staffing companies. You're helping them find customers with cold email, right? Correct.
+
+And did your question revolve around pricing or around strategy? I can't remember what your exact question was. You know what?
+
+The question was trying to figure out who might benefit best from that. I'm thinking that like targeting a law firm is an okay idea. I'm just curious if you had any ideas about other companies that could benefit from very specialized talent.
+
+What made you choose this industry? Is this what your background is? It's not.
+
+My parents are in real estate. They do self-storage. I wanted to do something a little bit outside of that.
+
+I can always come back and work at the family business, but I wanted to take my staff at something new. The reason I chose staffing and recruiting is because I had a phone call with someone from my local area who is doing a very similar business model that I met on Twitter. And he mentioned casually, hey, you should reach out to staffing and recruiting companies because specialized labor is something since COVID has been a little bit harder to find.
+
+And he told me that they make crazy money. I've talked to two or three different companies who do staffing and recruiting. One lady said that between 15 and 20% of their first year salary, which can be like 50 to 100 grand as a commission for them.
+
+So we wanted something high ticket, something that's going to be valuable to the customer that we connect with that business. Okay. All right.
+
+Got it. So I love the idea. I love that you love that it's high ticket.
+
+If I were you, the only way to truly know what vertical to attack is to start in batches of five. I love the legal industry. Do you know specifically if you have any competitors doing this in a specific vertical already with success?
+
+Or are you just kind of taking a stab at legal? Well, I know that the mechanism works. I know that using cold email as a mechanism to reach staffing agencies works.
+
+And I know that using it to connect the two businesses and book meetings would work. I don't know specifically the legal aspect of it. I'm not sure about that.
+
+Okay. So have you named the business already? Yeah, but it's up in the air.
+
+Always subject to change. Okay. So always subject to change.
+
+If I were you, I would name it something broad, right? And start with five different industries. And I would do a campaign of what are you using for your software, for your cold emailing software?
+
+Right now we're using smart leads for the sending software. We use Microsoft for the email accounts. And then we use a list kit in order to get the leads.
+
+Okay. I would start with five industries, 200 emails per day. So 1,000 emails per day across all five industries.
+
+Keep the offer, keep everything the exact same, right? And in each email, you're going to plug in, like, we specialize only in finding talent for the blank industry. Like, the email will be exactly the same except for the industry that you're naming.
+
+Keep the subject lines the same. Keep everything the exact same. And run all five campaigns concurrently for at least two weeks.
+
+So if we're looking at, you know, 10 business days across two weeks, 1,000 emails per day, you're going to have a really good sample size after two weeks. And then just put the numbers side by side. And you've got to be careful because your open rate, like, a higher open rate does not equal a higher click rate or a higher response rate.
+
+And so what we found is a lot of times the lowest open rates correlate directly with a higher response rate and or a higher response rate will correlate directly with a lower, like, lead rate or whatever you call it, conversion rate or, you know, appointment rate. It's like, you don't want to be fooled by the metrics and say, wow, this campaign has a 62% open rate because, like, who is actually getting to a phone call and how many of those phone calls are actually getting to a sale? And you're not going to know that for at least two weeks.
+
+So don't be fooled by the vanity metrics like open rate and even response rate or even, like, appointment set rate. But how many people after two weeks time are willing to actually send you money for your services? And then just it depends on on, like, what your preferences are.
+
+If if you really want to hone it down, then pick 100 industries and do this for six months. Right. But if you're happy after two weeks with the industry that you found, maybe it's HVAC, maybe it's legal.
+
+Maybe it's something you haven't even anticipated yet. Then just go go with that. Rename your website.
+
+Right. Like, I would rename your website something specific to the industry and then change your outreach to say something like we only like find placements for the X industry. Like, that's all that we do.
+
+We know you get emailed every day. We are different. And here's why.
+
+Like, we know this industry inside and out. We know what your pain points are. We know what your bottlenecks are going to be.
+
+But you just won't like no one can answer that question better than data. And you've got to figure that out. That's awesome.
+
+Okay. I'll start. I'll start the split test.
+
+That was really interesting. I know, you know, like testing different like like different body copy for the email. But I didn't think about split testing across industries.
+
+So I'll definitely go and apply that. I really appreciate your time and your insight, Chris. Of course.
+
+Yeah. Good luck, man. Thanks.
+
+All right. Thanks, Corey. A little bit up to any other listeners now.
+
+If you want to ask Chris advice, just hit the request to speak and we'll do it. We'll pull you in and get you any advice from Chris has for you. So I'll just watch for any of those requests.
+
+Oh, here we go. We got. Cameron asked, but then he dropped.
+
+How about Heath, while we wait for people? I've got this one question via email. Sure.
+
+I'm going to do about the espresso catering business. So this guy at D. Fenn Kanta says, I work for an espresso catering business.
+
+We travel around to offices and schools that want to do employee appreciation. The owner has run it for 32 years, is looking to retire and has expressed interest in selling. The quality of service is middle of the road.
+
+There are others that do the same with higher quality product and better marketing. I like the honesty there. But he has great word of mouth business and plenty of clients.
+
+He has mentioned dozens to multiple dozens, but I have not confirmed this. He charges about $400 to go to a school and serve coffee for two hours. I don't have much insight into his expenses and income, but I'm curious how I'd go about evaluating this type of business.
+
+If I bought it, one way I would do add value and improve it would be to just raise the quality of product and maybe cut those contracts that don't add much and focus on the ones that bring in the most 80-20. Should we do one or more or are these two good enough? So backing up.
+
+So let me summarize what he says. He works for an espresso catering business. Schools, companies, people, corporations pay him $400, pay his boss $400 to go there for two hours to serve espresso.
+
+He has the opportunity to buy this business. He doesn't really know exactly how many clients they have. He's heard from dozens to multiple dozens.
+
+So less than 100, we're going to assume. And he says that their quality and customer support is middle of the pack. And his question is, after I buy the business, what improvement should I make?
+
+So first of all, there's a good and a bad here. The good is that you know this business intimately. There's probably not skeletons in the closet because you already work there.
+
+So that's great. You've already be risked. Call it 60%.
+
+The bad is this business sounds like it's highly reliant on the owner. So who knows how much of this business is coming because they want to see the owner's face again because they like him and they've known him for 32 years and they've used him for 32 years and they're just doing it out of habit. And so if someone else takes over, even if it's someone that already works for the company, to be determined if they keep ordering at all.
+
+So I would think that that risk is even bigger than the offset risk of already working for the company. So net of net, I think that this is a risky proposition, maybe even riskier than just going on biz by sell and buying the same company. So let's say you do buy the business and it goes okay.
+
+I think there are ways to mitigate against that. Dave Ramsey, for instance, he talked about NDR, non-Dave revenue. They're trying to move him out of the company.
+
+It's a $400 million company that has historically been highly reliant on him. And he says today, 70% of their revenue comes from non-Dave revenue, people not named Dave. And so if I were this guy wanting to buy this business, I would start a six to 12 month plan to move the owner out, working alongside the owner, meeting his contacts, following him, shadowing him, just because he works there doesn't mean he necessarily is shadowing the owner at all times, and letting all of the customers know, especially the recurring ones, that a transition plan is in place.
+
+Because if he's willing to be patient and wait six to 12 months, then he can largely de-risk. And by the time he takes over, it will be a surprise to no one. And he can just keep crushing it.
+
+And then at that point, it doesn't matter what improvements he makes, because he already has a great business, even if he doesn't change anything. So I didn't answer his direct question, because he wanted to know what improvements should he make. I think you should start with customer service.
+
+I think if the quality weren't good, then he wouldn't have so much repeat service. But he just needs to brand himself as the younger guy that just really cares, that wants to do great by his repeat customers, and he doesn't want to let them down, and he has big shoes to fill, yada, yada, yada. That's what I would do.
+
+So hope that helps. Awesome. All right.
+
+We have Anthony wanting to ask you a question here, Chris. So I'll add him in. Does Twitter all work with me?
+
+All right. Not letting me do Anthony. Let me do Cameron.
+
+Oh, there you are, Anthony. All right, Anthony, come on mute. And ask a question.
+
+Am I speaking? Hi, everybody. Yep.
+
+Chris, thank you for being presented with your time. We can't hear you, Anthony. Okay.
+
+Is that it? Yeah, I'm here. Okay.
+
+Thanks for your time, Chris. I'm in income tax four seasons, so relatively new. But it's tax season time, and I'm trying to grow my own client base over the last few seasons, and I've kind of plateaued out.
+
+I'm not getting a lot of referrals. I'm hearing that I'm giving great service and getting good reviews. People are always coming back.
+
+I saw about the Ramsey lead buy, but that's kind of out of my budget. So, yeah, I threw up a site on card. I'm not too keen to collect data on customers because of regulatory issues or accept a lot of payments through a website, but I get the tech stack, and I can offer, like, some consultation, maybe paid consultation, stripe links.
+
+I've played with that. But more about, like, outreach marketing and kind of growing this business. To get more income tax clients?
+
+Correct. But specifically individual and self-employed versus, you know, higher ticket clients where I would need EA or CPA, which I'm not planning on getting as I'm kind of too far down the road age-wise to go back to getting a degree. Okay.
+
+So what does your average customer look like today? Is it a business owner, like you said? And if so?
+
+Self-employed. Yeah, average is self-employed. Maybe a newly self-employed person, like maybe getting Uber income for the first or second year.
+
+Real estate agents and then healthcare professionals. Okay. And what is, like, an average ticket size?
+
+Like, what amount of gross revenue can you expect from each client? Yeah, gross revenue. On a yearly basis.
+
+Oh. Per client? Yeah.
+
+Yeah. Yeah, gross revenue before expenses, around $350 to $400. Okay.
+
+And that's basically every year? Per customer, yes, every season. And what does your churn look like?
+
+How long are people staying with you on average? Zero. Very little.
+
+I've had one client who just didn't return. Other than that, I've retained all my clients out of 15. Okay.
+
+And what percentage of your business do you think you could grow before really having to invest in the business? Like, what percentage would you like to grow realistically? I mean, the total revenue is quite small.
+
+So it's not money that I used to live on, per se. Okay. Because I...
+
+So, yeah. I could reinvest what I make per season into it. Okay.
+
+And what do you use to... Is this not your main thing? What are you using to live?
+
+Well, I do... It's parallel. Former recruiter.
+
+So... And I pinged Corey because I have some insights for him. Recruiting overseas in China and Asia for design positions.
+
+So I still do a bit of that. And then I work for a nationwide tax preparing software platform. And I do, like, product help on that online.
+
+Okay. Okay. Are you able to leverage that experience with the tax preparer to acquire new income tax customers?
+
+Yeah. I can't, like, fish for clients through them directly. So...
+
+Oh, sorry. So I did join Intuit's new revenue share, 50-50 revenue share. Whereas they drive traffic to you and you do a 50-50 revenue share with Intuit.
+
+But that's a pilot program. So there's no data to go out there. Okay.
+
+And of all your customers, which customer profile do you like the most? Like, what type of customer would you like to get the most? Yeah.
+
+Self-employed. Maybe at the most complex level. Maybe in a partnership, but preferably sole proprietor.
+
+One to three businesses. Maybe some passive income through real estate. And on an industry basis, do you like real estate?
+
+I don't... I'm agnostic about it, but they have unique, specific needs. And so one of my clients kind of pushed me towards that because that was her situation.
+
+But, yeah, I like the clients who are organized and have records. Yeah. Yeah.
+
+Yeah. Makes your life easier. Are your clients mostly local or nationwide?
+
+Mostly clustered between Oregon and California. But I reside in Arizona. Okay.
+
+Okay. So you don't have a website then, correct? I do.
+
+I just popped one up, correct, with my domain, taxzen.pro. Okay. Do you get any referrals from people?
+
+No, I have not. I have not. Surprisingly, well, not through my own client list, no.
+
+But when I was working at the Jackson Hewitt tax franchise, yes. In fact, we flew year over year was mostly referral. Okay.
+
+So if I were you, I would start brainstorming. Let's take an Uber driver or a real estate agent, for example. Start brainstorming.
+
+Where are those people living online when they first become an Uber driver or first become a real estate professional? Because it sounds like that's when you're most likely to acquire them. Is that correct?
+
+That or when they get a 1099 in the mail and then they're confused. Okay. They're looking for help.
+
+Okay. I'm thinking, how do you feel about cold calling? Oh, I did tons of it.
+
+Yeah, I did tons of it in recruitment. It's all cold calling. Okay.
+
+If I were you, I would get a list of brokerages in an area. Pick an area that you have the highest concentration of customers. Call it, let's say it's Salem, Oregon.
+
+I would get a list of real estate brokerages there. And it's great because you can get their numbers super easily. We talked about this last week.
+
+And I would just cold call the brokers and say, hey, this is who I am. I do tax prep. I do income taxes.
+
+I specialize in real estate agents. I've basically never lost a customer, at least due to dissatisfaction. Do you have any new agents that might need help with this?
+
+And just be very transparent. Be like, we have a bunch of customers. I have a bunch of customers in Salem, Oregon.
+
+I know the industry or I know the area. Do any agents come to mind that might need help with this? And just see what they say.
+
+Like, just talk to five brokers, specifically brokers, and see what they say. Because it's a lot easier to find a person that can refer you five to 50 different customers versus calling agents directly. Another thing you can do is go to Zillow and just start browsing.
+
+You can do this yourself or you can do this at scale. And sort by the date they were added to Zillow or Realtor.com or wherever. Or sort by the lowest number of reviews.
+
+And those are either going to be brokers or agents that are brand new to the business. And if you can find someone, ideally you can find someone that is new to the business and has a disproportionate amount of reviews, that's probably going to tell you that they're like a rock star. Like they're new to real estate and they're crushing it.
+
+Because let's say you learn in Salem, Oregon, the average agent has five reviews total and you found three that have been added for six months and already have seven reviews. Like those would probably make for a great client. A, because they're more likely to become a client.
+
+B, because they're probably going to have a higher income. Therefore, I'm assuming they could be a little more complex. Therefore, you could charge a little more.
+
+What do you think about that? Yeah, spot on. I like all those ideas.
+
+I also think maybe I could also do that in the healthcare space as well. Oh, yeah. Are you familiar with what BCBAs are?
+
+No, I'm not. So it's a board certified behavioral analyst. I don't know.
+
+Pretend that's true. Don't look it up. But it's basically the license that you need to open an autism clinic.
+
+And what's great about BCBAs is that they're publicly listed online. And their license renewal date is listed online. And it's a super in-demand profession that is growing double digits year over year.
+
+And so anyone in the world can see when there's a new BCBA. And they're going to make good money. And it's all like their cell phone is listed online in every state.
+
+And so you could even say, hey, I assume that you have someone in your family or life with autism. You could refer to that and say, hey, I hear great things. You're doing great work.
+
+And I want to help you. I want to help you with your income tax. Do you have anyone already doing that?
+
+Or dentists. I assume that being publicly listed in the healthcare space is more common than not. But all their data is right there.
+
+And I bet they've never been cold called by a savvy recruiter who's comfortable cold calling that now is selling income tax services. That's just not a cold call people get, which is good for you. Yeah.
+
+Thanks, Chris. Yeah. Amazing journey.
+
+And just keep doing what you're doing. Thank you again. Thank you.
+
+I appreciate that. All right. Thanks, Anthony.
+
+Just a reminder, everyone. Anyone's welcome to get some advice from Chris. The things that he's happy to help with are how to grow a business.
+
+Should you start or quit a job or business or not? Is this a good business idea or partnership help or employee help? Or even if you just want to brag about how awesome your business is, we are welcome to have that.
+
+Just hit the request to speak button and I'll add you in and we'll get you going. So anyone's welcome to do that. That's Texas barbecue restaurants.
+
+All of the best emo bands from 2003. Also the best year for emo music. Yeah.
+
+Why Teslas are superior to internal combustion engines. Absolutely. I want to hear all of it.
+
+All right. We got Chris. We got Chris.
+
+Cool. Chris. See if you can.
+
+There you go. Go ahead and unmute yourself. I'm going to ask away.
+
+Hi, Chris. Can you hear me? Yes, sir.
+
+Hi there. I work in the software space as a software engineer doing contracting on a sort of six to 12 month basis. I'm looking at what can I do besides just selling my time.
+
+Previously, I've created online courses that have done reasonably well, like low six figures. But I'm interested in maybe buying or selling something. So I've been looking at stuff on acquire.com and flipper.com.
+
+Do you think that's a good way to go? Like I'm talking about sort of low ticket existing websites that are making, I don't know, 500 to $1,000 a month. So they'd have a sale price between, say, $10,000 and $30,000 and then looking to grow them because they've effectively already got product market fit.
+
+Now, I know there's probably, you know, and there are a lot of bad deals out there. But do you think it is worth sort of trawling through to find a diamond in the rough or do you think that's potentially just more trouble than it's worth? Curious about your thoughts on that sort of approach.
+
+I absolutely think it's worth doing that. And I think I know exactly what you should do. So if I wish I had your skills.
+
+OK, so you have an amazing skill set and I love that you want to put it to work outside of just a nine to five. So if I were you, I would go to acquire or Flippa, as you've been doing, and I would find some sort of a SaaS product. Maybe it's a plug in or Chrome extension or just just a SaaS product on the WordPress site or whatever and find one that fits these criteria.
+
+It's low ticket. It's really cheap and it has very low churn and the owner has not raised the price in a long time, if ever. Now, you also want to make sure that their reviews are good.
+
+It could have low churn because it's three dollars a month that people just don't think to cancel. But we're assuming that it has low churn because it's just a great product that people rely on that has 10x the value of whatever the owner is charging. And then you're really not going to know until you start due diligence and talk to the owner and maybe even see if you can talk to some of the customers.
+
+Like ask if he can show you his customer database that's anonymized, you know, maybe just partial email addresses and just pick out five at random and say, can I talk to these guys? Can I just say like, hey, I work with owner name and I'm doing an audit and I just want to see how how happy they are. Get them on the phone and ask them, like, how integral is that product into their life?
+
+Like, how much do they rely on it? Is it top of mind? Do they just forget to cancel or somewhere in between?
+
+And if you were to buy something like that, raise the prices. If you can A-B test it even better. Right.
+
+I don't know what the platform looks like, but if you can take a 10% of the customer base and raise the price from $5 a month to $30 a month and maybe 10 to 20% churn. Like, wow, you've got a winner. Right.
+
+I would take another 10% of the customer base and raise it to $50 a month and maybe the same percentage of people churn or maybe 80% of people churn. And you think, wow, okay, I found the sweet spot. I found the pressure point.
+
+I would do exactly that. Like, you're going to de-risk partially by asking these questions and going into it with that strategy. But you're not really going to know until you get in there, you actually buy the thing and you and you raise prices.
+
+And then literally, like, you could talk about improving features and all that, but just just raise the price. That's it. And just keep it going.
+
+Yeah, that's that definitely makes sense. One one follow up question. What do you think about businesses like websites, the making money majority through AdSense, like, you know, Google Ads?
+
+Is that just too much of a tricky type business to prefer the SaaS sort of sites instead? I don't mind that at all because there's a huge opportunity to turn off AdSense and turn on like a more niche or boutique. What's it called?
+
+Like ad tech platform. Because AdSense is like the lowest payer out there. So if they're wholly reliant on AdSense and you can buy it at a decent multiple, then it's really the same strategy.
+
+Instead of raising the price, you just swap AdSense to a provider that I can't remember the name of right now. But that's something that do you follow James Camp at all? No, no.
+
+I'll check him out. Is he like a AdSense kind of guy? He's like a, he buys small SaaS products and does exactly what we're talking about.
+
+And probably 80% of everything I told you I learned from him. So he's pretty active on Twitter, James Camp. And he, I would do an advanced search for James Camp and look for times that he's talked about AdSense because he's specifically mentioned this strategy before.
+
+Awesome. Chris, I love what you do. Thanks so much for your help.
+
+Really appreciate it. Thank you. Yep.
+
+Hope this helps. Right. Thanks.
+
+Thanks, Chris. I approve Jack here. We got Jack coming in now to ask some questions.
+
+Jack, just come off mute. There you go. Hey, is that me?
+
+Yes, sir. Awesome. Chris, I have a couple of things, man.
+
+So I live in Louisiana. I'm from Mississippi. Good Tigers.
+
+I work in the oil field. So I'm gone 14 days at a time back here, 14 days at a time. And I've been trying to figure out how to get out of the oil field, getting something a bit more lucrative.
+
+I have four daughters. The oldest is 15. Youngest is 11.
+
+Okay. They live with their mom. So first off, I don't have any real estate experience, but I have been following you and a bunch of real estate, S&B Twitter.
+
+If I beat the bricks and I find a mobile home, RV park, and reach out to you, any way you could kind of help me along with that first one, maybe even partner with me? Yeah, I'm happy to. Okay.
+
+There's a bunch down there in Mississippi. Yeah, yeah. I noticed when you were down here in Baltimore, what was it, outside of Baton Rouge?
+
+Mm-hmm. Yeah. Yeah.
+
+Okay. Awesome. Well, I'll start looking for those.
+
+Now, your tweet, and I went back and referenced it about a month ago, about starting the tree company. You laid out what you would do with links and so forth. So I kind of tried looking around.
+
+I've been trying to figure out a crew, a sub, basically, because I don't care what field it's in. Well, at work, a guy, I was talking to him about a month ago at work. His stepfather passed away about a year and a half ago, but he had a little roofing company.
+
+And he was telling me about this crew. All they do is repairs. They don't do any new construction.
+
+Anyway, I went ahead and got on Namecheap, got the domain. I've talked to this roofing contractor, and I think I'm about to go live with a website and start a roofing company. What do you think?
+
+Good for you. I think I freaking love it. You're starting with a great crew.
+
+Am I hearing that right? That specializes in repairs? Yeah, and I'm going to go 50-50 with this guy from work.
+
+Okay. I'm going to go 50-50 with him. It's his crew.
+
+Now, this crew works for several contractors. I put in for a home improvement license, got the domain, registered the LLC. I've even priced the insurance here in Louisiana.
+
+Now, being in Louisiana but from Mississippi, he lives in Mississippi, but he's from Louisiana. I plan to go both states and just start with the website with some SEO, beat the bricks, get a couple of jobs built, get some Google reviews. I'm hoping the internet and word of mouth does most of the work for me.
+
+So, let's back up a little bit. You're partnering with the guy that already owns a roofing business that already has this crew? Yeah.
+
+So, he has the crew. He doesn't necessarily have a business. His stepfather that was working this crew never had a license or anything like that.
+
+Well, when I went, he would do cost plus, right? So, the guy that has the roofing crew, Mario, he charges, say, 75 bucks a square. This guy's stepdad was just telling the homeowner, go buy these shingles from this place and then you're going to pay me 125 a square, whatever it was.
+
+And that's how he made his money was just packing on top of the labor. Okay. And you want to partner with him?
+
+Why do you want to partner with him? Just because he knows this crew? Yeah, it's his crew.
+
+We were talking about getting out of the oil field, trying to figure out a company to start, and then he brought this up. Do you trust him? I do.
+
+Okay. How long do you do? I absolutely do.
+
+Three years. Okay. And how active is he going to be in the business?
+
+He also wants to get out of the oil field. I mean, that's what we've been talking about. But he already has a couple of jobs lined up.
+
+Okay. So, you guys are both going to have equal roles with regards to activity? Yeah.
+
+And we both have ties to Louisiana and also Mississippi. Okay. Okay.
+
+All right. So, here's what I think. I think you should spell out your operating agreement very clearly.
+
+That's something that's easy to overlook. And I would find a third-party mediator just in case, since you are an equal 50-50, just in case you can't agree on something. Obviously, legal documents are planning for the worst, planning for the outlier events.
+
+I assume he would agree on a mediator? Absolutely. Okay.
+
+So, find a mediator, someone that either both of you know, or preferably someone that neither of you know. Just literally hop on Google, side by side, find a mediator. Yep.
+
+Looks good. Okay. That's the person.
+
+That would be as good as anyone. Now, with regards to growth, I wouldn't count on SEO to bring you any results anytime soon, particularly because roofing is a super competitive industry when it comes to home services. Next to pools and just home building, it's about as high ticket as you can get.
+
+And so, that's, you know, smart people have taken notice. And there are companies that are dedicated solely to generating leads for roofers for that reason. So, unless you invest a lot of money in SEO and are willing to wait like three to nine months for results, I wouldn't count on SEO.
+
+But that's not to dissuade you from starting this business. I think it sounds like a great business, especially if you already have an affordable, reliable crew, because that's like 70% of the headache. Did you have any other ideas for finding jobs?
+
+And did you want to specialize in only repairs or do replacements as well? Oh, no. He does replacements.
+
+I'm sorry if that wasn't clear. He just doesn't do new construction. He does full replacements and repairs, but he's shingled.
+
+He dabbles in the metal roof. I think the new construction would come down the road with other crews and so forth and so on. I just want to get started with this crew.
+
+I've been trying to find a crew in anything around here where I live. And then, boom, I have a crew that just happened to roof. I don't want to take too much of your time.
+
+I appreciate it. No, you're good. And you're going to see a listener here.
+
+His name is John Moore. And he does a lot of roofing lead generation. He can help you with that.
+
+Think of some ideas. I know that he set up a good referral system with realtors. And this is in Utah, so there's no competition here.
+
+He could probably give you some good tips on getting referrals from realtors because he's been in the weeds on that. Okay. Before you let me go, going back to that, do you think I need to hire a salesman?
+
+I mean, me and the guy that I'm partnering with, I wouldn't say that we're the best salesman in the world as far as door to door or walking into a realtor's office. Do you think I need to hire somebody like that as opposed to relying on SEO? No, I think you need to start off being your only salesman so you can really learn what the objections are, learn how to do it.
+
+Even if it's not your forte, that's okay. Like whatever discomfort you have in selling will be partially offset by the passion that you have for this business that you own. Right.
+
+And that's to be said for any industry. So I would get at least five jobs under your belt or under his belt or your company's belt combined and just learn what the objections are. Because the chance that you're going to find just a killer roofing salesman that leaves his cushy job to come work for a startup is lower than average.
+
+So when you do find a salesman, it's probably going to need to be someone that's just young, dumb and hungry that you need to train. And you're going to need those skills yourself to train. Even if like you don't have to be a salesman, you just need to know what the objections are and what the pain points are with these customers when you do talk to them.
+
+Got it. Got it. Awesome.
+
+Thank you. Of course. Yeah.
+
+Good luck and good for you for starting this business. Yeah. Look forward to reaching out to you, man.
+
+Thanks for your time. Absolutely. Cool.
+
+Thanks, Jack. Awesome. I think we have what, Chris, 21 minutes or so?
+
+Yeah. Okay. So, yeah.
+
+Anyone who would like to get advice from Chris, go ahead and invite or request to speak and we'll add you. Again, looking for how to grow a business. Should I start or quit my job?
+
+Why or not? Is this a good business idea? Employee help, partner help, or just brag about your business.
+
+So I'll add you in. And while we wait, I think I'm going to teach everyone how to order most strategically at Chipotle. Chipotle.
+
+So there was a viral blog article that went, you know, that went pretty crazy a year or two ago. But, and that's not mine. I read it.
+
+But I have some better ways. So first of all, I literally have a spreadsheet where I track the weight of my Chipotle orders. If they're in person or if they're mobile orders.
+
+And I promise you, you're going to get about 23% more food if you order in person. All right. You want to get there to the front of the line.
+
+You want to smile. You want to ask how they're doing. And then right when they put the rice in the bowl, that's when you want to ask for extra rice.
+
+Okay. It's very strategic. If you ask at the beginning, then they're probably just going to give you the same amount of rice.
+
+You have to ask them after they've already put it in the bowl. Okay. And then you've got to get half meat, half chicken, half barbacoa, whatever it is, because they're going to give you about 75% of each, which means you get 50% more meat for free.
+
+Okay. Those are the two biggest things. And you want to make eye contact because if they don't give you enough food, they're going to feel guilty as they give you a tiny bit of steak as you're looking in their eyes.
+
+It's all a big psychological mind game. I like it. All right.
+
+We got Gene here. Gene, why don't you come off mute and ask Chris your question? Hey, guys.
+
+That's actually awesome. Yeah. You got to do it, man.
+
+You got to do it. We're learning all kinds of stuff here. So I just had to chime in.
+
+I got a great question, I hope. But we're coming off the back of a SAS caller and a Louisiana caller. And so my topic is SAS in Louisiana.
+
+I've got a SAS startup software company that's been in stealth mode for a couple of years. And we are ready to go hard at the market now. And so what would your recommendations be for finding lead generation?
+
+It's business to business software, very specific industries. It's not something like I don't think SEO or even targeted emailing and stuff is going to be the best thing. But just what are your thoughts on trying to get out of the gate?
+
+We've got a paying customer for a couple of years. The software has been tested for a couple of years. That's just ready to get out and get sold.
+
+What is the industry? Like, are you able to say what you're selling? Yeah.
+
+I don't mind. It's law enforcement. Law enforcement B2B software, huh?
+
+Yeah. Yeah. And there's two versions.
+
+There's law enforcement and then there's private security groups. So there's all kinds. It's basically incident field reporting.
+
+Incident field reporting. And are you already selling this or is this brand new? We've got a couple of customers.
+
+We've been in stealth mode for a couple of years. We've got two paying customers for four years and bootstrapped and just now starting to, you know, basically the sales is me making calls, you know, visiting people, picking up the phone, cold calling. But I need to scale that.
+
+Okay. So how much is a customer worth to you? We target small and medium businesses.
+
+So $500 to $1,000 a month is probably a typical really good sale for us. And they don't typically churn? You're not losing customers?
+
+I haven't lost one yet, no. Again, I've only got a couple. Sure.
+
+And how long is the sales cycle and or like the integration phase of this software? Sales cycles, probably a good one would be zero to yes, we'll buy you 30 days. Okay.
+
+More typical 60 days probably on average. If we get an in-person demo and meeting, it's pretty much over at that point. And then implementation, another 30 days.
+
+Okay. And is it pretty closely tied into their daily workflow? Is that why your churn's low?
+
+Yes. It's all their daily workflow. And generally, once we get a customer, they're going to be a customer really long term.
+
+Okay. And then of your two customers or three, which industries are they in? Are they police agencies or private investigators?
+
+I've got one at each side, actually. I've got a casino security group and a police department. Okay.
+
+And which one would you prefer? Like if you could wave a magic wand and get 10 more, one of the two industries? Right this second would be, let me ask you this.
+
+Which one would I prefer? Like I could cash flow immediately on or which one still takes more work to build out? Which is just a better net customer, all things considered?
+
+Right this second would be the casino guys. Because it's easier to sell to a private business than a government agency? Yes.
+
+And there's also additional things to build out and integrate and migrate old data and that sort of thing on the police side of things. Okay. Okay.
+
+It's just a more involved customer on the police side. Gotcha. And what exactly is fuel incident reporting?
+
+What does that look like to them? How does it make their life better? Field incident report, not fuel.
+
+Okay. Oh, okay. Okay.
+
+I've got a little bit of a cold, so if I'm sounding funny. That's a... Tell me how a casino would use it on a regular basis.
+
+Exactly. They are tracking incidents, slips and falls, counterfeit money incidents, lost and found stuff. Basically anything that they feel like they may get sued on.
+
+They're going to create an incident report and they're going to document it. And how much work does it take you to maintain these customers? Like what is your cost on that $500 to $1,000 a month?
+
+Very little. Very little. It's a support request or maybe a few a year and the actual cost of goods, so to speak, in terms of what it takes to...
+
+It's a cloud-oriented thing. It's probably... I'm looking at about 70% margins.
+
+Okay. How did you acquire this casino customer? They were a part of a company that I worked with many, many, many years ago.
+
+And I called them and said, hey, would y'all want to beta test some new software? We were developing that was several years ago. And so it was a little bit of a previous relationship.
+
+I wasn't an unknown entity at that point. And what are these companies doing today for field incident reporting? Some of them are doing things by pen and paper still.
+
+A lot of them are doing things in just Microsoft Word. You know, nothing, you know, especially on the police department side. You know, they might be using systems that are older.
+
+Ours is very, very mobile. It's all real-time interactive. It's got a ton of cool stuff.
+
+The, you know, what they've been using for the last, you know, that they put in 10, 15 years ago is just outdated. It's web-based. The support costs are high.
+
+Okay. All right. I've got some ideas.
+
+So there are obviously a lot more police agencies than casinos, right? Yes. But would you say, is it fair to say that it's going to be easier to acquire, like, a smaller casino customer than a big one?
+
+Yes. And I would say a small casino with a hotel attached is probably the best. Okay.
+
+Not like these little, like, driving casinos at a, you know, at a gas station or something. Okay. If gas business is here, I don't mean to step on you, buddy.
+
+But do you watch The Office? Actually, sporadically, yes. Okay.
+
+So there's an episode where Michael fires Pam as a joke. And it's a joke firing and it's hilarious. So I, here's what I think you should do.
+
+I think you should use direct mail. I think you should find someone, maybe a VA, maybe Outscraper.com to get you a customer database. Start with casinos.
+
+And I would send letters, like, formal letters to the owners or managers or whatever the title is of the person that's going to be buying from you. Or the title of the person in charge, right? Maybe it's general manager.
+
+Maybe it's owner. And I would send them a really scary looking letter with, like, big, bold red letters on the outside that says something like, lawsuit enclosed. Or you're getting sued.
+
+Or something scary. And I know this is untraditional. But you want to get them to open the letter and they will definitely open the letter.
+
+And they open it and they see it, like, right in the beginning. Like, just kidding. Calm down.
+
+Calm down. But this could happen to you if you're not properly documenting your incidents. Like, have you ever had a slip and fall?
+
+Of course you have. Have you ever had an employee that was fired that was angry about it? Of course you have.
+
+Like, and I would list out the things that you know that they're doing. Maybe it's Microsoft Word. Maybe that's the standard.
+
+Maybe it's pen and pad. List those out. Just like, this is a fear tactic, right?
+
+Let's call it what it is. And say, please don't tell me you're using pen and pad. Please don't tell me you're using Microsoft Word.
+
+Like, what happens when your computer dies? What happens when your hard drive crashes? Is it in the cloud?
+
+Like, what happens when your piece of paper is thrown away? Like, that little incident that was an afterthought that nine times out of ten, nothing happens with? That is an insane liability to your entire company.
+
+Like, one lawsuit could bring down your entire company. And, you know, you don't want to word this too harshly. You want to kind of lead with humor and then kind of make it a little more serious.
+
+Yeah. And then just, you know, have the call to action, your phone number, QR code, website, whatever. And statistically, most will never do anything.
+
+But at that point, you need to start calling them, you know, a week, two, three, four weeks after they get that. And just blow up their phones until they answer. And reference the letter, own the letter, apologize for the letter, and then ask them, like, are they interested?
+
+Gotcha. That's definitely a method. I hadn't thought about it.
+
+You know, I have had somebody do some, a bit of lead gathering and stuff. So I've got a list of kind of where you start, a list of some names, some casinos, primarily in California, which is where my first customer is. And so I've just been calling them myself.
+
+But that just doesn't scale right now. And calling them myself, but then also getting lists in Arizona, lists in Kentucky or whatever else. You said you feel like a VA is the way to go maybe to work on that?
+
+I do. Or just outscraper.com. I mean, because all these casinos are listed on Google Maps.
+
+Even the police offices are listed on Google Maps. So you need their address, which that's the easiest thing to acquire. And the thing with cold calling is like, or cold emailing or any cold outreach is you have to nail the timing.
+
+But what you're going to do is manufacture the timing. Gotcha. Like this letter will put the fear in their head, which will mean it's now time for them to solve this problem that they didn't know was a problem before they got your letter.
+
+So manufacture the timing and then do the cold outreach right after that thought is planted in their head. I like it. I like it.
+
+Well, outscraper.com. I'm going to check that out. I appreciate that.
+
+Yeah, of course. Good luck. All right.
+
+Anyway, awesome, guys. Thank you. Yeah.
+
+Thanks, Gene. Yeah. All right.
+
+What do you say, Chris? Got time for two more? One more?
+
+Do we have anyone waiting? No one waiting currently. All right.
+
+Well, we can wait a little bit. I don't know if I have any more Chipotle tips. Like, oh, I've exhausted all of my expertise already.
+
+We've got Siraj here, right? Yeah, I just approved them. Hopefully it works.
+
+There you are. All right, Siraj, you're up. Thanks.
+
+I don't know what happened, but it looked like I got kicked out. And sorry about that. But I've got kind of, I'm a tech guy.
+
+I've given my job in 2022 at a big tech company and just wanted to look for different businesses to do. So I've looked through a bunch of different either franchises. I've tried starting a tech startup.
+
+But something that's been really scratching my itch lately is like home decorating. And one thing I've noticed, I've known people that have done Christmas lights and they make quite good money. You know, if you can nail some good contracts within your city.
+
+But one thing that I've noticed that I've been wanting to do with a buddy of mine is it's Ramadan coming up and a lot of people need to decorate interior wise. And I've been thinking about a way to do maybe something from Diwali, Lunar New Year and Ramadan, which usually happen every year sequentially. So that's about two quarters of decor.
+
+And a lot of people would probably go over to Christmas lights, but it's coming up next month. And I'm thinking about a way to do that. I know it's kind of acid intensive with a lot of decor that you have to buy, but it seems very doable, at least good margin wise.
+
+And is this stuff that they would decorate outside their home then? So that's the thing. I think it would probably be more of an interior play just because I know HOAs can get kind of dicey and I don't want to be on, you know, the news or anything for anything like that.
+
+So you do want to be on the news. That'd be good customer acquisition. Yeah, I grew up in Texas and we had some issues for some holiday stuff in the past, like for Easter.
+
+So is this something that people are paying for right now? No, that's the thing. It's just people do it on their own.
+
+But if you look at kind of how the market's turning, you know, Asian Americans, 5% growing population. Average income about $100,000. DFW, I think where you live, if you go out to Irving, you can go to every other house and probably find a customer.
+
+And most of the time people are just buying stuff for themselves. But as the generations get younger, I think you'll see a lot more people wanting to do interior decorating. And you'll probably see a lot more of stuff at Target, which has already been showing up a lot of decorations.
+
+So there's a lot of ways to do it between dropshipping and things like that. But I feel like it's a pretty solid business just to do for at least two quarters. So, all right.
+
+So I have one fundamental problem with this idea. And that's the fact that you're kind of inventing it. Right.
+
+But I think there's a way for you to prove me wrong. So in my opinion, I only want to invent an idea when I'm going big. Right.
+
+Like Uber. Right. Raise money.
+
+This is brand new. We're boomer bus. We're shooting for the moon or nothing.
+
+I think this is that same type of idea, but without as much upside because people aren't paying for this, at least that you don't know of. And that makes me fundamentally nervous to charge for something that people aren't currently paying for. It could mean that you have a monopoly and you're crushing it and you keep the secret to yourself and you silently print money.
+
+But 90% of the time, it means that they're not paying for it because there's not demand for it to be paid for. Right. Even if they're decorating, there's a difference between something that people do and something that people are willing to pay for.
+
+But the good news is I think you could prove me wrong or right by just asking people. Yeah, absolutely. I mean, like, would you pay for this and how much would you pay for it?
+
+And then there's a third question that you can't skip. Will you pay me for it? Because if you, especially if you're talking to friends and family, like, oh yeah, that's a great idea.
+
+Oh, I would pay for it. Okay. It's going to be $400.
+
+I'll be there on Thursday. Oh, well, well, you know, so you have to ask, like, you literally can't know the true intent or the true outcome of this business until you pitch them at the end of the survey. Yeah, totally.
+
+I definitely agree. First step was outreach, but just wanted to get the feasibility on kind of home services in general. I know it's very seasonal, but, you know, some of the folks I know that have done Christmas lights, they're raking in $200,000 a year.
+
+Yeah, I know a guy that does that as well. The reason I don't like Christmas lights specifically is because if you do want to make good money, then you do need, like, a municipal contract. And the amount of work it takes to get a municipal contract for Christmas lights for something that's not seasonal is the same.
+
+Right? So if you're going to spend all this time, money, and effort, and headache into getting a contract with a city, then do it for something that's recurring or year-round. Right?
+
+Right. You know, unless there's, for some reason, there's no one pitching them Christmas lights and you own the market, like you're in a specific market with low supply. All else equal, I would rather pitch something to see around.
+
+Yeah, absolutely. Okay. I appreciate that.
+
+My biggest fallacy is always coming up with things that don't exist yet, but that's kind of why I like doing it. Yeah. No, I got you.
+
+It's definitely exciting. Awesome. Thanks, Chris.
+
+Yep. No problem. All right.
+
+Thanks, Raj. Chris, we have one more request. We have time for one more.
+
+Let's do it. All right. I'll approve you now, Rick, and then you can get going when you drop in.
+
+There you are, Rick. Go ahead. Hey, Chris.
+
+Thanks for doing this, man. I'm a big fan. Of course.
+
+Hey, I DM'd you about this a few weeks ago. I'm sure you get a million of them, so no worries. I'll just rehash real quick.
+
+But wheel repair, mobile wheel repair. People are keeping their cars 12, 13, 15 years. Interest rates are liable to stay higher for longer.
+
+New vehicle purchases are getting prohibitively expensive. People are going to try and hold on to their car longer, keep it looking nicer longer. There's a guy.
+
+I'm involved in the Tesla community. He's an owner of two Teslas here in the Midwest. And there's a guy who does everybody's rims for Teslas in the St.
+
+Louis metropolitan area. Same guy. And I've had him out to my house twice.
+
+He does it in my driveway. They look like brand new. When he's done, I'm like, bro, let's roll this out.
+
+Let's find some help. I'll fund you. Let's go.
+
+You can go all over the area. You can repair somebody's car and make it look like new. Sitting in their parking spot at work or in their driveway at home.
+
+The work's done in an hour or two. Tops. What do you think?
+
+Is it scalable? How busy is that guy? Is that his full-time thing?
+
+He's nonstop. This is all he does. If he ever has slow time through just business he gets organically through the St.
+
+Louis Tesla fan page on Owner's Club on Facebook, which is where most of his business comes from. He has relationships with dealers. So if they take in a used vehicle, but they want to put a couple hundred bucks into a used vehicle and make it look like new and fix curb rash on a rim or two, he does that when he's slow just to keep him busy.
+
+Does the dealer work? But the private, you know, just private individuals who find him organically, he's busy 24-7. And he's like, no, I can't find help.
+
+I've tried. You can't keep anybody. You train somebody, then you can't keep them.
+
+Then they don't show up for work. And he's like, it's just not worth it. So, you know, he's just like resigned himself to just doing it himself.
+
+Yeah. Are you still there? Are you there?
+
+Yeah, I'm here. Okay, sorry. You broke up for a minute.
+
+All right, so a couple other questions. What is his average ticket size? And is he only doing Teslas?
+
+Oh, no, he does anything. It's just the, honestly, I think just the Tesla group keeps him super busy here in the St. Louis area.
+
+But no, he'll do anything. Average ticket, I think, is probably about 300 bucks for about an hour, hour and a half worth of work. Okay.
+
+Is that what you paid him? And he does a good job? Like, you can't even tell?
+
+It's unbelievable. If I sent you pictures, you'd never know. And my rims are powder coated.
+
+And both the vehicles he's done for me, you'd never even know they were, they looked like they just rolled off the showroom floor. Okay. All right.
+
+So I've got everything I need to know. I love this business. And for so many reasons.
+
+And I could be biased. So I'll just put it all out there. So first of all, my mother-in-law was in town two weeks ago.
+
+And bless her heart. I have a Model S. And I let her drive it.
+
+And she floored it over a pothole. And I have the upgraded wheels, like the erecting wheels. And she popped a tire.
+
+And I was very angry. Because I'm like, I read in all the message boards, like, these wheels are so sensitive. Like, so I know where every pothole is in town.
+
+I, like, my car has never touched anything. Yeah. Like, it has never brushed up against anything.
+
+And so I was a little angry. And so she popped two of my tires. And she bent the wheel.
+
+Discount Tire told me it was bent. It doesn't look bent. I couldn't tell it was bent.
+
+But they're like, you know, you're going to have uneven wear on this one rear tire. I still haven't fixed it. I don't know if he does bent wheels or just curb rash.
+
+But that's not the point. My point is, like, I know there's demand for this. And it's not just because of my sample size of one.
+
+It sounds like there's insane demand in St. Louis. I love businesses that are built up around Tesla.
+
+Because I don't know what it is about that fan base. Like, they are rabid. Yep.
+
+If I tweet about Tesla, it goes viral. Like, I don't know what it is. Like, I like my Tesla.
+
+It's great. Sure. But even I, I don't get it.
+
+Right? It's the most polarizing car brand out there. And it's not even close.
+
+And so their growth is clearly insane. They're dropping prices. They're, they're, they're putting out a bunch more cars.
+
+Um, I, I think one could crush it only doing Tesla, starting that way, at least. Even naming the business, like, Bolt Wheel Repair or something. Yep.
+
+And then as you expand and you do non-Tesla vehicles, no one cares that it's called Bolt. Right? You just change the copy on your website to say you do all vehicles.
+
+But I'm surprised this isn't more of like a, more of a, of a thing. Like, pressure washing is a, is a thing. Right?
+
+I, I feel like it's the secrets out. Um, yeah. Maybe.
+
+And I just don't know many other places in terms of ROI for car ownership where, you know, you, and especially when we're talking about Teslas, Chris, they all come off the factory with black rims now. You know, like you, you curb rash them, like it's an eyesore immediately. Mm-hmm.
+
+And just the ROI you get for somebody to come to your house and do it in your driveway or while you're parked at work, just sitting there anyway, a couple of hundred, two, three hundred bucks. And it looks like new again. Well, and here's the thing, mobile tire replacement and tire repair is also becoming more and more with the thing.
+
+There's franchises with vans growing like crazy. And so if you build a customer base over a couple of years, then you can start, you can start doing tires as well. Right?
+
+Why not? I've always wondered around Tesla too. Um, speaking about, you know, how, how rabid Tesla fans are.
+
+Why aren't there some young enterprising kids out there somewhere who are washing cars at, at, uh, superchargers? Oh, like if I'm sitting there for 35 minutes, why don't I have, why don't I have two buckets and a truck with a water tank in the back and Hey, how long you charging? Oh, I'll be here another half an hour.
+
+Yeah. Wash your car for 25 bucks. Rick, I apologize for seeing your DM.
+
+Cause you're like a good tweet gold mine. Like I'm getting so much content from this one segment that should totally be a thing. I don't know how it's not.
+
+I mean, eventually maybe somebody would from the city or municipality, wherever the charger is, we'll come run you out of there. But for crying out loud, you could probably wash 10 cars a day at one supercharger before you get run out of anywhere. Well, not just, not just that, but a lot of Tesla owners, myself included are afraid to take it through an automatic wash.
+
+Yes. Yeah. So mine's always dirty for that reason.
+
+Yep. Like if you have, I hate washing it. There are products, you know, like optimum no rinse, O and R, most people call it optimum no rinse.
+
+You don't even need a, you don't have to rinse it. You just have a two bucket system, one with clean water, one with the dirty water. You don't even, you don't even have to have a power washer or, you know, a power wand or spray hose or anything.
+
+That could be an upsell at the superchargers. Yeah. Exactly.
+
+Man, that is a good idea. I'm all in on that idea. All right.
+
+Yep. You should do it. You validated everything I came to you for today.
+
+Okay. Good. Have a great weekend.
+
+Thanks, Rick. You too. Thanks, Chris.
+
+Steven. All right, Chris. Why don't you wrap us up?
+
+All right. Well, thank you everyone for joining. This was fun.
+
+I enjoyed it. You are satisfying my curiosities and let's do it again next week. So we've got eight more of these.
+
+This is a 10 week test. And if we're growing in six, seven, eight weeks, then we'll keep it going. If not, then we'll shut it down.
+
+So thanks for joining anyway. Love you guys. Thanks everyone.
+
+Bye.

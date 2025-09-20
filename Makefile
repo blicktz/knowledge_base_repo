@@ -1,4 +1,4 @@
-.PHONY: help install convert test clean example batch batch-custom setup-dirs docker-build docker-deploy runpod-create runpod-info runpod-stop runpod-start runpod-delete runpod-delete-auto runpod-batch-auto runpod-logs
+.PHONY: help install convert test clean example batch batch-custom setup-dirs docker-build docker-deploy runpod-create runpod-info runpod-stop runpod-start runpod-delete runpod-delete-auto runpod-batch-auto runpod-logs youtube-mp3 youtube-setup youtube-test youtube-help
 .DEFAULT_GOAL := help
 
 # Variables
@@ -54,6 +54,12 @@ help: ## Show this help message
 	@echo "  make docker-deploy DOCKER_USERNAME=myuser  # Build and push to Docker Hub"
 	@echo "  make runpod-create    # Create and deploy RunPod instance"
 	@echo "  make runpod-info      # Get pod status and connection URL"
+	@echo ""
+	@echo "YouTube MP3 download examples:"
+	@echo "  make youtube-setup    # Install dependencies and show setup info"
+	@echo "  make youtube-mp3 URLS_FILE=yt_download/urls.txt OUTPUT_DIR=./mp3s"
+	@echo "  make youtube-test     # Test with sample URLs"
+	@echo "  make youtube-help     # Show detailed YouTube download help"
 
 install: ## Install dependencies using Poetry
 	@echo "Installing dependencies..."
@@ -860,3 +866,101 @@ runpod-help: ## Show all RunPod-related commands
 	@echo "  - Use 'make runpod-stop' when done to save costs"
 	@echo "  - Auto-shutdown: Set RUNPOD_AUTO_SHUTDOWN=true for batch jobs"
 	@echo "  - RTX A5000: ~$$0.50/hour (~$$2.50 for 30min of audio)"
+
+# YouTube MP3 Download Targets (via Metube)
+# ==========================================
+
+youtube-mp3: ## Download YouTube videos as MP3 using Metube (URLS_FILE=urls.txt [OUTPUT_DIR=./mp3s])
+ifndef URLS_FILE
+	@echo "Error: URLS_FILE parameter required"
+	@echo "Usage: make youtube-mp3 URLS_FILE=youtube_urls.txt [OUTPUT_DIR=./mp3s]"
+	@echo ""
+	@echo "Create a text file with one YouTube URL per line:"
+	@echo "  https://www.youtube.com/watch?v=VIDEO_ID1"
+	@echo "  https://www.youtube.com/watch?v=VIDEO_ID2"
+	@echo "  https://youtu.be/VIDEO_ID3"
+	@exit 1
+endif
+	@echo "YouTube MP3 Downloader via Metube"
+	@echo "================================="
+	@if [ ! -f "$(URLS_FILE)" ]; then \
+		echo "❌ URLs file not found: $(URLS_FILE)"; \
+		exit 1; \
+	fi
+	@echo "📄 Reading URLs from: $(URLS_FILE)"
+	@if [ -n "$(OUTPUT_DIR)" ]; then \
+		echo "📁 Output directory: $(OUTPUT_DIR)"; \
+		mkdir -p "$(OUTPUT_DIR)"; \
+	fi
+	@echo "🌐 Using Metube at: http://localhost:8081"
+	@echo ""
+	@if ! curl -s http://localhost:8081/ >/dev/null 2>&1; then \
+		echo "❌ Metube not accessible at http://localhost:8081"; \
+		echo "   Please make sure Metube is running"; \
+		echo "   Typical startup: docker run -d -p 8081:8081 alexta69/metube"; \
+		exit 1; \
+	fi
+	@echo "✓ Metube is running"
+	@echo ""
+	$(PYTHON) yt_download/youtube_mp3_downloader.py "$(URLS_FILE)" $(if $(OUTPUT_DIR),"$(OUTPUT_DIR)",)
+
+youtube-setup: ## Install dependencies for YouTube MP3 downloading
+	@echo "Setting up YouTube MP3 downloader..."
+	@echo "===================================="
+	@echo "📦 Installing Python dependencies..."
+	$(PYTHON) -m pip install requests
+	@echo "✓ Dependencies installed"
+	@echo ""
+	@echo "🐳 To run Metube (if not already running):"
+	@echo "   docker run -d -p 8081:8081 -v /path/to/downloads:/downloads alexta69/metube"
+	@echo ""
+	@echo "🌐 Access Metube web interface at: http://localhost:8081"
+	@echo ""
+	@echo "📋 Next steps:"
+	@echo "1. Create a text file with YouTube URLs (one per line)"
+	@echo "2. Run: make youtube-mp3 URLS_FILE=your_urls.txt"
+
+youtube-test: ## Test YouTube MP3 downloader with sample URLs
+	@echo "Testing YouTube MP3 downloader..."
+	@echo "================================"
+	@if [ ! -f "yt_download/youtube_test_urls.txt" ]; then \
+		echo "Creating sample URLs file..."; \
+		mkdir -p yt_download; \
+		echo "# Sample YouTube URLs for testing" > yt_download/youtube_test_urls.txt; \
+		echo "# Replace with your actual URLs" >> yt_download/youtube_test_urls.txt; \
+		echo "https://www.youtube.com/watch?v=dQw4w9WgXcQ" >> yt_download/youtube_test_urls.txt; \
+		echo "📄 Created yt_download/youtube_test_urls.txt with sample URL"; \
+		echo "📝 Edit this file with your YouTube URLs, then run:"; \
+		echo "   make youtube-mp3 URLS_FILE=yt_download/youtube_test_urls.txt"; \
+	else \
+		echo "📄 Using existing yt_download/youtube_test_urls.txt"; \
+		$(MAKE) youtube-mp3 URLS_FILE=yt_download/youtube_test_urls.txt OUTPUT_DIR=./test_mp3s; \
+	fi
+
+youtube-help: ## Show YouTube MP3 download help
+	@echo "YouTube MP3 Downloader (via Metube)"
+	@echo "==================================="
+	@echo ""
+	@echo "Prerequisites:"
+	@echo "  - Metube running on http://localhost:8081"
+	@echo "  - Docker command: docker run -d -p 8081:8081 alexta69/metube"
+	@echo ""
+	@echo "Commands:"
+	@echo "  make youtube-setup     # Install dependencies"
+	@echo "  make youtube-mp3 URLS_FILE=yt_download/urls.txt OUTPUT_DIR=./mp3s"
+	@echo "  make youtube-test      # Test with sample URLs"
+	@echo ""
+	@echo "Usage Example:"
+	@echo "  1. Create urls.txt with YouTube links:"
+	@echo "     echo 'https://www.youtube.com/watch?v=VIDEO_ID' > yt_download/urls.txt"
+	@echo "     echo 'https://youtu.be/ANOTHER_ID' >> yt_download/urls.txt"
+	@echo ""
+	@echo "  2. Download as MP3:"
+	@echo "     make youtube-mp3 URLS_FILE=yt_download/urls.txt OUTPUT_DIR=./downloads"
+	@echo ""
+	@echo "  3. Monitor progress at: http://localhost:8081"
+	@echo ""
+	@echo "Notes:"
+	@echo "  - Downloads are queued in Metube and processed automatically"
+	@echo "  - Files are saved to Metube's configured output directory"
+	@echo "  - Use Metube web interface to configure audio format (MP3/M4A/etc)"

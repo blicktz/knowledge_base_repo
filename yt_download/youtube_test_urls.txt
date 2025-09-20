@@ -1,0 +1,9 @@
+# Sample YouTube URLs for testing YouTube MP3 downloader
+# Replace these with your actual YouTube video URLs
+# Format: One URL per line
+
+https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+# Add more URLs below (remove the # to uncomment):
+# https://www.youtube.com/watch?v=ANOTHER_VIDEO_ID
+# https://youtu.be/SHORT_URL_FORMAT
