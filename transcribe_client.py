@@ -29,7 +29,7 @@ class TranscriptionClient:
     def health_check(self) -> bool:
         """Check if server is healthy."""
         try:
-            response = requests.get(f"{self.server_url}/health", headers=self.headers, timeout=5)
+            response = requests.get(f"{self.server_url}/health", headers=self.headers, timeout=60)
             if response.status_code == 200:
                 data = response.json()
                 print(f"✅ Server is healthy (Device: {data.get('device', 'unknown')})")
@@ -142,13 +142,46 @@ class TranscriptionClient:
         
         return job_ids
     
+    def start_processing(self, job_id: str, max_retries: int = 3) -> bool:
+        """Start processing an uploaded file."""
+        print(f"🚀 Starting processing for job {job_id[:8]}...")
+        
+        for attempt in range(max_retries):
+            try:
+                response = requests.post(
+                    f"{self.server_url}/process/{job_id}",
+                    headers=self.headers,
+                    timeout=60
+                )
+                
+                if response.status_code == 200:
+                    data = response.json()
+                    print(f"✅ Processing started! Status: {data.get('status')}")
+                    if 'queue_size' in data:
+                        print(f"📋 Queue position: {data['queue_size']}")
+                    return True
+                else:
+                    print(f"❌ Failed to start processing (attempt {attempt + 1}/{max_retries}): {response.text}")
+                    if attempt < max_retries - 1:
+                        print(f"⏳ Retrying in 3 seconds...")
+                        time.sleep(3)
+                        
+            except RequestException as e:
+                print(f"❌ Processing start error (attempt {attempt + 1}/{max_retries}): {e}")
+                if attempt < max_retries - 1:
+                    print(f"⏳ Retrying in 3 seconds...")
+                    time.sleep(3)
+        
+        print(f"❌ Failed to start processing for {job_id[:8]} after {max_retries} attempts")
+        return False
+    
     def check_status(self, job_id: str) -> Optional[dict]:
         """Check job status."""
         try:
             response = requests.get(
                 f"{self.server_url}/status/{job_id}",
                 headers=self.headers,
-                timeout=10
+                timeout=60
             )
             
             if response.status_code == 200:
@@ -182,8 +215,15 @@ class TranscriptionClient:
                 failed = status.get('failed_count', 0)
                 job_status = status.get('status', 'unknown')
                 
-                if job_status == 'processing':
+                if job_status == 'uploaded':
+                    print(f"\r📁 File uploaded, waiting to start processing...", end='', flush=True)
+                elif job_status == 'queued':
+                    print(f"\r📋 Queued for processing...", end='', flush=True)
+                elif job_status == 'processing':
                     print(f"\r{spinner[spinner_idx]} Processing: {processed}/{total} files completed, {failed} failed", end='', flush=True)
+                    spinner_idx = (spinner_idx + 1) % len(spinner)
+                else:
+                    print(f"\r{spinner[spinner_idx]} Status: {job_status}", end='', flush=True)
                     spinner_idx = (spinner_idx + 1) % len(spinner)
                 
                 last_status = status
@@ -392,40 +432,64 @@ Examples:
         print(f"   - Is the RunPod container running?")
         sys.exit(1)
     
-    # Upload files individually
-    job_ids = client.upload_files_individually(audio_files, args.model)
-    if not job_ids:
-        print("❌ No files uploaded successfully")
-        sys.exit(1)
+    # Process files one by one with new two-step workflow
+    print(f"\n📤 Processing {len(audio_files)} files sequentially...")
+    completed_jobs = []
+    failed_jobs = []
     
-    # Wait for all jobs to complete
-    completed_jobs = client.wait_for_multiple_jobs(job_ids)
-    if not completed_jobs:
-        print("❌ No jobs completed successfully")
-        sys.exit(1)
-    
-    # Download results for each completed job
-    print(f"\n📥 Downloading results for {len(completed_jobs)} completed jobs...")
-    downloaded_count = 0
-    
-    for i, job_id in enumerate(completed_jobs, 1):
-        print(f"\n[{i}/{len(completed_jobs)}] Downloading job {job_id[:8]}...")
-        if client.download_results(job_id, args.output):
-            downloaded_count += 1
+    for i, audio_file in enumerate(audio_files, 1):
+        print(f"\n[{i}/{len(audio_files)}] Processing: {audio_file.name}")
+        
+        if not audio_file.exists():
+            print(f"❌ File not found: {audio_file}")
+            failed_jobs.append(audio_file.name)
+            continue
+        
+        # Step 1: Upload file
+        job_id = client.upload_file_with_progress(audio_file, args.model)
+        if not job_id:
+            print(f"❌ Upload failed for {audio_file.name}")
+            failed_jobs.append(audio_file.name)
+            continue
+        
+        # Step 2: Start processing
+        if not client.start_processing(job_id):
+            print(f"❌ Failed to start processing for {audio_file.name}")
+            failed_jobs.append(audio_file.name)
+            continue
+        
+        # Step 3: Wait for completion
+        if client.wait_for_completion(job_id):
+            print(f"✅ Processing completed for {audio_file.name}")
+            completed_jobs.append(job_id)
+            
+            # Step 4: Download result immediately
+            print(f"📥 Downloading result for {audio_file.name}...")
+            if client.download_results(job_id, args.output):
+                print(f"✅ Downloaded transcript for {audio_file.name}")
+            else:
+                print(f"⚠️  Failed to download transcript for {audio_file.name}")
+            
+            # Step 5: Cleanup
+            if not args.no_cleanup:
+                client.cleanup_job(job_id)
         else:
-            print(f"⚠️  Failed to download results for job {job_id[:8]}")
+            print(f"❌ Processing failed for {audio_file.name}")
+            failed_jobs.append(audio_file.name)
     
-    # Cleanup
-    if not args.no_cleanup:
-        print(f"\n🗑️  Cleaning up {len(job_ids)} jobs on server...")
-        for job_id in job_ids:
-            client.cleanup_job(job_id)
+    # Summary
+    print(f"\n📊 Processing Summary:")
+    print(f"   ✅ Completed: {len(completed_jobs)}")
+    print(f"   ❌ Failed: {len(failed_jobs)}")
+    
+    if not completed_jobs:
+        print("❌ No files processed successfully")
+        sys.exit(1)
     
     print(f"\n🎉 Transcription complete!")
-    print(f"📊 Total files processed: {len(audio_files)}")
-    print(f"✅ Successfully uploaded: {len(job_ids)}")
+    print(f"📊 Total files: {len(audio_files)}")
     print(f"✅ Successfully completed: {len(completed_jobs)}")
-    print(f"📥 Successfully downloaded: {downloaded_count}")
+    print(f"❌ Failed: {len(failed_jobs)}")
     print(f"📁 Results saved to: {args.output}")
 
 if __name__ == "__main__":

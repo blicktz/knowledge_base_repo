@@ -56,9 +56,13 @@ model_cache = {}
 # Job tracking
 jobs_db = {}
 
+# Processing queue system
+processing_queue = asyncio.Queue()
+queue_worker_task = None
+
 class JobStatus(BaseModel):
     job_id: str
-    status: str  # pending, processing, completed, failed
+    status: str  # uploaded, queued, processing, completed, failed
     created_at: str
     updated_at: str
     files_count: int
@@ -234,6 +238,65 @@ async def process_job(job_id: str, audio_files: List[Path], model_name: str):
             except:
                 pass
 
+async def queue_worker():
+    """Background worker that processes jobs from the queue."""
+    while True:
+        try:
+            # Get next job from queue
+            job_data = await processing_queue.get()
+            job_id = job_data["job_id"]
+            
+            if job_id not in jobs_db:
+                print(f"Warning: Job {job_id} not found in database")
+                processing_queue.task_done()
+                continue
+            
+            # Update status to processing
+            jobs_db[job_id]["status"] = "processing"
+            jobs_db[job_id]["updated_at"] = datetime.now().isoformat()
+            
+            # Process the job
+            file_path = Path(jobs_db[job_id]["file_path"])
+            model_name = jobs_db[job_id]["model"]
+            
+            await process_job(job_id, [file_path], model_name)
+            
+            processing_queue.task_done()
+            
+        except Exception as e:
+            print(f"Queue worker error: {e}")
+            if 'job_id' in locals() and job_id in jobs_db:
+                jobs_db[job_id]["status"] = "failed"
+                jobs_db[job_id]["error"] = str(e)
+                jobs_db[job_id]["updated_at"] = datetime.now().isoformat()
+
+@app.post("/process/{job_id}")
+async def start_processing(job_id: str, api_key: str = Depends(verify_api_key)):
+    """Start processing an uploaded file."""
+    if job_id not in jobs_db:
+        raise HTTPException(status_code=404, detail="Job not found")
+    
+    job = jobs_db[job_id]
+    
+    if job["status"] != "uploaded":
+        raise HTTPException(
+            status_code=400, 
+            detail=f"Job status is '{job['status']}', expected 'uploaded'"
+        )
+    
+    # Add job to processing queue
+    job["status"] = "queued"
+    job["updated_at"] = datetime.now().isoformat()
+    
+    await processing_queue.put({"job_id": job_id})
+    
+    return {
+        "job_id": job_id,
+        "status": "queued",
+        "message": "Job added to processing queue",
+        "queue_size": processing_queue.qsize()
+    }
+
 @app.get("/")
 async def root():
     """API root endpoint."""
@@ -241,11 +304,13 @@ async def root():
         "name": "RunPod Transcription API",
         "version": "1.0.0",
         "endpoints": {
-            "upload": "/upload",
+            "upload": "/upload-single",
+            "process": "/process/{job_id}",
             "status": "/status/{job_id}",
             "download": "/download/{job_id}",
             "health": "/health"
-        }
+        },
+        "workflow": "1. Upload file → 2. Start processing → 3. Check status → 4. Download results"
     }
 
 @app.get("/health")
@@ -261,7 +326,6 @@ async def health():
 
 @app.post("/upload-single")
 async def upload_single_file(
-    background_tasks: BackgroundTasks,
     file: UploadFile = File(...),
     model: str = "turbo",
     api_key: str = Depends(verify_api_key)
@@ -292,29 +356,30 @@ async def upload_single_file(
     # Create job record
     job = {
         "job_id": job_id,
-        "status": "pending",
+        "status": "uploaded",
         "created_at": datetime.now().isoformat(),
         "updated_at": datetime.now().isoformat(),
         "files_count": 1,
         "processed_count": 0,
         "failed_count": 0,
         "model": model,
+        "file_path": str(file_path),
         "error": None,
         "download_url": None
     }
     jobs_db[job_id] = job
     
-    # Start background processing
-    background_tasks.add_task(process_job, job_id, [file_path], model)
+    # File uploaded successfully - processing will be started separately
     
     return {
         "job_id": job_id,
-        "status": "pending",
+        "status": "uploaded",
         "files_count": 1,
         "file_name": file.filename,
         "file_size": len(content),
-        "message": "File uploaded successfully. Processing started.",
-        "status_url": f"/status/{job_id}"
+        "message": "File uploaded successfully. Use /process/{job_id} to start transcription.",
+        "status_url": f"/status/{job_id}",
+        "process_url": f"/process/{job_id}"
     }
 
 @app.post("/upload")
@@ -436,10 +501,16 @@ async def delete_job(job_id: str, api_key: str = Depends(verify_api_key)):
 
 @app.on_event("startup")
 async def startup_event():
-    """Preload default model on startup."""
+    """Preload default model and start background worker on startup."""
+    global queue_worker_task
+    
     print("Starting RunPod Transcription API Server...")
     print(f"Device: {get_device()}")
-    print(f"API Key configured: {'Yes' if API_KEY != 'your-secret-api-key-here' else 'No (using default)'}")
+    print(f"API Key configured: {'Yes' if API_KEY != 'mv_mtvG2X4U_dqRgdWMvSEoFtpMjRJkL4zlkwEXYH2I' else 'No (using default)'}")
+    
+    # Start background queue worker
+    print("Starting background queue worker...")
+    queue_worker_task = asyncio.create_task(queue_worker())
     
     # Preload turbo model
     print("Preloading turbo model...")
