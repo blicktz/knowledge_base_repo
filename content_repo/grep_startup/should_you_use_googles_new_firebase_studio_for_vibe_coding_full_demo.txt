@@ -1,0 +1,313 @@
+What if there existed a free AI coding tool? Fully free. Well, it exists now.
+
+Google just launched Firebase Studio, and it's completely free. It's tied in with Google Firebase, and it allows you to take an idea, prototype it, and put it in the world. But there's a catch.
+
+It's not perfect. And in this episode, we do a side-by-side comparison of Google, Firebase Studio, and Lovable, and we see, is it worth your time? So enjoy the episode.
+
+We got Yoni on the pod. He is a software engineer with like 100,000 followers because he shares a lot of sauce with how to VibeCode. And today, we are going to go through Firebase Studio, the new product by Google, and we're going to see how good it is.
+
+So Yoni, by the end of this episode of the Startup Ideas podcast, what are people going to learn? So by the end of this episode, everyone should have a good idea of what this new Firebase Studio thing is, what it's capable of, what it isn't capable of, and we'll even do a side-by-side comparison of putting in one prompt to both Firebase Studio and Lovable, and we'll kind of see the differences in what they are capable of. Cool.
+
+All right. Let's give it a rip. I will say, I think Firebase Studio is free, right?
+
+Yeah. So Firebase Studio is completely free. This is a new offering.
+
+It came out like less than two weeks ago as of the time of this recording. So super new, completely free, and this is Google's take on an app-creating, prototyping product. So pretty cool.
+
+All right. Let's get into it. This is what Firebase Studio looks like.
+
+When you show up, this is what you see. Here are your workspaces, like any previous projects that you may have created. Something that's really good that Firebase Studio did is they have a bunch of templates for projects.
+
+So you click here into New Workspace, and you see like all of these different templates. It's like boilerplate with best practices built in. So say you want to create a React app or a Next.js app or some kind of mobile app, React Native, Flutter, whatever it might be that you're trying to create, rather than having to do it completely from scratch, maybe you don't know the right way to set up that project, maybe you don't know what the best practices are.
+
+Here you get a repo that's already set up with all that built in. So that's pretty good. Something worth mentioning is like, maybe not all the viewers know the difference between React and Next.js and Vue.js.
+
+Like maybe you just want a web app that does something. Firebase Studio kind of assumes that you're a little bit more of a technical user. So if you show up to maybe Lovable or Bolt, you don't really need to know anything about different JavaScript frameworks, the differences, which one you may or may not.
+
+You just say, give me an app that does XYZ. So here in Firebase, immediately, you can kind of tell this is a little bit for the more advanced user. Say that we want a React app.
+
+We just click React app. We'd give it some name. We'll call it demo project.
+
+Again, you choose if you want JavaScript or TypeScript. A lot of Vibe coders aren't going to know what that is. Maybe you don't care.
+
+Maybe you care. So worth calling that out. I mean, what is the difference between JavaScript and TypeScript?
+
+TypeScript enforces types, data types into your variables. So it's another layer of safety built on top of JavaScript, basically. So here you get a project.
+
+This is like your IDE. This is where you interact with your code. You see a lot of files.
+
+Again, it probably helps to have some idea of how code works or some familiarity with code. Otherwise, you're going to show up here. Everything is red underlined.
+
+You kind of freak out. There's a lot of things going on. So that's kind of the vibe with Firebase Studio.
+
+There's some expectation that you know what you're looking at. And here immediately, you can see a little web preview of this React app that it spit out. Count is zero.
+
+Okay, so we have a little button. Gemini is the model that Google created. This is all under Google, obviously, Firebase Studio.
+
+So if you want to do a genetic code generation, it's with Gemini. So you have this little Gemini tab here. You can select some models.
+
+Gemini Pro 2.5 is the more recent model, but it's fairly expensive, or at least they're not going to give you access for free. So you need to paste in a Gemini API key. Let me do that really quick.
+
+You can even click get a Gemini API key and say you don't have one. This is all under Google. So they have nice, tight integrations like that.
+
+Quick break in the pod to tell you a little bit about Startup Empire. So Startup Empire is my private membership where it's a bunch of people like me, like you, who want to build out their startup ideas. Now they're looking for content to help accelerate that.
+
+They're looking for potential co-founders. They're looking for tutorials from people like me to come in and tell them, how do you do email marketing? How do you build an audience?
+
+How do you go viral on Twitter? All these different things. That's exactly what Startup Empire is.
+
+And it's for people who want to start a startup but are looking for ideas, or it's for people who have a startup, but just they're not seeing the traction that they need. So you can check out the link to startupempire.co in the description. Let's say we, okay, we have a super basic React app and let's say we want to turn it into a different app.
+
+Let's say we want an app where you can create me and modify this app into one that allows me to swipe on images of dogs and tells me what my preferences of dog breeds are. So we're going to make a little Tinder for dogs, hopefully. Classic.
+
+Classic. A very classic starter app, exactly. And to be clear, when you say Tinder for dogs, you're not talking about relationships with humans, with dogs.
+
+No, we're just going to have like a hope. I mean, we'll see. We're at Gemini's behest here, but we'll hopefully have little images of dogs and you can select what dogs you want to own and which ones you don't want to own.
+
+And it'll tell you something about your preferences. Maybe. Best case scenario.
+
+I will say, this is my first time seeing this. It's a bit overwhelming just from a UI perspective. Definitely.
+
+What I love about Bolt or Lovable or some of these others is that it just feels a lot more calm. And like my heart rate is a bit higher right now. Like I feel like I'm going to do something wrong.
+
+Yeah. No, that's totally fair. And you have all these buttons and files and like there's totally a lot going on here.
+
+Maybe for a developer, it's like more familiar, but, you know, for the average person, this is like super overwhelming. Yeah. So anyway, all right.
+
+Created some files or modified some files. Let's see what we got. Okay.
+
+All right. So we got a dog. We can like or dislike it.
+
+And where are these images coming from? Yeah, that's a good idea. That's a good question.
+
+Let's see. These images are coming from dog.ceo. So I guess Gemini just found some open API, public API of images of dogs.
+
+So that's the vibe. Dog Tinder. I came up with that on its own.
+
+Okay. So some like super simple app wireframed from a super simple prompt. But again, you're like in this view, there's a lot going on.
+
+It may be a bit overwhelming. I'm going to be a bit more of a bit more worthwhile disclaimer is that Firebase is Google's like backend as a service kind of platform. And so because now we're in Firebase Studio, we have all of these like one touch, fairly easy integrations into that Firebase ecosystem.
+
+So if you're familiar with Firebase or you're building with Firebase, this may be really nice. For example, if you want to host the web app, you can one click more or less deploy this into Firebase web hosting. If you want to deploy it to the cloud, you can do that as well.
+
+Google has GCP, Google Cloud. So you can quickly deploy into Google Cloud. Google Maps, Secret Manager.
+
+So again, it has these integrations within the Google ecosystem. So if you're a developer and you build with Google and you build onto Google Cloud, this could be really nice. Could you not do that on the Bolts and Lovables of the world?
+
+It's probably not as tightly connected into Google's ecosystem. Like Lovable, I think, has a Supabase integration. So Lovable, you can one click deploy or connect to databases in Supabase.
+
+But here it's all Google products, Google integrations. And can you make the quick case on as to why Firebase is, you know, maybe better in some ways in Supabase? Yeah, so Firebase probably gives you more control into like the underlying Postgres SQL instance, I would imagine.
+
+Again, it's for the more technical folks. So if you want just like a database, you don't know what database is under the hood, you don't care, or you just need like a user table or something like that, you're building a consumer mobile app, you need some kind of backend something, you probably don't need all of the complexities and functionalities inside of Google. But if you're, you know, a more experienced developer, you're familiar with the Google ecosystem, then this is probably a great product for you.
+
+Okay, so that's super brief Firebase Studio. So this is one way that you can prototype apps in Firebase Studio, is with this sort of Gemini tab inside of this code editor view. You also, they have something called an app prototyping agent, and that's right here.
+
+So on the homepage, it's kind of asking you to input a prompt here. We went through the new workspaces, we opened up a template, and we kind of went the other way. This is, they're sort of hinting that they prefer that you start here.
+
+And they have some sample prompts. So like a tipping calculator, where does that prompt? A tipping calculator app to help calculate a tip on a bill amongst friends, or an expense tracker, or a recipe generator.
+
+So this initiates a little bit of a different flow than what we saw. And this one will be a little less overwhelming. This one will be for maybe the less technical folks, sort of more similar to what you would expect with Bolt or Lovable, and it's just a text-based interaction.
+
+So what we're actually going to do here is we're going to use this prototyping flow, and in parallel, we're going to use Lovable, and we're just going to take a prompt, and we're going to throw it into both a super simple prompt, like the way that you talk to a human, not some kind of crazy meta-prompt engineered thing, just like build me an app that does something. So specifically, we're going to build an app, like a budgeting app or an expense tracker app. So I have this prompt.
+
+A budgeting app that aggregates all transactions across financial institutions and displays daily, weekly, monthly spending, as well as net worth. So sort of like a personal finance tracker app. And we'll just throw this into Firebase Studio, and we'll throw this into Lovable.
+
+All right, so Lovable usually takes a bit longer, so we'll do that first. And Firebase Studio, usually a bit quicker to return something. All right, so this, again, is that app prototyping view.
+
+So most people, when they come into Firebase Studio, this is what they're going to experience right off the rip. So you see, okay, here's a plan for how we'll prototype this app. They're going to call it FinTrack.
+
+You can edit this as you choose. I will say that's really, this is really sick. Yeah, this is really nice.
+
+Yeah. Daily spending view. Display daily spending with clear categorization.
+
+Weekly spending report. Display weekly spending trends with comparison. Monthly budget overview.
+
+Net worth calculation. Okay, a bunch of things. And then you just click prototype this app.
+
+Interesting that they use the word prototype, not build. Yeah, they even call it the app prototyping agent. So I think they're very explicit that this is a prototype.
+
+And then all further developments you do in that kind of more overwhelming, you know, code editor view. So this is the only time you're going to really have this nice kind of simple view where you just speak to it like a human and it goes to write text. After this, once it takes you into the code base, that's when you have the whole editor right there.
+
+Another thing worth noting is that in Firebase Studio, oh, okay, there you go. I was going to say that you see all the code as it's generated. So like it shows you those files and you're kind of more directly interacting with the code.
+
+In Lovable, which has been over here cooking quietly, it doesn't show you any code. This is your experience. It kind of doesn't want you to deal with the code.
+
+It kind of just wants you to deal with the interface. You can see the code. If you click here, it will show you the files that it's creating, but it hides that by default.
+
+So again, I think it's something to say about the different intended users, perhaps, of the two products. Well, I also think that that's everything I've seen so far from Firebase Studio has been very googly, meaning it's like very technical. Yeah.
+
+It's like Android, right? You can customize it. It's not like Apple where it's like this easy, you know, abstract, everything's abstracted away.
+
+For sure. So some people will like it. Some people will prefer it for sure.
+
+Some people won't. Yeah, totally agree. So Firebase Studio has a feedback ticketing system that like if you want to request a feature or you have feedback on some features, they have a whole board for that.
+
+And the number one feedback request, at least at the time that I looked, was please use Gemini 2.5 Pro for the app prototyping. It may not be using that by default. Gemini 2.5 Pro is Google's latest, hottest, best model for code generation.
+
+And it's actually quite good at generating UI. Whereas whatever it's using, maybe Gemini 2.0, maybe some Flash model, you'll see this like this is the UI that it just spit out. It's like plain HTML.
+
+Let's see, lovable, still cooking. And then you see in the corner we have an issue. So at least it's nice that they surface issues in a way that you can see them without having to go into the code here.
+
+But like, what is this issue? React does not recognize the default active prop on a DOM element. Like, okay.
+
+Probably the average person isn't going to know what to do with this, right? So they say, I've detected an error. Want me to fix it?
+
+And you can say fix error. And hopefully it'll fix the error. So with Firebase Studio, there's some amount of that back and forth.
+
+Like if you get an error, then it prompts you to fix it. I think the same is true for lovable, but that's what we got. Okay, so super simple UI, right?
+
+Not a ton of styling here, but approximately functioning, right? We have some numbers, net worth, daily, weekly, monthly spending. If we want to keep prototyping, we can keep prompting here.
+
+Let's say, please make more dummy data. Please make more dummy data. Monthly budget.
+
+We're not really seeing a lot. No data to display. Please make more dummy data.
+
+A little bit of a stupid prompt. Didn't give it a lot to go off of. And we can kind of just see what it does with that.
+
+Weekly spending is empty. Monthly spending is empty. So we can do small tweaks.
+
+I don't think it's going to do dramatic improvements to the UI, but we can try to do that as well. Let's check in on lovable. Oh, boy.
+
+Oh, boy. Oh, it's still there. Okay, it's still going.
+
+Improve the UI to make it look more modern. Do you have the ability to give it a screenshot and make it, you know, for example, screenshotting the stripe.com website and then putting it... Yeah, it looks like we can.
+
+Let's try that. Always a good idea to do that, I feel like. What do you think, Yoni?
+
+Definitely. Yeah, definitely. A good website is mobbin.com.
+
+If viewers are unfamiliar, Mobbin has, like, tons of UIs and screen interactions from all of your popular websites. So if you go to Mobbin, you can get a ton of prototypes that you can screenshot and feed into your LLens. So that's something I do all the time.
+
+See, can we drag? This is a stripe landing page screenshot. Make it in the style of this screenshot.
+
+Cool. Let's check in on Lovable. Okay.
+
+So we have something over here. We have some animations out of the box. When the pages render in Lovable, they animate.
+
+Okay, so it looks a bit cleaner. There's some user interaction here. Yeah, I mean, it's objectively way cleaner.
+
+Yeah, there's, like, red and green transactions. Cool. Oh, boy.
+
+You hate to see this. You hate to see this. So we definitely confused the model that we're talking to here.
+
+We have, like, some combination of the stripe landing page. They took verbatim a lot of the text from here. And then our product down below.
+
+All right. Cool. What if we want to make some kind of, like, user sign-in flow?
+
+We want some authentication. What if we want... We don't want everyone to be able to see our transactions, right?
+
+So we want some user sign-in flow. Make a user sign-in flow with register and login. Greg, what do you think here?
+
+What are we missing? What... How can we improve this Lovable design?
+
+Just from a visual perspective or from a feature? Yeah, yeah, yeah. Visual.
+
+I think that from, like, a user psychology perspective, someone's net worth on a chart is an extremely addictive thing to look at. And I think that's going to drive daily logins. And I also think that...
+
+I mean, this is a feature, but I also think that... How do you get people to share that net worth? Well, actually, I take it back.
+
+Bad idea. I was going to say, sometimes... Okay, this is...
+
+You know, enter Greg's mind here. Sometimes I always think about dashboards of, like, how do you create something that people are going to share on social so that you get virality. Net worth, not something that people are going to share.
+
+Although people share Stripe MRR screenshots, so who knows? True. It's not impossible.
+
+But we're not going to put a share button because that's maybe a bit too much. But if we can make this screenshot worthy with a net worth on a graph, I think that could be really cool. Just ask it to make it more screenshot worthy.
+
+I don't know what models Lovable are using behind the hood, but they're really quite good. To your point, like, it's much more visually appealing than what we're getting right now at a Firebase Studio. And Firebase Studio, parsing ECMAScript source code failed.
+
+You can click fix error and hope it fix error. I've gotten into these sort of death loops with Firebase Studio where it's like error after error after error and it just surfaces the same error over and over again. So it's definitely capable of that.
+
+But honestly, like to their credit, once you have this platform built, like the models, they improve over time. If they're not using their best models, they can plug those in with time. So I'm bullish on the future of this product.
+
+We're just so early. Like we're 10 days in post launch. So we're going to have a lot of this stuff.
+
+They're very explicit that this is alpha. There may be breaking changes or preview, they call it. So I think that's just what you get from a free product 10 days after launch.
+
+Use auth. Okay. All right.
+
+So Firebase Studio, I think we broke our app by asking it for user sign-in. Lovable, I think, is pretty good at implementing. Okay.
+
+So that looks a lot better. Some formatting issues here, but net worth over time, Greg, we got you there. We have a sidebar.
+
+Thank you. My pleasure. Okay, cool.
+
+Now let's see user sign-in with Lovable. I think it just, yeah, you have a little Supabase logo in the corner. It's pretty good at doing this.
+
+Set up user auth with register and sign-in flows. In my experience with Lovable, it can one-shot this. It sets up the Supabase integration.
+
+You'll get like a confirmation email to your email when you actually sign up for this little prototype app. So there you go. To get started, click on the Supabase button, connect Lovable project to Supabase.
+
+Let's just do that. We can create a new project. Okay.
+
+Let's use an existing project. Your app is now connected to Supabase. So that's what it feels like in Lovable to connect to a real database is it just like takes you out into Supabase.
+
+You click a couple buttons and now you're fully connected. Now we can ask it again to set up the auth. Should be able to do it now.
+
+Meanwhile, Firebase. Poor guy. I think he's cooked.
+
+So in the corner, you can switch to code from this app prototyping view. Let's say you get to a working prototype or something you're happy with or something that's fully broken and you're an engineer, so now you need to intervene and fix things. You go up here to switch to code and it'll take you back to that code editor view that we saw from the beginning.
+
+And presumably, you're a developer. Otherwise, you would have probably already freaked out and switched to Lovable a long time ago. But say you're a developer and now you're here in the code view, you can go and fix those bugs that the prototyping agent was not able to fix.
+
+Set up auth will follow both practices. Okay, ask some questions. Yes.
+
+So something I was thinking about is given that Firebase Studio is clearly tailored to the experienced developer, like if you're not an experienced developer, you have no business here. So if you are an experienced developer, why would you choose Firebase Studio over some other tools that are already out there floating around for experienced developers like Windsurf, like Cursor? And the best answer I could come up with is that if you love Google products and you love Google Cloud and you already build heavily into it and you're really into Firebase and you prefer it over like hand rolling your own backends, then maybe you like this because it does have one-click integrations with those other Firebase products.
+
+So if you want to host it, you can just click a button, initialize Firebase hosting. But if you're an experienced developer, you're probably already reasonably good at deploying hosting to things on your own. So it's sort of this middle ground that like if you want one-click deployments into Google Cloud, then maybe you're less experienced or maybe you just like the time savings.
+
+So it's sort of for that like middle to experienced developer who's already familiar with the Google ecosystem. It's almost surprising that they launched this product to the public. Yeah, I think it was rushed.
+
+To be honest, there was probably some internal and external pressures to get something out because like Lovable technically launched over a year ago, but they were called something else at first. I think it was like GPT Engineer. They had a couple of failed launches and then they had their real successful Lovable.dev launch like four months ago.
+
+And so Lovable in four months, this team, small team of European developers, they went from like zero to 20 million ARR or something. Recently, I saw 17 million, but that was already a month ago. So, I mean, these products are taking off.
+
+Cursor, obviously fastest company to hit 100 million ARR. So I think there's just pressure for them to get involved. To their credit, Gemini 2.5 Pro is actually an extremely good model.
+
+Yeah. It's really good. I could see, I say that not by saying I don't see, like don't use Firebase Studio.
+
+I say it by, I see where Firebase Studio is going to go. It's going to be a mega competitor to Cursor, Windsurf. 100%.
+
+They're probably going to have, they're actually probably going to use models that are not even out to the public realistically for the future of Firebase Studio. That's what I think. And I bet they're, I mean, obviously they see what everyone's prompting, right?
+
+So the models are going to get smarter and smarter and smarter. So I think it's, just going through this for the first time, it might be fun to play with Firebase Studio, realize that it's probably not perfect today, far from perfect, actually. And probably not worth really, like developing on.
+
+But knowing that in like six months, it might be fire. Yeah. And that's kind of been Google's story in this AI race of the last couple of years.
+
+They've been an underdog. They like had a really rough launch to Gemini initially a year or two ago. And, you know, Gemini 2.5 Pro is a banger of a model.
+
+So I think they're on the up and up. I'm bullish on where this product will go. But yeah, we're just so early.
+
+We're super early. And it's going to be like a very high leverage, valuable product for them. It's going to bring a ton of users into the Firebase ecosystem.
+
+There's already an increasing amount of Firebase users in this like new consumer mobile app wave where you want some simple mobile app and you need a backend to like track analytics or track some simple user data. Firebase is the thing that people are using now. So, you know, Google has a place in all of this.
+
+I think that we're just super, super early on Firebase Studio. It'll be interesting to do another video coming back to this in like a few months or six months and see how far things have come. Okay, so Lovable gave us some user auth.
+
+We have a sign-in and register flow. Let's register here. Registration complete.
+
+Please check your email to confirm your account. That's like a Supabase feature that by default they do user authentication. I just got, I'm not showing you my email now, but I just got on a different window a confirmation from this app.
+
+Let's see if we can use that to sign in. Oh, maybe not because localhost. Okay, so by default, I think that you actually probably want to turn that feature off.
+
+The email authentication, but in any case, this is the product. Okay. So that's it.
+
+A little side-by-side, Firebase Studio and Lovable. What it can do, what it can't do, what users might expect if they stumble upon this out in the wild. I appreciate it, my man.
+
+I appreciate it. Thanks for taking us through, sharing your, you know, I love hearing how you think about it and how you think about prompting. I'm going to include where to find you on social in the show notes so that people can follow you.
+
+I think you're trying to break a million dollars in revenue from all streams. You're building a software app, you're vibe coding, you're sharing the story. So I'll include that.
+
+Anything else you want to leave people with? Good luck. Have fun.
+
+I think that it's still so early in AI land. I think that there are still so many high lever opportunities that you can build apps, if not with Firebase Studio today, with Replit, with Lovable, to make real revenue. And yeah, just play around with these tools and have fun.
+
+Yeah, I think that's a good point. I think, you know, you have Lovable, you have Bolt, you have Replit. Those are sort of the more friendly, let's say, friendly platforms for people who have ideas and want to see their ideas out in the world, but who aren't technical or not super technical, at least.
+
+So, I guess what's really cool is on the more advanced side, you have the windsurfs you have cursor, now you have Firebase Studio, you have Tempo, Tempo Labs. And there's just, there's becoming this, it's almost like choose, you know, choose what feels right to you. So, encourage everyone to go and play with all these tools and see what feels right for you.
+
+Yeah, and you can build real businesses off of this, you know, I mean, you've seen plenty of your guests have done this. They might feel like toys and you can definitely play around with them, but you can add a Stripe pay button and you can turn it into a real business. Totally.
+
+Happy building, everyone. Later, Yanni. Happy building.
+
+Peace.

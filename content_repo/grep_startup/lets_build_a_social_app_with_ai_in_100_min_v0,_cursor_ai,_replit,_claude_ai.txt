@@ -1,0 +1,1247 @@
+Like I've noticed a lot of people under a lot of like commenting on a lot of videos saying like, oh, I'm going to wait another year. So it gets till it gets even easier. And I just think there's a massive opportunity right now, Greg, as you said, to create an agency and doing it when it's hard is better.
+
+Because by the time the creating what we're doing now gets easy, the people who start now are going to be creating even better sites by then. And like because there's a group of people always pushing the edges of all these new things. Right now, there's not very many people pushing the edges of AI websites, which is where you will find probably the most profitable industries or interesting niches to get into.
+
+And so that would be my advice to anyone who's like, oh, I'm going to wait for this to get a little bit easier. Okay, I don't want to waste one second. What are we doing today?
+
+Yeah, so last time we made a very simple app. And as you know, I struggled through but eventually pulled through making the app. And since I even added some more features and I might even release it as a product.
+
+But we thought we could do significantly better with this episode and accomplish a lot more, especially with two people. There's a lot less pressure. Like when you have someone to talk and someone to build, it's a very nerve wracking thing.
+
+You're like, all right, I'm on a podcast, but I'm also making an app. It's like, how do I act here? So we came up with this idea.
+
+And this is V0. We used this last time on the podcast. And this is just a chat.
+
+Like I think where we had Claude generate an idea and we thought it would be cool. Let's say you wanted to create a little community app, social app for the Startup Ideas podcast where people could join, create a profile. And you could type in your startup idea and it'll use AI to generate steps and other people can rate other people's startup ideas and then add comments.
+
+And we thought that would be like a really fun community building tool. And so I threw in the basic concept and I just said, create the homepage of this app. And then I didn't like the initial one, right?
+
+It gave us this right here, which looks horrible. And then slowly but surely I ideated on it and got it to somewhere where I'm like, okay, that doesn't look terrible. And then we had some padding issues and ended up with this one right here.
+
+And it's pretty clean, simple app and we use V0. And I guess there's some few other things maybe that we could add to this homepage that I think would be fun. And then we'll kind of get the general idea for what we want to build and then we'll go into the template and build it.
+
+Sound good? That sounds amazing. And it's funny because I had a similar idea that I wanted to create.
+
+And I asked a buddy of mine to create it and he quoted me, I think, $29,000 to build something like this. So... Well, we actually, we're going to build it in the hour, but we charge $29,000 an hour.
+
+Oh, okay. Yeah, yeah, yeah. Okay.
+
+But we'll talk about the details after. I got it. Okay.
+
+So let's start. Since this is for your startup podcast, what type of colors would you want to see in here? Like, let's change this up a little bit.
+
+Let's make it fun. So the brand of the pod is white and orange. So...
+
+Do you have like a cover photo on your YouTube, actually? Yeah. Go to at Greg Eisenberg.
+
+Let's do Greg Eisenberg. And I think if we were to go to your profile, maybe we just use one of your thumbnails, kind of like... Yeah.
+
+This one right here. You see the orange. I'm actually kind of testing a few ideas and thumbnails right now.
+
+I also see if you see the cover photo, it's just kind of like these neons. That's a new thing. I just, just...
+
+This one? The subscribe for startup ideas. That I just, just changed.
+
+And it's performing really, really well. Probably like three times the amount of subscribers than I'm used to. And I think it's just...
+
+People love the neon. It's just like... It's kind of like highlighter.
+
+So if we could do something with neon, that'd be pretty cool. Okay. So...
+
+Yeah. I think maybe like a social app shouldn't be super colorful. Like I think maybe the background could be white.
+
+Yes. And so maybe... Let's go back to v0.
+
+And this is the published page. So anytime you create one of these, you can publish this. But again, let's just go ahead and paste that in.
+
+Let's make sure it's the right image. There it is. And we can say, can we change...
+
+And I guess we can... Can we change the site that we have here, this homepage, to match the styles from this image? Do not look at the specific text or content on this.
+
+You are only looking at the styles. And let's make the background of the site white and have darker cards or maybe like gray cards with neon text. We can just try it out.
+
+And usually... This takes a little bit to load. There we go.
+
+And we can just send it. And I would highly advise anyone who wants to just use voice. I'm using this tool.
+
+It's called Talktastic. Like Talktastic. And it works.
+
+It gets the job done. And it... What's cool about it is when Claude starts messing up and I start swearing, it actually removes it from what I'm saying.
+
+So it's kind of good. So it keeps our Claude and I on good terms. And here we go.
+
+We're going to kind of watch it build. Whoa. There's your neon.
+
+That's actually crazy. I like it so far. Hold on.
+
+Please keep going. Where is it? Okay.
+
+Yep. Oh, let's do it. Ah.
+
+Wait. Why is the text so dark? So dark.
+
+All right. What do you think of the background, though? I like...
+
+I mean, I like the background. It's kind of... It's a nice pop of color.
+
+We can... Wait. We have to make sure it's done.
+
+Oh, whoa. I did not see that coming. I did not realize it was going to change.
+
+Thoughts? I don't know, man. It feels...
+
+It feels too much like... Am I looking at a clown right now? It feels like it's like...
+
+Too clowny. You know what I mean? What I liked about the cover photo up top was...
+
+It was like professional with a few hints of bright colors. This just feels too much. Okay.
+
+Okay. So, okay. This is too much.
+
+Let's say keep... Keep the background the same, but make the cards slightly gray. Gray.
+
+Let's make the cards gray with dark text. But the header is... The header text is dark blue.
+
+And the checkboxes are green. The rest should be a more relaxed, darker color to create a more simple interface. Shh.
+
+Don't tell anyone. But I've got 30 plus startup ideas that could make you millions. And I'm giving them away for free.
+
+These aren't just random guesses. They're validated concepts from entrepreneurs who've built $100 million plus businesses. I've compiled them into one simple database.
+
+Compiled from hundreds of conversations I've had on my podcast. But the main thing is... Most of these ideas don't need a single investor.
+
+Some cost nothing to start. I'm pretty much handing you a cheat sheet. The Idea Bank is your startup shortcut.
+
+Just click below to get access. Your next cash flowing business is waiting for you. Anj, I'm curious.
+
+Any thoughts here for the styling? Yeah. I mean, I think we should probably just style one component, like one card at once.
+
+And that would be more effective than the whole page. If we want to use that. Yeah.
+
+Fair enough. So should we just... Maybe we'll just focus on the card and we can worry about the background later.
+
+Yeah. Say, let's just design... Let's just design...
+
+Let's just design one of the cards. Let's say the current design is too much. Let's go more conservative.
+
+And then we'll say keep the background. Okay. So let's just try this on one of the cards.
+
+And the designs are a lot faster. What's really cool about what Anj is suggesting here is on V0, you can go component at a time. So...
+
+And you can fork all of these links. And I'll show you right after this. So after this is done, if it ever starts, maybe we'll need to retry.
+
+Let's try that. And while that's pulling up, do you recommend doing it one component at a time? Is that the good best practice?
+
+I mean, Anj could probably speak. He's probably implemented more designs into full websites. It is probably easier to add them one at a time based on my limited experience.
+
+I'm curious, Anj, what you think. Yeah. I think V0 really excels at using whatever prompt you give it and making a specific component out of it.
+
+And you can visualize your design changes in real time. And so I really recommend using V0 to build that specific component. And a component really is like anything.
+
+A button can be a component. A card can be a component. Technically, a page is also a component.
+
+But the smaller you go, the more you can iterate and focus on that without overwhelming the context window. And that's why I think it's a lot more effective. And you'll move faster because it takes less time to generate the code.
+
+Because it has to generate a full page every iteration. Then there's going to be like a full 90 seconds in between each change. See, I personally think this looks very good.
+
+This clean gray card, it lays out the ideas. And so what you can do here to organize your work, what I would do is I would hit publish. Confirm and publish.
+
+And then you can either view the whole page right here. So we can open up a new window and just paste it in. We can see it full screen.
+
+And you can also fork it from this. So I would just save this link right here. And so this was our original idea.
+
+And so you can make just like a simple like components. And then you just go card. And then you just paste the link right there.
+
+And you can keep track of all of your components. And then it's very easy to find the code. Because at any time you can click on it later.
+
+And you can say show code. And we're going to want to give this to Claude later. And so it's a good way of organizing your work.
+
+Because and we can also fork from this, right? We could fork this. So now this is the only chat that it has so far.
+
+We can say, can you create a profile component where the user puts in name, profile, photo. Oops. Stop.
+
+Stop. All right. Well, that's all I get.
+
+No, we'll stop that early. Name, profile, photo. Let's say startup, interests, location, and current profession.
+
+I don't know. We don't need to include all these. This is just an example.
+
+I probably should have said to create one that's the same style. But I think it might just do it anyway. And while that's pulling up, I noticed that when you went to go and click, I think it was share, there was an icon for Reddit and Y Combinator, Hacker News.
+
+Why did, why, like how are people, yeah. Oh, on X as well. Like why are, what do you do there?
+
+Yeah. So I guess maybe if you wanted, like if we wanted to get really quick feedback on it, we could very quickly share it to Reddit, share it on X. I will say it looks like V0 is like busy.
+
+Like V0 is popping off the last two weeks. Like their servers must be taking a beating. Like so many, like you think our last video got 500k views.
+
+We use V0. There's many, many other videos also using it. So maybe we cut it some slack.
+
+A little bit though. I, it'll get annoying. There we go.
+
+But yeah, you can very easily change the styling and then share it with other people, which, which is really cool. I just love the fact that you can fork it and keep everything organized. Cause then you can do all of the planning before you ever go to cursor.
+
+I know right now we're going to hop directly into cursor after this, but I'm telling you. And Anj can speak to this too. It's very, very, very useful to come in with a full plan in mind.
+
+Expect to get stuck a lot more if you come into diddle daddle. And I like, if you just like, oh, let's add features as we go. It is fun.
+
+You will, you'll have fun and you can just treat it like a for fun type thing, but don't expect to like have an organized project at the end. And we make this the same style as the card prior. The gray background.
+
+But other than that, I think this looks pretty good. Gray background. And yeah.
+
+And then after this, these two components, then we can dive into the template and we'll create this into a site because time is of the essence. We have a lot of features we need to add. Your startup profile.
+
+Okay. There you go. You have a clean, simple, simple, simply designed profile component.
+
+So now we can just hit publish, confirm and publish, copy this link. And then now we have the profile component. We can just paste that here and we're organized.
+
+Now let's do the fun stuff. Let's dig in. We have multiple AI feature.
+
+Yeah. We have an AI feature we need to add, which is creating the steps to create the startup. And so I'll kick it to Ange and he'll go through the template we just created.
+
+Cool. Let me just share my screen here. Riley, it must be nice that you can just kick it to Ange, you know?
+
+Yeah, it is. It's nice to have. I do want to say, I almost, when I first started creating apps with AI, Ange was one of the people.
+
+He just like reached out to me and we ended up having a 30 minute conversation and we just like started talking. And a few days later, I was struggling a lot on a project. And I had hopped on a call with him and he was like helping me with using AI features.
+
+And I told him, I was like, dude, I think in order for me to do this, I think I actually just need to learn to code. And he was the person who was just like, no, I don't think you should. I think you should do all of this without ever writing a line of code.
+
+And I asked him, like, do you actually think it's possible to become like a good developer without writing a single line of code? And he goes, it's going to be really, really hard. But yes.
+
+And then that's all I needed was one developer, someone who actually knows how to build, to just say like it's technically possible. Because I was worried I was getting in over my head, like creating apps without coding. And then that's what caused me to just dive in like fully.
+
+Anyway. All right. All right.
+
+Let's go. Let's make. Let's make some stuff.
+
+Okay. So we have this template here that we created, Raleigh and I. And all we've done is clicked the use template button on Replet to get to this point here.
+
+And we've set up Firebase and a few other tools. Raleigh, do you want to speak about how people can do that if they want to? Yes.
+
+So in our community, so Senior Swiss, so Senior Software Composer, there's a tab. If you want to open that up really quickly, I posted the video there. And I have three separate videos in there going over the setup.
+
+What we didn't want to spend the time doing the like, every single time you use the template, you have to go through this five to ten minute step. If it's the first time you've done it, it takes about 15 minutes maybe. But in the templates, you can see it.
+
+And I wrote out all the steps. So you can watch the first five to ten minutes of that video. I go through every step to create Firebase.
+
+Firebase is free. And so it's super easy to get it set up. And then you just connect cursor to Replet and you're good to go.
+
+And that's the point that Anj is at now. So we can get into the fun stuff. Yeah.
+
+So I did everything here. And then I went to this template here and I clicked use template. And that's where we're at.
+
+So I'm running this on Replet and I have cursor open here. And I've connected those two. Again, those instructions are already in the post that Riley was just mentioning.
+
+So now we can just jump right into it. So the way that we set up this project is that we can implement pretty much any web app that you think about. And that's because we're using Next.js.
+
+And you don't really need to worry about what Next.js is or what it means. But it basically means that we can call any APIs like OpenAI or Claude from Anthropic or Firebase, communicate with databases, any of that stuff is possible with this template. And to make it easier for people to get started, we've created these paths.
+
+And these paths are a few different apps that we thought might be interesting. And we're going to add a lot more. These four are just the beginning.
+
+We're going to add many, many, many more. And so today we're going to create like a simple social media app for people to share their startup ideas where they can get AI-generated steps and how to go about creating that startup idea. So we can honestly just get started from the social media app path.
+
+And to get started, it's really simple. The first prompt, so I'm going to open Composer on cursor here where I'm going to click Command-I. And this opens this window right here.
+
+Now, this allows us to edit multiple files at once. Cursor has two modes or three modes, but this is sort of the one that allows you to edit many, many files at once. And we're going to be mainly just using this Composer mode.
+
+And you are all software composers. So this is where you're going to be spending a lot of time. So I'm going to just make this big and nice and get started.
+
+So all I'm going to tell cursor to do is follow the instructions in. And you can just find the... Anj, you want to zoom in like a click or two?
+
+Oh, yeah. That's good. Yeah, yeah.
+
+That's fire. Oh, yeah. I can even zoom in more.
+
+It's fine. Yeah. So all you have to do is tell cursor to follow the instructions in the social media path.
+
+And you can reference any file or the whole code base with just this at symbol. And then you can start typing the name of your file. And we have this file called social media, which is essentially...
+
+I'll just show it. It's like a... It's a prompt that allows us to get set up with basic functionality, like authentication, a home feed, liking and commenting for pretty much any social media app.
+
+So I'm just going to tell it to follow the instructions in this file exactly. Create the social app as described. Hey, while he types that out, this is very, very similar to what...
+
+Remember when chatGBT added custom GBTs and then you could access them via the at sign? Where like you could just go in the main chat and you could do the at whimsical diagrams custom GBT and get access to it right away? That's exactly what we're doing here.
+
+We're using the at sign to access notes, which are basically in Markdown format, which provides built-in instructions for Cursor. That's it. It sounds like what we're doing is we're accessing...
+
+I mean, every social media app has primitives. They have posts. They have profiles.
+
+They have likes. We're not reinventing the wheel. We're just accessing those primitives so that we can use it in our app.
+
+Is that right? Exactly. And we've tested them.
+
+So like we've basically created a prompt that creates a social media app. And then when we're like, okay, this prompt really works, we add it as a path, basically, to make it easier for people to get to a specific starting point. Yeah.
+
+So there are two main value propositions this template offers. One is like we've set it up with a bunch of APIs to common things that you might want to use. Like you want to update data on Firebase, which is like your database.
+
+So like if you want to store any user data, like, you know, Riley just made a profile component. We might want to save like the name of the user or the startup ideas that they're interested in. All of that would need to be stored somewhere.
+
+And that's what Firebase is used for, as well as images and logging in with Google. And then we also set up a bunch of other APIs. Like we're going to be using the OpenAI ChatGPT API right now to generate the steps that you need to take to do your startup idea.
+
+And we've set that all up. A lot of that code is what we like to call plumbing. And it's very similar.
+
+And it doesn't, it's oftentimes the hardest part for people who are just getting started. And that's why we've, we've set it all up for you. Hell yeah, let's send it.
+
+Just gonna get this prompt going. And yeah, these are actually the most crucial. Like once you get into the flow, like Greg, you saw it last time in our last podcast.
+
+I struggled at the beginning because we hadn't set up our template yet. And that was trial and error. Like in between, after the podcast, it was just me and Anj basically testing out like where are we going wrong?
+
+And then slowly working our way backwards to make it easier for anyone who wants to try. And yeah, the first prompts are critical. So I would put most of your attention.
+
+And then once you get into the flow and you have the base set up, it's a lot easier to make changes to the app. And it becomes more fun once you get to that point, for sure. And you have a template that people can download.
+
+And I bet that there's other templates available. Like where do people go and find these templates? I mean, there's all types of people.
+
+I encourage people to, whenever they create a project that they like, to just create a template out of it. Like you can throw it on GitHub. We only did it because we saw such a massive desperation need or desire for people to like be able to create websites with natural language.
+
+Like it's such an empowering thing. And a lot of marketers, business people want to do it. And so we decided that Replit was the easiest one to just like create a template.
+
+Because a lot of the time you have to create a repo. And I've never even done, I've never even gone to GitHub. GitHub still scares me.
+
+So like, I like it. I like the word template's a lot easier than repo. You know, like that's still scary.
+
+But they're all over the internet. Ansh, you want to? Yeah.
+
+So we just ran this base prompt. And now we've gotten a lot of changes. And let's just see what it's done.
+
+So it's updated a lot of different components. It's created a lot of different pages. It says it's implemented authentication, navigation, user profiles.
+
+And this is the kind of flow that I like working with, with cursor. I'll just click save all first. And when you click save all, the changes should be automatically reflected on Replit.
+
+And you can see we got some errors here. That's completely fine. You're going to get a lot of errors.
+
+You just need to copy them. And then paste them right back in. That's it.
+
+That's all. And I don't like accepting changes until I've reached a point where there are no errors. So that's why I'm just going to click save all.
+
+And all that does is save the file, syncs it with Replit. So you can see the preview live. So it said it's done the changes.
+
+And I'm going to click save all again. And let's see. Let's reload this web view.
+
+Okay. Same thing. So you're saying don't get worried that errors are going to come up.
+
+It's only natural. And just keep copying and pasting. Yes.
+
+That's basically it. Yes. When you're starting out, when you're just starting out, yeah, you have to do that.
+
+But think about it. He's pressing save all. So at any point, he could go and hit reject all, which would revert you back to the original state, which is fine.
+
+You get to try again. Obviously, once you become more... I've reached a point where I can actually pinpoint some of the errors that come up and I actually know what the problem is.
+
+The more you do it, the better you'll get. But when you start out, yes, just copy and paste and save very often so you can go back. That would be my best advice here.
+
+Quick ad break. Let me tell you about a business I invested in. It's called boringmarketing.com.
+
+So a few years ago, I met this group of people that were some of the best SEO experts in the world. They were behind getting some of the biggest companies found on Google. And the secret sauce is they've got a set of technology and AI that could help you outrank your competition.
+
+So for my own businesses, I wanted that. I didn't want to have to rely on Mark Zuckerberg. I didn't want to depend on ads to drive customers to my businesses.
+
+I wanted to rank high in Google. That's why I like SEO and that's why I use boringmarketing.com and that's why I invested in it. They're so confident in their approach that they offer a 30-day sprint with 100% money-back guarantee.
+
+Who does that nowadays? So check it out. Highly recommend boringmarketing.com.
+
+Yeah, so we have something running, but there are some more errors that are coming here. So I'm just going to keep going down this flow for a little bit. Which, by the way, is crazy that in like 20 or something minutes, you can just like, oh, we have a social media app ready to go.
+
+Yes. That was the most addicting feeling I've ever felt. Like once you feel it and you make something that you have in your brain, it's just so addicting.
+
+It's all I think about sometimes. We're definitely getting more errors than we did when we did a, we've done the previous social media app in the past. But this is expected and this is good data for us.
+
+Like, okay, maybe we need to adjust the prompt in the path next time because there's going to be multiple versions and there's going to be tons of errors. And once we've accepted that and we're like, all right, it's not going to be perfect. People are going to get confused.
+
+Let's create a community that's down for errors and confusion. Like we're in a completely new space at no point in human history have people been able to do this. So like, let's cut it some slack.
+
+You have to kind of have that mentality. Okay, cool. We are at a point where this is loading.
+
+And let's see, if we go to create post, it says, please sign in to create a post. So now at this point, like I'm not getting more errors. And so what I'd want to probably do is just accept these changes, save these changes.
+
+And then I'd come to get the git tab here in Reupplet. And I just write a message of the changes that I've made. This will just allow you to go back to where you were at if you ever get stuck.
+
+So we definitely faced a lot more errors than normal, but that's fine. That's like these LLMs are non-deterministic and they will like be completely different in different situations. And so, I mean, all I did was copy paste it.
+
+Like I could read this code and go and fix that error myself. And that would probably work just as fine. But I could also just copy paste.
+
+And we've gone to a point where this app is running. We have like a really simple home feed with a post that I added previously. But yeah, let me just go change this.
+
+So homepage working. But if I go into profile or some other page, it doesn't really load. So I'm just going to say homepage working, sign in not working.
+
+I can't stress enough how important this step is for if you're just beginning. I promise you, if you forget to do this, you will waste four hours. If you get deep into a project and you don't save, you will ruin your time.
+
+It will ruin a night for you. I guarantee it. I've done it multiple times where like I'm now yelling at Claude.
+
+I'm like, return it back to how it was because I forgot to save. And Claude's like, I don't know which version you're talking about. Like it's huge pain.
+
+That's all I have to say. Say less. I could see the pain in your eyes.
+
+You've seen some stuff. Yeah. So now that we have a basic version working, I'm going to just reset the composer.
+
+And that's just because I want to focus on different features or different problems that are not part of this context. So I can click reset or you can close it and just open a new window. But yeah, I'm just going to click reset.
+
+And then I don't want any files here. If you know how to code, you can add which files you think are necessary. And I could do that.
+
+But for this version, this run through, I'm just going to pretend that, you know, I'm not looking at the actual code underneath. So what do we have here? We have a homepage working with a post, but we don't have profile or create post working.
+
+And when we go to this, it just tells us to sign in to view our profile. Similarly, for create post, it just says that. So that's what I'm going to tell it.
+
+Home feed with some posts. But when I go to profile, it tells me to sign in profile or. Yeah.
+
+And one thing, and while Anj is typing this out, one thing that Anj told me early on that really helped me was describe what's going on first, then tell it specifically what to do. You don't want to leave it up to chance. There's a lot of times where like he could say, the profile page isn't working.
+
+Send. Like it doesn't know how you want it to solve that problem. It's like the profile page is not working.
+
+It currently looks like this. Here's a screenshot of the profile. You don't have to do it.
+
+But like, for example, if it's a design thing, screenshot it. Show Claude. Be like, this is what it looks like.
+
+I don't want it to look like this. Please make it look like this. It should be blank and like be very specific at the end of your prompt so it knows exactly what to do.
+
+Could I screenshot it, draw on it, type notes on it? Yes, but you might want to be specific about what you're. Or let's say you're like, I want it to be a header.
+
+I want it to be a top bar. And I want this icon there. If you circle where you want it to be, be like, on the image, I circled where I want the profile button to be.
+
+And be specific. Like, explain it like it's an intern. And it will understand you.
+
+It will get it. You just got to be over specific. There's a tool I use for screenshots called CleanShotX for Mac.
+
+And it's just super easy to do quick screen grabs and write on it. So I'll include a link in the description. Cool.
+
+So I did exactly what Riley said. I described what's happening now and I described what I want. So there are three changes that I want in this.
+
+These are all pretty small changes. And if they're pretty small changes, you can ask them in just one prompt. But usually if they're larger changes, I would just restrict one change to one prompt.
+
+So I'm going to click Submit. But every time I do this, and I don't even press enter, I get the jitters. I don't know if you guys get the jitters too.
+
+They wear off after a while. I think that's with anything, you know. With experience comes composure, you know.
+
+I'm sure Tony Robbins doesn't get the jitters before he goes and speaks, you know. No, I've seen him live. He definitely doesn't.
+
+Yeah. The audience has more jitters than he does. I forgot to give it context of the whole code base.
+
+So I'm just going to copy my prompt, reject all the changes, reset the composer, and then paste what I had and just add code base. You got distracted when you were telling people about the specific files. So that's the way to address.
+
+It's definitely good to use add code base earlier on, especially, because if it doesn't know what files you're talking about, it's not going to look at the right thing. But I think Anj and I share the perspective that context windows are going to get so big that it'll be able to look at, ooh, that's starting to look a lot better. I think future models are going to be able to look at a lot more of your code base every prompt, which is going to be way easier for us.
+
+Cool. So now we have a logout button. So I can click logout.
+
+And then I can click login. So login's not working. We can fix that.
+
+But that was my account that was showing up previously. So I'm just going to ask it. Did you put the dev domain in Firebase?
+
+Yeah, I did. I did. I think it didn't create a login page because what it's saying is 404.
+
+So you pick these things up as you go. But like, this is something that'd be useful. So when I click the login button, it shows me 404, this page could not be found.
+
+And anyone who's been on the internet for any amount of time knows that, like, you know, the 404 error is like, you know, when something cannot be found. And so that's all I told it. So I described what's going on right now.
+
+And then I'm going to say, create, allow me to login. Hey, while Anj is typing this out, another thing, you might be a complete beginner and you might not know what to tell it. And that's how I started.
+
+And so if you're in doubt, say, please create whatever is necessary to address this issue. Because sometimes you won't even know what to tell it to do. But the more you get, that's part of getting better.
+
+It's a skill. And you'll get better at explaining exactly what you want and what you need. Yeah.
+
+Do you ever ask Claude and just be like, I don't know what's going on here. Teach me. All of the time, especially when starting out.
+
+Yes. Like, you'll run into errors. And I actually, I suggest pasting the errors in in the beginning being like, okay, don't generate any code.
+
+Tell me what's the problem. And you'll increase the, your learning rate significantly if you actually try and learn along the way. And you just have to ask Cursor.
+
+Yeah. And maybe even being like, teach me and write it in plain English, like eighth grade English. Be clear and concise and write in plain English.
+
+Yeah, that's definitely good. I would suggest using Cursor's chat feature. So here, if I minimize this composer window, you can press command L and you can open chat.
+
+And then you can literally just ask it code base. Explain this code base to me in plain English using eighth grader language. Yeah, and this is super useful to just see it in English.
+
+So it tells you this is using a technology called Next.js, which helps you make websites faster and easier to build. There's set up for user accounts using something called Firebase. This lets people have their sign in, have their own profiles.
+
+This app can do cool things like generate images, have conversations with AI, use voice notes, and this is just all our paths that it's getting that information from. And now it's giving code. But you can also tell it to not give code and give you a response that way.
+
+Wait, did you just generate? Oh, okay, okay. Never mind.
+
+Yeah. So I'm here. I'm going to save all these changes.
+
+We were trying to fix the login issues. And then I'm just going to reload the page over here. This is like the path that you're at.
+
+So like the URL of the website. So like if it's just a slash, that just means the homepage. So I'm going to click login and let's see what happens.
+
+So, okay. It takes me to log in with Google. I can select my email and now it's a logout button.
+
+So if I click profile, I should be able to see my profile. It got my name, my email. It shows my posts.
+
+I can create posts. I can select an image. Let me see.
+
+Yeah. This is an app that Riley and I created. Voice to text app.
+
+And I'll create this first. And yeah, that just created that post. I'll reload the page.
+
+Let me see if the images aren't loading. But now they're loading. Yep.
+
+So this is pretty much it. And we can click like. And it shows a like counter.
+
+And I can add a comment. And it shows a comment. And clearly, this has some issues.
+
+There are two navigation bars for some reason. But like the basic functionality is working. And all I did was copy pasted the errors.
+
+I could have gone there and like edited the code myself. Or could have written this whole app myself. I've been coding for almost 10 years now.
+
+But it's still faster for me to just prompt AI and tell it what to do. And get me to a point where I'm here. Yeah.
+
+And so do we want to next just apply the styles? I pasted those in that Google Doc I sent you. Anj, if you want to make.
+
+Maybe we can make those cards for the posts. Or do you think we have some more steps before that? Yeah.
+
+I think we should just clean it up a little bit. I don't think it should take too long. So we can just accept these changes.
+
+Again, it's good to accept them whenever you're done. I'll reset this composer. I'll go to the Git tab on Replet.
+
+And I will add a message for login works. Looks kind of weird. And these are just for you.
+
+Honestly, it doesn't matter if you're not working in a team. What those messages are. But like we saved our progress.
+
+So nothing's going to be lost until that point. So, okay. We're here.
+
+Again, I've reset the composer. All these files are open. I don't really need them.
+
+I can just close them all. And Command-Shift-I to open the composer right here. So I'm just going to make a few quick changes.
+
+So you're going to tell it. And I have clean shot X too. So why don't we try your method, Greg?
+
+So I'll take a screenshot of this whole page. And it'll be like. Oh, wait.
+
+You can copy them directly. Oh, wow. Exactly.
+
+I'm downloading this. Wow. It's a no-brainer.
+
+It's a no-brainer. What is it called? Clean shot X?
+
+Yeah, it's called clean shot X. I think the website's clean shot.com. Oh, wait.
+
+Is that the one you said was part of set app on? Set app. Yeah.
+
+Okay. What's that? Set app is like a suite of tools.
+
+You can get them individually, but you can also get a membership to set app, which gives you access to a bunch of tools or on Mac or something. Yeah. I think Kane Callaway suggested that to me.
+
+Yeah. Dozens of apps, one subscription, $9.99. Okay.
+
+We'll include a link in the YouTube description. I love how quickly you can just apply squares or rectangles and arrows. That's super nice.
+
+Yeah. And it's good for this. And it's also just good for sharing anything with a team member, especially like when you're dealing with wireframes, designs.
+
+And if everyone's a designer now because of V0, you're going to probably need something like this. Yeah. I mean, the end game is like you're going to talk to AI exactly as you would talk to a designer employee, which scares some employees, but like also empowers you to create some cool things.
+
+It's more hands-on. It's better than typing. Typing is kind of boring.
+
+Yeah. So let's see if this works. I've actually never done it like this, but theoretically it should.
+
+I bounded this navigation, this extra one with this red box. And I basically told it, for some reason, there are two navigation bars in my app. The blue one on top that says home, profile, create post, logout is correct.
+
+The one that is bounded. Should we say to center the cards? I think we should do that in the next prompt.
+
+Okay. Let's do it. Just because it's good to focus on one thing at once.
+
+You can do multiple things at once. You'll just be like, expect more errors in that case. So I'm just going to say this.
+
+And I noticed you put quotation marks around home. I saw our profile and stuff like that. Is that really important to do?
+
+No, honestly. No, you don't need to do that. But being very, very descriptive is really useful.
+
+So the more specific you can be about what you want, the better. So I guess think about it this way, right? Like we gave it the image and it is a vision model and it's working.
+
+Somehow it's able to figure out like what is going on in the image. But if it's not, you can give it other context clues. And so the main difference I saw between the top navigation bar, the one that we want, and this one, the one that we don't want, is that the top one is blue.
+
+And it has four items, which say home, profile, create, post, and logout. And the bottom one has no color and just has these three items. So I was very specific about the one that I want to keep.
+
+And I was very specific about the one that I want to remove. So let's see if that worked. Okay.
+
+So it gave me an error. I'm just going to copy paste that error in here. I feel like that's an easy one.
+
+Yeah. It's just the font is not available. Yeah.
+
+Okay. So it did not remove the bar. So let me rephrase what I'm trying to do.
+
+That did not work. So let me see if this even works. It does work.
+
+But we don't, we don't want it to work. The issue, so I'm going to describe it in a different way. So the issue is that the home page, home feed page has a navigation bar that is separate from the other pages.
+
+I want to remove that one. It only has another way to tell it. And this comes with time.
+
+It's like, I know this page has all the same con. Like it's the home feed page because it's, we're at home. And only this page has that navigation bar that we don't want, as you can see.
+
+And so if I tell it that, it'll know where to look. And then I think the reason it didn't work before is because I didn't give it code-based context. So always do that.
+
+Don't forget. How does this work with mobile? Like are these web apps responsive in any way?
+
+Like on, on the browser, they're great. Like with the voice app we made last, like works, honestly, it works better on my iPhone than it does on the web app. Obviously, obviously that will be part of our community.
+
+We will get there at some point, developing web apps on cursor, which it is possible. Even with just AI, it's just a lot more difficult. I've heard.
+
+And you can't use replit as easily. You're going to have to do it locally. Hey, it worked.
+
+Yeah, cool. Yeah, now it worked. So I told you where to look and I forgot to give it the code-based context.
+
+So that solves the reason why. So again, I'll save this, accept it, and I'll go here and add my changes. Removed, useless, navigation.
+
+Hey, let's start powering through this. I want to get to the point where all three of us make a profile and create our own ideas. I think that would be really fun.
+
+Okay, cool. So let's, you want to focus on the components? You know what?
+
+Maybe we just do the, let's get the AI feature working and then do the components. Do you think that's a better way to do it or do you think the inverse is better? Yeah, I think that's a better way to do it.
+
+Okay. Cool. So, so, so I was thinking that the user, you know, like on Facebook, you go to create a post, right?
+
+Instead of that, it's like create a new startup idea. And so user types in their startup idea in a text field as if it's chat GBT. And it will generate different steps that you can mark off as complete.
+
+And you can keep track of everyone's progress towards their startup. And then, yeah. And it allows you to edit each of the individual steps, which isn't as straightforward as a normal chat GBT chat, because this actually has to plug things into fields, right?
+
+It's plugging things into steps rather than just giving you a text response, but it shouldn't be too difficult. Yeah. So now we're going to describe how we want to change this app.
+
+So I want this, I want to modify this app to be social media app for startup ideas. Or I'm going to be more specific on the create post page. I want to be able to type out my idea.
+
+And then I want AI to generate the necessary steps to achieve that idea. Then I want to use open AI API to generate the necessary steps to achieve the idea. And what's fun about this is once you get this down in the basics, the steps might not be that great.
+
+But in theory, Greg, you could take all of your YouTube videos and create a custom chat GBT assistant. And instead of calling the open AI API, you can now call all of your startup ideas or all the guests that you've had on your podcast. And you could even be like, watch this video here to see he talks about it at this timestamp.
+
+It would take a lot more time to implement that. But like, as a retention method for people watching your episode, and it would just be more useful, probably to see some more context on why that's the right startup step, you know? 100%.
+
+All right. This is probably the hardest step. Would you agree, Anj?
+
+Yeah, definitely. But it looks like it knows where it's going. Oh, you mean implementing AI into a software app?
+
+You know, like, checks out. Yeah, yeah. It's so, it's hard.
+
+And I have done this before. And actually, this is one of the first projects Anj and I worked on was generating something like this with paths. I was calling them paths at the time.
+
+And we struggled through it. But he, like, didn't even, he purposely didn't help me. He's just like, no, keep going down this path.
+
+And he just, like, he wouldn't, like, give me the answer. Okay, let's see. Someone shoot out a startup idea.
+
+What was the example I was doing in the last podcast? Selling water balloons at football games. In Germany.
+
+In Germany. It was niche. It was niche, but it's fine.
+
+You know, riches in the niches, right? Isn't that your thing? Yeah.
+
+That's what they say. Okay. It gave me an error.
+
+So let me come back here and say. It gave you an error because Riley's idea was painfully bad. If it's a zero, it evaluates it.
+
+It just gives you an error. It just doesn't work if it's so bad. Okay.
+
+So we are here. I've saved these changes, and I'm going to tell it exactly what happened. So when I go to.
+
+Yeah, this is actually going to be fun. Like, as soon as we get a deployed link, he can send it to us. We can log in, upload our startup ideas, and we can comment on each other's and see it in the home feed.
+
+I'm curious, Greg, what were some of the. Did you see any of the comments from the last podcast of, like, things that people wanted to build? Or did you notice any trends from the comments of, like, what excited people the most?
+
+Yeah. A bunch of things. And questions, too.
+
+You know, one question that I think was on people's minds is, who owns this software? Meaning, if I use V0, and I use Repl.ly, and I use Cursor, is this my software? Or am I just, like, what's the deal here?
+
+It's a good question. I don't know the answer. I don't think that maybe Ange would be a better.
+
+Like, I think we own this. Like, I don't know, actually. I have no idea who owns the code.
+
+Like, isn't it just, like, open license? I have no idea. Someone in the comments section who is hopefully a lawyer, go check it out.
+
+We want to know, you know, we want to get to the bottom of this. Because you don't want to create something. We don't want to create something, and it gets, like, a million users.
+
+And then, you know, someone from one of these platforms is like, you owe us a bunch of money. So, worth looking into. But I imagine the way it works is you pay for a cursor.
+
+So, you're essentially licensing their software to create something that you own. That's how, like, for example, with Suno, Suno AI and a lot of the music companies, you own that software because you're licensing it, basically. Right.
+
+Right. Yeah, I don't, I would assume that's how it works. Because, like, when you create something on VS Code, it's open source.
+
+So, yeah, I don't know. I think a lot of people just watched the last video, and they were like, whoa, this kind of changes everything, you know? If creating a minimal viable product now takes a day, max, I mean, we've done it in an hour or two, the hard part is build distribution, and then just experiment with a bunch of ideas, see what sticks.
+
+Yeah. And then you can make it prettier later, right? Yeah.
+
+Well, yeah, you can make it prettier later. Or, I mean, like, think about how much of startups in the business world is, like, proposing ideas. Even if you don't have the core functionality, now you can just make the pretty parts.
+
+And you can pitch people and send them V0 links. Like, hey, imagine this app. Like, a lot of, you know, if you're working at a company and you're like, hey, I think we should add this feature, you no longer need to send them an email with text.
+
+You can send them exactly what you think it will look like. And you just, you can immediately share your, you can illustrate your ideas a lot easier. Even if you don't want to dive into a cursor and repli, you can still use V0 to share your ideas.
+
+Anj, you want to take us through why we're getting these errors, you think? Yeah. So, we're just getting a lot of errors.
+
+And you can see that the error is being logged here. And I'm going through the same workflow. And I think it should figure out the problem.
+
+I just copy the error. You can click this DevTools button in Replet. And you can paste that in.
+
+And, you know, let's see if we're going to make progress here. It seems like it's unable to work with OpenAI. But we, let me just check our secrets tab and make sure that we have the OpenAI API key.
+
+Yes, we do. Okay. Let's see what's going on.
+
+I'll save all these changes. What if you open the DevTools and it was literally just like, that startup idea sucks. It was just in the error log.
+
+That would be pretty funny. Okay. So, I think we've made some progress.
+
+It's generating. Let's see how long this takes. Shouldn't be too long, right?
+
+It should be like, maybe like. Oh, there we go. Oh.
+
+Oh. Wow. That's what's up.
+
+We can still add comments. We can still like. And this is a startup idea.
+
+And, like, literally, I know how to code. I could have gone in the code and edited it. But all I did was copy-paste the errors that you were getting.
+
+Click here. They saw the whole thing. Saw the errors and copy-pasted them.
+
+That's it. Okay. Now, Ange, it might be useful now to maybe just use the V0 component as a screenshot.
+
+Because we have those green circles, the green check marks in there that I think is going to, like, tie everything together to kind of make it look like a clean list of steps. And once we get that working, then we can adjust the prompt. Like, maybe we make them a little bit shorter.
+
+But I think we're getting there. We've gotten past, I think, the hardest part. Yeah, because someone in the comment section is going to be like, but this app is so ugly, no one would use it.
+
+But, true. But now we have something that's working. And a good foundation.
+
+And now we're going to go paint the walls and make it look nice. Yeah, I mean, like, we started this actual build process 45 minutes ago. And Ange is going slower than we normally go because we're explaining things.
+
+Like, if we were to just heads down build this as fast as we can, like, oh, yeah, yeah. That's so this is V0. This is what we made at the beginning of the podcast.
+
+And he's just going to snag this. You could grab the code as well. I don't know what you think would be the best way to do this, Ange.
+
+Yeah. In our next version of our template, we're going to make it so that you can basically just use this code directly. And we'll show you how to do that and make it, like, make it look exactly like this.
+
+But for now, we're going to just copy the code. And then I'm going to reset this composer because I'm doing a new feature. And I'm going to go back to my template.
+
+And I'm going to be like, OK, so I'll describe what we have. So I want the startup idea card, which displays the startup idea in the home feed to look like following code. And that's all I'm going to say.
+
+And I'm going to be like, do not use this code directly. Purely use it as a reference. The style, the startup idea component.
+
+That is saying you're not you're not looking at the specific text or content. You are just looking at the styling. I always I've gotten screwed over when doing this and it takes the actual content literally and it can break the code.
+
+Do not use the exact content of the code provided. But just the styling. I should give it context of the code base.
+
+So I'm going to or actually it was doing a good job. I'm just going to get it. Keep going.
+
+Or wait a second. Just start it over. Just copy it.
+
+It's hard to get it actually. Yeah, it's hard. Zoom out.
+
+Like command minus or whatever. That's a good idea. Like I go all the way out and just snag it.
+
+That is a good tip until cursor fixes this. This is probably the way to go. So again, I'm going to give it this context and give it code base.
+
+Yeah, the cursor definitely has like just little minor bugs, but I would rather have minor bugs than them not ship new features all the time that are amazing and life changing. And while this is happening, why is cursor better than the competition? I will definitely not be the best person to.
+
+I have never used any of the other competition, but wait, first let's look. This looks pretty solid. Oh, yeah, that's clean.
+
+Is there any responsiveness to when you touch the or click on the check marks? No, there isn't. But I don't think that's obvious.
+
+We can still like and unlike. We can add comments. You guys just want to log into this site and add some startup ideas?
+
+Yeah. Yeah. Why don't you?
+
+Are you going to just post the replit link? Yeah, I'll just send this to you. And you'll have to eventually explain how to eventually get off of replit onto a custom domain.
+
+Yeah, definitely. Oh, yeah. We can do that right after we do this.
+
+Okay. That's the easiest step. Once you deploy.
+
+Deploying can be a challenge, but replit makes it the easiest of all of them. But yeah, it's very easy to add a custom domain. Oh, wow.
+
+Yeah, I see it on my screen. Do you see it, Greg? So, interesting.
+
+I see. So the font is in white, so I don't see it. But I know.
+
+Do you know what I'm talking about? Mine took me. I'm logged in.
+
+Wait, you copied the whole link on JustSent? Yeah, I logged in successfully. And I just added a startup idea.
+
+But when you go to create a post and you write within create a post, the font is white. And so it blends in. So that's just a small visual bug.
+
+Nice. But I've just successfully added a startup idea that I've had for a long time, which is IMDB for creators. So IMDB is obviously a database of Hollywood and celebrities.
+
+But I don't know if that really exists for creators. Where's my Riley Brown page? So I put that in there.
+
+So would each video get a rating? It would just be like a... Just like how IMDB...
+
+Oh, actually, it's a good question. I didn't even think of that. I originally...
+
+Yeah, go ahead. Like, you know, like, think about it. Like, if every video is rated, then you kind of end up with this, like a, you know, a cohesive score.
+
+You know, you can look at all of a director's movies that they have individually, you know? I see. You're trying to do a Rotten Tomatoes for creators.
+
+Oh, yeah, yeah, yeah, yeah. Which what I'm trying to do is, who is Riley Brown? Give me a little description of it.
+
+Maybe his top content, like his top videos, what are my must-see? I don't need to score you because that's just like a bit weird to score people. I don't know how I feel about that.
+
+But that's the idea. I like it. Did you add an idea, Riley?
+
+I'm doing it right now only with AI. So I added a comment to your idea. Greg.
+
+Oh, this is a dope idea. Yeah. Wow, someone has said, someone from the internet, I don't know where, who, how, but someone has commented that they like my idea.
+
+They think it's a dope idea. And so we just got from like nothing to this AI-generated startup idea social media app. Wait, refresh the page and check the comment.
+
+Okay. Yeah. This will not get funded.
+
+Someone else who's anonymous said this will not get funded. And they added a new startup idea. By the way, I kind of love, it's like a feature, not a bug that people are anonymous.
+
+Like it makes it a little more fun and spicy. And maybe it's a feature that you can't see what you're typing. And you just got to send it.
+
+That's true. That's why I made some typos in there. Should we fix the input box, Anj, maybe?
+
+Yeah. I mean, it's, it's fine for me. So I'm not sure what the issue is, but let me just, I can assume that it's probably something to do with dark mode.
+
+But yeah, let's tell cloud that. I'm just going to save my changes here. So, but think about it.
+
+Think about what we've done already. Like realistically, we've only been working on this for an hour. We started 20 minutes in, we were just doing design stuff.
+
+So after one hour, we have a full social media like app, and it's like a community based social media app. You could have all of your community use it right now. You can put in your startup idea and it will generate all the steps or at least an outline of the steps that you need to take.
+
+We can all sign in. We all logged in. We can like and comment on each one.
+
+And I think that's pretty sick. Yeah, sick. Like I remember back in the day, just doing Google login would take months to add to a website.
+
+Now it's one prompt with the template. Yeah. Okay.
+
+Let me save these changes. And let's see. Create post.
+
+Can you guys check if it's been fixed for you? So should we refresh our page? Yeah, just refresh the page.
+
+Yes, it's fixed. Okay. Yeah.
+
+So the background of the site is black for me. Like when I'm viewing it, the content is white. So like the center row is white or the center column, like where the content is, but everything around that is black.
+
+Yeah. So it's probably because dark mode, light mode. So if you change your computer to be in light mode, it'll probably fix it.
+
+Like here, let me just try it right now. So if I put my computer on. Wouldn't it be more effective to just fix the site than to make everyone change to dark mode?
+
+No, no, no. Yeah, I would. I'm just showing you why, I guess, this is happening.
+
+So, you know, I toggled system appearance and changed my background. That's what it looks like for us. Yeah.
+
+So I can do the same. So I can just be like, okay. Wait, did I see on yours, Anj, that it recorded your idea on your profile page?
+
+No, I think this was the social media posts from our previous, when we were building a social, like when we started with a social app. Oh, yeah, yeah, yeah. It was recording those.
+
+But it's not recording the sort of ideas. We do need to fix that. But that's just one prompt.
+
+Like everything here can be one prompt. Like we can, you know, hunker down for another hour and like get that all done if we want to. But yeah, the progress that we've made so far is pretty crazy.
+
+Maybe try and go like five more prompts and see what we can do in five more prompts and put a limitation on it and try and accomplish as much as we can with that. Because I still got to get packed. I'm about to fly to LA.
+
+Today we're about to do a seven day sprint on creating content with cursor and like a full on basics and some other things. It's going to be fun. Oh, yeah.
+
+So the things that come to my head after this, Ange, would be updating a profile picture and then like being able to toggle the and mark the checkboxes as done. And maybe a progress bar. Ooh, that's easy to add actually.
+
+On the card, you should be able to mark them as complete and it'll show you like a percentage bar of how... I think we've done that together. Yeah, we have.
+
+We have. Some components. So do...
+
+Okay. Should only the people who created the idea be able to do that or anyone? Yes.
+
+Yes. Okay. It should definitely...
+
+You should not be able to mark off someone else's to-do list. So I just went to dark mode now and the app looks the same. So if I toggle...
+
+Like you guys should be able to reload the page. Oh, yeah. You should be a white backer now.
+
+It looks great now. Wait, it actually looks real good. The homepage looks clean.
+
+Okay. So I also saved that. Now I'll reset the composer again because we're discussing something completely new.
+
+I think alert people, they use the same composer and that's when they don't get good results because the context gets overwhelmed. But for now we have to reset it. But yeah.
+
+So let's add a feature. I know this might be annoying, but one thing I need to change on this app is calling it social media app. Yeah.
+
+Luckily, that's about the easiest change we can make. Okay. I can't.
+
+I can't let... What do you want it? What do you want it to call it?
+
+What do you want to call it? Startup idea... Startup ideas bank?
+
+Okay. Okay. So here, you don't need to know how to code to do this.
+
+I'll show you, show everyone like an easy way to do this without going into cursor. So for this, these kinds of things, you might not want to eat your prompts up and whatever. So you can search exact text that shows up on the screen.
+
+That's not user generated content. Like none of this stuff will show up because this is all user generated content, but just stuff that's the same for every user. So you can see that there's like some text here that says social media app.
+
+You can just change that. Startup ideas bank. Sure.
+
+And that should instantly reflect. Or you could just ask cursor to do it. Like that would also work.
+
+So do whatever you want. I think, yeah, startup idea community and then just call it sick. Sick.
+
+I don't know. You see that idea on sick last night? I gave it a one star.
+
+Why, Sib doesn't have the same ring to it? No, Sib is startup idea database. I like SID.
+
+SID just sounds like your cousin SID. I think of the sloth from Ice Age, but... Oh, yeah, that's right.
+
+By the way, if you are going to become a senior software composer, you need to get a mechanical keyboard. It's quite literally, you know, step one to becoming a cursor pro. Yes.
+
+And get a good voice. Like I use Talktastic. And so like a lot of these things you can just say with your voice.
+
+It's really fun. There are probably more errors just because you try and go faster. But like it's a lot more fun.
+
+It's a lot more free flowing to just look at your site. And you're like, I want to change this, this, this, and this, and this. And outline it with your voice.
+
+And then it'll make the changes. I post a video on Twitter of me doing it fully. Like every single step with just my voice.
+
+And it was crazy. You get in a deeper flow state when you use your voice. So it made these changes.
+
+And yeah, so the steps aren't showing up. And this is likely, you know, because the data is saved in a different format. Because we can see some of the data showing up and suddenly it's not showing up.
+
+So let's say we create a new post. Hotel for dogs. Hotel for dogs.
+
+And this is something that you get better at, like, as you build more things. And just understand, like, how stuff is working under the hood. But yeah.
+
+Wait, so this is actually really important. If what I'm just talking about right now, I guess I'll let him fix this error. This is something he taught me early on.
+
+And I dealt with it a lot. You see how it's showing up now? Basically, the code that he generated earlier had a specific format.
+
+And once he made the change, right? He's like, now I want to be able to see it like this. And once he made the change, the posts that became before it aren't compatible with that new format.
+
+So, like, my initial instinct would be like, oh, this isn't working. But what really you need to do is just generate another component, which he just did. And now it's compatible.
+
+And it actually is functional and it's working. And so that, definitely remember that because you will run into that guaranteed. And that looks pretty good, honestly.
+
+Yeah. So I can, like, check these off. And, like, if I reload the page, it saves that data.
+
+And you guys should see me checking these off on your side as well. I can see it. Yeah.
+
+I can see it. Right now I'm going to generate. Yeah.
+
+Generate a new one. And while they're generating that, I'll show you, like, how this works in Firebase. So in Firebase.
+
+Wait. Sorry. Like, what?
+
+How cool is this? This is just, this is insane. Yeah.
+
+Let's soak this in for a bit. This is kind of cool. Let's soak us in, you know?
+
+This is incredible. Like, this is a new social behavior that I just think is so interesting. So can you guys check off, like, my idea or not?
+
+I cannot. Okay. Perfect.
+
+So it's working as intended. And that was just one prompt. So it's getting good.
+
+Obviously, the design needs some more work. But, yeah, that's just another prompt. Profile picture upload?
+
+That'd be more fun. Yeah. We can do that.
+
+So accept these changes. It'd be more fun. And then maybe change it to our name.
+
+I think that would be good. That would kind of complete the experience. For this episode's purpose, you know?
+
+Like, we see our faces and have our proper name. I don't know. I don't know if I want my name.
+
+Okay. Well, you can be an on. Yeah.
+
+You can do something crazy. Yeah. All right.
+
+That's fair. You can. I guess that's probably smart.
+
+You haven't signed the terms and agreements of this site. We can do whatever we want with your data. Right.
+
+I'm giving you exactly the idea now is owned by Riley brand. There's a whole, like, agency service business that you can create by just using Cursor, Replet, this template to go and build apps for businesses, too. Yeah.
+
+Yeah. I encourage that. Like, we want.
+
+I want people to make money with the template. I think that's awesome. So, Anja's saying, I want to allow the users to upload profile pictures and for those photos to show up on the home feed.
+
+Make the necessary changes to allow me. And that's a good lesson there. It's like, make the necessary changes to allow me to do blank.
+
+Maybe you don't know how you want it to be designed. But, like, make the changes so that I can do a specific thing. It'll figure it out.
+
+It's definitely a lot less pressure this episode than with the last one when I was worried I wasn't going to create it at the end. Yeah, you were sweating. But you made it happen.
+
+People should definitely go back to that old episode to see Riley sweat a little bit. Because that will be you and your first app. Oh, it'll be probably worse than that.
+
+But you just have to keep pushing through it. It's too much fun. Okay.
+
+So, we got an error. I'm just going to just do the same thing. Just copy the error and paste it.
+
+It is pretty insane how that's how you've solved every error so far, basically. I actually think every error. You might have given a little extra instruction with the error.
+
+But, like, you have not even opened the code. Except for to show the example that you could change the title. Not once.
+
+Yeah, no, I haven't. I really just... Compose it the whole time.
+
+Okay, let's reload this page. Failed to load startup ideas. Oh, yeah.
+
+I see it on my end. Oh, you see the profile picture upload? Yeah.
+
+And you can choose a display name. There is an error there. Oh, I'm getting an error.
+
+Yeah. Yeah. I'm getting an error too.
+
+And my homepage says fail to load startup ideas. So, I am just going to paste these errors in. So, on the homepage, you see there is fail to load startup ideas.
+
+I'm going to click the dev tools again. And, like, you can expand these errors usually. And, like, just copy the relevant message.
+
+So, the UI looks good. There's some errors. Actually, I think the homepage looks very good.
+
+Like, it's a pretty clean site. It's clean. Which is great for an MVP.
+
+It's not, like, the most beautiful website I've ever seen. But it's clean. Yeah.
+
+I mean, we haven't even got to the design yet. We've given one design prompt. That's right.
+
+For the card. Because you've got to focus on the function. As much as you'll want to do the design, like, you just have to remember that, like, without the core functionality, you just have a pretty piece of artwork hanging in your back closet.
+
+No one can actually use it. So, I just gave it the two errors. There was one on the homepage.
+
+And then there was one when I was updating the profile. Did it have to do with permissions for seeing the profile picture on the homepage? No.
+
+I think it just changed some code. So, I just reloaded the homepage. It's loading now.
+
+Yeah. It's loading now. And now let me update my profile.
+
+Okay. So, it's giving this error. Again, I'll copy it.
+
+And I think it's interesting, too. Like, I've noticed a lot of people under a lot of, like, commenting on a lot of videos saying, like, oh, I'm going to wait another year until it gets even easier. And I just think there's a massive opportunity right now, Greg, as you said, to create an agency.
+
+And doing it when it's hard is better. Because by the time creating what we're doing now gets easy, the people who start now are going to be creating even better sites by then. That's right.
+
+Because there's a group of people always pushing the edges of all these new things. Right now, there's not very many people pushing the edges of AI websites, which is where you will find probably the most profitable industries or interesting niches to get into. And so, that would be my advice to anyone who's like, oh, I'm going to wait for this to get a little bit easier.
+
+Which it will. Okay. Wow.
+
+I just uploaded my profile picture. Yep. It should show up on the profile.
+
+Well, let's see. Maybe you have to create a new post for this to show up on the posts. Still not showing up.
+
+On the homepage? As a comment, it doesn't. Is it only for the post?
+
+Oh, I didn't tell it to do it for the comments. So, I don't know if I'll be able to figure that out. But I can.
+
+No, it's okay. On handle, I just tried to create a post runtime error. Yeah, I saw that.
+
+We can solve that. If you just reload your page, it should go away for now. But we can, again, it's just, you can copy that, paste that in, and it should be good.
+
+Love how we're just cooking with the boys. You're muted, Riley. But in my head, I imagine you said something really witty with cooking.
+
+No, I said it's really fun. It's very fun to get, like, to just ideate and just, like, throw things out there, especially if you don't, like, not every time when you make something, there's urgency to create something quickly. Like, it's an art form.
+
+It's fun to be creative and just vibe out and make something fun. And so we'll definitely do that in the community, too, just to, like, hang out and make fun apps. It's also very rewarding to use your own tools, I've found.
+
+Like, my Notes app that I use is, like, my own little Notes app, and it does only what I want it to. It doesn't do anything else. Like, what does it do?
+
+What are things that? I just like, I like the way it looks. It was the first app that I've created.
+
+It has, like, built-in AI features. It has a voice app, like a voice recorder, which I'm huge on. I love voice recorders recording stuff.
+
+Still not popping up. No, it's not using my profile photo. So, okay, I'm going to reset this, and I'm going to tell it from scratch.
+
+Could it be a storage rule thing? I've set permissive storage rules. I think it's uploading the photo.
+
+I can check. Let me just check. And Firebase is owned by Google, right?
+
+Yes, Google Firebase. Firebase.google.com. We're going to be using another alternative for the next one.
+
+It's a little bit different, and it's more visual. It's called Supabase or Supabase. I don't know how to pronounce it.
+
+Yeah, it's not because of that. It's basically trying to get the wrong data. And, yeah, using Supabase would definitely help with this because our data organization is gotten a little messy because we started with the social app and then modified it.
+
+We're going to be able to fix that a little bit. But it should be able to fix this in a couple prompts just going through that. Yeah, should we do that or something else?
+
+I would say if we can get it in two prompts, we should just do it and call it good, and that would kind of complete the app. I feel like just from a visual standpoint, it would be a nice ending to the video. Totally.
+
+It gives us that clean payoff at the end that I think we got last episode. But this is much more difficult. They said we couldn't do it.
+
+They said we couldn't create a social media app in under two hours. But we did it. Yeah.
+
+Greg, what do you want to build? When you see this, do you have any projects in your head? You're like, you know what?
+
+If I dive super deep into this, the first thing I want to create is? Yeah. So I actually tweeted something when I was thinking about you and this when I was tweeting it.
+
+I said, how do you build startups in 2024? Step one, tweet about it. If it gets love, create a video about it.
+
+If it gets love, create a lead magnet about it. If it gets love, create a private membership slash community about it. If it gets love, create a SaaS slash agency slash software out of it.
+
+If it gets love, hire yourself out of it. If it continues to scale, you can retire or just do it all again. And I think I'm going to post on Twitter, post a video, see what gets traction and then just be like, hey, I've got a fun Saturday.
+
+I've got a Saturday afternoon. I can go tinker on something and just put stuff out there. Not be afraid to put stuff out there and treat putting out software almost as if it's like putting out a tweet.
+
+Yes. Yeah, I love that. And you just continue down the process.
+
+If you're like, all right, we have critical mass. Like, let's just build this into a bigger app. I love that mentality.
+
+Yeah. That's super cool. Because, like, I think there's going to be platforms built for this.
+
+Like, where it'll be like a sandbox thing where it'll be like the TikTok of applications where you can, like, create a little environment and you scroll through them, find ones that you like. Because it's going to be so easy to create little web experiences. I think that would be really fun.
+
+Yeah. And people will be able to just remix other people's ideas. Because.
+
+Yes. The same way they remix TikTok. That's right.
+
+Or TikToks or retweets or quoted tweets. It's a lot like, it's like a way more efficient and user friendly GitHub. Kind of.
+
+Yeah. Like, way more simplified. Should we try and upload another one, Ange?
+
+Yeah. I think that might be good. And this is good.
+
+Like, this is realistic. You end up, you might get stuck on one annoying thing for longer than you want to. Yeah.
+
+You might and will. And that's okay. Yeah.
+
+It's fine. Yeah, you definitely will. Yeah.
+
+It wouldn't be fine if you didn't have, essentially, these assistants that you can ping at any time. So, they're there for you. Okay.
+
+It's going down a bad rabbit hole here. So, I'm just going to reset this. It's good.
+
+Like, this will happen. Like, it's probably, like, the worst case scenario. You can just discard all the changes that you made.
+
+And you should attempt to try again. Just because, you know, it was just breaking things further and further. You don't want that to happen.
+
+And so, you should probably just start from scratch and give it an idea. Yeah. And what we can do if we run out of time is, just like last time, you know, like, when we have time to throw on some extra things, like, we can very easily add some features to this and make it look super clean.
+
+It's just, you know, like, we've only been doing this for 90 minutes. Did you do a screenshot on the last one, Ange? No, I did not.
+
+I wonder if that would help. Yeah. I don't think so.
+
+Just because the issue was it was just storing the data weirdly. And this is what's cool about, like, finding other people who are also doing this. And, like, it's fun to kind of follow along.
+
+I actually learn a lot when I follow along when other people are driving and you just, you're exposed to different types of errors. It will help you solve them faster in the future when you run into the same problems. 100%.
+
+Same thing with any skill. Yeah. Totally.
+
+I think it's being with other people, looking over and seeing, you know, what are they doing? Oh, how do you do that? I think it's watching content like this and with people who just, like, are live cooking and taking notes.
+
+That's what you have to do. And then it's also just making it a habit. Like, you know, this is something that you need to practice every day.
+
+If you want to get great. Yeah, like, Mr. Beast talked about it.
+
+He famously talked about that over and over again. He's like, he surrounded himself with people as obsessed as he was. And that's all they did every day.
+
+Totally. And you'll get better. You'll learn from other people's mistakes.
+
+Screen of red. That's fine. You know, it's...
+
+Yeah, people want to get in your head. So it's interesting to see how you approach it. Yeah, I'm curious as to what you think the error is more specifically.
+
+I'm curious, actually. Because I've also run into a lot of problems with images. Images can be annoying.
+
+It's just like how the data is being uploaded and accessed is weird. So we have this... We have Firebase.
+
+And you can see over here, like, the photo URL was being uploaded. Like, if I copy this URL and I go to it, this was the image that I uploaded. So it works.
+
+You know, the uploading works. It's just accessing it is a bit weird. The reason why I think the app is just getting confused on...
+
+How and where to get the profile photo from the user. And so this is also something that we're going to update our template with. But it's just, like, show people how, you know, how defining the data that your app has before you start building it is a better way to not face these errors when you're going through it.
+
+So, like, creating a prevention prior to even building out the app. Like, as it's building out the app, originally, it'll have that in mind. It'll make it easier to access the data when it needs it.
+
+Yeah. I mean, if you can, like, have... Like, I think this is why I think Superbase would be useful, like you were saying, Riley.
+
+Which is, like, you can have, like, a strict... Basically, like, a Google Sheet of your data. And then know exactly what to use when.
+
+That's kind of the issue that's happening right now. It's just, it's getting confused with that. And it's throwing a lot of errors.
+
+Yeah. It's also easier to just... Based on the...
+
+I watched two long videos on Subabase. But it basically... Have you ever used Notion, Greg?
+
+Like... Yeah. Our whole company ran Notion.
+
+Yeah. So, like, basically, I have a lot of experience with Notion. I ran a previous company out of Notion.
+
+And learning Notion, if you understand Notion, it makes this process a lot easier. Because I just think of a website as just a giant Notion wrapper. Because, like, on Notion, you can add new columns, which are just new fields, basically.
+
+And they can be either a dropdown, a to-do list. You can upload files. And it makes it super easy to picture the data.
+
+But Subabase is the only one that actually has... It shows... It's in table format.
+
+And so, like, it makes it super easy to picture, like, what pieces of data would be on one of these cards right here. Like, which is just the same as Notion. And, like, Notion has, like, their calendar feature, I think, is their best feature that they have.
+
+Where, like, you can put in a due date. And then you can switch it to calendar view and see when they're due. And you can also do that on a website if you set up your table the same way.
+
+Right. Yeah. So this is clearly getting confused with what's going on.
+
+So I'm just going to reject all the changes because we didn't make any that were useful. And... What's going through your mind right now?
+
+In terms of... Now, I think it might be... Like, how the data is being displayed on the profile page.
+
+It works. But when you go to the homepage, it's not working. So clearly, there is something that's, like...
+
+Something that the AI is not doing correctly. And I'm just trying to figure out how to give it context to do that correctly. So maybe I'll be more specific.
+
+You know, I'll be, like, going to the profile tab. And I'll give it the exact file, which is profile page. Which shows me the current profile picture that I have for my user correctly.
+
+I want the same profile picture shown in the comments under a startup idea. In startup idea. Yeah.
+
+Make the necessary changes to show profile pictures next to comments under a startup. I'll give it the whole code base as well. Yeah.
+
+After... I actually... Yeah.
+
+I start, like, reiterating things a lot more once you get into these failure loops. And it's really good. The cadence he has right now where it's, like, he tries four or five times.
+
+He scraps the changes. Starts again from, like, a slightly different strategy. And, like, yeah.
+
+Every single time you want to be more... I get more aggressive and longer. And sometimes it can get me out of it.
+
+Like, I probably would have stressed it. I probably would have done, like, four sentences. I'm like, just to reiterate.
+
+The... Every single profile picture should be connected to that profile everywhere that profile comes up. So, whether it's in the comments.
+
+Whether it is a post. Whether it's a startup idea post. One other thing that I'm thinking about is that it might be getting confused about posts.
+
+The fact that there are startup ideas when the template is built for a social media app. So, it's, like, is it getting that mixed up between a startup idea and a post? I actually ran into the same issue when I was creating the last one, Greg, where I...
+
+You know, this... It started out with sip or spit. And then I changed it to pin or drop.
+
+But the page was still slash sips. So, that was a huge issue for me. And then once I fixed that error, then it got easier.
+
+But, like, I wasted an hour on that. So, sometimes the naming can become an issue. I'm not saying that's the issue now.
+
+But just kind of going through some common problems I've run into. Right. No, that's a good tip.
+
+Yeah. Okay. So, the new comments now have profile pictures.
+
+It was just the old comments that were not showing it. So, yeah. So, we should all create new posts.
+
+Yeah. Create a new post and... Or a new comment under the post.
+
+But, yeah. They should have the profile pictures. Okay.
+
+Okay. So, it finally got it right with this prompt. It took a while.
+
+But, yeah. It got it. And I didn't have to manually go in.
+
+I was like, oh, no. Now is the time. But it didn't.
+
+Cool. There we go. Thank you.
+
+I was going to say we did it. But you did it. Thank you.
+
+I appreciate it. I don't think you realize... You know, our last video, I'd had hundreds and hundreds of comments of people being like, wow.
+
+I'm so excited to build things. And I think people are going to watch this. And they're going to be builders.
+
+So, thanks for inspiring them. Yeah, dude. I'm excited to see what people create.
+
+Hell, yeah. So, a couple to-dos if you've made it this far in the episode. One is go to...
+
+What's the URL? Senior Swiss. Senior SWC.com.
+
+It's Senior Software Composer. And there you'll find a link to the community. We opened up seven days ago.
+
+And we're at like 2,200 members. Cool. And yeah, it's going to be a lot of fun.
+
+We're going to... I'm going to LA tomorrow. And we're going to work on a lot more basics educational content.
+
+Right now, we've been making a lot of content, like wow type content. You can create a website in X amount of time. But we're going to bring it down to the basics and go slower.
+
+Because a lot of people are a little bit more confused. But we're going to bring people all the way through the process. I want everyone to create and deploy a web app that they love.
+
+It's a really fun experience. Beautiful. So, that's one thing you could do.
+
+And then the second thing is just... We'll be in the comment section here. So, just comment if you enjoyed this.
+
+If you've got your brain thinking, if you have any questions. And I respond to almost every comment. So, go ahead and feel free to comment.
+
+And then the third thing is, of course, you're going to want to like this video. So, you get more videos like this in your feed. And then you're going to want to subscribe to the YouTube channel.
+
+I just do these videos for fun. I bring smart people here. And if you like startup ideas, you're going to want to subscribe.
+
+And sign up to gregeisenberg.com where I send my weekly email with free startup ideas. So, you can go ahead and do that if you thought this was cool. Boys, it's been fun cooking and being in the kitchen with you.
+
+I feel like I'm with the Anthony Bourdain's of this whole new cursor and replete world. So, it's an honor being here. And I hope to see you soon.
+
+Oh, well, thanks for having us. Later, guys. Yep.
+
+Peace.

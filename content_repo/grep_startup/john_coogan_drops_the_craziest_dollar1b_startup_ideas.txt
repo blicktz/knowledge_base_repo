@@ -1,0 +1,387 @@
+This episode was crazy. It was with John Coogan and he had some of the biggest ideas I've heard all year. These moonshot companies, it's either going to be like a billion dollar business or you're going to have literally lit a billion dollars of other people with money on fire.
+
+It just seems like the bar to colonizing the moon is like orders of magnitude lower than Mars. And so the question is like, who's going to build this? I think that there will be a startup that will take one of these humanoid robots, give it an AR-15, like a machine gun or a rifle.
+
+And I said, oh, and then they're going to raise like a $500 million seed round. This isn't your normal startup ideas podcast episode. This isn't going to be about how you can create a startup that makes a million dollars next year.
+
+It's all about big ideas. I think it's going to expand your mind. I think you're going to enjoy it.
+
+You will enjoy it. Enjoy the episode. John Coogan on the pod.
+
+Mr. Big ideas. That's what I'm going to call you.
+
+Not that big of ideas, but there's a fine line between big idea and just hot take shitpost. And I think today we're going to hit some of them that are complete meme companies. Some of them that maybe could be good.
+
+It's going to be on the listener and the viewer to decide which of these ideas are actually good and which are purely viral fodder for the media. All right. So where do we start?
+
+Let's start with cybersecurity for artificial intelligence companies. So if you have been following AI, there's been this interesting development. Obviously, a lot of people right now are thinking about how can I use AI to build a new app or a new company?
+
+And the obvious thing would be putting AI in your cybersecurity layer. So there's an incident report that goes out, Hey, we got this user alert that someone is trying to log in like 10,000 times with different passwords. We should probably block them.
+
+Now, obviously you could have an AI, you know, intermediate that interaction such that that's handled automatically. Instead of pinging your poor software developer at 2 a.m., he has to get up, check his pager and say, Oh yeah, we should block that person. We're getting, we're getting DDoS by Russia.
+
+Let's let those turn them off. Let's block that IP address. Obviously a lot of people have thought about implementing artificial intelligence in part of the cybersecurity stack in order to beef up the existing cybersecurity solutions for all sorts of companies, everything from Bank of America to Boeing to, you know, United Airlines.
+
+They all need cybersecurity and every cybersecurity company knows AI can make their job easier. So they're implementing this. What I'm talking about is doing the flip side, building a cybersecurity firm that's specifically designed to secure the now highest value digital assets in the world, maybe next to crypto and Bitcoin.
+
+Like if there's a whole bunch of Bitcoin, that's really valuable. But other than that, the next most valuable digital asset has to be the weights to these large language models. So, so open AI it's rumored that they spent around $500 million training GPT for now all of those weights, like once the GPUs go off and train the model, it all gets boiled down into these weights.
+
+It's just numbers in a file. Essentially it's in a very large database, but you know, you could steal this. And there's a lot of fear mongering and conspiracy theories in Silicon Valley right now to the effect that, oh, China has already stolen the weights to GPT-4.
+
+Maybe they already have stolen the weights to GPT-5. Who knows if it's real? I actually think that most of these labs are pretty secure, but it goes without saying that these are going to be increasingly valuable targets for hackers to break into and steal.
+
+And so figuring out how to protect a digital asset like it's Fort Knox seems like something that's going to be a new and ongoing challenge for the artificial intelligence industry broadly. Now this is different from in past generations of tech, because if you stole the code base to Facebook and you were like, okay, I have all the code to Facebook. I'm going to launch facebook2.com.
+
+Well, you don't have any of the users. People aren't going to your website. It's not valuable, but with the large language model weights, once you get the model, you can run that anywhere.
+
+You can stick that anywhere. You can wrap that into your own product. And all of a sudden you're not paying open AI or Anthropic if you're able to steal the weights.
+
+And so these firms are going to need top tier cybersecurity. They already do. A lot of these guys, they go to DEF CON, they talk to all the hackers, they have huge, huge, you know, resources allocated to this, but it's just going to become an ongoing problem.
+
+And I think that there might be a new opportunity to figure out, to build a new company around securing these extremely, extremely valuable digital assets, which are the AI models. And so I think that there's a, in many ways, this is, you know, it's not an entirely novel problem. But if you look at what happened in crypto for a long time, there were, there were kind of two things that were really valuable.
+
+There was like Bitcoin, which was kind of like sticking around forever. And then there's this company called Chainalysis. Did you ever see this?
+
+So Chainalysis was a company that they didn't have a token. It wasn't a crypto company. They did the analysis to find like the fraudsters.
+
+And they were like super downstream of the actual like cryptocurrency. But that company, even when you talk to the most diehard crypto hater, they'd be like, Oh, well, yeah, Chainalysis is probably like a good company because their cashflow is like independent of the underlying token prices, because they're just getting paid to hunt down the criminals. And so I think there's something, there's something interesting and uncorrelated about doing cybersecurity for artificial intelligence companies where you could be indexed to the growth of artificial intelligence without directly needing, you know, some next benchmark to hit.
+
+And, and, and you're not going to be in a situation where, Oh, all of a sudden, you know, Oh, you got obsoleted by, you know, a, like, like a current company. So anyway, that's my first take. Don't tell anyone, but I've got 30 plus startup ideas that could make you millions and I'm giving them away for free.
+
+These aren't just random guesses. They're validated concepts from entrepreneurs who've built a hundred million dollars plus businesses. I've compiled them into a one simple database compiled from hundreds of conversations I've had on my podcast.
+
+But the main thing is most of these ideas don't need a single investor. Some costs nothing to start. I'm pretty much handing you a cheat sheet.
+
+The idea bank is your startup shortcut. Just click below to get access. Your next cash flowing business is waiting for you.
+
+The cybersecurity for AI companies. Greg, what do you think about it? So I like the idea, but where my mind goes to is what is an insurance company for AI look like, right?
+
+I actually never thought about the insurance business until I was watching Warren Buffett at the Berkshire Hathaway annual meeting. He said something that stuck with me, which is insurance is a great business. Someone's like, why?
+
+He goes, you get paid today for something that might not happen tomorrow. That's great. Yeah.
+
+I thought that was a really good way of putting it. So I wonder, using the Fort Knox analogy of gold, if I'm trying to MVP this, maybe an MVP is you just get in the insurance business and then eventually evolve into what you're talking about. Yeah.
+
+You know, with the, this is, this is somewhat related, but with the generative AI that's kind of dominating the performance ad market right now, you know, AI generated ads, ads generally across Facebook are already being optimized and chosen through artificial intelligence. But increasingly the, the text will be generated on the fly per user and a brand will just kind of show up with like, Hey, here's my product, do your best to portray it in the great light. And Facebook is going to wind up generating video imagery, everything for your brand.
+
+Ultimately it's generative AI is really going to transform digital advertising. But a lot of the big companies and big brands are super nervous about turning their brand over to a generative AI model that is known to have flaws and get things wrong occasionally. And so for those folks, like the small and medium businesses, the SMBs, they will just go for it because it doesn't matter if they, if their brand gets, you know, misconstrued in some AI hallucination because they just need performance.
+
+They just need to grow the top line. But for a really established brand, they don't want to take that risk. So maybe you could wedge in somewhere there, like sell to the CMO of Coca-Cola and say, Hey, we know that you're going to be using generative AI tools.
+
+If there is some sort of backlash to a generative AI campaign that you run, we will foot the bill to do all the brand correction to get you back on track. That could be interesting because those, those big brands are going to be like the last ones. They're going to be the laggards in terms of adopting this technology.
+
+A hundred percent. But yeah, you know, when I hear an idea like you have here, it's like, this to me is, I'm almost certain that this will exist and there'll be a big company, but I'm just, I always just think about like, okay, what is the, what are the, what are the wedges? Like, what are the hundred wedges?
+
+And like starting to write that down on a list. And then how do you prioritize the wedge such that who, you know, me or whoever's listening is best suited to do that wedge. Yeah.
+
+And also it's easy, easy ish to, to, to build that wedge. Yeah. I mean, with, with this particular idea, like obviously you need, you know, like rock solid cybersecurity chops in terms of the actual technical skill of your team.
+
+And then you also need insane B2B connections to be able to go and sell this. So it's not for everyone. This is not something like, you know, some college dropout kids going to build in their free time.
+
+Maybe they will, maybe they'll be able to put it together. But you know, I, I would assume that this is going to be something that comes out of like the current industry. Somebody that, somebody that already has a lot of rapport and connections and can really like know exactly what product to build immediately.
+
+A hundred percent. You've got, you've got a few ideas. So we've got a lot to talk about.
+
+Yeah. Let's do number two. What was number two?
+
+Oh, number two was the moon shot. So I have thought for a long time, I mean, I want to go to the moon. I think most people want to go to the moon.
+
+My son certainly wants to go to the moon. Like every kid wants to go to the moon, but there's always a question of like, how do we actually get there? We've been there 1969.
+
+You know, that's a long time ago at this point and we're going back. So SpaceX is going to have the capacity to go to the moon and put humans there. But Elon is, has never been really focused on the moon.
+
+He's super focused on getting to Mars. He wants to make humanity interplanetary. And the, and the problem with Mars is that there's only a small window of time when you can actually launch a mission from earth to Mars, because the planets, if they're on the opposite side of the solar system, like it would just take forever to get there.
+
+So you need to wait for them to kind of line up like next to each other. And that only happens every like two and a half, maybe three years. And so there's going to be this very slow iteration where when the next transfer window comes up, SpaceX is going to definitely try and launch a rocket to get there, but it'll probably just be like robots.
+
+And then the next one, they're going to launch like 10 rockets during that window. Cause they're going to have like three years. So it's not like going to low earth orbit where they can just launch a new rocket every single day, like they're doing now for the Starlink satellites.
+
+So it's going to be, it's going to be a longer process, but I really think that just, if we're going to get to Mars, humanity needs to start getting their reps in on the moon. And the beauty of the moon is that a, it's really close. You can always get to it and you can always get back from it because if you plant an, like an emergency escape pod on the moon, as long as you're on the earth facing side, the moon is locked in orbit.
+
+So it always faces earth. So it's never, it's never the situation that you're like, oh, my escape pod is pointing at the sun and it's not pointing at earth. Like it's always pointing at earth.
+
+So worst case scenario, you know, like a, this is kind of silly, but like sci-fi scenario, like there's a crack in my space suit helmet. You could literally just dive into your escape pod, smash the big red button and it shoots you back to earth. And you're back in the Pacific ocean in like, you know, a couple hours or I don't know how long it takes, but like, you know, not long guaranteed to be there.
+
+Now, worst case scenario, like you landed North Korea or something, but for the most part, like at least you're back on earth. And maybe there's a little bit of steering that can try and get you to somewhere that's a little bit friendlier, but it just seems like the bar to colonizing the moon is like orders of magnitude lower than, than, than Mars. And so the question is like, who's going to build this?
+
+Like 20 ish, 10, 10 to 20 years ago, there was a guy named Bar, Barney Pell, who still was, made a lot of money in the.com boom and started a company called moon express that was kind of targeting this idea of like, let's go do stuff on the moon. And I think he was just a little bit too early. He was really well-funded, really talented guy, obviously, but he couldn't get it done.
+
+But now there's this interesting period where space X will have the capacity and we will know the price. And there's been a number of companies that have gotten up and running on the basis of space X is falling launch costs to, to low earth orbit. So there's two examples that I think of one is Varda.
+
+They do drug manufacturing in space. So in low earth orbit, there's no gravity. And so if you're trying to make a drug and it's crystallizing, if you can turn off the gravity that can produce higher yields and better drugs essentially.
+
+So it's a pharmaceutical play, but leveraging space, space X, and it'd be impossible without space X. And the same thing goes for impulse impulse space by Tom Mueller, the first employee at space X. He is building a company that boosts creating a boost vehicle that gets, gets material from low earth orbit to geosynchronous orbit.
+
+And so that is another company that wouldn't exist without space X. And so I think there will be a series of these companies and for the really, really big opportunities, it's totally possible that space X like takes it for their, for themselves. Like space X launches a lot of internet satellites.
+
+Um, but when the really big opportunity of star link came about, which is low earth orbit satellites in this mesh, it was obviously going to be just way better performance. You know, you can now do zoom calls or podcasts like on planes. It's crazy.
+
+Uh, and really anywhere, uh, they kind of took that for themselves. So I wouldn't, I wouldn't want to compete with space X on that. Um, but if I think about, you know, moon tourism or some sort of like moon mining operation, or even just some, you know, contracting, uh, organization that, that puts assets on the moon for some other reason, getting like, what if your business is like, we're just going to get food assets or air or water to the moon.
+
+And we're just going to build that up so that if space X wants to buy some of it, we have it on the moon or NASA wants some of it. We have it on the moon and that's what our business is. And we're just really good at understanding the economics of, of space X's current cost to get a kilo to the moon.
+
+And we are really good at just taking like, if it costs a hundred thousand dollars a kilo or a million dollars a kilo, or it doesn't matter. We have figured out what the right thing is to do right now. And I don't know the sequence of events.
+
+It might be, you want to put a nuclear reactor there first or something or solar panel, or I don't know, robot who knows, but figuring that out. And then just being the company that just does that again and again, and again, uh, just puts you in a really cool place. I just think like we might be, it might be the right time we like, we might be, it sounds crazy and it sounds early, but at the same time, like the Artemis mission is happening.
+
+Humans are going to be on the moon. And I think when that happens and we see like, we're going to see like HD video of humans walking on the moon in like a couple of years. And that's going to be crazy.
+
+Cause like, all we have is the really grainy footage from the sixties that like no one believes anymore. And everyone thinks it's a conspiracy theory and like, it's going to happen again. And it's going to be undeniable because it's going to be like live streamed and there, and there's going to be people on the moon.
+
+I'm sure people will be like, it's fake. Uh, it's not real, but it will be real. And most people will like wake up.
+
+And then I think the financial community will wake up. Engineers will wake up. Everyone will wake up and say like, I want to be doing stuff on the moon.
+
+Just like, you know, five, six years ago, people were, or even 10 years ago, people were like, well, the SpaceX thing is working now. Like I want to do something in low earth orbit. And whether that's a satellite or imagery planet labs, planet labs just takes photos of the earth constantly.
+
+And then they can sell that data to all sorts of different resources like hedge funds or weather companies. There's a whole bunch of things that are valuable there. The question is like, what is the planet labs of the moon?
+
+What is the Varda of the moon? I think that that becomes a really, really interesting question. And so I don't really have a firm conception, but I just think like now is the time to start thinking.
+
+God, this is like, this is why I brought you on, you know, when, when we do this show, we have a lot of ideas are around, you know, $1 million a year, 10 million, $100 million a year moonshots talking about the moon isn't, you know, in our normal repertoire. Um, and it's just reminds me of like, it's important to have people like you in, in, in, it's important to have people listen to people like you because, um, if you listen to the, like the, here's an idea to build like a quick AI app to make you a million dollars, you get sucked into that world. And that might be thinking too small.
+
+It might be. It just depends on like who you are and what you want to be doing with your life. Like there's, there's, it's totally valid to be like, I want to build a lifestyle business or I want to build a big business or I want to build something really slow or, you know, I want to have full control and not raise like, all these things are valid.
+
+I just think like, you know, for the right person out there, there's probably someone who's like, yeah, you know what? I have been obsessed with the moon when I was five years old and I have some skills that are relevant here. Like, why don't I just go after this?
+
+And then I can always build a million dollar business later. Uh, you know, but yeah, I mean these moonshot companies, like it's either going to be like a billion dollar business or you're going to have literally lit a billion dollars of other people with money on fire and, and it's going to be a disaster. Hopefully it's not like a fraud and you actually just spent it on important things and it just like didn't go well, which happens all the time and that's fine.
+
+Everyone signs up for that. But, uh, but yeah, I mean, um, I do think that there are lots of people who, who are, who like they lose a little bit of that, you know, childlike wonder. And if your childhood was all about, you know, doing something really ambitious or like at least give it a shot, you know, like why, why not try and get the first thing done, build the pitch deck, raise the money, go hire some people, figure out the next thing.
+
+I mean, a lot of people are doing this like post liquidity. Like there's, there's the, the, the Robin Hood, the co-founder of Robin Hood, the trading app became very, very wealthy. I mean, that's a multi-billion dollar business and he, and he's always obsessed with space.
+
+And so he's doing solar panels in space and then, uh, capturing the energy and then beaming it down to earth with a laser. Now I haven't looked into the numbers. I have no idea if this will work.
+
+It sounds crazy to me. Who knows? But like, it's super cool.
+
+And I'm glad he's doing that instead of just like buying another yacht or something, you know, like go for it, like do something cool. Why not? Totally.
+
+And that's why I wanted to bring you on. Like I brought you on because some people are going to be listening to this and be like, like this guy is crazy and, and some people are going to be like, I need more people like John in my life, either, you know, just like listening to you or getting to know you because I think, um, it helps people kind of figure out what they want and how they want to spend their time. Um, and it's good to have diverse sort of, um, people to, you know, what?
+
+Yeah. Yeah. That diverse from a thinking perspective, you know?
+
+Yeah, yeah, yeah, no, I get you. Uh, well, the next one is a little bit more tactical and a little bit less of a moon shot. I think that this could be, it'd be hard to make this next one a true lifestyle business, uh, because it is pretty capital intensive, but I do think that there's a way to make, to de-risk this to the point where you're pretty much guaranteed to make money.
+
+Um, and so, so I'll, I'll walk through it and then I'll give some examples of other companies that I think kind of fit into this, this narrative. Um, so one common problem that, um, I was actually just talking to a kid, uh, who's younger, who said like his parents really didn't want him to become an iPad kid. And so they got him this locked down Kindle fire that was just for reading eBooks, but then he learned how to code and learned how to hack it so that he could play clash of clans on it.
+
+And it was just a very funny story and it actually taught him how to code. And now he's like a software developer and a founder. And it was like a great experience.
+
+Um, instead of just having the, the dopamine fed straight into him. But I think that it's a very common theme that everyone feels addicted to their phones. Um, but adults really can't go back to the dumb phone.
+
+It's just too much of a shift. And so a lot of the like dumb phone companies haven't done all that well, but I think that there's a bigger opportunity to go after, uh, the kid's phone. Quick ad break.
+
+Let me tell you about a business I invested in. It's called boring marketing.com. So a few years ago, I met this group of people that were some of the best SEO experts in the world.
+
+They were behind getting some of the biggest companies found on Google. And the secret sauce is they've got a set of technology and AI that could help you outrank your competition. So for my own businesses, I wanted that.
+
+I didn't want to have to rely on Mark Zuckerberg. I didn't want to depend on ads to drive customers to my businesses. I wanted to rank high in Google.
+
+That's why I like SEO. And that's why I use boring marketing.com. And that's why I invested in it.
+
+They're so confident in their approach that they offer a 30 day sprint with a hundred percent money back guarantee. Who does that nowadays? So check it out.
+
+Highly recommend boring marketing.com. And so I was, I was kind of jokingly call this like, you know, the iPhone, what comes after I, well, it's J and then it's K, K phone, maybe it's the kid's phone, but then you could, uh, you know, broaden it out. But when I, when I heard the reviews of a lot of these AI hardware companies, like the humane AI pin or, or the rabbit R one, um, a lot of the reviews kept coming back to the fact that these, you know, there were a lot of problems.
+
+Like they weren't as full featured for like a power user who wants like the right answer every single time. But for, as a cute little device for a kid to carry around, I love the idea of a rabbit R one going into, you know, a six year old's hands. And it's like, well, what does it need to do?
+
+Well, it needs to like take a picture of a flower and tell the kid what flower that is. And if it gets it wrong, like it's not that big of a deal because like they still learned about some flower or some animal. And then it needs to be able to like, you know, make an emergency call to, to, to family, let the family know where the kid is, but it doesn't need to be able to install clash of clans or fortnight or Minecraft or any of this stuff.
+
+It just needs to do like a few basic things. Maybe it could be a watch form factor. Maybe it's a tablet thing.
+
+Maybe it's another device, but you're just deliberately curtailing the dopamine fueled infinite scroll apps and not allowing those onto the platform. And I think parents would buy this earlier. I think parents will eventually be beaten down by teenagers and just wind up buying iPhones.
+
+But for the middle schoolers, I think a lot of parents would be happy to buy something that's like, you know, decent quality, kind of ruggedized, kind of fun, cool style. It doesn't look like an Apple product. It doesn't look like a status symbol, a couple hundred bucks, basic features.
+
+And it's something that can maybe help the kid with homework or questions or learn about the world, keep them connected a little bit, but not overwhelm them with the dopamine fueled apps. And I think that for these hardware companies, they, they always run into this problem where, I mean, this was case study with humane where it's X Apple people. And so all their investors are like, you have to beat Apple.
+
+And it's like, Apple's a multi trillion dollar company. Like you have to full send it at that point. And so they made a lot of decisions that only make sense if you are fundamentally rejecting the idea that Apple just has a monopoly on a lot of things in the mobile device world.
+
+And so the humane AI pin, it had a separate phone number. It wouldn't, it wouldn't interact with your phone because they were like, oh, well, we don't want to link into the phone because then Apple will have control over us. We want to make the new platform.
+
+And you see this a lot with like the Oculus device that Zuck's been working on. Like it's always kind of clunky because it's like, wait, why doesn't this just pair with my iPhone? Because like my iPhone's great, but it's like, yeah, we can't because he needs to go to war with Apple.
+
+Like he does not want to lose. And so, but, but for this, it wouldn't really matter if it like was set up through the, the, the parent's phone or whatever, because you're, you're not trying to do this crazy thing where like you need to get the 30% app store fee and you need to own the, the relationship forever. And you also need the, the, the device metrics and you need the tracking and the ads network.
+
+And you need all these things like, cause maybe with this one, you're not immediately targeting a trillion dollar business. You're just thinking like, okay, I'm going to put this on Instagram, advertise it to parents. And every time that there's like a new school year, right at summer and maybe Christmas, I'm doing a big push and then yeah, I'm going to sell like a hundred thousand units for a hundred bucks each or something.
+
+That's $10 million. Like this is a pretty sizable business, but it's not going to be hyper scale. And then, and then over time, maybe you do iterations, maybe you add features and maybe this does turn out to be a way to attack Apple and really take part of their market share, because maybe eventually people do get sick of the crazy phones with all the addictive apps and stuff.
+
+But I don't think you need to have that happen in order to be successful. So you don't need to raise quite as much money. You don't need to go quite as crazy.
+
+And I think you can constantly be counter positioned against Apple with like really quirky designs, just stuff that completely breaks their design language. And so that's a huge, where if they tried to launch something like what you're making, it would be very weird and antithetical to their brand. They've done this before with, with the tile app, which was a little tracker, a little Bluetooth tracker that you put on your keys.
+
+That business was doing phenomenally because everyone, no one wants to lose their keys. But the problem was, is that then Apple saw and they were like, Oh, we want that money. And so they launched the air tag and the tile is like the square white.
+
+It looks like an Apple product. And so the air tag is circular and white. It looks like an Apple product.
+
+And so all the tile customers just moved over immediately. The same thing happened with the pebble watch. It was, it was designed with like an Apple brand language.
+
+So it was very easy to just like, be like, well, I'll just get an Apple watch. Um, but if you, if you design something that is, is explicitly like anti apple from the ground up, they're going to have a harder time being like, well, actually the Apple brand is like sleek, titanium. And it's also like quirky pink plastic with a bunch of ruggedized stuff on it.
+
+Like it'll be a little bit harder for them to make that pitch. And then they're also never going to be in a situation where they, where Apple says, Hey, we're launching a device and we deliberately nerfed it. So it doesn't have an app store and you can't install Tik Tok or Roblox.
+
+Like they're just never going to do that. And so you have this like kind of counter position value prop where, where sure, you might not be able to ever get that big and win over, you know, the, the business guy, who's going to buy the latest iPhone every year, but you, but you don't, you're not in a category where Apple's going to come and just destroy your business one year. Um, so I think that there's something there that's like an interesting, tidy business where you could just create like a lot of delight and you have a lot of room to play and experiment.
+
+And look, if, if some of the features are a little rough around the edges or a little wonky, you know, it's, it's, it's miscategorizing a dog and a cat or something, but as long as it's not showing them something offensive. So I think that's, I think that's like a really fun place to play and I think it's under explored. And I think that increasingly, you know, there are more and more millennials who are tech consumers.
+
+Some of them are prosumers like, you know, you and I, we have like professional cameras and professional microphones and stuff. Like we know how to buy like, you know, electronics at a higher tier and a lot of millennials have kids now. And so they're thinking about the same thing.
+
+It's not the boomer generation where you need to really do all this education. It's pretty easy to sell a millennial on that. The problem is that if you sell it and the millennials, the end user, they're going to be really, really rigorous and be like, are there any problems?
+
+It's very similar to, to starting a company that targets animal owners. So like dog food companies have been one of the few categories in direct to consumer that have done fantastically. And the reason is because your dog doesn't tell you if they're sick of their food.
+
+Like if, if you start a human food company, the human will be like, you know what? I'm sick of that particular brand of beef jerky. I'm trying something new, but the dog will eat the same dog food for 10 years.
+
+And so the churn is just super low and, and the kids, you know, the kids will say, oh, you know, I don't like this or whatever, but it's a lower bar. And so I think there's just more room to play more room to experiment. It's fun.
+
+I miss, I fundamentally miss the era of gadgetry. I remember when I was a kid, there's a sharper image and every year there was like a new gadget. And it was just like, they're like, oh, this is like a vacuum cleaner that plays music.
+
+Or there's a Bluetooth stereo that goes in your shower, like just random stuff. And all of that's just been completely cannibalized by Apple. And don't get me wrong.
+
+I love Apple products. They're fantastic. There's a reason why we all buy them.
+
+But I love this. I love this idea of getting back to an era where a small company can tinker and create something that's novel and new, but tactile and something that you can unbox. There's so, it's so hard to buy presents for people at Christmas, because I used to get people DVDs and books and music albums.
+
+All that's digital. What am I going to do? Hey, you should like just download this on Spotify and watch that on Netflix.
+
+Like, no, I want to get you a physical thing. But then if I start getting you like a kitchen gadget, like a, you know, a Cuisinart or an air fryer, it's like, well, then pretty soon your, your whole kitchen's filled with all this junk. It's ridiculous.
+
+So we need to get back to like the cool gadgets, the unique things, the opinionated hardware. And I think this is a really, really fun and interesting place to play. But what's your reaction?
+
+Dude, so good. This is probably my favorite one. I also think this particular idea, like once you show traction via the internet, you do Instagram ads, you start selling it, you can go to a Verizon and they're looking for products like this.
+
+Yeah. They want to sell. You can even sell this in the Apple store.
+
+Yeah. It's not that crazy. Totally.
+
+So these retail, these retail shops are looking for products like this and they're looking for products like this. To me, this is a no brainer. Yeah.
+
+I really hope that, I mean, I don't exactly know what the funding arrangements are in a lot of these new generation hardware AI companies is, but I would love to see one of them like discover this and pivot into it and be really successful. I mean, I want them all to be successful, but it just feels like a lot of those launches, you know, they, they came out MKBHD kind of trashed them. No one really bought it.
+
+Return rates were kind of high, but it was because the pitch was, you know, this is going to be on par with your iPhone. And that's just, that's just too tall of an order. And I think, uh, just, just making it fun and niche and unique.
+
+Like I love the fact that I have obviously the, the phone on the camera is great, but I love getting camera gear still. I like, I like a Sony camera that's opinionated around this one little thing. It only does this one thing really well.
+
+Uh, and, and I love that, but, but those niches are getting slimmer and slimmer as the phone just does more and more. So, uh, I, I'd love to see some more stuff breakthrough. Yeah.
+
+And I think, uh, just one quick takeaway from that is people are thirsty for fun products. And I think it's keyword fun. You know, when app, you know, I love Apple too, but Apple has become like minimalistic and just clean and modern.
+
+And, you know, for your day to day stuff, I think that's what you want. Yep. But when you're, when you're in gift giving mode, like you want fun.
+
+And when you, when you receive, when you receive a gift, like it's more fun to get a fun gift with, with a fun opinion, then something's just clean and modern. Yeah, totally. Yeah.
+
+I mean, I think back to like the old, the old max that had the, the colored clear plastic on the back. Oh sick. What a crazy design.
+
+That's so cool. I think that's kind of making a comeback. Zuck announced, uh, some, some glasses that were clear, which is really cool that you could see the internals.
+
+And I think Palmer Luckey's new company mod retro has a, has a clear game boy design. That's really cool. Um, but yeah, it's, uh, it's tricky.
+
+I, I, it feels like we're on the cusp of something breaking through, but, but it is tricky. Yeah. So whatever it is you're building, if it's this idea or not inject fun because it's what people want.
+
+Yeah. And it's just, it's differentiated. Like it's, it's going to be hard to compete with Apple on just like the clean, perfect industrial design and people are going to nitpick that.
+
+They're going to say, oh, the tolerances aren't that good. Well, it's like, yeah, because like you didn't have the resources to like mill a unibody, like aluminum thing. Like it's like insane or like whatever, however they made this out of titanium.
+
+Like that's insane. Like have some fun with it, do something weird. And even if it's like bigger or, or, you know, uh, sacrifices on some sort of vector, like battery life or durability or whatever, like just be upfront about that.
+
+And I think, I think consumers will embrace it. We have a few minutes for one last one. I want you to talk about the tweet that you just did.
+
+Okay. Yeah. So last night, as, as we're recording this, we're recording this on Friday, last night, Elon Musk, uh, presented a, uh, a Tesla update called we robot, where he announced the cyber cab, which is their, uh, unsupervised full self-driving, uh, ride share network and some new vehicles.
+
+And there, he also had a number of humanoid robots on display. I think the working name is optimus. And there's been a number of these humanoid robotics companies.
+
+Uh, there's a bit of a boom now. I think everyone's expecting that a lot of the work that was done in large language models and chat GPT to kind of flow downward towards humanoid robots, where you could just talk to a humanoid robot and tell it to go do your laundry and it'll just do it. Now at this moment, no, one's really broken through with a fully autonomous robot.
+
+A lot of them are tele operated, meaning that there's literally a human in a suit kind of like doing the same action remotely. And then the robots just mirroring them. Um, but that works for plenty of things.
+
+I mean, this has been used for a long time teleoperation in medicine. And then also in like, you know, if there's a nuclear reactor, you don't want to go in there, but it's fine to have a remote tech, you know, walk in and, you know, act as the robot or whatever. Uh, SWAT teams and bomb defusal.
+
+This is the classic teleoperation robot. Um, but there's separately from the AI and humanoid robotics trend. There's also been a huge trend in defense technology, uh, driven mostly by Anderol and Palantir before that.
+
+But there's just this trend that like defense tech is cool. The government and the military is cool. Again, uh, the end of history isn't happening.
+
+And there's, you know, potentially great power competition is back on the menu. I mean, we see this with Ukraine and, and, uh, and Russia and there, there are very serious conflicts happening. And so people are coming to the conclusion that yes, we do need, uh, you know, a serious revamp and, and, uh, efficiency gains within our military.
+
+And so there's been a lot of companies that have started with, uh, you know, drones, uh, famously, uh, Y Combinator just had their first defense tech company. It's a cruise missile company. Uh, which is kind of crazy when you think about what YC has done historically, been a lot of consumer apps, you know, Airbnb, a lot of B2B SaaS, uh, you know, Gusto and Rippling and Stripe came through here.
+
+Um, but then now they're doing cruise missiles and a lot of people think that's funny and interesting. I think it's great. I think they should be doing anything that's valuable.
+
+Um, but my point was that, uh, I was predicting that within the next six months, I think that there will be a startup that will take one of these humanoid robots. Even if it's teleoperated, give it an AR 15, like a machine gun or a rifle and, and just do a demo of like what this would look like for just basically the Terminator, basically a Terminator scenario and go massively viral, be extremely controversial. People will say, is this bad?
+
+They're the robots are going to kill us. Um, but you know, and I said, oh, and then they're going to raise like a $500 million seed round. Uh, maybe that's true.
+
+Maybe that's not, that's kind of, you know, a joke, but the idea is that, is that we've seen so many of these like humanoid robots and AI startups. Uh, we've seen a lot of people doing cruise missiles and like things that would have been controversial like 10 years ago. And now, uh, all the planets are aligning to create basically the Terminator company, um, which would be, you know, completely controversial and like a lightning rod, which could be very good for getting attention and breaking through if you're a new startup.
+
+Um, now there's a question about like, do we actually need this? Is this the right thing for a lot of use cases? Like, no, you don't want a humanoid robot.
+
+You want a tank or you want a plane or something. Um, but, uh, but for some, maybe the tele-operation makes sense. You know, like we like, why put a human at risk in, you know, like when we went in to get Osama Bin Laden, we sent in Navy SEALs, they got in a helicopter.
+
+It was a very dangerous mission. And if they could have been running that mission remotely from a, you know, a warehouse and just doing tele-operation, but doing everything that they did, but it's just robots. So even if they got shot, nothing would happen.
+
+Basically you die and you just immediately respawn like Call of Duty. That sounds like an improvement. It sounds dystopian and scary in many ways, but at the same time, the, like the, the, the, the progress arrow of, of the future might just move in this direction.
+
+And it seems something, it seems like something that, that, you know, if you really think deeply about like, what will the world look like in 50 years? Clearly the technology, it will be possible to build a humanoid robot that holds a gun. And so why wouldn't it happen?
+
+Like what are the forces that would stop that from happening? And if you can't think of anything, any good reasons why it wouldn't happen, then well, maybe we're on the path to it happening and maybe we had to grapple with that. And interestingly, Boston Dynamics has actually somewhat explored this, uh, years ago.
+
+So Boston Dynamics is the company that does those incredible viral videos with the, the spot robot. It looks like a dog. And then the Atlas robot that can do parkour.
+
+And they've been working on this for decades. And the company has changed hands a few times. Google owned it at one point.
+
+I think Hyundai bought it for a while and it's moved around, but it's always been a company that wasn't particularly focused on government contracting and defense contracting. Um, but back in 2013 or 2012, 2013, I was living with this hacker guy who went on their website and figured out how to scrape all the files from their website. Even the ones that weren't necessarily like fully public, um, like they were public, but they just weren't like actually shown to people on the website.
+
+They were just like hosted there. And one of them was a, a sketch artist of their humanoid robot holding a gun. And so it was very clear that they had at least someone in their organization, at least like pitched it to the government and said like, Hey, like we could maybe do this.
+
+And then I think someone was like, we're not doing that. But they have this one humanoid robot called Petman, and it was designed, you gotta pull up a video or image of this because it's crazy. Because the stated mission of Petman was to test the mobility of equipment to prevent gas attacks.
+
+So imagine you need to wear essentially a space suit on the battlefield to avoid some terrible biological attack or some gas. So it's a gas mask, but it's also a body suit. And you make the suit, and then you need to put it through its paces.
+
+So you literally, like in paces, like you need to have it be like, yes, we put this on a human and the human ran for 100 miles. And so we know it's not gonna break after 100 miles of usage. And you could do stuff just like putting it in a washing machine and just beat it up and see if it holds its, like it doesn't break or get leaks.
+
+But putting it on a humanoid robot and just having the robot walk there for, you know, 10 miles or a hundred miles is a pretty good way to test this stuff. And so that's what they were using that for. But there was no reason.
+
+I mean, you see this thing and it's just super militarized and you just think like, oh, okay, like this is where this going. And every time that there's a Boston Dynamics video that drops, everyone always says like, these things are gonna have guns on them eventually. And some people have put guns on them.
+
+And the Corridor Crew, this wonderful YouTube channel, has actually done like a CGI version where they had the Boston, they call it Boss Town Dynamics. And they had a whole version of like training them with guns. But basically all of the clues are pointing to this happening.
+
+And it just feels like someone's going to put the pieces together that the tech exists and this would be massively viral and controversial and get me a ton of attention, which could be good or could be bad, but I could at least harness it. And so I think someone's gonna do it. Maybe they're listening right now.
+
+So I got a lot of thoughts on this one. One is not only do I think that could this be used in the military, Navy SEALs type things, but it could also be used for security, right? Like I was driving on my way here and it's a Jewish holiday, I think today or tomorrow actually.
+
+And people were, I noticed that I was just passing by a bunch of synagogues and they all had armed guards with guns. I'm here in Florida. Yeah, very popular.
+
+And so I would imagine that there's probably thousands of these places of worships, mosques, synagogues, churches, that unfortunately have to hire security. Now hiring a guy with a rifle or a girl with a rifle, that's probably expensive. I'd much rather hire a security robot with an AR-15.
+
+So I think this is another, again, one of those ideas that it's not an if, when. And it's also one of those things where it's like, do I want to start this company? No.
+
+But someone will. Yeah, it is interesting. Will it be an arm of Tesla?
+
+Like, you know, Elon is already a defense contractor with SpaceX, but he hasn't built like, you know, ICBMs, even though he builds rockets. Or Anduril has a lot of capabilities and they build autonomous weapon systems now. And so they could build something like this.
+
+But my feel was more, my original take on Twitter was more just like, the vibes are coalescing around the idea that this will be something that people will talk about if it happens. And all the pieces are there for the demo at least. And yeah, maybe it's tele-operated.
+
+Maybe it's a very niche use case. And honestly, like, yeah, giving it a gun is probably not even the most valuable thing. I mean, still search and rescue, just going into the nuclear reactor when it's melting down or, you know, going into the burning building, like, you know, tele-operation for, you know, the firefighter gets out of the truck and is like, okay, I'm going to virtually, I'm going to put on my VR headset and the robot's going to walk in and rescue the kitten.
+
+Like that makes a ton of sense. And maybe that's the first thing. But yeah, I mean, it's, we are coming to the era of like, it is believable that there will be a robot with a gun somewhere in the world in the next couple decades.
+
+And somebody's going to be building that. And that's just interesting to think about. You know, is it good?
+
+Is it bad? There's a lot of things that you could work through. There'll be a lot of regulations and a lot of rules.
+
+And, you know, what does the Geneva Convention say about it? And I'm sure we'll have a big debate and there'll be lots of, you know, editorial pieces and op-eds. But the tech is here.
+
+The future is now. The future is now. Yep.
+
+John, this has been an absolute pleasure. Thanks for getting my creative juices flowing. Where could people get to know you a little bit better?
+
+Well, I just started a new podcast called Technology Brothers. It's a weekly chat show with me and a friend. We just talk about the news of the week.
+
+Very casual, but very cinematic. We're having a lot of fun with it. And then I do have a YouTube channel, just my name, John Coogan.
+
+And I put up video essays and documentaries about tech and business and politics and all sorts of stuff. So check that out. And you can also follow me on x at John Coogan.
+
+Beautiful. All right, my man. I'll catch you later.
+
+Awesome. I'll talk to you later. Bye.
+
+Bye. Bye.

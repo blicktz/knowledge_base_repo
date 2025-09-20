@@ -1,0 +1,465 @@
+In this episode, I sat down with Frey. Frey is an online directory king. He teaches us how to build an online directory that does anywhere between two and $10,000 a month of actual passive income.
+
+Something that you can work on just for about 15 minutes a week. He talks about how do you find an idea? How do you validate that idea?
+
+What tools do you need? This was a super special episode because this is actually Frey's first podcast that he's ever been on. He's an up and coming creator.
+
+He's got only a few thousand subscribers. The guy sits on a treasure chest of gold. You're going to learn a lot around how to build a directory from zero to one in this episode.
+
+I hope you enjoy it. It's shipping time, baby. Okay, we got Frey on the pod.
+
+How I met Frey is actually pretty interesting. He did a reaction video to my John Rush, how to build a 10K a month online directory video that his reaction video went viral. I invited him on the pod.
+
+What are we going to learn today, Frey? Yeah, so today I wanted to show you guys how I built my first directory website. This was built back in October of 2022.
+
+It's really different than what most people think of when they think of a directory website. Most people think of just a simple and modern website. You put in your address, your zip code, your city, and then there's a modern map that pops up.
+
+This is way simpler. And the reason I love this is because, you know, at least for my first directory website, it's been monetizing for 18 months straight. It takes me, you know, about 15 minutes a month to maintain.
+
+So it's evergreen and location-based, which is my favorite kind of directory to build. Last month, I think it did around $2,300 in revenue. And so overall, it's just a really easy way to get started in your first directory build.
+
+And yeah, you don't need to use AI tools, although I recommend it for some parts. And yeah, it's just a great start to get to your first $2,000 to $10,000 in MRR as a non-coder, which I am. And by the end of this episode, what will people be able to do?
+
+So by the end, I really wanted to focus on finding and validating a niche. But I'm going to show you how you can go out and basically create a really basic directory that's optimized for SEO. You know, it's a really simple step of finding an idea, validating the idea, and making sure that the directory niche that you're choosing is actually solving a problem.
+
+I'll show you how to get some data, clean the data and enrich it. And then we'll go into how to implement it on a WordPress website. But you can use any content management system that you prefer.
+
+Beautiful. All right, let's get our hands dirty. All right.
+
+So before we go into the tutorial, I wanted to play a game. So one of the things that I like to do in my free time is find different weird directory websites. And I want you to just guess how much monthly traffic this is getting.
+
+And then I'll go into some stats around how much I think it's making and just a couple stats. But this is the first website. We have roadsideamerica.com.
+
+Right off the bat, not the prettiest website, but just looking what you know, and I'll give you a little context. This is a directory on quirky roadside attractions in the United States. So based on what you're looking at, what are you thinking here?
+
+I'm going to say 50,000 uniques a month. Okay. That's pretty good.
+
+Let's take a look here. And the page reps. Yeah.
+
+And the reason I say that is, first of all, it's hideous. It's got like, what is that? Is that Comic Sans, you know, for roadside America?
+
+Like if you're close to Comic Sans, like, you know. Yeah. May Lord be with you.
+
+You know what I mean? You need all the help you can get. But I do think that this niche, I bet you that there's not that much competition.
+
+Yeah. It's definitely an interesting one. So this one's getting 85,000 monthly visitors.
+
+Pretty impressive here. And a couple of things I want to point out. So, you know, beyond the impressive traffic, you know, we have monetization through display ads.
+
+So it's plastered with a bunch of display ads there. I think it's around like 96% tier one traffic. So US, Canada, Australia, UK, those kind of countries.
+
+And if anyone knows SEO, you know, the last two years have been insane. Like the Google core updates have been, you know, it's been demolition out here. Don't get me started, bro.
+
+Don't get me started. Yeah. So this has been pretty resilient.
+
+If I were to guess how much this is making, I would probably conservatively say five to seven thousand a month. Very passively because of the display ads. But, yeah, that's the first website.
+
+Super basic, like static directory, as simple as you can get. And I'll make a quick note and say the tutorial I'm showing today is a static website. So it'll be kind of similar to this build.
+
+All right. Let's move on to the second one here, which is atlasobscura.com. This is a directory about it.
+
+So it's a worldwide directory. And it's about like attractions that are off the beaten path. Things that maybe only the locals would know if you're visiting a certain country.
+
+Quick break in the pod to tell you a little bit about Startup Empire. So Startup Empire is my private membership where it's a bunch of people like me, like you, who want to build out their startup ideas. Now they're looking for content to help accelerate that.
+
+They're looking for potential co-founders. They're looking for tutorials from people like me to come in and tell them, how do you do email marketing? How do you build an audience?
+
+How do you go viral on Twitter? All these different things. That's exactly what Startup Empire is.
+
+And it's for people who want to start a startup but are looking for ideas. Or it's for people who have a startup but just they're not seeing the traction that they need. So you can check out the link to startupempire.co in the description.
+
+I'm going to say 35,000 uniques a month. Okay. 30.
+
+Okay. Okay. Okay.
+
+35,000. Let's take a look. Bam.
+
+Oh my God. Million. Insanely impressive directory website.
+
+Also noticing very little to no effect from the Google Core updates. You know, we got 90, 91% tier one traffic monetized through display ads. You know, we can start to see some of these ads from AdSense.
+
+They're also selling a book, which is interesting. But if I were to guess how much this is making, I think a really conservative guess just from AdSense is around $30,000 a month. But I really think it's probably closer to $50,000 or $60,000.
+
+It's always hard to tell. But very nice website and props to whoever owns this. It's a nice one.
+
+Props to the millionaire who owns it from their chateau. Yeah. Yeah.
+
+And yeah, I mean, this is just super useful too. So I'm all about creating directory websites to actually like provide entertainment or solve a problem. So that's really cool.
+
+All right, let's go to the last one here. This one's a little bit morbid, but we have the findagrave.com website directory. You can find where dead presidents are buried.
+
+You can find all sorts of interesting burial sites. But what are you thinking here just based on what you see here in the niche? I think it's big.
+
+I think this is at least a million uniques a month. I think that is a pretty good guess. Let's take a look.
+
+1.4 million monthly visitors. Absolutely crushing it. Also resilient to Google.
+
+Absolutely killing it. Absolutely killing it and amazing. This is like one of my favorite because I've never heard of this website and I just found it.
+
+And I can't believe there's this much interest around where people are buried. It's just not something that has ever come across my interest. I mean, it makes sense, right?
+
+Like it makes sense. It does. It does.
+
+You're trying to find where someone's buried and you're looking for an easy way to do it. Findagrave.com. Yep, exactly.
+
+So I don't see this going away anytime soon. And this I would say, so again, 92% tier one traffic. AdSense is their main form of monetization.
+
+They have all sorts of stuff here. This is, I'm going to put this, I think this could be a $100,000 a month website. But I think, you know, 60, 70K like is a very fair estimate here.
+
+But really like this just shows how large of a directory website you can go build. And that is possible out there. And it kind of breaks my brain.
+
+I don't know about you. It's kind of nutty to think about. I think it's nutty to think about also because my thesis on directories, and I spoke a little about this in the John Rush episode, is that it's a really good place.
+
+Like I think people are monetizing directories wrong. Like they're just putting AdSense. We saw one example of someone literally selling a book.
+
+The opportunity is actually to build software on top of these directories. So you use directories to get the traffic. You get all these eyeballs in a particular niche.
+
+You build software. Now you can use AI to build software instantly. And you get SaaS like multiples on that software business.
+
+And then you've got the consistent traffic that you're getting from the directory. 100%. 100%.
+
+I totally agree. I still like the, I still will say AdSense has been the closest thing that I've ever experienced to passive income. So there's that.
+
+If people are going to optimize the lifestyle business, then okay, that's fine. But if you're going for something that's, you know, that's big, then I totally agree. And I will just really quickly show you one boring website that wasn't on the list.
+
+But this is a directory on, you know, farms and CSAs. And their biggest call to action is their SaaS. So they actually just like have these little like advertisements for this software that they own.
+
+I'm pretty sure they own it because it shares the same like business domain. But yeah, like this is a perfect example of them funneling relevant website traffic into a SaaS product that they own, which I think is incredibly smart. So that's cool.
+
+Awesome. So should we dive into how to build a profitable directory? I don't see why not.
+
+All right. Let's do it. So the thing with my, so like my favorite kinds of directories are evergreen location based directories.
+
+And the reason for that is because once you have a directory, it's not really fun a year or two down the line when you have to upkeep data. And so it's nice to find things that you don't have to update very often. So the thing that I do to find ideas is I'll go to Ahrefs and I'll type in near me into the keyword explorer.
+
+And this is just going to show me this long list of local queries that are getting tons of search volume. And this is my favorite way to just on a Saturday afternoon, I'm just going to browse this and look for different ideas. And you can basically start looking for keywords that have really high monthly search volume and low keyword difficulty.
+
+These are quite big. And in my experience, I've learned what to avoid. My sweet spot is actually around 30 to 100,000 monthly searches.
+
+So I'll click, you know, into the later pages and start to look for different types of ideas. But, you know, a couple of things that I'll avoid just sharing some things that I've learned the hard way. I personally don't like niches where it's really seasonal.
+
+So I think one of these said pumpkin patches near me. Oh, yeah, there it is. So 152,000 monthly searches.
+
+But it's so seasonal. I don't really want a website that I put a lot of time and effort in just to monetize really well for a month. The second thing I avoid are, you know, niches where the data might be difficult to get.
+
+So one of these says earthquake near me. And I imagine, at least for me, I wouldn't know how to go and get data on earthquakes. And it also sounds like something that is kind of competitive.
+
+And the third thing that I would avoid are really big branded keywords. So Taco Bell near me. Right.
+
+A couple of reasons why I avoid this. The first thing is that they're probably already going to have an updated directory. And they've probably already solved the problem of driving their customers to, you know, a Taco Bell near them.
+
+But the second reason I think is more important, which is it's just too one dimensional. Like people looking for Taco Bell near me in Google aren't looking for different types of Taco Bell. There's like very one dimensional search intent.
+
+And that's not what I'm looking for. I want to, you know, I'll show you an example that I found. I actually think it's somewhere on like the 14th page or something.
+
+But we're going to be using the example dog parks near me for this tutorial today. So I'll show you that. So dog park near me.
+
+This is one that I found using that exact same method. And get 73,000 monthly visitors or searches, I should say. And not too difficult.
+
+27 out of 100 in terms of keyword difficulty. So that's not too bad. But check out all of these other keywords that contain dog park.
+
+Indoor dog park, off leash dog park, dog water park. There's a lot of fragmentation in the search intent. And it's multi-dimensional, if you will.
+
+But the point is, like, people aren't satisfied looking for just any dog park. They're looking for certain types of dog parks. Maybe ones that offer water fountains, you know, benches to sit on, shade.
+
+And all sorts of different types of amenities that you could basically capitalize on. You know, when you build out a directory like this, I'm thinking, okay, I can include these. To enrich my directory and make it more useful.
+
+Save people more time. Rather than having to go to Google Maps and click around in the reviews. And figure out if there's shade or benches or not.
+
+So that's kind of the first thing that I look for. High search volume. Relatively low keyword difficulty.
+
+And a good amount of fragmentation when it comes to the search intent. Which we can see here. What sort of keyword difficulty is good, in your opinion?
+
+I think anything under 20 is pretty easy, in my opinion. I think keyword difficulty is a little bit misleading, too. Because there are some very low keyword difficulty niches.
+
+And I'll give you a quick example. It says that, you know, fast food near me is a keyword difficulty for. But it's really not going to be easy to rank for that.
+
+And there's a lot of examples where keyword difficulty is really low. But there's a lot of competition. Or there's a few competition.
+
+But their backlinks are so dominant. You're just not going to be able to outrank them and get traffic to your website. But overall, generally speaking, I think under 20 is a pretty good bet.
+
+And yeah. I would say under 20. That's pretty good.
+
+If you know what you're doing, then I think 40 to 50 is also possible. I've had some, like, programmatic directories that I've built. Where I've targeted keyword difficulty 70 keywords.
+
+That are getting 60,000 monthly visitors. And I've created, like, on a fresh domain. I was able to rank on the first page in, like, two months for some of the keywords.
+
+So it just really depends. And keyword difficulty is kind of a weird metric. But it's a start.
+
+It's a good start to know how easy it is. So after we figure out people are looking for different types of dog parks, I'm going to go into some competitive research. And for that, I just use good old Google.
+
+So I'm just going to type in dog park Los Angeles, for example. And I'm just going to scroll through and look for any kinds of directories that are on the first page. So you can see here I found this one right here.
+
+This is a pretty big dog-related website. I don't know if you ever heard of it. But BringFido, pretty massive website.
+
+And they do have a dog park directory. And I might just click around and ask myself, is this a directory that I can improve on? Can I build something that's better than this?
+
+And so this is pretty nice. I also like to check how much traffic some of these are getting. But let's just compile a couple of different competitors.
+
+So that was kind of the main one. I'll also just type in dog park near me, which is the exact match. I also found this one.
+
+This is an interesting competitor. And it's a really basic directory. So let's just see how much this one is getting in terms of traffic.
+
+All right. So, yeah, I remember this one. This one was interesting because it's getting 21,000 monthly visitors.
+
+But when you look at it, it's super basic. And if we put in a sample zip code, I'll just put like a Los Angeles zip code. It's so simple.
+
+It just tells you the name and the address of the dog park. But if I were a dog owner, which I am, and I was taking my dog to the park, I would want to know a little bit more information. So off the bat, I'm already thinking there's ways to improve this.
+
+There's features that aren't listed here that aren't that helpful. And it's still getting 21,000 monthly visitors. So this is a great website where I'm making a mental note.
+
+And I'm like, this is my bounty. I'm going to set a bounty on this. I can do better than this.
+
+When you see something like this, a smile goes on your face, right? You're like, okay, there's not only have I identified that there's an opportunity to build the directory here. There's a, not the leading directory, but top directory.
+
+One of the top directories couldn't be more basic if it tried. Exactly. Exactly.
+
+It's, it's all, it's got a lot of positive signals that, yeah, this is pretty unhelpful. Yet people are going to websites like this. And it just shows you that Google Maps is not satisfying everyone's needs.
+
+If Google Maps was doing that, people would probably just not come to a website like this. But this is a really, really good sign that people are looking elsewhere. And websites like these are taking advantage of that.
+
+So why not just build something and take that traffic from them, basically? You know, it is what it is, right? SEO is a PVP game, you know?
+
+We can't all be top rank. And unfortunately, I'm going to have to set a bounty on you, Nylabone. That's just how it is.
+
+It's nothing personal, but it's just, it's just what's going to happen. So this is really cool. And, you know, this is also a good example.
+
+I think I looked up the traffic for, so if we look at this example and we just try to figure out how much traffic dog parks are on this website. Let's just get an idea real quick. All right.
+
+So 13,000, not too bad. It's significant enough where I'm still, you know, I'm still excited. Like that's, that's not too bad.
+
+I don't think they specialize in, or they're not targeting dog parks, the general keyword that gets, you know, 70,000 monthly searches. It seems like off-leash dog parks is kind of the area that they optimize their pages on. But still, still good.
+
+And for this, I would say, like, it's more useful to see what kind of competition I'm up against because it's way better than Nylabone. It's much more filled out. There's better photos.
+
+But again, like, where, you know, where are the, where are the features saying whether this has dog bags or water fountains or benches and all the, all the other good stuff that I want to know if I'm taking my dog to the dog park. So this is, yeah. So I would probably spend another, you know, 30 minutes to an hour looking at different competition on Google for dog park related keywords.
+
+But I think this is good enough, especially in Nylabone for me to go ahead and say, all right, this is good. So the next thing after I have my competition, I'm going to just look it up. I'm just going to try and use Reddit to confirm or not confirm if this is a problem worth solving.
+
+So if I just type in, you know, dog park Los Angeles Reddit. So looking on Reddit for dog park Los Angeles, for an example, we can already see a bunch of different forums where people are looking for dog parks. So again, another great sign that people are looking elsewhere.
+
+They're not over-reliant and finding everything they need on Google Maps. So there's always some discussion you can skim through. You can also just compile a bunch of different links and stick them into chat GBT and ask for, you know, you can prompt it for a sentiment analysis and do it that way.
+
+But I like to do the good old fashioned way, look it up and read the comments. And one thing I found because I've been kind of using dog parks as a case study. So I know this to be true.
+
+But I looked up dog park in New York and I realized that in New York, for some reason, they don't call dog parks dog park necessarily. They call them dog run. And so that led me to a rabbit hole where I, you know, looked up all sorts of Reddit posts and I landed on this.
+
+This is a post from six years ago where someone literally just made a post sharing their Google map pins of all the dog parks. And what's interesting about this post is it got a decent amount of votes, you know, 115 up votes. There's a lot of interaction here around, you know, different dog parks in Brooklyn.
+
+But there are some. Yeah, so this this is an interesting comment. I think this is the one that stuck out to me.
+
+This person said, I wish I had time to visit all of them and make descriptions and take photos. Not all dog runs are created equal. So it'd be cool to find out about really nice ones that aren't nearby.
+
+I mean, you can't get more. You can't get more. You know, you can't get better than that in terms of a social signal that's showing you that people want curation.
+
+People want hyper specific features when they're looking for dog parks. So this is just another green flag that says, yeah, this is this is a problem that could be worth solving. So just to recap, you know, we basically just found an idea that has high search volume, low competition.
+
+It has fragmented search volume that we could take advantage of. There is some competition out there. So we set a bounty on Nylabone that is already getting a decent amount of monthly visitors.
+
+And then we also verified through social listening on Reddit to confirm that, yeah, people are having a hard time finding these dog parks and they're talking about it. So let's go build out the actual dog park directory that's going to cater to these people's needs. At this point.
+
+By the way, Frey, are you going to publish like are you going to publish this dog park directory? I think so. I think so.
+
+I think there's like a couple of things that I'm worried about. So I've noticed anytime I mentioned a website, people make copycats immediately. And SEO is one of those things where, you know, I'm not going to have any backlinks if I launch something like this.
+
+So there's a little bit of vulnerability. But yes, the short answer is I do plan on launching this eventually. I'm just right now optimizing the best ways to automate some of the data enrichment and some of the implementation on a CMS through AI and like using Bolt.new.
+
+I'm playing around with different tools to streamline that. But I do want to publish this and just see how it goes. Cool.
+
+All right. Let's build, baby. Let's do it.
+
+Let's get some data. That was a this was a big topic. I think a lot of people ask me, where do you get your data?
+
+And the simple answer is web scraping tools. I know there's a lot of different web scraping tools out there, but I just use out scraper, not affiliated, just what I've always used. And they have this Google Maps scraper here.
+
+And the first thing I do is I actually land before I even scrape data. I go to Google Maps and I type in, you know, dog park Los Angeles. And what I'm looking for here are actual Google categories for my niche.
+
+So luckily we have this that says dog park. You know, there's some athletic park is apparently one, but I want to look for a Google category because scraping data when there's an actual dedicated category for that is a lot easier. So this is cool.
+
+So I've confirmed that we do have dog park, which means we can just click on this category here and we can click on exact match. So it will basically get us all the data for dog parks on Google Maps. Now, if you're working in a niche where you don't have a category, you can always just enter a plain query.
+
+So let's just say, for example, off-leash dog parks was the thing you could go ahead and scrape all the data related to off-leash dog parks. It'll be way more data and there will be a lot of junk, but it is one option. So you're not limited that way.
+
+And by the way, if you get, I'd imagine that that's more common than people think, like that happens more common than people think. If you do get a lot of junk data, how do you normally parse that data to make it useful? Yeah, so I have, so there are ways that, I do have a really big data sheet.
+
+I have a data sheet with 119,000 rows that I basically parsed it down to 5,000. There's a couple of ways you can do it. So with a lot of junk data, you can, with dog parks specifically, like the way I would do it is probably just delete all the listings and rows that don't have addresses.
+
+So that's an easy one that will remove some. And then there will be a good amount that have, you know, no reviews or like one review. You can get rid of a lot that way.
+
+I covered it in a video. It's quite a long, it's a tedious process. I've tried to use ChatGPT to parse data.
+
+Yeah, that was basically my question. Like, have you, I was, I was wondering if you're going to get there, like, do you use ChatGPT or Claude, as I call it, Claude, everyone makes fun of me, Claude, to basically go through the data to help you figure that out? I do.
+
+I think you just need to have a really solid prompt. But sometimes it's easier to manually parse the data first, because you'll get some data like Big Lots or like, you know, Walmart, and it's, it has nothing to do with dog park. But because someone mentioned dog in the reviews, it's just pulling up that data somehow.
+
+So I would, yeah, I would, I would use ChatGPT. But I would first manually just get rid of the big ones. And yeah, there's, yeah, I guess you could use it off the bat too.
+
+But I guess I like to manually do it because I like to make sure I get all the dog parks. And I've noticed that it can get rid of a lot of the good quality listings. If you just go straight into ChatGPT and have it remove what it doesn't think a dog park is, if that makes sense.
+
+I think I like to quote the old, throw the baby out with the bathwater, whatever that quote means, really. Like, I know what it means, but like, I don't know where it stems from. It's very odd.
+
+All right. Yeah, let's, let's get back to it. All right.
+
+Yeah. I mean, I've never heard of that. But let's, yeah.
+
+So basically, yeah, so basically, we're lucky we have a dog park as a category. We're going to make sure to click exact match. Otherwise, you're going to get a massive data sheet with a bunch of junk.
+
+And for me, I like to create nationwide directories, because why not take advantage of all that search volume? So I just keep this as defaulted. And then really, the only place I touch is the parameters.
+
+And this is just the basics, right? Think about what people would want to know if they're coming to a dog park directory. They're probably going to want to know the name, maybe a phone number if it's some kind of like indoor dog park, address, street, postal code, state, you know, there are some, maybe some reviews that you want to include.
+
+I always like to add street view, you know, working hours. And most recently, I've been adding location link, which I'll show you why is really important in a moment. It's great for data enrichment.
+
+And yeah, so but these are the basics, you know, and then I'll go ahead and just click get data. And it will give us an idea of how much it's going to cost, how many rows. Sometimes this is just completely off, like I know it's completely off, but you would go ahead and click confirm.
+
+And I am not going to spend more money. So I pulled up the result. It's usually pretty quick too.
+
+I know most times it says it's going to take 12 to like 30 hours or something, but this took two hours. I've never had it take too long, but let's pull this up here. Cool.
+
+All right. So here we have 6,245 different dog parks. So quite large, you know, this is a lot of data and probably not the most beginner friendly for a static, a static directory build that I'm going to show you, but it's okay.
+
+We'll use it as an example. If you wanted to start like cleaning this data a little bit, you know, I'm not an Excel pro, but I kind of just like to use the reviews. Maybe if it doesn't have that many reviews, I would get rid of, you know, anything under, you know, 10 reviews or something like that.
+
+But this is basically our data sheet. And because we do have that exact match category in Google, we don't have to do too much cleaning. But if we did have a plain query, that's when, you know, you would really want to spend some time.
+
+And there's a lot of ways you can do it. I made a video on it. It's maybe not the best, but it gets rid of a lot of the junk.
+
+I think I, yeah, 119,000 rows down to like 5,000 rows in that video. But since I know it's already cleaned, I'm basically going to jump to the data enrichment. And this is really important because I'm going to try to include all the different features that we were looking at from our keyword.
+
+If we go back to dog park near me. I'm going to basically enrich the data and use my knowledge of H refs, you know, indoor dog park off these dog park. I want to rank for all these keywords that are getting traffic, but I also want to look on Google Maps.
+
+And this is the way I typically like to enrich data. Let's just click on one here. And what I'll do is I'll go to the reviews and I'll just start looking at the different types of tags.
+
+And as I click through these reviews, I'm making a mental note of the same types of tags and the, I guess, features of dog parks that keep showing up. This one has shade, you know, parking, you know, we just kind of keep on going with shade again, shade trees. But I basically am going through and trying to do some pattern recognition, water, parking.
+
+A lot of the same stuff starts popping up. So because I already spent like 30 minutes doing this, I can tell you that a lot of the most common things people want in their dog parks are water fountains for their dogs. They want some shade.
+
+They want benches to sit on and they want, you know, dog bags. Some people also want like, you know, apparently trash cans and stuff. But for the most part, those are the core things that I'm making a mental note of in addition to it being an indoor dog park and off leash dog park.
+
+So what we can do here, and this is pretty manual, but this is how I did it back when I first started. You basically make all these different columns for data enrichment. You know, water is there shade.
+
+And so you'd basically continue doing this. We'll just, we'll just use this as an example. The old way that I would do it back then was super manual.
+
+Like if you think about the journey of someone finding a dog park with this or if you think about the journey that someone has to, or I guess the way people go out and find dog parks with shade, it's super manual, right? They have to like look on Google. Maybe there's a shade button.
+
+Maybe there's not. And they have to type in shade manually. It's just not that fast and not that convenient.
+
+So basically when you're enriching data, like you can do it manually, but it's, it's God awful and I wouldn't recommend it. It's extremely tedious, especially with a niche with 6,000 listings. So I am working on a tool that automates this.
+
+And this is where the location ID comes in. So this isn't available. It's just something I'm working on with someone.
+
+But it's very much a scratch your own niche project that we chose where I have this sample data. If we look at it, we can see I have the location ID. And it's basically going to automate the data enrichment aspect of this, which is easily the most tedious.
+
+So if we just put in shade and then have it look for the keyword shade, I'll prompt it and say, does this dog park have shade? We can add different columns, you know, for benches and other things like that. But basically I will process this.
+
+And this is going to save me so much time. I mean, yeah, back in October 2022, I did everything manually. Granted that first directory website, I only had like 130 different listings.
+
+So it was not too bad. But something with this much data, you're going to want to be able to utilize some automation, whether it's, you know, Claude or Claude or ChatJuice, something like that. Cool.
+
+Shots fired. Shots fired. Shots fired.
+
+Shots fired. Shots fired. This is it.
+
+I mean, basically what it did is it read the URL. So like if we're going to do this, just a pro tip for anyone out there who's building this or wanting to automate the data enrichment. It basically needs to read the Google URL for that specific dog park.
+
+And then it can basically look through the reviews and tell you there's a shade, a shaded area or benches and stuff. So using that, we using that URL, it basically shows us the review. It created this new column for shade, which we had up there.
+
+And in this case, it says true because multiple reviews mentioned the presence of shade, although some reviewers wish more. So I'd basically like, you know, use this to enrich the data rather than manually going and saying like, yes, and going down the line that way. So it's just something that I'm building with someone just to scratch my own itch.
+
+And it's not like available, but you know, if it is in demand, I guess maybe we'll release it. But that's the plan. But that's essentially the big idea.
+
+Enrich your data because, again, we're trying to make something better than Nyla Bone. We're trying to make something better than Bring Frito. And as great as Bring Frito is, you know, how do I know if I forget my dog bags?
+
+How do I know Quiet Waters Park is going to have it? You know, I'm just it's a water park. Like, I don't know.
+
+When am I going to have to call them? So there are some opportunities, even with the most dominant dog park directories where I'm like, yeah, this data enrichment is going to be what sets me apart. And it's going to be what brings people back to the website because I went so deep to list all this information.
+
+So imagine this is all, you know, cleaned out. We can now go into how we actually format it onto the website. And for this, I'm doing it the dumb way.
+
+I have WordPress up somewhere here. Oh, I didn't expect you to say WordPress. Got to be real.
+
+I've been playing with Framer. So I've been seeing so many cool builds with Framer. So I'm learning that Bolt.new is super interesting.
+
+But I guess I just wanted to bring people back to how I did it. And it's easily probably the dumbest way nowadays, but it's so dumb. It's inspiring.
+
+It's like you can brute force it if you want and just start. It's not the best way at all. But I did just create a WordPress website as an example for the format.
+
+So any CMS works. I've seen some amazing builds with Framer. So if you know Framer, I'd probably recommend that.
+
+But you can use WordPress and really basic themes. Like my first directory website was using Elementor Pro, which is like, I mean, love them, but not the best way to create a website. Not the only option to create a website.
+
+But I created a sample directory here. And the reason I'm showing you this is because this is what I call a static pillar page directory. And remember when I said that it's totally different than what most people think of when they think of a directory.
+
+This is the kind of slept on format. And the reason for that is it's basically a super long page. It's completely it's like level one of directory builds.
+
+And, you know, it's it works really well. It uses what's called a pillar page, which I feel like is kind of an outdated SEO principle, but essentially very comprehensive page with all of your content on a single page. And as silly as this looks, it works really well from an SEO perspective.
+
+So let's let's just break this down. Like, I think anyone who's watching this will be able to create a website like this. But, you know, you have your, you know, you have your header one with your keyword, you have your table of contents.
+
+And then you essentially are targeting all of these city specific dog park keywords. So dog park, long beach. You also have Rosie's dog beach, which is an example listing.
+
+A nice photo. Here is where your data enrichment would be. And then your basic, you know, address, phone number hours.
+
+And then we have a map embed and you can throw on some reviews or you can leave it out. But I would say don't sleep on this format. Like if you're just starting your directory and you want to create one pretty quickly and see how well it does.
+
+Try this out because from an SEO perspective, this is essentially taking advantage of the highest search volume keywords, which would be like dog parks, long beach, dog parks, Los Angeles. And even if you were to go out and create a programmatic directory, you know, which I have those directories, the most search pages on those directories are the location pages. So I'll give you a quick example without veering too far off.
+
+But if we look at this bring feed a website and we just look at the site explorer and we look at their top pages, all of their most traffic pages are the location pages. So dog friendly restaurant, New York, pet friendly hotels in Dallas. It's not necessarily the actual listings that are getting traffic.
+
+So what you're doing with a really watered down pillar page static directory like like this one is you're basically targeting those keywords that are already getting the most traffic and you're putting them on one page. So another thing with this is that it's perfect for display ad monetization. There are naturally they're really long pages, so you're going to be able to fit a lot of ad placements just like how a YouTuber would make more money from an hour long video with more ad placements.
+
+It's kind of the same way. So if you were to go with that monetization, it's pretty good. Another thing is that with this area down here, this is basically your internal linking strategy.
+
+It's super simple, super straightforward where people end up clicking on different states to look at those dog parks. And that's really it. So one of the biggest advantages with a pillar page static directory is the keyword clusters that you're going to end up ranking for.
+
+So with my first directory, one of my state pages will rank for like 1300 keywords. And it's because I'm targeting all of these kind of city specific keywords here. So that's kind of the simplicity of it.
+
+Again, very, very basic level one of directories, but amazing if you just want to dip your feet in the water and, you know, get to I would say like two to two to 10 K and MRR is definitely possible. That first website I showed you is a static directory. So this is like.
+
+This is this is pretty nice. It's actually kind of one of my favorite builds because of how simple and dumb it is. Yeah, I think what's cool about it is you can go and build this use, you know, use WordPress, use Framer, use whatever.
+
+And have it just be this $2,000, $5,000 a month thing that just sends you what I, you know, I use the term mailbox money. Someone once told me that years ago, the concept is every single month, you know, it's like they send you a check and in your mailbox and it's enough money to just like pay for your bills, pay for your rent, which allows you maybe to work on other stuff. Maybe you have a full time job that you really care about.
+
+Or you can actually, like I was saying earlier, you can use this as the foundation of a really much bigger idea. So you can take dog park near me and eventually turn it into some SaaS product for public parks, or maybe it's a consumer product that sells, you know, that's a competitor to the farmer's dog, which does $500 million a year in revenue. So the choice is yours.
+
+And that's why I think directory, that's why I've been bringing on more and more directories onto the people onto the pod, because I think that the average, you know, tech founder isn't thinking about building directories. Totally, totally. I think they're extremely underrated.
+
+And so 1996, as someone said in my comment section. Well, it's so boring. Look how boring, like, look at this, you know, I couldn't, I yawned in this, in this interview at one point.
+
+That's totally acceptable. In fact, I'm happy you did, because I think people are going to look at this and be like, there's no way this works. But this is literally how I built my first directory.
+
+And yeah, you could, doesn't take too many of these types of websites to have enough to keep you afloat, pay your bills. Maybe leave your full time job to build something even greater, something more similar to, you know, what we, what, like the directory websites I showed in the very beginning. But I will say there's a lot of other directories that are like way higher in terms of earning potential.
+
+You know, programmatic SEO has been a really hot topic. So that's been like a programmatic directory where you sell leads to service based businesses. That's amazing.
+
+There's so many different opportunities there. But even with this, like, I think anything in the pet space is interesting, because there's a lot of affiliate plays that you can include. There's also even a potential to create some kind of lead magnet where you collect a lot of data.
+
+So I'm sure you've heard of BarkBox. This is the company that Kevin O'Leary, I think on Shark Tank invested in. And it's an interesting one because they, I think we're only doing like three or four million in revenue, but they got acquired for like 90 million.
+
+And the reason for that was because the actual like data. So they sell DNA kits for dogs and cats. The data that they acquired was way more valuable than their actual like annual revenue.
+
+So there might be a way to maybe create a newsletter on the dog park directory. Somehow collect data around dogs. But even in its most simplest form, BarkBox does have an affiliate program.
+
+If people are looking for dog parks, maybe there's some alignment with the searchers intent where people want to know, more about the health of their dogs. So this is a play like I would definitely experiment with this if I were to publish a dog park directory. So you have like money coming through ads, maybe an affiliate play, perhaps build some kind of email list or lead magnet to collect more information on dog owners.
+
+There's just a lot that you can do once you start monetizing it. And once you get a lot of traffic. But yeah, very simple format and kind of just speaks for itself.
+
+If you enjoyed this episode, please let us know in the comment section. I read every single comment. So we'd love to see you in there.
+
+Frey, thank you so much for giving us this tutorial. Where could people find you on the Internet? Yeah.
+
+So YouTube, I just started posting more directory content on YouTube. It's just my name, Frey Chu. You can follow me on X again, just Frey Chu.
+
+And yeah, that's the best way. Cool. We'll include that in the show notes.
+
+I hope everyone feels a little more sophisticated with online directories in a way. We didn't create the most beautiful directory, but we did create a directory that people needed. And you can always add the lipstick afterwards.
+
+So I'm proud of what you came. I'm proud of what we built today. And hopefully people enjoy this and we can have you on again, Frey.
+
+That sounds good. Yeah. Appreciate you having me and I'll just end it on this, which is whether you're going and building something big or something small like this, those first two steps are the same.
+
+You know, finding that idea, validating that idea, getting and parsing data. So, yeah, I think it doesn't matter what you're building. Those are where you want to focus most of your time and I'll leave it at that.
+
+Amen. All right. All right.
+
+See you later. Thanks, Greg.

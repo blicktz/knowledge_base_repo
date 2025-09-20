@@ -1,0 +1,247 @@
+Today, we're going to talk about how to use AI to build a SaaS in a weekend. I came across this Reddit post by this guy or girl, Lord007TN. It had 27 upvotes.
+
+I was reading it and I was like, this is absolutely gold. He outlines exactly how to build SaaS in a weekend. Now, there's some things I would do differently, some things that I really like about this.
+
+If you stick around to the whole episode, you're going to learn a playbook for how to build a SaaS in a weekend using AI. We're going to go through a bunch of the steps. I'm going to show you how to do this.
+
+Now, I don't know if that SaaS does a million dollars a month, $100,000 a month, $1,000 a month. I don't know, but I do know that there's a huge opportunity right now to be building software, SaaS businesses. AI makes it a lot easier.
+
+And what we want to do is basically have the highest probability of success when we launch a product. So let's talk about that. So he says, the first, you got to come up with something to build.
+
+Now, I kind of disagree with him on step one. I feel like there's step zero, which is you got to figure out an audience. You got to figure out which community you're going after.
+
+You got to figure out a niche. So I actually think there's a step zero around thinking about what niche makes most sense. Now, how do you do that?
+
+One is you can say, well, what is an unfair advantage that I have? You know, maybe I was in nursing for 20 years and I understand nurses better than anyone. Maybe I'm a developer and understand, you know, a specific programming language better than someone else.
+
+Or maybe there's just a trend that I'm seeing and I see this trend. I, you know, I know where it's going to go from here. I have a good and I think that there's a business idea here.
+
+So you go and start a social account, X, LinkedIn, Instagram, TikTok. You go and you go do that. That's step zero.
+
+You start actually figuring out two things. Actually, you got to figure out what is the format of the type of content I want to create? Meaning, am I telling stories?
+
+Am I showing images? Is it videos? What is the format?
+
+And what is the system so that I'm consistently putting out content every day? Step, step zero, build an audience. Then figure out what something to build is.
+
+And actually how you figure out how you build something is you start teasing things with your audience. And they're going to tell you what to build. Step two is I get to Gemini.
+
+I get Gemini to do some deep dives on who else is doing similar stuff. I got to know the competition, right? So let's go and do this live.
+
+And I'll be honest with you. I don't use Gemini a lot. Actually, you can see I literally have never used it on this account.
+
+So I've used it on my personal Gmail, but I haven't used it on my business. But I don't know about you, but I'm more of a chat, chat, GBT, Claude, Grok type of guy. So let's go come up with an idea and see what Gemini says.
+
+So say I have an audience that maybe is people who like books. And through that, I realized that goodreads.com, which is now owned by Amazon, is this community of people who are reviewing books. And when you look at this website, it just feels old school.
+
+So maybe I'm like, maybe there's an opportunity to reinvent Goodreads. And I'm pretty sure Goodreads got acquired back in the day for a bunch of money. Yeah, Amazon acquired them, I think, yeah, for $150 million.
+
+So I'm like, OK, I want to make $150 million. And that was a long time ago. Let's go and rebuild it.
+
+So let's go and ask Gemini who else is competing with Goodreads. So we're going to say, I want to build a startup that competes with Goodreads. What is the competitive landscape look like?
+
+And aka who else beyond Goodreads am I going to be competing with? And let's go see. So now I'm learning about a bunch of, I don't know about you, but I've never heard of any of these, a bunch of competitors that I can go look into.
+
+So I see the story graph. This platform has gained significant traction as a popular alternative to Goodreads. It's data-driven personalized recommendations based on your mood, themes you enjoy, library thing, bookworm.
+
+It doesn't make a difference what these things are. The bottom line is, if you're building a SaaS in a weekend, you basically go and check and write notes as to who these people are and what is interesting about them and what maybe isn't interesting about them. And then it says other platforms with overlapping features.
+
+They're not direct Goodreads competitors, but they offer features your startup might consider. So like a book discovery platform, like BookBub, social reading apps like BookShift. Again, I've never heard of any of these things.
+
+Or Bookstagram, IG, BookCommunity. That makes sense. So I'm getting a lot of, this is like competitive analysis, McKinsey analyst in your pocket type thing.
+
+So this is really cool. Then it says key considerations for your startup. Given the existing players, what unique value proposition will your startup offer?
+
+Will it be specific niche, genre focus, academic reading, a unique feature? AI-powered recommendations are more nuanced. Asking the right questions, right?
+
+Like I feel like this is probably the most important question. And then, you know, user experience. Look, many Goodreads users express frustration with this data interface.
+
+I'm not alone. Community building, how you foster an engaged community. You get the point.
+
+Okay, so that's step. Quick break in the pod to tell you a little bit about Startup Empire. So Startup Empire is my private membership where it's a bunch of people like me, like you, who want to build out their startup ideas.
+
+Now they're looking for content to help accelerate that. They're looking for potential co-founders. They're looking for tutorials from people like me to come in and tell them, how do you do email marketing?
+
+How do you build an audience? How do you go viral on Twitter? All these different things.
+
+That's exactly what Startup Empire is. And it's for people who want to start a startup but are looking for ideas. Or it's for people who have a startup but just they're not seeing the traction that they need.
+
+So you can check out the link to startupempire.co in the description. That's step two. And I think that makes a lot of sense.
+
+Step three. I check out what those competitors are offering and what makes them tick. Help us figure out my angle.
+
+Yeah. So that makes a lot of sense. You basically go through each and every one of these competitors.
+
+So let's just go to the story graph for fun. I even saw that in the preview text on Google that they do challenges, which is really cool. Challenge directory.
+
+That's really cool. So story graph, because life's too short for a book you're not in the mood for. Simple tracking and insightful stats.
+
+This feels extremely nerdy. Discover books by mood. I think that's really interesting.
+
+But like, I don't know. Are people looking for like a checkbox? Like I feel like there's so many more beautiful ways to showcase that.
+
+I saw this really beautiful product design for this app called Q, which is a way for people to discover videos like movies and TV shows to watch. And the co-founder says, I'm proud of our visuals and designs in Q. It's contributed to why millions of folks have downloaded and used our apps.
+
+Here's three of my favorites. So look, this just feels so much nicer than what I just saw. Swiping with a partner to pick a movie and getting a letter when you watch.
+
+Our 3D trailer feed and the poster flying down to the bottom right when you add it to Q. That's really cool. But I think the coolest part is the spinner.
+
+Like having a spinner like this for books, I think would be way cooler than what the story graph is doing. So yeah, I guess like you just go through all the competitors. You write notes about what you like, you don't like, you do some research.
+
+And then I hit up Claude with my idea and the basics. I make it grill me with like 20 questions to see if the idea even holds water. So let's go to Claude now and ask it like 20 questions as it says here with our idea here and see what they say.
+
+Which is basically like a Q. You know, Q. The Q app but focused on like young people.
+
+Gen Z and something super beautiful. So I open up Claude here. I use the Mac app.
+
+So I say, I guess the prompt would be something like, I want to build Q but for Goodreads. Basically, a more beautifully designed version of Goodreads with cool features like this spinner from Q. I know that I probably need a niche to focus on.
+
+So that's what Gemini said before, like you need a niche. But I'm thinking Gen Z. Is that too broad?
+
+I want you to grill me with 20 questions. Let's see how they worded it originally in that Reddit post. Grill me with 20 questions to see if the idea holds water.
+
+To see if this idea even holds water. This is crazy. I've actually never used AI like this.
+
+It feels so dumb, but it actually makes so much sense. So now what's happening is it's coming up with a bunch of key questions to evaluate if the idea is any good or not. What specific pain points with Goodreads are you solving beyond aesthetics?
+
+Have you researched how Gen Z specifically engages with reading and book discovery compared to other demographics? What unique features beyond the spinner would differentiate? It's literally asking all the tough questions that actually make sense.
+
+Wow, that's really, really good. Let's see. Let's see what else.
+
+Lord 007 says. If it survives the interrogation, I tell Chloe to write up a super basic one-page plan. So, you know, if I was actually doing this idea, I would have to literally research all these things.
+
+So this is the hard work about building a startup, building a SaaS. That does take time. And this might take me a full day just to actually go and figure out all this stuff out.
+
+But let's just pretend like this is a good idea and pretend like I've gone and researched this and move on to the next step. I'll ask you to write up a super basic one-page plan. It's called a PRD.
+
+Just get an outline. And they'll say, can you write a super basic PRD based on what you think is the best answers to these questions? And will result in a $150 million exit like Goodreads did to Amazon.
+
+And let's see. Novel spin. Okay, so it's really leaning into this spinning idea.
+
+And it's just writing out the executive summary, the market opportunity, the target audience. It went with Gen Z with a secondary focus on millennial. Key points.
+
+Okay. Discovery. The core features are the novel spin wheel, mood-based recommendations, and micro-genre exploration.
+
+I actually think that's pretty good. Beyond basic genres to ultra-specific niches that Gen Z identifies with. With social features like reading challenges, book clubs, and social sharing.
+
+It gives you some idea around what should the user experience look like? Should it be minimalist? Customizable shells.
+
+I actually think that's really cool. And also, that's really screenshot-worthy, right? Like, I want to share that on other platforms.
+
+I think that's brilliant. Because that's going to generate... That's going to basically get my K-factor, aka, you know, my virality up.
+
+People are going to be sharing these like crazy. Think of like Strava, you know, the running app. People love sharing that stuff.
+
+Wow. Wow. Okay.
+
+So, it gives you launch strategy, the success metric, competitive advantage, and the path to $150 million exit. Okay. I feel really good about that.
+
+I don't know if you do, but I do. So, boom. Step six.
+
+Now, I've got a simple outline. Back to Claude. But this time, we're talking looks.
+
+I get to break the whole thing into small, shippable chunks, focusing only on the UI. For each chunk, it tells me what each page will show, what you can do it, and even draws little user flow diagrams. It's surprisingly fast.
+
+Now, I didn't even know that you can use Claude for this. So, let's just see. Okay.
+
+Focusing only on the UI. So, let's go and do this and see what happens. So, we'll say, okay, great.
+
+I want you to break the whole thing into shippable chunks, focusing only on the UI. For each chunk, tell me what each page will show, what you can do on it, and even draw little user flow diagrams. It's surprisingly fast.
+
+All right. I'm not sure this is going to work, but if it does, okay, shippable UI chunks. It's doing it.
+
+It is doing it. So, what it's doing is making these shippable chunks, and then we're going to take this. Wow.
+
+The user flow doc. I mean, user flow diagram, like pretty basic, honestly, but like maybe this works. Maybe this will be good enough for V0.
+
+Like it's super basic. This is basically like a, you know, a pen on a napkin, right? An ID on a napkin.
+
+Okay. Wow. Okay.
+
+So, then let's go back here. I checked Claude's work. I almost had Claude there.
+
+Make any tweaks and then get it to turn each UI chunk into a prompt for V0 dev. Okay. So, make each UI chunk into a prompt for V0 dev because, and this is a little thing.
+
+I like to explain to the LLM why I'm doing stuff sometimes because or else it gets lost because I am going to get V0 to make this a beautiful and living thing. Let's see if this actually works. Oh, man.
+
+Crazy. See, you don't even need to know how to prompt really well here, right? Like there's so many guides around how do you get the most out of V0, for example.
+
+But it's like just ask Claude or ask ChatGPT how to do the best prompting. Like it will tell you how to do the best prompting. It's incredible.
+
+Okay. So, now we have all these incredible prompts and I'm just going, I'm reading through it. I'll read through one.
+
+The novel spin wheel designed to interact the spinning wheel feature showcasing book covers around a circular interface. When spun, the wheel should animate smoothly and highlight a selected book with subtle haptic feedback and visual emphasis. Include filter controls to customize wheel contents by genre or mood.
+
+When book is selected, it should expand to show basic details with option to view full details or add directed to library. I couldn't have said it better myself. That's pretty awesome.
+
+So, now let's go over to v0.dev and start generating the UI. And we could tweak the prompts as we go until it looks right. So, then let's pull, let's just do the novel spin.
+
+Ooh, actually, core reading experience. Let's start with this, chunk one, the core reading experience and see what happens. I'm just going to literally just paste it.
+
+YOLO, press go and then see what happens. So, it's making a next JS app here. Code is coming.
+
+The reason I started with the first chunk, by the way, was because I felt that if I went with chunk two, it wouldn't... I felt like it needed something like the overall aesthetic prompting in order to get that right. So, I feel like you do need to start with your first chunk as a little tip there.
+
+I got to say, just like going through this, I knew that that Reddit post, like I knew that it would be directionally right. It just felt directionally right because I'm constantly building my own ideas. But I'm pretty shocked with how well everything is going so far.
+
+Like as someone who's built, has advised multi-billion dollar companies, you know, as an advisor at Reddit, advisor at TikTok, I've built venture-backed companies, consumer-backed companies before. And I'm just impressed with how quickly it gets to the substance, right? We're right to the substance.
+
+I was really impressed with just like the questions, actually. Like here's the 20 questions that you should ask yourself. So many times we have ideas for stuff, but we shouldn't even...
+
+We shouldn't build them. And we should just like kind of hash it out. And the way to hash it out, you know, it doesn't necessarily need to take time.
+
+Like we're talking a few hours to like figure out if this is a good idea or not. But yeah, because I could have gone through that process answering those 20 questions and be like, you know what? There's actually just too much competition.
+
+I'm not sure that focusing on Gen Z is the right approach. So happy I went through that. Okay.
+
+Novel spin. Here we go. It seems like it's a mobile...
+
+It looks like a mobile web app. So, wow. It's gone and created a home, the library, the search.
+
+And it's, you know, it looks fine, I would say. It doesn't... There's nothing to write home about.
+
+I don't know what you think, but I don't think there's anything to write home about. I see, you know, it's still loading the photos. So maybe it'll look nicer with photos.
+
+But I'm just going to ask it, like, is this a mobile app? Or is this a mobile web app? Could you design a native mobile app?
+
+I'm not sure it could. I mean, maybe it could. Let's see.
+
+I've never tried it. Right. So it's gone and it's told me that it's designed a mobile optimized web app built on XJS, on a native mobile app.
+
+But it could create a mobile app design using React Native. That would work. Now, that's not a...
+
+React Native isn't, you know, Swift, right? So it's not... It might not be as nice as, for example, the Q app that I showed, which is probably developed using Swift, which is, you know, known as...
+
+That's actually a native mobile app. But, you know, React Native would be a great place to start if we're just testing to see and see if we can get product market fit with this idea. So while that's going, let's go back to the Reddit post and see what we have to do next.
+
+So he says, he generates UI piece by piece, tweaking the prompts as he goes until it looks right. And then once the whole UI is done in v0.dev, he literally just downloads the code. He gets Claude to write in a simple readme file that explains what we're building.
+
+Then he uses cursor or VS or CodePilot, you know, pick a tool of your choice to start adding the database back in Longic and all the stuff that makes it actually work. And that's pretty much how he goes from a random idea to hopefully a working SaaS product. It's kind of crazy how much AI speed seems up these days.
+
+Yes, sir. So let's go and just see what v0 ends up, you know, creating. And by the way, like, this is why I wanted to do this.
+
+I want, you know, the reality is we know that v0 is going to create something that's like probably pretty nice. And, you know, the point of this episode is not to show you how to take it from, you know, 80% beautiful to 90% beautiful. Because I don't actually, I actually don't think that matters, you know, realistically.
+
+I think what's going to make this product stand out with Goodreads is it just needs to be clean. It needs to be aesthetic. The copy needs to be high quality.
+
+And it needs to be actually serving a real pain point. And this process of actually how to build a SaaS app within a weekend using AI, this is the process that I would take. It makes a lot of sense.
+
+So let's go and just see what it looks like. See, it's already written 240 lines of code just on the profile screen alone. So this is kind of crazy.
+
+So and you can't preview it yet because it's just loading. So you can see on the left hand side, look at all the different pages that it's creating, all the how much lines of codes here. Okay, so it seems like it's completed.
+
+I've created a native mobile app using React Native. Okay, but I can't preview it. So basically, wow, I can't preview this, which is kind of lame.
+
+And then let me just ask this. Why can't I preview this? Right.
+
+So if you wanted to preview this, you'd have to download it, download the code and just throw it into Xcode, which is, you know, you should watch. We actually did a, you know, a video, an episode recently about how we actually do that and what are the best practices. I'll link it in the show notes.
+
+But friends, we did it. You know, we didn't we did it. We figured out how to actually build a SaaS app in a weekend.
+
+This is the process I would use. And hope you enjoyed. Hope you learned something.
+
+And, you know, stay sipping. Enjoy. Happy building.
+
+Don't just share this video or episode with a friend. Don't just like and comment, although like and comment and subscribe. But most importantly, go and ship your ideas.
+
+Go build something. And I can't wait to see what it is you build.

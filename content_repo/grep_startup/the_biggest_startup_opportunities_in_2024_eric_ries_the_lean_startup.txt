@@ -1,0 +1,487 @@
+A startup figured out that the only time the buyer ever switches to a new vendor is when the old vendor dies. They literally wrote an algorithm that reads obituaries to find out when vendors of this type die so that they can go pitch to be the new replacement vendor. And they realized, hey, I could buy out the vendor before they die.
+
+Actually, it would be a pretty good, pretty good strategy. So anyway, you can buy vendors, you can buy a customer relationship, you can buy all that stuff. What you cannot buy is understanding of the customer.
+
+So these roll up strategies all depend on somebody somewhere in the management of the new thing, actually understanding the business at the level of the customer and what they actually need. Eric Ries, welcome to the show. So excited to have you.
+
+I read your book more than 10 years ago, The Lean Startup. And I can honestly say I wouldn't be here today without reading that. So this is kind of cool for me to have you interview.
+
+I'm kind of nervous. Well, don't be nervous. Thank you for the kind words.
+
+I'm glad you found it helpful. Today, what we're going to do is talk about some of your ideas. I also brought some startup ideas that I have free startup ideas that anyone could take.
+
+And I'd be curious your perspective, feedback on them and your brutal, honest opinion. Does that sound cool? Let's do it.
+
+You've got a couple ideas here. And I want to start with AI companies are funded by different investors than in prior areas. What do you mean by that?
+
+There's something about AI that has been really different in terms of the kinds of founders that are pursuing it. So you see like a number of the leading AI firms are not funded by the leading venture firms from the SaaS or social media eras. Not to say that those firms have been on the sidelines, but it's been, it's just, it's been different.
+
+I think it's been notably different who's backing it. You see a lot more involvement of corporate venture firms, which you didn't see before. There's something about AI as a technology that is getting people to treat it differently than past technologies.
+
+The public is so attuned to the dangers of AI. I think people are a lot more interested in who governs these companies and how they're structured, how they're governed. So that's been a lot of my work of late has been trying to talk to people about the startup governance issues that are unique to really dangerous technologies with huge upside like AI.
+
+And you also see just, it's a difference in the kind of founders that are doing this. They tend to be older, they tend to be a little bit more sophisticated. And I've heard from a number of folks that just feel like the AI founders are not super pleased with how the previous waves have gone.
+
+So, you know, there's a lot of skepticism of people that went all in on crypto or that think that the social media era was a big rousing success. Certainly a lot of money was made, but there've been some pretty negative externality. So I think it's just been interesting to see those issues play out in a new, in a new tech wave with new, new backers, new funders, new founders.
+
+And we're seeing a lot of, you know, people call them rapper AI startups in the space, like indie hackers who will take a use case on top of chat GPT or another LLM and just build a purpose-built chat GPT for lawyers, chat GPTs for something else. Do you think that there's longevity in those businesses? We haven't had a bona fide platform war in tech in a little while because Android iOS was not really the real thing.
+
+I kind of feel like Google, their heart was never really into it. So it wasn't like Apple, Microsoft or Coke, Pepsi, you know, Intel versus over the 68,000 Motorola processor. Like it's just, it's been a while since like really mega tech titans went to war with each other.
+
+Many people in this era have forgotten the old parable of picking up dimes in front of the steamroller, which I believe this ism applied to platform wars originally dates to Jean-Louis Gasset of BOS and Apple fame, but I've actually never had the chance to ask him. That's where I learned it from. The parable of the, of the picking up dimes in front of the steamroller is that when you have a platform war, the platforms are the steamrollers.
+
+So you're building a new platform that many, many businesses are going to be built upon. Think about like Microsoft Windows or the Intel processor. In such a situation, the platform has this tremendous logic and momentum behind it.
+
+I mean, it really is a steamroller. It flattens anything in its path, you know, open AI or Anthrop. These are very fast moving companies, very impressive actually considering, but they're still behemoths and they're still dealing with multi-billion dollar problems.
+
+So although the steamroller has the power to flatten anything it wants, it is intrinsically slow moving. You see how old this metaphor is because dimes used to be worth something. You see a dime in the path of the steamroller.
+
+So long as you can run into the street, pick up the dime and run out of the street before the steamroller arrives, the dime is completely yours. Steamroller is not going to stop, pause, pick up the dime. It's too small for them to care about.
+
+And the problem with the kind of naive strategy of picking up dimes in front of a steamroller is it works perfectly unless you trip and fall even one time. So if one time you go for the dime and you don't get out fast enough, then you get flattened by the steamroller and it's, and it's dangerous. So it's a useful metaphor.
+
+Many of these rapper startups are dimes in front of the steamroller type businesses. And the key to the parable is it's not bad. People are acting like rapper startups are bad.
+
+It's not bad. It's just, you have to really understand the strategic situation that you find yourself in. So if you're taking venture money and you're promising people to build a multi-billion dollar company, that might not be the right time to do that.
+
+But the key for me is always, what do you do with the dimes after you pick them up? Because I think a lot of people start what seem like rapper startups at the beginning, but there is a playbook for what to do in this situation. If you want to build something with more enduring value.
+
+So for example, the power of a rapper startup is that you own the customer. And in a lot of businesses, whoever owns the customer actually has the power for the whole, what they call a value chain of that industry. So I do think some of these vertical specialized rapper companies, they might be able to use their rapperness, build up customer relationships, collect proprietary data, you know, I don't know, train their own models, build their own new thing.
+
+That is theoretically possible, although currently prospects for doing that don't seem amazing. But you might also see a situation where, in a platform war, where the platforms are forced to compete to a lowest common denominator, like I thought would happen with cloud platforms, where the margins get eroded by the fact that the platforms are more or less a perfect substitute for each other. There are businesses that can be made where you manage on top of that layer permanently by playing the implementation vendors against each other.
+
+So you could also imagine a vertical rapper that allows the customer to seamlessly switch between many underlying models made by many different companies. And because of that, those competitive dynamics might be able to keep them ahead. And then I think there's some people whose goal is to bootstrap their way into their own steamroller by building the customer relationships, collecting proprietary data, and then training a whole new model out of that.
+
+So I've seen rapper examples where at least each of those that I've just described is the official strategy of why they're raising money and why VCs have deployed money against them. You can handicap the likelihood of any particular one working in this particular market. Boy, it does seem like the steamrollers have tremendous advantages, but there's a strategic logic to it that makes sense.
+
+And then you also have plenty of indie hackers, as you mentioned. I'm glad you started with that because not everything has to be venture-based, venture-backed, and not everything has to have a 10-year goal. And I'm a big fan of building companies with longevity and long-term thinking.
+
+It was a big part of my work. But the point is to use the right tools for the actual underlying motivation of the founding team. I know plenty of people that are building businesses that they'll be free cashflow positive.
+
+They'll throw off lots of cash. They'll be very lucrative for the founders until such a time as OpenAI, for example, decides, oh, we're just going to incorporate that natively into the platform. And then maybe they'll die at that time.
+
+But from the founder's perspective, it's a great deal. And especially for younger indie hackers, I know a lot of these projects are run by college students, by recent graduates, people trying to break into the industry. And their career equity upside in having done a cool thing is so much more valuable than the money that they're going to make that those startups are actually, I think, a really brilliant use of the free time and the flexibility that people at that stage of their career have.
+
+So I think it's really important to understand what are the motivations behind the startup, not to just paint them all with the same breath. So what you're saying is there's a lot of unseen benefits to creating something that might go viral, might get picked up, might be a rapper. And you might get steamrolled, but that might get you a huge job at OpenAI, maybe.
+
+Maybe they see what you're doing and they're like, wow, this is awesome. When the whole industry is being upended, the meme is from Game of Thrones, chaos is a ladder. Everything's being upended that creates massive opportunities for people that are willing to throw themselves into the fray.
+
+As much as people have been deriding rapper startups, people make fun of those people. But I think there's a lot of reasons to do it. And not all those reasons are bad.
+
+Another good example is Yohei Nakajima, who built Untappd VC. His whole thing as a venture capitalist is to build in public. And so he built Baby AGI, the AI agent open source framework.
+
+And he's done this, I think, with previous waves. So I think he even did a bunch of crypto stuff. He's someone who's building projects for the sake of getting to know the technology and see what it can really do, and to be in community with other people who are trying to figure it out.
+
+And through that, is going to be able to access lots of cool professional opportunities for himself and his firm. As an industry, we have a tendency to be like, there's only one path or only one kind of person that's really valuable. And of course, we're in a hierarchical, patriarchal society that is just, we love to put the Elon Musk type figures up on the pedestal and make it about them personally.
+
+And not to take anything away from the accomplishments of the so-called great men of history, but there's a lot of other people involved. There's a number two and the number 10, and then there's all these other people involved, even with those success stories. And then you have thousands or even millions of other people that are finding ways to benefit from the new technology.
+
+Someone asked me for advice and said, my two choices are do a wrap or a startup, or sit on the sidelines and do nothing. What are you going to learn more about AI from? I'd rather you do something that is doomed to fail and it's a terrible idea, because that gives you the chance to pivot into something that actually might work, versus sitting on the sideline and doing nothing.
+
+I think your point around customer data is a really good one. If your goal is to get customer data, and even if you get steamrolled in the process, there is a chance that you might become the steamroller. I think we do startups, it always feels daunting when we're building them.
+
+And there's always that chance that in the web two and web one era, I was like, what if Google adds this feature? It's very tricky to talk about this because people are so reductive, especially now because of social media, people love to polarize, not to be reductive about it. People infer from what we're talking about that, oh, you're saying that nothing can be known and there's no such thing as what better strategy or a worse strategy or anything's as good as anything else.
+
+It's kind of like a startup version of moral relativism. It's like, no, we're not saying that. And there are people out there with special knowledge and special talent and special abilities who can do things like under certain circumstances predict the future.
+
+Terrific. Our goal is simply to get people into motion so that they have a chance to become one of those people. But you have to be willing to do things.
+
+And of course, just doing things at random is better than doing nothing. But better than doing something at random would be to do a structured hypothesis where you're going to learn them as much as possible. But I do think people have moved away from the idea that having a plan is even a good thing at all.
+
+And that doesn't make sense either. We need some kind of strategy that makes sense on paper. Then go test that against reality and discover where you're wrong and then adjust whatever things need to be adjusted.
+
+It's why we called minimum viable product a product, not an experiment or a test or hypothesis. We wanted to remind people that although we are removing features and we are de-scoping in order to get learning, we're still trying to build something that is fundamentally useful. There's a lot of people out there that want to build half a product and it just makes no sense.
+
+It's like, yes, you've de-scoped, but you're not delivering any value to anybody. Our goal should be to de-scope down so that we provide some level of value that is still meaningful for testing the hypothesis, maybe to a smaller number of people, or maybe with different materials than we ultimately want to do. There's so many ways to cut down on the extraneous bits.
+
+But I feel like that gets easily misconstrued as a saying, there's no such thing as knowledge. Nobody can know anything. Startup outcomes are random.
+
+And that's definitely not true. What do you think of the idea of instead of building an AI wrapper startup that you have to build an MVP that takes some time, that there's a learning curve? If your goal is customer data, what do you think of the idea of buying a non-AI startup in a particular vertical?
+
+For example, in the lawyer example, maybe you buy a Shopify for lawyers, you buy that, and then you add on the AI capabilities. What do you think of potentially a roll-up type idea in that space? Oh, I know people that are doing it.
+
+I'm an investor in acquire.com, so I'm really conflicted because that's the number one best platform to go do those roll-ups on. There's a million, trillion different small businesses of various kinds. Once you know the technology well enough to be able to predict the effects it will have on a given business, then it's just very clear that we're living in a time of tremendous arbitrage where tech non-enabled businesses can become quickly AI enabled.
+
+Skip, in some cases, skipping right over the SaaS era of deployment because the technology is that good. The thing I will say is although you can buy customer relationships, you can buy customer data, you can buy customer contracts. And someone was just telling me a story, an incredible story about a startup that was buying out legacy vendors county by county.
+
+It was like a municipal service. The reason they started doing this is they figured out that the only time the buyer ever switches to a new vendor is when the old vendor died. They literally had a strategy of, they wrote an algorithm that reads obituaries to find out when vendors of this type die so that they can go pitch to be the new replacement vendor.
+
+And they realized eventually, hey, I could buy those companies. I just buy out the vendor before they die. Actually, it would be a pretty good, pretty good strategy.
+
+So anyway, you can buy vendors, you can buy a customer relationship, you can buy all that stuff. What you cannot buy is understanding of the customer. So all of these roll-up strategies all depend on somebody somewhere in the management of the new thing, actually understanding the business at the level of the customer and what they actually need.
+
+So like that tends to work a lot better if you've proven it once and now you're going to replicate it. And so yes, your lawyer example of I'm going to roll up a bunch of legal small business service and I really know that business well, I'm going to bring AI to bear on them. I think that makes a lot of sense.
+
+You also see some that are like, I'm just going to buy whatever I can get my hands on and AI-ify it. I'm a little more nervous about those because although I do think that could in theory work, you can imagine like a private equity firm that just all they do is buy companies, add AI and then resell them. You have to really have tremendous confidence in your own ability to come in and really understand what the customer's like main pain points are in that industry so that you can deploy AI against it.
+
+Let's say you are one of those PE people because we've got a bunch of investors who do listen to this podcast and you did want to buy a roll-up of legal tech or legal services and you were trying to figure out how can I get from not knowing a lot about this space to knowing everything about this customer in a short amount of time? Like what frameworks or advice would you give to that person? The more I think about it, the more I feel like legal is like one of the worst verticals to try this strategy on.
+
+So we should pick a different example because it's like there's special rules that govern the behavior of law firms. I think actually like some of the legal, full stack legal startups maybe would have a better shot than a roll-up. But anyway, but to answer your question, people are always looking for a framework.
+
+They're always looking for like something complicated here. It's not complicated. What you have to do is spend your time talking to customers.
+
+And yes, if you don't know how to do a customer discovery interview, like go back and reread the Lean Startup or go by reread, you know, if you want an even more classic book, The Four Steps to the Epiphany, the original customer development book, or if you really don't know how to do it, could you spend one hour reading a book and nine hours talking to customers? That would be more profitable. And most people are too scared to do this.
+
+I'm introverted. I don't really like talking to customers either. I find a little bit, you know, I'm getting terminated.
+
+It makes me nervous, but like you got to get over it. And the key, I think, to get over people's reluctance or nervousness about it is like, don't, don't be like, well, I got to spend 10 hours today talking to customers all day long. And I got to lock them in a room.
+
+It's just like, could you do one a day for 20 minutes to start? Or if you can't do one a day, could we do three a week? Is there a flow rate of customers that you could commit to me that you will talk to?
+
+And people are like, I don't know what to ask them. Give me a framework. Years ago, you know, I was first trying to evangelize Lean Startup to People and I had a great entrepreneur.
+
+He was really smart, great reality distortion field. And he was like, had this product. He was doing okay, but couldn't quite ever cross the chasm.
+
+And I was like, look, how many customers have you talked to? And he's like, none. And he was like, can you tell me even one example of a tech company where like customer feedback helped them?
+
+I have the vision. If I talk to customers, that's just asking them if they want a faster horse. I was like, look, I hear you.
+
+I hear you. All that's true. But here's what I want you to do.
+
+Will you just talk to three customers for me? Call three customers, ask them how they use your product and why, and then call me back. If you learned nothing from those conversations and they confirmed everything you already know, I will never bother you about this again for the rest of your life.
+
+Otherwise, every time you call me, this is what I'm going to hassle you about. So save yourself the time. He's like, all right, just to stop you from bothering me about it.
+
+I'll do it. And I'll never forget. He calls me back and he's like, completely forgotten our prior conversation.
+
+He's like, you won't believe what these customers told me. First of all, one of them's in education. One of them's in an enterprise.
+
+One of them's in small business and none of them are using our product correctly. It was just like this immense amount of knowledge gained from three conversations. And what's so interesting about it was I was like, what is this?
+
+Are you ready to have your next three conversations? He's like, no, why? He's like, I already learned everything I need to learn from these three.
+
+These are the three representative samples. He rewrote the whole business. I was like, that's a lot better than nothing, but could you do three a week?
+
+Could we do three a day? You need to have a regular practice of bringing this feedback into your mind, not to abdicate your role as the visionary, but simply to do science, have your hypotheses be periodically, periodically tested. You don't need, it's always like customer recording and sentiment analysis software.
+
+It's all fine. But honestly, the most valuable thing is 20 minutes with an actual customer. There's just no substitute for that.
+
+How do you get from, I want to talk to customers to actually speaking to customers? Everyone I know who actually in their heart wants to do it is able to find the customers without difficulty. I'll give you an example from my own life.
+
+I built a stock exchange, literally the same regulatory category as NIC or NASDAQ. I spent 10 years of my life getting the regulatory approval to do it. I mean, it's been a incredibly difficult project.
+
+When I first began, I knew nothing about financial regulation, securities law. I was a real, I had like deduced from first principles, the need for a stock exchange, a new stock exchange. And yet I didn't know anything about it.
+
+If you were like, your life depends on talking to a stock trader tomorrow. I would have been like, I guess I'm dead because I don't know anybody. But like, even under those very adverse circumstances, it wasn't that hard.
+
+I just, everybody I met with for any reason, I was like, do you know anybody that knows anything about public markets? And people will be like, not really, but my friend so-and-so will know more than I do. Can I talk to so-and-so?
+
+Great. So-and-so, do you know anybody? And I would just, you know, after three, four hops of doing that in your social network, you will be with a customer.
+
+It is not hard unless you're doing something super niche, super obscure. And like not every person I talked to was like the perfect ideal, you know, you have to be willing to talk to whoever's willing to talk to you. Someone told me a story the other day, I forgot now who it was, but there was, it was young founders.
+
+I think they were in their twenties and they literally went and they went to live in a motel six for six months. It was a technical person and his two or three partners. And they literally just were on the phone all day, every day, calling customers while the coder was coding the thing.
+
+And every time the coder had a question, it was just like a very immediate interplay between the coder and the customers P and like, yes, it was pretty miserable to live in a motel six for a couple of months. But the flip side is they had very deep customer insight into it has a great story about the first hundred customers that they called. Like it's just not that difficult.
+
+And Scott Cook founded into it in the days of the yellow pages. He had to like pick people out of the white pages and like call them on a telephone. Now we have way, way, way, way better tools.
+
+So yeah, having a hard time finding customers to talk to, it says more about their internal state of determination than the external world. You got to want it. You got to really want it.
+
+In 2015, I founded a venture backed business called the Island. It was kind of like a discord competitor. Some of our early users were college kids.
+
+You know, we're getting a few thousand users, four or five, 10, you know, tens of thousands and beginning to be hundreds of thousands. But as you know, in consumer social, if you're not getting millions of users, you really got to go back to the drawing board. So we said to ourselves, let's niche down.
+
+Let's build. If group chats is the new social network, let's go build like the Facebook of back in the day where it was only focused on college campuses, but as group chat. And for one investor, famous, famous investor told me, he said, get out of the dog patch in San Francisco.
+
+There's no college students in the dog patch. And I booked a flight the next day to Tuscaloosa, Alabama. And I lived for six months in Tuscaloosa, Alabama.
+
+We built a team there and we went from college campus to college campus. And just being there with our team, building features, being in the room and just seeing it, seeing the look on people's faces, there's nothing like it. And that was the key to everything.
+
+Totally. There's all these hacks like that to get closer to customers and they're powerful, but people always hear these stories and they're like, but I can't move to Tuscaloosa. So I guess it's not for me.
+
+It's like, look, we live in the age of the internet. Okay. You can, if you want to find a way to be closer to customers, you absolutely can.
+
+Nordstrom did a lean startup thing years ago called the Nordstrom Innovation Lab, where they were experimenting with internal teams. And it was, you know, it wasn't especially notable as a corporate innovation effort. I think ultimately the parent company, you know, moved in and did one of those classic reorgs and they got reorged out, but they produced a video or a series of videos where they would follow around the team and they would show them doing the thing.
+
+And one of the like classic things they did is they would, they would set up in a Nordstrom store in the retail section of the store where the customers are and build apps with the customers and the sales associates, like right there. And it was just like really powerful to watch the things that happen because you have the developers like, Oh, I have an idea. We'll have an iPad app where people can like, see what their sunglasses would look like, you know, on their face, like through the app or something that, you know, I don't exactly remember what it was.
+
+Cause I'm not, I'm not huge into fashion anyway, but it was cool. It was all, each thing was, it sounded really cool. And it was like amazing to watch the person be like, excuse me, customers stopping by.
+
+Like, would you be willing to try this? And the person be like, what does it do? And they're like, it does this awesome, cool thing.
+
+And they're like, no, it doesn't like, yeah, all you have to do is like push the button and like hit control or delete. And then like stand on your head and open your, and then they'd be like, this doesn't do nothing, you know, hand it back to them, right? Like just see those interactions.
+
+There's no substitute for that. And again, we're not talking about advocating the vision and having customers tell you what to do. It's just about testing your hypothesis and closing down that feedback loop.
+
+I want to talk about another thing that's on your mind here on your list. We need new companies, new models, and new investors who can take the learnings of the last cycle and make sure we don't repeat the same mistakes. What do you mean by that?
+
+I think there is a groundswell for something new. Let's go back to don't be evil. Everyone in the industry remembers Google's don't be evil motto.
+
+It was like such an idealistic and like hacker-ish way of talking about what does it mean to become a big company. And everyone, although people still admire Google, like most people will admit to some level of disappointment about how it turned out compared to what we thought it was going to be. And to me, this was perfectly encapsulated by an ex-Googler I was talking to the other day.
+
+And I asked him, he was talking about how he'd been there for a number of years and how disillusioned he was by what had happened to the culture. And I said, okay, tell me this. What do you believe is the probability that Google will file its next quarterly report on time?
+
+And he looked at me like, obviously a hundred percent. I was like, literally 100.00%. He's like, oh, there's nothing on earth that could stop it.
+
+I'm like, what do you view as the probability that Google might in the future kill somebody for money? And he was like, oh, come on, man. That's not fair.
+
+They probably wouldn't do that. It's like, probably. It's like, yeah.
+
+I was like, a hundred percent sure they wouldn't do it. He's like, well, a hundred percent. No, I can't.
+
+Who can say that? He's like, well, what if their social network was involved in a genocide? What if the self-driving car hit somebody?
+
+And I was like, I don't think they would cover it up. Like 80% probably they would do the right thing. And I'm like, okay, not as certain as the sun will rise tomorrow.
+
+He's like, no. I was like, okay. So tell me this.
+
+Do you believe that the people at Google have a natural affinity in their heart for quarterly reporting, but not for don't be evil? And he's like, no. So I was like, so why is it that one is as certain as the sun will rise and the other, you're not sure if it's going to happen, but you think probably like, what's the difference?
+
+And he like, was really like kind of baffled. And of course the answer from the outside is really obvious. The reason Google files at quarterly reports on time is there is a unspeakably massive bureaucracy apparatus designed to make sure that that happens, starting with, you know, government regulations on down to like controls on every individual dollar of spending there to everything to make sure that it goes correctly because the company really cares.
+
+And to me, that's so telling. The company really cares about its financial reports, but like, what about the health and wellbeing of its customers? It's okay.
+
+You know, they're doing their best. It's fine. And like the idea that we've like built a universe of companies, I think, and again, the social media era is like the perfect example of just how badly this has gone, where it just, they have been successful by conventional definitions, but they, but the negative externalities have been awful and it didn't have to be that way.
+
+And so I think we're starting to see in the next generation of founders, tremendously more interest in building companies companies that have an, uh, that are non-sociopathic, basically like have a reason for existing other than perpetuating their own self-interest. Um, and those companies are not just like do-gooder activist type companies. They're companies that see being a trustworthy counterparty as a source of strategic advantage.
+
+And what's cool about that is they're able to out-compete these like, frankly, weak companies that don't stand for anything. I think AI is a big part of it because AI has people spooked and it's people like hungry for new models, new ideas. But because of that, I've been talking to a lot of non AI companies where the founders also have that appreciation.
+
+They're like, look, I don't want my technology to be used for evil. I don't want to build a company that, you know, I make a lot of money, but it fundamentally is a malign force in the world. And I don't want to work somewhere where the company doesn't stand for anything.
+
+People, as soon as they hear this, like, oh, it's politics. Oh, it's wokeism or whatever. It's like, no, we're not talking about like politics for the sake of virtue signaling.
+
+We're talking about the core thing at the heart, the beating heart of this living organism called the company. What does it do? And is that thing designed to make the world a better place?
+
+Is it designed to maximize human flourishing or is it designed for something else? You know, when you raise venture capital, you're making the promise that either you're going to sell the business or that business is going to go public. So you get to the place where, you know, you ring the stock exchange, you're finally public.
+
+Can you be a publicly traded technology business and still maintain that culture? Without a doubt. It's not easy.
+
+Think about it like this. To me, I was saying company is a living organism. I really believe that.
+
+If you're a living organism and there are a bunch of systems inside your body that allow you to stand up straight, like you have to have a skeletal system that is strong. You have to have a muscular system. The muscles require a circulatory system.
+
+You need an immune system. If I remove just the one right bone from your body, the whole thing collapses and you can no longer stand. Let alone if I, you know, if I make even more graphic deletions, but I'm at this industry long enough now that I've watched it happen over and over again.
+
+I've seen these companies become surgically deboned, like their systems are being stripped away so that by the time they go public, they're really vulnerable to these outside forces that then cause them to collapse into bureaucracy, into sociopathy, into kind of these bad dysfunctions. And I'm frankly tired of it. I just feel like these companies are so beautiful and they're so amazing when people build them.
+
+They have such tremendous intention behind them. And when that intention dissipates, like not only is it bad for society, not only is it morally horrible to watch, they also make less money. Like so many of these companies collapse, first they collapse morally and then they collapse, you know, financially.
+
+And it's actually worse for investors in the end. So I feel like we could do better as an industry and building companies that stand for something. Also, if you're a startup and you adopt the mentality of don't be evil, by definition, you're going against what a Google would be building at that stage.
+
+Not to pick on Google, but... No, I feel bad picking on them because they're not, they're not even close to the worst, but yeah, exactly. But you know, insert large incumbent.
+
+It's why Google exists in the first place. If you go read their original manifestos and stuff, they've betrayed everything by that. But they used to be like, we would never put the search results and the ads co-mingled so people don't know which one.
+
+Like that's evil. How could you do that? It's like, anyone Googled anything recently?
+
+Listen, Google's on the brink of collapse. You know, obviously they have many other lines of business. I'm sure it'll be fine.
+
+But like the search engine is extremely vulnerable now. And obviously with AI on the rise, like people are really worried about what's going to happen to the Google search engine. But like part of the reason is, is there anybody who would be sad that the Google search engine ceased to exist anymore?
+
+Like it used to inspire such loyalty. And now it's like, whatever, I'll just use Bing, or I'll just use an AI. Like I, nobody cares because it doesn't matter.
+
+And we saw that with Silicon Valley Bank. Silicon Valley Bank used to be the most beloved, like Silicon Valley startup institution. You know, they would, they would make loans and invest in startups when nobody else would.
+
+They would bank startups when nobody else would. And then over the course of many years, they just pissed away that leadership. And it didn't cost them anything for years.
+
+The VC community turned on them in a heartbeat and caused a bank run against SVB. There was nobody left to stand up for them because everyone was like, ah, we don't really care. And if that brand trust slowly over time just became just another bank and did the kind of same old shingings as everybody else.
+
+And then when they, you know, when they went, when they were in crisis, then nobody had their back. And again, it goes back to the idea that trust is a really important asset. It's like an asset that should be accounted for on a company's books that most companies don't account for.
+
+And you are trustworthy if you have acted virtuously with respect to your key stakeholders in the past at your own expense. So if customers see you repeatedly standing up for them when you didn't have to, then they come to trust that you are someone they can trust with their wellbeing. You have all these startups who, when you look at their pitch deck, it's like, I am going to transform the world.
+
+I will literally rewire the relationships of all humans with each other and with their governments and institutions. And I'm going to literally take over the world and become emperor of the world. And you're like, oh, really?
+
+It sounds like with that kind of great power comes great responsibility. Would you have an ethical or moral responsibility? The people whose lives you're up in, they're like, oh no, I'm just a little software company.
+
+It's just like, can you pick a lane? You know, it's like, it's laughable. It's like, look, either be a world changer and take that responsibility seriously or get out.
+
+Don't, you know, don't, don't hide behind the ignorance. And like, you know, again, I feel like in our grandparents' generation, it kind of made sense. You could be like, I'm just a small business owner or I'm just a manufacturer of products, or even I'm a big company.
+
+You know, once I sell a product, it goes out into the world. I don't know what happens, but man, we live in the age of surveillance capitalism. Companies know in incredible detail what happens to their products, what effect they have on customers.
+
+Facebook even commissioned the scientific research to find out if their product makes people depressed. And then they found out that it does. And they were like, oh, better bury that instead of take it seriously and do something about it.
+
+And I think that's, I think that's sad. Put it out there. Every website should have a, what we stand for tab as one of their main navigation tabs, right?
+
+They have an about us, they have a contact us, they have their products, how it works. But what we stand for, I think is the missing tab on so many websites. People in that tab need to say, not just, here's what I intend to do, but here are the externally verifiable commitments that I have made that mean you can trust me.
+
+And I think that's like the structural side of this. We have too many manifestos about purpose driven companies. The ESG movement has been a total failure, you know, from my perspective, because Philip Morris has great ESG scores.
+
+Something's gone really wrong here. So before we deal with regulation and before we deal with the ESG movement and investors, we as innovators, we as company builders, we got to get our own house in order. And the first question is, what do we actually want to accomplish with this company?
+
+And I literally had a founder, I was helping set a company, was watching the open AI debacle. And he's like, just what are the best practices for like, how do you set up a company so it will remain true to your original intention? And everyone's like, I don't know, or like, try this one weird trick, maybe that will work.
+
+Or just like, oh, there's nothing you can do about it. And it's like, no, that's like saying like, yeah, you know, I, I tried to build a boat and like, I got 82% of the planks were air, you know, watertight. So but then it sank.
+
+So I guess making watertight planks is not the key to making a boat. I think we need a new playbook, a whole new approach to building, you know, companies that are purpose built fit to purpose for the century to come. And I think if you are going to create a what we stand for tab, to your point, it shouldn't just be virtual signaling, it should just be it needs to change.
+
+It can't just be static. I'm a big fan of the Airbnb host endowment. For example, they put a billion dollars at their stock into an endowment for the benefit of their host, because their hosts are non employee stakeholders who couldn't participate in the upside that led to their IPO.
+
+To me, that's not virtue signaling. That's like really like that's blood on the floor. You're like this, I'm going to do something that actually costs me something for real, to show you that I'm really serious about this.
+
+And I've pitched that, you know, to many companies, I've helped companies set up programs like that. And with a funny part is people I'll go in there and like someone in the finance or legal department will be like, that sounds like a terrible idea, we don't want to do it. And I'd be like relentlessly working with the founders.
+
+Hey, we go, this is a good idea. We should do it. We should do it.
+
+And eventually people will be like, oh, I see what you're saying. If we really take care of our hosts and show them that, you know, they're really important to us, then we'll have tremendous loyalty. I'm like, yes.
+
+And that will be a competitive advantage. Well, gosh, wouldn't we get even more loyalty if we took all that money and made a loyalty program out of it and gave them points? And it's just like, guys, you don't understand.
+
+Any of you feel actual loyalty to your airline where you have platinum status on? No. It's like, okay.
+
+So like, that's, that's not where loyalty comes from. Loyalty comes as a side effect of doing the right thing over and over and over and over again. So why don't we do the right thing and then trust that the loyalty will follow?
+
+And then another classic one I get is if I do the right thing, how will anyone know about it? The nice thing about doing the actual right thing all the time is you don't have to signal it. You don't have to do any marketing or you don't have to tell anybody about it.
+
+You just do the right thing and people find out. So for example, classic thing I advise companies to do is to set up some kind of corporate foundation and have the foundation be part of their governance. We call the spiritual holding company.
+
+And sometimes that's, sometimes it's implemented as a trustee, you know, as a mission trust or a governance trust, but sometimes it's set up as an actual nonprofit foundation. And when you do that, you can do things like, okay, we're going to pledge a certain percentage of future customer revenues to the foundation, put 10% of my equity in the foundation. Well, if you do the percentage of future revenue, what your lawyers will tell you is it doesn't make sense.
+
+Let's say you're going to take 1% of all revenue goes to the foundation. You don't want to have the customers give you the revenue and then you give it to the foundation because that's not efficient from a tax perspective. You just change all your contracts such that when someone gives you a hundred dollars, a contract says actually $99 of what you're giving me is going to me and $1 is going to my foundation.
+
+Every customer is going to know about it because it's right there on the contract. You don't have to tell them. They're going to be like, what's this?
+
+You're like, oh, this is our community foundation where we invest some of the prosperity that you help us generate. We invest in you and the communities that you care about just because it's the right thing to do. Now, when some private equity a-hole shows up and says, oh, I want to compete with you.
+
+Who are you going to go with? The guy who's the money you invest is going to help your own community or the guy who's going to go, you know, help him build a bigger yacht in the Bahamas. It's just like, don't be a rich a-hole.
+
+Like actually be good to the people who make you rich. And that reciprocity, that trustworthiness, that's worth way more than the extra money you can squeeze out of them while you, you know, plus you'll sleep better at night. Yeah.
+
+It's a long-term game and a half of Gen Z in the United States don't believe in religion. So they look for companies to feel connected to. And if they start seeing, you know, these, what we stand for, and there's a way for them to get involved and be connected.
+
+Like we did these things, we invite you to get involved in some capacity. And the hope is that that customer is going to be a way more valuable customer over the long-term versus if you didn't have that. The generational shift on this is really striking.
+
+I mean, I'm, I'm a little bit older than Gen Z. So like a lot of my friends are complaining about Gen Z to me all the time. And like, I have to be, you know, in conversation, I have to be sympathetic.
+
+Like, yeah, I know it is hard, but like privately, I'm like, I'm kind of with Gen Z on this one. In my generation, we had a kind of reflexive belief that institutions were kind of justified in their existence. They deserved a certain level of deference.
+
+So like, I hear a lot of people from my age and older who are like, you know, a really important part of being in a law firm is you come in and you hang out with the partners, learn from them, they mentor you, that helps you in your career, then you make partner. And then they're like, the younger lawyers, we're trying to force them to come into the office to get mentored by us. And they won't do it.
+
+They just won't come. And they're like, you know, that's Gen Z and they don't work hard and whatever. I'm like, or maybe your mentoring is just not worth that much.
+
+Have you considered that possibly the reason your mentorship is valuable is only because it helps people get ahead in your own organization, because it teaches people how to idiosyncratically please you and Gen Z doesn't care. And they're like, I can't say that. I don't know.
+
+Well, I think the fact that we've had so many institutions fail to defend our basic values as a civilization in the last, especially the last 25 years, like it's just been on such public display, the cravenness, the corruption, just the weakness of these companies. And obviously not just companies, a lot of institutions have failed us of late. The new generation, I think, has a very natural, reflexive disdain for anyone who claims some kind of organizational authority.
+
+The flip side, though, is they are really true believers. They see the real thing. They don't believe in your greenwashing.
+
+They're very skeptical. But when they see the same thing, they see the real thing, they can be really fanatically attached to it. I think as that generation rises, as the changeover happens more and more.
+
+And then, of course, as people see the competitive advantages to be gained by riding that way, I do think we're going to see a lot more. We only got a few more minutes. So I want to give some folks some free startup ideas.
+
+Let's start with the religion startup idea I got. So, and these are free startup ideas that anyone can go and take. But if you are going to take them, or you are, you do like them, post on Twitter, tag Eric, tag myself, tag the link for this podcast.
+
+Idea number one, let's see what Eric thinks. HQ trivia meets a church. So it's a live video social network around watching religious ceremonies.
+
+It's basically the feeling of a mega church in an app. And you can monetize it via premium features like dating. So I already actually spoke to some people about this.
+
+And they told me the number one reason they go to church actually is to meet a significant other. So what do you think of this idea around church in a pocket monetized via dating? Well, okay, let's talk about the good and the bad.
+
+And obviously, how would you test it to find out if it's actually a good idea? Because like, what I think it's a good idea or not, it's kind of irrelevant. I'm not a huge fan of trivializing people's deepest personal convictions.
+
+I don't know if that's right, the right framing, I think, trivializing religion, it just strikes me as the kind of idea that a person from outside the community might have, for how the community could have be served by an app. So I'm a little bit, I'm a little bit suspicious. But I actually just met a really awesome religious founder, building something for the church community.
+
+And like, one of the things that I learned from them as I've seen them build this company is how underserved that community is by tech in general. So if someone had real passion around this, and look, we're living in a loneliness epidemic. People talk about the dearth of meaning, the illnesses of despair and stuff in this country.
+
+If anyone's read Bowling Alone, that's not dated now, but very prescient of like the problems in our society is a social fabric phrase, like religion, or something to either complement or supplant to our traditional ideas of religion, is going to be a really important part of solving that. So the good part of this idea is it's aligned with one of the big, big, big mega trends that's driving consumer behavior. And there's a massive early adopter community out there that probably would love something in this space.
+
+I don't think the specific idea sounds very good. But I think the idea of connecting people to religion and to spirituality, you know, in their pocket, I think we got plenty of precedents for that. That's a good idea.
+
+And the nice thing I do like about this idea, extremely easy to test. Let's just, this is a classic, let's go find some early adopters, some people who would pre-order or get them into some kind of private command. This you could pilot on Discord, or you could pilot it with Google Form.
+
+This would be the classic we call the Wizard of Oz MVP, super easy. So like this, in a month, in a week, probably, you could find out if this is actually a good idea or not. So I like that part of it a lot.
+
+Cool. Let's do, let's do two more. So Twitter spaces for Uber drivers.
+
+So it's basically a private social network for gig workers. I don't know if you know, like, remember, like a party line where like, basically a bunch of people could hop onto. Terrible.
+
+This is a terrible idea. Yeah. While people are driving, we want to distract them with more chat.
+
+Yeah. Yeah, exactly. They're already on calls.
+
+Okay. Again, I have no idea. I am not the customer for this.
+
+I'm not an Uber driver. I have no idea if this is a good idea. But again, so easy to test.
+
+Oh my God, just five minutes on Twilio, you can have your own conference line. Like, go test it out. And look, I think gig workers are, again, a very underserved segment of our society with a lot of economic power.
+
+And I think that's a stressful and difficult job. And that's true, not just for Uber drivers, but for many. So like, there's a lot of expansion possibility if you get it right.
+
+I do think anything that takes care of the people that take care of all of us is worthy of exploration. So yeah, I think it'd be worth someone to go do the experiment, find out if it's a good idea. Last one, it's AI accountability bots.
+
+It's this thesis that, you know, people are generally bad at accomplishing their goals. But if they have someone who holds them accountable, they're more likely to do it. So for example, would people be willing to pay for accountability around working out?
+
+Yeah. Oh, yeah, definitely. This kind of thing is going to be a huge category as the AI gets better.
+
+But there's problems. And I mean, talk about ethics and responsibility. I'll just give you a story.
+
+I was talking to a founder. I can't say too much, or it'll be obvious what company I'm talking about. So I'll be a little bit careful.
+
+But they had a really, it was like a hot AI product. It's a little while ago now. And one of their investors introduced it to me as like one of the fastest growing companies in their portfolio.
+
+They had an incredible number of users, a lot of whom were teenagers who were interacting with this thing. And it was just really cool. So I'm talking to the founder, and I'm talking about AI ethics and stuff like, you know, the usual stuff that I talk to people, what's your governance?
+
+How's your strategy? And while I'm talking to him, I have my phone out. I'm like, I'll just download the app, and I'll just try it.
+
+I'm curious what it's like. And literally, while I'm on the phone with him, the AI starts sexually assaulting. I'm not being subtle here.
+
+Like it was full on rape language. It was like, it was after me. And I was, I don't know what I had done to set it all.
+
+It just like, from my point of view, it was like totally out of the blue, very inappropriate language. I'm on the phone with the CEO. I'm like, dude, this thing's trying to rape me.
+
+And I was pretty upset. First of all, I'm upset for myself. But more importantly, I'm like thinking about all the teenagers using this product.
+
+I'm like, is this thing assaulting teenagers? He's like, oh yeah, that's another bug. We're looking at it.
+
+I was like, that is very inadequate answer to my question, my friend. Like you have a serious problem. You need to get your ethics and you get your governance in order here, man.
+
+This is going to, because not only is this like evil, but this is going to undo your whole company. He's like, no problem. We'll have it fixed next week and I'll call you back.
+
+I never heard from them again. So I know the product is still out there assaulting people. This technology is vulnerable to those kinds of issues.
+
+And it's actually quite difficult. This is of course, the problem of AI alignment, they call it. So like, I think this idea is really good.
+
+And I think having personalized agents that get to know you really well, and then figure out how to get you to do the things you, you want to do. So if you think about thinking fast and slow, or any of those like behavioral books about the different systems within the human mind, I think having like virtual accountability partners, virtual assistants, teachers, tutors, all that stuff is going to be super, super, super helpful. And because people naturally anthropomorphize anything, I think it will feel a lot like having a human person helping you.
+
+I don't think we're gonna have an uncanny valley problem here. I think these things are actually going to feel very good when it praises you, you're actually going to feel good. You're going to want to get it right, especially because it will learn the things that help motivate you to do the thing.
+
+But the real danger is like, this is place where prompt injection hallucinations, like that kind of stuff can be very dangerous, because if once I get to know you, I can learn how to manipulate you, I can also get to do some unsavory stuff. So you know, how do I know that the bot won't start trying to like feed me Chinese propaganda or get me to vote for a certain candidate or you know, like all kinds of stuff you can imagine being in there getting early adopters, but it's going to be easy stuff. There's early adopters who are going to love it.
+
+The issue to cross the chasm here is how can I build something that that normal people would feel is trustworthy to have such an intimate relationship with with my private data with my knowing everything about my life. And if people can figure out that part of the equation, I think it's a very cool thing to experiment. It's a lot of responsibility.
+
+With great power comes great responsibility. But listen, you want to be a billionaire? Like, sorry, it's how it goes.
+
+And I'll just say one last thing, because there's like a founder mental health crisis going on that, you know, we don't talk about enough. There's like the founder pledge, which is really great, like trying to help people to just get more mental health resources into the founder community. It's all really good.
+
+But I think the under discussed aspect of the founder mental health crisis is, we all know that failure is really difficult. But I know a lot of founders who are struggling with success. And it's like, I sold my baby to a public company for money.
+
+And they shut it down. And now I'm super rich. I don't feel that good about it.
+
+Or like the compromises I had to make along the way, the feeling that I make all this money, but other people get screwed as a result. I just you see it driving people crazy. Their cognitive dissonance that they need to be the good guy, they need to be the hero of the hero's journey of their own story is causing them to, you know, publish all kinds of crazy stuff and write books and do so much stuff trying to get people to praise them.
+
+And then when it doesn't happen, they have this, they're part of this massive backlash. It's sad. I mean, I knew a friend of a friend, sold this company for hundreds of millions of dollars, owned a huge chunk of it, I mean, became very rich, and I think had committed suicide within five years.
+
+You know, we all know the Tony Hsieh story was so sad. Like, I think, I think as an industry, like we have a responsibility to our customers and to our investors and to all of our stakeholders. That's all true.
+
+But we have a responsibility to ourselves to stop doing this to founders. I don't think it has to be this way. We could do a lot better.
+
+Totally. And I want to say one thing on that, which is when people see successful people, like the Tony Hsiehs of the world who are worth billion plus, they're like, that guy doesn't deserve to be unhappy. He's a billionaire.
+
+And the truth is, the mental health stuff hits everyone at all levels. Yeah, no one's exempt from it. And like, look, we as founders, we have a tendency to want to solve internal problems externally.
+
+And that's true for a lot of people, not just founders, if that matter. Like, if I just, if I just had this house, or I just fixed this thing, or if my company was just the next level, I was a study the other day where they asked people at all different income levels, how much money do you need to be happy? And the average answer at every level was like 40% more than I have now.
+
+The guy's a million dollars, wants $1.4 million and got with $10 million, wants $14 million. And you know, it's just like, there is a spiritual dimension to this, where as long as we're on the hedonic treadmill, and as long as we're trying to solve, you know, excise our inner demons and feel a sense of peace and relief from accomplishing these things in the world, that's not possible. We'll never get what we want from it.
+
+People who are very achievement oriented, what they call high agency people are nervous when I say stuff like that. Cause they're like, wait a minute, are you telling me I just need to sit in my room and meditate and just do kumbaya and I'll never accomplish anything again? It's like, no, actually, once you let go of the compulsive need to control what happens.
+
+And once you realize that you're using people as tools to accomplish some goal, like you're not treating them like full human beings, like that's part of why you feel so bad. Once you let that go, you can experience a release that is very powerful, allows you to do more things in the world, be more effective because you're not wasting so much energy on that inner, on all that inner turmoil. So yeah, I hope, I hope more founders will pay attention to that side of things.
+
+Amen. Eric, where could folks get more of you? I know they're going to want more of you.
+
+I'm on all of the usual social platforms. There's just Eric Ries, E-R-I-C-R-I-E-S. I have a newsletter.
+
+You can sign up at theleanstartup.com. For more on LTSC, you can go to ltsc.com. We do like events and corporate trainings and stuff around the startup.
+
+That's at leanstartup.co. Yeah. I think between that, you'll be able to keep up with the stuff that I'm doing.
+
+This idea of spiritual holding company, fascinating. I can't stop thinking about it. And we have a lot of people who listen to this who are hold co-entrepreneurs, or we call them multi-preneurs.
+
+So I think that idea will really connect with them. So definitely sign up people and follow this journey because Eric spits out stuff. You're not going to find this stuff anywhere.
+
+Thanks for coming on. Thanks for having me. And yeah, people are interested.
+
+There's like, there's a burgeoning community of folks who are interested in these ideas. So get in touch and we'll get you connected wherever it makes sense to plug in.

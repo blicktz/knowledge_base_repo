@@ -1,0 +1,263 @@
+So what's up, Blake? What's going on, Greg? Thank you very much for having me on today.
+
+I decided to reach out to you. I've been following you for a while, but I saw a tweet about a month ago that said, I recently discovered a part of the internet where a bunch of cracked 18 to 22-year-old indie hacker kids from no-name unis run bootstrap mobile apps, growth hacked on TikTok. Each app has 100,000 monthly users and makes $1 to $5 million a year, never underestimate the kids, and did some research.
+
+And they were talking about you and your friends and how you have kind of like a AI mobile app studio doing, I think, you know, 15 million in ARR. So I was hoping that you can come on today and share with everyone some AI app ideas. Yeah, happy to do so.
+
+Quick context on myself. I kind of stumbled into this space a little bit over a year ago with an app called RizGPT. It is now named Plug.ai.
+
+We ended up scaling that to a little bit over 3 million downloads, 200,000 monthly revenue. Then built UMax. That has done over 10 million downloads, 500,000 monthly revenue.
+
+Now I think it's closer to 400,000, but at our peak, we were around 700,000 in monthly revenue. And then most recently, CalAI, which we launched just like a little bit over six months ago and is at about 2 million downloads and over a million dollars in monthly revenue. Yeah, I think I'm, like I mentioned, I kind of just happened to stumble into this space, but it's a pretty fascinating place of the internet and specifically entrepreneurship to be right now because it kind of takes the intersection of new functionality in terms of applications that can be built as a result of AI crossed with novel distribution tactics, largely pioneered by e-commerce people.
+
+And so when you take the two of those together, it creates for this space where you have like a small proportion of kids, essentially like age 18 to 22. I myself, I'm 23, that are kind of running the entire space and at the forefront of it. Absolutely, man.
+
+And I think a lot of people like me who are in my 30s, and I'm sure people listening in their 40s, 50s, 60s, are kind of like, what's going on with the TikTok kids? And it's interesting to see that a lot of the products have AI with it. I mean, I'm not surprised, but yeah, what's your take on that?
+
+Like, is there an opportunity, before you get into your ideas and before we like start cooking basically, is there an opportunity to create apps that are like not AI or do you have to come up with an AI app idea for TikTok? Yeah, so I believe that, and I'm really excited to get into some of the ideas that we have to share later on, but I believe that we're currently just scratching the surface of new application functionality that can be built and delivered to the end user using these new AI tools. So for example, with UMax, UMax was a facial analysis and recommendation application.
+
+In the past, this was possible to build. However, it would have taken significant investment into developing internal proprietary ML facial recognition models in order to build it. However, with the use of AI, specifically GPT vision, I was able to do so with essentially zero upfront development cost with the exception of my own time.
+
+I think that what we're seeing right now, as I mentioned, we're like scratching the surface of these new functionalities. But what AI really enables us to do is to deliver personalized and like personalized functionality that can be updated in real time through the use of these AI backends, as well as building up technologies that previously would have cost a lot of money. And so we're seeing the new TikTok AI apps, like this is the start.
+
+But as we progress, as AI becomes more advanced and increasing functionality, as well as people building more complex applications with it, I think what we're going to see is just a 10x end user experience with regard to how we interface with technology. Cool. Well, yeah, let's dive in.
+
+What's idea number one? What do you got for us? So as you guys have heard, the applications that I've built have really been around sort of AI virality.
+
+The first two specifically, RizGPT, how to text girls, Umax, how to looks max, right? But Cal AI was, that was primarily around functionality. You take an archaic sort of industry, calorie tracking, where it was not very easy for the end user.
+
+A ton of people have grapes with apps like MyFitnessPal, and you make it easier with the use of AI. And so this is what I increasingly think about, not building apps where you can just kind of, you know, leverage the TikTok algorithm to hack your way into a little bit of cash. But like, how do we redefine how the value that people get out?
+
+So my first idea that I have is an application, for lack of a better word, career AI. As we all know, there are a lot of new, very popular, fragmented career advancement tools. By fragmented, what I mean is you have a website that you can go on that gives you an analysis of your resume.
+
+And it'll give you all the bullet points about how to improve it. We also have websites where you can take quizzes in terms of, that will give you recommendations of what your future career should be based on your personality. We have people that sell courses about how to apply to different jobs.
+
+But I believe that an all-in-one integrated platform that kind of takes a bunch of these different fragmented tools and puts it into career AI, I think that that would be a pretty amazing application. And specifically, as someone who just recently graduated from college, I know the trouble that a lot of people have in finding jobs, finding internships, that sort of thing. And it's a massive industry to begin with.
+
+Like one of the primary selling points of universities is that they're going to set you up for your future career. Now, I think that a career AI, you charge 50 bucks a month for an all-in-one tool, to me feels pretty obvious. And then with regards to distribution, I would go about it, you know, the pretty standard Instagram, TikTok reels, obviously target students.
+
+But then you could leverage Twitter or x.com in addition to LinkedIn for some relatively untapped distribution channels. Shh, don't tell anyone. But I've got 30 plus startup ideas that could make you millions.
+
+And I'm giving them away for free. These aren't just random guesses. They're validated concepts from entrepreneurs who've built $100 million plus businesses.
+
+I've compiled them into a one simple database. Compiled from hundreds of conversations I've had on my podcast. But the main thing is, most of these ideas don't need a single investor.
+
+Some cost nothing to start. I'm pretty much handing you a cheat sheet. The Idea Bank is your startup shortcut.
+
+Just click below to get access. Your next cash flowing business is waiting for you. So I want to go deeper into basically how you have, like what's the Blake Anderson framework for taking an idea and actually making it like a mainstream product, I guess.
+
+So for example, like you said, yeah, just target students with Instagram Reels and LinkedIn and TikTok. Could you walk us through what you would do if you were building this and you had this idea? Like, okay, you have the idea.
+
+Where do you go from here? Yeah. Yeah.
+
+So I believe that there is a people often fall victim to seeing the new trendy way to go viral and then putting all of their eggs into that basket. I think that's something that all of my applications have really benefited from is I'm engaging in a highly iterative process of generating virality from early on. And so that means coming up with new hooks, figuring out new ways to position the product in terms of who you're marketing to and split testing those over a rolling basis.
+
+So let's say that I really think that influencer marketing is going to work with this career AI application. I'll find influencers in the general ed tech space that talk about study tips. I'll find influencers that give tips on how to apply to jobs.
+
+I'll find influencers that give general productivity tips. I will come up with different hooks that could theoretically work within each of those niches. I'll then split test these hooks across different videos, across different creators and assess the results.
+
+Assess how many views we're generating based on which hook, what the relative conversion is based on on a per view basis for each of them. And then over time you start to develop either a mental or real statistical model that will be able to inform your future distribution strategy. I hope that makes sense, but somewhat akin to how platform platforms, meta, TikTok, et cetera, will split test your different creatives applying the same strategy to influencers or internal UGC or, you know, creative hook generation, that sort of thing.
+
+And how do you find the influencers? Like, do you go through, do you just like kind of reach out to them? Yeah.
+
+So I was actually looking at this today because I thought that this is pretty indicative of what I do, which is kind of different from a lot of people. Number one, I don't use influencer marketplaces or databases. Number two, I think that there's a lot of messaging on the internet about various tools, so like marketplace and databases or agencies to find influencers for you that's just like outright wrong.
+
+What I don't see people talking about is the development of personal relationships with influencers. So I just recently launched my new company, Apex. I can get into that a little bit later, but in short, it's a very content-heavy company.
+
+We're creating content in-house. And now you'll see, I make this post and like, I guess this is backwards, but I've got a bunch of creators, like Sam Zia commented. He was a former co-founder from UMACS, 220,000 followers.
+
+Dawson Gibbs, 170,000 followers. Backstate Carter, 280,000 followers. The list goes on and on.
+
+And now the reason that they're commenting on this isn't because I'm paying them to, but it's because I've developed the relationships with them. And I think that, or I know that these influencers are getting hundreds of DMs, emails, what have you on a daily basis. It's really hard for them to differentiate what companies are serious and what companies are.
+
+But if you can embed yourself and develop personal relationships with them, embed yourself within the industry, then they'll connect you with whoever you need to get connected with. So yeah, I mean, it's funny you mention it. Like to me, it's like you say this and it's obvious.
+
+You're basically like, yeah, you know, they're human beings. You know, create a relationship with them, get to know them better. And that's the, that's kind of like the most effective way of doing it.
+
+But yeah, that's kind of like a bit of the opposite of what other people say, which is they're like, yeah, go onto these platforms, reach out to, you know what I mean? Listen, I totally agree with it. Reach out to as many as you can.
+
+I always say prioritize early on both quantity and quality. You got to reach out to thousands of them. You got to, you got to, if there's a creator that you really want, you have to DM them on every single platform.
+
+You have to message their mom. You have to message their girlfriend saying, I want to pay your son money. Please put me in contact.
+
+We have done that before. That, like that can kind of help solve your cold start. From there, you got to treat them well, become friends with them.
+
+And then the opportunities become endless. The product, like we kind of, you know, we said it's an all-in-one product, but like, how do you, how do you take an idea? How do you take this idea and actually flesh it out and make it a real product?
+
+Like, how do you think about it? So, okay, first off, I think that similar to what I was saying about split testing different hooks across different niches about why people should download your product. If, for example, with Career AI here, if we're embedding multiple different tools into the platform, what we can do is we can also split test different product hooks.
+
+So, we could test, let's say we have three different tools within the application. Then we could test different tools on social media to see what's going to go the most viral. And we can engineer around virality.
+
+With Umax, for example, this was the facial analysis ratings. We found that this sort of six-factor Madden rating system, that's what people were most drawn to. That's what people were most likely to like, comment, engage with, and therefore went the most viral.
+
+I want to make that clear from the start because that is kind of how I begin my ideation process. What are the tools that are going to do well on social media? X, Y, and Z.
+
+So, that will inform design. And then my process for design is usually I do wireframes. I have either a professional designer or someone on Upwork convert that into a more fleshed-out UI.
+
+And then it becomes time to build. With regards to building, I myself, I use ChatGPT to teach me how to code to build RizGPT and UMax. Now, if you have capital, this is not a route that I recommend.
+
+If you have capital connections to great CTOs, you don't need to do that yourself. But if you're just getting started, like I was at the time, you get the designs done and then you start, you figure it out. So, for me, it was talking to ChatGPT on a daily basis.
+
+Originally, I used SwiftUI. So, I was getting code from ChatGPT in Swift UI, placing that into Xcode moving forward. Now, when I code, I'm doing it in Cursor with React Native.
+
+I just started doing this about a month ago. Quick note, I did not code CalAI. So, I coded RizGPT in the first version of UMax.
+
+Yeah, I think that people are often looking for like a one-size-fits-all answer when it comes to the development side of things. I just don't think that it exists. I think that it's different for everybody.
+
+Totally. But what I can say is what I'm doing now is React Native in Cursor. And with career AI specifically, like if you were building this, like what features do you think would be need to have?
+
+So, I would think around two things, like think around the cross between functionality and virality. The resume analysis, that's very high functionality. Now, how do we take something that's functional, right, scanning someone's resume and giving tips on how they can improve it, how do we also make that viral?
+
+So, what I would probably do here is a six-factor rating system similar to UMax. I would give them scores based on different sections of their resume. Now, I would design those scores around the sort of popular edtech content right now, get in contact with the edtech creators, and then have them start to post.
+
+So, that's just on the resume analysis side of things. I would also do a career analysis. You take a quiz, and then at the end of it, it's a nice pretty screen that says, you should go into X, Y, and Z.
+
+And then I would probably figure out how to create a trend, which is like people being really excited because they're a senior and they got recommended computer science and that's what they've been studying. And then people being like, wait, why did it take until I'm a senior to realize that I shouldn't be studying this? And then create that content on social media and I think that I can make that viral relatively quickly.
+
+Cool. All right. Thanks for that free idea, Career AI.
+
+What's idea number two? Okay, idea number two is journal AI. I haven't seen anyone crack this quite yet.
+
+I know people have spoken about it. The way that I would build it is somewhat of an AI second brain, but branded and framed as a journal. And the sort of analysis that you would get would be things that would help increase your productivity, emotional support, relationship analysis.
+
+And I really don't think it would have to be that technically robust. I would say essentially just chat GPT with more complex memory storage and UI that's more conducive to journaling. So when I hear that, kind of like maybe because I've been around for a long, a while, like there's so many journaling apps.
+
+Is your, your thesis is that the AI angle is enough to kind of to get people excited? Is that, is that the thesis? Yeah.
+
+So I think one of my theses here is that I've seen people organically use chat GPT as their journal and get a lot of value out of it. I've essentially done that myself. Now I'm not a daily journaler, but when I provide chat GPT with, you know, I have like, I have notes on my computer that just have a lot of information about some topic and maybe too much to be contained within chat GPT's memory.
+
+And when I want to go get a deeper analysis, I'll go paste those in. And now I think that, uh, uh, yeah, sort of like an emotional support assistant framed as a journal would be pretty easy to get it to go viral as well as I think that there'd be pretty high value add. Um, you know, we have this like one-sided relationship with journals where we put in and get nothing out.
+
+and that's great to some effects. Uh, but I think the ability to get that sort of like intricate objective analysis back out similar to how we, like, I think a lot of people building this are thinking of it as like a therapist AI, but I wouldn't brand it as that. I would brand it as a journal AI if that makes sense.
+
+Yeah. I remember Peter Levels. I'm sure you know him.
+
+He, he did AI therapist.com or something and he, he closed it down. Also like there's like, you can't just call it a therapist because like therapy is like, you know, uh, you can't just, it's not a therapist. Like, you know, you have to go to school and stuff like that to be a, to, to be a therapist.
+
+So, um, journaling also, the other interesting thing is it's something that people know, like they know what a journal is. So if you call it like AI journal or journal AI, I mean, that's a question for you. Like, how do you think about naming some of these products and is putting, and we're really getting into the nitty gritty, but I think it's important.
+
+Is putting AI in the name important? Yeah, people ask this question a lot. I think that, uh, it's hard to say at this point in time.
+
+I think that the, the, uh, appending AI is valuable when you are creating innovation within a relatively stagnant industry such as, uh, Cal AI within, uh, the calorie tracking space, like calorie tracking as a whole, people view it as archaic and it's slow and it's annoying and it's complicated. So then when we add AI, that brings a level of sophistication. Now on the flip side, when it's something where, you know, if, if you're building like a medical, uh, document service or something where like you need 100% accuracy, um, and any minor errors, uh, would, would be unacceptable, the system just wouldn't work.
+
+I would probably not include the term AI as people would be a little bit skeptical or scared that it may become dangerous in some capacity. Uh, so, so that's how I think about, but, you know, I mean, my co-founder Zach from Cal AI recently made a tweet about how adding AI at the end was a negative signal. He and I had a lengthy discussion on that, kind of came to this resolution that I just referred to just now.
+
+Um, but, yeah, I guess, I guess that's how I think through it. And now with regards to journal AI, um, the, the names that I'm using right now are just because they're easy to wrap your head around. I'm not sure if I would name it journal AI.
+
+Maybe I would try to name it something like Junie or like Journey that like feels more friendly. Um, but, yeah, I wouldn't say that I'm by any means a master of naming. So, uh, maybe they're better people to go to on that front.
+
+Yeah, but I think all your names resonate. Like, there's a reason, like, if you're, my, my thesis is that if Cal AI was just called calorie tracker, it might not be, like, it probably wouldn't be where it is today. That's my, that's my, I agree.
+
+I think Cal AI is probably the name that I'm most proud of. Um, the reason for naming UMax, for example, UMax was because, uh, the plan was to become this like all-in-one self-improvement ecosystem that I'm now building with Apex. Now, for a number of reasons, I decided not to pursue that.
+
+But in retrospect, if UMax, if the plan was to take it to where it is now, I probably would have named it Looks Max AI as our copycat ended up doing. Um, so. Quick ad break.
+
+Let me tell you about a business I invested in. It's called boringmarketing.com. So, a few years ago, I met this group of people that were some of the best SEO experts in the world.
+
+They were behind getting some of the biggest companies found on Google. And the secret sauce is they've got a set of technology and AI that could help you outrank your competition. So for my own businesses, I wanted that.
+
+I didn't want to have to rely on Mark Zuckerberg. I didn't want to depend on ads to drive customers to my businesses. I wanted to rank high in Google.
+
+That's why I like SEO and that's why I use boringmarketing.com and that's why I invested in it. They're so confident in their approach that they offer a 30-day sprint with a 100% money-back guarantee. Who does that nowadays?
+
+So check it out. Highly recommend boringmarketing.com. Okay, cool.
+
+And let's just talk before we move to the next idea, can we talk about how you think about paywalls and are there any tools that you use for testing paywalls and stuff like that? And how do you think about just like pricing strategy? Shameless plug.
+
+For this in particular too. Like this idea. Yeah.
+
+Shameless plug. Super wall. Absolutely amazing.
+
+I am not affiliated. I just love the platform. I think that pretty much everybody should be using Super wall.
+
+I don't use revenue cap. I only use Super wall. Now, with regards to how I think about paywalls, I think it really depends.
+
+So what's amazing about Super wall is it makes split testing incredibly easy. They provide you with all the data. But I think that across the industry, a lot of people tend to optimize for like number of users multiplied by profit per user.
+
+I am of an alternative thesis. I believe that you should optimize for like number of users raised to the N where N is greater than one multiplied by profit per user. I will take at least at a just pure conversion basis.
+
+I will accept a lower LTV on a per download basis in exchange for more people being able to use the platform. Now, there are a number of reasons for this. But I think one of the most obvious if you want to ignore all like the moral like, oh, I want more people to use the product, more people to get value out of it.
+
+If you want to completely set that aside, which I don't, but if you were to set that aside, the benefit here is that you can more quickly dominate the market and as a result, increase word of mouth, which is pretty much impossible to measure for most applications. It's easy to measure like if you're just seeding a thousand users onto your product and then letting it grow organically. But when you're constantly running ads, you don't know if people are coming specifically like organic.
+
+You have no idea where people are coming from. And so I like to prioritize allowing as many people to use it as possible. Now, moving forward, how do I think about paywalling in itself like within the application?
+
+Super Bowl is amazing once again because it enables you to test it at different points and you can assess the relative effects, the conversion basis, how many people are seeing it, that sort of thing. the most standard practice in the industry right now is to take people through some onboarding flow and then hit them with a paywall at the end. It's just like you make so much more doing that than pretty much any other paywall strategy.
+
+When you say that, are you talking about like it's a quiz or something like that and then at the end it's like there's a paywall? Yeah, and you can press notifications and put your personal information so we can customize the application for you and then you get hit with the paywall. I've done this for my applications for the most part.
+
+I do not necessarily think that it's great practice but it is efficient practice if that makes sense. Like I don't think that it's morally great. I don't feel good about it.
+
+Totally, because people are investing. They might see a TikTok about it or a reel, whatever. They download the app.
+
+They're super excited. They're filling in their information. They're investing essentially their time.
+
+Yeah, it's good. It's sunk cost. And then you're using it.
+
+And then they're just like, oh, $6.99 a week or something? Yeah. Yeah.
+
+I think. Yeah, I don't know. I'd like to believe that.
+
+I guess it depends on how you do it, right? Yeah. I mean, so, yeah, I don't, I don't think that it moves the needle much.
+
+Like, I don't think that it's that good or bad. I'd like to believe that with what I'm doing with the money at the very bottom of the funnel, like what I'm using it for with what I'm currently building, kind of offsets. Not a big deal.
+
+Like I said, I think that this industry as a whole doesn't really move the needle very much. But it is, you know, the way that I generally think about these things is like capitalism is good in my belief and therefore increasing market efficiency in generally just taking the market in a quicker manner to its inevitable end state. and so, yeah, I guess that's kind of how I like offload the responsibility.
+
+Dude, we have to do one more idea. We have to. Give us one last idea.
+
+So, I think that this is one of the biggest applications on the App Store. Duolingo. Duolingo is an amazing application.
+
+Like, it's built out so well. Now, that said, if you can acquire even just a couple percent of the market share by integrating new AI functionality quicker than them, you build a massive product. And that's where I would say that a good idea is a language AI or language tutoring application.
+
+Obviously, the chat GPT voice-to-voice model is currently pretty expensive. My inclination is that that will significantly decrease in cost over time or other models will come out of similar functionality with decreased cost. So, by building a language tutoring application where you are just always up to date with the newest AI functionality and you build the UI around sort of dynamic learning.
+
+Like, as we know, Duolingo generally has more static modules that you go through, A, B, C. You build a language learning application that updates dynamically. I think that there's a lot of value there, a lot of value to be created as well as a lot of value to be captured.
+
+People who want to learn languages are generally pretty high intent. So, I think that that'd be a pretty awesome one to build. What do you say to people who say, but, Duolingo just announced two AI features.
+
+I think it's called like adventures or something like that. Like, how am I going to, how are you going to compete with Duolingo? Yeah, this is exactly what people said to me when we were building Cal AI.
+
+People are like, dude, MyFitnessPal is so big. They're going to build in this space. And my answer was, well, they won't work as hard as us.
+
+Their incentives internally are not aligned to the point where they will be able to iterate and progress as quickly as us. So, here's what I mean by that. The engineers at MyFitnessPal, like MyFitnessPal to begin with has been like traded back and forth, sold so many times that the people that are doing the groundwork don't like, probably don't have that much equity, you know?
+
+And so, the engineers don't care that much. Like, they're just kind of doing their job. Similar with the social media managers.
+
+And so, our Cal AI's, so, calorie estimations based on images are just significantly better than MyFitnessPal. We have a pretty robust system built out at this point. In addition, we're pioneering new ways of marketing on social media.
+
+I would wager that the same pretty much applies to Duolingo. Now, I wouldn't be surprised if their engineering team was a lot better, significantly higher valuation. Now, that said, Duolingo is the go-to application for language learning right now.
+
+but, if you can figure out just like a few percent changes for people to learn languages in different ways and then some novel distribution strategies for that, Duolingo is worth like, what, $10 billion? If you can, like I said, take just 1% of that market share, you immediately have an application worth $100 million. And, I think that for the same reason that Duolingo is so big, there's so, so few people trying, which just makes it so much easier to succeed when applying these sort of new wave tactics.
+
+Yeah, I mean, the short answer is you don't need to reinvent the wheel. You know, I was actually, earlier this morning, I was on TikTok Creator Insights and for people who don't know, go on TikTok, search for TikTok Creator Insights and you basically get like a Google Trends but for TikTok and you can see, you know, how much, what are people searching for and what's trending and stuff like that. And, one of the interesting things was today, what was trending?
+
+A ton of how to learn French, how to learn Spanish, how to learn Arabic. How to learn Arabic, I remember, search volumes up a thousand percent. So, yes, Duolingo, you know, may continue to grow, may continue to be a juggernaut and that's cool but, you know, there's an opportunity right now with creating AI-first apps that I think when you pair that with great creator content, there's just an opportunity to not even take part of their market share because the reality is these people are not even using Duolingo.
+
+That's the reality. Yeah, creating new market share, I totally agree. I think that that is a, to dive a little bit deeper into something I mentioned earlier, like, I think that a lot of these apps are just pioneering new ways for people to learn and improve themselves with the use of AI.
+
+I think it's a pretty incredible personalized learning tool and when it first, Chattagpd first came out in, like, December, November of 2022, there was a lot of speculation about the future of AI tutors within AI or learning languages or personal training, that sort of thing. My inclination is that at the very minimum, the first step of this is just AI tools, AI apps that do this as opposed to being like framed as a tutor. it's just it is doing the tutoring through its UI, if that makes sense.
+
+Yeah, of course, of course. So, yeah, I think it's really awesome, like, the plenty of room for Duolingo to coexist with an application that uses AI to pioneer completely novel functionality within the language learning space. Same thing goes with calorie tracking, same thing goes with career advancement, same thing goes with journaling.
+
+Before we head out, do you have any, like, I think people listening to this are like, okay, those are three ideas, but they might be like, you know, I want to come up with more AI app ideas and then I want to create a framework, I want a framework for that. Do you use things like Sensor Tower? Do you use things like, like, any tools like that or are you just coming, are you just coming up with these ideas while you're walking on the beach in San Diego?
+
+Yeah, so I certainly use Sensor Tower to assess, like, the size of the other players in the space, but I think a few things have helped me. One, as you mentioned, walking the beach, like, for me, it's generally hiking. I find that I'm able to think very clearly.
+
+Two, deliberate scrolling on social media and curating my feed around whatever it is that I'm interested in. So I'll create burner accounts to, like, when I was building Umax, I had a burner account where it was, like, only looks maxing content or any time I build a new application, I create a burner account and I curate my entire feed around that and I, like, put myself in the mind of someone who's consuming that content. And then, finally, I'm actually creating, like, a 30 to 60 minute completely free, somewhat of a course or YouTube video that I'm going to be posting in about a month as well as a completely free viral app playbook PDF.
+
+And so, if people want to, you know, follow my socials, Blake Anderson W on Twitter or x.com, then apexblake underscore on Instagram. I'll be sharing updates there. Amazing, man.
+
+That's awesome. This has been a lot of fun. I think, um, what you've drilled home for me personally is that sometimes the most obvious ideas are the best ideas.
+
+Calorie dragging, language learning, you know, journaling. Like, this is, this is things that you look around in your everyday life and you see these people doing it. You put an AI twist on it.
+
+You get good content out there. You make friends with influencers. Um, and, you know, you build small MVPs, right?
+
+You, you don't need to, to, to boil the ocean when it comes to building an MVP. Get something out there. Yeah.
+
+I think that like 10 out of 10 ideas are great in that it's pretty much impossible to fail with them. Like Riz GPT was one of those, obviously with like a relatively low ceiling, but it was a 10 out of 10 idea for getting my first small win. Um, but then with regards to these ideas, it's like, they're pretty straightforward.
+
+They're pretty boilerplate, but if you can just follow like the standard methods of like the, the new styles of execution of building a functionality of distribution, you can pretty easily build a massive application. Thanks my man. I appreciate you.
+
+We appreciate you. Later. Woo.

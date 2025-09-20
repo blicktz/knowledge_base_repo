@@ -1,0 +1,417 @@
+What haven't we covered that we should? Pricing, monetization, how you make money. Yeah.
+
+It's important. Oh, yeah. The first thing I'll say is that one of my favorite lines about this is, I think it's originally a Walt Disney quote, which is, we don't make movies to make money, we make money to make more movies.
+
+And Facebook co-opted this, and it's in the little red book, you know, which is, we don't make services to make money, we make money to make better services. And I really believe that the most successful companies in the world have that view. I think that you can build an incredibly successful company that makes you millions of dollars.
+
+It does not have that view. You know, that's kind of like the more mercenary approach, but you kind of need to decide who you are before you start with your pricing strategy. The startup I just podcast.
+
+It's shipping time, baby. So today we have a very special guest. I would say on my Mount Rushmore of product people, I only, I think I only have two people that come to mind.
+
+One is Scott Belsky, who I've had on the pod before, chief product officer of Adobe. He advised my last company. Super, super smart guy.
+
+And the other way less known in, in the internet world, but people who know, know Mike Udak. So I appreciate you coming on here and, and lending your brain to get people to think bigger about startup ideas and spaces that you're interested in. Thanks dude.
+
+That's really kind of you to say. It's true. It's true.
+
+And, and, and it's, uh, you know, one part of the show I'm trying to do is like people who, who might not have as much internet fame, like bring them and give them the platform. Um, because dude, you're a smart guy. So, so.
+
+Thank you. Thank you. Yeah.
+
+Well, what, uh, what's on your mind today? Oh my God. So many things you're okay.
+
+So you asked me to come with startup ideas. So what are the most annoying things that you've had to do in the last like week that have taken you a bunch of time that you feel like an AI could do, you know, with, by just throwing some compute at it? Yeah.
+
+Do you have a list? Do you know what they are? Um, I can probably, I can probably figure that out.
+
+Like, can you find like, cause I mean, I can tell you off the top of my head, right? Like I would pay an AI agent to book me a flight. Right.
+
+I'd pay an AI agent to book me a hotel. I'd pay an AI agent to book me a restaurant or find me a restaurant. And I'd probably spend a lot of money on all three of those things.
+
+Yeah. Um, and I think that those are all things that, that they could be really like tremendously good at. So it's funny you bring this up.
+
+So I was writing this down for myself. Maybe I'll post this on my newsletter, but I was thinking about, okay, what, like what's a framework for thinking about creating AI agents from a product perspective? So here, here's what I wrote down a single clear action, instant feedback, bounded decisions and zero friction.
+
+So I wrote down smart agents that can actually think, that can understand what you mean, learn from mistakes, explain decisions, handle new, new situations. So then I wrote down, by the way, I wasn't planning on sharing this. So these are just some rough notes.
+
+Um, so I was like, okay, how do you build a smart agent that is going to be valuable? Start with one action that matters. Add LLM understanding, build tight feedback loops, learn from every interaction and expand slowly.
+
+What do you think about that? I think that's exactly right. And I like, I think about, okay, so these are all things that I've had to do in the last week.
+
+Right. I've also had to deal with scheduling, which is really annoying. And I was really struck.
+
+I had a really amazing, like personalized AI, like LLM experience recently where I used, I was trying to find this investor. I was talking to who's Japanese. I remember that when I spoke with him, he was in California and he's on the board of some Japanese financial conglomerate, but I couldn't think of the name.
+
+Um, and so it's going to be a nightmare to find in, in superhuman. But I realized that there was ask AI and I just said all of that. And it came up with the wrong answer the first time.
+
+And, uh, I said, no, no, no. The guy I'm talking about has a Japanese name. And it came up with the right answer the second time.
+
+And it was the first time that I've had like a really personalized, like I'm just talking out loud, trying to like, find recall moment where like an AI actually really solved that problem for me. And we use AI, I'm building this thing called sling money right now. And we use AI for a bunch of stuff for customer service, for, for financial crime, um, compliance reasons, you know, all sorts of things.
+
+And it automates repetitive tasks, which are a real pain, like going in, we use this thing called, um, green light to do EDD, like enhanced due diligence on people. So it goes and searches the web and then comes back with all the information. You can just click one button, you know, it's great.
+
+Um, and I, I think that if you were to catalog all the things in your life, which are like a real pain in the ass that fit your criteria, it's a good list. Um, you, you could very quickly like train an LLM on your past restaurant visits or your Google maps history or your email to like, learn about what kind of stuff you like. And then it can just, have you seen the new arc, uh, the new browser company browser?
+
+Dia. Yeah. I think that's what it's called.
+
+Yeah. They've been kind of teasing it a little bit and it goes in, it browses and explains what it's doing. You know, you just type, you're like, Hey, you know, do this for me.
+
+And it's like, Oh, okay. I'm going to go do this. I'm now going to click on this thing.
+
+Like, why can't you just have that for like all the things that I have to do every day? That's like a pain in the ass. And I'd pay five bucks for each one of them.
+
+Yeah. I mean, I shouldn't be sharing this cause like my team told me not to share this, but I can't help myself. Is agencies are a really good business right now because it's super manual.
+
+Like it's humans doing things. It's in a particular niche. Like a good agency is focused on SAS, FinTech.
+
+They're the best at, you know, just this one niche. And if you think about agencies, like, you know, I wrote down in the same document, I was like, uh, agencies, like agent are the new agencies. Yeah, for sure.
+
+For sure. I think if I, if I was trying to build an AI agent that I can sell to someone, um, of course we can, you know, come up with consumer ideas, but like, I'd probably start by just becoming a, I'd either build or buy an agency. Quick break in the pod to tell you a little bit about startup empire.
+
+So startup empire is my private membership where it's a bunch of people like me, like you who want to build out their startup ideas. Uh, now they're looking for content to help accelerate that. They're looking for potential co-founders.
+
+They're looking for, uh, tutorials from people like me to come in and tell them, how do you do email marketing? How do you build an audience? How do you go viral on Twitter?
+
+All these different things. That's exactly what startup empire is. And it's for people who want to start a startup, but are looking for ideas, or it's for people who have a startup, but just, they're not seeing the traction, uh, that they need.
+
+So you can check out the link to startup empire.co in the description. That's so interesting. So some of the best AI stuff I'm seeing right now, um, there are three that I think are really amazing.
+
+So green light is one, which we use for fin crime. Another one is granola, which is like a personal, like note taking app. Wait, hold on green light.
+
+I haven't heard of this. Let me, let me pull this out. G R E E N L I T E.
+
+It's like a fin crime. It's like a compliance thing. Let me share my screen real quick and we can, we can learn together.
+
+This fits into the same category of task where, when you're running like a bank or a financial product, you often have to do research on people to clear an alert, or you have to like figure out what somebody is trying to do with a transaction or something like that. And that's like a lot of really manual work. And most of it now can just be completely automated.
+
+Dude, this is crazy. Yeah. This is crazy.
+
+So I was their first customer. Sling was their first customer. And we were like their design partner and they're, they're crushing it now.
+
+I mean, just unbelievable. Yeah. This is, this is going to be a huge business.
+
+Massive. Yeah. Okay.
+
+What was this? The other one. So granola, which is a note taking app.
+
+Right. I should say I'm invested in all three of these. So, okay.
+
+So this is an AI like notepad. So it can listen to your meeting and then write notes for you, but you can, it's very cool because it takes notes collaboratively with you. So you can write notes and then it fills them in.
+
+And if you want to restructure its notes as you go, you can do that. It's super cool. It's like an amazing, like human machine hybrid.
+
+How do you use it? Very well crafted. Um, I use it for a subset of my meetings.
+
+I don't like to have most of my meetings recorded, but I use it for like a subset of meetings and I take notes, usually stuff, which is like somebody's pitching a product or service or like a new partnership or something like that. And I'll take a bunch of notes and then share it with the team, you know, like as part of followup. That's like my main use case.
+
+It looks beautiful. Just like, yeah, I played with a bunch of these apps and I don't know, they haven't really stuck with me just cause you know, like you, I'm like a, the product needs to be tight. Um, so, but this, this looks worth trying.
+
+It's great. And then the third one is called gradient AI. There you go.
+
+Again, naming is hard, all these collisions. And so these guys are building amazing customer service agents that, um, I don't know how much I can say, but they dramatically outperform. Like, you know, intercom has AI built in.
+
+These guys are dramatically outperforming intercom in all of the, with all the customers that they have. Um, their early stage, I, I used to work with, well, most of the team at, at Monza, which is like a neobank in the UK, the, the CEO, um, the three founders were on the data science team there. Um, and they're brilliant.
+
+And they're building like, again, it's like a discreet, very focused, very tight thing that solves a very specific, very manual problem. Have you seen bland? No.
+
+So. This is great. Yeah.
+
+Yeah. Like, right. You look at it and it's like, so basically for people listening, uh, not on YouTube, um, it's, it's for, it's AI phone calls basically.
+
+Um, and you, yeah, tell bland your use case, sales, customer support operations. It's in any language, which is crazy. Um, and you can pick your voice, uh, teach it like an employee.
+
+So there's intelligence there and it integrates with your tools. So you can like integrate it with Salesforce or whatever. Um, I have a friend who contacted a company like brand, a bland and was like, I want to build the bland for Germany, for example, I'm making that country up.
+
+Yeah. And I think that there's a huge opportunity in taking some of these businesses, partnering with them and being like, I'll just do your, you know, Canadian arm. And, you know, people think, Oh, that's so small.
+
+It's such a small way of thinking, but like, uh, you know, well, simple, which is the Robin hood of Canada is still like a three and a half billion dollar company. You know, there's, there's, there's opportunity in geographies. Yeah, for sure.
+
+For sure. For sure. This is super cool.
+
+This is super cool. There's another one. Uh, I invested in recently.
+
+It's a YC company that is doing, um, debt, AI debt collection, which I would have thought was like a terrible idea. I can't think of the name off the top of my head, but the way the guy explained it, which I thought was really amazing was that, um, they like the best debt collectors on the phone are actually like deeply, uh, that's it. Don't move.
+
+Um, yeah, the fourth one, Domu, uh, or the second one. Yeah. Um, they do sales and stuff too, but he's like, they're just like deeply empathetic and thoughtful.
+
+And they say things like, Oh, well you have a thought you owe a thousand dollars. Do you think you could afford to do a hundred dollars right now or $150 right now? And they're like actually very kind.
+
+And it's hard to, it's hard to get that kind of kindness, maybe consistently out of people. And, but there's like an automatable script there and you can learn a lot. Um, I think they're doing incredibly well, like incredibly well.
+
+Um, and I just think again, there's just like a million of these kind of tasks out there that either you experience as a consumer or a company goes through that you can just like build a very highly customized AI engine around with a really tight feedback loop and just crush it. Yeah. Yeah.
+
+Yeah. And you could, I mean, you could just open up, for example, Claude and say, uh, you know, list me all the pain points in social media management. Yeah.
+
+Right. And it'll give you some ideas. Yeah.
+
+So I'm just, you know, I'll just read a few content creation and scheduling consistently producing, engaging high quality content across multiple platforms, managing content calories and approval workflows, community management. So managing crisis communication, negative feedback, like each of these could be multiple agents. For sure.
+
+Creating platform specific formats. I mean, you know, brilliant, like give it the assets and tell it to like pump out all the jams across all the platforms. Right.
+
+And how do you think about, because I, you know, I know you've built consumer, like earlier in your career, you were really consumer. Like you were blip TV back in the day, which I think is now owned by Disney, Facebook, like can't get more consumer than that. You were at Facebook, I think running their ads.
+
+I did a bunch. I did ads there and I did sharing. So like photos and video and everything.
+
+Right. So how do you think, you know, that, yeah. How should people think about, should I build a B2C thing or a B2B thing?
+
+I'll tell you the way that I think about it. Yeah. is I think B2C is often like a bigger opportunity can scale to be really massive, but go to market and finding product market fit.
+
+And then growing the thing is really, really hard. And you have to catch lightning in a bottle and your odds of failure are much higher. The size of success could be larger.
+
+I mean, depending on what you choose to do, you know? Um, so there you're optimizing for like high dynamic range. And there are a lot of things that are like super difficult about it.
+
+I think B2B, you know, the dynamic range is not as large. Like you can go to a person and say, Hey, tell me about your problems. Okay, cool.
+
+I'm going to build this thing that looks like this. If I do. And like, does this thing for you.
+
+And can you just tell me if, if I do that, like, will you pay me for it? How much? And then you can like go and talk to a hundred other people and get their views.
+
+Then you can like build the thing that they tell you to build. As long as you're good at interviewing people and sell it and make money. And it's great.
+
+It's amazing. Um, and so I think that you can build like a, it's like a tighter range. If that makes sense, like a tighter range of outcomes, you're less likely to fall, you know, face first and just like face plant into the dirt.
+
+Um, but you're also probably not going to create like a hundred billion dollar company in doing that. You know, totally. If, if you want to do that, you got to go consumer, I think.
+
+Totally. Consumers is more glory in consumer. Yeah.
+
+Like there's also something interesting about like hitting your face against the dirt. Kind of like it hurts, but it also feels nice in a way. Like people who do consumer are sick like that.
+
+Yeah. You know what I mean? I do.
+
+You got to iterate and iterate and iterate. I mean, I, I've been building this thing. We're trying to build like WhatsApp for money or a global Venmo.
+
+You know, we've been building for two and a half years. It's super difficult. You know, you iterate, you keep building.
+
+And then, you know, maybe you have a moment. We had a moment last week. We like suddenly just went viral in Kenya and our graph just went right angle straight up.
+
+But, you know, who knows whether or not that would have happened or not happened. And, you know, you just spend a lot of time kind of like trying to find that thing and you may never find it. A hundred percent.
+
+Okay. And going back to our AI agent world. So I think a lot of people listening to this, like they want to get their hands dirty.
+
+They see the opportunity. They're like, you know, we're sharing all these products. They're like, yes, yes, this is cool.
+
+This is cool. But they don't, they don't know. Like, should I, should I build a granola competitor?
+
+Should I build on top of, you know, one of these platforms? Like how, how should people think about what startup idea to pick? Like, do you have a framework for that?
+
+Like, why did you pick Sling versus the hundred other, you know? So I have a framework. It might be different than other people's framework.
+
+So my, the way that I ended up deciding to do this thing was I, I did this kind of like regret minimization exercise. So I imagined myself, I kind of like discovered this thing, right? Which is, I sent USDC on Solana from, from the UK to California.
+
+And the transfer was instant and free and everything else about it sucked. But I was like, oh, okay. Like I know how to fix all those other things.
+
+And then like, you suddenly realize, oh wow, you can build like a global Venmo on top of this. You can build WhatsApp for money on top of this. This could be huge.
+
+This could be a multi-billion user product. It's going to be really hard to build. You might fall flat on your face, you know?
+
+And so like, I've got three kids, you know, how is this going to go? Um, and so I imagined myself five or 10 years in the future and I imagined every possible like logic branch. So like, I don't do this.
+
+Somebody else does it and they succeed. How am I going to feel? I'm going to feel kind of shitty.
+
+Cause that should, you know, I, I would have felt like, oh, that should have been me. I, I don't do it. And somebody else does it and they fail.
+
+How am I going to feel? Oh, well, I'm still going to feel bad because I would always wonder whether or not I could have made it work. Okay.
+
+What if I do it and I fall flat on my face and I fail? How am I going to feel? Well, you know what?
+
+The default in this thing is failure. Like if you, if you try to build a really big consumer thing and you take a really big swing, you're going to fail nine times out of 10, you know? So like, there's no shame in that it'll be painful.
+
+It'll sting. But like you say, you know, there's also like a certain joy in it. Um, and if I do it and it works, it's going to be great.
+
+And so like I, you know, and it's an idea that I deeply care about. It's a thing that I think is like really important for the world. I think if everyone in the world can like send money to everyone else in the world instantly and like for free or almost for free, like that's a transformative thing that will literally change the world.
+
+And so it also feels like a worthwhile endeavor. Like it feels like a nice thing to spend, you know, three to 10 years of your life on. Right.
+
+Um, which I think is really important because like, if it were just like, you know, selling like candy or like food coloring that like causes cancer or whatever, or, or like, you know, plastic clothing, I think that even if it worked, I would feel really shitty about myself. And so that I think really, truly matters a lot, at least to me. Um, I like to find meaning in my work, you know, positive meaning in my work.
+
+Um, and I, so I, I, I, that's how I ended up doing this. And I've worked on food delivery. I've worked on banking.
+
+I've worked on, you know, social media sharing. I've worked on advertising. I think you can kind of like, you know, when we worked on ads, like, you know, a lot of people were like advertising is bad.
+
+And we were like, no, no, no, no, no. Advertising is good because it helps connect people who are building a valuable thing with people who need that thing as efficiently as possible. And that's actually like a service, which makes the world a better place, you know?
+
+And I think you can think about a lot of things in a way that, you know, creates value and doesn't destroy value. Um, the question is whether or not you're going to enjoy it, whether or not you're going to love it, whether or not you're going to get up every morning and, and want to work on it for maybe a long time. Yeah.
+
+And I think, I think that, that last part is probably, the most important part. When I look back at all the products I worked on the best, the most successful products were the products that I, I cared about the most, even though I didn't have high expectations that it was actually going to work out the ones that I actually was like, Oh my God, there's a huge market opportunity here. And like, I'm going to sell it to, you know, Adobe.
+
+Uh, and you know, I'm like trying to time something that, that hasn't worked out for me personally. Quick ad break. Let me tell you about a business I invested in.
+
+It's called boring marketing.com. So a few years ago, I met this group of people that were some of the best SEO experts in the world. They were behind getting some of the biggest companies found on Google.
+
+And the secret sauce is they've got a set of technology and AI that could help you outrank your competition. So for my own businesses, I wanted that. I didn't want to have to rely on Mark Zuckerberg.
+
+I didn't want to depend on ads to drive customers to my businesses. I wanted to rank high in Google. That's why I like SEO.
+
+And that's why I use boring marketing.com. And that's why I invested in it. They're so confident in their approach that they offer a 30 day sprint with a hundred percent money back guarantee.
+
+Who does that nowadays? So check it out. Highly recommend boring marketing.com.
+
+Yeah, I feel you, man. I think that like, I'm not the sort of person, other people may be like this, maybe, you know, like I'm just not the sort of person who is like good at that kind of like, um, I don't know, like mercenary business thing where it's like, Oh, I see a lot of people with dirty cars around. I want to build a car wash.
+
+It's just like, not the way that I think about things. Like I think about like wanting to create new things or like interesting puzzles or gifts that you can get. You give people or whatever and joy you can get from the work.
+
+Um, I get bored. Otherwise, you know, it's just like not interesting. Like, Oh, you know, sure.
+
+Maybe it's a nice way of making some money, but like ultimately who cares? Uh, in AI startup land and also in financial services, it's a extremely competitive space, right? You're the smartest people in the world are going after this space.
+
+How much do you as a product person think about competition? And, and like when you're, when you're building out your product roadmap, are you like mapping it to how the competitors work? How should people think about it?
+
+Uh, not directly, but I do think that like, there was a point in my career when I felt really bad about copying anything. I was like, Oh no, you have to come up with everything yourself. And like, I no longer believe that at all.
+
+Like, I think there are just certain primitives or certain ideas that become commonplace and like, should be replicated by everyone. And you have to be like, you know, it's like impossible that you're going to come up with all of those yourself. And so it's like a big world, you know?
+
+Um, and so I think you have to watch what all your competitors are doing and other people in adjacent spaces. And when they do something really great or something really brilliant, be like, Oh, okay. Like we missed that.
+
+Or we should have prioritized that earlier. All right, well, let's do that. And I, and the way that I think about that now is like, these are just primitives.
+
+Like if somebody had said, well, I'm not willing to copy the wheel, you know, like that would be really stupid. Like if the only person who could ever produce a wheel is like the person who originally conceived of it, we would all just be in the dark ages, you know? Um, so I think that it, you have to kind of like look around and see what all the smart people are doing and have a deep respect for competition and the noise around you.
+
+Um, while, and this is so important and I'm curious your view on this, right? Is like, while not, um, getting pulled in a million directions, you still have to be true to your vision and the thing that you want to see created in the world. And you, you know, you can't just be like, Oh, Oh, that's a shiny thing over there.
+
+It seems to be doing well. Let's change what we're doing and change the thing that we want to exist in the world because of that. And it's a balance.
+
+And I, you know, I, I struggle with that. I struggle with that balance all the time of like, Oh, well there are a million things I want to build. How do I pick the two that are like the most important and true to what we're trying to accomplish?
+
+You know? Yeah. I mean, I agree.
+
+I think it's like, like everything in life, balance is really important. And the way I think about it is I do keep tabs on competition and I, I don't have a running list of what the competitors are doing, but I have a mental running list. Like I literally do in my head.
+
+I'm like, yeah, competitor X is doing Y. I look at their, their Twitter accounts. I follow them on Twitter.
+
+And, but I, I, I try not to get sucked in with, Oh my God, they just launched this thing. It's really smart. And then, cause you don't want to be a me too, product builder.
+
+For sure. For sure. Yeah.
+
+Yeah. And I think that you have to have a consistent narrative and a consistent, like a consistent narrative internally and externally. And, and yes, in yourself as a human about what you're building and what you're trying to accomplish too.
+
+A hundred percent. Okay. And, you know, you said you went, you're going viral in, in Kenya.
+
+Like, you know, how, how do you think about, you know, once you've built the product, getting people to the actual product, you know, is, and I know you, you've, you know, with, with Facebook, I mean, you, you attracted millions or hundreds of millions of people to the, to the platform directly or indirectly. Is this, you know, if you're trying to build an AI startup, let's say, you know, do you go in like we've done, you know, you, you, you, you, you map out the, the problem, you build a landing page, you know, like, how do you think about, you know, you build the product, how do you think about getting people to the actual product? Yeah.
+
+Yeah. Well, I, I think like, I mean, I used to work on ads and I, I, um, think that there was probably a golden age in which the answer would have been like, you know, target exactly the right message at exactly the right people on Facebook, find the like 3,400 people who are your early adopters and just like get it in front of them 15 times. I'm not sure that's the thing anymore.
+
+Um, I think that the auction has gotten saturated and tracking has become worse and like all that kind of stuff. I think that like, you know, Twitter and LinkedIn and podcasts and everything are probably the way to do it. And I think, you know, the way that we've done it so far is just to kind of like build, build in public sort of, I think that probably means like a specific thing where, you know, like the letters are capitalized or whatever, but we've just been like, like from the very earliest time we could, we introduced the product.
+
+We, we kind of like shipped it with a wait list and then people would come to us and be like, Oh, can I try it? Or our friends would ask to try it and we'd let them in and then we'd get their feedback. And sometimes it was really broken.
+
+And like, even now people ask me like, when did you launch? And I'm like, I don't know. Like, what do you even mean by launch?
+
+I don't know what that means. You know, do you mean like the first time we were at an app store? Do you mean when we started to remove wait lists?
+
+Do you mean when like, you know, something happened and we were in a bunch of WhatsApp groups and went viral? Cause we've been in some stage of that thing in a bunch of places around the world for like a year and a half, two years now, and the company is only two and a half years old. We've been talking about it.
+
+We've been posting screenshots and animations and finding our people around the world who are like interested in it and like helping them find us. So that like, before we went viral in Kenya, we had like a few hundred people there who loved the product already. And like my co-founder went down to Nairobi and gave a talk at a conference and, and it all happened kind of like when he was down there and a couple other people from the team.
+
+And there were people at the conference coming up to him and being like, I'm so proud of you. Like, I feel like I built this thing with you, you know, like, I'm like, couldn't happen to a better product or whatever, you know? And they, they like, I think, you know, felt like they helped us build it.
+
+And hopefully they continue to feel that way because we kind of found each other as, we were creating this thing. And I, I now think that that's like the way. And I, I think even like the presidential election, like the U S presidential election kind of shows that too.
+
+Like, you know, the difference between running a bunch of ads, the old fashioned way versus like being out there and mixing it up in, you know, online native forums and in an interactive way, just like a huge difference. a hundred percent. A hundred percent.
+
+Yeah. I started thinking about short form video and how do you like reverse engineer the viral TikTok? So building for mobile specifically or, or an AI startup, like thinking about, okay, I need to give something to this group of micro influencers that is going to get them to create a 30 second or 15 second, clip that is, you know, going to go viral.
+
+So what is that product? And then reverse engineering that, that's been really helpful in terms of like creating an AI startup that gets like millions of views and downloads. Yeah.
+
+I think that totally works. And, you know, it, it all depends on who your audience is, like who you're trying to reach and what you're trying to do. A bunch of them are going to be on TikTok and like, you know, that's a great way to get them into the funnel.
+
+And you can just like watch the top 10 clips at any given time and be like, okay, I'm going to like emulate this format. I know that the algorithm likes this right now. And I know a lot of people who are really successful at doing that right now.
+
+If you want to target like techie people, you probably want to do it on Twitter X. If you want to target salespeople, you probably want to do it on LinkedIn, you know, like it just, you know, and there's a format and there's a way of thinking and a way of talking and a way of interacting, which is like native to those platforms. And you have to behave that way to be successful on them.
+
+Okay. I want to end on, I think I'm going to name this episode, something around like the framework for starting an AI startup. So we've covered, we've covered kind of ideas and coming up with ideas.
+
+We covered some really cool startups like Granola and how they're doing it. We covered user acquisition. We've covered competition.
+
+What haven't we covered that we should? Pricing, monetization, how you make money. Yeah.
+
+Yeah. It's important. Oh yeah.
+
+The first thing I'll say is that one of my favorite lines about this is, I think it's originally a Walt Disney quote, which is we don't make movies to make money. We make money to make more movies. And Facebook co-opted this and it's in the little red book, you know, which is we don't make services to make money.
+
+We make money to make better services. And I really believe that the most successful companies in the world have that view. I think that you can build an incredibly successful company that makes you millions of dollars.
+
+It does not have that view. You know, that's kind of like the more mercenary approach, but you kind of need to decide who you are. before you start with your pricing strategy.
+
+But putting that aside for a moment, I think you just, with an AI company, it feels really clear to me that you look at the number, the amount of human input that you're saving and the cost of that human input. And I mean total cost. I mean salary, emotional damage that you have to sustain in doing the work, you know, all of that stuff.
+
+And, and, and by the way, those two things are very important because like, you know, some things in the world are really, really annoying, but only take like five or 10 minutes. But if you automate them away, I'll pay more than the time saved because of the emotional damage you're saving me or the frustration that you're saving me. Right.
+
+So you have to kind of like apply that lens or that adjustment factor. And then, and then I think you just apply a discount. Like, okay, like I just saved you a hundred thousand dollars worth of labor, $50,000 worth of emotional damage, 150 grand.
+
+Okay. It's a machine doing it. So I'm going to price that at a 75% discount or a 50% discount or an 80% discount.
+
+Yeah. And, and, and that makes it like a no brainer offer, which is kind of the goal, right? I think so.
+
+Yeah. And maybe you could do, maybe you get away with an 80% discount. I don't know.
+
+Sorry, a 20% discount charge 80%. I don't know, but I, I assume it isn't that bad to do 50. Are you of the belief to start, you know, you can, you know, people say you can always go down on price.
+
+You can never go up. What's your thought on, on, on that? I believe you can go up, but I think you need to be thoughtful about it.
+
+So when I was working at Monzo, which is like a big, you know, bank in the UK, we had a, we had a bunch of problems. I mean, one was that we were a regulated bank and people didn't think of us as a bank. So you're, you have to, you have all the downside of being a bank without the upside.
+
+And another problem was that we just didn't charge quite enough money. Like we didn't have enough things that made money. And that was kind of okay before COVID.
+
+But then our number one revenue stream was actually people using their debit cards overseas and the interchange you get from that. And that went away overnight and we were totally screwed. Um, and I remember spending weeks on a spreadsheet, um, with the finance team going through every line item.
+
+And we knew that we had a gap that we had to fill, trying to figure out how to fill the gap. And, um, we were terrified of, uh, what was going to happen when we started charging for like, you know, your fourth ATM withdrawal and what was going to happen when we started charging for replacement cards. And, you know, we had a list of things.
+
+Um, it was totally fine. It was completely fine. Nobody cared.
+
+People loved the product. Like maybe a few people complained or whatever, but like, honestly, like everybody just thought it was really fair. And they were like, oh, we've been getting this thing basically for free this whole time.
+
+And we really appreciate it. And, um, yeah. Okay.
+
+That seems cool. Like if I use the ATM for a third time, I'll, I'll pay a little fee, you know? And that has really stuck with me.
+
+Like that lesson. Like if you build a thing, which is like beautiful and people love and has a place in their lives, you can charge more for it later. And, um, you know, that goes against conventional wisdom.
+
+And I think if you have that knowledge, uh, it's a secret weapon because it's easier to get distribution for something that costs less. Yeah. And there's, I mean, I remember Uber, for example, like when we first started using Uber and Uber and Lyft and SF, when it first came out, it was like, well, not the black cars, but it was, it was cheap.
+
+Like I remember, you know, they basically got us hooked on the product. And we, once we were hooked and we were in the network, then we're like, okay, you know, they were like, okay, let's see if we can charge 10% more, 20% more, 30% more. I think customers, customers don't remember your, your pricing.
+
+They remember the value, right? I agree. Yeah, I agree.
+
+That's exactly right. And if you create great value, you can then find the efficient frontier of your pricing over time. That's it.
+
+And probably use AI to help figure that out too. For sure. For sure.
+
+Absolutely. Okay. Okay.
+
+I just have to ask, I know, I know, you know, before we leave, I know you spent some time with Mark Zuckerberg. What do you, what do you think Mark Zuckerberg is thinking about with AI and this whole AI world? Is he, you know, yeah, what's going through his mind?
+
+I don't know. I mean, I think that he's one of the smartest, most determined, most principled people I know, you know, and, and deeply thoughtful. And, he has a quality very few people have, which is, you know, he's also kind of fearless.
+
+You know, he like, once he makes a decision about a thing, you know, he kind of goes all in while still being open to input on the other side. You know, he's very, he's, I guess what I'm saying is he's very good at what he does. I think that the strategy that they have right now of like open sourcing a bunch of models, you know, makes a ton of sense.
+
+It's like the right strategic move. If you're in their position, you're kind of like salting the earth in a, in a pretty meaningful way, you know, giving everybody access to this thing instead of, so that it's no longer a war between like two or three or four Titans. It's just like, okay, we're all in this together, you know?
+
+this is very smart. And we'll see. I think it's going to become, I think that one of the, you know, really significant advantages that Facebook has.
+
+And again, this is one of the reasons why distributing the models in this way makes so much sense is, you know, Facebook has one of the largest permissioned training sets in the world. Um, it's not clear whether or not open AI really can train on all of the things that they train on. Um, there's a really great clip, I think of their, their former, um, CTO, you know, being asked about whether or not they trained on YouTube.
+
+And, you know, she just goes like, Oh, you know, like the face that she makes. And like, you know, Facebook actually has a right to like, you know, has just like a giant content library. Um, so I think that there's, there's a lot of stuff that they're doing, which, you know, takes real account of like, what are our strengths and what are our weaknesses as an organization here?
+
+All right, let's change the landscape around us to favor us with our set of advantages. And, um, you know, I, I think it, you know, they're doing a very good job at it. Um, very good friend of mine is actually running, um, generative AI, generative AI there now, um, who I think is totally brilliant.
+
+Cool. Yeah. Um, Mike, thanks for coming on people.
+
+If you enjoyed this episode, please like comment, subscribe. So, uh, so we know that you enjoy this type of stuff, you know? So, um, I'll see you in the comment section.
+
+Mike, where could people get to know you better? Uh, my website is H U D A C K.com. Udac.com.
+
+Uh, and I'm M Udac on Twitter and, uh, sling.money. Sling.money. We'll include both those in the description and, uh, yeah, go check it out.
+
+Hope you learned something valuable. I know you did. And Mike, I'll see you.
+
+Uh, I'll see you soon. Sounds good. Thanks, Greg.
+
+Thank you. Cheers. Cheers.
+
+Cheers. Cheers. Cheers.
+
+Cheers. Cheers. Cheers.
+
+Cheers. Cheers. Cheers.
+
+Cheers.

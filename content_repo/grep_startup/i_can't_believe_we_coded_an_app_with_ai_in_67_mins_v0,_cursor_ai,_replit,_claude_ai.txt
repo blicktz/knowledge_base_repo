@@ -1,0 +1,819 @@
+There's two types of people who've watched my videos and messaged me. There's the people, and it's nowhere in between. Either they have fully pushed to the end and created basically a full app that they love, or they got stuck on the first few steps and gave up.
+
+Once you get the aha moment where you're like, oh, this works, and you realize that you're in charge, you don't need to ask anyone. You don't need an influencer or a teacher. You just need to ask AI, you need to ask Claude, be like, hey, it didn't work for this.
+
+And it might not give you the right answer on the first try, but odds are by the second or third try, you will will your way to a working app. It's guaranteed. I just think it separates the high agency people and the low agency people pretty well.
+
+Riley, welcome to the show. This is the startup podcast where we talk about startup ideas, but we're not necessarily talking about startup ideas today. We're talking about how to use some AI tools to build software, right?
+
+Yeah. It's gotten a lot easier to create websites, whether it's landing pages all the way on the other side of the spectrum, like creating apps like Notion. I've been creating, I mean, it takes six or seven hours if you like really want to go ham to create something that looks a lot like Notion, but with a full database storage and everything fully with AI without writing a single line of code.
+
+So basically a $12 billion company, you can clone a lot of how it works. Well, I'll give Notion credit. I mean, they have a lot of, it's the skeleton of these apps, but like you can remix them as we were talking before this.
+
+There's certain apps where I'm like, I wish I had this feature. I wish I had this feature and this feature. I'm like, wait, why don't I just kind of screenshot the app, tell the AI, you know, this is the general, generally the way that you use the app.
+
+And then you can just say, but I also want to have these features. And then if you have the grit to push through the errors, because there's a lot of errors once you start dealing with databases, but usually Claude will figure it out. And the more times you do it, the better you will be at like fixing those errors and you get better at problem solving just like anything.
+
+And you can create some really cool things in like 10 to 15 hours of practice. And that's what we're going to do today. And by the end of this video, you'll have a good idea.
+
+And then you can start playing with yourself and start creating software. Absolutely. Do you want me to just hop into?
+
+Yes. All right. Let's just do this.
+
+Okay. This is a live cooking session. This is like live cooking.
+
+You're the chef. Let's do this here. Okay.
+
+So I'm going to share this screen. Is there been any good SaaS ideas that you guys have come up with? I know you do those live sessions.
+
+Have you guys thought of anything recently? Yes. You want me to pull one up?
+
+Sure. I mean, it's like the easiest way to use these tools is if you have some sort of idea in mind, but I guess without an idea in mind, let's, I guess I'll talk about what tools I want to talk about today. So this right here is V0.
+
+So this is going to be, this is front end and it's using Next.js, which I literally have not coded. 50 days ago, I had never coded in my life. So that was like the first day I found clawed artifacts.
+
+And then I started plugging that code into replet. But what V0 does is it lets you create these really cool front ends that look amazing. And what we can do is we can say, I want to create an app that, help me out here.
+
+What do you? Let's do something. Let's do a SaaS app.
+
+Let's do like a fate, one of those faceless video app creators. Can we do something like that? Okay.
+
+Yes, that's harder, but yeah. Yeah. What about, what about like an app that took your transcript of one of your videos, divided them into startup ideas and then made like a presentation out of them?
+
+That sounds amazing. Cause yeah, let's do that. Okay.
+
+So let's just, let's, this is where you kind of look at the shell, right? We're not going to on V0. We're not going to be able to add any AI features because that's all going to be done on the backend.
+
+So let's think about layout. So like what types of things would you want? If you, if you were to talking to someone on your podcast about startup ideas, what would you want to know about them?
+
+So like you have your, um, you have just like the idea you have, I guess, like a market, market, how big it is, how small it is. I like, um, for, for me, what's important is to know what are the other big audiences, internet audiences and communities, uh, in that space. So that just gives me more ideas.
+
+Okay. So I guess, um, let's just call it internet, uh, uh, audience. Um, and then the idea is just the, uh, main startup idea.
+
+The market will be, um, market, uh, market description. Yes. And then market size.
+
+And we can start with that cause we can always add to it, but I think this is a good start. So I want you to create a, let's call it a presentation card, a presentation card, uh, or slide as if it was going to be in a pitch deck about a startup idea. And I, let's just say, make it a really slick, uh, design, uh, with cool.
+
+Uh, subtle animations. Could you say, could you say flat design? Shh, don't tell anyone, but I've got 30 plus startup ideas that could make you millions and I'm giving them away for free.
+
+These aren't just random guesses. They're validated concepts from entrepreneurs who've built a hundred million dollars plus businesses. I've compiled them into a one simple database compiled from hundreds of conversations I've had on my podcast.
+
+But the main thing is most of these ideas don't need a single investor. Some costs nothing to start. I'm pretty much handing you a cheat sheet.
+
+The idea bank is your startup shortcut. Just click below to get access. Your next cash flowing business is waiting for you.
+
+Instead of slick. Okay. Slick.
+
+Do slick, slick slash flat. Flat is a type of design. I just want to see if it, it knows what that is.
+
+It's a little tense. I don't even know. I don't know what that is.
+
+I'm curious. I'm no designer. But v0 lets me offload a lot of that.
+
+And it also allows me to just take things that I like. And let's see. We're actually going to see it work in real time.
+
+So see, it's kind of nice. And I like this, actually. So what's happening now is it's literally building the front end for this?
+
+Is that what's happening? Yeah, so we can actually see the code right here. So we're going to be using Next.js.
+
+I have a template that allows me to very quickly create Next.js apps. So my partner and I, Anj, who is a developer, and his main passion is like teaching people how to code. And he's been incredibly helpful in teaching me.
+
+And so we're building the most annoying part about coding is what he calls plumbing, where you have to go in, you have to set up all the libraries, and you have to make sure that you're organizing your files in the proper manner. And when I was first starting, that would take me three hours just to get to the point where I could put an idea that I had into a website. But we're actually just doing all of that work so that you could start from that exact point where you've done all the plumbing, where you still have all the possibilities.
+
+You've just done all the boring work, like install the libraries, because v0 opera, it has all of these different libraries already downloaded, which is why it can render this. Normally, you'd have to download a bunch of things to do it, because coding is a lot of just libraries, and it's kind of boring. But what you can also do on v0 is you can actually say, make changes.
+
+So like, make changes to this card. I want to make changes to this card. I want to have a border around the edges.
+
+And add light dots in the background as if it's graph paper. Very light. And what's the word?
+
+Transparent. And I just want to go over the example that you can kind of alter these. And it just edits these live.
+
+So it'll look back at the one it previously created, and it will create a new one. And so this is a lot like clawed artifacts, but like on steroids. And crazy.
+
+Yeah. So you see that if you see those dots in the background, it's kind of a nice little nice touch there. And it added the nice border.
+
+And so you can always go back and see. So we can see this one. And we can go back and look at the previous version, which didn't have a border, nor those dots.
+
+Can I add one quick thing? Yeah. I don't know how to.
+
+And I want to see how you'd prompt this. So on my podcast, I say either an idea is sip or spit. Sip is if I really like the idea, like Startup Ideas Podcast.
+
+And spit is if I really don't like the idea. How can we put, how can we do a prompt so we can show if the idea is sip or spit? Oh, wow.
+
+Okay. We could actually make this useful. Wait, hold on.
+
+Okay. What if you had a section of your show where people submitted startup ideas to your show via a text prompt? Yes.
+
+And then it converted it into this. And then it gave you like a toggle where you could either drag it to the right for almost like Tinder for sip or spit. And based on what you do there, then we'll add an animation left for like, we can even add a sound effect too.
+
+We could do that. And we can even add little light background music too. Let me think about this for a sec.
+
+Okay. Okay. See, this is the fun part.
+
+This is, I love this process of like coming up with an idea. Now I'm like thinking, okay, what have I done like this before? And I think I got it.
+
+Okay. So let's just describe this. Also, I use voice a lot when I'm making these.
+
+So I want to add an evaluation pop-up. And this, I want you to include an icon and just have a placeholder image of a, a person. And I want this to have, I want to be able to drag this icon to the left, which is spit.
+
+And I, or drag it to the right, which is sip. Sip is positive. Spit is negative.
+
+Sip should be a green, should be green. Spit should be red. Add a positive animation to the entire card when it gets dragged to spit and change the color to, change the border color to green.
+
+And for spit, change the border color to red. And we can alter these animations too. And this will just take a second to load what I just said.
+
+The purpose of this is to evaluate this startup idea so that I can look an idea, drag it in a certain direction, and we can label it as either good or bad, which I call sip and spit. I like to make sure I give it, I tell it the purpose because it will actually use that in the prompt and it might add to its creativity. So let's just try this.
+
+And it might take a few times to get it right because this one's a little bit more advanced. That's interesting that you gave it the purpose. Like you really did treat it like a coworker.
+
+Mm-hmm. Well, it knows what types of animations. It's trained on data.
+
+Oh, what's it doing down here? Okay. Okay.
+
+Hold on. Is this a drag? Oh, my God.
+
+Wait. This isn't. Make this a slider.
+
+Let's just make it a circle for now. I was going to make it your face once we actually make it into a thing. So I want to drag the circle in a direction, and that causes the green or red border.
+
+Let's say the slider should be right below the card. And if you drag, actually, we'll add that next. Should be right below the card.
+
+The user should be able to drag it in either direction. By the way, I'm happy that mistakes are happening right now because the whole point of this video is for people to learn how you approach problems, too. Yeah.
+
+And I think people don't realize how on Twitter and YouTube you see all the highlight reels of people creating amazing things with AI, and you can absolutely do that. Ooh, I like this. Dude, that's actually amazing.
+
+That's fire. All right. Please let me do it.
+
+All right. So let's see. All right.
+
+So it says great idea. And then needs improve. Wait, is there?
+
+Oh, you could add, like, tiers. So, like, a mini spit or, like, pretty good idea. And then really good idea, depending on how far you slide it.
+
+We could do that pretty easily. But I like the just it's either a spit or a spit or a sip or a spit. Please change the border color depending on the way depending on the depending on the decision made by the user.
+
+And then the pop-up message you have at the bottom should be sip or spit. Let me see what happens if we zoom out here. Oh, yeah.
+
+That's actually really clean. Make the line thicker and the font for sip or spit larger. Try that one.
+
+So instead of, you know, I went to computer science school. So instead of writing code, what you're doing is you're speaking English. And then the code is coming out.
+
+I call it composing code. Like, you're kind of you're just kind of guiding it. You're telling it what you want.
+
+And you know what things are feasible and what types of things aren't feasible the more you do it. And I think this looks a lot cleaner. What are your thoughts on the line thickness?
+
+Solid? Yeah, it's really nice. I like that it's thick.
+
+Yeah. Yeah. Okay.
+
+And then. Boom. All right.
+
+Let's just go one more. One more. One more.
+
+Now I want to create multiple slides of this. Once a decision is made, it should go to the next startup idea. And then I should make the same decision on the next one.
+
+There should be an animation. Once I decide sip or spit, make them positive or negative. All right.
+
+Last one. And then we can. I get nervous.
+
+You know, I'm like, what's what's what are they going to come up with? Well, you can always revert. Like, I think you can retry this.
+
+I actually haven't used this is the first day I've used this specific tool, but it's very similar to the tools I've been using. I think you can redo it. So there's not a lot of pressure unless you're on a podcast.
+
+Okay. Yeah. Okay.
+
+Okay. Okay. Cool.
+
+Let's. Let's just try it. Wait, why does it?
+
+It's like reversed here. Okay. Wait, let me reset this, I guess.
+
+And while you're resetting it, I have one small design detail I would like changed. I really like the dots that you have in the back, but I don't find them pronounced enough. Is there anything you can do to help me?
+
+Yeah, absolutely. Hey, Greg wants the dots less transparent. So have them more prominent.
+
+And also below the sip or spit bar, it has two labels, which is sip and spit. Those should be reversed. They should not.
+
+You have the sip on the left and spit on the right. Please reverse those. And the animation's kind of weird, but like, that's okay.
+
+We can always fix that later. Because I agree. I think the dots, I love the dot look.
+
+I've been using that a lot. Yeah. It adds a nice amount of texture.
+
+Yeah. Like even like horse or diagonal grid lines are fun too. I've noticed that.
+
+I will say, I think knowing how to design or knowing some of the terminology is still going to be super helpful. So, right. One thousand percent.
+
+No, no. Like one thousand percent. Taste is everything.
+
+And it's since I started doing this, I'm now paying attention to every website. I don't go to a website anymore without thinking like, oh my God, like how are they doing this? Or how can I replicate this?
+
+Or like what other tool could I create using this design method? And it's really fun. And it helps you actually like develop your taste for websites and finding cool designs.
+
+Because a lot of the best designs, and this applies to video editing as well. It's like below the level of your consciousness. Like you don't notice it unless you're looking for it.
+
+And it's fun once you, okay, now it's flipped everything. Okay. Jesus.
+
+This actually looks better though. Despite the, it's off, right? It has sip on the left, spit on the right.
+
+So, we need to ask for one more change. Let's just do this and then we can move on. So, sip should be on the right.
+
+Spit should be on the left. And we're just going to, I'm just going to screenshot. This is another good lesson actually.
+
+I'm glad this happened actually. We can screenshot this. And you can actually bring it up.
+
+And what I'm going to do here is I'm going to draw on this. And so, I'm literally going to, I'm not going to use any colors we've already used before. And I'm just going to circle these.
+
+And I'm just going to say, and then I just screenshot it again. And then copy it. Because it doesn't, if you try and copy that, it doesn't copy.
+
+So, now I'm just going to paste that image in there. And I'm going to say, you see the labels. Oh, those are the slides.
+
+I just realized what that is. Those are the different slides. Like the first one is spit.
+
+The second one is, did you know that? Or am I the one? No.
+
+No, no, no. Okay. So, like it's, it's, what it's doing is, I just realized what it's doing.
+
+Is it's like a, so once you go spit or here, you see that it's like, that's your first, the first one you did. Right. So, if I go, but it's reversed because they're all, it's messed up.
+
+So, we might, so, okay, actually, okay. Sip should be on the right. Spit should be on the left.
+
+Please switch them. For the ones I've circled in blue, number those and make them gray. No matter what the choice was.
+
+Because I think it's kind of confusing when it's like this. Or maybe we, I don't know. But let's just try this.
+
+But this is really useful, the screenshot. Because we can screenshot any website. We can go to any website you think is cool.
+
+And literally screenshot it. And then describe like what you should do with it. And you can, in one minute, have a working prototype for it.
+
+It's not a full app because it's not storing any of the data. But it is a prototype. It's pretty cool.
+
+All right. I hope we get it on this one. Good.
+
+So far. Okay. Looks good.
+
+Now, if we go sip. Boom. Now, one was sip.
+
+Two is spit. Three is spit. And that's it.
+
+Pretty cool. Pretty darn cool. Pretty darn cool.
+
+Quick ad break. Let me tell you about a business I invested in. It's called boringmarketing.com.
+
+So a few years ago, I met this group of people that were some of the best SEO experts in the world. They were behind getting some of the biggest companies found on Google. And the secret sauce is they've got a set of technology and AI that could help you outrank your competition.
+
+So for my own businesses, I wanted that. I didn't want to have to rely on Mark Zuckerberg. I didn't want to depend on ads to drive customers to my businesses.
+
+I wanted to rank high in Google. That's why I like SEO. And that's why I use boringmarketing.com.
+
+And that's why I invested in it. They're so confident in their approach that they offer a 30-day sprint with 100% money-back guarantee. Who does that nowadays?
+
+So check it out. Highly recommend boringmarketing.com. Okay, so now let's have some more fun here.
+
+Now we're going to use a tool that has been the most hyped tool since, I don't know, I can't even remember. For those of you wondering, it's called Cursor. And what I do, so I have this template.
+
+And you can link it below. We created this template. And we've basically done all the dirty work.
+
+So this is Next.js, which V0 is also Next.js. So you can do a lot of the same things. And so that's where I come up with just general ideas about interface.
+
+I take a bunch of screenshots. And then I'll give it to Cursor to come up with the actual application. I'll show you guys here that I actually have.
+
+Let's go to my other account. I've set up before this episode. I've set up a backend or a database storage and authentication.
+
+So signing in with Google and everything that you would need to actually turn it into an app. If you also want to gather emails or gain users. That's all part of this template.
+
+I don't know if we'll get there today. But what I do with Replit. So this is Replit.
+
+This is what we run the front end on. This is how we deploy the application. And we basically connect Cursor up to this because Cursor, it's significantly harder to deploy apps.
+
+For beginners, Replit makes taking whatever you've created and putting it on the internet with a domain that you can share. I can share my domain with Greg and he can open the site and use the site and sign in. Or I can go to Namecheap, buy a domain, and I'll show you that process.
+
+It takes like 10 seconds and it's hosted directly on Replit. And so like 20 bucks a month or something, you can host a website and get that. And Firebase is free until you've reached like a certain amount of users.
+
+So it's very, very cheap now. There's like no excuses to not get like an MVP up. And v0, what's the cost of like what you did?
+
+What are we talking? V0 is either, it's either 15 or 20 bucks a month or something. My AI budget is over $1,000 a month.
+
+So like I lost track of the tools. But if you compare that to a front end designer, right? $15 a month, right?
+
+What's the hourly rate of a solid designer? Probably hundreds of dollars per hour. To me, it's a no brainer.
+
+So this is Replit. What we need to do is we need to connect it to Cursor. I don't believe I've done that yet.
+
+So I'm actually going to close out of the project I was working on before and open up a new window. And we're just going to do this really quickly. For anyone who wants to use this template, this will actually be cool.
+
+You can just open the template and you're going to hit use template. And this will take you exactly to this page. Then you're going to go, then what you're going to do is we're just going to open up secrets.
+
+I think I've already done this, but you'll have to do this as well. And then we're going to also open up SSH. And I have more videos on this if I'm going too fast.
+
+But basically, what you need to do is you need to go to keys. And we're actually just going to put this aside for now. So we're going to leave it open with this keys tab.
+
+In Cursor, you're going to press this button down here to open up the terminal. You're going to press command K. We're going to type generate an SSH key for replet, name it replet, and copy the public key to my clipboard.
+
+This seems scary because it is. I still don't fully understand what I'm doing. But this is how you set it up.
+
+You're going to press. You're going to click on whatever it generates right here, right after it. Enter, Y, Enter, Enter.
+
+That automatically copies this SSH key that you then add right here. I'm going to name it SIP. Then I'm going to hit Add Key.
+
+Then I'm going to hit Connect. I'm going to copy this Connect Manually key. And we're going to hit Open with SSH.
+
+We're going to paste it here. We're not going to hit Enter. We're going to press Add New SSH Host.
+
+And we're going to paste it in right here and hit Enter. We're going to click the top one. Click Connect.
+
+Click Continue. And then we're almost there. You only need to pay attention to this if you actually want to use Cursor.
+
+But Cursor is by far the most fun tool I've ever used. It is the best software I've ever used in my life. So you're going to want to pay attention.
+
+You might want to try it. Okay. So then you're going to click on this.
+
+This should match the name of the project, which it does, SIP pod. And we're going to hit OK. So now they're synced.
+
+The template that I made with Ange, and he put in the heavy lifting. He's a developer. Replit makes it very easy to share templates and makes it very easy to deploy.
+
+So you can very quickly download it. And you can then write code and create stuff with it. The editor on Cursor is a lot better.
+
+So we're basically connecting Replit and we're connecting Cursor. Now we've done that. Now we're just going to open up the files that we need here.
+
+So in source app, and we're just going to hit page.tsx. And this is basically the homepage of this template. And now we can use the composer, which is the feature that is why Cursor is going so viral.
+
+This basically allows us to edit multiple pages at once. And so we can then come here and say, and we're actually just now building this out. So I'm not fully confident this is going to work, but I'm going to take a risk here.
+
+I'm going to say, or I'm going to just say this is a Next.js app. I'm trying to think of how we should do this. Okay, let's do this in order here.
+
+So I'm going to create this Next.js app. And I want you to, I want you to, I just don't know how we want to start. Like when should we add the AI features to, I'm just going to start off.
+
+I want you to take the, take inspiration from, and what we're going to do is we're going to use this paths. So chat.md. I'll explain this after I do it, actually.
+
+We've used the template to create apps. And when we do that successfully with a certain prompt, we add it to the project files so that other people can come here and use inspiration from the files that we've used. And so the end game of this would be a blank template where you can create anything, but there's kind of 30 paths you can go down of different types of apps, whether it's note-taking, basic, chat app.
+
+And so let's just say, I want you to take inspiration from chat.md. And let's create a basic chatbot where the user will put in a startup idea. And you will output the idea in, let's go to V0 real quick.
+
+Just screenshot this. Copy this. Nope.
+
+Copy this. Paste that in. Output the idea in text.
+
+Format. In format in this. Met with these ideas.
+
+Ignore the styling. I don't want to worry about styling until a little bit later. I just want to get the AI text feature down.
+
+So just have idea, market, and internet. Audiences. Anytime you deal with AI features, it gets tough.
+
+Like this is when you run into a lot of bugs. I mean, this is a hard thing to create. And so the fact that you can do it in just a few bugs is impressive.
+
+Let's just go ahead and let's just see what it does. So I'm going to hit command shift enter, which will actually, so now it's looking at all of these files, which I never told it to use all of these files. It's just going through, right?
+
+We can watch it code in the background. Like it's literally making changes and telling us exactly what we need to do. Now it says npm install open AI edge.
+
+Okay. I hope that's the right install. Anytime it says install something, npm install open AI edge, what you need to do is you need to go to replit.
+
+And you need to go to your shell and you need to paste that in right here. And it does some magic stuff. I still don't understand it.
+
+It's downloading libraries that it needs to do this action. So now what we can do is what I'm going to do is I'm going to reset this. So I'm going to hit the stop running and then I'm just going to rerun it and then open up the web view.
+
+In theory, the changes will be made after I hit save all. I'm going to hit save all. I don't know if it'll be added to the homepage yet.
+
+We may need to connect it, the app that it just created back to the homepage. So I don't know if it's going to change anything. So I'm going to hit save all.
+
+Okay. It is doing something. It's hard to tell.
+
+I don't see any errors. Okay. So now we have this startup idea analyzer after one single prompt.
+
+And we haven't accepted those changes yet. If you're using cursor, hit save all instead of accept all. Accept all is not reversible.
+
+You have to ask the AI to reverse it instead of just being able to hit reject. I can still hit reject because I hit save all. Just throwing that out there.
+
+Okay. Startup idea. Let's go ahead.
+
+And I have a startup idea for selling gummy bears at football games. What we're testing here is we just want to know if this works. Right.
+
+So you just put in a test idea. You might want to add one other thing. What other stuff did we have?
+
+We had the market football games in Germany. Just to give it a market. Okay.
+
+Let's hit analyze idea. So what's going through your mind right now? Yeah.
+
+Yeah. So what we've done here is in this template that we're literally making. This is one that we're like in production making.
+
+And this was a good test for me. So we have secrets in here. So these are all API tokens.
+
+So we have the open AI API key, the replicate API key. So these are all tools that you can use on the web that allow you to do cool things. Right.
+
+A popular term is open AI wrapper. And what that is, is just a software that someone created. And it's using open AI and paying them a little bit every single time it's used.
+
+So you're hoping that the monthly charges that you're charging people will outweigh the amount you're paying open AI for the usage, basically. And you can use as many of these different APIs. And a lot of like a tool like Notion is using a ton of different APIs if it has Google Drive, all these different applications.
+
+But in this case, for some reason, it's not working. So what I'm going to do is literally just tell cursor, okay, when I entered my idea into the input field, nothing happened. I need it to generate the output that we discussed.
+
+And it has context of this. So it'll know what you're talking about. And I just sometimes add, please make this happen.
+
+Or like, I don't know. You don't have to do that. And I'm just going to hit...
+
+Sometimes you're mean to them. Is that what I was hearing? Only when I get mad.
+
+Only when it's like fails 10 times in a row. And I'm honestly glad this happened. I have talked to...
+
+There's two types of people who've watched my videos and messaged me. There's the people... And it's nowhere in between.
+
+Either they have fully pushed to the end and created basically a full app that they love. Or they got stuck on like the first few steps and gave up. Once you get the aha moment where you're like, oh, this works.
+
+And you realize that like you're in charge. You don't need to ask anyone. Like influencer...
+
+You don't need an influencer or a teacher. You just need to ask AI. You need to ask Claude.
+
+Be like, hey, it didn't work for this. And it might not give you the right answer on the first try. But odds are by the second or third try, like you will will your way to a working app.
+
+It's guaranteed. You just have to have... I just think it separates the high agency people and the low agency people pretty well.
+
+Something I've noticed. So we're just going to... Oh, I should not have hit accept all.
+
+But that's okay. I was just going to say, you sly devil you. That's okay.
+
+We'll be fine. Let's go ahead and refresh this. I don't know why there's these like horizontal lines here.
+
+Let's... That might be a function of a bad template prompt. So let's just paste in what we had earlier, which was the gummy bears in Germany.
+
+Can you please use the open AI... Oh, wait. Hold on.
+
+Aha moment incoming. Open AI key in your environment variable, which we do. It's open AI key, right?
+
+It should be called open AI key. It is called open AI key. Can we please use the...
+
+I think we should make this an input field first and then use the AI features. Because we're going to want the AI to fill them in in specific ways. Well, see, this is the hard part.
+
+This is hard to make content on this because you're... Okay. We need...
+
+Can you please add error logs to the AI input field? I have no way of knowing what the problem is. Fair request.
+
+Is that something you've said before? Yeah. So I've been doing this a lot.
+
+Well, usually you should get an error. The most annoying part about this is we're not getting any error. It just literally doesn't say anything.
+
+It should say either... It should say a host of different things. It should either say API is failing because like you have an incorrect API key.
+
+It should literally just tell us what the problem is. But it's not telling us anything. So we need to enter the sense.
+
+Probably going to fail. Analyze the idea. Something's wrong.
+
+I don't know what's going on. Hold. Why is there no error?
+
+Okay. I want to change the page. We'll add the AI features second because I do want to add that.
+
+Okay. I want to change the page. The startup idea analyzer to just be an input field and an enter button.
+
+For all the fields to create... For all the input fields to create a slide that looks like this. And what we're going to do is we're going to just paste this in here.
+
+Here is the code that I use to design this card. Based on the input field, I want this to be created for that card. Okay, now I'm going to come over to v0, and I'm just going to paste it in here.
+
+And we'll let it, because it needs to recreate it. It's not going to use the code, because it already has libraries downloaded. So this is fine.
+
+Okay, so what's happening? I just, I'm changing strategies here. So rather than have AI generate out in text form the startup idea in the format that we want, instead I'm going to create text input fields.
+
+So we're going to manually put them in. And then we can ask AI to take an idea and in the background basically fill those in. So we're actually just recreating the process.
+
+If you don't know how to code, this is a good way to do it, is to actually create it manually and then say, I want to automate this process and have that whole process happen in the background. So like the user doesn't see it. Because I don't really know how, there's a whole thing with AI and object creation.
+
+It's, I don't fully understand it. So you can use other, okay, so we need to install this. So let's install frame or motion.
+
+So we're going to come over to the, we're going to come over to this right here. We're going to go to the shell because you see NPM. That means shell.
+
+We're going to type in shell and we're just going to paste this in like this. And so it's installing frame or motion and Lucide react, which is icons, I believe. We might've already had both of those downloaded.
+
+Not sure in the template, but now I'm going to just stop this, rerun it. And we're going to open up the web view. And let's go ahead and press save all.
+
+Oh brother. I did something wrong. This is the process.
+
+Oh, I know what I can do. Okay. I'm just going to revert here.
+
+I really do think we need to do better instructions from the get-go. I'm just going to, I'm just going to do it. Okay.
+
+Good. Good. This is how it should have looked when we were getting errors.
+
+Because this makes it very easy for us to, it says we don't see frame or motion. So we can just easily paste in error. Please advise and fix.
+
+Error messages are good. Blank screens are bad. Right.
+
+This is what should have popped up in the dev log. Right. We should see the errors right here.
+
+And it actually knows what to do. And we can actually just see how it reacts. So we can hit save all.
+
+And then we're going to refresh. I think it fixed. I think there was multiple errors.
+
+And now we're only getting. I think we're getting. I think this will fix.
+
+Oh, do I need to add? Oh, I need to add frame or motion. Okay.
+
+I'm so out of my element right now. I'm still getting this error. That's good, by the way.
+
+Because most people are out of their element. It's just bad for retention, you know? It's, yeah.
+
+But the real ones are here deep, deep in this episode. They're with us. Now we need to, I need to know.
+
+Or now I know that what I need to do is add to the template. A basically a V0 to replet pass. We need to work out these kinks that I worked out on this podcast.
+
+Or encountered on this podcast. And just include it. But we're here now.
+
+So let's go ahead and just accept this. Now I'm going to hit refresh. And what I want to do is we're on.
+
+Let's go to. We're in the. So we're in source app page.
+
+Okay. So this is what we're on. So we want to stay on this page right here.
+
+I want to be able to edit these on the site. The existing page should be the evaluation page. This is the final page where I will evaluate all of these startup ideas.
+
+What I need at the top of the screen. Or at the top of this page. Is an input.
+
+So it should look identical. So I should be able to add these slides in the identical manner. Except I want to be able to add my startup idea.
+
+To one of these cards. And then I want to be able to submit it. In which it will move to the evaluation stage.
+
+Which is part two. Let's just try this. Okay.
+
+I feel like there was a little bit of bugs on this part right here. Because like when I hit sip. I guess that's fine.
+
+I guess the bar is red. And then. Yeah.
+
+It's still kind of buggy. But that's okay. Yeah.
+
+It's totally okay. I mean just having something. We're going to.
+
+This is a good lesson for anyone still watching. We're going to open up perplexity here. And I'm going to say.
+
+Give me the latest docs necessary for what I want to do. And I'm actually going to say. Latest API docs for what I want to do.
+
+I am trying to get open AI chat GPT to analyze a transcript. And fill in data based on that. Because the docs are going to be different.
+
+Depending on like just a chat. Versus actually having a structured output. It's actually much more advanced than just like a standard chat bot.
+
+So yeah. Perplexity will actually find the latest documentation. It's just going to give better instructions.
+
+We can feed it to cursor. Which will allow it to make better decisions. Write better code.
+
+And that's a really big thing. And oh wait. I need this.
+
+I am using next JS. Please recreate. And you have to make sure that.
+
+So it should give us node JS I believe. Okay. So here it's giving us the JavaScript.
+
+Yes. This looks good. So we're just going to copy this whole thing.
+
+And I'm just going to say here is open AI documentation. All right. We'll see.
+
+I've never done this before actually. But I think we could figure it out. Okay.
+
+So while we do that. I'm. Have you ever heard of Cubby?
+
+I haven't. So I was actually toying with this idea before. So Cubby is like a.
+
+It likes. You can very quickly save. YouTube videos.
+
+And it just automatically copies the transcript. And then you can like play it from any point. So I can like highlight this.
+
+Part right here. And play it from that exact part. And you can highlight different parts of it.
+
+But let's just go ahead. This is a really long one if I remember. Okay.
+
+I guess. Let's just. Let's just see in the first 17 minutes of this one.
+
+I don't want to get messed up by too long of context. So we'll just copy that real quick. And we can close that out.
+
+Now I'm going to hit save. And we're going to go to web view. Okay.
+
+Nice. It's coming together. Please work.
+
+We're going to paste this in here. Yeah. That looks about.
+
+All right. So let's see. Analyze transcript.
+
+Come on. There's no way this works. Why is OpenAI giving me like no errors?
+
+Can you change this to Anthropic, please? Give me Anthropic. Anthropics API for the same use case.
+
+It looks good though. Like we have every, we have all the shell in place. Like we have the analyze the transcripts, right?
+
+You can just like literally download your transcripts or you could use a transcript API, but YouTube starting to block those. Like you could automatically, once your video is uploaded and your transcript is uploaded, it basically just automatically pulls it, analyzes it for startup ideas. Or I forgot that we might actually have it just be like your viewers just upload it.
+
+But I really wanted this to work. See, I didn't know you can do that. I didn't know you can just change from OpenAI to Anthropic.
+
+Yeah. I mean, it's, it changes the code. I mean, they have different documentation.
+
+So like either one, we're going to be downloading, we use NPM install Anthropic and it has different rules, right? But I'm pretty sure I've already, I'm just going to do this again, just in case I haven't done it. Now that I think about it, I'm not sure, but let's go to secrets.
+
+New secret. Oh yeah. Paste that in.
+
+So this is a next, this is what's different than the normal projects that I've been creating. Why is this giving me no API errors? Nothing.
+
+I want to at least know what the problem is. So it's so cool. It's kind of like you're, you're talking to your engineer friend and they're helping you.
+
+Yes. Yes. And the more experience you have, clearly I'm out of my element because two days ago was the first time I tried Next.js.
+
+And so I had a previous template that I was using with just react, react and TypeScript. And the reason we switched is because you had to set up the, a full separate replet for a backend API, but it was actually, I understand it a lot better. So like when you enter a new territory, which I am right now with Next.js, you get caught up because you don't know what the problem is because I haven't been dealing with Next.js problems as much.
+
+Anthropic API key. Yes. We have all that in there.
+
+Let's just hit save all. Analyze transcript. Just give me an error, please.
+
+See this, this actually lets you solve the problem. We got an error. So ask it to find a way to give you an error, which is called error logging, I think.
+
+And I'm just going to paste in this error. Please fix this problem. Insane that you can do that.
+
+It's fun, but it's annoying. It's so annoying. And you, it, sometimes it leads to nothing.
+
+So you got to carve out like two or three hour, more time than you think you need at first. And then eventually it'll get better once you've mastered. And if we just use like Python and we didn't care about how good it looks, it would be much easier to create because Python is very straightforward and AI is very good at creating it.
+
+It just wouldn't create those. You can't use V0 for Python. Like using, like it's just not compatible.
+
+Okay. So let's just hit save all. Let me see here.
+
+Okay. Okay. Okay.
+
+Okay. Now let's see what the issue is. Um, what's interesting about subcategory on Amazon?
+
+Analyze transcripts. Sending transcript for analysis. See, now we have better logging.
+
+We can actually see what's happening here. Okay. Okay.
+
+We're getting another error. Um, and I'm going to ask first, can you please tell me if this is the same error as last time? Uh, if it, uh, if, and give me some more information on that, then fix the error, please.
+
+I just want to know. And we're going to run it again. Okay.
+
+We'll try one more time. Um, please make sure that the anthropic, um, API response is properly parsed and be lenient. I really want this to work.
+
+So just make this work. If this doesn't work, we'll try what I said previously, cause I think that would work. Cause I think it's coming through.
+
+It's just failing to parse it. We needed to plea with it. Hmm.
+
+We needed to plea with it. We needed, you got personal with, with it. Yeah.
+
+We need to negotiate. We need. Yeah.
+
+I'm pretty sure it's. Anthropic API key. Yeah.
+
+Um, let's hit save all. Oh, is this correct? Is that one of the ideas they talked about in the episode?
+
+Yeah. I can't believe. I actually can't believe it.
+
+It was. That's, I literally cannot believe that. That's one of the, what's a lit RP.
+
+What's a lit RPG. Lit RPG is just this. Yeah.
+
+Literature role-playing game. It's like a very niche audience that this guy, Nicholas cold was talking about that. There's huge opportunity to create books for.
+
+And were these things that you guys talked about or is it using AI to guess? Wait, that's actually kind of cool. I might use.
+
+Um, I'm pretty sure we talked about it. And did you use 250,000 per month? I'm just trying to figure out what the AI is.
+
+Yes. Okay. So it's literally summarizing it.
+
+Nice. Yeah. Okay.
+
+Summarizing. Yeah. Um, actually, I don't know.
+
+I don't know if we said 250. We might've said like a hundred and I see to the side, it says projected market size by 2028. So maybe it like put some, you know, compound annual growth rate to it.
+
+No, it's good. It's good. You have to play with it.
+
+Um, it's good to know which, where it's, um, when, so, okay. So, okay. So we can add a new idea.
+
+So that added the idea. Okay. Now I want for, um, because if we were doing it on the old template, I would know how to set it up.
+
+So users could literally go to a site called Greg Sipperspit.com and they could sign in and upload their ideas. And then you would, once you hit, like, you could hit like show all, and then you could like go through them and see like Sheila said that had this, and you could literally turn it into a segment in your podcast, but I don't know how to do it with this new template. Um, but I will get there.
+
+Um, hmm. Let's open back up Cubby. Let's see what happens here.
+
+So let's go later in the episode and let's just grab, you guys talked about multiple, oh, three startup ideas. Okay. Wait, whoa.
+
+Oh, it just did two in that one, I think. Yeah, it did. Wait, so niche publishing house, SIP.
+
+Yeah. AI powered niche publishing house, a publishing company that uses AI to generate 80% of niche genre books with human writers to finish the last 20%. Is that one you talked about?
+
+Yeah. Okay. Um, spit.
+
+Only, this isn't real, is it? The. Only fans creator book partnerships partnering with only fans created.
+
+I think we might've said that. Yeah. Really?
+
+Really? Okay. Yeah.
+
+Okay. Well then. We did.
+
+This might just work actually. Wait, I think we might reach a context limit here. I saved.
+
+Let's go to different one here. Let's just grab all of them. Um, this one is the same one.
+
+What's a shorter one? Five validated startup ideas. Okay.
+
+So we're just gonna do the first half of this one. Cause I think we're going to get cut off. Actually it is anthropic.
+
+It might be able to just do all of them. Let's see. Let's just see if we get an error.
+
+Come on. No way. All right.
+
+It just works. Let's go. I am so, thank God.
+
+I was feeling the pressure. Wait, so now let's just change this to spit real quick. Okay.
+
+Facebook Reels Optimization Tool. That sounds about right. Wait, this one was with, I think I actually watched this one.
+
+Oh no, just kidding. Yeah, this is, this is, this was, yes. This is from this episode.
+
+Chris Kerner. So he did talk. I just want to make sure this is right.
+
+So he did talk about this. Okay. Uh, let's, uh, sip this.
+
+Programming SEO agency franchise. Yes. Okay.
+
+AI content repurposing tool. That's right. Yes.
+
+Lifetime warranty product. Yeah. All these things.
+
+All right. This is, is working. We can just go through and grab all your, uh, podcasts and just like see all the ideas.
+
+Um, all right. Um, and we won't have time for it today, but couldn't you automate that? Yes.
+
+Yeah. That would take a little, I mean, then we would need to, um, there's, I mean, that's a, that's a really valuable thing. And if you want to create something of value, yeah, it would probably take me another two hours plus another, a while to debug.
+
+And like, I might actually need help to fully deploy it properly. Cause that's a really hard thing. Like you're basically scraping transcripts.
+
+Then you are putting it through this process. You're then saving them. And, um, I mean, actually if we had another hour, I'm sure we could figure it out, but let's just paste this in and let's hit analyze transcript, comment on YouTube.
+
+Uh, if you want Riley to come back some other time, if he'll bless us. Do you know this one? Uh, wait, I'm just curious on which one this is.
+
+Let's see. This, this feels like a Cody Schneider, just like looking at the transcript. Oh, damn.
+
+This just got, I just uploaded this an hour and 22 minute episode and it got, it went from eight to 15. Yeah. Let's just see what this looks like full screen.
+
+So this is the app startup idea evaluator. You paste in your transcript and then, um, yeah. So then this is this one.
+
+So you have a LinkedIn video content agency for founders. Um, the AI automation consulting for small businesses. I don't know if you talked about that.
+
+Like I'm pretty sure these are all. Yes. Okay.
+
+Nice. All right. This works.
+
+Um, Ooh, formatting gets a little rough after, after 10, but that's fine. That's easily fixable. Yeah.
+
+Um, yeah, dude, I feel like send me your invoice. I feel like after this, I owe you a hundred thousand dollars from this app. Nah, dude, I'll, uh, I'll figure out how to deploy it.
+
+Well, um, I'll just like send you the link. You can use it. Amazing.
+
+Um, so Greg, we're about an hour and 15 minutes after we finished the episode, but I've added the ability to just paste in a link and we can hit load transcript. Then I can actually type in what I want to look for. So startup ideas.
+
+So I kind of turned this into a general app, something that I might use to analyze a transcript and maybe look for AI news or coding ideas or something along those lines. But we can just paste this in and hit analyze transcripts should load any second now. Boom.
+
+So four, uh, total ideas extracted. And now what we can do, um, and I just put jot, like jot it down or not, right? Instead of sip or spit.
+
+Now we can click this button and it actually saves it right up here. So this is sponsorship library tool and we can hit jot and we see it up here. Sponsorship library tool.
+
+And then if we don't want it, we can hit not. And we have now all done. So it's kind of a full app experience.
+
+I think right where we ended the episode was right when it starts to get fun. Cause you can actually start making, um, smaller changes. And now we can save these to your profile.
+
+We could in theory add the ability to edit them. So you can refine them and kind of turn it into a little notebook of your startup ideas that you have zipped or spit. It is 741 and we've added another update.
+
+So this is where we're at now. Now we can officially sign in. Uh, if I refresh the page here, you can see, uh, but it automatically takes you to my profile.
+
+The app works as normal, except now we can see all sips. So we can see all of them. And so now every single video that we do, now if we do interesting ideas and I pasted in another transcript from Greg, uh, hit load transcript, uh, analyze transcripts.
+
+So, uh, what this will do, it should load in the see all sips as this interesting ideas here. So what we can do is we can hit, uh, so let's just sip. So now there's five interesting ideas from this one.
+
+So sip sip, you know what, let's spit this one and we'll sip this one. And so we go through all those. Now we can see all sips.
+
+So now we have interesting ideas in here. Where do you want to leave people? You know, they've watched this and there was ups, there were downs, but we ended up at a high.
+
+Like, what do you want, what's one piece of advice you want to give to people? Yeah. Okay.
+
+So, uh, I guess, um, I have never claimed to be an expert at this, right? I love learning. Like I love like the act of like learning things and like diving deep into rabbit holes.
+
+And I'm actually just, that's why I've partnered with Ange, who's very good at, uh, at what he does. And he's an expert developer. He's a senior developer in every sense.
+
+He's started companies. And so we're working together and we're going to try and create a community and eventually help a million people learn how to code without having to write, uh, learning how to write code. And by the time you watch this, I think it's going to be software composers.com right now.
+
+It's senior, uh, senior S. Uh, see the fact that I don't even know, we literally bought the domain yesterday and threw the community up and we've, uh, it's called software composers, senior software composers. And since the tool that you just saw me using was composers, uh, was the composer feature in cursor.
+
+And you're kind of just composing your way, uh, figuring out your way through the bugs. And so we're basically just creating a community of people who want to do that. We're going to be releasing very in-depth course, uh, in-depth courses that I'm basically going to take.
+
+And then everything that I learn, I'm going to put out step by step. And we're going to do weekly calls, help people through their bugs. And every person who joins the, uh, the software composers is going to get like weekly help with their projects.
+
+Every single person is going to create an app, fully deploy it. We're going to talk about Stripe integration, which I'm really excited about actually monetizing these apps, which is actually one of the hardest parts of apps, especially if you have like multiple different plans. Um, but we're going to talk about all of it.
+
+So that's what I'm working on. I'm joining. Like I'll definitely join, uh, once it's live.
+
+I, for me, all this stuff like cursor replet, all these new tools, like it's about getting your hands dirty and it's about, you know, treating it as like a creative process. Like even if you don't end up, you know, yes, some of these businesses, some of these projects can turn into businesses and who knows, like create real wealth and everything. But sometimes it's just fun to do this and, and to like, like you said, solve problems.
+
+So thanks for coming on here and, uh, I'll see you. Uh, I'll see you next time. Yeah.
+
+See ya. Appreciate it. This was a lot of fun.
+
+I'm thank God. It worked at the end there. Thank God.
+
+It worked. Dude. Imagine didn't work.
+
+That would have sucked. There would have been no, it was, it would have been a buildup to nothing. So thank God it worked.
+
+I had, I had fun doing that. So. Yeah.
+
+And if you like this sort of stuff like this on YouTube to get more of this in your feed and subscribe. It's shipping time, baby. It's play guys in bed.
+
+It's shipping time, baby.

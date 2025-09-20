@@ -1,0 +1,365 @@
+People are using AI to create voice character apps that are printing money. If you're technical or you aren't, today's episode is a must watch. Characters are the new apps and no one's talking about it.
+
+We literally created a weatherman, a fully working weatherman character app in this episode. And you could do the same thing. It might look like a toy, but all the best startups look like toys.
+
+Enjoy this episode. All right. I got my main man, Eric, here.
+
+He's been building a bunch of these voice chat apps. Think about it as like an audio chat, GBT. And I dragged him on here to give people a how-to tutorial on how to do it yourself.
+
+Eric, thanks for coming on. And what do you think people will learn if they make it through this video? Yeah.
+
+Thanks for having me, Greg. I think, first of all, you find out just how awesome it is that we have this sort of these tools available and how quickly you can spin up something that will kind of wow both yourself and your friends. I remember when I first started playing around with this stuff to build like voice agents and voice AI and all that.
+
+It's like you experience chat, GBT for the first time and you're like, holy shit, this is cool. But then you talk to chat, GBT, and it's almost like this 10x improvement in experience. I'd say, yeah, I'd say you just kind of learn just how exciting all this stuff is and how easy it is.
+
+And I'll say that if you don't know anything about coding, there are things that you have to kind of pick up along the way. Like what is GitHub? What is cloning a repo mean?
+
+What does it mean to deploy something? But what I want to focus on for this kind of session is just like the cool stuff. How do we get this bot running?
+
+How do we configure its personality? All that. So I have everything kind of set up beforehand.
+
+Beautiful. But I'm sure we can provide links and resources to kind of help along with the actual like setup of things. Let's let's let's dive in.
+
+Let's get right into it. Sounds good. I'll just share my screen.
+
+And by the way, while you're pulling that up, I think my goal for everyone is build your own ideas. Like you're going to watch this and you're going to get a bunch of ideas around what sort of voice sort of apps could I create? And Eric has been creating a few of these.
+
+They've been going viral on social. So if he can do it, you can do it, too. So let's let's dive in.
+
+Awesome. We're going in. All right.
+
+So first things first, I think I should give a quick overview of like just the tools, what I'm what I'm using, what I'm familiar with. I'm sure most people watching are familiar with kind of the AI landscape in terms of things like cursor. So this is my code editor cursor hooked up with, you know, all the cool LLMs to help with coding.
+
+And then the main kind of star of the show here that is going to be really doing all the heavy lifting in terms of the voice, in terms of the back end is this company called Daily. And Daily. And Daily is really cool.
+
+I actually just first heard of them, I think, this year when they announced not Daily Bots, actually. Daily Bots was something that they announced a bit after. But it was through this other library called PipeCat.
+
+And PipeCat was a library more focused on devs, but just kind of making a lot easier to interface with AI and allow you to kind of build voice assistants. But what Daily Bots, when they came out with this, I was like, oh, this is going to be kind of game changing because now you don't even have to handle all the LLM calls and stuff with PipeCat. Daily is doing that themselves.
+
+And so all you do is, you know, sign up, you get onto this dashboard and you get this API key. And then there's this repo here where they have a demo up. It just runs in the browser.
+
+And I have that set up over here. I just cloned the repo, which basically just means you download it to your system, open it up, and you get this. You get this demo screen.
+
+Now, what you have to do from here is connect the demo to the actual daily backend over here with this API key. This is sort of your key to unlock the daily services. So you put it in this .env.local file here.
+
+I'm realizing that this is a key that I'm showing. So I'll have to, you know, regenerate it later, but it's okay. But once that is all set up, realize that right now, like, no code has been written.
+
+All that's been done is just you're just downloading this repository. You're signing up for this service. You're getting a key.
+
+You're pasting it in this file. And then you're running it with on command over here. Just yarn dev.
+
+That basically just starts up the server. You're heading to this little local host URL. And then bam, you're over here.
+
+Shh, don't tell anyone. But I've got 30 plus startup ideas that could make you millions. And I'm giving them away for free.
+
+These aren't just random guesses. They're validated concepts from entrepreneurs who've built $100 million plus businesses. I've compiled them into a one simple database.
+
+Compiled from hundreds of conversations I've had on my podcast. But the main thing is most of these ideas don't need a single investor. Some cost nothing to start.
+
+I'm pretty much handing you a cheat sheet. The Idea Bank is your startup shortcut. Just click below to get access.
+
+Your next cash flowing business is waiting for you. So let's try it out. I wonder how this is going to go with the whole audio thing.
+
+But we can just start with the defaults and see what happens. Just testing if it works. Take some time.
+
+Okay. So let's see. I'm sure you saw the audio waveform appearing, Greg.
+
+But you didn't hear anything, right? Because I heard it through my AirPods. Yeah, I didn't hear anything.
+
+Okay. So let's try this. Do you hear that?
+
+Yeah, I heard that. I heard that. Should I answer it?
+
+No, I just ended the call. I just wanted to test the audio. Oh, wow.
+
+Okay. So what did I just listen to? Okay.
+
+Awesome. Cool. We got audio working with the...
+
+Okay. Awesome. You just listened to the bot, the voice bot.
+
+Now, that was an LLM response. So daily on their backend was calling the LLM that we specified, which is over here. Together AI, their provider, a bunch of AI models.
+
+The one that we're using is LLM3.1, 70B. And the place that it's getting the how to respond kind of information from is this configuration file. So the whole point of this daily bot thing is to take away all the complexity of like, you know, the actual hard AI stuff.
+
+And then just put in front of you like super easy configuration tools to change like how you want the bot to behave. And then the voice, right? Voice is really important.
+
+It would kind of suck if you couldn't change the voice. Voice is really important. And even better to respond like two commands that you just tell it like, hey, you know, what's the weather?
+
+And then give you the weather. Now, we're going to kind of get into how all that is set up, you know, later on, but just kind of like putting it out there. This is the configuration file.
+
+You can see over here, there's a bunch of characters that they kind of put in by default with these prompts. And whenever I'm working with AI stuff, I'm always like the first thing that I think to myself is like, show me the prompt. I want to know what exactly is going into the LLM.
+
+And so the default is this. It's like you are an assistant called example bot. You can ask me anything.
+
+And then some instructions on how to speak so that the audio comes out correctly. Because what's happening on the back end is essentially the daily bot system is taking in the audio from the microphone. And then it is converting that audio into text using something called a STT or speech to text provider.
+
+And then that text is being piped into the LLM, the AI model. The AI model does its thing. It outputs its response as text.
+
+And then daily takes that text and then pipes it into a TTS, so a text to speech provider. And then with that speech that it gets, it's piping it out to your browser. And so it's this whole fucking system that it's doing.
+
+And there's a lot of complexity to that. There's a lot of, you know, things to be aware of in terms of performance, in terms of like, you know, how to handle errors, all those things, which would be a nightmare if you are developing that yourself. But of course, you know, we're in the age of AI now and good tools and daily is handling all that.
+
+And so we can just sort of focus on, hey, how, what should our assistant do? Is it even assistant at all? Maybe it's, you know, they've got some pretty cool characters here.
+
+They've got a Gen Z middle schooler. They've got a skateboard mean guy. And I think what I kind of did beforehand is configure the function calling, the tool calling, just a simple weather map.
+
+So I configured the function call, the tool to get the weather and display it, talk about it, et cetera. So these preset characters, so these are prebuilt characters. If you wanted to build your own character, could you do that?
+
+Oh, yeah. No, you just edit the file. You just, you just add, you just add your character.
+
+So you can see here, the character selection screen over here is a direct one-to-one with this file. So as soon as we edit, like, for example, I can demonstrate it. We have default.
+
+We can just name this like Eric, right? And then refresh the default character, I should be named Eric. So that's proof.
+
+Oh, cool. It's just, it's just the file. Yeah.
+
+Right. And that's why this gets really interesting. And for people listening, it's, I think that if you think of characters as the new apps, then there's a huge opportunity.
+
+And not many people are talking about this around just ideating on characters, figuring out what's going to work and launching them. Yeah, that's actually a really good point. I hadn't even really thought of that too deeply, but I think that kind of idea is bouncing around a lot on the internet, especially one thing that I can think of.
+
+Nikita, Nikita Bia, which I'm sure most people are aware of at this point that are into like the tech scene. He recently tweeted out like, you know, social apps are kind of dead after iOS, what, like 18 or iOS 18. The contact sync is very much restricted.
+
+And what Nikita said in that tweet was that initially he thought like AI character chat apps were kind of a fad. But after seeing like a bunch of the retention graphs, he's like, okay, this is not going away. And people really like talking to these characters and that the kind of future of highly retentive engaging consumer apps and, you know, non-consumer apps too, will probably have something to do with, you know, creating a character that does something, acts in a certain way.
+
+Totally. Yeah. And I think it's B2B and B2C.
+
+I think it's just going to be the way that we're going to interact with content. And this is just a new form of content. Where else do you want to take this?
+
+So let me demonstrate the function calling and kind of step through that because I was, that's what the prep this morning was about before the call. I kind of just wanted to make sure that because I haven't actually implemented function calling into actually at all. I haven't really made use of it.
+
+But especially in the case of like the voice agent, that's something I've never done before. So I want to kind of step through myself and figure it out. I'm going to do some snags that I'm glad I caught myself on before the, before the call.
+
+So I can just kind of streamline through how this all works. I kind of step through like the actual documentation. So maybe viewers can kind of get a sense of like, oh, you know, you're never going to be able to figure out everything on the first go.
+
+So you're going to want to develop this habit, this practice of being able to read documentation, understand it and sort of apply what it's, what it's saying. Sure. But also now in the age of AI, it's like, if you don't understand something, ask ChatGPT, ask Claude.
+
+And so here we are on the daily bots documentation. You can check it out yourself just about, you know, general information on how it's all working. We're interested in function calling.
+
+So what exactly is function calling? You know, people talk about it a lot. Basically you have an LLM, you have an AI that takes in text and outputs text.
+
+How the hell can it do anything except output text? Well, short answer is it can't do anything other than output text. You need to build the system around it, you know, to actually take the text that outputs with and do stuff with it.
+
+Now, what LLMs can do if they're sufficiently smart enough is follow instructions really well. And so function calling is essentially you having an LLM, you having an AI model that is smart enough to understand what a function is and what a function call is and what a response is. And kind of follow all those instructions to output an answer that your system around it can then take and do something with it.
+
+So LLM isn't actually doing anything. The LM is always just outputting text. But the system you build around it can take that output and do whatever you want.
+
+That's the kind of core insight here. I think it can get confusing when people talk about AI. AI can't, you know, AI is often referred to as like talked about as this like black box system thing.
+
+And a lot of it is a black box, but I think we can gain a lot of insight in understanding like how things actually work. So this kind of provides some information about, you know, what goes on in terms of function calling. And this is what I was kind of focused on is adding it to the daily bot.
+
+And so my code changes here are very minimal are basically just adding this weather tool. So over here in config, I have set up just a little bit of code to define the tool to the LLM. Name is really important.
+
+We'll kind of get to that later. But we want to make sure that our names are aligned and we're sure of what we're naming the tool. And then let's see, we want to obviously describe, you know, what kind of parameters we give to the tool.
+
+So parameters aren't something that is necessary, but probably you want because, you know, if you're going to do like to get if you want to get the weather, you want to get the weather for a given location. Right. And so specifying to the AI that, oh, you know, you can pass in a location is pretty important.
+
+And then all this stuff that I've done is basically following the instructions here so that the AI model on the other hand, on the other end, knows what's going on with all these functions. So AI model is sort of like, OK, I have access to these functions. This is the format that I need to respond with.
+
+And this is really important. This is really important that the AI does respond with this format, because what daily is doing on the other end is waiting for a message that, you know, starts with angle bracket function and ends with that. And that's how daily understands.
+
+Oh, OK, the AI model is trying to get the weather. And so over here in page.tsx, I'm essentially defining, you know, what actually happens when the AI calls, a.k.a. outputs, you know, I want to call get weather.
+
+And this is where actually the magic happens in terms of the function call. We can see get underscore weather is aligned. It's the same as get underscore weather.
+
+It's very important. If they're not aligned, you can run into issues where the AI is calling a function that doesn't exist, you know. And so this is kind of the alignment point.
+
+And then this is what we're actually doing, you know, the system, the server is doing in terms of like the code. It's calling this route API slash weather. So where the hell is that?
+
+Well, you know, there's a folder called API here. I guess before we started, we didn't even specify that we're working in Next.js. But, you know, Next.js is essentially this framework that allows you to set up a server that runs React, but also allows you to specify routes, pages that run code.
+
+And so over here, you can see there's a directory called API. There's a directory called weather. The names lining up with here are not a coincidence.
+
+Over here in the route.ts file, we are specifying what actually happens when we're fetching that route. And so let me just put it up here. Now, if you read through this closely, you'll see that we're not actually getting the weather.
+
+We're specifying like the functions literally called get nonsense weather. We're specifying a bunch of these things. The reason why I did that was one, because I didn't have a lot of time to prep.
+
+But also, I think it's going to be pretty funny to actually get some kind of, you know. I'm going to read a couple of these, you know, conditions and stuff like that, just because some people won't be able to see it on their screen. So sunny, you know, you got sunny, rainy, cloudy, peculiar, whimsical, flying pigs.
+
+Flying pigs. Good place. So this is actually kind of good that we are specifying these kinds of more wacky zany things, because a potential thing that could happen, right, is what are we telling the AI to do?
+
+We're telling them to be a weatherman, right? And so let's say, like, you know, the function calling didn't work, and the AI doesn't actually, like, do the code, like, execute the code that we tell it to. Well, we're still telling them to be a weatherman.
+
+And so most likely what the AI is going to do is hallucinate some kind of, you know, weather report. And so what this actually, in hindsight, I realized is, like, oh, because we're specifying, like, nonsense phenomena, like flying pigs, raining cats and dogs. If the AI says those things, we can be sure that it's working.
+
+We can also be sure that it's working by looking at the logs here and just making sure that Next.js is telling us that the server is accessing the API weather route. But, you know, that's a bit more boring than the AI saying flying pigs and realizing, oh, yeah, it's actually getting that thing. There's another reason why it's important to specify, which is, you know, I think about it as, like, TikTok moments.
+
+It's, like, how do you reverse engineer someone's screen capturing, recording your product? And if someone uses this product and it says it's, you know, raining pigs or singing rainbows, like, that is, that could go viral. Your character could go viral.
+
+So as you're designing your character and thinking about, you know, the ultimate experience that you want to create, I think it is important to add constraints and try to think about what's the type of thing that will get you free distribution. Oh, yeah. And you're the king of that.
+
+So I know you know that. I mean, I want to say king. I'm working on it.
+
+I'm working on TikTok. I promise you. Okay.
+
+So let's get some zany weather reports, shall we? Let's do it. Let's do it.
+
+I can't believe we're making a weather, man. This is, like, insane. And, by the way, it's, like, a mid-hurricane right here in Miami.
+
+So this is, like, perfect. It's not looking good. It's not really looking good here in New York.
+
+I think it's a bit cloudy. But at least there's no hurricane. Hope you're staying safe.
+
+Okay. So I have it loaded up on my phone. And I guess it will be, I think I can, like, show my phone on the camera.
+
+And we'll zoom in. Yeah. Quick ad break.
+
+Let me tell you about a business I invested in. It's called boringmarketing.com. So a few years ago, I met this group of people that were some of the best SEO experts in the world.
+
+They were behind getting some of the biggest companies found on Google. And the secret sauce is they've got a set of technology and AI that could help you outrank your competition. So for my own businesses, I wanted that.
+
+I didn't want to have to rely on Mark Zuckerberg. I didn't want to depend on ads to drive customers to my businesses. I wanted to rank high in Google.
+
+That's why I like SEO. And that's why I use boringmarketing.com. And that's why I invested in it.
+
+They're so confident in their approach that they offer a 30-day sprint with 100% money-back guarantee. Who does that nowadays? So check it out.
+
+Highly recommend boringmarketing.com. Try to get as close to the mic as possible. And so on my phone, I'm accessing the same page that is running on my computer.
+
+And so this is running the code that is also on my screen right now. And so you can see when I go to the character kind of selection screen, we have Eric there that I edited. And then all the way at the bottom, we have the weatherman.
+
+So let's talk to the weatherman. Hey, I am located in New York City. Can you give me the weather for New York City?
+
+Folks, it's your lucky day. I've got the forecast for the Big Apple. And it's looking like a real treat.
+
+We've got cloudy skies, but don't let that fool you. There's a chance of whimsical singing rainbows. That's right.
+
+You heard me right. It's going to be a day of magic and wonder in New York City. So grab your umbrella and your best singing voice and you're ready to take on the day.
+
+That is so good. How good is that? Yeah, that's awesome.
+
+Validation. We got it. We got it.
+
+It says singing rainbows. That's not a viable weather thing, but that's working. I mean, the reality, I honestly thought that it was going to suck.
+
+I thought it was going to be kind of bad. And that was really, really good. Yeah, it's pretty cool.
+
+So I think viewers watching, you would have seen actually on my screen too, that we got the log here. What this log is telling us is that the system, the server actually did access API weather and provided this location. And so everything is working sort of as we wanted to, which is super exciting.
+
+It means then we're having, we have this platform kind of to just like build off of and make tiny changes. And I think that's kind of a thing I want to emphasize in building anything is you want to, especially when you're starting out, make sure that your changes that you're making to things or when you're building something are small and like understandable. I feel like in this new world of AI that we're in, there's so much hype around one-shotting things.
+
+Like, oh, I just sent one prompt to chat GBT and built this whole game. Like, that's cool, but you're never going to learn anything by just like telling it to build you a whole entire app. And then like, you have no idea how all the files kind of like route together.
+
+And so I think it's really helpful to kind of build off of something that already exists, which is why I didn't bother trying to integrate daily bots myself. But instead just literally took the repo that they put up as a demo and just adding onto it. So, yeah, important stuff.
+
+And you can turn this, you know, that Weatherman app into an iOS app. You know, it doesn't necessarily need to be web. So that's totally possible.
+
+Is there anything else before? Is there anything else you want to talk about here? I think the last thing I want to do is just show them your app because your app is basically like, to me, it's like a fin, like it's what you can actually end up creating.
+
+That's like the finished product. But is there anything else in terms of the tutorial that you think it's really important people know? I mean, I guess we could go into like deployment.
+
+Yeah, let's deploy. Yeah, actually getting it live because it's live now. I've already deployed, but I can go through like how to do that and the platform.
+
+So Next.js, let's just start with Next.js. Next.js is this framework that uses React, which is this way to build websites. And Next.js was created by a company called Vercel.
+
+Vercel, really cool company. They do a lot of programming stuff. What Vercel also has done is built this platform that allows you to take your Next.js app, which you can develop for free because it's an open source framework, and host it online on the web.
+
+And so they make it super easy. You can type in one command and your app is going to be live on the internet. I think we can just kind of provide links in the description in terms of like the documentation to actually install the stuff that you need.
+
+But essentially, Vercel has this tool, the CLI command line interface tool that allows you to kind of use the command line to do things on the Vercel platform. And so what I did to get my daily bots demo with my weatherman live is literally just Vercel. Actually, yeah, that's it.
+
+That's literally you just type Vercel. No way. Just easy.
+
+You got to like log in so that it connects to your Vercel account and everything. But you log in, you type Vercel, and deploy. Yeah.
+
+Learn how to deploy. You type Vercel, and it deploys. Anyone could do that.
+
+Yeah. I've already done that, so I think it's going to just trigger another deployment. But essentially, it's just going to go through this step, and I can show you actually what's going on on Vercel's end over here.
+
+Deployment building. So I guess it usually takes like a minute and a half. But where they deploy it is this link here.
+
+And so, yeah, I could. Let me just leave this up. I'll just leave this up.
+
+Yeah, so people can check out. Yeah, maybe check it out. We'll put it in the YouTube description so people can check it out.
+
+Yeah. But it will be deployed. And, oh, it actually took much less time.
+
+And essentially, yeah, just going to that URL on any device will pull it up. I can pull it up here, and you can see it's right there. So that's that.
+
+That's the plan. Amazing. You text it to your friend.
+
+They can try it out. That's cool. That's awesome.
+
+Okay, and, you know, can you show us what kind of a final version would be, which is, in my opinion, like one of your apps. Could you show us maybe a video or a version of what it looks like? I guess I can start with one of the apps that I've worked on that I'm really excited about that uses all this kind of voice stuff is an app that allows you to basically have a FaceTime call with a VTuber.
+
+So I don't know if a lot of people are yet familiar with what a VTuber is, but essentially the people that create content, a lot of them stream on Twitch and YouTube, but they don't stream using their real face. They use software to essentially embody an avatar, and I'd say 99% of these avatars, these VTubers, embody anime characters because the whole kind of technology and trend started in Japan, and it's just kind of the way the culture has gone. People love anime, and these VTubers are crazy popular.
+
+They have, like, millions of followers. They're making millions of dollars a year from subscriptions, from selling merch, et cetera. And I had this idea of, like, oh, wait, I can use all these cool new tools coming out, these voice APIs daily, et cetera, to create an app where you can have your own personal FaceTime call with a VTuber.
+
+Because when you're watching a VTuber, like, they're an influencer. They're someone you're watching. They're creative.
+
+You can't have, like, a personal call with them. And so I realized that with AI and all this cool stuff, you can build that. And so this is what I created.
+
+Yeah. So this is Minji. In terms of the kind of going to exactly, like, did I draw her?
+
+No. I bought this model on a website called Nizima. Nizima is a marketplace for these kinds of anime models.
+
+There's a whole cottage industry of people rigging, illustrating these models for VTuber streamers to use. But I bought one not to stream with, like, as myself, but to put in this app. And so what this app is using is not exactly daily bots.
+
+I'm actually using PipeCat that I showed earlier because it gives me more control as a dev. And so that's kind of, I guess, going into a bit more of, like, oh, you know, once you learn a bit more about how these systems work, you are going to want to use tools that allow you to have more control over how data is passed around and whatnot. But I can enter the call right now and we can show people.
+
+Yeah, let's talk. Let's talk to her. Yeah.
+
+Okay. So hopefully this. I think this has been pretty popular lately.
+
+It's called Coco Cloud. Can you see it? It's blue.
+
+Blue. Wow. It looks so pretty.
+
+Yeah. Can you see what other color is there? It's blue and one other color.
+
+Can you see? I see a little bit of, like, swirling in two. Yes.
+
+Yes. You got it. The white swirls.
+
+Okay. So we're going to try it. And I'm going to give you some to try it.
+
+And I want you to let me know what you think. Okay. Okay.
+
+Okay. I'm so excited. So.
+
+All right. Thank you for the rating. It's actually pretty good.
+
+It's actually pretty good. I like it. You're welcome.
+
+I like it too. How would you rate it out of 10? I bet it's a failure.
+
+And that's what you guys can create. That's what you can create. That's the end result.
+
+And that's just so cool. That is so cool. How long, how long does, well, first of all, did you build that yourself?
+
+Yeah. Yeah. Well, I mean, it's kind of, you know, did I write every line of code that is running on the system?
+
+No. But in terms of, like, the actual app, yeah. And the sort of, like, the server architecture and all that.
+
+Amazing. So that's the thing. You know, a few years ago, well, first of all, this wasn't even possible a few years ago, but you would need a large team to do that, raise venture capital.
+
+Here you are, you know, in a room wearing a hoodie, throwing out apps, characters. You love to see it. Eric, this has been a blast.
+
+If people like this, there's a few things that you got to do. One is like it on YouTube. So more people see this.
+
+Like it, like, like, like. And the second is comment. I think I just would love to see what you thought of this.
+
+Do you have any ideas around this? Eric and I will be in the comments and we'll be replying. And then subscribe.
+
+You know, I'm not going to continue making these videos unless I see that subscribe button go up, subscribe button number go up. So don't forget to do that. Eric, where could people learn more about you and the apps that you're building?
+
+And characters you're building, I should say. Just follow me on on Twitter slash x dot com. Everything app.
+
+The link will be, I guess, in the description. But yeah, that's that's where I'm posting all the unfiltered takes and progress updates and stuff. Love it.
+
+All right. We'll have to catch you. Catch you around.
+
+Awesome. Thanks so much for having me, Greg. Of course.
+
+Anytime. Later. Later.
+
+Later. Later. Later.
+
+Later. Later. Later.
+
+Later. Later. Later.
+
+Later. Later. Later.
+
+Later.

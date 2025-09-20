@@ -6,15 +6,33 @@ Supports both single file and batch processing.
 """
 
 import argparse
+import os
 import pathlib
 import re
 import sys
 from typing import Optional, Tuple
 
+# Set up Tesseract data path for OCR (macOS with Homebrew)
+if 'TESSDATA_PREFIX' not in os.environ:
+    possible_paths = [
+        '/opt/homebrew/share/tessdata',
+        '/usr/local/share/tessdata',
+        '/opt/homebrew/share',
+        '/usr/local/share'
+    ]
+    for path in possible_paths:
+        if os.path.exists(path):
+            os.environ['TESSDATA_PREFIX'] = path
+            break
+
 try:
     import pymupdf4llm
-except ImportError:
-    print("Error: pymupdf4llm not installed. Run 'poetry install' first.")
+    import pymupdf
+except ImportError as e:
+    if 'pymupdf4llm' in str(e):
+        print("Error: pymupdf4llm not installed. Run 'poetry install' first.")
+    elif 'pymupdf' in str(e):
+        print("Error: pymupdf not installed. Run 'poetry install' first.")
     sys.exit(1)
 
 
@@ -59,6 +77,107 @@ def clean_markdown_text(text: str, clean_text: bool = True) -> str:
     cleaned_text = re.sub(r' {2,}', ' ', cleaned_text)
     
     return cleaned_text.strip()
+
+
+def convert_pdf_to_text_ocr(
+    input_path: str,
+    output_path: Optional[str] = None,
+    pages: Optional[list] = None,
+    dpi: int = 300,
+    language: str = 'eng',
+    clean_text: bool = True
+) -> str:
+    """
+    Convert PDF to text using OCR (processes each page as an image).
+    
+    Args:
+        input_path: Path to input PDF file
+        output_path: Path to output text file (optional)
+        pages: List of page numbers to process (0-based, optional)
+        dpi: Resolution for OCR processing (default: 300)
+        language: OCR language(s), use '+' for multiple (e.g., 'eng+spa')
+        clean_text: Whether to clean unwanted phrases from output (default: True)
+    
+    Returns:
+        Extracted text content
+    """
+    try:
+        # Open the PDF document
+        doc = pymupdf.open(input_path)
+        
+        # Collect text from all pages
+        full_text = []
+        
+        # Determine which pages to process
+        pages_to_process = pages if pages else range(len(doc))
+        
+        print(f"Processing {len(pages_to_process)} page(s) with OCR (DPI: {dpi}, Language: {language})...")
+        
+        for page_num in pages_to_process:
+            if page_num >= len(doc):
+                print(f"Warning: Page {page_num} does not exist in document (total pages: {len(doc)})")
+                continue
+                
+            print(f"  OCR processing page {page_num + 1}/{len(doc)}...")
+            
+            # Get the page
+            page = doc[page_num]
+            
+            # Create OCR TextPage - processes page as image
+            # full=True ensures entire page is OCR'd as image
+            # Try with explicit tessdata path if environment variable is set
+            ocr_kwargs = {
+                'flags': 0,  # Get all text
+                'language': language,
+                'dpi': dpi,
+                'full': True  # Process entire page as image
+            }
+            
+            # Add tessdata path if available
+            tessdata_path = os.environ.get('TESSDATA_PREFIX')
+            if tessdata_path and os.path.exists(tessdata_path):
+                ocr_kwargs['tessdata'] = tessdata_path
+            
+            tp = page.get_textpage_ocr(**ocr_kwargs)
+            
+            # Extract text using the OCR TextPage
+            page_text = page.get_text(textpage=tp)
+            
+            # Add page separator for clarity
+            if page_text.strip():
+                full_text.append(f"--- Page {page_num + 1} ---\n")
+                full_text.append(page_text)
+                full_text.append("\n")
+        
+        # Join all text
+        extracted_text = ''.join(full_text)
+        
+        # Clean unwanted phrases if requested
+        if clean_text:
+            extracted_text = clean_markdown_text(extracted_text, clean_text)
+        
+        # Save to file if output path provided
+        if output_path:
+            pathlib.Path(output_path).write_bytes(extracted_text.encode('utf-8'))
+            print(f"✓ OCR conversion complete: '{input_path}' -> '{output_path}'")
+        
+        # Close the document
+        doc.close()
+        
+        return extracted_text
+        
+    except FileNotFoundError:
+        print(f"Error: PDF file '{input_path}' not found.")
+        sys.exit(1)
+    except Exception as e:
+        print(f"Error during OCR conversion: {e}")
+        if "tesseract" in str(e).lower():
+            print("\nNote: OCR requires Tesseract to be installed on your system.")
+            print("Install with:")
+            print("  - macOS: brew install tesseract")
+            print("  - Ubuntu/Debian: sudo apt-get install tesseract-ocr")
+            print("  - Windows: Download from https://github.com/UB-Mannheim/tesseract/wiki")
+        sys.exit(1)
 
 
 def convert_pdf_to_markdown(
@@ -248,6 +367,12 @@ Examples:
     %(prog)s document.pdf -p 0,2-4           # Convert pages 0, 2, 3, 4
     %(prog)s document.pdf -i                 # Extract images too
 
+  OCR mode (for scanned PDFs):
+    %(prog)s document.pdf --ocr              # OCR to stdout
+    %(prog)s document.pdf --ocr -o book.txt  # OCR and save to file
+    %(prog)s document.pdf --ocr --ocr-dpi 400 # Higher quality OCR
+    %(prog)s document.pdf --ocr --ocr-lang eng+spa # Multi-language OCR
+
   Batch mode:
     %(prog)s --batch --input-dir pdf_folder --output-dir md_folder
     %(prog)s -b --input-dir pdfs --output-dir markdown
@@ -280,7 +405,7 @@ Examples:
     
     parser.add_argument(
         '-o', '--output',
-        help='Output markdown file path (default: print to stdout)'
+        help='Output markdown/text file path (default: print to stdout)'
     )
     
     parser.add_argument(
@@ -304,6 +429,26 @@ Examples:
         '--no-clean',
         action='store_true',
         help='Skip post-processing text cleaning (keep unwanted phrases)'
+    )
+    
+    # OCR mode arguments
+    parser.add_argument(
+        '--ocr',
+        action='store_true',
+        help='Use OCR to extract text (treats each page as image)'
+    )
+    
+    parser.add_argument(
+        '--ocr-dpi',
+        type=int,
+        default=300,
+        help='DPI for OCR processing (default: 300, higher = better quality but slower)'
+    )
+    
+    parser.add_argument(
+        '--ocr-lang',
+        default='eng',
+        help='OCR language(s), use + for multiple (e.g., "eng+spa") (default: eng)'
     )
     
     args = parser.parse_args()
@@ -351,19 +496,35 @@ Examples:
         print(f"Error: File '{args.input_pdf}' does not exist.")
         sys.exit(1)
     
-    # Convert PDF
-    markdown_text = convert_pdf_to_markdown(
-        args.input_pdf,
-        args.output,
-        pages,
-        args.images,
-        args.image_dir,
-        clean_text
-    )
-    
-    # Print to stdout if no output file specified
-    if not args.output:
-        print(markdown_text)
+    # Check if OCR mode is requested
+    if args.ocr:
+        # Use OCR conversion
+        text_output = convert_pdf_to_text_ocr(
+            args.input_pdf,
+            args.output,
+            pages,
+            args.ocr_dpi,
+            args.ocr_lang,
+            clean_text
+        )
+        
+        # Print to stdout if no output file specified
+        if not args.output:
+            print(text_output)
+    else:
+        # Use regular markdown conversion
+        markdown_text = convert_pdf_to_markdown(
+            args.input_pdf,
+            args.output,
+            pages,
+            args.images,
+            args.image_dir,
+            clean_text
+        )
+        
+        # Print to stdout if no output file specified
+        if not args.output:
+            print(markdown_text)
 
 
 if __name__ == "__main__":

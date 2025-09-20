@@ -1,0 +1,633 @@
+You've heard about it. It's Bolt. People say it's the cursor AI killer.
+
+I don't know about that, but it is one of the best ways to get your idea to market. And I think for the first time ever, we've had the founder of Bolt actually show how to use his product. We've done it with the founder of Replit.
+
+Now we're doing it with the founder of Bolt. You're not going to see this anywhere besides the Startup Ideas podcast. So get ready.
+
+By the end of this episode, you will learn a lot about how to use Bolt like a pro. We've got Eric. He's the founder of StackBlitz, which is the maker of Bolt.
+
+And I think probably for the first time, he's just going to actually build something live and just share how to do it. So thank you, Eric, for coming on. Yeah, absolutely.
+
+Yeah. I mean, it's been I'm actually pretty stoked about this because this is one of the first times where I've actually had a minute to sit down and use the product in a meaningful stretch. You know, I'm kind of like chief bug finder typically.
+
+But, you know, that's, you know, I just I kind of know how to how to poke and prod the thing to make it break or whatever. But this is going to be fun because, like, you know, a lot of folks have been, you know, obviously, you know, leading up to the launch of Bolt like a month ago, I used, you know, I was using Bolt quite a bit to build stuff and I have been since. But, you know, this is, you know, like it's only about online a month.
+
+So it's not, you know, we have a lot of, you know, things to work on. And so I'm actually excited. Yeah, we'll likely run into some roadblocks here.
+
+And that's going to be great because I'm going to go back to the team and be like, all right, let's go. Let's go make this smoother, you know. But, yeah, I'm walking in completely unprepared with just, you know, I have a couple of ideas of things we could build, but it might even be better if, Greg, if there's some stuff that's on your mind that you think would be cool for us to build just to prove that, you know, none of this is pre-planned.
+
+Absolutely. And I'm actually happy that you're not prepared because I think people are unprepared too, you know, when they're building anything. So that's the way I want you.
+
+I want you raw. Totally. Yeah, totally.
+
+And that's 100% because I think right now, especially as we're improving the product, hopefully there's like some tips and tricks as, you know, it's kind of one of the people on the Stackboot side of this that understands how this thing is built. I might be able to kind of share some of the, I don't know, just some debugging tips and whatever that at this point in time are going to be useful. And then, you know, a couple of weeks from now, hopefully are not even needed because it's just stuff's built into the product that makes it smooth, you know.
+
+So, yeah, stoked to build some stuff here. Dude, you know how we met, right? You know how we met.
+
+We met from, you commented on one of my videos, on one of my bold videos with Raz Mike. Oh, right. I forgot that.
+
+Yeah, yeah, yeah, yeah. Well, I remember, I remember I had watched the video you did with Raz Nikki and I was like, this is sick. That's, dude, that's odd.
+
+Hell yeah. I'm on the, I'm on the channel. Oh my God.
+
+Dude, isn't that crazy? I went from commenter to guest. I, wow.
+
+Full circle. Let's go. This can be you.
+
+You comment, you can come on the show. I love it. Hell yeah.
+
+That is so dope. That is sick. Cool.
+
+All right. Let's get to building. Heck yeah.
+
+Okay, let me, I guess I can share my screen here. So, Greg, what do you want to build? You have any ideas?
+
+I have two ideas and I want you to pick. Okay. Okay.
+
+One is a directory of some sort. So, I just think that directories, you know, we've done tutorials on directories on the pod before, but directories are such a good way to get a bunch of SEO traffic and then you can evolve it into a product. So, I think a lot of people are interested in directories and want to build it and maybe both can help them.
+
+That's one idea. And two is just a micro SaaS app. You know, everyone here is interested in micro SaaS, getting that MRR.
+
+Any micro SaaS idea you have, I'm totally open with. Okay. Game on.
+
+You know, we can probably, we might be able to build both of these. And that might be the ultimate showcase of like, I guess why, you know, why Bolt's been kind of a sensation over the past month since we launched the thing. I like the directory idea.
+
+That's a fantastic one. So, let's start there because I think that's conceptually probably even easier to kind of get rolling with. So, what, you know, I guess like you're like a domain expert on this stuff.
+
+What would be like, what's like a good example of like a directory? Like someone's like trying to like go and build something that like they're trying to, you know, get a certain type of audience to come and, you know, get some SEO and they're landing on this. I don't know, like what would be a good example of something like that?
+
+And like, what would be our next steps? Not even just building, but like maybe where would we go to get kind of to populate that, you know, that, that directory with some initial stuff, you know what I mean? Yeah.
+
+I mean, so there's been lots of talk about how Product Hunt is, you know, there's a lot of issues with it. And like, what is Product Hunt at the core? It's a directory of products and it's a directory of products for founders.
+
+So, you know, could we build a directory where it's just like the products of the day, products of the week? I dig. Okay.
+
+Okay. So let's make a directory of great products. What's, what's our, what's our angle here?
+
+What's how I like, is it, are we kind of, are we curing it for an audience other than, you know, kind of builders or what are you thinking? I think, I think like indie hackers and builders and bootstrap founders and, you know, they're looking for products to make their lives easier, more productive, and they want a trusted source. Shh.
+
+Shh. Don't tell anyone. But I've got 30 plus startup ideas that could make you millions.
+
+And I'm giving them away for free. These aren't just random guesses. They're validated concepts from entrepreneurs who've built a hundred million dollars plus businesses.
+
+I've compiled them into a one simple database compiled from hundreds of conversations I've had on my podcast. But the main thing is most of these ideas don't need a single investor. Some cost nothing to start.
+
+I'm pretty much handing you a cheat sheet. The Idea Bank is your startup shortcut. Just click below to get access.
+
+Your next cash flowing business is waiting for you. And, you know, it kind of, you know, may seem weird that I'm kind of typing all this kind of verbatim in, but, you know, it kind of actually helps to, you know, I found to just kind of describe, you know, almost at a spiritual level, kind of like, this is what I'm doing. This is what I'm shooting for.
+
+And, you know, that's like, I almost start every single prompt off I do with like, you know, here's like, I made a personal website for myself. I was like, this is, I want a website that just has this sort of like software developer vibe and aesthetic to it. And it like nailed it.
+
+It just like made this something, you know, but it's like, that's like not a thing. That's like a vibe. You know what I mean?
+
+And so this is like kind of, you want to like, you know, mix something that's like, like if you can kind of capture a vibe well in a sentence and kind of, you know, capture, okay, the other things, you know, some more tangible, concrete stuff like, okay, exactly how this should work. So like, I think the next part of this would basically be like, okay, so what, in this directory, are we looking for like one main page or are we, you know, you want to have, well, like, you know, what sort of stuff have you seen built that's worked actually, Greg, for this? Well, I, yeah, I think it's, it's one main page with like, maybe it's the five, maybe we can add some constraints.
+
+Maybe it's the five products that you need to have a look at today. And then there's like a product page that you click into. And like, why do we want that?
+
+It's just because that's just another SEO optimized page. And then why I think that this is like an actual business that someone can go and create, by the way, is you can, you can eventually just do affiliate deals with the, the products you're mentioning. Yep.
+
+Really great point. Really great point. And cool.
+
+Anything else you want to add just before, before we just go and send it? We can keep prompting. Is that, yeah, I'm, it's interesting.
+
+Cause like, I'm, I'm curious, like why is, is there, is there too long of a prompt? Cause when I'm prompting, I'm doing like one or two lines and I'm seeing you kind of write more of a paragraph or two paragraphs. We'll see.
+
+I mean, we'll see how it works. It kind of depends. Right.
+
+And so it's, you know, sometimes, and, and what, what, you know, we'll see how this prompt works, but sometimes I'll put a prompt in and it gives me something back. I'm like, this is like kind of so far off that I'm actually just going to go back to the bowl home page and just start a brand new prompt off. Right.
+
+Usually when I'm in the chat, you can like roll back. And so, you know, I'll, I'll use that often, but especially with this, when you're, especially we're kind of describing this first paragraph is like high level, this is the target audience. This is the, you know, the high level, what this product is.
+
+And this is actually just kind of more like specifically, here's the thing you, here's the functionality we want in it. Right. It tends to be pretty good.
+
+Cause what it's actually going to go and do is well, we'll see if it, you know, if it lives up to what, what, you know, I'm about to say, but by, by, because we kind of gave it this sort of, you know, high level, almost like marketing instructions when it's actually punching out the name of this directory or like the descriptions, it should do a pretty good job of like kind of conveying like, Hey, like actually, actually write a good marketing copy. Right. You know, which is if you're, if you're making a product like this, it's important to have, you know, good, good CTAs.
+
+So let's just send it. Let's see what this makes. Um, and, um, you'll start punching this thing out.
+
+This is one of the, one of the nice, I mean, just that's, that's insane. I mean, the, how fast you can just get, this is like a real code base, right? It's like NPM installed everything.
+
+It's going in and writing all the files and stuff. Um, it's, it's pretty wild, uh, how fast it, it, uh, it can get to work. I mean, especially compared to like, if you had to like build this like locally or whatever, have you.
+
+Um, but, um, yeah, we'll get a second. Yeah. Usually the first generation, it's got to write every single file out, you know?
+
+Um, yeah, we'll, we'll see, we'll see what this thing brings back. Um, one of the things that's kind of cool too, is when you're writing prompts, we have this, uh, down at the bottom here, this little sparkly thing, it's called the prompt enhancer. So, um, so we actually, whatever's in, in the prompt that you've already written, you can hit that and it will actually, uh, you know, send that up to our, our AI model and it'll, uh, enhance it with extra details and, um, you know, kind of help scaffold out a very specific prompt.
+
+And that way it kind of, it makes it a bit more deterministic what you're going to get back. Cause right now we just like sent it. We were like, okay, here's just like high level, but you want to really make sure you're getting back something that, that, you know, is going to have all the functionality you want or whatever have you.
+
+Um, yeah, the prompt enhancer effectively kind of expands what you've said. Um, and, uh, uh, will help, you know, kind of make sure stuff works. It goes, so now we've run into an error.
+
+Um, this is unfortunately one of the errors that we don't automatically catch. Um, and so where is this error coming from? Um, oh, I see.
+
+Okay. I'm just going to tell it what the issue is. It's so this is something that when errors happen right now, like we're doing a better job, like a good, a good number of stuff.
+
+Like we have a little thing that'll pop and say like fix errors, but stuff like this happens. Basically you just like copy and paste the error into the chat and it'll actually go ahead and go in and, um, you know, take a stab at actually solving the thing, whatever have you. Um, so let this thing take a, take a crack at, uh, regenerating this file.
+
+And I believe this error. So this is as a developer, I can kind of speak to what happened here. The AI made a dumb mistake and it didn't, uh, it didn't escape this, this little quote there.
+
+And so, so that, uh, that didn't allow the, uh, the application to compile. Right. I also noticed, I also noticed in the code that it seems like the, one of the images is an unsplash image, which I think is royalty free.
+
+Can you talk more about that? Yeah. Yeah.
+
+So we've trained this thing to actually, uh, you know, just out of the box, it'll, it'll go and pull stuff from unsplash. I think a couple of other providers as well. Um, which is great.
+
+Cause it's like, you don't have to pay any money for it. Um, you know, out of the box, you get like, you know, something that, that looks pretty good. Right.
+
+Um, there you go. So we've got this, uh, this directory here. I'm gonna go ahead and make this thing a little wider screen.
+
+Um, there we go. Essential tools for indie hackers. Um, and like I said, this, and this is kind of like, again, we, because we explained kind of the essence of, Hey, who's the audience and, and, you know, what are they trying to do with this versus just, Hey, here's a directory of products.
+
+We would have gotten something kind of, you would have, you know, if you kind of squinted, it's like, okay, yeah, there's a list of products, but now the marketing of these things are actually like the actual copy, um, makes more sense. Right. And, um, so I can click in and this is the, the page, you know, for, for this product.
+
+Right. Um, so pretty cool. So we've got our own, our own directory site.
+
+Um, and yeah, I mean, you know, that's not, not the craziest, most complicated thing in the world, but I mean, I don't, we've been doing this for five minutes or something. Not even, I don't know. Um, Totally.
+
+Pretty insane. A hundred. Um, Pretty insane.
+
+So, so, so, you know, it's actually got images to attach to the thing. So then you can obviously swap those with your own, I mean, that sort of thing, but it's nice to actually have a visual of it. Okay.
+
+So if we want to, now that we've seen it and we're like, oh, you know, we want to change this and change that. So let's like one thing I think I want to change is I want it to be like vertically, vertically listed. I know instead of horizontal, I also, I also want it to, you know, like on product end, it's like product of the day.
+
+Number one, number two, number three, number four, number five. I think like the gamification of this directory is really interesting. Yeah.
+
+Maybe we allow people to like upvote it or something. I dig. So like, maybe like we advertise, you know, like have a kind of like show like the number one, number two, number three, like, um, Yeah.
+
+So show in a very obvious way. Which products are number one, number two, number three, et cetera. And let the user upvote, um, uh, on the products.
+
+Something like that? Yeah, absolutely. Okay.
+
+Let's see what this is. And then from a, and then from a design perspective, do you recommend us like giving feedback at this prompt level or should we wait until, until we see what comes back? Yeah.
+
+Sometimes it's like, sometimes go to kind of break it into distinct blocks where it's like, it's like, okay, let's kind of do these things. And then, and then you can circle back and be like, okay, now like how to do this on the design. So it kind of gives you the other reason too, is like, you'll see here, there's this undo button.
+
+So if we didn't like what just happened there, obviously it did fix the error. So I don't want to reverse it, but we didn't like it. I can click undo and it'll actually roll back to the last, uh, checkpoint.
+
+Right? So if we don't like what happens here, we can either tell the, like reprompt the AI, or we can just say, okay, throw out everything you just did. Let's just get back to the working state and then kind of start from there.
+
+Um, but if you, if, if you tell the AI to do like a ton of different things and it does a lot of them right, but then one of them wrong, then you don't want to roll back, but, but you, you, you, you know, that's the only, you're gonna have to manually change the code yourself. So that's the benefit of kind of breaking it up into smaller tasks. So, um, we're going to just send this one.
+
+Um, and, uh, it's going to go ahead and add that in. I don't know why it keeps editing this, this types file. I don't want types.
+
+I just want to ship. Um, yeah, so that's, um, yeah, usually, usually like having some very small focus processes, kind of like specifically like what you're working on can be, um, yeah, pretty helpful in that regard. Um, yeah, just kind of lets you, lets you break it down into smaller pieces, whatever.
+
+How have you. Sometimes when I'm building stuff, I'm, I like, for example, directory, I, I reference the octalysis framework. Do you know what that is?
+
+I know. I never heard of that. Yeah.
+
+It's a, it's a game mechanics framework and we can, maybe we can put it on the screen. It, it, it allows, it's thinking, it's thinking about how do you turn your product into a game? So things like leaderboards, things like status points, things like achievements and boom, this is it.
+
+This, this already started feeling more like a game. Yep. Totally.
+
+Totally. We got a little upvote thing here. Or is that, is it an upvote thing?
+
+So this, this is where, this is an area where it's like, okay, so maybe did it, did it upvote it? Um, the vote count next to each point. Oh, oh, oh, oh, I see.
+
+This is the vote. Oh, oh, oh, oh. So I can actually do it.
+
+Um, obviously this is just like probably in memory or whatever to start. Um, but I mean, we, we could also, if we want to actually make it real, we could add Firebase or Superbase or whatever have you. Um, but, um, but yeah, that looks awesome.
+
+And by the way, I look at that. My initial reaction is like, whoa, you know, the upvoting people are going to spam that, you know, and just going to click up, up, up, up. And then I'm like, my initial reaction is no, no, no.
+
+Let's prompt it to make it one vote at a time, you know, per person. But then I was like, actually, it might be good that you can upvote unlimited because then you're going to see huge upvote counts. It's going to feel alive.
+
+True. It's a, you know, it's, it's, it's kind of like if you have people that really love the thing and they're sitting there just hammering it, you know, I mean, that's time, time is value and that is time, right? Like, um, so love it.
+
+Um, and you know, cause you had mentioned design wise, uh, what else, um, you know, did you have some, uh, some design feedback you wanted to give bold on this thing? Um, yes. So I don't know.
+
+It's clean, which I like a lot, but it just feels like we can add some more designers. Hey, when you say this, but some more pops of color, um, but we're not talking to a designer, we're talking to bolt. So no feelings hurt.
+
+You know, it's funny. I, the number of times I've said to bolt, like, I'm like, make it beautiful. Like use gradients, like make it pop.
+
+Like it, it, you know, it actually, it actually kinda, it can, it can kinda grab that, you know? Um, and it, it'll, it'll at least try, right. It's like, okay, I'll, I'll give it a shot.
+
+Um, but we want to make it pop. Um, you know, some, you know, beautiful, like, I don't like color gradients or something. Yeah.
+
+Anything in your head? Yeah. Could you, I know on V zero, you can, you can add a image of like, make it look like this.
+
+Could you do that on bolt? Cool. Yeah.
+
+Yeah, absolutely. Absolutely. Yeah.
+
+What's, uh, you got, you got like some inspo here. Um, it's like a beautiful looking site. The, uh, it's a good question.
+
+I think the arc browser has a pretty nice site. Okay. Let's pull it out.
+
+Um, you can also use, it'd be funny. Like I have a, we have a crazy site. I don't know if it would work.
+
+Uh, have you ever seen our site? Late checkout studio. I think I have.
+
+Um, it's crazy. Just like from a color perspective, I would be interested. Uh, late checkout L A T E.
+
+Nope. My bad. There we go.
+
+Okay. Yeah. I do remember, uh, visiting this site.
+
+Okay. Uh, we can give it a shot. I mean, like from a color perspective.
+
+You know what I mean? Totally. Totally.
+
+And this is the arc one. It's the arc one. Okay.
+
+Let's, um, here, tell you what, I'm going to go ahead and just take a screenshot of this thing. Let's just, let's see. I mean, if we don't like it, we can just roll it back.
+
+That's a beautiful thing. Totally. Um, so, um, uh, and instead of gradients, um, attached, um, is a beautiful.
+
+Thank you. The colors are amazing. Um, very unique.
+
+Uh, maybe you can like capture the vibe. Yeah. Into a product list site.
+
+Yeah. Let's see what happens. This is crazy.
+
+I, where we, yeah, this, this, I, I mean, I, I don't know what we're going to get back, but it is going to be interesting. Um, yeah, I mean, there you go. Listen, it's, it's taking a crack at it.
+
+Yeah. I mean, I didn't think that it would be able to do it, but based on that reaction, I'm feeling optimistic. It feels confident at least.
+
+Yeah. Totally. Out of the three of us, Bolt feels pretty confident right now.
+
+Um, but I mean, it is surprising, you know, just, and that's kind of the fun thing about this stuff is the thing about these AI products and the Bolt included is like, there are things you'll tell it and it's just like, how the heck can it do that? You know? And then there's things you give it to and you're like, how is it so dumb?
+
+Right. And so when you kind of run into the dumb things, it's, it's, um, you know, I, I guess, and I actually, for people that are like indie hackers or like bootstrapping or just really side projects, especially people that are not like, uh, you know, seasoned engineers or something, right. There is just a ridiculous amount of alpha in becoming good at, at like getting a feel for how to really drive like LLMs.
+
+Right. Because you can just go and I mean, you look at this. I mean, this is, that's, I, this, you know, that's a good, it took the color palette, you know, it added these like icon, you know, it's just, it did a good job.
+
+Right. I mean, it actually, you know, and this is the, you know, to do this as like an engineer or designer, it's like, it would take longer than what we just did. Um, and, and so I think there's kind of an arbitrage opportunity where I think a lot of software engineers have been kind of late to the game on trying to adopt AI tools.
+
+Um, and also the way that they're kind of approaching is very different than someone who is, uh, you know, kind of entrepreneurial in nature and is, and, and it's just, you know, that's the nature of entrepreneurship you're dealing with. Um, you know, building and launching products into the market is, is not deterministic. You have to, you have to kind of like feel how things are working.
+
+And like, of course, looking at metrics or whatever, it's very similar to like making LLMs work well for you. And, um, and so like, you know, a lot of the people that have been adopting Bolt have been folks that are building a micro SaaS folks that are building, um, you know, they're like indie hackers or whatever, have you. Um, and it, it's no surprise to me because, because they're the ones that, that could have been able, you know, it makes sense.
+
+They could master, uh, how to use a tool like this faster than anyone else in the world, you know? So, just as a, as an aside. All right, there she is.
+
+Oh yeah. Took, took your color scheme. Thank you for that.
+
+My pleasure. My pleasure. Um, cool.
+
+What do you say? Should we, should we like deploy this thing? Yeah.
+
+Yeah. That's, that's one of the cool things about Bolt is, um, it's not just for like making UI. Um, and you can actually make kind of, you know, backend aspects of this, which, uh, we, we, I think we, we might have enough time to actually kind of, you know, go in and try and add some, you know, log in or something, but, um, it's got, you know, built in deployment to production host on Netlify.
+
+All you have to do is just click this deploy button up here on top, right. Um, and that'll actually tell Bolt that, uh, you want to do a production build and get a real URL for this. Um, that's pretty cool.
+
+Um, that's pretty cool because, uh, now it's not just prototyping some UI. It's actually getting this onto, uh, you know, URL you can send to your friends and your family or whatever, or actually attach a real domain to. Um, and, uh, you know, actually go and start getting Google to rank this for SEO.
+
+Right. Um, which is pretty cool. You don't have to log in.
+
+That's the other kind of cool thing about this is that, uh, it's actually doing this build in your browser, uploading it directly to Netlify. And, uh, we can go ahead and view it here. There it is.
+
+Live on prod. Crazy. That's crazy, man.
+
+Wow. Look at that. Look at that.
+
+Yeah. That little, uh, that's fire. Yeah.
+
+That's actually, that's a nice little touch. This is cool. This is actually, I did the, your color palette actually really, you know, it's a cool.
+
+It's calming. I think that people. Yeah.
+
+People are interested in more calming design right now. It is. It feels, it feels unique.
+
+Cause it's, I, I, you know. Quick ad break. Let me tell you about a business I invested in.
+
+It's called boring marketing.com. So a few years ago, I met this group of people that were some of the best SEO experts in the world. They were behind getting some of the biggest companies found on Google.
+
+And the secret sauce is they've got a set of technology and AI that could help you outrank your competition. So for my own businesses, I wanted that. I didn't want to have to rely on Mark Zuckerberg.
+
+I didn't want to depend on ads to drive customers to my businesses. I wanted to rank high in Google. That's why I like SEO.
+
+And that's why I use boring marketing.com. And that's why I invested in it. They're so confident in their approach that they offer a 30 day sprint with a hundred percent money back guarantee.
+
+Who does that nowadays? So check it out. Highly recommend boring marketing.com.
+
+Yeah. I think there's, there's kind of like the, the, the, the linear homepage, the, the, you know, like that, that, that, that sort of like, it's just, you know, they're beautiful, but, but there it's a lot. And this is, this feels, I like the, I actually really liked the, the feel of this.
+
+Yeah. I'm not just saying that it is, that's pretty cool. So anyways, yeah, so that's it.
+
+So if I wanted to actually attach a production domain, you can click this link and in Netlify, you can then, you know, point to domain at this. And, you know, this, this, you know, this is a production website we built here, which is pretty cool. Yeah.
+
+So you got to get an idea of, you know, how to, how to kind of push this thing and make, make the AI be creative based on the vibes you give it, you know? Is it me or is this way more simple than cursor if you're not a developer? Oh yeah.
+
+I mean, a hundred percent. Right. And like when we, we originally like, you know, we're put bolt online.
+
+Like we, you know, cause you gotta understand like from our point of view at StackBlitz, we, we, we, we, we've been in the business of making web IDEs. Like, you know, to kind of like, this is this, I'm showing you here, this is, this is our, has been our product for seven years. Like, this is what we do.
+
+You know, you can open up repos and like, and when you open these things up it's an, it's an IDE, right? Like it's not, there's no AI, there's no, you know, so people, we, we, we, we had some people building micro SaaS with this, but I mean, it was, you know, it was like a couple of percent of our user base if that, right? So when we put bolts online, we, we thought developers were going to be, you know, we thought the developers were going to, you know, dig it.
+
+Cause it allows them to punch out code faster and stuff. And we, but, and we certainly didn't think that this would, we would get compared to cursor. But, you know, kind of from when we launched, what we ended up finding is a lot of, a lot of folks have been, you know, adopting cursor that are, you know, again, not like, you know, like engineers per se, like, you know, by, by their, their day job or whatever.
+
+And, and bold is amazing for this, right? Because yeah, like when you come to cursor, it's, you're getting something that looks like this more or less. And in reality, it, you, you actually don't really want to be looking at the code, you know, as, as the default thing, you actually, ideally you had, you're having a more powerful, simple discussion at a high level with, with the actual AI agent.
+
+Right. And so that's like, I think that's been, you know, really, I mean, one of the key things that folks say to us is like, I love how simple this is. I love that I can just, you know, I come here and just tell it what I want and it makes it versus me having to go clone some repo, install stuff.
+
+Then I can tell a cursor to kind of edit stuff. And that's not a knock against, against cursor. I mean, like, you know, we use cursor to build bolt, you know, like in our own code base and we use bolt to like scaffold out UI.
+
+So there's kind of like a mix of where these things fall in, but yeah, I mean, a hundred percent, I mean, this is far simpler to get, you know, go from idea to production with. Right. And it's simpler, but is it as powerful?
+
+Like, I mean, maybe we'll talk about it when we want to build this micro SaaS app next, but could you do as much with bolt as you can with cursor? I think, I think in the context of building web applications, you can do a ton. I mean, you can, you can build something that's actually got like a backend where you have auth and, you know, like we have people that have launched real products just using bolt at this point where they're like taking stripe for, you know, subscriptions and like they're using super base to authenticate and like, you know, blah, blah, blah, blah, blah.
+
+So you can a hundred percent build real stuff with bolt. I think where cursor really shines is like cursor is a, you know, it's, it's a, a heavyweight tool that that's designed to work with, you know, code bases at like the fortune 500 even. Right.
+
+That, that, that have been, you know, code bases have been around for decades, you know. And so it's, it's, it's, it's, it's, they have to, they have to design the tool for kind of a different audience there. And that does, that doesn't mean that cursor is not useful.
+
+But, and you can certainly do kind of quote unquote a lot more with cursor. Like you can build any type of software with cursor, but you know, when it comes to building like a full stack web app, you know, unless you have very specific requirements that, you know, would be hard to do in both or something. I mean, I got, it's tough to beat, tough to beat how fast and simple and powerful this thing is, you know.
+
+So should we, should we try to build something that's a bit more complex just for fun? Let's do it. Yeah, I'm down.
+
+We can, we can give it a shot. What's a, what's an idea you got? Something that's, that's complex.
+
+Maybe requires like, you know, log in or I don't know, something like that. Maybe like a chat app. I don't know.
+
+Something, something, you know, something that's a real time per se. That'd be cool. Well, yeah.
+
+What do you think? Maybe, maybe, maybe it'll be a complimentary site to our IndieHacker site. You know, it's like IndieHacker chat, you know.
+
+And, you know, I'm kind of wondering actually, maybe I just, maybe I just, maybe I just, I don't know. Maybe I just, maybe I just pull this back up. Yeah.
+
+And I say, you know, let's, let's add like a live chat page or something to this. Yeah. Okay.
+
+We want to add a live chat page to the site for IndieHackers to, you know, in real time, communicate with one another. I don't know how much more specific I want to be at this point. I'm just going to like, I'm just going to, you know, add it and I'll, I'll, I'll tell it what to use.
+
+Okay. I don't want to use Ably. I don't want to do that.
+
+And why is that? I don't know what that is. I actually, I have no idea what it is.
+
+It's probably good. Sorry, Ably people. If you're watching this, I just, I just, I never heard of it.
+
+I, I'm not familiar with it. So a lot of people ask us, so in the future in Bolt, when you ask something like this, we're going to have kind of recommended providers where it's like one click to set it up and blah, blah, blah. Which is going to be super cool.
+
+But right now, like we, we actually recommend people to use Firebase or Superbase. They just kind of tend to be the ones that, that really work the best with Bolt. They have kind of off built in, they have real-time data storage and synchronization.
+
+So I'm going to go ahead and I'm going to just revert back here. And I'm going to go put this in. I'm going to say, you know, to do use Firebase.
+
+And just, just so that it punches out the thing that I know should work pretty well. This is the one thing I will say coming into this. I do know this works well.
+
+We've had probably hundreds or, you know, over a thousand people that have kind of asked this question. So I, I won't play dumb and let us go down the path of trying to use something, you know, that might not work. Maybe it might work.
+
+I don't know. But the Firebase should, it should work without an issue here. So while that's going, I'm going to go ahead and we're going to pull up the Firebase console here.
+
+Let's create indie hacker chat. And okay. What else do I got to do?
+
+You have to be, oh, am I not my stack. It's going to go to try there. All right.
+
+Indie hacker chat, select parent resource stack loads. Sure. There we go.
+
+Okay. Nope. Google and I explained.
+
+Yeah. Maybe folks would want that. I don't right now.
+
+This thing's still cranking over here. Why did you say, I just want people to chat with one another versus I want a discord like a blog? I'm going to go ahead and do that.
+
+Yeah. I'm going to go ahead and do that. I'm going to go ahead and do that.
+
+I'm going to go ahead and do that. I think, what's your idea versus I want a discord like experience or, you know, what was the thinking behind, behind that? Yeah.
+
+Fair enough. There, there wasn't a ton. And I, I think the main thing I was thinking is let's like start with something simple.
+
+Cause if it, if it doesn't work, then at least there's not a ton of functionality for thing that they have to like sift through. Um, and, um, that was, that was pretty much the only reason, but, uh, one of our, one of our folks actually did do, like, I think at the launch video, We actually had like a Discord app for musicians was like the prompt actually worked. So you could add, you know, you can, you could have it be something more sophisticated.
+
+Once this thing's built too, we can, we can go and say, add like presence when people are online or whatever, you know, and stuff like that. So let's see a punch out. It looks like, yeah, this is, this is coming through kind of slow.
+
+I think our AI provider is, is anthropic and, you know, ever since, ever since say now, I don't know if anyone saw this, but then they, you know, Copilot is allowing Sonnet usage now. Kind of noticed a little bit of slowdown. Interesting.
+
+Yeah. I, that's, I mean, I'm just saying like, I don't know. I have no insider info, but I mean, I've just kind of noticed since that stuff went live, it seems like their GPUs are melting.
+
+Interesting. That makes sense. It kind of does, right?
+
+It kind of does. I mean, I must imagine they're just, they're just getting hammered with, you know, I mean, I've got copilot to use by so many people. But yeah, so this thing's still punching out.
+
+Let me go and find the, where do you actually get that? I think it's in the build section. Real-time database.
+
+Okay. Create database. So I think we will need this.
+
+Sure. That looks good. Let's start in test mode.
+
+Cool. All right. Yeah.
+
+So just to build something quick, you know, so with Firebase and I think with like Superbase, you know, when you're going into production, you're going to want to make sure you have like your permissions on the database set up properly. So people can't like, you know, write into other users' data or read other users' data, that sort of thing. But saying this, test mode's nice, especially when you're like prototyping something.
+
+Because, you know, you can circle back and just add that stuff later. This just makes it way faster for us to just get something running and, you know, actually build out the functionality. And then we can circle back and add the relevant like permissions or whatever have you here.
+
+Right. Okay. So this thing.
+
+And actually, I'm glad this happened. So one thing that this should be fixed in the next day or two, sometimes the LM forgets to restart the dev server. So you can either say like, you know, like restart the dev server, because right now there's no preview.
+
+I think this one will just be npm run dev. So I'm just going to run that and I'll kick this thing up. And it's replace the Firebase Cafe with your own credentials when deploying.
+
+The current ones are placeholders. Okay. Good to know.
+
+Where are those credentials? Let's find out. Probably in here.
+
+Yep. There it is. Okay.
+
+Okay. Awesome. Okay.
+
+I don't know where that chat page is, but. So I'll have to ask where the chat page is. Oh, there's a problem.
+
+What is the problem? Okay. I don't think that that's actually a problem here.
+
+Let me go ahead and just like pop in our API keys to start off here. So I'm going to just pull this in another window. Just make it easy for me to copy and paste.
+
+Let's see. Where in Firebase do you get this information? Okay.
+
+Okay. Probably there. Project settings.
+
+I love that there's problems here because this is what you're going to expect. So even the co-founder of Bolt himself is having problems sometimes. It's, I mean, that's just the nature of these things too, right?
+
+It's like, I think our job on Bolt is to like go and, you know, smooth this out and like find all these different edge cases. And this is like, especially why we're going to have, you know, preferred providers. We're going to kind of integrate.
+
+It's just to make this really, really seamless to, to get all this stuff in here. And kind of where to find Firebase key. Go to product settings.
+
+Yeah. I, this is insane. I, how do I, how can I not find this thing?
+
+Maybe I'm going to pull this back over here. Let's find out. Okay.
+
+I feel like this is probably good feedback for, oops, didn't mean to do that. Let me go back. Good feedback from the Firebase team.
+
+How the heck do I get this? I was going to say. Like we should have invited the co-founder of Firebase on this call too.
+
+This is insanity. How, how am I, how am I unable to find this? Couldn't we just like ask like Claude or perplexity or some, you know, where to.
+
+Good, good point. Um, uh, where to get Firebase, uh, API keys and dashboard. Claude has become my like go to customer, technical customer support person.
+
+Actually, actually. Yeah. Um, I'd say same thing for me.
+
+Okay. So, uh, project overview to open project settings. I think we were there and then scroll into our apps.
+
+Ah, okay. Got it. Okay.
+
+So we have to actually, uh, create a web app. Uh, okay. Like how would we have known that?
+
+I don't know. You know, I, I swear to God, it used to be something that was just like listed there. I mean, that, that, that was non, I don't know.
+
+I do this for a living. That was not obvious to me, you know, what, what that thing was doing there. Um, okay.
+
+So let me go ahead and, uh, pull the code up here. Uh, so Firebase config. I, I figured I ought to just be able to, um, copy and paste this and pop it over into here.
+
+Would be my guess. Yep. Uh, I, I, I, I, I, I, I mean, kind of seems like it.
+
+Okay. Save. And, um, so the, my question is how do we get to the chat page?
+
+Um, page slash chat. Uh, there's a good chat route. Okay.
+
+So if I go there, oh, okay. So there, there is, there is a chat thing. Um, okay.
+
+So for the sake, I don't know how much time we have left here, but, um, let's see. Pop a block Firebase here. Okay.
+
+I think it might be because we're in a, in the preview here. So, um, let's just have to remove the auth just for now, just so that we can, uh, you know, try this thing out to remove the, uh, need to sign in to chat. And by the way, this is a good learning, especially for the non-dev audience is like, something's not working.
+
+Just go like one feature at a time. And I think that was kind of your nature around like why you even prompted it instead of doing discord for whatever, create a discord like experience and just saying, get me real time chat. You're, it's just a lot less features.
+
+And then you can add on one at a time. Totally. Totally.
+
+Yeah. Especially, especially when you're dealing with stuff that's going to be like more, like more complicated functionality. Like for, for design changes, I'll often just, I'll just kind of like, I'll, I'll be like looking at the designers creating a list in, in one shot message.
+
+I'm like, here's this thing sucks. Make this better. Da, da, da, da, da.
+
+When it comes to functionality, I'm glad you pointed out because it's something I didn't really actually realize until you kind of asked why I did it. But like, yeah, with functionality, I'm, I'm much more conservative because it's just, okay, add chat. What does that mean?
+
+I mean, like, what's that going to like look at? Like, you know, how, there's a lot of things that could probably go wrong when the LM is going to go and try and punch that out. Right.
+
+So it's like, kind of like when you're adding function, you just do it like the absolute minimal thing and get it to work. Then say, okay, then add this thing onto it and da, da, da. But yeah, that's, you know, that, you know, kind of allows you to just, you know, slowly but surely build a thing out in a way that's going to be, you know, pretty reliable.
+
+Right. Let's see what happens here. Oh, let's go.
+
+Okay. So I actually asked it to, on the homepage. Yeah.
+
+There we go. Look at that. Join the chat.
+
+Join the chat. All right. Eric.
+
+Wow. I mean, come on. Let's go.
+
+Let's go. This is, and so I guess if I refresh, let me put in Eric again. Let me see.
+
+Is there, what error happened? Is this an error? Okay, no.
+
+So let me, I wonder if it's, let's go to our Firebase. Let's see if it's actually storing the data in here. Go to real-time database.
+
+Are the chats being stored in Firebase? Firebase. Real-time database.
+
+I could probably go look at the code, but you know, it should be able to know. Aha. Okay.
+
+Oh, okay. Okay. Sorry.
+
+It actually was storing it in Firebase Firestore. Let's see if we actually had any results. Because that's one thing with Firebase.
+
+There's like two different database products. I personally just reach for the real-time database because that is the thing that I am the most familiar with. Like that's, you know, back, this is my 2010s hacker era.
+
+I don't know, you know, like back in the day, Firebase is like, Firebase real-time database was the thing. But let's see. So, yeah, I don't, oh, you know what?
+
+There isn't a data. Because I had created a real-time one. So that's why the persistence probably wasn't working here.
+
+So, okay. Let's see what this thing does. So it goes and punches this out.
+
+Yeah, pretty wild. And by the way, one of our DevRel folks, or I should say not one of, our DevRel person, Tomek, amazing guy. He made a tutorial on how to use Firebase with Bolt this past week.
+
+I can kind of, let me go and find the YouTube video. I'll just pull it up. He did a really good job on this.
+
+We can throw that in the YouTube description for people who want to go and watch that as a follow-up to this. Yeah, absolutely. Yeah, so definitely worth a watch because, I mean, he goes into, you know, way more detail.
+
+So I'm just kind of, you know, so this is the video, how to add a database to your Bolt.new app. Super cool. It's got a good, you know, good amount of me for art.
+
+We have like a thousand subscribers. A good number of people have watched the thing. Okay, let's try this out.
+
+So let's see if it's, if it'll work. Hello. And let's go.
+
+There it is. Look at that. Okay, okay, here.
+
+Now what we have to do, let's deploy this thing. Let's deploy this thing. And Greg, let's chat.
+
+Let's chat together on our IndieHackers site because like we can do that. I'm going to send you this link and you can share your screen or I can keep sharing mine and we can, you know, we can chat together. No, don't do that.
+
+Don't do that. Hang on. No, don't, don't, don't create my EMV file.
+
+What are you doing? Don't do that. Don't do that.
+
+Don't do that. Don't do that. This is, this is one of the, we have actually a fix coming for this.
+
+So what's going on is the LM is being smart and it's like, you shouldn't hard code your variables in this file. What are you doing? Are you insane?
+
+Especially if we're going to deploy to prod, we need to fix this. So one of the things we're going to be adding is, you know, locking files. So the LM will not modify stuff.
+
+Honestly, that was probably, this is what you should do if you're going to prod, to be fair. Like it, I'm kind of, I'm kind of dunking on it, but that's, this is actually, this, this is probably the right, the right move. Let's make sure that this still works real quick.
+
+Okay. Yeah. So here, we'll go ahead and, is there, do we have a chat here?
+
+We do. Okay. Let me go ahead and studio chat.
+
+Go ahead and open this up. Come, come join the chat. Let's see if this works.
+
+I'm coming. I'm coming, baby. You're punching in from, from, from Florida, right?
+
+Yes, sir. All right. So from, from across the continental US, I'm in the Bay Area on the, on the West Coast.
+
+Let's see, let's see if this happens. Okay. All right.
+
+I'm in. Oh, look at that. Oh, there we go.
+
+Let's go. And that's the, that's the coolest part about this is we started off with a directory to get traffic. And then all of a sudden, now we're this like social, you know, app, SaaS app, you know, it's just, it's, it's mind blowing because it's just, it's just your ideas.
+
+You just have to have really good ideas. Yeah, totally. And, and, and it's, it's amazing, right?
+
+Because, because that's, that's like how it should be, you know, like it's, you should be able to just, you know, have amazing ideas and be able to go and put them into, into production. And like, there's been a, you know, it's been really cool to see a lot of, again, people in like the indie hacker community going and doing this where there's this, this gal, her name's Pitch. She's from Thailand.
+
+And she made this app called Viral Hooks. So I can, Viral Hooks. So she built this entirely with Bolt, right?
+
+And like a week or two after launch, we, my chief of staff and I got on the phone with her because she was, you know, she was, you know, one of our power users was like, talk to us about what you were doing. Really cool app. And basically this, she's built this app that helps you build Viral Hooks for your, you know, your TikTok posts and things like that.
+
+And she had a week before we launched Bolt, she had actually put a post on Upwork, you know, just trying to find developers, like build out this idea for her. And she's like a PM at like a, you know, software banking company or something in Thailand. And, you know, so she got a couple of different proposals and they were like, basically the range of, it was like, it was like three or 5K to build this app.
+
+And it was going to take, you know, I don't know, a couple of months or something, which like, I mean, you know, reasonable, right? I mean, like, yeah, I've, I've done a good amount of software contracting. I've contracted software devs.
+
+I mean, that, that's, that's like, seems like a pretty reasonable price and timeframe. But, you know, if you're paying out of pocket for like a side project or, you know, et cetera, it's a little, a good amount of money. And so when we launched Bolt, she, she signed up on our $50 a month plan and she had this thing built in like a week and a half or two weeks or something.
+
+And, which is crazy, right? I mean, like that's, it was like one, literally one, one hundredth the cost and, you know, five or 10 times faster than, than when she was quoted at. Right.
+
+So it's just, it's, it's, it's, it's unbelievable the amount of leverage that you can have. If you're someone who's really creative, entrepreneurial, you know, a fire starter that wants to go and build stuff and just build cool stuff that like looks good. Right.
+
+I mean, this is, this is, this is unbelievable. I mean, this looks, this, this could be like a, you know, a startup in Soma that's backed by Sequoia for all I know. Right.
+
+Yeah. I mean, the stuff that's like, you know, there's a, there's a guy named Paul who made a CRM called like chilled CRM, I think. And, and, and they look, they look professional and, and, you know, it's kind of to this point, you know, we've had YC startups already.
+
+They've come to bolt to build their landing pages and stuff, you know, cause it's just like, like one of, one of my friends, his, his company's a YC company. He, they're doing like data pipeline stuff above my pay grade. And I, you know, it's just, that's like the hardcore backend engineering stuff.
+
+And, you know, they have better stuff to be doing than writing a, a front end landing page about their product. I mean, it's like they, they, they should be working on the data pipeline thing. Right.
+
+Like that's their, their, their secret sauce. And, and then, so that's what they did is they, they came in and, you know, just spent 30 minutes, you know, kind of prompting, you know, their, their, their site into existence and, you know, it looks great. So it's just crazy.
+
+Can you hit the pricing page on here? I'm just curious, like what she, what she charges. So, I mean, it's, it's crazy.
+
+Like she's gonna, she's probably making real money with this. Yeah. It's, it's absolutely bonkers.
+
+Yep. Can't confirm. There's, there's, there's, there's, there's at least a dozen people that have launched stuff that have said, yep, I've had my first customer or, you know, first dozen customers or whatever at this point from bolt, you know?
+
+It's crazy. Yeah. It's, it's, it's, it's wild.
+
+It's wild. Like really the, you know, and I love it. This is, this is why, this is why we started Stackboots in the first place is we just, we felt seven years ago when we started the thing, it was like, we felt that people should be able to build web apps using the web.
+
+You know, it's like, you should be able to, you know, you should be able to, you know, you should be able to, in a browser, come, you know, just build things without a download stuff to your computer and et cetera. And it's just like you would any, like, you know, when you write a document these days, you make a design of Figma, you're not downloading some, some giant thing to your computer. It's like, you can share these URLs.
+
+You know, you know, that's, that's kind of the magic of this. Well, Eric, I appreciate you. You know, you're running probably one of the hardest AI startups right now and just scaling really quickly.
+
+But you chose to spend a little bit of time with us and show us how to, how to build and how to use the tool. And I'm really grateful for that. I think I'd love to see people in the comment section, just comment and comment if you enjoyed this and, you know, send Eric some love for sure.
+
+He deserves it. And Eric, where could, where could people get, get going on Bolt? How do, how do, how should people start?
+
+Yeah, totally. I mean, head over to Bolt.new. I mean, it's, and it's, it's the simplest thing ever.
+
+There's like an input box. Type in your wildest dreams, hit enter. I mean, maybe not wildest, but, you know, like type in, type in something pretty well, you know, thought out or whatever.
+
+And, but yeah, start there. And then we can share the tutorial that Tomic made on, over on X, where you can follow at StackBlitz. We're constantly posting stuff there.
+
+And yeah, and Discord, we're discord.gg slash stackblitz. So yeah, I was stoked to see what everyone builds. Really excited to see what everyone, you know, has to say about this stuff.
+
+And thanks for having me on. This has been, this has been a blast. I mean, I've, I've had a lot of fun building something.
+
+All right. Thanks a lot, man. I'll catch you later.
+
+Awesome. All right. Have a good one.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye.

@@ -1,0 +1,621 @@
+I think of Mid Journey as like a new medium entirely, right? Like it's a different type of canvas. It's a different way of problem solving.
+
+You have not just paint, but you have like entire aesthetics that have all of these layers and this complexity and you're blending them and you're balancing them and you're finding this harmony in between to get somewhere that you really love. And once you get that, once you find that little recipe, you can infinitely prompt into it, right? Nick St.
+
+Pierre in the house. Dude, I am so happy you're here because I've been playing with Mid Journey for a while, but I need help to see the light. Okay.
+
+I need help to see the light. And you're just the man for the job. I hope so.
+
+I hope so. What have you been messing around with? What have you been doing over there?
+
+I mean, I've been doing everything you've told me not to, which is using words. Words are great. Words are still great.
+
+Don't get me wrong. But they're just the tip of the iceberg here. We can really do a lot more when we're using visuals to drive visuals as opposed to semantics to drive visuals.
+
+We can kind of like explode out aesthetics and style space into almost like infinite directions. We don't have to rely so much on the base models interpretation of like our style tokens. You know, we could, we could pave our own lane here.
+
+I mean, the only reason I, I, I, I've been playing with prompts is because a bunch of people on Twitter are like, these are the 10, you know, prompts that you need to use on Mid Journey. I know. I know.
+
+And you know, I, it's funny because when I started doing all this Mid Journey stuff, that was the name of the game. A lot of the features didn't, they didn't exist yet. Things like style space.
+
+It was just words and parameters. You could use images in your prompt, like as an image prompt, but it did different things. It kind of pulled the subject matter and it pulled the elements of that image in, uh, which often wasn't what you wanted to do, but, uh, that was the name of the game.
+
+It was, it was structuring that prompt and describing every little detail, but in recent months, they've released this whole idea of like style space. They have style references, they have character references. Um, and they have this whole system that kind of explodes aesthetics out into this infinite universe.
+
+And it's so much more fun to kind of like dig into that world and play on like a more visual canvas, as opposed to like, Oh, what does it do if I say, you know, this keyword and blend it with some other keyword, you know? Okay. So this is what I'm here for.
+
+So if you could spend some time just live cooking so that by the end of this episode, people, you know, they're not going to know everything by, by the end of this episode, but they'll know enough to be dangerous. Okay. Enough to be dangerous.
+
+I like that. I'm going to steal that. Let's I'm going to put that as like my, my new tagline, just enough to be dangerous.
+
+We're building some weapons over here. Okay. I'm going to show you a couple of things.
+
+I got, I got a couple of things that are useful, like resources. I'll share those. And also kind of just walk you through just like a basic process of exploring an aesthetic.
+
+And I should preface this by saying there's no one right way of using this tool, right? Like it's, it's got a deep enough feature set now where the workflows you can employ are seemingly infinite. So my way of doing this is my way.
+
+You can use it as like a baseline, but I hope you kind of find your own little groove, you know, you find your own little flow, your own little rhythm here that you can get into that kind of like fits your, your vibe, you know? So I'll show you my vibe as a starting point so that it, it kind of like gets the juices flowing, so to speak. Perfect.
+
+So let me ask you this before I share my screen, do you have maybe a style of image or something in mind that we should explore around a general concept? I kind of like to, I kind of like to start usually with like a subject and like maybe a medium, if I'm after a particular medium, like a painting or an illustration or a photograph or something 3D, but it's, it's nice to kind of start there. Cause we can, we can bend and flow around that concept.
+
+Yeah. So I just tweeted this and I, and I tweeted, I just put in the, the Riverside chat. So I'm going to see you.
+
+Oh, yeah. Yeah. We're there.
+
+We're there in our relationship, you know? Yeah. It's exciting.
+
+It's very exciting. All right. Let's see what you got here.
+
+I tweeted when I need creative inspiration. I look at old posters. Oh, these are perfect, sir.
+
+These are perfect. You know why these are perfect? Cause we could actually use them as a starting point.
+
+We can, we can build into these. So these are great. I'm going to save these.
+
+I should share my screen so that we can, we can all see this, right? Totally. Yeah.
+
+Share, share your screen. And some people are probably going to be like, well, well, where do you find these old posters? You know, what do you type to get there?
+
+And honestly, places like Reddit, Pinterest, just like Googling, you know, you'd be in the image tab. You'd be, oh, there we go. We're, we're, we're, we're sharing here.
+
+Yeah. We're cooking. We're cooking.
+
+So these are a Tokyo, Tokyo trade fair and 1995 Tokyo trade fair. So these simple minimalist kind of paper cutout looking graphics, we got bold colors, simple shapes and forms, but these are fun. These are cool.
+
+So I'm just saving these. I'm just saving these. I could also have grabbed the URLs, but we'll save them.
+
+And then I'm going to pop over into mid journey. And now I'm, I'm just starting on mid journey.com. So first tip, if people aren't aware yet is get the hell out of discord.
+
+Mid journey is no longer in discord. Get out of there. It's a hellish place to be.
+
+You don't want to be working in, in discord. You want to be working in the mid journey web app. It's open to everybody now, just mid journey.com.
+
+All right. So head over there and you could pop into your create tab. This is where you're going to be spending the most time, but also just like you were finding inspiration in those posters on Pinterest, on Reddit.
+
+You can also start in mid journey and like the explore tab. This is where all of the publicly available posts, although all the generations are going to show up. So if your account is on the standard plan or below, everything is kind of public by default.
+
+When you're on the pro plan, you can go into stealth mode and you can prompt privately. So otherwise everything's up here. So there's a pretty vast library and you could type things like, you know, um, vintage poster or something.
+
+And you can get inspired through things like this. And if you like a particular vibe, let's say you really like this style with the red boots, you can hit this little search icon here. And that kind of does like an image search.
+
+So it's going to give you similar results that have similar subject matter and styles and everything. So this is a cool way to explore too. Look, this one's kind of the vibe, right?
+
+Already. This one's not bad. Yeah.
+
+By DB smooth. Shout out DB smooth. He's been playing with some stuff.
+
+Let's see. Let's see what the prompt was poster for the opening of an exhibition featuring a flat design with an eye in the center, having a green iris surrounded by blue, black, red, purple colors. Kind of cool.
+
+Geometric shape, colorful palette. So it's almost like a good description of what, what you had, what you were working with. So this is kind of cool.
+
+And when you're in here, you can like these things, you know, we can do that search, like I said, right. Get some other ideas, but we can also on the bottom here, we can see how we say use prompt. So if we hit that, it's just going to bring this prompt in, which is kind of nice.
+
+We can also say use style. And if we do that, it brings this image in as a style reference, which you can note by the paper clip. I'll get into that more in a second.
+
+And then you can also use it as an image, which functions a little bit differently than a style reference. I'll explain the difference through the process. But yeah, this is, this is a great way to explore too.
+
+So you don't always have to start in Pinterest or wherever you can, you can always pop into Midjourney, good source of inspiration. So let's, let's save this actually. I'm just going to save this and I'm going to pop it in my create tab.
+
+So yes. In the, like, just to be clear, everything I'm seeing in the explore tab, those aren't, those are images created on Midjourney, correct? Correct.
+
+That's right. Everything here was made in Midjourney. Now, when we click on these, we'll see some people's like personalization codes.
+
+Sometimes you'll see an image in the prompt. Let's see if we can find one in a couple of clips. Oh, this is a, this is a friend here, a friend Tatiana.
+
+You can tell by the style. It's a very popular one. But let's see, is there an image somewhere in any of these?
+
+It doesn't look like it, but sometimes there's a image included in the prompt as well. And that'll show up. So that's why it's important if you're using like for client work or for brands and you're using your own imagery that you might not want to show up on a public database, you want to be on that pro plan or above and make sure that you have stealth mode turn on so that those assets don't show up.
+
+So that's, that's important if you're working with client stuff. I always like to reiterate that. And when you want to turn on stealth mode in this little settings here on the right side of the, of the prompt bar, you have this stealth down here.
+
+You just want to make sure that's turned on. And that way nothing will show up in this public database. I mean, I should have asked you in the beginning, like, why should people use Midjourney?
+
+I mean, there's a million reasons, honestly. I mean, professionally, it's a huge, like inspiration tool. Like it's a great way to just jam out an idea.
+
+In the same way, you might go and discover things and build a mood board through, you know, a Pinterest exploration or like Tumblr or just like Google image search or Dribbble or wherever. You could do the same in Midjourney, except you actually have more control over it. Right.
+
+So I think it's great for just sort of coming up with ideas, putting together concepts, ideating and exploring. But you can also use it in production. And it's a, it's a really powerful tool, especially now with the new editor feature, which we can talk about for a second.
+
+It lets you do a lot with your existing assets and kind of outpaint, add new elements into it. There's a lot of cool stuff that you can start to do. So, yeah, but, but honestly, it's just, it's also just fun.
+
+People use it as like almost like an art therapy in a way you can just get lost in it, you know? So lots of reasons, lots of reasons people are using it, but I find it most like exciting as like a discoverability tool, a discovery engine, you know, just get an idea, putting in there, see what the hell comes of it. And then just go down this rabbit hole of exploring the aesthetic.
+
+It's awesome, dude. It's, it's addicting, especially once you get into a flow. Yeah.
+
+And I think especially when you get really good at it too. So, you know, when I see like a top 0.01% mid journey person, I can tell if it's mid journey or not, it's just, this is an incredible piece of art and that art could live like personally, like you can just have a cool piece of personal art or, you know, that is on your website. It's on your landing page and people connect with it or use it as a social asset and people retweet it.
+
+And just the, there's so much value in being able to, uh, take your idea from, from here and turn it into a living, breathing asset, design asset. Um, and mid journey just helps you do that. So, um, I'm all for it.
+
+It's the best. And you have the most control. You have the most creative control, which is what I love about it.
+
+Uh, it's also like a new medium, but let's, let's show, not tell. Cause I could end up in a rabbit hole just talking about it. So let me, let me show you some cool stuff.
+
+Let's get your images in here, first of all. So I'm going to pull in some of these images that we had saved. So let's pull a few of these in.
+
+You can see I have some other ones that are uploaded in here, but I just hit this little image icon here in my prompt bar and I selected those files, right? So I'm able to drag these in. And now what's cool about this is when I, when I drag them in, I can start adding them to our prompt here.
+
+And at first they're added in as an image prompt. And as an image prompt, they have this little icon here, the little picture icon, but there's, as you see, like there's three other things. There's the paper clip, which is a style reference.
+
+That's what we're going to be using. And then there's this little user icon. It says as a character reference.
+
+So we're not going to talk about that today. I want to talk about style space and it just kind of like exploring aesthetics. All right.
+
+So let's start with just one. Let's start with just one. Start with this hand image.
+
+I think it's actually my favorite. So I'm going to start with this hand image and I'm going to select it, the paper clip as a style reference. And then what should we prompt?
+
+Anything could be anything. Name a subject. It's like, it's like a Mad Libs game.
+
+Remember Mad Libs? Of course. Of course.
+
+Yeah. So let's do like, what's a subject that we could put in? Give me a noun.
+
+A giraffe. Giraffe. So I'm just saying draft, just straight up.
+
+Let's do, let's do some other animals. How about elephant? How about a dog?
+
+All right. So we're starting just with the most basic idea here and a style reference. So Mid-Journey kind of is going to try and look at this.
+
+It's going to look at this style reference here. Understand what makes it what it is. And it's going to try and integrate some of those elements into our image generations.
+
+And we're starting at the most basic possible level because I like to see how Mid-Journey is interpreting things. So I'm giving it the style reference. I don't give it a medium.
+
+I don't talk about the lighting. I don't talk about anything. I just straight up giving it something like a giraffe.
+
+And what this lets me do is interpret from the results, how Mid-Journey is interpreting the style reference. And then from there, I can make more guided decisions as to like where I wanted to go next. Right?
+
+So in this case, we can kind of see that rainbow effect coming in. Some of these results are giving us that more like illustrative look and feel, but we still have things that are a bit photorealistic and we don't necessarily want this if we're trying to match this style. Right?
+
+So there's already, we have decisions that we can make. We can use this prompt. A little shortcut is if you hover over, you can hit use.
+
+It'll just re-add the prompt into your prompt bar. A little time save. So we might start by upping the style weight.
+
+So we have these parameters that we can use to start to balance things out. And one of those parameters is style weight, dash dash SW. What this will let you do is determine how much influence that this style reference has over the generation.
+
+So by default, it's at a hundred, but it goes all the way up to a thousand. So if we run this at a thousand, we're going to be much more likely to get something that looks and feels a bit more like our style reference than what we might've gotten without it. Right?
+
+So we're starting to lean a little bit more in that direction, but still we're getting some photorealistic results. So now this is where we might want to play with our text prompt, give it a little bit of assistance. Right?
+
+So we might start out and say something like a paper cutout illustration of a giraffe. So something that kind of gives it a little bit of support, right? Along with the style reference.
+
+And the whole name of the game, honestly, is just balance harmony. You have all of these levers that you begin to pull that are going to guide and push the aesthetics in one direction or the other. And you just have to learn how to balance and find harmony between them and see how just a little bit of assistance with the text prompt.
+
+Now we're in like a whole different world, right? We're starting to get more of that look and feel that we were after. But we also might want to like play with the aspect ratio because we're after like a poster, right?
+
+So let's mess with that. That's another parameter that we could use. If we want like a poster print, we might come in here and do a little parameter here, dash dash AR and go, how about like two by three?
+
+Something that is more of a poster print layout, right? And this is going to change things too. This is going to guide it and help it fill that space a little bit better, right?
+
+So we're starting to get some cool stuff. Now notice like, let's look at this style reference. We're just using this image as the style reference, right?
+
+So midjourney is essentially looking at this image and it's trying to understand what makes it what it is. And it tries to do that by decoupling aesthetic from subject matter. Uh, now this is important because if we, for example, use this prompt, but we switch this from a style reference to say an image prompt, we can remove this style weight because we're no longer using it as a style reference.
+
+But if we do this, what midjourney is going to try and do is actually pull in more of the subject matter, more of the actual pixels of the image that we're, we're using. And it's going to give a totally different look and feel, right? So it's, it's starting to, it's starting to kind of go more in the direction of our text prompt now.
+
+Uh, and it's like just kind of pulling in maybe some of the colors of our image, but it's, it's not necessarily the quote, like style of our image, right? Um, and this becomes more apparent as you up the weight. So if we kind of made this image even more important in comparison to our text prompt, midjourney is going to try and pour, pull more elements of it into the generation.
+
+And notice now with that image weight higher, we're starting to get some of the hand that that's coming in, right? It's like trying to make a draft, but our image is now so important that it's like a hand giraffe and things are getting a little bit wonky, right? So this, this is an important distinction because a lot of times people will just, you know, they'll just drag an image in and by default it's an image prompt, but there's a huge difference when you click that little paper clip.
+
+So this is, this is very important, uh, when you're working with images like this. So let's go, let's go back to where we were. I will just hit this use, which is going to pull the prompt in, right?
+
+Um, but now I want to drag in another image. So let's, let's kind of give it a little bit more, uh, more options here. So with this image, it has a white background, it has this like red sun starburst sort of, uh, effect, right?
+
+It has this rainbow that's very prominent, has this text, this blocky text, and we can kind of see that starting to come through, right? Like we have that red sort of sun circular figure that's pulling through. We have that rainbow, we have some text that's starting to appear, right?
+
+So that's all coming from this image. But if we switch this image to that black background and we make this a style reference now, let's see what happens. I'm sure you can make a, you can make a guess here as to what's going to happen, huh?
+
+Quick ad break. Let me tell you about a business I invested in. It's called boringmarketing.com.
+
+So a few years ago, I met this group of people that were some of the best SEO experts in the world. They were behind getting some of the biggest companies found on Google. And the secret sauce is they've got a set of technology and AI that could help you outrank your competition.
+
+So for my own businesses, I wanted that. I didn't want to have to rely on Mark Zuckerberg. I didn't want to depend on ads to drive customers to my businesses.
+
+I wanted to rank high in Google. That's why I like SEO. And that's why I use boringmarketing.com.
+
+And that's why I invested in it. They're so confident in their approach that they offer a 30 day sprint with a hundred percent money back guarantee. Who does that nowadays?
+
+So check it out. Highly recommend boringmarketing.com. No idea.
+
+No idea. It's changing a little bit. It's changing a little bit.
+
+So we get more of the blues that are coming in from this, which is kind of interesting. Now we don't have a black background, so it's still pulling that color, but a different look and feel, right? A different look and feel.
+
+A different and I think important to note, personally, I didn't think that, like if you would have asked me to design this in my mind, I probably wouldn't do this. But this vibe is like so interesting to me. Like I love it so much.
+
+Steve Trang See, now you're getting inspired. A different look and feel like I'm getting inspired is what I'm trying to tell you. Steve Trang Yeah.
+
+Well, this is the beautiful thing because now we could take this, we can be like, ooh, this is a vibe. Which one? Is there one in particular that you're vibing with?
+
+Steve Trang Yeah. I mean, I don't want people to start like judging me in it or anything, but Steve Trang You know what this one reminds me of? You remember Gumby?
+
+You know Pokey from Gumby? Steve Trang Yeah. Yeah.
+
+Steve Trang This guy's totally Pokey. Hey. Steve Trang Hey, there he is.
+
+Steve Trang Yeah. We're back, baby. Steve Trang Hey.
+
+Steve Trang That's totally Pokey vibes. Steve Trang That's so funny. Steve Trang Yeah.
+
+Steve Trang I watched that all the time as a kid. Steve Trang I think the one, probably if I had to pick the one all the way on the right. Steve Trang All the way on the right.
+
+Okay, perfect. So let's use this prompt. But this time, I'm going to swap out the style reference.
+
+And let's just use this new image that we got. Why not? Right?
+
+So we can kind of lean a bit more in this direction. Steve Trang If we wanted to. We can run a couple of these.
+
+But we can also come in here on our favorites. Click in. And we can run some variations.
+
+Steve Trang Now, variation subtle. What they're going to do is keep most of the details of this image. They're going to keep most of the details intact.
+
+But it's going to change like the subtle things. Steve Trang Variation strong are going to have more dramatic effects on the composition. It'll still keep them the like general vibe of the image and the general subject matter intact.
+
+But it's going to switch up maybe like the location of the subject. Steve Trang The size of the subject. It'll be just a bit more dramatic.
+
+Right? So see how those variations subtle here? Like very subtle.
+
+And then here's our strong variations. Right? Steve Trang So we're starting to get some cute stuff.
+
+We're starting to get some cute stuff here. And you know, maybe, maybe we really like this, but we don't like the text. We want to get rid of that text.
+
+Right? Well, you can come in here, you can hit that editor option. Steve Trang And you could paint out this text.
+
+We can just sort of mask it out. And we could run this. Steve Trang And Mid Journey is pretty good at figuring out that you'll want it to be removed.
+
+But if you wanted to give it like a little bit of an extra hand, you can come in here, you can edit the prompt. Steve Trang And Mid Journey has this no parameter that you can use to tell Mid Journey what you want removed from the generation. So I might say no text or something.
+
+Steve Trang It's probably not necessary. But just to show you. But we got a couple results, right?
+
+That didn't have the text. We didn't, we didn't even need to do that. One thing I like to tell people too, especially if they're new to the web app instead of discord, as you go through and you're generating stuff, maybe you're going to get rid of it.
+
+Steve Trang And you're going to be able to do something that you can use to say stuff, make sure you like your favorites. They have this little heart up here, just want to make sure that you like your favorites. Steve Trang And it's going to make things way easier in the future when you're trying to find stuff in your library.
+
+Because every generation is for images, right? So you're, you're in Mid Journey in the weeds for a half hour. All of a sudden, you got hundreds of images.
+
+and you're like, I'm looking for that one image that they all look alike. Where the hell is that one that I really, really liked? When you like it, you can go over into your organize, filter by liked, and it'll be right there.
+
+Way easier to catch than trying to go through all of these, right? So I try to tell people, always make sure you like your favorites, either by clicking in, hitting that heart button, or right-clicking and hitting the little like button there. All right.
+
+So we've got some cool options. How did these go? So this is where we swapped it out, and we actually used this as a style reference, right?
+
+We used this other one as a style reference with our prompt, and it kind of took it in its own little direction, which is kind of interesting. And we could even do, like, we can combine. So we might come in here, use this prompt.
+
+Let's get rid of our no text. Actually, we can keep no text. We don't want text here.
+
+And let's drag one in here and set it as a style reference. So now Midrini is going to kind of blend these styles together. And they're similar, but they'll each bring their own little unique flair into the mix, right?
+
+And just to kind of clarify what's going on here, because there's already a few things that are starting to happen. We have our aesthetic levers, I like to call them. Right, Greg?
+
+We have our style references. That's one aesthetic, right? We have our text prompt.
+
+And in this case, we're talking about a medium, a paper cutout illustration. So that's getting interpreted. And then we have these parameters, like our style weight, which is determining how much of that style reference, how much of that is turned up, right?
+
+And we can start to layer other things in. So Midrini has something called personalization, which you get by rating a bunch of images. And it's super simple and everybody should do it.
+
+This personalized tab over here. You just click on that, start teaching, and you just select your favorite. You don't have to overthink it, but you just select the one that you're most interested in.
+
+And if you don't like any, you can skip it. And Midrini starts to learn your preferences just through this process. And oops, I'm going to undo that one because this one is actually super sick.
+
+And the more you do it, the more it learns about you. It learns things like, what kind of colors do you prefer? The lighting, the general style, more photographic or more illustrative.
+
+Do you like certain animals? Do you like certain ethnicities to come through? It starts to learn all these things.
+
+And the more that you rate, the more it learns about you. But this does wonders to changing the aesthetics. And I highly, highly recommend everybody do this as like one of the first things that they do.
+
+Go into Personalize and rate like a thousand images. It's going to make everything better, I promise. I'll show you a quick example of this before we keep going here.
+
+I know we're bouncing around a lot. So if you need to just get me back on track, you just holler, Greg, I'm here. But I'm just going to go whirlwind because there's just so much, right?
+
+But let's do a little simple example because I think it really illustrates the personalization effect. So if I said something like photo of a woman, right? Just a standard prompt.
+
+Let's do AR. Let's do three by two. It fills the screen nicely.
+
+And I'm going to turn Stylize all the way up. Now I'm hitting you with something new again. Stylize is how much of the model, that mid-journey model.
+
+Right now we're on V6.1. How much of the aesthetics that are sort of curated by the community, how much of that do we want applied to our text prompt versus just the interpretation of our text prompt? And high Stylize values are going to look more like mid-journey in a sense, which is to say like the default of the model, right?
+
+So it'll become super obvious when we run this a couple of times. We'll do Stylize 1,000. The default is 100.
+
+So the default kind of balances your text prompt with the mid-journey aesthetics, but it's not like super heavy on the mid-journey aesthetics. So it still gives you a little bit of creative leeway versus 1,000 here where it just like screams AI, right? It's like so in-your-face AI versus 100, right?
+
+Which has a little bit of a maybe more balanced look. So these are the default aesthetics. These are default to the model.
+
+What Personalize does is it essentially fine-tunes the model to your aesthetic preferences, to what you like, which is really, really interesting. So if I run this same prompt here and I just turn on personalization, now instead of getting the community curated mid-journey default out-the-box aesthetic, it's taking my fine-tuned and more balanced aesthetic. So I tend to like more analog photography.
+
+I like a lot of black and white stuff. I like kind of like heavy blacks, bold uses of color, lots of like dramatic light and shadow. So you can start to see that coming through.
+
+And if I turn this all the way up to that S1000, which is what gave us this prompt or this job, right? Without personalization turned on, just super heavy AI, super mid-journey. This is fine-tuned to my aesthetic.
+
+Totally different universe, right? Totally different universe. And everybody has their own little style references.
+
+Like if we go into explore here, we could probably find one. Let's grab our friends here. All right.
+
+And I'm just going to click on this, click on this, click on this. And now we'll let this roll. By the way, I'm really happy you're covering this because my biggest qualm with mid-journey is I don't want it to look like very mid-journey, as you'd say, like very classic mid-journey.
+
+So I didn't even know that this existed, that this was a lever that I can pull and I can just pull it back. Oh, yeah. Oh, yeah.
+
+It makes a huge difference. Personalization is something everybody should do. And it's probably going to be default with V7, but they're really pushing for it.
+
+So this is my friend Tatiana's. She's got similar vibes to me, maybe not as dark. She's like the angel to my devil.
+
+Everything I do is like dark and gothic and hers is usually a little bit more bright and playful. But you can see the difference, just same prompt, just our personalizations getting added into the mix. And we could even blend these if we wanted.
+
+So I can take her personalization and then hit mine and then we're going to blend them together. Right? And we could even come in here and I could say, well, I want three parts of Tatiana's.
+
+I only want two parts of mine and I want that blend to only be applied at like a level of 500 to this prompt. Right? So you start to get all of these aesthetic levers that are doing interesting things and you're just trying to find balance and harmony.
+
+So this is our straight blend versus something maybe a little bit more balanced. But this is where you start to like really explode out aesthetics and get into interesting territory. So let's head back to our draft here.
+
+All right? So we got we got a little cutout here, a little image, the black background. Got this no text that we're adding.
+
+We got the style weight turned all the way up. But I'm going to turn the style weight down a little bit and I'm going to add in my personalization. Let's run this a couple times.
+
+By the way, see this little shortcut I'm doing here? All I'm doing after I hit enter is hitting the up arrow on my keyboard and it's automatically populating the last prompt I ran. Big time save.
+
+For sure. Dude, you know, this also got me thinking too is like in the future, Mid Journey should create a marketplace where you can sell your personalization. People are starting to kind of do that.
+
+They're putting together like their own style reference books, their little style reference books and like curating different looks for different types of prompts. It's kind of cool. I've made a tool actually.
+
+I can share it with you so you can put the link in the description. But this is a style reference explorer. So it has like 40,000 images, like about 10,000 or I think there's like 15,000 style references that are in here.
+
+And these are the codes. So let me actually back up a second because I haven't introduced you to style reference codes, which is a different universe. So these images could be used as a style reference.
+
+But when you click on one, you see this prompt. It's got this code, sref with this random number. And these codes are kind of like coordinates in this like multi-dimensional style space that kind of direct you to a location.
+
+And then anything that you prompt is going to be influenced by that location. So it's kind of like if you like get deep with it, it's kind of like a seed and it kind of fixes this point in style space that you can prompt into. But there's two to the 32nd power sref codes, like 4.6 something billion, right?
+
+And people are essentially like mining these out of mid-journey, finding the best ones, curating them into lists, and then like adding their personalization into it, mixing their little like text prompt flavoring into the mix, and building these like aesthetic recipes, if you will, that are really, really interesting. And this is the name of the game, really. Like this is where things start to get really interesting.
+
+So I could come in here and I can, instead of using an image, I can use, let's use our prompt here. Instead of using an image, I can use an sref code. So let's drop all this stuff.
+
+Let's just go sref. And I'm going to pull something. Let's do like, let's do paper cutout.
+
+I'm just using my tool here. So I could search by like style, vibe, theme, and explore these aesthetic reference codes more visually, which is nice, right? So I kind of like this.
+
+This is a cool vibe. What do you think? Not bad, right?
+
+Oh, yeah. I'm into it. I'm into it.
+
+So we can just click on this sref here, copies it to our clipboard. And then I could paste this in. All right.
+
+And then let's get rid of this paper cutout. Let's just kind of keep it illustration of a draft. And let's run this a couple times.
+
+And now this prompt is going to get interpreted against this style. And you can see that starting to come through, right? Pretty cool.
+
+It's crazy. It's crazy. That's so crazy.
+
+And what's cool is we could start to blend these styles together like paint. paint. So like, I kind of think of them as like paint on a palette, right?
+
+This is a style that's bringing certain elements into the mix. What's interesting about it, though, is like, unlike paint, which is just going to be a color, right? These styles, these reference codes, they represent all sorts of stuff.
+
+It's color. It's composition. It's lighting.
+
+It's texture. It's pattern. It's all these things, right?
+
+And all those things get balanced with your text prompt, with your parameters, with any other elements that you add into your prompt. They can start to change, mix, blend, and you get these really crazy sort of amalgamations, right? These like little potions, these little style potions that start to percolate up.
+
+So I might see something like this and say, okay, that's cool, but maybe we want to add a little something into the mix. Maybe we want to add, I don't know, how about like a glazed ceramic kind of look to it? Let's see what happens if we do that.
+
+So I can come in here and search for something like glazed ceramic, right? And I can just visually explore and look for something that kind of fits the vibe. Let's do something like this because it's kind of shiny.
+
+It's got a little shiny look to it. Still got similar colors, but maybe this will bring a little like chromium into the mix. You know what I mean?
+
+So I'm just going to copy that SREF code and I'm going to paste it in. I don't need to do the double SREF. I just need to make sure there's a space here.
+
+So now I got style number one, which is this style, blending with this new style that I just added into the mix with this illustration of a prompt or illustration of a draft prompt, right? So I can run this now and I'm blending those two and we're going to see how this turns out. And the name of the game is, again, it's balance, it's harmony, but it's also like visually analyzing your results and deciding, is that actually what I want?
+
+Is that doing the thing that I need? You know, what else could I bring into the mix to make this even more interesting? And you could start to explore and play with the different weights, the different values to get to a desired outcome, right?
+
+And what do we got here? These are looking kind of sweet. Yeah, dude.
+
+To me, that looks like those new sets. Like this is a children's book. That is a cover of a children's book.
+
+100%. It would work, right? Yeah.
+
+We can give them a name. Yeah. Fall in love with this guy.
+
+And like, we can, what I like to do when I find something that's interesting is I kind of like to, I like to explore parameter values. I want to kind of explode out this aesthetic mix into a few different directions and see which way I lean. So there's a couple ways that you can do that.
+
+You can do that by adding more information to your text prompt and that'll add more for Midjourney to kind of like chew on, right? Right now we have it super simple. Illustration of a draft.
+
+So there's a lot that's left unsaid. We can detail this out if we wanted to. But I'm just going to keep it simple for the time being.
+
+I want the randomness that Midjourney brings into the equation here. But maybe we play with the balance of these different values, right? This first part, this was that more illustrative one that we had down here.
+
+And then this other one brought something else into the mix. Let's first actually run that other one by itself so we can see how it's interpreted solo. And then that should give us a little bit more of a clue as to like how these two are blending together here in the middle, right?
+
+Right. So interesting. It's like a totally different universe, right?
+
+It's kind of bringing in some of those more shiny textures. But it's definitely a little bit far off from maybe what we had here. But the blended result is really interesting still.
+
+So we can kind of play with this. I'm going to take this blended result and I want to get maybe let's try changing the weight of that more illustrative one. I'm going to use this syntax here, this double colon.
+
+By putting this double colon here at the end. Let me zoom in a little bit more. So we got our style reference and then immediately that double colon with the number.
+
+I'm essentially saying I want two parts of this style and one part of this style. So I can run that and then I can even, I can flip it. So I can say I want one part of that style and let's do two parts of this style.
+
+And I could run this little experiment here and see which I like more. And these are kind of like the important little things that you could do once you kind of find a mix is you're trying to get a sense of why things are happening the way they're happening. Right?
+
+We don't want to play the slot machine game. I want to be able to direct it more specifically. Yeah, I guess that's always been my my issue with playing with mid journey is I felt like I was playing the slot machine.
+
+Like that I was just I was trying to get it to do something and of course I wanted a a bar bar bar to get, you know or jackpot jackpot jackpot to get that jackpot. But dude, it was just like give me a triple seven and I what's cool about this is I've never thought about it like this. I never thought about it.
+
+It really does bring new meaning to the expression steal like an artist. Totally. Right?
+
+Totally. I love like I think of mid journey as like a new medium entirely. Right?
+
+Like it's a different type of canvas. It's a different way of problem solving. You have not just paint but you have like entire aesthetics that have all of these layers and this complexity and you're blending them and you're balancing them and you're finding this harmony in between to get somewhere that you really love.
+
+And once you get that once you find that little recipe you can infinitely prompt into it. Right? You can start to mash things together.
+
+You can do so much once you're in that world but you actually can build up that world and you have a lot more control over the aesthetic direction of that world than one usually would think in these AI tools because we're no longer confined by the interpretation of text by the model. Right? That is super limiting because every time I prompt a certain word I'm always going to get a certain look but visuals are much more complex.
+
+Right? They can't be put in this semantic box. Picture's worth a thousand words.
+
+Right? So you can only get so far with text prompting. This is where you really start to get into the weeds here and do the cool shit that you just can't do literally anywhere else.
+
+It's just like a whole new way of blending. You know? It's awesome.
+
+And like even here I'm liking this style the most I think. I think these are really sick. Yeah.
+
+So like I have a good sense of like what's doing what in this case with these little balances here. Right? Like this more illustrative look versus this other here.
+
+And I think I kind of like it balanced. I want to add my personalization into the mix. Just another aesthetic lever that I can play with.
+
+Give it a little run. Right? And I'm just tossing into the mix.
+
+Seeing how it how it fits. Things are getting a little bit darker. Right?
+
+But it might be a little bit more my style. Yeah. I was just going to say like that has Nick St.
+
+Pierre written all over it. That's right. It's because it's all it's trained on me baby.
+
+It's trained on me. And if I wanted more of that I have a lever to pull. I have that stylized lever.
+
+I can pull it up a little bit. And now I'm I'm increasing the level of personalization. And that's getting balanced with the style references which are getting balanced with my text prompt.
+
+Right? So I'm starting to push it in the directions that I want to head in. And even something like this right?
+
+I could lower the style weight so I can say maybe I want my style references to have less of a of a impact. I want to give the text prompt and my personalization more room to breathe. Well I can I can drop that style weight from 100 to say 50.
+
+And something I like to do especially with these parameter values is use a permutation prompt which is where you can put things in brackets and separate it by commas and just kind of run a bunch of stuff at once. So I kind of go in here and I like to do a little permutation prompt like this. And then when I run it now I just ran all of those values in one go and I'll be able to quickly get a visual figure out where I actually like want to play in like where what level is the best for me and then I can like dig deeper into that.
+
+Right? So we got our style weight that we're testing here at various levels. And notice how when our style weight dips below that default of 100 we're starting to end up in like different territory.
+
+Right? It's changing the aesthetic. But as we go up higher and higher it's becoming more more my vibe.
+
+And I think I kind of like it. I like the I like the style weight a little heavier in these. These are these are sick.
+
+Like this guy? Let's take a step back. This is if you saw this at the MoMA like in a frame and someone was like this is a $10 million piece of art by I don't know Van Gogh or something you'd be like okay.
+
+You'd believe it. Let's put it in a frame at the MoMA. This is actually a good little segue into the editor.
+
+All right? So we'll go to the editor here. Let's adjust the aspect ratio.
+
+We'll go 16 by 9. Let's make this a little smaller. Let's kind of put it over here and let's say a let's change the prompt.
+
+Let's say a framed illustration of a giraffe against a white gallery wall. The floor is made of or the gallery floor let's say the gallery floor is made of light pine wood. All right.
+
+Let's run that. Let's see what happens. And let's let's actually remove these srefs here.
+
+So this is an important note. So I'm editing the prompt right. I'm filling in all this new space.
+
+We don't know what's going to happen here. But I actually want to get rid of these srefs because I don't want the style to be to be this style. Right.
+
+I want the style to be just like a more regular style and more traditional style. All right. So let's go and let's even put like photo of and I'll even drop like style raw which leans a little bit more photorealistic.
+
+Let's try this out and see how it does. So here it's like it was kind of trying but we had those style references up. So we were kind of fighting against our prompt in a sense.
+
+But when we removed them see now we're starting to get somewhere. Damn. Now we're starting to get somewhere.
+
+Maybe we need to make it a little bit smaller. Let's go back into the editor. Maybe this guy needs to be a little bit smaller so that he's not leaning on the floor.
+
+And let's run this again. See if we get something better. Maybe we can even expand this up a little.
+
+But I want to make sure that that floor has room to come in. Let's try a couple of these. There we go.
+
+Now we're cooking. Now we're at the moment baby. Yeah.
+
+You know what? I'm going to do something fun. I've got a friend of mine in the lobby right now for my next podcast.
+
+Let's bring him in here. Get him in here. All right.
+
+He's in here. He has no idea this is happening. What's happening?
+
+Introduce yourself. What's up man? How are you guys?
+
+Hey Nick. Nice to meet you. Nice to meet you too, man.
+
+We're just prompting over here. What's up with you? Not much.
+
+Excited to do this podcast. I've been you know, it actually you know, it's a good reminder that I should I went on this walk. I took my dog on a long walk and I was like, hey, I have this podcast coming up on Monday.
+
+I should think more creatively about like problems that I have that there should be solutions to. So it made for a nice walk for her because you're just walking around the West Side Highway here in New York for two hours just thinking about cool stuff. Who?
+
+You and your dog? Yeah, just me and my dog going on a long walk and just thinking about things to build. What was your pup's ideas?
+
+Any good ideas? You know, I wish she contributed. She didn't contribute much.
+
+It was mostly just me. So I like going on long walks. It's hard to do this in New York City where there's constant traffic.
+
+West Side Highway though is beautiful. I'm in New York myself and I hop on a city bike and I cruise up and down West Side Highway. It's like that's my free time to think.
+
+Yep. Exactly. So I live right on the West Side Highway so I just walk south and then I'll just do a giant loop and then I'll come back up.
+
+But yeah, it was a perfect weekend for just kind of idea brainstorming. So excited to jam with you guys. Sorry to interrupt.
+
+I have one, so just have one question for you and then we're going to go into our own separate pod. But this is, Nick has been cooking up a funky giraffe on Mid Journey. My perspective on Mid Journey up until this last hour has been that it's crappy kind of like, it's not real art.
+
+You're a designer. You were a co-founder of Loom. You helped design Loom, sold for like a billion dollars or something.
+
+And when you look at this giraffe, is this not a beautiful giraffe? I mean, it looks like something I would see in MoMA. Oh my God.
+
+Are you serious? Like I, I, honest to God, if you printed a million of these and just had a exhibit in MoMA, I don't think anyone would ever guess that it was made using AI. Dude, I literally just said that.
+
+He just said that. I just, I just ran 40 of them because now I need to see all the best ones. So just to, I'll kind of end on this.
+
+We've been kind of just fussing around for a little bit here. Want to, want to see the journey that we went on? Yes.
+
+Went on a little bit of journey. So we started down here. We started down here with.
+
+Okay. Starts with dogs. It started with, well, actually it did start with a giraffe.
+
+It did start with a giraffe. We've been, we've been keeping true to the giraffe, but we were using one of these posters that, that Greg had curated for, as a style reference. And then we just were playing with that a little bit, taking a look at the different little aesthetic levers that we could pull on, showcasing some of the differences between personalization of the model versus the default model.
+
+And then we just started exploring these S-ref codes. We went over into my little tool here and we started searching by Vibe. What did we search for?
+
+I think it was Paper Cutout, right? Yep. Paper Cutout Vibe.
+
+And we were just kind of scrolling through until we found something that was, that was interesting. I don't know which one it was exactly. But it was something in here.
+
+This gallery of artwork is all created by the community presumably? So, oh, this was the one that we used. It was all mined.
+
+So I go through, there's like two to the 32nd power of these style references, these S-ref codes. And each kind of is like coordinates to its own little aesthetic universe. And so whenever you add them to your prompt, anything that you prompt is going to be influenced by the aesthetics of that universe.
+
+And so we were playing with these and getting some cool results. We were getting some of these results. And then we were going back and blending a couple others.
+
+So we were searching for like glazed ceramic and trying to find some other vibes that we can bring into the mix. And we ended up bringing in this one, this S-ref code. So we're just kind of like visually exploring and just trying to find things that we feel fit, that feel cool.
+
+Right? And when we blended those, we ended up here and we're like, okay, we're on to something. These are kind of sick.
+
+Right? And then we were just kind of like exploring what each of them does individually, playing with different weights to kind of see what they do at different values. And then I turned on my personalization, which is like the model tuned to my aesthetic preferences based on my image ratings.
+
+And then we were upping like the heavy handedness, the influence of that personalization. How much do we want my preferences to kind of like influence the image generation? And these are those higher levels.
+
+So this is like that blend of those two codes, that blend of those aesthetics, mixed with this illustration text prompt. and then my personalization turned up to 500 and then the style weight, so the influence of those SREF codes turned all the way up. And we ended up in these really cool little space here.
+
+And then this is, I just ran 40 of them, so you can just go through them. It's art. I should put them back here.
+
+So this is what, I'll kind of leave you guys with this. So something that I'm working on is physically manifesting latent space. This is the idea here.
+
+So we're building a lab downstairs here in Redhook in partnership with Pioneer Works. And we're essentially trying to create a space for people to come and learn how to use these tools at a deep level, not just mid-journey, but all of the creative AI tools, but also equipment so that they can bring it to life. So it's not just existing digitally, but we got robots that are learning to paint.
+
+We got robots that are learning to play music. We have big printers, 3D printers, plotter printers, big editing stations where people can bring these into image to video models, start bringing them to life, making them move, and put together these really interesting pieces. So in the very near future, what I'll probably be doing, I think I have to do it now with this giraffe.
+
+Let me make sure I like the giraffe so I don't lose him. Let's make sure I like this guy. Okay, we got him liked.
+
+We're going to paint this on a big canvas. And then we'll actually go and get in the MoMA. That's the new goal.
+
+Now we got to get this giraffe in New York MoMA. I'll take SF MoMA. I'll take any MoMA.
+
+Literally, please, donation. Nick, this has exceeded my expectations, and my expectations, to be honest, were pretty damn high. So thank you for coming on and teaching us how to make Van Gogh level giraffes on the fly.
+
+I actually think this is going to change a lot of people's lives and make them happier and wealthier just through this process. Besides going to Red Hook in the near future, where could people get to know you better? Twitter.
+
+Twitter. I do a course on this stuff. Everything we went through is the introduction to a much deeper course that I go through over on Maven, which you can check out if you feel inclined.
+
+I'm posting on Twitter. Mostly I've been playing Bob the Builder, dude. I'm just trying to get this lab up and running.
+
+I'm doing Ikea runs. I'm over here hanging paintings and moving shit from point A to point B. I can't wait for it to be done so that we can get back to cooking.
+
+It's been six weeks of just physical labor. I miss my computer. I miss my canvas.
+
+We're getting back to it. Definitely come by Redhead. Are you in New York too, Greg?
+
+I'm in Miami, but I heard New York is a suburb of Miami or the other way around. Close enough. Then Shahid, come by.
+
+I'm going to text Greg an invite to a show that we're doing at Pioneer Works in two days so that you can come. Yeah. I'd love to.
+
+Cool. All right. That's Todd.
+
+Nick. Later.

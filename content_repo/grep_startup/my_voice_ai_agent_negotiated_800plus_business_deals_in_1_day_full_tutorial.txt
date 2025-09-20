@@ -1,0 +1,231 @@
+I brought in my main automation man's, Tony, who works with SLA Checkout. Tony, what are we going to learn today? I'm going to tell you the story of the time that I made a voice AI that low-balled every single luxury watch dealer in the U.S.
+
+for a Rolex Daytona. That's a $35,000 watch. And it actually kind of worked.
+
+Are you the seller with the Rolex Daytona? I'm responding. Which Rolex Daytona?
+
+Which Rolex Daytona do you have for sale? Brand new, box and papers. Got it.
+
+What's your asking price for the Daytona? $60,000. Boom.
+
+First actual offer. And why should people even care about that? Because I think people are drastically underestimating what voice AIs are capable of.
+
+Basically, it's my belief that any work that you do that's over the phone could and may get automated in the next one to three years. Cool. And you're going to show us all the tools you use, some of the workflows, maybe even some prompts.
+
+You're not going to hold back on sauce, are you? No, no, no. I've got so much sauce for anybody who will listen.
+
+Okay, cool. All right. Let's see what you got.
+
+Okay. So this is my voice AI, which I have dubbed lovingly Lowballer9000. His name is Alex.
+
+I like to give my AIs names because it helps me remember who they are in my head. And his job is basically to do one thing. He is looking for a Rolex Daytona, and he knows that he's talking to luxury watch dealers.
+
+He needs to do a few things. He has to gather some critical details, which are like, hey, what's the condition of the watch in? Do you have all of the original documentation and the packaging for the watch?
+
+These are like kind of important details that you need to have when negotiating a watch because they can like dramatically impact the quoted cost of the watch. Now, to be precise, we're not really calling like Rolex the like factory dealer. We're calling secondhand dealers.
+
+So when I say luxury dealers, I don't mean like Rolex official USA in like Rodeo Drive. I mean like the guy who buys the secondhand Rolexes in like some spot out in Miami or something. Like these are the people that I'm targeting.
+
+And this is the platform that I'm using to do all of this. This is Vappy. I think literally Vappy just amounts to voice API, and it's basically a very flexible way to build voice agents.
+
+They don't lock you into anything proprietary. It's simply just bring your prompt, pick your providers for your different services, and then literally hit go and run it. And for the prompt, is this something that you wrote yourself?
+
+Or is this something that you prompted like a chat GPT to be like, hey, this is what I'm trying to do. Like, how do I structure this? The prompt is something that I wrote myself, but also...
+
+So like, okay, Vappy has some documentation, which may have changed by now, which is like, here are some general best practices for building a prompt. But I think like, this is a tricky question, because a lot of what my prompt is doing is reacting to sort of my tests that I conduct. So like, my general process has been, let's watch people, lowball, like watch sellers, IRL.
+
+So there's a couple of content creators who I like who do this. And then I just try to like, put those, simulate those conversations with Vappy, with Alex. And then what will happen is like, Alex will respond in a way that I don't like.
+
+For example, like a lot of the times when we would start the call, start the conversation, Alex would just ram every single question I had, like down my throat within the first turn. And so I was like, ah, this is like, you know, so not engaging. It's so obviously AI.
+
+Like I need to make sure it doesn't do that. So a lot of what I would do would be, okay, where am I prompt? Can I tell it to just, you know, say one thing at a time?
+
+And I think there's probably something in here. Yeah. Like keep concise, keep responses concise.
+
+One to two sentences max. So it would just like, if you think about it, it's like, if you're on a boat and your boat has like a bunch of holes and you're slowly sinking, all I'm doing is like going in and patching the holes as I'm finding it. That was sort of my approach with the prompt, but it's, it's a mix of both to answer your question.
+
+Cool. I mean, it also makes sense that you're keeping the sentences super short and clear because you don't want, you don't want Vappy to mess up. Yeah.
+
+Yeah. That's, that's a big deal. Also, also in terms of, uh, while we're talking about sauce, I don't know where it is in my, in here, but just something general that I learned is that most conversations happen at like a sixth grade English level.
+
+Um, I think this is just true across, I don't know, every single interaction you can possibly, or most human interactions over a phone. So I remember when I changed the prompt to say like, only use like sixth grade English, I got way longer call durations. I don't have like super precise metrics, but I remember, I remember talking to it and being like, oh, this sounds so much more human.
+
+Um, and from a model perspective, I see you have Gemini two Oh flash. Like how, how should people think about which model they should use? Um, the model is, is really dependent.
+
+So I feel like a lot of what we, a lot of the model game now is very like flavor of the month. Um, in my video, I actually ended up using deep seek before deep seek had its whole big hype cycle, um, which was good and bad. I saved money for the calls that I wore, was able to place, but because we went through that whole hype cycle, my bot just crashed.
+
+It just wasn't making any calls or like people would call in and, uh, they would say things to my bot and then my bot would just not respond. Hey, I'm calling about a watch. Do you have a second?
+
+Yeah. Yes. Hello.
+
+Hello. Thanks for calling. Robert Jewelers.
+
+How may I help you out? Jules in time. This is Alex speaking.
+
+Hello. Jules in time. Hello.
+
+Yes. How can I help you? Prestige time install.
+
+Speaking. Can I help you? Hello.
+
+Good afternoon. Baker time. This is Alex speaking.
+
+How can we help you today? Quick break in the pod to tell you a little bit about startup empire. So startup empire is my private membership where it's a bunch of people like me, like you who want to build out their startup ideas.
+
+Uh, now they're looking for content to help accelerate that. They're looking for potential co-founders. They're looking for, uh, tutorials from people like me to come in and tell them, how do you do email marketing?
+
+How do you build an audience? How do you go viral on Twitter? All these different things.
+
+That's exactly what startup empire is. And it's for people who want to start a startup, but are looking for ideas, or it's for people who have a startup, but just, they're not seeing the traction, uh, that they need. So you can check out the link to startup empire.co in the description.
+
+And that was because, uh, deep seeks API was just so slammed. It just literally did not respond to my request. So pick one that's available.
+
+And what does temperature mean? I see it says one temperature one. Yeah.
+
+So temperature is like, how creative do you want his responses to be? So like, if you want a borderline deterministic system, like a system that you can sort of, uh, predict really easily, you would put the temperature closer to zero. Okay.
+
+Um, but then what ends up happening is like, if someone asks a question that isn't like very common, it won't know how to respond and it'll just pick like a response that isn't appropriate at all. Okay. And so this is the system prompt.
+
+This is where you, you know, configure which model you use. Um, where do you pick which voice you use? Cause I know you use like some sopranos, some sopranos voice.
+
+Mm-hmm. Mm-hmm. So right here under voice, you have the voice configuration.
+
+And, uh, I think in this scenario, I'm using Cartesia, although you have, you know, all of the super popular ones here, but Cartesia and New York man is what they're calling him. Shots fired. Yeah.
+
+Definitely not a reference to any sort of fictional character. That's very popular on a very specific TV show. But are you the seller with the Rolex Daytona?
+
+I'm responding. Which Rolex Daytona? Which Rolex Daytona do you have for sale?
+
+Brand new box and papers. Got it. I love the Italian accent.
+
+Right. It should be New Jersey, man. Cause I think the Sopranos were in New Jersey.
+
+Perhaps, perhaps these are all alleged allegations. Um, so what else do people need to know about Vappy in terms of like setting it up? And yeah, what else is there to know?
+
+Okay. I would say probably the most powerful part of Vappy, uh, exists in the tool calls. So tool calling, I don't know if how many of your audience is like familiar, but basically like a voice AI becomes really powerful when it can interact with your existing tools.
+
+So like, for example, I need a way to record all of the calls. So I'm going to share a different tab with you instead. So this is my watch list.
+
+Essentially, it's a database that has every single call my AI has placed. Um, the reason for this is because I don't want to have to sift through over 800 calls and figure out which calls like actually resulted in something actionable. I want my system to tell me like, here are the calls that we actually like got an offer on.
+
+So I, uh, what I did was I created a tool call that basically says, Hey, once a conversation is done, take the entire transcript and tell me whether or not we actually got an offer from them. So did they even engage with our bot and did we lowball them? And if we did, how much did we lowball them for?
+
+And did they accept our lowball? And if they didn't accept our lowball, did they at least give us a little bit of a call? And if we did, how much did we lowball them for?
+
+And did they accept our lowball? And if they didn't accept our lowball, did they at least give us another price? And was that price the final price?
+
+So as you can see here in this spreadsheet that I have, these are all of the calls that resulted in an offer that they gave us. Uh, and then whether or not they accepted or whether or not we got them down to their absolute lowest price. So this made it super easy to sift through my 800 calls.
+
+And find the calls that actually resulted in something that I could use in my content. Cool. And to tie a knot in that, the way I was able to do this is right here in the tool section, you basically create a tool.
+
+I think what I use was get best offer, which was talk to my air table spreadsheet, get the best offer we have, and then use it in the negotiation. And I see send to Lindy over there. Where, where do you see that?
+
+My tools under tools. Oh yeah. Yeah.
+
+What were you doing there? I think this is a different, I think this is for a different automation, but I, I definitely, um, yeah, I definitely have this LinkedIn with Lindy in some other, in some other voice AI. Yeah.
+
+I'm just wondering, I'm trying to give people a sense of like, okay, how could you kind of marry like a, a Vappy plus a Lindy? Hmm. Okay.
+
+I think what Lindy is really good at is flexibly taking big amounts of text and putting it into a spreadsheet. I think what like Lindy does really well. Let me just like navigate to Lindy and try to give as concise of a demonstration as I can.
+
+But like, you know, when you have like a spreadsheet and you have like, let's say five columns. And let's say you're just like trying to do your homework on like restaurants in a new city you're going to. Um, and then like halfway through your research, you're like, oh my God, I totally forgot my like wife is vegan.
+
+So I have to like specify, uh, which of the restaurants are vegan friendly. So rather, so if you have a Lindy that does this rather, or let's say it's a make automation or some classical non Lindy automation. You gotta go, you gotta log back in.
+
+You gotta add that column to your automation. And then you have to write new rules. So it's like, okay, if there's vegan options on the menu, make sure this is checked.
+
+Lindy does that for you automatically. Lindy will read the name of your column, like vegan friendly, and then it'll take the contents of everything that you're giving it. Maybe it's like a website scrape or like a menu.
+
+And then it'll be like, oh yeah, the salad, the non Caesar salad, the Mediterranean salad, sans feta, that's vegan friendly. And it'll automatically check that for you. You don't have to do anything.
+
+You don't have to log back in. You just add that column into your spreadsheet. You're done.
+
+Um, so I think I rambled there, but that's, that's what is possible. Cool. Lindy and Vappy.
+
+Cool. Yeah, that makes sense. That makes a lot of sense.
+
+What else do people need to know if they want to bug a bunch of secondhand used watch dealers or is this it? What else do they have to know? Oh man, these guys are not always the most friendly dudes.
+
+Um, no, I mean, from like a tool perspective, from a tools perspective. Oh man. Oh, um, yes.
+
+Twilio. So I think probably the biggest bottleneck I had, the biggest like hurdle that I had to clear was getting my calls to actually ring the phones. So there is something called the shaken and stir, which is like, um, I think it's an FCC mechanism, um, enforcement, a rule that they have that basically says, Hey, if you don't register your phone in our database so that we can do like essentially KYC, we're just like any calls you make out of this number, we're just not going to honor.
+
+They're going to go straight to voicemail. Um, so make sure that you bring your own number, make sure that you've done your KYC and then start placing calls. Cause I think I had at least 300 calls go out that just straight up went to voicemail.
+
+And could you end like, this was a really cool, like this, this actually was an aha moment for me around like what's possible with voice AI, like right now. Can you end, I'd love to just end on this idea around like, okay, like cute, cute demo, but like what else could, you know, the average startup founder or person who wants to like build a business, make money online? Like what's, what are some interesting things that they can do besides this off the top of your head?
+
+Like, what are some of the, the average use cases, rattle off some use cases. Okay. Most obvious one sales.
+
+Let's say you work in real estate and you have to call. People on a prospect list to like, see, uh, whether or not, I don't know, like someone in their family has like recently passed or if their house is like going on the market soon. So easy.
+
+Just say like, just make a prompt. That's like, Hey, ask these three questions that we know, uh, the answers to, I mean, not for the prospect, but if they answer this way, we know that the house has a, this percent chance, more likely possibility to appear on the market in the next six months. I'm sure someone has that, uh, criteria and that data to make that insight.
+
+And then you just take that turned into a prompt call like 30,000 numbers and you will have people on that list who meet your criteria, who you can then pursue. Um, that, okay. That's one, uh, here, here's, here's a framework for thinking about how I would, I would use something like this.
+
+So I think that, um, building VAPI AI voice agents is great to get, uh, data where it's basically just a great way to get data. It's a really great way to get data to give you an unfair advantage. So what you did with, um, the secondhand watches was like, you can create an arbitrage business around that, right?
+
+Like if you're like, there's literally thousands of dollars of, of, of arbitrage that you can be doing. So the question is what are other businesses? And this is something that you can literally prompt like a chat GPT, but like, what are other businesses where getting data allows you to do some arbitrage?
+
+And I just think you can literally go one by one. And if people are interested in maybe I can do a, for another tutorial on, on like what voice AI agents business ideas are, but like ones that require, like if data is an unfair advantage, if, if knowledge is an unfair advantage and knowing something more than your competitor, then chances are that there's a voice AI opportunity there. Yeah.
+
+Am I wrong on that? Yeah. That's a good way to look at it.
+
+No, I don't think you're wrong in that. Cause I think when you asked me the first time, like, what would you teach people if you had the opportunity? That's kind of what I was trying to tell you.
+
+I was like, I think this voice AI like can create a more transparent second market, secondary market. Um, whether like what sort of businesses you can make off of that, I think are really up to people who are deeply entrenched in those businesses. Uh, it's like, I'm blanking because I'm being put on the spot, but like, you're right.
+
+Anything that's arbitrage. I mean, that's essentially what I'm demonstrating here, right? Is like, go buy this watch for $19,000 from this one person that you heard me talk to, and then go on the secondary market and sell it for like 22 and make like three grand or yeah, three grand.
+
+And then do that at scale. Yeah. And then do that at scale.
+
+And then like, you know, just, you can automate this even further. Like every time someone gives you that offer, just like dispatch a team to go pick it up. Yeah.
+
+What do you, what are you people doing listening to us? Yeah. Just go.
+
+Um, Tony, uh, thank you for coming on. I appreciate you. Of course.
+
+Um, for people who don't know Tony, uh, I've included his social, his socials, where to find him, follow his journey. His YouTube is awesome. Uh, that's in the show notes.
+
+He also does, you know, thankfully he comes and he does, um, you do demos within startup empire. Don't you? Yeah.
+
+Uh, very active on startup empire. I am on the core team. As you know, I was, you know, built a lot of the automations that make it possible.
+
+Uh, do a lot of content in there whenever I can. What do you, what are some things that you've, you've taught in startup empire? Um, I did a, I did a breakdown of how I built our feedback bot.
+
+So we have another voice AI that basically collects feedback from people who are in startup empire. So like my big insight was like, I hate having to fill out a feedback form every time I'm like leaving a community. It's just like too much work and I have too much to say, but like, it's fine if I want to just brain dump, but like no one will listen to me brain dump.
+
+So wait, why don't I just make a voice AI to like, listen to someone brain dump or listen to people who are leaving startup empire brain dump or people who are happy with startup empire brain dump. And then we can take that information and categorize it and classify it and use it to like improve the service. Which is crazy.
+
+Which is crazy. So there's a slack. So for people who don't know, startup empires are private membership, uh, for people who want to build cash flowing internet businesses.
+
+There's, we have a slack, uh, channel where, uh, it, I don't know how it does it. I'm curious, Tony, actually, we've never spoken about this, but basically it posts the feedback that people are, they're calling this, like call it a 1 800 number. It's not a 1 800 number, it's not a 100 number, this number they're calling this number.
+
+And they're like, I love startup empire. I learned these two, three, two, three things, two or three things I really liked, or I hate startup empire. And I wish you would do this better.
+
+And it posts to our slack and it summarizes it. It's insane. So then as like me, as someone who wants to make sure to add value to this product, um, it's so amazing.
+
+Right. Yeah. We get, we get our feet.
+
+We don't have to go anywhere to get our feedback. It comes to us. We get to see it.
+
+It's a, it's in the same channel as like our subscription notifications. It's yeah, it's nice. I think that's actually a Lindy.
+
+That's Lindy, right? Yeah. I think that's Lindy.
+
+And by the way, like someone, here's a free business idea. Go do that for other companies. Every company would pay for that.
+
+We should do that, dude. We should do that. Sure.
+
+Actually, you know what? Think about it. Like for $300 a month, we'll come and we'll set up, set this up for you and we'll do the Slack, uh, bot and we'll manage it for you and we'll send you these pretty reports every single week.
+
+Oh yeah. I, is that it? End of sentence?
+
+Sure. End of sentence. Let's go.
+
+All right. Um, Tony, thanks again. It's been real and, uh, give some love, give some love to Tony and, uh, yeah, give some love to Tony so that more people see his face.
+
+Um, go watch the YouTube video if you haven't already. Go watch YouTube videos. He has multiple and, um, actually just one for now, but there will soon be multiple.
+
+Multiple and, uh, I'll see you around. All right. See you later, Greg.
+
+See you later, Greg.

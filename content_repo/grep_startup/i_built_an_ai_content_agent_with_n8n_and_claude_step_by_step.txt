@@ -1,0 +1,215 @@
+What if you can automate your marketing team with AI agents and just have content on autopilot? I know it sounds like it's out of the future and I was skeptical too, but I had Mr. Vibe Marketing on the pod again to break down and share his entire N8N workflow with how to create content on autopilot that actually gets likes and comments.
+
+So, you know, in this episode, he gives away all the sauce. Then at the end, he actually gives away all his prompts and his template for doing it. God bless him.
+
+Like this video right now on YouTube. Comment because this is an incredible episode where you'll learn how to become a Vibe Marketer and start automating and running your business on autopilot. Enjoy the episode.
+
+We got the boring marketer, Mr. Vibe Marketing back on the podcast. He's going to teach us a workflow today.
+
+What are we going to learn? Today, we're going to learn some basics of how to use N8N. We're going to find some data around a niche or a topic.
+
+We're going to feed that into some really smart LLMs. And then we're going to produce some content and even automatically publish it on a platform. So you're going to see an end to end automation that hopefully is going to save you somewhere around 10 to 15 hours a week.
+
+And is it really going to save me 10 to 15 hours a week? Or are you just saying that? It's saving me time.
+
+So in this use case, I'm going to show you a LinkedIn workflow. I spend most of my time on X and I actually hate creating content for LinkedIn. So, you know, as much as I can use AI to help me with that process, I try to do that.
+
+And we'll see. We'll see how it works. Okay.
+
+And if I actually use this workflow, what is the potential outcome of that? Like, why should I even care about this? Yeah.
+
+The outcome is that you're going to be able to test content angles, hooks, and topics way faster. So instead of like going, getting a subpar result just from opening up Claude or ChatGPT, this is going to get a lot of context, a lot of information, and it's going to create top performing content based off of that. It's even going to create an image for you and it's going to post automatically.
+
+Now, oftentimes AI isn't quite there to just push a button and go end to end and post for you. I recommend doing that to test things out. I've heard you talk about this a little bit too.
+
+Sometimes you'll throw out a tweet, you'll see if it catches, or you'll even use like maybe a secret account and then you'll delete it. So I'll do the same thing. I've been doing that actually for the past couple hours on LinkedIn.
+
+So you'll be able to test, you'll be able to refine, but I threw in a step here so that if you want, you can actually edit the content before you put it live as well. All right. Let's rock.
+
+All right. So I have this color coded here so that we can separate this out in stages. And again, I want to try to give people some actionable tips so that they can go and build a workflow.
+
+And I'm also going to give away the code for this workflow so that people can go and download it after they watch the show. They can upload it in the InnateIn and have a really nice starting template to go and make their own. So let's dig right in.
+
+So basically what I have here is a whole area that's going to analyze YouTube and X for different topics. So what I will do is open up a chat down at the bottom of the screen here, if you see that. And all I need to do actually is I just need to enter in a topic.
+
+So we're talking about InnateIn today. I post some content on that as well. So let's just put InnateIn.
+
+So it takes that keyword essentially. And now what it's doing is it's going over to YouTube and it's scraping the top videos on YouTube for my topic. So it's going out there and finding, you know, 20 to 30 videos that have a high degree of engagement.
+
+It's also doing the same thing on X. It's actually going to my account. It's looking for posts around workflow automation and AI.
+
+So right now it's processing this. And what it's going to do after it finds YouTube videos and posts on X about InnateIn is it's going to actually watch all the videos and transcribe those for me. So I'm going to have all the content from the top YouTube videos around InnateIn.
+
+And then I'm going to have a number of topics from X as well. And you're using Appify, right? I'm using Appify.
+
+Yeah. So Appify is an awesome platform. Basically, if you want to go and scrape anything on the internet, you want to scrape Instagram, you want to scrape Amazon, you want to scrape TikTok, you want to scrape YouTube or X, they have like open sort of APIs that you can access within Appify and plug them into your workflow to go and process that data.
+
+So that's what these HTTP requests are. Basically, they're just calling that Appify API. And in this one, I picked a YouTube one and have a couple instructions in there.
+
+And then this one, I have one for X as well. Okay, so it's scraping right now. And then what it's going to do is it's going to put all this data together in essentially one big text block.
+
+So it's going to have a bunch of transcribed YouTube videos with the hooks, the titles, the content, and it's going to have some X posts as well. So it's going to bring all those together and merge them into basically one big block of text. So this is kind of my research phase here.
+
+I'm just kind of going out and I'm making sure I have enough context to go and feed my LLMs in the next step. So whatever niche, go ahead. Which by the way, this is the step that any savvy content creator is going to take when they're creating content, right?
+
+They're going to see what else is out there. How are people positioning it? And where's my opportunity?
+
+Yeah, that's right. And to do this research manually, you would have to spend like 24 seven online. If you want to unplug and actually have a life, it makes sense to have like robots and AI doing this stuff for you.
+
+So yeah, I mean, like instead of starting from scratch or whatever, go and find things that are already performing and, you know, doing that for content, that's similar to doing things like trying to create a startup idea or something like that too. You know, you want to find things that are already working so you can sort of shortcut that and take those learnings and make it your own. Okay.
+
+So after we get all of this data from YouTube and X, we're going to do another step here. So we've got this big block of text that includes all that video information and stuff. And now I have an agent and this is a content idea generator and it plugs into an open AI, LLM.
+
+And what it's going to do is it's going to go and look at that big block of text. It's doing it right now. And it's going to scan through there and it's going to find fresh angles and content ideas for us that aren't just replicating what we researched.
+
+So I don't want to go and just like copy people's content. I just want to use that as inspiration and then come up with my own ideas. So that's what this step right here is doing.
+
+And when you say come up with your own ideas, you mean AI coming up with the ideas for you. Yeah, that's right. So in here, that's right.
+
+To be clear, you don't want to do anything. You want to set up the workflow. Yes.
+
+And hang out on the beach. In true vibe marketer fashion. That's exactly what I'm doing.
+
+Yeah. So I have a prompt in here. I'm just saying like using all of this content that I'm giving you, create a list of actionable content ideas that are strictly related to marketing.
+
+So if you remember my keyword that I entered in the chat was innate in. Now that could include a lot of stuff. It could include things on like automating email replies or sales tasks or whatever.
+
+So I want to look at those, but then I want to extract ideas for marketing for how I can kind of repurpose that and come up with some fresh angles. So here, you know, for a title, I want it to be short and clear. When it comes up with a content idea, I want to have a scroll stopping idea for my hook to pull people in.
+
+And then I want it to suggest like the optimal format for this content. And then it needs to come up with an angle as well. So it needs to have like a unique point of view around how marketers can scale their efforts using AI and leveraging innate in for their workflows.
+
+A few other instructions. So avoid like too much technical jargon and technical topics. I'm kind of framing like who this content is for, for the AI to come up with some ideas for my audience specifically.
+
+And you know, it's kind of going through and it's also looking at sort of my top performing expos so that it can identify how I'm talking, what sort of themes I'm using and stuff like that. So combining all this is going to give us a really powerful data set to go and create the right type of content for my audience. And did you come up with this yourself?
+
+Yeah. Like all these prompts and stuff. Yeah.
+
+Yeah. So I'll come up with like, you know, an initial prompt and then I'll take it and I'll go over to like ChatGPT or Manus or Claude and I'll say, Hey, improve this prompt. Here's what I want to achieve.
+
+And then I'll place in like some examples of content that I want this entire workflow to kind of create. So this goes back to like, you know, two, two things that I always talk about with AI. It's like know what questions to ask and know what good looks like.
+
+So if you have sort of a baseline prompt, you can go and use AI to improve your prompt, which is a step that I often use for all of these different types of agent nodes here. It did that. Looks like it came up with the ideas and the background.
+
+And then once I have the ideas, you know, something that often resonates on social is having some specific like facts, trends, and sources to back up the claims. I also don't want the model to completely like hallucinate and just come up with like random stuff that doesn't make any sense. So in this step, I have a research agent and I'm using perplexity here to go out and find some use cases that people have actually talked about with some real stats.
+
+I'm identifying some trends and insights, marketing use cases, ideas that are happening in the industry, stats, frameworks, or case studies that we can reference, popular opinions. So I'm just getting as much data as I can around these marketing angles with workflow automation and AI so that I can feed them into my content agent. Makes sense.
+
+I mean, I'm just so excited to see what the output is going to be. Like if this actually could do what it says it could do, then this is like a billion dollar workflow. Yeah.
+
+And there's also some startup like concepts we can talk around about this for how to like leverage it to create businesses. I think that this is like an interesting backbone to like, you know, power a consulting business or a freelancing business or really optimize, you know, agency operations or something like that as well. All right.
+
+So one note here on the research agent, another helpful tool to call out is open router. So oftentimes in a workflow, I try to use the best LLM or the best model for each specific task. So for research, I've got like, you know, perplexity right here.
+
+I've got open AI over here. I've got Claude over here later in the workflow that we'll look at, but open router allows me to access all of these models with one node. So if you open it up, you can see that I've got perplexity sonar selected here.
+
+But if I wanted to use any other model, you can just select them from this interface rather than going to like Claude and getting an API key or perplexity and getting an open or and getting an API key. This makes it a lot easier to integrate these models when you actually build these things out. And it's one price, right?
+
+Yeah. One price. Here it is.
+
+It's just, you know, one thing that you subscribe to, and then you can access all the different models in a really easy to use way. And just to be clear, we're not involved in that Appify, open router, N8N. We're just showing you how to use the tools.
+
+Yep. Yep. So after it sort of identifies the ideas and it does the research, it's going to sort of like merge those together again, and then it's going to feed it into a LinkedIn content agent.
+
+Now you can replicate this for basically any channel, but since I struggle with LinkedIn and I've been trying to figure it out, we're going to talk about LinkedIn today. So I have this agent node here again. And when I create content, I like to use Claude 3.7 Sonnet.
+
+You probably have used that as well. Yeah. The best writing right now, as of recording this, is the best writing LLM that exists.
+
+Exactly. Exactly. And Claude, when you give it the context and the data, it's so powerful.
+
+Like if you arm it with enough context, it can come up with some pretty incredible things. Yeah. I think the problem is people don't give it enough context and then they're like, this is garbage.
+
+Exactly. Exactly. Yeah.
+
+Most people, they're opening up Claude or something like that. They're entering in a prompt and then it spits something out and they're like, I don't like this. Well, you're not going and scraping all the top performing YouTube videos, tweets, analyzing your own account for brand voice and stuff like that, and then feeding it into the model.
+
+So you really need to power it with tons of data and tons of context to get the most out of it. So a few little prompting tips that I have in the LinkedIn post agent here. I'm including a brand voice.
+
+So AI uses a lot of fluff. It might still use a little bit of fluff at the end here, but I'm trying my best to give it some guardrails. Write with authentic expertise and direct communication.
+
+Be confident and straightforward. Don't be overly formal or academic. Speak directly to the reader.
+
+Avoid corporate jargon and marketing speak. A bunch of stuff like that. And I've just sort of like through trial and error listed these different brand guidelines out.
+
+And then a few other things. It's taking the research here. This is that JSON output, which is basically just a big block of text, all the context that I have created and create a narrative driven post that gives readers actionable insights and takeaways that will impact their business in positive ways.
+
+And then only use data if it's relevant and don't pick topics around like AI marketing tools blindly, like make sure it's tied to the context of what we're talking about. All right. So another thing that AI always does, it always wants to add hashtags and emojis.
+
+So I make sure to like include the instructions, like don't use hashtags, you know, things like that in here. And then I give it a format for how I want the output to be. So title, content, things of that nature.
+
+And then if you look down at the bottom, I've got more instructions where I'm kind of framing the LLM here. So you're a LinkedIn content strategist and conversion copywriter. I always include something around like direct response or conversion, copywriting when I'm using AI to create content.
+
+Otherwise it creates sort of like kind of brand fluff type stuff. And I really want it to like lead people through a journey. I wanted to have a strong hook.
+
+I wanted to build interest, desire, give some actionable value, and then maybe a clear call to action at the end. Good tip. Yep.
+
+I would also say you didn't include it, but what are those dashes that AI always puts? M dashes. M dashes.
+
+I would say like, don't have any M dashes. Yes. M dash overload on the internet right now.
+
+And like, people see that they know it's AI too. Exactly. And that's a turnoff, right?
+
+Big time. Yeah. Yeah.
+
+Yeah. Big time turnoff. You know, you want to make it feel as authentic as possible.
+
+And sometimes AI does a pretty good job. Other times you need to get in there and edit a little bit, which we'll get to as well. So yeah, just some more instructions, like some writing guidelines and things like that.
+
+You know, often when I'm trying to create prompts for content, I'll like look at some of your content, how you write, I'll feed in some stuff that I've created and some other creators that I really like. And you know, especially when it comes to like B2B content, you know, you need to be more like a creator. That's really kind of the future there.
+
+All right. So let's get out of that. And so it's created our LinkedIn post and it's put it into a Google doc here that you can see.
+
+Okay. And then we're working on creating an image for our posts as well. So this uses the open AI image gen model that I'm sure everyone has tested and you can do crazy things like dynamic prompts depending on, you know, the topic of the post and stuff like that.
+
+But for our purposes today, I'm just prompting it to create a 3D image communicating an AI system or, you know, something like that to keep it simple. Okay. So right now we're in the human in the loop step.
+
+So, you know, a lot of people don't want to just straight up publish content directly from a model. You know, sometimes like we talked about, we're not quite there yet. So, you know, I work in Slack all the time.
+
+Most people that are in, you know, startups and marketing probably do. So what's going to happen at this stage is it's actually going to send me a link to the Google doc in Slack. And I will just show you my Slack because I think this is a pretty cool step.
+
+All right. Yep. And there it is.
+
+I have a Slack channel set up here where I'm getting these triggers or these Google docs from in 8n. So if you open one up, it sent me a draft and I'm able to open up this completed post in a Google doc. So let's just go through it a little bit.
+
+So it says three ways to scale your marketing without hiring another team. Pretty decent. Sounds actionable.
+
+And it's got kind of a personal narrative here. So I've spent years juggling marketing tasks that could have been automated. The breaking point when my team missed campaign deadlines, because we were buried in repetitive work that machines could handle.
+
+Then I discovered in 8n and it kind of goes through some different ways that you can use it for your marketing efforts. So here it's got automate your content distribution pipelines, which funny enough, that's what we're talking about right now. Sort of taking a topic and coming up with a completed final post that is ready to publish.
+
+You know, you know, what really works well on LinkedIn is photos of yourself. So I think that if I were to do this workflow, what I would do, and tell me if I can do this, create a Google Drive folder with call it 50 pictures of myself in different poses. You can even use AI to create some of those.
+
+And then just say, pick a random photo and attach it to the content. Is that possible? Yeah, I think it is.
+
+You know, when I was when I was experimenting with this earlier, I was opening up my LinkedIn, and this is one that I actually published. If you look at Slack, you can see this approve button. And if I click that, this is going to post right over to to my LinkedIn.
+
+So, you know, this is what happened when I did earlier, it created this post, and then the image generation created this image. Now, to your point, I think like a personal photo would resonate a lot more, it would feel more natural, it would feel less AI. So yeah, you could store those in a Google Drive, and you could probably just have it randomly select from that folder and pair it up with the posts here.
+
+So point is, though, you know, you can do all of this research, you can get a highly relevant post, you can even create the image, you can have this fully formatted. And in one button, you can you can publish directly to whatever social platform you want. And the most important point is, these are validated social posts.
+
+These are not social posts, that you have no idea if they're going to get a like or a comment, because it's scraped YouTube because it's scraped X, and it's got all that data, the chances of you creating content that's going to resonate with people is probably 10 or 50x. Yeah, absolutely. So remove the guesswork, the guesswork.
+
+And yeah, use like real validation from things that have already performed, and then just make it your own, you know, like, you don't have to guess. And you can test multiple of these to see which ones work if you want. The ones that you don't like, you can delete them, you can double down on the ones that get some good early data.
+
+And then you can even, you know, go and use it for other channels as well. Anything else you wanted to tell folks? I thought this was kind of funny.
+
+So someone actually commented like such a solid example. And, you know, they liked the post. And I was like, now the question is, did AI write it?
+
+So I think that this passed the Turing test. So pretty valuable little workflow here. Very cool.
+
+Dude, always a pleasure having you on the pod, spilling the sauce, you could have kept this to yourself, but you didn't. You came on here and tried it for free. So I appreciate that.
+
+I am going to include where, where to find the boring marketer on X and YouTube for more content like that. Anything else you want to plug? Yeah, one quick note.
+
+So a lot of people need like a solid starter workflow that they can upload into N8N without having to go through the logic and trying to build all this out. So I'm going to share a JSON file that has this complete workflow. You can download the file, you can upload it into N8N, you can make it your own and start learning.
+
+Like the best way to just get a handle on all this workflow stuff is playing around with it, tinkering, you know, seeing what kind of output you get, and then trying to optimize it based on the data that you're getting. So we'll share the link, but it's templates.thevibemarketer.com slash Greg. And people just enter their email.
+
+We'll send that over to you and you can get started like right away. And it's free. It's totally free.
+
+We're just going to give it away. We're going to give the sauce. All right.
+
+I appreciate it. I appreciate you. Of course.
+
+Thanks for having me, Greg. All right. Later.
+
+See ya.

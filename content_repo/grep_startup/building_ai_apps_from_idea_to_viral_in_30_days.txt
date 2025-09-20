@@ -1,0 +1,473 @@
+I think there's going to be thousands of mobile apps built with AI, but also have AI that are going to be a million dollar a year businesses. And I found a founder called Sherry Jang, and she vibe coded this app, built it in public, got thousands of customers to it. And I think she's a first time founder.
+
+So I'm trying something new. I brought her on the podcast and I said, hey, what can you teach us about how you built in public, how you vibe coded this thing, and just your thought process for building this company? And I think a lot of people could copy her blueprint.
+
+That's why I wanted to bring her on and just learn a lot from it. One of my favorite parts of the episode was where she showed us how she uses ChatGPT ImageGen to actually create memes for her startup. So interesting episode.
+
+Grab a notebook because you might want to take some notes. Thanks for coming here. Thanks for being here.
+
+And I can't wait to see what you build. Have a creative day, friends. I'm rooting for you.
+
+We got Sherry on the pod. Sherry, I'm actually super excited to learn from you. So if people stick around and to the end of this episode, what are they going to take away?
+
+Number one, sometimes you can just take a first step to getting started, whether it is three hours of vibe coding a prototype just to test something with users or writing your first like, hey, I'm building this app and this is day one. That's all you really have to do sometimes. And that compounds more than you would imagine.
+
+And Sherry's out there. I noticed her because she's getting thousands of downloads for her app. She's building in public.
+
+She's vibe coding. So she's a testament to it. Sherry, you brought a little presentation.
+
+I want you to go through it. I want you to teach people. I want people who are solopreneurs, who want a side hustle, who have a business but just want to AI-ify it.
+
+I want them to come away with feeling a little bit stronger, a little more excited, a little more fired up, and have some tangible product design, consumer psychology, build in public know-how so that they could grow their app, consumer app. We're going to be mostly talking about mobile apps faster. So let's get into it, Sherry.
+
+Thanks for coming on. Awesome. No, I'm super excited to be here.
+
+And I've been a fan for a while. So I'm super excited for the conversation. So just to do a little intro.
+
+So right now, I've been a founder for four years now. And currently, the product I'm working on is called Peak. Been building in public on X for it the last, I guess, four months now.
+
+But basically, the idea is we want to revolutionize the way that personal finance has really been from dashboards to more dynamic UIs that actually make it feel much more enjoyable and bite-sized when it comes to making some of those decisions. But I'm not going to go into the nitty-gritty of the product just yet. I actually want to talk a little bit about the process, actually, from getting from zero to something that's launched on the App Store.
+
+And you really can just get started with a vibe-coded prototype to start testing with users on day one. You do not have to have something that is perfect and beautiful. And I'll share some examples of what the very, very early versions of Peak look like.
+
+What I like about Peak is it's a peak, no pun intended, to a whole new wave of consumer mobile apps. There's like a thousand Peak for X ideas, startup ideas that could come out of this. So I want you to continue and show what the product is.
+
+Absolutely. Yeah, so I'll talk a little bit about some of these principles that we were thinking about when designing the product. And then I'll walk through two evolutions of what it looks like and how that translates.
+
+So when it comes to how humans process information, and just like actually how LLMs also process information if there's too many tokens, you need to have information chunked in ways or else people get overwhelmed. Right, so I'm just looking at the, you know, we call it sauce on this podcast, the sauce on this slide here. So from a product perspective, we show only one takeaway at a time on screen, something like cards.
+
+I think that's really smart. Like basically what all the things that you've described here, progressive disclosure, single person. The second thing is single purpose conversational UI.
+
+The third thing is the daily reports that can be read as a part of a check-in or narrative story that's easy for the user. And then the last thing is helping nudge users with relevant information at a time and provide practical first steps. These four behavioral science principles could be applied to any product.
+
+Absolutely, right. And that's why I like the point that you made earlier around how we're not here talking about how to build a finance app. We're actually talking about how consumer apps that are AI enabled that help people in some part of their life, whether it's to be healthy, be productive, be financially secure, right?
+
+They all ultimately follow some of the same principles, right? But of course, the data that gets piped in and the subject area, that could all be different. But it's all the same at the end of the day.
+
+And even when you create a podcast or you want to create content, it's the same thing, right? Because you're there to bring, like, here's the audience's brain and understanding how they process information. And you're bringing it down in a way that they can understand.
+
+Same thing, right, that gets applied here. So I can maybe move on to actually showing you what we started to test, how these kind of, you know, like start to manifest in a finance product. So this is a very, these are very, very early versions of something I did in Next.js.
+
+Yes. I basically used cursor and V0 to code this out. As you can see, it is very, very rudimentary, no pretty designs.
+
+But the main thing that I actually spent a lot of time testing with users is this area. We called it AI templates. Horrible name, but later on we call it check-ins.
+
+But this is the part where it becomes quite different. And this relates a lot to, firstly, this whole context switching fatigue principle. So when you click into these, you basically ask, like, a single question, right?
+
+So instead of having to, like, bring in, you know, information from all different places, like some, you know, Reddit post someone made here or, like, oh, this, you know, WhatsApp conversation I had with a friend who knows finance. It's all in one place. It's all in one place.
+
+So you can kind of, like, step through the problem without really, really getting distracted. I can maybe try to show you what the, like, the chat, actually have it pulled up. It is very scrappy.
+
+I can just maybe switch tabs. So can you see this? Like, I have, like, the console log and everything on the, oh, okay.
+
+So the way that, like, this really simple one worked was start conversation. It's actually powered by Claude35 on the back. And it was this really simple interaction that I used to test with users.
+
+Yes, food spending. Yeah, this is cool. This is, this, what's cool about this and the lens I'm using for, for everyone is this could be applied to a million niches.
+
+There is, and I'm curious, like, have you thought of other niches where this could work? Like, peak for X. Yeah.
+
+I mean, I think that, like, nutrition is definitely, like, eating, eating, diet, health, kind of all sort of related, right? Now, I'll tell you, like, a habit I wish I had that I do not have because it takes too much effort. I want to be more specific about, like, the types of food that I am eating to, like, reach my goals, right?
+
+Whether it's, like, oh, I want to, like, build muscle for this, like, competition I'm doing in the summer. Or maybe for others it's, like, oh, I want to cut, right? Now, getting, like, everything tracked and then being able to, like, personalize the goal, then being able to, like, plan the meal and then figure out where to buy the meal because, you know, you have to go out and get groceries, cook, whatever.
+
+And then, like, give continuous feedback around how the plan is going, right? Because iteration, like, it might not be perfect the first time. Like, I would love that, right?
+
+I mean, if someone's building that today, like, I would love to take a look. But it's the same kind of concept of, like, you know, you have to, like, capture not just the tracking and the numbers part. It's, like, there's so much more, so many more steps to ultimately getting to you taking an action and then seeing the results of the action.
+
+So I think this applies to so many different areas where, you know, where there's some level of, like, improvement that we're achieving for as human beings, right? Like, what would it be for you, Greg? Like, is there something that...
+
+Right now? Yeah. Like, honestly, right now, I want to get really good at tennis.
+
+Yeah. And there's a lot of systems that I have to put place in my life to get good at tennis. So I need peak for tennis.
+
+Yeah, yeah. It's, like, essentially, like, you know, we have really busy lives, right? Like, I think a lot of our executive function, basically this prefrontal cortex, right, is spent on, like, you know, our day-to-day jobs, right?
+
+Like, for me, it's, like, you know, running a company. You know, for you, it's, like, you know, running your stuff as well. For the stuff outside, like, it's oftentimes we're just, like, too tired to think, right?
+
+There's, like, a quota to how much we can, like, plan and think and do all of that. And so that's why that happens a lot, right? We just don't have systems in place, even though we're fully capable of those systems, right?
+
+So in a, like, mental resource-constrained environment, how do we help take away that thinking, that planning portion from the human? So they get, you just get told, hey, if you want to get good at tennis, here's a 10-step part to your first stage of mastery, right? And this is all you have to do every single day.
+
+And maybe one of the frictions of getting good at tennis is, like, I need to find somebody to play with who's at my level. Like, I think tennis is really fun, but, like, I don't want to play with someone who's, like, so good that, like, I'm just boring them because, like, I suck, you know? So maybe, like, part of that is, like, a social matching platform where, like, do we have scores?
+
+Where, like, you know, you kind of know someone's, like, at a similar level as you, right? And then you get to, you're in the same area. You can go and then get matched and you play somewhere.
+
+Like, that reduces the friction of, like, oh, who do I know in my circle who's, like, at my level? So it's all about reducing that friction and having, like, AI, like, basically work for us so that we can become, like, better versions of ourselves. Like, you can be, like, a great tennis player and I can, like, finally have the diet that, like, I really want to have that I definitely am not following right now.
+
+Amazing. Cool. Let's go back to the slides.
+
+And so you vibe-coded this prototype in less than three hours and then went next. Yeah. Well, so I then started to just, like, do user testing.
+
+So I had this thing I call a rule of six, which means talk to six people that you think is in your ideal customer profile. Two less is, like, you don't have enough sample size. It's too many.
+
+It's, like, you just don't move fast enough because, like, you know, people are doing this on their schedule. So I just started to talk to people. I picked people who are, like, in their 20s because I also think 20s is easier when it comes to habit formation around finances because you're just starting to earn a paycheck.
+
+You're just starting to make, like, big financial first decisions. So I just talked to a lot of 20-some-year-olds about money, and then they started to use the app, right? I just, like, didn't really guide them.
+
+I was just, like, hey, just, like, start using it and, like, let me just see where your eyes go to. And it was quite interesting that I started to see a lot of parallels, which come back to a lot of the hypotheses that we had around the behavioral friction people have around managing money. So I put here, like, two, like, you know, quotes from the users we spoke to.
+
+One person said they, you know, have used dashboard apps right by their bank, you know, the Chase apps, whatever. And most of these apps feel overwhelming. Lots of numbers and info, but, like, I don't know what to do with it.
+
+And then when they started to talk about the experience using the chat and peek, they were, like, oh, this feels like it's helping me actually get to my answers. And it feels more dynamic than this, like, dashboard that I know is being shown to, like, thousands of other people, right? Where, like, again, because it's so standardized, you're making me do the thinking around how to interpret it versus, like, you know, the conversational AI doing a lot of that work.
+
+Yeah, so the rule of six, you get feedback, you start getting insights. These insights, by the way, relevant for anyone building an AI app. What's next?
+
+Yeah, you start to build. So we basically took this and spent about one and a half months actually building it out before we launched in the App Store. And for anyone who's launching a mobile app, you sometimes get asked, like, should you do test light?
+
+Should you do, like, the pre-orders? Like, do you do a wait list? We just, like, sent it and we're like, you know what?
+
+Like, let's just get it out there, right? And you're never going to feel ready and it's fine. There's going to be bugs, but that's okay.
+
+You don't get real feedback until you have real users. So this is what the app looks like today. So obviously a lot more, you know, design elements in here that are way more colorful than it was created.
+
+But you'll start to see, like, there's actually parallels, right? This page essentially was this, right? But we, like, added more, you know, cards that felt, like, a lot more readable.
+
+We added these, like, stories, basically, which are, like, you know, nearly daily check-ins. Now, this is a mock-up, so I realized, you know, there's some dates that look kind of funny. But basically these are, like, almost like Instagram stories, right?
+
+So we, so on this screen, we did something where we wanted to, like, take what was familiar with two people and other apps. So, like, these, like, little circular icons are familiar in Instagram, right? Because it feels like this, oh, like, there's a little story, right?
+
+It's a narrative going back to Gestalt's principle of, like, let me, give me something that feels narratively relevant to me, right? Organized information and storytelling. So we created these, like, daily stories, right, that look like what you see on Instagram.
+
+And then down here, these cards we actually modeled off of, like, a lot of wellness apps, right? Like, meditation apps or, like, journaling apps where, like, you click and then they'll have prompts of, like, in the vibe checks question, there's a vibe checks card. There's a question, like, hey, like, you know, what's my financial standing, like, right now, right?
+
+It's, like, a vibe check. So we used a lot of the, you know, things that make people feel very calm and applied it to money where people don't always feel calm, right? And some of our users actually told us that they feel like they can open up Peak a lot more because it doesn't feel as scary as, like, their banking app, like, with red numbers being, like, oh, like, you spent so much more this month.
+
+Like, here, like, they're, like, yeah, I feel more comfortable because of how friendly it feels and it doesn't feel judgmental. It feels like it's trying to help me. It's, like, here's where you are and we're going to get you to where you want to be.
+
+Yeah, so if you're building an AI app, think about, well, I think you got that insight from the rule of six and getting, you know, so step one, like, in a world where anyone could vibe code an app and the hard part isn't really the software. It's really about the insights that you can generate from your target audience or community. And then thinking about, okay, what are their pain points?
+
+You know, one thing, by the way, you can also do is you can go and simulate what people's pain points are by just going to, like, chat, GPT, Manus, and being like, hey, like, what are the most common pain points with an app like Mint.com? And that's called, like, synthetic user testing. So you can do synthetic user testing and real user testing, which, by the way, obviously real user testing is better.
+
+But sometimes it's just easier to prompt and get something. And then you reflected it in the product with UI that feels familiar in a calm design style. So I think that, you know, you're even seeing that with Airbnb's, like, recent redesign when they added, like, their new icons.
+
+Like, it feels calming. It feels, like, fun. Like, people don't want apps that are black and white anymore.
+
+You know, soulless, like, brands anymore. They want fun brands. They want calm.
+
+And then intelligence, finally, intelligence, artificial intelligence, is the foundation of the experience of the app. So, like, all these, you know, entry points, as they say in product design, are designed to get people to interface with the intelligence, to get more smart, to help you out more, so that it becomes a partner, you know, not a piece of software. And that's a priority.
+
+And that's a priority. We remember that. And we're not going to be like, oh, you know, reduce spend here.
+
+We're more like, maybe there's other areas you can find efficiencies. Right. So, I think that, like, people's expectations of products, as you said, is going to change, right, with all of this available today where they expect things to be emotionally resonant and, like, taking into account not just function but feeling.
+
+Right. Like, I want to use something that makes me feel a certain way because, you know, that affects how often, you know, I engage with it. And then to your second point, right, I think we want to start using things that feel as human-like as possible.
+
+Right. And, you know, we're getting to a stage where it's like you're talking to someone who is almost like a smarter best friend or maybe a best friend that, like, has spent six to 12 more months in this area and is, like, able to, like, actually give you good advice and suggestions to, like, help you get better as well. And none of this was possible, I guess, in, like, this kind of scale and speed years ago, right?
+
+Right now, it's like you can whip up. I mean, you can probably whip this up even faster than we did, right? I think you probably whip this up in, like, maybe a few weeks, maybe a week, depending on, like, how complex your app is.
+
+And, like, it's truly amazing. It's just such an exciting time to be building mobile apps right now. And before we get to your next slide, you, you know, when you say, how did you build this?
+
+Yeah. You know, you, what tools did you use with Stack? Yeah, yeah.
+
+So for, like, the front end and the back end, it's been in TypeScript. And then for the mobile app, because we want it to be, like, more platform agnostic across, you know, iOS as well as Android, use React Native and using Expo for that. So, yeah, pretty typical.
+
+I think we, you know, don't do anything too, like, fancy outside of the React stack. As for the LLM side, we actually string together a combination of Gemini as well as Claude, depending on, like, the, I guess, the function. But a lot of the initial insights, like, these kind of, I would say, like, more detailed insights.
+
+We use 3.7 on Claude because the reasoning is freaking fantastic. And then elsewhere where it's, like, speed is required more. We rely more on Gemini.
+
+So a lot of the coordination on this chat, this is Gemini plus Gemini tool calling, essentially. That's going on. Cool.
+
+All right. Let's continue. Yeah.
+
+So, yeah, that's the gist of, like, our journey on the product side. We've been out in the market for just a bit over a month now. And it's been super exciting.
+
+We built in public on Twitter, which I can, you know, go into detail in the next part. But I've been really, like, grateful and overwhelmed by the response. And we've had, like, thousands of people download the app.
+
+Our most active users are telling us to use it every single day. You know, they're checking their balances. They're doing, like, AI check-ins to, like, understand their finances better.
+
+It's still early days. But it's, like, so we're already seeing how people are using our app nearly seven times more frequently than, like, your desktop dashboard app. And they're talking more about, like, the habit formation that really is, you know, coming into play when you have this kind of experience.
+
+How do you go from zero to thousands of customers using your product with basically no audience by building in public? Can you, in this section, can you teach us how? Yeah, absolutely.
+
+I mean, it always sounds kind of scary and impossible, right? There's, but really it's like. Not to this audience.
+
+Maybe not. This audience. Not to this audience.
+
+Okay. This audience is bought into the concept that building in public works. But how do you do it?
+
+Amazing. Okay. I will go into how I do it.
+
+I'll actually just jump into, like, what I, what kind of looks like timeline-wise for me, really just in the last few months. This little jump right here is I think I responded to some guy's tweet about college, not getting into certain colleges. So I remember this one.
+
+But by and large, you can see, like, there wasn't a lot here. And this is, right here was actually when I made my first building public post for Peak. And I know because it was actually on my birthday.
+
+And for a long time, you might not really see much, right? And I think that's where, like, you kind of have to feel okay with, like, posting and not getting a lot of engagement and impressions at the start. Because that is normal, right?
+
+But you just have to find one opportunity where somebody catches wind of your post or your reply. And it really just compounds from there. Like, visually, like, you can kind of see it.
+
+It started to happen around here. Amazing. And can you maybe go into, like, some of the posts?
+
+Yeah, yeah. So this is the very first post I made. And as I was evaluating it, I was like, I think I got better at, like, figuring out how to post about things as well.
+
+Like, but, you know, it was one of those things where I was like, let me just get the first one out there. So this was done in March. As you can see, it was actually 400 or 500 initially in the views.
+
+But I think since my account has grown, I think a few people have come back and looked at my first post maybe. But, yeah, nothing crazy. I basically said, day one, building the next big personal finance app.
+
+I was like, okay, maybe I'll make it like a journal thing. So, like, it keeps me accountable. Like, okay, I'll do day two, day three, day four.
+
+And then I say, like, yeah, one of the biggest reasons why I built Peak was because running my own company made it harder for me to manage my money as disciplined as before. A couple with, you know, ADHD, felt all over the place. So, and I actually have this, like, URL, spend.peak.money.
+
+That was actually a landing page that I created for this, like, you know, very, very early version of the app, which we, you know, redirected and took down. But, yeah, basically it was very, very simple, right? Can I break this down?
+
+Yeah. So, you know, I'm on X a lot. I get hundreds of millions of impressions every single year.
+
+Yeah. And this is an incredible tweet. And I want to break down what, why it works and some tweaks I would make.
+
+Yeah, go ahead. So, if you're building in public, the best thing you can do is get people to follow along in your journey. So, the smartest thing about this is you're, like, day one, building the next big personal finance app.
+
+So, it's like, okay, I might follow Sherry because, like, I want to see where this goes. People don't like not knowing the ending of the story. It's just human beings need to know the ending of the story.
+
+So, it's like, okay, I guess I'll follow Sherry, you know. The other thing is building the next big personal finance app. We all know that none of us are happy, ecstatic, or I shouldn't say none of us.
+
+I would say. Most of us. Yeah.
+
+Lots of us are unhappy with, at least 50% of people are unhappy with the financial tools they use. A lot of them are using, like, antiquated bank, old school, 200-year-old bank banking apps that look like they're designed from the 90s. So, building the next big personal finance app is aspirational.
+
+So, you have a journey meets aspirational. And then you're just, you say honestly, which makes me feel like you're a real human being, you know. Like, we're texting.
+
+Writing like you're texting is super impactful on building in public an ex. The only thing that I would, oh, and you say that, like, you know, because running my own company made it harder to manage my money. Like, you're a bit vulnerable.
+
+Being vulnerable also really works in building in public. The only thing that you're missing here, and this is like a personal thing, but if you would have said, like, I suffer from ADHD. And, like, that would be, for the people who have ADHD, extremely relatable.
+
+Also, having a link in here suppresses the algorithm. But other than that, this is like a 9 on 10 tweet. It's really good.
+
+Can we move on to the next slide? Yeah, for sure. I know this gets, like, talked about so much of, like, you just got to show up.
+
+You just got to post. And I know, like, everyone's like, but everyone says it. I've been doing it for a while.
+
+Like, I'm not going anywhere. It feels like I'm stuck. It's nonlinear.
+
+And I, like, could not believe when this day happened. And actually, I only found out about this because my, I mean, our app was melting, essentially. Like, I was getting all these pings from intercom.
+
+Like, this, this and this user, like, has filed a ticket or whatever. And I, like, messaged my co-founder, right? And I was like, are there bots?
+
+Like, what's going on here? It's like this, like, moment where you're like, is this a bug? Are these bots?
+
+Like, it could cross your mind, right? And then I was like, no, I think these are real users because we were, like, looking at, like, what people were doing. Like, no, they're actually trying to connect their bank accounts.
+
+Like, you wouldn't do that if you're a bot, right? So then I started to trace back and that's when I realized I think I was one of the first people that happened to respond to this one tweet that this guy Preston posted. He posted, I want to finance up with three numbers, what I spent today, what I spent this week, and what I spent this month.
+
+And I don't think he knew it was going to go to, like, 6.5 million views. No, he can. Certainly, I didn't think, like, I reply a lot on Twitter, a lot.
+
+Actually, that's another piece of advice, which is, like, when you're, you know, early on, like, reply a lot. And then at some point, your posts will carry you more. But anyways, I was replying to, like, you know, a lot of threads that I felt like were relevant, right?
+
+So it just so happened that my one response here got picked up. And I added an App Store link. And I said something like, you get a cute mascot that roasts you.
+
+And then, yeah, it just kind of took off. And you never know when it comes. This one came, like, a month into Build in Public.
+
+So, like, I started, what, March 6th? So this was, like, a month and three days. And, yeah, this is the first time, like, I hit some kind of inflection point building in public.
+
+Yeah, you also, what's good about this is you weren't, like, download my app. It's, you know, I think people don't like pure promotion. I feel like you humanized it when you said you also get a cute mascot that can roast you in an AI chat interface if that's your style, too.
+
+So, again, going back to write like you text and write like you're speaking to another human being. I know that sounds obvious, but people, they get all corporate when they're trying to do this sort of stuff. And that just doesn't work.
+
+Yeah, I completely agree. I feel like the, so, even the way that, like, I write stylistically is, I make it very conversational, like a text message, right? It's like, you know, I don't use capitalization.
+
+I, you know, add little things like if that's your style, too, which I don't know if I would have used back at Google. Yeah, a little cheekiness, you know, you're like, it's kind of how you would talk with a friend, right? A little unfiltered.
+
+But, yeah, that's, that's, like, actually my norm, like, how I talk here on this tweet is just how I talk in, like, real life. There's not a big difference. Love it.
+
+Yeah. All right. What else?
+
+Yeah. So, yeah, so this, like, kind of set things off. And then I was going to show you, like, one specific tweet.
+
+I'm actually just going to jump to, like, my Twitter because I don't think I put the, I'll share this tab. So, this tweet was basically the first day that I actually, on my own post, got more than, like, a thousand. And, I mean, the algorithm does have an impact, right?
+
+In a way, it's, like, if you have, like, a moment like that and you kind of catch it and you post anything afterwards, it kind of, like, grows from there. So, I followed up, right? I was just basically, like, hey, you know, there was a bunch of downloads I was not expecting posted by this person.
+
+And then we actually made some changes to the UI because it's not three numbers, it's four because it would have looked weird with three. I had a debate with my team on that. But, yeah, we kind of shipped it overnight.
+
+We were, like, you know what, there's probably something to this whole, like, simplicity thing where, like, people are obviously reacting to the bloat, right? The Frankenstein dashboards where you're, like, sure, like, I can look at my cash flow in this fancy sankey chart with 12 colors. But, like, how much did I spend today?
+
+You know, like, that's all I need to know. So, yeah, we just, like, shipped this right away. So, that's, like, I mean, the pros and cons of building public, I think it's a pro.
+
+Like, you get to move really fast. You, like, see feedback and then you build it, you get, like, you get reactions. Obviously, the downside is, like, if you're, you're kind of accountable to things, right?
+
+Like, you're like, oh, I see this, I want to work on it. Then people expect you to put something out. But I like it because it kind of keeps me, you know, on track and making sure that, like, I'm creating the best app for our users.
+
+So, there's a few ways to build an app that gets a lot of traction. One is Trendjack. So, you look at what trends are going to be and then you, like, build for those trends.
+
+And I think that's, like, I think that's a huge way to do it. The other way, which, you know, is something I think about is tweet jacking. And obviously, you think about that.
+
+So, what you really did is you saw a tweet that got a lot of traction, millions of views. And then you essentially vibe-coded a, you know, that tweet into your app. And then you latched on to all those people who wanted this product.
+
+And then all of a sudden, they're like, wow, this, you know, peak is for me. This is a product for me. And you can only do that today.
+
+Like, you know, in a world where there's AI and you can ship things overnight, you can only do that today. So, I think this is brilliant. And then I love that you included, like, the journey, day, whatever you put up there.
+
+Yeah. Day 22. Yeah.
+
+This is cool. I like this. Yeah.
+
+So, I mean, this is more tech stuff. But I thought this could be maybe useful for people who are like, oh, my gosh, I have to post every single day. Like, how do I come up with ideas?
+
+Like, all that stuff, right? So, I kind of came up with, like, things that I enjoy talking about almost every single day. And oftentimes, these are things I'm already talking to friends about, right?
+
+So, it's not like I'm creating new behaviors. It's just, like, it's another medium. So, you know, we already talked about the daily updates, right?
+
+But one thing I'll add here is I did start out with, like, hey, you know, building the day one of building the next biggest personal finance app. I realized, like, hey, that gets used. If I use it over and over again, it's like, okay, like, what's new, right?
+
+So, I actually started to make thematic challenges during certain time periods. So, I started, like, another one I called, like, the 3x retention in 30 days because our week three retention was not great at one point. It was, like, 13%, which you don't want as a consumer app.
+
+Not great. So, then I was like, you know what? I don't mind.
+
+I'm just going to tell people. Our retention needs to improve, right? This is the number.
+
+Here's where I want to be. Here's, like, how long I want to take to work on this. And here are all my steps I'm doing it.
+
+And funny enough, we did two things that actually shot our week three retention up from, like, 13% to essentially, like, 28% in, like, a short period. We improved onboarding completion, literally just asking people, hey, it's been three days. Just connect your bank account and finish.
+
+And 50% of the people we just sent a reminder did it. And the second thing is we started to send these context-specific notifications. So, it's, like, we'll basically look at their behaviors, right, after a time period.
+
+And we'll be, like, oh, it's a weekend now. You know, you might want to, you know, take a look at, like, you know, your, you know, spend buckets, right, in these particular areas, like entertainment, et cetera. So, it's, like, related to the time period.
+
+And that also brought a lot of people back into the app. So, we actually completed the challenge in four days, which was kind of funny, actually, four or five days. So, I was, like, okay, I mean, I'm not done, like, working on retention by any means.
+
+It wasn't, like, okay, we're done. But it was kind of hilarious that sometimes, like, it's little small things that actually can make a difference. Totally.
+
+I mean, I think what you're saying is if you're building in public, you might want to have one really big goal. For example, I want to make a million dollars ARR in 12 months, and I'm building the next big tennis app. Yeah.
+
+And that's a really big goal. And you can remind people of that goal. But you need to have sub-goals.
+
+Exactly. So, if you want to bring people along for the journey, you need to have a set of sub-goals probably every 30 days. Yeah.
+
+Where people are bringing you, you're bringing people along, and it's like, okay, today's, you know, this month's challenge is going to be retention. And then, okay, day 31 happens. You're like, okay, new challenge happened.
+
+I'm trying to hire a designer, you know, and I'm going to go. So, every startup has a set of challenges, and focusing it around every two weeks or 30 days, I think, is really smart. Making memes around personal finance, talk more about that, and talk more about your process for creating them.
+
+Yeah. So, I would say, like, you know, don't make memes for the sake of making memes, although it's super fun. But, you know, one thing that, you know, we all know is, like, just talking about finance itself, without, like, thinking about the emotions and the context around it can be very boring.
+
+Right? So, making memes is kind of my way to figure out, like, what is it that, like, really, like, people feel like some kind of way about, right, emotionally when it comes to money. And so, I started to create memes, actually, to, like, you know, get that kind of, I guess, feedback from folks.
+
+And maybe I'll show some examples. Again, I'm just going to go to my ex, because I think it's just easier to share. All right.
+
+I'm on my timeline. Okay. So, I started to post, like, I do stupid stuff here.
+
+I mean, this is pretty, like, just silly. This is a, you know, this is from the latest Avengers movie. So, it's a bit of a trend jacking, whatever.
+
+Like, I was like, maybe people, you know, get the reference. So, this is a superhero or, you know, villain in the movie called The Void. Right?
+
+So, basically, you know, you go into this feeling of nothingness. Right? So, I just, like, you know, took a couple minutes and was like, maybe there's some joke that I can make about this.
+
+And I was like, you know, like, I feel like I'm really bad at managing subscriptions, because it's one of those things you just, like, pay for and forget. And it just, like, goes into nothingness, even though it's not really nothing, because I'm paying for it. Right?
+
+And so, I used, like, that kind of, you know, like, as a tagline, right? And then added this image, which I just, I think I prompted on, this is GPT-40, by the way. I prompted, like, New York skyline, and I took a screenshot of, like, some, you know, picture of this supervillain.
+
+And I said, put the peak face right here. And I used this to basically, like, kind of get more and more, like, a read on how. It's like a brand awareness, isn't it?
+
+Yeah. Yeah. In a way.
+
+And I've been doing a few, like, a few of them. Like, I did, let me see. This one was also, yeah, like, a wall of shame.
+
+I mean, I actually looked here. This is really smart. This is so smart.
+
+Like, what you're doing is basically, you know some of the pain points of the audience you're going after. But you're packaging it in trends and memes so that the algorithms love you. And you're using, like, not enough people are using, like, ImageGen and some of these tools to have an unfair advantage.
+
+Like, if you're building in public, a meme a week, a meme a week is going to be helpful. Like, you will get thousands of impressions. Yeah.
+
+If they're good. If they're good. And they're not necessarily too hard to do.
+
+I even actually have this post here because someone was like, how do you do it? I'm like, I think it's pretty simple. I actually recorded.
+
+Yeah. Can you make that full screen? Yeah.
+
+And start from the beginning? Yeah. Yeah.
+
+Yeah. Okay. So let's see what your prompt is.
+
+Can you create a peak cartoon meme around the latest Thunderbolt Avengers movie, the dark void scene, subscription creep, insert clip of lightning lit abyss that place your 1399 free trial keeps teleporting to. Okay. Yeah.
+
+By the way, this line I actually got from 03. I was actually using 03 to brainstorm like trends. And then I saw the Thunderbolt movie and I was like, oh, that was one of the ones.
+
+So I actually copied this from 03 into 4.0. And I just added this part at the top. Right.
+
+Can you create the peak cartoon meme? And I added the logo. This is the logo asset.
+
+So what you're saying is you can even use these LLMs to give you ideas around what memes to create. You don't even need. A hundred percent.
+
+You don't even need the ideas themselves. So use ChatGPT as a meme co-founder. Yes.
+
+And start from there. Absolutely. I mean, the one thing you still have to have is you have to have taste.
+
+I mean, they'll give you a bunch of ideas. Like nine out of 10 are shit. You have to decide which one catches people's attention, is visually suitable, and can relate to some message around your brand.
+
+I've actually never tried this. I've actually never tried to use ChatGPT as a way to come up with meme ideas. So I'm going to try this after.
+
+I think this is cool. Yeah. You totally should.
+
+I can see what my prompt was when I asked it for memes. I think I said a few things in there as well, like pop culture, like because we're reaching an American audience. I was like sports, you know, sports stuff kind of works, celebrity gossip.
+
+So I gave a few categories as well. So it wasn't just like make me memes. It was like I added some details in it.
+
+But I guess I'm going to long if you want to give a meme idea Jenna a try on GPT. So I'll keep playing this. But you can see how the first one looked like not great.
+
+I mean, it was like the Sentry guy wasn't there. Like it's a dark. I mean, I looked at this copy.
+
+I was okay. Like clearly it just copied word for word from the 4-0 language. And like, yeah, I mean, nobody would get what this meant.
+
+So then I just like prompted it again. I was like, okay, use this picture of Sentry. Sorry.
+
+Sentry slash void. Sentry. I don't know if you see the movie, the latest Marvel one.
+
+No. But I've seen like the trailer. Yeah.
+
+It's actually pretty good. I felt pretty disappointed with Marvel for a long time. But I actually think this was a solid movie.
+
+I'll do like a very quick 10 second explanation of Sentry. Basically, when Sentry is really sad and in a depressed place, it turns into the void. So it's devoid of stuff.
+
+So that's the same thing. So I gave it. I basically ripped that photo.
+
+Sorry. Oof. I ripped that photo from Google Images, I think.
+
+And then I came up with this, which like obviously looks kind of. This looks like some Statue of Liberty, like Superman. Doesn't really look like the void.
+
+And then like, I don't know what's going on here. Like peak with the whole. I was like trying to like tell it to use a New York skyline.
+
+And it like just took this text. I mean, it just does stupid things. But like I don't give up.
+
+I just like try to like see if I can be more specific. And I was like actually use this image. Right.
+
+And then change the text. I think it like crapped out there. And then I said actually like add the peak logo onto the face.
+
+And then the text should be this. So it's very specific. And then you get that.
+
+So it's multiple iterations. Like I think if you give up after the first try, you'll be like, yeah, it sucks for like image jet or making memes. I'm like, no, you just got to like, you know, finesse it and you get something out of it.
+
+Awesome. What else you got? Yeah.
+
+Well, let's go back here. I think we did actually talk about this. But yeah, you can use like GPT and LLMs to brainstorm.
+
+And in fact, beyond just like meme ideas, you can actually use I use O3 for this mostly, but you can actually feed it your Twitter handle, your socials and ask it. Can you like analyze like what you think would be three strong angles for me to talk about uniquely and like give me those categories? You could do that.
+
+And you'd be surprised like what it comes up with. Yeah. You can do it.
+
+And you probably should. Yeah, absolutely. Yeah.
+
+Just have a few more things. I know like, yeah, there's a I put this in here because a lot of people like say that build in public has a bad rap because people are just talking like it's like they're just yapping or where's the product. Right.
+
+And I think that's why the build part is really, really important. Like you got to show like you're interacting with people, you're taking feedback and all of that. So I actually added this tweet in here because it's very recent.
+
+It's just from like a day ago, I think. But yeah. So this person, Seb, had been using Peak for a month.
+
+I think discovered it from the tweet, probably from Preston and left feedback. Right. It's like, hey, here's some things that like I want, you know, working better.
+
+The refresh. The Gen Z lingo is something that some people like. Like it's some people don't.
+
+It's polarizing depending on who you ask. And then this part is really where I kind of took out and said, OK, we're doing the one thing that we want to uniquely do well, which is story gen. And then I mean, I always think when someone says borrow UX, like I appreciate that.
+
+Like it's a yeah, it's something that I don't mind hearing. So I yeah, I interact a lot with people on replies, DMs, probably have like at least 50 people like in some kind of direct line of communication that just sends me this stuff while we're building Peak in Public. And that's it.
+
+That's pretty much it. Yeah. All right.
+
+Yeah. Sherry, thank you so much for your time and sharing your process and how you built this, both from a product perspective, from an insights perspective and from a marketing perspective. I'm going to include the the links to where people could follow along your journey and Peak's journey in the show notes if people want to go and and and and get more of that.
+
+Do you have anything you want to leave, you know, the audience with before you head out? I think this is the golden age of building AI native mobile apps. So I'm really excited to see what everybody starts building.
+
+This is like a paradigm shift, not just for personal finance, but it's for the whole suite of any kind of applications that we're going to use to like, you know, improve ourselves in some area. Right. To like live a higher quality of life.
+
+So I think this is like such a cool time to be building. So, yeah, just go out there and do some cool stuff. Amen.
+
+Thanks, Sherry. I appreciate it. Thank you.
+
+Bye bye.

@@ -1,0 +1,505 @@
+This episode is unlike any of the other episodes because it is a really approachable way to make money on the internet, a vibe coding, and teaching you how people are doing it by selling AI services on Upwork. Now, there's people who are making $5,000, $10,000, $15,000, $20,000 a month, solo devs or with a small team, literally one prompting or a few prompting apps that they're finding on Upwork. I thought this was really interesting.
+
+Not because I want to go and do Upwork stuff, but because I think it's a really good way to scour. Scouring Upwork is a really, really interesting way to see what are business problems and what are SaaS businesses that you can create. So I had my friend Billy come on the pod, and this is a guy who's started and sold multiple Replit apps, and just walk you through how to think about making money on the internet with vibe coding and how this whole Upwork ecosystem works.
+
+Enjoy the episode, and I'll see you at the end of it. Billy Howell on the pod. Billy's been going viral recently because he's been vibe coding his way using Replit and selling those businesses, not just one time, but twice.
+
+I wanted to have him on the show to explain, well, what are we going to learn today? I've got it laid out for you right here, Greg. We're going to find out how to make profit with vibe coding.
+
+Okay, I've got a lot of question marks, but by the end of this episode, what are some tangible skills that people are going to learn if they make it all the way through? Sure. The number one thing is how to sell an app that you've built.
+
+That's what I get asked all the time is how to sell and how to market. And the secret is not to market. It's just to sell it.
+
+So we're going to walk you through that. Okay, so you've got me intrigued. That's where I'm at.
+
+I'm in the intrigued phase. Let's get right into it. So where do we start?
+
+Okay, so we start, we need to find someone to buy the app before we build it. That's where most people get this wrong, is they build something and then try to sell it or try to get users. But I've found it's a lot easier to just find something someone wants to buy and then build it.
+
+And so if you don't know anyone that wants to buy an app, you should go to Upwork. That's where I sold my first Replit app is Upwork. And so all I did was search for a technology that I knew I could replace with an app.
+
+So I use Airtable a lot with past projects and clients from a marketing agency. And I was looking at these jobs to do Airtable consulting. And I'm sitting at my desk looking at this one job description.
+
+And I'm like, I think I could do this better and cheaper than in Airtable. Because Airtable, you have to pay $20 a seat, right? And so I made a prototype in Replit and then sent a loom to the guy.
+
+And he's like, I like your prototype in Replit better. And that's how it went. So we're going to try to look for something here real quick that we could mock up to someone.
+
+Okay, yeah, let's do it. So by the way, I must say, I've never thought of doing this before building anything. Like I didn't even think this was an option.
+
+But it makes so much sense, right? This is validating. You want to build something that people have validated before.
+
+Right. And you can go and you can search custom app development on Upwork or wherever. But I think it's an easier sell when you're replacing something or doing something better than existing software could do.
+
+Cool. So what are we looking at? Okay, so we're looking at Upwork listings here of people who've posted a job that has Airtable in the keywords.
+
+So we're going to look for something that we can just make an MVP on. Daily Google ad calls. No code expert need for MVP development.
+
+This is one I see a lot on Upwork. And it's basically going to be a bunch of integrations. MVP that integrates Calendly, Zapier, Airtable, SMS functionalities.
+
+Not sure if I like that one. What do you think? I mean, I'm curious your thought process.
+
+So what about that one didn't you like? Well, for the purposes of this podcast, this is going to be a lot of digging around in developer docs to figure out how we get these integrations in a Replit app. Replit might not one-shot it, but we could try it.
+
+I mean, just put another way, you're trying to prioritize apps that are going to be easy to push and deploy, right? You don't want like complex apps. Yeah, usually we're looking for CRUD apps, right?
+
+Something where it's just putting data in a database, pulling it, visualizing it. You could do all of this with vibe coding for sure. It's just going to take, you know, more tinkering.
+
+Okay, cool. So yeah, let's look at maybe another one. So this is case management for a nonprofit.
+
+So yeah, I mean, look at this. This is perfect. Can you read it out loud?
+
+We have a lot of like audio listeners who are not on YouTube. So it's called Airtable Base Creation Specialists Needed. The description is we are looking to have an Airtable base created for a nonprofit.
+
+The system will function as a case management and assistance tracking system. The database will keep track of clients, their case notes, any assistance given, their household members and appointments. There should be an interface design that will show an overview of the business, number of active clients, amount of utilities paid, etc.
+
+The interface should also allow workers to view client data and input data. So they're willing to pay $125 fixed for this project. When I look at that, I'm kind of like, is it worth it?
+
+What's a good number? How do you think about what the pricing of some of these are as an input for if I should build this or not? Yeah.
+
+So this is definitely low. You can look at like how much money they've spent and kind of see. So maybe these people are looking more for like overseas help.
+
+You can always submit a proposal and, you know, price over what they've put and hope that they bite. So if you're looking for an update on Upwork, you pay for like credits to apply, like I'll show you. Down here, like connects.
+
+And you want to boost it so that you're the top one. So they see yours. It just bumps it up on the hiring side.
+
+So it's first in their inbox. I don't know. These are probably like $2, $3 worth of credits.
+
+But yeah, so for pricing, this is too low. For something like this, I mean, the first one I did, I did for $750. I think you want to try to get like closer to that.
+
+You know, probably that was underpriced a little bit too. But then like you can also get recurring revenue from clients who want you to add on features in the future. Charge them to pay for hosting.
+
+So I charge clients to pay for hosting. So it all kind of depends on are you trying to get your foot in the door? You know, what are you trying to make?
+
+Right. Yeah, I think I guess the other piece of this is this person might be willing to pay $125, but someone else might be willing to pay $12,000. Who knows?
+
+Right. So I think maybe people need to do their due diligence around like, okay, this might not be worth it for $125,000. But let me see on Upwork if there's other requests for a similar type of thing.
+
+Quick break in the pod to tell you a little bit about Startup Empire. So Startup Empire is my private membership where it's a bunch of people like me, like you, who want to build out their startup ideas. Now they're looking for content to help accelerate that.
+
+They're looking for potential co-founders. They're looking for tutorials from people like me to come in and tell them, how do you do email marketing? How do you build an audience?
+
+How do you go viral on Twitter? All these different things. That's exactly what Startup Empire is.
+
+And it's for people who want to start a startup but are looking for ideas. Or it's for people who have a startup but just they're not seeing the traction that they need. So you can check out the link to startupempire.co in the description.
+
+Yeah, and so you can just do fixed price and do higher. Automations is also a good keyword to look for because you can turn most automations into an app with a front end. This one is talking about growing a tutoring business.
+
+They need a custom workflow for parent inquiries. Yeah, this could be good because they're pretty much trying to cobble together Google Forms, Airtable, Typeform, Calendly, a bunch of stuff. So you can make this into an app for sure.
+
+And they want to pay $2,500. We'll take it. We'll take that $2,500.
+
+Is this not too complicated? Or do you think we can do it? We can definitely do at least the first part, like the data entry on the call.
+
+All right, let's do it. $2,500? Let's do it.
+
+Yeah. Yeah. And so at this point, if it's a simple enough app and it's $2,500, right?
+
+You could go ahead and build the prototype and then in the proposal, send it as a Loom link of you demoing it for them, which I've done. And it worked for the first one I ever did. Otherwise, I would just talk to them.
+
+I would pull open my Airtable, my Replit, and be like, I'm experienced with Airtable. We could build it out in here or we could do it in Replit. And so replace Airtable with whatever SaaS you're honing in on, if it's Airtable or HubSpot or Google Sheets or whatever.
+
+So let's just try to prototype this real quick. I'm going to take this whole description. Okay.
+
+And we're going to cheat a little. How are we going to cheat a little? I like to feed it in the chat GPT and just tell it, like, can you format these requirements as a PRD for an AI coding assistant?
+
+Be agnostic when it comes to tech stack, but make sure to use shadcn. Okay. So a PRD is a product requirements document?
+
+Does that sound right? That is right. Yeah.
+
+It's basically a form that tells an engineer, like, here's all the features you're going to need. Here's, like, the data types and everything. Lays it out.
+
+So we're going to feed this into Replit to see what we can get. And then what was the other thing I said? Be agnostic about stack.
+
+I'm pretty much saying, like, don't be opinionated. Don't say we need to use, you know, Vite or, you know, this kind of web framework. Just let Replit kind of do its thing.
+
+Or whatever you use, you know. And you use, you know, you mentioned Replit a bunch of times. Like, why are you using, we've had Amjad, the CEO of Replit on the pod before.
+
+Yeah. You know, why using Replit versus the other platforms? Yeah.
+
+Yeah. So I haven't tried Lovable, but I've used Bolt. I would say those are two comparable ones.
+
+I like Replit because I think you can get from idea to MVP with the least amount of friction. You don't have to worry about package management, installing stuff, does all of that. And then you can deploy really easily and test.
+
+Of course, like, I still use Cursor and Windsurf to edit. If I have, if I get stuck in a loop fixing something or if it's something really complex, I'll pull the code down into Windsurf or Cursor and prompt there. Cool.
+
+That's helpful. All right. So what are we looking at right here?
+
+So this is the PRD that just failed to copy. Okay. This is, yeah.
+
+So this is, I guess the new chat GPT does like a split view for docs like this. Inquiry form, which sends details to our Gmail inbox. Yeah.
+
+So it's laying out all the features, like we said, just kind of translating it maybe so that an engineer or an AI engineer can understand it better. So let's go into Replit. We're going to paste that in.
+
+And I'm just going to say, build me this app. Use Shadzian where you can for UI. That's just the library I like of prebuilt React components.
+
+You don't have to say that. And I think Replit might use it by default anyways. The other little hack is if you want a specific, if you want to upgrade the UI, like say you've got all the app logic done, I go into VO and just describe what the page does.
+
+And then I pull that code. So like an app screen for managing parent student inquiries. You would obviously kind of lay it out more detailed than that.
+
+But you can just pull the front end code from VO. And it'll make you a mock up really quick. This is really good, especially if a client has sent you like if they sent you like a drawing, like a wireframe, you can just pop it into VO.
+
+So get that screen exactly. Then in this step, like you could just, I'm not going to use this, but you could also paste this in and tell Replit, I have the front end code for like this screen. So don't worry about it.
+
+And it works pretty well. Okay. So let's start building and see what happens.
+
+Let's start building. So this is Replit V2. It's going to go back and forth a little bit with you before it starts.
+
+I think it's going to ask me some questions on features. And it uses Cloud 3.7. What do you think of Cloud 3.7?
+
+Have you used it? Yeah, I mean, I use it, frankly, I use it more like less for coding and more for writing, basically. But I mean, it's a step in the right direction.
+
+You know, we also used it to build a game where that's pretty cool. Like one prompting a game. So I guess I have, you know, I have used it.
+
+It's like, I don't know. I'm just numb to everything now. I'm like, oh yeah, I even forgot.
+
+Oh yeah, one prompted a game. That's crazy, right? Yeah.
+
+Like deployed game, like fully deployed. Like insane. If you would have told me that, you know, I went to CS school.
+
+If you would have told me that, you know, how many years ago now? 15 years ago, that you'd be able to one prompt PRD design, front end code, back, you know, back end deployed in like under a few minutes. I would have told you you're crazy.
+
+I think I would have said the same thing, but because I wouldn't have understood any of those words because I studied public policy. So you said, so you're not even a developer by trade. No.
+
+Just kind of a self-taught script kitty, you know? Yeah, for sure. Okay.
+
+So it says, what is happening on the screen? All right, so the Replit agents read the PRD and kind of thought about it. Build the initial prototype.
+
+I don't know what would happen if you unchecked this. But it asked, do you want any of these additional features? We definitely want a Postgres database.
+
+That's going to be where all the user data is stored. I mean, this is kind of a wish list. And I would say in the past, with most AI, this kind of feature where you have a wish list distracts the AI.
+
+But I think Replit and Cloud 2.7 are so good now. It really helps kind of set up your app to bolt these things on later. So I'm going to check the ones that we want.
+
+Let's leave off DocuSign. Maybe that was in the PRD, though. Yeah.
+
+Let's just see what happens. And then I'm not going to deal with payment processor right now because that could get messy. So we're going to hit Approve Plan and Start.
+
+And this is why, I mean, tools like Replit and, you know, the other ones like Bolt and Lovable are great because, like, you know that after you do that prompt, it's always going to make you something that runs. So you always have a starting point. So, like, you just get past that initial, like, writer's block, which is a crazy way to think about code.
+
+And, you know, all the CS guys are probably cringing hearing me describe it like that. But what can you say? It's vibe coding, man.
+
+That's exactly what you could say. And watch them cringe as you say it. Yeah.
+
+Yeah. Yeah. Yeah.
+
+I get a lot of people replying to my tweets that are just saying, like, this app's going to break. Like, this is AI slop. This guy, you know, is just making this up.
+
+Is there any truth to that? No. No.
+
+So, these, you know, this product, this app, for example, like, you feel comfortable that this can go and see, I mean, we haven't finished it yet, but that it could see the light of day that someone can use and it can be valuable in their business? Definitely. Yeah.
+
+It definitely takes, I mean, you know, if you have no idea how code is working, you probably shouldn't be putting out a production app, right? Like, it does take some TLC to make sure to look out for things that you know would break once you put it in production, right? Like, you can anticipate how users are going to break the app, right?
+
+But, so, yeah, you just kind of have to have the foresight for stuff like that. But otherwise, yeah, these are pretty solid apps. They're just so simple.
+
+They're crud apps, you know? Right. Yeah.
+
+It's when you start adding more complex features that you could get in a little bit of trouble, right? I saw, like, the DocuSign integration. Yep.
+
+You know, payments. That gets, you know, a bit more complicated. What else can get more complicated?
+
+Like, what should people look out for? Yeah. Payments, definitely.
+
+DocuSign. Anything to do with a calendar. AI in general gets kind of mixed up with date formatting and time zones.
+
+Okay. So that's something to look out for, for sure. But then on the other hand, like, I made a, I've skimmed the HubSpot docs and kind of copied and pasted in what I thought we would need into Replit.
+
+And it set up OAuth with Replit, like, flawlessly. Like, I was dumbstruck. So it is pretty capable at integrating other services.
+
+Especially things that are just, like, kind of basic API, like, Git calls. If you're doing anything with, like, posts where you're changing data and other apps or servers, that could get really dicey. You want to make sure you're, like, locked down there.
+
+What I do now that this is, like, a real agency is I kind of have a dev that specializes in this kind of stuff. Go through and do, like, the last 15% and kick the tires, right? Right?
+
+So that's, and you can hire people straight off of Replit. They have bounties and stuff to do that kind of thing, just, like, hourly or for a fee. So that's definitely a good idea.
+
+While that's loading, can you, I've never done a bounty on Replit. I've heard about it. Can you just show us where we'd find that and what that looks like?
+
+It's just right here in your dash. Let's see. I actually haven't posted one yet.
+
+Okay, so this is crazy. So for, like, $500, someone could get a custom tool, an automated system. $1,500, you're getting a web application.
+
+But more interesting to me, and I think a lot of people listening, the get help button. Like, the fact that you can take it to 90%, 80% vibe coding. Sometimes something's not working, and it's really frustrating.
+
+And you're sitting there talking to your girlfriend or whatever, your wife, your husband. And you're like, I'm so close. I'm so close yet so far.
+
+The get help button. So what happens if you click get help? You can give the bounty a name, when you want it done by, describe the problem, and then use, you have to buy credits, I think.
+
+Yeah. It seems like they're called cycles, which is like a coin or whatever. Yeah, does Replit have its own crypto?
+
+Right? Like, they're a meme coin? Yeah.
+
+Yeah. So this is something I definitely need to be more disciplined about. It's just like, 50 bucks to troubleshoot something is such a good use of money versus me banging my head against the wall, burning $10 in AI credits, and six hours of my night, you know?
+
+Totally. And especially if you're- It's super useful. Like, this is your business now, right?
+
+Yeah. So if you're going in, you're going on to Upwork, and you're trying to make this a business. But by the way, before we go back to the Replit screen, how much are people- How much is the most money you can make on Upwork?
+
+Like, the top people of Upwork. Like, the Michael Jordan, the LeBron James- Oh, dude. Of Upwork.
+
+What are we talking about? Six figures, easy. I know one person that does over six figures.
+
+He is- But he has an agency team, right? To support him doing SEO. Right.
+
+But you can go on his profile. Yep. Are we talking- Oh, you can go on his profile?
+
+It doesn't say how much you make, right? It says how much dollars of jobs you've completed. Oh, okay.
+
+Okay. I'm curious if, you know, when you say six figures, is it like $100,000? Is it $900,000, you know?
+
+Like, if you go look, if I switch to client- $200,000 earned. $600,000 earned. And then it's like $12 an hour making $600,000.
+
+That's crazy. Right. But not to- I'm not picking on this guy, but a lot of these are kind of like, it's $12 to get in the door and then maybe they upsell you- Of course.
+
+Or give it to the team, right? I would say like Solo Dolo. I think you could easily clear $5,000, $10,000 a month just without any outside help.
+
+Definitely building apps, but even just like if you consult on the right kind of projects surrounding like a specific SaaS. Cool. All right.
+
+Should we go back to see our replet? Let's see how we're doing here. Let's see what we've done.
+
+Building the initial prototype. So real quick in replet, this is the agent, which kind of acts autonomously. And right now he's going through and scaffolding out the whole app.
+
+We can see it here in the files on the left. This is the client. This is what the user sees.
+
+He's building out components. He- isn't that weird that I say he? I was going to call you out on that.
+
+I didn't want to get you canceled, but is there a particular reason why you called replet he? No, I don't know. Is that?
+
+Yeah. I don't know what I should say. Replets building out.
+
+Yeah. We can move on from that. The comment section is going to have a field day with that one.
+
+Yeah. Anyways, you can see all the files here. The one thing is you got to make sure they initialize the database.
+
+I've noticed lately sometimes the replet doesn't initialize the database right away. But he's still going. So is he building a screen we can see?
+
+Yeah. Okay. So we can see this dashboard.
+
+So like a new thing in Replet V2 that they've added is it scaffolds like a UI that doesn't do anything like line by line when you start building just to kind of wow you. And like it blows my mind every time. It usually looks sick.
+
+Let's see if I can pop this out. No, not letting me. Okay.
+
+Okay. And it looks like it's doing like a mobile app. Yeah.
+
+Design. Which is interesting. I'm curious why it's doing that.
+
+So maybe it was in the PRD. Or maybe it's just taking some liberty. I think maybe it is.
+
+I mean, I'm not against it. I'm just it's just genuine curiosity. Yeah.
+
+I've never had it do that. Interesting. So that was probably my fault.
+
+I think usually I do specify web app. And lately I've just been not doing that because usually it knows. Either way, I mean, we can interact with it in the web.
+
+And you can see I've got so many. So we can see where I started like four months ago. I made a captain's log app that you just talk into and uses AI to like summarize your day.
+
+And since then I made like 40 more. It's crazy. It's crazy.
+
+And like, yeah. Yeah. And we'll talk at the end.
+
+Once this is live, I want to talk about the process for selling. Right. It doesn't have to be Upwork either.
+
+You know, so my best projects, best projects are always referrals. So people come in and just be like, hey, can you help me do XYZ with this client or fix this internal tooling? So I think what you can do if you're like an entrepreneur trying to do this is like build like one or two apps, like probably more than that.
+
+Like get good at it. Like I made like 40. And then just call business owners and be like, what's the most annoying thing you do?
+
+I like what's the most expensive SaaS you use? And then make them an app, right? And be like, and try to sell it to them.
+
+Right. And, you know, you decided to, I mean, we're talking about basically creating, basically doing consulting. This is essentially consulting.
+
+You're doing consulting. You're just using AI to do consulting and building. But you're doing consulting, vibe consulting, vibe coding.
+
+And, you know, but you've decided not to go and build a SaaS and sell it to people, right? Nightmare, money pit. So I want you to, I want you to talk about, because people are, I want you to talk about that.
+
+Because people are probably going to, there's going to be a lot of people listening to this and be like, this is, this is small boy stuff. You know, this is a few hundred dollars here, a few thousand dollars there. The real opportunity is building multi-million dollar a year SaaS businesses.
+
+What do you say to those people? It's a nightmare. That's a money pit.
+
+You're going to spend a ton of money on marketing. I just don't, I get that it's an asymmetric bet, but like, you got to have the juice to do that, right? Yeah.
+
+You have to have the, you have to, the reality is you have to know how to juice, right? Like understanding distribution is a completely different skill set than, for example, building. So if you're one of those people that you think you can build audiences, you can build communities, and you're willing to invest in that in yourself, but also, you know, the time that it's going to take, right?
+
+Building an audience is going to take time. Right? You're seeing this now.
+
+Yeah. And the way my brain works too, or maybe yours is like this with doing kind of multiple different types of projects is I think if you're, you know, betting it all on one like app or use case, you get so much tunnel vision and you lose out on the feeling of finishing other apps, learning other libraries, APIs. Like you're missing out on a lot of learning, serendipity, you know, just surface area of luck.
+
+So like the app that I just sold most recently, I sold to a consultant for a big company, to the big company. But she's like, this is amazing. Let's turn around and sell this to company B and C because they have the same exact problem.
+
+They're in the same industry and I consult with them. Um, so that's awesome. You can do that.
+
+If you find a prop, find a, I think this is a more direct approach to finding like a burning hot problem, uh, that you can then resell to other people. Yeah. I, and, and that's what excites me.
+
+I gotta be real with you, Billy. Like what excites me about this whole approach around going to through Upwork, finding problems, vibe coding your way through it is. Sometimes it gives me ideas around building something that's validated that I can go ahead and sell that to other people who have the same exact problem.
+
+Right. So that's, that's what excites it for me. Cause I'm, I understand how to build distribution and, and, and how to sell, frankly.
+
+Sometimes it's not even about distribution. It's like how to, how to take a product and figure out how to go to market. Um, so yeah, that's what excites me about this whole approach.
+
+Yeah. Yeah. And I, it's just, it's a different lane B2B versus B2C.
+
+You know, I, I find it's better to work with business owners. I think they're more pleasant than, you know, a bunch of people who are going to be saying like your app broke and you need to do this and blah, blah, blah. There's one source of truth.
+
+If you're building apps to the business owner and it's the business owner, right? Well, it's a different, so you can still build a SaaS app and target business owners. You know what I mean?
+
+So you could still do that. I'm thinking like mobile viral app. You're right.
+
+Yeah. Totally viral. You can still do that.
+
+And, and you can, you can build a SaaS app and literally only have 10 clients, right? But maybe it's 10 clients who pay you a thousand dollars a month. Yep.
+
+Yeah. And, and that's a, that's an, you know, a whole other approach, right? So I think that when people think about building software, they think about maybe it's, you know, the, the popular example right now is like Cal AI.
+
+And I've had those guys on the podcast. They're doing $30 million a year. So they vibe coded this and basically, you know, great concept, you know, pancakes, you take a picture of it.
+
+How many calories, right? And then they. Hey, wait, wait, wait.
+
+Can I stop you? Yeah. Great concept.
+
+Pancakes. Pancakes. People like pancakes.
+
+People don't like calories. Yeah. Oh, this is sick.
+
+Right. So, uh, really smart. And they've got like a few of these apps where they're, you know, again, these aren't trained developers.
+
+These are guys, um, who are like in their, they're teenagers and early twenties who kind of vibe coded their way into, into this $30 million a year in revenue. So, yeah. Good night.
+
+Yeah. With a few of their apps. Now, this to me is really cool.
+
+Yeah. Um, but I think that this, because it's such a distribution challenge is way harder than maybe building a SaaS app that targets. Like the easy here.
+
+Okay. Think of it as like a framework, right? The easiest thing you can do is get paid for a service.
+
+That's easy mode. Then like the medium thing you can do is build a software for B2B. Yep.
+
+And then the hard mode is like building software like this for B2C. Yeah. That's kind of like how I, how I picture it.
+
+I think you're right. Uh, I think it just depends on how you define like hard, right? You know, how I defend, how I define it is.
+
+Hot, you know, likelihood of success. Yeah. Yeah.
+
+Yeah. Like that's how I, you know, and, and likelihood of success with risk, with risk, right? Like it's way more risky, um, to go build a consumer social app.
+
+That's why I like this approach that I'm doing. Cause I can de-risk by getting a price up front. Right.
+
+Yeah. But you don't, you de-risk, but you don't get the, you, you, there's, there's, you know, this business is worth a lot of money. You know what I mean?
+
+So, um, pros and cons with each and for everyone, for the listener, just think about what excites you. Does building the Cal AI excite you? Does building like a SaaS app focused on, uh, a thousands, thousands of customers excite you or 10 customers?
+
+Or does doing Upwork, MVPs banging it out and doing, you know, between a hundred thousand and a million dollars a year of revenue. Um, does that excite you with the small team? So everyone needs to figure that out for themselves.
+
+I, I also just like unbundling existing SaaS. I mean, I think that's going to be such a huge market soon. Uh, I think you're going to be able to put in like, you know, Ahrefs.com and then have an AI build you an Ahrefs clone using like a, an API.
+
+And it's going to be, you know, so much cheaper. Um, I think that's an interesting way to find ideas is just looking at a list of SaaS or like existing APIs and building apps for them. Yeah.
+
+I mean, so go to Ahrefs for a second, then we'll go back to Replit. So this is a business that does hundreds of millions of dollars a year, I think, in revenue. And it's been around forever, right?
+
+Yeah. Forever. Oh yeah.
+
+Uh, for years and years. Are you saying basically there's going to be an opportunity to essentially duplicate this? Um, oh, it sounds like what you're saying is there's two, two opportunities.
+
+One is you can duplicate this and make it cheaper or free. And the second thing is when you say unbundle, I think what you mean is target it for a specific niche. Is that correct?
+
+So Ahrefs for doctors, just, you know. No, no, actually. Um, I'm not taking a shot at, at Ahrefs either, uh, which struggling to, to show me anything.
+
+Uh, but Ahrefs is a, it's an SEO, uh, kind of tool and all their proprietary data is great. Uh, but there's also public APIs that you can just pay to get SEO data from. And so what I mean is like, I think in the not so far future, you'll be able to paste a SAS into like, I don't know, you could do it with chat GPT operator, maybe, um, and have it look at the SAS and reverse engineer it and use a public API.
+
+Yeah. To, to build it for you. Right.
+
+Got it. Okay, cool. Does that make sense?
+
+It does. It does. Yeah.
+
+Um, should we, should we head back to our, our, our baby? Yeah. Okay.
+
+Here we go. So I'm going to preview this full screen. Wow.
+
+Wow. Wow. Wow.
+
+Yeah. I mean, look how good this, oh dude. And it's, it's mobile optimized.
+
+That's why it was showing that. Oh, man. This is incredible.
+
+Like truly. Yeah. Ah, so we've built this app.
+
+Okay. We're seeing, I mean, this looks like it works. Like, um, but let's just double check.
+
+What do you think an app like this is worth? A couple of thousand bucks. Yeah, definitely.
+
+And to kind of add on to what we were talking about earlier, like the, one of the advantages of, of doing this is that you can charge for like, this is your monster that you've made. So then you can charge for ongoing support and feature requests and be kind of like a dev agency, uh, for your, for your clients. Right.
+
+It, it's not like a novel concept, but, um, like, I don't know. It worked. It worked.
+
+Um, here we go. So we got a recent inquiry here. Scheduling.
+
+Wow. Whoa. Okay.
+
+So it looks like it doesn't have Calendly. Okay. It looks like this is a placeholder.
+
+So this is a tutor. This is going to be a user. Add it.
+
+This is so funny. This is so similar to one of my real life clients and they need this. But the thing that is kind of stopping us from building this is data privacy laws for students.
+
+We have to figure out how we can be like Uber compliant. Um, otherwise everything is like air table and Google sheets. Love it.
+
+Well, this is, this is awesome. Yeah. And then what I would do is, like I said, if you got time to kill, like if time is in your constraining factor, make it an MVP.
+
+I, I, I kind of like, I think you could just make like a, it doesn't even have to do anything. Just make a mockup, like landing page or dashboard. You could even just do it in VO.
+
+That would be even quicker. Uh, as we saw here, dude, look how good this looks. So this one was done in like thought for six seconds.
+
+This is probably like a minute. So what I would do is find the op work job, make a mockup and VO record a one minute loom that says, I'm Billy. I make apps.
+
+I know you wanted an air table, but I made it custom flatter them by putting their like company name. If you have it in the top left and then send the loom, boom, rinse, repeat. Next one.
+
+Uh, it doesn't have to be up work. I mean, you could do the phone book, right? Totally.
+
+And if you wanted to put this into replet, you talked about that earlier. Yeah. So go into the code.
+
+It's got a breakdown of the components here. So I would literally go into my components here and what do we have? Dashboard detail inquiry list forms.
+
+Yeah. I would just, I would put them in here, uh, dashboard details and then copy it. It's just like a regular coding IDE.
+
+And then I would tell replet, Hey, I made this component. Can you replace the existing component with this one? Or can you replace this page, uh, with this?
+
+Or you could paste in the entire page, like at the start, like when you're doing that initial prompt with replet and that's how you can pretty it up. So that's the page. And I recommend people do this, like it sheds.
+
+And it looks clean, but I think adding that extra polish, like it really does make a difference. Yeah. We can go side by side here.
+
+Are they both solid? They are. They are solid.
+
+But I, I, what I do like about the, the V zero one is like the bright colors. I find that like this feels the other one feels sterile. Well, actually for that use case, you kind of want a sterile, you kind of want a sterile design, maybe tutor sync.
+
+Like you don't want it to be like super, super like colorful. And also Greg, the kind of clients I work with do not care for the most part. They want it to look clean and they want it to work most of all.
+
+Right. Okay. Fair enough, Billy.
+
+That's fair. But you can make it super pretty in VO. Like if I'm doing like a data viz app, definitely go VO for charts.
+
+And yeah, then I, I would send that proposal and then, and then sell it. Um, what you do is, and I had someone ask, like, you know, do people ask for an agreement on who owns the IP of this and that? And then, no, not, not really.
+
+And maybe that's like short sighted of me, but I kind of sign like a standard boilerplate. Um, and only if I'm like, I'm going to use this IP in the future. Like what I add that in, um, I, you don't need to get into negotiating like over IP in my opinion with little projects like this.
+
+Um, and then, yeah, you can deploy it to a custom, um, domain name, right? In repl it, or you could, you know, push this to get hub here, push this to get hub and download it all locally, and then just push it wherever you want to deploy it. Uh, you could mix and match, keep the database here.
+
+Um, they have data buckets on repl it too. Uh, if you want to store photos, object storage, uh, which is sick. I would say the things that like would make this a lot easier is like just a really simple, like preset way to add like Stripe or Google OAuth to any, um, any projects.
+
+It's, you can do it with prompting though. Yeah. I mean, you got to think that's coming, right?
+
+That's gotta be coming. Yeah. And one of the cool things about repl it too, is that when you add in something that needs like an API key, they can, you can choose to store that secret on your account and then use it again.
+
+So you can, you know, it'll know what your Stripe secret is. Love it. All right, Billy, this has been, this has been a lot of fun.
+
+I can't thank you enough for taking us through this. Um, we're going to include in the show notes, we're going to include your social links, um, worth the follow, um, criminally under, under followed. I think you've got like 1900 X followers.
+
+When I started following you last week, I think you had 800. So you're, you're, you're, you're, you're climbing up, but not fast enough. Yeah.
+
+Any, anything else, uh, you want to say? Uh, no, thank you, Greg. Uh, and go out there and build something, just vibe code, make a game, um, make something cool and, and then move on.
+
+I would, I would move on to the next one. I would just make a ton of apps. That's my advice.
+
+And, and is doing it on Upwork. I mean, it's, it's like you're getting paid to do it, right? You're getting paid to learn, right?
+
+Getting paid to learn. I love it. All right, Billy.
+
+Thanks so much. And I'll see you around. All right.
+
+Peace. Peace. Peace.

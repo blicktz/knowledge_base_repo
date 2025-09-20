@@ -19,6 +19,46 @@ from httpx import RequestError
 from tqdm import tqdm
 from dotenv import load_dotenv
 
+def slugify_filename(filename: str, max_length: int = 100) -> str:
+    """Create safe filename for output (matches server logic)."""
+    import re
+    import unicodedata
+    
+    # Remove extension
+    if '.' in filename:
+        name = filename.rsplit('.', 1)[0]
+    else:
+        name = filename
+    
+    # Normalize and clean
+    name = unicodedata.normalize('NFKD', name).encode('ascii', 'ignore').decode('ascii')
+    name = name.lower()
+    
+    # Replace problematic characters
+    char_replacements = {
+        '$': 'dollar', '⧸': '_', '/': '_', '\\': '_', ':': '_',
+        '*': '_', '?': '_', '"': '_', '<': '_', '>': '_', '|': '_',
+        '(': '_', ')': '_', '[': '_', ']': '_', '{': '_', '}': '_',
+        '&': 'and', '%': 'percent', '#': '_', '@': 'at',
+        '+': 'plus', '=': '_', '!': '_', '~': '_', '`': '_', '^': '_',
+    }
+    
+    for char, replacement in char_replacements.items():
+        name = name.replace(char, replacement)
+    
+    # Clean up spaces and underscores
+    name = re.sub(r'[\s\-]+', '_', name)
+    name = re.sub(r'_+', '_', name)
+    name = name.strip('_')
+    
+    if not name:
+        name = 'transcript'
+    
+    if len(name) > max_length:
+        name = name[:max_length].rstrip('_')
+    
+    return name
+
 class TranscriptionClient:
     """Client for RunPod FastAPI transcription server."""
     
@@ -373,6 +413,27 @@ class TranscriptionClient:
         except:
             pass  # Ignore cleanup errors
 
+def check_existing_files(audio_files: List[Path], output_dir: Path) -> tuple[List[Path], List[Path]]:
+    """Check which files already have transcripts and which need processing.
+    
+    Returns:
+        (files_to_process, existing_files)
+    """
+    files_to_process = []
+    existing_files = []
+    
+    for audio_file in audio_files:
+        # Use same logic as server to determine output filename
+        safe_name = slugify_filename(audio_file.stem)
+        expected_output = output_dir / f"{safe_name}.txt"
+        
+        if expected_output.exists():
+            existing_files.append(audio_file)
+        else:
+            files_to_process.append(audio_file)
+    
+    return files_to_process, existing_files
+
 def find_audio_files(input_path: Path) -> List[Path]:
     """Find all audio files in directory or return single file."""
     audio_extensions = {'.mp3', '.wav', '.m4a', '.flac', '.ogg'}
@@ -425,6 +486,7 @@ Examples:
                        choices=["tiny", "base", "small", "medium", "large", "large-v2", "large-v3", "turbo"],
                        help="Whisper model to use (default: turbo)")
     parser.add_argument("--no-cleanup", action="store_true", help="Don't delete job from server after completion")
+    parser.add_argument("--force", action="store_true", help="Process all files even if transcripts already exist")
     
     args = parser.parse_args()
     
@@ -439,6 +501,30 @@ Examples:
         print(f"❌ No audio files found in: {args.input}")
         print("   Supported formats: MP3, WAV, M4A, FLAC, OGG")
         sys.exit(1)
+    
+    # Check for existing transcripts (unless --force is used)
+    if args.force:
+        files_to_process = audio_files
+        existing_files = []
+    else:
+        files_to_process, existing_files = check_existing_files(audio_files, args.output)
+    
+    # Print file status summary
+    print(f"📊 File Status Summary:")
+    print(f"   📁 Total audio files found: {len(audio_files)}")
+    if existing_files:
+        print(f"   ✅ Already transcribed: {len(existing_files)}")
+        if len(existing_files) <= 5:  # Show details for small numbers
+            for existing_file in existing_files:
+                safe_name = slugify_filename(existing_file.stem)
+                print(f"      - {existing_file.name} → {safe_name}.txt")
+        else:
+            print(f"      (Use --force to re-process existing files)")
+    print(f"   🆕 New files to process: {len(files_to_process)}")
+    
+    if not files_to_process:
+        print(f"\n✅ All files already transcribed! Use --force to re-process.")
+        sys.exit(0)
     
     print(f"🎵 RunPod Transcription Client")
     print(f"{'=' * 50}")
@@ -468,12 +554,13 @@ Examples:
         sys.exit(1)
     
     # Process files one by one with new two-step workflow
-    print(f"\n📤 Processing {len(audio_files)} files sequentially...")
+    print(f"\n📤 Processing {len(files_to_process)} files sequentially...")
     completed_jobs = []
     failed_jobs = []
+    skipped_jobs = len(existing_files)
     
-    for i, audio_file in enumerate(audio_files, 1):
-        print(f"\n[{i}/{len(audio_files)}] Processing: {audio_file.name}")
+    for i, audio_file in enumerate(files_to_process, 1):
+        print(f"\n[{i}/{len(files_to_process)}] Processing: {audio_file.name}")
         
         if not audio_file.exists():
             print(f"❌ File not found: {audio_file}")
@@ -516,8 +603,10 @@ Examples:
     print(f"\n📊 Processing Summary:")
     print(f"   ✅ Completed: {len(completed_jobs)}")
     print(f"   ❌ Failed: {len(failed_jobs)}")
+    if skipped_jobs > 0:
+        print(f"   ⏭️  Skipped (already exist): {skipped_jobs}")
     
-    if not completed_jobs:
+    if not completed_jobs and not skipped_jobs:
         print("❌ No files processed successfully")
         sys.exit(1)
     
@@ -525,6 +614,8 @@ Examples:
     print(f"📊 Total files: {len(audio_files)}")
     print(f"✅ Successfully completed: {len(completed_jobs)}")
     print(f"❌ Failed: {len(failed_jobs)}")
+    if skipped_jobs > 0:
+        print(f"⏭️  Skipped (already exist): {skipped_jobs}")
     print(f"📁 Results saved to: {args.output}")
 
 if __name__ == "__main__":

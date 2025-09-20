@@ -1,0 +1,643 @@
+I heard it was possible to use Cursor to create mobile apps that are native and put them in the App Store. But I didn't know how. So I brought on this guy, Chris, who's building a huge portfolio of mobile apps where he's using AI and Cursor to actually create them.
+
+And he reveals his exact process, all the techniques, how he's putting agents into the apps, how he's using Open Router, how he's using ChatGPT 4.0 image generation, and all these techniques with Cursor that I thought were super, super interesting to actually go and create a native mobile app. iOS is a huge opportunity. There are people who are going to print millions of dollars doing it.
+
+And he shows an example of how to create some features in a matter of a few prompts. So enjoy the episode. I hope you learned something.
+
+I've been meaning to make this podcast for a while. I got my friend Chris Warwick on the pod. I've been watching this guy.
+
+To be honest, Chris, I thought it was like a big company behind you. You built like a portfolio of these mobile apps that are really clean, really interesting. Some that I think can get some serious MRR.
+
+And then I find out that it's just this dude who, you know, didn't go to Stanford, doesn't work at Google. Kind of, you know, a regular guy who's using AI to actually go and build these apps. So, Chris, welcome to the show.
+
+And I want to know if people stick around to the end of this episode, what are they going to tangibly get that they aren't going to get in the million other cursor tutorials and vibe coding tutorials? Yeah. First, thanks for having me on, Greg.
+
+Really awesome to be here. I think I'm hoping that they get a little bit more of behind the scenes of an advanced cursor workflow. And I use advanced in quotation marks because I'm not the best developer, but I have picked up a lot of things.
+
+I'm doing some interesting things with cursor, like doing native iOS development, which not a lot of people do. So I'm hoping they pick up maybe some golden nuggets in there. And then even if you're a developer, maybe this hopefully demystifies, you know, if you've never used AI, maybe you start using it and just kind of see if this guy can do it.
+
+I can do it, too. Cool. All right.
+
+Let's let's get our hands dirty. Let's give it that sauce. Let's give it that sauce.
+
+If I should share my screen like you guys can just be able to see it. Okay, cool. Okay.
+
+So the first thing I wanted to share was just really quickly, just a little bit of context on me. So I built these four apps. I'm not trying to plug the apps or anything.
+
+I'll just show one of them. This is the bigger one. So they're all productivity apps, but this one's called Ellie.
+
+It's a daily planning app. It's got a couple thousand monthly active users. Like I think probably like around like 2000 paid users.
+
+A lot of people, a lot of students use this app. The reason I mention it is it's a pretty robust app. And people are pretty surprised when they're like, okay, who's the team behind this?
+
+They figure out it's me. They're like, how is this possible? And to be honest, I've done this four times.
+
+I have another app, this budgeting app that I have. It's a pretty robust app, a personal CRM app, a very robust app. The only reason I'm able to do this stuff is because I have AI to supercharge my workflow.
+
+So I just want to share that context. Like there's a lot of tutorials on how to build, you know, a weekend project, how to build a weekend game. And there's absolutely nothing wrong with that.
+
+Like those are awesome. But people are always curious. Can you build something like way more advanced?
+
+What happens if you do this over a long period of time and you have AI? And I think this is exactly what happens. Like you can build some pretty serious complex things.
+
+So that's some context. Some rapid fire context on like just the tools I use, everything. So I'm primarily using cursor.
+
+I've tried literally everything. I think I've been using AI for coding for about two years now. I somehow got my hands on the first version of GitHub Copilot when it first came out.
+
+Like it didn't have chat. It didn't have anything. It just, just comment.
+
+And I was basically using the comments as a chat. Fast forward, I've used a bunch of tools like Windsurf. I've used Cloud Code, like everything.
+
+But right now at this time, cursor is the tool that I use. And people are pretty surprised that I actually use this for native iOS development, which not many people do. Like I've seen people use it for React and Expo development.
+
+But people are always curious, how do I do that? So I'll share how I do it. And then the other tool I wanted to highlight was I actually use ChatGPT for asset generation.
+
+And one of the things that I've started getting into was putting really good assets. Now that the chat, I think as of a few weeks ago, has gotten so much better. And that, I think, is going to bring a level of polish to all my apps that I've never seen.
+
+So I really wanted to share that. And I had like a semi-viral tweet going about how people were always asking, how are you making these assets? This is crazy.
+
+How are you doing it consistently, I think is the big thing. So I'm going to reveal that on this podcast, which a lot of people have been asking me to make a video about, but I haven't yet. So you get the first one.
+
+You get the first look at that, Greg. And then in terms of the models that I use, I'm using Claude 3.7, which also surprises people. 3.5 is pretty good.
+
+3.7 usually goes off the rails. But to be honest, I feel like I'm a little bit, a good enough developer to kind of control it and figure out when is it going in the wrong direction and stopping it. So 3.7 is what I use.
+
+I've tried Gemini. I've tried like the new 03 that costs 30 cents every call. I've tried all of these different things, but right now Claude 3.7 is the best thing, especially for native iOS development.
+
+For iOS development, it's not even a question. 3.7 is probably the best one right now. So that's the model.
+
+And then now how do I do the iOS coding? To be honest, what I do is it is like the jank is set up, but I basically open the Xcode project in Cursor. Quick break in the pod to tell you a little bit about Startup Empire.
+
+So Startup Empire is my private membership where it's a bunch of people like me, like you, who want to build out their startup ideas. Now they're looking for content to help accelerate that. They're looking for potential co-founders.
+
+They're looking for tutorials from people like me to come in and tell them, how do you do email marketing? How do you build an audience? How do you go viral on Twitter?
+
+All these different things. That's exactly what Startup Empire is. And it's for people who want to start a startup but are looking for ideas, or it's for people who have a startup but just they're not seeing the traction that they need.
+
+So you can check out the link to startupempire.co in the description. I have my Xcode project running. And what I'm doing is I'm literally just opening the file in Cursor.
+
+So this is the Xcode project for my budgeting app Luna. And then I literally just opened the file in Cursor to be able to make edits. And then I use the chat feature, make file edits.
+
+And then I have to switch back to Xcode to build. And I do this over and over again. And that's actually the way that I've been coding with iOS development.
+
+And I honestly just figured this out, I think, a month and a half ago. But the old way that I was doing it was literally pasting code into Claude, chatting with Claude and repasting it back. So even though I'm switching between Cursor and Xcode, this is substantially faster still.
+
+So this is the current way that I'm doing it. And people are pretty surprised because they're also like, I had no idea you can just do that. They thought you had to do something special to be able to open this kind of file.
+
+But no, you can just open the project. So that's literally how I'm doing this workflow right now is just opening it. So I don't know if you have any questions, Greg.
+
+My reaction to that is I'm surprised. Oh, okay. Okay.
+
+Yes. Okay. Yeah.
+
+Okay. So that's cool. I'm going to try that out.
+
+Yeah. Yeah. It's pretty good.
+
+The only caveats I'd say is that, and here's where people kind of mess up. And this is what I've had to learn is do not try to use Cursor to set up the project for Xcode. That is not going to work.
+
+So that's, I think, why people, and that's actually how I tried to do it originally. And that's why I was like, okay, Cursor doesn't work for this. You got to set up, there's a lot of things you got to do manually in Xcode.
+
+Like when you're, like, for example, there's a lot of settings in here, I think. God, I hope I don't reveal anything. But there's just a lot of settings in here that you need to actually do yourself.
+
+And it's something that Cursor just does not have a really good capability of doing, from my experience. Like being able to select some of these frameworks and embedding them in here. Cursor just can't do that.
+
+I've noticed that for other projects, like for React Native and all that stuff, it is able to do that. Like it can do all of that in the terminal. Xcode is not that way.
+
+You got to do it manually. So I think that's where people get tripped up and stop doing it. So set up the project manually, then just open it in Cursor.
+
+And then also when you need to make certain changes, like, for example, to make outgoing network requests, like literally hitting up a server, you need to enable that in Xcode, like manually. Like Apple forces you. Cursor is not going to be able to do that for you.
+
+So those are some of the nuances. But yeah, it's still worth it, though, in my opinion. Cool.
+
+What's next? So, okay. What I wanted to do actually was go through a project.
+
+So I originally was like, maybe I'll go on this podcast. I'll just go spin up a project live and kind of do it. I did it last night.
+
+It does not work that way. Like there were so many errors that I ran into. I was like, this is going to take five hours.
+
+So what I did was last night, I spun up a quick feature to kind of demo for you guys. But I recorded all of my steps. Like so I committed all the code and thankfully Cursor saves all the chat history.
+
+So we're going to go through all the prompts that I use to get to this point. So we're not going to really hold. I don't think we're going to skip anything here.
+
+I want to show you guys exactly the prompts I use from get to point A to point B. And for fun, I know you mentioned, Greg, you were kind of interested. How do I build AI apps?
+
+So I've seen a couple of videos online about how to build AI apps, especially stuff with image generation. But I wanted to take a little bit of a different approach and show you guys how are we going to build a little bit more of an advanced chat app. So there's also 100 chat app tutorials.
+
+But I decided to do a couple of unique things that I think would be interesting for your listeners to see. So the first thing is I want to show you guys what the like quickly what the app state is. And we're not building the app from scratch.
+
+I also tried that too as a demo and that one took even longer. So I was like, we're not doing that. But I'm going to show you guys how to put an AI feature into an app that doesn't have AI.
+
+So we're going to build an AI feature into my budgeting app. So this is the budgeting app. So this is my budgeting app, Luna.
+
+There's two sections here. There's a weekly and monthly spend. I think that's honestly the cool feature.
+
+I've never seen a budgeting app that shows both at the same time in this format. But it's just like a traditional budgeting app. You can set your budgets.
+
+You can add transactions. It's very basic. So what I want to do is see, can we add some AI into this app?
+
+And I was trying to come up with some features. So I was brainstorming with my friend and we were like, hey, what would be interesting? And he said, it would actually be cool if I can just chat with it and just ask it questions about my spending.
+
+And apparently what he does is he literally just exports his current budgeting app as a CSV and throws it into ChatGPT. And I think a lot of people do that with their finances. They just take it and do it.
+
+So I was like, OK, maybe this is actually a pretty useful feature. Maybe people will actually try this. So that's the feature that we're going to try to build right now.
+
+And it's using AI. And so I want to just walk through. I'm not going to do it live, but I'm going to walk through all the prompts that I used.
+
+And we'll walk through what the app looked like at that stage so you guys can see. And I think there's going to be a couple of interesting techniques and things that you guys can kind of pick up from watching me do this. So, yeah, let's just jump into it.
+
+Unless do you have anything you want to add? OK, cool. OK, so this is where the app's starting point is.
+
+There is no AI. But what I want to do is hopefully put another icon at the bottom right for a chat. So that's what we're going to try to do right now.
+
+This is where the app is. This is where the app's starting. So let me show you guys the first prompt that I ended up using.
+
+OK, so basically the first prompt that I did, again, the app, there's no chat. There's no AI or anything. The first thing that I did was I told it, I want you to create a new tab for an AI chat.
+
+Can you make the UI for this? Try to follow the similar UI as other parts of the app. You can just hard code the chat.
+
+Just use dummy data. Basically, what I wanted it to do was just create the UI. And that's actually one of the big techniques that I use is I try to only do the UI first.
+
+And then I start hooking up the back end or hooking up data afterwards. But the reason I do that is I found that the AI has a way harder time. Or sorry, it has a way easier time following the instructions if it can just focus on one thing.
+
+And it honestly probably could get this in one shot. There's a chance, but I didn't want to take that risk. So I decided let's just do the UI first and let's do dummy data.
+
+And then we'll hook it up later just because I really wanted to see. Or I just wanted to increase the chances of success of this working. And then I also tagged the entire code base here, which when I'm doing anything major, just to make sure that it has the right context.
+
+I like to tag the entire code base. And this is I think I just tagged the entire Luna folder, basically, which is which is the the iOS code base just to make sure that it has it. So once this is a so once I got this.
+
+Oh, I'm sorry. Another another tip here was I told it try to follow the UI as similarly as the other parts of the app. This was very important because I've noticed that if you just tell cursor, hey, can you go build this like feature or whatever?
+
+Sometimes you get lucky. It does kind of look like it's part of the app. But then sometimes it just makes up a bunch of components and tries its luck.
+
+And I wanted to see, OK, what happens if I tell it to just follow the rest of the UI? So we ran this. I did get a bunch of air.
+
+This is the output. I did get a bunch of airs. And I did notice that there was a little cutoff here.
+
+But the only thing that I had to the only thing that I manually added here was I added this chat icon just to match the other icons. So I created that. But in literally one shot with the UI, this is what it came up with.
+
+All of this is hard coded. So it hard coded this this data. As you can see, it actually did pretty well trying to follow the the rest of what the app looked like.
+
+Like it got this purple color scheme. It really matched it with the rest of it. And the other surprising thing was if I just type whatever I want in here, it actually also hard coded the responses.
+
+So it actually got this animation where it kind of goes down. That was actually kind of surprising. I thought I would have to go do that myself, but I guess it was it was good enough for that.
+
+So this was the literally from the first prompt. It added this again. I added the manual icon, but now we have the chat UI functioning.
+
+So I was really happy at this point. I was like, OK, maybe I could just, you know, hook this up at this point. I'm the only issues I did run into just to share where, for example, when I first ran it, this little message area was hidden behind the tab bar.
+
+So I had to do a couple of prompts to fix that. I also noticed that, you know, I didn't fix it here yet, but I hate how it kind of scrolls at the top here. Like I'd love for it to scroll at the bottom.
+
+So I think I use like one or two prompts to go ahead and do that. But here, let's just walk through some of the other stuff. I didn't have to, you know, that was insane.
+
+Yeah. Yeah. I think there's a couple of UX patterns that I think it's really well trained on.
+
+And thankfully, chat, I think, is one of those things. Yeah. OK, so then the next thing.
+
+So I had a bunch of prompts here. This was like because the chat area was cut off. And another thing I do is I always feed it in screenshots of things.
+
+So I guess it's broken here. But I did take a screenshot of the app so it could see what I was seeing and I feed it in. That's another thing that I'm surprised people.
+
+They they are when I tell them, like, hey, by the way, you know, you can feed in images into cursor. They're kind of surprised by that. Honestly, I was surprised the first time I saw that, too.
+
+But I do that for UI sometimes if it's not getting the UI, I go to like Mobbin or I go somewhere else and I just feed in screenshots of things and say, hey, can you try to get close to this UI as a starting point? So that's another technique is just constantly feeding in images into this thing. So then, yeah, I did.
+
+It got it wrong a couple of times. Still not fully visible. So so yeah, I had to I had to kind of correct it here.
+
+But once I got this done and it's at this this place, I was like, OK, you know what? Let's go ahead and let's actually just try to hook up the let's try to hook up the data here. So the next thing was I was like, OK, let's try to let's actually try to get this hooked up to an actual LLM to an actual AI.
+
+So one of the things I don't know if you're familiar with open router, Greg, or if anyone's ever talked about that. Yeah. OK, nice.
+
+OK. But can you tell people? Yeah.
+
+Why it's so dope? Yeah. OK.
+
+So open router is basically it's basically a service where if people are familiar with how they hook into LLMs, you usually go call open AI directly or you call Claude directly and you feed it in messages and then it kind of spits it out. But you have to integrate directly with them. Open router has a service where they've integrated with, I think, over 300 models.
+
+And basically, you can just switch out the models with one line of code, honestly, just like a string, just a piece of text. So if I wanted to call the Gemini API and just test it out, I can go do that. Then with one line, I can switch it to Claude or I can switch it to open AI.
+
+So open router has all of these different models. It shows all the price points. And I love using it for development because now I can test the different LLMs and see what kind of responses am I getting or how expensive is this with just one line.
+
+So that was another thing I wanted to share here, which I honestly, I think I learned like two or three months ago, but it's been so game changing. I think there is a bit of a fee on it, but in my experience, it's like totally worth it just because of the speed of having to switch these things out. And then once I think I confirm like, okay, I'm good.
+
+I know exactly the models I want to use. Then maybe I'll just go ahead and skip that and just go direct. But during development, it's incredible.
+
+So I know I wanted to integrate open router into this for the chat. And so that was actually the first prompt that I did was I said, let's, can you make this functional and not hard coded? And again, it was just the hard coded chat, the chat UI.
+
+And I said, can you use open router so I can swap out the chat model quickly? And can you put a setting at the top, right? So we can toggle between the model.
+
+So I wanted some sort of dropdown where I can switch between GPT or between Claude. And then I said, when you ask questions, can you use the last three months of transactions as context? So I think honestly, it probably would have done something to feed it in context.
+
+Because when you, when I ask a question, it's not going to know how to answer it if it doesn't have the transaction history. So I just explicitly decided to put this here just to try to save on prompts. Like I just, I was like, I'm not going to take a risk on that.
+
+Something cool that I also wanted to mention, which some people don't know about is that you can actually feed in documentation into cursor. And so that's what I did here. I basically took the open router docs, you just literally copy and paste the URL.
+
+You can go to cursor and you can type at docs. And then when you add a new doc, paste it in here, it's literally going to index the entire documentation of that service. And then now it has context of what are the API calls that are needed to use open router?
+
+It's, it's just amazing. So then I don't have to copy and paste documentation in here and tell it, Hey, this is how you use open router. So that's been really game changing.
+
+And I will also say for Apple specific development, when you're developing on iOS and Mac, a huge issue right now that I found with cursor is that it is constantly hallucinating what you can do in an iOS app. And then it's even worse for a Mac app. So I started building my first Mac app recently and it was just hallucinating left and right, like things that just didn't exist.
+
+So once I started feeding in the Apple documentation and I'm constantly doing that, it really brought those hallucinations down. So that's another tip is constantly feeding documentation, especially when you're working with AI products, like, and all these APIs are changing constantly, like the GPT API, the open router API, all the, like 11 labs, like all the docs are always changing. So this is a huge tip that I have.
+
+So once I had, once I, and again, this is, we're just kind of one-shotting this, like, can you make this functional? It did a pretty good job. Let me just make sure, let me just see.
+
+Okay. So it did a really good job of, of, of one-shotting this. And here was the result of that one shot.
+
+So again, now we don't have the hard coded data anymore. It's, it's like gone. And we have the toggle at the right to be able to, to be able to switch between the different models.
+
+And then if I chat with it, where did I eat last week? It is great. Okay.
+
+Well, it doesn't work, but at least we know that it is calling the LLM because it's not a hard coded response. So that means that it is calling, like it is calling something. Maybe it doesn't have the right.
+
+Oh, I know what's going on. But maybe it doesn't have the right context here. Actually, I think I, yeah, I think I do know what's going on.
+
+I forgot. This is just a demo account. So like, it doesn't have any data, but I did add this like demo mode.
+
+So it'll just like populate data. And then now I think it should be able to like answer it. But yeah, basically though, it's, this is now working.
+
+It's connected to the LLM. So let me also show you guys kind of what the code looks like a little bit. So you guys can see the, the iOS code that it generated.
+
+So I can trust you, right? That it worked. It worked.
+
+It worked. Yeah, it worked. It worked.
+
+It, I just, I just realized I forgot to, there was like one little nuance with it where I'll show you in the prompt here, but it, it generated two, two files here. And the way that I structure my iOS apps, if you're interested is I have the UI folder. So that's where all the UI components are.
+
+I have models, which just shows all the different data models, the data types, and then services. And this is how the app talks to the front end and the backend. So those are the folders, but it created two files for me.
+
+It created a new AI chat view. So that's where we can see, this is where we can see that actual, the UI of the actual chat. And then it create, it just created this open router services.
+
+So this is really cool because it, that means that it had context of the other services and it knows because I fed in the code base, how I structure the services and it actually copied and, and made a service very similar to the other ones. I will say though, that like you should not put all of this stuff in the front end of the app. So I'm just doing this for demo purposes and for speed purposes, like the API keys here.
+
+I'm going to, don't try to use this. I'm going to kill it after this demo. But in theory, this stuff should be living in the backend.
+
+It shouldn't be in the front end, which is something we could talk about as the security of this stuff, because that is a problem that it is putting this stuff in here. So as a developer that's been doing this, I know that that's an issue. So I'm going to go correct that later, but for demo purposes, we're going to keep everything in the front end just to keep it simple.
+
+So it did create this service. I did have to put in the API key here for open router, but everything else was, it was all, it was all this, it was all cursor. So it got, it got the, it literally got all the data models that you're going to get from open router because of the documentation.
+
+It got a bunch of the models. And yeah, it, it all works. It all functions.
+
+It's able to call it correctly. And we're literally basically two major prompts in like at this point to be able to get here. So yeah, that's, that's, that's, so that was the, basically the second major prompt was now that we have the UI, can you hook it up?
+
+Can you, can you hook it up to open router and make this thing functional? I did have to do another prompt because of the issue we saw here. I noticed that it was actually fetching transactions from the database directly in the open router service and I was like, actually let's just save on some costs.
+
+Um, you have all of the data locally. Can you instead just pull it locally? So that'll just, uh, save some latency.
+
+That'll just save some costs for me. So I made that change here. Um, then also like the bug we just saw where it says there's no transactions.
+
+It's because demo, demo mode was not persisting. So I also corrected that. Um, but yeah, once we got to this step, like you got to trust me on this.
+
+It does actually, no, I'll just like restart it, but now we, we, we are, uh, what's the expression, uh, uh, trust and verify. Trust. Yeah.
+
+Yeah. Yeah. Okay.
+
+That's the type of audience we are, you know? Okay. Cool.
+
+All right. Well, it works. It works.
+
+Um, well, let's see. Um, okay. Let's see what the next step was.
+
+I think the next thing I did once, once I knew that it was hooked up to open router. Um, the next thing I did was. Yeah.
+
+So the next thing I did was, um, I wanted to modify the, the prompt, the base prompt, because the prompt right now was, um, like, uh, right now the prompt, the prompt that it gave me, it's, it's not this prompt, but the prompt that it gave me was literally just like a one-liner. And it, all it did was say, here's the user message. Here's some transactions.
+
+Can you answer the user's question? And to be honest, the answers were really not good. The answers were pretty bad.
+
+Um, you know what? I think it's actually, yeah. Yeah.
+
+Um, it really, it really wasn't good. So I decided, okay, I want to make a better prompt. And if you've coded any AI apps, you know that the prompt is everything.
+
+Like that's kind of how you control everything. Um, yeah, actually. So here, here's the, here's the original prompt that it, that, um, uh, from that, from that initial, uh, you know, two shot that we got it.
+
+It, it, it, this is what the LLM, this is what cursor came up with as a prompt. Here's the user question. Here's some additional context on, on the question that's relevant.
+
+And it's literally just the three months of transactions. And then it just fed it into cursor and said, or sorry, just fed it into open router and said, okay, can you go answer this question? Not a good prompt at all.
+
+So one of the things I wanted to do is make the prompt better. And so a technique that I've been using, which you guys can take is, um, I actually use Claude to generate the, uh, to generate really good prompts. And I, for some reason I've noticed Claude is actually pretty good at this.
+
+I probably could do this directly in cursor, but I'm just, I don't know why I just, uh, out of habit, like I like to do it directly in Claude. I feel like I have more control. So, um, can you see the Claude screen here?
+
+Yeah. Okay, cool. So I, I just asked it, Hey, I have a budgeting app.
+
+I want to add an AI chat to you. Can you give me a very good prompt in XML format so it can follow the instructions? And this is another technique that I've learned is that, um, if you format the prompt in what's called XML, and this is what XML looks like.
+
+It just has kind of a title and then a description. Um, you can kind of understand just by looking at this, how this works. There's nothing special here.
+
+Um, formatting in an XML, formatting an XML actually has a higher chance I've seen of producing really good results for the, from the LLM. So that's just a cool technique that I learned, um, after making a bunch of these AI, like AI features and AI apps. So I told it, give me a good prompt in XML, um, and make it so the answers are very concise, like a friend answering it for you.
+
+Don't show your work unless asked and just answer the question. So I just wanted this to be, I was trying to think like, how would I want this thing to respond? And that's exactly how I want it to respond.
+
+And this is the prompt that it, it gave me. So it, it, you know, it put the, the first, uh, XML tag here as budgeting assistance instructions. And it's like, here's your persona.
+
+Here's the response style. Here's your knowledge areas. And then here's the instruction guidelines.
+
+Um, so this is a way better prompt than this one here that it gave. And so I just told it, Hey, um, you know, I want you to like, I want you to, uh, I actually, yeah, I decided to actually see what cursor would do, but I did give this as, as context. So I said, Hey, can you, um, can you add something like this into, as the prompt?
+
+And I gave it the example that Claude, that Claude gave us. Um, so that's, uh, that's how I do the prompt generation. And with this prompt, let's see.
+
+Yeah. With this prompt, um, it actually was able to be, it was actually a lot better. Um, let me see.
+
+By the way, that's such a low key, such a important takeaway. I just want to highlight that, you know, so many, as you said, so many of these products are about the prompt, right? If you can create a great prompt, the UX ultimately becomes way better.
+
+And if the UX comes better, you know, all your metrics are going to go up. Going into, you call it Claude, I call it Claude. People on the channel know I call it Claude.
+
+Um, tomato, tomato. Going into, going into Claude and, and, and asking it and optimizing it and thinking empathetically about the user, right? You, you said, uh, you know, I'm going to go to the next one.
+
+Pretend it's like you're talking to a friend and that's such a small little detail, but you do, people forget that we're building products for people. Right. Um, so I think that's a huge tip around how to, how to figure out prompting.
+
+Nice. Okay, cool. Yeah.
+
+I think, I think, I think that's great. Um, so let's build this and see. Um, so again, the, what I did here was I told it, um, can you improve the prompt?
+
+Here's a, you know, here's the example I got from Claude. Can you improve the new prompt? Um, and so it was able to actually just, you know, inject this right here.
+
+So this is a way better prompt. So we're going to see, um, we're going to see how this, we're going to see what this thing does. So another tip while we wait for this to build was, um, I noticed that when I was testing, um, I added this demo mode.
+
+So it'll, again, it'll just, oops, it'll just basically populate. Um, it's just going to populate with, um, with a bunch of dummy data. But I was kind of like, okay, this doesn't really feel that natural because this isn't my data.
+
+And it just has like generic. I went to a shopping store. I went to a restaurant, but I wanted to actually test this thing out.
+
+So, so a cool tip is, um, I actually have, um, I have a mock data file. This is where I put all of the mock data for the app whenever I'm doing testing or whenever I want to, yeah, just whenever I want to see what the app actually looks like with real data. Um, something cool that I did here though with AI is that you can actually tell it, Hey, can you make the mock data less generic?
+
+And I said, I want you to add restaurants in places that look way more realistic for a 28 year old male in Dallas. And it did a very good job. These are like actually restaurants in Dallas.
+
+And this actually made the demo so much better for me to test the AI feature because this is realistic data now. So when I ask it, okay, am I overspending? And to be honest, like, I guess a 28 year old men, a male always overspends or something.
+
+So I did go over budget for like almost everything here, just in the, in the dummy data. But this is a cool tip I have. Uh, if you're, you know, if you're too lazy to generate the data, just use AI to do it.
+
+This alone honestly like saves me so much time. So I don't have to like manually mock all this stuff out. Also, it's not even just for you.
+
+So what you can do is you can come up with an idea for a startup, use cursor to build it, use some of this mock data, record, you know, compile, build, record a video. Now with that data, that's way more interesting. Post it on X.
+
+See if people actually want the app. Yeah. Yeah.
+
+Right. Make it go viral. Cause if you have bad dummy data, you know, people, I see this all the time.
+
+People post, uh, videos or content and it's, it's bad. It's bad dummy data. And I, I'm like, yeah, I'm not going to use this app.
+
+Yeah. Yeah. Yeah.
+
+That makes so much sense. Like they can't like visualize themselves seeing it. Exactly.
+
+So just the higher shot you have of doing that, which I will say when I, I demoed this little, this little AI demo for some people, and I think it hit really hard when they saw this type of data and they saw restaurants in the Dallas area. They were like, Oh, this is actually, Oh, I would actually use, they can envision themselves using it basically. Totally.
+
+So it's pretty cool. Um, okay. So I think this is built.
+
+Um, okay. So let's test it now with this new prompt. Let's see how good it is.
+
+And let me just make sure. Yeah. The demo modes on.
+
+Okay. So it loaded all the demo data this time. Um, so now if I say, where did I eat in the lab or where did I recently eat?
+
+Cool. Okay. Wow.
+
+So it actually loaded it and now it said, you know, Hey, you recently ate at the Ascension coffee design district here. And, and again, the prompt is concise. Like I couldn't show it in the, um, cause we, the demo, the earlier demo wasn't running, but I will say that when I asked that same question with the dummy data, it was like, like a chat GPT response.
+
+Like it was like formatted and marked down. It was like very verbose. So that was a huge reason why I told it, Hey, can you make it concise?
+
+Don't show your work, just do it. Um, and this is actually a really good response. I think like this is a pretty, pretty cool one.
+
+And obviously you can tweak the prompt. Um, but yeah, that's, uh, so that's, uh, that's this. Let me see the next thing.
+
+Um, so then, okay. In theory, I was like, okay, we could just end it here. Technically like we, we have, you know, it's working, the chat's functioning.
+
+We have AI integrated. We can switch between models. It's like really good.
+
+But I was like, okay, that's kind of, everyone can do this. Let's like try to do something a little bit more interesting here. Um, so I don't know if anyone has ever done, um, like, uh, shown like tool calling or anything, Greg on the, on this podcast.
+
+I mean, not in depth. That's for sure. Okay.
+
+So the next thing that I wanted to try was, so the next thing that, the next thing that I wanted to try, which, um, which was a problem was again, if you remember the first prompt I said, just feed in, or sorry, the second prompt I said, feed in three months worth of transaction history, um, I hard coded that. So now every time you ask a question, it's going to feed three months of transaction history. That could be a lot of transactions and that could be very costly.
+
+So I was trying to think of a good solution to this. Should I maybe, you know, maybe I can just feed in a year's worth of transactions. Cause what if someone says summarize the last year, then the three months, isn't going to cut it.
+
+We're going to need the last year. But then if I summarized the last year, or if I, or if I, you know, what if I just gave it all the transactions every time? Cause I mean, the LLM context windows are pretty big.
+
+Gemini can support 1 million. Let me just feed in all the transactions. The only issue with that is it gets incredibly expensive to do that every single time.
+
+And then the second thing is what if they just asked about the last week? They're like, Hey, where did I, what restaurant did I go to last week? Um, that, you know, it was around $30.
+
+It would be so wasteful to feed in a, like, you know, two years worth of transactions into this. So I was trying to think through what's a good solution to this. And the first thing that came to mind, which I think a lot of people try to do is they're like, Oh, I'll just use another LLM at the beginning to take in the message.
+
+So if the user asks, you know, um, what, what did I eat last week versus what I eat last year, that first LLM will parse the message. And then come up with a date range, uh, for the transactions. So that was the first thing I thought about.
+
+Maybe then it'll take the dates, feed it into some sort of function to then go get all the transactions for whatever the date range is, and then feed it into the second LLM, which will actually answer the question. So then in this case, now we'll have two LLMs. The first one just to parse and figure out what's the date range.
+
+Let me, let me get the transactions basically. Then a second one to answer the question. But in reality, this is, um, there's actually something that exists in open router and GPT and it's called tool or function calling.
+
+So you can actually get the LLMs and give it tools to use. And this is, we're kind of getting into the, the territory of agents, which I think has been covered a lot on the channel. Like how do you use agents?
+
+But I want to show at a low level, how you can actually build an agent that has access to tools in your own AI app. I like, and we're not talking about like, let's use existing APIs or anything. It's like, let's actually build the tools here locally, which a lot of people don't realize you can do and give it to the LLM.
+
+And I'll show you guys how this works. So since we have time, I was like, let's just go ahead and try this and see how far we get here. Um, and so the way it's going to work is, um, so open router actually has, um, something called tool and function calling.
+
+And so this is where you can actually tell, give the LLM, um, a bunch of tools that has access to. So you can say, let me see. Yeah.
+
+You can basically, uh, you can basically say like, Hey, you have access to like, here's the messages I want to send into the LLM and here are the tools you have. And then you can, you can go ahead and define the tools here. So I think in this case, in their example, they specifically have a tool that they defined called search Gutenberg books.
+
+And then here's what the function looks like. And it calls the, I guess it calls this API and goes, gets books. So now when you ask their LLM, Hey, do you have any book recommendations?
+
+It could just answer it based on what it knows and what it's been trained on. But I think when you ask it, Hey, what books do you recommend? Or like, do you recommend any good horror books?
+
+It's actually going to like, when you feed it in the tools, it's going to first think and do an initial step of, okay, do I have enough context to answer this user's question? If yes, go answer it. If no, do I have the tools to answer it?
+
+If there are tools, let's, let's go use the tool and try again. And it kind of just loops through over and over again until it has the relevant context to answer the question. So that's the stop point when it says, do I have the relevant information to answer this?
+
+Let's kill the loop. So that's at a high level, how the tool calling works. And it's actually very easy to implement.
+
+And so this is how I did it. I basically told it, let me see. Yeah.
+
+I basically told it, can you actually create a new tool function that the LLM is able to call? I want to use function calling from open router. And again, I did the thing where I fed it in the docs just to make sure that it has it.
+
+I think it already probably had it when I fed in the initial doc, but I was like, let me just not take a chance here. I'll just feed it in to be safe. And then I told it, can you create a few tools?
+
+So maybe a tool to get the transactions for a specific date range. And then just for fun, I said, okay, let's just also feed in a tool to maybe get the current budget. Then I explicitly told it, I want all the tools to be local.
+
+We're not calling any external APIs. And the reason I did that was I was a little worried because looking at the docs and looking at most docs, a lot of the function calling, they usually call external API. So I was scared it was going to hallucinate that.
+
+So that was just something I did just to really make sure that it didn't do that. And let's see, I was actually surprised that, oh no, I actually did get a ton of errors with this. And the way I deal with errors, by the way, is I literally just screenshot the error and then kind of feed it in and say, can you fix it?
+
+Can you fix it? Can you fix it? And I do this like a hundred times until it doesn't fix it.
+
+This one, it looks like, yeah, this one, it looks like it happened like three times where it worked. So the way, and then the way that this works, so after like basically in a couple of different prompts, like one, one prompt to tell it to generate, you know, like use open AI tool calling and then just fixing a bunch of the errors I got. This is what it generated.
+
+It was actually able to, it was able to change the prompts. It was able to like modify this. So it uses those tool calling and it, and this, these were the available tools that it came up with.
+
+I don't know why it came up with two of these, to be honest, these two are kind of redundant when I look at it. Like they're both like get transaction for date range, but so we'll just look at these two, but it did create this tool to get transactions for a specific date range. And then it did also create a tool to go get the user's current budget.
+
+And then you can see here, it takes in the date range. And then these, you know, these parameters are required. And so this is what it looks like when you define the tools and you're going to feed this into open router.
+
+And then this is where the actual tool definition is. So this is the actual function that it's going to call in your app. Like when the LLM decides we need, we need to call this thing.
+
+So it generated this and this code does work. It basically goes through and it searches my local database in the app and it just kind of filters and gets transactions for a specific date range. And then, yeah, it basically is just going to, and it's just going to loop.
+
+It's literally just going to loop until it checks, you know, do I have the available context? Yes. Okay.
+
+Go answer it. And I do, you can actually specify what are the max number of loops. That way, if you have a situation where it's like looping too much, or if it's an infinite loop and it's not getting it, you can have a hard cutoff when you want it to stop.
+
+So in this case, I think I have it set to three as a default. So it's not going to, or sorry, four. It's not going to loop more than four times in this case.
+
+And again, this was like, we're talking like three or four prompts to get the function calling working here. So now that I have the function calling working, in theory, if I ask it, Hey, can you, you know, can you tell me what I ate last week? It's not going to feed in three months of data anymore.
+
+It's going to check. Do I have like, do I have the transaction I needed to answer this question? It's going to say no, because we haven't called any tools.
+
+It's going to say, okay, I don't have it. What tools do I have at my disposal? Oh, cool.
+
+I have a function to get the transactions for a date range. Let me go put in the dates and go call it. So now, yeah.
+
+So now if I just say like, like, where did I eat last week? But to be honest, it could in theory just answer this with three months worth of data. So then if I ask it something like a little larger, like, yeah, that's what I was going to ask.
+
+The last year. It's the moment of truth. So now if I ask it a little bit of a broader question, hopefully it's going to be able to, and it's taking a little bit longer, which signals to me like, okay, it's like, you know, it's, it's, it's thinking a little more.
+
+It has more data. And here it does say, here's a summary of spending from April 22, 2024 to 2025. So it is now pulling the right year range.
+
+But again, we also gave it the budget tool as well, which we've never tried. So I said, you know, how am I over budget anywhere? So in theory, this is something we haven't been able to ask it, but let's see if it's able to actually use that tool.
+
+And it does. So it does have access to the user's budget. It did call that tool.
+
+So now it says, you know, you allocated $75 for dining out, but you spent 112, like what's going on here. And so you can kind of see how we just gave it two tools, but this is already powerful. Imagine you gave it a tool to generate reports, or you gave it a tool to modify budgets and like make changes on the user's behalf.
+
+Because now I can sell it. Okay. Is my budget, like, can you, can you rebalance my budget for me?
+
+And that's something users hate doing in budgeting apps. If you gave it that tool, now this thing can then just do it itself and kind of, you know, it's able to do all this stuff for you, like an actual agent. Then obviously if you give it access to the internet, you give it access to other things.
+
+Like if I gave it access to the Robinhood API or something, probably won't do it. But in theory, it can actually probably re like, you know, deposit money and make investments for me. Basically you can do anything.
+
+Like once you have access to this low level, this low level code to give agents tools, but it's super simple. And again, literally we got here, I think total to get to this point in the app, minus all the errors that we got, like all the prompts I use for errors. This was like four prompts, probably like four prompts, like to actually get to this point minus the error calling.
+
+And we were able to hook up open routers so we can switch between the different models. We also were able to integrate function calling. So now that it's, it's not even a chat anymore.
+
+It's really, there's an agent in here that has access to tools. And this all happened in like basically four prompts with all the errors, probably like 20 prompts. But yeah, this is, this is kind of like, it's very powerful stuff to be able to like, to kind of do this in iOS.
+
+And there's one other, the last thing that I did here, just cause I was like, all right, got a little, a little bit more time. I think this was like two hours in to doing this. I was like, you know what I want to do?
+
+I want to, I want to do two things. I want to, I want to see, can I, you know, like this stuff costs money when you're making these calls. And I was like, I'm using open router.
+
+They probably have an API to go get the costs. Can I just, can I actually modify this to see what are the actual costs like using this stuff? So then the next thing I did was, yeah.
+
+So then the next thing I did was I told it, I basically told it, Hey, can you alter the chat? So right below the messages, I want to see the total tokens that were used and the costs. And then I also told it, it's like really simple with open router.
+
+So I didn't even bother feeding the documentation. It was, I was like, you just got to make a call. So this endpoint, like they have a generation endpoint, so you can pull any of the runs and then go get the costs and the tokens used.
+
+So I told it, can you just go do this for me? And it actually got it like instantly. It was like perfect or no, sorry, there was one error, but then it was perfect.
+
+Then I also decided to say, Hey, I actually want to try some other different models. Can you like swap these out? And then something else I was kind of curious was, wait, can I just like pull all the open router models and just like kind of display this here instead of hard coding that?
+
+And so just for fun, I also said, where is that? Yeah. I also said here, I gave it a prompt saying like, Oh my God.
+
+Okay. I gave it a prompt saying, Hey, can you actually alter it? So let's just pull the open router models directly so I can see and have access to it.
+
+Um, here's the response you're going to get from just calling this endpoint, which I got from their documentation as well. Um, so once we did that, so now if I say, where did I eat last week? So now at the bottom, it actually shows, this is how many tokens this consumed.
+
+Here's the prompt and the completion tokens. And here was the cost. Okay.
+
+That is definitely not right, but I hope that's not right. That says $7. I'm pretty sure.
+
+Okay. I think I just did the math there wrong, but there's no way. Okay.
+
+But basically like it should show the costs here. And then, um, now it also followed the second instruction, which was let's pull all the models from open router. Okay.
+
+It didn't even do that one. Okay. Oh, okay.
+
+I know what happened. Um, I realized that some of the models don't support function calling. So I actually went back on that and instead I, I hard coded and said, Hey, still pull it from open router to get the data, but let's just use these ones for now.
+
+Cause not all of them support tool and function calling. So these are the models that do support tool and function calling like consistently with open router. But it is cool.
+
+Cause now like in theory, we can get the current costs of all the models. What the con like on the right, this is the context window. So you can see like cloud 3.5, like this is 200,000 tokens.
+
+Gemini is 1 million context window. You can see the cost and you can kind of see that while during development, especially if you're trying to test, like how much is this stuff going to cost me? Like, what is this, you know, what does this look like?
+
+Um, this is so helpful to be able to like, to be able to see this data right there. And then obviously you can build a dashboard and do whatever you need to, to like, you know, see all your costs if you do put this in production. But that was a fun, uh, that was like the fun thing that we did since we had a little bit more time.
+
+And then absolutely last thing, uh, that we did here. Cause I was like, okay, that's, it's like two hours and 20 minutes. Um, the last thing I wanted to showcase was, um, I really wanted to showcase, uh, how I do the asset generation.
+
+Um, so something that, something that people have been asking me all the time is like, you know, you have, you have these really good, um, you have like the assets in the, in the apps that I have are very high quality. Like how did I do this? And, um, to be honest, I'm using, um, I'm using GPT for, Oh, or yeah, GPT for, Oh, for the asset generation, which kind of surprises people.
+
+So let me show you guys what this looks like. So for example, for my new app, Lily, which is a meeting transcription tool. Um, this was the character asset that I generated.
+
+Um, I, I think I deleted the chat, so I don't really have it here. Like, like the full one, but, um, you can basically throw in any asset here, but what I wanted to show you is how, if you take an asset like this mascot, you can basically generate an infinite number of secondary assets, which you can use in loading screens, in empty states. So for example, we took the mascot here for this ghost icon.
+
+And I said, can you give it wired glasses and put it in front of a laptop? And now, you know, we have this and this could be, this could be a really cool, like, you know, empty state. Um, here's another one.
+
+Here's another one where I said, Oh, I, I want you to make the background purple. And I want a little, um, you know, I want it to be floating. I want there to be this little thing underneath it.
+
+So it looks like it's floating. Can you do the same style, but with a coffee cup, can you do the same style? But you know, I don't want the little three lines there.
+
+Um, this stuff is really powerful to, to almost make like any asset you can think of. There's another one with books under a tree in a hammock, walking a dog. I didn't like the legs.
+
+That was kind of weird. So I told us to remove the legs. Then I fed an image of my dog and I was like, can you make the dog look more like my dog?
+
+And then it got that. So yeah, you can kind of see that you can like how powerful this stuff is. So I wanted to do something here.
+
+Let's try to do it for this app. And so I was trying to think, um, okay, the current app is this mascot Luna. So my girlfriend actually is the one who drew this image.
+
+So this one was not AI generated, but you can feed in like, again, you just feed in existing assets. So I said, Hey, can you take this image and modify it? So the dog is sitting at a computer, it didn't get it fully perfectly.
+
+And I was trying to tweak it. And so, and it didn't really work. Cause when I said, Hey, can you remove the mouth?
+
+Because in this image, there's no mouth here in this image there is. And I was like, okay, can you remove it? It literally removed the mouth and the nose.
+
+So, um, and then it just, it just kept like, it actually didn't even look good when I removed the mouth, but you do have to kind of prompt it and be very specific. And it is like, I think you, I think it gets it right 60 to 70% of the time, which is still worth it in my opinion to use. But now with just this image, we have this really nice, uh, we have this really nice, uh, uh, asset that we can use and potentially use in the app.
+
+So then I was like, okay, let's just like, let's stick it in here and let's see how this looks. Um, so now if we go to the chat, now we have this asset at the top left corner. So we see this illustration that was AI generated, but it just adds another dimension to your apps when you're able to generate these cool empty states and these illustrations.
+
+And now with these AI tools, I feel like everyone should have access to this stuff. And I think we're going to see a lot more beautiful apps now that we're doing this. Um, and then.
+
+I actually, my take on that is I think most people are going to create the, the shad CN apps, the apps that are sort of bare bones. I hope that people listening to this actually take your advice and do a once over of the app and be like, okay, if I can, uh, you know, I've, I've, I've done a bare bone version of this. Now, how do I humanize it with the loading screen?
+
+The, yeah, yeah. Yeah. The welcome email, like just all of that sorts of things and give it just a little delight.
+
+Yeah. Um, and you can ask, you can ask Claude, for example, and be like, Hey, this is my app. These are the amount of screens I have.
+
+This is even what it looks like. Tell me what I should do to make, to add the light for use. And I'll, I'll be using chat GPT 4.0, um, image generation.
+
+Do you have any ideas for you, for me? And it might give you some ideas. Yeah.
+
+Yeah. Yeah. Yeah.
+
+Honestly, I was like, when I was, uh, trying to brain. And that's how we come up with the initial logo for the ghost. Um, for the, for the other app, Lily, I was using Claude to literally generate this.
+
+And I, I think like, it was, I was like, Hey, what's a good mascot for a meeting, you know, a meeting assistant app that lives in the background. And it was like, Oh, a fly. Cause flies on the wall.
+
+The fly looked horrible. Like I'll send you an image of it. It was like terrifying.
+
+But so it was like a fly or maybe like, you know, Oh, it's called Lily. Maybe a frog. Cause of a Lily pad.
+
+So it was actually cool to brainstorm. And eventually it actually came up with the ghost. It was like maybe a ghost.
+
+Cause they kind of live in the background. So yeah, using, using the stuff to, to even just brainstorm the assets is really cool. Chris, we are out of time.
+
+Is there anything you want to leave people with? Um, yeah, honestly, I think, um, I think we covered everything, but, uh, I just wanted to say too, that, um, a lot of developers are pretty averse to using this stuff, but I seriously think that like a lot of developers, um, the, the, the things that are the, the, the people that are going to benefit the most from this AI tooling, it is probably going to be like really good developers. I think everyone's going to benefit, um, especially non-technical people.
+
+But at this stage where the tools are at, the people I've seen go really far and really accelerate. It's people that have like the people that do know how to program. So if you're a developer and you're on the fence of using this stuff, I think you should just do it.
+
+I know it is kind of like there's, it's kind of taboo. Like some people are like, it's, it's kind of killing the art, but, um, this stuff is inevitable. I think it's better to really learn.
+
+And those are the developers that are going to thrive for the next decade. And the ones that don't, I think it's not going to go really well. So if you're a developer that definitely try it out.
+
+That's, that's, uh, that's probably the last thing I want to leave people with. And if, and if you're not a developer, should you give it a shot? If you're not a developer, you, I definitely think you should give it a shot.
+
+But what I would do though, is really use it as a learning tool. So I, I honestly, I, I'm kind of hesitant to get like, I think use a tool, honestly, more like replet or use a tool more like lovable because those tools, they have a lot more guardrails. So it's a lot harder to break things.
+
+Cursor is a little more dangerous because that thing can really destroy things. And it's, it's very hard. Like for example, what we saw here was it decided to code all of this stuff in the front end.
+
+That is very dangerous because like, for example, um, this is like a last example. This is like so interesting. It, we decided to make a tiny tool internally for my other company.
+
+And it was just like a small Vercel app, like a tiny Vercel app to automate something for the marketing department. But we use cursor and it hard coded the open router key into the front end. And we did not share this link with anyone, but clearly someone has a bot running around looking at open Vercel things, looking for these keys that are embedded in the front end.
+
+And they racked up like $300 worth of credits in like a day. This was like last week that this happened. And I was like, okay, this is really dangerous.
+
+Like if you're, if you don't know what you're doing, like, and you accidentally commit some of this stuff, it can get bad. So use tools like lovable use stuff like replet. Cause I think they do have a little bit more guardrails and a little bit more checks in their prompt to prevent that.
+
+But I, but really I think everyone should honestly learn some of the basics of programming. They should probably, you know, take a couple of courses, even though this AI stuff's here and use AI to learn and use AI as a teacher to get better at those fundamentals and then go use stuff like this. Um, but yeah, that's, uh, I, I definitely think people, um, I am honestly very excited to see how stuff like replet and lovable and cursor, how they get better for non-technical people too.
+
+Um, or you can, by the way, on the courses side of things, or you can just keep listening to this podcast, keep commenting, let people, let me know what you want to learn and I won't even charge you for it. So you just get to learn for free. Um, Chris will include your social handles in the show notes for people who want to follow your journey.
+
+I think it's really interesting following your journey to, you know, building a multimillion dollar portfolio of mobile apps. So, um, thank you for being so generous as your time and your techniques. Yeah, absolutely.
+
+Yeah. Thanks so much for having me, Greg. It was awesome.
+
+Later. All right. See you guys.
+
+Awesome. Awesome.

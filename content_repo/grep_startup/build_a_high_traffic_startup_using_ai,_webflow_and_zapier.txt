@@ -1,0 +1,1081 @@
+Today's episode is really cool. It's a tutorial how to use AI to create websites that rank number one on Google with proof and with examples. I brought my friend Omar on and we go right through it.
+
+It's an hour plus episode, but I'll tell you exactly what you're going to learn. So we go through his two websites that got to the number one search term on Google in six months as a side project. We talk about something called schema, which is a way to get extra traffic via SEO.
+
+We show you exactly how to do it. We talk about the tools he uses to create these websites and landing pages using Webflow. We talk about how he uses something called Appify, which basically scrapes things like TikTok and Google Maps to get the data that you're really going to need.
+
+And then we talk about how to use Zapier to just bring it all together. Then we just get into a live cooking session where if you watch the whole thing by the end of it, you'll have a really good idea on how to create something similar in a different niche. This is an episode that people would charge thousands of dollars for.
+
+Absolutely free here on the Startup Ideas podcast. I hope you enjoy it. And you know what?
+
+Don't waste any time. Like and comment on it so you get more of this in your feed. And so that way you can ship amazing products that actually get seen.
+
+Enjoy the episode. Omar, what are we getting into today? Greg, my man.
+
+Thank you for having me, man. We're going to do some AI, Webflow, Zapier, Claude magic. We're going to give the people something that they can build themselves.
+
+I've learned myself, so why not share it, man? And on the best platform we can. So thank you for having me.
+
+What are people who listen to this entire episode going to get by the end of the tutorial? Wow. First of all, I've been an avid listener myself, you know, for a long time.
+
+You know, I reached out to Greg completely cold. You know, and you were very sincere enough to hit me back. We had a conversation.
+
+And since then, I've been very, you know, sincere in our exchanges. So thank you for that. Funnily enough, actually, when I before the before the call, I wrote down some notes.
+
+And the first thing said, give flowers and brackets, Greg. So I didn't forget to tell you, you know, how, you know, great you are, what you do. And my wife came down and saw my notes and she goes, who's Greg and why are you giving him flowers?
+
+So, yeah, the goal is, you know, I'm as a viewer and audience member, I can definitely connect to why this is important to a lot of, you know, you guys watching. And I think one of the main things is to actually give you tangible tools and resources you can use to build things yourself. And also things that I personally believe that I'm building myself right now I'm doing.
+
+So I really believe in these tools and techniques. There's so many tools out there like Zapier, Claude, Webflow, Appify that we'll go through today that actually can help you build very, very sophisticated SEO rich platforms, websites that really, and I'll show you some evidence, can help you compete with some of the biggest in the game. Like we're competing with TripAdvisor now, you know, recipes.com, all these big, big sites.
+
+And so hopefully we'll give you some game that you guys can take away and start building some really cool stuff after. Yeah. Perfect.
+
+All right, let's get into it. Cool. Amazing.
+
+So what I'm going to do is, first of all, I'll take you guys through how I think about SEO and especially when it comes to AI, why I think it's become such a profound, very profound kind of time right now. When I was growing up, my father used to run one of the largest kind of online ticket sales businesses, right? Competing with Ticketmaster, et cetera.
+
+And he used to hammer money on SEO, right? Like I'm talking like, you know, 50, 100K a month just on like Google ad spend. It was ridiculous.
+
+And I'd see that growing up and be like, there's got to be a better way. But too young to understand. And so now that we're in the AI age, I think it's even more fascinating that you have these tools and techniques that allow you to compete with such big players, but without any need for those type of budgets.
+
+So I'm going to go through a couple of sites that we've set up and how they've been ranking. And then what we'll do is we'll go through a couple of techniques, tools that you guys can use to also do that yourself as well. So this is one of my sites here called guiltychef.com.
+
+So it's basically, you know, I'm a big cooking guy. I love to cook. I've always been like a good hobby.
+
+And I created this kind of fun little side brand on Instagram where I would like share recipes of what I did. I would cook on camera and kind of put those out. Every year I'd create kind of these recipe videos and throw them out for fun and, you know, just make some pocket change.
+
+And it was a nice little project. But then kind of earlier this year, I was moving countries to Dubai where I am now. And I was thinking I can't keep creating these recipe videos all the time.
+
+But how could you create something using AI and technology but, you know, still allow people to benefit from, you know, recipes and getting like recipes from the best places or at least the favorite restaurants in the world? Cool. So I set up guiltychef because I thought it would be, you know, interesting to see if you could generate recipes using AI and how good they would be.
+
+And I started practicing them myself and they turned out to be really cool and very, very effective. So I ended up actually playing around with Zapier and Webflow. And so I'm a designer kind of, you know, my skill was mainly kind of UX, UI.
+
+That's where I kind of, you know, grew up. You know, that was the main skill that I was doing for a long time. And so I just kind of put together this layout on Webflow and then thought to myself, well, how can we create thousands of recipes really but with minimal effort?
+
+And I was just playing around with ChatGPT and asking me how to create recipes from like, you know, KFC, wherever, Chick-fil-A, like even some of the things that I couldn't get even back in London, like Chick-fil-A you don't have there. And so it could just give me the recipes. I thought, this is fantastic.
+
+Now, is there a place online where you can get, have recipes from all different restaurants in the world? And I couldn't find one. So I thought, let me just create a site that has a directory of just like, you know, the best restaurants in the world.
+
+Yeah. So we put together this kind of directory. You know, we thought there's no kind of place online that has every restaurant in the world and all the recipes on there.
+
+And I would love to see that myself. So I just started building out this directory of like all different restaurants. And I just would go through the menu.
+
+I'd Google the menu and then just put in the menu items and entire pages would be generated themselves. So every single page you're seeing here is completely generated automatically using AI down to the image, you know? And so some of them you can obviously tell it's an AI generated image.
+
+Some of them not so much. But description, the prep time, cook time, ingredients, the directions, the FAQ, all this type of information is all built in automatically using ChatGPT and Zapier. And so that got me thinking, I was like, hold on a second.
+
+Well, if you can create websites like this and content like this, you must be able to get it to, you know, rank in Google since Google is all about, you know, links, pages. How can we actually do that? And then I started looking at the schema, which is obviously, you know, what Google uses to understand what's in your website.
+
+So for a recipe website, you'd have recipe schema, which would actually tell you, which would tell Google in its own format, you know, exactly. So you can type in here, like, you know, go to schema.org. Oops, this is valid.
+
+Go to schema.org. Quick ad break. Let me tell you about a business I invested in.
+
+It's called boringmarketing.com. So a few years ago, I met this group of people that were some of the best SEO experts in the world. They were behind getting some of the biggest companies found on Google.
+
+And the secret sauce is they've got a set of technology and AI that could help you outrank your competition. So for my own businesses, I wanted that. I didn't want to have to rely on Mark Zuckerberg.
+
+I didn't want to depend on ads to drive customers to my businesses. I wanted to rank high in Google. That's why I like SEO.
+
+And that's why I use boringmarketing.com. And that's why I invested in it. They're so confident in their approach that they offer a 30-day sprint with 100% money-back guarantee.
+
+Who does that nowadays? So check it out. Highly recommend boringmarketing.com.
+
+And you can find different schemas on here. So, you know, you could find, like, a recipe schema. Let me type in recipes schema.
+
+There you go. And so these are all the kind of keys or the properties, at least, that Google looks for to be on your page to understand exactly what type of content it is. So what's the cook time, the cooking method, the nutritional value, the steps, like each how-to step can be defined.
+
+But that content obviously isn't default baked into your website. You have to send that to Google. And to do that, you have to create something called schema.
+
+And then I thought, well, maybe AI can do that. And so it could. It turns out AI can write your whole schema for you.
+
+And you can plug it into your site. And I really, you can break this down to where I have it now, where I can just type in the name of a restaurant and a, you know, recipe or a menu item. I could type in, like, McDonald's Big Mac.
+
+That's it. And I hit enter. And literally within a minute, the entire page is generated, fully designed, you know, ready to go.
+
+Okay, stop there. Yeah. Because this is insane, dude.
+
+Oh, wow, thank you. This is insane. Because, you know, I need to break down what I think you're doing and why I think it's so brilliant.
+
+So what you're saying is you had an idea for this startup. You felt you had a pain point. You're like, wouldn't it be cool if I could make my own Big Mac?
+
+And so you had the pain point. You had the idea. You're like, I'm going to go build a directory.
+
+And by the way, we've talked about directories on the past on the show. Why is a directory so powerful? Well, a directory is so powerful because people are overloaded with content now.
+
+And they're looking for curation. They're looking for taste. And they're looking for, well, looking for, it's SEO optimized, right?
+
+If you build a directory that is high quality and valuable and people are searching for that sort of stuff, you will get free traffic. So then what you did is you said, okay, I'm going to build this to be optimized. Well, first of all, you said, then I'm going to use AI to create the content, which I thought is just obviously brilliant.
+
+You're not going to go hire a team to go and build this. Then you go, there's something called schemas, which will allow me to get more traffic for the same amount of content, which I think a lot of people miss. A lot of people create directories, but they actually don't know enough about schemas to actually optimize it.
+
+So that's what you've done. And why I think this is exciting is now you've built this hub. I'm curious how much traffic you're starting to get.
+
+Yeah. Sorry. No, I was going to say, once you get this thing to millions of visits a year or a month, then you can create all sorts of premium products that you can sell to these people.
+
+Man, 100%. And by the way, we've already got a paid part of the platform already. So, you know, you can go in there, you can generate your own recipes at the bottom.
+
+But if you sign up, you get three for free. But, you know, you can pay like $2.99 or whatever and get, you know, another 10. So you can pay for a pack of recipes you can generate.
+
+And so there's things like that in there. People are creating accounts. Monetization is not like at the forefront.
+
+So we're not driving as much revenue through it, you know, since we're not pushing it as much. But people are definitely curious enough to come on there and create accounts. And we probably hit in December, we might exceed 100K in monthly traffic.
+
+And this was basically zero in March this year. So I think that's literally like just in the period of last, you know, seven, eight months or whatever. And by the way, I spent zero time on this, Greg.
+
+Like I set it up. I probably spent, I already have my own company and stuff. This is a side project.
+
+So I probably full time spent like maybe a week on this. I'm putting it together, designing it, and then just letting it run. Spent a couple hours a month over the summer.
+
+And then now it just sits there and just, you know, I don't even really add any more recipes. I should be. So I've been thinking about, you know, the last few weeks, let me try and like, you know, modify it a bit.
+
+But I'm just more so it was like an SEO experiment because I was curious, does this thing work? And now we can see. Yeah.
+
+Is it possible to replace you as the recipe prompter? In what sense? So right now it sounds like you're like, we should add Popeyes because of XYZ reason.
+
+Maybe it's because Popeyes recipes gets 100,000 searches a month. Or you're just like, I like Popeyes and I can't get it in Dubai. Therefore, I want to go and create my own fried chicken.
+
+So my question to you is, is there possible to create some sort of agent or something that, basically looks, that basically replaces you? That says like your job is to add one new restaurant a week based on these criteria? 100%.
+
+100%. I mean, to be honest, you could even do that. It's something like Zapier.
+
+You could do that just by having it on like a time delay. So you could just get it to run that same prompt like every week, every day, so long as the prompt is strong enough. And it could just do that by itself.
+
+And that's effectively an agent. So yeah, certainly it's a good idea to be honest. It's something worth considering for sure.
+
+I've just been like, you know, just micromanaging a little bit, but yeah, definitely. That would probably be the smart next step. Like if you look at it right now, even like everything here says 17, because I didn't even fix the numbers of how many there are in each of them.
+
+But yeah, so things like that I think are a great idea. Cool. So I'll show you a bit about.
+
+Yeah, go on. Yeah, I was going to say like, how could someone build something like this? You know, how can someone do this?
+
+Yeah, no, it's for sure. So let me just show you a bit of the results and then I'll take you down a bit of a, a little bit of a rabbit hole of how you can actually literally copy this. So if you see here, this is like some of the keywords now that are ranking for.
+
+This is like a restaurant called Dishoom, the Panera Tikka, for example. We're ranking number one on Google for this right now. You could take, so this is literally the first organic results.
+
+It's not sponsored at anything. If someone types in this menu item with a restaurant name, Guilty Chef is the first one. It's above TripAdvisor, you know, which has like a domain rating of 90 or whatever.
+
+So, you know, it works. And then you got this one, crispy chili mushrooms, Wagamama again, number one. And then like, you know, taco supreme ingredients.
+
+This is where schema really is interesting because actually this FAQ here is what ingredients are in taco supreme. It picks up the information from our site and repurposes it in the rich snippets for Google. And it's the first result, you know, just below taco bell.
+
+So it's the very first kind of, you know, question. And so it just goes to show you that so long as you insert the schema correctly, effectively what you're saying to Google is, here's information that I'm providing you. And you're providing it to them in the cleanest way possible that is easy for them to understand and digest.
+
+Excuse the pun. And then, you know, they can kind of distribute that in a way that benefits you. And also you're providing the valuable content that a user is looking for.
+
+But there's loads of obviously sites out there that do have recipes on there that have taco bell recipes. But even when I was looking into it, to your point earlier, Greg, there's so many people that don't pay attention to schema and how they're structuring their site. And actually has a massive impact in how they rank.
+
+And some of the biggest sites, by the way, don't implement schema properly. And AI can literally just help you solve that, to be honest, by itself. So these are some of the results.
+
+And also, so now the other thing that I found really fascinating is if you think about, I think a good way of thinking about the opportunity we have right now in general with AI is if you look at Claude, Claude, as you might say, ChatGPT, you know, these are effectively, you know, information machines. You know, you can ask any question in any format, whether you want to write a poem about a recipe or just give you the recipe, whatever it is. And it can just, you know, spit it out to you.
+
+What's interesting is that information is coming from somewhere. And then the kind of the sources that it's getting it from is the World Wide Web, right? It's actually getting it from the Internet.
+
+That's how they have that information in the first place that their models are trained on. What I found interesting is actually when you start ranking, you're kind of taking this content that you've got from ChatGPT originally. You're repurposing that same content, putting it on your site with your label, which is your domain name, your page.
+
+And then you're submitting it to Google. And it's not only being indexed in Google, it's also being indexed back into the AI engines as well. And so now when you search like Burger King's spicy bean burger recipe, for example, you know, it will give you the recipe and it will tell you that the number one source is Guilty Chef, you know.
+
+And so it's literally this same term I could type in seven, eight months ago and it would give me a recipe, but it might be from somewhere else. But now based on the SEO and some of these tools and techniques we're doing, we're the number one result that ChatGPT itself is now giving you. But yet ChatGPT actually gave me this recipe in the first place.
+
+But the difference now is I'm tagged in it and it's my label and I can also drive traffic through it via ChatGPT and Claude. So I found that pretty interesting and I think that can definitely for directories, especially things like we'll get into a minute in a minute with like travel and bigger industries. If you're searching for, you know, best restaurants to visit in Dubai or whatever, you'd want your site to come up number one, you know.
+
+And so you can start thinking about even these AI systems as search engines for you to drive traffic. And this is a way that you can do that. And you're doing it all in one.
+
+You don't have to submit anything extra to ChatGPT. It's all happening from your schema. And how big of a business do you think you can create?
+
+You know, I see like the traffic and the opportunity and the traffic, but like from a revenue perspective, how big do you think it can get? I think it depends on the niche and industry. I think a couple of ideas I've had with Guilty Chef.
+
+I think the obvious ones would be like, you know, sponsorships, partnerships, whether it be for the restaurants or whether it would be with, you know, hub brands like Schwartz or, you know, brands like that that actually want to, you know, sell their ingredients to people that are reading recipes. It might be worthwhile than doing it or cookbooks that people are selling. You know, there could be ways to advertise and monetize that way.
+
+I also thought an interesting thing might be, I don't think this exists yet, by the way, but like, you know, you have Facebook's ad platform and you have Google's ad manager, Google AdWords. I think over time there will be an interesting space where if you're creating content on your site, like I have, you should be able to, I should be able to make money off of someone seeing a specific ingredient and going to that brand. So like, I should be able to plug in something here and Paprika automatically have a link that if someone sees and clicks on it, there's a brand bidding for that.
+
+You know, even that could somehow be AI powered or whatever. So I think there's like interesting kind of B2B ways of doing that. But I also think for consumers with AI, you can constantly elevate the experience and then give them a much better, much, much more value.
+
+You know, having a customer experience where they can customize their recipe more, you know, maybe they can add like specific dietary requirements, which you already can a little bit in our recipe generator. But I think like breaking, you know, building up more and more, maybe adding your family into it. So it learns your family's preferences.
+
+So kind of becomes like, I do think there will be a while. And I think a lot of people have said this where you will use specific tools for specific AI tools and brands for specific activities. So like this could become the go-to recipe tool that people just use because it just knows your family, knows everything and could just spit out recipes and you trust the content and quality.
+
+So I think there's a few different ways you could probably turn into a business in terms of numbers. I'll be completely shooting in the dark. This is like one big experiment for me as is.
+
+So I'll let you know when I know, I suppose. But I'm open to your thoughts, man. You probably have more experience in, you know, hedging your bets on that than I do.
+
+Yeah, I mean, for me, I look at, you know, how big could this get? I mean, the sky's the limit. But I think the mistake a lot of people will make with it probably is that they'll start getting a lot of traffic and they'll monetize via like Google AdSense.
+
+But I think the bigger opportunity is go sell software to restaurants, you know, like just use this to be a powerhouse of, you know, a consumer traffic powerhouse. And then create some software that's going to, that you can sell to, to the, you know, what is the B2B software that you can create? Like insights, like consumer insights, you mean?
+
+Yeah, stuff like that. I think I would brainstorm, you know, what's the B2B offerings. The other thing I was thinking about is, have you ever heard of URL Genius?
+
+No. I think it's called URL Genius. These guys?
+
+Yeah. Yeah. So I haven't used it, but I'm pretty sure like the, the idea, or maybe it is an URL Genius.
+
+Maybe it is. I don't remember. It looks about right.
+
+It seems some, yeah. What does it do? It might be this one.
+
+Basically what I, what I would like to do is, you know, you give the example Paprika, like how do you automatically have basically affiliate links set up with trusted sources? And it just puts it in there. You don't have to like worry about it.
+
+You don't have to like go to Amazon and create the link and then put in the link. I think that maybe it's URL Genius, maybe it's not, but I don't know, you know, that software probably exists. And then you can just start monetizing on autopilot.
+
+That totally makes sense, man. A hundred percent. Just like within the content itself.
+
+Right. Yeah. There's probably so many ways that you could do that.
+
+I'll be curious. Look at that URL Genius. If it is that one, I'll have a look.
+
+If you, if you come across a different one, let me know, man. I've been thinking about, you know, what are the ways that we could do it subtly. Yeah.
+
+I don't like the Google ads in your face. Like no one likes that. And I think if you think hard enough and smart enough, you can find ways of still delivering a great experience.
+
+And I'd actually think that should be a priority in this, this world we're in, because there's a lot of founders or people who are in the world. People that have been founders before. I run companies that have become complex unnecessarily.
+
+Right. And so I appreciate this world we're in right now where, you know, I can be a bit more of a lone soldier because I have so many tools at my disposal, which are literally for me are the equivalent of multiple employees who are paid to do the same job before. Right.
+
+And so when you're seeing that, you can be very nimble, very creative. And also you can, if you are a founder that is like design led or product led, you can actually, actually like leaning into that and creating a great experience laid with AI, I think will benefit you profoundly. You know, I think that's actually your go to market is like so much quicker now and you can build great experience in entire categories.
+
+I think. Shh, don't tell anyone. But I've got 30 plus startup ideas that could make you millions and I'm giving them away for free.
+
+These aren't just random guesses. They're validated concepts from entrepreneurs who've built a hundred million dollars plus businesses. I've compiled them into a one simple database.
+
+Compiled from hundreds of conversations I've had on my podcast. But the main thing is most of these ideas don't need a single investor. Some cost nothing to start.
+
+I'm pretty much handing you a cheat sheet. The idea bank is your startup shortcut. Just click below to get access.
+
+Your next cash flowing business is waiting for you. Okay. So how can people, how do, how do, how do they copy what you do?
+
+Yeah. So let's close some of these. I'll come on to another example in a minute.
+
+Actually, I'll just show you this quick example now, just because the example I'm going to show you will relate to this. So the second site I set up, which I'll quickly go over, which I only set up recently is called bestdubai.com. And so I saw this domain, by the way, you know, just a couple of months ago and I just snapped it up.
+
+It was less than $1,000. I think it was like $700. No, I think about $1,200, which in my opinion was a bargain.
+
+Because if you're looking at, first of all, Dubai, where I live now, is like TripAdvisor's number one destination in the world for like two or three years running now. You know, so many people are emigrating here. And it's just incredible in so many ways, you know.
+
+And so what's interesting is the search volume and the search trends of people searching, you know, doing things here has been, you know, increasing a lot. And the main keywords people are using are literally best Dubai, like best hotels in Dubai, best malls in Dubai, best restaurants in Dubai, as you would in most cities. And so for me, the absolute best domain you could get is bestdubai.com.
+
+And it was available at such a bargain. Like for context, if you're doing like Saudi Arabia is picking up now, Riyadh and everything going on there. If you search bestsaudi.com as a domain, that's going for like $100,000, you know.
+
+And that's probably not as popular as Dubai as a city right now. And so it's very, I think it was a great buy. And so that made me kind of lean into that.
+
+And so I bought this domain maybe two months ago and then literally spent like two or three weeks building a directory using the same learnings as Guilty Chef, the same process that I'll go through with you guys in a minute. But now we're doing it in a travel space. And I think this particularly made me obviously, you know, speak to you about this as well, Greg, which was following your conversation with Shaheed.
+
+And you guys were talking about travel directories. And literally being in that space now and seeing it, it's absolutely fascinating what you can do. And again, every single thing you're seeing here is like AI generated, you know, down to we've taken a step further than Guilty Chef.
+
+We've actually got scores that are being generated for the places based on information about them, based on their reviews. And then I actually got Claude. I used Claude in this instance because I thought it was better.
+
+Claude to actually write the algorithm for me to do the scoring. So I'm kind of just always talking to the AI system itself to get it to actually help me create the best experience possible. And we take like the best times to visit and like, you know, popular that data here.
+
+So literally everything here, I haven't touched it. Like I'm not, I could add a place kind of literally within a minute. And then you have, again, you go to SEO.
+
+This has literally only been 30 days old. And now like this is a big restaurant here, Parker's, Parker's Dubai. You type in Parker's Dubai Reviews.
+
+We're at the fourth organic link right now. And I don't even think it's been a full month that we've been indexed in Google. And so we're among, you know, TripAdvisors, Amato, like the biggest links.
+
+And we're not, we don't have their marketing budget. Like TripAdvisors' marketing budget is like $700 million a year. Like a fun fact, actually, I just, I cold emailed the founder and CEO of TripAdvisor, Greg, like two days ago.
+
+And he just got back to me. And so I gave him advice. Really cool guy, man.
+
+Steven. So yeah, he was, you know, a nice big help. But again, things like that, you know, you can get in touch with people, you know, because they, everyone into this space.
+
+They find it exciting. So, you know, you guys can literally tackle entire industries right now and go straight to the top of like whoever you want to talk to. And they'll want to have a conversation with you, I think.
+
+Well, I also think that, okay, so like if I were to create TripAdvisor in 2025, it probably looks more like bestdubai.com than it does tripadvisor.com. So when you reach out to CEO of TripAdvisor, he wants to talk to you, even though you're not that known. Because he wants to learn from you.
+
+You're doing, you know, he wants, he knows that, right? So I think it's a really good signal that he responded and he's like, yeah, let's, let's jam. Because I think this, not only does like, I'm like reading this and like the content looks really good, but the design looks really clean.
+
+And it just, it looks like a good product. Like to me, this looks, I'd rather search this than TripAdvisor. Thank you, man.
+
+I appreciate it. That means a lot, man. Especially from someone I use, seeing so many products as well.
+
+So, you know, I really spent time designing this, trying to get it like the way I thought I might want to use a site. I'm here right now. I've got three kids and, you know, we're looking for places all the time.
+
+And so I literally reverse engineered, like, what would I be looking for right now? And literally, we've just been iterating on it as we go. Like search, we just added last week.
+
+Saved, we just added like three days ago, you know? And so all these things were just like tweaking as we're going. But the most interesting thing, I think from a business perspective is like, you know, we have the ability to add like these tags.
+
+So I've created these categories a bit like TripAdvisor have best choice or the Michelin star. Why I find that interesting is like, they're just brand names really. Like it doesn't, Michelin, you know, the whole thing was created to get people to go to restaurants, you know?
+
+And so in the grand scheme of things, yes, they mean something, but like you can create your own meaning for something as well. And so I think having these kind of tags like Dubai Gem, best 100, and we've actually started to speak to restaurants and say, hey, you've been voted best 100 on best Dubai.com. It holds weight.
+
+And now we're going to put like physical awards in their places, build the brand that way in the city as well. And so like, you know, there's ways to do this stuff that I think, you know, you can really have fun with the marketing side of it too. Cool.
+
+So, yeah, so that's basically this site over here. And another fun thing, by the way, with AI that we did is like the menu. So if I just show you this place again, by the way, Greg, if you go to menu, it has an entire menu of the place listed on here with prices and like designed in there as well.
+
+And you'd think, again, I've added that automatically now. I haven't. And the other thing is that there's not really an easy way to get up-to-date restaurant.
+
+Items and pricing because the menus can be out-of-date like that. That are like online. It might just be images on Google.
+
+And secondly, they just don't have this type of, you know, this type of information on all of their websites. Yet one of the biggest searches tends to be restaurant name and menu. Right.
+
+And so then I kind of thought, well, where does have the most up-to-date menu? And obviously it's delivery partners. Right.
+
+And so I will work with Claude and I just got Claude to create me an extension for like the two biggest delivery services here. So we have Deliveroo and Talibat. And so I can go right now and type in like Parker's Dubai menu Deliveroo, for example.
+
+Let's say the restaurant comes up. And then Claude helped me just write this Chrome extension, which I can just hit Extract Menu and it's done. Oops.
+
+Now I've got the whole delivery menu as a JSON in like literally half a second. So the name, description, price, everything, you know, taken and it's up-to-date. And then I literally have, I just throw this into my site in JSON format and it just formats it all into a styled page immediately.
+
+So just things like that as well, which you can now do, which again, would never have been possible. Where could you get up-to-date pricing? And again, we can now serve a whole new keyword niche that you can never serve before.
+
+You know, we can literally take advantage of the fact that there's so much search volume for restaurant name and menu and it's highly underserved. Like the best place you can, the number one link right now will literally have, you know, an old image of the menu. And so people are naturally going to come here.
+
+So you're obviously creating a great experience for people, which also Google will favor. So that's my, that's my basically my show and tell an SEO rant. But now I'll actually show you how you can start thinking about this.
+
+First of all, we're going to start with Appify. Now, what I'm going to show you guys to get into the building part of this is how you can speak to, how you can use different resources online, different information sets, data sets. And then how you can work with, in this case, going to work with Claude.
+
+You can use ChatGPT, but I prefer Claude for its output. I just think it's much more human. I've at least felt that way when I've been using it.
+
+So the content is better. And how you can use Claude to get it to repurpose that content or output content in a way that will be purposeful for your specific use case. Right.
+
+So in this case, we'll do a kind of a duplicate of like best to buy in a sense, like a directory. I'll just show you kind of the mechanics, the simple kind of elements of it. And then you guys can go ahead and build this out for any type of industry you want.
+
+You know, you can literally think of a directory for anything, you know, whether it's, I don't know, like, you know, gardening tips, you know, whatever. You can literally just build this using the same system. So the main things we're using are Webflow.
+
+So this is Webflow. For those of you guys who haven't used it, it's just like, you know, what's the other one? Framer, a bit like Framer and Figma, but it's not just design.
+
+You're actually building in it visually. So it's really cool. And you have a lot of cool ways of using Webflow right now and designing in it.
+
+I designed from scratch, but you do have sites like Flowbase and Raylume, which have loads of components on there that you can just kind of copy. I think Danny Postma, who's been on your pod before as well, has a site called Flowponents. And again, loads of Webflow components you can just copy and just paste.
+
+And with Webflow, you can literally find an element, like you can hit free if you don't want to pay for one. And it's as simple as saying, I don't know, let's say I wanted this hero section. I can just go here, hit Webflow, and it's copied it now.
+
+And I go into my SIP project, I can just hit paste, command V, and I've got the design exactly in there. So now I can do whatever I want with this, you know. Craig's energy for a greener tomorrow.
+
+You know, and so you're good to go straight away, which makes this very easy to use. So you don't have to worry about design, all that type of stuff. There's so many resources out there you can use.
+
+So that's Webflow. We'll come back to that in a moment. The only other thing you need to know with Webflow is that Webflow has its own content management system, which if you just click this icon here, it's called a CMS.
+
+You can create your own collection. So in my Best Dubai site, for example, I've got quite a few because it's pretty expansive now, but I'll have restaurants, malls, hotels, and then I'll have restaurant categories, Michelin guides, all these type of things that I've got. But just on a basic one, you know, just having restaurants, for example, gives you an idea.
+
+You're basically creating a catalog of listings within a specific category. And so that's what collections are. So we're going to set up collections in a moment.
+
+But then the most important thing to start with really is first of all, deciding on your niche. So we can start with a travel directory and we can just, you know, what's your favorite city in the world, Greg? Let's do Montreal.
+
+Montreal, nice. Canada. Cool.
+
+Okay. So let's say we're creating a directory of Montreal, Canada. Okay.
+
+The first thing I'm going to do is actually figure out the content that we want to use. So you could just go to Claude and ask it, you know, what are the best places to visit in Montreal? Now, Claude, like I said before, is just going to give you the content that it has already indexed from the World Wide Web.
+
+That might be cool. It might give us some obvious things. But I think you and Shah had touched on this before, Greg, as well, which is you actually want a directory with nuance, right?
+
+You want a directory that can show you all the nooks and crannies of a place. And I think that's the most interesting thing about, you know, doing it without going into Claude directly is using that knowledge you have. And so you want to figure out, well, how can you take some of this real world knowledge, real world information, and then repurpose it into a format that you can leverage AI with.
+
+And even with me, with Best Dubai, by the way, I've been going on Instagram pages of like bloggers and looking at the places that they're searching for and then indexing them on my site. You know, so I don't even have to go out there and find all these places and discover them myself. If I go to Google, I'm finding generic places.
+
+If I go, you know, try and do my own mental thinking, it's impossible to like, you know, get every single place that's here. So if I go online and find the people that are hot right now are talking about things, they're all creating TikToks about all the best places. And I can just go on there and learn about them and then add them to my site.
+
+And now I'm effectively indexing all this information that is already out there. So you could do the same as well for Montreal. So what you would then do is that what then I started thinking about is how do I get this information?
+
+You know, I don't want to use Claude because it won't give me the best information. And I came across Appify, which some of you guys might have already seen. I think it's becoming increasingly popular, but effectively Appify is like just loads of scrapers.
+
+Have you seen Appify before, Greg? I have. Yeah.
+
+Cool. So loads of scrapers on there. Super cool.
+
+Instagram, TikTok, LinkedIn. There's so much data you can get off it. But the one that I particularly find interesting is the Google Maps one.
+
+Right. And so if I go into. You can just go in here.
+
+Oh, this little reviews one. You can go into here and start using these for free. So you can just start using one of the Appify.
+
+They call them actors. So this is the Google Maps business scraper. And after a certain amount of time, you can pay for places like $4 for a thousand places, which is very cheap.
+
+And all you do is you enter the place ID of a place and it will give you all the information from Google about a given place. Right. And so how do you do this?
+
+Well, you go onto Google developer platform and you'll find the Maps JavaScript API, which has the place ID finder. You can actually just search place ID finder on Google and it'll bring you to this page. And we need the actual ID of a specific place.
+
+Right. Because that's how our actor runs. It tells us to enter the ID of a place.
+
+So Greg is now going to tell us his favorite place in Montreal to eat at or visit. Let's do a restaurant maybe. Do I want to give it away?
+
+That's the question. All right, cool. Let's do fifth best.
+
+Let's say L'Express. So it's L apostrophe express. Cool.
+
+Denise street. The second one. Fire.
+
+All right. Cool. So this now is the place ID for Express.
+
+And so every single listing on Google has its own unique set of characters that is its own place ID. Right. And so you'll copy that and then we'll come into here and we can just hit paste and you can leave everything else the same.
+
+There are some options you can mess around with, but we're not going to right now. And you can just hit save and start. And what will happen is Appify will start to actually get data about that specific place.
+
+And for me, it was surprising how much information you could get. So it runs, doesn't take long at all, like a few seconds. And you just have this rich set of data about L'Express now.
+
+See, we've got, let's go to all fields. We've got the address, you know, city, images, you know, literally everything that you could think of is just in this data set that we've just got straight away. And then so what I started doing is thinking about how we can make the most of this data.
+
+So if I can get this data now, if you're kind of thinking about, if you're looking at our thinking process here, we're just going kind of step by step. And we're saying, well, if we have this now, if we have a set of data, then what can we do with that set of data? And actually us just ideating by ourselves is interesting.
+
+Like you can be creative. But what I found even more interesting is taking this information. So hitting JSON over here, hitting preview new tab, and then I'll just do this.
+
+So it just literally helps me copy into one block. I'll just command A, copy the whole lot, go into Claude, start a new chat, hit paste, and just talk to Claude about the data. So I'll give you a small example.
+
+I'll just say, what can you tell me about this data? So because I'm in JSON format now, Claude can start to understand the information. And it tells us, you know, it's a French restaurant in Montreal, this location, this operation hours.
+
+And this is where I started to learn about information like busy's period. So on my site, you can see I have like when it's buzzing, when it's relaxed. That's because Claude informed me that it actually has that information.
+
+It actually knows how much occupancy it has on Saturday nights at 11 p.m. And that's the equivalent of when you go on Google and search a place, let's go to Express Montreal, you'll notice on Google you have the popular times. So Appify is actually picking up this data as well and giving it to us.
+
+And so in the JSON, you will see that here we have like the percentage occupancy per hour for 24 hours, seven days a week. And so that's data you can also use. So I found that particularly interesting.
+
+And again, that enhances the experience of what we can do. So you can go into more depths with this. So I would then go to Claude.
+
+I'll give you another example. So you guys can take any set of data you want. But what I then did is I went to Claude and said, okay, I'm building the most advanced directory of Montreal better than TripAdvisor and Google.
+
+So I'm going to create a table. So I'm going to create a table. Create a table.
+
+Create a table. Create a table of all of the information you think I should include. Be creative and detailed in your response.
+
+In fact, I'm going to say create a HTML site. Yeah, something like that. So you can literally get to actually create the landing page for you if you really wanted to.
+
+And I would just build it now. But actually, the reason this is more interesting is because you're taking that set of data and when it builds it out visually, you can actually get a sense of like, you know, the information it can kind of give you and what Claude might think is interesting to include. So I find it interesting just to like play around with and actually, you know, to read information visually, see what it's thinking.
+
+And it actually helps me ideate. For instance, recently I did this with a new set of data from Best Dubai and it told me best times to visit for date nights or best time to visit for, you know, family lunches. And I thought that's a cool little thing to add because you could have a whole section of your site that could, again, power your SEO, which could be, you know, best restaurants to visit in Montreal on date night.
+
+You know, and I got that information from Claude just building out a site for me. So this is like a landing page that Claude is suggesting. It wasn't scrolling for some reason.
+
+Oh, I think the site, I think the page is so big. It's going to be so funny. Oh my goodness, this thing.
+
+Look at that. Oh my gosh. Okay.
+
+This is like more expansive than even I expected. All right. I don't know.
+
+This is such a cliffhanger because you really want to see this, but you don't even know if you can. It might take us a whole episode to get to the bottom of it. All right.
+
+Well, maybe. God. Okay.
+
+We won't go through all of it, but you get the sense of what we're saying. It's highly detailed. I don't know how they've laid this out, but yeah, you could play around with this, but it's very, very cool.
+
+And you can get a lot of information just by doing this exercise. So once you've done that, you can actually figure out and create a kind of a criteria or list of what information you want to display on your site. And the reason that's important is because our next step is going to be actually setting up this information in Zapier so that we can then talk between all these different systems.
+
+Right. Zapier allows us to give it some sort of input data and then do something with that data. So in this case, we might want to say, give it the place ID.
+
+And then from the place ID, we want to connect it to Appify. We then want to connect Appify to Claude. And we then want to connect Claude to Webflow.
+
+Right. So now you've got a cycle of like literally just hitting a place ID in there and then just taking your foot off and letting the whole thing run. And that's literally the way I've got Best Dubai set up now.
+
+I can just paste in a place ID. So I'll literally be out somewhere, go to a restaurant and I'll see something I like. I'll just take the place ID, I'll paste it and I'm off.
+
+And then the entire page is generated for me because we've set it all up in Webflow and Zapier to work automatically. So let's do that now. So let's set up like an example for you guys so you can actually see how it works.
+
+So you can actually set up Zapier with any trigger, meaning where is the data coming from? Right. The data can come from Slack.
+
+You can set up with a Slack channel. So you send the place ID in a Slack channel and it comes from there. You know, you can set up with Airtable, whatever you want.
+
+But for this case, we're just going to use Google Sheets. Right. And so I've got a clean Google Sheets here.
+
+And the reason I also think Google Sheets is a cool thing to use is because once you set this up, you can mass upload data. And so why I find AI super interesting right now in this process is you can literally put in one phrase or one word. In this case, it's going to be the place ID.
+
+And even the size of the page that I've developed right now and the design, this is all done from me just adding a place ID and everything else is done automatically. I'm not touching anything down to it being sent to Google. And so it really gives you kind of an idea of how expansive your site can be, how much information you can add just from one single entry on a Google Sheet.
+
+Right. And so we're going to add a column here called place ID. And we're then going to go here and just take this as test data and paste this into a column.
+
+Um, and then we've already kept our Google Sheet to Zapier. We're then going to tell it is this worksheet and then it should pick up, um, that specific row. There we go.
+
+So it's picked up that place ID. That's our test data. And we continue with that.
+
+And now we're going to add Appify. So Zapier, the reason I loved, actually, I was really surprised to see this as well, that Zapier had Appify built in there, which makes your life so easy. Um, and it's a big deal.
+
+That's a huge deal. Right? Yeah.
+
+Like, I know your mind's already going crazy, right? Cause even when I saw this, I was like, this is bonkers how many things you can create. Yeah.
+
+I honestly didn't know that. Oh, you didn't. Okay.
+
+Yeah. Yeah. Watch this.
+
+So you can go, um, into here, run, uh, synchronously, um, hit that yes. And then, okay. So now it's going to ask us for basically our, you know, prompt or, you know, our, our, oh, sorry.
+
+This is a wrong one. It's not a Google Maps structure. It's Google, um, business scraper.
+
+There we go. Okay. There we go.
+
+All right. So you can delete the information that's in there by default. It's going to basically ask you for the place ID here.
+
+Right? And so the great thing with Zapier is everything's a variable. Meaning, um, if you check, if you add like a new row with a new place ID and you configure it in Zapier, it will just pick up that new place ID.
+
+Right? And so you don't have to manually put the place ID here. We're actually going to click plus over here and then go to place ID.
+
+So tell, tell, tell Zapier to pick up the place ID from our Google spreadsheet. And so it will do that. But we need to add a bit at this, uh, the kind of start of the URL for, for, um, this actor to run.
+
+And so I've got this over here. I'm just going to copy this URL, um, and just paste it. So it's a simple URL.
+
+You guys can just screenshot from here and copy that. So it's a start of the URL. This is going to be the place ID, which will go at the end.
+
+Um, and that's it. We hit test step. And now what will happen is that actor is running the same way it ran when we did it manually.
+
+Right? So instead of going through Appify now, we're going through Zapier. Um, and it'll go and get this information for us.
+
+Now, throughout this process, the reason I think the, the reason I think like best to buy Guilty Chef, um, are kind of working the way they are is because to get to the results, to the, to the point that we've got them, I've had to solve problems along the way, which I want really any obvious solutions for. Right. And so some of them are like repurposing, repurposing content, uh, in a way that can be read by Claude.
+
+Um, you know, like I said, like creating Chrome extensions where we can get, uh, you know, information from Deliveroo and entry into our site, these kinds of creative hurdles that you've got to jump through. So some of this information I'll share with you now is like some of that work I've already done, which you guys can just immediately do and start and have your system working. Um, so we've got now the information of the express.
+
+We can see the address here, the, the, uh, URL. Um, by the way, uh, Greg, you like this on the URL on our site. Anytime you visit the site, we also automatically add, um, our reference at the end, which is again, so yeah.
+
+So in their analytics, they're seeing that the traffic is coming from us. Um, that is huge. I want to just speak to that for one second.
+
+When I was, when I was at, uh, I sold a company to StumbleUpon, which was many years ago, a very large social network that would refer traffic to publishers' websites. And people used to see in their analytics that StumbleUpon would send them traffic. So then all of a sudden we'd have like BuzzFeed hit us up and be like, hey, you guys drove us like a million visits crazy in the last 30 days.
+
+Um, can we pay you for more traffic? Wow. So you'll, why I think that is so smart having the reference and the link is people will start seeing it in, in their, in their analytics and they will proactively reach out to you.
+
+And it's way better for them to reach out to you than for you to reach out to them. Like the power dynamics are completely different. For sure.
+
+For sure. No, no, I agree. That's such a great story, man.
+
+By the way, congrats on that. That's a big deal as well. Um, so you saw, you sold it to StumbleUpon?
+
+Yeah. And I was like, yeah, that's a whole other story, but, um, yeah. Amazing, man.
+
+Well, yeah, so that's, that's, that's great. That, that gives me a lot more confidence in this as well. Amazing.
+
+Um, cool. And so now we've got our data in, uh, Appify. Actually what you'll see here is the data that we're getting out is all in individual kind of strings, right?
+
+Like you got the data set at the, or sorry, let me go too much more, better information. Like you got the neighborhood here. You got the category here.
+
+You got the name here. That might sound great. It's like, yeah, we got all this information.
+
+But the problem we have here is when we actually spoke to Claude, we gave Claude a single JSON, like just output. And this isn't that, you know, this is basically just broken down format. The reason this is a problem is because if I now go here to, uh, add Claude, if I add Claude here and let's say we give it that prompt, um, let's say we then say, you know, tell me about this data.
+
+What I really want to do is have one single input that I can add. The problem with Appify's output is it gives you everything broken down separately. And so you can't just sit there adding everything, you know, that's absolute, you know, pain and no one's doing that.
+
+So that was the first hurdle I came across. Um, and so what we have to do, what we do is if you look at, um, well, what we do know is that it actually provides us a JSON output. So we know it's in there.
+
+And so when you actually look at the data that you get from Appify right at the bottom, you'll see there's a dataset in different file formats. And one of them is JSON. So it actually has it here.
+
+You just have to extract it, right? And then give that to Claude. And so what we're going to do is we're going to add another step here.
+
+I'm going to hit code, um, by Zapier. So this is where Zapier allows you to just kind of run some code like Python or JavaScript. We're going to hit run Python, hit continue and input data.
+
+So we're going to put URL and then we're going to add the input data as, um, the JSON file. So the data items JSON file URL, and then we have the script here. So this script we're going to take, I'm going to copy this by the way, the shameless plug, but I've got a school.com slash five day sprint in my school community.
+
+You can find like, you know, the breakdowns of all these, this, with the code and all this stuff I'm pasting in here as well. You can just grab it from there. Um, if you don't want to copy it from here.
+
+So in here, you can just add the, this little code snippet and it will basically take this URL, uh, sorry, take the, this key and understand that the value is this JSON, uh, file over here and then take that and give us the output as one single JSON string. Um, so you let that run. Um, and we will have our output as one single JSON.
+
+So it's just basically taking that file and printed it for us. Okay. And so now we have a single string that we can now give to Claude.
+
+So we can go to Claude and say, you know, we can just literally reference this output now, which is all of that data. It's the equivalent of this. Okay.
+
+And so now the next step. Is, is actually getting the data out. And so this is the prompt that we're actually going to give to Claude to then populate our directory.
+
+So there's two things that are important here. The first is the actual information that we're going to ask it to give us. The second is the format in which we ask it, uh, uh, to give us that information.
+
+And the reason the format is important is because if you think about, um, all the information that we have on a webpage, like here, we've got the name, the address, we've got, um, the URL, phone number, so much information going on. Claude doesn't give us a webpage designed like this, right? It doesn't break everything down on this.
+
+I've designed this specifically in webflow to work for me. And if you go here, um, sorry, you guys can be creative in, you know, in your own way, whenever, whenever you do it, but if I go to like restaurants template in my site, every single element here is a separate design element and it's connected. The data is connected to a part of my CMS.
+
+So this is dynamically connected to the cuisine name, you know, or like this about bit here is done up dynamically connected to the short description data. And that's coming from my CMS, which I showed you guys is over here. And so what our job right now is we want to send information to webflow so we can go into our CMS in the right columns and in the right format.
+
+And in order to do that, we have to get that information from Claude. Okay. So the first step is to understand what information you want.
+
+So literally, you know, very specifically the name, the URL with, uh, you know, the reference appended on it, every single detail of what you're looking for. You want to make sure, you know, in advance. And so I'd, I'd suggest just having that list with you.
+
+Um, and now I'll talk to you guys a little bit about formatting. So I'll get, I'll do a couple of quick examples of like, you know, basic information, and then you guys can go and break it down however you want later on. So we're simply going to say, um, using, using this, uh, data, um, I want you to output, um, some, you know, information for me.
+
+I actually have like a better prompt in my whole thing, but I don't have the, it's in a different, uh, Zapier file right now. So we'll just go off the cuff here. Um, so first of all, you can give, you can give, uh, Claude some like key guidelines to follow.
+
+So some basic ones I would normally do that for me, for example, for this site, I wanted it in like UK English. So I said to it, um, print your output in UK English. I'll just give you guys an example about things you could tell it.
+
+Um, you know, um, wait, sorry. And if I, if I wanted it to be printed in, uh, Canadian French, would it like other languages work as well? Yeah.
+
+We can try it. Do you want to try Canadian French? Sure.
+
+Yeah. Canadian French. I might not be able to read it, but you can help me.
+
+Um, cool. But any, any type of information you want to give it here, like guide. Guidelines wise, you can give it, you know, there's so many different things that you can add here.
+
+Again, a breakdown of the exact prompt that I use for best advice in my school community. So you can see exactly how to talk to, uh, Claude. But as an example, you put your guidelines there.
+
+Now, by the way, the reason I, the reason I care, you know, the Canadian French is interesting to me is I think a lot of people are just creating directories that are English first, but I actually think like geography specific, you know, like, and then, and then registering, for example, instead of registering, it's very hard to get a.com, but a.ca or a.co.uk or a.fr might be a lot easier to get. Completely. Yeah.
+
+Yeah. That's a good point actually. Yeah.
+
+That is true. And I think that, yeah, especially with like, you know, the way, you know, specific niches for, um, specific languages as well. Yeah.
+
+Cause Canada is predominantly French as well, isn't it? Not mainly French, but French is one of the main languages. It's one of the main, main languages.
+
+Yeah. It does. It makes perfect sense.
+
+Exactly. .afr domain. Yeah.
+
+Even here now, like we've been thinking about .ae domain, Arabic, you know, it's completely true. Yeah. And you can just get the output directly from Claude.
+
+Yeah. Um, so now you, now you can start to ask Claude the information you want. And so this is where the formatting comes into it.
+
+And so I have a technique of, um, basically taking this larger prompt, which is the main prompt we're giving Claude, but including mini prompts within it. And with these mini prompts is where you can actually be very creative, right? And you can think outside the box here.
+
+And so the way you want to structure this is anything that you want to ask Claude for, you're going to put the titles inside, um, asterisks, right? With a colon. And so let's say, um, place name.
+
+I'm going to do asterisk, asterisk, place name, asterisk, asterisk, and colon. Right. And so now anything I say after that is going to be the instruction to Claude of how to get me that specific data.
+
+Right. And so I will say, um, print, uh, the title of the restaurant. Now you can simply say that, or you could be a bit more creative here.
+
+You could literally ask it to print the title of the restaurant, but add, I don't know, whatever, you know, uh, hello Canada at the end of it, or, you know, so it will let you print you whatever that mini prompt is. Right. So that's an example.
+
+Another one might be, let's say a website URL. So you could say, um, print the base URL. So not just a URL, I'm saying base URL, which might just be like, if you had mario.com slash hotels slash whatever, you might just want the mario.com bit.
+
+Right. And so you can ask it for the base URL, um, print the base URL of this place, um, and, um, append the URL with, um, ref equals, uh, Greg.fr. Um, and so on, you know, you could do this for like, you know, whatever information you want, you could take the, I give an example is the image URL that Google gives, uh, Appify gives from Google is actually low res.
+
+And so that was causing me to have low res images on my site. And so in my prompt, I said to it to take the image URL and to change the width and height properties of the URL in its output. And it did that.
+
+So I could literally change URLs and everything. So Claude, basically what Claude is doing every time you're asking it something is going back and reading all this data and then giving you what you specifically want here. So effectively you're just organizing the information for your specific use case.
+
+Right. Um, and so you can go down the whole thing here. Let's just do a quick one, like busiest.
+
+So let's say, um, best, uh, date time, best for data, best time for date night. So you need to tell it to print in specific formats. You can say print the best time to visit this place, um, for date night, um, print your output as, actually, uh, Greg, you know what I'm going to do, I'm going to actually just change this to English for a minute because, um, we can actually then see, uh, what it actually says.
+
+Um, yeah. Print the best time to visit. Print your output as, um, in the, in the following format, format example.
+
+And I'll say like, um, Tuesdays from 12 to 8 PM. Um, without the, um, what's it called? Uh, speech marks.
+
+Let's say that's an example. So this is giving you a little bit of an idea of how you could speak to Claude. All right.
+
+So now we can hit continue. Um, and so by the way, obviously, you know, for a side like this, there's lots going on. Like we actually asking it for so much information so you can break down whatever information you want.
+
+Let's just add one actually for score. Actually, I'm going to do a scoring one with you guys over here quickly. This is how I did it.
+
+Uh, just give you some context. So you can say, um, write me an algorithm. So write me a prompt that I can give Claude to, um, rank this, uh, place, um, on a, um, scale out of 10.
+
+Um, um, you should also, um, create individual categories for things like, um, food, experience, service, et cetera, whatever you think is best. And each of those should have a score. The final score should be calculated based on these individual scores or whatever, you know?
+
+Oh, Mark, can you click, can you click a high? It says Riverside FM is sharing your screen. Can you click your high?
+
+Yeah. No worries. Um, provide the, um, provide the prompt in a code book.
+
+Also that when I'm speaking to Claude, I'm just like, I'm not thinking much about like what I'm asking. Yeah. I kind of refine as I go.
+
+Cause sometimes I read it back and I'm just like speaking like an idiot and then you refine it. So, so there you go. So this is, it will literally, this is what I'm talking about.
+
+Like you want to just help it, just give you the information that you're looking for. So this is exactly what it will tell us. It will go and do.
+
+It will give me the prompt of like, please analyze the data, use these categories, food and menu, service and stuff, overall experience for each category is score out of 10. This key factor in front of the score. So I'm going to say, um, uh, reduce, reduce it down to five categories and we don't need the key factors, uh, listed out simply the scores.
+
+And then what you can do, by the way, Omar, once you have these scores and you can do this, I mean, you'll be able to do this with your website is you can create an embeddable widget that restaurants could embed on their products. And be like, I got 97% score. And why, why is that so genius?
+
+Is it actually generate, exactly. It's a backlink play. Just a backlink play.
+
+Right. So in SEO, the more backlinks you get, the more high quality backlinks you get, the more high, more trust basically you get. Um, and you'll just get more traffic.
+
+So yeah. Dope idea. Amazing, man.
+
+I mean, you know, one of the things I was thinking is like, I can't bring myself to do it because I haven't got the bite. I haven't bought into it creatively yet, but it's the Google, uh, podcasting LLM, you know, the podcasts that you can book, notebook LLM. Uh, notebook LLM.
+
+Yeah. So like I actually put the URL in there and he just, it like took more of Emirates, which has like a ski slope in it. And it was like, yeah, hold my camel.
+
+You know, it was like so cool, but an amazing, but I was like, ah, like we could, we could technically just end up having a whole podcast for like all these places, which also helps SEO massively too. But you know, I haven't, I haven't like mentally committed to it just yet. What do you think about like doing stuff like that as well?
+
+Like, you know, generating content using notebook LLM for the, for, for, for SEO purposes. Do you think it has a benefit? I think it has a benefit.
+
+Yeah. Yeah. I mean, yes, absolutely.
+
+All right. That might be interesting. Worth exploring then.
+
+Um, so we're going to say score. Um, so we're going to then say, um, please analyze. So then we're going to say here, um, score scoring algorithm rhythm and there's give it a prompt.
+
+Please analyze the data. And then provide boom. And then again, we're going to say, um, um, you know, whatever food and menu score, uh, say, uh, generate score.
+
+So food and menu score. Um, um, I would say print the food and menu score out of 10 to, to decimal places. So again, you go through the whole thing and then finally we can do like, you know, total, uh, total score.
+
+Print the, uh, the final weighted score out of 10. Um, yeah, so just things like this you can do. And oops, mistake.
+
+Yeah. Colon. All right.
+
+So we'll hit continue now, uh, and then test that. And so Claude will now go and do that entire process and read your prompt, uh, and get us information in the format that we're asking it for. Um, and so there we go.
+
+Now we have place name, express website, URL with our reference at the end of it. Best time for date night, Wednesdays from 9 PM to 7 to 9 PM. Locked, pregnancy, then weekends, but still good atmosphere.
+
+So what's interesting here is like, it's given us like information in brackets that we don't want. Um, I just wanted this information. So I would go back in my prompt and refine that and just be clear about that.
+
+So you can do that. Uh, scoring analysis based on the available data is giving us all the scores. Um, so I did food and menu score.
+
+Um, again, it's given us actually too much information. We only wanted the score so we could like tell it to refine that. Um, and then the way to score as well as given us.
+
+So that's basically a structure. And I, if we had more time, I'd go back and I refine the prompt, but just to show you guys, that's how you can basically talk to Claude and get the information you want. So the main thing here is to make sure that the format is for every piece of information you want is asterisk, asterisk, um, the thing you want, asterisk, asterisk, colon, and then the mini prompt, the instruction.
+
+And that can be as elaborate as you want. You can literally get to write you a code if you want. And so now what we have is another challenge, which is the Claude actually give us the output in a single text block, right?
+
+Same way as that, as it would give us output here, um, like this. And so if I just wanted to take like the opening hours, I can't do that. Right.
+
+Because it's one big text block. If I try to send information to Webflow, Webflow will take this entire text block. Same way it will take all of this information as one.
+
+It wouldn't know how to break it down. And so the reason we added the asterisks is because that is a, a rule we set a bit like an indicator for the next step, which is another piece of Python code we're going to add. And so we're going to hit run Python here.
+
+And we get this, the input data this time is going to be response. And here we're going to put the, uh, Claude's actual output. Right.
+
+And now what we can do is take this bit of code. And paste here. And basically what this is telling, um, uh, Zapier to do is find the pattern where there's asterisk, asterisk, and then basically strip that down and give us just the information after that.
+
+Right. And so you hit this and immediately it will just break that text down. And so now we've got the place name as an individual string, URL as an individual string.
+
+And all the information that we asked for. Again, the score here, we'd want it just to be 9.20, but that's based on the, you know, the prompt that we gave it. We can refine that by effectively anywhere those asterisks is broken down and given us a string of information.
+
+And so now you can see that if you kind of extrapolate this out, that's how you start to get every little detail that I have here. Like, you know, FAQs, the phone number, the, you know, the opening hours, every single thing is individual sets of data that I've asked it for. Um, and then the final step you would do now that you have this information is, is connected to your Webflow project.
+
+Right. And so here, Webflow. And so if we go to a Webflow project here, we might want to create a, um, collection item quickly.
+
+So we'll say our collection will be, um, you know, restaurants and we have name in there already. We can have different fields. So in Webflow, you can add, you know, all different types of fields here.
+
+So another text might be, you know, uh, total score. Um, and then another field item might be, uh, no, we've got the URL here. So we could say, um, you know, URL, um, so let's just create that collection.
+
+So again, you guys can, you know, really build this out and maybe we can do a more detailed breakdown, uh, in future as well. Um, and so normally in Webflow, you'd add things manually here, right? You'd click add and then you'd manually add, uh, sorry, you'd manually add a new place.
+
+Um, but that's obviously very time consuming. We're not going to be doing that. The good thing with Zapier is if I just publish this, um, with Zapier is it connects to Webflow.
+
+And so it can find your CMS items and you can just map fields to that CMS. And so you have a, now that we created a CMS, you have a template page here, restaurant templates. So same way over here, I have, uh, restaurant templates.
+
+This is my restaurant template page. Um, you also have that, right? And so now you can put any type of design element you want in here.
+
+So we could go into here and copy something, you know, let's take, um, whatever, let's take this over here, copy this for argument's sake. You know, this might be our, uh, title. Uh, this might be, um, the total score, total score.
+
+Um, you know, and this might want, we might want this to link to URL, right? So like visit and I could even go as far as saying visit and another text block where it would say that the place is named the, the name of the place again. And so, um, we will go to, uh, back to Zapier now, go to the Webflow step.
+
+And we're going to create a live item, but now we're going to go account and we're going to connect it to my account. Click continue. You're going to pick your site.
+
+This is our SIP AI. Our collection is found the restaurant collection we've just created. Uh, by the way, when you create a collection, make sure you publish that's otherwise Zapier won't pick it up.
+
+So if you struggle with that, it's probably because you haven't published it. And now all the fields we've just added. So we've only added a few of them.
+
+But again, if you have a big site, you can have as many fields as you want here. Um, you can start to see the fields here. Now we can actually map data to these fields that we've just set up.
+
+And so the place name now, if you see here, we've gone, we got the, um, Python response, uh, from our clawed output broken down. And this is the place name over here. We then have the total score, which is going to be the data that we're connecting from our Python output again, which is going to be like, you know, uh, where's total score?
+
+Uh, total score. Uh, maybe it should be a total score. Hmm.
+
+Didn't give us total score. Okay. Location and accessibility.
+
+Let's just put that score in for now just so we can see what it looks like. Um, and then URL. We'll have our URL from here.
+
+Which is website URL. Um, cool. And then slug.
+
+So in my, in my, in my site, I actually create the slug as well with clawed. So the reason I do that. So if you see over here, this, this slug, which would be slash parkers normally menu, just that could be clicked on it.
+
+But I'll be parked. The reason I do that is because when you're doing your SEO, you want the slug to be, you want to know what the slug is so that you can, when you generate your schema, you actually reference the correct URL for Google. Um, cause you, it's difficult to create the schema once your webflow item has been created, you know?
+
+Um, and so now that we're done that, we can hit continue and then test step. Oh, what does it do now? Is there a bad request or a URL?
+
+Oh, it might be this over here. Let me see. What's going on?
+
+Well, I love that there's a bug. Cause yeah, I know. This is real life, man.
+
+It's not so funny. Like I never really have bugs. Let's test again.
+
+Let's see what's going on. Okay. Now.
+
+Okay. So here's what I'll do. I would just basically individually delete and test again and see where it's coming from.
+
+All right, cool. Okay, fine. So there's some formatting issue somewhere.
+
+So maybe this, let's see. Um, and this is just good for people while you're debugging this. This is good for people to see how someone like you, once they have a problem, how do they think about debugging?
+
+Yeah, for sure. For sure. For sure.
+
+Yeah. No, it's a, I normally just kind of work back through my steps. So I'll just like, normally I'll go like, so if you saw here, I went to Webflow.
+
+I saw that it was obviously I just deleted two things. Cause I'm trying to just minimize, get back to like, you know, one step at a time. So let's add place and see if that works.
+
+If that doesn't work, then this was all, nothing here was working. So at least we know that works. It sends to Webflow.
+
+And so before I start adding total score, I'm actually curious because I can't find total score. So I just went back to my step here and wanted to see if we actually got total score as an output. And we did.
+
+And so we do have a total score there. And in our code, did it break it down? Well, we don't see total score here.
+
+We only see value. So something's going on where there must be an asterisk problem. Because if you see here, like food menu score, this all looks wrong.
+
+So somewhere I probably missed something in the formatting. So let's have a look at our prompt again. So have we missed a colon somewhere?
+
+Hmm. No, we've got the colons in place. Interesting.
+
+So we got our place name. Yep. Yep.
+
+So could it? Ah, hold on a second. Could be maybe.
+
+Because we've got the percentages and dollars in there, these signs. So what we want to do is, yeah. So I think that's messing up the formatting.
+
+So scoring as a bit of a following available data. Yeah, I don't know why it's adding asterisk in it. We're not asking it to.
+
+So, okay. So now we can go to our guidelines and say, print your output. Print only the output.
+
+Print only. Print only. Print your output as the.
+
+I'm trying to think of the English. That I'll choose. Print only.
+
+The titles inside asterisks. Followed by the. The answer.
+
+Followed by the answer. To that specific prompt. This is probably not making the right sense in English.
+
+But let's see. Only titles inside asterisks. Followed by the answer to the prompt.
+
+If. Mind. Structure.
+
+If. No. Let's not worry about that.
+
+Let's just see what's done for now. Two dozen replaces. EG 9.10.
+
+EG. 8.20. EG 9.20.
+
+Now speech marks and no additional text. Cool. Let's see if it does that.
+
+Okay. Cool. So.
+
+Yeah. It seems to be better. Food menu score.
+
+Total score. Yeah. Okay.
+
+So that's about right. Let's retest the step. Okay.
+
+Good. This bit over here though. Why does it put that in date night?
+
+Ah. Because. We have.
+
+This information down here. After it. So it's thinking that's all part of it.
+
+Why is it doing that? It's very strange though. Because I've never had this thing before.
+
+Where like. It will literally. Follow one from the next thing.
+
+There must be something in my prompts normally. I don't have the prompts in front of me. That I normally add in the guidelines.
+
+That tells it not to do that. But yeah. Let me see.
+
+Scores. And I did. Choose.
+
+Yeah. Hmm. Yeah.
+
+I don't know. We'll give it a couple minutes. If not.
+
+What we'll just do. Is we'll edit this part out. And we'll just be like.
+
+And then you publish it to web flow. Yeah. Yeah.
+
+Yeah. Yeah. Yeah.
+
+I'm just wondering though. Why is it taking. You know what I'm going to do.
+
+Let me just jump into. My actual normal. Yeah.
+
+Let me. Oh. It's not this one.
+
+Submit. Please. Working here.
+
+Just read this. So my normal prompts are like. Enormous.
+
+And this is a prompt. So. Yeah.
+
+I'll give you the title of a field. I want you to update it for the field. We wrapped in asterisk.
+
+For example. Restaurant. Probably the rules I've set for you.
+
+When you're giving that up. I want you to simplify the title. And then.
+
+Yeah. Cool. All right.
+
+Let's take this and see if it works. I want you to update it for the field. I want you to update it.
+
+Okay. Avoid using generic or AI sounding language. I like that.
+
+I know. If there is. French.
+
+Actually, let's not do that. It would be French. Yeah.
+
+Because it is literally Montreal. So if there. Okay.
+
+We can just do it here. Cool. All right.
+
+So you can probably just take out the bit. Where I just went over to this project. Yeah.
+
+And we can just go straight into this. Okay. So.
+
+I've just put the guidelines in from our other project. On Best Dubai Project. Let's see if this works.
+
+So it. It should be a little bit clearer. I'll give you a title of a field.
+
+I want you to update it for. This field will be wrapped in asterisks. Cool.
+
+So. Let's see if this works. Otherwise.
+
+Lord knows why it's. We're down using that. Anyway.
+
+Let's see. Fingers crossed. Oh, actually.
+
+I do know why. Okay. Let's see what happens.
+
+I do know why. Yeah. I do know why.
+
+The reason that's happening is because. Okay. This is better now.
+
+But what's happening is it's actually, yeah, it was adding information into the Claude response. The Claude response only should be the asterisks. No other information.
+
+So it was including this as part of the response. Right. So that was a problem.
+
+So we just had to kind of clarify probably like where to stop. So now what's happening is it's given us a score. But then the category breakdown.
+
+So total score. Yeah. So we'll just go here.
+
+Print. Print the full menu score out. Turn to places.
+
+Only print the score. All right. Let's see if this helps.
+
+It gets us through the door. All right. Yeah.
+
+Cool. There we go. All right.
+
+So a little bit of playing around with Claude, but we got there. So what your output should look like this. It should just simply be every, you know, each item you've asked for with the information.
+
+And it shouldn't be anything else in between. It should just be the output you want. All right.
+
+Because this is the data we're going to send now to Webflow. Cool. So now we can go here.
+
+We can continue with the Python stuff again. Break the data down. Now the data is broken down for us.
+
+And we hit continue. And we can add the information here. Hey, where did total score go?
+
+Total score disappeared on us now. All right. Let me, one second.
+
+It's going to bug me. It's going to be two seconds, Greg. Why did it do that?
+
+Total score is here. Yeah. Very odd, right?
+
+Because it is there. That is so odd. Why didn't...
+
+Playing with my emotions. Yeah. Okay.
+
+We'll get there if we had more time. All right. No problem.
+
+All right. Fine. Let's just use the food menu score on the total score.
+
+Fine. And URL here as the URL. Yep.
+
+Cool. Oops. No.
+
+It's incorrect. Because it's not in the HTTPS format. Oh, yes.
+
+Good eye. That's going to be a formatting issue. So we've got words from putting it in the URL.
+
+URL in full HTTP format. The URL of this place in original format. Cool.
+
+So fun to build stuff in this day and age. You know what? It is.
+
+It is. It's like you can just sit here. It's so annoying.
+
+Look at this stupid thing. It's like writing this whole thing out. Doing that.
+
+It's so I've never had this happen with Claude. It's ridiculous. What model are we using?
+
+Are we using like. Oh, maybe it's three and a half concise because there's a lot of traffic. Is that possible?
+
+Maybe. You're going to see balance, most powerful latest, sonnet. Balance.
+
+Very, very odd that it would do that. I've never seen it be only print. I'm literally saying only print the score and nothing else after.
+
+How clear do we have to be? It's wild. But anyway.
+
+You see. Yeah. Okay.
+
+Well, it's there for now. But this might be because it's got a hand in it. Let me.
+
+Let's. Let's. Let's change this.
+
+Yeah. So maybe that's why it's not breaking it down because any odd food and menu score. So it might be anything with an extra symbol.
+
+Because we. On Best to Buy, basically we had an issue where like we get the pricing in dollars. The symbols to reflect like not as expensive or whatever.
+
+And it was crashing the site. And it actually took us like three days to figure out. It was because there was like a character in it.
+
+I couldn't understand. Yeah. This.
+
+How does that even make it? Wait. Do not.
+
+Do not. Do not. Give me any explanation in your output.
+
+I'm getting increasingly angry. I'm. I promise.
+
+Just the answer. I'm looking for. Based on the instructions.
+
+Please. And thank you. Right.
+
+You know how many times I've been like. It's like bedtime for my kids. And they're like dying to go to sleep.
+
+And I'm like. Just give me one minute. I'm just trying to suss this thing out.
+
+All right. Come on. Fingers crossed.
+
+Let's get there. Let's just break everything down. All right.
+
+I'm giving up on total score. I don't know what on earth is going on there. All right.
+
+We've got this information that we have. Great. Food and menu score.
+
+Is there. The URL is there. Let's drop that in.
+
+Cool. Yep. All right.
+
+Nice. So. All right.
+
+Boom. So at least we have that now. In there.
+
+In Webflow now. You will have your data. That's just been added.
+
+And so we see the score is in there. The way we've broken it down. The URL.
+
+And the name. So now you can start to understand that. You can literally add whichever fields you want.
+
+Whatever type of prompt you want into Claude. Be as creative as you want with the prompt. So long as you ask it to wrap the output in those asterisks.
+
+And then break it down. And then you can just print that information back into Claude. So the last thing you're going to do.
+
+Here to tie it all up. Is you're going to find the data element you want to connect it to. So here we're going to take the title.
+
+We're going to go to settings. We're going to hit this purple little plus here. And I'm going to say it's going to come from name.
+
+And so it's going to pick you up from our CMS. Total score. Obviously this is like just a dead design.
+
+You can design it however you want. Total score will be there. And then like visit.
+
+And again you put our name. So visit Aliexpress. And then the URL as well can also be connected from your CMS.
+
+So if you click the link button here. And it says get URL from restaurants. You can hit this and it'll find the URL field that you can hit.
+
+And so that's the most bare bones basic way of setting up something between these platforms. And once you've done that you will have a basic web page. But this has got data on it.
+
+Your own data. And then this URL will link to their site with your reference on it. Yes that's that.
+
+I don't mind showing you the SEO stuff. If you want to we can do that another time. Depending how much you can do.
+
+Well I mean I think. Dude the amount of value you just gave is insane. Like we had an idea for a directory.
+
+We built it. It all works. Of course it's not stylized and stuff like that.
+
+But that's like the easy part honestly. Yeah. So stylizing it.
+
+And then yeah. We'll have to have you back on here another time. For SEO and startup ideas.
+
+But dude Omar. Thank you so much for your time. Omar.
+
+Where could people get to know you a little bit better. And is there anything you want to say to people listening? Man.
+
+I just want to. First of all. I'm a builder and designer and stuff myself.
+
+So you know I think it's been it's very fun sharing this type of stuff. And it gives me great purpose doing this. I do this type of stuff for my kids as well.
+
+Just sitting and building stuff with them. So thank you for listening. And I hope you guys get value from this.
+
+So that's the most important thing. And thank you to Greg. You know for the platform you created.
+
+In terms of finding me. I think I'm pretty active on Instagram. You'll see more of just me you know being me.
+
+But Instagram.com slash Omar Chowdhury. My name I'm sure you can spell out in the description. But that's me on Instagram.
+
+On X. X.com same Omar Chowdhury. And then if you want to learn more of this stuff as well.
+
+I'm on school. You can go to school.com slash five day sprint. I've got a bunch of like you know demos.
+
+And deep dives into tools. And how you can use them as a community of people on here. That are building stuff.
+
+And you know every day we're on there. Just you know creating things together. So that's school.com slash five day sprint.
+
+Five dash day dash sprint. And you can jump on there. And learn more of this stuff.
+
+And get all these code snippets and stuff. So yeah. That's it guys there.
+
+Thank you Greg. All right man. I appreciate you.
+
+Catch you later. Love. Time time baby.

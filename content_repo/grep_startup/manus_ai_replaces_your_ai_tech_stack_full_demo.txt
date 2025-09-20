@@ -1,0 +1,653 @@
+Everyone's talking about Manus AI, the Chinese AI app that basically can take your thoughts, turn your ideas into fully automated businesses and products. Now, I wanted to try this, but I didn't have access. So I called my friend Min Choi, who came on the podcast, and we had a crazy idea.
+
+Can we build a business? Actually, the idea was a DocuSign killer, a multi-billion dollar business in a few prompts. And in this episode, we go through it and we show you the ups.
+
+We show you the downs. We show you what's good about Manus. We show you what's bad about Manus.
+
+But if you're here, if you care about AI, if you care about building businesses, understanding how Manus works is a must. I was so impressed with some of the stuff I was doing, and I was so not impressed with some of the other stuff I was doing. This video shows you all about that, the good, the bad, the ugly.
+
+I recommend you watch the entire episode and you make the judgment call for if you can go and create a business fully automated with a few prompts on Manus AI that generates $1,000 per day. Enjoy the episode. All right.
+
+I brought on Min Choi today. Min has been going viral recently because he's been playing around with Manus AI. And he's going to give us a first look into how to use Manus to actually build a business that works for you.
+
+Min, thanks for taking the time on coming on the show. What is the viewer, the listener, what are they going to get out of this episode by listening all the way through? So thanks for having me, Greg.
+
+This is a very exciting podcast to join. It's my first time. So thank you.
+
+So this Manus has been going viral and very crazy in China. And it just like came over like just a few days ago. And I got an invite so that I can go play with it.
+
+And I realized that this thing is just more than the typical AI that we've been seeing. And the thing that is different with this is that we've had attempt in the past that we wanted to make this agent AI where the AI can actually go and like run tasks and run tools. And as you've seen on like cloud computer use and browser use and similar to that.
+
+And this is sort of like more advanced, the next stage of that. I think that we're getting closer and closer to sort of the glimpse into what the AGI is going to look like. So what I want to show you today is that I want to take some of your startup ideas, Greg.
+
+And I want to see how far Manus AI can take it. And we're going to try to do this, you know, step by step and in a very like a process oriented way. And we want to see if this thing can really like help entrepreneurs or startup owners to really kickstart their ideas into action.
+
+And I think that that this will show like what this type of technology can do for us in terms of growing a business. OK, let's let's see. I mean, I'm curious.
+
+This is my first time getting a glimpse of Manus. I hear I hear big things. So, yeah, let's just let's get right into it.
+
+Yes. Start with some of your great ideas. I think that one of the things that I read recently from your post was something about DocuSign.
+
+I think DocuSign might be a little bit complex, but let's give it a shot and see what Manus can do for us. OK, and while you pull that up, my thought on DocuSign, Min, was basically that what's happening is, you know, DocuSign makes, I think, like billions of dollars or something. Thousands of employees for an electronic signature.
+
+And with AI, it's going to just be a lot easier to create software. We'll see by the end of this episode to compete with, you know, the DocuSigns of the world. And instead of charging $10 a seat or whatever they charge, you'll be able to make it free or charge just a very small amount.
+
+So, I think that there's an opportunity to build. I mean, I think multiple people could do this, can make about, you know, at least $1,000 a day in revenue. And so, I'm excited to see if this could work.
+
+All right. So, what do we, it says, hello, Min, what can I do for you? Yeah.
+
+So, this is a very familiar interface that we see all the time. You know, ChatGPT kind of had this type of interface and everyone else kind of start copying that interface design. So, Manus also has a similar, you know, you got a little chat window with the, you speak with the agent.
+
+So, you just kind of simply say what you want. And I like to start very simple request. Like, you know, let's say, create a DocuSign clone.
+
+Quick break in the pod to tell you a little bit about Startup Empire. So, Startup Empire is my private membership where it's a bunch of people like me, like you, who want to build out their startup ideas. Now, they're looking for content to help accelerate that.
+
+They're looking for potential co-founders. They're looking for tutorials from people like me to come in and tell them, how do you do email marketing? How do you build an audience?
+
+How do you go viral on Twitter? All these different things. That's exactly what Startup Empire is.
+
+And it's for people who want to start a startup but are looking for ideas. Or it's for people who have a startup but just they're not seeing the traction that they need. So, you can check out the link to StartupEmpire.co in the description.
+
+Okay. So, simple, like a super simple request. Yep.
+
+Very simple. Yeah. Start by there.
+
+The cool thing about this is that Manus is sort of a multi-agent under the hood. And it's got like planner, executor, that type of thing. And if you remember like very early in the days when we used to have this thing called Baby AGI by Yogi.
+
+I don't know if you remember. I do. Yeah.
+
+That kind of used to have that sort of that setup where you had like a task creator and like an executor and et cetera. So, this thing does a similar thing. And then what it's going to do is it's going to take your request and then it's going to try to research into what that is and what it needs to do to create it.
+
+So, even giving a simple request is doing many things like on its own. Like it's planning, it's designing, it's executing, and it's going to try to run things and then analyze the results and then try to kind of replan or update as needed if it's going the right way. So, you will see a lot of things.
+
+There's a lot going on. It's doing a lot of planning that I'm researching right now. So, it's doing sort of the Googling right now under the hood.
+
+And then it also checks out their website. I think it also takes screenshots and it tries to do stuff on it. I did like run into one interesting thing before was that it got stuck on like CAPTCHAs and stuff.
+
+And I thought that was kind of funny. And it wanted me to like kind of intervene and like do something with it. So, it has some sort of the human in the loop feature in there as well.
+
+So, it will ask you for confirmation or, you know, additional contacts as needed. So, this is interesting. So, if I'm understanding this correctly, you know, before Manus, you kind of had to go to a bunch of different places.
+
+I call it the AI cocktail approach. So, you would go to maybe a chat GPT or a Grok 3 to kind of come up with the idea and create a PRD. And then you'd go to V0 to actually design what it would look like.
+
+And then you'd go to, you know, a Bolt, a Lovable, a Cursor, depending where you are. And, you know, in terms of technical prowess to actually go and build the idea and deploy it. What you're saying here is what's happening on the screen is it's kind of doing all those things at the same time.
+
+Exactly. Yeah. It's actually, what it's doing is it creates a sandbox, like a virtual sandbox of its own.
+
+And it runs, like, you know, command line executions. It runs a browser, runs a tool. What you see on the right, right now, it's browsing and just capturing stuff, capturing information.
+
+I think what it's doing is it's crawling it. It's scraping all the data and information it can get. So since I say DocuSign, it goes to DocuSign and it checks out, like, you know, type of information and the feature the product has.
+
+And then it will probably test it out and see, like, what feature that it can capture as part of its plan. So remember, like, we just started with this very simple to say, just go create me a DocuSign clone. And it's now just going there and doing its own thing.
+
+And it's just pretty wild to see that where we are with this agency AI that is able to kind of do most of this task on its own, understands your request. And if it doesn't have all the information, it goes on research on its own. And I think that's, like, the key to a lot of this.
+
+And like you said, that we've had many AI tools that we had to use, like, separately. And we've done a lot of copy-pasting in between. Now, a lot of that has improved a lot with under cursor, lovable, you know, replit and all that.
+
+But this is a little bit different because it does more than just coding. It actually does the research. It actually goes to the browser and it actually captures the information from there directly.
+
+And then it takes all that context into its planning. And then it formulates a plan of execution and then it goes and executes them. So this is a very interesting way.
+
+Now, what you see on the right side of the markup, the way it has that markup, this reminds me, like, a lot from, like, the baby AGI days. Baby AGI used to kind of do this in the command line where it shows, like, its planning phase and all that stuff. And I thought this was interesting.
+
+So it's doing, like, step by step on what it needs to do to create this DocuSign clone. And that's all I said. Just go create me a DocuSign clone.
+
+And it's getting all of that information and it's planning, replanning, and executing. So it's very interesting to see. And it's going to take a couple of minutes to get to the end.
+
+And also, sometimes it adds tasks as it's needed. It may have missed something in the process of doing this. So, yeah, there's going to be a lot going on on the screen now.
+
+But it's going to be pretty interesting what it comes out with. So have you ever had an instance where you're, like, create this app and you're looking at maybe, like, the markdown? Like, for example, if you go back to the markdown, can you go back to the markdown?
+
+While it's or it's? Yeah, I mean, you could, like, look at the to-do's. Oh, wow.
+
+Wow. That markdown was just, like, it's actually the raw source code. But this is the preview.
+
+So right now. So I'm actually going to read a little bit of this because we do have a lot of listeners on Spotify and Apple for the Startup IDS podcast. So it says here, research DocuSign core features, identify key functionality to implement document user flows and technical requirements.
+
+Now, there could be a case where you're, like, whoa, whoa, whoa. So, you know, I don't want you to do X, Y, Z. I don't want you to identify the key functionalities.
+
+I just want you to, you know, maybe only focus on this one feature. Is there, have you ever asked Manus to do something and then kind of said, like, oh, I made a mistake or you did something wrong? Is that?
+
+Yeah, you can actually talk to it in its middle of its progress. So which key functionalities do you want to limit this to? Well, it's a great question.
+
+I'm going to pull up the DocuSign website right now. Because it looks like when I'm on the DocuSign website, it looks like there's, they've created a lot of different products at this point. So, like, for example, they have the e-signature product, the payments product they identify.
+
+All I care about is the e-signature product. So I just want to confirm that we're only talking about the e-signature product. So let's only focus on the e-signature key functionalities.
+
+Yes. That's cool. That's a really, that's actually a really helpful feature.
+
+Because, like, if you're using ChatGBT, for example, it's in thinking mode. And when it's in thinking mode, you're kind of twirling your thumbs unless you stop it and then ask it to do something. Yeah, this is, this is probably the one of the coolest features that I've noticed on this particular product is that I can interrupt it in between without it, like, you know, stopping its work.
+
+That it's going to try to, as you see here, it's going to say, I understand you want to focus specifically on the e-signature key functionalities. And it will adjust the approach to prioritize the course e-signature feature of DocuSign. So, and then it says, let me continue setting up the project structure with this focus in mind.
+
+So that's, this is like one of, one of the coolest features that I've seen on this at that. You can actually kind of, uh, as sort of a human in the loop, like interrupt the process to, uh, readjust, uh, the planning or the setup. That's cool.
+
+I also just noticed that like, it's very clean. Like I feel, I feel, I feel like I understand what's going on. Like I, it's very pleasant to the eyes.
+
+Yeah. A lot of the, a lot of the demos that I've seen, uh, most people just kind of kick this off and just kind of walk away and then just, uh, have a coffee or a snack or a lunch and just come back and just check like, you know, where it's at. So it's kind of funny.
+
+And, uh, I, I know you've seen those videos, like with the guy, uh, with the person that's on a Tesla driving and, you know, the person is on his way to some coffee meeting and like, oh, you know, create, create me some, you know, talking points for this coffee meeting. And it's just kind of driving zone and the Tesla FSC is driving him. And also, uh, a man is AI is preparing his, you know, meeting notes.
+
+It's kind of funny. We'll include that video so people could see that. What's that?
+
+We'll, we'll show that video on screen. Yeah. Yeah.
+
+Yeah. Yeah. Yeah.
+
+Yeah. I don't, I don't like the video that much because, uh, it just feel like, I don't know what's going on other than I see a car and then screen, the screen's kind of small. So I don't, I don't know if there's doing anything, but I thought it was kind of cool.
+
+Just the fact that he was doing it. I thought it was cool. How long is the, you know, how long do you anticipate this taking?
+
+Is it like going to be 10, 15 minutes, 20 minutes? Um, depends. Um, you know, if, if it's something very simple, like a lot of some of the research stuff, it actually doesn't take that long.
+
+Um, so I, I've done a, uh, research, uh, to say, Hey, buy me all the research, uh, on this particular topic. And it will go and just, uh, does this Googling and searching and then it will find it and then just kind of bring the report. Just like very similar to, you know, the deep research and a deep search, et cetera.
+
+So while this is running, you know, what we can do is, uh, start a new session and say, let's get like top, um, Greg's startup ideas and see which is the most viable to run on Manus. While, while, while it's doing the docus on how's that? Beautiful.
+
+Yeah. I think, I think for me it's, it's, it's most viable to run on Manus, but also the one with the, what does Manus think has the highest probability of success? So I'm interested to know, I'm interested to see like, what is, how intelligent is Manus?
+
+Right. Like there's on this show, on the startup ideas podcast, I've given away, I don't know, a thousand plus ideas. And the reality is some ideas aren't that good.
+
+Some ideas are good and some ideas are really good. Yep. Yep.
+
+And it's really, it's really, it's really the listener to today. It's the humans, the listeners who have to figure out, okay, this is a really good idea. Or, you know what?
+
+Greg had too much wine and I don't know what he was thinking when he came, when he shared that idea. You know, you got some really great, great ones. I, I'm surprised that people haven't taken some of those ideas and put it into, you know, put those ideas to work, you know, with all this AI tools.
+
+They do, but a lot of them just DM, like they're, they're like, they keep it to themselves and they just DM me and they're like, I built this thing and it's doing like, it's crushing it. I mean, I guess if this was, you know, so easy, then everyone will be all like rich, right? All right.
+
+So I asked, I asked Manus while he's doing his docusign creation to research into your startup ideas and the top ideas that Manus think has the highest potential. That's the way he comes up with and see if we can have some actionable, you know, startup ideas that we can also ask him to create while he's doing the docusign creation. Okay.
+
+I have an, an edit to this prompt. Sorry to do this to you, men. Okay.
+
+But, uh, I would say, I think we should ask for ideas specifically that I've shared on X and ideas that I've shared on the startup ideas podcast and the Greg Eisenberg YouTube channel. I think we should just, uh, qualify that we, that's where we want, or what do you think? Should we, should we qualify it or should we just let Manus figure it out?
+
+Let's, uh, let, let's have Manus figure it out. All right. Yeah.
+
+The thing with, the thing with this type of agentic AI that I like is that, um, the, it's easier to start with, uh, if you notice, like on the other AI tools, uh, people's people are running into issues because they don't know where to start. They don't know how to ask. And, you know, they, you know, they're not, maybe not as good at prompting or have templates and et cetera to, you know, get their ideas across.
+
+But could, could you click the browser by the way? Sorry. Could you, could you click the browser?
+
+Like, can it go more full screen? Okay. Wow.
+
+So this is it actually. So this is, it's on our, it's on my holding company's website right now, which is by the way, in insane. I'm surprised.
+
+It's checking you out. So it's going to, it's going to, it's going to kind of crawl through your site and just check out what you got and, you know, grab as much information as possible. Cool.
+
+I'm just surprised, honestly, that it knows how to navigate the website because it's like we created a world. So it's kind of like confusing. Yeah.
+
+It's, uh, it's using a, uh, tool, um, called, uh, I believe it's Puppeteer, uh, which is like an automation tool. So it's, uh, it's, it automates browser tasks. It's a, uh, it's a tool that's been around for a while in test automation world.
+
+Um, so, and it's using that to, uh, do a lot of these things. It's similar to like what browser use and, uh, you know, cloud computer use, uh, uses. Interesting.
+
+Yeah. See, all that, you know, I, I just have your name and you're just a very broad ask and it just goes into this research mode to kind of find out about you. That's it.
+
+That's it. Now it's going to, going to your Twitter. That's crazy, but it doesn't have, it doesn't have.
+
+I'm sorry. It doesn't have an X account though. Right.
+
+So it can only see a couple, a few of my tweets. Oh, wow. So it knew to click because in my, in my bio, it says click for free startup ideas.
+
+It knew to click that. Wow. That's crazy.
+
+Yeah. It's, uh, it's, it's a different type of agent, agentic AI, I would say. And I know you, I know there has been a lot of thing going on, uh, just like the other day, uh, that people found out, uh, that, you know, Manus AI is really under the hood running like.
+
+Claude. Yeah. Yeah.
+
+There was a lot of meme going around talking about how, yeah, this is just a wrapper and et cetera. Uh, that may be, and that may be very oversimplifying it. Uh, I think, uh, what they've done is create like a whole framework under the hood.
+
+I believe is that they got a, you know, army of agents under the hood with many different fine-tuned, uh, AI models that it's using for specific tasks. Uh, that, uh, and that that's why it's doing what it's doing. And I think it's, they're, they're, they've done a really good job in my opinion, uh, in terms of doing, uh, have this, you know, type of setup of AI that can do all of this task and use all these tools.
+
+And, and you're more, you know, less of a, it's less of a hassle for, uh, anyone to kind of start using this because you don't know what to ask sometimes. I mean, you just kind of have this question and you're, you're thinking you throw a simple question that you're not going to get like the information that you want, but this goes like step beyond that. It, it actually like, like what you saw, it will just crawl to your site, check out your bio, check out your websites and try to understand you as much as it can.
+
+And trying to grab all the startup ideas that you have. And it says it visited your personal website, checked out your social media profiles. It's got a little to do checklist that it goes through and actually goes and does it.
+
+So that, which is kind of, you know, remarkable, um, on where we are with these kinds of tools. Um, and it, I think this will help, um, people who are, uh, non-technical. And I think that, you know, AI tool like Manus AI will help close that gap.
+
+Um, I think a lot of people were just kind of, I don't know where to start. You know, I'm sure they watched all your, um, podcasts and all other people's, you know, YouTube videos. Um, but some people still seem very lost, uh, is what I noticed.
+
+And they're always like asking questions like, how, what do I, where do I start? Like, what, what can I do? You know, how, how do I ask?
+
+How do I prompt what template to use? It's sometimes it's just a bit too much for some, a lot of the, you know, non-technical folks. But I think that this closes that gap.
+
+Yeah. I mean, it's non-technical and it's also like, this is onerous and a lot of work to go and do all this stuff. So if you can have Manus running, you know, during the day while you're working, or even if it works at night too.
+
+I mean, any, anytime, I guess, um, it just seems like it could help you even if, I mean, it just could help you come up with the ideas that you want to do and then put it out in the world. Allegedly. Let's see if it actually could do it.
+
+Um, by the way, I just heard my doorbell ring and I was like, my first reaction is like, is Manus, is Manus at my door? Is Manus just like coming, you know, Manus is like you. Yeah.
+
+That would be pretty wild. Like now a robot shows up at your door and, you know, Hey, I want to ask you a couple of questions about your startup ideas. They'll be pretty crazy.
+
+I feel like this guy's like stuck here. Collecting Greg Eisenberg startup ideas from his podcast, YouTube channel and website. Maybe it's just like a lot of, that's a lot.
+
+Let's see what happens. Uh, I feel like he's stuck. Cause typically when I see using browser, I'll see like, you know, navigation in the browser.
+
+Oh, right. But yeah, it, it was doing that before and now it looks like it's just stopped. So.
+
+Could we ask Manus, are you stuck? Yeah. Let's ask that.
+
+Let's check out your videos too. Maybe Manus is like, I don't want to give this, this, these guys the startup ideas. I'm going to go and like build these myself.
+
+I don't want to. Are you stuck? Are you stuck, bro?
+
+Wow. There we go. Okay.
+
+So it says I'm not stuck. He pointed a finger to YouTube page. Yeah.
+
+Okay. Blaming YouTube. Okay.
+
+Manus. My dog ate my homework too. Uh, let me continue researching Greg Eisenberg startup ideas from multiple sources and compile lists of his most promising concepts.
+
+I'll focus on gathering specific startup ideas. Okay. Let's check back on DocuSign.
+
+See where is, where's, see where is that? So he's creating the app now. So another cool thing about this is that you don't have to have a, like a project structure, uh, as you see on other tools, like where, you know, people say, go clone this, you know, template, you know, this, uh, boilerplate, uh, code, and you can use that to build your app and have, um, cursor and, you know, windsurf and other tools to, you know, build that for you.
+
+Cause, cause their, their template is more optimized. It's already like skipped a lot of steps. So you don't have to like ask cursor to do it for you.
+
+Uh, and this one, you don't have to do anything at all. You just kind of say, just go ahead and create me this, uh, app and it'll just create its own project structure and everything. Now I know it's similar to what, you know, cursor and windsurf does as well.
+
+Um, but it's just another, uh, easy, easier step for, um, people who wants to get started with this kind of tool. How, how worried are you that this is going to Chinese servers and how do you think, how should people think about that? How is it going to turn out?
+
+No, no, no. Like I know that Manus is a Chinese company, right? Yep.
+
+So there is some concerns with people around, you know, having a Chinese, like giving data to Chinese companies. Should people be worried about that? How, how, how, how, how do people think about the fact that this is a Chinese company, not an American company?
+
+Yeah. I mean, I think that there is a valid concern that around that. I think, um, the, the, one of the biggest thing is that if you are a Chinese company, uh, I think you're obligated, obligated to give access to the government.
+
+So because of that reason, and I know people are very reluctant to use this. And, and I think, you know, again, it's a valid concern and I'm, I'm a huge, you know, security, uh, data safety person, privacy. So I, I don't, I don't want people to go in, like, just start throwing any personal information and give any, any kind of stuff on these kinds of tools.
+
+Um, but at the same time, I want them to see where other, you know, competitions are at. You know, we, we, we don't know our competitions, uh, that we, we're going to be behind. And I think that, again, this is a lot of, some people are calling this the second deep seek moment for China.
+
+And I mean, we, we're starting to see a lot of that lately. Uh, and I think that we need to get ahead of ourselves in these kinds of tools. And I, we, we have the technologies.
+
+We just didn't have someone to put the technologies all together and package it like what Manus has done. Uh, and I think it's good that they have done it. And now that we know, you know, what can and, you know, cannot be done, and I'm sure there will be many U.S.
+
+companies that's now, um, you know, going out there and trying to, uh, you know, build something very similar to this tool, which is great. And I think that, you know, we need, we need options. We need, you know, different alternatives.
+
+And I know there are already a several open source project that popped up, uh, that builds around what Manus has done. So I think that's great. And I'm a, I'm a huge open source, uh, supporter and I, I use open source for almost everything.
+
+So I think that, you know, this there's, there's nothing wrong with, you know, using the tool, uh, that it's located in China. Just be very careful and mindful of, you know, what type of data that you give to and then give access to. Cause it, some, some of these may ask you on certain things and you don't, you don't have to give those informations.
+
+Just keep it vague. Um, just, you know, do simple stuff, like try it out, like go clone this website. Or something and just kind of see, uh, how the tool works and what you can get out of it.
+
+I think that's the important thing. The learning, um, you know, I'm a lifelong learner, so I'm always trying out new tools and trying on new technologies. Uh, so people should not be scared to try them out, but always be mindful of the data that they share.
+
+Cool. That's fair. Yeah.
+
+Yeah. I mean, all right, let's, uh, let's see where we're at with, uh, the Greg Eisenberg startup ideas. Yeah.
+
+He's still stuck trying to collect the data about you. So, and this happens. Um, it's, it's not like perfect.
+
+It's in, it's still in beta. Um, there are a lot of, uh, errors still. Um, but it's still cool to see that how he was browsing your websites and all that stuff, which is neat.
+
+And you can go back and you can go back and see what it was doing. And, you know, all the search that it got, it found your website, your, your X page, your YouTube channel, your LinkedIn, your Instagram. So it's scraping all your social media profiles and checking you out basically.
+
+Cause they want to understand you. And what I mean, cause I asked, I specifically said your name. So it wants to know who you are and all your startup ideas.
+
+So it's going to go in and like just try to find everything. Okay. Wow.
+
+Madness computer has encountered a critical issue. You can choose to reset madness's computer or start a new session. So what should we do?
+
+And this does happen. So, um, when it, when something like this happened, uh, you could either opt to reset computer or start a new session, but let's try to reset the computer. So it's going to try to reboot this sandbox and try to restart the task.
+
+The cool thing is that it remembers where it left off. Um, now it's not a guarantee that this, it will be able to, uh, fix whatever the issue that you ran into. So we'll see.
+
+So it's going to reset. So let's go back to docusign and see where it's at. It's still doing its thing.
+
+It's still building its, uh, projects. Um, like it's, it's kind of, you know, very like worry free. Like it's doing all this stuff for you.
+
+Uh, it's just, I just sit back and just kind of relax. Would it be annoying to ask Madness? Like, Hey Madness, what's your ETA?
+
+Yeah. Let's try that. See what he said.
+
+Just like every annoying boss. Yeah. But remember the AI is, uh, what is the word?
+
+Um, ever, uh, like not annoyed intelligent assistant. Right. Yeah.
+
+Okay. So, oh, it says it's, I don't know if you like it was trying to troll us or something. As soon as I asked that, he was like, I've completed it.
+
+It's like, I'm done. It's like, what's your ETA? I was like, oh, I'm done.
+
+Like, so we're like waiting this whole time. And just until I asked, I'm like, okay. All right.
+
+Would you like me to deploy? All right. So now it asks you a question.
+
+It's like, do you want me to deploy this to the public network? And I say, yes. So, and what is that?
+
+What that's going to do is it's got its own public, like similar to what, like first cell replet has, uh, it's got its own little deployable website. And it's going to give you a sub domain with their primary domain attached to it. Um, so you can actually see the website in action.
+
+And it doesn't make you sign up to any service when you do this. Right. Not yet.
+
+How does that work? Not yet. Yeah.
+
+I think that when you start asking questions, like, and I, and I haven't gone to, gone to that level yet where I wanted to like say, Hey, set up a stripe and stuff. And only because, uh, like we discussed earlier, that would, you know, force me to give out some of my information. So I haven't done that.
+
+Um, I didn't want to go that route yet. Maybe I'll clear it like a dummy account and just try out. But yeah, I mean, cause the glass half full of that is you ask it to set you up with the stripe account and then all of a sudden they hand it over to the Chinese government or whoever, and then all your money is gone.
+
+Yeah. Yeah. For the, uh, for your audience.
+
+Uh, yeah. Don't do that. Like I said, always, when you're on the internet, I always be careful of what you share.
+
+Uh, so that's why I always tell all my family and friends and colleagues. So, I mean, when you're in the, when you're in the real world too, right? If you, you know, you hire, you hire someone or you're getting to know someone and you just, you're giving them the keys to, you know, would you give them the keys to your apartment?
+
+Like maybe not initially. Yeah, exactly. Yeah.
+
+Yeah. It's compared to the physical world, it's so much easier to get those stolen from you in the digital world. So gotta be even more careful.
+
+All right. So now it's working to deploy and demonstrate the e-signature. I'm kind of excited.
+
+Yeah. I, I, I, I, like, I don't know. I'm kind of, I'm optimistic it's going to work, but I'm kind of like, how, how would this actually work?
+
+Like, this is such a complex, like we asked it to do such a complex thing, like a multi billion dollar company in a prompt, like, come on, you know what I mean? Like, can I, exactly. Exactly.
+
+Yeah. All right. So Manus has encountered an issue with the deployment process.
+
+So it's going to try to, I guess, try to see if it can. Oh, so, so it's not going to run it. So it doesn't want to create in its own production environment that it wants me to run it locally.
+
+That's fair. Yeah. Because, I mean, I'm not a developer, but, or I'm a bad developer, let's say.
+
+Actually, I'm not a developer. I'm not a developer. And, you know, I would do that, right?
+
+Like, I would want to try it locally first before deploying it, right? Yeah. So it's still doing stuff.
+
+Oh, it's just zipping it up. Okay. I'm going to ask Manus to try again to deploy.
+
+Wow. You're getting greedy, man. You're getting greedy.
+
+You ran into a terminal error while I was trying to zip. I don't know if it was because I just kind of interrupted. It says Manus encountered, on the right-hand side, Manus encountered some issues while performing this action.
+
+No need to worry. It will handle the errors on its own. Yeah.
+
+Yeah. That's another part of the cool feature is that it's able to reflect on itself, on the errors that you ran into. And it'll try to figure out on itself.
+
+And instead of me copying, pasting, or clicking stuff to, you know, hey, there's an error. So these are the type of seamless operation or user experience for this type of agentic AI. And I think that's the next level.
+
+This is where we're getting one more step closer to the AGI, where we don't have to know more than what we need to know. And just let AI handle the stuff that probably knows it better than us anyway, on some of the things. So.
+
+Well, yeah, it's abstracted, right? It's abstracted. It's very abstracted.
+
+Very, you know, black box. Some may like that and some may not like that. But I think for most users, you know, they'd rather have it, you know, black box.
+
+They don't want to worry and think about it. This audience, this is a black box audience. Like the people listening to this are like, yeah, I don't care how it's done.
+
+I just want to push my ideas live and I want to push a lot of ideas live. Yeah. Just give me the results, man.
+
+You know? Yeah. So, yeah.
+
+So I convinced it to try to deploy. So it's again, trying again, see what happens. Yeah.
+
+What, what, what's interesting about your style, men, is like you're, you're a man of few words. You just like tell Manus a few words, not long prompts. And that's your strategy.
+
+Yeah. And I, and I, and I do both. Um, just, you know, just to be clear, I, I do simple prompts and I also do very, very, very complex prompts because I want to give like a very specific directions.
+
+But, um, for your audience and my audience too, uh, on, on X and I, I try to keep it very simple. Uh, otherwise, again, most people are just going to get lost on the, on, on what to do. Uh, and, and I want to, I want, I like to demonstrate to audience that, um, it's a very simple prompt that I use and I got this results.
+
+Um, and, and that's just kind of always, uh, makes people like, Oh wow. Like that was very easy. Like, yeah, like I, I, I, this is, this is the future I want to get into.
+
+I don't want to have to think so much to, um, come up with a very elaborate prompt, you know, when I can just say, Hey, I want this, just get it done. And, and I'm sure along the way, you're gonna have a lot of questions. And so sort of like an iterative approach to getting to your results.
+
+So I think, you know, that's, that's sort of the step I'm taking with this. Uh, and, and that's the sort of step I take usually, um, for, uh, my audience as well. I don't try to overcomplicate it.
+
+Um, and I think that's sort of the, sort of the way these agency AI is going towards, uh, I think it's trying to take a lot of that load of thinking off you, um, and trying to understand, you know, what you want. Um, and maybe in the future, maybe they'll just know exactly what you want after a while, you know, like after working with you for a long time, it will probably already know your history of what you wanted. And you don't even have to tell them again.
+
+I think that's sort of like the AI future that we're going to start to see. So you got me thinking of something I think that could be big. And I don't, I don't think we'll have time to cover it today.
+
+Maybe we will, maybe we won't. But this man, it seems to me that it's, it's, it's, it's not a lot of not just about how can you go and build a product and launch it, but it's also probably very useful for growth tactics and actually marketing and growing whatever it is you built. So I'd imagine that you probably could do things like SEO.
+
+I'd imagine that you probably could do things like, uh, help, you know, create a content calendar, writing, researching based on different styles, you know, getting caught, basically organic content, that sort of thing. Am I right or wrong on that, man? Yeah.
+
+Yeah. I think absolutely you're on, you know, right on point on that one. And I think, and I just got me thinking, maybe we should, you know, have Mattis go to one of your site and just see, you know, how's my SEO on this website?
+
+Great. Great. Let's, uh, let's pull up late checkout dot agency.
+
+Cause I know the SEO on that's probably garbage. It's literally a landing, you know, a quick framer landing page. If you go to late checkout dot agency, it's our design agency.
+
+Well, I guess you don't even need to go to it. We can just ask Mattis to go to it. Right.
+
+Okay. This website. Okay.
+
+All right. Let's ask him. Let's take this web URL and say critique or I want to, here's what I would, I would say like, I have a feeling that my design agency could be getting a lot more SEO traffic.
+
+I'm looking for help from you. Oh, I'll wait till you type. Okay.
+
+Help me improve SEO for my, just let's start a new session. Yeah. Yeah.
+
+See, I'm a long winded prompted prompt guy. I'm a long winded prompt guy. Like I, I write novels.
+
+You know what I mean? Oh, really? Yeah.
+
+Yeah. I'm one of those. I try to keep it simple.
+
+Yeah. I like it. Okay.
+
+So you're going to say, help me improve. Not, not my websites by design agency. This one.
+
+Yeah. Okay. Yeah.
+
+It's yeah. Okay. That's fine.
+
+Let's remove your name. Maybe. Yeah, exactly.
+
+Let me improve. SEO. But I want to be clear.
+
+I do want to be clear that, you know, basically this, this firm LCA, late checkout agency, it, it works with like the drop boxes and, you know, the grammar leaves and the, you know, character AI is all these software companies and, and, and sort of big companies that are looking to be AI first and transition to be AI first and building AI products for them. I want to, it's not just that I want better SEO. Like I want the executives from these tech companies to come to the website.
+
+Right. So you want those tech companies come to this website. You see all the companies we work with?
+
+Character AI, Bolt, Salesforce, Slack. And look at all the executives we work with at those companies. I want more of those executives to come to this website via SEO.
+
+I think it's important when you're doing SEO, not just to do, it doesn't, if I got a million visits a day to this, I don't really care. I'd rather a thousand visits, but they're highly targeted. Yeah.
+
+There we go. You said it better than I could. So he, for the listeners on, on, on Spotify and Apple, I want a more executive of AI first companies to come to this website.
+
+Okay. So it says, I understand you want to track more executives to late checkout agency website. I'll continue my SEO analysis with the specific goal in mind.
+
+Very cool. I love how he's like running into there. Like we're, we're software testing Manus AI in real time.
+
+Totally. Again, they're going to remind us that, oh, it's in beta. Yeah.
+
+Yeah. Our bad. We're just testing.
+
+I believe a lot of the softwares are all in beta and we're just software testing for them. So there's no news there. They just, they just remove the label beta.
+
+But, but there's, there's a lot, you know, I work with many software companies and there's a lot of issues behind the scene that we just don't talk about. So, all right. Oh no.
+
+It has ran into an issue. This guy is not going to deploy. Oh, so it's, so this, this is a new message for me.
+
+Cause I, I, I guess I haven't gone to very long context, but Manus' performance may decline with extremely long context. So that's what he's saying. So I think it's running to a context limitation.
+
+So that's one of the things that I actually wanted to talk about on this episode was that there are some limitations to Manus. It's not, you know, completely magical and just works like everything. And it's going to do everything for you and you don't have to worry or anything.
+
+The limitation I ran into obviously is the context. So the context has like, especially if there's like a, becomes a very complex task and it, and there's a lot of information that it has to process. It does run into this issue.
+
+And I think that this is probably the biggest issue that Manus AI team needs to probably address before it goes, it goes live. Cause I think that a lot of people are going to run into this similar issues, especially power user like me, I'm going to, you know, keep pushing it to its limits and we're going to run into this type of issue all the time. And I, and this is not the first time I've seen the, the error that it's gone into other than this context, that it does, it does ask you like, Oh, I ran into an issue.
+
+I need to reset the computer. I need to do this and that. And, you know, just ask me if I want to go ahead and restart or start a new session.
+
+So basically starting a new session means like it may have run into like some kind of long context issue that it's not able to process. So you have to start like holding session and that's kind of the downs, the negative part about this tool is, uh, is, is the context size so far. Good to know.
+
+Yup. So we were not able to complete this stock design website. That's a bummer.
+
+Um, I think that we probably could do a local deploy and try. Yeah. Let's try it.
+
+I mean, even the fact that we can do a local deploy is absolute insanity. Actually, it was trying to zip this thing for me, for me to download and it failed earlier. So let me check.
+
+Let me check if, uh, it was able to finish, uh, creating the, uh, the zips. I mean, it's, it's created all the document structure, the code files, but it doesn't have the zip. Yeah.
+
+Yeah. Yeah. It's so interesting seeing how different people prompt, like I, I would be prompting right now.
+
+I'd, I'd probably say, I'm just trying to get this to a local to deploy this locally. I want to create something that's beautiful that I can show on the podcast. Um, and do you think that you can make that happen?
+
+Like that's how I, cause I talk as if I would be talking to a coworker. Yeah. I think that, you know, um, this is probably quicker anyway, to run it locally and see the results right away.
+
+Cause like deployment is, is not as a straightforward with these tools. Um, and I know Replit has done that really well. Um, and I think, I think that's, that's the, it's got some good future and, you know, where the direction that it's trying to go, uh, their AI agent is, is, is, it's getting better and better.
+
+Um, but, uh, Manus has to work on their deployment process as well. So I think, I think they're just trying to do too much. I think that's part of the problem is they're trying to have all of this kind of package it, like all this services and products that kind of package into this one thing, um, including deployment.
+
+And, and, and obviously it kind of shows that deployment is not an easy, easy one that they have solved yet. Um, in my opinion, uh, I know there has been like other very simple ones that they, they've done, uh, that, that shows, uh, this, like if I do like a game, like, you know, make, make a airplane game, like Peter fly, Peter.com. Right.
+
+Yeah. Fly.Peter.com. You're talking about the Peter levels game.
+
+Yeah. Yeah. Yeah.
+
+So Peter levels basically made like a flight simulator using AI three JS. Oh, maximum daily usage limit. Yeah.
+
+And there's a, yeah, so there's a limit, uh, I believe it's 10. So I actually use a few before this episode, so we can't do this one today. Unfortunately, it's, you know, it's also cool.
+
+It feels like, it feels like we have like four employees working at the same time. What's that? It feels, it feels, what's cool about Mahanis is it feel, it really does feel like you have multiple employees working at the internet.
+
+It's like, Oh, we've got this SEO, this marketing person. We've got this researcher. We've got this cracked PM slash developer.
+
+Yeah. Yeah. Yeah.
+
+Yeah. Yeah. You got one guy working on DocuSign, you know, you know, one agent working on your, your startup ideas and one, you know, working on your, uh, on the, you know, improving the SEO for your LCA.
+
+So it's crazy. So, but, um, another thing is that the, uh, the problem that I see is scale. Uh, so obviously, you know, AIS scale is a challenge for a lot of the companies.
+
+Um, and the reason why they're very, uh, right now they're invitation only, uh, and with an invitation code that you can only have access to Manus. Um, and they're, they're limiting those codes too. And I, and I've been privileged to get like 10 invitation code from them.
+
+Um, and I, I actually give them that out, uh, to, to users, to my, uh, my X account. Um, I actually asked for 10 more. I was gonna, I was gonna offer it to your audience, say, Hey, Greg's audience, you get 10 codes.
+
+You want to try it out, but it didn't happen. So, um, I think that, uh, you know, I think that, uh, I think that, uh, I think that the thing that I noticed is that very early on when people were starting to get access to Manus, um, their webs, their, you know, their, their web, uh, has been hammered. Um, and, and the reason why we're seeing a lot of errors today, actually, I was not seeing this, this much error, uh, in the beginning, um, because there were as many people who had access, but now that, uh, more access has been given out and more people are on the system.
+
+Uh, I start to notice a lot more frequent errors on that thing. That's part of the, um, scale issues that they're gonna have to address, um, again for, before they go live. Um, and do we know when they're going live?
+
+I don't know yet. Uh, I, I have not heard any. Yeah.
+
+Yeah. And I think that they, you know, they're trying to tease early. Uh, it looks like they launched premature, uh, kind of like what it's been like six days now.
+
+Yeah. They, uh, they, they actually launched like six days ago, but it didn't like get go viral until like two days ago, basically. Um, so when it came over to us and people in the U S start to get access to it and that's when it started to get like real traction.
+
+And I was one of the early ones who got access and, and it was working pretty good. Um, you know, obviously we've done, I've done stuff like, um, pretty basic, you know, comparisons, like doing the deep research or deep search type of thing making it. And as you can see on the left side, you know, I, I, I had more, but I deleted them because they kind of crashed, but, you know, build a simple SAS website, you know, clone the apple.com.
+
+Obviously apple.com is one of the, you know, well-designed websites. So, um, I think it's a, it's commonly asked thing. Like people like go clone apple.com.
+
+Uh, and then, you know, do a casual multiplayer game. Um, but the, uh, the research one works really well, obviously, um, you know, you, you expect that to work well, um, simple games work well, uh, landing pages work well. Um, and I think that's sort of the ones that have been very successful, uh, with Manus AI so far.
+
+Um, I think that the other one that it does well, um, is something like this, like you're, uh, analyzing your websites, uh, for optimizations, um, scraping data. Uh, it can actually, because it is able to control the browser and go to, go to this website and actually crawl through it, like clicking stuff. Like you can actually like scrape data, uh, using it.
+
+So I think that's one of the, uh, very easy, easy to use and, you know, probably frequently use, uh, tool to kind of get information for, uh, for the people. And the, as you get more complex, uh, like docu-sign and stuff like it does, it does have its challenges, but I like to, you know, push things to its limits. So, uh, just to wrap up, maybe let's just go through what we've done today.
+
+Let's go through the docu-sign. Docu-sign. Let's go through the startup ideas and let's see, let's see what we were able to do in, you know, 60 minutes and using Manus.
+
+Yep. So we started with this create docu-sign clone. Um, and middle of it, we say, hold on, let's just focus on the e-signature.
+
+So we say, okay, just focus on that. And it replanned is, um, project and it set up all the code. And I didn't actually get to see the code yet.
+
+Um, but it looked like it set up as typical next JS app, set up its routes. Um, and, and then it was create a interface with login page, register page, the routes, the passwords, the middleware routes. Um, so it, it, it can't, it looked like it went through a lot of the, um, important things that it needed, the basic ones at least.
+
+Um, and once it got through creating this, uh, code, uh, it got stuck on getting the deployment, uh, successful. So we've got document upload, document management and the signature field placement. So I'm actually excited to see if it actually runs, but it wasn't able to deploy.
+
+So I, what I would do is, um, I would, I would actually like run this locally and then I can like send it over to you. See what that looks like. Um, again, uh, one thing that I, I do, uh, when it asks me to run it locally is, uh, I do have to scan through the code just, just in case.
+
+Totally. Yeah. All right.
+
+I don't just blindly download this. That's why I didn't want to do it on the, uh, on this recording. Um, cause I didn't want to look like paranoid.
+
+We're keeping it real here. Huh? Yeah.
+
+Just trying to play safe. You know, I don't know what's going to happen. And I do like to create this into like a, my own sandbox.
+
+I don't, I don't download this stuff into my local computer. I have a, I just create like a virtual sandbox on cloud and then I run it there on just in case as well. So, um, I don't want to do that on this, uh, session.
+
+Um, but I will do that and then I'll show how that ran locally. Um, and then let's go back and check your, um, yeah. Top start ideas about highest potential.
+
+Again, it got stuck. So the thing with this one is interesting is cause a research has been very straightforward for me and it worked. Uh, and like I was mentioning earlier that since people got access to this application, um, is I've, I've seen a lot of these issues where it, it hits a wall.
+
+Um, and this should have been a very easy, um, easy thing that should have completed. Um, but it wasn't able to. So, and again, like probably the time of the day is not the best.
+
+Uh, I think a lot of people are probably on it and then asking stuff to do. So maybe we're running into more of this issue though. I may try to run this again later, like late, late in the night.
+
+Um, where is the traffic a little bit lower? Um, and then the other one is that we tried to run this again, that we tried to ask to create a airplane game, like Peter, fly.peter.com in three JS, deploying public. And, and you re-reach the, uh, maximum daily usage limit.
+
+Um, again, this is in a beta stage. There is a, uh, I believe there's a 10 request, uh, or 10 sessions, um, limit in the day. Um, the cool thing is that even though it says this, I can actually go into, um, another session and run it.
+
+It's the, I believe it's the sessions that it matters. So I'll, I'll use the one that is like broken, which is like this one, I think. Right.
+
+This one's, this one's still working. So this one's broken. So I'll, I'll use this one to say, I don't know if this is a loophole that I found, but, uh, when you reach a maximum limit, just a different session.
+
+And it will, you can tell it to do something else. That's awesome. Yeah.
+
+So now see, it's like, I'll help you create an airplane game. So it's just like a new session basically. But the only, only difference is that it's got like all this other stuff in the context.
+
+So hopefully that doesn't interfere with what I just asked. Right. Oh, my.
+
+Victor from hugging face, uh, actually did something similar, but he didn't specify fly.peter.com, but he just say, create a, you know, flying. Airplane, uh, game where I can control the airplane and whatnot. And it just kinda, it looked like he did it in one shot.
+
+Um, and I know people are asking like, was this one shot or was there like follow-ups, but, um, I'm sure there was a follow-up. Uh, it, it, it doesn't actually like produce everything like in one go sometimes. And you may have to kinda tweak some of the, uh, the features, uh, especially like, um, aesthetics.
+
+Uh, I noticed, but you may just like throw like a very simple aesthetics and you may have to say, oh, can you make this a little bit more, uh, pretty or make it more, I don't know, more objects in the scene. Uh, cause if you just ask you to like create like flying game, you may just create like a sky and a, and like a plane field and you, you may have to give like specific instructions on it. Add a building, add a tree.
+
+Right. Add lakes or something. Add a building that's just something, something to make it more interesting.
+
+Um. Okay. So yeah, we might, we might even show a clip of, of that one shot prompt.
+
+So just showing what that could look like. So Min just sent me a message. Literally.
+
+This is just right after the pod was recorded saying, our, uh, flight game had been created. So we basically one prompted a flight game. It looks like a more basic version of Peter levels game, but it's pretty cool.
+
+But it's pretty cool. Here you can see the plane flying. And I believe you can shoot.
+
+Well, maybe you can shoot, but that's the idea of the game. And you shoot down these balloons, which is pretty cool. And you can play it.
+
+It's deployed. You can play it on your web browser. I think the next step for me would be how do you just make it look a little more visually cool and also add multiplayer.
+
+I think one of the reasons why Peter Level's game has gotten... There's a few reasons why Peter Level's has done $67,000 in revenue in the last 30 days. Part of it is his audience.
+
+He has a big audience, so he can distribute it. But the other part is, it is fun. I know I tweeted about his game, and a lot of people were like, it's such a stupid game.
+
+And it's like, I don't know, I was playing it for 30 minutes and I was enjoying it. I could have watched The White Lotus, but I was playing that and enjoyed it. So Manus did it.
+
+It took one little prompt, and we got a game working. So that's really cool, and it was deployed. So we've gone over the DocuSign.
+
+We've gone over the game. We've got the SEO. And we've got the research assistant.
+
+We've done this all in like an hour, which is kind of crazy. We haven't been able to successfully deploy. We deployed the app, basically.
+
+But it got us almost there. We just have to review the code, deploy it, run it locally, make some edits, and then finally deploy it. But overall, my take on this, Min, honestly, is that it is the closest thing I've seen to AGI yet.
+
+And it seems like it's close. It's not there yet. I need it to deploy.
+
+I need it to deploy. But the fact that it feels like an operator mixed with a replet mixed with a chat GPT, I think that having this is super, super, super helpful for people who want to automate, build their businesses. And that's why I had you on the pod.
+
+So Min, I wanted to thank you for coming on the pod. And I wanted to ask you, where could people find you? We'll include those links in the show notes.
+
+Yeah, thanks for having me. And this was fun. And people can find me on x.com slash Min Choi.
+
+That's currently my main page. Cool. All right, we'll include that.
+
+Min, thanks for, I mean, you had the beta access. I didn't. And so thank you for hooking it up for everyone.
+
+I think a lot of people are appreciative of that. And let's go build some businesses. And I got an extra key for you so that you can have access to if you want.
+
+Oh, my God. Yes, please do. And I'll play around with it.
+
+If people want more Madness content, please do let me know. And I'll see you next time, Min. All right.
+
+Also, Min, I know this is your first podcast that you've ever done. So thank you for sharing it with us. Hey, thanks for inviting me.
+
+I've always meaning to do one. Just didn't get to that step yet. But maybe this will be sort of my kickstart into the podcast world.
+
+Absolutely. All right. Catch you later.
+
+All right, man. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.

@@ -1,0 +1,241 @@
+This episode is with Logan Kilpatrick. This is the guy that leads up product for Google's AI studio. And he just walks us right through it.
+
+And this is going to be super, super relevant to anyone who wants to build a business using AI, who want to leverage the multi-trillion dollar technology that Google has built. You're not going to want to miss this one. Watch it to the end.
+
+Because there's a demo at the end that really blew my mind. Welcome to the Startup Ideas podcast. Logan Kilpatrick on the show.
+
+This guy is the lead PM for Google's AI studio. Was at OpenAI, one of the earliest hires at OpenAI. But we're not here to talk about OpenAI.
+
+What are we here to talk about, Logan? Yeah, Greg, thanks for having me on. We're here to talk about Gemini.
+
+We're here to talk about AI studio. And we'll sort of go through the demo of AI studio for folks who haven't used it before. Talk about the Gemini models, which are sort of the thing that is actually bringing the experience in AI studio to life.
+
+And what do you think people will get by the end of this episode? Yeah, I'm hopeful you'll walk away with an appreciation for, one, the differentiated things that you can build with Gemini. And I think AI studio brings a lot of those capabilities to life that just are possible with other AI models or other AI services.
+
+But also a little bit of exploratory stuff. We have some hints of early experiences, early product experiences, which I don't think fully work today. But is the direction that we're heading in.
+
+And I'm hopeful this will plant the seeds for folks who want to think about AI co-presence in the future and how that product experience might exist, et cetera, et cetera. And just to be clear, it's not like Google wrote me a check so that you can come on. I just think that there's a huge opportunity in leveraging these tools for people to build businesses.
+
+I wanted you to teach us. So thanks for coming on. Yeah, of course.
+
+I'm excited about this. Do you want to dive in or what's next? Let's go.
+
+Awesome. This is a ADD crowd. So they want to see it.
+
+Yeah, I love that. Let's look at AI Studio. So you join, sign into AI Studio, use your Google account.
+
+And this is like the default experience that you're dropped into. Again, the intent of AI Studio is like, how do we showcase the model's capabilities to their fullest? So you can like for free, there's no cost involved with using AI Studio, really start to like find the differentiated pieces.
+
+I think one of the big ones is long context. We'll talk about that in a sec. But, you know, left-hand nav, basic prompting experience.
+
+You can say hey to the models. It'll respond and give you something back. We have a prompt gallery which sort of has this like massive breadth of stuff from like really silly things like coming up with trip ideas to optimizing code to like really trying to showcase the full extent of what you might be able to do with the models.
+
+Here we're looking at like the image of a hurricane and it's extracting a bunch of information, sort of doing OCR, if you will, of looking at the image and like pulling out some context, which is super interesting. I think the most like mind-blowing experiences for me using the Gemini models are like long context stuff. So if you go click this little plus button in the bottom right-hand corner and then you go to sample media, this is just like the fastest version of this.
+
+But you can take something like a 30-minute video of this. In this case, it's a tour of the Natural History Museum in the US and you add this in and you say write me a list of all the museum. And folks will see how bad I am at spelling during this demo.
+
+All the museum exhibits throughout this video. And like a really good example of like something that would be, if you think about like how would you do this in today's world without these models, like it's basically impossible. Like maybe you could like break down a bunch of images and put those through and do that.
+
+But it's a lot of work. There's a lot of extra processing steps involved. And with AI Studio and with the Gemini models, like they just literally take in this capability.
+
+And this is the cool thing. You can see underneath the video 531,000 tokens for this 30-minute video. And we'll see how long it ends up actually taking.
+
+But I think the long context use cases are the ones that usually blow my mind the most. Yeah, and I think what's really interesting to startup builders here is once you get this data, I could see, for example, creating a directory. We've talked about on the podcast around the opportunities in creating online directories.
+
+I'll link a couple of old episodes about that and how to do it. But there's so much data trapped in this media that you can go extract using some of these prompts. Yeah, and I think it would also just be like really hard to do some of this.
+
+Like it's like a non-trivial amount of like scaffolding work that you would have to do. But like this is a great example. And, you know, somebody will have to we're not going to watch the 30-minute movie of their video of the Natural History Museum.
+
+Somebody should go and validate that all these things really exist and the model is not hallucinating. But the model is really good at being able to pull some of this context out of a bunch of these different videos and images, etc. It's audio as well.
+
+Like really long audio could be something where like podcasts, platforms, you can extract a lot of intelligence out of things like that. Quick break in the pod to tell you a little bit about Startup Empire. So Startup Empire is my private membership where it's a bunch of people like me, like you, who want to build out their startup ideas.
+
+Now they're looking for content to help accelerate that. They're looking for potential co-founders. They're looking for tutorials from people like me to come in and tell them how do you do email marketing?
+
+How do you build an audience? How do you go viral on Twitter? All these different things.
+
+That's exactly what Startup Empire is. And it's for people who want to start a startup but are looking for ideas. Or it's for people who have a startup but just they're not seeing the traction that they need.
+
+So you can check out the link to startupempire.co in the description. One, I made this comment before about just like the, you know, the core thing powering the AI Studio experience is the models. And like really at the most basic level, you get a view of like all the different models that you can build with.
+
+And they're all Gemini models. There's some Gemma, which is our open source version of the models for folks who need open source models. We have those available as well.
+
+But you can just go and try all the different models and find out which one is best for you. And there's a bunch of different, you know, for folks who have built with AI before, there's all these different tradeoffs between different models. The 2.0 Flash model is a little bit more powerful.
+
+It's a little bit more expensive than the Flash Lite model, for example, which has higher rate limits, is a little bit less intelligent, but can do a lot of the same core things. You have the Pro model, which is an experimental variant today and like the most intelligent model we have available. And then we also have things like our reasoning model.
+
+And the reasoning models can do, this is like where the new frontier capabilities are coming from. We have our reasoning model available for free for developers. You can use it in AI Studio.
+
+You can go and get an API key and use it as well. Lots of cool. And we can look at some like good reasoning examples as well, if you think that'd be interesting, Greg.
+
+Yeah, let's go. And, you know, for folks who don't know, like, you know, why is a reasoning model even interesting? Yeah, I think the reality is you can get the model to like really think about different things that it wouldn't be able to do before.
+
+And what it isn't able to do before is usually sort of rooted in having to just like kind of give this first answer that comes to the model's head. And like, well, we can showcase a good example of this and I'll just make up like a bad. This is probably like not the most optimized version of the prompt, but I'm going to take in a code snippet that I had in my IDE, which is sending a request to the Gemini API.
+
+And I'm going to say, turn this code snippet into a fully fledged website plus landing page plus SaaS app that is called. By the way, just to be clear, you can get a job at Google in a senior position leading their AI efforts, even if you can't spell very well. I cannot spell very well.
+
+And this is, I think I can spell decently well, but it's just maybe I'm actually just bad at typing. That might be my real, that might be my real problem. So we'll see how, like, and again, the prompt iteration process matters a lot just in using AI in general.
+
+So we'll see where this gets us. But we're going to try to turn this line of code, which is a basic Python snippet, into a fully fledged website landing page and a SaaS app. And we'll call it AI studio.
+
+And we'll go and run this. And the cool thing that's happening, and you sort of see this affordance in the UI, which is this thoughts category. So here, the model is doing all of this thinking before it actually starts, like, generating the final output.
+
+So we're showing these thoughts in the UI. If you were using the API, you actually wouldn't see these thoughts. It's sort of abstracted behind the scenes.
+
+But we showcase it in the UI just to sort of give you an intuition of what's happening. And it talks about, like, again, if you were to give me, as someone who was formerly a software engineer, the task of making a website, calling it AI studio, having it, giving it a landing page and making it a SaaS app. Like, I would probably write out something that looks like this, which is, like, you know, what are the desired outcomes?
+
+What is the code that I should be using? You know, what are some different concepts? What does the structure look like?
+
+What should the technology stack be? How do I make a sort of optimized landing page with subheaders and feature sections and a CTA and visuals? You know, what is the actual MVP for the SaaS functionality?
+
+It's calling out things like user authentication, a dashboard, different image generation tools, etc. And this goes on for, like, a long time. It, like, kind of belabors the thinking process, which is really great.
+
+If folks remember, you know, in, like, early education, whenever you were supposed to, you know, write essays, you would have to, like, do these long, like, outlines. And, like, I remember in some of my, like, Java programming classes, like, my professors would be, like, you have to do this, like, outline of what your code structure is going to look like. And I feel like that's, like, kind of represented now with the thoughts, which is really cool.
+
+So you can see those in the UI, and then you actually go into, again, a bunch of, like, more fully-fledged content. And it starts to give you the code to do this. In some cases, it's omitting some of the actual details, which we could ask the model to follow up and give us the actual details.
+
+The HTML to make it happen, the CSS, et cetera, et cetera. And the total runtime for this was 23 seconds. So a lot more thought and processing compute went into actually generating this answer, which is awesome.
+
+So I think this is sort of an early look at, like, what the reasoning models are capable of. And this is where a lot of the value is being created today. And, again, my prompt was probably not well-optimized to get, like, depending on what you want.
+
+Like, you could set this up to, like, really just get the code as the output, as an example, or, like, the 10 files that you would need to make this website work. You could probably get those out. And you can use this model for free inside of things like Cursor, as an example.
+
+So, like, if you go into AI Studio, click get API key, and then create a new API key, you can actually just do this and, yeah, have a free working version of the reasoning model inside of something like Cursor. Beautiful. I didn't know that.
+
+Yeah, it's fun. You can, same thing with, like, all the models, actually. So, like, Cursor, as an example, has, like, the bring your own API key feature.
+
+You can go, you know, get any of the Gemini models and go power your experience in Cursor, which is a lot of fun. The second thing that I'll show is this starter app. So, like, through this same lens of, like, we want AI Studio to be the place where we sort of show you the art of the possible.
+
+We show you what you can actually do. We have these three really simple starter apps that showcase different model capabilities. I'll start with this.
+
+Perhaps we'll do this spatial understanding. Spatial understanding is really cool. So, this is a capability that is, like, baked into the model itself where it's, like, really able to deeply understand different objects and the ways in which they're sort of visually represented.
+
+So, we have this basic UI experience. And it's asking, the prompt is asking for the position of the items that are in this picture. And in this example, we're going to have it give us 2D bounding boxes.
+
+And I can send this prompt. The model does the magic behind the scenes. And then it actually dynamically overlays the bounding boxes for these images.
+
+And, like, this is a really great example of, like, what's being unlocked with these, like, multimodal capabilities where you have, like, generic object detection where you can, like, have, you know, if you were building a website to sell furniture and you wanted to identify, like, hey, what are the images that are in the picture of someone's room? And you want to, like, find those items on the internet? And, like, how do you crop the images, like, really dynamically using AI in real time to then go and, like, do reverse image search or something like that?
+
+This 2D bounding box works really well. And then you can basically get the coordinates of the objects in the image and be able to showcase those and do some searches on those. How much does this fire you up?
+
+Because, you know, it fires me up. When I see how powerful this is, to me there's, like, probably a thousand business ideas that you can build on top of this. Could you, just because you know the platform more intimately than I do, what's an example of applying this technology to a potential business idea that someone can go and start tomorrow?
+
+Yeah, that's a great question. I think that, like, the pulling, like, that, like, furniture shopping example I like a lot. Whereas, like, you have images, you have images that have, like, a lot of, like, really busy content.
+
+And, like, how do you break them up into, like, the right things? There's, like, I mean, a bunch of, like, boring stuff. But I've worked with a bunch of companies that are maybe not boring for everyone.
+
+But, like, worked with a bunch of companies that do, like, inventory management. And, like, this type of bounding box example, like, matters a lot for them. So that, like, they can just literally, like, snap pictures or have real-time video feeds to, like, you know, how much of the thing is being utilized.
+
+Like, another boring example is, like, parking garages. Like, you can have this, like, real-time look at, like, the utilization of parking garages. You can sort of do a very similar thing.
+
+There's probably a lot of, like, meta stuff with, like, satellite analysis, being able to, like, really explicitly bound different areas based on certain criteria of, like, find me, you know, the cornfields. And, like, make those, you know, and if you're trying to do some, like, meta analyses. Those are all very random examples.
+
+I'm not sure how useful those are for people. Well, I think it's good. It gets the creative juices flowing.
+
+I think one way I think about it is there's a lot of service-based businesses that, you know, their agencies, consulting firms, that do a service, a painful task for a business. You don't have to have humans do that anymore. You can now use technology to go and automate a lot of that stuff.
+
+And they might seem like boring businesses, but, you know, these are businesses that could be $1 million a year, $5 million, $10 million, $15 million, $20 million a year businesses. Yeah, I think there's a huge, and to me, like, the thing that gets me excited is there's all of the, like, I like the models. Like, the model story to me is incredibly interesting, but it's, like, the model story in service of these, like, new differentiated capabilities that enable you to go build this stuff.
+
+And the reality is, like, the line between building products and, like, doing, almost, like, doing, like, research as, like, even just a user, like, historically research has meant you had to be a scientist or something. And I think the cool thing about LLMs is, like, research means, like, you just go, like, play with models and, like, figure out what these things can do. And, like, those, that actually unlocks all of these, like, new businesses that you could go and build.
+
+And I think, like, the bounding box example is, like, a very shallow, but, like, also a very real reality of, like, the product experiences that you could build with something like that. And I'll show just, like, a couple of other examples. Like, this is just showing the, like, native function calling capabilities.
+
+So here we hooked up AI Studio and Gemini to the Google Maps API and sort of built this, like, kind of, like, really thin geoguesser experience where you can, like, basically have the Maps API, like, show you all different types of locations around the world. And the prompt here is, like, take me somewhere in ancient history, and it takes you to this isolated island and talks about it's a place of unique biodiversity with crossroads of ancient trade routes, the island's isolation, yada, yada, yada, archaeological remains, et cetera. So there's, like, lots of cool, interesting experiences that you can build, just, like, connecting existing, like, the combination of two products that, like, historically lived separate with function calling with AI brings this experience to life.
+
+And, like, you get this combinatorial explosion of different, like, what happens if you take five random different products and you bring them all together and you put AI in the middle? Like, that's actually, like, a real business all of a sudden. And the amount of work to do that is, like, actually pretty small relative to, like, historical SaaS product solutions.
+
+And the cool thing about this starter apps experience is all of the code is on GitHub. So you can literally just, like, click up in the top right-hand corner and then go on to GitHub and, like, download. And, like, the end-to-end product experience for some of these things is already working.
+
+So you can go and use these, hack on them, take them in whatever direction you want, get a free API key, power the entire experience. It's all on GitHub. It's all free to use, which is awesome.
+
+Crazy. Yeah. What a time to be alive.
+
+What a time to be alive. The last thing that I'll show in AI Studio is this real-time streaming. So we released the multimodal live API, which is what powers this experience that we're about to look at.
+
+But it brings to life, like, this, and we were talking about this before, but, like, this, like, AI co-presence of AI being able to see the things that you see and actually get the right context in order to help you. All right. So we're looking at the real-time live experience right now.
+
+I'm sharing my screen. We're looking inside of this real-time console. And right now, everything that I'm saying, the model is actually listening to.
+
+Model, can you say hi to us right now? Okay. So it sounds like you're getting ready to do something fresh.
+
+Is there something that you will apply it to? Yes. I'm sharing my screen.
+
+Can you see the code editor that I have open? Yes. I can see the code editor.
+
+It looks like you have a Python file open named f.py, and it is using the Gemini API. Is that correct? Yes.
+
+And if I was going to get this code to actually run, what's your suggestion of what I need to change? Like, I think there's maybe some placeholder stuff in here. Any ideas on what needs to change for this code to work?
+
+Okay. You want to get the code working and are looking for suggestions on what to change, specifically regarding possible placeholder elements. Have you already tried to run the code?
+
+And if so, what output did you get? Yeah, that's a good suggestion. I can try and run the code right now.
+
+Python 3, f.py, and we'll see what it says. Okay. It seems that when you tried to run the code, you got an error message that says, no such file or directory.
+
+This means the file path you entered is not valid. Are you sure that the file name and the location are correct? Yeah, I was in the wrong directory.
+
+I'm running it now, but I'm getting a different error. Okay. It seems that you are now getting a different error, which says API key not valid.
+
+This error means that the API key you're using is either incorrect or missing. Have you made sure to correctly input the correct Gemini API key into your code? Yeah, it looks like that's the problem.
+
+I need to change this. It's just some placeholder text right now. Okay.
+
+It looks like the issue is indeed with the placeholder text for the API key. So now you should input the correct API key in that place to get the program to work properly. So this is, I have a couple of reactions from this experience.
+
+One, I think this is really an early look and feel of what's possible. I think the cadence of the conversation can be rough in some contexts, but it is showcasing what the raw capabilities are. We're building a bunch of extra fine-tuned controls on the API side to let the conversation flow.
+
+For example, you see the model is very excited to jump into the conversation, as one example. Maybe you'd want to instruct the model to be a little bit less passive and only jump in at the right time. But an early look at, I think the future that we're going to see with the Multimodal Live API is really the ability for the model to, or just generally for models, to be co-present in the experiences that you are.
+
+And you can imagine your IDE is the best experience of this. You do a single button click, and instead of having code autocomplete, you actually have someone pair programming there with you, like a senior developer or whatever it is, in the IDE with you, seeing the exact things that you see, understanding the whole thing. You can share your entire screen.
+
+You can see the browser, and literally in real time, seeing the same stuff that you're seeing. And I think this unlocks a huge new array of product experiences. And specifically for people building stuff, one of the big challenges, I think, with AI and just technology software in general is there's this really steep curve.
+
+And there's this wide distribution of what people's capabilities are. And I imagine this for my mom, as an example, who's not technology illiterate, but she's definitely early on the technology familiarization curve. And is not the best person with technology.
+
+So I imagine this is helping her as she works through how to learn to code, which she has, which is really cool. Or how to edit a video in Adobe Premiere or something like that. Yeah.
+
+For me, first of all, this is probably one of the more mind-blowing AI demos I've seen as of late. When I see this, I see this is the future of work. You're going to have, it makes sense that you would have this AI partner see what you're seeing and provide value and intelligence to whatever it is you're working on at any given moment.
+
+And you're happy to sacrifice some screen sharing. Because if you can get your work done 1.5x, 2x, 3x faster, of course you're going to do it. Yeah.
+
+And I'm not showing it in this example. But you can also do things, and this is visible on the right-hand side. We have a bunch of native tool integration.
+
+So you can set up sort of pseudo-function calls. You can set up code execution, which actually spins up a Python virtual environment and runs code for you and shows you the outputs of those things. You can enable grounding, which lets you browse the internet and actually find results.
+
+So you could imagine this coding example. This would really work if I was getting an error that was saying 400 API key not valid. I could have the model browse to generativelanguage.googleapis.com and give me whatever the information is that's on that page.
+
+And you can do all that without actually leaving the bounds of the product experience that you're in. So it creates this really unique way of bridging the outside world into this unified experience. So I'm super excited.
+
+I agree with you. This is the demo that continues to blow my mind as I see and play with it. Yeah.
+
+And I know there's going to be people listening to this that are going to be like, yeah, but this is so limited. Or the voice, the intonations on the voice are kind of crappy. And it's like, well, okay, you can change the voice.
+
+But I think the point of all this stuff is, even if it's 93% there, 87% there, 80% there, 95% there, it doesn't matter. When you start playing with the tools, it lights off certain, it gives your connections in your brain that you wouldn't otherwise have thought. You're like, oh, you know what?
+
+I can see this working for my mom. I never thought of that use case, by the way. Yeah.
+
+I think as someone who, shout out and credit to my mom, who's learned to code later in her life. And the amount of time that I spent literally pair programming with her, learning Python, learning JavaScript, and helping. There's so many.
+
+And independent of my mom use case, there's so many people who don't actually have someone to help them learn whatever the thing is. And that's one of the biggest, I remember for myself learning in code, yeah, sometimes there was a tutor around or something, or I could go on Stack Overflow and get yelled at by people on the internet. But that wasn't always the case.
+
+And there was times where it would be great when I'm late at night hacking on something to really have someone to help me. And I think this sort of democratizes that access, which is really cool. So for folks who want to try this, asstudio.google.com slash live.
+
+It's the stream real time on the left-hand side of the nav. You can play around with the experience. It's free.
+
+Send us feedback. We'll make it better. There's voices.
+
+You can change the output formats. And we're sort of pushing on trying to make this a really cool experience for people. I'll include the link in the show notes that people can go and click.
+
+I'm, like always, I'm always in the YouTube comments. So comment away. Say what's up.
+
+Logan, thanks for coming on. Anything else you want to say before we head out? Yeah, I think my last comment is just like this experience of getting a really, hopefully, a cool experience in AI Studio for free, the API keys actually by default are also free.
+
+So you can get like 1.5 billion tokens using Gemini across a bunch of different models for free today. The entire multimodal live experience, you can set this up in your API and start prototyping that experience for free today, which is really cool. Like I'm super happy, like the angle of all this is we want to remove the economic burden for developers, for startups to start building really cool AI products.
+
+And we're doing that with AI Studio and we're doing that with the API. And like when you want to go and scale the production, we have that path for you as well. So please, yeah, send us feedback.
+
+We'll keep making AI Studio better and the API better. All right. I'd love to see it.
+
+Later, dude. Thanks, Greg. Bye.
+
+Bye.

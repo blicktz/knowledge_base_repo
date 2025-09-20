@@ -1,0 +1,611 @@
+All right, we got Joe Mora on the pod, co-founder CEO of Crew AI, probably one of the leading, if not the leading AI agent platforms. What are we learning today, Joe? Well, first of all, thank you so much for having me.
+
+I think it's going to be a lot of fun. So we are going to be building a few different things. I was thinking about your community and I was like, what if we use AI agents to do things like data enrichment?
+
+So given that you're trying to prospect a lead, it finds information about them, automatically writes an email, send to them. But then we take it up a notch and we produce a real-time report and generate a PDF. I don't know, just trying to have some fun.
+
+And if we get the time, we can do more fancy stuff towards the end. So I hopefully have some spare time at the end. And okay, that sounds good.
+
+And I think, could you explain, you know, explain by the end of this episode, what are the tangible skills people are going to get? Yes. So by the end of this, you all should be able to get crews, fully understand what AI agents are, how to orchestrate them using Crew AI, and even deploy them into a production environment if you want to use or a free tier on the enterprise.
+
+And you're going to be able to do it there as well. So you will be able to go now from this and start building AI agents for yourself and automate processes. And to be clear, there's like, I'm not sponsored by Joe at all.
+
+Like my incentive is to get you people to build agents and make them work for you. Because I know a lot of you are solo entrepreneurs, solopreneurs, have a couple of employees, or even you have a business that has employees, but you're looking to have a army of agents do more work for you. That's why I brought Joe in.
+
+So without further ado, maybe let's share our screen and get to work. Joe Piazza I love that. And it's good that you point that out because honestly, with Crew itself, being like in startup, now we have a bigger team, like there are more people to help out in so many fronts.
+
+But from the get go, being able to use AI agents to scale an AI agent company was kind of like an interesting kind of like inception like experience. So I definitely can appreciate for folks out there trying to kind of like build businesses, how the idea of having agents automating certain processes can be quite amazing actually. All right.
+
+All right. Let me share my screen. Let's get things going.
+
+There we go. All right. So I thought about, we start with a simple use case, and then we grow up into more complex ones.
+
+So let's dry it out. What are we going to be trying to do? This one, I think is going to be an interesting one.
+
+So in the past, especially when you're thinking about use cases, like about companies in general, then start, there's two things that you really want to nail once that you have a product or you're building a product. You want to make sure that you do good marketing and to do good sales, right? Because that's not only like revenue, but also an opportunity for you to learn.
+
+So you can learn what works, what doesn't work, like what tracks with your product and what doesn't. So I thought, why don't we do something that is able to do lead enrichment. So let's say you get a lead.
+
+You want to learn more about this person and this company. And there's a few questions that you're trying to answer here. And one's like, is this my ICP, my ideal customer profile?
+
+Also, is this company a good match? And like, should I actually spend some time pursuing, interviewing and trying to understand more about them? But then that information alone, like you can, you can do only so much with it, but could we also use agents to take one step further and make it actionable and say like, all right, can we have ideas for how to use our product, given that we now learn about this person?
+
+So the agents will not only do the enrichment and learn about the company and learn about the person, they're going to come up with these ideas on how they can use our product. And then afterwards, can we just go ahead and draft an email and kind of like trying to reach out to them? Like, Hey, thank you for signing up.
+
+This is how you could be using your product, three ideas for business, very excited about it. Like let's chat. So honestly, I think this is kind of like a more straightforward kind of use case.
+
+We can start building with no code, but I want to take a step further after this and even further if we get the time, but before we get there, let's get to building. So for this one, because I want to start very simple, I'm going to start with no code. If you go on crew AI enterprise, there's a free tier that you can create an account.
+
+There's some setting up that you need to do, but once you have done it, you're going to have access to crew studio. Crew studio is basically a way for you to create AI agents by chatting. Like you can chat your way into an automation.
+
+So for this one, let's try, let's try to create one ourselves. Now I have something in here for us to use, and I'm going to read it out loud with you all. So the idea is I want to create a crew that will be able to research both a person and a company based on their name, email, domain of the company.
+
+I wanted to make sure to learn most that I can about their business. So their role, their seniority, the company level, how big the company is, what is their industry, their culture, and three ideas about how they can use AI agents. And at end, I want to produce an email that is friendly and doesn't sound like an AI offers to explain how they can use the AI agents on a business call and basically describing a little more about how I want that email to sound like.
+
+All right. So now I have a plan, right? The outputs, the fully crafted email ready to send, including the insights.
+
+There's going to be three inputs for these agents, the name, the email, and the domain. It's suggesting to use three tools, a server dev, scrape website, and GPT-3. Let's remove this.
+
+So we don't need, we don't need GPT-3. Then three agents, one for doing the researching, one for the analysis, another one for doing email drafting, and four tasks. So what you see here is that with AI agents and crew AI specifically, you don't need to have one agent to one task.
+
+It's not necessarily one-to-one. So you can see the first one is doing by the research agent that is basically researching the thing, the person. The second one is researching the company and it's also done by the research agent.
+
+And then the third one is where the analysis agent comes in and then the email agent comes in after that. So this feels good. Let's create our crew plan.
+
+Chris Bounds Quick break in the pod to tell you a little bit about Startup Empire. So Startup Empire is my private membership where it's a bunch of people like me, like you, who want to build out their startup ideas. Now they're looking for content to help accelerate that.
+
+They're looking for potential co-founders. They're looking for tutorials from people like me to come in and tell them, how do you do email marketing? How do you build an audience?
+
+How do you go viral on Twitter? All these different things. That's exactly what Startup Empire is.
+
+And it's for people who want to start a startup but are looking for ideas, or it's for people who have a startup, but just they're not seeing the traction that they need. So you can check out the link to startupempire.co in the description. And that's going to basically take this UI up a notch so we can actually see visually your tasks and agents.
+
+So here you can see profile researcher, idea generation, email content specialist, and I can keep changing in here if I wanted. So let's say that I want to make this like a senior email content specialist. There we go.
+
+And let's check like while they're doing conductor research to gather information about the individual with female on domain this, that's their company domain. All right. This, this feels good.
+
+Let's do it. Generate crew. So this actually generates the code for you.
+
+If you want to download it or allows you to deploy this right away, if you're really, if you're really going to do that. So in here, you can see it's very straightforward. We have three tasks.
+
+The first one, second one, third one, we can change the tasks. This could change the agents. One thing that I do want to do is for example, the research profile is using Serper and scraping the generating ideas is I, I think I want to also it to use Serper and scraping just in case it wants to go a little like more broad on searching for ideas online.
+
+And the third task uses no tools. Now, the other thing that I want to do is for the idea generator, let's do GPT 4.0 instead of 4.0 mini. And for the email, let's go a little crazy.
+
+Let's lose 0.1, 0.1 mini. I said that it can get like some extra fenciness in there. So let's see if it's going to work.
+
+Honestly, 0.1 mini in my experience for agentic behaviors, sometimes all short, just because it already has like chain of thought embedded on it. It tries to basically like figure out everything itself without using any tools and kind of like outsmart a little bit what you're trying to do. But hey, there we go.
+
+So we have our initial crew in here. Very simple. What I'm going to do is I'm going to deploy this right away so that we can go ahead and test it, but we're going to also download the code.
+
+So let me go back into that so that we can, so that we can start trying things out. All right, there we go. This is the one.
+
+Yes. So let's do download the code so that we can change a few things about this, make it more complex, go extra custom. Again, you don't necessarily need to use this UI.
+
+In the end of the day, if you want to create the screws locally using only the open source, the code. So if you want to create a new code, you can do create, create a new code. And that will basically ask you a few questions around like, all right, what is the provider?
+
+Oh, sorry. Create crew. There we go.
+
+It's going to ask you a few questions about like, what is our provider? So you can say, ah, open AI, what the model you want to use? You can say, well, I want to, all my agents use GPT for all mini.
+
+You can specify individual models per agent down the road. Joe, I had a question. I had a question about the models.
+
+I think a lot of people get to that point and they're like, yeah, I don't know which model to pick for this particular task. How should people think about that? That's a great question, Greg.
+
+So usually the way that I think about it is like smaller models, like smaller 07B, 14B, they don't work as well. You can get them to behave as agents, but they usually take even longer because they go in so many blind alleys and keep like retrying things. So you definitely want to go like, my go-to is GPT for all mini and that usually works great.
+
+That said, you can evaluate different models. Locally, we have a feature. Let me go into this new crew that we created.
+
+Name of your crew. We have a feature called crew AI test. And what that does is, it allows you to test our agents using many different models.
+
+So you can test like, all right, how does it does with GPT for all how it does with GPT for all mini. So you can get like how each model works and what are the score that each task gets. So you get an actual quality score and actually hallucination score.
+
+Yes, of course it's missing my, uh, my key. Let me edit this in there to make sure that we can get this. Right.
+
+I'm gonna just come in here. I get this envar. I have a key that I created just for us today.
+
+And let me copy. There we go. Open AI API key.
+
+And I'm going to put hours in here. All right. So what you can do in the open source is you can run this command, the create a test.
+
+And what it does is basically run your agents, but it's going to try to calculate, um, the task. Let me do just one iteration, by the way. Um, Oh, I think maybe my key is wrong.
+
+All right. Let me get another key. One second.
+
+Classic. Classic. Yeah.
+
+All right. There we go. As you're, uh, as you're putting that in, I have a question around one of the things that I noticed you change was adding, I think it was like a senior writing correspondent or whatever.
+
+You added the word senior. How, how important is like, does that actually affect the outputs of your crew? If you, if you write senior to some extent, yes.
+
+I mean, not necessarily senior alone. Right. But because these agents, they're kind of like impersonating roles, you do get different behaviors, depending on, you do get different behaviors, depending on how you give them like a different role.
+
+So you can actually replicate this on chat GPT. Like if you ask chat GPT to like, give you an assessment on uh, a stock, it's going to give you kind of like a report. But if you say, uh, behave as an FCC, kind of like approve it, kind of like, uh, stock analyst, it's going to view a completely different answer, even though all the remaining of the prompt is still the same.
+
+So, uh, it's one way that you can steer the model to behave in a certain way, if you really want to go there. So, uh, here you can see, like, uh, I just run it just for one execution, just one new one model, but you can see what would be your task scores, your crew overall score, your execution time. So it can actually compare many models in this and you can run this like many different times and see what happens.
+
+And if you want to take this up a notch on the enterprise side of things that again, there is a free tier so you can try it out. There is, let me see one of the agents that I did run tests for maybe the PR review. There is a way where you can compare.
+
+Yeah, there you go. You can compare many models. So you can see your GPT, Fire Emini and then dropping individual tasks, the score overall crew score and execution time.
+
+So you can see that overall Sonet was better on a lot of this, but it takes way, way longer. So probably, probably don't want to go there, but I might replace a task or two to use Sonet if I think this is useful. Uh, so yeah, again, you can create all your agents with the CLI.
+
+If you really want to go there and you can run out those things locally, I just use the UI in case for the folks that are less tech savvy and they want to start with something simple. Totally. And you know, in terms of output, there's, I would imagine they're the same, right?
+
+Using the interface or the CLI? Yeah, the output will be the same. Um, the, the thing is once that you're using the enterprise that automatically becomes an API, right?
+
+So that open ups like opportunity for you to kind of like interact with a few like different apps. Uh, and we can integrate, for example, with like a Zapier on this one. And I think this could be like an interesting one, but, uh, it's essentially the same thing.
+
+So for example, I downloaded, uh, creating, yes, I downloaded the crew that we just created on the UI. And if you open it up, you can actually get all your agents in here. So you see like the profile, your researcher is in there.
+
+You can see our senior one in there that you mentioned scenery mail content specialist right in there. You can see that they're using a one mini and GPT four O and four O mini. So all the codes in here, the code generator is also in here.
+
+So you can kind of like inspect and take it like an up a notch if you really want to. Uh, well, all right. So while this is, uh, deploying, it is to begin.
+
+Um, what we're going to do is this, I want to, uh, I want to do something, uh, a little fancy for us today. So I want to make sure that we create a Zapier to run this. So by the way, now that this is live, I can actually, again, because it's an API, I can see what are the inputs that it needs.
+
+So we can see that it's domain, email, and company name. I can actually run this right here if I want to. So we can do a task real quick.
+
+Let's say joao at crew.ai.com. Uh, let's see the domain. It's crew.ai.com and the company is crew.ai.
+
+Let's do a kickoff and you can use web hooks. Like if you're more technical and you want to like have progress bars on your app and you have, I have other things. Um, but you can also just do pooling as well.
+
+If you want to just see like, how are things going? Oh, this one failed. Great.
+
+So we're going to debug life. That's going to be, that's going to be fun. But the other thing that you can also do, if you don't want to use the UI, uh, like the API, you have a UI that you can use in here where you can basically create a card for your agents.
+
+And again, it's going to use the same inputs and they're going to pick it up and they're going to work like directly from here. Or if you want to, you can also export a UI. You can export a react component right from here.
+
+And that usually, that said, let's debug. Let's see what, what went wrong with for crew. Uh, we actually have it in here.
+
+So we should be able to do create, uh, install to install dependencies and create, I run to see what issues did we get, create, run and whatever broke it in there should break it in here as well. The first run, by the way, you're going to notice is the first run takes a few extra seconds because it sets an environment, um, just the environment for you to actually run it. There you go.
+
+The agent is missing in the following description. That's great. All right.
+
+So we know how to fix this. Uh, the thing is on the task, there is, yes, there is no agent for our second task that generate ideas for that. We want our idea generator.
+
+So let's make sure that we get this in there and there we go. Um, this should now be fixed. If we run it again, it should work.
+
+And this might be an actually a good way for me to show how you can actually deploy this using get as well. So let's say that I build this thing like, uh, I did it manually, right. With code.
+
+I'm going to do Greg tasks, make this private boom. So now what I want to do. Yeah, there we go.
+
+It tried to run and me started up in the I key. That's great. It means that it's working.
+
+So now let's do get in it and make this a repository. Let's do get add. So we add everything in.
+
+Let's just push it out in here. And there you have it. Yes.
+
+So now we can deploy this Greg test, uh, crew and we can do it directly in here. There's a GitHub integration. So again, if you didn't do through the UI and you generated things, you can come in here and you can do grand tests.
+
+I can add my separate API key, my open AI key that I have a pre registered and I can click deploy. And, um, and there you go, we're going to deploy this one, a similar thing. I guess I, I should have checked if all the agents were assigned on the UI there in the other one.
+
+So let me delete this one. And while that does its thing, I want us to set up a webflow website that is going to use the screw. So, um, I'm just going to choose a random template in here.
+
+Joe's fantastic website. That sounds, that sounds right. Sounds right.
+
+By the way, Joe, is there any particular reason why you chose webflow versus framer or another, another product? Uh, no, really. I'm just turned out to be a webflow customer.
+
+So I really like use them. Um, but this directly should work with anything out there. Again, it's a day.
+
+It's an API call, so you should be good to go. So let me delete all this grid and delete the spacer and I'm going to add a form from block. There we go.
+
+So we know there's three feuds that we need for, uh, for or things. So I'm going to duplicate it. Can I add a few directly?
+
+I think I can. So few. No, I'm going to duplicate this once.
+
+All right. There we go. So it's name, uh, email address in the other one was company domain, if I recall correctly.
+
+So let's do company domain. So name should be good. Let's check settings.
+
+Yes. Name, email address. It's good.
+
+Should be email. Let's check how you're calling it on the crew. Well, I guess it doesn't matter.
+
+We can map it since we're using Zapier and here, I'm going to make sure that we do company domain and we can call this domain. All right. Let's check if I did it all right.
+
+Email name. All right. This feels good.
+
+Let's publish it for now. And we can start to set up our Zapier. So one thing that you will notice is that we have a few integrations.
+
+We're still beating out more. Again, this is something that you can do manually as well, if you're doing the open source route, but if you're using enterprise, there's a few integrations. One of them is Zapier and other ones, HubSpot and other ones is Slack.
+
+So that kind of, I can help you out with Zapier ones that you connected, you can actually do, we can actually use Cree in here. So let's say that we're going to start with a web hook because we're getting this request from somewhere. Um, let's go for it.
+
+Now continue. And we can test this URL. I think I have postman open here somewhere.
+
+Yes. So there we go. And it's, uh, domain email and name.
+
+So let's add name in here. Oh, And let's do Joao, Laura. There we go.
+
+Send it. Boom. Request successful.
+
+Test trigger. We got a request. I'll be there.
+
+There you go. And now we can open create I, and we can actually choose to kick off a crew. And our crew should show up in here.
+
+Assuming the deploy is done. Uh, it is Greg test. There you go.
+
+I think the ploy is a C you. Yeah. It's a C you happening.
+
+There we go. Provisioning was that we deploy it. We're going to see the load up exactly the same fields that we want in here.
+
+So we're going to see the name, the domain and, um, in the email show up in here so that we can map from what we're getting from this web hook. And after this, I'm going to use resend again, no specific reason. Um, just turn out to be a recent customer or we, I really like Zeno Hasha.
+
+I think he's doing an amazing job in there and we can send an email and, uh, we're going to use the same email that we are getting from our hook. And that's not the two. Yeah.
+
+That's two from, let's say no reply. Um, we fly at a crew.ai.com subject. We can say, um, Hey there, let's chat.
+
+By the way, for people who don't know, resend is, is a way to send transactional emails. Um, so meaning, you know, a transaction happens and email gets sent and they've also got like a really beautiful, um, analytics platform. Um, so it is a, it is beautiful.
+
+Again, I'm not like associated with, with resend or crew or anything. I just, it's a cool product. Um, and they're doing cool things.
+
+Yeah, I agree. It's funny when you think about email, like it's not kind of like, uh, your, your go-to kind of like startup, if you're trying to think about starting a business, it feels like such a consolidated market. But, uh, I guess there you go.
+
+There they have it. All right. Quick ad break.
+
+Let me tell you about a business I invested in. It's called boringmarketing.com. So a few years ago, I met this group of people that were some of the best SEO experts in the world.
+
+They were behind getting some of the biggest companies found on Google. And the secret sauce is they've got a set of technology and AI that could help you outrank your competition. So for my own businesses, I wanted that.
+
+I didn't want to have to rely on Mark Zuckerberg. I didn't want to depend on ads to drive customers to my businesses. I wanted to rank high in Google.
+
+That's why I like SEO. And that's why I use boringmarketing.com. And that's why I invested in it.
+
+They're so confident in their approach that they offer a 30 day sprint with a hundred percent money back guarantee. Who does that nowadays? So check it out.
+
+Highly recommend boringmarketing.com. So while this is deploying, let me explain what we're going to be doing next after this. Okay.
+
+And we get this working end to end. Well, I find that an email is fun, but it's kind of like a, it's kind of like a demo, right? Like it's what do you see a lot of like other folks do as well.
+
+I think we can do a custom report, a custom PDF report, something that looks more fancy, more drafted towards specifically their company with more specific, like we are already doing all this enrichment. We're already like having this, uh, agents kind of create these ideas on how they can use it. So why not like go and step further, do the craft report and then use that to be sent on the email.
+
+So the custom PDF report, this is something that you would hire typically a junior marketing person to actually put together, take the data, make it look nice. Maybe you want a designer there or, or whatever, but it's, it's someone you're paying, you know, in the U S at least kind of, you know, 50 to $80,000 a year. Um, you're saying basically you can just automate this whole thing.
+
+Yeah. I mean, what you can do is you can get like them to do maybe a template, right? And then based off that template, you can like preview the information.
+
+So you still get like that very nice high quality that you would get in terms of like capturing your sense. And what do you want to the PDF to look, but then what you get is kind of like this very kind of like custom reports per customer. So as soon as someone sign up, like as a lead, they get something and you can go a little crazy on those.
+
+You can put their company logos, you can put like a bunch of other things. I usually, I love when I think about marketing and I'm going back to my clear bit days here. Um, one thing that I would think is I would love to send a lead materials that they would like to show in a meeting, right?
+
+Like imagine saying something so beautiful that they are okay taking that and going back to their team and show like, Oh, let me show you what we should be doing and how we should be thinking about this. So I think there's something special about that. And just helping your champion in your like lead and your customer to actually kind of like, uh, get some props in there.
+
+So, uh, for that, for this custom PDF report, we're gonna need a template. So let's figure out how we can get a template going. Uh, easiest way for me to generate templates now is using chat GPT.
+
+Uh, I love it. So why don't we go to chat GPT real quick. And I have a prompt in here, write me a custom HTML, uh, that is pretty that I can export to make a beautiful report.
+
+There's a bunch of typos in there, but it should still works just fine. So while chat GPT is writing in or deployment is done so we can go back into our Zapier and let's go back into configure. There we go.
+
+Refresh results. I want to get grand tests and refreshing here. Make sure that we get, there we go.
+
+So we can now use our, uh, company. It's not a company name, so we can use domain here. I guess I missed the point on that one email and a domain again.
+
+There you go. That should be okay. All right.
+
+This is good to go. That's that is going to try to kick off the screw in Cray. I make sure that it works.
+
+There we go. And you can get, you get a kickoff ID in here. You don't need to worry about that.
+
+Like the integration is going to figure itself out. So it should just work. And then as the HTML, we basically want the crew result, um, into this one and we can test the step, make sure it's out fine.
+
+Uh, Cray.com. Oh, I think there is a typo in here. Yes.com.
+
+There we go. Continue. Test step.
+
+And there we go. So we can publish this one. Uh, because we just triggered this, you can actually get to see the execution in here.
+
+Uh, we just run this 34 seconds ago. We can go into the execution. We can see what the email looks like.
+
+Hey, Joao, I hope this finds you well. I have been following CrayA impressive journey, truly inspired about the innovation solutions. Here are a few AI agent ideas stated for CrayA.
+
+Driven workflows, remote teams, automated compliance, dynamic customer engagement. I, I would use those ideas. I think that fits into my alley.
+
+Right. Totally. So, uh, Dan, again, and we could optimize the prompt to make sure that no subject is included that doesn't have like this interpolation, your name, like we, we can work around all that, but let's call this a win for now.
+
+That's good to go. Um, there's a few extra metrics that we can talk about eventually, but I think this should be good. All right.
+
+So now we have our Zapier, we have our URL. Let's copy this one. We can go into our web flow.
+
+We can go into our form and we can add this. I'm going to add this both as action and redirect just in case and publish. In meanwhile, I'm going to check my email, just get it ready.
+
+There we go. I got an email. And I want to make sure that we now get the email and to end on this one.
+
+All right. So we publish it. Let's test it.
+
+Boom. By the way, let me, I think I lost reverse side. There we go.
+
+Give your side to the back. So this is our landing page. Amazing landing page.
+
+Future is now give, give our email in here. So, uh, in here, we're going to say, um, more email credit.com, uh, my domain, create.com as well. And I'm going to do submit.
+
+Um, Oh, I guess expecting this to be an email. Let me fix that in a web flow real quick. Okay.
+
+So let's check this out. Settings domain domain email form. There we go.
+
+There we go. It's a plane. Publish it.
+
+There we go. So now we can refresh this and we can do Joe. I'm over to our crew.com and the company domain is create.com and I can click submit.
+
+And there you go. Because I didn't add a proper redirect. It took me to, um, the Jason thing, the client domain.
+
+But it should now have a running execution in here. Stopped. What was this?
+
+Query, I stopped by this error. Missing company name. Company name is missing.
+
+Let's see. What is the request that we got from the web hook, uh, data in, data out. So query string name.
+
+Oh, I guess it's sending a get request. So again, post requests, publish, publish like domains. All right.
+
+So let's go back refresh and let's do it again. John Moira. It's your own crew.com and crew.com and do a submit.
+
+There we go. Let's see if it's running now. John Moira.
+
+There we go. It's running. So while the crew runs and we get our email and everything's going, let's check our PDF template.
+
+Uh, there we go. We have a PDF template. I'm going to just copy this for now because we're already downloaded our crew.
+
+I'm going to do some of the work in here. So I'm going to create a folder here that I'm going to call a template. And in here, I'm going to get a fly.
+
+Oh, that I'm going to call PDF.HTML. I'm going to paste our PDF in there and let's see what that looks like just to make sure that it's nothing crazy. So templates, PDF.
+
+Let me open this up and bring it to screen. All right. It's okay for us to start again.
+
+You can do like all sorts of crazy things in the end, like, because it's HTML and we're going to convert this in PDF. You can just make sure that it looks exactly how you want. You could have images across the whole thing, but that it feels good enough.
+
+Now we want to make sure that this, the content of this is completely dynamic. So what are we going to do in here is I'm going to basically ask it to update and I'm using cursor here. I really love, and I'm going to say, I'm going to say, replace the text content with variables we can interpolate using the their pattern.
+
+Boom. There we go. So now we're placing title, intro.
+
+All right. This is good. And now we have a bunch of information for us to interpolate in this PDF, right?
+
+But our crew is geared towards an email. So we need to change that as lively. First thing is with crew AI, for now our agents are working mainly with text, text in, text out, it's email, but this requires a more structured output.
+
+We're talking about title sections. So we want to make sure that these agents are outputting a JSON or a pydentic object, something that you can actually use programmatically. So crew actually supports you to have like that crew, like pydentic output or JSON output.
+
+So let's ask it to create a pydentic object, actually model that will hold out the data necessary to interpolate on the PDF file. There we go. By the way, Greg, do you use cursor or you are a windsurf guy?
+
+Greg Fossil- Well, I'm actually more of a bolt guy than anything. Ooh, I love it. Boat's amazing.
+
+Greg Fossil- Yeah. I went to CS school, dropped out, but finished most of my classes. So I'm somewhat technical, but I'm like a bad technical person.
+
+And I found that Bolt has been more geared towards non-technical people. Greg Fossil- I hear you. I hear you.
+
+Greg Fossil- It doesn't mean I don't mess around with windsurf or cursor or whatever. I'm also in the stage where I want to play with all the tools. I've just been playing with lovable recently, which is another one.
+
+And I just like to, I'm a learner. So we don't know who's going to win yet. So we might as well play with a bunch of the tools.
+
+Greg Fossil- I hear you. And yeah, a lot of people get to ask me this, asking like, hey, what is going to happen with the market? How are things going?
+
+Do you think there's going to be a clear reader? And what I'm telling everyone, it's very much early days still. No one knows how those things are going to play out.
+
+And there's a few things that are not in your control. For example, you don't truly know how this is going to impact companies or how this is going to impact jobs. Greg Fossil- And everything along the way.
+
+But we don't have control over that. But you do have control around like what you're going to do with your time, right? What is happening right now.
+
+So I usually recommend people to just learn these tools and use them anyway, because it doesn't matter what happens in the future, like what to wins or how AI impacts like everyone. In the end of the day, knowing these things are going to set you up for better, like even independently of what happens. Greg Fossil- Totally.
+
+Greg Fossil- All right. Well, let's go back into this. So we just create this PyDentic object.
+
+Now that we have this PyDentic object, we actually can go to our final task in here. And I'm actually saying like, hey, outputs this object. So there's going to be a function calling at the end.
+
+That's going to going to convert the output of our agents into this object that we need. But now that I just noticed, I'm going to actually remove this for a while because we need to update these tasks. So let's go into tasks and say, I need to update this tasks to now instead of coming up with an email to get all the data necessary, necessary to create this object.
+
+And I'm going to copy the object there. This is the object that we are going after. So I'm going to say, there we go.
+
+So let's see how it's going to go about things. Seems to be keeping out the same agent. The one thing that I would do is let's update the agents as well to factor this in.
+
+We are now updating. We're now updating this agents to generate to gather data to generate, generating this object instead of writing an email. There we go.
+
+It's going to probably rename our agents and change a few things, but that's fine. Yes. There we go.
+
+There we go. Update everything. All right.
+
+4o mini, 4o, 4o mini. Let's do 4o on this one as well. And in here now, update this to use the agents defined in agents.
+
+There we go. I got to say, once that you got used to this like new tools, like cursor and such, it's hard to go back. It's so good.
+
+It's so good. Oh, funny enough. They kept the same key.
+
+So you can see it's email the rafter, even though they changed the role. So maybe we, maybe we do update, like update the key, update the agent keys to reflect the new roles. There we go.
+
+Yeah. Yeah. I'm just changing this final one, the PDF drafter.
+
+So let's update this to use PDF drafter. All right. So now we change your agents.
+
+We change our tasks. Again, I used a cursor to do an AI. So I'm not really like tagging along and optimizing this prompts very much, but if it works, it will be, it'll be pretty good.
+
+So now what we can do is we can ask it, update this class to use the new agent and tasks. And it should, it should do a good job about that. Well, there goes, by the way, we never checked our email.
+
+I, I probably got an email already about this and guess what? I didn't get it. You got it.
+
+I got a mail. I got a mail. Yes.
+
+Let me, let me move this into our view. There you go. I got our first one that we were testing on and I got the, I got a new one that now seems to be doing great.
+
+Let me move this into view. All right. Email, no reply.
+
+Move it here. No, no, no. Move it, move it here.
+
+There we go. There we go. So you can see that I got a meal and a high Joel.
+
+I hope this meal finds you well. My name is again, we didn't like necessarily mess around with that. I have been called Grand Press of Jenny, reach out for some innovative ideas about offers, especially around strategic partnerships, customer experience, regulatory compliance.
+
+Love to schedule a call to discuss. Would it be available to check next week? So again, pretty cool.
+
+You could make this like so much more advanced if you really want to and more precise. And this is kind of like where you get more into kind of like what we're seeing companies doing, where you're going to also integrate this with like a Google calendar. You're also going to integrate this with your CRM.
+
+So now it's not only kind of like, uh, in like sending the email, but actually scheduling the call, checking if you have the time slot available and kind of like doing, going out the way, but this would be a good way for you to get things started. And again, there's a few things that we could change in the prompts to not include a subject or to not have interpolation and everything, but just like a quick example of how you can get some of those things kind of like going and, um, and how some companies do about this. Yeah.
+
+I think, you know, tactically speaking, if you're, if you're building some of these things, it's like that, what I just saw that email is good enough to start and then spend the next few days just tweaking, learning, uh, and making it more advanced. But you don't, I guess what I'm saying is you, and I'm curious your thoughts, like you don't need to go and build the fanciest output from day one, right? Don't you want to just try and get the basics going first?
+
+Yeah. A thousand percent. I think there's a few things that a Crayon really shines in.
+
+And one of those is like, it's as it's, I think it's the easiest way for it to build AI agents right now. Like if you want to be the more custom ones, like ignoring, like all like the, the more kind of like geared to kind of like drag and drop only simpler use cases. Uh, I think this kind of like the easiest way for you to interrate because now like we, if we spend like an actual couple hours in here going about our agents and our tasks and maybe doing all these integrations, we could get something pretty cool that we can just deploy right away and turn it on.
+
+It's connected to our landing page and just have it going. But I think you got to the point where you got the nail in the head where you want to make sure that you get something out there and what's working, they're about interrating on it. So, um, all right.
+
+So now let's just wrap this things up. Like we, we can now pass an extra attribute cut output by dantic. Again, we're getting more technical in here because now you want your agents to output actual structure data.
+
+And this is the structure data that's going to output so we can actually use it. And what do you want to make sure is that you are, sorry, what do you want to make sure is that you are updating this PDF to now include all this data that your agents are getting to you. So now we're getting to more precision.
+
+What we have done with crew so far is basically very fuzzy and there's a lot of agency, like the agents are doing everything. But then again, as the use case has gotten more complex, you start to need more precision in more like a repeatability and consistency on their use cases. So usually people start with before and after hooks.
+
+I'm going to show that in a second. Uh, but you can go into guard rails and other way into flows and flows are way more complex, way more fun as well to build. Uh, but they're way more complex and you can get like some crazy use cases once that you get into kind of like the flow level, but, um, that's pretty interesting.
+
+All right. So for us to do before hooks, we can basically do an after kickoff, um, hook. That means that something that is going to run after the crew.
+
+So you do the annotation and in here you can say, I will create, uh, HTML, uh, and you got the crew output as an attribute in here that you can use, um, that you can use down here. So I actually have an example that we can use to ask it to do it for us. So let's say, uh, update this after kickoff function to interpolate the variables in PDF.
+
+Here is a high level example. All right. And this is an example of us again, interpolating variables, loading the template and then interpolating a bunch of variables.
+
+And it's exactly what it's doing right now, but very geared towards the exactly template that we have. And we can just make sure that we do the OS import. So there you go.
+
+It's loading the PDF and then, uh, interpolating all the variables. So basically interpolating with everything that we have for the things that are arrays, it's making lists out of them. And then at the end, it needs to return an actual crew output, um, object.
+
+And this crew output object needs to be, there we go. It needs to be, and let me import this crew object. I think it's, uh, from, from crew AI.
+
+Is that it? No, I don't think that's it. And boom.
+
+So that'd be important to write class. So now we're turning a crew output where we returned the final template now completely interpolated. So now there you have it.
+
+This crew is able to not only do the things that it was doing before, but it generates the custom PDF for us. So with these changes, we can actually just give an update to our project. So, um, get comment, uh, making an output, a template template and get push or domain.
+
+And now we're updating our crew to basically being able to generate this PDF. So if I turned out auto deploy, it will deploy right away. If not, we can just trigger a redeploy by clicking right in here.
+
+So let's click on it. And that's going to start redeploying this, uh, crew. So getting back into this.
+
+So we are updating our crew now, and that crew is now going to be able to, uh, like to generate the PDF templates for us so that we can send them over email. That seems good. So while that is deploying, I think we can take a brief look at flows.
+
+Again, those are more technical. So some of you might like say, Hey, all right, maybe I don't want to, I don't want to tread and go that far, but a lot of you might want to go that far. Uh, and the cool interesting about flows is that that's where I kind of like a lot of the more complex use cases really come to life.
+
+Um, and that's where we see like, um, like integrations with SAP, Salesforce, pulling all those different sources, executing some Python before, after crews, during crews, things get a little, uh, a little all over the place. Uh, but it starts simple. It's just, it can get complex, but it starts simple.
+
+So this is, this is how it works. You can start to flow the same way that we created a crew. You're going to do create, I create flow, and you're going to give your flow a name.
+
+So I'm going to say educational content flow, for example, and the flow is an ability for you to have an event based automation that have crews in it. So let me show you what this looks like. So the flow has also a similar folder structure, but you're going to see that it has a cruise folder.
+
+So you can have many crews inside the flow and the flow follows kind of like an event, like an event based system where you basically have an start function that you can annotate with this start annotation. And then you can have other functions listening to functions before there might be a meeting events. So for example, it's going to generate a sentence count and then the function generate poem is going to be listening for once that one finishes.
+
+And this one's going to kick off a crew and then save poem is going to be listening to when generate poem finishes, and then it's going to save that in a text file. So it starts simple, but things can get a little fence in here where you can start something and then you kick off a crew and that crew, you do some validation of the output. And then depending on the result, you call another crew if you really want to go there.
+
+So a good example and a use case where this could be useful. And that's why I named educational content is, for example, generating long form documents. So let's say that you want to generate a crash course PDF again, for the sake of another example where you go over like many different chapters.
+
+You're talking about many different chapters, like evolving into a topic. This is a great example of our flow because you can have a function to gather inputs from the user. For example, what is the topic that this course is going to be about?
+
+What are the learning style for this person? And what are some of the main interests that this person have so that we can use those interests as examples and throughout the educational content? And then you have a crew that generates a plan.
+
+It plans out what are going to be the chapters that you're going to have, like what they're going to look like. And then you have another crew that writes a chapter. So again, you're going to have like a long-term content and like a fully blonde kind of like PDF at the end with like many, many pages if you really want to.
+
+Rob Markman- Incredible, dude. Yeah. This is pretty interesting.
+
+So again, I'm going to real quick try to show like what this would look like. I don't know if you're going to have time to put something end to end together. Grab, keep me honest here.
+
+Yeah. I'd love just to see what it would look like. Like to me, I'm visual, so I need to see that before you leave.
+
+Oh, so if you're a visual, you're going to absolutely love flows. I'm going to show you one thing in a second. So, all right, let's change this real quick.
+
+So let's first go into our crews and rename this poem crew to be, let's say content plan crew Rob Markman- And rename this file to content plan crew and rename this to content plan, content plan crew. There we go. Now, again, I'm going to be very like a straight to point in here.
+
+Rob Markman- Usually you wouldn't spend a lot more time on thinking about your agents and tasks, but just because we're trying to put something quick together, I'm going to say, I want a couple agents to help me create a content plan for a crash course, a crash course on a topic. Rob Markman- These agents will take a few interpolations like topic, learning style and interests. Inter, interests.
+
+There you go. Rob Markman- The topic is what the course is about. The learning style should advise how we plan the chapters and the interests should be used as for examples and such.
+
+Rob Markman- Final output of this will be a plan with many chapters. There we go. Let's see what they come up with.
+
+All right. It updated. It added a couple, sorry.
+
+It added a couple in here, a content course content planner, a content expert, and a learning specialist. And yeah, this feels very good. Now let's make sure that we also update our tasks.
+
+So I want tasks to help me create a plan. All right. Let's use the agents.
+
+There we go. So hopefully between the context of the agents YAML and what I just typed in there as prompt, it is able to create me a good set of tasks. All right.
+
+So the final one is recommendation learning activities and engagement for each chapter. I actually want the final. All right.
+
+So I'm going to say I want a final task that has that brings it all together on a comprehensive list of all chapters and our information about them. All right. And there we have it.
+
+The one thing that I'm going to say is I'm going to add this context for this agent, all the other tasks. So create the outline, the develop and optimize. So whatever the output of creating the outline task, whatever the output of the develop chapter content and whatever the output of the optimizing learning, all those outputs are going to be sent to this agent to help it to come up with this final final result.
+
+All right. So now that we have this, we just need to make sure that we are loading the right crew in here. So this poem crew exists no longer.
+
+This is our new content crew. And instead of starting with a generate count, I'm going to say gather user input. So what is the topic?
+
+What is the learning style? What is the interests that feels good? Now, after gathered the input, I want to generate content plan.
+
+So this is going to be listening to that user input, and it's going to call our crew and it's going to pass out the inputs that we just gathered. By the way, it's using this state. We want to probably update this to be another state.
+
+There we go. There we go. So now we're using everything that we want in there.
+
+So after the content plan is generated, this is where you can start getting things a little more fancy. We can say like, all right, let's save content plan. And we can save this as JSON.
+
+By the way, let's do JSON. And in here, we can say that we want to get the JSON output out of from this. And in here, we want to make sure that we're updating this to use the content flow flow and the content flow.
+
+And we have a plan. The one thing that I will change though, is because if you think about it, the plan is a structured object, right? We're thinking about we have chapters, and these chapters will have kind of like descriptions that are going to have titles.
+
+So what we can do is we can say, create a pidentic model that uses the output. And I'm going to copy the final task in here. There we go.
+
+The output of this task And there we go. So we know that every chapter is going to have a title, a description, learning, key concepts, all right, a bunch of things. And we're going to have a content plan at the end.
+
+So now we want to make sure that update this crew to use the tasks and agents. So it's going to update those two. There we go.
+
+Use our new agents and our new tasks. And we want this final task to do an output JSON that is content plan. So we created a crew.
+
+Again, we're like, we did everything very fast in here. I told you, but call up. I think we've got a little complex and we, uh, and we have our flow that we created in here.
+
+So the cool thing is we could like now have another function in here after we save the plan where we can say generate, um, content And this generate content could be listening Let me do this could be listening to the same function to generate content plan. So this is an interesting one. You can see that after you generate content, you do two things.
+
+You save the content. And because that can happen asynchronously, we can go ahead and generate the content directly. So we don't need to wait for the save to happen for us to generate the company.
+
+And this is where we could have another crew And this crew will create uh, each chapter in a loop for example And after we have created each chapter in a loop We could have another one that is going to be Saving content for example where we're actually saving the content. So we can do a king here There we go. So, all right So in here you can see we gather the user results.
+
+That's where things starts then after getting user results We generate the content plan then after that we do two things We save it and we generate the content with another crew and then we save that content somewhere The cool thing is because greg is a visual person you can do now crew ai flow plot And that will actually plot you a visual showing exactly what is happening with your flow So you can see what are the crews that you have in there You can see what are the inputs like what are the different kind of like functions and events that are being emitted And that is something that people usually add to their readme files And makes like parts of their documentation moving forward So let me open this up now. It got generated so I can show you What this looks like, right? There we go So we gather the user input We create the content plan and you can see this is a crew method.
+
+So there's a crew in this one Then we have save a content plan and generate content Eventually generate content is going to be a crew as well So it's going to be similar to this node and then we save content and there's a bunch of more things that you can do You can do router triggers and then some other things, but you got a visual representation Dude, I had a smile on my face. I don't know if people saw that because I'm like this is this is what I need, you know I needed this I'm gonna say it does helps with like this more complex flows because like uh Again, you even if you crack it and you get the hangout of it You're still working on the team sometimes that are just building this So the more visual that you can get for people to just like wrap their heads around what is happening The better and the easier it is for you to kind of like build the more complex flows like this one Cool Uh, and then again, like if you if you want to execute that is similar thing you can do krii flow Key cough and I think we don't let me double check one thing I don't think we have Environment variables on this one. No, we don't so let me get our environment variables on this one All right, there we go a second let me move this into Screen, yes So now we can do crew ai Uh flow kickoff In that will kick off our agents again, we're missing a crew in there the crew that actually generates the content But you get the hangout of it.
+
+We could like do that now and do that in a loop But it's asking for input. So the topic will be a nuclear fusion I'm a very practical learner And the interest of the target audience would be games and uh anime there we go And there you go our first uh, our first crew is starting trying to create a high level curse outline So this first agents are going to do their thing you can see chapters introduction to nuclear fusion the science behind it Stellar fusion process fusion in technology current challenges the future And now the subject matter experts are going to create an outline for each of those chapters And things are going to keep going and going but you get the hang on how this is going to turn out to be now If we do add their second crew in here what we can do is because we pushed our plan And we can do a new plan into this and we know that this plan is Basically this content plan that has chapters we can loop that in into another crew so content plan here is actually Content plan Is actually not a string but instead There we go There we go And what we can do is on this second place We do content plan. Uh, we actually do for there you go for a chapter into each one of those chapters we can do content creator Crew And what we're passing here at inputs We can we can pass those things individually if we want to or we can pass the whole thing Um, if we pass the whole thing is going to be for method weird, but it might be okay So uh reg how are we doing on time?
+
+Can I keep going? Well, yeah, we we got it. We got to keep going a little All right, so let me just copy this and let me paste it in here And now this is gonna be the content creator Creator crew So now we have this other crew in here.
+
+Let's rename this as well. There's gonna be content creator crew In here, uh, we don't need this anymore And we can go to our agents and we're gonna say all right, uh Let's Create new agents That are now responsible for creating a specific chapter They should research the topic online find interesting angles and write the chapter using the interpolated context And they all you got with the following Information and then we can basically tell like this is what they're gonna be getting information And let's see how things are gonna turn out All right, this seems to looks good Let me approve this right away Boom So we have three agents content researcher a technical writer an education content writer. This feels good Now let's update it or tasks so Let's update the tasks To actually write to actually write the content now For For a given chapter Using the agents defined in agents We can remove one of those and I want to say they will have it Access to this let's make sure to interpolate a chapter variable So tasks Uh, let's make sure we interpolate interlain Interlain Uh Chapter Variable that will include all the This information Boom There we go So while it rewrites that I want to make sure in here I see it's trying to do some facing things Research Let's not do any interpolations in this one This should be good Oh, the interest is good if we can add interest in here, I think this could be interesting So learning style and interest All right This feels This feels Good All right, what about the tasks?
+
+In the tasks, let's approve it right away as well Uh I won't try to do anything Fancy about This Like trying to access the objects this I don't think would necessarily work So what i'm gonna do instead is i'm gonna basically say Chapter Chap Chap Chapter Information Information Information And we can do Just interpolated the whole chapter thing Consider how content and there we go I found this I found this way better Engagement strategies Boom And then we can do the same thing for the other ones So interpolate only chapter Equal Equal Equal In the same way we do above There we go All right, so it's removing everything just keeping chapter Well, the one thing though it just did for this one. So let me do everything below Boom All right So chapter information is in here with your chapter content this is good optimizing for learning combine the final All right, let's add chapter information. All right, this one get a little bit like a little bigger like we have a A few more tasks, but that should not be a problem Now we want to make sure to update this class to use the agents and Tasks And there you have it kind of creator crew All right updating everything this feels good All right All right Now what are we going to do is by the way one thing that we don't mention is what format we want this I would say make this a markdown a markdown file And what I want to do on here is No, I think this is good.
+
+I think this is good. We shouldn't need any of this as well So now we can import or new crew So we have our content creator crew And we are generating this for each of the chapters And what we can do is for the sake of just keeping things a little simpler is i'm gonna save here. So save result dot raw Not raw to Markdown file in Content slash there We go and we can create here a new folder.
+
+I'm gonna say content for now And there you go. We basically got the chapter name This is good. We need to interpolate the other things as well.
+
+Yes learning style interests Yes, yes, yes All right Like will this work? I don't know Brace for impact We did a lot in there You can see that when we ran our crew the first time it did work Like we got all this plans. So let's actually open because it saved that file that we asked it to Um, I hope so So where is this?
+
+Yes content plan And let's do json beautify There we go. So we have all the chapters introduction description learning objectives key concepts Technical content practical examples learning activity So you can see the plan is in here for all the chapters. So this looks good Now what we're gonna do is make sure that after the plan is generated and we are saving to this file We didn't even need to save it and we can drop this part eventually And you we actually call the thing that generates all the chapters So this should be good one thing that i'm missing though from uh, this crew is that they're not doing anything Like they're using only the llm knowledge I would love to use for example Creei tools And maybe serper so they can search online And maybe scraping like I think those are probably like the couple like easiest tools that we can use And then we can give these tools for some of these agents so they can find more relevant up-to-date information So maybe the content reviewer get them as well Um, and that should be okay for these but for the ones that are planning.
+
+I think they're even more important so the planner should actually use these tools and Outliner should probably also have like these tools accessible to them And there we go because i'm adding the serper to I do need to add an environment variable But I think I have already done this before when I copied down my environment variable. So that should be good Um, all right Let's let's give it a try. Let's see what happens again.
+
+We're doing we're doing a lot of things live here But i'm feeling optimistic. Are you feeling optimistic? I'm feeling i'm always feeling optimistic You're a better human than I am I will say like When you know obviously when you're building these things you want to kind of limit the amount of variables Right, but we we do have a lot going on But we do also have the ceo of crew.ai so i'm feeling optimistic I love that All right, so when I learned about nuclear fusion again learning style is practical Uh games and enemies and ai as well.
+
+Uh, let's see if like what's right up in there All right, our first crew we know it works. So let's do its thing One thing that you can see now it's using our tools Uh searching the internet nuclear fusion curse outline educational examples And there's a few contents in there from like k12 to institute of physics And now it's actually reading some of those websites So it's going on and kind of like trying to get information now searching for nuclear fusion curricula development examples Uh and has an issue outline So introduction the science of fishing real world Fishing popular culture and debates and perspectives This is good. You see this is what happens when you give like some extra tools the ability to search now It can go like all right.
+
+What about the debates like is this good? Is this bad? I have a lot of people say like we have a huge nuclear fish in the sky the sun Maybe you should use that so you don't know um And then subject matter now creates a description for each chapter talking about the key concepts The important in look at this up engaging activity explore the use of nuclear fusion in popular enemy series Like attack on titans.
+
+So if there any enemy fans right there like as myself, uh, this is very interesting. I do like that Uh, and for games, it's mentioning about uh fallout and the consequences of nuclear warfare So, uh, the very interesting one So it keeps on going and going generating all the chapters Uh, this should be good. I think this is the final agent now that actually creates the plan So if something is gonna break it's gonna break now between finishing the screw and kicking off the next one Where it's gonna like it's basically the the brand new piece that we put together.
+
+So Cross fingers, uh, I think I think this is gonna I hope this is gonna work I'm gonna say this is fun. Uh, I don't I don't get to do much coding like uh nowadays just because of How the business are going so it's fun to spend some time doing this now Especially live coding It's live coding. Yes I mean, there we go.
+
+Of course we had a problem that all the things were good But then uh in the method generate content Is string has no attribute chapters all right? So let's let's debug this real quick see if we can fix it Is on this form right here So if you look at this form is trying to loop this variable here And this variable is a json content. So even though it is json json for now in here is a string, right?
+
+So what I can do now is I can do Pydentic Um, so it's an actual object on our planning crew instead of saying out putting json I'm gonna say I want you to opt it pydentic for me And I think we we don't need to save this anymore into a json file I mean we can still save it but maybe now we need to do the the model dump json Um, but yeah, let's let's not not just do that for now I'm for the sake of running this faster. I'm gonna remove our tools like we know that they work So let's remove them So it's basically more straightforward this agents run a little faster And let's Rerun them And cross fingers. Let's see if it this one's gonna work now Uh, um Curse is gonna be again, uh nuclear fusion I'm a practical learner and uh anime games and ai All right, so crew now should be run faster.
+
+It's not gonna like spend so much time going over like the smaller details So cross fingers Okay Okay, now i'm really optimistic It's always like that right I mean for uh for the folks that have played around with like designs and everything It's like this is the point where you start to put underscore final underscore two And uh, and you're wondering like is two the final version But I think there's gonna be a good one i'm feeling optimistic on this one as well All right So this runs let me check that out All right, so our deployment is done So we should be able to update our zapier now So let's edit our zapier real quick All right, so, um, there is a catch hook that works still We're still calling our same drag test that fuse okay Let's make sure that this is working that I didn't break in so I can really retest time Uh, all right seems to be working Okay, now remember that instead of sending the email now we're getting an html at the end So there's a there's a service that I have used in the past called pdf co again I Is the only service that I could found that is able to trends like dynamically converge html to pdf So i'm gonna use in here just for the sake of using it and what you can do is you can get your output of your crew So the result and basically output it in as a pdf So i'm gonna say I want to know margins Uh, this was good. All right So let's see if it runs Mm-hmm Yes, there we go and on our recent now instead of like sending the this content We can basically say here is your report And we can attach the url continue publish publish And There we go. We have updated it now.
+
+So let's make sure that our crew is running accordingly. We Should be able to kick off a new one. So i'm gonna tag is this the one that we I think this is a new one isn't it anyone Let me make sure that we're using the right one in here.
+
+So the kickoff I want to add this app real quick. I want to make sure that we are refreshing this list I'm gonna choose another one real quick Let's find our gregg one reg test All right domain company name continue continue continue This is good continue continue continue and And well, we didn't change anything all right, this is good Let's try it out then domain is create.com company domain is create.com I guess what happens is or cursor Dynamic updates kind of remove the name the person's name from the interpolation That's okay. We just want to make sure this is running All right, it is running so this works So this now should work all the way from the get-go so let's Let's do a request boom Do we have a new run?
+
+Yes, we have a new run going on in here. Oh, no, that's not it. There you go.
+
+This is it All right, let's see how that goes while that runs We go back Ah Another error now is error in the generate content content expert So it's not finding an agent That is called content expert. I guess that's what we get from doing everything on Everything using cursor. So what happens is if you look at one of our tasks It is looking for a content expert agent But if you look at the agents, we don't have a content expert and agent So we can do a content writer on this one And the other thing is we want to make sure Make sure our agents in here exist on agents and There we go Just to make sure that there you go.
+
+There was another problem in there another one in here There we go. Now it's better and then in here, let's say let's make sure we are using the right Let's start we are Defining the right tasks and agents and then we can use the creator and the creator And there we have it So just to make sure because now we have like two crews I might have tagged the wrong files. I think that's what happened in there Yeah, you see I think that was exactly what I did So we don't need this context in here for now.
+
+All right Let's run it again. We go back to our zapier one So our zapier one It seems there's a few that are stuck Maybe is that what's happening in here? I'm going to go back to our We're going to go back to our zapier one We're going to go back to our zapier one So maybe this crew is running.
+
+Let's double check that on Cray I Get status Failed Cray output has no attributes benefit list again Silly me thinking that cursor is going to replace engineer so soon It's going to take quite a while so this is it we're trying to look for benefits list in What is the error? 98елю object has no benefits list And that's because we are looking crew output directly we want to do Py.dentic Output and we can do There we go Py.dentic Ah. Crewe output We replace everything with Py.dentic output and fix so nuclear fission practical enemy games and ai and then for our other one we just update we just update the prgs come in fix you push origin banging and then let's do let's trigger redeploy in there redeploy there we go all right so now we fix we fix both hopefully let's make sure that the things runs and that we get the final result i guess third chimes third time's a charm totally happens to the best of us man yeah i gotta say this is live coding right i think like to everyone's point on like how ai is evolving coding is still a very interactive process yeah right like uh definitely ai and agents and things like devin now and like other solutions they help a lot but um it's still like a lot of like just making sure that from going going from zero to one is very fast and getting faster and faster going one to ten is still very much like what traditionally has been yeah that's that has been my experience so far all right a similar error but now on the task side probably same thing i forgot to reference something somewhere so on the tasks i'm saying create a content outline i'm actually saying create kind of like and i don't have that task in here so all this context should actually be research chapter uh it should be write chapter content and compile final plan i think this is in let me just double check this is the right one this is the creator all right so compile define course plan complete structure plan now this this looks odd if you think about it it's the content creator plan the plan is the one where the tasks are about compiling the outputs in the compressive plan this should be actually right in the chapter so if you look at this we can say instead instead of a plan we want the final actual chapter on this one right a complete policy markdown all right this feels more this is great in content reviewer we have that agent yes we do do we have those tasks yes so we're using the research we're using the writer and we're using the review chapter content all right this feels good and this is our task so now let me make sure that we get our tasks tasks from the content creator i'll properly defined in here um all right so research research write writer chapter review review and then optimize optimize this feels good and then we can keep that name for now even though what's doing is actually writing the markdown and the context in here we don't need to pass it given that we're already passing in the tasks and let's kick it off again i think that's it only one way to find out only one way to find out how do you think about the content creator all right topic do you have another topic by the way other than nuclear session um sure what about seo seo what is your learning style you know me i'm visual visual and any interest i like games i think yeah all right games there we go all right let's see what what it's gonna be the plan for seo for a visual person that like games yeah now i'm curious to see what the plan is gonna be all right introduction to seo its relevance in gaming oh there you go uh keyword research and optimization on page seo fundamentals content creator marketing strategies technical essentials tracking performance how you feel about that as plan yeah i think it it makes sense you know makes a lot of sense i wasn't yeah i'm i'm i think it looks good all right well introducing concepts a couple use cases how fortnite effectively use seo to rank highly on gaming content and analyze legend of data breath of the wild i mean that's a killer game right there totally um then keyword researches using things like keyword planner semrush a hrfs that feels good on page seo again overwatch call of study that's interesting that's in two hollow nine another great game then technical results and seo performance directly all right seems seems to track then there is the final plan right there the whole json thing and it works generating content so now our content research specialist actually is getting all that object so you can see all the capture chapter information is in here the title the objectives like everything is in here it's always mashed together because kind of like we just jam the entire chapter like uh object in there we could make a little prettier and now because these crew we didn't remove the tools they're searching the internet so searching the internet finding information scraping websites there you go a bunch of website content that's kind of like just reading and researching further and coming up with the actual content so now it's the actual content writer you can see initial writing of what the topic would be overview key concepts technical content the practical examples learning activities there you go now i think we have uh the editor kind of like doing a review and again researching online scrapping a b pages like them the models are getting so fast now that it's even hard to keep up with everything that they're doing so there you go researching how technical visual learners like and practical and fun tips so making sure that it gets like some of like that uh that insight in there yeah learning gaming for education yeah it's going it's going out loud all out baby oh wow there we go all right so we should be able to see like and by the way this we're seeing all these logs because we're running on verbose mode so you can disable all that if you don't want to get like everything and kind of like the the stream of conscious of the models and everything got they're doing but uh if everything works out we should start to see uh files there we go populate right in here yep so it wrote the first chapter let's uh let's see let me actually remove this initial markdown codes here that it added there we go and then let's do markdown preview so introduce it to seo and its relevance in gaming the learning objectives the key concepts the cat know the practical examples what they have done learning activities we'll create infographic illustrating how search and gains works well that's going to be a tough one um assets methods success metrics this is good all right well i guess what we could do and we have done like this like um this kind of like flow before when you use for like high level content creation is you can go like way deeper on some of the prontists for the planning that's usually where most of the kind of like the optimization lies is making sure that the plans reflect like what is that what you're trying to kind of like go after like the the fact that he's trying to not use game as examples but actually focus on gaming seo is a little odd and it's not what we want so we could change some of the tasks and agents around that it's funny because i saw i saw that originally and i was like that's not what i want but then i was like actually that's probably a huge opportunity in like a niche um that like you know i've seen a million seo uh you know courses and content guides and stuff like that but i haven't seen anything specifically spoken to to video games yeah i gotta say definitely definitely sounds like a niche something that i can i think like people would really like uh do and you can see a difference in there for like specific industries on how they are playing some of this but uh yeah so now what what is what is happening there behind the scenes again we have a new chapter now talking about uh the keyword research optimization so we can double check what this one looks like uh where it is preview uh there we go so keyword research and optimization in gaming so introduction learning the objectives the key concepts explaining what is the keyword plan there what is the seam rush uh and going over a few others about search volume competition relevance um and then examples of flow charts activities engagement strategies success metrics how does this track with you someone that actually like uh that actually uh does care a lot about like seo i mean it's it's directionally right you know of course it needs to be optimized yeah it would have been insane literally if it didn't need to be optimized but i think like this is this is a this is a legit output yeah i think honestly a lot of like the optimization like what happens especially on the firstness parts like on the actual agents is on these agents and tasks like uh eml files it's where i can like you're gonna be like uh spending a lot of time like to make sure that you get the behavior that you want yeah and then when you get precision is more on the python files is where you spend the time like adding checks creating this python objects structures where you can use guard rails and where you can use collect before and after kickoff or where you can build flows to disconnect where we got like where you optimize for precision but uh in funny enough is a piece that we spend less time on just because we let ai write out our agents and tasks for us but usually you do can optimize a lot of this just by kind of like revamping some of it and uh and get something very good so uh another example of something that we have done in the past and that was pretty interesting is building a crew that monitors aws for us so aws where people host a lot of like their software and we had it to actually produce um like a markdown report at the end but in this one we spend more time describing like what exactly we need and this can like the level that you can get where you have an executive summary table of context introduction a very detailed analysis and you can have actual links you can add guard rails to make sure that these links are not like house nation so if for example is mentioning a link in here and you can click on that what you actually get is control traffic to resources pages yes there you go so you can actually have exactly the page that is a valid one that's really cool yeah that's really if you spend the time you can get amazing things like risk assessment matrix roadmaps um this is actually a demo that we're going to be pushing with aws in january so it's going to be like on their blog post and everything but uh this is kind of like the level that you can get if you're really double down on kind of like uh a lot of this all right hey we we covered a lot i mean time flew to be honest um i hope people stuck around like if you're listening to this and you're in in the deep end here with us like you know you realize you probably realize that i mean look at this look at the outcome that you can you could potentially get um but there's going to be zigs and zags along the way there's going to be errors there's going to be you know it isn't press a button and it automatically you know you have this agent force multi-agent you know ecosystem but it is press a few buttons zig and zag and and you and you get it out so um joe thank you for spending time with us showing us around bringing you inside your brain and and really how you think about uh this multi-agent world and showing us crew where could what do you suggest people do i mean i know you use crew but like what would you suggest people do if they want to get started in this world uh i would say if you were going to really dive into this uh i would recommend checking a couple courses that we have uh with andrew yang on deep learning ai so i can see the link so that you can put on the descriptions but uh there's a couple of courses the first one is is pretty good it's like very intro like from introduction it's like very for beginners all the way to kind of like start to building everything so if you do that we're going to step back all the way to kind of like what is an agent like how agent works what are tools what are llm so you can watch that and catch it up on that way and then there's a second course that we did there's very practical it's all about what we're seeing in companies out there um and there's an interview with the cto of gen ai on pwc on how pwc is using career in production and there's a few extra informations in there as well that you probably want to check it out so i would say those two like we have over a hundred thousand people that enrolled on those courses so i definitely recommend you to check it out cool we'll include that uh get your hands dirty and and of course like and comment and subscribe uh if you enjoyed this video and uh i'll see you in the next one joe i'll see you around see ya thank you so much for having me thank you later you

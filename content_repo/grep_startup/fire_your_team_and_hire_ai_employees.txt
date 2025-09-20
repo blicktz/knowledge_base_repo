@@ -1,0 +1,539 @@
+You are in for a treat. This guy has a platform for you to create AI employees, thousands of them that are running that could help you build your startup. Not enough people are talking about this.
+
+It's a really easy way to create agents. And he's the CEO, he's the founder. He just walks us through his brain, all the best practices.
+
+You're gonna wanna watch this entire episode, especially wait for the end. It blows your mind. I can't wait to see what you build.
+
+Enjoy. So I sent Flo a message and I said, hey, I wanna create a team full of AI employees. Can you help me figure out how to do that?
+
+And you said, you know what? I'll share it with everyone. So here you are.
+
+Yeah, yeah. Thanks for having me, Greg. Happy to jam and show how this works.
+
+Cool. So while you're pulling that up, just tell people what's happening in the world that allows you to be able to do this and why they should actually care about creating AI team members and AI automations. Yeah.
+
+Why you should care? I just think it's a thousand times better than a human. And it's just, it's gonna make your business more efficient.
+
+It's gonna make you grow faster. It's easier to spin up. You don't have to manage it.
+
+It scales infinitely. It's like elastic. So it scales up with the volume of demand and it scales down if you don't use it.
+
+It just continuously improves. Yeah, it's just incredible what's happening right now in the world. People are realizing, and I guess they realized that perhaps a year and a half ago with agents, but I don't know if everyone yet really understands what's happening.
+
+LLMs are not just good to generate text, generate copy or whatnot. It turns out LLMs like GPT-4, Cloud, and all of that can actually do work for you. And so I think, why does it matter?
+
+It makes a huge difference in your business. I think the business of the future is basically you can set up a team of 5,000 AI employees in a weekend. And that's what we're gonna do today.
+
+We're gonna do a live cooking session. You're gonna share your screen. You're gonna show up how to actually do it.
+
+So without further ado, Flo, take a break. That's great. Yeah, I guess I'll start with the end.
+
+I'll start with, I'll just show my Lindy account. So this is Lindy. This is what it looks like.
+
+I have a bunch of Lindys here on the left. This is very unfiltered. This is literally what I do.
+
+And this is how my Lindy account looks like. By the way, Flo, do you mind just zooming in a little bit? Yeah, for sure.
+
+Thank you. There you go. How's that?
+
+Yeah. Perfect. So the one Lindy I'm currently looking at is my meeting recorder, Lindy.
+
+I can't live without it. She just joined all my meetings. It's a bit of a crazy one.
+
+There's a lot going on here. But at a high level, it's pretty simple. It's like, okay, when a calendar event begins, you join the meeting, you record it.
+
+And then when you've got the meeting, you create a Google Doc with the meeting notes. You send me the notes by Slack. You send me coaching notes.
+
+That's pretty cool. I've prompted this Lindy here. You can see the prompt right here for the kind of coaching I want.
+
+So it's like, was I too confrontational? I'm French, so I have to look out for that. Or not confrontational enough.
+
+Did I not double click into any issue? But you can basically give any prompt you want at any step of these AI agents. So it sends me coaching notes.
+
+And then it goes on Slack, and it looks for channels in which to disseminate the notes. So the interesting thing here is, so for example, the coaching notes here, you can see it keeps going after it sends the coaching notes, and it also sends the notes to the team on Slack. But then if I reply to the email, you can see this branch here that goes after reply received.
+
+It picks up the workflow back at that point. And it's an agent. So it's got the entire context in mind.
+
+And so it can take the context into account as it takes this email that I just replied. I'll give a very concrete example. So I received this feedback from Lindy a few months ago, actually.
+
+I was on a call with a customer, and she gave me the feedback in her coaching. She was like, I thought your explanation was too technical. And so I was able to reply, and I was like, why did you find too technical about my explanation?
+
+And she replied back, and again, this is the part where it's an AI agent with the entire context in its context window. And here, I'm doing it again. She was like, ah, you said context window.
+
+Hopefully everyone understands what it means now. But the agent basically was in the meeting, and it sees my question, my follow-up question, about its question from the meeting. And it sees the feedback it sends me initially.
+
+So it's really this sort of long-living, intelligent agent that's actually performing tasks and understanding the tasks that it's performing. And that's why, you know, I saw on Twitter, someone say, isn't this just Zapier? And so the difference between Zapier, which is automations, and this is there's intelligence, correct?
+
+Yeah. There's a huge difference between an automation on the one hand, which is what Zapier is really good at, and an agent on the other hand. Right?
+
+And so, yes, I think the two biggest differences are going to be that, one, you can use AI at any point in Linde. So I'll give a super concrete example. Like, I have some investment properties in France, which is a terrible financial decision, and I receive these confirmation emails.
+
+I've put them on, like, the French Airbnb. And so I receive these confirmation emails. Like, hey, you just made 200 bucks because you rented your place on HolyDue.
+
+And I have a Linde right here. What she does is, okay, when I receive an email, which is a reservation confirmation, you go to these Google Sheets, and you append a row to the Google Sheet. And you can see here, the cells, each cell is a prompt.
+
+So I was like, okay, please extract from the email the day of the reservation. Extract the total amount of the reservation. And you'll notice, I don't have to, at any point, inject data from a previous step.
+
+Like, in Zapier, each step is an island. It's isolated. Here, it's an agent.
+
+It's an agent that is aware of the entire context of everything it did. And so if you want to do this with Zapier, you're going to have to write like an HTML parser. You may not be able to do it.
+
+It's going to be hard. It's going to be brittle. It's going to break the moment the HTML format changes.
+
+Here, I can just speak to my agent and I can be like, all right, please extract the number of travelers of the reservation from the email. Right? And it just works.
+
+Shh, don't tell anyone. But I've got 30 plus startup ideas that could make you millions. And I'm giving them away for free.
+
+These aren't just random guesses. They're validated concepts from entrepreneurs who've built $100 million plus businesses. I've compiled them into a one simple database.
+
+Compiled from hundreds of conversations I've had on my podcast. But the main thing is, most of these ideas don't need a single investor. Some cost nothing to start.
+
+I'm pretty much handing you a cheat sheet. The Idea Bank is your startup shortcut. Just click below to get access.
+
+Your next cash flowing business is waiting for you. So that's the difference number one is this concept of having this AI prompt anywhere in any field of any action. Difference number two is this concept I just mentioned of the fact that it's, a zap is a thing that's like once and done.
+
+A Lindy agent manages long-term tasks on like long-time horizons. And so, again, that means that you can have a conversation with your agent, whether it's by email, like that's the example I just gave, or by Slack, we have this other Lindy that joins sales calls and then posts the summary of the call in a Slack channel that's called Customer Discovery. And then it's really handy because, again, I can then go into the Slack thread and ask follow-up questions to it.
+
+So here you can see she, it's funny actually, the question that this customer asked was like, how do I make Lindy slower? Right? Because he wanted her to seem more human.
+
+And so I can just follow up in the thread and I'm like, oh, what did we reply to these questions? I'm curious. And boom, it's like this is the reply to the question.
+
+And here I can coach the teammate who was in this meeting, like in context, right here in Slack. So yeah, those are really the two differences. It's like AI everywhere and like long-lived workflows.
+
+Okay. And so I'm loving this, by the way, I'm loving this, but where my mind is at is great flow. You're really good at designing these really smart kind of workflows, these AI, you know, agents.
+
+How do I get started? Like, how do I know where to start? How do I design it?
+
+Like that to me is a really, really important step that I think a lot of people are going to miss, including myself. No, 100%. There is a little bit of a learning curve, but you know, you mentioned Zapier, you mentioned Make.
+
+Like, I think that the folks here who listen to us, I mean, most of them are pretty tinkery. They can figure it out. We have like a Lindy Academy.
+
+We have like a bunch of templates on this tool. But yeah, I mean, let me just show you, I'll create a Lindy right now just to give you an example. I'm going to create, a new Lindy, and I'm going to make it so that she, what's an example of a thing I want to do?
+
+I want to, when I receive an email that is very time sensitive, I want that Lindy to ping me on Slack, for example. And so I'm going to go Gmail, so it's just a trigger. When I receive an email, I'm going to create a condition.
+
+It's, again, that's what I mean by like it's AI throughout. So right here, I'm like, the condition is just natural language. So go down this path.
+
+If this email is urgent and time sensitive, okay? It's really that simple. It's like a small prompt.
+
+And here, what I'm going to do is, okay, at that point, you Slack, you send me a direct message, okay? The user, I'm going to enter my own email here, but even if I didn't do that, it would probably still infill that I want it to message me. And here, I can enter a prompt, and I'm going to be like, send me a message about this time sensitive email I just received with context about it.
+
+And again, that's what I mean. It's like, every step is aware of, what's the camera saying? It's like, it's a way of everything that came before it and the context in which it exists.
+
+It's aware of every other step that existed before. It can see the output of every other step that existed before. This is really pretty much it.
+
+I'm going to save this. And wait, sorry, how does it know that it's time sensitive? That's an LLM.
+
+It's just, so at any step, you can decide which LLM powers the step. And so here, it's Cloud 3.5 Sonnet. That's our default.
+
+It does an excellent job most of the time. And so it's basically the equivalent of taking the email, pasting it into a GPT or cloud and asking it, is this time sensitive? Cool.
+
+So basically, artificial intelligence. Basically. Yeah, exactly.
+
+And so here, I'm going to call this the sensitive time, sensitive email catcher or notifier. All right. And so now, I'm going to send myself an email.
+
+flow at Lindy, urgent. Hey, flow, this is urgent. Can you please give me a callback as app?
+
+Okay. And, okay, I should, let me, let's, let's wait and see what happens here. All right.
+
+So I am, I'm just checking if I've, everything is perfectly well set up. Why do I have, I already received an email about Elon Musk and I don't even know, I don't even know what it is. All right.
+
+Boom. So here, you can see it received the email. It's going to go through the condition.
+
+This email is urgent and time sensitive. And now it is sending me a Slack message. Boom.
+
+Elgent email received. You just received an email from Florian Cravello, subject, urgent, hey, flow, this is urgent. This appears to be a time sensitive matter requiring your media detention.
+
+Crazy. This is, this is a simple example. I'm going to make it a bit more complicated.
+
+And what I'm going to do is I'm going to do after reply received. So now I'm going to be able to chat back with this Lindy in my, in my Slack and I'm going to enter an AI agent. So the difference between these steps and an AI agent is like here, these steps, I am telling Lindy when to do what.
+
+With an AI agent, I'm telling Lindy, you figure it out. And so I can give her a prompt for like some guidance about what to figure out and so forth. And I can give it skills, which are basically actions it can invoke at any point in any sequence.
+
+And so here, the skills I'm going to give it, suppose, for example, I want it to be able to reply to the email. And I also want it to be able to create a calendar event. I'll keep it simple for now.
+
+I'll just keep it there. I'm not even going to give it any guidance because I think it's pretty, it's pretty simple at this point, like what it's going to do. And I'm going to do a new, a new example.
+
+So flow at Lindy.ai. I'll just say, hey, flow, can you give me a call back to talk about the Hawaiian pizza? I don't know, this is the first thing that comes to my mind.
+
+Boom. I think Gmail takes like 30 seconds to send emails because you can undo. All right, just received the email.
+
+Oh no, this is something else. Okay. Okay.
+
+All right. This email is urgent and time sensitive. And again, you can see here, this is very unlike the sort of mechanistic automation.
+
+It's an agent that actually understands the email. You can see here, the sender is requesting a callback regarding Hawaiian pizza. And now what I'm going to do, let me just stop screen sharing real quick and switch to my Slack.
+
+Tell him, I'll call him right away and send him a 15-minute calendar invite for 3 p.m. Oh, maybe it doesn't take the thread reply here. I actually kind of like not editing it because it just shows realistically.
+
+Yeah, this is what you're going to run into. These are the problems. We're going to troubleshoot it together.
+
+People come to other podcasts that are so, so, so edited here, but we're in it together. Okay. So I think here what's going on is because it is a one-on-one message, it's sending it as this Slack bot.
+
+So I think because of the Slack API or something like that, it can't receive the reply. So what I did is exactly for this, I have a channel that's called like Flow and He's Lindy. And so what I'm going to do is I'm going to, I'm just going to, instead of making it a one-on-one message, I'm going to make it a channel message.
+
+So Flow and He's Lindy. And I'm also going to give it the ability to reply back. I had forgotten to add this skill here.
+
+And I am going to do it again. Urgent. Hey, Flow, can you give me a callback?
+
+This is pretty urgent. Let's talk about Hawaiian pizza. All right.
+
+So it sent me the message in Slack. And I'm going to tell him, I'll just go back to what the Slack bot, what it does to Slack bot previously. So all the stuff that you're doing, this is stuff that you would do with a human being.
+
+Like I do this with my EA, for example. Exactly. Yeah.
+
+Well, often compared to like an EA. I use Lindy basically as my EA. So here you can see, boom, she got my message.
+
+She sent a reply in the email. So it's like, I'll call you right away, and I'm sending a calendar invite for 3 p.m. today.
+
+So you can see she, again, she understands. She did not copy paste what I said. I was able to be like, tell him I'll call him right away and send him a calendar invite.
+
+So she replied to the email. I can probably see that in my inbox. Kind of don't want to share that.
+
+And then she replied back on Slack, and she was like, I've sent a reply and created a calendar invite for 3 p.m. today with Google Meet link. And I can see that again.
+
+It's probably, where am I? It's right here. She created a calendar invite, and she named it Urgent Call Hawaiian Pizza Discussion.
+
+Again, it's an AI agent. It sees everything that just happened. It understands.
+
+I received an email. Flo told me to do this. It can manage multiple threads.
+
+You can see here it managed like a Slack conversation on one side and like an email conversation on the other side. Yeah, so that's, I mean, you tell me, Greg. Like, I don't know.
+
+Like, does this seem very complicated? I'm actually eager to hear feedback. Not really.
+
+I think for me, what I'm probably going to do is think about like, what are all the jobs to be done? Like, you know, the jobs to be done framework that I need and that I do repetitively. And sort of just like write a list of them and then come into, let's say, Linde and just start like kind of just messing around.
+
+Yeah. And I think exactly the job to be done framework, you're nailing it on the head because, and this is a more advanced capability, but we have the capability to send messages to have Linde's work together. So, for example, suppose, this is much more advanced, but I'm going to create another step here that's going to be like send a message to another Linde.
+
+And let's say that I'm going to create a new Linde right now that is an expert in creating Google Docs proposals. Okay. It's really like, it's like object-oriented programming for agents.
+
+So I'm going to create this proposal writer Linde. And so today being summoned by another Linde is basically it's a trigger. So you've got to create an agent message received trigger because you're basically being summoned by another agent.
+
+And so what I'm going to do is I'm going to, I am going to perform an action and I'm going to create a Google Doc with a proposal. So Google Docs creates the document. I'm just going to create it in my drive.
+
+And here I'm going to be like name this yyyy.mm.dd proposal for client X. Replace the first characters by the actual date. I'm going to leave the typo just for the fact of it.
+
+Just to show like this is the glorious new era of computing it's like I can talk to it in English and I can talk to it in broken English and it just works. And here content is like write a proposal using the instructions that were given to you. Yeah, like add like multiple sections about pricing and terms and all that stuff.
+
+I'll just like in real life you would really flesh out this prompt depending on the proposal you want to add. And now I'm going to get it to talk back to the agent that summoned it. So we have like tell the agent you're done and send it the link to the proposal you just created.
+
+All right. I'm going to save this guy. I'm going to go back to my other agent and I'm going to tell her you see like the proposal right to Lindy now appeals here.
+
+And I'm going to be like, please write a proposal for person X about topic Y. Okay. And so here you can see an AI agent is an interesting step because it keeps looping.
+
+Like you give it a goal and then it's like I'm going to keep doing my thing. I never really pass the button until something is true. So it's almost like a wide loop.
+
+And so here I'm going to be like, if you have to write a proposal for the client, then you just take this off ramp, if you will. And here, so now it's going to do that. I'm going to rename this guy.
+
+It's like delegate to proposal writing agent. And I am going to, so once it receives the reply, I'm going to loop back to the agent here. And probably it's going to know what to do at this point.
+
+It's like, okay, like I got to write a proposal. I'm delegating this to this guy. This guy's going to write the proposal and then this guy's going to get back to him.
+
+And then probably like this guy is going to like send it. Okay. So let's do it.
+
+I am going to send a new email. So Flo at Lindy proposal. Flo, this is urgent.
+
+Can you please send me a proposal ASAP about the $10,000 Cybertruck, $100,000 Cybertruck. Sorry. Boom.
+
+Quick ad break. Let me tell you about a business I invested in. It's called boringmarketing.com.
+
+So a few years ago, I met this group of people that were some of the best SEO experts in the world. They were behind getting some of the biggest companies found on Google. And the secret sauce is they've got a set of technology and AI that could help you outrank your competition.
+
+So for my own businesses, I wanted that. I didn't want to have to rely on Mark Zuckerberg. I didn't want to depend on ads to drive customers to my businesses.
+
+I wanted to rank high in Google. That's why I like SEO. And that's why I use boringmarketing.com.
+
+And that's why I invested in it. They're so confident in their approach that they offer a 30 day sprint with a 100% money back guarantee. Who does that nowadays?
+
+So check it out. Highly recommend boringmarketing.com. So while that's loading, sending proposals.
+
+So we co-founded a few agencies. And in the agency world, sending proposals is one of the biggest bottlenecks. Yeah.
+
+So for anyone who has starting a service business, any level of service business, having something like this, that sort of just streamlines your proposal process, especially for like smaller deals, maybe not like your huge Fortune 500 deals, but for your smaller deals, super helpful. Yeah. Yeah.
+
+Okay. So you can see it sent me a Slack message. I spill my instructions.
+
+This guy wants a proposal. I'm like, yeah, can you go ahead and write a proposal and send it to him, please? Okay.
+
+Now this is interesting. So you see it's taking the up ramp. It's delegating to that other Lindy I just created.
+
+So I'm going to switch tabs. I'm going to go here. She received this message right here.
+
+Oh. Oh, I know what's going on. It's because this Lindy does not even have a way for me to message her.
+
+So I'm just going to create that on the side. This is a bug on our side. I'm just going to create an empty guy right here.
+
+So this guy is actually alive. It's just like a display bug. So it's creating the proposal right now.
+
+I'll show you behind the scenes. We have this debugger that's not really available to anyone else. Okay.
+
+I'm just going to put it in the end of the video. I think there's a bug on my side. I think there's some bug on my side.
+
+I think there's some bug on my side. I think there's some bug on my side. It's going to be a pretty beefy document that it's trying to create.
+
+Which makes sense. I mean, if you ask someone for someone, meaning a human being for a proposal. Yeah.
+
+It's not going to take a few seconds. It may take a minute. Yeah.
+
+Yeah. I'm going to kick it off again just in case. Write another proposal, please.
+
+Yeah. So this is more like the generic message we display, like we're experiencing high demand. This is not the case.
+
+It's just like when a task takes a long time, this is what we show. Boom, boom, boom. Where is this other Lindy?
+
+It's here. Yeah. So you see here, it's like spinning up another agent.
+
+Yeah. I think this Lindy was tripped up because he did not even have a way to talk to me. So it was, it was being confused.
+
+So while this is loading, would you say it's a good idea to start with just like regular Lindys before having, like if you're just starting out, it's your first time ever, you know, doing anything like this, start with a regular Lindy and then eventually kind of graduate to the Lindy talking to Lindy? Is that sort of what? Yeah, 100%.
+
+Like Lindy talking to Lindy is a beta. It's more experimental. It's like a very advanced sort of feature.
+
+Yeah. So I'm going to, it is creating the document right now. Again, it's just taking a very long time.
+
+So in the debugger, we have a little bit more information. I can see it's just, it's just taking a very long time to create a document. Because it's like a whole proposal.
+
+And it may even be running out of tokens. Yeah, especially since I told it like, hey, include a whole section about X. Like this is probably a bit too ambitious.
+
+Add multiple sections about pricing and terms. I'll just go like write a short proposal. Like one page max using the instructions that were given to you.
+
+It'll end up like working. I'll just take a long time. We can also move on.
+
+I can like go back to this once it's done writing the proposal. Let's do that. Yeah.
+
+What other use cases do we have? Well, so like the meeting scheduler is like a very big one. Again, because it keeps this entire context in history.
+
+What I do is I have this Lindy meeting scheduler. This one is actually really simple. It's just an AI agent.
+
+And so I gave it, so in the settings here, you can have a global prompt. So I just gave it like a very long, I just kept adding to this as like, hey, like always sign your emails with Lindy. Like, you know, if I didn't specify a duration, it's still the minutes and so forth.
+
+You don't have to do that. Like we have a template that's very opinionated that's got all of that. I live in Lindy, so like my Lindy's all very custom by now.
+
+And so the way it works is I just, this is an example right here. These guys reached out. They're like talent managers.
+
+They want to try Lindy. Like, ah, Flo, can we meet? I'm like, sure.
+
+Lindy will help us find the time. So you can see she looks at my calendar. She finds some times.
+
+She replies back in the thread. She's like, hey, how is Monday at 9.30 or Thursday at 2 p.m.? So she sends a few availabilities.
+
+And then she sends more availabilities. At some point they reply. And then she sends a calendar invite.
+
+And that's it. And, oh, look, actually, this is a good example. Like, this was unplanned.
+
+Like, this is her playing on hard mode. So they changed their mind. So she sent her a time.
+
+And then they're like, sorry, we're unavailable then. Can we aim for the following week? And so what she did, look, she deleted the calendar event.
+
+She looked for more times for the following week. She sent more times. Like, okay, how is this time instead?
+
+And it's like, yeah, Tuesday sounds great. And boom, she sends the new time. And that's it.
+
+So, yeah. I mean, again, that shows if you had to do this with any other automation solution, frankly, I don't even know how you would do that. And like, I think this shows like a pretty good illustration of the difference between an automation and an AI agent.
+
+Do you want to show one, while we're still waiting, do you want to show one last use case that people could use Linde for? So we're currently looking for this designer. And so this one looks very complex.
+
+But again, like once you get the hang of it, it's basically just like add nodes and branching and conditions, right? And so what I did here is like, okay, we're looking for a designer. I'm going to send you random ass information about designers.
+
+It could be I spend an embarrassing amount of time on Twitter. So like most of the time it's going to be a Twitter link. It's like, ah, I really like this guy's work.
+
+I just saw him on Twitter, right? Sometimes it's going to be a portfolio. Sometimes it's going to be just a name.
+
+Sometimes it can be anything, right? And so you can see at the very root here, it's like, what did I give you? Did I give you a website, an email address, a LinkedIn link?
+
+And here its job is basically, hey, and you can see this is why it goes on this like site quest here. There's like multiple branches, like find the email address. So I have a Google Sheets where like I already log a bunch of email addresses.
+
+But if it's not there, then there's going to be an AI agent here. And again, this is the beauty of AI agent. I'm just giving it a high level goal.
+
+Like browse for a bit. If it's a Twitter link, maybe it's there. Look for the portfolio and give up after four attempts.
+
+Like if you've, because sometimes AI agents get stuck in the loop. They go on like wild goose chases. Like don't try for too long.
+
+And so I gave it an off ramp here. We call those exit conditions. You give up after extracting more than four web page contents without finding an email.
+
+Okay. And so super concrete example here. Let's see this guy, for example.
+
+So like I said, I sent her a Twitter link. She's like, okay, this is a website. I'm going to look into Google Sheets.
+
+I could not find an email there. And then you're in the AI agent world. So what she's doing, it's like she's extracting the Twitter link.
+
+And she can't find anything on the Twitter link. She's like, okay, well, I'm going to do a Google search for this guy followed by design your portfolio. I did not tell it to do that.
+
+Literally my instruction was like browse for a bit, I guess. Then I guess on Google it's finding a Behance portfolio. Couldn't find an email there.
+
+So basically there is another off ramp for the AI agent here that's like you were able to find an email on one of the pages. So basically it just keeps looping. That's why there's these blue arrows here.
+
+It just keeps looping until it finds the email. So, okay, Behance can't find it. Another Behance can't find it.
+
+It's basically doing the same as you would do on Google. It's like, okay, you've got a bunch of search results. Click, click, click, click.
+
+Is it here? Is it here? Is it here?
+
+Oh, there's another one here. Jubio.fr, brand and product designer. Oh, this is the same guy.
+
+You can see it's like the same Twitter handle. And I was able to find an email. And again, beauty of AI.
+
+It's like his email here, I don't even know where it is. But sometimes it's people, you know, they spell out like dot com, D-O-T-C-O-M in order for like buts not to see them. Well, jokes on them.
+
+Like now it's AI all over it. Right? Even if it's like that, like sometimes they write like, oh, my email is my name at Gmail.
+
+Well, the LLM is going to understand that just fine. You know? So now, okay, it found the email.
+
+It's going to check if I reached that before. And it does that by looking at my ad box. No, I did not reach that before.
+
+I'm going to send an email. And you can see after that it waits. And then it sends a bunch of reminders.
+
+I think I programmed this one to send like three reminders and then give up. But you can make it like send as many reminders as you want. This, you know, this gets me thinking that not only could you use Lindy to like make a scalable business on way less employees, but couldn't you build a business around Lindy?
+
+Meaning, couldn't you create the design recruiter and just like cold call, cold email using Lindy? You know, say, hey, like, are you looking for designers? I'll give you every single day, like email, three emails of high quality designers.
+
+One thousand percent. So you can see here. And again, especially once you get your Lindy to work together, you basically end up with like an entire team of Lindy.
+
+And yes, you could build, and that's our vision. Like you could build an autonomous company with Lindy. So you can see here, for example, I have this like lead generator Lindy, right?
+
+So I'm going to ask it. I want five product designers who work at Zapier, for example. I don't want to hurt my friends at Zapier.
+
+But so it's going to kick off the search. And I think this one, I've asked this Lindy, hey, once you found people, I want you to add them to Google Sheets. It's just more convenient for me to review them there.
+
+Even if it doesn't add them to Google Sheets, it's just going to give me like a markdown table. All right, so it's giving me a Google Sheets. And that's going to talk back to me.
+
+It's going to be like, I found these people. And I guess we're going to see who she found. Oh, I know.
+
+I know some of these people. So I'm going to click on their LinkedIn links right here. And I think there's a problem with the scrolling, but I believe there's more information here.
+
+These are personal. No, they're like Zapier emails, which kind of sucks. Yeah, these people, director of product design, design at Zapier, product design at Zapier, director of product design, product design at Zapier.
+
+I could ask you, I'd love to get some, is there like an AI agent here in the end? There is an AI agent. The reason I'm checking is because if there isn't an AI agent, I can't really chat.
+
+I can't really continue the conversation because she's basically done. But here there is an AI agent. Like, hey, did you get any personal emails too?
+
+This is like a cheat code. Oh my God. I did not even, you're seeing this as live as I am.
+
+Like, I did not even ask her to. And again, it's the beauty of agents. It's like, she's like, oh, fuck.
+
+Yeah, sorry. I guess I'm going to update the spreadsheet. Yes, I found personal email.
+
+I've added them to the spreadsheet with a new column. Here they are. But this one, I couldn't find an email address.
+
+So anyway, it's funny that you're offering that as an example, like the recruiting company. And just this morning, I was on a call with, there is a company right now that's being formed that is creating a recruiting company on top of Lindy. And they've created, maybe I think this is like our most advanced use case.
+
+They have Lindy's that I've never seen anything like that. They're really, really pushing the limits of the product. Yeah, I mean, in the limit, it's going to be one dude.
+
+Well, there happened to be two, but it's going to be one dude and an army of AI recruiters. And that company can scale infinitely with compute, basically. It's just with LLMs.
+
+Right, because now I can take these designers. I could very well hook up this Lindy to my other Lindy. I'll do that right now.
+
+All right. I was going to ask you to do that. Let's do it.
+
+I'm going to get this guy. Let's see, because now I'm, okay. So this is going to get even more complicated because now there's a send message of an AI agent.
+
+So there's like a delegation inside another AI agent. But, and why is she asking me to authenticate them all? I'm already authenticated.
+
+Okay. I don't really want her to send emails to these people though. So what I'm going to do, this is sweet.
+
+It's like a really live demo. I am going to do this initial outreach. Oh, it is all these.
+
+So you see, I have this toggle here that's like ask for confirmation. Meaning you just show me the email before sending it. Don't send it immediately.
+
+Okay. So I'm going to go back to this guy and I'm going to say, I'm going to do the off-ramp here because I just think it's going to be like so much more reliable. Oh, and I guess, I think this designer recruiter does not have an agent trigger.
+
+Okay. So designer recruiter, add an agent trigger. So now she can be, now other Lindys can talk to her.
+
+I'm just going to hook up this guy right here. I'm going to save him. And now I'm going to go back to my lead gen, Lindy, and I'm going to go like.
+
+It's effectively the same. So what I'm doing right now, so you see I did this skill here. Okay.
+
+Another thing I can do is I can create instead an exit condition. I like doing that better because it gives me a little bit more control because when I add the skill, I have no control over any of the parameters that are passed to this skill. And so I'm praying the LLM gods that she'll do the right thing.
+
+And for some reason, designer recruiter is right here. And so text, I'm going to tell it the name of all the info you have about this designer. And I'm going to go right here.
+
+And so here it's like if the user is asking you to reach out to one of the designers. All right. And now I'm going to go back here and I'm going to tell her, reach out to Chase, please.
+
+So you see she's taking the off-ramp I just defined. She is hitting up my, this is cool. So she's hitting up my designer recruiter.
+
+I'm going to go over there. And again, to me, that's the business of the future. It's just you've got your army of 2,000 lindies on the left and they just do all sorts of stuff all day.
+
+And you just go and look at what they're up to. All right. So she kind of screwed up here because it's like she says it's a LinkedIn link.
+
+But in the end it works. It doesn't matter. She's prospecting again.
+
+She checks if I've reached out before. I have not reached out. This is so cool.
+
+So, okay. Yeah. I haven't reached out before.
+
+And then she's like, look, she's apologizing for reaching out to like a professional email. Sorry for reaching out to your work email. In my experience, few companies ever really monitor recruiting emails.
+
+But still, no, they can feel a bit icky. Who's Chase? Do I want to hire Chase?
+
+Yeah. Why not? Yeah.
+
+He looks horrible. All right. You know what?
+
+I'm going to cancel because I want to reach out to his personal email. Especially since I have his personal email, I should just do that. Yeah.
+
+Yeah. Does that give you a good idea? Yeah.
+
+That's amazing. I love that. That's hilarious.
+
+Cool. Is the proposal finished? Should we check it on it?
+
+Yes, it is finished. Okay. So now she wrote this Google Doc.
+
+Let's see what the Google Doc looks like. Damn. Okay.
+
+So executive summary. Vehicle specifications. Base cast.
+
+Base cast. Base cast. Base cast.
+
+Base cast. Base cast. Base cast.
+
+Base cast. Base cast. Base cast.
+
+Base cast. Base cast. Base cast.
+
+Rel-, Cost Breakdown. L-10ed range battery a thousand dollars the arms didn't quite... I mean, look, it's an LLM, so LLMs are going to LLM, like they're going to fill in the blank, like given, like how few, how little guidance I've given it.
+
+Okay. So then it got back to the time-sensitive email notifier, and itرضives the message back, you see, so it节ives the, this message back, it send it in an email. Hi, Florent have prepared another proposal for the sable truck.
+
+And then it kept me posted on Slack. So now, oh yeah, because I asked for several proposals, like she created several proposals. So both of them ended up going through.
+
+And so now if I go back to my email, yeah, so because I asked her to create two proposals, like she just received two proposals. It did take a good amount of time, didn't it? I sent this at 2 p.m.
+
+Yeah, it took like six minutes, yeah. Not bad, not bad. And is it possible to have multiple Lindys running at the same time?
+
+Like what if I wanted to get 10 proposals out between two and two of six? Like, oh yeah, it's fully parallel. Okay, it's parallel.
+
+I mean, we have customers who use us and who have like literally multiple thousands of tasks per day. Oh wow. So it's just like their account is crazy and you can see like boom, boom, boom, boom, boom.
+
+It's just like a ton of tasks, a ton of Lindys active all the time. Yeah. Yeah, and again, to me that's the beauty of it is like, so we have an e-commerce customer.
+
+He's using us as, he's basically using Lindy as his customer support agent. And he sells like protein powder and like dietary supplements and stuff like that. And is it like, it's not Cyber Monday, it's like Black Friday that for some reason is like a big day for him.
+
+I don't know people buy dietary supplements on Black Friday, I guess. And it used to be for Black Friday, he had to like staff up his team or basically just accept that like operations would be absolute chaos. And like his, I forgot the name, there's like a KPI that people use for like the average ticket handling time or something like that, like would go through the roof.
+
+With Lindy, he's just like, hey, if you receive an influx of 500 tickets in five minutes, you're going to have 500 Lindy. It's just like cloud, it's like a serverless cloud computing. Where it's just like boom, boom, boom, boom, boom.
+
+You just see like a bunch of tasks that handle all at once and you pay like more credits in consequence. And then if you receive no credits at night, like you don't pay, like you pay for humans to like to do all their thumbs, just like you're paying nothing. Beautiful.
+
+I mean, dude, this is, I'm going to have some fun tonight. I'm just going to create a bunch of Lindys and sort of, I think for me, like I was saying, figuring out what the jobs to be done are, repeatable tasks, create, you know, step two is create those Lindys. Step three is then, okay, Lindy to Lindy and just see how I could start automating some stuff.
+
+This for me is really exciting because I don't want to create a company of thousands of employees. You know, to me, I like small teams and any way I can automate some of the not so fun stuff, I'd love to. And then I just think that there's probably an arbitrage opportunity right now because not everyone is doing this.
+
+So, you know, thank you for sharing with us. And, you know, I guess I'll ask people to, I hate asking, but like, comment, subscribe. That's what's going to get this video seen by millions of people.
+
+And Flo has been very generous with his time. So Flo, where could people, you know, start creating Lindys and get going? Yeah, you just go to lindy.ai, you can sign up.
+
+So we do require payment information to sign up, but like, we don't take any money. There's like a seven days free trial and you can cancel at any time. And yeah, I mean, you can reach out to me at any point, like go to like email me at flo at lindy.ai.
+
+It may be a Lindy responding, but yeah, you got to hear from everyone. And then people sometimes ask me when I like show tools like this, they're like, oh, Greg, you're sponsored by Lindy. It's like, no, like I literally just reached out to Flo and was like, hey, come show my audience how to do this stuff.
+
+I just want, I think that if you, you know, you get this information, you're going to create really, really interesting businesses. And I can't wait to see what you build. So happy building everyone.
+
+And Flo, I'll see you next time. Thank you so much, Greg. Later.
+
+Later. Later. Later.
+
+Later. Later. Later.
+
+Bye. Moscow. ra

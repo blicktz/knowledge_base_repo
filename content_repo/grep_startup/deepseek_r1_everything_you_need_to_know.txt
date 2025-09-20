@@ -1,0 +1,501 @@
+Ray Fernando on the pod. He's a 12-year ex-Apple engineer. He streams AI coding.
+
+He's building an AI startup in real time. I needed to have you on because what are we going to talk about today, Ray? Today, we're going to talk about prompting.
+
+We're going to be specifically prompting with the new reasoning models with DeepSeq R1. There are a lot of caveats as far as these models because they're now able to think and reason. What that can do is can even lead to superhuman capabilities.
+
+What does that mean? These models have now become so advanced. This specific one from DeepSeq is out of China.
+
+And what that allows you to do is basically they've made it open source so that it's available for us to study. But it's apparently also on par with chat GPT's like O1's reasoning models. And why it's taking the world by storm is because the fact that it's also free to use on their website.
+
+So deepseq.com. And when we say free, there's also a little bit of a caveat if you don't really know. So I just want to also cover a little bit of the architecture today and explain kind of what you're going to get into if you use something like DeepSeq.
+
+And then maybe how you can also run this in something that can run like in a container like in North America or in some other area because your data is really important, especially if you're doing anything for business. And then also the third kind of secret bonus there would be how to actually run this locally on your machine so you can get the capability of these models and run that locally for your own private businesses, whether you're a lawyer, you're a doctor or whatever. There's a lot of different implications that you probably want to look into.
+
+So I think that this episode is going to be super helpful if you're even just beginning and you don't really know some of the advanced stuff or no code. That's OK. It just takes learning English or using English to describe these things, to get the output and the intelligence of these models to do some really cool stuff.
+
+So I'm pretty excited. All right, let's get into it. Cool.
+
+Excellent. To start out to use these models, you have a couple of options and one is going directly to DeepSeq.com. And this is actually currently hosted in China.
+
+So a little bit of background here is that your computer is here. Like, for example, I'm in North America. And if I go to DeepSeq.com or download the app from the App Store, the app will actually be talking to a region over in China.
+
+And for what it may be, whenever you send your data over to another country, they have their own rules and laws and regulation. So I would be very careful as far as anything you put into the system, as far as if you have any sensitive data, because it would not belong to a region that you may live in or have control in. There are other alternatives which we're going to cover, which would be using WebUI and going to these different API providers like Fireworks or Grok.
+
+And then we're also going to do something like covering running something locally on your machine so it doesn't go out to any of these providers. And you can even run this if you're flying on a plane, which is really exciting. So as an example for DeepSeq, we're just going to do this because this is something that's currently public information and I don't really mind having this stuff sent out.
+
+So as far as prompting, one thing that I frequently do is I have a live stream and I basically transcribe my videos and stuff. So I basically, you know, I made a little app that will transcribe videos and I just take my live stream here and just run it through the transcriber there. And what it will do is just generate transcripts from the video and it usually does it pretty fast.
+
+It processes on my device and then it sends it up to Grok for the endpoint. So when it's done, it looks basically something like this and you're able to copy this transcript and put it into something like DeepSeq if you wanted to. And so in order for you to use the model, what you can do on DeepSeq.com is to just go ahead and click where it says DeepSeq.
+
+So when it turns blue, that means the DeepThink is enabled and that means it's also there. And you can, if you want to enable web search, you can do that. So we can probably do that for the next prompt here.
+
+So I paste in my transcript here, I hit shift and I hit enter a couple of times. And so what we can do is give it additional instructions for it to do what we want to do. And one of the things that I like to do is I actually have built a little prompt that I'll actually share with y'all so that you can actually do some analysis and generate a blog post of a transcript.
+
+And so that is actually located here in my little Notion thing. And so one of the things I have is we're going to cover how to do some of these prompts and stuff. And I'll actually show you how you can generate some of these advanced chaining prompts because this will really take advantage of these models to think through all of that text and do some work on our behalf.
+
+So this is really, really cool. It's basically like hiring an admin to go through all of your stuff and make things for you. So we're going to go ahead and hit submit.
+
+And when we do that, I will say, you know, I wouldn't put a tax return on deepseek.com. It's not the type of thing I would put on. So, you know, you do want to be a bit wary of what you're putting on when you're on deepseek.com.
+
+Now, I was playing with perplexity earlier. And perplexity actually has some of these models built in, but it's hosted in the United States of America. So that's a bit different.
+
+That's correct. And you may want to ask your app providers what they do. One of my favorite apps for coding is actually Cursor.
+
+And I asked them, hey, where do you have your deepseek model hosted? And they told me they use the Fireworks API. And that's, you know, actually not in China.
+
+So that's great. So it's like, okay, cool. That's awesome.
+
+And they're using the full model. Quick break in the pod to tell you a little bit about Startup Empire. So Startup Empire is my private membership where it's a bunch of people like me, like you, who want to build out their startup ideas.
+
+Now, they're looking for content to help accelerate that. They're looking for potential co-founders. They're looking for tutorials from people like me to come in and tell them, how do you do email marketing?
+
+How do you build an audience? How do you go viral on Twitter? All these different things.
+
+That's exactly what Startup Empire is. And it's for people who want to start a startup but are looking for ideas. Or it's for people who have a startup but just they're not seeing the traction that they need.
+
+So you can check out the link to startupempire.co in the description. So these models have these parameters that you may hear of. And like, you know, like the really large parameter model, like 600 billion plus parameters, just means that it has more intelligence to leverage.
+
+And it tends to take longer in its thinking. But the results are really, really, really great. And some of the models that will probably run locally on the machine a little bit later, they're going to be like distilled.
+
+So you just basically take the essence of it. And then those models basically are going to run. They run a lot faster and they're just as efficient.
+
+But they may not think as long or they may not give the results. And it's really up to you to try out, which I highly encourage. So one of the problems is that sometimes the server is really busy.
+
+And that can happen because right now it's so popular. And I probably after the publishing of this video, it'll probably be even more popular. So you can hit this little pencil and you can hit send again to try to resend it.
+
+And so that's kind of where I thought, well, if I'm sending this over and there's a bunch of reliability issues, why don't I try to do something like, you know, that I can host my own or just hit the API themselves? If cursor is doing that, why can't I do it as well? So I can actually show you a technique for how to do this so you can hit the API and so you don't send your data to China.
+
+And that actually involves using this thing called Open Web UI. So I can show you that. So while this is thinking if it even returns the results or does anything here, we're going to go ahead and pop on over to the other side.
+
+So on the other side, we're going to go to here. And so I have an instance of what's called Open Web UI, and it looks very similar to like a chat GPT. And to get this set up, I'll probably go through a little bit more details, but I'll just go ahead and show you what this looks like.
+
+So in here, I have the model selected. I can go to Deep Seek. And so what's great is that you can connect to an API provider and I'm using Fireworks AI.
+
+So Fireworks AI here is currently hosting Deep Seek model and they allow you to use the model just by, you know, using the getting an API key and then putting in the exact model string and so forth here. And so from here, if I go to the Open Web UI, I'm able to select them and say, OK, this is my Deep Seek account. I'm going to go ahead and just paste the exact prompt that we had, paste it in with my transcript and everything here.
+
+And I should be able to get everything out. So let me just double check here that I got everything. So it's still timing out here.
+
+Yeah, server is busy. Try again later. So, yeah, that's not fun.
+
+So what I'm going to go ahead and do is scroll to the top and hit this little copy button. And then go over here. Just make sure I put everything in there.
+
+I have the whole transcript. Yeah, so the whole transcript here. And so what's going to happen here is when I hit send, it's going to send this off to Fireworks AI.
+
+And what's great about this thing that's actually running in this Open Web UI is that it's using the API and it's not actually sending the data to China. So just for as it's doing its thinking here and showing us what's going on, I'm going to go back to overlay this model of our data in our container and kind of show you what this is looking like in the background. So here in TLDraw, we actually have our Mac and PC.
+
+And so I used Web UI here and I'm actually using the Fireworks API. So I'm going to the cloud and this cloud is located in North America. So the data basically resides here in North America and it's going to be delivered back to my device.
+
+So that's what we're doing. When we were on the DeepSeq website, we were going out to the China region. So that's just a heads up of kind of how that's working in the background.
+
+And so next, I'll show you the difference of what's going to happen and like the speed difference with what Grok hosting provider provides. And then a little bit later, we'll get into a little bit of details for how to get the setup. So as you see, it's kind of outputting this stuff here.
+
+Because these models are still so new, these web apps are still adjusting to take a look at the reasoning stuff. And so what I'm going to go ahead and do is hit this little pencil up here to the very top. I'm going to make this a little bit bigger so you can see.
+
+And then from here, when you hit this little pencil, it creates a new chat. At the very top, you can select the model dropdown. I'm going to type in DeepSeq.
+
+And the one that I have set up from Grok is called the Distilled Llama 70B. And so this model is actually like a smaller distilled version that they're hosting, but it's incredibly fast using the Grok API. And so if we hit this here, it seems like nearly instant by the time all the stuff kind of starts finishing.
+
+So we'll see this model actually going out. It's doing its thinking. And now it's actually providing the response just like that, super fast.
+
+So if we take a look, this has thought for a few seconds and actually shows us the reasoning that was going on. So this is actually going through my transcript, trying to really understand what was going on with my transcript. This was an interview with LDJ who spoke a lot about DeepSeq and technical details of things that I really couldn't remember.
+
+And so then it basically makes this like a very simple blog post. So we'll see if my other one that was running the larger models finished. And you can see the difference between the two models.
+
+A distillation model is just going to give us like a small little blog post versus the full model that's also running on Fireworks API is actually giving us quite a bit of detail. It's going to take more time, but take a look at what it's doing right now. So above here was all this thinking stuff.
+
+But this is actually now doing an analysis on my transcript and generating a really nice blog post. And so it's telling us about the calculations that LDJ talked about in the stream, geopolitical implications of what's going on with the new AI arms race, also future predictions. And we talked about these details in the live stream and it literally picked them up and is now creating a graph from this.
+
+This is how crazy these models are, if you can really think about it. And here's some key takeaways as well. So that's an amazing thing.
+
+And I'll be able to share these prompts with you and, you know, so that you can actually run these analysis on your guys' own transcripts as well. Yeah. So here's the SEO enhancements and final thoughts.
+
+Yeah. So when you're in business or you're building a startup, having an unfair advantage is so important, right? Like being super efficient and keeping your costs low, creating your product to be the best possible thing.
+
+Now we're in this new DeepSeq world where the model, you know, I call it a DeepSeq world, but it's really, it's a llama world. It's a DeepSeq world. It's a world where if you figure out the model that works for you and the tasks that you want to accomplish, you might be able to outcompete whatever, whoever you're, you know, you're competing against.
+
+Now I've done a similar prompt on ChatGPT and with some of my YouTube transcripts and it's not unusable, but it's more of a thought starter. It's like, oh, okay. Like I can take most of this and I can rejig this and add this and add that and probably get to a blog post that is good.
+
+But it does require a lot of human energy to go and do this. When I see what's coming out of this, what's really, really mind boggling is the fact that it almost looks like just quickly scanning this, this looks pretty, pretty human level, incredible. Like a senior writer would do something like this.
+
+Yeah. Or a research engineer that you hire to really thoughtfully take a lot of notes, spend a lot of time analyzing and like put together how you would want to report. And it's even more incredible because these instructions can be configured.
+
+So if you want like a graph or you want a type of thing, we can take this prompt and put it into, you know, DeepSeq itself to say, can you give me this type of output instead? And it will do that for us. You know, it's like, how do we improve the prompt or what do you want to see from your, your outputs all the time from your live streams?
+
+Uh, and, and like, I think the thing that I've seen, this is kind of the biggest breakthrough that's happening is that, uh, with, I'm seeing this also with O1 Pro, by the way, uh, O1 Pro and, uh, DeepSeq reasoning models. These reasoning models spend extra time and actually pay attention to your instructions. And so every little detail that they're seeing, they're like, oh yeah, I haven't done that yet.
+
+Okay. Let me go ahead and make sure I still do that. And that's something that I super deeply appreciate.
+
+Uh, and for me, it's worth the extra 200 bucks I pay a month to open AI, but this is really quickly turning my head and like, oh my goodness. Did you, could you understand like what just happened here? It's like, I'm a little still taken, I'm still taken away at this output.
+
+Like you're saying, it's very detailed. And, um, and it's, it's, to me, I feel like this is totally a game changer. And, um, I think one thing that people aren't really talking about right now is actually this additional rush to understand who can host this in order to host these huge, like 600 plus billion parameter models.
+
+You need all those GPUs. You need services like fireworks. Uh, Grok is trying to spin that up.
+
+You know, Grok was able to get a distilled model. Uh, there's just so much demand. There's going to be even more demand for these chips.
+
+And, um, yeah, this is just the beginning and I'm trying to figure out, you know, uh, who, who, which provider can host this for me reliably so that I can do this for myself, but also share back, uh, and, and put this into apps for other people as well, because this is going to be, uh, this is great. And I don't want the data to go to China. I just want the data to stay in North America.
+
+Or if, uh, I get a European container, I can do the European container and meet all their legal requirements that need to happen for that as well. So, um, that's super exciting. Yeah.
+
+What's the, uh, cost, the pricing for, for fireworks? Yeah. The pricing for fireworks, we can look this up real quick.
+
+I think it's about $8 per million tokens. Uh, where normally I think chat GPT was like 15 input and $60 for output for O1 pro. I can just double check that real quick.
+
+So pricing. Let's see. Uh, Yeah.
+
+From, from what I remember, it's, it's cheap. It's like significantly cheaper than going to O1 pro. Yeah.
+
+So, uh, O1 pro, uh, or O1, uh, API cost. Yeah. And the pricing.
+
+And this is going to add up, right? Like you might, you might be like, oh yeah, who cares? A million tokens.
+
+But once, uh, once you add this to your workflow and you're pumping out content or you're doing research, you know, on an ongoing basis, or you've built a business around how to do this. But, and I, I, I'm actually leaning over a top, and like, if there's all Brotherhood box directly, I would be willing to convert the不是, uh, oops, like we've got a better model. this model so that prices will also probably significantly drop as well because they just get more efficient with time.
+
+And so that'll be really interesting to see. And, you know, I'm rooting for it because for me as a consumer, I want the power of all the intelligence and to do these types of things. I think it's going to be pretty important.
+
+And I think to that note, I think it'd be interesting to show how if anyone hasn't found out about this, it's this thing on OpenAI's thing called the platform.openai.com. So you just sign up for accounts or developer account. It's a little playground.
+
+And what you can do is actually hit this little generate star button. And so we can describe a prompt that we want for any type of model. And what it will do is reconfigure the prompt for the language model so that it can actually be more efficient at doing something.
+
+So if there's a task that you do quite a bit, you're like, I just want, you know, please like make, you know, keywords for my Amazon listings and then hit like generate. What it'll do is basically, whoops, sorry. If we hit generate here and hit this at the very top right and hit update, what it will do is actually reconfigure this prompt just from a one line type of thing to include more details.
+
+So we can take existing prompts and try to improve them through this mechanism. So as you can see, this is like how people get really nice long chains of thought or reasoning or outputs. So one way to think about these things is to first kind of put down like what instructions you want, what type of output do you really expect?
+
+Maybe what you don't want as a good starting point. And then that'll help you generate prompts that can be a little bit useful. A lot of the prompts that you're seeing that I spit out are basically things that have come out over time because of, you know, of my use cases.
+
+It's like, okay, I want this instead of that. And so as an example, one of the things that I was thinking about is like, how do you verify like claims for a specific type of thing? So if you have an article and how do you understand if something is actually true or not?
+
+So I have one here that says information verification. And so one of the things that these models that I was currently showing you is that the fireworks and the Grok are specific API endpoints. And right now there isn't like a specific web search thing that's currently tuned into them.
+
+So if you want to do web search, you have to go through the deepseek.com route or the app. And keep in mind, you're also sending data into this container there. So like sometimes you could just use it for public articles for things that you really don't care about.
+
+So if you're on deepseek, let's just see if they actually have stuff available here for us. So you just go to the search thing, turn that on. I paste my prompt in.
+
+And then what I'm going to go ahead and do is like maybe grab an article like the Techno Optimist Manifesto from Marc Andreessen. It's a very popular article. And sometimes, you know, it's really long to read.
+
+There's like a lot of information here. And you're like, oh my God, there's like so much in there, right? It's like, how can I even get started with this thing?
+
+And how do I even verify the claims of this stuff? And I think this is probably sometimes like a good thing to start here. So what I do is I hit shift and enter and I put the like article at the very top.
+
+And once I do that, I just go ahead and paste that in there and then just go ahead and hit send. So what that's going to do for us is going to use the web search and try to like look through just like how we saw earlier that was happening with the API. Every type of claim that's in there, try to see if they can search the internet for it and try to see if it can do anything.
+
+So this is going to try to do its thinking thing. This is obviously very popular and, you know, DeepSeek, the website is getting flooded with people because of basically it being free. And so, yeah, just keep in mind, like Greg says, like, yeah, I would not be putting taxes in there.
+
+I probably wouldn't be putting medical records in there. Things that, you know, you don't want to see generated if somebody asks a question that's related to you, because that can be a little crazy. You'll be like, wow, all of a sudden my data is showing up somewhere.
+
+That was not expecting. So, yeah, this is this is currently airing out. It's no surprise.
+
+And this is kind of why we're kind of thinking about doing some other alternatives here. So, yeah, I think that's that was set there. So I think another thing maybe that can be useful here is probably getting this stuff set up.
+
+So if you want to run this locally, maybe we can kind of go over that workflow. What do you think? I would love.
+
+Yeah, I mean, selfishly, I would love to know that. OK, OK, cool. Awesome.
+
+Let's do that. Yeah, I think that that'll be great. So in order like for this section, in order for us to run this model locally, the best interface that I found bar none is something called Open Web UI.
+
+So Open Web UI, it's really quick to get started. All you need is to download Docker. So just go to Docker dot com and you can just download the desktop app.
+
+So download the one that you need for your machine. If you're running an Apple M machine, which I am doing, I just download the Apple Silicon version and accordingly. So once you get that installed, it's going to present to you a user interface like a dashboard here.
+
+And so that's kind of something that you'll have, you know, kind of going. Mines is already showing the app is running here, but that's how you already know it's installed. It will require the terminal, but it really won't hurt you too bad if you have it running.
+
+So the first command that you will basically run is this one that's listed on their quick start. So the quick start will be listed here and we'll have this available as a guide for those to download. And all you have to do is follow these two steps, really.
+
+So the first step is pull the container. So this is you just copy this and then you put it into the terminal and then it's going to do this little pulling thing. And it'll probably download like, you know, several gigabytes of files onto your machine.
+
+And then the next step is literally what they call running the container. So with Docker, the whole app and everything is all contained in one. So that way you don't have to spend a bunch of time doing extra terminal things.
+
+This is probably the only two terminal things that you will run. If you're running a PC, you probably want to run, especially for NVIDIA, you'll want to run this command, GPU-all. So all you have to do is just copy this one if you're running NVIDIA.
+
+And that'll take advantage of your GPU and, you know, it'll run more efficiently when you're running it locally. So the one I like to do is just a single user mode, which doesn't require a sign in. That way, if you're the only one that's using it at your house or on your network, that's probably the best way to do it.
+
+So you just copy this command here and then you put it into the terminal and it'll say, hey, you know, great, it's up and running. And then all you have to do now is just go to the website localhost 3000. And then once you're running on localhost 3000, you're going to be presented with, you know, some user interface thing like this.
+
+And I have a model that's currently loaded here. That's kind of why it's showing us here. But you're not going to have any models loaded.
+
+So in order for you, the next step here that we have to do is actually have a couple of options. One of the things that I do is like you can just download a model locally. And I use a thing called Olama.
+
+And so olama.com is something you'll want to download there. And so that way you can run any local model. And it's simple as just, you know, finding the model and so forth.
+
+So once you hit download, it's going to download for your machine and you install it. You'll see like the way that it's downloaded. You'll actually see this little llama guy that's at the very top and a little figure there.
+
+And that's how you know it's currently running. And so once that's currently running there, you'll see the models that are currently listed here in the model section at the very top. And so DeepSeek R1 is going to be the one that we want to use here.
+
+So we'll go back to our web UI instance. And then we're going to go ahead and hit where it says user at the bottom. From there, we're going to go to the admin panel.
+
+And from the admin panel, there's like a section, a settings area. And so this settings area has an area of our connections with a little cloud icon. And this is kind of where we're going to connect our other providers here.
+
+So let me make this a little bit bigger so that everyone can see. So as you can see, the Olama API is already configured for us, which is nice. And this is already going to have the Docker container there, which is great.
+
+And so when you hit the little pencil here and you hit plus, change the model, you can type in the model like DeepSeek. And if you don't see it available, which it may not be there, you'll see this option at the bottom that says pull DeepSeek from olama.com. And so that'll actually search olama here to get it for you.
+
+So like, for example, if we wanted to download the fee for model, I'll just type that one in just as an example. So you can see fee for. So I have no, I don't have that model currently downloaded.
+
+I just can hit here and it's just going to go ahead and find it and then it downloads it. So in no time, basically this model would just be downloaded on my machine. And then I could just type in fee for and I'll be able to use that in the future going forward.
+
+So what we can do is go ahead and type in, you know, we're starting a new chat and we're going to basically select the model deep seek dash R1. And you'll see it'll be colon latest is kind of what it's listed at. And that's actually how you know that that's the one that's currently running locally.
+
+And so once you select that one, you can just say something like explain options training and then go ahead and hit enter. And so what this does is, you know, it's basically, you know, thinking and you can see the thinking tokens of what's going on when it's thinking. And so all of this is actually running on my computer, which is amazing.
+
+One of the ways that I can tell is there's this command line called ASI top and it actually shows us all of the resources that it's eating up. Thankfully, I have 128 gigabytes on my machine because I do live streams. I do this, all this stuff at the same time.
+
+And you can kind of see how much RAM it takes up right now with me hosting the stream plus, you know, running this model locally. So, yeah, this is the actually what it does here. One of the things that we could even do is try to test that prompt that we were using earlier so that we can run this command locally.
+
+So earlier what we did was we were running like a whole analysis on something and it would just fail out. So this thoughtful analysis that I was showing you, we can try to see if we can run this on a local model and just see the difference as well. So this is basically the transcript that I had earlier plus the analysis stuff.
+
+And if I go to open web UI and then just go ahead and kind of go ahead and go back here and create a new chat and hit paste and then run. So this is going to see it's thinking here and it's using up all the resources on my local machine to run this model. And it's quite a lot of tokens.
+
+And it's still fairly impressive what a smaller model can do that's running on my machine. And you'll have different versions that you can use. I think and so this one's using the 7 billion parameter model.
+
+If you get something that's a little bit higher, it's probably going to get you a little bit more detailed response. And I would definitely play around with these things. Another important setting I think that you can tweak and we can probably run this as a next chat is while this is going here, there's the control section.
+
+So this control section at the very top will show us. Let's see what to dismiss this. So the controls, one of the controls that you'll probably want to change around to get different results is the temperature.
+
+So it's setting the temperature from like, you know, 0.8, the default to like a lower temperature will actually make it like hallucinate less is kind of what people say. And so it'll tend to follow instructions better and then not kind of veer off into different tangents. And then another one, if you go all the way to one, it'll just be extremely creative.
+
+So you can think about those as far as maybe if you're doing some creative writing, some non-logical reasoning. That can be really helpful if you want to kind of think out of the box and have it kind of go into La La Land. It's really up to you and your content, but I would definitely do two different responses with different temperatures and test those things and see if you see any difference in your output.
+
+For me, sometimes I find the temperature zero to be very helpful for very logical reasoning outcomes, especially around code. But it's really up to you. It kind of varies and I just kind of want to give you a heads up on that.
+
+So that's up here. I appreciate that. To me, I would rename that temperature as wine versus coffee mode.
+
+Love it. Wine might get you a little more creative. Right.
+
+If you want more rational execution style, maybe you want coffee mode. I think that is something that we have a LCA. It's our design firm for the AIH.
+
+I feel like that's what's missing from a lot of these AI products is just like a little humanity and lightness. Right. So I expect over the next couple of years, we'll start seeing, you know.
+
+You know what would be funny to basically have like a spinner where you can actually flick it yourself and you kind of see it land on something and then just like hit go. Totally. That would be cool.
+
+Because sometimes you really don't care, right? You just like, I just want to spin the bottle and see what happens. Totally.
+
+It's just kind of YOLO mode kind of. Yeah. Yeah.
+
+Yeah. Because I think like you say, there's huge opportunities in the AI space to be playful. And I think that's what's interesting is you have these intelligence of the models.
+
+And then now you have to have people who build interfaces to interface with them. And there are a lot of companies who are trying to do that. And, you know, you can get very far with just some prompting as we're seeing here.
+
+And then we're trying this exercise here is to try different models. So if you think about it, Olama is sort of the gateway, you know, to all these different types of models that you can try out and see if it even works for your use case. And this web UI is actually a really nice user interface to keep track of that.
+
+It's safe locally on your machine. You can go back to them at any time. You can, there's additional options at the bottom here, which is really nice.
+
+So you can actually have this read aloud to you. So if you're a person suffering maybe from dyslexia or you actually prefer audio, you can have that for you. This will give you some information there.
+
+You can continue the response. Sometimes if you have too much information, it still needs to continue going. So you hit the continue and it'll just continue on or regenerate the responses.
+
+So that's kind of some of the basics there. So, yeah. So this is the output of this model.
+
+And I'm fairly impressed for being a 7 billion parameter model and running locally on my machine that it took that entire transcript and did this analysis type of thing. That's, I'd say, is pretty close to the bigger model. And in terms of details, it's not as detailed as the other one, if we kind of take a look.
+
+So like the previous, this is one that it came out with before, you know, with this nice big blog post type of thing. So it's pretty good. And it's running, you know, locally.
+
+I can run this on the plane. As far as that. So, yeah.
+
+So to get started, basically, again, it's just open web UI. There is a getting started. It's literally a couple steps to run.
+
+Make sure you have Docker installed there. And then Olama is going to show you all the different models. So if you go to the models, you'll see kind of stuff that's popular and trending right now.
+
+And that'll kind of get you some of that as well. As far as getting started. There is a, you know, we're also talking about fireworks AI.
+
+So that's fireworks. It's a good resource for you to, you know, go take a look and put that model in. So like if you want to put that model into your Olama, you would kind of do the same thing here.
+
+So go to user. And then you go to admin panel. And then you would go to settings up here.
+
+And then from the settings, you're going to go ahead and hit connections. And so what you'll do is go ahead and hit the little plus connection. And so you have to put in the base URL.
+
+And you'll also have to put in the API key. So the base URL here for fireworks is this specifically here. It says api.fireworks.ai.inference.v1.
+
+In the example documents, you'll see slash chat slash completions and things. You don't need those because that's part of the OpenAI framework is that you just put everything up to v1. And then you'll generate an API key from that model over in fireworks.
+
+So AI, so if you go to the model here in fireworks and you go to your name, and then if you go to API keys, once you go to API keys here, you just hit create API key and that'll pop up. And that's the key that you want to put in there. Similar to Grok cloud, you just go ahead and hit create API key.
+
+So once you go to console.grok.com, there's an API key section here. And then you'll want to hit create API key and that'll pop up the dialog with those API keys. And so that endpoint will look something like this over here.
+
+So that'll be, if we hit configure, api.grok.com slash openai slash v1. And then you put your key in there and you don't have to do anything with these IDs. These will be pulled directly from that endpoint.
+
+So whatever models you have available will be there. And so now when you hit the plus sign, you'll see like this nice list of models from fireworks. So there'll be the fireworks ones.
+
+So account slash fireworks, you can play with any one of those. And then the other ones that are just with the normal name are from Grok. So they have those as available for there.
+
+So you can play with a lot of these models, which is nice and compare them. And then the ones at the bottom are the ones from Olama. And so they'll show like, you know, the colon latest is kind of how you can tell.
+
+And if you hover over them, you'll see like some additional information over the parameter count, what quantization level it is. So Q4 means it's quantized to four bits. And that also has a play in its intelligence.
+
+Obviously, the higher level of quantization, you know, means more memory. So it's like 32 bit, 16, all the way down. So like the lower the number, the like not less intelligence, but you may not get the output that you want is expected.
+
+So that's kind of part of that process. It's a lot of different things here. But I think the most important thing is just, yeah, how to host this locally, how to start playing around with it.
+
+And that's kind of like a really good primer to get started for doing these models and stuff. Yeah. I love it.
+
+I don't know if you've played around with it, but is there any way to do this on mobile? Like, could you play with local models on the mobile device? Yeah.
+
+There is an app called Apollo. Have you heard of that? Apollo.
+
+Yeah. I just haven't used it. Let's see.
+
+I don't think App Store. App Store. I'm going to see if I can go here.
+
+Apollo. Let's see. Okay.
+
+Private local AI. Yes. So I have this app on my phone and they allow you to download the models directly just like you would with Olama as well.
+
+But it has its own interface, which is really nice. And so I wonder if I could share my screen. I think I can.
+
+On your phone? Yeah. Yeah.
+
+They have a phone mirroring. Exactly. Apollo.
+
+Okay. Oh, I have to lock my phone. Okay.
+
+Cool. So I lock it and then it should be able to connect. Okay.
+
+Cool. Nice. Awesome.
+
+So yeah, let me kind of minimize this here. And yeah. Okay.
+
+Let me just go to a different screen here. Probably one that's less cluttered. And do phone.
+
+Whoops. Put that over here. Cool.
+
+Maybe this will work. I think. Yeah.
+
+Yeah. Sweet. Yeah.
+
+I actually have the... Yes. Another place to get your models apparently is also through Open Router.
+
+And so yeah. So this is kind of the Apollo app. You're like, okay, cool.
+
+I can. Can I start chatting with this? You know, as soon as I play with the thing.
+
+A couple configurations you have to do is you hit this little hamburger menu at the very top left corner. And then you hit settings. So on the phone app, you hit settings.
+
+And it's going to say AI providers. And when you click there, you have three different options. Open Router, which is another API provider.
+
+And you can also get access to pretty much every model there, which is also very handy. I think they give you some free credits, but then you would put your credits there. And then you have the local model.
+
+And then you have custom backends. So with the local model, they actually can tell how much memory you have on your device. And they'll actually have a little download button for those models.
+
+The ones that are not available with the download button basically means you can't run that on your device because you don't have enough memory to run them. So these downloads are pretty big, like four gigabytes. And some of them are several gigabytes.
+
+So just depending on the space on your phone. So you can actually run the distilled Llama 8-bit MLX version. And I have the distilled Quen version at 7B.
+
+So it just depends on your, oh, that one's actually not compatible. Which one do I have downloaded? So I think on mine, let's see.
+
+The one I have available is the DeepSeq R1 from Apollo. I think I have it from Open Router. That's running.
+
+So let's take a look here. Yeah, providers, Open Router. Yeah.
+
+So the one that I have set up right now is from Open Router. So Open Router will show you all the models. You can select DeepSeq R1 from there, which is awesome.
+
+So you can have a conversation. So this just requires me being connected to the internet. We start a new chat.
+
+You're like, tell me more about options trading. And so here you're still talking to the model, but you're actually just using Open Router. And so that's a little bit different than, you know, sending your stuff directly to DeepSeq.
+
+And they should be able to do that. It's possible that this model is busy or it's currently down. That can happen.
+
+So yeah, that happens. Yeah, while that's going, I think we could even start another new chat. Let's see.
+
+It's this model. You can select a different model. So let's see.
+
+It's crazy how many models there are now. There's so many. Yeah.
+
+It's like, how do you know which one does it? I feel like you just go off vibes. Like what's my friend telling me?
+
+Yeah. Like what's the real vibes right now? So the vibes right now, obviously R1 is like the real hotness.
+
+People are like totally into that right now. And it makes sense because, you know, reasoning at a much lower cost. So let's see.
+
+There's probably something going wrong with my API key or something. So AI providers, I can select the local model to run. You know, I want to see if there's something small here that we can download.
+
+So we could do, yeah, this distillquen just for speed purposes. We'll just download the gigabyte one. So this is going to download.
+
+Wow, that's really fast. So I'm going to download the Quen model 1.5B. And so that'll run DeepSeq locally.
+
+And so basically it's just downloading it directly from, I think, Hugging Face. And then the model is being loaded on my phone. And this is actually optimized to run on Apple hardware or Apple Silicon.
+
+So that's, you know, one way that you can kind of take a look at it to run this thing. And so what's nice, yeah, if this phone runs out of internet or I need to ask some questions or do some stuff, I now have, I will have this R1 reasoning model that's a much smaller version to run on device. And I think that's another good point about AI that's running.
+
+And like, you don't always need the most powerful thing running for every single type of thing. I think it's really important to understand different use cases, you know, because maybe you don't need that depth of reasoning. You just need something that's really quick.
+
+Or you just need something that's really good at like gathering lots of information and just telling you some topics or something like that. And that could just be done really quickly. So it's kind of like picking the right tool for the job and experimenting.
+
+So we're at a good age today where you can actually get these models and experiment with them. So now I should be able to select this guy and run it. So let's go ahead and hit done and start a new chat.
+
+And then over here, we're going to go ahead and select the model. So here we're going to type in, oh yeah, it already has it on top. So you see this little icon that signifies that it's running locally.
+
+And then we're going to hit cancel. Hit done. Okay, great.
+
+So now we're running with that local model. And I think we're just using a default system prompt about it being Apollo. And Yerlo like, yo, tell me about options trading.
+
+And it should basically start to cook. So it's using my phone's power there. And it's now thinking.
+
+And so if we click this little dropdown, we'll actually see the reasoning tokens. And so that's, yeah. I have reasoning on my phone.
+
+No internet. Completely running locally. Yeah.
+
+2025 is insane. Yeah. And imagine being able to run this on your watch.
+
+Like that'll just be. Because this is already showing its capability. Like we're doing this input.
+
+If you can make an app that can run on a watch all locally, you know, just think about like the transcription stuff, right? You have a very, very lightweight model. You send the audio, you know, from the watch, you know, especially of a loved one.
+
+Maybe they've fallen or something. It can just turn on the speaker and try to understand the situation. And then if it listens to paramedics or something about asking questions and they don't really know, maybe the watch can show, hey, there's this app here.
+
+I'm going to show you the emergency card this person has for their medications. Or this is something that's happened in the last, you know, five minutes before this events or something. This is kind of the way that people think about designing apps with these models is trying to think about these use cases.
+
+Because now you have really powerful devices, just all like on the size of your wrist that can run these models and the power of Apple's MLX infrastructure and also their AI technology is the fact that, you know, these are really optimized to run these models, you know, very small as we're seeing right now. So that thought for 49 seconds and it gets us this output. Yeah, please excuse my small screen, but we'll probably have a zoom in on this for the edit.
+
+So yeah, yeah, yeah, that's pretty sweet. So many startup ideas, by the way, like from that alone. I also think, you know, and so many, you know, I love that you shared that example of, you know, someone maybe falling and hurting themselves.
+
+I think even coordinating with your AirPods, there's just a ton of opportunity there as well. Translation. You know, not just pure translation, but it's like someone is saying, saying X, Y, Z, but what are they really saying?
+
+You know what I mean? Oh, yes. Maybe like, imagine like negotiating in the future, except you have like, you know, pretend you're a lead negotiator as like almost, you know, a local AI, LLM that's helping you figure this out.
+
+So there's just, you know, we can have a million ideas, but it's just really exciting to see what that, you know, where this could go. Yeah. I think that also goes to the point a little bit about what some of these models do.
+
+So one thing I just learned very recently about GPT-4 and ChatGPT's Omni models is the fact that this model's breakthrough, a little bit different than R1, is the fact that it can actually understand audio and tone and all these extra implications that we don't know about, especially for negotiation. Like imagine if you can understand someone's breathing rate just from listening to the audio. That's the capability of something like, you know, the 4.0 models with audio.
+
+You just give it the audio and it's going to know tone. It's going to know cadence. It's going to pick up things that we just normally don't think about.
+
+But people who are maybe skilled negotiators can understand what those implications mean and then can say, hey, give me some outlier things. Every time I give this person a response, you know, it can answer in like milliseconds what the differences are. And I've heard these terms of like micro expressions.
+
+And if you have an Omni model, you can actually mimic these, you know, micro expressions and say, okay, this person is off when we ask them these types of things or changes their position. And those are the things that you really can't get today with some of the, you know, current reasoning models, but except for like the Omni models, which is the, you know, 4.0 models. And so it's going to be really exciting when they actually dropped 0.3.
+
+I think a lot of people are going to be taken by storm of like what's actually really going to come out from them. It's going to be a really, really big leap. Anything else you want to cover today?
+
+I think this is a really good primer for folks to get started on the power of prompting and especially with these reasoning models just to get started. So we covered being able to get started with prompting, understanding where your data is going. You know, if you're using deepseek.com or using the apps that will go directly to China and their restrictions and things that they have for your data privacy.
+
+So just beware. I wouldn't personally be putting any personal information in there that you don't want exposed. And then there are other providers that you can use right now and other people that are still spinning up at this very moment.
+
+So for now, Fireworks, Open Router, Grok as far as inference. And then we also covered here running the models locally so that you can actually, you know, run them on your phone using the Apollo app I was using. It's a paid app, but I find a lot of value from it and I'm not sponsored or anything like that.
+
+I just love the work that these people are doing. And it's really good stuff. You can connect to these endpoints with them.
+
+And then the other part is running this through Olama locally on your Mac and using Web UI with Docker and stuff. So I think there's a lot to be taking care of here as far as trying to use these models and come up with different app ideas. And if you have an idea, just start to use the Playground to try to generate some prompts for it and see if you can get the output that you want.
+
+And that could be the beginnings of your next multi-million dollar idea that you don't even know is there, right? So it could be hidden in plain sight. And I think that's the power.
+
+If you want to reach out to me, you can just go to rayfernando.ai and book some time. We can have a conversation. We can get you set up because some of this stuff is very cumbersome and it's just easier for me to walk you through this.
+
+And so I'm available there as well. You can find my YouTube channel, RayFernando1337 on YouTube. Feel free to check that out.
+
+I do a lot of live streams where I check out new technology and try to play around with these AI models and try to discover what's going on and also try to bring on experts to explain things a little bit more for us. So Greg, such a pleasure to have me on the show. This is really amazing.
+
+You're a legend, man. Thank you for coming on, sharing your insights here. This has been super helpful.
+
+I thought it was helpful. So if people agree, go comment on YouTube. I read and respond to almost every comment.
+
+Like and subscribe for more of this in your feed. And let us know if we should bring, and when I say we, it's me. Let me know if I should invite Ray back on again to show us more stuff.
+
+I would certainly love to do that more in 2025. Crazy times Ray, this whole deep seek, you know, tidal wave is just insane. Yeah.
+
+I'm glad that it's something that's here to like make more people aware that there's a lot of intelligence and how fast it's moving. And I want to also add that like, please don't be fearful or don't feel like you're left behind. If you're just finding out about this, you're not that far behind.
+
+We're all actually still trying to understand what this intelligence can give us. And so the prompts and the things that you develop is a good place to start. And, you know, it doesn't have to feel complicated.
+
+And, you know, whatever you can get your hands on, make sure you do that. And, you know, be aware of where your data is going. But at the same time, play, discover, share, share back with the community.
+
+And definitely share any cool stuff that you've done in the comments for sure. All right, my man. I'll see you later.
+
+Thank you so much. Take it easy. Thanks.

@@ -1,0 +1,199 @@
+Everyone is talking about MCPs. It's gone completely viral. But the reality is, most people have no idea what MCPs are and what they mean and what are the startup opportunities associated with it.
+
+So, in this episode, I brought Professor Rossmike, who is probably the best explainer of technical concepts in a really easy way that someone who's non-technical can really understand. I brought him on. He explains it beautifully in such a short amount of time.
+
+And if you stick to the end, you'll hear a couple of his startup ideas that incorporate MCPs. So, enjoy the episode and see you soon. All right.
+
+Well, we got Professor Rossmike on the pod. And the reason why we have him is because I don't know what the hell MCPs are. And I've been seeing it on X.
+
+And I need a succinct, clear Professor Rossmike explanation. Yes, I've read a bunch of threads on it. And I've seen a couple of videos on it.
+
+But there's nothing like a Rossmike explanation. So, I'm here for the, what do I need to know about MCPs? And that's why you're here.
+
+Thank you for coming on. I appreciate that. Thank you very much.
+
+Yeah, class is definitely in session. I'll just start sharing my screen. Okay.
+
+So, understanding MCP is really important. But you'll also realize the benefits and why it's sort of a big deal, but not really at the same time. You see, one of the things in programming land that we have and that programmers love are standards.
+
+And the reason why standards are important is they allow for us engineers to build systems that communicate with each other. The most popular one that, you know, you might have heard of or you might not, and you don't really need to know the details, is REST, REST APIs. And they're basically a standard that every company follows when they construct their APIs, when they construct their services for me as an engineer to be able to connect with them.
+
+Now, understanding that engineering is all about standards and having these formalities we follow to make life easier. When we think of in the context of an LLM, I want you to understand this one important thing. LLMs by themselves are incapable of doing anything meaningful.
+
+What do I mean by that? If you remember the first, you know, chatGBT3, what was it, 3.5? I'm not sure.
+
+But if you just open any chatbot and you tell it to send you an email, it won't know how to do that. It will just tell you, hey, I can't send you an email. The most you can do with an LLM is ask it questions, maybe ask it to tell you about some historical figure, whatever it may be, right?
+
+LLMs are truly incapable of doing anything meaningful. And what I mean by meaningful, it'd be nice if, you know, it could send me an email, if it could do some specific task on my behalf. But the only thing an LLM in its current state is good at is predicting the next text, right?
+
+So, for example, if I say my big fag Greek, an LLM with all the data at source, with all its training material will determine that the next word is wedding, right? So, this is the most an LLM by itself that it could do, right? The next evolution was developers figured out how to take LLMs and combine them with tools.
+
+And you can think of a tool like an API. For example, most of us are aware where chatGBT and these other chatbots are able to search the internet. For example, perplexity, right?
+
+Perplexity gives you the option to chat with an LLM, but that LLM has the ability to fetch information from the internet and present that to you. The LLM itself is not capable of doing that. But what they've done is they've constructed a tool.
+
+They've given the LLM access to an external service, right? And there's plenty of these services, right? I think there's Brave Search, OpenAI offers an API now.
+
+So, LLMs have started to become a bit more powerful when we connected tools to them, right? I can give you an example. Let's say every time I get an email, I want there to be an entry in a spreadsheet.
+
+Now, most of you know there are services like Zapier, NN8, or any of those automation services. If I build out an automation and connect that to my LLM, it just became a bit more meaningful. Now, that's awesome and cool, but it gets really frustrating when you want to build an assistant that does multiple things.
+
+Imagine, search the internet, read your emails, summarize this. You start to become someone who glues a bunch of different tools to these LLMs. And it can get very frustrating, very cumbersome.
+
+If you're wondering why we don't have an Ironman-level Jarvis assistant, it's because combining these tools, making it work with the LLM is one thing. But then stacking these tools on top of each other, making it cohesive, making it work together is a nightmare itself. And this is where we're currently at.
+
+And before I continue, does this make sense? This is where we started. LLMs by themselves.
+
+Write me a poem. Tell me about World War I. And then the second evolution is, oh, we now have tools, right?
+
+We now have these things, these external services that we can connect to our LLM. The problem here is they're difficult. It's annoying.
+
+And as someone who works at an AI startup, Tempo, and we have a lot of tools, like, for example, we do a search. You have to find an external service. You have to connect it to the LLM and you have to make sure the LLM doesn't hallucinate or do something stupid.
+
+And believe it or not, as cool as LLMs are by themselves, they're very, very dumb. But these tools make them just a bit more capable. So this is where we're at.
+
+Greg, we good so far? It's crystal clear. I'm loving this.
+
+Beautiful. Quick break in the pod to tell you a little bit about Startup Empire. So Startup Empire is my private membership where it's a bunch of people like me, like you, who want to build out their startup ideas.
+
+Now, they're looking for content to help accelerate that. They're looking for potential co-founders. They're looking for tutorials from people like me to come in and tell them, how do you do email marketing?
+
+How do you build an audience? How do you go viral on Twitter? All these different things.
+
+That's exactly what Startup Empire is. And it's for people who want to start a startup but are looking for ideas or it's for people who have a startup but just they're not seeing the traction that they need. So you can check out the link to startupempire.co in the description.
+
+Now, enters MCP. And what does MCP mean? I think the simplest way, right, without getting too technical, because I've read the threads too.
+
+And as a technical person, I appreciate it. But for the non-techie, I can assume it's frustrating. Think of it this way.
+
+Think of every tool that I have to connect to to make my LLM valuable as a different language. So tool one's English, tool two's Spanish, tool three is Japanese, right? And imagine every tool, it's its own language.
+
+And it's not that there isn't a standard for how APIs work, but every service provider constructs their APIs differently. There's different information you have to pass. There's just various degree of things that you have to set up that, again, it just feels like gluing a bunch of different things together.
+
+Will it work? Yes. But at scale, it gets very difficult.
+
+MCP, you can consider it to be a layer between your LLM and the services and the tools. And this layer translates all those different languages into a unified language that makes complete sense to the LLM, right? So it's the evolution of LLM plus tools.
+
+But in this evolution, it just makes it very simple for the LLM to connect and to access different outside resources, right? Because that's what tools are at the end of the day. So with MCP, I'm able to connect to an outside data source, an outside database, maybe a tool like Convex or Supabase, right?
+
+Imagine, I just tell the LLM, you know what? Create me a new entry in my database. And it's connected to my database via MCP, and it knows exactly what to do and how to do.
+
+In the second evolution, LLMs and tools, there's a lot of manual work that goes on. There's a lot of step-by-step planning that you have to do, and there's a lot of edge cases where it can fail. And this is why, again, none of us, as exciting as the space is, none of us have a Jarvis-level assistant yet.
+
+It feels like we're there and we're close, but this system makes it so that it's very difficult. And what's frustrating is this. Imagine, let me think of a simple service, a simple, like, you know, tool.
+
+Imagine every time a Slack message comes, your LLM reads that Slack message, and it shoots you a text, right? Sounds pretty trivial. Here's the frustrating part.
+
+Imagine Slack updates their API, or the text service updates, makes a change. And let's say that service is connected to other services, or you have some sort of, like, automation step-by-step thing that you've planned. It becomes a nightmare.
+
+It becomes terrifying. And this is why, even in the age of LLMs, good engineers will still get paid because stuff like this exists. But what MCP does, it unifies the LLM and the service, right?
+
+It creates this layer where the service and the LLM can communicate efficiently. Now, let's get into some practicality. You can think of the MCP ecosystem as follows.
+
+You have an MCP client. You have the protocol. You have an MCP server.
+
+And you have a service, right? An MCP client is something like Tempo, Windsurf, Cursor. And they are basically the client-facing side, the LLM-facing side of this ecosystem.
+
+The protocol, again, is that two-way connection between the client and the server. And the server is what translates that external service, its capabilities, and what it can do to the client. And that's why, between the MCP client and the MCP server, there's an MCP protocol.
+
+But here's the fascinating part, and this is why I think Anthropic, they were playing 3D chess when they built this, is the way this is architected. The MCP server is now in the hands of the service provider. So if, let's say, me and Greg run a dev tool company, right, where maybe we're doing a database, right?
+
+Like, we're like, listen, we're going to build the best database company in the world, and we want people's LLMs to have access to this database. It is now on us to construct this MCP server so that the client can fully access this. So Anthropic, in a way, sort of said, listen, we want our LLMs to be more powerful, more capable, but it's your job to figure this out.
+
+And this is why you've noticed all the external service providers are now building different MCP servers, they're building out repos and all this stuff, right? So this is a big deal in a sense where LLMs are going to be more capable. But from a technological perspective, all they did was create a standard, a standard that it seems like all companies and all engineers are going to agree upon.
+
+Because you can construct any system, any API, however you please. The problem is, if you want to scale, you want to grow, you want other developers, other businesses to connect and work with your service, it has to be in a fashion that makes sense for them. Imagine if all of us just spoke different languages, but standards allow us to communicate in a way that makes sense to all of us.
+
+And MCP is that for LLMs, because LLMs by themselves are not that capable. They're just, they're systems that have great predictability and they know how to predict the next work. But when you add this MCP protocol as a whole, you now have a way for it to be capable of doing important stuff.
+
+Now, understanding all this, it's not all sunshine and rainbows. There are some technical challenges. If you notice, if anyone has set up an MCP server on any of their favorite MCP clients, it's annoying.
+
+There's a lot of downloading. You have to move this file. You have to copy this, that, and the third.
+
+And it's a lot of local stuff. There are some kinks that have to be figured out. But once this is figured out or finalized, polished, or maybe they update the standard, or maybe someone comes up with a better one.
+
+We start to enter a world where LLMs start to become more capable. And that is literally all MCP is. Just making LLMs more capable.
+
+We're trying, we're doing that with tools right now. It's kind of working. But MCP seems to be the next evolution.
+
+I think, Greg, I saw your latest video. Manus. Manus is a great example of number two.
+
+They have tons of tools. And kudos to them. They've engineered it well in a way where they work well cohesively.
+
+I didn't get to try it out. So I'm just looking at what people have done. But I can tell you this.
+
+It's a lot of engineering hours. It's a lot of one change happens. Something broke.
+
+Someone's on call and not sleeping. But with MCP, it's structured in a way where if we all follow this standard, the LLM will have access to everything it needs. And we will all be happy users.
+
+So in short, that is literally all what MCP is. It's not Einstein's fifth law of physics or anything crazy like that. It's literally a standard for LLMs.
+
+And it's exciting. It's something to be excited about. And yeah, I hope that clarified.
+
+I just kept rambling. So I apologize for that. No, this is exactly what I wanted.
+
+I want to end on one question for you. So this is now clear to me, crystal clear to me, what MCPs are. But my question is, well, before I even ask my question, every time there's been a popularized protocol, for example, HTTPS or SMTP, examples like that, there's been a lot of big businesses that were created on top of it.
+
+And there's been basically this like, why now? You know, why this is opening of opportunities. Yeah.
+
+The average person listening to this podcast is building out their ideas. Is this, does this matter? Or at all for that person?
+
+Like, yeah. I think that's a great question. I think if I were, so I'll speak to the technical and the not technical.
+
+To the technical, there's a lot of things that a technical person can do here. I just don't have time, Greg. But one thing I was thinking of was like an MCP app store.
+
+And I'll just give this idea out for free because this podcast is all about ideas. Basically, there's a lot of these repos out there of MCP servers. And it'd be cool if someone can go on a site.
+
+I even bought the domain. It does nothing. But again, please, anybody like steal this idea.
+
+I bought the domain and it'd be cool if someone could go on, like, look at the different MCP servers there. They see the GitHub code and whatever, and they can click like install or deploy. And that server is deployed and gives them a specific URL.
+
+And then they can paste that in an MCP client and work that out. So for the technical person, if you make millions, all I ask is just, you know, send me $1,000. But for the non-technical person, what I would really focus on is I would just stay up to date with the platforms that are building out MCP capability and just see where the standards are going.
+
+Right. Because like you said, when the standards are finalized, I don't know if MCP has fully won. I think it needs to be challenged.
+
+Or I don't know if Anthropic is going to make an update. We don't know. It's very early.
+
+But I would say keep very close attention to what the final standard is going to be, because once that standard is finalized and all these service providers start to, like, you know, build out their MCP or whatever thing it is, you can now start to integrate much seamlessly and much easier. Right. This is why, again, every week there's a new chatbot interface with new tools and it wins, because this part, step number two, is not easy.
+
+Right. Especially making it cohesive and making it work fast. Right.
+
+Like I can sit in two hours and build something like this, but building out that user experience, making it flawless, limiting the hallucinations. It's very, very hard. I mean, this is a lot of the work we do at Tempo, but this makes it so that integrating is a lot easier.
+
+And you can think of these as like Lego pieces that you can continue to stack to stack. So for my smart and wise business owners, startup ideas, podcast enjoyers, I would really just keep a close attention. Right.
+
+I think even for myself, I don't think with this MCP stuff, we're at a place where any shots can be fired that make any smart business decision. But this is one of those things where you just you sit and you watch and you're just observing and learning. And when the right thing at the right time happens, you strike.
+
+So I don't see any crazy business opportunities right now for a non-technical person, even for a technical person. Like imagine if OpenAI comes with a standard tomorrow and we all just shift to that. Right.
+
+It's very early stages. But I think understanding how this works means you understand how the next thing works. And when that becomes finalized, you hit the ground running.
+
+Amen. All right. Ross Mike, Professor Ross Mike, there's no one like you.
+
+We'll include in the show notes where you can follow him for more really clear explanations around this whole AI coding world. And dude, I'll see you in Miami in a few weeks. Yeah, man.
+
+I appreciate you. I'm booking my flight soon. So yeah, definitely, bro.
+
+I'll see you soon. Thank you, everybody. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye.

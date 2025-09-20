@@ -1,0 +1,355 @@
+What if AI agents could replace some of your team? Well, they can. I brought on Flo, who's the CEO of Lindy.ai, probably the number one AI agent platform, and he shows us how to do agent swarms, the big new thing with AI agents where you have multiple agents going after these problems.
+
+Now, we go through a bunch of different job responsibilities and how to actually set up these agent swarms and AI agents so that they become AI employees for your business. Enjoy the episode, and I can't wait to see what you end up building. Flo is back on the pod.
+
+The AI agent god, that's what I call him. Flo, if people stick around to the end of this episode, what are they going to learn? What are they going to get out of this?
+
+They are going to learn that you can create agents a lot faster than you think you can, and you can automate half your business in half a day. And you can create your first agent in 10 minutes. And you're going to show us how to do that?
+
+Yeah, that's the goal. Okay, so let's get to it. Cool.
+
+Let me share my screen real quick. Okay. Well, for quick introduction, Flo, I'm the founder of Lindy.
+
+You can think of us as like the Zapier of AI. We're building a no-code platform for you to build your own AI agents. I've already been here on the podcast.
+
+Thanks, Craig, for having me again. This is the last time we chatted, and I'm going to use this later as an example to show Lindy's web scraping abilities because we released that last week, thousands of web scrapers, 4,000 of them, in fact. And so one of the web scrapers is Lindy now has the ability to scrape YouTube comments.
+
+So I'll just start with just a super quick introduction and a super, super simple use case for Lindy, which is meeting recording and not taking. So, I mean, this is probably like the most universal use case, like everyone's in meetings all day, and this is the simplest meeting recorder you can build on Lindy. It's like, hey, when a calendar event begins, you record the meeting, and then you summarize the meeting.
+
+That's it. Obviously, little by little, you add up and add up and add more to it, and I'll show you my meeting recorder. This is my actual meeting recorder that I live with all day.
+
+And this is actually like a small part of it. Like it just keeps going and going and going. So in a way, that's the beauty of it is like you keep adding to it, and then it becomes irreplaceable.
+
+So, I mean, one example that this meeting recorder does here is it adds the meeting notes to a Google Doc. And if I have already met with this person before, it looks on my Google Drive for these notes, and it adds the notes to the existing Google Doc that I have for this person. It was actually super useful just yesterday.
+
+We just onboarded our first head of marketing. And he asked me for context, like my relationship context with some marketing agencies that we're working with. And I just had to like dig up the Google Docs, and I could send him a Google Doc, and I'm like, this is everything we've ever talked about with this person.
+
+And it worked. It just works. It just works.
+
+And then the beauty of it is, since it's an agent, so when you look at it like this, like this is where it sort of looks like Zapier. It sort of looks like a workflow. Under the hood, though, it's an agent.
+
+And so what it means is that I'll show you, for example, this update document step here. I can literally just speak to this step in English. So each field here for this step is just a prompt.
+
+So here, for example, I'm like, hey, which document should you update? Well, the document you found previously that contains my notes for this person. What content should I put into the document?
+
+And here I can just be like, summarize the meeting you just had in bullet points. So I don't need to have a separate step for AI. The thing is AI.
+
+You're basically telling an AI to go through a sequence of steps. But these steps are not islands like they would be for a workflow automation platform like Zapier. And I think what's cool about this is, I mean, if you dial this and you do this correctly, there's no mistakes.
+
+That's right. If anything, if you made a mistake, it recovers from it. Like very often, I'm actually surprised.
+
+You can create your agent slash workflow and set up the steps and never configure them. You literally don't even tell it what to do. I'll actually give you an example right now.
+
+I'm going to create a Lindy. Start from scratch. And I'm going to tell her, so the trigger here is just me chatting with it.
+
+It's just like an agent that I can chat with. And I'm going to use the YouTube video example. So YouTube here.
+
+So this is an example of all the scrapers. We just added thousands and thousands of integrations in scrapers. We're like by far the top AI agents right now in terms of number of integrations.
+
+So I'm going to do YouTube comments by URL. And after the results are available, I'm going to just let it have a conversation with me. So I'm going to leave it like this and I'm literally going to do nothing.
+
+I'm not telling it what to do. I'm not telling it. I just, this is it.
+
+This is the, you know, the different steps that you follow. And I'm going to grab this link from the last time we chatted. And I think, there I go.
+
+And I'm going to just send it to the video. So I got roasted in the comments because partly because of my accent. I think it's racist.
+
+And I'm kidding. It is a thick accent. And look, I didn't tell it what to do.
+
+It's just like, all right, it's getting the YouTube comments. I think the scraping takes about a minute. Dude, by the way, I get roasted all the time for calling Claude Claude.
+
+Yeah, how should you call it? I agree. I agree.
+
+Is it a Canadian thing? Well, in French, you call it Claude. Claude.
+
+Jean Claude. Right, yeah. So, but people make fun of me.
+
+All right. Back to Lindy. All right.
+
+I mean, right here, you can see, I didn't tell it what to do. It just like got to the comments. And hey, once you will note the potential business opportunity, startup ideas, set up Lindy's flow as a service.
+
+We actually do have, if you go to, I think it's lindy.ai slash service partners. We have like dozens of companies that make a living through just building Lindy's for customers. Like, fuck, that's a lot.
+
+I didn't even know there were so many of them. I think it's like 50 or something. More than that.
+
+Yeah, you can see I didn't have to tell it what to do. To go back to the meeting recording example, and again, that's the difference between a workflow and an agent is like agents really like to chat. So you can just chat with it at any time.
+
+So I'm going to go here. What's an example of a meeting I can show you? I had a reference check with someone.
+
+Yeah, so I can just chat and be like, what did the candidate say about moving to SF? And I can't tell you, I mean, I use this all day. I think I have really bad memory because I'm in meetings all day.
+
+And so I just use this as like, I could hit my exocortex. It's like my brain, outside my brain. And it just like replies to questions for me.
+
+Yeah, I also, I find my memory has been getting worse too as I'm relying more and more on technology to basically fulfill things. So this is helpful. Yeah, yeah.
+
+So all day, I just ask you these questions and let's wait for it to reply right here. He's currently based, again, we're going to have to change his name and blur it out, but he is interested in our new office and so on and so forth. So I think the meeting recording is probably one of the most universal use cases.
+
+Meeting scheduling is a close second. Basically, it's the entire executive assistant stack. Like, I just, I haven't replaced my executive assistant, but I think I've replaced like 70% of what she does with Lindy.
+
+I mean, executive assistants, they take notes during your meetings, they schedule your meetings, they prepare you for your meetings. They make restaurant reservations. I have this Lindy chief of staff here.
+
+So Lindy can make phone calls. Oh, the most hilarious thing happened just yesterday, actually. I asked her to make a phone call to make a reservation for like a date night with my girlfriend.
+
+And I was like, hey, make a reservation and flour and water. It's like a super good restaurant in San Francisco. Tonight for two people at 8 p.m.
+
+can go as early at 7 to 30 or 9 p.m. And I didn't give her the number of flour and water. So she went to Perplexity to look for the number.
+
+She found the number and then she made a phone call. And then the really thing, the really funny things that happened is I didn't realize but this restaurant actually also uses an AI agent to pick up the phone. So after I listened to the call and I was like, wait a minute, this was also an AI agent.
+
+Hi, it's Arena. I'm calling to make a dinner reservation tonight for two people. We're looking for 8 o'clock p.m.
+
+But we're flexible between... And the agents just... And in the end, I had a reservation.
+
+So it's crazy. Like it's only happening while AI agents are currently working together. Yeah.
+
+And by the way, flour and water, I think Johnny Ives from Apple and I think maybe even Steve Jobs, one of their favorite restaurants. So this is like a hard restaurant to get into. And the fact that this happened is amazing.
+
+Yeah. Yeah. It's funny, the first time I demoed this feature, I used it to...
+
+Because I literally, the team had just coded it in like half a week. And I was like, all right, demo time. Let me just ask you to like cancel my flight to Paris that I have scheduled next week.
+
+And it worked for a shot and she canceled my flight. And I was like, no. I didn't expect it to work.
+
+Yeah. So, you know, like phone call, like reservations. Meeting prep is a pretty big one.
+
+I have this thing here. And this is actually using the feature that we just released the last week, which we call agent swarms. And while you bring that up, what is an agent swarm?
+
+That's a good question. An agent swarm is the ability to send a list of things to do to an AI agent. And for this AI agent to do all these things reliably, quickly, and in parallel.
+
+Because AI agents are awesome and they're super powerful, but over long-term, like long-time horizons, they fail. They lose coherence. And so, for example, if you give an AI agent a list of things like, hey, take these 500 people and send personalized outreach to them.
+
+Like personalized lead outreach, is a very big use case for AI agents. First of all, it's going to take forever. It's going to be pretty expensive.
+
+And by the 200th lead, it may fail. It may just become unreliable. If you use an agent swarm instead, it's going to, basically, you know, like in the matrix, you have like an agent smith that duplicates himself.
+
+It's like the agent smith thing. It's like the agent is going to duplicate himself and send one copy of itself to each lead. Yeah.
+
+So, this meeting prep Linde here uses, it's actually, it's funny, it's a swarm of swarms. So, what I do is, every morning you wake up, you check my meetings for the day, and then you deploy an agent swarm for each meeting that I have. And then, inside this swarm, you deploy another swarm for every attendee of every meeting that I have.
+
+And then, this is really good because this Linde actually uses the meeting notes that the other Linde brings together that I just mentioned. So, she looks in the Google Drive folder that contains all of my meeting notes that Linde creates, and then, she gets my notes for this meeting, and then, she searches for my emails with this person. She looks up for their LinkedIn on Google, and then, she sends me a digest by email.
+
+And so, you can see here, every morning, let's see, right here. Again, we may have to like, blur out some of these, but I just received these digest every morning of everything. And it's pretty detailed.
+
+So, for example, I have this dinner tonight. It's like a founder dinner where people talk about their struggles, and there's like, a bunch of really senior executive coaches, and they've sent us an email beforehand, and they're like, hey, you have to come prepared with a challenge that you want to discuss. And so, this Linde here found it, and so now, you know, it's like, ah, right, before this dinner tonight, I need to come prepared with a challenge to discuss.
+
+I was really impressed because right before we hopped onto this podcast, you said, hey, by the way, I picked up that Shure MV7 mic, and I was like, I was like, there's no way this guy is going to remember to buy this mic, because I remember when I had you on the first time, the mic wasn't really great, and people were complaining. And it was the first thing you told me, and then when you, you know, I just see right now, in the meeting prep, it says, use good audio equipment, Shure MV7. You got me.
+
+That's my dirty secret, that's how I know. Yeah, no one had it for that. It's, I mean, half my life runs on this right now.
+
+It's just like, same for the meeting scheduling. I'll show you my meeting scheduler here. So, and it works exactly the same as an AI, as a human assistant does, which is, people reach out to me by email, they're like, Flo, I'd love to chat, or you know, maybe it's like a job interview or anything like that, like a candidate I'm interviewing.
+
+And all I do is, I have given this Lindy her own email address, and all I do is I CC her. I'm like, sounds good, I'd love to chat, Lindy will help us find time. And so you can see here, this happened just this morning.
+
+I was introduced by a recruiter to a candidate, and I'm like, thank you, Carl, and great to meet you, Brian. I would love to chat, plus Lindy will help us find some time. And you can see here, I literally also added, would you like to meet in person at the office?
+
+And here, Lindy looked at my calendar, she found available times, she sent the times by email. Then he responded, yep, in person on Monday works, so she sent the calendar invite. And you can see, in the calendar invite right here, she put the address of the office, right here.
+
+And then she sent this confirmation. She's like, all right, we'll meet at 1.30 at 1841 Market Street. This is like, you're setting off like a million light bulbs in my head right now, because what I'm doing is, I'm thinking, what are all the tasks in my business that are recurring like this?
+
+Like, what you're showing me right now, my EA does this. My EA does this. So, like, what do you recommend to people?
+
+Should they, should they take stock of all the recurring tasks and then see if, you know, Lindy's can do it? I think so. So, what I do recommend to people is actually to start with these like, personal assistance use cases because it's just so easy and everybody can use a meeting scheduler, everybody can use a meeting prep, everybody can use a meeting recorder.
+
+And so, just like, you know, dip your toes in the water like that. Like, just like, get the reps, put a W on the board and you can onboard to this in like five minutes. It's like super easy.
+
+We've got templates here. We've got like hundreds of templates. If you go to the, the home tab here, there's a bunch of Lindy's that are pre-created and these ones, we literally advertise them at the top because like, we call it like the personal assistance startup pack.
+
+It's just like, everybody can use these things. And then little by little, once you understand how the platform works, which it's really pretty easy, then you're going to very rapidly, like to your, exactly what you said, it's like a light bulb's going to go up and you're like, and you're gonna be like, oh my God, like this can be used for everything. So I'll give a more complex example.
+
+And what do you think? Like, should we just like build a Lindy live right now? Yeah, why not?
+
+Let's do it. Let me build. So I spent a ton of time recruiting right now.
+
+So I'm going to create a Lindy recruiter. So I'm going to make her chat with the Lindy. I'm going to make it, when I chat with it, I'm going to just give it a list, just criteria of what I'm looking for.
+
+And then I'm going to use the search for people action. So we have like a ton of prospecting integrations because like prospecting is one of our top use cases. And then I'm going to make it enter an AI agent and I'm going to tell it, show me the list of people you found and ask me which ones to reach out to.
+
+And again, that's where it's an AI agent. I don't need to like, you know, divide up the array or the list of people it found or to format it. I just, I'm speaking to my agent and the agent saw the people.
+
+It's like the same agent that's moving from step to step to step. And here I'm going to give this step and exit conditions. Like once I've told you which ones to reach out to, then you enter a swarm.
+
+And I'm not even going to tell it what items to swarm through. I think it's just going to be smart enough to figure it out. And I'm going to make it research this person on perplexity.
+
+So search perplexity. So research this person on perplexity. And then I'm going to make it send an email to this person.
+
+So, and from my email, send email. And I'm just going to make it, I'm going to prompt it here. I could just also write like a literal value.
+
+We have this setting here that's like set manually. So I could just here type my email. But here I'm just going to be prompt AI and it's like reach out to join lindy.ai.
+
+That's it. I'm just going to do this for now. And in one click you can insert a human in the loop.
+
+So I can be like, ask for confirmation. And that's it. Right here it's going to ask me for confirmation.
+
+When should people have a human in the loop and when shouldn't they have a human in the loop? Great question. If an AI agent could embarrass you, you should probably insert a human in the loop, at least in the beginning for the first few cycles.
+
+And you're going to work on it. It's the same thing as training a human. It's like you just think of it as like you just onboarded an intern.
+
+And like you don't, at first you're kind of on their back. You kind of watch what they're doing. That's how you think of it.
+
+And soon we're building a feature right now that's making it so that the agent can learn from your feedback. So as you insert a human in the loop, if you correct it, little by little it's going to learn. That is it.
+
+Right here, I have like an MVP recruiter. I'm going to rename her and just call her the recruiter. That's it.
+
+I've got a small recruiter. And again, that's the beauty of it is like you start small, like this took me two minutes and then you add to it and add to it and add to it. So for example, here I could make it send reminders.
+
+Like if the person doesn't reply, I could make it send two full five reminders. Right? And actually, I'm going to add a last step here so it's like, hey, I've reached that to everyone.
+
+Right? I'm going to start here and I'm going to be like, I want to hire, like find me five account executives working at what's a good place to hire from for account executives. HubSpot.
+
+Yeah. Actually, I'm realizing, I think this was set, yeah, okay, this is beautiful. All right.
+
+We don't recommend poaching from HubSpot but we don't, we don't condone it either. Are you a HubSpot partner? No.
+
+Okay, good. Okay, reach out to everyone who doesn't have enterprise or corporate in their title. I think that's literally two people and here it's going to start swarming over basically the two people that I gave it right here.
+
+So you see, I didn't configure the swarm. It's just like smart enough to figure it out here. And now if I expand this task here, I can see the subtasks that are part of the swarm.
+
+And so what it's doing here is it's searching perplexity for this person. And it's going to be AI slap. You know, like by default, AI just writes AI slap.
+
+So like I would need to prompt it more. I would need to give it examples. But boom, I hope this email finds you well.
+
+I'm reaching out because I came across your profile. And I mean right here, I just gave it to two profiles but I could have said like 200. And that's basically how we recruit.
+
+Like we're pretty good at recruiting and it's very cost effective and we just use this all day. And this could be used for, you know, recruiting. If you think about what recruiting is, it's about making, it's about closing, it's really closing deals at the end of the day, right?
+
+So this could be applied to, I mean you mentioned sales prospecting. This is in a way is like sales prospects. 100%.
+
+100%. You can also like upload CSVs here. So if you have a bunch of leads from another platform, so Lindy can generate her own leads but there's also a lot of other platforms that you may want to use to do that.
+
+And so I have, we also use it for sales prospecting. So if you look at, we have this sales outreacher Lindy here and I have a CSV right here. I'll open it.
+
+Can Google Chrome open CSVs? I cannot. I also have it in a Google Sheets.
+
+So unicorn founders. It's like a list. So this one Google Sheets here is 20 unicorn founders but let me see if this is the right sales outreacher.
+
+Yeah. I'm just gonna tell it to begin. One of the things I noticed by the way is that clode 3.5 is default selected.
+
+Should people keep that default or should they change it? I think you should keep it. I think that's like a great default.
+
+default. Basically, start with clode and then if you find your agent is too dumb, graduate to, we've got Gemini, we've got O1. O1 is really good.
+
+It's really expensive but it's really good. I use O1 for research tasks. And if your agent is too expensive, use Gemini Flash.
+
+And most of the time clode does a good job and Gemini Flash does a good job. Yeah, so right here, I just, I mean, you can see it took me, in the time I spent to answer this question, I just reached out to 20 unicorn founders about what we do. And it's actually personalized, right?
+
+So here it's reaching out to the founder of Epic, like Tim Sweeney. And it's like, hey, this is how Lindy can help you streamline developer support, manage and organize data from your free games program, and Epic first run initiative. so it's really super customizable and super personalized.
+
+That's why I wanted, this is why I wanted to have you on the pod again. I saw that you were, well, it was right after the announcement of the swarms. And just, I think that, you know, what it's important for people to realize is that this can take a small team of one, two, three, five people and make them feel like 20, 30, 40, 50 people.
+
+And there's an arbitrage moment that is happening. Not everyone, I mean, maybe in our world we're all like, yeah, AI agents, AI swarms, everyone knows what this is, right? Making jokes about Claude and Claude.
+
+No, we're so early in this. And if you're listening to this, it's all just about like getting your feet and your hands dirty and starting to create some of these things and just seeing it work in action. There is a huge gap right now between what is possible and what people are actually doing.
+
+There's a huge arbitrage. And you can see it because the companies that are actually exploiting this arbitrage are blowing up. I mean, there's this startup called the Arcades.
+
+They're like, there's like an AI ad generator. And reportedly, they reached like $5 million in ARR in like a couple of months with, I think, like eight people, like seven or eight people or something like that. You may know this, yeah.
+
+I know it because dude, it's hilarious. I had the founder on the pod a while ago. Awesome guy and awesome technology.
+
+And then like two weeks, and I speak to him on X all the time. And then two weeks later, I get an email from his team being like, hey, like, it was like a creator outreach email. And he was like, hey, like, we'd love to partner with you and do like a paid promotion or do like something with you or give you free access to the product.
+
+And I messaged the founder and I was like, dude, oh, and it said it was him, right? It said it was him. And I was like, why are you texting me this?
+
+And he's like, he started laughing and he was like, oh, no, no, that, you know, he was probably using Lindy, you know? I, you know, I can't, I can't speak for who's using us, but I will say this example I just gave of the restaurant reservations, it's also happening for outreach like that where we are increasingly, we have cut multiple times Lindy stock to Lindy's from like different customers. So this influencer outreach use case is actually a pretty big one and we have, I can't say who, but we have, I wish I could say who because it's pretty good.
+
+It's a very big YouTuber who is using us and he, so he, it's actually not him, it's his agent, he's using us because this guy receives so many emails all day from like random brands who are offering him to partner and it's just, it's a deluge, right? And like less than 1% of them he wants to work with. So his agent has deployed a Lindy to help him like filter and like negotiate deals and all of that stuff.
+
+We have another customer who's like a famous jewelry brand who uses a lot of influencer marketing and they have also deployed a Lindy to find influencers on TikTok and Instagram and YouTube and find their contact information and reach out to them and offer them partnerships. And when we signed that customer, I was like, we need to create a reminder to check a month from now if that, if his Lindy talked to his Lindy and sure enough, we checked a month later and they had, they had crossed paths. I love it.
+
+Would you be able to go back to the template section? And the reason why is I want to scan through some of these just to get people's minds primed for the types of stuff that you can use. Yeah.
+
+Let me open the full list of templates here. You know, lead enrichment, lead qualification, customer support, like, and customer support over everything because we just released last week like 1600 integrations. Like, again, we're by far right now the top AI agent platform in terms of number of integrations.
+
+And so, wherever your customer support exists, if it's like Telegram or Slack or WhatsApp or Zendesk or Indocom, like, you name it, like, we can automate your customer support over all these platforms. The focus group here is a really interesting use case because LLMs are not super good at reasoning, but they are really good at pretending to be human because that's what they are, right? They've been trained on so much text that's human written.
+
+And there's actually a lot of people that find that the answers that LLMs give you are actually very correlated to what, to the answers that a human would have given you. So if you ask, like, do you like this or that, like, LLMs are actually doing a very reasonable job at emulating a human. And so that means that you can, like, marketing companies and, like, big firms, they spend fortunes on focus groups and we use it ourselves as well.
+
+Like, we've created a Lindy that simulates our user. So we've prompted it to be like, hey, these are the different personas of users we have and we talk to it all day. Like, what do you think of this?
+
+What do you think of that? Like, how is this lending on you? And it's, I would say, it's 80% as good as, like, an actual focus group and an actual user research session.
+
+But it costs you, like, 10 cents instead of $1,000. Dude, that's so interesting. I talk a lot about it on the channel, just this idea of, like, building community-based businesses and community-based products where it's like you're building a product for a community.
+
+And I never thought of it like this, but a virtual community. Right? Like, so coming up with an idea for, like, vibe coding something, coming up with a product for something, starting a social account, and then getting feedback on your business idea and what you're trying to do from your virtual community.
+
+Yeah. You know, I actually think that's the next step for, right now, like, Bolt and Lovable and all of these companies are really blowing up. These, like, prompt-to-app platforms are really blowing up.
+
+I think that's going to be the next step for them where it's like, you build the MVP of your app and then it sends it to a thousand virtual users and they use it and, like, five minutes later, you've got feedback from a thousand people and then you just rinse and repeat. And you let this running for a day and by the end of the day, you've got an app that's been iterated on for, like, the equivalent of a year, right? This one I love.
+
+It's my Elon Linde. So what it does is it actually uses both the phone call capability we have and the swarm capability we have. So you give it a list of your team and every week it makes a phone call to each teammate for a sort of virtual stand-up and it asks them, like, what did you get done this week?
+
+It's actually funny because I forgot I had this running and I received a phone call like a couple of weeks ago from my Linde and I was like, oh, like, it's my Linde phone number is in my contacts and I was like, oh, my Linde is calling me, what's going on? So I pick up the phone and I'm like, hey, and she's like, hey, Flo, it's Linde. I'm like, okay, what do you want?
+
+And she's like, what did you get done this week? I'm like, fuck you. Yeah, so the Elon Linde is really cool and then it sends you a report with a summary of what your entire team has told you.
+
+So this is actually right now being deployed by one of our customers that's like a thousand plus employees and every week it's just like a thousand people receive a phone call and then the CEO receives a report with like what everybody in the company is doing. It's basically replacing the middle management layer of the company. Very cool.
+
+Dude, this is crazy. You've come, I think you were on the pod like six months ago almost and the integrations and just seeing all these templates, like it's crazy how much has changed. It is moving fast for sure.
+
+The team has been cranking. I'll give one last example I guess of a Linde that I really like which is the competitive analysis. Linde, I think this is another thing that can be very useful to pretty much any company.
+
+I have it right here. Competitive tracker. So you can see it's funny it's got the poop emoji here as an icon.
+
+What it does is it wakes up every month, it gets the list of competitors from this spreadsheet. Like you can just keep a spreadsheet with the competitors that you're keeping tabs on. And then it deploys a swarm for each competitor.
+
+And for each competitor it looks up whatever information you want. The employee count, the traffic estimates, the recent news, whether they've raised money, whether they're hiring, anything you want. And then it does a couple of interesting things which is one, it sends you a report with like hey, these are the competitors who are pulling ahead.
+
+And it logs all of that in the spreadsheet. And so you can see here, this is just an example of a spreadsheet where I've entered three competitors like Brax, Mercury, and Ramp that are like financial companies. And here it's logging all of this data here in this other tab.
+
+And then I've set up this other sheet on the spreadsheet that's like telling me, it's like a table. It shows me for each competitor for every month how have their employees count trending, how have their monthly website visits trended, their valuation, and so on and so forth. And again, I mean you can see it's pretty simple.
+
+It's like nine steps or something like that. And we have a template for it. That's really cool.
+
+Yeah, it's also, you know, when it comes to building a startup and looking at competition, like you really don't want to be like going to their websites every day and letting them get in your head. So having something like this feels a bit more sober. Yes.
+
+One thing I have liked actually doing, this is actually from before we had swarms. If you're on Twitter or on Product Hunt or whatever, you get the feeling that everyone and their mother is working on AI agents. So you get a new announcement maybe every day at this point, like twice a week you get a new major announcement.
+
+And so at first as a founder, you know, I was like, I wouldn't say I was getting demoralized by it, but it was like, fuck, like this is heavy competition. Like this is going to be a hot space, right? And so what I did is I set up a Lindy that's like, I could just send her these announcements and then I would be like, in six months, tell me where these guys are.
+
+And in 12 months, tell me where these guys are. And one thing that it's really taught me is 90% of the time they're nowhere. So it's really trained me like that.
+
+Now when I see a computer, I'm like, yeah, look, it doesn't, it's like the folks that I would worry about 12 months ago don't exist today. So 90% of the time it doesn't matter. I love it.
+
+All right. Is there anything else you wanted to cover? Let me think.
+
+Okay, I'll show one last example that the conference is showing is my CRM manager. So I have this Lindy that helps me manage my network. And so I, every so often I talk to her and I'm like, hey, I just met this guy.
+
+He's awesome. I really wanted to stay in touch with him. So I'll show you an example here.
+
+Well, we're going to have to, we're going to have to blur it out. But I added this guy. I was like, hey, like this guy is awesome.
+
+You know, apparently he's the best that other guy has ever worked with. I added him to a spreadsheet. Another really cool thing is that I can talk to this Lindy and I can be like, hey, who should I hit up when I'm in New York?
+
+Or who are like really good salespeople that I know? And then it finds me a list. And then this Lindy I actually also made her observe my inbox and notice when I have booked a flight, which by the way, soon is going to be a Lindy booking flights for me.
+
+And so she sees when I booked a flight because I receive an email confirmation. And she's like, and I can actually show you because right now I'm going to New York. So she's like, hey, like you're going to New York.
+
+This is just like a test email. I sent it to myself. And she's looking in my CRM and she's like, hey, these are the contacts that you should meet up when you're going to New York.
+
+That's so smart. You know what I usually do, which is like dumb, but whenever I'm doing something like this, I'll go onto my Twitter account and just see who I'm following and be like, oh yeah, Flo is in San Francisco and reach out. But it's like, obviously not the best way to do that.
+
+The problem is too few people are on Twitter, which I don't understand. I feel like everybody should be on Twitter. It's like such a boon, but too few people are on Twitter.
+
+Yeah, that's right. Yeah. And LinkedIn is kind of garbage.
+
+Let's be real. No, it's not your real network. Yeah.
+
+Yeah. Yeah. This has been great.
+
+Flo, I'm going to put together a document that people can download that can help them set up their first agents, maybe some best practices, just some notes on how to do it. People can go and grab that. That'll be in the comment section and in the show notes.
+
+And is there one thing you want to leave people with? I will create a custom signup link for you. If you go to lindy.ai slash Greg, I'll create a signup link so that people will get a 50% discount and they get a longer free trial.
+
+Great. So I'll include that in the show notes, in the pinned comment. Appreciate that, Flo.
+
+And why I think it's important that people start doing this is don't listen to us anymore. What are you doing listening to us at this point? Go and get your hands dirty.
+
+Yeah. The frontier has really rushed forward so much right now. It's like we had computers and everybody was still using the fax machine.
+
+And just like computers arrived, all of a sudden because innovation is accelerating and people are still using fax machines. And I'm like, people don't understand right now what's happening. It's cool, dude.
+
+It's really cool. Thanks for sharing it with us. Yeah.
+
+Thanks a lot, Greg. I'll see you around. See you.
+
+See you.

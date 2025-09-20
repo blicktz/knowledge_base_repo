@@ -33,6 +33,12 @@ help: ## Show this help message
 	@echo "  make convert INPUT=document.pdf PAGES=0,2-4"
 	@echo "  make convert INPUT=document.pdf IMAGES=true"
 	@echo ""
+	@echo "OCR examples (for scanned PDFs/books):"
+	@echo "  make ocr-convert INPUT=scanned_book.pdf OUTPUT=book.txt"
+	@echo "  make ocr-save FILE=scanned_book.pdf    # Save as .txt"
+	@echo "  make ocr-quick FILE=book.pdf           # Quick OCR to stdout"
+	@echo "  make ocr-convert INPUT=book.pdf DPI=400 OCR_LANG=eng+spa"
+	@echo ""
 	@echo "Batch processing examples:"
 	@echo "  make setup-dirs    # Create default directories"
 	@echo "  make batch         # Convert all PDFs in $(PDF_INPUT)/"
@@ -89,6 +95,39 @@ endif
 	@output_file="$$(basename '$(FILE)' .pdf).md"; \
 	echo "Converting $(FILE) to $$output_file..."; \
 	$(PYTHON) $(SCRIPT) "$(FILE)" -o "$$output_file"
+
+ocr-convert: ## Convert PDF to text using OCR (processes each page as image)
+ifndef INPUT
+	@echo "Error: INPUT parameter required"
+	@echo "Usage: make ocr-convert INPUT=scanned_book.pdf [OUTPUT=book.txt] [DPI=300] [OCR_LANG=eng]"
+	@exit 1
+endif
+	@echo "OCR converting $(INPUT) to text..."
+	@cmd="$(PYTHON) $(SCRIPT) '$(INPUT)' --ocr"; \
+	if [ -n "$(OUTPUT)" ]; then cmd="$$cmd -o '$(OUTPUT)'"; fi; \
+	if [ -n "$(DPI)" ]; then cmd="$$cmd --ocr-dpi $(DPI)"; fi; \
+	if [ -n "$(OCR_LANG)" ]; then cmd="$$cmd --ocr-lang '$(OCR_LANG)'"; fi; \
+	if [ -n "$(PAGES)" ]; then cmd="$$cmd -p '$(PAGES)'"; fi; \
+	eval $$cmd
+
+ocr-quick: ## Quick OCR convert to stdout (e.g., make ocr-quick FILE=book.pdf)
+ifndef FILE
+	@echo "Error: FILE parameter required"
+	@echo "Usage: make ocr-quick FILE=scanned_document.pdf"
+	@exit 1
+endif
+	@echo "OCR processing $(FILE)..."
+	$(PYTHON) $(SCRIPT) "$(FILE)" --ocr
+
+ocr-save: ## OCR convert and save to .txt file (e.g., make ocr-save FILE=book.pdf)
+ifndef FILE
+	@echo "Error: FILE parameter required"
+	@echo "Usage: make ocr-save FILE=scanned_book.pdf"
+	@exit 1
+endif
+	@output_file="$$(basename '$(FILE)' .pdf).txt"; \
+	echo "OCR converting $(FILE) to $$output_file..."; \
+	$(PYTHON) $(SCRIPT) "$(FILE)" --ocr -o "$$output_file"
 
 test: install ## Test the script with help command
 	@echo "Testing PDF to Markdown converter..."

@@ -1,0 +1,253 @@
+What if you can create ads with AI that were winning? What would that mean for your business? Well, I'll tell you what it would mean.
+
+It would mean that your ROAS would go up, your return on ad spend. It would mean that you might have a really profitable business. So it's incredibly important to know the skills, how to prompt ChatGPT 4.0, which is this new image model that everyone is talking about, to get the most out of it.
+
+But the problem is, how do we know how to prompt these things? Well, I brought on a guy who's world-class at creating winning ads, winning memes, winning visual content from ChatGPT 4.0 so that I can learn how to do it and you can learn too. Enjoy this episode.
+
+This is really fun and creative, and I think you'll enjoy it. We got Jacob Pozo on the pod. This guy is going completely viral with all these ads that he's creating using ChatGPT 4.0, Image Search.
+
+Had to bring him on the pod. Jacob, by the end of this episode, what are we going to learn? Thank you.
+
+I'm happy to be here. We're going to learn, we're going to teach people how to create ads ready for the ad account using ChatGPT. It's in about two minutes.
+
+It's that simple. And not just any ads, banging ads, right? Yeah, yeah.
+
+I mean, these ads are sick. These ads like blow me away every single time. I see them come through.
+
+Cool. So we're going to show four ad examples and give away the prompts. And then at the end, we're going to do two live cooking examples to show you how to do it.
+
+And yeah, let's just get screen sharing and give people the sauce. Yeah, let's do it. Let's do it.
+
+So I guess something to be aware of when it comes to using ChatGPT compared to image examples people might be familiar with, like Mid Journey, Flux, Ideagram, stuff like that, is because it's a multimodal language model. It's not just a pure image model. The prompting is way less important.
+
+And the prompting, you can actually be pretty straightforward. And it has a much better understanding of intent and creativity. So the important thing I found in creating good ads are actually the inspiration images and the product images that you provide.
+
+So my general advice when creating ads, and we can see this first one, which is a really cool one that I created for Jones Run Beauty, is providing an inspiration ad that you wanted to adjust or you wanted to use, and then providing your own custom image. So we can read through the prompt, and you can see it's actually fairly basic. It's just add this image to the top of the ad with the product image overlapping the bottom of the image and the heading and subheading below.
+
+So we can see the original ad, which is the Jones Run Beauty ad that I pulled from just an inspiration source. And then the image that I'm referencing, just an image from their website of a woman kind of displaying that product. And if we take a look at the actual ad itself, it followed those instructions really nicely because GPT-4 is like a really, really intelligent model.
+
+And so it understands my intentions really well. So you can see we have that woman at the top. We have the overlapping products, overlapping the bottom of the image, and then we have the text below.
+
+So you can see like taking an inspiration ad or taking kind of a reference ad and then providing your own imagery is a really nice way that you can create super consistent and reliable ads by just making edits or adjustments to them. And if you really want to play with conversion, you would just take, you know, 100 characters, you know, men, female, old, young, all different colors and see what converts for different audiences, right? Exactly, yeah.
+
+So, I mean, you may have certain key audiences or personas that you're trying to target with your ads. And you can just, you can generate your own images because ChatGPT is amazing at creating photorealistic images of different audiences. Or you can pull in your own from your own photo shoot and just throw them in here.
+
+And when the API becomes generally available, this is going to be trivial. It's literally going to be like, this is your inspiration or like reference ad. These are all the different audiences, just like boom, boom, boom, smash them out.
+
+And you'll have 100 ads waiting for you in like five minutes. Yeah, and why that matters for people is because ultimately, you know, the game is how do you create ads that convert? And it's really a game of experimentation.
+
+So what this does is it allows us to experiment at scale. And you don't know if it's like this woman looking to the left or looking to the right or with blonde hair or with red hair. That's going to be the difference between, you know, a 2, you know, 1.6 ROAS and a 2.8 ROAS.
+
+Yeah, yeah. Marketers have these saying nowadays that the ad is the targeting. And this is just a way that you can actually do it at scale.
+
+Cool. I love that. Can we, I mean, this is a simple example.
+
+Like I get it. Let's see something else. Yeah, let's do it.
+
+Let's go to this one, which is a little bit different with no reference images. So this ad is an absolute killer. Can I ask you something before you get into it?
+
+When do you know to do a reference image versus not a reference image? So, okay. A super important thing to understand about these models is that they have a really good understanding of well-known concepts, ideas, brands.
+
+So it knows Nike really well. It knows Adidas really well. Even like the classic online e-com brands, like it knows Ridge wallets really well.
+
+And so in that sense, you can prompt it and you can just say like a Ridge wallet, you know, and it will understand what you're talking about. But if it's your own product that is relatively new, relatively small, and you don't have a lot of online presence, and I'm talking like a lot of online presence, like millions of dollars in ad spend a month kind of presence, then you should always provide a reference image. But for like Adidas, everyone knows Adidas.
+
+And so it's going to do this. It knows it really well. Cool.
+
+I didn't know that actually. So that's helpful. Yeah.
+
+Yeah. It has a really good understanding of certain things and others it just doesn't know. All right.
+
+Let's rip through the prompt. So this prompt is one from Sora. Sora has like their own explore page.
+
+And I found this one and I thought it's really, really incredible. But it has a lot of really good lessons in here. So you can see using the ultra realistic or photo realistic keyword is really important for creating photo realism images.
+
+Otherwise, it can sometimes default to something that looks a little bit cartoonish or weird colors. But photo realism, it is strong. But using that keyword is important.
+
+And then you can just see it's a really strong prose description of the image. A female runner is captured in mid stride running laterally in the foreground, wearing her performance gear behind stands, the Egyptian desert with the pyramids. So this one is fairly long, but it's a really detailed prose description of your desired image.
+
+But you can see it has some really nice other elements like font type XO2 bold italic, stuff like that. For it's a similar concept for well known fonts. It is going to have a decent understanding and representation of what those fonts mean, because it's seen enough of that content on the Internet.
+
+So people can mess around and play around with that similar concepts are like in order to make adjustments is like styles, like color styles and also aspect ratios. You can make adjustments in the prompt aspect ratio similarly. So here's the ad.
+
+You can see it's very creative. You can see the woman running with the pyramids in the background and the Adidas shape, something just really creative and really nice. And that was like literally impossible to do before.
+
+So sorry, did you say that use Sora for the prompt? Is that what you said? So I highly recommend people check out Sora.
+
+Sora, it uses the same underlying model, but they have an explore page where you can see people. It's a really good way to understand how people are prompting and how the best prompts work and to get and for ideation. If you click on any image in their explore page, it shows you the prompt.
+
+So can we just check that out real quick and do a little detour? Yeah, of course. So this is a piece of alpha that people do not know about right now.
+
+I don't see anyone talking about it. Another really cool thing is I think Sora is better at it has less strict policy guidelines and it's better at photo realism. I don't actually understand why that's the case considering they probably use the same underlying models, but I think that it's less strict.
+
+So if you can see an image came through, for example, of this guy. Kind of Post Malone energy. Yeah.
+
+Yeah. Like, but hyper photo realistic. Like that is, that could be a photograph, you know?
+
+Like, we can click on it and you can see the prompt. If Weird Al and Post Malone had a baby. Yeah.
+
+But you can click on it, you can see it and you can also adjust it or edit it. So I could come in and I could remix it from here. I could adjust the prompt myself, you know, so I could like literally just start rewriting things.
+
+Or I can change the aspect ratio or I could upload my own reference images. So yeah, very, very, very cool. You can see here, I could like upload a reference image to make adjustments, but it's just a really, really great place for people to go through and just scroll through and understand, look for prompts that may work for them.
+
+Some of them are ads that you'll be able to see and you can make your own Clipper adjustments that way. Yeah. I think what's really cool about this is this gets your creative faucet going.
+
+So I think the game right now is looking for an aesthetic that isn't being used in your space. So if you can figure out how to do that and just sort of explore this and be like, oh, wow, this would actually really, this like pick up a lot of things. This like picture of, you know, the Grand Theft Auto thing would be really cool as a meme in whatever space that I'm in.
+
+Boom. All of a sudden, like that's going to get you a bunch of likes, going to get you a bunch of followers, going to give you affinity. So that's what the game is about.
+
+And I love this because I'm always struggling. I'm actually struggling with the prompts, to be honest. Like, I don't know.
+
+I know that, you know, sometimes I'll throw in a word like hyper realistic. Like it takes me a while basically to get to that word hyper realistic. And I'm just like wasting time.
+
+So I think what's cool about this is it shortens the time to value and also gives you ideas that you wouldn't otherwise have had. Yeah. Yeah.
+
+Yeah, absolutely. I think that like the reference images is a really good way to shortcut like the prompting issues. But if you need help with prompting, I mean, it's really important to be very clear, very direct in what you want.
+
+And another piece of information is if you struggle with the initial prompt, it's important not to carry on in the same conversation and try and adjust your image in the same conversation. Because you generally get the recycle of worse and worse rather than actually improving because it's using the generated image as its reference for the next one, which can have its own inherent flaws. So I always tell people if you want to adjust a prompt, start a new chat and make the adjustments to your prompt in that new chat.
+
+And the images are going to be consistent enough that it's going to be similar to the one that you first got with the improvements in your new prompt. So that's something else that is important when trying to prompt and create these things. Should we move on to the next example?
+
+Yeah, let's do it. This is another example of product image plus reference image. So you can see I found this original reference image for Rise.
+
+I then took the Athletic Greens product imagery and I just gave it some really clear prompts. So I said recreate this ad for AG1, adjust the background to benefit Athletic Greens style, change the price. You can see over here to $110 slashed out to $85 now.
+
+And then I said generate the image. The reason why I said that is sometimes it will try and generate text, which represents the ad. If you just say generate the image, you're going to consistently get image results.
+
+And I mean, if we look at this ad, it's sick. Like it really got it well. It looks amazing.
+
+It got these like icons over here. It even got this like cool gradient color in the background, which is really incredible. Change the background, as you can see.
+
+Place the images, which the products, which look incredible. It got the pricing right and the copy is pretty nice. And like it fits really well.
+
+It's centered and everything. So, I mean, this is probably a runnable ad and it was very, very easy to make. Yeah.
+
+And it's, you know, a couple of things going through my mind. One is like it somehow feels dirty though. You know, it's like in the sense that, and I'm curious your perspective on this, like that other company, RISE, spent all this time and money, maybe even tens of thousands of dollars figuring out this ad and ad copy.
+
+And then in like a few seconds work, I mean, we're kind of, we're remixing it into, you know, for age one. So I'm curious, like, how do you, is it dirty or am I just too clean here? I mean, to be honest with you, the way that most of these companies work is they are finding inspiration ads.
+
+There's like 50 companies that do this. They provide you inspiration ads or they're getting templates, which are recreated ads in Figma files or Canva files. There's companies that basically just do this at scale.
+
+And this is how people are making ads right now. So I don't, I don't think this is dirty because I think this is, was already happening. It was just happening physically.
+
+People were looking for inspiration. They were, they were using templates. Now, ChatGPT just lets, just does it for you.
+
+So, I mean, from what I've seen, this was already happening. This is already happening. Yeah.
+
+This just makes it a bit more accessible to anyone, but it was already happening. All right. Let's, let's move to the fourth example.
+
+Yeah, let's do it. Last one is I wanted to show was changing the concept of an existing ad. So, um, I found this Ridge ad, which was, um, which is kind of a black Friday ad with a gunmetal wallet.
+
+Um, and I swapped it out for this green, um, Ridge wallet. And I said, swap it out and change it to a Christmas style ad. And I mean, there we go.
+
+It's definitely a Christmas style ad for this wallet. Um, and yeah, you can see again, the prompt is because the reference images really, really do a great job of, um, of replacing the need for super strict prompting. Um, it's like a picture's worth a thousand words.
+
+That's literally the case here. Um, so very simple prompt and we can take a look at the ad. It's pretty, it's pretty great.
+
+What do you think? I think, yeah, I like it. It just gets me thinking that there's like, there's the big tent pole, you know, major holidays, the Easter's, the Christmas, the New Year's, Valentine's days.
+
+And there's probably a bunch of like little funny ones, you know, like national hot dog day and stuff like that, which you're, there's probably alpha and focusing on that. There's probably also alpha and targeting people on their birthday. It's like happy birthday, 30% off by Ridge wallet.
+
+Oh my God. That is, that's, that's a great idea. So I think, I think this is, this is what excites me about all of this, right?
+
+Is, is, I mean, is the fact that the targeting is going to get a lot more personal. It's going to be a lot more funny. It's going to be ads are going to be a lot more entertaining and it's, it's really up to, you know, the idea people to come up, come up with these ideas.
+
+I'd love to show you this one that I put together. Um, which, which relates to that, which is, um, I, I took an ad. Um, I wanted to do one for rippling.
+
+Did you see the rippling deal controversy with the spy? Yeah. Um, so we'll wait for this one to load, but you, companies now have the ability to take advantage of, um, short, like new cycle moments.
+
+Like they never could have before because it was expensive, prohibitively expensive and slow. So, um, I wanted to make an old wall street journal style newspaper ad. Um, and it's rippling so good.
+
+Our competitors can't even resist sneaking a peek, which I thought was pretty funny. Um, but yeah, it's like, it's a different style to what they'd be able to do before. It's got really clever, funny copy and it takes advantage of a moment, you know, and this could, you could have AI just like ready to do this, like watching Twitter, watching, um, some other news feed that you want.
+
+And just like, it's just on it. And these could be produced on mass. And where, you know, you mentioned, I think it was with the, um, well actually with a lot of these, you're getting these ads.
+
+So where are you getting these ads? You're going on meta, meta's ad library to get these ads. Like where could people basically get ad inspiration?
+
+Yeah. The one that I use, um, is creative OS. They have their own inspiration and templating tool.
+
+Um, some other good examples are foreplay. Um, I think the recent stuff. Um, icon.me is one that recently launched that has all of these.
+
+Um, it's basically becoming a staple of any ad building tool. Um, so they, they basically read in the meta ad library, they tag them and they make it easy to search over them. So creative OS foreplay, those are some really good ones to check out.
+
+Cool. Um, those are our four examples. Um, do we want to do just live cooking?
+
+Just live cooking one or two, just to, just so people can get in, in your head as you know, you're coming up with ideas and what you're thinking about as you're doing it. Yeah, absolutely. Let's do it.
+
+Do you have any, um, any companies you want to, you want to use or target? I mean, we can use my, you know, my own company, I guess. Or so, um, like I'd love to create an ad for one of my own companies.
+
+Okay. Which one? Um, how about LCA, which is our design agency for the AI age?
+
+Um, so we work with like Dropbox and Salesforce and figuring out what are their AI interfaces look like and help them figure that out. Um, we've never done ads before. So it would be cool to try it.
+
+Let's do it. What's the domain? Late checkout dot agency.
+
+It's like literally a landing page. I'll, I'll talk people through exactly how I'm thinking about this. Um, and like the important elements of an ad.
+
+So, um, the important elements are this logo up here and specifically kind of your typography and this use of bolding and italics, you know, like it's really important to capture, um, as well as the coloring. And then also some of these, um, these, these, like maybe these brands that you work with. Like I really liked this aesthetic.
+
+So I probably begin by, if this is an image, I'll copy it. Okay. It's not.
+
+So I'll just, I'll just take a screenshot of it. It's fine. Um, like that.
+
+I just took a screenshot and then I'm taking a screenshot of this too. Um, and then maybe kind of this down here as well. Um, and can you kind of, uh, this, down here as well.
+
+And can you see that I'm taking screenshots by the way? No. Okay.
+
+I'm taking, um, I've taken screenshots of, of this content over here, this stuff over here. I've taken a screenshot of this content and of the logo too. Um, so next thing I might look at, um, uh, I would think like, okay, do you have any inspiration sources that you would want to use, um, for, for the ad?
+
+Um, or do we want to kind of just like, um, do we want to kind of just like YOLO it? I think like the newspaper style theme that I put together could work really well for this. Cause you've got that like paper theme.
+
+Um, but you tell me what you think. I mean, I'm down to try that. Um, okay.
+
+From a brand perspective, like LCA works with only a dozen companies per year. And it's, if you look like the whole vibe is like, it's almost like we're a SWAT team, like, and for your executive team. Right.
+
+So it's like pretty working with SVPs of Salesforce, CMO of Slack. So it's very, it's almost like we're selling a luxury product. So when I think of like brand inspo, I'm like, this is more like a Patek Philippe.
+
+You know what I mean? Um, and what I don't like about the newspaper is like the newspaper is like, you know, when you're thinking of design from for AI age, you're not thinking about a newspaper, right? This is like futuristic.
+
+Yeah. Yeah, no, absolutely. Okay.
+
+Let's, do you want that? Like, like that vintage style or do you want like a futuristic style? Cause I'm thinking like one of those old vintage Rolex, um, ads could look really great here.
+
+Yeah, that would be really cool. Okay. Let's, um, if I, if I go to another tab, I'm typing.
+
+I'm typing vintage Rolex ad. Okay. We can see if there are any here that we like.
+
+Otherwise, um, tell me if there's any that are like kind of, um, that, that you particularly like, or we could ask, or we could just try prompted to do one. Oh, go down, scroll down. The guy pointing.
+
+This one. Yeah. Okay.
+
+Let's try. I mean, why? Like, I just like the, I don't know the color stand out.
+
+Yeah. It's kind of like, it's like, Hey, do you need AI? You know, you need AI interfaces.
+
+He's a bit sad. And, and from a conversion standpoint, like you, you often don't want like sad, angry people. You want like happy people.
+
+Mm-hmm. Okay. Sick.
+
+Let's do it. Um, so we're going to go to chat GPT. It's just loading.
+
+There we go. And we're going to make sure that we have GPT for. Oh, and now I'm just going to like bring in those images.
+
+So I've got this one, I've got this one and I'll show them again. Um, and then this one. Um, so we've got, um, kind of the, who you work with.
+
+Um, we've got the, some other kind of copy and the logo. Um, and then we've got the inspiration ad. So couple things to be aware of that may cause this to not work well.
+
+We do have to specifically prompt it to write English. Otherwise it might get confused there. Um, and the text is a little bit kind of like low res over here.
+
+So let's, let's see if we can, if we can try and make sure that, um, that comes out well. So. Do we need to say like, this is a print ad and we're, you know, that we don't want to print ad.
+
+It's just inspo. We want to create something digitally. Yeah.
+
+Yeah. Um, let's begin prompting. So I'll tell you how I'm thinking about it, of it.
+
+So we're going to start with the initial instruction instructions, generate a digital ad for LCA. Um, let's check out agency. Um, it, it probably doesn't know who you are.
+
+Um, I'm just, I'm just going to assume it doesn't. So LCA is a SWAT team slash, um, how else would you, would you describe it? SWAT team slash design agency for, you know, the most interesting brands on the planet.
+
+You know, using AI into this, doing AI office or helping them with AI... see what kind of companies did both companies and corporations on the planet. This should be able to use 360 values toㅋㅋ scale is...
+
+Roger, any kind of tech somewhere. like, watching AI Sealòng on our planet. And do you know why these products have known schemes as matching to what․ others about costаньourente today?vilians, on realч fame or building AI-based products for example, ermm, or using AI forms of retail-AK, etc.
+
+It only works with the best companies. okay it only works with the best companies so because i'm telling it this it may cup it may kind of focus on this in the copy we'll see but that's kind of what my intuition is telling me um i have provided some screenshots from their website for you to use as um inspiration in the ad as well as a reference vintage rolex ad um as inspiration you can use this um use this to capture the luxury um feel live or feel yet of the company so generate a digital ad for lca late checkout agency lca is a swat team slash design agency only for the most interesting brands on the planet helping them with building ai first tools it only works with the best companies i have provided some screenshots from their website for you to use as inspiration to add as well as a reference vintage rolex ad as inspiration use this to capture the luxury vibe of the company um so we've got kind of main instructions and context and some more specific instructions we are a little bit uh vague here because we haven't given it strict instructions but that's also because i don't actually know exactly what i want to get out of this and so i'm hoping for to leverage some of its own inbuilt creativity um so let's um just say generate the image and and by the way before you hit go yeah could you say generate three different versions of this is that crazy um right now um i think chat gpt just does one at a time and i think that's on purpose because the gpus are kind of going crazy um sora you can't control the number that you generate i think you can generate up to four so sora is like basically the exact same thing and maybe we could show people afterwards but i'm just curious just curious yeah yeah um that's 100 coming cool okay um any last adjustments you want me to make before we go for it no i trust you and jacob i trust okay let's see um so this is what i would generally say is like a higher risk ad you know um when i prepared some of the other ones like i knew it knew what ridge was i knew it knew what ag1 was um and i gave it really strict instructions um but i'm really curious and really interested to see how this does um it's kind of like relatively vague and we're kind of relying on its creativity um in a relatively less well-known kind of company or product so um i'm actually really excited and curious to see how this does and i think it will be really relevant to people if it can do well um so it starts off fully blurred and it's going to slowly generate from top to bottom that's a good sign and we can just kind of wait and see how it goes and how often are you one shotting these ads you know or is it more of it takes three four five seven back and forth to get to something that really works depends depends for something like this it's usually like two or three times and i think that's fair to to kind of assume it's not going to one shot my intention or my taste every single time um but for some of the ones that i demoed that was first try because again it's it's low risk because i gave it strict inspiration um i gave it um i gave it a well-known product that i know that it understands and it's an ad that fits really well um for the kind of product that i gave it but but this we're kind of mashing up together a lot of different themes and a lot of different styles dude i'm loving this already generate yeah it looks sick it kind of reminds me of uh some of the perplexity ai ads i don't know if you've seen those yes yes oh that's that's good copy or at least i like it leaders a billion dollar brands choose lca to define their future i like that yeah so we got the man pointing with the fire in the background he looks like he's at a golf course or something yeah this is the craziest game of golf of his life um i hope the logo looks pretty good and it got that typography nice oh it's generating the watch okay so that's something now we know um that we don't want the watch there that we want to replace it with some other product um it adjusted the copy for us but it changed the brand of the watch which is funny it might have thought that this is a this is a watch brand but okay this is like important this is something to understand this is what we know um and um okay sometimes it gets sometimes it gets caught like this so but it tells us that the image was created so i'll just refresh the page and it should generate the whole thing the lca rolex hilarious it is hilarious um okay this is either a combination of my internet being weird or um open ai is struggling but this will come through i saw sam was like our gpus are melting quote unquote yeah yeah literally i think like this this moment okay there we go um this moment for them was probably as big as chat gpt itself yeah but i think that looks that looks really good to me um it like kind of got the right vibe that we wanted it got the copyright it turned it into a more digital style ad with like the cta over there um what i would do now um and this is a really important principle to understand is i would take this um and i would tell it i would do this in a brand new chat do you want do you want me to go through the next stage here um yeah let's do it um so i would literally this is going to be a little bit of me stumbling around let me just make sure all of these images are saved um so instead of you just replying in the same thread we're going to open up a new thread yeah and um yeah it's not like entirely entirely the most important thing in the world um because we haven't provided it a strict reference product to go off of but i personally have found that it produces um superior results because it's going to be using that previous image as its reference and that image is still ai generated so the text is still a little bit worse than pure than your um text here the logo is still a little bit worse because it can never be more perfect than the reference like that's kind of inherently impossible and so it's always going to get a little bit worse over time um so um what do we want to replace the rolex with do you have any ideas i mean we can a couple of things come to mind like one is we can show some of the some of the design work that we've done but i feel like that might be a little too like i don't know what do you think is that a little too obvious should it be a bit more abstract um i don't i think it would be cool to maybe show the companies who you've worked with that's like maybe yeah let's do that addition um rather than generating a watch um show some of the companies lca has worked with provided in the reference images okay so i've created a new thread um and i'm giving further instructions so um you can see we've got the original stuff um rather than generating a watch show some of the companies lcs work with provided in the reference images i'm just like making sure that it knows um making sure that it knows where it's coming from so it doesn't um think to hallucinate or make that up um and i think that's it so any last additions you would want to make before we go for this let's let it rip all right let's do it so how different do you think this is going to be like are we going to still get the same dude up top basically or like what are you thinking i would assume so so there's like this concept of temperature when it comes to um llm so temperature is the amount of randomness that comes out of each input given the same each output given the same input um and i think the temperature on these is quite low so um generally if you give the same prompt you can expect a similar response um so for example if you generate people um and you use kind of a similar in this a similar prompt the people will come out looking quite similar so i i anticipate that it will be quite that it won't be very different but the image will be um the the like rolex should not be there anymore the wash should not be there cool and then from like a dimension standpoint right like i want to be able to take this and actually like run it on meta run it on different platforms do you have to specify dimensions um it usually defaults to 9x16 but you can specify like 1x1 9x16 um different aspect ratios cool and while this is loading up should pepper you with questions yeah the um like have you played around with taking some of these images and turning them into video content because a lot of these ad platforms are running video right i've seen people take my ads and turn them into um into video like animate them at least um a lot of people will do that for kind of like um for um like dpa ads like the display um ads but um i haven't turned them into super strict um into like pure pure video but i've seen animation of them but um i would recommend testing out like runway and sora and stuff like that and being creative though um so okay we can see it is a little bit different we now have lca there is he wearing a rolex it looks like it yeah his um his he's no longer pointing he's now showing the watch which i don't know if i'm fully against at all you know what i mean like it's a bit it's less it's less jarring it's more of like you know fist bump yeah yeah okay same thing i got caught um so we'll just refresh and it will come but boom yeah it's pretty it's pretty dope it's pretty cool it's got the it's got the logo right design firm for the ai age with the um subheading and all the different companies you work with um fortunately you guys work with well-known companies so we got their logos right which is um a little hack for you guys actually there's one company on this list we don't work with that they included which is disney oh interesting not that i know of i don't think we work with disney um okay not that i know of but uh overall this ad looks it looks really really dope yeah it's a cool ad and like it's not it's probably not something that you would have put together and it's only been like 10 minutes of us testing it out and we put it together um if we wanted to get more um if we wanted to get it more guided towards something that you like um i can talk through how we might prompt that so like we may if we do one in pointing we can't specify the man is pointing um if we do did want to be stricter with the logos we would say include all of these logos and we would specify them by name um if we wanted like the previous one if we wanted on the side the text on the side with the image on the right then we could have specified that so now we have kind of the idea of what's coming out what might come out and now we can specifically prompt and specify what all of the different um the different ways that we want to adjust this because our prompting was kind of like relying on its creativity and it did a really good job there but now we have the kind of the creative juices flowing to be able to guide this towards exactly what we want i love it man this has been fun i appreciate you uh dropping the sauce giving the frameworks giving the principles giving us uh an inside look into your head i appreciate the free ad that you generated for us here this is my team um jacob posel appreciate you we'll include links to follow jacob in the show notes um appreciate you and uh if people want more of the live cooking around ads how to create them um please let me know in the comment section and we can do more episodes on that i personally believe that this is an incredible time to create memes uh ads uh creative like this and stand out so um now's the time appreciate you thank you thank you it was a lot of fun all right my man see ya

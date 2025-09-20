@@ -1,0 +1,263 @@
+Super excited to have Lee here. Lee is the VP product of Vercel. Everyone who listens to the Startup Ideas podcast, you know what Vercel is.
+
+You know a lot of the products that they come out with. Today, I wanted to talk to him about really just how do you get the most out of V0? He's been kind enough to be like, yeah, I'll tell you how to get the most out of V0.
+
+So thanks for coming on, Lee. Yeah, thank you for having me. I've been watching a few of the recent episodes and I've been in good company.
+
+So this should be fun. Absolutely. You're one of us.
+
+You're an idea person. Hey, ideas guys. We're the future now, right?
+
+We're the new builders. Finally, finally. Cool.
+
+So where do you want to start? Maybe just set a little bit of context for folks who are tuning in and maybe they've heard of Vercel, but they haven't heard of V0. Let's quickly talk about that and then we can do a demo, get into how to use it and all that other stuff.
+
+So V0 is a product that we've been building at Vercel. You can kind of think about it like your AI assistant specifically for web development. You know, there's, I think in the future, there's going to be tons of hyper specific AI tools for everything that you need to do.
+
+And the part that we're really focused on, you know, selfishly for our own needs, we want to use it to build our own things is the web. It's working with JavaScript. It's working with HTML, CSS, all these new frameworks, all these new tools and libraries that the frameworks integrate with.
+
+We're trying to make it just as easy as possible to get high quality stuff out of that and ultimately high quality products. Because at the end of the day, this is all just ones and zeros for the products we're trying to build and, you know, ultimately make money from. So that's really what we're doing with V0.
+
+And yeah, I'd love to walk through some of the things I've built with it. Talk a little bit about how I think about getting the most out of it and, you know, maybe pick up some tips and tricks along the way. That sounds perfect.
+
+Yeah. I've done some V0 videos, but to be honest, it's been just trying my best to get the most out of it. So it'll be really interesting to hear it from you because you just, you know, coming from V0, you have a more intimate relationship with the product.
+
+And I've learned that. I just interviewed Amjad, the CEO of Replit and him showing Replit. I was like, that was really cool because I saw Replit in a completely new way.
+
+Mm-hmm. But I need to see V0 in a completely new way. So thank, let's, yeah, if you want to share your screen, we can get into it.
+
+Yeah, let me do that. I'll share my, I pulled up some V0 chats that I have and I'll walk through a couple of them with varying degrees of UI completeness. The first thing I will say is like, you can of course use V0 to make great UIs, but you can also do it to do backend work.
+
+And you'll see, as I kind of dig into this more, I'm not just making it look nice. I'm also starting to add interactivity. So my first tip, which is probably obvious, but starting with screenshots is actually super helpful.
+
+So I wanted to build something similar to Spotify, but way more information dense, just a nicer looking UI. And some of this is, you know, your own opinion, your own taste and what you think the thing should look like. So I had an opinion going in.
+
+There's kind of two different creative modes to go in for me. It's like, one, I have an opinion. Two, I don't really know, just let the AI paint things for me.
+
+And then I'll kind of see what I'm working with. Just to kind of quickly pop over to this one. I didn't really know what I wanted, build a page where I can post a link, hit a button, and it'll send it to Slack.
+
+Like I wanted to build this little thing that integrated with Zapier. I didn't really know what I wanted the UI to look like. I didn't really know what I wanted the code to look like.
+
+I just said, this is kind of a thing I want to do. Just build it and let me get back to what I was trying to do. And it gave me this, it was basically a one shot.
+
+It gave me this component. I was like, cool. I took it, you know, put it into my app, put it into my code base, and was kind of done with it.
+
+But going back to here, I was more so I had an idea about this music player. I wanted to kind of iterate on it. So started with a screenshot and it tells me a little bit more about what it's doing.
+
+The first version I'm on V12 here. First version was not that great. It was okay.
+
+Like it's got the shape of what I needed to do, but it's not, it doesn't have the design sense that I wanted when I got to, of course, this V12 version that's quite a bit better. So if I scroll down here, you can see some of the things that I actually asked it. Make it have warmer grays.
+
+Use a nice sans serif font. And if you say from Google font, from Google fonts with next font, it knows exactly how to import that. It might figure it out automatically, but I just do that intentionally make the UI have a tighter information density.
+
+So it's like, okay, I'll update some of these things. I'll change some of the colors. Then I said, oh, the time playing bar should be longer.
+
+The search input should have an actual input in it. Add more realistic fake data for the songs. So now let's see, we're already like decently closer to what I wanted.
+
+Like I'm looking at these rows and they're still not really as tight as I wanted. This thing on the right is kind of confusing, but it's okay. So I keep going.
+
+I say less vertical spacing between the rows. Each row should have the album art to the left of it. Make the default value of the search input electric.
+
+The playlist name should be aligned with playlist. Make the album image art smaller. And you'll notice one tip here that I start doing is V0 thinks in Tailwind.
+
+So if you've ever used Tailwind CSS before, you can just tell it kind of explicitly the Tailwind class that you're looking for versus letting it, you know, try to figure out, figure it out on its own. So I said, make it size four, just make it that exact value. So now it's, it's looking a little bit better.
+
+And some of this, I'm, I'm getting its ideas on what it thinks the UI should look like. And it wanted to put the artist name underneath the song name, but I didn't really like that. So I'm like, let's put the artist names in a column versus under the title.
+
+Use this as a placeholder image for all of the albums. Use electronic music for all of the placeholder data. So you can upload and paste in images, and then it can use images or other files in the actual designs.
+
+Don't tell anyone, but I've got 30 plus startup ideas that could make you millions and I'm giving them away for free. These aren't just random guesses. They're validated concepts from entrepreneurs who've built a hundred million dollars plus businesses.
+
+I've compiled them into a one simple database compiled from hundreds of conversations I've had on my podcast. But the main thing is most of these ideas don't need a single investor. Some cost nothing to start.
+
+I'm pretty much handing you a cheat sheet. The idea bank is your startup shortcut. Just click below to get access.
+
+Your next cash flowing business is waiting for you. So now, like once you start adding images, you can really start making things look a lot better. And you realize how much of web design is just topography and imagery.
+
+So that's also a huge, huge piece of making it look nicer. Make the playing track a little less wide. You'll notice I'm not, I'm using just kind of normal language, like talking to it, how I would talk to my designer, like, Hmm, that now playing bar is pretty wide.
+
+Like I would probably make that less. Don't make sure that the lines don't break into two lines. Make the width of the column smaller.
+
+And then again, this is where if you have some preexisting web design, CSS knowledge, you can really steer the assistant in the right direction. Like I already know there's this CSS property called tabular nums, which is going to make sure that all of the numbers are vertically aligned. So I said, please use that.
+
+And that helps me get to something that I think is looking pretty good. This one's fun. Make the table mobile responsive.
+
+So I was here. And I think what I was looking at was I went like this and of course not responsive. So I just said, make it responsive.
+
+And, uh, I think did a pretty decent job of like something, but it wasn't really great yet. So I said, I can't see the table of songs cause the image is so large. Can you fix it?
+
+And now, now we're talking. So now it's like something that's a little bit better. You'll notice there's this air, like, I think it was struggling to import this scroll item thing, but I can probably fix that later.
+
+But now we're at a point where like, it's mobile responsive. It's a little bit better. And I got, this is pretty much all of here.
+
+I ended up forking it, which I can do in the top, right. And I started going a little bit further. I said, let's break this out into components and let's start trying to add some logic to it.
+
+So I took it from here. And I think I also said, let's make the colors a bit darker. I liked this version, but I wanted to experiment and see what darker grays would look like.
+
+And I think I liked this a bit better. So I just kept going, kept going in here, adjust the color scheme to be darker than the original, but not full black and so on and so forth. So I'll pause here in case you have questions on, on this one.
+
+So some people listening to this, like some are engineers who might not be great designers. Some are founders who may not be great designers. And I've noticed that you have the touch around steering v0 in the right way.
+
+Like you have a foundation, it sounds like, of saying the right words or understanding is this, you know, what's the difference between a Serif font and a Sans Serif font? And my question to you is, before you even touch v0, is it required to kind of learn a little bit about how web design works? And if so, like what, what sort of advice do you give to folks?
+
+Mm-hmm. Yeah, I think if you have pre-existing knowledge of some of these things, you'll be able to fly faster, but it is not a requirement. And I think as with most like development learning categories, sometimes you just don't know the right questions to ask.
+
+And I think one thing that any of these AI assistants can be very powerful at is helping give you some questions to ask. So you might ask v0, I am a novice at design. I don't really know how to make my design look better, but it's just lacking something.
+
+Like, what do I have to do to make it look a little bit better? And we could even just go in and I don't know, let's see what it says. Like, I'm a novice at web design.
+
+I don't know what I'm doing. What can I try to make things look a little better? Any common practices or patterns?
+
+And I'm really curious to see what it says. I can kind of gut check that with my understanding of web design, which I'm not a designer, but I have some opinions on the taste. And we'll see what this says.
+
+Consistent color scheme, stick to two to three main colors. Yep. That's one of the things that v0 is going to do by default is use Tailwind, which inherently uses a design system.
+
+It has a grid of colors that are going to allow you to kind of stick to some of those best practices. Implement white space, padding and margins, give the elements room to breathe. Sure.
+
+Readable fonts, use sans serif fonts for better readability. So maybe I would say, what is a sans serif font? And what are the differences?
+
+I'm going to get that queued as a follow up. Some of the other things in here, what consistent, the layout is aligned and organized, it's responsive, includes images. It's focused on essential information.
+
+And some of that stuff's good. What other things in here use high quality images? I mean, that's an obvious thing, but it actually makes a huge difference.
+
+You realize just so much of the web. If you go look at like Apple's websites, the majority of it is really high quality photography. So sans serif fonts, you have also serif fonts.
+
+And this is kind of a cool visualization of the different letters. I like to think of the serif font as like reading an old timey book. Cool.
+
+Yeah. So I think what you're saying is sometimes in order to go fast, you need to go slow. You have to, like you can ask some of these questions, learn, and then sort of go back and just develop taste through the process of learning.
+
+Mm-hmm . You know, the reality is it's probably going to be better to learn. I mean, I do think that like it's helpful to follow interesting people on Twitter, you know, designers on Twitter and, you know, get a book here and there on this stuff, but I think that, you know, prompting v0 as a way to learn, especially while you're in the product seems like it makes sense.
+
+Okay. What's this? Yeah.
+
+Check out godly.website. I know there's a bunch of sites like this, but it's basically design inspo. So you can go in here and filter by startups and just get a bunch of really beautiful looking websites, you know, click in ever vault, which is a super awesome website.
+
+Definitely check them out. Just got some cool stuff. You can see other similar things.
+
+I look through here all the time just to get inspiration. And again, because you can start with screenshots, you can start with these, not with the intention to copy any of these designs, but to at least get some of the bones, right? Like sometimes you don't even know how to get the right layout or the right elements.
+
+Like you don't know how to think in, give me a three column grid that has two, like, that's not the language you're familiar with, but you are familiar with, I don't know. Let's go to like pricing pages. Is there a pricing page on here?
+
+Pricing. No. Let's see.
+
+There's another one I use also. Patterns. Have you heard of that one?
+
+Oh yeah. Yeah. That was, that's a great one.
+
+Like, uh, let's see. Like this one's pretty cool. This might be a pattern that you want, but you didn't really know how to put it into words.
+
+And you might be able to build something like this, like large section at the top, and then a five column grid below it with scrollable areas. That makes sense. Totally.
+
+Yeah. Um, startup idea, by the way, someone needs to do godly website, but with like, here's the, here's like potential prompts that you can do for zero. Um, I think that would be really, really valuable.
+
+Yeah. I mean, one thing just to build off that, um, V zero is built on top of this system called shad CN UI that allows you to build your own component library. And the idea with V zero is you should be able to take the code that it generates and it's not throw away code.
+
+We're trying to give you real react components that use the same technology you would build for your production website anyway. So you don't have to re architect the whole thing later. And what shad CN UI does is it gives you kind of some of these UI patterns.
+
+Like this is a real component for a mail app, a dashboard app, cards, tasks, uh, AI model, playground chat forms, music player. You can take this and basically fork it and put it in V zero and get started building something from here. And then when you want to make it look unique, you can customize the themes, you can change the colors, the spacing, and now you have something that kind of looks like your brand.
+
+This is all the foundation in which V zero is built on and it speaks this same language. So you can even say like, give me a component for the, um, date picker, for example, and it's going to know about this, this widget. I like it.
+
+Maybe, um, another one that's interesting to show, um, V zero has the concept of projects. So I have a project for a music player where I've asked some follow-up questions to it. Um, another one that I started building was this kind of SAS landing page.
+
+I'm trying to see which one was the first one I started with. I think maybe it was this one I forked, I started with the pricing page and then I ended up forking the colors and the font and the general vibe for the landing page. I was like, let's make the homepage version of this, keep the same nav bar, but we want to give it some, this like SAS template.
+
+So let's highlight some things. Let's make a CTA that says deploy your own. Um, and I think I'll just be able to see what we got on this first version, this looked pretty basic.
+
+So I said, let's not use cards. Let's make it very minimal, no white backgrounds. We kind of want it to go vertically and use maybe a list of items.
+
+So that's a little bit better. I said, I just said, try a different style. Like, I don't really like it.
+
+Just try something else. And then it gave me this and I was like, okay, I think we're a little bit closer. Um, instead of an image in the hero, do an animated terminal with this sequence of events for the bottom CTA, make it on the right hand side, a CTA that's bigger set of images.
+
+I'm like, okay. And now we have this terminal, but it's kind of slow on the animation. I'm like, okay.
+
+So use a mono font, mono space. That's another type of font that again, if you're not sure, you can just learn more about it. Um, make it animate faster, make a copy, use a clipboard button, um, add another step in the terminal.
+
+This is closer. Sometimes I talk to it, like I'm talking to a pair programmer, it's closer, but, uh, for the middle section, make it a white background and it needs to take up the full width. Uh, and that's kind of where I landed here.
+
+Um, which is pretty decent. This is still the actual landing page that I used for this SAS template that I had. And once I got here, um, I wanted to fork this for other pages in my project.
+
+And I ended up building the kind of logged in dashboard view. I said, let's make a general page where you can manage your subscription and a card, and then update the user info, like the name and email, make the general tab have an active background state. And it gives me something that looks like the basic crud create, read, update, delete actions you would take in kind of an admin portal for your SAS app.
+
+And the cool thing is not only is it giving me this UI for styling it, I then went from here and asked it to actually implement these things. So there's activity log. I can't remember if I did it in here said, uh, let's make it look more like a settings page, make the notifications page say activity.
+
+Um, which by the way, make it more like a settings page. If you don't like one thing I've learned is if you don't know if you've, or even if you forget what a settings page looks like, go to your favorite apps, check what their setting pages look like and either screenshot them or just tell v0, hey, it doesn't feel normal. Right.
+
+And like looking at the code for what it gave me here on the first one, it, it kind of embedded this mock or fake data for the activity logs. And the nice thing is then I put this into my app. I can then basically swap this out with an API call.
+
+So I could either ask it, I can give it an external API and it can fetch it for me inside of v0, or I can say, here's the schema for my database. I can add it as a source in my application or in my project. So it knows about it, give it some guidelines and it'll know exactly how to hook this up to real data as well.
+
+And sometimes if I haven't got to that point yet, I said, Hey, help me take this Postgres schema that I have and give me the ORM for it. So whether I'm using drizzle or a Prisma, if you're in the JavaScript typescript land, or if you're in, you know, rails or Laravel or like other languages, you can ask questions about how to get the, you know, the relevant code based on your database structure. You might not even know what the SQL code looks like.
+
+You can just say, I need a table for users and emails and the users and emails are probably related in some way. And it can help you design the backend for your application as well. Yeah.
+
+I feel like not enough people talk about that. It's, it's really underrated for me because this, this is the next step after this, right? Like you get this and you say, okay, now I need to actually make it an app.
+
+So help me think through the backend of it. Help me think through how I structure my schema, little things too, like. Quick ad break.
+
+Let me tell you about a business I invested in. It's called boringmarketing.com. So a few years ago, I met this group of people that were some of the best SEO experts in the world.
+
+They were behind getting some of the biggest companies found on Google. And the secret sauce is they've got a set of technology and AI that could help you outrank your competition. So for my own businesses, I wanted that.
+
+I didn't want to have to rely on Mark Zuckerberg. I didn't want to depend on ads to drive customers to my businesses. I wanted to rank high in Google.
+
+That's why I like SEO. And that's why I use boringmarketing.com. And that's why I invested in it.
+
+They're so confident in their approach that they offer a 30 day sprint with a hundred percent money back guarantee. Who does that nowadays? So check it out.
+
+Highly recommend boringmarketing.com. Help me design it in a way that's, it's really fast. And it's probably going to suggest something like you might consider using indexes on your database so that for common actions, it's going to be faster to query those things.
+
+And it will give you the, you know, the proper ORM schema for your application. That's going to have some of those things. Let's see if there's other ones in here.
+
+Here's, here's another one that I worked on that could be interesting. Again, started with an image. I said, use a monospace font, make it tight information density wise.
+
+I guess that's a common pattern for me use neutral grays. And I went through 22 different versions here. So the first version was way different.
+
+Oh, actually I remember now I started from an older version that I built, which looked like Apple mail. And eventually after I got this back, I got this back. Cause I was like, maybe I'll build Apple mail, but it will be all monospace.
+
+It's going to look like some kind of cool, you know, hacker email client. And I was like, nah, like, let's make it look like superhuman instead. Cause superhuman is just a beautifully designed email app.
+
+So I sent in a screenshot of that. And the first version he gave back was actually super good. I saw this and I was like, holy shit, this is very close to what I was wanting.
+
+And I was basically from here, I realized there was actually something here that I could build. So this seeing this was what actually got me excited to make this into a real app. So I asked a bunch of things here, like make action items hover on selection.
+
+Um, and ended up, you know, going through a bunch of different variations here, which we can walk through all of these, if you want, um, things like, can we make the sheet open up faster and make it have a better easing animation? So if you don't know anything about animations, again, you could ask how, why does this animation feel slow? And it's going to tell you, well, the way it's doing this is through tailwind animations.
+
+So we can override it and give it, we can make it a faster duration and we can use this, uh, cubic Bezier easing function. I would have never figured this out. Like I would have never went in here and customized my cubic Bezier function, but VZero knows how to do that, which is nice.
+
+Totally. Yeah. Lee, you're not, you're not that type of guy.
+
+No, I am not. I'm not the, uh, design expert, but I like to think that I have an opinion and taste about what a good product looks like. And in today's day and age with these tools, like in a lot of ways that can be an extremely extremely valuable quality because I kind of know what I want to build and I just need somebody to help me get there.
+
+And when I reflect back on when I learned how to program and I was furiously Googling and stack overflowing things, like if I had tools like this that would help me build whatever I could think of, man, that would be wonderful. So I'm just so excited for people who are building products right now. It's never been a better time.
+
+I think. This is a good place to end, but what's, what's something you want to leave people with, you know, is there, is there one thing that, you know, this is, this is an audience of builders, right? They've got ideas they're building, they're playing with these tools.
+
+Uh, they wanted, they want to produce the best possible prototypes and products they possibly can. Uh, one thing you want to leave them with. I think there's a lot of discourse right now around whether AI tools are helpful or harmful for the development ecosystem, right?
+
+Cause I think a lot of people see this as is this replacing work that I would be doing and maybe they're apprehensive of actually learning and using some of these tools. And my kind of plea to everyone is just suspend disbelief a little bit and whether it's V0 or any other AI tool, just give it a shot and see what it feels like, because you might rethink your relationship with how you build applications and realize these are definitely not replacing anything that we're doing. They're augmenting it in a way that is like, I had that extremely knowledgeable, super senior engineer next to me that I could ask questions whenever I had issues and would help give me kind of some of these best practices along the way to build better products.
+
+And once you get that mindset, you realize right now, more than any other time in history, there's, you can build whatever you want. You have all of the power now with these tools. You can say, I want to build an iOS app and you know, GPT or any of these other tools can help you build anything.
+
+They knows everything about Swift. It knows everything about Kotlin and Android. So, um, definitely give it a shot.
+
+Um, give these new AI tools a shot. And I think you might find it a pretty interesting. I love it.
+
+Lee, where could, uh, people get to know you better? Cause I feel like you're underrated. You are, you are criminally underrated actually.
+
+I'm going to say that. Well, thank you. Um, yeah.
+
+Where could people find out more about you and, and, and, and, you know, where, where do people play with V zero? Totally. Uh, V zero.dev.
+
+If you want to try this out, there's a free tier, uh, for me, Lee Rob.com. I make YouTube videos. Uh, I write sometimes I tweet a lot.
+
+So go check out my Twitter if you want to see a stream of consciousness and, uh, yeah, that's me. Beautiful. And if you're listening to this, like, and comment for Lee, uh, I'd love to have him back.
+
+I feel like, uh, we've got a lot to learn. So, um, let's, uh, let's give them a warm startup ideas podcast. Welcome.
+
+And, uh, I'll see you around Lee. Yeah. Thanks for having me on.
+
+Of course. Peace. Love it.
+
+You

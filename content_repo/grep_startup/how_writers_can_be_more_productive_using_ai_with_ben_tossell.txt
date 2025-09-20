@@ -1,0 +1,365 @@
+Welcome back to the show, the Where It Happens show. I'm bringing on my friend Ben Tossel today. He is the no-code guy, but more recently he's become almost the AI guy.
+
+He's got this incredible newsletter called Ben's Bites, where he does all the work for you and kind of just looks at the most interesting AI stories. What are interesting use cases of AI? And he breaks it down for you.
+
+So I've been really enjoying his newsletter and just wanted to catch up with Ben. What's keeping him curious and why he's really excited about AI? And so welcome to the show, Ben.
+
+Yeah, excited to chat about stuff and all the crazy magic that's swarming the internet these days. Yeah. So before we get into the AI bit, could you talk a little bit about what got you excited about no-code and how you're feeling about no-code right now?
+
+Yeah. So no-code came from like a necessity for me. Like I can't code.
+
+I've never been able to code. I've tried. I have tried.
+
+I know people say that you'll be able to do it. Everyone should learn. I don't think anyone should learn or I don't think everyone should learn.
+
+Sorry, that's going to piss people off. And I was working at Product Hunt at the time. So I was like a victim of my surroundings.
+
+There was all these people launching all these cool things every single day. And I was like, I want to build something. I want to do something as well.
+
+I want to like put something together that I've built. And I couldn't code. So I sort of looked to what can I use off the shelf.
+
+And there was things like Zapier and Typeform and Bubble and Webflow. So I was like, well, I can put these things together and then make it look like I coded it and it's a real thing. So that's what I started doing.
+
+And I started doing that a lot and started pushing these like tool stacks together and seeing how far I could push them. So things were like Airbnb without code and stuff like that. So I'd really go to the extremes to show that these things are possible without needing to code.
+
+And also it then became really quick to do it. You'd have to learn code for nine months and you'd have to like do all of that stuff. You could build something in a weekend and then test it out on the Monday and see if people liked it or hated it.
+
+So I started doing that like a ton and people were just following me and they were just always asking, how are you doing that? How are you doing that? How are you doing that?
+
+And I thought I'll just build stuff and then just remember to record my screen and that'll be a business. I'll like sell access to my videos. So that's essentially what MakerPad was.
+
+It was a tutorial platform, an educational platform, ton of tutorials on how to build stuff with no code. So how you can put these things together and build an Airbnb or build a membership business or build an Instagram clone on mobile and all these sort of different things that people don't know how to build if they can't code. So yeah, that was, I started that as a side project in January, 2019.
+
+I took about 350K of funding from Calm Fund and other angels in September, October, 2019. And then we were acquired by Zapier in March, 2021. So it was quite, quite a quick process.
+
+But yeah, it was, it was awesome. It was sort of like before the no code trend kicked off. And then we sort of rode that wave as it kicked off.
+
+And I think it's even as prominent today as it was then. I just think even with all this AI stuff, I think they're all actually connected. It's all to do with democratization of software development, like doing more with software without needing to be technical or needing to know all these really specific things in order to do X with software.
+
+Okay. What's really interesting about your story is you really just like followed your curiosity. You know, I felt like it came from a place of purity.
+
+It's like people should be able to do this or, hey, I really want to do this. And other people might be willing to pay or, or just be interested in it. Did you ever think the business of no code and teaching and community could be really big?
+
+Or were you just like, I'm just going to put some stuff out there and, you know, hopefully it works out. I think my whole life has been put stuff out there and see what works. I always wanted to be an entrepreneur.
+
+Always thought I'd be like some hotshot CEO one day and that never happened still. And I don't want to be that actually, it turns out. But I just was never happy with this is how it is.
+
+So learn to code or don't. That can't be the future of how people build stuff on the internet. Like it didn't make sense to me.
+
+Like you have to learn to code. But what if I really struggle to learn to code? Like what if I can't, I don't work with numbers and functions and I don't work, like my brain doesn't work that way.
+
+I want to have quicker feedback loops. I don't want to be a software engineer. I just want to make stuff.
+
+And then, yeah, I tried. I think I launched like 50 things before Makeup Ad happened. And Makeup Ad happened because people didn't pay for all my other things.
+
+They would see the things I built and say, yeah, cool. I'm not buying that. But how did you do it?
+
+And I was like, sort of that those who can't do teach type scenario where I was like, well, I can just show you. And I'd seen GoRails is the website. It's like a screencasting business.
+
+It was called at the time. I saw that on IndieHackers. And I was like, well, this guy makes like 15 grand a month just recording his screen and building stuff that is interesting to him.
+
+Like that seems cool. That's a one person business. It seems like a very simple, straightforward thing to do.
+
+I bet I could do something like that. I can't pretend I like thought it all up and then made it a reality. It just happened as and when.
+
+Yeah, there wasn't like a grand plan. You kind of just like went with it. Now you're spending a lot of time thinking about the world of AI.
+
+And I think a lot of people are interested in AI and they're seeing stuff happen. But it's confusing, I think, to a lot of people just to understand like the lay of the land. Could you explain basically what AI is?
+
+Like, let's start from scratch. What is AI? Why should people care about it?
+
+Yeah, well, I'm probably going to butcher a bunch of things in this episode about AI. And I'm sure people will be very vocal on the internet when I do. But to me, I think AI is like a computer doing something for you without with almost like a thinking element.
+
+You can go into the technicals of neural networks and all things like that. But to me, on a very basic level, it's just like it does magic stuff. And I know that's really fluffy.
+
+But I think when you use some of these things and you see the use cases of them, you understand like, oh, yeah, why isn't it that? And I suppose that's similar to the no-code vein where if you can't figure out a formula in Excel and you're like, I just want to have this divided by this, then times by that. Why can't you write it like that and then have the computer that has all this power in it to actually figure out what you mean by those things, put it together, write the right formula, create it in a code that a computer understands and then pulls out the information that you're actually looking for.
+
+So that side of things, people might understand a bit more where it's like you're translating what I'm trying to think of, but I don't know the answer to and giving it to a computer to solve that problem for me. But there's loads of different use cases, and I'm sure we'll get into a bunch of them today, like generative AI art and things like that. So, yeah, there's loads of different ways to look at that, I think.
+
+AI is actually more of a bolt-on. It's like a feature for most companies rather than AI is the thing. AI is almost like Google search to people.
+
+It's like, oh, how has Google got all these results and put them all together and put them in a list for me? Computer could do so many more things than we can understand. And AI is just that on steroids, like to a complete new level.
+
+So we could finish a story for you. We could write an email for you. You can give it some context, and it's what people are calling prompt engineering.
+
+You sort of write a prompt, so you write something. Write me an email that I want to ask for a raise for my boss. And then it will just create that from all of this information that's consumed from the internet.
+
+And then it'll put that together in an email that is readable. It makes sense. It might not make sense for your use case because you didn't give it any context.
+
+But it can do those sorts of tasks, which look quite fun, I think, on the outside. And people are really seeing a lot of those kinds of demos and things now over the last few months. They're really like, they're going crazy.
+
+What are some of the categories of AI? Like you talk about generative art. You know, you talk about writing.
+
+Give a sense to people, you know, what are the different areas that you think AI and prompt-based AI, you know, they said software is eating the world. Like AI is eating the world. What are the different categories?
+
+Yeah, AI is probably eating software. They're all the same categories as startups and technology in general. It's just AI enabled in front of them.
+
+So audio, for example, everyone knows, like, we are recording a podcast now on a platform. And we are doing some stuff. They're recording things locally.
+
+They're doing a bunch of things to make it easy for us to record this. And then you can put it out as a podcast on podcast players. Now where AI and audio sort of intersect, there's, okay, well, you can have Joe Rogan interviewing Steve Jobs, where everyone knows that that interview did not happen.
+
+But you can train AI on a voice. It could understand how someone speaks, what their mannerisms are, what kind of topics they talk about. And then they can put those things together almost, like, almost perfectly at the moment with, like, listening to a normal podcast, like, like you and I are speaking here.
+
+Yeah, I mean, voice cloning, I think just in general, you can, you speak into your own computer 20 times. And then it'll come back with, you write a sentence, you type one in, or you have an AI generate a sentence for you. And then that would speak to you in your voice.
+
+And it's pretty good on the first pass. Like, you can go deeper and train it better and better. But the technology there now is just, it's really, really crazy of how advanced it is.
+
+And images is obviously a huge one that everyone's probably seen some talk about AI art, whether it's art, not art, and all of that stuff. That's because, yeah, pictures speak a thousand words. And that image has never been created before, like, ever.
+
+That image is not, in its form, has not ever been made before. But a computer completely generated that from understanding the references within that photo. So if it's a horse on the moon doing whatever, like, it understands what a horse is, understands what the moon is, and it, like, can put those together and generate an image that has never been made before.
+
+And those kinds of things are almost unbelievable, as in, I know we always say unbelievable, but that is almost unbelievable that that kind of thing just can happen. Because for someone like me who cannot draw a ball, it's like, well, I can make these images that are just so much better than I could ever, ever dream of, like, doing. And then there's plenty of use cases after that, which is product imagery.
+
+Like, you see all these D2C brands with X-drink in colored background. Like, you can have a ton of those images. You could even have ads being optimized.
+
+Like, AI could be writing the copy and generating an image. And then all of a sudden, it'll swap and change a few things. And it'll see, like, that CTR was much better.
+
+Let's go with this one. And then they just optimize it automatically. You can see that that is definitely going to be happening.
+
+I just can't see how AI and, like, advertising doesn't come to you set up something, say, I'm selling subscriptions to my newsletter or anything. And you just sort of give it a prompt and say that it'll generate copy. It'll generate images.
+
+And it'll run the ads, test the ads, and get you the most, like, bang for your buck, I suppose. It's about 6.35 a.m. here.
+
+And I'm just about to have my AG1 by Athletic Greens. It's this powder that I look forward to having every single day. I put it in about 10 ounces of water.
+
+It contains vitamins and probiotics and whole food source ingredients. That really gets my energy up, my recovery up, and my focus up. And I look forward to it really, really every single day.
+
+Just like how I have my morning coffee, I love having my morning AG1. So for listeners to the pod, I think you might like AG1 too. So Athletic Greens is offering a one-year supply of immune-supporting vitamin D and five of these free travel packs with your first free purchase.
+
+All you have to do is go to athleticgreens.com slash W-I-H and claim it. I hope you enjoy it as much as I do. I want to talk about what are some of the most interesting, like maybe the five most interesting AI companies or projects to watch.
+
+And while I give you a few seconds to think about that, I want to talk about one that I downloaded this morning that I think is really cool. It's by Trung Fan, who you probably know. You know, he was a writer for The Hustle.
+
+He writes these amazing threads on Twitter that get, you know, I saw it the other day. Elon Musk replies to it. So if Elon Musk is replying to your threads, like something's working.
+
+Yeah. It's called barely.ai. And I believe it works with OpenAI and it's focused on writers.
+
+So it's AI prompts for writers. So I'm pulling it up right now. Let's see what it can do.
+
+So, you know, just to give you a sense, you can summarize content. You know, you can put something in and it'll summarize all of that content. There's a function called polish.
+
+Clarify and expand on your ideas. So you just put something in there and it will literally clarify and expand on your ideas. Create an essay outline.
+
+Like one of the hardest things to do if you're a writer is writing an outline. Here you have a prompt for that. Headlines for your blog post.
+
+You know, the right headline, the right hook, if you're a writer, is the difference between your blog post or post getting seen by 100,000 people or millions. So help here is super awesome. And I started using it this morning and I was like, wow, this is like, it's not perfect, but it at least helps me, like, let's say, create an essay outline.
+
+And I might be like, wow, I never thought about point number seven or point number eight or point number six. And it actually makes me feel like I have a writing partner. It takes something that's really big, like GTP3 and focuses it on a niche and just tries to be the best thing for that particular niche.
+
+So I'm curious what you think of that product. And then I'd love for you to talk about your five most interesting AI projects and companies. Yeah, sure.
+
+And we should talk about like AI as a partner. Like we should talk about that afterwards. But Barely AI is something I use every day.
+
+I've used it before it came out. Like it was, I was one of the early users. I think I might be one of the top users.
+
+And I've got some requests that should be coming out within Barely AI soon as well. So the reason I find it so useful is it lives in my workflow. So the difference with some of these AI tools is like an AI writing tool.
+
+If you have to go to another place to start writing your thing, but you actually like writing in Google Docs, like that's already a change of scenery for you. And it might already disrupt your flow. And you've got like your templates.
+
+You've got things that you do to write in Google Docs. But then if you're using something like Jasper or Copy AI, you've got to go there. And it's a point for drop-off.
+
+Whereas Barely AI is a Chrome extension. So anytime I'm on a page, so say I'm on an article that I'm thinking, this would be good to put in the email today. I can click the icon, click executive summary, and that'll summarize everything in like two sentences for me.
+
+So I can use that and say, okay, well, actually, I'd write it in this way. Or like there's something in there that's actually helped me understand what this article is about. Lots of these things are very technical.
+
+There's all these research papers. I use Barely AI for every single one of them just to check that, am I understanding this concept correctly? So for me, it's been invaluable for my process to like actually create stuff for the newsletter too, because it helps me explain it to try and dumb it down and try and make it a bit easier for a reader to see what this thing is about.
+
+So Barely AI is my top used AI tool, I think. I think we've got to give a nod to Stable Diffusion. So they're an open, like OpenAI has DALI.
+
+That's a closed system. So you can't, you don't know what's going on behind the scenes there, but Stable Diffusion, open source, their model, and they've done, like they've trained on a ton of parameters. They've just released Stable Diffusion 2.0.
+
+So it's like 1.5 was only released six weeks, seven weeks ago, something like that. So it's moving really quickly. I almost think that being open source is actually helping it grow that quickly.
+
+So that's out right now. There's another one called Lexica and some of the images that are coming out of that, they've got a new model dropping any day now. And the photorealism, like they can even do hands, like AI art generally is quite bad with like showing an actual five finger hand.
+
+But this Lexica one is, it's just insane. Like they just had today, there's some Polaroid versions of like, like an airline crew. And they just look flawless.
+
+Flawless. There's metaphor search, which is a metaphor systems rather, which is like a new search experience. So instead of going to Google and say, who is the best female investor?
+
+You go to metaphor and you say, the best female investor is, and then you click enter and it'll give you like a top search. And then I'll give you other people and it gives you the link to where that person's information is, Wikipedia page or a personal website and things like that. But also the issue I see with something like metaphor is you've got to write it differently.
+
+You've got to type in something differently. And they give you help on how to like write the prompts. But I just think this in general, like I don't think prompt engineering is actually valuable, a valuable thing, because I believe all these models and all these tools will actually like abstract that away anyway.
+
+So if I'm looking for the best female investor of all time, however, I phrase that sentence, I should have the same result or it should have the, like, if there is a top female investor, that's what I should see at the top. But it shouldn't require me to do the work. So until these systems get to that point and like the prompting sort of gets better.
+
+And I mean, with all of these AI systems, none of them are perfect. But I think it'd be a mistake to judge what AI can do in the future based on like, oh, well, there's no, the hands have got three fingers. So this is stupid.
+
+Like, yeah, okay, fine. But now, almost six weeks later, there's now a hands with five fingers. Like people are training on these and all these open source things.
+
+There's tons of people doing experiments here, there and everywhere. They research every day. So people will quickly dismiss it because it looks stupid.
+
+But it is very early still. What's the Peter Thiel quote? We asked for like rocket ships or something and all we got were 140 characters.
+
+It's like we asked for, you know, rocket ships, but all we got were hands with three fingers. Yeah. I mean, with the Google example, I think the question for me is, is AI a completely new paradigm?
+
+Like just like how social was a completely new paradigm? You know, with social, you know, Google was there. You know, Google started in the 90s.
+
+They saw Facebook. They saw MySpace. They saw Instagram.
+
+They had to buy YouTube. And they knew that search was a big component of the experience of searching people, of searching content. But they realistically missed it.
+
+And I think that if it's a completely new paradigm, if AI is a completely new paradigm, it's likely that they will miss a lot of it. But if AI ends up becoming just merging with the consumer experience, like it's a new, it's not a new paradigm, but it's a, it's a new tool in the tool set. And they can integrate AI into the core experience, i.e.
+
+they don't have to change their core experience. You still go to google.com and you still like write stuff. But AI is, it's like assisted.
+
+And if it's a new tool, then I think that they would, you know, survive and thrive actually better in that environment. And we're starting to see that second case with Notion. Like Notion just launched with, what is it called?
+
+Notion AI. Yeah. All these writing tools who have like, hey, now you can have AI in your Notion docs until Notion brings their own out.
+
+And then it's like, well, that's redundant. Because I'm on your side thinking of, is it, is it a completely new thing like cloud was? I, I do think it is, but also I do also think it's a feature add-on.
+
+I do think it's a bolt-on to many of these experiences where if you look at Notion, obviously they're going to add an AI component. Like all of these other writing tools are mostly based on GPT-3. So there's no reason why Notion also can't also be based on GPT-3 and provide almost the exact same experience.
+
+But if you are building a new document, knowledge space, whatever it calls itself with AI from the start, would that look completely different? And could you craft something that there actually makes sense as an AI first product? But lots of these bigger companies or lots of companies in general will just be able to do most of the capabilities that lots of these, like, I don't want to like downplay them, but these like more throwaway products that AI is enabling.
+
+So all these like avatar AI products, like there's millions of them because there's no, there's no real difference. It's like, they're all very, very similar. Like you ask someone what the difference is of theirs versus this one is mine's got this added style I trained the model on, or this one's $20 instead of $30.
+
+It's like, yeah, okay, fine. That's like, also I don't know that a profile picture AI product is a new big company. It's probably something someone does once.
+
+And I think it's good to show that all these builders like can see something, can make a move on it, move quickly and do something really quite spectacular in such a short amount of time. But some of these things are just redundant if a different company just adds that on. So like all these writing tools, there's lots of them.
+
+And if Google docs had their version of AI Clippy, like does that then mean that barely Jasper, Copy AI, a lot of those sort of go down in value or just think I don't need these as much? Obviously there's this big like fine tuning in their models and stuff, but like when GPT-4 comes out, does a lot of that go away as well? Like all the moat that they've built up in fine tuning and putting their use cases in and putting their few shot examples in, does that almost go away with advances in the actual models themselves that they're based on?
+
+So that's a difficult thing to judge as well because we don't know what it looked like. I think the playbook for, if you want to create an AI startup and sell it for a lot of money is this, I think you don't build your own AI models. Like you leverage like a GTP three or GTP four, you find a niche that is underserved that could benefit from prompt based AI.
+
+You explore that and create a great brand, an experience around just like how barely AI did it, focus on writers and you launch that product. Then, you know, you do business development deals with the large incumbents and you try to get integrated as much as possible into their products. And that gives you optionality to potentially sell to them.
+
+It also makes them maybe hopefully less likely to actually just like say, you know what, we don't need you barely AI. We're going to just build it ourselves. What do you think about that?
+
+I think it's tough at the moment because like so many of these tools have a lot of value and lots of them are making lots of revenue. But lots of them are copyable. Like I can just go into open AI playground and have something summarized.
+
+It might not be as well summarized as using some of these other tools, but like I can do some or part of that kind of job. And I just think lots of these tools are, yeah, you can copy them quite, quite easily if you have the know-how and any amount of resources. I don't know that, I don't know what we'll see in AI, like as the big companies or what the bigger opportunities are.
+
+I think things like if you look at audio labs or like resemble AI, these sort of voice cloning technologies that you can see lots of use cases for. Like if all podcasts were run on that, if people had all this content based off voice cloning. But again, what are those?
+
+What are those products for people who don't know what they are? Resemble.ai is one of them. Play.ht and audiolabs.io.
+
+So there's three already. There's three that you can go and like you repeat a bunch of stuff that they prompt you on the screen. It'll create your voice with AI.
+
+And I think I'm pretty sure that most of it is based on, again, OpenAI Whisper. That's the model. And then you could have a wall of text, an essay, whatever it is, a tweet thread, and it can be read out in your voice.
+
+So what I've been thinking of doing is for the email that I write, just at the top have an auto-generated podcast version. I'm not reciting this every single time, but I've recorded, I've cloned my voice once. That just gets plugged in every time.
+
+And then that is what is read out. But again, like three companies come out quickly with the same kinds of features and the same kind of thing. There will be differences in how well they've trained it, the fine tuning, the examples they give.
+
+And that currently is what a lot of these products' moats are, I think, if we can call them moats at the moment. Because then if a new model comes out, like GBT4, for example, with writing tools, that's why I think the prompt engineering sort of goes away. Because the better the models are, the less you need to be really specific on how you're writing it.
+
+If you have to give it examples, if you have to do all these things where the effort's on you. But really what we're getting to is the effort is not on you. The AI is creating all of that stuff.
+
+So I don't know. I think it's interesting to see all these products. Lots of them are a bit samey.
+
+But I've not seen anyone other than like Metforce Systems to tackle search so far. There's one I saw today, which was StoryTimes.ai. And I had this same idea the other week, which was I was going to have 20 photos of my nephew.
+
+He's two and a half. I was going to get loads of photos of him, train a stable diffusion model on his face and turn it into like a Pixar character. Then have a story generated with insert whatever AI tool I find.
+
+And then create like a picture book with him like riding dinosaurs and animals and stuff like that. And I had that idea. And I spoke to someone last week who also said they had that same idea.
+
+And then today I saw someone yesterday had posted that they built this idea. So it'll be really interesting. But I think a lot of these companies, they need to be quick.
+
+They need to raise a lot of money. Like you've seen a few of them. They raise money and they're sort of pushing out ahead.
+
+And they got lots of big marketing campaigns to like be the first mover. And I just don't know how it's going to play out because it is early. Internal tools.
+
+The software you build to help your team operate better. Dictates how fast every team from engineers to sales reps can execute. But you know this.
+
+Building internal tools from scratch and maintaining them takes a ton of engineering time and tedious work. Retool is a much faster way to build internal tools. It has a complete library of 100 plus fully featured accessible UI components that you can just drag and drop.
+
+Any interface and retools platform lets you build the custom internal tools your team needs 10 times faster. It's one platform to build your interface. All you have to do is connect any data source or API.
+
+And you can publish employee facing apps in record time. It's also pretty flexible. You can write custom code nearly anywhere to customize how your app looks and works.
+
+And app environments, SSO, permissions, and other critical app functionality are all available right out of the box. The result? Well, you can build production-grade internal tools without the wasted effort of googling component libraries, debugging dependencies, or rewriting boilerplate code.
+
+Thousands of teams at companies like Amazon, DoorDash, NBC, and our own company, Lay Checkout, collaborate around custom-built retool apps to operate faster and better. Also, teams up to five can build retool apps for free. So we're big fans.
+
+I'm a big fan of retool. If you want to learn more about retool, you can just check it out at retool.com. What are the social implications of AI?
+
+You know, when you talked about the Steve Jobs and Joe Rogan interview, that's, you know, using your words, magical, but it's also a bit like makes me feel weird. Yeah. It just makes me feel weird.
+
+There's, like, probably a bunch of AI ideas that would be in the category of makes me feel weird. For example, like, our loved ones that pass away and having the ability to have conversations with those people. It might feel good, but it also might make us feel weird.
+
+Yeah. So can you talk a little bit more about social implications and AI? Yeah.
+
+I mean, I'm not very well-versed other than what I've sort of made my own thoughts about, which if there's, I mean, everyone's, I always, my job is to sort of look at all the good things about it and look at everything in a positive light and think, wow, how amazing, all this stuff. Like, we get to use all this, but also bad actors have all of that information too, and they're probably using it, and they've got access to all these open source models on AI and who's to say what's right and what's wrong with when they have closed systems. And there's a lot of chatter about all of that, and I have no answers for people there.
+
+And I just, my thought on it is we're going to be able to tell, actually, I think I'm going to come and trick myself, but I'll carry on anyway. I think we're going to be able to tell, like, there'll be a system that you can plug in and say, tell me if this video is fake, and it'll say fake or whatever. Like, there'll be, there's AI systems, I've seen a few research papers on, like, detecting what actually is already AI generated.
+
+And even Google is not, like, ranking AI generated blog posts, and I don't actually know, or any content, rather. And I don't really know how they do that, but there are ways to detect what is generated by AI. And I feel like there'll be systems in place that way, but also it's probably going to be as, like, few and far between as things are now.
+
+So if someone's using Photoshop and Photoshop's an image of me and you doing something that we shouldn't be, then, like, it's only up to us to say that didn't happen, we didn't do that type thing. But if this image looks flawless and looks exactly like us, that's a difficult thing to then sort of go against. And AI can do that.
+
+Like, you look at Twitter today, you don't know what tweet is actually telling the truth. Like, so much of it is hearsay or just made up stuff that you just, you don't know. You don't know who's telling the truth today.
+
+In the future, you're not going to know, not only if it's the truth, but is this Ben who's tweeting this, or is this an AI? Plus no code that, like, has tweeted this thing. Yeah.
+
+But also today, could this be a ghostwriter that works for Ben writing this stuff? Like, there's still, it's still all the same stuff that we have to deal with now. But it's just, like, it'll be on another level because things can be generated so quickly.
+
+And so to such an extreme and to such accuracy that it seems like, yeah, but I heard Steve Jobs saying that to Joe Rogan. And until you know, well, Steve Jobs never, that never happened. That's where it is.
+
+So, yeah, it's a tough one. And I hope, I'm sure there's plenty of people way smarter than me trying to figure this stuff out. And I'll be here to link to it when they come up with that stuff.
+
+But, yeah, I don't know. I think it's tough. But I'm just hoping for the best.
+
+But I know it's a problem already. So I think AI just probably adds to it. AI and creators.
+
+Good thing or bad thing? Great thing. It's probably the best thing to happen to a creator.
+
+I don't know why anyone thinks differently. It's, again, the Photoshop example. Having an AI tool at your disposal is like having a Photoshop expert at your disposal.
+
+If I'm making a video or I need to have a podcast edited or I want to make a promo video for something, things like Runway, which is a creative video tool and their marketing videos are insane. And they're all created in Runway. Like you can just type scenes that you want to see, like walking down an alleyway in Tokyo at night.
+
+And it'll like change and erase streetlights. So I don't want that building there. Let's put this dog in that image there instead.
+
+You can just do so much more with so much less. Yeah, I look at it the same way. Like glass half full.
+
+How do you use these tools to supercharge you versus use these tools to cut you? You know, I think we're both optimistic in that sense. So I completely agree with you.
+
+I read recently that Kathy Wood, famous hedge fund manager, has said that AI is deflationary. And, you know, she says it's deflationary, I think, because if people are going to be using AI to run their businesses and they might need less writers, they might need less designers, they might need less engineers. But if you're not going to be using them to do, you might need less writers.
+
+Their profits, you know, could go up. And they're also able to pass on cost savings to their customers. Do you agree that AI is deflationary?
+
+Well, I can see a world where that sort of stuff happens, where you need less physical writers because one can maybe do the work of three if you're producing content like that. Obviously, very specific, very contextual writing needs someone from that experience to talk about stuff. So AI can push you and suggest things and say, have you thought about this as well?
+
+Or like, what about the safety of this? And all that sort of stuff, kind of like topics we're talking about. But it's not going to replace creative thinking as a human.
+
+And I just think that, yeah, if someone can do the job of three people, then why would businesses hire three when they can hire one? It seems like the same argument to say that, oh, actually, businesses are now hiring contractors to do their content writing because their CEOs don't want to do it. And I'm like, well, yeah, that's how all of this works.
+
+You hire out for things that you can't do. And you're looking for someone who's the most productive person at that job to do the best job that they can so that we can do this thing and we can charge customers and we can make profits and we can build a good business. So all of those things still are in line.
+
+And I don't think AI will take all of these jobs. You're still going to need someone to steer the ship and say, oh, no, this way, this way. I think you need reasoning and the experiences and everything else to bring that together.
+
+I just, yeah, I can't see it. I'm going to ask this question. You're going to hate it, but I'm asking it anyways.
+
+In five years from now, biggest AI prediction. So it's, you know, we're sitting down November 28th, 2022 right now. It's November 28th, 2027.
+
+How has the internet changed? And yeah, what's the biggest AI prediction for then? Ooh, I'll make a very bold prediction.
+
+We'll have a company pulling in like hundreds of millions of dollars in revenue. And it'll be like one or two people actually running that company. That can be a bold prediction.
+
+And I just, I don't know what the internet looks like. Hopefully Twitter is still around because I need it and I like it. And maybe there's a badge that says only posts AI content.
+
+Maybe it's that. I like that. I like that a lot.
+
+All right. Well, Ben, this has been awesome. If people want to get their feet wet in the world of AI, what do you suggest?
+
+Well, of course, I'd recommend checking out Ben's Bytes. So that's Ben's Bytes.beehive.com. Soon we'll change to the custom domain.
+
+But yeah, Ben's Bytes. I just try and dumb everything down and summarize everything daily so that there's so much going on. There's research.
+
+There's demos. There's products. I just put it all into one email for checking out in five minutes or less.
+
+I love it. I'm a subscriber. My open rate's 100%.
+
+It's just, it's really exciting. It's exciting to be seeing all these new tools coming out almost every day. It feels like almost every day, right?
+
+And just playing around with it. If I could recommend people do anything, founders, executives at startups, executives at large companies, it's just to play with it. And then you'll start going on walks or working out and you'll be like, oh, wow, here's an idea for AI.
+
+And then you can start, you know, take it from there. So Ben's Bytes definitely, it helps get the juices flowing. So thank you for that.
+
+If you enjoyed this, please, please give us a YouTube subscription or a review on Spotify and Apple Podcasts. It does make a big difference. And we don't have that many YouTube subscribers and we don't have that many reviews.
+
+So I look at all of them. So thanks for listening again and see you soon. Thanks for listening.
+
+Thanks for listening. Bye. Bye.
+
+Bye.

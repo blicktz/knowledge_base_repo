@@ -1,0 +1,353 @@
+People are saying that Bolt, this new tool, is replacing Cursor AI. They're saying it's easier. They're saying non-technical people could use this and create a prototype in 20 minutes or less.
+
+Even easier than Cursor AI. We dive into it. I brought my main man, Ross Mike, on the pod.
+
+He explains things so simply. For anyone who wants to build their ideas, this pod is for you. All right, let's make some history.
+
+We've got Ross Mike, Mickey, Michael back on the show. He's here to talk about Bolt. They say it's a Cursor killer.
+
+They say it's a V0 killer. What are people going to get out of this video if they make it through? Yeah, I think, well, again, first and foremost, thank you for having me here.
+
+It's always a pleasure. And I never want to take you for granted. So thank you so much for that, Greg.
+
+But in terms of what Bolt new seems to be is, I think it's looking like a culmination of all the different tools people have been playing with all placed into one. And although it's early, it recently just launched a couple of days ago. You cannot deny, whether you're a developer or non-developer, that this thing has potential.
+
+There's been some issues, some bugs people have been experiencing. But again, this just launched. And from my first few plays and attempts, this is mind-blowing.
+
+And I think no better way to, you know, test it out than to build something. I think that's right. Yeah.
+
+And through that process, through the building, people can learn and write some notes. I don't know. What do you want people to do while they're listening?
+
+Honestly, to me, it's just like, I hope it's just an encouragement to just keep playing with these tools. Right. I don't think I'm confident to say any of them is perfect, but at some point they will be or they'll get really, really, really, really, really good.
+
+And you've put in the groundwork to keep testing, iterating, playing, breaking, learning that when they do become really, really good, you're not starting from scratch. You've already have this knowledge. Now you're starting to build and ship fast.
+
+That's my goal. If this encourages you to play after work, late at night, instead of watching a show and you're just on Bolt or some other AI tool, then that's a win. All right.
+
+Let me share my screen. And to preface, don't really have a project planned, but I was just thinking there is this company called Fal.ai. And basically what they do is they're an aggregator of all the different image AI models and they turn them to simple API.
+
+So let's say, for example, a simple text to image AI model like Flux. I can click on this and they basically what they do is they take these models, they wrap them through there with their API. And they make it so that with this one snippet of code, I can use their AI model and have access to it.
+
+For some reason, this is not working. No, it is. So if I click run on this, this is an image model.
+
+And the prompt is extremely close up, single tiger eye, direct blah, blah, blah, blah, blah. And you get this. Let's do something different.
+
+Let's do two dudes on a podcast virtually talking about AI. Let's see what we get. Hopefully nothing weird.
+
+Yeah, I'm scared. You know what? It's pretty good.
+
+So what we're going to do is we're going to use their API and build a website that you can enter a text prompt to and it'll give you an image. And we're going to use Bolt with the best of our ability. So how does that sound great?
+
+Is that a good? Should we go with that? Let's do it.
+
+Perfect. Okay. So what I'm going to do is I'm going to start with Bolt.
+
+And I know that for a project like this, it's probably best I use something like Next.js. So what I'm going to do is I want to build a simple SaaS project using Next.js. Can you please just build a simple landing page?
+
+Make sure you're using Next.js 14 best practices. So with V0, if you guys remember the last video I was talking about, V0 is owned by Vercel, which is one of the maintainers of Next.js. So when you use V0 by default, it's going to use Next.js.
+
+Bolt, on the other hand, is not owned by Vercel. So I specify with Bolt that I wanted to use Next.js just because it's a framework I'm familiar with. And it's one of the most popular frameworks to build web applications with.
+
+So I hit that prompt. Bolt, and now what I like about Bolt is I'm not just getting the code for a single file. It's building on my project.
+
+It's building on my layouts. It's building on my landing page. It's installing the packages, which is the biggest thing, right?
+
+When you set up a framework or a code base, sometimes you're going to need external packages to do different functionality. Bolt installs those packages for you, which is a great thing. And might I add, this landing page is pretty good as a starter base.
+
+So we have our landing page. Now what I'm going to do is I'm going to go on Flux. And again, this is the AI model we want to use.
+
+I'm going to scroll on the documentation, and there's a couple things it tells me here, right? So it says I need to call the API first. I need to install this package.
+
+I need to get an API key, and then I need to use this code. And then it has more instruction down there. So I'm going to just follow the instructions and say and install this right here.
+
+So let me take this package. Or actually, let's say this is my developer mind talking. I don't even want to do that.
+
+I want to say I want to build a text to image AI application. I'm going to use fal.ai. What should I do?
+
+And the reason I want to prompt this is I already have used fal.ai before, so I know how it works. And I don't want to cheat and just copy code and do it like I'm a developer. I want to use the AI model.
+
+So let's see what happens. Shh, don't tell anyone. But I've got 30 plus startup ideas that could make you millions.
+
+And I'm giving them away for free. These aren't just random guesses. They're validated concepts from entrepreneurs who've built $100 million plus businesses.
+
+I've compiled them into one simple database. Compiled from hundreds of conversations I've had on my podcast. But the main thing is most of these ideas don't need a single investor.
+
+Some cost nothing to start. I'm pretty much handing you a cheat sheet. The Idea Bank is your startup shortcut.
+
+Just click below to get access. Your next cash flowing business is waiting for you. So it bugged.
+
+It does this sometimes. You just hit send again. It's pretty quick, I will say.
+
+Yeah, and you know what? For a first iteration, this is great. Like I remember V0 when it first launched.
+
+It was pretty bad. And like anyone who is a developer using it, it was terrible. But like, you know, two, three months in, it's one of the best ones out there.
+
+So I have no doubt the same thing with Bolt. And this being their first version is fantastic. So let's see what it did.
+
+So it says it updated package.json. It created some stuff. So let's look at the preview.
+
+So I'm going to refresh here. Yeah. Let's see what happened.
+
+Let me lower my screen here. Okay. So we're going to go to code.
+
+Oh, it's still downloading some package. One thing I will say about Bolt is because everything is online, it is a bit slower. So you will have to be a bit more patient with it.
+
+So let's see preview. Let's refresh. Okay.
+
+It broke. Okay. So I know why it broke, but I would love for the AI to fix itself.
+
+It's not showing me anything. Please fix. So, okay.
+
+So, okay. This issue pops up, but I already prompted that this should, that it should try to fix itself. Let's see what it does.
+
+The one thing about Bolt, I would say, Greg, is it's a little slow. That's the only thing. But in my opinion, I think that will not be an issue because of how great the product is.
+
+I don't know if they have funding or they'll get funding. They'll probably get funding and scale servers. That shouldn't be an issue at all, to be honest.
+
+I feel like there's just a lot of people trying it out right now. Yeah, that too. That too.
+
+And like, it's, okay. So, all right. So I got this error.
+
+What I'm going to do is I'm going to copy this and I'm going to say, here's an error I got. Please fix this. Now, I know how to fix this, but I don't want the AI model to fix it.
+
+And push comes to shove. If it doesn't, I will. Yeah.
+
+There's so many people using it if it's this slow. My goodness. Dude, you remember, you remember cursor initially it was so slow.
+
+Yeah. And then they got that $60 million injection and then it became fast all of a sudden. So I guess that's what Bolt is maybe waiting for.
+
+Yeah. Okay. Let's see if this fixes it.
+
+It's running the code. Okay. Perfect.
+
+So it fixed my issue. A little buggy, a little shaky. But if you copy the error that it's giving you and you tell it, here's the error I got.
+
+Please fix it. It looked like it worked. So now what I'm going to do is I'm just going to type something random.
+
+Handsome. Man. If I click generate, nothing's going to happen because nothing's supposed to happen.
+
+We just have the layout. So now what I'm going to say is, how do I make the text generation work using file? So what I'm prompting is I want it to kind of tell me what I need to do because it needs an external API key.
+
+So what it's saying is certainly let's implement the text generation functionality. We'll need to set up a file.ai client, create a form for user input, and handle the image generation process. Here's how we can do it.
+
+So it's providing me a step-by-step what it's going to do. And if we look at the API, remember here it says install the client. So that's exactly what Bolt is doing.
+
+Now it tells me here I made the following changes. It tells me what it did. But here's the work I need to do.
+
+It says to make this work, replace your file key here in end of local file with the actual API key. So if I go on my code, it's telling me there's a file called .env. Env is just short for environment.
+
+.local. So if I go on my code base, I see that there's a file right here. So it's telling me this key right here, this your file key here needs to be a key that I get from file.
+
+And basically how I would do that is I'd go on my profile and pull that key. I'm just going to move this right here, get my key real quick so that nobody, because I'm using a live account, I don't mind sharing this screen here. So just for anybody looking, the way you'd get your API keys is you'd go on API keys.
+
+I created mine and I'm going to paste this here. You're going to see it, but I'll delete it. Anyone who tries to spam it, please don't.
+
+And I'll save it. So it'll tell me that's what I need to do. And it also says make sure you have the latest version of file AI server client.
+
+And what I can do is I can run this command myself, but I think it already did that for me. So I'm not going to do that. So I'm just going to hit refresh real quick.
+
+And let's see if this works. Futuristic city with Chick-fil-A. I don't know why I would do that.
+
+But okay, so it says an error occurred while image generating. Let's go to our terminal. And basically what I'm going to do is I'm going to copy the error it gives me here.
+
+Because I'm, again, I'm not a developer, so I don't know what's going on. So I'm just going to paste this error and say fix this for me. Again, I know the issue, but I just want to give people sort of a workflow to play with.
+
+If it breaks, like if this, if you get an error here, you go to code, you look at the janky text you get here, copy, paste it over here, say it's not working, and then let it give you a fix. So let's see if things look good. It said preview.
+
+Futuristic city with Chick-fil-A. That'll be our prompt. Is the Chick-fil-A going to be in there?
+
+Let's see how advanced. Okay, so for some reason this broke again. Let's see why.
+
+So what I'm going to do is, again, I know the fix, Greg, but I want to just show people that if you handle it with enough grit and you keep on going, it should be fine. So let me just paste that one more time so I can get the error so it can fail. And then it failed.
+
+So what I'm going to do is I'm going to copy this error. All this red that I get right here. Paste it here and be like, fix this error.
+
+But what I'll also do is when I go to foul, and if you guys remember when I went to the model itself, I think it was this one, and I clicked on API, there was some code snippet it gave me. So what I'm going to do is I'm going to fix this error. Fix this error.
+
+So here's an example from fouls docs. Because, again, you can't always assume the AI knows everything. And this is where I know we just jumped straight into Bolt.
+
+But if I wanted to build an actual application, I would do research first on what I need, how it would work, how it works, what the setup looks like. But here we're just trying to have fun and show Bolt. So I would have done enough research on foul to know how it works, what's needed, what's not.
+
+And then with that information, I'd give it to the AI model, and it would probably not make the mistakes it makes now. So let's hope this time this works. It worked.
+
+It worked. I didn't think it would. It worked.
+
+I don't see Chick-fil-A. Yeah. Wait, wait, wait.
+
+I don't see the Chick-fil-A. I don't see the Chick-fil-A either. Or a modern Chick-fil-A.
+
+Chick. Wait, am I spelling it right? Chick-fil-A.
+
+Wait, that's not how you spell it. I mean, I think you might need to put those dashes. Oh, yeah.
+
+Okay. So we'll do that. A modern Chick-fil-A in 2067.
+
+So I would honestly say that that wasn't bad in terms of – I mean, this image is terrible. But in terms of the workflow, I think, Greg, you can see that, yeah, it has – like there's some, you know, bugs that the team I know is working on fixing. But for the most part, again, if you have grid and you just keep on pressing, giving it the error, telling it to fix it – I mean, we did this in what?
+
+Maybe less than 20 minutes? Yep. Crazy.
+
+Right? Right? Right?
+
+And what's cool about this is – and this is what I love about – what you would call it – Bolt, is I can click on Deploy here. And they partnered up with a platform called Netlify. And it's literally one-click deployment.
+
+So I just click the Deploy button. It's going to build my application, check if there are any errors or any issues it needs to fix before deploying my application. And then once the build – like once it's compiled the code and the build is good and my application is ready for production, it will literally deploy it to Netlify and give me a URL that I could share.
+
+So let's – And Netlify, you know, is awesome. It's super reliable, right? 100%.
+
+It's not just any – Yeah. It's one of the best out there. It's not your, you know, toy.
+
+Like it's a dude and it's doing with five servers. So it says there's an error here. What we're going to do is we're going to say fix this problem because I don't even know what the issue is, nor do I want to look at it.
+
+And yeah, Netlify is a great deployment platform. There are – I mean, if we go on their site, there are pretty – Netlify. I promise I don't watch Netflix.
+
+If we – yeah. So like there are big companies that use Netlify. So it's a great partnership on both end.
+
+Let's see. Okay. It failed again, which is fantastic.
+
+Let's see why. So what I'm going to do is I'm going to say the build keeps on failing. Can you please fix it?
+
+And let's see on the code tab what errors there are. I'm going to do – let's see. I'm going to – okay.
+
+I know what the error is, but I'm not going to cheat. I'm just going to copy this and paste this here and say this is the error I'm getting. And I paste that and let's see if it fixes it.
+
+I apologize for the force oversight. Such a nice model. And what do you prefer?
+
+Are you a cursor guy? Are you a bolt guy now? You know what?
+
+I am still a cursor guy for the simple fact that I enjoy programming. I enjoy coding. Like this sort of robs me of the fun.
+
+Right. But I do like Bolt maybe for quick prototyping. Like if I wanted to, let's say, work on an app and I needed like a quick prototype just to see – just to like visualize how things would work, I would just prompt engineer it through Bolt.
+
+But the reason why I think I personally like Cursor is it allows me to code, but I also have my junior engineer with me. Bolt and Replit, they seem like they're taking the wheel. Right.
+
+With Cursor, you're sort of still in charge. Right. And it's two different tools.
+
+Right. I definitely do think Bolt and Replit are on one side of the spectrum. And then you have like Cursor and V0 on another side.
+
+Let's see what error I'm getting because it's giving me another error. It says cannot find a module. So I'm just going to copy this and say fix this error.
+
+So I guess it really depends on what you're looking for. 100%. And I – if I were – like so I'll give you my take.
+
+If I'm a non-techie, like a non-technical person, I'm a founder, I want to start a startup, or I'm just a builder, a business person, I would focus a lot on Bolt and Replit. If you are someone who wants to know more of the nitty-gritty, then I would also use Cursor. Right.
+
+But if you're someone who just wants to instant prototype, you know, see stuff, like build a simple POC, then Bolt and Replit are great. But if you're – I truly believe if you're trying to build something that you want users to use, you're going to have to get your hands dirty. Let's see if it – yeah, see, it keeps having – so it keeps – now it's having a type issue.
+
+So what I'm going to do is, again, this is where the Bolt team needs some improvements to make. So I'm just going to say fix this problem. But the one thing that I would say, especially for a non-technical person, if I was non-technical, I would rather deal with this than trying to figure out how to deploy something.
+
+And this is why your, you know, Replit and Bolt, for non-technical people, in my opinion, are the clear winner. Just have to enter again when it poops like that because it handles the end-to-end, right, versus with Cursor, like you can build something, but deployment is a whole different animal in and of itself. Okay, so let's see if it's – I think it fixed that issue.
+
+I get so nervous. Totally. Like, please get it right, even though I know the issue and I can fix it myself.
+
+We believe you. We believe you. I appreciate that.
+
+Thank you. Oh, broke again. What is it this time?
+
+DrawVol. Okay, so I can literally fix it with one line, and I'm going to do it. Let's see.
+
+Check validity. Okay, so maybe let's do a little learning here. It says type error cannot find module vol or its corresponding type declaration.
+
+And then it says import drawer, and then you see vol. So basically what this is saying is it can't find vol, and vol is used for whatever this file is. But when I look at my code base – let's run this code base again.
+
+When I look at my code base – give it a second to load. When I look at my code base, it doesn't need a drawer. So I don't even know why that file exists.
+
+So what I'm going to say is I'm going to copy this. Let me just copy this right here. I keep getting – I got this error.
+
+I don't seem to be using drawer. So please remove it and remove any other files or folders I'm not using and run this build. So this is where, like, on Twitter I've been getting some responses.
+
+People are like, ah, but, like, it's sort of buggy. This is that and a third. This is where, like, when it comes to deploying it because you need to make sure that all your packages and all your files are good, that it bugs out on deployment.
+
+But if the way these companies build and grow is any indication of how Bolt will be, I have no doubt by within the next week this issue should be solved. So, okay, it's going to build again. 17th time is the charm.
+
+It's okay. This is the real deal, right? Like, we're sharing it, warts and all.
+
+100%. So, okay, so I'm going to cheat and I'm going to make this work myself. So it says here, cannot find module radix.u.
+
+So what I'm going to do is I'm just going to copy this, basically saying there's this module it needs but it hasn't downloaded. So I'm just going to download it manually. And couldn't you go to, let's say, clode or something like that and just be like, here's my issue?
+
+I could. The one thing is I don't know if I can download my code base. Now, what would be sick is if they allowed me to download my code base.
+
+Right. I could run this through cursor. Like, can I, I don't think there's an option.
+
+Like, can I tell it? Can I download the code base? Like, if I could download this code base, then that would be a sick way to build.
+
+Like, if I could download this code, run it through cursor, fix my issues, and then place it back here. It says, oh, I have to use their editor. I don't want to do that.
+
+So let's just, let me just cheat right now and make sure everything's installed. And then let's do a build myself. So this is where the tough part with Bolt is, is the deployment part is a little finicky when you have external packages.
+
+But other than that, I mean, in 20 minutes we had, well, it's building right now, but we had a working prototype in 20 minutes. And that's just great, in my opinion. Not just any working prototype.
+
+Like, this is, this is valuable stuff, right? Like, it's super, super valuable. I think if you have an audience and, you know, you can build your ideas here and distribute to your audience or do meta ads, build, you know, just arbitrage there.
+
+Like, there's a lot of opportunity to build, build startups here. I actually have a question for you, Greg. What does, like, with all these AI tools, what do you think someone who's maybe not so technical but is learning to be technical, learning these tools, what's the best positioning for them?
+
+Like, what are they to do with disinformation? Like, let's say they know how to market, they know the business side, and now they're getting into prototyping. What should they be doing?
+
+Because this is actually a question for myself. There's someone who knows how to build. Like, what, you know, let's say I have this skill.
+
+What should I be doing? What should people who know how to use these tools be doing? Quick ad break.
+
+Let me tell you about a business I invested in. It's called boringmarketing.com. So, a few years ago, I met this group of people that were some of the best SEO experts in the world.
+
+They were behind getting some of the biggest companies found on Google. And the secret sauce is they've got a set of technology and AI that could help you outrank your competition. So, for my own businesses, I wanted that.
+
+I didn't want to have to rely on Mark Zuckerberg. I didn't want to depend on ads to drive customers to my businesses. I wanted to rank high in Google.
+
+That's why I like SEO, and that's why I use boringmarketing.com, and that's why I invested in it. They're so confident in their approach that they offer a 30-day sprint with 100% money-back guarantee. Who does that nowadays?
+
+So, check it out. Highly recommend boringmarketing.com. I mean, just because you know how to build a product doesn't mean you know how to build a product that retains and drives engagement and word of mouth.
+
+So, that's a whole separate ability of product optimization that Cursor or Bolt or whoever or whatever isn't going to help you do. That requires you to speak to your customers, speak to users, understand what they like, understand what they don't like. Go on social platforms like Reddit and understand people's pain points.
+
+Add this feature here. Add that feature there. Add that feature here.
+
+But I still think that the number one way to learn that is by being in the arena, putting out the product, and committing to optimizing. Just like you're committing to building, right? This is what I want people to really get from a lot of the tutorials I do.
+
+If you could commit to building and you could commit to learning how to build, commit to learning how to market, commit to learning how to optimize, that's the future. Makes sense. Makes sense.
+
+And I guess maybe a selfish question for the devs. I know a lot of devs that are very talented that could build great products without AI, but don't have a lick of understanding of how it comes when it comes to marketing it, sharing it, promoting it, and all that stuff. And what would you say for the devs who know how to cope but don't know the other side?
+
+Should they partner up with people or is it a skill that can be learned? My message to them would be the best songs aren't on the Billboard 100. Meaning just because you create the best possible product doesn't mean that you're going to be successful.
+
+So just like how people like you will come on a pod and be like, you should learn how to code and go and build stuff. And like your training wheels are bolt and then move to cursor and then maybe like a real ID. I don't know.
+
+The same is true to devs. Devs should start by putting out content, seeing what works, building a community themselves, seeing what works, and commit to the process. So like if I'm someone like you, like I'm like you're doing it, you're putting out content, you've got a great YouTube channel and stuff like that.
+
+But committing even more. What does that look like? That makes sense.
+
+And I think a lot of people are, especially devs, are afraid of the content piece. But while you were giving us some great advice, I was trying to make this work. And I think this is where, yeah, both just needs to fix.
+
+So the issue is that it installed a bunch of files and dependencies that I'm probably not going to use. And in order for me to make it work, I would have to go line by line. So what I would say for now is we have this amazing prototype.
+
+Run dev. And we're just going to wait a couple of days for both to fix this. But in terms of iterating, building right in this moment, I think Bolt's one of the best.
+
+Minus the bugs that we just experienced right now. Cool. Anything else you want to let people know?
+
+Yeah, I would say just keep playing with the tools. Keep update with the tools. Like I said in my first video, it's really just taking part.
+
+Right. Like if you knew Bolt released like two, three days ago, then that means you're doing the right thing. And I would just explore and learn these new tools.
+
+Just because a new tool drop doesn't mean you have to use it. But I think the more you play with it, the more you learn, the more you start to develop a workflow. And just the simple fact that with a couple of prompts, I didn't write any code.
+
+With a couple of prompts, we built something where I can say two guys on a podcast talking about AI. Again, this was just a couple of prompts. I didn't write any code.
+
+I gave it some documentation. And we can do this. Right.
+
+Obviously, there's a lot more to building a full fledged application. And I know that's something we plan on doing. Great.
+
+But for now, this is Bolt.new and I hope everyone has fun playing with it. Absolutely. Comment, like, subscribe if you want more Bolt videos from us.
+
+Mike has an incredible YouTube channel. Ross, Mike, go and subscribe there. And anywhere else you want people to go?
+
+Yeah, YouTube's fine. Twitter is Ross Mickey. And yep, say hi.
+
+And if you have any questions, leave them in the comments below. I tried to respond to every single comment on the last YouTube channel. At some point, it would have been a full time job.
+
+So I'll try my best. If you have any questions, leave them in the comments below. And Greg, as always, thank you so much for the opportunity.
+
+Thank you. I really appreciate it. Later.
+
+Later. Roger.漏 keskin We are邊 over. Going back.
+
+Am I too. To 서울adia. Bye, guys.
+
+pueden

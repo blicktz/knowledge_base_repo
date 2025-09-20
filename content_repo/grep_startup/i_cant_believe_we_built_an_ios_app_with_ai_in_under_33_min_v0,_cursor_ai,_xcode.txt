@@ -1,0 +1,349 @@
+Riley Brown, people who watch this episode, what are they going to get out of it? I hope to instill some clarity around building with AI. So I think it would be useful in this episode if we talked about prototyping and how business-oriented people, marketing-oriented people can communicate their app ideas more effectively to either pitch to their team and just, yeah, basically use it as a guiding vision for building software.
+
+And just to be clear, you're not a trained engineer. You didn't go to like University of Waterloo for four years and study engineering, correct? Don't even know what that is.
+
+And no, I will say just through this process, because I have been building stuff with code, despite not knowing how to code. Like if you asked me how to write a hello world thing, I don't think I would be able to do it, but I could build a full mock-up for an app using one of the templates that we've been using and deploy it to the web so that other people can test it. And I will say I am learning a lot about like what the functions do.
+
+So through this process, you do kind of learn how to code, but it's just in the opposite way. You build the thing and then you learn about it instead of learning about it, then building the thing, which makes it more fun. Should we get into it?
+
+Yeah, what do you want to get into first? Do you want to get into v0? I think that might be a good place to start.
+
+I think that's a good place to start. Okay, let's do it. I do have Xcode open.
+
+You know what? Let's pull an audible here. Let's start on Xcode because we can actually prototype iOS apps.
+
+I forgot to bring that up. While you bring that up, I want people to know that you are in for a treat because, first of all, I have so much fun when you come on here and share because it's just like I'm learning. You're able to communicate in such a clear way that I get these little aha moments.
+
+So people are listening. You're in for a treat. And I do have to, I must shout out Anj.
+
+Without Anj, I'd be two months behind. He has been the person that came in and he onboarded me and gave me the right frameworks and mental models to think about what's going on with code that really pushed me forward. And so I just have to shout him out.
+
+And he was on the last episode we did together. But anyway, let's pull up this right here. Okay.
+
+Can you see my screen? Yes. We've got Xcode open.
+
+Yeah. And so I don't want to build a full app, honestly, because I'm brain dead right now. I don't want to deal with coming up with an app.
+
+I just want to talk about like how powerful this is. Let me bring this to a different screen real quick. So this was one of the most powerful tools that I've ever seen in terms of like getting me inspired to build some stuff.
+
+So this is an iPhone simulator and this is Xcode. And if you've watched the previous videos I've made, the way we've been creating apps is we are basically using cursor to generate the code and our code base is in replet and we're connecting the two. In this case, we're not using replet.
+
+We're using Xcode instead. And Xcode allows us to make iOS apps. And Xcode uses Swift or iOS is built on Swift.
+
+And like you know this, I don't know how to write code, but I do know I have seen a lot of code generated. And it's actually pretty easy to understand what's going on when using Swift with building an iOS app. So let's do it.
+
+So first thing that we need to do is we need to make sure that cursor is open. So I'll bring everything down to one window here. And so we should be connected.
+
+And it's super easy to get started. All you do is you hit new project on Xcode and you're going to save it to a certain location. You're going to open cursor and you're going to hit open via file and you're going to select that same file and then they should be connected.
+
+And then you're good to go. It's way quicker to set up than a web app. And so let's go ahead and open Composer with Command Shift I and say, I want you to create a simple one page app that lets me write my notes and save them to the phone, to my phone.
+
+And what's cool about this is since we're using iOS, you can actually save things to the files. Like you have your files thing on your phone. And so you can save things locally so you don't have to set up Firebase, which takes forever and leads to a lot of errors.
+
+And I'm just going to hit code base here. And let's go ahead and run this. And I honestly think this might actually be a good place for people to start instead of starting with a web app, except for V0.
+
+Like if you want to just do front end design, if you want to actually have a database, I think it's a really good place to start. Have you tried this yet, Greg, building an iOS app? No.
+
+I just figured that it would be... Okay. I always thought that building an iOS app was more time consuming and harder to do than building a web app.
+
+Am I wrong? Shh. Don't tell anyone.
+
+But I've got 30 plus startup ideas that could make you millions. And I'm giving them away for free. These aren't just random guesses.
+
+They're validated concepts from entrepreneurs who've built $100 million plus businesses. I've compiled them into one simple database. Compiled from hundreds of conversations I've had on my podcast.
+
+But the main thing is most of these ideas don't need a single investor. Some cost nothing to start. I'm pretty much handing you a cheat sheet.
+
+The idea bank is your startup shortcut. Just click below to get access. Your next cash flowing business is waiting for you.
+
+So the thing about iOS, from what I've learned, and again, a lot of this is what I've learned in the last two weeks. From what I can tell, it's very annoying to release apps on the App Store because Apple has such a strict monitoring policy. They're making sure that you're not selling things because they want that 30% cut.
+
+And they have really strict content regulations. So they don't want you doing anything. So it's more time consuming on that part.
+
+But if you're just testing it, I can immediately deploy this to my phone. You have to put your phone on developer mode. But you can, like, deploy it on your phone and take it with you.
+
+And so, like, I'll be making little voice apps, and I'll just deploy it straight to my phone. And it lives on your phone for the max seven days. And you can just go on a walk, and you can talk to your phone, and you can use your AI features.
+
+And I really like that because you always have your phone with you. And so you can always test it. It's way easier to show people.
+
+And it's not super difficult to create a test flight account. And so I could send you a test flight link, and you can try the app. I think it's just more tangible and fun.
+
+And it's not that time consuming if you're not trying to fully deploy it. Once you want to fully deploy it, then, yeah, it's probably more time consuming. Okay, let's see this.
+
+So we're going to hit save all. And this is the part that's annoying about Xcode. So anytime they add a new file, you actually have to manually go in.
+
+And you have to hit file. And you have to, let's make sure we're on the right thing. Yeah, so file, add files to SIP pod.
+
+And they should, did it not, did it add already? It's been a while since I've done this. Hold on, hold.
+
+Okay, it actually shows note view here. So maybe you don't have to do that annoying step anymore. Even better.
+
+That's cool. Normally you have to, anytime cursor creates a new file, you have to like manually save them. But it doesn't look like you have to.
+
+Okay, there you go. See, now we have a notes app. And we can actually use it like it's a phone.
+
+Like, hello, this is my app. And we can go back to, we can go to cursor. We can say, please make the top say SIP notes.
+
+Even better. Can I edit that? Yeah, yeah, yeah.
+
+I'm sorry. I have a note file on my, on my phone that's called ideas, startup ideas. So this could kind of just be my idea.
+
+Yeah. And you can add little fields that you have. So like, you know, like you can make it your own custom based on whatever you like.
+
+And you can just make it for fun. And it's like, honestly, as fast as setting up, you know, like a notion doc, which kind of sucks. Like, as you, I saw in your tweet recently, you're talking about the feature bloat, which I agree with.
+
+Okay, startup ideas, make the top say startup ideas. And then, and then make the button say, because we'll, we'll want this button right here to say, add SIP or no, add, add idea. Add idea.
+
+Change the color theme. Add code base. And yeah, that's pretty fun.
+
+I don't know, I don't know how far we want to get into it, but this is just to show you that it's like pretty easy to get. Oh, I know what I want to show you. All right.
+
+So it should be done. We hit save all. And then, oh yeah.
+
+Every time you make an update, you have to actually rerun it on Xcode. So you have to come back, make sure that you have this like simulated iPhone 16 open right here. And you're just going to hit this play button and it needs to succeed.
+
+If it, if it fails, it'll say build failed. And yeah, it'll just kind of, so this part takes a little bit longer than using a web app, but there you go. Startup ideas and then add idea.
+
+Let me make sure this work like selling water. It's the theme selling water balloons at a football game. Like this is the third straight episode.
+
+Add idea. There you go. Boom.
+
+It's right there. You can check it out. It's super easy.
+
+Final thing I want to show you is if you go to Riley's iPhone, I can actually. Oh, I haven't set it up to this account. Anyway, that's how you would do it.
+
+You just need to hook it up via your iPhone and you need to put it on developer mode. I haven't done it with the iOS 18 yet. And I don't think we need to do it now.
+
+But yeah, you can immediately, it'll immediately load on your phone, which is really fun. That's cool. And you can go for a walk and you can come up with startup ideas and store them in there.
+
+And it's a great way to get started. It's a great way to get started. It's a great way to give you that aha moment.
+
+Yeah, for sure. Because when you, especially people listening to this, this is probably the first thing or one of the first things they're building, right? So I think it's a big deal.
+
+You know, it's going to, you might look at this and you're going to be like, oh, I don't need this. I don't need that app. Well, actually creating the app is going to just turn on your brain in a completely new way.
+
+Yeah, I 100% agree. You don't know what you don't know. And once you start, like your problem is you're going to have too many ideas.
+
+Like once you, you might think you have no ideas now. As soon as you find one idea to make, you're 100% right. You're going to be walking around, you're like, oh, I want to build this thing.
+
+And it's going to get in the way of the other projects that you actually want to build. And so it's actually, I guarantee it too. Like every single person I talk to has the problem of like too many ideas.
+
+And yeah, you have to hit the aha moment. And I think, I think it's a good way to start on your phone because for something about iPhone apps are more tangible than websites for whatever reason. Should we talk about V0?
+
+Yeah, let's do it. Cool. Cool.
+
+Okay. And maybe we can explore an idea that I had earlier today. You're at the right place.
+
+Startup Ideas Podcast. You have an idea? Sounds about right.
+
+Hell yeah. Can you see my screen? Yes, sir.
+
+Okay. I've talked about V0 on previous episodes and it's getting, it's getting better. So they added a project feature, which the app that I'm building is yapthread.
+
+Yapthread.com via, by the way, you can sign up for the waitlist plug. Anyway, what you can do on V0 is you can actually like put in all the information about like your company, about your app that you're building so that you don't have to enter in information over and over again. So like you can just create like create a landing page for yapthread, create a, what else would you need for it?
+
+Yeah. Like you can basically, yeah, create a about us page with the app thread and it will always have access to that information. And so it's super easy to store it in your project.
+
+So highly recommend using that. But I want to create a cursor for writing. I was thinking about that earlier.
+
+Like what if there was like a cursor that looked like VS code, but it was for writing. And so imagine you have that idea and say, I want you to create a VS code, but a VS code like app, but for writers where you have notes on the left panel and a markdown. And then custom presets on the right panel where you could use them to edit the middle panel.
+
+So, uh, so the presets are like custom AI prompts or something like that. And you just put in your idea and V zero is quite creative compared to like cloud artifacts compared to anything else you can. Um, it comes up with original ideas, which is fun and it's really fast and shareable.
+
+So would you recommend being very prescriptive in the beginning or letting it kind of come up with its own idea? I would want a hundred percent. Ooh, this is actually kind of clean.
+
+I kind of dig this actually like legit. Like I'm not even, this is fire. Like this is my note.
+
+We can make, I love the white, um, expand scene character dialogue. Okay. So there's some chapter one.
+
+Okay. So it has the notes right here. Ooh, this is actually kind of sick.
+
+Um, what would you, would you change anything about it? Well, I think, uh, this is interesting if you're writing a book, but I think that the real opportunity here, first of all, I think there's a huge idea. Like this is a multi-billion dollar, you know, idea.
+
+Um, but I think that if I was creating this VS code, like interface for writers, I would focus more on internet writers than book writers. Sure. For sure.
+
+Um, this does, it is like chapter. Okay. So let's, let's make this for, uh, content creators.
+
+Uh, make the presets called, uh, tweet, thread, TikTok, uh, script, podcast, intro, and outline, uh, newsletter. And then, um, uh, Instagram, uh, carousel. I do not know how to spell carousel.
+
+I never get it right. So I'm just not going to try. Um, and, um, the notes should be, ooh, uh, web clips from the internet.
+
+And then, ooh, no, that, hold on. Let's just try this. Uh, make it, make the, the left titles, uh, more, um, about posts on social media.
+
+Yeah. Yeah. I think it was just the, the things that they added as placeholders.
+
+So basically if you create one of these and I actually can't go back while it's loading, but you'll see that it's adding a lot of these placeholders, right? So if we were to actually build this app, what it would do is it would basically say, whatever the user puts in, you're adding it to Firebase, which is where we're storing all of this data. Um, and so then, ooh, there you go.
+
+There's your social icons. Oh, it doesn't have a tick. It doesn't have a TikTok icon in the library.
+
+That's all right. That's interesting. Um, okay.
+
+Yeah. It's, oh, there it is. Uh, failed to load the TikTok icon from Lucide react.
+
+It's probably cause it doesn't exist. Um, this, okay. So it won't let me type in there anymore, but the point is you're trying to figure out what each page should look like.
+
+And so if we're actually trying to prototype this app, um, and we're not trying to build it and like, this is like the next iteration of wireframing, right? Because what I'm going to do here is that you can hit share or you can hit fork. Let's fork it first.
+
+Let's say we decide, yep, this is our main page of this cursor writing app. And we are going to fork it. And that allows us in any of these apps, the less context you have in the better, unless it's relevant.
+
+And, um, if you want to iterate on it, I recommend forking because if you have all of that context in here, it's just going to start performing worse. Um, but when you fork, it also isolates it so you can share it. So you have these public links, right?
+
+What we can do is we can go to, um, let's just go to Google docs. And let's just very easily, just like you can just go front page. And then we just, um, we can hyperlink that in.
+
+And so now our goal would be to get whatever other page we might want on this. So let's now say from here, we say, okay, I want there to be a profile icon on the bottom right of the screen. Uh, this should have all the important information about, or information about the user, um, that a writing tool would have, including, um, let's just say audience information.
+
+So that might tailor some of the writing styles, um, example scripts. Uh, actually we'll, we'll call them, let's call these high performer scripts. Cause you want really good examples, any really good app.
+
+It's not about having, being able to do everything. It's about having really good examples and staying super narrow, um, towards those. That's just, that's kind of how, one of the things that we're taking into consideration when, um, we're building our app is where you have to have really good examples and you don't want it to just let it do its thing.
+
+Cause it sucks at writing in that way. Um, audience information, high performing scripts, and then basic details. Um, and, um, and then one thing to always include is keep the theme of the site.
+
+It should look like the same style. That'll probably work. And then you can run that.
+
+And I really dig the style, to be honest. Like it's super minimalistic. It's kind of like typewriter vibes.
+
+Yeah. It's, it's very Vercel. If you look at their company, it's very black and white.
+
+Um, whatever. I don't know what the font is called. Um, but yeah, it's very clean.
+
+This is kind of their default style. Um, okay. So it's, so it's basically adding the profile button.
+
+Maybe it's going to be a full screen pop-up. I forgot to just say to generate like a full separate page. I was actually prompting it like it was cursor because I was basically saying, put the button on the main page and create that new page.
+
+I forgot that I was actually in V0. Um, but it should give us that icon. I don't see it yet.
+
+Oh, was that saying it failed? Okay. Just create the profile page, please.
+
+Um, no need to show the profile icon. Um, I must admit I'm a lot more angry to V0 than, than you are. I feel like you're so you're, you're polite.
+
+Oh yeah. I mean, I feel like, uh, and trust me right now we're in the beginning. You haven't seen me, uh, at the end of, uh, an error loop that lasts multiple hours.
+
+Okay. I have, I'm not crazy. I have definitely behind not, not filming.
+
+I have sworn relentlessly at cursor before, especially cursor when the, um, who's kind of, Ooh, this looks dope actually. Um, oh, so this, this would be like if it was pulling your data. So like if you, you could set that up to your YouTube API, your podcast statistic APIs, which might take a little bit longer.
+
+Um, but yeah, you could actually have it automatically load your high performing scripts. You have your account details. That would be something that you could automatically set up.
+
+Um, but yeah, this is pretty cool. So what I'm going to do again is fork this profile page and then quick ad break. Let me tell you about a business I invested in.
+
+It's called boring marketing.com. So a few years ago, I met this group of people that were some of the best SEO experts in the world. They were behind getting some of the biggest companies found on Google.
+
+And the secret sauce is they've got a set of technology and AI that could help you outrank your competition. So for my own businesses, I wanted that. I didn't want to have to rely on Mark Zuckerberg.
+
+I didn't want to depend on ads to drive customers to my businesses. I wanted to rank high in Google. That's why I like SEO.
+
+And that's why I use boringmarketing.com. And that's why I invested in it. They're so confident in their approach that they offer a 30 day sprint with a hundred percent money back guarantee.
+
+Who does that nowadays? So check it out. Highly recommend boringmarketing.com.
+
+This is basically what I sent my team before we started building is I just had all of these pages in links. So you just have the profile page. You have the profile page.
+
+And then you can link it there. And so you can always find it. If you want to use something like whimsical diagrams, you can basically show what button will lead to that page.
+
+And it's super useful. And then, yeah, cursor for writing. And yeah, now we have two pages.
+
+What do you think we should do next? First of all, I love this page. I love how simple it is.
+
+I love how gamified it is. Like, it now feels like this is like a game almost. Like, I would use this.
+
+Like, you know, one of the reasons why I think people got addicted to platforms, social platforms like Snapchat, Snapchat streaks. It's like, you know, you came back to Snapchat because you didn't want, you know, to lose your streak with someone. So I think like a gamified writing tool is really interesting.
+
+Yeah, yeah, yeah. So like maybe it scores everything that you post maybe or something like that. Yeah.
+
+Or because a lot of what people are writing now end up becoming videos. So that's actually, that is a tougher problem that we're actually trying to solve is like, how do we connect that original piece of writing to the video content that you've created? Because a lot of, a lot of video, in order to create an AI tool that helps with video, you need to have sufficient input output.
+
+So you need to not only know the video, but you need to know what script or what outline you used. And then it's useful to know what research went into the outline. And so if you can map the whole process, you can then reverse engineer it.
+
+So you can basically take someone else's video, you can be like, I want to create a video like this. And then it says like, okay, you want to create a script like this. And then you want to be able to find these types of sources.
+
+And so that's the way that we're trying to approach this problem. But yeah, so that's V0. And V0 is just front end.
+
+So I'm not able to, they actually are adding certain APIs that you can use to fill data in as just placeholders. So you don't have to look at like, like one thing we could do is say, we could say, let's go back to this real quick. And what I've been doing for, with V0 recently is using it to make landing pages.
+
+So that's been really fun. And I think the best use case for V0 is say, okay, for this site, create a landing page that is highly effective to get people to sign up based on the value prop for this site. The ultimate, or we can just call it cursor, create a composer name of site.
+
+Okay. And yeah. Have you ever used Tally?
+
+You're talking about like the forum company? Yeah. Tally.so?
+
+Yeah. So if you want to create a really, really fast landing page and collect like user, like if you created a wait list, like I created one yesterday in 10 minutes and just threw it up. And I was able, like I literally said, use this logo.
+
+I generated on mid journey in one minute, use this logo and then embed this form. And I just pasted in the Tally embed form and literally one prompt, it generated my landing page. And now like people are signing up on the wait list and it's just going to Tally.
+
+So we have that information. So if you have to do it really quick, that's a really good way to do it. Interesting.
+
+And it's free. What? Because I know I pay like hundreds of dollars a month on type form for all the different ideas that we're running.
+
+Yeah. Well, Tally's only 30 bucks a month if you don't want any of their branding. Like, yeah, like this is one prompt on V0 right here.
+
+And if you just click on sign up for wait list, it's just one prompt. Like I created this basically. It's crazy.
+
+Yeah. And it's super easy to go from this. It's a lot easier with one page to go from this to get it over to Replit.
+
+You basically just give it all of the code. You can also, I mean, this is basically the whole landing page. I mean, look at this landing page.
+
+Let's use your, I guess, the boring marketing analytics here. Like compose your content, orchestrate your success. You could probably work on that.
+
+But like, that's a clean landing page. It's clean. It's clean.
+
+And I think what's so cool about this is you can come up with an idea. You can prototype something. You can put it out there and start getting feedback in minutes.
+
+Yeah. I mean, think about how long we've been sitting here. I mean, like, look at this public link.
+
+Boom. Look at this. We have.
+
+Now we have a landing page. And so if you send this to a developer, they're like, oh, like he has the whole site mapped out. All they have to do basically is connect things with the backend.
+
+Obviously, there might be some code that might be a little messy. But like their job is mostly just the vision is very clear. Maybe not with something like with cursor for writing is actually a pretty, that is a tall task.
+
+That's a multi-week project no matter what. But they have a better idea of what you're talking about, which is really cool. Yeah.
+
+I mean, that's V0. What else should we dive into? I think that's the episode.
+
+I like it. Hell yeah. Let's do it.
+
+Yeah. So if you're listening to this, you've got ideas. Don't just be an idea guy or gal.
+
+Like be a prototype guy or gal, you know, put your stuff out there. I've never used tally, but I've seen people use it. Like get your tallying.
+
+I think like voice of customer feedback is so helpful. Um, and you might realize by putting out this prototype that, Hey, turns out people don't want this product. And that's, that's great too.
+
+It is the best loop. And you said that like you had a tweet that I referenced in a YouTube video that I released this morning, which was like the most dangerous person or, um, something about the, I call them the creator composer, someone who can build things with a community and ask them if they like it or ask them if they don't like it or ask them what they want. And you just have this like really fast feedback loop.
+
+Cause yes, you can, as a creator, I can outsource someone to build apps for me, but the loop is so slow. I'm talking to other creators who do that. And it's like multiple months before basic features are created features that I have literally released to my community the same day I have the idea.
+
+And so it's a, it's a huge unlock in my opinion. And I agree that it's, they're the most dangerous people. You want to be dangerous.
+
+Yeah. Do it. Um, if you liked this episode, please like and subscribe.
+
+And then Riley and I will be in the comment section. If you have any additional questions or want to just talk more about this stuff and nerd out about it. Love to see you in there.
+
+And Riley, where could people learn more about you and some of the stuff that you're working on? Yeah. Yapthread.com, uh, really releasing an app.
+
+That's all I've been doing for the last two weeks. So it's nice to get a little content break in. This was a lot of fun.
+
+Um, yeah, that's what I'm working on. And he's doing it in public, which is cool. You know, like this is a guy who, like you said, he wasn't, wasn't a developer.
+
+He's got a small team. And, uh, one thing, one, one, one thing before I go is we're actually going to have feature contests. So we're going to release the code for the app and we're going to see who can like fork the code and add the coolest feature to the app.
+
+Um, and it's going to be really fun. Uh, I'm super excited about that. Yeah.
+
+We're just going to do it. Um, if someone copies us, whatever, whatever. Yeah.
+
+Cool. All right, my man. I'll catch you later.
+
+Yep. Peace. Peace.
+
+Peace. Peace. Peace.
+
+Peace. Peace. Peace.
+
+Peace. Peace. Peace.
+
+Peace. Peace. Peace.
+
+Peace. Peace. Peace.
+
+Peace. Peace. Peace.
+
+Peace.

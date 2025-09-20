@@ -1,0 +1,453 @@
+This episode is with Max, the co-founder and CEO of Gumloop. If that name rings a bell, it's because they just raised $19 million. They're one of the best-in-class AI agent and AI automation companies.
+
+Now, this is a software that you can use to basically automate what a junior employee does. Prior to this interview, I have not used it. So I reached out to Max and I said, hey, can you give us a tutorial how to automate what a junior employee does?
+
+We use Gumloop to do it. This is probably one of the most requested episodes. Gumloop is super hot right now.
+
+And I'm excited for you to learn how to automate more things in your business. This is relevant for the biggest companies in the world. To a solo-preneur, enjoy the episode.
+
+The startup I just podcast. It's sipping time, baby. All right.
+
+So super excited to have Max here. This might be one of the most requested tools, AI tools that people want me to cover. We're talking Gumloop today.
+
+We've got the founder, co-founder, CEO of Gumloop to literally, I mean, you tell us, what are we doing today? Yeah, I think we're just going to demo Gumloop. I'll show you how it works, how to get started with it.
+
+Honestly, demoing is my favorite thing to do. So I'm super excited to do it in general and to be on the pod. I appreciate you having me.
+
+And just to be clear, I'm not involved at all in Gumloop at all. I just have heard good things that people are using Gumloop for a lot of really interesting automations. And could you tell people, Max, by the end of this podcast, what will they learn so that they can implement it in their own businesses?
+
+It's cool that you're demoing Gumloop, but that's about you. What are people going to get out of this? Yeah, I think by the end of the pod, you should be able to build super powerful AI workflows and deploy them.
+
+So you'll have usable tools you can share with friends that do any number of kind of AI actions with your data. Sounds kind of vague, but I can show you exactly how that works. Beautiful.
+
+All right. Well, let's just get our hands dirty. Sweet.
+
+I guess to start here, a Gumloop workflow is just a series of steps, basically, that you're connecting. You're passing data from one node, we call it, to another. And before you know it, you're kind of able to build these super powerful AI-powered workflows that connect directly with your data.
+
+So this is what we call the hub. These are all of my workflows. And if I were to just introduce you to the idea of making a workflow from scratch, you're faced with this empty canvas.
+
+And what you do is you add these nodes onto the canvas. So we get compared a lot to Zapier and Make and other kind of no-code automation tools, mainly because we have a lot of the same integrations. So if you wanted to pull data from your Slack, your Airtable, your Outlook, Notion, Reddit, all of these sort of integrations, you can do that.
+
+But the power really comes in when you connect this data with AI steps. So let's say I want to read from my Gmail inbox. I drag this Gmail node onto the canvas.
+
+It's reading from a certain inbox. And then I want to pair that with one of our AI steps. So we have many different AI steps.
+
+They're all powered by LLMs. The most basic one is Ask AI. This is like asking ChatGPT a question, except it doesn't just have to be OpenAI's models.
+
+You can really plug and play with any model, even like loop in your Azure, the models you have deployed on Azure. And you connect the flow of data just by connecting nodes like that. And I could write a prompt saying like, summarize this.
+
+Obviously, this is not a super useful workflow. But that is how you connect data and these AI steps. So beyond an Ask AI node, we have a lot more nuanced sort of AI tooling here.
+
+So you can do things like data extraction where I could specify a schema. Like I want the amount and the contents of this. This is like a receipt or something.
+
+I can have AI extract the amount with Claude 3.5 Sonnet. And let's say I want to also specify the date. I now have two pieces of data that I'm extracting that you can use later in your workflow.
+
+You can also do like categorization, summarization, scoring. You can do video and image analysis. Really, when you pair these LLM steps with your data, you end up with like fully AI powered products that would have normally taken an engineer to build.
+
+And that's kind of what we're delivering with Gumloop. I can show you. Quick break in the pod to tell you a little bit about Startup Empire.
+
+So Startup Empire is my private membership where it's a bunch of people like me, like you, who want to build out their startup ideas. Now they're looking for content to help accelerate that. They're looking for potential co-founders.
+
+They're looking for tutorials from people like me to come in and tell them, how do you do email marketing? How do you build an audience? How do you go viral on Twitter?
+
+All these different things. That's exactly what Startup Empire is. And it's for people who want to start a startup but are looking for ideas.
+
+Or it's for people who have a startup but just they're not seeing the traction that they need. So you can check out the link to startupempire.co in the description. I think this workflow, this one here, is kind of interesting because this is actually how we generated all of our revenue in the early days of YC.
+
+So my standard workflow is I would wait for people to sign up for the product. And then when I saw their email, I would sprint to my laptop, Google who they were, try to figure out everything I could about them, and then email them if they were a high value lead. We were kind of shooting for enterprises to use the product, so that was what we were looking for.
+
+But this workflow emulates that entire process for me. So I think this one also exemplifies two cool features on Gumloop that make it different from other platforms. One is subflows, which I'll get into.
+
+And the other one is how this is triggered. So the input to this flow is a user's email. This example one is like Tim at HubSpot.
+
+That's, imagine that person signed up for the product. But I don't sit here all day copy-pasting in people's emails. This is all running via webhook.
+
+So you can treat any Gumloop workflow like an API, trigger it from your own product based on an event. In our case, the second someone presses create an account on Gumloop, their email gets passed into this workflow and it runs in the background. That email then gets passed in to this step here, which is not something you can find in the Node library.
+
+It's not like an AI step. It's not an integration. It is a subflow.
+
+So this is an entirely separate workflow used as a node. And it kind of has like the power of a function if you're a programmer. It's reusable.
+
+It's clean. It's extensible. You can give this to your coworker.
+
+They can import it to their workflow and kind of like benefit from the work you did. But in this case, this is doing all the heavy lifting for the research. So it takes the email.
+
+It gets the domain out of it. It scrapes their website. It summarizes what they do as a company with Cloud3 Haiku.
+
+I even went a little deeper here and I edited the prompt template under the hood to say, like, please just give me a one liner. I want this to be hyper concise. It extracts their company name.
+
+This was a later edition I made because if you try to get a company name with like Zoom Info or something, you'll often get like Gumloop YC W24, which is not like I can tell you're botting if you're calling me that. So I ask AI just to get the company name. And then I do use those different enrichment services in this node here.
+
+So it's doing a waterfall approach. I'm getting industry, revenue, country, but you can get like LinkedIn URL, monthly web traffic, total funding, number of employees if you wanted. All of that gets funneled into this little formatter.
+
+Not super necessary, to be honest, but it looks nice because I'm about to send this into our company Slack. So I want it to be like a nice readable notification I can open on my phone. And then all of that funnels into the company Slack.
+
+So like five seconds after someone presses create an account on the platform, we get a ping saying how much revenue they're making, where they're based, a link to their company, a summary of what they do. And then it also drafts an outbound email in my inbox. So it's linked to my Gmail.
+
+I click save as draft because I don't want to spam someone with like a hyper personalized message right when they sign up. And then at the end of the day, I used to go through like maybe we had in the early days like 20 signups in a day. I would send off the top 10, delete the rest.
+
+And that was my workflow that would get them on a demo call. So it was kind of like a semi inbound, semi outbound sort of thing. And yeah, we built this in the early days.
+
+You could definitely extend the workflow. Like you could add perplexity to it. You could research their company way more.
+
+You could do a bunch of like Google searching. You could add them to your air table, enrich your CRM. It really is like a build your own software sort of platform.
+
+But in our case, like we kept it simple here. And I like kind of keeping this workflow as is because it's a relic of the past for us. Yeah.
+
+So my first reactions to this is this is probably the most beautiful automation software I've seen yet. Like it just feels a lot more fun and human to use, which is awesome. Like it feels like it's like hooking this stuff up.
+
+It feels like Lego building blocks, which, you know, and it's kind of got that like Figma feel. Yeah. Thank you.
+
+I was in line for that. Yeah. Just going from that like design perspective, I love that.
+
+I think that something like this, like this is the difference between if you make $50,000 a year in sales or you could make 5 million. Having these tight systems that just automatically, you know, are in your workflows. It's the it's your unfair advantage, frankly.
+
+Like, you know, most people aren't doing it. That's that's the advantage. I think one of the things I'm thinking about, because I'm like, oh, how do I implement this on some of my companies is does everyone need to create one of these workflows themselves?
+
+Or is there are there like templates that I can go and grab? Yeah. Yeah.
+
+So that's a good question. You we often see at companies that there's like a couple, like maybe five AI people who really love this sort of thing. They build amazing tooling and then everyone else just uses it.
+
+And that's a I'll show you a few features that really enable that. So like people can actually use the workflows without even seeing this crazy flowchart sort of thing. But also we do have a template directory and we're going to be launching a marketplace where people can publish and even sell their templates.
+
+So if you wanted this like crazy enrichment flow that someone worked hard on, you could pay a few dollars and just clone it into your workspace. But yeah, I think that's the future, like being able to share useful tooling. One thing we like to say internally is that understanding a problem should be the only prerequisite to solving it.
+
+Like you shouldn't need to have an engineering degree to understand like how to boost sales with automation. You should just need to understand how to write a great email or what data to look for in a good customer. So that's kind of what we're gunning for.
+
+And I think templates are kind of a bandaid over the product being a little too confusing at the beginning. If we could nail this UX problem, I don't think you'll need templates because you can just get to something amazing in like five minutes of tinkering. Totally.
+
+And that's why I wanted to have you on the pod. Honestly, it's just I wanted to show people what was possible so that they can go and just mess around on their own. Because that's the number one way that people are going to learn realistically is trying things out and then being like, you know what?
+
+I actually like sending the personalized email right away for whatever reason. And that might work for someone and it just might work for you or me or something like that. Could you show something else?
+
+Yeah, I have a bunch of stuff to show. Oh, amazing. I also built some workflows that you could use.
+
+I stayed at the office a little later last night and just made some that are kind of cool. But just to show off this and how you run it, because you can run any workflow manually. I realized I haven't shown how it works.
+
+So it breaks down every single step. You can view the inputs and outputs. You can go deeper and investigate what's happening in the subflows.
+
+I just got the Slack notification. I have the draft in my inbox. Just wanted to illustrate how this actually runs.
+
+But yeah, let's dive into another workflow. Here. This one watches all of your videos and gives me an analysis of how you run these interviews.
+
+We thought that was kind of fun to make, but I think this one's pretty cool. This exemplifies the value of loop mode, as we call it. So this is kind of how large companies run at scale.
+
+You can run automations manually in this kind of one-off fashion. You can trigger them with events or webhooks. Or you can kick off a run that does thousands of events at the same time.
+
+It will loop your automations and be able to run them at massive scale. So this flow here takes in a YouTube link to your podcast and it writes a blog post about it. So this video here.
+
+Dude, I need this. Yeah. I actually need this.
+
+I built it thinking that you would enjoy this. So this is one of, I'm not paying for a premium on this account, but this is one of your episodes with Samir from Colin and Samir. Yeah.
+
+Let me just. By the way, shockingly, this pod didn't get a lot of love, but it was one of my favorite episodes of the year. I really enjoyed this one.
+
+So I picked that one specifically because I thought it was kind of jam-packed with knowledge and tips. It wasn't just like a, I think the demo ones maybe are harder to convey as a blog post, but the ones where they're giving advice and info, those are really great. So I think this is, this sort of AI content generation workflow is interesting because you're not like making content out of thin air.
+
+You're just repurposing kind of the hard work you've already done previously. So all you have to do is paste in this YouTube link. You press run and then the blog post will be live in like five seconds on Ghost, which is our CMS.
+
+The thumbnail is a little grainy because I didn't get the best thumbnail, but it's, it gives a TLDR. So like his main points that he covered. And then at each of those main points, it goes into like exactly what he was saying about it.
+
+And then it embeds your video at the bottom and also links all of his socials. I didn't even prompt it to do this. It just somehow did that.
+
+Dude, are you kidding me right now? This is amazing. Yeah, this took like under 20 minutes to build.
+
+I can show you how it works. Yeah, let's do it. The interesting thing I want to show off just to start is that this workflow that takes in one YouTube link can be looped over a thousand YouTube links.
+
+If you just use this flow as a sub flow, link it to a Google sheet and then run it in loop mode, which is like a for loop basically on Gumloop. So you give it a thousand inputs, it will run your workflow a thousand times and Gumloop handles the infrastructure of how all of this runs concurrently, all of the rate limits. You just kind of like go get a coffee while your content's generated.
+
+Okay, so do you want me to dive into how this works? I would love that. Sweet.
+
+So the input is a YouTube link. It feeds into this sub flow, which is doing basically all of the hard work. I can open the sub flow.
+
+That YouTube link that we pass in dynamically gets passed into this YouTube node that we have that gets the transcript. We also have a Gemini node that can use like it can you can do a speech to text if you wanted to do that to get the transcript or you can use Gemini to actually analyze the video itself. There's a couple.
+
+It's kind of like an artistic choice, which whichever direction you want to go. I could have just fed that transcript into a single AI prompt saying like write a blog post. But I find if you break things up into bite size steps, the model will listen to you a lot better.
+
+You'll get much higher quality results. So the beauty of Gumloop is that you can just do that prompt one time, work really hard on it, and then benefit from that good prompt like thousands of times if you run this thousands of times. So in this case, I take the transcript and I just ask 01 to give me a digest.
+
+Like take the fluff out because there's like kind of casual conversation in between the points. Give me something verbose but informative. Is there a reason why you chose 01 versus something else?
+
+I think for work like this, 01 is just amazing at like the longer form critical thinking. So if you have a 55-minute podcast, that's a lot of content to process. I don't want it to get too distracted.
+
+So I'm okay with paying more in terms of just so I can get the best possible digest. And the quality of your AI steps cascades for sure. So if I were to use like GPT 3.5 here, the next step would only be as good as whatever the previous step outputted.
+
+Totally. It makes sense. The next thing I do is I just ask it to write a blog post.
+
+So you can change the prompt here super easily. You'll notice I said you're writing in Greg's perspective. I wanted a TLDR because I think that's useful.
+
+I like that when I'm a reader. And I said like avoid jargon. Sometimes models will just be too verbose.
+
+And then the last step here is just to format it in HTML. So you'll see there's these like nice headers and sections. That is like AI is exceptional at that sort of thing.
+
+And just taking content and knowing what should be a title, where to put, where to make things bold. I then manually just link your video at the bottom. Because I think every blog post should have a link back to the original source.
+
+And I output that. So that's the content that's going into our ghost node here. It also, this workflow is picking a title, which is kind of cool.
+
+So I just snip like the first thousand words from the podcast, which is normally where you're like front loading the information. And I have an extract data node here. So this extract data node just lets you kind of get really structured content out of the model.
+
+You can get a title without it saying like, okay, here's your title. That sort of fluff. And you don't have to beg ChatGPT to like omit those fluff words.
+
+It just gives you the value. So I'm like, I want a very short title. Your context, your job is to pick a title for this video.
+
+Make it short, something snappy. And then that goes into the blog content. And then the thumbnail thing, I just, you can get the thumbnail of any video with this format.
+
+I just figured, I asked Claude and it told me this is how you get the thumbnail of a video. Yeah. And this is a template that I could share like easily.
+
+I could make this available to anyone, copy the link to the workbook and then send it over to you. And then you just have it as if you built it yourself. Yeah.
+
+We'll include that in the show notes in case people want to like mess around with it. I think this is so important because this is a way to get thousands of visits from SEO on autopilot to whatever it is you're doing. So one of the things that you can do is, you know, if you're selling a product, let's say, and you can put at the end, like if, you know, if you like this podcast, you should buy my product or service.
+
+Right. And then a percentage of those people are going to try, are going to buy that product or service. Or you can just have a lead magnet.
+
+You know, you can just be like, you know, give me your, you know, if you like the Colin and Samir episode, you're going to like the 2025 creator report that we did. And then people click on it. They give their email address.
+
+You get the email address and then you can remark it to them. It's just a way to get, yeah, it's free visits, free signups, leads. This is the type of thing that you just set it on autopilot and then you let it compound and good things happen.
+
+Yeah. Also where this content goes is totally configurable. Like if you wanted it to go to your Shopify, your Webflow, into a Google Doc, into Notion, like you just swap out the last step and it just reconfigures itself.
+
+You don't need to like build the OAuth integration. I'll also show you in a couple of minutes how you can build your own integration with AI. You just prompt it and it will build the node for you that you can use on the platform.
+
+Yeah. I was going to ask you about that. Like, how does that work?
+
+It's, I think it's pretty cool. I'll demo the full thing. I'll build an integration live.
+
+Okay. And I'll also, I want to show you Gumloop interfaces next because this is a feature we're super excited about. Mainly because kind of what I mentioned before, if you send this to your coworker who's never heard of Gumloop, they have a huge task ahead of them of figuring out what the hell is going on.
+
+Like how would they know to put in a value here or to click run or anything? So what we do is we released a feature that lets you just make an interface on top of this flow. I'll show you a flow that has a really nice interface.
+
+You have 97 pages. On this account. Yeah.
+
+I have many accounts. So this flow, you can see it was cloned 3,089 times because I put this one on Twitter. And I think it's really cool.
+
+So I'll just start without the interface and just explain what this, it's kind of an ad marketing workflow. But it's doing what a lot of people on marketing teams are doing in terms of competitor analysis on a daily basis or weekly basis. So it starts off by scraping your competitors' Facebook ads.
+
+Like anything that they're running on Facebook, Instagram, WhatsApp, I think has ads too. It's all just kind of one location where you can view all of the active ads. It then feeds all of those ads into the subflow.
+
+The subflow is wrapped in an error shield so that you can, if the ad is like wonky or there's an issue, you can just skip over that error. Kind of a more advanced feature. But Gemini is watching the video ad and analyzing the image.
+
+So it's coming up with like on an ad by ad basis because it's in loop mode. It's coming up with an analysis of like, what is this company trying to achieve with this 30 second ad? With all of those analyses, even if it's like 50 active ads, it will dump all of that at the bottom of this very large 01 prompt that's saying like, you're an expert in ad analysis.
+
+I want you to come up with an overall analysis of this competitor's ad strategy. Like what are they focusing on? What does it seem like they're like really want to convey with these ads?
+
+It then formats that in HTML and then sends management an email. So on a scheduled basis, like you can ask it to run this every morning or every Friday morning at 9 a.m. PSD.
+
+And you'll get a, sorry, my cough. You'll get an analysis of the competitor's ad strategy in your inbox in a really beautiful formatted way. But like I said before, if you send this to someone, no idea what's going on.
+
+So this Gumloop interface simplifies things. All you need to really do, let me just refresh this so I don't overwrite anything. All you need to do is send someone a link.
+
+Sorry. Send someone this link. And this is what they see.
+
+It's like a really simple, impossible to mess up version of the app. You can just, I'll use this as an example. I want it to email me at max at Gumloop.
+
+Gosh. My mic is covering my keyboard. All right.
+
+And then they don't even need to know how the workflow is working. You can go see it if you want to. You can click view workflow.
+
+But I'm going to get an analysis of a competitor's ad strategy in my inbox. And just to show you how you edit an interface, you click here and it's this kind of really simple drag and drop, build your own UI. People on your team will think you're like an AI engineer who built this crazy web app.
+
+But you just clicked a couple times and picked some cool headers. I'll show you the output in a second. So this is really cool.
+
+I can see myself using this with my team to just get smarter. Could I use this, like if I wanted to build a SaaS product, could I use this and just have Gumloop actually doing the work in the back end? Like could I make a website and charge people to do this?
+
+100%. 100%. We have many users doing that with webhooks.
+
+So you can build your workflow like you're like engineering this crazy API. But then you just, I realize I'm doxing my, we're going to need to blur some of this out if that's okay. I'm doxing my API key.
+
+Yeah, we'll dox that. We will blur that out. Sweet.
+
+Yeah. But yeah, you can trigger any workflow via API and then you can pass in dynamic fields. So like if you have a cool form at the bottom of your website that you wanted to trigger this crazy workflow and get them an email sent, you just copy paste that webhook definition and it will run whenever you'd like.
+
+And you can also set up an alert on Gumloop so that you know if things go wrong, you get emailed if there's an issue. Simplifies the process. I don't know if you can do this, but can you show an example of someone who uses a Gumloop webhook?
+
+In their product? Yeah. A lot of people have them like in internal dashboards.
+
+So like you, you pay to be, to use the service and then you have access to like this crazy PDF processor or like contract analyzer. But oftentimes people don't expose them like on the landing page because you can just like run a thousand workflows that will cost a lot of credits. Got it.
+
+Yeah. Cool. I can show you a few more things.
+
+Custom notes in particular. I think those are really cool. So Max, I'm loving this.
+
+Thanks. Yeah. I love to demo.
+
+It's like the best part of my job for sure. Okay. Let me show you.
+
+This one is just a random workflow. I think it's cool. Every morning at 9 a.m.
+
+I get a text and an email about my entire day. So it just specifies like the start and end time for this Google Calendar reader. It researches every single person I'm meeting.
+
+So it gets the attendee list, does all that research of like finding their company, scraping like their revenue, monthly web traffic to kind of size up how big of a customer they are or how big of a customer they could be. It feeds all of that into a prompt saying like, hey, I'm Max from Gumloop. This is my calendar.
+
+This is all the research. Explain who I'm going to meet, why they might be important to me. This is what I care about.
+
+It then has another AI prompt that makes a TLDR like a three or four point form thing that I can just see it on my phone at 9 a.m. And then I get a much more thorough email report. All of this is just scheduled.
+
+You can schedule things with natural language. Okay. You should be able to schedule things with natural language.
+
+This is a, the UI was collapsed for some reason. Yeah. You would click new time trigger here.
+
+And then you're able to describe. I know why. Okay.
+
+I couldn't have scheduled it because it was already scheduled. Right. But if, if you have a new workflow, you can just describe like every second day of every fourth month at 9 a.m.
+
+and it'll, it'll make the cron job for you. Let me, I just wanted to go back and show you this. This was the competitor ad analysis output that just came in two minutes ago because it took a bit of time to run over every ad.
+
+But it talks about new ads in the last seven days. This, these are all of the links to the ad so I can go watch them. I, you can change the prompts so that it formats it differently, but I just asked it to like make things spacious, use a bit of color, put emojis, focus on the content type and structure.
+
+But it's a simple kind of prompt edit away if you want a totally different analysis of ads. So cool. You can also link together.
+
+Like if you use that as a sub flow, you can specify 40 competitors and have one comprehensive ad analysis. That's more interesting. It's like having a junior ad assistant.
+
+Totally. And it takes like an hour, maybe 45 minutes to build like a completely custom one from scratch. And the cost, like what's the cost of like an email like that?
+
+So it depends. It's kind of like a, a function of how many ads there are, how many times you're running the Gemini queries. Like ballpark?
+
+I think it might be like 500 Gumloop credits, which doesn't mean anything to you as I'm saying that, but way, way, way less than someone spending an hour of their time. What's the, what's the current, you know, USD to Gumloop credit? I actually don't know the exact conversion rate.
+
+I've been using CAD, so. Oh no. I don't know what, yeah, what our conversion is.
+
+But one of the perks of Gumloop is that you can actually provide your own API keys. If you wanted to, let's say you already pay for Apollo, you already pay for Gemini, you pay for like five other services. You can put your own API keys and then the cost on Gumloop will basically drop to zero.
+
+So we have some really large customers who are kind of like credits maxing. They just put in their API keys and all of their workflows are like five credits. The cheapest plan comes with 30 credits or 30,000 credits.
+
+So they can like really run at scale without paying a crazy amount. So 30,000 credits, it's $97. Right now.
+
+Yeah. Right now. As of recording this.
+
+So 500 credits would be like $1.62 per email. That sounds about right. So we're talking, I mean, think about how much you'd have to pay a junior ad person in San Francisco where you live.
+
+You know, you're talking minimum $80,000 a year. Yeah. Right?
+
+Probably. Yeah, I think that sounds right. But you could also make it cost a lot less on Gumloop.
+
+Like throw in your own API key, watch the credit cost drop to 50 and then run it a thousand times if you want. And it's kind of like negligible. Cool.
+
+I want to show you custom nodes now. So this is a feature I think is going to be one of the focuses of Gumloop on top of the AI stuff. So you can just like get your workflow built for you.
+
+So you can just like get your workflow built for you, which I'll go into. Oftentimes we notice that like a large customer of ours like Instacart or Samsara, they really want either to interact with their internal data. Like they want to hit their own endpoints or they want some third party that we don't support on the platform.
+
+So we always had to build custom integrations for them. But what we thought would be the best solution is to let you build your own integration. So you go into the custom node category and let's take for example, built with.
+
+This was one request that we got recently. Someone wanted this built with integration. It tells you like what websites or what products a website is built with.
+
+And I can just copy the docs here into this custom node builder and we'll get a built with node in a couple seconds. So I'll go create custom node. You'll see I'll call it built with because I made this yesterday.
+
+The input, we can call it company. The output data. You can add as many inputs like kind of just like build your own integration here just by choosing the type.
+
+You can add a logo. I won't do that for now. And then I'll say make this integration, please.
+
+Paste in everything. It understands the context of what a gum loop integration is, what packages it has access to. It's telling you put in your API key right here because I don't pay for built with.
+
+But that's where you throw it in. And then everyone in your workspace, which is kind of like how you collaborate with team members on the gum loop platform. They'll all have access to your custom nodes.
+
+So I have like a studio Ghibli node, for example. They have a public facing API. It'll tell you like stuff about a movie.
+
+Everyone at gum loop can use this node just like the gum loop team built this custom integration for you. And the people who built it can go back in the code if they wanted to change it. I could say like add comments throughout the code.
+
+It already had a ton of comments, but it'll write it again now with my even more kind of comment forward request. So what we noticed is like a lot of semi-technical people at companies have just used this interface to build really complex like Twitter scrapers. Like people are scraping blue sky for social media analysis.
+
+They're like building integrations with their dev team without actually being a dev. You can kind of like help yourself since AI is baked into the product. And this is going to be a huge focus in the future.
+
+I think the next step is what if you could just like hit command K on the canvas and describe the integration you want. It will know how to name it. It'll know what icon to get the inputs.
+
+It'll know how to write the code. It'll know how to test it for you. And it'll just kind of appear here.
+
+So you can just you never even have to enter this this janky custom node builder. It's not even that janky, honestly. But I would love a world where I could just describe like it would make my life easier for sure.
+
+Yeah, I think one of the janky parts, I mean, I'm very critical. I always think we can do better, which I think was why we get to our whole team is very like UI forward. So when things start to look ugly to us, we get really critical of it and want to improve it.
+
+Totally. But little things like the fact that I paste it in all of the docs, I shouldn't have to do that. I could just link the docs and we could scrape them.
+
+That would be a lot easier. A lot more pleasant. The fact that I had to like specify company and output, the docs should tell you what the output should be.
+
+They should tell you what the input should be. I think that sort of direction is how it could be 10 times better than what it is right now. One of the last features I wanted to show you is kind of addressing the same problem as the interface, where if someone builds a really powerful tool, you shouldn't need to understand how the tool works.
+
+You should just be able to experience the value it provides. Like you don't look at the code behind the SaaS product you love. You just use that tool or use that product.
+
+So we created a Chrome extension. This flow looks kind of crazy, but I'll explain what's happening in a second. The main thing I wanted to point out is that this flow starts with a Chrome extension node.
+
+And what that does is it allows the flow to be accessible in my Chrome extension here, the Gumloop Chrome extension. The one I wanted to show off is a LinkedIn profile researcher. It does everything that I would do as a recruiter to reach out to like someone who seems like a good candidate to join Gumloop.
+
+Let's go to my co-founder, for example. Let's say I wanted to recruit this guy. I would go and press play on this workflow I have pre-built.
+
+It's taking the entire content of the screen and throwing that into the workflow, just like you're kind of copy pasting it, except a lot more seamless. It could also screenshot. It could look at the, there's a bunch of different actions that the Chrome extension can do, but in this case it's scraping.
+
+And then it feeds all of that. Let me actually go to the run itself. It feeds all of that through the workflow, which is doing like the processing and analysis of the content of the profile.
+
+So the first thing it does is it extracts like name, title, company, university, location. It summarizes the person's background. I specified that I care about certain properties in a candidate, like being a founding engineer or a founder before.
+
+So it gives me the notable details. It then finds their Twitter and their GitHub. This is kind of like a cheeky subflow where I Google their name.
+
+I have AI look at the top results and pick the one that's most likely their socials. It dumps all of that in a Google sheet so that we can track candidates. It pings my team on Slack being like, hey guys, look at this new profile.
+
+Go add them on LinkedIn so they can kind of feel like they're being reached out to. And then it also finds their email with Apollo. And then engineers like a really basic message.
+
+You can really go crazy on this if you wanted to like use this in production. Most of the people who are using this type of workflow have tons of context about what the company does and why they're reaching out. Maybe a bunch of example emails.
+
+And then it puts all of that in my inbox as a draft. So even if an intern on our team finds an interesting candidate, they can get an email in my inbox so that the founder is reaching out. And this lets kind of just like everyone benefit from the tool you're using without looking at this crazy workflow.
+
+They just open the Chrome extension, press play, and things happen. And dreams are made. They are, yes.
+
+Hopefully. But I think pairing the Chrome extension with the custom node builder just lets you build infinitely powerful, like no code Chrome extensions, which I find pretty cool. What else have you seen people do?
+
+A lot of really nuanced, like outreach is a big one. So like let's say there's a list of hotels in this like niche directory that you look at and you wanted to email each one and be like, you're ranking third out of 50. We can make you number one.
+
+You're ranking like 42nd out of 50. It will like with a single click can scrape the entire page, draft 50 emails that are all relative because it knows their positioning. And then you get like six hours of personalized outbound done as a hotelier service company just done in a couple seconds.
+
+That seems kind of random, but that's like the first one that comes to mind. It's all about like imitating the really niche workflow that you do every day and just building SaaS for it. Because I don't think any vertical SaaS startup would ever build that.
+
+But now that you can just use Legos and piece it together, you get your own SaaS. Yeah, I was having a conversation recently with an executive of a large company. I do a billion in EBITDA every single year.
+
+And he was walking me through basically how his company works, like how the SaaS is made. And I was shocked to hear how much of his company was operating manually, like how few automations he was actually doing in a world where things like this exist. And this is like a tech forward company.
+
+This isn't like, I'm not talking about a company that's been around for 100 years. And I think that if you're a big company like that to a small company to a company of one, I think a good exercise is just writing down what are the things I'm doing manually and thinking about what could I automate? Being in business is a game of unfair advantages.
+
+It's a game of creating the best possible customer experience. And that means it's always about how do you save time as founders and executive teams. And also, so that we can work on our high leverage stuff, the stuff that we think that actually can move the needle, while automating away a lot of the stuff that is repetitive, frankly.
+
+Yeah, I like to say that when people ask me what they should automate for their businesses, I like to say that if you can list it as a list of steps, like for an intern, you would hand off a little sticky note being like, you do these 15 things in a row and that's the entire workflow, then you can 100% automate it. And I think there's like thousands of those workflows in every business. There's opportunity to automate basically everywhere.
+
+It's just about like understanding what tools can get you there and understanding the problem itself to solve. One huge thing we were noticing was like an SDR or a marketing person or a growth person at a company would deeply understand a problem. But they have to like break that down for an engineering team.
+
+They have to like find headcount and budget and then they'll get some like half-baked solution that is not exactly what they had in mind because there's kind of this broken telephone sort of situation going on. But if you give people the tools to solve their own problems, you get just like hyper custom exactly what they wanted workflows that work out of the box. And that's kind of what we've been doing as a startup.
+
+So like we, I like to think we were super efficient because we automate basically all business processes at the company with Gumloop. That's why I think the product gets better because we dog food it. And people ask us like how big the team is normally.
+
+And when I tell them we were two people and two interns up until just recently, they're kind of mind blown because we seem like we're a larger company. But it's because we can just like automate the boring stuff and focus on engineering products, marketing, like the things that we think we're good at and that matter. Yeah, absolutely.
+
+I also think that when you compare using something like Gumloop to, you know, sometimes working with human beings, you're, you're, you know, like for example, the first flow that you showed around sending emails that were so data enriched, a lot of those emails, probably if it was a human behind it, it probably wouldn't be as personalized or have as much data. Now I know someone in the comment section is going to be like, yeah, but it would be more personalized. It's a human being.
+
+And I hear you like there, there is, by the way, I'm not saying that like sales needs to be done automated. I'm just saying that I'd rather have that person, you know, you know, in the first video call or in an IRL meeting than sending like essentially automated sales emails. So, uh, Max, I want, I want to give you a, just, I just want to thank you for, for taking us around Gumloop, playing with it.
+
+Um, what should people do if, I mean, do you want, yeah, I guess sign up to Gumloop and play with it? Yeah. Uh, we're like super easy to sign up with, totally free to use at the beginning.
+
+Like you don't know credit card needed to play around. I think that's like the most honest way to build a product. Like if you can't hide behind a sign up flow or like a book, a demo button, people can actually see if they like it or not, which holds us pretty accountable.
+
+So yeah, go to Gumloop, sign up for free. If you do the tutorial, you get a thousand free credits. So you'll actually have like quite a lot of space to just play around.
+
+Um, and we have a community, we're building a Slack community now. So like we'll have a, we have discord, but we'll have a Slack community where you can ask questions, get help from experts. And then pretty soon you'll be able to just sell your workflows, share them with others.
+
+Yeah. If you have any questions, just, uh, I guess, email us or yeah, join the community. Yeah.
+
+And I think, you know, my perspective is if you're not, if you're not automating stuff in 2025, like you should be. Um, so like play with the tools, like play with Gumloop, you know, play with the other tools that are out there. Um, find what works for you.
+
+Um, and it's a, there is like a learning curve in terms of like, okay, now I understand what I could automate. And from that you can just layer on more and more automation. So, um, thanks again for coming on, Max.
+
+Uh, you're a legend and, uh, I'll see, I'll see you around. Yeah. Thanks for having me.
+
+Bye everyone. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye.

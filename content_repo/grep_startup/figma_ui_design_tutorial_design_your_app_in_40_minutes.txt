@@ -1,0 +1,419 @@
+So this is going to be interesting. I texted Rid and I was like, do you want to come on the show and just do a live design session on Figma? Because Rid is like the Figma guy.
+
+And as you're designing your startup, your idea, you can just give best practices around how to use Figma. And you said yes. Here I am.
+
+I appreciate it. Welcome to the show. You know, it's cool to be here.
+
+I've definitely listened to my share of episodes and to actually see you talking back to me is kind of fun. So thanks for having me. I appreciate it.
+
+All right. Shall we get into it? Let's do it.
+
+So in thinking about the best way to go about this, I have a little design task for myself this week. And I thought, you know what? I'm just going to kill two birds with one stone and just design it live and kind of give you a little window into my process and how I iterate.
+
+Obviously, there are a million different things that you can learn and just angles we could take even for this. So I'm going to try to show you a good middle ground of just like all the little considerations that I'm making while building little visual improvements that you can use to make your designs look good. We'll get into some like basic prototyping and kind of just see where it takes us.
+
+And Greg, along the way, if something is interesting that you want me to like double click and go down a little rabbit hole, I'll just look to you to guide. For context, this is my website, Dive.club. And I also have a podcast, but I'm working on a little course page.
+
+I want to put up like a basic marketplace of design courses. And I have these affiliate agreements with instructors that I like. And so I'm kind of thinking about how the heck do I want to design that?
+
+And so let's just see where it takes us. So I'm going to start by making a little card. And the best way to do that is you just hit F, which is going to give you a frame, which is basically like your container in Figma for anything.
+
+It kind of works like a CSS div. So if you're at all familiar with that, that's basically the mental model that we're using here. Anytime you need a thing, you make a frame, you dump stuff into it.
+
+So I'm going to treat this as a course card. And maybe to start, I'm just going to play around with what it would look like to design these as rows. Now, I'm going to do something that maybe a lot of people would find atypical, but it's like one of my just total hacks for moving more quickly in Figma.
+
+And that is, I'm going to turn this into a component, like as the first step before I have anything in there. And a lot of people associate the word component with like design systems and Polaris and Enterprise. And yada, yada.
+
+But actually like components as really hacky speed mechanisms in Figma are amazing. I use them all the time because my goal is like, I never want to do the same thing twice. Like I'm trying to find ways, especially really early in the process to like minimize the amount of knobs that I'm turning to make changes.
+
+And so this way, I'm just giving myself one knob. So right away, I'm going to go ahead and duplicate this a bunch of times, throw it into some kind of a container. And now I have my card at the top and I can just start styling it.
+
+So maybe I'll set this to like, I don't know, 5% opacity. Now you can see this is a auto layout here, which I created by hitting shift A. And this is basically just throwing, you can throw anything into an auto layout, which is just a, like a stack basically.
+
+And it really actually kind of maps to Flexbox and CSS. So once I do that, now I can control things like the space between over here. And I can start to manipulate my designs this way.
+
+So it's a pretty good starting point. And now I can kind of just start to dump content in and see what happens. And the nice thing is I have my component, so I never have to do anything twice.
+
+So if I come up here, maybe I'm going to go ahead and call this designing with AI. And that'll be like the title. I have some preset textiles in here.
+
+It's a pretty basic type scale. You can pull this from like almost any popular website. You can head to like Polaris or something if you want to copy those values or even just pull values from Tailwind.
+
+CSS is a really great spot if you're looking for like colors and typography. So I'm going to go ahead and give that and I'll call that title. And I'm just going to Command D, duplicate it.
+
+And let's make this the instructor name. And maybe I'll even give this a little bit of color. Let's just see what it looks like.
+
+And this course is by Maheen Sahail. I have a question. Please.
+
+So it's interesting. You're designing from your head, you know, your mind. So do you not go and look for inspiration before you start pushing pixels?
+
+Great question. So I actually look for inspiration constantly. I never even, I never turn it off, basically.
+
+So like I have a Notion database. And I can even give you like a YouTube link if you want to point people that way. That shows how it's built.
+
+But I'm constantly, constantly, constantly dumping things in there and categorizing them and creating all these different views. Like I'm a total nerd about it. And so I have, you know, I don't know if you ever talked to like David Perel.
+
+He has this idea of like writing from abundance. Like you don't like go look for notes and start from the blank page. You're like constantly contributing to this database of ideas.
+
+That's kind of the way I think about it too. We're like a lot of these in my head, but only because I've saved stuff before. And if I really actually don't have ideas, my first step is I always open up my Notion and I just start copying images and pasting them.
+
+And I mean, I might even be able to find, like if we go, I bet I have pages with examples. See, look, this is where I was designing the blog page. The first thing I did was like, I just went into my Notion.
+
+And I was like, all right, what's interesting? Paste it in. And I'm like, oh, that's pretty cool.
+
+And then I'll just zoom in and like recreate a little part of that. And maybe I'll use it in a different way or something like that. But my very first step, if I truly have no idea what I'm doing, I just paste in things that I want to look at later.
+
+Shh, don't tell anyone. But I've got 30 plus startup ideas that could make you millions. And I'm giving them away for free.
+
+These aren't just random guesses. They're validated concepts from entrepreneurs who've built $100 million plus businesses. I've compiled them into one simple database.
+
+Compiled from hundreds of conversations I've had on my podcast. But the main thing is, most of these ideas don't need a single investor. Some cost nothing to start.
+
+I'm pretty much handing you a cheat sheet. The Idea Bank is your startup shortcut. Just click below to get access.
+
+Your next cash flowing business is waiting for you. Great. Yeah, I'm the same way, by the way.
+
+The exact same way. I mean, that's... Yeah.
+
+It's like everyone that's actually good at this stuff is like, they are collectors of design. They're not just creators of design. They take that part pretty seriously and it really, really helps.
+
+So notice what you like. Notice the little details. Constantly ask yourself why you like something when you see it.
+
+And I think that's like a big way to make this part easier where you don't feel like you're just shooting in the dark. So I'm going to keep going with this example here. And another kind of like even mental model for the way that I think about design is I kind of almost approach it like I have this spreadsheet in my head too.
+
+Where it's like, okay, what metadata do I have? In this case, like I have my title. I have my name.
+
+I also have like the length of the course. These are cohort-based courses. So maybe I'll make this, I don't know, a little bit gray.
+
+See what I just did there? I'm using the number keys to decrease the opacity. So like this is white.
+
+But if I can just type six on my keyboard, it's automatically going to decrease that opacity. And when I have like colored backdrops, it's a really easy way to bring that hue forward and make sure that it looks good. So let's just make this four weeks.
+
+And let's see. We also have a price. So maybe this will be like $8.99.
+
+And if I hit zero, I can just bring that back up to 100%. And, you know, this is kind of getting a little bit interesting. Maybe I'll bring an image in at this point.
+
+So I actually, what I would do for an image is if you hit R, you can just draw a rectangle. And for any rectangle, you can change the fill like this. But I actually kind of like just copying from my clipboard.
+
+So I'm a big raycast person. So I have a bunch of images copied to my clipboard. And I'll just go ahead and grab one from a heen like this, which is going to populate everywhere.
+
+One of the new features that Figma has released is the ability to remove a background, which is kind of nice. So if you open up Command K, like any kind of software app, you're going to be able to get this little menu here. And you can just type remove background.
+
+And that's going to go ahead and run on all of these instances. And while I'm playing with this, I might get to the point where I'm like, actually, I hate this. I don't think it looks good at all, which happens about, you know, 14, 15 times in this exploration process.
+
+So here's what I do in that case. I'm going to go ahead and duplicate this whole frame, Command D. And I'm going to go.
+
+Now I have two instances of this. Now, because I have this main component, these are all components here, but I don't want them to be components anymore. I want to preserve this as a piece in my iteration flow.
+
+So the plugin that I really like is called Destroyer. And if you do Destroyer, destroy instances, this is just going to remove every single component in that frame. So now it's frozen in time and it's not going to iterate.
+
+And now I can just hop back here and keep changing things. Like maybe I want this to be a circle. And we'll add like a little, maybe there's like a background here.
+
+So I'm going to go ahead and duplicate this, call this BG. And then I have some colors. So maybe I'll make that blue.
+
+If I hit two, I can decrease the opacity. It's like, okay, that's getting kind of interesting. If I group these and I'm going to turn these into a little auto layout.
+
+And you can get to the point where like, okay, that's, you know, there's something there maybe, but I don't really like it. And so I'll just do it again. And I won't do this that many more times, but I'll probably do this 20 times when I'm actually designing.
+
+It's just Destroyer, the instances, keep on going. So I'm always designing in one frame. And a nice little hack and what I think really helps when I'm designing is like, I'm looking at my monitor right here, but I have the design at 1x on my laptop in prototype mode.
+
+So like if you go to Figma.com, open up this file and just hit the play button, then you can have this open. So I'm always seeing it like at the real size on my laptop while I zoom in and make changes. And so that's kind of nice because I'm always going to have this leftmost frame as the source of truth and then just see it update in real time on my laptop.
+
+So let's say that actually I really don't like this at all. And maybe I want to have some kind of like a larger card. So I'm actually just going to set this to wrap, which is just changing the auto layout like Flexbox.
+
+And let's just, you know, for right now, let's just delete a couple of these and see what it looks like to do two at a time. That's kind of maybe, you know, let's just make this a little bit bigger, make the card vertical. All right.
+
+Let's set this to, there we go. Okay. So maybe this is actually a better starting point.
+
+And if I come back in here and I have my content here, let's just like, just keep exploring different ways. Like this is honestly like the, the, if you want to be a good designer, it's like actually just about trying more things than everyone else. And so the faster that you can try things, the better that you're going to be, because you just kind of got to get through all of the slop.
+
+So let's see if actually, you know, if we expand this image like this, and then I'm actually going to put this here and maybe we'll have a little like an arrow icon or something like that to indicate that this is interactive. So, uh, plugins are your friend. Anytime you want to do icons, if you're hunting individually, it's going to suck.
+
+You kind of just got to pick a library and stick with it. My favorite by far is phosphor. So again, if you do command K type phosphor, you can open up this plugin and it's going to give you all of the icons that you could ever want.
+
+And they're all going to look beautiful together. So I'm going to search for an arrow and let's pick, let's go to this one. We're just going to go a standard arrow, right?
+
+I'm going to drag that in here. It's going to appear on all of my canvases. Let's make it white.
+
+All right. Not bad. I think I'm going to shrink this.
+
+And now watch what happens here. So, and Ryd, Ryd, just started to interrupt. How, how much are you thinking about actually engineering some of these components?
+
+For example, you know, maybe it makes more sense to use something like Lucid or, you know, that is, that is more friendly to CSS, for example. Like, are you thinking, are you thinking, my question is this, are you thinking about how do I make a beautiful page? Or am I thinking, how do I make a beautiful page that's going to connect easily with Framer or something like that?
+
+Great question. I'm pretty much always thinking about how it's going to be built. With the disclaimer being like, I'm actually like a little bit more of like a technically minded designer.
+
+Like, I'm not an artist. I can't draw anything. I don't even have, I don't even sketch things.
+
+Like just that part doesn't come natural to me. But I know how front end works. And so a lot of the decisions, especially as I'm fine tuning things, I'm going to use those best practices.
+
+And honestly, if you're building in Figma using auto layout, it almost just comes out of the box a little bit free. Because if you can build something in auto layout, that means that it's very easy to build in Flexbox. That doesn't mean that you necessarily have to, like you can get away with it.
+
+But it's going to, like if you don't use auto layout and you're just randomly positioning things in the frame, that's effectively the equivalent of just absolutely positioning something in CSS, which like, yeah, it's possible, but it's not great. It's not, it's always, you probably want to avoid that. So even something like this.
+
+So like I have a frame. I'm going to hit shift A to turn, like if we zoom in here. By the way, hitting enter allows you to drill in, in the canvas and then shift enter is moving back up.
+
+That's like how I traverse the layer tree. Really, really, it's a great way to move more quickly, basically. So you can see, like I made a little wrapper on this icon and I'm actually going to hit shift A to turn that into an auto layout, which is kind of getting to that point that you were talking about.
+
+And once I do that, I can just change the padding over here. So you can see, I just put eight pixels of padding around it and maybe I'll just give it a little, I don't know, just a little background, change the border radius. And that's going to map really well.
+
+Like if a developer is building that, it's going to be one-to-one with how they would do it in CSS. So let's just make this kind of look better because it still doesn't look great. So I'm going to give it a little bit of like a border radius and let's throw these into an auto layout.
+
+And another thing that I'm doing is almost certainly like if you were building this, especially even if you're using like V0 and you don't even have dedicated developers, everything's built on Tailwind. Like the modern web uses Tailwind. You can't really get away with it.
+
+And so you're going to get a lot of values out of the box. When in doubt, you want something that's a multiple of eight. And then that's going to be built into the Tailwind syntax.
+
+So for something like this, this is the equivalent of PL12 because it's 12 times four is the way that Tailwind works. So I'll probably try to stay with those types of values whenever I can. Same thing here.
+
+Like we'll make this maybe four pixels apart. And okay. Now let's start to make this styled a little bit more interesting.
+
+And the way that I'm going to do that to start is I want to bring a little bit more color into this. So something that I do a lot in my visual language for Dive is I like to play with like lighting in blur. So here's like a simple way that you can add a bit of visual interest to your designs.
+
+I'm going to go ahead and hit R, which is going to give me a rectangle. Previously, I added the image. This time, I'm going to just give it a color fill.
+
+And I'll use my blue. And same thing as like a lot of different software if you use the little brackets. So command bracket left.
+
+That's how you move things down in the layer tree. So I'm just going to move that to the back real quickly. And I'm going to go to effects.
+
+And I'm going to click this little drop down and select layer blur, which is another CSS property. And I can crank up that value maybe to like, I don't know, 20, 30. And if I hit, remember my numbers on my keypad, change the opacity.
+
+So maybe I'll bring that down to like four. It's kind of getting interesting. So once I do this, maybe I'll even increase this more.
+
+Cool. That creates a little bit of an interesting visual effect, right? Yes.
+
+Another thing that I like doing a lot, which is if you go to this little guy here, it says apply blend mode. Again, straight from CSS. I'll be honest.
+
+I don't know what 90% of these does. I'm convinced that no one actually knows what they do. There is one that is used all the time, which I kind of wish somebody told me earlier, which at the very bottom is luminosity, which is basically saying, hey, take this image and just let all of the colors below bleed through and make it essentially like a really like a tinted black and white.
+
+I think that looks good. I use it all the time. So.
+
+That's starting to get a little bit more interesting. Let's just maybe we'll increase this blur a bit and decrease the opacity. OK, we're kind of getting there.
+
+And. All right. So that's like that's something right.
+
+That's that's we're getting there. Another thing that is an easy way to spice up your designs, especially when you're playing with like gradients and lighting is things like that is adding just like a bit of noise and texture goes a really, really long way. So in this case, I want to just add a bit of graininess to this.
+
+So I'm going to add another rectangle. And if I hit. Or I'm just going to drag it across everything.
+
+These are your constraints. So I'm just going to say, hey, pin this all the way to the edges. And remember, we can do command and the back bracket to move it all the way to the back.
+
+And now this is another plug in that is incredible. You can use it in so many different ways. So noise and texture.
+
+This top one. If you open this up, you can do all kinds of really crazy visual effects in here. It actually even gives you some like interesting shaders out of the box.
+
+Like you can go wild with this thing for now. I kind of just want like a really simple noise. So I'm going to go ahead and hit add.
+
+And that looks okay. Let's remove the gray. Obviously, that looks like trash.
+
+So let's go ahead and increase the amount. We'll update it. And then all I'm going to do is just use those keypads and decrease the opacity.
+
+So put it down to like one. If I go zero five, it's down to five percent. All right.
+
+So that gives like a little bit of visual interest to it. Right. At this point, we're just going to start tweaking things.
+
+And what I might do at any point right now is just duplicate. So I have another like saved bookmark. That's like basically how I'm treating this is like I'll save the bookmarks.
+
+Let's run destroyer again. Okay, cool. Now let's keep going.
+
+So once we're over here, maybe I'm going to give this a border. And we'll go white. I want it to be pretty subtle though.
+
+So, you know, maybe it's like 10%. Okay. It's getting a little bit more interesting.
+
+Quick ad break. Let me tell you about a business I invested in. It's called boringmarketing.com.
+
+So a few years ago, I met this group of people that were some of the best SEO experts in the world. They were behind getting some of the biggest companies found on Google. And the secret sauce is they've got a set of technology and AI that could help you outrank your competition.
+
+So for my own businesses, I wanted that. I didn't want to have to rely on Mark Zuckerberg. I didn't want to depend on ads to drive customers to my businesses.
+
+I wanted to rank high in Google. That's why I like SEO. And that's why I use boringmarketing.com.
+
+And that's why I invested in it. They're so confident in their approach that they offer a 30-day sprint with 100% money back guarantee. Who does that nowadays?
+
+So check it out. Highly recommend boringmarketing.com. All right.
+
+So at this point, I can do a lot of different things. I'm going to go ahead and just increase the number of my cards. All I did was just duplicate that row.
+
+And I have a bunch of content that I can add in here. I'm probably going to save that to the end just because it's pretty tedious. Let's mess around with just simple prototypes, right?
+
+How do we make this interactive? We kind of want to feel our designs. And I'm a big fan of like prototyping quickly because like how that hover state behaves is like, I think that's a really big part of it, right?
+
+So we have this component here. What I do at this point, which I feel kind of decent about it and I want to start adding some interactivity, I'm actually going to drag it up here. And let's see, 430, maybe we'll make this like 400.
+
+Okay. Now, if you want to add a hover state to something in Figma, you make it a component. And then if you come over here to this very top right, see how it says add variant?
+
+Go ahead and click on that. And now we have what we can call a hover. So this is going to be default.
+
+This is hover. And now I can make any changes to this variant and attach them with a little prototyping interaction, which I'll show you in a second. So let's say, you know what, maybe the blur grows a bit on hover.
+
+And let's go ahead and maybe we'll increase the background. So it kind of pops, maybe the border too. Okay.
+
+Let's just see what that looks like. So I'm going to go ahead and hit prototype. And maybe I'll just do that a little bit more slowly.
+
+So click on prototype where you're by default in design mode up in the top, right. If you hit prototype, then you can actually just click and see this little blue dot. You can drag that to a different component variant.
+
+So in this case, I want to change from the default to the hover. When do I want to do it? Well, when it is hovering.
+
+By default, it'll be on click. I'm going to change that to while hovering. And this is where you can kind of change the animation presets.
+
+We don't want instant because we're not savages. We want it to feel good. So we'll go ahead and hit smart animate, which is basically just telling Figma, hey, smoothly transition between these two states.
+
+And I like this gentle right here. It's kind of my default. It feels pretty good because there's like a little bounce to it.
+
+800 is pretty long though. Let's make it like 400. So at this point, we can hop into prototype mode and just see how this feels.
+
+And remember, I probably already have this on my laptop if I'm doing this in real time. So if I hide this UI, you can see all of these are interactive. Now, when doing this, this is where I'm like, okay, how does this feel?
+
+What do I actually want from this? And pretty common UI pattern is like, well, you want to like a little bit of lift, right? Like you want it to kind of feel like it's popping.
+
+There's like some shadows. And the way to not have a good time in Figma is to just do it manually and like go in here and do effects and add a drop shadow and tweak it. Like it's like really hard.
+
+The best shadows are not one shadow layer. Like that's just not how good shadows work. So my hack is to use a plugin.
+
+And my favorite plugin for this is if we hit command K again to run plugins, smooth shadow, no spaces. Really, really easy way to create beautiful shadows. So if you click on this, it's actually going to give you little easing curves and you can play around with the alpha on a slider, which is just the transparency.
+
+So I like to take it like further than I actually want it. And then I like slowly back it off. But honestly, you don't have to mess with it too much.
+
+Like everything out of the box is going to look good. So if we do that, you can see like, okay, now there's like, it's like elevating a little bit. It's getting more interesting.
+
+Maybe there's something there. Now at this point, maybe you're like, you know what? Actually, I don't like the layout or I want to change the button a little bit.
+
+And I'd probably run my destroyer workflow, but you've seen that a few times. So let's just like change this around a bit. Now, remember, we don't want to do anything twice.
+
+So what Figma gives us is when we're editing a component, there's this little icon up here called multi-edit variance, or you can just hit Q. And that's going to allow you to make a change in any frame and it will populate everywhere. So again, you don't want to do things twice.
+
+So maybe I just want to drag these on top of each other. Yeah. And let's make sure that they're aligned nicely.
+
+Okay. Okay. It's pretty good.
+
+And actually what I really want is I want to add some text. So I'm going to go ahead and hit T and just type. Let's see.
+
+View. Okay. So that obviously looks ridiculous.
+
+So how do we make this better? Well, see where my layer is? It's inside of my icon container.
+
+I don't want that. I want it inside of this auto layout. So watch what's going to happen here.
+
+See how that automatically adjusted? That's the beauty of auto layout. It's dynamically setting the width.
+
+So that looks pretty interesting. Maybe I'll just increase like a padding and note. I'm still in this multi-edit mode.
+
+So I'm not making these changes in two spots, which is pretty helpful. So let's like increase the padding a little bit. It's 16.
+
+Okay. Now let's hit Q again to exit multi-edit mode because in the default state, maybe I actually want it to look like that. And let's set a fixed height.
+
+So this is always the same. Maybe it's 40. Okay.
+
+All right. I'm going to increase the opacity here just a bit. Let's just see what that looks like.
+
+Okay. That's something. And this is only able to work because everything's set to auto layout and I have it set to smart animate.
+
+So like just to see how you should not be doing it is if you're going to go into prototype mode here and set this to instant, note the difference. Pretty herky-jerky. Right?
+
+So when I'm using Figma, and obviously I'm using Figma wrong, but I only have a few, a couple, a couple plugins I'm using. When I'm watching you on Figma, it seems like you have a host of plugins that you're using. What's your recommendation to people?
+
+How many plugins? And could you rattle off kind of like the ones that you use the most that people should be using? So honestly, I actually feel like I use way less plugins than a lot of people.
+
+There are people that use a lot of plugins. I typically like plugins for really just two different buckets of workflows. One is visual effects like that noise and texture or like the smooth shadow.
+
+Just like things that would be super tedious or maybe not even like within my skill set to make. Like I'm not going to make animations, for instance. That's one bucket.
+
+And honestly, noise and texture and smooth shadow, that's pretty much it in that bucket. That's pretty much it. The other is more like workflows.
+
+And what I just showed you is how I use the Destroyer. And this is like what all my Figma files look like, by the way. It's just like you can see the design evolving, going left to right.
+
+And then I have the source of truth here. That is possible through the Destroyer plugin. The other one that I use all the time is Content Reel, which is really, really nice.
+
+So one bucket that I'm like using all the time is just like you want to get a bunch of related content into a page. Maybe it's populating a table. Maybe it's filling a design with images.
+
+And something that is really helpful in that world is kind of this combo that I use, which is twofold. One is you want to select maybe like all of the images, for instance. And I want to change the headshots across like a giant array of components.
+
+The way that I'll do that is running Similayer or like select layers. And you can say select similar layers. Okay, watch what happens when I click this.
+
+Now I can go ahead and search for the image. Oh, hold on. By name.
+
+I want to select layers by name. Now I can go ahead and search for the image. I can do an exact match if I want.
+
+Now I have every single one of those images selected. At this point, now this is where Content Reel becomes your best friend. Because you can run this and it's basically going to give you a bunch of defaults out of the gate.
+
+So that could, you know, you can just come in here and select like avatars, for instance. You can even add your own folders of content. It's like I even created one for instructors, for instance.
+
+And you can quickly apply and it will change everything all at once. I've never actually tried this before. I'm going to see if you can remove background on a bunch of images simultaneously.
+
+I'm skeptical. Yeah, that's not going to work. But that combo move is pretty helpful.
+
+Outside of those, I really don't use that many, actually. And I think a big part of it is like Figma has added a lot of workflow enhancements and like little tiny things like how I was making bulk changes here by hitting Q. Like that stuff, that used to be a plugin.
+
+Now it doesn't have to be a plugin. So like Figma out of the box has actually gotten pretty good. I don't think that you should stress out about having to build this repertoire of like 20 different plugins.
+
+Great. Love it. Yeah.
+
+Okay, so before I, you know, head off here, there's one little styling tweak that is kind of another one of those things that just took me too long to figure out how to do or that it was even possible. But it goes a really long way, which is, you know, I think a lot of the designs that are becoming more popular today have a little bit of depth. Depth and texture.
+
+We've added the texture. We have a shadow, but something that you can do to add a bit more visual interest is using inner shadows, actually. So I have my component up here.
+
+And if you go to the design, you'll see I have all of the drop shadows, which were added from the Smooth Shadow plugin. But what you can also do is add an inner shadow. And we want to use an inner shadow to create a little bit of a rounded feel on our corners.
+
+So what I'm going to do is set this to white. See how that added that up at the top like this? And you can kind of tweak these values.
+
+I typically go somewhere in the range of like two, eight. And maybe you decrease this opacity a bit so it's softer. But you can see that it plays.
+
+It makes it feel like lighting is kind of shining over the edge. And you can pair that with another one at the bottom. And you want to do this one to negative two.
+
+And you can see it adds it down there. And since this is dark mode, it's probably going to be a bit darker. Maybe this is up to 12.
+
+Okay, cool. So if we go back to our hover state here, see how it's not just popping out, but it's kind of rounding and bending a little bit. It's like a subtle visual effect that you don't realize how often you see it on the best designs today.
+
+And honestly, I think I probably designed products for like seven or eight years before I realized that you could play with inner shadows. And I would say that it's kind of like it's a trend right now. And it's like actually really simple to add that kind of 3D curvature.
+
+So if you're trying to create, again, like a little bit more visual interest, inner shadows are your best friend. And I could, you know, tweak and iterate on this for the next three hours. But hopefully it gives you at least a few little tips and tricks that you can keep in your back pocket, not only about how to style things nicely, but also just how to go from zero to something that looks like this a little bit more quickly than, you know, manually making all these changes in a bunch of different frames.
+
+It looks beautiful, honestly. And before you go, though, I just have one last question, which is, why should people go into Figma in a V0 world? You might not get the, you're asking that question thinking that I'm going to defend Figma.
+
+I'm not, I'm not going to defend Figma, honestly. I think that Figma is fantastic for doing what I'm doing here to just be generative, get as many ideas out as possible. Because the fact is like you can iterate more quickly in this world.
+
+You can explore more divergent ideas. Like everything that V0 is going to give you is going to feel tame, slightly templated. Figma is the way to like push visual ideas and really figure out what you want to make.
+
+But even for myself, I've had my design process, especially for like web design, for instance. Dude, it's changed, man. Like I'm in Framer a lot nowadays, like a lot.
+
+Like whenever, like a few weeks ago, I was designing a new website for a client. Like I used Figma to explore a wide array of ideas and just throw paint at the wall. But once I got to the point where I was like, okay, this, I feel pretty good here.
+
+I'm going to move to Framer, build it, get that final like five to 10% in something that is a little bit more in the medium. And then I'll probably work on like the other pages of the website directly in Framer. So I do believe that the more people are building their ideas and code-based tools, the better.
+
+Way I think about it is Figma is almost like a piece of paper. And you have a pen and you're drawing. Actually, you don't even have a pen.
+
+You have a pencil. You're sketching out your idea and maybe you're writing out your idea. But, you know, the word processor, Microsoft Word is your V0s of the world, right?
+
+Like you're going to get more templatized, productized stuff, which has its place. But I think that starting in Figma is often a great place to start. I think it's still the best place to start.
+
+I think that we are kind of staring the next step change in software creation in the face right now. And you have like the early adopters that are tinkering with it. But like even the way we think about a spectrum of fidelity is about to get shaken up.
+
+Because right now we have like high fidelity, which is a really good looking UI in Figma. But then there's also code that matches that one to one. And once that line blurs, all of a sudden I wonder if Figma has more of a place earlier in our process where it's like lower fidelity.
+
+We're exploring ideas. And then maybe we are using a tool like V0. Maybe Figma starts to dabble in this product space a little bit.
+
+But this idea of having high fidelity design and high fidelity code be separate, that does not feel like it's going to exist in the long run to me. A hundred percent. Rid, this has been awesome.
+
+Where could people learn more about you and the stuff that you're building? Great question. I spend way too much time on Twitter.
+
+So rid underscore design is kind of my hub for everything. But right now my kind of baby and the thing that I'm spending the most time on is dive.club. So I have a podcast where I'm interviewing designers, founders, even engineers that are at the forefront of all of this new tooling and the most interesting startups.
+
+And that's kind of where I am trying to like learn and share all of the things on my mind. Beautiful. Well, dude, this has been fun.
+
+I hope people learn something here and I hope people have a takeaway of just being a little more confident within Figma and just get in there. Get your hands dirty. I think that's probably the best place, the best way to learn, right?
+
+You can watch things like this up the wazoo, but if you're not actually playing with the tools, it's not going to really, it's not going to process. Open up a new file. Just type F on your keyboard and draw it somewhere on the page.
+
+You're in it now. That's right. All right, my man.
+
+I'll catch you later. See ya. See ya.
+
+See ya. See ya. See ya.
+
+See ya. See ya. See ya.
+
+See ya. See ya. See ya.
+
+See ya. Dad. See ya.
+
+See ya. See ya. See ya.
+
+See ya. See ya.

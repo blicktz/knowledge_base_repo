@@ -1,0 +1,479 @@
+Jason, what are we going to learn this episode? Yeah, so I think what I want to introduce today is my workflow of AI coding. Awesome.
+
+So the part I want to share a little bit is how do you get the large language model or AI coding workflow streamlined so that you can get a more predictable result. So the problem we really want to solve is that large language model based coding is probably the hottest topic at the moment. Everyone is learning it.
+
+And everyone, when you look at tutorial online, often you get a vibe that you can just prompt asset to build something and just build the whole thing out for you. But in reality, I think once you start using it, you realize the result is really unpredictable because the nature of large language model is kind of, you're hallucinating a little bit. So every time you start trying, you just get a bunch of errors, not exactly the smooth selling you will see from the tutorial that people added a couple of times.
+
+And so what I try to solve is like, okay, I've been trying to explore, is there any kind of workflow that we can try to get the AI coding a bit more consistent result? And this is the kind of thing I want to showcase today. It's actually fairly simple and straightforward.
+
+Like the one of the most, first and most important thing is like I will spend a lot of time upfront to actually write very clear and detailed specs. And I know many people already talk about it. I know one of your previous podcasts also mentioned like planning upfront is important, but I don't think it's a lot of people talk about in details, like how should you actually write a spec?
+
+What are steps you take to get a spec that can communicate with the curves very well? And the process I think eventually we want to simulate is how product team work in reality. Normally you have PM kind of right on the spec of the core functionality you don't want to cover.
+
+And then you would hand over to engineer manager to kind of spec out like individual tickets or the architecture of the project structure. So it leaves much less ambiguity for later. So we probably want to do something similar, which I will showcase the example.
+
+And benefit of that is like you start really getting uncover a lot of uncertainty upfront and taking out the planning work from the cursor a lot to get a more consistent result. So this is kind of one thing. And second is like also be very clear about the role of different platform.
+
+So there are different tools like cursor, visual, replet, but it's not very clear often when to use what. And the best thing I found is like you kind of want to get cursor to just focus on functionality and don't even think about UI at the beginning. And then you start using V0 to like touch up UI and interface bit by bit.
+
+And this will get you like a lot more success and try to get to everything at once. And third thing I found is quite like interesting to think about is like, how can you have reusable modular prompt? So there are already kind of things people try like cursor.director, where people share like the collection of cursor rules.
+
+But I found like cursor rules most of the time is actually not that useful. Putting there, it didn't like deliver too much data results. What's really interesting is that there are actually features and functionalities are pretty standard.
+
+If you just try to spin up like 10 different style of ideas, you don't want to rebuke like sign in user auth. It's always the same, same like payment. So as a community, can we have this kind of collection of those reusable modular prompt?
+
+You can just give it to cursor and it will spit out the whole functionality for you. I think that's really useful. And I can showcase one like prompt I have been reused again and again for like user auth to show how this works.
+
+So yeah. This is really exciting and I'll explain why. So writing clear and detailed specs is something I think is an art more than a science.
+
+And it's something I don't know how to do really well. So I look forward to figuring out how to do that. Two, cursor first, v0 second.
+
+Everyone does the opposite. Everyone does v0 first, put your ideas out there, get the wireframes and then go cursor. So I look forward to figuring out why you say that.
+
+I'm interested in that. And then the third, like the reusable modular prompts. Like I know I should be doing this.
+
+I just don't know how I can leverage them, where I can find them. So this is the hard video that people actually need to sit through. Because it's way more fun to sit through a, here's a 20 minute coding an iOS app using AI coding.
+
+But it's way more hard to sit through, here's what you actually need to do to transition from being a, yeah, I've used cursor before or I've used AI coding before to I'm now an AI coder. Yeah, exactly. And maybe that's because of my kind of background.
+
+My background is like product designer, product manager. So like writing spec is kind of naturally, it's the thing you kind of want to do. There's a very big difference if you tell engineer team, okay, go build like a social media platform versus like, here's the key features.
+
+And it's kind of similar thing. And the cursor first and v0 second is also the same. Because of my background, I normally kind of feel like I know what kind of product I want to build.
+
+Like prototyping is very easy and it's pretty fast to do. But the hard part I also found is that if you keep it very open ended, often it doesn't give you what it want. And once it has a structure to get a change to what you want is really, really difficult.
+
+That's also kind of the reason why is it. And another thing, one thing probably the best way to do that is probably can take through example of how can we build a, let's say, application, use this type of workflow. But one thing to clear is that, shh, don't tell anyone, but I've got 30 plus startup ideas that could make you millions.
+
+And I'm giving them away for free. These aren't just random guesses. They're validated concepts from entrepreneurs who've built a hundred million dollars plus businesses.
+
+I've compiled them into a one simple database. Compiled from hundreds of conversations I've had on my podcast. But the main thing is most of these ideas don't need a single investor.
+
+Some cost nothing to start. I'm pretty much handing you a cheat sheet. The idea bank is your startup shortcut.
+
+Just click below to get access. Your next cash flowing business is waiting for you. What this does, I think from my experience, really improves the success rate.
+
+It didn't really promise that it will always get it right. So I would say if I get any curves for a demo today. So one thing I want to actually, since we're going to take through a case study, I thought we can just review some kind of interesting application.
+
+And I know one of your video actually showcased a platform called Gummy Search, which I really like. I think I've heard about this platform from that video you made. And I saw this pretty genius platform or use application of larger language model because it kind of use the best part of larger language model that it's really, really good at, which is like extract structure insights from unstructured data at a very big scale.
+
+And I think if people use that, one part is like when I try it out, even though it's very interesting, I need to pay $10 per day to gather it out. So I kind of cheap. So I want to say, okay, let's maybe just review this.
+
+And finally at hand, I think this kind of model can probably also be used for other type of data as well. I can totally imagine this similar interaction can be used for like Facebook group, Discord, or other data. So it might be interesting startup idea to try out too.
+
+But anyway, I will showcase this example. First thing, I will probably try to create a repo. So let's say it takes new.
+
+So I will also start with GitHub so I have better version control. And then I will open the cursor of the project. So the first thing I actually want to do, instead of like just you open the cursor and say, hey, build me this Reddit platform, I actually just start with a kind of draft spec.
+
+And the common structure, I'll just pop past in a template. The common structure is something look like this for me. So I will give it a little bit of project overview about what's the goal, and then break down the core functionality, just like a normal product manager or designer going to do.
+
+Then there's a bunch of things that are essentially very important to get it aligned. One is that I will try to include some docs about how to implement some key features. So I know cursor has this functionality, allow you to add, insert the whole documentation.
+
+But quite often I found it didn't work very well. So what we want to do is actually I want to do some kind of proof concept early on, to making sure those core functionalities are already very clearly sped out. And later I also will try to include like current file structure as well.
+
+Because quite often I found that one reason cursor often fail is because it has no idea about how the file project structure. So you just create a file in the wrong place, around dependency. So this will take out more uncertainty from the process.
+
+And in the end, I will add some kind of additional requirements. So this is the part where, depends on what type of project you're creating, like if you're creating web app, there's just a bunch of things cursor always get around or can miss. Like you need to make sure, like use client, or you want to make sure the file is created in the right place, making sure you use environment variables, things like that.
+
+So I think eventually we can probably have set of like additional common pitfalls for different type of project you created. And for web application, like this is the ones that I often just use. I was saving my node back and when I create a web app, I would just paste it in.
+
+But if I would add the app, you can probably have a different set of things. Like where should you create the projects and files? When you use like API call, making sure you're selling it the right way, environment variable, making sure you have error handling, things like that.
+
+So that's firstly with the project overview. So project overview can be pretty simple. For this specific project, I would probably just put in something like you are building a Reddit analytics platform where users can get analytics of different subreddits, where they can see top content and see the category of posts.
+
+And as simple as that. But what's very important next is the core functionality. So this is where you will start, like spit out what are the like must have feature for the product.
+
+So if your product manager is probably pretty familiar, it basically in this case, I would say it has to be able to see a list of available subreddits and probably adding new subreddits. So if you want to do this, we need to build a subreddit page to showcase two tabs, like top posts and themes. Because from my use of gummy search, I found the most valuable part is like this categorization.
+
+So I would do that. And then we need a way to fetch Reddit post data in the top posts, as well as answers of the Reddit post data, putting them into different themes. So this is kind of like an early spec.
+
+And in here, I kind of just try to keep it open. You don't need to force yourself to write down every single detail, but it should be clear enough to communicate what is the goal of this project and the core functionalities. And this should give you a good enough starting point.
+
+The next is that I want to start adding some docs. So this is where I will try to build some proof of concept of the core functionalities. So in our case, we probably have two big parts.
+
+One is that we need to figure out a way to get the subreddits posts. We need to figure out which package to use and what's the code. And second is that we also want to use OpenAI probably structure output functionality to get the categorization of the posts.
+
+And to do that, normally we'll go to different places to do some research about the package I want to use. So for example, for the firstly, the Reddit data, I can go to ChatGPT and say, I'm building a next JS project and needs to fetch Reddit data. Which package should I use to implement?
+
+Then you will probably get some understanding about what kind of packages you can use. This part particularly useful for, let's say, things that already exist before, like for Reddit probably already exist before, but for new things you would do some Google search. And once I can understand the package in this case is snow wrap, I can just go to NPM, which is like package management to find that specific package.
+
+And in here, you can either load the whole doc, but I normally try to take a look at the examples to understand how this works. So here I will see there are multiple different ways I can authenticate, either through the refresh token or the username and password. So what you can do next is that I want to start building some kind of proof of concept.
+
+So I can open, this is the time, like first time I start open cursor composer. So I can add that documentation. I already added here, so it's right here, it's no wrap.
+
+So I would say that, help me, help me build a simple type script, script to fetch subreddit. So I want to add a little bit, post from past 24 hours from a specific subreddit, let's say doc, including like post title, link, content, score, number of comments. And I want to use the username and password as for us.
+
+And also making sure you use .env for credentials, because I don't want to expose mine. And then you restart, try to just create a very simple script, hopefully, to do this. And meanwhile, while we're doing this, we actually need to get some credential for the Reddit as well.
+
+So I think you will need to go to reddit.com slash perf slash apps to create app. This is also part of the reason why you do this kind of research up front is useful, because then you can get an understanding of where to go to prepare everything. So I can put a analytics and script, the redire URL, I just put localhost for now, and create app.
+
+And if I go back to here, you can see, okay, this time it tried to create a script, but didn't create a file for me for some reason. But that's all good. We were just to include the script, and I will create a reddit.ts, pasting here, and I will also create a .env file.
+
+And I will need to put in the credential that we got here, as well as secret. And I'll put my username, I just take it out to put my password here. Okay.
+
+Once it's finished, then I can go back to the terminal. Let's try to test it out. So I will do npx ts node reddit.ts.
+
+Okay. So this is the kind of reason why you want to do this earlier, because you will start getting those arrows. But if you try to not using those ones, those arrows will show up later as well.
+
+So I call this arrow, help me debug. Is that what you usually say? Just help me debug?
+
+Yeah. Help me debug. Because it depends.
+
+If it's a simple issue, I will just to help me fix it. But otherwise, I will also try to find root cause, let's think step by step, where we're using channel wilful prompt. So I call this one.
+
+Let me try again. All right. I'll still get more arrows.
+
+Call this arrow. Help me fix this plus sync. Step by step.
+
+I think I know why I need to tag this update this file for me based on changes above. While this is happening, it's crazy because you're a product manager, now you're an engineer. What is the role of the product manager?
+
+Because the old way of becoming a product manager was you'd write specs, hand the specs over, see product, but now it's you write specs and you build product. Yeah, exactly. I kind of think this AI coding start enable everyone become kind of product manager.
+
+And that's really, really cool because I saw what's really in lock is a bunch of people who are prosumers that don't do this code now, but you suddenly have this ability. Okay, perfect. Now you can see that it returned the result of the Reddit posts.
+
+So now we know this code example is going to work. Then we can paste this into the doc. So here I will say, documentation for how to fetch Reddit posts using snow crap.
+
+And I can say code example. And one thing I probably will also do is try to reference a little bit. Like in this title, I will put for number three.
+
+So it's very clear. What's this for? Okay, so we get this part down.
+
+And the next part is another code example probably for OpenAI. And OpenAI is like a perfect example. I guarantee the first time it will fail because it is using some old documentation.
+
+So we want to probably use structure output to categorize posts. So I can basically do something similar. So for this, I can add a new composer.
+
+I will add doc. OpenAI structure output. So this time I will say, probably just paste something in.
+
+Help me build a simple type script. Script using OpenAI structured output to categorize subreddit for each category here. And I can probably paste in all the categories that we defined earlier.
+
+It actually didn't allow me to categorize things properly. So I will just type it out. When people asking for tools and solutions.
+
+Pain and anger. When people expressing pain points and frustrations. Advice requests.
+
+Asking for advice and resources. Money talk. When people talking about spending money.
+
+An ARM should return result in format like categories. Solution request. True false.
+
+Pin and anger. True false. Advice request.
+
+True false. Money talk. True false.
+
+And true false. Okay. So this should be pretty clear in terms of.
+
+And I try to include those kind of results as well. So I can communicate clearly what is expected result. That I can include in the document too.
+
+Quick ad break. Let me tell you about a business I invested in. It's called boringmarketing.com.
+
+So a few years ago I met this group of people that were some of the best SEO experts in the world. They were behind getting some of the biggest companies found on Google. And the secret sauce is they've got a set of technology and AI that could help you outrank your competition.
+
+So for my own businesses I wanted that. I didn't want to have to rely on Mark Zuckerberg. I didn't want to depend on ads to drive customers to my businesses.
+
+I wanted to rank high in Google. That's why I like SEO and that's why I use boringmarketing.com. And that's why I invested in it.
+
+They're so confident in their approach that they offer a 30 day sprint with a 100% money back guarantee. Who does that nowadays? So check it out.
+
+Highly recommend boringmarketing.com. And this just always blows my mind that you're able to just to access the billions of dollars that was spent on creating open AI in an instant for whatever application software that you want to create. Yeah, that's pretty crazy.
+
+What's the most interesting application you saw people building with Cursor? Did you see some people start launching the business already? I've seen a lot.
+
+I've also seen Bolt, Replit, Cursor. It's really starting to get crazy. I just had the CEO of Replit on the pod.
+
+Oh yeah, I saw that. That's really cool. Yeah.
+
+He was telling a story of how a teacher goes and starts building using Replit and Replit Agent and all of a sudden raises $20 million, quits his job. It's just insane. Yeah, that's crazy.
+
+Because there's just so many creativities when the barrier lower. That's awesome. Okay, so this is a perfect example.
+
+So even though I provide documents, add documents, it will just ignore the documents and then start using some old model and also not really using the structure output. So this is where I will start prompting further. Probably even remove the documents.
+
+So say you are not following the best practice. Below are the code example. So I will go to that documentation.
+
+Probably try to find the specific example that they have before. And then put it here. And a few problems I noticed that they have is that you need to update based on example above, which are, first, it uses the odd package for defining data structure.
+
+And use the gpt4.0 model. And move the category description to the model description itself. And make the prompt more generic.
+
+Not tied to specific categories and don't specify the JSON output structure. Because I want to make it later if you want to add a new category, then it'll be easier. I was going to ask you about that.
+
+That makes sense. So when you're doing stuff like this, it's good not just to only think about what you're building today, but what it could look like, is what you're saying. Yeah, exactly.
+
+Because now, otherwise, it would be really difficult to maintain if everything is just imprompt like that. And that's where, like, you also, by earlier doing those spec and research, you can align this a little bit earlier and easier. Because when you have, like, 10 different tasks later for agent, it's very hard to align individually.
+
+Okay, now you can see that updated or just accept it. Now let's try to run this. So I would do npx ts node.
+
+Subreddit categorizer.ts. Okay. The cursor demo is haunting me today.
+
+Let me, adding this. Go this arrow. And when you get bugs, do you get frustrated?
+
+Like, do you get a bad feeling in your stomach? Like, how should one feel when you get bugs? Uh, it, I think, yeah, that's why I definitely feel, didn't feel good.
+
+And hopefully some of them will go away later with a newer and newer model. But, yeah, it's hard. And that's why initially I want to kind of break that down.
+
+I kind of learned a lesson. Like, you just keep getting circled for even very simple problem when you're looking to the actual fix. Yeah, that's very frustrating.
+
+Yeah, like, for example, in this case, it made a change, but you can see that clearly the change here is wrong. So I will probably just to, but cursor actually integrated a pretty good feature recently. I don't know if you saw that.
+
+Check it out. And this will allow you to kind of review that a bit better. So I can, this time I'm going to give it a bit more instruction.
+
+So every time when that situation happened, like I will kind of try different ways to prompt, either prompt it, like get it, sync step by step or give it a bit more instruction or additional documentation. So I got arrow above. Please help me fix it based on the code example here.
+
+So we're just copy paste again. Help me fix it. Okay.
+
+I love when they're like, I apologize for the confusion. Yeah. Yeah.
+
+Very patient programmer that you don't ever got in the real life. Okay. So yeah, it is using the right one, but I'm going to change the model here.
+
+And let's try again. All right. Still got an arrow.
+
+Please help me fix it. Let's sync. Step by step.
+
+Hopefully this work goes away later once we put together documentations. I've never seen someone say, let's think step by step. Why did you write that?
+
+That's because in previous large range model, there's a very common technique called chain of salt. So basically once you get, you kind of get it to switch gears. So when they try to, it's like system one and system two syncing in the book, kind of syncs fast and slow.
+
+When you try to get it to do just everything at once, then it often fell. But when it breaks down into small steps, it tend to have better result. And that's what we kind of try to simulate here.
+
+So once it tries to sync step by step, instead of giving you that two plus two equal to four, it will try to sync. Okay. How do I break it down into different steps?
+
+So that often will lead to better results. That's why we're kind of trying to prompt it for some kind of harder problems. Okay.
+
+So this time I can see that it gets results. And if I just try and change this to be, let's say I'm happy with my current project, but want to see how can I get my dog happier. And if I try this, hopefully that...
+
+Okay. So this is not correct, but happier. And I'm looking for...
+
+There we go. I'm looking for, let's say, a product to feed the dog. Yeah, there we go.
+
+Well, I'm away. Okay. So solution request is true.
+
+So this is working and we're going to do the same thing. I'm just going to include this as a second part code. So documentation for how to categorize Reddit posts using OpenAI structure output.
+
+And code example expected response. So here I'll include the expected response as well. So it will know how to put together with other features.
+
+And I will also reference this here. Okay. So that's a pretty good starting point.
+
+What I'm going to do next is actually I'm going to set up a project and put in the file structure and actually get 01 model to help me fill in all the gaps I might have missed. And to do that, the first thing actually I want to set up a project. So I'm going to use ShadCN to set a project.
+
+Copy it. Why do you choose ShadCN? What do you like about it?
+
+It looks good. I like the style. And because they have a lot of, sorry, give me one second.
+
+Oh, sorry. I'm going to delete this package JSON first. Because there are other like component library, but not as like good coverage.
+
+Yeah. Yeah. Okay.
+
+So Reddit analytics. Do you see other kind of UI component people use quite a bit? Yeah.
+
+Yeah. But I think from, in our world at least, I'm just seeing the vast majority of people using ShadCN. Yeah.
+
+Yeah. Yeah. And also another, I think maybe really, because if you use v0, then ShadCN came out as a default one.
+
+So it's easier to maintain as well. Okay. So now we set a project.
+
+Inside this project, I will set up a folder called instructions. And this is where I will, first I copy, paste the draft over. And I will probably also create a .env.local.
+
+Just paste over the credential that we put in before. And next thing is I actually want to communicate the file structure. Because quite often, the cursor just don't know where to create each file.
+
+And that's caused a lot of problems. So you can use a package called a tree, which will give you like the file structure fairly easily. So I will just do tree level two, which means it will only go down, two levels down.
+
+I probably give, oh, sorry. Before that, probably I will want to add some UI component from ShadCN as well. I will put button, input, dialog, tabs, table, sheet, card.
+
+So probably this one is what we need it. And then I will do tree L2 and ignore node modules.git. So this will kind of exclude certain files that we don't care from the file structure.
+
+And then it will return me this file structure that I can use to paste in here. So then it will know better about where we are in terms of project setup. So this is a pretty decent one.
+
+But what I found is that when I just give this to cursor, it'll also have some gap because there's still a difference between the documents that product manager generated versus what engineer manager gave to the engineers. So what I often use is I will use this starting point, then use a stronger model like O1 to help me fill in, like getting them as a kind of engineer manager and start filling in the details. Interesting.
+
+I never thought about that, but that makes a lot of sense. Can you show us how to, are you going to show us how to do it? Yeah.
+
+So in this case, I will go to O1 model. I will just paste in the whole doc we created so far. And this is kind of a standard prompt I normally will use.
+
+So firstly, I wanted to generate the file structure. I will just paste in and then we will see. So you can see that I'm pasting the whole doc.
+
+And in the end, I will ask it to, like above the project, I want to build, how should I structure my project file? And that will give you a bunch of like common rules, which is very similar to what I put in here in terms of project setup. It's basically give a bit more instruction, like all new components should go to this folder.
+
+Page should go to this. We are using Next.js, this one. Then based on that, O1 model will firstly try to propose, okay, this is like the final file, like project structure or different components that we will need.
+
+So in no word, what towards, and you can probably take a look here to see if this align always what you were thinking. Because sometimes you will identify some kind of very clear mistake. They might have repeat component four or twice, things like that.
+
+But if this looks good, this, the benefit of this one, you can see is that it actually will split up, do a bit of planning and architect the project a little bit more. And they try to also identify what kind of dependencies would be there as well. And if I think this looks good, then I can use a prompt to like, how now help me adding all the details of the original PRD.
+
+And I don't need to create actual code, just PRD and including file structure and documentation, things like that. And based on that, it should be able to like create a very detailed documentation that hopefully going to communicate the spec a lot better. Because now you can see like it will define the functionality that a lot, a lot more details as well as the actual variables, file structures and additional requirements.
+
+And as someone who's worked with engineers in the past, this PRD doc is like, makes them light up, right? This is exactly what they want. They don't want to see like, here's two features I really want.
+
+And I don't blame them, right? It's important to actually have a strong PRD if you want to have an end product that is going to be super tight and ultimately valuable to people. Exactly.
+
+It also leaves a lot less ambiguity as well. Like one problem I think people often find is like, if you are a new product manager, you will see people just keep delivering things that are not exactly what you want. And this will hopefully take a lot of guesswork from the process.
+
+Okay. So this is a pretty decent one. And then the next thing is that we can finally start getting Cursor Composer to start building this.
+
+And what I'll do is I'll probably do a submit. So the project setup, commit. And now I will try to get this to build the app.
+
+So I'll open Cursor Composer. I'm building a Reddit Antics platform strictly based on this instruction. Now let's build this number one first.
+
+So this is kind of one benefit of having a doc because then you can break down into small tasks where it can have less room for error. So I would just ask it to implement the first part. And it should be able to start creating components based on the planned project structure and dependency.
+
+It's happening. It's happening. Hopefully this will reduce the amount of errors you have.
+
+So let's see. All right. Let's see.
+
+NPM run dev. Okay. Here you go.
+
+So you can see the UI is a bit off. But as I mentioned, I'm going to just ignore that for now. So it has the cards to display the subreddits.
+
+If I click on that, it will not do anything because this part hasn't been implemented yet. But I will go back here and then give it some. Great.
+
+Now let's do the second part. Oh, I see. So you're just going one by one.
+
+Yeah, exactly. Because I previously, I found when I tried to create everything, firstly, much likely it's going to have ever out. But also it will sometimes just skip some steps for some reason.
+
+Right. Yeah. No, it makes sense, right?
+
+Because people talk about one-shotting it, right? Oh, I use this prompt and I built this app. And then it's like, well, then you have a bunch of errors and it's going to make it way longer to, you know.
+
+I think the strategy, what you're basically saying is it's kind of like crawl, walk, run, step by step. Yeah. Yeah, exactly.
+
+Okay. So I have the second one. And if we open this, you can see that the page structure is created as well.
+
+And the next one, I can get it to do. Great. Now let's do the third step.
+
+Make sure you refer to, here I probably would just base on instruction. I made it again. Make sure you refer to the documentation at the bottom.
+
+Now if I go back and refresh page. Okay, it got some errors. And let me check if it has any errors in the...
+
+Okay, so this time, those type of errors are a bit more kind of annoying because you don't really have a good way to communicate with cursor. So normally the first thing I would do is that I would just say, it says, please help me add debug info to the code. So this is probably normally the first thing I would do, just add debug.
+
+So I have a way to communicate bad specific errors to cursor so that it can actually figure out the right fix. Right, because you don't know what's going on. Yeah.
+
+Because in this case, it's very hard to communicate. You can probably try your best to explain and probably still get the solution wrong because it has so little information. Okay, so if I go to here...
+
+Let me check if my credentials correct. Looks correct. And just going to copy paste those arrows.
+
+Got arrows above. Still fail to fetch and display reddit post. Okay, just check again, making sure it didn't mess up with my credentials.
+
+Okay, here we go. So this time, we can see the reddit post has been displayed properly. And now we can move to the last step.
+
+Great. It works now. Let's do the last part.
+
+By the way, the thing with the cursor, just for people building, sometimes it's fast, sometimes it's slow, sometimes it's down. Yeah. And, you know, it's just be aware of that.
+
+Yeah, it is. Especially if you're using like, more like powerful model, it can slow down a little bit. Yeah.
+
+It's actually kind of crazy because it got so much traffic and volume past few months. And it still keeps things going. Okay, that's another arrow.
+
+Very likely. So another good thing. So it's an arrow out.
+
+But the good thing of that previous research is that I think we kind of know why. Because very likely the same reason it error before, it error again. Because I found the cursor or large-name model generally is not great at getting the, you can see that.
+
+Now it's GPT-4, which don't have the support for the structure output. If I try it again. Refresh.
+
+Okay, here we go. So now you can see that all those Reddit posts has been categorized in different categories. Like solution requests, pain anger.
+
+And I can click on that to see the specific posts. So this is kind of like an example of how can you view this one. There are more features you can view it out.
+
+But this is kind of the workflow I will use normally to turn them into a proper doc. And they can view step by step to get to an app that is actually going to be used. But, and this is probably the time I will start diving into the UI part as well.
+
+So as an example, because the project functionality now has been built up, to get UI right is actually going to be more predictable and easier. Because I can just go to, let's say the homepage first, and then go to V0. I will paste this in.
+
+And then I will start asking to like, just make it better, look better. So this is kind of problem I would normally start. I build this app.
+
+Please keep the functionality exactly like above, but make the UI a ton better. And I can also add some specific style that I want. So I probably prefer black and white, maybe dark mode as well, similar to Vercel.
+
+Really smart move to also put examples like similar style to Vercel is a good tip. Yeah, yeah. Because I found otherwise they were interpret looks better in different ways.
+
+Do you find like some other good prompts that you see from V0 from other guests? So someone told me the other day, and this is such an obvious thing to do, but he was just like, buy a bunch of books around design. And I ordered like five books and just write, like create prompts from the design books.
+
+Like go and get the best Amazon books for design and just, and maybe I'll include a couple of them in the description, if people are interested. And then create prompts from them. Yeah, right.
+
+I see. So it's like, you literally put it as part of prompt for this box? Well, it's like the problem with the reason why people can't get a lot out of V0 is because frankly, they don't have the language to understand what good design is.
+
+So the answer, what's the answer? The answer is to become well versed in design. And how do you do that?
+
+There are books about that sort of stuff. And then comment below. I can also do a whole video on how to get the most from V0 if people are interested.
+
+That's really cool. Okay. Okay.
+
+So I just, sorry, this is a component for the separated card. Let me check. Did I do anything wrong here?
+
+First component display. If I go to the, oh, sorry, pasting the wrong thing earlier. Okay.
+
+And you normally will get error here, but you can just ignore. Paste in here. Okay.
+
+So now you can see that the style start looking better. Wow. But this is just like one example.
+
+Inside is still not as good, but you can basically imagine we can just go component by component. But everything will just look a lot better. And because you already provide code, and you can just prompt V0 to say, follow structure and just update UI.
+
+And you can see now the room for error is a lot less if we do this. And we can probably do another. But before I do that, instead of updating the UI itself, actually I will probably just do one last part.
+
+So we can go to the subreddit, update that as well. To display subreddit page. And while we are waiting for it, is there any kind of like startup ideas on top of your mind that you are pretty keen to start build out if you take a time for cursor?
+
+I have a notes file where I just put startup ideas in. I call it ideas. I think everyone should have one.
+
+Most people who listen to the startup ideas podcast have one. It's literally just, I'm not going to share it on screen because I don't want everyone to take all these ideas. But I got a million.
+
+I can give you a few. I'll start with one. IMDB for creators is one.
+
+Imagine if IMDB is a directory of, you'll find people like Brad Pitt there, but you're not going to find Jason Zhu and Greg Eisenberg on IMDB, right? Yeah. So what is the IMDB for creators look like?
+
+All right. And the people can just go there and find the right niche topic they care about. Yeah.
+
+I think it's like a way, you know, it's a directory of people who are creating content in different niches. I think that whenever, you know, whenever someone is going diving into something new, they want to find trusted, interesting content creators. So it's a directory of those people.
+
+I think that would do really well. That would be cool. It sounds pretty straightforward for the cursor to build.
+
+For sure. And that's a good point, right? There's some ideas that are straightforward for cursor to do and there's some ideas that are not.
+
+Yeah. Exactly. Okay.
+
+So now I'll start adding some icons. But yeah, this is kind of an example of how you can start using. You can probably keep prompting it to get better and better to align with what you want.
+
+So this is like how you get a UI. The last part that I want to quickly showcase is like, how can you use some modular reusable pump? So one I can probably quickly showcase is that this, let me try to find.
+
+So this one prompt I quite often use for like setting up the auth. So their function, as I mentioned before, is pretty standard. And it can be applied to all the other projects.
+
+And this is kind of one example that this doc I kind of used before to create authentication. And things that are kind of similar to every single project, I can just paste them in. And then start like implementing the auth feature.
+
+So as a quick example, I'm just going to paste in the credential. So now I can add a new composer and then say, I've built a Reddit analytics platform based on this. Please, actually, I might even remove this doc.
+
+Now please help me view the authentication user auth function strictly based on this setup auth.md. I've done step one and two already, which is like set up the auth and install libraries. Now let's build step three and step four.
+
+So you will just start like build out the sign in page, sign up page. And again, with BestPare, we kind of want to do step by step. Great.
+
+Now let's do step five. It's kind of annoying that currently we have to still promise them step by step to get good results. I hope like with new project like Bolt or others can just connect this workflow that people are manually doing.
+
+There's definitely a gap there, I feel. Yeah, it's for sure coming. Yeah.
+
+Okay. So I do need to set up the package here. Okay.
+
+So now if I go to a subreddit, and if I haven't logged in, it will just log in feature just there. And this is kind of one modular prompt can be used for like other platform. They're pretty standard.
+
+And same thing you can imagine is like for payment. And now if I log out, it will take me back. But you can imagine like if we have a collection of this type of standard feature prompt and can be shared across the community, then I think this could be extremely useful because then I can just like take this prompt and to let's say build a payment system.
+
+But I also imagine like later for those developer tools, they might have new ways for people to use it. Like instead of like read documents, you might have a prompt that you can just take and start integrating into your application. So yeah, this is the one thing I'm really excited.
+
+Like I really hope someone can build an aggregator, if not my start one as well, to just for this modular prompt that people can share. Yeah, so this is kind of a quick example of how can we build my workflow into my like building with cursor. With again, the first thing I will start with is spend a lot of upfront time to write specs to reduce the uncertainty as much as possible.
+
+And then build functionality first and UI later. And most importantly later, I think we can start aggregating this list of reusable prompt, which will speed up the end process a lot more hopefully. This is amazing.
+
+This is like the fundamentals of AI coding. I'm one of those people, I'm guilty of this. Like I just love going into v0, starting there, doing no specs, no modular prompts, just kind of like going, you know, following my curiosity.
+
+And now that I've been doing this for, you know, almost eight weeks, I guess, of AI coding, it stings. It stings, you know, it makes my job a lot harder. So thank you for coming in and sharing this.
+
+And I hope people listen to this and start doing AI coding this way, because I think it's proven, it works. And it is fun. It's just, it's a bit more structured than a lot of people are used to.
+
+Yeah, exactly. Like if it's more like people's expectation, like if you compare with impression that you just give a prompt and everything just work out, then it feels hard. But you kind of want to compare with how development was doing before.
+
+Now it's actually a lot easier compared with the real development. That's right. It's kind of like one of those electric assisted bicycles.
+
+The ones that you still need to pedal the wheels. And it just gives you a little boost. That's how I see this.
+
+And Jason, where could people get to know you better? I know you have some awesome tutorials on YouTube as well. Yeah, so thanks for that.
+
+So I'm also running a YouTube channel called AI Jason. So you can go to YouTube and search for AI Jason. I do post interesting AI experiments that I do from time to time to teach you how to build with AI and large range model.
+
+So feel free to search and check out. That's awesome. Yes.
+
+Yes. Go subscribe to Jason. It's free to subscribe.
+
+And then if you like this video and you hopefully want to see more of Jason on this channel, the Startup Ideas channel, go like, comment, subscribe. I hate that I have to say it, but if you don't do that, then you won't get the videos in your feed. It won't remind you to go and build your ideas and you'll just be one of those people that just sits on ideas and doesn't do them.
+
+So Jason, thanks again. And I'll see you around. Yeah, thanks a lot.
+
+Later. Bye.

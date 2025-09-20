@@ -1,0 +1,653 @@
+This episode with Omar was really cool. So Omar listens to the pod, but he also creates these incredible Disney-style content, Disney-style images. Literally, it feels like you're in Pixar.
+
+And these are the type of things that you can create for your startup, for your business, for content that could actually drive tons of revenue for your business. Marketing is about storytelling. And if you know how to use these AI tools, like Leonardo AI, Cling AI, and what prompts to do, you are going to clean up.
+
+So this episode is a really special one. He goes and does a tutorial of a lot of these AI tools. And we sprinkle in a bunch of startup ideas throughout the episode that you can start today that generate revenue and cash flow using some of these tools.
+
+I hope you enjoy the episode. Let's start up by this podcast. It's shipping time, baby.
+
+Okay, Omar, I've got one question and one question only. What are we building today? We're building full workflows today using AI avatars.
+
+And we're going to have a ton of business ideas that you can start immediately with zero employees. You know, you know, you know, that's music to our ears here on this podcast, right? No, I know.
+
+I know. I know. I know.
+
+I know. I know. I know.
+
+I know. I know. I know.
+
+I know. I know. By the end of this video, what are people going to get out of this episode?
+
+Man, as an audience member of myself, I know what I like to get out of your episodes. So by the end of this episode, you'll be able to assemble an AI SaaS product that can literally print you cash. All right.
+
+Let's get into it. Cool, man. So we got here a couple of screenshots, by the way.
+
+So you might recognize this. This is you. This is Greg sipping on some of that good stuff.
+
+So we put together this little AI avatar video, which we'll share in a bit. And all this stuff is generated with AI, right? And so I've really become obsessed with this idea of kind of AI avatars recently.
+
+You know, I do a lot of AI with my children. You know, we'll be doing it since the first time ChatGPT came out. We will just be playing with, like, you know, so many different tools to the point that they literally wake up in the morning before school, want to do AI, which for them is creating images now.
+
+And so it forces me to level up my game. And as I'm leveling up my game, I'm realizing that, wow, not only is it a real problem or at least an opportunity as a parent to, like, create imagery and do something with it, but it's also a really cool space in general. And so I think there's a few ideas that we can dive into that I think are not necessarily in the children's space because I didn't want to make it too niche for that.
+
+They're kind of ideas in general that you can apply across, you know, many different verticals using the same type of tools and principles. So I'm going to give you some demos and some prompts that you can jump into and then hopefully just play with straightaway and build some products. So this is just a recap on what we just said with Greg.
+
+So what we're going to build today, we're basically going to do full workflows of business ideas that you can start with AI avatars. And literally, you don't need anyone to do this with you. There will be a part of the demo we'll go to where I'll explain how you can bring on, you know, a developer, an engineer to help you when some things do get a little bit more, you know, complex.
+
+Or you could watch one of Greg's videos with Riley, for example, and, you know, watch out to do on Cursor. But you can literally do this type of stuff without needing anyone. So we'll go through that.
+
+And then I literally mean it like these type of products that you can build from this stuff. I'll show you some examples of guys that have done similar workflows, albeit, you know, they're well into this AI space. But effectively, SaaS products that can literally, you know, just print you cash, recurring revenue, a product that's on there that people genuinely want to use, you know.
+
+And I also feel that as I'm using AI, like I said with my children, there are products out there that if they existed, I would be using them myself. And I'll be paying for them every month. And so I'm going to try and build those.
+
+Cool. So just before we get into it, I wanted to tear a little sheet out of Greg's playbook. And I know, Greg, you speak about this type of stuff quite a bit.
+
+But I think it's an important, you know, principle to just, you know, root in the ground to really help us understand the type of opportunity and space that we're living in right now. I think like the three kind of key areas that we have in business, typically with tech products, you have the product itself. So the application, you have the marketing sort of part of the business, and then you have the operations.
+
+And I think there's kind of been this massive transition recently. And I think the key elements that have played a part in that have been, you know, COVID, which is completely like, you know, shaken the way, you know, businesses would operate. And then of course, you know, AI itself.
+
+And I also think there's been a big marketing shift as well in terms of how we connect with brands. So let's just lay the kind of map out with product, really, you know, to the traditional playbook. And even the way I would see it, you know, as I got into business was that you had to raise VC capital.
+
+It took you years to launch a product. Like my first product, I raised Angel round four. I must have taken like two years maybe to like get the product out, overthinking so many different things, hiring software engineers, you know, which obviously cost a lot.
+
+And it was just one of those things that just felt like it was normal. That's what you had to do, right? And then with marketing, it was similar.
+
+You know, you needed some sort of social media budget, a creative team. If not, you'd have like professional advertising or an agency you'd bring on to help you out. And then even the marketing angle was kind of like the seasonal, big campaigns, momentum, you know, gearing up to like a special thing type of method.
+
+And then operationally, you know, you're really hiring talent for productivity, you know, to actually get stuff done, right? And so you needed people to actually make progress. So, you know, you could all work together and actually, you know, push the business along.
+
+You then need the office space because working was a physical thing more than remote. And product cycles in general, come back to the first point, were really dragged out, which meant that the cost then also became dragged out, right? And so you're spending a lot of money keeping all these people on board to then produce a product and then get it out into the market.
+
+And then I think these three kind of shifts happened very recently, like I said, with COVID and with AI and the way marketing has changed. And so I think there's been like a big technical shift with product, like an audience shift with marketing and then a cultural shift with operations. And so the technical shift of product, I think, is being especially, you know, credited to AI.
+
+You know, you can build products instantly. And I think the more and more people are hearing the word AI because it's around every day now, you know, it's like the buzzword of the century in a sense, you know, but we mustn't become desensitized to how powerful it is. And so that's just really important to iterate that, you know, we're not in a state where you have to take ages building products.
+
+And you could also do it at a low cost and with zero employees. You know, you don't need engineers anymore. You don't need to spend tons of money doing it.
+
+You can just get out there and start right away, which is what we're going to do today. Quick break in the pod to tell you a little bit about Startup Empire. So Startup Empire is my private membership where it's a bunch of people like me, like you, who want to build out their startup ideas.
+
+Now they're looking for content to help accelerate that. They're looking for potential co-founders. They're looking for tutorials from people like me to come in and tell them, how do you do email marketing?
+
+How do you build an audience? How do you go viral on Twitter? All these different things.
+
+That's exactly what Startup Empire is. And it's for people who want to start a startup, but are looking for ideas, or it's for people who have a startup, but just they're not seeing the traction that they need. So you can check out the link to startupempire.co in the description.
+
+And it completely shifted the way audiences work as well. So the solopreneurs, you know, are super cool now, man. And like, I think a big, you know, part of that or a big kind of timestamp, I think, was, you know, you probably agree, Greg, was when Peter Levels was on Lex Friedman, right?
+
+That was like, wow, I've been following Peter for ages, been seeing his staff. You know, you can put, you know, Danny Postman in that chat as you've had him on the pod. And I think Mark Liu as well.
+
+These type of guys, man, super creative, great solopreneurs, but are like pushing into that kind of mainstream era now. And both from a personality perspective, but also from a, you know, solopreneur as a, you know, way of working perspective. And that's because of transparency.
+
+You know, they literally are showing how much money they're making. They're telling their story as they're doing it. And people are engaged with that on like a daily level, right?
+
+So it's always on marketing. It's not a campaign. They're not gearing up to one time when they're going to show you behind the curtains.
+
+And I think the interesting thing with this as well is like, you're seeing this happening corporate now, especially with, you've seen like, you know, the WWE and UFC kind of merger with TKO. And even the way WWE do their marketing is all based on, it's always on storytelling, engaging your audience behind the curtain type of technique. And you're seeing a, you know, billion dollar organization do that.
+
+And you're seeing solopreneurs starting from zero doing that. And I think it's very interesting and it's actually very empowering, you know, that we can all do that. And people really do engage with that.
+
+And I think the cultural shift to operations has been this whole kind of remote working versus office costs, which has become a huge thing now. You literally don't have to pay anyone to be inside a physical space. You can do remote work with them.
+
+From all over the world, there's talent. And my CTO is in Armenia. You know, I've got people I work with in the States, in the UK.
+
+Like, it's just everywhere. And people are very, very used to working like that now. And also with less people, you build faster.
+
+So it's much more lean. And so this I found very interesting, by the way. So I thought I'd throw it up with a nice picture of Greg.
+
+I was watching Cole's pod actually today and I loved it, man. It was really, really good. I learned a ton of stuff.
+
+So I do recommend you guys watch that. And it was interesting because Cole touched on these two kind of ways to use AI tools. And one of them was conversationally.
+
+And one of them was to kind of create these master prompts. So conversational being the just, you know, back and forth with chat GPT and master prompts being like one large prompt to give you like a solid output. And I think both of those are absolutely perfect.
+
+But I did have something to add to that. So I thought seeing as we've just had that episode with Cole, let's add a third layer to that kind of way of using AI. And I call that sequential prompting, right?
+
+And so this third technique called sequential prompting is what we're going to go into today. And the way I want you to kind of think about this is chat GPT can, you know, and I think I did this in my last video with you, Greg, as well, where you can use chat GPT as a way to kind of tell you itself how to communicate with itself. Right.
+
+So like you can speak to chat GPT and ask it, OK, can you give me a prompt to do such and such? And then it'll give you the prompt and then you can feed that prompt back in and get the thing you want. Right.
+
+And so sometimes we overthink, you know, the idea of creating a perfect prompt, but you can actually get it out of the system. But what's interesting with sequential prompting is basically like you're creating, you're speaking to chat GPT to generate a new prompt that you're not necessarily going to be using inside chat GPT. And so if you think about other AI tools, you know, with with the avatars, you've got things like Leonardo AI, Kling AI, there's a different kind of AI models you can use.
+
+Eleven labs, all of those have the ability for you to prompt. Right. And so you need to put something in there to get an output.
+
+And really chat GPT can give you that, give you that. So if you now look at chat GPT as a way of getting a new prompt, you then take that prompt and you go to a second layer, which is you're using that new prompt in a different AI tool to generate another output. So that AI tool is now giving you something else.
+
+So in this case, it might be an image like Leonardo AI will. And then you can take that image and you can carry that on, you know, however many sequences and, you know, kind of Lego bricks you want to add, you can do that. You can make the video then animate with Kling AI.
+
+You can add voiceovers with Eleven Labs, you know, and so you can do this kind of process and it all kind of happens in this kind of sequence. And then you kind of connect those prompts and tools together with a front end user experience. Right.
+
+And we can go a little bit into that, but I did some of that in the last video as well. So, you know, once you've got all of that, you kind of can build these very complicated, quote unquote, not complicated in terms of, you know, building them complicated in terms of, you know, different tools that you're stitching together. But the way you would start is by doing this manually.
+
+Right. So you do a manual process of talking to these AI tools and then you can have a framework where you can, you know, connect these all up using automation tools like Zapier or Make. Or if it's more complex, you can do what I said earlier and maybe bring on like one engineer and get them to help you stitch it together.
+
+And so simply this is what the stack kind of used to look like. You used to kind of have, you know, let's say you're creating content for social media. You'd have a physical person doing all of these roles.
+
+So the content writer, graphic designer, social media manager, chief marketing officer. So many, you know, of these roles were physical people then in our office, you know, and we have to we have to realize that there's kind of new, you know, opportunities on the table. There's a whole new set of rules and we kind of have to we're kind of forced really to rewire the way we think.
+
+We can't just accept that the old way of doing things is is the best way of doing things. It might still be very, you know, you know, productive and get the job done. But nowadays, especially if you're like me and you're trying to build stuff on your own and kind of you just want to sprint with your own ideas.
+
+You can literally do the exact same job as like five or six people using AI tools. Right. Like ChatGPT, Leonardo, etc.
+
+So that's what I want to go in today. So hopefully we can get into some demo building and I can show you how this stuff works in practice. Beautiful.
+
+Yeah. So let's get into the first business idea because I think this is super cool. I find, you know, like most of you guys, I use ChatGPT or Claude AI.
+
+And when I started creating these kind of image avatars, I became very, you know, curious about how you can go more and more in depth and customize these AI avatars, but also control the output in a sense. Like if you just, you know, ask ChatGPT to create you an image using Dali, it can go, you know, every prompt can go in different directions. And so you kind of do need a prompt structure.
+
+Right. And so I have this prompt structure that I've written on how you can create an avatar. So that's the first thing that we're going to start with.
+
+And then we'll go into different business models that you can do using these type of avatars. Right. So we have this prompt over here that you can just copy up if you guys want this.
+
+So if you're in, if you're in my community, you can just go to Code and Prompt Universe and grab it. But if you're not, you can also jump on the newsletter, just enter your email and I'll just send it to you for free. So you can just get this like from here and just copy, paste it.
+
+So you take this prompt and then you're going to go into ChatGPT and just paste it. Okay. And so just to break down the prompt, all it's telling ChatGPT, I always get tongue twisted with ChatGPT.
+
+You want to do, you want to get it to customize, sorry, you want to get it to take an image that you might give it of, you know, a child or a person. And then you want it to give you a description of that person as a prompt. Right.
+
+And that prompt is what we'll use as kind of the consistency of the character. So let's say you were creating something where there was a story you were telling. So let me just open up actually what we did with Greg.
+
+So you guys can see over here. Greg, can you hear this, by the way? This is Greg.
+
+Yeah. All right, cool. So let me play this actually, because this might be good context.
+
+So I stitched this video together and I'll show you guys kind of how I did it. But the process started with this one prompt. Okay.
+
+And so you'll watch it and you'll get an idea of what I think AI can look like if you're creating stories for like, you know, kids, for example. Greg and his magic cup. A Teeny Tales tale.
+
+This is Greg. Greg loves exploring new ideas in his magical treehouse. Today, something extraordinary caught his eye.
+
+A golden cup glowing with a rainbow light. What could this be? He wondered.
+
+Greg took a sip from the magical golden cup. And whoosh! A vibrant rainbow glow surrounded him.
+
+Suddenly, bright ideas started swirling in his mind. AI robots, cool inventions, and ways to make the world a better place. It's literally like a Disney, Pixar universe.
+
+Right. Yeah. That's what's wild, man.
+
+Right? It's crazy that you can even do this stuff, don't you think? Yeah.
+
+I mean, it almost feels like it's obviously super hyped, but it's under hyped relative to how much this is going to change things and how much opportunity there is to use this for content. Right. To tell stories.
+
+So I'm just excited to get into this. So what we'll do is, we have this prompt, and to start the prompt, you're going to have to give it a, sorry, an image reference. Right?
+
+And so if I go over here, I'll give it an image of my son. Right? So this is my son.
+
+I'm going to throw him in. And so you'll give an image reference, and you'll give it a name. So you'll say this character's name is, you know, Cairo.
+
+He is three. And male. Okay?
+
+So there's the only three elements you're going to change at these three parts here. The rest of it, you can need the same. Because the prompt basically just gives ChatGPT some options of style of haircuts, skin tones, accessories, etc.
+
+So it knows kind of how to, you know, structure this. And then we give it a little bit of a guidance here of what type of output we want. So we want it to tell us the character's name, the age, you know, give us a prompt structure that we can then use in Leonardo AI, which would be the next step to actually generate the image.
+
+So back to my point earlier, this is where the sequence starts, right? We send this ChatGPT, and we just want a prompt that we can then copy and paste into another AI tool. And so if you're thinking about this from a technical perspective, if you actually have like a single prompt that ChatGPT can give you, and you're connecting to, let's say, ChatGPT's API, it can programmatically send that prompt to another tool, right?
+
+So I'm doing this manually right now. And so I would 100% suggest doing this process manually, because as you're doing it manually, you can, you know, change things in your prompt. You can see how the, you know, you kind of do a lot more iteration as fast feedback loop.
+
+But when you're happy with it, like I'm happy with how we've got it right now, I know that this output is the only piece of text I need to then be able to generate the image. All of this other information here is basically the options that ChatGPT has chosen based on the image it's assessed, right? Because ChatGPT has the ability for you to upload an image, and it can read the image, okay?
+
+So it reads the image, then it gives me a description of his hairstyle and everything. So he even picks his outfit for me, and it puts it all together, right? And so now I've got this.
+
+This will be used as kind of the consistency in the character. If we were to create a story or a narrative going forward, we would use this description of him so that we can have a consistent character every time, okay? And so what we actually need is right now is this description here.
+
+So this is a prompt. So ChatGPT has now given me a prompt, which I can take into Leonardo AI, which is this tool here. So you can go to Leonardo.ai.
+
+You can see these kind of fun images we've created already. You can even do Simpsons-style images. This is crazy, man, right?
+
+So funny. You can just paste in the prompt, hit generate. And so you can use Leonardo AI for free.
+
+They give you some tokens, but I think about $20. They'll give you like another $8,000. And on your settings, you can kind of keep them as is.
+
+The prompt enhance, actually, you can switch off. So let me try again without the prompt enhance. And we'll make it 16 by 9 so we get like a widescreen image.
+
+But you can already see how cool it is. Just this simple prompt that ChatGPT has given us plugs into Leonardo AI. And Leonardo AI has an API.
+
+And so that means that we can connect to Leonardo's API and generate images programmatically, meaning somebody could use a user interface to upload their image of their child in this case. We will then connect with ChatGPT's API and run this prompt. So we just give this prompt to the API.
+
+It then spits out the prompt that we're looking for. And then we take that prompt and we give that to Leonardo's API. And so we're kind of, this, obviously, this ChatGPT has done this in a few seconds.
+
+Leonardo had generated images within a few seconds. So literally, probably within like 10 seconds, if somebody's using like a frontend that you've designed on Webflow or Frame or wherever it is, they can get like an image of their child like this. So that's just a frame in your mind how these kind of things connect together for you to get an output.
+
+And so you can see here, now we've got an image literally from a photo we uploaded here. And we're pretty happy with that. And that's literally how to create, that's the basics of how to create an AI avatar.
+
+Dude, it's ridiculous. Like, look at it. Look how incredible that looks.
+
+Yeah, so high res, man. It's just insane, isn't it? Honestly.
+
+And how fast? It took like what? Like four seconds?
+
+Yeah, man. Yeah, yeah. Literally.
+
+So quick. It's like, that's what makes it exciting to like build these things into like APIs and to do things with it because of speed. And I remember these things were like, it wasn't that long ago that I was playing with these tools and they were much slower, not as good quality.
+
+But like, I actually think even now, like what I've just shown you with the video, or while going to it in a minute, like generating a five second video clip right now takes about four minutes. But really, by the time, you know, Sora is out there, they're going to connect that to the API. OpenAI will do that.
+
+You'll have all these other tools that are going to just, you know, absolutely accelerate. So I think, you know, it's a matter of time before everything just becomes like that, right? Yeah.
+
+And it's just the, and we'll get into it, but the startup ideas on top of this, like it's cool that we're just doing this and, you know, getting output. And, but, you know, there's tons of businesses that could be built on top of it. One thing that it got, you know, this got me thinking of is I remember when I was 13 years old, I had a birthday party.
+
+And my, my dad had a shop and there was someone who worked at the shop who was like a graph, who was good at graphic design. And we actually took for the invite of the birthday party, we took a scene from the Simpsons. This is in 2002, I guess, a scene from the Simpsons.
+
+And then they put my face like where, like in a TV where like the Simpsons were all watching it and like gave it to my friends. And they were all like, wow, this is like the coolest birthday invite ever. Right.
+
+It blew their mind. This is like before Photoshop became popular and stuff like that. Think about that, you know, in today in 2025, it's like, you know, invites to parties.
+
+Right. You know, it's just one idea around like if you can make invites more of a story and more interesting, you know, would people be willing to pay for that? And I think that at the end of the day, like, what are you doing here?
+
+You are storytelling. And the way you're storytelling is through animation. And the style is Pixar, Disney.
+
+But it is like any human being is going to look at any of these images and fall in love with it, frankly, because, you know, it's a tried and tested way of communicating information in this like 3D format. So, yeah, I'm excited about some of the business opportunities on top of it. Man, it's a you literally read my mind there, Greg, because here on the business idea to people love when Simpsons predict things.
+
+Imagine if instead of that Simpsons style is that reacting to things. And so like people can do it just for fun or for the wow factor. And so that's so funny that literally you did that in 2002.
+
+But that's exactly that, man. It's like, you know, I find that so interesting because I think you can actually you can do it for just for fun or invites or you can might have a moment with your friends. Let's say I know you were chilling with them and something embarrassing happened or they went out and whatever something happened.
+
+You could literally or you went to like a stag where, you know, the guys on a holiday. You could just put together like a storyboard of like your time either based on photos or you could just like prompt it and you can send it to someone in your group chat. You know, it's like a funny moment that happened.
+
+You know, there's 100 percent. There's all these kind of like, you know, utility utilities that you could build off it, man. And I think, you know, the time is now in the sense that not everyone is are, you know, is using these tools.
+
+Well, like a lot of people are using the tools, but they're not prompting it. Yeah. At this level of quality.
+
+So there's an opportunity to build a lot of awareness really quickly right now. So 100 percent, man. And I think it's brilliant.
+
+You said the point that you made, because actually the business idea number one was exactly that, which is how can you have these characters and basically create some sort of like, you know, utility off the back of it. A bit like the way, you know, you had I don't know the business where we basically create custom greeting cards. I moon pig, you know, things like that.
+
+I think moon pig dot com. I think it is. Or is it UK?
+
+Yeah. But basically you could. Yeah.
+
+So you could kind of. Create your own, you know, custom cards. Right.
+
+Yeah. Which obviously is so like dated now as well as like a even as a user experience. Right.
+
+Like just imagine going straight into a builder. Right. Where you're creating the moment or the card or the greeting or the image, you know, or even you create the image and then you can you can connect it to other like, you know, tools to be able to do things with it, which again will come into.
+
+But I think that's really fun, man. It's like, you know, how can you create the the AI version of moon pig dot com? And I think that's fascinating because these these image generation tools can can literally allow you to do that.
+
+And I think for kids, there was this one called Hooray Heroes. My daughter has a book from Hooray Heroes. This is actually what inspired me with their kids imagery stuff, because she has this book that she got when she was one years old.
+
+My wife made it for her and she fell in love with the book. And it's like it's ripped in certain pages or whatever. But she's so obsessed with the book.
+
+Is there a website? I don't know. And literally you can, you know, just build your own.
+
+Wow. What a terrible site. Right.
+
+Man. Dealing my head in. OK, anyway, you can build basic custom books like this.
+
+Right. But they still got illustrators. Like I was looking at the credits in the book and they have illustrators they work with.
+
+And I was like, that's crazy, man. Like this business basically just probably has so many overheads and costs that you can just like rip out like that now. So, yeah, I think it's super interesting doing things like that.
+
+And I think, by the way, also from a marketing perspective, Greg, I think like memeifying moments is also really interesting. Like if you're just trying to create like a you have these meme pages right now, obviously, in general, that tweet. And they would basically jump on the things that are popping right now.
+
+You know, like today's thing. There's always a thing every day. Right.
+
+And so today's thing was like Mark Zuckerberg checking out, you know, Jeff Bezos's missus. Right. Like that was the thing today.
+
+And so like, you know, every day there's a thing like when Elon Musk came out with Trump rally, he was jumping in the air. That was like the thing of the day, you know. And so like, could you use moments like that and memeify them just to even create a feed where you're just doing that.
+
+And like that might even be interesting. Right. It could be used as like an indirect way of, you know, getting marketing for this other tool you have where people can, you know, create their own avatars and do their own, you know, images from.
+
+A few thoughts. Yes. One is Moonpig, which I've never heard of, does $400 million and increasing every single year.
+
+$400 million a year of revenue. So this is like a huge business. Absolutely huge.
+
+It sounds like they're really big in the UK. And so, you know, when you look at some of these ideas, they might seem like kitschy and like fun. It's like, okay, like maybe I'll use that once or, or, you know, yeah, you know, yeah, maybe as a little gift, but gifts are big business.
+
+Yeah. The gift business is huge. That's a great idea, man.
+
+That's a great idea. Right. I imagine you could create, because the images are generated so fast.
+
+What if you could work with ChatGPT to actually create like literally maybe, you know, just a slight movement for like five or six clips and then generate those through Leonardo and stitch them together. You can, you can literally create GIFs with these type of images. Look, can we, can we do something fun right now?
+
+Yeah, sure. So that's what we're here for, man. One of the things I like to do is, you know, okay, we've got this insight.
+
+There's an opportunity to create an AI first version of Moonpig. Let's prompt ChatGPT or prompt Claude and say, I want you to act as my co-founder. You there?
+
+Yeah. I was just. I'll go.
+
+I'm sorry. I want you to act as? I want, I want you to act as my co-founder.
+
+Okay. I want to create a AI first version of Moonpig. How do we describe Moonpig in one sentence?
+
+We should describe Moonpig. Moonpig is. Moonpig.
+
+Company. Does that say Moonpig? Wiki, maybe?
+
+Is it on Wikipedia? All right, go. Internet-based business.
+
+Okay. Personalized greeting cards. Personalized greeting cards, yeah.
+
+Moonpig creates personalized greeting cards. Yeah? I found out that using Leonardo plus this prompt, we should include the prompt.
+
+Yeah, the prompt above, Jose. The prompt above, right? You can create compelling stories with these 3D characters.
+
+And then the question is, what does an AI first version of Moonpig look like that could generate me $10 million a year of cash flow? And then let's see what happens. And, you know, sometimes you get some good stuff, sometimes you get some bad stuff.
+
+But I just find that it's helpful. Yeah, I love that. You know what I'm saying?
+
+Like, here we go. I'm already getting tingly. So for the people listening on audio, you know, some AI-driven features, dynamic character and scene creation.
+
+AI-generated stories, turn every card into a mini story. For example, Caden, the brave explorer, celebrated his... I'm sorry, that's my son's name, so I obviously remember that from somewhere.
+
+Amazing. AI-enhanced templates, offer dynamic templates that adapt in real time based on user inputs, such as preferred tone. Voice and video integration.
+
+Let users add, you know, generated voiceovers or short animated videos. Smart recommendations. Okay, revenue streams.
+
+This is literally a business plan. Like, this is an actual business plan. Crazy.
+
+Premium card sales. So they sell for between $5 to $10. AI-driven personalization justifies a 20-30% markup over traditional cards.
+
+Good to know. Monthly memberships, $10 to $15 a month for unlimited cards. Upselling gifts, matching items, flowers, chocolates.
+
+That's good. Okay, technology. It gives you the technology stack.
+
+Right. Wow. Okay, the marketing and growth strategy, social media, stuff like that.
+
+And you can, you know, we won't do it today, but you can like double click into those things. Ooh, let's go up. Let's see the projections.
+
+The projections. So the key assumption is the card price is $7. The CAC is $15 a customer.
+
+Which, by the way, isn't crazy if you're, you know, using, you know, I think right now in terms of paid ads, like, there's probably a bunch of formats where you can use these 3D, you know, characters. And people, like, you'll get your CAC down. It's just, like, very engaging.
+
+Add-on sales. Okay, so 200,000 users purchased an average of five cards annually, 7 million. Add-on sales, 10 million total revenue.
+
+So, you know, it gives you, oh, and exit potential. It says that you can even sell. That's so funny.
+
+Greg, you should, you should just give, you should basically just create, like, an Avengers of, like, SIP, put together your Avengers and just, like, document the journey of you just creating something like this. It was so funny. It's really, yeah.
+
+The other thing I do sometimes is I'll say, this looks great. Put this into a PRD that I can show to my, that I can show to my team. PRD?
+
+Yeah. PRD stands for product requirement document. So this is something that, this is a document that you can show to an engineering team, a product team, an agency if you want to outsource the work.
+
+Okay. Yeah. Just mad, right?
+
+And then it just, it gives it to you, man. Man. You're teaching me, Greg.
+
+I love this type of stuff, man. I'm not always using ChatGPT, like, for such technical purposes. But it's really fun to see these other things.
+
+So sick. So you would, so you would just, like, take this to your team. I'd like, yeah, great, man.
+
+Hey, I've got an idea for something. I wanted to get your feedback on it. And I actually tweeted about this yesterday.
+
+But sometimes what we'll do is I'll put, you know, we'll have a product meeting. And in the meeting, we'll literally use Replit or Bolt or Lovable to actually, you know, build what the prototype looks like. And then be like, what do we think about this by the end of the meeting?
+
+Like, in the meeting. Exactly. That's, that's the best way of doing it.
+
+It's like, because you want to feel it. So even the point you're making, man, like, I definitely align with that. Even as a designer, like, the first thing I do when I start to play with things with ChatGPT and do these things manually, like, even the process I've just shown you, like, I'll do that manually.
+
+But then my brain goes into a state of, like, let me just create some sort of interface that we can interact with. Absolutely. Yeah.
+
+I actually did, for this one, we did create, this was, like, maybe a year ago when I first started playing with it. This is a brand we put together, Teeny Tales. And so I designed this so you could say, like, you know, a child's name, date of birth, upload the image, hit continue.
+
+So it's just, like, some UI, you know, where will they go today? What happens? You know, what's the theme of the story?
+
+And you can, like, or you could press that magic tale and it will, like, imagine something for you. And so this is, like, what I mean by, like, with Moonpig. It should land you straight into an experience and let you just go through it.
+
+And I think a lot of people, I think a lot of landing pages sometimes assume that a person is kind of, like, thick and, like, needs a lot of explanation. But really people just want the thing and want to figure it out, right? And a lot of people learn through using it.
+
+And so I think this would be pretty cool. You hit generate tale and they'll do, like, this building your tale type of, you know, interface. And then you can kind of, like, sign up afterwards.
+
+But, yeah, it would, like, create the story. You could change the cover. It would, like, go to Leonardo AI, generate a new cover, then, like, throw a new one up for you.
+
+And you could, like, so it kind of engages the audience and the kids as well at the same time. And then you could, like, read your tale. And that sign up at this stage.
+
+And then we had, like, this editor, which is, again, like, super fun. Actually, let me do it again. Is this live?
+
+Yeah, I mean, you could go to the URL, actually. But it's not like you can't, it doesn't work because I haven't connected up to anything. I just built, like, the front end.
+
+But, yeah, so this is basically like a... Thank you, bro. So, yeah, I was just experimenting with stuff like this, man, just to see what it felt like.
+
+And then to get feedback from my kids and stuff as well. So, yeah, so literally you could, you know, go between slides, you know, change the cover, edit the text. You know, if you wanted to, change the title up here.
+
+And then, you know, you could edit moments and then, you know, redo the tale. And, you know, maybe play a narration or something from here. And so the idea is, like, you know, could we basically connect all these tools using that kind of sequential prompting process, which is really like, if you hit update tale in the background, it's literally just doing the whole flow.
+
+ChatGPT, Leonardo, et cetera, et cetera. And then, like, feeding you the content through its API. But you can just design an experience, which to the point I was making of the gentleman that was on your pod, that taste or that kind of presentation has such a big impact on the value people put on a product.
+
+And I think that's what's exciting. And that's at least a space that I really enjoy being in is, like, how can we add, you know, a user experience to these AI models? Because the AI models themselves are so exciting to work with.
+
+But as soon as you can create, like, a brand, an interface around that, that's where you can knock off, like, your moon pigs and stuff of the world. Because, you know, you can be quicker, faster, think it through from scratch, you know. And, yeah, it's really just AI work for the background.
+
+Yeah, it gets me thinking that, so if you, what do you call it, a sequential prompt? Is that what you call that? Like, if you come up with a great sequential prompt and you've stitched together some of these workflows, you can build teeny tales, but you can also build teeny tales for, you know, you mentioned memes, teeny tales for memes, teeny tales for, you know, B2B social content or B2C social content.
+
+Like, these are all, like, kind of niche ideas around that whole workflow that you can go and build that all have several million dollar a year opportunities to build around. And so that's also really exciting right now. And then it's like, well, someone might be listening to this and be like, yeah, but, like, can't, you know, Leonardo just do this or ChatGPT just do this?
+
+And it's like, yeah, I mean, they could. And, you know, Leonardo is going to make it easier and easier for people to find prompts because they want people to ultimately get as much value from the product as possible. But if you're, like, I saw what you did with teeny tales at the front end.
+
+Like, it's very specific to the use case that you're going after. Exactly, exactly. And, yeah, that's it.
+
+That's exactly it, man. And if you really think about ChatGPT in general as a product, it's just a UI layer on top of OpenAI's LLM model, right? It's just the fact that obviously they have that moat and, you know, it's their product, you know, et cetera.
+
+But, like, really, that's all of these things are just built UI layers on top of an LLM model. And so I think that's where brand comes into it. Like we said earlier, marketing, the storytelling is very interesting.
+
+Like, and I think there's, you know, and especially where you can find these interesting opportunities, like all the business models you just mentioned are almost things that probably haven't even existed before. You know, like, could you find a way of, I find the fact that, you know, I guess I have kind of a very heavy parent mindset right now because I'm literally watching three kids grow up, you know, but they're learning about new things in their school that they're not necessarily engaged in, like especially historical things, you know, just things that they have to learn because in the curriculum, but then I read, I go through those things with them with AI. So, like, if they're learning about, you know, the Romans, for example, we'll create images about it and then we'll actually create stories about it.
+
+So even you could, there's a whole kind of B to E model, let's call it, where it's like business to education, you know, where you're literally selling it to school, B to C, S to schools, where you could create like whole educational systems based on the curriculum. So if you just search, for example, British curriculum, you know, syllabus, like you could, you can actually figure out exactly, you know, exactly what kids are learning in schools by topic, right? What they legally have to learn, let's say in like the UK.
+
+And so you literally know like the exact topics that they're going for, you know, what actual topics they're learning, what, I can't remember exactly where it is, but there's a way to basically figure out exactly the things they're learning and you could create a whole kind of system based on these topics and just give it to them and say, look, here's an engaging way for kids to interact with this. And they could basically learn these type of topics, you know, using AI. So I think it's super, super cool, man.
+
+All these type of like individual models that can come off like this avatar thing. Do you have another business idea you want to share or something else you want to share? Yeah, man.
+
+I'm just going to touch on two more. So one, they're kind of just building onto exactly what we spoke about. So, you know, I love this man because we've actually touched on many more business ideas that even I thought of, you know, so essentially it's getting my brain ticking.
+
+I'm in a whole different planet somewhere else thinking about MoonPig. But let me go into Kling AI. I'll re-warn you.
+
+I love it when I can share tools and hopefully get people to be excited about them. And so let's take this image we generated. So let's go back.
+
+Let's close this off. So we've got this image we generated. So what you can do is like we can take this one right here and just download it.
+
+And then you can go to Kling AI. So Kling AI is really good at turning images into videos. And so you can just jump in here and then throw the, oops, put a picture in on my wife.
+
+Let me refresh that. Let's upload, download. There we go.
+
+Throw that in. So by the way, what I was going to say as well is like you can add characters as well to your prompts. So if we went into our chat, the chat GPT here, and I said, let's just do this real quick.
+
+This is where the actual second business idea was going to touch on what you mentioned earlier, Greg, with how can we create these sort of greeting cards or like memes or like personalized moments. So I want to give an example of how you can interact with other people. Right.
+
+So let's say we add a second character. So what we're going to do is I'm going to take the exact same prompt again. Let's just throw this in.
+
+So I've uploaded a picture of my wife now, and I'm going to give her, I'm going to say, mum. Let's just say like 33 female. And then, so let's just get a, let's get a prompt for her.
+
+So what we can now going to do is we're going to get two prompts. So we've got two different characters, right? So we've got our child and we've got the parent, for example.
+
+Now it will generate us a prompt. And what you can do is you can then speak to chat GPT and say, generate me another image prompt with similar style. So we're going to go to the parent, for example, where Cairo is waving goodbye to his, to mum on the first day of school.
+
+Ensure you maintain the same character consistency. Let's see. Cool.
+
+So let's see. So this could be an example for, again, where these prompts are, what you can give your, you know, API in the backend. And so you could upload a picture of yourself, which, oh, look at it, look at it.
+
+So Sidney is trying to create the image. Don't create the image for me. Give me a prompt I can use in Leonardo AI.
+
+First of all, how terrible is that? That's so bad. That's just, that is the equivalent of Will Smith eating spaghetti.
+
+Yeah, it is. You know, and let's just go up, scroll up and how they suppose school also is just the icing on the cake. So crazy, man.
+
+Obviously it's not a, yeah, they create like this amazing story video. But I'm happy you did that. You know why?
+
+Because some people are going to see stuff, like see some of these, you know, Pixar photos and be like, oh, I can never do that. Like they do one prompt on chat GPT. They get this.
+
+They're like, I can't do that. And they don't realize that their prompt is wrong and that they're using the wrong product. They should be using Leonardo, not, not a chat GPT 4.0.
+
+Exactly. Perfectly said, man. There you go.
+
+So now you have like Kaira saying goodbye to his mom, for instance. Right. And so like this now creates a moment where let's say me as a father, I want to, you know, print this out.
+
+I want to get a card made with it to, you know, wish him good luck. You know, you can probably even like, you know, let's just put here, add text. Let's, let's actually change it.
+
+So, so let's actually really go moon pig. Let's moon pig this thing out. Now add some text to say, good luck.
+
+Let's see what it does. Cause it actually comes onto like another business idea I was going to come to in a minute. So it's pretty cool.
+
+Let's see how this works. So while this is actually, let's say I run and run this and then I'll show you cling AI quickly as well. Cool.
+
+Cheerful handwritten text overlay in bold friendly font that says good luck on your first day. Play subtly above the characters, but not obstructing the scene. Interesting.
+
+Okay. So let's see what it does here. So I'm actually take one of these images then cause this might actually be more fun.
+
+So let's like download this image. Um, and then we're going to animate that. Um, yeah, these, these guys are very good at text.
+
+It's not really cool. This one's a bit weird, but this one's great. Um, that's awesome.
+
+Yeah, man. Super cool. So like you can take that.
+
+So now what you want to do is you want to come into cling AI and then you can upload, uh, an image. So I've got, um, this image. Um, when I open that in there now with cling again, they have an API, so you can do this all programmatically.
+
+Um, I run it through code basically and just display it on like a front end. You can also add some additional prompts in cling. So you can, you can mention what you, what you want to do in the scene.
+
+So like in some of Greg's scenes, I would actually tell it that I wanted him to like, you know, um, sip the cup. So the scene where you're sipping the cup, I think it's over here. I told it to do that cause it was in your hand at start and I was like, no, I need him to sip it.
+
+And so I just put that in the prompt area here. Let me just refresh this quick. Um, so drop that image in and then, um, While that's adding, do you, do you do things like the motion brush?
+
+Do you, you know, how, how do you think about? No, I don't really, man. I kind of just leave that.
+
+They're going to introduce camera movements apparently, which, which I have, which is not in there yet. Um, but no, I don't normally, I don't normally add any additional prompts. I, I really like in a weird way, like trust the AI, you know, honestly, where it comes up with.
+
+Um, and then I can add additional prompts if I want to after. So cling is, has some sort of error right now. So we can't get it to work.
+
+So it's fine. But basically cling AI, if you guys jump on it, you can basically upload any one of these photos. So like I said, this one we get from Leonardo.
+
+Um, and then the next part of sequence is putting it to click again, getting a video generated. So literally clips like this are from like a photo that then turn into a moving video. So it's so cool.
+
+Like this, this, this was literally an image that we generated. So you can see, Oh, here's some of my videos. So you can see that this is basically an image we generated here.
+
+This is a static image in Leonardo. We put this into cling and then it generated, um, this video here that I just showed you guys. And then we're going to, you know, put it in the words.
+
+Now what's even more cool is actually in cling, they have a, they have a dub feature. So you can actually put words in and they dubs the mouth to say the words. So this guy is talking this one or this one.
+
+Um, I guess not on these ones. So in one, um, in one of the videos, he's talking, so I think this is the dub version here. Um, but basically you can get him to, yeah, it's being super slow, but you can use a lip sync function.
+
+You can also get him to say words. So like, if you want to really meme-ify this, the character that you generated in Leonardo could actually be saying something in the scene inside cling. Um, and so you can see it with cling the five second videos, which take about like four minutes to generate right now.
+
+So that's where like, it's not really scalable. I think as a video offering as a product right now, but the way I thought it could be interesting is if you literally had like a manual process where you hired people, you know, whether it's in the Philippines or whatever, like assistance that could just basically sit there on like, you know, two or $3,000 a month and just be dealing with like the orders that you've got coming in. If people did want to pay for like this premium offering or video clips or video scenes or these gifs that you want to generate, I think gifs are actually a good idea because it could just be like five or six video clips that you stitch together.
+
+Um, but at the moment this, this process is like, you know, quite lengthy, you know, uh, I suppose the stage of AI is at, but I think very quickly you'll become a lot faster. Um, but it's mad cause you can do things with like, I wanted to show you all this, man. It's so annoying.
+
+Cause you add, we created something with Sonic, you know, like Sonic is running, you know, there's so many cool things you can do. Um, but yeah, Kling AI is amazing. So I'd say if it is working for you guys, just like download one of your images from Leonardo, throw into Kling and you generate a video and, and you'll be, you'll blow your mind.
+
+Um, I told Greg as well, there's, there's a demo in here in my community. I've done like a whole Kling demo so you can kind of watch it. And, um, we might have the, uh, uh, up here.
+
+Uh, yes, you can see like, this is like Sonic running, you know, so you can like watch the whole demo there. I'm like play around with it, but it's very cool. Um, yeah, so that's Kling.
+
+Should I move on to the, to the next thing? Let's do it. Yeah.
+
+Cool. Um, so the other idea, so we'll just touch on this last one. I think it still speaks to the, uh, idea of avatars, but I thought about, um, personalized stickers as using avatars.
+
+Right. And so again, dad brain, uh, but I would, uh, when I went to my, um, my daughter's classroom, I saw that her teacher had, um, these kind of just, just a couple of like customized, you know, um, signs in the class where she had her face on it. And it was like, you know, pointing towards something like something on the wall.
+
+And I looked at that and I was like, no, what should be super interesting is like if teachers had like, instead of giving kids like generic, well done stickers, they had like images, AI generated images of the teacher. And then they're saying, well done, good work or whatever. And they have just sheets of these just like in their classroom, or they can have, um, these kinds of, you know, stickers that they are putting up in different parts of their classroom.
+
+And then maybe even, so that's where the school kind of, or educational institution becomes the customer in a sense, but also they could have, you know, licensed user accounts on your platform for, um, you know, children to have their own stickers. So you could get your own stickers. So if you're working really hard, you might really want your own sticker.
+
+It might be an incentive for kids to, you know, work harder because they want that sticker with their face on it. They want to take that home. Um, or with the teacher, like we just showed with the image generation we've done with two people here, you could do it with like your teacher giving you a high five.
+
+Um, and it's really cool because you can just do this by just adjusting the prompt a little bit. So, yeah, so you can basically, you can just tell chat GPT to create you like a kiss cut sticker artwork. Cause that's like the style where like, you can kind of be cut out.
+
+It would then give you the artwork itself, the prompt for the artwork, uh, which you can throw into Leonardo. So I've thrown in here. Um, and I was taking him as a character.
+
+Um, and like I've said, I said to you over here, you know, he's won a soccer game, for example. So this could become a sticker basically. So what I'm actually going to do here is I'm going to go, um, which just in terms of Leonardo, what you want to do is you want to turn prompt enhance off.
+
+So it doesn't modify the prompt. And then for stickers, we want to make it one by one. Um, and then let's go again.
+
+And I want to make sure it adds a congratulations text because it added it here, but I want it to be in that kind of like a stickery style. Um, but where I think this is super interesting is you can basically create like a business model where you only need chat GPT and let's say Leonardo AI. Um, but what I'm going to do is, you know, I'm going to do this.
+
+Um, well, terrible. Uh, but you can then plug it into like a drop shipping tool or like a third party printing API like Printful to actually have this whole order process going on and just be fulfilled automatically. So you're kind of creating like physical, like exciting products using AI, um, without even needing to do anything at all.
+
+Like it's just one big automation that's running. So, okay, this is a bit rubbish. So what I would do here is just to get my prompt, right?
+
+I'd copy this image, um, give it to chat GPT and say, um, everything is perfect except the positioning of the, the positioning and prominence of the text. Um, it should be, is it kiss cut? Am I saying it wrong?
+
+Uh, stickers. Yeah. So it's kiss cut stickers.
+
+So everything's probably set the, uh, potential for the text. It should be, let's just do like an example, uh, kiss cut sticker example. So this is really cool.
+
+Chat GPT is also, you could just throw examples in and get it to hopefully, you know, help you, uh, get the prompt, right? So we give an example of like this, but I don't want it to be overly, let's see. Let's just give it, uh, oops.
+
+Anybody can put it. It should be, um, a kiss cut. Kiss cut sticker.
+
+I've attached examples of kiss cut stickers too. All right. So let's see if it gives us a new prompt.
+
+Um, and then, uh, we can throw it back into Leonardo. So this is the process I would go through. Just like, this is why it's important to do this manually.
+
+Cause once you've done this, you then can have a solid prompt that you can then plug into like, you know, your Zapier workflow. So if you're doing Zapier or like an AI, uh, an API that you're connecting up. Um, and you would literally just take that, put it in here.
+
+Let's hopefully see if this works. And then what I would do, by the way, Greg is like, I thought a good way of, let's say even marketing this or getting customers. Let's say you were targeting schools is if you go to any school website, they normally have like the staff on like the page.
+
+So let's say you pick like, um, I don't know, New York elementary schools. I'm going to blow someone up. Like actually fired.
+
+Uh, what's that? I don't know. Any schools in the States?
+
+Any, any like famous schools? Like let's say Manhattan. I know Manhattan film school.
+
+Is it Manhattan film school? New York film school. All right.
+
+Uh, let's say stuff, but basically that you'd have like, you know, like there's like a faculty directory. For example, I would find out the principal and I'll take their image and they would like, I would do this chat GPT process using their specific image. Um, and then I would like get like sticker sheets printed, um, and then basically just mail them.
+
+So I'd like, I would do, or, or somehow like get it across them, but I would do process like this, like really guerrilla hacking type methods where like it's interesting because it would like throw them off, but also it's a way of like kind of getting their attention as well. So totally by the way that would go viral within that school, right? Like who doesn't want a sticker that looks like that?
+
+It'll at least put, it puts a smile on everyone's face. I mean, I mean, even when you sent me that Greg video, I was like smiling from ear to ear. Um, cause I thought it was so, so nice.
+
+Um, so I think that, I mean, kind of what you were saying is using these tools to create digital assets, finding what API is to create physical assets. And then even doing some old school marketing techniques, like literally sending, uh, sending the product to people. If you can get, I mean, stickers doesn't cost, you know, doesn't cost a lot.
+
+Um, so it's definitely a huge opportunity. Totally. And so exactly, man, exactly that.
+
+I think, um, and, and, you know, there's so many tools that you can stitch together. Like these are just some examples. Um, so the only thing I've done right now is I've just gone back in and I'm actually much happier with this now.
+
+Uh, but to get a kiss cut effect, we might need to have like a plain background. So the only reason I want to show you guys, this is because I actually want you to have like a full workflow. So there's one other tool that we're just going to add in, um, to make sure that this is like something that you guys can actually practically do.
+
+Because this is, if you literally take this prompt here and then run it into chat.gbt to create characters and then run it into Leonardo. There we go. So now we've got like, right.
+
+Crazy. Matt. So this is like perfect.
+
+It's got congratulations. Um, it's literally the image from here that we uploaded with the character we wanted. Um, and so what, now what you do is you'd, you'd use a tool like, uh, remove, uh, BG.
+
+So remove BG is a tool where it just, uh, can remove the background for you. So like, I would take this, um, and download it and then just drop it. And then just drop it into, um, remove BG.
+
+Um, and remove BG have, uh, an API. So you can, again, uh, just programmatically plug this in. So it generates, uh, backgrounds, uh, it removes background automatically.
+
+So you could have the image from Leonardo, um, automatically sent to REMBG, but then cut it out. And now you've got like a PNG sticker. Right.
+
+And so now you have an actual image that you can use, um, for printing stickers, right? That's literally a sticker right there. Um, and you can do like, you know, hundreds of these, you know, for so many different, you know, types of, uh, you know, congratulations or good lucks or whatever you want.
+
+So I would then go to like Printful, for example, they have an API. So Printful API. And by the way, they have tons of products on Printful.
+
+So, um, they've got, you know, stickers, but they've also got clothing, t-shirts. So you could create like a whole business on top of like a Printful type thing. Um, and cut their API up.
+
+So you could use this to literally place orders. Um, you create a new order for a product. Um, I kept it up to Shopify Printful works very well with Shopify and just have this, this automated workflow going on where someone can come onto your site, upload an image, create stickers and do all sorts.
+
+You know, maybe even just like print, you know, other products as well. But that's why I think is, you know, very, very interesting right now. And I think there's loads because of this, like AI image type, you know, era, I think there's like loads of guerrilla marketing type techniques you could use.
+
+Um, so yeah, that's how I would do it, man. And just spawn off like a sticker printing business, maybe for schools or in general. I mean, you might even be able to grab people's display pictures on Instagram and X and just like DM them, be like, Hey, you know, what do you think of this?
+
+And, you know, that's maybe a way to grow, grow top of the funnel in a really systematic way. Um, I love this idea. I think it's really smart.
+
+I think it, um, doesn't reinvent the wheel. It creates a product that people want that make them smile. Um, and, uh, I think, uh, I think the world is looking for fun tools and fun things like this, um, more and more.
+
+So thank you for sharing it. Um, and always great to have you. Is before we end though, does the cling AI, um, like we can, we can put what we had, but I'm curious if it, if it, uh, just to close the loop.
+
+Yeah, it would be great if it does it. Yes. It looks like it's working.
+
+Okay, great. So it's upload the image. We'll hit generate.
+
+And then, ah, don't do that. Let's try one more time. One more time.
+
+One more time. It seems like it's got some sort of, yeah, is there a network around there? Is there a network around there?
+
+It's like, cause the internet's working on, on our side, isn't it? Yeah. Uh, no, it's being, it's being wild, but yeah, no, it's being crazy.
+
+Okay. No worries. It's still good.
+
+It's still good. We got, we got, you know, people, people can connect the dots. Um, Omar, this always a pleasure talking tactics and ideas with you.
+
+And I appreciate you sharing how the sausage is made. Um, and, uh, we'll include the link to your school community and, uh, show notes for anyone who wants to go and check that out. Thank you.
+
+And, uh, and it's just great chatting with you. Bro, you too, man. No, real pleasure.
+
+Real pleasure. And I really had a lot of fun, man. Hope everyone enjoys building and creating stuff themselves as well.
+
+And, you know, I definitely think you should jump on the moon pig thing. I think you're onto a winner there. I'll let, I'll let the listeners grab, grab it, you know?
+
+Um, but I can't wait to see what people build and, and please let us know in the comment section. I actually read every single comment. Um, so let us know if you enjoyed this, um, or just let us know your thoughts in general.
+
+So we'll be in there later. Omar. Take care.
+
+Thank you. Bye.

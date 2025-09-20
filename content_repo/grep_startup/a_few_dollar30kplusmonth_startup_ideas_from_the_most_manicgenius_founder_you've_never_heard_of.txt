@@ -1,0 +1,747 @@
+The best companies are good memo writer. Imagine every Friday and you called it like recap, like all hands recap. And like you just interviewed the heads of growth at that org.
+
+And like you could do this in like Riverside or Zoom. And then you take that, create a transcript, have AI list the key insights, and then put that in public within the Slack channel. Like as a CEO, like hell yeah, I would pay for that.
+
+I wanna know what everybody's doing and what's happening, right? If you're telling me that I can sit down on like my Saturday morning with my coffee and I can listen to the recap from every order, I think you could easily sell that for 5K plus a month. Cody Schneider, good to see you.
+
+What's up, man? How you doing? I feel like everyone has a business crush and you've been my business crush lately.
+
+Dude, I don't know how. I'm like a nobody that's just on the come up, so. It's because your ideas are too good.
+
+You've got ideas. You've got ideas. I appreciate it.
+
+I'm just out here, you know, grabbing at strings, hoping one pulls all the way. So anyway. No, for real.
+
+Like I think you've been putting out some really good ideas out there on the internet. And I was like, this guy, this guy's one of us. He's an idea junkie.
+
+And so I don't want to talk about, I don't want to talk about the weather. I don't want to talk about politics. I don't want to talk about open AI this and Sam Altman that.
+
+I don't care. I just want to talk. I just want to extract as many multimillion dollar ideas from you during this session as possible.
+
+Let's do it. Where do you want to start? I know I shared a sheet.
+
+We can go anywhere, but. You shared a sheet. Usually I ask for people to bring three startup ideas.
+
+No, of course you're not going to give me three startup ideas. You gave me like 25, which were all amazing. Someone's going to listen to this episode and do like a bunch of your ideas and make many millions of dollars.
+
+So I hope so, man. I wish I had more time. I want to do every one of these.
+
+And everyone or most of them on that list, we've done like betas of or just like alpha versions and like tested to see if it would work and validated them. And so it's just like, you know, they're sitting in the chamber. It's like the next thing I want to do.
+
+But anyway, that's the that's the dream with all of it. So where do you want to start? I want to start.
+
+I'm obsessed with cricket. I called it cry cut for forever. I think this will be a good like point to kind of because there's three of them.
+
+They're all related to this. You know, this has been talked about in public some, but I don't think people understand how big this market is and how like ravenous they are for this type of stuff. So maybe we go from there and we can kind of rattle through those three first.
+
+Let's rock. Cool. All right.
+
+So the first idea is I want to start with the selling a like subscription service to unlimited designs for cricket. So cricket for people that don't know, it's like a tabletop CNC machine that crafters use. It's like a huge market share.
+
+It's one of these companies that's like in the billions that nobody knows about. So basically how they make money is it's kind of like a printer company, right? Where it's like they sell this like high ticket item and then they basically sell materials to these same people over and over again.
+
+So the test that I ran was I was like, you know what? I wonder if I can get AI to basically make all of these graphic designs like that are SVGs. And these are the files that they use on these machines.
+
+And so did that. And then I was like, cool. So like, let's just go find how many like different keyword phrases that are related to like cricket files or SVG files.
+
+So you go on like Etsy. There's like millions of these shops that sell these types of things. Right.
+
+And so anyway, we're this kind of evolved into I was like, okay, we could basically at scale with AI make these SVG files based off of target keywords that people are already searching. We know there's an audience that already like buys these or wants these. So now how do we get this in front of them?
+
+So if you go on Facebook, you can target people that have an interest in cricket, the website. So we ran ads to them just to a Shopify store. And I created a bundle of SVGs.
+
+It was like, I think 20 different SVGs that were all like horse related, right? Like floral horse SVG and like floral horse head SVG, like all these different, you know, variations of it. We were getting less than $1 downloads of this thing.
+
+So like, imagine you want to make a list of 10,000 customers. Like you just go and basically spend like five grand and suddenly you have an email list to zero to one this. Then what you sell to them.
+
+And there's already companies that are doing this that are huge. One of them is called Creative Fabrica. They're doing, I think around like 30 million a year.
+
+They're funded. It's ridiculous. It's some European company that again, nobody has ever heard of.
+
+But what they do is they sell an unlimited subscription to the SVGs that are on the site. So then it's a recurring revenue. So what you get them in the door with is this free package and then just put them in a drip email nurture.
+
+That's basically like one unlimited SVGs. You can create this. So why this opportunity exists now and why it's easier than it was previously is because you can make all of this different like files types, like at scale with AI.
+
+And you couldn't do that previously. So like five years ago, if you wanted to do this, you know, you'd have an offshore team of like thousands of graphic designers that would be just getting these out into existence and then putting them on your site. Now you can do that same thing with like these tools, like S, you know, background removing tools and then just like upscaling like tools.
+
+And then you basically like take that upscaled black and white file, turn it into an SVG. Like that whole thing that I just described, there's APIs that exist for every single one of those. So like, again, when we made that little bundle, that was like these 20 different things that what we did is like they generated in discord.
+
+We doubt like we had a bot download them. We then had a, a, a, a, a GitHub repo upscale them. We then hit an API to remove background.
+
+We then hit an API to turn it into an SVG. And that package was all created with no human intervention. All we did was just provide the target keywords that we already knew that people were searching for.
+
+So basically you could zero to one, this marketplace overnight, get your initial customers. And then the long-term play with this as you then go and you build like hundreds of thousands of these landing pages on your marketplace and get those to rank organically for SEO, which creates more inbound. You give them like, you know, when they sign up, they get one free bundle download or something.
+
+And then you upsell them again into that subscription. And when you think about the size of this market, like this is easily a $10 million a year company. Like you could do this tomorrow.
+
+Like I want to do this so bad. But again, it's just like one of these things that we just don't have time for. So anyways, happy to dive deeper on any of that.
+
+But yeah. So I don't know if I live under a rock, but I had never heard of cricket. I was on MFM at one point, I think it was like two years ago.
+
+And I was just laughing to myself when they mentioned it. So I've been selling in the print-on-demand space since like 2010, right? So really early in that.
+
+Made a bunch of money in it. Lost even more money in it because I had no idea what I was doing early on and like how to build brand and actually like do it well. But yeah.
+
+So that's like kind of why I know this exists. And this probably was like during like the late days of the pandemic that they like brought this up on one of the shows. And again, we know that like this space exists because there's so many people.
+
+Like when you look at Etsy, majority of their sellers are these people that own these machines, right? And so what they're selling on Etsy and like driving all their revenue for Etsy is literally just like custom, you know, Tumblr mugs. But they're building this with like basically like these SVG files and then whatever materials that they're buying and actually using on the printer to like, you know, make these die cuts or, you know, whatever it is that they do that they add to these customized products.
+
+So. And if you were going to build an MVP of this, how much money do you think it would require? I think you could get this off the ground for like 10 grand, like 100%, like 10 grand and the 5 grand and ad spend.
+
+Like you just use like Shopify already has like a subscription feature. And I would just use like off the shelf tools long term. It would like you would hit limitations with the amount of collections and like landing pages you could build on shop.
+
+I say that, but like there's also this like thing you can do with profit. Shopify just really, we could go into this is another company that's on the list. So we can come back to this, but Shopify just released this ability to like, you basically make these sub folders.
+
+And then we figured out how to use Cloudflare to like bulk create collection pages. So traditionally Shopify has an API rate limit. That's like not great if you have like a ton of SKUs.
+
+So say you have 100,000 SKUs and you want to make 10 million landing pages for long tail keywords related to the SKUs on your platform. You just like couldn't do this, right? And so we basically figured out how to do this with like the technology, like this Cloudflare and what Shopify offers now technology.
+
+But the kicker was that we could have AI write SEO content based off of those keyword phrases. So again, when you're saying like SVG horse bundle, it could write all of the content and that would go on that page. So again, when you look at like these huge marketplaces, like house.com as an example, like how do they actually make money?
+
+It's because they have millions of landing pages that all rank for all of these keyword phrases. And they're basically just brokering traffic. Like that's actually what the business is when you look at a marketplace.
+
+Like how marketplaces actually make money is they broker traffic for transactions. And then they make even more money off the ads that they're selling on the platform. Like if you look at the like P&L of an Amazon, as an example, like where they actually make revenue is not the marketplace fees.
+
+It's on people bidding on these specific items. And the reason for that is like there's only some, there's a floor on how low you can go on product costs, right? And like the margin you can squeeze out of that.
+
+But there's no ceiling on ad spend that people can go, right? So it's like it can go up infinitely. And you see this already in Google.
+
+But we're just like, for example, if you look at the lawyer space, some CPCs, depending, like if you look at like DUI lawyer, Denver, right? Like the CPC on it's like $110, right? Crazy.
+
+Absolutely crazy. But when you look at like the value, like if they get, if they close one of those, that's like a 15K deal for that lawyer. So of course it's like that, right?
+
+It basically can go up infinitely as high as the market can sustain it. But you can't decrease the cost. Like the cost has a floor.
+
+So anyways, to get back to this idea of like how cheaply you could do it, I think that you could probably get this off the ground for like 10 grand. And then it's just like you'd have to have like a little bit of technical knowledge to kind of like piece together all this. But again, our MVP was like a human put in like, you know, something into a Discord channel, downloaded and then just hit these public like API endpoints.
+
+Like it's not, I mean, a Python script could do that whole thing, right? So your marketplace point, I just want to talk about that for a second because I think it's really, really smart. So the best marketplaces to me are really niche with high intent.
+
+So yes, Amazon has a lot of intent, but it's not, which is amazing. Like you're in the buying mood. You want to, you want to make a purchase and a lot of people buy on Amazon.
+
+But at the end of the day, like it's pretty horizontal. Whereas this, you know, your idea here, it's like a pretty specific type of person. And just like scanning YouTube right now, it seems like a lot of women, moms.
+
+100%. Yeah. So moms seem to be really into it.
+
+I was chatting with a buddy today who's building a marketplace for elder care. Like, you know, your parents are getting older. They need someone to come in house.
+
+It's a great idea. Yeah. Assisted living like in your house.
+
+So he's building a marketplace around that. Super smart because not only are they going to make money on the transaction of just like bringing you to connect you with this elder care person. But now all of a sudden you can sell them like 500 other things because you know where they are in their life cycle.
+
+Yes, exactly. Also, they're like typically historically like a high net worth individual because they've accumulated that wealth over their like whole lifespan. Right.
+
+I want to kind of pull out a piece of this as well on the marketplace side. Like I think that right now, like every marketplace could be disrupted like with AI tools. Right.
+
+So like you have these huge players like Amazon. I think you could carve out these subsets like forever, all these different niches that exist within these large marketplaces. And like historically, like you'd have an engineering team of a thousand people.
+
+They would be working on this massive marketplace. And it's like, yo, we just, again, like in our test that we did. So my friend has this shop.
+
+She has like a 10,000 SKUs. And so we're like, all right, that Shopify thing I was talking about. Let's just like throw up a hundred thousand landing pages and see what happens.
+
+And we'll do some like auto indexing on the back, just like submitting to Google over and over again. So like overnight increased her organic traffic by 10% and increase organic impressions by like about 20%. So, I mean, again, super small tests.
+
+It was only like over a six month period validated the idea, but I'm just thinking about that for like any subs, like, like custom koozies or like, you know, any of these kind of weird niche spaces, you could basically build out these sites now for so like so cheap of costs. Like this, I think that you, there, there's this huge opportunity for founders to just go and do these things if they want to create like a really powerful cash flowing business. And like, this is actually where I see the opportunity in programmatic SEO.
+
+Like everybody's like, you know, I'm going to write a hundred thousand blog posts with AI from like, it's general knowledge. Like, all right, that's kind of cool. But like, what if I do like 10 million product landing pages on a website, right?
+
+And like all it's selling is print on demand products. You're at that scale. Like you're talking about as many like pages as a, as a, as an Etsy and then building like, okay, how do I build links to this to actually get this to rank?
+
+Like it's like, just reach out to like mommy bloggers and be like, do you want a free product off this? Like pick one of these, I'll send it to you at like, do a post on your site. And like, that just costs you $8 to build a link that has a DA of 50.
+
+Like that's the, that's the like economics of the business here from like a marketing standpoint. So. I was going to say mic drop, but I wouldn't want you to drop your mic.
+
+Like you are, but yeah, so, so that's, that's the ideal one with the, uh, with cricket. The next idea, um, is selling the materials to those people. So again, how cricket is a billion dollar company is there actually, they're really, I would look at them as like, just what printer ink is to HP.
+
+That's what like, you know, all of this materials are to, to these cricket sellers. So when I'm talking about materials, like think of like tinsel foil and like, you know, it's almost just like these pieces of paper that they lay out on this thing and it cuts it out of it. Right.
+
+Um, but there's all of these different materials that you could do. So you could use the same idea, but instead of having it be a subscription marketplace, you do that same top of funnel. So it's like offer some SVG bundle to them.
+
+That's basically like that. You can get those downloads. Again, I, all I did was I ran Facebook ads with a conversion event for like to shop, to a Shopify store.
+
+Right. I'm using the base theme, like the base theme that Shopify provides for this test. And we were getting like less than dollar emails, right?
+
+Like the hustle was built off of this exact strategy. Like they are sold the HubSpot for 40 million and like morning brew was built off of this exact strategy. All I'm talking about is using it in this different space in this e-com space, but you could do, so you get those emails and then you go and you sell them.
+
+These materials, all this could be sourced from like, you know, China, you just go and fucking look on like Alibaba, et cetera. Find all of these, find the most high intent or the most repeat purchasers. You could go use like a jungle scout or like any of these tools that help you do like product analytics on these marketplaces.
+
+Find the most popular materials and then just like have a way cheaper cost. It's just a margins game at that point. The challenge with that is like, it's inventory management.
+
+It's a physical thing. But like, again, if there, if it's a repeat purchase that this person is making, your cost to acquire them is less than a dollar. And you know, the lifetime of that customer is probably going to be in the, you know, the thousands number.
+
+Because if you look at some of the prices on these, it's like $50 for a roll of this, you know, it's, it's basically like wrapping paper. Like you're selling them wrapping paper and like, that is what you're shipping to them. Right.
+
+So like when you think about the value of that customer over time, okay. So to take a step back, why, why didn't native deodorant, like why, how did DTC, DTC companies like actually make money? It's not when it's a transactional purchase.
+
+It's when we know that there's going to be repeat purchases that occur. It's a consumable product, right? So by selling this like tinsel or whatever it is that you're selling to these cricket enthusiasts, like you're selling a consumable product.
+
+So, you know, they're going to come back for that. And then it's just like run deals on a weekly basis. Cause a lot of these people that I just like know personally, like my girlfriend's friends, they're like really into crafting and they have these things.
+
+They are like, you know, they'll get an email where it's like 50% off flash deal on, you know, this like cow, you know, design, whatever tinsel. And for them, like they'll just buy it. Cause it's kind of an impulse purchase at like 25 bucks.
+
+Right. And they get a bundle or whatever it ends up being. They may never even touch it.
+
+They've got a closet full of it that they don't use, but they almost sit on top of it. Like just how, like how most like crafting people like do they have, like, it's like quilting. It's the same idea.
+
+I have all these different patterns. I might like, I'll come back to them and use them in the future, but I'm always kind of like scouting for the next, you know, material that I can, I can basically get to add to my library that I can go back to for that crafting project. So, yeah.
+
+And it feels like you're hitting on like a macro trend, which is just like, people don't want digital stuff anymore. Like they want to do things like quilting. They want to do things like crafting.
+
+They want to do like, they want to touch feel. And it's like a back to basics kind of. So there's just, it feels like there's just like a bunch of old things like that people used to do in the twenties, thirties, forties, fifties, that now you can be like, oh wait, let's go build something in that space.
+
+A hundred percent. I mean, I, we, we started, we call it low power hour. We started doing this, like we try to do daily.
+
+It doesn't happen, but basically it's like no screens is the idea. So it's like, we listened to vinyl and like, maybe like got a typewriter, maybe I'll write on that. And like, we just kind of hang out like my girlfriend and I and our dog and just like, you know, kick it.
+
+Right. And I think that that is like, you know, again, part of this macro trend that's happening. Like people are trying to do more of this and be, have this like dedicated time for like slowness.
+
+Right. Um, so yeah, I, I think that there's probably like a ton of businesses in that space you could build as well, like selling those types of products. Um, one I saw recently that was super cool was, uh, it was basically like an led kind of like a larger screen of whatever the album cover was.
+
+So it syncs up to your Spotify and it like has that like there in your room. So like, you know, when you go to a vinyl listening bar and they like put up that, uh, like the vinyl that's playing currently, it's that same idea, but it kind of like creates this like aesthetic within your space. Um, I feel like that's like a, and kind of a product that's in this category or, you know, it's sort of like related that you could, you could spin up and like capitalize on this like larger trend.
+
+I like it. Take a sip literally. And tell me what's next.
+
+Um, I want to talk, I want to talk Chrome extensions. Cause like I am obsessed with them. Um, so to start, have you heard of email extractor go Google email extractor right now.
+
+Um, this keyword gets like 250,000 searches a month and the top of that page, you're going to see this Chrome extension. That's literally named email extractor. Yep.
+
+And it has 300,000 users and it's just has a free tier and then has a paid tier. I think the paid tier is like 10 or $15, right? So let's just do some, you know, envelope math with this.
+
+Like you got 300,000 users, say 5% turn into customers. That's kind of like an average that we'll see what we could even go down to 1%. We'll say 5% that we'll do 1% just to kind of hit it.
+
+So 1% of those, you got 30. What is that? Uh, that's 3000 users paying you $10 a month.
+
+Like that's 30 K. I think it's doing way more than that. Like just based off of, I own some of these tools.
+
+Like, I think he's probably doing around 250 to 300,000 a month with this, this thing. And like, this is one of like many of tools that you could build. And all they do is just like extract data from a larger like place basically.
+
+So like another great example for this is like a Shopify spy tool, right? So like what this does is it's for drop shippers to basically see what other like Shopify stores, their best sellers are. So how this works is Shopify has this like bestseller category that's pre-built into the store.
+
+Most shops don't turn this off because it's you. The problem with it is like you want people to be able to use that like automated category. Like that's like a very traffic to place.
+
+But what this allows for companies to do is basically like our competitors to do is you can do competitor analysis on these other companies. Again, this, this, the one that I'm referencing, I think it's a Shopify dash spy.com. Probably I would guess does about 50,000 a month in revenue.
+
+And it's, you know, a one person team. They just rank for that keyword. So the whole strategy here is like find something related to like data scraping or like some type of like extraction from a webpage that they're going on.
+
+Cause like most of the time when people think Chrome extensions, they immediately go to like honey or like any of the, you know, or grammarly these massive tools. I'm not talking about that. I'm talking about like, what is a job to be done?
+
+That's like super small, like, you know, getting data out of Redfin as an example, right? Because they don't have an API. And so buildings, a tool that's like that.
+
+And then you go and you buy like the exact match domain name for that target keyword. You go, you build like 30 links to it and you'll get it to rank page one. We've like done this already.
+
+And then that turns into your top of funnel. They sign up, you have a free tier. Then you have some type of usage where it's like bump pricing based off of usage.
+
+And you put them into an email and they're sure to get them to convert. And again, like I have a tool that's in this space that like we, I've owned for eight years. And like, all it does is extract data like from another site.
+
+And like, that is, it's paid my rent, right? So like now scale that up, build 20 of these, build 50 of these. And like with these tools, it's not like the product scope is huge.
+
+So they don't break. Like the only time it breaks is like if the website changes. And if the website changes, it's not a massive thing.
+
+Like you've already got this code built. So like if I was a developer and like an engineer, and I was trying to figure out, okay, what's my first product? And like, how can I like build this portfolio company?
+
+This is like, this is where I would spend all of my time. And again, it's like one of these things where like, we're building like small, like, you know, I think I have three or four of these now that are kind of in this space. But like the goal is like get 50 of these, 100 of these.
+
+And if they're all doing, you know, even 10 grand a month, like that's a great little like holding company that you just created. And it's not crazy technical. Like this is not a hard lift.
+
+Like he's, he's looking for like, he's basically rejectsing emails out of a website. And he's like, that is what he's making money off of with the email extractor tool. So the craziest thing about, I just, the craziest thing about the email extractor tool to me is I Googled, like on, on the actual Chrome store, you can find the address of the, of the person who built it.
+
+So I Googled the address and I, what comes up is actually a e-bike store, like electronic bike store based in Madrid. And I feel like it's just a bike shop that kind of just stumbled upon this, created a small little app. A thousand percent.
+
+Literally called it email extractor. Like the most basic of names, which by the way, worked in their advantage. Like just call it what it is.
+
+A hundred percent for small tools. Yeah. Call it what it is.
+
+Be as like specific as possible. And like what you'll find. And again, it's just like, these are, these are my favorite businesses.
+
+Cause like, there's no customer service. Like there's no like product scope increase. You have like very, it's, it's very seldom that they break.
+
+They just run in the background and like cash comes in. We get a check every month. We don't have to think about it.
+
+Like it's the, you know, it's the dream. This is what every, you know, everybody that's built card companies, like this is the dream. Like, like what's, you know, with the current thing I'm building Swell AI, like it's a platform.
+
+Like there's so much that comes with that. Like we have to, like, it's just the scope of the business. It's so more, so much more complex than, you know, this thing, like it finds emails on the page that you're currently on and you can download it as a CSV.
+
+That is its functionality. And it's probably made this guy a millionaire, this bike shop owner that's in Madrid. Exactly.
+
+I love it. And God bless your soul for doing a platform, but it's fun. It's actually fun doing what you're like.
+
+What you're doing is super fun. Super fun. Like on the fun scale.
+
+Yeah. Yeah. As a founder, it's super fun.
+
+Yeah. And like, it's also just like every day I wake up and it's a puzzle. Right.
+
+Cause it's like, we're still super early. We're like a year and a half old. And so it's like trying to figure out, okay, where does this fit in like the mind of people?
+
+Like, where's the actual opportunity? Like we started out in podcasters. Podcasters have zero money.
+
+They're the worst people to sell to. There's all these companies that are raising money right now for like podcasting apps, like all of these tools. And I just am laughing in the background.
+
+Cause there's just, I know, I know this industry. There's no way that you're going to build a billion dollar company in this space. Like full stop.
+
+Just that's not going to happen. So it's like, in particular, like Jason Calacanis has invested in like three companies that are like exact competitors of us. And we're just laughing because it's like, like how many tap bats can you get with this?
+
+It's not going to work. So where we see more of an opportunity now is like, okay, can we build the AI content marketing engine? Cause then I can have B2B teams sit on top of us.
+
+Right. And that's a way like, you know, I, we're starting to get traction with like people that do webinars. Cause they have these experts come in and they give these talks for like an hour.
+
+And they're like, cool. Like, okay, we have like five people that tend it. What do we do with this now?
+
+And it's like, all right, we, we can make this like content production workflow for you. But again, it's like these things you would never like intellectually an email extractor is in like, just as a founder, that's like not a super fun or interesting business. Like I want to spend most of my mental energy on this more like, you know, complex thing.
+
+And then build these other businesses that just are kind of like on autopilot running in the background that are way less mental energy. Like sometimes those are the best businesses, right? It's like, there's days I dream about just like starting a window washing company.
+
+I think I could crush it. I think I could like, I think I could build like a $10 million a year window washing company in like probably three years. Just like doing like only doing like local SEO.
+
+Like it's so easy right now to do local SEO. It's the most ridiculous thing. So, you know, uh, uh, uh, all of the, uh, like locksmith companies are the same companies, right?
+
+Oh, I didn't know that. If you, yeah. So if you call, if you call, like, for example, I'm in Denver, if you call any of the listings that are locksmith Denver, it's going to be routed to the same like company.
+
+It's like the same call center. And it's like, they all have different names, but all they're doing is just owning the entire front page of like local service. Right.
+
+And so then what they do is like, homie shows up at your house. He's like, oh yeah, it's in your garage. Like this is, you know, $250, right?
+
+I locked my dog in our car the other day. This is like exactly what happened. And I'm over here and I'm sitting in, I'm like, so I'm like, who do you work for?
+
+And you know, this is like who I am. I'm like, what's, how does this function? Like, what is this like?
+
+And he's like, oh yeah, I work for this guy, like this company. And I'm like, okay, well, I called this company. He's like, oh yeah, it's like, it's all the same.
+
+It's all the same company. Like this one guy owns it. And it's like all, almost all of them in the U S is like the same family.
+
+They like all know each other. It's like kind of how the Patels own Mattels. So anyways, I think you could like something that's like a dirt under the fingernails business.
+
+That's physical. The terrible ones with all this is like, it's like, it's employee management. Like my brother's in the medical space and like this, this is their biggest like bane of their existence.
+
+It's just, how do I keep employees happy? And like, how do we get new employees in? Especially now when like the average time that an employee spends at one of these locations is like 18 to 24 months.
+
+So it's, it's, you know, you're, it's, it's just super expensive to do that part of the business, even though it's like this cash printing, like, like type of company. So yeah. Quick ad break.
+
+Let me tell you about a business I invested in. It's called boring marketing.com. So a few years ago, I met this group of people that were some of the best SEO experts in the world.
+
+They were behind getting some of the biggest companies found on Google. And the secret sauce is they've got a set of technology and AI that could help you outrank your competition. So for my own businesses, I wanted that.
+
+I didn't want to have to rely on Mark Zuckerberg. I didn't want to depend on ads to drive customers to my businesses. I wanted to rank high in Google.
+
+That's why I like SEO. And that's why I use boring marketing.com. And that's why I invested in it.
+
+They're so confident in their approach that they offer a 30 day sprint with a hundred percent money back guarantee. Who does that nowadays? So check it out.
+
+Highly recommend boring marketing.com. Yeah, I think it's, I think, you know, the takeaway for me there is just like choose your poison as an entrepreneur. And like there's pros and cons to all, you know, everything, everything, everything has pros and cons.
+
+And that's why I love the holding company model is like pick and choose the stuff that you're going to, you know, you like, you know, I think about it. It's like turns entrepreneurship into an all you can eat buffet. And it's like, do you want some pizza?
+
+You want some pasta? You want, maybe you want like some oysters? I don't know, but like pick, pick.
+
+And the thing, you know, with, with buffets is you don't want to put everything on. You don't want to put oysters with pizza and, you know, steak or something. It's just too much on one plate.
+
+You got to go one at a time. You know, that's a strategy to an all you can eat buffet. A thousand percent.
+
+I mean, that's like how I'm approaching this stuff, right? Like it's different with the small things because it's like, oh, I can have an offshore team create a Chrome extension for three grand in like three weeks. Right.
+
+But if it's like, okay, we're building this platform. This is a big long-term bet. And like for that, it's like, I'm, you know, that's where the focus is.
+
+As soon as it gets to a sustainable place, then it's like, oh yeah, I can go back to the salad bar. And maybe I'm just going to do like, you know, like all croutons with like dressing. Right.
+
+And we'll call it a salad. But that like, that won't happen until you can like, you have to create stability with these other companies. And I think that's the thing that I see a lot of, and it depends on your, your goals.
+
+Right. Like my bet right now is like, I'm trying to build like a bigger company that can service B2B enterprise like clients over the longterm. Right.
+
+Like it's a 10 year bet. So that's happening there. And then there's all of these other like small things that are occurring, but there's probably a tipping point where it's like swell gets to a place where it's like, okay, cool.
+
+Like it's now at this, like, you know, self-sustaining it's growing consistently. We know that how to sell this to enterprise. We know like our go to market.
+
+And at that point, then it's like, I can kind of back out of this and let the system and process run itself and focus on that next thing. But it's, it's always, you know, this is the challenge with, I think every, every person that likes to start companies is like, you know, it's just shiny odd direct syndrome. So like this to me is almost therapy because I get to put these out there and it's like, please, for the love of God, make these companies and then just tell me that you did so I can like, you know, entrepreneur ride along and vicariously live for you.
+
+Like that's half of why I love it. Like the show pivot is so good, by the way. I, I think it's the best decision that's ever happened.
+
+Like it is the most gangster business move I've seen so far in 2024. Like I stand behind this because there's so many entrepreneurs and all they want. It's like, it's like, like, like it's junk food for, for like people that want to start businesses.
+
+You know, it was like hearing business ideas that they could go start. Like, why is that podcast? What is it?
+
+It's like side hustle basics or something. Like, why is that one of the top entrepreneurship podcasts in the entire world? It's because like, all he does is just give you ideas.
+
+Like the 200 million people in the U S that want to start a business, but like, don't. Don't they're the people that are listening to this. It's like, Oh, I could do that.
+
+Oh, I could do that. And suddenly he has this massive audience that he gets to monetize because of it. So yeah, dude.
+
+In entrepreneurship, you don't often make a decision and you're like, that was the right decision. And this, I was like, I, I made the decision right before I went to sleep. I woke up the next day, like sweating and just like ready to get out of bed.
+
+And I was like, startup ideas podcast. Yes. That was a good decision.
+
+A hundred percent. A hundred percent. And I think again, it hits such an awesome breadth of people, right?
+
+Like when, like you could be a funded company, like a founder and like, this could be your drunk food podcast. Right. It's like, you're focusing on like, you know, building an AI tool that does UX design or whatever, but you can sit down and listen to some dude talk about creating a subscription company for like, you know, cricket files, right?
+
+Like that. And, and to you, it's like, oh, like you, cause half of this, I think for people that like to build is like, it's just the puzzles. Like I am uninterested with the operations of the business, right?
+
+Like I want to figure out how, like, I want to figure out all the puzzles. I want to write the documentation. I want to get people operating on that process.
+
+And then I never want to think about it or touch it again, unless there's like an issue that comes up that I have to solve. Right. And that's like, when we were, when I was at a Rupa health, like that was like our hiring criteria.
+
+Like, are these people's like, are these people puzzle people? It's like in the, in the early state, like in the early days of the company, it was like, are they puzzle people that can document their thing? And like, are they friendly?
+
+Like if those, if those three things were like, yes, it was a lot like, we're like, okay, we'll hire them. Like, they're going to like help us solve these issues. Because when you get to scale as a company, like there's a way different type of person that that's that person.
+
+And then that's like an operations person. And I think that that is like, it's something that a lot of entrepreneurs don't think about is like, you should, you should focus on the thing that you're really good at. And it's way, way more of a commodity to be a good operations person than it is to be somebody that can like take an idea from non-existent and like bend reality so that this thing now exists.
+
+Right. So focus on that thing that you're good at and then get people behind you that are the ops piece. I mean, and there's challenges with that, right?
+
+Like how do you find people that are actually good at ops? I'm not saying that this is like some like turnkey easy thing. It's more just they're, they're way, they're way more common.
+
+Right. Like just think about how many MBAs that are out there that went, you know, worked at Deloitte, just like find one of them and tell them to just like, don't blow this up. Like, I don't really care.
+
+Like, you don't have to be creative. Like, and that's another thing for startup founders too. Sorry.
+
+I'm on a, I'm on a tear right now. So cut me off at any point, but like, I saw this happen so many times where they would like get to like 20 employees and they're like, all right, it's time to hire like a Deloitte MBA. Right.
+
+And I'm like, yo, you're about to just like screw everything up. Cause the first thing they do is they try to turn everything into a system in a process. Like as soon as they enter in.
+
+Yeah. And they're, they try to create like, here's, here's these systems that like, like approval processes and checks and balances and shit. And like, yo, I'm over here.
+
+And like day by day, like, you know, I worked on the growth team when we were at Rupa, like day by day, we would discover things. And by the end of the day, like we would have a new tactic and strategy that was out in public. Right.
+
+And so like our measurement of success and like what we like internally, like we built a newsletter internally. So like basically tell people what was happening, like the, the experiments that were happening over in marketing and growth so that we could get buy-in from the organization. Right.
+
+Cause like a lot of the times it's invisible. It's like, Oh, we just found this new way. Like, Oh, if we do it, event trigger deeper down in the funnel of like the signup flow.
+
+And we send that data back to Google rather than this initial form submission. We actually get better quality, like lead quality and a higher conversion rate on the people that our salespeople actually talk to and convinced to use the platform. But like, you know, that's, nobody would ever know that it would exist unless you like talk about it.
+
+And so this is like this other thing that I learned from when you're like working, I worked in a marketing agency. It was like this, like over-communication of like, and also like this, like you're marketing to your client, right? Like when you sell ideas to people, like you're marketing to them, like where they are now and where they're going to be in the future.
+
+Like that's actually like what an agency is doing. And you have to do that same thing when you're an employee. And when you do that, you get so much leverage, right?
+
+Like we even like sat down and like my, my friend, Kobe, who's still there, we would just like 10 minutes and just like talk, you know, here's like every, everything that kind of happened this week. And we do that and we just put it in public and like the internal Slack channel. And then, oh, it creates this clarity and visibility.
+
+There's all this movement that's happening. And then there's this like hype that builds around that as well. Like what's going on in growth, what's going on in growth, like that type of thing.
+
+Right? So I think that that same idea can be applied to any part of an organization. Like if you're in CX or you're in a, you know, like in the sales org or, you know, any of these other places, you can create almost this like internal newsletter within your company.
+
+That's going to like help create clarity for everybody else. And this is very important, especially when you get to that kind of like those, those breaking point numbers of companies, right? When you hit 30, 30 employees, things start to get weird because you can't know everybody in the organization.
+
+When you hit a hundred employees, it's the same deal. And then, you know, it's basically that it's like the law of eight or whatever. So it's like when you have two people, you only have to worry about you and their, like the relationship between you two.
+
+When there's three people, like it's like a factorial where it's like increasing with every node that you add to the system. And so as you know, you can think about this as you scale up, it's in, in, it makes sense, right? Like the best companies are good memo writers and that's, it's that same idea, but let's, let's, let's flip the switch a little bit.
+
+Like what if it's just an internal podcast or what if it's a newsletter that end the podcast that's like, here's like, you know, here's the leadership of this part of the organization. And I mean, this is actually probably a company. Is that going to larger, larger, I was thinking like, that was not a company.
+
+Like, you know, exactly. You, exactly. You, every company would benefit from, from this, like over communication, understanding what other people are doing, like writing key takeaways and lessons learned.
+
+But the problem is everyone is so busy doing their job. And everyone's worked to their bones, but if there was a company that came in, um, and imagine every fine Friday and you called it like recap, right? Like all hands recap or something.
+
+And like, you just interviewed the heads of growth at that, like org and like all of their, like, you know, their direct reports, like, cool, what happened this week? And it was just like, uh, you led the interview to uncover the interesting pieces, record that. I mean, you could do this in like Riverside or zoom and then you take that and you just create a transcript, have AI list, the key insights, put like, you know, do some like light editing and then put that in public within the Slack channel.
+
+It's like, cool. Here's our weekly recap. Like as a CEO, like, hell yeah, I would pay for that.
+
+I want to know what everybody's doing and what's happening. Right. And if you're telling me that I can sit down on like my Saturday morning with my coffee or even my Sunday with my coffee, and I can listen to the recap from every org, like every person, like every org within my organization or my sub org, like, and it takes me an hour of time to listen through those 10 minutes.
+
+So even if they're five minute episodes, like that would provide so much value to me. I think you could easily sell that for 5k plus a month to like startups that are getting to that, that weird point. So I think it can even be like just voice notes.
+
+Like I would, you know, yeah, just send me if it was even a Slack bot that was just like, yeah, it's just a Slack bot that like DMs me or, or, or teams bot. And it's just like, Hey, Hey, Greg, it's, you know, here's there's, there has to be a prompt. So would you learn this week?
+
+One key story, whatever prompt. So there come, you know, there's a bank of prompts that change and maybe you can have totally as the CEO, you can, you can kind of play puppeteer. But tailor that.
+
+Totally. Oh, today I won't, you know, it was a really tough week this week. So like, maybe let's do like wins for the week and then, yeah, yeah, yeah.
+
+Everyone gets like, how's the morale of your staff, right? Like, like we're down 10% that like week over week or something. Yeah.
+
+How's everybody feeling? And then it's just like, okay, cool. Like that bubbles up and you, you suddenly get this qualitative feedback.
+
+And I think that this is like actually where AI is the most effective. It's like taking unstructured data and structuring it. That's when the magic happens, right?
+
+Like, I don't care about generative AI from like nothing to something. It's way more interesting, like a headshot pro where it takes a person and it like turns them into like these, this, this, this, this output that I'm looking to get created. Or like with what we're doing at Swell, where it's like, okay, we take a webinar and we turn it into a blog post that's in like your tone style and voice of your brand.
+
+That's way more interesting than just like having AI, right? Based off its general knowledge or like having AI, you know, fabricate a person into existence. Right.
+
+So. Damn. I knew we were going to come up with like a $10 million a year of business on the fly.
+
+A hundred percent. I think you could do that. I, you should do that.
+
+You have the, you have the reach. Like how hard is it for you to find operators? Like, like zero to one founders.
+
+Like I get asked this all the time. Like, where do I, like, I want to find, you know, I need a, I want to do a, a, a rev share or a partnership with somebody, give them 20% of this and like have some type of earn out, you know, earn in structure. Or like, is that like your job?
+
+Is that basically what you're doing is just like trying to find these people? It's like, what is your day to day? That's actually what I'm curious about.
+
+It's like, kind of like within your holding co, like, what does that look like? Well, I'll answer both those questions. The first question, finding these operators.
+
+First of all, they don't like to be called operators. Like newsflash. It's something that I learned because I would call them operators and be like, bro, stop calling me an operator.
+
+Like I'm a, I'm a CMO or I'm a, you know, I've run a startup CEO or, you know, I'm a person. I'm not just like playing with levers. That's amazing.
+
+So that's number one. How hard is it? And it's, it's, it's so hard to find them.
+
+So I'm actually like trying to think, I'm kind of working on some ideas that make it easier to find those people. Similar to how Eric Torenberg started On Deck. Dude, I'm obsessed with that episode, by the way.
+
+I listened to it like on a weekly basis. I have some, we could, we could go down that rabbit hole if you want to. I have some ideas in that space that I didn't even include on the doc.
+
+Yeah. We already tested some of them, like AI news for specific categories. I want to go into it.
+
+It's a daily thing. I want to, at the end, we'll go through those. Cause I'm just, I need to know.
+
+Yeah. Like I literally need to know. Totally.
+
+But yeah, Torenberg, you know, right now On Deck is kind of like a cohort based, you know, learn to become a product manager, you know, learn to be a designer. But how it started was in the name On Deck. Eric would throw these dinner parties and cocktail parties and brunches where smart people who were working at Google, Facebook, whatever, who are on deck to do their next thing.
+
+Like they weren't ready to quit their job, but they were like the smartest people at Google, the smartest people at Facebook. He would just invite them for dinner. And super interesting.
+
+Yeah. And he just like, his thesis was eventually these people are going to start companies. And when they start companies, I want to be involved.
+
+And the alpha is in get. And so I think there's probably like what we've been talking about internally is in how do we bring together operators? And what is that?
+
+But that's hard in a digital space. Like that's the one thing I'll say about being in a physical location that has high density of like talent. Yes.
+
+Is that there's that cross. Like I even miss SF like for that reason, right? It's like you go to dinner with some, you know, a friend of a friend and they're doing some random thing that was like applicable and useful to the moment that you were in.
+
+And it was just like this. It created this, you know, serendipity. It was like a, you know, it multiplied serendipity opportunities.
+
+It's like being in a talent dense place. And I don't know how to do that like in a digital. I think that some of what we, you know, you do, right?
+
+Where it's like I build, you know, I do podcasts and I build all this media, which creates like inbound of those types of people that are interesting. Like it creates more surface area. So I love your thoughts on this.
+
+This is how I think about it and talk about it to people is like when you're a company and you're just starting out and like anybody, like even a personal brand, like you want to build digital mass on the internet so that you create more digital gravity so that you get more people in your rotation, which over time leads to more people like touching down into your business. And then that creates more digital mass. And that's like a growth flywheel, right?
+
+I think this is actually a better way to think about like funnels. Funnels I think are broken because that's not actually how people like make purchasing decisions. They don't start here and then like work their way down.
+
+That's a very poor visualization. What's actually happening is like they're a comet and they're zooming by your business. And if you don't have enough digital mass, they just miss you entirely.
+
+But the more mass you have, they get like trapped in their orbit. And then they get like, there's moments when they're closer to the planet and like farther away from the planet within that given like rotation. But over time they get closer and closer so that they like basically hit, like they touch down, right?
+
+And then every time they touch down, like that's a purchasing decision that happens. And that makes more mass for your business because now you have more capital to redeploy into the growth of the company. And so like, anyways, that's just like my, I want to write a book on this and just call it digital gravity because it's like how to build like companies, like how to build early stage companies that like nobody knows about.
+
+Because it's this idea, right? It's like, anyway, like we could talk about this, like owned media, like this is the future. And this is how you do this.
+
+It's like owned media is this like leverage point that any company can do. Like that's starting out. Like I, and I've, I've done this personally for brands where it's like, no one knows they exist.
+
+And a year later they're at a conference and they're like, oh my God, Sarah, I listened to your podcast every week. Like what you guys are doing is unbelievable. We love the product.
+
+And like, again, like, I mean, this was in a, the one I'm referencing was like in the insurance space. Like I'm very traditional industry. That's like handshakes and like good old boy type shit.
+
+Right. And like, you basically can break through that when you provide some type of media to that audience that they want to consume and that isn't available. And like, this is actually a business I want to pitch to you right now.
+
+So I think that there's a huge opportunity to make podcasts just based off the titles of people's like their job titles. So make podcasts based off of people's job titles, for example, head of heads of growth. Historically, they have huge access to capital because their job is just to grow companies as fast as they can.
+
+Right. So if I made a podcast that every head of growth listened to and like literally just name it the head of growth podcast. Right.
+
+And all we, you do is you interview heads of growth about what they're seeing on the front lines in their business, the challenges they're facing, all of that. And then you take that and you build an email list that to that entire audience. And you send out that podcast on a weekly basis.
+
+You have a form at the bottom. That's like, you know, want to be on the show? Like, you know, click this link to like, you know, basically like come to you.
+
+So you get this guest inbound that naturally happens. But the way to monetize is that I think people are doing wrong right now. Like they're trying to go and sell advertising.
+
+I think that's a terrible way to do this. I think you've convinced me that community is actually something that people like want and actually a good business model. And you then create a school that's the head of growth school, like that paid community or a WAP or whatever.
+
+And you put that in the email newsletter and you promote it within the episode. And when you think about that person, like, okay, I'm ahead of growth and I can run a credit card up to $1,000 without talking to anybody. Right.
+
+So if you make that community at $199 a month, and then again, on a weekly basis, you're just like dropping all the knowledge that you've acquired from all the conversations you've had. Like, here's all the tactical things we're seeing all these other companies doing. Like you're just interviewing community members on like what's working and what's not.
+
+You can do it anonymously as well. So there's like, you know, not, there's not like this competitiveness between it. But like, I think that, you know, there's 16,000 heads of growth in the U.S.
+
+with that job title that I can get emails to right now. Like if you got even a thousand of them to be on a list that's paying you $199 a month, right? Like that's a quarter of a million a month.
+
+Like that's an unbelievable company. That's just one of like 20 different head of growth positions. You could, you're ahead of XYZ positions.
+
+You could do this for scale that up to CMOs, scale that up to these other things. Like, I think that's like actually the business model for this is like you're using the podcast as the vehicle for community. And it's a perfect channel for it because there's so much trust built into it already.
+
+Right. Like if I sit down and I talk to people like every week and I put that in front of all these like other people and they listen to that, like an hour of me talking with somebody else. Like there's going to be so much trust built into that relationship.
+
+So when I tell them, hey, we have this private community that has all of these other people sharing their strategies and tactics. I mean, it's a no brainer. Of course, I'm going to pay for that.
+
+Like that's just alpha that I just get for that cheap. It's so anyways, I'm curious your thoughts there and like what you guys are kind of seeing. Because I know like that Tornberg is doing something in this world.
+
+We've been, yeah, I mean, that's the future. So that's the future. The only word I would change in that whole rant that you did is instead of calling a community, I call it a membership.
+
+Cool. So. Yep.
+
+Membership program or like a, yeah. So what's the difference between a community and a membership? A community is just other people sharing information, IRL events, maybe digital events, digital programs.
+
+There's no exclusivity built into that. Membership to me is community, but could also be like deals. It could be like software.
+
+It could be. Oh, interesting. You're just bundling all this value.
+
+Think of it as like, here's a group of people and you're bundling a bunch of value where community is just a piece of it. And that's like what, and it could still live on school or whatever platform that makes sense for whatever community it is. But I think why everyone would do this is because everyone's trying to level up as head of growth.
+
+Everyone's trying to level up as CMO. So if you can just jam a bunch of value into a membership, all that you have to do to make sure that this works, this business model works, is you just need to make sure that whatever you're charging, people are getting at least 5x value. So for example.
+
+I mean, I'm just thinking about just doing a deal with HubSpot, right? That membership buy, like your member buying. Is that what it's called?
+
+Where you like, you buy in a block. Let's say you buy like a whole cow and you buy it with six people, right? Is that what it is?
+
+Yeah. So that same idea, like you could go to HubSpot and be like, yo, we have a thousand head of growth. Totally.
+
+And they would do it. Membership. 100%, right?
+
+It's like, cool. 50% discount for a yearly subscription for X amount of seats. And then boom, right there, like you just got all the value provided to them from that single deal.
+
+I've been testing this model so I could scale it. So I did it myself. A lot of things, you ask me what I do day to day.
+
+I don't do like, I'll build things on my own a lot of the times to just learn a space or just like get, you know, from 92% clarity to 100% clarity. So for example, we launched this thing called communityempire.co, which is a paid membership of people building community-based businesses that are cash flowing without investors. Okay.
+
+So I built it on school. But also you get like $50,000 off of a bunch of deals. So like we did deals with a bunch of people.
+
+But also it comes with a free school. It also comes with all this other stuff. And it comes with events and all these things.
+
+And then that's when I realized, oh my God, if this can work for this job title or this type of person, this can work for other functions as well. And by the way, just to put numbers to that, like without even trying, like literally without even trying, that paid membership is doing $37,000 a month. That's insane.
+
+That's insane. Have I told you like how I grow podcasts for like B2B or like has Jordan? I think I've told Jordan, but I don't know if it got bubbled up.
+
+No. Okay. So my whole strategy is like, go like, what's your target ICP?
+
+By the way, I do this for startups. Tell me the story. And then I want to end with one more idea for folks.
+
+I love it. Let's do it. Let's do it.
+
+So for early stage companies, like they've got like an inkling of product market fit. They kind of have this target ICP. And they're like, we don't know how to get in front of them or how to market to them.
+
+It's like my whole strategy is just this. It's like build a podcast specifically for them. The customer conversations you're already having, distribute it to those people.
+
+So how do you actually do this? So you go and find like all those people's emails on like one of these service providing tools like Apollo or snow or whatever. And you take that whole list and you're like, cool, I've got my total target ICP.
+
+And then what I do is like, this is super gray hat. But I like grow these podcast newsletters that are all they're doing is promoting the podcast to these people that have that target like ICP. So say it's product managers, right?
+
+And like you're building a tool that helps product managers build like internal tools more effectively. So you then go and you interview product managers about their job and all product managers want to hear what other product managers are doing. So when you grow this list and like how we actually grow this is like we add like 200 emails a day to this list.
+
+And what we'll see is like 50 plus percent open rates and like three to 5% click through rates on these emails. This is a cold email that we're landing in people's inboxes and they're 50% opening and like over 5% clicking, right? Or like over 3% clicking.
+
+So the subject line is literally like podcast. And then it's like whatever the most insightful part like of the episode was. It's just that.
+
+That is the subject line. And then all the email says is like the newest episode of XYZ podcast is live. Click this link to like to listen to it.
+
+It takes them right to the Apple podcast URL. And then below that, it's like, you know, maybe a two paragraph summary and like five bullet points. And then it's like at the bottom, it's like to hope you find this educational content like valuable link to whoever the founder is that's hosting the show.
+
+And then maybe you add like a call to action, like six months into this, that's at the bottom of like whatever the name of the company is. So what? So that's one piece of this.
+
+The second piece is then you run Facebook ads to iOS only devices. And you take that same group of people, you do a customer match list and you put clips of the episodes in front of them with a link to click the Apple podcasting link. Now, when they click that link, it's technically a deep link on iOS devices.
+
+So because you're targeting iOS devices, it opens the Apple podcasting app on their phone and drops them right into the podcast episode. They hit play download. So the other thing you can do with that is you can also run ads that are the same thing as this other deep linking strategy.
+
+But it's basically you put like podcast, like literally the word podcast colon in front of the RSS feed. And again, when you're on mobile devices and when you're on Apple devices, it prompts the user to open the Apple podcasting app. And then there's a pop-up that says like subscribe, right?
+
+It's literally like a subscribe, like it's dropping them into like subscribing to the podcast. When they subscribe to the podcast, they immediately download that episode. And when the new episode gets dropped, but the bigger thing is that built into the iPhone and the Apple podcasting app, when you, the shows you're subscribed to, they give, they do push notifications.
+
+So you just created a push notification to that like target customers, like mobile device, like to their, to their phone. And then the other thing we layer on top of that is then podcast SEO. Like, why am I obsessed with you naming this to the, you know, like business ideas, right?
+
+Like it's because if you now go to the Apple podcasting app and you search business ideas, who comes up and it is your show, Greg, right? And so we do that same thing, but at a smaller scale. So like call it again, like using this product manager, call it the product manager, you know, podcast, right?
+
+Again, just as literal as you can be with this. And when you combine that all together, like we've taken these, I'm working with my friend who's in the biotech space. Like we've taken their show from non-existent to like a top 20 life sciences podcast in the U S in less than 12 months.
+
+They now do like 30,000 downloads a month. And like, they, they have a link. That's like, you want, you know, want you, uh, want to be on the show?
+
+Like, are you a founder of like of a biotech company? Like we want you on the show, like apply here. They get VCs inbounding into their form, pitching their portfolio companies to come on the show.
+
+Like this is their ICP is getting warm leaded into them from their investor. Like that is what is happening here. The leverage that they just like cultivated within their industry.
+
+Like, again, this is an early stage company with 15 employees. They can now go in and negotiate with massive organizations. And they're already doing this with like the Roche and Jenna, you know, genetics of the world, because they have this media arm that they use as the leverage point for those relationships.
+
+Impossible otherwise. So anyway, yeah. Um, it's like something I'm, I'm super hyped about.
+
+And I feel like it's related to this. Like you could get these, what you're talking about where it's like job title to community, like in 12 months, that company could easily be doing like, I bet you could get it to 300k a month in like 12 months, probably just that using that entire playbook that we just talked about. So you're, you're my people, man.
+
+You're, you get it. You get it. Give me, give us one last idea.
+
+Okay. Um, the one I'm most excited about, cause I think it's like a huge opportunity. And I also just like, I think it would help the Uber driver, right.
+
+That has it is this thing called play octopus. So I don't know if you got it, like you bet everybody's seen this, but it's like, imagine like a tablet that's on the back of like a headrest. Um, that's in the back of like an Uber, uh, like when you're, you know, going somewhere.
+
+So that tablet, they just do like trivia. But like, if you've ever been in a car, like, especially in XL with one of these, like the whole car just gets like fired up about this. Like my, my girlfriend loves this, right?
+
+Like we'll sit there and we're like coming home from the bar, like Thursday beers. Right. And we're just ripping through these.
+
+Cause it's like, there's a high score and this leaderboard. And it's this whole thing. And then how they make money is they do ads in between the trivia.
+
+So I'm like, again, coming home from Thursday beers the other night, naturally I'm like chatting up this, you know, my Uber driver. Cause that's the type of person I am. I am that annoying fuck sometimes.
+
+And I'm like, Oh, where are you from? Blah, blah. He's like, Ethiopia, blah, blah.
+
+And I started asking him about the tablet. I'm like, how much you make off the tablet a month? And he's like, Oh, it's nothing like $70.
+
+I'm like, you only make $70 off of this being in here. He's like, yes. I'm like, how many rides a month do you do?
+
+And he throws out some crazy number and I'm like, that's insane. And then I start asking him, I'm like, okay, why do you keep it? If it's like, not that problem.
+
+He's like, well, it's here already. So why would I get rid of it? And so, and also like, it makes the people that ride with me like happier.
+
+Like they become like, I have like better ride, like vibes because this is here. So for me, it makes it, it makes my job better. So let's break that down.
+
+He's getting paid nothing. There's no churn. And it's a better experience for everybody in the car.
+
+Okay. So that company play octopus got bought by T-Mobile in 2022. If you look up like what the revenues are doing, it's right around like that eight to $10 million mark.
+
+The ads they're running are just display ads. Like it's nothing, it's nothing. So how I would make this company better.
+
+Now, somebody out there, please do this. Please, for the love of God, do this. Is I would go and I do this exact same thing.
+
+I would do the trivia thing. But the ads that I would show would be CPA ads with a, with a QR code that when this person scanned it and gave their contact information, their phone number or their email, there's an affiliate commission. That happens to the company.
+
+So to whatever this company, company X that you create, but also to the Uber driver. So that's the incentive for them to switch, to have the switching costs. So instead of $70, like you can get some of the, like, I'm just thinking like CPG brands.
+
+Like a lot of the times, like they'll pay like $3 for some of these email, right? Like if they're like, you know, whatever, uh, some like Kashi cereal, like that is like, that is not uncommon. Now, if you give like 10% of that to this person, or even like, you know, you do a 50, 50 share, you're going to make so much more money than eight to $10 million a year.
+
+And I think that this could be run with like a team of like five engineers and like one salesperson that just is like, all he does is like get in these groups and tries to sell these people. The, the, the power of this, so, or like the natural, natural, the natural network effect that will happen is that all of these drivers are all in these like groups. And so as soon as, you know, homie from Ethiopia is like, yo, I'm making an extra $500 a month off of this because I implemented it.
+
+Like every one of the, he's going to drop that in this group. And every one of those drive, you make some type of a referral program between them all. So I just think that that is like, you know, it's a great product with terrible monetization.
+
+And I think that there's a better way to monetize that space and make more money, both like it's all the, all the incentives are aligned there and all. And I think you couldn't do this when, you know, play octopus initially came out, right? People weren't used to scanning QR codes.
+
+That wasn't a part of their daily life. They're now used to that. And so you could basically increase the, like the, I don't know what the offers would be.
+
+It could be local. It could be national. I'm not sure.
+
+Like that's the hardest part of this is probably like creating the, uh, whatever that affiliate network is. But there's, I mean, imagine you could just like tap into like CJ or like, you know, one of these like affiliate networks and look at the CPA offers that are there and then just like throw those up. So yeah, that's the other business that I'm like, it's more of a physical thing and it's a higher lift, but I excited about it.
+
+A few, a few thoughts. So firstly, the affiliate offers, I'm thinking about the driver. Like they don't even have to be like, I buy this thing and I get a cut.
+
+Like it could be like athletic greens where athletic greens affiliate offer is like you get a share of it monthly for 12 months, I believe. Yep. So, but, so I think that could be like, they would love that.
+
+Um, second thing is it could also be like cost per lead, not just CPA. So it could be like, yep. You know, the grocery store pay totally, you know, two bucks for, or a dollar or 75 cents for the right to message you about stuff.
+
+And it's like scan this QR code to get like something, you give them something for free, like an ebook, a PDF. I don't know what you give them, but you give them something and then they can contact you. So I think like, yes, I think, and then I think your framework around finding good products that have bad monetization is just like a really smart way of thinking about it.
+
+Cause there's other ideas. I mean, totally. And to piggyback off of what you said on like the cost, like the cost per, um, like, you know, cost per lead, et cetera.
+
+Like what a lot of them do is they then bundle. Like, so like, basically like imagine like a Kroger and like, um, you know, a tire shop and, uh, you know, some other type of business. They all together, they want that same lead.
+
+So they'll pay, it's not, you know, $2 they'll pay $6 and they all share that lead and they do some type of initial offer. But that list gets shared to all of them. Right.
+
+And there's a way that like, you could like, it could be a huge payout. Right. Like, or it's like, it could be 10 bucks per lead that you're generating.
+
+But if you scale that up to the entire U S and I think you could get these tablets like to them, like for free too. Right. It's like, you just put them in here and like money starts coming in, like not $70.
+
+Like on average, the people that drive with this, like they make a thousand dollars a month after six months, because there's some type of like, you know, maybe it's a recurring subscription payout or whatever. So yeah. I mean, I, I, again, I think a huge business is right there.
+
+Easily a $10 million a year. I mean, it's already a $10 million business. Just improve it.
+
+It's like make it a $50 million. But here's a really bad, I'm going to give a really bad, we're going to end on a really bad idea. Based on a pivot of your idea, a bad idea that makes the world a worse place, but probably can print.
+
+So we take your screens in the back of Uber idea, except we turn them into casinos. So. Holy God.
+
+That's like a candy crush. Oh my God. Yeah.
+
+So betting is becoming, you know, legal and more. I bet you could do it with the betting companies. Yeah, you do it with the betting companies.
+
+I'm just thinking all of Denver. Yeah, you just go and do a partnership with them and you, you, you buy some games and then you basically, and you also do like. Greg, that's a hundred million dollar a year company.
+
+Cause like, I'm just thinking about my, my friends like coming home from the bars and they're already lit. And you got like, oh, here's a hundred dollars free and free betting credits. If you scan this QR code, nine times out of 10, they're going to scan that QR code.
+
+Also, you know, you can do, you can do like prediction market betting. So it's like, imagine it's like election day and it's like, is Biden going to win in an hour? And there's just a countdown on the screen.
+
+You're like, do you want to place a bet for $5? See, you know, people would just, there, you have a captured audience. A hundred percent, a hundred percent.
+
+Make the world a worse place. Maybe what you do. Worst place.
+
+All right. Worst place. Again, company will print somebody, please go do this so that we can ride along with you.
+
+But I think if I was going to market with that, like I would focus on the CPA or so I would do it for the, like the offers for like FanDuel, et cetera, to begin with. And then you could do like what you're talking about after that and like make it even more cool where it's like live with something that's happening. But like you could get, I think, initial monetization with, I'm just thinking about it too.
+
+Like how many people go, like you, everybody takes an Uber to like sports games, right? Like that is like one of the big ways that people get around like that and like music, basically. Like both of those places, like, you know, specifically the sports, like that's like a sports betting company's like dream is to have a captured audience that's headed to Ball Arena, you know, to watch the Nuggets play.
+
+So anyway, yeah, that's super interesting. Cody Schneider, this was everything I dreamed it would be and more. Thank you for coming.
+
+If people want to hear more, learn more about Swell and just get you more in their feed, which they should, I encourage it. Where can they do it? Yeah, I'm so I'm most active on Twitter and LinkedIn.
+
+And yeah, SwellAI.com is the company we're currently building. It's an AI content marketing engine for B2B companies. And yeah, I mean, you honestly just Google my name.
+
+If I don't come up, I'm really bad at my job. So that that is probably the easiest way to find me. Hell yeah, man.
+
+All right. Well, I'll catch you later. I appreciate it.
+
+Thanks for having me, Greg.

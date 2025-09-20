@@ -1,0 +1,519 @@
+Cole's back on the pod. Cole, what are we learning about today? We are going to write with AI.
+
+And I mean that in the most literal sense. We are going to write and we are going to do it with AI. And so what I want to do is I want to share my screen and I want to go back and forth and show how I do this and also how I train other writers to do this.
+
+And by the end of this episode, what are people going to get? At a minimum, you will have a baseline understanding of how to use AI in writing. And at a maximum, you will have a very clear framework for being able to use AI to produce very high quality long form content.
+
+And why does that even matter? I think the two biggest reasons is one, when you understand how these frameworks work, so many people only think about how things work in an individual silo. So I'll give you an example.
+
+Like in all of our writing programs, if I explain how to write a thread hook, 99% of people will ask the follow-up question, does this also work on LinkedIn? Or does this also work for a reel? Right?
+
+And the answer is always yes, but human beings do a terrible job of thinking orthogonally. And it's like, if you tell me this is how to write a Twitter thread hook, it's hard for the average person to fathom how that gets played out across other things, but it does. And that's why these writing frameworks and these skills are so powerful.
+
+Because once you understand them once, you can apply them to everything. It doesn't matter if you're writing an email or an article or a Twitter thread or a landing page, right? It's all the same.
+
+And then second is this is where the world's moving. I was just writing a piece this morning about different career paths that writers can take. And the one that I was working on is the career path of a content writer.
+
+And so often I hear, I see it in my comments on my content, like all day long is people saying, you know, what's the point of even building these skills? AI is just going to take all our jobs. AI is going to remove all writers.
+
+No one's going to need a writer anymore. And that really fails to understand what's happening. And the analogy that I always use is, you know, when Photoshop was invented in 1990, if you can believe it was that long ago at this point, that didn't ruin design.
+
+It created 1000 times more designers, right? It created exponentially more design in the world. When Instagram launched in 2010, that didn't remove photographers, it made everyone a photographer, right?
+
+It exponentially increased the amount of photography in the world. And ChatGPT and Claude and all these AI writing platforms are going to do the same exact thing. They're going to make everyone a writer because it's reducing the barrier to entry.
+
+And so if you pair that trend with the fact that 20 years ago, people couldn't imagine what it meant to create content online. If you owned a fax machine brand or a candy brand or a local spa, right? 20 years ago, you were like, what does it even mean to create content?
+
+What, you want me to post pictures of my fax machine on the internet, right? And now today, every single business and every single individual understands I should probably create and share content online. It's why spas share pictures of their spas, right?
+
+And so if you take those two things together, you realize that quote unquote content, branded content, educational content, content is not ever going to go down. It's only going to go up. Every single day, more and more people, more and more businesses want to create more and more content.
+
+If you are constrained as a human by 24 hours in a day, or really like eight to 12 working hours a day, and seven days a week, well, your productivity can only go so far. You can only produce so much content in a given day or a given week. So if you add AI into the equation, it's not that AI removes people's jobs.
+
+AI becomes the stress test of, do you know how to use this to double, triple, quadruple your output? If yes, you will make even more money than you were making before because you are more valuable. And if you don't know how to use this, you become less valuable.
+
+And people conflate the two. They think, AI stole my job. That's not what happened.
+
+AI changed the barrier to entry and changed the baseline skill level. You failed to change with it. And then AI says, well, you didn't change.
+
+So you don't get the next opportunity, which is like Darwinism at its finest. Right? So everyone's sitting here thinking AI is ruining things.
+
+And no, it's changing things and you are failing to change with it. So that's my little preamble for what we're going to dig into. That is why these things are so important.
+
+What is a topic that you want to create a piece of content on? 800 word article. You could also post it as a long form on X.
+
+You could post it as a long form on LinkedIn if you want. Is there any topic you've been noodling on? Yes, actually.
+
+So let me pull out my tweet ideas note and see if there's something that's half-baked. Okay. Well, okay.
+
+This is literally a half-baked idea. Okay. So Reed Hastings had a strange rule.
+
+The founder of Netflix had a strange rule in Netflix's early days. No one was allowed to say Blockbuster in meetings. Because the reason why is he basically didn't see them as a competitor.
+
+Netflix wasn't actually competing with Blockbuster. They were competing with Gilt. And the reason why is, if you remember the late fees that you used to get from Blockbuster, people felt bad about themselves.
+
+They couldn't handle basic adult responsibilities. So it was less about the $3 you had to pay of late fees and more about like, get your life together, man. And then Netflix's whole idea was basically like, watch whatever you want whenever you want it.
+
+I think there's a piece somewhere in there. Okay. So this is an amazing place to start because this is how most people begin the writing process.
+
+They come up with some sort of seed of an idea. And then it's hard to know where does this go, right? Quick break in the pod to tell you a little bit about Startup Empire.
+
+So Startup Empire is my private membership where it's a bunch of people like me, like you, who want to build out their startup ideas. Now they're looking for content to help accelerate that. They're looking for potential co-founders.
+
+They're looking for tutorials from people like me to come in and tell them, how do you do email marketing? How do you build an audience? How do you go viral on Twitter?
+
+All these different things. That's exactly what Startup Empire is. And it's for people who want to start a startup, but are looking for ideas, or it's for people who have a startup, but just they're not seeing the traction that they need.
+
+So you can check out the link to startupempire.co in the description. And this is why something that I think is really important in the context of us talking about AI is that people expect AI to automate and do things that they don't understand how to do themselves. And so it is worth recognizing that AI is not a silver bullet.
+
+On some level, you do have to have a baseline understanding of how the thing is supposed to work so that you can prompt AI in order to do it, right? It's no different than being a CEO and you hire an intern and you're like, hey, I want you to take this over. If you ask the intern to take over a department that you've never even run, well, how are you going to get the intern to do it?
+
+Right? So here's the first framework. When you have a seed of an idea, there's two ways of looking at this idea.
+
+And this is the first decision to make essentially for you, Greg. Either this is an idea and this is one point within it, or this is one point within a different idea. Okay?
+
+So either, let's just spell this out really simply. Two types of ideas. Either this is the idea.
+
+So this is about Reed Hastings, strange rule, during Netflix's early days, right? Either that is going to be the piece. This is the theme of the piece.
+
+Or this little idea is a sub point within a larger idea. Okay? So what might an example of that be?
+
+Well, very easy one would be three CEOs who had strange rules at the beginning of their startup journeys or something, right? Yeah. Right?
+
+So Reed becomes one of three, not necessarily the focal point. Okay? Yeah.
+
+So this is the first decision to make. Do you have a preference? Do you want me to pick one?
+
+Yeah. So one of my niches is startup ideas. So I like to post things that have a connection to startup ideas.
+
+Like I can obviously, there's a million people who can post about Reed Hastings, and there's weird rules, but only some people can post about the ideas piece of it. So I think that a sub point could be sometimes the biggest opportunities aren't in fixing problems. They're in making people feel better about having them.
+
+And that's kind of a prompt for people to come up with startup ideas. Does that make sense? Yeah, it does.
+
+So this is where, you know, my years as a ghostwriter, that part of my brain is kicking in, right? Because if we sort of change the lens for a moment, let's pretend that what we're doing, you are a client and I'm a ghostwriter. It's very similar.
+
+This is exactly what I would be doing with a client anyway, right? And you just said something really smart. And so I go, okay, that's great.
+
+I just don't know where to put that yet. So I think of it like a Lego block, right? You're like, that's a really great Lego block.
+
+I just don't know where it fits yet. Okay, so we put that there. Now we've got some ideas swirling around.
+
+And in some way, we can let's summarize sort of our goals here. Our goals are we want this piece to be connected to startup ideas. We want this piece to in some way be actionable because a lot of the value that you provide is like how to, how to get started, how to do something, right?
+
+And ideally, we want this piece to be connected to our Reed Hastings, you know, strange rule during Netflix's early days. Fair enough? Yeah, absolutely.
+
+It's funny because like, just, you know, sidebar, when I write, when I write words, I'm not as strategic about writing. I just kind of like brew coffee and then I go. But I feel like just talking out loud, putting goals is probably a really smart thing to do when you're writing any piece.
+
+Yep. Yeah. I mean, it's so simple, right?
+
+The majority of people don't have a talent problem. They have a thing called, I don't want to practice and execute the basics. And I would rather, no offense, drink a bunch of coffee, close my eyes and hope that something smart comes out when I hit the keyboard, right?
+
+And that's not a very reliable strategy. You're good like one out of every 10 times. So that's why these frameworks are so helpful.
+
+So before, like, I know how to do all of this manually, but so I'm going to slow down and do this in stages so that even someone who's a complete beginner and you don't understand and haven't internalized these frameworks yet, you have a starting place. So whenever I'm coming up with ideas and I'm trying to narrow down the idea of the thing that I want to write, a really easy place to start is to take these goals and to plug them into AI. You could use ChatGPT, you could use Claude.
+
+It really doesn't matter. Those are the two big ones that I use most often. And the whole point here is not really for the AI to start writing yet.
+
+What you want is you want it to feed you ideas, right? So how do you think about prompting AI? Okay.
+
+I think there's, let's just pause here. There's two very different types of ways of interacting with ChatGPT, Claude, any AI model. One is conversationally.
+
+So you're sort of chunking things out piece by piece and it's more of a dialogue. And another is where you think through all of the potential situations and hypotheticals and you assemble a massive prompt that then you feed into the AI model and it generates some sort of output. And I think part of where people go wrong is A, they don't realize that those are two different things.
+
+And then B, they sort of sit in the middle and it's like a half-baked prompt that's sort of mid conversation and then the AI is not giving it the output that they want. So that's usually the problem that I see. So here, if we're starting to write something, I start conversationally.
+
+So I might say something like, I'm going to take this. I'm going to say, I recently came up with an idea for an 800 word article. Reed Hastings had a strange rule where I write that thing.
+
+And then I go back and I take my goals and I'm like, here are the goals of the piece I want to write. And I might give some extra context here because I have a podcast where I share startup ideas with entrepreneurial listeners because a lot of the value I provide is how to get started doing something entrepreneurial. And we want this piece to be connected to our Reed Hastings story.
+
+Can you please generate 20 potential headlines for this sort of piece? And under each headline, list out three to five main points that would make up the content of that piece. So all we're doing is we're basically saying, here's the little bit that we came up with.
+
+Now, can you just start feeding me ideas? So here, the reason that I ask for these bullets and these main points is because the thing that most writers and most people who want to write don't realize is that many of the decisions get made before you start writing. So if you start, if you come up with an idea and your first thought is I should open a Google doc and I should start writing, you've already failed.
+
+You already did it wrong. And the reason is because so many of these ideas, you can, you can come to the conclusions that you need to before you begin the writing process. And when you do that, the writing is significantly easier.
+
+It gets compounded with AI where not only does it get easier, but now you can defer a lot of the lower leverage stuff to the technology. So there's like a hierarchy. And if you make the first mistake, then you make all the mistakes under, under it.
+
+Right? So here's a, like, this is kind of cool. Stop saying blockbuster.
+
+Why ignoring the obvious can accelerate your startup growth. Psychology of ignoring the market leader, right? All of these.
+
+Why Reed Hastings banned the word blockbuster, what it means for your startup. Yeah. I like that actually better.
+
+I like banning. Yeah. Like, that's powerful.
+
+Yep. Okay. So I just want to pause and point out, what are we doing right now?
+
+What we are doing is we just deferred the lower leverage task of come up with 20 different iterations. Now for everyone who doesn't know, this is the hierarchy of every single magazine and publishing house and newspaper. Okay.
+
+The editor or the editor in chief literally gives the columnist or the writer this prompt in the form of, Hey, come into my office and let's talk about it. Right. And then the lower writer listens and goes, I better come back with 20 high quality ideas.
+
+Okay. So just so everyone we're on the same page, this already happens. It just happens between two human beings.
+
+Right? And all we're doing is we're going, Hey, instead of me passing this along to my junior columnist, I'm going to feed this to chat GPT, which means we just got to elevate ourselves up to editor in chief where our primary value is taste. Right?
+
+So, so we're looking through these and you're like, Ooh, I actually really liked the word ban and you have all the context as to why that word works, right? Oh, ban implies conflict. I think it'll make for a better hook, right?
+
+Like you have your own taste and metrics for why this will work. And that's why you picked that one. That's right.
+
+That's exactly it. I will say in my mind, I'm thinking like, how do I create a piece of content that is going to get shared a ton on X? And so I, I do have like a framework in just for the, you know, here's the type of pieces that I think would work and banned just really like Reed Hastings, a name that people know, you know, Netflix, a name that people know and, and banning the word blockbuster invokes curiosity and emotions like that to me has, you know, check, check, check all the ingredients of what could make for a tweet that gets 10,000 likes.
+
+Yeah. Okay. So let's, let's actually, we'll, we'll take a small scenic route detour here and let's play this out because this is, this is what I mean when I say, when you understand how these frameworks work, they work for everything and you can use them across any medium.
+
+So we're going to take this headline. So, so our taste, we elevated to editor in chief of chat to be tea for the day. So we're going to take this headline.
+
+We're going to put it here and you go, you know what? I actually, as I'm thinking through this realized that I don't want this to be necessarily an article. Maybe I want this to be a thread on Twitter.
+
+Now we're going to come back to the article because it's very easy to show how all of these things work, but let's play this out as a thread hook, for example. So Greg, do you have a recent viral thread that has a hook that you thought was awesome? Yeah, I do.
+
+I mean, a lot of people didn't think it was awesome because I got a lot of negative feedback, but I think it got more than 50,000 likes. So. Okay, great.
+
+So throw it, throw it over, feed it to me. Oh, here it is. Okay.
+
+Not 50,000 likes 44,000, but Elon Musk replied. So that, you know, that's cool. That counts for something.
+
+Yeah. Do you want me to? Yeah, throw it in the chat here.
+
+We're going to pull this up. This is basically the hook. Yeah.
+
+Okay. So here's the next thing. What we're going to do is we're going to take this and we're going to treat it as a template, and then we're going to put this idea inside this template.
+
+Now, whenever I show people how to do this, very often writers will say back some version of, A, isn't that stealing? Well, for one, you wrote the first one, so no, but even with other people, isn't that stealing? And no, you're not stealing the content.
+
+You are stealing the architecture, right? So everybody's read the, what is it? Austin Klein's book, Steal Like an Artist, right?
+
+This is what that means. So you are stealing the bones of the house, but you're going to design it in a different way. Okay.
+
+Second is often writers will say some version of, well, this isn't real writing. Like you're just, you're just taking something that works and then re-swizzling it. To which I have to slow down and explain, you don't realize that you are already doing this every single time you sit down to write.
+
+You just call it intuition. But what's really happening is every time you sit down to write, your brain is cycling through previous quote unquote templates that you have seen work, either something you've read and were inspired by, or something that you've done already and you received a positive response from. You're like, oh, that hook worked last time.
+
+My subconscious is like, maybe I should do that again. So this is already happening. All we're doing is we're just making this conscious.
+
+Okay. So how do we do this? Well, you take the hook and some hooks, if you pull, like it might not be a perfect fit, but we'll do our best with, with this one.
+
+So here, just had a fascinating lunch with a 22 year old Stanford grad, smart kid, perfect resume. Something fell off though. He kept pausing mid sentence, searching for words, no complex words, basic ones.
+
+Like his brain was buffering. Finally asked if he was okay. His response floored me.
+
+This is such a good hook, man. This is such a good hook. Okay.
+
+So here we might, we might have to use a little creative storytelling and I'm not going to sit here and like look up the facts, but we'll, we'll get approximately correctly or correct. So we'll go in what, what year do we think this was? 2002?
+
+19? Oh, Reed Hastings. That was, yeah, let's say early.
+
+Yeah. 2002, let's say. Okay.
+
+Okay. In 2002, Reed Hastings had a meeting with his executives, all smart people, perfect resumes, but something in the room that day felt off. In the middle of the meeting, Reed, and just to show like how close we're, I'll try and stick to this as much as possible.
+
+Searching for words, Reed Hastings looked out the window and said, we're banning the word blockbuster. Here's why. Right.
+
+So not a perfect fit, but pretty close. Okay. And to be clear, we're not saying makeup stories.
+
+We're saying like, you have to fact check your stuff, but you can copy or be inspired by formats, correct? Of course. Yeah.
+
+You don't steal the content, you steal the format. Yeah. Right.
+
+And so here, now here's the really cool part. What is an AI model? An AI model is really just lots of examples of a scenario.
+
+Okay. And so I love when, like, it's actually comical to me when people say things like, I tried using AI, but it just takes too long to get an end result, you know? And I'm sitting here and I'm like, I've been writing on the internet for 10 years.
+
+I've written 8,000 articles on the internet, right? And you're frustrated that it's taking you like three reps to get an end result, right? So what you don't realize is that when you do this one time, so we took the original hook and then we manually created a new version, set a different way, you just created a mini model.
+
+And so what you can do and why it's so important to understand how to do these things manually is because then we can take this hook and this, now this is what I would do. This is how you can keep working with ChatGPT. So you go, it gives us this list, your editor in chief, you go, okay, great.
+
+This is the headline that I like the most, but I want to write this in the form of a twitter slash x thread. Let's start by writing a viral hook. Here's a hook I wrote recently that went mega viral.
+
+We take this, this is the first part of training our little model. There we go. Now here's a different version of that viral hook based on the headline that I picked that I think could work.
+
+And then we take this, we copy paste this, and then we go, now I'd like for you to come up with five other variations of this same viral hook to increase the likelihood of people reading this piece about Reed Hastings. Okay. So what are, what are we doing?
+
+We're literally just saying, here's what I want to do. Here's an example of the thing I sort of want to mirror. And then you close the loop by saying, and here's my first try.
+
+And when you see, when you give it your first try, it's, you just created this mini model that it now has something to learn off of. Right? So here, here's variation two.
+
+Picture this, a 2002 Netflix leadership meeting, NBA hotshots, top engineers, all eyes on Reed Hastings. That's a pretty great intro. Fuck yeah.
+
+You know, but something that day felt off, like they were circling around the wrong problem. Then Hastings spoke, no one in this room will ever say Blockbuster again. Here's why he demanded it.
+
+That's actually an even better hook. Right? A hundred percent.
+
+And then the reason, the reason that this is so cool is because you have to remove your own ego and be like, who cares that AI actually produced a better hook? The reason it was able to was because I prompted it the right way. And that, that fundamental piece is what is changing everything.
+
+And either you get on board with that and you become an orchestrator and editor in chief, or you don't have a job anymore. Right? And it's self-inflicted because you could have changed.
+
+What we're doing right now is not hard. Right? Yeah.
+
+Well, pretty cool. I want to, I have a tactical question. Uh, is there a reason, like, should people do custom GPTs or what do you think?
+
+I think that's sort of like saying, um, I don't know how to drive yet. Should I go book a time at the Porsche track and learn how to drift a high speed 911? Yeah.
+
+Like that's, that's, and, and people have a miraculous ability to want to solve problems they don't have yet. You know, like the, the chat GPT and Claude are so powerful that you do not need much more than this for a long time. Do you use custom GPT?
+
+I've played with them a tad, but it's like, I don't even, it's not even worth the effort for me yet. Yeah. Yeah.
+
+It doesn't solve a problem for me. Okay. Fair.
+
+You know? Okay. So we, that was our little detour about, um, Twitter, Twitter hooks.
+
+Okay. But let's go back. I'm just going to move these down here just so we have them.
+
+But let's go back to if we were to turn this into an 800 word article, because I want to show the, the different levels and decisions that go into, you know, you making the high leverage decisions and then AI doing the lower leverage stuff. So when you have a headline as a default, the, the easiest container for creating content is to think in terms of chunks of three. So the average 800 word article, give or take, and when I say article, like you can post it on Twitter as long form.
+
+You can post it on medium as an article. You can post it on core as an answer. I just mean generally that, that, that amount of words, right?
+
+This is what it typically looks like. You have your intro and then you have three main sections. Now, can you have five sections?
+
+Yes. Could you have 50 sec sections? Sure.
+
+If you wanted to, right? But generally speaking, 800 words, three sections. The first decision that needs to get made are what are, let's just stick with three here.
+
+What are the three things that we are going to give the reader? And this is something that took me a really long time to understand is that 90% of the value of a piece is the headline and the quality of the three main points. Okay.
+
+So I'll give you a really simple example. Let's, let's say the title was how to make your first million dollars or actually here's, here's a better one here, how to save a million dollars in taxes in 2025. Let's pretend this was the headline of our piece.
+
+And V1 is our sub heads were, you got to learn about money. You should hire a CPA and don't be dumb. Okay.
+
+Let's pretend that's V1. What so many writers fail to understand is that 90% of the value of the thing gets evaluated just based on this. So if you saw this headline and then you clicked on this piece and you skimmed these three sub heads, you would immediately say to yourself, this is worthless and you would leave.
+
+And all of that would happen in less than two seconds. Right? The value equation changes dramatically when these main points are even more specific, even more tangible.
+
+Okay. So just, and I'm not going to sit here and stress test this for 10 different iterations, but just to show the example, it would be something like, um, if you aren't taking advantage of the, I'm sure there's some sort of loophole, right? Um, this can easily save you an extra 250 K, you know, you should be taking all money into a personal S corp, not an LLC.
+
+And then sub head number three is, uh, there's a program where you can buy section eight housing and get paid dividends that you can write off against your income. Okay. So those three main points, for example, are significantly more specific and they are significantly more tangible.
+
+And when you see each main point inherently, if you read this, you're like, oh, I've never heard of that loophole, which sells you on reading the actual content. And so if the main point, if the title doesn't promise you something that is worthwhile, and if the main points aren't tangible enough to, to show that you're going to deliver on that promise, nobody reads the content. And so instead you have all these people that are sitting there and they're like, oh, well, I got to start writing.
+
+And they start with the first word. And they're like, this is how you save a million dollars. No, I don't, I don't like that.
+
+I'm going to save a million. No, I don't like that. I'm going to say here's save a lot of money.
+
+No, I don't like that. I don't like that adjective. Wait, I don't like any of this weight.
+
+I shouldn't be a writer. Like that's what most people do. And they don't even realize that they've, they've dove into the writing before they've made the most important decision, which is what's the promise and how are you delivering on the promise in the main points?
+
+Does that make sense? Yeah. I feel like I've been, it's, it's interesting because I, I'm just, I'm doing some self-reflection on myself.
+
+You know, I'm, I'm a cowboy when it comes to writing. But I have been doing a lot of this without knowing I'm doing it. Yep.
+
+So, yeah. Sometimes it's intuitive. Oftentimes I will see that there's always people that do a lot of these things accidentally, or they, or they do them every once in a while.
+
+And my goal is to make them conscious so that as you're writing, you're sitting there and you're like, this is the next thing. This is the next thing. Right.
+
+Right. Yeah. Well, I think we were talking right before we started this, you know, I'm a new father.
+
+Time means something different when you're a new parent. Like you basically want to, you want to optimize your time when it comes to like creating and producing in a work setting so that you could be completely present with your child and support your family. So I think that having this is not only does the content end up becoming probably a lot more interesting to read, it also shortens the, it's a shortcut to, to getting what you end up, you know, I don't, this, this is going to save me literally days, weeks, per year.
+
+Yeah. It's no different than when someone's like, oh, you know, it takes me five years to write a book. Well, it's not because the book took you five years.
+
+It's because you had to make five years of mistakes in order to write it. Totally. Okay.
+
+So you want to, you want to keep it pushing? Yeah, we got like 15, 20 minutes max. Cool.
+
+We got it. We're going to compress it in and then we can talk takeaways. So next I'm going to introduce my, one of my favorite frameworks that I've ever come up with.
+
+I call it the 10 magical ways. The 10 magical ways are, you could reverse engineer 99% of all nonfiction writing back into these 10 ways. And the reason that this little list is so powerful is because it is the easiest way to remove any sort of writer's block that happens at every single stage.
+
+So the first way to use this is to look at the headline. And this is a great hook. Why Reed Hastings banned the word blockbuster.
+
+But this is a pretty vague and what I like to call intangible promise. So, and what it means for your startup. Right?
+
+It's like, well, what it means for my startup. Okay. Kind of interesting.
+
+But how can we make this more interesting or more tangible? And the question to ask is actually, which of these 10 things am I going to give the reader? Am I going to give them tips?
+
+Am I going to give them stats? Am I going to give them lessons? Right?
+
+So for example, you know, and three lessons that can be learned from the, what's Netflix's market cap now? Something stupid. 361 billion.
+
+Okay. 361 billion. And we'll say streaming service.
+
+Okay. Why did my brain immediately go here? Because again, another framework, big numbers and headlines, big numbers and hooks always perform well.
+
+Right? Yeah. Also like alliteration, alliteration also works.
+
+Like when you, like probably if I was writing this, I would say, why Reed Hastings banned the word blockbuster and three, well, no, scratch that. I, I, I, I, I, you can, you can hear how too much alliteration then sounds like force. Exactly.
+
+Right? Exactly. Exactly.
+
+I could hear your brain hearing it and deciding it was a bad idea. Like I was going to say like legendary lessons or something like that. You know, it's like, no, no, no.
+
+Okay. Let's just also concise and, and clear works really well for the internet. Yep.
+
+Exactly. Okay. So here's where things get really interesting.
+
+And I think that this step that we are about to talk about is the primary skill. It is the primary value. Okay.
+
+So we use the 10 magical ways and we clarify, what are we actually going to give the reader? We're going to give them three lessons. It's very simple.
+
+Okay. If you don't have clarity over which thing you're giving the reader, guess what? The reader's not going to know.
+
+And if the reader doesn't know, they're not going to give you their attention. Okay. So you give them three lessons.
+
+Now here's where it's so simple. It's complicated. If we were to break this into sections, what do we think the three sub heads are going to be?
+
+You want to take it? You want to take a guess, Greg? What are you thinking?
+
+Well, just generally. Like the three sub heads are going to share three... Lessons?
+
+Three lessons, right? It's so simple, it's complicated, right? So this is lesson number one.
+
+This is lesson number two. And this is lesson number three. Here's a very simple rule of thumb.
+
+If your sub heads do not deliver clearly on the promise in the headline, the reader will not take the time to figure it out. Okay? So whatever magical way is in the headline is going to be the thing in the sub heads.
+
+Okay? Now the highest leverage decision about the entire piece is what the three lessons are. And this is what so many people misunderstand.
+
+Okay? 90% of the value is not in the writing. It is in the fact that you said, I'm going to give you three lessons.
+
+And if those three lessons are, you gotta work hard, you gotta outcompete, and you gotta care. If those are the three lessons, you wrote a shitty piece. It doesn't matter how many beautiful sentences there are.
+
+It doesn't matter how clever your adjectives. Nothing else matters, right? So editor in chief, we gotta come up with the three lessons.
+
+Do we want to come up with them or do we want Chachubiti to come up with them? We can try. And if we fail, we can always go to our AI overlords, you know?
+
+I think that that is the best lens and point of view for all of this. I think that you should always try yourself first and then weigh it against what Chachubiti comes up with and then improve the quality together. That is why I don't defer the writing to AI.
+
+I write with AI, right? So give me some lessons, Greg. And I'll help you improve them if you just say things out loud as they come to you.
+
+So businesses built around guilt are, yeah, empower the customer. Not alienate them. Okay.
+
+Well, we can talk about convenience. A big reason I think Netflix won was convenience. So yeah.
+
+And every founder should ban at least one word in order to succeed. Which is like, if I was writing this piece, I'd probably lead with that because it's so spicy. And the way I look at writing, I'm curious what you think about this, but I literally view it as a funnel.
+
+And I'm like, okay, at every single word, I'm losing more and more people. A hundred percent. A hundred percent.
+
+So said differently, my little framework for that is whenever I'm coming up with the main points of a piece, it doesn't matter if it's an email, article, Twitter thread, doesn't matter. Once I've come up with all the main points, I then stack rank them in the ones that are most interesting or most compelling. Because inherently, once you come up with them, usually there's one where you're like, oh, like what a great main point.
+
+Well, you should make that the first one, right? Because that hooks the person. Totally.
+
+Okay. Okay. So cool.
+
+So now what do we do? We take this, we take our improved headline, and we go, okay, great. So going back to writing this as an 800 word article, here's the headline I came up with.
+
+Feed that into there. We go, and here are the three lessons I came up with. We take these, copy, paste here.
+
+And we say, but I want to stress test the quality of these lessons. Can you please come up with five more batches of three lessons related to this article headline? So I can see if there are any other opportunities to improve.
+
+JHPT is thinking. Again, I want to emphasize this process that we're going through is exactly the process that an editor in chief and a columnist go through. It's the same thing.
+
+You're just deferring to someone else's brain, or you could use the AI brain, right? So here, adopt a contrarian mindset, treat frustration as a business opportunity. Okay, batch three, batch three number one is a problem.
+
+Yeah. Ignore the me too trap. You know, so you got to, like what AI thinks is me too, and what, you know, we think is me too might, like I know what they're saying, like me too, but it could also be read as like the me too movement.
+
+Mm-hmm. And it's like ignore the me too movement trap. It's like, no, that's no, absolutely not.
+
+So again, great example of how AI gives a bunch of options, but your taste has the context to be like, hmm, the risk reward of me using that phrasing maybe isn't going to be as effective, right? You are editor in chief. A little writing pro tip for everyone.
+
+A lot of times when people come up with subheads, they think the same way that AI does. So they think in terms of like quippy main titles. Main titles typically lean more clever, you know, not as clear.
+
+And I've always found that the best main points and subheads are actually more like sentences where you're literally just saying to the reader, you clicked on this title, I'm going to give you all the value in three sentences bolded as subheads. And whenever you do that, it's so much more likely that the person then gives each section their attention versus if you give them something like more vague, you know, stay agile, even when growing, they don't really know what they're going to get out of that section, which means they don't give it their attention, right? So here, we actually like our output even more, you know?
+
+Now, if I wanted to clarify this further, I could say these aren't bad, but all of these main points are written as vague, clever main points titles. The ones I came up with are in sentence format and are much more tangible, actionable. Can you please come up with five more batches of three main points that are written in sentence format and are as tangible, actionable for the reader as possible?
+
+So this is where you're working with AI in that conversational format. And we might not have time to get to it. So just to sort of skip, skip to the answer.
+
+The reason why all this back and forth is so important is because you don't realize that as you're doing this, you are creating all the Lego blocks to go assemble the mega prompt. So whenever we create prompts for our paid newsletter, right with AI, for example, all of them are the end result of this sort of back and forth with ChatGPT or back and forth with Claude, right? You're learning what works, you're learning what yields the best output.
+
+And then you're basically going back through that entire conversation. And then you go, now, how can I skip to the end faster next time? How can I just compress all of this process into one prompt, right?
+
+Or one decision? So here, these are more actionable. Regularly map out your customer's biggest frustrations like late fees, then eliminate those pain points so your product stands out on convenience.
+
+That's actually a cool point. I might consider putting that underneath that main point, right? Run a banned words experiment in which you exclude all direct competitor names during strategic planning.
+
+Cool. So you can see how this is improved. And it's improved because we know what to ask for.
+
+And we know what to ask for because we've done it manually. So then, just to close the loop and just to sort of complete this for everyone, once you have the three main points, the next thing that you do, and this is what completes the writing, is you go back to the 10 magical ways and you go, so what am I going to give the reader in each one of these sections? So here, lesson one, every founder should ban one word most closely to whatever.
+
+So here, we really like the run a banned words experiment. So we put this here. How do we make this the most valuable we can?
+
+Well, we would explain to people the steps of running a banned words experiment, right? So here are the magical ways. We're going to go with steps, right?
+
+Convenience can be a product differentiator. Okay. Well, if I'm explaining that convenience can be a product differentiator, what might make sense?
+
+Maybe some stats might be interesting as to why it can be like proving that. Or maybe it's like examples of other companies that have used convenience in order to differentiate themselves, right? And then lesson number three, businesses built around guilt, empower the customer, not alienate them.
+
+Well, whenever you're explaining something, right, maybe here we need some like, and here are, you know, reasons why. Here's why that is, right? That's another one of the 10 magical ways.
+
+So this list is insanely powerful because then you just go through each section and you go, all right, here, lesson one, I'm going to give people steps on how to run a banned words experiment. Lesson number two, I'm going to give some stats to back up why this is a thing. And I'm going to give a couple examples of other companies that have done it.
+
+And then lesson three, businesses built around guilt, empower the customer, not alienate them. Here are a couple tangible reasons why. We haven't written a single like full paragraph or anything and all the decisions are made.
+
+All right. So now when you sit down to write, this isn't hard. You just go, oh, I fill this in in this section.
+
+And so then if you were to bring that over to AI, what would you do? You would literally just articulate what I just said. And then it would come up with a V1 and then you would run it back and do it again.
+
+You'd go section by section. You'd be like, mm, lesson one, I think those steps aren't tangible enough. Could you rewrite that in sentence form?
+
+Right? You are the editor in chief. Does ChatGPT have voice?
+
+I forget. Yeah. So like you can even, for some people writing is tough, but yeah, use voice mode.
+
+Like just go and dictate it. And this is, okay. So I just, I want to end on a meta concept.
+
+Yes. Why is paying for education so powerful? And why is paying for education even more powerful in the digital age?
+
+Take Ship 30 for 30 as an example, our writing program. In Ship 30, we basically have broken out, I don't know how many, 30, 40, 50 different like little writing frameworks. It's like when writing first sentences, do it like this.
+
+When writing headlines, do it like this. When formatting, do it like this. And in the age of AI, every time you buy a course, a book, you listen to a talk and any sort of education, you are not just learning.
+
+What you are doing is you are downloading that little framework into your repository that you can then go leverage with technology. Okay. So there's actually no reason why someone couldn't take Ship 30, take out all 30 of the different frameworks that we give them and then be able to articulate to AI, hey, when we write first sentences, we want them to be like this.
+
+When we write titles, we want it to be like this. And you just increased your own productivity and efficiency and quality of output by a hundred X for the rest of your life. And like Ship 30 is a $350 course, for example.
+
+And once that clicked for me, I was like, oh, so you're telling me that I can basically just go spend a fraction of the amount of money buying things that have taken people. It has taken me 12 years to learn how to articulate all of this. 12 years and thousands of articles and thousands of everything.
+
+Right. And you can literally just take it, download it into your brain and then articulate it to AI and yield a very similar output. And that is why paying for education is so fascinating in the digital world.
+
+I mean, paying for education or it's also just education. You know what I mean? It's like, there's also free education.
+
+Like this is free, you know, like all my pods are free. Someone could theoretically like download all the frameworks and idea generation stuff that we use. And all of a sudden you're an idea pro, you know what I mean?
+
+Like using AI. So I think your point is valid, which is, um, well, what is your point? Your point is basically that your goal is to, if you want digital leverage, you need to be an expert.
+
+How do you become an expert and gain? Yeah, exactly. You level up and you can level up by educating yourself, downloading these frameworks, and then using AI to take it to the nth degree is what you're basically saying, which I totally agree with.
+
+Yep. Yeah. Said, said in the most simple, simplest way, it took me 12 years to figure out, you know, the six proven single sentence openers for almost all writing.
+
+You could internalize that framework from me in four minutes, and then you can take that framework and then use it with AI for the rest of your life. The return on that is unbelievable. And this is also true for me.
+
+Like if I want to learn how to do something and I go to you and I'm like, Oh, Greg's an expert in this thing. Just give me the frame. I'll pay whatever for the framework.
+
+Cause now I know I, I have it and I can go use it for the rest of my life. Yeah. I think it was Mr.
+
+Beast and his like leaked playbook doc. He had a section say like hire consultants. Did you see that?
+
+Yeah. I read it. It was great.
+
+Yeah. I think that, you know, that was kind of like Mr. Beast's uh, what he thought too, which is basically level, he's a big level up guy, level up, you know, what he was missing was the AI piece, I think.
+
+Um, but you know, he's, he's done well for himself. So I think he's doing okay. We'll, we'll, we'll give it to him.
+
+Yeah. Cool, man. Yeah.
+
+We cooked up a lot. I, you, you under promise and over delivered just as I expected. Thank you for being so generous with your, your time, your brain, your frameworks.
+
+Um, and, uh, where could people learn more about you and some of the stuff you're up to? Yeah. They'll find me on the internet.
+
+I'm not worried about it. I just, I would, I'd talk about this stuff for free all day. Like I love this stuff.
+
+Yeah. Well, we'll include, uh, we'll include some of the stuff where, where people can find you in the show notes. Uh, and maybe what I'll do is I'll even cook up some notes from this episode that people can go and, and access.
+
+So that will be in the show notes also. I'll send you this doc that we were using. If you want to just show it as a PDF, that's fine.
+
+Yeah. That's great. Awesome.
+
+All right, my man. Thanks as always. Yeah, dude.
+
+I love, I love our chats. I love our chats and, um, I got some writing to do. Yes, you do.
+
+I'm waiting for the book. It's true. It's true.
+
+I need a book. I need, you know, for those listening, I definitely want to write a book. Um, and I've talked to Cole about it.
+
+Um, so one day folks, one day. Well, listen, you have Cole GPT here whenever you need it. Thank you.
+
+All right, my man. I'll catch you later. All right.
+
+See you. See you. Yep.

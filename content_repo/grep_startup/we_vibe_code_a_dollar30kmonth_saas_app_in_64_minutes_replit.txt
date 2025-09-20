@@ -1,0 +1,847 @@
+I didn't think we can do it, but we did it. We took an idea that I think could print $2,000 to $3,000 a day. It's called InvoiceNudger.com.
+
+And we used Replit, AI Agent, and Resend.com to actually go build it. Now, this isn't just your regular live cooking AI coding tutorial video. No, we also included how you'd actually grow the darn thing.
+
+So a bunch of marketing strategies, tutorial on how to use Replit, AI Agent, and Resend.com, why it's interesting. It's basically an email powerhouse. This episode with these vibe coding boys is really fun.
+
+And I hope you enjoy it. Please let me know. It's sipping time, baby.
+
+Billy Howell is back on the pod. Then we got a new face, new character, Unlock, Nicholas Conley. These guys are kind of like your vibe coders next door.
+
+You know, they're the guys who, you know, Nick is actually a sales guy who's just sort of been vibe coding on the side. He's learning, you know, learning as he's going. And Billy, I don't know.
+
+You're becoming Hollywood. You're becoming famous as a vibe coder right now. Yeah, sure, Greg.
+
+I have a lot of apps to work on. That's for sure. So, yeah.
+
+Happy to be back on and build something cool. All right, Mr. Hollywood.
+
+We'll continue. We're going to talk about this idea that I posted. And we're going to actually build it today.
+
+So, I posted startup idea. Someone should vibe code. Invoice nudger.
+
+A product for freelancers. Automatically follows up on unpaid invoices with increasingly assertive but professional messages until paid with no awkwardness. Let's get independent freelancers paid and happy.
+
+Thank you. And the genesis of this, by the way, is I've run agencies in my life. And getting paid is just...
+
+Not even that it's malicious. It's just people, like, forget. So, you need something like this and it doesn't exist.
+
+It's a total pain as well. And I think there were some comments on it saying, like, Stripe already does this or QuickBooks already does this. But just based off of what, you know, I'm sure you guys have seen the same.
+
+When you send a personal note saying, like, hey, are you going to get this paid? Or, hey, this is still outstanding. Like, that's going to convert or get that paid way quicker than an automated Stripe follow-up or QuickBooks follow-up.
+
+So, I think that's a big key in this product. That you have this coming from Susan in finance. Or you even have it coming from the CEO.
+
+And it has CC, the sales rep that sold it, or whoever is the account manager on there. I think that's the play here that gets this... That differentiates it and also makes it super effective that you can sell this as, like, a revenue generator rather than just another tool.
+
+So, you're thinking, Nick, that the solution is put in a custom domain, like your site's domain and send, like, from accounting or even just, like, a name? Yeah. I think a name is key here.
+
+So, it's not, hey, just a reminder, your invoice is due in a day. It's like, hey, Greg, your invoice is due tomorrow. Just wanted to make sure we're all still good here.
+
+Anything that I can help with? Any questions? And then it put that on their calendar.
+
+When it's due, hey, just a reminder, it's due again today. Let me know if I can do anything. That's going to convert way better than Stripe saying, you have an invoice due.
+
+Subject line, I'm going to break your legs. Yeah. I think there's an entire marketing campaign that you can put around this saying, basically, like, we're sending the mob after people.
+
+And we can put a knob on the aggression meter of, like, Conor McGregor or the mob sending after people or, like, play it down to, like, a nice Post Malone-esque figure. That's nice. Why Post Malone?
+
+He just seems like a nice guy. I don't know. Have you seen interviews of him?
+
+No. I didn't know he was into accounting. He's a really nice guy.
+
+Like, strangers will come up to him and they'll be like, can I have a photo? And he'll be like, oh, absolutely. How are you doing today?
+
+You know? He's just, like, that type of guy. He's just, like, super nice.
+
+Okay, so today's episode, if people stick through to the end, what are they going to learn besides this really cool idea? Basically, the process on how to take a little single-feature app like this and bring it to life. We're going to test it with Replit, but you can use kind of the same principles with any kind of AI coder.
+
+And, yeah, basically, it just kind of boils down to understanding, like, what tools you need to find in order to make these things happen and then, like, putting those tools together in the correct way. I think we should talk about some marketing ideas of how you could actually get this in front of the right people and start getting your first initial users for a tool like this. I agree.
+
+A lot of people, I've done a bunch of these videos where I talk about, you know, I'll bring someone awesome like Billy on and then people are like, okay, cool, but now how do I actually grow the thing? So we're going to talk about how to build the thing with two guys who never graduated Stanford, you know, CS school, who didn't go work at Google, you know, your boy's next door, and then we're going to figure out how to grow this bad boy. Cool, cool.
+
+I do want to say for the record, Craig, I don't know if you know this, but since the last time I came on your podcast, I've had several people DM me that they've actually sold apps that they built in Replit to real people, whether using like my Upwork strategy or just to people, friends and family or people like at their company. And one guy told me that he's closing a $30,000 app, which is just insane to think about. And I tweeted about this and a lot of people were like, oh, I don't believe it.
+
+But I've talked to so many people who have these red hot pain points like Invoice Nudger, but for their specific niche or their company. And so if you think about all the time you could save like a real estate agency or like a PE firm or how much like SaaS subscription you could cut off by building something with AI, like I buy that you could put a $30,000 price tag on something like this because the savings are there right off the bat. You're intimate with the users and it's custom to them.
+
+So yeah, I'm glad to be back on talking about this stuff. I think it's super cool. I think I could be completely dreaming this.
+
+So check me on this, but I'm pretty sure that guy was like, I'm going to go buy a BMW. I think I tweeted that to be hyperbolic. Like I said, people are buying or making BMWs off of my strategy.
+
+Okay. Well, let's learn boys. Let's learn.
+
+Okay. So to start, we kind of have to define like our features. So we want a way to set up a custom email address and use AI to write emails, right?
+
+Or to make templates. Yeah. So I think also we should think about what's V1 going to look like and then like what's V2 going to look like?
+
+So like V1, I actually think could be built on something like Lindy or Gumloop if you really wanted to test this market without building like the full Replit app. But V1, like you mentioned, is probably going to be able to connect to someone's billing platforms. So call it Stripe or PayPal.
+
+You probably want to choose one and sort of niche down there. And then you're going to be able to connect to the emails to just initially start sending those emails. I think you could probably pretty simply connect an API from OpenAI or Cloud and start writing those AI emails as well so that it looks more human written rather than the notification email that Stripe or PayPal would send automatically.
+
+Cool. Cool. Okay.
+
+So my approach, mine would be a little different. I actually for V1 would go no Stripe or billing and just get the email sending done because, you know, Stripe is going to be like a mess to set up. And for the purposes of a demo, you could just, you know, paste in your invoice link, right?
+
+And that also, that features a good way, I think, to get users who, you know, may not want to switch over their whole billing to you, right? They just want to use this to push existing invoices. So that's kind of what I would do.
+
+I don't know. Billy, this is, you bring the sauce, bro. You bring the sauce.
+
+It's such a good idea. Yeah. Yeah.
+
+Expanding on that, could you actually just make a BCC email so that when you send the invoice, you have the BCC email that auto logs it back into the system and takes it from there? What would the purpose be of the BCC? So that when you send out that initial email, you're already copying the tool on it and it essentially takes it from there.
+
+So they don't have to take the invoice and they'll copy it. Yeah. So I actually, what do I use for this?
+
+I use some CRM and I shouldn't name drop them because no free promo, but in any deal that you have that's open, they generate a BCC email address for that deal so that if you're emailing someone about it, you can just BCC that. So that's a great, I think that's a great feature. I don't know how I would set that up in an hour in Replit.
+
+I've never, because that gets into like email, SMTP stuff, but it's interesting. It's interesting. It's something to ask AI.
+
+So maybe, Max, do you want to switch over? Maybe I kind of screen share, get going on this bad boy? Sounds great.
+
+I like the BCC thing because it's so, it's natural and it's easy. So, okay, so I did some pre-work because I had time this morning and I know I have a call after this and I actually kind of looked a little bit, like 15 minutes into how to do this. I want to know, Greg and Nick, what you guys would use for email sending.
+
+I think most people would kind of use, I think Mailgun or like SendGrid or something is probably a pretty good plug and play. What would you guys use for this task? So, I, we're incubating a business.
+
+I, I'm literally cannot wait to talk about it. Um, I've, I don't think I've been this excited about a business in a long time and we're using Resend. Oh, no way.
+
+Okay, so that's what I found this morning. I literally have it pulled up. And I can't tell you how much I'm enjoying it.
+
+That is so crazy, dude. Yeah. Wow.
+
+I'm like, I'm a Resend convert. You said no free promo, but it's like, we promo. It's like, I want people to know the sauce.
+
+You know what I mean? Like Resend is sick. Yeah.
+
+Yeah. And I just found out about it literally this morning doing research and I was like, we should, we should test this out. It looks great.
+
+Yeah. Um, so do you want to explain maybe then in like a sentence or two what it is? Cause you probably do a better job than me.
+
+I mean, I'm curious. I mean, you, you can, you can talk about it. Okay.
+
+Well, it seems like it's just like, uh, uh, SMTP server that you can use just with like node. It's like, and it's built for react, uh, versus kind of other ones where they're, it's, it's a react base. Like it's made for these kinds of projects that we're doing in replet.
+
+Uh, and it seems super easy, like an embed, uh, I haven't done their little, like their first like tutorial, but it's like a couple lines of code. Uh, so I was, yeah, I was pumped to see this. Yeah.
+
+And it's just like a really beautiful, it's like easy to, for, for especially people who aren't super technical to like go in and see what's happening and just read what's ha, you know, what's going on. And I think they did a really good job of, um, I think they do a good job of, yeah, of, of onboarding people and, and, um, we're using it just to, we have a SAS app that we built and we're using it just to power all the emails automatically. And like the person who's leading that project, like has no experience, you know, doing email.
+
+Um, and you know, it worked. So. So if you want to, so it's a simple way to, you know, sort of set this up.
+
+And like, I think we're kind of understanding for people who may not know, but like that doing, setting up transactional emails for your SAS is like such an annoying step. And all the traditional ones like are, for some reason, like such a pain to use, like an arduous setup process, weird billing, like a zillion features. And so when I found this, I was like, okay, this is like two steps.
+
+And then like all the tabs over here are super simple. Like it seems like a really good, it seems like a godsend, honestly, for someone who like wants to iterate and make some MVPs really quickly. Um, that send emails.
+
+So yeah, let's use it. Cool. Okay.
+
+so I cheated. Um, and I, I basically just put in a prompt into replet ahead of time. Um, it says, make me a web app.
+
+Yeah. Yeah. Yeah.
+
+It says, make me a web app that lets you draft and set automated sequences of invoice, followup emails using the resend library. Here are the docs. And then I embedded like, uh, the links in the, the email libraries, like docs for like using no JS and then the GitHub with an example of it.
+
+Uh, and then I said, use shad CN for styling, which is just the component library that I think looks best. And then I'm kind of familiar with. Um, and so I put that into replet and actually I might want to show you guys, I just found this out this morning, but when you paste a link into the agent, now when you're starting, it gives you two options, which are take screenshot or get context, get text context rather.
+
+Um, and you choose one of those and the agent will either take a screenshot or just pull all the text. And then it'll have that stored, um, in the file tree, like in a context folder. So that's like a really cool feature that just kind of shows you what you're actually doing when you're, we're pasting in a URL.
+
+So I like that. And so it's, it's, I think it took maybe five, 10 minutes and it built this dashboard for us and I haven't used it yet. Um, but I'm going to poke around real quick.
+
+Um, Greg, maybe do we want to, first of all, do you guys think the prompt is good? Do we want to have another one going like just on the fly? Did I miss anything?
+
+I think the prompt looks good. Something that I've been finding super helpful recently is going to a chat, GBT or Claude, whatever your favorite one is and explaining your idea to it first. And then saying, does this sound right?
+
+Is there anything that I'm missing? And like talking to it almost like a, like an engineer. And then it, it'll lay out your prompt for you and, and grab things that you would have missed on your own.
+
+Maybe we try one like that. We explained it to chat, GBT and say, what do you think the prompt? And you can even tell it, I'm trying to put this in replet or whatever coding agent you're using and say, what do you think I should prompt it?
+
+I think that's a good idea. That's a good starting point. And it's kind of more exciting, uh, when we're here watching it, kind of get billed brick built brick by brick.
+
+So I think that's a great idea. Let's see what I got pulled up on chat. GPT.
+
+Oh, talking about the app, nothing too embarrassing here. Let's go. Let's start with this prompting.
+
+Okay. So what do we, what do you guys want me to put in here? Automated AI drafted emails.
+
+I want to build an app that sends automated AI drafted emails in order. Yep. You know, what might be fun is even just taking Greg's tweet and popping that in there.
+
+And we can take out what we don't want, but seeing what it, what it gives us. Oh, here we go. Okay.
+
+That's a great idea. I want to build this app. I want to use resend.
+
+For email sending. please. Please write a PRD.
+
+That goes through. The requirements. Screens and database.
+
+Schema. For building this app. The reader.
+
+The reader. Will be my. AI.
+
+Software. Dev. Do not be opinionated.
+
+About. The stack. We use.
+
+How's that sound? I like the. Do not be opinionated.
+
+Peace. Yeah. Because I think it just will cross too many wires.
+
+If chat. GT. Chat.
+
+GPT is like. Use like next JS and no. Yeah.
+
+And this and that, because. That's what. That's what replets.
+
+Good at. Is kind of picking the stack that it knows how to do. So.
+
+Let's send this. Full send. Okay.
+
+What are we looking at? We're looking at product requirements document for invoice nudger. It's listing the core features here.
+
+Invoice upload and creation. Automated nudging. Nudge history.
+
+It's got the user roles, which is important. Getting your access control. Like set out the gate.
+
+Is like. So like. This is what a user can use.
+
+Can see. Like this is what an admin can see and do. And then laying out the screens that you expect to be in the app.
+
+Like the dashboard. The off screens. This is all great.
+
+This is very useful. So. I think this is good.
+
+I think I'm just going to copy this. This is a lot. I'll be interested to see what it says.
+
+Because. That's a lot of features. We may want to take some out for the initial prompt.
+
+Just to make sure we're not overloading it. Unless we want to. Give this whole thing to replet and say.
+
+What should we prioritize? That might be confusing. What do you want me to take out?
+
+The invoice upload and creation? Authentication. We probably don't need right now.
+
+We definitely don't need. We don't want OAuth. That's a nightmare.
+
+Watch out for this. If it. If ChatGPT tells you OAuth.
+
+Like. That's probably going to confuse your AI agent. Just more steps.
+
+Yeah. User roles. Axe those.
+
+I mean. What you're doing right now is like. I think.
+
+Whenever you're creating any. Any piece of software. You're trying to think like.
+
+What's like the one killer feature. That I need. For this.
+
+And you can always add on later. Yeah. I.
+
+I think we got. We don't need. Invoice upload and creation.
+
+Um. I probably need client management. To some degree.
+
+I. I think this is pretty solid. Honestly.
+
+Yeah. Let's. Um.
+
+You've convinced Nick. Yeah. Well Nick.
+
+The. The email templates. Eventually.
+
+It would be great to have those. Written. By.
+
+AI. But I think just starting with templates is. Uh.
+
+Is a good start. Just say like. Hey.
+
+These are. These are proven templates. That we've seen convert.
+
+Just start with these ones. All right. Let's get to the fun stuff.
+
+Uh. We're going to paste in. This whole PRD from chat GPT.
+
+You can see it pasted here. All right. We're back in replet.
+
+I went ahead and pasted in that PRD. That we edited. I'm going to say.
+
+We've got the PRD pasted into replet. I'm just going to say. Build this web app.
+
+Based on the. PRD. I gave you.
+
+I have a tab. Also. Here's the link.
+
+To the. It said. Based on the PDR document.
+
+That's interesting. So the agent's going to come up with a plan. And.
+
+We're going to be like the product managers here. And be like. This is what we think.
+
+So it says. Let's build the initial prototype. And.
+
+Use basic username. And password authentication. That's good.
+
+That's very easy to implement. It says. Let's use a Postgres database.
+
+That's good. That's also very easy to implement. And let's use.
+
+Shad CN for UI. That's good. That's what we told it to do.
+
+It's asking. Do we want to add in. Any accounting platform integrations.
+
+We definitely don't want that yet. That's a lot. Automatic payment detection.
+
+Via payment processor APIs. That's another nice to have. And then.
+
+Custom invoice generation. With PDF export. That's another nice to have.
+
+Analytics dashboard. I think that was in the PRD already. So I don't know if we need to put that in again.
+
+I'm tempted to just let it go. What do you guys think? Send it.
+
+Send it. Okay. So now it's going to scaffold.
+
+If you guys haven't seen this before. It's pretty cool. It's just going to start scaffolding.
+
+Like a UI. Of the app for us. A visual preview.
+
+And it's going to be really cool. The first time I saw this feature. It blew my mind.
+
+Because it's just. Like it visualizes your idea. In.
+
+You know. Like seconds or minutes. Like it's amazing.
+
+This would be a really cool. For people out there that are dating. This would be a really cool first date idea.
+
+Just you know. Bring the girl over. And tell her.
+
+We're going to build a SaaS app. It's really cool. AI is amazing.
+
+And see what she thinks. It's called invoice nudger. You're going to love it.
+
+It's called invoice nudger. That's so good. It's a good icebreaker.
+
+For sure. Hmm. You can even do it on your phone.
+
+There's an iOS app. So like if you're at dinner. And there's a lull in the conversation.
+
+Be like. Look at the invoice nudger. It is funny.
+
+How. Sorry. No.
+
+I was going to say. So things are happening on screen. Yep.
+
+All the little modules in the dashboard are popping up. Little by little. It's using.
+
+Shad sand for the components. I think. I think it's funny.
+
+Like the color scheme is kind of similar. To the one I tried earlier. And we didn't even tell it anything about.
+
+A color scheme. Which you could do if you wanted to. Got a list of overdue invoices from tech solutions and future designs.
+
+This also. It seems like it should be a solved problem. But like I think no matter the scale of your business.
+
+Like invoices are. A the most annoying. And B.
+
+Arguably the most important. So. Any kind of app here that improves that process.
+
+I'm all for it. Okay. So now.
+
+So we've got the visual preview. And basically. I think it just.
+
+Writes some JavaScript. And. And serves that to you.
+
+And now it's going to go in the background. And build out all the routes. And kind of all the plumbing of the app.
+
+A good practice. That I like to do. Is go ahead and come over here.
+
+And click on the database button. And just manually create one. Because sometimes.
+
+The agent will forget. To create a database. And so if you just do it for.
+
+The agent. It'll be like. Oh look.
+
+We have a database we can use. I'm looking for the progress tab. Where is progress?
+
+Is it preview now? What is the progress tab? So usually.
+
+The agent. It shows like a progress. Just says progress on the tab.
+
+And it'll show the agent. It'll literally just show like. The lines of code appearing.
+
+For each document. Kind of like down here. It may pop up on its own.
+
+I don't know. They're moving stuff around in here. Okay.
+
+We can see we have files now. Look at this. We have a file tree.
+
+So. Ostensibly it just ran. Create React app.
+
+And now it's going to go in. And put in all the pages that we need. It's already imported.
+
+A bunch of UI components. So that's great. Got our main app file.
+
+It's setting up the schema. That's good. That's what we prompted it to do.
+
+That's to make sure your database. Is really locked down. And this dashboard is pretty cool.
+
+I think that there's a lot. You can do with the dashboard. Especially in terms of marketing.
+
+Thinking about when people take screenshots of their Stripe dashboard. Or their Beehive dashboard. Those are marketing tools in themselves.
+
+So if you can have in here. Like a nice looking chart saying. Something about how much was collected this month.
+
+That people can screenshot. And essentially flex like this. You've probably seen this pink chart all over Twitter.
+
+And immediately you're like what is that? And that's like a marketing tool for Beehive. And I think you can do something similar with this.
+
+In cash collected. And essentially flexing. People chase down.
+
+Legs broken. Yeah. Yeah.
+
+All this money collected. And no kneecaps broken. Yeah.
+
+Yeah. This is. I think that's a really good.
+
+I'm sure this is some marketing principle. But thinking about like what's your one KPI that's most important to the user. And how can you like demonstrate to them that they're making progress on that.
+
+And then also like make that shareable. And for Beehive that's this subscriber's chart. It's super easy to screenshot.
+
+It looks great. They even have a download button. If you want to download it as an image and share it.
+
+So they definitely thought about this before. My only edit to that Beehive chart is they should instead of having download it should literally say share. Like literally a share button.
+
+Share to X. Share to Instagram. Yeah.
+
+I agree. I agree. I try to put that in my apps.
+
+Share buttons on any kind of data chart or graph. Should we talk about some marketing ideas or basically ways that we can get this in front of a lot of people? Yeah.
+
+Maybe let's do that while we wait on the old agent to code. Yeah. I think did you guys see this tweet this week from I think as far as a TV free right got 1.5 million views.
+
+And I think this plays into the whole idea. You know when people say Stripe already does this or or QuickBooks already does this. I think free right is a writing tool.
+
+Now it's it's beautifully done. The design is really nice and it avoids distractions. Right.
+
+So like it's a Mac app. But it's just proof that like look that's the most crowded saturated market possible. And he put that out.
+
+He got 1.5 million views and hundreds of downloads per hour. And his launch was essentially a beautifully done video of a Mac app that that looked awesome to use. So one I think that you could make you know like we were talking about with the screenshot for the dashboard.
+
+You can make videos of you could tell stories and videos like you know behind the scenes of I had all of these invoices overdue. I sent my goons after I'm with with the invoice nudger and and it essentially saved my business. So I think that's one marketing play that you can take with this.
+
+What do you think about that? I think that's awesome man. There's tons of you could just take like screenshots or like screen records of like mob movies and like be like this is invoice nudger chasing down my clients.
+
+Right. Yeah. Yeah.
+
+Yeah. Yeah. I think on the video piece you know if you think about launching software or products initially you know the old way of doing it was getting on TechCrunch you know getting on media and then blowing blowing you up.
+
+And then it was getting on product hunt you know getting people to upvote you being number one on product hunt. And I think now the you know this community lives on X. So an X prioritizes video.
+
+So you're kind of crazy if you're launching a product without a video. And it's funny because we spend all this time talking about. AI coding how to build software and not much time talking about how do you actually storytell a really interesting video and how long does it need to be.
+
+So with Farza I think he just absolutely nailed it. Farza I can even pull it up. Let me pull it up while while this is loading.
+
+And I'm you know I think it's great to just use this as an example. So people here's the here's the video. Could you hear my sound by the way?
+
+Okay. We're going to watch it. Like are you kidding me?
+
+That looks like a promo for a Netflix show. Yeah. Right?
+
+Exactly. So he goes introducing free right a Mac app I made for myself. One simple clean place to write without distractions.
+
+All the natives web. No subscription. All local.
+
+Free. Enjoy. 1.7 million views.
+
+Okay. Then you go to the link and it's the video literally right there. It's like the cleanest website of all time.
+
+And it's straight to the point. And that's the brand. Right?
+
+You know the brand the brand is the moat. Right? And I think for invoice nudger if we're creating invoice nudger how do we think of that brand around like going after people the mob like even if it's a joke.
+
+Right? Into the brand. And how do we create a video that supports that story?
+
+Absolutely. Have you guys seen those videos that go viral on X every once in a while? They're like the AI Trumps and Bidens and they look like gangsters like in a house somewhere.
+
+It looks like a rap video. No. Okay.
+
+Well. Your feed is dialed. Someone out there is going to know what I'm talking about.
+
+I think that you could make these AI videos the same thing like Conor McGregor with a bat in that movie that he was in like coming after coming after your invoice or you know the mob showing up at local businesses getting getting your invoice paid for you. I think there's a marketing campaign that you can essentially do around that whole thing if that's what you're going to make your brand around. I think that works.
+
+I think you could also ask ChatGPT. You could like send stills from that video. Right?
+
+What's his name? Farzad? You could send stills from that to ChatGPT and say like I want an iconic marketing video like this.
+
+Like for this app here's what it does. Can you write me a script? Yeah.
+
+You can do that. You can also say you can also just be like completely real with ChatGPT and be like hey I'm launching this thing called Invoice Nudger. I'm worried that it's not going to get a lot of users.
+
+I really like what Farza TV did with the launch of FreeWrite. Here's what I thought was really interesting. You know imagine if Farza is the CMO of Invoice Nudger.
+
+What are the 10 things he's telling me to do? Yeah. Love that.
+
+Love that. Nick you want to give one of those a shot and see what we get real quick. I'm kind of trying to babysit our dev here.
+
+We could do that. I got some other like marketing strategies I can rattle off. Yeah go ahead.
+
+If we want to do that. Maybe I give you like four marketing ideas and then you rank them from what you think would be the best and the worst. Also like the most fun and the least fun and what you think would be most effective.
+
+So you know as your sales guy here the most traditional way would be cold email right. So let's say we're going after agencies. You're going to go out you're going to scrape a thousand to ten thousand owners of agencies or the operations person at an agency.
+
+You're going to go to a smart lead or instantly you're going to warm up you know 15 different email addresses. You're going to write some killer copy. So maybe your subject line is invoice paid or something that that gets their attention.
+
+And I think with something like this so I've done a ton of cold email and the call to actions that always can be effective. But they're they're not ideal when you receive them is like hey let's let's jump on a call or can I send you over a video right. Because when someone says that like you immediately feel like hey well if you send me a video then I owe you something after that with this I think the subject line is like hey you don't have to talk to a single person.
+
+Here it is go try it out. You get your first two invoices done for free. That's the first one.
+
+We're going to do cold email. Next one. I really like that copy because I get lots of cold emails that are like asking to do me a favor which used to be kind of the cold email meta.
+
+And it still might be if you write really good copy and it's really adds value. But just to generalize I don't need another meeting or another loom to watch in general. So I like that.
+
+Could you can you can you okay if you're if you're if you wanted to do that like which tools you need to do cold email. Sure. So starting off with your your lead list.
+
+First thing you're going to do is you're going to go to an Apollo or just Google like you know B2B email data or better yet go to an Upwork or go to a Fiverr and find someone that already has a list of 10,000 agency emails. So you go directly to Upwork and say I have $200 for the first person that has a list of 10,000 agency owners. I don't want you to go out and scrape these.
+
+I want someone that already has these and I'll pay you 200 bucks for them. So there's your first list. You have your first 10,000 contacts to reach out to.
+
+Then you're going to go wait. Wait that exists. Yeah.
+
+You've never done that. No. Okay.
+
+So you can you can absolutely do that. Yeah. Well, I I haven't had so much luck going that route like because I think I'm bad at hiring people on Upwork or Fiverr.
+
+So if you don't want to hire, I would say I like Apollo and something called Outscraper. Outscraper is probably one of the cheapest ways to scrape leads from Google or Yellow Pages. It's really nice.
+
+It's like an API that has just like a little old school front end. And then the other way that's kind of fun is Scrapebox, which is like old software from like the 2000s. And it'll actually run the scraper on your computer.
+
+I don't even know if it works anymore with Google, but I think you can scrape the Yellow Pages with it, which is useful if you're going after local businesses. Maybe not so much for SaaS. Those are kind of like the DIY versions, I think.
+
+Yeah. Yeah. My only warning without Scraper is that it's going to it's mainly for like local businesses.
+
+And a lot of times those emails that are on the websites are not really the emails that you want. It's like contact at whatever rather than, you know, Rob at domain. But yeah, something similar.
+
+Find email. Find with find the why mail. I think it's like $50 a month to start and you can scrape like 2000 leads from from LinkedIn.
+
+So that's something you get started with. Then you're going to go to instantly or smart leads. These are both $50, $100 a month.
+
+And I think now you can actually purchase email addresses directly through them. So you're going to buy, let's call it two or three email addresses per domain. And then you're going to warm those up for I think it's like two weeks.
+
+You just set it to warming. It warms it up. Essentially, all that's doing is sending emails to other inboxes in this warming pool.
+
+And then those emails are sending emails back. So it looks like this is like real human interaction rather than just like drumming up these email addresses and then sending out 100 different cold emails. Those are going to get flagged and all sent to spam.
+
+So then you have your warm email addresses and then you're going to set up your campaign. So you're essentially just going to drop in those 10,000 leads. And then you're obviously going to want to test your copy as well.
+
+Right. So I put that into buckets of, let's say, 100 leads here, 100 leads here. You can A, B test your subject line.
+
+So maybe one is like invoice paid. The other one is like you need this right now. I don't know.
+
+You can workshop that. And then test. Also, you can use syntax so that at the bottom you're using different call to actions.
+
+So you're saying like, hey, you don't need to talk to anybody. Check this out right now. Get your first two invoices paid on us.
+
+Or the next one could be like, you know, I made this video for you and it sends it to a landing page like the Farza TV free ride. So, yeah, that's how I'd set that up. Nice.
+
+That's that's a really good way to do it. So that's number one. Idea.
+
+Idea number one. Idea number two. Number two.
+
+I think we could do the Instagram and TikTok playbook. So I know this is more B2C right now, but I think there's a huge opportunity to do this in B2B. So running the same playbook that like a Cal AI or there's a bunch of other ones out there.
+
+By the way, I saw one for a taller app. It's like an app that is supposed to help you get taller. It has like 500,000 downloads.
+
+So that's just a side note. This this playbook is is running those apps up. And I think there's a lot of room to do this in the B2B niche.
+
+And so the playbook there is actually somewhat similar. You go open four accounts on TikTok, four accounts on Instagram and you warm these up. So for three to four days, you act like a real human on there.
+
+You follow a bunch of people. You bookmark things. You like things.
+
+And what you're really trying to do is you're trying to get in that niche. Right. So for this one, you're trying to get into the freelancer niche and find all the hooks that are working for freelancers and the videos and the formats that are working.
+
+So one format that's working in the test that I'm running right now is slideshows. So it's like, here's your for this. You could say something like, here's the top five tools that saved my agency.
+
+And then it's just a slideshow of different tools. And I think you could have invoice nudger in there. So, yeah, that's that's two.
+
+Number three, number three, I think LinkedIn short form and just LinkedIn in general. Right. A lot of your audience is going to be living on LinkedIn and X.
+
+I did an experiment with LinkedIn, basically posted a short form video every day for 14 days, two million impressions in in those 14 days. So you just have to this is like a quantity game. You're going to post a new short form video every day about invoice nudger stories of how invoice nudger is is helping clients how saved your business and using hooks like check this tool out or this agent is like the employee I always wanted or this agent collects my money without breaking kneecaps.
+
+I think there's like a ton of creative things you could do there. And and also posting like the screenshots from the from the sick dashboard that we're about to make. And then four is just hand to hand combat is what I like to call it.
+
+So you're going to you're going to make your list of 50 to 100 people you want using your tool. You're going to go to X and you're going to find creative ways to DM them and basically like enter their orbit. So you're going to comment on all of their posts.
+
+You're going to you're not going to you're not going to immediately pitch slap them like the first day that you want to get in contact with them. This is like a month long play that I know it works because I've done it, but it takes a while and it's more. It takes work.
+
+You need to you need to like be in their orbit, make sure that they know you exist. And then you're not going to immediately pop into their DMs and say like, hey, I think this tool would be super good for you. It'd be, you know, that post that you made was like really good.
+
+I like what you're doing with your agency, by the way. Would you be willing to test this tool? So that's number four.
+
+What do you rank these? I'll give you my top two. Yeah.
+
+And then I'll give you my bottom one. Yeah, I guess I'll give you my all four. So my favorite one is the LinkedIn.
+
+LinkedIn. Short form video on LinkedIn right now is literally like fishing with dynamite. They they want video so badly.
+
+If you can create half decent video and put it on LinkedIn. You're you're going to crush it. Also.
+
+Unlike X, you can put a link within LinkedIn and get people to actually sign up to the thing. Right. So right now links are so suppressed on X that, you know, the move on LinkedIn is basically post something, let it go viral for or get some likes and comments over the next four or five hours, then edit the post and then put the link at the bottom.
+
+So that's what you can do. Second, just the as you call it, guerrilla warfare. Just like going out there, reaching out to people, being in their face, adding value.
+
+I think it's just really. It increases your surface area for luck. So I really like that one.
+
+Your second idea. Which one? Which one was that again?
+
+TikTok and Instagram playbook. Yeah. Like interesting.
+
+But like more risk, in my opinion. And my least favorite one. And this is just because I'm not a cold email guy.
+
+It is just cold email. Like to me, it's like. There's faster ways to warm up an audience than cold email.
+
+So that's why I always prefer organic and social. But it was interesting to hear the tools you use. So thanks for like.
+
+Yeah, that was interesting. I will say. Totally.
+
+And I think the cold email, because it's passive and it's kind of you set it up once. That can be layered on with any of these. Right.
+
+So you can set that up and have it target people in the background all day while you go after, you know, the LinkedIn short form and and hand to hand combat. The art of war. Wait.
+
+So are you guys? I've always wondered this. I know that LinkedIn is like right per video.
+
+Do you literally just go on and attach a video to a regular post or do you need like is there like a reels tab? See, you just upload it like a normal tick tock in the whatever the dimensions are and it gets into their their short form feed. So I think there's a video tab now.
+
+I made a whole video on this behind the scenes of like it took I think it was day seven. My first one blew up and hit like three hundred thousand. But yeah, you essentially just post it like a normal video just in the dimensions of a short form video.
+
+OK, OK. That makes sense. There's a video tab now on LinkedIn.
+
+It's like relatively new. And so, you know, some people just I don't know who these people are, but some people are like chilling and just doing LinkedIn short form. And then some people are like if you go to the LinkedIn home feed, at least 50 percent of the posts are video now.
+
+Yeah, LinkedIn. LinkedIn is pushing it pretty heavy right now. You just got to stay consistent with it.
+
+And like they they will push you and you will get a viral video if you just like commit to putting up one a day or one every two days. It will hit. What do you guys say when someone will be like, oh, LinkedIn's cringe.
+
+I don't want to I don't want to post on there like people take themselves too seriously. What do you what do you say to them? I don't know.
+
+Like get over it. Like, do you want to win? Like, I don't know.
+
+Then don't post there. Save it for me. That's what I say.
+
+Like, that's fine. I think it's definitely a great place. It's a tool.
+
+Yeah, I think it's a tool. Like all these things are tools to have in your toolkit. And building a startup is so hard.
+
+There's such an uphill battle in terms of earning attention, creating trust, getting people to actually click things, doing things, getting their, you know, getting them to dance to put out their wallet. All those things are so hard. So you would think that anyone who's building something would want to increase their probability of success.
+
+And, you know, LinkedIn has a billion users, I think. Wow. Something like that.
+
+So, you know, hundreds of millions of active users. Those are people. Those are people who are potentially willing to engage with you.
+
+So I think that, yeah, is there a lot of bots and lameness to LinkedIn? LinkedIn, yeah. But, you know, there's also a huge pool of people.
+
+And ignoring hundreds of millions of active people seems like a foolish thing to do or a silly thing to do if you're trying to increase your probability of success. I am furiously prompting, if you guys want to check back in with our prototype here. Let's check it in.
+
+So the one that we just did looks pretty sweet. And it's kind of making us create an invoice and attach it to a client, which is kind of not what we wanted. But that part works.
+
+And then we can go here into invoices and click on it. And then we can either mark as paid. Oh, okay.
+
+Automatic nudging is enabled or you can manually send one. But then it says this feature is not yet implemented when I try to click send reminder. So we're fixing that.
+
+You know, it has a tab here. This is pretty cool for your templates. For like your first reminder for the invoice, second reminder, third reminder.
+
+I think this is nice. Oh, I have an idea. For like a future idea, what you can eventually do is for an extra fee, you can have a lawyer's letter.
+
+Like sent from a lawyer. So it's like a reminder from a lawyer. So it's like, hey, my name is Jimmy.
+
+You know, I'm counsel at Billy LLC. Just a reminder, you know, you signed the contract and stuff like that. So I think that's why I posted this idea.
+
+That's why I thought it was interesting is because I think there's a bunch of upsells that you can do as well. I like that. I like that a lot.
+
+Okay. Replit says I've implemented the send reminder feature. You can now test this feature.
+
+Email will be sent to the client's email address. So I'm going to go in and ask. Actually, I'm going to ask the agent real quick.
+
+Show me the code and explain how resend is implemented. What email address will the reminders be sent from? Don't write any code.
+
+And we may be able to. You can just command shift F and replit to search the code. So I'll go ahead and search resend.
+
+Okay. It looks like it's importing the resend. It's got its API key, which I added to the secrets and replit.
+
+There's a secrets tool. So anytime you put an API key in, do it that way. Okay.
+
+Okay. So it's got cron jobs set up for the automatic nudging. So I don't think we could test the cron jobs because they're set on like a daily schedule.
+
+But there is a automatic send button. The from address is configured in the user settings. That doesn't make sense.
+
+Right? Guys, sanity check me here. It doesn't make sense for us to be able to set whatever email address we want and send from it.
+
+Or the entire SMTP system would be insecure, right? I think it has to come from resend. It has to come from resend.
+
+So we're going to go into the resend docs. So I think, okay. I think it seems like you don't even have to specify what email it comes from.
+
+Let's just see what happens real quick. We're in this one. I think it should just automatically like pick the resend email address and send from there.
+
+Oh, I don't remember. Test user. Test user one.
+
+Test user one. Test user one. Test user one.
+
+Also just like really cool what I'm looking at right now. It looks really good, right? Yeah.
+
+Okay. So I'm putting in dummy information for a client. And invoice date is.
+
+Say it's due in two days. Pay me, please. Automatic nudging.
+
+Okay. Add the client. Create.
+
+So theoretically, this should just automatically nudge a day after the due date. If I set that the nudge interval is up. But let's see if we can go test a manual send to just make sure that the emailing is working.
+
+Did it say I needed to do that in resend? Yes. Okay.
+
+To add the domain on resend. Oh, okay. There.
+
+There. Okay. Oh, okay.
+
+Okay. It would have to be from the invoice nudger.com. Okay.
+
+This makes so much more sense. I, for some reason, thought we were not doing custom domains for like the test version. I misunderstood the docs.
+
+So we need a domain name, I guess. I think someone bought it. But that's a bummer.
+
+Yeah. Whenever. Yeah.
+
+I give away these ideas and people just, they take it and I love it. Any other ideas? Invoice mafia?
+
+Yeah. You can do like invoice enforcer. TonySopranoInvoices.com.
+
+That's perfect. If you're not having fun building startups, then you're doing it wrong. Okay.
+
+So I'm going to try not to expose any of my login or credit card information. And I'm going to buy this domain name. You pork bun guy?
+
+Yes. Yeah. I think it's the easiest.
+
+Yep. Pork bun is a good DNS. I've used Namecheap before.
+
+I think, I think it's just like pork bun is no frills and it has really nice like pre-configured DNS. So like if you buy one for like your Shopify, you can click a button and it'll just kind of automatically set it up for you. So it's really nice.
+
+I didn't know that. Yeah. They have a bunch of little pre-configures in there.
+
+And because a lot of these just kind of use the same formula every time. So it, it knows it. Okay.
+
+So in, let's see, do we have the domain? Pork buns loading. Here it is.
+
+This is the, are you doxing your, your domain list? Oh yeah. A little bit.
+
+Tell me you're an entrepreneur without telling me, telling me you're an entrepreneur. It was like a hundred domain. I kind of panicked for a second thing.
+
+I was doxing important stuff, but like I have so many worthless domain names that I've purchased. I don't use any of these. Okay.
+
+So in resend, we're going to add in domain name. Let's just, should we use the root or I think we'll just use the root. TonySopranoInvoices.com.
+
+North Virginia. That's funny. It's Northern Virginia.
+
+Okay. So we're going to have to set up these records. You can do this in any DNS host.
+
+So what are you doing right now? So I'm setting up the mail records in the DNS and we're going to get rid of the default pork bun ones. So basically you have to, whenever you use an email sender, oh, it's already verified.
+
+You have to verify like, Hey, I actually, I actually own this domain. I'm allowed to send from it. And this is how you do it.
+
+The host, this is the host. And then this is the actual value of the record. TTL is time to live.
+
+So that's how quickly is this record going to be put out, like registered basically. And I got that same error. And then Nick, why is DMARC important?
+
+I used to be able to tell you this, but it's something to do with your email security. It's basically like a, this is supposed to be 10. It's basically like a, I think it's a third party that does something to verify that your email isn't being abused.
+
+So now resend is verifying that email address. Okay. So good news is we got the email verified in resend.
+
+We got to find out like, how do we name the email? Okay. From.
+
+Yeah. Yeah. Yeah.
+
+Okay. We're going to send it. Let's see if we can do this.
+
+Set up the app to use enforcer at Soprano, Tony Soprano invoices.com using resend. Let's see what it does. Because right.
+
+We don't want it to use one that the user enters right now. We want it to just use. Yeah.
+
+In the future. In the future. What would you want?
+
+Like one from your own website or one from like Tony Soprano. Invoices.com. I think.
+
+Yeah. Like eventually you'd want to be able to set it up with your, your own company domain. Right.
+
+So you could have it sent from the CEO or, you know, the VP of finance or whoever, whoever would be like the most likely to get someone's attention. Okay. So I may not have even had to have done this because we have that settings page in here where we set our email.
+
+Right. So. What happens if I pause?
+
+I can't revert unless I make it. So we're going to let the agent go, but. Might revert it and try it how it was set up.
+
+Automate the cron job. Use the same email address. Okay.
+
+And do I need to set up. Do any of you have any idea. That enforcer email in recent or does it just kind of have carte blanche?
+
+I'm not sure. Well, I'm not sure. I just ask AI.
+
+Okay. Okay. Do I need to set up a specific sender email address and recent.com dashboard or once the DNS is properly configured.
+
+Can I set the sender address in my apps code? Do you guys ever use the deep research feature? Increasingly more and more.
+
+Usually on perplexity is where I use it. Sort of seemed, I don't know, better. I also only have the $20 a month on, on chat GBT.
+
+So I think I have like 18 a month or something. Okay. So it looks like we're good.
+
+How good are we right now? There we are. We're very good.
+
+I had to remember the test password. Okay. So now we're looking at invoices and I just want to make sure there's something here.
+
+So it says from Billy from enforcer at Tony Soprano invoices. Dot com. I'm going to save that.
+
+So it'll be for the automatic nudging. We're going to go into it. Okay.
+
+Let's see if we can send a reminder. Reminder has been sent. Just take a second to like realize how insane that is that within the last hour you have a functioning app that even if the email sending capabilities is not perfect, you can log into it and you have seven different pages.
+
+Guys, I didn't think we were going to be able to pull this off. This is like a heist. This is a heist, guys.
+
+I can't believe we did this. Wow. That is insane.
+
+It's like we spun up a collections agency with Replit and Resend. Literally. Literally two tools.
+
+And I don't even, I didn't put a credit card in on Resend. I don't even know how their pricing works. Like it was that easy.
+
+I learned about it 15 minutes before we got on this call and I was able to paste the docs into Replit and have it figure it out for me. It's just like, this is incredible. This is crazy.
+
+So really like all that's missing is that field to put in. I mean, I know there's a lot missing that we want to do, but like get to MVP, MVP. We need it to let you put in a link to your invoice, right?
+
+And they'll send, they'll send that link in there so people can actually pay your invoice. I wonder which of my clients are not current that I could test this on. Do you guys have anyone, like any friend clients?
+
+Like this wouldn't be crazy to send. I think we're all paid up. I think the next step is we need to find a test case.
+
+Well, I have to do it in another, another pod, you know, I'm, I'm just happy we were able to do this. Like to me, this is, this is really helpful. I mean, it was a tutorial on how to use Replit, Replit Agent, how to use Resend, how to think about marketing ideas and growing your SaaS app.
+
+So Billy, Nick, thank you. Wow. I actually did this like, I was like, thanks.
+
+You know, I have a ghoul, you know? Yeah. That was cool.
+
+Yeah. Thank you, Greg. Thank you for, uh, for having me on.
+
+This was, uh, this was a lot of fun. I'm going to have to spin up, uh, an email list form at TonySopranoInvoices.com. I think you, I think you do.
+
+I think you need a landing page now. Dude, that should be your, that should be your personal website. Just for the bit.
+
+It just doesn't make any sense. That's good. Wait, I actually, this is a tool question that I don't have a good solution for that you guys might.
+
+When you're starting a new like app like this and you bought the domain name and you just need something to collect emails, what do you use for that? Is there a tool that does that easily? Do you mean for like a wait list?
+
+Yeah, like a wait list. Um, you could use like jot form or something like that. If you use like a card for a landing page, I think they have something you can connect like air table on the backend.
+
+Um, yeah, I don't know if you use something different, Greg. Uh, I mean, framer card, uh, tally.so type form. Interesting.
+
+Interesting. Huh? There's another app idea there.
+
+Boys, this has been really fun. Uh, I'll include your social links and personal websites, uh, in the show notes that people can go to. Uh, is there anything else you want to leave people with?
+
+Uh, I would say go make like 50 apps, just like keep iterating. Don't get stuck on one. Like that's my advice is to, if you have an idea, try to make it three different ways and then move on to the next idea.
+
+And you'll get really good at using all these tools for making apps. That's like my training regimen. Yeah.
+
+I think this world is crazy right now. The fact that not only can you spin up an app like we just did in an hour or at least an MVP, but you can also then go out to all these marketing channels that are completely free. And you could test all of these marketing channels and get a wait list before you even touched replet.
+
+So, uh, it's an exciting world we're in. And, uh, yeah, thanks for having me on Greg. You both are legends and I appreciate your time and generosity.
+
+And, uh, I'm sure the listeners appreciate it too. So thanks for coming on the startup ideas podcast. And until next time, see you later.
+
+Bye.

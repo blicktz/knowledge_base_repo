@@ -1,0 +1,1095 @@
+Should you try Sam Altman and OpenAI's new AI engineer in the browser, Codex? Well, in this episode, that's what we unpack. We do a live tutorial for non-technical people around how to use Codex to get the most of it.
+
+I brought on Ben Tossel. He's one of the most renowned people for explaining no-code tools for non-technical people. If you want to see more content like this, like and comment so I know to create more free stuff.
+
+Enjoy the episode. Ben Tossel on the pod. He just went viral for talking about Codex.
+
+So we had to bring him on the Startup Ideas podcast to introduce us to Codex. What are we going to learn today, Ben? Well, we'll find out.
+
+I think what I've seen is people talking about Codex as this is really good for like senior engineers and their workflow. And I don't like people telling me what it's for. I just want to figure it out myself.
+
+Can I use it? Does it work well for me? If so, it's a tool for me.
+
+So I'm non-technical. I also have to like disclaim that. I'm more technical than a non-technical person and less technical than a technical person.
+
+So somewhere in the middle. And I'm just making these tools work for me. So cool.
+
+So today's going to be an introduction to Codex by a non-technical British man. And let's get into it. Okay, cool.
+
+If you don't know what Codex is, it's effectively a way to type in a task. It will code it for you and then push it to GitHub. That's basically what this is.
+
+So here it is connected to my GitHub repo, my personal website, the main branch. And the website looks like this. This is it so far.
+
+So if we want to change something here. Say I want to have another tab. It's like food I like.
+
+I'll just say add another tab next to investments. Tools. That is called food I like.
+
+In the doc put tacos. So because I want this to be true to the non-technical person. So you had to set up a GitHub.
+
+You had to create a website. How did you create that website originally? With Codex.
+
+Yeah. So if we go back. This is something I did cover in my video.
+
+Which you need to have GitHub connected. So yeah. GitHub is effectively a way for your code to be stored.
+
+And you can have. So this is what a profile looks like on GitHub. Not a very good profile.
+
+But a profile nonetheless. So you have these repositories. Which is basically like.
+
+That's your project. So this one for example. Is my personal site.
+
+It effectively stores all the code files that you have. And then any changes you make. You commit them.
+
+So they're called commits. They all show up here. So you can see that.
+
+It looks like I've been very busy. I sort of have. But I've been sending all these to Codex.
+
+To do. And then you'll see some other. Coding agents in here.
+
+Which we won't talk about in this video. But there's more other tools out there as well. That I highly recommend.
+
+So that's very briefly. What GitHub will do. And then you have to create a new repository.
+
+So when you've got a new. Like you want to do a personal site. You want to do a marketing site.
+
+Whatever you want to do. You're going to create a repository for it. If you type in any name.
+
+You can make it public or private. Add a readme. Or project does.
+
+Then create it. And then you'll end up with. The page that I was just on.
+
+Something like this. Yep. And that's it.
+
+But then you're like. Okay. Well.
+
+What do you mean? Where's the project? Where's the site then?
+
+And I'll have linked mine here. But. So what I did actually.
+
+To start this whole thing off. Was I had my site built on card. Which is a no code build.
+
+That I've loved for years. And it was. Doing fine.
+
+My site was. Up and live. For years.
+
+And I just didn't do anything with it. And then I actually went. And I just did.
+
+Like right click. I think I did. View page source.
+
+Which shows you the whole code. That like. Serves the page.
+
+This is the code that is on my personal page. So everyone can go and look at this. So on the no code builder.
+
+I had this. I just did. All copy.
+
+Paste. Into. A coding.
+
+I actually used a different coding agent. Factory. To then say.
+
+Put this all into code. And put it on this. GitHub repo.
+
+And that's where this then. Started off. I've also.
+
+Connect. You can connect it to then. GitHub pages.
+
+Which then. Let's you have. Your URL live.
+
+And you can give that to people. And have custom domains there. I used Vercel.
+
+So I'm just trying to be a bit fancier. And. That's another way to deploy stuff.
+
+And. You don't really need to worry about that. Too much.
+
+Okay. If it's like your first. Foray into.
+
+Sort of coding stuff. Yeah. Cool.
+
+Okay. So. Websites live.
+
+We want to add something. We want to change something. We.
+
+We add a task on codex. Yeah. So.
+
+And another tab. Next to investments tools. That is.
+
+Called. Food alike. In the dark.
+
+Put tacos. So if I just. You can hit ask.
+
+Which is just. It doesn't generate any code. It'll just tell you stuff.
+
+About your. Code. We're going to hit code here.
+
+And then it'll come up. As a task here. And you can see these are all.
+
+Past ones. Where they show. How many lines of code added.
+
+How many have. Been removed. Whether I actually.
+
+Merged it. Closed it. And we can talk about.
+
+Merging. Closing. All that kind of stuff.
+
+In a secs. We'll see it. First hand.
+
+So when we go into this. Task. You can see.
+
+It's doing a bunch of stuff. That looks a bit like. Hackery.
+
+That you see in the movies. It's just using. The terminal.
+
+To. Find. Different files.
+
+Understand. What the code. Actually says.
+
+You can see there. This is the code. It's my command.
+
+Palette. Modal. So I've got codex.
+
+To add this. When you do command K. Comes with this like.
+
+Shortcuts. Modal. So then I can type it.
+
+I can just do. I or. T.
+
+And it'll navigate the tabs. That's just in my keyboard. So this is now.
+
+So I'm interested to see. If it adds a new tab. And if it adds that.
+
+To the command line as well. If codex is smarter. To like.
+
+Piece those pieces together. So here. It's yeah.
+
+Saying. These are all the things. That I'm doing.
+
+I've looked at each file. I'll check out. What the documents look like.
+
+I'll create a new. Document for the new section. With.
+
+The title. Food I like. And tacos.
+
+Matching the style. I'll create. And update the.
+
+Main. Site. With a new tab.
+
+And it has. It said. I've spotted the key event listeners.
+
+For INT. But no changes needed. I'll add a food tab.
+
+Okay. So that doesn't look like. It's going to add its own.
+
+So the INT. Is not my keyboard shortcuts. For navigating those tabs.
+
+I thought it would. Do that. But maybe because I didn't ask it to.
+
+So now. It's still. Working on it.
+
+Almost done. We'll see this in a second. So you can see that.
+
+It's added two. Lines of code. On the food.
+
+Document. And. More.
+
+On the other one. This is what it looks like. When it's.
+
+Done it successfully. It seems anyway. So I'll show you the files.
+
+It's changed. This is the food file. This is the main.
+
+Like. Website file. So it's added.
+
+Another button. Food I like. And then added the.
+
+Food piece. Here. In the tabs.
+
+Codex. It did its own test. So.
+
+Codex is. Like. A use case.
+
+We talk about a lot. Is testing. And.
+
+We can get into that. A bit later on. Because I think.
+
+It's a bit. More technical. Than you.
+
+Probably need. For this. Like.
+
+For this workflow anyway. But. As we're here.
+
+We're like. Okay. Great.
+
+It's all worked. So. If I go to my sites.
+
+Refresh it. It's not there. So.
+
+I haven't actually. Pushed any of those changes. So.
+
+This. Button. Is what.
+
+What you want to do next. Create new PR. So PR stands for.
+
+Pull request. And effectively. Code.
+
+Is like. One. Thread.
+
+Just one line. Which is the main. Branch.
+
+They call it branches. So it's your main branch. Every time you go and work on something else.
+
+It's a fairly standard practice to. Create a branch. So you basically take that code.
+
+You copy it over to like. Another version over on the side. You work on that feature.
+
+As long as that feature is successful. And there's no conflicts with. The main.
+
+Code base. Then. You can merge it back in.
+
+And no issue should be. There. So that's what we're hoping for today as well.
+
+So if you click view the pull request. So on my. Repo here.
+
+Pull request. Add food tab. Summary.
+
+Gives you a quick summary of what it did. This is my. Because I'm connected to Vassal for deploying.
+
+I can do that and see the testing stuff there. So that's something we can get into later. All checks have passed.
+
+No conflicts with the base branch. So you can merge it. So if we just merge that.
+
+That will then. You'll see that here. This pull request is coming in.
+
+So it's just pending. Then it might take a couple of. Seconds.
+
+And then. Once we've done that. It'll deploy.
+
+And we'll be able to see it on our site. So that loop is a bit long. Currently.
+
+And this is where. We can get into the sort of testing piece. And yeah.
+
+Running tests. Environment. Previews.
+
+Like all of that. Is stuff we can dive into. Because this is the simplest version.
+
+I think. Which is just like. Write a task.
+
+Get code. Push it to your. Code base.
+
+See the change. Okay. Quick.
+
+Before you get into that. Why am I even using codex? When I look at codex.
+
+As a non-technical person. It feels. Ten times more overwhelming.
+
+To me. Than some of the. Prototyping first tools.
+
+Like Bolt. And Lovable. And stuff like that.
+
+So why. Why should people even. You know.
+
+Besides playing with the tools is fun. And it's good to learn. Why should a non-technical person.
+
+Even do this. Maybe they shouldn't. Is my answer.
+
+Yeah. Great. I.
+
+I think. I mean. It's part of my job.
+
+To just like test everything. But. More so.
+
+I like to see where. Things feel like they might be going. So.
+
+Seeing codex. The UI of codex. Is very different to.
+
+The UI of everything else. I mean. You could argue that.
+
+Like a Bolt. Would look. Kind of similar.
+
+Where it's got like the sidebar. And then. I mean.
+
+I don't know if I've got any. Other builds here. So this is.
+
+One of my. So it's got like the sidebar. Chat.
+
+And then you've got your files. Your code. You can see the preview.
+
+All that kind of stuff. You can deploy it. You can integrate with GitHub.
+
+Like all of the same pieces are. There. But I think.
+
+What I find interesting about codex. Is you don't look at the code. Or think about the code at all.
+
+I think you. You're obviously going to see it here. But I.
+
+Very rarely. Like look into any of these files. I'm only doing it.
+
+To sort of demo it. But generally. It would be like.
+
+Okay. Add this. Okay.
+
+It just says. It says it's open. That's what.
+
+I'll talk about that in a sec. So it says it's open. I'm like.
+
+Okay. That worked. Pull request.
+
+Did it. Pass the checks. Fine.
+
+And this you can now do. On your mobile as well. Through.
+
+Chat. I think that you can do it all. Quite easily.
+
+So you can see a world where you're sort of. Setting off mini tasks. To an agent.
+
+To go and do that. I think both. You can do it.
+
+I guess. On your mobile. But it's not going to be great.
+
+And I just think. Generally text to app. Builders.
+
+Are over building everything. Or completely. Setting everything up.
+
+As an over built. Tool. But actually all the features.
+
+Are under built. So if you ask for like a Shopify. A Spotify clone.
+
+With Bolt. It'll spit out like UI perfect. Looks amazing.
+
+But all the pieces don't actually work. And when it's those pieces. That you actually want.
+
+To get working. In order for it to be. Something that you can deploy.
+
+And do whatever you want to do with it. So you like focus on like the end piece. And then you got to work your way back.
+
+Through all the pieces that need to work. Which is actually hard. If you ever have tried to do that.
+
+Whereas in this one. I'm very iteratively. Adding on to something.
+
+And every time I'm adding a new thing. Technically there are. Tests.
+
+And checks. And everything should be all fine. So there should be.
+
+A lot less time spent. Doing work on. Things that are not going to work.
+
+Like things that. I'm going to then spend hours debugging. I'll either just.
+
+Give codecs another task. Or try a different coding agent. So my workflow is kind of changing.
+
+In that sense. Of like. I get the chatting back and forth.
+
+When I'm trying to make something. And I think it's really helpful. To have the like.
+
+The ask version of these coding agents. Versus the coding ones. Same as in cursor.
+
+You like have one chat. And you just ask about. What's happening in my code base.
+
+Blah blah blah. But something about this. Feels a lot different.
+
+And it feels a lot more like writing. Or like you said. This is your to-do list.
+
+But you're not doing the to-do. You're not doing any of the to-dos. Something that's way more advanced than you.
+
+Is doing it. In a way that feels. Delegated.
+
+And off your plate. So I just think. You start here.
+
+And you can think. Well. At some point.
+
+The. Like the PR stuff. That's going to be automated.
+
+Like. I'm sure you can get bots now. That if there's a successful.
+
+Pull request. It'll just merge it. To the main branch.
+
+So like. You never have to go on to GitHub. And then.
+
+You can do. I think. I think the limits around.
+
+A task can last about 30 minutes. Or something. Until it starts breaking.
+
+This is early preview. Obviously. So it's all.
+
+Yep. A bit on the fritz. But.
+
+Can we. Can you explain a little more. About what we're seeing around.
+
+Merged and closed. And what's happening. Yeah.
+
+But let me just show you. Did this work. Okay.
+
+It did. The keyboard shortcut. Does not work.
+
+But food I like. That all works fine. Tools.
+
+Yeah. Great. So that change.
+
+All happened. So then. This is.
+
+Merged. So that means it's been. Merged to.
+
+My main. Code base. My main branch.
+
+It's all part of the main. Code base now. So if there's another branch.
+
+It'll have that code already in it. So when you open. When you.
+
+Create a task. It starts off as open. You don't see any open ones here.
+
+Because I've either closed them. Or merged them. This.
+
+Is an example of one. I said. Make a light.
+
+And dark modes. Icon. Button.
+
+Switcher. And this is for a different test. That I was doing.
+
+It made one. I looked at it. Like.
+
+When I was testing it. And I was like. No.
+
+That's awful. So just. Close the pull request.
+
+You can just deny it. Basically. Like.
+
+Hey. I want to make this change. And you're on that GitHub page.
+
+You're like. Well. None of the checks passed.
+
+It didn't work. Or whatever. You can just close it.
+
+And then just not use that. So none of that is affected. It was on a branch.
+
+Your main code's fine. So you basically like. Think about it.
+
+I guess. In the support. Sense.
+
+You open a ticket. Ticket's being worked on. And then a ticket's closed.
+
+Sort of problem solved. That's kind of how. How I think about this anyway.
+
+So yeah. That's. We've opened the task.
+
+We've merged it. We've closed it. It works on my site.
+
+But I did. No coding. And I did.
+
+Maybe like. Four or five button pushes. To do this.
+
+And the numbers that I see. Next to merge and close. I see like a positive number.
+
+And a negative number. What are those numbers? Do you even know what those numbers are Ben?
+
+I do. They are. The number of lines of code changed.
+
+So. Plus 12. Minus zero.
+
+We didn't take away any code. But we added 12 lines of code. Across your whole code base.
+
+So it's not just like in one file. Generally that's. Yeah.
+
+That's what it is. So even on my personal site. I have this.
+
+Which I haven't worked on yet. Which is. I basically try to copy the codex UI.
+
+And that's what I use for this. Inspiration. But yeah.
+
+I've got these numbers here. They don't actually work. But this one.
+
+Actually pulls in the live. GitHub repo. So any changes I make.
+
+Are reflected in there. Every 15 minutes. So.
+
+I don't know if we did. Did we just do 12 lines? We did.
+
+Yeah. So that actually is the updated one. So if I click on that then.
+
+It'll show me the commit. Of what I just did. Just.
+
+Again. A little thing. I just said to codex.
+
+Try and do that. And I did it. Like.
+
+No problems. Before we go. You know.
+
+You've been playing with codex. For a few days now. What sort of best practices.
+
+Do you have. For. For non-technical people.
+
+Who. Who are playing with it. Oof.
+
+I'm worried about. Like what people will do. And then call me out for.
+
+But I would just start. Really simple. Like.
+
+Use it on your personal site. Or. Create a new personal site.
+
+If your pressure is about yours. The. One of the first.
+
+Things I did. Like I mentioned. Was like.
+
+Okay. I've been on this no code. Tool builder.
+
+For. God knows how long. Be nice for me.
+
+To just have. The site in code. So I can make any changes.
+
+In any like weird. And wonderful. Extra pieces.
+
+That I'd like. So. Just do it line by line.
+
+And like. Piece by piece. You can see all of these.
+
+Merge pieces. Like add a food tab. I could do that.
+
+In the code myself. Remove this text animation. Add keyboard shortcuts.
+
+Add a. Dark. Light mode switcher.
+
+So like. All of those things. They're all like.
+
+Nice to have. Fun. Interactive things.
+
+That you see on other people. Like other developers. Websites.
+
+That maybe you just don't have. On your own. But I would just start with.
+
+Make sure you have. A GitHub repo. And it has.
+
+At least. A read me. So you can just enable that.
+
+When you're creating one. And then. Just go from there.
+
+Say. Okay. Make a.
+
+Website with my name. As the. Header.
+
+Create an about section. And then create. Like some social links.
+
+And go from there. And then I think it's just. Playing around with everything.
+
+And just. Merge stuff. Close stuff.
+
+Um. The thing about GitHub. That is good.
+
+But it's not that easy. I don't think anyway. Is if you have.
+
+Merged something. That then your site. Completely fucks up.
+
+Like I did it. Before where. The site just wasn't.
+
+Loading anything. I was like. Oh shit.
+
+What have I done? You can always go back to. A previous version.
+
+That did work. So if like that food tab thing. Broke a bunch of stuff.
+
+On the site. I'll be like. Uh.
+
+Okay. I'll go back to this. So I can go back to this.
+
+And. All of these are like. Just disregarded.
+
+Code is never there. Don't worry about it. So there's no real.
+
+Danger of. If it's like a personal site. That isn't.
+
+Client facing. Money making. Whatever.
+
+It's something that you're just working on. Um. You can iterate on.
+
+And add like weird. Wonderful. Funky things.
+
+There's no real risk of. Like anything. Happening.
+
+Other than. Your site. Changing.
+
+Um. And then when you get stuck. Ask chat.
+
+GPC. Like. Hey.
+
+How do I roll back. This GitHub stuff. Um.
+
+How do I. Like. I want it.
+
+Because the thing you can't do in codex. So there's some limitations here. Obviously.
+
+Like. You can't upload any files. You can't upload any images.
+
+You can't say. Make the UI look like this. So me trying to do the UI piece.
+
+Was a challenge. Um. But then you can go to other tools.
+
+Like V0. Generate some design stuff. Bring that code in here.
+
+Or you can deploy that. And GitHub. And point that to here.
+
+Like there's loads of ways to do it. Um. Yeah.
+
+I just. Start small. And iterate even smaller.
+
+And. It's just getting a feel for like. Could I see myself coding like this.
+
+In the future. Like in six months time. Am I going to just think.
+
+This is so. Obviously. How.
+
+Everyone should be writing any code. Like. I don't.
+
+I can't write a line of code. Myself. Bar.
+
+Like. The minimum stuff. But I can ship all sorts of stuff.
+
+With tools like this. And. Especially.
+
+It being mobile native. Just feels like. I'm going to be shipping all the time.
+
+Uh. When you say. Ask ChatGPT.
+
+If you don't. Understand something. Do you mean.
+
+Going to ChatGPT.com. Or do you mean. Going to.
+
+ChatGPT.com. Slash codex. And hitting the ask button.
+
+I generally go to. ChatGPT.com. And then.
+
+I'll change. Between the models. To see what I.
+
+What's going wrong. And. The good thing about.
+
+Using ChatGPT. Is you can still say. Like.
+
+Look at this repo. Or. You can try.
+
+And. There's some other tricks as well. Like.
+
+Um. You change the first letter. Of GitHub.
+
+To. U. So.
+
+Uit. Hub. You'll see this.
+
+Which is. Just looks like a lot of text. But this is all the code.
+
+That is involved. In my. Site.
+
+So. I can basically copy all of that. And it's going to be.
+
+Ninety. Nine thousand tokens. I can copy that.
+
+Go to. Chat.com. And then.
+
+That's. Yeah. And just say.
+
+Um. My. Personal.
+
+Site. Are. There.
+
+Any. Like. Bugs.
+
+You just do like that kind of thing. Um. Um.
+
+So. I just. Tend to do that.
+
+I haven't really. Used the ask. I think I did it here.
+
+So. I asked. How do I ask you to push changes to my staging environment?
+
+How do I check the staging from a UI perspective? Um. And it can do it.
+
+And it. But it's more connected to. It's not connected to the internet.
+
+So it's like. I'm just looking at your repo. And answering.
+
+Based on what it has. What knowledge it has. To give you that response.
+
+Whereas I'd prefer it to be. Based on my code. And also.
+
+Various sites. So I can go and look up. How I can help you fix this thing.
+
+So. Generally that's. What I've been doing.
+
+Um. Yeah. Good tip.
+
+I also like your tip around. Try this for. You know.
+
+Well you kind of said. Like there's levels to this. Level one is.
+
+Build a personal site. Um. What are.
+
+What are the next levels? Like after you've built a personal site. You know.
+
+What's level two. Three. And four.
+
+As you're learning about codex. Yeah. I mean.
+
+I think. I haven't seen anyone. I saw someone tweet about this.
+
+Like has anyone. Used codex for like. Working with databases.
+
+Or authentication. Because they're like. There are a few steps up.
+
+To deal with those. Then there's things like MCP. Which are making.
+
+A lot of this very very easy. In things like cursors. So it's.
+
+Again. Maybe I'll just be patient. And wait for.
+
+MCP stuff. To be in codex. Or maybe.
+
+I don't use codex anymore. And. Claude.
+
+I've just released their SDK. And there's a version on that. Like.
+
+There's all different ways. That this is. Probably going to go anyway.
+
+Yeah. I think the first step is. Like.
+
+It's just getting you to. Getting you down the rabbit hole. Like.
+
+Oh. I can use this thing. To code.
+
+Onto a site that I own. And can see. Cool.
+
+What would I want to add? And even on your own site. You start going.
+
+Would be great if an integration with. GitHub. Could pull in the latest.
+
+Information. Like even that is. I would say.
+
+A next. Mini level up. It really depends then.
+
+On what. What kind of things you're into. And want to build.
+
+But I think there's. There's obvious things. Like.
+
+Having. User sign in. Sign up.
+
+There's like. People saving. Or bookmarking.
+
+Items. In your. Product.
+
+Or whatever you're building. There's. The database layer.
+
+There's like. The whole AI piece. Is another.
+
+Another thing. But the best thing about. This whole space.
+
+Is there's so many open source. Like. Repos.
+
+On GitHub. So you are going to be spending time on. GitHub.
+
+That just. I mean. I think there's a.
+
+There's a guy who works at. Together AI. Hassan.
+
+Who. Always. Releases.
+
+All of these open source. Yeah. All of these open source.
+
+Like. Mini AI tools. So this is like a.
+
+Summarized PDFs. Okay. Great.
+
+And then. They're always. Open source.
+
+And this like. Might even look scary. But it.
+
+Really it's. Clone the repo. Which is.
+
+Clone the code base. By using that. And.
+
+For that today. You'd have to use. Some of the other.
+
+Coding tools. But I think it's like. It's going to be fairly soon.
+
+Where you can just. I mean. I could.
+
+I might be able to do it now. We can try. So if I fork it.
+
+And then. Just do that. So that.
+
+I've now got that code. I wouldn't just change the name. And say it's my code.
+
+But that's. That's what it is. So then if I go.
+
+To codex. I'll need to go to my environments. Create the environment.
+
+Basically connect the right repo. What was that called? PDF something.
+
+It might just. There we are. Smart PDFs.
+
+So if I just do that. I think the UI needs to be. So then if I click.
+
+Into that. How. Do I.
+
+Get this. Code. Up.
+
+And. Running. And dumb question.
+
+Like why did you need to create a. Separate environment. For smart PDFs.
+
+It's just. So they call it environments. And it's just like.
+
+A different connection. So it's a different place. That it's.
+
+Talking to. And writing code to. Because.
+
+Like you can see here. These are all. It's like a folder.
+
+Yeah. It's effectively that. So I think even.
+
+The fact you have to go into environments. Create an environment. Doesn't feel.
+
+Intuitive. No. It just feels like you should be able to.
+
+I don't know. An add button here. That is just like.
+
+Connected new repo. But the environments piece is much. More advanced than that.
+
+Which is why. It's probably done this way. So.
+
+Here. They have. This piece.
+
+The code execution piece. Which I haven't actually touched yet. But often.
+
+If you have. Code. Like.
+
+What Hassan's got. So I assume that's. That's why I asked that question.
+
+Because I think it's going to be. Helpful to show. A bit of that.
+
+Is. Where is the code. So yeah.
+
+See here. When you're running. To run this app.
+
+You need to run. PMPM install. So that's a terminal command.
+
+You've got to run this. And you've got to run this. Which.
+
+Feels a bit crazy. And like. I don't know what you're saying.
+
+If you're an untechnical person. But if you're in. Cursor.
+
+Or some sort of. Actual coding environment. There are terminal command.
+
+To basically spin up. The servers. And the things that you need.
+
+In order for the app to work. But with codex. For it to be able to.
+
+Interact with your code. And see it properly. You need to run those commands.
+
+So here. Is where you say. It gives you examples there.
+
+But it's like. PMPM. Whatever it was.
+
+Install. And then. Whatever the other ones.
+
+So you have to put them here. But this is like. Proper development.
+
+Environment. When you're building something. That is a bit more.
+
+It's got frameworks. Like. XJS.
+
+Python. Whatever. Like it's got things in it.
+
+That's more than. HTML. CSS.
+
+And JavaScript. Which is more. What I talked about today.
+
+In the personal. Site context. But yeah.
+
+I want to do this. I want to test this out. And.
+
+Yeah. There might be a follow-up video. To say.
+
+I was wrong. Although. It was really good.
+
+So. Yeah. Cool.
+
+Let's leave it at that. I want to get more. Technical.
+
+And more down the rabbit hole. For this. Ben.
+
+Thank you for being generous. It's your time. And your sauce.
+
+I will include. Where to follow Ben. In the show notes.
+
+Highly encourage people. To go check him out. And his newsletter.
+
+Ben's Bites. Anything you want to. Leave people with.
+
+Ben. I think all of this looks. Scary.
+
+Or feels scary. And there's too many things. Launched all the time.
+
+So. That's just the world. That we're in.
+
+Unfortunately. And I think. Just like.
+
+Getting to the point. Where you feel like. Maybe just test this one thing.
+
+And. On this one simple. Site idea.
+
+And this one simple feature. You just got to start there. And I think.
+
+The whole point of what I do. With my newsletter. And like.
+
+What I tweet about. And record videos on. Every so often.
+
+Is. Trying to make it less scary. For like a non-technical person.
+
+Like. Today. It wasn't a planned.
+
+Like. Tutorial style. Well.
+
+This is how you can do these things. But. My video might be a bit more.
+
+This is like. A really. More structured way.
+
+Like showing you actually. How to set other projects. And stuff.
+
+But. It's not. That scary.
+
+Like. I know it's easy to say. From the other side of the fence.
+
+But I've been. Non-technical. Forever.
+
+And. And been talking about no code forever. And all those other things.
+
+So. I come from that world of. I can't code.
+
+Code is scary. What's GitHub? What am I supposed to do with it?
+
+And I'm just. Getting curious enough. To go past those barriers.
+
+To then be like. Oh. I've got a site live.
+
+And now I've got. 50 live. And I've got all sorts of different apps.
+
+Of different complexities. And like. Once you go.
+
+To the rabbit hole. You're going to start. Wanting to do more.
+
+Once you've figured out that. So don't set yourself up for failure with. Let me do a.
+
+A Spotify clone. And then deal with all the bugs in the middle. Because it'll just be a nightmare.
+
+And you'll never want to do it again. Like start with. One simple thing.
+
+Try and do that. If you fuck it up. Then ping me I guess.
+
+Yeah. Amazing Ben. Yeah.
+
+My. You know. Just.
+
+My takeaway from. From you showing this is. It does feel.
+
+Overwhelming. Like. Just the semantics.
+
+The terminology. GitHub. Just.
+
+Itself. Feels like a behemoth. That being said.
+
+I think that. Playing with. Codex.
+
+Is almost like. A lightweight. Way.
+
+To learn how to code. In some ways. Like.
+
+It. It. introduces you to a lot of.
+
+Computer science. And development. Terminology.
+
+In a lightweight way. And like a bit more of a fun way. So.
+
+Whether you end up using codex. Or you end up using bolt. For example.
+
+You know. It does. It's just.
+
+This is going to make you better. At. Building with AI.
+
+Period. And. The lovables and bolts.
+
+And curses of the world. Are probably going to introduce. A to-do list.
+
+Task-based. UI. In the future.
+
+Because it just kind of. It makes a lot of sense. So.
+
+My take is. Will I be using codex. Every day Ben?
+
+I'll be. No. I'm not going to be using every day.
+
+Will I be using codex. This weekend. As a learning project.
+
+To play with my personal website. Absolutely. Yeah.
+
+Yeah. Exactly. And I think.
+
+It is that terminology. That you've got to get. Over a bit.
+
+I did a write-up actually. It was on our. Substack.
+
+That's. Like GitHub for non-technical people. Trying to dispel some of that.
+
+Scary stuff. But yeah. I mean.
+
+I think the same. And it's more that. Like you'd rather do.
+
+One thing. Correctly. Yeah.
+
+Than. The big thing. And then.
+
+Like. This introduces. Coding to you.
+
+Like. It drip feeds it. I think.
+
+With. You've got to set up GitHub. And then you can start coding.
+
+That's fine. With. These text to app builders.
+
+You can just. Type a prompt. And you start building.
+
+Great. But it's not the same. You still end up at the same.
+
+Place at the end of it. You still have to deploy it. It lives somewhere.
+
+It's probably going to live on GitHub. Like. It's going to end up in the same place.
+
+It's just how you. Enter. And I think what you mentioned with.
+
+Is this going to be the place where. Someone learns about. Coding.
+
+Or like. This is where they write their first line of code. Or AI writes it for them.
+
+I kind of feel like this is. A better place to start than. A text app builder.
+
+Because. Like I said. It's going to build.
+
+A big. Fancy thing. And what you're going to end up in.
+
+Is like. Seeing a bunch of terminology. Code being written.
+
+Tests. Failing. They're all to do with.
+
+Now you have to help the AI. Solve these bugs. That's a way.
+
+Deeper. Like. Place to start swimming.
+
+Than here. I think. So.
+
+That's what I think is interesting about this. Is like. It really doesn't feel like coding.
+
+But it is. And it's. Come from the.
+
+Like. Almost top down. Bottom up.
+
+Like. Analogy. You could think about here.
+
+Maybe. But I don't think it's built like that. So.
+
+It's obviously meant for the whole stack. So. Yeah.
+
+We'll see. Ventasa everyone. Thanks for the time.
+
+Hope you learned something. Cheers.

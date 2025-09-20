@@ -1,0 +1,327 @@
+You might have heard of Vibe Marketing. Today I'm going to teach you exactly how to do it super simply using tools like MCP, N8N, and Clode. It's going to help you replace your entire marketing team with AI.
+
+And I know that sounds crazy, but I'm going to show you actually how to do it in a very, very simple way. You're going to enjoy this episode. People who listen to this episode, I don't care if you're a designer, a developer, a copywriter, a marketer, you will learn some skills that will help you make a lot of money coming up, help you automate a lot of your job, help you get customers.
+
+And we show you the exact plan for how you can create a business from the arbitrage and the insights of using a lot of these AI tools. I couldn't be more excited for you to listen to this episode until the end, because I do believe that a lot of lives will be changed if you know how to use these tools. Enjoy the episode.
+
+This might be our most requested Startup Ideas podcast. I did the video and we talked a lot about some of your ideas on Vibe Marketing, Introduction to Vibe Marketing. I brought on Mr.
+
+Vibe Marketing himself, boring marketer. And what are we going to learn today? Well, you know, I've been spending a lot of time building workflows and sharing what I know about it with, you know, my social audience, community and all that.
+
+And I think a lot of people believe that workflows have to be super, super complicated. You know, maybe you've seen like a screenshot of a workflow and it's got a million different things happening, but I'm going to actually show you that the most powerful workflow you can build is also the simplest one. So by the end of this episode, what are people going to learn?
+
+Are they going to get like an introduction to N8N? Are they going to understand how to build their first workflow? Like why should someone give their time to stick to the end of this?
+
+I think if you stick to the end, you're going to get a glimpse of what the future of marketing actually looks like. And it's going to be very actionable. And I'm going to lead you through exactly how I would Vibe Market a product.
+
+Cool. And my ask for you is I've played with N8N. It's a bit overwhelming for me.
+
+And I'd like to see a sample workflow so that I can basically just copy it and just implement it in my business. So that's my ask for you. Let's get right into it.
+
+Sure. All right. So like I said, you know, there's a lot going on about these workflows and what tools to use and things of that nature.
+
+So in the community that we have, there's a lot of people that are like, hey, how do I build my first workflow or where do I even start? So the two most common platforms that are out there that I typically recommend folks check out is either Gumloop or N8N. I like to use N8N because I'm a little more on the advanced side and there's a little bit more flexibility like what I'm about to show you here today.
+
+But you should use it because you can automate a lot of the boring manual tasks that are in your business. I use it for marketing specifically where there's a ton of manual stuff that you have to do. And once you automate it, you're kind of freed up to focus on more strategic or creative things.
+
+And that's sort of the essence of what Vibe Marketing is all about. So what I thought I would do is kind of show you a few things that I created this morning that if you were to try to do it manually, it would take you at least two to three weeks of work to get it done. And I did it in about 30 minutes prior to hopping on this podcast.
+
+Sounds too good to be true, but I'll let you, you know, you're one of my smartest friends, so I'd love to see it. Okay, cool. So one of the other common questions I get around, you know, Vibe Marketing and building workflows is what workflow should I build?
+
+I think people have this like cold start problem. So we're also going to try to answer that as I walk you through this stuff. So the way that I like to think about building my first Vibe Marketing workflow is I like to understand where's the demand out there on the internet for my product or my service.
+
+Now, the easiest way to find that is to do keyword research. This allows you to understand what people are searching for on Google, how often they're searching it, and how much potential traffic you can get to your website if you rank and show up on the results for that keyword. Now, you know, SEO and all that's changing.
+
+A lot of people are talking about how do I rank in LLMs or how do I show up in chat GPT if someone searches for a keyword related to my product as well. And this is going to help to address that too. So I'm really going to walk you through how I would approach an organic growth system that's going to help you rank and get discovered, help you create content that's relevant for what your customers are looking for, and then how you can look at it as sort of like a continuous improvement process so that you can go out and beat the competition.
+
+So when it comes to keyword research, you know, there's a couple common tools that people use to do it. There's Ahrefs, there's SEMrush, there's a bunch of other ones. Now, if you've ever tried to log into one of these tools, it's very overwhelming.
+
+Have you ever tried to log into Ahrefs, Greg? Much to my chagrin. Okay, so you log in, there's a lot of different buttons, a lot of different things to click around on and stuff like that.
+
+So I'm going to show you sort of an end result and then I'm going to walk backwards. So what you're looking at right here is a fully completed keyword research study that I did this morning. So sorry, I just opened up that I did this morning.
+
+So what we're looking at here is 42 different keywords that Beehive, a newsletter growth platform, could go and rank for. It's telling me that there's 14,580 monthly traffic available for these keywords. It's telling me that, you know, there's about medium competition for these keywords.
+
+So I have opportunity to go and outrank the competitors. And there's 20 high potential keywords specifically here. So what you see is there's various types of keywords.
+
+There's informational keywords. These are like, how do I start my first newsletter? There's commercial keywords, like what is the best newsletter platform for my business.
+
+And there's a couple other types as well. It's even showing me some of the competitors that are currently ranking for those keywords out in the market. Okay, so the next thing is that it's giving me some key insights and recommendations already.
+
+So it's telling me what type of content I need to go and create in order to rank for these keywords. So it's telling me to create like comprehensive guides around newsletter creation, monetization, and even growth strategies. It's telling me how I can get a competitive edge versus the competition.
+
+So I need to analyze the gaps on how I'm different than sub stack, for example. And then it's giving me, you know, what the traffic opportunity actually is. So this is just the overview.
+
+And then if we go into the long tail recommendations, you can see that we have a bunch of high quality, very targeted keywords that we can go after and try to rank for. Okay, so we've got examples like newsletter platform for creators, email marketing software for writers, best newsletter monetization tools. These are all things that folks are actively looking for online.
+
+So if I click into these keywords, it's giving me like the exact steps that I need to do to go and, you know, show up for this, so that I can get the right type of traffic to my website. So it's telling me create in depth guides, develop case studies, create comparison content with competitors, and then build landing pages optimized for this term. All right, so I've got some information on like where the demand is out there.
+
+And that's usually the place that I like to start. Now, if you were to build this out as a workflow in N8N, it would be very complex, you know, it would be like, hey, go and, you know, access some sort of keyword database, categorize the keywords, go and look at competitors, and there'd probably be like, you know, 15 to 20 different, you know, nodes, which are, you know, different actions within a workflow in order to get this done. But I'm going to show you like how simple this can this can really be to get this type of output.
+
+I want to say one quick thing. Yeah. So we just quickly went over the exact plan around how to just siphon out 5, 10, potentially up to 15,000 monthly traffic to a landing page.
+
+Like it's like build this guide, here's what it should be, which is insane to think about. It's basically giving you the plan around how to actually build the thing. And then when you look at something like beehive.com, so these are SaaS tools that will give you 10, 20, 30, 40, 50% of revenue, you know?
+
+So I've done a guide. I'll link it in the show notes around how to start an online directory, which sounds like by the way, the most boring business to start of all time, like an online directory and teaching people and basically, you know, creating a list of top, let's say email providers. But having affiliate links is probably, and creating directories and creating guides around this sort of thing is probably the most, the easiest way to get started in this whole like make money online space.
+
+Yeah, exactly. I mean, the easiest way to get started is to figure out how you can identify existing demand and analyze the competitors to see what they're not covering. And then that's your entry point right there.
+
+Cool. All right. Okay.
+
+So this looks pretty complicated, right? Like it's got all kinds of recommendations. It's got a bunch of keywords, all kinds of really good stuff.
+
+And like I said, you might think that this requires an incredibly complex workflow, but I'm going to show you how I arrived at this. So I'm going to open up a Claude desktop. So you might think that there's a super complicated workflow to find these opportunities and keywords out there, but I actually created that entire dashboard showing me my relevant keywords.
+
+If I'm Beehive with one prompt within Claude. So I said, find me 20 long tail keywords, non-branded. That means I don't want it to be like people searching for Beehive for the domain, beehive.com.
+
+Now, if you were just using Claude out of the box, it couldn't do that. Now you might see that I have this little thing here called keyword tool. Do you see that Greg?
+
+Yeah. I don't know what I'm looking at, but like, I've never seen that. Okay, cool.
+
+Yeah. You've probably never seen that in Claude because it's not something that you can just access within Claude. What this is, is this is an MCP integration.
+
+Okay. So I'm able to access a tool that I created in N8N called keyword tool. That's going through Ahrefs, all the data in Ahrefs and just pulling out the information that I need, which are these 20 high potential long tail keywords.
+
+So if you find Ahrefs confusing, if you find keyword research confusing, we're letting Claude do all the hard work of finding what keywords you need to focus on. I love it. Okay.
+
+So that alone, like if you want to do like manual keyword research and you're not like a super, you know, search or SEO or digital marketing professional, that could take you 20, 30, 40 hours to go into a tool, to analyze the keywords, to look at the competitors. And when I prompted Claude here, it returned these keywords to me within 30 seconds. Yeah.
+
+Also you could be spending 20, 30, 40 hours and still not have the right keywords. Yeah, exactly. Like these are highly relevant.
+
+They're exactly the type of keywords that I want to go after. And, uh, you know, this alone is like incredibly valuable. All right.
+
+I knew you'd give this sauce. Okay. Let's, let's continue.
+
+All right. So we've got our keywords here with a prompt. Um, and you can see like they're targeting the core functionality of Beehive as a newsletter platform while focusing on specific user needs and use cases.
+
+So we're targeting keywords that have intent behind them. These are the ones that, you know, once somebody clicks on a result and say chat GPT or on Google search, these folks are actually going to do something on your website, you know, not all, uh, search traffic or whatever is created equal. These are, uh, the type of visitors that are actually going to convert to your product or service, which is super, super important.
+
+Yeah. It's, it's super important because there's a lot of people who are like, yeah, I get like a million visits a month to my directory or whatever, but it's low quality stuff, right? I'd rather have 10,000 high quality, um, and just focus on those people.
+
+If they're going to convert at five to 10 X, what with the others? Exactly. So what I like to do after I get the information here is I like to create like an interactive asset within Claude.
+
+So Claude has, you know, this artifact feature where it can basically code up like a dashboard or a website for you. So after I got these initial keywords from my keyword tool, I asked Claude to create an interactive dashboard, uh, highlighting all these keyword opportunities. And that is what I'm showing you here.
+
+Wow. So you just, you just prompted it that we'll share the prompts. Uh, we'll share some of this in like a guide for people so that they can download this.
+
+It'll be in the show notes, but, um, you just basically one prompted this. Yep. Yep.
+
+Find the keywords now create a dashboard and, you know, Claude's really smart. So it didn't just list out all the, all of those keywords that, uh, that we looked at after the first prompt, it actually went into Ahrefs and it pulled the potential traffic that you can get, you know, from these keywords. It pulled the difficulty.
+
+Um, it pulled the search volume for each one of these various keywords. It pulled some information about the competitors. So this is all real data, uh, from Ahrefs.
+
+Crazy. And just for, we have a lot of people who listen on Spotify and Apple, the startup ideas podcast. Like, can you just name, you know, for the people who are not watching, just name some of these keywords.
+
+Yeah, absolutely. So some of the keywords, uh, assuming I'm beehive, uh, like a better question. What, if you were to pick one or two keywords on this list, what would you pick and why?
+
+Yeah. Uh, we'll get into that next. I would say how to grow newsletter subscribers.
+
+It's got some decent volume. So 2,300 searches, uh, monthly. Um, it's relevant at 89%.
+
+And then the difficulty isn't too bad. So I feel reasonably confident that I could go and rank for that keyword, with the right strategy. Cool.
+
+Okay. So we're going to go back to Claude and, uh, I'm going to talk about what, what step two is. So here, you know, here we, uh, we have the keywords.
+
+Okay. And now it's like, this is great. We have keywords, but what do I do with them?
+
+Um, so the, the thing that you want to do with keywords is we want to start creating content around that search term so that we can attract the right people to our site. All right. So I'm going to go back to Claude and I'm just going to kind of like walk you through my workflow here.
+
+So we created that interactive artifact with the keyword data and insights. All right. Um, we have some features where we can like integrate some social search.
+
+So we can go and find like, Hey, based off, uh, this topic, what are some, uh, social posts that are also in and around this too. So, you know, if you want to repurpose some content and create some social content, you can do that too. Okay.
+
+Uh, after I found the keywords, uh, the next thing that I did is I had Claude basically group those keywords into a few, uh, key topics. So this one here is called newsletter growth and audience building. I thought that would be pretty relevant to, uh, to your listeners.
+
+They're, you know, thinking about growing newsletters, growing their audience. So we can dig into that one a little bit more specifically. So what that is, is it's just five keywords, um, in, in one kind of topic, um, that, uh, that went and, uh, that we researched that we can kind of talk about in, in one group.
+
+Cool. All right. So newsletter growth and audience building.
+
+All right. So now that we have newsletter growth and audience building, I'm sending another prompt to Claude. And this prompt is analyze the search results from page one and page two of Google for this cluster.
+
+So what this is doing here is it's actually going out and it's scraping the Google results to see what type of content is already out there, uh, for this topic. Makes sense. Okay.
+
+So, uh, basically what that's going to allow us to do is get a deeper understanding on what are our competitors that are ranking for this keyword, not addressing. So what are the gaps that are out there? So, you know, what are the topics?
+
+What are the themes? What are the ways that I can add more value than the competitors for people searching for, for this keyword? All right.
+
+So some of the things that popped up like, um, right now, the current content it's talking about like basic audience acquisition tactics, um, you know, general list building frameworks. Uh, it's not really going into things like data driven growth benchmarks. So Claude is telling me there's an opportunity to create deeper, more comprehensive research than what the competitors are publishing that shows, you know, data points, um, give me advanced segmentation strategies so we can develop content on like, how do I, you know, segment different subscribers based on their metrics?
+
+How do I trigger, you know, automations within my email platform or something like that? It's saying that there's a gap in technical guidance, uh, how to, uh, you know, coordinate this content across channels to develop like a comprehensive, uh, newsletter and audience growth plan. And then it says that another gap is people aren't really talking enough about retention, uh, which I find pretty interesting too.
+
+As someone who actually writes an email at gregeisenberg.com, this is the, I can attest that this is the content that I would click into and be really interested in reading. Yep. Yep.
+
+So this isn't just, um, an LLM, you know, making stuff up, right? It's actually true. This is, this makes sense.
+
+Yeah. This is, uh, this is not just an LLM making it up because what we're doing with this MCP integration to the workflows and N8N is we're pumping all of the right contexts into Claude here, you know? So basing all of this around real data, uh, that's out there.
+
+So there's no hallucination. It's not just making things up around, you know, what they might think, uh, people are interested in. It's actually understanding the demand.
+
+So it's finding the keywords. And then we selected a group of keywords and we're like, Hey, go out there and read all of the ranking articles, posts, and websites on the front two pages of Google and tell me exactly what's missing. So this gives you like such a targeted spear.
+
+If you're a newsletter platform to know exactly how you can go and attack the market. Okay. You're firing me up now.
+
+Don't fire me up too much. It's going to get better. It's going to get better.
+
+So we've got these gaps. And, uh, the next thing that I want to do after I identify all these gaps is I want to know like what content that I can create. So I'm going to click back over to our artifacts.
+
+Cause I created another really cool one. And this is a 30 day newsletter growth and audience building content dashboard. So this is that group of keywords that I mentioned.
+
+Okay. Newsletter growth and audience building. So it's got about five keywords in it.
+
+And basically I asked Claude to, you know, take a look at what's currently ranking and all that. Now tell me exactly what kind of content I need to go and create to dominate these search terms. So, you know, there's no guesswork here.
+
+It's like, this is what you need to go and do here's day one on Monday. You need to go and create a blog post around the newsletter growth roadmap tailored strategies for every stage, zero to 100,000 subscribers. It tells me the keywords that, you know, this content piece, uh, is focused on.
+
+And then I had it include a content brief, uh, so that I can create the perfect blog posts for this topic. So it's telling me exactly what this brief is going to address. It's saying most content in this niche focuses on generic growth tactics rather than stage specific strategies.
+
+Um, it's even got the primary audience. So newsletter creators at all stages, beginner to advanced, and it's giving us kind of a comprehensive structure, um, in order to, to write this guide. But as vibe marketers, we're not going to go write all this, right?
+
+No, by marketers are the most boring people, most lazy, boring. Yeah, exactly. And that's why we love them.
+
+That's why we love them. That's it. So we're not going to go write a blog post manually because if we wanted to do that, that could take another 20 to 30 hours, you know, to make it perfect, to go back and forth, to integrate our brand voice, to do all that boring stuff manually sounds like a waste of time to me.
+
+So how do we, how do we automate it? How do we do it fast? I'm going to click this button, copy brief.
+
+Okay. I'm going to open Claude. So after we identified this brief, you know, we're of course not going to manually write this.
+
+So I created another prompt in Claude. So I have a brand voice that I saved. Um, you know, most folks using LLMs probably have something to this effect where, you know, they're, when they're prompting ChatGPT or whatever, they're, they're kind of giving it, it's your preferences on how you want the content to come out.
+
+So I have a little prompt here, use this brand voice and I copy and pasted the content brief, uh, that I showed you from the tool. So this is exactly what we just went through. Okay.
+
+And now, uh, Claude is writing a complete search optimized blog post for me, uh, based on that brief with my voice foundation that I gave it. So it's going through like every step. And, uh, I even have it pulled up here as an artifact that we can kind of scroll through and look at.
+
+I mean, and when you say an artifact, you're saying like, is it, this looks like a website to me. Yeah. So Claude generates artifacts that can generate, you know, dashboards that can generate websites.
+
+So this actually is a website that I created. So when I said create an artifact, it just went in and it started coding this up. And I thought that, uh, Hey, I might as well make it a little website to pull up and show you, uh, versus, you know, scrolling through, uh, the, the Claude dashboard there.
+
+Cool. So like I read this, I think it reads great. It even has different areas that I can, you know, utilize for, um, hero images and stuff like that.
+
+And the we'll, we'll link this here, but I want people to read through the level of detail. This is not like AI slop, you know, when, when people are going to chat GPT or Claude or whatever, and they're like, Hey, write me a blog post for this topic. A lot of times, you know, you do that and then you're sort of underwhelmed.
+
+Like I'm sure you've been there as well. Yeah. I mean, you feel, you almost feel like bait and switched.
+
+You're like, I just gave 30 seconds of my time to this and I'm never getting that back. Yep. Yep.
+
+So what I like about this is again, like we're pumping all of that context, that real information and real data into Claude. So it's looked at, you know, all the content that's out there. It understands the keyword and the audience that we're trying to reach.
+
+And it's using that information to create a highly valuable piece of content here. Cool. So, you know, let's say that you have your blog created and then you want to create some images too.
+
+You know, that's often something that, that takes some time and it's manual or whatever. So another neat thing that I did with this workflow is that I integrated chat GPT's new image gen into it. So you can just prompt Claude right there.
+
+Hey, based off of this article that we're trying to create, make me an image that I can use for my hero image. So that's done right there in the same place as well. And it, it looks good.
+
+It looks really good. Yeah. Not bad at all.
+
+Like, you know, the, the challenge here for a lot of marketers, uh, using these tools is that they're switching between like, you know, 10 different things, like their, their tabs open on their browser. Like, you know, they've got chat GPT, they've got Claude, they've got maybe some like blogging platform and a bunch of other, you know, SAS products. And what we're doing here is like, we're building our own tools that we can use in one simple place.
+
+And I spent a lot of time in Claude. So being able to access these tools within where I'm already working saves me a ton of time on, you know, context switching back and forth between a bunch of different stuff. I've done a tutorial on what an MCP is.
+
+I'll, I'll link it also. And, you know, but just quickly explain with, within the context of vibe marketing, what an MCP is. Yeah.
+
+I was thinking, I figured this would come up and, uh, the easiest way, um, that I can explain it is imagine it's like a two way radio between your LLM and a third party piece of software. So what that means is that within the chat interface of the LLM, I can access data from this third party tool, and then I can send back data or I can send back commands to it as well. So it's enabling that communication between my LLM and another piece of software.
+
+So what's the difference between an API and an MCP, if that's the case? Um, you know, to be honest, that's above my, uh, my pay grade as a vibe marketer. So like, you know, I, I, I'm using an API here to access like a trefs within my keyword tool.
+
+Uh, and then I'm using an MCP to make sure that that information is going back and forth smoothly between Claude and, uh, between innate in. Yeah. I mean, the other thing, the reality is for 99% of people listening to this, it doesn't matter.
+
+Yeah. It doesn't matter. And, you know, again, like I, I tell people this all the time, but when I'm working in these tools, like I'm not a, I'm not an engineer, I'm not the world's foremost automation expert, you know, to be honest either.
+
+So I've got like Manus or Claude or, you know, GPT 03 or whatever open as my like co-pilot guiding me through all this stuff for how to set it up. If I need some code I'm asking. So, you know, there's a lot that you don't know and you can't know at all.
+
+So you have to really lean into the AI tools as well. You know, as you're kind of building things out, tinkering and experimenting. Totally.
+
+Do I see video Jen here? Is that what I'm looking at? You see video Jen, I was testing that as well.
+
+So, you know, one of the things about like the modern state of like organic growth online is that, uh, you know, a few years ago, everyone was all about like Google search, you know, so everyone was just like writing blog posts and things like that. But if you look at search results today, or you look at, you know, results within chat GPT or an LLM, you see a lot of things from like Reddit or LinkedIn or X or, you know, YouTube, all these other channels where the content is multi-format and multi-channel. Yeah.
+
+I mean, when you Google MCP, I'm pretty sure like the first result is a tutorial that I did with Professor Ross Mick on MCPs, which is insane. Yeah. So, you know, there's a lot more like social signals coming into play.
+
+Uh, so videos from YouTube, again, like threads from Reddit, things like that. So, um, that's why I have image generation and video generation here, because when you create a blog post, like that's just not enough these days. If you want to go and attack those gaps that we discovered, one of the major gaps that I always find is that your competitors are very like one track minded.
+
+They may have just created a blog post about, you know, newsletter growth. They probably don't have a short form video. They probably don't have a post on X, a post on LinkedIn, a thread on Reddit, all about that newsletter growth and audience building topic that we already verified there's demand for.
+
+So, you know, Google search is a great proxy for all these other channels around like what people are looking to engage with. And I believe that, you know, in today's world, like you have to be everywhere in all the formats in order to kind of dominate the competition, especially if you're a startup, you know, that's kind of the way that you can enter into an established market and start siphoning off that traffic from, from the main players. Absolutely.
+
+So, you know, that said, we've got, we've got our blog post. And then I went back to, to Claude and I started to create some X threads and, and some other types of things too. So just for example, I said, Hey, based on this blog post, create a thread on X.
+
+And here it's got how I built a 1k subscriber newsletter in 60 days with no ad spend. Like that's a good hook. That's crazy.
+
+Right? Dude, someone like, I, yeah, I can't believe that's a really good hook. Yeah, exactly.
+
+You know, most times you try to like create a, create an X post or a LinkedIn post or whatever, it comes out like a blog post and it's just not done properly. So I was like, honestly, I was blown away by the initial quality in this just with one prompt right out of the gate. So you can see it here.
+
+Like it's in this plan as well. It's got key insights thread from each growth stage. So this is the brief.
+
+I did the same thing that I did for the, for the blog posts. I copied the brief. I took it into Claude.
+
+I said, Hey, here's that voice foundation that we use for the blog posts. And boom, it one shot at that thread for me. And if you wanted to move from, you know, I'm trying not to say Claude on this, on this episode, but there I'll say it Claude.
+
+Um, if you, you know, if you're, if you want to move from, from Claude to like Webflow or another tool, like how, you know, is that, are you thinking about that as a vibe marketer? Yeah. Like how do you want to publish this type of content like on your website and things of that nature?
+
+Yeah. You know, cause it's like cool that it's on this artifact and it's cool. I can share that with my team and get feedback and stuff like that.
+
+But eventually I'm going to want that on my domain, gregeismerg.com slash, you know, uh, article slash newsletter. Right. I'm thinking about it.
+
+I haven't gotten there yet within Claude. I'm assuming I might be able to create a tool that's similar to the other ones here. And like I said, like this MCP server trigger is kind of like a two-way radio, you know, so I can pull data in, I can send commands and things out.
+
+So as long as I can access the Webflow API, which I cert, I certainly can, um, I can send that blog, you know, into my, uh, my content management system or whatever. Now, I always recommend like a little bit of editing and tweaking. So once it's in Webflow, you might need to, you know, do a little formatting, make sure it fits your design and stuff like that.
+
+But you know, end to end is coming. Like eventually this is going to be like fully automated where you enter your URL, it's finding the keywords, it's creating cross-platform content, and that's just publishing it for you. So that's definitely in the future.
+
+I hear what you're saying. You're saying basically like, okay, you're going to use AI to create this content. You're going to want to review the content and edit the content potentially.
+
+You don't want to just automatically put it up on a Webflow, um, because it's just not, it might not be worth, you know, the risk of, you know, uh, damaging your brand or something like that. Yeah. You know, in our community, we, we actually did a survey.
+
+Um, Hey, what are some of the biggest challenges that marketers are having with, uh, with AI? And one of the biggest challenges that they're having is, uh, is brand safety and keeping things aligned toward their brand. So most marketers have like a human in the loop, uh, step.
+
+And, you know, when we build these types of automations out for, for clients, uh, they're very conscious of that. So, you know, we like to integrate with Slack, for example. So, uh, let's say that you have Claude set up and you have like a, a system like this.
+
+Um, once you get your, your draft and Claude, you say, Hey, send it to Slack. Right. And then you have a shared channel with, I don't know, maybe you have a marketing manager or a social media manager or something like that.
+
+They can check it out and review it, uh, right there and maybe give feedback for how you can improve the prompts or, or something along those lines. Cool. Yep.
+
+So yeah, that's kind of a completed like end to end system. Um, and just to show you again, like how simple this is, I want to show you like what most people think that a workflow, you know, looks like, uh, in, in, in, in, in, in, um, so I'm just going to pop out of here and I'm going to show you one that, you know, might look a little more complicated that we're working on. So, you know, you can imagine like the first time you're, you're popping up X and you see someone talk about a workflow, you know, you see something like this and it makes for great content and it gets people interested because it's so complicated and they think it must be so, you know, special and useful.
+
+And while these things are great, um, they're not the place to start. Like these simple ones are often the most powerful. So you can see there's only four nodes here, uh, for this entire workflow.
+
+And each of these has a, has a workflow too, but it's like literally, you know, a couple steps. So let me show you the keyword tool, uh, one, uh, what that actually looks like, uh, when you open it up. And this is the beauty of MCP, because again, you're not like designing all this complicated logic in a workflow builder.
+
+You're just saying, Hey, pump this data into Claude and let Claude figure out what to do with it. So all you're doing is connecting with Ahrefs. You know, you have a little bit of code to say, Hey, don't pull in all kinds of other stuff on like backlinks and things.
+
+I just want keyword information. And then that's going into Claude and you're letting Claude find like, what are the best keywords? Can you group these together?
+
+Can you tell me what to do with them? Crazy dude. Yeah.
+
+So for me, this has been like a total game changer. And I think that, uh, I don't know, no one that I've seen is really thinking about, you know, the, the, the simplicity of, uh, of these types of workflows and how easy it is to unlock that much value. Well, dude, thank you for sharing the sauce.
+
+I know you could have easily gatekeeped this, but you know, you're like me, you like to, you like to, you know, distribute the sauce. Um, I highly recommend if you're not following the boring marketer on X, he, he's giving away a lot of these workflows. You also, um, give away these workflows in your community that you mentioned, if you want to just pull it up.
+
+Right. I think it's. Yeah, sure.
+
+So yeah, the community has been going crazy. Um, you know, in school we've got, uh, I think close to one and a half thousand members now. And, um, in Slack, we also have another community with about another thousand people.
+
+So we have about 2,500 like vibe marketers just working on this stuff every single day. Like they're posting, um, you know, questions, challenges they might be facing, sharing like really, really interesting workflows. Like I thought this one was great.
+
+It's a, it's one of the more complicated, uh, keyword research ones, but it's amazing. Uh, so people are just giving away like tons of value in here. And then, uh, you know, we launched a classroom to kind of help people like work through these step-by-step and, uh, I'm going to be making a MCP, uh, workflow, live, uh, within our classroom here too, for our community to be able to like set this type of thing up and experiment with it as well.
+
+Cool. And, and at boardmarketing.com, you also like help people with this stuff, right? Yeah.
+
+Yeah. So we're basically doing like vibe coding and vibe marketing as a service now. So, you know, where we're making these very custom to businesses, we're identifying like where people are spending a lot of time manually and we're helping them automate this stuff, get out of the weeds.
+
+So, so they can kind of vibe and, uh, take advantage of all this. Cool. I'll include the link in the show notes, uh, full discussion.
+
+I'm an investor in the business. I believed in the future of vibe marketing. So, you know, happy to put my money where my mouth is.
+
+Um, you know, uh, can I say your name, James? Yeah, absolutely. Yeah.
+
+Yeah. The cat's out of the bag now I've been doing videos and stuff. So people know I'm just not a diamond headed, uh, boring marketer anymore.
+
+Okay, cool. All right. So James, thanks for coming on.
+
+I, I personally would love to do double click into more workflows. I think that this is a bigger topic that needs more time. So if people got any value from this, please, please let me know in the comment section.
+
+I only want to create content that you look at and you're like, wow, that was saucy. So, um, uh, thank you, James, for your time and you were generous with your sauce. Um, and, uh, I gotta ask, you know, if you enjoyed this episode, please like it and comment and subscribe, share it with your friends and let's all get that.
+
+Let's all get that sauce together. James. Thanks again.
+
+I'll see you next time. Thanks for having me.

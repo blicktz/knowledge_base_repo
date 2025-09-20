@@ -1,0 +1,331 @@
+What if you can create video games using AI? Well, now you can. Grok 3 just came out.
+
+Sonnet 3.7 just came out. And today's episode is all about using technologies like that to create high-quality games that are going to go viral on social platforms. So today's episode, step-by-step how to do it, how to use Cursor to do it.
+
+We integrate with Supabase. And I bring on this guy named Alex Finn, who's gone viral, millions and millions of impressions about some of the games that he has created using AI and just a few prompts. So enjoy the episode.
+
+This is a big day. We got Alex Finn on the pod. If you don't know Alex, well, he's been going absolutely viral because he's been using platforms like Grok, a couple prompts, and he's just like building video games.
+
+So Alex, what are we going to learn today? We are going to learn how to use AI apps as a way to growth hack any product you have. I've been building AI games like the last eight months now, going really viral on X, which is amazing, which has led to good growth for my newsletter, which has led to good growth for my AI app that I launched.
+
+And it's through this whole new concept of using AI apps and content to drive attention to your product. So we're going to build some cool things. On top of that, show you how to grow your business with it.
+
+So by the end of this pod, what are some tactical things that people are going to learn? You are going to learn, no matter what your experience level is when it comes to code or programming or marketing or anything, how to build really cool micro apps and how to use those micro apps to drive newsletter signups, to drive app purchases, to drive more revenue, and to drive more attention to your social media. Basically boost everything with cool new AI strategies.
+
+And are we building games? Is that what we're building? Yeah.
+
+So I found just through experimentation that games seem to be the most eye-catching hook for people. And so I've been over the last eight or nine months since Cursor came out, building all kinds of different apps and creating content around it, whether it's games, micro to-do list apps, things like that. But every time I put out like kind of a game, like, oh, I built a Call of Duty clone or, oh, I built a Grand Theft Auto clone, it seems that's what gets the clicks.
+
+And so I figured out a way to kind of insert that into my marketing funnel for my products and newsletters and drive attention. Now, I mean, I've gotten multiple retweets now from Elon, which has driven tons of amazing traffic. So these are some pretty cool strategies I've been testing out for a while now.
+
+All right, let's get into it, Alex. Let's do it. So the plant, let me first show you an example of what I've done up to this point that I'm going to show you how to do.
+
+So let me show my window here. So the first time I tested this strategy is with the game you see here. I call this a Call of Duty clone, a top-down 2D Call of Duty clone where you can control the player in the middle, you can shoot enemies, things like that.
+
+And then when you die, it says game over, you're on the leaderboard, enter your initials. And so I experimented with this about eight months ago where I said, hey, I built my first video game through Cursor. I have no game building experience.
+
+Play the game below. Whoever has the highest score in the next 24 hours, I'm sending you $100, right? And so I put that on my X.
+
+I posted it out. Got a ton of clicks and attention because, you know, people are so into AI content right now. And this drove about 500 signups to my newsletter, which is amazing, right?
+
+And the way people really have been driving clicks to their newsletter over the last couple of years is they build like a really good thread and then they have a follow-up post that says, here's my newsletter, sign up for it. And that's kind of been drowned out and everyone's doing it and it's kind of, you know, filtered water down, right? And so to really stand out in the marketplace, you have to do different things.
+
+You have to try new things. And so I've tried this new strategy of, you know, using AI content, things people are really into to drive signups and drive clicks. And it's been working spectacularly well.
+
+So that's what I'm going to show you how to do here today. Cool. Let's do it.
+
+By the way, I do agree with you. Like, you know, when I see on X, for example, like tweet goes viral and then the second tweet is like, for more of this, go and subscribe to my newsletter. Like, that's not working.
+
+It's not working anymore. No, I started my newsletter three years ago. I'm up to 30,000 subscribers now.
+
+And like, it was growing like hotcakes three years ago when I was doing that strategy of like, write like a thread and then say, hey, sign up for more. Everyone and their mothers is doing it now. My grandma is writing threads and saying, sign up for my newsletter now.
+
+Like, no one clicks that anymore. So you have to like, stay on the bleeding edge and do cool new things. And I don't see anyone else doing this.
+
+I'm sure in three years, everyone's going to be doing this. But this is like a really powerful strategy. I think people trying to stay on the bleeding edge can do.
+
+Cool. You heard it here first. Let's get into it.
+
+So here's the plan. I'm going to use Grok here. So we're going to use Grok.
+
+Grok is kind of the newest AI model everyone's using. It's super, super powerful. It has really amazing tools that you can use for free right now.
+
+Deep search and think. I'm going to show you how to use those two to build kind of your V1 of the game. We're going to integrate it with Supabase inside of Cursor so that you have somewhere to store your emails.
+
+Right. And then I'll show you how to launch it live on the internet so you can post it on your ex. And within two hours, you'll have an incredibly powerful lead gen for your newsletter or app or whatever you're building.
+
+Cool. Quick break in the pod to tell you a little bit about Startup Empire. So Startup Empire is my private membership where it's a bunch of people like me, like you, who want to build out their startup ideas.
+
+Now they're looking for content to help accelerate that. They're looking for potential co-founders. They're looking for tutorials from people like me to come in and tell them, how do you do email marketing?
+
+How do you build an audience? How do you go viral on Twitter? All these different things.
+
+That's exactly what Startup Empire is. And it's for people who want to start a startup but are looking for ideas or it's for people who have a startup but just they're not seeing the traction that they need. So you can check out the link to startupempire.co in the description.
+
+So as a quick intro to Grok, you can go grok.com. I believe these are completely free right now but like a limited use. But as long as you have a blue check on X, you get much more use out of it.
+
+You get Deep Search and you get Think, which with ChadGBT, this costs $200. You get this basic, I think for free with Grok, which is amazing. We're going to do Deep Search to build the plan for the game.
+
+So what Deep Search is really good at is kind of scouring the web, doing research, figuring out how things work and putting together a plan. And then we're going to use Think, which is their reasoning model to actually execute on the plan and build the code, right? So Deep Search is really good at doing the research, building the plan.
+
+Think is really good at executing on the plan. So with that being said, I got a prompt here so I don't have to sit here for 50 minutes and have a bunch of typos and bore the audience. I just copied and pasted from Apple Notes.
+
+Design a P5JS implementation. P5JS is a really cool gaming JavaScript framework, free to use. It has an excellent website where you can just test things out really quick.
+
+Implementation of a space shooting game. I feel like people, everyone gets space shooting games, right? Everyone understands.
+
+You don't have to have instructions for a space shooting game. You control the ship and you kill things. It must be extremely polished and I want you to build all the sprites and assets yourself.
+
+I don't want to import any assets. So this will make it easier for us so we don't have to like go on the web and search for open source pictures of spaceships. We'll just have Grok build everything for us.
+
+So we'll make sure we have Deep Search selected and we'll hit enter. Okay, question on the P5JS implementation just because I've never built a game before. Is that something that you figured out?
+
+Do you have, yeah, just give me context around every game of my building. Am I using that? Like I just don't, I don't understand.
+
+You really can use anything you want to build games. Like you can use, Peter Levels just came out with a great flying simulator that he built with pure vanilla JavaScript. Right?
+
+So you really can build anything with any framework you want. But for like stone cold beginners, like me for instance, I like to use built out frameworks already. And the reason why I like P5JS is you can test the game quicker than any other framework I've seen so far because they have this awesome website, p5js.org where you can just click start coding.
+
+You can paste in your code and hit play and you just instantly have the game going on your screen. So this is, I found the best way to kind of prototype games. And then you can take this and put it in cursor and make it more advanced, which we'll do in a second.
+
+Cool. So what's great about Grok in both the deep research and the thinking, Grok was unable to finish replying. It's beta.
+
+It's beta. What's great about Grok is it didn't work here. My favorite part about Grok is it just doesn't complete the tasks at all.
+
+We'll do this again. It's going again. It's cool because when you, if you've used GPT Pro, the $200 version, when you hit a prompt, I can go and like make lunch and then come back and it's still running and it's like just painfully slow.
+
+Grok's amazing because it can do pretty much anything in like under a minute. The speed of Grok is unbelievable for the quality of the output it gives you. And also the chain of thought it shows you is way more detailed than GPT as well, which is really cool to look at as it's going through.
+
+So it's going through the game design. It's looking at how other game shooters on the internet work. It's looking through different examples on P5JS on how the code works on there.
+
+It's looking at how to drawing techniques for sprites on tutsplus.com. Don't even know what that is. Just found interesting results on drawing spaceships.
+
+So it's researching how to draw each sprite. I'm thinking about making a spaceship a rectangle with a triangle wings and thrusters in the back. So it's really awesome to read through this to see how it works.
+
+You can see browsing for other example code it can use and it's basically going to design this game for us. It's designing like the physics and like where the ship moves as it's going around. It's cool to see how this works.
+
+And at the end of this, what it's going to have very, very shortly is the entire design for the app. Right? So it's going to have how the spaceships move, what the spaceships look like, what the enemies, how the enemies work, how often they shoot, how they die, how everything's determined.
+
+You know, implementing collision detection, defining the enemy class, writing the pseudocode. And then we're going to take this, we're going to put it into the think mode and it's going to build us the code, you know, really nicely and really quickly. So they work really well together, the two grok modes.
+
+Enhancing the visual effects here, finalizing. It's really, I love that DeepSeek. If DeepSeek did anything well, it kind of set the tone for like, okay, now all the other AI models have to put the chain of thought in because this is what people expect now.
+
+I really think DeepSeek had like huge influence on how all this works. All right. So here we go.
+
+It has the plan, right? Game overview, asset creation, gameplay mechanics, how everything works, detailed implementation of how it works, the background, the bullets, everything. So what we're going to do now is like the colors of all the assets.
+
+We're going to switch to think mode. I'm going to pull in my handy prompt over here, paste it in, and we're going to say now create a code block with the entire correct code, please. Ensure you're making all your own assets and sprites and I don't have to import any.
+
+Hit enter on that. And so now the think tool, which is like, I visualize this like the deep search is my like senior researcher who's like gathering information and doing all the scouting. And then the think is like the executor.
+
+It's like the programmer for you. It's going, taking that plan and actually executing for you. And you can see here it's now going, taking that plan and putting it into the actual code itself.
+
+And Grok, as of recording this, is completely free. Is that right? Yeah.
+
+So there is a free version for Grok 3 right now, which you do get to test out deep search and think. If you pay for the premium version of X, where you get the check mark, you get significantly higher usage of the app, which the app is, I think the best UI of any AI app out there right now. Incredibly easy to use.
+
+I think it's worth it because then you can also make money on X and stuff like that. But there is a free version where you can test this out now, which I don't think any other app, like GPT doesn't allow you to use the search, like the deep search stuff for free. So pretty cool.
+
+So we can see here, here's the complete code. And what I'll show you, which is why I like P5JS so much, is I can just copy, paste this and test it in seconds. I don't even need like an IDE to see what this plays and looks like.
+
+And then we can move this into cursor and actually do some of the cool stuff like implementing the database, implementing the leaderboard and all that. So let's take this, put it in a P5JS, hit play. Boom.
+
+First try. Game over. So sometimes, you know, it's not the best working-wise on the first go, but I mean, for a first go, we got the bones of a good game here.
+
+It also has like the Hamas triangle like coming down on you. It's like, you're trying to kill the Hamas triangle. triangle.
+
+That is, listen, if you want to add a little extra motivation to the game, you can certainly imagine the other spaceships as terrorists. That's totally up to you. Yeah.
+
+Listen, that might be a good way. If you're trying to make a political statement on X, turn this game into, you know, where you're hunting your enemies. That might be a cool way to do this.
+
+I mean, talk about something that would go viral. So I was actually planning a surprise at the end here. I'm going to do a spoiler on the surprise now.
+
+We're thinking, you're thinking five light years ahead now. You can use this to turn memes and trending jokes into experience and games as well. I turned the Mitch McConnell meme of him freezing on stage into a playable game as well where you try to avoid staircases and collect money.
+
+And so this went super viral a few days ago because I took a meme and a joke that was working really well in the moment and just turned it into a game and launched it on my act. So a little spoiler what's coming at the end. Anyway, so we got the bones of a game here, right?
+
+So let's take this. Let's take this game. We'll copy this.
+
+I'll stop. Let's actually do one more thing. Okay, I want to import this into cursor.
+
+How do I set up the file system to get this to work? So like, here's something. Whenever I put out these types of tutorials on X as well or put out videos, I immediately get, okay, how do I launch this?
+
+How do I edit this? How do I do this? My response is always the same.
+
+Just ask the AI. It'll tell you how to do it. And so if you want to do something like take your code from Grok, put it in a cursor, put it in whatever code editor you want, just ask how to do it.
+
+It'll tell you how to do it. So we're going to do that now. I got cursor up.
+
+We're going to use Sonnet 3.7, which just launched this morning, which is going to be sick. We'll try that out and we'll have a cool game going. We're using all the cool tools right now, all the hot stuff.
+
+We are SEO stuffing the hell out of this video. YouTube's algorithm is going to just be putting this in front of everyone on planet earth after they scan through what we're saying. Okay, let's see.
+
+Okay, so create a project directory, create the HTML file and create the JavaScript file and run the game. All right, I'm going to switch over to Curse now and we'll start building this out. I'll follow these instructions.
+
+So share. And while you're doing this, like what level of developer would you say you are? I'm going to be honest.
+
+I am a advanced developer. I've been coding my whole career. I have a computer science degree.
+
+I was a developer right out of school. So I am really experienced at coding. I just launched an AI app.
+
+I built my entire self. So I know coding really well, but I will say this. I've been using AI nonstop for a couple years now.
+
+You don't need any experience to do this. What I'm showing you here, like I'm showing you from beginning to end everything you need to do to launch a game. And I would argue nothing I've done so far is very technically sophisticated or any sort of experience is required.
+
+You know, AI is that advanced now where like if there's any gaps in your knowledge you have, you just say, hey, how do I do this? And it'll fill that gap for you. So I really don't think you need like advanced knowledge to do this.
+
+Cool. That's what we like to hear on this channel. Exactly.
+
+Exactly. I got cursor open. So I'm going to over on the side of my screen.
+
+I have Grok still open. I'm going to follow the instructions. I'll walk you through it.
+
+So first thing we're going to do is create a directory. So let's create a new folder. Oh, actually, no, we already got the space game folder.
+
+So let's make the HTML file. So we'll do new file. And again, all I'm doing is just following step by step everything Grok is telling me.
+
+So it says, make this file, copy in this code for the HTML, save, and then create the JavaScript file. So create a file named sketch.js. Sketch.js.
+
+Boom. Open sketch.js and paste the code in. So let's take our game code.
+
+Paste this in. Save. Boom.
+
+And then let us run the game. To run the game, open index.html in a web browser. So, okay.
+
+So I'm going to off my screen here, double click on index.html and then I will show you my screen to show you to prove that Grok knows what the hell it's talking about here. So screen window. Boom.
+
+So here's the game. Let's refresh this. As you can see, it is working just as Grok directed.
+
+Okay. Let's go back into cursor. Not, I mean, you would, Greg, you would say that this is all technically pretty simple so far.
+
+No JavaScript coding knowledge necessary, right? Yes, yes. No, I'll be honest with you.
+
+I was sad to hear that you're such an advanced person and then you got to hit me with the end of a computer science degree. But you redeemed yourself when you're showing me this is, anyone could do this. Listen, it does, I'll say this kind of hurt the narrative that I'm trying to tell you here by saying, oh, I'm a genius.
+
+But I will say that, listen, I could lie to you and say, I don't know what the hell I'm doing here. But I will say this. I'm showing you how there's no, I'm not writing any code here.
+
+At no point during this will I write code. So trust me, you don't need a computer science degree to do this. All right.
+
+Cursor, we're in Cursor. No matter, I swear to God, I updated Cursor 13 seconds before this podcast started and it's already got an update. Anyway, we're in Cursor.
+
+Open up the sidebar, you get your Composer. If you're watching Greg's channel, I'm sure you've, you know what the hell Cursor is. But Composer is basically your AI agent that allows you to build whatever you want.
+
+I switched to agent mode and you love to see it. Clawed 3-7 Sonnet is in the drop down. Woo!
+
+Never thought I'd see the day. I would assume based on my experiences, you probably don't want to use the thinking model to do coding. You know, because I've tried 0-1 and it was just a pain to use.
+
+You lose a lot of speed. So let's just go with 3-7 Sonnet here. All right.
+
+If I recall correctly, when I just tried this game, there was no shooting. So let's start first by making the game playable, making it fun. And then what we'll do is add in the Supabase integration.
+
+Anyone who's new, Supabase, in my opinion, is probably the easiest for beginners to use database for apps. I built my app on Supabase. I never used like a database before.
+
+Super easy to do. I'll show you how to do that. And that's where you're going to store like high scores and email addresses so you can put them into your newsletter if you're building a newsletter or whatever you want to do.
+
+Add it to your marketing list for your app, whatever you're doing. So with that being said, let's go in here. We are building a space shooter game, but it doesn't appear the shooting from the ship is working.
+
+Can you please check over the code and see why that is? I just talk to the AI like it's a human being. I don't use any sort of advanced prompting techniques.
+
+I go on X. Every other post is like, here's 20 meta prompts you can use to write the most advanced coding. I just talk to the AI like it's a human being.
+
+I don't have like any advanced meta prompting techniques. I don't have, no, I just say, hey man, can you fix this for me please? I'll examine the space you're going to identify.
+
+Looking at your code, I can see that the shooting mechanism is implemented in the draw function. This should create a new bullet. Let me check if there are any issues with this implementation.
+
+I'm going to be honest, I don't know what that prompt, that command does, but let's run it. Let me check the file. After examining the code, I've identified the problem with the shooting mechanism.
+
+The issue is how handles keyboard input, the keyboard down function in pay five. Okay, let me fix this by implementing a proper keyboard event. Claude 3.7 is literally like 45 minutes old, so I just pray to God it works well and we're not going to get into like an endless rat hole here.
+
+Okay, so try running the game now. Let's see, what is the new key for shooting? The issue is key down and wasn't working for detecting the space bar.
+
+Okay, so space bar press. Perfect. Let's accept this.
+
+Let's save this. Let me, let's share the shooting screen. Again, no technical experience, right?
+
+That was pretty, not like saying, hey, change this line of code, do this. It's just figuring it out on its own, right? I mean, light technical experience.
+
+Like you have to know a little bit of like what's happening, but very light. And I'll say this, even if it's light, if something confuses you when it's light, you just go into Grok and say, hey, what the hell is this guy talking about? This AI, what does this mean?
+
+And he'll just explain it to you. Yeah. All right, let's see here.
+
+Oh, we're shooting. It's working. It's working.
+
+Okay. Downside, we're just randomly dying. I don't know why we just died.
+
+That made no sense. We, we, we, okay, that work. I always like to tell the AI like, okay, what you did just worked.
+
+Thank you for that. Because then it kind of like trains the AI to know what it did was good. Because sometimes the AI does some stupid things and I'll say, no, you're an idiot.
+
+So when it does good things, make sure you also say, okay, that worked too. So you like train it to do those things again when it works. Okay, that worked.
+
+One more. Switch back to the cursor screen. Yes.
+
+Okay. Apologies. Screen window.
+
+It's like, how do I know you're not coding right now? You know, I want to make sure this is non-technical. I quickly wrote an entire space shooting game during that, during that one.
+
+Pause. Okay. That worked.
+
+One more issue. It seems we are randomly dying. Here's another thing I really like to do.
+
+I like to use the AI as like, kind of a product manager as well, where I'll ask it a lot of questions on what do you think the design should be here? Because, you know, when you're building something on your own, you kind of lose perspective on your audience and what people want. And so a lot of times when I'm making even small design decisions like I'm about to do here, before I tell the AI what I want, I'm going to ask it what it thinks I should do.
+
+So for example, right, we're randomly dying in the game. And so in my head, I'm thinking, okay, should we die when the Hamas triangles get off the screen at the bottom or should we die when they run into us? Right?
+
+What is more fair for the player? And so what I'm going to do is I'm going to say, okay, that worked. One more issue.
+
+It seems we're randomly dying. Do you think we should die when the triangles, we'll say the enemy triangles, the enemy triangles, run into us or when they go off the screen completely? And so I actually, before I make final decisions on any sort of design, I'll just bounce it off the AI real quick.
+
+Like for instance, I'm re-editing the tutorial in my own app and I've just gotten feedback from my audience like that's where people are falling off. Like they go in the tutorial, they get really confused. And so I've just been like talking to AI, where should this be?
+
+Where should the tutorial be? And it's re-did everything for me. It's just way better.
+
+The AI is just a way better designer than me. So I like asking the AI first. Let's see what it came up with.
+
+I'm glad the shooting mechanism is working out. Let's address the issue with the game ending unexpectedly. Look in your code.
+
+I can see why you might be experiencing random game overs. The current game over condition is triggered when an enemy reaches the player's vertical position, but it doesn't check for an actual collision with the player. Let me analyze the code.
+
+Listen, even if you're not technical, give it a shot and just like read the code because it can't hurt to understand how it works. So even if it's super confusing and you don't know what it means, I really think just looking it over and seeing, trying to understand a little bit of how it works is beneficial. I would never, you know, the vibe coding trend is, oh, you just close your eyes and type.
+
+I agree, but let's go somewhere in the middle where you do look at the code just to see what it does. The condition checking if the bottom of the enemy is below the player's Y position. Okay, so it checks to see if it's below the Y position and then just ends.
+
+This doesn't account for horizontal position, meaning an enemy can trigger game over even if it's not directly hitting the player. Let me fix this. So it fixes it, checks for player collision, kind of cool.
+
+I fixed the issue with random game overs. Here's what I changed. Replace the vertical only check and has new collision detection.
+
+Accept. Let's test it out. Share.
+
+So we're getting somewhere, we're getting somewhere cool here. Let's try our game again. Refresh.
+
+Okay, that worked. Okay, here we go. I was trying to move with the keys.
+
+All right. It's working. It's working.
+
+Kind of cool, right? I mean, super cool. Did you build a game in like a few minutes?
+
+It's a few minutes. We really didn't need any design skills. And I'd say in the three minutes it took us to build this, this is a lot more compelling to a general audience to get clicks than like a thread on X and then saying, sign up for my newsletter.
+
+Right? Like, it takes, and I still do it, but like that takes like two hours to do. Building this game took three minutes and I'd argue for a general audience on X that game we just made and we're going to make this even cooler is more compelling to like get a click, get people interested in whatever you're doing.
+
+And even if it isn't for a click, I'd argue this is more compelling to get like follows and to get like more engagement so that next time you put out something that's related to your niche or next time you put out something that like drives to your product, they'll be more likely to see that on their home feed because they've already clicked on a couple of things you built. How do we change the design aesthetic of some of this stuff? What are you thinking?
+
+What, what, what would you like to change? What's, what's not pleasing you from a design perspective? I mean, I think that the triangles need to go.
+
+That's one. Triangles need to go. Okay.
+
+Let's do this. I don't know. I just don't think like to me it's, you're not fighting against triangles.
+
+You're fighting against like asteroids or something like that. You, okay. So let's do this from an artistic perspective.
+
+I'm the WOTE, the worst of all time. So let's, let's go back to Claude. Let's have Claude do the design for that.
+
+So I think the enemy ships are horrendously ugly. They don't look like ships and they don't intimidate me whatsoever. Can I, can I add one thing to this prompt?
+
+I think that it's helpful for you to give it the goal. And I think you should say that I want this game to go viral on X and my niche is, you know, people into AI products. and then I think you should say what should I change with my with my ships and what else should I change?
+
+I love that. I absolutely love that. What should I change in my ships and what else should I change to make this more likely to go viral?
+
+I love that. That's great. I understand you want to make your game more visually appealing and viral worthy especially for an AI focused audience on X.
+
+Let's enhance the ship and add more viral worthy features to your game. I love that. And like one thing you can think about too like if virality is the goal which I'd argue this is the goal we're not trying to build Grand Theft Auto 6 here we're trying to build a game that gets clicks and drives people to your products you know what are other viral things in the moment we can implement like I showed you I made like a Mitch McConnell simulator a second ago like thinking about which memes are going viral what people care about in your audience and that implementing that in here is really really powerful especially for something like Cursor where you can upload images like you can easily upload like a meme say hey this is a trending meme right now how do we implement this meme into the game that's something we could do so especially if you're a business owner I imagine most people watching this probably not trying to become professional game developers they're probably business owners trying to get more clicks so the way you want to think when building this is like how can we get more current interesting viral elements into the game okay so let's see what we got here I understand you want to make your game more visually appealing and viral worthy especially for an AI focused audience on X let's enhance the enemy ships and add some viral okay so here's a little thing with cursor a little gotcha that bothers me when I'm asking questions to cursor a lot of the times it just gets over its skis for instance I just ask hey what are your ideas for improving this game and it added 501 lines of code without even like conversating with me or like saying hey here's the ideas I got so I'm going to look what they did first and then if this is just completely abhorrent which I would guess it is we're going to rewind and I'm going to show you how we can improve this prompt to avoid cursor from being as forward as it just was here let's see what it did I've completely transformed my space shooter game to make it more visually appealing we redesign enemy ships with AI theme three enemy okay so there's three enemy types basic shit listen I'll just say this if this works what it's telling me here in one shot I'm going to be the biggest Claude Sonnet 3.7 fan in the history of mankind if I said hey just make this more viral worthy and adds like 20 different types of ships all in one shot in 500 lines of code this might be the AGI moment how about this what's your middle name Tyler Tyler no not anymore because if this works you have to officially change your middle name from Alex Tyler Finn to watch how I pronounce Claude Alex Claude Finn if this works and this doesn't am I allowed to curse in this podcast I mean it's a free world okay if this works and this doesn't look like horse shit you can bleep that out if that's too much you can make like the title of this video like working with Alex Claude Finn on building a game that like you can just totally destroy my discoverability and name by putting that in the middle we enhanced the player ships so we added three enemy ships we enhanced the player ship we added visual effects particle effects glowing effects bullet trails animated stars gradient space back this would be the single greatest output for an AI prompt I've ever had if this works scoring system level progression power up system AI themed elements enemy shifts AI brains and AI eyes that glow a game over screen that says AI invasion simulation complete boss enemies and satisfying visual feedback progression system power ups polished UI and restart function I've never anticipated the output for an AI prompt as much as I am right now Greg I have to be honest they don't want this to work they don't want this to work but it's going to work if this works I'm declaring AGI achieved I'm sorry but I am if this works Elon Musk said today I think that singularity is near singularity yeah what he meant by that is when this prompt when you press enter then singularity will be achieved if my computer just melts I just did you press enter I didn't I'm building this Greg in show business is what we call building anticipation right when Michael Jackson comes up at the halftime show and he sits there and he stands there at the crowd for 10 minutes straight without saying a word this is what we're doing here so I'm going to hit refresh and we might discover AGI in one second all right here we go so what do we have here we have a much better looking ship we have enemy ships with fire trails the stars are glimmering there's a score system I'm only seeing one type of ship though it said it was going to do three types of enemy ships maybe we got to get to level two the missiles do look like missiles I mean I have goosebumps right now I'll just say this what's that triple shot oh wow now we're going super fast I remember playing games like this like as a kid in an arcade like this is unbelievable different ships right there that's really cool I'm sorry Greg I might have to exit this podcast right now because AGI has been achieved and I need to go like build apps with this because this is the most mind this might be the number one most mind-blowing moment I've ever had with AI wow and you're a computer science grad yeah take it from a guy who coded with C++ in college this is this is the most mind-blowing maybe technological advancement I've ever seen in my life right by the way you're flexing a little bit because you're actually really good at this game no big deal I played Marvel Rivals for like six hours last night so I'm kind of good at video games can we just spend the next three hours just playing I'm going to I'm going to purposely die in a second just to see what the screen looks like we got faster ships come oh is this like the boss ships there the purple ones okay let's just die game over AI invasion simulation complete I feel kind of cringe right now because like three days ago Grok 3 came out and I put out a post on X I was like holy crap Grok 3 is the most amazing thing I've ever seen in my life and now I'm going to have to put out a post three days later that's like holy crap Claude Sonnet 3.7 is the most amazing thing I've seen in my life I mean you're saying the truth the nature of the game I guess the nature of the AI hype that's showbiz baby I mean I'm not just saying this to kind of hype it up on a podcast that was the most unbelievable I think achievement I've ever seen an AI build in one shot what do you think that was unbelievable that was unbelievable that's honestly unbelievable like I can't believe it I cannot believe it it's crazy because like what does this unlock right think about what this unlocks I mean you know here's what it unlocks and here's what I've never seen AI do before AI up until two hours ago was very good at following instructions and what I mean by that is like I feel like the benchmark for AI was here's an instruction and then our measure of the success was how well did it follow the instructions right like if I say build this does it build that thing but what I think we just witnessed that I've never seen an AI do before was it did creative thinking right I said hey you know the game's cool but it doesn't feel like it's viral worthy like here's my niche how do we make this viral worthy and it on its own not only it thought abstractly about what my niche was and what would make things go viral right it thought abstractly about it and then it implemented it without having to be handheld through every single step right before this everyone who was in AI hey if you're doing something with cursory make sure you break it down into micro steps make sure you break it down step by step by step to make sure it's accurate I don't think that's the case anymore I don't think you need to break it down into micro steps based on what I just saw I was 100% confident when I had planned that it was gonna be hot garbage I was like anytime I've ever given Claude the instruction or cursor the instruction to do something and the result like result was this what you see here plus 501 minus 46 I instantly slam my desk and go god damn it every time I've ever used cursor and I've seen this result right because I know okay they messed it up they just they thought abstractly and implemented a really abstract creative solution which is amazing I'm blown away I don't know about you but that was legitimately and this is like an authentic reaction I've never tried 3-7 before that was legitimately incredible so let's do this now I would I mean is there anything that's better than any game I thought we were gonna make here is there anything you wanna add to that or should we get to the super base part let's get to the super base part okay let's do this so we have an amazing game we have here's how I measure virality especially on X I'm personally very focused on X I do have a YouTube channel but I'm X is my bread and butter my virality measurement is okay is this Elon retweet worthy right because that's the home run right that's the home run you get you get an Elon retweet that's getting 10 million impressions right I think the game is retweet worthy I think when Elon sees the replay of the game for 5 seconds and he's busy working on 40 different companies that's retweet worthy so check there let's now implement kind of the business portion of this which is high scores and collecting email addresses right a lot of people are going to see this they're going to go wow that's a really cool game I can't believe you built that all on your own let me play it they're going to click and now they're going to give you their email once they finish the game so alright that was incredible really good work now I want to implement a high score a leaderboard we'll call it leaderboard when users lose they should get an input where they put in their email and then their score goes on the leaderboard I want to use Supabase for the back end first give me the plan and then I'll approve it so up to this point in time this was my way of getting around AI hallucinating right a lot of time when I give kind of a more complex instruction like let's implement an entire database it'll mess up and it'll go on a weird path and we'll just go down a rabbit hole I'm gonna be honest Claude37 I might not need to do this anymore but we're gonna do it anyway so I always go give me the plan first and then I'll approve so what 37 will do here is thank you for the positive feedback I like that it thanks me for that added a leader it's the little vibes like that the little touches like thanking me for saying those things that I feel like makes AI so much more enjoyable to use adding leaderboard superbase integration is a great way to make your game more engaging and viral here's my plan for implementing the feature set up superbase game UI changes it's gonna add a leaderboard back-end integration visual design it's gonna create a nice leaderboard design and additional features add a share to X button to post scores directly that's that's cool that I just thought of that implement a weekly all-time toggle add verification typically at this point when it starts giving me advanced things like this there's no way the AI is about to implement this but now I actually have faith and trust that will do that in one shot okay so here's the plan add superbase create the schema add the leaderboard implement the submission logic okay would you like me to proceed and again I don't think I don't think you need technical knowledge to get to where we are right now if we got this pretty awesome game I think maybe I'm wrong but yes let's implement man I don't know about you Greg but I am pumped to play around with this after build cool stuff that was unbelievable let's implement the leaderboard with superbase I'll start by adding the necessary code to your game first we need to add superbase library and set up it so again for people who don't know I will actually show you this while it is working let me show my screen again window this is superbase really easy free like you don't need to pay for this really especially if you're starting and beginning and experimenting with things like I had a free I was using a free version of this with like thousands of users on an app you don't need to pay for anything so I go superbase.com sign up super easy to use you know a lot of the kind of newer apps and micro SaaS apps people are putting out there use superbase because it's super cheap and easy and fast but as this is going feel free to sign up superbase.com you can start a new project and then we will call this space game and then we can create the new project and it's good to go we got to do a password here let's go with boom not bad but the password needs to be harder okay how hard there we go strong enough let's just copy that because there's 0% chance I remember that paste that into my other Apple note that if anyone was ever to hack it'd be game over for me create new project okay so let's go back as that's going I'm going to be deleting this API and project after so do not think about stealing it people watching this video screen window let's go back in the cursor have you used super base before Greg I have love super base it's awesome it's so easy to use even if you've never used SQL before super super easy great let's implement the leaderboard okay first you add the super base client now let's add the super base configuration file to store API keys okay now let's update the sketch file to integrate the leaderboard unbelievable now let's create a readme with instructions great I have success oh this is cool so I've never seen Claude do this before usually in my workflow a cursor like every time I implement or change something I have to tell the agent okay can you update like my readme files like I have a readme file for like every feature and every component in my app and I'll go okay go into that component update the readme with everything you just changed the fact that I just built a readme put all the details of the game in like wow everything is like how the game works how to setup in Supabase the schema that is actually really really really impressive didn't even ask to do that at all it just knows like best practices for programming great I've implemented the leaderboard function I have the Supabase integrate again if this is one shot holy hell we're AGI achieved okay set up Supabase integration enhance the game flow privacy and security okay so next steps create a Supabase account done and set up your project following the instructions in the readme replace the placeholder API keys in the config so we'll go in there let's just accept all I trust you I trust you Claude replace the placeholder API keys there test the game and leaderboard functionality deploy the game to web server we're going to do GitHub pages to show how to go live here and share your game on X and watch it go viral it's cool because it's like remembering everything we talked about in the previous conversation it remembers the goals of the game it remembers what we're trying to do here and it's like it didn't have to say share your game on X and watch it go viral but it's such a cool vibe touch just to make the vibes of the conversation cooler I love that leaderboard adds a competitive element to your game and should significantly increase its viral potential like that's so cool that I remember the goals we gave it from a few messages ago it never did that for you before right Greg no no no and this what's so cool about this is it does really feel like you're working with someone like you know what I mean like this I I've used this before and I've kind of felt like okay I'm kind of like pushing it to get the result that I want but now it feels like it's pushing me to get the result we want you know what I mean it's like it's this is this is next level amazing you're right it did feel like before especially when the app got a little bit more this feels like for the first time the AI is like as you said pushing me like we're working together and going faster with each other which is amazing so let's pop open the readme let's see okay created the account did that create new project did that once your project is created go to the SQL editor and run the following SQL to create the leaderboard table all right so I'm people at home who are newer to Supabase can kind of see how this works so we're in Supabase Supabase is a SQL database and so we go in there's a SQL editor where we can copy and paste in SQL and it'll do basically all the setup for us so first we can put in this command which Claude gave us this creates the leaderboard table where basically the scores will be stored run that boom success next it create an index for faster queries let's pop that in run boom add security so people can't mess with other people's scores boom add allow anyone to insert scores okay so allow people to insert their own scores boom and allow anyone to read scores so just this is all in the read me file that claude generated and I'm just following it step by step you don't really need to know how any of this works you just kind of follow it and you're good to go and go to project settings API to get your API credentials so we'll go project settings and then we'll go API to get your credentials I'll be deleting this project after and then switch back over to cursor so you can see me put this in okay so copy your project your anon key open the superbase config and replace the placeholders okay so we're in your superbase URL paste that in and then the anon key copy paste that in cool save let's see what we got here run the game man if this works holy hell most of the game on the web server you can use github pages all right so let's just test it first I did notice it doesn't have I don't think it had the email input unless I'm let's just see let's check out the table oh it does have an email field in the table okay all right I swear this works man all right give us a refresh okay now it's is this full screen now or we just have a bug we might just have a bug all right claude's not perfect even the AI is not perfect that's fine I forgive claude oh okay so the game's not working but the clearly we died in the background somewhere your score zero enter your email to save the score okay we have a small issue I can't type anything let me just type and maybe it's just like the inputs okay let me just please okay so a couple things not working let's debug it let's debug it good I'm glad this isn't perfect so I can show people how to debug it back in the cursor okay a couple issues first I'm not seeing the game anymore when I run it it's just a blue screen and nothing else and then eventually the end game shows up okay so we're going to fix it you just tell Claude exactly what's not working what you're experiencing it just goes and fixes it I see the issue the problem is that we've modified the canvas setup but there's an issue with how it's being attached to the DOM let's fix it anyway okay pretty simple let's see what we got here one line of code now let's fix the super base client initialization as there might be an issue with how it's being created I am even though this didn't work I mean with 3.5 we would have 20 of these issues so far up to this point and this would have took 10 times longer so the fact that we've only had one issue up until this point I find radically impressive totally I mean I blocked off six hours for this podcast so it's great that we'll be able to get it done in just over an hour we just freed up time to play around sonnet 3.7 after this it's amazing let's update the html it's still got the speed of 3.5 which is really cool you know when with 0.3 you know when they upgraded to 0.3 mini and all that the speed slowed down you know what's cool about this though is it seems to be just like 3.5 just better smarter faster let's run a quick test to see I wonder what it's I don't know I'm I have a comp sci degree I don't know what this command is but we'll let it do its thing I don't know what it's testing there oh you have a comp sci degree I had no idea for those kids at home just tuning in I have a computer science degree which is probably the most useless degree you can possibly get at this point in time $300,000 down the drain I had to pay for that one but at the same time at least I'm smarter than everyone so that's a positive let's make one final fix and sure let's see what happens I do resume maybe it'll just pick up from where it left off it came out two hours ago give it a break I fixed the issue all right what's doing now AGI not achieved what's going on here I fixed the issues with your game here's what's wrong don't know what just happened we're going to test it out let's see what we get window AI space invasion okay okay okay all right now let's just die see what happens boom okay enter your email can I type okay so this was the second problem right I couldn't type for some reason we fixed the game issue that's pretty good we one shot that so now let's fix the entering an email issue right pretty simple share next issue when oh let's say okay that worked next issue when the email input screen pops up I can't type in an email address into the input nothing happens when I type enter keystroke let's fix the issue with the email input field not accepting text this is likely happening because p5js is capturing keyboard events and preventing them from reaching the input field that makes sense the game code so the game code is intercepting the keystrokes for the game itself so that when you go to leaderboard screen the game is still intercepting the keystrokes because it thinks you're trying to play the game that's why I can't type in my email let's also add a fix to ensure p5js doesn't capture mouse events when interacting with the modals pretty smart so thought ahead and thought other edge cases that could be happening which is cool man I can't wait to play with this so we'll get this done we'll get this fixed then we will host this on github pages which I personally believe is the easiest way to go from prototype to live on the internet as fast as other people use replit netify they're all good they're all great let's also add okay so it's adding some let's add a fix to ensure the mouse let's make one more change to ensure the input field works properly and I've fixed the issue all right let's accept this let's give it a shot pop open the game refresh okay we're shooting man they even put the power ups and I didn't tell it to put power ups and it like oh you want to go viral let's do some power ups anyway here we go boom that's working man if this works submit score score submitted successfully oh baby wow all right here we go oh my god there it is wow all right folks if you're not building something and you're not playing with these tools what are you doing what are you doing stop watching us stop listening to us like at this point just like turn this off I mean don't turn it off we love you you know we'd love you to watch it to the end but honestly like it's a shame that this exists today and people aren't playing with it like the people who play with this put it another way the people that play with this right now there's like a moment of opportunity there's a window like there's an arbitrage here like building apps here right like there's an arbitrage show I highly recommend people go and put some stuff out there yeah it's we're we're in this incredible moment in time where we have this brand new technology right that does these incredibly powerful things right we just witnessed it build like actually incredible lead gen in I don't know half an hour or so but at the same time most people aren't using it to do these things right and there's going to eventually come a time in the next year the next two years where everyone is doing something like this right you saw it as we talked about earlier with like the newsletters on X right three years ago when I started my newsletter not many people were doing it so I was able to get tens of thousands of subscribers like that people were doing it but now everyone's doing it so that strategy doesn't work anymore like we're in that beginning moments of this strategy where people who attack it and use it are going to see unbelievable returns and then in three years when everyone's doing it the returns won't be there so you need to be looking for these opportunities where they're really powerful and not many people are doing it because as you said that's the arbitrage opportunity it's pretty mind blowing I'm like I'm actively getting mind blown as we do this so Greg should we show them how to quickly put it live on the internet or is that the best next step you think here yeah I mean that's we need to close the loop on that for sure that's the number one feedback I get when I'm putting YouTube videos out and coding stuff is like you don't show how to put it live okay fine we'll do it we'll do it we'll put it live you know it's also like if you're watching Greg's podcast like this is amazing educational content if you're just watching this and consuming educational content and then you're not doing anything with it what's what are you doing what's the point agreed you just you gotta take action man uh okay this is amazing I'm seriously blown away last step here for those who don't know I'm sure you got a sophisticated audience but for those who don't know just in case github basically the only code repository on the internet it's where you store your code it's where you can run your code from uh anyone who's anyone they put their their code on github so good to be familiar with it if you're starting to do something like this but last step here I want to host this on github pages so other people can play the game how do we do that bada bing bada boom claude I'm sure will do this incredible this is probably the easiest step out of all them I'm filled you're happy with the game let's set up github pages to host your game so others can play it here's how to do it so we're going to set up get init run run run now let's create a git ignore to exclude unnecessary files now let's add your files to the git repository run and I'm sure in a second here it's going to have us go into github and set up a repository create a github repository and push your code okay so we are going to go to github and I will show the folks at home how to do this if they're new uh screen window let me actually pop open github first over there okay um here we go window github all right so we'll create a new repository we can call this space shooter um space shooter is available then get public we'll create the repo something went wrong okay github github doesn't want to github doesn't want to cooperate let's just try a different game email space shooter email i just wanted a different name there we go okay so we made what did we call it space shooter email all right let's go name your repository leave it as a public repository do not initialize the readme create after creating the repository github will show you commands to push your existing repository you'll need to run these commands okay let's do this i'm going to switch back my screen so you can see how i do this in cursor i'm just following step by step everything it's having me to do there's nothing too complex here let's do this let's open the terminal let's move this over let's change this so it's the correct command i'm going to make it so it's my username on github which is fin a if i remember correctly yes it is space shooter email dot get dot get and then we're going to hit enter on this and pray to god that it works okay so we hit enter let's go back into github and we'll verify it added our code there it is it's in our repo all i did was i followed the instructions we got the code there and then let's see what we need to do to host this live enable github pages after pushing your code to github go to your repository click settings on the tab at the top scroll down to github pages so this is what we're doing here is we are putting the code live so that it has a link and people can go to it and play the game and then you can then take this link and if you're on x which listen if you're an indie hacker if you're an entrepreneur in my opinion i think x and youtube are the only two places on planet earth that i have the best uh indie hacking communities on the internet i think if you're an indie hacker you've got to be on both you just have to be on both um so build and deploy let's see what it's having me do here uh under source select main branch so source deploy from a branch branch main uh under source like main branch click save boom okay uh uh create an index file for github page requires an index.hml file for the root of your repository which you already have so you're all set verify your deployment after a few minutes your game should be available at the url provided by github pages you can share this url with others so they can play your game okay so it is deploying right now uh and in just a couple minutes this should be live um where do i find the url i think it will display it once it's deployed so what's happening now is it's basically deploying your sites live here we go and this is live on the internet anyone can go on this site right now you can see at the top there and play the game and get their uh score on the leaderboard so there we go you know what i'm gonna do greg what are you gonna do instead of me going back instead of me going back and deleting this super base uh project so that people don't steal the api key you just edit out the edit out the part where you put the api keys in so that we can keep this up and then the audience can go in and play this game after if they're interested in trying it out let's do that and then should we do this let's do this anyone who plays this game after you put this live 48 hours later whoever has the highest score i'll just venmo you 50 bucks right so reach out on x dm whatever send the screenshots of your scores when you get it whoever has the highest score i'll venmo 50 dollars right add a little competition to it that should be fun absolutely i like that so that's games live now you can take this right you can go on twitter.com slash x.com you can go hey check out my game boom and now instead of doing kind of the standard thing that everyone else does which is here's a thread on you know a bunch of stuff i copied and pasted from wikipedia subscribe to my newsletter now you're like yo i built this really cool online experience right go play it and now you get an email a lot cooler way i think then kind of a thread so i think this is the cutting edge of how to get emails and all of that actually the way to the way to do it is you take a video of yourself playing the game and the tweet has the video because the link is going to suppress the algo then and then after a few hours as a second tweet you can include the link so let's let's now let's get into the X virality game right hook wow i've been or no actually this has been my favorite hook lately this is this is wild amazing hook right keep it simple boom people are like wait what's wild what the hell's wild i gotta know what's wild right i just built a game i just built an insanely fun game in just three prompts with claude sonnet three seven um here's what i'll do whoever has the highest score in 48 hours instantly gets 50 bucks are you posting this uh i'm not gonna post it right now live on here because i'm gonna i want to make the teaser video of the game itself um and so i can put it in that post because little spoiler for people uh on x uh putting media into the post boosts it right so you want to put videos you want to put images so i'm gonna put a video of the game being played uh and then what you do is as greg said you hit the plus button right and you just go here and go link to the game right uh link for the game below screenshot your score and put in the replies right so boom now we're getting replies right now we're getting people to reply with the screenshot of their scores which boosts it even more so you got people boosting it by watching the video you got people boosting it by putting the replies you got yourself a viral post and the best part is not only is it going viral and you're getting followers but you're now getting tons of emails for your newsletter as well which is pretty amazing yeah incredible incredible um alex anything else you want to talk about before we head out a couple other things i try to advance tips and tricks uh for people out there basically every ai now including cursor you can upload images so i tried this before i did this a couple days ago um i think there's something to this strategy i took the elon meme the the uh go freak yourself meme where he's like on the stage at the and he tells the media to go freaking themselves i uploaded that image to grok and i said turn this into a game and in one prompt it actually turned that meme into a game so just a way to think about this is like look for what's trending in the moment look for what's popular look for what's getting clicks and ai is so advanced now you can do something as simple as take the image upload it to ai and say hey build an experience out of this and do really cool things so i think there truly is something to taking uh viral moments in time turning them into experiences with ai and like garnering attention that way there's something truly there and i don't think a lot of business owners and entrepreneurs and indie hackers are taking advantage of that at the moment i think that's really the next frontier of what you can take advantage of beautiful alex thank you so much for your time you've been extremely generous um and uh where could people learn about you support you and and just pay pay it forward three ways uh my ex is what i focus on the most been working on my ex forever uh so at alexfinx to to check out my twitter uh have a youtube um i think it's alexfin official i'm sure the link will be down below exactly and then you can check out my ai content app i built an app called creator buddy which launched a month ago now helps you create content on x it's super powerful only ai trained on all your posts on x so it knows all about you creator buddy.io so those are my three uh places on the internet all right well this has been legendary i appreciate it and uh i'm gonna go code some games that's what i'm about to do too all right by the way don't forget your middle name is clode by the way i am now alex clode finn i did i did like tyler atf alcohol tobacco firearms i thought that was pretty baller but now i'm acf so that's fine we got agi so who cares middle names don't mean anything anymore exactly all right bye bye it's sipping time baby it's break eyes and burn it's sipping time baby you

@@ -1,0 +1,1657 @@
+Riley Brown, what are we talking about today? Today we're going to be talking about how I've recently switched to basically only using Cursor when building apps with AI. And I want to explain why we're doing it, and then we're going to build an app with AI.
+
+So, obviously, there's a lot of really good AI tools out right now. There's Bolt, you have V0 for front-end stuff, you have Windsurf, you have Cursor, Replet, Lovable. There's a lot of different tools that people are using for coding right now.
+
+And I think it's awesome that so many people are building tools for this space because I think it's probably the most fun space to be in. And your most popular video on YouTube was the video that we did together. And this is the process that we took.
+
+This was three weeks, that was three or four weeks into when I started building apps with code. I was a pretty beginner level. And the process was we kind of came up with an idea together and we built it out on V0.
+
+And that was just the front-end. And then once we were like, okay, that sounds like a cool idea. It was like the SIP or SPIT app.
+
+And then we imported that into Cursor. And when you run your code, you need to be able to see it in a web view, right? Like you need to be able to see the changes that you make live.
+
+And so in order to do that, we used Replet. And I liked Replet and still do like Replet. I'm a huge fan of Replet.
+
+Because they make templates really easy to use. They make deployment really easy to do compared to the other players. And you can see it live.
+
+They have a really easy web view. And that's why I connected Cursor to Replet and basically synced their code bases via SSH. And it made the process incredibly easy.
+
+However, recently, Cursor released a new feature within Composer called Agent. So last time we used Normal because it was the only version of Composer that was available. A few months ago, Cursor releases Agent.
+
+And I was like, oh, here we go again. Agent as a buzzword. No, this thing is legit.
+
+Like it is the most legit agent on the market, in my opinion. And it didn't start out that way. The Agent wasn't that good to start.
+
+And I was actually using the normal version. But like over the last like month and a half, they have improved it so much so that like we don't even need to use this anymore. All we need to do, because we're using Replet for templates, we can now just use GitHub.
+
+So Anj and I have made templates before. This template for Next.js has over 15,000 uses on Replet, like forks. And we just put it on GitHub.
+
+And so now all we really need to do is just tell Cursor to run it locally. And why don't we just do that? Sound good?
+
+Yes, it sounds good. Sounds perfect. All right.
+
+To be honest, I didn't even know that Cursor Agent got this good. Yes, it's only within the last like 10 days. And again, I'm still just learning.
+
+And so people, if you're listening to me, I'm never going to claim to be an expert. I am here messing with these tools, as are you. I've just been told that I'm pretty good at explaining things.
+
+And so that's why I make a lot of content. Plus, I like it. Anyway, this is the full process on using Cursor Agent to run an app locally.
+
+And you can use my template. And it's free. There's no strings attached.
+
+All you need is the link that I'm about to put in. When you're getting started on Cursor, we don't even need to leave Cursor. That's the thing.
+
+We just hit open a folder. And what you're going to do is go to a place in your files where you're not likely to move something. Since this is temporary, I'm just going to desktop.
+
+And so I'm just going to click new folder. And I'm going to go Riley Gregg pod four. I think it's our fourth podcast we've done.
+
+And we're going to hit create. And then once you hit create, you're going to hit open. And so this basically opens up a blank folder somewhere on your computer.
+
+And from here, you can press this button right here. And now we have Composer open. So all we've done so far, open Cursor.
+
+We've created a project from a folder, created a new folder with nothing in it. And the title of that folder is right here. And now we can access Cursor.
+
+So now what we can do is we can type this in right here. I actually have it saved right here. Okay.
+
+I hate when it does this. Sometimes Cursor doesn't let me paste. Yeah.
+
+I have no idea why. This has actually happened to me before, but we're just going to go off memory, I guess. I'm just going to clone the repo and run it locally in one command.
+
+I think that's what it was. And then we need to paste the link. It won't let me paste the link.
+
+Okay. Now we're good. Okay.
+
+So we've pasted this link. And let me make sure that was right. I have no idea why it's not pasting that.
+
+Okay. Clone the repo, run it locally in one command. I think that's right.
+
+And we're just going to run this with agent. And so we've done nothing so far. And so it says, I'll help you clone and run the repository locally.
+
+Since this is an XJS project, we'll need to clone and install the dependencies, blah, blah, blah, blah, blah. And so quick break in the pod to tell you a little bit about Startup Empire. So Startup Empire is my private membership where it's a bunch of people like me, like you, who want to build out their startup ideas.
+
+Now they're looking for content to help accelerate that. They're looking for potential co-founders. They're looking for tutorials from people like me to come in and tell them, how do you do email marketing?
+
+How do you build an audience? How do you go viral on Twitter? All these different things.
+
+That's exactly what Startup Empire is. And it's for people who want to start a startup but are looking for ideas. Or it's for people who have a startup but just they're not seeing the traction that they need.
+
+So you can check out the link to startupempire.co in the description. I have it set up on YOLO mode, which is a new thing that I learned on Cursor. If you don't have this set up, it'll actually ask you, like, are you sure you want to run this command?
+
+Are you sure? And then you have to click yes over and over again. When you do this, it just automatically does it.
+
+It's called YOLO mode. And so look, we've won one single prompt. And you see that over here on the left, our files are loaded.
+
+And then here it says try using 3001 instead. And here it gives us this link. You hit command, click, and we open up this link.
+
+And boom, that is our template. So we have our project open. And I always like, whenever I'm using Composer, I always put the web view in a different thing.
+
+So I just have Composer right here and I can go back and forth to see our project. And you can see here, you know, see here it says make anything you imagine. Right?
+
+If we were to go into the search right here and just paste that in, we'd find the file that it was. And we could just say, you know, make anything. Make a dope app on the SIP pod.
+
+And we hit command S to update it. And you'll see that it is fully synced up and you're ready to go. And is YOLO mode what you recommend to folks?
+
+Or yeah, how do you think about that? Okay, yeah. This is for informational purposes only because I'm so new.
+
+Like I do not. Last thing I want is for someone to like download something off GitHub that is like not good. And they run it to like make sure when you download anything from GitHub or clone any repo, like make sure you trust that source.
+
+And I don't, if you know nothing, I don't see a difference between for me, like I'm not going to like, since I'm not technical, I wouldn't even know whether it should be run or it shouldn't be run. And so I would much rather let cursor take control. So in terms of ease of use, yes.
+
+But I don't officially endorse it, if you know what I'm saying. I know what you're saying. It also sounds like it depends on like how technical you are.
+
+Yeah. Like if you know how to operate in a terminal, like if you know what the different commands are, then I would say maybe not. Like maybe you would want to do it a different way.
+
+For example, I work with Ange, who's like senior developer level. And he doesn't do it because often he'll run different commands than cursor recommends him. But for me, I like it.
+
+And now we have, without any intervention, all we did was say clone this repo, run it locally in one command. And I gave the link to the public GitHub and we already have it open. Now we can make changes.
+
+We can build an app. And it's that easy. You want to build something?
+
+Yeah, man. I want to push the limits. Okay.
+
+All right. Maybe we should go educational. I want to build something that's going to make you sweat.
+
+Make me sweat? Oh, you want to build something hard. I want to build something that you're going to prompt it and you're going to be like, I hope this is going to work.
+
+I hope this is going to work. Yes, it worked. Another alternative.
+
+We could do that, which I'm always open for. And it will make me sweat because, you know, like the first episode we did, I struggled for 20 minutes. You even had the thing in the video where you're like, skip ahead if you want, if you don't want to watch this.
+
+But it did the best. So maybe that's good for retention. One thing we could do is talk about APIs a little bit.
+
+I think that's one thing that's commonly skipped over in these videos. Yes. That we could actually like, maybe we try and set up the perplexity API and talk about what that even means.
+
+Yes. That would be huge. I'm actually really curious about that.
+
+Okay. So let's talk about, let's talk about APIs. And the funny thing about APIs is I actually learned how to like fully integrate multiple APIs into an app before I even knew what API stands for.
+
+Because you can, you don't need to know with the AI tools. But for now, actually, let's go to perplexity. Let's go to perplexity.
+
+And what I want to do here is let's, we're not going to use an AI image model, but let's imagine we wanted to use Flux, an AI image model. All you need to do is go to perplexity and say, give me next JS code examples for using Flux on Replicate. Replicate allows you to very easily get a bunch of these like creative AI models or a ton of AI models in general.
+
+Which is one good thing to know. Like if you are new to coding and like you're just now building things with AI and you want to add AI features, look up replicate or fal.ai. These are all platforms that make it easier to do that.
+
+So that's just one thing. So we can say, give me next JS code examples for Flux on Replicate for image generation. And I think of these as just like, I think of AI coding like Legos, right?
+
+You're looking for the pieces that you need to like put together. And APIs are kind of like finding instruction manuals, you know, like, and you need to give that to Cursor. Because Cursor doesn't have an inherent understanding of how these APIs work.
+
+All APIs have different coding rules. And you need to make sure that Cursor has that example. So as you can see here, these are examples.
+
+And oftentimes all Cursor needs is an example. And all you need to do is come down here all the way to the bottom and copy this. And we can very easily.
+
+Actually, why don't we build something like this? Why not? So we can just say, I want...
+
+Wait, what is going on here? Oh, okay. It just finished the response.
+
+Okay. I want to create a simple AI image generator. I want to use replicate.
+
+And I want to use flux. And so we just copied the code examples for it. And so we can just paste all of that in here.
+
+Since it's perplexity, I just get rid of the sources. It confuses it sometimes, just putting it out there. And the next thing you need is you actually need an API key.
+
+So when you're using an API, most of the time, it requires an API token. Because this is not free to do, right? When you generate something, when you generate an image, it costs like three or like 2 to...
+
+0.2 to 3 cents a piece. And so that's one thing you need to consider when you're building a tool. It costs money.
+
+And in order for them to track who's building what, they need to give you an API key. And so if we just type in here, replicate.com, what you can do here is we can go find our API token. And I believe it is...
+
+This part's annoying. Oh, yeah. API tokens.
+
+I believe it's just going to show it. So I don't want to do that. API tokens.
+
+And I can create a token. I'm explaining it because... Hello, token.
+
+Obviously, I don't want those tokens to get out because if all you need is the token, and then I would be covering your replicate bill. And you know someone would hit that. It's happened multiple times to me, actually, in videos.
+
+I'm not very good at concealing it. I get so excited that I just forget to. Anyway.
+
+And so what I'm going to do here... You know what? I'm just going to cancel the token.
+
+I'm just going to cancel the token after... Nope, nope, nope. Hold on.
+
+So one thing you can do here is I will go underneath it and say, this is my API token. And no, code base not indexed. Oh, yeah.
+
+It's going to do that in the background. Okay. This is my API token.
+
+And please put it in the correct place if you're a beginner. If you've done this a few times, you can put it in the .emb file yourself. But for now, I'm just going to do this.
+
+And let's go ahead and actually, let's break down what I just did. I just said it's basically instructions, examples, token. That's what I do when it's an API.
+
+You give an example or you give instructions, like I want you to create an image generator. And because Claude is probably trained on a bunch of GitHub repos, it'll know what an AI image creator. It might even stylize it in a way that looks like popular AI image generation tools.
+
+So give it just that. And then you're going to say, here are some examples. And then your API token.
+
+Now let's just run it. Did that make sense? Yeah, crystal clear.
+
+Nice. And so you see here, it put my API token that I'm going to cancel. It put it in this .env.local file.
+
+And then when it's generating the code here, you can see in the route. If we just click on this file, if we want to actually dig into the code for fun, you'll see that it references this replicate API token, which will process .env replicate API token. So it references that key in a separate hidden folder, which is cool.
+
+And so now it's done. And so let's see what happens here. Let's see if we one-prompted an AI image generator.
+
+So let's accept. Let's go to our local host, 3001. Okay.
+
+So this is the app that we have after one prompt. AI image generator. Create beautiful images with Flux AI.
+
+Say a man in glasses doing a podcast. 33? I have no idea how old you are.
+
+33-year-old. Did I go too old? I hope I didn't.
+
+We'll run with that. We'll run with 33. I'll tell you guys.
+
+Stay to the end of the pod to find out how old Greg Heisenberg is. Fair enough. Fair enough.
+
+I don't know why 33 felt right. All right. Okay.
+
+So this is normal, right? This is normal to get an error. We generated this whole UI request to replicate.com.
+
+This actually failed. So we can paste this in and say, this failed. And this is actually a good lesson.
+
+I'm glad this happened. Because what we can do here is let's just go to replicate. And beyond just perplexity, perplexity is not perfect every time.
+
+I just like to do it, especially with OpenAI, Claude, in the really popular ones. It's really good. But there's a ton of different models on replicate.
+
+So that's why it struggled here, I think. And so what you want to do, anytime you're using an API for something, you want to find their docs. And so here's their docs.
+
+And this is where it sometimes gets a little bit confusing. But it's worth learning. I've learned a lot from just asking AI questions about docs.
+
+And what we can do here is we can say, run a model with Node.js, which is what we want. And what we can do is we can just copy this link. And we can take it back here and say, this failed.
+
+We gave it the error. Now I'm going to say some additional docs. And we're now giving it more information.
+
+And it'll see this link. And it will actually go to the link, read everything. And then the agent will process that, which is so cool.
+
+And so we have that. Maybe we can use, maybe we can find. Oh, and then if there's ever a playground.
+
+And there's all the best AI apps, including Claude, even like 11 Labs, things like that. You can actually create, you can go to the playground, which will simulate whatever it is that you want to do. So let's say we want to use this image model right here.
+
+On playground, it lets you generate an image, just like normal. And then it will give you the code that you can use as an example. And so here, this is actually a really good example because we know it worked in playground.
+
+This is how we want it to work in the app. So I'm going to copy this as well. And so I'm just literally going to say that.
+
+In playground, I generated this image. Use this model. And we can run that.
+
+And that's honestly something I suggest when you're trying to work with these creative AI models. You can fully test out how they will perform before you even get to the code. Because you can just do it in the playground.
+
+And if you're diligent enough in testing what's possible, then that's how you can create. You know for a fact you're going to create an app that works. Which is actually, ironically, how I created the thumbnail generator.
+
+I don't know if you saw that. The one that just scrapes thumbnails. Which we're adding to Yap Thread, by the way.
+
+Okay. I made a few changes. Let's go ahead and accept it.
+
+Let's go back here. Localhost 3001. What we're going to do is we're just going to come up here.
+
+And let's just go, man. Generate image. Okay.
+
+So it's loading for longer. No immediate failure. You'd love to see that.
+
+No. Yeah. It feels good.
+
+Feels good. Every time you do something, you want to make a little bit of progress. See?
+
+We made progress. It didn't fail right away. It failed after a delay.
+
+Which is fine. That's just the name of the game here. That's just how it works.
+
+So we're going to paste this in. And I'm going to make sure that it knows everything that we just saw. So last time it failed immediately.
+
+This time it loaded for a little bit and then gave me this fail message. And I've noticed that people who use these tools are getting lazier and they're expecting Cursor to just like do everything for them when they're not even explaining to Cursor everything that's going on. Like you need Cursor doesn't see this.
+
+My prediction is by the end of the year it will. But Cursor doesn't see your web view. And so you need to give it all of the information that you see.
+
+And the more correct information you give it, the better. And that's the same if you're working with real developers. You have to give them full context or else they're not going to be able to fix the bug.
+
+Okay, pop out this terminal. It's installing something else. Okay, let's go ahead and accept this.
+
+I mean it's basically, Cursor agent is basically a real developer as far as I'm concerned, right? Like a junior to, you know, on good days a mid-level developer, on poor days a junior developer? What do you think?
+
+Yeah, I mean, like I think Devon is the only company like actually trying to build a developer. I think that a lot, I think Cursor has a lot of individual skills that are better than certain developers, certain senior developers, for sure. I mean, and it finds information way quicker.
+
+It doesn't create things in full automatically. Like Devon is trying to create that right now where like I could just give them this idea for an app and then I could go eat pizza and come back and it's just done after many iterations. And so that is like the full, that's where I think this is ultimately going in a year or two.
+
+But for now, it's honestly way more fun to like iteratively build on in my opinion. So it's like, I don't even know if there's a good example. Okay, so I don't know if the server is running.
+
+Internal server error. Hold on. Yeah, okay.
+
+So whenever you get these server errors, it's because they ran some command. We might need to restart it, like restart on new server. And there are some things that you need to learn about using localhost.
+
+I haven't even learned all of them yet. I'm still learning. But it's fun.
+
+It's not always glamorous. You know? It's not always one shot, it's done, and you're a millionaire.
+
+Yeah. Yeah. And honestly, you don't even want it to be like that.
+
+Because as soon as it's one prompt, then everyone's going to do it. And you're going to have a lot more competition. And so you always want to be up against the edge.
+
+You know, I think I said that in the first episode we talked about it. But okay, let's go ahead and accept this. Where is it running?
+
+So... Where is it running? What local link?
+
+Because this server does not seem to be running. Okay, we need to run this command. NPM run dev.
+
+Okay, now it's running on localhost 3002. So command click. And full disclosure, I have no idea what that even really means.
+
+I just know it's running locally on my machine. It sounded like you knew what you were saying. You know, I was convinced.
+
+I was like, oh, wow. Okay. Well, no.
+
+Everything that I know is functional. Like I know how to get my app open. But I don't know like what it means.
+
+But I feel like even developers don't know. Like a lot of things are abstracted. You don't have to know what everything is.
+
+I can have millions of followers on social media without knowing how a Camry works. Right? You just use it.
+
+You know? Okay. Oh, man.
+
+Let's just test it. Let's not do Q. Failed to fetch.
+
+Jesus. Well, here's your sweat, Greg. Here we go.
+
+Why is this failing? Tell me why it's failing prior to fixing in concise bullets. Server might be restarting due to environment variables.
+
+The file structure looks correct. The main issue is that the environment variables isn't being loaded. Okay.
+
+Fix. Fix. Just like.
+
+Okay. Generating command. All right.
+
+I need to pop out the terminal. Now let's update the API route to use more robust error handling and logging. Okay.
+
+That's never that fun. But it will give you better information. So that means we might have to fail again.
+
+Yeah. Added runtime equals edge to ensure better performance. Okay.
+
+Accept. And we're going to command click. And we're going to type man.
+
+Generate image. All right. It's loading.
+
+Come on. Let's get it done. Boom.
+
+There we go. I'm surprised. Honestly.
+
+20. Wait. Oh, yeah.
+
+33 year old man doing a podcast. Now. Now let's add a.
+
+Let's actually add something here. Below. The image.
+
+And so this is just for testing purposes. And this is actually what I've been doing a lot more of recently when building out tools. Is I'll build little user interface.
+
+Info pop-ups. So I can see exactly what's going on. It makes the development process way more enjoyable and easier to test.
+
+I'll show you what I mean. I want you to list the model used. And then all of the parameters that we're using with this image.
+
+Everything. And I want you to put it in a little info icon bubble that when I click. It shows in a little pop-up all of these things.
+
+So I can know exactly what model we're using, etc. This should pop up after the image is loaded. Know what I mean?
+
+Oh, I know what you mean. And so we might want to make adjustments. Judging by the quality of this image, I think it's using stable diffusion here.
+
+I think this is a quite old model. At the time it was good. But now it's quite poor.
+
+And so we want to be able to test those things. Especially if we set it up to a database. We could actually get it to just save.
+
+So we could actually have like... You can think of it like a Notion database of all of the image, the model used, etc. And that's a good way to test.
+
+Okay. Yeah. So it is here.
+
+It's using stability-ai-xdsl. So this is one of the early AI image models. So let's accept this real quick.
+
+Now we're going to go... Man, doing podcast. And hopefully we didn't break anything with that prompt.
+
+I doubt it. So now we have this little generation details. And so we have the model right here.
+
+The prompt. Man, doing podcast. That's great.
+
+Width. Okay. So you see, that's easy.
+
+So now what I can do is I can actually just copy this and say, currently, I'm using this. And we'll just like paste that in just so it has all the context. I want to use this model.
+
+And these models all operate differently. And so that's what makes Replicate a little bit harder. It's not just like a one-size-fits-all.
+
+So if we go to Replicate Playground, what we should do is... So this is Black Forest Labs Flux Pro. This is the best model right here.
+
+I'm pretty sure. Or at least it's good enough. So what I want to do here is I want to go to Search.
+
+Let's type in Flux Black Forest 1.1 Pro. Was that what I said? I don't think it...
+
+This one's good enough. This one's good enough. And so if we want to use this, we can click Playground Input.
+
+What can we do? We can do Examples. I think that's good.
+
+Examples are really good to use. And so what we need is Node.js. And so here, I believe we can copy this.
+
+And I want to use this model and just paste that in. And I just want to make sure that it knows exactly. And then let's go Node.js.
+
+I'm just going to copy the code just in case multiple times. Here is another example from their site. And we'll just paste that in.
+
+Give it as much examples as possible. By the way, you know... I mean, you're on top of everything.
+
+So you know which models work best for what. How does the average Joe, average Jane know? Yeah.
+
+That's a really good question. I'm so tapped into everything, I guess. Because I was just making content for a year and a half on the top AI tools.
+
+And honestly, there's no better way to learn about the best tools in any market than to be an influencer that actually cares about saying truthful information. And you're not just like spewing nonsense. Because if you actually have a high standard, you don't want to tell a bunch of people bad things.
+
+And then I spent all day every day learning about the best tools. And now I have this like mental model in my head of like where all the top tools are. And you can kind of just plug them in.
+
+There's no clear... Honestly, as I'm... Like this is a really good example of a business idea, right?
+
+Like this is a clear problem that many people have that has required me to work for thousands of hours. To understand what the best models are and like where to find that information. And so that is a good business idea.
+
+Especially if you could like show examples on the site. And maybe you have only like 25 models instead of like Replicate has all the best models on it. But there's thousands of models on here.
+
+So there's not a lot of learning for people. So yeah, that's a good... Just to stick with the theme of the podcast, you know?
+
+Anyway, let's go back to Cursor. Sorry if that was a bad answer. Mostly Twitter, honestly.
+
+Yeah. No, it wasn't a bad answer. It's the honest answer.
+
+So I appreciate it. I mean, yeah. Just watch my content.
+
+Yeah. Just watch my content. Okay.
+
+What did we just add? I forget. Oh, yeah.
+
+A better model. Okay. A man recording a podcast.
+
+And since we just changed the core model, the odds of a failure here is like relatively decent. Because these models act differently. Nope.
+
+Wow. We nailed it. And so that one looks clearly better.
+
+You can clearly see the difference in quality. As you can see here, it did the correct model. Now.
+
+Okay. Now let's have a little bit of fun. So.
+
+Now I want you to add right. Where do we want to add it? Let's just go.
+
+Right above the input field. A toggle for what model we are using. I want to the default to be the one that we're using right now.
+
+The one that you just changed it to. That is the default. But I also want the one that you changed it from to be an option as well.
+
+And then I want you to add another option. So there is an AI image model. If we're talking about the best AI image models.
+
+There's a model. And it is on Replicate. It's called.
+
+It's called Ideagram. And it's a closed model. It is on Replicate though.
+
+And I believe we can just look up. It is the best at adding images with text in them. I don't know if you've seen them on Twitter.
+
+But as you can see here, the first example is this right here. So let's go ahead and grab Node.js. Let's just grab this code again right here.
+
+And then we can also go to the examples. And I'm just going to paste this. Another option.
+
+Option. We'll call this like option three. We'll just paste that in.
+
+That's another example. And then we can give them. Because it worked last time.
+
+To give them those two pages. The examples and the example output. We can paste this in.
+
+Resources. Paste that in. And let's go ahead and run that.
+
+And yeah. We can just kind of iterate. And add features.
+
+And I think this is actually a good starting project for people. Like I don't think you need to start off with the app that you're going to make millions of dollars on. In fact, some of the most fun I've had with AI coding is like building stuff that no one would use except for you.
+
+Where it's like absurd. And like I was building like. I learned so much in that period.
+
+And I think. Paul Graham has this essay from way back a long time ago where like good programmers are sketching. I don't know if you've read that.
+
+But he's talked about that. And like this. It's I think it's more fun to just like sketch out these ideas live.
+
+And like don't worry about like making something commercially valuable to start out. I think it's really fun and valuable to just like build. And just have a good time.
+
+Because it is fun. It's fun when it works. And when it doesn't work.
+
+Yeah. But it makes it so much more. Like remember the episode we did together when it finally worked at the end.
+
+It was like the biggest sigh of relief. You know. It's like things that are easy to build aren't quite as fun.
+
+Like if. Push it. Push it so you fail for many hours.
+
+It's the most value. I learned the most about this when I'm struggling hard. It's a mindset thing though.
+
+That's the thing. Like you have to come into this being like. I'm going to fit.
+
+This is going to be difficult. This is a mountain. I have to go uphill on this mountain.
+
+It's not a flat journey. Let's do it. A diagram of a mountain.
+
+And we'll use ideogram. By the way. You see this change.
+
+So ideogram. A diagram of a mountain. Labeled.
+
+Cursor. Mountain. Mount cursor.
+
+Mount cursor. Mount cursor. And a diagram of a mountain.
+
+Labeled Mount cursor. A diagram of a grassy. Now let's just see what it does.
+
+Let's just try this. Generate image. A diagram of a mountain.
+
+Labeled Mount cursor. Anyway. Sorry to cut you off.
+
+I thought that was a fun idea. Yeah. But yeah.
+
+I think it's a mind. My point is. It's a mindset thing.
+
+If you're going to come into this. Thinking that. You're going to do a prompt or two.
+
+And you're going to get a product. You're going to. You're going to be super frustrated.
+
+What? No way. Yeah.
+
+So as you can see here. The. We used ideogram.
+
+Right. It works perfectly. Like we have an AI image generator.
+
+And all we would need to do. We could literally. You.
+
+Like I could literally create this. With every AI image generator. And because I have a big following.
+
+I could probably create. If I wanted to allocate a bunch of time. And like figure out the database.
+
+Back end. Like create an AI image generator. For people to use.
+
+I don't want to do that. But. I think that there's a lot of space.
+
+In the market. To just like. Build tools.
+
+For specific use cases. This is actually a one use case. That.
+
+I don't think has been cracked yet. Which is the diagram. For presentations.
+
+Like some of the best presentations. I've ever seen in my life. Are.
+
+With really clear. And simple diagrams. That aren't like.
+
+You want really simple diagrams. That captures the true essence. Of.
+
+Of what the person is presenting about. And I think there's a good demand for that. So that's just another random startup idea.
+
+But like. Yeah. We just created this.
+
+And actually. Let's do some design. So.
+
+Where some people. Like in V0. Start.
+
+Want to start with design. I like to get the core feature in. And then I like to do design.
+
+And we can do it right here. And so. I want.
+
+You to create. An absolutely amazing design. For this app.
+
+Change. Absolutely. No.
+
+Functionality. Like the functionality. Should remain exactly the same.
+
+I just want to make. The. Interface.
+
+Look significantly. More modern. And I want.
+
+In the top bar. To have the title. Of the app.
+
+And this app. Is called. Mount cursor.
+
+I don't care. We're calling it mount cursor. And we can now design it.
+
+And because this looks pretty ugly. Like this big blue button. It's kind of ugly.
+
+In fact. We could actually bring in an example. Let's.
+
+Let's do that. There's a. There's this.
+
+I love the interface. Of this. I don't know if you've used.
+
+Mini Plex. I think it's mini Plex dot run. Mini Plex dot run.
+
+Anyway. It's like an open. Nope.
+
+I think it's just. Mini. This is where your.
+
+Curated tools. And models. Database.
+
+Would rip it. Yes. Agreed.
+
+I don't know where it is. Okay. We're just gonna.
+
+Let cursor decide. I was gonna find. An app.
+
+That I think would actually. Fit this pretty well. I can't think of another one.
+
+Off the top of my head. So we'll just let cursor. Go to work.
+
+Um. Yeah. And then we have this.
+
+And. Since you. We started with my own.
+
+Uh. Template. Which has Firebase built in.
+
+All we have to do right now. Is tell cursor. To.
+
+Implement. Uh. Google Firebase.
+
+We can do that if you want. It would be an extra 10 minutes. If you want to.
+
+We don't have to. But. I think we.
+
+You want to add a database. All right. After we design it.
+
+We'll add a database. Um. Um.
+
+And again. We put in a lot of effort. Into these templates.
+
+To get Firebase set up. Look at this. Mount cursor.
+
+Um. Okay. Um.
+
+Yeah. Wait. Let's see what it.
+
+Ooh. I like. Because you can watch it change live.
+
+Just like you can. They added that feature. When you run it locally.
+
+You just see it. Change live. Which is great.
+
+It's just like v0. Um. Obviously.
+
+There's like some design flaws. I'm not going to get into this. Like little.
+
+Like. That's easy to fix. I just don't want to do it now.
+
+I'd much rather. Do higher. Educational.
+
+Impact. So. Is it done?
+
+Oh wow. It's still going. Um.
+
+Okay. It's done. So we can hit accept.
+
+And here we have this app. Let's go ahead and refresh the local host. Um.
+
+And to do that. You just come up here. And you just press enter.
+
+And here we go again. Like look at this. This is clean.
+
+Um. You know. Obviously.
+
+But like it's fine. So we could just go to ideogram. A man.
+
+Holding a sign. That says. Um.
+
+Mount. Cursor. Maybe we want to make an Instagram post.
+
+That no one will look at. Um. And so we can generate an image.
+
+But. The problem right now. Is that.
+
+That image. Will disappear. Right.
+
+It will show up. However. Actually.
+
+This is a good learning thing. If we go to replicate. Right.
+
+If it's your account on replicate. If we go to dashboard. We actually see all of these.
+
+So we can actually see this live. We can see that this is running. Um.
+
+And we can see that all of these succeeded. If we click on this. Right here.
+
+This is the last one that we created. Which was mount cursor. And this is a really good thing.
+
+To like constantly. Pay attention to see. If they're succeeding or failing.
+
+There are certain reasons. So this one's done. So now if we go back.
+
+We will be able to see it. So let's go back to local host. And you can see that we have this photo.
+
+Of a guy holding a sign. That says mount cursor. And it even put it on a mountain.
+
+You can even ask for that. Um. That's pretty cool.
+
+So. What if we wanted to save this. To your profile.
+
+Like what if Greg wanted to sign in. And so we can. Say.
+
+I opened up a new composer. Because the context was getting pretty long. They added a new feature.
+
+That allows you to see. All of your cursor history. Which is insane.
+
+At any time you can go back. And you can roll it back. We can restore it to where the code was.
+
+Before I ran this prompt. Which is insane. It like completely.
+
+You don't even need to really use. Git. Like you don't even need to save.
+
+Because it basically does it automatically. It's insane. How much value this tool has.
+
+Like. It blows my mind still. So.
+
+What we want to do now. Is we want the ability. For a user to sign in with Google.
+
+And then save this image. To their database. And so what we're going to do here.
+
+Is I'm just going to ask cursor. I want you to look at. This whole project.
+
+Right here. This is a template. That we have used.
+
+Pre-configured. With Google. Firebase.
+
+Authentication and storage. What I want you to do. Is I want you to.
+
+Allow the user. To sign in. And.
+
+If the user's not signed in. They. Yeah.
+
+If the user's not signed in. They shouldn't see the homepage. They should just see.
+
+The sign in page. And then after they've signed in. They should be allowed.
+
+To generate. Images. Once they.
+
+Generate. An image. They should.
+
+It should automatically. Save to their storage. And there should be.
+
+A my images. Tab. At the top.
+
+That if you. If pressed. It takes you to a new page.
+
+And shows you all the images. That you've generated. Okay.
+
+Let's run that. And now we have some things. We got to do.
+
+Whenever. You created. Firebase.
+
+Database. There is some manual steps. If you've watched my videos.
+
+You've seen me do this. Many times. So you're just going to go to console.
+
+Firebase. Is. Free.
+
+To start. When they start making real money. Is when your app becomes really popular.
+
+And your bill goes up like crazy. So we're working on templates. For.
+
+Many different types of databases. For instance. Yap thread.
+
+That we're building right now. We're using instant DB. Because it was.
+
+We thought the best deal. And it's immediate. So like.
+
+All of your devices. Are synced immediately. Which is really cool.
+
+But I think Firebase. Is by far the easiest to use. Way easier than Supabase.
+
+Many people like Supabase. Because it's open source. We've tested both.
+
+Firebase is easier. I'm just going to do. Mount.
+
+Cursor. So we're just creating a project. We're going to hit continue.
+
+Don't enable Google Analytics. For now. Just makes it a little bit more complicated.
+
+You can always set it up later. And while that is loading. What we're going to do.
+
+Is we're actually going to bring this. Over here. And because I'm going to cancel this project.
+
+I'm not worried about the. Firebase API keys. Because as we talked about earlier.
+
+We need to use API tokens. And so. We're going to hit continue.
+
+Right here. And what we're going to do. Is we're going to hit this web app.
+
+So now we're making a web app. So we're going to call this. Mount.
+
+Web app. And so you can connect. Your database.
+
+To a web app. An iOS app. And an Android app.
+
+Which is useful. If you're building multiple things. I recommend starting out on web.
+
+So these are my API tokens. I can just copy. The API tokens right here.
+
+And I can actually go back to cursor. And I can say. Here.
+
+Are. My API tokens. Put them.
+
+In the. Correct. Place.
+
+Please. In the. Env.
+
+And I can just paste. These API tokens. Right here.
+
+And since. We're actually going to be paying attention. To this storage bucket.
+
+Because we're. Actually not even. Yeah.
+
+The Firebase database. Is just going to store. Basic information.
+
+About the user. But we need the storage. Because we're actually storing images.
+
+If your app is text only. Like. If you're building.
+
+Like a chat GPT clone. You wouldn't need storage. But in this case.
+
+We do. And it's really easy. All you do is hit.
+
+Continue to console. Now we're going to go through. The three steps real quick.
+
+So this is done. It should be done. It looks like it added the tokens.
+
+Into the right place. And again. We're on like prompt eight.
+
+Right. Like we've created an image generator. Three models.
+
+And we're setting up a database. So. You're going to go to build.
+
+And you're going to go to. Firestore database. There's three of them.
+
+That you need to do. First one is firestore database. Once it's done.
+
+We're going to hit create a database. And we're just going to hit next. And we're going to start in test mode.
+
+Test mode makes very. You have way less rules. Right.
+
+Right. When you're in production mode. I recommend doing that.
+
+Before you launch it. Not right when you start out. Or else you're going to run into.
+
+Like annoying errors. So we've created the database. We need to do nothing else.
+
+On this page. Now. Let's go ahead and do.
+
+Storage. And here. We have to upgrade the project.
+
+And then you can set a limit. Which I like. When I started doing this.
+
+There wasn't this feature. That you could actually set a limit. And what this does.
+
+Is it limits the amount. That you could potentially. So like.
+
+If you actually got attacked. By like. Someone trying to like.
+
+Hack you. And like. They just like.
+
+Ran your image model. Or like. Ran a script.
+
+To just overload your database. You're going to get capped out. At $20.
+
+Which is good. Which is plenty. To start out.
+
+Which by the way. Happens. Like.
+
+You know. That's not. Completely uncommon.
+
+So. It's worth putting in. We.
+
+When we launched. Yeah. Thread.
+
+We got. The. Someone tried to do that.
+
+On like. The third day we launched. I don't know why.
+
+But. We were fine. Okay.
+
+So. Yeah. After you've connected.
+
+Whatever billing information. It's kind of annoying. Google.
+
+If you're watching this. Make it easier. Continue.
+
+Start in test mode. Create. Now.
+
+Let's go to authentication. And. What we're going to do.
+
+Get started. So. This part.
+
+What's cool about running local host. Is. It's automatically set up to.
+
+Authenticate local host. So. When I did this with.
+
+Replit. In the past. You have to actually authorize.
+
+Your dev domain. Which is like. The server that it's running on.
+
+But it automatically authorizes. Your. Local host.
+
+So. All we need to do for this part. Is go to Google.
+
+Hit enable. And. We just.
+
+Select. Whatever email. That you have signed up.
+
+As the support email. And we hit save. So we have.
+
+Literally set that up. Um. And.
+
+That is. Should be everything. Um.
+
+We did. Database. Storage.
+
+And we should see storage. So here are the files. That would show up here.
+
+In database. I think that's everything that we need. I might be wrong.
+
+I feel like. There's something I'm missing. Um.
+
+But. Let's just go ahead and say. I always like to restart the server.
+
+So I'm just going to say. Um. Okay.
+
+I set. Up. The database.
+
+And. Storage. Actually.
+
+Let's just see what it looks like. Let's go back to our old view. Let's see what it looks like.
+
+And. Let's go to localhost 3000. Okay.
+
+So we got the Google sign in button. It's right there. And because we haven't signed in.
+
+It's loaded right here. I think we just need to refresh our server actually. Um.
+
+To like get the updates from the database. So. Here we can just press sign in with Google.
+
+As you can see here. We can sign in. We can choose.
+
+This email right here. Sign in to cursor.firebase.com. Continue.
+
+And. Boom. Here we go.
+
+So. I'm not seeing. The.
+
+Where it would save. But let's just see what happens when we generate a new image. Um.
+
+Let's just go man. Generate an image here. And I'm going to just.
+
+In preparation for the error. I'm just going to screenshot this. Um.
+
+And copy it to my clipboard. Um. This one seems to be taking a little bit.
+
+But. Okay. So.
+
+We have this generation. We have the generation details. That's great.
+
+Now. There's nowhere. We can see.
+
+Um. So. So.
+
+I set up the generation and storage. I just pasted that image in. I don't see the page.
+
+That lets the user. See the images that they've. Generated.
+
+I want. That. To be in the top bar.
+
+And so we can run that. With the image. Right.
+
+So it knows what page we're talking about. And hopefully. Okay.
+
+Okay. So it added a my images page. And added a link to the navigation component.
+
+Oh. It's not visible in the UI. Okay.
+
+Interesting. So. Hopefully it's fixing.
+
+Is it going to get it? Oh. There we go.
+
+Now it has my email. Listed here at the top. My images tab.
+
+Up here. Which looks pretty damn good. Like.
+
+Yeah. It just looks fine. And like.
+
+Looks fine. I mean. Like this.
+
+This is an app that people. Like. Looks.
+
+Looks fine. Okay. All right.
+
+So now it has this back. Is it done? Let's make sure it's done.
+
+Um. Cool. So.
+
+We're going to hit accept all. And we can hit my images. Boom.
+
+There it is. There's my image. And now.
+
+Last thing. We can do. Is say.
+
+Below each. Actually. Um.
+
+To the right. Of. Each.
+
+Image. I want you. To put all of the info.
+
+That's in the pop. Up. Um.
+
+Except. But just make this visible. Because.
+
+We will want to compare these. Also. I think you have it by default.
+
+As square. It needs to be. Whatever the aspect ratio is.
+
+I want it to stay like that. Um. Uh.
+
+So have no limits on the aspect ratio. So if it's a rectangle. Make sure it's a rectangle.
+
+If it's a square. It should be a square. Um.
+
+And then I think. That's. I don't know how much time you have.
+
+But maybe we should try and deploy this. Like it would be like a full stack tutorial. But.
+
+Dude. Up to you. I'm just gonna.
+
+A hundred percent. I got time. To deploy.
+
+Kidding me? So. We're gonna go for it.
+
+So after this change. We're just gonna accept where the app is at. Even though we could add some more.
+
+And then. We're gonna deploy it to the internet. Because that's the full stack.
+
+That's what people want to learn how to do. Our next template that we make. Will have payments built in.
+
+We're still working on the best way to do payments. Payments are hard. Um.
+
+They're not. Once you get pretty good at cursor. You can set them up.
+
+I've talked to a lot of people. Who have got payments set up. But payments as a template.
+
+Is quite difficult. Because there's a lot of. Edge cases.
+
+For payments. Um. And.
+
+We're working on a way to get. Templates set up. Or a template set up.
+
+So like. Very easy to add payments. Look at that.
+
+Oh wait. No prompt available. And again.
+
+This is another good learning moment. The reason it's no prompt available. It likely has something to do.
+
+With. Um. What.
+
+Uh. The code wasn't updated. When we save this image.
+
+So all images going forward. Will likely save the data correctly. But.
+
+Um. For example. If we just go to generate now.
+
+And we use Flux Pro. Uh. Man walking.
+
+Generate an image. Um. Um.
+
+Um. Okay. You see here.
+
+It changed it like this. Which is fine. I'm going to leave that like that for now.
+
+If anything. I actually kind of like that more. Just to like see it.
+
+And like you get the parameters. Like. Oh.
+
+Wow. Wait. This is actually cool.
+
+Because we could actually get like. This could actually help people create. AI image coding.
+
+They could just like. If there's a copy button on here. They could just copy everything.
+
+That they need about it. And just toss it into their app. Or into cursor.
+
+That'd be really cool. Um. Here.
+
+So here's a good example. Exactly as I said. Right.
+
+Um. Now that we've edited up this code. It literally stores.
+
+This information. Right here. Perfectly.
+
+And. I am signed in. If Greg were to create an account.
+
+And do this. His data would be separate. Um.
+
+So yeah. Let's deploy this thing. Let's see how quickly we can do it.
+
+Let's see if we can do it in five minutes. So the first thing you're going to do. When you deploy this.
+
+Is we're going to go to GitHub. You need to just learn. How to create a repo.
+
+On GitHub. And so we're going to create a new repository. Um.
+
+I'm going to hit. Public name repository. Mount cursor.
+
+And what we're going to do. Is we're going to hit. Create.
+
+New repository. And then we're just going to copy this link. Right here.
+
+Yeah. And say. And this is.
+
+Again. Cursor agent made starting projects. As we've shown in this video.
+
+Incredibly easy. Without any other tools. We're going to be using.
+
+Verse cell. To deploy this. But again.
+
+In order to do it. We're not even really going to go to verse cell. We're just going to.
+
+Um. We're just going to be using cursor agent. To do almost all the work.
+
+And so what we're going to do here. Is we're just going to paste this in. And say.
+
+I. I created this new GitHub repo. And I want you to deploy this app.
+
+To verse cell. And save it to GitHub. Or commit it to GitHub.
+
+Or whatever the term is. I don't know. Um.
+
+To verse cell. And then. We can go to.
+
+Verse cell. And. I don't know.
+
+If we need to create a new project. Maybe it'll create a project for us. I think it might.
+
+Um. And so. This is where.
+
+A lot of commands are going to happen here. Um. Yeah.
+
+No idea. Really. What's happening.
+
+Um. Whenever it says pop out terminal. I always press it.
+
+I think some of these need. To pop out terminal. We did get an error.
+
+Um. Oh. It tried to add.
+
+Add. A new. Add the repository.
+
+And it failed. And then it says. I see you've already added.
+
+The repository. I didn't know that it could just create it. So we didn't even need to go to GitHub.
+
+And create the repository. Um. So.
+
+Wait. Okay. So now for deploying to verse cell.
+
+Um. Okay. So we need to go to verse cell.
+
+And hit add new project. So let's just go to verse cell. New project.
+
+And you're going to need to create these accounts. It doesn't take that long. Um.
+
+Wait. So we need to create a new project. How do we do that?
+
+Um. Project. What is.
+
+Oh. How do we add a new project? What's going on here?
+
+Is this verse cell? Or this is v0. Um.
+
+I'm pretty sure cursor can just do it. Can you just. Do it.
+
+On for cell. Please. Create.
+
+The new project. I'm pretty sure it can. And so these are all the API tokens.
+
+That you need to actually paste in here. Let me see. Okay.
+
+Yeah. I got nothing. I'm going to remove all of these after this.
+
+That's okay. I think it is just creating it. Um.
+
+I'll help you deploy to verse cell. Using the verse cell CLI. Um.
+
+Oh. I need to sign in. Okay.
+
+Um. Okay. That's easy.
+
+So it's automatically took me to this link. Success. Immediately in one click.
+
+Um. Your GitHub repository. Uh.
+
+To deploy every branch. Push automatically. Okay.
+
+Congratulations. You're now logged in to deploy. I think we need to keep going here.
+
+Pop this terminal out. Oh yeah. Here.
+
+This is what we want. So it says set up and deploy. Yes or no.
+
+We're going to press yes. And we're going to. Now.
+
+Let's just go like this. You just select. Whether you want to do it on your personal.
+
+Or your business. Uh. Link to existing project.
+
+No. Because it hasn't created a verse cell project yet. What's your project's name?
+
+Um. I'm just going to keep it as Riley Gregg pod four. Because that's what I normally do.
+
+I'm just going to press enter. And then in which directory is your code located? I just press enter here.
+
+Because I was told that in the past. I'm going to press enter. And.
+
+Do you want to modify these settings? No. Okay.
+
+So now it's doing something. It's uploading. And now we can actually press this.
+
+Open. And we can see here that it's building. So our deployment is building to this domain.
+
+So Riley Gregg pod. Blah blah blah blah blah. Dot verse cell dot app.
+
+Now. If we wanted to add our own custom domain. All we would need to do.
+
+Um. It's only a few steps. I'm pretty sure you just go into settings.
+
+Wherever that is. I did it the other day. In my last video.
+
+And you just find settings. And then. Go to name cheap.
+
+Paste in the code. And then you can set it up to your own domain. Super easy.
+
+Um. This takes a bit. This should.
+
+I think it'll take like. A minute and a half maybe. Um.
+
+Any questions? Not really. But.
+
+I actually came up with. I was thinking about your startup idea around diagrams. And I just checked.
+
+I have like a name for it. Potentially. That we can give to people.
+
+If anyone wants to go build it. And the domain's available. So one idea for the name is diagrams.
+
+But instead of. Spelling it. D.
+
+I. A. Diagrams.
+
+You just. It's diagrams. Like with A.
+
+I. In it. Dot com.
+
+That's available. And there's also. Diagram.
+
+Sorry. D. I.
+
+Like basically. Diagram. Dot.
+
+M. S. So.
+
+Right. Diagrams. One word.
+
+But it's dot. M. S.
+
+That's available. You know. The diagram company.
+
+Diagrams company. It's kind of cool. Right.
+
+I like it. I like it. Um.
+
+Okay. So. It failed.
+
+On. The deployment. And that makes sense.
+
+I don't. This is. I've only done this like two times.
+
+Where I've deployed here. Um. Um.
+
+What we need to do. And again. This is.
+
+Part of the fun. Is you get to figure out how to do these things. Um.
+
+So I just copied this. It's because the API. I forget where we put the API.
+
+Tokens. Oh. Logs.
+
+No. Deployment. No.
+
+Um. Where do we go? Is it build logs?
+
+Or. Huh. We can just ask cursor.
+
+We can say. Okay. I got.
+
+This error. Uh. Where.
+
+Do I put. The API. Tokens.
+
+In. For a cell. Oh.
+
+Wait. I didn't paste it. Um.
+
+And so what we need to do. Is we need to go up here. And grab these.
+
+And we can just copy this. It's like. You just need to find a place to.
+
+Paste them. I think that's why it failed. Um.
+
+Okay. Um. Go to the deployments.
+
+Tab. Okay. We're on the deployments tab.
+
+Find your latest deployment. Click the three dots. And select redeploy.
+
+This will trigger a new deployment. Enviable variables. Okay.
+
+So we can just hit redeploy. Um. Hmm.
+
+That's annoying. It doesn't let me. Um.
+
+It didn't. Give me a place. To put.
+
+My tokens. How rude. Oh.
+
+We need to just go to our projects here. So we need to click out of this. Um.
+
+Go to projects. Riley Gregg pod. Three dots.
+
+View logs. Maybe that's it. Oh.
+
+Okay. No. Deployments.
+
+This does look different. Okay. This one's building.
+
+It's likely going to fail. We plus three dots. I still.
+
+Wait. Did it build again? All right.
+
+This will create a new project. If one doesn't exist. Link your local project to Vercel.
+
+Start the deployment process. Once this completes. You should.
+
+Get a URL. In the settings tab. In the settings tab.
+
+Like. Why don't I see that? Wait.
+
+Go back to the deployment. Is it in the three dots? Is it here?
+
+I literally. I'm going nuts. Okay.
+
+All right. Back to the screenshot. When all else fails.
+
+Where? Like. We're literally almost there.
+
+We just need to put in our API keys. And it'll be on the internet. I just.
+
+For whatever reason. I feel like this interface is different. I could see the top of that cursor.
+
+We're almost there. Okay. Go back to your project overview.
+
+By clicking the project name at the top. Where's. Okay.
+
+This right here. Project. Ah.
+
+This is it for sure. No. I do remember this page though.
+
+We're almost there. We're there. What does it say?
+
+It says. Oh. Click on the settings menu.
+
+There's settings. That's what I'm talking about. There it is.
+
+Okay. Please be here. Where is it?
+
+Environment variables. There it is. Key.
+
+Paste. Boom. What's this?
+
+So it says. OpenAI. Key.
+
+Replicate. Anthropic. Deepgram.
+
+This. Project. Is not using.
+
+Hold on. Because our template is set up. With.
+
+OpenAI. We have openAI code. In case you want to use it.
+
+Already in there. We need to make sure. It's not using.
+
+It's not using. OpenAI. Anthropic.
+
+Deepgram. Or. Deepgram.
+
+I. Don't need. Those keys.
+
+Please. Make. Do I have.
+
+To add them. There is no. Features.
+
+With them. Yeah. Honestly.
+
+I think we need. A better. Closing prompt.
+
+Like a prompt. That we use. Every time we build an app.
+
+That says. Deploy to Vercel. Do this.
+
+This. And this. And this.
+
+I think we could get it down. Like we've gotten down. Most of the other process.
+
+The thing is. I just moved off. Replit.
+
+And so. I'm learning. With everybody else.
+
+Which is fun. Okay. Let's pop out this terminal.
+
+Don't know what that. Did. Now you need to only.
+
+Add one variable. Okay. So now.
+
+I just need to do. Replicate. API token.
+
+Which. Is already in there. Okay.
+
+Let's see. Did it. Redeploy again.
+
+Let's go to. Projects. Let's.
+
+Redeploy. Now. Or I'm just going to.
+
+Tell cursor to do it. Okay. Redeploy.
+
+Now that. I've added. Them.
+
+Okay. So in order to put your API keys in. You need to go to.
+
+All of your projects. So you need to go to your. Projects right here.
+
+Then you need to click. On this. On this.
+
+Page. And then you have settings. Environment variables.
+
+And then if you click directly on projects. And go to build logs. That's how you get to this page.
+
+To see the individual status. Of this build log. Okay.
+
+We're learning. Diagrams. AI.
+
+I like it. I think diagrams. Di.
+
+Just diagrams. Dot ms. Right.
+
+D. Dot ms. Like it's D.
+
+I. G. R.
+
+A. Dot ms. Diagrams.
+
+Okay. Okay. Dot ms.
+
+Okay. I don't hate it. I'm not in love with it though.
+
+Okay. Diagrams.co is also available. I mean it's not dot AI.
+
+I know you're an AI guy. Yeah. I'm actually.
+
+I'm learning more about. I think dot com. Like I think the dot AI is going to wear off soon.
+
+Like I think it's going to become uninteresting. Which I actually like your prediction about the Super Bowl. About how like there's going to be so many AI ads.
+
+I don't know if it's going to be during the Super Bowl. But. I mean partially.
+
+It's already partially true. Like there is a massive chasm between people. Oh.
+
+There we go. Look at this. So.
+
+Riley Brown. Riley. Greg.
+
+For pod. For sell. Dot co.
+
+Oh. This is a really good thing to learn. So this is on the internet.
+
+This is fun. Okay. So watch this.
+
+This is going to fail. And the reason for that. Is we need to actually take this link right here.
+
+Also. For. I'm going to put in the chat.
+
+How do I. Oh. On Twitter.
+
+I'm going to send you the link so you can sign in. But not yet. What we need to do.
+
+All right. So I sent you this link. Greg.
+
+What we need to do. Can you still see my. Screen.
+
+Like you see Firebase. Yep. Okay.
+
+What we're going to do. Here. Is.
+
+We're going to go. To authentication. And what we need to do.
+
+Is we need to go into settings. And we need to go to authorized domains. Add a domain.
+
+And we need to paste this domain. Right here. Now that we've added that.
+
+We can go back to. We can go back to our. This link right here.
+
+Wherever it is. Actually. Let's go new tab.
+
+Paste this in. Now. In theory.
+
+It should work. There we go. So now we can sign in.
+
+Now I'm going to sign in with that same account. That I did from the dev domain. Or on local host.
+
+And we're here. If we hit my images. We're going to see the images.
+
+That I've generated. And yeah. You should be able to sign in for free.
+
+And use it. Right now. With that link.
+
+Crazy. Like. Unbelievable.
+
+Yeah. And. Yeah.
+
+That's what we did. So I guess. In conclusion.
+
+We started off. In cursor. We created a new project.
+
+With an empty folder. Basically. An empty folder.
+
+That's safe. Then. We used.
+
+A GitHub repo. Which was one of my templates. That I'm sure you can put.
+
+A link in the description. Or something. All you do.
+
+Is say. Fork this repo. And.
+
+Fork this repo. And run it locally. In one command.
+
+I don't know why it's in one command. But that just works better for me. And then we ran it.
+
+It. Immediately. Created the.
+
+The template page. Which is basically. Like.
+
+The page where you get started from. It is a next JS. Blank canvas.
+
+Where you can do anything. From there. We asked it to create.
+
+An AI image generator. It failed on the first one. And the second one.
+
+Each time. We added the errors. Back into cursor.
+
+And then. We added. Additional documentation.
+
+And examples. Until it got it. And once it got one of the models.
+
+It was very easy. Right here. To add.
+
+The. Other models. And we added.
+
+Three AI image models. And then we also added. The ability to see.
+
+All of the parameters. That. Were involved.
+
+With that. Image. And then.
+
+We used. The template again. To connect it to Firebase.
+
+Really quickly. And now you can sign in. And.
+
+All of your images. Get saved. And.
+
+You can now sign in. As well. And then we deployed it.
+
+To the internet. So you can send it. To your friends.
+
+That's what we did. In an hour. In like.
+
+15 minutes. Something like that. You love to see it.
+
+Pretty cool. Pretty cool. Pretty cool.
+
+We'll include that link. In the. Show notes.
+
+What else should we include. In the show notes. Riley.
+
+You can plug. Yap thread. App.
+
+Yapthread.com. Just in case. This is going to be in the episode.
+
+I just finished this app. I actually have not announced it. We aren't going to be announcing it.
+
+Until we fix a few more bugs. But. It's ready to go.
+
+We added. Just like. Composer.
+
+We added a composer feature. Which allows you to save your notes. Here on the left.
+
+You can chat with AI. And you can ask all your bookmarks. What sources.
+
+We call them sources. Not bookmarks. Have I.
+
+Saved. On mid journey. I actually don't even know if this is.
+
+This is the local. But you can basically ask. Things to this AI model.
+
+You can record your voice. And it's just like the ultimate writing tool. Here are all of my sources that I've saved.
+
+And if you want to very quickly. Just add something to your thread. You can then use AI to create compositions.
+
+And yeah. I'm not even going to get into that. I've been working on Yap Thread for like.
+
+A month and a half. Off and on. And then we have software composers.
+
+And this is where all of our templates are stored. It's a free community. You can join.
+
+I think we have. Close to 10,000 people now. And we just hang out.
+
+And we talk about building AI apps. So that's what. Those are the links.
+
+We'll include that in there. So people can access. It easily.
+
+And. And I'll reveal my age. You know.
+
+I can't end this episode. Without revealing. My true age.
+
+Which. Is. I'm 35 years old.
+
+Oh wow. Okay. I was close.
+
+Somewhat close. You're close. You were close.
+
+Yeah. Turning 36 next month though. So.
+
+Okay. How many people do you think. We're watching.
+
+Only. They're like. All right.
+
+Shut up. I just want to know his age. They're like.
+
+They're like. Skipping ahead. Skipping ahead.
+
+Like. Screw this tutorial. How old is this guy?
+
+Well. Well done. Whenever I make promises early on in the episode.
+
+I forget. So. That was good on you for remembering.
+
+No. This is. To my community.
+
+I. I like to under promise. Over deliver.
+
+I love it. I love it. That's where I'm at.
+
+Let us know. In the comment section. What you thought of this episode.
+
+I'm in. I'm always in the comment section. So.
+
+I'll be replying in there. And. Riley.
+
+Thank you for being so generous. This is your time. And your wonderful brain.
+
+I hope to see you soon. Let's do it again soon. Thank you.
+
+Later. Peace. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye.

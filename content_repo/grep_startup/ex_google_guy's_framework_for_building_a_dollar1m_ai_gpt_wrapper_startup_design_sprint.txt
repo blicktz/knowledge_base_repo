@@ -1,0 +1,699 @@
+We've got Jaiscream, the man who needs no introduction, Funnel Master, and then we've got Jake Knapp, who originally comes from Google, helped create the design sprint. And I think, Jake, what I want to get out of this whole episode is to teach me, and by virtue of me, everyone, how to build a product that has the highest probability of success. So that's what I want to do.
+
+I want to build an AI wrapper startup, but I want to build it with the highest probability of success, and I want a framework and a process and a methodology to help me get there. Amazing. So yeah, that sounds like super fun to talk about because that's what I've been obsessed with for a long time is trying to figure out how to get the best out of a good idea, when also even how to evaluate if we've got a set of ideas, which one should we pursue first?
+
+And then how do we tune whichever one seems the most promising into the best form of it that's going to be different, that's going to feel like it's worth people paying attention to, and then how to experiment on it once you find it. So yeah, let's do it. That'd be wonderful.
+
+All right. I have like an app idea, a wrapper idea that I'd love to launch, and I was wondering maybe could that be a good thing for Jake to help evaluate and help me figure out how to actually make it successful. And I actually haven't pitched this to him, and I haven't.
+
+I'm really curious about what it is. I kept it a secret so it's like authentic. Don't ask a question you know the answer to.
+
+You sly devil you. All right. Yeah, of course.
+
+Let's go. All right. All right, Jake, listen.
+
+I have this idea for a GTP wrapper. What's your GTP wrapper? GTP wrapper.
+
+It is. All right. So I've got this idea.
+
+I'm just going to like build it using all the fancy AI tools that are out there. It's called hit.me. Okay.
+
+Yeah. Hit.me. Yeah.
+
+It's a way for me and other people like me, so like knowledge workers to control their dopamine, to get a dopamine hit. Oh, hit me with dopamine. Hit me with dopamine, right?
+
+It's for people who just want to be like, I don't want to fall into the doom scrolling of being on X, being on Instagram. I just need a dopamine hit. I just need to.
+
+I know that's what I need. Yes. I just need a time controlled dopamine hit of like the top things I want to know from my X account, the top things I want to know from whatever.
+
+And so that I can still get the dopamine hit, feel less FOMO because I don't want to delete my apps and become like a Zen monk and yeah, I don't want to doom scroll, but I still want to, I still want to know what Greg's up to. Yeah. Yeah.
+
+This sounds like actually this is kind of an interesting idea. Plus AI. I just kind of like this.
+
+Plus AI. AI. AI.
+
+And could it also be crypto? It will not yet have a crypto element. Not today.
+
+Okay. Yeah. I love it.
+
+I love it. Oh, this is a good idea. Okay.
+
+So, well, maybe it is. Shall we, should we just jump right into the framework that we use? So this is, this framework is what I use with, with startups that we invest in character capital.
+
+So it's a tiny VC fund. We're investing in like pre-seed startups and often they're at this state, like they, you know, smart founder, got an idea, haven't built anything yet, or just starting to toy around with something. Let's get off to the races.
+
+So shall I share my screen and we just like, yeah. Do you want to go into tutorial mode? Just like, let's.
+
+Is that fast or should we talk more first? What did I talk? What did we, what did we say about questions?
+
+He don't ask questions. You know the answer to. Exactly.
+
+This guy just went straight into tutorial. Let's fucking do it. Can you give me more cable over there so I can squeeze this over here?
+
+Seven more cable or like six more cable? I want the sauce. I would like, I would like the sauce.
+
+His audience is just like, show me sauce. Show me sauce. Okay.
+
+Okay. Let's do it. Let's share screen.
+
+It's a very sauce based audience. So this is the Miro template for the foundation sprint, which is the, that's the method. So like Greg said, I created the design sprint.
+
+This is sort of the prequel to the design sprint. I mean, created it more recently in the last few years, but it's something you do before a design sprint. So it's perfect for this moment where John's got this idea.
+
+He's ready to rock and just like a quick overview before we dive in, like the big steps of this would be first, we want to get into like the basics. Just want to identify like crisply. What are the, what are these key elements of what you're doing?
+
+Then we want to talk about differentiation. And then we want to say like, okay, within that sort of idea that you have, what, what are the different forms that it might take? And maybe we can do a quick pass on which of those forms would be best.
+
+We'll have to go quick if we're going to, you know, not take forever doing this, but let's just jump into this, like this customer thing. So who, like, who's the customer for this? Can you kind of give me a few, it doesn't have to be one.
+
+You can give me like more than one and then we can choose. So for me, I think it's initially mainly guys just because I know guys, you know, yeah, I'm one of the guys. You need to find like, what do you mean by guys?
+
+Like guys, what does guys mean? Okay. Like, are we really going to, are we really going to start this question?
+
+No, like what's the age range? What's the age range? I think it's, what's the, is there, you said knowledge workers.
+
+So I think it's knowledge workers. I think it's like 25 to 35, maybe 25 to 40. Definitely, you know, working in tech or product space or, or entrepreneurs.
+
+Actually, I think maybe mainly entrepreneurs. It's, it's people who are, and it doesn't have to just be guys. It's just, I happen to be a guy and I'm thinking about this at a very basic level.
+
+It is. Sexist. Very sexist.
+
+It's a sexist product. No, but the idea here is that it's guys who are like, ah, I really need to keep up with all the things that are going on in the entrepreneurial space. I don't want to miss out on some new tech thing.
+
+I don't want to miss out on like this deep seek thing that has happened, but I also don't just want to read the news. I want to be looking at social media and seeing like the cutting edge stuff. But also what happens is when I go.
+
+Okay, wait, shut up for a second. Yes. Because that's going to be the next thing.
+
+Yeah. So I just wrote down two based on what you said. One is like guys, knowledge workers slash entrepreneurs, maybe 25 to 40.
+
+Yes. Or we could just say like entrepreneurs. Like.
+
+I think entrepreneurs is the one. For V1. Okay.
+
+Let's just call it. We'll, we'll lock that for a second. So cool.
+
+Sexy entrepreneurs. Yeah. Oh, sexy entrepreneurs.
+
+Yeah. Yeah. I will put that in not bolded text.
+
+Oh no, it looks like it's going to be in bold. Okay. Sexy entrepreneurs.
+
+Quick break in the pod to tell you a little bit about startup empire. So startup empire is my private membership where it's a bunch of people like me, like you who want to build out their startup ideas. Now they're looking for content to help accelerate that.
+
+They're looking for potential co-founders. They're looking for tutorials from people like me to come in and tell them, how do you do email marketing? How do you build an audience?
+
+How do you go viral on Twitter? All these different things. That's exactly what startup empire is.
+
+And it's for people who want to start a startup, but are looking for ideas, or it's for people who have a startup, but just, they're not seeing the traction that they need. So you can check out the link to startup empire.co in the description. Okay.
+
+So then problem. Okay. So, because you started talking about the problem.
+
+Yeah. Okay. I went too quick.
+
+I think digital addiction is one of them. And the sense that we're just spending hours on social media, even though that's, you know what it is? Consumption versus creation.
+
+Ah, okay. Over consumption instead of actually creating things as the problem and the feeling of dark emptiness that comes with that. So of those, which would be like the one?
+
+Like digital addiction, spending hours on social media. I know they're all like- Over consumption. Over consumption.
+
+Yeah. So like, it makes you feel like you're getting stuff done, but actually all you're doing is consuming information. Okay.
+
+Over consumption. That's the best label for you. This podcast doesn't count as that.
+
+No, no. Right, Greg? This is pure, pure meaning.
+
+Yeah. No, this is sauce. Sauce.
+
+This is pure sauce. This is 100% sauce. Okay.
+
+So we've got entrepreneurs. Yeah. And we've got over consumption.
+
+That's our problem. Okay. So what's a special capability that might give you an edge?
+
+So just to clarify, do you mean what gives me personally as the entrepreneur making this product an edge? Yeah. You, Jonathan, you're building this thing.
+
+What's like your, you know, if you imagine. There's another team, like somebody else somewhere got the same idea right now. What's sort of special.
+
+And I'm going to ask you, by the way, I'm going to ask you, like, what's your capability that might give you an edge? What's your insight that might give you an edge? What's your motivation for doing this?
+
+Might give you an edge. By the way, I want to interrupt. I just want to say one thing.
+
+The beauty about this whole process, because I bet you people are thinking, it's not like we're talking about, should we use Bolt or Lovable? Or, you know, which tools should we use? This is back to first principles.
+
+It's like a first principles way of figuring out how to build an AI wrapper startup idea, right? Absolutely. And this is like, I guess when startups come to you guys, that's where you don't necessarily care, especially with something like this, exactly the tools they're going to use.
+
+It's, does this even have space in the market? Totally. Yeah.
+
+I mean, that's the thing. It's like the, I know from working with hundreds of startups over the years and seeing everything from like Slack and Uber to a lot of companies that just went out of business, which by the way, I mean, that can happen even if you're really smart and have a good idea. But like the difference of the core thing that technology ultimately will matter when you're building it.
+
+But like the core thing is like, does it solve a problem? Are people excited about getting the solution to the problem? And usually like you just thought of this idea of, I don't know, today or like recently, maybe 15 minutes ago, 15 minutes ago, but like usually working with a startup and they've been doing this thing for like them thinking about it for a while, right?
+
+Like maybe weeks, months, you know, maybe, maybe even like a couple of years, like, oh, should I, should I go ahead and do this? And even still, even if you've been thinking about it for a long time, it is rare that people are totally dialed in on the first principles on the basics. Always helpful to say, well, let's just back off of the tech stack.
+
+Let's just talk about who's the customer. And I, yeah, I think like, uh, uh, Greg, I know you don't talk about this too much on your podcast, but one of your companies runs design sprints a lot. And I'm sure you've experienced a company coming to you guys and being like, it's so nice to also just have the time and space to think about these things.
+
+Like most people just dive right into the business, but being able to have someone, even right now I'm getting caught up in this and I'm like, it's such a pleasure to just be able to have the headspace to think about it. And it can, it's already bringing up new ideas that I wasn't even thinking about in the first place. And it's fun to be the outsider here too.
+
+Like I love getting to ask the questions and I'm sure if you're the entrepreneur who has the idea already, uh, you probably have a friend who would love to ask you the questions and like, you know, learn. Yeah. I think, I think it's really hard to build when your hands are on fire period.
+
+Like if your hands are on fire and you're just like, you see a viral tweet and you're like, Oh my God, I need to go build what this person is saying really quickly. Um, you kind of need to take a step back and be like, okay, what, whoa, like what am I doing here? Why am I doing it for who?
+
+Like what? That's why I like this framework. So yeah, let's, let's keep going.
+
+Okay. So you asked me what my special capability is or something. What was the question?
+
+Yeah, right. Your capability. And like, there might be more than one.
+
+I mean, I know you, Jonathan, you have many capabilities, but it's like, what's the thing that if you, if you imagine the typical person who might compete with you, who's also probably got their own capabilities, what's the thing that really like is a standout thing for you? Um, I think what would be, what I would bring to the table would be like packaging up an idea. So like positioning and packaging, uh, probably the, the mark direct response marketing angle.
+
+Um, it's in a, in a nutshell, probably I would have stronger marketing skills. Yeah. Funnel, funnel, funnel master.
+
+Yeah. The funnel, I think funnel building. Yeah.
+
+That kind of stuff. It would, it would all be around marketing. And then one of the advantages would be design because I'm a designer design.
+
+Um, yeah, also, uh, you know, I don't think it comes across in the podcast or even in person, but you're funny. You have a good sense of humor and it might, that might be an advantage. So that's even a thing.
+
+Okay. Yeah. What about unfunny?
+
+What about unfunny? Unfunny also is an advantage. Like, yeah, absolutely.
+
+It's a huge advantage. By the way, uh, Greg, do you want us to zoom in more when on these sections? Yeah.
+
+Yeah. You know what? I think the only way I can do it is to make the window smaller, which I will do now.
+
+Oh, baby. Yeah. Is that better for you?
+
+Yeah. Yeah. And if you don't mind, uh, cause there's audio listeners just like whatever you're seeing.
+
+Oh yeah. Right. Audio.
+
+Sorry. Audio listener, uh, that I wasn't doing that all along. Quick recap, quick catch up for audio listeners.
+
+What we've got. No, you don't need to forget. Forget it.
+
+We're doing sticky notes on a virtual whiteboard. So that's, that's what you missed. Okay.
+
+Um, so here we got packaging and idea funnel master positioning design, which of these stands out to you as like, yeah, that's probably the thing or the two things I'd hang my hat on here. Okay. I think if I was, I think what would make me difficult to compete with would be the funnel part.
+
+Yeah. Funnel master funnel. Yeah.
+
+And I think the design element, because a lot of people who build these are developers. Right. And I'm a designer.
+
+So I would just come at this with a different angle and I'd be able to make a nice interface for it. And I think that would be important for this particular challenge. Love it.
+
+Okay. I'm going to grab those two, make them big. So we've got this little running tally of quick decisions.
+
+By the way, if you're doing this on your own, or if you have like a team, this will take longer. Jonathan's just one person. Look at the one behind us.
+
+You did this with the team today. I guess we can say they're like PIP decks. Yeah.
+
+And how long did it take for this one exercise? For this exercise, two hours. Two hours.
+
+Yeah. So there's a few little buildup steps before, but yeah. So it's like, this is probably normally going to take.
+
+We're flying through it. Yeah. We're flying.
+
+Okay. Insight. Do you have like a, something that you get about this that other people do not get?
+
+I think that this is one of these things where I actually am going through cycles of digital addiction and it's, it's kind of like a eating my own dog food or something. I have this problem I've tried, I spent a lot of money buying products to help solve this problem. They haven't solved it.
+
+Okay. But those don't quite reach the level of an insight. What do you, what's an insight?
+
+I need to explain. Well, it's like, for example, AI can help with this. Like a lot of people have taken a crack at doing this, but nobody has unlocked the power of like AI plus design equals something really special.
+
+Okay. I think that a missing element from all of this and all of the products I've seen out there that attempt to do something like this is they end up replicating and nonstop scrolling system that can be refreshed. My insight here is you have a specific amount of time to use this per day.
+
+And so once your time is up of like 30 minutes, I think time might be an element. Time capping. Time capping.
+
+The usage might actually be an element that other products might not be able to combine with the AI and design and et cetera. Yeah. Okay.
+
+Tell me, Jake, tell me if this is a, an insight. Yeah. Yeah.
+
+So one of the things I like to do is use Google trends to figure out if like, I might have an idea that there's something worth building in this space, but I'd like to know the monthly search volume and how it's trended over time. Um, so when I look at, for example, phone addiction, um, maybe I can share my, so if we look at phone addiction, can you see my screen? Yeah.
+
+Yeah. Look at that. So this is like, as a startup builder, this is what you want to see literally up into the right.
+
+So, you know, I use a tool. I'm not like involved or sponsored by any sense. Uh, glimpse, it's like, uh, kind of layers on top of Google trends.
+
+Um, so if you look at 2008, you're looking at, you know, 18,000 searches a month, which by the way, there's still a huge, there's still a market for that. But now we're looking at hundreds of thousands or a hundred plus thousand searches per month. Um, my guess is it's only going to get bigger too.
+
+So the insight here being that, and then by the way, I also like kind of looking at, uh, you know, what kind of questions people have, like how to reduce phone addiction. What is this? This is a cool app.
+
+Yeah. This is cool. How to, how does grayscale help phone addiction?
+
+By the way, these questions really helped me on being like, oh, maybe I should have like a grayscale product feature or something. This is really cool. Yeah.
+
+Also great for YouTube video keyword research. Yes. What is the, what, what's going on in that?
+
+What years are the dip in like COVID maybe because people didn't care about it? Fuck it. Well, it's like they were at home, right?
+
+So like the phone addiction was less severe. Yeah. You're not in the toilet, like at a restaurant on your phone and being like, what am I?
+
+Totally. Yeah. Who am I?
+
+You, you can also see, you know, certain countries, um, are more addicted to their phone than others, which I find really interesting. Um, so like, for example, like the Philippines, people are really addicted to their phone there. Apparently Singapore, like they're really addicted to their phone.
+
+So, um, my question to you, Jake, and I'll, I'll give the baton to you back to the screen chair, you know, is this an insight? Does this consider an, is this considered an insight in your framework? Just say no.
+
+And then stop talking just flat out. No. Damn.
+
+Damn. And that's the podcast. No, I mean, I think it is.
+
+So it's like, that's a, you know, the, the downside with that insight is that you were able to get it from, from Google trends. So presumably anyone could access it. The best insights are ones that for some reason, because of your unique sort of situation, you have a peak into something that nobody else does.
+
+And, um, but you know, those aren't necessary for a great product. They're just often those are like really special. It's clear from that chart that.
+
+Like Apple's sort of screen time features and all that stuff. It's like, it's not making a difference. Like this is still a problem.
+
+So, um, I mean, I was always a bandaid solution just to make them see seem like they cared. Yeah. Yeah.
+
+But it would definitely push you, John, to say like, okay, this is a legit problem. I can, I can definitely like sniff test it with trends, but is there something that you think, you know, about this or, or, or guess about this that you don't think other people guess? I think that, um, not many people know yet the destructive results of consuming versus creating.
+
+And I think that it's only starting to like slowly make its way into the zeitgeist. I don't even think the average entrepreneur who spends loads of time, even listening to all of this stuff about cold showers and all of this stuff yet knows the destructive power of consuming more than you create. Um, the depression, the anxiety, all of these things.
+
+I'm like always studying things like anxiety, trying to solve my own life problems and a huge, huge amount of information is just starting to come out around consuming versus creating being a cause of a lot of issues. And I think not many people have been digging into that insight as much as I have on this topic. Totally.
+
+That's certainly missing. Like I just read a great, and it was kind of like a niche post about how, uh, having high agency is correlated with just like overall, like happiness, life satisfaction and the author identified consuming versus creating among a long list of things is like, that's a great way to give yourself like high agency, but it's not something that you've heard. That was the first time I heard a glimpse of it.
+
+And then I was shocked that you were talking about it cause I'd never heard it. So that's, yeah, that's a new, that's a new thing. I've only started talking about it in the last two weeks because I'm like, oh my God, I, I was, I was stuck on the consuming is bad because you're getting like lots of bad stuff and you're numbing yourself.
+
+I didn't think about the fact that consuming is bad because you're not creating. And now, by the way, doing this, uh, foundation sprint, I know, I don't know if this ever happens. I'm like, wait a minute.
+
+I don't want to make a GDP wrapper. That's about giving you the information from X and all these places. I want to make a cheap GDP wrapper that focuses on helping you figure out how to switch consumption into creation in certain points of your day.
+
+I don't know if that's part of how this works, but I just like that. It gave me a random idea that, wait a second, why would I focus on that thing when this is, this insight is the core of the problem. But I don't know.
+
+I mean, the reason why we're doing the basics, like before we do the approach is for that very reason. Like we want to make sure that the approach you take is the one that best solves the problem. This is, you know what, this is one of the challenges and I'm sure, Greg, you've probably seen this again with LCA.
+
+Sometimes when people are in a design sprint, they're like, oh, I now want to do something different. But in a design sprint, it's hard to get off the train because it's powering forward and like they've already paid for the fucking sprint as well. So you don't want to, but like the foundation sprint, what I like about it is that you have, I feel like the client, again, I'm thinking about it from an agency perspective, the client has the opportunity to just explore a bit.
+
+Right. Right. Yeah.
+
+Yeah. It's a little bit, you have more freedom. You have a little bit more slack in this.
+
+Cool. Maybe let's just keep, keep going on. By the way, I'm not kidding right now.
+
+I'm like, I actually don't want to share this idea because I want to do it. So don't delete the podcast. Yeah.
+
+Let's just let it go. Greg's probably going to be like, it sucked so much anyway. He doesn't want to put it.
+
+We'll see. We'll see if this is a good idea by the end. That's right.
+
+Yeah. Yeah. Yeah.
+
+Yeah. Yeah. Yeah.
+
+Yeah. Yeah. Yeah.
+
+Jake's going to rate it. Yeah. So motivation, like what is of all the things you could do?
+
+Why would you do this? I spend time on this. This is probably getting a bit too personal, but I have.
+
+Make it deep. Yeah. I have like generalized anxiety disorder, which is like a, you know, everyone has, everyone says they have anxiety.
+
+So whatever, it's like the, one of the things. And I've come to a strong realization that it gets much worse when I'm consuming more and more and more. And it's much better when I'm in a more creation mode.
+
+Um, at like sitting on watching YouTube videos all day, even if they're really interesting and about business, if I don't pair that with actual action, it makes life worse. So I have a selfish motivation to create things that increase my ability to create. Yeah.
+
+Okay. I've written that. Is that a good motivation or is it too like soft and personal?
+
+Yeah, it was really soft and personal and like, kind of like, I'm sorry guys. Uh, no, that's good. Like that's, I think that's what this should be, right?
+
+Like the, the reason this is split out from the other stuff is sometimes this is what makes the thing great. That the, the creator of the thing is like hair on fire about something that other people are not so motivated on. Yeah.
+
+Scratch my own itch. Yeah. Or, or, or, you know, sometimes it's not their own itch.
+
+It's like, no, this is this problem. I see that I really want to solve or like whatever it might be, but that it's special and it really drives you. It can inform how you differentiate.
+
+Yeah. So it's good to tune into that. So I think, I think that's a good one.
+
+I would have these, like, what do you think of the phrasing? Want to solve this for myself? Oh, there's one more thing.
+
+Do it. Yeah. And actually it might even be stronger than all of these.
+
+It's like, I think back to my teenage years when I used to make comic books, I was in a band and I used to make little video games and all of this stuff. And I was really proud of the stuff I got out. And I think over the last 10 years, I'm like, I just spent 80% of my time just consuming social media and didn't create things.
+
+And I think like, uh, one big motivation is to not regret, not creating things. Yeah. Yeah.
+
+Yeah. Yeah. Yeah.
+
+Greg's like, I need to get these guys off the podcast. Well, what about, no, I was just thinking like, what about helping people? You know, this is about.
+
+So I have to say. Jonathan's associate. No, I want to be really honest for being here.
+
+I actually think first, at least for this challenge, I think first about like what selfishly I'd love to exist for myself. And then I'm, and with all the things we end up doing at my company, I'm like really pleasantly happy that it also helps other people. But I always want to make the thing for myself first, or I won't care as much.
+
+I don't know. That's just my own. It's cool if it helps other people, but I will only really care about it.
+
+If I feel like this is something that would have helped me 10 years ago. It's like, what would have been amazing if it was there 10 years ago for me? That's what I want to make.
+
+I think. Yeah. You go.
+
+That's a strategy. That's certainly a strategy. Well, you're more strategic about these things.
+
+And so I would never just go, I would like call you up and call Jacob and then be like, guys, so how do I not just make this a Jonathan product? You know? Well, what worries me about a Jonathan product is, and I want to put this, Rafa, our producer could maybe put this image up.
+
+Have you ever seen the Simpsons episode where Homer designs his car? No. Oh, we got to be able to find that.
+
+But you know, okay. I get the general idea that it just becomes so specific to. Hold up.
+
+Okay. Bring it up. Homer's dream car.
+
+There it is. That is Jonathan designing his app. Yes.
+
+Okay. The issue I have with this is. That's my app.
+
+That's my app. Jonathan literally has a car. I'm giving it a ride today.
+
+So the horn at the top, I think from what I remember from the nineties plays like la cucaracha. It's like la cucaracha. It's like a cucaracha.
+
+Yeah. You know, so sometimes what sounds great to you isn't what sounds great to others. So that's the, that's what I'm hoping this process.
+
+Oh yeah, actually, I guess there will be. Yeah, you're right. Yeah.
+
+Well, so here's how I think about this. Uh, let's see. Let me get out of this.
+
+Yeah. What would you say to that? Yeah.
+
+I, I would say that here we start. Oh, this is, is this, which one was I editing? Oh yeah.
+
+That's a laptop you're using. This is a laptop. Yeah.
+
+Yeah. Oh, I see. Right.
+
+Okay. Yeah. No, here we go.
+
+So, uh, the thing about this is we started off, we talked about who's the customer. What's the problem you want to solve for the customer? And we talked about, right.
+
+Jonathan's capabilities and insights. The thing about the motivation is I personally, just personally, like if I'm investing in a company, I'm, I'm a little nervous if their motivation is just money, just because that's like, well, yeah, of course, like that should come if you do a good job here, but it's a little hard to tap into what's special about that. It's hard to like create drive or fire out of that to do something unique and opinionated.
+
+It's, it's actually fine with me. If it is sort of selfish, I think there is a category where it's like, gosh, for this personal reason, like I saw my parents struggle with this. I saw, you know, I have friends who struggle with this, or I've, I work in this, you know, I work with this group of people, whether it's like Jonathan, maybe he is mentoring entrepreneurs and he sees them struggling and he knows he wants to help people like that.
+
+If that's sincerely true, well then like, great. Like maybe that's it, but if the sincere reason is he wants to solve it for himself. And we still did also start by saying like, yeah, but who are the people who will use this?
+
+And like, do we think, what problem do we suspect they have? I personally think it's fine for him to be, to, to be honest and say like, yeah, but like really my motivation is I want this thing for myself. I think there's great stuff that comes, can come from that.
+
+You know, we just, it has to be balanced with that other, those other elements. And ultimately it has to be balanced with experiments, which are probably design sprints. We're going to prototype the thing, put it in front of those customers and see like, okay, do they also share the problem you have?
+
+Okay. Do they find that Homer's dream car for you is like just garbage for them or are you onto something? So anyway, I guess I like just sort of labeling it here because it's like, we're not going to change Jonathan's mind that that's why he's motivated.
+
+So like, fine, like, yeah, great. I want the Cucaracha. What would your horn play?
+
+My horn would play. You didn't add a human trumpet to the unfair advantages section. Yeah.
+
+Human trumpet. No one's ever asked me to human. I've never gotten the opportunity to human trumpet on this podcast, but finally, I hope that doesn't get cut out.
+
+So which of these would you choose, John? Honestly, if I'm looking at it, I would go for the more positive thing. It's I want to create.
+
+Want to create. And I want to replace consumption with creation or like change the pie chart to like 80, 20 creation consumption. Okay.
+
+But Greg's podcast doesn't count. And I would listen to that every day on repeat while I'm creating. Okay.
+
+Let's move on to competitors. How do people try to solve this today? What do they do as a workaround or are there other products that they use?
+
+I got a little bit stuck here when I was trying to fill this out. I was thinking like the competition here, or at least people would believe the competition would be something like brick. You know, this thing that blocks your phone.
+
+News feed eradicator freedom, which you use and talked about before. Honestly, the gray scale thing in the iPhone and even the iPhone's built in stuff. Like the screen time stuff.
+
+Yeah. And another competitor is like basically like movements, you know, like no social media movements and no news movements, like those types of things, digital detox retreats and things like that. Okay, cool.
+
+I see all those as my absolute enemies. So which of these enemies is like the 800 pound gorilla? Like what's the, like, you know what I think is missing from here?
+
+So honestly, like people just try to white knuckle it. Like they try to just self-control. Yeah.
+
+Self-control. Yeah. Try to use self-control and feel bad.
+
+And honestly, it pisses me off so much when I talk to people about this topic and they're like, oh, I'm just going to like, or I have a friend who's like, obviously is as addicted as anyone else. And he's like, yeah, I'm just going to, yeah, it's great. And he's like, yeah, I'm just going to like, you know, man up and like whatever.
+
+And it's like, yeah, that doesn't really work. Like it's too good. You know, we can't stop.
+
+Uh, yeah, I think probably self-control is the most common thing that people say to me is like the thing they're going to use instead of all these things. Yeah. I don't think people have really used these things.
+
+I didn't even think about that. I think it's like, I mean, people, some people do, but like, it's almost no one compared to try to use self-control. Yeah.
+
+That would be my opinion. I think that's a really, I was genuinely not thinking of that. So if we grab this set, okay, let's just say like all of these are your competitors, but like the most important one maybe is self-control.
+
+And is that accurate? So when I read the book, I wouldn't have thought that you could put something like that in there. You don't have to, the book's garbage.
+
+You just need to buy it. No, I think, I mean, I don't know, like that part. I, I think we, you know, we sort of talk about like competitors might be products.
+
+Competitors might be a substitute. So a substitute of like, I use, yeah, like I'm using this thing to solve that problem. I do this thing instead.
+
+And sometimes the competitor is nothing. Like there is actually no thing that solves it, which can be, I mean, it's, oh, it's a great opportunity. There's no competitors there, but it can also mean like the problem's not that bad.
+
+People aren't motivated to solve it. Yeah. And the fact that like none of these other, like you, it would definitely give me pause here that people have tried all these things and none of these is like, like exploding because people don't really want, maybe they don't really want to solve it.
+
+I think it's also that we don't understand why we're addicted to this stuff. Yeah. And we have not created other better substitutes to like, why would you not open up this box that does everything for you and hits you with dopamine all day long?
+
+Right. And I will also say, you can also say to yourself, yeah, well, I don't do this drug and I don't do party. I don't party all the time.
+
+And I don't like, you can say, I don't do all these things. So say that. No, I can't say that obviously.
+
+So, you know what I'm talking about, but like other clean eating people can say, I don't do all this stuff, but then you feel like, oh, well, it's, it's innocent. I'm just spending 80% of my life scrolling. Um, but I think that there's a strong sense of there's the negativity that comes from that.
+
+The negative consequences are way more extreme than people believe. And again, I just want to be clear. It doesn't mean I'm saying people shouldn't use these shouldn't consume and shouldn't just chill and shouldn't like switch their brain off.
+
+Sometimes it's the ratio that I'd like to solve with the product. All right. I'm going to grab this stuff over and just kind of bring it together.
+
+So we have one quick, quick, little, little one-stop shopping to see all this. So the customer entrepreneurs and delete the word sexy because frankly, offensive to. Very offensive.
+
+So we're just going to make that entrepreneurs. And the problem is this power of consume versus create. And the advantage.
+
+The sexy power of consume. The sexy power of consume. Your advantage is your sexy over consumption.
+
+Over sexy consumption. Wait, how did I get over consumption there? Oh, that's the problem.
+
+Jake's like, what's a laptop? It's a laptop. What's a trackpad?
+
+Okay. Problem. People are going to be asking, what's the software you're using?
+
+Oh, no, it's written on the top left. It's a whiteboard thing called Miro. It's good.
+
+If you want to use a whiteboard thing, it is actually a good one. We do. I mean, we don't get any.
+
+There's no affiliate link or something. I have an advisor to Miro. Oh, shit.
+
+Okay. Okay. Actually, then you disclose that.
+
+Okay. I have nothing to do with Miro. And I think it's a good one of those whiteboard things.
+
+And I think it's also free. Yeah, it's pretty great. It's pretty great.
+
+But I am incentivized to say so. Okay. So we've got, yeah, your customer entrepreneur's problem, overconsumption.
+
+Your capability is design and funnel master. Your insight is your power of consume versus create. Your motivation is wanting to create.
+
+And then we're going to plunk in these competitors with self-control. I'm going to destroy them. The 800 pound.
+
+Yeah. You're going to absolutely rip these guys to shreds. I'm going to deep seek them.
+
+I'm going to seek them deeply. 800 pound gorilla, self-control, all these other guys over here. Now, this is like, look, this stuff, it's called the basics.
+
+And like, if, I don't know, for some people, they're like, see this. And at first blush, you're like, this is kind of stupid. Like, of course I know this stuff.
+
+Why would I need to like fill out a canvas? It changed. I mean, all the stuff I wrote is so much.
+
+Like, it's actually really helpful to see this in a scannable one pager. It's kind of nice. It's kind of nice.
+
+And the key thing too here, and, you know, I don't know, like, I can't. How long have we already gone? I don't know how much time we have left to go.
+
+But like, one of the key things here is you've got a lot of stuff in the basics. And then now it's like, okay, my brain is totally primed to think about differentiation. Do I have the opportunity to differentiate from these competitors?
+
+Given my advantage, my whatever combination of capability, insight, motivation, can I realistically make something that's just going to totally destroy those competitors? And can I frame the world in a way for these customers, for entrepreneurs in this case, that they're going to see that and be like, oh my God, yeah, well, I'd never thought about things that way, but I want that thing that, you know, that does it. So it's a good, it's a really good warmup, right?
+
+Even if you didn't have the magical experience of Jonathan of being like, oh, that changed the way I saw things a bit. Even if it was just laying out what's in your head, I feel like this is a very powerful way to prime yourself to think, do I have a market? Do I have an opportunity here?
+
+Now, Jake, I don't know if you've ever done this, but have you ever done something like taking a screenshot of, for example, the basics, going to ChatGPT or ChatGPT Pro and being like, I'm thinking about creating a startup. This is the idea. What am I missing?
+
+I don't think that would be a bad idea, but I don't do it because my experience with experimenting with it has been that the, the way ChatGPT looks at the world, it just tends to be like kind of the oatmeal version of things. And I'm so much more interested in like the opinionated, like weird versions of things that people come up with. I still feel like for weirdness, humans have like kind of an advantage at that.
+
+And, and so I, I like, I like the founders take more than that. That said, it's not going to hurt to do that. And I should totally be wrong.
+
+And I'm sure like thousands of people would shout at me, like you're wrong. Like you can totally get that great stuff from it. That's just been my experience.
+
+We had a, we had a founder recently who actually ran an entire design sprint. This is a smart guy. Like co-founder of a Google Gemini, real smart guy who left and found a new, a new startup.
+
+And he's like, you know, great. We're running this design sprint together, running this foundation sprint together. Great.
+
+But I want to see what I'm going to create, like some different GPTs, have them run through as if they were a team, right? Like see what they produce in their own foundation sprint and their own design sprint. And, and, you know, we looked at it and it was kind of like, eh, like what you came up with was so much, so much spicier as a, as a human going through it.
+
+Um, but again, like your mileage may vary. I wouldn't, I wouldn't like a die on a hill saying that, but that's, that's my experience so far. My take on, yeah.
+
+So my take is I would go through this process, you know, yourself or with a team humans only just pure, completely pure. Once you're done it, then you can do two things. One is show this to other people and get feedback.
+
+Yeah. And the other thing is show this to AI and get feedback. Yeah.
+
+Yeah. Yeah. I mean, that, that's the thing.
+
+Like if you, I feel like if you rely on it to do the thinking for you, you, you will miss, you know, God, honestly, even if it does come up with a great thing, not stepping through and processing it yourself. I think it's hard to have the motivation to the, and the conviction to go after that. It's hard.
+
+It's hard for it to click. Right. In your brain.
+
+It's hard for it to what? Click. Uh, hard for it to.
+
+What? What? What?
+
+What? Got it. Differentiation.
+
+I mean, should we, should we dive in and do this? I mean, look, it's up to Greg. Yeah.
+
+Is it still saucy or, you know, I'm still, I'm actually quite excited about, I kind of want to do this now. Yeah. Let's, let's, let's rock.
+
+Okay. Well, so for this, this whole part, what we're trying to do is create a two by two. We're trying to create like business school, one-on-one diagram where you plotting your competitors and you're in the upper right of this two by two diagram.
+
+And they are totally pressed out of that quadrant. They're somewhere in the like L shape of other quadrants that I like to think of as loserville. You're going to push them down there.
+
+So like in this diagram we have here, here it is. Zoom in there. In this diagram, like the target is for like you to be up here and every competitor, including the 800 pound gorilla to be down there.
+
+Crummy. Crummy. Yeah.
+
+Differentiator on one side, crummy opposite on the other. And so that's what we're going to go for it. Now, I feel like a lot of people do think about differentiation, but I just don't know how often folks dig really deep into it, thinking about differentiation from the customer perspective at the very, very inception of a project.
+
+And it's a tremendous opportunity. If you start there, you define this very special way that you're going to frame your solution against the competition from the beginning. And then you prove that with design sprints and then you build that and execute it.
+
+Then you're not, you're not sort of slapping positioning on at the end when you're doing marketing or sales. It's like truly embodied in the product and it becomes really easy to talk about. It's like, this actually is what the thing is.
+
+This is why it's special. And then you're also giving your customers a tool to talk to other people about it because that, you know, it will deliver on the promise. So anyway, that's differentiation, I think a huge deal, but I think you have to dig deep to get exactly the right differentiators.
+
+So that's what this little step-by-step we're about to do is all about that. By the way, and what you just said there, if you don't have clear differentiation, you need to be a God tier marketer to sell something. If you do have clear differentiation, it's very easy to market the thing.
+
+How do I know this? Because I market other people's stuff a lot and sometimes when it's just a vanilla thing and it's like when I say like, oh yeah, what's the difference between this and this? And they can't explain it.
+
+I know this is going to be a slog. And that's probably not that infrequent for a company who has already built something to not know how to describe it. I've certainly lived that building products.
+
+Or to not be able to say, oh, it's a little, you know, it's, this is why this is different from the other things. It's, even if they can't describe the overall thing, I just wanted them to be able to say, okay, so, but how does it compare to your direct competitor? Right.
+
+Why is that different? Well, should we jump into this? Okay.
+
+So this first step, a little, I'll give a little verbalization of this for people who aren't on video is, is just a series of scales from the first one is from slow to fast, like, you know, one through seven, slow to fast, align a scale. The next one, not so smart to smart, hard to use, to easy to use, expensive to free and so forth. There's a few of these and I call these like the classic differentiators.
+
+These are things that lots of products have differentiated on in the past. There are things that people sort of readily understand what these are. Um, and they're certainly not the full comprehensive set of things you could differentiate on, but it's a great warmup for thinking about differentiation.
+
+So Jonathan, what I'm going to ask you to do is like bearing in mind what the competitive, you know, alternatives are today for solving this problem. How do you think your product could stack up? And maybe you can even like, like drive here and just copy that little blue sticky note and place it on the bar, wherever you would say, like, could you be faster?
+
+Sometimes this won't make sense. Yeah. But I think I got a feel for it just by looking at it.
+
+Um, I'm just going to do that right now. Yeah. Silently.
+
+Yeah. And I'll narrate. Uh, I can narrate what you're doing.
+
+Greg has something, you know, to say since we're just monologue. I have something to say once you get to the expensive and free. Yeah.
+
+I think, I think this product speed is like zero of zero importance. So I'm just going to like drop it in the middle. It doesn't matter.
+
+Yeah. It doesn't matter. Um, I would say it's actually also not super smart.
+
+I would use a relatively, it would be a relatively off the shelf use of some sort of chat GDP or any, I would basically not need a lot of intelligence. Yeah. Uh, very easy to use.
+
+Very easy to use. Yeah. I would definitely start this off free.
+
+Definitely free. Okay. Did you want to interject there, Greg?
+
+I did. So one of the things I've, I've been noticing in, in software land at least is, um, there's, there's, there's this shift from software as a service to pay per use. So what I'm thinking is like, what's hard for me about this framework is, is thinking about, okay, it's not as simple as free versus expensive.
+
+Sometimes it's the differentiator could be the type of business model. How, how, how should I think about that? That's a great question.
+
+I think that if you are thinking about it, so the next step after this is like custom differentiators, like what are, what are the ones that you think would apply and would be useful for separating from the competition? And I think it's possible that the, the way people pay for it could make a ton of sense here. That could be the thing that makes it stand out.
+
+It makes you say like, God, that's much better. I'd much rather, I'd much rather pay a subscription for getting my CDs mailed to me than, you know, rent them one at a time at the video store to use like the Netflix sort of example. But, but for now, like, I think free, free is an especially powerful concept.
+
+And this is not to say it's not better, right. Then, then like as a business model, it's just that in this world on this first set of activities here, where it's like, these are things that you can kind of take to the bank that customers will understand free is instantly understandable. And like, you know, it, it makes a huge difference.
+
+If you've ever read predictably irrational, there's like a lot of studies around how insanely irrational people act when something is free. So that's, that's my pushback here. I would also say that a very good argument against this is that sometimes expensive is actually the selling point.
+
+Like the fact that it's the luxury version, the expensive version is part of what makes it appealing. And that totally can be true. It's just, that's more likely to be like in our special case, that's a custom one over here.
+
+These are just sort of the dumb set. Right. I think it's a relatively one size fits all.
+
+Does this mean one size fits all versus focused? What would that mean in this context? Like with a product that I'm talking about?
+
+Yeah. Like it might be really focused on the exact thing you think your customers have. I mean, honestly, like screen time and like all of these, you know, you listed off a bunch of competitors that are sort of general purpose for me.
+
+Yeah. I don't really, I'm feeling like I use my phone a bit too much and you're specifically trying to solve the problem of consumption versus consumption, right? Yeah.
+
+Not these are not like laser focused on consumption. Yeah. So I could imagine that you might say, I think I can really differentiate on being focused for entrepreneurs.
+
+Okay. In this context, I would say it's focused. It is focused.
+
+Okay. And then simple, it's complicated. Simple.
+
+It's going to be simpler than those other options. And then integrated versus siloed. I think it's probably quite siloed.
+
+I think this would be like a stat, like completely standalone thing. I don't know exactly if it would need to interact too much besides pulling stuff from other places. And like, this is good that not all of these are like to the right, you know, this isn't like, Oh God, you got an F and P.
+
+Yeah. It's like, it's good that these things are spread out like this. Okay.
+
+So now we're going to do the same thing. Only I want you to come up with your own differentiators that you think are especially special. Okay.
+
+I think that one of the big, now that we've gone through this process, most of these products are about, they're about like removing this stuff from your life and replacing it with like nothing. Right. Yeah.
+
+And then we're going to do a product that has, it replaces the bad stuff. It replaces the consumption with creation ideally. So I don't know exactly how the product would do this yet, but an example of this that I would have would be, you're about, you know, at 8 PM, maybe this product saying you're probably about to sit down and watch Netflix.
+
+How about this instead? There's like a suggestion on how you can create versus consume, or you maybe type in, I'm about to sit down and watch YouTube for four hours. And it's like, Hey, if it's Greg's podcast, that's fine.
+
+But anything else, maybe you could do a like, you know, maybe it's like, what were you thinking of watching? I was thinking of watching loads of business power politics. Well, how about this instead?
+
+Well, how about this instead? Something that would maybe scratch the itch, but in a more, in a less dopamine dumping way. Yeah.
+
+Well, let's just put like a tiny bow on this little part. I wrote while what you were saying, I wrote like replace distraction to remove distractions. Like your competitors are removing.
+
+Yeah, that's it. Yeah, exactly. They're about removing.
+
+I'm replacing. And I also wrote a scale of like creation dopamine as like the good thing. I give you dopamine for versus no dopamine versus no dope.
+
+Yeah. Like remove the dopamine. Yeah.
+
+So that's, yeah. Okay. So this is like, anyway, let's just like zoom out for a second.
+
+I'm literally zooming out on the whiteboard, but like zooming out in terms of where we are. We started with talking about, okay, you've, you've got this idea for a GPT wrapper and you're trying to figure out what form should it take? Is there something there?
+
+This process is a way to just kind of define, well, what is it? What are the basics of this thing? Who's the customer for it?
+
+What are we trying to solve? What can I do that's special here? What can my team do that's special here?
+
+Who are the competitors? And then starting to think about how can I craft the story around this before that? I even know exactly what I'm building.
+
+What's the story I'm likely to be able to, to really win on both when an execution went on telling that story, marketing that story. And that's what John's trying to do right now. He's thinking about like, okay, I'm not going to be, you know, a smarter alternative than the other products.
+
+It's not going to be faster. It's going to be more integrated, but maybe some of the things that really matter are this notion of like creating a different kind of dopamine, not just saying like it's dopamine or no dopamine, but saying, no, there's a different, this is going to offer you something different. Um, and we would continue on with this, but in terms of evaluating whether this idea is promising or not, you know, already, even though we're probably about like halfway through this whole, this whole foundation sprint method, which by the way, is all in this book click, which John keeps putting his phone on.
+
+So I can't pick it up easily. But, uh, we're about halfway through there. And to me already, this is feeling like, yeah, there's something that feels like there's something unique there.
+
+There's something that's like, I was just getting started in the middle special. We're just going to keep going after Greg hangs off the phone. We're like, yeah, yeah.
+
+Yeah. So anyway, that's the, that's, that's kind of the thought process with this framework so you just keep going and it kind of bring, it keeps like bringing your vision and strategy into, into like clarity from blurriness to clarity. But, but the, in a nutshell, it's about finding your key.
+
+It's about finding what makes you different and what will help make your product stand out in the market. Yeah, that's right. Is that in a nutshell?
+
+Is that what you'd say? It's about, you know, you have the seed of an idea. This is a great, very first thing to do.
+
+Yeah. Can you make it special? Yeah.
+
+I think, um, a lot of people who listen to the show, I mean, their idea guys and girls, right? So they have a lot of ideas. The thing with ideas is you kind of, you start really with, you start in the fog, you're in the fog and your goal is to, um, by the way you're drunk on the fog.
+
+Right? Like you are so excited about this idea. You want to get going.
+
+And I think it's helpful to just, you know, John used the word like clear, kind of clear it out or clarify it. What I like about this method is it forces you to kind of go through, um, the, the fog lifting experience. Um, and then at the end you could be like, you know what?
+
+I don't want to build this homework car. Like there's too much competition or I can't differentiate or I don't have an advantage or, you know what? I'm actually not that motivated.
+
+And I encourage people to actually like sleep on this, like just, you know, sleep on this before you invest your time and energy into something. And then, um, so I, yeah, I appreciate you guys coming on. Um, we'll include, uh, a link to the book.
+
+Um, actually, can I say one thing? Sure. People should not go and just buy the book because your audience doesn't want to sit down and read.
+
+They be too lazy. They want to get started straight away. So if they go to, you can decide whether to leave this in or not.
+
+If they go to the clickbook.com, they can get this template. They can get all of that other stuff months before the book comes out and just be totally badass immediately. We'll include that.
+
+And, um, I like always, I'm always in the comment section. So feel free to leave a comment, uh, for me, but also for everyone else. Um, and, uh, look forward to see what everyone, you know, builds through this framework and Jake and John, thanks.
+
+Jake and J ice cream actually. Yeah. I can't believe you call me John.
+
+Well, it says Jake and John. So I was just looking, you know, that's actually the, that's actually fake news, you know, He calls me J ice cream because my name is J ice cream on Twitter. All right.
+
+Well, there's a lot of regret from you about that. That gamer tag. Oh, great.
+
+See you next time guys. Thanks Greg. Your legend.
+
+Talk to you later. See ya.
