@@ -1,0 +1,285 @@
+In this video, I'm going to show you how to structure your Facebook ad campaigns the right way. Facebook ad campaign structure is a lot more important than most advertisers realize. You need to make sure that you don't run into audience overlap issues or auction overlap issues.
+
+You also need to strike the right balance between testing variables, but not giving Facebook too much so that it overloads their machine learning process. We've spent literally tens of millions on Facebook ads in our agency over the last six years, and we know that our Facebook ad campaign structures work really well. It's working!
+
+So I'm in an example ad account, and the way I'm going to demonstrate this is actually to walk you through campaign creation process in terms of the structure for three different Facebook advertising strategies. We're going to cover direct-to-offer, lead magnet strategy, and the omnipresent content strategy. I'll explain what each one of those means briefly as we get to it, but those are the three Facebook ad strategies that we use most frequently as an agency.
+
+I think that's going to help this be really useful. So let's start with direct-to-offer. Used by a lot of e-commerce businesses, it's where you are directly advertising the product or service that you want people to purchase.
+
+So if it's an e-commerce business selling shoes, it would be an ad for shoes. They click on the ad, go through to a website and purchase, maybe through to a Facebook shop. If it's a service-based business, you could be a roofer, for example, and you could be offering a free survey.
+
+With direct-to-offer, you would be directly advertising the free survey to cold audiences, hoping that people sign up and you can go on to convert them into customers. So that's what direct-to-offer is. What does that look like in a Facebook ad account?
+
+Let's go ahead and create a new campaign to show this. So click on the create button. I'm going to go ahead and use sales for this.
+
+Of course, you could use leads if you're a service provider. If you've got the old campaign objective menu, then you can use conversions. It's going to work exactly the same way.
+
+So I'm going to minimize this down and I'm going to call this direct-to-offer campaign. Now, the first thing I'll say is that we're only going to use the one campaign for each product range. And the reason why we're doing that is because we don't want the campaigns to compete with each other.
+
+Now, if you, for example, sell shoes, you wouldn't want to put one type of pair of shoes in one campaign, another type in another campaign, another type in another campaign. Those campaigns are going to compete with each other. You're probably going to be advertising to the same people with a very, very similar offer, ad fatigue issues, all that sort of stuff.
+
+But if we're a company that sells shoes and we also sell hats, okay, well, the hats campaign, the hats could be sold in a different campaign because it's fine if we're selling those to the same people. They look very different, not going to run into the same overlap issues, not going to run into the same ad fatigue issues. So one campaign, not per product, per product range when it comes to direct-to-offer.
+
+Then let's go ahead and jump over to the ad set level. Now, I'm going to quickly call this our warm audience ad set. And then what I'm going to do is I'm going to duplicate this and I'm going to create four duplicates.
+
+I'm going to obviously duplicate that into the existing campaign. So now we've got five ad sets. We've got one warm audience ad set.
+
+I'll explain more about that in a minute. And I'm going to call this cold audience ad set one. And just quickly rename these so we can follow along and it all makes sense.
+
+Okay, so let's start with the cold audiences. Now, we've got four cold audience ad sets here. And that allows us to strike that nice balance between testing, which is really important.
+
+We have to be testing new targeting options. But not giving Facebook so much that it takes forever for any money to be spent on the elements. It takes forever to work out which target audiences produce the best results.
+
+So out of those four, we might have two of those be interest targeting options, two be lookalike audience targeting options. Remember, lookalike audiences are cold audiences. So many people get this wrong and they haven't thought through the logic of it.
+
+The people in your lookalike audience have not interacted with the visitors before. They're just based off of people that have. Very different things.
+
+So they are cold audiences. So we might have two lookalikes, two interests. And we're going to run this campaign after a week, 10 days, something like that.
+
+We're going to assess the results. We're going to pause the underperforming ad sets. And then probably create new ad sets to test against the best performing ones.
+
+We're going to repeatedly do that until we have a core of target audience options that we know we can rely on and produce good results. Now, the part that might be surprising some of you is this warm audience ad set being included in with the cold audience ad sets in this campaign. Why are you there?
+
+There's a couple of reasons why we do that. The first is because we're going to turn on campaign budget optimization, what's now called advantage campaign budget in some ad accounts. So if I jump to the campaign level, click edit, and scroll down and turn on advantage campaign budget.
+
+As I said, that might be campaign budget optimization in your ad account still. It will depend why Facebook does that. No idea.
+
+Very annoying, but they do. Then we go back to the ad set level. We can see now that the budget is going to be set at the campaign level.
+
+It's going to be allocated across the various ad sets according to performance. What's great about including a warm audience ad set in with the cold audiences is that the right amount of budget will automatically be calculated and assigned to that warm audience ad set. If we had a separate retargeting campaign specifically targeting our warm audiences, it's very, very difficult to get the budget level right.
+
+What many advertisers will do is they'll overspend on their warm audience ad set because initially warm audiences get great results. But if you overspend, then you burn them out and they drop off. These audiences, warm audiences, are typically very small, much smaller than what you've got in your cold audiences.
+
+And including it inside a CBO or advantage campaign budget campaign is a fantastic way for that to be automated and you get the right amount. Because you also want to make sure that you do maximize the retargeting that you can do to your warm audience because you are going to get better results from those people. Having it calculated automatically is just fantastic.
+
+What also helps about using advantage campaign budget is this audience is likely to grow. So as your business does more advertising, as you send more people to your website, get more video views on your videos on Facebook, get more Instagram engagement, you could obviously target, retarget those people in your warm audience ad set and that's going to automatically grow and therefore budget allocation to that ad set is automatically going to grow as well. So it's a really nice dynamic way of allowing Facebook's machine learning process to do a bit of the heavy lifting for you.
+
+Within this warm audience ad set, we would include all the warm audiences that we want to retarget. So it could be website visitors, email list, Facebook page engagers, video viewers, a whole bunch. I've got separate videos about retargeting you can find on my channel.
+
+I'll also be including a bunch of links in the video description to stuff like that. So you can check that out if you want more info on how to do that. But we're going to include all those in the warm audience ad set.
+
+Absolutely fine. With these cold audience ones, very, very important. You just have one targeting option, one cold audience targeting option per ad set.
+
+And the reason why is because we want to test to work out which one's the best. If you bundle them all in together, you get a blended average result. That's not useful.
+
+I want to know that the interest in ad set one produces better results than the interest in ad set two because we can then focus on that better performing interest going forward. We don't need to do that with the warm audience ad set because we know all our warm audiences are going to perform better than our cold audiences. Okay, hopefully that makes sense.
+
+Right, let's jump to the ad level. But let's take cold audience ad set one and we've got new sales ads. So if I just call this image ad one, okay, and then I'm going to duplicate this into the original campaign so that will also copy it into the existing ad set.
+
+And I'm going to create three new copies. So then we've got, if I close this down, we've got here image ad, three image ad one copies. I'm going to call this image ad two.
+
+This one's going to be video ad one. And this one's going to be video ad two. Okay.
+
+So if I just select this ad set, just to help demonstrate, and then we can just see in here the four ads that are in cold audience ad set one. Three or four ads is typically what I would recommend. Again, it strikes a nice balance between being able to test stuff without overloading Facebook's machine learning process.
+
+You don't really usually want to go above five ads live at any one time in an ad set. You could have more ads in here if they were paused. That's not a problem.
+
+Like if you're doing rounds of testing and you've got old ones sat in there, don't worry about that. But live, no more than five at any one time. And this is typically how we'd start.
+
+You know, a couple of images, a couple of videos. That way we can test ad format. We can also test specific images or specific videos against one another to see which produces the best results.
+
+And then we can do the same process I described with the ad sets where we are optimized. We're pausing underperformers, adding a new ones to test, repeat, repeat, repeat, until we have ads we know can work really well. Okay.
+
+So we've got these four ads in cold audience ad set one. Now what I'd like you to do is select all of these and duplicate them into, if I select the existing campaign, and then I can select the ad sets to put these into. So they're already in cold audience ad set one.
+
+Don't need to duplicate anything into there. But we can duplicate them into the other cold audience ad sets. So cold audience ad set four, cold audience ad set two, and we can click duplicate.
+
+And there we go. And now we're going to have the same four ads. If I close that down, it's all going to look a little bit messy now, but we've got the same four ads in each ad set.
+
+And that's really important because if we jump to the ad set level, remember we're testing which interests perform better, which local recordings perform better. Well, if we have different ads in each ad set, how do we know if good results or bad results are because of the targeting option or because of the ad? So you need to keep the ads consistent across ad sets, at least initially, until you've worked out your targeting options.
+
+If after a while you work out that, okay, cold audience ad set one prefers this video ad, whereas cold audience ad set three prefers this image ad, that's fine. You can start to adjust according to performance within that ad set. It might just be a quirk of that audience and that's not a problem, but initially, you want to keep those things consistent.
+
+Okay, then when it comes to putting ads into your warm audience ad set, I like to use the exact same ads as you've got in your cold audiences in your warm audience. A lot of people like to use more direct and obvious retargeting ads. So you would say things like, you forgot to complete your checkout or that sort of thing.
+
+I think a lot of people nowadays don't like that. People are worried about privacy being infringed upon. I don't think you want to make it obvious that it's a retargeting ad.
+
+People will know, they'll know they visit your website and they're seeing ads, right? People know this thing happened, but you don't really need to highlight it and hammer it home. So I like to go with the same ads.
+
+If you did want to create slightly different ads, let's say offer a 10% discount in your retargeting ad set versus others, that's not a problem. You know, we don't really have an issue with that, but in general, I would go with the same ads. I want it to act more like a reminder because remember, if someone's say been to your website before or clicked on an ad or watched a video, maybe they didn't purchase because they got distracted by something.
+
+The doorbell went, they had a meeting to get to, all sorts of things, right? It's not that they weren't interested and maybe your retargeting ad needs to be more of a reminder than of something else. So that's a typical structure that we're going to have for direct to offer.
+
+One campaign, five ad sets, one warm audience ad set, four cold audience ad sets, and then three to four ads in each ad set, the same ads across there. That allows for a nice balance of testing whilst giving Facebook a chance to test each option, machine learn and optimize for best performance. Okay, so that's the direct to offer structure that we want to use.
+
+I'm going to go ahead and delete this campaign now. No, no, no, no, no, no, no. This is going to get confusing as we talk about the other Facebook advertising strategies and the structure we use there.
+
+So next one we're going to do is lead magnet. Now lead magnet is probably something you're quite familiar with. You may have used it yourself.
+
+You may have been on the other end of it as a potential customer. It's when you'd offer something for free in exchange for someone's name, email address. And then what you're hoping to do is once they signed up for that, then retarget those people and take them on to the next step of your sales funnel.
+
+So let's say for example, you create kitchen worktops. You might have a lead magnet as a guide on how to choose the right worktop for your property or for what you use it for. That would be your free lead magnet you give away.
+
+And then you would retarget those people with, you know, your actual products so they can click through and purchase and get direct to that point. You could, we could also give an example of my business of a Facebook ads agency. We could advertise a lead magnet that's our free Facebook ad template or a free webinar.
+
+And then we can retarget those people saying, by the way, if you'd like us just to do all this for you as an agency, you can go ahead and book a call with my team members. You can sign up for a free call and we can see if we'd be a right fit. So those are two examples of how the lead magnet strategy typically works.
+
+And it's a bit more of a complicated campaign structure because it's a slightly more complicated sales funnel and strategy. So let's go ahead and click create. Now the first thing to do is select leads.
+
+That's going to be your lead magnet campaign. Again, if you've got the old campaign objective menu and you want to use conversions and then select leads at the conversion event, that's absolutely fine. We're going to select leads and click continue.
+
+Okay. And then I'm going to minimize this down and we're going to rename this to keep things nice and straightforward so you can follow along. So we're going to call this the lead magnet campaign.
+
+Okay. Then we jump to the ad set level and let's go ahead and call this our warm audience ad set. And then what we're going to do is we're going to duplicate this.
+
+We're going to create four copies and we're going to duplicate it obviously into the same campaign. And then what we're going to do here is rename these quickly and these are going to be the exact same structure initially as the direct to offer campaign. So we've got our four cold audience ad sets where we're going to be testing different interests, different lookalike audience, basically different cold audience targeting options.
+
+As I said, if you want to know more about finding lookalike audiences, how to create them, which are the best ones to go with, there'll be links in the video description so go ahead and check those out to other videos that cover all that sort of stuff. So this can be very, very similar. We're going to be testing targeting options, et cetera, et cetera.
+
+The warm audience ad set is going to be slightly different. Instead of targeting all warm audiences, we want to make sure that we exclude people that have already opted in for this lead magnet. You can do that easily by creating a custom audience out of people that have already opted in and then just excluding that at the ad set level.
+
+Again, I have videos that show you how to do that sort of thing, how to create custom audiences and all that sort of stuff. There'll be links in the video description. So otherwise, pretty similar so far.
+
+Then when we get to the ad level, we've obviously got new ad in each one. I'm going to call this one image ad one and then what we would do is duplicate that into the same campaign into the same ad set, create three different copies and you guessed it and minimize this down. It's all going to look very, very similar to what we had in the direct to offer campaign structure at this stage.
+
+There is an extra stage which changes things, of course. Okay, so now if I just select cold audience ad set one, jump back to the ads and we can just see our four ads now in there. So this is a very, very similar structure where we've got four ads running, three or four is ideal.
+
+We're going to be testing videos, images, just exactly the same as before. But remember, this campaign is all about getting people to opt in for the lead magnet. We're not selling anything yet.
+
+That's the objective. So that's the first step. Now, of course, with the lead magnet strategy, we then need another campaign that is retargeting people that have opted in for the lead magnet but have not yet taken the next step, whether that's booking a free call, making a purchase, etc.
+
+So if I go ahead and click create and this could be a sales campaign, could also be a leads campaign, obviously conversions under the previous campaign objective menu and that's really going to depend on your business. But if it was mine, we're advertising a Facebook ads agency, we would use a lead campaign as well. So I'm going to call this one retargeting campaign.
+
+Retargeting campaign. Okay. Now, if we click into this campaign, we've got new leads ad set.
+
+That's absolutely fine. I'm just going to call this retargeting ad set so things don't get confusing. And in this one, we are going to be targeting people that have opted in for the lead magnet.
+
+So we would target what I call lead magnet opt-ins and we would exclude what I would call next steppers. And the reason why we'd exclude next steppers, if I can expand that so you can see it easily, is we want to catch people in that middle bracket with this campaign. So it's people that have opted in for the lead magnet but have not yet gone on to become a full lead inquiring into our services or gone on to purchase or whatever the next step is.
+
+Again, exclude next steppers. Quite easy to set that up with custom audiences in the ad set. Got videos on that.
+
+Check that out if you are interested. Okay? So that's who we're going to target and we've only got the one ad set here.
+
+We're not testing different audiences. We know this is our audience. We know this is who we're going to advertise to.
+
+Then when we get to the ad level for this ad set, we're going to do a very similar process to what we've done before. Okay? So we've got image ad one and then if I duplicate these out, we're going to want a few copies and we're going to want to test like we have done previously.
+
+Let me just remove that, close that down. And exactly the same logic of rise. If we're trying to get someone who has, let's say, watched our free webinar to then go on and inquire about our services, we might want to test different ad formats for that ad, test different headline options, test different ad creative options and that's what this allows us to do.
+
+Okay? So the part that people often get confused about with lead magnet campaigns is the retargeting because there's actually two layers of retargeting. There's retargeting within the lead magnet campaign.
+
+So people who have not yet opted in for the lead magnet but have, say, visited your website, watched a video of yours on Facebook. You want to retarget those people to get them to opt into your lead magnet. And then there's the next level which is the retargeting campaign which is the people that have opted in for the lead magnet.
+
+It's literally got it in here. But not yet taken the next step. Very, very important there's a distinction.
+
+Now, we've created both of these as lead campaigns but there are now different variations of lead campaigns. So if I, for example, click, in fact, I want to highlight this, jump to the ad set level and then what I want to do is select, let's say, cold audience ad set one and click edit. The default here is for this to be an instant form.
+
+So that's where someone clicks on the ad and they're presented with a lead form within Facebook or Instagram, fill out their information and all works. They get their lead magnet, et cetera. That's what used to be called a lead generation campaign.
+
+Now, you can use that or you can send people to your website. I imagine that's what most people want to do. That's the more common way of doing things and they opt in for their lead magnet on your website and yeah, it's a different structure but you can do it either way.
+
+Likewise, with the retargeting ad set, so remember this retargeting ad set because it's in draft, it's displaying them all but this retargeting ad set is in the retargeting campaign, the only one in there. You could do exactly the same. So if we've got, you know, people who have opted in for the webinar in our case, that's our lead magnet, right?
+
+And we want them to inquire into our services, we could use a lead form to do that and then follow up with them or we can send people to our website and that's what we would typically do because we would want them to go ahead and book a call into our calendar. That's how our sales process works. We would book a call directly into our calendar using some software that sets that up.
+
+So we would send them to our website to do that but just again, two different ways to do things. Obviously, if with the retargeting campaign for people who have opted in for your lead magnet, you're wanting them to go ahead and purchase, then you would be using a sales campaign or a conversion campaign that definitely sends them to your website. I mean, potentially a Facebook shop, of course, but most, vast majority of people is going to be the website.
+
+Just wanted to clarify that point. Now, whether you turn on advantage campaign budget or not for the retargeting campaign makes no difference because you've got one ad set, so whatever you want to do. With this lead magnet campaign, I would recommend that you turn it on for much the same reasons as we talked about with the direct offer campaign.
+
+I want Facebook to optimize for the best ad sets within this lead magnet campaign. I also want them to work out automatically a nice level of budget that should be assigned to that warm audience ad set. Right?
+
+So that is the structure that we're going to use for the lead magnet strategy, which we do use quite a lot, particularly if direct offer isn't working well. I'd recommend you give it a go if you haven't already. Okay.
+
+Deleted those two because we're going to move on to the next one. Hopefully, you're still with me. By the way, if you're confused by any of this, pop questions in the comments below.
+
+I can't get to every single one, but I do try my best and I do answer quite a lot of them, so I might be able to help you out. Okay. So next is if I click the create button and I want to select awareness because the next Facebook advertising strategy that we're going to create or I'm going to show you campaign structure for is the omnipresent content strategy.
+
+Now, if you're not familiar with what that is, I do have other content on that, so I'd recommend checking that out. It's a system whereby you are trying to put lots of pieces, lots of ads, pieces of content in this case, in front of a small group of people again and again and again so that you deliver value, demonstrate your expertise, build trust with them and become the only business that they want to buy from, work with, et cetera. It's a very, very, very effective long-term strategy.
+
+Does take a long time to work. We've used it many times and it can be absolutely fantastic. Now, because it's looking to do a very different thing to the other campaign structures, the other campaign types, the structure is going to be very different.
+
+So first thing is with campaign objective, you want to go ahead and select awareness or reach if you've got the old campaign objective menu. They're going to work exactly the same. So we've got our new awareness campaign.
+
+Let's minimize that down and let's call this omnipresent content. You can see how the name is descriptive of what we're trying to do, right? We want to be omnipresent, we want to be all over, like in front of them all the time and we want to be advertising content because you can't get away with doing that with ads but you can with things that help your target audience.
+
+So we've got our omnipresent content campaign. We absolutely do not want to turn on advantage campaign budget or campaign budget optimization. I'll explain why.
+
+Okay, so let's jump over to the ad set level and I'm going to start by renaming this omnipresent content audience ad one. Okay, that'll make more sense in a second. Then what I'm going to do is I'm going to go ahead and duplicate this and I'm going to create no fewer than nine copies in this instance.
+
+So we've got ad one through to nine and I'm going to quickly rename these so that it all makes sense. I know these are ad sets and I've written ads. I imagine some of you watching this will be thinking, well, you got that wrong but I haven't.
+
+Okay, so what's going on here? Already the structure is starting to look very different. We've got many more ad sets.
+
+So because with omnipresent content we want to put different ads in front of the same people again and again and again, that's quite different to before where we're potentially trying to put the same high-performing ads in front of lots of different people. It's kind of a reverse structure. So what that means is that each one of these ad sets is going to contain the same audience.
+
+We're not testing different audiences. We're picking one audience and we're going, this is my audience. I know this is who I want to advertise to.
+
+We're going to do this over the long run. We're going to build trust and a relationship. I'm going to deliver tons of value and they're going to want to work with me.
+
+That's how this structure works. Okay, so that's why we've called it omnipresent content audience in each one. Now, who should go into an omnipresent content audience?
+
+Well, that depends on your business. Personally, I would use warm audiences of mine because I have large warm audiences in the hundreds of thousands. Not every business does.
+
+You want an audience that's definitely below 100,000 people. Let's say 20,000, 30,000 to 50,000 is probably ideal. What that is for you is going to depend.
+
+If you do have warm audiences that large, great, just use that. If you don't, you can absolutely do this with cold audiences. That might be all the people in your local area, if you're a local business, or the people in your local area that meet your demographic criteria, et cetera.
+
+It might just be a cold audience that you found that's super specific and you narrowed it down in age range and you've got to that nice, say, 50,000 number. That's great. Then you pick your audience and that's what you then go with.
+
+And that is the same for every single ad set. But what's different about every single ad set is it's going to have an ad in it that has a unique ad which features a piece of content. So that's very, very different.
+
+Whereas before, we had ad sets with different target audiences but the same ads. Now we've got ad sets with the same target audience but different ads. And the reason why, as I said, we want to make sure that people in this audience see ad two and they see ad three and they see ad four and they see ad five and this is how we can force this to happen.
+
+Okay? So if I just quickly jump over to the ads, we can see we've got all our ads in here. Each one has its own ad set.
+
+You'll see that if I hurt you. You see each one's got its own ad set name there. But we could have here, we could have, for example, how to video one.
+
+You know, there's a video ad that shows your audience how to do something, how to do something that they want to do that's going to be helpful. Perhaps you've got another one of those, how to video two. Maybe you've got client testimonial one.
+
+You know, that's fairly self-explanatory what that is. Perhaps you've got client testimonial two. You think about things that are going to build that relationship, demonstrate your expertise, et cetera, et cetera.
+
+Perhaps you've then got case study one. Okay, and then you can go down the list and carry on. And as I said, I talk more about the different ad types you want in other videos linked to down below.
+
+So you can check that out if you want to know more about omnipresence content. It is a great long-term strategy. With this structure, same audience, different ads, not using advantage campaign budget.
+
+That's very important because what we don't want is for Facebook to go, aha, ad set six is working best. Let's put all the money into ad set six. And then what happens is everyone in your audience just sees how to video two.
+
+They don't see any of the other pieces of content and that's a disaster. Because the only way we can show up again and again and again is if we do it with content because that doesn't annoy people, it's helpful. And if we mix it up, if they see lots of different ads, if you see the same ad again and again, ad fatigue, bored, you switch off.
+
+Whereas if we've got 10 different ads like we have here going out to the same people, you're not going to get anywhere near as bored as that because of what I already discussed. When you get started with a campaign like OnlyPresses content, I want to quickly touch on budget. You'd usually start very small.
+
+It's a long-term strategy. It takes a while to get going. A pound a day per ad set, pound a day per, a dollar a day per ad set is absolutely fine.
+
+You can start to increase later on. But this is often a strategy we would use in conjunction with something like the lead magnet strategy if we're advertising a service-based business. The businesses that typically want to use this because it's long-term are your expertise-based service providers.
+
+If you're a coach, consultant, and any form of expertise-based service provider, even if you provide courses or there's loads of businesses that fit that category, my own included. We're expertise-based Facebook ads providers. That's how it works.
+
+Make sure you start with a small budget, the same budget across each. I'm not filling each one out for save on time, but the same budget across each ad set. Very, very important.
+
+Okay. One more thing about omnipresence content and the structure of it is if I select all ad sets, click edit, and then scroll down to the optimization and delivery section, show more options, and then we get into the frequency cap. Now, in an ideal world, I like the idea that with an omnipresence content campaign, one of your ads is going to show to someone in your target audience twice per day.
+
+Now, it's going to be different ads each day, and the way we do that is with a frequency cap. So if we've got 10 ads, you want one impression every five days. Does that make sense?
+
+So if each ad can only be shown once every five days to a person, and you've got 10 ads, then on average, they're going to see two different ads per day. Now, it's not always going to be clean as that. Some days they're going to see four, and some days they're going to see none.
+
+That's just life. You know, no getting around that. But with this structure, it allows you to do that process of, okay, they see two ads on Monday, two different ads on Tuesday, two different ads on Wednesday, two different ads on Thursday, two different ads on Friday, and then they repeat.
+
+And that prevents ad fatigue, that gives you lots of touch points, et cetera, et cetera. One thing you will notice with this campaign structure, with the ads and the ad sets, is we're not testing here. We're not testing different ads.
+
+We're not testing different audiences. We're very much going, this is what's going to work. We're going to stick with it over the long run.
+
+Now, as, the longer you run this campaign, ads will fatigue at some point. Takes a lot longer, but every three to six months, we'll create a whole bunch of new ads. Obviously, often that's going to be content.
+
+You know, how-to videos, could be blog posts, could be client testimonials, case studies, et cetera. Things that people are also going to find interesting and useful, not just selling. So that's something to be aware of.
+
+And you may get a sense for what works best with your audience based on engagement levels. You know, what do people comment on? What do people say they like?
+
+And you may be able to test that way, but otherwise, we are not testing. That's not the purpose of this campaign type. Okay, so I wanted this video very much to be about structure.
+
+So I've only touched on these three Facebook ad strategies that we use for 80, 90% of our clients. But if you want to find out a lot more information, there's a webinar, free webinar, that you can watch right now. Link is in the video description below.
+
+I strongly recommend you check it out. It goes into a lot of detail about how these work, when to use them, which businesses should use each one, how effective they are. I think you'll find it really useful.
+
+As I said, link's in the video description. It's completely free. Well worth a watch.
+
+And if you've been watching this and thinking, this seems so complicated, what on earth is going on? I just want an agency to handle this for me. Well, that's something that my company can do for you.
+
+We offer done for you Facebook and Instagram advertising services. We do have a 3K per month minimum budget requirement. But if you meet that, there's a link in the video description.
+
+You can go ahead and book a call with one of my team members and they can give you all the information you need. And yeah, we can take this off your hands and also hopefully get you significantly better results. And if you've enjoyed this video and found it useful, please go ahead and subscribe.
+
+That really helps me out. Give this video a thumbs up. That's also much appreciated.
+
+And comment below, if you've got questions about any of this, comment below to let me know if I'm doing a good job if this content is useful. That feedback is all helpful to help direct me with future content. Best of luck with everything guys.
+
+Bye for now.

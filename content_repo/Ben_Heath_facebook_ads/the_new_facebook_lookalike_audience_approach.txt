@@ -1,0 +1,95 @@
+Hi guys, it's Ben Heath from Lead Guru and in this video I'm going to talk about a new approach to Facebook lookalike audiences. A lot of people have been complaining recently that since the iOS 14.5 update was released and the changes that have accompanied that have been put into effect, they've complained that they haven't seen as good results with their Facebook ads lookalike audiences. The lookalike audience specifically haven't performed as well as they used to.
+
+For a lot of Facebook advertisers lookalike audiences were our go-to, has that changed all that sort of stuff and we've seen some of the same stuff with our own clients and we've worked out a way to mitigate some of that and help improve performance. So I think if you've been advertising to Facebook lookalike audiences anyway but particularly if you've seen a bit of a drop-off after the iOS 14.5 update and this is going to be really useful to help improve performance and to get things back up and running because lookalike audiences are great we don't want to have to stop using them. Before we go into that I just want to very quickly ask you to smash that like button and of course subscribe to my channel if you haven't done so already.
+
+I release Facebook advertising related content all the time. If you are into Facebook ads, wanting good results Facebook ads, I would strongly recommend you go ahead and subscribe. Anyway let's get into it.
+
+So I'm in an example Facebook ad account here and there's a bunch of stuff in there that's just sort of created for demonstration purposes hence why everything's below a thousand over there and the issue that we're having with lookalike audiences is really around the source audiences more than anything else. So we know that the iOS 14.5 update has reduced Facebook's ability to track user activity. That reduces the amount of data that Facebook has, that reduces the effectiveness of a lot of things that Facebook do within their platform from a machine learning standpoint.
+
+Now lookalike audiences and if you don't know what lookalike audiences are how to set them up I'll include links to video videos in the description of this video that show you exactly how to do all that. I've got tutorials on all that sort of stuff. Lookalike audiences have been fantastic and still can be.
+
+I want to make that quite clear but they have been absolutely fantastic because Facebook's machine learning around how to take a group of people and closely match those to other Facebook and Instagram users to help you get the best thoughts possible has been amazing. So you uploaded a list, a customer list previously, and say these are the people that have bought from me so far. Go out Facebook and find me an audience of people that have bought, that are just like the people that have bought from me because they're just the sort of prospects that I want to advertise to.
+
+Those people are going to give me great results and that's exactly what's happened. And I've been an advocate for many years of creating lookalike audiences based off of, in fact let's go ahead and pop this in there. So I'll start with the custom audience because that's really where it starts.
+
+I've been a big fan, it's probably my favorite audience based off of this source audience. So it's been website, visitors and then specifically people who have triggered the purchase event. Okay, and we'd normally increase that to as much as we can 180 days right.
+
+And that has been a fantastic source audience. This here isn't a lookalike, this is a source audience, a custom audience that you create a lookalike audience off the back of. This has been a fantastic source audience.
+
+But as I just mentioned because of the reduced tracking capabilities, who is being registered as a purchaser within your Facebook ad account, and the number of people that are being registered has decreased. So we know that the people that haven't opted in to be tracked, who are iOS users and have updated to 14.5, which is most iOS users at this point, they're not going to be included in this. And that reduction in the size of the source audience has led to a less effective lookalike audience.
+
+And we've known that that relationship has existed for a long time. So if someone had a, you know, 500 people on their customer list and they created a lookalike audience from that, or 500 purchases as this sort of customer audience would create, and they created a lookalike audience from that. And they competed that, they competed with someone who's got say 5000 purchases registered, and they're using that as their source audience to create their lookalike.
+
+The person with 5000 purchases registered is nearly always going to perform better. That audience, the source audience has a lot more data, that helps Facebook create a much more accurate lookalike audience, and that helps improve performance. Now, for a long time, there's been this debate around which sort of source audience you should use for your lookalikes.
+
+Like, should you go for purchase, as this is, this would be a source audience for a purchase based lookalike? Should you use something like, I mean, I haven't got it set up because it's an example ad account, but should you use an add to cart or something lower down the Facebook advertising funnel? And what you might have is a situation where you say you have 200 purchases registered, but you have 1000 add to cart.
+
+And you're thinking, well, purchase is better because that's more representative exactly who I want to advertise too. But add to cart has more data, which one's going to perform best. And my advice in that sort of scenario, and that's something I get asked a lot, would be to test both.
+
+Usually thinking that purchase is going to win, particularly as you get more and more conversions. But I think that what we're seeing after the iOS 14.5 update is that creating lookalike audiences based off of source audiences that are larger, it has increased priority. So whereas before, let's say six months ago, if you had 200 purchases and 1000 add to carts, and you're thinking, which one should I create a lookalike audience from?
+
+My recommendation then would have been to test both, but probably the lookalike audience based off your 200 purchase is going to perform better. Now, I would still recommend that you test both, but the lookalike audience based off the 1000 add to carts might now perform better. And that's the, that is what I want to discuss in this video.
+
+And that is what I want to describe and what we're trying is to improve our lookalike audience performance. We are increasing the size of the source audience, if based on website data. And that is proving to be quite effective.
+
+Now, of course, you could create a lookalike audience of something higher up in the funnel that has even more data, perhaps initiate checkout, perhaps it's a page view, perhaps it's based on our website visitors. I'm not just going to give you, this is the source audience for your lookalikes, because it will depend on your business. The business with 10,000 purchase conversions registered or 10,000 leads registered, who is optimizing for either purchases or leads, still wants to go ahead with that lookalike audience.
+
+That's going to perform best. So the best one for you is going to depend on your circumstances. Others that have 150 leads might want to go with all website visitors.
+
+But I think that the shift that's happened is, you know, along the continuum of going, basing our lookalike audience of people that have done exactly what we want them to do, versus basing our lookalike audience off people that haven't quite taken all the steps we want them to take. But there's a lot, lot more of these people. Okay, we've shifted from say here on that continuum, back a notch with the iOS 14.5 update.
+
+So I think you want to be using larger source audiences where possible, particularly when you're creating your lookalike audiences, based off of custom audience, website custom audiences. So things like a purchase event or website visitors or people who visit specific pages and things like that. And I know that the majority of lookalike audiences, in my experience at least, are based off of website custom audiences.
+
+That's the most common. The other thing that you can look to do, and that's that's the first major point around a new way of creating Facebook lookalike audiences, a new approach to it that should help improve performance, particularly if you've seen a drop off. The other way that you can can do it is by changing the type of custom audience that you're using as your source audience for your lookalike audience.
+
+So if for example, you are using this setup, so you've got, you're using it based on website custom data, anyone who's triggered the purchase event, you've gone for the maximum days allowable, which is definitely recommended. Again, in making your source audiences larger, you don't want to put this at 30 days or anything like that, like make this as big as you can. Instead of using this setup, instead, in fact, let's just go back, you could upload a customer list and you would most likely have this data somewhere.
+
+And you would upload this customer list that would contain the information from the people that have bought from you previously. Perhaps you have that stored in an email list via MailChimp or whatever. And that could be a different way to target, to basically end up with the same result.
+
+So instead of creating a lookalike audience based off people who have triggered the purchase event pixel, the purchase event via your, you know, the purchase event that's part of your Facebook pixel on your website. Hopefully I haven't confused you too much there. But instead of using that option, you could instead upload a list that Facebook can then match the people on that list to Facebook users to then create a lookalike audience based off the back of those.
+
+Should come out with a similar result. Now previously, I was a fan of doing it the other way. So using the website custom audience option, because that updates automatically, which is great, and saves a lot of manual work to come in and re-update this.
+
+It also meant that you would match at a higher percentage rate. So when you upload a customer list, which is what I'm now recommending, by the way, when you upload a customer list, Facebook has to take that data and match it to Facebook users, Facebook and Instagram users. They can't always do that.
+
+So you might see match rates of 40%, 50%, something like that. You're not going to match everyone on that list. So it's better to do it or based off pixel data before.
+
+But with these changes, the ability to track using pixel data has been curtailed. Therefore, we're leaning more and more towards customer lists. And of course, another advantage of uploading customer lists, and this is more important if you've been going a while, is that you might be able to upload three years worth of customer list data.
+
+You can't go three years into the past with Facebook pixel data. The maximum is just going to be 180 days. So you can potentially have a lot more people on that list.
+
+And as we now know, the thing I want to really get across here is that the larger your source audience, so the larger your customer audience is for your source audience, the better the resulting lookalike audience will perform because Facebook has more data with which to create it. And accuracy and data matter a lot to Facebook's machine learning process. And these audiences, by the way, so you can do it based off a customer list.
+
+And there are some other options. If I go back, you could create a lookalike audience based on people who have watched video of yours on Facebook or interacted with lead forms or whatever. However your business is set up, you could do it based on Facebook page engagement or Instagram account engagement, which would be really sort of top of the funnel source audiences for lookalikes.
+
+Always test this stuff. Don't just be like, this is the one. Test a whole bunch.
+
+Test four or five. See which one performs best for your business. But what I'm getting across here is that the larger audiences that are higher up the funnel, the larger source audiences that are higher up the funnel are now performing better than they were previously after the iOS 14.5 changes.
+
+You want to be shifting your sources away from the end up towards higher up the funnel. It's the big change that we're making, we're seeing that's helpful. And I think that Facebook's basically suffering from a bit of a, it's almost like a bit of data, it's like fasting.
+
+It's like a little, a mini little famine for Facebook on the data standpoint. So whatever you can do to add more data into your setup to help them out is pretty beneficial. It's why larger retargeting audiences are working as well.
+
+It's why broader targeting is doing well for a lot of advertisers. Opening things up in general is helpful. Certainly applies to Facebook lookalike audiences.
+
+Okay, before we go, a couple of things I want to quickly mention. The first is our Facebook advertising services. My company, Lead Guru is a Facebook specialist Facebook and Instagram advertising agency.
+
+We create, manage, and optimise Facebook ad campaigns for our clients. If that's something that you would be interested in, you can book a free call with one of my team members. Just click on the link in the video description below.
+
+You go through to a page on the website, book straight into the calendar. Super simple. We do ask that you have at least a 3k Facebook ad budget.
+
+That's sort of our minimum budget that we can start working with a company. But if you do meet that criteria, you can book a call completely free, no obligation. We can just find out more about your business, see if we can help.
+
+You can find out more about our service. Quite casual in that sense. Other thing I want to quickly mention is my Facebook ads mastermind group.
+
+So we've gone past 100,000 members. There's 107,000 members right now in my Facebook ads mastermind group. Amazing community full of Facebook advertisers just like you.
+
+Completely free to join. You can ask questions, get them answered. I'm in there daily.
+
+I do live trainings, free live trainings. Link is in the description. Go ahead and join if that sounds like something that you'd like to be part of.
+
+If this video has been useful, let me know in the comments. I try to get as many comments as I can. Give this video a like, thumbs up.
+
+That really helps me out. And of course, subscribe to my YouTube channel if you are new and haven't done so already. Best of luck with everything.
+
+Thanks a lot guys. Bye for now.

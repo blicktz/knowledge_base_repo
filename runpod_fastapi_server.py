@@ -111,36 +111,31 @@ def get_device():
         return "cpu"
 
 def setup_ram_filesystem():
-    """Set up tmpfs RAM filesystem for faster I/O operations."""
+    """Set up RAM filesystem using /dev/shm for faster I/O operations."""
     if not USE_RAM_FILESYSTEM:
         logger.info("RAM filesystem disabled, using disk storage")
         return False
     
     try:
-        # Check if we're running in a container/environment that supports tmpfs
-        ram_base = Path("/tmp/transcription_ram")
-        ram_base.mkdir(parents=True, exist_ok=True)
+        # Use /dev/shm which is already mounted as tmpfs in containers
+        # This is a standard RAM disk available in most Linux environments
+        shm_path = Path("/dev/shm")
         
-        # Try to mount tmpfs if not already mounted
-        mount_point = str(ram_base)
+        # Check if /dev/shm exists and is writable
+        if not shm_path.exists():
+            logger.warning("/dev/shm not available, falling back to disk storage")
+            return False
         
-        # Check if already mounted
+        # Check if /dev/shm is actually tmpfs
         result = subprocess.run(
-            ["mount"], capture_output=True, text=True, timeout=10
+            ["df", "-T", str(shm_path)], capture_output=True, text=True, timeout=5
         )
-        if mount_point in result.stdout and "tmpfs" in result.stdout:
-            logger.info(f"tmpfs already mounted at {mount_point}")
-        else:
-            # Try to mount tmpfs
-            try:
-                subprocess.run([
-                    "mount", "-t", "tmpfs", "-o", f"size={RAM_FILESYSTEM_SIZE}",
-                    "tmpfs", mount_point
-                ], check=True, timeout=10)
-                logger.info(f"Successfully mounted tmpfs at {mount_point} with size {RAM_FILESYSTEM_SIZE}")
-            except (subprocess.CalledProcessError, subprocess.TimeoutExpired):
-                # If mount fails, just use the directory as-is (might still be faster if /tmp is tmpfs)
-                logger.warning(f"Could not mount tmpfs, using directory {mount_point} as-is")
+        if "tmpfs" not in result.stdout:
+            logger.warning("/dev/shm is not tmpfs, might not be RAM-based")
+        
+        # Create our transcription directory in /dev/shm
+        ram_base = shm_path / "transcription"
+        ram_base.mkdir(parents=True, exist_ok=True)
         
         # Update global paths to use RAM filesystem
         global UPLOAD_DIR, OUTPUT_DIR, JOBS_DIR
@@ -153,7 +148,17 @@ def setup_ram_filesystem():
         OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
         JOBS_DIR.mkdir(parents=True, exist_ok=True)
         
-        logger.info(f"RAM filesystem configured: uploads={UPLOAD_DIR}, outputs={OUTPUT_DIR}")
+        # Check available space in /dev/shm
+        statvfs = os.statvfs(str(shm_path))
+        available_gb = (statvfs.f_bavail * statvfs.f_frsize) / (1024**3)
+        total_gb = (statvfs.f_blocks * statvfs.f_frsize) / (1024**3)
+        
+        logger.info(f"✅ RAM filesystem configured using /dev/shm")
+        logger.info(f"   Total: {total_gb:.1f}GB, Available: {available_gb:.1f}GB")
+        logger.info(f"   Uploads: {UPLOAD_DIR}")
+        logger.info(f"   Outputs: {OUTPUT_DIR}")
+        logger.info(f"   Jobs: {JOBS_DIR}")
+        
         return True
         
     except Exception as e:

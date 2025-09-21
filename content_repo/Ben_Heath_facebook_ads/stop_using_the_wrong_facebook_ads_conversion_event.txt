@@ -1,0 +1,117 @@
+Hi guys, it's Ben Heath from Lead Guru. And in this video, I'm going to talk about Facebook ads conversion events, and specifically, I'm going to try and convince you to stop using the wrong conversion event. It's something I see people do so often when they create Facebook ad campaigns.
+
+They use the conversion objective, which is great, but then they go and use the wrong conversion event, and that massively impacts the success of your campaign. So I'm gonna show you all about conversion events and go through that in this video. I think it'll be very, very useful.
+
+Might be the simple change you need to really take your campaigns to the next level. Before I do that, I wanna quickly ask, please smash a like on this video. Please subscribe to my channel if you're new.
+
+That really, really helps me out. And with that said, let's go ahead and get into it. Okay, so I am in an example Facebook ad account.
+
+I'm in ads manager. For those of you not familiar with that, just when you're in your Facebook profile, click on the little black arrow, top right hand corner. Click on that drop down menu.
+
+We'll have something like manage adverts, create adverts. Click on that, and you'll be brought through to what I'm looking at right now, which is Facebook ads manager. And what I'm gonna do is I'm gonna quickly create a conversions campaign, and I'm gonna show you exactly what to use for the conversions event, explain exactly what that is, okay?
+
+So I'm gonna go with example conversion campaign. Now, for the conversion event, which is obviously the topic of this video, to apply, you need to be using the conversions objective. Now, remember objectives, sort of like top level.
+
+So you're saying to Facebook, this is what I want you to optimize my campaign for. So when we select the conversion objective, which you've got campaign objective here, we scroll down to conversions and select that. When we go ahead and select the conversion objective, we're saying to Facebook, I want conversions.
+
+And then the conversions event is telling Facebook, specifically which event, which type of conversion, you want Facebook to optimize your campaign for. Very, very important. So we've gone ahead and selected the conversions campaign objective.
+
+In this video, I'm not gonna cover all the other things like campaign budget optimization and stuff like that. I've got videos about all these topics, daily budgets, lifetime budgets, buying types. Just check out my YouTube channel, have a little search around and you will be able to find videos on those.
+
+Then let's go ahead and call this example AdScent. And then let's skip Ad for now. I'm gonna click Save to Draft.
+
+Oh, by the way, that window that you were just looking at then, that is quick creation. If you click on that green plus create button to create a new campaign and you're presented with guided creation and it looks completely different, then at the top right hand side, you can click on the button that says, switch to quick creation. You'll see exactly what I'm seeing and you'll be able to go through this, the process step by step exactly as I'm doing it.
+
+I've had a few questions about that recently. I just use quick creation because I find it easier. You actually have a few more options, weirdly, particularly when it comes to campaign objectives.
+
+So that's what I use. Okay, so the purpose of this video, we don't need to do anything else at the campaign level. We've already selected the conversions objective.
+
+And as we know, the campaign objective that you select is really, really important because it tells Facebook what to optimize your campaign for. You know, if you say to Facebook, you know, I want to create a traffic campaign, please optimize my campaign for link clicks. Get me as many link clicks as possible.
+
+Well, that's what Facebook will do. They will find you the clickiest people to advertise to and that's who they'll put your ad in front of. But I don't care about people clicking on my ad.
+
+You shouldn't care about people clicking on your ad. I care about people going through and purchasing or becoming a lead. That's why we use conversions objective, because we want Facebook to find the people that are most likely to convert, not just the clickiest people.
+
+And those people are often very different groups. Okay, anyway, just a little aside about campaign objectives, but the same logic, and we'll click through to the ad set level, needs to be applied to the ad set. So when you create a conversions campaign, you go to the ad set level, ad sets all about delivery and targeting.
+
+You scroll down and you reach this part here, conversion event. And that's what this video is all about. Now, for your conversion event, what people will often do is they will select the option that they think they're going to be able to generate the most of.
+
+So let's say you're an e-commerce business, and obviously you want purchases. You want people to buy your stuff, right? What people will come in and they'll do, and they'll go with something like add to cart, okay?
+
+And add that in there. Or they will go with something maybe a little bit higher, like initiate checkout. Or even maybe they will go with something like view content.
+
+And that view content will refer to perhaps someone navigating to your website and then clicking onto a product page, okay? With Facebook advertising, what you ask for, you get. Right, not guaranteed.
+
+If your campaign's rubbish and you're advertising, you know, something that people don't care about, you're not going to get anything. But in general, you get what you ask for. Facebook will optimise your campaign for what you ask for.
+
+If you use the conversion event of view content, and that represents what view content means on your website, the way you've got your pixel set up, is someone, let's say, clicks through to your website from a Facebook ad, then clicks through to a product page, then that's what Facebook's going to get you. They're going to get people that are likely to take that step. If you go ahead and select initiate checkout, that's what you're likely to get.
+
+You're likely to get people that click through to your website, go to the product page, click on, you know, add to cart or something, initiate checkout. Same with add to cart, you get the idea. That's what you're going to get.
+
+But what you really, really want at the end of the day in this scenario is purchase. And because that's what you want, that's what you really have to use for the conversions event. I really want to sort of emphasize this strongly and drive the point home here.
+
+That's what you want to use. Now, what people will do is they will say to me, but I can't use the purchase conversion event because I'm not generating 50 purchases a week. And my response to that is that's absolutely fine.
+
+Don't worry. If you're generating any purchase a week, particularly more than, let's say, 10, you can absolutely go for the purchase conversion event. Facebook is smart enough to work out how to optimize a campaign based off 12 purchases a week.
+
+Now, of course, if you're generating 300 purchases a week, is your campaign going to optimize more efficiently? Of course it is. Facebook's got a lot more data with 300 purchases a week.
+
+And that's why Facebook set that 50 purchase number as a sort of guideline. But a partially optimized conversion campaign that is optimizing for the exact conversion event that you want, in this case, purchase, will outperform a fully optimized conversion campaign that is going after a less desirable conversion event in terms of how many purchases you generate, how low your cost per purchase is, and the return on ad spend that you see, which is, of course, exactly what we're all advertising for, is to get that ROAS as high as possible, our cost per purchase as low as possible, and generate as much profit as possible. Now, if with this conversion event, instead of purchase, right, I had something like Add to Cart, which is what I see people use all the time.
+
+It's a big, big mistake. What you will often see when this happens is Facebook will find the people that like to add stuff to cart. I don't know who these people are, but there's lots of them, I can assure you, because we run campaigns and we can see it in the data.
+
+And what you might see is that your campaign generates tons of Add to Cart, but a very low percentage of those people go on to purchase. So you might be generating, I mean, we've seen things like 15 Add to Cart for every one purchase, just crazy ratios where the conversion from Add to Cart to purchase is just tiny, right? And then you switch that to something like, well, not something like, you switch that to purchase.
+
+And yes, the number of Add to Cart you generate, perhaps, you know, halves, but instead of seeing one Add to Cart, sorry, 15 Add to Cart for every one purchase, you might be now seeing three Add to Carts or four Add to Carts for every one purchase. And that increases the number of purchases, which is all that matters at the end of the day. There's so many metrics you can get lost in and focus on when it comes to Facebook advertising.
+
+But at the end of the day, all that matters is your cost per purchase and your ROAS, if you're selling products, obviously, like an e-commerce business, something like that, a bit different for service businesses. But I really want to emphasize the fact that you want to go with purchase and not Add to Cart. And that is why.
+
+Oh, just a quick aside, by the way, the reason why these are red and because this says, you know, set up a conversion is because this pixel isn't actually installed on a website with the conversion event set up because this is a demonstration ad account. And if you're like using Shopify or some other e-commerce platform, all this stuff, as soon as you've installed the pixel will be set up properly. If you're using a different website, like a WordPress website or something, I will include a link in the video description to another video that shows you exactly how to set up the Facebook pixel, how to install conversion events, which is what you will need to set these up properly if you're not using something like Shopify.
+
+So make sure you go through that if you're, you know, different type of business. Okay. The other side of this is non-e-commerce companies is service providers and lead based companies.
+
+Well, if you're using the conversion campaign, so you are sending people from Facebook to your website, getting them to become a lead there. Again, go for something like lead, go for the conversion event that you really want people to take, really want people to optimize for, go for lead. Really, really important that you get this right.
+
+Don't go for view content, don't go for a different, I just want them to click through to my services page. No, you want them to inquire, therefore go for that. This is a really, really powerful thing.
+
+Facebook is such a sophisticated ad platform and their machine learning is so accurate nowadays that when you tell them what to get you, they will do their best to get you that. Okay. Now, one other thing I want to quickly mention, if you're setting up your conversion events manually, right?
+
+So let's say you have a WordPress website and you're deciding what a lead is, what a purchase is, etc. Make sure you use the right event for the specific thing that you're going after. So, and I have seen this before, don't have add to cart set up on your website and that add to cart event actually means a purchase on your website, but you've got the add to cart event set up.
+
+Make sure you set up the right one, the purchase event, because Facebook knows the sort of people that are likely to purchase. So even if you didn't have the pixel set up properly, but you told Facebook to optimize for the purchase event, Facebook can go and find people that are more likely to purchase. And we found this out by accident because we ran a campaign for a client and we thought the pixel was set up properly, but something had been changed to their website without us realizing and it hadn't set up properly.
+
+We changed over from a, I think it was a different conversion event to a purchase conversion event. And within the Facebook ad account, no purchases were actually being registered anymore, as I said, because the pixel were messing around with. But when we looked at the backend data, we found that the campaign was actually generating more purchases, even though Facebook didn't know what a purchase was.
+
+And we were so confused with like, how is Facebook managing to generate more purchases when the Facebook pixel is now not set up properly? When before it was optimizing for something like add to carts, and it was generating less purchase and the pixel was set up properly in the previous version. And it's because Facebook knows the type of person to purchase.
+
+I had to speak to my Facebook rep about this. They know the type of person slightly to purchase. So even when it's not set up properly, they can still get you better results.
+
+So just make sure that not only are you selecting the right one, but that each event actually corresponds to what it's describing. So purchase actually means purchase on your website. Don't go with like a different setup.
+
+Okay, very, very important. Right, hopefully that's been useful. Before you go, got a couple of free Facebook advertising things that you really want to check out if you want better results from Facebook advertising.
+
+The first is a free webinar called three killer Facebook ad strategies to double or more your revenue. Now, this is a webinar that I've created that if you're looking to get better results for Facebook advertising, I'd strongly strongly recommend you check out it is completely free, there'll be a link to it in the video description below. In this webinar, I got three different sales funnels, three sales funnels that we use for our clients all the time.
+
+Each one's generated well over a million dollars, sometimes on a monthly basis for our clients very much tried and tested. And I in this webinar, I go through each of these sales funnels and I break down the exact steps that we use, how you put them together, why they produce such good results. And I also explain, you want to use sales funnel one, if you've got an eCommerce business and sales funnel two, if you've got a service business, sales funnel three, if you've got a coaching business, all that sort of stuff, because that's also really important.
+
+There's no one size fits all strategy when it comes to Facebook advertising, I get very frustrated when I see people try and pitch that, you know, so called experts in the space who say, I'll just use this funnel and you go, hang on, you're telling me that you're going to use the same funnel for a $25 product as you are for a $50,000 service. Absolutely not. You need different sales funnels.
+
+So I wanted to cover that in the webinar and I do. So completely free, check out that webinar. You can watch it right now.
+
+Link is in the video description, go through it. I think you'd be very glad that you did. Other free thing I want to talk about is my Facebook Ads Mastermind group, which is my free Facebook group.
+
+There are currently 37,000 members in this group, one of the biggest Facebook advertising groups in the world. And it's an amazing community. There's hundreds of people asking questions in the group, getting them answered by experts like myself every single day.
+
+So if you've got Facebook related questions, Facebook advertising questions, go ahead and join the group. We will approve the request when you ask, make sure you get involved, ask your questions and connect with like-minded people that can all help each other out. We're all on this journey together.
+
+I also do weekly free live trainings in the group. So if that sounds like something you want to be part of, then go ahead and get involved. That would be awesome.
+
+We'd love to have you in there. If this video has been useful, please, please, please smash a like on the video right now. Click that like button.
+
+That'd be much appreciated. Comment below to let me know if it's useful. Comment below if you've got any questions.
+
+Those two things really help direct how I create my content. Subscribe to my channel if you're new, if you haven't already done so. Click that subscribe button, turn on notifications when you do so you are notified when I publish a new Facebook advertising related video, which I'm doing multiple times per week.
+
+And best of luck with your Facebook advertising, guys. And I will talk to you soon. Bye for now.
+
+Bye bye.

@@ -1,0 +1,73 @@
+Hi guys, it's Ben Heath from Lead Guru and in this video I'm going to talk about whether or not you should use multiple Facebook pixels. Most people just use the one Facebook pixel but should you have a backup Facebook pixel? Should you have different Facebook pixels with the same ad account if you're advertising different products, different product ranges, different businesses even?
+
+Those are sort of questions I'm going to cover in this video. I think you're going to find it very very useful if you thought about those questions. Before I do, I just want to quickly ask you to smash the like button, click that thumbs up, that would very much help me out and be much appreciated.
+
+Okay, so multiple Facebook pixels. When do you use them, when do you not? I've had a lot of people ask me, I am advertising two different products, should I have a pixel for each product?
+
+And the logic behind that is that you want a Facebook pixel to be able to optimize under the conditions that you're advertising and therefore deliver the best results. So for example, if I'm advertising, you know, a pair of shoes and a hat, do I want one Facebook pixel for the pair of shoes so that that pixel learns how to get me shoe customers and another Facebook pixel for a hat because that pixel learns how to get me hat customers. So here's how I would approach that question.
+
+I like to have one pixel per business. Now, there's a caveat to that. I'm assuming that the business is going to be selling related products and services.
+
+They don't have to be hugely related, but I would say that shoes and hats are within the apparel category and they're related enough to fall into one Facebook pixel. If you have a business that sells something completely different, like you're selling shoes on one, you know, as part of your product range and, you know, cakes on another completely separate things. And let's say your business is for some reason, you've got a whole footwear range and you've got a whole bakery range.
+
+I would have, I would, even though they may technically go into the same business, I would treat those as separate businesses and I would have separate Facebook pixels for each of those. Now, how would I set that up? I would not operate out of one ad account for both of those businesses in that case, or both parts of the business.
+
+I would have separate ad accounts and then one pixel associated basically with each ad account. That's how I like to structure it. That's how I like to keep things nice and clean, nice and straightforward.
+
+I've seen ad accounts where someone's trying to run campaigns for five or six different businesses effectively, or maybe even one business, but five or six different parts, like I described, very different parts, with different pixels for each. It gets very complicated. It gets very, very messy.
+
+And you have to remember that Facebook doesn't just optimise based on pixel data at the pixel level, they also optimise within an ad account. So people will think that the learning perhaps just takes place at the ad set, because that's where you see the little learning phase, you see, you know, learning limited, all that sort of stuff pop up at the ad set, at the ad set phase. But that's not true.
+
+Facebook will learn at the ad set level, they'll learn at the campaign level, they'll learn at the ad account level. An ad account, even though a brand new campaign, is going to perform better in that account with tons of conversion history, versus one that has, that's in a brand new ad account. Okay, that helps even if it's a brand new campaign in both those scenarios.
+
+So Facebook doesn't just learn based on pixel alone, it's also learning and optimising based on the data you see in the ad account, which is why I don't just like to have one ad account and separate pixels. I think that confuses things both for you as an advertiser and for Facebook's optimisation process. I would have a separate ad account and a separate pixel per business.
+
+Okay, product range, as I said, if you're selling shoes and hats and jackets, and it's in the apparel space, all one ad account, all one pixel, that's absolutely fine. But if you're, if in my mind, I'm treating them as separate businesses, they're operating in different industries, very different industries, not sort of very closely related ones, then separate ad accounts, separate pixel. The other thing that comes up around having multiple Facebook pixels, something I want to address was when people wanted to have some sort of backup, and they wanted to install multiple pixels on their website, in case their ad account got disabled, or perhaps the whole business manager got shut down that one pixel was in and they're trying to have another Facebook pixel in another side of things.
+
+My recommendation around that is I can absolutely understand the logic and particularly people who have had Facebook ad accounts disabled, perhaps the whole business manager's banned and things like that, then I can understand why you want to do that, why you want to take that precaution. In my experience, provided you aren't actually breaking the rules, you shouldn't have issues with that would warrant you requiring a backup Facebook pixel. So let me clarify what I mean by that is, it happens all the time that you will run a Facebook ad campaign, and your ads will be 100% compliant, and you will get a whole bunch of ad disapprovals, and that will lead to your ad account being disabled.
+
+We have that happen at least once a week across the dozens of clients that we're working with any one time. Okay, if you're not actually breaking the rules, you can request a review, and normally you will get that ad account, and of course that whole business manager if that's been disabled, and that pixel back fairly quickly. Now as an ad account, as an advertiser agency where millions of dollars goes through our business manager on a regular basis, we sort of have preferential treatment, so we can normally get that ad account and everything back up and running within two hours.
+
+Other people it might take longer, might take a few days, might take up to seven days, but you're going to get that back provided you haven't actually broken the rules, because when you request a review it's not just the algorithm, it's then a person taking a look at it. If you have actually broken the rules, you won't get that back, and you are going to lose that data. So my recommendation when everyone someone says should I have a backup pixel is, you can if you really want to, but my main recommendation is to just not break the rules.
+
+Because if you have two pixels let's say on your website, tracking the same data, one gets banned and you want to use the other one, A Facebook may work out that there's a correlation between those two accounts, okay, even if you set up another personal profile and all sorts to get around it, they may work that out, so they may ban the other one anyway. It's unlikely, but I have seen it happen. Because you're running the ads out of one ad campaign, and you've got a separate pixel, you're still going to lose out on a lot of that data, right?
+
+You're still going to lose out on a lot of that data, and it's not going to translate over to the second. Some will, some will be in that second pixel, but not all of it. So that if you're thinking about assessing the rewards of setting up a backup pixel, I would say they are limited, they're not as high as some people think.
+
+And the other side of the thing is, if you're running ad campaigns that are breaking the rules to the point where you get your ad account disabled, and then you lose out and you can't get the stuff back, that's just not useful to your business. Because you're not going to be able to run those campaigns in another ad account. It's not like, oh, I'll lose it, and then I'll get it back, and then I'll run it in another ad campaign.
+
+Well, that one's going to get banned as well. So you're going to have to do it again and again and again. So my recommendation is, for the most part, don't worry about ad accounts getting disabled and you not being able to get them back.
+
+That's the key. When you request a review, if you're not breaking the rules, you should be able to get them back. And we always are.
+
+So just make sure, be very, very familiar with Facebook Advertiser policies. I'll include a link in the video description to a whole video talking about the ones you really need to watch out for. To make sure you're not breaking the rules, but provided you're not breaking the rules, I tend to see if people don't have an issue.
+
+The one caveat to that, where I've sort of say, yes, you may want to set up a backup pixel or backup ad account, maybe even a whole backup business manager, is if you are advertising in something that Facebook allows, but is very, very hot on. So things like investment opportunities, anything to do with finances, to do with insurance, to do with things that are medical. These are things that Facebook do allow, basically stuff that comes in their restricted content section of Advertiser policies, not their prohibited, then it may be worth it because you're more likely to get ad account disabled and have a harder time getting it back.
+
+But even then, I think it's much better to sort of stop the issue at source, not break the rules, it'd be fine. So hopefully that's cleared up some questions around whether you should have multiple pixels or not, whether you should have sort of multiple ad accounts or the one ad account. I think I've been quite clear there on exactly how I like to structure things.
+
+I just think that one ad account, and one pixel per business. And as I said, I know it could be one business, but if they sell very, very different things, I'm going to treat that as two separate businesses, is how I like to structure things. Okay, before you go, a couple of free things I want to mention.
+
+The first is a free webinar I've created called Three Killer Facebook Ad Strategies to Double or More Your Revenue. And in this webinar, I'm breaking down three different sales funnels and I sort of demonstrate which sales funnel you want to use depending on your specific products or services. And that's very, very important.
+
+There's no one size fits all when it comes to Facebook advertising, at least there shouldn't be. It's not effective. You need a different strategy if you're selling something that costs $50,000 to if you're selling something that costs $30, a very different strategy.
+
+So I show you in this webinar exactly how we implement these sales funnels. They're all proven. We've generated millions of dollars with all of them for our clients.
+
+I'd absolutely recommend you go through this webinar completely free. Link is down below in the video description. It's about an hour long.
+
+I think you'd be very, very happy that you did. Make sure you're using the right sales funnel for your products and services. That is that cannot be overstated how important that is.
+
+Other free thing I want to mention is my Facebook Ads Mastermind group. So it's a Facebook group that I own. It's got 52,000 members in there right now.
+
+One of the biggest communities of Facebook advertisers in the world. It's a fantastic community full of brilliant people who are looking to get better results with Facebook ads, looking to help each other out, ask questions. I do free live trainings in the group every single week, every single week that I'm on holiday.
+
+And yeah, it would be fantastic to have you in there. Again, completely free to join. Link's in the video description.
+
+Go ahead and join and get involved. If you enjoyed this video, please give it a thumbs up. Smash that like button.
+
+Please comment below to let me know. Comment below, of course, if you've got any questions about any of this, you want clarification. And subscribe to my YouTube channel if you're new.
+
+Click the little bell notification when you do so you are notified when I publish new Facebook advertising related content, which I do multiple times per week. And yeah, best of luck with Facebook ad campaigns, guys. And I'll talk to you soon.
+
+Bye for now.
