@@ -1,0 +1,135 @@
+Meta have just completely changed the way Facebook ads targeting is done. They've given us advertisers a lot more control over who sees our ads, which very much goes against the recent trend. I think this new feature is absolutely fantastic.
+
+And in this video, I'm going to show you what it is and how it works. I'm talking about a new feature that's in the process of being rolled out called value rules. And value rules allow you to optimize for different things, optimize for certain demographics, not just say to Meta, I want you to go and get me as many conversions as possible, or as much conversion value as possible, but actually say, you know what, people over a certain age, for example, are actually worth more to my business over the long run.
+
+We tend to find that the customer LTV for people over the age of 35, for example, is better. Therefore, I'm willing to spend more and pay more to acquire customers in that age bracket, as opposed to people who are younger. You can do the same thing with locations, a number of different options.
+
+I'll give you a specific example to help you understand what this is and how it works. Because I was actually talking to someone from Meta who was involved in the creation of this feature. And the day before, I had that conversation with this person from Meta, I've been talking with a client of mine that I thought this was a perfect use case value was perfect use case for this business.
+
+Now, this business is a jewelry business, and they sell mostly women's jewelry. And when they run the meta campaigns, they find that their ads are often put in front of men, quite a high proportion of their ad budget is put in front of men as opposed to women. And that kind of makes sense, because obviously men often buy women's jewelry as gifts.
+
+But what this business found was that when women bought their products, because they were most likely going to be buying for themselves, the customer LTV, the lifetime value was much higher than when men were buying their products, because they were buying them as a gift, more likely to be a one time purchase, less likely to remember the brand and the product because they're not using them. It's actually, you know, the women that are using them. And if they bought them for themselves, they use them on a regular basis, they like them, they come back, they buy more, even though meta would sort of optimize for both and ads we put in both and conversions we generated with both men and women.
+
+The new customers acquired that were women were more valuable to this business, because they were more likely to buy again and again. I thought what a perfect use case for valuables because you could say to meta look, you can't see this based on attribution windows, you can't see that women go on to be worth a lot more over time. But we know this looking at our data, this is what's important to us as a business.
+
+Therefore, I am willing to pay more as a business to acquire new women customers as opposed to new male customers and pay a little bit more to do so because that's going to be better overall for my business. That's a specific example. Right.
+
+So that's just sort of sets the scene. Let's go through the demonstration of this new feature, how it works, and we can talk through the various details. Right.
+
+So let's jump over to one of our example meta ad accounts. And what I've done here is I've come into advertising settings, which you can access once you go into as manager, click on all tools, and you can click on advertising settings or click on all tools and it will come up as a as an option. Right.
+
+And then once you get this new feature, you will see this value rules section in advertising settings. If you go ahead and click on this value rules, and we're going to create a rule to tell us how much more certain audiences are worth to your business. Our system will optimize for conversions based on these rules, just what I described.
+
+So we go ahead and click on create a rule set. Now you can see that meta gives us some more information about value rules. And one of the things that's really important for us to flag right now is they say here, I understand my overall cost per result may increase when using valuables and you have to tick that before going on.
+
+And that is something that's important to understand. You're effectively saying, look, I understand that my cost per conversion or that my initial return on ad spend might be lower, but I'm willing to make that trade off because of, in many cases, let's say a longer lifetime customer value, or you're trying to penetrate a new market, you're trying to establish a new location, you want to make sure that money is spent there because you want to build sort of brand presence and market share in that place, right? There are longer term objectives typically is why you would want to do this that might override the short term objective that Meta is typically going to optimize for.
+
+Meta is going to optimize for getting you the better return on ad spend if you go for maximized conversion value or getting you as many conversions as possible. Just trying to generate as many sales as possible, right? So you are saying like, I'm willing to sacrifice a little bit on the short run, on the short front in order to get a better, longer term result.
+
+So that's why you have to go through this process and you need to understand that that's what you're doing. Okay. So we've got rule number one.
+
+So we've got audience criteria. We've got age, gender, mobile operating system, and location. So this is where you need to know your business.
+
+You need to know your numbers. You need to know who is more valuable to my business. What do I want to optimize for?
+
+Are there significant differences? So if we go to the example I gave previously with that jewelry business, where a lot of their ads are being put in front of men, but they would rather acquire new female customers because they have better customer lifetime value, more likely to turn into repeat purchases. They can select gender and then select women.
+
+And then that's one criteria you can add up to two. So we could have not only do we want to target women more, but we could also say women over a certain age and add in an age criteria, you know, over 35, et cetera, et cetera. I'm not going to do that in this case, that makes things a little bit more complicated, just the one criteria, but you can add in two.
+
+Then we've got choose how much more or less to increase your bid on your preferred audiences. So we've got increase bid by or decrease bid by, and we can go here with 20%. We can change that.
+
+We can make that a lot more significant. We could up that to say 80%. We can make it smaller.
+
+This again is where it's really important to know your numbers. How much more valuable are women customers as opposed to male customers? Like how much more valuable they are to your business?
+
+Because that's the number you need to factor in here. Okay. We know that because their LTV is that much higher, we're willing to pay 50% more to acquire female customers as opposed to male customers.
+
+And you could do the same depending on what criteria you're using. If you're using age, like how much more valuable are they to your business? Really important that you are, that you know that.
+
+Then you just need to give that a name. So we could say here, women plus 50%, for example, that would be the rule. We can add other rules.
+
+So you can add in multiple criteria to the one rule, or you can add other rules. You can add up to 10. So let's say, for example, we know that to this business, women are worth more than men.
+
+So we're willing to spend more there. And we could also say that people over the age of 35, so you select all the options over 35, are also worth, hold on, I've gone skipped ahead, are also worth more. So we've got age, 35 plus, increased bid by, perhaps they're worth more, but not quite as much.
+
+They're not worth 50% more than people under the age of 35. They're worth 25% more. Therefore, that's what we're willing to spend.
+
+So I could go with, give this a name, over 35, 25% plus, just call this something that's going to make sense to you when you go ahead and have the rules. And you can change rule order as well, right? So you can see here, if a person meets the criteria for multiple rules, we'll only apply the first applicable rule.
+
+So these aren't necessarily going to compound. So you might want to have this one as more important than that one. So you can change order and you can go through.
+
+Let's leave those two in for now. Go ahead and click next. Then we need to give this rule set a name.
+
+So we could have women, 35 plus, and click save there, right? So in a second, I'm going to show you how to use these value rules and actually get them live within your campaigns and get them to work for your business. Before I do that, I want to let you know about my mentorship program.
+
+Now we created my mentorship program for the people in my audience that want the best Facebook and Instagram ad results possible. And to do that, we've created a program that provides as much support as you could possibly need. So there's exclusive course material.
+
+There is a whole Slack community with hundreds of other people just like you in there. And most importantly, there is a ton of direct support from me and my team. So we literally have someone, either me or my team, available on a live call 10 hours a day, covering multiple time zones.
+
+We appreciate people not only watch my stuff from the UK and Europe, but also from North America, Australia, et cetera, cover multiple time zones. So that basically, anything that comes up, any issue you have with your Facebook and Instagram ads, you can just jump on a call, ask us, we can help you fix it. You can ask us about business strategy, you can go broader than that.
+
+We really want to help people get the best results possible as part of the mentorship program, and that's what it's all about. So if you want to find out more about that, I think that might be something interesting for you to get that specific tailored advice for your business, then you can go ahead and book a free call with one of my team members. There is a link in the video description.
+
+So creating the value rules in here and advertiser settings is the first step, but it doesn't mean that that's now applied to your campaigns. It's not like you create a value rule here and it applies to all your campaigns, which is a good thing because there may be campaigns that you want to apply value rules to and others that you don't. So the way you do that, you need to just select that at the ad set level.
+
+So let me jump into ads manager to demonstrate how to do this. So I've just created a quick example sales campaign to demonstrate the process. And I'm going to jump to the ad set level because that's where we add in our value rules.
+
+Click on edit, scroll down. And again, as long as you've got this within your ad account, this feature, and you've set up the value rules and advertising settings like we've just done, you will now see this value rule section. And we can choose, you know, this women 35 plus rule set that we created, we can choose to select that.
+
+And now this is turned on and will apply to this ad set. We can also click edit rule set in here, by the way, and go in and edit the various details that we already created in the previous step. So this is an important point, you need to actually come in and do this at the ad set level.
+
+Like I said, it's a good thing because it allows you to apply it to some campaigns, some ad sets, not others, depending on what you want to do for your business. Okay, so a few other things to note about value rules is that right now they only apply to sales and app campaigns. So other campaign types, you won't be able to use value rules yet, actually doubt it will be rolled out to all the different campaign types, we might see variations, for example, with lead based campaigns, maybe, we will see.
+
+And also, you have to have certain optimisation set up for this to apply. So you have to be optimising for conversions. And you can see that, for example, what we've got right here is an ad set that's set up to send people through to our website, the performance goal is maximise number of conversions.
+
+If I was to go and say change this to maximise number of landing pages, you can see that the value rules section has disappeared. So you have to be maximising for number of conversions. And then we've got it, you can see that doing that has turned it off.
+
+So just be aware of that if you're messing around with things. And so a few criteria that you need to meet in order for us to be able to use this, I expect that to be expanded out to some extent, how far we don't know. But Meta often does that where they they add in other options, other campaign types and things like that, even other optimisations where you can use these features.
+
+Now, this might not seem like a big change to Facebook ads targeting, but it really is. Because for the first time ever, we don't need to choose between either advertising to people or not advertising to people, or just letting Meta work it out as we've been doing recently. Now we can apply weightings.
+
+So we can say, I don't want to exclude all men from my ads, there are valuable conversions to be had. But women are more valued to my business. I don't want to exclude anyone under a certain age, that would be too far, there are some great customers in there.
+
+But actually, people over a certain age tend to be more valuable to my business. So it much more accurately aligns how Meta is going to optimise the targeting, how Meta is going to put ads in front of people with the value to your business. And this will very much be a business by business case.
+
+This will be a situation where some businesses, there's no difference, in which case value rules doesn't make a big difference, others where it makes a huge difference, right, these customers in this location are worth much more to us now, because we really want to establish a presence in this local market, where we don't have one. Whereas in this local market, we can already acquire customers really easily, we don't need to spend much on advertising there, less, less valuable, right. So all these things that previously was really difficult for you to engineer as an advertiser for Meta to factor in things like one location being much more valuable than another, or not much more valuable, but you being willing to pay much more to acquire customers in one location, because it's new, and you need to establish yourself there, whereas the other one is doing really well.
+
+And under the previous setup, Meta may have just put ads in front of the lot in the in around the location that was very established, you had great grand brand presence, because it was easy to get conversions there. And Meta is trying to get you the best results possible. But that's not what you want for your business at that stage, you want it to prioritize the other location without having to fully ignore the old one.
+
+So much more balanced, I think this is a great addition to as advertisers, us trusting Meta more, letting them work out more and more of the targeting. So with going with open targeting options, or advantage plus audience options, where you're targeting inputs and suggestions, but also then being able to have an element control as an advertiser to say, look, I'm going to trust you to work it out. But just so you know, these people are worth more to my business.
+
+So please factor that in to the decision making and the AI based targeting. So I've got a couple of other important points I want to make about this before the end of the video. But first, I want to quickly let you know about Hyros.
+
+Hyros is the best tracking and attribution software for Facebook and Instagram ads. It's a software that all the big players, including myself use. I use it to track the results I generate from my own ads.
+
+I also use it for all my organic content as well, which is really useful. So someone comes through and books a call for our done for you services, for example, I can see exactly where they came from with a lot of accuracy. And that allows me to make decisions in my business, which is really, really helpful.
+
+And let me quickly show you how important this is. So I'm in my Hyros dashboard. I've isolated one of our Meta ad campaigns and I've created a report for it so we can see the data and you can take a look at this.
+
+So this campaign spent just under £2,000, generated £15,000 in revenue. But here's the really important bit reported versus revenue. And in this column, we can see £12,000.
+
+Now, what that means is that out of the £15,000 that this campaign has actually generated, Hyros has been able to report on the full £15,000, £12,000 of which Meta was not originally able to see. So if we're just looking within our Meta ad account, not using Hyros, we would have seen that £3,000 of revenue was generated from this campaign. And that is not true at all.
+
+That is a much, much lower ROAS number than the actual £15,000 of revenue that was generated. For a number of years now, Meta's ad tracking capabilities have not been as accurate as they once were because all sorts of privacy regulations have come into effect and it's only heading that way. It's only becoming more and more difficult to get accurate data and track our results as we need to be able to do.
+
+This is a relatively extreme case. And the reason why is because Meta has a seven-day maximum attribution window. And this is an ad campaign that's retargeting for one of our services that people usually take a lot longer than seven days to make a decision on.
+
+So someone clicks on an ad, they often won't convert within seven days. Meta's simply not able to see that data and that's where Hyros comes in. The important thing is that you need accurate data and Hyros takes care of that.
+
+So if you want to get better results from your Facebook ads without actually having to touch your ads, go ahead and sign up to Hyros. There is a link in the video description. So to use value rules and to get the most out of it, there are certain things that need to be true for your business.
+
+Firstly, you really need to know your numbers. You need to segment out your target audience and work out which demographics based on age, gender, location, maybe mobile operating system, are more or less valuable to your business. If there's not really much of a difference across the board, maybe value rules aren't for you.
+
+If there are significant differences, great. Definitely give value rules a go and also work out how much more valuable. If you have the data, and hopefully you do have the data or you can find it, you can work out, okay, yeah, I knew that sort of gut feel, let's say, that people over 45 are more valuable to my audience, people under 25 are more valuable to my audience.
+
+But I didn't realise until I really broke down the data, they're actually worth 70% more to my business. Therefore, that's how much more I'm willing to pay to acquire those customers. And that's what I'm going to add in as a value rule.
+
+So you need to know your numbers. And then you can also, if you do test this, and I think most businesses should be testing this, because most businesses will have demographics that are more valuable than others, you can then really closely monitor the results and take a look at how that impacts performance. What does it do to increase cost per result, something to factor in, maybe it's a significant increase, maybe it's relatively minor, then does your theory follow through?
+
+Do you see that, you know, you felt that people under a certain age are more valuable to your business, and then that continued to be true under the new setup. So you need to keep a close eye on these things, you might need to adjust, you might need to adjust the percentage increase or decrease, maybe you need to adjust who you're optimising for within the value rules, you find new data and you go, okay, actually, yeah, let's go ahead and push this. Perhaps there are other business objectives, like I talked about, location-based being one, if you're a location-based business, and let's say you're opening different restaurants or different gyms or different in different new locations, then you might be willing to pay more to acquire customers in the new locations, because you want to establish a presence there, and that's going to be really, really valuable, right.
+
+So lots of things to think about, we'll be doing a lot more testing, and I'll be letting you know the results in future videos, make sure you go ahead and subscribe for that. But I think this is one of the new features that's giving us advertisers a lot more control, there are other ones we'll be talking about soon, things like incremental attribution as an example, but this one I really welcome, I can see lots of use cases for it, we're definitely going to start applying this to client ad accounts. So it might feel at the moment when it comes to Facebook and Instagram advertising, like there are tons of new features, there's tons of change, and there absolutely is, and with AI becoming more and more of a thing, I don't expect the pace of change to slow down anytime soon.
+
+But one thing that's not going to change, and it is nice to find things that are consistent, is the importance on creating lots of new ads. And we've actually come up with a new way to create lots of new ads very quickly and easily that I demonstrate in this video here. It's a way to literally create hundreds of ads in the time it would have taken you to create just a handful previously.
+
+So if you haven't already, go ahead and give this a watch, create a bunch of new ads, and you're much more likely to find winners that can be a game changer for your business.

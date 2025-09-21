@@ -1,0 +1,63 @@
+Hi guys, it's Ben Heath from Lead Guru and in this video I'm going to talk about Facebook's value optimization feature and whether or not you should be using it with your Facebook ads. I've had a number of comments about this recently and I want to sort of talk about the pros and cons and say what I think about this relatively new Facebook advertising feature in this video. Before I get to that, I just want to very quickly ask for you to smash that like button on this video.
+
+That'd be much appreciated. Okay, so I'm in Facebook's support document about value optimization. I think it's often good to come in here into Facebook Business and see what Facebook has to say about any features that you have a question about or should I or shouldn't I use this.
+
+The first thing to say and I'm going to cover this more in separate videos in iOS 14 specific videos is that they're talking about the fact that value optimization has changed the result of Apple's iOS 14 policy which is unsurprising given what we know about that. I'll include a link in the description to more videos about the iOS 14 change and things like that and I'm going to cover this in a separate video. But here I really want to talk about the value optimization feature aside from from iOS 14.
+
+Basically what it does is instead of just optimizing for the lowest cost per conversion which is what Facebook would do by default. Let's say you choose the conversions objective, you optimize for something like purchases. Facebook is going to always try and get you the lowest cost per conversion possible.
+
+Okay, that's what the campaign is going to naturally optimize for. If you turn on value optimization, Facebook might go after people that it thinks are slightly less likely to buy perhaps which means your cost per purchase in this case is going to be higher but maybe they'll spend more on your site on average. So let's say you're used to spend you know paying $20 cost per conversion for a $65 customer.
+
+Okay, and then Facebook's calculated or estimated that actually these people over here might cost more like 25 or even 30 dollars to acquire a customer. But they might be worth $120 each in which case the added cost for that person is going to be worth it because of the extra revenue they generate. That's really what value optimization is going in.
+
+It's really optimizing for ROAS return on ad spend as opposed to the lowest cost per conversion. And this is basically what Facebook talk about here. You know, you'll be more likely to have better ROAS on the conversions you care about.
+
+Okay, so the idea behind value optimization is that it's going to help improve ROAS even if it does mean that your cost per purchase might increase slightly. Now what Facebook recommend here and I'm not going to read this whole thing obviously you can come check this out. But they say if you can optimize for value we recommend that you do.
+
+Obviously not everyone can do this right. If you're operating a different type of campaign with a different objective or optimizing for conversion events that it doesn't really make sense for then this isn't going to apply to everyone. And if this does apply to you, you will almost certainly see prompts within your Facebook ad account that Facebook would say we'd recommend turning on on value optimization.
+
+My recommendation would be yes, test it. So we've tested this a bunch of times. Unfortunately not in you know, don't have this available in one of our example ad accounts to show you.
+
+But we test this a bunch of times and I would say that on the whole it has been positive but it's not exclusively so. So I think it's if it is an option for you I definitely think it's worth testing it on turning it on and testing it. But I wouldn't go so far as to say it's certainly going to produce better results.
+
+It's not like using a lookalike based on previous customers or using the conversions objective over traffic where I can very confidently say that for you that is the best option and you should be using it. With this, it's most likely the best option but not always. So I'd recommend you turn it on.
+
+I'd recommend that you give it a go but be open-minded to the fact that your results might not be quite as good as you were hoping for. They might not be quite as good as you had previously and you may have to turn it off again. That's something that we've done with a number of clients.
+
+I said, I don't know how many we've tested this on now, you know, maybe 20, 30, something like that. I would say off the top of my head 60, no more like 70% of them we've seen a slight improvement in performance, not much, slight improvement. And in the others we've either had nothing or perhaps even a slight decrease in performance.
+
+Now whenever you're testing variables like that, it is always difficult to fully isolate that variable, right? And so there could be other factors at play but when you do it on enough clients you sort of get an idea for what impact that specific thing is happening. I would say on the whole it's positive but not exclusively so.
+
+And I think that's just a good thing to be aware of with all your Facebook advertising related stuff by the way guys, is that whether it's, you know, whether it's a recommendation for me or something you want to test yourself, always turn it on with an eye to this might not be right for my account and I may need to turn it off. Or, you know, testing a new targeting option, whatever. Be open-minded, don't just sort of blindly follow things because no matter what I recommend there will always be exceptions to the rules and you may or may not fall into those for various different things.
+
+So I would recommend for example that people go with automatic placements most of the time if they're running a conversions-based objective in their campaign. But, and that's true and that's definitely what I recommend and I've seen that that works best with the vast majority of accounts, but there are scenarios and I've seen these where we've tested doing that and we've tested alternative options and the alternative options have worked better. And it's very surprising and we don't quite understand why and it seems to be isolated to a very small percentage of overall cases.
+
+The vast majority of the time that advice is going to hold true, but there are caveats. So it's important to be aware of that. The other thing I want to mention about value optimization before moving on is that if you do turn it on and you know whether it does or doesn't work be aware that this is the sort of thing that we think is going to improve over time.
+
+iOS 14 restrictions and things aside, we know that Facebook's advertising platform is getting more sophisticated, they're getting better at working out who is likely to do certain things and what a customer is like to be worth. What you're basically backing here is you're saying to Facebook, right, I trust your ability to know what a person, how much they're basically likely to spend in my store, in my online store. That's basically what you're saying.
+
+Facebook's pretty good at that. They'll know that people with higher incomes, for example, they'll be able to see data like, okay, this individual, obviously it's anonymized, but this individual on average spends 2.5 times what the average person does when they buy through online stores, right? So they get a good idea that if you can get this person to come to your store and they're interested, they're likely to buy and likely to spend more.
+
+Or a certain individual spends disproportionately a lot in a specific industry, which we probably all do, right? We have hobbies and things where we spend a lot more money than the average person. That sort of thing, okay?
+
+So what we're doing with these sorts of settings is we're basically saying, I trust you Facebook to be able to work this out. That process is likely to continue to get better. And a lot of things that we now trust Facebook with, we wouldn't necessarily have been able to do so like a year ago, no, no, sorry, a year ago, four or five years ago.
+
+But now as the platform has gotten better and better, we can really say, you know what? Happy to run automatic placements. I'm happy to do these things.
+
+And I trust that Facebook's going to try and get me the best results and that their systems are sophisticated enough to get that. So I'd recommend you turn it on, give it a go. If you do as well, one thing to make sure and the Facebook noted down here and I want to highlight it is that you customize your columns to make sure that you can see purchase value in terms of return on ad spend.
+
+Because if you're just tracking, tracking cost per result, you may see that this makes your data look worse because it's increased your cost per purchase slightly, for example. But actually, if you're tracking ROAS return on ad spend, you might go from a 3.5 to a 3.8 or it's going to be that sort of change with this sort of thing. Not massive, I don't think, but that you want, at least want to be able to track that and know the impact that it's having and what it is and isn't doing.
+
+Okay? Hopefully that makes sense. Right.
+
+If that's useful, please let me know in the comments below. Before we go, one free thing I quickly want to mention is my Facebook ads mastermind group. So we have 73,000 members in there right now.
+
+One of the biggest communities of Facebook advertisers in the world. It's free to join. Facebook group, free to join.
+
+Link's in the description. Go ahead and join. We'd love to have you part of that community.
+
+I do free live trainings in there. So I think it'd be well worth doing if you haven't joined already. As I said, if this video has been useful, comment below to let me know.
+
+Subscribe to my YouTube channel for more Facebook advertising related content. And of course, click that like button, that thumbs up button. That helps me out a lot.
+
+Thanks a lot, guys. Best of luck with everything. I'll talk to you soon.

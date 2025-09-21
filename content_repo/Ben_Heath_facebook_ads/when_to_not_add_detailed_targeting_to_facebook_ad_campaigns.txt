@@ -1,0 +1,67 @@
+Hi guys, it's Ben Heath from Lead Guru and in this video I'm going to talk about those scenarios in which you absolutely do not want to be adding any detailed targeting options to your Facebook ad campaigns. It's a bit of a misconception amongst some Facebook advertisers that you always need to be putting stuff into those detailed targeting options and there are scenarios in which doing that will wreck your campaigns, it will really make your campaigns perform a lot worse. I'm going to cover those in this video.
+
+Before I get into that, I want to very quickly ask you to smash that like button and of course subscribe to my channel if you are new and haven't done so already. Okay, so I'm in an example Facebook ad account here, I've got an example campaign created and we're going to go ahead and jump to the ad set level and then click edit, go into the ad set and scroll down to the detailed targeting section here. So I'm going to delete that because it's a little example I prepared in advance, I'm going to show you what that means in a second.
+
+But here we've got the detailed targeting options, right? So this is where you'd normally add in your demographics, your interests, your behaviours, the sorts of things that people traditionally think of when they think of Facebook advertising, right? They think, okay, you've got all these detailed targeting options, we can be really specific with who we advertise to, all that sort of stuff.
+
+And there are absolutely scenarios in which you want to use detailed targeting options. If you watch my other videos, you'll see that, you know, we use them all the time. But there are scenarios in which you don't want to.
+
+And I'm going to give you some examples by coming up here. In this custom audiences section, I've added in a lookalike audience here, there's nice and 1% lookalike based on leads, but it could be any sort of lookalike. It could also be any custom audience added in here as well.
+
+If you have if you are targeting a lookalike audience, or a custom audience, you do not want to add any detailed targeting options. That is a big, big no, no. Okay, so let me give you an example of why.
+
+Here we've got a lookalike audience, 1% lookalike audience in the UK, we're targeting the United Kingdom based on previous leads. So if you're not familiar with custom audiences or lookalike audiences, I'll include links in the video description below that will take you to videos that show you exactly how to create either custom audiences or lookalike audiences. They are they are separate things.
+
+But you can see that with this lookalike audience, we've got a potential reach of 480,000 people, roughly 1% of the Facebook users in the UK, Facebook and Instagram users in the UK. Okay. Now, if we were to go ahead and add in, where are we, a detailed targeting option, the example I popped in was a good one.
+
+Let's say I wanted to add in note, not employers. Let's say I wanted to people who are interested in phishing. Okay, it's quite a broad interest actually, there's tons of people in the UK interested in phishing.
+
+You can see that that took our potential reach from 480,000 to 62,000 people. Okay, when you add detailed targeting options into an ad set that is targeting either lookalike audiences or custom audiences, it's an and function. So what you're saying to Facebook is I want someone to be in this lookalike audience or in this custom audience and match this interest.
+
+Whereas that is different. If I take out this lookalike, that is different. You can see 7 million people in the UK interested in phishing.
+
+If I was to go ahead and add in other interests, let's say I've got phishing and let's say I go and add another one being tennis. You can see my audience size increased to 12 million because when you add in interests, demographics, behaviour, targeting options, it's an or function. So someone can be interested in phishing or tennis and they will be included.
+
+You don't have to be interested in both. Okay, now there are ways by using this narrow audience that you can make sure that people are interested in both. But in general, it's sort of the basic detail targeting level.
+
+It's an or function. Someone can, so when you add in eight different interests, you're getting people who are interested in all eight things or interested in one of the eight things you're getting everyone, right? Whereas when you add in detail targeting options, if I get rid of that, go back to when you're adding in detail targeting options, if you're targeting a customer or lookalike, it's an and function.
+
+Now with a lookalike audience, if I go back and add in that lookalike audience again, then the 1%, right? It took us, we've got 480,000. We added in phishing.
+
+Oh, let me get rid of that. So it shows you the number, the 62,000. We went down to 62,000.
+
+So that's cut our audience down by like 80%, not something that we want at all. If you're targeting a custom audience, so that's obviously a lookalike audience that starts with 480,000. If you're targeting a custom audience, let's say people on your email list, people who have visited your website, people who perhaps have interacted with you on Facebook or Instagram, those audiences, unless you're quite a large company, are going to be much smaller than 480,000.
+
+You might only have 5,000 people that visit your website or, you know, a thousand people on email list. If you start with a custom audience that's that small, and then you go ahead and add in detail targeting options, you are just crushing the size of that audience. And as we know, when it comes to Facebook and Instagram advertising, the larger the audience, the better, all things being equal.
+
+Okay? You don't want to artificially constrain your audience. And if you're targeting, for example, a custom audience of people who have visited your website or are on your email list, you don't need to further qualify those people with an interest or any sort of detailed targeting.
+
+Because if they bothered to visit your website or, you know, they're on your email list, even if Facebook doesn't have them categorized as interested in whatever it is that you sell, you know they're obviously interested in whatever it is that you sell. Otherwise, they wouldn't have taken those actions in the first place. Same with a lookalike audience, right?
+
+If you're basing, in this case, we've got a lookalike audience built off of leads we've generated. Now, if those people are very similar to people that have become a lead of ours, we know they're the right sort of people to target. It's why lookalike audiences are so effective.
+
+We don't need to further qualify those people by adding in detailed targeting options. What that'll do is reduce your audience size and worsen the performance of your campaign. Okay?
+
+So whenever you've got a custom audience or a lookalike audience that you're targeting in an ad set, do not add detailed targeting options. Very, very important. Okay?
+
+So that's sort of the main point of this video, and that's scenario one. There is another point that I want to quickly make, and that's that you can decide not to add in any detailed targeting options. And if I get rid of the lookalike and get rid of phishing, and just go with everyone.
+
+Okay? So one of the scenarios where you would just want to target everyone, what's often called open or broad targeting on Facebook. Well, if you're a local business, if you're just advertising in a local area and the population size that you're advertising to is not that large, and let's say anything less than 100,000 people, you'd almost certainly want at least one ad set, well, you'd want one ad set that is just targeting everyone in that area.
+
+You don't want to get too specific because you're already really constrained by the geographical area in which you're advertising. Okay? So that's one scenario in which we use it all the time.
+
+If you are a larger advertiser, you've got large budget, you know, at least six figures a month plus, and you've got a product or service with broad appeal, so it's not like it's really niche, loads of people could love what it is that you have to offer, then you may want to test completely open targeting even nationally, or maybe even internationally, and just keep it really broad and allow Facebook to work out who within the audience is going to perform well. So the scenarios in which you want to use, yeah, open targeting, broad targeting, a sort of, it's probably not going to be the end of the world if you add in detailed targeting options in those that I've just described. It might be, you know, if you're just advertising to a town of 20,000 people, adding in any detailed targeting options is again a big mistake.
+
+It might take your 20,000 down to 6,000 and your campaign's in a lot of trouble. If you're advertising in a relatively small population area, or just to a small population period, you do not want to be adding in detailed targeting options, go with everyone. But most importantly, if you've got custom audiences or lookalike audiences that you're targeting, no detailed targeting options, which actually means that I would probably say that more than half of our, all the ad sets we create and all the campaigns we create for our clients don't have any detailed targeting options because we focus so much on lookalike audiences and custom audiences, particularly lookalike on the cold side of things when we are running our campaigns for our clients.
+
+Okay, hopefully that's been useful. Before you go, the three thing I want to quickly mention is my Facebook Ads Mastermind group. So it's a free Facebook group, 75,000 plus members, one of the biggest communities of Facebook advertisers in the world.
+
+It's full of people just like you who are just trying to get better results with Facebook and Instagram ads. You know, they're asking questions, getting them answered. I'm in there every day.
+
+I do free live trainings in the group as well. So if that sounds something you want to be part of, go ahead and click on the link in the video description. We'd love to have you and join our community and yeah, we'll see you over there.
+
+If you found this useful, please give it a thumbs up. Please don't forget to subscribe and of course comment below to let me know. Comments are always much appreciated.
+
+They help me create future content. If I know what you like, what you don't like, if I know what questions you guys have got, all really helpful. So please get them in.
+
+I go through them all and I try to answer as many as I can. So yeah, best of luck your Facebook guide campaigns guys and I'll talk to you soon. Bye for now.

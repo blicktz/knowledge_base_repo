@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Simple client for RunPod FastAPI Transcription Server
-Usage: python transcribe_client.py /path/to/audio/files /path/to/output [--server URL] [--api-key KEY]
+Async Parallel Client for RunPod FastAPI Transcription Server
+Processes up to 6 files concurrently for maximum server utilization.
+Usage: python transcribe_client_async.py /path/to/audio/files /path/to/output [--server URL] [--api-key KEY]
 """
 
 import os
@@ -12,11 +13,11 @@ import argparse
 import zipfile
 import random
 import uuid
+import asyncio
 from pathlib import Path
 from typing import List, Optional
 import httpx
 from httpx import RequestError
-from tqdm import tqdm
 from dotenv import load_dotenv
 
 def slugify_filename(filename: str, max_length: int = 100) -> str:
@@ -59,22 +60,104 @@ def slugify_filename(filename: str, max_length: int = 100) -> str:
     
     return name
 
-class TranscriptionClient:
-    """Client for RunPod FastAPI transcription server."""
+class ProgressManager:
+    """Manages progress display for concurrent file processing."""
     
-    def __init__(self, server_url: str, api_key: str):
+    def __init__(self, total_files: int):
+        self.total_files = total_files
+        self.completed = 0
+        self.failed = 0
+        self.active_jobs = {}  # {job_id: {file: name, status: uploading/processing/downloading}}
+        self.lock = asyncio.Lock()
+        self.start_time = time.time()
+    
+    async def update_status(self, job_id: str, file_name: str, status: str):
+        """Update status for a specific job."""
+        async with self.lock:
+            self.active_jobs[job_id] = {"file": file_name, "status": status}
+            self._display_progress()
+    
+    async def mark_completed(self, job_id: str, success: bool = True):
+        """Mark a job as completed (success or failure)."""
+        async with self.lock:
+            if success:
+                self.completed += 1
+            else:
+                self.failed += 1
+            
+            # Remove from active jobs
+            if job_id in self.active_jobs:
+                del self.active_jobs[job_id]
+            
+            self._display_progress()
+    
+    def _display_progress(self):
+        """Display current progress (called with lock held)."""
+        elapsed = time.time() - self.start_time
+        
+        # Clear previous lines (simple approach)
+        print('\r' + ' ' * 120 + '\r', end='')  # Clear line
+        
+        # Main progress line
+        progress_pct = (self.completed / self.total_files * 100) if self.total_files > 0 else 0
+        active_count = len(self.active_jobs)
+        
+        status_line = (f"📊 {self.completed}/{self.total_files} completed ({progress_pct:.1f}%), "
+                      f"{self.failed} failed, {active_count} active | {elapsed:.0f}s")
+        
+        print(f"\r{status_line}", end='')
+        
+        # Show active jobs details on new lines (limit to 3)
+        if self.active_jobs:
+            active_list = list(self.active_jobs.values())[:3]
+            for job_info in active_list:
+                file_name = job_info['file'][:40] + '...' if len(job_info['file']) > 40 else job_info['file']
+                status_emoji = {
+                    'uploading': '📤',
+                    'starting': '🚀', 
+                    'processing': '⚙️',
+                    'downloading': '📥'
+                }.get(job_info['status'], '🔄')
+                print(f"\n   {status_emoji} {file_name}: {job_info['status']}", end='')
+            
+            if len(self.active_jobs) > 3:
+                print(f"\n   ... and {len(self.active_jobs) - 3} more files", end='')
+        
+        sys.stdout.flush()
+    
+    def print_final_summary(self):
+        """Print final summary after all processing is complete."""
+        elapsed = time.time() - self.start_time
+        print(f"\n\n🎉 Processing Complete!")
+        print(f"📊 Final Results:")
+        print(f"   ✅ Completed: {self.completed}")
+        print(f"   ❌ Failed: {self.failed}")
+        print(f"   ⏱️  Total time: {elapsed:.1f} seconds")
+        if self.completed > 0:
+            avg_time = elapsed / self.completed
+            print(f"   📈 Average per file: {avg_time:.1f} seconds")
+
+class TranscriptionClient:
+    """Async client for RunPod FastAPI transcription server."""
+    
+    def __init__(self, server_url: str, api_key: str, http_client: httpx.AsyncClient):
         self.server_url = server_url.rstrip('/')
         self.api_key = api_key
+        self.http_client = http_client
         self.headers = {
             "Authorization": f"Bearer {api_key}",
             "Connection": "keep-alive",
-            "User-Agent": "transcription-client/1.0"
+            "User-Agent": "transcription-client-async/1.0"
         }
     
-    def health_check(self) -> bool:
+    async def health_check(self) -> bool:
         """Check if server is healthy."""
         try:
-            response = httpx.get(f"{self.server_url}/health", headers=self.headers, timeout=30)
+            response = await self.http_client.get(
+                f"{self.server_url}/health", 
+                headers=self.headers, 
+                timeout=30
+            )
             if response.status_code == 200:
                 data = response.json()
                 print(f"✅ Server is healthy (Device: {data.get('device', 'unknown')})")
@@ -86,333 +169,125 @@ class TranscriptionClient:
             print(f"❌ Cannot connect to server: {e}")
             return False
     
-    def upload_file_with_progress(self, audio_file: Path, model: str = "turbo", max_retries: int = 5) -> Optional[str]:
-        """Upload a single audio file with progress tracking and retry logic."""
-        file_size = audio_file.stat().st_size
-        file_size_mb = file_size / (1024 * 1024)
-        
-        print(f"📤 Uploading: {audio_file.name} ({file_size_mb:.1f} MB)")
-        
+    async def upload_file(self, audio_file: Path, model: str = "turbo", max_retries: int = 3) -> Optional[str]:
+        """Upload a single audio file."""
         for attempt in range(max_retries):
             try:
-                # Create progress bar
-                progress_bar = tqdm(
-                    total=file_size,
-                    unit='B',
-                    unit_scale=True,
-                    desc=f"Upload {audio_file.name}",
-                    leave=False
-                )
-                
-                # Use httpx native file upload (simpler but with basic progress)
                 with open(audio_file, 'rb') as f:
                     files = {'file': (audio_file.name, f, 'audio/mpeg')}
                     data = {'model': model}
                     
-                    # Start upload indicator
-                    progress_bar.update(0)
-                    
-                    response = httpx.post(
+                    response = await self.http_client.post(
                         f"{self.server_url}/upload-single",
                         files=files,
                         data=data,
                         headers=self.headers,
                         timeout=1800  # 30 minutes timeout for large files
                     )
-                    
-                    # Complete progress bar (we can't track real-time progress with basic httpx)
-                    progress_bar.update(file_size)
-                
-                progress_bar.close()
                 
                 if response.status_code == 200:
                     data = response.json()
                     job_id = data.get('job_id')
-                    print(f"✅ Upload successful! Job ID: {job_id}")
                     return job_id
                 else:
-                    print(f"❌ Upload failed (attempt {attempt + 1}/{max_retries}): {response.text}")
                     if attempt < max_retries - 1:
-                        print(f"⏳ Retrying in 5 seconds...")
-                        time.sleep(5)
+                        await asyncio.sleep(2)
                     
             except RequestError as e:
-                progress_bar.close() if 'progress_bar' in locals() else None
-                print(f"❌ Upload error (attempt {attempt + 1}/{max_retries}): {e}")
                 if attempt < max_retries - 1:
-                    print(f"⏳ Retrying in 5 seconds...")
-                    time.sleep(5)
+                    await asyncio.sleep(2)
         
-        print(f"❌ Failed to upload {audio_file.name} after {max_retries} attempts")
         return None
     
-    def upload_files_individually(self, audio_files: List[Path], model: str = "turbo") -> List[str]:
-        """Upload multiple files one by one with progress tracking."""
-        print(f"\n📤 Uploading {len(audio_files)} files individually...")
-        
-        job_ids = []
-        successful_uploads = 0
-        failed_uploads = 0
-        
-        for i, audio_file in enumerate(audio_files, 1):
-            print(f"\n[{i}/{len(audio_files)}] Processing: {audio_file.name}")
-            
-            if not audio_file.exists():
-                print(f"❌ File not found: {audio_file}")
-                failed_uploads += 1
-                continue
-            
-            job_id = self.upload_file_with_progress(audio_file, model)
-            
-            if job_id:
-                job_ids.append(job_id)
-                successful_uploads += 1
-                print(f"✅ Queued for processing")
-            else:
-                failed_uploads += 1
-                print(f"❌ Upload failed")
-        
-        print(f"\n📊 Upload Summary:")
-        print(f"   ✅ Successful: {successful_uploads}")
-        print(f"   ❌ Failed: {failed_uploads}")
-        print(f"   📋 Job IDs: {len(job_ids)}")
-        
-        return job_ids
-    
-    def start_processing(self, job_id: str, max_retries: int = 5) -> tuple[bool, bool]:
-        """Start processing an uploaded file.
-        
-        Returns:
-            (success: bool, job_already_completed: bool)
-        """
-        print(f"🚀 Starting processing for job {job_id[:8]}...")
-        
+    async def start_processing(self, job_id: str, max_retries: int = 3) -> tuple[bool, bool]:
+        """Start processing an uploaded file."""
         for attempt in range(max_retries):
             try:
-                response = httpx.post(
+                response = await self.http_client.post(
                     f"{self.server_url}/process/{job_id}",
                     headers=self.headers,
                     timeout=30
                 )
                 
                 if response.status_code == 200:
-                    data = response.json()
-                    print(f"✅ Processing started! Status: {data.get('status')}")
-                    if 'queue_size' in data:
-                        print(f"📋 Queue position: {data['queue_size']}")
                     return True, False
                 else:
                     # Parse error response to detect if job is already completed
-                    error_detail = response.text  # Default fallback
-                    is_status_error = False
-                    
                     try:
                         error_data = response.json()
                         error_detail = error_data.get('detail', response.text)
                         
                         # Check if the error indicates job is already completed
                         if "status is 'completed'" in error_detail:
-                            print(f"⚡ Job completed very quickly! Ready for download.")
                             return True, True
-                        
-                        # Check if job failed during processing
                         elif "status is 'failed'" in error_detail:
-                            print(f"❌ Job failed during processing: {error_detail}")
                             return False, False
-                        
-                        # For other status-related errors, check actual status before retrying
                         elif "status is" in error_detail:
-                            is_status_error = True
-                            # Try to get the actual status
-                            current_status = self.check_status(job_id)
-                            if current_status:
-                                status = current_status.get('status')
-                                if status == 'completed':
-                                    print(f"⚡ Job completed while starting processing! Ready for download.")
+                            # Check actual status
+                            status = await self.check_status(job_id)
+                            if status:
+                                if status.get('status') == 'completed':
                                     return True, True
-                                elif status == 'failed':
-                                    print(f"❌ Job failed: {current_status.get('error', 'Unknown error')}")
+                                elif status.get('status') == 'failed':
                                     return False, False
-                                elif status == 'processing':
-                                    print(f"✅ Job is already processing!")
+                                elif status.get('status') == 'processing':
                                     return True, False
                         
-                        print(f"❌ Failed to start processing (attempt {attempt + 1}/{max_retries}): {error_detail}")
-                        
+                        if "status is" not in str(error_detail) and attempt < max_retries - 1:
+                            await asyncio.sleep(2)
+                        elif "status is" in str(error_detail):
+                            break
+                            
                     except (json.JSONDecodeError, KeyError):
-                        print(f"❌ Failed to start processing (attempt {attempt + 1}/{max_retries}): {response.text}")
-                    
-                    # Only retry for actual errors, not status mismatches
-                    if attempt < max_retries - 1 and not is_status_error:
-                        print(f"⏳ Retrying in 3 seconds...")
-                        time.sleep(3)
-                    elif is_status_error:
-                        # Don't retry status mismatches, they won't resolve
-                        break
+                        if attempt < max_retries - 1:
+                            await asyncio.sleep(2)
                         
             except RequestError as e:
-                print(f"❌ Processing start error (attempt {attempt + 1}/{max_retries}): {e}")
                 if attempt < max_retries - 1:
-                    print(f"⏳ Retrying in 3 seconds...")
-                    time.sleep(3)
+                    await asyncio.sleep(2)
         
-        print(f"❌ Failed to start processing for {job_id[:8]} after {max_retries} attempts")
         return False, False
     
-    def check_status(self, job_id: str) -> Optional[dict]:
-        """Check job status with CloudFlare-optimized timeout and request tracking."""
-        request_id = str(uuid.uuid4())[:8]
-        start_time = time.time()
-        
+    async def check_status(self, job_id: str) -> Optional[dict]:
+        """Check job status."""
         try:
-            # Add request ID header for tracking
-            headers_with_id = {**self.headers, "X-Request-ID": request_id}
-            
-            response = httpx.get(
+            response = await self.http_client.get(
                 f"{self.server_url}/status/{job_id}",
-                headers=headers_with_id,
-                timeout=30  # Reduced from 60s for faster CloudFlare failures
+                headers=self.headers,
+                timeout=30
             )
             
-            elapsed = time.time() - start_time
-            
             if response.status_code == 200:
-                # Only log on slow responses or occasional success for tracking
-                if elapsed > 10 or random.random() < 0.1:  # Log 10% of fast responses
-                    print(f"🔍 Status check {request_id}: {elapsed:.1f}s")
                 return response.json()
             else:
-                print(f"❌ Status check {request_id} failed ({elapsed:.1f}s): {response.text}")
                 return None
                 
-        except httpx.ReadTimeout:
-            elapsed = time.time() - start_time
-            print(f"❌ Status check {request_id} timeout ({elapsed:.1f}s) - likely CloudFlare proxy issue")
-            return None
-        except httpx.ConnectTimeout:
-            elapsed = time.time() - start_time
-            print(f"❌ Status check {request_id} connection timeout ({elapsed:.1f}s) - CloudFlare connection issue")
-            return None
-        except RequestError as e:
-            elapsed = time.time() - start_time
-            print(f"❌ Status check {request_id} error ({elapsed:.1f}s): {e}")
+        except RequestError:
             return None
     
-    def wait_for_completion(self, job_id: str, check_interval: int = 5) -> bool:
-        """Wait for job to complete with exponential backoff for CloudFlare timeouts."""
-        print(f"\n⏳ Processing job {job_id}...")
-        
-        last_status = None
-        spinner = ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏']
-        spinner_idx = 0
-        consecutive_errors = 0
-        max_consecutive_errors = 10
-        base_retry_delay = 2  # Start with 2 seconds
-        
+    async def wait_for_completion(self, job_id: str, check_interval: int = 3) -> bool:
+        """Wait for job to complete."""
         while True:
-            status = self.check_status(job_id)
+            status = await self.check_status(job_id)
             
             if not status:
-                consecutive_errors += 1
-                if consecutive_errors >= max_consecutive_errors:
-                    print(f"\n❌ Too many consecutive network errors ({consecutive_errors}). Giving up.")
-                    return False
-                
-                # Exponential backoff with jitter for CloudFlare issues
-                retry_delay = min(base_retry_delay * (2 ** (consecutive_errors - 1)), 30)  # Cap at 30s
-                jitter = random.uniform(0.5, 1.5)  # Add 50% jitter
-                actual_delay = retry_delay * jitter
-                
-                print(f"\n⚠️  Network error ({consecutive_errors}/{max_consecutive_errors}), retrying in {actual_delay:.1f} seconds...")
-                time.sleep(actual_delay)
+                await asyncio.sleep(check_interval)
                 continue
-            else:
-                consecutive_errors = 0  # Reset error counter on successful response
             
-            # Update progress display
-            if status != last_status:
-                processed = status.get('processed_count', 0)
-                total = status.get('files_count', 0)
-                failed = status.get('failed_count', 0)
-                job_status = status.get('status', 'unknown')
-                
-                if job_status == 'uploaded':
-                    print(f"\r📁 File uploaded, waiting to start processing...", end='', flush=True)
-                elif job_status == 'queued':
-                    print(f"\r📋 Queued for processing...", end='', flush=True)
-                elif job_status == 'processing':
-                    print(f"\r{spinner[spinner_idx]} Processing: {processed}/{total} files completed, {failed} failed", end='', flush=True)
-                    spinner_idx = (spinner_idx + 1) % len(spinner)
-                else:
-                    print(f"\r{spinner[spinner_idx]} Status: {job_status}", end='', flush=True)
-                    spinner_idx = (spinner_idx + 1) % len(spinner)
-                
-                last_status = status
-            
-            # Check completion
             if status.get('status') == 'completed':
-                print(f"\n✅ Job completed! Processed: {status.get('processed_count')}, Failed: {status.get('failed_count')}")
                 return True
             elif status.get('status') == 'failed':
-                print(f"\n❌ Job failed: {status.get('error', 'Unknown error')}")
                 return False
             
-            time.sleep(check_interval)
+            await asyncio.sleep(check_interval)
     
-    def wait_for_multiple_jobs(self, job_ids: List[str], check_interval: int = 5) -> List[str]:
-        """Wait for multiple jobs to complete and return completed job IDs."""
-        if not job_ids:
-            return []
-        
-        print(f"\n⏳ Monitoring {len(job_ids)} processing jobs...")
-        
-        completed_jobs = []
-        failed_jobs = []
-        remaining_jobs = job_ids.copy()
-        
-        while remaining_jobs:
-            for job_id in remaining_jobs.copy():
-                status = self.check_status(job_id)
-                
-                if not status:
-                    print(f"\n⚠️  Could not get status for job {job_id[:8]}...")
-                    remaining_jobs.remove(job_id)
-                    continue
-                
-                job_status = status.get('status', 'unknown')
-                
-                if job_status == 'completed':
-                    completed_jobs.append(job_id)
-                    remaining_jobs.remove(job_id)
-                    print(f"\n✅ Job {job_id[:8]}... completed!")
-                elif job_status == 'failed':
-                    failed_jobs.append(job_id)
-                    remaining_jobs.remove(job_id)
-                    print(f"\n❌ Job {job_id[:8]}... failed: {status.get('error', 'Unknown error')}")
-            
-            if remaining_jobs:
-                # Show progress for remaining jobs
-                in_progress = len([j for j in remaining_jobs if self.check_status(j) and self.check_status(j).get('status') == 'processing'])
-                pending = len(remaining_jobs) - in_progress
-                
-                print(f"\r🔄 Jobs remaining: {len(remaining_jobs)} (Processing: {in_progress}, Pending: {pending})", end='', flush=True)
-                time.sleep(check_interval)
-        
-        print(f"\n\n📊 Final Results:")
-        print(f"   ✅ Completed: {len(completed_jobs)}")
-        print(f"   ❌ Failed: {len(failed_jobs)}")
-        
-        return completed_jobs
-    
-    def download_results(self, job_id: str, output_dir: Path) -> bool:
+    async def download_results(self, job_id: str, output_dir: Path) -> bool:
         """Download transcription results."""
-        print(f"\n📥 Downloading results...")
-        
         try:
-            response = httpx.get(
+            response = await self.http_client.get(
                 f"{self.server_url}/download/{job_id}",
                 headers=self.headers,
-                timeout=120  # Keep longer timeout for download due to file size
+                timeout=120
             )
             
             if response.status_code == 200:
@@ -421,51 +296,105 @@ class TranscriptionClient:
                 zip_path = output_dir / f"transcripts_{job_id}.zip"
                 
                 with open(zip_path, 'wb') as f:
-                    for chunk in response.iter_bytes(chunk_size=8192):
+                    async for chunk in response.aiter_bytes(chunk_size=8192):
                         f.write(chunk)
                 
-                print(f"✅ Downloaded archive: {zip_path}")
-                
                 # Extract zip file
-                print(f"📦 Extracting transcripts...")
                 with zipfile.ZipFile(zip_path, 'r') as zip_ref:
                     zip_ref.extractall(output_dir)
                 
                 # Remove zip file after extraction
                 zip_path.unlink()
                 
-                # Count extracted files
-                txt_files = list(output_dir.glob("*.txt"))
-                print(f"✅ Extracted {len(txt_files)} transcript files to {output_dir}")
-                
                 return True
             else:
-                print(f"❌ Download failed: {response.text}")
                 return False
                 
-        except RequestError as e:
-            print(f"❌ Download error: {e}")
+        except RequestError:
             return False
     
-    def cleanup_job(self, job_id: str):
+    async def cleanup_job(self, job_id: str):
         """Delete job from server."""
         try:
-            response = httpx.delete(
+            await self.http_client.delete(
                 f"{self.server_url}/job/{job_id}",
                 headers=self.headers,
                 timeout=10
             )
-            if response.status_code == 200:
-                print(f"🗑️  Cleaned up job on server")
         except:
             pass  # Ignore cleanup errors
 
-def check_existing_files(audio_files: List[Path], output_dir: Path) -> tuple[List[Path], List[Path]]:
-    """Check which files already have transcripts and which need processing.
+# Core async processing functions
+async def process_single_file(client: TranscriptionClient, audio_file: Path, 
+                            output_dir: Path, model: str, progress_mgr: ProgressManager,
+                            no_cleanup: bool = False) -> bool:
+    """Process a single file with progress tracking."""
+    job_id = None
+    file_name = audio_file.name
     
-    Returns:
-        (files_to_process, existing_files)
-    """
+    try:
+        # Upload with progress
+        await progress_mgr.update_status("temp", file_name, "uploading")
+        job_id = await client.upload_file(audio_file, model)
+        if not job_id:
+            raise Exception("Upload failed")
+        
+        # Start processing
+        await progress_mgr.update_status(job_id, file_name, "starting")
+        processing_started, job_already_completed = await client.start_processing(job_id)
+        if not processing_started:
+            raise Exception("Failed to start processing")
+        
+        # Wait for completion (skip if already completed)
+        if not job_already_completed:
+            await progress_mgr.update_status(job_id, file_name, "processing")
+            if not await client.wait_for_completion(job_id):
+                raise Exception("Processing failed")
+        
+        # Download results
+        await progress_mgr.update_status(job_id, file_name, "downloading")
+        if not await client.download_results(job_id, output_dir):
+            raise Exception("Download failed")
+        
+        # Cleanup (optional)
+        if not no_cleanup:
+            await client.cleanup_job(job_id)
+        
+        await progress_mgr.mark_completed(job_id, success=True)
+        return True
+        
+    except Exception as e:
+        if job_id:
+            await progress_mgr.mark_completed(job_id, success=False)
+        else:
+            await progress_mgr.mark_completed(f"failed-{file_name}", success=False)
+        return False
+
+async def process_files_concurrently(client: TranscriptionClient, files: List[Path], 
+                                   output_dir: Path, model: str, max_concurrent: int = 6,
+                                   no_cleanup: bool = False) -> List[bool]:
+    """Process all files with up to N concurrent workers."""
+    progress_mgr = ProgressManager(len(files))
+    
+    # Create semaphore to limit concurrent workers
+    semaphore = asyncio.Semaphore(max_concurrent)
+    
+    async def bounded_process(file):
+        async with semaphore:
+            return await process_single_file(client, file, output_dir, model, progress_mgr, no_cleanup)
+    
+    # Process all files concurrently (bounded by semaphore)
+    print(f"\n🚀 Processing {len(files)} files with up to {max_concurrent} concurrent workers...")
+    results = await asyncio.gather(*[bounded_process(f) for f in files], return_exceptions=True)
+    
+    # Convert exceptions to False
+    results = [r if isinstance(r, bool) else False for r in results]
+    
+    progress_mgr.print_final_summary()
+    return results
+
+def check_existing_files(audio_files: List[Path], output_dir: Path) -> tuple[List[Path], List[Path]]:
+    """Check which files already have transcripts and which need processing."""
     files_to_process = []
     existing_files = []
     
@@ -501,27 +430,27 @@ def find_audio_files(input_path: Path) -> List[Path]:
     else:
         return []
 
-def main():
-    """Main entry point."""
+async def main():
+    """Main async entry point."""
     # Load environment variables from .env file
     load_dotenv()
     
     parser = argparse.ArgumentParser(
-        description="Simple client for RunPod FastAPI Transcription Server",
+        description="Async Parallel Client for RunPod FastAPI Transcription Server",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  # Transcribe a directory of MP3s
-  python transcribe_client.py ~/audio ~/transcripts
+  # Transcribe a directory of MP3s (up to 6 files concurrently)
+  python transcribe_client_async.py ~/audio ~/transcripts
   
   # Transcribe with specific server
-  python transcribe_client.py ~/audio ~/output --server https://your-pod-id.runpod.io:8080
+  python transcribe_client_async.py ~/audio ~/output --server https://your-pod-id.runpod.io:8080
   
-  # Use custom API key
-  python transcribe_client.py ~/audio ~/output --api-key your-secret-key
+  # Use custom API key and model
+  python transcribe_client_async.py ~/audio ~/output --api-key your-secret-key --model large-v3
   
-  # Use different model
-  python transcribe_client.py ~/audio ~/output --model large-v3
+  # Limit concurrent workers
+  python transcribe_client_async.py ~/audio ~/output --max-concurrent 3
         """
     )
     
@@ -534,6 +463,7 @@ Examples:
                        help="Whisper model to use (default: turbo)")
     parser.add_argument("--no-cleanup", action="store_true", help="Don't delete job from server after completion")
     parser.add_argument("--force", action="store_true", help="Process all files even if transcripts already exist")
+    parser.add_argument("--max-concurrent", type=int, default=6, help="Maximum concurrent workers (default: 6)")
     
     args = parser.parse_args()
     
@@ -571,15 +501,16 @@ Examples:
     
     if not files_to_process:
         print(f"\n✅ All files already transcribed! Use --force to re-process.")
-        sys.exit(0)
+        return
     
-    print(f"🎵 RunPod Transcription Client")
+    print(f"🎵 RunPod Async Transcription Client")
     print(f"{'=' * 50}")
     print(f"📁 Input:  {args.input}")
     print(f"📁 Output: {args.output}")
     print(f"🔧 Model:  {args.model}")
     print(f"🌐 Server: {args.server}")
-    print(f"📊 Files:  {len(audio_files)} audio files found")
+    print(f"📊 Files:  {len(files_to_process)} files to process")
+    print(f"⚡ Max concurrent: {args.max_concurrent}")
     print(f"{'=' * 50}")
     
     # Get server URL from environment or use default
@@ -588,91 +519,37 @@ Examples:
     # Get API key: prioritize TRANSCRIBE_API_KEY from .env, then command line argument
     api_key = os.environ.get("TRANSCRIBE_API_KEY", args.api_key)
     
-    # Initialize client
-    client = TranscriptionClient(server_url, api_key)
-    
-    # Check server health
-    print("\n🔍 Checking server connection...")
-    if not client.health_check():
-        print("\n❌ Cannot connect to server. Please check:")
-        print(f"   - Server URL: {server_url}")
-        print(f"   - API key: {'Set' if api_key != 'your-secret-api-key-here' else 'Using default'}")
-        print(f"   - Is the RunPod container running?")
-        sys.exit(1)
-    
-    # Process files one by one with new two-step workflow
-    print(f"\n📤 Processing {len(files_to_process)} files sequentially...")
-    completed_jobs = []
-    failed_jobs = []
-    skipped_jobs = len(existing_files)
-    
-    for i, audio_file in enumerate(files_to_process, 1):
-        print(f"\n[{i}/{len(files_to_process)}] Processing: {audio_file.name}")
+    # Create async HTTP client and transcription client
+    async with httpx.AsyncClient(timeout=httpx.Timeout(connect=60.0, read=1800.0, write=60.0, pool=60.0)) as http_client:
+        client = TranscriptionClient(server_url, api_key, http_client)
         
-        if not audio_file.exists():
-            print(f"❌ File not found: {audio_file}")
-            failed_jobs.append(audio_file.name)
-            continue
+        # Check server health
+        print("\n🔍 Checking server connection...")
+        if not await client.health_check():
+            print("\n❌ Cannot connect to server. Please check:")
+            print(f"   - Server URL: {server_url}")
+            print(f"   - API key: {'Set' if api_key != 'your-secret-api-key-here' else 'Using default'}")
+            print(f"   - Is the RunPod container running?")
+            sys.exit(1)
         
-        # Step 1: Upload file
-        job_id = client.upload_file_with_progress(audio_file, args.model)
-        if not job_id:
-            print(f"❌ Upload failed for {audio_file.name}")
-            failed_jobs.append(audio_file.name)
-            continue
+        # Process files concurrently
+        results = await process_files_concurrently(
+            client, files_to_process, args.output, args.model, 
+            args.max_concurrent, args.no_cleanup
+        )
         
-        # Step 2: Start processing
-        processing_started, job_already_completed = client.start_processing(job_id)
-        if not processing_started:
-            print(f"❌ Failed to start processing for {audio_file.name}")
-            failed_jobs.append(audio_file.name)
-            continue
+        # Final summary
+        successful = sum(1 for r in results if r)
+        failed = len(results) - successful
+        skipped = len(existing_files)
         
-        # Step 3: Wait for completion (skip if already completed)
-        job_completed = job_already_completed
-        if not job_already_completed:
-            job_completed = client.wait_for_completion(job_id)
-        
-        if job_completed:
-            if job_already_completed:
-                print(f"⚡ Job completed instantly for {audio_file.name} (optimized server!)")
-            else:
-                print(f"✅ Processing completed for {audio_file.name}")
-            
-            completed_jobs.append(job_id)
-            
-            # Step 4: Download result immediately
-            print(f"📥 Downloading result for {audio_file.name}...")
-            if client.download_results(job_id, args.output):
-                print(f"✅ Downloaded transcript for {audio_file.name}")
-            else:
-                print(f"⚠️  Failed to download transcript for {audio_file.name}")
-            
-            # Step 5: Cleanup
-            if not args.no_cleanup:
-                client.cleanup_job(job_id)
-        else:
-            print(f"❌ Processing failed for {audio_file.name}")
-            failed_jobs.append(audio_file.name)
-    
-    # Summary
-    print(f"\n📊 Processing Summary:")
-    print(f"   ✅ Completed: {len(completed_jobs)}")
-    print(f"   ❌ Failed: {len(failed_jobs)}")
-    if skipped_jobs > 0:
-        print(f"   ⏭️  Skipped (already exist): {skipped_jobs}")
-    
-    if not completed_jobs and not skipped_jobs:
-        print("❌ No files processed successfully")
-        sys.exit(1)
-    
-    print(f"\n🎉 Transcription complete!")
-    print(f"📊 Total files: {len(audio_files)}")
-    print(f"✅ Successfully completed: {len(completed_jobs)}")
-    print(f"❌ Failed: {len(failed_jobs)}")
-    if skipped_jobs > 0:
-        print(f"⏭️  Skipped (already exist): {skipped_jobs}")
-    print(f"📁 Results saved to: {args.output}")
+        print(f"\n🎉 Transcription complete!")
+        print(f"📊 Total files: {len(audio_files)}")
+        print(f"✅ Successfully completed: {successful}")
+        print(f"❌ Failed: {failed}")
+        if skipped > 0:
+            print(f"⏭️  Skipped (already exist): {skipped}")
+        print(f"📁 Results saved to: {args.output}")
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())

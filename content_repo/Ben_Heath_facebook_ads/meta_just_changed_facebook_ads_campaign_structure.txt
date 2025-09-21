@@ -1,0 +1,225 @@
+The biggest change we've seen to Facebook ads and Instagram ads for at least two years is happening right now. The structure of Facebook ad campaigns is going to completely change. Now, Meta have given me early access to these big changes in one of my example ad accounts, and in this video, I'm going to show you what these big changes are and what this means for Facebook and Instagram advertisers.
+
+So what am I talking about here? Well, Advantage Plus campaigns are being re-engineered and expanded with new features. And to show you exactly what that looks like, I'm in the example ad account that these features have been added to, so we can take a look at this.
+
+There's no campaigns in here because this is an example ad account, but I'm here in Ads Manager. I'm going to go ahead and click on this green plus create button. Now, I'll talk more about how this is going to be rolled out, what campaign objective it affects later on, but I want to just sort of dive into this and start showing you the good stuff.
+
+So if I select the sales objective and then click continue, the first thing you will notice if you're familiar with this process is that instead of being presented with two options, so when you click the sales campaign objective, you were previously asked, do you want to create an Advantage Plus shopping campaign or do you want to go with a manual sales campaign? And I've created videos around doing both and when you want to use one and et cetera, et cetera. Well, that has changed.
+
+Instead, you are presented with this screen. It literally says you no longer need to choose a campaign setup, so you're not choosing between the two. You can still do a lot of the features between those two options, but it's re-engineered, the structures changed later on.
+
+We'll get to that. And you can see the meta saying, you know, that Advantage Plus shopping campaigns are now called Advantage Plus sales campaigns, which I think is a good idea, a little bit less confusing, and that manual options are still available, although, you know, changed somewhat and a bit more difficult to use. Okay, so that's a pop-up.
+
+Once you have this added to your ad account, you'll know it because you go to create a new sales campaign, and this is what you will see. So if I go ahead and click OK, and now the first thing to note is that within our Advantage Plus sales campaign, as opposed to shopping campaign, as the new name is, there are now three levels once again. So we've got the campaign level, the ad set level, and the ad level.
+
+Under Advantage Plus shopping campaigns, meta combined effectively the campaign and ad set level with very limited targeting options, and therefore you just have the two levels, right? You had a combined campaign ad set, and then you had an ad level. We've sort of gone back to the traditional way, the traditional structure from a campaign ad set, ad setup, although things have moved around somewhat.
+
+Now, I'm not going to go through all the details that are within these because there's lots of things that are the same and haven't changed, and I sort of won't mention those. I've got videos basically covering everything at this point, things like special ad categories, for example. I'm going to focus in on the stuff that is new and being affected by these changes.
+
+So one big one you'll see over here on the right-hand side is campaign score. Okay, so you can see meta's just got a pop-up. A score of 100 means you're using all of our recommended settings.
+
+Now, it's defaulted to an 88. We haven't got other stuff added in. And this is sort of a variation of opportunity score, which I created a video about, I don't know, it must be six months ago or something like that.
+
+And it's meta's way of saying, look, you set up your campaigns this way. We would actually recommend you set it up this way. And if you do make those changes and set it up how we'd recommend, you improve what was your opportunity score.
+
+And this is now applied to the campaign score. And it's a way to try and get advertisers to get better results, right? If you go with the recommended settings, most of the time you're going to get better results.
+
+That would be my recommendation as well. The defaults are usually good. There are scenarios where you don't necessarily want to go with the defaults or depending on which strategy you're using, you might want to override something, in which case that might reduce your campaign score.
+
+And there will absolutely be scenarios where you can have a successful campaign that's got a lower campaign score than a less successful campaign that's got a higher campaign score. They don't correlate completely. But in general, if your results aren't great and you've got a low campaign score, if you make the adjustments to approve your campaign score, you are likely to see better results.
+
+Much in the same way as it functioned with opportunity score. But now within the advantage plus campaigns, it's being applied at the campaign level. If we just click through, you can see it says here advantage plus sales campaign, formerly advantage plus shopping.
+
+We've already talked about that. It's on when audience, budget, placements, et cetera, all have advantage plus. We will go through those settings.
+
+And then we get down to the budget section and you can see that Meta's taken us there automatically. And we've now got campaign budget as opposed to like advantage campaign budget or setting the budget at the ad set level. This is new and different, even though you've still got the same options.
+
+And you can see that because we've got campaign budget selected, we've got this little green mark here saying advantage plus is on. Effectively, we're using advantage plus budget because it's set at the campaign level. This is grayed out right now, the ad set budget, because we only have one ad set in this campaign.
+
+If we add multiple ad sets, then we would have the option to do that. So you can still set budget at the ad set level. It doesn't have to be at the campaign level.
+
+But yeah, just a little bit of a different format. If we just minimize this down, we can see that this score is made up of we're using campaign budget, tick. Audience, we're using recommended settings.
+
+We haven't gone into that yet. Placements, again, the same thing. And that will tell you why our campaign is 88 as opposed to 100.
+
+And that's with these recommendations down here. So we can see missing or invalid catalog data for one ad. Well, we've only just created this campaign.
+
+There's no catalog added. And that makes total sense. If we were to add that in, this would increase by 12 points.
+
+Now, before we move on to some of the other massive changes that are being implemented, I wanted to let you know that HubSpot, who I'm partnering with on this video, have created a fantastic free resource that contains 50 examples of high-performing Facebook ads that you can model from. There is a link in the video description below where you can download these Facebook ad examples. They've included ads from Nike, Hulu, Venmo, and so much more.
+
+My favorite part is that it's sorted by industry to make it really easy to find exactly what you're looking for. Using this free resource to find high-performing Facebook ads to model from is one of the absolute best ways to create Facebook ads that can deliver outstanding results. You don't need to try and reinvent the wheel, especially when you're first learning.
+
+I'd strongly recommend you check it out and use it to level up your Facebook ad creative. Check it out using the link in the description below. And thanks to HubSpot for sponsoring today's video.
+
+Right then, still at the campaign level, we've got this audience segment reporting section. Now, this is very similar to previous Advantage Plus shopping campaigns. And this isn't going to affect your targeting, who your ad's put in front of, but it is going to affect your reporting in terms of the data that you see.
+
+So I've recommended for a while you want to define your engaged audiences so people have perhaps watched videos of yours on Instagram or Facebook. They've engaged on the platforms and also define your existing customers. So previous website purchases, things like that.
+
+These aren't set up properly because, like I said, this is an example ad account, but you want to add those in. And then what you'll be able to see once you run your campaign is how much of my Facebook ad budget was spent on brand new cold audiences, how much was spent on sort of warm audiences, so people who have engaged but not yet bought, and how much was spent retargeting people that have already purchased. So you've still got that section down at the campaign level.
+
+Right, let's go ahead and go over to the ad set level because we've got a lot of interesting stuff in here. So I'm not going to worry about conversion location, performance goal, and things like that for now. What I want to do is scroll down to the audience section because this is, you know, when it comes to Advantage Plus campaigns, this is one of the biggest changes that have been made over the last few years since they came in, and we've got some really interesting stuff going on here, right?
+
+So the first thing we've got under audience is a section where the default is find prospective customers even if they haven't interacted with your business, which is what most advertisers are going to want to do. Doesn't mean you're not going to get some retargeting in there. You most certainly will.
+
+Or retarget ads to people who are interacting with your products on and off Facebook. So do you just want to specifically retarget? Most businesses are going to want to go with this first option.
+
+We will, of course, be testing these and seeing what can happen as a result of that. Then we've got this control section. Now, some of the stuff we're about to go through here is actually similar to what used to be included in a manual sales campaign under the Advantage Plus audience section.
+
+And that was something that I've spoken to so many Facebook and Instagram advertisers. I worked out the other day. I've probably spoken to more Facebook and Instagram advertisers than anyone in history, which is kind of a fun thing.
+
+I've spoken to so many people and I'd ask them, are you using an Advantage Plus shopping campaign or are you using a manual campaign, a manual sales campaign with Advantage Plus audience? And you can just see them go, I've not got a clue. They were different things.
+
+Now, those two options are effectively the same. You still have another option for manual campaigns, we'll get to, but those two options have basically been combined into one, which I think makes total sense, makes things much easier, going to make my life easier as a content creator as well, which is great. But this part here, this control section, is what we used to have under audience controls when you created a manual sales campaign and came through and used Advantage Plus audience.
+
+Okay. But we can now do this as part of Advantage Plus sales campaign. So you can see it says controls limit who can see your ads.
+
+So Matt is already saying like, hey, hey, hey, we'd rather you didn't go ahead and make adjustments here and limit things down. That might negatively impact your performance, but there are of course times where we need to do that. So the first thing you've got is location.
+
+This is defaulted to the United Kingdom, but you could change that just as you can previously to local areas, could be a radius around your city, could be a certain state, could be nationwide, could be international, whatever it is that you want to do that makes sense for your business. I've got videos on location targeting. And then we've got this more control section, and this is very similar to what we had under, like I said, that audience control section as part of a previous manual sales campaign.
+
+So we can set a minimum age, and this is really designed for businesses where there are age restrictions on what you can and can't advertise in that location. So for example, you might not be able to advertise certain products in the US unless people are 21 or over, okay? Whereas in the UK, we can do it to people over 18 or older.
+
+So that would be an example, and that's really what minimum age is designed for, why it only goes up to 25. You can still exclude custom audiences. So if you wanted to exclude people who have already bought a specific offer from the campaign advertising that offer, you can do it.
+
+You can change languages. And you've also now got exclude catalog interactions, which is going to be, is somewhat similar to excluding a previous custom audience, although obviously operates a little bit differently. But I'll be talking more about this in future videos, doing a bit more of a deep dive.
+
+Then we get down into this suggest an audience section. So this was the, under a previous manual sales campaign, this was what was added in underneath that advantage plus audience, where you are now inputting targeting suggestions, well, targeting options as suggestions. So olden days of Facebook and Instagram advertising, pre-2022, when you inputted your targeting criteria, you are saying to Meta, don't go ahead and expand this.
+
+I only want to advertise to people that meet this criteria, don't advertise to anyone else. That has obviously changed in a number of different ways. And this was one of the big ones, suggestions.
+
+So we can suggest audiences. So we can add in suggestions here, right? So we can include custom audiences, lookalike audiences.
+
+So you can set up your ad set to, okay, I want to add in perhaps, let me quickly do it. So people have visited my website before. Website visitors, I'm sure we've got something like that in here, set up as an example.
+
+So people have visited my website. That doesn't mean that Meta's only gonna target people that have visited your website. They are also gonna target people who haven't visited your website, because this is a suggestion.
+
+In the same way with age range, you can narrow this down and you could say, look, my core audience is, I don't know, 30 to let's say 55. Again, that's a suggestion to Meta. It's sort of pointing the algorithm in the right direction, but Meta has the flexibility to go ahead and advertise people outside of that.
+
+You can do the exact same with gender and then you can do the same with detail targeting. So we can say, look, we think our audience is mostly going to be interested in social media marketing, for example. So I can go ahead and add that in as an interest.
+
+But it's a suggestion. You have the flexibility to be able to adjust things and do what you want. Now, because I've entered in things that would narrow down my audience, you might expect the campaign score to go down, but they're not because I've only added them in as suggestions.
+
+They don't really narrow the audience down. They just sort of, as I said, point the algorithm in the right direction. Right.
+
+So this is kind of like a combination, like I said, of what used to be under manual sales campaigns and what used to be under advantage plus shopping campaigns being combined into one. And I think that's so much better because I felt for a while that there's limited downside to adding in some suggestions. Like how can that really hurt?
+
+Meta could completely choose to ignore them, in which case you're at the same place as you were with a previous advantage plus shopping campaign where you had basically no targeting inputs. But you can give meta some direction, particularly adding in things like custom audiences from perhaps people that are off meta sources. So I get comments often being like, what's the point in retargeting?
+
+Meta's going to find those people. And yes, meta will find the people that watch your videos on Facebook and Instagram, interact with your Instagram profile, all that sort of stuff. They will find the people that have visited your website, assuming the meta pixel is installed and they can see that information.
+
+But meta's not going to be able to find everyone that bought from you over the last three years if you upload that as an email list, for example, as a customer list, because how would they know someone's bought from you two years ago if they haven't visited your website? Do you know what I mean? So there are advantages to adding, particularly off meta source, custom audiences.
+
+If you want to know more about custom audiences, lookalike audiences, by the way, I've got videos on those. Just go to my channel, search for custom audiences, lookalike audiences, retargeting, all that stuff will pop up and you'll be able to work it out. Okay, then we've got this little line under here, which I think is really interesting, which is called further limit the reach of your ads.
+
+So you can see meta's basically like, do not, do not do this. Do not further limit the reach of your ads, but you can. And again, meta's going to say, look, if you go ahead and make this switch, you're going to miss out on what on average is going to be a 33% lower cost per result, but we can go ahead and click switch setup.
+
+Now switching setup puts us basically onto manual targeting options. So the old school way of doing things when it came to Facebook and Instagram advertising, this is now as close as we can get. And you'll see that there's some changes, right?
+
+So we no longer have that control section where the targeting inputs like location are hard boundaries and then the suggestion section at the bottom. We now just have things that are designed or you can make hard boundaries. Like, no, no, no, we only want to do this.
+
+But even once you click that and come into this, this is the new manual. Like if someone's referring to manual targeting, this and they've got this setup with the new advantage plus changes, this is what they're referring to, okay? So we can see we've got this audience section here, still got the same top bit, find perspective or retarget.
+
+We've got our location, which is going to be adhered to. This is pretty important for businesses. You don't want meta going.
+
+Oh, I'm going to put your ads in for people on the other side of the country if you're a local business. That's a waste of money. Now we've got this age criteria, right?
+
+That we've set as 30 to 55. Even once we've switched over to manual, you will see that there's still a checkbox saying use as a suggestion, right? We'll also reach people beyond your age setting when it's likely to improve performance.
+
+If you really want to, you can come in and deselect that. And now that makes the age criteria a hard boundary. Like no, do not advertise to people below 30 or above the age of 55.
+
+And you can see that as we start doing this, meta's going to be talking about the campaign score. Nah, don't do it. Our audience is now not optimized.
+
+We can get an extra eight points by switching back, all that sort of stuff. Okay, we could do the same with genders. So we can select men, for example, and the default is to have a suggestion.
+
+No, I only want to advertise to men or only I want to advertise to women. The custom audience, again, is in as a suggestion. So only advertise to people who visited a website, but also advertise to others.
+
+We can turn this off. So we can say, no, we only want to effectively retarget in this case. So the way this is set up, we're already going to have our ads put in front of people that are in this custom audience that have met the criteria of visiting our website within the last 180 days.
+
+And you can see that our campaign score is just absolutely plummeting because we're missing out on tons of audience. We've got the detailed targeting. So this is in as a suggestion.
+
+It's the only one you can't turn off. So detailed targeting expansion, as it would have been called previously, automatically turned on by default. That's the one you can't turn off.
+
+And then we've got the other options that we've already talked about that we don't need to cover a huge amount. And we can see now that, look, down in audience definition, meta's saying, look, this is, your audience is very narrow. Like we're only retargeting here because we've turned this one off as a suggestion.
+
+If we come back in and switch that back on, our campaign score shoots back up. Okay. So if you do want to switch things over to manual, I know some people still use manual setups.
+
+They get the best results there. Then you can do that, which is obviously good news for people that want to do that. But what I would say is that if you want to do manual targeting now, you need a really good reason for doing that.
+
+Like it is not what we do by default. It is not what we'd recommend. You are missing out on Meta's really powerful AI to work out who to target, all that sort of stuff.
+
+You are limiting your audience. There are times when you want to do it, right? There are times when you want to do it, but just make sure that that's really intentional.
+
+You're not defaulting to manual setup. So I'm going to go ahead and switch back to the recommended setup. And then we get our campaign score, which is always useful back up to 88.
+
+The only thing is just catalog data, which I won't be adding in because that's not really something that's affected by these changes that I'll cover in this video. We'll get back to the video in a second. Before we do, I just want to quickly let you know about my mentorship program.
+
+Now with my mentorship program, me and my team mentor people daily to help them get the best possible Facebook ad results. We've actually had some amazing results recently from some of our mentees. We'll pop them up on screen right now.
+
+In fact, 82% of people that join my mentorship program see a notable improvement in their Facebook ads return on ad spend within just 30 days of joining. And that's a stat that I'm really proud of. There is a link in the video description below.
+
+You can click on that, come through to a page on our website and book in a free no obligation call with one of my team members to find out more about it and see if it would be a really good fit for you. Hopefully we get a chance to work together. Okay.
+
+Then we've got placements. One of the other advantage plus elements and we can see advantage pluses on. Now the default is to just go all devices, all platforms, all placements, basically everything, advertised everywhere, right?
+
+But we can come in and start selecting these things. So we could, for example, say, you know what? I only want to run ads on Facebook and Instagram, not on audience network and messenger.
+
+We can see our campaign score takes a bit of a hit, not a big one. If I was to say, for example, deselect Instagram, I would still stay the same. We're still getting used to the campaign score.
+
+I was expecting more than that. But you can come in and manually adjust your placement options. You could say, for example, I want to advertise on Facebook and Instagram, but actually I only really want to advertise on feeds and stories.
+
+So let's go ahead and get rid of, you know, everything else and go through that, right? Again, as general advice, not what this video is about, but as general advice, I'd recommend going with all platforms, all placement options. If you're using a conversion-based campaign objective, sales, leads, something like that, where Meta's only going to put your ads on places where they believe they can get you a sale, a lead, things like that.
+
+If you're using campaign objectives like traffic or awareness, where Meta's not tracking the end action, then you want to come in and be much more selective. So limiting to Facebook and Instagram feeds, stories and reels is a pretty good idea. You don't want, for example, lots of cheap link clicks from the audience network if those people then don't go on to do anything else because you can't track it.
+
+You're sending people to a third-party website where you can't track conversions, for example. Okay? So yeah, so that's just a little bit of information around placements.
+
+You can come in and adjust all this stuff, okay? And then they've got some other things here. You know, you've got Skipple ads included.
+
+You've got brand safety and suitability. I'm going to do a separate video about this, like inventory filters. Basically, where can your ads appear?
+
+Where do you want your ads not to appear? Not something that ever really typically bothers me. Basically, if it's been deemed acceptable by Meta's content policies, I'm happy for my ads to appear alongside it.
+
+Sometimes that's not going to make sense, right? But whatever, I'm not too worried about it. But you can come in and do some stuff in here.
+
+So I will talk about that separately, but just to let you know that that is under here now and it's been moved around. Now, as part of this campaign score section, we can see, look, we've now, because we've started selecting specific placements, we've reduced our score and we've got include all placements for all ad sets not being ticked. You can just click apply now, these buttons here, which is really handy.
+
+Saves you a bit of time. So boom, just click that and it will go in and change. You don't have to go in and actually adjust those things, which is a nice little win.
+
+Okay, so those are the major changes I wanted to talk about within a, what's now an Advantage Plus sales campaign as opposed to Advantage Plus shopping campaign. There will be lots more I'm going to talk about around the details. We're going to test stuff, all that sort of thing.
+
+But I wanted to bounce out and talk about something else and that's that the Advantage Plus campaign range is being expanded to other campaign objectives as well. Whereas previously, we had Advantage Plus shopping. So if I go ahead and click on this create button and then select leads and click continue, you will now see the very similar thing to what we had when we created the sales campaign.
+
+We can now have the opportunity to create an Advantage Plus leads campaign. Previously, we had either a manual leads campaign or a tailored leads campaign. And a tailored leads campaign was somewhat similar to an Advantage Plus shopping campaign.
+
+But now, the Advantage Plus leads campaign and the Advantage Plus sales campaign are very similar, much more similar. So if you're, you know, if you're running ads for clients, you've got different types of businesses, you're, you know, jumping between them, it's going to be easier and more streamlined. So I'm going to go ahead and click OK.
+
+And then you can see we've got the same setup, right? We've got campaign score, although we're not being marked down because there's no catalog because it's a leads campaign, right? But we've still got the same criteria being involved.
+
+We can still come in and adjust these things. But if we jump over to the ad set level, you'll see that it's very similar to the Advantage Plus plus sales campaign, right? So if we scroll down to the audience section, we don't have the same setting right at the top, but we've got, you know, controls, limit who can see your ads, we can set our location, show more controls, very similar stuff.
+
+And then we've got this suggest an audience section. Again, very similar stuff. So suggestions, we need to do age, gender, detail targeting, or add in custom audiences like we talked about.
+
+We can further limit the reach, basically switch over to manual targeting, much in the same way that we could with an Advantage Plus sales campaign. And there is actually more of a case for having more targeting inputs, I believe, with an Advantage Plus leads campaign over a sales campaign. Because if you think about Meta's optimizing for purchases or optimizing for the most valuable purchases, you know, maximize return on ad spend conversion value, for example, with a sales campaign, so kind of, it's like, well, it's kind of up to you, Meta, like, just get me more of those, you can see when it happens.
+
+When you're running a campaign that's optimizing for leads, there's also this quality question. So whereas Meta might be just optimizing for as many leads as possible, there might be changes you're willing to make to the targeting where you go, look, I'm okay with paying more per lead, generating less lead volume if I get corresponding better quality and they convert better, et cetera, et cetera, which depending on your setup, Meta might not be able to see. Now, there are ways you could get better to see that data.
+
+You can use conversion leads. I'll talk about that in other videos. And then that data gets fed through and then you can leave things mostly open and defaulted.
+
+But if you do have that issue, then that is something you can come in and adjust and change and either add in suggestions, which would be the first option I'd recommend, or go ahead and experiment with manual targeting as part of an advantage plus leads campaign. So just something I wanted to mention, I do think there's more of a case for it with leads campaigns than with other campaign types. Okay, so like I said at the beginning of this video, Meta would kind enough to give me access to these changes in one of my example ad accounts.
+
+We don't have these changes, this new setup in our other ad accounts. And there are a few ad accounts right now that have this set up. Meta's currently testing it.
+
+This will be rolled out. Over the next six months or so, we expect basically all Facebook ad accounts to switch from, you know, probably the current version that you've got as you're watching this video over to the new version. And, you know, this will be staggered.
+
+So some ad accounts are going to get this very, very soon. Maybe even by the time this gets edited and published, this video. Others are going to take a little bit longer.
+
+But this is coming. And this is a really big change. Like when Advantage Plus shopping campaigns were first introduced, that was a really big change.
+
+And I think this is going to be a really big change. And it'll be very interesting to see how performance is also affected. Like what's the impact on delivery?
+
+What's going to be impact on cost? What's going to be impact on return on ad spend? We'll be doing loads of experiments.
+
+I'll keep you guys all up to date with that stuff. So make sure you subscribe because there will be, I'll be releasing lots of videos based on this big change and all the various elements of, okay, what you want to do now in this scenario and that sort of thing. I think there'll be a lot of you who find that really, really useful as these changes do happen.
+
+So like I said, make sure you subscribe and I will see you on another video.
