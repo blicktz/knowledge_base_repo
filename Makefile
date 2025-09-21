@@ -22,6 +22,7 @@ RUNPOD_POD_NAME_MULTI ?= whisper-multi-$(shell date +%s)
 #RUNPOD_GPU_TYPE ?= NVIDIA RTX A5000
 RUNPOD_GPU_TYPE ?= NVIDIA GeForce RTX 4090
 RUNPOD_AUTO_SHUTDOWN ?= false
+DEBUG_LOGGING ?= false
 TRANSCRIBE_API_KEY_ENV := mv_mtvG2X4U_dqRgdWMvSEoFtpMjRJkL4zlkwEXYH2I
 
 help: ## Show this help message
@@ -811,10 +812,17 @@ endif
 	echo "🎵 Input: $(INPUT)"; \
 	echo "📁 Output: $$output_dir"; \
 	echo "🌐 Server: $$url"; \
+	if [ "$(DEBUG_LOGGING)" = "true" ]; then \
+		echo "🔍 Debug logging: ENABLED"; \
+	fi; \
 	echo ""; \
 	export RUNPOD_SERVER_URL="$$url"; \
 	export TRANSCRIBE_API_KEY="$$api_key"; \
-	$(PYTHON) transcribe_client.py "$(INPUT)" "$$output_dir"
+	cmd="$(PYTHON) transcribe_client.py \"$(INPUT)\" \"$$output_dir\""; \
+	if [ "$(DEBUG_LOGGING)" = "true" ]; then \
+		cmd="$$cmd --debug"; \
+	fi; \
+	eval $$cmd
 
 runpod-batch: ## Batch transcribe directory using RunPod (INPUT_DIR=... [OUTPUT_DIR=./transcripts])
 ifndef INPUT_DIR
@@ -839,10 +847,17 @@ endif
 	echo "📁 Input: $(INPUT_DIR)"; \
 	echo "📁 Output: $$output_dir"; \
 	echo "🌐 Server: $$url"; \
+	if [ "$(DEBUG_LOGGING)" = "true" ]; then \
+		echo "🔍 Debug logging: ENABLED"; \
+	fi; \
 	echo ""; \
 	export RUNPOD_SERVER_URL="$$url"; \
 	export TRANSCRIBE_API_KEY="$$api_key"; \
-	$(PYTHON) transcribe_client.py "$(INPUT_DIR)" "$$output_dir"; \
+	cmd="$(PYTHON) transcribe_client.py \"$(INPUT_DIR)\" \"$$output_dir\""; \
+	if [ "$(DEBUG_LOGGING)" = "true" ]; then \
+		cmd="$$cmd --debug"; \
+	fi; \
+	eval $$cmd; \
 	if [ "$(RUNPOD_AUTO_SHUTDOWN)" = "true" ]; then \
 		echo ""; \
 		echo "💰 Auto-shutdown enabled - deleting pod to save costs..."; \
@@ -956,6 +971,10 @@ runpod-help: ## Show all RunPod-related commands
 	@echo "  make runpod-transcribe INPUT=audio.mp3      # Transcribe single file"
 	@echo "  make runpod-batch INPUT_DIR=./mp3s          # Transcribe directory"
 	@echo "  make runpod-batch-auto INPUT_DIR=./mp3s     # Auto-shutdown after batch"
+	@echo ""
+	@echo "Debug Mode (to diagnose failing files):"
+	@echo "  make runpod-transcribe INPUT=audio.mp3 DEBUG_LOGGING=true"
+	@echo "  make runpod-batch INPUT_DIR=./mp3s DEBUG_LOGGING=true"
 	@echo ""
 	@echo "Management (works with both single and multi-worker):"
 	@echo "  make runpod-info      # Get status and connection URL"

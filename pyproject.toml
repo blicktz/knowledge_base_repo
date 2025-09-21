@@ -23,6 +23,7 @@ python-multipart = "^0.0.6"
 aiofiles = "^23.2.0"
 tqdm = "^4.66.0"
 httpx = "^0.25.0"
+streaming-form-data = "^1.19.1"
 
 
 [build-system]

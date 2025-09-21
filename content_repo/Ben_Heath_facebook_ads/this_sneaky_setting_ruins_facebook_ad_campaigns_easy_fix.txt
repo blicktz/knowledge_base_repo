@@ -1,0 +1,107 @@
+In this video, I'm going to show you a sneaky Facebook ad setting that meta hides and that not a lot of Facebook advertisers know about. I'm going to show you what it is and how you should use it to get the best possible results with your Facebook ads. I'm talking about the attribution setting and it's far more important than you think.
+
+So to show you what this setting is, how it works and how you should use it, I'm in an example Facebook ad account. I've created an example sales campaign, a manual sales campaign by the way, and I've gone to the ad set level. Now, if you're familiar with creating Facebook ads, you'll know that let's say for example, you're sending people to your website in a sales campaign, looking to generate sales, performance goals are going to maximize number of conversions, and then you need to select the conversion event that you're going to optimize for, which for most businesses is going to be purchase.
+
+So all fairly standard stuff. If you've watched my videos, you've probably heard me talk about that in the past. This is just popping up with errors because this is an example ad account.
+
+But if we keep going, we can see this little more option here. And if we click on this, we will see that there are a few different things under here. And today, what I really want to talk about is attribution setting.
+
+Okay, so if we hover over the little I, meta will give us more information about what this is and how it works. I'm going to quickly explain. Attribution refers to the time after which someone interacts with your ads, they can then convert in this case, purchase, and it still be credited back to your ad account, your ad set and even the individual ads.
+
+So for example, we can see here that the default setting is seven day click one day view. Now, what that means is that if someone purchases within seven days of clicking on your ad, or within one day of viewing without clicking, and that's picked up by the Metapixel, that can then be fed back into your ad account, and a purchase can be recorded. Now, attribution is really, really important because it's absolutely essential that we have good data as advertisers, because without that, how are we going to assess how our campaigns are performing, if they're even profitable, whether or not we can scale.
+
+It's also really important to see the differences between each individual elements. If, for example, you are targeting two different audiences, you want to see which one generated the most purchases, which one generated the best cost of purchase, the same applies to ads. That way, you can make adjustments to your campaigns and learn and target new audiences and create new ads that are more in line with what you know gets you the best possible results.
+
+Probably even more important than that at this stage, we need meta to have this data. We know that with a campaign, when you're optimizing for something like purchases, meta is going to try and get you as many purchases as possible. For them to do that, they need to know what purchases look like, who's purchasing, so they need the results that your campaigns are generating to be attributed back to your ad account, back to the campaigns, ad sets, and ads that you're running, so that meta can work out, okay, we served this person an ad four times than they bought, versus this person that we served twice they didn't buy.
+
+Okay, we need to up the impression frequency to get more sales. We noticed this person converted in the evening. These people we advertised to in the morning, hardly any of those converted.
+
+Right, let's put more of the ad spend in the evening versus early in the day. There's all these little data points that happen automatically that take advantage of Meta's AI and machine learning processes that we need meta to do to get us great results, and they need to know what our results are in order to be able to do that. So attribution setting is absolutely key.
+
+Now we've got the default here of seven day click, one day view, and if we go ahead and click on edit, you can see that there are options that we can change this, okay. So for click through, we can change that from seven days to just one day, if we wanted to. We've got engage you here, which is for video only, and if I just click on the drop down, we can either have none or one day.
+
+Interestingly, that the default here, once we click into edit, is none. However, they recommend adding in one day. I think for most businesses, this middle one doesn't really make any difference because it applies to skippable video ads, which is only going to be a small percentage of the impressions that your videos get.
+
+So whether you go with none or one day, it's really probably not going to make much difference at all. This next one, however, the view through, just like the click through, that is more important, okay. The default is one day, and we can change that to none.
+
+Now my recommendation for most meta advertisers, and I'll explain some scenarios where I would change this in a second, but for most meta advertisers, it's to go with the longest attribution window possible. So in this case, it's seven day click and one day view. And the reason why is because we don't want conversions taking place that meta aren't able to track.
+
+And depending on your business, even with, let's say, a seven day click through window, you might still miss out on a lot of conversions. If you offer a bespoke product, something that's relatively expensive, the sort of thing that someone takes a look at, and then they do a bit of shopping around, or they have to ask a spouse or a business partner about before they're ready to purchase. It's likely that some people are going to take longer than seven days after they've clicked on one of your ads to actually go through and make that purchase.
+
+Unfortunately, even with the longest possible attribution setting, we're not going to be able to track those people. Now, if you go ahead and narrow that down and say, oh, I only want to count people that have clicked on an ad and then bought within a day, you're going to miss out on a lot of purchases. Again, it's going to depend on your business.
+
+The more expensive what it is that you offer, the more likely it is that you're going to miss out on purchases. But you are going to miss out on more purchases, which I've already described why that's such an issue, both for you as an advertiser, but also for meta being able to optimize your campaign. So I think that seven day click absolutely makes sense.
+
+The one day view through, I think is also valuable. It's either that or none. And there's a good chance that someone will be shown an ad, but not necessarily click on it, but that ad will still have a part to play in generating a purchase.
+
+So let's say someone was shown an ad, they sort of registered it, but they weren't in a situation, they were on their phone, out and about, whatever. They didn't have the time then to go through and make a purchase, come through to your website, check it out. But they sort of clocked, oh, that looks really good.
+
+I've made a mental note of the brand name. And then later on that day, they Google your brand, they come through to your website and they make a purchase. You don't want those people taking that sort of action to not be included and not be attributed to your ad account.
+
+I think it's really important that they, that they're put in there as well. So that's why I want to go with the longest possible attribution windows most of the time. Now, if you find that meta is over reporting your results and you're looking at the data within your ad account and you're comparing that to the backend data and you're thinking, hang on a minute, wait a minute, meta's saying we're generating way more purchase than I actually think meta is generating.
+
+And this most likely happens when you're advertising on Facebook and Instagram, but also using other marketing channels, such as you've got email marketing or organic content or whatever, also generating interest and generating purchases and sort of meta effectively taking credit for those. In those scenarios, you may well want to remove the view through and change that to none, which you can easily do as I've, as I've just done there. And what you don't want necessarily is a scenario where someone's been sent an email, they're on your email list, they were going to purchase anyway, and meta sort of got an ad into them on Facebook and Instagram and is therefore taking credit for it.
+
+And that can distort your data. Now I'm going to provide a bit of clarity on that because I think that concern is overplayed by most meta advertisers, but that is a scenario in which we would potentially look to remove view through. If we just consistently seeing over reporting, then we might look to take that off.
+
+We're almost certainly not going to reduce the click through attribution setting really don't like changing that to one day, unless there's like an exceptional circumstance or something on this lines, but the view through we're more likely to turn off for that reason. Now I should quickly explain a scenario in which a lot of meta advertisers find themselves and they think this is a problem to be solved. And it's not really, it's just something to be understood and managed.
+
+And that's where it looks like meta is over reporting results, but they're actually not. And what I mean by that is a lot of people will compare the data they see within their Facebook ad account to the data they're seeing within Google Analytics. Let's say tracking purchases.
+
+Now Google Analytics is going to use what's usually referred to as like a last attribution model. So the last source that that person came through before they then purchased, that's where that purchase is going to be attributed within Google Analytics. Whereas meta is going to count a purchase generated as a result of the Facebook and Instagram ads if they either click through, or if you've got this turned on view through within these time frames, even if they also interact with you on other channels or, or other ways to come through and make a purchase.
+
+And a lot of people want to turn those off and they want to do the change that I just demonstrated where they turn off view through conversions and they change that to none. And I don't think that's usually the right way to go. Let's imagine a scenario.
+
+Okay. So let's say someone's shown one of your ads on Facebook, Instagram, they engage with it, they watch it, they click through, they come to your website, but they don't purchase. They then remember the name, they check it out a couple of days later, they come through to your website organically because they remembered the brand name.
+
+They have a look around, but they're not quite ready to purchase yet. They sign up for your email newsletter, but they don't purchase. Then they're on your email list.
+
+You email them a couple of times the next few days, they then click through and they then go ahead and make a purchase. Now you can't say that the Facebook and Instagram ad wasn't really important in making that sale, but Google Analytics won't credit Facebook or Instagram with that sale. That will be from the email marketing, assuming that's set up properly.
+
+In reality, the multiple touch points is what generated that conversion. It probably needed the ad plus the fact that they found you organically plus the emails to get them over the line. And if I think about the people that become leads for our done for you services, our Facebook, Instagram advertising services, often they will have watched a video of mine on YouTube.
+
+They might be a part of my Facebook group. They might be on my email list. And it's not so much like, well, what got the lead?
+
+It's like, well, it all helped to get the lead. So that's why you're often going to have a discrepancy between what Meta reports and what Google Analytics reports, because Google Analytics is going to try and attribute that lead, that purchase to one platform. And that's just unrealistic.
+
+So most of the time, I'm going to leave those on. If you're really annoyed by the overreporting and you feel like that's a consistent issue and you're getting lots of lead sales from other places that you feel better to take credit for, then you can go ahead and turn off that view through conversion and bring that down to zero days. Now, before I explain a couple of other things about attribution assessments that are really important, I want to quickly let you know about our done for you Facebook and Instagram advertising services.
+
+So my company can create, manage and optimize your ad campaigns for you. If you are interested, there's a link in the description below. You can click on that, go ahead and book a free call with one of my team members.
+
+They'll tell you about the work we've done previously. We've probably worked with a business like yours in the past. We've worked with all different types of business at this point, and we've probably been able to get them great results and should be able to get you great results as well.
+
+So you can find out more information about that, what we charge, all that sort of stuff. So if you're interested, go ahead and book a free call and hopefully we get a chance to work together. Now, for me, the painful part about attribution settings is that we used to have 28 day attribution.
+
+We used to actually have 28 day click and 28 day view through attribution. And I wish they would come back. They were removed primarily for privacy reasons as opposed to anything performance related.
+
+People didn't like the idea of, well, hang on, you can click on a Facebook ad and then technically be tracked for a whole month. Let's reduce that down. So those changes really came into effect when the iOS 14.5 change happened and Meta made a number of changes around that.
+
+And we used to see it more then, but it still happens now where often you will assess the performance of an ad campaign. You'll go, okay, this ad campaign isn't performing as well. You will turn it off.
+
+And then if you come back and take a look at those results later on, used to be 28 days, but still can happen up to a week later. And you then reassess the results. And you think, oh, actually that campaign did better than we thought it did.
+
+And this is something I don't think a lot of Facebook advertisers think about is that you're always paying upfront right now for your ads for results that you may well see later down the line. Now, this is absolutely exaggerated with something like an omnipresent content strategy that I'm a big advocate of. But even with a sales campaign where you're running direct to offer, trying to generate purchases, you could absolutely have someone that clicks today.
+
+You've paid for, to advertise to them today, that then purchases in five days or 15 days or whenever, the results are going to come through later. And that's just something to be aware of, particularly if you've been running ads for a little while. And there are perhaps lots of people within your audience that have, you know, the three out of the four impressions they need to purchase.
+
+You've already managed to do those. Meta has done those for you. You've paid for them, but you need that fourth one just to get the purchase and just to get the results.
+
+It's often why Facebook ad campaigns perform better over time. There's lots of other reasons for that as well, but it's just something to be aware of when it comes to attribution is that you can, if you're, if you're assessing over too short a timeframe, your results can look a lot worse than they are because you've done all the paying, but you haven't had all the results yet. Just something to be, to be conscious of.
+
+I also think the logic behind shortening the attribution window setting, either the click or the view through, is something that you used to be able to do a lot more confidently when we had better, more accurate tracking pre iOS 14.5 changes. And we most likely at that point weren't under reporting. Often we would have an over reporting situation or something that's fairly accurate.
+
+Now, I think that most Facebook ad accounts are more likely to under report than they are over report. And if you're in a situation where you're getting any sort of under reporting, you absolutely do not want to be reducing the attribution setting windows. That would be a bad idea.
+
+And having a nice long attribution setting window is much more important for sales campaigns, those that are optimizing for purchases, which most should be, than it is with other campaign types, right? So even if you're generating leads, most people are going to click on an ad and become a lead pretty quickly. They're not going to take as long because it's a lower commitment.
+
+Sometimes, you know, if someone's booking a vacation property, for example, yeah, okay, they might take a bit of time because they're going to show the people they're traveling with, what do you think of this? And should we go with this one? And that sort of thing.
+
+But a lot of leads are quick, easy, click on, become a lead, et cetera, et cetera. Anything that's within app, we don't need to worry about, again, too much because people are going to click and then, like for example, in instant form and then become a lead right away. And even some of the other campaign objectives, things like engagement, traffic, they're taking the action that the campaign is optimizing for there and then.
+
+So you don't need to worry about attribution settings and things like that with those really. Don't worry about it if you're using a lot of the other campaign objectives, but if you're running a sales campaign, something that is optimizing for an action like that purchase and leads to some extent, this is really, really important. And if you have adjusted it or sometimes meta defaults it to some of the shorter options, then that really can get in the way.
+
+If you find that you can't adjust the attribution setting, it's probably because you're using a tailored campaign as opposed to a manual campaign. I'd recommend you switch over to manual campaign. That gives you more control as a meta advertiser.
+
+When it comes to Facebook ads, I'm always looking for the highest leverage opportunities. And what I mean by that is the things that give me the best possible improvements in my Facebook ad results for the least amount of work. Well, in this video here, I share five Facebook ad cheat codes that do exactly that.
+
+This video is a recording of a speech I gave at a conference recently. Go ahead and check it out.

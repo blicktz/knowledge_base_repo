@@ -34,7 +34,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-from fastapi import FastAPI, File, UploadFile, HTTPException, Depends, Header, BackgroundTasks
+from fastapi import FastAPI, File, UploadFile, HTTPException, Depends, Header, BackgroundTasks, Request
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from pydantic import BaseModel
@@ -44,9 +44,12 @@ try:
     import whisper
     import torch
     import aiofiles
+    from streaming_form_data import StreamingFormDataParser
+    from streaming_form_data.targets import FileTarget, ValueTarget
+    from streaming_form_data.validators import MaxSizeValidator
 except ImportError as e:
     logger.error(f"Required module not installed: {e}")
-    logger.error("Please install missing packages with: pip install openai-whisper torch aiofiles")
+    logger.error("Please install missing packages with: pip install openai-whisper torch aiofiles streaming-form-data")
     sys.exit(1)
 
 # Configuration
@@ -611,64 +614,127 @@ async def system_status(api_key: str = Depends(verify_api_key)):
 
 @app.post("/upload-single")
 async def upload_single_file(
-    file: UploadFile = File(...),
-    model: str = "turbo",
+    request: Request,
     api_key: str = Depends(verify_api_key)
 ):
-    """Upload a single audio file for transcription."""
-    # Validate model
-    valid_models = ["tiny", "base", "small", "medium", "large", "large-v2", "large-v3", "turbo"]
-    if model not in valid_models:
-        raise HTTPException(status_code=400, detail=f"Invalid model. Choose from: {valid_models}")
+    """Upload a single audio file using streaming for large files."""
+    logger.info("Starting streaming upload...")
     
-    # Validate file type
-    if not file.filename.lower().endswith(('.mp3', '.wav', '.m4a', '.flac', '.ogg')):
-        raise HTTPException(status_code=400, detail="Invalid file type. Supported: MP3, WAV, M4A, FLAC, OGG")
+    # Extract content type and validate
+    content_type = request.headers.get("content-type", "")
+    if not content_type.startswith("multipart/form-data"):
+        raise HTTPException(status_code=400, detail="Must use multipart/form-data")
     
-    # Create job ID
+    # Create job ID and directory
     job_id = str(uuid.uuid4())
-    
-    # Create job directory
     job_upload_dir = UPLOAD_DIR / job_id
     job_upload_dir.mkdir(parents=True, exist_ok=True)
     
-    # Save uploaded file (async)
-    file_path = job_upload_dir / file.filename
-    content = await file.read()
-    async with aiofiles.open(file_path, "wb") as f:
-        await f.write(content)
+    # Initialize parser
+    parser = StreamingFormDataParser(headers=request.headers)
     
-    # Create job record
-    job = {
-        "job_id": job_id,
-        "status": "uploaded",
-        "created_at": datetime.now().isoformat(),
-        "updated_at": datetime.now().isoformat(),
-        "files_count": 1,
-        "processed_count": 0,
-        "failed_count": 0,
-        "model": model,
-        "file_path": str(file_path),
-        "error": None,
-        "download_url": None,
-        "worker_id": None  # Track which worker processes this job
-    }
+    # Create temporary filename for upload
+    temp_filename = f"upload_{job_id}.tmp"
+    temp_file_path = job_upload_dir / temp_filename
     
-    async with jobs_db_lock:
-        jobs_db[job_id] = job
+    # Create targets and register them BEFORE parsing
+    model_target = ValueTarget()
+    file_target = FileTarget(
+        str(temp_file_path),
+        validator=MaxSizeValidator(1024 * 1024 * 1024)  # 1GB max
+    )
     
-    # File uploaded successfully - processing will be started separately
+    # Register ALL targets before parsing
+    parser.register('model', model_target)
+    parser.register('file', file_target)
     
-    return {
-        "job_id": job_id,
-        "status": "uploaded",
-        "files_count": 1,
-        "file_name": file.filename,
-        "file_size": len(content),
-        "message": "File uploaded successfully. Use /process/{job_id} to start transcription.",
-        "status_url": f"/status/{job_id}",
-        "process_url": f"/process/{job_id}"
-    }
+    logger.debug("Targets registered, starting to stream request data...")
+    
+    try:
+        # Stream and parse ALL the request data
+        async for chunk in request.stream():
+            parser.data_received(chunk)
+        
+        logger.debug("Finished parsing request data")
+        
+        # Extract model if provided
+        model = "turbo"  # default
+        if model_target.value:
+            model = model_target.value.decode('utf-8')
+            logger.debug(f"Model specified: {model}")
+        
+        # Validate model
+        valid_models = ["tiny", "base", "small", "medium", "large", "large-v2", "large-v3", "turbo"]
+        if model not in valid_models:
+            raise HTTPException(status_code=400, detail=f"Invalid model: {model}. Choose from: {valid_models}")
+        
+        # Check if file was uploaded and get actual filename
+        if not file_target.multipart_filename:
+            logger.error("No file uploaded - multipart_filename is None")
+            raise HTTPException(status_code=400, detail="No file uploaded")
+        
+        uploaded_filename = file_target.multipart_filename
+        logger.info(f"File received: {uploaded_filename}")
+        
+        # Validate file type
+        if not uploaded_filename.lower().endswith(('.mp3', '.wav', '.m4a', '.flac', '.ogg')):
+            raise HTTPException(status_code=400, detail="Invalid file type. Supported: MP3, WAV, M4A, FLAC, OGG")
+        
+        # Rename temporary file to actual filename
+        final_file_path = job_upload_dir / uploaded_filename
+        if temp_file_path.exists():
+            temp_file_path.rename(final_file_path)
+            file_size = final_file_path.stat().st_size
+            logger.info(f"File uploaded successfully: {uploaded_filename} ({file_size / (1024*1024):.1f} MB)")
+        else:
+            logger.error(f"Temporary file not found: {temp_file_path}")
+            raise HTTPException(status_code=500, detail="File not found after upload")
+        
+        # Create job record
+        job = {
+            "job_id": job_id,
+            "status": "uploaded",
+            "created_at": datetime.now().isoformat(),
+            "updated_at": datetime.now().isoformat(),
+            "files_count": 1,
+            "processed_count": 0,
+            "failed_count": 0,
+            "model": model,
+            "file_path": str(final_file_path),
+            "error": None,
+            "download_url": None,
+            "worker_id": None
+        }
+        
+        async with jobs_db_lock:
+            jobs_db[job_id] = job
+        
+        logger.info(f"Job created successfully: {job_id}")
+        
+        return {
+            "job_id": job_id,
+            "status": "uploaded",
+            "files_count": 1,
+            "file_name": uploaded_filename,
+            "file_size": file_size,
+            "message": "File uploaded successfully via streaming.",
+            "status_url": f"/status/{job_id}",
+            "process_url": f"/process/{job_id}"
+        }
+        
+    except MaxSizeValidator as e:
+        logger.error(f"File too large: {e}")
+        # Clean up on error
+        if job_upload_dir.exists():
+            shutil.rmtree(job_upload_dir, ignore_errors=True)
+        raise HTTPException(status_code=413, detail="File too large (max 1GB)")
+        
+    except Exception as e:
+        logger.error(f"Upload failed: {str(e)}")
+        # Clean up on error
+        if job_upload_dir.exists():
+            shutil.rmtree(job_upload_dir, ignore_errors=True)
+        raise HTTPException(status_code=500, detail=f"Upload failed: {str(e)}")
 
 @app.post("/upload")
 async def upload_files(

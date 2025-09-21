@@ -24,7 +24,8 @@ RUN pip install --no-cache-dir \
     fastapi \
     uvicorn[standard] \
     python-multipart \
-    aiofiles
+    aiofiles \
+    streaming-form-data
 
 # Pre-download Whisper turbo model to avoid runtime delays
 RUN python -c "import whisper; whisper.load_model('turbo')"
