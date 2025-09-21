@@ -1,0 +1,187 @@
+In this video, I'm going to show you the Facebook ad scaling strategy that I used to scale a Facebook ad campaign from $100 per day to over $1,400 per day profitably. Most advertisers don't know about this Facebook ad scaling strategy, but it's a great way to scale without wrecking your Facebook ad results. Okay, let's dive into it.
+
+Okay, so to demonstrate this, I'm in an example Facebook ad account. I'm in Ads Manager, and I've just created a quick example, in this case sales campaign, but what I'm about to demonstrate can apply to other campaign types as well. So let's assume that this campaign is doing well, and this is the one that we want to scale.
+
+Now, there are lots of different ways to scale Facebook and Instagram ad campaigns. Some of them are definitely better than others, and this one works really well at allowing you to spend more money without everything going wrong, which is what a lot of Facebook advertisers experience when they try and scale. They see that their return on ad spend falls off, their cost per purchase, cost per lead goes through the roof, and this technique I'm about to go through should avoid that, and it has done in a number of cases where we have used it.
+
+So what I want to do is select the campaign they want to scale, just click on the little tick next to it, and then go ahead and click this more, the little drop down, and underneath automated rules, I want you to select create a new rule. And what we're going to do is we're going to create a automated rule, something that happens automatically once we've set it up to scale this campaign in small but regular increments, and you'll understand more as we go through. So I'm just going to go ahead and select custom rule, and then click next.
+
+Now, once we get to this stage, there are various things that we need to fill out to create this rule. So let's start by giving it a name. I'm going to go ahead and call this 3% scaling, which to some extent explains what I'm about to do.
+
+We will be scaling in 3% increments, which I know to some of you will seem like the smallest amount. This is crazy. What's the point?
+
+It will make more sense as we go through. I'm going to call this 3% scaling. Apply the rule to.
+
+So which campaigns, ad sets, et cetera, do we want this scaling to apply to? The one campaign that we've got selected, or we could go ahead and change it to different ad sets. I would often select all active campaigns, assuming we want to scale all campaigns in an account.
+
+That's not always the case, in which case you can select various different campaigns instead. Okay, what action do we want to happen? What do we want this rule to actually do?
+
+Turn off campaigns as default. That's not what we want. We want to go ahead and select increase daily budget buy.
+
+You can also see there's an option here, there's increase lifetime budget buy. I'm a much bigger fan of daily budgets as opposed to lifetime budgets. I think that gives you more control and flexibility as an advertiser.
+
+If, for example, a campaign is performing really well and you want to scale it, which many of you will be in, and that's why you're watching this video in the first place. If you've got a lifetime budget, that's going to come to an end. It's much more difficult to just carry on from there.
+
+So daily budgets is usually what I recommend, and we can go ahead and select increase daily budget buy. Okay, so we have options here. So the default here is a percentage.
+
+You can change that to a fixed amount. Obviously, that's coming up in pounds because I'm based in the UK. This ad account is operating in GBP.
+
+But I'd rather you selected a percentage because it's dynamic then. If you enter in a fixed amount, well, when your budget is small, that fixed amount might be a reasonable size budget increase. But if it's a fixed amount and you're spending five times, 10 times as much in a few months time, and you increase by the same fixed amount, you might be increasing the budget by just a tiny, tiny amount, less than 1%, let's say.
+
+So a percentage usually is better because it's going to be dynamic and it will increase by, in this case, as we've already discussed, the 3% that we want to increase by each time. Okay. Then we've got this note from Meta that just says your rule will apply to campaigns that are active at the time the rule runs.
+
+So it won't apply to inactive campaigns. That makes sense and is good. And only campaigns with daily budgets can be managed by this rule.
+
+We already discussed daily versus lifetime budgets. Then we've got a maximum daily budget cap. And I think it's a good idea to enter in something here.
+
+Because of the way we're setting up this scaling strategy, that it's going to be automated, it's going to use automated rules. A lot of advertisers will implement something like this, and then they will use it as a bit of a set it and forget it. It's a much more passive scaling strategy.
+
+And it's just a good idea to set an upper limit just in case you don't, you forget about it and you end up spending significantly more than you anticipated. Now, we wouldn't typically do this because we're obviously, when we're managing campaigns for clients and stuff, we're in this all the time and paying very close attention. But it is something that you might want to set just for peace of mind.
+
+So you might want to come in, for example, and set a 500, in this case, pound daily budget cap. And it's easy to assume that because you're scaling in 3% increments, you'll never reach higher budget levels. That is not true.
+
+You can absolutely end up with significantly higher budget levels. And that is because of the next section that I'm going to talk about. And that is action frequency.
+
+So the default is once every 12 hours. I think that's slightly too frequent for this. So we're going to go with once daily.
+
+So basically, what's going to happen is once a day, this rule will run, and the budget will be increased by 3% if certain conditions are matched. And that's what we're going to discuss in a second. So you can see how you could start with, say, $100 a day budget, or much smaller than that.
+
+It could be a $10 a day budget. But if you run the numbers and you increase that budget by 3% and the conditions keep being met and it runs every single day, a month, two months down the line, you'll be spending a lot, lot more money. So popping in the daily budget cap is a good idea.
+
+It's also one of the advantages of this scaling strategy is that it doesn't take that long to be spending significantly more. But because you're only increasing the budget by 3% each time, Meta from a machine learning delivery process can cope with that. It's not too much of a shock to the system.
+
+You're not going to reenter the learning phase and Meta is able to handle the, what is a relatively small additional budget, and then crack on and look to get you the best possible results. Okay, so conditions. Now this is very, very important.
+
+So we've got all of the following match. So cost per result is absolutely fine. I would usually go with is smaller than, and then whatever number your cost per result needs to be smaller than for your campaigns to be deemed successful.
+
+So let's say you've got an e-commerce business, for example, and you need to generate purchases for £25 or less for them to be profitable, given what you know about your average order value, etc. Okay, so the condition here is the cost per result needs to be less than £25. Otherwise, this rule will not be run.
+
+And that's one of the things I really like about the scaling strategy is we're only going to increase the budget if we are generating good results. What's the point in increasing the budget if your ads aren't producing good results for your business? Now you can see what Meta has done is they've automatically added in another rule, which is that lifetime impressions must be over 8,000.
+
+I think this is a good idea because you don't necessarily want a scaling rule like this to kick in if your campaign is brand new and it's only got a few conversions, but they look really cheap. It could be misrepresentative data and you don't want the campaign to start spending a lot more before you know that it's working well. So I think it's absolutely fine to have that lifetime impressions in there.
+
+You can, of course, delete it out if you want. Now time range is really important. The default is maximum.
+
+I think it's really important to change that. I like to go with the last three days, so a 72-hour window. And what the time range refers to is the time over which Meta is going to consider this condition.
+
+So for example, the cost per result needs to be less than £25 in order for the budget to be scaled by 3%, but over what time period? Is it less than £25 over the entire length of the campaign or over seven days or over three days? I like a default of three days.
+
+The issue with going with the default, which is maximum over the entire length of the campaign, is that if you've had a campaign that's been running for a couple of months, the results over the last three, four, five, seven days could be terrible, but the average could still be underneath the £25 cost per purchase, in which case this campaign will continue to be scaled even though it's not performing, just because a lot of the data from when the campaign was fresher and newer and there wasn't any ad fatigue, etc., it was performing well. So you could end up with a result that you just don't want. So I think it's important to have that time frame that you're looking at be relatively close to when the scaling will occur.
+
+So I think last three days, including today, is a good idea. As a default, if you are operating in a business that has slightly longer sales cycles, like it takes you longer for leads to convert, or it's a considered purchase, or you don't have much conversion volume, then going with a longer time frame like the last seven days, maybe even the last 14 days, including today, might be better. Because of course, you could be constantly looking at the last three days of data thinking, well, my results don't look very good.
+
+Well, yeah, if the average person takes five days to make a purchase decision, then of course, it's never going to look good if you're looking at yesterday's data, the day befores, and today's, right? So you have to adjust this slightly depending on your business and depending on how long people typically take to make a decision to make a purchase. But I think three days is decent.
+
+And like I said, conversion volume needs to factor into that as well. The more conversions you get, the shorter that time range wants to be. The fewer conversions you get, the longer that time range wants to be.
+
+So there's two factors playing into it with a default of three days, let's say. Okay, schedule, when should this rule run? So you can rule run as often as possible, which as you can see there is usually every three to six minutes.
+
+I want to limit this to just once daily, as we've selected up here in the action frequency. So in the schedule, we're going to go with daily as well. So it's between midnight and 1am, typically some of the quietest times for your ad campaigns with an adjustment is going to be made.
+
+It makes sense to happen there. And it also means you can then look at your data and see day by day with the increased budget or the previous lower budget and compare those. But of course, you can go ahead and change that.
+
+You'll be notified on Facebook. You should be able to add in an email option. Meta seems to have gotten rid of that.
+
+And you can see that the subscriber, the page that's going to be notified when I set up this rule is my Ben Heath page. And that's that. So we go ahead and click create.
+
+So that's now all set up. We've set up that rule for this campaign. So this campaign will be scaled by 3% as long as it's got more than 8,000 impressions over its lifetime.
+
+And the cost per result, this is our campaign. So it'd be set up as cost per purchase would be the conversion event to be purchases. So the cost per purchase is less than £25 over the last 72 hours, the last three days in order to be met.
+
+If that is met, then this rule can be used or can have an effect once every 24 hours. So basically every day we could see 3% and another 3% and another 3%. And one of the great things about this setup is that that will only happen if your campaigns are producing the results that you want.
+
+They're only if they're profitable. So you won't keep going up by 3% if you reach a certain budget level and your results drop off a little bit and your cost per purchase needs to be under £25. But it's in this scenario gone up to £27, £28.
+
+And the rule simply won't run. You won't keep scaling because the campaigns aren't delivering what you need them to do to deliver. And all this is going to happen on autopilot, which is fantastic.
+
+Now there is a way to make this scaling strategy a lot smarter and a lot more dynamic. And I'll get to that in a second. But before we do that, we need to quickly discuss something.
+
+And that's the accuracy of the results and the data that you have within your Facebook ad account. Now for a number of years, the data, the results that we see within our Facebook ad account, it's not as accurate as we would like it to be. And that causes all sorts of problems.
+
+And if you want to be scaling your Facebook and Instagram ad campaigns, you need to be able to see accurately what those campaigns are producing for your business and also what impact that increased budget is having. Because if you increase the budget and the results drop off, that's something you're going to need to adjust. If you don't have accurate data within your Facebook ad account, you can't make accurate decisions.
+
+Now the solution to this problem is the sponsor of today's video, which is Hyros. Hyros is the best tracking and attribution software for Facebook and Instagram ads. It's a software that all the big players, including myself, use.
+
+I use it to track the results that I generate from my own ads. I also use it for all my organic content as well, which is really useful. So if someone comes through and books a call for our done-for-you services, for example, I can see exactly where they came from with a lot of accuracy.
+
+And that allows me to make decisions in my business, which is really, really helpful. And let me quickly show you how important this is. So I'm in my Hyros dashboard.
+
+I've isolated one of our meta ad campaigns and I've created a report for it so we can see the data and you can take a look at this. So this campaign spent just under £2,000, generated £15,000 in revenue. Fantastic.
+
+That's a really good return on ad spend. Hyros has got all sorts of useful information, like a split between regular revenue and recurring revenue. They give you a ROAS number of 7.7, which is nice, include refunds.
+
+But here's the really important bit, reported versus revenue. And in this column, we can see £12,000. Now what that means is that out of the £15,000 that this campaign has actually generated, Hyros has been able to report on the full £15,000, £12,000 of which Meta was not originally able to see.
+
+So if we're just looking within our Meta ad account, not using Hyros, we would have seen that £3,000 of revenue was generated from this campaign. And that is not true at all. That is a much, much lower ROAS number than the actual £15,000 of revenue that was generated.
+
+Now, why is this happening? Well, for a number of years now, Meta's ad tracking capabilities have not been as accurate as they once were, because all sorts of privacy regulations have come into effect, and it's only heading that way. It's only becoming more and more difficult to get accurate data and track our results as we need to be able to do.
+
+This is a relatively extreme case, and the reason why is because Meta has a seven-day maximum attribution window. And this is an ad campaign that's retargeting for one of our services that people usually take a lot longer than seven days to make a decision on. So if someone clicks on an ad, they often won't convert within seven days, Meta's simply not able to see that data, and that's where Hyros comes in.
+
+Not everyone is going to have quite such a discrepancy where 80% or so of revenue in this case was not reported, but all advertisers have a discrepancy. And in fact, some advertisers have the opposite. Instead of under-reporting, Meta over-reports and claims 30%, 50%, 80% more results than is actually true.
+
+The important thing is that you need accurate data, and Hyros takes care of that. So if you want to get results from your Facebook ads without actually having to touch your ads, go ahead and sign up to Hyros. There is a link in the video description.
+
+Okay, so how do we make this scaling strategy smarter like I mentioned previously? So we've got an automated rule in to scale the budget if certain conditions are met. In other words, our results are good.
+
+But how about adding in another automated rule to decrease the budget if our results aren't good and potentially not good at all? We can do that, and that's absolutely something that I would recommend you do. So where you do that, we've got the campaign selected.
+
+We go ahead and click more, create new rule, custom rule, just like before. This time we're going to call this at 3% decrease. I'm going to apply this to all campaigns just like I did the last time, not turn off campaigns.
+
+In this case, instead of increased daily budget buy, we're going to go ahead and select decrease daily budget buy. I'm going to use the same 3%. So basically we're going to decrease the daily budget by 3%.
+
+Do we want a minimum daily budget floor? So we set the upper limit for, we don't want everyone to spend more than £500 a day. Perhaps we never want to spend less than £100 a day.
+
+This is obviously going to completely vary on your business and you can go in and change these. It's absolutely fine. Action frequency, I want to be the same once daily.
+
+In this case, if cost per result is greater than, that's what we want to leave. I wouldn't have this as £25. Remember £25 was sort of like anything under £25 we're happy with.
+
+I would leave a bit of a buffer because you don't want the budget to either be decreasing, increasing every day. You want that there might be a middle range. We're just happy for the budget to stay where it is.
+
+So if we're happy for our budget to be scaled, if our cost per purchase is lower than £25, perhaps we could say, but I really want you to decrease the budget if it's higher than £30. And if it's in the middle, then it just stays the same. So we can go ahead and get that added in.
+
+Lifetime impressions, condition is added in automatically, just the same. That's absolutely fine. Time range, I'm going to use the same time range.
+
+So three days, including today, or obviously you could make that longer, shorter. The same considerations apply. Basically match that to whatever you did with the other automated rule going the other way.
+
+We're going to set the schedule to do this daily. Notifications are exactly the same. And then we can go ahead and click create.
+
+Now what's great about the way we set this up now is that this campaign's budget will be very dynamic. It will increase or decrease according to performance, which is what most advertisers want at the end of the day. They're like, look, I want to spend more if it's really working for me.
+
+I want to spend less if it's not working for me. And because budget changes do impact results. So advertisers typically see better return on ad spends, the lower amounts they spend, the more and more they spend, their ROAS is likely to get worse, their cost per conversion is likely to increase.
+
+That doesn't mean you shouldn't scale, by the way, it's just something to be aware of that if you spend 10 times as much, your cost per purchase is probably going to increase. Why? Because you're not just advertising to the hyper-responsive in your audience, you're advertising to many more people.
+
+And there are still plenty of customers to be had. But the people that aren't the hyper-responsive that you're only advertising to with a small budget, they're not quite as likely to convert when you put an ad in front of them. So it's just, it's what happens, what happens with all advertising channels.
+
+It's just something that you need to be aware of. But it does mean that if you scale up to a level where you're going, ah, we're spending too much, this campaign isn't profitable, we need to bring this budget back down, these two automated rules are going to handle this for you, which is absolutely fantastic. And like I mentioned earlier, 3% doesn't sound like a large amount to be scaling.
+
+You're thinking, the results are good, I really want to scale. But actually, if you mess around with a compound calculator, and you take a budget, and you compound it by 3% daily, assuming campaigns are doing really well, and you keep scaling, scaling, scaling, a few months down the line, you're spending way, way more than you were originally. So you really do reach higher budget levels.
+
+Now, there are, of course, other ways that you can scale Facebook and Instagram ad campaigns. And I'll quickly touch on some of the other strategies, because I know this video is going to get tons of comments, and people saying, what about this, and what about this, if I don't? So the first would be to scale your campaigns less frequently than potentially daily, but do so in larger increments.
+
+You could scale by, say, 20% once a week, something along those lines. And that is a strategy that we will still use. I don't hate that strategy by any means.
+
+It does require more attention and you to be more present. The strategy we've been through in this video, where you're dynamically increasing the budget or decreasing the budget 3% according to performance, is something you can forget about to some extent and move on and know that's going to be taken care of automatically. If you want to increase your budget by, say, 20% increments, less frequently, once a week, for example, then you need to be in your ad account, because what will often happen is with a 20% increase, because that's a larger percentage increase, your return on ad spend will decrease.
+
+Your cost per purchase, your cost per lead will increase. And you then need to dive into your ad account, create new ads, produce new creative, basically create a better ad campaign to bring your return on ad spend back to where you need it to be, to bring your cost per conversion back to where you need it to be, to then be able to go ahead and scale. Effectively, by scaling in larger increments, you are more likely to break things.
+
+Therefore, you need to be on hand to go ahead and fix things. If you do want to scale in, say, 20% increments, absolutely make sure that you're not doing that daily. That is too fast for most ad accounts and you will almost certainly break your campaigns and your return on ad spend is going to be rubbish and you'll wish you'd never done it in the first place.
+
+So if you're going to scale frequently, smaller increments, if you're going to scale less frequently, you can use larger increments, but just be aware that that is the potential downside. The upside to scaling in larger increments is that you can, of course, scale faster if everything's going well and you're on top of things and you're ready to improve things as and when they are needed and replace ads, ad fatigue issues and all that sort of stuff. The other method that people often use, horizontal scaling or the basic version of horizontal scaling, I should say, where someone will duplicate a campaign or an ad set and they'll run identical copies alongside each other.
+
+They'll think that campaign's doing really well. I'm spending $100 a day on it. So I'm just going to duplicate it and run an exactly the same campaign with another $100 a day.
+
+That is not something I would recommend. You're going to end up with all sorts of issues if you do that. Meta effectively gets confused.
+
+Which campaign is supposed to be entered into the auction? There are the same ad, same ad sets, same settings. How do they optimize properly?
+
+They compete with each other. They confuse things. And that's something that you definitely want to avoid.
+
+It's fine to have multiple campaigns, you're advertising different things, or you've got different campaigns to test different ad creative. But if it's just a carbon copy, as a lot of advertisers do, and you just create all these duplicates, you're going to run into problems. You'd be much better off increasing the budget within the one existing campaign than taking that approach.
+
+And of course, the absolute easiest and best way to scale your Facebook and Instagram ads is to have my company do it for you. We create, manage, optimize, and scale Facebook and Instagram ad campaigns for our clients. We'll almost certainly get you much better results than if you continue to do it yourself, and we'll take all that workload off your hands.
+
+So if you go through this stuff thinking scaling seems really complicated, I don't want to break it, I just want really good results, we can do that for you. So if you're interested, there is a link in the video description down below. You can click on that, come through to a page on our website where you can book in a free, no obligation call with one of my team members to find out more about our services and how we might be able to help.
+
+Hopefully, we get a chance to work together.

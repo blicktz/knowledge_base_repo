@@ -1,0 +1,155 @@
+Yo, what's going on guys? Welcome back to the channel. My name is Nick Theriot and today I have a new video where we're going to showcase the seven things I've learned after spending $4,000 on TikTok.
+
+Yes, TikTok. I've started to venture out and test other paid advertising mediums to further expand what we offer at my agency and to further expand the result potential for my clients. And I wanted to showcase you guys exactly what I've learned and a few entry level things to help you if you're just starting out with TikTok ads and how you can get started today.
+
+So before we get started, make sure you hit that like button and hit that subscribe button. I'm posting new videos every other day to help financially empower the Shopify business owner and help them scale to the moon in 2021. Let's get started.
+
+Diving straight into the TikTok ads manager, it's very similar to Facebook's ads manager. Pretty much all of them, TikTok, LinkedIn, even Twitter, they're all pretty similar to Facebook's ads manager. The only one different is Google AdWords and that's just a whole nother video for another day.
+
+So just jumping right into it, we'll go ahead and just create a campaign and show you guys a few things. So they do have a few limited objectives, which you can optimize for. We're still doing conversions, which is your standard like purchase at the cart, view content, et cetera.
+
+But they do have a few other ones like reach, traffic and video views. So we'll call our campaign, just call it test and you can do kind of like a budget for it. If you want to spend like a lifetime budget, similar to how Facebook does it.
+
+And then you can do an A-B testing strategy. So hit continue. And just like Facebook, you have your ad group, which is your ad set.
+
+And you can just slowly start diving right into it. Now, just like Facebook, your ad group is your ad set. So we'll go ahead and just name this test.
+
+And with the promotion type, we want to select website and just like Facebook, select your pixel. Now there is a app for Shopify that hooks up to your TikTok ads manager to where you can sync the pixel and everything like that. Super simple, very similar to the Facebook app with like server side integration, all that stuff.
+
+So we'll go ahead and select our pixel. And for the optimization event, TikTok is a little different. They don't have a purchase one.
+
+They have a complete payment. And at first I thought this was similar to like add payment info. So I cross referenced all my orders on Shopify with the orders on TikTok, which are considered again, complete payments.
+
+And I made sure they lined up exactly and they do. So it is complete payment is the purchase event on TikTok. Now, again, all the other ones are pretty similar.
+
+I'm not sure why they did that one as complete payment and not like purchase or complete order or new order, something like that. That's very interesting to keep everything else the same. And yeah, so you select your events.
+
+Now I have gotten some advice from a few people in groups I'm in and just trying to learn more about TikTok and something that's worked really well for people is testing multiple different events. So at Facebook, you just launch new campaign. Even if you had no dad at all, you would launch a purchase event and it would still outperform everything else with TikTok.
+
+They're recommending to test multiple events and going broad as you can for targeting. So you would do a complete payment ad set. You'll do a, as a cart ad set, and you do initiate checkout ad set along the side.
+
+And I do have some results to show you guys exactly how that worked out for me, at least. So we're going to choose optimization of complete payment for this specific video. And if we scroll down and we can see right here is placements.
+
+Now TikTok doesn't have like newsfeed, stuff like that. So it's just TikTok. That's it.
+
+Our newsfeed app series, which is just like different particular apps. I just turn all that off and do specifically just TikTok to have my videos on it. Now you can do user comment user download to where like people could download your video, kind of like redo, you know, things with your video and stuff like that, or comments.
+
+I'm personally okay with that, but you might work with a client or you might have a brand that you're not okay with that. You can turn it off. We won't, we don't really know the effect on performance it has, but that's definitely something you can look at that.
+
+Now, automated creative optimization. From what I heard, this is exactly like dynamic creatives on Facebook side, but apparently it works 10 times better. And that's just through again, looking through some of the groups I'm in that's done really well with TikTok ads, getting advice from others, dynamic creative optimization or automated creative optimization, exactly the same thing as dynamic creative ads, except they do a lot better of a job and they'll actually turn off things that don't work.
+
+Whereas Facebook would just leave things on that's not working. Now audiences. So this is against where you do custom audiences.
+
+And one downside about this is it takes a very long time to get some of these custom audiences loaded. You have to have like 30 days. It's, it's very weird.
+
+And like Facebook's a rolling block of like 30 days. And like for your first few audiences, you upload, you have to like wait 30 days before, you know, some of these become active. So I've created a few different custom audiences.
+
+And the only ones I've actually pulled through where the page view 30 days and you have to like give it some more time before some of the other custom audiences come through. It's, it's very weird to custom audience thing. It's very weird where you have to, yeah, like wait a certain period of time before you get access to all of the custom audiences.
+
+Once you create an account set the pixel. But I'll show you a few other ones that work really well. We just don't have set up right now.
+
+So you can do a look like audience, just like Facebook, you can do custom audience, just like Facebook and all that. We're going to just leave this blank, but I will exclude page view in the last 30 days. So that way we don't have people re-clicking on our ad.
+
+That's already saw it before. Now, same thing with demographics, you know, choose where you want to target gender, male, female. I mean, this is all similar things to Facebook in terms of the way you can target.
+
+Now, interests are slightly different because there's actually a little less granular than Facebook and more broader. And that's something that TikTok seems to be pushing is very broad audiences. And there is a very good mix of stuff that you can click on.
+
+So it's still pretty like segmented, but it's still fairly broad. You know, you can't really just go search like some particular audiences, you know, like Dale, you just have to go and click appliances, apps, you know, stuff like that. Now, further down, you can also do behavior, which works really well.
+
+So behavior is just like say engaged buyers on Facebook, where it's categorizes people based off some of the recent behaviors they've taken on TikTok or just in general. So we can specifically select like different things like video related actions, but you also to have to select a category. So let's say if we want to do fashion and we can do, I don't know, beauty and care, let's just do hair.
+
+So if they're in the hair category and in the last seven days or 15 days, they've taken a specific action such as watch to end, liked, commented, and maybe even shared, or maybe just, you know, like the video. So in the last say seven days, someone in the fashion category, specifically beauty and hair has liked a video. So it's pretty cool with the behaviors and stuff, how you can like do it by certain actions like that.
+
+And then also too, by just selecting some of the categories, that's cool. It's definitely something worth to test out and see which works best for you. Now you can also go ahead and do devices, operating system, OS version, you know, connection type carriers, and you can also do device price range, how expensive a price is.
+
+Now, one thing about TikTok you're about to see in a second. So let me do $50 daily budget. You can do day parting if you want to, where you can part by certain days.
+
+So like say, for example, if you wanted to run ads are five to 9 PM, and then from eight to 8 AM to 11 AM, you can select certain things like that. And also day parting of like the time or like the days you want to run. Now, one issue TikTok is it's all standard bidding.
+
+So if you don't know what standard bidding is or manual bidding, you're going to burn some money really, really, really quick. And I did that last night. And I'm going to show you that in a second too, as well, of some results.
+
+And you basically have to bid for your conversions. So we know for us, the standard cost per acquisition on Facebook, it's around like $25 for this particular product. So they'll give you a bid too, if they recommend it, but we can just do our own bid, $25.
+
+What I recommend for bids, because you're basically bidding, it's not an automated bid. So automated bidding is basically where the system automatically bids and competitions for you or auctions for you to get you the placement. Whereas with TikTok, you have to give the bid you want to enter auctions with.
+
+So what you want to do is you want to start off low, very low, maybe start off at $1, $2, check it every few hours. If it's not spending, raise that up and slowly raise that up by maybe $1 or $2, depending on how slow. And then all of a sudden you're going to start getting some spin.
+
+If you go to high, which we did, I put some crazy bids in like $115, $120, $130. TikTok literally spent a $250 ad budget in five minutes. So you have to be careful with the bidding.
+
+You have to take your time. You have to start off low if you're on a very sensitive budget and push up slowly, or you could burn some money very quickly. So that's something you need to be cautious about.
+
+And then they have the standard delivery type for one to accelerate it, which will spend a little bit quicker. So we're going to click on continue. Now this is the ad creation process.
+
+Inside of the ad creation process, it's very similar to Facebook. So add names and do test again. And let's scroll through.
+
+You can upload your content. So I'm going to just do it from library. We have a specific video, confirm.
+
+And then what we do is we do a display name. So unlike, you know, Facebook, TikTok has no pages attached to an ad account. So you don't need a page to advertise on TikTok.
+
+You go ahead and create the page itself or the name for it every time. So, you know, let's just do Nectario text. This is an awesome call to action.
+
+And again, we still do recommend shop now. And then URL, you know, just whatever you want to put, whatever your thing is. And then profile image.
+
+Again, like said, you have no page attached. You do have to upload a profile image every single time, which does get kind of tedious and does get kind of aggravating. So not the best thing ever.
+
+Now tracking, you have the same thing. Tixel, your TikTok pixel. Yeah.
+
+So that's it. And then you hit submit and you basically create your ad. Let me see if I can submit it without a profile image.
+
+Okay, cool. Okay. Now a few tips real quick about TikTok is when you're doing this, number one is you want to make sure your ad creatives are TikTok friendly.
+
+So make sure you're creating content that's relevant to the platform itself. Something like a Facebook video or Instagram video may not work on TikTok. We find something that moves quickly within the first second to two second that really graphs the attention of the consumer.
+
+Works really well. And also to maybe mimicking certain trends on TikTok currently. That works as well.
+
+You definitely have to film it in the like the nine by 16 format, not a 16 by Y. So it's a few key concepts. And also you want to keep it around 10 to 15 seconds long.
+
+So it's a little bit shorter. So there's a few different things you have to do with TikTok slightly different, but that's all part of the game is part of adapting to what you're giving, adapting to the platform, adapting to the content consumers are usually seeing, which makes your ads more effective. Use some words, use some captions on the images, the videos and stuff, which really catches people's attention, helps tell the story, helps tell what you're trying to sell.
+
+Use that speed, grab that attention, use trends and stuff. That's going to help you out a little bit better with going ahead and, you know, having some leverage on TikTok. But now let's go ahead and actually dive into some results that I've already achieved with TikTok.
+
+My first $4,000 spent on TikTok and exactly what we saw, you know, what kind of results did we see? Because now that you know how we went through the process of setting up, here's exactly what we saw after we spent some of our early money. So we go back to campaign right here.
+
+And I did have one particular campaign set up. So let's do, let me make sure to sell on lifetime. And then I did customize my columns, same exact way as Facebook, you hit custom columns and you can go through and select everything you want.
+
+Again, you want to do that complete payment because TikTok is a little bit different. And you can see right here, we spent $3,900 made back up $6,700. So not quite a two extra turn on ads been just a little shy of that.
+
+And again, and this is more of a, just a test. I wasn't trying to get crazy results or anything. I was just trying to really start to spend a little bit and see what the platform likes and what can we do with it?
+
+So if we go right here to scaling, and this is kind of like my main campaign I've been running with, I do have a few different particular ad sets that I used. And then actually, let me go back one more. Let's go to audience testing first.
+
+So this is my main testing platform I use starting out. As you can see right here, I did have a particular ad set where we had a thousand dollar a day budget, a $27 bid where we're getting, or we spent $1,800 because we didn't spend that full thousand dollars a day because my bid was too low. And a complete payment, we had 67 purchases for a cost of $27.49 with a $4,900 return.
+
+So we did, you know, just sub around a 2.5, extra turn on ads, man. I do see right here where the row ass is calculated. They just round the whole numbers.
+
+They don't do like 2.5, 2.9. It's literally like one, two, three, four. They don't do the middles.
+
+They always round them down. So it's something that really kind of frustrates me and don't really care for something I don't really like. But anyway, we reached 473,878 people with a CPM of $3.29 USD.
+
+That's crazy because right now on Facebook, this particular campaign was, you know, somewhere around seven to $8 CPM for this particular campaign structure. Now our clicks, we've got 3,400 clicks, a CPC of 53 cents USD, which is good. That's something I like to shoot for anything below a dollar, pretty much on all platforms.
+
+Click through rate was low up on a 0.62 and I could have done a better job at adding in some more engaging creatives, which would have been a big difference for this count. And again, we're seeing some pretty mixed add to cart costs. I did have set up these three assets right here, which pretty much blew some money very quickly because I tried some higher bids and it didn't really work out too well for me.
+
+If we go back and test the scaling campaign right here, I did test some of these newer options, which we're told is to test for different optimizations. So we did a CP, which is complete payments optimized for add to cart. And this one isn't another optimized for cart, but it meant for to be a landing page view.
+
+I just screwed up with the duplication process. So we did do a few different ones. My bids were really high.
+
+I left them at the same for complete payment. So that way we're bidding very, very high for add to cart. So we're pretty much butchering anyone in the competition, but we were blowing through budget very quickly, which was causing for some issues.
+
+So yeah, this is kind of my results for TikTok early starting. I definitely could have been a little bit more better in a way of how it went by this in terms of better creatives. I could have gone and tested some more targeting and stuff, but again, this was just a background project for me, but I will be taking this more seriously now.
+
+We also did set up a retargeting campaign, which we did get one purchase on with three extra turn on ad spend. And we were just retargeting everyone who's viewed the website. Pretty high frequency, pretty high, you know, pretty low CPM relative to like Facebook and stuff, but pretty high for TikTok.
+
+If you guys, you can see it reached about a thousand people. So we're definitely reaching people. We just really weren't getting the results we were expecting.
+
+So if only one purchase and reached, you know, a thousand people that has already made it to our website. So retargeting is questionable, but I definitely recommend getting on TikTok, start testing it out. If you're a Shopify owner, you know, you need to be able to kind of pivot.
+
+Don't rely completely on Facebook because Facebook's an ever changing platform. And one day we might wake up and Facebook ads might be completely gone. I don't want to put that fear in you, but we do need to be realistic.
+
+iOS 14 is coming out. There's a lot of new things that are rolling out and you, you know, you just can't be risking it all by putting it in one platform and one strategy you need to expand. And that's why I'm creating this channel and why I'm creating these videos to help you out with that process.
+
+So if you're an e-com business owner spending over a thousand dollars a day on ad spend right now, and you would love a free consultation with me, we can dive in your ad account. We can review your results and stuff and figure out what's the best route for you to go to continue to scale. We've scaled multiple accounts to over six figures per month.
+
+And we'd love to hop on a call with you and not help you navigate to meet your goals. Click the link below to book that call. And lastly, if you're new to the channel, make sure you hit that subscribe button.
+
+And if you enjoyed this video, hit that like button. My name is Nick Terrio, and I hope you enjoyed this video and I'll talk to you guys later. Peace.

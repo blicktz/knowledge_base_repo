@@ -1,0 +1,77 @@
+Yo, what's going on guys? Welcome back to the channel. My name is Sinkterio and I have an exciting new video for you guys.
+
+Today, we're going to discuss dynamic creative testing and how it's pretty much dead in 2021 thanks to iOS 14.5. And today I'm going to talk about exactly how we get around it and how you can still continue to use kind of a creative testing model that I'm going to show you in this video. Before we get started, make sure you hit that like button and hit that subscribe button for new videos every Monday, Wednesday, and Friday.
+
+Let's get started guys. So thank you to iOS 14.5. Dynamic creative testing has pretty much gone out the window.
+
+Thank you because we cannot see the breakdown window anymore in terms of what particular creative copy or headline was working and performing. And I used to have this strategy where I could literally do a dynamic creative testing campaign like 10 ad sets, five pieces of copy, five headlines, five images. I'll just throw it all at the Facebook and Facebook would just work it out and, you know, literally put together the best performing variables for me.
+
+But now none of that is possible. And I want to share with you guys my exact creative testing structure and how I perform it. So that way you can continue to test creative copy headlines and stuff inside of ads manager and understand and make sure you're doing it in the most efficient way.
+
+So we like to do is start off with one campaign, create a campaign conversions, optimized for purchase. And what we want to do is we want to do an ABO campaign. So an ad set budget optimization campaign.
+
+So starting off with that. Now, the first ad set you're going to make is literally just call it testing batch number one. Call it that.
+
+And set the daily budget to two extra target CPA. So if you're say your AOV is 45 bucks, your average order value and your break even at like 1.39. So that way you can have a really good, you know, you understand where your profit and stuff.
+
+But let's say you're going for a 3X ROAS. You have AOV of 45 bucks. Our target CPA needs to be about $15.
+
+We require our customer at $15. They purchase a $45 AOV on average. We're going to get a, you know, 3X ROAS.
+
+So our target CPA is $15. So we want to set our daily budget on that first ad set at 15 to 30 bucks. So one to two extra cost per acquisition.
+
+I personally prefer 30 bucks, a 2X cost per purchase average, but I also to, or 2X your average cost per purchase or target CPA, but some people can't afford that. So let's screw $15. So 15 to 30 bucks.
+
+And it also depends on how many you're testing. Because if we test 10 new creatives at once, 10 times 15 is 150 bucks a day on creative testing. 10 times 30 is $300 a day on creative testing.
+
+So you have to understand how that plays a part as you start to test more creative. So what we're doing in that ad set for targeting options is we want to load in your best performing interests inside the account. So if you look at the last 30 days and you have three or four interests that are working super well, you want to put them in that ad set and you want to make sure you turn on the gender that you like to target.
+
+That's working the best, the age, the proper interests. Make sure you're excluding purchase 30, Facebook engagement, 30, IG engagement, 30, and website visitors, 30. So all your, all your warm audiences.
+
+So you got a cold audience targeting your best interest stacked in one ad set. And then what you want to do next is you want to go inside and create one ad. And this one ad should be testing one variable.
+
+That's completely whatever you want to test. So let's say, for example, you have your best performing ad right now has ad copy headline and a blue image. Well, you want to see if a red image does better than a blue image.
+
+And again, this could be anything right here that you're testing just, but we're going to test creative first. So what you want to do is create a new ad, same copy, same headline, but a different image. So you have ad one that's performing super well.
+
+We're going to create a variant of it in our creative testing batch, our creative testing ad set. And we're literally just going to change one thing because if you want to run a test, you understand you need to isolate variables one by one. If you look at variable testing online or, you know, scientific experiments and stuff, it's all about isolating one variable when you're testing something.
+
+So for me to test a whole new ad, new copy, new headline, and new image and say, this one performs better than this one. There's a lot of different factors as we changed. So one variable, one ad, and then one ad set.
+
+So creative testing campaign, creative testing batch number one, or let's just call it batch number one. And then one ad that literally the only difference is, is the image compared to our best one. Now, what we're going to do is we're going to duplicate that ad set and we're going to call it still batch one, but best performing lookalikes.
+
+And inside here, we want to make sure that we, instead of interests in that ad set, we want the best performing lookalikes in the ad account. So look at the ad account. What's the best performing lookalikes?
+
+Put them in there. So batch one has one ad set of best performing interest, one ad set of best performing lookalikes, but they both share the same ad. They both have the same ad in it.
+
+So now what we're doing is we're giving Facebook algorithm the best possible chance to test these new creative. And we're using best headline, best, you know, ad copy that's working the best right now, but all we're changing is creative. And this one ad, we're giving it the best possible chance, but it'll interest and lookalikes to it.
+
+Now what we're going to do, let's say we want to test an ad copy variation. We want to just duplicate those ad sets, call it batch number two, and then we're going to change just the ad copy. So we're going to put the same image as our best selling or our best performing ad.
+
+We're going to use the same image or video, whatever we're using our best performing ad and putting it in that best performing, um, and inside that new ad set, new ad sets essentially. But all we're going to change is the ad copy again, isolating variables. We're using best performing audience, best performing headline, best performing ad copy.
+
+All we're doing is changing creative or best performing ads, um, audiences, best performing headline, best performing creative changing just ad copy. So we're isolating variables and we're running anywhere from one to five creative batches at once. Again, a batch consists of best performing lookalikes and best performing interests.
+
+And all we're testing is one variable. So you have four variables, audience, creative headline, ad copy, and for our creative testing campaign audiences are going to be isolated because we're using, because we'll be consistently using the best performing lookalikes and consistently using the best performing interests. So now it leads to just three variables and we have to make sure that we keep, you know, headline and creative the same for testing ad copy.
+
+And if we're testing creative, we need to make sure we keep an ad copy headline the same and just change to creative. And same thing for headline when you make sure we keep it creative and copy the same, just testing headline. And again, we create, we're testing up to five creative batches once.
+
+Now this is the best way, in my opinion. Um, I think this outperforms even dynamic creative and what we do is we'll let this run for three days at a minimum. So three days for the Facebook algorithm to optimize, do not touch it unless it's horrible on the soft stats, soft stats, your CTR and CPC is through the roof.
+
+So very, very low CTR and a very, very high CPC, then obviously this creative or headline or copy is just not working. But if you're getting some decent, um, soft stats and some decent, you know, like hard stats, your landing page views, add to carts and purchases, there's, let it run for the full three days before you decide to turn it on or off. And what we're going to do after those three days, we're going to turn off the lowest performers and we're going to leave the best performers on, just let them run.
+
+And you can start increasing that daily budget by 20% once every three days. So just to kind of crease it up a little bit, creep it up a little bit. And then we're going to do, so we're going to copy that creative and put it in our best performing CBO campaign.
+
+So we'll have one CBO campaign with two or three ad sets with our best performing creatives in that campaign, uh, in that ad account inside that one campaign. And we're just having a big budget at CBO and we're just constantly tossing in new creatives. That's worked really well in our creative testing campaign.
+
+Simple, like super simple. So this is just how we're doing creative testing camp in 2021. I'll have new videos on this more soon, but I really dive deep into this in my course.
+
+I will be releasing soon called elegant e-com. We're looking at a release date sometime early July. So really excited to share with you this, these strategies and stuff of how we grow in accounts to multiple six and seven figures using these strategies.
+
+If you are a Shopify business owner and your brand is doing anywhere from 20 K to 50 K a month, and you feel like you're stuck. You feel like you just, you know, either a, you don't have the time to run ads anymore, or B you just, you're trying everything right now. Ruas is very low and you just feel like you're losing profitability with your business and you need some help.
+
+Well, book a call below when we help and tailor, we help you create an actionable plan you can use for your business and you can either take it and run with it, or you can actually work with us if you want optionally, hire us, and we'll actually implement this plan for you. So make sure you click the link below to book a call. Um, we've helped multiple business go six and seven figures.
+
+Thanks to our help. So really excited to work with you and help you out with that. Now, if you enjoyed this video, make sure you hit the like button and if you're new to channel, make sure you hit that subscribe button for new videos every Monday, Wednesday, and Friday.
+
+Thank you guys so much for watching this video. My name is Nick Terrier and I'll talk to you guys later. Peace.

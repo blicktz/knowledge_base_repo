@@ -1,0 +1,199 @@
+Did you know there is a completely different way to run Facebook ad campaigns? What? What?
+
+What? Meta has just released a new reservation feature, and in this video I'm going to show you exactly how it works and explain whether you should or shouldn't use it. So to demonstrate this new feature and the new way of running Facebook ads that comes along with this feature, I'm in an example Facebook ad account, I'm in Ads Manager, and I'm going to go ahead and click on the green plus create button.
+
+Now one setting that people nearly always skip past, they don't think to even check it, is before you even get to the campaign objective section, it's this buying type. Now the default is set to auction, but if you click on this little drop down, you will now see an option beneath it called reservation. Now this replaced what used to be called reach and frequency, and to quickly explain how this works, so auction is the default, and that means that the price that you pay for your Facebook and Instagram ads to be put in front of people is set by an auction.
+
+It's determined by how many other advertisers want to reach those same people. It's why your CPMs, your cost per thousand impressions, a good sort of measuring stick for how expensive Facebook and Instagram ads are, why that metric CPM will spike, it will go really high around Black Friday, because there are more advertisers wanting to spend more money. And that's what happens within an auction.
+
+If there's less advertisers, you pay less. If there's more advertisers, you pay more. Reservation, the second option here, operates quite differently.
+
+It allows you to reserve a price, so you're not just at the whim of the auction and how it changes and all that sort of stuff. You can reserve a price, usually a much, much lower price. The advantages there to Facebook advertisers are pretty obvious.
+
+And let's walk through it and go through the steps, and I'll talk a bit more later on about whether you should use it, shouldn't use it, and what scenarios and all that sort of stuff. So first thing, if we go ahead and select reservation that you'll see is that it massively changes the campaign objective options. We can't use sales, we can't use leads, we can't use things like that.
+
+We're restricted to awareness engagement here, and traffic is grayed out. But I'm going to go ahead and select awareness as we go through. Now, those who've been following my content for a while would know that I'm a big fan of sales campaigns and lead campaigns, and it's a shame that you can't use those campaign objective options with this buying type.
+
+But we do use awareness from time to time, so it's not that we would never use this because of those campaign objective restrictions. And I'll explain more about that later on, as I've already said. But let's move on and let's go through the setup and how this all works, right?
+
+So obviously, the campaign level is going to look very, very similar to a regular campaign. Nothing really to worry about here. Special ad category, select it if it applies, just like with an auction campaign.
+
+But what I want to do now is jump over to the ad set level, where things start to get significantly different from what we would see with an auction campaign, okay? So obviously, we've got page and Instagram account. Make sure you've got the right ones selected.
+
+If you've got multiple with your ad account, we've got schedule, just as you would see elsewhere. Then we get into this location section. Now, it looks very similar, this location section, to an audience campaign.
+
+If we click into edit audience, we can start to play around with the various features. And in the location targeting section, you can edit things and adjust things just as you can with an auction campaign. So you can narrow down your age criteria.
+
+You could narrow down your gender criteria, or you could select more specific locations within a country, or select multiple countries, depending on where your business delivers its product services and things like that, okay? Now, with the reservation buying type, typically, you want to be using this for broader audiences. It's usually used for more of a mass market approach, as opposed to something really specific.
+
+But if your business is really specific, and you want to give this a go, by all means, test it out. I'm a big fan of testing whenever it comes to anything meta-related, particularly new features, like the reservation buying type that people may not have used before. Definitely give it a go and see how it performs.
+
+And if you do test this with a more specific targeting set, and it works really well, let me know. I'd be really curious to hear about that. What I'm going to do for the demonstration purposes of this video is just leave it at the default, United Kingdom, everyone, assuming we're going for a fairly broad targeting option.
+
+Of course, we can include detailed targeting options. We can include custom audiences and lookalike audience. We can do all the stuff that we would usually do.
+
+But that's not the really interesting part about reservation buying types, because that's pretty similar to the other stuff. Then we get into ad formats. Now, this is interesting, and this is not something you'd be used to seeing.
+
+The default selected here is image or carousel, but we can add the other types of ad format that we want to use, depending on what creative assets you have. So particularly when you're just getting started with this, if you're having a play, don't overthink this, just select the ones that apply, right? If you're just going to use images, great.
+
+Just go ahead and select this option. If you want to add videos in as well, go ahead and add those in, just depend on what creative assets that you have to play with. Then we get down to the placement section.
+
+Now, this part is really, really interesting. For the first, and I think only place within Meta nowadays that you will see manual placements as the default selection, not advantage plus placements. Meta is really pushing most advertisers to go with advantage plus placements.
+
+And if you've seen my previous videos on the topic, I like doing that if you are using a conversion-based objective, things like sales, leads, et cetera. But of course, because we're using awareness or engagement in this circumstance, because those are the objectives that we're left with once we change our buying type, you do want to be more specific with your placement options. And it almost looks like Meta is either listening to me or they've worked this out themselves.
+
+I'm sure it's the latter. And they've default selected manual placements. I would go a little bit further than what they've done here and deselect the audience network.
+
+Audience network is typically lower quality impressions. You're not going to get the follow-through on actions if people click on your ads, as you will with, say, the feed, stories, main things on Facebook and Instagram. And that's really important when you aren't actually optimizing for a purchase or a lead.
+
+And Meta can make sure that your ads are only put in the places where those things are most likely. Here, we're optimizing for things like awareness, engagement. So there might be places where you can get a lot of awareness.
+
+You can just get your ads in front of a lot of people like the audience network relatively inexpensively. But is that going to be the best quality impression? Is that going to mean a lot of your business?
+
+I would suggest it probably isn't. Therefore, we're going to deselect the audience network. If you really want to, you can come in and get more specific.
+
+If you're like, look, I only want to display my stuff on the Instagram feeds or I only want to display my stuff across stories on both platforms. And you can obviously come in and deselect. I think for most people, going with the setup that I've got here of Facebook and Instagram and then the ones that are left available, I think that's pretty good.
+
+Then as we continue to scroll down and get past the placement sections and there's obviously some extra information and criteria that they're giving you in here, which devices you want to operate on, the regular stuff, we get into this brand safety and suitability. Now, there are other places within Ads Manager where you might see this pop up, but most of the time you won't and most advertisers won't be familiar with this. So it's worth quickly explaining.
+
+Now, this only applies to certain placement options. So we've got three listed here. You can see it only applies to Facebook Instagram videos, ads on Facebook Reels and ads on Instagram Reels.
+
+And what we're basically able to do here is select where we're happy for our ads to be shown. So the default option here is moderate inventory, which has exclude moderately sensitive content. We could go with expanded, show ads on all content that adheres to our content monetization policies.
+
+So you get the most reach or we could be much more limited. And this is really, what do you want your ads to be shown alongside? Are you happy for your ads to be shown alongside basically anything?
+
+And you're not concerned that it might make your brand look bad if your ads are shown alongside content that perhaps doesn't fit your company values or things like that. You could be much more limited if you want, if that can. Or maybe you're just happy for it to be open.
+
+You can go with expanded or you can just go with the default, which most people do, moderate inventory. So you just have a little think about that. It's okay, what are my ads gonna be displayed alongside?
+
+How does that impact my brand? How does it impact the likelihood of people taking actions? Obviously, your lowest costs are gonna come from expanded inventory.
+
+Moderate's gonna be middle and you're gonna end up paying more for limited inventory because you're limiting options. But that's just something to be aware of and something I wanted to highlight in case you're not familiar with this. And then of course, you can get more specific with things like block lists of no, I don't want my ads to show up alongside anything like this.
+
+And there's all sorts of options. I will make a separate video on that, by the way, because I think people would be quite interested in that. You've also got content type exclusions.
+
+So we could exclude all live videos, for example. The other options are grayed out. Not something that most advertisers need to worry about.
+
+I said, I'll create a separate video on block list content type exclusions because that's something that's not really that pertinent to this video, but it's something some advertisers will be interested in. Then we get down to optimization and delivery. And of course, we've got performance goal.
+
+So if we go ahead and select the dropdown here. So we've used the awareness objective and the objective that you use determines what performance goal options you have. So we've got maximize reach of ads.
+
+You know, we'll try to show you ads to as many people as possible. That's typically what most people go for with awareness. We could change that to maximize ad recall lift.
+
+So what that is, is we'll try to show your ads to people who are likely to remember seeing them. Personally, I'm a little bit skeptical over how well Facebook can assess who is likely to remember and who isn't likely to remember my ads. I mean, I'm sure they use things like linger time, but I'm a little bit skeptical that they're actually able to work that out.
+
+So I think it's fine to just go with the default, get the most number of reach, get your ads in front of as many people as possible. It's typically what people want with awareness. We've got video view goals as well, maximize three plays.
+
+Again, that would depend what ad format you're using. For most people, I'd still recommend going with reach of ads. But if you find that your video ads, for example, are getting loads and loads of people watching them, but nothing's really happening.
+
+Maybe you want to switch it to through play views where people need to watch the whole thing or 15 seconds. And that might be a bit of a better quality interaction to optimize your Facebook and Instagram ad campaigns for. I'm going to leave it as the default.
+
+Then we've got a whole bunch of other things that are fixed. Things like bid strategy that's fixed. Delivery type is automatic.
+
+I'll explain a bit more about that in a second. And campaign duration is fixed here for seven days. So nothing to really worry about that.
+
+Then we get into the frequency control. Now, when we run awareness campaigns, frequency caps is a big part of that. We only want to make sure that certain people see our ads a maximum number of times because we want to spread the impressions out over a lot of people.
+
+We don't want the same people to be hit over and over and over again with the same ads, which is more likely to happen with a sales campaign or a leads campaign to try and get that person to take a larger action than just being aware of whatever it is that you're advertising. So that can typically happen. And we can change that with frequency control.
+
+Now, interestingly, Meta have recently introduced this target setup here. So it's the average number of times you want people to see your ads in a week. So what's that showing is that sometimes some people will be showing your ads more than your frequency cap with this option, or you could just change it to cap and say, no, I never want anyone to see my ad more than once per week.
+
+I think going with the target is absolutely fine. I think there are scenarios in which it actually makes sense for people to maybe see it a little bit more often. And Meta's systems are pretty smart at working that sort of stuff.
+
+I personally feel like it's not a big deal either way, whether it's target or cap, it's likely to, the delivery's likely to be pretty similar. If you're like, no, I want to get the absolute maximum reach possible, then by all means go with cap, but I'm gonna leave it as target because I don't think that's a big deal. And then in terms of the timeframes, you could just adjust this depending what your bidget objectives are.
+
+Like more creative, you're gonna want to adjust this. Less creative, you wanna want to adjust this. For most people, you can absolutely find to go with a default of once every seven days.
+
+So that's the time period during which this campaign is going to run anyway. So if we really wanna get as many eyeballs as possible, then that's gonna help us set that up. Then we get down to this delivery scheduling preference, which I actually think is a really interesting feature.
+
+You can see it's all grayed out because it's telling us we need to upload ads before we can go ahead and choose this. But I can show you how to do that in a minute. But what I want to, if I just quickly delete that, what I wanna quickly talk about are the two options.
+
+So we've got delivery scheduling preference as standard. And you can see that says, find and deliver the best performing ads. Or we've got sequenced.
+
+So that's set a sequence to deliver several ads to the same audience in a certain order. Now, this could be really big for the omnipresent content campaign, for those people who are familiar. If you're not familiar, include a link in the video description that shows you exactly how to set up a campaign like that.
+
+But often there are times where you don't want to just put a bunch of ads into an ad set and let meta work it out and deliver the best performing ads, which is what you'll get with standard. Sometimes you actually go, no, I would like my prospects to see ad A on Monday, ad B on Tuesday, ad C on Wednesday. Perhaps you've got a limited time promotion.
+
+And on Monday, you wanna be saying, only three days left to buy our thing at the discounted price. And then on Tuesday, you want to say, only two days left to buy our discounted thing at the price. And then on Wednesday, it's one day left.
+
+And on Thursday, it's last day. So the times like that, where you'd want to use sequence ads, and that might be a good use case scenario. Likewise, in omnipresent content, you wanna make sure that on day one, they get a value ad.
+
+On day two, they get a demonstration ad. On day three, they get a call to action ad. And round and round it goes, okay?
+
+So there's lots of different ways that you might want to use that sequencing. So don't ignore that feature if that's important to your business. I know that a lot of businesses, when they are using the reservation buying type, are doing so when they've got a limited time promotion.
+
+They really wanna get the message out there fast and powerfully. That sequence might be a really good way of doing it if you've got ads set up that way. So hopefully you can have a little think about that and how that applies to your business.
+
+Now I want to head over here on the right-hand side and scroll up to this reservation estimate section, because I think this is probably the most interesting thing about the reservation buying type and where it really starts to differ. Now, this is an example Facebook ad account. If I create a regular auction campaign, the default budget that Facebook will give me for an ad set, let's say, will be 20 pounds per day.
+
+The default budget that Meta's gone and popped in here is 8,330 pounds for the seven-day period. And what I think Meta is trying to tell us is that with this buying type reservation, it's typically used for businesses that have larger budgets, bigger brands that are looking to get a ton of awareness or a ton of engagement, as opposed to smaller businesses that operate with smaller budgets that are specifically trying to generate leads and sales in the shorter term. Now, of course, we can change this, but if, for example, I go ahead and drop that to 100 pounds, you will see that Meta has a little go at me saying that you need to spend enough to reach at least 200,000 people.
+
+So over the seven days, it's calculated, that's gonna be 120 pounds is the minimum budget I could use. So still a lot, lot less than the default, of course, but I can go ahead and adjust this. You just need to make sure you reach a minimum of 200.
+
+So I just get rid of that to make sure that Meta's happy with me, put in a thousand pounds, let's say. And then we say reach is gonna be about a million people, estimated audience size, we're just targeting the whole of the UK, so that's fairly self-explanatory. Frequency is a one, but of course, we've set that at the frequency cap.
+
+I could go ahead and change this to a two or whatever, and that's going to change this frequency number. But the really crazy thing about the reservation buying type is the CPM. These are estimates, but these estimates here are much, much, much more accurate than the estimates that you'll get through the auction campaigns.
+
+And I get comments all the time, people saying, Facebook's telling me I might get zero sales, I might get zero leads, or my campaign might not perform very well, should I still go ahead and run it? And I say, ignore those estimates, go ahead and do it. With the reservation buying type, the estimates are much more important and much more accurate because you're actually reserving those prices, you're booking those in as opposed to just guessing ahead of time.
+
+So when you see something like a CPM of 96 pence, 0.96 pounds, that is relatively accurate, it's gonna be close to that when you actually run this campaign, and crazy. That CPM, that cost per thousand impressions, is so much lower than what you would see in an auction campaign. We could run an auction campaign in the UK and see 40 pound CPMs, 50 pound CPMs.
+
+We might see 15 pound CPMs. It's gonna depend on who we're advertising, what industry we're operating in, but a CPM of less than a pound, you will not see in the auction. We haven't seen that in the auction since like 2014, basically a decade ago.
+
+It's just not been possible. So that's something to really be aware of, and that's obviously, that is the big selling point, the big advantage of this buying type, is that you're able to reach a lot more people for a lot less money, okay? So if we scroll down, we've got some reach per frequency, because we've just set this to one every seven days, and this doesn't really mean anything, but if you change that, you'll be able to see like, okay, most people get impressions on, first impression on these days, and then the second impression might come a few days later, and you can have a little play around with that.
+
+Same, you can see this frequency per person. But this part I really wanted to highlight, which I thought was interesting, and this is something that the meta often does with lifetime budgets, and this is a lifetime budget, because it's over seven days, is you can see that the ad spend per day is not even. You know, we start off quite strong, it really spikes on day two, and then slowly drops off and spends a lot less at the end of the week.
+
+Why they do this is interesting. I've got some theories as to why that might be the case. They want to guarantee it in, so they're not having to do it later on.
+
+They feel that you're likely to get better performance if you front load it, versus if you do it evenly. But it's just interesting, something to be aware of, that if you do launch this campaign, you see, oh, we're getting tons of engagement, we're getting tons of awareness in the first or second days, and then it really drops off. Well, look at how the spend is going to be distributed.
+
+That's likely to be why. Then you can have a little look at this placement distribution, which I also think is interesting. You can see where it's predicted that your ads will actually be shown.
+
+I'm not sure there's a huge amount of use of information that you can draw from this, or edit if you really didn't like something that you saw in here, even though we can't see that much detail. You could go ahead and adjust your placements at the ad set level, but I think we've already set that up in this example, the way that I would typically run these campaigns using this buying type. So not too much to look at there, but just a point of interest, let's say.
+
+So the next step is now to go ahead and click on reserve and upload. I'm not gonna do that here because I don't want to book in this campaign at a thousand pounds when it's not actually got anything in it and it's not a real campaign. It's just an example campaign to demonstrate this, but you just go ahead and click that, select the ads or upload them.
+
+It's relatively straightforward. I've got lots of other tutorials covering ad creation. I'll include links in the video description if you want more detail on that.
+
+But this video is all about this buying type and this way of running ad campaigns and this is how you set it up. So now I need to quickly discuss when you do and don't want to use the reservation buying type because the advantages are pretty obvious. Way lower cost, reach more people.
+
+Doesn't that sound fantastic? But we need to temper that a little bit and go through certain scenarios. Before I get into that, I just wanna quickly let you know about some really exciting news.
+
+I've launched a new mentorship program to help you explode your business' revenue and profits through paid ads and marketing. Now in this mentorship program, myself and my team will mentor you daily, literally every single working day and because of that, spots are very limited. So if you're interested, you can click on a link in the video description below and book a call with one of my team members who can explain everything about the mentorship program and how it works.
+
+I'm really, really excited about this and I hope to be working with you and mentoring you very soon. So the reservation buying type seems amazing. Why aren't we all running campaigns like this instead of auction and paying a tiny fraction to reach people of what we would be paying with auction as the buying type for campaigns?
+
+And you might be thinking you'd be able to game the system and get more leads and sales because you'll reach many more people. In practice, it rarely turns out like that. We have run a number of experiments with this and we have actually won one scenario where it did outperform sales and lead campaigns across, I don't know, probably six or seven different tests so far.
+
+So we're gonna keep testing because it is interesting. Now we know the power of Meta's machine learning processes and how good they are at getting you exactly what it is that you want. What do you want?
+
+What do you want? It's not that simple. What do you want?
+
+If you want sales, you want purchases or you want leads and you have the tracking setup and Meta knows what that looks like and they've got that data in your ad account, they're so good at going out and getting that for you, putting your ads in front of the right people. We don't get to take advantage of that with the reservation buying type because we can only use awareness, engagement, et cetera. But does the massively reduced cost make up for that?
+
+In one scenario, in our testing, it has. In others, it hasn't. Could that be the way forward in the future?
+
+I could definitely see us moving more and more towards this setup. And there are specific use cases where you would want to use it now. So I think if, for example, you wanted to book in a lower cost, guarantee a lower cost during particularly peak expensive times, I'm thinking around Black Friday being the opposite example, but there are other holidays where you will see a cost spike and this will vary depending on businesses and your seasonality.
+
+So maybe you're like, actually, for that week or those couple of weeks, it'd be really good just to book in a lower cost. I think that would be net beneficial. Then by all means, go ahead and do it.
+
+If you're a really big business and you're not so much worried about a direct action and you want awareness and you would be running an awareness campaign otherwise, why not take advantage of this? I think if you're going to be running an awareness campaign using the auction buying type, you should absolutely at least be testing the reservation buying type. I wouldn't be surprised if you see better results there.
+
+And then, of course, that leads into the omnipresent content strategy, something that I'm often talking about that I'm a really big fan of for selling higher ticket products and services. We're absolutely in the process right now of testing and reservation for that. Some encouraging results early on, again, just because we can reach people for so much less.
+
+So if you are using that strategy, go ahead and give this a go. And to be honest, no matter what strategy you're using, I would recommend that basically every Facebook advertiser that knows how to use this, and you do now you've been through this video, give this a test. You can do it with a relatively small budget, probably in comparison to what you're spending elsewhere.
+
+And I definitely think it's worth experimenting with these things because you might find the results are better. And in which case, what a great experiment to run. If it's not as good for your business, okay, at least you now know and you know where to put your focus.
+
+Another scenario in which we think the reservation buying type would be really useful is if you're an agency and you're working with clients, particularly big clients, big brands, they often want to know exactly what they're getting for their money. They want to know, well, how many people is this going to be put in front of and things like that. They're less comfortable with, well, we're just going to run a campaign and kind of see how it performs and we're going to optimize for sales and leads.
+
+They want to know how we're going to see this and those sort of metrics. With this, you can be more, you can have more predictability. So I think for a lot of those bigger businesses, whether they're a client or you're directly advertising those, I think this is going to appeal for those reasons.
+
+It's more in line with what they're used to in other forms of advertising, particularly offline stuff, where they know exactly what the distribution is for that ad in a magazine or an email newsletter going out or something along those lines or how many people on average watch this TV program, how many people on average listen to this radio show. They get an idea of what their distribution is. This is more in line with that.
+
+So I think a lot of those bigger businesses are going to appreciate that predictability and use this feature. And if you've got clients that meet that criteria, you may want to use this feature for them as well. So testing would be my recommendation for this.
+
+I do think most businesses are still going to see better results with the auction buying type if they do want to generate leads and sales, particularly if they need to do so over a relatively short timeframe, which is going to be most people that watch my videos, as crazy as that might seem with the difference in CPMs, but as I said, test and see if you're business. And if you do want to know exactly how I'd recommend you run regular campaigns using the auction buying type, then I strongly recommend you check out this video. In this video, I walk you through the entire Facebook ad campaign creation process using the typical auction buying type.
+
+I show you every single little detail that you need to get right to get the best possible results. Go ahead and check it out.

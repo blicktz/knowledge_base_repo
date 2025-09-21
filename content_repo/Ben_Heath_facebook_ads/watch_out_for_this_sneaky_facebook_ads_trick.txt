@@ -1,0 +1,47 @@
+There's something you need to watch out for with your Facebook ads data. We've seen this happen now with a number of our clients and it can really mess up your results. Great practical joke Jim, you want me to go to the annex.
+
+No! God! Now to explain what's going on here I need to first explain the Facebook pixel.
+
+So for those you aren't familiar the Facebook pixel is something you want to put on your website which allows Meta to track the actions that people take on your website after they click on a Facebook ad or Instagram ad. It's really useful for being able to track your results. You can see who went through to your website and made a purchase or who went on to become a lead.
+
+It's really important that that data comes back into your Facebook ad account for a number of reasons. Firstly we need to be able to see the results that our campaigns are generating. Are they profitable?
+
+Are we getting sales? Are we getting leads? We also need to be able to see which ads, which ad sets etc are producing the best results, which ones are underperforming so that we can pause the underperformers, we can make adjustments and we can optimize our campaign.
+
+Also Meta needs to be able to see which people, which ads are getting the best results so that they can use their machine learning process in order to optimize your campaign. So the Facebook pixel and the data it provides is very very important and there's a big potential issue which I'm about to show you. So there's a Google Chrome extension called the Facebook pixel helper.
+
+Now it's a really useful tool but with that Google Chrome extension I can go onto any website that has the Facebook pixel installed. I can take a look at their Facebook pixel ID, I can copy that pixel ID and then I can go ahead and put their Facebook pixel on any website that I have access to, whether it's my own website, some spam websites, wherever. Now you might be thinking why would anyone do that?
+
+What's the point? Well here's why. If someone were to take your pixel and put it on say a spam website, it would mess up your data.
+
+That would affect negatively your Facebook and Instagram advertising results and make it less likely that you would be profitable, make it less likely that you continue to advertise on the platform. Who would want that to happen? Your competitors.
+
+Now of course there's no way to prove this but we're pretty sure that this has happened with some of our clients pixels. We've certainly found their Facebook pixel turn up on some websites that they don't own that aren't affiliated with the business that are really spammy, not legitimate websites. We think this is what's happening.
+
+It certainly led to issues with their data and until we got them fixed it was causing issues with the performance of their Facebook and Instagram ad campaigns as well. Fortunately, Meta have released a relatively new feature that does provide a simple fix to this issue but before I get into that I want to quickly tell you about my company, my agency that offers done for you Facebook and Instagram advertising services. So if you've got a 3k per month budget or more we can create, manage and optimize your campaigns for you, take that workload off your hands and help you get much better results as well.
+
+So if you're interested in finding out more you can click on the link in the description below. There you'll be able to book a call directly with one of my team members who'll be able to explain everything about the service. We may well have worked with a business like yours in the past.
+
+We can gather all that information and hopefully we go on and get a chance to work together. Okay, so to fix this issue and prevent it from ever happening to you in the first place, it can be really annoying, can be quite damaging. Meta have released what's called an allow list where you can create an allow list and that only allows data to be collected from certain domains, from certain websites.
+
+So you could just create an allow list of the websites where you would actually want your pixel to collect data from and you won't have this issue. Even if your competitors or anyone else takes your Facebook pixel and puts it elsewhere, data won't come back through so it won't negatively impact anything within your ad account. So let me show you how to get this allow list created.
+
+It's quite quick and easy when you know how. So I'm in an example Facebook ad account, I'm in ads manager right now and what you want to do is go ahead and click on these three little lines and then select events manager. It's probably up in the shortcuts for you like it is for me.
+
+If not, it'll be down here under manage business and you can go ahead and select events manager. That'll bring you through to a page that looks like this and then from here I want you to go ahead and select data sources. Now like I said this is an example Facebook ad account but we do actually have the pixel associated with this example ad account installed on a website that we own so that it can collect data and we can use it for demonstration purposes which is the whole point of this example ad account.
+
+Now once you've clicked on data sources you should see something like this. If you've got the Facebook pixel installed on your website you'll see you know activity with events and things like that. Some of you will see a lot more than others that's all absolutely fine.
+
+But what I want you to do from here is go ahead and select settings. There's quite a lot of information in this settings section it can feel quite overwhelming if you go through it but what I want you to do for this to create this allow list is just scroll all the way down to the bottom and you can see here we've got this traffic permissions section. If you read through this information it'll talk about exactly the issue that I've described where your pixel could end up on and websites where you don't want it to end up on and then data could be brought through to your ad account that can mess up things and by creating this allow list you're only going to receive data from certain websites that you have allowed.
+
+So go ahead and select create allow list. Okay so once you get to this page it's fairly straightforward. If you've already got your pixel installed on your website and generating results and data then you will see it come up underneath here and you can just simply click add to allow list and then you can go ahead and click confirm.
+
+Now that domain is added in but we could go ahead and add in other ones if we wanted to. We could go ahead and enter in other domains into into this little text field here and add in all the ones that are relevant that you'd like to track data from. Sometimes that would just be one that's absolutely fine.
+
+Sometimes it will be multiple but make sure you get all those added in and that's your allow list done. Now for a while Meta have allowed us to create what's called a block list. You can see this as a little tab up here and that was really useful at preventing and fixing some of the issues that I talked about.
+
+But of course if someone's really going after your pixel and trying to mess with your data they could just keep putting it on different places and you have to come in here all the time and add in new things to the block list. This allow list sort of flipping it to be like no no I only want data from these websites is a much better way of doing it. Meta have only added this in recently and it's also interestingly come up for a number of our clients recently so I thought it was a good idea to create a video showing you exactly how to fix this problem.
+
+So this video has been pretty Facebook pixel heavy. It's a very very important part of Facebook and Instagram advertising and if you don't have the Facebook pixel set up on your website or you do have it set up but you think there might be issues you think it might not be set up the right way I'd strongly recommend you check out this video. It's a full step-by-step Facebook pixel installation tutorial.
+
+I'll show you everything you need to know about the Facebook pixel including a lot of the advanced stuff that is required after the iOS 14 changes. Go ahead and check it out.

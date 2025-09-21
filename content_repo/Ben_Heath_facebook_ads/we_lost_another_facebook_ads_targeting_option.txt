@@ -1,0 +1,101 @@
+Facebook Ads targeting has changed an enormous amount over the past few years and we have officially just lost another Facebook Ads targeting option. And in this video, I'm going to show you what we have lost and more importantly, I'm going to explain what this means and how it's going to affect us Facebook advertisers. Okay, to show you what's going on here, I'm in an example Facebook ad account.
+
+I'm in Ads Manager. I'm just going to quickly create a campaign. I'm just going to go with leads, but this will apply to other campaign types as well.
+
+And I'm going to select Manual Campaign to demonstrate this. Now, if I go ahead and jump to the ad set level, obviously where we set up all our targeting options and decide who we want to put our ads in front of. Now, if I scroll down and I switch to, so this is set up by default with the advantage plus audience options, as you can see here.
+
+But if I switch to original audience options, Meta's going to try and convince me not to, but a lot of advertisers are still using original audience options and the targeting option that we have lost applies to original audience options. Now, in this audience section, if we scroll down to this detailed targeting section and I click edit, what you will now see or what you won't see, what we have lost, is the ability to exclude detailed targeting options. If we go up here and you can see in custom audiences, there's this little button here called add exclusions.
+
+I'll explain more about that later on. We used to have something very similar for these detailed targeting options where you were able to exclude certain demographics, interest behaviors from your targeting. That is no longer an option.
+
+Meta officially retired that ability. Now, a few years ago, this feature, detailed targeting exclusion, was very popular with Facebook advertisers because what advertisers would do is they would separate out their interest targeting options by ad sets. You might only have one interest targeting option in each ad set.
+
+And what advertisers would do is they would exclude, let's say, the interest that you're using to target people in ad set A from ad set B, C, D, etc. so that you could prevent audience overlap. And a lot of Facebook advertisers felt that you'd get a better test to work out which audience produced the best results because when you're targeting interests that are related to your products and services, they're normally going to be quite similar to each other and you would typically have a lot of overlap between those interests or other detailed targeting options.
+
+So that's why Facebook advertisers used to use it a lot. As targeting has changed and as we've seen much more of a shift towards advantage plus audience where the detailed targeting inputs are suggestions as opposed to hard boundaries. Meta can use them but they also have the flexibility to not.
+
+As we've seen a shift more and more towards open targeting. And in general, letting Meta do a lot more of the heavy lifting when it comes to targeting for us advertisers and us having less control. This option of using detailed targeting exclusions and excluding certain targeting options from some ad sets that you're using in other ad sets, that has been used less and less anyway.
+
+So it has been becoming less and less popular over time. But at one stage it was really quite popular and there's still certainly advertisers that until very recently have been using this feature. Now even back then, I didn't recommend using detailed targeting exclusions.
+
+I was absolutely recommending that you had separate interests per ad set so you could test to see which one forms best and that allowed you to optimise your campaigns and improve over time. But I still wouldn't, for example, exclude the interest that we're using to target an ad set A from ad set B or the other ad sets because there was so much overlap and I felt that actually wasn't a good test because if you're excluding 70% of the audience that's contained within the interest for ad set B from ad set B because it overlaps with ad set A, that's not a really very fair test anyway. So it's not something I'd recommend and we now have data to back this up.
+
+So Meta announced this change, these updates to detailed targeting, recently and said that they were going to be getting rid of detailed targeting exclusions. They started this July 29th, so by the time you see this video, this will be well in effect and there's a good chance that you won't have it. It is being rolled out in phases, so some people watching this may still have detailed targeting exclusions, some people may not, as Meta does with everything.
+
+Nothing just gets rolled out in one go, it's always phased between ad accounts. Let me just get this out of the way. But Meta shared some really valuable and interesting data and this is something that I sort of intuitively knew, having run ad campaigns for many years and why I didn't recommend using this in the first place, is that it made your results worse.
+
+So here we go. A recent advertiser test showed that the median cost per conversion was 22.6% lower when not using detailed targeting exclusions. So in other words, advertisers that used detailed targeting exclusions got worse results.
+
+The ones that didn't use detailed targeting exclusions got 22.6% lower cost per conversion, which is pretty significant. And it's a really important point I want to highlight here, because Meta releases a lot of information around various tests they run and data to back up changes that they're making. Sometimes they will talk about here cost per result.
+
+And whenever they talk about cost per result, you need to take their data with a pinch of salt a little bit, because in cost per result can be included things like link clicks, or impressions, or video views. And you're thinking, well, this change might have reduced the cost per result, which sounds good, but does it actually matter, because does it actually get us leads and sales cheaper, which is what we all really want, right? Whenever they say cost per conversion, that's a much better data point.
+
+So saying here that, look, you get 22% better results on a cost per conversion basis, which is the most important thing to the vast majority of Facebook and Instagram advertisers, that's something that I go ahead and pay attention to. And that backs up the fact that you shouldn't really be using detailed targeting exclusions. And they're using that data to justify getting rid of them.
+
+Right, and if I scroll down a little bit further, we will see here existing campaigns will remain unaffected until January 31st, 2025. So Meta often does this when they retire Facebook and Instagram advertising features, is they will say, right, no new campaigns, no new ad sets can use this feature, so detailed targeting exclusions can't be used from July 29th in most cases. But if you've already got a campaign or ad set running, you can keep using it until a later date, in this case 31st of January.
+
+And they do that because they want to give advertisers time to adjust and be able to sometimes change strategy, even if the change is quite significant. I don't think that's likely to be the case here. So if you do have campaigns running and ad sets running that are using detailed targeting exclusions and you feel like that's really beneficial for your campaigns, as long as you don't make adjustments to those, you can keep running those until the 31st of January.
+
+And whilst I haven't recommended most of the time using detailed targeting exclusions, I'm recommending that broadly there are always use cases where individual businesses have found that because of their market dynamics, because of some specific reason, they need to do things that contradict the general advice and the best way of doing things. And detailed targeting exclusions can absolutely be one of those. Let's say, for example, you advertise to a really small and specific subsection of your niche.
+
+And you know that if your ads are put in front of people that are interested in the niche broadly, they're not going to convert at all. But if they're put in front of just that very specific subsection, that they will. Or maybe you wanted to exclude people that would be categorised in the sort of broader interest to do with your niche, as opposed to those more specific ones.
+
+You may well have seen better results using detailed targeting exclusions. You can keep running until July, January 31st, 2025. And then unfortunately, it is going to go.
+
+Okay, so in a second, I want to talk about custom audience exclusions, because that's a different thing. We're still able to do that. And that's very, very important.
+
+Before I do, I just want to quickly let you know about Facebook Ads Mastery, which is my new course with community. And in this course, myself and my team have created the best Facebook and Instagram advertising educational material we've ever created. It's literally the stuff that we are using to train new staff members.
+
+And we obviously want that to be as good as it could possibly be before we let them loose on client accounts and things like that. So it really is the very best stuff we've created. There's a whole community that comes with it.
+
+Using Score for that. We've already got 600 plus members. People just like you.
+
+Facebook, Instagram advertisers interacting. Wanting to help each other out. Get better.
+
+Myself and my team are in the community all the time. Answering questions. We also do live calls.
+
+We do live Q&As. We do live trainings. Providing people with as much support as we possibly can so that they get the best results they possibly can.
+
+The price is just £97 per month. We want to make this as affordable as possible. There is a link in the video description.
+
+You can click on that. Come through to a page and check out the details and find out more information. Hopefully, I'll see you on the inside.
+
+Okay. So jumping back into Ads Manager, into our example ad account at the ad set level. I'm just going to scroll up within this audience section slightly.
+
+And we're still within original audience here, by the way. And we can see that in this custom audiences section, we've still got ad exclusions. So we still have that option to exclude custom audiences.
+
+Custom audiences being people that have already interacted with your business. So warm audiences that you can create. You can still exclude those.
+
+And that's really important. That's actually much more valuable than being able to exclude detailed targeting options anyway. Many businesses will use custom audience exclusions because they want to target people at a certain stage of the sales funnel.
+
+So it might be they want to create a custom audience out of people who have become leads but not yet converted. And put ads in front of those people to help convince them to convert. So to do that, you would need to create a custom audience of people who have become leads.
+
+And then a custom audience of people who have converted. And exclude the people that have already converted to make that work. A lot of people will use custom audience exclusions in order to be able to run offers that only apply to new customers.
+
+And they don't want their old customers to see it or the existing customers to see it and be annoyed that this is only a new customer deal or something along those lines. So they will create a custom audience out of their existing customers. And then exclude people that are in that so that they only reach new people.
+
+So you can actually use ad exclusions still within the custom audience section here within original audience. And if we jump over to back to advantage plus audience, which is what I actually recommend most people do. And what most advertisers will use.
+
+If I come in here, click edit into the audience control section and click on show more options. We can also exclude these custom audiences when we're using advantage plus audience. So remember that everything within the audience control section.
+
+So this section here with an advantage plus audience ad set, that's a hard boundary. So our location data is a hard boundary. Minimum age is a hard boundary.
+
+If we exclude custom audience, that's a hard boundary. Whereas all the information that we put down here in the advantage plus audience section when it comes to targeting, those, as you can see here, are audience suggestions. So Meta can use the suggestions.
+
+They cannot according to whether they think it's going to help improve your performance. So either way, whether you're using original audience options or advantage plus audience, you can still exclude custom audiences. That ability hasn't gone away.
+
+And I don't think it will for the reasons I just described. I think that's quite valuable to advertisers. And I can't see Meta getting rid of that anytime soon.
+
+So because we're keeping custom audience exclusions, I don't think that losing detail targeting exclusions is really going to be a big deal. Yes, there are certain advertisers that use it and probably benefit from it, even though it's not typically what's recommended. And for those advertisers, it might hurt.
+
+But I think across the board, this is not a disaster for Facebook advertisers or anything like that. I've seen quite a lot of grumbling and people concerned. And I think that's less to do with the fact that detail targeting exclusions have gone and more just a concern about this is the trend we're heading on where more and more targeting options are being taken away.
+
+And what are we going to be up with? Are we going to end up in a situation where you just have to trust Meta completely with all targeting all the time and you can't have any input? We may well do.
+
+I don't think that will happen for a little while, but that might be coming down the line. I think that's probably why people are more concerned about this. But just to say, I don't think this is a big deal.
+
+If they got rid of custom audience exclusions, a much bigger deal. By the way, if you want more information about custom audiences, I sort of glossed over it. The concept, I'll include a link in the description that shows you how to create custom audiences and what they are and all that sort of stuff if you want to do some of those things that I mentioned a minute ago.
+
+But as long as we keep that, I don't think the detail targeting exclusions going away is that much of a concern for the vast majority of Facebook advertisers. And if you haven't already, I'd strongly recommend you check out my new video on the ideal Facebook ad campaign structure, which you can find right here. Facebook ad campaign structure has changed a lot because of a lot of the targeting changes that have happened over the last few years.
+
+And the way we do things now is very different to how we did them a couple of years ago. This is absolutely something you need to stay up to date with. So if you haven't already, check this out.

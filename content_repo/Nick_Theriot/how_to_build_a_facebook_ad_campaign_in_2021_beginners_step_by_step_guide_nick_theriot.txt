@@ -1,0 +1,173 @@
+Hey, what's going on guys? Welcome back to the channel. My name is Nick Theriot and today I have not just an exciting video, but probably one of the most consistent, easy guides of crafting a Facebook ad from scratch in 2021.
+
+It's kind of like maybe a beginner's guide, everything you need to kind of know and just kind of running through the whole process between Facebook ads and Shopify, full tutorial, you name it. And before we get started, make sure you hit the like button and hit that subscribe button for new videos every Monday, Wednesday, and Friday. Let's get started guys.
+
+So the first thing you need to do is essentially go to business.facebook.com, go there, create your business manager, add your credit card information to it. And then once you do all that, what we want to do is we want to go over to Shopify. Now what we're going to do inside of Shopify is we want to go down and do install the Facebook app, essentially, I think what it's called with the Shopify app store, come down to it.
+
+So once you get to the Facebook app, it's going to actually a few different things, but we want to sell your products on Facebook. We're going to continue set up and what you can do is you're going to connect your Facebook account to this super simple. So after you connect your Facebook account, go to your Facebook page, add in the Facebook page to it, then go down to data sharing and inside of data sharing, we want to make sure we choose our level as maximum.
+
+And then that's going to basically put like your pixel on the site and everything, pixel everything for you and you hit confirm and then checkout method. You want to make sure you do Shopify store and then, yeah, that's it. If you want to further go into like creating a conference account and you can do all the other stuff like Instagram shop and all that other things like that, but we're keeping it simple for this particular video.
+
+Now, what you want to do is go back to your ads manager. They're going to come right here down to the brand safety somewhere right here. Another brand safety, you're going to click on domains.
+
+And what you want to do is you want to verify your domain. So simply just go to add, you're going to type in your domain. It's going to give you like some code.
+
+You're going to go put into your like text file on your domain host website. I do have a video on this. If you simply just go to verify your domain, Facebook ads, there's a lot of videos on this, but it's simple.
+
+It's easy to do. Just want to make sure you do it. So after you do that, essentially what's going to happen is your pixel set up on the website and then your domain is verified with Facebook.
+
+So now the last thing you need to do is set up your events. So you're going to go right here, you know, inside of your, your tools, you click on events manager. And then what you're going to do is you're going to come up right here to your pixel.
+
+Now under your pixel right here, you're going to see a bunch of different things. You may not see this right here because it may not be active yet, but what you want to do is go over to your website, you know, go through the whole process, click on add product to cart, view the product page, go to your checkout and everything. And then you're going to come right here to the checkout, go through the whole process, checkout and everything, and just refund yourself later, but go through the whole checkout process, charge your card, everything.
+
+And then you should have all the events pop up now because essentially what you did is you went through the whole process in terms of, you know, making sure all the events are following your checkout process and Facebook has received those back. Now what you want to do is go to aggregated event management and click on manage events. Now what you want to do under these manage events is you want to click on this manage events, hit edit, and you literally just want to replicate what I have right here.
+
+Highest priority, you know, meta address signs, pixel purchase, five optimization on, configured event usage for, and just literally put them in this order right here. So essentially we're doing is if someone opts out of iOS 14.5 tracking, Facebook will randomize a three day period from the purchase. So they purchased today over the next three days, it's going to randomly select one of those days to attribute the purchase to the ads manager.
+
+So what we want to do is it's going to prioritize the highest priority. So we want to prioritize purchase because purchase is what we essentially want to optimize for. Now if we're optimizing for view contents or lead generation or anything like that, then we would want to do one of those, but that's simple as it can be.
+
+So once you get that done, you're officially ready to start creating your ads. So you got your pixel installed on the website, you created dummy order, you got your events to fire properly, you set up server side matching. So when we did that full advanced matching, if we go back to the pixel, we'll see browser slash server.
+
+And we're seeing right now, we're seeing about a 7.8 out of 10 match quality, which essentially just basically means about 80% of the results from Facebook is being attributed or on Shopify is being attributed back to Facebook ads. So you can even see the connection method server server, and it's just a higher quality connection than using your standard cookie tracking and stuff. And that's a whole nother more advanced topic for you guys.
+
+Now, what we want to do is before we actually create our first ad, we want to go through our competitors ads. And the reason why we want to go through our competitors ads, it's because we want to understand the best way we can position our product in the market and that get sales. So, you know, starting off, you might think there's a way to create a specific ad, but then your competitors are all doing it this way.
+
+And your competitors are all doing it this way. They're most likely getting sales. So we're not trying to reinvent the wheel here.
+
+We're trying to get results quickly. So if you go to just literally like facebook ad library.com, you'll find this right here. And then we're going to do is just click down all ads, United States.
+
+And I've already done my research. I know about five to six different competitors for our specific brand. So I'm literally just going to start typing them in.
+
+So this is red line steel and we can start to understand, okay, what type of ad copier they're using? What type of images are they're using? You know, what type of sale are they running around?
+
+They're running a sale. What type of offer, what type of headlines they're using? Like, what is, you know, the general concept of their ads and how's it working, you know, and how can we replicate that?
+
+So we essentially want to understand. So if he's doing videos and stuff of him holding the product, then we want to replicate that. We want to do photos and videos of us holding the product.
+
+Now, if he's using a lot of flash sales and a lot of sales in our, in his ad copy or their ad copy, then we want to replicate that. We want to start running a bunch of sales because obviously our ideal consumer is someone that likes that. It's a spontaneous purchase for these type of products that we're doing these metal signs.
+
+So it's not like something that people are going to sit down and have a lot of thoughtful consideration for. It's a lot of quick, you know, purchasing. So a lot of sales, different things like that, new offers and stuff.
+
+It keeps things fresh and it gives a reason why to purchase right now. So instead of just running 50% off, we're running 50% off summer flash sale because now it sounds like there's more urgency and a reason to act now. So I'm going to go through that.
+
+So again, this is another perfect wedding gift, you know, sales, Father's Day sell, boom, you know, showing off the product and in different places and stuff like that. So again, just looking at the general concept of these ads, the creative, the offer, the ad copy, and really understanding that. And what I like to do is I like to look through about four or five brands.
+
+And then after that, what I like to do is I like to put together kind of like a compilation of all the best, my favorite ads from these brands and how I can replicate those for my brands. Now, this also is probably going to mean we're not going to run ads today because we actually have to go shoot this content. If you're drop shipping and you're replicating this, you're going to have to order the product.
+
+And if you have to order the product, then it means you have a few weeks before it gets in. You have to set up a shoot date and stuff. But this is the real truth of doing this type of stuff is you have to better prepare to get results.
+
+You want all this planning to better effectively spend the money we're about to spend. And when you do all this, it greatly increases your chances of winning with Facebook ads. So let's just say, for example, we did all that.
+
+We went through all that. We, we, you know, went through everything. We put our ad copy together.
+
+We put our, you know, offer together, all that good stuff. Now it's time to create our campaign. So I'm going to hit create, make conversions, name your campaign.
+
+This will be our prospecting campaign. I like to put my agencies initials when I run ads for people tofu. Cause that's a top of funnel ad.
+
+I mean, it's a cold prospecting ad and this would just be our ad angle. Number one, this is going to be an ABO campaign, you know, website conversions campaign. And it's going to be an ABO campaign.
+
+Now at set number one, we're going to do USA. Let's see, we're going to do male plus or female, actually, because that's the primary demographic for our brand. And we're going to do 21 plus.
+
+Cause that's what we see a lot more purchasers come from. And our first ad sets just to be completely open. And we're going to optimize, we're going to do auto placements and we're going to optimize for purchases.
+
+So optimize for purchase. And I'm going to just skip ad for a second. So I can completely kind of like finish our first ad set.
+
+So again, so it's ABO campaign. So make sure campaign budget optimizations off now, USA female, 21 plus open auto placements purchase. Our pixel is selected.
+
+Our conversion event purchase is selected. Perfect. Our daily budget.
+
+So I like to do our daily budget. There's two different ways I can do it. We're about to create about 10 different ad sets.
+
+So I can, I can either go with five to $10 ad sets. If I'm creating 10 assets, you just don't have the budget, do five or $10, but, or I can do one to two X, our target CPA. So if our target CPA, our AOV for this brand is a hundred dollars.
+
+Um, so our target CPA can be about $30 for a three extra. So I can do anywhere from 30 to $60 for our daily budget. Again, we're going to do 10 ad sets.
+
+So if I'm going 10 ad sets times a $6 budget, $600 per campaign, and we're going to do four campaigns. So if we're doing four campaigns, which is simply going to happen, that means that's about $2,400 a day in spin. So we're not, we don't want to spend that much.
+
+So let's just say we're going to do a $10 a day ad set. So we're going to do a hundred dollars per campaign times four is $400 a day. And we don't even have to do four campaigns.
+
+So we know we can keep it simple with just one campaign for this video, but you'll understand why I do four campaigns in a second. Now I want to make sure I'm excluding, uh, 30, everything. So, you know, 30, um, let's see TS G engagement gauge of any post TS, uh, Facebook.
+
+And again, TS is just my agency's initials, Tara solutions. We do website visitors, 30 days and then TS purchase. And I want to do 30 days.
+
+I should have 180 days, but it's not popping up. So, so I like to do 30, 30, 30, and then a hundred a day, but just for sake of this video, I'm gonna keep that simple female again, and then age we're going to do 21 plus boom detail targeting expansion. This is a completely open ad set.
+
+Our, we always recommend running an open ad set with no targeting at all besides your, your demo, uh, demographics. So it doesn't even matter if I turn this on or off now I'm hit publish on this again, there's no ad inside of it. So it's not going to run, but, um, we're going to create our ad in a second.
+
+Now, add, I'm just gonna call this ad angle, number one image, number one. So number one, adding all for this type of product right here could be a sell flash sale, super savings, et cetera. The other adding, uh, you know, adding all number two could be a gift.
+
+It's different ways I can position these products in the market. So number one is these flash sales, super sales, number two, the perfect gift for father's day says father's day. So, you know, when I'm filming this, so the perfect gift for father's day, I think number three could be looking for a great place to put this on, you know, looking for something to put on your wall in terms of like filling up that space.
+
+So filling a void or pain point or a problem. So each adding or completely different ways of which we're positioning the product in the market. So I'm just going to do single image or video and let me go add our image in.
+
+This is where we want to load in those ads you were able to put together. So we've gotten some creatives and stuff put together, uh, people, um, using our product. So here we go now primary text.
+
+So I already have some ad copy kind of like saved in here. So I'm just going to copy that over, but our first adding will be more of like a father's day theme, just in terms of like, you know, just cause it's father's day today. So now I don't know why that's glitching out, but we're going to just keep rolling with it.
+
+Oh, I see why. So let me copy over our URL call to action. We want to make sure we do shop now URL and paste that in.
+
+There we go. Cool. Now we're going to do this.
+
+Make sure we do website events, select your pixel. And then, yeah, now headline, let's see. This was our father's day.
+
+Uh, let's see if I mean, that's everything I'm personal sales description. There we go. Cause I'm, I want to make sure that we're previewing this on mobile right here.
+
+And I want to make sure our description can pop up. This is our news for description. We're going to just add in something about the brand.
+
+There we go. Perfect. Good for father's day, free shipping over $99.
+
+Put the menu as everything. Our personalized still signs made for make for the best gifts for father's day. Boom.
+
+And you left heart of Louisiana and precision cut boom. Perfect. Perfect.
+
+Perfect. I do notice our ad copy says a hundred plus. So let's make sure we contextual with that.
+
+Cool. Now what I'm going to do instead of publishing it, I'm going to hit control D I'm going to duplicate this and this will be image number two. And we're going to run a second image and let's just do another guy next done.
+
+Now I'm going to duplicate this again. And this will be a video number one. And the reason why we recommend doing a video is because we're hitting both worlds.
+
+We're hitting the people who like photos and we're also hitting the variations of people who like videos. It's just a quick, like scrolling through moving thing. All right, cool.
+
+Now I would do another video. And I would also do, I like to do four particular creatives for this account or for this initial thing. And then also to want to make sure my call to action is shop now publish.
+
+And what we're essentially doing now is we're going ahead and we're crafting that first, like few ads we can leverage now across this whole campaign. Now what I'm going to do is I want to literally just hit duplicate. We can just select it and hit control D or command D depending on what you're on.
+
+And I'm literally just going to change our target audience and I'm going to just do father's day. And what we're going to do is we're going to go ahead and start adding in now. So detail targeting this particular one, we're going to do father's day, father's day, United States.
+
+All right, now I'm going to control D and I'm adding another one. So this one may be because it's a grill sign. Let's just do barbecue.
+
+I'm going super broad here, but you know, again, we recommend you doing a little bit of like audience research and stuff and, and really understanding that we targeting and stuff is relevant. And then also to, if you have an established account with a lot of data, then I recommend doing some look likes and stuff for the accounts. So I would recommend doing 10 ad sets, all different interests are look likes with one of those 10 completely open.
+
+And if you are an established account, we recommend half look likes and half interests. Now we essentially want to do is once these turn from in review to delivering they're running, we want to run this campaign for 72 hours. And then we'll do this.
+
+We'll go into more looking at, you know, scaling up the winning ones and cutting off the losers. And you can really start to understand what interests work, what images work with ad copy works. Now, again, we, we did this first one was adding on number one.
+
+So once you do all of your interests, load in everything in here, um, you have your images, um, and your videos, and like your creatives and stuff, then what we can do is we can hit control or before we do that, let's do adding on number one, this was father's day. So hit publish. So this is the father's day adding over going after let's say control deal is whole campaign.
+
+Just make this super simple and quick for you guys. And we're going to call this one barbecue sign. So this is going after more of a product specific type of ad copy.
+
+So we're going to go right here. We're going to select all of our ad sets and then select all of our ads and we're going to edit. So we're going to edit all of these.
+
+We're not going to change the image or the video, the creative for simply changing just the copy. That is it. So I'm gonna leave this first half and the ad copy will be, let's see, 36 inch barbecue sign, personalized barbecue sign.
+
+Now, I don't know, 180 bucks was 260. So again, I wouldn't recommend it like, you know, actually playing your ad copies. It's just going off the top of my head, but essentially we're doing is we're editing the ad copy for all of these.
+
+And that's, that's good. Cause that's what we want. There we go.
+
+36 inch. And you can turn the preview on if you want, and we can see how that looks. First line now, 180 was 260 personalized barbecue sign.
+
+Boom. So we removed all the father's day stuff and we're essentially leveraging now just more of a product specific type of ad copy. So a completely different angle, but same images and same creatives and same audiences.
+
+And the reason why is because now after we run this campaign for a few days, we'll know which ad angles work. We'll know which images work, um, for this particular product or brand. So you can either do product specific.
+
+We were running a product specific one for this one, just cause this is the product we're trying to leverage for father's day. But if you're starting out completely from scratch, maybe you have a lot of products, multi-product store, you can do more carousels, images, showcasing all your products and more broader copy that does an umbrella for all of your products together. So, but yeah, and we would recommend setting up four of these campaigns exactly like this.
+
+So I'll duplicate this again, do adding on number three, duplicate again, do adding on number four, run them all for 72 hours. I'll understand what audiences work, what creatives work and what ad copy works and really measure performance after those 72 hours. So do not touch anything for 72 hours.
+
+And if nothing works, then it comes down to two things, your website, it comes down to your product or it comes down to your creative and your copy. So those are the core things that you need to go back, refine, test again, doesn't work, go back, refine, test again, because that is where all of our problems ever rely when we run these campaigns and don't see results. So hope this helps you guys.
+
+Let her start the campaign from scratch, building everything up. Hope you enjoyed this video, a little bit more longer product demonstration or demonstration or video of how stuff campaigns in the ad account, going through everything and, you know, really just putting the best principles together. If you know what working for us right now, how we leverage, how we, you know, run campaigns and stuff like that.
+
+So if you are a Shopify business owner and you have a goal of hitting six figures a month, which your business and make sure you click the link below to book a call with me and my team, we'll hop on a call with you and structure a plan of action for you to hit that goal over the next six months. So make sure you click the link below, book a call with us, and you can either take this point of action and run with it, do it yourself, or you'll have the opportunity to work with us if you choose. Now, if you enjoyed this video, make sure you hit that like button and hit that subscribe button for new videos every Monday, Wednesday, and Friday.
+
+My name is Nick Terrio, and I hope you enjoyed this video and I'll talk to you guys later. Peace.

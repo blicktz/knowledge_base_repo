@@ -1,0 +1,135 @@
+The meta-advertiser community has been buzzing with excitement about the new incremental attribution feature. I've had tons of people ask me to do a video on it and that's what this is. I'm going to explain what incremental attribution is, how it can completely change the way your Facebook ad campaigns work and why you might want to start using it right now.
+
+So incremental attribution is all about incrementality. Just to quickly explain what that is, incrementality is working out which conversions would not have taken place if you hadn't been running your meta ads. In other words, which conversions can we very confidently say occurred because of your meta ads?
+
+And the reason why this is important for advertisers and advertisers have been trying to sort of separate out conversions that may have taken place anyway, whether you're advertising or not, and conversions that we really can say occurred incrementally because of the ads you're running, is because user journeys to get to the point where they make a purchase, for example, aren't always easy and obvious to follow. It's not as simple as you put an ad in front of someone on Instagram, they click on it, come through to your website and buy. Yes, that conversion occurred because of the ads and the ads alone.
+
+Easy to look at your data and know exactly what you're getting for the money you're spending on your ad campaigns, right? In reality, of course, some people do do that, but in reality, a lot of people don't do that. They might have heard about your product or service from a friend.
+
+They come through to your website because of it. They then get retargeted with a meta ad. The ad sends them through to your website.
+
+They sign up for the 10% discount pop-up, so they join your email list, but they don't buy anything. They get emails for three weeks and then one of those emails convinced them to buy. And it's like, well, what generated the sale there?
+
+What convinced them to take that action? Yes, that's not going to appear necessarily as a conversion that occurred because of, in this case, the Instagram ad, but you can't say that the Instagram ad didn't have a part to play. It clearly did, right?
+
+Without that, maybe the purchase would never have occurred. And that's exactly what incrementality is trying to work out. Would that have occurred?
+
+Would it not? There will be times where ads are put in front of people that would have converted anyway, and incremental attribution is trying to sort of filter for that and work out, right, these ones we think would have occurred anyway. These ones were very confident occurred only because we were running ads.
+
+And that's more data, more information that we can use as advertisers to work out exactly how much to spend, whether we can scale, how successful our campaigns are. And actually, I'd argue more importantly than just the reporting side of things, it also affects how meta optimizes the campaigns. Because if you use incremental attribution, then meta is going to optimize for more of those incremental conversions.
+
+So more of those purchases that would not have occurred if you weren't optimizing for those incremental conversions, which is a really big deal, particularly for those advertisers that get frustrated feeling like a good chunk of their conversions may well have taken place anyway, particularly from people that are in their warm audiences or on their email list or interacting with them on other platforms. There's a lot of sort of cross-channel promotions and lots of business, particularly ones that are bigger that are spending more, have marketing budgets in all sorts of areas. And they want to know, okay, how much is this channel, in this case meta ads, actually getting us.
+
+So incremental attribution is a setting that's been added to our ad accounts. I'm just going to jump into an example meta ad account. I'm in ads manager to demonstrate how it works and how you can set it up.
+
+So I've just created a quick example sales campaign. I'll talk about the criteria and which type of campaigns and which setup you need in a minute in order to be able to use incremental attribution. It's not yet available for everything.
+
+And then I'm going to jump to the ad set level because that's where you choose whether or not you want you use an incremental attribution. So I'm going to click edit on this ad set. And underneath this conversion section where we've got the standard stuff of performance goal and conversion events, we've got this part down here, which is show more options.
+
+And we've got attribution setting. And you'll see that we've got standard attribution. And by the way, if you hover over here, you'll get some information around attribution explains.
+
+It's basically the time window in which people need to have taken an action in order for that data to be fed back into your ad account. So like they need to, I think gives the example here that a 35 day click setting, someone needs to have converted within 35 days of clicking on an ad in order for that data to be fed back into the ad account. And that then informs how the campaigns optimize because meta, the more conversions you generate, the more meta learns and realizes who they should and shouldn't put ads in front of, what time of day, day of the week, all the various data points there, how many, how many ad impressions someone needs within a certain window in order to get them to convert, all that sort of stuff.
+
+But it has to take place within the attribution time period in order for meta to be able to do that optimization process. So that's just a quick aside about attribution settings, so you understand what's going on here. We've got standard attribution, which is the default, or we can switch over to incremental attribution.
+
+If I go ahead and tick on this, we can see meta's information here, optimize delivery for incremental conversions. And that's what you're doing with incremental attribution. So I think the word attribution from, from some of the, the comments and things I've seen from some people, they think it's just a reporting thing.
+
+As in, oh, meta is now just going to give us information on which conversions were, um, incremental, as in would not have taken place if we weren't running ads. Um, they're not going, it's not going to affect anything in terms of the optimization. It absolutely is.
+
+It's going to affect how meta runs your ad campaigns, who they put ads in front of. And you can see optimize delivery for incremental conversions using sophisticated models that predict whether a conversion is caused by an ad. And you can find out more, um, information around that.
+
+So if you go ahead and switch over to incremental attribution, this ad set will now optimize for those incremental conversions. And meta will try and get you more of those. And they will put ads less in front of people that meta thinks will convert anyway, without you putting ads in front of them, which I know a lot of advertisers will be interested in a lot about.
+
+I've spoken to so many advertisers over the years that have wanted something like this, uh, and have wanted to be able to not have ads be put in front of people that they thought would convert through other channels anyway, that they felt like that was a waste of money. And this is absolutely the way to go about doing it. So in a second, I'm going to explain the likely impact that using incremental attribution will have in your campaign.
+
+Some very interesting data from early testing. Um, there before I do, I want to quickly let you know about our done for you Facebook and Instagram advertising services. So my company can run your Facebook and Instagram ads for you.
+
+We can create your campaigns, we can optimize them. We can manage them. We can keep up to date with all the new features and make sure you're on the very cutting edge and taking advantage of all that sort of stuff.
+
+We spent more than $150 million on the ad platform, have a very experienced team. We've worked in every single niche industry you can think of at this point, probably worked with business very similar to yours and will bring that experience to your ad campaigns and help you get the best results possible. If that sounds interesting, there is a link in the video description.
+
+You can click on that, come through to our website and book in a free no obligation call with one of my team members to find out more. And hopefully we get a chance to work together. So incremental attribution is a really big deal for meta advertisers, meta advertising space.
+
+And so it's the obvious question is, is why? So I want to quickly run through that and run through some very interesting data points on this. I think the incremental attribution sort of democratizes advanced data analysis.
+
+And that might sound quite complicated. But what I mean by that is that large spenders, sort of big agencies, big companies that spend tons on meta ads, it often makes a lot of sense for them to invest in what can be relatively expensive things like conversion lift studies and sort of advanced data analysis to try and pass out data and work out things like incrementality. Where did our conversions come from?
+
+Are they actually from these meta ad campaigns or were there other platforms that were doing most of the heavy lifting and meta sort of just popped a few ads in front of that person and help get them over the line, right? So with incremental attribution, it makes some of that stuff, that more advanced data analysis and the information that we can get from it available to a lot more advertisers, which is great. That's going to make it easier for smaller medium sized advertisers to benefit from some of this sort of advanced attribution that then informs the optimization process.
+
+Even for those advertisers that were doing more advanced stuff on the data analytics side, they can still now use this and benefit from it, because this is not just a reporting thing that then requires you as an advertiser to make changes yourself and use different setups. This is also going to impact how meta optimizes that ad set, those campaigns that use this sort of from within the platform as well. So that's beneficial to all, which is great.
+
+So meta, when they told us about this, have got some really interesting data on the testing they've done before they've rolled this out and they do that with all new features. They do a bunch of different features that they've done before they've done before they've done before they've done. So for those advertisers that are using incremental attribution during their testing process, they saw 46% more incremental conversions.
+
+Now that's an important point to think about here, incremental conversions when using it. 46%. That is absolutely huge.
+
+So if you're an advertiser and you felt like some of your ad budget hasn't been spent as wisely as you'd like it to be, it's been put in front of too much warm audience, too many people that were converted anyway. Switching over to incremental attribution could get you far more of those incremental conversions, those purchases that would not have taken place, those conversions that would not have taken place without the advertising. And 46% more of those is a really, really big deal, can make your budget go a lot further in terms of getting you what it is that you really want as an advertiser.
+
+Okay, so you need to set your campaign up in a certain way in order to qualify for incremental attribution. If you have different campaign types and things like that, then it's just not going to pop up as an option. I do think Meta is likely to roll this out to more different setups over time.
+
+But for now, you need to have website as your conversion location. You need to be using sales campaign and optimizing for purchases. You can also use product catalog based campaigns as well.
+
+So you can use product catalogs. With the performance goal, you can use, if I just scroll back up, with the performance goal, you can use either maximize number of conversions, as we've got here, you can also, Meta's in the process of testing this now, go for maximize value of conversions, which is a really interesting thing to be able to use incremental attribution combined with that performance goal. Because that's like quite sophisticated, not just to be, you know, the difference between optimizing for value of conversions versus conversions is Meta's going to put more emphasis on people that it thinks will not only convert, but buy more from you when they do so that their order value will be larger, being able to do that on an incremental basis, very exciting.
+
+So you do need to sort of make sure you've got certain things lined up in order to, to be able to use this along as I just mentioned. But so many businesses that run sales campaigns on Meta are going to have exactly that they're going to be using sales campaigns, optimizing for purchases, or product catalog campaigns, obviously optimizing for purchases, and they are going to be optimizing for conversions, maximize number of conversions, or maximize value of conversions. So you really, whilst it might seem relatively restrictive, that's going to cover the vast majority of advertisers optimizing for purchases and running sales campaigns on, on Meta anyway, right?
+
+So, so yeah, so that's what we've got for now, probably will be expanded to other campaign objectives. I wouldn't be surprised if we see this in lead based campaigns at some point, for example. Now, I've got a couple of other really important points to make about incremental attribution.
+
+I want to show you what the reporting looks like, the data that we get back, because that's very, very interesting. But first, I want to let you know about Hyros. Hyros is the best tracking and attribution software for Facebook and Instagram ads.
+
+It's a software that all the big players, including myself, use. I use it to track the results that I generate from my own ads. I also use it for all my organic content as well, which is really useful.
+
+So if someone comes through and books a call for our done-for-you services, for example, I can see exactly where they came from with a lot of accuracy, and that allows me to make decisions in my business, which is really, really helpful. And let me quickly show you how important this is. So I'm in my Hyros dashboard.
+
+I've isolated one of our meta ad campaigns, and I've created a report for it so we can see the data and you can take a look at this. So this campaign spent just under £2,000, generated £15,000 in revenue. But here's the really important bit, reported versus revenue.
+
+And in this column, we can see £12,000. Now, what that means is that out of the £15,000 that this campaign has actually generated, Hyros has been able to report on the full £15,000, £12,000 of which Meta was not originally able to see. So if we're just looking within our meta ad account, not using Hyros, we would have seen that £3,000 of revenue was generated from this campaign.
+
+And that is not true at all. That is a much, much lower ROAS number than the actual £15,000 of revenue that was generated. For a number of years now, Meta's ad tracking capabilities have not been as accurate as they once were because all sorts of privacy regulations have come into effect and it's only heading that way.
+
+It's only becoming more and more difficult to get accurate data and track our results as we need to be able to do. This is a relatively extreme case and the reason why is because Meta has a seven-day maximum attribution window. And this is an ad campaign that's retargeting for one of our services that people usually take a lot longer than seven days to make a decision on.
+
+So if someone clicks on an ad, they often won't convert within seven days, Meta's simply not able to see that data. And that's where Hyros comes in. The important thing is that you need accurate data and Hyros takes care of that.
+
+So if you want to get better results from your Facebook ads without actually having to touch your ads, go ahead and sign up to Hyros. There is a link in the video description. So let's take a quick look at what the data is going to look like when you use incremental attribution in an ad set, how the reporting is going to be different.
+
+I was provided a bunch of information by Meta and this was included in here, which is really, really valuable. So let's have a quick look at this. We can see here we've got results by attribution setting.
+
+We've got incremental attribution up here and we've got 23 purchase one day click conversion or conversions, 19 purchases one day click, but first conversion. You can see there's a differential between there, which makes sense because some people will just buy the once other people will buy something. Oh yeah, I'll add that and buy it again.
+
+Here's what's really interesting though. If you add in the engaged views, so these people didn't necessarily click, but they, an engaged view, they watched some of the video, they maybe clicked not off the ad to your website, but clicked on the other see more button to read more primary text or did something on the ad to show it's an engaged view. We can see that all conversions is 34, massive increase on the, on the 23.
+
+And then again, one day engaged view first conversion. So if we compare apple to apples is comparing this column here, 19 to the 31, we can see a significant increase in those conversions numbers, those purchase numbers once we add in the engaged views, even on an incremental attribution basis. So incremental attribution and incrementality is not saying we're only going to count the purchases occur when someone clicks as an incremental conversion, because if an ad is put in front of someone who was not, Meta believes not going to convert anyway, it doesn't necessarily mean they click on it and convert, but it might have been the thing that got the conversion to happen.
+
+It might have been the reminder that was required, for example, or the ad that was put in front of someone in the first place that then meant that they sort of Googled it, had a look at reviews maybe, and then came through to, to the website and purchase. And we've actually got some really interesting information around sort of user behavior changes where Gen Z, Gen Z are twice as likely to make a purchase without clicking on an ad. So we have to not just think about only using click attribution, so people who have clicked and then converting and tracking that within our metrics, we need to count those people that will do things like what I said.
+
+They'll see an ad, oh, that's interesting. Let me, let me quickly search for it. Oh, I'll look at the trust pilot reviews or whatever.
+
+Yeah, okay, that's good. I'm going to go through and make a purchase. But by they've done that, they're not going back to the ad, right?
+
+They're then just probably going to Google it or search for it, even on an LLM or something, and then come through and make a purchase, right? So, so we have to think about this, this demonstrates the difference here. And that's just an extra point that I wanted to make.
+
+But you can see that this is going to be done on an incremental conversion basis. And the data is going to look potentially a little bit more complicated, you're going to need to sort of think about what it is. I mean, there's loads of extra information on here in terms of different conversion events, like we've got incremental attribution down here for add to cart stuff and how that changes.
+
+And I think that as advertisers, this is an area where we're going to have to get better and an area where we can provide a lot of value to businesses, whether you're running ads as an agency for the clients or doing this for your own business, this is where you can gain a competitive edge is, is improving their data inputs and understanding them and feeding that back in to allow meta to optimize better. And this is going to be a big part of it. So a few things to note about when you're looking at incremental attribution ad set data in comparison to standard attribution data is that your results are likely to look worse.
+
+If you're optimizing for just incremental conversions and that's what's being shown to you, well, that's not including those other conversions that a standard ad set might have a part to play in that meta actually thinks may have occurred anyway. Now you could argue that that's wasted ad spend. I don't think that's always the case.
+
+But if you take those extra conversions out that may have happened anyway, and just look at the incremental conversions, well, the number of purchases, your return on ad spend numbers are likely to look worse, at least in the short run. So keep that in mind, you could easily switch over to incremental attribution, take a look at your data and be like, Oh, my results are much worse. Well, they might not actually be, it's just that you're now just reporting on those incremental conversions, you're missing out on some conversion data that you would have seen previously.
+
+And as we've seen with the 46% increase in incremental conversions when you optimize for incremental attribution, that you're likely to be getting more of what you really want with incremental attribution, even if that sort of top line number looks worse. So just something to be really aware of here and, and, and factor in when you're looking at your data. It's also important for me to state that money spent on people that may have converted anyway, and conversions that aren't strictly incremental, I don't believe is a waste of money.
+
+If you're putting your best foot forward with your brand, there are long term benefits in that too. The exposure, the reminder, you may have helped increase the average order value, there are all sorts of boxes to that you tick by doing that you don't need to strictly panic about, you know, oh, anything that's not an incremental conversion is a complete waste of money, right? Like all new big features, I strongly recommend that you test this and give it a go.
+
+When you do keep an open mind, you may well see better results, you might not see better results and want to come back, that's absolutely fine. I expect this is a feature that's going to get more efficient and, and more effective over time. New features, particularly around optimization, typically do as, as they learn.
+
+If you do make the switch, I imagine that the extra incremental conversions that you get by using incremental attribution will increase over time. Again, as your ad account learns and meta realizes how to get you more of what you've asked for, which in this case is incremental conversions, as opposed to just as many conversions as possible. When you are looking at the data, make sure you factor in what I just talked about.
+
+The top line number when you're using incremental attribution is likely to be worse, but that doesn't mean that your campaigns are performing worse, you might be getting more of what you really want, which are those incremental conversions with that setup, right? So you have to factor that in when you're, when you're testing it and thinking about it. We will be doing testing.
+
+I'll have more info to report on this for sure. Make sure you subscribe for that. And this is one of a, a suite of new features that Meta has been releasing recently.
+
+There's been so much change and it's really important as an advertiser to keep up. And with that in mind, I'd recommend that next you check out my video on value rules. Value rules is another massive new feature that gives us advertisers a big say in how Meta optimizes our campaigns.
+
+So a really big deal, a lot more control for advertisers, which is great. It's what we love. Go ahead and check it out if you haven't already.
+
+Another really important development in Meta ads over the last couple of months.

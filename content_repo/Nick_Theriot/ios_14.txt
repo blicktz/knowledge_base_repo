@@ -1,0 +1,119 @@
+Hey guys, welcome back to the channel. My name is Nick Theriot and today I have an exciting new video for you guys. Today I want to discuss iOS 14.5 and some of the things that have become challenges for some of the things we're taking action on with Facebook ads and Shopify.
+
+And I know we've discussed this a few times already, but I feel like it could be a weekly video just due to all of the updates and stuff that's happening with this so quickly. And again, as promised, I'm going to keep you guys as updated as possible as I learn new information, as I discover new information, and as I kind of like test and validate new theories and stuff like that, that's working for us. So with that being said, make sure you hit the like button and hit that subscribe button if you're new to the channel and let's get started.
+
+So iOS 14.5 and 6, I guess you could say now because 6 has rolled out. We're currently at about a 40 to 60% adoption ratio of 0.6. So 14.6 was released this past week and essentially 0.6 did was literally just a few like small tweaks and stuff with various apps and stuff, but it also accelerated the adoption of 14.5.
+
+So the people that were still not on 14.5 have been really pushed and pressured to get to 0.6 now as like it kind of sped up the process. I can't really explain it of how and why it did this, but I mean 0.6 was literally just some updates to a few bugs. So literally nothing major in terms of like the tracking and stuff, but it forced more and more people to upgrade their phone, which now we're probably around 80 to 90% adoption rate of 0.6 and 0.5, which basically means 80 to 90% of people are probably at about a 0.5 or 0.6, you know, opting out of tracking and stuff like that.
+
+We're seeing about a 90% opt out ratio for app tracking transparency, which basically means about 90% of people are saying no to be tracked by Facebook. So with that being said, what is going on? What are we working on?
+
+What's working for us? And what's an update on Facebook side? So when you hear about a 90% adoption ratio of people opting out of app tracking transparency, your first thoughts.
+
+I know my first thoughts is just like freak out because that basically means a 90% of data is not coming through on Facebook side. And while that is true, it's not at the same time. So the way Facebook tracking works is, and basically what Apple has allowed Facebook to do is it's literally giving them a one day grace window.
+
+So you literally can make a sell within a 24 hour time period and your highest priority event will be processed through to the ads manager. So if you literally go back to my channel, I have two videos, one, how to set up server side tracking and two, how to set up your pixel events. And it's important to have your purchase events as the highest priority.
+
+So essentially what happens is, is if you get a conversion within a 24 hour window and someone opts out, you're still going to get that purchase attributed to Facebook ads inside of the ads manager. So we're still seeing some like data not properly being processed like this. We're seeing about a 50% discrepancy in this particular data, but it's enough data for us to work off the MER.
+
+Now MER is called marketing efficiency ratio. And it's something that I think every advertiser needs to adopt in 2021. So with MER, essentially what we're doing is, is we're comparing Facebook spend to Shopify revenue on a day to day basis, a weekly basis, and a monthly basis.
+
+And basically what happens is if we increase Facebook ad spend by say 20%, then we want to see a 20% increase in Shopify sales. So let's say last seven days, we're converting at a two X. If you compare Facebook revenue to Shopify or Facebook ads, been to Shopify revenue, we're not comparing Facebook revenue.
+
+Cause we know that revenue is highly disrupted or highly, um, disrupted. So what we're doing is comparing the MER and what we're doing is let's say last seven days, we're doing a three X. Well, let's, let's bump up daily budget by 20%.
+
+We'll wait about three, four more days and look back. If Shopify revenue also bumped three to four, uh, 20 to, you know, bumped up by 20% or whatever percentage increase we did on Facebook. Then we know that, Hey, Facebook is working really well for us.
+
+It's giving us some sales. Let's increase it again. So after doing this a few times, we can really start to scale budget and stuff.
+
+And it's probably the most practical way to look at Facebook ads been to Shopify data. And we're also starting to look at little soft stats as well as click through rate, add to cart and stuff like that. Uh, we're kind of taking the whole thing into consideration as we're starting to scale up some of these campaigns and stuff.
+
+Yes, we're definitely kind of peaking blind, but at the same time, we're literally doing the smallest little things that's giving us sales, um, and really operating based off of those because we know that we're seeing less data in the ads manager and it's really hard to make super critical decisions. Um, but we're operating as best as we can with what we have. And that's something that we're going to have to become.
+
+We're going to have to become adaptable and do what we can right now. We have to understand that, Hey, we're not going to get the data clean and stuff cut like it was in 2019, but you know what? We're going to have to adapt and use what we have right now.
+
+And there's two mindsets I've been noticing in people lately. And that's, Hey, let's become adaptable. Let's do what we can then I'm seeing the other mindset.
+
+Oh, wow. I wish it was back in 2019 and they're still holding on to this dream of it being like that. But long story short, it's not going to be like that.
+
+And we have to adapt of what we have and be able to, you know, forward think with a adaptable mindset and abundance mindset that, Hey, what can we do with what we have right now? So just to recap, number one, just kind of going over the adaption, adoption ratio of 14.5 and six to two, MER marketing efficiency ratio. And then now number three, what is working inside of the ads manager?
+
+So we have seen some huge, huge impacts on our both food and both food campaigns. So our bottom of funnel and middle funnel campaigns, that's typically our retargeting campaigns. And one of the biggest things is we're starting to do now is just consolidate all of our retargeting campaigns into one.
+
+So literally you have a prospecting campaign, which is your tofu, your cold audience campaign. And then you have your retargeting campaign. Let's just call it retargeting campaign and we're literally putting everything in there.
+
+So you're, we have one ad set. So literally just retargeting campaign, ad set one, retargeting all. And inside there, we're literally having, you know, video viewers, 50%.
+
+We're having social engagement. So like IG engagement and Facebook engagement, 30 days, video viewers, 30 days. We got website visitors, 30 days, and then we're like excluding just purchases, 30 days or 180 days, whatever you want to do.
+
+So you're literally just consolidating into one retargeting campaign, which is going to greatly increase our retargeting size because if people are opting out, it's taking an impact on that retargeting. Cool thing is, is Facebook engagement, IG engagement, and video views is on platform retargeting. And that is something we still cannot opt out of, which is a huge plus for advertisers.
+
+Cause we still have that data that we can optimize around, or we saw that data we can target. So this is helping us out a lot with our retargeting campaigns, because what's happening is we're getting more data we can use. And we're just basically putting all of our retargeting ads in that one campaign and then just cutting off the ones that are not working and, you know, creating more like the ones that are working super simple.
+
+Now, the next thing, number four is lookalikes. So we've seen a great, big impact on lookalikes and more. So the, the lookalikes that are like at the cart 28 days or few content, 30 days, you know, the website events one, because obviously if, if a lot of people opt out of that, then they're not going to be in that custom audience and we can't create lookalikes around.
+
+So I'm still seeing a measurable impact on this. I'm still seeing some lookalikes work super well for some accounts and some really tanking. In fact, one account that's tanked hard, that literally focuses on iPhones specifically, they sell a product that's tailored specifically to iPhones.
+
+We just tested a purchase 30 day and it's working extremely well. So we're kind of still gauging the full impact of custom audiences and lookalikes and whether or not just because someone opts out of it, do they still go into that, you know, custom audience, but just can't be targeted with an ad, but you can still create a lookalike audience. And that's still a question that I'm still looking for the answer for.
+
+But I think the biggest thing for me specifically is we're going back to interest-based targeting and literally going back to the old fundamentals of Facebook, doing heavy, heavy audience research, understanding what key interests are related around our product and targeting those because those are again on Facebook, you know, data. So if we're relying purely off the pixel to do wide open targeting and the pixel ain't getting enough data anymore as it used to, then we need to be able to kind of steer the pixel in the right direction. So that's why we're going to go on back to our old roots of just interest-based targeting, like literally going back at the beginning when the Facebook algorithm was not as fine tuned.
+
+So that's the next thing we're doing right there. Now, number five is something that we just started testing with and it's starting to work really well is instant experiences and collection ads. So instant experiences and collection ads is more of like these ads that just basically pop up on your timeline.
+
+You click up on the pic, you click on like, like it usually has like a picture or a video you click on it and it opens up like a little mini shop on your timeline and it's on Facebook. It's an on-app event. So people can kind of browse some of your products and they click on a product and they'd get taken to the website.
+
+So what's really cool about these is people can preview some of your products, take a look at them and stuff, and then they go to your website and make the purchase, which really cool about this is you can create custom audiences based around instant experiences and people have taken events with the instant experience. So this again is another on-app event that cannot be opted out of. And we're actually seeing some really good results with instant experiences and collection ads at Tofu.
+
+So again, it's just really cool. It gives Facebook some good data that they can optimize around. And it's something in we're still testing with whether or not that is going to be super critical or not, or like, you know, really a game changer.
+
+So, but so far the entry level results are amazing. Now, number seven is we are stacking interests and lookalikes into big ad sets. So say for example, we'll have a CBO campaign with two ad sets, one interest based and one lookalike based.
+
+And then we'll have another campaign, an audience testing campaign where we're testing lookalikes, interests and seeing what works. And then simply we're doing is we're taking the single ad sets. So like, say for example, our audience testing campaign is full of just single ad sets.
+
+So say for example, we're targeting engaged shoppers. Well, there we have just one ad set, engaged shoppers with our best performing creative. If that particular interest works, we're taking that interest and putting it into our ad set in our CBO that has all of our interests stacked.
+
+And what we're doing, or what this allows us to do is we're giving Facebook a lot more, like a bigger targeting pool in one ad set, who it's giving them more options for, you know, finding purchase on day to day basis and giving it a lot of good data that it needs to optimize around our ideal customer. Now, number eight that I've been seeing a lot of people starting with is optimizing for a one day click attribution window. Now, what's really cool about a one day click is this is more specifically for people with say an AOV under 150 bucks, are people that we know get a lot of sales on a one day click.
+
+So again, a one day click has the potential of still reporting back to the ads manager, even if someone opts out. But cool thing about optimizing for one day click is within a seven day click window, we're telling Facebook that, Hey, someone's typically gonna make a purchase from us within a seven day window. When you optimize for a one day click, you're telling Facebook basically that, Hey, we're expecting people to make a purchase within 24 hours of visiting our website.
+
+I know for us, a lot of the brands we work with is specifically around that we've worked with a few like higher end brands, like for example, a gaming chair company with a four to $500 AOV, but with a lot of the brands working for right now, it's one day click windows, a 24 hour window is someone's expecting to make a purchase. So this is starting to work really well for us. And it's starting to work for a lot of people in the community I've been seeing has been working for it.
+
+Even Molly Pittman with digital marker has been recommending this as well. That's where I first heard about it. So I'm starting to test it and see, but so far the results are looking pretty cool.
+
+Now, number nine is more on email and SMS. So make sure you are collecting emails on your website, you know, do like say run a 20% off coupon code and have a little pop up. So when someone comes to your website and a little pop up saying, Hey, get 20% off on your purchase today and have a coupon code when they enter in their email.
+
+So do little things like this to start collecting emails, you know, run a giveaway, you know, um, run a giveaway, uh, promoted on your channel, your like organic following and stuff. I wouldn't recommend you're spending ads money on it, but organic following do some lead ads to coupon codes and build up your emails, do more email lists, marketing efforts and build up that list. Because as things have gotten bad, we've been doubling down on e, um, on email and it's been helping the brands work with profit more because now we're really starting to hammer their email list and squeezing out all the profits we can.
+
+So it's been like a really good gold mine for a lot of the brands we're working with. And same thing with SMS, SMS is something that still hasn't been hit hard yet with regulations, but it's something else we've been doing and really pushing people to opt in via SMS because it's really cool. Like earlier, I literally sent out a text message for one of the brands and within 10 minutes, we did like $300 in sales.
+
+Now, again, that's nowhere near what this brand normally does. This brand typically does about $5,000 in sales a day, but 300 bucks in 10 minutes from an SMS message that literally costs us like 20 cents to send out or probably 20 bucks to send out was really cool. Um, and really cool to see how quickly it works.
+
+Now, the last tidbit I want to leave off. If you're taking care of all of this is literally just have faith. This is something that I've been really struggling with as well with, you know, all this going on and impact results, but it's something that I've been really focusing on.
+
+Um, it's more of a mindset thing. It's not even, you know, like on platform tactical thing you can do. They're just having faith, having faith, things are going to get better, keeping that abundance mindset around all of this and looking for new ways to generate profits from your brand and literally leveraging and squeezing.
+
+Like, think of like, you know, right now all your marketing channels is like a orange and just squeezing it and trying to squeeze out all the profits you can from all the marketing channels, the best you can. So that way you can really continue to profit and still grow your brand. Keep an open mind, look for new ways you can kind of generate revenue with your brand that are more cost efficient and working as well.
+
+So like, again, you know, we've been experimenting, starting to experiment with Facebook groups, putting all of our existing customers in a Facebook group and started running like, you know, some type of like competitions, giveaways and sales and stuff for our existing customers. And also encouraging them to refer people to get discounts and some of these things like this. So like, we're really looking at new ways to grow these brands and just kind of having faith that Facebook will work all of this out.
+
+We've already been hearing rumors about a Facebook pixel 2.0. So like whole new pixel that we could possibly be utilizing. I've been hearing, um, you know, some of the testing results back from Facebook shops.
+
+So basically like think of like Shopify, but on the Facebook app itself to where you can just make all your purchases in app right there and you run your store inside the Facebook shop. So this is another cool way because it's against in-app events that people can't opt out of. So there's a lot of really cool things that's being worked on in the background.
+
+And again, you gotta think about it. This platform, this algorithm has been being refined for years. It's been getting better every, every day, but all of a sudden the main way this algorithm gets all of its data is literally cut off in the middle of the night through this new update.
+
+So Facebook is working on improving the algorithm, improving the way it gathers data, improving new methods we could utilize to continue to grow our brands. Because again, at the end of the day, Facebook makes all their money from ad revenue. So this is a very high priority problem form.
+
+It's not just going to be like, Hey, just, you know, don't worry about it. Like, you know, it'll work itself out. No, they are working on it.
+
+They are going to fix this and just have faith. Facebook is still the biggest social media app. It's still continues to grow every day.
+
+And with all of this, this is a high priority form and they will fix this. So remain calm, remain faithful, be smart about these decisions you make to your business and continue to adapt the best you can. Well, guys, I really hope y'all enjoyed this video.
+
+This was kind of like 10 tips or 10, just a little kid tidbits that we're kind of going through with right now at the agency, which is iOS 14.5. I really hope you're able to take some valuable information from this video. And if you are a e-com brand doing at least 20 K a month in revenue and would love for us to hop on a call with you to put together a game plan for you of how you can continue to grow your business through iOS 14, then click the link below.
+
+We'll put a tailored plan together to help you reach your goals. And then at the end of the day, if you will love to work with this, you can, or if you want to just take the plan and run with it, you're more than welcome to. Now, if you enjoyed this video, make sure you hit that like button and hit that subscribe button for new videos every Monday, Wednesday and Friday.
+
+Thank you guys so much for watching this video. I'm Nick Terrio. It's about that time.
+
+So I'll talk to you guys later. Peace.

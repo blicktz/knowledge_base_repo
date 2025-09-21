@@ -1,0 +1,165 @@
+Yo, what's going on guys? Welcome back to the channel. My name is Nick Viterio and today I have an exciting new video for you guys.
+
+Today, I will be showing you what to do when you're not getting sales with Facebook ads. I understand this can be very frustrating. You build these campaigns out, you launch it and then boom, you let it run for a few days and you get nothing.
+
+And you're like, what is going on? What can I do? I don't understand what's happening here.
+
+And that's why today I'm I've put together roughly about eight different things you can take action on that I've seen in the past that has improved performance. Okay. And this is things that's literally taken accounts from really, really high CACs cost per acquisition and brought it down to profitability.
+
+So following these steps can be very, very beneficial to you. With that being said, before we get started, hit that like button and hit that subscribe button for new videos every Monday, Wednesday, and Friday. That being said, let's dive into the video guys.
+
+So number one, and it's the easiest one, check your ad URL. So literally preview your ad, preview it, Facebook posts with comments, go check it out and click on the URL in the copy. Make sure that loads up to your landing page or wherever you're driving traffic to hit the little shop now button or learn more button, wherever your call to action button is on.
+
+Click on that and see where that goes. I can't tell you how many times we've had it where we had a little error in the URL and it was sending people to a 404 or was sending to people to a different product. We duplicated an ad with a different URL.
+
+We changed, we thought we changed the URL and we put a different creative and new copy in for a completely different product. And then we forgot to change the URL and we're driving traffic to the wrong product. So just check the ad URL.
+
+It's one of the easiest, first steps you can possibly do. Now, number two, check your Facebook pixel. Okay.
+
+So on the ad set level, they have the little like pixel number of like, you know, choose the Facebook pixel. You want to do this. It's only if you have multiple pixels of how have had multiple pixels on the account, make sure that pixel is aligned with the one you're running on your Shopify store or Wix or whatever platform you're currently on.
+
+Then go to your ad, click on like edits and you look down and be like, like the website events and like pixel tracking, make sure that all looks good. And then lastly, go to your website. If you're on Google Chrome, you can install the Facebook pixel helper and it'll actually like tell you and like show you a green check, uh, with this little Chrome extension to see if your pixels working properly.
+
+Go through your whole landing page and like add to cart, all that good stuff. Make sure that is firing at each stage. Also to look at your conversions API app inside of Shopify and make sure your tracking is at like the highest level, which includes service side tracking and your standard cookies tracking and make sure the Facebook account, all that is set up properly.
+
+I know there was one period of time where like Shopify had updated with like going from the old way of the pixel to the new way. And the pixel stopped working on one of our accounts and we stopped getting data back. So like you have to understand that, like you have to go through that process.
+
+Just make sure everything is looking good. Now, step number three, check your landing page load speed. So again, going back to when you click on a click on the ad to go to your URL and stuff, go back to that URL, click on that ad again, copy that URL.
+
+If where you're sending traffic, go to GT metrics.com and do a load speed load page, load speed tests. And what that's going to do is give you a test of how like efficiently your page is loading. And that can be a big factor right there.
+
+If your page is taking longer than two to three seconds to load, it's very difficult to compete in the competition. And in fact, the way Facebook's algorithm work is called bear, which is bids and an expected action rate, which is essentially bids is like how much you're bidding in the competition, which we don't cover on because we always do auto, but then expected action rate. So if you're optimizing for purchases, how good your page converts is also a big factor.
+
+And if you're driving traffic to a landing page with a high bounce rate, high bounce rate indicates that people are landing the page and immediately jumping off. That could be from a page speed that takes forever to load and people exit due to, you know, getting frustrated with that. And when they get frustrated with that, it shows that your ad isn't a good ad and it's going to give you a higher CPM, higher costs, and you're spending a lot more money than if you just fix that right there.
+
+So that's a big key right there. If you need to make sure you have a good two to three second load speed, use GT metrics.com. Look at your first continental full paint content, full paint.
+
+Um, that's the most accurate one because a fully loaded one can sometimes be 30 seconds, but the content full is like your, um, your initial, like when it loads up, there's the first initial things people see and make sure that's like a really good paint. That's something that from a basic level of how to improve that. Now, next one.
+
+Now, since we're on your website, again, go through the whole purchase process, go from where you're clicking on that URL, go to your website, hit out to cart, go, you know, follow the process you intend people to take and do it on the intended platform. So if 90% of your traffic's on mobile, go through the purchase process on your phone, go on your phone, click out to cart, go to purchase, purchase the product, like go through the full process. Okay.
+
+You can always refund yourself later, but go through the full process because you don't know what might be the cause of the problem until you actually come across it. So that's a very big key right there. So go through the full purchase process.
+
+That was one time where, uh, we went from like a three extra rest to one extra rest overnight. Like what is going on? Everything looked horrible on that Facebook ad side.
+
+And we went through about three days of this and you know, the client was like, what we got to do, something's wrong. We got to fix it. We got to change the ads and stuff like that.
+
+And I was like, okay, hold up, hold up. Okay. Nothing would drop that bad.
+
+So, and before I started changing the ads, it's like, let me just go through the checkout of the process. Let me just go through it. And when I did that, I went to their website, clicked on the URL, sending people traffic to went through my mobile phone.
+
+Okay, cool. Um, and I was like, wait, hold up. I noticed something different.
+
+The client had installed a little pop-up on their website for like, you know, so-and-so just purchased this, those little like private pop-ups and stuff like that. I was like, oh, okay. That's new.
+
+Okay. And then I hit add to cart. And then when I hit add to cart, a little drawer popped up on the side, right side of the screen.
+
+So that we could hit, you know, go to checkout and I'm about to go to checkout and the little pop-up popped up right over the checkout button. I was like, huh? Okay.
+
+So I let it go back down. And then I went to hit it again and pop back up. So it was very difficult for people to go through the checkout process because this little pop-up the client installed the same day on the row as dropping was the cause of it.
+
+And then we uninstalled and guess what? Roast shot back up. So from this is why as a media buyer, you know, and, and an agency, it's always good to go through the process a few times before you start making a bunch of changes in the ad account, because you never know when something little like that could be the cause of it.
+
+And again, if I wouldn't have done it on my mobile phone, the website was fine and I wouldn't have understood that, but the website on the desktop was only responsible for 10% of sales, whereas mobile was responsible for 90% of sales. So that's a very great case right there of why you just need to go through the purchase process from your ad, do it on your mobile phone. If not, if majority of your traffic comes from mobile.
+
+Now, the next one is the add to landing page since your product page is whatever, like a landing page is simply the page you're driving traffic to from Facebook. Okay. Call it as that.
+
+And if the scent is different, the scent is like, you know, imagine you're walking down the street, you smell these amazing, good burgers, like barbecue burgers. Oh, I'm getting hungry right now. You smell some amazing, good barbecue burgers.
+
+You're walking down the street and it's coming from this place. Like, all right, cool. I want to go eat there.
+
+I'm starving. You open it up, you walk in and it's just a horrible smell inside. Like it's like, maybe, maybe it's completely different.
+
+Maybe it's, you open it and it smells, I don't know, uh, Mexican food or like, you know, a, uh, like a, just a different type of food, not necessarily a bad food, just a different type of food. Like, wait, what a second. Whoa, whoa, whoa, whoa, whoa.
+
+I thought this was barbecue burgers. Nevermind. I'm good.
+
+I'm out. I'm not really hungry for Mexican food. Love it.
+
+I absolutely love it. Especially with a good mango margarita, but Hey, not today. It's not what I want.
+
+I wanted a barbecue burger and that's not what this was. So the same thing with advertising. If your ad is portraying something and they go to the landing page and they feel like they've kind of got to a place of like, wait, this doesn't make sense.
+
+This doesn't line up for the ad. You know, maybe like in your ad, it was very unclear of what was being promoted. And then people come to your landing page and it's like, Oh wait, that's what was being promoted.
+
+So like, you have to understand that and you have to really study going from your ads, your landing page and what that looks like, essentially. Okay. It's also got to branding.
+
+If you're like, you know, maybe a hardcore gym brand and you're promoting all this hardcore content and stuff. And then someone clicks on it. Like, yeah, I really identified this brand and you go to it and you click on the landing page.
+
+And it's just like, you know, little miss puffs, playhouse gym, where like what it's all pink and bright and everything like that. Like, like it has to be on brand as well. So on brand and whatever was being promoted in the ad is very clear.
+
+And that way, when they go to the landing page, they know what they're about to buy there. You know, they it's on brand, it's on theme, all that good stuff. You know, they smelt barbecue burgers.
+
+They wanted barbecue burgers. They are hungry for burger, barbecue burgers. They got to your landing page and it was barbecue burgers.
+
+It wasn't Mexican food. It wasn't Italian food. It wasn't Chinese food.
+
+It was barbecue burgers when they opened that door. So that's going to get people have a higher conversion rate, which again, will increase your sales and all that good stuff. Now, number six is your click through rate.
+
+So if your click through rate is absolutely terrible, I say below 1%, I've seen some as 0.23. I've seen 0.10. I've seen 0.5.
+
+I've seen 0.79. I've also scaled at 0.9. So I'm not saying that it's terrible to have below one, but ideally we want a one to 2% click through rate.
+
+And there's two different things that's going to be responsible for this click through rate, which we're going to get to in a second and how we kind of test for both of those. So just look at your click through rate. It's link click through rate.
+
+We like to look unique outbound link click through rate. That's the one we like to focus on as that's basically a unique outbound. It basically means that unique it's every person's different.
+
+It's not just clicks all where it's one person click on it five times. So it's unique outbound means they're going from Facebook to another source. And it's not just clicking on like see more or like clicking on preview the ad and stuff like that.
+
+They're clicking on a link to go outside of Facebook. So we'll get that right there. So we want unique outbound click through rate percentage.
+
+And then we also want one to 2% as the goal. Now, if you have a low click through rate, what you want to focus on is your audience relevancy. So if this creative does not fit your persona, it's not going to get good engagement.
+
+It's not going to get a good click through rate. So if your creative doesn't really speak to your persona, no good, but also to your audience you're targeting. So if your persona is gym wear and you're targeting, you know, ballerinas who don't go to gym at all, I'm making the weirdest assumptions, assumptions, tests like comparisons tonight, you know, you're not going to get a good click through rate.
+
+Okay. So you got to make sure that when you first launch a set of ads, either if you don't know your best performing audience, then test five to 10 different audiences with three to four completely different ads. So go create about three to four completely different ads, and then use those three to four ads to test against five to 10 different audiences, look likes interests, mostly interests, especially if you never launched ads before an ad account.
+
+But if you already know your best performing audience, and you already have a good performing audience, and that click through rate is really low and ROAS is really low and the sales aren't coming in or as much as you expect it, then hey, it's the creative issue. But if you have no confidence in that audience being a winner, then you got to go back to the drawing board and kind of test a bunch of stuff like this. And yeah, and if that's why I say test three to four completely different ads, because what's going to happen if you go and add it from three to four different angles, it gives you a higher step up because if you test a testimonial ad within four different colors for your very first time running ads, like that's going to make little impact.
+
+Where if we do three to four completely different ads, different angle, different creative angle, like all that good stuff, we have a better comparison of that click through rate across three different four different types of ads, if that makes sense. So number seven landing page optimization. So you're getting a good CTR, you're getting some sales and stuff, maybe just not the ROAS you want.
+
+You've tested a bunch of creative, you tested a bunch of audiences, you know, your ad to landing page sent is okay, it's good. You know, you've gone through the purchase process, you've done everything and you still can't quite figure it out. Then it's landing page optimization.
+
+So this is where you really need to kind of look at what's the common questions people ask you in the comments, common questions, and maybe the support inbox before people purchase and make sure those are answered on the page. Make sure it's, you know, clear, good title for the product, good description, no crazy long shipping times and stuff like that. Like it's easy for people to go through the purchase process and get everything they need.
+
+So that's really important right there. Now, after you optimize your landing page, you tested a few different variations, make sure you monitor CVR, which is your conversion rate on your website. So if you make some changes to your website, compare it.
+
+On the Monday, let's say you do it from Monday to Monday, you load a completely new product page up. What you want to do is you want to look at that product page. You want to look at that CVR from today to next Monday and see if it went up or down.
+
+If it went down, then, Hey, you want to resort back to the last product page because obviously this new product page is not working and you got to try something else on that landing page optimization for that. Now, here is the last one. This is number eight.
+
+I don't even have it on here. And that is just the product. And there's two ways to test the product.
+
+One testing different price points. So if your product is overpriced, if you have the highest priced product in the market, then what's going to happen is, is you're going to have a lower conversion rate. Cause why would I purchase your product?
+
+Now it's 30 to 50% more expensive compared to all the other products on the market that are cheaper. Cause whether you like it or not, when people are about to buy a product, they're also looking at all the other competitors. And if the competitors look like they have a more appetizing deal, then it's why would they choose you over them?
+
+And that's the big thing right there. You just don't have enough appetizing of an offer. I'm not saying you need to offer a big discount, but it could just be a better price point.
+
+It could be a better warranty. It could have some really good social proof, some really high level endorsements, um, some amazing quality, a brand, a community that goes with it. There's a lot of different things that go into an offer, not just 20% off.
+
+And that's something that people don't really realize. And that's gonna be a whole nother video for that. Now, number nine, and this is where we're going to end it right here.
+
+So that was price and offer. Number nine is it all alongside product as well. And number nine is people simply just don't want what you have to buy.
+
+And this is the really harsh reality. But after you go through all of this and you can't quite figure it out, it comes down to people just not wanting what you have to buy. And it's a really harsh reality.
+
+But after you spend a few hundred dollars, maybe a few thousand dollars in spin, and you've tested all of this and you still can't quite figure it out, then at the end of the day, it's just your product. Your product is just not what people want. And this is typically going to be more for people that are below that 10K a month range, but are people that are struggling to become profitable with their brand is that just the product is not appealing enough.
+
+So that's why when you're doing that creative and that copy testing and trying to really increase that CTR, it's all about trying drastically different things. So that way you can really pretty much roll the theory of maybe different angles of how you promote the product will cause for a performance increase. So that way at the end of it, you test it, literally everything.
+
+And then it comes down to just product of people not wanting what you want. And you just need to kind of go back to the drawing board with your product research or maybe figuring out more, better audience research that you're completely missing something about this product right here. And competitor research as well.
+
+You know, if you're promoting an iPhone 4 in 2021, you're not going to be able to compete on the market of iPhone 13s and 12s and stuff like that. So if your product's outdated, if your product has a more appetizing competitor, that's beyond more appetizing than yours. Then why would people purchase from you?
+
+They're just going to move past over your brand and not purchase from you. So you really have to understand those things. That is a big factor that comes in play and is something that people do not realize.
+
+So you have to understand that. And it's a very harsh reality, but it's a major, major impact in performance. And regardless of what agency you work with, they will not be able to fix that for you.
+
+So just be wary of that. Well, guys, I really hope you enjoyed this video. If you run an e-com business and you're looking to scale your business, we've helped multiple brands scale to six and seven figures by running their Facebook ads, their Snapchat ads, and their TikTok ads by running high performance, creative and performance marketing in their business.
+
+So if you would love to hop on a call, we'll do a quick ad account audit, business audit, which your brand simply click the link below to apply for that call. We'll hop on a call together and you can get that audit and you can either take it and run with it, or you'll have the option to work with me and my team if you would like. So I really hope you all enjoyed this video.
+
+Make sure you hit that like button and hit that subscribe button for new videos every Monday, Wednesday, and Friday. Well guys, it's about that time. My name is Nick Terry.
+
+Really hope you enjoyed this video. I'll talk to you guys later. Peace.

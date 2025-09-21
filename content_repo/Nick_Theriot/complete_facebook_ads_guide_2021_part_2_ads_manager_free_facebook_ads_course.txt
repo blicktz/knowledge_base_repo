@@ -1,0 +1,343 @@
+Yo, what's going on guys? Welcome back to the channel. My name is Nick Terry and today I have an exciting new video for you guys.
+
+Today, we'll be doing part two of our three-part Facebook ads masterclass of setting up ads and everything like that. Part two or part one, we actually went ahead and did the initial planning phase and research of how to put together some ads and creatives and everything like that. Now, part two, we're actually going to go inside the ads manager and put everything together for launch.
+
+So with that being said, before we get started, make sure you hit that like button and hit that subscribe button for new videos every Monday, Wednesday, and Friday. And don't forget to smash the notification bell because on Monday, we'll be doing the final part three of reviewing the results, making recommendations for the account for further growth, and as well making adjustments and stuff like that of how to scale it. So with that being said, let's jump into the video.
+
+Okay guys, so just to review with the last video, we went ahead, we did our planning phase. We looked through our competitors, we researched the product and you know, we kind of did a little bit of research of what's working with this particular product. Now, we also planned out some of the creative assets and gave you kind of action items to go take action on.
+
+We also looked at the funnel, top of funnel, middle funnel, bottom of funnel, and what type of creatives and stuff like that we need at each one of those stages. So now we got all of that back in. Now it's time to actually go and create the ads in the ads manager.
+
+Now, before we start, make sure you look up the video on my channel of how to set up server-side tracking with conversions API. Also how to set up your iOS 14.5 events with the pixel and everything. So you want to make sure you have all of that corrected, you know, connected properly, because I'm not going to dive into setting up the pixel or anything like that.
+
+That's very old and 90% of you guys have that, but if you don't have your pixel set up properly, make sure that's all put together. Now let's dive into the ads manager. So this is just kind of like a dummy account side account we have, you know, we haven't really spent anything in quite a while just to show you right there.
+
+So it's just clean new ad account. We spent a little bit, I think probably spent like a lifetime, like maybe a thousand dollars. Yeah.
+
+So nothing crazy. Now, before we get started, I do have a very specific set of columns I like to use. So let me just go to customize columns right here and you guys can actually copy this, these 18 columns.
+
+So literally put them in this exact order, delivery, set name, ad set name, budget purchases, you know, just go through this and copy this, you know, pause this video, whatever you got to do. Cause I really don't want to go through all this, but we want to make sure that we have all this kind of put together. So that way, you know, we know like when we do the review process and all that, we have this saved.
+
+And once you have all that before you hit apply, hit save as preset, and you can literally just like type it, you know, columns. So that way you can literally go right here, columns and just click on boom, and you're good to go. And you can see right here, just a few things.
+
+We can see our purchases, our purchase conversion value, our reach, our CPMs, our frequency, our unique outbound CTR. So outbound click is anything that takes you off of Facebook and unique means we only want one person. So like if I go click on an ad five times, it's only going to show up as one click because it's the unique outbound click and as well as cost per unique outbound click.
+
+So this is all just going to be just for better data visualization and stuff as we review this. So once we get that out the way, let's go and create our first campaign. We're going to hit create conversions every single time.
+
+If you're running e-commerce, if you're looking for purchases, conversions without a doubt, don't be messing with any of these other campaigns. We're going to call this top of funnel and we're going to call this initial test. I'll just do a initial launch.
+
+So we're going to skip ad set. Oh yeah, we'll create an ad set. We'll just call this open and add, add.
+
+We'll change that up in a second. Now we want to make sure we turn off campaign budget optimization. Do not turn that on just yet.
+
+That's something for later on. So leave that off. Now we're going to go right here to open and we want to go through this.
+
+So website, make sure that's selected conversion event. Make sure it's purchased. If you cannot have access to purchase yet, cause you haven't had a purchase yet on your store, make sure your pixels installed properly, go to your website, go through the checkout process, make a purchase on your store, and then give it a day or two refund yourself back.
+
+You're good to go. So make sure that's set up. Now, what you want to do is for daily budget.
+
+Now this is where it's going to get key. So we're going to create, we're going to create, let's say 10 ad sets. So let's, let's maybe do a little bit less.
+
+Let's do five ad sets. We're going to create five ad sets. And what we're going to do with those five ad sets is we want to set the daily budget to be our target ROAS, our target CPA.
+
+So for us, it's $25. So 25 times five, it's $125 a day. We'll start off spending.
+
+Now, if you don't, if you can't afford that, then the next thing is doing like a $10 or $5 ad set. The more you give it, the better data you'll give to Facebook and the quicker we'll test and figure out what, you know, you need to optimize around. So again, you can do your target CPA.
+
+So I want a ROAS of 3X for this account and the AOV for this account, the average charter value is $75. So to get a ROAS of three and someone spending $75 from the store, my cost per purchase needs to be $25. $25 times three, $75.
+
+Three extra ROAS divided by $75 is $25. So my target CPA is $25. If you don't know what your AOV is yet, then select the, um, the product you're going to like your sell.
+
+If you're selling a hundred dollar product and you want to two extra ROAS at least, then your target CPA will be $50. So that's just how it needs. That's how you need to do it.
+
+We're going to do a start date for tonight. So we're going to do 14 and this is going to be 12 AM. So always schedule it for midnight to run exclude.
+
+I want to exclude website visitors 30 days and I want to do purchase 180 days. Oh, and it looks like I haven't even created that yet for this account. So do a custom audience, website.
+
+Next we're going to do 180 purchase audience name TS purchase 180 days, create audience. Now the next thing I'm gonna do is create a custom audience as well. I'm gonna go to Instagram account and I'm gonna do 30 days.
+
+Everyone new TS IG engagement, 30 days, create audience. And we're going to create another custom audience. And we're going to do Facebook page.
+
+We're going to do 30. We're going to do TS Facebook engagement, 30 days. And essentially what we're going to do right here is we want to exclude all of these because this is a cold audience.
+
+We want people that are never seen the brand before to be exposed to the brand. So we want to make sure no existing purchases sees our ads. We want to make sure no one who visited a website recently sees our ads.
+
+We want our Instagram engagement 30 days. We want anyone who's engaged in Instagram lately to see our our Facebook ads or our Facebook. So we'll make sure that's all excluded right here on the custom audiences and then age group.
+
+So, you know, if you don't know your age group for who's purchasing, then that's okay. Leave this be, but we know for hours, it's typically people 25 to 65 plus, to be honest, and all genders. And you can leave detail targeting expansion on and let's go down.
+
+Let's do manual placements. I typically like to leave automatic placements on, but you can turn off just audience network and messenger. Keep it simple.
+
+See more options. And I typically like to do attribution setting for seven day click, but lately across our accounts and a few people I've been talking to seven day click or one day view has been working best. Now we're not going to do any targeting.
+
+That's no targeting. So one of these ad sets, we want to do a fully open ad set. So let's call it USA.
+
+We're going to do 25 to 65 plus or hold up USA male plus female little spacer right there. 25 to 65 plus we're going to do broad and we're going to do, let's see, automatic placements, Facebook plus IG, because we're doing all my placements just on Facebook and IG. We're not doing it across messenger or those other platforms.
+
+And then we're going to do optimize for a purchase. So I'm going to leave that like that. Cool.
+
+Now what I'm going to do is hit next and we're actually going to create our ad. So we're going to create anywhere from like for your initial test, you want to create anywhere from three to five ads and each ad will be a different angle. So we're going to do our first ad, add angle.
+
+Let's just do add angle. Let's do a gifting angle. I'm just going to call it like that just for our initial tests, dynamic formats and creatives going to turn that off single image or video.
+
+And also to make sure your Instagram and your Facebook page is selected. Now I'm going to add our media, add image, my upload, and then already have our ads set up that I want. So this will be the perfect gifting.
+
+So we got two models, like I literally just approached the photographer, said, Hey, can I give you a product? Take some pictures with it. Told them what we needed and they got it done.
+
+So here we go. So keep it simple like that. Let me edit group.
+
+Let's see. I want to crop this. I want to do a square.
+
+Let me just pull it over a little bit. I want the product to be centered and I want at least like it to be the main like image people see. So there we go.
+
+Um, and then we're going to call it to action. We're going to do shop now, always go back to our website. I'm going to grab our little, uh, URL.
+
+I'm going to delete this variant behind it and just make sure it's like just a standard. There we go. Cool.
+
+Go ahead and launch that website URL. Sweet, sweet. So now what we want to do is the primary text.
+
+So primary text, we're going to toss in your ad copy. Again, you should have had all this taken care of already. I didn't, but again, you should already kind of know what ad copy we want to use.
+
+So again, this is the perfect gift. We want to go for like a gifting angle. So we're going to do the most perfect, perfect gift for your sweetheart.
+
+There we go. Now, again, I would probably go with like a little bit longer of an ad copy, but just for this video, I'm going to go just something super sharp, go to emojipedia, grab me a red heart. We'll come right here.
+
+Most perfect gift for your, your sweetheart. And you can toss in like a testimonial, maybe a, or like a review, some five stars, a little bit about your business and everything like that. But I'm just keeping it very straightforward.
+
+Starting off. Um, definitely would want to go at least two or three sentences, but again, just keeping it simple for this video headline. We're going to just do personalized metal infinity sign, and then newsfeed description.
+
+We're going to do made in the USA. Cool. And let's do the most perfect gift for your sweetheart.
+
+And let's actually grab that you are elegant. Let's copy it. And let's get put, get yours today here.
+
+There we go. Maybe even personalize yours today. Now, what's really cool is that I went broad.
+
+I went gender for, you know, male and female. So people can take this either way. If a girl's seeing this and get it for their guy, their guy's seeing this, you can see it for the girl.
+
+So that's also what's cool about like this. Make sure your domain is selected. You need to make sure your domain is connected to the ads manager.
+
+Cool. Now this is a great ad again, just going for that. Perfect gift for your sweetheart personalized yours today here.
+
+I do don't like how cluttered the link is. So I'm just going to delete this and it's just going to make people, you know, it's just gonna make people have to like actually search on the website. That's okay, but it just looks a little less cluttered and let's actually remove a C let's do order today.
+
+There we go. So now it's just very simple, straightforward, easy. So let's go ahead and hit control D to duplicate this ad.
+
+Let's see. Now this angle right here was the unique piece for your far wall. So this is the other angle we were going to do.
+
+And what we're going to do is we're going to delete this add image upload and the wall right here. Now it's not the perfect like way to illustrate this product because it's not hanging on the wall. She's kind of sitting there, but Hey, it's still something.
+
+So we're going to send it with that. There we go. And we're literally just going to replace this part, empty space on your wall.
+
+Not sure how to, let's see, how to empty space in your wall. Let's just do that. This is, this is the most perfect way to add a personal touch.
+
+Cool. And then again, we're going to grab that URL. Now this is probably not the most perfect product to do like the empty space on your wall, because it's still, you know, it's still kind of like, Hey, you still have to have a partner and stuff like that, but Hey, we're going to go with that.
+
+And then there we go. I'm just going to delete that. And so it's from where else was the perfect way to add a personal touch to your home.
+
+Cool. Cool. So got all this put together and all I'm going to do now is I'm going to go ahead and hit publish.
+
+Now, what I want to do is for you guys, I would recommend three to five ads you want to create. And what you want to do is each one be completely different approach. Now, this is the best route to go.
+
+If you're spending like say a hundred bucks, you know, you know, it's either from $25 to a hundred bucks a day. If you're going to spend $400 or more, then I have another strategy that's more advanced for people with big spenders, but this is like the easiest route to at least start off with just to get some basic stuff being tested. But again, from, from a hundred to four, um, from literally zero to 400 use this route.
+
+If you're gonna spend $400 or more, what I would do is, is I would literally create a campaign. Each campaign's a different angle and each campaign has about 10 ads that spend about a hundred bucks a day. So you spend a lot, like literally going from $0 to a few hundred dollars a day and spend, but it's not applicable for a lot of you guys watching his channel.
+
+It was only spending anywhere from, you know, zero to two or 300 bucks a day. Now, what I did was, let me actually just delete that. So, uh, let's go back.
+
+So what I did was, is I went inside my campaign. Now this is all published, but what I want to do is I want to duplicate this. Just going to hit control D and I want to start adding in other interests inside of here.
+
+I'm assuming a lot of you guys probably are just getting started. So I'm not going to really do any lookalikes, but I'm just gonna do more sleep interests. So just for this initial, like part of testing and targeting.
+
+So what I'm gonna do right here is I'm gonna go to edit. And then, so with this product, we can definitely do like people who are in a relationship. So let's do relationship status.
+
+I feel like you do it more married, but we can just go broad in a relationship for the specific product. So we can get like, just kind of a broad touch. I'm hit control D to duplicate that ad set again.
+
+And we're going to do a different one in the other one. So go back right here in relationship. We're going to turn that one off.
+
+Now let's do romance. It's kind of like a love, you know, like people are like interested in like love and stuff. I'm just going to double click on this, copy that, go back up here, change that delete pace.
+
+Cool. Let's do another one. Let's do one more.
+
+And this one right here, let's just call this one. Let's see. Let's just type in love, love songs, love story, love song, falling in love.
+
+Let's just do love in general. Oh wait, hold up. Let's do homeowner.
+
+There we go. Let's see. I'm kind of looking for size.
+
+I'm looking for something over own home. Let's see. Let's go to browse demographics, life events recently moved.
+
+Let's try that. So like people who just got a new home and stuff. And like that way we're also kind of targeting that other specific angle, essentially of, you know, need something new and stuff like that for your home.
+
+So, but I would do anywhere from five of these to 10 of these, and I'm not going to do them all just for sake of this video. And I'm hit publish, but which you'll see right here, basically we're trying to do is we're trying to spend a little bit on each one of these audiences because we're trying to figure out and establish what works. What's the winning audience that we can start spending money on.
+
+And then each side of these winning audiences, they all have the same ads. So that way we can get a clear picture of what's working. Now, the next thing we want to do is start creating our other campaign.
+
+So our bottom of funnel and middle funnel, let's go back to create, go back to conversions. We're going to call this bottom or let's call this middle, middle of funnel. We'll just hit continue.
+
+Now middle funnel, I just create one ad set inside of it and I turn on campaign budget optimization. And we're going to start off with a budget of say like $15 a day. We're going to hit next.
+
+Uh, so we're spending a hundred bucks top of funnel. I'd recommend about 15 to 20% of your budget to go to middle funnel and in about five to 10% of your budget, go to bottom of funnel. Now for this one, we're going to do USA Mel plus Fino as well.
+
+And we're going to do eight, uh, we're just going to do 18 plus we're going to target everyone because that way we can target a variety of different people. Now for this one right here, we're just going to type in, I'm just going to type in all warm audiences, seven days. So we're going to target a seven day audience for this specific campaign and AP, Facebook and IG, and then we're going to do optimize for purchases.
+
+So what we're going to do right here is we're actually going to start adding in our custom audiences. So I'm gonna do a custom audience right here. I'm gonna do website.
+
+I'm going to do all website visitors. I'm gonna do seven days now to determine your buying cycle. Typically, if you have an AOV of zero to 150 bucks, it's going to be about seven days, but products with bigger values need to have a longer retargeting window.
+
+So I recommend selling a seven day audience. You can also test a 14 day audience and you can also test a 30 day audience. I know for this specific brand, about a 30, 30 day audience, we see about a two to three extra as a 14 day audience.
+
+We see about a two and a half of three and a half for us and a seven day. We see like a three to four and a half row as because we know that these people are purchasing very quickly. So we want to hit those people as soon as they engage at the brand.
+
+So I'm just going to type in TS, which is my web, my agency's Terra solutions, seven days, create audience. Now, I'm gonna create another custom audience. I want to go to Instagram account and we're going to go to seven days.
+
+And then we want to do is go to TS, IG engagement, seven days, create audience, create another custom audience, go to Facebook because we need to do Facebook as well. And we're going to do seven days. Okay.
+
+TS, Facebook engagement, seven days. Okay. Create audience.
+
+Cool. So now we have all of our warm audiences and I don't know why I excluded that. We want to include that, but now we do need to add some exclusions because there's a few people we need to exclude.
+
+So one, we need to do purchase. So we don't want anyone to get into our like purchase audience. Let's just do purchase 180 days.
+
+And then we need to create two new ones. We're going to do website again, but this time we want to select add to cart seven days. TS, add to cart seven days.
+
+Create audience. Now we're going to create another custom audience and we want to go to website next and let's do initiate checkout seven days. TS, there we go.
+
+And I want to make sure initiate checkout, add to cart and purchase is excluded because I don't want anyone in my high value bomb of funnel audiences to be included in our middle funnel. And that's it. I'm literally going to leave everything.
+
+I'm going to turn off detail targeting expansion. I'm more of a conspiracy theory person on this specific right here of people saying that if you leave that on with retargeting audience, it'll put, start putting some warm, become cold people in your retargeting buckets. That's not what we want.
+
+I haven't, I don't know if that's true or not, but I've been seeing a lot of people say it. So I'm just going to do it just in case, because I don't want anyone in my cold audiences to get in here. We go to manual placements and I'm going to do this and this, and then I'm hit next.
+
+So now we're going to create our middle funnel ads and I'm going to create a bunch of them in here, but for this specific video, I'm going to create one. Again, if you go back to the first video, I discuss what type of content and what type of stuff when you portray in here. And that's specifically building more trust, social proof and credibility with your people that are aware of your brand, but are not sure if they're, you're the right person for that particular product.
+
+So let's go right here. Just like that. I'm just going to call this middle funnel ad.
+
+Number one, I have better naming conventions and stuff. And I'm not working on like client accounts and stuff, but just to keep it for this specific video and I'm going to hit add image or no, actually add video because I have a video for this right here. So go right here to MoFu.
+
+Oh wait, actually I got, I got it mixed up. This is my MoFu. Sorry about that.
+
+But so for my middle of funnel, what I did, I like to leverage a lot of UGC right here. I like to leverage a lot of customer testimonials, stuff like that. So I got this girl to film a video, just talking about how awesome this sign is.
+
+And let me go ahead and grab the link to it. I'm going to paste it. So now someone sees an ad, they get introduced to this product in our tofu in our middle of funnel.
+
+They didn't purchase yet. They didn't add to cart yet. So now they're seeing this ad of a person enjoying the product and loving on that product right there.
+
+So let's go right here. And while this loads for our primary text, we're just going to start typing in some stuff. So I like to just kind of grab like reviews for this one right here.
+
+So we're just going to scroll down. See, so I'm going to copy this one right here. I'm just going to copy half of it.
+
+Let's go right here. Copy that part. Cause I don't want the full thing.
+
+And then I'll do something like star copy, go back one, two, three, four, five over. Cool. So it's just really leveraging that testimonial.
+
+And then I'm going to copy the link again and just paste it in there. Get yours today. I'm going to do a finger pointing down.
+
+There we go. Sweet. I like that a lot.
+
+Okay. So now that our middle funnel ads kind of put together, we do need to put our headline and let's see headline headline for middle funnel. We get these people that are aware of everything like that.
+
+Um, let's just put this, this is more of like the gifting angle, the most perfect gift of 2021. So just again, something simple straight to the point or reinforcing a fact, this whole ad reinforces the fact they seen in the top of funnel ad, as well as I would duplicate this and also create a middle funnel ad for more of that angle of like the, uh, you know, unique piece on the wall. But again, just for the video, keeping it simple for middle funnel, I typically create again, three to five ads.
+
+I'm only going to use this one ad set for everything. That's it. I'm not creating more ad sets, not doing one ad per ad set.
+
+I'm just doing for middle funnel, a bunch of ads and one ad set. So hit publish on this. Let me just double check.
+
+Make sure everything looks good. All looks good. Hit publish.
+
+So just to show you the ad, I'm gonna show it to you in a second. Let that fully load. Let's go to preview, see Facebook posts with comments.
+
+And again, it's just a girl holding it, talking about it, how much she loves it, et cetera. It's really cool. So over 10,000 happy customers.
+
+Can I wait to order more top high quality signs for gifts? Get yours today. Most perfect gift of 2021.
+
+So really just straight to the point, really focusing on that specific gifting angle. Now, one thing I did forget to do was schedule it for midnight, but Hey, that's okay. I'm going to give her control budget at campaign level.
+
+We're going to just have one ad set with all of our ads for middle funnel, and we're going to turn off the ads that aren't doing well. But again, that's for next video. We're actually review everything and make our adjustments.
+
+So now what I want to do is go ahead and create our bottom of funnel. So bottom of funnel, again, are people are price sensitive. They've seen our middle of funnel, our top of funnel.
+
+Now it's just, Hey, they've added to cart a price sensitive. They just don't know yet. If, uh, you know, something with the price, it's upsetting them.
+
+So to continue and campaign budget optimization on, we're going to set this to $5 a day. So it's been about a hundred bucks, top of funnel, middle funnel, we're spending about 15 bucks, bottom funnel, $5. In fact, actually, we can even probably even set this to $10.
+
+There we go. 14.5. There's a lot less data at these stages.
+
+So you don't really need that big budget essentially. So USA 18 plus always do that. USA male plus female 18 plus, and then we're going to do all hot audiences seven days.
+
+Cause again, it's, it's bomb a funnel. We're gonna do AP on my placements, Facebook plus IG and optimize for purchase. Cool.
+
+Start date. I'll make sure it goes for midnight tonight, 12 00 AM. Cool.
+
+Now audiences, we already created our ads, card audience. So adds a cart seven days, initiate checkout seven days. That's it.
+
+That's all we want. And we're gonna exclude purchase 180. There we go.
+
+Cool. Leave all that open reason why, because we're only, we're segmenting our audience, our top of funnel, but if some 18 year old wants to purchase a gift for someone think cool, they can be putting our ads. So, cause it'll specifically come to our website and be actually interested versus top of funnel.
+
+We want to segment the right people into our group. And then we're gonna call this bomb a funnel ad number one, select your page. Let's turn that off.
+
+Let's do single image or video at image upload. Oh wait, actually I got a video for this. So let's do add video upload.
+
+And then actually like I said, I saved this off. I saved this wrong. This is actually the video, not, um, you know, it's actually the most food, the bomb funnel ad.
+
+I wanted to do it by save that's both. So, and let's go ahead. And again, let's copy that link paste.
+
+So we get all that put together and then, yeah. And the primary text. So this video is just very short.
+
+It's took my editor like two minutes to do real quick, just to put like a little quick thing right here. And we're gonna just do, again, these people are price sensitive. So end of summer sale 20% off site wide.
+
+Let's see, hold up ending soon. Last chance to grab or last chance to save 20% off site wide with our in of summer sale. And we can do like summer.
+
+There we go. And I'm gonna copy this again. And now I'm just gonna put the website again.
+
+There we go. Just to make it show up a little better in the ad ending soon. Last chance to save 20% off site way for end of summer sale.
+
+Don't miss out on our, don't miss out on our biggest sale yet. Boom. And again, don't do like me actually get all your ad copy creatives, all that, like that plan out first headline.
+
+I'm literally gonna do last chance to save 20% off. It's like, Hey, so last chance to save 20% off. If you want it, come get it.
+
+Newsfeed description. I'm gonna have it really been worried about that. Cause my headlines have been long enough to where it covers it, but I'm just gonna do end of summer sale ending soon.
+
+There we go. Cool. That looks good.
+
+That looks very good. And I'm hit publish. Simple as that.
+
+So basically what we're doing right here is we got our bottom of funnel built out. We got our middle funnel built out. Now it's just, we gotta wait for all this, uh, load.
+
+And then what we're gonna do is once all of this is launched, I'm gonna let it run for a few days. And then I'm gonna record the next video where we're going to look at this. We're going to figure out what we can scale.
+
+We're going to figure out what's the winners, where we can optimize off and kind of like give you a real world view of how I would manage this specific ad account based off of, um, you know, what we've been given essentially. So review the results. I don't want to touch this account for three to four days.
+
+Just let it spin, let it go. Stay away from it. Don't look at it.
+
+Once those ads go live, you get the location, your ads are live. You look at the account, you can see delivery active, let it run for three full days. Let it go.
+
+Do not touch budgets. Do not turn off ads. Do not turn off ad sets.
+
+Just let it run. Come back in three days and then we'll adjust. So today is Friday for me.
+
+I'll probably film next Friday for this specific video. So I'm gonna let it probably just run until then. So I get back to this account because we're spending a couple thousand dollars on this account.
+
+So a hundred bucks for this little secondary, secondary account, not a big deal at all. So, but yeah, guys really hope you all enjoyed this video. Just going through setting everything up.
+
+If you are an e-com business owner and you're, you're making at least 25 K a month in revenue, and you would like to work with someone that can do all this for you, for your business. We've worked with a lot of e-com brands. We've helped multiple brands, six and seven figures with Facebook ads and cross-channel advertising.
+
+Leveraging a very heavy strategic creative approach is what really helps us a lot stand out from all the other agencies. So with that being said, if you'd like to work with this, let's hop on a call, do a little strategy call. And based off that strategy call, you get to keep what we give you.
+
+You can run with it, do yourself, or you have the option to work with us. Click link below to book that call. Now, if you're making less than 25 K a month and you would love to, you know, I still have an offer for you as well.
+
+So stick around. If you're making less than 25 K a month, sign up for elegant e-com. Elegant e-com is my course where I'm gonna show a lot more in-depth version of this specific video of going through everything, the planning process, the strategic process, the ad creation process, all that good stuff.
+
+We're gonna go a very deep visual of that area right there. So if you would love for that course, it's regular $1,000, but for the first 50 people who purchased the course, they're gonna get for $500 USD. So make sure you sign up to do the VIP list.
+
+Cause that list is already has a few hundred people on it. And those people are gonna get first access to it, um, before I release it live on YouTube. So make sure if you want to for that good price to sign up for that VIP list.
+
+Well guys, thank you all so much for watching this video. Make sure you hit that like button and hit that subscribe button for new videos every Monday, Wednesday, and Friday. You especially want to smash that notification bell, because I will be posting the third video, the results, the finale of this specific series right here coming up.
+
+It'll be next Monday. You're probably watching this on Friday. It'll be next Monday.
+
+I'll be posting the results. So make sure you stick around for that. And, uh, it's gonna be a blast.
+
+So thank you guys so much for watching. My name is Nick's Herio. Hope you have a marvelous day and I'll talk to you guys later.
+
+Peace.

@@ -1,0 +1,137 @@
+Right now, Meta is in the process of rolling out a brand new and very exciting Facebook advertising feature that is free to use, it'll help us advertisers get better results, and it'll make optimising Facebook ad campaigns a lot easier. Let me show you what I'm talking about. So to demonstrate this, I'm in an example Facebook ad account.
+
+I've got Ads Manager up in front of me, and what we can see here, part of this new feature I'm going to talk about is this actions column. We see we've got 91 plus 9 points alongside this campaign. This is part of what I'm going to talk about.
+
+I'll come back to this later on because it's a more detailed area that I want to cover first. So to have a look at this, I want you to go from Ads Manager, where I'm right now, and click on this account overview button over here. And when you come through, you will hopefully see this opportunity score.
+
+And that's what I'm going to explain and talk about and show you how we can use and how it's all going to help us advertisers get better results, which is fantastic. Now I do need to quickly say at this point that like with all new Meta advertising feature, this hasn't been rolled out to everyone yet. It is in the process of being rolled out.
+
+So some ad accounts will have it. Most of our accounts actually have it at this point. It's been quite a quick rollout, but not all do.
+
+You may well not see this. If that's the case, it might just be something that's going to come to you shortly. Okay.
+
+So what is the opportunity score? Basically what Meta has done is they've gamified providing recommendations to improve performance from our Facebook ad campaigns, Facebook ad sets, and they are giving specific recommendations, very valuable and specific recommendations on how to get a higher score, which they say will in turn lead to better results. So we can see here, it says beneath opportunity score, applying more recommendations will likely increase your account score and can help your performance potential over time.
+
+Okay. So that's what opportunity score is, but sort of how does it actually work in the details and what does it mean for this advertiser? How can we go about using this?
+
+So the first thing I need to say around what this means is I don't want you to think that a high score necessarily equals great results. Okay. Because you could have a campaign that's optimized perfectly.
+
+It's exactly how Meta would recommend you optimize a campaign. But if the product or service that you're selling, no one wants, it's not going to do well from a results standpoint, from a return on ad spend, from a cost per conversion, depending on what it is that you're tracking. So it doesn't necessarily equal good results.
+
+That's very important. It just means that your campaigns are set up and optimized correctly, and they're trying to get the best possible results with everything else factored in. But with all things being equal, campaign with a opportunity score of 60, and you're able to take that up into the 90s, that will most likely improve performance, assuming you're selling the same product, service, etc.
+
+Okay. So this is definitely something that we want to pay attention to and use. It's just not a guarantee of fantastic results.
+
+There are other things that come into play, and I wanted to make that clear. So how does it actually work then? So we've got 91 out of 100.
+
+It's a score out of 100. I said, meta has, to some extent, gamified this process. And we can see we've got here performance recommendations.
+
+So in this ad account, we've got nine points available, and there are two recommendations being made. Okay. And the recommendations that you see will absolutely depend on how your campaign and ad account is set up, what you have got, what you haven't got.
+
+This will vary a lot depending on different ad accounts. So you may well see alternative options. And you can see we've got two recommendations here.
+
+You may have more, you may have less. And they've given a point to how important each one of these is in terms of proving performance. So the first one that we've got here, the meta is recommending, is maximize the data measured on your website and reliably share it with meta.
+
+How? The conversions API gives you more accurate data about the conversions you get from meta ads. This can improve audience targeting and help lower your cost per result.
+
+So basically what meta is recommending here is set up the conversions API. And you can see we've got start set up over here. So this ad account does not have the conversions API set up, which is definitely something that I'd recommend people do.
+
+You want the pixel and you want the conversions API operating properly. That gives you the best possible data, which as meta has already said, helps improve audience targeting and helps get better results. Now, not only have meta given this recommendation, they've also said that it applies to, you know, campaigns to his place to come in campus because it's two campaigns running within this, within this particular ad account.
+
+This is something that would apply across all campaigns in the ad account. All campaigns, I should say that are optimizing for an action that takes place off of meta because that's what you need to convergence API. If you're using instant forms, it doesn't make any difference.
+
+So meta is going to give us that information. And they're also going to let you know the potential outcome. So what they think will happen in terms of an improvement to your results if you take this action.
+
+So here we've got potential outcome, 13% less cost per result, which I would argue is absolutely something worth doing to get the conversions API set up. Not that difficult to do. If you're not very technical and you're struggling, you can always find someone on Fiverr at Upwork, pay them a very small amount of money to get this set up for you.
+
+And if it was to get you 13% better return on ad spend or 13% lower cost per result, why would you not go ahead and do that? So that's one of the recommendations it's given. Another one here applies, you can see it says ads, just one ad.
+
+So that's a good thing to, okay, what does this actually apply to? And it says low results for ads with creative fatigue. So I'm not going to read through all this, but basically what meta is saying is that this particular ad has creative fatigue.
+
+So people have seen it a whole bunch. You've got some ad fatigue here. You're better off pausing this, making changes, introducing other options.
+
+And again, they give a, what they feel is a likely difference, a likely change that will happen if you go ahead and take this action. And it has up to 27% more results. So over the seven days after taking this recommend action, that's what they would expect to see based on all the data that they've seen from other advertisers, where an advertiser has run into creative fatigue in an ad, they swapped it out for a new one, put in some new ad creative, and on average seen a 20% improvement in results seven days after doing that, which again is really significant and really useful to be able to check this and go, oh yeah, actually that ad has been running quite a long time.
+
+Maybe you go in, you have a look at the frequency number, you think, yeah, that does have ad fatigue. Let's go ahead and get this taken out, pause it. We can always put it back live in six months when that audience is refreshed and had some time for that ad to rest.
+
+We do that all the time, by the way. But in this case, you'd want to introduce some new ad creative. And there you go.
+
+As I said, you might see different recommendations. So often you see recommendations around budget, you might see recommendations around campaign structure, if you've got say too many ad sets live, they're competing with each other, you might see recommendations around creating more ads, if you've only got like one or two running and Meta thinks you'd benefit from doing that. So lots of different recommendations based on what you see.
+
+But I wanted to give you some examples, a bit of a snapshot with this ad account right here. And as part of this feature, Meta have actually added something really quite interesting. Up at the top, if we scroll back up, we can see we've got automatic adjustments.
+
+If I hover over that, you can see it says to apply performance recommendations automatically enable automatic adjustments. So you can go ahead and select that and Meta is going to implement these recommendations that it can, where possible, without you even having to come in here and do that. Now that's not something I'd actually recommend most advertisers do, because I don't think all the recommendations are ones that you need to take up.
+
+And I'm going to explain more about that in a minute. I think the most of the recommendations are good. There are a few that you need to watch out for.
+
+So you might not want to add in all of these. And then also automatic adjustments, like there's some stuff that Meta is just not going to be able to do for you. And if you just turn that on, and then you rely on the automatic adjustments, yes, that might, Meta might make good automatic adjustments to things like, you've got too many ad sets set up, so they might combine them, something like that, and that's fine.
+
+But they aren't going to be able to, for example, fix a creative fatigue issue where you just need to produce more ad creative and put that into your campaign, right? Like that's not something an automatic adjustments going to be able to do. I don't know, I doubt they'd be able to set up conversions API for us.
+
+It would depend on maybe your setup. If you're using like some sort of native integration, they could just tick a box for you automatically. Maybe they can, maybe they can't.
+
+It would depend on your setup. But yeah, so I think that this is really interesting, this sort of thing, but not something that I think most advertisers should select for now. So just wanted to quickly bring that up.
+
+Come on a sec, take a look at this. So this is in my mentorship program, right? And the results from Win's channel, and Tara said this, in two weeks of joining, my ROAS went from 0.7 to 8.03, and I've only implemented maybe 30% of the feedback that's given me so far, which is, that's just incredible.
+
+That's awesome. So Zoe up here, she joined the mentorship program with 35,000 raffle tickets. I was thinking she wasn't going to sell them, and she ended up selling out completely with two days to spare.
+
+And we've got loads of others in here. We've got tons of people just sharing information around how they've done well, great results they've got. If you're interested, you can click on the button beneath this video, that'll go through to a page on our website.
+
+You could book in a free, no obligation call with one of my team members to find out more information. Hopefully we get to work together. Hopefully you join and you'll be sharing fantastic results like Tara and Zoe have done just here.
+
+Now, like I mentioned a minute ago, most of the recommendations that the opportunity score gives are good ones, but this is based on AI. It's a relatively new feature. Not all the recommendations are going to be good ones.
+
+You're going to want to not enact what they recommend. And to be honest, the only way to know that at this stage is to have a good understanding of the principles of Facebook and Instagram advertising, what works and what it is that you're looking to achieve. Obviously watching my content is going to help, but you need to be able to have a look at a recommendation and go, that doesn't make sense for what I'm looking to achieve or that's fine.
+
+So the two examples I've got here, installing, getting the conversions API set up properly, absolutely a good one. Creative fatigue makes a lot of sense. I don't have any issues with any of those.
+
+But let's say, for example, you were running the omnipresent content strategy and you had lots of different ad sets because that's what you need to have in order to use the omnipresent content strategy. I'll include a link in the video description, by the way, to a video that shows you how to implement the omnipresent content strategy. In case you're curious and familiar, really good for expertise-based service businesses with high-ticket offers.
+
+So if you're running that strategy, you have lots of different ad sets. Now Meta's recommendation is going to be to combine those, but that's not going to help you achieve your objective of what you're looking to do with that campaign type. So you want to ignore that recommendation.
+
+However, if you are using a direct-to-offer strategy and you've got a recommendation to combine ad sets, that's probably good advice. So having an understanding, educating yourself, making sure you know that's good, that's not, is definitely something that you need to do. These two examples are absolutely fine.
+
+One big category that I want you to watch out for in terms of Meta's recommending something is to increase your budget. Now, yes, there are times to increase your budget, by far the most important one being, I'm getting great results and I want to scale. But I think a lot of advertisers, to some extent, get pressured within their ad account to increasing their budget for other reasons.
+
+They're not getting great results. So for example, they increase their budget in order to reach a conversion volume amount that's going to help their account optimise better, help their campaigns optimise better, and get them better results. And whilst there is some logic to that, if you spend enough to get enough conversions to get out of the learning phase, you will see better results.
+
+I don't think that's the best approach for a lot of advertisers, particularly beginner advertisers, particularly when you're in the testing phase. You're not even sure if you can sell your product or service in its current form using Facebook and Instagram ads yet. You might need to tweak the offer or work that out first.
+
+I'm not a big fan of increasing budget early. If you haven't been through that phase, it's just a good way to waste a bunch of money. Yes, you might get out of learning phase, but if it's not going to be profitable because you haven't got your offer right yet, or your creative style is just not resonating with your target audience, better to work that out with lower budgets and then look to scale from there.
+
+So just remember, whenever making a recommendation around increasing budget, it might be a good recommendation, but it's something you really have to look through with a, hang on a minute, you know, this to some extent is self-serving. Is this actually going to benefit me as a meta advertiser right now? Am I in a position to do this?
+
+I've even spoken to many business owners that have increased budget, even though they don't have capacity to deliver because it's popped up in their ad account recommending that you need to get a certain amount of conversions to get past the learning phase. And they can't even deliver on the extra sales, the extra leads. It's absolutely pointless in spending more money.
+
+So business concerns and priorities take precedence over optimizing your Facebook ad campaign. So that's a really important category of recommendations to watch out for and to put through a filter to think, do I want to use this? Yes or no.
+
+But from what I've seen so far in this opportunity score section, the advice given like these two examples here is really quite good. Most of the time we are implementing it. I think it's also really valuable to see those percentage improvements that you're likely to get so you can see how important this actually is, what differences is likely to make to my Facebook advertising results and things like that.
+
+Now it's also worth mentioning that because this is an AI tool and a relatively new feature, I would expect it to improve over time. So I think the recommendations will get better. The accuracy of the predicted improvement in performance will get better as well.
+
+So of course, if Meta recommends something and they say you're going to get a 27% improvement like we've got here, like with the creative fatigue option, you might go ahead and implement that and not see anything close to 20% improvement. You might see much larger, you might see much less. It's an average.
+
+But I think that's going to get more accurate the more Meta is able to see people implementing these recommendations and getting better results. And therefore, you can see because there might be sometimes you go in there and you think, okay, well, we've got an ad that's working really well. Yes, it's got some creative fatigue, but it's only a tiny percentage increase.
+
+Do we want to pull the trigger on that yet or focus on other things? But if they're telling you like it's a 27% improvement or 45% improvement, it's like, all right, okay, let's go ahead and do this. This is clearly worth it.
+
+So we can clearly see the best data and the most useful stuff here in Account Overview with the opportunity score and it all broken down. But if we go back into Ads Manager, I just want to quickly address what I talked about at the beginning of this video. And that's where we've got this actions column where we've got things broken down here.
+
+So we've got, you know, the nine points associated with this campaign. And you can see it broken down by various elements, you can see we've got a recommendation for for this campaign here. I would operate out of Account Overview, I think that's where you can see the more valuable, useful information.
+
+But it's also useful just when you're going through optimizing campaigns, ad sets, ads, even you can see, okay, we've got this applies to this campaign, this applies to this ad set, right, let's make a change, let's go ahead and check it out. So you can see that within within Ads Manager in that actions column, which once you've got this new feature should automatically appear within your Ads Manager. If it doesn't, you can always go in here and customize your columns.
+
+And you can scroll down and go ahead and customize columns and make sure that you've got the actions column in here. If I just quickly search, you'll see it pop up. It's already selected because it's already visible.
+
+But you can go ahead and put in actions. And then you'll be able to see the same data, assuming you have this feature. And whilst we're in Account Overview, there's another section I want to draw your attention to because this is really valuable information as well.
+
+And you can see here that we've got amounts spent in the last seven days up at the top, just under £500. And then it gives you a percentage of that budget that was spent with your ad set in the learning phase. And you see here we've got 39% spent in the learning phase, which is higher than we typically like.
+
+This is a testing ad account where we're testing things and experimenting for the purposes of creating content. So it kind of makes sense that a lot of the budget would be spent in the learning phase because we're doing a lot of testing. But I think this is really valuable information.
+
+You can absolutely take a look at this and think, I'm spending too much money in the learning phase. I'm making too many adjustments. I need to adjust how I approach things.
+
+And I actually wouldn't be surprised if you see a number here for your ad account that you weren't expecting because Meta's made some really big changes to the learning phase very recently that are in the process of being rolled out. And it's going to change the way our advertisers need to approach the platform and how often we can make changes and all that sort of stuff. I actually made a detailed video about the new learning phase right here.
+
+If you haven't watched it already, strongly recommend you give it a watch. It'll help you understand what changes are happening and what adjustments you need to make as an advertiser to take advantage of them. So you
