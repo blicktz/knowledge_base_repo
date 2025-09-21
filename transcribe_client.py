@@ -20,6 +20,7 @@ from pathlib import Path
 from typing import List, Optional, Dict, Any, AsyncGenerator
 import httpx
 from httpx import RequestError, ConnectError, TimeoutException
+import json
 from dotenv import load_dotenv
 
 # Global logger (will be configured in setup_logging)
@@ -381,53 +382,58 @@ class TranscriptionClient:
                 logger.debug(f"Process start response: status={response.status_code} for job_id={job_id}")
                 
                 if response.status_code == 200:
-                    logger.info(f"Processing started successfully for job_id={job_id}")
-                    return True, False
-                else:
-                    # Parse error response to detect if job is already completed
+                    # Check if this is a new job being queued or an idempotent response
+                    response_data = response.json()
+                    message = response_data.get('message', '')
+                    if 'already' in message:
+                        logger.info(f"Job already in progress: job_id={job_id}, status={response_data.get('status')}")
+                        return True, False  # Already processing/queued
+                    else:
+                        logger.info(f"Processing started successfully for job_id={job_id}")
+                        return True, False  # Newly queued
+                        
+                elif response.status_code == 409:
+                    # Handle conflict responses (job already completed/failed)
                     try:
                         error_data = response.json()
                         error_detail = error_data.get('detail', response.text)
                         
-                        logger.warning(f"Process start failed: job_id={job_id}, status={response.status_code}, detail={error_detail}")
-                        
-                        # Check if the error indicates job is already completed
-                        if "status is 'completed'" in error_detail:
+                        if "already been completed" in error_detail:
                             logger.info(f"Job already completed: job_id={job_id}")
-                            return True, True
-                        elif "status is 'failed'" in error_detail:
-                            logger.error(f"Job already failed: job_id={job_id}")
+                            return True, True  # Already completed
+                        elif "has failed" in error_detail:
+                            logger.error(f"Job already failed: job_id={job_id} - {error_detail}")
+                            return False, False  # Already failed
+                        else:
+                            logger.warning(f"Unexpected 409 conflict: job_id={job_id} - {error_detail}")
                             return False, False
-                        elif "status is" in error_detail:
-                            # Check actual status
-                            logger.debug(f"Checking actual status for job_id={job_id}")
-                            status = await self.check_status(job_id)
-                            if status:
-                                current_status = status.get('status')
-                                logger.info(f"Job status check: job_id={job_id}, status={current_status}")
-                                
-                                if current_status == 'completed':
-                                    return True, True
-                                elif current_status == 'failed':
-                                    logger.error(f"Job failed on server: job_id={job_id}, error={status.get('error')}")
-                                    return False, False
-                                elif current_status == 'processing':
-                                    logger.info(f"Job already processing: job_id={job_id}")
-                                    return True, False
+                            
+                    except (json.JSONDecodeError, KeyError) as e:
+                        logger.error(f"Failed to parse 409 response: {e}")
+                        logger.debug(f"Raw 409 response: {response.text[:500]}")
+                        return False, False
                         
-                        if "status is" not in str(error_detail) and attempt < max_retries - 1:
+                else:
+                    # Handle other error responses
+                    try:
+                        error_data = response.json()
+                        error_detail = error_data.get('detail', response.text)
+                    except:
+                        error_detail = response.text[:500] if response.text else f"HTTP {response.status_code}"
+                    
+                    logger.warning(f"Process start failed: job_id={job_id}, status={response.status_code}, detail={error_detail}")
+                    
+                    # Only retry for server errors (5xx) and some client errors
+                    if response.status_code >= 500 or response.status_code in [408, 429]:  # Server errors, timeout, rate limit
+                        if attempt < max_retries - 1:
                             backoff = min(2 ** attempt, 30)
                             logger.debug(f"Retrying process start in {backoff} seconds...")
                             await asyncio.sleep(backoff)
-                        elif "status is" in str(error_detail):
-                            break
-                            
-                    except (json.JSONDecodeError, KeyError) as e:
-                        logger.error(f"Failed to parse error response: {e}")
-                        logger.debug(f"Raw response: {response.text[:500]}")
-                        if attempt < max_retries - 1:
-                            backoff = min(2 ** attempt, 30)
-                    await asyncio.sleep(backoff)
+                        continue
+                    else:
+                        # Don't retry 4xx errors (except 408, 429)
+                        logger.error(f"Non-retriable error for job_id={job_id}: {response.status_code}")
+                        break
                         
             except RequestError as e:
                 logger.error(f"Network error starting process (attempt {attempt + 1}/{max_retries}): job_id={job_id} - {str(e)}")
