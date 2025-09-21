@@ -1,0 +1,571 @@
+I've been running meta ads for more than 12 years, long before they were even called meta ads. And during that time period, meta ads targeting has changed an enormous amount. Right now we have more than a thousand campaigns live for more than 400 clients and we have to stay at the very cutting edge of meta ads targeting and what's working right now.
+
+In this video, I'm going to show you all the targeting options that we're currently using and that we're seeing great results from and I'll explain which ones you want to use and when. So to demonstrate this, I'm in an example meta ad account. I'm going to create a dummy campaign and we're going to jump to the ad set level where you deal with the targeting stuff.
+
+Obviously this video is all about targeting. I'll walk you through the various options and what I'd recommend that you do. I actually created a previous version of this video talking all about the targeting options less than a year ago and it's incredible how much has changed since.
+
+Meta has completely reworked campaign structure and that's had a big impact on targeting and best practices and all that sort of stuff. So very important that I made an updated version of this so you guys know what's working right now and you can follow best practices and things like that. So like I said, I'm in an example meta ad account and what I'm going to do is go ahead and create an example campaign.
+
+So for demonstration purposes in this video, I'm going to use a sales campaign. I've used other campaign types before but really because when we talk about targeting, what I go through in this video is very much going to apply to other campaign objectives. So if you're for example using a leads campaign objective because that's more appropriate for your business, absolutely you can still follow along and this is going to be valuable to you.
+
+Where there are some differences, I'll mention those as we go through the video. Okay, so I'm going to go ahead and click continue. Now one thing I should say, we no longer have the pop-up, is that I've created a sales campaign and that now in this ad account means it's an advantage plus sales campaign.
+
+Most ad accounts have the new advantage plus campaign structure where you have advantage plus sales campaigns instead of advantage plus shopping campaigns. You have advantage lead campaigns and things like that. Previously when you created a sales campaign, you either created an advantage plus shopping campaign where you had basically no targeting options whatsoever, it was just completely handed over to meta and let them work it out, or you could create a manual sales campaign and then you had more control in what you could do.
+
+That's gone away in most ad accounts. If it hasn't in yours yet, you will be getting this version that you can see on my screen right now very soon. So this is definitely the one to learn because it's going to be the one going forward.
+
+So instead of those two options, when you create the sales campaign, you go straight into what I've just done, what you've just seen, an advantage plus sales campaign. And from within this campaign, we can either treat it like an old advantage plus shopping campaign where we let meta work it out. I'll talk all about that.
+
+Or we can take manual control. We can even take quite specific manual control. There's lots of options still, but it's all within the advantage plus sales campaign structure.
+
+Just want to quickly flag that in case you're looking at this thinking this looks a little bit different to what you would expect. Now, I'm not going to mess around in this video with anything at the campaign level or the ad level. I've got other videos that talk all about that.
+
+Really what I'm going to focus on in this video is targeting. I just want to give a special nod that at the campaign level, if you go ahead and select that you are within a special ad category. So if your ads are related to, you can see here, financial products and services, employment, housing, social issues, electoral politics, then that will change some of the targeting options you go through.
+
+You do need to declare for your special ad category, by the way, like make sure you do that. Otherwise you can run into issues with your ad account being disabled and all sorts of things that you just don't want. But just be aware that if you do go and declare that your special ad category, that is going to change things when it comes to targeting later on.
+
+So let's go ahead and jump over to the ad set level. Now, I know I said I'm going to focus exclusively on the ad set level, and that is true because that's what the targeting stuff is. But I'm also not going to cover the other ad set stuff, like performance goals and conversion locations and bid budgets and things like that.
+
+You can find videos on all that stuff on my channel. Just go ahead and give it a search. What I'm going to do is scoot down to this audience section and run through the stuff here, because that's what this video is all about.
+
+It is all about targeting. Now, within this audience section, we have two main parts to it, right? We have the controls part, and then we have the suggest an audience part.
+
+And I like the way that Meta has reworked this to make it easy to understand as you're going through it and trying to select your targeting options. The way to think about these two sections is anything that you select within controls is a hard boundary, a hard constraint. So it means that Meta cannot go outside of the options you've selected and put your ads in front of other people.
+
+The suggest an audience Meta can. That's the big difference. And there are different options here.
+
+You can do different things at different stages. We're going to run through the various options. You can see just quickly at the controls, we've got no advertising setting set.
+
+So you can just set account-wide settings and controls. No one under the age of 21 can ever see my ads, for example, depending on what you're advertising in what locations. And there are restrictions around certain things to advertise.
+
+But what we can do, you can see locations is added in here, and we've also got the show-more controls. So let's run through these options, right? So firstly, let's start by talking about locations.
+
+So this here is defaulted to the United Kingdom, because I'm based in the UK. What I'd recommend you select here as your location targeting are the areas that you can serve. So that might mean for us it's the UK, but my business, we operate very much internationally.
+
+In fact, we have more clients outside of the UK than we do within the UK. We have more clients in the US alone than we do in the UK. So if we were running ads for our own business, for our marketing services, we would absolutely be looking to add in other countries like the United States and Canada and Australia and Western European countries and the UAE and Singapore.
+
+I'm just thinking of some other countries we've got clients in. We've got clients, I think, now in more than 40 different countries. So we would add in other places.
+
+If we wanted to start small, let's say you're new to meta-advertising, we could absolutely just pick one core market. So for our business, that could be, if we were new to this, we could go, all right, you know, we're just going to focus on the UK for now. We'll look to expand later on.
+
+That's absolutely fine. Or you can say, you know what? We can serve businesses.
+
+We can serve customers. We can ship products. We can have people sign up to our online software, like whatever your business is, right, in all these different locations.
+
+Absolutely fine to go ahead and add those in. So we can get more specific than that if we're a local business. Let's say we operate in the city in the UK of Bristol.
+
+Let me bring the right one up. So Bristol in there. And you can see the map makes it really handy to see exactly where you're targeting.
+
+Now the default for most places once you enter in, we've got Bristol in England plus 25 miles. That may or may not be appropriate for you. You can see here, for example, that geographically it's unlikely you'd want to go that far because you've got this sort of part over the other side of the Bristol channel into Wales, like logistically to get to, that would be potentially more difficult than you'd want to do, or you think your customers will be willing to travel.
+
+So you can adjust this, right? You can go, we can go just the city of Bristol specifically, or we can look to add in say a smaller radius from 25 miles, you know, let's go with just the 10 miles, or we could add in a bigger radius all the way up to 50 miles. Really depends.
+
+There's all sorts of things you can do to get really specific with where you target. And this is going to depend on how far you are willing to travel to service your customers or how far they are willing to travel to come see you, assuming you are a local business. For demonstration purposes, I am going to go ahead and pop the United Kingdom back in and have that as sort of like a middle ground that I think will apply to a lot of different businesses.
+
+But don't overthink your targeting, just very specifically, where do you serve? What's your best markets? Start there, look to expand afterwards.
+
+Then we've got a minimum age, okay? So if we go ahead and select this, and we've got a drop down here, starts at 18, goes up to 25, and we can only set a minimum. Remember, this section here is a hard control.
+
+So if we set 21 as an example, ads will not be put in front of people who are younger than 21, or at least have that associated with their Facebook, Instagram profile. If your business doesn't have any sort of restriction, like legal requirement or regulatory thing that means you have to advertise to people over a certain age, I usually just recommend leaving that at 18. We can always make suggestions around ages later on.
+
+You see there is no maximum age, because that's really what this section is designed for. It's designed for businesses making sure their ads aren't put in front of people they legally can't advertise to, as opposed to setting it as a targeting option. Custom audience exclusion.
+
+I'm going to come back to that when I talk about custom audiences. So we're going to put a little pin in that one. And then we've got languages as well.
+
+This is actually quite handy. It wouldn't really apply for advertising in the UK, but there are places around the world where people speak multiple languages, and that can be a way to differentiate. Oh, I only really want to service this community.
+
+My product or service is probably only of interest to them. Or perhaps you as a business only have people working for you or you yourself that speak the one language. Like I've talked before about if you're advertising in Canada and you're like a French speaking business, you're a French speaking business, maybe you want to specify, actually we only want to work with French speakers.
+
+We can't serve English speakers as well. If that was the case, you might be struggling to follow along with this video, but you get the sort of thing that I'm talking about here. You might want to do that.
+
+You might be running ads for a client. So you might want to put in languages if that is appropriate and get more specific. Okay.
+
+So that's the control section, the hard boundaries. Hire my agency to run your meta ads for you. Why do that?
+
+I said at the beginning, spent more than 150 million. That ad spend generated more than 600 million in revenue for our clients. Clients all around the world, all sorts of niches.
+
+I am the only meta megaphone partner in the UK, which is because of my personal brand. I have special access with meta. They give me access to things early, special access so that if things go wrong with ad accounts, which if you've been running Facebook and Instagram ads, you will know that is absolutely the case.
+
+We're able to get that resolved with an email, which is a big advantage. And we're an agency partner. Lots of agencies will tell you that they're agency partners.
+
+There's different levels to that game. We're in the top level. There's only 50 in the UK.
+
+And of those 50, we actually have the most number of clients. When we signed up, the person from Meta was surprised that that was the case. And that leads me to make the somewhat bold claim, but I would honestly stand by it, that I've got the best meta ads agency in the UK.
+
+I pitch my team against any in the UK and be surprised they didn't come out on top. Honestly, I'd pitch my guys against any meta ads agency in the world and be surprised if they didn't come out on top, which I know is punchy, but there we go. Then we've got this suggestion audience section down here.
+
+Right? So again, custom audience inclusions. I'm going to talk about custom audiences in a second.
+
+I want to cover the more sort of basic stuff when it comes to detail targeting. And that's what this section really is. So we've got age.
+
+You can see, well, hang on, didn't we have age up here in the controls? Remember, that's a hard boundary. This is a suggestion.
+
+So for example, if we're advertising our marketing services, we might come up with something like 25 to 55 might be our typical age range of someone that there's a business owner or a marketing manager that hires us to run ads for their company. But because this is a suggestion, it gives meta the flexibility to go and put ads in front of other people as well. They might see that there's a 21 year old that would be a perfect prospect or a 60 year old that would be perfect prospect and put ads in front of those people.
+
+And meta is normally pretty smart at being able to work that stuff out. Same applies to genders, right? In our case, we would leave it at all.
+
+But if you were heavily skewed one way or the other, like 90% of our audience is male, 90% of our audience is female, those are the people that are likely to purchase, then you can go ahead and be more specific. I wouldn't do it with the genders unless you skew one way or the other quite significantly. If it's like a 60-40, probably just leave all.
+
+Again, meta is going to work a lot of that out. And then we get down to the detailed targeting sections. So this is where we can add in demographics, interests, or behaviors.
+
+And my recommendation with newer meta advertisers, with newer ad accounts, is typically to add in some options in here. All this stuff down here is a suggestion. Anything underneath suggesting an audience, meta can choose to go with it or ignore it.
+
+And I think that that's a really, it's a clever invention from meta because what it allows us to do is kind of have the best of both worlds. We can kind of have some of the benefits of the largest possible audience and meta being able to use its AI, its systems to find people that it thinks are likely to convert. But it also allows us as advertisers to have some input and give that algorithmic process some direction, particularly with newer ad accounts where meta doesn't really know who is likely to buy, how many impressions they need.
+
+They don't have all that data yet. So you can give it some direction, help save time, and have some input whilst I said benefiting from the larger audiences too. So adding in here options, I think for all businesses is absolutely fine, particularly for newer businesses and new ad accounts, I think is a good idea.
+
+It's just going to help the process a lot. So for example, if we're advertising our meta advertising services, we might start putting in things like people interested in social media marketing. Or we could have in here business owners, for example.
+
+Here we go. Small business owners could be an example there as a behavior, right? Don't need to overthink this.
+
+Don't need to spend a ton of time on it. Just go through and search for some options that are related to your products and services and see what comes up. You can add in one, you can add in five.
+
+Either way is absolutely fine. You can also browse. I've searched and found a couple that I know of that we've used in the past, but you can browse and you can sort of go through all the specific categories.
+
+And that might be a good way of finding some stuff. Takes a little bit of time to do that, but not super difficult. Now, you can't really get this wrong.
+
+I think there's a lot of fear from advertisers that, oh, what if I enter in the wrong detailed targeting options, the wrong interests, the wrong behaviors? Is that going to mess up my campaigns? No, not really.
+
+It's not how it works. I think a lot of that comes from how we used to do meta ads targeting. So previously, we would have created different ad sets and had say one interest per ad set and tested them all alongside each other to see which produces the best results.
+
+We basically never do that now because we know these are suggestions anyway. Meta is going to go with or ignore our suggestions, in which case between those different ad sets with different interest targeting options, there would be so much audience overlap that the test would kind of be meaningless. Better just to lump it all in one go and allow Meta to work it out from there.
+
+This is one of the big changes that's happened as the ad platform has gotten so much smarter, definitely in the time that I've been doing this, but even more so in the last four, five years. Okay. So now we've been through that, it's time to talk about custom audiences.
+
+We've got both custom audience exclusions and controls and custom audience inclusions here, which can be quite confusing. I'm going to run you through it. I'm going to show you how to set up custom audiences and all that good stuff so you know exactly what to do going forward.
+
+So firstly, what are custom audiences? Custom audiences refers to people that have interacted with your business before. They are normally warm audiences or at least warmer than completely cold audiences and they can include various different groups.
+
+So you can have people that have visited your website. You can have people that are on your email list, that have watched a video of yours on Facebook, that follow you on Instagram. Lots of different types of custom audiences but basically if you think about it, it's warm audiences for the most part.
+
+People who have interacted with your business before allows you to retarget, put ads in front of people that have already interacted previously. So we can see we've got a section here for custom audience inclusions. If I go ahead and click on that, we've got a drop down to add in existing audiences.
+
+But what I want to do before I go ahead and do that is go into the audiences section and actually show you how to set up custom audiences. Relatively quick and easy to do. Definitely something I would recommend, not only because we're going to add this into this campaign here, but also because it allows us to, well there's going to be some reporting advantages later on that I'm going to get to in their advertiser settings.
+
+Okay, so if we go into all tools and then we select audiences, well I've got it in the drop down, but if not, if you click on all tools and then you've got audiences in there. And this is where we go ahead and create our custom audiences. Now this is an example ad account.
+
+So I have a bunch of custom audiences in there already. You can just ignore those. You might not have anything in there.
+
+We can still walk through the process of how you go about setting these up. So I'm going to go ahead and click on create audience, custom audience, lookalike audiences we will talk about in a second. So custom audiences.
+
+Then we've got two main categories of custom audiences. Warm audiences, remember people who have interacted with our business before. We've got your sources and we've got meta sources.
+
+So meta sources are based on interaction that have happened within the meta family of apps. So within Facebook, within Instagram, you'll see some of the options. But then we've got your sources, which are people that have interacted with your business externally.
+
+Website, email lists, app activity, et cetera, et cetera. So the first one that I want to go ahead and select is website. And I think every business that's running ads on meta wants to create custom audiences based on their website visitors.
+
+Now, in order to do this, you will need to have the meta pixel installed on your website. So very important. Again, I have videos on that.
+
+So you can go ahead and find those on my channel and go ahead and check those out. And there are all sorts of things you can do when it comes to creating custom audiences based on website visitors. So you can see the default here is all website visitors, audience retention of 30 days, but we can get more specific.
+
+So we could say people who've visited specific web pages. If you wanted to create custom audiences out of people that have visited, let's say for us, our Google ads done for you services page, as opposed to our meta ads done for your service page. And we would do that if we wanted to create specific custom audiences that we could then retarget with more specific ads saying, Hey, go ahead and sign up for our Google ad services.
+
+Here's why. Here's some fantastic screenshots of client ad accounts and results that we've done and testimonials and all that sort of stuff. But it would be specific to that audience as opposed to a different one.
+
+So you can go ahead and do that. You just go ahead and add in, you know, click on people in specific pages, add in the URL, jobs done. We can do this based on events.
+
+So anyone who has, for example, purchased, anyone who has added to cart, anyone who's initiated checkout, you might want to create, for example, a custom audience out of people that have added to cart, but not yet purchased. And you can do that. So you can then retarget those people and try and get them over the line.
+
+So all sorts of things that you can do when it comes to custom audiences based on website interactions. You can even do visitors by time spent. So you select that, you can see the different percentiles, right?
+
+Like the top, the top 25% of people who've spent the longest on your website, top 10, top five, if you want to get really granular on it. I've got another video talking specifically about custom audiences that goes into more detail. You can find that again on my channel.
+
+What I want to do here is talk about this from the understanding of targeting and what we do in the vast majority of cases, because there are specific cases where we use some of the stuff I've talked about. But the vast majority of the time, what we're going to do now is we're going to go ahead and select all website visitors. We're going to change this audience retention.
+
+You see, if you hover over the little eye, you can see that, well, there's an explanation, but the part I want there is maximum time, which is 180 days. And I am going to go and include 180 days. Now, the reason why I'm going to do that, I'm going to go all website visitors and 180 days and create a custom audience out of that, is that that's the largest possible custom audience I can create out of website visitors.
+
+What often happens, or the way people think about targeting, is they feel like it's a trade-off between size and intent or specificity, how keen the audience is. And they think, you know what? If I just create a custom audience out of people that visited my website in the last seven days and put ads in front of them, they are far more likely to purchase.
+
+They are far more likely to become a lead because they just visited. And that's true. But here's why I don't do that.
+
+I recommend 180 days. Meta knows. Meta knows that someone who visited your website two days ago is more likely to convert than someone who visited your website five months ago.
+
+And they will put more ads in front of the person they visited two days ago. They are more likely to advertise to them. They will put ads in front of them first.
+
+And then they will move on to the other people that are less likely to convert later on. But the reason why I want to create the largest possible custom audience is because I still want to potentially get the conversion from someone who did visit my website five months ago that perhaps Meta knows is now a perfect prospect to put ads in front of again for your products or services because of their online activity, because of what they might be doing in other locations, because of what they might just have done on Facebook or Instagram. Remember, Meta has enormous amount of data to be able to make really accurate predictions around these things.
+
+So I feel like with the largest possible audiences, you get the best of all worlds. You get Meta is going to work it out and put ads in front of the keenest possible prospects to get the conversions. But you get the largest possible audience, nothing to lose there.
+
+And we go with all website visitors for the same reason by default. Like I said, there are times where we want to do other things like put specific offers in front of people that have visited specific pages on a website and tailor it. So we would go with some of the other options.
+
+But this is the standard default of what we look to use. So I'm very simply going to call this all website visitors 180. Oh, one thing to quickly mention about these sorts of custom audiences based on the MetaPixel via your website is that this audience will automatically update.
+
+I've had questions about this in the past. So if you think it's 180 days in the past from today, but then tomorrow, it'll be 180 days from tomorrow. And in a month's time, it'll be, does that make sense?
+
+It'll automatically update and move with time. So we can go ahead and click create audience. And that's our first one done.
+
+We'll talk about lookalikes in a second. Okay, so that's the first of the custom audiences that I wanted to create and show you how to use because one we use all the time. But there are others.
+
+So let's go ahead and show you how to do those. So if I go ahead and click on create audience and custom audience once more. So the other one from your sources that we will basically always create alongside the all website visitors option is an email list.
+
+Okay, so if you go ahead and select customer list, and I go ahead and click on next. And then we've got a few different options here. So we can either import from MailChimp.
+
+So if you click on this button, you will see that Meta basically says log into MailChimp, and then just select which list you want to upload. And the information which is brought across so people on your email list in MailChimp will just be popped in to your Meta ad account as custom audiences, and you are good to go. So I'm not going to do that because a we don't use MailChimp and be that process fairly self explanatory, I want to demonstrate the other one.
+
+And then this all looks relatively confusing. I think in terms of what Meta says, like to include, but basically, there's a few things you need to know if you want to upload a custom audience, right? So you need to either be a CSV or TXT file, these exports that you can make normally from whatever CRM using.
+
+So wherever you've got your email list, you can just export a CSV file, for example, and then go ahead and upload those, include at least 100 customers. I mean, it doesn't have to technically be a customer, it could be just someone on your email list that isn't a customer of yours yet, you can also do that, include at least one main identifier, the one I'd recommend typically is email, the more the better. So the more data you have, the more likely it is that Meta is going to be able to match people on your email list, or your customer list, with people that, with actual Facebook accounts, with actual Instagram profiles, because that's basically what needs to happen.
+
+When you're uploading an email list, Meta is going, aha, okay, this person on your list is this Facebook user, is this Instagram user, we can now put ads in front of them, we now know who they are. That's typically how it works, right? So the more information you have about those people on your email list, the more likely Meta is to be able to match those.
+
+But the most important is email, you're hoping that the email address is going to match up with the one associated with their Instagram profile, or their Facebook account, and therefore Meta is going to work out who they are, you can advertise, etc, etc. But like I said, the more the better. And then it's talking about column formatting to make sure all that's right.
+
+And you've got some examples here, and I'm going to upload a quick little example list. And then one thing I want to quickly mention before I actually go ahead and upload a list and show you how to do that, is this customer value option, which is recommended, and I would recommend you add that in. Basically, you can add in a column that includes value information per customer.
+
+So if this is a customer list, as opposed to just an email list, and people have actually bought from you previously, if you have the data, you could have a column that shows how much they spent with you. And that's going to be useful for Meta working out, okay, this type of person is more valuable than this type of person. Someone aged 45 up tends to buy more from this business or tends to spend more with this business than someone aged 45 down.
+
+And that's going to be really useful information that Meta can then use for advertising purposes. And they can prioritize, depending on how you set things up, they can prioritize the customers that spend more and finding more like them, which will help improve your overall tonal on adspend. So some clever stuff going on in the background.
+
+If you have customer values as part of a customer list, go ahead and get that uploaded. I'm going to go ahead and click next. And then I'm just going to very quickly upload a file that I've prepared.
+
+So I've just gone ahead and uploaded this example email list that I prepared for demonstration purposes. Does your file include a column for customer value? No, it doesn't.
+
+Not in this example, but I would recommend you do that if you have the data. We've actually got this audience label option here, which I think is useful. I think the more information you give about who and what these people are to your business, the better Meta is going to be able to plug that back into their targeting to improving results, all that sort of stuff.
+
+So you can see here, right, that we can say what type of people are on this email list, this customer list, what are they to our business? Are they a qualified lead, a disqualified lead, an existing customer? Are they a high value, low value?
+
+So for example, I could say, look, these are qualified leads. And then that's got that label in there. And that's going to be helpful, useful information.
+
+I can call this example email list and go ahead and click next. Then we can see that Meta is trying to map the information that we have within this example email list that I created to the data that that corresponds to. Basically, Meta's going, what is that?
+
+So what is that column? So you've got a column here that's got email and then ben at example.com. Like I said, this is just an example.
+
+And Meta has correctly worked out that that is an email address. So they've mapped one and they've got action needed on the other. So this one name, Ben, we can either choose to not upload that information, or we can say, oh, you know, actually, that is a first name.
+
+Ben is a first name. And now we've correctly mapped the two. And depending on how many columns you have, you might need to go ahead and map other ones.
+
+And basically just let Meta know, oh, those are phone numbers. Those are email addresses. That's first name.
+
+That's last name. That city they live in, depending on what data that you have, right. And you can go ahead and get that uploaded.
+
+And you can click import and create. And this used to take Meta quite a while to get these email lists uploaded, depending on the size. Now Meta does it almost immediately.
+
+So your customer list is hashed and uploaded. Fantastic. Click done.
+
+Right. So we've got, we've created an example email list. You could do the exact same process I just did for a customer list.
+
+And if you do have separate lists for people on your email list that haven't bought and customers that have, some businesses, that's one and the same thing, in which case, fine, go ahead and get it, get uploaded as one. But if they are separate things, I would recommend you upload them as separate things. And you can then have more flexibility when it comes to targeting and also letting Meta know what's what.
+
+Use those audience labels. And that's going to impact how Meta optimizes your campaigns going forward. Okay.
+
+So if I go ahead and click on create audience, custom audience, because there are other ones I want to discuss. We've talked about the your sources that really apply. Website, customer list.
+
+Yes, you've got app activity. Definitely do that if you've got an app. There's no app associated with this ad account.
+
+So I can't demonstrate that same with catalogs, even offline activity. If you've got an in store data that you can go ahead and get uploaded, absolutely get it all that uploaded. I know that those things aren't going to apply maybe catalog, but the other two aren't going to apply to like 90% of people watching this.
+
+So I'm not going to go through that in this video, make it nine hours long. I'm going to focus on the ones that we basically use all the time. And then if you want some of these more fringe ones, I've got other pieces of content around catalogs and apps, and you can check out those specifically.
+
+Okay. Let's go to meta sources. First one we're going to do is go ahead and select video, click video, and then click next.
+
+So we've got choose an engagement type, which I think is really interesting as an option. So what this means is how much of our videos or of a video does someone need to have consumed in order to be included in our custom audience? We've got all sorts of options from three seconds.
+
+Basically, have they just watched the hook all the way to 95% of the video if they basically watched the entire thing? I'd recommend as a default going with three seconds. If you want to, you can look to experiment later.
+
+But just like with the all website visitors, where I wanted the largest possible custom audience to be able to take advantage of as many people have interacted with business as possible, but also with the knowledge that yes, if someone has watched 95% of video, 75% of video, they are definitely more likely to convert if an ad is put in front of them again than someone who's just watched three seconds. But meta knows that. And anyone who's watched more than three seconds includes all those people that have watched 75%, 95%.
+
+And meta is going to be able to find those people, put ads in front of them first. So you benefit the most, in my opinion, from the largest custom audience. Typically, so people who've viewed at least three seconds is the largest one.
+
+Audience retention with this one, we can go all the way up to 365 days. That's the maximum. And that's what meta does by default.
+
+So I'm going to leave that as is, then we just need to select the videos, right? So once you get into here, the first thing you need to decide is video sources. So these are various locations where you will find the videos that you might want to include that would qualify people to be included in this custom audience.
+
+So it's defaulted to Facebook page, and we've got the Ben Heath Facebook page. But we can also have a look at Instagram as well. We can take stuff specifically from ads as well.
+
+We've got other options down here. So for example, if I go ahead and click on Instagram, and then I can have a look at these various videos, I can see how many views they've got. Okay, this one's got 8,700.
+
+It's got 56,000. I can just go through and select various ones. And then anyone who's watched more than three seconds of these videos will be included in the custom audience.
+
+Now, one thing I would say in terms of recommendations here is basically add in as many videos as possible that are still relevant. So you might just talk about the one thing, and you only offer the one thing. And therefore, you're anyone who watches more than three seconds of any of your videos can be included in the one custom audience and then and then retargeted.
+
+Or you might have different services, different products, different product ranges, where some videos about some of them, some videos about other ones, in which case you can break it down. So you could create a few different video based custom audiences. One, in our example, we could have one for our Google ad services, one for our Facebook ad services, one for our mentorship program, all the different things that we offer.
+
+And then we think, what video is that relevant to? Okay, more to this one. There's going to be some overlap.
+
+You're going to have to make a judgment call. You could include videos in multiple different custom audiences. So if I'm just talking about meta ads, you'd be like, well, that applies to our meta ads done for you services and to our meta ads mentorship program.
+
+Fine. We'll include that video in both of these two video based custom audiences, or you can split it up. Lots of easy things to do to just go through and select videos.
+
+I'm not going to go through all of them here. It takes a bit of time to do that. I'm just going to go ahead and click confirm with these three, but I'm demonstrating the process.
+
+So let's go ahead and give this a name. Let's just call this video viewers. And then I'm going to go with 365.
+
+So I think it's helpful to know how large the audience is. And again, that one will automatically update just like the website visitors. The only audiences that won't automatically update are the ones from external sources, your sources, not based on pixel data.
+
+So for example, the email list that you upload, they won't automatically update. You'll have to come in and do those manually as they change, unless you have directly pulled it through from MailChimp. And therefore they can automatically update depending on your settings.
+
+Just wanted to quickly let you know that. Right. Let's go in and click on create a audience, custom audience.
+
+We've talked about meta sources. We've got video. I want to quickly touch on lead forms.
+
+So I don't actually have any lead forms in this example ad account to be able to demonstrate this specifically. And it's very similar to the video process, but you can create custom audiences out of anyone that's interacted with your lead form. What's often called an instant form as well.
+
+So if someone has opened it, if they've submitted, you can create custom audience out of those. Just click on lead form and go through the process relatively quick and easy to do, just like you saw with video. Lead form, we will only use if that's the business that's using instant forms, using lead forms, right?
+
+But if they are using it, we will definitely go ahead and create those and include them. I'm going to move on to the next one that we basically always use, which is based on Instagram account. So if I go ahead and click on Instagram account and click next, make sure that you've got the right Instagram account selected.
+
+If you have multiple associated with your ad account in your business manager, and then we've got events, right? So we can have, what does someone need to do to be included in this Instagram based custom audience? So we can include everyone who engaged with this professional account, or we can have account center accounts.
+
+So basically people kind of a term, who started following this professional account, so followers, anyone who visited the profile, people who engage with a post or an ad. So it's going to be things like likes, comments, saves, carousel, swipes, et cetera, et cetera. People sent a message, but as you can see, due to new privacy rules in some regions, this feature is no longer supported, depends on where you are, or anyone who saved a post or ad.
+
+So the default here is anyone who engaged with this professional account. That's going to be the largest custom audience. The other ones are more specific.
+
+They need to take a more specific action. And therefore that's what I'm going to recommend you go with for the exact same reasons as we did with the videos and with the website listeners, largest possible custom audiences. Meta knows that if someone not only engaged with you, but also follows you and saved an ad, they won't want to buy it.
+
+They will start with those people. So everyone engaged with this professional account. So let's go ahead and call this Instagram engages 365.
+
+That's the maximum length. I'm going to do the exact same thing. I want the biggest possible custom audience here.
+
+And I go ahead and click create audience. You can do some more specific stuff. I'm not covering that in this video because it's not something we do by default regularly, but you can do it if you want.
+
+That's kind of like a more advanced optional extra once you've got your core base targeting set up. Right. Next custom audience is going to be the equivalent to what we just did, but based on Facebook page.
+
+So I'm going to go ahead and click in here. We've got Ben Heath. Make sure we get the right Facebook page again, like I have there.
+
+Events, everyone who engaged with your page. That is the largest possible custom audience. You'll see the options are very similar to what we just went through with Instagram.
+
+So we've got followers here, people who visited the page, engage with posting or ad, click the call to action button, save the post. I'm going to go with anyone engaged, include the lot. And therefore we're going audience retention 365, just like we did before.
+
+And then we're going to go with Facebook page engages 365, click create audience. Okay. So those are the typical custom audiences that we create.
+
+I just quickly go back into the window. You'll even see that from within meta sources, there are other options, instant experience, shopping, events on Facebook listings. These things may affect your business.
+
+If they do make sure you create custom audiences for them and include those in your targeting. I'll show you how we would do that in a second. I'm not going to run through those because I know they only apply to a small minority of businesses.
+
+They're actually using these things. Like I said, I don't want to make this video nine hours long. Right.
+
+Let's go ahead and click cancel there. Now let's jump back to ads manager, which is probably in the shortcuts or it's under all tools and then advertise. And let's go back into that example campaign that we created.
+
+Right. So here's the campaign. I'm going to jump to the ad set level.
+
+I'm going to go ahead and click on edit. And then I'm going to scroll down to the audience section. And then we've got, where are we?
+
+Suggest an audience down here. Right. So we've got custom audience inclusions.
+
+Now what I'd recommend by default is that you add in all your major custom audiences in here. Right. So if I go ahead and click on this and then I can add in that all website visitor custom audience, we can see we've got a few versions.
+
+Like I said, this is an example ad account. What else have we got? We've got the example email list as well.
+
+Let's go ahead and get that added in. We've got our video viewers. Let's add that in.
+
+We've got Facebook page engages. Anyone who's engaged with our Facebook page. And then we've also got the Instagram engages as well.
+
+And just like I said, if those other custom audiences that we didn't run through also apply to your business and you create them, get those added in too. You may also want to add in a specific customer list that's separate from your email list. Remember I said some businesses there'll be one and the same thing.
+
+Other businesses will have an example email list and a customer list. I would normally recommend by default, you get that added in as well. Now, what you might notice from this setup is that in this one ad set, in this one campaign, we are targeting both cold and warm audiences, which I know to people that have had historic experience with meta ads or come from other forms of advertising can kind of break their brain a little bit.
+
+They think surely you have to keep those separate and you have to tailor your ads to warm audiences versus cold audiences. And sometimes you still want to do that. And I'll explain how you can do that because you can do it.
+
+But that's not what we do by default anymore. By default, we will put them in together. And the reason why is because meta is going to put ads in front of your warm audience anyway.
+
+The targeting criteria that we've selected down here is suggestions. Meta wants to get you the best results possible, because if they do that, you will keep giving them money. You will keep being their customer.
+
+You might scale your campaigns, give them even more money. So meta is very much invested in getting us advertised as best as possible. They know that often comes from putting ads in front of warm audience.
+
+So even if you just select cold audiences down here, you don't add in these warm custom audiences. Meta is going to put ads in front of them anyway. There are ways you can fight it.
+
+But I think as opposed to going down that road by default, I'll show you how to do that. But as opposed to going down that road by default, it is better to lean into that, embrace that's what meta is going to do, and create ads that can work for both cold and warm audiences, which I know is difficult for a lot of people to get their heads around. So what that means from a campaign structure standpoint, just a sort of quick aside, how that ties into targeting, is that we are now operating with far fewer campaigns and far fewer ad sets than we used to.
+
+Whereas previously, we might have had lots of different campaigns, and within those campaigns, many different ad sets targeting different audiences. Now as much as possible, we're going to consolidate that down, sometimes literally to one campaign, one ad set. Often it's more because we like to have different campaigns for different product ranges, like there are caveats to that.
+
+But we do like to consolidate. And the consolidation really helps in a number of other ways, that A, it's easier to manage. So you can really put your effort and focus and understand what's going on.
+
+Because instead of managing seven campaigns with five ad sets each, you know, you get to 35 different ad sets, you're like, okay, do you really know what's happening here? Like, you might know, you might be able to have a look at the data, but you really like know it so that you can make decisions quickly and easily and know what's what's working? Unlikely, whereas with fewer ad sets, you can.
+
+But also, you and Meta are able to optimize the campaigns better. Because instead of spending, you know, $10 per day on many different ad sets, if you bring that all in, it's like $200 a day, one ad set. Well, Meta is going to be able to optimize that so much better, you're going to have way more conversions go through that one ad set, which is exactly the data Meta needs to optimize.
+
+You as the advertiser are going to see, okay, we launched those new ads, we find that we found out whether or not they produced a lower cost per purchase, or a better return on ad spend within two days, as opposed to within two weeks, because much more is being spent on them, because they're all consolidated within one ad set. So there are many advantages to going ahead and doing it that way as well. And that's part of the reason why we're going to go ahead and get this set up.
+
+If you are a relatively new business, or relatively new to Meta ads, I should say, and you don't have much conversion data within your ad account, this stuff here, adding in these custom audiences is really valuable. Now, you might not have many people in your custom audiences either, because if you're getting started, like you just won't have much. And that's one of the challenges for all new businesses.
+
+That's why business gets easier the longer you do it, for sure, particularly when it comes to marketing. But adding this information in is really useful, it is going to give Meta direction, just like the detailed targeting options when we added in those interests. In fact, actually, I'd say it gives more direction, because Meta goes, aha, these people visit the website, this type of person is on the on the customer list.
+
+And this type of person watches their stuff on Instagram, brilliant, useful info that can be used to work out exactly who to put your ads in front of. So in this section, we are including custom audiences, as in all the custom audiences have entered in here, they are people that we want to include in our targeting, you can do the opposite, and you can set some exclusions. So we talked about this earlier briefly.
+
+But if we go back up into this control section, we've got this custom audience exclusion, we can go ahead and add in custom audiences in here that our ads won't be put in front of. And remember, because this is in the control section, our ads really won't be put in front of these people. It's a hard boundary, not a suggestion.
+
+So a use case for this might be website purchases. Okay, I'm going to go ahead and add that in. So a lot of advertisers don't like the idea of paying to put ads in front of people that have already bought from them previously, especially if they've already bought from them recently, they feel like that is a waste of money.
+
+So therefore, you can come in and set custom audience exclusions. I'm not normally the biggest fan of this, because a, there's a good chance people have bought from you recently will buy again, if you have a product service that people buy again, or have complimentary product services that they could also buy. Even businesses that don't have that option.
+
+If you put ads in front of people that have recently bought or previously bought, and they had a good experience, they will be some of your best, like little marketing. I don't know what you call them like helpers marketing helpers, let's say, right. They might leave good comments saying it's a fantastic product service.
+
+I have that on my own stuff. Like I don't have any custom audience exclusions when I'm running ads for our own services or for my mentorship program. But we get comments on those from people being like, oh, I joined three months ago, best thing I ever did.
+
+It's like, I mean, that's amazing marketing. Anyone who reads the comments who've seen that ad gets to see that. It's like brilliant.
+
+So glad that people do that. You have to have something people have a good experience with for them to do that. But that's a good, a good thing to do.
+
+They're also being reminded. So let's say you've had someone come into your restaurant, your advertising restaurant, and they had a fantastic meal. And then they see your ad pop up, they might be much more likely to recommend it to refer you to a friend or family member, because you've made it top of mind.
+
+And that's one of the big advantages of advertising. So by default, I don't like including custom audience exclusions. The time when we will do it is if we really don't want a group of people to see something.
+
+So let's say, for example, we've got a lot of existing customers that have paid a certain price, and we're running a special promotion now. And we think they might be annoyed if they see the special promotion. Okay, if a client does that, then we would be looking to include a custom audience exclusion and exclude people who signed up on the higher rate.
+
+There'll be things along those lines, right? Even then, I think most people are more understanding than you would typically expect with that sort of thing, because people appreciate sometimes things are on sale, sometimes they're not. But I know business owners are sometimes worried about that.
+
+And that's fine. I don't mind adding that in. That is the scenario in which we would go ahead and use that.
+
+There are sometimes other scenarios where we might be looking to catch people at certain stages of a sales funnel. So let's say, for example, we want someone has become a lead for our services, but they haven't yet signed up. Well, we might want to create an audience that is in that place.
+
+So we're not targeting people who haven't become leads yet. And we're not targeting people who have already signed up. We're targeting people in that middle chunk, let's say with customer testimonials, proof, evidence of what we do, that sort of thing to help convince them to purchase.
+
+Now, I don't do that for my own ad campaigns. Again, I'm quite happy to put that stuff in front of everyone. But some businesses really want to get quite specific with that.
+
+And we do do that for some clients as well. So that's just to explain that that is an option there. I'll get back to the video in a second.
+
+But first, I want to let you know about Particle. Particle is a fantastic tool that takes meta ads targeting from good to exceptional by providing the in-depth market intelligence and competitive insights necessary to truly understand and reach the right audience in 2025 and beyond. With Particle, you can track competitor sales, pricing strategies, and product launches down to the SKU level, which means you can identify which strategies are working well for your competitors, understand their target audience's purchasing behavior, and uncover untapped market opportunities for your ads.
+
+Particle can also help you find new audiences or market segments by revealing top-selling trends or product opportunities. Combine that with Particle's granular SKU level data, and you'll be able to make more informed decisions about targeting, creative, and overall campaign strategy. Right now, you can get started with Particle for free, no credit card required.
+
+Just click the link in the video description below. Now it's time to quickly talk about lookalike audiences, because that is also something that you do under this custom audience section here. So in this Suggest an Audience, Customs, Inclusions, I can go ahead and go back into the editable version of this.
+
+And we can say, search existing audiences, and I can go ahead, you can see here, and add in a lookalike audience. So for example, we could add in a lookalike audience, you know, 1% of people in the US that are most similar to website purchases. I can go ahead and add that in.
+
+So let's quickly talk about lookalike audiences and whether you should or shouldn't use them, and all that sort of thing. So like I said, I've been running meta ads for a very long time at this point. And I remember a time pre lookalike audiences, and I remember when they were brought in and they were an absolute game changer.
+
+So a lookalike, to explain what it is, is a group of people that's very similar to another group of people. So you can, for example, upload a customer list and say to meta, these are my customers. Please create a lookalike audience based on the people in this customer list.
+
+So meta will analyze people in the customer list and they'll work out, okay, the average age of someone in this customer audience is 28. They live here, they earn this, they are interested in ABC. Let's create an audience of people that are most similar to them, right?
+
+That's what a lookalike audience was. That was absolutely fantastic because it allowed us to basically have much better targeting. And when lookalike audiences were brought in, I don't know how many years ago, many now, they were a game changer.
+
+We were able to use them. You could see the results were significantly better with lookalike audiences and other targeting options because they were just really similar to our customers. And often there was like this like mad scramble to get enough data to be able to produce the lookalike audience.
+
+And that was a thing with meta ads for a while. Lookalike audiences are now much less valuable. And the reason why is because meta does the lookalike audience thing automatically in the background.
+
+So by adding in our custom audiences here, meta is automatically going to create lookalike audiences for us and target those people as part of this ad set. They're going to have all this data point. It's why open targeting started performing better.
+
+We'll talk about that in a second. Better and better. Basically allowing meta to work it out over time was because meta incorporated a lot of lookalike audience technology.
+
+So if you want to go ahead and create them, I still think there are scenarios where advertisers feel meta hasn't optimized correctly. They haven't quite worked out who their best prospects are. This is more likely to happen with say a lead based business as opposed to sales.
+
+With sales, it's like they either bought or they didn't. With leads, meta can get you leads and think it's doing a good job. But you could then look at the back end and go, well, actually, these leads aren't as good quality.
+
+We're not converting those as well. There are ways around that. I talk a lot about improving lead quality and things like that in other videos.
+
+You can go ahead and check those out if you want to. But you might want to therefore take control and say, no, I want to specify more clearly who I want to go ahead and target. I can do that by you can do that by creating lookalike audiences.
+
+So we still have some cases, but they're used way less and way less valuable than they used to be. I'm going to quickly show you how to do it because it's quite quick and easy. So I'm going to go ahead and jump back into audiences.
+
+And then what you do to create a lookalike audience is you select one of your custom audiences. So you create a lookalike audience from a custom audience. So we talked about website purchase, for example.
+
+And this is one I've previously made for demonstration purposes. So that is a custom audience of people who have bought via website within the last 180 days. And then you can select that and go ahead and click on create lookalike.
+
+Or you can also create lookalike through there. So if I go ahead and click on create lookalike, we've got select your lookalike source, select audience location. So where do you want the lookalike audience to be created?
+
+Now, interesting side note here. The data is in the people that are in your custom audience, so in website purchases, don't need to be in the same country as the people who are going, you're going to be targeting in your lookalike. So, for example, we could have a people who have bought from us in the UK, want to expand to the US and create a US-based lookalike audience out of our UK-based customer list.
+
+Which is a good thing for businesses that want to expand in that way. So we just need to select a country here. So I can go with the United States as an example.
+
+Number of lookalike audiences, one. And then you select the percentage. Now, what this is, is this is the percent of Facebook and Instagram users in that country.
+
+So I've talked to lots of people at lookalike audiences. They say something like, oh, I created a lookalike audience and it had 500,000 people. Is that a good thing?
+
+And you're like, that's nothing. That is in like, not as in a small number, as in that just doesn't mean anything. Because if you create a 1% lookalike audience US-wide, it's always going to contain 2.8.
+
+Just like 2% is always going to contain 5.6. And 3% is always going to contain 8.3. Unless the number of Facebook and Instagram users changes significantly.
+
+When I first started making these, those numbers were less when there were less users. But yeah, so like a UK 1% lookalike is going to be like 400,000 and so on and so on. I normally start recommending with 1% in a large country like the US.
+
+With smaller populations, you want that audience to be larger. So you might want to go with a higher percentage in the UK. We might be looking at a 2%.
+
+In somewhere like Ireland, where the population is significantly smaller, we might be looking at more like a 10%. Because that's going to be something like 400,000 to 500,000 people. So just be aware of that.
+
+You want to adjust the size of the audience depending on population size. The smaller the percentage, the more closely related they are, the people in the lookalike are to the customer audience. Because it's out of all the Facebook and Instagram users in the US, it's the 1% that are most like the source audience.
+
+Or it's the 5% that are most like the source audience. Okay, so I'm going to create 1% for now. Create audience.
+
+Job done. I can now go ahead and, well it's populating, it'll take a minute. But I can now go ahead and get that added in to my ad set as we've already done.
+
+So let's bounce back to ads manager. And we will go from the account overview to campaign view and go to the ad set level, click edit. And go down to the audience section.
+
+And we've already added this in here in the lookalike. Like I said, in this instance, I'm not sure that's really going to do much. But if you want to, you can add that in.
+
+If you feel like meta's not worked out in terms of your audience, they're not targeting the right people, then again, you can go ahead and get that added in as well. And it's certainly not going to hurt your results. One thing I want to talk about with targeting is we've got this thing called campaign score.
+
+Now this is relatively new. This is a part of the new advantage plus sales campaign. If we do something like we're about to, the meta really doesn't like when it comes to our targeting.
+
+This campaign score, it's 100 out of 100 right now, will go down. Because we've followed best practices in this video, I've shown you how to do that. We are seeing 100 out of 100 and meta is right now pretty happy with us.
+
+But I'm about to go ahead and make it not happy with us at all. Right. So I talked previously about you can take control of this, not use meta suggestions, really get quite specific with who you do and don't put ads in front of, and use what used to be referred to as manual targeting.
+
+But you can still do that within an advantage plus sales campaign or advantage plus leads campaign. And here's how you do it. Like I said, meta is not going to like this and they're going to try and recommend that we don't do this at many stages.
+
+So we've got this button down here beneath the suggest an audience section beneath detail targeting. We've got further limit the reach of your ads. And that's the first indication that meta really doesn't want us to do this.
+
+I'm going to go ahead and click on this. Right. So they say here that limiting your audience may reduce performance potential outcome.
+
+And current set up to 7.2% lower cost per result based on their experimentation. If we don't go and mess around with this. So really trying to, like I said, convince us to not.
+
+But let's go ahead and click on switch setup because I want to show you how we go about doing this. So once we switch setup, instead of having that control section and then suggest an audience, it's all now as if it's within controls. Okay.
+
+So everything we have in here is now a fixed hard targeting criteria as long as we set it up that way. And I'm going to go through in a second and show you exactly what that looks like and how we go about ticking the various options to make that happen. Okay.
+
+So firstly, apologies if it's gone a bit darker and you can hear the rain on the roof. It seems to be in the middle of a storm right now, but I'm going to crack on and carry on with the video. Just wanted to highlight that.
+
+How does this work? Like I said, these are hard boundaries if we set it up that way. We at least have the option to do that.
+
+So location hasn't changed. That was within the control section. That's the same.
+
+Age now 25 to 55. We can see here it's as we've switched over, it still is in as a suggestion 25 to 55, but we can choose to make it not a suggestion. Go.
+
+No, I want to deselect the suggestion option. I want the age range of the people I target to be 25 to 55 only. And you can see as soon as I've done that, Meta said here, your campaign scores gone down from 100 to 66.
+
+Just with that one change, you get a 33% lower cost per result with advantage plus audience. Okay. So like I said, trying to convince us not to do that.
+
+Genders, we didn't change. But again, if we were to be more specific, we could say, I only want to target men. And then if you don't want it to be a suggestion, you don't want it to operate like the new default, then you have to deselect the suggestion option and just go be more specific there.
+
+I think the example we were using was all anyway, so it doesn't really apply. Then we've got this custom audiences in here, right? Now, if we go in, we've got custom audiences and lookalike audiences.
+
+They're in here right now as suggestions, just like in the previous setup, hasn't changed. If I deselect that, then that basically is really going to mess up our campaign. So if you are looking to go with this option and go with the manual targeting setups, not use, have these targeting criteria suggestions, you can't therefore do what I talked about previously where you have warm audiences and cold audiences in the same ad set.
+
+They need to be in separate ad sets and you either want to have your custom audiences in here without a lookalike audience. Lookalike audience is a cold audience. Like those are different things.
+
+So if this was a warm audience ad set, we'd have our custom audiences in and we'd remove all the other targeting criteria, or we'd go the other way around and have in some targeting criteria, but remove all the custom audience. They have to be split out at that point, right? If you're not going to use them as a suggestion in there.
+
+And the reason why is because if these are hard boundaries, as in we're only advertising to people in our custom audiences, that's going to be a really small audience in comparison to what we typically target with meta ads, right? Even if you have big custom audiences like tens of thousands of people or even hundreds of thousands of people, but that's still smaller than the probably millions of people you could have advertised to with a cold audience. You can see as we do this, our campaign score is dropping all the time.
+
+And meta has got all sorts of things saying, this is going to hurt your performance and things like that. Now, when it comes to our detailed targeting, so our interests and things like that, we can't turn that off as a suggestion. Even within manual, that's, we can't, we just don't have the control over that anymore.
+
+So if you have those in there, then they are suggestions just like they are in the regular new setup. But we could obviously delete those out if this is a warm audience ad set. So this would now be a warm audience ad set.
+
+And then we create a separate one with a cold audience ad set and look to include some of those in there and things like that. Like I said, I wouldn't normally recommend you do that, but there are times when you want to get really specific where you either want to absolutely make sure that you're only targeting people who are at a certain stage of a sales funnel, or you're finding that Meta is generating you lots of leads from people who are 55 plus, but no one who's 55 plus ever converts. So you really want to target people lower than that.
+
+You can come in here and make the age range criteria a hard targeting boundary. If you advertise, let's say for example, women's jewelry, and you're finding that your ads are mostly being put in front of men. Meta is thinking maybe it's going to be bought as a gift, but you know that customers are much more valuable if they're bought by women because they buy from you again and again, as opposed to a one-time gift.
+
+Therefore, you only want to target women. You know, I'm sort of coming up with examples of when we might want to do this. Then you can come in here and be really specific.
+
+No, we only want to target women. And you can get quite granular with that. But by default, let's go back to the recommended setup and get our campaign score back up to 100 and go with what Meta recommends.
+
+And we can go ahead and, you know, I deleted some things out for demonstration purposes, but we can go ahead and add those things in. Okay. That leads me on to my next point, which is open targeting.
+
+So open targeting, I'll show you what that looks like, is nothing. So nothing in controls. Well, obviously your location aside, right?
+
+So you leave in your location. You don't have any other controls in minimum age, 18, no custom body exclusions, no languages, no detailed targeting, which we've already deleted out. No age specified criteria, just Meta.
+
+You go ahead and work it out. And that might sound a little bit crazy if you haven't had experience doing that. But open targeting has been one of the best performing targeting options across the board for a number of years now.
+
+It's not always the best performing targeting options. So it works in my experience better for businesses that are optimizing for sales and purchase as opposed to leads, although we still do use it for lead based companies often. The most important thing is that you have conversion data.
+
+Brand new ad accounts tend to struggle a bit. Meta's like, we don't really know who converts. We don't know how many times you need to see an ad, what time of day they convert, what day of the week they convert, how old they need to be, what they need to be interested in.
+
+The more conversion data you have, the more Meta knows all those things. They can just work out the targeting for you. And the vast majority of time Meta is going to be much smarter than us advertisers at being able to work that out.
+
+So open targeting is definitely something that I'd recommend for a lot of ad accounts that have more conversion data, particularly if you're looking to scale, you want larger audiences. But I think it's not such a big decision anymore to go with open targeting or specific targeting options. Because Meta has introduced this hybrid option, which is suggest an audience.
+
+And I think with the suggest an audience, you kind of get the best of both worlds. Like what's the downside in adding in some suggested audiences, whether that's custom audiences, which will be advertised to them warm and cold, or it's detailed targeting options, just to give Meta some direction. This is who I think I should target.
+
+But hey, at the end of the day, it's up to you. I think that's a nice hybrid, very limited downside to adding in suggestions. If suggestions aren't accurate, Meta will just ignore them.
+
+And if they are, it might help improve the targeting. So by all means, test open targeting. But there's a lot of people in this space that are like, you can never select targeting options.
+
+You have to go with open targeting. I think they were wrong four years ago, but they had more of a point four years ago. I think now that's just silly.
+
+Absolutely fine to go ahead and add in targeting options as suggestions. They might argue that Meta might not pay a huge amount of attention to them. But they'll only do that if Meta believes that's what's going to get you the best results.
+
+Like I said, Meta wants us to get the best results possible. That'll get us to spend more. That'll get us to scale.
+
+That'll help us get great results, which in turn helps Meta succeed as a company. If your targeting suggestions do provide valuable input and help out, then they're going to be paid attention to significantly more. So now that you know about Meta ads targeting, I'd strongly recommend you check out this video next.
+
+In it, I show you how we generated $7.2 million in just 90 days for a client using a very interesting Meta ad strategy. Might be a strategy that you can use in your business. So if you haven't already, go ahead and give us a watch.

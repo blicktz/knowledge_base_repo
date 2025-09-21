@@ -7,6 +7,7 @@ import asyncio
 import aiohttp
 import sys
 import time
+import random
 from pathlib import Path
 import argparse
 from typing import List, Dict, Any
@@ -15,8 +16,56 @@ from typing import List, Dict, Any
 SERVER_URL = "http://localhost:8080"
 API_KEY = "mv_mtvG2X4U_dqRgdWMvSEoFtpMjRJkL4zlkwEXYH2I"
 
+# Client configuration for robustness
+UPLOAD_TIMEOUT = 300  # 5 minutes for upload
+REQUEST_TIMEOUT = 60  # 1 minute for other requests
+MAX_RETRIES = 3
+INITIAL_BACKOFF = 1.0  # seconds
+MAX_BACKOFF = 30.0  # seconds
+
+async def exponential_backoff_retry(func, max_retries=MAX_RETRIES, initial_backoff=INITIAL_BACKOFF, max_backoff=MAX_BACKOFF):
+    """Execute function with exponential backoff retry logic."""
+    for attempt in range(max_retries + 1):
+        try:
+            return await func()
+        except Exception as e:
+            if attempt == max_retries:
+                raise e
+            
+            # Calculate backoff time with jitter
+            backoff = min(initial_backoff * (2 ** attempt), max_backoff)
+            jitter = random.uniform(0.1, 0.3) * backoff
+            sleep_time = backoff + jitter
+            
+            print(f"Attempt {attempt + 1} failed: {e}. Retrying in {sleep_time:.1f}s...")
+            await asyncio.sleep(sleep_time)
+
+def create_robust_session():
+    """Create aiohttp session with robust timeout and connection settings."""
+    connector = aiohttp.TCPConnector(
+        limit=10,  # Total connection limit
+        limit_per_host=5,  # Per-host connection limit
+        ttl_dns_cache=300,  # DNS cache TTL
+        use_dns_cache=True,
+        keepalive_timeout=30,
+        enable_cleanup_closed=True
+    )
+    
+    # Different timeouts for different operations
+    upload_timeout = aiohttp.ClientTimeout(
+        total=UPLOAD_TIMEOUT,
+        connect=30,
+        sock_read=60
+    )
+    
+    return aiohttp.ClientSession(
+        connector=connector,
+        timeout=upload_timeout,
+        raise_for_status=False  # Handle status codes manually
+    )
+
 async def upload_and_process(session: aiohttp.ClientSession, client_id: int, audio_file: Path) -> Dict[str, Any]:
-    """Simulate a single client uploading and processing a file."""
+    """Simulate a single client uploading and processing a file with retry logic."""
     
     print(f"[Client {client_id}] Starting upload of {audio_file.name}")
     start_time = time.time()
@@ -24,42 +73,66 @@ async def upload_and_process(session: aiohttp.ClientSession, client_id: int, aud
     headers = {"Authorization": f"Bearer {API_KEY}"}
     
     try:
-        # 1. Upload file
-        with open(audio_file, 'rb') as f:
-            data = aiohttp.FormData()
-            data.add_field('file', f, filename=audio_file.name)
-            data.add_field('model', 'turbo')
-            
-            async with session.post(f"{SERVER_URL}/upload-single", headers=headers, data=data) as resp:
-                if resp.status != 200:
+        # 1. Upload file with retry logic
+        async def upload_file():
+            async with aiohttp.ClientSession(
+                timeout=aiohttp.ClientTimeout(total=UPLOAD_TIMEOUT, connect=30, sock_read=60)
+            ) as upload_session:
+                # Read file asynchronously
+                file_data = audio_file.read_bytes()
+                
+                data = aiohttp.FormData()
+                data.add_field('file', file_data, filename=audio_file.name)
+                data.add_field('model', 'turbo')
+                
+                async with upload_session.post(f"{SERVER_URL}/upload-single", headers=headers, data=data) as resp:
+                    if resp.status == 499:  # Client disconnect
+                        raise aiohttp.ClientError(f"Upload interrupted (status {resp.status})")
+                    elif resp.status == 503:  # Server overloaded
+                        raise aiohttp.ClientError(f"Server overloaded (status {resp.status})")
+                    elif resp.status >= 500:  # Server error
+                        error_text = await resp.text()
+                        raise aiohttp.ClientError(f"Server error {resp.status}: {error_text}")
+                    elif resp.status != 200:
+                        error_text = await resp.text()
+                        raise Exception(f"Upload failed {resp.status}: {error_text}")
+                    
+                    return await resp.json()
+        
+        upload_result = await exponential_backoff_retry(upload_file)
+        job_id = upload_result["job_id"]
+        print(f"[Client {client_id}] File uploaded successfully, job_id: {job_id}")
+        
+        # 2. Start processing with retry logic
+        async def start_processing():
+            async with session.post(f"{SERVER_URL}/process/{job_id}", headers=headers) as resp:
+                if resp.status >= 500:
                     error_text = await resp.text()
-                    print(f"[Client {client_id}] Upload failed: {error_text}")
-                    return {"client_id": client_id, "status": "upload_failed", "error": error_text}
+                    raise aiohttp.ClientError(f"Process start server error {resp.status}: {error_text}")
+                elif resp.status != 200:
+                    error_text = await resp.text()
+                    raise Exception(f"Process start failed {resp.status}: {error_text}")
                 
-                upload_result = await resp.json()
-                job_id = upload_result["job_id"]
-                
-        print(f"[Client {client_id}] File uploaded, job_id: {job_id}")
+                return await resp.json()
         
-        # 2. Start processing
-        async with session.post(f"{SERVER_URL}/process/{job_id}", headers=headers) as resp:
-            if resp.status != 200:
-                error_text = await resp.text()
-                print(f"[Client {client_id}] Process start failed: {error_text}")
-                return {"client_id": client_id, "status": "process_failed", "error": error_text}
-            
-            process_result = await resp.json()
-            print(f"[Client {client_id}] Processing started, queue position: {process_result.get('queue_size', 'unknown')}")
+        process_result = await exponential_backoff_retry(start_processing)
+        print(f"[Client {client_id}] Processing started, queue position: {process_result.get('queue_size', 'unknown')}")
         
-        # 3. Poll status until complete
-        while True:
+        # 3. Poll status until complete with retry logic
+        async def check_status():
             async with session.get(f"{SERVER_URL}/status/{job_id}", headers=headers) as resp:
-                if resp.status != 200:
+                if resp.status >= 500:
                     error_text = await resp.text()
-                    print(f"[Client {client_id}] Status check failed: {error_text}")
-                    return {"client_id": client_id, "status": "status_failed", "error": error_text}
+                    raise aiohttp.ClientError(f"Status check server error {resp.status}: {error_text}")
+                elif resp.status != 200:
+                    error_text = await resp.text()
+                    raise Exception(f"Status check failed {resp.status}: {error_text}")
                 
-                status = await resp.json()
+                return await resp.json()
+        
+        while True:
+            try:
+                status = await exponential_backoff_retry(check_status)
                 current_status = status["status"]
                 
                 if current_status == "completed":
@@ -83,7 +156,11 @@ async def upload_and_process(session: aiohttp.ClientSession, client_id: int, aud
                     }
                 else:
                     print(f"[Client {client_id}] Status: {current_status}")
-                    await asyncio.sleep(2)  # Poll every 2 seconds
+                    await asyncio.sleep(3)  # Poll every 3 seconds
+                    
+            except Exception as status_error:
+                print(f"[Client {client_id}] Status polling error: {status_error}")
+                await asyncio.sleep(5)  # Wait longer on error
                     
     except Exception as e:
         print(f"[Client {client_id}] Exception: {e}")
@@ -128,7 +205,8 @@ async def run_concurrent_test(audio_files: List[Path], num_clients: int = 4):
     print(f"Audio files: {[f.name for f in audio_files[:num_clients]]}")
     print(f"{'='*60}\n")
     
-    async with aiohttp.ClientSession() as session:
+    session = create_robust_session()
+    async with session:
         # Check server health first
         await check_server_health(session)
         

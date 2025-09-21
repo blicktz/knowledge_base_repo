@@ -39,6 +39,8 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from pydantic import BaseModel
 import uvicorn
+from starlette.requests import ClientDisconnect
+from starlette.middleware.base import BaseHTTPMiddleware
 
 try:
     import whisper
@@ -69,9 +71,32 @@ RAM_FILESYSTEM_SIZE = os.environ.get("RAM_FILESYSTEM_SIZE", "40g")
 
 # Directory setup will be handled in startup_event after RAM filesystem setup
 
+class TimeoutMiddleware(BaseHTTPMiddleware):
+    """Middleware to handle request timeouts."""
+    
+    def __init__(self, app, timeout: int = 300):  # 5 minute default timeout
+        super().__init__(app)
+        self.timeout = timeout
+    
+    async def dispatch(self, request: Request, call_next):
+        try:
+            return await asyncio.wait_for(call_next(request), timeout=self.timeout)
+        except asyncio.TimeoutError:
+            logger.warning(f"Request timeout after {self.timeout}s: {request.url}")
+            return JSONResponse(
+                status_code=408,
+                content={"detail": "Request timeout"}
+            )
+        except Exception as e:
+            logger.error(f"Request error: {e}")
+            raise
+
 # FastAPI app
 app = FastAPI(title="RunPod Transcription API", version="1.0.0")
 security = HTTPBearer()
+
+# Add timeout middleware
+app.add_middleware(TimeoutMiddleware, timeout=600)  # 10 minute timeout for uploads
 
 # Model pool for concurrent processing
 model_pool = []
@@ -83,6 +108,21 @@ jobs_db_lock = asyncio.Lock()
 # Processing queue system
 processing_queue = asyncio.Queue()
 queue_worker_tasks = []  # List to track all worker tasks
+
+# Upload slot management for concurrency control
+upload_semaphore = None  # Will be initialized in startup_event
+active_uploads = set()  # Track active upload job IDs
+
+# Upload metrics tracking
+upload_metrics = {
+    "total_uploads": 0,
+    "successful_uploads": 0,
+    "failed_uploads": 0,
+    "disconnected_uploads": 0,
+    "total_bytes_uploaded": 0,
+    "average_upload_speed": 0.0,
+    "peak_concurrent_uploads": 0
+}
 
 class JobStatus(BaseModel):
     job_id: str
@@ -228,6 +268,61 @@ def get_gpu_memory_usage():
     except Exception as e:
         logger.warning(f"Could not get GPU memory usage: {e}")
         return {"error": str(e)}
+
+def get_file_descriptor_usage():
+    """Get current file descriptor usage."""
+    try:
+        import resource
+        import os
+        
+        # Get current and max file descriptors
+        soft_limit, hard_limit = resource.getrlimit(resource.RLIMIT_NOFILE)
+        
+        # Count currently open file descriptors
+        proc_fd_dir = f"/proc/{os.getpid()}/fd"
+        if os.path.exists(proc_fd_dir):
+            current_fds = len(os.listdir(proc_fd_dir))
+        else:
+            current_fds = 0  # Can't determine on non-Linux systems
+        
+        usage_percent = (current_fds / soft_limit * 100) if soft_limit > 0 else 0
+        
+        return {
+            "current": current_fds,
+            "soft_limit": soft_limit,
+            "hard_limit": hard_limit,
+            "usage_percent": round(usage_percent, 1)
+        }
+    except Exception as e:
+        logger.warning(f"Could not get file descriptor usage: {e}")
+        return {"error": str(e)}
+
+def check_memory_pressure():
+    """Check if system is under memory pressure."""
+    try:
+        ram_usage = get_ram_usage()
+        ram_percent = ram_usage.get('usage_percent', 0)
+        
+        # Check file descriptor usage
+        fd_usage = get_file_descriptor_usage()
+        fd_percent = fd_usage.get('usage_percent', 0)
+        
+        # Define pressure thresholds
+        ram_threshold = 85.0  # 85% RAM usage
+        fd_threshold = 80.0   # 80% FD usage
+        
+        pressure_info = {
+            "ram_pressure": ram_percent > ram_threshold,
+            "fd_pressure": fd_percent > fd_threshold,
+            "overall_pressure": ram_percent > ram_threshold or fd_percent > fd_threshold,
+            "ram_usage": ram_percent,
+            "fd_usage": fd_percent
+        }
+        
+        return pressure_info
+    except Exception as e:
+        logger.warning(f"Could not check memory pressure: {e}")
+        return {"error": str(e), "overall_pressure": False}
 
 async def cleanup_job_files(job_id: str, audio_files: List[Path]):
     """Enhanced cleanup routine for memory management."""
@@ -494,32 +589,78 @@ async def queue_worker(worker_id: int, model_instance):
 
 @app.post("/process/{job_id}")
 async def start_processing(job_id: str, api_key: str = Depends(verify_api_key)):
-    """Start processing an uploaded file."""
+    """Start processing an uploaded file. Handles multiple valid states to prevent race conditions."""
+    
+    # Check job status and determine action
+    should_queue = False
+    response_data = None
+    
     async with jobs_db_lock:
         if job_id not in jobs_db:
             raise HTTPException(status_code=404, detail="Job not found")
         
         job = jobs_db[job_id]
+        current_status = job["status"]
         
-        if job["status"] != "uploaded":
+        # Handle different job states atomically
+        if current_status == "uploaded":
+            # Transition from uploaded to queued
+            job["status"] = "queued"
+            job["updated_at"] = datetime.now().isoformat()
+            should_queue = True
+            
+            response_data = {
+                "job_id": job_id,
+                "status": "queued",
+                "message": "Job added to processing queue",
+                "active_workers": WORKER_COUNT
+            }
+            
+        elif current_status == "queued":
+            # Job is already queued - idempotent response
+            response_data = {
+                "job_id": job_id,
+                "status": "queued", 
+                "message": "Job is already in processing queue",
+                "active_workers": WORKER_COUNT
+            }
+            
+        elif current_status == "processing":
+            # Job is already being processed - idempotent response
+            worker_id = job.get("worker_id", "unknown")
+            response_data = {
+                "job_id": job_id,
+                "status": "processing",
+                "message": f"Job is already being processed by worker {worker_id}",
+                "active_workers": WORKER_COUNT
+            }
+            
+        elif current_status == "completed":
             raise HTTPException(
-                status_code=400, 
-                detail=f"Job status is '{job['status']}', expected 'uploaded'"
+                status_code=409,
+                detail="Job has already been completed. Use /status/{job_id} to get results."
             )
-        
-        # Add job to processing queue
-        job["status"] = "queued"
-        job["updated_at"] = datetime.now().isoformat()
+            
+        elif current_status == "failed":
+            raise HTTPException(
+                status_code=409,
+                detail=f"Job has failed: {job.get('error', 'Unknown error')}. Cannot reprocess failed jobs."
+            )
+            
+        else:
+            # Unknown status
+            raise HTTPException(
+                status_code=400,
+                detail=f"Job is in unexpected status '{current_status}'. Cannot process."
+            )
     
-    await processing_queue.put({"job_id": job_id})
+    # Add to queue outside of lock if needed
+    if should_queue:
+        await processing_queue.put({"job_id": job_id})
     
-    return {
-        "job_id": job_id,
-        "status": "queued",
-        "message": "Job added to processing queue",
-        "queue_size": processing_queue.qsize(),
-        "active_workers": WORKER_COUNT
-    }
+    # Add queue size to response
+    response_data["queue_size"] = processing_queue.qsize()
+    return response_data
 
 @app.get("/")
 async def root():
@@ -533,7 +674,8 @@ async def root():
             "status": "/status/{job_id}",
             "download": "/download/{job_id}",
             "health": "/health",
-            "system": "/system"
+            "system": "/system",
+            "metrics": "/metrics"
         },
         "workflow": "1. Upload file → 2. Start processing → 3. Check status → 4. Download results",
         "concurrency": {
@@ -603,12 +745,36 @@ async def system_status(api_key: str = Depends(verify_api_key)):
         },
         "memory": {
             "ram": get_ram_usage(),
-            "gpu": get_gpu_memory_usage()
+            "gpu": get_gpu_memory_usage(),
+            "file_descriptors": get_file_descriptor_usage(),
+            "pressure": check_memory_pressure()
         },
         "storage": {
             "ram_filesystem_enabled": USE_RAM_FILESYSTEM,
             "upload_dir": str(UPLOAD_DIR),
             "output_dir": str(OUTPUT_DIR)
+        },
+        "upload_metrics": upload_metrics
+    }
+
+@app.get("/metrics")
+async def get_metrics(api_key: str = Depends(verify_api_key)):
+    """Get detailed upload and system metrics."""
+    return {
+        "upload_metrics": upload_metrics,
+        "system_metrics": {
+            "memory": {
+                "ram": get_ram_usage(),
+                "gpu": get_gpu_memory_usage(),
+                "file_descriptors": get_file_descriptor_usage(),
+                "pressure": check_memory_pressure()
+            },
+            "concurrent_info": {
+                "active_uploads": len(active_uploads),
+                "active_uploads_ids": list(active_uploads),
+                "processing_queue_size": processing_queue.qsize(),
+                "active_workers": len(queue_worker_tasks)
+            }
         }
     }
 
@@ -617,124 +783,269 @@ async def upload_single_file(
     request: Request,
     api_key: str = Depends(verify_api_key)
 ):
-    """Upload a single audio file using streaming for large files."""
-    logger.info("Starting streaming upload...")
+    """Upload a single audio file using streaming for large files with concurrency control."""
     
-    # Extract content type and validate
-    content_type = request.headers.get("content-type", "")
-    if not content_type.startswith("multipart/form-data"):
-        raise HTTPException(status_code=400, detail="Must use multipart/form-data")
+    # Check memory pressure before accepting upload
+    pressure_info = check_memory_pressure()
+    if pressure_info.get("overall_pressure", False):
+        ram_usage = pressure_info.get("ram_usage", 0)
+        fd_usage = pressure_info.get("fd_usage", 0)
+        logger.warning(f"⚠️ Server under memory pressure: RAM {ram_usage}%, FD {fd_usage}%")
+        raise HTTPException(
+            status_code=503, 
+            detail=f"Server under memory pressure (RAM: {ram_usage}%, FD: {fd_usage}%)"
+        )
     
-    # Create job ID and directory
-    job_id = str(uuid.uuid4())
-    job_upload_dir = UPLOAD_DIR / job_id
-    job_upload_dir.mkdir(parents=True, exist_ok=True)
+    # Acquire upload slot to prevent too many concurrent uploads
+    if upload_semaphore is None:
+        raise HTTPException(status_code=503, detail="Server not ready")
     
-    # Initialize parser
-    parser = StreamingFormDataParser(headers=request.headers)
-    
-    # Create temporary filename for upload
-    temp_filename = f"upload_{job_id}.tmp"
-    temp_file_path = job_upload_dir / temp_filename
-    
-    # Create targets and register them BEFORE parsing
-    model_target = ValueTarget()
-    file_target = FileTarget(
-        str(temp_file_path),
-        validator=MaxSizeValidator(1024 * 1024 * 1024)  # 1GB max
-    )
-    
-    # Register ALL targets before parsing
-    parser.register('model', model_target)
-    parser.register('file', file_target)
-    
-    logger.debug("Targets registered, starting to stream request data...")
-    
-    try:
-        # Stream and parse ALL the request data
-        async for chunk in request.stream():
-            parser.data_received(chunk)
+    async with upload_semaphore:
+        job_id = str(uuid.uuid4())
+        active_uploads.add(job_id)
         
-        logger.debug("Finished parsing request data")
+        # Update metrics
+        upload_metrics["total_uploads"] += 1
+        current_concurrent = len(active_uploads)
+        if current_concurrent > upload_metrics["peak_concurrent_uploads"]:
+            upload_metrics["peak_concurrent_uploads"] = current_concurrent
         
-        # Extract model if provided
-        model = "turbo"  # default
-        if model_target.value:
-            model = model_target.value.decode('utf-8')
-            logger.debug(f"Model specified: {model}")
+        logger.info(f"🚀 Starting streaming upload for job {job_id} ({current_concurrent} active uploads, peak: {upload_metrics['peak_concurrent_uploads']})")
         
-        # Validate model
-        valid_models = ["tiny", "base", "small", "medium", "large", "large-v2", "large-v3", "turbo"]
-        if model not in valid_models:
-            raise HTTPException(status_code=400, detail=f"Invalid model: {model}. Choose from: {valid_models}")
+        # Log initial system state
+        try:
+            ram_usage = get_ram_usage()
+            gpu_usage = get_gpu_memory_usage()
+            logger.info(f"💾 Memory before upload - RAM: {ram_usage}, GPU: {gpu_usage}")
+        except Exception as mem_e:
+            logger.warning(f"⚠️  Could not get memory info: {mem_e}")
         
-        # Check if file was uploaded and get actual filename
-        if not file_target.multipart_filename:
-            logger.error("No file uploaded - multipart_filename is None")
-            raise HTTPException(status_code=400, detail="No file uploaded")
+        # Extract content type and validate
+        content_type = request.headers.get("content-type", "")
+        if not content_type.startswith("multipart/form-data"):
+            active_uploads.discard(job_id)
+            raise HTTPException(status_code=400, detail="Must use multipart/form-data")
         
-        uploaded_filename = file_target.multipart_filename
-        logger.info(f"File received: {uploaded_filename}")
+        # Create job directory
+        job_upload_dir = UPLOAD_DIR / job_id
+        job_upload_dir.mkdir(parents=True, exist_ok=True)
         
-        # Validate file type
-        if not uploaded_filename.lower().endswith(('.mp3', '.wav', '.m4a', '.flac', '.ogg')):
-            raise HTTPException(status_code=400, detail="Invalid file type. Supported: MP3, WAV, M4A, FLAC, OGG")
+        # Create temporary filename for upload
+        temp_filename = f"upload_{job_id}.tmp"
+        temp_file_path = job_upload_dir / temp_filename
         
-        # Rename temporary file to actual filename
-        final_file_path = job_upload_dir / uploaded_filename
-        if temp_file_path.exists():
-            temp_file_path.rename(final_file_path)
-            file_size = final_file_path.stat().st_size
-            logger.info(f"File uploaded successfully: {uploaded_filename} ({file_size / (1024*1024):.1f} MB)")
-        else:
-            logger.error(f"Temporary file not found: {temp_file_path}")
-            raise HTTPException(status_code=500, detail="File not found after upload")
-        
-        # Create job record
-        job = {
-            "job_id": job_id,
-            "status": "uploaded",
-            "created_at": datetime.now().isoformat(),
-            "updated_at": datetime.now().isoformat(),
-            "files_count": 1,
-            "processed_count": 0,
-            "failed_count": 0,
-            "model": model,
-            "file_path": str(final_file_path),
-            "error": None,
-            "download_url": None,
-            "worker_id": None
-        }
-        
-        async with jobs_db_lock:
-            jobs_db[job_id] = job
-        
-        logger.info(f"Job created successfully: {job_id}")
-        
-        return {
-            "job_id": job_id,
-            "status": "uploaded",
-            "files_count": 1,
-            "file_name": uploaded_filename,
-            "file_size": file_size,
-            "message": "File uploaded successfully via streaming.",
-            "status_url": f"/status/{job_id}",
-            "process_url": f"/process/{job_id}"
-        }
-        
-    except MaxSizeValidator as e:
-        logger.error(f"File too large: {e}")
-        # Clean up on error
-        if job_upload_dir.exists():
-            shutil.rmtree(job_upload_dir, ignore_errors=True)
-        raise HTTPException(status_code=413, detail="File too large (max 1GB)")
-        
-    except Exception as e:
-        logger.error(f"Upload failed: {str(e)}")
-        # Clean up on error
-        if job_upload_dir.exists():
-            shutil.rmtree(job_upload_dir, ignore_errors=True)
-        raise HTTPException(status_code=500, detail=f"Upload failed: {str(e)}")
+        try:
+            # Initialize parser
+            parser = StreamingFormDataParser(headers=request.headers)
+            
+            # Create targets and register them BEFORE parsing
+            model_target = ValueTarget()
+            file_target = None
+            
+            try:
+                file_target = FileTarget(
+                    str(temp_file_path),
+                    validator=MaxSizeValidator(1024 * 1024 * 1024)  # 1GB max
+                )
+                
+                # Register ALL targets before parsing
+                parser.register('model', model_target)
+                parser.register('file', file_target)
+            
+                logger.debug(f"✅ Targets registered for job {job_id}, starting to stream request data...")
+                
+                # Initialize progress tracking
+                start_time = time.time()
+                bytes_received = 0
+                chunk_count = 0
+                last_yield_time = start_time
+                
+                try:
+                    # Stream and parse ALL the request data with async yielding
+                    async for chunk in request.stream():
+                        parser.data_received(chunk)
+                        bytes_received += len(chunk)
+                        chunk_count += 1
+                        
+                        # Async yield every 100 chunks or every 2 seconds to prevent event loop blocking
+                        current_time = time.time()
+                        if chunk_count % 100 == 0 or (current_time - last_yield_time) > 2.0:
+                            await asyncio.sleep(0)  # Yield control to event loop
+                            last_yield_time = current_time
+                            
+                            # Log progress and check memory
+                            if chunk_count % 100 == 0:
+                                elapsed = current_time - start_time
+                                mb_received = bytes_received / (1024 * 1024)
+                                speed = mb_received / elapsed if elapsed > 0 else 0
+                                logger.info(f"📊 Job {job_id} Progress: {mb_received:.1f}MB received, {chunk_count} chunks, {speed:.1f}MB/s")
+                                
+                                # Memory pressure check during upload
+                                try:
+                                    ram_usage = get_ram_usage()
+                                    if ram_usage.get('usage_percent', 0) > 90:
+                                        logger.warning(f"⚠️  High memory usage during upload: {ram_usage['usage_percent']}%")
+                                        # Consider aborting upload if memory is critically low
+                                        if ram_usage.get('usage_percent', 0) > 95:
+                                            active_uploads.discard(job_id)
+                                            raise Exception("Upload aborted due to critical memory pressure")
+                                except:
+                                    pass
+                    
+                except ClientDisconnect:
+                    logger.warning(f"🔌 Client disconnected during upload for job {job_id}")
+                    upload_metrics["disconnected_uploads"] += 1
+                    active_uploads.discard(job_id)
+                    # Clean up partial upload
+                    if job_upload_dir.exists():
+                        shutil.rmtree(job_upload_dir, ignore_errors=True)
+                    raise HTTPException(status_code=499, detail="Client disconnected during upload")
+                
+                except Exception as stream_error:
+                    logger.error(f"❌ Streaming error for job {job_id}: {stream_error}")
+                    upload_metrics["failed_uploads"] += 1
+                    active_uploads.discard(job_id)
+                    # Clean up partial upload
+                    if job_upload_dir.exists():
+                        shutil.rmtree(job_upload_dir, ignore_errors=True)
+                    raise
+                
+                finally:
+                    # Ensure file target is properly closed to prevent file descriptor leaks
+                    if file_target and hasattr(file_target, '_fd') and file_target._fd:
+                        try:
+                            file_target._fd.close()
+                        except:
+                            pass
+                
+                upload_duration = time.time() - start_time
+                mb_total = bytes_received / (1024 * 1024)
+                avg_speed = mb_total / upload_duration if upload_duration > 0 else 0
+                
+                logger.info(f"🏁 Job {job_id} finished parsing: {mb_total:.1f}MB in {upload_duration:.1f}s ({avg_speed:.1f}MB/s)")
+                
+                # Extract model if provided
+                model = "turbo"  # default
+                if model_target.value:
+                    model = model_target.value.decode('utf-8')
+                    logger.debug(f"Model specified for job {job_id}: {model}")
+                
+                # Validate model
+                valid_models = ["tiny", "base", "small", "medium", "large", "large-v2", "large-v3", "turbo"]
+                if model not in valid_models:
+                    active_uploads.discard(job_id)
+                    raise HTTPException(status_code=400, detail=f"Invalid model: {model}. Choose from: {valid_models}")
+                
+                # Check if file was uploaded and get actual filename
+                if not file_target.multipart_filename:
+                    logger.error(f"No file uploaded for job {job_id} - multipart_filename is None")
+                    active_uploads.discard(job_id)
+                    raise HTTPException(status_code=400, detail="No file uploaded")
+                
+                uploaded_filename = file_target.multipart_filename
+                logger.info(f"File received for job {job_id}: {uploaded_filename}")
+                
+                # Validate file type
+                if not uploaded_filename.lower().endswith(('.mp3', '.wav', '.m4a', '.flac', '.ogg')):
+                    active_uploads.discard(job_id)
+                    raise HTTPException(status_code=400, detail="Invalid file type. Supported: MP3, WAV, M4A, FLAC, OGG")
+                
+                # Rename temporary file to actual filename
+                final_file_path = job_upload_dir / uploaded_filename
+                if temp_file_path.exists():
+                    temp_file_path.rename(final_file_path)
+                    file_size = final_file_path.stat().st_size
+                    logger.info(f"✅ Job {job_id} upload successful: {uploaded_filename} ({file_size / (1024*1024):.1f} MB)")
+                    
+                    # Log memory after upload
+                    try:
+                        ram_usage = get_ram_usage()
+                        gpu_usage = get_gpu_memory_usage()
+                        logger.info(f"💾 Memory after upload - RAM: {ram_usage}, GPU: {gpu_usage}")
+                    except Exception as mem_e:
+                        logger.warning(f"⚠️  Could not get memory info after upload: {mem_e}")
+                else:
+                    logger.error(f"❌ Temporary file not found for job {job_id}: {temp_file_path}")
+                    active_uploads.discard(job_id)
+                    raise HTTPException(status_code=500, detail="File not found after upload")
+                
+                # Create job record
+                job = {
+                    "job_id": job_id,
+                    "status": "uploaded",
+                    "created_at": datetime.now().isoformat(),
+                    "updated_at": datetime.now().isoformat(),
+                    "files_count": 1,
+                    "processed_count": 0,
+                    "failed_count": 0,
+                    "model": model,
+                    "file_path": str(final_file_path),
+                    "error": None,
+                    "download_url": None,
+                    "worker_id": None
+                }
+                
+                async with jobs_db_lock:
+                    jobs_db[job_id] = job
+                
+                active_uploads.discard(job_id)
+                
+                # Update success metrics
+                upload_metrics["successful_uploads"] += 1
+                upload_metrics["total_bytes_uploaded"] += file_size
+                
+                # Update average upload speed
+                total_successful = upload_metrics["successful_uploads"]
+                if total_successful > 1:
+                    upload_metrics["average_upload_speed"] = (
+                        (upload_metrics["average_upload_speed"] * (total_successful - 1) + avg_speed) / total_successful
+                    )
+                else:
+                    upload_metrics["average_upload_speed"] = avg_speed
+                
+                logger.info(f"Job {job_id} created successfully (avg speed: {upload_metrics['average_upload_speed']:.1f}MB/s)")
+                
+                return {
+                    "job_id": job_id,
+                    "status": "uploaded",
+                    "files_count": 1,
+                    "file_name": uploaded_filename,
+                    "file_size": file_size,
+                    "message": "File uploaded successfully via streaming.",
+                    "status_url": f"/status/{job_id}",
+                    "process_url": f"/process/{job_id}"
+                }
+            
+            except Exception as file_target_error:
+                logger.error(f"❌ File target error for job {job_id}: {file_target_error}")
+                upload_metrics["failed_uploads"] += 1
+                active_uploads.discard(job_id)
+                if job_upload_dir.exists():
+                    shutil.rmtree(job_upload_dir, ignore_errors=True)
+                raise HTTPException(status_code=500, detail=f"File processing error: {str(file_target_error)}")
+            
+        except Exception as e:
+            import traceback
+            logger.error(f"💥 Upload failed for job {job_id}: {str(e)}")
+            logger.error(f"🔍 Exception type: {type(e).__name__}")
+            logger.error(f"📋 Full traceback:\n{traceback.format_exc()}")
+            
+            # Clean up on error
+            active_uploads.discard(job_id)
+            if job_upload_dir.exists():
+                logger.info(f"🧹 Cleaning up job directory: {job_upload_dir}")
+                shutil.rmtree(job_upload_dir, ignore_errors=True)
+            
+            # Update failure metrics
+            if isinstance(e, ClientDisconnect):
+                upload_metrics["disconnected_uploads"] += 1
+                raise HTTPException(status_code=499, detail="Client disconnected")
+            else:
+                upload_metrics["failed_uploads"] += 1
+            
+            # Return detailed error for debugging
+            error_detail = f"Upload failed: {type(e).__name__}: {str(e)}"
+            raise HTTPException(status_code=500, detail=error_detail)
 
 @app.post("/upload")
 async def upload_files(
@@ -866,7 +1177,7 @@ async def delete_job(job_id: str, api_key: str = Depends(verify_api_key)):
 @app.on_event("startup")
 async def startup_event():
     """Initialize model pool and start multiple background workers on startup."""
-    global model_pool, queue_worker_tasks, UPLOAD_DIR, OUTPUT_DIR, JOBS_DIR
+    global model_pool, queue_worker_tasks, UPLOAD_DIR, OUTPUT_DIR, JOBS_DIR, upload_semaphore
     
     logger.info("Starting RunPod Transcription API Server...")
     logger.info(f"Device: {get_device()}")
@@ -875,6 +1186,11 @@ async def startup_event():
     logger.info(f"Model Instances: {MODEL_INSTANCES}")
     logger.info(f"Model Name: {MODEL_NAME}")
     logger.info(f"RAM Filesystem: {'Enabled' if USE_RAM_FILESYSTEM else 'Disabled'}")
+    
+    # Initialize upload semaphore for concurrency control
+    max_concurrent_uploads = int(os.environ.get("MAX_CONCURRENT_UPLOADS", WORKER_COUNT))
+    upload_semaphore = asyncio.Semaphore(max_concurrent_uploads)
+    logger.info(f"Upload concurrency limit: {max_concurrent_uploads}")
     
     # Setup RAM filesystem if enabled
     ram_fs_setup = setup_ram_filesystem()
@@ -941,11 +1257,23 @@ def main():
     port = int(os.environ.get("PORT", 8080))
     host = os.environ.get("HOST", "0.0.0.0")
     
+    # Connection management configuration
+    max_connections = int(os.environ.get("MAX_CONNECTIONS", 100))
+    max_concurrent_uploads = int(os.environ.get("MAX_CONCURRENT_UPLOADS", WORKER_COUNT))
+    
     uvicorn.run(
         app,
         host=host,
         port=port,
-        log_level="info"
+        log_level="info",
+        # Connection limits and timeouts
+        limit_concurrency=max_connections,
+        limit_max_requests=1000,
+        timeout_keep_alive=30,
+        timeout_graceful_shutdown=30,
+        # HTTP configuration
+        h11_max_incomplete_event_size=16384,
+        ws_max_size=16777216
     )
 
 if __name__ == "__main__":

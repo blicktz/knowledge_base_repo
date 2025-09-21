@@ -19,7 +19,7 @@ import traceback
 from pathlib import Path
 from typing import List, Optional, Dict, Any, AsyncGenerator
 import httpx
-from httpx import RequestError
+from httpx import RequestError, ConnectError, TimeoutException
 from dotenv import load_dotenv
 
 # Global logger (will be configured in setup_logging)
@@ -216,7 +216,7 @@ class TranscriptionClient:
             print(f"❌ Cannot connect to server: {e}")
             return False
     
-    async def upload_file(self, audio_file: Path, model: str = "turbo", max_retries: int = 3) -> Optional[str]:
+    async def upload_file(self, audio_file: Path, model: str = "turbo", max_retries: int = 5) -> Optional[str]:
         """Upload a single audio file using chunked streaming."""
         file_size_mb = audio_file.stat().st_size / (1024 * 1024)
         logger.info(f"Starting streaming upload: {audio_file.name} ({file_size_mb:.1f} MB)")
@@ -281,7 +281,41 @@ class TranscriptionClient:
                     total_duration = time.time() - start_time
                     logger.info(f"Streaming upload successful: {audio_file.name} -> job_id={job_id} (took {total_duration:.1f}s)")
                     return job_id
-                else:
+                    
+                elif response.status_code == 499:  # Client disconnect
+                    logger.warning(f"Client disconnect during upload (attempt {attempt + 1}/{max_retries}): {audio_file.name}")
+                    if attempt < max_retries - 1:
+                        backoff = min(2 ** (attempt + 1), 30)
+                        logger.info(f"Retrying after disconnect in {backoff}s...")
+                        await asyncio.sleep(backoff)
+                        
+                elif response.status_code == 503:  # Server overloaded/under pressure
+                    error_detail = "Server overloaded"
+                    try:
+                        error_data = response.json()
+                        error_detail = error_data.get('detail', 'Server overloaded')
+                    except:
+                        pass
+                    logger.warning(f"Server overloaded (503) - {error_detail}: {audio_file.name}")
+                    if attempt < max_retries - 1:
+                        backoff = min(5 * (2 ** attempt), 60)  # Longer backoff for overload
+                        logger.info(f"Server overloaded, retrying after {backoff}s...")
+                        await asyncio.sleep(backoff)
+                        
+                elif response.status_code >= 500:  # Server errors
+                    error_detail = f"HTTP {response.status_code}"
+                    try:
+                        error_data = response.json()
+                        error_detail = error_data.get('detail', response.text[:500])
+                    except:
+                        error_detail = response.text[:500] if response.text else f"HTTP {response.status_code}"
+                    logger.warning(f"Server error during upload (attempt {attempt + 1}/{max_retries}): {audio_file.name} - {error_detail}")
+                    if attempt < max_retries - 1:
+                        backoff = min(3 * (2 ** attempt), 45)
+                        logger.info(f"Retrying after server error in {backoff}s...")
+                        await asyncio.sleep(backoff)
+                        
+                else:  # Client errors (4xx)
                     error_detail = f"HTTP {response.status_code}"
                     try:
                         error_data = response.json()
@@ -289,30 +323,47 @@ class TranscriptionClient:
                     except:
                         error_detail = response.text[:500] if response.text else f"HTTP {response.status_code}"
                     
-                    logger.warning(f"Streaming upload failed (attempt {attempt + 1}/{max_retries}): {audio_file.name} - {error_detail}")
+                    logger.warning(f"Upload failed (attempt {attempt + 1}/{max_retries}): {audio_file.name} - {error_detail}")
                     
-                    if attempt < max_retries - 1:
-                        logger.debug(f"Retrying streaming upload in 2 seconds...")
-                        await asyncio.sleep(2)
+                    if attempt < max_retries - 1 and response.status_code != 400:  # Don't retry bad requests
+                        backoff = min(2 ** attempt, 30)
+                        jitter = random.uniform(0, backoff * 0.1) 
+                        sleep_time = backoff + jitter
+                        logger.debug(f"Retrying upload in {sleep_time:.1f} seconds...")
+                        await asyncio.sleep(sleep_time)
                     
+            except (ConnectError, TimeoutException) as e:
+                error_msg = str(e)
+                logger.error(f"Connection/timeout error (attempt {attempt + 1}/{max_retries}): {audio_file.name} - {error_msg}")
+                
+                if attempt < max_retries - 1:
+                    backoff = min(5 * (2 ** attempt), 60)
+                    jitter = random.uniform(0, backoff * 0.2)
+                    sleep_time = backoff + jitter
+                    logger.info(f"Retrying after connection error in {sleep_time:.1f}s...")
+                    await asyncio.sleep(sleep_time)
             except RequestError as e:
                 error_msg = str(e)
                 logger.error(f"Streaming upload network error (attempt {attempt + 1}/{max_retries}): {audio_file.name} - {error_msg}")
                 
                 if attempt < max_retries - 1:
-                    logger.debug(f"Retrying after streaming network error in 2 seconds...")
-                    await asyncio.sleep(2)
+                    backoff = min(3 * (2 ** attempt), 45)
+                    jitter = random.uniform(0, backoff * 0.15)
+                    sleep_time = backoff + jitter
+                    logger.debug(f"Retrying after streaming network error in {sleep_time:.1f} seconds...")
+                    await asyncio.sleep(sleep_time)
             except Exception as e:
                 logger.error(f"Unexpected streaming upload error: {audio_file.name} - {str(e)}")
                 logger.debug(f"Traceback: {traceback.format_exc()}")
                 if attempt < max_retries - 1:
-                    await asyncio.sleep(2)
+                    backoff = min(2 ** attempt, 30)
+                    await asyncio.sleep(backoff)
         
         total_duration = time.time() - start_time
         logger.error(f"Streaming upload failed after {max_retries} attempts: {audio_file.name} (total time: {total_duration:.1f}s)")
         return None
     
-    async def start_processing(self, job_id: str, max_retries: int = 3) -> tuple[bool, bool]:
+    async def start_processing(self, job_id: str, max_retries: int = 5) -> tuple[bool, bool]:
         """Start processing an uploaded file."""
         logger.info(f"Starting processing for job_id={job_id}")
         start_time = time.time()
@@ -365,8 +416,9 @@ class TranscriptionClient:
                                     return True, False
                         
                         if "status is" not in str(error_detail) and attempt < max_retries - 1:
-                            logger.debug(f"Retrying process start in 2 seconds...")
-                            await asyncio.sleep(2)
+                            backoff = min(2 ** attempt, 30)
+                            logger.debug(f"Retrying process start in {backoff} seconds...")
+                            await asyncio.sleep(backoff)
                         elif "status is" in str(error_detail):
                             break
                             
@@ -374,18 +426,24 @@ class TranscriptionClient:
                         logger.error(f"Failed to parse error response: {e}")
                         logger.debug(f"Raw response: {response.text[:500]}")
                         if attempt < max_retries - 1:
-                            await asyncio.sleep(2)
+                            backoff = min(2 ** attempt, 30)
+                    await asyncio.sleep(backoff)
                         
             except RequestError as e:
                 logger.error(f"Network error starting process (attempt {attempt + 1}/{max_retries}): job_id={job_id} - {str(e)}")
                 if attempt < max_retries - 1:
-                    logger.debug(f"Retrying after network error in 2 seconds...")
-                    await asyncio.sleep(2)
+                    backoff = min(3 * (2 ** attempt), 45)
+                    jitter = random.uniform(0, backoff * 0.1)
+                    sleep_time = backoff + jitter
+                    logger.debug(f"Retrying after network error in {sleep_time:.1f} seconds...")
+                    backoff = min(2 ** attempt, 30)
+                    await asyncio.sleep(backoff)
             except Exception as e:
                 logger.error(f"Unexpected error starting process: job_id={job_id} - {str(e)}")
                 logger.debug(f"Traceback: {traceback.format_exc()}")
                 if attempt < max_retries - 1:
-                    await asyncio.sleep(2)
+                    backoff = min(2 ** attempt, 30)
+                    await asyncio.sleep(backoff)
         
         total_duration = time.time() - start_time
         logger.error(f"Failed to start processing after {max_retries} attempts: job_id={job_id} (total time: {total_duration:.1f}s)")
@@ -764,8 +822,24 @@ Examples:
     # Get API key: prioritize TRANSCRIBE_API_KEY from .env, then command line argument
     api_key = os.environ.get("TRANSCRIBE_API_KEY", args.api_key)
     
-    # Create async HTTP client and transcription client
-    async with httpx.AsyncClient(timeout=httpx.Timeout(connect=60.0, read=1800.0, write=60.0, pool=60.0)) as http_client:
+    # Create async HTTP client with robust configuration
+    limits = httpx.Limits(
+        max_keepalive_connections=10,
+        max_connections=20
+    )
+    
+    timeout = httpx.Timeout(
+        timeout=60.0,  # Overall timeout
+        connect=60.0,  # Connection timeout
+        read=1800.0,   # Read timeout (30 minutes for large files)
+        write=60.0     # Write timeout
+    )
+    
+    async with httpx.AsyncClient(
+        timeout=timeout,
+        limits=limits,
+        follow_redirects=True
+    ) as http_client:
         client = TranscriptionClient(server_url, api_key, http_client)
         
         # Check server health
