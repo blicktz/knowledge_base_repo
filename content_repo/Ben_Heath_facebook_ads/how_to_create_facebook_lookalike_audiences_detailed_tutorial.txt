@@ -1,0 +1,197 @@
+Hi guys, it's Ben Heath from Lead Guru and in this video I'm going to show you how to create one of Facebook's most powerful features and that's a lookalike audience. So in our agency for our clients we use lookalike audiences more than any other targeting option. They're usually the best performing cold audience targeting option, that's where we get the best results.
+
+And for those who don't know, a lookalike audience, just to quickly explain, is a group of people that are very similar to another group of people. I'll give you an example to show you what I mean. So let's say for example you've got a list of previous customers over the last two or three years, you've collected email addresses or contact details of all your previous customers.
+
+Now you can upload that list to Facebook and say to Facebook, create me an audience of people that are very similar to my previous customers. And that's what a lookalike audience is. Now because Facebook's got so much data on all its users, these lookalike audiences are very accurate and the people in the lookalike audience will be very similar to your previous customers.
+
+Which as you can imagine is a fantastic targeting option because people who are very similar to your previous customers are highly likely to be interested in your products and services as well. When you advertise to them they're going to buy, they're going to inquire and that's why we get the best results usually from lookalike audiences. So that's why they're so important, really really powerful.
+
+I definitely recommend that if you want better results on Facebook you experiment with them and let's get started with the steps on how to actually set them up. So to create a lookalike audience the first thing you need is a source audience. Now that source audience is obviously the people that that lookalike audience is going to be based off.
+
+And to do that on Facebook you need to create a custom audience. So a number of different options in terms of creating a custom audience to base your lookalike audience off. You can base a lookalike audience off, as I mentioned, previous customers.
+
+You can do it off website visitors, off video viewers, Facebook page engagers. There's tons of different options. I'm going to go through and show you how to create each one of those and explain sort of the priority order in which you want to use them if you have that data available.
+
+Okay so first thing you want to do is head into the audiences tab in ads manager. So that's where I already am. That's what you can see on this screen here.
+
+If you're in ads manager and you're wondering where to get to the audiences tab just click on these three little lines at the top here. It might be in your frequently used if you use a lot of custom audiences. If not it'll be under assets which is over here and audiences.
+
+Click on that and you will come through to this page. Your page might look slightly different. This is my ad account within a business manager account on Facebook.
+
+If you're just using a personal ad account then it will look slightly different but all the functionality is the same. So what you want to do to create your source audience is come in and click create audience and custom audience. That'll bring up these options.
+
+As I said we're going to go through these and I'm going to show you how to set these up. So the first thing is a customer file. So click on that option if you've got a previous customer list or an email list and you want to create lookalike audiences based off of those then that's the option you select.
+
+If you have a MailChimp account and the details that you want to upload to Facebook your source audience is on a MailChimp list then you can simply click on that option. Enter your MailChimp login details and import that list directly. Very very straightforward.
+
+If not if you've got it some other platform or you've got it on a Excel file something like that and select this top option here and then you can either upload a file or you can copy and paste the data. Whichever way either way is pretty straightforward. Once you've done that you just need to give your audience a name out and you need to select the original data source.
+
+This is something fairly new that Facebook have added with all the sort of data protection issues that have been going around. Hopefully you can select directly from customers but either way just select the one that applies. Then give your audience a name select next.
+
+Then Facebook will simply ask you to match your identifiers with the data. So for example they'll say you know is this column email is this column first name match those up and then Facebook will use that information in order to match the data that you've uploaded with people's Facebook accounts so that you can advertise to them or in our case create a lookalike audience from them and advertise to that instead. So I'm just going to close that down obviously not going to go through those steps.
+
+I don't want to show you any sensitive information. Okay so the best lookalike audience to create is always one based off of previous customers. That's the best.
+
+You know we all want to advertise to people that are like our previous customers but obviously not a lot of businesses or not all businesses have that information. If you're just getting started you won't have that information. If you're offering a brand new product or service that's not really related to previous ones then you won't have that data either.
+
+So in that case I would then move on to either an email list if you have that. If you don't have that then go on to website visitors as the source audience for your lookalike. Again that's still going to be a pretty good lookalike audience because people that are visiting your website are obviously interested in your products and services.
+
+And advertising to people that are similar to those people will still usually perform better than just interest or demographic or behavioural targeting options that you might find when searching through ads manager. So to do website visitors go into create audience, custom audience, bring up this menu again, select website traffic. And here there are a bunch of options that you can go with.
+
+So the first thing I would say is that when you're creating a source audience for a lookalike audience you want that source audience to be as large as possible. Because that gives Facebook as much data as possible with which to create the lookalike audience and it will make it more accurate and more effective when you advertise to it. So in terms of retargeting website visitors the maximum they allow you to do is 180 days.
+
+So that's what I would suggest pop up 180 days in there. And then you've got a bunch of options you've got you can create a source audience based on all website visitors or do people who've visited specific pages, visitors by time spent. So you can go after the people that spend the most time on your website or people that have met certain events.
+
+So whether they've triggered a lead, maybe they've purchased from you before, something like that. As I said most of the time you want this source audience to be as large as possible. All website visitors are going to give you that.
+
+Now having said that if you just want to create a lookalike audience based off people that have become a lead for example. Then you could go in and select the lead code. If that's what you're looking for in the future.
+
+If you're looking for leads and you've had a significant number of leads then go ahead with that option. Otherwise most likely you're going to go ahead with all website visitors as I am here. So I'm just going to give this a name.
+
+So just going to call it all website visitors 180 and then I'm going to select for lookalike. Just as a quick side note guys, if I was retargeting my website visitors with a specific offer I almost certainly wouldn't use 180 days. If someone's visited your website five, six months ago that person's not really a warm audience.
+
+That person's not likely to take your desired action. So when I'm retargeting with specific offers or calls to action I usually use 30 days, maybe 14 if the website's generating quite a lot of traffic. Just a little side note.
+
+So I'm going to go ahead and create that audience. That'll take a little bit of time to populate. Just click done for now.
+
+We'll come back to all this in a minute. That's going to take a little bit of time to populate. We're going to use that to create our lookalike audience.
+
+In the meantime I'm going to show you how to create the other types of source audiences that you can use. So again create audience, custom audience. And then scroll down to engagement.
+
+Now there are more options I'm going to show in this video. But I'm just going to show you the ones that are most common. Now we've talked about targeting, creating a lookalike based off previous customers which is absolutely fantastic.
+
+Off website visitors which works very well. Not quite as effective as previous customers so it's very well. If you don't have a previous customer list and you don't have much website traffic then you can move on to the next option which is based off video viewers.
+
+So if you've put some videos out on Facebook, you've got some reasonable amount of video views then this can be a decent option to create a lookalike audience. One of the advantages that video viewers based lookalike audience has is that usually it's easier, it's much easier to get thousands and thousands of video viewers to provide a lot of data for Facebook than it is to get thousands of previous customers or thousands of website visitors. That said, someone who's watched a video may not necessarily be the best candidate to base a lookalike audience off when you're advertising your products and services.
+
+So that's sort of the trade off. That's why I would rather go with customer file, then website visitors, then move on to video viewers. So what you want to do is pop in here.
+
+First thing you need to do is select the percentage of your video viewed that someone needs to have done in order to be included in this audience. So in this case I wouldn't go with anything less than 25% because if someone's watched 3% of your video, it doesn't really make any difference. That doesn't prove that person is into your stuff.
+
+Then you need to select the videos that you want to include. So you know, you could just go through and tick all your videos. You could scroll through and find one that has a lot of video views like this one for example, 37,000.
+
+Click confirm there. Again, we want this audience to be as large as possible because it's a source audience for a lookalike. So I'm going to go with 365.
+
+Facebook allows you to extend that time period a little bit for video viewer custom audiences. And then just going to give this a name. Video viewer, 25%.
+
+That's what we've gone with. 365. And again, I'm going to pop in for lookalike.
+
+And give great audience that. So obviously select the videos that you want if you've got different videos on different topics and just make sure that they're appropriate to whatever you're going to be advertising in terms of your audience. In terms of products and services to that lookalike audience when you're ready.
+
+Okay, we'll close that down. Now, again, you may, if you're just getting started out, you're just advertising on Facebook, you probably don't have a previous customer list. You probably don't have much website traffic.
+
+You may not have any video views. In which case, the next option that I move on to is people who've engaged with your Facebook page. Soon as you start advertising, even a little bit on Facebook, you will have people that have engaged with your Facebook page.
+
+I mean, you can use, you know, just as an example, if you've been running lead generation ads, people who've interacted with your lead for. That option can work reasonably well. But most people aren't using that sort of campaign.
+
+And therefore it's not appropriate. So let's go in here again. There's a bunch of different options.
+
+Let's go with the longest timeframe for this because that's what we want for lookalike audiences. And then anyone who's engaged with your page is an option. You can do various options on who click to action buttons, sent you a message, etc.
+
+But I'm going to go with anyone who engaged because we want this source audience to be as large as possible, gives Facebook more data. Okay, so let's just, you know what, actually, I'm not going to go through and create that just be exactly the same as the others. So if I then go and close that down.
+
+So now we've created a bunch of different source audiences for our lookalike, we now need to use that to create a lookalike. Okay, so let's create that lookalike audience. So let's scroll down and find one of our custom audiences that we can use.
+
+You can see I've got tons and tons of lookalike audiences in my account because I use them all the time. Okay, here we go. Perfect.
+
+So video viewers, it's a perfect example. Page engagers we've got there. Now this process from here on out works exactly the same no matter what type of lookalike audience you're creating, whether it's based off previous customers, video viewers, page engagers, website visitors, etc.
+
+All exactly the same. You can see that this one's got 100,000 and a decent size audience. You can create a lookalike audience based off a source audience provided the source audience has at least 100 people in it.
+
+That's the minimum that Facebook requires in order to create a lookalike. We find better results when source audiences have 1000 plus. But if you've got, let's say, 150 people in a previous customer list, absolutely use that to create a lookalike audience.
+
+Just make sure that as that gets added to, it's being automatically uploaded or you do it manually if you're recording them out, out of a sort of an automatic system. Okay, so select video viewers or whatever your source audience feel lookalike when it's going to be. Come up here and take actions and then create lookalike.
+
+And that will bring up something that looks like this. So that just gives you a name of your source. Now you, the first thing you need to choose is the countries that you want to target.
+
+Now you can add in multiple countries, you know, all regions. I usually just stick to a country basis. I normally don't add in multiple countries.
+
+If you operate just on a local basis, then what you can do is you can create, let's say, a UK wide or a US wide lookalike audience. And then in the ad set in your targeting, you target the lookalike, but you specify that only people that are within that lookalike that are also within, let's say, 20 miles of wherever your business operates from, are actually going to be included in this lookalike audience. So I'll show you how to do that in a second.
+
+Because I get a lot of people asking that. They say, how do I create a lookalike for, you know, just on a local basis? This is how you do it.
+
+So I'm based in the UK. I'm going to select United Kingdom. And then the next thing you need to decide is audience size.
+
+So here you've got percentage of the country or countries that you've selected. So what this means is if I were to go with 1%, this lookalike audience will contain the 1% of Facebook users in the UK that are most like this source audience. Okay, so that's why a 1% lookalike audience in the UK will always be roughly 400,000 because there's roughly 40 million Facebook users in the UK.
+
+In the US, this 1% is going to be 2.3, 2.4 million, something like that. And now the trade off here is the larger percentage you go for. So let's say we go, you know, go for 2%.
+
+And we've got a larger audience. So in terms of longevity of that campaign, you may be able to run it longer before you run into ad fatigue issues. But the advantage of keeping it nice and small and just at 1% is that these people are the 1% that are most like the source audience.
+
+So particularly if you're basing this off previous customers, that's the people that are going to respond best to your ads. They're most likely to buy your products and services. So with a country that's got a reasonable population, a lot of Facebook users, I tend to start with at least a 1% lookalike audience.
+
+If that's performing really well, I may look to add in 2%, 3% lookalike audiences, but I start with 1%. Particularly if you're advertising in the US, which obviously has, you know, very, very large population, 240 million Facebook users. 1% is going to already contain 2.4 million users.
+
+That's a lot of people. Now, if you are advertising on a local basis, this number, 413,000, is across the entire United Kingdom. So if you operate just out of, you know, a city and the surrounding area, you might limit that down too small.
+
+So you may need to go up with 5%, 6%, 7% lookalike audiences. You'll only really know that once you create a few lookalike audiences, go into the ad set, adjust your location targeting to your local area, and then see that the size is, oh, okay, we've only got, you know, 1,500 people to advertise to, something like that. We need to create a larger lookalike audience.
+
+For most businesses that are advertising nationwide to a reasonably large country, start with 1%. Anything under sort of 200, 150,000 here, I would probably start with, let's say, 2%. Okay, so that's that for the lookalike.
+
+Go ahead and select create audience, which again will take a little bit of time. But in terms of, for Facebook, you have to populate that audience, usually about half an hour. But you can come back to it when it's ready, and then go ahead and set it up in your ad account, which is the next step.
+
+So as I said, you can do this with a bunch of different lookalikes, different countries. I would separate them out by country, because you never know, you may want to advertise to one country instead of another. And if you bundle five countries into one lookalike, and in a month's time you want to change it, you've got to completely remove that lookalike and add new ones in.
+
+It becomes a little bit more complicated. Small point. Okay, let's go ahead and now add that lookalike audience into an ad campaign.
+
+Okay, so here we are now inside of Ads Manager. Let's go ahead and create an example campaign. So just go over to that green plus create button.
+
+And sorry, it's going to take a little bit of time to go through this process, because I'm recording this at the same time, my computer will be a little bit slow. So I'm just going to call this example campaign. I'm going to change that to a conversions objective, because that's what I use the most.
+
+If you want to know more about campaign objectives, by the way, guys, just go to leadguru.co.uk forward slash blog. And I've got a blog post right there all about campaign objectives and what to use. I'm not going to bother with the ad for now.
+
+Create a new ad set. We'll just call this example ad set. Save to draft.
+
+And then once this is loaded up, we're going to go into the ad set, show you where to select your lookalike audience. So let's minimize that down. Click into the campaign, which gets you to your ad set level.
+
+Make sure that's highlighted and select edit, which will load up this ad set. And then scroll down. Not going to worry about any of the other features.
+
+I've got other videos that talk about some of that sort of stuff. And here you go. This is the section where you add in any custom or any lookalike audiences.
+
+So for example, if I start putting in lookalike into here, it'll pop up with a whole load. So here we go. The UK 1% video viewers.
+
+That's the one we actually just created, which is showing fewer than 1000 because it's still populating up here. Once that's populated, in fact, I'll show you an example. Let's add in another one that I've created before.
+
+So let's do... Oh, these are custom audiences. That's not going to work.
+
+So let's do... Here we go. 1% lookalike audience based off my total email list contains 410,000 people.
+
+So that's what a lookalike will contain. Now, this is what I was talking about in terms of a local business. Now, obviously, this is UK wide, which is how I would advertise most of my business.
+
+But a lot of businesses operate locally. So let's say, for example, if I get rid of that, let's say, for example, you are in Sirencester, which is a town in England, which I live in, plus 25 miles. That lookalike is going to come down big time.
+
+There you go. It's just come down to 10,000 people, which is too small. So if I was just operating on a local basis, business based in Sirencester, and I wanted to advertise to the local area, then I would probably create really maybe even a 10% lookalike.
+
+At least 6%, 7% lookalike, because obviously each percentage point you go up, that's going to sort of double. So it goes from 10,000 to 20,000 with 2%, it will be 60,000 with 6%, et cetera, et cetera. And that's just because obviously you're advertising on a local basis, so you can't be as specific with who you target.
+
+Same principle applies to all Facebook targeting, by the way, guys. If you're a local business, you cannot be as specific with your targeting as you can if you're advertising nationwide or internationally. So that's just a point on size.
+
+So create a lookalike up to 1%, come in here, add in your location targeting criteria, and then if it's too small, go ahead, create a larger lookalike, come back in here. Now, because this campaign is going to be advertising to a lookalike, we don't really need to add in any other targeting criteria. So we don't need to set age, because if, let's say that people on my email list are all between the ages of 30 and 40, then we're certainly not, but let's say that as an example, then that means that the lookalike is going to contain people that nearly all of them will be between those ages anyway.
+
+Same if my audience is overly male or overly female, et cetera, et cetera. So you can leave all these other targeting options blank. The way this works is once you've added in a customer or a lookalike audience, all of this rest of the stuff is an and function.
+
+So it's all things that are going to narrow your audience and make it smaller. So if you're using a lookalike, basically just leave this broad. It's one of the reasons why I love using lookalikes is not only are they very effective, they're actually very easy to use.
+
+You can basically leave everything blank. Then you just need to go ahead and select publish and your campaign will start advertising to that lookalike audience. Now, you know, as with all Facebook advertising, you want to give it three or four days to assess any results.
+
+Make sure that your ad sets have completed the learning phase before you start to assess performance. That's very important. That'll give you a more representative view of how things are going.
+
+But yeah, but definitely look to experiment with lookalikes. Very, very powerful. Very easy to use once you know how to use them.
+
+As I said, we use them more than any other targeting option when we're advertising on Facebook. And one thing to really understand with lookalike audiences that a lot of people get wrong is that not all lookalike audiences are created equal. So a lookalike audience based off video viewers is not as powerful as a lookalike audience based off previous customers.
+
+Okay, so a lot of people say, I tried a lookalike audience, it didn't work. My first question is, well, what did you base your lookalike audience off? Because if you based it off people who have visited your Facebook page, that might not mean too much.
+
+But if you based it off previous customers or people who have, you know, spent a lot of time on your website or visited your sales pages on your website, that's fantastic. Those perform very, very well. Now, just before you go and before I wrap up this video, there's something I want to tell you about that I think you'll find very useful.
+
+And that's a five part Facebook ad template that I've created that you can download right now for free. So this ad template includes some of the best performing ads we've created for our clients in a number of different industries. And basically what I've done is I've broken down each ad and explained what I've included in each and why, explain why it performed well.
+
+You can obviously model from the ads. If you're looking to get better results from Facebook, then obviously use lookalike audiences that I've been talking about in this video. But also go ahead and grab this template.
+
+You should be able to help your ad performance. So as I said, you can download it right now for free. Just click on the link in the video description.
+
+That'll take you to a page on the website and you'll be able to download it there. Thanks a lot guys. If you've got any questions, then please pop them in the comments section below.
+
+If you enjoyed this video, you want me to create others, you've got ideas for other videos, again, pop them in the comments below. I will be sure to get to them and I will talk to you guys soon. Thanks a lot.
+
+Bye bye.

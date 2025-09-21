@@ -1,0 +1,163 @@
+A lot of Facebook advertisers have been struggling with location targeting since Meta changed the location targeting settings last year. I've seen first-hand in our client ad accounts that sometimes your Facebook ads can be put in front of people in the complete wrong location, which is a big waste of money. Fortunately, we've worked out how to fix this problem and prevent your Facebook ads being shown to the wrong people.
+
+And in this video, I'm going to show you exactly how we do it. Okay, so to demonstrate what's going on here and the fix to the problem, I'm in an example Facebook ad account. I'm in ads manager.
+
+I'm going to create a quick example campaign to demonstrate this, right? So I'm going to click on this green plus create button. I'm going to go with a leads campaign, but what I talk about here applies to other campaign types too.
+
+And I'm going to go with manual campaign as well, as I'd recommend most people do, particularly if they want to take more control over certain aspects like this. Right, so I'm going to jump to the ad set level. I'm not going to worry about all the other settings of the campaign ad set or ad level.
+
+I've got lots of videos that cover things like instant forms. We're not going to worry about any of that today. What we're going to focus on is this location targeting stuff with this problem and how to fix it.
+
+So I'm going to go ahead and use the default targeting settings here, which is advantage plus audience. You can see that section down here. But if you still use original audiences, so let's say click on this and you go to original audiences, or perhaps your ad account hasn't updated to the new advantage plus audience being the default option and you are using original audiences, it doesn't matter either way.
+
+I just want to quickly state that now because we're going to be focusing on location targeting settings and location targeting settings are in the audience control section in the new setup. They're just part of the targeting setup in the old setup. But either way, because it's in audience controls, the location targeting settings are hard boundaries.
+
+They aren't suggestions. There are other targeting options you can see here down in advantage plus audience that are suggestions. So if you add in an interest, for example, in advantage plus audience, you're saying to meta, I would like to advertise these people, but you've got flexibility to advertise to others.
+
+It shouldn't be that way with location targeting because it's up in audience controls. Just wanted to clarify that point because I know some people might find that confusing. Basically, no matter what your setup is, you'll be able to follow along and what we do here will apply.
+
+So let's go ahead and click edit into locations. Now, underneath this location sections, we've got reach people living in or recently in this location. Now, I mentioned right at the beginning about these changes that Meta had made to location targeting settings.
+
+Before they made those changes, we had more options here. So the default was this reach people living in or recently in this location, but we could get more specific and specifically target people only living in this location. And there's some other options as well, like people are traveling in and out and stuff like that.
+
+Well, last year when Meta changed this, they made this option mandatory. Everyone had to use this reach people living in or recently in this location. Now, I'm sure you can imagine, I'm sure some people watching this video have had this problem, that that can cause issues because there are lots of businesses that only want to reach people that actually live in a specific location.
+
+They are not interested in people that are traveling in and out because they might not be able to serve those people. I mean, think plumber for example. If you operate as a plumber, you need people's properties to be within the area in which you're advertising because if they're miles away, you're not going to be willing to travel.
+
+Probably going to work with a local plumber anyway. It's a big waste of money to put your ad in front of them, particularly if they've traveled somewhere and actually in another country by the time they see your ad because of that recently in part of this location targeting setting. You've also got other businesses that are location based.
+
+Think of gyms or cafes or restaurants. If they're advertising to local area, they're only advertising to people that are actually in the local area. I mean, maybe restaurants, people traveling out, but gyms would be a good example of if someone doesn't live nearby, they're not going to use that gym not for more than one session maybe whilst they're there.
+
+It's a waste of money. They only want to reach people that actually live there. So why did Meta go about and introduce this?
+
+Because it has caused issues for a lot of advertisers. Well, they're a bit worried about the privacy concerns and the perspective and the pressure they might get from media and other sources around, hang on, are you tracking where people live versus where they're just traveling? Like we understand you know where people are when you're putting ads in front of them, but people are worried.
+
+It comes across as a little bit creepy in terms of working out, differentiating between people who actually live somewhere and people who are traveling somewhere have been somewhere. So that's why they removed it. But as I said, it causes all sorts of problems because there are lots of businesses where you just want to advertise to people living in this location.
+
+And this problem is exacerbated if you operate your business in an area where you need to reach people that actually live there, but there's loads of travel in and out. You think of places like London or New York where there's people traveling in and out all the time and you could end up putting ads in front of someone that was in New York last week, but they're on the other side of the country or in a different country or maybe even just in a different part of the state, but you still can't serve them. That's still a waste of money.
+
+And actually one of the most extreme versions of this would be Paris. So before I record this video, I quickly looked up how many visitors Paris gets each year and it's about 50 million people. But Paris only has a population of just over 2 million people.
+
+So if you're a business that operates in Paris and you only want to put your ads in front of people that actually live there, because those are the only ones that are going to become your customer, you could end up wasting an enormous amount of money advertising to people that are coming in and out and traveling and doing that sort of thing. Now, what we need to do here is set this up in a way where more of your ads are put in front of people that actually live in that location, the people that you want to reach, and less are put in front of people that have recently been in. And one of the best ways to tackle that is with something called geofencing.
+
+I'm going to show you exactly how that works now. So let's delete out the United Kingdom. That's just put in there as default because that's where I'm based.
+
+And let's put in a town in the UK called Oxford, which may well actually be a city. I'm not sure. But either way, that's what we're going to go with.
+
+It's a city. There we go. So we've got Oxford, and let's say we want to advertise to people within 15 mile radius of Oxford.
+
+We're a local based business. And that's what we think is realistic, either us traveling to them or them traveling to us. Now, what we can do is we can set exclusion target areas around our area to help prevent ads being shown to people in those other areas that might travel to Oxford or might have recently traveled to Oxford, but aren't our target market.
+
+So this is a little bit fiddly and it takes a little bit of time. We're not going to do the whole thing, but I'm just going to demonstrate how this would work. So we've got Swindon here, right?
+
+And it's 25 miles. Let's change that radius to, I reckon about 12 miles. Yeah, there's slight overlap there, but that's fine.
+
+And then with Swindon, what we want to do is we want to click this little down arrow, and then we want to click exclude location. Okay. And now if I zoom out slightly, you can see that, you know, we've got our little radius that we do want to target in blue.
+
+That's what's included. And then we've got this area now excluded. And then what we need to do is add in more exclusion zones.
+
+So we can add in new Newbury now and just go around a little bit. Newbury, England. Okay.
+
+And then again, what we want to do is get the radius right on that, because you can see that overlaps massively. Now we want 10 miles, something on there. Yeah, perfect.
+
+Just a tiny little overlap in there. And then we want to exclude location. Let's quickly do the same with Reading.
+
+No, I want the city, not the unitary authority. These are sort of things you've got to watch out for when you're adding a location targeting and always look at the map to verify that you've actually got it right, because you can get caught out quite easily. So if we do 10 miles around, yeah, just tiny little bit of overlap.
+
+I'm not worried about that. And then exclude location. Okay, I'm not gonna do the whole thing because that will take too long.
+
+But you get it, right? So you can see what we're doing here. We're targeting this area, Oxford, plus 15 miles around.
+
+That's where we want to advertise. And then we're building an exclusion zone around the outside. Geofencing.
+
+By adding in these exclusion zones, what we're basically saying to meta is I don't want you to put ads in front of people that are living in or recently in these other locations, the ones within the red exclusion zone circles. So for example, if someone lives in this red area around Reading, but they've just traveled to Oxford recently, they're not going to have ads put in front of them because they meet the criteria of the exclusion. And you don't want to advertise to that person in this scenario anyway, because they're not going to become a customer of yours if you can only serve those in and around Oxford.
+
+And you can do this at larger scale, smaller scales. You know, I've done this on a relatively small scale here, but you could do it with US states, for example. We've done that before.
+
+You could get even more specific, you get smaller. So you can scale this up and down, but the principle remains of this is how you help improve that problem. If you are seeing that I only want to target people who live in this area, my ads have been put in front of people that are in different locations.
+
+That's a waste of money. How do I fix it? This is one of the best ways to go about doing it.
+
+Now, what some of you will already have worked out is that geofencing isn't a perfect solution. If we just zoom in slightly, I'll explain. Now, of course, we want to target people that are living within this blue area.
+
+Okay. Some people living within this blue area will have recently traveled to the excluded areas, you know, down here. And just again, to further clarify, we would now build red areas all the way around the outside of this.
+
+I'm just not going to do that because it would take too long. So that means we are potentially going to miss out on some good prospects, which is annoying. It's not what we'd like to do.
+
+In an ideal world, we wouldn't have that. And you can see how the audience size changes to emphasize this. So for example, we've got these three exclusion zones in here.
+
+We've got an audience size of 258,000 to 304,000. If I go ahead and delete Reading, for example, we will see that that jumps up 262,000 to 309. Not by much, just a little bit.
+
+But that shows that, you know, there was almost no overlap. So it's not coming from that tiny bit of overlap. What's happening there is there are some people that live in this area and are recently traveling into this area and they would now be excluded.
+
+So we can see that not a huge amount, but we can see that that does happen and you're going to miss out on a few potential leads there. But I think if you are running into this as a problem, so you are seeing that more than say 5% of your leads are coming from the wrong location or 5% of your ad impressions are coming from the wrong location. This is something that I would look to implement.
+
+Because what's more important for you as a meta-advertiser is that your budget is spent efficiently. You want to make sure that you're not wasting money putting ads in front of the wrong people in the wrong location. If you miss out on a few leads in your area, that's probably absolutely fine because there's probably way more leads within your area than you could actually service and deal with and actually work with anyway.
+
+Way more potential customers. There's plenty of people to reach. It's much more important that you exclude the wasted budget than it is that you maximize every single little bit out of the people that exist in the area.
+
+And you can see that as we change that, we removed one of those. The audience size didn't change much. If I go ahead and remove the Swindon one, I bet the same thing happens, right?
+
+We get a slight increase. Yeah, a slight increase. You know, an extra 8,000 people or so.
+
+Out of an audience of that size, this is not a big deal. So you're missing out on a few leads. Yes.
+
+And I know there'll be comments people saying, oh, this is not perfect because of that. But I think that if you are seeing this as a problem, you are seeing that your ads have been put in front of the wrong people, you're getting leads from the location, you're thinking, what's the point in that? I can't work with them.
+
+But then... This is a much better setup than not doing it, because as I said, it prevents you from wasting budget. Now, there is an alternative technique that you can use to help fix this location targeting issue.
+
+Before I get into that, I actually want to quickly let you know about Facebook Ads Mastery, which is my brand new course with community. So it's brand new course material, never before seen, not stuff that's on YouTube or anywhere else. It's our very best stuff.
+
+It's the stuff that we use to train our own internal people to produce the best possible results for clients. So it's in terms of learning how to get great results for Facebook and Instagram, it's the best stuff around. And it comes with a full school community.
+
+So there's more than 600 members in there already. It's a fantastic community full of people just like you asking questions, answering them, helping each other out. There's lots of interaction from me and my team answering questions and getting involved and helping everyone level up their Facebook ads game.
+
+We do live calls, live trainings inside there as well. Lots of stuff going on, keeping you up to date the very latest, helping you get the best possible results. If that sounds like something you'd be interested in, the price starts from just £97 per month.
+
+There is a link in the description. You can click on that. Go ahead and find out more details.
+
+And I very much hope to see you on the inside. Okay. So this alternative technique that I mentioned a second ago is called the call out method.
+
+And it's actually not something that we do at the ad set level with our targeting here. It's something that we do at the ad level. So I'm going to very quickly demonstrate what that is.
+
+I'm going to drop over to the ad. And again, I'm going to ignore all the other stuff, all the warnings and things. This is just an example ad.
+
+What I'm going to do is I'm going to jump to the primary text. And let's say we're running an ad in New York and we only want to reach people in New York. We might write something like, New Yorkers, did you know about our new event, about our da-da-da-da-da, about our da-da-da-da-da, whatever it is, right?
+
+Now, this is the call out method because we've got New Yorkers right there. This will speak to people that are New Yorkers, that live in New York, that associate themselves with that label. And what that means is that when we run an ad with this, with the call out method, only people that live in New York, that identify as New Yorkers, are going to engage with this.
+
+People who are traveling in and out, just almost subconsciously, they're just going to scroll past and ignore it. Most people actually there go, oh, yeah, that's for me. Okay, I'm going to pay it more attention.
+
+Now, Meta will see those engagement signals and that will train the algorithm for the delivery of this ad to put your ads in front of people that engage with the ad, because that's what Meta's always doing to all ads all the time. But if those people that engage happen to people that actually live in that location, which is what we want in this case, to help fix this location targeting problem, then that's going to then self-reinforce. So you start by putting the ad out and it should improve over time and Meta should learn who to put in front of.
+
+Of course, if you start an ad as well with New Yorkers, da-da-da-da-da, or it could be Texans, or it could be, you know, West Londoners, or it could be anything like that, but location-based, those are the only people that are actually likely to go ahead and convert as well. Whereas if you don't have that in, and let's say you're advertising a landscaping service, well, you'd be surprised how many people will become leads from locations that are miles away from your business and you could never actually work with them. That happens all the time, because they don't look at all the fine details of check out where you are location-wise and things along those lines.
+
+Whereas if you put something like this, like the call-out method in ad copy, New Yorkers, only people that live in New York, let's say we're going to advertise some landscaping services for the rest of this ad, only people that live in New York for the most part are going to fill that out. And then provided you're using a leads campaign objective or a sales campaign objective, then that's also going to train meta in terms of putting your ads in front of the right people, because they're like, ah, okay, they've got the call-out method. That means the only people that actually identify as a New Yorker that live in this location are becoming leads.
+
+And then it's like a reinforcing cycle from then on. Right, we're trying to get this advertising more leads. These people are becoming leads.
+
+Let's put ads in front of people that are more like them. And round and round it goes and your campaigns improve over time. So that's how the call-out method works.
+
+It's very simple, very easy and something that we do all the time. And that is sort of an alternative fix to this location targeting settings problem to geofencing. Now, some advertisers have real problems with this.
+
+And if you do, you could always use both. You could use the geofencing that I mentioned, and you could add in the call-out method. There's limited downsides to doing so.
+
+You could also test using one or testing the other. Like a lot of things meta ads related, I'm a big fan of testing to see which works best for your particular business, your products, your services, your location. There's always variation in that sort of stuff.
+
+So you could test geofencing versus the call-out method and see. Sometimes the call-out method lends itself very naturally to an ad. Sometimes it's a little bit forced to get it in there.
+
+In cases where it's forced, we'd normally lean more towards the geofencing. In cases where it's not, call-out method can work just fine. So I just wanted to give you those two options to let you know that you can use one, either, both.
+
+All is absolutely fine. But have a play around to see if you can fix this issue. And obviously keep a close eye on where your leads, where your interactions are coming from.
+
+Because if they're in the wrong location and you implement this and it fixes it, great. You can then move on and focus on other areas of your campaign and help improve those to get better results. Now, we've talked quite a lot about location targeting in this video.
+
+That's the whole topic. It's what I wanted to help you out with. But there are obviously lots of other targeting settings and things you need to get right within a Facebook ad campaign if you want the best possible results.
+
+And in this video here, I give you a full Facebook ads targeting tutorial. And I walk through all the things that you might want to use targeting-wise. So we talk about custom audiences, lookalike audiences, advantage plus, all the stuff that you need to get right.
+
+It is well worth a quick watch if you want to get the best possible results out of your Facebook ads, because targeting and putting your ads in front of the right people is obviously really important. Go ahead and check it out. and check it out.
+
+So, I'll see you next time. I'll see you next time. I'll see you next time.
+
+I'll see you next time.

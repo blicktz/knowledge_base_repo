@@ -179,8 +179,12 @@ class TranscriptionClient:
         
         return job_ids
     
-    def start_processing(self, job_id: str, max_retries: int = 5) -> bool:
-        """Start processing an uploaded file."""
+    def start_processing(self, job_id: str, max_retries: int = 5) -> tuple[bool, bool]:
+        """Start processing an uploaded file.
+        
+        Returns:
+            (success: bool, job_already_completed: bool)
+        """
         print(f"🚀 Starting processing for job {job_id[:8]}...")
         
         for attempt in range(max_retries):
@@ -196,12 +200,55 @@ class TranscriptionClient:
                     print(f"✅ Processing started! Status: {data.get('status')}")
                     if 'queue_size' in data:
                         print(f"📋 Queue position: {data['queue_size']}")
-                    return True
+                    return True, False
                 else:
-                    print(f"❌ Failed to start processing (attempt {attempt + 1}/{max_retries}): {response.text}")
-                    if attempt < max_retries - 1:
+                    # Parse error response to detect if job is already completed
+                    error_detail = response.text  # Default fallback
+                    is_status_error = False
+                    
+                    try:
+                        error_data = response.json()
+                        error_detail = error_data.get('detail', response.text)
+                        
+                        # Check if the error indicates job is already completed
+                        if "status is 'completed'" in error_detail:
+                            print(f"⚡ Job completed very quickly! Ready for download.")
+                            return True, True
+                        
+                        # Check if job failed during processing
+                        elif "status is 'failed'" in error_detail:
+                            print(f"❌ Job failed during processing: {error_detail}")
+                            return False, False
+                        
+                        # For other status-related errors, check actual status before retrying
+                        elif "status is" in error_detail:
+                            is_status_error = True
+                            # Try to get the actual status
+                            current_status = self.check_status(job_id)
+                            if current_status:
+                                status = current_status.get('status')
+                                if status == 'completed':
+                                    print(f"⚡ Job completed while starting processing! Ready for download.")
+                                    return True, True
+                                elif status == 'failed':
+                                    print(f"❌ Job failed: {current_status.get('error', 'Unknown error')}")
+                                    return False, False
+                                elif status == 'processing':
+                                    print(f"✅ Job is already processing!")
+                                    return True, False
+                        
+                        print(f"❌ Failed to start processing (attempt {attempt + 1}/{max_retries}): {error_detail}")
+                        
+                    except (json.JSONDecodeError, KeyError):
+                        print(f"❌ Failed to start processing (attempt {attempt + 1}/{max_retries}): {response.text}")
+                    
+                    # Only retry for actual errors, not status mismatches
+                    if attempt < max_retries - 1 and not is_status_error:
                         print(f"⏳ Retrying in 3 seconds...")
                         time.sleep(3)
+                    elif is_status_error:
+                        # Don't retry status mismatches, they won't resolve
+                        break
                         
             except RequestError as e:
                 print(f"❌ Processing start error (attempt {attempt + 1}/{max_retries}): {e}")
@@ -210,7 +257,7 @@ class TranscriptionClient:
                     time.sleep(3)
         
         print(f"❌ Failed to start processing for {job_id[:8]} after {max_retries} attempts")
-        return False
+        return False, False
     
     def check_status(self, job_id: str) -> Optional[dict]:
         """Check job status with CloudFlare-optimized timeout and request tracking."""
@@ -575,14 +622,23 @@ Examples:
             continue
         
         # Step 2: Start processing
-        if not client.start_processing(job_id):
+        processing_started, job_already_completed = client.start_processing(job_id)
+        if not processing_started:
             print(f"❌ Failed to start processing for {audio_file.name}")
             failed_jobs.append(audio_file.name)
             continue
         
-        # Step 3: Wait for completion
-        if client.wait_for_completion(job_id):
-            print(f"✅ Processing completed for {audio_file.name}")
+        # Step 3: Wait for completion (skip if already completed)
+        job_completed = job_already_completed
+        if not job_already_completed:
+            job_completed = client.wait_for_completion(job_id)
+        
+        if job_completed:
+            if job_already_completed:
+                print(f"⚡ Job completed instantly for {audio_file.name} (optimized server!)")
+            else:
+                print(f"✅ Processing completed for {audio_file.name}")
+            
             completed_jobs.append(job_id)
             
             # Step 4: Download result immediately

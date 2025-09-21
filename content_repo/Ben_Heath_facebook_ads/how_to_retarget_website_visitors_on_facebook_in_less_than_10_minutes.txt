@@ -1,0 +1,95 @@
+Hi guys, it's Ben Heath from Lead Guru and in this video I'm going to show you how to retarget website visitors on Facebook in less than five minutes. It really doesn't take long to get this set up but retargeting your website visitors with Facebook ads is definitely something that you want to do. People that have already visited your website have already demonstrated that they're interested at least somewhat in your products or services otherwise they wouldn't have bothered visiting in the first place.
+
+So advertising to those people is going to be far more effective than advertising to people that haven't visited your website. So whenever we start working with a new client we will always create a Facebook ad campaign that specifically retargets website visitors. I want to show you exactly how to do that and whether you're generating a very small amount of website traffic, maybe you're only generating traffic from Facebook itself or whether you've got tons of organic traffic or whatever your specific situation is, you still want to dedicate a proportion of your Facebook ad budget to retargeting website visitors, something we always include.
+
+Okay so let's get into the steps. So I'm in Facebook ads manager right now. First thing you want to do is make sure that you have the Facebook pixel installed on your website.
+
+You cannot retarget people on your website without the Facebook pixel installed. That's basically how Facebook tracks the actions that people take on your website. So you want to go ahead and come in here, go across to all tools and select pixels.
+
+Now obviously my Facebook pixel is already set up, yours may not be. So you can go ahead and click set up if it isn't really set up from the top right over here. You'll just see alongside Facebook pixel there'll be a little setup button.
+
+It's just taking a second to load. Obviously you can see mine's got a little bit of data because it's already set up. You can see if I click details that's going to bring up a little graph and then you're going to see up here.
+
+It's actually hidden by me but you can see there's a little setup button up here. That's just the sort of thing that you want to select. Click set up and then all you're really after is your Facebook pixel ID which I can grab just up here.
+
+That's the number that you need. You can use that to install your Facebook pixel no matter what your website setup. When you do click the setup button behind here, if I just click set up and install, you can see that when you create your Facebook pixel, you can connect to a partner platform.
+
+So if you're using BigCommerce, Shopify, Wix, Squarespace, which a lot of you will be, very, very simple. Just go ahead and click on this option. It'll show you exactly how to do it.
+
+If you get lost at all, just Google something like install Facebook pixel Shopify and the instructions will be there. All you'll need to do is copy and paste that Facebook pixel ID into the corresponding slot within your, let's say, Shopify dashboard and boom, they'll automatically populate the pixel throughout your website and your job's done. Very straightforward.
+
+I'm going to assume you've got a little bit more of a complicated setup. Let's say using a WordPress website, something that takes a little bit more doing. Still very, very straightforward.
+
+I know a lot of people that watch my videos have WordPress websites. So I'm going to show you exactly how to do that. You don't need to mess around with any of this manually installed code that obviously if you have a developer, you want them to do it, just email that over.
+
+I'm going to show you how to do it yourself. So we've grabbed the Facebook pixel ID. Then we want to head over into a website.
+
+Now this is a brand new website that we're creating at the moment. It's like a niche content based site around dogs and dog training called all doggos. If you want to check it out.
+
+And what I want to do is want to go into plugins. And the easiest way to install the Facebook pixel is with a plugin. So I'm going to click add new.
+
+And I am going to search for my favorite, which is called PixelCat. Again, sorry, I'm blocking the video here, but just type in PixelCat into the search bar there. You want to click install.
+
+I literally haven't installed the Facebook pixel on this website yet. That's going to take a second. And I want to click activate.
+
+And then click set up my pixel. And then I very simply pop my Facebook pixel ID into there. I don't want to click add new.
+
+I want to click save. And then boom, the Facebook pixel is now installed to prove it. I'm going to go ahead and visit site.
+
+I have the Facebook pixel Chrome helper, which I'm blocking, but that is showing me look one pixel found on all doggos.com page view, Facebook pixel ID, everything set up very straightforward. Okay. Now the Facebook pixel is all set up.
+
+Once that is set up, the people that visit your website are now able to be tracked and included in a retargeting audience so that you can retarget them on Facebook. So if I head back into my Facebook ad account, I now want to go from events manager to audiences. And I want to set up the custom audience that contains everyone that has visited my website.
+
+That's how you retarget people on Facebook. You create a custom audience that includes all your website visitors. And then you advertise to that custom audience within your Facebook ad campaign.
+
+So I want to go ahead and click create audience. As I said, custom audience. Now there are tons of different Facebook custom audiences you can create.
+
+I'm going to include a link in the video description to another video that I've done that shows all about different types of custom audiences. This video is about retargeting website visitors, but you can see there's lots of other options. People who've watched videos on Facebook, et cetera, et cetera.
+
+To retarget website visitors, you want to select website traffic. Then we go with all website visitors. You can select the date range.
+
+Again, there are more options here, but I get into that in other videos. We're just going to go with all website visitors for the purposes of this video. In the past, however long you want, you can go up all the way to 180 days.
+
+You can go with something really small like seven. I usually start with 30 days. It really depends on the amount of website traffic you're generating.
+
+If you're generating tons of website traffic, you can use a small audience here. If you're generating not that much website traffic, I'd probably go with 180 days. But if we just call this something like all website visitors 30, in fact, just so I know, I'm going to call it example or is that visitors 30.
+
+We're going to click create audience. Now that audience will contain all the people that have visited your website within the last 30 days, provided you've had the Facebook pixel installed for those 30 days. If you've just installed the Facebook pixel, you're going to have to wait a few days before you can create the audience and then start retargeting them because it can only track, obviously, from that point forward.
+
+Don't worry about any of this. That's all with lookalikes and things like that. Again, I'll include a link in the video description, talks all about that sort of stuff.
+
+But once you've created this, you want to then go ahead and come into ads manager. And then we're just going to quickly create a dummy campaign. I'm going to show you how you target that audience.
+
+Facebook usually takes around about 30 minutes to populate an audience like that. So don't start advertising to it immediately. But you want to go ahead and let's say create audience.
+
+Create campaign, sorry, not create audience. Then let's just give this example campaign. Let's assume we're running a conversions campaign because that's what we all want to do the majority of the time.
+
+We're going to create this ad set. Let's just call that example ad set. We're going to skip the ad level for now.
+
+That's not something we need to worry about. We're going to save to draft. And now this is the campaign level.
+
+Don't worry about that. You want to click here or click up here and go into the Facebook ad set level because this is where we're going to target our custom audience and our custom audience contains our website visitors. The way we do that is you scroll down.
+
+Don't worry about any of these details. And you go ahead and pop it in here. Example or website visitors 30.
+
+Now this audience is still populating. So reach is unavailable. But in about 30 minutes, that will be ready.
+
+And then what you want to do is because you're just retargeting people that have visited your website, you want to leave a lot of your other targeting open, targeting options broad. So we would still use, let's say the UK, if we just wanted to use the UK, we could open that to worldwide. But we're going to leave our age parameters completely open.
+
+We're going to leave our gender parameters open. And we're not going to add in any demographic behaviour interest targeting options. If we did, that would layer over the top.
+
+So let's say for example, we were to advertise, we were to put in an interest targeting option of Gary Vaynerchuk, then that would only advertise this ad set would only advertise to people that have a still website within the last 30 days. And also, like Gary Vaynerchuk, we don't want to do that, we just want to get all website visitors to leave the rest of this blank, go ahead and click publish, and you are good to go. It's very, very straightforward.
+
+There's basically three steps, you've got to install the Facebook pixel, if you haven't already got it installed, you've got to create your custom audience, and then you've got to go into your campaign and make sure you add in that custom audience in here. Very, very straightforward to do. So hopefully this video has been useful.
+
+If it has, please leave a comment. Remember to hit a like on the video and subscribe to my YouTube channel for more Facebook advertising related content and tutorials like this. Before you go, something I want to mention, which is my five part Facebook ad template you can download right now for free.
+
+It includes some of the best performing ads we've created for a number of different clients in a number of different industries. So if you want better results from your Facebook ad campaigns, go ahead and download that completely free. Click on the link in the video description, that'll take you to a page on our website and you can download it there.
+
+Another thing I quickly want to mention is Facebook advertising consulting services, which I offer. I do one hour consulting sessions via Skype. If you've got questions about your Facebook ad campaigns, you want to improve them, you want to work out what's going wrong, book a session.
+
+And we can make a lot of adjustments. I can see your campaigns, recommend things, improve the way you're doing stuff should really help your results. So if you're interested in that service, just leave a comment in the comments below or go ahead to my Facebook page.
+
+I include a link and send me a message and we can get that set up and arranged and all that good stuff. So hopefully it's been useful. Thanks for joining me and I'll talk to you soon.
+
+Thanks guys. Bye bye.

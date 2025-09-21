@@ -1,0 +1,49 @@
+Hi guys, it's Ben Heath from Lead Guru, and in this video I want to quickly talk about Facebook's attribution window, because it's an important thing to understand when you're analysing your Facebook ad campaigns and seeing how well did they actually perform. So there are different settings in terms of attribution, and what attribution basically means is how many of whatever it is you're optimising for did this Facebook ad campaign actually generate? So how many purchases can be attributed to your Facebook ad campaign?
+
+How many leads can be attributed to your lead generation campaign, for example? Now the attribution window basically sets the time after which someone interacts with your ad that they can do a certain action and be counted as conversion. So you might want to track a long time period.
+
+So you might want, let's say someone clicks on a Facebook ad today and they buy from your website in 21 days' time. You may want that to count as a purchase, but you may want to exclude that because you know that after 21 days it probably wasn't the Facebook ad, maybe it was the email follow-up that you did after they got on your email list or something like that. So what you'll often find is the results can be very different if you change your attribution window.
+
+If you have, for example, only people who converted within one day, one day of clicking on an ad, versus people that converted within 28 days of clicking on an ad, that could be a big difference in the number of, let's say, purchases that are attributed to your Facebook ad campaign, and that can really impact your results and your return on investment and all that sort of stuff. Something that we often look at and adjust for our clients all the time is let's get the right attribution window here. It's quite important.
+
+So the way you change your attribution window to see if there is much of a difference for your business is you come into Ads Manager and then you go into Settings. So I'm already in Settings, as you can see, but to go into Settings, all you've got to do is click on these three little lines at the top, go to All Tools, and then you can't see it because I'm blocking, but there's a little Settings tab just under where the video of me is on this screen. And then you see on this right-hand side, you've got attribution, some stuff about Facebook.
+
+Facebook uses last attribution model, which basically means if they saw two different ads from two different campaigns, two different ad sets, they're going to use the one that they interacted with last as the one that gets the conversion in your Facebook ad account. Now you'll see that Facebook's default is to include events that occur 28 days after someone has clicked on an ad and one day after they viewed an ad. Because of course there could be many people that view your ads, don't click on it or make a purchase through the ad specifically, but then Google your company that day or in a week's time and then purchase that way.
+
+Or perhaps they see another ad on a different platform like a Google ad or, you know, ad on LinkedIn, whatever, on YouTube, whatever it happens to be. So this is Facebook's default, 28 days click and one day view. And that's absolutely fine for most businesses.
+
+I'd recommend leaving it at that. But if you want to see how many people, for example, are viewing your ad and not, how many more people are viewing your ad, not clicking on it but purchasing within 28 days, you can extend this all the way up to 28 days. If you want to completely exclude views, you can just select click and go, I only want people that have clicked on an ad and bought within the last seven days.
+
+Because as I said, if they're buying after 25 days after they've clicked on my ad, they aren't buying because of the ad, they're buying because of something else. I would argue that the ad has had an effect. But yeah, so you can come in here and play this.
+
+You can click save changes, for example, just to one day click. Now if I was to head back into my Facebook ad account, I would see that I would be registering less conversions on, back into ads manager, I would be registering less conversions on my conversion campaigns. Because obviously I've really reduced the attribution window.
+
+I like to leave it as Facebook's default, which is 28 days click, one day view. You can of course increase the window. It's particularly important to increase your view window if you're using non-immediate action-based campaign objectives.
+
+So what I mean by that is, you're not running traffic conversion lead generation campaigns. If you're running brand awareness campaigns, things like that. Well it's perfectly reasonable that someone could see an ad and purchase with, you know, 21 days later.
+
+Well that should be encountered as conversion because it really helped. The other thing to note about attribution windows and attributing purchases, leads, etc. to Facebook is that you'll often see a big discrepancy between Facebook's analytics and Google analytics.
+
+And part of the reason for that often is that if you're advertising on multiple platforms, and even if you're not advertising, you're probably generating some repeat purchases, which could be direct traffic on Google analytics, it could be organic traffic on Google analytics, even if you're not running other ad campaigns, is that let's say one purchase occurred, but that person had seen a Facebook ad, clicked on it, and then perhaps also searched for your company, found you organically on Google, and then bought three days after they did both those events. That sort of thing happens all the time. That's typical user behavior.
+
+Users switch between devices, they switch between platforms. Not everyone is going to see an ad and make a purchase right away. They're going to bounce around different platforms, they're going to think about it, talk about it with their partner or whatever before they make a purchase.
+
+That happens all the time. So what you may end up seeing when you're trying to reconcile those, you're going, hang on a minute, Facebook is telling me that they're generating 100 purchases a month, but Google analytics is only telling me that they're generating 60 purchases a month. And it's because the Facebook ad has been involved in the process.
+
+It doesn't mean it's responsible 100% for the sale, but it is a contributing factor and you can't completely discredit it. Let's say someone sees a Facebook ad or let's say, for example, someone, you're running a Google ad campaign. Someone clicks on an ad, doesn't purchase.
+
+They then get retargeted with a Facebook ad two days later. They click on that. Again, they don't purchase.
+
+They then buy a week later from something else. Well, all those things were important components of making that sale. The Facebook ad definitely helped and that will be registered to purchase in your Facebook ad account.
+
+But of course, so did the Google ad and other things. So you can't discredit them completely. So what I'd encourage you to do is have a play around with this.
+
+If you're worried about Facebook taking credit for purchases that you don't think it's really generating, reduce this attribution window. But just be aware that Facebook is going to register any purchases or leads or whatever that come from interactions with your ads. It doesn't matter to them whether they've also interacted with something else.
+
+So it may be partly responsible for sales that are appearing in your ad account. Okay, hopefully this has been useful. Just before we go, something I want to tell you about, which is my five-part Facebook ad template, which is something you can download right now for free.
+
+So this template includes some of the best performing ads we've created for our clients in a number of different industries. You can download this template, model from those ads, see what we've included in the ads, we've explained why they work so well and the component parts and all that sort of stuff. As I said, you can download it for free.
+
+All you've got to do is click on the link in the video description. That'll take you to a page on website and you will be able to download it there. So best of luck with Facebook ad campaigns, guys.
+
+Talk to you soon. Bye-bye.

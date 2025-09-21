@@ -1,4 +1,4 @@
-.PHONY: help install convert test clean example batch batch-custom setup-dirs docker-build docker-deploy docker-build-multi docker-deploy-multi runpod-create runpod-create-multi runpod-info runpod-info-multi runpod-url-multi runpod-stop runpod-start runpod-delete runpod-delete-auto runpod-batch-auto runpod-logs youtube-mp3 youtube-setup youtube-test youtube-help
+.PHONY: help install convert test clean example batch batch-custom setup-dirs docker-build docker-deploy docker-build-multi docker-deploy-multi runpod-create runpod-create-multi runpod-info runpod-stop runpod-start runpod-delete runpod-delete-auto runpod-batch-auto runpod-logs youtube-mp3 youtube-setup youtube-test youtube-help
 .DEFAULT_GOAL := help
 
 # Variables
@@ -56,9 +56,9 @@ help: ## Show this help message
 	@echo ""
 	@echo "RunPod deployment examples:"
 	@echo "  make docker-deploy DOCKER_USERNAME=myuser       # Build and push single-worker image"
-	@echo "  make docker-deploy-multi DOCKER_USERNAME=myuser # Build and push multi-worker image (4x faster)"
+	@echo "  make docker-deploy-multi DOCKER_USERNAME=myuser # Build and push multi-worker image (6x faster)"
 	@echo "  make runpod-create         # Create single-worker RunPod instance"
-	@echo "  make runpod-create-multi   # Create multi-worker RunPod instance (4x throughput)"
+	@echo "  make runpod-create-multi   # Create multi-worker RunPod instance (6x throughput)"
 	@echo "  make runpod-info           # Get pod status and connection URL"
 	@echo ""
 	@echo "YouTube MP3 download examples:"
@@ -610,7 +610,7 @@ docker-deploy-multi: docker-push-multi ## Build and push multi-worker Docker ima
 	@echo "🐳 Your multi-worker image: $(DOCKER_FULL_NAME_MULTI)"
 	@echo "🌐 Docker Hub: https://hub.docker.com/r/$(DOCKER_USERNAME)/$(DOCKER_IMAGE_NAME_MULTI)"
 	@echo ""
-	@echo "⚡ Features: 4 concurrent workers, 4 GPU model instances, 4x throughput"
+	@echo "⚡ Features: 6 concurrent workers, 6 GPU model instances, 6x throughput, RAM filesystem"
 
 runpod-check: ## Check RunPod CLI installation
 	@echo "Checking RunPod CLI installation..."
@@ -674,7 +674,7 @@ runpod-create-multi: runpod-check ## Create and deploy multi-worker RunPod insta
 	@echo "📦 Image: $(DOCKER_FULL_NAME_MULTI)"
 	@echo "🔧 GPU: $(RUNPOD_GPU_TYPE)"
 	@echo "🏷️  Name: $(RUNPOD_POD_NAME_MULTI)"
-	@echo "⚡ Workers: 4 concurrent workers with dedicated GPU models"
+	@echo "⚡ Workers: 6 concurrent workers with dedicated GPU models (optimized for RTX 4090)"
 	@echo ""
 	@read -p "Continue? (y/N): " confirm; \
 	if [ "$$confirm" != "y" ] && [ "$$confirm" != "Y" ]; then \
@@ -691,9 +691,11 @@ runpod-create-multi: runpod-check ## Create and deploy multi-worker RunPod insta
 		--containerDiskSize 10 \
 		--ports "8080/http" \
 		--env "TRANSCRIBE_API_KEY=$(TRANSCRIBE_API_KEY_ENV)" \
-		--env "WORKER_COUNT=4" \
-		--env "MODEL_INSTANCES=4" \
-		--env "MODEL_NAME=turbo" 2>&1); \
+		--env "WORKER_COUNT=6" \
+		--env "MODEL_INSTANCES=6" \
+		--env "MODEL_NAME=turbo" \
+		--env "USE_RAM_FILESYSTEM=true" \
+		--env "RAM_FILESYSTEM_SIZE=40g" 2>&1); \
 	if echo "$$pod_output" | grep -q "error\|Error\|ERROR"; then \
 		echo "❌ Failed to create pod:"; \
 		echo "$$pod_output"; \
@@ -701,19 +703,21 @@ runpod-create-multi: runpod-check ## Create and deploy multi-worker RunPod insta
 	fi; \
 	pod_id=$$(echo "$$pod_output" | grep -oE '"[a-z0-9-]+"' | head -1 | tr -d '"'); \
 	if [ -n "$$pod_id" ]; then \
-		echo "$$pod_id" > .runpod_pod_id_multi; \
+		echo "$$pod_id" > .runpod_pod_id; \
 		echo "✅ Multi-worker pod created successfully!"; \
 		echo "🆔 Pod ID: $$pod_id"; \
-		echo "💾 Pod ID saved to .runpod_pod_id_multi"; \
+		echo "💾 Pod ID saved to .runpod_pod_id"; \
 		echo ""; \
 		echo "⏳ Pod is starting up (this may take 3-4 minutes for model loading)..."; \
-		echo "🔍 Check status: make runpod-info-multi"; \
+		echo "🔍 Check status: make runpod-info"; \
 		echo ""; \
 		echo "⚡ This pod features:"; \
-		echo "   • 4 concurrent workers"; \
-		echo "   • 4 dedicated GPU model instances"; \
-		echo "   • 4x processing throughput"; \
-		echo "   • ~21GB VRAM usage (87% of RTX 4090)"; \
+		echo "   • 6 concurrent workers"; \
+		echo "   • 6 dedicated GPU model instances"; \
+		echo "   • 6x processing throughput"; \
+		echo "   • ~32GB VRAM usage (85% of RTX 4090)"; \
+		echo "   • RAM filesystem for faster I/O (40GB tmpfs)"; \
+		echo "   • Enhanced memory management and cleanup"; \
 	else \
 		echo "❌ Could not extract pod ID from output:"; \
 		echo "$$pod_output"; \
@@ -756,50 +760,6 @@ runpod-info: ## Get RunPod instance status and connection URL
 		echo "❌ Could not get pod information. Pod may not exist."; \
 	fi
 
-runpod-info-multi: ## Get multi-worker RunPod instance status and connection URL
-	@echo "Multi-Worker RunPod Instance Information"
-	@echo "========================================"
-	@if [ ! -f ".runpod_pod_id_multi" ]; then \
-		echo "❌ No multi-worker pod ID found. Run 'make runpod-create-multi' first."; \
-		exit 1; \
-	fi
-	@pod_id=$$(cat .runpod_pod_id_multi); \
-	echo "🆔 Multi-Worker Pod ID: $$pod_id"; \
-	echo ""; \
-	echo "📊 Status:"; \
-	pod_info=$$(runpodctl get pod $$pod_id 2>/dev/null); \
-	if [ $$? -eq 0 ]; then \
-		echo "$$pod_info" | grep -E "(Status|Runtime|GPU|Container)"; \
-		echo ""; \
-		if echo "$$pod_info" | grep -q "RUNNING"; then \
-			echo "✅ Multi-worker pod is running!"; \
-			echo ""; \
-			echo "🌐 Getting connection URL..."; \
-			url_info=$$(runpodctl get pod $$pod_id | grep -E "Connect With|Mapped Port" || echo ""); \
-			if [ -n "$$url_info" ]; then \
-				echo "$$url_info"; \
-			fi; \
-			echo ""; \
-			echo "🔗 Connection URL: https://$$pod_id-8080.proxy.runpod.net"; \
-			echo "🏥 Health check: curl https://$$pod_id-8080.proxy.runpod.net/health"; \
-			echo "📊 System status: curl https://$$pod_id-8080.proxy.runpod.net/system"; \
-			echo ""; \
-			echo "⚡ Multi-worker features ready:"; \
-			echo "   • 4 concurrent processing workers"; \
-			echo "   • 4 dedicated GPU model instances"; \
-			echo "   • 4x throughput for batch processing"; \
-			echo ""; \
-			echo "🎵 Ready for parallel transcription!"; \
-			echo "💡 Usage: make runpod-transcribe INPUT=audio.mp3"; \
-		else \
-			echo "⏳ Multi-worker pod is not yet running. Status check:"; \
-			echo "$$pod_info" | grep "Status"; \
-			echo ""; \
-			echo "💡 Model loading takes 3-4 minutes (loading 4 instances)"; \
-		fi; \
-	else \
-		echo "❌ Could not get pod information. Pod may not exist."; \
-	fi
 
 runpod-url: ## Get just the RunPod connection URL
 	@if [ ! -f ".runpod_pod_id" ]; then \
@@ -809,13 +769,6 @@ runpod-url: ## Get just the RunPod connection URL
 	@pod_id=$$(cat .runpod_pod_id); \
 	echo "https://$$pod_id-8080.proxy.runpod.net"
 
-runpod-url-multi: ## Get just the multi-worker RunPod connection URL
-	@if [ ! -f ".runpod_pod_id_multi" ]; then \
-		echo "❌ No multi-worker pod ID found. Run 'make runpod-create-multi' first."; \
-		exit 1; \
-	fi
-	@pod_id=$$(cat .runpod_pod_id_multi); \
-	echo "https://$$pod_id-8080.proxy.runpod.net"
 
 runpod-test: ## Test RunPod instance health
 	@echo "Testing RunPod instance..."
@@ -1004,16 +957,12 @@ runpod-help: ## Show all RunPod-related commands
 	@echo "  make runpod-batch INPUT_DIR=./mp3s          # Transcribe directory"
 	@echo "  make runpod-batch-auto INPUT_DIR=./mp3s     # Auto-shutdown after batch"
 	@echo ""
-	@echo "Management (Single-Worker):"
+	@echo "Management (works with both single and multi-worker):"
 	@echo "  make runpod-info      # Get status and connection URL"
 	@echo "  make runpod-url       # Get connection URL only"
 	@echo "  make runpod-status    # Quick status check"
 	@echo "  make runpod-test      # Test health endpoint"
 	@echo "  make runpod-logs      # View container logs"
-	@echo ""
-	@echo "Management (Multi-Worker):"
-	@echo "  make runpod-info-multi   # Get multi-worker status and URL"
-	@echo "  make runpod-url-multi    # Get multi-worker URL only"
 	@echo ""
 	@echo "Control (works with both types):"
 	@echo "  make runpod-stop      # Stop instance (saves money)"
@@ -1021,10 +970,12 @@ runpod-help: ## Show all RunPod-related commands
 	@echo "  make runpod-delete    # Delete instance permanently"
 	@echo ""
 	@echo "⚡ Multi-Worker Features:"
-	@echo "  - 4 concurrent processing workers"
-	@echo "  - 4 dedicated GPU model instances"
-	@echo "  - 4x throughput for batch processing"
-	@echo "  - ~21GB VRAM usage (87% of RTX 4090)"
+	@echo "  - 6 concurrent processing workers (optimized for RTX 4090)"
+	@echo "  - 6 dedicated GPU model instances"
+	@echo "  - 6x throughput for batch processing"
+	@echo "  - ~32GB VRAM usage (85% of RTX 4090)"
+	@echo "  - RAM filesystem for 5-10x faster I/O (40GB tmpfs)"
+	@echo "  - Enhanced memory management and automatic cleanup"
 	@echo "  - Automatic load balancing"
 	@echo ""
 	@echo "💰 Cost Management:"
@@ -1032,7 +983,7 @@ runpod-help: ## Show all RunPod-related commands
 	@echo "  - Use 'make runpod-stop' when done to save costs"
 	@echo "  - Auto-shutdown: Set RUNPOD_AUTO_SHUTDOWN=true for batch jobs"
 	@echo "  - RTX 4090: ~$$0.50/hour (~$$2.50 for 30min of audio)"
-	@echo "  - Multi-worker: Same cost, 4x faster processing"
+	@echo "  - Multi-worker: Same cost, 6x faster processing"
 
 # YouTube MP3 Download Targets (via Metube)
 # ==========================================
