@@ -413,6 +413,36 @@ class TranscriptionClient:
                         logger.debug(f"Raw 409 response: {response.text[:500]}")
                         return False, False
                         
+                elif response.status_code == 404:
+                    # Job not found
+                    try:
+                        error_data = response.json()
+                        error_detail = error_data.get('detail', 'Job not found')
+                    except:
+                        error_detail = 'Job not found'
+                    logger.error(f"Job not found: job_id={job_id} - {error_detail}")
+                    return False, False  # Don't retry for 404
+                    
+                elif response.status_code == 401:
+                    # Authentication failed
+                    try:
+                        error_data = response.json()
+                        error_detail = error_data.get('detail', 'Authentication failed')
+                    except:
+                        error_detail = 'Authentication failed'
+                    logger.error(f"Authentication failed for process start: job_id={job_id} - {error_detail}")
+                    return False, False  # Don't retry for auth errors
+                    
+                elif response.status_code == 403:
+                    # Access forbidden
+                    try:
+                        error_data = response.json()
+                        error_detail = error_data.get('detail', 'Access forbidden')
+                    except:
+                        error_detail = 'Access forbidden'
+                    logger.error(f"Access forbidden for process start: job_id={job_id} - {error_detail}")
+                    return False, False  # Don't retry for permission errors
+                    
                 else:
                     # Handle other error responses
                     try:
@@ -431,19 +461,47 @@ class TranscriptionClient:
                             await asyncio.sleep(backoff)
                         continue
                     else:
-                        # Don't retry 4xx errors (except 408, 429)
+                        # Don't retry other 4xx errors
                         logger.error(f"Non-retriable error for job_id={job_id}: {response.status_code}")
                         break
                         
-            except RequestError as e:
-                logger.error(f"Network error starting process (attempt {attempt + 1}/{max_retries}): job_id={job_id} - {str(e)}")
+            except (RequestError, TimeoutException) as e:
+                error_type = "timeout" if isinstance(e, TimeoutException) else "network"
+                logger.error(f"{error_type.title()} error starting process (attempt {attempt + 1}/{max_retries}): job_id={job_id} - {str(e)}")
+                
                 if attempt < max_retries - 1:
+                    # Check job status before retry to handle idempotency
+                    # This prevents duplicate processing when server processed request but response timed out
+                    logger.debug(f"Checking job status before retry due to {error_type} error: job_id={job_id}")
+                    try:
+                        status = await self.check_status(job_id)
+                        if status:
+                            current_status = status.get('status')
+                            logger.info(f"Job status after {error_type} error: job_id={job_id}, status={current_status}")
+                            
+                            if current_status == 'queued':
+                                logger.info(f"Job already queued after {error_type} error: job_id={job_id}")
+                                return True, False  # Already queued
+                            elif current_status == 'processing':
+                                logger.info(f"Job already processing after {error_type} error: job_id={job_id}")
+                                return True, False  # Already processing
+                            elif current_status == 'completed':
+                                logger.info(f"Job already completed after {error_type} error: job_id={job_id}")
+                                return True, True  # Already completed
+                            elif current_status == 'failed':
+                                logger.error(f"Job already failed after {error_type} error: job_id={job_id}")
+                                return False, False  # Already failed
+                            # If status is still 'uploaded', continue with retry
+                            
+                    except Exception as status_check_error:
+                        logger.warning(f"Could not check status after {error_type} error: {status_check_error}")
+                        # Continue with retry if status check fails
+                    
                     backoff = min(3 * (2 ** attempt), 45)
                     jitter = random.uniform(0, backoff * 0.1)
                     sleep_time = backoff + jitter
-                    logger.debug(f"Retrying after network error in {sleep_time:.1f} seconds...")
-                    backoff = min(2 ** attempt, 30)
-                    await asyncio.sleep(backoff)
+                    logger.debug(f"Retrying after {error_type} error in {sleep_time:.1f} seconds...")
+                    await asyncio.sleep(sleep_time)
             except Exception as e:
                 logger.error(f"Unexpected error starting process: job_id={job_id} - {str(e)}")
                 logger.debug(f"Traceback: {traceback.format_exc()}")
@@ -455,29 +513,79 @@ class TranscriptionClient:
         logger.error(f"Failed to start processing after {max_retries} attempts: job_id={job_id} (total time: {total_duration:.1f}s)")
         return False, False
     
-    async def check_status(self, job_id: str) -> Optional[dict]:
-        """Check job status."""
-        try:
-            response = await self.http_client.get(
-                f"{self.server_url}/status/{job_id}",
-                headers=self.headers,
-                timeout=30
-            )
-            
-            if response.status_code == 200:
-                status_data = response.json()
-                logger.debug(f"Status check: job_id={job_id}, status={status_data.get('status')}")
-                return status_data
-            else:
-                logger.warning(f"Status check failed: job_id={job_id}, HTTP {response.status_code}")
-                return None
+    async def check_status(self, job_id: str, max_retries: int = 3) -> Optional[dict]:
+        """Check job status with retry logic for temporary failures."""
+        for attempt in range(max_retries):
+            try:
+                response = await self.http_client.get(
+                    f"{self.server_url}/status/{job_id}",
+                    headers=self.headers,
+                    timeout=30
+                )
                 
-        except RequestError as e:
-            logger.error(f"Network error checking status: job_id={job_id} - {str(e)}")
-            return None
-        except Exception as e:
-            logger.error(f"Unexpected error checking status: job_id={job_id} - {str(e)}")
-            return None
+                if response.status_code == 200:
+                    status_data = response.json()
+                    logger.debug(f"Status check: job_id={job_id}, status={status_data.get('status')}")
+                    return status_data
+                    
+                elif response.status_code == 404:
+                    logger.error(f"Job not found: job_id={job_id}")
+                    return None  # Don't retry for 404
+                    
+                elif response.status_code == 401:
+                    logger.error(f"Authentication failed for status check: job_id={job_id}")
+                    return None  # Don't retry for auth errors
+                    
+                elif response.status_code == 403:
+                    logger.error(f"Access forbidden for status check: job_id={job_id}")
+                    return None  # Don't retry for permission errors
+                    
+                elif response.status_code >= 500 or response.status_code in [408, 429]:
+                    # Server errors or rate limiting - retry
+                    try:
+                        error_data = response.json()
+                        error_detail = error_data.get('detail', f"HTTP {response.status_code}")
+                    except:
+                        error_detail = f"HTTP {response.status_code}"
+                        
+                    logger.warning(f"Temporary error checking status (attempt {attempt + 1}/{max_retries}): job_id={job_id} - {error_detail}")
+                    
+                    if attempt < max_retries - 1:
+                        backoff = min(2 ** attempt, 15)  # Shorter backoff for status checks
+                        logger.debug(f"Retrying status check in {backoff} seconds...")
+                        await asyncio.sleep(backoff)
+                        continue
+                    else:
+                        logger.error(f"Status check failed after {max_retries} attempts: job_id={job_id}")
+                        return None
+                        
+                else:
+                    # Other 4xx errors
+                    try:
+                        error_data = response.json()
+                        error_detail = error_data.get('detail', f"HTTP {response.status_code}")
+                    except:
+                        error_detail = f"HTTP {response.status_code}"
+                        
+                    logger.warning(f"Status check error: job_id={job_id} - {error_detail}")
+                    return None  # Don't retry for other 4xx errors
+                    
+            except (RequestError, TimeoutException) as e:
+                error_type = "timeout" if isinstance(e, TimeoutException) else "network"
+                logger.warning(f"{error_type.title()} error checking status (attempt {attempt + 1}/{max_retries}): job_id={job_id} - {str(e)}")
+                
+                if attempt < max_retries - 1:
+                    backoff = min(2 ** attempt, 15)
+                    logger.debug(f"Retrying status check after {error_type} error in {backoff} seconds...")
+                    await asyncio.sleep(backoff)
+                else:
+                    logger.error(f"Status check failed after {max_retries} {error_type} errors: job_id={job_id}")
+                    return None
+                    
+            except Exception as e:
+                logger.error(f"Unexpected error checking status: job_id={job_id} - {str(e)}")
+                logger.debug(f"Traceback: {traceback.format_exc()}")
+                return None
     
     async def wait_for_completion(self, job_id: str, check_interval: int = 3) -> bool:
         """Wait for job to complete."""
@@ -508,82 +616,165 @@ class TranscriptionClient:
             logger.debug(f"Job still processing: job_id={job_id}, status={current_status}, elapsed={elapsed:.1f}s")
             await asyncio.sleep(check_interval)
     
-    async def download_results(self, job_id: str, output_dir: Path) -> bool:
-        """Download transcription results."""
+    async def download_results(self, job_id: str, output_dir: Path, max_retries: int = 3) -> bool:
+        """Download transcription results with retry logic for temporary failures."""
         logger.info(f"Downloading results: job_id={job_id}")
         start_time = time.time()
         
-        try:
-            response = await self.http_client.get(
-                f"{self.server_url}/download/{job_id}",
-                headers=self.headers,
-                timeout=120
-            )
-            
-            logger.debug(f"Download response: status={response.status_code} for job_id={job_id}")
-            
-            if response.status_code == 200:
-                # Save zip file
-                output_dir.mkdir(parents=True, exist_ok=True)
-                zip_path = output_dir / f"transcripts_{job_id}.zip"
+        for attempt in range(max_retries):
+            try:
+                response = await self.http_client.get(
+                    f"{self.server_url}/download/{job_id}",
+                    headers=self.headers,
+                    timeout=120
+                )
                 
-                # Download with progress tracking
-                bytes_downloaded = 0
-                with open(zip_path, 'wb') as f:
-                    async for chunk in response.aiter_bytes(chunk_size=8192):
-                        f.write(chunk)
-                        bytes_downloaded += len(chunk)
+                logger.debug(f"Download response: status={response.status_code} for job_id={job_id} (attempt {attempt + 1})")
                 
-                download_duration = time.time() - start_time
-                size_mb = bytes_downloaded / (1024 * 1024)
-                logger.info(f"Downloaded {size_mb:.1f} MB in {download_duration:.1f}s for job_id={job_id}")
+                if response.status_code == 200:
+                    # Save zip file
+                    output_dir.mkdir(parents=True, exist_ok=True)
+                    zip_path = output_dir / f"transcripts_{job_id}.zip"
+                    
+                    # Download with progress tracking
+                    bytes_downloaded = 0
+                    with open(zip_path, 'wb') as f:
+                        async for chunk in response.aiter_bytes(chunk_size=8192):
+                            f.write(chunk)
+                            bytes_downloaded += len(chunk)
+                    
+                    download_duration = time.time() - start_time
+                    size_mb = bytes_downloaded / (1024 * 1024)
+                    logger.info(f"Downloaded {size_mb:.1f} MB in {download_duration:.1f}s for job_id={job_id}")
+                    
+                    # Extract zip file
+                    logger.debug(f"Extracting results to {output_dir}")
+                    try:
+                        with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+                            extracted_files = zip_ref.namelist()
+                            zip_ref.extractall(output_dir)
+                            logger.debug(f"Extracted {len(extracted_files)} files: {extracted_files}")
+                    except Exception as e:
+                        logger.error(f"Failed to extract zip: job_id={job_id} - {str(e)}")
+                        return False
+                    
+                    # Remove zip file after extraction
+                    zip_path.unlink()
+                    
+                    total_duration = time.time() - start_time
+                    logger.info(f"Download complete: job_id={job_id} (total time: {total_duration:.1f}s)")
+                    return True
+                    
+                elif response.status_code == 404:
+                    # Job or results not found
+                    try:
+                        error_data = response.json()
+                        error_detail = error_data.get('detail', 'Results not found')
+                    except:
+                        error_detail = 'Results not found'
+                    logger.error(f"Results not found: job_id={job_id} - {error_detail}")
+                    return False  # Don't retry for 404
+                    
+                elif response.status_code == 401:
+                    # Authentication failed
+                    try:
+                        error_data = response.json()
+                        error_detail = error_data.get('detail', 'Authentication failed')
+                    except:
+                        error_detail = 'Authentication failed'
+                    logger.error(f"Authentication failed for download: job_id={job_id} - {error_detail}")
+                    return False  # Don't retry for auth errors
+                    
+                elif response.status_code == 403:
+                    # Access forbidden
+                    try:
+                        error_data = response.json()
+                        error_detail = error_data.get('detail', 'Access forbidden')
+                    except:
+                        error_detail = 'Access forbidden'
+                    logger.error(f"Access forbidden for download: job_id={job_id} - {error_detail}")
+                    return False  # Don't retry for permission errors
+                    
+                elif response.status_code >= 500 or response.status_code in [408, 429]:
+                    # Server errors or rate limiting - retry
+                    try:
+                        error_data = response.json()
+                        error_detail = error_data.get('detail', f"HTTP {response.status_code}")
+                    except:
+                        error_detail = f"HTTP {response.status_code}"
+                        
+                    logger.warning(f"Temporary error downloading results (attempt {attempt + 1}/{max_retries}): job_id={job_id} - {error_detail}")
+                    
+                    if attempt < max_retries - 1:
+                        backoff = min(2 ** attempt, 30)
+                        logger.debug(f"Retrying download in {backoff} seconds...")
+                        await asyncio.sleep(backoff)
+                        continue
+                    else:
+                        logger.error(f"Download failed after {max_retries} attempts: job_id={job_id}")
+                        return False
+                        
+                else:
+                    # Other 4xx errors
+                    try:
+                        error_data = response.json()
+                        error_detail = error_data.get('detail', response.text[:500])
+                    except:
+                        error_detail = response.text[:500] if response.text else f"HTTP {response.status_code}"
+                    
+                    logger.error(f"Download failed: job_id={job_id} - {error_detail}")
+                    return False  # Don't retry for other 4xx errors
+                    
+            except (RequestError, TimeoutException) as e:
+                error_type = "timeout" if isinstance(e, TimeoutException) else "network"
+                logger.warning(f"{error_type.title()} error downloading results (attempt {attempt + 1}/{max_retries}): job_id={job_id} - {str(e)}")
                 
-                # Extract zip file
-                logger.debug(f"Extracting results to {output_dir}")
-                try:
-                    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
-                        extracted_files = zip_ref.namelist()
-                        zip_ref.extractall(output_dir)
-                        logger.debug(f"Extracted {len(extracted_files)} files: {extracted_files}")
-                except Exception as e:
-                    logger.error(f"Failed to extract zip: job_id={job_id} - {str(e)}")
+                if attempt < max_retries - 1:
+                    backoff = min(2 ** attempt, 30)
+                    logger.debug(f"Retrying download after {error_type} error in {backoff} seconds...")
+                    await asyncio.sleep(backoff)
+                else:
+                    logger.error(f"Download failed after {max_retries} {error_type} errors: job_id={job_id}")
                     return False
-                
-                # Remove zip file after extraction
-                zip_path.unlink()
-                
-                total_duration = time.time() - start_time
-                logger.info(f"Download complete: job_id={job_id} (total time: {total_duration:.1f}s)")
-                return True
-            else:
-                error_detail = f"HTTP {response.status_code}"
-                try:
-                    error_data = response.json()
-                    error_detail = error_data.get('detail', response.text[:500])
-                except:
-                    error_detail = response.text[:500] if response.text else f"HTTP {response.status_code}"
-                
-                logger.error(f"Download failed: job_id={job_id} - {error_detail}")
+                    
+            except Exception as e:
+                logger.error(f"Unexpected error downloading results: job_id={job_id} - {str(e)}")
+                logger.debug(f"Traceback: {traceback.format_exc()}")
                 return False
                 
-        except RequestError as e:
-            logger.error(f"Network error downloading results: job_id={job_id} - {str(e)}")
-            return False
-        except Exception as e:
-            logger.error(f"Unexpected error downloading results: job_id={job_id} - {str(e)}")
-            logger.debug(f"Traceback: {traceback.format_exc()}")
-            return False
+        return False
     
     async def cleanup_job(self, job_id: str):
-        """Delete job from server."""
+        """Delete job from server with proper error logging."""
         try:
-            await self.http_client.delete(
+            response = await self.http_client.delete(
                 f"{self.server_url}/job/{job_id}",
                 headers=self.headers,
                 timeout=10
             )
-        except:
-            pass  # Ignore cleanup errors
+            
+            if response.status_code == 200:
+                logger.debug(f"Successfully cleaned up job: job_id={job_id}")
+            elif response.status_code == 404:
+                logger.debug(f"Job already deleted or not found during cleanup: job_id={job_id}")
+            elif response.status_code == 401:
+                logger.warning(f"Authentication failed during cleanup: job_id={job_id}")
+            elif response.status_code == 403:
+                logger.warning(f"Access forbidden during cleanup: job_id={job_id}")
+            else:
+                try:
+                    error_data = response.json()
+                    error_detail = error_data.get('detail', f"HTTP {response.status_code}")
+                except:
+                    error_detail = f"HTTP {response.status_code}"
+                logger.warning(f"Cleanup failed: job_id={job_id} - {error_detail}")
+                
+        except (RequestError, TimeoutException) as e:
+            error_type = "timeout" if isinstance(e, TimeoutException) else "network"
+            logger.debug(f"{error_type.title()} error during cleanup (ignoring): job_id={job_id} - {str(e)}")
+        except Exception as e:
+            logger.debug(f"Unexpected error during cleanup (ignoring): job_id={job_id} - {str(e)}")
+            # Don't log full traceback for cleanup errors as they're non-critical
 
 # Core async processing functions
 async def process_single_file(client: TranscriptionClient, audio_file: Path, 
