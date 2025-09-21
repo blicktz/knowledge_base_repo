@@ -113,6 +113,10 @@ queue_worker_tasks = []  # List to track all worker tasks
 upload_semaphore = None  # Will be initialized in startup_event
 active_uploads = set()  # Track active upload job IDs
 
+# Multi-chunk upload session management
+upload_sessions = {}  # {upload_id: session_data}
+upload_sessions_lock = asyncio.Lock()
+
 # Upload metrics tracking
 upload_metrics = {
     "total_uploads": 0,
@@ -121,7 +125,9 @@ upload_metrics = {
     "disconnected_uploads": 0,
     "total_bytes_uploaded": 0,
     "average_upload_speed": 0.0,
-    "peak_concurrent_uploads": 0
+    "peak_concurrent_uploads": 0,
+    "multi_chunk_uploads": 0,
+    "single_chunk_uploads": 0
 }
 
 class JobStatus(BaseModel):
@@ -137,6 +143,25 @@ class JobStatus(BaseModel):
 
 class TranscriptionRequest(BaseModel):
     model: str = "turbo"
+
+class UploadStartRequest(BaseModel):
+    filename: str
+    total_size: int
+    chunk_size: int = 15 * 1024 * 1024  # 15MB default
+    model: str = "turbo"
+
+class UploadSession:
+    def __init__(self, upload_id: str, filename: str, total_size: int, chunk_size: int, model: str):
+        self.upload_id = upload_id
+        self.filename = filename
+        self.total_size = total_size
+        self.chunk_size = chunk_size
+        self.model = model
+        self.created_at = datetime.now()
+        self.chunks_received = set()  # Track which chunks we've received
+        self.total_chunks = (total_size + chunk_size - 1) // chunk_size  # Ceiling division
+        self.session_dir = UPLOAD_DIR / f"session_{upload_id}"
+        self.bytes_received = 0
 
 def verify_api_key(credentials: HTTPAuthorizationCredentials = Depends(security)):
     """Verify API key authentication."""
@@ -353,6 +378,97 @@ async def cleanup_job_files(job_id: str, audio_files: List[Path]):
             
     except Exception as e:
         logger.error(f"Error during enhanced cleanup for job {job_id}: {e}")
+
+async def cleanup_upload_session(upload_id: str):
+    """Clean up upload session files and data."""
+    try:
+        async with upload_sessions_lock:
+            if upload_id in upload_sessions:
+                session = upload_sessions[upload_id]
+                
+                # Remove session directory
+                if session.session_dir.exists():
+                    shutil.rmtree(session.session_dir, ignore_errors=True)
+                    logger.debug(f"Cleaned up session directory: {session.session_dir}")
+                
+                # Remove from sessions
+                del upload_sessions[upload_id]
+                logger.debug(f"Removed upload session: {upload_id}")
+                
+    except Exception as e:
+        logger.warning(f"Error cleaning up upload session {upload_id}: {e}")
+
+async def cleanup_old_upload_sessions(max_age_hours: int = 1):
+    """Clean up old abandoned upload sessions."""
+    try:
+        async with upload_sessions_lock:
+            current_time = datetime.now()
+            sessions_to_delete = []
+            
+            for upload_id, session in upload_sessions.items():
+                age_hours = (current_time - session.created_at).total_seconds() / 3600
+                if age_hours > max_age_hours:
+                    sessions_to_delete.append(upload_id)
+            
+            # Delete old sessions
+            for upload_id in sessions_to_delete:
+                session = upload_sessions[upload_id]
+                logger.info(f"Cleaning up abandoned upload session: {upload_id} (age: {age_hours:.1f}h)")
+                
+                # Remove session directory
+                if session.session_dir.exists():
+                    shutil.rmtree(session.session_dir, ignore_errors=True)
+                
+                del upload_sessions[upload_id]
+                
+            if sessions_to_delete:
+                logger.info(f"Cleaned up {len(sessions_to_delete)} abandoned upload sessions")
+                
+    except Exception as e:
+        logger.error(f"Error during upload session cleanup: {e}")
+
+async def assemble_file_from_chunks(session: UploadSession) -> Path:
+    """Assemble final file from uploaded chunks."""
+    logger.info(f"📦 Assembling file from {session.total_chunks} chunks: {session.filename}")
+    
+    # Create job directory
+    job_id = str(uuid.uuid4())
+    job_upload_dir = UPLOAD_DIR / job_id
+    job_upload_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Final file path
+    final_file_path = job_upload_dir / session.filename
+    
+    try:
+        # Assemble chunks in order
+        with open(final_file_path, 'wb') as final_file:
+            for chunk_index in range(session.total_chunks):
+                chunk_file = session.session_dir / f"chunk_{chunk_index}"
+                
+                if not chunk_file.exists():
+                    raise Exception(f"Missing chunk {chunk_index}")
+                
+                # Copy chunk to final file
+                with open(chunk_file, 'rb') as chunk:
+                    shutil.copyfileobj(chunk, final_file)
+                
+                logger.debug(f"Assembled chunk {chunk_index + 1}/{session.total_chunks}")
+        
+        # Verify file size
+        actual_size = final_file_path.stat().st_size
+        if actual_size != session.total_size:
+            raise Exception(f"File size mismatch: expected {session.total_size}, got {actual_size}")
+        
+        logger.info(f"✅ Successfully assembled file: {session.filename} ({actual_size / (1024*1024):.1f} MB)")
+        return final_file_path
+        
+    except Exception as e:
+        # Clean up partial file on error
+        if final_file_path.exists():
+            final_file_path.unlink()
+        if job_upload_dir.exists() and not any(job_upload_dir.iterdir()):
+            job_upload_dir.rmdir()
+        raise Exception(f"Failed to assemble file: {e}")
 
 async def cleanup_old_jobs(max_age_hours: int = 24):
     """Clean up old completed/failed jobs to free up space."""
@@ -669,7 +785,10 @@ async def root():
         "name": "RunPod Transcription API",
         "version": "1.0.0",
         "endpoints": {
-            "upload": "/upload-single",
+            "upload_single": "/upload-single",
+            "upload_multi_start": "/upload-start",
+            "upload_multi_chunk": "/upload-chunk/{upload_id}/{chunk_index}",
+            "upload_multi_complete": "/upload-complete/{upload_id}",
             "process": "/process/{job_id}",
             "status": "/status/{job_id}",
             "download": "/download/{job_id}",
@@ -754,7 +873,11 @@ async def system_status(api_key: str = Depends(verify_api_key)):
             "upload_dir": str(UPLOAD_DIR),
             "output_dir": str(OUTPUT_DIR)
         },
-        "upload_metrics": upload_metrics
+        "upload_metrics": upload_metrics,
+        "upload_sessions": {
+            "active_sessions": len(upload_sessions),
+            "active_session_ids": list(upload_sessions.keys()) if len(upload_sessions) <= 5 else f"{len(upload_sessions)} sessions"
+        }
     }
 
 @app.get("/metrics")
@@ -777,6 +900,193 @@ async def get_metrics(api_key: str = Depends(verify_api_key)):
             }
         }
     }
+
+@app.post("/upload-start")
+async def start_upload(request: UploadStartRequest, api_key: str = Depends(verify_api_key)):
+    """Start a multi-chunk upload session for large files."""
+    
+    # Validate file type
+    if not request.filename.lower().endswith(('.mp3', '.wav', '.m4a', '.flac', '.ogg')):
+        raise HTTPException(status_code=400, detail="Invalid file type. Supported: MP3, WAV, M4A, FLAC, OGG")
+    
+    # Validate model
+    valid_models = ["tiny", "base", "small", "medium", "large", "large-v2", "large-v3", "turbo"]
+    if request.model not in valid_models:
+        raise HTTPException(status_code=400, detail=f"Invalid model: {request.model}. Choose from: {valid_models}")
+    
+    # Validate file size (max 1GB)
+    max_size = 1024 * 1024 * 1024  # 1GB
+    if request.total_size > max_size:
+        raise HTTPException(status_code=400, detail=f"File too large. Max size: {max_size / (1024*1024):.0f}MB")
+    
+    # Create upload session
+    upload_id = str(uuid.uuid4())
+    session = UploadSession(upload_id, request.filename, request.total_size, request.chunk_size, request.model)
+    
+    # Create session directory
+    session.session_dir.mkdir(parents=True, exist_ok=True)
+    
+    async with upload_sessions_lock:
+        upload_sessions[upload_id] = session
+    
+    upload_metrics["multi_chunk_uploads"] += 1
+    
+    logger.info(f"🚀 Started multi-chunk upload session: {upload_id}")
+    logger.info(f"   📁 File: {request.filename} ({request.total_size / (1024*1024):.1f} MB)")
+    logger.info(f"   📦 Chunks: {session.total_chunks} × {request.chunk_size / (1024*1024):.1f} MB")
+    logger.info(f"   🔧 Model: {request.model}")
+    
+    return {
+        "upload_id": upload_id,
+        "total_chunks": session.total_chunks,
+        "chunk_size": request.chunk_size,
+        "message": f"Upload session created. Upload {session.total_chunks} chunks."
+    }
+
+@app.put("/upload-chunk/{upload_id}/{chunk_index}")
+async def upload_chunk(
+    upload_id: str,
+    chunk_index: int,
+    request: Request,
+    api_key: str = Depends(verify_api_key)
+):
+    """Upload a single chunk of a multi-chunk upload."""
+    
+    # Get upload session
+    async with upload_sessions_lock:
+        if upload_id not in upload_sessions:
+            raise HTTPException(status_code=404, detail="Upload session not found")
+        session = upload_sessions[upload_id]
+    
+    # Validate chunk index
+    if chunk_index < 0 or chunk_index >= session.total_chunks:
+        raise HTTPException(status_code=400, detail=f"Invalid chunk index. Must be 0-{session.total_chunks-1}")
+    
+    # Check if chunk already received
+    if chunk_index in session.chunks_received:
+        logger.debug(f"Chunk {chunk_index} already received for upload {upload_id}")
+        return {"message": f"Chunk {chunk_index} already received", "chunks_received": len(session.chunks_received)}
+    
+    # Create chunk file path
+    chunk_file = session.session_dir / f"chunk_{chunk_index}"
+    
+    try:
+        start_time = time.time()
+        bytes_received = 0
+        
+        logger.debug(f"📥 Receiving chunk {chunk_index + 1}/{session.total_chunks} for upload {upload_id}")
+        
+        # Stream chunk data directly to file
+        with open(chunk_file, 'wb') as f:
+            async for chunk_data in request.stream():
+                f.write(chunk_data)
+                bytes_received += len(chunk_data)
+        
+        upload_duration = time.time() - start_time
+        chunk_size_mb = bytes_received / (1024 * 1024)
+        speed_mb_s = chunk_size_mb / upload_duration if upload_duration > 0 else 0
+        
+        # Update session
+        async with upload_sessions_lock:
+            session.chunks_received.add(chunk_index)
+            session.bytes_received += bytes_received
+        
+        logger.info(f"✅ Chunk {chunk_index + 1}/{session.total_chunks} received: {chunk_size_mb:.1f}MB in {upload_duration:.1f}s ({speed_mb_s:.1f}MB/s)")
+        logger.debug(f"   📊 Progress: {len(session.chunks_received)}/{session.total_chunks} chunks ({session.bytes_received / (1024*1024):.1f}/{session.total_size / (1024*1024):.1f} MB)")
+        
+        return {
+            "message": f"Chunk {chunk_index} uploaded successfully",
+            "chunks_received": len(session.chunks_received),
+            "total_chunks": session.total_chunks,
+            "bytes_received": session.bytes_received,
+            "total_size": session.total_size
+        }
+        
+    except Exception as e:
+        # Clean up partial chunk file
+        if chunk_file.exists():
+            chunk_file.unlink()
+        
+        logger.error(f"❌ Failed to upload chunk {chunk_index} for upload {upload_id}: {e}")
+        raise HTTPException(status_code=500, detail=f"Failed to upload chunk: {str(e)}")
+
+@app.post("/upload-complete/{upload_id}")
+async def complete_upload(upload_id: str, api_key: str = Depends(verify_api_key)):
+    """Complete a multi-chunk upload and create job."""
+    
+    # Get upload session
+    async with upload_sessions_lock:
+        if upload_id not in upload_sessions:
+            raise HTTPException(status_code=404, detail="Upload session not found")
+        session = upload_sessions[upload_id]
+    
+    # Verify all chunks received
+    if len(session.chunks_received) != session.total_chunks:
+        missing_chunks = []
+        for i in range(session.total_chunks):
+            if i not in session.chunks_received:
+                missing_chunks.append(i)
+        
+        raise HTTPException(
+            status_code=400, 
+            detail=f"Upload incomplete. Missing chunks: {missing_chunks}"
+        )
+    
+    try:
+        logger.info(f"🏁 Completing upload session: {upload_id}")
+        
+        # Assemble file from chunks
+        final_file_path = await assemble_file_from_chunks(session)
+        
+        # Create job record
+        job_id = str(uuid.uuid4())
+        job = {
+            "job_id": job_id,
+            "status": "uploaded",
+            "created_at": datetime.now().isoformat(),
+            "updated_at": datetime.now().isoformat(),
+            "files_count": 1,
+            "processed_count": 0,
+            "failed_count": 0,
+            "model": session.model,
+            "file_path": str(final_file_path),
+            "error": None,
+            "download_url": None,
+            "worker_id": None
+        }
+        
+        async with jobs_db_lock:
+            jobs_db[job_id] = job
+        
+        # Update metrics
+        upload_metrics["successful_uploads"] += 1
+        upload_metrics["total_bytes_uploaded"] += session.total_size
+        
+        # Clean up upload session
+        await cleanup_upload_session(upload_id)
+        
+        logger.info(f"✅ Multi-chunk upload completed: {session.filename} → job_id={job_id}")
+        
+        return {
+            "job_id": job_id,
+            "status": "uploaded",
+            "files_count": 1,
+            "file_name": session.filename,
+            "file_size": session.total_size,
+            "chunks_assembled": session.total_chunks,
+            "message": "Multi-chunk upload completed successfully.",
+            "status_url": f"/status/{job_id}",
+            "process_url": f"/process/{job_id}"
+        }
+        
+    except Exception as e:
+        logger.error(f"❌ Failed to complete upload {upload_id}: {e}")
+        
+        # Clean up on error
+        await cleanup_upload_session(upload_id)
+        upload_metrics["failed_uploads"] += 1
+        
+        raise HTTPException(status_code=500, detail=f"Failed to complete upload: {str(e)}")
 
 @app.post("/upload-single")
 async def upload_single_file(
@@ -992,6 +1302,7 @@ async def upload_single_file(
                 
                 # Update success metrics
                 upload_metrics["successful_uploads"] += 1
+                upload_metrics["single_chunk_uploads"] += 1
                 upload_metrics["total_bytes_uploaded"] += file_size
                 
                 # Update average upload speed
@@ -1239,11 +1550,12 @@ async def startup_event():
         queue_worker_tasks.append(worker_task)
         logger.info(f"Worker {worker_id} started")
     
-    # Start periodic cleanup task
+    # Start periodic cleanup tasks
     async def periodic_cleanup():
         while True:
             await asyncio.sleep(3600)  # Run every hour
             await cleanup_old_jobs(max_age_hours=24)
+            await cleanup_old_upload_sessions(max_age_hours=1)
     
     asyncio.create_task(periodic_cleanup())
     

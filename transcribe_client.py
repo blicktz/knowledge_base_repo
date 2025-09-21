@@ -153,6 +153,7 @@ class ProgressManager:
                 file_name = job_info['file'][:40] + '...' if len(job_info['file']) > 40 else job_info['file']
                 status_emoji = {
                     'uploading': '📤',
+                    'chunked_uploading': '📦',
                     'starting': '🚀', 
                     'processing': '⚙️',
                     'downloading': '📥'
@@ -197,6 +198,10 @@ class TranscriptionClient:
             "Connection": "keep-alive",
             "User-Agent": "transcription-client-async/1.0"
         }
+        
+        # Multi-chunk upload configuration
+        self.chunk_size = 15 * 1024 * 1024  # 15MB chunks
+        self.large_file_threshold = 30 * 1024 * 1024  # 30MB threshold
     
     async def health_check(self) -> bool:
         """Check if server is healthy."""
@@ -252,10 +257,10 @@ class TranscriptionClient:
                             yield chunk
                             bytes_sent += len(chunk)
                             
-                            # Log progress for very large files
-                            if bytes_sent % (10 * 1024 * 1024) == 0:  # Every 10MB
+                            # Log progress for large files (less frequent)
+                            if bytes_sent % (20 * 1024 * 1024) == 0:  # Every 20MB
                                 progress_mb = bytes_sent / (1024 * 1024)
-                                logger.debug(f"Uploaded {progress_mb:.1f}MB of {file_size_mb:.1f}MB")
+                                logger.info(f"Upload progress: {progress_mb:.1f}MB of {file_size_mb:.1f}MB ({progress_mb/file_size_mb*100:.1f}%)")
                     
                     # End boundary
                     yield f'\r\n--{boundary}--\r\n'.encode()
@@ -363,6 +368,124 @@ class TranscriptionClient:
         total_duration = time.time() - start_time
         logger.error(f"Streaming upload failed after {max_retries} attempts: {audio_file.name} (total time: {total_duration:.1f}s)")
         return None
+    
+    async def upload_file_multi_chunk(self, audio_file: Path, model: str = "turbo", max_retries: int = 3) -> Optional[str]:
+        """Upload a large file using multi-chunk upload strategy."""
+        file_size = audio_file.stat().st_size
+        file_size_mb = file_size / (1024 * 1024)
+        logger.info(f"Starting multi-chunk upload: {audio_file.name} ({file_size_mb:.1f} MB)")
+        start_time = time.time()
+        
+        try:
+            # Step 1: Start upload session
+            logger.debug(f"Starting upload session for {audio_file.name}")
+            
+            upload_data = {
+                "filename": audio_file.name,
+                "total_size": file_size,
+                "chunk_size": self.chunk_size,
+                "model": model
+            }
+            
+            response = await self.http_client.post(
+                f"{self.server_url}/upload-start",
+                json=upload_data,
+                headers=self.headers,
+                timeout=30
+            )
+            
+            if response.status_code != 200:
+                logger.error(f"Failed to start upload session: {response.status_code} - {response.text}")
+                return None
+            
+            session_data = response.json()
+            upload_id = session_data["upload_id"]
+            total_chunks = session_data["total_chunks"]
+            
+            logger.info(f"Upload session started: {upload_id} ({total_chunks} chunks)")
+            
+            # Step 2: Upload chunks
+            successful_chunks = 0
+            
+            with open(audio_file, 'rb') as f:
+                for chunk_index in range(total_chunks):
+                    chunk_start = chunk_index * self.chunk_size
+                    f.seek(chunk_start)
+                    chunk_data = f.read(self.chunk_size)
+                    
+                    if not chunk_data:
+                        break
+                    
+                    # Upload this chunk with retries
+                    chunk_success = False
+                    for attempt in range(max_retries):
+                        try:
+                            logger.debug(f"Uploading chunk {chunk_index + 1}/{total_chunks} (attempt {attempt + 1})")
+                            
+                            chunk_response = await self.http_client.put(
+                                f"{self.server_url}/upload-chunk/{upload_id}/{chunk_index}",
+                                content=chunk_data,
+                                headers=self.headers,
+                                timeout=90  # 90 second timeout for chunk upload
+                            )
+                            
+                            if chunk_response.status_code == 200:
+                                successful_chunks += 1
+                                chunk_success = True
+                                logger.debug(f"Chunk {chunk_index + 1}/{total_chunks} uploaded successfully")
+                                break
+                            else:
+                                logger.warning(f"Chunk upload failed (attempt {attempt + 1}): {chunk_response.status_code}")
+                                if attempt < max_retries - 1:
+                                    await asyncio.sleep(2 ** attempt)  # Exponential backoff
+                                    
+                        except Exception as e:
+                            logger.warning(f"Chunk upload error (attempt {attempt + 1}): {str(e)}")
+                            if attempt < max_retries - 1:
+                                await asyncio.sleep(2 ** attempt)
+                    
+                    if not chunk_success:
+                        logger.error(f"Failed to upload chunk {chunk_index + 1} after {max_retries} attempts")
+                        return None
+            
+            logger.info(f"All {total_chunks} chunks uploaded successfully")
+            
+            # Step 3: Complete upload
+            logger.debug(f"Completing upload session: {upload_id}")
+            
+            complete_response = await self.http_client.post(
+                f"{self.server_url}/upload-complete/{upload_id}",
+                headers=self.headers,
+                timeout=60
+            )
+            
+            if complete_response.status_code != 200:
+                logger.error(f"Failed to complete upload: {complete_response.status_code} - {complete_response.text}")
+                return None
+            
+            completion_data = complete_response.json()
+            job_id = completion_data["job_id"]
+            
+            total_duration = time.time() - start_time
+            logger.info(f"Multi-chunk upload completed: {audio_file.name} → job_id={job_id} (took {total_duration:.1f}s)")
+            
+            return job_id
+            
+        except Exception as e:
+            total_duration = time.time() - start_time
+            logger.error(f"Multi-chunk upload failed: {audio_file.name} - {str(e)} (total time: {total_duration:.1f}s)")
+            return None
+    
+    async def upload_file_smart(self, audio_file: Path, model: str = "turbo") -> Optional[str]:
+        """Smart upload that chooses single-chunk or multi-chunk based on file size."""
+        file_size = audio_file.stat().st_size
+        
+        if file_size > self.large_file_threshold:
+            logger.debug(f"Using multi-chunk upload for large file: {audio_file.name} ({file_size / (1024*1024):.1f} MB)")
+            return await self.upload_file_multi_chunk(audio_file, model)
+        else:
+            logger.debug(f"Using single-chunk upload for small file: {audio_file.name} ({file_size / (1024*1024):.1f} MB)")
+            return await self.upload_file(audio_file, model)
     
     async def start_processing(self, job_id: str, max_retries: int = 5) -> tuple[bool, bool]:
         """Start processing an uploaded file."""
@@ -789,10 +912,12 @@ async def process_single_file(client: TranscriptionClient, audio_file: Path,
     try:
         logger.info(f"Starting to process: {file_name}")
         
-        # Upload with progress
+        # Upload with progress (using smart upload strategy)
         current_stage = "upload"
-        await progress_mgr.update_status("temp", file_name, "uploading")
-        job_id = await client.upload_file(audio_file, model)
+        file_size = audio_file.stat().st_size
+        upload_status = "chunked_uploading" if file_size > client.large_file_threshold else "uploading"
+        await progress_mgr.update_status("temp", file_name, upload_status)
+        job_id = await client.upload_file_smart(audio_file, model)
         if not job_id:
             error_msg = f"Upload failed - no job_id returned"
             logger.error(f"{file_name}: {error_msg}")
