@@ -1,0 +1,193 @@
+If you're using Facebook ads and Instagram ads to send people to your website or landing pages, you have to have the Facebook Pixel set up properly. Without it, your campaigns are guaranteed to fail. And in this video, I'm going to show you the quick and easy way to get the Facebook Pixel set up the right way.
+
+So before I walk you through the step-by-step process of setting up the Facebook Pixel or the Metapixel, as we should now call it, I'm going to quickly explain what the Pixel actually is and what it does. So it's effectively a piece of code that you put on your website or a landing page that allows you to track what people do after they click on your Facebook ads, Instagram ads, and come through to your website. Do they actually go ahead and purchase?
+
+Do they actually go ahead and become a lead? And that's really, really important. Firstly, because it allows you as an advertiser to assess the overall success of your campaigns, to assess the return on investment.
+
+We've spent this much money. We've generated this much in sales or these many leads. Is that good for our business?
+
+Can we scale? Should we not? Should we stop advertising?
+
+All those really important questions you can answer with the data that you get from the Pixel. You're also able to do that at a granular level as well. So you could assess different ads.
+
+For example, ad A might produce a better cost per conversion than ad B. Therefore, you want to scale ad A, you want to turn off ad B, et cetera, et cetera. But it also allows Meta to optimize your campaigns as well.
+
+And Meta's machine learning process is very, very powerful. When you set up a campaign, you select a campaign objective, you select a performance goal, and you effectively say to Meta, look, this is what I want. This is what I want the campaign to get me.
+
+I want it to get me purchases. I want it to get me leads. If the Pixel isn't installed, then Meta can't, they don't know what a purchase or what a lead actually looks like.
+
+They need that data to be able to assess, this is what it looks like, therefore we can get more of those. And they can use all the various data points that they have. How many ad impressions was required for this person to go ahead and purchase?
+
+What time of day did they purchase? Is this person 42 or 38 or 26? All those little data points they can use to improve the campaign.
+
+So do not underestimate the importance of getting the Pixel installed and set up properly. Without it, your campaigns are just not going to do anywhere near as well as they could do with it installed. And it's actually relatively quick and easy to set up when you know how.
+
+So I'm going to show you exactly how we go ahead and do that right now. So I'm in an example Facebook ad account. I'm in ads manager.
+
+And to set up the Pixel, I want you to first go ahead and click on the studio line, all tools. And then we want to go to events manager. So it may well be up here in your shortcuts like it is for me, or it could be down in this manage business section.
+
+But either way, you want to click on events manager and then come through to that section. That's where we can set up the Pixel. Now, as my screen loads, what you're about to see might be a bit different from what you can see on my screen, because if you don't already have a Pixel set up, you're going to see different stuff.
+
+We've got a Pixel set up because this is an example ad account. We use it for demonstration purposes. So don't worry if what you see is a little bit different as we go through this whole process.
+
+Once you get here, I want you to go ahead and click on data sources. Okay. Now there's a good chance that you may already have a Pixel set up.
+
+If you do, you'll see something that looks a little bit similar to this, perhaps without the data, if you haven't actually got it installed on your website and generating information. But I want you to do at this stage, if you have a Pixel set up is find the Pixel ID. So on this page, we've got it here in data set ID.
+
+We've also got it underneath the name of the Pixel over here on the left. So if you do have a Pixel, whether or not you've got data in this middle section or not, just go ahead and copy that ID for now. If you don't have a Pixel set up in here, just go ahead and click on this green and create button.
+
+And then you'll see that there's an option to create another Pixel. I'm not going to do that now because we don't need another Pixel for this example ad account. We've already got one, but it's very straightforward to actually get the Pixel created if you don't already have one.
+
+Maybe we'll just ask you for a bit of information about your business, simple stuff, supply that, follow through the process. You'll get a Pixel and you'll get a Pixel ID, which is what we need. Now to demonstrate this initially, I'm going to show you how to set this up on a WordPress website.
+
+I know that lots of people watching my content will be using WordPress websites. A lot of people were using other types of websites and I'm going to talk about those in a minute. So we'll start with WordPress and then we will move on because the setup is different depending on the type of website that you have.
+
+Okay. So if you do have a WordPress website, go ahead and log into the admin dashboard and then go into plugins like I am here. And then we need to add in a new plugin.
+
+I'm an example website, by the way, here to demonstrate this. And we have that for demonstration purposes, all sorts of warnings. Don't worry about those because we don't keep it super up to date.
+
+What I want you to do is just go ahead and add in meta into the search file in add new. And then what we are after is, here we go, meta pixel for WordPress. So just go ahead and click on install now.
+
+And that's likely to take a second. And then once it's been installed, we just want to click on activate. And then once the plugin is activated, I'm just going to scroll down here, meta pixel for WordPress.
+
+I'm going to go ahead and click on settings. And then we can see here, it says connect your business to Facebook powerful tools. I'm going to go ahead and click on get started.
+
+Now what we need to do is make sure that you select your Facebook profile and log in as such. Then you need to grant the permission between the WordPress app and Facebook as I've got here. So just click on next.
+
+And then you get into this section here and you just need to make sure that you've got all the settings correct, right? So you've got the right business manager and you've got the right Facebook page. You can connect to the correct Instagram account if that's applicable, or you can simply skip connecting to Instagram.
+
+Then you want to make sure that you've got the right ad account selected. Very important. Make sure you've got the right ad account selected.
+
+Click next. And then obviously you want to make sure that you've got the right pixel, the ID that you literally just copied, you made a note of, and we talked about in the previous step. And as you can see, we have access to an enormous amount of ad accounts.
+
+So there are tons and tons and tons, but we want to find the right one. Make sure we select that. Click next.
+
+And then we just have a quick check to make sure that you've got right business manager, right Facebook page, right Instagram profile, right ad account, right pixel ID, automatic advanced matching. I would definitely recommend turning that on. That just basically provides more accurate information to your, within your ad account, which is definitely something that you want.
+
+And then you want to go ahead and click next. And then this is just confirming that WordPress has the permission to do all the stuff and get the data between meta and pass them back and forth that you need. Okay.
+
+So now just take a second to link. And what this is going to do is this is going to install effectively the base code of the Facebook pixel on your website. We still need to set up conversion events and I'll show you how to do that in a second.
+
+Okay. So we're all done with that. Just follow through the process, click done.
+
+And we've got the base set up there, which is great. And that's set up on our WordPress website. So you can see that we've got connection pending in here.
+
+That would just take a minute to refresh. And then once it does, you just want to confirm here that we do trust this website. We've set up the meta pixel.
+
+So we're going to go ahead, tick that and click confirm there. And then we should have this connection all set up nicely. Okay.
+
+So as I said, that's now the base pixel installed across our website. So if people visit various pages that can be tracked, you can set up custom audiences of people to visit your website and then retarget those people. That's all set up nicely.
+
+But we need to set up specific conversion events. So we need to be able to, we need meta to not know that someone's arrived at our website, but also have they taken the action we want to take? Have they gone ahead and made a purchase?
+
+Have they become a lead? Have they ticked those boxes that we want them to tick? And we need to set this up so that meta knows, aha, if they reach this thank you page, that means they've purchased.
+
+If they've reached this thanks for inquiring page, they've become a lead. All that sort of stuff. I'll show you how to do that now.
+
+So we've got that set up in WordPress. Let's go ahead and jump back into our Facebook ad account within events manager. Okay.
+
+So we can see here that in this example, there's some event activity. These are just page views and things along those lines, because it's an example website and underneath we've got this ad events section. So if we go ahead and click on this.
+
+Now there are a few different options here and there's lots of different things that you can sort of go through and go down the rabbit hole. I want to keep this relatively simple and show you the things that are going to get you 95% of where you need to be for 10%, 5% of the effort. Okay.
+
+To set up that conversion event, go ahead and click on this ad event section. I'm just going to go through the integration just to skip past some stuff. Go ahead and click on meta pixel and then click setup.
+
+We don't need to manually add the code. This is talking about the base stuff here. We've already done that with that plugin.
+
+That's the easy way to do it. What we want is this event setup tool. So I'm going to go ahead and click on get started.
+
+Metafide some information around how this works. So this is what I talked about with the conversion events. This is how we let Meta know, okay, this is a purchase.
+
+This is a lead, all that really important stuff. So what I'm going to go ahead and do is click on open event setup tool, and then we're going to enter in a website URL. So for example, if we were to track this on my website, so our website, our agency's website is heathmedia.co.uk.
+
+So we could have a page that is heathmedia.co.uk forward slash thanks. And that could be where everyone is redirected after they go ahead and book a free call with us, for example. So go ahead and put in the destination URL where you want a conversion to be triggered.
+
+This could be a thank you, a confirmation page of a purchase. It could be a thank you page for becoming a lead. Depending on what you want to track, it might vary, but just where they're sent to after they take an important action that you want to get as many of as possible and that you want your campaign to optimize for and Meta's machine learning and AI process to optimize for, okay?
+
+So I'm going to go ahead and click on open website with this URL. Okay, so that should open up another tab in your browser and take you through to the page that you entered in the specific URL for. Now, this is just a 404 error because it's not a real page that I've used.
+
+I'm just using this for demonstration purposes. And you can see we've got no events on this page, but we do have the base Facebook pixel setup and that's why it's allowing us to do this. Now, what we can do here is we can add events.
+
+So for example, we could track a button. So you could track a conversion event to occur if someone clicks on a button, which may make sense depending on your page, or we could simply track a URL, which is usually the option I go for. Okay, so here we click on track a URL, select the events you'd like to track.
+
+So for example, this could be lead in our business. You could have different options. So for example, anytime that this URL, so heathmedia.co.uk forward slash thanks, and this would be the place we'd send people to after they go ahead and become a lead.
+
+We've got a different setup, which is why there's a 404 page, but this is for demonstration purposes. It might vary depending on how your website's set up. We want a lead to be triggered.
+
+We can select not include a value. This is just how valuable are the leads, and you could change that if you wanted to. I'm not going to now, but sometimes people would want to be able to do that.
+
+And then I'm going to go ahead and click confirm. Okay, and now that conversion event is set up so that anyone that comes to this page is triggered as a lead. And then if we create a Facebook ad campaign that is optimized to try and get us leads, then both we can see in our Facebook ad campaign how many leads have been generated, what was the cost per lead, and we can do that by ad, by different ad set, if you're testing targeting options, all that sort of stuff.
+
+It also allows meta to optimize, and we talked about how important that was right at the beginning. Now, this is just one example of a conversion event. You might have more conversion events, or you might have more URLs you need to set this up for.
+
+Take the time to go through and really get all of this set up because it is essential to getting your Facebook ad campaigns to work properly. Then once you've got that set up, you can come back here into events manager and check that it's actually set up properly and the data is being received. So for example, this is an example ad account, as we've already discussed, an example pixel, we can see that the page view is nice and active.
+
+There's been 175 of those page views triggered on this example website, which makes sense because we just use it for demonstration purposes. There's no active traffic going there. It's just sort of us playing around with things.
+
+So that makes sense. There was one repurchase recorded 19 days ago. Again, that's not a real purchase.
+
+We're just testing around with things. And you'll see that it says there's a yellow saying no recent activity, but the conversion event purchase is actually set up. We've literally just set up leads.
+
+So nothing's going to come through unless someone actually triggers that and it takes a little bit of time. So yeah, once you've got all this set up, come back in a day or so and just make sure that the data that you are seeing within here, within this window matches what you can see through perhaps other tracking. If you've got a Google analytics setup or something, it doesn't need to be exact, but it wants to be similar.
+
+And that way you'll know that you've got this all set up correctly and you can move on. Now that's how you go ahead and set it up for WordPress. And the process is somewhat similar for other types of websites as well.
+
+So I'm just going to quickly show you like how you would go about doing that. If we go ahead and go back into add events and then we click on add new integration, and then we can click on Metapixel once more and set up. Then if you've got another type of website, a Shopify website, a WooCommerce website, there are tons of different options depending on your business.
+
+What I strongly recommend to you is you go ahead and select use partner integration. If I click get started on this, then we can see there are tons of options depending on what website you've got, where you want to install the code. If you've got Kajabi, for example, and want to install it there.
+
+Now I'm obviously not going to go through every single one here. It would be a five hour long video, but just click on the one that applies. You'll have to log in, you'll have to provide a bit of information, and then you'll be able to set up the integration and it should be all quite straightforward.
+
+And then once you've done that, you can follow the exact same process we just did with the WordPress example, get those conversion events set up if they aren't automatically set up for you. Like for example, if you set up your Facebook pixel on a Shopify store, all the conversion events were set up for you automatically. The add to carts, purchase, all that sort of stuff.
+
+And there are other examples where that happens as well. But just make sure those are all set up properly. I'm going to go through each individual one, and then you can go ahead and do it.
+
+If your website type isn't here, you go into the partner integration thinking, well, the website I use isn't actually on here. I need to go ahead and manually add the code. I can't use like a WordPress plugin or the partner integration.
+
+My advice at that point is that if you're really technical, you'll probably be able to work it out without my help. If you're not really technical, just go and hire someone on Fiverr Upwork for a little bit of money to go ahead and get that set up for you. Because it's, to be honest, too technical.
+
+I'm not a coder. I don't understand the specific details of these things. Once it goes into the code level beyond the sort of partner integrations and the WordPress plugins and things like that.
+
+So just go ahead and do that. It doesn't cost much. And you'll probably save yourself a ton of headache if you're not technical and don't know how to set this up quite relatively easy yourself.
+
+Okay. Very quickly, I've got some really exciting news. I've launched a new mentorship program to help you explode your business revenue and profits through paid ads and marketing.
+
+Now in this mentorship program, myself and my team will mentor you daily, literally every single working day. And because of that, spots are very limited. So if you're interested, you can click on a link in the video description below and book a call with one of my team members who can explain everything about the mentorship program and how it works.
+
+I'm really, really excited about this. And I hope to be working with you and mentoring you very soon. Okay.
+
+So the other thing I'd recommend that you do to check that your pixel is set up properly and installed properly and you're getting the right data. And you can also use this by the way to check if competitors are doing the same thing and if they're using the Facebook pixel, if they're advertising a meta. So it's a really useful tool.
+
+It's something called the Meta Pixel Helper Google Chrome extension. So I've literally just searched Meta Pixel Helper in Google. And if you click on here, obviously you're going to be using the Google Chrome browser to be able to use this, but you can just go ahead and install this.
+
+Something I'd recommend that you do. You can see I've already got it installed. Hence it's saying I'm removed from Chrome.
+
+And then you can use that to go through to URLs on your website and see if everything's set up properly. So here's an example of an actual thank you page on our website when someone books in a free call. And we can see that up here, we've got this Meta Pixel Helper and we can see that we've got the base code.
+
+You know, the page view has been triggered by coming through to here, but we've also got schedule, which is the conversion event we're using to track people who schedule calls with us to find out more about our services and mentorship program and things along those lines. Okay. So this is a good way of testing it.
+
+You want the green ticks. Obviously that means the data is coming through nicely, but as I said, you could go onto any website and the Meta Pixel Helper will show you, is there a code, is there a base code installed on here? Are there any conversion events being triggered?
+
+And that's useful information to check your own stuff, but also depends. You see what, what competitors are doing. That's another thing that I would recommend you go ahead and do and have a look at to make sure that everything's working properly.
+
+Because once you've got this set up and it's working properly, you shouldn't really have to worry about it. Again, it's incredibly important, but you take a bit of time to get it all right. And then from then on, you should be able to focus on the other things like your offer, your ad creative and that sort of stuff, knowing that you've got good data coming through into your Facebook ad account.
+
+Now, I should quickly mention there were some other steps that you used to have to do when it came to getting the Meta Pixel set up. So you used to have to verify your domain. And then you also used to have to set up your conversion events, create a priority list in aggregated event measurement.
+
+Quite difficult to say. You don't have to do any of that anymore. Meta has, those were things that were introduced after iOS 14.5 was introduced almost three years ago at this point.
+
+And we had to do this extra stuff, but Meta basically has found a way to work around that. You don't have to do those things anymore. I still recommend you verify your domain, but it's not essential.
+
+So I'm not going to demonstrate it here. I've got other videos that cover that. And you don't need to worry about AEM aggregated event measurement.
+
+That's a tool that's gone. We don't have to do it, which is great news for us. Facebook advertisers makes things a little bit easier.
+
+Getting the Facebook Pixel set up is great. And an essential step. But if you want great results on Facebook ads, you need to make sure that everything else in your Facebook ad campaigns is set up the right way as well.
+
+I'll show you exactly how to do that in this video right here. In that video, I provide a full walkthrough of a Facebook ad campaign creation from the beginning. So you can follow along and make sure you get it right.
+
+Alright. Not so an annoying weapon. Through my Facebook.
+
+Yeah. Here we go. The it day?
+
+It's just a good thing to follow with us. We read you go home about a podcast podcast podcast. Yeah.

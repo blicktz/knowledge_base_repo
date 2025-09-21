@@ -1,0 +1,131 @@
+Hi guys, it's Ben Heath from Lead Guru and in this video I'm going to talk about the issue of Facebook ads over reporting results. A lot of Facebook advertisers are seeing too many conversions, too many results show up in their Facebook ad account. They know that that's not accurate, it's not realistic and they're wanting to fix it.
+
+And it's very important that you do fix it if you have got over reporting Facebook ads because if there's too many conversions, too many results in your Facebook ad account, that's going to make it very, very difficult for you to know what's right and what's wrong and be able to optimise your campaigns based off of that, it's also going to make it almost impossible for Facebook to optimise your campaigns properly. So if you have got too many conversions, if you are seeing an over reporting of results in your Facebook ad account, very, very important you get it fixed. That's what I'm going to show you how to do.
+
+In fact, we've identified three potential reasons why you may be seeing too many results in your Facebook ad account and each one's got a fix that we're going to go through in this video. Before we get into it, I just want to very quickly ask you to smash that like button. That really helps me out, it's much appreciated.
+
+And of course, subscribe to my channel if you haven't done so already. I'm releasing Facebook ads videos just like this all the time at the moment and I'm covering lots of potential issues. And if you're running Facebook ad campaigns for your business, it's very important that you're aware of issues like over reporting and that you're able to either fix them when they come up or sidestep them, avoid them in the first place.
+
+My channel, the videos I produce are absolutely designed to help you do that. So make sure you subscribe, you'll see my next videos and yeah, hopefully help prevent some big issues and allow you to keep running Facebook ad campaigns successfully for your business. Anyway, let's get into the topic of this video over reporting.
+
+So what I've done is I've just brought up a example. Well, it's a campaign that we ran recently for what, six weeks, something like that. It's a lead magnet campaign where we're just testing out a bunch of things.
+
+You can see the cost per lead was roughly two pounds on average. And you can see obviously the results fluctuate, they go up and down, up and down. But let's take the beginning of this campaign.
+
+So day one, we launched it, it generated 41 leads, website leads. Day two, 33, day three, 23, day four, 30 and on and on. And what often the way people identify that their campaigns are over reporting is they will take a look at this data here.
+
+This is in Facebook charts, by the way, if you're not familiar with this view, it's quite easy to see. And they will then take a look at their Google Analytics data and see that those two numbers don't match up. Or if you're optimising campaign for purchases, you'll take a look at your Shopify data and go, hang on, Facebook's telling me I've got eight purchases today.
+
+Shopify's telling me I've got four. What's going on there? And perhaps it's how many people have actually filled out your contact form if it's sending people to a website and that's how they're becoming a lead.
+
+And I want to think the first thing that's very important to mention and be clear is that there's always going to be a discrepancy between what Facebook tells you and other data sources. There's never going to be 100% accuracy there. And that's aside from iOS 14 and all that sort of stuff, which we're going to get into later on in this video.
+
+There's always going to be a difference. And you have to accept that as an advertiser. So for me, when we're running campaigns for clients, let's say anything less than a 20% discrepancy between what we can see within Facebook ads and data we can see from other sources, we're not going to worry about.
+
+We think that's an acceptable margin of difference. And we're just going to operate based on the Facebook ads data. Know that it's not 100% accurate, but proceed anyway.
+
+And that 20% can easily be explained by things like attribution. So Google Analytics is a perfect example. Google Analytics uses last attribution.
+
+So Google is going to attribute a conversion to the last thing that that person did, the last interaction they had. Whereas Facebook is going to count the conversion if they feel they've had a hand in that conversion and it falls within the attribution window. So let me give you an example.
+
+Let's say someone clicked on a Facebook ad today or yesterday is probably better. Someone clicked on a Facebook ad yesterday. They went through to your website.
+
+They checked it out. Didn't do anything. And they did that on their phone.
+
+Then this morning, they, on their laptop, remembered the brand name, Googled your business, went straight through to your website via Google and purchased. Now Google Analytics is going to register that as a organic Google purchase because they Googled the business. That's how they found you.
+
+It's on a completely different device. They go through and they purchase. Facebook, if they can, provided you're logged in on both devices, they're going to register that, again, provided they can track you, more on that later on, as having had an impact on, they showed an ad to you.
+
+You got a click. You purchased. Facebook is going to say they generated a purchase there.
+
+So you can see how Google is not going to attribute that purchase to Facebook, but Facebook is going to say, we had a big hand in that purchase. We're counting that as a conversion for us. So those sorts of things is why there's always going to be a discrepancy.
+
+And you can't say that, in that case, Facebook is wrong, because, yes, they had a big part to pay in that conversion. So issue number one is just a natural difference between Facebook and other data sources. Anything less than 20%, you know, consistently over, let's say, a 30-day time period, you're not going to worry about.
+
+The fix is to just ignore it and move on, as difficult as that may be. So that's issue and fix number one. Issue and fix number two is around model conversions.
+
+Now, this is something that's come in after the iOS 14 update. And I think it's actually this Facebook ads over-reporting results is one of the things that's confused a lot of people because they're thinking, surely I should have less reporting based on the iOS 14 stuff. And in theory, that's true, but that's not what a lot of advertisers are seeing, hence the topic of this video.
+
+And what model conversions means is that basically, when you first launch a Facebook ad campaign, the data that you see is not accurate. Facebook is taking a very educated guess in a lot of cases as to the results that you're generating. So let's say, for example, you've sent 100 clicks to your website.
+
+And Facebook's going to be accurate on that. They know how many clicks people, you know, they've generated because the clicks happened on platform. And they worked out that, okay, Shopify stores like yours on average generate a 3% conversion rate.
+
+Therefore, they pop three conversions into your campaign for now. That's completely model data and it will be more accurate and outdated in the future. Well, that's why so many advertisers, particularly first after you launch a campaign, are seeing things like no actual purchases when they take a look at their, you know, back-end system.
+
+But Facebook's saying there's five. Or you can even have it the other way around, of course. Five purchases when, in your Facebook ad account, when actually you've generated 10.
+
+It's because at the beginning of a campaign, Facebook is taking an educated guess. They are modelling data. So they're modelling data at the beginning.
+
+This is worse at the beginning because we've got a Facebook ads reporting delay. So the data doesn't come in for two or three days. They're more accurate data.
+
+Then they are also, so that happens and that resolves itself after those first few, well, after you've had time to catch up from the reporting delay, if that makes sense. The data becomes more accurate the longer and longer you go in because Facebook fills in the holes as they get more data coming in from the reporting delay. But there's also model data based on the iOS 14 users.
+
+Now, we don't have the same level of reporting accuracy we had on those people. We still, it's not as bad as people were worried about, people made out. We can still see, even if someone opts out, one conversion event, your highest priority conversion event through aggregated event measurement.
+
+So let's say, for example, someone purchases, you'll still see that show up in your Facebook ad account, even if they're an iOS 14 user, provided you have purchased as your highest priority event. I know that gets really complicated. I'll include a link in the video description below to a video all about Facebook pixel setup and all that sort of stuff, because I think you're going to maybe need to tie this into some of that stuff.
+
+But Facebook has a lot of data holes around iOS 14 users, and they are going to model the data. And that could be another issue. Now, what we tend to find is that if this is what you're seeing, if your Facebook ads are overreporting because Facebook is doing a lot of educated guesses, which is basically what model data is, how do you fix that?
+
+The first thing is to take a longer time horizon when you're assessing your results. If you've got a lot of model data going on in your ad account, you will see that your results are most inaccurate when you look at short time horizons and when a campaign is relatively new. If you go, OK, well, I know that I'm overreporting because of this, but does my data look more accurate over a 30-day period?
+
+Yes, it most likely does. OK, so that's definitely something to be aware of. And that's the first partial fix that if you're getting overreporting from model data is just to expand the time horizons.
+
+OK, actually, the data is more accurate over a 30-day period or over a 14-day period. We're within our 20% margin for error. Fine, let's crack on.
+
+The other thing to do is to change your attribution setting from, say, a one-day click to a seven-day click or a seven-day click and one-day view. There is less model data with the seven-day click attribution setting than the one-day click attribution setting. And you may well find that if you believe that you are seeing Facebook ads results being overreported because you've got lots of model data, and you will have lots of model data if you advertise it to a lot of iOS 14 users.
+
+Some businesses advertise more to iOS users than others. Or if you're using one-day click because Facebook has to make a lot of guesses around one-day click attribution setting. I'll include a link in the description below to another video all about attribution setting, how you change it, and which one to go with, and all that sort of stuff.
+
+And Facebook probably has some information around here. I haven't checked, but there's probably some attribution stuff. Yeah, there we go.
+
+About attribution models. They'll be talking about in this document, which you could obviously come in and see about Facebook's modelled conversions. So that's the major fix for this, is if you've got overreporting results because of modelled data, change your attribution settings to seven-day click or seven-day click on one-day view.
+
+Basically make those as long as possible. And also take a longer time, use a longer time window when you're assessing results and making adjustments. That's how you fix that issue.
+
+And then the third, final, and most complicated, and this is something that's more easy to identify if you're having this as an issue, is when deduplication goes wrong. So let me explain what it is first and explain why it might be going wrong. If you have the Facebook Pixel and Conversions API installed, which is what I would recommend you do, it's better to have both.
+
+People often ask which one should I use. No, both. One of the issues you're going to run into is duplicate events being reported.
+
+And you can see Facebook actually have some more information in here. Okay. If you connect website activity using both the Pixel and Conversions API, which is what I recommend, we may receive the same events from the browser and the server.
+
+Pixel is browser, Conversions API is server. If we know that the events are the same and therefore redundant, we can keep one and discard the rest. This is called deduplication.
+
+Now, obviously, if you've got two sources of conversions, both reporting a conversion, it will be very easy for you to have double reporting in your Facebook ad account because the Pixel says you've got a conversion. The Conversions API says you've got a conversion, therefore two is popping up in your ad account. That's not what you want.
+
+Now, Facebook with deduplication is supposed to be able to work out that those are actually the same conversion being reported from two separate sources. They discard one and therefore you have accurate data within your Facebook ad account. Now, this process of deduplication, which is basically getting rid of the duplicate, often goes wrong.
+
+And we see this happen all the time. So if you are seeing that you have not only over-reported Facebook ad results, but that it's roughly two times. So whatever's being shown in your Facebook ad account is roughly double what you know to actually be true, well, then you can be very confident.
+
+Well, you can be pretty confident or at least test the theory that you're, obviously, of course, if you've got Facebook Pixel and Conversions API installed, both of them installed as well, that deduplication is not working properly. So if you've got Facebook Pixel, Conversions API installed, you're seeing about twice as many conversions in your ad account as is realistic, then your deduplication process is not working properly. And the simple and most effective fix we've had is, we'll probably talk about it later down there, is very simply to try uninstalling and reinstalling the Facebook Pixel and try uninstalling or setting up and then reinstalling or setting up the Conversions API.
+
+You may need to do one, you may need to do both, but that just sort of seems to, I don't know, give it another run at getting set up properly. It's kind of like when your computer's not working properly, you turn it off, you turn it back on again, it all works properly. But this is quite an issue.
+
+I've seen lots of comments, people saying, I'm getting twice as many conversions as is real. This is why. You've got Conversions API set up, you've got Facebook Pixel set up, and the duplicates are not being removed properly, even though they should be.
+
+So basically, try the Facebook ads tracking equivalent of turning your computer off and turning it back on again. Which I show you exactly how to do, I said, link in the description from the video all about how to set up the Facebook Pixel and all that sort of stuff, right? So go through that if you're confused about how to go about doing that.
+
+And that's the fix. So three potential issues. One, you're going to basically ignore, there's nothing you can do about it, natural discrepancy.
+
+The other one, change your attribution settings, analyse things over a longer time period. And then the third, the fix is to uninstall and reinstall Facebook Pixel and Conversions API to make sure that the deduplication process is working properly. Okay, hope that's been useful.
+
+Before you go, a couple of things I want to quickly mention. The first is a free webinar I've created called One Facebook Ads Technique to Supercharge Your Results. And this webinar really focuses on what I think is the single most important Facebook advertising technique that you want to get right if you want to have massive success on the platform.
+
+I go through it all in a lot of detail. I'd strongly recommend you check it out. Link's in the description, completely free to watch it.
+
+It's about 50, 60 minutes long. And it really goes through this process. And as I said, I think you're going to find it very, very useful, very helpful to go through that if you're looking for better Facebook advertising results.
+
+Other thing I want to mention is YouTube channel membership. So you can now become a member of my YouTube channel. And the way it works is that members get added perks, the first of which being priority reply to comments.
+
+So as my channel has grown, it's become impossible for me to answer every single comment like I used to on my videos. So I'm prioritizing member comments. So if you've got questions for me around any Facebook advertising related stuff, if you become a member, it's a small monthly fee, if you become a member, then I effectively guarantee that I'll answer your, I mean, I may miss one from time to time, of course.
+
+But I'm going to do my absolute best to make sure I answer every single member comment. And then of course, with time I have left available, I will still be answering some other comments from regular subscribers to my YouTube channel, but members are going to get priority. You also get to have your say in the content I create if you become a member.
+
+I've got member only polls asking, would you like me to create topics around this stuff or this stuff or this stuff? You can have a say in that. And you can help support my YouTube channel, which is some, if it's something you want to do, that'd be much appreciated.
+
+I put a lot of time and effort into creating this, this free content. Okay, if you found this video useful, thumbs up, always helpful guys. I said subscribe to my channel.
+
+This is just the sort of stuff that you may need to know, depending on the issues you may run into as a Facebook advertiser. So I strongly recommend you subscribe. You will see as I release videos on all the changes that are happening, you'll see them pop up that way.
+
+And yeah, comment below, whether you become a member or not, comment below to let me know what you think of this. Comment below with any questions you've got. I do my best to answer them and I will talk to you soon.
+
+Thanks a lot guys. Bye for now.

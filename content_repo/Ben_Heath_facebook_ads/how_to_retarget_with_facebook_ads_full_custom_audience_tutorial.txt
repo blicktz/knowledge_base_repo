@@ -1,0 +1,291 @@
+In this video, I'm going to show you how to retarget with Facebook ads and Instagram ads. If you're running any form of meta ad, whether it's a Facebook ad, Instagram ad, etc., you absolutely want to make sure that you are retargeting. That's where you're likely to see your best results, your best return on investment.
+
+Likewise, if you're doing any other form of online marketing, whether it's Google ads or you get organic traffic, it makes a lot of sense to add another platform like Facebook and Instagram where you can reach those potential prospects, put your products and services in front of those people, and you are more likely to generate sales and leads as a result. In this video, I'm going to walk you through the entire process, show you exactly how to set up retargeting audiences within a meta ad account, how to then put that into a campaign that you can run ads on Facebook and Instagram and reach those really valuable people. Before we get into that, I just want to very quickly describe what retargeting actually is, because some of you may not be familiar with the term.
+
+Retargeting is simply putting your ads in front of people that have already interacted with your business before. Let's say, for example, people visit your website, or they join your email list, or they follow you on Instagram, you can put ads in front of those people as many times as you would like. That's what a retargeting campaign is.
+
+And putting ads in front of those people typically delivers a lot better results than putting ads in front of people that are cold, that haven't interacted with your business before. Because if someone's interacted with your business, they've demonstrated that they are more likely to be interested in your products and services. Therefore, those ads are more likely to generate leads and sales.
+
+Okay? So that's what retargeting is. Let's go through the steps.
+
+Now, I'm in an example meta ad account here. If you don't have a meta ad account already set up, that's the first step. I've got a link in the video description below.
+
+You can go ahead and check that out. And that will walk you through the entire process to getting one setup. It's relatively quick and easy to do.
+
+But once you've got your meta ad account set up, or if you've already got one, this is where you want to come. I'm in ads manager right now. First, we need to create our retargeting audiences.
+
+We need to tell meta, these are the groups of people that I want to retarget, that I want to put ads in front of again and again. And you do that by clicking on these three lines up the top here. And then you want to select audiences.
+
+Now audiences up in my shortcuts. If it's not for you, that's fine. You'll be in this managed business menu, be able to find it down on the list there.
+
+Okay? So I'm going to go ahead and select audiences. And then assuming you haven't created any retargeting audiences before, you're going to see a page that looks very similar to this.
+
+If you have created some retargeting audiences, the page is going to look a little bit different, but you can still go through the exact same process that we're going to walk through. Now in order to create a retargeting audience, we need to create what's called a custom audience. That sort of meta speak for what we're looking to do here.
+
+So go ahead and click on this, create a custom audience button. And what we can see from this window that's just popped up is there are lots of different types of custom audiences that we can reach, which is great because different businesses might have different options. So there are two main categories.
+
+There's your sources and there's meta sources. Now your sources refers to people that have interacted with your business outside of meta. So outside of Instagram and outside of Facebook.
+
+So these could be people who've visited your website, people who've interacted with your app, people who've interacted with a catalog of yours, say on a Shopify store, a customer list or an email list, people who've interacted with your business offline. If you, you know, people come into store or that's how they interact with you, then you can retarget those people on Facebook and Instagram as well. Then we've got meta sources, which is all the things that people do within the meta apps, Facebook and Instagram.
+
+So people who've watched videos of yours, interacted with lead forms, if that's a campaign that you've used in the past. Insta experiences, AR experiences, not something that people use a huge amount of yet, but probably will become more popular. On Facebook listings, things like marketplace and stuff like that.
+
+People who've engaged with your Instagram account, people who've engaged with your events, you can set up events on meta, people who've engaged with your Facebook page. And then of course, shopping for people who've interacted with, like if you've got a Facebook shop or something along those lines. So lots of different options.
+
+I'm going to walk you through exactly how to create the most common ones, the ones that we use the most and that most likely you'll be able to use as well. So let's get started with websites. I'm going to go ahead and click on website and then select next.
+
+Now, in order to retarget people that visit your website, you need to have the meta pixel installed on your website, because that's what tells meta, you know, that's what provides them with all the data that they need. So if you haven't already got your meta pixel installed, I'll include another link in the video description below. That'll be a full video tutorial on how to set up the pixel, including all the extra stuff you need to do post iOS 14.
+
+There's a few extra steps. It's not that difficult, but once you go through the tutorial, you'll know exactly how to do it. So you need to get that set up.
+
+Assuming you have got that set up, then we can go ahead and create these custom audiences. Now, the default here is all website visitors. That's the event.
+
+But there's a few other options. So all website visitors is fairly self-explanatory. That's going to be a custom audience of everyone who's visited our website.
+
+But we could, for example, choose to only create a custom audience out of the people that have spent the most time on our website. So we do that by selecting visitors by time spent. And we can select the percentile 25, 10 or 5%.
+
+So we could go to be something really quite specific, the people who have spent the most time on our website, just the top 5% of those and retarget those, or we can keep it more broad. We can also retarget people who visited specific web pages, select this option here. And you simply do this, you can see once I've selected this, we've got a different window down here, we could have URL contains.
+
+So for example, if I just enter in hats, let's say that we had a product range on our website all to do with hats. And we wanted to create a custom audience out of anyone who had visited a page on our website that has hat within the URL. Now for this to work, you'd have to structure your URLs correctly to include the word hats or hat, of course.
+
+And then we can then create that custom audience and just put ads in front of them to do with our hat range, let's say. We could then create a different custom audience out of everyone who had been on a page on our website to do with our shoe range. So we could come in here and say URL, delete that out, contains shoes.
+
+Again, provided that shoes was actually in our URL. We can also structure this slightly differently. Instead of contains, we could go with equals.
+
+So if there was a URL that was, you'd want to enter in the exact URL in here of whatever page. So if we had like that, let's take our example, as a Facebook ads agency, we offer services, we also offer consultancy. So we can separate that out, but it's just the one main page and a website for each.
+
+So we could just go in and pop in the exact URL of services, the exact URL of consultancy in here, separate out those custom audiences, and then retarget accordingly. By putting more specific offers in front of more specific audiences, you often see better results. Now there are some more advanced features we can take advantage of when creating a custom audience like this.
+
+We can further refine by frequency, maybe even device if you want to. We can include more people, so other groupings of people. We can exclude certain groups.
+
+So let's say you had a multi-step sales funnel and we had people that, for example, sign up for a lead magnet, then they book a call, and then they purchase. Those are the three steps we want them to take. Or for example, we could create a custom audience out of people that have signed up for our lead magnet by, let's say, they've made it through to the thank you page after you sign up for the lead magnet, but have not yet booked a call.
+
+So there you would come in and exclude people, and you could add in another section here, excluding people who visited the specific webpage, and that page could be the one, the thank you page after they book a call. So if you had it, for example, a thank you page where it's like, thank you, call booked as your URL, just to help explain. So you would exclude those people because you don't want to say, go ahead and book a call with my team to people that have already booked a call.
+
+That wouldn't make any sense. So you can get really quite clever and sophisticated with that. That's just a quick little demonstration of how you might set this up, but I'm going to delete that out because I think most people should start with all website visitors and keep it really nice and simple.
+
+Meta is very good at working out the actions that people have taken and what people are likely to do if you've got your campaign set up correctly. So by going with all website visitors, you cast the net as wide as possible. You take advantage of everyone who has visited your website, or at least everyone that's been tracked successfully.
+
+And that's going to give you usually the best results. Yes, you could exclude purchases. Yes, you could do what I just demonstrated and exclude people that have taken the next step on the sales funnel.
+
+Often Meta is going to work that out. So if you're a more advanced advertiser, absolutely use the advanced tools. If you're sort of beginner, intermediate level, just go with all website visitors and stick to that.
+
+Okay. So the next thing we need to talk about is retention. And this applies to an all website visitor customer audience.
+
+It also applies to some of the more specific customer audiences that we just quickly covered. The default is 30 days, but usually for most businesses, I like to go with the maximum that is 180 days. Now retention refers to how long does someone stay in this customer audience for?
+
+So if someone visits your website today, for how many days are they going to remain in that customer audience before they drop out? The shorter the time period, the smaller your customer audience is going to be. Now the argument is that the shorter the time period, the warmer some of your prospects are going to be because someone who visited three days ago is warmer than someone who visited two months ago.
+
+That's true. And therefore a lot of people would advocate for just creating say seven day customer audiences. You're only retargeting people that visited within the last seven days.
+
+Here's the problem with that. Meta knows who visited within the last seven days. They know who visited yesterday, et cetera, et cetera.
+
+So by going with 180 days, you capture all those people that have just visited, but you also get the people that visited a while ago that perhaps with a little bit of encouragement could be taken to the point where they're ready to become a lead or sale. Perhaps it wasn't quite right for them then, but it is now. And with a reminder, putting an ad in front of them, you're going to get that business.
+
+So I really like opening this up and trusting Meta with this, knowing they're going to primarily focus on people that have visited recently, but why miss out on someone that might be a really good prospect that visited three months ago, four months ago? So the longest you can go here is 180 and that's what I go for. Again, we can include, we can exclude, but we've already covered that.
+
+I would normally, for most people, particularly beginner and intermediate advertisers, you want to go with this setup. Audience name, let's just call these audiences something that's going to make sense to us when we come back in and check. So I would normally call this all of a set visitors 180.
+
+I wouldn't normally bother with a description unless you've got lots of different options and want to break them out. And then we can go ahead and create this. And we've got some information about this custom audience on the right hand side.
+
+Obviously we've got the audience name. Once you start using it, you will have data in here. Obviously we're not going to have anything in there yet.
+
+Estimated audience size would be interesting. So it takes a little bit of time for this data to come through. Here it says below a thousand.
+
+That's to be expected because this is an example ad account. Our pics were set up on like an example website that doesn't get much traffic that we just use for demonstration purposes. So that's exactly what I expect, but you should get an idea usually once it's had a bit of time to populate of how big this audience is going to be.
+
+Okay. So let's go ahead and create another type of custom audience. So if we click on create audience and custom audience, and the next one I want to focus on is customer list.
+
+Go ahead and select next. Now we can use this feature to upload customer lists. So people who have bought from us before, but we can also do it with other lists that we have.
+
+Things like our email list that's likely to contain a lot more people. And this is something that we do all the time. Now there's a few different ways to go about doing this.
+
+Okay. If you've got a MailChimp account and that's how you store your information, it's very, very straightforward. You just go ahead and select import from MailChimp.
+
+Then I'm not going to go through the process here, but it's very straightforward. You just click log into MailChimp, select the audiences that you want, and then click import, wait 20 to 30 minutes. Boom.
+
+They're in there. Good to go. Very easy.
+
+But if I go back, if you don't have a MailChimp account, you're going to want to import the data. So whatever CRM or email service provider you are using to store information, maybe if you're just using Excel spreadsheets, you should be able to download, export a CSV or TXT file that you can then upload to Meta. And that's how we can put this data into the ad account.
+
+It can then be used to create the retargeting audience and we can retarget those people. So if I'm going to walk you through that process quickly, if I go ahead and click next, we can see that the next question that we asked for is does that column include a customer value? So this wouldn't necessarily apply to say if you're uploading an email list, but if you're uploading a customer list of people who've bought from you previously, is one of the columns going to save value?
+
+Because let's say some people buy in different amounts from a lot of businesses. Maybe someone spent $40 on your store. Someone else spent $300 on your store.
+
+Well, if you include that value column in here, then I'd recommend you go ahead and select yes. Then what'll happen on once you upload that file is Meta is going to ask you which column does this refer to, which is the value column? And you can say, well, it's this one.
+
+It's quite straightforward to do. And what that means is that Meta can then wait your retargeting more heavily towards the people that have spent more. It's quite a clever feature.
+
+So someone who spent $40 last time won't see as many ads as someone who has spent $300 last time, because that's a more valuable person. You'd rather spend your money advertising to them to get them to buy again. Most people are not going to have a value column.
+
+So I'm going to go ahead and select no. And then we just simply upload the file. So if I go ahead and do that.
+
+Okay. So I just quickly selected a file and then uploaded what's called example email list just to demonstrate how this works. Then you want to give this a name.
+
+So example email list to probably delete the other stuff out. That sounds absolutely fine. If you're going to be uploading multiple different lists, you just want to make sure that you name it something that's going to make sense when you review this later on.
+
+So I'm going to go ahead and click next. And then what it's done is it's looked at the data within the file that I've uploaded and it's wanting to match them. Right.
+
+So it's worked out that this column that has been at example.com. I said, this is just an example email list. Is that email?
+
+Yes, that is email. If it was wrong. No, actually, no, that refers to a phone number that refers to a first name.
+
+You can go ahead and select all the various options. You just do that with all the columns available. So that one met has already worked out.
+
+It says one that's action needed. It's worked out that name Ben, it hasn't worked out that that's the first name. So I just come in and click in here and I select first name from the list.
+
+And then we're all good. We've got both columns in there matched. It's just literally got Ben and example, Ben at example, Ben at example.
+
+It's just literally got Ben and Ben at example.com because there's an example email list in there. But now we're good to go. You just go through all the various columns and then you just go ahead and select import and create.
+
+Don't worry about any of this stuff. I'm going to explain more about that later on. Okay.
+
+That might take a minute depending on how big your list is. But then that is our email list ready to go. You can do that with an email list.
+
+You can do that with a customer list. Any list of customers, prospects, etc. that you have can be uploaded to here and those people can be retargeted.
+
+Let's move on to some other custom audiences. So if we click on create audience, custom audience again, those are by far the two most common off meta sources, your sources, custom audiences that we use. So I'm going to cover those.
+
+I'm not going to cover every single one. Otherwise it'd be a five hour video. Then we're going to move on to some meta sources and cover some of the most common meta source options that we use.
+
+Let's start with video. If you're running any sort of Facebook and Instagram ad campaign that's got video, or if you're putting out videos on either account organically, this is something that you'll be able to use. So we go ahead and select video.
+
+The first thing we need to do is choose the level of engagement people need to have had before they're actually added into our custom audience. So do we want to retarget people that have watched at least three seconds of a video? Maybe that's not enough.
+
+Maybe we'd rather people who have watched 75% of our video and there's lots of options in between. The trade-off here is audience size versus how warm they are. So the more of the video that we need someone to have watched in order for us to be able to say, yes, they can be included in my custom audience, the warmer they'll be, the more likely they are therefore to convert when we retarget them.
+
+But you're narrowing down your potential audience size. And that might not be the best call because someone who's watched say 25% of your video, they're not as warm as someone who's watched 95%. But do you want to miss out on all those people?
+
+Because there'll be, there's a lot of drop off. Not many people make it to 95%, particularly as a bit of a longer video. So there's always a trade-off here and the right decision will depend on how many people you have watched your video.
+
+The more people you've had watched it, the more picky you can be. Also how long your videos are. The longer your videos are, normally the lower the percentage.
+
+You know, if you've been advertising a five minute video, for example, you don't want to set 95%. That retargeting audience is going to be really, really small. So I normally like a compromise of either 25% or what's called a through play, which is 15 seconds, something like that.
+
+It would depend on how long your video is. I'm just going to go ahead and select through play here. But again, you're going to have to do that depending on your specific video.
+
+Retention, the longest you can do here is 365 days. We have a long retention period and I'd absolutely go with that. That's something that I would recommend that you go with.
+
+You want as many people in this audience as possible who have met that criteria. No reason why not to. Audience name.
+
+Right. Video viewers. Let's call this something that's going to make sense.
+
+365. And then we could include 15 seconds as the watch time. And then the most important thing is to choose videos.
+
+So we've selected how much of a video they need to do, but we need to click on here, choose videos. So once you make it to this page, you need to select the videos that people need to have watched in order to be included in your custom audience. And there are a number of different places where you can get those sort of videos from or those video viewers from, I should say.
+
+So obviously video sources, right? So is the videos that you want to retarget the viewers of, are they on your Facebook page? Are they on your Instagram profile?
+
+Is it within an ad campaign? So go ahead and select the various options and then you can go through and select the various videos here. Then you just go down and you tick through the video or videos that you want to include.
+
+Let's say you've got a certain amount of videos on one particular topic. You might want all the videos within that topic to create a custom audience. And then maybe you do a different custom audience for a different topic.
+
+So just go through and select the ones, or you could just go through and select all the videos here. Completely up to you. By the way, I just want to highlight something that happens all the time within meta ad accounts and you need to be aware of.
+
+They're quite buggy. There's often technical issues. For example, all these videos are showing as zero three second video views.
+
+Well, I know that's not true. I have 155,000 Facebook page followers and these videos will get at least in the high hundreds, normally in the low thousands of views. So that's clearly wrong.
+
+They have not got zero three second views. But just to demonstrate that those sorts of things come up, don't panic or think you've done something wrong if something like that is obviously wrong. That's just a bug.
+
+I'm sure if I come back in in a week's time, they'll have fixed it. It'll be fine. But for now, it doesn't work.
+
+Okay, so let's go ahead and select those four. Click confirm. Then we've got our videos selected.
+
+People need to watch 15 seconds. Retention 365. We've given it a name.
+
+If you'd selected a certain categorization of video, like you talk about different topics and you wanted one for each, then just pop that in your name. But I haven't here. So let's go ahead and click create audience.
+
+Okay, so that's our first meta source custom audience that we've created for retargeting. Okay, so let's move on to the next custom audience I want to create. So if we click on create audience and custom audience again, we've done video.
+
+The next one I want to quickly cover is lead form. Now, this is only going to apply to businesses that are using lead forms, which won't be all. And lead forms are a tool that you can use if you want to generate leads on Facebook and Instagram.
+
+I'll include a link in the video description below to another video that shows you exactly how to run a Facebook and Instagram ad campaign using lead forms. It can be very, very effective. So if leads are what you're interested, go ahead and check that out.
+
+But what we can do as well is we can retarget people that have engaged in various different ways with our lead form. So we could retarget anyone who would open the form, we could retarget people who opened but didn't submit. And we could retarget people who opened and submitted, you could see how there would be different use cases for each one of those people who opened but didn't submit, maybe you want to encourage them to submit people who opened and submitted, perhaps actually you want to retarget and get them to go on and purchase, you want to get them to take that next step.
+
+So number of different options, I'm going to select that one for now. Obviously make sure you've got the right Facebook page selected and then you want to select your lead form. I'm not going to have to do it because there aren't lead forms set up on this example ad account but if you had that you would just select from the drop down.
+
+Retention longest here is 90 days. I'd much rather it was 180 but you'll see meta will pop up and say no you can't do it. Give this audience name so we can have lead form engages because we're going with anyone who opened this form, obviously 90.
+
+You still want the longest time period available here. It's something that I'd recommend and then obviously if you had different lead forms you could name your audience so that that made sense. If you're offering different services you'd want wrong retargeting audience for people who interacted with one lead form versus a different one you go ahead and click create.
+
+I'm not going to be able to do that here but that's how you would do it. Okay a couple more custom audiences I want to cover that I think will apply to a lot of people. The first one is Instagram account.
+
+So we go ahead and select this and click next. Then here the first thing to do is make sure that you've got the right Instagram account selected. I've seen people make this mistake particularly if like we have there's access to lots of different Instagram accounts within their their manager account because we have you know 100 plus clients at any one time but make sure you've got the right one selected there.
+
+Then we move on to events. Now there's lots of different types of custom audience we can create from people who have engaged with our Instagram account. So the default and the broadest option is everyone who engaged with this professional account and they provide more detail on what exactly that is.
+
+So we've got people who visited this profile, took an action on a post or ad such as likes, comments, saves, carousel swipes. It's quite low barrier to entry action. Button taps or shares.
+
+Now button taps would include people clicking on the call to action button. It also includes people clicking on the see more button to read the text within say an ad for example. So that's going to include the largest audience that you have available on Instagram and just like with the website visitors that's why I'd recommend that most advertisers start.
+
+Right? If you're an intermediate or beginner level just go with everyone, retarget, allow meta to work out who's most warm, who visits your profile every three days versus someone who visited you know a while ago. Then after that you can get more specific if you want to.
+
+Right? So we can create people who actually have taken the step of becoming a follower which is this option up here. We can go with people who visited your account's profile.
+
+Perhaps they didn't become a follower and you want to help encourage that action or you want to do something else. But you can really quite granular. You can specify that you only want to retarget people who've engaged with a poster and ad or saved a poster and lots of different options.
+
+But for most people let's go with the default here. Retention 365. Nice and long.
+
+Great. I like that. So let's go ahead and call this one Instagram engages 365.
+
+And then we can go ahead and click create audience. And then we can click done. And then we're going to go ahead and click create audience custom audience.
+
+And we're going to do the same as we just did with our Instagram account. But this time with a Facebook page. So make sure you've got the right Facebook page selected.
+
+Then we've got the events. So it's going to look very similar as to what we saw on Instagram with a few bit of difference. So we've got everyone engaged with your page.
+
+Which includes people who visited your page. Took an action on a post or ad. Such as reaction shares.
+
+Comments. Link clicks. Carousel swipes.
+
+Etc. We could again go with people that like or follow our page. We could just go with people who visited the page.
+
+As opposed to that. All of these are very similar to the Instagram one. People have engaged with a post or ad.
+
+People have saved a post or ad. People have clicked on a call to action button. But just like the logic with the Instagram ad account engages.
+
+I'd like to do the same thing with your Facebook page engages. If you are beginner or intermediate level. Advanced people can get more specific if they want to.
+
+Right. So let's call this one Facebook page engages 365. Create audience.
+
+Okay. So these custom audiences that we've created are certainly the most common that we're going to use. And they're going to cover the vast majority of the warm audiences that you may have available to you.
+
+And so these are ones I'd recommend that you focus on. Obviously with lead form engages added in. Not something that we've done here because of the example ad account.
+
+But of course if I just click on create audience custom audience. There are other options. If you've got a catalogue on Shopify.
+
+Definitely look into this one. If you've got an app. Definitely look into this one.
+
+If you're running events. Definitely look into this one. So there are other options.
+
+I'm not going to cover that in this video. As I said it'll be five hours long. But you can go through.
+
+And the same principles of what I've talked you through on these other options certainly apply. Nice large custom audiences. Go with big retargeting audiences to start with.
+
+Then as you get more advanced. You want to get more specific. Then you can go ahead and do it.
+
+Right. So I'm going to go ahead and close these down. Now there are a couple of ways we can use these custom audiences.
+
+I'm going to walk you through those in a second and get these all added into your ad campaigns. Before I do I just want to quickly mention our done for you Facebook and Instagram advertising services. So if you'd like my company to create manage and optimize your Facebook Instagram ad campaigns for you.
+
+That's a service that we offer. If you've been interested in finding out more you can click on the link in the video description below. That'll take you to a page on our website and you can book in a free call directly with one of my team members.
+
+Now we do have a 3k per month minimum budget requirement. So please don't book a call unless you meet that as we won't be able to work with you yet. But if you do go ahead and book a call and hopefully we get a chance to work together.
+
+So now that we've got our custom audiences as I said there's a couple of things that we can do with these. So I'm going to show you how to set them up in an account in a second. But one thing that we can do that and I want to quickly mention whilst we're here is we can use these custom audiences to create what's called a lookalike audience.
+
+So let's take our all website visitors audience right. We want to directly put ads in front of those people on Facebook and Instagram to convince them to come back and purchase become a lead etc. But we can also say to Meta you know those people that are visiting my website that's a really good data set.
+
+I want you to find people that are very similar to the people that have visited my website and I want to advertise to them as well. Because if for example Meta can crunch the data within that custom audience and work out that people that are 42 and male that are interested in X, Y and Z are most likely to purchase they can then create a custom audience that have of people that are very similar to that group that are similar age you know similar interests all that sort of stuff and they can advertise to them that's what's called a lookalike audience and they can provide really really good results if used well. Now the best custom audience to create a lookalike audience from is usually customers.
+
+So you're saying to Meta you know these people that have bought from me can you please crunch the data on these and work out their common traits and find me a group of people that are very similar to them and let's put ads in front of them. But we haven't set that one up in here we'll do website visitors because you could actually use that as well. So we can select all website visitors we click on these three little dots here and we can select create lookalike and then you just simply go through the steps.
+
+Now I've got a whole video on lookalike audiences and all the steps and everything so you can find again a link in the video description below and where you can go ahead and watch that full tutorial and go through it. I just wanted to quickly mention it here in case you were unfamiliar with the process or didn't know about that option because it is a great option. Now the next thing we need to do is actually put these custom audiences into an ad campaign.
+
+We've created the audiences we need to set that up. So we click on these three little lines and jump back to ads manager. Okay and because this is an example ad account we haven't got anything in here but we're going to go ahead and click on create and then we're going to walk we're going to just quickly create an example Facebook ad campaign.
+
+We don't need to I'm not going to sort of go through all the settings here I'm just going to show you the custom audience part. I have full tutorials on my channel that walk you through the entire process of campaign creation in case you are interested. So I'm just going to go ahead and select a sales campaign click continue and then from here we're going to jump over to the ad set level because that's where you set your targeting options and then we're going to scroll down as I said we're ignoring all other settings for the purposes of this video and we're coming into this custom audiences section then if we click in here we can see all the custom audiences that we just created so we can go ahead and add in all website visitors and we can now retarget all website visitors which is fantastic that's exactly the whole point of this video and what we want to do with retargeting.
+
+Now there's a few things that we need to mention about this very very important. Firstly I really would like you to deselect advantage custom audience at least whilst you're getting started because this is as you can see is designed to allow you to reach people beyond your custom audience meta says when it is likely to improve performance. No most of the time when we're retargeting we only want to advertise to people that have already visited a website in this case or taken a certain action they're more likely to convert the reason why meta add this in is because if you have a larger audience you're probably going to end up spending more and they make more money it's very self-serving doesn't necessarily help you as an advertiser there are scenarios where this can work well if you're more advanced you know what you're doing you will have a really broad appeal product and you want to add that in but for most advertisers I would deselect this okay that's the first thing second thing I want to mention is that you don't want to narrow down your other criteria when you're retargeting you don't need to get really specific with the age or gender or even add in detail targeting because it'll operate as an and function so let's say someone's visited your website and then you go and add in a detail targeting saying you know I want them to be interested in digital marketing for example add that in right the only people that are going to see our ads are people that have visited in this case my website and are classified as interested in digital marketing now that might sound fine but if they visited my website I don't need this criteria in down here because I know they're already interested in what I have to offer they wouldn't have visited my website otherwise these interest targetings they're not super accurate so you could have people that are in real life if you had a chat with them interest in digital marketing but just aren't categorized as so based on their Facebook and Instagram activity so I would deselect any detailed targeting options leave age nice and open again it's only people that are going to be visited your website they're going to be retargeted doesn't matter what age they are in this scenario okay so you could deselect all that stuff and leave this open because this is going to narrow everything down another thing I want to quickly mention is that most of these custom audiences update automatically which is fantastic so let's take Facebook page engages for example as time goes on people are going to drop off the end of that audience but they're also going to be added in as you know those 365 days sort of move a day forward every day if that makes sense okay so it's not like every year or every few days you need to create a new version of this in order to capture the new people that have been added in that happens automatically the same happens for website visitors same happens with video viewers Instagram engages your email list it depends on how you set it up if you've done a direct link with Mailchimp that can be updated automatically so as people leave your email list as they come into your email list that can all be updated which is great if you've uploaded a csv file or a txt file you will need to update that manually you'll have to come in and do that because there's no way for that data to be updated everything else is taken care of which is great okay and then the final thing with these custom audiences is how you structure it now if you've seen some of my other videos you'll know that i'm not a big fan of stacking interests within one ad set so i don't like having ad sets that have say five or six different interests in there because you get a blended average result and you don't work out which of those five or six interests produces the best results with warm audiences that doesn't matter because we don't need to work out which of our five or six warm audiences produces the best results we know that we're going to get better results from our retargeted audiences than our other cold audiences we just want to be retargeting all of them so you want to go in here and add in all the warm audiences that you have into the one ad set so we would add in web services we'd also add in our facebook page engages and our instagram engages and our video viewers and our email list this also helps increase the size of your audience because warm audiences retargeting audiences tend to be quite small and in general meta ad campaigns perform better when you have larger audiences more data there's more options to put ads in front of people so you want to build this up nice and big you are unlikely to get an estimated audience size over here it's likely to be unavailable now this is an example ad account with example stuff set up so our reach is like you know way smaller like it's showing basically nothing but meta is just a little bit reluctant to give you exact data here for retargeting campaigns they went with cold campaigns i don't really know why but that's how it happens don't worry about that if you see that don't worry about this if you see this estimate being tiny it's very often wrong and then we've got all these custom audiences added in here which is fantastic now this would then be part of a larger facebook ad campaign if we were using the director offer strategy now if you're wondering how this ad set this retargeting ad set fits in with the larger campaign i just mentioned i'd strongly recommend you check out this video in this video i walk through my facebook ad campaign structure how i would structure not only our retargeting setup as we've got here but how the cold audiences fit in around it so it's not a very long video strongly recommend you check it out i think you'll find it really really useful go ahead and click here and before you go please go ahead and subscribe

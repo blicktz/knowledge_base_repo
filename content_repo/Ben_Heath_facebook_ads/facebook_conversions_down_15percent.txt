@@ -1,0 +1,65 @@
+Hi guys, it's Ben Heath from Lead Guru and in this video I'm going to talk about Facebook's recent announcement that they think they are under reporting conversions by about 15% because of the iOS 14 changes. I don't believe them, I'm going to explain why. Before we get in touch, I want to very quickly ask you to hit that thumbs up button and of course subscribe to my YouTube channel if you are new and haven't done so already.
+
+So I've got Facebook's announcement article up and this was released getting on for a month ago now and I went through it, I've had some time to sort of process it and analyse the data and take a look at things. And they've sort of in this they're addressing the fact that there's been a big impact on advertising because of the iOS 14 changes. You know it literally says here we've heard from many of you that the impact of your advertising investment has been greater than you expected because of the changes that have been implemented.
+
+And they say here that the cost of advertising your business outcome may have increased, gotten harder to measure your campaigns on our platform. In some cases this is because of under-reporting. Now they say here, this is the really important part, this is sort of the topic of this video, our estimate is that in aggregate we are under-reporting iOS web conversions by about 15%.
+
+So if Facebook are saying that they're under-reporting iOS web conversions by about 15%, let's say you generated 100 sales from iOS users, because from your Facebook ads, Facebook in your ad account will be showing 85%, 15% less. That would mean that let's say for the average advertiser, half your prospects are iOS users, half are not, which is probably roughly about right, that you are only under-reporting in total by 7.5% because of course you're still getting all the data or most of the data from your non-iOS users. Now are we seeing a discrepancy rate in conversions of 7.5%?
+
+No. Are we seeing a discrepancy rate of 15%? No.
+
+I would say the average is closer to 30% and what I mean by the way when I say discrepancy rate is what's showing in our ad account, in our Facebook ad account, versus what we're actually getting. That we can verify with Shopify data or Google Analytics data or various CRM data or whatever it happens to be for the business. We don't just use one sort of tracking thing, I get questions about that a lot, it completely depends on the business.
+
+I would say the average is about 30% and we've got enough, I mean we have hundreds of campaigns running across dozens and dozens of different ad accounts. We must have access to, yeah, 50 plus easy ad accounts, 60, 70 even ad accounts, something like that, that we are able to make this conclusion on. Now either we're being particularly unlucky or Facebook is being, let's say very optimistic about the discrepancy rate.
+
+I certainly don't think it's 15%, I think it's larger than that. As I said, I would say our average is about 30% and it's really important for you to calculate your discrepancy rate. And then they do go on to say here, look in this next part, however there is a broad range for individual advertisers and for some advertisers it's larger than others.
+
+So if I'm doing tracking for say a B2B business and we're taking a look at the data, their discrepancy rate is usually quite small because a lot of actions take place on desktop, right? They don't take place on iOS devices, on phones. And so we have better tracking over people taking actions on those, on non iOS devices.
+
+Whereas some businesses it's much higher because perhaps 70, 80% of their audience comes from iOS devices or that's where the actions take place. So it's really important for you to analyse the conversions that you're getting in your ad account, compare those to the conversions that you're actually getting, that you can verify with other data and come up with an average. Is it 30%, which I would say is the average across the board for our clients?
+
+Is it 40%, is it 20%, is it 5%, is it 50%? Because then you can plug that number for your business specifically into your calculations and say, okay, we need to achieve a cost per lead of $20 in order for this campaign to work well. We know there's a 30% under reporting.
+
+Therefore, in our ad account, we can actually see a cost per lead of 26, 27% because, sorry, 26, 27 dollars, because that means that our actual cost per lead is going to be under that $20 mark. And that's how you can factor in the calculations. Hopefully that makes sense.
+
+You need to work out your own discrepancy rate. But yes, I think Facebook is very, very optimistic here. It does beg the question of how are they calculating this?
+
+Because how would they know what the actual number is? I imagine they've surveyed some advertisers, but yeah, I don't believe that data. I think that number is very optimistic.
+
+I'm sure there are certain businesses that are doing that. Certain businesses are doing even a lower under reporting rate than that. But I think the average is certainly higher than 15%.
+
+There is good news. You go down this article and you see they talk about the various actions that you can take as a Facebook advertiser. Now, these are things I've talked about.
+
+So if you followed my content, you already know about allowing more time before you analyse the stuff, setting up conversions API, using aggregated event measurement to get your all that sort of stuff sorted. I'll include some links to videos around setting up the Facebook pixel that has all this aggregated event measurement stuff in there. You certainly want to be doing that.
+
+I'll include other videos talking about under reporting and what you can do about that in the video description below. So check those out. And there's some other stuff in here.
+
+They talk about some stuff that's not overly helpful, like continue to test and learn. It's like, well, okay, well, I was going to do that anyway. Not just because Facebook's now under reporting.
+
+I think the more promising news and the part that I'm more excited about is the actions we're taking right now. And you can see, and obviously if you want to go through this article, you absolutely can. But you can see that what they're talking about here is Facebook is trying very, very hard and doing a lot of work on their end to improve the under reporting situation.
+
+They are very well aware that this affects advertisers. They are very well aware that it's going to negatively affect our ad campaigns. I don't think massively, but to some extent.
+
+And they don't want that. They want our campaigns to perform as well as possible. That way we spend more on the platform.
+
+So they are doing all sorts of things. You can, I won't go through it all in detail, all sorts of things to enhance measurement, to track better web conversions, to improve conversion modeling, which, you know, is important. They even talked about things like adopting, adapting quickly after we discover bugs, which is, you know, kind of a funny thing for one of the largest companies in the world to be talking like, don't worry, we'll fix our issues quickly.
+
+It's like, okay, sure. But it's, but it's quite interesting, but you can start to, what gives me confidence is Facebook are basically saying here is like, look, we know guys, we know this is a problem and we are going to do everything we can to fix it. And I said, it's one of the biggest companies in the world where on a market cap basis, and there's so much money at stake and they're going to do everything they can to fix this under reporting issue.
+
+So do I believe the 15% of iOS users, specifically? No, I would say our overall average is about 30%, which would mean the iOS under reporting is significantly higher than that. But, but Facebook are on it.
+
+And I think in six months time, we might be seeing that number might be more realistic as that discrepancy rate gets smaller and smaller and smaller. That's what we're hoping for, at least. Anyway, before you go, a couple of things, one thing I want to quickly mention, that's a free webinar I've created called Three Killer Facebook ad strategies to double or more your revenue.
+
+And I would strongly, strongly recommend you go through this webinar if you haven't already. It details the exact sales funnels, the exact strategies that we use as a Facebook ads agency for our clients. They're very much tried and tested.
+
+We've generated millions of dollars with all three of these strategies. And I give you three because it's so important that you use the right strategy for your products and services. And I think so many Facebook advertisers get this wrong.
+
+They hear about a sales funnel structure and they just run with it. They go, well, hang on, does that work for your type of business? That's what this webinar shows you how to do it.
+
+It details the sales funnel in detail. So links in the description below, completely free, 60, 70 minutes long. I strongly, strongly recommend you go through it.
+
+I think you're going to find it really, really useful. If you found this video helpful, please give it a thumbs up. Please remember to subscribe to my YouTube channel.
+
+I'm releasing Facebook ads with this content all the time, keeping you up to date with announcements and things like this that are really important. And yeah, comment below if you've got questions, comment below to let me know what you think. And I will talk to you soon.
+
+Thanks guys. Bye for now.

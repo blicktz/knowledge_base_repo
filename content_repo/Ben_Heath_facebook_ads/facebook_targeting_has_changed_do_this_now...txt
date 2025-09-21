@@ -1,0 +1,127 @@
+Have you seen the changes Facebook has made to targeting? Thousands of targeting options have completely disappeared, and that is making life incredibly difficult for a lot of Facebook advertisers. Fortunately, we've worked out three solutions to this problem.
+
+If you've been hit by these targeting changes, make sure you go through this whole video, because I'm going to show you how you can fix this problem right now. So what on earth is Facebook playing at here? Why are they getting rid of thousands of targeting options and making life more difficult for Facebook advertisers?
+
+Well, here's an announcement that was released by Meta on November 9th last year. And if we scroll down to this section here, they said starting January 19th, it didn't happen all at once. It was sort of, it's been going over the last few weeks and recording this just over a month after this date here.
+
+They said, we will remove detailed targeting options that relate to topics people may perceive as sensitive, such as referencing causes, organisations, or public figures that relate to health, race, or ethnicity, political affiliation, religion, or sexual orientation. Examples include, and they give a bunch of examples. So, okay, that kind of makes sense.
+
+There's a lot of bad press around all social media platforms, particularly the advertising side of things, being able to target based on some sensitive stuff. So I can completely understand why they're removing this stuff. I think what's annoyed a lot of Facebook advertisers is that Facebook has gone a step further than this, and they have removed a whole bunch of stuff that doesn't even really fit into these categories.
+
+Maybe it just does a little bit, and they've all gone as well, which is, as I said, made live for Facebook advertisers much more difficult than it needs to be. So this is what Facebook are doing. This is why they're doing it.
+
+Now we need to get into how we go about actually fixing this problem. So what a lot of Facebook advertisers are experiencing right now is this. They come into their campaigns.
+
+I'm obviously an ads manager right now. I've got an example campaign created where the ad set level in the audience section, and they come down, they click on detailed targeting, and they're finding that their demographics, interests, or behaviours that they used to target, potentially that performed really well even, are just no longer there. Or perhaps you're a new advertiser, and you just can't find anything relevant in here anymore, because literally thousands of targeting options have been removed.
+
+And that's making things very difficult for a lot of Facebook advertisers. As I said, there is a big positive to this, which I'm going to explain later on, by the way. So make sure you stick around for that.
+
+I think you're going to find that quite interesting. But that's what they're finding. Well, these detailed targeting options you used to use, they're gone.
+
+Ah, what do I do? So we need to think about different ways of reaching people. And that's the very first thing I want to get across.
+
+The people that you want to target, the people that maybe you used to be able to target with detailed targeting options, they're still there. It's just a case of being able to reach them. And that's a really important thing to keep in mind.
+
+It's not like those people are gone. You just need to do things a little bit differently. So there's three potential solutions I've already mentioned.
+
+Let's go through the first. The first is going to be lookalike audiences. But lookalike audiences based off of different audiences to usual.
+
+So for those who don't know, a lookalike audience is a group of people that's very similar to another group of people. So let's say you say to Facebook, these are all the people that have bought from me in the past year. I want you to advertise people that are very similar to these people that have bought from me.
+
+And that's normally a great audience to target because people that are very similar to your existing customers are great people to advertise to. There are other types of lookalikes you can get into though, right? That's what a lookalike is.
+
+Let's go ahead and jump over to audiences because I want to demonstrate what we've been doing with lookalike audiences to overcome this detail targeting issue. So this is a new ad account. There's nothing in there yet.
+
+But if we create a custom audience and you can create custom audiences, which are warm audiences that are the sources for your lookalikes, you can do it on a whole bunch of things. I'm going to explain more about it in a second. We're going to start with a website visitor custom audience.
+
+So we're going to go with all website visitors. I'm going to change that retention to 180 days. And then we're going to call this all website visitors 180.
+
+Okay. We're going to create that audience. Now, this custom audience is going to contain everyone that has visited our website within the last 180 days, assuming the pixels picked them up or that sort of stuff.
+
+Then we can go ahead and click on that. So this is the source and we can click on create lookalike, select your location. I'm just going to go with the UK in this instance.
+
+1% is perfectly fine to start with. Create audience. And boom, there's our lookalike.
+
+Okay. Now, this audience is going to contain people that are similar to people that have visited our website, which is a great audience to target because people that have visited your website are usually fairly representative of your potential customers, people have bought from you before. And advertise to people that are similar to them is great.
+
+Okay. So that's one of the lookalike audiences that we're using to help overcome this detailed targeting issue that's been removed. And that is helpful.
+
+But there are some other ones that I want to get into. So if I click on create audience and custom audience, and we want to select a different type of custom audience. I want to talk about in-app sources.
+
+So you can see this used to say Facebook sources, of course, but now it's meta sources because it's the overall company. So you can create custom audiences and then subsequent lookalike audiences based on people that have done stuff within Facebook and Instagram. And that's important because with the iOS 14 changes that happened last year, the pixel tracking is not as reliable as it used to be.
+
+Okay. So our website custom audiences, for example, aren't as accurate as they once were. So we're switching more and more to in-app sources.
+
+So, for example, if you've been running video ads on Facebook, absolutely go ahead and use video. If you're doing a lot of advertising on Instagram, you can do people who've engaged with your Instagram account. If you're running lead generation campaigns, then you can go ahead and select people who've engaged with your lead form.
+
+I'm going to show an example of people who've engaged with a Facebook page. So this custom audience, there's a number of different options, but will include everyone who engaged with your page. And that could be a number of different things.
+
+You can see it says here, visited your page, taken an action on a post or an ad, reacted shares, comments, links, a whole bunch of stuff. Okay. A good audience to target, particularly now when we've got less visibility over pixel tracking.
+
+And I'm going to call this Facebook page engages 365, right? Create audience. And remember, that's our custom audience.
+
+So that is those people. Then we want to go ahead and click on create a lookalike. I'm going to go with the United Kingdom again.
+
+Obviously, you'd want to put in whatever location you want to target. 1% is absolutely fine. Create audience.
+
+Okay. And then boom, we've got our other lookalikes. We've got a lookalike here based on website visitors.
+
+We've got a lookalike here based on people who've engaged with our Facebook page. Then we can jump back over to ads manager. And in our example campaign, we can jump to the ad set level.
+
+Go ahead and click on edit over new sales ad set. Scroll down the audience section. And we can go ahead and pop our lookalikes in here.
+
+We can put both of those in. We could just do the one. That's very much up to you.
+
+But this has been working very well for those clients of ours that have had detailed targeting options that they've used in some cases for years that have all of a sudden disappeared. This is an option that may well work very well for you. So absolutely test this.
+
+If you want more information, by the way, about lookalike audiences, how to create them, because I just gave you like a very quick demo there. Check out the link in the video description below to a full ultimate lookalike audience tutorial. Go through all the different types, how they work, all that sort of stuff.
+
+Okay. But I just wanted to quickly, briefly cover that here. So that's one potential solution to this detailed targeting options being eradicated in many instances by, well, meta, I suppose they should be called.
+
+Okay. Let's get on to the second option. Okay.
+
+So potential solution number two is to run with something that basically looks like this. Broad targeting, open targeting, it's got a number of different names, but where you don't add in any detailed targeting options whatsoever. And you basically give Facebook an enormous audience.
+
+You can see here, we're looking at, you know, 47.3 million to 55.7 million, just targeting the whole of the UK. And there's 18 plus, and that can work incredibly well in some specific scenarios. So I would only do this option or try this option.
+
+If you have a product or service has mass appeal, you know, some things that people sell only appeal to a particular group of people. It's fairly niche. It might be something quite hobbyist, something like that.
+
+Other things appeal to a huge percentage of the population, you know, things to do with the home, cars, things that everyone, just about everyone will buy, travel, holidays, appeal, you know, there might be subsections, you know, luxury travel versus more budget travel and things like that. But these are things that can apply to a huge percentage of the population you want to target. So that's the first thing, box you want to tick before you go ahead and test broad targeting is, is there broad appeal for what I advertise?
+
+The second thing is how mature is your Facebook ad account? Ideally, you will have generated 500, maybe even a thousand plus conversions and conversions. I mean, the thing that you're really targeting in your campaign.
+
+So whether that's a lead or a purchase, whatever it is, you want to have generated a good volume of that. As I said, at least 500, maybe a thousand plus in your ad account before you go ahead and test broad targeting. And the reason why is because Facebook needs a lot of data to be able to work out who from a 50 million person audience, or if you're targeting the US could be a, you know, 250, 260 million plus person audience, who in that is best to target?
+
+They need data. They need examples of what type of person goes on to convert from your campaigns. So brand new ad accounts rarely work very well with broad targeting, but mature ones do.
+
+So if you've got a broad appeal product or service, and you've got a reasonably mature ad account, as I said, hundreds, but definitely if you've got thousands of conversions, that could be another great potential solution. So absolutely go ahead and try that. Just try broad targeting on one of your ad sets.
+
+If you've lost out on detailed targeting options to work, you may well find that the results are even better than what they used to be with detailed targeting. We've done that in certain circumstances, seeing great results. That's a great potential fix.
+
+The third potential solution to these detailed targeting options going away is to think about how you can target the people that you want to reach using other detailed targeting options. So if, for example, we wanted to reach Christians as a group, we may have been able to target that previously, but that's just the sort of thing that Facebook's gotten rid of. So whilst we can't target those people specifically with a detailed targeting option, can we target the media outlets that those people are likely to follow?
+
+Often those targeting options are sticking around. So have a think about your target audience and think about what are the TV shows that they watch? What are the podcasts they listen to?
+
+The social media influencers they follow, the magazines they read even. Okay. If, for example, we wanted to reach people in the US of a more conservative political leaning, then you could go with something like, you know, Fox News, Fox Broadcasting Company in this case.
+
+Okay. That's likely to be an, the people that are interested in that are more likely to have that political leaning than other targeting options. If we wanted to do the opposite, you could probably put in something like NPR, if I can spell it right.
+
+You may disagree with these examples, of course, you know, I don't live in the US, but, you know, so there, there are ways that you might be able to think around this problem. And media outlets is a really good option because a lot of those are still around and they may be pretty close to pretty representative of the sort of audience that you're looking to target. If you know your audience, well, you know what media they consume, definitely worth creating some ad sets, breaking out a few different options and testing them.
+
+Don't have to spend a lot of money on them, but it may just be the solution for your business in terms of recovering results that you used to get with detailed targeting options that no longer exist. So if you have found that detailed targeting options that used to work for you really well have been removed, they've disappeared, or you can't really find very relevant targeting options in general, try one, two, three of these potential solutions, different businesses are going to find success with each. That's why we have three different options because as an agency, this is what we do.
+
+We troubleshoot, we try and work out solutions for our clients. We found that some have worked really well with the lookalike option, the more mature ad accounts, broad targeting has worked well. And with some, we've been able to target other detailed targeting options that still can deliver great results, but they're just a little bit different.
+
+You have to think around the corner a little bit with the media outlets and things along those lines. But depending on what's appropriate for your business, try all three, you may find that all three work, you may find that one works, but don't just feel like your detailed targeting options have been removed. There's nothing you can do now.
+
+Facebook won't work for you. That's almost certainly not true. So in a second, I'm going to explain how you can use these targeting options in a new Facebook ad strategy.
+
+Really, really exciting stuff. Before I do that, I want to quickly tell you about our Facebook and Instagram advertising services. I've mentioned it through this video, but we offer done for you services.
+
+We create, manage, and optimize campaigns for our clients. If that's something you're interested in, you can book a free call with one of my team members. Just click on the link in the video description below.
+
+You'll be taken through to our website, you can book a slot directly into our calendar. We do have a 3k per month minimum budget requirement, but if you meet that, go ahead and book a call. No obligation, of course.
+
+We just find out more about how we work and hopefully we get a chance to work together. Now, if you've seen a drop-off in your Facebook ad results, it might also be time to try a new way of advertising on Facebook. And I show you exactly how to do that in this video here.
+
+In fact, in this video, I demonstrate a new Facebook ad strategy. It's something that almost no one talks about, but it can generate incredible results. I'd strongly recommend that you go ahead and check it out.

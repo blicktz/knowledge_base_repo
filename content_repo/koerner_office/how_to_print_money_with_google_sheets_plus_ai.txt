@@ -1,0 +1,493 @@
+I think you could monetize it. I think you could monetize anything, okay? They have these devices that will beep.
+
+Dude, you're blowing my mind right now. This guy owned a bar or restaurant or a nightclub, and he created a fake profile of a very pretty girl and set up dates for like dozens or hundreds of men to meet at that bar or restaurant. And it works.
+
+Like, it just drove a ton of customers, and they all got ghosted, but then they were there. I'm going to share some crazy things. Are you ready for a crazy story, Chris?
+
+He has over 10 million followers. And literally, all he does is... Welcome to the Kerner office.
+
+It's Friday. Therefore, it's Holtco Bros. Nick and I are going to talk about some cool business ideas.
+
+And this is part two of last week's Holtco Bros. Sometimes we record a double episode, and we split it up. So one quick note, we had a glitch in last week's episode.
+
+We included a segment that was supposed to be in this week's episode, which was about using ChatGPT inside of Google Sheets, which I'm really excited for. So you may have got a sneak peek last week, but that was a different episode entirely. So we're going to play that whole segment again this week.
+
+You might not have heard it. Anyway, don't stop listening because you start hearing a segment that sounds familiar because all of the other segments are new. So enjoy.
+
+You're going to love this one. Please share with a friend. We'll see you next time.
+
+Have you used AI in a spreadsheet much? Like not uploading a spreadsheet to ChatGPT, but oh man, it is so cool. So here's what I did.
+
+So there's this Google Sheets extension called, I think it's called GPT for sheets. And it's dirt cheap, costs almost nothing. And you basically type in a formula equals GPT.
+
+And then in parentheses, you put a prompt and then you put comma and then the cell that you're referring to. Okay. And so there's just so many use cases here.
+
+I did this for my newsletter. Like I would love the first names of as many of my newsletter subscribers as possible because when I email them, I could include the first names and it'll help your deliverability because all of the carriers will see that each email is unique and it seems more personalized. Like people know I'm not writing them personally, but it just feels better.
+
+Right. It just shows better. And you can put in what's called fallback values to where if you can't get their first name, then you could just say like for Texas next, what I do is.
+
+Howdy comma. And then if I have their first name, it'll put their first name. If I don't, it'll just put partner.
+
+So it's like either way, I don't look like an idiot. Right. It's also not like I get all the time in Twitter.
+
+Hey, co-founders, are you worried about? Yeah. I'm like, right.
+
+Anyways, keep going. So on my subscribe page, if I were to ask for their first name, then I'd lose 20 to 30% of subscribers. So I don't, it's not worth that much to me.
+
+Really? Yeah. It's just more friction.
+
+Okay. But I still want them. And so there are services where you can append data.
+
+There's one called Norbert where you can upload a list and it's going to go to LinkedIn. It's going to go all over the internet and say, all right, we think, you know, this guy's email is johnsmith at gmail.com. His name is going to be John.
+
+We think it matches with this. Right. Sometimes it'll use logic just by doing it that way.
+
+And sometimes it'll actually like connect the random, you know, dragonslayer at gmail.com email to a LinkedIn profile and then use their first name. So Norbert and, you know, its competitors work about 30, 40, 50% of the time. But this GPT for sheets is awesome because it can do it as well.
+
+So I use it for two different things. So for perfume vending, for instance, we have a type form where we require their first name, but some people are idiots and they type in like a question like, Hey, I want to know the price of it. And it says, that's their first name.
+
+It's like, that's not helpful. And some people don't put it because it's not, I don't know if it's, we asked for it, but it's not like a required field, but most people put it in. And then some people just type gibberish.
+
+And so I exported all the perfume vending leads to a Google sheet. I typed in a formula that's like, Hey, most of these are first names. Some of them are all caps.
+
+Some of them have no caps. I want you to standardize them, make them all grammatically correct. If someone just writes a sentence and like, there's no first name of any nationality found in that sentence, leave it blank.
+
+Like it's a really long prompt. And then if it's like, if it's all caps, just make it, if it's like gibberish, like people just hit the keyboard, then just leave it blank. And then you drag it down.
+
+Boom. Good to go. And it costs like a fraction of a fraction of a penny per row.
+
+Dude, you're blowing my mind right now. Cause like data integrity is such a big problem, especially when you're trying to do any type of analysis. That was a big issue with all the leads that we got for perfume vending is people would put like, we, let me back up.
+
+When you're asking people for information, you can do it one of two ways. You can leave it free text or you can give them dropdowns. And when we asked them where they're from, these weren't dropdowns.
+
+It was like, where are you from? And so some people like they just misspelled Maryland or like Michigan or South Africa. Like, and so I had to go in manually and find these ones and sort and clean up the data.
+
+I had to do like a lot of manual data cleanup, especially for large data sets. That's incredible. Yeah.
+
+So then let's say you don't have first names. You just have an email address. Then the prompt is, Hey, all I have is an email address.
+
+Can you like discern what the first name is? And if you can't like reasonably with 70% accuracy, just leave it blank. Then, cause a lot of times it's like Smith, John at gmail.com.
+
+His name is John. It's not Smith. Right.
+
+A lot of times it's like John seven, seven, two, seven. Oh, it's John. And sometimes it's like mixed in there and it's really, really good for that.
+
+And it costs almost nothing. So now what I did was I went to my newsletter. I exported every single one.
+
+I drug it down. And now I have first names for like most of my emails, but it doesn't end there. Go ahead.
+
+Go ahead. So tell me the name of the plugin again. GPT for sheets.
+
+Okay. So GPT for sheets. And then I just go in a cell equals GPT.
+
+And then I tell it what I want. Parentheses. Open parentheses.
+
+Parentheses. Prompt. Comma.
+
+Cell number. And then you drag it down. And then close parentheses.
+
+Could you do it where it's like prompt comma column. Right. So it's like, I want you to find me the most common name in this column.
+
+Let's just say. Boom. And then it'll be like, John, like, will it do that type of information?
+
+Does that make sense? Yeah. Yeah.
+
+You can already upload spreadsheets to chat GPT. Like you, you recommended a podcast. I listened to it yesterday, by the way.
+
+Very, very good. And he was talking about, he exports his YouTube analytics, uploads it to chat GPT and says, Hey, like, what are some commonalities here? Like, that's cool.
+
+But this is like hyper, hyper granular, which I love. And so for all of these co-founder applications we have, you know, we've gotten 30,000 co-founder applications and like a third of them fill out a 28 minute long type form asking all kinds of questions about businesses that they started, what they've done. That's impressive.
+
+What school? When are they graduating? And we look at this and we're like, what do we do with this?
+
+Okay. We could like do control, find Harvard. Like that guy might be interesting, but that's like, that gets you 1% of the way there, you know, because we don't care about Harvard.
+
+Like we want a guy that built a Chrome extension from his dorm room and like hacked into the, the university servers. Right. But that's in his story.
+
+That's not like, we don't have a dropdown that says, did you hack into your university servers? And so we could totally make a prompt. That's like, all right, here's our grading criteria.
+
+We want students that have actually done something. Maybe it was a lemonade stand, but like they have to have already started a business. We don't care what their revenue was.
+
+We want students that have an eye for entrepreneurship, that are ideas people. We want students that you don't care about GPA, ignore like assign zero weight to GPA, zero weight to school, zero weight to graduation date. This is what we're looking for.
+
+Drag it down. Score them one to 10. I'm on Google workplace marketplace, work, Google workplace marketplace, GPT for sheets by Tolarian.
+
+It's got some weird look. It's like blue background with some stars on it. Sounds about right.
+
+Yeah. I'm installing it. But I do, if you're listening to this and you want to use this, you got to go to open AI, get a $20 account a month account.
+
+If you don't already have it and get an API key because GPT for sheets will allow you to use your own API key and it costs especially almost nothing then because it's these things are really cheap on the surface. But the longer your prompt gets your input and the longer of an output you're asking for, the more it's going to cost you. So across thousands of rows, it actually can get expensive.
+
+So you want to use your own API key. Oh, so you actually need to go and get. You don't need to.
+
+Oh, no. But you'll save a lot of money if you do. All right.
+
+Keep going with your idea because I'm all over the place at this point. No, that's it. I'm going to make a YouTube video about this.
+
+I'm going to like share my screen. And I promise you listeners, you will hear this in a week, two weeks, three weeks. I promise you I will come with ideas based on just using this Chrome extension.
+
+Let's do it. It's just the ability to clean up the data. Yeah.
+
+It's a big deal. Like right now, if I want to go in and take a look at your financials and say like, what's something that you're spending an exorbitant amount of money on? I got to go filter through our way.
+
+I got to put in some formulas to show me which percentages. Like there's a million things I have to do just to get to the point where I can make the assessment or I can do the analysis. This could clean it up for me so much faster.
+
+Anyways, that's incredible. Yeah. And another use case is I tweeted about this a month or two ago, but if you wanted to serve local businesses, sell them something, you could use outscraper too.
+
+Are you with me, Nick? I am. Nick.
+
+Nick. Kind of. Yes.
+
+Okay. He's not with me one way. Now he's not with me another.
+
+I know. Right now. Okay.
+
+Is that what you wanted me to say? Tone it down. Tone it.
+
+Tone the excitement down. Okay. Go ahead.
+
+I need you to act less like yourself. Like your wife always asks you to do. Don't be yourself so much.
+
+It's annoying. Okay. No.
+
+Like imagine you go to outscraper. You say, you know what? I want to sell customer service software to nail nail salons.
+
+Okay. You scrape all of the one-star reviews for nail salons in the country. And then you use, you put them in Google sheets, use GPT for sheets to say, what are like the most common repeated words in this?
+
+Dirty, late, closed, rude. Right. And then you can build, build software around the complaints or conversely, show me all the five-star reviews.
+
+What are you hearing the most? Boom, boom, boom. Wow.
+
+Okay. There's a correlation between number of reviews and the word delicious. How can I monetize that?
+
+Like there's just endless ways you can use this. I'm really curious to use it right now because like there are times where I get data and I'm like, I don't know how to sort this because it's just in a funky format. And so I'll go to chat GPT and I'll say, this is the data I have.
+
+This is the format it's in. I'm trying to do X, Y, or Z. Write me a script for how to parse this data.
+
+And it'll be like, okay, do, and it'll, you know, tell me whatever to write. This could eliminate just even going to chat GPT. I could just write in here and tell it what I want.
+
+Anyways, that's freaking. All right. What do you got?
+
+What do you got? Two options for you. Newsletters.
+
+Or dating. Let's do dating. Okay.
+
+So I was talking to somebody this morning that we both know. Her name is Kelly. She is our executive assistant.
+
+And she was complaining to me about her Bumble interactions and just how stupid men are. You know, Bumble. Just texting out of the blue.
+
+Right. And when you're trying to get laid, you say stupid stuff and that shows up in the DMs. So anyways, I was thinking about it and I started doing some research.
+
+I'm going to share some crazy things. Okay. Are you ready for the craziest stat you've ever heard around dating?
+
+30 years ago, what was the number one way that people met their spouse? Hmm. I don't know.
+
+School in person. Through friends. Like down at the soda shop.
+
+I don't know. World War I. I don't know.
+
+Through friends. Okay. What's the number one way today that people meet their spouse?
+
+Online. Online. And it's cool.
+
+But there's something I think that we miss in meeting people online and it's the social proof. Like when you met someone through your friends, it was like, oh, I know Gary. I'm friends with him.
+
+You should go on a date with him. It's like, oh, Lauren said I should go on a date with him. Okay, cool.
+
+I'll go on a date with him. But when you go to these online dating sites, yes, you have a lot more access. You can talk to people.
+
+You see their profile. You see all this stuff. But as far as I know, like there's no social proof.
+
+You've been on LinkedIn and you've seen where on LinkedIn it's like people can write recommendations. Right? Yep.
+
+Or like Sam Parr posted one time. He's like, hey, a friend of mine is looking for a date and he got a ton of people reaching out to him. I don't see any of that in the dating world.
+
+I just see it as this is me. You're putting your best foot forward and then people are reaching out to you. And it just has created this really weird dynamic.
+
+Let me ask you, though. Do you know how big the online dating industry is? Revenue per year.
+
+No idea. It's about $10 billion. It's actually nine.
+
+Call it actually $9 billion. By 2031, it's projected to be at $13 billion. So as far as like an annualized growth rate, it's about 7%, which is crazy good for a general industry.
+
+So it's only growing. It's going like crazy. And you're dealing with this problem where you don't have the same social checks to get people comfortable with dating one another.
+
+So I started thinking. And these are like just ideas. What are some ways that you could actually facilitate this connection?
+
+So you could start a business around local sports leagues that are just for singles. I know that that exists, but I'm just throwing it out there. You could start a local newsletter.
+
+You know the newsletter economics just for singles. You could also scrape the APIs or integrate with the APIs of Tinder, Bumble, Grindr. That was a joke.
+
+I'm right. You had to. You had to.
+
+I had to do Tinder or Bumble and just build another site where you can link to somebody's social proof. Right? It's almost like, Hey, these are my letters of recommendation that you can go and look at.
+
+These are my friends. And these are links to their social profiles. So you can see that they're actual real people.
+
+But if I were to do this and figure out a way, I don't have the answer, but I like, there's a huge opportunity here. If I were to do it, I would start local. I would start with.
+
+Local? Finding people. I would be local.
+
+Find people in my local market. And I would start building a network there and figure out what the best way to facilitate that social proof is. And then try to roll it out.
+
+Do the same things that I would do in growing a local newsletter, but I would just grow it locally for local singles. And then I would either do a sports league or I tend to go sports league because I think being active and physical is a really good way to have interaction. But there could be other, like you could have an improv league.
+
+You could have cooking classes. Like there's a whole other thing, but it's like just geared towards singles. What do you think?
+
+So is your attempt to pull people off the apps into person and more in-person stuff? My, my attempt is to use the apps to funnel them to in-person things. So it's like, cool, go on the apps, find who you like, but maybe you don't want to go on a date with that person.
+
+Or maybe you don't want to be one-on-one with them, right? Like we're Mormon. We grew up when you turned 16, you didn't, you weren't supposed to just date one-on-one.
+
+You dated in groups. So it's like facilitate a group environment for people. That maybe are uncomfortable with just going the one-on-one route and, and have that facilitate relationships.
+
+All right. If you were watching this clip right now, you are watching this on YouTube. And if you are a fan of podcasts, please check out my podcast while you're at it, because sometimes I have podcasts that aren't on YouTube and sometimes I have YouTubes that aren't on podcasts.
+
+So check out the Kerner office on any podcast platform, or you can go to tkopod.com. Also, my newsletter, we'll throw that in there. There are no ads.
+
+It's weekly. It's different content than my podcast and YouTube newsletter.chrisjkerner.com. You'll see the link and we'll see you there.
+
+It could be a dating app for introverts too. I don't know. You don't care.
+
+Do you, you really don't care. No, I'm just trying to think, I don't know enough about like, I've, I've never owned a dating app right ever. And so I'm very, I've never been on a dating app.
+
+Right. Right. Here's some thoughts that come to mind.
+
+First of all, an interesting growth hack that I saw was this guy owned a bar or a restaurant or a nightclub and he created a fake profile of a very pretty girl and set up dates for like dozens or hundreds of men to meet at that bar or restaurant. Okay. And it works.
+
+Like it just drove a ton of customers and they all got ghosted, but then they were there. So it's pretty smart, right? It's a pretty good thing.
+
+That's a pretty good growth hack. I think that any business built on the theory that people are coming offline more is a good business. I love that thesis and I agree with it.
+
+Like the mechanics of it. I can't wrap my mind around. I don't know.
+
+Yeah. It was just, it was just an idea that I had this morning where it's like, there has to be a way to provide the same social proof and facilitate these social connections in the real world. It's fine to meet people online.
+
+I think that's really good because you don't have this like awkward of like getting to know someone and like, what do they really think? And all that stuff. Like you can kind of just see it up front.
+
+What if it was something like you, like, let's say, Nick, you're the business owner, you're the aggregator of the people here and you go find like in Dallas, it would be like Clyde Warren park, which is like a nice park downtown. It's built over an overpass. It's kind of hipster.
+
+It's close to everything. You could organize meetups for specifically targeted to people that are on dating apps, like active on dating apps. And people could have their first date there that way.
+
+Like everyone at the event, which is at a public place. You don't have to go rent something expensive. They're all like they're in the shared experience.
+
+They're all on this awkward first date together. And they might end up meeting someone there that, that is the ultimate fit for them. Now, maybe somebody who's listening, and maybe somebody who's listening that is in this world.
+
+And they're like, yeah, that already exists. And we just don't know because we're not, because we're not single. It's called a party tech.
+
+This is true. Go viral. We're going to get canceled.
+
+It's like tech bros discover a party. But it's like when we went to SM bash or when we went to main street, it's all these people who like met on Twitter and now they're meeting in real life and you, you, there are functions there that allow you to meet people in person. It's, it's the same thing, right?
+
+Like everybody's on Tinder. So they may like recognize a profile picture, but then there are activities that are designed to get people to interact. So it's like not a party in the sense that it's a general free for all, like, oh, cool.
+
+The punch is over there and music's playing and everyone just dances. It's like, okay, you come, maybe there's some speed dating. I was just going to say that you like literally, and maybe there's like sports.
+
+I really like improv because I think it's fun to just see how people think. Like maybe there's an improv thing. Like, and you can choose the different activities that you do, but that, that would like facilitate imposter.
+
+All right. We landed on something good here. Once again, Chris and Nick are super unique.
+
+This one's good. This is a good one. Like this idea, this one, this idea, the app idea though, dude, no, it could be, it could like, let's say you take a restaurant and you reserve like the back room, right?
+
+For parties, like 30, 40, 50 people. And the only people that are invited or allowed to come. And you could charge a fee at the door are people that will be on their first date with someone that they met on an online dating app.
+
+It has to be a first date date. And they, they never have to have met them before. And it must be from an online dating app.
+
+And then you get them there and then you gamify it, right? Maybe you do improv. Maybe you do karaoke.
+
+Maybe you do speed dating. Maybe you do all three and you can even gamify it to where it's like you go open-minded and you might end up with the same person. Like you might get there.
+
+Maybe, maybe you get there and intentionally you spend like 20 or 30 minutes with that person that you came with getting to know them for the first time. And it's like, all right, now we're doing speed dating and you have like two or three minutes with everyone there. And then at the end of it, it's like, all right, raise your hand if you want to stay with the same person or not for the rest of the night.
+
+And you could switch, right? Or you can even make it, you can even make it blind, right? Make it blind or else human psychology will get into play.
+
+And it's like, all right, here's a piece of paper right here. If you want to stay with the same person or switch. And then like someone gets on stage and it would be really awkward, but it's like, it is what it is.
+
+Or, or you copy Nick Gray and you make it exclusive and like you plan the experience and anybody who comes that doesn't participate well, you kick them out. Like you're very exclusive. You're gated with who comes in.
+
+But before the event, you send out a list. Here's everybody who's attending. You can go look at their profiles here.
+
+Like it's, it's very clear. Like you're going to this to try and find someone to date, but you're not necessarily assigned to anybody up front, but you can go and you look and you're like, Oh, Chris is going to be there. Oh, cool.
+
+He's an Alabama fan. Oh, all right. I went to Alabama.
+
+Oh, Nick's going to be there. Okay. I like that.
+
+It could be my sister though. Could be my sister. You got to watch out for that.
+
+Yeah. That's true. It's not funny.
+
+It's not funny. It's an epidemic in the South. Okay.
+
+But you would go and you'd have some information before you went. And then that would make the, the party more enjoyable because you at least know who's there. You've seen their profiles.
+
+You maybe have a list of like, these are the five people I want to talk to. And essentially you're just facilitating a meetup, but you're focusing on the niche of dating. And you could, you could do this with any niche.
+
+You could facilitate meetups, focusing on the niche of SMB. You could facilitate meetups, focusing on the niche of disc golf players. Like, you know what I mean?
+
+Like it could be any niche. It's funny. Cause like you don't have to pay for a venue because they're buying their own food and drinks, right?
+
+So they reserve the room for you because they know you're, you're going to be paying customers. You just charge like a, a door charge, the 20, 30, 40 bucks at the door for this whole experience. And that's how you make money.
+
+Yeah. You don't have to control any, you don't have to control the venue, the menu, the seating, none of it. Have you seen black mirror?
+
+Have you ever seen that on Netflix? They have an episode that's like this, where it's like social proof. Everyone has like a social credit score.
+
+And so for, for instance, like, let's say you walk out of a store and you don't hold the door open for someone. And the girl's like rude. She'll pull out her phone and like scan your face and like, leave you a bad review as a person.
+
+And then your reviews, it like tallies up to like a score and everyone is driven by like their score. Like, what's your score? Oh, I just dropped.
+
+And like, people are getting good scores all the time, but occasionally they'll get like a negative review that will drop their score that everyone can see. And they like stress out over it. It kind of reminds me of that.
+
+Like, it's like a crowdsourced. Are you a good person? Yeah.
+
+And it's like, there is a benefit to that. And there's a downside. I just think in, in situations where there's really, that are really high risk is the wrong word.
+
+Leverage, maybe high stakes, high stakes. Dating is one of them because you're, you're trying to find your spouse, like your mate for the rest of your life. Starting a business could be one of them.
+
+You want to have some type of social proof. Like you're looking for that because you're making a decision with almost no information. You want to gather as much as you can.
+
+It's such an important decision. I like it. That's a good one.
+
+Thank you. I like ideas that like, you don't have to build an app for, right? Like you can use the apps to build something in person for low tech.
+
+We're not what our, when we're not what our wives would call like smart, you know? No, no, no, no, no, no, no. They're good looking or attractive to them on most days.
+
+Or decent providers. Good father. Yeah.
+
+Right. Yeah. Or who I would have chosen had I had it to be all over again.
+
+Do you know what I mean? Or our first choice, you know, for site. I mean, they call me fallback Chris for a reason, you know, plan B Chris.
+
+Oh my gosh. All right. I got one.
+
+I got one. So there's this guy on social media called the dumpster dive King. And he, he has over 10 million followers and literally all he does is dumpster dive.
+
+That's it. And he has a GoPro and he dives for dumpsters and he finds things. And sometimes people confront him.
+
+They're like, what are you doing here? This is private property. And he's like, no, it's not.
+
+Cause according to ordinance of the city, I am allowed to be here. This is public. Of course.
+
+So that's like, that's good content. The biggest reason why he's so viral is because of the payoff at the end of these videos. What's he going to find?
+
+It's a treasure hunt, right? This goes to like a previous episode talking about treasure hunts. Like it is human nature.
+
+It's first principles. We want to know what's at the end of the rainbow. Like what's in the box.
+
+Like we want the payoff and the algorithms want the payoff because it means high retention. So I did a deep dive on the dumpster dive King and was enthralled by it because it's just a video with him voicing over it. Like he's not really talking while he's dumpster diving.
+
+Right. He's like, Oh, I found these golf clubs. Oh, these are $400 golf clubs.
+
+So people love it. Cause they're like typing like that's not a $400 golf club. That's a $300 golf club.
+
+Oh, it was discontinued. And like, everyone has an opinion on what he's finding. Everyone wants to get to the end to see what he finds.
+
+And so it's just, it's a brilliant business as far as social media is concerned. But then he took it a step further and he sells all this stuff he finds on his own website, lost goods.com. Okay.
+
+Which is a very, very ugly website, but a very smart thing to do. And I would bet that most of his sales come from eBay, Facebook marketplace, Etsy, the big marketplaces. And then this is just kind of like the five, 10% of his sales.
+
+It's a good, it's a good name because it's a lot. It's like lost goods. And no, they're stolen from the trash goods, but you've rebranded it to lost goods.
+
+You know what I mean? It is good. Liz, but I like this idea because it reminds me exactly of an idea I had three years ago.
+
+So three years ago, I was living in Houston for six months and we lived in a neighborhood that had its own 18 hole disc golf course. And so I would play disc golf with the kids and it was fine. But what we really loved was wading through the ponds and the ditches looking for lost disc golf discs.
+
+And it's very simple. You take off your shoes and there was a Creek. The neighborhood is called Cross Creek Ranch.
+
+So there was a Creek that went across the neighborhood and you would just kind of waddle through this, you know, knee deep Creek and you would feel plastic in your toes and you reach down, you pick it up. It's like, Oh, it's a disc. And some of these discs are quite valuable.
+
+They could be hundreds of dollars. Most of them are like 10 to $30, but it's still, it's like, I just found 20 bucks. I just found 20 bucks.
+
+I just found three 20 bucks stacked on top of each other. Cause this is like a honey hole work. You know, the, the wind always carries it to this spot.
+
+And it was so fun, like male, female, old, young, it's just your treasure hunting. And I never sold, I never sold any of them. They're still in my garage.
+
+We've lost a bunch of them. A lot of times people will write their name and number on the back of the desk in Sharpie. And so that was fun too.
+
+Cause then you get to play like hero and text them like, I got your disc, come get it. And it's just, it was very fun. So the idea, I think you could monetize it.
+
+I think you can monetize anything. They have these devices that will beep if it sees plastic or if it senses plastic of some sort in a certain vicinity. And so I think you could build a tool where you could easily find these discs and like literally monetize it by just finding and selling these discs.
+
+And then you could monetize it by selling that tool. And then you can monetizing it. You could monetize it by filming everything.
+
+And it's the same principle as the dumpster dive King. People want to know, what are you reaching in the murky water for? What's coming out?
+
+There are guys doing this with golf balls. Like there are people that have built a decently sized business on social media, posting content about finding golf balls and then selling the golf balls on their website because people want to support them. So you're starting a social media channel and, but you've thought about the ways you would monetize it.
+
+It's not just the reviews. You'd also have a store that you resell this stuff. Yeah.
+
+You could monetize it by, but it's not done. So I went and bought a domain name when I had this idea, which isn't saying much because I buy all the domain name. In fact, at one point I owned 70% of the domain names in the world.
+
+Fun fact. Actually, hold on a second. Hey, Siri, remind me to buy all the domain names.com.
+
+Okay. I agree. Okay.
+
+Anyway, the domain name I owned was water fines.com, which is so similar to lost goods.com. Okay. Okay.
+
+Two words like, and that the idea was to do this and then to sell everything I found on this website. And is this going to be a $10 million business? No.
+
+Could it be a seven figure business? Yeah. I genuinely believe it could be even without social media, but I think someone should do this.
+
+I went and I let the domain name expire and now it's like a premium domain name for 10 grand. Someone like, it's not worth 10 grand. It's not, but like, yeah, if I wanted to buy it back, it'd be, it'd be 10 grand.
+
+Water fines.com. I love that idea. Fun.
+
+Get you out doing stuff with your kids. That's awesome. Absolutely.
+
+Someone needs to do it. Okay. Let's recap these ideas and then marry, date, or kill them.
+
+So we have first GPT for sheets, which is a tool that allows you to use AI in either cleaning your data or just helping you build out your spreadsheets. There is facilitating local dating events or just any niche group facilitating those types of events. And then there is water fines where you are starting a channel and posting that content and then either reselling the stuff online or monetizing from the channel that you can launch.
+
+All right, Chris, marry, date, or end kill. Which ones? Now, how are we monetizing GPT for sheets?
+
+I don't think we explicitly said how we're monetizing GPT for sheets. I think there's a lot of different applications that you can have for it, but it's just like implementing it in your business. I mean, we could theoretically just charge a fee to clean someone's data with it, right?
+
+We start for free. Say, hey, hey, I'm launching this business. I'm really good at cleaning data.
+
+I use AI, right? We could just go ahead and say that. Can I do it for free?
+
+Yeah. Yeah. Is it helpful?
+
+All right. What would you pay for this? Right?
+
+And then you kind of start pricing your way into it. Go the old deal. Shout out to Brandon Doyle method and charge basically nothing to start and just keep raising your prices until you start to get pushed back.
+
+Brandon Doyle beat, dude. That's right. All right.
+
+Brandon Doyle rules. All right. Just married, date, kill.
+
+Ooh. Oh, this is tough. It's like dependent on like the time of life that you're in.
+
+No, no. Stop horrifying. Just say it.
+
+Yeah. Marry GPT for sheets, date, water fines, kill dating idea. Okay.
+
+Marry GPT for sheets, date, facilitating local events and kill water fines. That makes sense. I would have guessed that for you as well.
+
+Okay. So we both said to marry GPT for sheets. I think to me, that's like, there are so many applications.
+
+Like you could start a ton of businesses or you could just make your own business more efficient. Like there's a ton of reasons. Why did you want to date the water fines?
+
+Because it's really, really fun and I would love it. It would be a grind to get to a meaningful amount of money, but it would just be so fun. And I like, I'm an introvert, like organizing events, like that gives me anxiety.
+
+So it's not really a knock on the business model or idea. It's, it's me. It's not me.
+
+It's you. I didn't like the water fines because I just, I think it'd be a grind. It would take so long to get it monetized.
+
+Like if I have something else that I'm doing, that's making me money and I want to have a side hustle or whatever, I think it's a cool channel to do. And I think it's fun thing to do with your kids. But I think for anybody listening who wants to just like start it as a business, I think it would be really, really hard.
+
+So for me, that's why I killed it. I didn't put the dating as number one. I think it's much harder to spin up than utilizing the GPT for sheets.
+
+I think utilizing GPT for sheets, you can do really quickly that the dating or facilitating niche groups, I think it's really, really difficult to get spun up. Also the, the dating thing, as far as we know, this could exist. We could sound like idiots right now to half the population.
+
+As far as we know, isn't really a thing. And that just makes me nervous. Right.
+
+I don't, I don't want to invent something new. Yeah. Yeah.
+
+So let us know what you guys think. Marry, date or kill. All right.
+
+That's a wrap. All right. What'd you think?
+
+Every Friday, hold co-bros on the Kerner office. Love you guys. Please share with a friend.
+
+All right.

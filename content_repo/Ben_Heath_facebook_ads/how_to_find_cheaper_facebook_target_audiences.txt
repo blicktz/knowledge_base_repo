@@ -1,0 +1,83 @@
+In this video, I'm going to show you how to find less competitive target audiences for your Facebook ad. Some audiences are now so competitive, there's so much advertiser demand for those people that advertising to them can be really expensive. This is fine.
+
+But there's a simple tool you can use to find out how many other advertisers are trying to reach the same people that you're trying to advertise to, and you can use it to find less competitive target audiences, less competitive target audiences, are less expensive to advertise to, and you're likely to see better results if you can find them. Now, the reason why that matters is because the cost of Facebook advertising is set by an auction. You are bidding against other advertisers for that ad real estate to put your ads in front of your target audience.
+
+Now, the supply, how many people are on Facebook and Instagram, how often they use the platforms, has remained fairly consistent. It's a massive supply. There's literally billions of people that are on these platforms every day, but that has remained fairly fixed.
+
+The demand, the advertiser competition, how much demand there is for that ad real estate has increased as people have scaled campaigns, as more advertisers have joined the platform. And therefore, what we've seen is that particularly with certain target audiences, the cost of Facebook advertising has increased significantly. And I think this situation was made a lot worse by the reduction in the number of targeting options.
+
+Earlier this year, Facebook removed thousands of different targeting options. And that meant that previously, you may have had advertisers, some advertisers are advertising this targeting option, some advertisers are advertising this targeting option. Perhaps those two things are related, but separate.
+
+Now, because there are less options, you're forcing more advertisers to use the same targeting options. That increases the level of competition and really makes certain target audiences a lot more expensive. So I think this can be a really useful video.
+
+If you're finding that your CPMs, your cost per thousand impressions are just going up and up and up, it could be because the competition for that audience is massive and you can find other ones and you see much better results. So how does this work? Let's go have a look.
+
+To do this, head into Ads Manager. I'm in an example Facebook ad account here. I've got an example campaign selected.
+
+I'm going to go ahead and click on Ad Sets. And then we're going to go ahead and do this for Ad Set number four. This is done at the Ad Set level.
+
+Now, you'll see that underneath Ad Set for here, the name of the Ad Set, we've got some options, one of which is Inspect. If you go ahead and click on that, we can see some really, really interesting data. Now, this Inspect tool shows us tons of stuff and I'm going to talk about a few different elements.
+
+But what I really want to highlight here is this auction competition section. That will show you how competitive, how many other advertisers are trying to reach the same people as you for a given time period. So here we've got an example campaign, well, an example Ad Set.
+
+As I said, we do this at the Ad Set level. And we can see we've got auction competition, which is this sort of thicker blue line. And the way it works is that 0%, that middle line is average competition.
+
+So obviously, everyone who's on Facebook and Instagram, there are advertisers trying to reach them. And just the dead average across the entire platform is represented by 0%. Therefore, the pluses and minuses show how it's either more competitive than average or less competitive than average when it comes to your target audience.
+
+Now, if we hover over this little eye, and you can see that this is exactly what Meta are describing here, but they've got a couple of reference points. So as a reference, a data point of 20% indicates high competition, while a data point of minus 20% indicates low competition. There's obviously going to be fluctuations, as we can see in this data here.
+
+But that's just a good reference point to where if you get up to say 50% or minus 20%, you're really talking about something quite substantial. Now, one thing that we can see interestingly about this line is that it changes quite a lot. So we start here in the first few days with average to slightly above average competition.
+
+Then it drops down significantly. And you can see this part is highlighted, explain that in a second, it dropped down significantly. So we go from on the, what day is that the 6th of June, we're at 24% auction competition.
+
+So it's quite competitive that day, we drop all the way down to the sort of minus 30% three or four days later. Okay, why did that happen in this ad set? Because it's going to be natural fluctuation anyway, but why such a significant change?
+
+Well, this point here, we can see that it says ad set targeting updated. And this auction competition graph will show you this, which is really, really helpful. And this is why I wanted to use this ad set because it highlights what I'm talking about here.
+
+Certain target audiences are much more competitive than others, and therefore much more expensive. So on June 6th, the ad set targeting was updated. And that has led to a massive decrease.
+
+We've gone from there 24% auction competition. So that's significantly above average, high levels of competition down, as I said, to minus 32%. That's significantly below average, low competition by changing the ad set.
+
+Now you can see that this hashed section, if we highlight this over here, is in the learning phase. So actually, this ad set stayed in the learning phase for quite a long time after the change was made, which does happen. There weren't many conversions on this particular ad set.
+
+It's not the best example in terms of performance to show. It's more because it has the interesting change in data, which is why I wanted to use it. You could ignore the cost per lead data.
+
+That's not super accurate in this case. Anyway, but what I wanted to talk about is the different levels of competition. Now, you can do this only with ad sets that have already been running.
+
+You can't use this in spec tool, take a look at a target audience and try and predict how competitive it's going to be, how expensive it's going to be ahead of time. So the way I would recommend you use this is create a lot of different ad sets. I'm a big fan of having five, maybe even slightly more ad sets running at any one time.
+
+Each ad set has one targeting option, run those. And then when you're assessing performance, one of the things you need to come back in and take a look at is this data auction competition and go, aha, this ad set that produced a really high cost per conversion, guess what? It's because there's loads of competition for it.
+
+This ad set that produced a really fantastic cost per conversion, there's actually far less competition for that. Great, let's go ahead and target it. It's a really useful data point to be able to use.
+
+You should also be using auction competition and taking a look at this data to try and work out what may have changed that's outside of things that you've done. Say you've got a campaign running, you've been using the same targeting options, the same ads for a while, and all of a sudden you either see a big spike in cost or you see a drop off in cost and you think, what's going on? What could be affecting this?
+
+Well, there's always going to be external factors to what you're doing that could have an impact. As I said, this is an auction, it's a competitive market. You can come in here and see, oh, actually, our auction competition level dropped off.
+
+Some advertisers that were previously competing with us for this target audience have decided not to advertise to them anymore or maybe left the platform in general, which is fantastic. That means it might be sustainable. Likewise, you could have the opposite.
+
+There could be more competition. It's a really useful tool to work out what's going on if you see a big change without you necessarily making a change. While you're using the inspect tool, I'd encourage you to come and take a look at the other data points that Meta provides.
+
+They're really, really useful information, things like audience saturation, which will help you work out if your results have dropped off. Is it because of audience saturation? Ad fatigue, effectively.
+
+You can see they give you a frequency number against your costs and you can see if your frequency is just keeping going up and up and that's led to a decrease in results. Maybe that's why you want to target different audiences or change up your ads and things like that. There's other interesting information here like auction overlap, whereas auction competition refers to the relationship between you and other advertisers in regards to targeting your audience.
+
+Auction overlap is how much are you actually bidding against yourself? If we hover over this little I, this graph shows how often your ads are ended up in the same auction as another from the same account. That's why if you've seen my stuff, you'll see I'm a big fan of often using one or just a few campaigns, not lots of different campaigns and not having situations where you've got duplicates of ad sets, duplicates of targeting options running simultaneously.
+
+People like to do that to test stuff and scale, but you end up with auction overlap issues. This is not something you want. An auction overlap of 1.68% is fantastic.
+
+You don't want that number to be really high. It's going to affect your delivery. And if I hover over this again, you'll see that to prevent you from bidding against yourself, we remove the less competitive ad set from the auction.
+
+So it just doesn't work out properly. One of the ad sets isn't going to deliver correctly. It's something that you want to avoid.
+
+Now, just quickly returning to auction competition, it's important that you're aware that certain industries are inherently a lot more competitive than others. So in some cases, you may be able to find less competitive target audiences, in which case fantastic. In other times, that's a lot more difficult to do.
+
+You might need to test a lot of options and always look at this data in relationship to your cost per conversion, whatever it is you're optimizing for. If you've got a great cost per conversion on a target audience, but the auction competition for that is quite high, that's still fine. The cost per result, cost per conversion should take precedence.
+
+This is extra data to help you make better decisions, but it shouldn't override the most important metric, which is how much it's costing you per purchase, per lead, et cetera. And before you go, there's something I want to quickly mention, and that's a free webinar I've created that covers one Facebook advertising technique, the single most important Facebook advertising technique that can make the biggest difference to your results. I cover it in a lot of detail.
+
+This webinar is completely free. The link is in the description below. I strongly recommend you go ahead and check it out.
+
+I think it'd be well worth your time. Once you've found the right target audiences, you are much more likely to succeed with Facebook ads. But it's also very, very important that you aren't making any of the most common Facebook targeting mistakes.
+
+I cover them in this video here. I strongly recommend you go ahead and check it out. Make sure you aren't jeopardizing your Facebook ad campaigns.

@@ -1,0 +1,151 @@
+Hi guys, it's Ben Heath from Lead Guru and in this video I'm going to give you a B2B targeting tutorial for Facebook ads. Now targeting on a B2B basis, reaching other businesses on Facebook is a lot harder than reaching end consumers, end customers. And because of that, that's led a lot of people to think that you can't advertise any sort of B2B products or services using Facebook ads or Instagram ads.
+
+And that's not true. B2B targeting is more tricky. It is more difficult to get right, but it doesn't mean that Facebook and Instagram advertising can't be very, very profitable for you if you operate on a B2B basis and that you can't reach your target market and generate great results.
+
+We've worked with a number of clients that have been able to do so. So that's what this video is going to be all about. How would you go about finding your target audiences when it comes to targeting B2B?
+
+Now, before I get into the steps, I just want to quickly mention that at the end of this video, I've got a couple of free Facebook advertising resources that I think you're going to find very, very interesting. So make sure you stick around to the end to hear about those. With that said, let's go ahead and get into the steps.
+
+So here we have, I mean, I'm in an example Facebook ad account, by the way. And the first thing I'm going to do when it comes to talking about B2B targeting is it's finding your audience is the tricky part. Okay.
+
+And there are some tips and techniques that we have that you can use to find your audience. Not every business will be able to do what I'm about to say, but the single best audience that you can use is a lookalike audience based off of previous customers. Now, not every business can use that because of course, if you're brand new, if you don't have more than a hundred previous customers, which you may not do, obviously B2B people tend to work with a fewer number of customers, not always, but sometimes.
+
+If you don't have more than a hundred previous customers, then you're not going to be able to target a lookalike audience based off of previous customers. If you do have more than a hundred previous customers, absolutely fantastic. This is going to be the best audience for you to use.
+
+Almost, you know, a hundred percent sure that that would be the case. Let's say 95% sure. 95% of the time, that's what happens.
+
+And so you can go ahead and use that. I'm going to show you how to create that in a minute. If you don't have more than a hundred customers, don't worry.
+
+Once I create showing people how to create the lookalike audience based off previous customers and how to target that, I'll then show you some other techniques and tips you can use to find really good targeting options for whatever it is that you're looking to, to find the people that you're looking to advertise to. Okay. So to create a lookalike audience based off previous customers, you want to go ahead, and I'm in Facebook ads manager, by the way, you want to go ahead and come over to audiences.
+
+Okay. And to create a lookalike audience based off previous customers, you first need to create a custom audience. You need to upload your list of previous customers to Facebook, and then obviously create a lookalike audience based off of that.
+
+So you want to go ahead and click on create audience and custom audience. And then if you've got this data in a customer list, you want to go ahead and select customer list and click next down here. Your customer list may or may not have lifetime customer values assigned.
+
+So in your CSV file, your Excel spreadsheet, have you got a value alongside each customer? If yes, select yes. Fantastic.
+
+That's useful because you're telling Facebook, look, these customers were worth more to me than these customers. Therefore, I would like you to prioritize these higher value customers when it comes to creating the lookalike. But most of you won't.
+
+So you can go ahead and click no. Then you either want to copy and paste your data in. So as I said, depending on how you've stored your data when it comes to previous customers, copy and paste data in, or you can just upload a CSV file.
+
+As I'm going to do, I've created one here called example customer list 0320. That's the name I'm going to give it. In fact, let me just call this customer list 0320 because I've already actually created this in a previous demonstration video.
+
+As I said, this is an example, Facebook ad account. Then I want to click next. And now you need to match the data in your customer list to the identifiers.
+
+So basically you're telling Facebook, you uploaded a list full of data, right? You're telling Facebook, this column refers to this lot of data, this column refers to this lot of data. So this is just a phony list.
+
+So I've just put in some examples. You can see we've got johnsmith at example.com and things like that. So that's, yes, that is email addresses.
+
+That's right. But I've got up here, that's one that Facebook was able to map. I've got up here action needed.
+
+So we've got john, will, Jane, these are first names. I've got Smith Stevens Doe. These are last names.
+
+Okay. So now we've mapped three identifiers and we can click upload and create down here. The more identifiers you can match, the better.
+
+Because the way Facebook creates custom audiences is they basically take the data that you give people and they try and match that to people's Facebook profiles. So that's why they need things like email addresses, phone numbers, names, because they're going to go, aha, this data set on this CSV file matches this Facebook profile. This is the right person.
+
+Include that person in the custom audience. And then that's basically how Facebook uses these things. Facebook is not going to be able to match everyone.
+
+Okay. So you're probably only going to get match rates of let's say 40, 50%, something like that. Nothing you can do about that.
+
+Well, the more information you give the better, but there's not a lot you can do about that. And when it comes to B2B targeting on Facebook specifically, your match rates are likely to be lower because if you've got things like email addresses, phone numbers, these might be business email addresses, business phone numbers, and they may not correspond with someone's personal Facebook account. So you may see match rates of 20, 30%, which is frustrating, but not a reason not to use this audience.
+
+It can still perform very, very well. Okay. And just quickly as an aside to that, another point I want to mention is that some people will say that business owners or the people I want to reach aren't on Facebook when it comes to B2B targeting.
+
+Absolute nonsense. Just about everyone is on Facebook and Instagram. Everyone who's not a child or not over the age of, you know, 70.
+
+I mean, obviously there are exceptions, but the percentage of people that are on either Facebook or Instagram or both between the ages of, let's say, I don't know, 15 and 65 is absolutely enormous. You're talking 90 plus percent. So your audience, whether it's a CEO of a company, whether it's the owner of a law firm, that person uses Facebook and Instagram, has a Facebook and Instagram account, most likely.
+
+So don't worry about the fact that they're not on there. Okay. So we've created that custom audience and now we want to create a lookalike audience.
+
+So I want to pop in, let's say the UK in here based off our customer list, one percent. And I'm going to include a link in the video description below with a more detailed tutorial around creating lookalike audiences, because if you're not familiar with the process, I'm sort of breezing over these things. That's not really what this tutorial is about.
+
+It's a B2B targeting tutorial for Facebook advertising. So I'll create a link to that in the, I'll add a link to that in the video description below. Just here, I want to quickly mention that in terms of when it comes to size, if you're operating nationally and internationally, you want to go 1%.
+
+If you're operating on a local basis, you need your audience size to be larger. So go ahead and select something larger, maybe even 10% if you're advertising in quite a tight area. Right.
+
+So we've now created our custom audience called customer list 0-320. And we've also created a lookalike audience called customer list, a lookalike audience based off that customer list. Now, the reason why that target audience performs so well for B2B targeting is because when it's hard to identify your target market on Facebook, by saying to Facebook, look, these are all our customers.
+
+These are the people that have worked with us. Find me people that are very similar to this group of people. That's, you can see why that would perform so well.
+
+You know, let's say you only, you just work with law firms and you want to reach either marketing directors or partners or owners of law firms. If you upload a list full of those people, people that meet that criteria, say to Facebook, find me people that are very similar to this group. Facebook's going to be able to work that out.
+
+They're going to be able to identify other people that are law firm owners, partners, marketing directors in those sorts of companies. And that's who they're going to include in this lookalike. That's why it performs so well.
+
+So let's go ahead and jump back into ads manager. Okay. Now let's say we want to target that lookalike audience based off of previous customers, which is fantastic for B2B targeting with Facebook ads.
+
+I've got an example campaign here. I'm going to select that and go to the ad set level. Targeting is done at the ad set level.
+
+I'm going to highlight that, select edit, and I'm going to scroll down. I'm going to pop in this newly created lookalike audience in there. And boom, that's it.
+
+410,000 people in the UK. When it comes to lookalikes, again, you'll find out more about this in the more detailed lookalike audience tutorial, but you want to leave everything else open because you've already told Facebook, I want you to advertise to people that are just like people on my customer list. So you don't want to have to narrow it down with things like age ranges, gender, and things like that.
+
+Okay. Usually, there are exceptions covered in the tutorial, but usually. So that's one of the options.
+
+But as I said, there's lots of people that don't have 100 plus customers in a customer list in order to use that as your B2B targeting option. So let's assume that that won't work. You need to come down to the detailed targeting options.
+
+And if you would say you wanted to advertise just to lawyers, let's keep that example. You could enter in lawyers in here. Okay.
+
+Or lawyer. And then you want to go ahead. So here we've got lots of interest, but you want job roles, if it comes up as an option even.
+
+Right. Let's see if we can browse. So we do demographics.
+
+If we do work, and we do job titles, and let's see if we can pop in law in here. So law enforcement. So lawyer doesn't even come up as an option.
+
+Perfect example of what I wanted to demonstrate. I thought it would come up as an option. And we'd have a few examples of it, but it doesn't.
+
+Now, the reason why that's a perfect example is that advertising to people based on their work is very, very difficult. Not a lot of people upload work information to their Facebook profiles. They don't say, you know, what they do for a living.
+
+So even lawyer, which is obviously a big category of people, isn't an option. If it was an option, there would probably only have been, let's say, 20,000 people in it, even though there would be far, far, far more lawyers in the UK than that, maybe even 10,000. So trying to target people by job title, either it won't be an option most of the time, or it will be an option, but the audience will be so small that it's not a viable audience to advertise to on Facebook.
+
+So that doesn't really work. So if that's the case, what would you go about doing? One of the options I really like to use is to target people that are interested in the governing bodies, the organisations that sort of control certain industries, okay?
+
+Because the people that like those, are interested in those on Facebook, are highly likely to be lawyers and people who work in that industry. You're not going to be, you know, you're not going to have liked a post or follow a page from, you know, a governing legal association in a certain country, unless you're a lawyer involved in that. You're just not.
+
+So by targeting people interested in those organisations, you're highly likely to be able to, um, you know, to target an audience that primarily consists of the people you want to reach. Okay, so how would you go about doing it? I have no prior experience targeting the, you know, whatever the associations are in the legal profession or anything like that.
+
+So very simple, you come out to Google and you pop in something like this. So I've just searched here for Law Association UK, and the first thing to pop up is the Law Society, okay? So we come back into Ads Manager, is that an option?
+
+Law Society, yes it is. Okay, so the Law Society is an option. Now it's a little bit small, it's only 9,600, so you probably want to target this, um, in conjunction with some other options.
+
+But this is the sort of thing that you might be able to go about, um, targeting something that comes up like that. We're targeting the UK right now, if you were to add in the US, um, as an example. And we put in, if I remember rightly, the American, uh, Centre for Law and Justice.
+
+We've got 2.8 million, probably a little bit large, you might want to narrow that down with, you know, probably if you're looking to reach lawyers who are in a position to work with you, what are they going to be? Probably 30 at the low end. In fact, that's probably too young, you're probably talking more like, uh, 35 I imagine.
+
+But you know, sort of thing, you might want to just reach women, men, etc, etc. Okay? All sorts of things you can do.
+
+Okay, so using these governing bodies as a way of finding, uh, interest targeting, which could be a great way. Another one is think about the publications that people in a specific industry may read and follow. So do they read certain, do they have specific magazines, maybe even TV shows that are specific to people in that industry?
+
+Are there blogs? Blogs is a great one. People in your target industry will consume content and will follow, uh, businesses, media outlets, publications that will show up as interest targeting options in Facebook.
+
+So just exactly as we did with these sort of, uh, uh, associations and societies, uh, you know, the Law Society and things like that here, you can go about finding other options. Think about magazines, think about blogs, think about TV shows, think about radio shows, think about, uh, personalities they might follow. Maybe there's people in their industry that teach people how to, uh, build a successful law firm.
+
+Okay? And if you can target people that are interested in that person, then again, though that target audience is going to contain your ideal prospects. So you have to get a bit creative when it comes to B2B targeting.
+
+Um, hopefully that's been useful. It is possible. You absolutely, once you've got a hundred customers want to focus up on the lookalike audience base for previous customers down here.
+
+In the meantime, I've given you a bunch of ideas down here for things you can go about finding process and show exactly how we do it. It's not rocket science, not very complicated, but you might need to get a little bit creative to find some options and really think about your industry and what it is you can use. Right.
+
+At the beginning of this video, I mentioned a free Facebook advertising resource I'm going to tell you about right now, and that's a free webinar. A link will be in the video description below that's called three killer Facebook advertising strategies to double or more your revenue. And in this webinar, we cover three strategies, three Facebook advertising sales funnels that we've generated seven plus figures for with our clients on multiple occasions.
+
+They're very much tried and tested. I would strongly, strongly recommend you check it out if you want better results from Facebook advertising. Um, cause look at the end of the day, it doesn't matter how good your targeting is.
+
+Doesn't matter how engaging your ad creative is. If you're not using the right sales funnel and the right strategy for your business, your Facebook advertising efforts will be wasted and you will be wasting money. So it's, I could not more highly recommend you go and watch that out.
+
+If you like my content, if you want better results from Facebook, it's 60, 70 minutes long, something along those lines. And you can click on the link in the video description completely free, and you can go ahead and watch it right now. I think you find it very valuable.
+
+Other thing I want to quickly mention is our Facebook advertising services. So if you're running ads on Facebook and you would like to work with a professional agency, have them create, manage, optimize your Facebook ads for you. We can do that.
+
+And if you're spending more than $3,000 a month or want to spend more than $3,000 a month, that's our cutoff. You can book a free phone call with me where I can just find out a bit of information about you and your business. I can tell you how we can help the fantastic results we're achieving for a lot of our other clients and all that sort of stuff.
+
+No obligation, of course, there will be another link in the video description. Go ahead and book a call with me if you would like. I've got a free Facebook ads mastermind group that you can also join.
+
+It's got 28,000 members in there right now. Fantastic community full of Facebook advertisers achieving fantastic things, answering questions, helping each other out. Completely free to join.
+
+Again, link in the video description. There'll be lots of links in the video description. But that's it.
+
+That's all I've got to tell you about. If you enjoyed this video, please give it a thumbs up. Always really appreciate it.
+
+Please subscribe to my YouTube channel for more Facebook advertising related content. And of course, any questions or any feedback for me, pop that in the comments below and I will answer that for you. Great.
+
+Thanks a lot, guys. Bye for now.

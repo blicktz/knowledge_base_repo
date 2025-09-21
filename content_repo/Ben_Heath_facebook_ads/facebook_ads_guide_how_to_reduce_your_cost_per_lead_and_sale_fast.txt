@@ -1,0 +1,69 @@
+In this short Facebook Ads Guide video, I'm going to show you how to quickly reduce your cost per lead and sale without using video ads, split testing, or new campaigns. The secret? A new strategy called the Exclusion Marketing Method.
+
+I recently used this strategy to help reduce my cost per lead from £1.59 to just 70p, which is a 56% decrease. I'm Ben Heath, the founder and CEO of Lead Guru, which is a London-based digital marketing agency. And in this video, I'll show you exactly how the Exclusion Marketing Method works step by step.
+
+You probably already know that there are a number of different campaign types that you can use for your Facebook Ads. And by selecting a campaign type, you are selecting an objective for your campaign. This is very important because Facebook will optimise your campaign for that objective.
+
+For example, if you create a traffic campaign, then Facebook will try to generate as much traffic as possible for you. Their targeting algorithms will automatically try to find people within your target audience that are most likely to click on your ad. This is a fantastic feature of Facebook advertising and it makes all our Facebook ad campaigns a lot more effective.
+
+But it does create one big problem. I'm going to show you how the Exclusion Marketing Method solves that problem. Now, to explain how this works, I'm going to use a Facebook campaign with the traffic objective as an example.
+
+But the exact same issues apply to PPE campaigns, which is the campaign type that is automatically assigned to your Facebook ads when you boost a Facebook post. When you create a traffic campaign, Facebook will serve your ad to people that are most likely to click on the link. One of the biggest factors in determining whether someone is likely to click on your ad or not is whether they have already clicked on it previously.
+
+People that have already clicked on your ad are obviously interested in what you are advertising, so they are highly likely to click on it again. Facebook's targeting algorithms know this and they will often show your ad to people that have clicked on it in the last few days. On the whole, this is a good thing because not everyone will convert into a lead or sale the first time they click on your ad and come through to your website.
+
+After that first click, a lot of people will take some time to think about what you're offering or just become distracted and simply forget about it. You don't want to miss out on easy leads and sales, so advertising to these people is important. But of course, a lot of the people that have clicked on your Facebook ad will have converted into a lead or sale.
+
+And continuing to advertise to those people is a waste of money. You need to distinguish between those people that have clicked and converted into a lead or sale and those people that have clicked and not converted. Once you do that, you can then exclude people that have already converted from your Facebook ad campaigns.
+
+I use the exclusion marketing method to do this for our clients. It's a simple three-stage process and now it's time for me to show you how I use it and how you can use it as well. Step one is to install the Facebook pixel.
+
+To identify the people that have already converted, you need to be able to track what people are doing on your website. And to do that, you need to install the Facebook pixel. To install the Facebook pixel, the first thing you need to do is go to the pixels tab in your Facebook ad account.
+
+Then you need to click the setup button and that will bring up a window that looks like this. Here you have a couple of options. If you are using one of the platforms listed in the first option, then you can simply select this option and follow the installation instructions.
+
+Otherwise, you will either need to install it yourself or hire a developer to install it for you. If you don't use one of the platforms listed in option one, you most likely have a WordPress website. So I'm going to show you how to install the Facebook pixel on a WordPress website.
+
+But remember, you always have the option of hiring a developer to install this for you. You can find a developer to do this for you on upwork.com or fiverr.com and it won't cost a lot at all. So to install the Facebook pixel on a WordPress website yourself, you don't actually need to select the second option.
+
+You just need to make a note of your Facebook pixel ID, which you can find by selecting option three. Copy your pixel ID and then head over to your WordPress website and go into plugins. The easiest way to install the Facebook pixel on WordPress is to use a plugin.
+
+There are a number of plugin options, but my favorite is pixel cat. Install that plugin and then activate it. And that will bring up a page that looks like this.
+
+Then you can simply paste your Facebook pixel ID into the text field, click save and that's it. The Facebook pixel is now installed on your website. Let's move on to step two, which is to create a custom audience.
+
+Now that you have the Facebook pixel installed, you're tracking the number of people that are visiting your website. But for the exclusion marketing method to work, you need to identify the people that become a lead or make a purchase. That way you can exclude them from your target audience.
+
+To identify these people, you need to create a website custom audience. So within your Facebook ad account, you need to go to the audiences tab, then select create audience and custom audience. That will bring up a window that looks like this.
+
+There are tons of awesome options when it comes to custom audiences. But for the purposes of this video, you should select website traffic. Here you'll need to change a number of options.
+
+First, change all website visitors to people who visited specific pages. Then change URL contains to URL equals and adjust the time period from 30 days to 180 days. Now you need to take the URL of the thank you page that people are taken to after they convert and paste that into the text field.
+
+For example, here is the thank you page that people are sent to after they inquire on our website. If I had a Facebook campaign that was designed to generate inquiries for our services, then I would exclude the people that have already inquired and visited this page. I would copy the URL of this page and paste it into this text field.
+
+Then simply name your custom audience and select create audience. Your custom audience may take a bit of time to populate. With that step two, you've now created your custom audience.
+
+Let's move on to the third and final step in the exclusion marketing method, which is to exclude this custom audience from your Facebook ad campaign. This step is very quick and easy to do once you know how to do it. So jump into your Facebook ad account and go to ads manager.
+
+Then select the campaign that you would like to exclude your custom audience from and navigate to the ad set level. In the audiences section, you will see a custom audiences text field. Beneath that there is a little exclude button and when you click on that, another text field will appear.
+
+Go ahead and add your new custom audience into that second text field and save the changes you have made. Now, the people within that custom audience will not be shown any ads from that ad set. And that will significantly reduce your cost per lead in sale because you won't be wasting part of your ad budget on people that have already converted.
+
+In fact, soon after implementing the exclusion marketing method on one of my lead generation campaigns, my cost per lead went from £1.59 to just 70p. Of course, the exclusion marketing method was just part of the story. I also ran a number of split tests to improve my ad creative and my targeting options.
+
+But excluding people that had already become a lead from my targeted audience definitely made a significant difference. Now, before we wrap up, I want to let you know about something that will really help you improve the results you're getting from your Facebook ads. And that's a five part Facebook ad template that I've created and that you can download right now for free.
+
+In this ad template, I've included some of our best performing ads that we have created for our clients in a number of different industries. I've broken each ad down and explained what we've included in each and why. And if you're looking to promote your business on Facebook, then I think you'll find this ad template really, really useful.
+
+You can obviously model from the examples given and it should really help you guys out. So as I said, you can download it right now for free. All you need to do is head over to leadguru.co.uk and you can download it there on our homepage.
+
+And if you like this Facebook ads guide video, make sure you subscribe to my YouTube channel right now. Just click on the subscribe button. Now I want to turn it over to you.
+
+Have you heard of the exclusion marketing method before? If not, let me know by leaving a comment below right now. I'm just going to show you it.
+
+Great internetred opinion. I like by leaving reporting. Oh, God.
+
+I'm going to do it right now. Find that out. I'll do it right now.
+
+Let me know. We're trying to answer the questions.

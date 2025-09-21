@@ -1,0 +1,133 @@
+Hi guys, it's Ben Heath from Lead Guru and in this video I'm going to show you how to install the Facebook Pixel. Now it's absolutely essential if you're advertising on Facebook that you do install the Facebook Pixel and make sure that you're using it correctly because number one, it allows you to optimise for whatever it is that you want to optimise your Facebook ad campaigns for. Let's say for example you're looking to generate purchases or looking to generate leads.
+
+Well if you have the Facebook Pixel installed on your website, you can tell Facebook, I want to generate purchases, I want to generate leads, and they will optimise your campaigns so that you generate more purchases and leads. They will improve your campaigns to help you achieve that objective. That's a huge point.
+
+The second thing is that the Pixel is what allows you to retarget with Facebook advertising. You've probably heard of retargeting and heard how effective it can be, but it is true. If someone's already visited your website but they didn't purchase, they didn't become a lead, it's very, very effective to advertise to that person again, retarget them, put ads in front of them and get them to take action.
+
+Because if someone didn't buy the first time, it doesn't mean they're not interested, they may just become distracted or it wasn't quite the right time. So retargeting is very, very effective and you need the Facebook Pixel installed on your website in order to be able to retarget. So absolutely essential if you're doing any sort of Facebook advertising and you're sending people to your website that you have the Facebook Pixel installed and that's what we're going to very quickly cover in this video.
+
+So right now I'm in a demonstration Facebook ad account, you can see all sorts of stuff down here, don't worry about it. I am in ads manager. If you don't know how to get here, what you need to do when you're in your Facebook profile, you're going to have a little arrow up here, it'll be in black, a little downwards arrow.
+
+Click on that and then you should see manage adverts, manage ads, something like that. Click on that button and you will come in to a view that looks something like this. But for the pixel, we need to come out of here, we need to select these three lines up here and I've got it infrequently used in pixels but you might not, in which case select all tools and under measure and report and events manager you will have pixels.
+
+So you want to go ahead and select that. Now if you've never used the Facebook pixel before, then you might not have it set up. So you might not have this data in here where we've got various things, various events and things like that.
+
+That's absolutely fine. It might just have a blank sort of screen that says set up pixel. That's not a problem.
+
+I've already done this demonstration in this ad account so I'm sort of showing you the process. But all you want to do is go in and in my case, I'm going to select details and then what you will see once I've done that is that there is a setup button. No matter what screen you've got, there will be a setup button somewhere.
+
+That's what you need to find. If you're just setting up the pixel to start with, go ahead and click setup. If you've already set it up but haven't installed it on your website, then you'll have a view that's more in line with what you can see here.
+
+So we want to click setup and we want to go with install pixel. And now everyone should be in the same space, no matter whether you've set up the pixel or not before. So if you're fortunate enough to use one of these partners, things like Squarespace, WordPress shop, in fact I'll open it up here.
+
+Things like Squarespace, Kajabi, Magento, etc. Installing the Facebook pixel is very, very straightforward. Just click on the various option and go through the steps.
+
+Basically what will involve it, all you need to do is put in your Facebook pixel ID and then these platforms for the most part, you know, some of them are slightly different, will automatically populate your website with the pixel code and you know, for example, Shopify will then feed all the data back into your ad account, how many purchases you generated, what the sales value is worth from those purchases, how much it costs you to generate those purchases, all this fantastic data, they'll do it very easy. So I'm not going to show you obviously how to go through each and every one of these options. It's very straightforward.
+
+If you do use one of these, come through and check the list. Just go ahead and click on them. Follow the steps.
+
+Facebook make it very, very simple and then go through and complete them and the Facebook pixel will be installed in the website. Very straightforward. What I'm going to do, and in fact I'm going to click back, but what I'm going to do instead is show you how to install the Facebook pixel on a WordPress website.
+
+So imagine a lot of you guys that are watching this are either using one of these platforms up here that's got easy integration or you're using a WordPress website and it's very, very straightforward to do with a plugin. And there are lots of other platforms that operate in a similar way to WordPress that have plugins that you can simply install the Facebook pixel with. And this is the easiest way.
+
+So don't worry about manually adding pixel code to your website. That all gets very complicated. All you need is your Facebook pixel ID.
+
+So if I close that down and you can see this here, and in fact Facebook make it easy, I can just click and copy that to ClickBoard, that that number is my Facebook pixel ID. That's very, very important and that's all you need. Now if I go into a website, now the website I'm going into is a website called All Doggoes.
+
+It's just a dog training related blog style website that we own. It's just a content website at the moment so we don't have all sorts of plugins and the Facebook pixel and all that sort of stuff installed on there. But I thought this would be a great example to show you how to install the Facebook pixel on a WordPress website.
+
+So what you want to do is you want to come into your WordPress dashboard. You want to navigate to plugins, which is what I've already done and what you can see in front of you. And then you want to click Add New.
+
+Okay, and then there are lots of different extensions you could use to install the Facebook pixel. I have always used and really like using PixelCat. Never lets me down.
+
+So you can find that one, you could use one of the other options. I'm going to show you how to do it in PixelCat because that's the one that I've used for years. So install now and then obviously activate.
+
+Okay. Okay. Then I will show up on this left hand side down here.
+
+Facebook pixel. Okay. And now what I need to do is copy and paste my ID in here.
+
+As I said, I've already done this in this account, but I want to demonstrate you there. So that would normally be blank. You would just come in, paste your pixel in there and click Add New.
+
+Okay. And I'm going to delete this because I'm going to show you how the process. So what this does by pasting that in there and clicking save down here and installs the base Facebook pixel code throughout your website.
+
+So that means you can track people that are visiting your website in the basic form. So you know how many people have visited your website, when they visited your website, you can then retarget, all that sort of stuff. But if you want to go one stage further and create a conversions campaign on Facebook, which I talk about a lot, check out my other videos if you're not familiar with that.
+
+If you want to create a conversions campaign and you want to optimize for something like lead. So you want to tell Facebook, look, I'm trying to generate leads. This is what a lead is.
+
+Well, then you need to install some event code and set up the pixel to track events on your website so that Facebook knows what a lead actually is. So I do that down in this event section. Let's click Add New.
+
+So there's a number of different triggers with the basic, you know, unpaid for version of PixelCat. You can only select page which is absolutely fine. Now what you want to do is you want to select the page here.
+
+Let's say we want to track leads, for example. So there's lots of standard events that you can use. I want to track leads.
+
+You want to select a page here that people are taken to after they become a lead. So after someone fills out your contact form or signs up for a newsletter or opts in for an email list, what page are they taken to? You want to use that thank you page.
+
+Okay, so we don't have anything like that set up on this website, but I could just, for example, go ahead and pop in the contact page and say anyone that visits my contact page, I want to register them as a lead. And that means that anyone visits the contact page will register as a lead and then Facebook knows. As I said, normally that would be a thank you page that people are taken to after they take a specific action.
+
+Okay, don't need to worry about any of this stuff. You can just click Save. And now we've got that set up so that anyone who visits my website can be tracked.
+
+We know that they visited the website. The pixel is picking them up. And we've got the lead event code so that anyone that visits the contact page triggers as a lead.
+
+And as you can see from these events, you can use all sorts of different event code to track different actions that people take on your website. It can be very, very useful. You can sort of have a play about with that and think what actions do I exactly want to track.
+
+The obvious one I've shown you is lead. Things like add to cart purchase, you're probably less likely to use with PixelCat because most of the time you're going to be using one of those shopping cart platforms like Shopify and things like that. And they will populate all that for you when you pop in the Facebook Pixel ID.
+
+It's all based around that number. So, in fact, I'm going to cancel that because I don't want to add anything else. So that's the Facebook Pixel now installed.
+
+But one thing we need to do is check that it's working properly. That's really important. So I'm just going to open a new tab here and go to All Dogos.
+
+Okay, so this is what the website looks like. Now, you can't see it. In fact, let me just pull the screen down slightly.
+
+There we go. So you can see it now. So this here is a Google Chrome extension called the Facebook Pixel Helper.
+
+I'll include a link to that in the video description. And what this means is that this Google Chrome extension, obviously you have to be in the Google Chrome browser to be able to see this, will tell you if the Facebook Pixel is installed on the page that you're on. And it will tell you if any event code is installed on that page as well.
+
+It's a really, really valuable tool to quickly go in. You don't have to check any code or anything like that. You can just tell.
+
+Completely free to use. So I definitely recommend you install the Facebook Pixel Helper. And by the way, it'll work on your website, anyone else's website.
+
+So if you're wondering, are they advertising on Facebook and you've got questions around that, the Facebook Pixel Helper will tell you whether or not they are. Because if you've got the Facebook Pixel on there, there's a really good chance they are advertising. So you can see that that's got two there.
+
+I click on this and you can see that this is the homepage. And yet this Facebook Pixel is installed and we're tracking page view. Page view is the standard, as I said, that's the base code that goes on your whole website that tracks where people go on your website, the pages they visit and the fact that they've been there.
+
+Page view. Very, very straightforward. Now we've installed some event codes.
+
+So you want to make sure that that works as well. Now, if I go ahead and put in contact into there and we'll navigate to the contact page, which is where we installed our lead code, you can see that that's now a three instead of a two. And you can see the Facebook Pixel Helper is confirmed that it is registering page view and it is registering leads.
+
+So everyone who visits that website is obviously a page view, as is people who visit other pages, but they're also getting registered as a lead. Now you can be a little bit more advanced with these events. So for example, I could assign a value to the lead.
+
+Now if I quickly come back in here, I can, for example, oh, that's live. I'm sure I can edit this. You know, we can add in parameters.
+
+Here we go and pop in a value. So let's say I know that each lead is worth, you know, a hundred pounds to my business on average. You might be able to make that sort of calculation.
+
+I want to make sure that that's activated. Click save. Now, if we come back to this page, the contact page, and I refresh this page, we're still registering obviously page view and a lead as we wanted, but we can also see that the value there is a hundred pounds.
+
+GBP is the currency. Now that data will be fed back into my Facebook ad account. So if I'm advertising on Facebook and I'm generating leads for, let's say, you know, 20 pounds each, the value can be displayed, the lead value can be displayed in the columns within my Facebook ad account, which is absolutely fantastic.
+
+It's particularly valuable for, you know, e-commerce businesses and businesses that are selling products and people's order values vary. With leads, they're going to be, you're going to take an average. So you can make that calculation quite easy yourself.
+
+But with e-commerce businesses, business selling products, there might be quite a big valuation in the value of a customer. That data will be fed back into your Facebook ad account. You can see yesterday we spent $350.
+
+We generated $800 in sales. You know, that's a 2.2x return on ad spend. That's great.
+
+Or that's not high enough. You can use that information to make your decisions. So there's all sorts of really cool stuff you can do with the Facebook Pixel.
+
+I'd strongly, strongly recommend that you get it installed. As you can see, it takes minutes to get it installed. We've now got this installed.
+
+We've also got an event installed. We've also got some values being fed through. Very, very easy things.
+
+Those are the only three things you need to do with a Facebook Pixel. Very easy to do and very easy to get it installed on a WordPress website. And as I said, if you're using a platform like Shopify or something along those lines, it's even easier than the process that I've just been through.
+
+So hopefully that video has been useful. One thing I want to quickly tell you about before you go is my five-part Facebook ad template, which you can download right now for free. Now this Facebook ad template includes some of the best performing ads that we've created on Facebook for a number of different clients in a number of different industries.
+
+And we've broken each ad down into its component parts and explained what we've included in each and why. So if you're looking to get better results from Facebook, looking to improve your Facebook ads, you should find this tremendously, tremendously valuable. You can download it right now for free.
+
+As I said, all you need to do is click on the link in the video description. That'll take you to a page on our website and you will be able to download it there. So as I said, hopefully this video has been useful.
+
+If it has, please, please, please give it a thumbs up. Give it a like. It only takes a second, but I really appreciate it.
+
+And don't forget to subscribe to my YouTube channel. You know, I release Facebook advertising related content like this, help you achieve Facebook advertising related things all the time, every week. So if you want to find out more about that, then subscribe to the channel.
+
+If you've got any questions or you want to let me know what you think of this video, please comment below. Always appreciate it when you guys comment below and let me know that this video was helpful, shows me that I'm doing the right thing. So I'd appreciate that.
+
+Anyway, thanks a lot guys. Bye bye.

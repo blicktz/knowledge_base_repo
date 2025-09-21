@@ -1,0 +1,49 @@
+Hi guys, it's Ben Heath from Lead Guru and in this video I'm going to show you how to make sure you aren't optimising for accidental clicks with Facebook ad campaigns. If you set things up wrong, it's very easy to be generating a lot of accidental clicks which are obviously not going to do anything for your business, a wasted budget, so very very important topic to quickly cover. Before I get into it I want to very quickly ask you to smash that like button and of course subscribe to my channel if you haven't done so already.
+
+Okay, so I've created an example Facebook ad campaign and this is a traffic campaign. Now this problem is most common with traffic campaigns and most of the time I recommend that advertisers use conversion campaigns but for many reasons people aren't able to use and conversion campaigns they haven't got the pixel set up, they're not sort of technical and can't get that so they end up running with traffic and a lot of Facebook advertisers end up using traffic. Now when you use the traffic campaign on Facebook, Facebook is going to try and get you as many clicks as possible.
+
+Facebook is not necessarily going to be able to distinguish between a intended click, so someone that saw an ad thought I like the look of that, clicked on it and came through to your website and an accidental click, someone who was scrolling through their feed or in one of the various other locations and accidentally clicked on an ad. Now Facebook when you run a traffic campaign will put your ads in front of the clickiest people. Some of the clickiest people are just going to be quite clumsy and they're going to accidentally click on a lot of stuff.
+
+I mean I would say that I'm tech savvy, I use these devices a lot, I would say I'm not super clumsy on the device like potentially older audiences might be and I still accidentally click on things all the time. I'm sure you do on your phone whether you're on social media platforms or elsewhere you click on stuff, I didn't mean to do that, you quickly click the back button and all that sort of stuff. It's certainly not something that you want and there have been studies done that suggest that as many, as much as 25-30% of all the clicks on ads on Facebook and Instagram are accidental, they weren't intended.
+
+So it can make a big difference to your campaigns if you run a traffic campaign and you just basically allow Facebook to go ahead and go ahead and get the clickiest people possible. And there are some things that you can do to help avoid that, to help make sure that you aren't wasting your money on accidental clicks and you aren't actually allowing Facebook to optimise for accidental clickers because that's certainly not something that you want. So the very first thing is your placement options.
+
+So Facebook recommends you go with automatic placements and if you're running something like the conversions objective that's what I recommend as well. But if you are running traffic I would go with manual placements and I would limit yourself to just the feeds, Facebook feed, Instagram feed and stories for the most part. Okay so let's go ahead and deselect, I'll show you exactly how I would, I'm normally going to get rid of stories and reels and then everything else is going to go.
+
+So we just end up with Facebook feeds, Facebook feed, Instagram feed, Facebook stories, Instagram stories and this is what that will look. There are other placements you may want to add in but that's where the majority of the high quality traffic is going to come from, those four placement options. That's what I usually narrow it down to.
+
+You're much more likely to get accidental clicks for example on an in article or on the audience network because it's just the way those, the ads appear, it just lends itself much more naturally to accidental clicks. I'm sure you've had probably more experiences of making, I certainly have, of making accidental clicks on articles and things that you may be online as opposed to in the actual feed of Facebook, Instagram itself. That's more common.
+
+So get rid of those, that's the very first thing that you can do. The next thing I'll scroll down here is the optimization for ad delivery. So the default with a traffic campaign is link clicks.
+
+So Facebook's going to try and get you as many link clicks as possible. Now that can lead to Facebook going for the clickiest people, right? And the clickiest people that might be intentional, it might be accidental.
+
+So if I deselect, if I change from link clicks and go instead with landing page views, and you can see if I allow it here, we'll deliver your ads to people who are more likely to click on your ads link and load the website or instant experience. So they're not counting anyone that clicks because someone clicks accidentally, they're going to hit the back button straight away and disappear. They're going to only count the people who click and allow the page to load as having completed the task and that being the type of person that you want your ads to be put in front of and that's what they're optimizing for.
+
+Okay, so changing that to landing page views, again if you can, that depends on pixel installation and things like that. There are scenarios where you are sending people to your website, you're using a traffic campaign because you can't track the end conversion, but you could track the landing page view. So that's certainly something I would recommend going with.
+
+A third option, and this is probably a bit more technically complex but can work very well, is that even if you can't track the end conversion, but let's say for example you could track landing pages, so you're sending people initially to a page on your website and then maybe they go somewhere else, they go to you know Eventbrite or whatever or go onto an Amazon page or whatever where you can't track the end conversion. This is very very common. In that scenario, you can actually use a conversion campaign and instead of optimizing for the end conversion, you can optimize for let's say a certain scroll length within a page.
+
+So you could have an event, a conversion event within your Facebook pixel triggered if someone scrolls halfway down the sales page of a product that they then click on to go to the Amazon page for example. Or they spend, you could create a conversion where they spend a certain amount of time on that page. Now I'll include a link in the description below that's got more technical details around Facebook pixel installation setup and installing the conversions events, things like that.
+
+But just think of that as an option, okay? You may think you have to use traffic because you're sending people through to a page and then can't track the next steps, but perhaps you could only optimize for the people that do certain things, like scroll down the page a certain amount or spend a certain amount of time on the page. It's one next step on from this landing page views example where we're going, okay, we can't go all the way to the end and optimize for that, but we could optimize people that make it at least here, okay?
+
+And that can work much better. And that's not going to optimize for accidental clicks because if you're saying to Facebook, look, I'm running a conversions campaign, I want you to get people that have scrolled halfway down my page. Someone's scrolled halfway down your page, they're not accidental clickers, they don't hang around that long, they're out of there.
+
+The people that scroll halfway down your page, they intended to click, they're interested, they're finding out more, that's a much better person to record a result for and then have that be the thing that Facebook uses to optimize. Oh, we want more people like this, not people who are just accidentally clicking on an ad, hitting the back button and disappearing, okay? Very, very important.
+
+Okay, so three strategies there. Hopefully that has been useful. You can do at least one of them, maybe a number of them, and that can help you avoid accidental clicks if you get the impression that a lot of the traffic you're generating just isn't up to much, isn't really doing a lot for your business.
+
+Before you go, a free thing I want to quickly mention, and that's a free webinar I've created called One Facebook Ads Technique to Supercharge Your Results. And in this webinar, I focus on one single thing that makes a bigger difference to your Facebook advertising results than anything else. If you can get this one thing right, you can put yourself miles ahead of the competition, really help you get better results, help improve your business.
+
+And I break it all down. This webinar is completely free, links in the video description below. I would strongly recommend you check it out.
+
+I think it'd be well worth your time for doing so. If you found this video useful, please give it a thumbs up. Comment below to let me know if you've got questions.
+
+Comment below with feedback, that's always helpful. And let me know if you've run into this issue. Have you run into accidental clicks?
+
+Often something you get a feel for as a Facebook advertiser where you have to run a traffic campaign, you think, we're just not getting the... You know, these people aren't going on to take the steps that we want them to take. You can make some of these adjustments and hopefully see an improvement.
+
+If you do, let me know in the comments. Don't forget to subscribe, and I'll talk to you soon. Thanks a lot.
+
+Bye for now.

@@ -1,0 +1,103 @@
+Hi guys, it's Ben Heath from Lead Guru and in this video I'm going to show you how to create a Facebook custom conversion. Now in order to create a custom conversion you need to have the Facebook Pixel installed. That's the first thing you obviously need to have to set up on your website, you need to have the Facebook Pixel installed and understand how that works.
+
+If you don't, that's fine, go ahead and check out a link in the video description that's going to show you exactly how to install the Facebook Pixel, how to set up event code, all that sort of stuff. Now the Facebook Pixel has a bunch of different presets in terms of things you can track. So they have things like purchase, lead, complete registration and these are standard events that the Facebook Pixel has that make it very easy for you to track those events, those actions that people take on your website.
+
+Custom conversions, Facebook custom conversions is one step further on. So instead of just wanting to track purchase, you might want to get more specific than that or track something that's specific to your business. You know, what does a conversion mean to you?
+
+Maybe it doesn't fit into one of those categories or maybe you want to go beyond one of those categories and specify between different options, for example. So that's what Facebook custom conversions help you do, that's what they are and they're very, very valuable, particularly if you've got, you know, as I said, things that you want to track that don't fit neatly into one of those presets or you want to be able to differentiate between, let's say, different types of purchases or something like that, then custom conversions can really help you do that. They're a tool we use all the time as a Facebook Ads agency, something I'd recommend you use as a bit more advanced Facebook advertising technique, but one that can, as I said, help you get better data from your Facebook Ad campaigns, which is going to help you make better adjustments and get better results going forward.
+
+So with that said, let's go ahead and show exactly how to do it. So I am in a demonstration Facebook Ad account. Don't worry about all this stuff down here.
+
+That's from other videos that I've created. And then what we need to do is we need to go ahead and head it over to Pixels. So I've got it in my Frequently Used.
+
+Go ahead and select Pixels. That'll bring us into Events Manager. As I said, this is a demonstration ad account.
+
+So don't worry about the fact that there's almost no data in here. That's not important for the purposes of this video. You want to go ahead and select Custom Conversions from the left hand side.
+
+You can see I haven't created any in this account. And then you want to click Custom Conversion, Create Custom Conversion, which is just the button in the top right hand corner, blue button over here. Okay, that brings up this little window.
+
+Custom conversions are actually fairly straightforward to create. I'm just going to talk you through the options. So first thing, absolutely make sure you've got the right pixel selected if you've got multiple Facebook pixels set up within your ad account or Business Manager.
+
+Then we need to select Website Events. So here, the only standard event I've got included is Lead. The vast majority of people are going to use all URL traffic.
+
+It's basically selecting what's the starting criteria for people to meet these conditions. Is it all URL traffic or people that have also triggered a specific event? Most people, you've just gone on one head and select all URL traffic.
+
+Okay, and then we've got rule one. So we want this custom conversion to be registered if people do certain things, right? So let's say for example, you've got a certain page.
+
+So let's say for example, you had a... Oh, here's a great example. So a page of my website.
+
+I'll enter it in. Let me just enter the URL because I know it by heart. Okay.
+
+If someone visits leadguro.co.uk forward slash consulting sessions, they visited the page website that is all about the one-to-one consulting sessions that I offer. Now I might want to register that as consulting session page viewed. Does that make sense?
+
+That's what I'd name that custom conversion. Now anyone that visits that website get registered as consulting session page viewed. That's going to show up in my Facebook ad account provided I customise my columns to be able to show this custom conversion.
+
+And that might be really useful for me. I might really want to know, you know, are my ads that are perhaps sending traffic to a blog post or something like that, are those people filtering through and checking out my consulting session page because I want to sell more consulting sessions, for example. So that's a good example of how you can do things.
+
+You might want, instead of it having a page where someone's viewing something about a product or service, this could be a specific thank you page. So let's say you wanted to track people that have bought a specific product that has its own, you know, thank you page or order confirmation page. Well, you could enter that in here.
+
+You know, I could have, for example, in here something like leadguerodico.uk forward slash thank you Facebook ads insiders. Okay, so Facebook ads insiders is a course I've created that people can buy. I don't think that's the right URL.
+
+I don't know it by heart. But for example, I could enter that in and I could put in Facebook ads insiders purchase. Okay, and that's now going to track anyone that visits that thank you page, which they'll only get to once they've bought my Facebook ads insiders course.
+
+They're going to be tracked as a Facebook ads insiders purchase. And again, that information could show up on my Facebook ad account. This is really useful if I'm selling multiple items.
+
+I don't just want it to show up with purchase. Okay, I want to be more specific than that. So you can either have it as an action that people have taken and put it on a thank you page or an order confirmation page.
+
+You could do the same thing for a lead magnet. So what page people take into after they opt in for a lead magnet? You know, are they taken to a thank you page or a page that delivers the lead magnet, something like that.
+
+You can pop that on there. Or you could have it as someone checking something out like I did with my consulting session page. That's before they've booked.
+
+That's for them finding more information. Or as in this example, you can have it after they've purchased or taken a specific action like that. So lots of different things.
+
+Okay, now that's for equals. You can also use more broad activity to track a specific customer conversion. So let's say for example, I had, you know, different categories on my website and anything to do with Facebook, I wanted to track.
+
+Anyone that visits a page that has Facebook in the URL, I want to register that as, you know, Facebook page visitor. Okay? Does that make sense?
+
+And that's particularly valuable. Let's say for example, I'm a digital marketing agency and I offer Facebook advertising services. I offer SEO services.
+
+I offer, you know, Google ads services, whatever happens to me. Let's say I'm running ads for one of those categories. Well, I might want to see, do people go and check out other categories on my website?
+
+You know, so if I'm running ads for my SEO services, are people going and checking out the Facebook pages of my website? If so, I want to be able to see that because that might give me more information in terms of how that campaign's performing. Okay?
+
+So that sort of setup could do it. And then likewise, I could do doesn't contain. So that's just obviously the reverse of that.
+
+So if it's, you know, if I wanted to see, I want people that visit pages that doesn't, don't contain a certain thing because, you know, I want to track people that visit the other stuff, if that makes sense. Okay? So there's different ways you can set that up.
+
+Hopefully that makes sense in terms of how you can use this for your business specifically. You can also add multiple rules. So I could say, for example, look, I want this custom conversion to be triggered when someone visits a page that has Facebook in the URL and also has a page that has services in the URL.
+
+So perhaps I've got four or five different pages, all to do with our Facebook advertising services. And each one has the word Facebook and the word services in the URL. And therefore this would tell me instead of a Facebook page visitor, I could say this was a Facebook services page visitor.
+
+Okay? So it can be a little bit difficult to wrap your head around this, but basically there's tons of different options when it comes to tracking the actions people take on your website using custom conversions. You can do it based on the URL as it equals, contains, doesn't contain, et cetera.
+
+Makes it very, very straightforward setup. You don't need to go into your website and mess around with specific things. And hopefully you can think about how this might work for your business or for your clients if you're doing this for clients.
+
+So here's a good example of using multiple rules. Okay, so let's just go ahead with this example. We've got Facebook services page visitor.
+
+I want to track everyone that visits one of my website pages that has Facebook and services in the URL because those pages are all about my Facebook advertising services. And that's an important thing for me to be able to be aware of and track. Then you need to select a category.
+
+So just select the one that makes the most sense for you here. So in this case, if I'm getting people to view these pages, I'm going to go with view content. But if I use the previous example of just tracking people that buy my Facebook ads insiders course, then I would instead go ahead and select purchase.
+
+You know, and of course, all the other various options, but this won't be view content. I can enter a value if I want. So let's say for example, I know that, you know, I don't know, each customer that visits my, each, you know, person that visits my Facebook, one of my Facebook services page is worth on average $500, you know, or 500 pounds because my account's in pounds.
+
+And you can calculate that. You could be like, okay, my average customer is worth 10,000 pounds to me over their lifetime. And, you know, one in, what would that be?
+
+One in 20, the visitors page goes on to work with us, something along those lines. But that's completely optional. You can pop that in if you want.
+
+And then you click create and it will start recording from this point forward. And then you can go back into your Facebook ad account and you can see it's got this data here. Obviously no activity yet because, you know, this is a demonstration account, conversion to the last seven days, et cetera, et cetera.
+
+But it really is that straightforward to set up a custom conversion. And then you can go back into your Facebook ad account and you can take a look, you can adjust your columns and you can make sure that this custom conversion is displayed. And you can see how many of those are generating, what the cost is, et cetera, et cetera.
+
+Really, really valuable tool. Hopefully that has been useful. Now, something I want to quickly mention before you go, and that's my Facebook ads mastermind group, which is my free Facebook group.
+
+It's got over 10,000 members, all Facebook advertisers, Facebook ads, agency owners, people looking to get better results on Facebook advertising. They're posting questions. They're getting help from other members.
+
+Fantastic, fantastic community. So if you've got questions around Facebook advertising, you want help, go ahead and join. There'll be a link in the video description, completely free to do so.
+
+And we would love to have you in there. If you enjoyed this video, you found it useful, please give it a thumbs up. Please leave a comment below to let me know.
+
+I always really appreciate it when you guys do that. And don't forget to subscribe to my channel. Release more Facebook advertising.
+
+I release Facebook advertising related content all the time. And, you know, if you want more useful videos like this, then subscribe to the channel to make sure you receive those. And click the little bell notification when you do, so that you get notified when I release a new video.
+
+Thanks a lot, guys. Bye-bye.

@@ -1,0 +1,63 @@
+Ever wondered if someone is messing with your Facebook ads? A competitor or two or three or twenty? I wish that it wasn't possible, but it is and it does happen.
+
+Fortunately, you can stop people, particularly competitors, from messing with your Facebook ads. And in this video, I'm going to show you how. So when I say that competitors might be messing with your Facebook ads, what am I referring to?
+
+Of course, they can leave negative comments. They can pretend to be customers of yours and sort of badmouth your products, your service or whatever. They can even leave false reviews.
+
+And we've certainly had competitors do that to us. And that stuff's annoying, but that's not what I'm talking about here. I'm talking actually about something much worse.
+
+Unless you have things set up in the way that I'm about to show you, competitors can actually wreck the data that you receive within your Facebook ad account. And that completely wrecks your results. It does so in a number of ways.
+
+Firstly, it means that you're not able to optimize your campaigns as an advertiser, because if you're getting incorrect results and you're seeing that certain ads are producing conversions when that's not actually the case and vice versa, that's just going to completely ruin your chances of being able to optimize your campaign, which is so, so important to the long-term success of Facebook advertising. But even worse than that, it ruins Meta's ability to optimize your campaigns. And they need those conversion signals.
+
+They need to know what a purchase is, what a sale is, what traffic is doing on your website, to be able to optimize your campaigns, to put your ads in front of the right people, to work out how many times people need to see ads before they take an action, all that sort of information. If that is disrupted, if competitors have come in and ruined that, which is possible, unfortunately, and it does happen, that is just going to completely kill your chances of succeeding with Facebook ads. This is fine.
+
+So this is a really serious problem. If it is happening, as I said, you can avoid it. Let's get into it.
+
+So let me show you what I'm talking about specifically. Now, if you're sending people from a Facebook ad, Instagram ad to your website, you want to have the Facebook pixel installed, or what's now called the MetaPixel. That allows you to track the actions that people take once they come through to your website and provides that data that Meta needs, purchase data, lead data, page view data, how much time they spend on your website data, all that sort of stuff.
+
+Really useful, important information. If you haven't already got the Facebook pixel installed on your website, you absolutely want to get it installed on your website for all those reasons, and a few others as well. But by using the Google Chrome extension called the MetaPixel Helper, you can go onto anyone's website, and if they have the MetaPixel installed on the website, you can see their pixel, and you can see their pixel ID, which you can then use to put that pixel on your website or another website.
+
+Now, you might be thinking, why would a competitor take someone else's pixel and put it on their website or on a different website? It's to disrupt the data that you receive. We've already talked about how important that is.
+
+If they go ahead and put your pixel on a bunch of spammy websites, that will completely confuse Meta. They'll think, okay, people are coming through to this weird website, and they're bouncing from it and interacting, and there's bot activity there, and it just completely confused everything, and your campaigns won't be able to optimize, and your results will really drop off as a result. And of course, if your competitor can do that and wreck your campaigns to the point where they are no longer profitable, or you're looking at results and thinking, this isn't accurate, this is anything like what we're getting in real life.
+
+There's something wrong here. They might be able to force you to stop advertising. That's a big win for them.
+
+That reduces some competition on the platform. It's going to reduce the cost of advertising in that niche because there's less people trying to reach the same people. So that's a big win.
+
+And if one business can do that to a whole bunch of their competitors, that is a massive win for them. They can potentially force the competitors out and then sort of hoover up all that potential business on the platform. So they are highly incentivized to do this.
+
+And we've had this happen a number of times with clients that have to take actions to prevent it and stop it from happening. So it really is a big deal. It really does happen.
+
+And in a second, I'm going to show you how we can actually prevent this. Very quickly, I've got some really exciting news. I've launched a new mentorship program to help you explode your business revenue and profits through paid ads and marketing.
+
+Now in this mentorship program, myself and my team will mentor you daily, literally every single working day. And because of that, spots are very limited. So if you're interested, you can click on a link in the video description below and book a call with one of my team members who can explain everything about the mentorship program and how it works.
+
+I'm really, really excited about this. And I hope to be working with you and mentoring you very soon. So to show you how we stop your competitors or anyone else from messing with your meta pixel and messing ultimately with the performance of your Facebook and Instagram ad campaigns, I've jumped into an example ad account.
+
+I'm in ads manager. And what we need to do is we need to jump over to events manager. So if I go ahead, click on these three little lines, all tools, and then I've got events manager up in my shortcuts, you might have it down here.
+
+And if it's not in your shortcuts, it'll be down here somewhere. You can see it there underneath manage business. But if I go into events manager, then we've come here into events manager overview.
+
+You might see something slightly different, but that's fine. What you're looking for is data sources. So if I go ahead and click on data sources, and we come through to, we've got here example ad accounts pixel, and you're going to see different information here, depending on how much website traffic.
+
+I said, this is an example ad account, right? So the data here isn't typical, but I'm just showing you the steps. So once you've got the right pixel selected, you want to go from overview over to settings, and then you want to scroll down all the way.
+
+There's loads of stuff in here, scroll past all this stuff, all this stuff, all this stuff. Meta kind of have this a little bit hidden, and I don't really know why, because it's a great feature, but you get all the way down to traffic permissions website. So it says here, set permissions to allow a block of events, events Facebook receives from a website.
+
+So basically, if someone goes ahead and puts your pixel on a spammy website, and they use the purchase event, and a thousand purchases get triggered overnight, you think, what? There's something gone wrong here. You can stop it with an allow list.
+
+So what you do with this allow list is you come in here, and you click edit, and then you simply add in the domains where events are allowed to come through to your Facebook ad account and register. So for example, if we were doing this for our business, we just add in heathmedia.co.uk, which is our domain, and then only if someone comes through to that website and then triggers a conversion event, lead, purchase, etc. on that website will that then be fed back into our Facebook ad account.
+
+So if that pixel is put elsewhere, that data simply won't come back in, and it won't mess up our Facebook ad results. So you can go in here, click next, and confirm, and get that added in. Okay.
+
+Now, one important thing to note here is that if you just put in your regular website and don't think about potentially where else people might convert, are you using any third-party softwares where they might convert? Do you have any subdomains? You need to add all those in, because we have also had scenarios where someone's tried to set up an allow list, and they've only included one core URL, which is their main website, and then there are actually different conversion locations where people were converting, and things here, and things there, and okay, that ran into issues, and then we weren't receiving the data we needed to receive back into the ad account.
+
+But I definitely recommend that most advertisers come in here and create an allow list. Just make sure you include all the options, and you'll be all fine, and you'll prevent competitors from being able to do this, and stop them if they are already doing this, if you've seen issues along those lines. You can actually create a block list instead.
+
+You can see there's this option over here. So if you were like, I don't know all the options that people might convert under my website or my setup, so I just want to block some specific ones instead, you can come in and do this. I don't think that's as good as creating an allow list, because if a competitor's putting your pixel on spammy websites, and you block that one website, they could then just do it on a bunch of others, and you're sort of constantly having to chase the tail on that, and try and you're always behind being able to identify those issues, and then fix them.
+
+Whereas an allow list, you just stop it, job done, don't need to worry about it again. Now whilst I wouldn't recommend that anyone actually do this to their competitors, take their pixel, put it on a spam website, and try and hurt them, I think that's really poor form. I think that's really bad, but I don't have any problems whatsoever with identifying who your competitors are targeting, and then putting your ads in front of the same people with a superior offer to try and convince them to work with you instead.
+
+I think that's just healthy competition. Well, in this video here, I demonstrate a little-known tool, a technique that you can use to help you identify exactly who your competitors are targeting, so that you can then advertise to them, and hopefully bring some of those customers over. Go ahead and check it out.

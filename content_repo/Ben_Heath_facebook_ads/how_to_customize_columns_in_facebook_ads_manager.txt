@@ -1,0 +1,113 @@
+Hi guys, it's Ben Heath from Lead Guru and in this video I'm going to show you how to customise columns within Facebook's Ads Manager. Now customising columns allows you to take a look at data about your Facebook ad campaigns. It can be really useful.
+
+You can take a look at additional data that Facebook perhaps doesn't automatically show you with their default data sets and that can help you analyse your Facebook ad campaigns and help you make decisions around optimising, making adjustments that likely help improve your performance. So it's an important thing to know how to do. I've had a few people ask me how do you actually go about doing this, how do you take a look at that data, so I thought I'd create a quick video showing you how to do it.
+
+So I'm in one of my Facebook ad accounts right now and we'll show you how to do this quite quickly. Don't worry about all the campaigns in here, this is, the data is what we're interested in, that's what we're going to take a look at. So you can see we've got here columns performance.
+
+Now that's Facebook's default and with the performance default data set you'll see things like results, reach, impressions, cost per result, amount spent, link clicks, website purchases etc. Okay, you can select this and you can see some of Facebook's other default data sets that they put together for you. So one of the ones I commonly look at is delivery because I want to look at my frequency number.
+
+My frequency is getting too high, I'm going to see ad fatigue, I want to adjust my Facebook ad campaign. So that's one of the things I'll come and have a look. I might want to have a look at cost per thousand people reach to see what I'm paying, is it looking expensive like it is with this campaign for example, does that mean I want to make adjustments, etc, etc.
+
+Okay, so there are lots of different options here. For example, if you're running a video ad, you can select this option, have a look at through plays, how much is costing you per through play, how much 10 second video views are costing, etc, etc. Okay, so there's different metrics and different data sets that you can take a look at depending on what kind of ad it is that you're running, what kind of campaign you're running, that sort of stuff.
+
+But you may want to go further than that, you may want to build your own data set so that you can come in and take a look at everything that you want to know about your ad campaign, you want to know all the data that's pertinent to you specifically, and you can do that by customising columns. So let's say for example, let's give an example of an ecommerce business. Let's say we're advertising an ecommerce business, and we want to track various metrics involved in the sort of ecommerce process.
+
+So let's say for example, we start with performance. Now performance is already going to give us this information, it's going to give us link clicks, it's going to give us a little bit of a look at the purchases, and this sort of basic whatever it is you're optimising for cost per result. But let's say we want to add some stuff to that, you want to click on columns, scroll down to customised columns, and then we want to add some stuff in.
+
+So the various column options, and the various bits of data that you can see are categorised on this left hand side, so you can sort of scroll through and take a look, you know, click on standard events, for example, and take a look at all the options. Or you can just go ahead and search from the top. So let's say I'm running a campaign for an ecommerce business, one of the things I might want to be able to track is add to carts.
+
+Okay, I need to spell that right. So add to carts, add to cart even. So I want to track the total number of add to carts that my Facebook ad campaign is generating, I want to track the value of those.
+
+So if you're using a platform like Shopify, that data will be pulled through. So you'll be able to see that, you know, you may have generated $20,000 worth of sales, but you actually may have generated $100,000 worth of add to carts. And therefore, you know, with that data, you might want to put more money into retargeting people that add to cart, but don't purchase things like that.
+
+That's why those are that's an example reason of why this is valuable. And then cost, I'm not so bothered about the unique and unique cost data, if you want to add that in yourself, absolutely fine. Okay, and then when you add things in, what you'll see is that it adds this data on the right hand side here.
+
+So we've got add to carts, we've got add to cart conversion value, and we've got cost per add to cart. Now you may have your add to cart and purchase data broken down by a website offline, etc. Most people won't.
+
+So most people want to go ahead and deselect these. It's just going to confuse you having an extra six columns when you don't need them when you're going to get the top line value of add to cart conversion value, and the add to cart number of add to carts in there. That's going to make a little bit more sense in a minute when I take a look at what this actually looks like within the Facebook ad account.
+
+If you're a bit like, what, what are these options? Most people are just going to be tracking website add to carts. Okay, so add to cart is one.
+
+I want to be tracking website purchases as well. In my mind, I'm going to drag that down. So you can reorder your columns here, by the way, you can reorder your columns accordingly.
+
+In my mind, add to cart comes before a website purchase. So I like to put add to carts in my columns before website purchase, if that makes sense. And I'm going to get rid of you can also get rid of things.
+
+So I'm going to get rid of on Facebook purchases, because in this case, there won't be any. And we've got link clicks going into add to carts going into website purchases. Now we've got website purchases.
+
+But as you can see, just like we've got add to carts there, I don't have a website purchase value, and I don't have cost per website purchase. So I'm going to go ahead and pop that pop purchase in. I'm going to go with total purchases.
+
+I'm going to go with value and cost exactly as I did before. So remember, I'm going to deselect all these because I just want one number easier to read and I'm not tracking in this case offline purchases on Facebook purchases, like most people won't be and cost per purchase. So now we've got our three add to carts, we've got number of purchases, purchase conversion value, so how much have you actually generated in sales volume, $20,000, $15,000, etc, etc.
+
+And then cost per purchase, how much does it cost you to generate each purchase. The other thing I want to add in is a ROAS figure. So my return on ad spend.
+
+So let's say for example, I've spent and then again, you don't need to separate the two out, you can just have one number. Let's say for example, I have spent $1,000 on Facebook ads, and I've generated $6,000 in sales. Okay, my ROAS, my return on ad spend is six.
+
+Six x return on ad spend. And I want to know, be able to know that data. And yes, you can calculate it from these other things, but why not just put it in as a column so you can quickly take a look.
+
+Okay, might be some other things you want to take a look at. So those are some obvious ones for eCommerce. We've got link clicks here.
+
+How about cost per link click? That might be an interesting one. You know, if you're sort of your add to carts and your purchase are costing a lot, is that because it's just costing loads to get link clicks in the first place?
+
+That could be the case, in which case, let's take a look at the cost per link click. So I'm going to drag this up here. I've gone too far.
+
+And I'm going to put that right after link clicks, because I think that makes sense to me personally. There are other things you may want to add in. I may want to add in how much it's going to cost, you know, the checkouts initiated, because that might happen before the add to cart or maybe after, depending on how your shopping cart is set up.
+
+So I might want to add that in. I might want to track people that look at a special page and website. Perhaps I've got a content view, which is an event code that's installed on a specific product page.
+
+And I want to track how many people are looking at that page, what the cost is of people getting to that page. And well, there won't be value in this case, but you know what I mean, unless you'd assigned a value within your pixel setup, which you could do. But there normally wouldn't be a value in this case.
+
+So you can go through and have a look at all sorts of things and add in all sorts of things that you want to track and that's important to you. That's very much up to your business, whatever metrics you're going with. Okay, so I've added those in.
+
+I now want to go ahead and click apply. And there we can see now that in this campaign, not only have we got what we had before, but we've also got cost per link clicks. In this campaign, we're looking at 84 P per link click.
+
+We've got 1636 add to carts, 25,000 pounds worth of add to cart value. Our cost per add to cart was 1137. So you can see that out of 1600 add to cart, 652 purchases were generated.
+
+So what's that one in three, just over one in three, which is actually pretty good. So £13,667 purchase conversion value. That's the amount of sales volume generated.
+
+Cost per purchase was £28.53. And you can see that the ROAS on that campaign is 0.73. So it means actually for every pound being invested in that campaign, only 73 P was being generated in return.
+
+That was not the primary objective of this campaign. You can see we're actually optimizing for leads here, not purchases. The primary objective was to generate leads.
+
+And the fact that we almost broke even whilst actually just generating leads is absolutely fantastic for us. Just to give you a bit of context around that and how that works. Okay.
+
+So you can see how that's really valuable data to have. And because we've customized columns, we can take a look at this. Now we've got here is we've got customs.
+
+You can see up here, we've got columns custom. If we were to close down Facebook's ads manager and come back in a day's time or whatever, this data wouldn't be displayed. This custom columns wouldn't be displayed.
+
+So what you often want to do is you want to go down to custom. You can see I've got lots of ones I've created anyway, and you want to click save. And we might call this example custom columns, whatever it is that you want to call it.
+
+Okay. Keep it simple for yourself. Take a look at something that's, you know, that's going to make sense.
+
+Perhaps you've got a different preset for video ads versus image ads. So just give it a name that's going to make sense. Click okay.
+
+And now this data set. So these columns will be saved within your Facebook ad account. And you can even click set as default.
+
+And that means that whenever you come into your ad account, this example custom column, custom columns, will be displayed. I don't have to go in and manually adjust it because that can become time consuming, particularly if you're checking your campaigns like we are for our clients on a daily basis. So one of the things we will do for our clients is we will set up a data set using custom columns.
+
+We'll customize our columns to display the exact data that we think is important. And we will save that, set that as default. And it makes our life a lot easier when we're checking a large volume of client accounts and just going, okay, we need to quickly check how the cost per purchase is this morning in this client's ad account.
+
+Boom, boom, boom. We can do that. Yeah, it's all looking good.
+
+Great. No, there's an issue. Right.
+
+Let's dive in and see what the problem is. Okay. So if that's been useful before you go, something I'm going to quickly mention, which is a free training that I've recently created.
+
+And it's called three killer Facebook ad strategies to double or more your revenue. So this training is all about Facebook advertising strategy, because if you don't have the right strategy and you don't have the right strategy for your products and services specifically, doesn't matter how engaging your ads are, doesn't matter how specific your targeting is, it's just not going to work. And you need a different strategy if you're advertising a $30 product versus a £20,000 service.
+
+You need a different strategy for those sorts of offerings. So that's what that training is all about. So I think you're going to find it really, really useful.
+
+As I said, I give three strategies that we use all the time with our clients. All three strategies we've generated seven plus figures in revenue multiple times, sometimes on a monthly basis using the strategies for our clients. And so they really are tried and tested.
+
+And as I said, in that training, I'm going to tell you, look, if you've got this type of business, you want to use this strategy. If you've got this type of business, you want to use this strategy. And in that training, also just spell a lot of the myths.
+
+There's a lot of myths around Facebook and Instagram advertising, things that used to work four, five years ago, but in 2020, just don't cut it. You need to update with the time. So I'm going to help you do that in that training.
+
+It's about 60, 70 minutes long. I strongly recommend you watch the entire thing. There will be a link in the video description.
+
+It's completely free to go watch that. So I'd recommend you do that. And if you've got any questions about this video, pop in the comments below.
+
+I get to all the comments, so I'd be happy to answer that. If you enjoyed this video, please subscribe to the channel. Let me know in the comments.
+
+And of course, give the video a like. That is always much appreciated. And yeah, I'll talk to you soon.
+
+Thanks, guys. Bye-bye.

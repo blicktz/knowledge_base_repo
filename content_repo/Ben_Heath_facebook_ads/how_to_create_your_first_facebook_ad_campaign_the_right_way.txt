@@ -1,0 +1,327 @@
+Hi guys, it's Ben Heath from Lead Guru and in this video I'm going to show you how to create your very first Facebook ad campaign. It can be very daunting and overwhelming when you first get into Facebook advertising to create that first campaign to go from boosting posts which you've probably already done to actually a full Facebook ad campaign created in Ads Manager with all the various different options. So I'm going to go through what I would recommend you do in terms of campaign structure, targeting, ad, all that sort of stuff for your first Facebook ad campaign.
+
+So what we want to do is head into Ads Manager. If you haven't already been there it's going to look something like this. Obviously it's going to be a little bit different because you're not going to have all this data and previous campaigns that we've got in our ad account.
+
+But you're going to have something along the lines of this green create button. So go ahead and click that. Now the first thing to be aware of when you create your first Facebook ad campaign is that there's three levels to a Facebook ad campaign.
+
+There's the campaign level, there's the ad set level and there's the ad level. Campaign level is the first one you have to deal with. So just go ahead and give your campaign a name.
+
+Just call it whatever. It can always be changed at a later date. Buying type I'd recommend you leave as auction.
+
+Well you know not everyone will only have auction. There'll be a few other options for some people reaching frequency things like that. But we've just got auction in there.
+
+Campaign objective. Now all you really need to decide at the campaign level when you create your first Facebook ad campaign is your campaign objective. Facebook's default is traffic.
+
+That's not what I would recommend. When you first start advertising on Facebook and you first start creating proper Facebook ad campaigns, I think what you really want is proof of concept. So whether you're a service based business looking to generate leads or an e-commerce or product based business looking to generate purchases, I think you'd be better off going specifically for those actions.
+
+Looking to generate leads, looking to generate purchases. And therefore I would go ahead and use the conversions objective. Now in order to use the conversions objective, you need to have the Facebook pixel installed on your website and you need to have event code installed on your website.
+
+If you are an e-commerce business and use something like Shopify, that's very, very easy to do. Just Google Shopify, install Facebook pixel and you just need basically need to enter your Facebook pixel ID and you're good to go. It's not just Shopify.
+
+You could do that with all the big e-commerce platforms. Well, in fact, all the e-commerce platforms I've ever seen, big or not, have Facebook pixel integration. Very easy to do.
+
+If you don't use, you know, one of those sorts of platforms, you have a WordPress website or something like that, check out the description of this video. There's a link in there to another video that I've created that shows you exactly how to install the Facebook pixel properly. So I know that sounds like a lot of it.
+
+It sounds difficult. You could do it in five minutes. It's very easy to set up and do.
+
+And it's absolutely well worth doing because then you can run a conversions campaign. And what that means is that Facebook is going to optimize your campaign for your chosen event. If you select traffic, like as the default, all Facebook is going to do is they're going to try and get you as many link clicks as possible.
+
+They're going to put your ads in front of the clickiest people within your target audience. If you go with conversions, Facebook, and then you optimize at the ad set level, I'll show you in a minute for say purchases, Facebook is going to put your ad in front of people it thinks are most likely to purchase your products. And that might sound like a small thing, but it's huge.
+
+You can easily see, in fact, I've created videos on this where we've done split tests of conversions versus traffic and conversions have generated purchase or leads for half the price of what we've seen with traffic. Now, there are also obviously some other options that you might want to use for your first Facebook ad campaigns. If you don't have a website or website's not very great, you might want to use lead generation if you're a service basis or something along those lines.
+
+With lead generation, you stay on Facebook and that you basically capture lead information that way and you can give those people a call and go from there. You may want to use app installs if you're an app-based company, but there are lots of other types you can use here. Post engagement, video views, brand awareness.
+
+They're a little bit more advanced. For your very first Facebook ad campaign, if you're after leads or sales, use conversions. If you're after app installs, obviously use app installs.
+
+If your website's not up to much and you want to keep people on Facebook, use lead generation. But I think for 90 plus percent of people watching this video, that's going to mean they need to use conversions. And as I said, to do that, you need to have the Facebook pixel installed.
+
+You should have it installed anyway if you're going to be running ads on Facebook, but it's absolutely essential for a conversions campaign. That's all you need to do at the campaign level. Very, very simple.
+
+Now we move on to the ad set level. So I'm just going to call this example ad set to keep this very straightforward and I'll go ahead and call this example ad down here as well. Then I'm going to go with save to draft.
+
+Don't worry, nothing's going to go live until you publish your changes. You can save things to draft. So this has brought me into the campaign level.
+
+I did mention the only thing you really need to do is select your objective, which is true. A couple of other things you can do, you can set a campaign spending limit. You don't want to spend more than $500 or $10,000, whatever happens to be, and you want to make sure that your campaigns stop at that point.
+
+You can go ahead and set the limit. The other thing you can do here is campaign budget optimization. If you don't know what that's about, again, check out the description of this video.
+
+There'll be a link to another video created that's all about campaign budget optimization when you want to use it, when you don't. At this stage, it's a bit more of an advanced technique. Don't worry about it if you create your first Facebook ad campaign.
+
+Okay, you can see on the left-hand side here, we've got those three levels I talked about. We've got the campaign there, we've got the ad set there, we've got the ad here. So what we're going to do is we're going to jump into the ad set level, which is the next one.
+
+Now, the ad set level is where you set your targeting options, who you're going to advertise to, and you set your delivery options. I'll explain what that means in a second. The first thing you need to do is tell Facebook what you want them to optimize for.
+
+So because we've selected a conversions objective, there are a number of different conversion events that we could select. Facebook's automatically put in ad to cart, but you can see here on our website, we've got lead, purchase, ad to cart, view content, all that sort of stuff set up. Assume you're an e-commerce business, something like that, you're going to want to optimize for purchase.
+
+If you've got that integration with a Shopify store or any sort of e-commerce platform and you're after sales, go ahead and select purchase. If you're doing it through your website and you want to generate leads, select lead. It's very straightforward.
+
+Don't worry about dynamic creative, offer, any of that, those are advanced techniques. Then set your daily budget. It can be a little bit difficult to work out how much you want to spend on Facebook.
+
+My advice would be to start small, get proof of concept, that's what this first Facebook ad campaign is all about, and then scale up from there. If you want a bit more of a concrete answer than that, again, check out the description of this video. There's a link to a blog post I've written all about how to set your Facebook ad budget.
+
+Basically, it goes through how to work out your numbers and work out what your budget should be really useful. Okay, now you can scroll down into your audience section and you need to start by working out who you want to advertise to. Now, there's this custom audiences section up here where you can use custom audiences, lookalike audiences, all that stuff.
+
+Those are advanced techniques. Check out my YouTube channel for more information on those. That's not something you really want to mess with with your first Facebook ad campaign unless you have, for example, lots of website traffic.
+
+If you want to get into that, check out my YouTube channel for other videos. Most people are going to want to ignore that for now. Entering your location parameters.
+
+Do you operate nationally, United Kingdom, or do you operate in a specific area? Let's say, for example, your business operates in Bristol, which is a city in the UK for those people that aren't in the UK. You can advertise to Bristol.
+
+That's got a 25 mile radius around it. You can narrow that down to 10 if you'd like. There's lots of different options.
+
+You can enter in counties, if you're in the US, obviously states, regions. You could put postcodes in here. You can even drop a pin.
+
+Let's say you want to advertise to right there and you want wherever that is. That's literally the coordinates and you want to be within three miles of that. Boom.
+
+You go ahead and do that. Very straightforward to do your location targeting parameters, but obviously just take a bit of time to get this right. You don't want to be advertising people that cannot become your customers.
+
+So only advertise to an area where people can become your customers if you operate on a national, international basis, then obviously you can have a much larger audience. As a Facebook advertising agency, our own business, we operate internationally. We have clients in the UK, which is where we're based.
+
+We have clients in the US, Canada, Australia, etc. But the majority of our clients do come from the UK still. So that's what I would go ahead and select in here if I'm advertising our business.
+
+If you have multiple markets you want to target, what I recommend is focus on your core market first. Get that proof of concept, as I've already discussed. Prove that Facebook advertising can work for your business and then look to expand to other markets.
+
+Then you want to enter in your age and gender demographics. Our business specifically, we know that the majority of people that hire a Facebook advertising agency are going to be between the ages of 30 and 55. So that's what we might want to go ahead.
+
+And use that's going to be different for all different types of businesses. Enter your gender. We have male female split.
+
+You might have a much more specific market one way or another. Then you get down into the detailed targeting options. And as you can see, there are tons.
+
+If you click into here and you click browse, there are tons and tons of options you can use to select. This is one of the big sort of advantages of Facebook advertising. So you can advertise people based on their education level, financially, their financial status, whether they're parents, you know, their job titles, have they just got engaged?
+
+What are they interested in? You know, food, drink, fitness, wellness, hobbies that they have, their behaviours, what do they do online? What sort of device do they have?
+
+What do they do politically? Do they buy a lot through online advertising? All these sorts of things you can come up with options.
+
+That can be very, very overwhelming. And so what I'd recommend is that when you're thinking about creating, you know, trying to find options that, that might be appropriate for your business is don't worry about it too much. This doesn't need to be perfect.
+
+You don't need to be perfect first time. Facebook advertising is all about testing. That's what we do as a Facebook ad agency all the time.
+
+We test and test and test. We'll often test four or five different options. If for example, I show you, you minimize this, we could duplicate just by clicking on that button there, duplicate.
+
+In fact, I'll just quickly do it to show you. You could duplicate the ad set. So you keep everything the same and you could, for example, let me minimize that to demonstrate what I'm talking about.
+
+Here you go. You could have one ad set that's targeting one group of people, another ad set that's targeting another group of people, see which one performs best. If you're lost in terms of you're looking at, if I just go into this ad set again and scroll down.
+
+If you're in here and you're really lost and you're thinking, what is it that I can do to find the right options for my business? I'm so overwhelmed. There's so many different options.
+
+Check out, again, video description. There'll be a link there that talks about using Facebook's audience insights tool. It's a Facebook targeting tutorial that uses Facebook's audience insights tool.
+
+It's a free tool, fantastic tool to find targeting options that you might want to use. Go through that video. It's only sort of 15 minutes long or so, but that's a great place to to go through these options and try and find the various, as I said, demographics, interest, behaviours that you might want to start targeting.
+
+Enter those in here and then go ahead and move on to next stages. Again, I'm going to use an example of our own business here. So I might want to put in business page admins.
+
+So we might want to advertise on people in the UK to people that are 30 to 55 that are page admins of business pages on Facebook. That's going to be our demographic. We want to generate leads for our Facebook advertising services and people who are admins of a business page are likely to be interested in that sort of service.
+
+So that's what we might want to advertise to. See, the audience here is 260,000. For a market like the UK, that might be a little bit small.
+
+We might want to make that a little bit larger. I'd probably go for about the half a million mark, but don't worry if it's a million, a million and a half. I would recommend you don't go below anything that's, let's say, 100, maybe 50,000 people if you're advertising on a local basis.
+
+But that's what I'd recommend on audience size. I just want to emphasise that point. If you are advertising on a local basis, don't worry if this is 110,000 and I've said you should be half a million plus.
+
+You're obviously going to have much smaller markets if you're advertising on a local basis. This isn't massively important, although people get hung up on it a lot. But that's what we might want to go with for now.
+
+You can exclude people or narrow your audience. Again, a bit more of an advanced technique, probably nothing you need to worry about with your first Facebook ad campaign. Connections, don't worry about that for now.
+
+Next thing you need to decide is your placements. Now, Facebook's default is to use automatic placements. I'm just going to quickly click into edit to show you the various options.
+
+So there are currently 14 placements. If you're not watching this video a couple of days after I've released it, they're probably going to be a different amount. They add, take away all the time.
+
+14 is a lot. And basically, this refers to the places on Facebook where your ads will appear. So the Facebook feeds refers to the mobile and desktop newsfeed.
+
+That's what you're most familiar with when you're scrolling through your Facebook newsfeed and you find, you see an ad pop up. That's what you're most likely to see. But there are lots of other options.
+
+There's marketplace, stories, suggested videos, obviously Instagram. A lot of people talk about, you know, when we talk to people, they go, should we advertise on Instagram as well? The answer is, use it as a placement option and you'll quickly see which produces the best results.
+
+Does Facebook or Instagram produce the best results when you're advertising your products and services? One's almost certainly going to beat the other. Audience network, messenger, lots of different options.
+
+I'm not going to go through each one of those. I'm going to link actually to another video of mine I've created where I do go through the placement options and explain them. So check that out if you are interested in more detail on all of these different ones.
+
+Again, that'll be in the video description. What I would recommend because you're using the conversions objective, Facebook is going to optimize your campaign for conversions. In this case, if I scroll to the top, it's going to optimize for purchases.
+
+So they're not going to put our ads on placements that are unlikely to deliver fantastic results. So audience network is a pretty poor placement. The quality of traffic that you generate from the audience network tends to be really poor.
+
+I could remove that, but with a conversions campaign, I really don't need to. I can leave that as automatic placements. If you were using something like the traffic objective where Facebook's just trying to get you link clicks, I would definitely be more specific.
+
+I would go ahead and select edit placements and I'd probably limit it to start with just the Facebook feeds and the Instagram feed because that's probably going to produce the best results. What you'll probably find is that 90 plus percent of your results come from the Facebook feed, feeds both on mobile and desktop and the Instagram feed. That's where the majority of results come from across Facebook.
+
+But as I said, because conversions, remember that's why the campaign objective is so important because you're basically putting Facebook on your side. You've told them, this is what I want, optimize my campaigns for this. Put my ads in front of people that are likely to do this specific thing.
+
+So that's what I say on placements. Then we've got optimization and delivery. So optimization for ad delivery, absolutely.
+
+Conversions is what we want to optimize for, not the other options. I'm just going to click off that. Conversion window, seven days click, one day view.
+
+What does that mean? So when someone interacts with your Facebook ad, they might buy the same day that they see a Facebook ad and click on it, but they might not. They might click on it today and make a purchase from you at the weekend when they've got more time.
+
+That happens all the time. That's what seven days, one days, this, this, uh, days click refers to. And how long after someone clicks on your ad do they make a purchase?
+
+Now this conversion window is talking all about what Facebook's optimizing for. So do you want Facebook to count the last seven days of data and include that in its optimization process? IE should it count people that clicked three days ago and bought today?
+
+Or should it just count if we went with one day's click? Should it just count the people that bought today, that clicked on the ad today and bought today in its optimization process? You could go with days, obviously click or view.
+
+So there are people that may see your ad on Facebook and may purchase, but they may not actually click on your ad. They may Google your company's name and go through your website. Again, do you want that to be included in the optimization process?
+
+Do you want Facebook to factor that in when it's optimizing your campaigns? This is somewhat an advanced thing for most people to get started. Just leave it as the default seven days click or one day view and don't worry about it.
+
+Again, your very first Facebook ad campaign is all about proof of concept. You want to prove that Facebook ads can deliver fantastic results. Okay, so that's the end.
+
+You can leave delivery type as standard as well. Loads of options. Hopefully you're not overwhelmed.
+
+Hopefully I've sort of gone through and shown you what does matter, what doesn't matter. This ad set is now ready to go. You've got your targeting options in here that you found with audience insights.
+
+You've got your basic location, age, gender parameters. Everything else can more or less be left as standard for your first Facebook ad campaign. Now, let's jump into the ad level.
+
+So as Facebook's gotten... In fact, that says duplicate ad into. Let me just get rid of that.
+
+I don't know why that's come up. Okay, here we go. We're in the ad level now.
+
+As Facebook has gotten more sophisticated as an advertising platform, the settings that you use in your ad set level are becoming less important. Things like the conversion window, your targeting options, they still are very important, but they're not the be all end all like they were two or three years ago. The ad creative, your imagery, your videos, your copy is becoming more and more important and really making the difference to your Facebook ad campaigns.
+
+Now, instead of just showing you an ad, there's a bunch of resources that I want you to use to really help you create fantastic ads that will work well specifically for your business. Now, the first is my Facebook ad template, which is something you can download right now for free. You can click on the link in the video description.
+
+The video description is going to have tons of links, but sort of fight your way through the links and find the one that says five-part Facebook ad template. It's completely free. It's a document that we've put together that contains some of the best performing ads we've created for tons of different clients in very different industries.
+
+And we've sort of broken those ads down into their component parts, explained what we've included in each and why. And as I said, you can download it for free. Click on the link, that'll go through to our website.
+
+You can download it there, model from those ads. So that's the first thing I would do is go ahead and grab that. And you'll see why we've used the headlines we've used, why we've used the imagery we've used and why it worked well, why we've used the copy that we've used and things like that.
+
+So that's the first thing I would recommend you go ahead and use. The next thing is to take a look at your competitors' ads. Now, if you've got large competitors that you know, or maybe even if you don't know, are advertising on Facebook, and perhaps they're producing fantastic results, and you want to see what their ads look like, because you want to be able to model.
+
+Don't copy, but you want to be able to model from their ads. There's a way you can do it. So if you just jump into regular old Facebook, and what you want to do is you want to search for a competitor of yours, someone that's perhaps a lot bigger than your company, that you know is quite successful, and you want to take a look at what their ads look like on Facebook, it could be a great, great place to start.
+
+So our example could be something like Digital Marketer. They're a really big player in the industry. I could search Digital Marketer, and here's their page.
+
+In the Digital Marketing space, these are one of the giants. Now, when you go onto someone's page, whoever your various competitor happens to be, you can scroll down all sorts of pop-ups, because they're a Digital Marketer, they know what they're doing. You can scroll down to this section on the left-hand side that says Info and Ads.
+
+Not many people are aware that Facebook somewhat recently released this, and you can come in here, and it's part of Facebook's privacy policy in terms of they want people to be able to see what Facebook advertisers are doing on the platform, and have it all sort of out in the open. But you can come down here, and you can take a look at all the ads that they've currently got live. Any ad that's currently live will be in here.
+
+And if it's videos, you can play it. If it's imagery and text, you can see it, and all that sort of stuff. So you can see Digital Marketer, obviously one of the big boys in the industry.
+
+They really know what they're doing. They've got lots of ads running currently. I head back into Ads Manager now.
+
+So go through the competitors that you might want to model from, that you might want to emulate in your business. See what their ads look like. It could be a great place to start.
+
+If I just jump back in actually, you might be able to look at their text and go, you know, fantastic, this headline works really well. We could use that headline or use something similar. This copy here, oh, I can see they've used this benefit, this benefit, this benefit.
+
+That's just the sort of thing I want to use in my Facebook ads. Fantastic. It's a great place to start.
+
+Again, you can do the same with imagery. Is there something similar that you can create? If you're a product-based business, is there a way one of your competitors displays their products?
+
+It looks really cool. You might want to use it. One of the things to note whilst you're in here is not just obviously the imagery and the text, it's also the ad format.
+
+Are they using video? Are they using slideshow ads? Are they using carousel ads?
+
+All this sort of stuff that you might want to emulate. So when you're first getting started and you're lost and it's all overwhelming, take a look at info and add some of your competitors. See what ads they're creating.
+
+It's a great place to start. And the third tool that isn't really a tool for creating your Facebook ads is your website. So you probably put quite a lot of thought into the copy, the headlines, the imagery that you use on your website.
+
+And when we create ads for our Facebook advertising agency clients, that's one of the places we look, the first places we go to find out the benefits of their products or services, to grab imagery and all that sort of stuff. So for example, if I jump over to my website, if I was to be advertising my business, you can see the headline that I've got on my homepage is want Facebook ads results like this. So that would tell me that I probably want my Facebook ads to be results focused and really demonstrate the fantastic results we can get.
+
+And you can see this is sort of imagery we've got, you know, here we've got a client that we spent £26,000 generated over half a million pounds in revenue. Those are fantastic results, the sort of thing that I might want to include in my Facebook ads. And if you're a service provider, you might have stuff here, you might have testimonials you can include on your Facebook ads, you might have aspects of your portfolio that you can include.
+
+So take a look at your own website and remind yourself of what you want to include. So the places we look is the homepage, we look at the about page, I don't have a specific about page, we've got sort of here what we do, might want to find some great copy and information on here, our community, all that sort of stuff. The other places we look are the pages that are specific to the products and services that you're advertising.
+
+So for example, we're a Facebook advertising agency, we work with e-commerce and digital businesses, I can come and take a look at this page and try and find the benefits that are associated with the service that I can include in my ad campaign. So for example, I could have, you know, fully managed done for you Facebook advertising services. That's a feature of the service might be good to include.
+
+But here's a benefit, we use our Facebook advertising expertise to create campaigns that generate low cost conversions and sales for our clients. That's exactly what our clients want. They want low cost conversions and sales.
+
+So that's just the sort of thing that I want to include in my Facebook ads. Every client gets a tailored Facebook advertising strategy. Again, a fantastic thing to include in my Facebook ad.
+
+So take a bit of time, grab a notepad and a pen, go through your website and identify phrases, headlines, all that sort of stuff that you might want to include in a Facebook ad. Make a note of them. Do the same with imagery.
+
+Imagery applies a little bit less to our business. I mean, you know, you can see on the home page, for example, we've got some case studies. We've actually got them on our various service pages as well.
+
+I'm pretty sure. Yeah, we've got, you know, various options in here. But that we've got, let's go back to the home page.
+
+So we might want to use imagery like that. Obviously, this is probably going to contain too much text and not really work with Facebook. But most businesses are going to be different.
+
+There might be imagery you want to use. Make a note of that. So you've got the three sources for when you head back into your Facebook ad campaign, you create an ad that's going to work specifically to your business.
+
+That's the Facebook ad template that you want to go and download. The link will be in the video description. It's your competitors ads.
+
+That'll be specific to your industry, which is very useful. Take a look at the info and ad section on that, on their page, obviously. And then of course, there is your own website, which is a surprisingly good source of copy and imagery for your ad.
+
+What I'm going to do now is I'm going to show you how to create an example ad. I'm going to change it from my own business, because I don't think that's overly useful. I'm going to go with something that we've included in our Facebook ad template.
+
+I've just got this on the screen beside me. And that's an ad that'll be created for an interior design company that's advertising a free consultation. This ad has performed very, very well.
+
+I'm going to use this as an example because a lot of service-based companies could use an ad that are very similar to this, and it'll work very well for them as well. So there are lots of different options when you're creating ads. You can use carousels, collections, slideshows, videos, all that stuff is slightly advanced.
+
+With this video, you're creating your very first Facebook ad campaign. So I think you want to keep it really simple to start with. Don't let yourself become overwhelmed.
+
+So we're just going to create a very simple image ad. That's what we're going to do. So we're going to leave it as image, which is a default.
+
+And the first thing we're going to do is select an image. Now, I'm going to put in, in fact, actually, so there's account images, as you just sort of flash up. There's images you can get from your Facebook page, from your Instagram account, or mostly when they get started, they're going to go ahead and grab stock images.
+
+Facebook have teamed up with Shutterstock. I'm sort of cutting that off there, but you can see that there says Shutterstock, which means there are tons of stock images that you can use. Now, when we're actually advertising for this interior designer, we're using images from their portfolio.
+
+That works really well if you're portfolio-based. But I don't have that, obviously, in my own Facebook ad account. So let's go ahead and put in something like interior design, and we'll see what comes up.
+
+It's probably going to be some options that would work very well and potentially deliver great results. It's just taking a little bit of time to load. Okay, so here we've got some options.
+
+You can obviously have a good look through, make sure certain options, you know, make sure, really give this some thought if you're using stock images of what you want to use. Really got to put your best foot forward with your image, and that's what's going to grab people's attention. So you probably want something colourful and things like that.
+
+Again, all that stuff of best practices is covered in the Facebook ad template. You'll see that when you download it. But if I go ahead and select this, for example, this bedroom, this will do for demonstration purposes.
+
+So first thing we've got in there is the image. Now, what you'll see if you haven't created a Facebook ad campaign before, you'll see on the right hand side is that we've got a preview. Now, you can, which is really useful, you can see this ad preview in various different placement options.
+
+So here we've got the mobile news feed, which is where most people are going to see your Facebook ad. That's the most common. You could select one of the other options that are available.
+
+Most times, what we do is we create the ad with the mobile preview in mind, because that's where most people are going to see it. And then we'll check some of the other placement options like Instagram and things like that to make sure that the ad doesn't, that it looks fine and all those placement options. So once you've got your image in there, the next thing you need to do is enter in your copy.
+
+So what I'm going to do is just literally type in what we used for this business. And I'll just quickly explain some of the benefits of it. So we've got here, I'm going to type it word for words.
+
+We've got a moving house, redecorating, will design a beautiful interior for your home and manage the project for you. I haven't read, creating, need to know how to spell. So you can see that with this copy, it does a number of things.
+
+So it calls out to their target market, moving house, redecorating. That's who this interior design company is going to work with, people that are moving house or redecorating. So it's exactly the sort of thing that if you are moving house or redecorating, and you're scrolling through your Facebook news feed, that's going to, oh, that's going to grab your attention.
+
+It's called the callout method, covered in the Facebook ad template. And then we just very simply list a couple of benefits. We'll design a beautiful interior for your home.
+
+Who doesn't want a beautiful interior for their home? And manage the project for you. Another great benefit.
+
+Who wants the hassle of getting tradesmen and going to shops and sourcing all the sofas and curtains and carpets and all that sort of stuff. You don't want that. Just a couple of benefits, short, sweet.
+
+The next thing we need to add in is simply the website URL. So that's obviously the page you just want to take people to. If you're advertising a product, then that's obviously the product page, your advertising service, it's probably a service page, maybe the homepage on your website, depending on how your website is configured.
+
+Go ahead and enter that in there. Display link is what's going to show where it says display URL. So, you know, obviously I'm sort of crossing my wires here with different companies, but we might put in something like that.
+
+The name of the company, whatever your website is in here, just pop that in there. Keep it simple. Then we've got free interior design consultations in the headline.
+
+Very straightforward. We want to explain exactly what is offered in this ad. When people are scrolling through, we want them to know exactly what it is, who it's for, and grab people's attention.
+
+You don't want to try and be cute or clever. It will just get lost. People just won't register that information.
+
+They'll skip along. Newsfeed link description. Because of the length of the headline on a mobile newsfeed, this newsfeed link description won't display on a mobile device.
+
+So what we're going to have to do is click on the desktop, and you can see obviously slightly different format pops up, and we've got the newsfeed link description in there. And what we used for this company was, want a free consultation with our award-winning designers. And that was a new-to-feet link description.
+
+And then for the call-to-action button, which is what you see here, we changed that from learn more to sign up. Because what we wanted to do is sign up for a free interior design consultation. And that's everything we need to do with this ad.
+
+So if I change it back now to mobile, because that just fits on a little bit easier, a bit nicer. Obviously, it wouldn't be leeguro.co.uk, our website name, it would be the website of the company being advertised here. But that's a very straightforward and very simple ad that performed very, very well.
+
+That generated lots of people signing up for free consultations in this interior designers area. They're only after 20 clients a year maximum as a company, because their clients are worth hundreds of thousands of pounds each. And that performed very well.
+
+So they don't have to be very complicated. Hopefully, that's given you some ideas. There's a lot more ideas in the Facebook ad template, go ahead and download that.
+
+Info and ads, looking at competitors is a great place. And as I said, your website for copy and imagery information is a great source of information. Have a little play with this.
+
+Again, don't worry about getting everything perfect. It's better to get started, see what results you are and adjust from there, as opposed to stressing about getting every single detail absolutely perfect. It's almost impossible to do when you first get started.
+
+Then you can go ahead and click publish. I'm not going to do that because I don't want this ad to go live in our account. Go ahead and click publish and your campaign will be ready to go.
+
+What I would recommend if you do want to target multiple different groups of people at the ad set level is create your ad first. And then if I minimize this, you can see we've got example ad, example ad. If you were to then duplicate your ad set, as I showed you earlier, that's going to duplicate any ad you've got in that ad set as well.
+
+So you don't have to go back through and recreate it and take that time. So create your campaign, one ad set, one ad. And then if you want to target other people, duplicate that ad set and the ad automatically get get duplicated.
+
+So hopefully this video has been useful. If it has, please subscribe to the channel for more content like this. Give it a like that would be very much appreciated.
+
+If you've got questions about anything, leave them in the comments below. I answer all the comments. So I will get to those questions.
+
+So I just want to wish you the best of luck with your Facebook advertising journey. It's a fantastic platform to advertise on. So many of our clients is their number one channel for acquiring customers, acquiring leads.
+
+It does it for a very low cost and it does it very, very effectively for a lot of businesses. So don't worry if it doesn't work out the first time around. That's absolutely natural.
+
+That's normal. But a few stabs at it once you've learned a bit, experimented a bit, you'll be in a much better position. And there's a good chance that Facebook advertising can be a fantastic platform for your business and a real driver for growth and for profitable growth as well, which is very important.
+
+So best of luck with everything. Thanks a lot guys. Bye bye.

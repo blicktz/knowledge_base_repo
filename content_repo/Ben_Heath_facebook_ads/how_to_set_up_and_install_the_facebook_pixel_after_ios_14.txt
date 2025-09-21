@@ -1,0 +1,325 @@
+Hi guys, it's Ben Heath from Lead Guru and in this video I'm going to show you exactly how to install the Facebook Pixel. If you want to advertise on Facebook, you absolutely want to get the Facebook Pixel installed. It allows you to do so much awesome stuff from retarget people to visit your website, to accurately track exactly what people do on your website, be able to optimise your campaigns based around that data, allow Facebook to optimise around your data.
+
+Basically getting the Facebook Pixel installed really helps improve your results and it's something I'd strongly recommend that everyone do. What you need to do in terms of Facebook Pixel installation has changed somewhat with all the iOS 14 changes, you now need to take extra steps. I'm going to go through the entire process in this video, walk through step by step so that if you've not even heard of the Facebook Pixel before you can follow along and get it all installed and get it all set up and not have to worry about it.
+
+Again, before I get into the video, I just want to very quickly ask you to smash that like button, that really helps me out and of course subscribe to my channel if you're new and you haven't done so already. I release Facebook and Instagram advertising related content all the time. If that's something that you're interested in, if you want to be running Facebook ad campaigns, you want the best information so you can get the best possible results, strongly recommend that you go ahead and click that subscribe button and click the little bell notification when you do.
+
+Okay, so I'm in a practice ad account and I've got a sort of dummy website that we keep for demonstration purposes and I'm going to walk you through the exact process. So I'm right now in ads manager, this is probably a a view that you're somewhat familiar with if you've done any sort of Facebook advertising, even if you just create a Facebook ad account. First thing you want to do is go to events manager.
+
+So if you click on these three little lines over here and then it may well be up in your shortcuts, if not you'll be able to scroll down and find it down here. There we go, there's events manager. But you want to click on events manager and that'll bring you through it through to the basically the the area that governs your Facebook pixel.
+
+Okay, now Facebook is talking here about aggregated event measurement. I'm going to show you how to set that up and how that works in a minute. So don't worry about that for the time being.
+
+We're going to get the app. I accidentally click on get started, but I want to come back here. We're going to we're going to handle all that stuff after we've installed the base level of the Facebook pixel.
+
+Okay, so you probably if you haven't created a Facebook pixel before you probably won't see a window that looks exactly like this. We've installed the Facebook pixel previously on this website all doggos.com. It's a website where we release content around doc training and things along those lines.
+
+And we use it for basically testing marketing stuff. That's why I'm going to show you on this. And we've already installed the pixel.
+
+So we can see that it gets hardly any traffic, but there is some activity on this pixel. If you don't see anything like this, because you haven't created a pixel yet, if you click on this green plus create button, or whatever you see that's similar, you might have a setup button, go through the steps that Facebook provides you. What you want to do is within a few steps, it won't take very long at all, get to the point where you have a Facebook pixel ID, okay, which is this number that I've just highlighted over here.
+
+That's your Facebook pixel ID. You want to get to the point where you can see one of those on the screen. I'm sorry, I can't show you that first part.
+
+It only takes a second. It's very easy to do. But I've already created one.
+
+So, you know, we've already got one set up. I won't be able to go through it again. Okay, once you've got to a page that looks somewhere like this, I said, you won't have the data, but something where you've got a Facebook pixel created, you can see a pixel ID, you want to go over here and select partner integrations from the left hand side.
+
+Now, fortunately, Facebook have made it very, very easy for you as a Facebook advertiser to install and set up the Facebook pixel. And they have all these partner integrations. So my first thing that I'd recommend is you go through this list and try and find the option of the website that you're using.
+
+So for example, I know a lot of people watching this video will be using Shopify. If you want to be able to track the actions that people take on your Shopify store after they interact with your Facebook and Instagram ads, you want to click on Shopify, you want to click on see details, and you just want to go through the steps that they recommend. It's very, very straightforward on a lot of these.
+
+You just literally do like two or three things and then you're all done and you can follow on from the extra stuff that you need to do. I'm going to talk about once you've got the base layer of the pixel installed. So obviously, Shopify is a big one, you might be on Squarespace or Wix.
+
+The one I'm going to demonstrate in this video, because this is what all doggos are set up on, is WordPress. And there's also a good chance that if you don't use Shopify or something where the integration is super, super simple, you probably are using a WordPress store, or at least this will be a WordPress store, a WordPress website, and this will be useful. So if I go ahead and click on see details in here, then we come through to a page that looks like this.
+
+Okay, so Facebook here is sort of talking about some of the advantages you get from installing the Facebook pixel on your website, things like building custom audiences. So people who have visited your website, perhaps they've bought from before, perhaps they've just visited, you can then retarget a lot of those people. You can measure results a lot more accurately, which helps both you and Facebook optimize your campaigns and get better results.
+
+Absolute no-brainer. So you can see we've got here, we've got connect account that may be, I may be blocking this slightly, but you can see on the top right, or in fact, there's another option down here, where you can select connect account. You can see guide steps with no coding required, which is a big plus.
+
+I am not a coder myself. Okay, so the first thing you want to do is choose the pixel. I've got the one pixel associated with this ad account, which is practice, add accounts pixel, because it's practice ad account.
+
+But if you've got various options there, just make sure you're using the right one. Click on, click on next. And then the what Facebook wanted, what Facebook wanted to do is to head over into our WordPress dashboard and install the plugin called Facebook for WordPress, we will install it and then activate.
+
+So that's what we're going to do. So I've got the plugins page up already in my All Doggo's WordPress dashboard, clicking on add new. And then we want to search for Facebook for WordPress.
+
+And that should pop up. There we go. We can now click on install.
+
+Now you can see the reviews aren't very good at all, which I actually think is is unfair. I actually think this is a very easy to use plugin. And people are probably annoyed about the loss of data with iOS 14.
+
+But that's a separate topic I'm going to talk about at the end of this video. Don't worry, we're not gonna miss out on that. So I've clicked install and then we want to go ahead and click activate.
+
+And that's been added then to my plugins. So let's now head back to our instructions. So we said install now and click activate.
+
+Then if I click next, let me scroll down, then we've got connect to Facebook. So select settings and choose Facebook from the drop down menu, search get started and follow the instructions. Okay, so we want to go back to and find that plugin.
+
+So here we've got Facebook for WordPress as our plugin, click on settings. And then we want to click on the get started button. Okay, so click on get started.
+
+I've previously obviously had this hooked up. So Facebook is recognizing that and they're saying, would you like your previous settings, but you can I'm going to show you exactly what they are anyway. So you could you won't see exactly the same thing, but you can still go through this exact process.
+
+So continuous Ben Heath, obviously, then you have to grant this WordPress app a whole bunch of permissions. So it's sort of selling the benefits of doing so get more purchases, find new customers, all that sort of stuff. I want to click continue.
+
+Okay, so then we get to this page. Now, obviously, you just want to make sure that if you've got multiple options in terms of ad accounts, Facebook pixels, perhaps you take on clients, or you've just you've got a number of businesses, or you've set up a whole bunch of options, you want to make sure you've got the right options selected here. So business manager, lead group, practice that account, yes, and practice that accounts pixel.
+
+I would recommend that you turn on automatic advanced matching, it's only beneficial because it's going to help Facebook more accurately track more accurately match people that take actions on your website to people that have Facebook Instagram profiles, which then when you want to advertise to say someone who visited your website, it's going to make it easier for them. So if that's turned off, I'd recommend turning it on, then we want to go ahead and click continue. Again, we need to give the WordPress app more permissions, you could be more specific about what you do and don't want.
+
+I'm very happy to go with the options and click next, which is what I imagine most of you will do as well. So it's going to take a second now to link those link, basically connecting our Facebook ad account with our WordPress plugin, you're all set. Now that you've connected your website to Facebook pixel, you can again, Facebook really want to emphasize the benefits of installing Facebook pixel, which I completely agree with.
+
+And then we can go ahead and click done. Okay, so that's just connecting right now connection pending, it normally takes a few minutes can take a little bit longer to get set up. Oh, it's done it really quickly.
+
+So trust this site, we're passing your system user token back to all doggos. Yep, I agree to share my token with this site. Click confirm.
+
+And there we go, your business is connected to Facebook, use this connection to all the stuff that you can that you can do. Fantastic. So what we've just done there is we've installed the base Facebook pixel in our on our website.
+
+So the Facebook pixel will effectively be on all pages. When people navigate around your website, that's all now trackable. What we want to do as a next stage is set up events.
+
+So set up our Facebook ad account so that when someone visits a particular page or takes a certain action, we can inform Facebook that that means something like if someone visits our order confirmation page, that means they've just purchased, I want Facebook you to know this is a purchase, I want you to show that it's a purchase in my ad account, things like that. Perhaps they, you know, fill out a contact form on your website, and you want that to register as a lead so that you can see that data in your ad account and optimize accordingly. And then Facebook can see that data in your ad account.
+
+And that's really huge, because if you can see which ads are getting you leads, which targeting options are getting you leads, which ones are getting you purchases, you can zero in on the ones that are delivering the great results. So it's an absolute no brainer to set up events. So base pixel taken care of, that's tick box number one.
+
+So what I'm going to do now is come back into events manager with our instructions, we want to click next. And it says verify your pixel is working correctly, the green icon and the active is what you are looking out for, you want to click next, and then we're getting into events. So if you click finish on there, and then what we're going to do, you can see that we've got a slightly different window here, because it's showing the WordPress connection.
+
+Don't worry about this data down here, I'm going to explain more about it in a minute. But if we come back, in fact, let's just go straight back into events manager. And we will go and add in some events.
+
+So obviously, on this left hand side, if you've got more than one pixel, you want to make sure that you've got the right pixel selected. And you should start to see, you won't do immediately. But once you've got the Facebook installed, you should start to see activity coming through, maybe in a few hours time, more likely in a day or so, depending on when that data starts filtering through.
+
+Okay, and then we've got add events. So events, as I said, are things like purchases, leads, add to carts, initiate checkouts, webinar registrations, things like that, the actions that people take that you want to be able to track for all sorts of reasons. Okay, so if you click on add events, there's a number of different ways to add events, I'm gonna go with the simplest one.
+
+Obviously, this is all about getting the pixel set up and installed in the first place, we want to keep things as simple as possible. And we want to go ahead and select from the pixel, the bottom option. So Facebook just gives a bit of information here around how to use the event setup tool, which again, is a non code option, which I absolutely love.
+
+So what you want to do is you want to add in the URL to your website in here. So I'm going to put in all.goes.com. And then when you click on the open website button, it will open the website, but with the event setup tool in place, which is going to load up here on the left hand side.
+
+So from here, there's two major options to track actions that people take on your website, you can track a new button, or you can track a URL. Okay, so if I click on, for example, track new button, and then I select this button on puppies, and I can select an event. So let's say, for example, this doesn't work, I'm just showing this demonstration purposes, there's no products on this website, it's an information site.
+
+But if we select add to cart, I could choose a value or not. I'll not add one because there's not actually a product associated, obviously currency, and then I can click confirm. And what that now means is that on my website, if anyone goes ahead and clicks on the puppies button here, that's going to register an add to cart in my ad account, which is super, super helpful, I want to be able to track people that are adding to cart, I may want to retarget them to try and get them over the line and purchase if they don't otherwise do so.
+
+I want to know the actions people are taking. So that's how you do it with the bus. Now, obviously, that doesn't mean add to cart, if you click on that puppies button, it takes you through to articles on puppies.
+
+So that's not the appropriate option. But you can see how you could make that work for your particular business. Okay.
+
+Or we could track a URL. So another example, if I scroll down to the bottom, I could jump to the contact page. And let's say, for example, I wanted anyone that comes through to the contact page to register as a lead.
+
+Okay, so you can actually see I'm going to delete it because it's automatically brought it through from when I had it set up previously. But if I click on tracker URL, and then what we've got here is URL equals this page. So all doggos.com forward slash contact.
+
+So if someone comes through the contact page, I would like that to register as a lead. Okay, again, I'm not going to include a value. You can if you want.
+
+And then click confirm. So now anyone that comes through to my website, and then goes through to the contact page, that person is going to be registered as a lead. And that's going to show up on my ad account provided obviously, they got there because they interacted with an ad previously.
+
+And it's going to show me which ad, which ad set delivered that lead was fantastic. Again, I wouldn't set up the lead event on the contact page, I would have it on the next page. So if for example, you're you've got like a free consultation page on your website or service provider.
+
+And maybe there's after they submit their details of our lead form or a form on your website, they're then taken to a page that's like, thanks for booking a free consultation, we'll be in touch to get that arranged. That's where you would set up the event code. Okay, so that's basically how that works.
+
+And we can click finish setup. Finish. Was the event setup tool helpful?
+
+Yes, it was. You can see how easy that is, by the way, guys, it makes it so much easier than it used to be. And then we come back into events manager.
+
+And what you will start to see is that we had this setup previously, because this is for demonstration purposes and things like that, you will start to see that these events come through. So for example, you can see leads has been 75, whatever. And these will now start to filter in.
+
+And so again, provided people are actually taking those actions, like don't just expect to see data there. But you should start to see how many times those things are being done, all that sort of stuff. And that is very, very useful information.
+
+Okay, so we're making great progress. We've taken two out of the four steps that we need to have your Facebook pixel fully installed up and running and doing exactly what it needs to be doing to get you the best results possible. We've set up, we've installed the base layer of the Facebook pixel across your website.
+
+And we've configured your conversion events on your website, which can allow you to track the specific actions people take. There are two more steps you need to take. The first is to verify your domain.
+
+The second is to set up your web event prioritization list in aggregated event measurement. Now I know that sounds insanely complicated. If you're new to Facebook advertising, you might be thinking that was a whole load of words.
+
+I have no idea what you just said. Don't worry, I'm going to show you exactly how to go about doing both those things. Now, these action points, verifying domain and setting up the web event prioritization list are things that we need to do as a result of the changes that came into play with the iOS 14 update that you may or may not heard about.
+
+I've got lots of content on my on my YouTube channel around that. So it's a little bit annoying, but it's just something you have to do. Once it's done, it's set up.
+
+Don't have to worry about it. It doesn't take that long. So well worth doing.
+
+It is going to make a big difference. So I've already actually verified the domain for alldoggoes.com. So I can't show you how to do it now.
+
+But I did record myself setting it up in the first place, because I knew that content was likely to be to be useful. And those videos me setting up me verifying the alldoggoes.com domain in my business manager account, and me configuring my web event prioritization list in aggregated event measurement, which I saying it, I know it sounds complicated. I recorded as well.
+
+And those are both videos that are available as part of my Facebook Ads Insiders course. I'm going to add those in now. So don't worry, you don't have to buy the course in order to get access to that content.
+
+But if you are interested, by the way, in a really comprehensive Facebook advertising course that teaches you everything that you need to know to get the best possible results with Facebook and Instagram ads, I can strongly recommend my Facebook Ads Insiders course. It's had hundreds and hundreds of people who bought it. Feedback's been fantastic.
+
+There'll be a link in the video description below in case you're interested. So what I'm going to do now is cut to the first of those two videos, the first one about verifying domains. You can see the exact process, exactly how I did it.
+
+You can follow through. And because it's part of a course, there may be a few references to like other lessons or other modules. Don't worry about that sort of stuff.
+
+The important part for the purposes of this video and getting your Facebook pixel all set up is verifying your domain. So I'm going to cut to that now. We'll go through that and I'll come back after that section.
+
+We'll talk about the next step. In this lesson, I'm going to be showing you how to verify your domain in your business manager account. With the iOS 14 changes coming into play, this is absolutely something you want to do.
+
+I'll explain why in a minute. Domain verification is not a bad idea anyway. There are things like it's got up this section here.
+
+You know, domain verification prevents other people from sort of misusing your domain. So if they link to you on Facebook and they can't change like the link previews or anything like that, if you verify your domain. I mean, this is quite technical stuff and not stuff that really you need to worry about or get into.
+
+The part that you do need to worry about and why I'm very much recommending you do this is this section down here. Okay. So it says here, Apple has announced changes with iOS 14 that impact how we receive and process conversion events from business tools like the Facebook pixel.
+
+I covered that in the previous lesson. To address these changes, we will be requesting permission through Apple's app tracking transparency framework, the ATT prompt, to measure conversion events events recurring on iOS 14 devices. As more people opt out of tracking on iOS 14 devices, which we know will happen, ads, personalization, performance reporting will be limited for both app and web conversion events.
+
+Again, all of that is just recapping what I just covered in the previous part, but this is the important part for this lesson here. A key impact of this change is that you'll be limited to the use of eight conversion events per domain. So you may well have used more than that previously.
+
+Most don't. And if you follow the strategies in this course, there's no need to do so. So it's not an issue, but just something to be aware of.
+
+You'd be limited to use of eight conversion events per domain for optimizing and reporting. Okay. And it says here, no, you set that at the ad set level.
+
+But this is the important part. Domain verification establishes which business manager account has the authority to configure and prioritize the eight available conversion events for a given domain. So I'm going to show you how to do this in the next lesson, but I'm going to show you how to configure your eight conversion events that you want to optimize for.
+
+If you don't do this ahead of time, Facebook will just guess and they could well be wrong. So you want to make sure that your eight conversion events are set up and they're set up with a priority, uh, with, with in priority order. Again, well, that's going to be covered in the next lesson, but in order to set up those eight events, we have to verify your domain in your business manager first to establish that your business manager has the authority to basically own and say what Facebook can and can't do around that domain.
+
+I know it gets a little bit complicated. If, if, if, if some of that sounds too, you know, too much, just know you just need to verify your domain and we share to do it. Okay.
+
+You don't need to worry about a lot of the, the more pressing details. Okay. So to set this up, um, what you want to do is you want to jump over into within your business manager account, you want to come into business settings.
+
+So, you know, if you were in ads manager, for example, just click on these, uh, nine little dots. They'll probably be further over on the left. If you're an ads manager and then click on business settings, this icon here, if it's not in your shortcuts, which it probably will be, um, then it will be down in this list down here, business settings.
+
+That'll bring you into here. And then you want to go down for this case, there's all sorts of things you do for business settings that I've covered previously, like adding people, add accounts, pages, all that jazz. Uh, let me minimize that.
+
+But you want to come down to brand safety and click on domains. Then what you want to do is click add and pop in your domain in here. So I'm going to use an example of, uh, um, a website that we own that we use for like example processes.
+
+It's all about dog training. It's called all doggos.com. And we haven't done domain verification on this on purpose so that I can actually show you with an example.
+
+Um, so then you want to click on add domain. Okay. And then we can see on this right hand side that we've got some stuff that looks all a little bit technical and a little bit, um, complicated.
+
+Basically what we've done just there is done the first step of the Facebook part of it. What now needs to happen is the, um, either the DNS verification part of it, which is probably what most of you do or HTML file upload. Um, but you need to change, you need to basically add a DNS, DNS TXT record.
+
+I mean, I don't want to get too, um, complicated in this. If you have a webmaster or someone like someone who handles your website for you, basically grab this here, this, uh, TXT record. So, you know, you just hover over it.
+
+You can copy to clipboard, send it to them and also grab a screenshot of this and send it to them. And I'm going to show you what else you want to send them in a minute and get them to do it for you. Because this part, obviously adding in the TXT record to your domain registrar, you know, whatever that happens to be your, your hosting company, basically, um, you need to add this in, in order to sort of verify in the backend.
+
+Now I can't go in and show you how to do that with an old doggos. I have to log into our account and show you sort of information that my, my web guy says, um, make sure you don't do a public video on, but fortunately I don't need to because Facebook have provided a very handy little video, um, around verifying your domain and business manager and the steps you need to take with your domain registrar, with your hosting company in order to get this set up. Okay.
+
+So I will include a link to this page beneath this lesson and verifying your domain and business manager, and then watch this video. Okay. Um, it's two and a half minutes long.
+
+There's no point me going through it when you can watch it separately, but I will include a link to this because if I skip ahead, you can see we get to this DNS verification part and it shows you how to add in a DNS record into your hosting company and things like that. Okay. So now I'm going to pause the video.
+
+I'm going to go ahead and do that and then come back into my business manager and show you the very last step. Okay. So I've just gone and added that TXT record, um, through my domain registrar as per the instructions that you'll have seen on that video I linked to just do exactly what they do.
+
+Then you want to come back in here once you've done that and click verify. And you can see here alldoggos.com is verified, which is fantastic. So that I can just click done on that, which is awesome.
+
+Um, I've still got a little red, uh, thingy there, but that will disappear pretty soon. It's like a lot of Facebook warnings. They tend to come and they tend to take a little bit of time to, you know, turn green effectively.
+
+Okay. So I just refreshed the page and you can see that, um, it's turned green already. It's status is verified, which is fantastic.
+
+Okay. So once you've done that, you will see that, um, this window is changed because different options now. Um, once we've got it verified, we can now assign partners.
+
+So if you're working with like an agency or some other external party, and you want them to be able to work, um, on this, and you can, you can assign a partner by clicking the button and follow the steps. You can also add assets, right? So you can assign pages to this domain.
+
+Um, and then when those pages are basically posting links to pages or blog posts, whatever on this website, they will have the ability to do so and edit like previews and things along those lines. Okay. So that's, that's, that's a step that's worth taking.
+
+Um, so if you go ahead and click on add assets, and then I just want to, I've already got it selected there. Um, the all doggo's page, go ahead and click add one page, been added to main or doggo's.com all set. Okay.
+
+So I know this sounds really kind of complicated and difficult. Um, it's not, it's no, you know, it's a bit more technical than some stuff, but it's not that difficult, right? All it really is, is you come into domains under brand safety and business settings, you click on add, you add in your domain that gives you that, that, um, I can't, what they call it now, a key or something like that.
+
+Um, but the date, the information that you need to go ahead and add in to your DNS, the TXT record, go ahead and do that. Just follow the steps, take your time with it, add the TXT record to your DNS, come back in there, click verify and add your page. Okay.
+
+So I know it sounds complicated, but it's just a few steps, get it done. And that's all we need to do with this. You never need to worry about it again.
+
+And now we can go on to the next lesson where we're going to be configuring those, um, um, conversion events and setting them out in a prioritization list. Okay. Okay.
+
+So that was verifying your domain. Hopefully you haven't had too many difficulties doing it. It sounds complicated.
+
+It's not actually that hard when you go through the steps. Now that your domain is verified, we need to move on to the last action item around installing your Facebook pixel. And that's configuring your web event prioritization list in aggregate events management, aggravated events management is this section down here, configure web events.
+
+Um, I'm also once again, going to cut to a video where I recorded setting that up and we'll go through the process and I'll see you on the other side of that. Now we've just verified the domain in the previous lesson. And here we're going to configure your web events.
+
+So your web events refers to the conversion events that you're optimizing for when you're running conversions campaigns. So it's absolutely integral part of the direct to offer strategy, the lead magnet or webinar strategy that you'd have seen from the, uh, the main modules within this course. And obviously if you're going to run a conversion event, and then you're going to optimize for that conversion event, such as leads via your website or purchases via your website, that's what we're talking about here.
+
+That's what we need to configure now that we verified your domain within, um, your business manager. We need to configure those events, set a prioritization list. Um, and that's one of the changes you need to make because of the iOS 14 stuff that's going on.
+
+Okay. So I'm going to show you exactly how to do that. Right.
+
+So we're still, I've, you know, picked up from where we last were, because you probably do this in order. So we're in domains. You want to go ahead and click on these little buttons here and go into events manager.
+
+Okay. And then you'll come into a window that looks like this. If you've got multiple pixels, just search for the right one as I've done on this side and make sure you've got the right pixel, um, selected the one that you are going to be using going forward.
+
+Um, the one that's going to be tracking those conversion events taking place as a result of your Facebook advertising efforts. Okay. And you see, this is what you come up with something along these lines.
+
+You can see, we've got this has been, this pixel has been installed on the all.go's, um, website that we just showed that we just verified the domain. Then we want to go ahead and click on at, you can see the default, what it, what it sort of starts on is pixel conversion API. We want to go ahead and click on aggregated event management.
+
+You can see this is new. And then if I scroll down, you can see it says configure web events. So go ahead and click on that button.
+
+And then you want to search by domain. Um, again, you might only have the one verified in there, so it will just come up in the list, but obviously we've got a whole bunch. So I just want to go ahead and grab that.
+
+And you can see that we've got all doggos.com domain is verified. Fantastic. That's what you want, but assigned events.
+
+We haven't done one yet. And you can see over this little warning, it says at least one event must be configured on a domain to run ad campaigns, update events. So we would not, I've simply our conversion, um, campaign simply would not run if we don't take these steps.
+
+Okay. So I want to go ahead and click on that. I want to go ahead and click on edit events.
+
+Now, this is really important to take this part in. Okay. It may take up to 40 hours to see results in ads and ad set measurements, but here's the important part.
+
+Once Apple begins enforcing its app tracking transparency framework on iOS 14 devices, which as of the recording of this video, it hasn't done yet. Changes to event configurations will cause any impacted ad sets or ads to be paused for 72 hours to allow the changes to take effect. Some configuration changes could cause ads or ad sets to no longer run.
+
+So what that's basically saying is if you wait until after the iOS 14 change, uh, um, ATT prompt has gone out and you haven't set this up, basically all your ads can be paused for 72 hours because you're gonna have to come in and change this and then wait 72 hours. You have to wait three days. That's obviously something you want to avoid.
+
+And if you make changes to this, it is going to take, um, it's not going forward. It's not quite clear the 48 hours or 72 hours in order for those changes to be, um, sort of seen within your ad account. Okay.
+
+So that's very important. So if you're running, you're going to be wanting a direct to offer strategy campaign, you're going to be going after the purchase, um, conversion event. You're using the conversions objective going after the purchase conversion event.
+
+I know some of the jargon gets quite complicated, do my best to explain, but that will be a very common setup for the direct to offer strategy. Or if you're running a lead magnet strategy, you're going to be running initially a conversion objective campaign optimizing for the lead conversion event, you need to come in and set this up. Otherwise they simply will not run.
+
+So you want to go ahead and click edit. Hopefully that'll make sense. Um, it take a second to load up.
+
+Okay. And we can see that in this domain or doggos.com, we have no, um, events established. Remember we can only have a maximum of eight now.
+
+That's one of the changes that's coming in because of the iOS 14 stuff is we can't track, you know, dozens of different actions that people could take on our website. We can only track eight different actions. And then we want to go ahead and add event.
+
+So we have practice ad accounts pixel in there, and then we choose an event. We've only got two set up because this is just a practice ad account with basically like a practice website that we use for this sort of stuff. Right.
+
+So we've only got lead and purchase in there. You may have a few more. You may not.
+
+Now what you want to do is, okay, let's say I add in purchase, um, and then I'll add in the other one. And then this other one, I can go ahead and choose lead. Okay.
+
+So I've added these two in and you might be thinking, okay, great done. But before you do that, it's very important to assign priority. Okay.
+
+Let me hover over this here. Cause it probably give us the information. No, it's not really, I can explain anyway, based on what I know about this.
+
+So I discussed this a couple of lessons ago, but I was talking about the fact that if, when Facebook puts this prompt, this basically message in front of iOS 14 users saying, are you happy for Facebook to be able to track your activity on third party websites and apps? If people say no to that, and then, uh, uh, okay. If people say no to that, you will only be able to track one conversion event that they take on your website, assuming they take one or take more than one.
+
+So let's say you're an e-commerce business and you're using the direct offer strategy. You probably have in here events. You don't just have, you know, lead purchase.
+
+You'll also have add to cart, initiate checkout, some other ones in there, right? Just automatically from like Shopify will set that up or whatever it is you're using will set that up in there. Or you can have established yourself as part of the installing the pixel, which I, which I showed you how to do in, uh, in module one.
+
+Now, if someone has opted out, so they don't want Facebook to be able to track them once they've received the prompt and then, you know, a week later, months later, whatever, you're advertising to this person. They click on your ad campaign. They click on your ad.
+
+They come through to your website. You've got an e-commerce store. They check out a lot of products.
+
+There's some, maybe some view content events triggered. They then add some products to cart. They then purchase.
+
+Facebook will only report on one of those events. And the way Facebook works out which of those events you want them to report is by setting the prioritization list. So if you're an e-commerce business, you obviously want people to report on purchase first and foremost, because that's what you're going to focus your Facebook ad campaign optimization decisions around is like, right, which ads and ad sets are going to be the most purchases for the lowest cost.
+
+You aren't going to, um, want, so for example, Facebook to just add in, to just track ad to cart if that person then went on to purchase, right? So set the prioritization list in order of what's most important to you. So in the e-commerce example, we would have purchase here.
+
+We would then have ad to cart. We would then have initiate checkout. We would then have view content, right?
+
+And that's key. If you're a, uh, so for example, if, if, if, if we were a running a lead magnet strategy, then we would want lead to be our most important conversion event. Because if someone goes on to become a lead, that is the thing that we're really tracking.
+
+And that's what we want to be reported on. Remember this is, this only applies to people that opt out to the prompt, the ATT prompt, uh, and our iOS 14 users, because they're the only ones who are going to get it in the first place. Right?
+
+So it only applies to them and it only applies to people that opt out, but you want to make sure that you are receiving data for the conversion event that matters most to you. It sounds very complicated, but basically what is the most important conversion event? What is it that your campaigns are really trying to do here?
+
+Right? Are they trying to get purchases? Are they trying to get leads?
+
+Are they trying to whatever? Are they trying to get webinar registrations? You know, you could be using the complete registration conversion event for that.
+
+So data on the other conversion events was a nice to have. So previously you may have seen 150 purchases, 300 add to carts, 500 view contents, something like that. And that's been great to see that going forward.
+
+You won't see it. You'll still see the 150 purchase provided purchase is your highest priority conversion event, but you won't see the add to carts because if someone goes on to purchase, they won't also register as an add to cart anymore, as they used to provided of course, they are iOS 14 users that have opted out of being tracked. Okay.
+
+So just basically, I've probably over complicated it with what I've explained. I'm trying to give you guys the best information I can basically just come in here and be like, what's most important to my business and set your prioritization list accordingly. Then you want to go ahead and click submit.
+
+And you can see Facebook's just got the warnings around, it's going to take some time, all this stuff, the stuff that we already took a look at. You can just go, yes, I understand these changes and click apply. And you can see confirmation you've successfully changed event configurations.
+
+Event configurations will be applied to all.goats.com and that's where to verify the domain because this is set at the domain level. I click okay. Okay.
+
+So just like with the domain verification, it seems, you know, a little bit overwhelming, a little bit confusing, but it's not that bad, right? Just go through the steps, watch this video as many times as you need, go through the exact steps I did where we're just setting up our web, we're configuring web events so that Facebook knows what's most important to your business, what data they should absolutely present you and hold on to. And it allows you to keep running your conversion campaigns, which are of course key to direct offer strategy, lead magnet webinar strategy, and that sort of stuff.
+
+Okay, so hopefully you are all now set up, you've installed the base layer, you've got your conversion events set up on your website, you've verified your domain and you've configured your web event prioritization list in aggregated events management. You've taken the four steps you need to get the Facebook pixel installed, set up properly, so you can just crack on with Facebook advertising, knowing you're getting the best data possible and that your campaigns are likely to do much, much better as a result. Well done for going through all those steps.
+
+Before I go, a couple of things I want to quickly mention. The first is my Facebook Ads Insiders course. I mentioned it previously, but you just saw two videos from that course.
+
+There's almost a hundred videos in that course covering all aspects of Facebook Innscown Advertising. If you want one super comprehensive resource that's going to show you exactly how to get fantastic results, the best results possible, that is what I'd strongly recommend you go ahead and purchase to be perfectly honest. So the link will be in the description below, you can go ahead and check that out.
+
+And other thing I want to ask is that you subscribe to my YouTube channel. So I release Facebook advertising related content, a lot of it very in-depth, detailed, very actionable, hopefully very helpful for my audience on a regular basis, just like the video you've just been through. If this sounds like the sort of thing, you know, if this is the sort of thing you want to get access to and you want to be able to consume going forward, go ahead and subscribe.
+
+Subscribe to my channel, turn on notifications when you do and yeah, you will see when I publish new videos. Please comment below if you've got any questions, comment below if you run into any difficulties. I try and get to as many comments as I can, I certainly see them all.
+
+Hit that thumbs up button, that really helps me out, it's much appreciated. And yeah, best of luck with your Facebook ad campaigns guys. Now you've got the Facebook pixel installed, I think your results are going to be all the better for it.
+
+So exciting times to come. Thanks a lot guys, bye for now.

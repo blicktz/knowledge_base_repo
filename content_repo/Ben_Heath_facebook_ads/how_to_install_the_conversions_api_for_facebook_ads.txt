@@ -1,0 +1,73 @@
+Facebook ads tracking is not what it used to be. We used to get incredibly accurate data when it came to running our Facebook ads and it's almost impossible to overstate how important accurate tracking and data is to Facebook ad results. Then iOS 14.5 came along and messed all that up.
+
+Fortunately, Meta introduced the conversions API which really helps and is something I'd recommend that all Meta advertisers do get set up. It can be quite complicated and quite technical but in this video I'm going to show you a really quick and easy way to get it set up. So, I'm just 14.5 was introduced two and a half, three years ago at this point and it limited what we were able to track as Facebook advertisers.
+
+The actions people take once they left Facebook, Instagram apps when they're using iOS devices and that impacted the accuracy of our data which not only made it more difficult for us as Facebook advertisers to optimize our campaigns because if we can't see exactly which ads are generating which conversions and how successful they are and the return on ad spend all that sort of stuff it's more difficult for us to make decisions but likewise the same applies to Meta's machine learning process and being able to optimize the campaigns around that data both were negatively impacted. Oh my god! Okay, it's happening!
+
+Everybody stay calm! What's the procedure everyone? What's the procedure?
+
+Stay f***ing calm! And Meta has the conversions API to really help with data accuracy and it's something that all meta advertisers should set up. I'm going to show you quickly and easily how you go about actually doing that.
+
+What it does is it gives you another string to your bow effectively in terms of data gathering and adding in really important data back into your Facebook ad account that can be used for you to optimize and for meta to optimize. You're not just relying on the pixel data which on iOS devices can be unreliable and we know that other privacy rules are being introduced. You know, we've got some stuff going on in the EU that I've made a video about, link will be in the description discussing that and how that's going to affect tracking.
+
+So the conversions API is really important now. It's only going to become more important as privacy rules come into place that make it more difficult for us to track what people are doing once they click on our Facebook ads and Instagram ads. Now to demonstrate this, I'm in an example website that we often use for demonstration purposes.
+
+It's a WordPress website and I'm going to demonstrate this for WordPress website owners. Don't worry, what we're going to talk about in a minute also applies to all of the different types of sites, whether it's Shopify or whatever it is you're using. So it's going to be relevant no matter what platform you are actually using, but I'm just going to demonstrate in WordPress first.
+
+If you go ahead and into your plugin sections, I'm obviously in the WordPress dashboard here and you click on add new. Don't worry about the warnings pop up. As I said, this is a, this is a example website that we typically use.
+
+And then if I go over here to search for plugins and I put in, if I just search for Metapixel, for example, what I'm looking for is the Metapixel for WordPress plugin. So if you go ahead and install that one, it's literally a direct integration. So this is also a really easy way, by the way, to get the pixel set up.
+
+I've got another video on that. I'll include a link in the video description. If you want to know more about the pixel, I wanted to keep this video much more focused on the conversions API.
+
+But once that's been installed, I can then obviously click activate. And then we've got this little notification here that says, you know, easily manage your connection to Meta with Meta for WordPress. Follow the setup steps.
+
+So that's exactly what I'm going to do and then, and then walk through. Okay. So if I go ahead and click on get started down here and then make sure that you have the right account, you're logged into the right account to be able to go ahead and set this up.
+
+So click continue, continue again. Obviously you have to grant the permissions for, you know, the information to be transferred. And then once you get into this section here, you need to go ahead and make sure that everything is set up correctly.
+
+Right. So firstly, your business manager, if you've got multiple business managers, you can click on this little arrow and then just make sure you select the right one from the list as we have multiple set up here. So that's absolutely fine.
+
+So we've got the right business manager set up. Then we want to make sure that we've got the right pages selected, for example. And then once again, click next, then you can go ahead and add in an Instagram profile, which again is something that I would recommend you do.
+
+Make sure that you've got your ad account selected as the right one. You may just have the one which is absolutely fine, but obviously we have lots that we can potentially choose from. So again, make sure you go ahead and just select the right one there.
+
+And then the same applies to your pixel. Again, this may not apply if you've just got the one pixel, but if you've got lots of pixels like we do, then I need to make sure that I go ahead and select the actual right one in there. Okay.
+
+Automatic advanced matching is something that I would recommend that you turn on. You can see what it says here. Use information your customers have provided to your business, like email, just phone number to match websites to people on Facebook.
+
+That's going to help with data accuracy. So that's definitely something that we want to turn on. So basically, once you've just made sure that you've got all the right options selected here, that's fairly self-explanatory.
+
+You just want to go ahead and click next. Okay. So once you've clicked on that and Meta has actually made the connection, that's great.
+
+We've made progress. By the way, that is a little bit buggy. Of course.
+
+Okay. Let's try again. A thousandth time.
+
+Okay. So if you do find that something doesn't work, like try again, try on a different browser, and that plugin is not foolproof, but it does make it very easy if it does actually work out for you. But the important part when it comes to the conversions API is to scroll down to this section here, right?
+
+So we've got the business connected to Facebook and it's this meta advanced configuration. And we've got this option here, send website as events to Meta using conversions API. And that is selected for obvious reasons, because we definitely want that to be turned on.
+
+Now, sometimes this will be turned on by default. A lot of the times it won't. I don't know why it differs, but we always make a note to manually check that this conversions API tracking is set up.
+
+And that if it's not, we absolutely go ahead and tick that box. That is very, very important because otherwise the conversions API won't work. But in terms of getting this set up on a WordPress website, it really is as simple as that.
+
+Install the plugin, activate it, and go through and just make sure you've got right page, you know, log into your Facebook account, make sure you've got the right page, right ad account, right pixel selected, connect them up, and then absolutely make sure that this conversions API checkbox is ticked. So this is what it looks like for WordPress, which I know a ton of the people that watch my videos will be, they will have WordPress websites. So that's exactly how you can get it set up.
+
+Another massive grouping of people that watch my content will be people that have Shopify stores. And again, it's a very similar process. Once you've got the pixel installed within Shopify, it's just a checkbox.
+
+Okay. So very straightforward and a simple process. And a lot of the other website platforms have quite simple integrations.
+
+The most important thing to take away from this video is that you need to be using the conversions API and there probably will be a checkbox somewhere and you need to go and find it depending on what website integration you have, because you need to turn it on. It will help with your accuracy. Now, if you have gone ahead and installed the MetaPixel manually, or a developer has done that for you, as opposed to using like a plugin or an integration or something like that, then get the conversions API set up can get quite technical.
+
+So if that technical person is you, I'm sure you can probably work it out because you already set that up, the pixel up that way manually coded it in yourself. If it was someone else that did it like a developer or something like that, I would get them to go ahead and install the conversions API for you. It's definitely over my head when it comes to technical levels.
+
+I can do it using the integrations and plugins and things like that. But any sort of manual code is not something that I go near. And if you need to get this set up, you've got the pixel installed, coded in manually, as opposed to using one of those options.
+
+And you want to get the conversions API set up, definitely get the previous person to do it, or hire someone on Fiverr, Upwork, something like that to do this for you. It won't cost a lot of money and you'd be much better off them getting it right, so that your tracking is accurate. Because as I've already said, the accuracy of the data that is fed back into your Facebook ad account really helps you as a Meta advertiser to make optimization decisions.
+
+It also really helps Meta use their machine learning process and AI to get you the best results possible. So really, really important you get the conversions API set up. It's a lot easier to set up now than it used to be, and that's how you go about doing it.
+
+If you're getting the conversions API set up, you are clearly serious about your Facebook advertising, and that's great. That also means that you're going to love this video here. In it, I demonstrate a brand new Facebook ad strategy that costs way less than traditional Facebook ads.
+
+It takes advantage of a brand new feature. You have to go ahead and check it out.

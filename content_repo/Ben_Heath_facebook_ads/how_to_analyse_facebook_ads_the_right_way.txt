@@ -1,0 +1,245 @@
+I've generated more than $200 million in sales directly from Facebook and Instagram ads for our clients over the past nine years. And during that time, my team and I have worked out the best way to analyze Facebook ads data to significantly improve results. And in this video, I'm going to show you exactly how we do it.
+
+Okay, so let me start by showing you the metrics that we actually track. What data points do we look at? What matters?
+
+What doesn't matter? And we will go from there. So I'm in ads manager.
+
+I'm in one of our Facebook ad accounts that we actually use to retarget for our own products and services. This campaign specifically that we're talking about is for our Facebook ads mastery product. I'll explain more about that in a little bit.
+
+We're going to use this as the example campaign to show you the data points that we use and how we make decisions around analyzing campaigns that are live, ads that are live, and then optimizing, working out what to do and how to improve results, which is a hugely important part of Facebook ads. You very much cannot get the best results from just creating a Facebook ad campaign, throwing it out there and hoping the results are great. You absolutely need to be digging into the data and improving things.
+
+That's what I'm going to show you how to do. Okay. So let me start by going through the columns that we actually take a look at.
+
+And we've got like a customized column preset here to have all the data that we like to look at when we're going through and actively managing campaigns. Okay. So first column, obviously, other than the name itself or the campaign, the ad set or ad, we've got delivery.
+
+And then we've got actions. Actions is sort of a shortcut within the column section referring to the new opportunity score feature. So it's showing here that there are three plus available points that we could optimize within this ad set to get better results.
+
+If you want to know more about opportunity score, that's not what this video is about. I'll include a link in the description to another video that shows you all the details around this new feature. It's really good, by the way, I recommend you do it.
+
+But you do want there, you do want an actions column in there. Now that it's available, because it reminds you and shows you all there are some optimization actions that we may or may not want to take available that Meta's recommending. Then we've got budget, you can see here, it just says using campaign budget, this campaign has got one ad set.
+
+So it really doesn't make any difference whether you're using CBO or AVO, whether you're setting the budget at the campaign level, ad set level, a lot of people will tell you differently, and it does matter. But if you've got one ad set, it just doesn't make any difference. But we've got budget in there, because that's useful.
+
+And then we've got amount spent. So we spent over just over 2000 pounds on this campaign has been running for, you know, we've got the timeframe set to maximum, but I think this has been running for 60 days, something along those lines. The next column is purchases.
+
+Now with this campaign, that is what we are optimizing for, we're trying to get purchases for our Facebook Ads Mastery product. But I should say that this column here doesn't always want to be purchases, this wants to be whatever conversion event it is that you are optimizing for after amount spent. So if you're optimizing for leads, put leads in here, if you're optimizing for complete registrations, put that in there instead, okay, but we've got purchases, because that's what we're optimizing for here.
+
+Then we've got cost per purchase, very useful metric to be able to see cost per purchase. And when I get to the next stage, and we start looking at various different components and comparing them, that is one of the most important metrics possible. After that, we've got purchase conversion value.
+
+Now, for some reason, this isn't feeding through, it was feeding through when I literally did the prep for this video, it's not feeding through now. I thought about using a different example, but I actually thought this was an interesting thing for me to mention, because Ads Manager is buggy, and these things do happen. I think it's quite useful for you guys going through this to be like, oh, every now and then that happens to me.
+
+So this had purchase conversion value data there. It doesn't now, but you don't really need it for the purpose of this video. What I want to just leave it in there to demonstrate that this happens, but also explain what's going on here, right?
+
+So the conversion value on the Facebook Ads Mastery product is £97 per month, right? So in terms of you could get a sense for what that's going to look like in terms of what we're paying, you know, would we pay £23 cost per purchase to acquire a customer that's worth £97 per month? Absolutely.
+
+That's a fantastic ROAS, when you factor in lifetime value. But yeah, you want your purchase conversion value in there if you are optimising for purchases, if you're optimising for leads, something else, it's not really going to apply. And then we've got purchase return on ad spend.
+
+So basically, what's your ROAS? And again, because this number isn't feeding through, it's not creating a ROAS calculation. To be fair, when you've got a product like this that bills monthly, the ROAS calculation that you see within your Facebook ad account is not going to be that accurate, because it might just include the first transaction.
+
+So let's say £97 on average, with a £23 cost per purchase, we're looking at about 4x ROAS, but that's only on the first transaction, right? We know that our actual return on ad spend is way better than that, you're probably looking at more like 20x ROAS, because people are going to stick around for a number of months. We don't exactly know how many because Facebook Ads Mastery product is pretty new.
+
+So we haven't had it live for a year or two years to see if people will stick around that long yet. Then we've got reach, impressions and frequency. And I like to put these three together because they tell a story of how the ad, ad set or campaign is performing.
+
+So reach is simply the amount of accounts, the amount of different people that your ads have been put in front of, we've got 35,000 there. Impressions is how many times an ad was put in front of someone. So you can see how there's a difference there.
+
+And then you calculate the frequency by dividing impressions by reach, and that gives a frequency of 10.43. Now that means that of the people that have seen ads within this ad set, they've seen an ad just over 10 times, which might seem like a really high amount. But this is a retargeting campaign, retargeting ad set for one of our offers.
+
+We know the people in this audience are very much engaged with my stuff. Most of them will have watched my content for a long time, so we can get away with a higher frequency. In general, if you're operating to cold audiences, I don't like to see a frequency above 2.5, which obviously much lower than that.
+
+That's to cold audiences. If you're advertising to warm audiences, you can usually get away with significantly higher frequencies than that. But most businesses, you don't really want to go above, say, a 6 to an 8, that sort of range.
+
+But there are cases, like with me, where we can go up to a 12, we've been up to 16 frequency before, and that's absolutely fine. And as we go through this, and I will talk about frequency metrics, that is a secondary metric. That is not one of the things we will optimise for first.
+
+We will optimise for that after we factored in other metrics that we'll go through. But it's really important to keep an eye on frequency, because if you do see an ad perform really well, and then it starts to drop off, and that coincides with the frequency going up, okay, you've probably got ad fatigue, you need to introduce new creatives, and there's things you can do to go about tackling that. Okay, then we've got CPMs, that's cost per thousand impressions.
+
+Now, this is the metric that's typically used to describe how expensive it is to advertise. So we're paying a CPM of £5.73, which is really very good. Part of that's because we've got engaging ad creative in there.
+
+Unsurprisingly, we know how to do that. And also, it's to my warm audience, so people are interested in my stuff. Most businesses nowadays, particularly advertising in the countries we're advertising in, UK, US, etc, are going to see higher CPMs than that.
+
+CPMs is again a secondary metric. I'm going to break down these more in a minute and how we might interpret the data and apply it to campaigns. But it is not something that you want to be stressed about or optimising for.
+
+It's more a metric of how expensive is Facebook and Instagram advertising over time? How has the CPM changed over time? And also, how expensive is my industry?
+
+Certain industries are going to cost way more than others. If you're advertising something in the health and fitness space, it's usually going to cost a lot less in terms of CPM than if you're advertising something that's B2B, for example. But we'll dig into that a little bit more in a bit.
+
+Then we've got hook rate. Now hook rate is a custom metrics. This is one that we've actually created.
+
+And when I go into that, I'll show you how to set up your columns in a second. I'll talk about custom metrics. So the hook rate, if I hover over it, we'd be able to see what this is.
+
+It's three second video plays divided by the number of impressions and then expressed as a percentage. So basically, what percentage of people that saw our ad made it past three seconds, watched three seconds of the video? Effectively, they were hooked.
+
+Now an 8.38 across the ad set is decent. In my mind, anything above a 10 is really quite good. Anything below a five is quite poor.
+
+So that's sort of typically what you're working with. You will see massive variation and there's all sorts of variance between industries and things along those lines. Again, B2B, like what we're advertising, tends to be on the lower side.
+
+Other things tend to be significantly higher. I do like to have a look at video average playtime. That is not a custom metric.
+
+That's one that's preset from Meta. And that is useful. You do need to factor in the length of the video because you might think, well, two seconds is terrible.
+
+But in a lot of cases here, we're advertising very short videos. So it's like, well, actually, if you think about it, it's kind of okay. And likewise, if you're having a really long video, you would expect to see just longer average view time because some people are going to make it all the way through and that's really going to lift your average.
+
+So that's actually not such a useful metric for this campaign specifically, but sometimes it is very useful for like taking a look at things. Then we've got link clicks. Now it's really important that we've got link clicks in there and you can get more specific with outbound link clicks or unique link clicks.
+
+I'm quite happy with link clicks. But what you don't want to be analysing is clicks. There's a difference between link clicks and clicks.
+
+Link clicks has clicked on the link that the ad is taking people to. They took the action that you most likely want them to take. Clicks is going to include any click on the ad.
+
+So if someone unmutes it, if it's a video ad, that's going to count as a click. If someone clicks the see more button on Facebook in order to be able to see all of the primary text, that's going to count as a click. And these are things that you don't really want to be monitoring or optimising for.
+
+So we've got link clicks there to see how many people have actually clicked through to where we want to send them. I always like to stick landing page views next to that to see the discrepancy rate between link clicks and landing page views. So we're looking at 3100 versus 2300, 20%, maybe slightly more discrepancy between the two.
+
+That's fine. Sometimes you'll see more than a 50% drop off between link clicks and landing page views. And just to explain the difference between the two, link click is someone that actually clicked on a link, landing pages, they waited until the landing page loaded up.
+
+So if you do see a big discrepancy there, there are all sorts of things you can read into that. Like is our landing page too slow to load? Are we getting a lot of accidental clicks, which might be because you're running a traffic campaign and ads are showing on the audience network.
+
+These are things that you can fix and knowing this sort of data is very useful. Then we've got CPC cost per click, sort of the base metric of all digital marketing, digital advertising has become far less important as the platforms have got more sophisticated, but it's still a useful metric to know. Again, when you're entering in CPC, make sure you get the cost per link click, not the cost per click.
+
+And then the same applies to click through rate. You need to get the link click through rate, not the click through rate because I have, I get questions people all the time being like, I've got a 4% click through rate. Is that great?
+
+And like, well, that's fantastic, but it won't be link clicks. That could include, if you're running a carousel ad that could include people moving between, it includes all sorts of various clicks. And in general for link click through rate, anything above 1% is considered really quite good.
+
+0.86 here is okay. Anything below say a 0.7, 0.65 is normally pretty poor. So yeah, so those are the data points that we are tracking and I'll show you how they stack up in a minute.
+
+The way, by the way, you can put together the exact same columns as I've got here. And so you have the exact same data that'd be useful for you. If you just come in here on columns and you can see I've got this called best column setup, which is what we're using as a default, but there are like set, what presets that you can use that meta put together performance engagement, et cetera.
+
+I'd recommend creating your own. And what you do is you just come down and you click on customize columns, and then you can literally go through and you, we've got 19 in here. You can go and delete columns.
+
+You can search for them on the left-hand side. You can just search at the top and add those in, or you can do this. You can create a custom metric.
+
+So remember how I mentioned that the hook rate was a custom metric. So we're dividing three second video views by impressions. You can come up with all sorts of ones and get really sophisticated.
+
+And there are case studies where we will do that because certain businesses need different things and we will look to implement this sort of thing. So you could just go ahead and have a little play about with that, but that very much is an optional extra. Now in a second, I'm going to show you how we use this data to make optimization decisions and improve results.
+
+Before I do that, I want to quickly let you know a little bit more about Facebook Ads Mastery, the example campaign that we're talking about here. So the Facebook Ads Mastery product is my new course with community. So it's brand new course material, never before seen stuff that's not available on YouTube or anywhere else that me and my team have put together.
+
+We're literally using it to train our new staff. We're very happy with the quality of the content and think it's really good stuff. I think you find it very valuable.
+
+And the people who've been through so far have given us great feedback about it. But it also comes with a full community. So we're using Score.
+
+We've got over 700 members in there already. Fantastic place where you could connect with like-minded Facebook advertisers, Instagram advertisers, business owners trying to do things. Me and my team are in there all the time answering questions.
+
+We do live calls. We do live trainings, live Q&As. There's all sorts of stuff.
+
+So if you're interested, there is a link in the description. You can click on that. Hopefully, I will see you on the inside.
+
+With that said, let's get back to the video. Okay, so all the data that we've gathered here, it does have its place. That's why we're bothering to track these metrics in the first place, right?
+
+But in the first instance, so for the most part, the two metrics that I want you to base most of your optimization decisions around is either your cost per conversion or your return on ad spend. And which one you use depends on your business. So if you are optimizing for purchases, and you have the return on ad spend data, we would be basing our decisions around return on ad spend.
+
+So if we've got one ad that's producing a 4x return on ad spend and another ad that's producing a 3x return on ad spend, the 4x return on ad spend ad is the one that we're going to want to put more budget behind. We might turn off the one that's got a 3x return on ad spend. And that is irrespective of if the 3x return on ad spend ad has a better click through rate or a better cost per click.
+
+Like those are secondary metrics that don't matter anywhere near as much. We want to optimize for return on ad spend, the most important thing. Or if you're not optimizing for purchases, and you're optimizing for say leads or complete registration or something like that, then you want to optimize for your cost per result there.
+
+You know, the best cost per lead, the best cost per complete registration, if that's as far down the sales funnel as you can accurately track those things matter the most when it comes to comparing various elements. And a huge part of optimizing Facebook ad campaigns is just literally taking a look at the various elements you've created and going, this is performing better than this, I'm going to turn off this, and I'm going to learn from this one. And I'm going to create ads or ad sets to some extent that are similar to this one to test again and see if I can beat this one and get better performance over time.
+
+That's a huge part of analyzing data, optimizing, and it's very simple, very, very sort of top level. But there does come a point where you want to dig into the metrics a little bit more and take a look at the secondary metrics. And the reason why is to understand why.
+
+So, you know, I said we're going to decide between ad A and ad B based on return on ad spend or cost per conversion. But let's say one does have a 4x return on ad spend and one has a 3x return on ad spend. We want to know why this one has a 4x return on ad spend so that we can make ads that are more like it.
+
+We can work out what's worked and what doesn't and use that information to improve results over time. Now, what we look at here will depend on the business. It will depend on the type of ads we're running.
+
+So I'm going to run through some examples I've prepared of the sort of logic that we might use and examples of data so that you can understand how we would improve things and things like that. Okay, so let's start with hook rate. Now, in this campaign, we're running video ads.
+
+Hook rate, remember, is the percentage of people that watched at least three seconds of the video. So how well were they hooked in the first place only really applies to video ads. So within this ad set, we ran ads that were videos and hook rate might be one of the things that we look at to try and work out why are some ads performing better or worse than others.
+
+So let's go ahead and click in and we can see the various six ads. We can see the data on what was spent, purchase generated, cost per purchase, all that. If we scroll over, we get to hook rate and we can see some big differences.
+
+So firstly, with hook rate, just discount these two ads here with the really low hook rates. They're both carousels. So it's not going to, it's not comparing apples for apples in comparison to the other three that we have data for that are all ads.
+
+And we can see here that we've got quite significantly different hook rates. We've got a 10.6 hook rate, 13.6 and 16.2. Now, this is going to vary massively between businesses, but I think if you've got a hook rate over 10%, you're normally doing reasonably well.
+
+Anything below 5% is really quite poor. And then in between is okay. But again, there are going to be businesses where those metrics are way, way different, but that's often what I might look to look at.
+
+So what we can do now is we can take a look at these three video ads and be like, well, this one down here, that is hooking people better in. Okay, great. So that hook works better than the hook for the other two video ads.
+
+When we create new video ads, let's start with the one we're using here. Now, interestingly, though, when you scroll over and we look at the cost per purchase, this ad is not actually performing as well when it comes to cost per purchase. It's 28 pounds versus 25 for this one up here and 19 for this one here, although that only generated three purchases.
+
+So it's not much data. So what that might tell us in this sort of scenario is, okay, this ad here is doing the best job of hooking people, but this ad and this ad are doing a better job of getting people to convert. So why don't we take this ad up the top, the meat of the ad and pair it with the hook that we've got in this ad.
+
+And then we might be able to benefit from the better performing elements in both. That might be one of the things that we look at when it comes to hook through rate. And that's an example of digging into the data and coming up with an actionable step that we could now take with a reasonable expectation of improving results.
+
+We can also look at hook rate in conjunction with video average playtime. Now, in this scenario, because these are short videos, this video average playtime, I don't think is very useful. But we might see for certain ads, for example, that the hook rate is nice and high, like let's take this one at 16%.
+
+But the video average playtime would be significantly lower than the other video ads, in which case that would really show us that either the hook is a little bit misleading and not connected enough to the rest of the ads, or that the meat of this ad, so after the hook, the main, the main content of the ad is not as engaging, it's not keeping people there for longer. So this is where when we dig into the set into the secondary metrics, we can start to pair them and start to put together a picture and understanding of what's going on here and combining both hook rate and with the end result and then hook rate with video average playtime can help do that. These are really short videos, so the video average playtime is all really low.
+
+And that's fine. But in some scenarios, you will get more interesting and more revealing data in these two columns. If we're running video ads, we will also take a look at hook rate and combine that with the click through rate link clicks, remember?
+
+Okay, so if we scroll over to our CTR, and we see that certain ads have a better, a really good hook rate, but say a lower CTR. So let's say they've got a hook rate of over 10%, 10%, but a CTR of lower than 0.5%, which is really quite a low CTR for link clicks, then that might tell us that the ad is engaging, it's grabbing people at the beginning, but people aren't convinced enough to go ahead and click once they've watched the video ad. So there might be two fixes for that, either you just need to improve your offer, like the ad got their attention, they were interested, it was engaging, but they got the offer, they understood what it was, and they were like, I'm not really interested in this, that could be a possibility.
+
+Or it could be that there's just not enough proof that you can deliver on what your promise is. So if we ran an ad for our Facebook advertising services, for example, and we put something really engaging in the front and got a really good hook rate, but we weren't getting a lot of clicks, it might be like, okay, we're putting this in front of say, cold audiences, they don't believe that we can deliver the results we're talking about, therefore, we need to show more proof. In our case, we need to show more testimonials, screenshots of client accounts, things like that.
+
+So that might be another way to fix it. So you can diagnose that, okay, we've got people to this stage, but if they're just not clicking through, they're not, they're either not interested enough in the offer, or they don't believe we can deliver on the promise well enough. So that's what we then need to address in the next video ads that we create, try and put in more proof, or try and improve the offer.
+
+So we can increase that click through rate, that might be something that we look to diagnose. In this scenario, we've got decent click through rates on all three of these video ads, it's not as revealing. In fact, the click through rates correlate somewhat with the hook rate.
+
+So that doesn't really indicate that this is a problem in this scenario. But I'm just trying to run you through example scenarios of what might happen there and when we might make that change. So leaving hook rate behind, another metric that we might look at in conjunction with how everything's performing would be click through rate.
+
+So if we take a look at our click through rate, and we see it's good and think above 1% is decent, if you're getting over, say, a 2%, you're doing really well, remember, this is link clicks, not all clicks, because they're very different things. So let's say we're getting a good click through rate, a 1.5 click through rate or something for something really solid. But we're not, people aren't actually converting.
+
+So let's say we're advertising an ecommerce business, we're advertising products directly, and we're getting a conversion rate from people who have clicked to people who convert that's like 0.7%. Anything under 2% would normally be considered on the poorer side for an ecommerce business. Although again, that can vary massively.
+
+And that tells us that the landing page isn't doing the job. And it's not an ads issue at all. The ad, if it's a video ad, it got them to engage, it got them to click if it's an image ad, it got them to click through.
+
+And they're just getting to the landing page, and they're not taking the next step could because the landing page isn't congruent enough, could be because on the landing page, there's like a shipping fee that people didn't expect. It could be because there's not enough proof, not enough testimonials and reviews and things like that of the product or service to get them to take the next step. But it helps us diagnose, okay, this is the issue, good click through rate, but bad overall results, there's a good chance that that's because the landing page isn't doing its part of the job and isn't doing as well as it could be.
+
+Now, of course, you have to run these things through a common sense filter, because you could have an ad that is like engagement bait almost, designed to get people to interact with it, gets lots of clicks, but you're not really promoting the product or service in its entirety or properly in the ad and therefore doesn't convert. Well, that's not really the landing pages because there's not enough congruity between the ad and the landing page in that sort of scenario. So you do need to run all these things through a common sense filter.
+
+But hopefully, that's a good framework of a few examples there of like, okay, if this happens, it might be because of this, if this doesn't happen, it might be because of this. And you can go about optimizing and working on the things that are the constraint of your sales funnel, improving those and hopefully getting better results. And I just want to reiterate that you don't want to optimize in the first instance for metrics like CPMs, CPCs, even hook rate, click through rates, things like that.
+
+In the first instance, you want to be optimizing based on your cost per conversion, or your return on ad spend. And that's because sometimes these metrics, they won't correlate. So you might have ROAS numbers that like, or we showed an example here with the hook rate being 16% for one ad versus 10% for another ad, but the 16% hook rate ad is producing a more expensive cost per purchase than the 10% hook rate ad.
+
+So sometimes they won't correlate. And there are all sorts of reasons for that. So let's take CPMs, for example.
+
+So that's cost per thousand impressions. Some advertisers will optimize for the lowest CPMs, thinking cheaper Facebook ads. It's like, right, but your CPMs are going to be more expensive if your ads are being put in front of higher quality audiences, because other advertisers want to reach them.
+
+That's why they're more expensive to advertise to. Facebook ads operates with an auction system. The more demand there is for certain individuals to have ads put in front of them, the more you are going to pay to reach them.
+
+And guess what? High net worth individuals, business owners, a lot of the people that you want to be advertising to, they're going to cost more to advertise to. So you might see a high CPM, but you might convert a lot better because these people are a better quality audience.
+
+Likewise, with click through rates, an image ad will very often get a better click through rate than a video ad, because it's so easy and quick and simple to consume. And particularly if there's any curiosity around it, people will click through. But maybe they don't convert as well once they get to the landing page because there wasn't the video ad there to help them convert, to help convince them to buy the product or service.
+
+Whereas with the video ad, less people go through it, so less people click. But you've laid a lot of the groundwork and the foundations to help get people to the point where they're going to be ready to convert. So don't optimise for those.
+
+Use those to understand what's going on and then inform your future ad creation. Is there a discrepancy between link kicks and landing page views? Yes, big one.
+
+Okay, have we got an issue with campaign setup? Are we using traffic campaigns and our ads are being shown on the audience network? Or is there an issue with the landing page load speed?
+
+Okay, our hook rate's really good. Average playtime is rubbish. Right, so that hook's good, but we need to fix the rest of the video ad.
+
+Average playtime is good, hook rate's good, but CTR is low. Okay, people don't like the offer or there's not enough proof. So you can go through these things and based on what you see, you pair these secondary metrics, you get a picture and that can help inform.
+
+And I know that's all a little bit bitty and can be a bit confusing, but hopefully you've grabbed some some helpful things there. Right, one of the things I want to go through as part of analysis, I think it's really, really useful is looking at the chart data because Meta has done a really good job, I think, of giving us more information that's going to help us improve our results. So if we click alongside this, this ad up here, the one that's had most of the spend and got most of the conversions.
+
+And then once we've selected it, we can go ahead and click on view charts, right. So we can see basic data like, you know, 60 website purchases, 25 pounds each, 1500 spent on it. So you can see it's relatively short timeframe this is run for.
+
+And then we can go down and see some really interesting demographic data. So you can see that advertising this Facebook ads mastery offer, it is 83% male, which is really quite high. And the cost per result was better advertising to men.
+
+Now I wouldn't necessarily use this data and then go and change our targeting settings. But what I might do is change the messaging on future ads. So 83% is probably not quite enough for us to be like, specifically speaking to men in our ad copy.
+
+But if that was 93%, I'd be like, we probably want to directly make it very clear. And I'm sure you've seen ads that directly speak to them directly speak to men directly speak to all different groups of people in their copy, because that could help improve our performance with that group. Yes, it will put off a different subsection of people.
+
+But if we're already getting the vast majority of results from one subsection, you know, this could be gender, it could be age, it could be all sorts of things, right? Then you might want to go ahead and make that change. Platform data is also really interesting, you can take a look at, you know, reach is slightly higher on Instagram versus Facebook, but you can see that 36 results generated from Facebook purchases 24 from Instagram with a similar amount spent.
+
+So it shows that Facebook is significantly better performer for this offer. I was gonna say for my business, but that's not necessarily true across the board for this offer specifically. I'll scroll down, we can see all the ad previews and stuff.
+
+See, this is a Facebook ads mastery ad. And then we get down to this. And I think this for video ads, it's absolutely fantastic.
+
+So this shows the drop off as people are going through the video ad what they're seeing. And you can see it in time with what's going on, like how many people made it through to 75%, how many people made it through to various percentages, but actually think the line is the most useful. And what you'll see here, I think is really valuable is where do you get more of a drop off than you might expect?
+
+And where do you get less of a drop off than you might expect? So this is kind of small, I hope we can see it zoomed in. So between 13 seconds and 14 seconds, if it moves over, you can see if I move my cursor right away, there's a bit more of a dip just down there.
+
+The same happens between, where are we? Same happens between 10 seconds and 11 seconds. There's like just this little bit more of a dip than if that curve was was going along.
+
+So that shows me that whatever we're doing in that second specifically, not so great. Maybe we don't do that next time because people aren't as interested. Okay.
+
+Whereas there are other parts that are completely flat. So if you look between eight seconds and 10 seconds, that's basically completely flat. You can see 6% of people are making it between those timeframes.
+
+So whatever we've got there is great. People are really liking that they're sticking around. And then there'll be other flat sections.
+
+I mean, this section even goes up, right? So we've got here between 14 seconds, we've got 4% and 15 seconds actually goes up to 5%. Now that may not be correct.
+
+That might be because this is, as you can see at the bottom, still in development, it might be not right. But that might show that, okay, that part's like, absolutely that part's great. That's holding people.
+
+So you can really get into the data here and you can see that, you know, there's obviously always gonna be a big drop off at the beginning. But if you go through and analyze the various sections, particularly obviously with video ads, you can see, okay, do less of the stuff that gets people to stop watching, more of the stuff that holds people's retention, and that's going to increase your average playtime and most likely improve your results. Because if more people watch the video, more people make it to the end, more people click on the link, more people go ahead and purchase, become a lead, etc.
+
+So spend a little bit of time in this, not just looking at the demographic platform data, but also if you've got a video ad, really digging into this information, I think it's really valuable. So hopefully that is helpful when it comes to analyzing your Facebook ads and improving your results. If it is, please go ahead and subscribe, just takes half a second, and I will see you on another video very soon.

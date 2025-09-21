@@ -1,0 +1,489 @@
+Okay, so we talk about ChatGPT wrappers on this podcast quite a bit. And a GPT wrapper is basically a business that you build on top of ChatGPT. A lot of people crap on it, but people are building really big businesses on top of ChatGPT.
+
+And so instead of talking about it theoretically today, I wanted to invite someone on the podcast that actually did it. He built a wrapper. He's growing super fast.
+
+It's an AI voice wrapper selling to small businesses, local businesses, home service businesses. And I wanted to ask him no holds bar, like, how is this? How did it go?
+
+How is it going? Is this hard? Is this approachable?
+
+Should other people do it? What markets would you attack if you were doing this all over again? What ideas would you give other people specific business ideas or launch tactics?
+
+You're going to love it. He's with the owner of a business called Hey Rosie. Please share with a friend.
+
+Well, why don't we start by you just telling us who you are and what you do? Cool. Chris, first, thanks for having me on.
+
+I'm a fan of the pod and your Twitter, and it's great to be on. Yeah, you want to talk about Rosie? It's a new business we started about six months ago.
+
+And what it does is it answers the phone for small businesses. It's an AI agent that does a much better job than voicemail. It costs a fraction of what an answering service does.
+
+And it handles this very painful issue that small business owners have, which is phone calls during the day, while they're working, phone calls after hours, when they're closed, just how to handle the phone when you are an owner operator or you're relying on people and the phone matters to you and your business. That's where we're going. I've honestly been surprised at how expensive a lot of these traditional phone answering services are.
+
+It's never made sense for me as a business owner. One of the exciting things about AI is it creates markets that weren't possible. And as a business owner that relies on the phone, you really kind of had voicemail as one option.
+
+And then the answering service is another. And it is surprising. It's like two bucks a minute is like a normal rate for an answering service.
+
+And that's only worth it if each call is extremely high ROI or it is built into the service that you promised people and you charge for. And I've been on both sides of those calls. I've called like my septic guy and it went to the answering service.
+
+And like, I feel like their knowledge base is so limited. It's like my sprinkler and they're like, and it's like, really, you can't answer this. Whereas AI is just like upload PDFs, answer questions.
+
+Obviously I'm oversimplifying it, but. Yeah. Well, you're touching on something, which is, you know, if you rely on human memory and skill, an answering service does a very difficult time keeping it affordable because they might have 10, 20, 30, 50 people answer in the phone based on the time and day and not everyone has the same context.
+
+Yeah. So, or you go the other way, you hire someone in house or you're sophisticated enough to hire someone in the Philippines or something like that. Then you train them up and then they have the knowledge in their head.
+
+And if they're not available or if maybe they go take another job or something, then you kind of have to restart. And like you said, AI addresses a lot of those concerns with, you know, memory that doesn't go away, people that don't leave for other jobs. So yeah, it can be better in that way.
+
+It's funny. Cause I'm actually smiling. I'm remembering I tweet.
+
+I don't know if you saw this tweet. It was just last week. I had some guy come to fix my dryer and then he steps through my ceiling.
+
+And so I call the number and immediately I know, like if I weren't a business owner, I probably wouldn't know, but immediately I know. All right, this is someone in the Philippines. She probably has like six questions she gets every day.
+
+And this is definitely not one of the six. She's not going to know what to do. Like I just knew from the first jump.
+
+And this seems like just a perfect use case for AI, right? You know, one of the reasons I was drawn to it is because it actually, when we looked at it roughly six months ago, it was in its infancy, meaning it wasn't actually that good, but anything around AI that is currently not good, you have a lot of confidence in it getting good and then really good in the future. So like what you're alluding to, we would probably do a decent job and addressing not a very good job because we're not actually a human replacement.
+
+We're a much better voicemail, much better conversion rate than voicemail. Everyone hates voicemail. It is on its way to human level skill and memory and that sort of thing.
+
+Right now it's in, it's an in-between phase and it's going in that direction. And that's, we think a lot about that. The way we talk about it is that it's transitioning from an answering service to a receptionist.
+
+So it's in between those two. Tell me what like a perfect use case is for Rosie. So like, let's say you're, you own a $5 million HVAC business.
+
+Would that be a likely customer of yours? And what would a normal call look like for them? Yeah.
+
+Let's, let's talk about two types of customers. One I have in mind is it is, is a water remediation company, right? So that's the use case that you're talking about.
+
+They do millions of dollars in revenue. And sometimes at 10 o'clock at night, a hospital will have a water issue and they're calling this business. And that's like a million dollar job, but it's 10 o'clock at night.
+
+And right now they have an answering service and that answering service is expensive and is in a similar situation as you described earlier. You don't know who's going to pick up the phone. And sometimes they're keeping those, that call like on hold for like 10, 12 minutes.
+
+And that's just unacceptable. So in that situation, they've come to us and said, we love what you're doing. We can train her.
+
+Great. What we need now is call transfers. We need a split in the road.
+
+This is just a regular call. Take the message. This is a really important call.
+
+We need you to transfer it to us and do not hang up until someone has picked up. So try line number one for Billy, try line number two for Jack. So it's programmable conversation.
+
+So you base all that functionality is code. You can say, don't transfer depending on what time of day and which day transfer to this person. So that's the use case of that type of business.
+
+The other type of business is like a one or two person company. And that I think is like emotionally what drew me to this. And that I always describe as Saturday morning, you're having breakfast with your kids, phone rings.
+
+You do not know if you should pick up the phone, what that phone call is. Is it a $3,000, you know, concrete job that it really matters to you and your family? Is it spam?
+
+You're with your family. So this, that choice is very painful and addressing that pain feels amazing. So Rosie will pick up the phone.
+
+The business has the ability to identify what they consider to be a successful message, right? Are you an existing customer? What town do you live in?
+
+What do you, you know, what kind of work you're looking for? And then it'll just send them a text message with a transcript and a summary of that call. And then that person can decide I'm going to stop what I'm doing right now with my family because this is important or I'm going to ignore it until Monday.
+
+So what is the voice saying? It's like, Hey, you know, this is so-and-so. Can I take your info?
+
+Is it saying upfront, this is AI? Or if it doesn't and they ask, how does it respond? I'm very curious about those awkward interactions.
+
+It felt like a strategic question, whether or not this tries to pretend to be human, or if it just has no problem, just address, yes, I'm an AI. We give the user the option. Some businesses want to say, hi, I'm Rosie.
+
+The AI receptionist for Chris's business. How can I help you? And other people just want to gloss over it and hope that the people don't care.
+
+What do you think is best? I think it depends on the audience and the demographic. I listened to a lot of calls.
+
+Some people have no idea they're talking to an AI. Some people get a kick out of it. Some people like are, are upset about it.
+
+And then they kind of realized, Oh, this is actually me like interacting with a voicemail in some ways. And I just assume it's early. So a year from now, two years from now, the truth is this kind of has the potential to alleviate a lot of pain from both the caller side and the business side.
+
+Yeah. Yeah. Yeah.
+
+Cause it's easy to look at this as being a big convenience or a cost saver for the business. But as a consumer, like I would rather just have someone like binarily answer my questions, like just answer my dang questions. Don't transfer me.
+
+Don't put me on hold. Even if I knew it was an AI, I would much prefer that. It just seems like a win-win all the way around.
+
+Right. And then there are some cases that you do need a human. And for that, the AI goes out and tells the people, Hey, you got to call this person back.
+
+We even had people, a large national gym franchise. What they said to us was all of our users would prefer text message. Can you just say at the beginning, do you want to turn this into a text message conversation?
+
+If so, I'll send you a text. So that's, that's kind of on the way because it puts more power in the caller's hands on how they want to interact. So that's a feature you're adding based on that feedback.
+
+Yeah. Interesting. That's a really cool idea.
+
+Right. It's just like, Oh, I have to call to what to like set an appointment or cancel something or ask, you know, whatever it is. If you prefer text, then you just don't need to interact on the phone.
+
+Do you have any funny stories about awkward interactions that you listened to or where it went off the rails in the early days? I think that's daily, you know, it's, yeah, it's not perfect. One of the very like relieving experiences is understanding that it's such a painful problem that the product actually doesn't need to be perfect.
+
+It needs to be really good and consistent, but not 100% perfect. It's challenging from a development point of view because there's software and you can kind of like set things up to tell you where there are errors. This type of thing, because it's voice, you really kind of have to listen to the conversations to see where things go wrong and what you need to adjust.
+
+And then you have to wait for the next phone call and see what settings led into what interaction. Yeah. But there's like, there's funny stuff all the time.
+
+You know, every once in a while, she'll like leak in some funny thing or she'll repeat herself three times. I mean, like I said, it's software and there's plenty of work to be done, but the reliability is what matters. Now I'm sure you're white labeling something that actually handles the heavy tech of this is, are there still pauses?
+
+Are there awkward pauses? And has that gotten better? The improvement on latency is probably the biggest improvement since we started.
+
+You would make a call and you would kind of cringe. You're like, Oh my God, nobody waits two seconds to respond. That is so much better.
+
+Just a few months. And you know, I hope we get a chance. I'll, I'll like call Rosie during this podcast so we can see, and you'll notice the latency is very natural.
+
+It's very, very, very. Okay. Well, I'll just, I'll let the demo answer that question fully for me.
+
+I've seen your bio. You remind me of myself and that you're a serial entrepreneur. You've done a lot of things when, you know, with everything at your disposal, not just like across any industry, but in AI specifically of all the things you could have chosen, what made you want to tackle this problem of all things?
+
+Okay. So I go toward the customer, meaning, uh, I want to live at the app layer where end customers interact. I don't want to sell to developers.
+
+So that automatically drew me to that basically a rapper business. And people talk a lot of trash about rappers. I think they change your tune a little bit with deep seek coming out because you start to look at the really, really hard tech that might get commoditized.
+
+So I always want to sell to the end customer. So that immediately drew me there. The way this business came about is I was actually running another business called rally, which is an e-commerce checkout that we've raised money for.
+
+And it was just going okay, but it wasn't fun. It had an enterprise sales process. It wasn't grown quickly enough.
+
+So I was open to pivoting. I mean, I'll be honest with you. What I did was I went to YC's website and they do a great job of listing other companies.
+
+And I looked at the most recent batch and I start going through AI ideas and I wanted something one that was worth money, like to the customer. Like if you do this for me, I get ROI from giving you money every month. And I wanted something that was not good.
+
+So voice felt like this thing that was going to become very good, but at the moment was not good. And I wanted a big market that I could sell self-serve. I did not want to do the enterprise sales process.
+
+So I had like some criteria when I looked at it and this just kind of hit the bullseye for me. What a beautiful framework is just going to the, for those aren't familiar, YC is Y Combinator. It's the most prestigious startup incubator in the world by far.
+
+Nothing's even close. I've never even thought, like I've heard of people doing that. I know they post like what they're investing in, what they're looking for, but I don't know, maybe because I have too many ideas.
+
+I'm never short on like what to do, you know, but a lot of people are. And I'm not even saying that you were, but you were very strategic about what to launch. And that's honestly refreshing to hear because usually the story that I hear is like, you know, I had this problem and I solved it for myself and then other people ask and they kind of serendipitously fall into it, which is great.
+
+But like, I just love that this is different. And it's like, I was tactical. I looked at this.
+
+What is a problem? What's a huge market? What is Silicon Valley putting their money into?
+
+What do I know? What are my frameworks? I want to sell to the consumer.
+
+I don't want enterprise SaaS. And you just kind of bake the cake that looks like Rosie. You know, I appreciate you putting it that way.
+
+Yes. You can look at it that way. Right.
+
+The other point of view was like, oh, you went and copied someone, but not, not really. No, I love, even if yes, I love copying people. I think copying is great.
+
+No shame. What I liked, you alluded to it before. You said, I bet you're not really doing the hard tech yourselves.
+
+You're building on top of existing stuff. So what I actually found when I went to YC was not companies like Rosie. I found the infrastructure companies that were effectively marketing to companies like Rosie saying, build your stuff on top of our tech stuff.
+
+And, and that I think is really interesting in the AI because you're building a lot less than you used to. So rally, we built so much, like we still had Stripe to build on top of, but you had to build so much of the stack and AI allows you to leverage amazing tech. And you really are just building the interaction layer on top, which I think is why very technical people, you know, talk down to rappers, but regular lay people like us who understand how big the market is for just normal businesses who have problems, who don't care what model we're using or transcriber or anything else.
+
+They just want the problem solved. There's a huge like arbitrage opportunity in AI for people like us to just grab the tech and sell it. If you're almost reselling the tech, but you're solving problems.
+
+You're not just taking the tech and handing it over. Yes. A lot of people can go out and build their own voice agents.
+
+Nobody wants to do that. You're running a, you know, $20 million window company. Yeah.
+
+I mean, I think was air was one of them is that I started playing around with that right when it came out and I was like floored. My mind was blown. I was uploading thousands of phone numbers.
+
+I was calling people. They had hilarious conversations. I was trolling people.
+
+It was just like, I can't believe this is real. So like that probably puts me in the, like the top tier of people that know that these things exist and how to use them. But even me, I also own a tree trimming business.
+
+If we were to hire, you know, a call service, it would be something like this because I don't want to mess with it. Like just because you know how to use it doesn't mean you're not going to pay a wrapper, you know? Yep.
+
+Yep. I had a lot of fun with specifically around the experience with enterprise sales. I really didn't like that version of things.
+
+I want it to be more straightforward. Not you say yes in this meeting, but there's actually someone else that decides we got to have another meeting there. And so what I said to the team was prepare this to take on a hundred signups a day.
+
+Okay. We're not there yet. We're making our way there.
+
+But if you, if you set that out as a requirement for a piece of software, it forces you into a bunch of decisions around how complex, how sophisticated, who's it for, how, how much you're describing it, how many options you're giving, right? So in the spectrum of ease of use to complexity, it tells you where you want to be. So Rosie is very much that there are much more sophisticated solutions.
+
+This is not that if you are some airline and you need to replace it with AI, we are not for you. If you're a restaurant, go to slang AI, they're building it for restaurants. If you are a business owner that wants to come in and 20 minutes later be launched, that's what, that's what we're for.
+
+Yeah. Yeah. It's just such an interesting framework is like, there's like rappers on rappers, right?
+
+Like slang at, like you could do that. You could be, you could sell the restaurants, right? Like it's just, I'm oversimplifying.
+
+It's a different prompt, but it's like, no, no, no. Like restaurants want to buy, you know, call services for restaurants. Yes.
+
+Yeah. I just turned someone down and said, Hey, you know, it's a kind of decent opportunity to 2000 minutes, all this stuff, but they want integration with their POS to take orders. Yeah.
+
+So that's amazing, but we're not going to do that anytime soon. You should be over and slang. Yeah.
+
+Yeah. Okay. So let's talk unit economics.
+
+What is, what does 2000 minutes look like to you on like a gross revenue and net margin perspective? Okay, cool. So I love pricing and positioning.
+
+So I'm happy to dive all the way into the stuff. One of the downsides with AI, at least with voice AI is that the gross margin is not as good as other software companies. Like the, the cogs is, is serious.
+
+Like it's you're paying per minute. You're selling per minute. We don't want to sell per minute.
+
+We want to sell based on features, but as of right now, you go to our website, right? It's 250 minutes. It's 49 bucks a month with the features that come with it.
+
+99 bucks a month for, for 500. So it's about 20 cents a minute. Now in my previous software companies, like one card hook that was really successful, we were probably spending 5,000 bucks a month on AWS and doing $500,000 in revenue.
+
+That's what gross margin normally looks like at the software company. So video is cool, but you know, what's better long form audio via podcast and my newsletter, TKO pod.com. Go there to subscribe for free to my newsletter.
+
+It's one email a week, very tactical. And then go to my audio podcast, three episodes a week, stuff like this. You're going to love it.
+
+All free. No sleazy sales pitch. TKO pod.com.
+
+So in AI, the challenge is you cannot price based on your cogs because you will get smoked because cogs goes down so fast that you need to price with the assumption of where cogs will be in the future. And so you kind of need to eat the bad margins now to enjoy the good margins later. I was just pricing out per minute for voice calling.
+
+And it was like, it's not, it wasn't great. It was like 15, 13 cents. And so when we're talking what you're charging, like that might sound good on the surface, but for software with software type cost, that's not great.
+
+That's right. That's right. So when we first launched, we didn't have differentiation features among the plans because we were just starting.
+
+And now as we add things like appointment setting and transfers and live transfers and spam detection and custom agent training and training files, that is what we're using to differentiate among the plans. Because if we're viewed as a set number of minutes for the price you pay, we're seen as a commodity. Yeah.
+
+Then I'm just going to compare to this other service and you don't, you don't want to be in a commodity game. So that that's our challenge over the next few months we've started, but over the next few months, we want to de-emphasize the number of minutes because that actually doesn't map to the type of business. If I'm a one, two or three person company, I just need the simple features.
+
+Just take the messages for me, let me know. And that's it. And if I'm the water remediation company, I need the higher plan.
+
+Cause you got all the stuff that I need, not just the number of minutes. Yeah. And also when it comes to pricing is you always play that trade-off between like friction and simplicity because most business owners are like, what is 2000 minutes?
+
+I don't know how many minutes I need. Like that equals friction. That equals, I'm going to go somewhere else where it's 50 bucks a month.
+
+And that just gets me what I need. And you're like, okay, but I can lose my shirt on that, you know, but the more you're, you're in the game, the more you realize, okay, this guy, he's going to be, this guy, he's going to be, I might lose money on 5% of these guys, but you make the pricing more simple because you gather more data to be able to afford to do that. Yes.
+
+I, like I knew we needed to start moving away from deemphasizing minutes. When we got the comment more than once, do my minutes roll over? Like now you're in the cell phone game, look bad, you know, bad place to be.
+
+I want it to be commodity. You're setting, yes, you're setting appointments for me. That's worth 99 compared to the 49 plan that you just taking messages.
+
+Yeah. Yeah. What types of businesses or industries are you onboarding that really surprised you?
+
+Like that always happens, right? You're like, all right, we're going to be, you know, HVAC plumbing, electrical. That's, those are the big three.
+
+We're going to do that. And then it's like, wow, all these landscaping businesses keep calling us. And then you learn like, oh, because in landscaping, I did, you know, tell me about that.
+
+I love that process in business. Like you just uncovering what the actual issues are on the other side. So going in, our assumption was that the most important category was going to be home services.
+
+And that's because they're advertising and phone calls come in. You know, I own a home. I'm in like the Chicago burbs.
+
+I do my research online and then I pick up the phone and I call these people. And that's how a lot of people make their decisions. So that's, that was our assumption.
+
+That was mostly right. It's about 50% home services. Okay.
+
+The other 50% is a wild west, small business, American entrepreneurial landscape. It is property management, party events, just local businesses, but not home service, local businesses, but not home services. Basically anyone that has the phone still playing a large role in their business.
+
+Yeah. Have you ever thought about scraping a Google maps and then scrubbing out all of the landlines and marketing specifically to the ones with where the owner has their cell phone listed? Yes.
+
+So I've thought one of the things I like most about your content is it reminds me of technical hacking. I'm not an engineer, but I know people who hack. You look at it from a business hack point of view.
+
+So that, that would be one of them, right? So one of the things we wanted to do, maybe we'll figure out a way to do it was basically call local numbers scraped off of Google maps or Google business profiles after hours. So based on time zone and anyone that went to voicemail was a perfect candidate.
+
+We could actually drop a voicemail saying, hi, I'm Rosie. I'm the AI assistant. You could eat your own dog food, use your own software to do this.
+
+Yes. Yes. So we haven't done that yet.
+
+Right now we're advertising, which is super interesting in and of itself. B2B, I've never really succeeded advertising with B2B. I've always done like this networking thing and content and all this other stuff right now ads on Instagram, Facebook, TikTok, which I think speaks to the fact that there's so many small business owners and people involved in small business that you can kind of just blast it out there and let the algorithm go find them.
+
+But we're just speaking to a very general pain point. You know, I hate getting to the office on Monday and seeing 14 missed calls and no one left a message. Right.
+
+And that's just a common pain point. So I think that's related to what you asked about, like a category. Normally, if I started a software company, I would go for a very specific category, a niche and nail it for them and expand from there.
+
+In this case, in AI in general, I think the broad approach makes more sense because the markets are just forming. Every business owner, a lot of people have this phone problem. There aren't many very large problems in the economy that don't have any solutions.
+
+You know, capitalism is better than that. Yeah. This stuff, AI creates these new categories because you couldn't do this a year ago.
+
+So voicemail and answering services were the only options. That creates a third option in a very large market with a very large problem. I don't think it makes sense to niche it out.
+
+I think you got to go broad and capitalize on the wave of new businesses looking for this. Yeah. Agreed.
+
+So one question I love to ask is for anyone listening, you know, 30% of people that listen to this, 30 to 40% are business owners and 50 to 60% are aspiring business owners. So if someone's an aspiring business owner and they're like, I want to build a wrapper, what advice would you give them? That's part one of the question.
+
+Part two is what opportunities are you seeing that you're too focused on Rosie to execute on? Like, man, someone really needs to do this because I got this call from this plumber that like, what are you seeing that other people could go launch or start? Let's start with that second question.
+
+I'm pretty focused on voice with AI. And there are a lot of opportunities around voice that aren't what we're doing. So one of the, one of the things I think is most, uh, huge opportunity.
+
+It's basically coaching, but it's, it's AI sales coaching. So you and I are doing a podcast. You've probably been on zoom calls before, and there's like a transcriber, AI along with you.
+
+Those are really good. I've used one called fathom. It's ridiculously good.
+
+Yes. Yeah. If you layer that on top of sales conversations, it starts to become worth a lot of money.
+
+One of the other ideas that I considered and looked into before pursuing Rosie was basically a ride along sales manager that just listened to either calls or in-house. So think about a pest control salesman going door to door, recording the conversation that they have at the door. Cause the owner has no idea what he's saying.
+
+The owner of this pest control company, like, and I used to do pest control and I worked with sales guys and like, they could be misrepresenting the company without even knowing it. They can have terrible sales technique. They could just be breaking every rule in the book and the owner would never know.
+
+That's right. You are not there. You are not part of that conversation.
+
+And you know, a lot of people who want to go from, I do all the sales myself to, I want people to have trust issues. You try, how do I train people properly? So I think that is a huge opportunity.
+
+You could do it on the phone and on zoom, but you could also do it in person. You get an iPhone app, start an iPhone app, and then basically take the transcriptions of those conversations and start to talk to the owners and say, what needs to be said? How do you want it to close?
+
+Are they representing the company properly? Are they saying the tag, you know, the, the lines that you want them to say. And you could even have it like anonymized specifics.
+
+So you could tell the sales guys, listen, don't be afraid of this. It's not going to, I'm not going to see transcripts of what you're saying. It's just going to send me notes.
+
+Like he, you know, he really could have, you know, before he left, he really could have upsold them a little bit on this or that, or else it might be hard to get buy-in from the sales guys. But are you familiar with rewind and that pendant that they're launching? Yes.
+
+Yes. Yeah. So I pre-ordered one of those, but that's more consumer focused, but it's interesting.
+
+Yeah. Yeah. But it's like, it's a very small wearable that will enable conversations like this that where they don't have to be on your phone.
+
+So it's going to be interesting to see how new hardware can enable new wrappers or new businesses on top of that hardware. True. The first question was what just advice.
+
+Yeah. Like just advice on launching a wrapper in general, like, cause I oversimplified a lot on this podcast. That's like my biggest complaint, which I won't apologize for that.
+
+Cause that gets people to launch things, right? Yep. That's right.
+
+But we talk, yeah, we'll start a wrapper for this. I'm going to launch a wrapper for that. And what is your maybe pessimistic take on that or slap of reality on that?
+
+If there is one at all, there's both sides. The, the realistic, you know, cold water on it is that it's still hard just because it's a wrapper. It doesn't mean it's easy.
+
+Software is hard. Product market fit is elusive. You have to go into it knowing yes.
+
+Point of view, the wrapper approach gets you places faster, but it's not a panacea. You still need to do the hard work. Now the other side of that, the optimistic side of that is if you pay attention to the solution and not the tech, don't get enamored with the tech.
+
+Just because this new thing came out, you can do it just because it's cool. That that's not what you should be following. If you can identify the actual problem and then connect the two, Oh, there's now this tech that I can build a wrapper on top of that addresses this.
+
+I think that that's the way to go. That's the key advice is don't get enamored with the tech. It get enamored with the problem and the solution.
+
+And you see people doing that really successfully with like these wrapper iPhone apps. It's like dating stuff, Bible study enables things that weren't possible. And then you can wrap them up into something that's very popular.
+
+There's already a big market for, and you can jump in. What do you think about that specifically building iPhone app wrappers, like a sourdough cooking guide? I experienced that.
+
+I think the same way as other aspiring entrepreneurs, you look over and there's a lot of Twitter posts about how much money they're making and how easy it looks. And then it goes through your like emotional, you know, rollercoaster of all I should trough of disillusionment. Yes.
+
+Yes. Yes. So I feel like maybe I've gone through that enough times to be like, Oh, that's just the shiny object.
+
+I'm not going to pursue that. I think there's an interesting market there. I just don't know the Apple app store game at all.
+
+And one of the key characteristics that we didn't touch on going into Rosie was I did not want to be beholden to a larger platform. My card hook, that company I alluded to before. Shopify.
+
+Yep. Yep. It got to like 6 million in ARRs.
+
+Like it wasn't bootstrapped, just a few bucks from friends and family. Beautiful business, 20 people having fun and Shopify just didn't want it to exist. So they nuked it.
+
+And I just didn't want to be in that position anymore. So Rosie specifically, one of the key characteristics was, you know, out in the open market. Okay.
+
+So you're six months in, what are your numbers looking like today? How was your churn? What is your customer acquisition cost revenue?
+
+What does that all look like that you're willing to share? Yeah. I can talk about customer acquisition costs and then I'll be fuzzy on revenue and stuff.
+
+Sure. Customer acquisition costs is obviously important. We've gotten to about 50 bucks, which is really interesting.
+
+And in software, you know, what you do is you take that and then you apply your conversion rate, your trial to paid conversion, and then you look at your churn and then, you know, all that, you get your payback period, how many months it takes you to get payback for your advertising, your CAC, all that stuff. It's not that the numbers don't matter to me right now. The most important thing is that there is a pull in the market and people want it to work.
+
+You can, you can sense it. You're not pushing, you're not selling anything. People are coming out saying, I want this help me.
+
+How do I do this works? This will be a game changer. You probably hear that a lot, right?
+
+Yes. So, so that, that is what really drives us. Churn.
+
+When I made my projections for the year, I put churn very high. I thought AI product voice, non-technical customers. I was like, churn's going to be like 20%.
+
+It's going to be a mess for a while until it gets good. And we have been shocked at how low it is. It's low single digits.
+
+And the reason for that, what we didn't appreciate is how painful this problem is. And so because it's so painful, if you solve it, they'll wait. Okay.
+
+It'll get better. Okay. I understand this thing got messed up.
+
+I don't care. You have solved this problem for me and I do not want to go back to the way it was. So that's important, but we have been, we have been doubling every month for the last few months.
+
+So it is flying right now. It feels amazing. Awesome.
+
+It's like, I'm looking at a Venn diagram in my head of everything you've got going, right? Massive market, massive problem. You've got to have a beautiful product.
+
+And in this case, the UI and the features are what primarily make that up. And then you have to acquire customers. And if you have a great product, then you'll keep the customers.
+
+If it's a pain, a painkiller, not a vitamin, which is, this seems to be, then you'll have demand and the market is huge. You've got 30 million small business owners in America alone. The DNA feels great.
+
+And a growing market really papers over a lot of problems and a lot of mistakes. Speaking of the UI, maybe that's a good transition to like, let's do it. Show you this thing.
+
+Yeah. All right, cool. Getting there.
+
+So we're going to take a little risk. We're going to go live. We're going to set up a rosy agent.
+
+I'm going to share my screen. We'll go through the onboarding and we'll just kind of, you know, experience it and then feel free to ask questions. But we're just going to go from where we are right now to being able to call the agent.
+
+We'll see. We'll see how long that takes. Okay.
+
+Let me share my screen here. You said you can do Spanish as well, right? Like if it detects Spanish, it will speak in Spanish.
+
+Yes. That's right. So it can switch.
+
+I don't speak Spanish very well, but yeah, but it understands that was like, that was the most important language, right? We're focused in the U S market. Yeah.
+
+And that works now. So it's a trip to hear her just like flip and just go into Spanish or flip back. That's crazy.
+
+All right, cool. So we're looking at our website. So what we did here, which was, I think really important is we started adding value before they created an account.
+
+So if you're on the HeyRosie.com website, you click. And the first thing you see here is like putting your business name into, to find your Google business profile. That's cool.
+
+Right. So I'm going to do pest busters, right? It's like a pest control company here in the suburbs.
+
+All right. I found it on Google business profile and I hit continue and I see, yes, that's my logo. That's the information and I hit yes train.
+
+So this is what a few seconds. So under 10 seconds, we are giving them some value. So what's happening on the backend here.
+
+So we have scraped their Google business profile listing and created their own agent. So now let's click on it. Hello.
+
+Thank you for calling pest busters, pest control. My name is Rosie. How can I help you today?
+
+Right. So we wanted them to go from homepage to putting in their information, to hearing their own business name spoken by an AI agent in 10 seconds. That's so cool.
+
+Only then do we ask them to create an account, right? We've kind of proven to them, no, this is legit and it's fast and you'll, you'll get what you want quickly. So let's hit claim my agent.
+
+And now let's just grab a password real quick and we'll do Jordan plus password and then claim. Okay. And now we go another step further.
+
+We scrape the rest of their website. We scrape the rest of their information and we just built their agent on the fly. Mm-hmm.
+
+So as you get in here, you see, this is the training sources, your website and your Google business profile. It has pulled in what you do, your location, your phone number, your core services, and then it can take a message. So let's do this.
+
+Uh, we're going to add a question that we want Rosie to ask when she takes a message. So are you an existing customer? The question mark.
+
+Okay. And then we have email notifications and SMS. So whenever a call comes in, it'll, it'll notify you.
+
+And then let's just click talk to Rosie and that's it. We are here. We now have an AI agent for this business.
+
+And now we got to give it a call. Two, two, three. All right.
+
+So let's listen. Hello. Thank you for calling Pest Busters Pest Control.
+
+Our call may be recorded today for quality control purposes. My name is Rosie. How can I help you?
+
+Hey, Rosie, can I leave a message for the team? Of course. Can I get your first and last name?
+
+Sure. It's Jordan and last name is Gal. Thanks, Jordan.
+
+Are you an existing customer with us? Yes, I am. All right.
+
+So I'll hang up and stop sharing. So that's it. That's cool.
+
+Right. That's what we wanted. A small business owner that isn't technical to just get there.
+
+Yeah. That's amazing. Did I hear like talking going on in the background or was that something else?
+
+Yes. That is an option. If you want it to sound like an office setting with like background noise, you can keep that or you can.
+
+Oh, that is so cool. Yeah. The playing around with like engineering, like programming features with like human interaction is fun.
+
+Like the, can you speak Spanish? And she just flips and starts talking in Spanish. There's something more tactile than just interacting with a screen and a mouse and a keyboard.
+
+It's been fun. Yeah. Like I'm just thinking of, are you able to do male voices as well?
+
+Right now we just have one voice. I thought people were over-optimizing for that. So if you go to some more competitors, it's like 50 different voices.
+
+Yeah. Yeah. Yeah.
+
+I actually don't think that matters. Feature creep that people aren't asking for. Yes.
+
+People are like, can I get X, Y, and Z? And we'll do that. You know, sometime over the next month or two, we'll still keep it in our style.
+
+We'll add two or three voices, you know, a few male, few female. That's it. I was just thinking it would be cool if like, if you called and it was like a gruff male voice and you could, it sounded like he was driving.
+
+Hey, this is Jim. If Jim's plumbing, how can I help you? Like that would just be so real.
+
+It should match the personality of the business. Some are more formal, some are more blue collar. So, so that will eventually be right now.
+
+You can change your name and you could go, you could change the tone, casual, professional, and so on. Yeah. There's a lot of like fun settings, but it's very easy.
+
+So actually this goes back to the rapper business mindset underneath our tech are a lot more options than we're showing. It's almost like that distillation of what actually matters is part of our value add. It's not just revealing all the features.
+
+Yeah. I once heard this stated a lot more beautifully than I'm about to say, but it's like, it reminds me of Airbnb. It's a design first company and a beautifully designed company is that there's a lot of complexity happens.
+
+There's a lot of complexity happening that the user has no idea about, right? It, it appears simple, but it's not simple. Like that's the perfect balance.
+
+Yes. Yes. And you have an amazing opportunity when you work with non-technical people to give them the, it just works experience.
+
+And they're very grateful for that as opposed to, you know, having to do a bunch of stuff and go through what looks like fancy layers, but it's really just getting in the way of what they're trying to accomplish. That's amazing. Well, this has been awesome.
+
+Thank you for your time, Jordan. Where, where can everyone find you? So the company is that HeyRosie.com I'm on X at Jordan Gall.
+
+And I did want to give a shout out to your audience and we hooked up a coupon for 50% off the first month. So we made a code. Anyone who wants to sign up, use the code TKO 50 when you sign up and you'll get 50% off.
+
+And yeah, we want feedback. Yell at us, give us praise, whatever it is. The more feedback, the better.
+
+Okay. TKO 50, 50% off. We'll put the link in the show notes as well.
+
+All right. Thank you for having me on. All right.
+
+What'd you think? Go launch the chat GPT rapper already and check out HeyRosie.com. We'll see you next time on the Kerner office.

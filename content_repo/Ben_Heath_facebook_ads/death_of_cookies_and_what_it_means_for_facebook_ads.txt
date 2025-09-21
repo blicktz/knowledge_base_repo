@@ -1,0 +1,51 @@
+Third-party cookies are going away and we need to talk about it. In this video I'm going to explain what this means for Facebook ads and what you need to do about it as a Facebook advertiser right now. So what's actually happening here?
+
+Now Google announced a while ago that they were going to phase out third-party cookies on Chrome, their browser, and that has now started taking place. And they've started with just 1% of users and they're going to expand that to eventually have a scenario where you can't have any third-party cookies operating on Google Chrome. Now Google Chrome accounts for about 60% of all users with their search activity, so it's a really large slice of the market.
+
+And by Q3, maybe Q4 2024, we expect that this will fully have been implemented and there won't be cookies on Google Chrome. And it is worth mentioning that Safari have already taken this step. Google Chrome is not going to be the first browser to go ahead and remove third-party cookies.
+
+Safari already did this a couple of years ago and that accounts for perhaps 12% or so of the total users when it comes to search. So I think that's an indication that this isn't going to be quite as impactful as a lot of Facebook advertisers are fearing in terms of our ability to track people on our website and actions that they take after they click on our Facebook ads and Instagram ads. I'll get into more details than that in a sec, but that's just a little bit of a hint that a lot of Facebook advertisers weren't aware that this had already taken place on a significant browser and we're still operating Facebook ads, able to do so profitably, et cetera, et cetera.
+
+Now, I think it's worth quickly explaining what cookies actually are, because there's a term we hear about all the time online, but a lot of people aren't actually familiar with what they are and what they do. Cookies are really useful. It's what allows you to, for example, stay logged into a website.
+
+If you are logged into a website, you leave, you can come back and you're already logged in. That cookie has effectively remembered you so that you're still logged in when you come back, as opposed to having to re-log in every single time. The same applies to a shopping cart.
+
+If you've added things to a shopping cart, but don't go ahead and check out, and you leave and then you come back to it, those items will remain in your shopping cart. It's cookies that are doing that. You may have noticed if you ever sort of cleared your history and you've deleted cookies that you get logged out of all the websites you're used to being logged into, and that can be a bit of a pain.
+
+For those sorts of reasons, they are actually really useful for users, not just for the website owners and advertisers that want to track people and what they do online. Now, of course, the downside is that they are able to be used to track people online, and they can actually be used in really quite sophisticated ways to track people across devices over extended time periods and all that sort of stuff. So as the movement towards increasing privacy and protecting users, that's a trend that's going to continue to happen.
+
+It's certainly affecting Facebook and Instagram advertisers, and Google Chrome is doing this to try and protect the privacy of its users and make it more difficult for businesses, advertisers, etc., to track people and things along those lines. So removing third-party cookies is designed to prevent people from being able to do that as easily as they have been able to do over the last few years. Now, fortunately, I don't think this is going to be that big a deal for Facebook and Instagram advertisers, which is great.
+
+And the reason why is because you don't need to use third-party cookies, which is what this update affects. It is limited to third-party cookies. You can make sure that your Meta Pixel is set up to use first-party cookies, and that will allow you to still collect the data that you need when it comes to purchases, leads generated, and things like that, after people click on your Facebook and Instagram ads and come through to your website.
+
+So basically, you still get to benefit from the tracking that takes place from your Meta Pixel, and you're still able to use that to optimize your campaigns, to see how they're performing. Meta can still receive that data so they're able to optimize your campaigns. All the reasons why we know the Facebook Pixel is really important, that's still going to stick around as long as you have your Pixel set up to track first-party cookies.
+
+Now, I'm going to show you exactly how to get that set up and make sure you've got it set up the right way in a second. Before I do, I just want to quickly let you know about a free webinar that I've created called Three Killer Facebook Ad Strategies to Double or More Your Revenue. Now, I think that strategy is the single most important part of succeeding with Facebook and Instagram ads.
+
+If you're not using the right strategy, it doesn't matter how good your targeting is or how good your ad creative is, it's just not going to work. And you need a different strategy depending on your business. There's no one-size-fits-all when it comes to Facebook and Instagram ads, and that's why I cover three different strategies, the three that we use for our clients all the time, very much tried and tested, proven, can produce fantastic results.
+
+So if you're interested, go ahead and check out the free webinar. The link is in the description. You can click on that, go ahead and watch it right now.
+
+I think it'd be a really good use of your time. Okay, so to show you how to make sure that your MetaPixel is set up to use first-party cookies, I'm going to walk you through that process. So I'm in an example Facebook ad account, I'm in Ads Manager.
+
+What we need to do is go ahead and click on these three little lines. And then we want to go over to Events Manager. I've got it in the shortcuts, but if not, you will have it down here in Manage Business.
+
+So if we go ahead and click on Events Manager. So then go ahead and click on Data Sources. Then make sure that you've got the right pixel selected if you've got multiple pixels.
+
+And then go ahead and click Settings up here at the top. Then once you're in Settings, scroll down to this Website Settings and Cookie Usage section. You can see that we've got first-party cookies on and Meta gives a bit of information about that.
+
+But you can go ahead and click Edit and turn that either on or off. You absolutely want to make sure that you have it turned on. Now, most Facebook advertisers will have this turned on by default, but we've seen a number of circumstances where this is not turned on by default.
+
+So you absolutely want to make sure that you go in here and turn this on. This hasn't been as important previously because we've been able to use other cookie setups, as I've already described. But now with this change, and as Google Chrome rolls this out to the majority of its users and third-party cookies go away, we need to be using first-party cookies.
+
+So make sure you go ahead and turn this on. It only takes 30 seconds. And you should be able to then operate your Facebook and Instagram ads as you were previously.
+
+This Google Chrome update shouldn't have too much of an impact. You can still get all the data, still benefit from the pixel and all that important stuff that we know we need to get the best possible results. It's also worth mentioning that Meta is much better at dealing with changes and issues like this that come up now.
+
+I think the iOS 14.5 update where Apple prevented Facebook advertisers and Meta from being able to track people taking actions on iOS devices after they clicked on Facebook and Instagram ads, when that became a lot more difficult, Meta re-engineered some stuff and have made some changes and they're much more able to sort of roll with the punches when it comes to these new privacy rules and and curtailments on tracking and things along those lines. So they do have other setups to be able to cope with this. So let's say for example that this Google Chrome update does end up being more significant than I believe it will be and we do start to see an impact in data.
+
+I fully expect Meta to be able to resolve that given a bit of time. We saw that with the iOS 14.5 changes in that Meta had to set up all this new stuff like aggregated event measurement and we had to do extra steps as advertisers but that all went away and Meta found a way to handle all that for us automatically and expect the same thing to happen again. Now when it comes to tracking you absolutely want to make sure that you're doing everything you can to get the best possible data.
+
+So make sure you go ahead and install the Facebook Pixel if you don't already. I'll include a link in the description showing you exactly how to do that and also it's really important to make sure that you have the conversions API installed as well and that you have it installed and set up properly. I show you exactly how to do that in this video here.
+
+As I said tracking data is so key to the success of your Facebook ad campaigns. It's well worth taking a few minutes and checking this out.

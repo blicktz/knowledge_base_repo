@@ -1,0 +1,381 @@
+Hi guys, it's Ben Heath from Lead Guru and in this video I'm going to show you how to create Facebook custom audiences. Now if you're advertising on Facebook, you're going to want to use Facebook custom audiences at some point. For every single client that we work with that we run Facebook advertising campaigns for, we use Facebook custom audiences at some point during the sales funnel.
+
+Very, very important, very, very powerful, can really improve the performance of your Facebook ad campaigns. So before I get into the steps of how to create them, I'll quickly explain what a Facebook custom audience actually is. A custom audience is basically an audience that you create.
+
+It's not one that's available within Facebook, it's not an interest, a demographic or a behaviour targeting. It's a custom audience, as in you've created it yourself, and it usually contains people that are already familiar with your business. So these might be people on an email list, a customer list, people who have visited your website, people who have interacted with you on Facebook in a number of different ways.
+
+I'm going to go through some of the examples when I get into the steps. But that's basically what a Facebook custom audience is. It's an audience that you create out of people that are already somewhat familiar with your business.
+
+That's one of the reasons why Facebook custom audiences perform so well. It's because you're advertising to people that already know about your business, provided they had a good interaction the first time round, whether that's consuming a piece of content, buying a previous product or something along those lines, then those people are far more likely to buy again. So if you do have reasonably large custom audiences, whether that's a customer list, email list, website traffic, whatever happens to be, and you're just starting on your Facebook advertising journey, I would recommend start by advertising to just those people.
+
+The return on investment that you see from advertising to your Facebook custom audiences is likely to be much higher than when you advertise to cold audiences. Okay, with that said, let's get into the step of how you actually go about creating these Facebook custom audiences. So first thing you want to do is head into Ads Manager.
+
+That's where I am right now. And then you want to go ahead and select these three little lines up here and you want to go into audiences. Now, as I said, because we create Facebook custom audiences all the time, the audiences tab here is infrequently used.
+
+If it's not under frequently used for you, just select all tools and under assets, you can select audiences. And that'll take you into a new window. If you haven't been here before, then you're not going to see all the custom audiences, lookalike audiences, things like that that you're about to see in my account.
+
+Absolutely fine. Don't worry about any of that. What you want to do is go ahead and select create audience.
+
+And you can see there's basically three different types. You can create a saved audience, which is using Facebook's targeting presets to basically create a saved audience. So it might be, for example, women age 35 to 55 that are interested in something specific.
+
+That would be a saved audience. Custom audiences, what this video is all about, what we're talking about, people who already know your business. And then a lookalike audience, something I'm going to quickly cover at the end of this video because I think you'll find that very, very useful.
+
+So make sure you stick around for that. So you want to go ahead and click custom audience. And you can see there's many different types of Facebook custom audiences that you can create.
+
+I'm going to sort of go through these in what I think are the most effective order. So the most effective custom audiences I'm going to start with. I'm going to sort of work down the list because, of course, there's a big difference between someone who's just watched, you know, a little bit of a video on Facebook and someone who has bought from your company previously.
+
+The person within the customer file, within the previous customer, custom audience is going to be much more warm, much more ready to buy, much more receptive to your offers than someone that's just quickly interacted with you on Facebook. So speaking of which, the first thing we're going to do is go ahead and select customer file. Now, Facebook have this fantastic feature when you create audiences from a customer file where you can include lifetime customer value.
+
+So, for example, if you have a document somewhere or you've used, you know, software like Shopify, some sort of e-commerce platform that tracks lifetime value of a customer, you can import that into Facebook. And you can say to Facebook, I want to advertise to this custom audience. By the way, work out here that customers that are like this are worth more to my business than customers that are like this.
+
+So Facebook will start advertising to the people that are within your higher value customer bracket as opposed to your lower value customer bracket. Hopefully that makes sense. A little bit complicated.
+
+Most people won't have this option, though, so that's not what I'm going to go ahead and do. Most people will need to upload a file themselves. Now, if you store your customer list on MailChimp, then you can go ahead and import that directly.
+
+Saves a lot of time. Again, most people aren't going to have that. They're going to just have a file that's separate.
+
+So you go ahead and click that option. Now, however you've got this file stored, all you want to do is upload that file. It wants to be in a CSV or a TXT file.
+
+Basically, if you've got an Excel spreadsheet, just convert it to that and it'll work perfectly fine. You want to upload your file in here. And now what you can see here is Facebook's got a bunch of identifiers up at the top.
+
+So obviously things that they're going to use to match the data within your file to people's specific Facebook accounts. So things like their name, their email, their phone number. The more information you can include on the file that you upload here, the better.
+
+Facebook primarily uses email to match people to their Facebook accounts. Most people are going to use the same email address. Not everyone, of course.
+
+So it's good to have some of these other identifiers in as well. But most people are going to use the same email address and that's what they primarily use combined with their name. You should be aware that whenever you're uploading a file, you're probably only going to see somewhere along the lines of 50% match rate.
+
+So Facebook's only going to be able to match up around half the people on your list to people's actual Facebook accounts so that you can advertise to them. And that's because people will use different email addresses, old phone numbers when they set up their Facebook account, all that sort of stuff. But 50% is still well worth doing.
+
+If you've got a reasonable size customer list, go ahead and do that. So I'm not going to show you the exact process here. It's very straightforward.
+
+Just upload the file and then Facebook will ask you, you know, they'll highlight your columns and they'll say, you know, what is this? Is this email? Is this phone number?
+
+Is this? And it's very easy. Just tick through and go, yep, yep, yep.
+
+That's email. That's phone number. That's first name.
+
+That's last name. And they'll go ahead and match. I'm not going to show you this, obviously, because it would display our customers' data and we can't do that for privacy issues.
+
+You can also just copy and paste in data if you have it, not in a sort of Excel spreadsheet or anything like that. It can be easier just to go ahead and copy it in there. Then you just want to give your audience a name.
+
+Scroll down to the bottom, click create audience. I'm going to select cancel. And then what you'll find is that the audience, when it gets populated in this section here, you'll see it says availability.
+
+All these are saying ready. It will just say populating and then it will let you know the size of the traffic. With custom audiences nowadays, for privacy issues, Facebook is much more reluctant to divulge that information of how many people it's been able to match.
+
+So they might not give that information. Hopefully they do, et cetera, et cetera. So that's how you create the first type of Facebook custom audience.
+
+Go in here. You select create audience, custom audience. Go to customer file.
+
+Whichever option applies to you. Click on that and go through the steps. After a customer file.
+
+So the best people to advertise to on Facebook are absolutely your previous customers. Provided your new product or service is somewhat related to those people and you do offer more than one product or service. Those are the people that you want to start by advertising to.
+
+They're the most likely to buy. If you don't have a customer list or your customer list is very small or in fact you want to build on it. The next stage down in my opinion is people on your email list.
+
+Those people aren't likely to be as responsive as previous customers. But they're still going to be much more responsive than other people that don't know your business or have interacted on a less significant basis. So again the process for that.
+
+I'll just go back. Is exactly the same. You come in here.
+
+You select customer file. You can upload a file. You can import from MailChimp.
+
+Again you can do the same with lifetime value. You do the exact same process but instead of it being for your customer list you do it for your email list. Very very simple.
+
+Okay. I'll close that down. So once you've got a customer list, once you've got an email list, the next rung down in my opinion is website traffic.
+
+I think those three sources for outside of Facebook activity is more significant than the on Facebook activity that you often see people create custom audiences from. And I think these are the order in which we usually see the best results. So customer or list produces the best results, then your email list, then your website traffic and I'll get on to this in a minute.
+
+Now if you go ahead and select website traffic. There's a bunch of different options you can go in here. So if you're just getting started with this and you're not really familiar with Facebook custom audiences, you're thinking how are they going to work.
+
+Then I would recommend you create your website traffic custom audience. That's what this is from all website visitors. Just go ahead and capture everyone.
+
+And then when you advertise to those people, Facebook is going to work out who within that website traffic custom audience is most likely to take your desired actions. Most likely to buy or become a lead or whatever it is. So they're going to work out things like who spent more time on your site.
+
+How long ago did they visit it? Did they visit it within five days, seven days? Or did they visit it three months ago?
+
+All that sort of stuff. To do that, you literally come into here, click this, and these are the pre-set options. So you will need to have the Facebook pixel installed in your website in order to be able to retarget people who have visited your website in order to be able to create a Facebook custom audience from people who have visited your website.
+
+If you're not familiar with how to do that, I'll include a link in the video description to another video I've created that shows you exactly how to install the Facebook pixel. You should have it installed anyway. If you are advertising on Facebook, definitely go ahead and do that.
+
+But if you come in here, the Facebook pixel is all installed. You can simply go with all website visitors, which is the pre-set. And then you just need to set the time into the past that you want visitors to be included in this custom audience.
+
+So do you want people who have visited within the last 30 days? That can go all the way up to 180 days. You could go with something like seven days.
+
+For most people, I would recommend starting with 30 days. If you don't generate much website traffic, then you're probably going to want to go ahead and select 180 days and really expand that range out and really make that audience as large as possible. One of the issues you run into when you're advertising to Facebook custom audiences on Facebook is that audiences are very small.
+
+So you burn out the audience. You run into ad fatigue issues with the audience very, very quickly. So where possible, it's best to make your Facebook custom audiences as large as possible.
+
+But of course, the trade-off is if someone visited your website six months ago, they're not as warm, they're not as ready to buy as someone who visited last week. So let's say the default for most people is going to be 30 days to get started. You can always come back in and create more and test and see which performs best.
+
+Then you just want to give your audience a name, click create audience, and you're good to go. So that's the basic type of Facebook custom audience that's based off website traffic. But there are some other options, and we should take a look at those.
+
+So the three main, well, four main presets are all website visitors that we just discussed. You can also advertise to people who visited specific web pages. So for example, if I was to go to my own website, and I was to go to my services page, and that's what it looks like.
+
+If you're interested in Facebook advertising services, do check it out. And I was to copy that, come back to my audiences, and I can see people who visited specific web pages. I can do URL contains or URL equals.
+
+Let's say, for example, I wanted to advertise to everyone that visited Facebook advertising related blog posts on my website. Then I would go ahead and do contains and put in Facebook advertising into there, provided all the URLs contain that. If I want a specific page, I do Facebook URL equals.
+
+Go ahead and pop that in. And now if I was to create this custom audience for the last 30 days, this would create a Facebook custom audience of everyone who has visited my services page within the last 30 days. So that's very, very specific.
+
+If I wanted to advertise my services specifically, I could go ahead and use that target audience because these people are clearly expressing interest. Otherwise, they wouldn't have bothered visiting in the first place. And that's likely to perform well.
+
+When you do get very specific like this, though, you run into these issues that you can see right here. So it says the rules you set up might result in a small audience. Well, absolutely.
+
+I know that audience would be very small. You know, we don't work with thousands of businesses at once. We work with dozens of businesses and therefore there's just not that much traffic visiting our service page at any one time.
+
+So I would probably not want to use an option like this personally because we don't have, you know, millions or even hundreds of thousands of website visitors per month. We have tens of thousands of website visitors per month. And that means there's probably not enough to advertise to an audience like this.
+
+I would want to go with a more broad audience like the all website visitors or something like that. But if you did want to get very, very specific, this is exactly how you do it. You go in and put a page.
+
+Now, one of the ways that people will use something like this is they may only advertise to people that have bought a certain type of product. So you could do people who visited a specific web page and then have like an order confirmation page in here, a thank you page. And then say, we know that if they bought our, you know, fly fishing rod, they're going to be interested in this new product, which is, you know, a bunch of fly fishing line, for example, something along those lines.
+
+And you may not want to advertise to everyone else who visited your website because that might not be relevant. So you could go ahead and put the order confirmation page for that fly fishing rod in here and know that you're only advertising to those people. Now, there's more things you can do with these, this type of custom audience.
+
+So you may want to advertise to people who visited a specific page. I'm sure you could see the functionality and the benefits of doing something along those lines. But you can get more specific.
+
+So you could include more people. So you could say, you know, we want people who have visited specific pages. You could combine that with some of the other things we're going to get to in a minute.
+
+But you could combine that with, you know, all visited a separate page. You could choose to, if I close this down, so you can include more people or you can exclude people. So you may want to say, I want everyone who's visited our services page, but I don't want to advertise to people who have visited our...
+
+Let me see if I can... Let me edit this. I could say, don't want anyone who has visited our contact page.
+
+Because if they've already visited our contact page, they've probably already contacted us. Something along those lines. I want to get the people that have visited our services page, but not yet contacted us.
+
+No point in advertising to these people. Something along those lines. So again, this could be an order confirmation page for one product.
+
+If you're advertising another product, you may want to have the thank you page for that other product in here. Because if they've already bought it, what's the point in advertising it to them? So you can get very specific with the way this works with targeting people who have visited specific pages versus not visited specific other pages and all that sort of stuff.
+
+Let me close this down and we'll talk about another option. So alongside all website visitors and people who have visited specific web pages, you can create Facebook custom audiences out of people that have spent the most time on your website. So that's visitors by time spent.
+
+That's the third option. And here you can see you have a certain percentage. So you have 5, 10, and 25%.
+
+So what that means is top 25% is the top 25% of people that have visited your website that have spent the most time on it. So likewise with 10 and 5%. Now again, the trade-off here is if you go for top 25%, that's going to give you your largest audience.
+
+If you go for 10, 5%, those audiences are potentially going to be more responsive. If you think about 5% is the 1 in 20 of all your website visitors that have spent most time on your website. Those are very responsive prospects.
+
+But again, that audience is going to be quite a bit smaller. It's the same logic as going with something like 30 versus 180 days versus 7 days. It's that same trade-off.
+
+And the best answer for you will really depend on your specific circumstances. This is not an option I would recommend selecting unless you're generating a lot of website traffic. At least tens of thousands of visitors per month, preferably hundreds or millions of visitors per month to be able to select these sorts of options.
+
+Now if you've got a lot of traffic to your website through various sources, then you may want to get more specific and go with visitors by time spent. The default is across your entire website, wherever the pixel is. But you can select specific web pages.
+
+So again, if we had tens of thousands of people specifically visiting our services page every month, we could choose to just advertise to the top 10% of people that spent the most amount of time on that page. For that, again, if you're entering in a specific page, go with URL equals. If you want to get a category within your website, something like that, you can use URL contains.
+
+Again, all you need to do is name your audience, click create audience, and you're good to go. Likewise in here, you can exclude, include more people just in the same way as we showed you before. The options and the ways you can sort of overlay audiences and exclude people from certain parts and include them in others is basically endless.
+
+You can end up with the exact group of people that you want to advertise to. And hopefully you can see how powerful these Facebook custom audiences are and how they would work in your Facebook ad campaigns. You can really get very granular and make sure you have the exact right message in front of the exact right people.
+
+And that's what produces the best results. Okay, so those are the three main options. And then the fourth option is based on events.
+
+So assuming you have certain event code installed on your website. So for example, anyone that opts in for our free five-part Facebook ad template, they will land on the thank you page. And that person will be registered as a lead.
+
+So we could go ahead and select the lead event. Obviously, there's a bunch of different options, purchase, page view, etc, etc. You may have your own.
+
+You may have your own. A lead event. And we could choose to advertise specifically to those people.
+
+So let's say we want to advertise our services to everyone that's opted in for our free five-part Facebook ad template. We could go ahead and select lead. Now, bearing in mind that this is the lead event code.
+
+So if we are also registering leads for other actions taken. So we might have other lead magnets people opt in for. We might have a contact form on our website that registers people as a lead, which we do.
+
+All that sort of stuff. And we'll be getting that whole bundle. If you just wanted to advertise to people that take one specific action, you could go ahead and use pages, specific web pages visited.
+
+And you could advertise to people that have just visited the thank you page of that lead magnet, for example. But you can go in here and, you know, advertise to people that have, a very common one with e-commerce is we'll create a custom audience of people that have added to cart within the last 30 days, let's say. Again, a fantastic audience to advertise to.
+
+If someone added to cart, they're highly likely to buy when you advertise to them again. But in this case, you would want to refine this audience. So we would want to advertise to people that have added to cart, but not advertise to people that have registered a purchase within the same time period.
+
+Because we want to get those people that clicked add to cart, didn't purchase, and advertise to them. No point in advertising to someone who's just purchased. That's a waste of money.
+
+So there's lots of different ways that you can set these up. This is a very common one. Again, you could have lead but exclude purchase.
+
+All sorts of things. It really depends on your specific business. Again, name your audience, create your audience, and you're good to go.
+
+So there's lots, tons of different types of Facebook custom audiences that you can create out of website traffic. They perform very, very well. In general, they perform not quite as well as a customer list or an email list.
+
+It's the next one down. But a lot of people won't have very large customer lists or email lists. Or if they do, they want to be able to advertise to more people on Facebook.
+
+So website traffic is fantastic. If you're generating a lot of organic website traffic, these sorts of options perform very, very well. As I said at the beginning, I would recommend you start with going with something broad, get familiar with it, see how the audience responds, see how much you can spend, and then look to get more specific if you're generating a lot of website traffic.
+
+Now, if, for example, you don't have a customer file, one thing I've quickly mentioned, of previous customers, but you have had the Facebook pixel installed and you know you've had people purchasing, well, another way to target previous customers is to, if I close that down, is to simply come in and go with, let's say you've got a Shopify store. You don't have a customer file. I mean, you could export it from Shopify, but just for argument's sake.
+
+You want to target everyone that's bought from you in the last 180 days, well, that will do it, provided the Facebook pixel has been installed for that time period. It's just another way of going about targeting your previous customers. And the advantage of this sort of audience, a website traffic custom audience, is that this will automatically update as time goes on.
+
+You don't have to refresh these audiences. Anyone who registered to purchase, let's say next week, will be included in that audience automatically. Your customer file and your email list, Facebook custom audiences, they will need to be manually updated.
+
+Because obviously, once you get more data, once you generate more customers, you'll have to re-upload a file and go ahead and do that. So my rule on that is usually once the audience grows more than 10%, so let's say we have 1,000 previous customers, as soon as we get to 1,100 customers, 100 extra new ones, we will then update that custom audience. That's roughly how we approach that.
+
+Okay, so those are the main off Facebook, Facebook custom audiences that you can create. There's obviously app activity, offline activity. That doesn't apply to most people.
+
+If you're interested in more app-related stuff, I've got another video about that. I will include that in the video description. Now there are on Facebook custom audiences.
+
+In general, these aren't as warm, they aren't as ready to buy as these off Facebook, Facebook custom audiences. But let's go through some of these options and I'm going to talk about the most commonly used ones as opposed to keeping in exact order because things will depend on different businesses. So probably the most commonly used one now is video.
+
+So you can create a Facebook custom audience that includes people that have watched a video of yours on Facebook. And you do that by selecting the options I've just selected. Then you come in here and now you need to choose a video.
+
+Well, actually, the first thing you need to do is select the amount of your video you want people to have watched to be included in this audience. So you can include people that have watched at least three seconds of your video. That's not a lot.
+
+That's going to contain a lot of people that don't really remember your business, don't really care about your business or anything like that. Three seconds could be they were looking away whilst they had it on their phone, something along those lines. I usually recommend going with at least 25% of your video to know that you're advertising to a warm audience.
+
+And that's what makes Facebook custom audiences so effective is that you are advertising to warm people that are ready to buy. Now, again, the tradeoff here is similar to the website traffic. Facebook custom audiences that we discussed previously, the higher the percentage of your video, the more responsive these people are going to be, the warmer they're going to be.
+
+But the smaller the audience is going to be. A lot more people have watched, let's say, 10 seconds of your video versus 95% of your video. So that depends on how many video views you've got.
+
+If you've got hundreds of thousands of millions of video views, you can probably play in the 50 plus percent range. If you've got hardly any, you might have to start at one of these lower options. I usually go with something around about 25%.
+
+Once you've selected that, the next thing you need to do is choose the videos that you want to use for people to be included. So you simply select choose videos and then the providers, you don't manage multiple pages, the page will be here. You can see all the options for the videos that you've created.
+
+Now you can go ahead and select a whole bunch. You can just select one. It really is up to you.
+
+What I would recommend is, again, whenever you're advertising to Facebook custom audiences, try and make your audiences as large as possible while still keeping it relevant and making sure that the people within that Facebook custom audience are going to be very warm. So that's why we will use something. I would use a whole bunch of videos.
+
+A lot of these latest videos have only got, let's say, 500 odd views. Or I would at least search for a video like this one, for example, that's got 15,000 views. That's got 6,500.
+
+A video that's done better, has had more views put behind, had more budget put behind it. And you can go ahead and select that. So let's say, for example, let's take this one.
+
+Quite a funny video, by the way, that's on our Facebook page if you want to check that out. Go ahead and select that. And then I'm going to go ahead and click confirm with on Facebook custom audiences, on Facebook activity, Facebook custom audiences.
+
+You can go to 365 days into the past to retarget people. There's less privacy issues than there is with off Facebook stuff. Again, what you decide here is the same tradeoff.
+
+The larger the audience, the better in some ways. But someone who watched a video of mine a year ago might not remember me or my business at all. So it might not be worth advertising to them.
+
+If you haven't got that many video views, we're talking less than hundreds of thousands, I would recommend starting with 365. If you have got hundreds of thousands, millions of video views from these videos that are going to be included in here, then you can experiment with some shorter options. For video views, I wouldn't normally go with anything less than 90 days.
+
+Because once you select something like 25% of your video, only a very small percentage of your video views will have watched that much. People click off videos very quickly on Facebook. So this eventual audience is going to be quite small if you're not careful.
+
+So yeah, so most people start with 365. If you've got millions of video views, then go ahead and experiment with something like 90, perhaps 180 days and see how that performs. Remember, with anything Facebook advertising, and it applies to Facebook custom audiences just like anything else, test.
+
+Create two different audiences. Run them alongside each other in the same campaign. See which performs best.
+
+Very easy to do, and I highly recommend it. Then you just want to give your custom audience a name, click create audience, and you are good to go. So that's the first on Facebook source for creating a Facebook custom audience.
+
+The other, I'm going to quickly mention a couple more. The other is a lead form. So if you're running Facebook lead generation campaigns, you know, where people, instead of clicking on your ad and going through to your website or an external source, they stay within Facebook, are prevented with a lead form.
+
+And then they can enter in their details, you know, name, email, things like that. If you're not familiar with Facebook lead ads, I will include a link in the video description to another video of mine. It's very popular that shows you exactly how to create a Facebook lead ad campaign.
+
+So if you're interested in generating leads on Facebook, I'd highly recommend you check that out. So with these lead forms, when someone clicks on an ad, a lead form will appear. Now, obviously different people have different levels of interaction with that lead form.
+
+Some will just open up the form. Some will fill it out. Some will fill it out and submit the data.
+
+And you can get very specific with which people you want to target. So for example, the default is anyone who opened this form. So that shows me if someone's opened a form, they're a lot more interested in your whatever it is you're advertising than just a random person.
+
+Because they clicked on your ad, they opened your form. But for some reason, they didn't fill it out. They didn't go to the next step if you exclude those people, of course.
+
+So this could be great if, let's say, someone opened a lead form, didn't submit it. You can advertise to them again and try and get them to go ahead and submit that lead form. You don't just want to lose that person into sort of the Facebook advertising ether.
+
+But there are some other options. So you can have people who opened this form. You can have people who opened but didn't submit form.
+
+And then, of course, you can have people who opened and submitted form. You may want to advertise to people that did become a lead. And perhaps you want to progress them onto the next stage of your sales funnel or something like that.
+
+Most people are going to go ahead and go with this second option, people who opened but didn't submit form, and try and get them to submit the form. Alternatively, as I said, you can use one of these other options. Facebook's default is 90 days, and that's what I would recommend using to start with.
+
+I've tested this a bunch of times. It's quite difficult to work out exactly. You know, it really depends on how much you're advertising your lead generation ads and, again, how many people you're driving through these lead forms.
+
+The more people you're going through, the lower this number can be in terms of days and vice versa, higher. But I would recommend starting with 90. Keep a lot of things, when you're creating your Facebook custom audiences, keep a lot of things as their default.
+
+And then just look to experiment once you've sort of got a bit of a handle for it, you've had a bit of a play, and you've got some ideas. So obviously this is to do with my page. We could select specific forms.
+
+So let's say, for example, you've got a bunch of different lead generation campaigns running. They're offering different things. People are signing up for different types of offers.
+
+You might only want to advertise to people that are signing up for a free consultation, or only want to advertise to people that have signed up for a lead magnet, something along those lines. So that's where you might want to include these. And again, you can include and exclude people in a similar way to we could in those previous customer audience options.
+
+Give your audience a name, create audience, and you are good to go. So that's a common one that's used if you're running lead generation campaigns. I would at least recommend creating a Facebook custom audience of people who have opened your lead form but not submitted it.
+
+Put a little bit of budget behind that, and you'll catch those people that opened your form but just got distracted, and thought, oh, you know, I'm not actually that interested. And you will remind them and catch those people again. Highly recommend.
+
+If you're running lead ad campaigns, go ahead and do that. The third option that's used a lot is people who have interacted with your Facebook page. So, again, Facebook's default is 365.
+
+Just like with video, they can open up the Facebook custom audience window a lot more. So, people who have interacted with your page on Facebook, yes, they're warmer than a completely cold audience that's never heard of you before. But someone can interact with your page very easily.
+
+They can, well, let's have a look at some of the options that Facebook give an option. So you can have anyone that visited your page, people who engaged with a post or ad, like, comment, share, clicked on it, etc. People who clicked any call to action button, that's quite specific.
+
+People who sent a message to your page and see people who saved your page and any post. So the different options here will result in larger and smaller audiences, and they'll also result in warmer and colder audiences. So someone who clicked a call to action button, and that could either take them off Facebook to, let's say, you know, your website.
+
+It could take them to a lead form if you're running a lead generation campaign. It could take them to Facebook Messenger if you're running a messages campaign. Lots of different options.
+
+But someone who's clicked on a button on your ad has expressed a lot of interest. That person's going to be warmer than someone who just visited your page, or someone, or particularly someone who engaged with any post or ad. So this depends on how much advertising you've done.
+
+If you've done lots of advertising, you might want to get very specific. You could also, for example, only advertise to people who have sent a message to your page. That would be quite a specific audience for a lot of businesses, and probably contain people that are highly interested in your product or services.
+
+That's why they sent a message in the first place. Tons of options here, just like in the previous ones. You can go through each.
+
+You can experiment with them. See what size audience each one creates. To get started with, if you want to use this custom audience, then go ahead and use everyone engaged with your page.
+
+That option at the top here is going to contain all six of those. Five. I can't count.
+
+All five of those other options. And again, I would start with 365. If you're advertising tons on Facebook and have done over the last year, and you've got very large audiences, you can experiment with shortening that to, let's say, 180, 90 days.
+
+I wouldn't recommend going below 90. This option here, people who are engaged with any post or ad, can be quite large. Most of the others, this one can be reasonable size.
+
+Most of the others are going to be relatively small. So, larger audiences, where possible, is better when it comes to creating Facebook custom audiences. When you're learning the ropes, you're getting used to this, go ahead and select this option, have a nice broad window, and advertise it to see how it does.
+
+In my experience, this Facebook custom audience tends to not perform that much better than cold audiences. So, I don't use this audience or any of these options very often. I'd much rather advertise to a customer file, an email list, people who have visited your website, even people who have interacted with a lead form, or people who have watched a significant percentage of one of my videos on Facebook, than I would with people who have just engaged with a post or ad.
+
+There seems to be a lot of people that will do this, but they're not necessarily interested in your products or services. They may engage for all sorts of reasons, their friends tag them, the ad annoyed them, you know, all sorts of things like that. So, I don't tend to hold much stock in this custom audience, but your business may be different.
+
+If you're, you know, advertising something that's very, you know, food related, that is very emotive, and gets people interacting, and oh, that looks delicious, and all that sort of stuff, then this might be a great option for you. Again, always experiment. Go ahead and give your name, create audience.
+
+These are the three Facebook, most common Facebook advertising, sorry, most common on Facebook sources of Facebook custom audiences, and I've roughly gone through those in the order in which I tend to use them. So, we run a lot of video content for our own business and for our clients when we run Facebook ads, video performs very, very well. We run quite a lot of lead generation campaigns as well, we use that, and we use this one less.
+
+Obviously, you can explore some of these other options. You can go ahead and, you know, select Instagram business profile, and see whether that works for you, and experiment with all this sort of stuff. It's all open to experimentation.
+
+I'm just listing these things in the order of effectiveness that I've seen, running campaigns for my own business and campaigns for my clients, and hopefully that should save you some time and save you some working stuff out. Start up here, move down to here, and then play around with these options once you get there. Okay, so that's how you create Facebook custom audiences.
+
+That's six of the main types of Facebook custom audiences that we create. I mean, we basically always create those six options. They can perform very, very well.
+
+You're advertising to people that already know your business. It's much better to do than people who don't know your business. Now, of course, these audiences are usually small, so you're going to need to expand your audiences at some point and advertise to people that haven't interacted with you before.
+
+Otherwise, your results are going to be quite limited. Once you've come in and you've set up all your custom audiences, your Facebook custom audiences, you've advertised to these warm audiences, you then want to go ahead and take some of those and expand them and use them as a base to create a lookalike audience. Now, a lookalike audience, I'll quickly explain, it contains a group of people that are very similar to another group of people.
+
+So let's say, for example, I take my previous customers, all the people that have used our Facebook advertising agency services, and I say to Facebook, this is our previous customers, create me a lookalike audience from this, let's say a 1% lookalike audience in the UK. Now, that will contain, that lookalike audience will contain the top 1% of Facebook users in the UK that are most similar to my previous customers. So they'll be similar in terms of gender, age, interest, demographic behaviours, they'll have similar online activities, all that sort of stuff.
+
+And these are nearly always the best cold audiences to use, and it's the next step once you've targeted your Facebook custom audiences, advertised to those, it's the next place to go to is a lookalike audience. So, how do you create a lookalike audience? I'm going to include a link to another video that's got more detailed information around creating lookalike audiences.
+
+But just quickly, let's say we take this. So this is an audience that I created for myself, which is people who have registered as a lead on my website. You can see there it says custom audience website.
+
+In the last 180 days, we've had below 1,000. As I said, we're not a business that works with thousands of different companies, we work with dozens of different companies, so that's a relatively low number in comparison to some others. What you want to do is go ahead and select a custom audience, whatever custom audience you want.
+
+You could do this based on website traffic. You could do this based on customer list, on video viewers, on page engagement. You want to go ahead and select these three little lines here, and I'm sort of blocking it here, but that says create lookalike.
+
+You go ahead and select create lookalike. You can see that this is your lookalike source. So when people refer to a source audience for a lookalike, they are talking about a Facebook custom audience.
+
+You go ahead and select your country. So I could go ahead and use something like the UK, which is obviously where we're based. And then I choose the percentage of audience.
+
+I could go with 1% of. So that's 1% of Facebook users in the UK that are most like my audience, all the way up to 10%, whatever I want to do. As I said, I'll include a link in the video description to another video that's got more details around creating Facebook lookalikes and how you want to do it and things like that.
+
+Now, the effectiveness of Facebook lookalike audience mirrors the effectiveness of Facebook custom audiences. So the best performing custom audiences, previous customers, then email list, then website traffic, those are the best performing lookalike audiences. So the best lookalike audience is one that's based off previous customers.
+
+Then the next best Facebook lookalike audience is one that's based off your email list. The next best lookalike audience is one that's based off website traffic. So hopefully that makes a lot of sense and that's useful.
+
+Okay, the last thing I need to do before I wrap up this video is show you how to actually advertise to your new custom audiences. So what you want to do is you want to go ahead and jump into Ads Manager. I'm going to go to one of my campaigns and show exactly how to set that up.
+
+So let's say I select one of these campaigns. I want to go into the ad set level. I'll just select one of these ad sets.
+
+So this ad set is targeting the people who like my page all around the world. That's what this ad set is used for. But don't worry about that.
+
+That's not what I'm going to be explaining in here. Instead, I want to go ahead and put in my custom audience. So what do they have?
+
+I had leads 180 in here. I must have spelled that wrong. There we go.
+
+Leads 180. So you just type in the name of there or you can select in here. You can see there's two sections.
+
+There's lookalike audience, custom audience. You go ahead and select custom audience and then you could go ahead and have a look at the various options that you've got. Here we've got leads 180 and that will now advertise to people that have registered as a lead in the last 180 days.
+
+You can see the reach over here says less than 10. Don't worry about that. When you come in here and change audiences, this is often very unreliable and not right.
+
+We've definitely had more than 10 leads in the last 180 days. Otherwise, business would be in trouble. But yeah, that's how you go ahead and do it.
+
+Then you just want to click publish in your asset level. And then all your other selection to targeting options, you want to leave them as blank as possible because you're already advertising to your custom audience. So don't go ahead and put in some interest targeting options and things like that because then Facebook will only advertise to people that are within your Facebook custom audience and also like whatever you've put in here or also have this income or whatever.
+
+So when you are advertising to a Facebook custom audience, that's how you add it in and make sure that you leave your other targeting options as broad as you possibly can. So I would often just go 18 plus all and then the countries I'm advertising in because again, you're only advertising to people that are included on that Facebook custom audience. So only previous customers, only email list, only website visitors, only people that have watched a video on Facebook, whatever happens to be.
+
+So bit of a monster video. Hopefully that's been very useful. If it has, please give it a like on YouTube and subscribe to my channel.
+
+That'd be very much appreciated. If you've got any questions, go ahead and pop them in the comments below. I answer all the comments and the questions that are left.
+
+I'm sure people have questions about Facebook custom audiences about this video and things like that. Before you go, there's something I also want to quickly mention, which is my five part Facebook ad template, which you can download right now for free. So this Facebook ad template includes some of the best performing ads that I've created in a number of different industries.
+
+We've run them for our clients. They perform very, very well. You can take a look at these ads, model from them and really use them to produce better results from your Facebook ad campaigns.
+
+So whether you're running advertising to Facebook custom audiences or Facebook lookalike audiences or whatever it happens to be. You can download that right now for free. All you've got to do is click on the link in the video description.
+
+One of the links in the video description. It'll be obvious. That'll take you to a page on my website and you can download it there.
+
+Thanks a lot, guys. Bye for now.

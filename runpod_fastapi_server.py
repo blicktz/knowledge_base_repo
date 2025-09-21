@@ -11,6 +11,7 @@ import json
 import asyncio
 import tempfile
 import shutil
+import logging
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 from datetime import datetime
@@ -22,6 +23,16 @@ import warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
 warnings.filterwarnings("ignore", category=UserWarning, module="whisper")
 
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.StreamHandler(sys.stdout)
+    ]
+)
+logger = logging.getLogger(__name__)
+
 from fastapi import FastAPI, File, UploadFile, HTTPException, Depends, Header, BackgroundTasks
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
@@ -32,7 +43,7 @@ try:
     import whisper
     import torch
 except ImportError as e:
-    print(f"Error: Required module not installed: {e}")
+    logger.error(f"Required module not installed: {e}")
     sys.exit(1)
 
 # Configuration
@@ -41,24 +52,43 @@ UPLOAD_DIR = Path("/workspace/uploads")
 OUTPUT_DIR = Path("/workspace/outputs")
 JOBS_DIR = Path("/workspace/jobs")
 
-# Create directories
-UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-JOBS_DIR.mkdir(parents=True, exist_ok=True)
+# Multi-client concurrent processing configuration
+WORKER_COUNT = int(os.environ.get("WORKER_COUNT", 4))
+MODEL_INSTANCES = int(os.environ.get("MODEL_INSTANCES", 4))
+MODEL_NAME = os.environ.get("MODEL_NAME", "turbo")
+
+# Create directories (only if parent exists to avoid errors on local testing)
+try:
+    UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    JOBS_DIR.mkdir(parents=True, exist_ok=True)
+except (OSError, PermissionError) as e:
+    logger.warning(f"Could not create directories (probably running locally): {e}")
+    # Use local temp directories for testing
+    import tempfile
+    temp_dir = Path(tempfile.gettempdir()) / "transcription_test"
+    UPLOAD_DIR = temp_dir / "uploads"
+    OUTPUT_DIR = temp_dir / "outputs" 
+    JOBS_DIR = temp_dir / "jobs"
+    
+    UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    JOBS_DIR.mkdir(parents=True, exist_ok=True)
 
 # FastAPI app
 app = FastAPI(title="RunPod Transcription API", version="1.0.0")
 security = HTTPBearer()
 
-# Global model cache
-model_cache = {}
+# Model pool for concurrent processing
+model_pool = []
 
-# Job tracking
+# Job tracking with thread safety
 jobs_db = {}
+jobs_db_lock = asyncio.Lock()
 
 # Processing queue system
 processing_queue = asyncio.Queue()
-queue_worker_task = None
+queue_worker_tasks = []  # List to track all worker tasks
 
 class JobStatus(BaseModel):
     job_id: str
@@ -89,13 +119,11 @@ def get_device():
     else:
         return "cpu"
 
-def load_model(model_name: str = "turbo"):
-    """Load and cache Whisper model."""
-    if model_name not in model_cache:
-        device = get_device()
-        print(f"Loading {model_name} model on {device}...")
-        model_cache[model_name] = whisper.load_model(model_name, device=device)
-    return model_cache[model_name]
+def load_model_instance(model_name: str = "turbo", instance_id: int = 0):
+    """Load a Whisper model instance."""
+    device = get_device()
+    logger.info(f"Loading model instance {instance_id}: {model_name} on {device}...")
+    return whisper.load_model(model_name, device=device)
 
 def slugify_filename(filename: str, max_length: int = 100) -> str:
     """Create safe filename for output."""
@@ -191,15 +219,16 @@ async def process_audio_file(audio_path: Path, model, output_dir: Path) -> Dict[
             "error": str(e)
         }
 
-async def process_job(job_id: str, audio_files: List[Path], model_name: str):
+async def process_job(job_id: str, audio_files: List[Path], model_name: str, model_instance):
     """Process transcription job in background."""
-    job = jobs_db[job_id]
-    job["status"] = "processing"
-    job["updated_at"] = datetime.now().isoformat()
+    async with jobs_db_lock:
+        job = jobs_db[job_id]
+        job["status"] = "processing"
+        job["updated_at"] = datetime.now().isoformat()
     
     try:
-        # Load model
-        model = load_model(model_name)
+        # Use provided model instance
+        model = model_instance
         
         # Create job output directory
         job_output_dir = OUTPUT_DIR / job_id
@@ -209,26 +238,29 @@ async def process_job(job_id: str, audio_files: List[Path], model_name: str):
         for i, audio_file in enumerate(audio_files):
             result = await process_audio_file(audio_file, model, job_output_dir)
             
-            if result["status"] == "success":
-                job["processed_count"] += 1
-            else:
-                job["failed_count"] += 1
-            
-            job["updated_at"] = datetime.now().isoformat()
+            async with jobs_db_lock:
+                if result["status"] == "success":
+                    job["processed_count"] += 1
+                else:
+                    job["failed_count"] += 1
+                
+                job["updated_at"] = datetime.now().isoformat()
         
         # Create results archive
-        if job["processed_count"] > 0:
-            archive_path = OUTPUT_DIR / f"{job_id}.zip"
-            shutil.make_archive(str(archive_path.with_suffix('')), 'zip', job_output_dir)
-            job["download_url"] = f"/download/{job_id}"
-        
-        job["status"] = "completed"
-        job["updated_at"] = datetime.now().isoformat()
+        async with jobs_db_lock:
+            if job["processed_count"] > 0:
+                archive_path = OUTPUT_DIR / f"{job_id}.zip"
+                shutil.make_archive(str(archive_path.with_suffix('')), 'zip', job_output_dir)
+                job["download_url"] = f"/download/{job_id}"
+            
+            job["status"] = "completed"
+            job["updated_at"] = datetime.now().isoformat()
         
     except Exception as e:
-        job["status"] = "failed"
-        job["error"] = str(e)
-        job["updated_at"] = datetime.now().isoformat()
+        async with jobs_db_lock:
+            job["status"] = "failed"
+            job["error"] = str(e)
+            job["updated_at"] = datetime.now().isoformat()
     
     finally:
         # Clean up upload files
@@ -238,55 +270,66 @@ async def process_job(job_id: str, audio_files: List[Path], model_name: str):
             except:
                 pass
 
-async def queue_worker():
+async def queue_worker(worker_id: int, model_instance):
     """Background worker that processes jobs from the queue."""
+    logger.info(f"Worker {worker_id} started with dedicated model instance")
+    
     while True:
         try:
             # Get next job from queue
             job_data = await processing_queue.get()
             job_id = job_data["job_id"]
             
-            if job_id not in jobs_db:
-                print(f"Warning: Job {job_id} not found in database")
-                processing_queue.task_done()
-                continue
+            async with jobs_db_lock:
+                if job_id not in jobs_db:
+                    logger.warning(f"Worker {worker_id}: Job {job_id} not found in database")
+                    processing_queue.task_done()
+                    continue
+                
+                # Update status to processing
+                jobs_db[job_id]["status"] = "processing"
+                jobs_db[job_id]["updated_at"] = datetime.now().isoformat()
+                jobs_db[job_id]["worker_id"] = worker_id
+                
+                # Get job details
+                file_path = Path(jobs_db[job_id]["file_path"])
+                model_name = jobs_db[job_id]["model"]
             
-            # Update status to processing
-            jobs_db[job_id]["status"] = "processing"
-            jobs_db[job_id]["updated_at"] = datetime.now().isoformat()
+            logger.info(f"Worker {worker_id}: Processing job {job_id}")
             
-            # Process the job
-            file_path = Path(jobs_db[job_id]["file_path"])
-            model_name = jobs_db[job_id]["model"]
-            
-            await process_job(job_id, [file_path], model_name)
+            # Process the job with dedicated model instance
+            await process_job(job_id, [file_path], model_name, model_instance)
             
             processing_queue.task_done()
+            logger.info(f"Worker {worker_id}: Completed job {job_id}")
             
         except Exception as e:
-            print(f"Queue worker error: {e}")
-            if 'job_id' in locals() and job_id in jobs_db:
-                jobs_db[job_id]["status"] = "failed"
-                jobs_db[job_id]["error"] = str(e)
-                jobs_db[job_id]["updated_at"] = datetime.now().isoformat()
+            logger.error(f"Worker {worker_id} error: {e}")
+            if 'job_id' in locals():
+                async with jobs_db_lock:
+                    if job_id in jobs_db:
+                        jobs_db[job_id]["status"] = "failed"
+                        jobs_db[job_id]["error"] = str(e)
+                        jobs_db[job_id]["updated_at"] = datetime.now().isoformat()
 
 @app.post("/process/{job_id}")
 async def start_processing(job_id: str, api_key: str = Depends(verify_api_key)):
     """Start processing an uploaded file."""
-    if job_id not in jobs_db:
-        raise HTTPException(status_code=404, detail="Job not found")
-    
-    job = jobs_db[job_id]
-    
-    if job["status"] != "uploaded":
-        raise HTTPException(
-            status_code=400, 
-            detail=f"Job status is '{job['status']}', expected 'uploaded'"
-        )
-    
-    # Add job to processing queue
-    job["status"] = "queued"
-    job["updated_at"] = datetime.now().isoformat()
+    async with jobs_db_lock:
+        if job_id not in jobs_db:
+            raise HTTPException(status_code=404, detail="Job not found")
+        
+        job = jobs_db[job_id]
+        
+        if job["status"] != "uploaded":
+            raise HTTPException(
+                status_code=400, 
+                detail=f"Job status is '{job['status']}', expected 'uploaded'"
+            )
+        
+        # Add job to processing queue
+        job["status"] = "queued"
+        job["updated_at"] = datetime.now().isoformat()
     
     await processing_queue.put({"job_id": job_id})
     
@@ -294,7 +337,8 @@ async def start_processing(job_id: str, api_key: str = Depends(verify_api_key)):
         "job_id": job_id,
         "status": "queued",
         "message": "Job added to processing queue",
-        "queue_size": processing_queue.qsize()
+        "queue_size": processing_queue.qsize(),
+        "active_workers": WORKER_COUNT
     }
 
 @app.get("/")
@@ -308,9 +352,14 @@ async def root():
             "process": "/process/{job_id}",
             "status": "/status/{job_id}",
             "download": "/download/{job_id}",
-            "health": "/health"
+            "health": "/health",
+            "system": "/system"
         },
-        "workflow": "1. Upload file → 2. Start processing → 3. Check status → 4. Download results"
+        "workflow": "1. Upload file → 2. Start processing → 3. Check status → 4. Download results",
+        "concurrency": {
+            "max_workers": WORKER_COUNT,
+            "model_instances": MODEL_INSTANCES
+        }
     }
 
 @app.get("/health")
@@ -321,7 +370,57 @@ async def health():
         "status": "healthy",
         "device": device,
         "cuda_available": torch.cuda.is_available(),
-        "models_cached": list(model_cache.keys())
+        "model_instances": len(model_pool),
+        "active_workers": len(queue_worker_tasks),
+        "queue_size": processing_queue.qsize()
+    }
+
+@app.get("/system")
+async def system_status(api_key: str = Depends(verify_api_key)):
+    """Get detailed system status including worker and job information."""
+    async with jobs_db_lock:
+        # Count jobs by status
+        job_stats = {
+            "total": len(jobs_db),
+            "uploaded": sum(1 for j in jobs_db.values() if j["status"] == "uploaded"),
+            "queued": sum(1 for j in jobs_db.values() if j["status"] == "queued"),
+            "processing": sum(1 for j in jobs_db.values() if j["status"] == "processing"),
+            "completed": sum(1 for j in jobs_db.values() if j["status"] == "completed"),
+            "failed": sum(1 for j in jobs_db.values() if j["status"] == "failed")
+        }
+        
+        # Get active processing jobs
+        active_jobs = [
+            {
+                "job_id": j["job_id"],
+                "worker_id": j.get("worker_id"),
+                "status": j["status"],
+                "updated_at": j["updated_at"]
+            }
+            for j in jobs_db.values() if j["status"] == "processing"
+        ]
+    
+    return {
+        "workers": {
+            "configured": WORKER_COUNT,
+            "active": len(queue_worker_tasks),
+            "model_instances": MODEL_INSTANCES
+        },
+        "queue": {
+            "size": processing_queue.qsize(),
+            "max_size": processing_queue.maxsize if processing_queue.maxsize else "unlimited"
+        },
+        "jobs": job_stats,
+        "active_processing": active_jobs,
+        "device": {
+            "type": get_device(),
+            "cuda_available": torch.cuda.is_available(),
+            "cuda_device_count": torch.cuda.device_count() if torch.cuda.is_available() else 0
+        },
+        "model": {
+            "name": MODEL_NAME,
+            "instances_loaded": len(model_pool)
+        }
     }
 
 @app.post("/upload-single")
@@ -365,9 +464,12 @@ async def upload_single_file(
         "model": model,
         "file_path": str(file_path),
         "error": None,
-        "download_url": None
+        "download_url": None,
+        "worker_id": None  # Track which worker processes this job
     }
-    jobs_db[job_id] = job
+    
+    async with jobs_db_lock:
+        jobs_db[job_id] = job
     
     # File uploaded successfully - processing will be started separately
     
@@ -431,12 +533,16 @@ async def upload_files(
         "failed_count": 0,
         "model": model,
         "error": None,
-        "download_url": None
+        "download_url": None,
+        "worker_id": None
     }
-    jobs_db[job_id] = job
     
-    # Start background processing
-    background_tasks.add_task(process_job, job_id, audio_files, model)
+    async with jobs_db_lock:
+        jobs_db[job_id] = job
+    
+    # Start background processing - pick a model from pool
+    model_instance = model_pool[job_id.__hash__() % len(model_pool)] if model_pool else None
+    background_tasks.add_task(process_job, job_id, audio_files, model, model_instance)
     
     return {
         "job_id": job_id,
@@ -449,19 +555,26 @@ async def upload_files(
 @app.get("/status/{job_id}")
 async def get_status(job_id: str, api_key: str = Depends(verify_api_key)):
     """Get job status."""
-    if job_id not in jobs_db:
-        raise HTTPException(status_code=404, detail="Job not found")
+    async with jobs_db_lock:
+        if job_id not in jobs_db:
+            raise HTTPException(status_code=404, detail="Job not found")
+        
+        job = jobs_db[job_id].copy()
     
-    job = jobs_db[job_id]
+    # Remove worker_id from response if present
+    if "worker_id" in job:
+        del job["worker_id"]
+    
     return JobStatus(**job)
 
 @app.get("/download/{job_id}")
 async def download_results(job_id: str, api_key: str = Depends(verify_api_key)):
     """Download transcription results."""
-    if job_id not in jobs_db:
-        raise HTTPException(status_code=404, detail="Job not found")
-    
-    job = jobs_db[job_id]
+    async with jobs_db_lock:
+        if job_id not in jobs_db:
+            raise HTTPException(status_code=404, detail="Job not found")
+        
+        job = jobs_db[job_id].copy()
     
     if job["status"] != "completed":
         raise HTTPException(status_code=400, detail=f"Job status is {job['status']}, not completed")
@@ -479,8 +592,9 @@ async def download_results(job_id: str, api_key: str = Depends(verify_api_key)):
 @app.delete("/job/{job_id}")
 async def delete_job(job_id: str, api_key: str = Depends(verify_api_key)):
     """Delete job and its files."""
-    if job_id not in jobs_db:
-        raise HTTPException(status_code=404, detail="Job not found")
+    async with jobs_db_lock:
+        if job_id not in jobs_db:
+            raise HTTPException(status_code=404, detail="Job not found")
     
     # Delete files
     job_upload_dir = UPLOAD_DIR / job_id
@@ -495,27 +609,41 @@ async def delete_job(job_id: str, api_key: str = Depends(verify_api_key)):
                 path.unlink()
     
     # Remove from database
-    del jobs_db[job_id]
+    async with jobs_db_lock:
+        del jobs_db[job_id]
     
     return {"message": "Job deleted successfully"}
 
 @app.on_event("startup")
 async def startup_event():
-    """Preload default model and start background worker on startup."""
-    global queue_worker_task
+    """Initialize model pool and start multiple background workers on startup."""
+    global model_pool, queue_worker_tasks
     
-    print("Starting RunPod Transcription API Server...")
-    print(f"Device: {get_device()}")
-    print(f"API Key configured: {'Yes' if API_KEY != 'mv_mtvG2X4U_dqRgdWMvSEoFtpMjRJkL4zlkwEXYH2I' else 'No (using default)'}")
+    logger.info("Starting RunPod Transcription API Server...")
+    logger.info(f"Device: {get_device()}")
+    logger.info(f"API Key configured: {'Yes' if API_KEY != 'mv_mtvG2X4U_dqRgdWMvSEoFtpMjRJkL4zlkwEXYH2I' else 'No (using default)'}")
+    logger.info(f"Worker Count: {WORKER_COUNT}")
+    logger.info(f"Model Instances: {MODEL_INSTANCES}")
+    logger.info(f"Model Name: {MODEL_NAME}")
     
-    # Start background queue worker
-    print("Starting background queue worker...")
-    queue_worker_task = asyncio.create_task(queue_worker())
+    # Load model pool for concurrent processing
+    logger.info(f"Loading {MODEL_INSTANCES} model instances...")
+    for i in range(MODEL_INSTANCES):
+        logger.info(f"Loading model instance {i + 1}/{MODEL_INSTANCES}...")
+        model = load_model_instance(MODEL_NAME, i)
+        model_pool.append(model)
     
-    # Preload turbo model
-    print("Preloading turbo model...")
-    load_model("turbo")
-    print("Server ready!")
+    logger.info(f"Starting {WORKER_COUNT} background workers...")
+    for worker_id in range(WORKER_COUNT):
+        # Assign model to worker (round-robin if fewer models than workers)
+        model_instance = model_pool[worker_id % len(model_pool)]
+        
+        # Create and start worker task
+        worker_task = asyncio.create_task(queue_worker(worker_id, model_instance))
+        queue_worker_tasks.append(worker_task)
+        logger.info(f"Worker {worker_id} started")
+    
+    logger.info(f"Server ready with {WORKER_COUNT} concurrent workers!")
 
 def main():
     """Main entry point."""
