@@ -22,6 +22,7 @@ from tqdm import tqdm
 from ..data.models.persona_constitution import StatisticalReport
 from ..config.settings import Settings
 from ..utils.logging import get_logger
+from ..utils.device_manager import get_device_manager
 
 
 class StatisticalAnalyzer:
@@ -42,13 +43,19 @@ class StatisticalAnalyzer:
         # Initialize NLTK components
         self._init_nltk()
         
+        # Report device usage for other libraries
+        self._report_library_devices()
+        
         # Analysis results storage
         self.analysis_cache = {}
         
     def _init_spacy(self):
-        """Initialize spaCy model"""
+        """Initialize spaCy model with device reporting"""
         spacy_config = self.settings.statistical_analysis.spacy
         model_name = spacy_config.get('model', 'en_core_web_sm')
+        
+        # Get device manager for reporting
+        device_manager = get_device_manager()
         
         try:
             self.spacy_model = spacy.load(model_name)
@@ -56,6 +63,23 @@ class StatisticalAnalyzer:
             # Configure model settings
             max_length = spacy_config.get('max_length', 1000000)
             self.spacy_model.max_length = max_length
+            
+            # Report device usage for spaCy
+            # spaCy's standard models run on CPU, but transformers models can use GPU
+            has_transformers = any('transformer' in pipe_name for pipe_name in self.spacy_model.pipe_names)
+            
+            if has_transformers and device_manager.is_gpu_available():
+                device_manager.log_library_device_usage(
+                    "spaCy", 
+                    device_manager.get_torch_device().upper(), 
+                    f"Model: {model_name} (transformers pipeline)"
+                )
+            else:
+                device_manager.log_library_device_usage(
+                    "spaCy", 
+                    "CPU", 
+                    f"Model: {model_name} (standard pipeline)"
+                )
             
             self.logger.info(f"Loaded spaCy model: {model_name}")
             
@@ -91,6 +115,16 @@ class StatisticalAnalyzer:
         except Exception as e:
             self.logger.warning(f"Failed to load stopwords: {e}")
             self.stop_words = set()
+    
+    def _report_library_devices(self):
+        """Report device usage for statistical analysis libraries"""
+        device_manager = get_device_manager()
+        
+        # NLTK always uses CPU
+        device_manager.log_library_device_usage("NLTK", "CPU", "Text processing and tokenization")
+        
+        # scikit-learn uses CPU (no built-in GPU support)
+        device_manager.log_library_device_usage("scikit-learn", "CPU", "TF-IDF and statistical analysis")
     
     def analyze_content(self, documents: List[Dict[str, Any]]) -> StatisticalReport:
         """

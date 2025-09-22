@@ -1,0 +1,923 @@
+I remember there were times where the thing I needed, it would cost like $50. And it was just like, it was inconceivable that I could afford it. I mean, like, honestly, Oculus owes more to the iPhone than anything else.
+
+I mean, like, if the iPhone wouldn't have existed, there wouldn't have been broken iPhones for me to buy, unlock, repair, and sell on eBay. Like, because I made tens of thousands of dollars as a teenager on that side hustle. Like, if that had not happened, then Oculus probably wouldn't exist today.
+
+That's it. What's up? We got Palmer Lucky on the podcast.
+
+Palmer is a billionaire. He created Oculus, which he sold to Facebook. He's created Anduril, which is now one of the biggest, like, government, they make weapons for the government.
+
+And super interesting guy. I'm gonna call it right now. I think this is a all-timer episode.
+
+I don't know what, I don't, you know, you guys know, I don't hype it up like that unless it's legit. This was an all-timer episode. Sam, what are some of the things that we talked about?
+
+So early on, we asked him basically what he did with his money. So he made hundreds of millions of dollars at the age of, like, 23 or something like that. And we said, where did you put your money?
+
+And he was very clear on what he did with it. He talked about some of his early crypto investments. So he bought crypto way, way early, like in 2010, I think he said.
+
+He talked about how he was making minimum wage and then became a billionaire, like, four or five years after just making minimum wage. What else? We talked about a couple of different things.
+
+Where he likes to hang out on the internet. We're like, dude, where do you, how do you know about all this stuff? Where do you learn this stuff?
+
+What are your subreddits? What are you, what are you listening to and reading? Because I need to start doing some of that.
+
+So he told us some of his, by the way, do you remember? He actually said a Facebook group that he liked. And he actually named the Facebook group.
+
+Which I have a feeling is going to get a lot more popular. And then, yeah, he talked about basically, like, is World War III going to happen, right? He's supplying, you know, his company builds tech for the Defense Department, the Department of Defense.
+
+And so is World War III going to happen? Is there going to be a nuke? What is a tactical nuke?
+
+Well, you asked him a very specific question. You go, is Russia going to drop a nuclear bomb? And his perspective is interesting.
+
+I thought it was a good question. And then the best part was we said, all right, you sold Oculus. And then you created Anderil, which is an even bigger success.
+
+I think it's like value to $8 billion or something. But there was many years in between. Did you consider doing any other ideas?
+
+And he opened up and he was like, yeah, actually, there were these two or three other ideas. He had an idea about creating a new kind of prison. He had an idea that would try to solve obesity.
+
+He had a couple of ideas and we go into depth brainstorming with him. So he had it all, man. And he had the crazy backstory, the success story, but he also brought ideas.
+
+And then he also argued with us about why he flies coach, even though he's a billionaire, and why he may or may not get into a fight with Jason Calacanis. And so this episode had it all. Had fighting, had ideas, had success stories.
+
+It's got it all. All right. Enjoy this episode with Palmer Luckey.
+
+I don't know. You don't need too much of an intro, but I'll do it anyways. Palmer Luckey is here.
+
+Created Oculus, created Anderil. Really interesting dude. And I think we have a bunch of topics, so I'm not going to kind of belabor the intro.
+
+Sam, I know you've been itching. We just, you probably can't say the DM you sent to try to get Palmer on here. You really wanted this man on the podcast.
+
+Why? My first question is to you, Sam. Why?
+
+So Palmer, I am like the king of left-handed compliments. At least that's what they say about me. But I mean them as full-handed compliments or right-handed compliments.
+
+But basically, I love freaks. I love weirdos. I love extremists.
+
+Not like in the political sense, but in the sense of like people who just go all in on stuff and are just passionate about maybe like nerdy or unconventional things. And you go all in on things. And I love that.
+
+I love people. Even if I don't like what they're going all in on, I'm crazy fascinated by that. And you see one of those guys who just goes all in on things.
+
+You've done a lot at a young age. And I like weirdos. And I put you in that category.
+
+Thank you. I'm happy to be a weirdo. I'd rather be a person that people think ill or well of than somebody nobody thinks of at all.
+
+I think well of you, by the way. I think well of you. Sam had a poster at his office that was like for his employees.
+
+He was like, let your freak flag fly. That was like, you know, corporate values are typically like integrity and like determination. And his was like, be a freak.
+
+All right. So let's start with, I don't know. Let's start with some of the kind of, we're going to try to, as much as we can, avoid VR and avoid the Facebook stuff because mostly just because you've talked about it a bunch of places.
+
+I'm, frankly, I'm interested because I am actually a VR fanboy. But Sam has tried to forbid me from asking those questions. So we're going to leave that at the end if I get a little extra time.
+
+But this is a podcast that started, it's called My First Million because we're interested in money and we think it's really funny that people are tapped, like money's like, you know, the Silicon Valley thing is you have to pretend you don't like money. And like, Oh, I know you're talking about, yeah, you know, we're not doing it here for the money. You know, this money, money's not the real objective.
+
+I actually tell my own employees at onboarding that if you work at a place where your boss is saying that, you should be worried because it's one thing, it's one thing to say that to the press. It's one thing to say that in your marketing materials. But, you know, if your employees don't believe that at the end of the day you're trying to make their job a fiscally responsible decision, if you're effectively telling them you could be making more money elsewhere and your financial success is not my priority, you should be concerned.
+
+Yeah, yeah, exactly. And you kind of did the best of both. Like for all the kind of ironic people who are like, we're trying to change the world with this like, you know, HR onboarding software, you know, you actually kind of did and still made a bunch of money doing it.
+
+So, you know, it's not like an either or. 100%. I mean, when I started Oculus, it was not because I thought it would be the thing that would make the most money.
+
+There had never been a successful VR company in history, to be clear. And I did it because it was something I was really passionate about. Now, that said, one of the things I'm most proud of in my whole career is that everyone who worked at Oculus achieved financial independence because we were able to build something incredible and like, I feel great that everyone who was part of that mission and who supported me early on was able to make a bunch of money and then a lot of them have gone on to do incredible things.
+
+But yeah, Oculus was not, was not, was not done because I thought it was the best way to make money. It's because I thought it really was going to be the best way to change the world in the long run. Andrel was a little different.
+
+I, I, that one, it wasn't just, oh, this will be fun. I want to do something really cool. Andrel was like, I felt like I had to do it or things were, things were going to go really poorly.
+
+So more, more of a, more of a stick than a carrot on that one. How much did you make off the Oculus sale? Oh man, I probably shouldn't say because this is also one of those complex things where, you know, there was the, there was the sale.
+
+So there's what they believe they called the merger consideration form of, you know, proportion of the, of the, of the compensation. And then they, you know, you cut an employment deal where they say, we're going to pay you, you know, this much for five years. I can say that.
+
+I was locked, I was locked up on a five-year vesting schedule. So typical would be four. Most of our employees were four.
+
+I got locked up for five because I was a key guy. And that, that money technically is not for the acquisition. It's just, I had that too.
+
+Yep. So, and of course, you know, you can't, you can't pretend, you can't say they're the same thing or they're supposed to be treated differently tax-wise, compensation-wise. And then of course, there's the bonuses we had.
+
+We had an earn out that was a, it was a, it was a, obviously a huge earn out. It was hundreds of millions of dollars for the founders of the company if we could hit certain sales targets and user, user, like hours, hours of time targets. And we actually had four years to hit those targets and we, we hit them within less than two years.
+
+So we actually did, it's kind of funny when people are like, oh man, the acquisition must not be going as well as people expect. It's like, no, we maxed out the top bracket of our earn out because we were kicking butt. But anyway, it was in the hundreds of millions of dollars.
+
+I can tell you that. In the healthy hundreds of millions of dollars. What were you?
+
+So a bunch of people who listened to this, sorry, I'll go real quick. A bunch of people who listened to this are founders and like would want to sell their company someday. Both me and Sam, we started this podcast right when we both exited our companies because it's like, all right, we're kind of earning out.
+
+We can't start another company right now, but like, oh, we can start a podcast. That sounds kind of fun. And actually, just yesterday, I just closed on another sale of a company, but these are small scale compared to what you did, right?
+
+Like, congratulations. Thank you. But you sold for, I don't know, two or three billion bucks.
+
+How does that happen? Somebody, you know, Zuck comes over to your house and is like, I'll give you $3 billion for this. Like, how does that, how does that even, how does that conversation go down when, when, when you're talking about the sort of like the grand slam type of outcomes?
+
+Well, it's a, it's a long story, but you know, I know, I know Sam didn't want to talk all about VR, but no, I, this shit's interesting to me. Oh, great. We, we, we won't talk about VR optics and the metaverse then.
+
+But I guess on, on the business side of it, the interesting thing about the acquisition is that we didn't have any of intention of selling initially when we first had our conversation with Facebook. And I think that really was a positive thing because actually first time we talked, I think basically we were offered a billion dollars to sell. And we said, no, we're not interested.
+
+We think this company is easily going to surpass that value. We think it's not going to be a problem for us to make more money. And yeah, we, we were, we're happy to work with you guys, but we, we don't want to be, by the way, was that, was that easy to say no to a billion dollars?
+
+I mean, you started this thing like on a Kickstarter, dude, like, you know, at some point were you like, was it hard to say no or was it not, not an issue at that point? It wasn't an issue for me. And I think, I think different people had different opinions.
+
+I mean, look, if you, if you look over my career, I've made a lot of similar decisions. Like when I was starting Oculus, when I was deciding whether I was going to do a Kickstarter or work for someone else, I actually had a job on, a job offer on the table from, from Sony to run a PlayStation VR lab, you know, out of PlayStation group. And when I turned them down, they actually doubled the offer.
+
+And then I had to turn them down again. And a lot of people were wondering, how could you have done that? You know, how could you have decided to do your own thing?
+
+It was so much higher risk. And I think that a lot of it is, is social programming. You know, I grew up watching media that conditioned me to believe that when you have an opportunity, you have to take it.
+
+When, you know, when you almost have to follow the narrative and looking back, I'm not sure I could have done anything. I was like, could I have stayed in school instead of starting Oculus? Once I realized I had this breakthrough in VR technology, I think I could not have possibly done it.
+
+There's, it's almost to the level of free will not existing. I could not have chosen that. Could I have gone and worked for Sony?
+
+Looking back, I don't think so. I think I couldn't have made that decision. And I think it's actually the same thing with that billion dollar offer.
+
+Like I almost could not have said yes. You know, like that, that, that first offer, I like narratively, it makes no sense. It doesn't align with what I've been trained is what you do when you're a, you know, when you're a free thinking iconoclast.
+
+And so I couldn't have done it. I think what, what happened is a few things changed over, over time after that initial offer. You know, we didn't talk to Facebook for, for, for a few months after that.
+
+And a few things happened. One, it became clear that our competition was not only serious, but was going to be putting massive dollars into their success. It was something not a lot of people remember, but I certainly do because it was a big deal in my mind.
+
+The day that we announced, no, the day we find, it wasn't that we announced, the day we finalized the Facebook acquisition was the same day that Sony announced PlayStation VR. And we had known that it was coming for a while. We, we, we'd actually even shown each other prototypes and stuff, but it really reinforced.
+
+This was a serious thing. We were going to have some of the biggest games companies in the world putting hundreds of millions of dollars into competing with us. And, you know, that, that made, I think our, that made the, the pitch that Facebook came back with, which is, listen, you, maybe you could make more money as an independent company, but if you're with us, we're going to make VR happen much faster.
+
+So, yes, you'll, you might make more money, but you're going to go much slower than if we were able to artificially supercharge your growth far beyond even what you could do with venture capital. And they, they were willing to commit billions of dollars a year for a period of a decade or more. And that's, that's a really tough thing to turn down when you really believe in something.
+
+And is this like, literally, Zuck coming to your house and talking to you about this? Or is there like an army of lawyers in between you guys that are like, you know, bankers and, and corp dev people? It was a very small number of people.
+
+I mean, it was, it was, I mean, I think that the, the, the lawyers and the accountants are much more likely to be involved in a deal when the deal is contingent on, you know, your, your revenue and your multiples and your PNLs. Like that, that's where you need to drag those people in to really make a, an assessment. This was such a high level bet.
+
+It's not like, oh, I think that you have this margin on your headset and you've sold this many development kits. It was so early and the technology so nascent. The real bet is, do you believe in the metaverse?
+
+Do you believe that there's going to be a virtual world parallel to our own where you're living and you're working and you're playing? And then most importantly, do you believe this is the best team in the world to do it? And I didn't know this at the time, but I found out later that Mark had been going around and talking to various university research labs, government research labs, talking to, you know, seeing what other companies were doing.
+
+And their conclusion was we were way ahead of everyone else. And that if, if this was going to happen, this shift to immersive computing, the final computing platform, arguably, that we were the people in the best position to do it. And that's not something that a lawyer can really give an opinion on.
+
+It's not something that an accountant can put a value on. It's a very high level bet. What was your personal financial situation when you turned down the billion dollar offer?
+
+So at the time, early, early in Oculus. So, yeah, I mean, I started Oculus using my own money. And at that time, I was working a minimum wage job and living in a 19 foot camper trailer.
+
+I was 19 years old. So for people who aren't familiar with the story to that degree, I mean, I had almost no money, literally had a few hundred dollars in my bank account because I spent all the money that I made putting myself through school and working on virtual reality technology. And I was extraordinarily, and I had a minimum wage job.
+
+I was also fixing computers on the side. For a while, I'd been buying broken iPhones, fixing them and unlocking them, selling those for spare cash. And so I'd burned a lot of money on my nutty hobby.
+
+And when we started Oculus, we didn't pay ourselves very much. By the time the acquisition happened, I had given myself a raise. We decided that nobody in the company was going to make over a hundred thousand dollars.
+
+We called it the 100K club. So we were paying the CEO a hundred thousand dollars. I was getting paid a hundred thousand dollars.
+
+And to me, that actually felt incredible. I was like, wow, a hundred thousand dollars. This is absolutely crazy.
+
+I can afford anything. You're like, you know how many cell phones, how many iPhones I'd have to fix to make a hundred thousand dollars? A heck of a lot.
+
+Because you were fixing iPhones and like scrubbing boats or something I read. Is that what you were doing? Yeah.
+
+I mean, when I started working on VR stuff, I worked for a few years in a boat yard. So yeah, scrubbing boats, repainting, repainting the bottom paint, sweeping the boat yard, you know, that type of stuff. So to me, the money was not a huge motivating factor.
+
+Also because, maybe too optimistically, I believed Oculus was going to be worth tens of billions or hundreds of billions of dollars. So it really wasn't the, I know this is what, contrary to what I said before, but it wasn't the money that was motivating me to make the sale. It was the pitch, hey, we're going to get you billions of dollars right now.
+
+Like not the compensation for the acquisition, but we're going to give you your organization, billions of dollars a year to go out and make virtual reality actually happen. And that's what you're going to need to compete with Google, to compete with Sony, to compete with Microsoft, all of which have seen what you're doing, bought in, like they've drunk your Kool-Aid, but they're going to try to kill you over it. That was kind of the situation we were in.
+
+And Facebook was one of the very few companies that had a strong incentive to make virtual reality and immersive computing writ large to come about as quickly as possible because unlike Google, unlike Microsoft, they did not benefit from the status quo in the hardware space. If we kept using mobile phones and normal computers for, you know, that 20, 30 years, Google and Microsoft are going to do just fine. Like they're already the winners in that paradigm.
+
+If you can shake everything up and force a reset with immersive computing, AR, VR, MR, whatever you want to call it, it could be that Microsoft is one of the top players and it could be that Apple and Google are some of the top players, but it's unlikely that all of them are going to remain the dominant players. And that's an opening for a company like Facebook to come in. And even if they're not first place, forcing the reset puts them in second or third place instead of being totally subservient to the operating system vendors and to the hardware vendors.
+
+So it was one of those things where there were other companies that were interested. None of them actually had a strong incentive to put billions of dollars into VR on an ongoing base. And I mean, you can see Google killed their VR program.
+
+First, they killed their PC VR team. Then they killed their mobile VR team. Microsoft is winding down their internal efforts.
+
+I mean, it's a tough business and I'm not convinced that Oculus would still be around if we hadn't had those resources. I'm going to move on from like asking you these money questions, but I want to ask one more because I do think it's fascinating because you went from like maybe not having a lot to having a lot and you're also like an eyeball, which I like. When I sold my business, I put everything into bonds and just Vanguard total index funds and just did like a normal 80-20 split and then eventually some real estate and then HubSpot stock and just normal like basic stuff.
+
+What did you do with your money and what have you because I know you bought like a marina, I think, or you tried to buy it. I don't know if it went through, but like what does like someone like you do with that amount of liquidity? So most of it, I did what you're talking about.
+
+I generally don't believe in trying to beat the market through market transactions. I mean, it's one thing to build, like I think you build wealth by building companies. That's where you should be focusing your effort, not trying to be smarter than all the finance guys who are sitting around and using every tool at their disposal to try and game the financial market.
+
+So actually, yeah, Vanguard funds, like Vanguard 500 total index funds. My grandpa taught me a lot about investing and about how you shouldn't try to beat the market. Probably my investment philosophy is informed mostly by John Bogle's little black book on investing.
+
+He's like, look, keep your fees low, keep your costs low and just go with the market. And if the market goes so poorly that I become poor, then the United States has bigger problems than the market. So that was most what I did.
+
+I bought the marina not as a financial investment. It was actually, it was one of the only marinas. So this is getting a little into the weeds or something probably very few people care about, but just so you know, in California, almost all marinas, the water is owned by the state or by the feds.
+
+And then they do long-term leases, like 30 or 40 years to operators that are allowed to operate those marinas. And they might own, let's say the parking lot, the operator, but they do not own the water. They do not own the docks.
+
+It's just a long-term lease. And they redo that over. There's only a small handful of marinas in the entire state of California where the underlying land under the water and the water itself is deeded to a private title.
+
+And the marina that I bought was one of those. And, you know, without getting into it, without getting into, you know, my whole seasteading delusion, I think that you're going to end up needing, if you want to have transport ferries that are operating from land out to international waters, you do not want to be in a position where the place you're doing that from is totally dependent on state government bureaucrats choosing to renew your lease on a particular, on a particular marina. So that was actually, that was actually a purchase that'll, it'll, it'll pay off someday.
+
+You'll see, you'll see. See, I bought my house just like, I like the walk-in closet was nice. And I was like, oh, that's a good enough reason for me.
+
+I didn't have to like, you know, go into international waters to make it up. Well, in my case, I did buy, I mean, I did, I did a few things. Like as soon as I had money, I immediately started learning to fly helicopters for real because I'd always wanted to be a helicopter pilot ever since being a little kid.
+
+So like, it was like, it was like two weeks after the wire completed, I was, I was flying helicopters. So that was really cool. I bought a 69 Mustang convertible.
+
+That was really cool. And I bought a first generation Tesla Model S. That was cool.
+
+And then I bought a house for my parents. You know, it's like the, it's like the basketball player contract move. You know, you, you get the money, you buy the, you buy the house for your parents.
+
+And then I bought a house for myself that was close to my grandpa actually. And unfortunately, we then ended up having to move up to Silicon Valley because of the acquisition. And then he passed away while I was up there.
+
+So one of my, one of my regrets, but I'm still in that house. Wow. Okay.
+
+That's amazing. And one other thing I had seen was that you, I don't know if this is even a real thing or it's like some Twitter fake, you know, fake photo or whatever. Did you buy Bitcoin in 2013?
+
+No, no. I bought Bitcoin much earlier than that. I was a very, 20, 2013 is when I was on, I was in the Forbes 30 under 30 and they asked everyone on it for a quote for the print edition.
+
+And it was, the theme was, what is your advice to other young founders? And my quote was, buy more Bitcoin. But I've actually been involved in Bitcoin since before there were any exchanges.
+
+I like, I was a true OG on the bitcointalk.org forums. There were no exchanges. You could only do direct transactions for goods.
+
+I actually sold a banner ad on my game console modification forum. It was a one week banner ad on this forum with almost no traffic. And I sold it for 400 Bitcoin.
+
+And then I ended up, I ended up buying someone's Samsung, Samsung Galaxy Vibrant, which was the T-Mobile variant of the first Galaxy phone for 800 Bitcoin, I believe, which at the time was, you know, well, well under a dollar per Bitcoin. Right. So I've actually been in 16 million in the very early days.
+
+16. Oh my God. How do you, so like, all right, we had biology, you know, biology on the pod.
+
+And like, he was one of these guys where he would like give an analogy. He was like, oh, you know, Bitcoin is kind of like the Battle of Thames. And I'm like, bro, I, you can't, you, I needed an analogy for your analogy.
+
+Like, I can't tell you about the Battle of Thames in World War II. Like, I can't have that conversation with you. And you're a little bit like that where you're talking about like, uh, you just like threw in a few lines, like, oh, this gaming forum I have when I was like, well, I could have go down that path.
+
+But then you're talking about like this boat marina thing. I'm like, that's a whole conversation. Like how on earth you discovered that.
+
+And then I'm sure you have strong opinion. You just have a very, and then now obviously you're doing government stuff and you've done, uh, and you have no bunch about politics, whatever. How are you becoming so well-versed and also so opinionated on such a broad set of topics?
+
+Because you have to, most of the time, like the best things that I've done, that I have done in my career have not been going super, super deep on one vertical and then finding the really, really hard gains that are at the end of a long fight that everyone's made. Like an example here would be, uh, with just like optics technology. Most people are fighting way at the end of the spectrum where they're trying to like, oh, we're using new cutting edge materials that increase the ability to control light more precisely by 2%.
+
+And we're trying to figure out the physics of how we can manufacture these polymers. Most of my best ideas have not come from that. They've been from knowing things in totally different fields that have nothing to do with the field, or at least people don't think they do.
+
+And then pulling ideas from those fields and applying them in a new way. Like the, the really key thing that made the Oculus Rift work is just one example. Rather than focusing on trying to make these optical stacks that cost thousands of dollars and weighed a bunch.
+
+And that was really what was making these headsets, uh, weigh many pounds and cost tens of thousands of dollars. It was the high end optical stack that was able to project images on your retina with minimal distortion. But you needed, you know, a bunch of lenses.
+
+They're all very, very expensive, very high precision. What I did is figure out that you could just render a distorted image. Basically, render your image, distort it on the graphics card, uh, in the inverse way that the lens distorted it.
+
+And then basically you would render an image that looks terrible on the screen. But after viewing it through the lens that I had, which was optimized for high field of view, low weight, low cost, but not optimized to have low distortion, low chromatic aberration or geometric aberration, it would come out looking, looking perfect. And like that, that's something where an optical engineer, someone who's working on just optics would not, would not think of that.
+
+Uh, you know, that's very much like a, a, a software idea, but the software people are also not necessarily thinking about how they could obsolesce expenses, expensive pieces of optics. And of course, there are people who do that, do that. I think that some of the best entrepreneurs are people who have understanding that is sufficient, uh, in enough areas to pull from one area and solve the biggest problems of another.
+
+So I, I mean, I, I make it a priority. You asked, how do I do it? You make it a priority to know a little about a lot.
+
+So, uh, two questions. One, just go back to the Bitcoin thing for a second. Sure.
+
+How did you get into, like, why were you on the Bitcoin talk forums or why did you see it even before, you know, almost anybody? Uh, so what were you doing there and why did it catch your eye? Um, and then, you know, today, 10 years later, there's a whole bunch of people that are disillusioned by it.
+
+They say, oh, it's all this time's gone by. 10 years didn't work out. Other people are more bullish than ever.
+
+You know, where do you stand now? So what caught your eye and where do you stand now? So, I mean, I think I got into Bitcoin.
+
+It would have been mid, mid to late 2010. Um, and, and I, I, I was really fascinated because I, I mean, look, I'm a guy who was into virtual reality and the metaverse. This is just adjacent to that.
+
+It's another super cool, you know, uh, cyberpunk concept. The idea of, you know, uh, untraceable internet currency that is based on only the consensus of all of the cyberpunks who are using it, cryptographically verified and secured with no nation state controlling it or issuing it or diluting it or manipulating it. Like, like what, what a cool thing when you're a, when you're an anti-authority teenager who, who, who loves, who loves cyberpunk science fiction.
+
+Um, and so that, that it was like, I bought into the, the very original, cool vision, not the, Oh, this is going to be huge for everybody one. But like, this is, this is, this is cyberpunk incarnate. I have to be a part of this.
+
+Um, and when I started, uh, like my, my, my initial thinking was not that it was a good store of value. That was, that's actually been, I think the most contentious thing about crypto is after it started skyrocket. I, I didn't buy it because I was speculating.
+
+Nobody was even thinking about that back then. Like it's, it's crazy to me to watch all these new crypto kids get in. And it seems like it's all about just having, having coins pumping the value, dumping them.
+
+It's really just, you know, these, this financial markets play that I've never believed in. I've, because I always believe in, you know, investing in the whole market. Um, but to me, it was always value as a, as a means of moving wealth around.
+
+It's not as a store for years or decades. It's a way that you can move wealth around, uh, without any, without being beholden to any, any centralized authority or centralized power. And I think today, like even for all the issues Bitcoin has and people, you know, putting it down because of it crashing.
+
+Well, first of all, every time there's a Bitcoin crash, it's like, Oh no, it's crashed to only 10 X what it was two years ago. Every single time, every crash is like that. Um, but more importantly, it's still a good way to move value around.
+
+And, uh, that said my prediction in 2013 was that Bitcoin will go to about a hundred thousand dollars and then stabilize. I'm sticking with it. I, I think, I think it'll get there.
+
+I'm not, I'm not sure that it in particular has the, has the appropriate utility to reach a higher store of value. And wow. Okay.
+
+Amazing. And then did you, Oh, by the way, I have, and I have to throw out there. I'm one of those guys who lost a bunch of coins in the Mount Gox hack.
+
+Oh man, I got Gox good. Um, and it was, it was one of those things where there was no, like looking back, everyone's like, Oh my God, I can't believe that, you know, you would have, and I had most of my coins in, in my own wallet. Uh, but I had a significant amount on, on Gox because people were transferring coins to my Gox, to my Gox account.
+
+And, uh, now everyone's like, Oh my God, of course you would never keep your coins in an exchange. But like, I was 16 years old and like, you know, there was, there was no, there was no, like, idiot's guide to Bitcoin back then. It was, it was the type of thing you only used if you were a crazy, a crazy internet nutter.
+
+And so you've mentioned forums and I'm a big forums guy. Like I still, I remember, you know, BBS, I wasn't like before B, whatever was before BBS. That's not me, but I've been on forums and I love forums.
+
+And you talked about, Amen. The Bitcoin talk forums. I went and read a bunch of your early posts on the, what was the name of the like, odd retro?
+
+No, no, no. The, the headset one, the head mounted display. MTBS 3D.
+
+Yeah, exactly. Like your old, your old post there. I went and like stalked him just to be like, cause I like to see the origin.
+
+I'm like, it's fun. Like, what are the like archeologists for like the internet? I like to go find the original shit.
+
+And so, um, you know, I saw you posting there and you're like, Hey, I'm trying to build this thing. I'm thinking about doing this. You did a bunch of like kind of really cool crowdsource stuff.
+
+I think you even like asked Reddit, like, you know, should I buy that? Should we buy vibe or something like that? You did a bunch of cool stuff on forums.
+
+And I thought about that. And some of them, like I, when I learned poker, I learned it through forums. Yep.
+
+If you think about today, like if who's the sick, the 16 year old version of you today, what forums do you think they're hanging out in? What's the thing? Cause when you were doing this is 15 years ago, like VR still early and you were early, early, early, same thing with Bitcoin.
+
+You were early, early, early. And so what do you think are the interesting forums today that people are hanging out in that you think will play out over the next decade or so? And, and also what are, what are, what are some of your favorite pockets of the web and, and forums that you're hanging out in?
+
+I mean, much to my chagrin, I like, I love forums too. I think they are more or less the pinnacle of asynchronous, asynchronous communication. Like if you are doing collaborative product, all of the incentives are correct.
+
+Like, so, so I like, I ran a forum, the mod retro forums. It was a forum for people who modified vintage game consoles in particular with a focus on turning them into handheld self-contained units. So cutting apart Nintendo 64s and super Nintendos and playstations, and then replacing like the power electronics with modern power electronics, running them off of the latest lithium battery technology.
+
+Although it was NICAD back when, back when I started, started, you know, working on portables, you know, putting in LCD screens that were designed for portable DVD players and the like, and building these self-contained units. And, uh, it, it, the forums are interesting because your, your currency is, is attention, but you can only get attention by getting people to come in and, you know, respond and engage with you. And so there's a strong incentive to update people on what you're doing, to, to, to write really interesting things and to, you know, get people regularly coming back and engaging with your stuff.
+
+I mean, that that's the dopamine high, right? It's other people care about what I'm doing today. It's been so algorithm, you know, algorithmically driven that you don't have the same incentives in terms of long-term sustained engagement and, uh, you know, collaborating with people.
+
+There's a lot more incentive to do things on your own, do one big push in a form that will cause ordinary people who are not necessarily technically competent to, you know, watch it for at least three minutes so that it's seen as you watching it long enough. And I like, I think the pockets, which is what you asked, like there's great pockets on YouTube. There's great pockets on Reddit.
+
+There's actually a lot of private Facebook groups. Uh, so like one, I like, like I'm a member of a, of a night vision group where people build their own night vision, uh, night vision goggles. And, uh, it's got a couple thousand people, but it's, it's a private group and very, very much not virally driven.
+
+Uh, you know, it's not like the tick tock, tick tock techno heads. It's not like the YouTube techno heads, but man, I, I really miss forums, you know, mod retro. We had a core group of a few thousand active members that were, that were doing stuff in the heyday.
+
+And we were doing a few, a few million page views a month. Uh, and you would, you never see those ratios these days, you know, of, of, of, of, of, of engagers to, to, to watchers. One thing that, um, that, uh, I thought was actually really interesting.
+
+I don't know. Wait, I have to interrupt. I have to interrupt one last thing.
+
+I forgot. Um, actually a huge fraction of the people that I hired for Oculus in the early days were volunteer moderators on the mod retro forums. Like people always, you know, they hire their network, right?
+
+They hire the people that they know that they can trust and that they know are competent. And that was my network when I was a teenager, it was other, it was other loser gamer teenagers on the internet. And so we like that, that like we, some of our lead electrical people, our lead hardware people, our lead mechatronics people, uh, were all people who had been moderators on mod retro.
+
+You're like, in fact, the first person I hired for Oculus was, was one of the other moderators. And I, I, I actually, uh, sent him a message said, Hey, what are you doing? Uh, what are you doing?
+
+What are you doing this fall? And he said, Oh, I'm, I'm starting, starting college. I said, no, you're not.
+
+You're going to come work for me. And I literally, I like, I told him that on a Friday and I literally drove out in my minivan to pick him up from his mom's house on Monday. And he had all his stuff in like four boxes.
+
+And I picked him up. We got in my van and we drove to the condemned motel that I was living in. I mean, it was, it was, it was wild.
+
+I mean, that, and that, that was, that was my network. So it's, it's always funny when people are like, Oh, you know, your network is your net worth. You know, look, you know, we're, we're, you got all the Stanford kids, you get the Ivy kids.
+
+And we were just a bunch of internet losers. And we did better than any of them. You're like, um, I'm hiring HMD alumni.
+
+They're like, Oh, is that Harvard medical? No, no, no, no. Head mounted display forum alumni.
+
+It was, it was, it was actually the, the guy that I was hiring, uh, um, his, his, his name's Chris Dykus. And he had never built a head mounted display, but he was, he was very accomplished on the, what a loser. Portableizing.
+
+Yeah. And I knew he was very competent. I knew exact, like you, you talk about a job interview where you meet someone for, you know, whatever they're, you know, maybe an hour or something, but I had been seeing this guy's work published on the forum over the course of years.
+
+And so I knew he had, I knew he had skills and I knew he had work. That's exactly. We, me and Sean have hired so many people on Twitter.
+
+And I tell people all the time, like, I want to get a job. I'm like, man, if you just like, you need to post your thoughts. So people understand your texture and your tastes and your character, like that is significantly better doing it there.
+
+And then just DMing someone. And then they're just going to click their profile. I'm like, Oh, this person is tweeting all this like interesting insight that aligns.
+
+Exactly. Well, and that's harder to fake too. If you, if you have somebody who has a history of building things for themselves, of doing things because they want to not because they're getting paid to, that you can't fake that the way that you can fake an interview.
+
+It's easy to be like, Oh, I'm passionate about X, Y, and Z. Well, show me your years of work that you've done for no money showing that you really are. And I mean, we, we, we still hire a lot of people like that at Anderil.
+
+Like we, we, we, we have benefits that are intended to lure people like that. Like one of our benefits we have is that we will buy anyone in the company, any tool they want for their personal projects as well as work projects. And that's the type of thing where people who don't have personal projects, who just, you know, they show up to their, to their wage machine and they clock in and they clock out.
+
+They're not attracted by that, but the types of people who want to create for the sake of creation, those, to those people, that's a, it's a golden ticket. On that note, we did the same thing. My co-founder, he's a lot like you, like 15 at age 15, started working at a.com during the.com boom.
+
+It was like, you know, had a job and it was like, what the hell's going on? And always was just doing his own thing. And so he used to buy, um, like 3d printers and robotics and we're building like social apps.
+
+It's like, we didn't need any of this stuff. And I was like, what are you doing? Like, why are we doing this?
+
+He's like, because a, I want it. Like I want to come to a space and like when I'm done with work, I'm just going to go downstairs to their lab and I'm going to build like a drone or I'm going to like take this raspberry pie and like shove it over here and figure something else out. And he's like, also that's also how we'll get great people.
+
+Like I want to work with other hackers like that, like who liked to tinker on this stuff. And he's like, he's like, he's like, he had had an exit. So he's like, you know, doing very well.
+
+His last company went public. And so he was like, you know, when I was like 16, 18, 21, like I just couldn't afford the, like the thousand dollar thing that you would need to have. And he's like, I just got lucky that the dude down the street would let me come over and play with his thing.
+
+And that's like, that was like a life changer of a moment. He's like, so I just want to do that for people. Like I'm just make it free.
+
+Anybody can come in and anybody can use this stuff. And he was totally right. Even though like our CFO was like, Hey, we can't justify this.
+
+He's like, don't worry. I'll pay for it all out of pocket. And it was like, and I know, and I know that struggle, you know, like, and it doesn't even have to be a thousand dollars.
+
+I mean, I remember there were times where the thing I needed, it would cost like $50. And it was just like, it was, it was inconceivable that I could afford it. I mean, like honestly, Oculus owes more to the iPhone than anything else.
+
+I mean, like if the iPhone wouldn't have existed, there wouldn't have been broken iPhones for me to buy, unlock, repair, and sell on eBay. Like, cause I made tens of thousands of dollars as a teenager on that, on that side hustle. Like if, if that had not happened, then Oculus probably wouldn't exist today.
+
+That's amazing. I want to, um, ask you a bit about Andrel, but before, before we get to that, what ideas were you pursuing? Or, uh, I bet you, if you're like us, I imagine you have a list of like things that you're contemplating.
+
+What was, what was on that list, uh, prior to starting Andrel? I know there was like a prison thing and, but what, what else like, were you interested in? Well, what was the prison thing?
+
+So start with that one. Cause that, that one sounds interesting. Also, there were two things I was seriously considering.
+
+And then one thing that I'm, I'm going to do someday. So seasteading is off the table right now. It's too long-term, but there were two short-term things that I was looking at, uh, aside from Andrel.
+
+So the three choices were fix national security, solve obesity, or solve incarceration. Uh, and I, I tried to think about, you know, what are the ways that I would tackle these issues? And the way I solve defense was I wanted to build a defense products company that upends the incentives that typically exist in the military industrial complex.
+
+But the prison one was that I wanted to basically take out the incentives of the private prison complex that exists today. Right now, private prison companies are, are growing. There's more and more people being housed in privately operated prisons.
+
+They're publicly traded. And those companies have a strong incentive to lobby for and, and perpetuate laws that incarcerate people for the longest period of time for the least serious crime. In other words, they don't want murderers and terrorists.
+
+They want, they want nonviolent drug offenders who will be in prison for a long time. And when they get out of prison, they want them to come back and be a repeat customer. They want good, good tenants.
+
+They want good occupancy, good tenants. And, and the incentives they've set up with the government where the government pre pays for these beds. The government basically says, well, we've already paid for the bed.
+
+So if they're not full, then we're not locking up enough people. It's a, it's a very bad set of incentives. So my idea was that I could start a private prison company that would run as a nonprofit organization.
+
+And we would use the tax advantages of that to outcompete private prison companies. And more importantly, we would have a business model. They would incent everybody towards the right set of incentives.
+
+So what I wanted to do is go to the government and say, listen, I'll lock up your prisoners, but you don't get to pay us upfront. In fact, you can't pass up front. You have to pay us after the person serves their term and then stays out of prison for five years.
+
+Then you're going to pay me. And the idea is that now all of a sudden I'm motivated and my whole organization is motivated to get people through as quickly as possible, release them as quickly as possible, and then have them stay out of prison and not return to crime. And I mean, that would have been, that would have been a game changer and it would have been a very attractive business model to these governments that are always looking to delay their expenditures.
+
+The biggest problem that I ran into as I looked into this is it wasn't a technological problem. It was a lobbying and marketing and government affairs problem. And it wasn't at a federal level where you can basically convince a handful of people and then achieve success.
+
+It was going to be this, like this low locale by locale thing where you have a lot of people who depend on prisons for jobs. You have a lot of politicians who are very involved in it. It was, and also the deals are not recompeted very often.
+
+This isn't like enterprise software where people are always on the lookout for a way to get an edge or move to a new provider that could reduce their costs or risk. It's like, Oh yeah, we're going to recompete this deal in 35 years. And so it's, it would have been this thing where I just couldn't have made an impact fast enough.
+
+And so I've been involved with other people who are making impacts in other ways. Okay. So that was one.
+
+Well, you couldn't just have like some Silicon Valley guy wearing like tight jeans and brown shoes, like every other salesperson sitting down, like, Hey, so we'd like to have a conversation about your prisoners. We'd like to have your business. Like, you know, no, no, give me some of your guys.
+
+Unfortunately not. Uh, yeah, yeah. Unfortunately not.
+
+And the thing is the people who make the decisions, uh, would not have benefited from us succeeding. So in business, like when you're, and this is a big, we can get into this with Andrel too. One of the biggest problems with selling to the government versus, uh, businesses or private, private individuals with, with, with private individuals and businesses, you just have to convince them that, it'll be, that it'll be a, you know, that it'll be a good thing for them.
+
+And then they'll buy them. The people who are in charge of purchasing for government, they often don't benefit from saving money or reducing their manpower or any of this. Like in many cases, the guy in charge of making the buying decision, his political power and earning power are directly tied to his ability to keep costs high and to keep manpower up and to not allow anything to displace that.
+
+So that was actually the big problem. I realized that it's, it's nice to think you can solve any problem, uh, with, with new ideas through disruption, but some things are kind of self-reinforcing, very hard to fix. The, the other thing I was looking at is obesity.
+
+You know, obesity is, uh, is one of, if not the leading preventable cause of death in the United States. Uh, either there's so many, there's so many other health problems that are the result of, of obesity. And, uh, some people say that we need to make exercise more popular.
+
+Some people say that we need to stop normalizing obesity. Some people say we need medical treatment for you, or we, you know, we need to make eat healthy eating better. I took a pretty cynical view of it.
+
+I said, no, obesity is not going away unless you let American people eat whatever they want, whenever they want, as much as they want with no lifestyle changes, no exercise, and absolutely no effort on their parts whatsoever. And so within that constraint, what could you do to, to solve this issue? And, uh, the, the, the, the result that the, the, the idea came on was, uh, long chain hydrocarbon based synthetic foods.
+
+So in other words, oil based foods, uh, you, you guys are familiar with impossible burger beyond burger. Have you had them? Yeah.
+
+Yeah. So, I mean, it was probably better than the worst beef burger you've ever had, right? It was, it was at least at that level.
+
+It's where it's better than the worst one you've ever had. Yeah, it was a, whatever. I'll eat this.
+
+Yeah. Whatever. You'll eat this, but certainly not up to the level of the best beef burger you've ever had.
+
+Um, no. And, and so one of the, one of the interesting, this is where I was drawing from outside, you know, in an outside world, all these people trying to make fake food, they're all trying to build fake food out of food. And I said, well, wait, let's think of this from first principles.
+
+If I'm a materials engineer and I'm trying to solve the set of problems that a fake burger manufacturer is trying to solve, you know, how it feels in your mouth, how it comes apart in your mouth, how it, how it sears, how it cooks, how it changes texture when it's cooked. If I was a chemical or material engineer trying to build, let's say it's not food, just a, you know, a paste, a substance with a certain set of, of parameters. What am I going to use?
+
+Is it, is it beans? Is it chickpeas? Is it corn?
+
+No, of course not. I'm going to use oil because man is a master of oil. We can make it in anything, waxes, gels, solids, anything in between rubbers, pastes.
+
+We can do anything with oil. We can make it into truly anything with almost any material properties that we want. And so I said, well, let's leverage that.
+
+Let's leverage everything we know about making inert hydrocarbons that are non-toxic and use that to make fake food for people that tastes and feels like real food, but has zero caloric value that cannot be absorbed by your body. It just goes right through you. Just like fiber.
+
+And the thing is, it's not that crazy. Taco Bell. Diet Coke for, yeah, it's, yeah, that exists, dude.
+
+It's called the white castle. But you're, I mean, yeah, you're just saying like the diet Coke cheeseburger. Yes, diet Coke cheeseburger, the diet Coke cheese, the diet, you know, the diet Coke dairy products.
+
+And so I actually started making prototypes of this and I was messing around with a, frying foods and mineral oil with, with, with high flash points because mineral oil also no calories. I made some paraffin based cheese. So it was basically like paraffin wax based fake cheese product that you could still make grilled cheese sandwiches with.
+
+And it tasted great, but at almost no calories. It was, there were a few other wild things that came with. I also built a device that injected soda syrup through a stream onto your tongue directly as carbonated.
+
+Water flowed over it because it turns out you can only detect what it's a weird perceptual thing. People think of optical illusions as, as you know, the main type of illusion that's out there, but there's also physical illusions. Like if you, if you put it, putting in your mouth, your body assumes that the full mass of the pudding is comprised of whatever is touching your tongue.
+
+But if you can create a physically structured foods where the part that's touching your tongue is different than the bulk of the rest of the material, your body still thinks that the entire bulk of it is whatever's touching your tongue. Anyway, I went down this rabbit hole for a while. What does your house look like?
+
+Well, I mean, it's, it's a little more boring now. But at the time when, when, when I was acquired by Facebook, I moved up to the Bay area and we had about 10 people living in a 13,000 square foot home that was built in the thirties on six acres. And so we turned the dining room into a machine shop.
+
+We turned, we, we turned the, there was like a, like a ballroom for dancing. And we turned that into an assembly area and, and, and welding, welding room. I mean, we, we had a soft goods room and, and as one does, sunny area as someone does.
+
+It was, it was really cool. I don't even know what that means. What are soft goods?
+
+Oh, so like, so like, cheese. I mean, like the traditional example that when people talk like a soft goods engineer would be like, like tennis shoes, bras, you know, things that are incorporating fabrics and also play or think, you know, like a, like a tennis, a tennis racket is, is, is, is an example of soft, good engineering where you've got, you know, the handle and the shock absorption and all that. But like in our case, it was for head mounted display stuff.
+
+So like head mounted display straps, the fat, the fabric associated with it. We also were, you know, we're, we're also cosplayers. So we are also building our, building our anime costumes there.
+
+So a lot of soft, good stuff. The more you talk, the more I realize you, you do the one thing that we celebrate the most on this podcast. Cause they're like, people are like, I don't get it.
+
+Like you and Sam, you do a certain style of entrepreneurship, right? Like for example, I optimize for just, I want it to be me and one other dude. I don't want any employees.
+
+I don't want to go to an office and I just want max leverage. And I'm not trying to be a billionaire. I don't want to raise money.
+
+I want to own the whole thing and just do it my way on whatever projects are fun. And, but then sometimes we'll celebrate like the, you and Elon Musk of the world that are going huge. And sometimes we celebrate this dude who's making this Chrome extension.
+
+And he makes 20 K a month and lives in, you know, Bali and he's having fun. And so people don't get it. They're like, what do you like?
+
+Which one do you admire? Like I get it. Tech crunch admires this thing and VCs admire this thing, but you guys seem to be across the board.
+
+And we're like, we like people that just define the win, define winning on their terms and then like actualize it. So like you have in a house with 13 other people that does, that has like, you know, an assembly room and a soft goods room and whatever. It seems like you're living your best life in that state.
+
+Maybe a hundred percent. And one, and I mean, it's, it's, it's the weird thing about what I get to do now. Like these, these all sound, you know, like, like, like fun things, but I'm still getting to do that.
+
+And like, and roll, we have all kinds of stuff like that going on. Actually, the, the, the, the tough thing is the coolest things that we're doing here. I can't even necessarily talk about because the, the most successful projects that are doing the cool, going in the coolest directions are the ones that, that we have to keep kind of, uh, on wraps.
+
+Oh, I have to say on, on petroleum food, just in case anyone's wondering why I didn't do that. Um, one, I thought national security would, would be a better use of my time. And that was because I realized, uh, tech was that national security was a technological problem.
+
+In addition to being a lobbying and marketing problem and sales problem. Um, the, the problem with petroleum foods is that it was not sustainable. If using new oil as a feedstock, um, it would just, it would consume too much.
+
+Uh, and the good news is you can recycle hydrocarbons, but then, I mean, if you, I don't know if you can see where this is going, but it means you're going to literally be like centrifuging oil out of the sewer system and then reusing it to construct new food. And I realized they have you, have you seen all the media coverage of pinks, pink slime at McDonald's? And that's just like, I saw it going that way.
+
+It looks kind of gross. Yeah. Do you think people want to buy food?
+
+That's literally remanufactured from sewage. You know, that, that, that was kind of the main problem. I said, you know what?
+
+I'm, I'm, I'm pretty good at marketing and sales. I am not good enough to sell sewer food to people. Yeah.
+
+You, you sound like you're a bad guy in Batman. If you're like, yeah, he's going through the sewers and recycling it, turning it into food. It's like, it's almost too good of a story, right?
+
+Like, like I, sometimes I think the media is unfair, but it's like, could you expect them to not, you know, sensationalize literally a guy who's, who's selling reprocessed sewage as food? Like it's like, they have to cover it in a sensational way. And I can't even blame them for it.
+
+And I decided I would rather work in an area where technological improvement would be the main way that you would compete. We didn't need to do crazy marketing. You just had to be competent and be better than all of the other players, which was not necessarily that high of a bar.
+
+I can't find this client info. Have you heard of HubSpot? HubSpot is a CRM platform, so it shares its data across every application.
+
+Every team can stay aligned. No out of sync spreadsheets or dueling databases. HubSpot grow better.
+
+Do you, you talked about the media for a second. And I, when I was doing research, I was like, you know, there's this great Silicon Valley post that's called like the hands of time of social media, of, of media in Silicon Valley. It's like, it starts at noon and it's like, you're born, you know, nobody's ever heard of you.
+
+Then at one, you're like emerging at three. You're like the star. Everybody loves you.
+
+And it like goes, and then it cycles all the way back to midnight. And it's like, you're evil. Uh, you're ruining society and you like destroyed democracy and whatever else.
+
+And this happens with every hot company and every hot founder or whatever. And when I was looking at your media coverage to do research, it's all like, this is the boy wonder he's 19 years old. He's making virtual reality real.
+
+He's doing this out of his garage and his house, whatever. Yep. And then it turns into like, this guy is like, you know, the MAGA super evil guy.
+
+He's getting fired by Facebook. And then it's like the defense stuff. So you've seen kind of both sides of the media machine.
+
+Oh yeah. Make you kind of jaded. Like where do you trust the media today?
+
+And like, how do you think about, you know, the media? Well, there's an interesting quote that people often misuse from the Nolan Batman movies. Uh, you either die a hero or live, you see yourself live long enough to become the villain.
+
+And a lot of people misunderstand that. They think that it means you start out as a hero and then eventually descend into, into being, uh, you know, a bad guy. And they look at Harvey Dent and they, that they, they think that's the moral, but that's not what was, what, what Harvey Dent was saying.
+
+Harvey Dent had actually always been a kind of crooked power seeking political type. What, what, what he was saying is that he had always been the same person fighting for the same ideals. And that he just lived long enough to see the world change around him.
+
+That, so that people started saying that what he was, was a villain. You know, he didn't say that you become the villain. You live your, to see yourself become the villain in the eyes of everyone else.
+
+And I, I feel like I've definitely been through, been, been through that, uh, been through that a little bit. I mean, it's worth noting. I'm not inclined to dislike the media.
+
+Naturally. A lot of people assume that that must be the case. I don't know if you know this.
+
+I was a journalism major at Cal state, Long Beach. I was actually the online editor of the, of the school paper, the daily 49er. Uh, so I, I, by no meat, like I, there was a time where I thought I was going to go into a career in tech journalism.
+
+And so I, I never really had, had any issues with it. Um, as a, as you know, I thought it was a very, a very honorable thing to do, you know, to go out and be the guy who dig, dig, digs and gets the truth and lets people know what's going on that they otherwise would not have the ability or the time to suss out themselves. Uh, and then unfortunately I've had quite a few experiences with the media.
+
+It's like, do I trust the media? It's like, well, I mean, I've had like literally dozens of major outlets post literally fabricated quotes from me. Uh, literally, you know, literally like things that, it never happened.
+
+Uh, they said, they all, we did all these terrible things that just never even happened and then refused to correct them for years on end. So it's one of those people like, Oh, Palmer, why do you attack the media? It's like, I don't know.
+
+Like there's not any real way to, to get, to get around this. I mean, like, and we're not talking about tiny outlets, like the New York times posted a quote for me that I literally never said. And I told them like, Hey, you, you said that I said this.
+
+I never said that. They said, well, it's, it's, it's more or less what you said. We don't think the meaning is different.
+
+And I was like, yeah, but your, your, your, your ethics guide, I know, I know what it is. I was taught the New York times style guide when I was in journalism school. It doesn't, it doesn't say you get to quote me and paraphrase me.
+
+And you think that it is, it doesn't mean anything different. And then of course everyone re quotes their fake quote. You're like, I don't think a quote means what you think it means.
+
+You know, you're like those, those like, you know, those little signs in the paper that say it's a quote that, that means something different than what, than what you guys are saying. Well, I explained to them. I said, I said, your quote for me is literally missing six of the words that I said, but you have it in quotes with a period.
+
+And I, I never said that. Um, and it was actually, and it, well, there was no period because it was part of a longer run on argument. I was making that did not even have a period there.
+
+And they're like, Oh, well we don't think it really changes the meaning. So just, I, I, you know, without belaboring the point, uh, you know, I think you, you can't, you can't trust the media to, to, uh, you can't trust the media to do the right thing. And if you do, you're probably going to get burned at some point.
+
+It worked for me for a while, uh, until it didn't. What does, um, what does Andrew do and what made you realize that the, the, the, the approach to solve that problem was the approach that you picked, because that seems like such a grand, I mean, I understand the high level of what you do, but it's so grand that I think, well, like Oculus was fairly grand, but I kind of get that. You can kind of tinker in your garage and come up with a nifty product and whatever.
+
+And like, no one's going to like get hurt really. And it's like a pretty simple process, hard, but simple. Andrew.
+
+I'm like, Oh my God, I don't even know where to start. I mean, I get, I've seen the movie with Jonah Hill where he's like a war dog or whatever it's called, where he like buys and sell weapons. And I'm like, is that what Andrew does?
+
+And yeah, yeah. I'm like, is that what Andrew does? And how on earth does even a rich guy who's 28 in his apartment or his big house come up with this?
+
+This is crazy. Like, who do you call? You call it?
+
+Hey, uh, Hey Brock. Uh, I was thinking, you know, maybe we could try this like MVP. You know what I mean?
+
+I don't even know how you start that. I mean, it's tough and it is such a big problem and so unapproachable that very few people do approach it. I mean, like very big picture.
+
+Anderle is trying to build the next major defense prime, meaning we were the prime contract holder. We're not a subcontractor to existing primes like Lockheed Martin or Raytheon or Northrop Grumman or Boeing. And, uh, you know, I 80% of the U S defense budget goes to just a handful of companies.
+
+These big primes that just, completely dominate the industry and they get paid on what's called a cost plus basis. They get paid for their time materials, fixed percentage of profit on top, which means that they're incentivized to move slowly. They actually make more money when they come up with more expensive systems, more money, when they sell more of something, more money, when it even breaks more often because they get to sell more parts for it.
+
+I mean, it's, it's a, it's a really bizarre contracting system that we created in world war two, to basically take over the U S war machine or sorry, the U S industrial machine. Turn it into a war machine because companies like Ford were saying, Hey, I can't even quote you what it's going to cost to make a tank because I've never really, you know, this has never really been my business. And, uh, they said, okay, fine, we'll pay you whatever it costs.
+
+And then a fixed percentage of profit on top to make sure that you are able to keep running your business. And then unfortunately we just kept doing that, uh, even though we were no longer in an existential war mode. And so in the last 35 years, since the end of the cold war, the government had completely lost its ability to grow small defense companies into large defense and it comes companies.
+
+I mean, you know, Samuel Colt went from working in his tiny garage workshop to arming the entire Western world. That's, that's, that's what we used to be able to do. You could start small and get big if you had the best stuff.
+
+But in the last 35 years, there were only two unicorns before and role in the defense space and 35 years, not just being chosen arbitrarily. It's basically since the end of the cold war during the cold war, we did turn small defense companies into, into major players. But since then it's Palantir, SpaceX, both founded by billionaires and then nobody else.
+
+That's it. And so it, it's so hard to get in. You know, founders say, I have no idea how I could possibly start a defense company.
+
+So they don't start a defense company. A venture capitalists say, I'm not going to invest in a defense company. There's no examples of success in the last 35 years, less the billionaires who can do anything.
+
+I'm sure they could have done whatever they wanted with their billions. And so the VCs don't want to invest in it. And this is, and then smart employees don't want to go work at defense startups because they look at the landscape.
+
+They say, look, this might be a cool lifestyle business, but it's never going to grow to a scale where the equity that I'm given is a significant, is a significant way to generate money for me and my family. And so I, I, I said, man, if that's really what it takes, uh, it really, it really does take lots and lots of money and lots and lots of influence and really smart people that I'm in a position to start a company that very few people are very few founders have experience running a multi-billion dollar company with thousands of employees, man mass manufacturing, millions of pieces of hardware, uh, and are, and are willing to give up the adoration of their peers in the media. Like that was actually probably the most important factor.
+
+If, if I would have just left Oculus by retiring on my own, it would have been much harder for me to go into an area like building weapons for the U S and our allies, because so many people got so angry about it. You know, friends that I had who didn't want to talk to me anymore, investors who said that not only would we never make money, but that what we were doing was morally reprehensible and wrong. And I was trying to explain to people, listen, we live in a world where our major strategic adversaries are rapidly building advanced technology that has no peer here in the United States war machine.
+
+Uh, the, the major conflict is imminent in Asia, in Europe with a lot of our strong allies and partners. And we need to be ready, not just to win those wars. The goal is not to win awards, to deter a war from happening in the first place.
+
+And if we don't have the tools we need to deter them, then war is inevitable. And I, you guys probably remember how things were, you know, I guess that you bought five or six years ago, it was very, very popular to believe that we're at the end of history and that peace is too profitable for anyone to rock the boat. And that that was the thing that would keep everybody in line.
+
+I think that Russia invading Ukraine finally woke up a lot of people to realize that history is not over. Uh, land borders are not fixed. And, uh, it like, I mean, look how wild it is that Europe is still buying billions of dollars of goods from Russia, even as Russia literally invades Europe.
+
+I mean, like that's, that's how screw that's how screwed they are. Um, and I think people, people did not see this a few years ago and I felt, I felt a little bit like a crazy person. Um, and if I'll, I'll ramble on one more thing and you've probably heard me say this before elsewhere, but it could be that, you know, your, your, your viewers haven't heard me say it.
+
+So I'll say it again. You know, we're living in the first time in U S history where the most innovative, powerful, and large technology companies in our country refuse to work with the military. That's never been the case.
+
+Our most powerful companies have always understood that they had a responsibility to aid with national security. But now, I mean, whether you're talking about Google or in particular, Apple, I mean, Apple's got 95% of their manufacturing in China. Uh, they agreed to invest.
+
+They've invested hundreds of billions of dollars in manufacturing capacity there. They've agreed to invest a further $275 billion in Chinese manufacturing in exchange for being allowed to operate as an independent company in China, instead of being nationalized into a joint venture majority owned by China. I mean, they, they, they are in a position where if they do anything to upset the Chinese government, the one person in China could sign one piece of paper that would wipe out the most powerful company in the entire world.
+
+Instantly a $2 trillion company. Like they, they are not masters of their own destiny, not by any means. And I, I guess I want to stress this because it's never been the case in history.
+
+And that had me terrified. You know, I, I, five years ago, I could see we were on the precipice of war with advanced powers who had fully suppressed our most advanced technology companies through economic tools. And, you know, they've, I, I don't understand why more people were not scared by that, but I felt like I couldn't do anything that was more important than starting Anderil to start help solving that problem.
+
+And thanks for letting me ramble for so long than that. I know that was a long ramble, but I've, I've got a lot of, a lot of emotion all built up inside of it. No, I mean, that's why we wanted you on is to hear what you're doing and why.
+
+And you also flipped like the common denominator with either the prison thing, the food, the, the oil-based foods, or this is that you kind of looked at it from another angle and also maybe flip the incentives. So the cost structure. So what you were saying was, let's say with the prison thing, you wanted to be incentivized to keep people out of prison rather than in prison for as long as possible.
+
+Exactly. Sounds like for Andrew. Sounds so simple, right?
+
+Yeah. It is simple, but it's not easy. No.
+
+Yeah. And well, and it sounds like what you ran into there was the incentive for the local official who, you know, who decides on these things may have been to have a bigger budget and not a smaller budget. And so, you know, your incentives were sort of clashing.
+
+Right. Whereas with, and he doesn't, and he doesn't have to say, I'm not buying your thing because my incentives are wrong. He'd be like, Oh, we've done an assessment of all the vendors and this one really has a lot more experience and we don't want to take a risk on a new vendor.
+
+It could literally be that simple. People like, Oh, but how would they justify the business model? You know, it would be so much better.
+
+It's like, he doesn't have to, like you, you could just be like, Nope, I too much risk. And so what's the business model with Andrew? Cause you're not doing cost plus you're doing something else.
+
+And so that's the first question. We're a, we're a defense product company. I mean, we, we work the way it's not even a revolutionary business model.
+
+It's the way every tech company works. You use your own money, you build a product, you make it work and then you go to customers and you sell it to them. And that is a very hard thing to do in the defense space.
+
+But we've basically bet that we will be able to pick the right things to work on. They will be able to find the right partners in government to help tell us what we should be investing our own money in ahead of time. And that in the end, when it works, that we'll be able to sell most of the time to the government.
+
+Now there'll be times where we get screwed. There'll be times where we don't build things that work. And you know, and it's our own money that we burned instead of taxpayers.
+
+But on the whole, we're very incentivized to be efficient. We don't want it things to drag out. We don't want to drag it out to be a 10 year R and D program on a cost plus basis.
+
+When we can get it done in six months with some really, really smart ideas. And so we've got the right incentives and we're, we're basically out there trying to convince the department of defense and politicians that this is the way that all defense companies should be working. Everyone should live in fear, looking over their own own shoulder, knowing that if they fail, that they're the ones who are going to get screwed, not taxpayers.
+
+So when you get a contract, that's like we got a $900 million contract. That's after you've already produced the product. And they're basically just agreeing to buy the goods at that point.
+
+Is that what that means in your case? Yeah. I mean, we recently just won a billion dollar contract with SOCOM special operations command to do all of their counter drone work.
+
+So basically protecting like building the hardware and software that is defending them from, from drones that are attacking their installations and positions. And we started working on our counter drone system, using all of our own money years and years ago, before we had any customer, we just, we started building the hardware and the software, building our interceptors, building our jammers. And then we, it was after we invested a ton of our own money and proved that this was the right way to solve the problem that we were able to go.
+
+And actually there was a full competition for who they were going to select for this. And they did basically a shoot off between all these different companies. And some of the companies that we beat, we're actually getting paid by the government to develop their systems using government money.
+
+But we had invested quite a bit more money and moved much faster. And there were literally contractors that were complaining saying, this isn't fair. We have to compete with Anderil and they've been investing their own money for years.
+
+How could we possibly be expected to compete when the government's only given us, you know, tens of millions of dollars over the course of the last two years. And I'm like, guys, of course, this is how it works. You could have won if you had spent your own money.
+
+If you had spent your own money for five years, you probably would be able to compete with us on an even playing field. But you can't take no risk and expect all of the reward. And we spent a lot less than these companies developing much better capabilities because we had the right incentives.
+
+So you're you're I think you're 30 years old. So you're we're all about the same age. You're sitting there with just 30 a few weeks ago.
+
+Well, happy birthday. You're sitting there in a fucking Hawaiian t-shirt with the goatee. You're probably the type of dude who walks around barefooted all the time.
+
+And you're talking about cosplay. And yet you just said, we just want a billion dollar contract from the government. How do you work up like the the huevos, the confidence to think like, I'm going to go in against all these gray haired suits and like they're going to the government's eventually going to take me seriously.
+
+I'm going to sell this sell this thing. I mean, or do you have people selling on your behalf? But like that's just a reach for me to understand.
+
+Some people think that I should that I should dress differently and try to kind of, you know, appeal to the government sensibilities and like, you know, I should be dressing in a suit and I should be very, very straight laced and, you know, be very, very serious all the time. But I think that one of the most important things that Andrew is doing is not just building technology ourselves, but it's inspiring other companies to work in defense, not just company like inspiring companies that aren't in defense to pivot in defense and inspiring people to start new defense companies. And if they see me like becoming a boring guy, who's who's, you know, has to make himself super lame to sell to the government, that's not a lifestyle that they're going to want to lead, you know?
+
+And so we need to show that they can be successful and show them that it's, that it's going to be fun. Now I also want to keep wearing flip-flops and Hawaiian shirts. So maybe I'm, maybe this is just, you know, post-facto justification.
+
+No, I'm on board. I feel like I'd be doing everyone a disservice if I were to change. Yeah, I think it's working.
+
+Now, you know, we, the podcast is all about the future. We're always brainstorming ideas, opportunities, but none of that matters if there's not really a future, if this is about to become World War III and there's nukes flying everywhere. So you're kind of a lot more in the loop than any guest that we've ever had on this.
+
+What's going to happen here? Is this, what are the odds of like, you know, this sort of Ukraine, Russia conflict breaking out into something a lot more serious and like, you know, is there going to be a nuclear weapon, you know, in our, in the near future? Sure.
+
+So, I mean, it's very hard to predict. There's people who are better at this than me. Like what I always tell people is like, our role is to build the tools and then you have to trust in democracy to deploy them correctly.
+
+And people are like, oh, you know, when would you stop supplying weapons to Ukraine? And, you know, is there a point where you'd be too, you know, where you, where you think that we should, where you would make sure that you're not part of a nuclear escalation. And I say, listen, if you believe in democracy at all, then you should not want U.S.
+
+foreign policy to be dictated by the ever-changing whims of technology executives. Like what an extraordinarily dangerous precedent to set that, you know, you'll build weapons for the people you are politically aligned with, and then you'll suddenly drop it. Despite the U.S.
+
+like what it really is, is I will sell to the people that the U.S. State Department and the U.S. DoD want me to like, if, if that, that, that, because they have information that I don't, they have intelligence that I do not.
+
+And I cannot second guess that and say, oh, you know, I, I would stop supplying if I thought there was this level of, of escalation. But you know, with that out of the way, I think that we are going to see a tactical nuke get used. And for people who are not familiar with the difference, tactical nuclear weapons are designed for tactical use as part of a battle for basically conventional warfare tactics.
+
+So blowing up, you know, blowing up an armor division or taking out a wing of bombers, or maybe even destroying an airfield. Strategic nuclear weapons are used to deter mass nuclear exchange and to engage in, you know, strategic level annihilation of cities and the like. The United States disassembled all of our tactical nuclear weapons a long time ago.
+
+We decided that our war doctrine did not allow for tactical nukes. Nukes are only something you use at a strategic level to deter other people from using them against you. That is not the case for Russia.
+
+Russia has tactical nuclear weapons. If they train to use them, they, it is part of their doctrine that they will use them in conventional conflict. And they are like, even just having that in their doctrine shows that to some degree, they are willing to bet that the United States and nobody else would respond with strategic nuclear weapons in response to use of a tactical nuclear weapon.
+
+And if some people say, Oh, even saying that they'll use a nuke is akin to supporting Russia and saying we shouldn't support Ukraine. I'm not saying that at all. I think actually appeasement has the longer that they're actually the greater risk.
+
+I mean, if you can show, if you show to the world that if you show to a world that even the threat of small scale, tactical nuclear weapons is enough to deter any kind of intervention in any kind of, in any kind of conventional warfare, you actually hugely incentivize the nations of the world to obtain their own tactical nuclear weapons. Like you, you, you don't really actually want the calculus to tip that way where countries look and say, wow, all Russia had to do is threatened to use their tactical nukes. And then they were allowed to operate with impunity in a conventional invasion.
+
+And nobody was willing to stop to do anything about it or even stop buying their exports. Like that, that's the, that, that, that, that would be a very, very bad precedent to set even beyond this war. And so for that reason, I, I think this is a little contrarian and not everyone agrees, but I think that the odds of a tactical nuclear weapon are very high.
+
+It will not be used on the United States. It will not be used on a NATO ally. It'll probably be a tactical nuclear weapon used to strike some inarguably military target.
+
+Like it probably, they're not going to, they're not going to nuke Kyiv. It's much more likely that it would be a port or a, you know, or, or an air installation or, or something like that. And I, the reason I like to talk about this is I want people to get comfortable with this because there's this idea that, you know, you use, you use a, you use, use a nuclear weapon and all of a sudden you're in world war three.
+
+I think that's actually probably the wrong, the wrong way to look at it because if you do that, you're tacitly admitting that tactical nuclear weapons deserve a strategic nuclear level response. And if you set that up as you know, the, the nice lubricated path, we all slide down. Yeah.
+
+Things can get really bad. This sounds like selfish and trite, but I think I, it's important to me and I bet you it's important to a lot of people. What does that mean for me?
+
+A wealthy American with money in the stock market who lives in a nice life? Like, does that mean that like, inflation is going to get huge? Does that mean that my investments are going to go down?
+
+Does that mean that like people I know, I don't know anyone in Ukraine, so I care about them, but like, does that mean people I know are going to get hurt? What does that mean for me? It's a fair question.
+
+You know, I'm in a different position. I know, I know people who are from Ukraine. I know people who are in Ukraine.
+
+So for me, it also, it does get a little bit personal. And we have employees here who are, who, who are deeply, deeply, you know, involved in one way or another with the people of Ukraine. But I think mostly you need to boil it now, not to necessarily Ukraine specific question, but the broader geopolitical question is the United States, the world police.
+
+Are we going to help our allies and to what extent? And I'm not saying that that is really means that we need to throw ourselves into world war three over every conflict, but we do need to very carefully weigh like what, what will happen in Taiwan if we completely pulled out? Like there's a million ways to tackle this.
+
+So I'm not trying to set up a straw man here, but I'll throw out one that is actually very popular with certain politicians. They say we should completely pull out. We should not engage.
+
+This is not our problem. Let the, let the ex Soviet guys duke it out. They can do whatever they want.
+
+Well, one there, the first issue is, uh, our European allies are going to be in pretty bad shape. If they have Russia right on their border, able to move deep, deep, deep into Europe without any kind of buffer. More importantly, what do you think China's going to do if they see that that's the United States attitude?
+
+They say, wow, like there, there, there is a price. They will not pay. Uh, there is, there is a certain level they are not willing to get engaged at.
+
+If we can raise the cost above that level, then they will make the short-term decision to not get engaged. That's very dangerous for Taiwan, which is in turn, very dangerous for semiconductors and for our entire economy. Like I, if Taiwan actually gets invaded by China, you could see a 30 or 40% drop in the stock market beyond what we've already seen.
+
+Like that, that's not even, that's not even a, that's not even a, a crazy assumption. That's like a pretty well backed up by all of the, the boring establishment economics guys, uh, prediction. So that, that, that, the way that I see it is your question.
+
+Why should I care? Because if we want to maintain credibility as a player that can deter wars, not just win wars, then we have to take actions that maintain our credibility there. If we, if, if we were to say the ultimate version of the screws, you're on your own world, we're all, and we're going to do our own thing.
+
+Uh, we're going to get screwed by that very, very quickly. And so there's something between zero engagement and, you know, D-Day 2.0 that we have to do. This is great.
+
+Uh, Palmer, where can people find you if they want to go work at Andrew or, you know, read more of your stuff, your blog or Twitter, where, where should people follow you or find you if they like this? Oh man. Well, my, my, my, my, my handle, my handle across social media is Palmer tech.
+
+Um, but on, you can find me on Twitter under the handle Palmer lucky. Uh, there's my website, Palmer lucky.com the number one Palmer lucky blog on the internet. And there is also a wordpress site.
+
+I'm coming for you. Oh, what? Hey, mine's wordpress too.
+
+Great tool. Yeah. You tell me just tell me about Palmer lucky 69.com.
+
+He's is this new project he's working on. Yeah. It's got a lot of promise.
+
+Oh man. I got to check this out. That sounds right up my alley.
+
+Oh, wait, wait. I forgot. Do you want to rip a WWE style promo at Jason Calacanis who's coming after you?
+
+He's challenging you to a fight. Why would you challenge a guy who builds weapons for a living to a fight? I don't understand this, but if you want to rip a WWE style promo, this is, this is the place.
+
+There are a hundred thousand entrepreneurs ready to back you here. If you can get them on your side. I mean, maybe this is because I all like, look, I'm, I don't know if you can tell, like, I'm actually a pretty big guy.
+
+Like I weigh about 250 pounds. I'm six feet tall. Like I, it's kind of, I understand the mechanics of fighting well enough.
+
+And I've, I've done enough of it recreationally to understand that it's unlikely that somebody who's like, you know, five foot five and 140 pounds is gonna, is good. It's gonna have a, a good shot. But I, the thing is, I don't, I'm not, I'm not a, I'm not a physical violence kind of guy.
+
+I, I think it's weird to be like, oh yeah, you, you, you, you, you, you, you don't like me. Well, I could beat you in, in hand to hand combat. It's like, well, I mean, maybe, but like your ideas are still bad.
+
+It's just, it doesn't, it's one doesn't, one doesn't solve the other. So no, I, unfortunately I don't think I'll be throwing, I don't think I'll be throwing down the gauntlet beyond, beyond noting that just, you know, statistically speaking, you know, if, if you just look at the fights between people of, of, of one bulk versus another, uh, yeah, there's, there's a clear trend. Yeah.
+
+Is this the most Silicon Valley call out ever? I am, I know the mechanics of fighting. I remember no K.
+
+Physics is on my side, bitch. But, uh, yeah, you know, I mean, and for, and for people who are listening and don't know, the very short version is Jason, Jason Calacanis said a bunch of really awful stuff about me for, for years, starting back in 2016. What, you know, when he said that I'm a terrible person, that I don't care about my family or my, I think he said Palmer lucky is a complete moron who doesn't care about his employees or his families or his friends.
+
+Uh, and then I'll, you know, Palmer's an idiot. He's a moron. Zuckerberg should fire him, get rid of him.
+
+What a useless waste of space. Then I get fired. He celebrates it over and over.
+
+Oh man, I'm so glad they fired Palmer. What a terrible loser, et cetera, et cetera. Anyway, then he just didn't, then he just didn't talk to me for years, never reached out.
+
+And then he invites me to go speak it, uh, on his podcast and then at his conference. So I went there and I, I basically just told people, I'm like, I can't believe Jason invited me. It's only because I've clawed my way back to having a second unicorn before the age of 30.
+
+Like this guy treated me like total garbage for years. He's never apologized. He spread a bunch of lies, even insult society spread a bunch of lies about me.
+
+And then, uh, at, at the con and I say, Hey, look at all this shit. He said about me. Like, this is like a slide deck.
+
+It was amazing. Yeah. And, and then, uh, and I did that at the end of my talk about, you know, basically the, the future of conflict and particularly the war in Ukraine.
+
+And then, uh, at the conference, he said that he was sorry if he said anything that offended me, but then when he put my video up, he said, actually, I take it back. Everything that I said was accurate. And I don't regret exactly what I said about him.
+
+Um, and I was, and so I, now people, people keep hitting me up. Be like, you guys need to bury the hatchet, you know, meet in the middle. I'm like, I didn't do anything to like you, you can't meet them.
+
+Like you're right. Maybe, maybe I don't care about my family, but you know, we can admit, I care about my friends. Let's meet in the middle.
+
+It's like, no, no, that's not going to happen. Uh, anyway, so now, now Jason's saying that he can, that he can beat me up, uh, on any, uh, and, and, and, you know, look, maybe he could, but the odds don't seem in his favor. I do think he trains jujitsu.
+
+So, you know, he does have that going for him. If I recall correctly. Hey, you know, I, I, I did, I did karate one time when I was a kid.
+
+But eventually, but eventually you get old. Well now it's, it's been wild for me. Cause I mean, my whole career, I've been, uh, my, my, my whole career, I've been a whiz kid.
+
+You know, it's like the Palmer lucky value proposition is wow. Look at that guy. He's improbably successful given his age.
+
+And now it's just look at Palmer. He's yeah. He's successful, I guess.
+
+30. Yeah. I wouldn't really want to compete with you.
+
+I've been dealing with the psychological impact of that. I wouldn't really want to compete with you on anything. And also, uh, you know, I find Jason very entertaining.
+
+I like, uh, I don't know him personally very well or anything, but, but you know, he's entertaining, but he also, I think was totally wrong in this, uh, circumstance. I remember when I first heard him say all that shit, I looked it up. I was like, man, Palmer must've, well actually called you Parker lucky.
+
+I was like, Oh man, this Parker lucky. That's right. This plucky little guy must've done something really messed up.
+
+And then I saw what was actually done and I saw the coverage and I was like, Oh, he, he donated $10,000 to, you know, like this thing or whatever. And you know, you were right. Whatever.
+
+But Jason was out there saying he's a Palmer's paying Trump supporters. Extreme terror trolling or something. Yeah.
+
+Yeah. Yeah. Yeah.
+
+Extreme terror trolling. He said, not quite violent, but close to it. And he's posting anti-Semitic memes and misogynistic hate attacks.
+
+It's like, dude, it was $9,000 to a billboard. Like you've, you've given a heck of a lot more to, to spice your political stuff than that. A billboard, you know, that's the world we live in.
+
+You know, in a political cause or a political donation is nothing like, you know, I think that's one of the big, one of the big hypocrisies. It's not as mainstream as you can get. Yeah.
+
+One of the big hypocrisy of Silicon Valley is like, it's all about open-mindedness unless you disagree with us, unless you, unless you believe in the thing I don't agree with, then how dare you believe that, you know, how dare you support that candidate I don't like, how dare you, you know, that half the country, you know, votes for whatever. It's one of the great hypocrisies. Well, it's so, it's so, it's so foreign to me too.
+
+Cause I mean, like one of my best friends is a socialist and like we had, we very, we, we strongly disagree politically, but like running Oculus, I was never, I, I, like I had my political beliefs, but they were like 1% of my time and thinking 99% of it was on VR and my company. And it's, it's, it's, it's actually very funny where like I, there was a story recently said, you know, Palmer Palmer lucky, you know, a very outspoken Republican. I'm like, I mean, I've literally tweeted about politics two times in eight years.
+
+Like, you know, I'm not outspoken by any means, but to them, it means like, oh, there was this story years ago where he privately donated, not using his name. And that means he's an outspoken Republican. And, you know, imagine if people like Mark Zuckerberg outspoken Democrat does X like, nobody would ever do that.
+
+The autocorrect would be like, you must've made a mistake. The sentence doesn't get typed. Yeah.
+
+But you know, I mean that, but that, that's the best part about Anderall is that, you know, like I have my political beliefs, like our CEO, Brian Schimpf. Yeah. He's, he's very much a Democrat.
+
+And we have a huge mix of people at Anderall across the entire political spectrum. And what we've done is said, listen, we, we might not agree on everything, but we agree on the importance of national security. We agree that the United States needs to have the tools that deter Russia, China, and other aggressors from getting into fights with our partners and allies.
+
+And we agree that we can save taxpayers hundreds of billions of dollars a year while we make tens of billions of dollars a year. And if we agree on those things, we need to put aside the differences and you'll focus on what's, what's the same. And I think that's been a really healthy company, company culture.
+
+Like a lot of other companies, you know, they'll, they'll, they want to take one political side of the other. And we've been very clear. No, we are not a politically oriented company.
+
+We are a mission oriented company. And to the extent, like if a Republican does something that's bad for our mission, we're going to push back on it. If a Democrat does something that is bad for our mission, we're going to push back on it, but it needs to be about our ability to, you know, defend the West, not our, you know, our personal opinions on how the country should be run.
+
+He's like, so that's, that's, I, I highly encourage people to set that, to set that tone when they're starting their own companies. If you want to be able to attract people from all over the country, all over the world of all different political persuasions. Cause if you pick a side, you're, you're alienating huge swaths of people, not just the people who disagree with you, but also people who don't want to be at a company that's partisan and might not even care one way or the other.
+
+I know there's a lot of people here like, look, I don't, I don't even really have a strong political set of beliefs. But I do know I don't want to work in a place where that's the thing that drives all our decisions. You're like, oh, we got the office socialists just walking around giving away snacks.
+
+It's awesome. It's great. You need a diverse workplace like this.
+
+Dude, you're awesome. That's right. I'm so pumped that you came on.
+
+This is, this is, this has been amazing. I would love you to come on again. Well, wait, I have to bring up one more thing.
+
+I have to bring up one more thing. So I get a chance to bring something up. Fine.
+
+Go. We got, we got to talk about the tweet you made where you said that there's no way that there's any billionaires out there that actually fly coach and don't fly. Oh, yes.
+
+Good. You have got a good memory. Do you, do you fly coach?
+
+Oh, you, you do fly coach. You said that you're an idiot. What are you doing?
+
+J Cal was right. I mean, so, so I, I, the reason I wanted to chat about it is because yeah, I think I responded and I told you like, Hey, you're wrong. Like I, I actually do.
+
+I don't fly private and I do fly coach. Uh, for me, it's, it's a, it's a, it's a reason thing where, uh, we, we, with exceptions for long term, like long, long international travel, we only cover coach travel for our employees. It's like, look, it's only a few hours.
+
+Like it is a very bad use of company money for us to be buying business or first class for people because we have so much travel at the company. We could easily spend a very serious fraction of our, of our, uh, of our resources on just people traveling in slightly better seats. And so, and it's especially, especially bad when it's like, Oh, am I really going to pay you to like, you know, fly business class for three hours to a place where you're then going to like sweat it out in the desert for, for a week.
+
+Like, you know, it's, it's only like, you know, it's, it's only like, you know, so you and your coach seats better than the desert. You and your wife or your girlfriend or whatever, if you're going to Europe, you're going to fly coach. Even when I use my own money, I fly coach and people say, well, why don't you just fly first class?
+
+Why don't you fly business? And here's why, because I expect my employees to fly coach. And even like, yes, I have a lot of money, but it's, if I don't also do it, it feels like I'm out of touch or I don't know what it's like, or, you know, Oh, it's easy for you to say that we should fly coach because you don't have to do it because you happen to have a bunch of money.
+
+And so for, for me, a lot of it is setting example. Like, look, it's not actually that bad. I am willing to do it even when I pay for my own travel, uh, because that's, I think it's just not that bad.
+
+And so don't you have like people who want to like kill you or like hurt you? I mean, aren't you like, uh, I mean, like, like you've got the whole anti-Trump crowd who sees you and they're like, go after yourself. And then now you're like dealing with Lockheed Martin and stuff.
+
+Surely they want to like kneecap you. You're got your, your, I don't know what your status is on China. All in podcast fanatics.
+
+Yeah. You got Jason Calcadus is going to come put you in a noogie. Like something's going to happen.
+
+You know what I mean? Like surely, like there's like some type of security risk. Also, I, maybe you have life insurance or something like that.
+
+If they're going to insure you, I'd be like, dog, you're doing your, you got to have this, a security person with you, or you got to like have someone with you. Like surely there's some type of security risk where you got to think like beyond just like, Hey guys, I'm in solitude with you on this flight. Like I get it.
+
+Like, I mean, surely there's some type of like, you're totally, you're, you're totally, you're totally right. And I, I mean, it depends on the trip where the trip is and what I'm doing. And like, I, I, I make sure to keep myself safe.
+
+And I probably don't want to get into the specifics because, you know, like you said, there's people out there who, who are, who are not fans of me. And like, you, you mentioned, you know, Jason Calacadus and the Trump people, but like, what about the Mexican cartels that we've cost hundreds of millions of dollars in drug trade? What about, you know, all the people who have been foiled in attacks on us military forces because of our stuff.
+
+And you know, like there's, there's actually a long list of people who are more, who are scarier than, than Jason Calacadus, if you can believe it. But look, you, you, you're right that to some degree that that's a worry, but I also think that in general, if someone's going to come to kill me, it's probably going to be a place where they know I'm going to be. And there's, there's, there's actually much higher, like to me, the high risk place is actually not on a, on a flight in the secure zone.
+
+Yeah. It's not on Southwest in the secure zone of an airport. Like there's actually, it's actually probably more likely to be the restaurants I go to too much.
+
+But I, anyway, I guess I want to explain, that's why I do it. If I'm going to ask my employees to do it, I need to do it too. Even when it's my own money, even when it's my own cost, because otherwise you are like, you, you become an out.
+
+It's not just that I appear out of touch. I would literally be out of touch. Maybe one day coach gets so bad that I tell everyone guys, you know what?
+
+I hear you. We're all going business now. But I think, I think today is not that day.
+
+You're crazy. I've agreed with everything you've said, except for that you are crazy. Yeah.
+
+No, I'm actually glad you said this. Cause I was feeling like, man, this guy's great. He's funny.
+
+He's smart. He's just really big thinker. I'm glad you have something you're totally wrong about.
+
+It makes me feel so much better at this interview. That's a great service you did for everybody here by having this absolute nonsense policy for yourself. You know, like if I go get you, if I'm the guy who flies to go get that billion dollar contract and I'm flying back, you know, in the, in the sea zone of Southwest, I'm writing the next day at work.
+
+I'm telling you, I love the, I love the back of the plane on the window. Nobody, nobody bothers you. You can get on, you can let everybody get off the plane before you do.
+
+You don't have to fight anybody. You just, you know, let everyone, I gotta throw this in. My grandpa was a pilot for United Airlines for over 40 years.
+
+And so I also grew up around commercial airlines. And so this might be another thing. Like to me, there is a certain romanticism to like mass market, mass available air travel.
+
+Like what an incredible thing. And we did it. America did it.
+
+We figured out how to make it economically viable and we build everyone else's airplanes. Like it is an American thing. And so I, even when you're on everyone else's planes, they're mostly made by Americans and the ones that are made by Europeans were made with American technology.
+
+So I, I, I also like that. Some guys are in defeat. I think feet are gross.
+
+You're in the coach. I think coach is gross. Well, yeah, to each their own.
+
+And I think we'll leave it at that. Agree to disagree. Each their own.
+
+No, look, I, uh, I disagree with that opinion, but I respect it like hell. And I respect you. You're, you're the best man.
+
+I would love for you to come on if you want, like in a few weeks, a few months, whenever, and talk some more about ideas. You're a, I'm a fan of yours. So this feels really cool that you're here.
+
+Maybe we. Thank you. I appreciate that.
+
+This is, this has been a lot of fun. We covered some good ground today. Yes.
+
+And maybe we've suckered you into becoming friends with us. So if you ever want, you could DS, DM us on Twitter. We come up homies.
+
+Who knows? I don't know. Maybe we'll invite each other over and hang out and you can show us a thing or two.
+
+I don't know. We'll see what happens, but, uh, this has been awesome. Come on, come on, come on down anytime.
+
+All right. Sweet. Thank you so much.
+
+All right. See you guys later. Bye.

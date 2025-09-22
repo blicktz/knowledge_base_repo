@@ -11,8 +11,7 @@ from datetime import datetime
 from langchain.schema import BaseMessage, HumanMessage, SystemMessage
 from langchain.prompts import PromptTemplate
 from langchain.output_parsers import PydanticOutputParser, OutputFixingParser
-from langchain_openai import ChatOpenAI
-from langchain_anthropic import ChatAnthropic
+from langchain_litellm import ChatLiteLLM
 from tqdm import tqdm
 
 from ..data.models.persona_constitution import (
@@ -53,33 +52,27 @@ class PersonaExtractor:
         self.extraction_start_time = None
         
     def _init_llm(self):
-        """Initialize the LLM based on configuration"""
+        """Initialize the LLM using ChatLiteLLM for OpenRouter access"""
         llm_config = self.settings.get_llm_config()
         provider = self.settings.llm.provider
+        model = llm_config.get('model', 'openrouter/openai/gpt-5')
         
         try:
-            if provider == "openrouter" or provider == "openai":
-                self.llm = ChatOpenAI(
-                    openai_api_key=llm_config.get('api_key'),
-                    openai_api_base=llm_config.get('base_url', 'https://openrouter.ai/api/v1'),
-                    model_name=llm_config.get('model', 'gpt-4'),
-                    temperature=llm_config.get('temperature', 0.1),
-                    max_tokens=llm_config.get('max_tokens', 4000),
-                    timeout=llm_config.get('timeout', 60),
-                    max_retries=llm_config.get('num_retries', 3)
-                )
-            elif provider == "anthropic":
-                self.llm = ChatAnthropic(
-                    anthropic_api_key=llm_config.get('api_key'),
-                    model=llm_config.get('model', 'claude-3-sonnet-20240229'),
-                    temperature=llm_config.get('temperature', 0.1),
-                    max_tokens=llm_config.get('max_tokens', 4000),
-                    timeout=llm_config.get('timeout', 60)
-                )
-            else:
-                raise ValueError(f"Unsupported LLM provider: {provider}")
+            # Use ChatLiteLLM for all providers, with OpenRouter support
+            # GPT-5 specific requirements: temperature=1.0, max_tokens>=16
+            temperature = llm_config.get('temperature', 1.0)
+            max_tokens = max(llm_config.get('max_tokens', 4000), 16)  # Ensure minimum 16 tokens
             
-            self.logger.info(f"Initialized LLM: {provider} - {llm_config.get('model')}")
+            self.llm = ChatLiteLLM(
+                model=model,
+                openrouter_api_key=llm_config.get('api_key'),
+                temperature=temperature,
+                max_tokens=max_tokens,
+                timeout=llm_config.get('timeout', 60),
+                max_retries=llm_config.get('num_retries', 3)
+            )
+            
+            self.logger.info(f"Initialized LLM: {provider} - {model}")
             
         except Exception as e:
             self.logger.error(f"Failed to initialize LLM: {e}")

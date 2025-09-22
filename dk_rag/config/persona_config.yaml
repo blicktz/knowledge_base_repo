@@ -7,8 +7,9 @@ llm:
     api_key: "${OPENROUTER_API_KEY}"
     model: "openrouter/openai/gpt-5"
     fallback_models:
+      - "openrouter/openai/gpt-5-mini"
       - "openrouter/google/gemini-2.5-pro"
-    temperature: 0.1  # Low temperature for consistent extractions
+    temperature: 1.0  # GPT-5 only supports temperature=1
     max_tokens: 4000
     timeout: 60
     num_retries: 3
@@ -130,6 +131,22 @@ logging:
       max_bytes: 10485760  # 10MB
       backup_count: 5
       
+# Device Configuration for GPU Acceleration
+device:
+  # Device preference: auto, mps, cuda, cpu
+  # auto = automatically detect best available device
+  preferred_device: "auto"
+  
+  # Force CPU for specific libraries (debugging)
+  force_cpu:
+    spacy: false
+    sentence_transformers: false
+    
+  # Memory management
+  memory_optimization:
+    clear_cache_between_operations: true
+    batch_processing: true
+
 # Performance Configuration
 performance:
   max_workers: 4

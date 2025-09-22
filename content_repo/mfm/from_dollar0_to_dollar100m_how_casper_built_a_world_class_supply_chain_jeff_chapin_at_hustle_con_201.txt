@@ -1,0 +1,243 @@
+Just to raise a hand, how many people have heard of Casper? Hey, that's pretty good. So for the ones that haven't, I'll give a little explanation.
+
+For those that have, this is probably how you know us. As a fairly well-marketed company focused on sleep, we sell one single mattress, we sell one pillow, we sell one set of sheets. I'm one of the co-founders.
+
+There were five of us. Background in product design and development, which I'll get into in a sec. I spend a lot of my time in places much more like this than in the fancier world of marketing.
+
+So this is a factory where we manufacture the covers. It's a cut and sew facility in South Carolina. I've spent a lot of time here and in other factories.
+
+And today, I want to talk about eight things that I wish I knew about building a supply chain. So you'll see in a sec that my background is not in supply chain or operations. I don't know how many folks in the audience think they'll start a company or have started a company that involves any physical object.
+
+But building a solid operations platform is critically important. So, quick background. I actually studied civil engineering at Princeton as an undergrad, but I'm old enough that I didn't have a digital camera.
+
+So I don't have photos from that time. So I am technical, but I don't know how to program. So I'm maybe a halfway fit for this presentation.
+
+I went on and studied product design, which is a mixture of art and mechanical engineering at Stanford. From there, I moved to IDEO for a decade. Did a lot of work in consumer products, a lot of work in medical devices.
+
+I left IDEO. I started my own company called CommonMade. I spent a couple years working in East Africa and Southeast Asia in clean water and sanitation, working with World Bank and Gates Foundation.
+
+Oddly enough, through that world, I came across a company. Sorry, this thing is finicky. Called Waterwalla, which was doing clean water access in a slum in Mumbai.
+
+It was started by the guy in the back left, Neil Parikh, who's one of the co-founders of Casper. He'll be featured, bless him, later on in the presentation. These other guys were all friends in New York.
+
+I only knew Neil. And for folks that were in the New York, who are familiar with the New York startup scene, a lot more of the consumer focus, single vertical branded companies, Warby, Parker, Bonobos, come out of New York, not out of San Francisco, and there's some out of LA. So they were working together, doing different startups.
+
+And... All right. And notice a couple things.
+
+One, amongst their peers and the people in the incubator they were working within, that people weren't sleeping very much. Statistics are kind of sad. In 1942, we were amidst the World War, and people slept more than they do now, when in the grand scheme of civilization, things are really peaceful.
+
+There's also this kind of stuff, where people just... I mean, the fact that you have your child laying in bed reading an iPad is not good for their sleep. It's not good for our sleep when we do the same thing.
+
+And so that's the general thing which Casper was started to address. We needed to start somewhere by selling a product to get into the sleep space. And we started with the foundational product.
+
+And from a consumer experience, purchasing a mattress is one of the worst things you could imagine. In terms of what you get for the dollar, the actual shopping experience, there's way too much choice. You're ill-informed to actually know what you should be buying, and if you're getting a good product for your money.
+
+So we boiled it all down through a process of product development iteration, testing many different types of mattresses on the market, developing our own, and had the idea that we would sell a single product to the market. We needed to convince somebody to fund us to start this company, because it's a very expensive product, and you'll see it caused us some problems when you want to build inventory when you're starting a company. It's hundreds of thousands of dollars to millions of dollars just to build initial inventory.
+
+So as we were doing our fundraising round, we actually gave away a lot of beds to venture capitalists to try to get them to give us money. And nobody would give us money until they could sleep on our product. So in the picture here, we eventually led our Ben Lehrer and Hippo Lehrer venture partners, led our seed round.
+
+And the right picture here is the mattress that Ben Lehrer had in his apartment. And the left is our Philip, our CEO, and Luke, our CMO, delivering our mattress to his house. So we had to go in when he wasn't there with his personal assistant, put in the new mattress, take out his old mattress, and actually store the old mattress until he was convinced that he wanted to keep the new one.
+
+And he still sleeps on that prototype to this day, which is amazing. And I'm pretty sure it was, he has a child now, and it was the first child ever conceived on a Casper. So this is the product we sell.
+
+My talk's not meant to be about product design, so I won't talk much about it, but just so you get a sense for those who haven't experienced it or aren't familiar with it, that mattress gets compressed and rolled up and goes in a box. It's about 20 inches by 20 inches by 40 inches. It's delivered via UPS in some cities.
+
+It's delivered via courier. This is a bike courier in New York delivering it. You get it to your house, you unpack it, and then you instantly turn into a stud.
+
+That's our sales message. So just to recap, we started in April, we launched to the public in April 2014, and it was amazingly successful from day one. We did a million dollars in revenue in our first month.
+
+We've raised 70 million dollars through a Series B. In 2015, we did over 100 million dollars in revenue. We're at about 150 people.
+
+We have our headquarters in New York. We have a design and supply chain office here in San Francisco. We have an office in LA and an office in Berlin.
+
+Why were we successful? Two things. I think one, three things.
+
+One, I think the product's great, but I'm biased because I'm the one that designed it. We've had really creative marketing. Folks may have seen some of this marketing on the BART.
+
+This one's my favorite. It was sleep like a narcissist. You're dreaming of yourself.
+
+Dreaming of yourself. And then this, which just blows my mind. There's an incredible amount of social sharing of the Casper mattress.
+
+And the unboxing experience online. There's actually a video associated with this, which I won't show. But we had a problem.
+
+We grew so fast that we couldn't meet our sales demands. And everyone says it's a good problem to have, but it's an incredibly stressful problem. So to put numbers to it, we sold 139 beds on our first day.
+
+We had 100 beds in stock. Beds have a four to eight week lead time to get made. We reached 35 days of backlog by October.
+
+So if you bought, we promised in our marketing message that you would get a mattress the next day or the day after. Some people had to wait five, six weeks to get a mattress. We actually stayed in backlog for 18 months.
+
+And we've only been around for 25 months. And still today on some individual products we run in the backlog. This is a huge problem.
+
+It actually slowed our growth. We had to pull back on our spend in order to allow our supply chain to grow. So I think we nailed product, we nailed marketing, we nailed brand, we nailed the value proposition.
+
+But we totally missed on supply chain. And it goes back to what our original team was. There was five co-founders.
+
+There's a large co-founding team. Our first employees were in marketing and consumer support. We did not hire an operations person for a year.
+
+So we went a year with just me and Neil running our supply chain. And we didn't know what we were doing. So for those that have an ops or supply chain background, hopefully this will be obvious.
+
+But I'm just going to run through eight stories and eight quick learnings and some things that if I were to do it again, I would hopefully do better. And some are low level points, some are high level points. First one, first story.
+
+When we went to what ended up being our main mattress supplier in Georgia, Neil and I flew down there. We stayed, we shared a room and a days in, that was $30 a night. We went to rent a car online.
+
+We could have rented a Chevy Aveo for $40 or through Sixth, which is a German rental car, company. We could have rented a BMW for $40. Clearly we rented the BMW.
+
+But then we pulled up into the factory driving a really nice BMW, which is a terrible thing to do when you're about to go into a negotiation about what you want to pay for a product. On the same trip to the Southeast, we showed up at the sewing factory, which I showed before. And Neil's wearing that shirt.
+
+Amongst people that are working their butts off to get $12 an hour sewing, they thought it was funny, but it was not a great first impression. So, my advice, be deliberate in how you dress, how you arrive, and what you talk about. We all have very great, indulgent, luxurious lives.
+
+The people you work with on a supply chain probably don't get $15 martinis. They probably don't talk about going bowling and ping pong indoors and indoor mini golf. So when you're at a supply chain site or you have people in your supply chain visiting you, remember that we live a very different life than most of these people that would be supplying products to us.
+
+Some of these are more serious. Everyone will say they can do everything, but it's not true. This is the factory where we pulled in with the BMW.
+
+They make, from our opinion, based on having visited tons and tons of foam factories in the US and overseas, probably the best quality raw material that we can find. They're really good at it. They also said that they could fabricate mattresses.
+
+It turns out they had never really done it before, but we were in a rush to launch. We were burning money. And it turned out that we went through a huge amount of pain getting them up to speed to learn how to do this step in the process, which is convert this raw foam as it comes off of a production line into a finished mattress.
+
+It's a really simple process. You cut the pieces to size and you glue them together and you put a cover on it. It shouldn't be hard, but it's very hard.
+
+So, if you're going to work in a manufacturing environment and hire a company, one of the things we learned is that you need to go step by step and make sure that they can actually, and already are actually doing everything that you're asking them to do. Every supplier, or almost every supplier, will tell you they can do far more than they can actually do. And you need to figure out what they're actually really good at, what their core competency is versus like what yours are, and if you need to start bringing together multiple suppliers.
+
+This supplier, we also relied on them to do e-commerce distribution. So, moving those large mattresses to like a third party logistics firm, which is where most e-commerce products are distributed from, is very expensive because they're so large. You can only fit, if we were going to sell shirts, I could fit thousands in a truck.
+
+We can only fit 200 beds in a truck. So, it's very expensive to move them from the factory to a distribution center just to get shipped again. So, we had them do it.
+
+We estimate that they cost us around 30 to 40 thousand dollars a month in lost product or misshipped product. Because we were relying on them to do something which they were not good at doing. So, when you're on the, if you're on the factory floor, there's a couple basic things to look for.
+
+Standard operating procedures, force them to bring them out and show them to you. QA checks, do they have stations where they're monitoring quality? Do they actually have dedicated staff that's focused on continuous improvement and quality?
+
+If you don't see people walking the floor doing quality work, it means they're not doing it at all in the factory. Inventory management, tools and methods. I think, depending on the industry you're in, they'll have different levels of sophistication of how they track the raw materials and the finished goods.
+
+We consign covers and a couple, and boxes and a couple products that we purchase and give to our suppliers. They maintain, some of them maintain records through Excel spreadsheets. Which is terrible because we have no access to their Excel spreadsheets.
+
+They're not currently updated. So, finding a supplier that has a good ERP, so an enterprise resource tool, is important from day one. And a small last thing, just as we should be careful what we dress like, look at how they dress.
+
+Look at how their floor workers dress. There's a, in our experience, a really strong correlation between how neat the people are and the quality of work they produce. So, people, if the management gives everybody a polo shirt or a T-shirt that matches and people look clean, the odds are that the management cares more about the quality of what they're going to produce.
+
+Join good company. So, there's a step in the manufacturing process for our product where you apply a water-based glue to a layer of foam, and then you put another layer of foam on top of it. If you put too little or too much, it causes problems.
+
+And so, there's a small step you see going on here where they put a sample piece, like every 10 or 20 or 30 beds, they put a small piece of foam through and you weigh it before and you weigh it after. And you weigh the difference and it tells you what the density of glue or the concentration of glue you're putting on the mattresses. We have worked with factories that have done this and we've worked with factories that haven't.
+
+And one of the things we saw is that, particularly for small companies like us in the grand scheme, still small, you guys, small companies, find suppliers that are working for very reputable, established, big companies. In our industry, the very best is IKEA. If we find a company that's working for IKEA, we know that all of these things which have caused us problems before are taken care of.
+
+So, when you show up at a new factory, ask for their list of clients. If they're working for somebody that you think is reputable, so they get some flack like IKEA, Nike, Nokia, they're good. Generally, European companies are better than American companies in terms of what they force their supply chain to do.
+
+So, get the list of clients. Ask for testing and inspection criteria. So, as a new company, you're going to have to create a lot of processes and a lot of documents.
+
+If you can just borrow and adapt stuff that large companies have already created, you'll be in a much better place. So, they won't always share this with you because I don't think, like, IKEA would have been happy that our supplier shared their test document with us, but our supplier did do that. Same with product specifications.
+
+Same with product specifications. Same with product specifications. Writing a solid product specification document takes a huge amount of work.
+
+And that defines what you're actually going to pay the supplier to make. So, you want to make sure that it's of, like, utmost thoroughness and detail. Getting a good template to start with is hugely valuable.
+
+If you want to be green, start green. So, the reason I bring this up is we as a company, we found that, like, selling an ecologic story is not very marketable. It doesn't make you sell more product, but it's important to us.
+
+So, what we've done is, on the quiet side, gotten certification around components. So, if we look at the raw materials that go in, any off-gassing that comes off the product, the harvesting of any of those raw materials, we look for certification around those individual things. We ran into a little bit of problem because we'll be expanding into Europe.
+
+And in Europe, particularly in the German-speaking countries, finished product and ecological certification is far more important to the consumer. So, we were like, okay, we're good. We have all the certifications for, this is specifically for a pillow.
+
+So, this, I didn't reference the picture, but it's a weaving machine, weaving cotton shells for pillows. We thought we would be good, and so we thought we could use the same supply chain to supply that product for Germany. The problem is, the certification required for Germany requires certified finished product and certified, the factory that produces the finished product has to be certified.
+
+So, we're in the process of onboarding a totally new factory and totally new supply chain just to make a product for Germany, because we didn't think ahead enough to get this whole thing right for that market. So, get finished goods certifications, get factory level certifications. Again, follow industry leaders.
+
+If you follow a Nike or an IKEA or Nokia into a factory, the odds are that they're already going to be compliant with ecological or environmental certifications and restrictions. And then, we're going through this right now, some companies have done it. Doing a B Corp assessment or using it as a tool when you're starting up is a, for those that don't know, it's a benefit corporation.
+
+It's pretty self-explanatory on their website, but it gives you a tool around community conditions, social conditions, environmental conditions. It's a really nice checklist to start with. Suppliers are not your friends.
+
+This one's hard to remember. I hate to pick on Neil, but this is Neil again. I think we were drunk in a basement bar in Arkansas.
+
+So, my advice to you on this with suppliers, buy your own dinner, don't get drunk, and if you're going to Asia, don't go to karaoke. Because it's not really karaoke like it is back home. And for the guys in the audience, the girls there don't actually think you're attractive.
+
+So, there's a couple things here. One, and I'm going to jump ahead one slide, then go back. Read this book if you haven't.
+
+This explains all the reasons why you should do none of these things. But unless you have spent 10 years in sales or a really gifted natural salesman, you are definitely outgunned by your supplier salespeople. They use all the tools and they're innate to them.
+
+They love closing the deal. They use all the tools at disposal to make you think that they're your friend. I got invited to Las Vegas for free.
+
+They're going to put me up in a suite in the Cosmopolitan. One guy invited me to his family's house on the coast of Georgia to meet his wife. He wanted to go backpacking.
+
+And it's, I don't mean to be negative, but they've all disappeared when we stopped doing business with them. So, they're not real friendships. They're friendships of convenience for the supplier.
+
+And it's really hard when a supplier is willing to spend 100 bucks or 200 bucks on dinner for you to not take it. My feeling is you're better off buying them dinner because they'll then become indebted to you. Vendor agreements.
+
+Again, this is like a really sticky legal document. The mattress shown on the left is our mattress made in a factory. The mattress shown on the right is a competitor mattress.
+
+When we started, we were like, in our opinion, the first branded e-commerce company to enter the space. By last count, there's 41 companies doing what Casper does here domestically. There's some in China, some in India, some in Mexico, some in Australia.
+
+They pop up all the time. It's super frustrating as we've worked with our suppliers to improve their processes, to see competitor, small competitor companies come in and gather the knowledge that we've helped them build and we've built ourselves. So, a vendor agreement for people that don't know is a legal contract between your company and your supply chain that governs how you guys work together and has all of these things.
+
+Who owns IP? Meaning, if you're sitting, talking with the supplier about how to improve your product or how to improve your manufacturing process and a new idea comes up, do you own it or do they own it? Exclusivity.
+
+Are they allowed to make the exact same thing for a different company? Are they allowed to make anything in your category of products? Data sharing.
+
+This one's important for us. We closely monitor the quality of the raw materials that go into the product. We want to know on a day-over-day basis what the test data they're getting back.
+
+But they're not, unless we're contractually obligated to send it to us, unless they are, they're less inclined to do it. Inventory management. This gets back to what I mentioned before.
+
+Do they regularly report this? And you can tie all this into a document that forces them. Change of control.
+
+Three of our main suppliers were purchased two weeks ago by a single private equity firm in New York City. That's a change of control. It allows us to renegotiate the contract and there's some clauses in there which allow us to change our relationship with them.
+
+Chargebacks. You're going to get poor quality products sometimes. Every business does.
+
+Who pays for those? Who pays for the consequences of those? Warranty.
+
+You definitely have to negotiate. And pricing transparency, which I'll get into on the next slide. This is very sad for us, these two charts.
+
+Price to an index. There are two major commodities that make a mattress. You can see the pricing trends of those two major commodities from when we launched until now.
+
+One's down 16%, one's down 31%. How much of that money do you think Casper saved? Zero.
+
+We didn't negotiate in... Two things we didn't negotiate in because we were at a rush. We didn't negotiate in volume discounts and we didn't negotiate in any automated pricing changes.
+
+For our particular product, and it's going to be different for different products, it's very easy to know what the raw material costs are going in because they're commodities you can purchase, just so you can track on the market. If we had been smarter in the beginning, we would have priced to the index. We won't capture all the savings, but we should have captured half of it.
+
+And it's, you know, I think the first talk, they talked about gross margins and this makes our business... If we had captured these, it would make our business two things. One, we'd be more profitable or two, we could pass the savings on to our customers.
+
+We didn't capture it, so the only people benefiting from this are our suppliers, which is now a private equity firm. And then last, summing all this up, if I had had, or somebody else on our team had had experience in operations, I wouldn't have had to learn the previous seven things on my own. So, my advice is if you're going to have a physical product company, you're going to distribute something, hire internal ops expertise early.
+
+It will pay for itself. And as an example, we obviously ship a lot of stuff through UPS. We spend millions of dollars a year because it's not cheap to ship that box through UPS.
+
+We just paid the bills. Because they'd come into accounting, we had like a outsourced firm, I forget what it's called, Propeller, doing our accounting. They paid the bills.
+
+We went back recently as we've... Because we've recently hired a guy who came out of Amazon and Google Express and Black & Decker to run our ops team. He started digging back through the bills.
+
+There was a mattress that got shipped to Fiji for like $1,400 of shipping. There's no way we shipped the mattress to Fiji, but it was buried in our UPS bill. We hired an analyst just to look at this.
+
+We anticipate, based on initial numbers, that we'll save probably $200,000 to $300,000 just by digging back through old bills and reverse charging UPS on those bills. So of the things to look at, the main things, sourcing, having a dedicated person just out there looking for multiple suppliers. When you're in a rush like we were, you go to a smaller number because you've got to make a decision to move fast.
+
+Logistics, keeping track of how your product moves around. Warehousing, you've got to know what's an inventory where. Planning, you've got to know particularly things that are long lead time.
+
+If you're going to be bringing anything in from China or Taiwan, you're 90 days on the water just to get it here. So you've got to plan four, five, six months out. You've got to anticipate, and it's impossible when you're in a new company to get it right, but you could do it much better than we did.
+
+An analyst just to watch your bills. All these people you can think about as being free because they will save you money. Or you can do it the way we did it.
+
+So I just leave with one message. If you make a promise, we make a promise to our customers in terms of the quality of the product, the speed with which we want to deliver it. You actually have to deliver on that promise.
+
+As a startup, you get a lot of grace. People will forgive you for a while. We think at the scale and the time we've been in the market, people are no longer going to forgive Casper for messing things up.
+
+And so you have a little bit of a free time there, and then it runs out for you to actually deliver on the promise. So I'll leave you with that, and then I guess I think I'm going to take some Q&A. Thank you, Jeff.
+
+Hey, Jeff. Thank you for your time. Yeah.
+
+Just wanted to ask, you mentioned you should hire an internal ops person early. Is that the title of that person inside of another organization, internal operations? Yeah.
+
+The guy we hired is the VP of operations. We have a director of supply chain. Each of these things that I had here, and again, we're larger so we can afford more people.
+
+We have people under each of these tasks. We'll have probably by the end of summer we'll have four people just doing sourcing. Okay.
+
+So operations is the general thing, and then there's the subtasks underneath that. Got it. All right.
+
+Thank you. Yeah, for sure. Hi.
+
+Can you talk a little bit about your product development process and how you work with your customers to decide what that next product is going to be? Yeah, for sure. So that's actually like what my background is in, not in supply chain.
+
+So I spent a long time at IDEO, so if you're familiar with that methodology, it's what we practice. So we spend a lot of time talking to consumers. So if we know we want to make a pillow, we're going to go purchase all the things that are on the market, dissect them, do sleep trials.
+
+We're very fortunate to have an exceedingly large group of dedicated customers in this kind of virtual entity we've created called Casper Labs. I think there's like 15,000 members. And if we want to do survey work or product testing work or at-home interviews, we'll reach out to that group and see if we can find participants.
+
+But we combine that user research, product analysis, and then like a business analysis of what do we think the holes in the market are, how much value or dollar volume can we get through a product category. And then we just follow the paths through that process to figure out what we want to make. Thank you, Jeff.
+
+Thank you, guys. All right. So, uh, Thank you, guys.
+
+All right. So, uh, All right. So, uh, So, uh, So, uh, So, uh,
