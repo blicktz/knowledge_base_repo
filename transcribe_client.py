@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Async Parallel Client for RunPod FastAPI Transcription Server
-Processes up to 6 files concurrently for maximum server utilization.
+Processes files concurrently with smart concurrency control (default: 2 workers for large files).
 Usage: python transcribe_client_async.py /path/to/audio/files /path/to/output [--server URL] [--api-key KEY]
 """
 
@@ -200,7 +200,7 @@ class TranscriptionClient:
         }
         
         # Multi-chunk upload configuration
-        self.chunk_size = 15 * 1024 * 1024  # 15MB chunks
+        self.chunk_size = 5 * 1024 * 1024  # 5MB chunks
         self.large_file_threshold = 30 * 1024 * 1024  # 30MB threshold
     
     async def health_check(self) -> bool:
@@ -369,112 +369,153 @@ class TranscriptionClient:
         logger.error(f"Streaming upload failed after {max_retries} attempts: {audio_file.name} (total time: {total_duration:.1f}s)")
         return None
     
-    async def upload_file_multi_chunk(self, audio_file: Path, model: str = "turbo", max_retries: int = 3) -> Optional[str]:
-        """Upload a large file using multi-chunk upload strategy."""
+    async def upload_file_multi_chunk(self, audio_file: Path, model: str = "turbo", max_session_retries: int = 2, max_chunk_retries: int = 5) -> Optional[str]:
+        """Upload a large file using multi-chunk upload strategy with session-level retry."""
         file_size = audio_file.stat().st_size
         file_size_mb = file_size / (1024 * 1024)
         logger.info(f"Starting multi-chunk upload: {audio_file.name} ({file_size_mb:.1f} MB)")
         start_time = time.time()
         
-        try:
-            # Step 1: Start upload session
-            logger.debug(f"Starting upload session for {audio_file.name}")
-            
-            upload_data = {
-                "filename": audio_file.name,
-                "total_size": file_size,
-                "chunk_size": self.chunk_size,
-                "model": model
-            }
-            
-            response = await self.http_client.post(
-                f"{self.server_url}/upload-start",
-                json=upload_data,
-                headers=self.headers,
-                timeout=30
-            )
-            
-            if response.status_code != 200:
-                logger.error(f"Failed to start upload session: {response.status_code} - {response.text}")
-                return None
-            
-            session_data = response.json()
-            upload_id = session_data["upload_id"]
-            total_chunks = session_data["total_chunks"]
-            
-            logger.info(f"Upload session started: {upload_id} ({total_chunks} chunks)")
-            
-            # Step 2: Upload chunks
-            successful_chunks = 0
-            
-            with open(audio_file, 'rb') as f:
-                for chunk_index in range(total_chunks):
-                    chunk_start = chunk_index * self.chunk_size
-                    f.seek(chunk_start)
-                    chunk_data = f.read(self.chunk_size)
-                    
-                    if not chunk_data:
-                        break
-                    
-                    # Upload this chunk with retries
-                    chunk_success = False
-                    for attempt in range(max_retries):
-                        try:
-                            logger.debug(f"Uploading chunk {chunk_index + 1}/{total_chunks} (attempt {attempt + 1})")
-                            
-                            chunk_response = await self.http_client.put(
-                                f"{self.server_url}/upload-chunk/{upload_id}/{chunk_index}",
-                                content=chunk_data,
-                                headers=self.headers,
-                                timeout=90  # 90 second timeout for chunk upload
-                            )
-                            
-                            if chunk_response.status_code == 200:
-                                successful_chunks += 1
-                                chunk_success = True
-                                logger.debug(f"Chunk {chunk_index + 1}/{total_chunks} uploaded successfully")
-                                break
-                            else:
-                                logger.warning(f"Chunk upload failed (attempt {attempt + 1}): {chunk_response.status_code}")
-                                if attempt < max_retries - 1:
-                                    await asyncio.sleep(2 ** attempt)  # Exponential backoff
-                                    
-                        except Exception as e:
-                            logger.warning(f"Chunk upload error (attempt {attempt + 1}): {str(e)}")
-                            if attempt < max_retries - 1:
-                                await asyncio.sleep(2 ** attempt)
-                    
-                    if not chunk_success:
-                        logger.error(f"Failed to upload chunk {chunk_index + 1} after {max_retries} attempts")
+        # Try the entire upload session multiple times
+        for session_attempt in range(max_session_retries):
+            try:
+                logger.debug(f"Upload session attempt {session_attempt + 1}/{max_session_retries} for {audio_file.name}")
+                
+                # Step 1: Start upload session
+                logger.debug(f"Starting upload session for {audio_file.name}")
+                
+                upload_data = {
+                    "filename": audio_file.name,
+                    "total_size": file_size,
+                    "chunk_size": self.chunk_size,
+                    "model": model
+                }
+                
+                response = await self.http_client.post(
+                    f"{self.server_url}/upload-start",
+                    json=upload_data,
+                    headers=self.headers,
+                    timeout=30
+                )
+                
+                if response.status_code != 200:
+                    logger.warning(f"Failed to start upload session (session attempt {session_attempt + 1}): {response.status_code} - {response.text}")
+                    if session_attempt < max_session_retries - 1:
+                        backoff = min(5 * (2 ** session_attempt), 30)
+                        logger.info(f"Retrying session start in {backoff}s...")
+                        await asyncio.sleep(backoff)
+                        continue
+                    else:
                         return None
-            
-            logger.info(f"All {total_chunks} chunks uploaded successfully")
-            
-            # Step 3: Complete upload
-            logger.debug(f"Completing upload session: {upload_id}")
-            
-            complete_response = await self.http_client.post(
-                f"{self.server_url}/upload-complete/{upload_id}",
-                headers=self.headers,
-                timeout=60
-            )
-            
-            if complete_response.status_code != 200:
-                logger.error(f"Failed to complete upload: {complete_response.status_code} - {complete_response.text}")
-                return None
-            
-            completion_data = complete_response.json()
-            job_id = completion_data["job_id"]
-            
-            total_duration = time.time() - start_time
-            logger.info(f"Multi-chunk upload completed: {audio_file.name} → job_id={job_id} (took {total_duration:.1f}s)")
-            
-            return job_id
-            
-        except Exception as e:
-            total_duration = time.time() - start_time
-            logger.error(f"Multi-chunk upload failed: {audio_file.name} - {str(e)} (total time: {total_duration:.1f}s)")
-            return None
+                
+                session_data = response.json()
+                upload_id = session_data["upload_id"]
+                total_chunks = session_data["total_chunks"]
+                
+                logger.info(f"Upload session started: {upload_id} ({total_chunks} chunks)")
+                
+                # Step 2: Upload chunks with enhanced retry logic
+                failed_chunks = []
+                
+                with open(audio_file, 'rb') as f:
+                    for chunk_index in range(total_chunks):
+                        chunk_start = chunk_index * self.chunk_size
+                        f.seek(chunk_start)
+                        chunk_data = f.read(self.chunk_size)
+                        
+                        if not chunk_data:
+                            break
+                        
+                        # Upload this chunk with retries
+                        chunk_success = False
+                        for attempt in range(max_chunk_retries):
+                            try:
+                                logger.debug(f"Uploading chunk {chunk_index + 1}/{total_chunks} (attempt {attempt + 1})")
+                                
+                                chunk_response = await self.http_client.put(
+                                    f"{self.server_url}/upload-chunk/{upload_id}/{chunk_index}",
+                                    content=chunk_data,
+                                    headers=self.headers,
+                                    timeout=120  # Increased timeout to 2 minutes
+                                )
+                                
+                                if chunk_response.status_code == 200:
+                                    chunk_success = True
+                                    logger.debug(f"Chunk {chunk_index + 1}/{total_chunks} uploaded successfully")
+                                    break
+                                else:
+                                    logger.warning(f"Chunk {chunk_index} upload failed (attempt {attempt + 1}): {chunk_response.status_code} - {chunk_response.text[:200]}")
+                                    if attempt < max_chunk_retries - 1:
+                                        backoff = min(2 ** attempt, 15)
+                                        await asyncio.sleep(backoff)
+                                        
+                            except Exception as e:
+                                logger.warning(f"Chunk {chunk_index} upload error (attempt {attempt + 1}): {str(e)}")
+                                if attempt < max_chunk_retries - 1:
+                                    backoff = min(2 ** attempt, 15)
+                                    await asyncio.sleep(backoff)
+                        
+                        if not chunk_success:
+                            logger.error(f"Failed to upload chunk {chunk_index} after {max_chunk_retries} attempts")
+                            failed_chunks.append(chunk_index)
+                
+                # Check if all chunks uploaded successfully
+                if failed_chunks:
+                    logger.error(f"Session attempt {session_attempt + 1} failed: {len(failed_chunks)} chunks failed to upload: {failed_chunks}")
+                    if session_attempt < max_session_retries - 1:
+                        logger.info(f"Retrying entire upload session due to failed chunks...")
+                        await asyncio.sleep(5 * (session_attempt + 1))  # Progressive backoff
+                        continue
+                    else:
+                        logger.error(f"All session attempts exhausted. Failed chunks: {failed_chunks}")
+                        return None
+                
+                logger.info(f"All {total_chunks} chunks uploaded successfully")
+                
+                # Step 3: Complete upload
+                logger.debug(f"Completing upload session: {upload_id}")
+                
+                complete_response = await self.http_client.post(
+                    f"{self.server_url}/upload-complete/{upload_id}",
+                    headers=self.headers,
+                    timeout=60
+                )
+                
+                if complete_response.status_code != 200:
+                    error_text = complete_response.text
+                    logger.error(f"Failed to complete upload: {complete_response.status_code} - {error_text}")
+                    
+                    # Check if it's a missing chunk error that might be resolvable with retry
+                    if "Missing chunk" in error_text and session_attempt < max_session_retries - 1:
+                        logger.warning(f"Upload completion failed due to missing chunks, retrying entire session...")
+                        await asyncio.sleep(5 * (session_attempt + 1))
+                        continue
+                    else:
+                        return None
+                
+                completion_data = complete_response.json()
+                job_id = completion_data["job_id"]
+                
+                total_duration = time.time() - start_time
+                logger.info(f"Multi-chunk upload completed: {audio_file.name} → job_id={job_id} (took {total_duration:.1f}s, session attempt {session_attempt + 1})")
+                
+                return job_id
+                
+            except Exception as e:
+                logger.error(f"Session attempt {session_attempt + 1} failed with exception: {audio_file.name} - {str(e)}")
+                if session_attempt < max_session_retries - 1:
+                    backoff = 10 * (session_attempt + 1)
+                    logger.info(f"Retrying session in {backoff}s...")
+                    await asyncio.sleep(backoff)
+                else:
+                    total_duration = time.time() - start_time
+                    logger.error(f"Multi-chunk upload failed after {max_session_retries} session attempts: {audio_file.name} (total time: {total_duration:.1f}s)")
+                    return None
+        
+        # This shouldn't be reached, but just in case
+        total_duration = time.time() - start_time
+        logger.error(f"Multi-chunk upload failed unexpectedly: {audio_file.name} (total time: {total_duration:.1f}s)")
+        return None
     
     async def upload_file_smart(self, audio_file: Path, model: str = "turbo") -> Optional[str]:
         """Smart upload that chooses single-chunk or multi-chunk based on file size."""
@@ -978,9 +1019,9 @@ async def process_single_file(client: TranscriptionClient, audio_file: Path,
         return False
 
 async def process_files_concurrently(client: TranscriptionClient, files: List[Path], 
-                                   output_dir: Path, model: str, max_concurrent: int = 6,
+                                   output_dir: Path, model: str, max_concurrent: int = 2,
                                    no_cleanup: bool = False) -> List[bool]:
-    """Process all files with up to N concurrent workers."""
+    """Process all files with up to N concurrent workers. Default reduced to 2 for large file stability."""
     progress_mgr = ProgressManager(len(files))
     
     # Create semaphore to limit concurrent workers
@@ -1047,7 +1088,7 @@ async def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  # Transcribe a directory of MP3s (up to 6 files concurrently)
+  # Transcribe a directory of MP3s (2 workers, optimal for large files)
   python transcribe_client_async.py ~/audio ~/transcripts
   
   # Transcribe with specific server
@@ -1056,8 +1097,11 @@ Examples:
   # Use custom API key and model
   python transcribe_client_async.py ~/audio ~/output --api-key your-secret-key --model large-v3
   
-  # Limit concurrent workers
-  python transcribe_client_async.py ~/audio ~/output --max-concurrent 3
+  # Increase concurrent workers for small files only
+  python transcribe_client_async.py ~/small_audio ~/output --max-concurrent 6
+  
+  # Note: Large files (>30MB) automatically use multi-chunk upload with 2 workers
+  # to prevent server resource exhaustion and upload failures.
         """
     )
     
@@ -1070,7 +1114,7 @@ Examples:
                        help="Whisper model to use (default: turbo)")
     parser.add_argument("--no-cleanup", action="store_true", help="Don't delete job from server after completion")
     parser.add_argument("--force", action="store_true", help="Process all files even if transcripts already exist")
-    parser.add_argument("--max-concurrent", type=int, default=6, help="Maximum concurrent workers (default: 6)")
+    parser.add_argument("--max-concurrent", type=int, default=2, help="Maximum concurrent workers (default: 2, optimal for large files)")
     parser.add_argument("--debug", action="store_true", help="Enable debug logging for troubleshooting")
     
     args = parser.parse_args()
@@ -1128,6 +1172,17 @@ Examples:
         print(f"\n✅ All files already transcribed! Use --force to re-process.")
         return
     
+    # Smart concurrency: detect large files and adjust
+    large_files = [f for f in files_to_process if f.stat().st_size > 30 * 1024 * 1024]  # >30MB
+    has_large_files = len(large_files) > 0
+    
+    if has_large_files and args.max_concurrent > 2:
+        effective_max_concurrent = 2
+        print(f"⚡ Large files detected ({len(large_files)}/{len(files_to_process)}), using 2 workers for optimal performance")
+        print(f"   (Use --max-concurrent {args.max_concurrent} to override)")
+    else:
+        effective_max_concurrent = args.max_concurrent
+    
     print(f"🎵 RunPod Async Transcription Client")
     print(f"{'=' * 50}")
     print(f"📁 Input:  {args.input}")
@@ -1135,7 +1190,9 @@ Examples:
     print(f"🔧 Model:  {args.model}")
     print(f"🌐 Server: {args.server}")
     print(f"📊 Files:  {len(files_to_process)} files to process")
-    print(f"⚡ Max concurrent: {args.max_concurrent}")
+    print(f"⚡ Max concurrent: {effective_max_concurrent}")
+    if has_large_files:
+        print(f"📦 Upload strategy: Multi-chunk for {len(large_files)} large files")
     print(f"{'=' * 50}")
     
     # Get server URL from environment or use default
@@ -1174,10 +1231,10 @@ Examples:
             sys.exit(1)
         
         # Process files concurrently
-        logger.info(f"Starting concurrent processing of {len(files_to_process)} files")
+        logger.info(f"Starting concurrent processing of {len(files_to_process)} files with {effective_max_concurrent} workers")
         results = await process_files_concurrently(
             client, files_to_process, args.output, args.model, 
-            args.max_concurrent, args.no_cleanup
+            effective_max_concurrent, args.no_cleanup
         )
         logger.info(f"Concurrent processing complete")
         

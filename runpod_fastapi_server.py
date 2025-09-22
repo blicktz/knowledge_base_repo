@@ -13,6 +13,7 @@ import tempfile
 import shutil
 import logging
 import subprocess
+import traceback
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 from datetime import datetime
@@ -26,7 +27,7 @@ warnings.filterwarnings("ignore", category=UserWarning, module="whisper")
 
 # Configure logging
 logging.basicConfig(
-    level=logging.INFO,
+    level=logging.DEBUG,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
         logging.StreamHandler(sys.stdout)
@@ -973,18 +974,39 @@ async def upload_chunk(
     try:
         start_time = time.time()
         bytes_received = 0
+        expected_chunk_size = min(session.chunk_size, session.total_size - (chunk_index * session.chunk_size))
         
         logger.debug(f"📥 Receiving chunk {chunk_index + 1}/{session.total_chunks} for upload {upload_id}")
         
         # Stream chunk data directly to file
-        with open(chunk_file, 'wb') as f:
-            async for chunk_data in request.stream():
-                f.write(chunk_data)
-                bytes_received += len(chunk_data)
+        try:
+            with open(chunk_file, 'wb') as f:
+                async for chunk_data in request.stream():
+                    try:
+                        f.write(chunk_data)
+                        bytes_received += len(chunk_data)
+                    except IOError as io_error:
+                        logger.error(f"❌ File write error for chunk {chunk_index}: {io_error}")
+                        logger.error(f"   Bytes received so far: {bytes_received}")
+                        logger.error(f"   Attempting to write: {len(chunk_data)} bytes")
+                        raise
+                
+        except asyncio.CancelledError:
+            logger.error(f"❌ Request cancelled for chunk {chunk_index} after {bytes_received} bytes")
+            raise
+        except Exception as stream_error:
+            logger.error(f"❌ Streaming error for chunk {chunk_index}: {type(stream_error).__name__}: {stream_error}")
+            logger.error(f"   Bytes received before error: {bytes_received}")
+            logger.error(f"   Expected bytes: {expected_chunk_size}")
+            raise
         
         upload_duration = time.time() - start_time
         chunk_size_mb = bytes_received / (1024 * 1024)
         speed_mb_s = chunk_size_mb / upload_duration if upload_duration > 0 else 0
+        
+        # Validate chunk size
+        if bytes_received != expected_chunk_size:
+            logger.warning(f"⚠️ Chunk {chunk_index} size mismatch: received {bytes_received} bytes, expected {expected_chunk_size} bytes")
         
         # Update session
         async with upload_sessions_lock:
@@ -992,7 +1014,6 @@ async def upload_chunk(
             session.bytes_received += bytes_received
         
         logger.info(f"✅ Chunk {chunk_index + 1}/{session.total_chunks} received: {chunk_size_mb:.1f}MB in {upload_duration:.1f}s ({speed_mb_s:.1f}MB/s)")
-        logger.debug(f"   📊 Progress: {len(session.chunks_received)}/{session.total_chunks} chunks ({session.bytes_received / (1024*1024):.1f}/{session.total_size / (1024*1024):.1f} MB)")
         
         return {
             "message": f"Chunk {chunk_index} uploaded successfully",
@@ -1003,12 +1024,37 @@ async def upload_chunk(
         }
         
     except Exception as e:
-        # Clean up partial chunk file
-        if chunk_file.exists():
-            chunk_file.unlink()
+        # Enhanced error logging with detailed context
+        upload_duration = time.time() - start_time
         
-        logger.error(f"❌ Failed to upload chunk {chunk_index} for upload {upload_id}: {e}")
-        raise HTTPException(status_code=500, detail=f"Failed to upload chunk: {str(e)}")
+        logger.error(f"❌ Failed to upload chunk {chunk_index} for upload {upload_id}")
+        logger.error(f"   Exception type: {type(e).__name__}")
+        logger.error(f"   Exception message: {str(e)}")
+        logger.error(f"   Bytes received: {bytes_received}")
+        logger.error(f"   Expected chunk size: {expected_chunk_size}")
+        logger.error(f"   Upload duration: {upload_duration:.2f}s")
+        logger.error(f"   Chunk file path: {chunk_file}")
+        logger.error(f"   Chunk file exists: {chunk_file.exists() if 'chunk_file' in locals() else 'unknown'}")
+        
+        if chunk_file.exists():
+            try:
+                file_size = chunk_file.stat().st_size
+                logger.error(f"   Partial file size: {file_size} bytes")
+            except Exception as stat_error:
+                logger.error(f"   Could not get file size: {stat_error}")
+        
+        # Log full traceback for debugging
+        logger.error(f"   Full traceback:\n{traceback.format_exc()}")
+        
+        # Clean up partial chunk file
+        try:
+            if chunk_file.exists():
+                chunk_file.unlink()
+                logger.debug(f"Cleaned up partial chunk file: {chunk_file}")
+        except Exception as cleanup_error:
+            logger.error(f"Failed to clean up partial chunk file: {cleanup_error}")
+        
+        raise HTTPException(status_code=500, detail=f"Failed to upload chunk {chunk_index}: {type(e).__name__}: {str(e)}")
 
 @app.post("/upload-complete/{upload_id}")
 async def complete_upload(upload_id: str, api_key: str = Depends(verify_api_key)):
