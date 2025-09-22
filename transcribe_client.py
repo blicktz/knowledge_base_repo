@@ -200,7 +200,7 @@ class TranscriptionClient:
         }
         
         # Multi-chunk upload configuration
-        self.chunk_size = 5 * 1024 * 1024  # 5MB chunks
+        self.chunk_size = 3 * 1024 * 1024  # 3MB chunks
         self.large_file_threshold = 30 * 1024 * 1024  # 30MB threshold
     
     async def health_check(self) -> bool:
@@ -518,15 +518,10 @@ class TranscriptionClient:
         return None
     
     async def upload_file_smart(self, audio_file: Path, model: str = "turbo") -> Optional[str]:
-        """Smart upload that chooses single-chunk or multi-chunk based on file size."""
+        """Upload using multi-chunk strategy for all files with 3MB chunks."""
         file_size = audio_file.stat().st_size
-        
-        if file_size > self.large_file_threshold:
-            logger.debug(f"Using multi-chunk upload for large file: {audio_file.name} ({file_size / (1024*1024):.1f} MB)")
-            return await self.upload_file_multi_chunk(audio_file, model)
-        else:
-            logger.debug(f"Using single-chunk upload for small file: {audio_file.name} ({file_size / (1024*1024):.1f} MB)")
-            return await self.upload_file(audio_file, model)
+        logger.debug(f"Using multi-chunk upload: {audio_file.name} ({file_size / (1024*1024):.1f} MB)")
+        return await self.upload_file_multi_chunk(audio_file, model)
     
     async def start_processing(self, job_id: str, max_retries: int = 5) -> tuple[bool, bool]:
         """Start processing an uploaded file."""
@@ -955,9 +950,7 @@ async def process_single_file(client: TranscriptionClient, audio_file: Path,
         
         # Upload with progress (using smart upload strategy)
         current_stage = "upload"
-        file_size = audio_file.stat().st_size
-        upload_status = "chunked_uploading" if file_size > client.large_file_threshold else "uploading"
-        await progress_mgr.update_status("temp", file_name, upload_status)
+        await progress_mgr.update_status("temp", file_name, "chunked_uploading")
         job_id = await client.upload_file_smart(audio_file, model)
         if not job_id:
             error_msg = f"Upload failed - no job_id returned"
