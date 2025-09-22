@@ -1,0 +1,1079 @@
+Now zero to one is very likely in AI. You build an incredible tool that no one else can do. You can do a million in a week or two.
+
+You know, okay, so for this episode, what I'm thinking this is about is, this is sort of, and guys, this is gonna be generous to us, but what is the smart money doing with AI? And you know, in betting and sports betting in Vegas, you always kind of want to watch, what are the sharps doing? They tend to be just, you know, maybe 10 to 15% earlier to understanding things or to recognizing things.
+
+And so similarly, Jason, I wanted you on, because you've been doing really interesting stuff with AI, both from investing, you're talking to startups that are using them, you're reading all the reports, but also you yourself built this AI tool. And so I want to kind of get your reaction to a few of the different things. Can you first explain this AI experiment you did where you basically made a body double of yourself out of AI?
+
+And like, what was the experiment and what'd you learn? Well, yeah. So Saster has a lot of content.
+
+As you guys know, we have 12 years of content. Some of it's out of date, right? For sure.
+
+Saster being, you're a previous founder who's exited multiple software companies. Now you're like the godfather of like Sass because you have this blog and media company and events business called Saster, and you have a huge fund. So that's kind of the- but probably most interestingly for like seeing the future a little bit is I have about 10,000 pieces of content I've written over the years.
+
+A lot of it, which is not out of date. And I update it personally. So I have about 10,000 pieces of content.
+
+And then we have several thousand interviews like you guys do, but with so many great folks, early ones with Dharmesh, middle ones from Dharmesh. Dharmesh when HubSpot had just IPO, Dharmesh the other day, Yamini last week, Brian Halligan over the years. And we have all of it and our AI took everything I've written, every tweet I've ever done, every LinkedIn post, every Saster video from every speaker for 12 years, Aaron Levy the week he went IPO for the first Saster annual to last week when we were talking about AI, all of it ingested in this AI.
+
+And so what I instantly saw was as soon as I would talk to this AI, it was much better than me. It was much better than me because I forget stuff. How did you get that information in there?
+
+You just hook up RSS, right? The feed for blog. It can scrape the web, which is pretty easy.
+
+Soon we'll be able to do other things like MCB, but it's just scraping APIs and RSS. It's really just scraping. You just give a URL.
+
+But did you use like Delphi or you built your own tool or what'd you do? I tried a couple of things and then I used Delphi. And then at first we had so much content, it was a little difficult to ingest it.
+
+So there is a little bit of work. And then I spend about 10 minutes a day training it, which we could talk about. So there is a little bit of maintenance involved, but it's better than me.
+
+And the thing I didn't get until I saw something that was hyper-trained, like this is a lot of content, 20 million words, right? Very few mistakes, very few hallucinations, and the ability to connect things that I can't. I just don't remember.
+
+I don't remember what Sam and I said on the hustle on stage years ago versus when we did an MFM a while versus today, but the AI knows it all. By the way, 20 million words is like 200 books worth of content. An average book I think is like 100,000 words.
+
+So 20 million words you're saying is, you basically gave it 200 books of your own brain and the brains of other guests that have come on your show. Yes. And your goal was to build, was it to build basically an advisor, an AI version of you that could be an advisor to a founder who wants to come and talk to you, ask questions, but you don't have enough time of the day to book calls?
+
+Was that the big idea here? I just wanted to learn like you guys did. I just wanted to learn.
+
+I didn't think it would be as good as it was because I used other products and I've used other things and it wasn't as good as my digital AI was. It wasn't as good. But the use case would be what?
+
+Is it what I said or is there something else? The other interesting thing is the use cases with AI are much broader than you'd expect. Okay.
+
+So I didn't expect people to upload their board decks before board meetings and ask for feedback before board meeting. That's an issue case. I didn't expect hundreds and hundreds of founders to use it as their therapist for their company where the growth has slowed.
+
+I didn't expect that. I didn't expect so many folks to use it to review their sales scripts, their SDI scripts when there's specific tools to do it, right? I didn't expect it's so good at reviewing VC pitch decks.
+
+It's so good at it, better than anything I've seen. Can you get tactical for one second? So you go to Delphi.ai and you just uploaded the Sasters RSS feed and it did all of the work?
+
+YouTube, RSS, Twitter, blog. But could I go to a health guru or a business guru who I subscribe to, who I love? Yes.
+
+And I say, youtube.com slash Alex Hermozzi, upload that and it automatically does it? Is this that simple? Well, it's an interesting question.
+
+It is prohibited, right? It is prohibited by their website, their terms of use. They prohibit it.
+
+But honestly, this is an AI risk. You could do it. Absolutely, you could do it.
+
+You could redo what I did. It might take you a little while longer, but you could just clone exactly myself, yourself. And then you could do it just as well as I did.
+
+Sam, I've never felt so used and abused when Jess Ma came on the podcast and she was like, yeah, actually I have my team training in AI of you so that if I'm brainstorming ideas, I don't have to ever call you. I'll just ask the AI what, you know, basically you'll just be in the meeting with us. Yeah.
+
+And she's like, yeah, we just took all the podcasts and we're training it on how you think, the questions you would ask, what you would say, reactions you would give. And now you're just there in the meeting. So she basically hired me without ever paying me, right?
+
+Because I have this corpus of content out there. I've actually put my brain out there in the public. How do I do that?
+
+Like how it can't, can I just upload a YouTube channel and say this YouTube creator has great advice and I could upload 800 videos and it will transcribe all of them. I could go to Delphi. It may take a day or two to fully ingest all that content, but it will do it just from the URL of your YouTube.
+
+Just on Delphi.ai. So I could make a mini Sean. I think it is a great product.
+
+There are other people that can do it too. That is not, there are some, I'll tell you what I think is interesting about Delphi, but we're looking at all this cursor and Windsurf stuff and lovable and like, you don't realize like, they're just so far ahead of like B2B and regular people only because they're better people working on them. If we had the quality of people working at Windsurf, working on, on CRM, okay.
+
+Or working on marketing tools or podcasting tools, your jaw would drop today. But this is why your jaw is gonna drop over the next 24 months because just mediocre engineers cannot, like the engineers at OpenAI are so good. They're just so good.
+
+And so, but the average engineer working at a struggling CRM, right? It's just not, just not that good, but they'll catch up. But yeah, you can build all of this.
+
+And here's the interesting learning. So we could build a digital SAM and we could do this for next week or whatever. You can do it.
+
+My learning from my AI, it's okay that it's not you. This is why, for example, you can train your voice. It uses a level 11.
+
+Is that the product or level? I get a little confused. It's 11 labs, right?
+
+Yeah. 11 labs. Yeah.
+
+11 labs and level labs is epic, right? But you can choose, do you want it to be exactly like you? Which is what Brian Halligan did.
+
+And then I realized that was creepy. I don't want digital Jason to be me. I want digital Jason to be a prime version of me that 90% of the time is much better than me, but is distinct.
+
+I don't want people confused. Like Brian, I get like Brian Halligan. And so it's okay that it's not Sam.
+
+Like it could be a version of Sam that is better than Sam. All right. A few episodes ago, I talked about something.
+
+And I got thousands of messages asking me to go deeper into explain. And that's what I'm about to do. So I told you guys how I use ChatGPT as a life coach or a thought partner.
+
+And what I did was I uploaded all types of amazing information. So I uploaded my personal finances, my net worth, my goals, different books that I like, issues going on in my personal life and businesses. I uploaded so much information.
+
+And so the output is that I have this GPT that I can ask questions that I'm having issues with in my life. Like how should I respond to this email? What's the right decision knowing that you know my goals for the future, things like that.
+
+And so I worked with HubSpot to put together a step by step process showing the audience, showing you the software that I use to make this, the information that I had ChatGPT ask me all this stuff. So it's super easy for you to use. And like I said, I use this like 10 or 20 times a day.
+
+It's literally changed my life. And so if you want that, it's free. There's a link below.
+
+Just click it, enter your email, and we will send you everything you need to know to set this up in just about 20 minutes and I'll show you how I use it again, 10 to 20 times a day. All right. So check it out.
+
+The link is below in the description. Back to the episode. So, okay, let's walk, let's walk through these top 10 learnings.
+
+So you build this AI. It has 35,000 conversations with people. You did it as an experiment.
+
+We're like almost 50 now. We have 50,000 conversations and learning number one, you said users will tell AI things that they won't tell humans. What do you mean?
+
+Yeah. Well, first of all, before we can get there, one obvious, like there's no way I could do 50,000 conversations. Is there?
+
+Right. I'm not even a people person. I could do like one or two a day and I get tired.
+
+50,000. Just think about the Delta between two a day and 50,000. But yeah, this is the thing.
+
+Like there are some things that are somewhat unique about me that are early. The amount of content, Sean, like your math, right? The amount of books we're talking about here, right?
+
+The amount of content I've written just about B2B, just about building business software, makes it interesting. The other thing is there's enough people. I'm not like a super influencer like you guys are, but there's enough people that know the digital me that they already know what to ask me, right?
+
+They've already watched me at an event. They've read the content. So like they ask me things without thinking it's a prompt or a prompt.
+
+They just ask things. They want to talk about their deepest fears. Like I've partnered with Sam on this podcast, but I'm not sure he's committed as me.
+
+I see him doing other things. He's into this accounting software and this Hamptons thing. I'm worried he'll quit my podcast on me.
+
+What do I do? And my AI is really good with talking that through you, right? And so people just think to ask me things.
+
+Is this guy AI? How did he know all this, Sam? Hey, Jason.
+
+Well, close to the heart there, Jason. You think it's funny, but like you might ask me. Hey, Jason.
+
+How about you shut up? Well, now you, there are thousands of these types of conversations. My co-founder is not as committed.
+
+I don't know if my board's going to fire me, right? I'm only growing 18%. I have 11 months of runway, right?
+
+Were you Zuckerberg in here? How'd you know what they were saying? Was there some privacy here?
+
+How do you know what's being said? It is interesting. And on this app, you can set how much privacy you want.
+
+You can anonymize everything. No, you can. No, because there's different use cases.
+
+If you're using it as a support tool, think about it using it as a support tool. You don't want anonymity for support. How can you follow up with someone?
+
+Right. Then there's like a therapy level where you would want true anonymity. And then there's like a slot.
+
+Everything's a slider in AI in a sense, right? I think that like you said the therapy thing as if it's like, can you believe that? And I'm like, dude, I use open a chat, chat, chat for tea for therapy three hours a day.
+
+Yeah. Well, everyone does. Like the majority of I'm like, this email pissed me off.
+
+How do I reply in a graceful way? Or like I argued with my wife or I'm upset about that. I'm not doing this.
+
+Like, like the other day on Sunday, I saw someone who had a super fancy home and I was like, how do I get over envy? You know what I mean? Like, like that's all I use it for.
+
+It is. And this is the same thing. It's just because it's got the 20 million words for business to business content, sales content, scaling revenue.
+
+It's it turns out this and this was a surprise to me. I didn't believe this. It's better, much better than chat GPT.
+
+It's much better. And you said something like you trained it afterwards. Can you just what do you mean by that?
+
+Well, how did you train it afterwards? Well, listen, I'm going to embarrass myself technically. Okay.
+
+But basically those 20,000 words, you basically rag it. Okay. You vectorize.
+
+20 million. 20 million or 20,000. 20 million words of my content.
+
+You turn it into a, a, a, a very, a database instead of, and you just add that to chat GPT or Claude or deep sync and the way you add it and the relative weights of my content versus the generic content radically changes the output. Like chat GPT never asked my permission. It's already slurped up all my content.
+
+Hasn't it? Every single YouTube is in chat GPT. Everything I've written.
+
+I haven't been paid a nickel. So what's interesting is that content's already there, but by weight, by heavily weighting it toward my content for my type of knowledge, it's much, it's not a little bit better than chat GPT. It's like much better.
+
+Right. How do I do? How do I create a sales comp plan?
+
+I have four SDRs and five AEs, our, our average deal size is 2k a year. And we want to go from 2 million to 6 million next year. And my team won't really do outbound.
+
+Chat GPT is going to give you a very mediocre answer. But my AI is going to give you insanely good answers, even though overall we're pulling from the same content. Right.
+
+And so you, you had to do that manually. Was that the training or did you do more? Did you do more training than just that?
+
+Well, first of all, it auto updates every day, which is better than chat GPT or Claude. It auto updates every day. It slurps up everything on my blog, on my social media, on my YouTube every single day.
+
+It does it essentially almost in real time. Okay. And then, yeah, you, it does it itself.
+
+It auto updates. Now, what I do do, here's what I do do is, and I'll tell you my learnings on my hallucinations. Okay.
+
+I audit a few of them. I read some and I see if they're wrong. Right.
+
+I see if the ones that are, that are not anonymous, if they're wrong. And when I see something that's wrong, and I'll tell you what I learned, if you're interested, then I, there's a section where I just train it. Right.
+
+No, Sam and I first met in 2016 after I wrote a Quora post and he had me do a meetup at the hustle. Okay. Cause it got it wrong.
+
+It made something up. Okay. So I do, I do that for about 10 or 15 minutes a day.
+
+And it turns out it doesn't get very many things wrong. And the things it does, it consistently gets wrong. And I'll tell you why.
+
+And then I just fix it. And the next day it's right. If you do nothing and you don't train it and you put no content in.
+
+Yeah. This, this, this average VP of sales is going to say, eh, it doesn't work. You know, I, I, I logged into chat GPT a year ago and it hallucinated and like, you're going to lose your job.
+
+But the hard, the hard part here is like, so I'm so committed to chat GPT. So it, it, it knows so much of my information because we've had so many conversations. It does.
+
+Are we all going to have like files, you know, like our health record where it's like, uh, you know, my, the background, because it sounds like I get nervous to switch to any other model because I'm like, ah, chat GPT. I've already asked it so many questions. It already knows everything.
+
+It's an interesting question. Here's what I've learned. First of all, memory is a big deal, right?
+
+Chat GP could already remember questions, but now it's remembering everything. Okay. So, so it's a moat from the top folks I've worked with on this.
+
+There's on the one hand, it's a, it's a moat, just like being in the Google ecosystem is a moat, just like back being back in the day, being in the Yahoo ecosystem was a moat. Okay. But the moat is not as deep as we think our ability to get up, to get trained and up to speed does not require 20 million words.
+
+So yes, it is a moat, but if you decided Claude was much better for you and you, the point is, and you spent a month just including your day each day, you're probably there. Yeah, but that's a lot. You're not a hundred percent.
+
+It's enough. It doesn't need to go as deep. I think it was Aaron Levy or somebody was tweeting this.
+
+They were talking about Plaid for AI tools. So basically you'd be able to just like the way Plaid lets you connect your bank safely to any financial service, to be able to take your kind of memory and context, what, what ChatGPT knows about you, but port that to some new app that you're trying without, without handing over everything, but allow it to pull from that. And I was like, oh, that's a, that's actually a very interesting idea.
+
+If apps will even exist in the future. Well, what will exist instead of apps? Why we're going through a transition phase, right?
+
+We're going through now we're chatting once again, we've been chatting since the ICQ days. Okay. Since AOL, we've been chatting at our keyboards with people now with AI, we're chatting again.
+
+Okay. But we're starting to not even know where we're chatting with, right? Right now already like MCP is new, but already today, open AI and Claude can pull from other apps like HubSpot and others and, and notion and just pull the data out.
+
+I don't have to go to notion or even Google calendar or HubSpot anymore. Right? Right.
+
+As we live in this and then, you know, people think this Johnny Ive thing for 6 billion is crazy. It's a great bet because we're going to go from 20 minutes a day, 22 minutes a day in ChatGPT to 24 hours a day in ChatGPT. And when we're in ChatGPT 24 hours a day, we're not going to like pull up a CRM.
+
+We're not going to use the interfaces. Like these interfaces are all already dying. You can see it, Sam.
+
+And then the amount of time you spend in GPT, like then go to like a B2B app. You're pulling your hair out. It's so dated, isn't it?
+
+Yeah. It's so dated already. It's only 2025 and it's already dated to go to any B2B app.
+
+They're all going to die. How does the excitement and rate of change right now compared to, I don't remember if you were involved in 99 in the year 2000, but you were close, right? Yeah, I was a kid.
+
+It was my first job back then. Yeah. So how's the, because everyone talks about the dot-com boom and I never got to, I mean, I never experienced it, but how's this today compared to then?
+
+Those days were the first time until AI where people feel like they could just do something out of nothing. Like it was miraculous. It was miraculous.
+
+And that is what AI is like today. People are just doing miraculous things and it's exciting, but man, it's super scary for incumbents. It's super scary for incumbents.
+
+Do you think that everybody who is maybe a content creator at least is going to have this sort of like the stunt double, this intellectual stunt double the way that you created here? Do you see it once you've did this experiment, are you like, this is the future or this was novel, but no, I don't think it's going to last. Like, you know, where, where's your, where did you land after the experiment?
+
+I, well, first of all, what I think I'm not a consumer content creator. I don't think anyone is going to create content without AI going forward. And the tools are going to change.
+
+Like for example, just for, for our last big Saster event, like I did all this speaker promos in Higgs field. Have you ever used Higgs field? No.
+
+It's incredible. How do you spell that? Higgs field.a.
+
+It's the ex head of AI from snap. It's one of the coolest apps on planet earth. Everyone's talking about this new Google video thing.
+
+Right. But they were already doing it. Higgs field.a.
+
+All you have to do to Higgs field.ai is I can take a screenshot of us right now. I'll put it in Higgs field and it will create a movie out of it. Okay.
+
+And it will, and you can, and there's a lot of different ways, but there's a really simple way you can do it. You can take an initial photo and an end photo and it will just connect them with the narrative. So I had like, I would take like a picture of Yamini just off her headshot off HubSpot and then take a picture of like a stage at Saster.
+
+And it would just make a video of Yamini waving to the crowd and running on stage on Saster and being excited. And so a year ago, all the, all the digital promos were a static, you know, a classic static headshot with some Chrome around it. Today, everyone got a video, a really cool video.
+
+Right. Next year, it will be me and Yamini talking for 10 minutes about AI and neither of us will have had the conversation. It doesn't mean I won't exist, but of course that's already, we could already almost do that.
+
+But I did all these things. Now I did, instead of waiting for our designer two months to do a static thing and upload it to Dropbox and we forget where it was and lose the URL and have to do it. Now I just did it myself in Higgs field in like 10 seconds.
+
+So. I'm looking at Higgs field. This is, this is insane.
+
+It's beyond cool. It's so good. So good.
+
+This is the, this is why AI is exciting because the really bad-ass people can do crazy stuff now. It used to take a bad-ass person like six months to do a prototype and then two years to get a good. Now someone epic, like the ex head of AI and Snap can like what you can do at Higgs field will blow your mind.
+
+Right? Dude, I can even tell just why the way you're talking. I feel like if we did the same podcast, you know, five years ago, your rate of talking would have been like 10 beats per minute lower.
+
+Well, dude, you're even 12 months ago. There's like a baseline level of excitement that has just risen. Like our new blood pressure is here.
+
+Well, as long as I've known Jason, you were borderline grumpy. Like you were pissed. You were pissed off all the time.
+
+Like, yeah, yeah, yeah, yeah. You were like, look, like I remember you, you weren't tired, but you were, you were tired of people asking you, Doug, you know what I'm doing. I remember people asking you dumb shit because you always had this, you had this energy of you where you were like talking to someone and you're like, you're making a mistake.
+
+Stop this. You're making a mistake. You had like this, like almost anger in you.
+
+Now it's the exact opposite. Now you're, you're optimistic. I am.
+
+I am. You're right. I, I, I'd like to think differently, but you're probably right.
+
+The way you perceive me is, is important. Um, it, it is, I am very optimistic about it, but the difference is I used to think all these products were durable, that they were durable. Now I don't think any of them are durable.
+
+So what's that mean? When I first started doing this Sastra content, I made up this expression, which I stole from the mayor of Tel Aviv and people have used it ever since. Zero to 1 million in revenue impossible.
+
+We don't need another product. Okay. One to 10 million in revenue.
+
+Unlikely. Like there's so much competition, 10 to a hundred million inevitable from impossible, inevitable. We had a book that sold a couple hundred thousand copies.
+
+That was his theme. So you go this stage because what I learned as a B2B founder. Sorry.
+
+You're saying get getting from zero to a million is really, really hard. Yeah. Getting from one to 10 feels impossible.
+
+But once you're at 10. Unlikely. Yeah.
+
+Unlikely. But once you get to 10, it's inevitable to get to a hundred. If you had good founders, it was a punch card.
+
+Now it's disrupted. Now zero to one is very likely in AI. Like it's like you build an incredible tool that no one else can do.
+
+You can do a million in a week or two, but like now everyone beyond a hundred million is getting disrupted. There's so many software companies at a hundred to 200 to 300 million in revenue that aren't growing anymore. It never used to happen four or five years ago.
+
+Like you hit your punch card, you had 120% revenue retention and you had a brand. All you need was a brand and revenue retention and products changing about every five years. Right.
+
+If the product changed every five years and you had a brand and tens of millions of revenue, that mean you met, you had product market fit, right? High revenue, like high NRR meant it kept going as an engine. And this, this 120, 130% revenue retention, and you just kept going.
+
+It took you from 20 to 30 to 50 to a hundred. And it was like, and that's why, you know, in, in, you know, this crazy in 2021, 2021, the average public SAS company traded at 70 X ARR public in 2021. It's, it's almost unimaginable today when it's at five.
+
+Right. Right. And it worked then like everything just worked.
+
+And now, you know, I, I, you know, Okta growing 10%, Salesforce growing 7%. Like the, the, they're good companies, but it's not durable the way it once was. So are those companies, my premise or what I thought and what Morgan Stanley, I thought, because Morgan Stanley had this report, which who gives a shit about Morgan Stanley, but they said that the majority of value creation in terms of market cap for AI is going to be the big companies using AI to get better versus new AI companies.
+
+Do you disagree with that? I think that right now today, as we record this, there's a hint of truth to it. And, and, but Salesforce is not accelerating.
+
+Okay. Okta is not accelerating. Lots of folks are not accelerating.
+
+Service. Now has a lot of AI, but it already had workflows that were automation. So people say that, and there's, there's, there's, there's some, there's qualitative proof of it, but we haven't seen it in the numbers.
+
+Okay. So there's a window for the big guys to leverage this because the, the interface that we talked about is dying. People are not going to want to use these dated interfaces anymore.
+
+So even if it is benefiting the big guys today, what is the value of, of a CRM? If I don't, you log into the app anymore. If I just talk to, to chat GPT and I say, give me the 10 deals I have to work on this week.
+
+Like how valuable is one CRM over another? Or will I even know I have a CRM? Like it just becomes plumbing in a database.
+
+Here's one problem. Let's step back and I'll, one problem with AI. One problem with AI is there's been too much nerdy nomenclature the last year.
+
+Too many, oh, oh fours, minis, oh three maxis, LLM. Dude, it's so complicated. It's like, it's like knowing the difference between an iPhone 13 and an iPhone 14.
+
+It's all, that's all going away this year. It's all, that complexity made sense. As crazy as these numbers are, Anthropic went from one to three billion in revenue in five months.
+
+They just announced one to three billion in revenue in five months. Okay. And that is basically all infrastructure plumbing revenue.
+
+Okay. So when the, when the, in the area of infrastructure, you need to know the difference between the models and R1 and this. We're just starting the application age.
+
+And in the application age, we don't, we won't care what models HubSpot uses. We don't even, HubSpot already has a lot of AI. Do you know what models it use?
+
+You don't care. Right. You don't care.
+
+So, so, so these nerdy terms are going to fall away. But what M think of MCP as the next generation API. And what MCP does is it lets any AI or others talk to applications without having to, right inside of the AI.
+
+So right now, if you go to now that it's just rolling out, but if you go to, and you set it up properly and it's still a little nerdy. Okay. But right now from ChatGPT, you can change your Google calendar.
+
+You can work with notion. Tell me how. You connect it with MC, you just, well, I can, I can't quite do it with you on online.
+
+Maybe in two months, it's literally when you owe off in, it will do it automatically, but I can show you offline. You just connect it to your Google calendar. And then there, it's still a little bit of a headache around authentication and security.
+
+Like there's a little bit of magic to go, but not much. And then you can just talk to your calendar and chat and HubSpot has announced this. So DarMesh is.
+
+But what are you using to connect the two? So MCP is a protocol, right? So it's like a language.
+
+Imagine this, right? Like, you know, we have English, we have Spanish. Then when the internet browser came out, it was like, Hey, there's a new language.
+
+We're going to call it HTML. Yes. And you got to learn that language.
+
+If you want to tell the browser what to do, how to show a webpage. Right? So now MCP is a new language that came out.
+
+That was basically saying, Hey, if you're one AI app and you want to talk to another application, how are they supposed to talk to each other? MCP became a protocol that now any app who wants to be like, yo, like HubSpot, for example, they want all the AI tools to be using, to be integrating in with HubSpot, but they don't want to one by one, go work out a deal and do a technical integration with each one. So they say, Oh, cool.
+
+We'll, we'll also speak MCP. We, we, we understand that language. We know how to do that.
+
+Right? It's basically like how APIs work for, for most websites, but MCP is like the AI specific version of that. But right now to integrate with, and I haven't ever used HubSpot's API, but I, I'm sure it's a great one, but, but that is bespoke.
+
+Like each one is different. HubSpot's API is different than Salesforce and notion and linear. You have to learn it.
+
+You have to get a key. You have to code to it. You have to understand its nuances.
+
+It's a lot of work, right? Like you, you may know startups. You've got nothing.
+
+You're like, why don't you have a HubSpot integration? Well, because it's work, right? Right.
+
+With MCP it's early, but it's just starting. It won't be any work. You just tell MCP to go talk to HubSpot or go talk to notion and it will just do it.
+
+And all that work goes away. So if your AI can talk to any app you use, take all the data out and let you talk as a human for 99% of the world, we won't use HubSpot like the way we use it today. There's no reason to log into this app, figure it out.
+
+Like, how does the UI work? What are these tabs? How do I configure a tab?
+
+And the kids these days will never know this. Like this generation coming up, they will never use software like we use it. They will never use it.
+
+What's the office of OpenAI like right now? Because you're saying like, well, it sucks right now, but in 60 days, it's going to be the best, which is insane. So how many people work at OpenAI right now?
+
+And actually, Sean, for you as well, have you guys been to the office? What's it like? No, I've never been.
+
+What's it like at that office right now if they're able to do all these things so fast? I think it looks like they have about 4,500 employees. I'll tell you what's super interesting.
+
+They only have about 60% employee retention over two years. Because what? Everyone's going and doing their own thing?
+
+Probably. But it's just great. Like if OpenAI only has 60% team retention, what's your hope to keep your AI team?
+
+You better treat them really well. So I have a friend who told me about the early days of Twitter. And he basically, he had built a company.
+
+He was like scraping Twitter and he was like, oh, this is cool. Based on what people are saying, I could figure out what's actually trending in the world. And the way he did it was he was like, you know, if people, people always talk about New York.
+
+So if it's, if I hear New York a thousand times, that doesn't actually mean New York is trending. It just means New York is already big. But if suddenly everybody's talking about Tallahassee, well, Tallahassee doesn't normally get talked about that much, but it's being talked about as much as New York.
+
+That means it's trending. And so he had a separate site that was trying to figure out what are the trends on Twitter. Now this, they ended up getting bought by Twitter.
+
+And that's now what if you go on Twitter, Twitter has trending, right? So my friend Abder was just, I was like, what was it like in those days? And he was like, I thought I knew what a startup was.
+
+I thought, and I, this, I related to this so much. He's like, basically I thought a startup was I wake up every day and I got to go try to get some growth. And I'm pushing, I'm pushing, I'm pushing the product forward.
+
+I'm pushing the marketing forward. I'm pushing my product out into the market. Push, push, push.
+
+He goes, then imagine like, you know, you think you're pushing and then suddenly you're pushing a boulder up a mountain and you look up and there's a giant avalanche coming at you. It's pulling towards you, right? It's coming straight at you.
+
+And so he goes, my first six months at Twitter, he goes, I woke up and I had the QWERTY keyboard like imprinted on my forehead. Like I would just fall asleep at my desk and I'd wake up and I'm back at work, right? He's like, basically that's how I lived for like six straight months because I'm not going to be able to do that.
+
+And he's like, everybody's making fun of us because the Twitter had the fail whale. He's like, but there's nobody had ever scaled a service like this, this fast. And so we just couldn't keep it up.
+
+And we was like, we were, trust me, we were trying. Everyone thought we were being lazy or stupid. He's like, we are the smartest people.
+
+We were trying our absolute hardest. And it was just so, so difficult. And I think what's happening with a lot of these AI companies is that, you know, Sam, you and I, I think we probably only really experienced push for the, for most of our startup career.
+
+Yeah. It's never felt like I was holding on. It felt like I was pushing and it got a little easier sometimes, but it was always resisting.
+
+Like I have this company now, we haven't announced this and I just like, we have this AI bot that will come and tell us our new contracts and our new revenue. Last week we closed a million dollars in new contracts in a week. And I was like, I have never felt this level of pull ever in any business I've ever done.
+
+And we're not working 10 times harder. It's just that like the market wants this type of product at a different level. I am sure that the folks like, you know, open AI and all these AI startups are going, they're experiencing a startup experience that is not, we, it was not anything like what you and I experienced, Sam.
+
+I think it was zero to 800 million users in seven months. Is that what Mary Meeker said? Yeah, I think so.
+
+I just wrote it up on Twitter. We could look or X, but yeah. 10% of the world, 10% of the world in eight months or something like that.
+
+Yeah. So that's why the rate of change is so high that everyone that's like a Luddite or a Debbie Downer is missing the point. Right.
+
+And before it looked like it was a bunch of looky-loos, like people were going and testing the product, but it wasn't really high retention. And then they've showed that like the, the action, it's not just the users that have doubled, but the usage per user has also doubled. Right.
+
+So you have like a, a double of a double. And that's, it's pretty obvious to me now that I'm kind of an idiot for not investing in this company, even at really any price point. Like this is, this is basically the Facebook of this generation, right?
+
+Like. Yeah. I don't think we realized that open, that chat GBT would have 85% market share at the prosumer consumer level.
+
+Right. That, that, that's what that, what all that meant surprised. If we, if we'd know, because ironically chat GBT was an experiment.
+
+It was a proof of concept. It wasn't really meant to be the product that the, the, the center of open AI, but. Like, do you beat yourself about this too?
+
+Like the way I do. Cause I'm, I just look back. I'm like, how much, how many hours have I spent thinking about AI?
+
+I'm supposed to be an investor. You know, like you're a SaaS investor. This is the greatest SaaS, you know, fastest SaaS growing business ever.
+
+Are you an investor in this? Well, did, did any of you have the opportunity to invest in it? I didn't.
+
+But you can hunt it down. You know, that, that's on, that's on view. You could.
+
+Yeah. For me, I want to, life is short. I want to own 10% or more of a startup and have fun.
+
+So hunting something down just is not my vibe, but, but it's the way to make the most money. Don't get me wrong. Nothing wrong with hunting it down.
+
+And, and someone's never heard of shot or my first million and just getting some money in. Like that's the smart way to do it. But, um, but.
+
+I bet you, um, I bet you, Darmesh. So I think on the pod, Darmesh, I don't know if he explicitly said 15 million, but he sort of winked at it when we, when we said so. He owned chat.com, which he sold to open AI for the, what he paid for it, which I think was around 15 million.
+
+And he, uh, got AI, uh, chat GPT stock. Yeah. There's a world where that becomes worth like in the ballpark of his HubSpot stock.
+
+I think. You know, that, that does probably right. I, it's none of my business, but I remember thinking with Aaron Levy, who's one of my favorites, you know, he was early in Stripe, early in gusto, like just back in the day.
+
+Aaron had a window before box went public where everyone went to him and he had a little time. Like he wasn't, and he just did all of them. And I'm like, man, if this guy did stripe in the seed and get all, like how, that's gotta be, it's none of my business.
+
+It's gotta be worth even more than his box stock. Doesn't it? It's gotta be, right?
+
+He owned 4% of box. I think when it went public and he's been grinding box for like 20 years now. I love him for it.
+
+Yeah. So he, he was just. He ran more money on the Stripe investment.
+
+Yeah. There was a window. Listen, it's none of my business, but there was a window.
+
+I've been doing this long enough. Right. Where before box IPO, he had time.
+
+Right. And then you just get, you just can't do this stuff when you're public. Right.
+
+Maybe Mark Benioff can. And so everyone, he was the guru, right? He was the one guy he was, and everyone wanted Aaron.
+
+And so he would write these checks that, you know, but I know I, we could look them up, but I know he did Stripe and Gusto in the seed round and a bunch of others. And it's none of my business, but I'm like, that's, um, there are these moments in time that could be worth more than all of his, his box shares. And, uh, so it just gives me even more respect to keep going.
+
+Cause so many founders, these have a different relationship to money and investment than a few years back. And a lot of founders would quit today if their investments were worth more than their founder stock. A lot of them do quit.
+
+A lot of them do quit now. You know what this reminds me of? So it took me at the hustle.
+
+I think it took me three years to get to a million subscribers, a million users. And that was like life changing for me to get as fast as some of these guys are growing. It's like literally like that per hour.
+
+And it's sort of like when you see a billionaire who's worth like 4 billion, like 4.2 billion, and you're like, man, that .2 divided by 10 would be awesome for me. Do you know what I mean? Like it's so, it's like hard to grasp how big and how fast, how big these things are and how big they're and how fast they're getting that big.
+
+Well, look, it's slightly under discussed and it's a crass topic. You might've discussed it, Sam, otherwise, but like. It's a crass topic.
+
+It's like it's right up your alley, Sam. But because OpenAI will be worth. You filthy pig.
+
+No, but when HubSpot, I've been around long enough to remember when HubSpot IPO'd and it IPO'd about an $800 million valuation. Okay. Today it's worth like 40 billion.
+
+But now like OpenAI will be worth a trillion. So my point is that the rich are so much richer. Right.
+
+Like the regular person's like a little bit richer in tech and it's great. Right. But because the big wins are a hundred or a thousand times bigger than just 10 years ago, just 10 years ago, the amount of billionaires I wrote up on Saster, the amount of billionaires just in Sass and cloud.
+
+I could find this post, but your jaw will drop how many billionaires are in it just because the mark, the numbers and markets are so much bigger. Right. There's already a hundred billionaires in B2B software.
+
+I wrote up a hundred billionaires. For the people listening, what personality types are like, who's poised? Like what does the 22 year old today look like who can pounce on this?
+
+Like what's the profile type or the personality type of these people that are just excelling like crazy? I think it's just two things. And it really probably hasn't changed since Bill Gates days, right?
+
+Starting Microsoft. But one is you have to be able to ship insanely good software, which maybe in some business software wasn't true for a while. Insanely good.
+
+Like Higgs feel that you're trying chat GBD. This is not trivial stuff. Okay.
+
+This is like insanely good software. And then the second one is you have to like be relentless to owning a market. There was a while in 2020, 21 where like being third or fourth was great.
+
+Hooray. Like things were so good that like, you'd be like, well, if I'm number four in the market, but I don't have to sell a lot of stock and it's calmer and I could sell my company for 400 million. That's better than IPO.
+
+Like the, now the, the best founders today are relentless to being absolutely number one in destroying and owning the market. Right. And because the markets are bigger, it compounds to something crazy.
+
+Right. I mean, again, just one example, but Sam, you and I are both investors and owner and like, you know, Adam was what, whatever, you know, high school dropout starting this company. I mean, he's going to disrupt the entire restaurant industry.
+
+He's already on the way there, not be number four. Yeah. And he has an incredible technical co-founder now an incredible engineering team.
+
+And that product owner, here's an interesting thing. Cause I invested in the seed round in 2021. Adam hates it when I say this, but the product was not very good.
+
+Dean was very good. The CTO, it did a lot, the product, but it was not very good. The reason it killed all its direct competitors, not indirect.
+
+It hasn't killed the big ones. It's just cause the software is so much better and that just compounds every quarter and AI is accelerating that even faster. So you have to build Epic software.
+
+But if you destroy these markets, that that's the path. But I just don't think this is a good time to be number four. I could be wrong.
+
+I could be wrong, but it had its age. It had its time. I actually disagree with you.
+
+I think I understand your sentiment, which I agree with, but I disagree with how you're phrasing it of there is, it's not great to be fourth or fifth place or whatever. We've had a bunch of people on this podcast that have built apps that were really fast money grabs where they got really big really quickly with tiny teams. And what I would tell them, which what the hell do I know?
+
+But I would tell them, I'm like, this doesn't seem durable, but so keep your team small and ride the wave and take all the money and like do do something else eventually. But it's a little bit different than it used to be because you don't need to build these huge infrastructures. You can have one hit wonders that crush it.
+
+You know what I'm saying, Sean? I'm curious if you have. Yeah, I think one hit wonders is the wrong phrasing, but I know what you mean, which is that you can.
+
+Yeah, a base hit now can provide you enough cash flow to a change your life and be set you up with like five more doors, whether it's investing or it's reinvesting into another company you start. And you don't have to build one 20-year durable company in order to be a winner anymore. So I think I understand what you're saying.
+
+Like back when we were in San Francisco early on, like the small lifestyle business would get you the equivalent of a job. Now it gets you equivalent, you know, like you would make a couple hundred thousand dollars if you had a lifestyle business, you know, that was like it was working, but it was small and it was solo and it was bootstrapped. Now those same solo bootstrappers have like 8 million ARR.
+
+So it's just a different scale that I remember. But you know what the difference is, though, that that is I think that term is you have to be thoughtful about it. In the age of A.I., when there's so much competition, you can build a two or three person company that's small, but the lifestyle businesses are being slaughtered.
+
+Because when these three kids come to SF working in the mission and they're working eight days a week and they've taken your little idea but made it much better, your lifestyle is going to be unemployment. So this term I think needs to die. It made some sense, I think, a few years back.
+
+It's okay. I just worry people are going to take the wrong lessons from it. You have to start in this conversation.
+
+You can do more with fewer people, but you better work harder if there's comp or find a space with no competition. Right. But the weird thing about A.I.
+
+is there's competition in spaces that two years ago had very little competition. Like what's an example that comes to mind? I'll give you an example.
+
+I, when I started investing, I did a couple investments in legal. I knew a little bit about legal. Okay.
+
+And no one wanted to invest in legal. They're like, oh, it takes forever. Lawyers don't buy anything.
+
+It takes forever. It's boring. It's a slow market.
+
+Now there's a 500 A.I. legal startups. And there's reasons for that, but you could not be at that sleepy pace.
+
+Same thing. I've done some of the best investment I've done has been in support in post sales. Okay.
+
+So if you've been wanting to do this type of startup, boring, resolve tickets, pick up the phone, right? Now there's thousands of voice startups. There's thousands of these.
+
+And so if you think you can run a lifestyle customer support startup, good luck. Right. Good luck because Delphi out of the box is probably better than you.
+
+You own a media company. You own basically a trade show that's incredibly successful. So let's just categorize that as a boring company that is not a technology company.
+
+For sure. Which is what, which is what I do as well. And Sean has done something like that in the past as well.
+
+I believe for the people like, like that, how are you using AI in like a, in a, in a, in a not tech company? Are your employees now becoming significantly more efficient? I mean, we only have two people now.
+
+I take it back. We have five people and we do 5 million per person. Now.
+
+Did you have more people before that? We had much more people before we had people in 2020 running. I didn't even, we have four designers.
+
+Now we have a little bit of a designer in AI tools. We used to have five people on this content team reviewing sessions. Now we have zero.
+
+Now we just have AI. So we got, we have none of the designers, none of the content people. All the ghost writers are gone.
+
+They're the worst. Right? Well, I write my own content.
+
+Let me drop you off at the airport. No, but what would happen? Let me go in the first order.
+
+Like, okay. Nine months ago, Yamini would come to a Sastra event. She's done it three times.
+
+Okay. And she would speak. And three months later, a ghost writer would write up a terrible summary of her thing.
+
+Just terrible. And I would cry and we'd ask them to fix it. Cause I can't do everything.
+
+Right. And then about nine months ago, they got better. They actually, they got, they weren't great, but they got better.
+
+And I hadn't actually used Claude. And then I went into Claude and I'm like this, she just put it in Claude. And they start charging us $5,000 a month for this.
+
+So like, we can do this for 20 bucks in an hour instead of $5,000 and waiting two weeks with their clients. Right? So we didn't need the ghost writers.
+
+We got rid of first. Right? Then we had five people.
+
+Then we had an agency we worked with for years and for awhile, it was great. And they would review all these speakers. There's a lot of work to work with speakers.
+
+You've done it, Sam. And when you have hundreds and hundreds of speakers, it's impossible to do it all. Right?
+
+But they decided they just didn't want to work that hard anymore. So they own, they wanted to charge us two to three times more and only do half the work. So it just didn't help us.
+
+Right? So then we're like, we're SOL now. We're five months before Sastr annual.
+
+And we just said, well, let's have our AI do it. And it, it reviewed 300 sessions, 300 slide decks, 300 presentations. But do you have to chase those 300 people down to give you the top?
+
+Yeah, we still have to, like, it doesn't get rid of everything, but it does 90% of the work. And it better. And it does 90% of the work three times better.
+
+90% of the work three times better. So, yeah. Was that you, the business owner who had to architect and come up with all these solutions?
+
+Between Amelia, who runs Sastr, this media business and events and me, yeah, we came up, no one else was like motivated to do it. Of course. That makes sense.
+
+And, and then like we have a time, you know, we have a little bit of a sales team, but then RAI just started to do all the screening and initial sales conversations for us. That helped a lot. Even for it's, this is a very niche business, a trade show business.
+
+Exactly. But to say you do 25 million in revenue with five employees is pretty breathtaking because I would have thought that would be on the lower end. Your business would be on the lower end of like, well, I still need people, but you have just proven that not to be true.
+
+And so it could do better with more people. It could do better with more people. It's not optimal.
+
+Your life gets worse. No, the honest, I don't mean to get off target. The real problem is I just can't it.
+
+And Sam, this is why you think I'm grouchy because of early conversation we had. I've just struggled to find enough A tier talent that wants to do this non sexy stuff. Okay.
+
+I would love to have 20 people on the team tomorrow. I have budget for it or at least 15, but, but I don't need someone that shows up to a meeting with the sponsor and doesn't know what we do. Okay.
+
+I don't need a designer that doesn't finish the design until after the event, which I had once in the past, like send us a big bill, but didn't know what we do. And then send us a big bill, but didn't finish the assets until after the event. I just don't need that.
+
+Right. You know, I just don't, I don't need, I don't need someone managing 10,000 people in our, in our Saster annual that forgets to do catering. Like, I just don't need, I'd rather have the AI come up with the catering.
+
+The AI did our catering schedule this year. Well, can you talk about the start of Saster real quick? So when you started this thing, you had sold your company.
+
+Yeah. Right. Was it, was it after you sold to Echo sign or where did you start?
+
+To Adobe a long time ago, 2012, but yes. So 2012, you sell your company. Great exit.
+
+As I understand it, you're like, I've retired twice. I got in shape. I picked up a hobby and realized, you know, like I still love building.
+
+So, so you sell your company. Do you retire right away? Basically you take a break.
+
+Well, after, there's probably a little bit of parallel to Sam here. Both times after I sold my startups, I sort of didn't work for the better part of a year and just got restless for different reasons. Right.
+
+And I just got restless. And in fact, both times after about a hundred days, 120 days, I got a little depressed. Maybe depressed is too strong.
+
+We're lost, lost, right? Definitely lost. I remember, you know, my second startup emergence capital, which is a very successful B2B venture firm, had a CEO every year, had a big CEO meetup, right?
+
+Where they would come. And in my, in my class, my group, I had David Sachs and Aaron Levy and Peter Gassner from Viva and Rene Acer. And then after I got acquired, I got to go to one more and they said, you can't come back anymore.
+
+You're not, you're not part of the, you're not part of the CEOs anymore. I didn't, I got, I was off the team. And you know, Ben Chestnut did an interview just a couple of weeks ago with Kleiner Perkins and said the biggest issue when he sold MailChimp for 12 billion or whatever.
+
+12 billion or whatever it was, is what he knew he would be instantly irrelevant. He knew he would be instantly irrelevant. He said, I am now I'm irrelevant.
+
+Now MailChimp's of the past. He's like, you wouldn't even build a tool like a MailChimp today in the age of AI. Hmm.
+
+Right. Maybe that wasn't quite the point. So, yeah, so, so that was it.
+
+And then, but then what was fun for me, and this is, is a long time ago, but what was fun for me is because I was the first of those CEOs, like the Aaron's and the David Sachs that had an exit. I didn't have to pretend anymore. So I just, maybe Sam thought I was grumpy, but I just shared every mistake I made, how I screwed up my first VP of sales, how I screwed up meeting customers in person, how I screwed up marketing.
+
+And there wasn't much content back. It's a little different than today. There wasn't much content.
+
+So everyone just started to read this. Were you being strategic? You're like, oh, I'm going to start doing content marketing.
+
+That's going to lead to this, to lead to this. Or you're just like, I've got time on my hands. I've got stuff to say.
+
+I want to start blogging. I did what now people give advice to, but I didn't, there was no one to give the advice. I just wrote one blog post a day on a mistake I made.
+
+That was my, my paradigm, right? A mistake I made as a B2B founder that got to tens of millions. And back when Quora was a platform and people listening to this won't even know what it is, but Sam will.
+
+I answered one question. I answered one question. So people, this was a way for people to ask me questions.
+
+And they, those were great because they were very tactical, right? They were very specific. So I would do one a day every day.
+
+And it does, you know, I'm a, it's a little different today in AI, but generally speaking, if you do that, it compounds, right? It doesn't compound the same way revenue does. But if you do my first million every week and you just keep working at it and it does seem to compound, doesn't it?
+
+Just not, not quite as linearly as we might hope, but it does compound. But I didn't know when there was no advice back then. I just did one, one and one a day.
+
+You were also one of the first people to do Twitter. You were one of the first like, uh, tech people to like, you know, for a lot of tech people, Twitter didn't boom until COVID. Um, but you were doing it very early.
+
+You know, it was like you and Gary Vaynerchuk. Twitter started with tech people. What do you mean?
+
+I don't think it was taken seriously. I think that, uh, I think Jason looked at it as a craft where he was like, I'm going to grow a huge audience here. I think Sean, that for a long time, Twitter was an afterthought to a bunch of different social media platforms.
+
+Now I think it's bumping. I just think I approached it as a microblog, which is what Twitter in the old days called it. So I would put valuable content on Twitter instead of being grouchy or just, just, just, you know, people.
+
+And so I was early to putting valuable content, I think on Twitter. Right. Um, I think if I benefited anything in content, I think it was just being early.
+
+You were early. You were early. You've been, dude, you are an output machine.
+
+And the stuff that you write about is lyrical. Like you write about things. SaaS is a stupid, boring thing.
+
+You write about stuff where I'm like, I don't even own a software company, but I want to, I love reading what he's, you know, it's kind of like dye workwear with clothing. It's like, you don't have to know about clothing, but when he talks about ties, for some reason, it's kind of exciting. Well, that's a good insight.
+
+My actual real goal of doing it was to make it more fun, building boring business software, make it more fun. Not, not, not in jokey way, but to celebrate the fun part, the exciting parts of it. Right.
+
+That, that, that was my version of what Sam said. Did you think, okay, then I'm going to be investing. This will help with deal flow.
+
+And like, where did the conference come in? Because that's a pretty gangbusters business. I can't imagine you thought at the beginning, we're going to be doing $5 million per employee.
+
+We're going to do $25 million a year in this business where we have kind of like a little, like our monopoly. We're the big fish in this small pond of, of, of basically like thought leadership for SaaS businesses. Well, the pond, there's more thought leaders today, but if you, if, I mean, it's a while ago, but if you are curious, I just wrote this just because I was a blue and it was something to do, something to share, something to add value to the world.
+
+Right. No goals, no goals. Um, I certainly wouldn't start off with a blog today if I started off today.
+
+Right. As, as archaic it is, there still is SEO, but. What would you do?
+
+Uh, even it's not me. Right. But of course I would do video.
+
+Yeah. I do video, but I'm not, you got like, it's not my natural, I'm a good writer. I'm not like a, uh, Ernest Hemingway, but like Sam said, I have something special.
+
+I'm able to convey ideas in a way that helps people in writing. And I still think today that's a rare skill. Right.
+
+Dude. I hate video. Sean's pretty good at it.
+
+Sean can talk to a camera by himself and succeed. I hate it. I hate video.
+
+I think that like, I think there's a generational gap. You need to put a, a super cut of Sam's ad reads. Oh my God.
+
+They suck dude. Sam's like, did you get ad reads? It sucks, man.
+
+I, I, it's not, I, I'm incredibly uncomfortable doing it. I think, but I think that like the 25 year olds today, just like the fact that FaceTime has existed, they're so much better at it. Uh, so there's like a huge, there's a generational gap that I'm like four years too old to have caught.
+
+But if it's of interest, it might not be. The investing was an accident too. It was an accident.
+
+I actually, for about a little less than two years, I worked at a VC firm that had invested in me. So they, they recruited me to help them. I had no real interest in investing and I showed up and I like, I don't know what the hell, like, this is not me.
+
+I don't know what to do here, but luckily I'd started this blog and founders started to come by the office. So first the founders of pipe drive came by the week I started. And that was my first investment that sold for a billion and a half.
+
+Right. Then other founders started, then founder of talk desk came by. That one was worth 10 billion in this last round.
+
+Then the founders of Algolia came by. That's worth two and a half billion. Um, then the founder of sales loft came by.
+
+We sold that for 2.3 billion cash in 2021. And they kept coming by and I'd be like, well, let's just invest in these ones because these are the best ideas I got. Like I'm not the outbound guy, like finding Sam Altman.
+
+So I just invested in the five best guys that came by the office the first year, but they're all worth ended up being worth a billion dollars. So, so that's, I, I only, so the weird thing about me for investing, and then I could tell you about events real quick, but I don't spend all the time. I only, I'm, I'm different than 99.9% investors.
+
+I only do Sastr super fans that are high intent inbound. I don't take favorite meetings. I don't do warm intros.
+
+Uh, if you tell me Sean, there's a startup that you want me to meet to invest in, or Sam did, I would ask, is this, do they desperately want me? And they'd be like, no, they haven't heard of Sastr, I'm out. Right.
+
+But if they really want me, they probably just email me. So I don't even want a warm intro. I don't even want a damn warm intro.
+
+That sounds like such a leak in your game, by the way, that sounds like an unnecessary bar, right? Like not only if I get a warm intro that they say this person's kick ass and they'd love to, you know, but it's like, are they a huge fan? If they're not a huge fan, I'm out.
+
+That, that just seems like unnecessary. Yeah, but the thing is like investing so much harder than it looks, the odds that any start, like seed startups going to truly be worth billions of dollars is much lower than it looks on the media. It's really hard.
+
+And if you don't have, like, if you're not incredibly intense, if you're not incredibly, if you don't want this more than life, you're not, you're gonna, you're just gonna sell your life. You're just gonna sell your lifestyle business, which is very logical. Right?
+
+Oh, so you're basically saying if they're not like basically digging my content, they're not taking as seriously as they should. Is that, is that the implication basically that if somebody is seriously trying to build a generational company, they should be loving our content and therefore they should want me on the cap table. I want them sending me a cold email that is so good that you would invest off the cold email.
+
+This is how I invest. I want a cold email that is so good. That is so good that you don't even need, you almost don't even need to meet them.
+
+The only point of the meeting is confirming that you want to invest. Like every investment I've done, that's good. I've wanted to invest before the meeting.
+
+Every good outcome I've had this. That's how I invested in the owner. I'm a little bit after you guys, but I got an intro that was like, this guy's one of the best founders I've ever met and ever invested in.
+
+And this, this company is growing incredibly fast. Yeah. And then he sent a cold email basically right after that, which was like, Hey, here's why I want you on board.
+
+And here's my last three investor updates. And in that one of the things that he shared was they had done like a hack week. So there was like some loom videos of the team sharing their hack week projects.
+
+And I actually just watched those. Yeah. And it just like the, the caliber of the team was really incredible.
+
+Like you can see the caliber of team in a hack week project, right? Cause almost by definition it's here's just like one or an engineer and a designer. They come up with their own idea.
+
+They have a very short timeline to ship it and then they have to pitch it and present it. So you get to see like the, the quality of idea, the quality of speed of execution and the quality of salesmanship on one from like without abstracting away the founder is like, that's the team itself. And, uh, I emailed him back with, you know, I was like, we don't need to meet.
+
+I'm in. Yeah. You, that's, it's not the only way to invest, but what I can tell you is if the email is mediocre, they're not going to make it.
+
+There are exceptions. Okay. I know there's exceptions, but man.
+
+Dude. So we just, um, at Hampton, we're hiring a bunch and I'm putting together like values to look for when hiring. Yeah.
+
+And I only made it, um, uh, I think I'm only going to keep it at like two or three values, but ability to write an email and communicate is the, is one of the three. And I will tell you of the re one of the reasons we only have the five people is I have lowered the bar at Saster in a way I never would as a software founder. I've lowered the bar again and again, I've hired folks for the email.
+
+Wasn't that great. I've hired folks where they put an E in Saster. I've hired folks that didn't do the research before they started a hundred percent failure rate.
+
+A hundred. Like we already know this, right? But I've, I've lowered the bar.
+
+Cause I'd be like, well, this isn't as cool, cool enough. I got to take who I can get. Right.
+
+All always a negative worth less than zero. Right. Total, total zero.
+
+Yeah. You have this great tweet. You said you think startups are about a great idea, but in the end they're about great recruiting.
+
+That's what you're talking about. They, they, yeah. And if you talk about owner not to use one, but it's cause it's a mutual issue.
+
+I will say there, there actually are lots of risks with owner. And I invested very early. You didn't see the two times we almost ran out of money.
+
+Now we have infinite capital, a lot of other things, but I actually do not know a more relentless recruiter than Adam. I don't know a more relentless recruiter than Adam. And that, that is a rare skill.
+
+We all learn it as, as CEOs. Like we get bet. We always get better at recruiting.
+
+Right. What does relentless look like? Like what does that mean?
+
+Literally reach out to the 200 best people in the job. Talk to all of them. Set up meetings, cold, warm, lukewarm, direct, LinkedIn.
+
+Who are the 200, like talk to everyone in the world. Who are the 200 best CMOs that I could possibly hire? Don't pretend to talk to 200.
+
+Don't actually only do five interviews and pretend you're doing them. Do 200. That's what the S tier recruiters do.
+
+Right. The S tier. I had an old co-founder and I wish we'd gotten along better, but he was one of the, one of the best I ever knew.
+
+And I'd roll into work every day at eight o'clock and he'd already handed me two candidates to talk to that were really good every day. Every day. I've never, Adam has that, but I'd never seen that magic.
+
+Right. And I don't have that skill to every day. He'd found a way.
+
+Hey, I've got this marketing. The sales guy wants you to meet. Can you talk to them today?
+
+Two more, but then they'd always be great. They're not, they weren't always be a fit. Right.
+
+That's how you only way you can scale as an executive, unless you have a three person startup. You have a few more of these really great, like how to be a great CEO concepts. So one is to be a great, great CEO.
+
+You have to enjoy telling the same stories again and again and again, hundreds of times. Yeah. Yeah.
+
+Even Sam Altman does that. Doesn't he? It's pretty much the same story, right?
+
+It, it, it, it, it is that, that one, the, what I like that Sam does. I can comment. He tells you the future, like Elon Musk, if you're listening.
+
+So what do you mean by that? Well, you know, he does this, you can make fun of this goofy video he did with Johnny Ive. I don't know if you saw it when they did it.
+
+Like perfectly lit and they're having coffee in North Beach. My favorite rom-com of the year. Yeah.
+
+You think, oh, this is silly. Right. But, but listen to what he's saying.
+
+He's telling you that in the not too distant future, you will be on chat CPT 24 hours a day. Right. And I'm making the bet that Johnny Ive is the guy to do it.
+
+I'm not betting that he's going to build a rabbit pendant. It's not that I'm making a big bet that he knows UI and UX so well for the next generation that he will solve this problem where we are on. And Sam's already on chat GPT more than the average today.
+
+Right. The average person's on like 22 minutes. You said you're on it more, aren't you?
+
+I'm on it all day. Yeah. So Johnny Ive is going to figure out a way that it's in your ring and it's in your phone and it's in your glasses like Ray-Ban.
+
+And he's going to figure out stuff we haven't figured out. And it's in our, it's in Sean and I's headset. And we are just like, what if it was in this headset?
+
+Like this is totally passive. Right. I mean, I don't know if you guys have used granola or the newest notion.
+
+It records everything you do all the time in the background without permissions or visibility. What could you do? Why granola is so successful by for note taking versus, I don't know if the one you said is, does this Sean, but I, you know, granola just records everything at the hardware level.
+
+Like I could be recording us in granola right now. I uninstalled because of that. And you, we had, we had, we had a chief customer office, officer summit, 200 of the best chief customer officers at Sastr this year.
+
+And the guy that put it on that day wrote up the whole summary of every single session that day, like very, very good. Even I couldn't do it. He's like, oh yeah, I just, granola just listened to everything and it wrote it for me.
+
+And it was done that day. Do you feel this way, Sean, where I hear this and I'm like, this is so exciting. And then, but the other side of me is says, um, this is so intense.
+
+I have to like, I hopefully I can invest in something and make a profit. Otherwise I need to take my winnings and go home and hopefully they compound, compound by themselves because there's an intense future that you're painting here. Like, I don't know how I feel.
+
+I sometimes I'm like, this is so exciting. I want to get in. This is, this is amazing.
+
+But then other times I'm like, but if my life depends on this, I don't want to play this game. So this seems so intense. I know exactly what you mean.
+
+I've, I've now experienced basically like I graduated 2010. Right. So when I graduated, I basically like, that's when the light bulb turned on.
+
+I don't know. I don't even, I don't even remember life really before that. You know, I, I didn't even know the great financial crisis was happening.
+
+I was sitting at a Chick-fil-A somewhere in 08. You know, I, I just was oblivious to the whole, to the whole world. Right.
+
+So when I came out 2010, basically three things have happened since then that were of note. There was mobile. So right when I moved to San Francisco, I remember we, you know, I joined Birch's Star.
+
+I joined Birch's startup studio and there was a single mobile developer. And he would, the, my very first day, he was giving a tutorial to the other 12 engineers who were like, you know, super seasoned Silicon Valley engineers, but they just never built an iOS app before. Yeah.
+
+And I'll, and like that ratio of like one mobile developer to, you know, 12, 15 non mobile developers within 12 months, it flipped. It was like, if you're not doing mobile, what are you even doing? Why would you do a startup if it's not a mobile startup?
+
+It was like a, a, a dumb idea in, and by the time you're, you know, a year later into the job. And so I saw mobile come and mobile was one of those where I would say it was obviously going to happen, but it was a fog of war. You didn't know where the opportunities were.
+
+And actually the opportunities were very different than the previous wave. So like Michael who had made a billion dollars in web 1.0 or 2.0 or whatever, like, you know, the Facebook era, he didn't realize even Facebook didn't realize Zuck didn't build mobile apps. Right.
+
+He was like, no, no, no, it'll be mobile web responsive. That'll work. And you know, the fact that basically Uber was like the big Uber was like the biggest winner basically during that, like that era when we, when we launched and Uber was like physical world interaction.
+
+Like you push a button, but a car has to show up and you have to manage these drivers. And that looked nothing like the winners before. So there was like, we all knew mobile was big, but we didn't understand the fog of war.
+
+The fog of war prevented us from seeing the path to victory. Yeah. Then the next one was crypto.
+
+Crypto had a different flavor, which was, it was not consensus that this was going to be big. In fact, it was very fringe and you looked a little crazy for saying this was going to be big. And so most of us missed it for that reason.
+
+And now this is the really the third one. I'll like take COVID out. Cause I was, that was a little bit of a different thing.
+
+This is the third one where again, everybody agrees. This is going to be huge. This is going to be the biggest of all of them.
+
+This is the biggest opportunity ever. Right? So everybody agrees on that, but there's complete fog of war because like you're saying, even the apps that are working get disrupted.
+
+There's like so much creative destruction there. So much disruption. One moment you think it's the models that are going to get all the money.
+
+Then you think it's Nvidia that's going to get all the money. Then you think it's the applications that are going to get all the money. Nobody knows how to win.
+
+Even on the investment side, like the VCs also you're sitting there and you have this really weird feeling because you know, this is the time when all the money is going to get made. The generational money is going to get made. Now you still have no idea where to put it.
+
+And people are trying to figure that out in the fog of war. It's like that Warren Buffett phrase where he says, you see who's swimming naked when the tide comes in or goes out. You know what I'm saying?
+
+The idea being like, you know, when there's turmoil, that's when you get greedy. But the hard part is a the courage and be to know when the turmoil is actually happening. You know, are you in that period now?
+
+We all know it's happening. This is the time. But do you or I have the want desire courage to actually get after it?
+
+And half the time I think, hell yeah, this is amazing. The other half of time, I think this is this is scary. I don't read a book.
+
+Yeah, I want nothing to do with this. You know, do you guys agree? There was someone I wish I knew it was someone on Twitter had a good tweet that resonated with me on this one.
+
+Like the smartest play, if you can possibly pull it off today is to go make five or 10 million cash out and just chill because you can't predict where it's going to go. Like this is the world's going to like whatever you could do to liquidate your assets. Now they may be worthless down the road.
+
+So liquidate them right now and chill. If you don't if you don't see the future, because this is the time. Right.
+
+I do think and I also think, you know, I used to it wasn't until we ran our own AI again. I used to think the node coastal. I mean, obviously off the charts smart.
+
+Right. But when he used to talk about how AI was going to bring mass unemployment in tech, I used to think he was just being crazy. Right.
+
+But now I can see it. It's also coming. I can see all the I mean, McKinsey just laid 10% of their their team off, but it's just to start because they put in all of their learnings, all of their data into their own AI like Saster.
+
+And now they just ask, they don't need the kid anymore. Right. Half of our sales and marketing teams are going to be gone in two years.
+
+There will be no BDRs in a year. And so this mass change and it is hard to make bets. So what's happening in venture for what it's worth.
+
+There's really two things happening right now in venture. 70% of the money is going into growth. And right now it's a great play.
+
+You do Claude at a billion and then it goes to 3 billion and the valuation goes 5x. You put in 200 million. That 200 million goes to 600 million.
+
+Right. You take home 20% of the profits. You make 80 million dollars in a year.
+
+Right. That's where a venture is going. All growth.
+
+It's all growth. And then it's doing seed early stuff. But implicitly people are assuming a very high loss rate and they're paying very high prices.
+
+60 million, 100 million dollar valuations at seed. And they're hoping it's worth billions, but they understand like there will be uniquely high loss rates too. They're not saying it, but they know it.
+
+Right. They know it. Yeah.
+
+And that seems hard to make money. Right. And high loss rate.
+
+Doesn't that. Well, if you have a hundred billion dollar outcomes, if you get one per fund at all, that's the bet they're making. That there'll be 100 billion dollar outcome for each venture fund.
+
+Right. But back when HubSpot, again, when HubSpot IPO, the bet was you'd have a billion dollar outcome per fund. One.
+
+Right. Now it's a hundred billion per fund. So if you believe you'll do that, you can do some, you can do a little analysis or waterfall and you can just have Claude do it for you.
+
+You don't even have to do the analysis yourself anymore. I did this over the weekend. You just got to find one of them and they all, the rest can crash and burn.
+
+Right. So what is your game plan? I have decided that whatever brand I still have and my excitement and my ability actually to know more than because I've done my AI actually know more than most people that aren't that aren't on the like programming tool side.
+
+I've decided that I'll get one, at least one 10 billion dollar deal done in the next three years, two years, one, no matter, I'm only in it for one. Whether that means I have to do 20 investments or one more, it doesn't matter. I'm in it for one.
+
+Right. At the seeds at the early stage. Yeah.
+
+I want to own. I want to try to get one deal where I own 10% or close. That's worth 10 billion.
+
+I've sort of done it once on paper. I've done a couple billion dollar ones and I'm just, and I've missed a lot. What would that be worth to you if you own 10% at seed of a company that outcomes at 10 billion?
+
+Well, multiply if it's just 10, if it's just only 10 billion, that's it. But multiply it by 10%. So that's a billion.
+
+Right. And then you keep 20 or 25% of that. Well, there's so much dilution along the way too, right?
+
+That's what I'm asking. You don't account for dilution? No, I'm simplifying my goal.
+
+You could own more, like you'll own more and then there'll be investments that are highly diluted. So at a, at a $10 billion outcome at a seed stage, you are looking to make $200 million. Yeah, that would help.
+
+Okay. That'd be cool. I think, listen, if you really want to know how venture, if you really want, I know we're going off to talk it.
+
+There's two ways that I think venture works. If you want to simplify a lot of it. One, it's a great job.
+
+One, it could be a mediocre job. It could be a great job, or you could try to make at least $100 million. I think anything else is, it doesn't exist.
+
+There's a gap that doesn't exist. Cause you're either in it for the fees and the job. Like initially like, wow, I'm a kid.
+
+I'm getting paid $250,000 and I just get to take meetings. It seems great. Then you're finally a partner and you make a couple million bucks a year.
+
+And that's like much better than like some other job. But there's a pretty big gap between that. Like you don't, it's really actually, unless you're great, it's really hard to make profits in venture or carry.
+
+So the game is to make a fucking lot of it. Okay. And listen, and the thing is, if you're in a big winner, if you're in multiple big winners, just do the math, Sam.
+
+Like that's why most VCs make nothing except a good salary. But there are a bunch that have made billions because if you're in like three or four or five of those $10 billion outcomes, which is very hard, then you make a billion bucks. Now the founders hopefully make much more.
+
+It is fair. Right. You're either playing that game or it's a performative game or it's really just for fees and salary.
+
+Like there really is a, there's nothing in between. But you also have the media and events business too. So you also have this cashflow.
+
+I assume that that's a very profitable business. It wasn't before COVID, but it is now. Yeah.
+
+So you, you have that either way. Yeah. I mean, I made enough as a founder.
+
+I have a safety net, but I don't, I actually view it as a net negative for investing, but it is, but it's a passion. We do a good job, but yes. Last question.
+
+I know you have college age kids. Freshman, sophomore. Yeah.
+
+What are you advising they're going to do when they're saying, dad, you know, what should I do for a job? If they, if they asked you that, what would you advise them to do now? First, I, I, I don't think a lot of these kids are, will ever have a real job.
+
+They will find ways on the internet to make money. So, so I, it is interesting. There does appear to be a gender difference, which I don't like between boys and girls of my sons.
+
+My son's a sophomore now, 10% of his class didn't even want to go to college at all. And they just decided that they could, they all had this vibe. I'm going to go to Eastern Europe or it's cheap and I can just make money on the internet.
+
+I'm never going to have a real job. There's no interest in ever having. And I don't think my son really wants to ever have a real job.
+
+And he's super smart. Like he's much smarter than me. Math.
+
+He's now he's deep in AI. He can, he's deep into cursor and windsurf. He pays for cursor out of his own pocket.
+
+He's running assembly language now, so he can code to the metal and do everything, but he'll never have a real job. Okay. He's like worst case.
+
+I'll work for Airbnb from. Right. So he's never going to have a normal job ever.
+
+Okay. My daughter, it's interesting. She's at Stanford.
+
+Okay. And the vibe at Stanford, this is, if you ask, it's kind of interesting. This was a shocker to me.
+
+They all want to go to grad school now as freshmen. So they're all, they're all architecting their classes, their majors. So they can go to grad school so they can defer work.
+
+Like when I was in college, people cared about grad school. Then I think people made fun of grade. Like, why would you go, go to grad?
+
+Like, why would you go to grad school? Like go, go, go to, go to the internet. Right.
+
+That was the vibe for, for 15 years. Now they all want to defer reality. And I don't, I don't know that there'll be any, any jobs.
+
+And I don't know that people want to work. I honestly don't think, and I don't mean this negatively. I don't think a lot of the current, they want to be creators or they want to do other things.
+
+I just, whatever made us want to work, the three of us, I don't see it in the next generation. Very rare. The women want to be educated and the men want to move to Eastern Europe and make money on the internet.
+
+I'm not sure it's the women want to be educated. I just know her group does that may not, but, but the men not wanting to work at all, like, like coming out of high school and just saying no fear, like no fear. I don't know what it was like when you, when I, during my life, I was worried I wouldn't have a job at different times.
+
+Right. I was worried during college. I wouldn't have during, I was always worried.
+
+There's no fear. When I was a, when I was a senior in college, I remember thinking, man, I would kill to work at KPMG and make $40. $45,000 a year.
+
+Like I, I, I remember thinking like that would be a home run if I could earn. See your yearbook quote. I'm like KPMG in Nashville, Tennessee.
+
+If I could make, if I could get 50 G's from Deloitte, that's a home run. But it's so, so I think, I don't know that they're going to work. And then I think a lot of the 2021 generation isn't going to work again either.
+
+I'll give you an example. So someone I knew a little bit, um, there's a lot. So I, I did this exercise.
+
+Um, I just like lowering the bar for hiring. I did this exercise. I know I shouldn't do it, but I want to try it anyway.
+
+I reached out to folks that had that circle on LinkedIn. What's the circle on LinkedIn out of work. What's it called looking for work?
+
+I like, yeah. Open to work. I worked out to folks that I knew a hint of, I hit, maybe I met them backstage at a hustle event or something.
+
+I, I, I met them in passing. Okay. Enough that I had like a micro connection that had been out of work for six months and I gave them jobs.
+
+All of them in the end basically said, I want to make 200 K or more only to do meetings or manage teams. None of them were willing to do any work themselves. None of them.
+
+The people with the circle. The young people, the Gen Z's folks. Open to chill.
+
+Their, their expectations for salary or for comp is so high. Well, there's that too. I'm not sure how folks that are already been out of the workforce for six months, but yeah, the expectations are they'd rather not work.
+
+That's the thing. A lot of people would rather not work than get their comp. Right.
+
+I mean, yeah, that sounds good to me too. I don't know how everyone's like, listen, there's obviously an element of privilege in this. Right.
+
+And for folks that are living in different geographies or others will think this is disgusting. And I think they're right. But I also think folks who have made a little bit of money in tech or otherwise are happy to live on relatively low amounts of money with, with their savings or others rather than just take a job.
+
+No matter what it's what, what the internet says. Right. Jason, is this a stupid mental model?
+
+I do this sometimes. If I want to hire somebody and I'm interested in their $200,000 a year, let's say. Yeah.
+
+And let's say my business is 20% net profit margins. I think to myself, this person has to basically generate a million dollars of extra revenue just for me to break even on their salary. Now, maybe they're doing it in coordination with a team, but like the addition of this person, in order for it to be a positive ROI, I have to believe that adding this person yields me a million dollars of extra revenue.
+
+And when I do that, I mean, 90% of the time I'm like, there's no chance. No, this is like that, that wouldn't even make sense here. So I don't know if my mental model is broken or if I'm actually onto something with that.
+
+Is that, how, is that, is that a really dumb way of thinking about that? That is, that is the model for sales reps. Like traditionally a sales executive, whether they sold software or an automobile, a sales executive in base and bonus would take them 20% of the profits.
+
+If you look at how car dealers, car dealers have low margins, right? But if you look at the margin to a car dealer, the, the, the guy selling you the, the new, the new Lexus net net would take them 20% of the profit to the dealer, right? If the dealer made no profit, they'd make nothing.
+
+If they ripped you off and got you to pay list plus the, the CD player for a thousand dollars, they'd make a lot, right? Sales is the same way because in, in software, the margins are almost a hundred percent. Reps would traditionally take home 20 to 25% of what they closed, right?
+
+Sales. For other roles, it's really just about leverage and you're often just hoping to break even. But even to break even, let's say it's a $200,000 employee to break even, you need a million dollars of incremental revenue to break even on that.
+
+Yes. But one way, this is what I learned. For example, one way that law firms traditionally were structured, this is slightly interesting and it may be different today, but traditionally law firms are structured.
+
+Most law firms, not the big, not the litigators, but like your corporate law firm that helps you on stuff. They never made money on the associates. Okay.
+
+So why would you have associates? I didn't know this until I asked a partner that I worked with back at the day. He's like, cause I just don't want to do that work anymore.
+
+I don't want to write the certificate of incorporation for Sam. I don't want to do the NDA. Like I don't, we don't make any money net net net of training and offboarding and churn and the, and the desk and the computer.
+
+We don't make any, but I just don't want to do the work. So for your organization, you'll also like just to not have to do the work. Right.
+
+But the problem with AI is it lets us do more of the work. That's the weird dislocation. So instead of paying that person, like you can't even find the $200,000 person, at some point you'll just do the work yourself with AI.
+
+Right. That's the cognitive load. But that's why it's the mix.
+
+I don't think everyone can be profitable. Some folks just have to reduce the load on everybody else, but AI is going to do more of it. Yeah.
+
+Right. You're full of information. I, um, you know, I think Theo Vaughn described one of his guests as a blind Russell Terrier or Jack Terrier or, uh, no, sorry.
+
+A, uh, a deaf, uh, what was it? A deaf, uh, fucking ruin this joke, but, uh, We're going to laugh anyway. What was it?
+
+A deaf Jack Russell Terrier where he like gets out of the, of the car and he like goes crazy to kick, stop him from yapping. Uh, that's kind of like what you are where it's like, we just like hit record and we just like, you just roll and we just are on, on board and listen to you. And, uh, you're the man you, um, you're just full of, I think really good comments that are done in like strong taste and tend to be right.
+
+Jason, don't get confused when he calls you a blind deaf dog. That's he's trying to give you a compliment. That's just, he does a little bit differently.
+
+Yeah. Yeah. And grumpy.
+
+Yeah. And he goes grumpy. So you're welcome and welcome to the show.
+
+There's a goodie bag for you on the way out. Thanks man. You're the best.
+
+Um, that's it. That's the pod. Yeah.
+
+The pod. That's the pod. I love you.
+
+Yeah. I love you. I love you.
+
+Thank you. Thank you. You're welcome.
+
+I love you. I love you.

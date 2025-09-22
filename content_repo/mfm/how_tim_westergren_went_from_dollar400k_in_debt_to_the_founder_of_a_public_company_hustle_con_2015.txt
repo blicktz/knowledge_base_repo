@@ -1,0 +1,233 @@
+Thank you. I really enjoyed Walker's comments. I would take that all to heart.
+
+That's a really good good information for you. So I'm just going to tell you kind of the quick story of Pandora, the circuitous path we took to get here and maybe in sort of our experience there might be things that you will find interesting or helpful in your own journeys. I can just sense the entrepreneurial energy in this room.
+
+When I was walking through the lobby on the way in, it was like humming. It's really fun to be around. So I went to school at Stanford.
+
+I was an undergrad there and I studied poli-sci, which is Stanford's shortest major, which allowed me to do a lot of different things as an undergrad. And I had a lifelong passion for music and it really burgeoned when I was in college. And when I graduated, I knew I wanted to be involved with music in some capacity.
+
+I didn't really know how I was going to make a living at it. And I was completely unprepared for any kind of job given my poli-sci degree. So hunted around and wound up getting a job as a nanny.
+
+That's a respectable profession. Actually, manny is a proper term for that. And I was a manny for the first five years after school.
+
+That was my job. It's not really what my parents expected when I graduated college. But kids are my other lifelong passion.
+
+So for the first five years after school, my life consisted of getting up in the morning, sitting down at the piano and playing piano until about one or two in the afternoon. And then going to pick up these two kids, nine, 10 year old boys at elementary school, taking them home and hanging out in the afternoon, playing wiffle ball on the street with a bunch of kids and making sure they did their homework, then cooking dinner for the family and then coming home and getting back on the piano and playing until I went to bed. So I was playing piano eight, nine hours a day and then hanging out with kids.
+
+Pretty good life. Did that for a while and then wound up getting involved in rock bands. Spent about seven, eight years living out of a van, being sort of part of this huge sea of, I think, a lot of talented but completely invisible working musicians.
+
+And eventually kind of grew tired of that. And then wound up a film composer writing music for picture. Started with sort of small, short student films and kind of gradually worked my way into doing sort of independent feature films.
+
+Took a few years. So I was kind of on this winding road and over the course of that experience as a musician, a bunch of ideas began to kind of accumulate in my head. One was of course all this undiscovered incredible music that I'd experienced or seen as a musician.
+
+And then as a film composer, my job as a composer really first and foremost is to figure out the taste of a film director. And the way we would do that and I developed sort of a methodology is I would sit with a director and we would actually watch a, the completed locked picture with sound effects and dialogue. But no music on it.
+
+And I would bring with me a stack of CDs and I would play songs for them. And we would talk about the music and it would sort of give me their feedback to it. And I would use that musical interview, kind of like a musical Myers-Briggs test to sort of glean from them what they wanted in the score for their film.
+
+So I'd go back and compose something. So I developed kind of a musicological profile of their taste. And I did this for a few years and then one day I read an article in a newspaper that literally kind of, a light went off in my head.
+
+And I thought maybe I could codify this taste profiling I was doing and turn it into a technology by marrying it to math and build an algorithm that would allow people to discover songs, connect songs based on their musicological attributes. So this taxonomy I had been kind of forming in my brain as a film composer, but I would actually write it down and use that as a connective tissue. And that could become sort of the solution for people discovering all these great bands that nobody knew about.
+
+So 1999, so it was the sort of apex of the first big consumer.com boom. I shared the idea with a friend of mine who had already by then started and sold a company. So I've been through the whole life cycle of a startup and same John craft and he said, Hey, that sounds like a great idea.
+
+Let's go start a company. I said, Well, how do you do that? He said, Well, it's right.
+
+A business plan. Well, let's I do that. I'll show you.
+
+So we spent a weekend, put together a business plan and about two months later had a million and a half dollars. That was how it was done back then to launch a business. And the, the cornerstone of the idea was this, what we came to call a music genome project, which was this enormous taxonomy fits squarely into the completely unscalable idea that Walker shared with you before this.
+
+The genome is a 450 attributes list of musical, so musical taxonomy that essentially captures every little detail of melody and harmony and rhythm and form instrumentation, voice, etc. It's kind of like musical DNA and it's a gigantic list. And we wrote it out and hired a few dozen musicians to come in and listen to songs one at a time and manually analyze them attribute by attribute, assign a number to every song to collect musical DNA and hired a set of computer scientists to attach to that essentially an algorithm that could use that information to connect songs based on the musical proximity.
+
+And we began to do that. It took us about a year to build the first prototype. And we literally did it on pencil and paper at first.
+
+I kid you not. We had ultimately about 75 musicians scribbling on paper and then we transferred that into Microsoft Excel. And a year into our, this project, we built our prototype.
+
+We had analyzed about 10,000 songs and our founding CTO, Will Glazer had written an Excel macro that would allow us to compute the distance between any of these 10,000 songs. The way it worked is you would pick one of the songs, enter it into the search box and hit rank. And the, the macro would, um, rank order these 10,000 songs by proximity, by musical proximity to your source song.
+
+So we're a year into this. We give this thing a first spin. We type in a Beatles song and we wait about three or four minutes for the macro to do his calculation.
+
+And then out comes a list. And the first song is a BG song. And we're like, Oh fuck.
+
+You know, it doesn't work after all this time. Um, you know, and believe me as entrepreneurs, you have many moments like that. Um, but listen to the track and, uh, it was uncannily similar to a Beatles song.
+
+It turned out it was a very, very early BG song at a time when as a band, they were more or less a knockoff of the Beatles. So it had found the perfect match among these 10,000 songs, turns out. So we went from despair to elation in a very short moment of time and realized, you know, well, it kind of works.
+
+So we, uh, kind of, uh, forged ahead, uh, kept analyzing more songs and, uh, sort of refining the, the front end to this matching engine. This was now 2001 though. And, uh, everything had gone to hell in a hand basket.
+
+Uh, the dot com boom had collapsed. The music industry was in a complete shambles and App Store was at its apex. Uh, and in our first efforts to go raise money, um, it was pretty clear that was not going to be easy to do.
+
+And so realizing we're, we don't have to make our money last. We began asking our employees in the course of 2001 to, to work for an ever smaller share of their salary. Uh, until by the end of 2001, we weren't paying employees at all.
+
+We called that salary deferral, uh, back then, which incidentally is illegal in California. Apparently we couldn't afford an attorney though. We had no idea that we were breaking the law.
+
+And ultimately about 50 people worked without salary for over two years. Uh, to keep this thing going. Um, and, uh, we, uh, we managed to make it through the whole dot com valley by essentially, you know, this group of people that sort of hung in there.
+
+Um, by the end of 2003, at 11 maxed out credit cards, uh, I think I owed like half a million dollars of personal debt. Um, and, uh, we owed close to $2 million of back salary to all these employees, five of whom were actually suing us for having done that. Um, I also had a personal obligation for five years on a large commercial office space in Oakland.
+
+And I was a musician, you know, so it wasn't like if it didn't work out, I'd go back to my lucrative band days and pay it all back quickly. It was going to be Mexico for me for sure. Um, we, um, we hung in there and eventually after I pitched Pandora 348 times, I found a series B investor in 2004, March of 04, raised a $9 million round, which I still don't quite know how it happened.
+
+Um, and we paid out $2 million of salary that day. Um, we actually had an all hands meeting, which I will never forget. Uh, we had all hands meetings every two weeks at this time.
+
+They were generally not very happy occasions cause I was just asking people to work for two more weeks for no salary. And, um, this one, no one knew the money had come in the night before. Uh, so when I sat down, rather than giving my pitch to, to sort of two more weeks of sacrifice, I pulled out of my back pocket, this huge wad of envelopes and slapped them down the table and handed out like $2 million of salary.
+
+The bunch of you were on the table. Everybody thought I was like, you know, it was really bad joke was in a bounce or something. Um, but I paid everybody back.
+
+Yeah. Um, and, uh, uh, we, we able essentially to restart the business. Um, and went from really kind of this, uh, forlorn business.
+
+We had not figured out how to make any money at it, but we had built this really cool piece of IP, this new business. And it was a really cool piece of IP, this gigantic musical taxonomy and this matching engine that was really killer. You, you type in a song and it would send you back five tunes that were just remarkably similar and maybe three or four of which you'd never heard before.
+
+So it was like this magical discovery box. And then we set about sort of figuring out what to do next. And that's when the company took a big right hand turn and repurposed that whole underlying technology and built this brand new thing that we came to call Pandora.
+
+And we launched that in the fall of 2005. And November of five, actually we did a prototype with some friends and family and then launched it, uh, as a fully blown free service to the public in November of five. And it just took off like a rocket ship.
+
+Um, and has not, you know, not stopped. Um, and it was, uh, you know, we went from this bizarre, a nightmarish experience, it was not glamorous to the six, to the quite the opposite, you know, just experiencing this completely viral explosion, uh, that was propelled by the smartphone revolution, of course, which came to the summer of 2007. And we went from having, you know, 50 employees to now 1700 and 50 offices in three countries around the world.
+
+And it's a really incredible experience, of course, to go through that. And one thing I want to talk a little bit about in this context to you today is, you know, I think that, um, one thing that the reason I'm still here and this company is still around, which, which has, it has no business being, I mean, the, the chances are our company having survived that are close to zero. When, when we raised our second round of financing, I think one out of a thousand companies was getting money.
+
+Um, and I get asked a lot of, you know, how did this company survive all that? And I think, um, one of the key things was that, uh, we always had a very clear sense of purpose, uh, inside the business. Um, there was a reason why we were doing this that we all, I think, really believed in, which was sort of a two sided coin.
+
+One was that, you know, music is this magical thing that we all love. Uh, but most people have a very hard time staying connected to it. Um, music, especially as you get older, radio does not play the music you love.
+
+And it's very time consuming to interact with it. When you get a job, it's hard to really have that time. You get kind of disconnected from it.
+
+But when you reconnect to music, it's a powerful thing. And we really believed in what we were doing, uh, the, the, the, the good we could bring people by helping them enjoy that. And the flip side of that coin is what we could do for artists.
+
+That we'd be providing this platform that for the first time would start surfacing music and playing it in a way it's completely blind to popularity. Which is again, the cornerstone of the genome project. So the music genome, when it, when it connects one song to another, it doesn't know, uh, if that song it's playing is from a well known established artist or some brand new band.
+
+It's blind to that. So it's a completely democratic sort of level playing field. And we play about 140,000 artists or so, I think in our, in our catalog, just about every single artist plays every month on the service.
+
+And there are 12,000 artists now on Pandora that have at least 350,000, uh, unique listeners on the service that have created a station using their name to start it. 12,000. 12,000.
+
+And of those 12,000, about 80% have never played on any form of radio ever. So it's this huge sea of what I think of as the, the future musicians middle class. That has been out there all this time, but then no one's been able to find them.
+
+And our ambition is really to surface them and give them a future. And I think throughout this process, even when things were in their darkest moments, that was something that I think sort of kept us all together. And when this, when the server, when the company began to really grow, uh, post launch as Pandora, um, I could see the company begin to evolve in lots of exciting ways.
+
+But I also knew that we needed to really hang on to something special, that sort of, that taproot that had kept us alive during those times, and that I thought would be really important for us as we grew to maintain the integrity of the business. And so we actually sat down and crafted what we call Pandora principles. There are now seven of them.
+
+And these principles are really kind of a statement about why we're around, who we are, what we care about, you know, how we treat each other, the sort of cultural values, if you will, of the company. And we imbue those into the business. We, we really do, um, uh, take pains, uh, to hire based on them, to fire based on them, to promote based on them.
+
+And everybody who comes into the company, we hire about 70 or 80 people a month right now, it blows my mind. Um, and, uh, actually go through what we call Pandora University, uh, which is a day and a half, uh, set of sessions, the capstone session of which is really, is called Pandora principles, where we talk people through this and teach them about it. And, and ensure that when they go into the company, they absorb sort of, and adopt, uh, these principles.
+
+Because I really have a, a huge belief that, you know, no matter how much of a head start you have, how strong your brand is, you know, how, how, how, how good your fundamentals are as a business, if you don't have a really firm grasp, uh, on the core, uh, principles and culture of your company, you will eventually hit the rocks. And I think that's true of companies at just about any stage. Certainly, uh, in small startups, you have two or three founders, there's ample opportunity for things to go south.
+
+And it's really important to do good housekeeping, to keep sort of your, your cultural house in order. And I think that remains a real big strength of the company. So now as I sort of look ahead and, and see what's sort of possible, you know, I, my, I consider myself sort of the, the sort of guardian of that, uh, inside the company.
+
+And I think having sort of grown up the way we did, uh, over these sort of, kind of a, a, a pretty rough, uh, few years, in some ways we, we learned the, the value of that. Uh, and I would really encourage all of you as you build your companies, as you grow them, to not underestimate the power of those things. Even as you have all these exciting prospects ahead and your audience is growing like Teespring's is.
+
+And you can see all that opportunity to, to not forget the importance of sort of the fabric of your business, how you treat each other, the culture building, because ultimately that's what will sustain you, uh, over a long period of time. I can't actually see the timing, so I don't know. Am I doing okay?
+
+I'm supposed to be looking somewhere at a timer. Am I okay? Okay.
+
+Um, so I started a little bit early. I'm happy to take questions if people have them. I want to give a, a little time for that too, so, um.
+
+Thanks, Tim. If you have any questions for him, come on down. This is kind of a front and center question.
+
+All right. Hi, uh, when you said you were trying to raise your Series B, and you, you said that you didn't have any idea of what the business model would be, how did you keep the people working without a clear vision of how you would make that work, and, and how did you get the investors to pitch in? How did we keep the employees around?
+
+So they were chained to their desks, and we locked them. I think that there are a couple reasons that Pandora, uh, stuck around. One, as I said, is this real, um, sense of belief in a common purpose and a mission that was really important.
+
+And this product that we all thought was pretty magical, and that if we could hang around long enough, would, would find its home. The second is, I think, there's a phenomenon that happens when you go through adversity. One of two things happens.
+
+Either you scatter, or you kind of come together, and you actually start to work, to sort of, uh, sustain yourselves kind of for each other. I think that's part of what happened at Pandora. Over the months, as we began to reverse salary, month after month after month, it became, you know, you felt a certain obligation to people around you.
+
+To, to, to contemplate saying to the person on your left who'd been doing it for a year, one day, you know what? I'm done. That just felt really hard to do.
+
+So I think that was, um, that was part of it as well. And I certainly learned to be a motivational leader. Um, and if there's one piece of advice I would give to every single one of you about entrepreneurship, it's learn public speaking.
+
+Uh, and I don't mean learn to be able to talk in front of a large audience of people. I mean just learn to speak. Learn to communicate, uh, to groups of all sizes, and to be able to communicate an idea with passion, uh, with vision.
+
+Because no matter what you do, no matter what your product is, no matter what size your company is, that will come in tremendously handy. So, you know, that was part of it too. Yeah, so I was wondering when you had like two million dollars of outstanding wages, how are you actually keeping everyone on?
+
+I mean just ENTJ on Myers-Briggs and you're that convincing? Or how's that go? Again, I think it's, it's, um, I did pay salaries on my credit card for a while, which I don't recommend.
+
+Um, I don't recommend credit card debt. I remember one day being in my living room actually, and laying out all my credit cards on the table, filled the table up, and I was trying to like sequence my minimum payments. It was like a Tetris game, like trying to figure out what to pay first.
+
+Oh no. Not a good experience. Do not, don't, don't use a credit cards for your startup.
+
+Um, that was a bad mistake. I think that I was a first to defer salary. You know, you lead by example.
+
+Yeah. You know, you're like the first in, last out. That's how you gotta do it.
+
+Yeah, I think all the questions have centered around how you convinced 50 people to not take salary for two years. Um, will you just imagine this crowd as the 50 employees and give that pitch that you gave and also talk about how, um, how you evolve that pitch over time? Fuck, that's hard.
+
+I do that now? Um, that pitch. You know what?
+
+If I go back to that time, I'll start shaking and sweating and get all nervous and my heart will pound. Um, I might not give the whole pitch. Let me tell you what I would focus on.
+
+I would, I would say that, um, we all know here that what we've created is unique and it's solving a gigantic problem. No one on earth is gonna do what we've done. And when you use this product, we all know how magical it is.
+
+It will find its home. Everybody on the planet loves music. There are millions of musicians that produce great music and they can't find each other.
+
+When this thing finally finds its home, it's gonna change culture. And how many times in your life do you have a chance to do that? That's what this is about.
+
+Do they work? And so, did that pitch stay consistent through the two years? No, look, I mean, part of it, part of it is a pitching, but part of it is also leaning into each employee one by one, taking them to lunch, dinner, understanding their problems, and the problem.
+
+Empathizing with it, really, you know, being close to them, getting to know them, getting them to trust you. That's really where it all starts. Yeah.
+
+Thank you. Yeah. When, when you had made the Music Genome Project, you struggled for a while to figure out what Pandora was gonna become.
+
+What else could it have been? What was the non-Pandora option? Well, yeah.
+
+It could have been in a big smoking hole in the ground for a long time. Well, our original idea was we thought we would license it as a technology to everybody else. So whether you're a retailer or ultimately a radio product that you could use the genome as an ingredient technology.
+
+So it's kind of like the powered by. And we actually did license it to a handful of companies to do that, but it turns out it's not a very good business. And Music Retail is under such pressure.
+
+We couldn't really generate much revenue for it. That's really what we were doing for a long time. Yeah.
+
+So in the interest of time, we'll take these last three. Hi, Tim. Thanks so much for sharing your insight and being here.
+
+I'm a volunteer for HustleCon. My question is, you know, I'm new to the startup game and I want to know when is it appropriate to make pivots? And when is it appropriate to, you know, stay committed to your idea?
+
+That's a tough question to answer with sort of a set of rules. Because on the one hand, I think that successful startups require a certain kind of irrational commitment to an idea that many people look at and say, that's crazy, it'll never work. I mean, the genome was that idea.
+
+When I did my venture pitches, you know, I would show them a PowerPoint, set of PowerPoints, and one slide would be one of seven pages of musical analysis of these attributes that I would explain. Yeah, we have human beings doing it. One by one takes 20 minutes to do a three minute pop song.
+
+And look at me, what the fuck is wrong with you? You know, are you kidding me? You want me to fund this?
+
+And it was crazy. I mean, it was flat out crazy as an idea. And a lot of people would steer you off course.
+
+So you have to have a certain irrational singular belief and be stubborn about it. But I also think that you should be open to discovering new opportunities. And so I think that it's a combination of believing in one idea.
+
+But when things present themselves, you know, don't be overly obsessively kind of stuck with your idea. That's the best I can tell you. Thank you.
+
+Thank you. Thank you. Thank you, sir.
+
+Hey, so the first person stole my question. So I had to come up with a second question. I'll stand in here.
+
+My question for you is, as you create a platform, you have this amazing vision. For example, I'm creating something that I view as, like, going to change the world. And your plan is to bring together thousands of artists or, you know, whatever it may be.
+
+And you want to create this collaborative platform where you want to pay the artists, you know, for their time, for whatever they collaborated and sold on the marketplace. How do you reach an equilibrium point between making the artists happy? Because a lot of artists are going to say, you're paying me shit money for what I'm producing.
+
+And you're taking in all this money. And you have all this pressure of investors, et cetera. How do you reach that peaceful point?
+
+So I think these things need to be seen with a long-term lens. And I think music industry is going through what numbers of industries have already gone through, which is sort of a period of constructive destruction. They're changing.
+
+And I think the long-term view, the long-term vision of the industry that we think everyone will come together around is, it will, music will exist on a connected platform. So it will not be broadcast, radio, or you play a song that goes out to the ether. You don't even know who's listening to it, when, what they think of it.
+
+They're disconnected. To a platform where you're sending that email, that music to people. You know who they are.
+
+You know how they, if they like it or don't. And you can communicate with them. And you will have access as a musician to all of those fans directly.
+
+And you will have fantastic tools to communicate with them. So imagine this. You're in your van, you're in a van, you're a band driving from San Francisco to Seattle to play a show.
+
+We used to do that all the time. And you decide, you know what, let's stop in Portland tomorrow night and play. Pull out your iPhone.
+
+Zoom in to your Pandora artist account. Log in. Zoom in to Portland.
+
+Look up how many listeners there have thumbed up your songs or created a station with your name. Record a 15 second audio bumper on the phone. Upload it.
+
+The next 24 hours, that message plays to people in Portland that have light your music or created a station with a link to buy a ticket to that show. By the way, we can already do that. So that, over time, is going to completely transform the entire economics of the business.
+
+That's what people will come to understand, I think. Yeah. Thank you.
+
+Yeah. Thanks for your speech was so inspiring and also very entertaining. You know, we're fortunate, all of us, to be here at this time where people, we're working for companies that are very mission driven.
+
+We're creating companies where we're very people focused and it's awesome that you were able to inspire 50 people to stay on in that way. How do you scale that? You know, it's one thing to have a conversation, take 50 people out to get to know them.
+
+How do you scale among the organization of 1700 people that type of people focus management and putting people first and keeping people aligned with the mission? Yeah, so that's a big focus for us right now because one person can't do that and six people can't. Actually, ultimately, to sustain a culture like that, hundreds of people need to be active advocates for that.
+
+So we do a lot of training now, our sort of our next evolution as a business is how do you take the several hundred managers now who manage anywhere from one to 15, 20 people and give them all the skills they need to be equally powerful ambassadors inside the company? That's the task of leaders and it's, I think it's one of the transitions that founders go through over time is eventually, in spite of what Walker says, he's not going to be answering emails all day long and doing, he's going to be pulled into other things. And he will teach other people to do that as well as he did, who will teach other people to do that.
+
+And it's actually frustrating as a founder because eventually you feel like you're not as connected as you were and you'll do some of that to stay in touch with it. But your job becomes transmitting what your passions and your ideas and values to other people and helping them continue to do that onward. That's the transition you go through.
+
+Thank you guys very much. Thank you. Thank you.

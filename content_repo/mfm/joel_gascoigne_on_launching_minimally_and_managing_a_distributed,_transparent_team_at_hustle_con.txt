@@ -1,0 +1,223 @@
+So our next speaker is Joel Gascon. He's the CEO and founder of Buffer, which is, I'm sure you guys have all seen this. If you have Twitter or Facebook, it's where you see the BFF.ly on your feed.
+
+But right now they have 26 employees. They do about 3.5 million dollars in revenue. And Joel's talk is going to cover how he was able to start Buffer in the most getaway possible.
+
+So please welcome Joel. Joel Gascon. Hi, everyone.
+
+It's great to be here. Excited to chat with you all. So yeah, as Sam mentioned, my name is Joel Gascon.
+
+I'm the co-founder and CEO of a company called Buffer. And today I want to chat with you about some of the tactics and lessons that we've learned in the last few years that have helped us to grow Buffer. And so hopefully this will be useful for you if you're thinking about doing a startup or if you're working at a startup right now.
+
+As a little bit about me, I'm originally from the UK and started Buffer in the UK about four years ago almost now, so the end of 2010. And yeah, I'm probably an unusual choice of speaker for this conference because I've actually been coding since I was about 12 years old. But at the same time, I'm really excited to speak with you because of that because I found that often coding was kind of like a crutch for me.
+
+And it was kind of the first thing I would reach for whenever I had ideas. And over time, I discovered that that's been kind of a really big mistake that I made. And it's something that I've had to adjust.
+
+So I've got a few different stories I want to share with you of times where we've kind of jumped too quickly to coding and it's kind of not worked out. And then I've got a few other stories where we've had a lot of success without coding at all. Our vision for the product is to be the simplest and most powerful social media tool.
+
+And the problem we help to solve is with posting to Facebook and Twitter and scheduling posts. So the idea is we give you a queue and you can add content to that queue. And then we'll then space that content out for you over the course of the day.
+
+So you could read the news in the morning and we'll then share that for you throughout the whole day. Before I dive in, I also wanted to just mention three kind of interesting things about the company that make us a little bit different than other startups. The first one is that we have a fully distributed team.
+
+We're 26 people right now spread all across the world. We're in 20 cities in five different continents. The second one is that we've raised a 450k seed round of funding, but we've hit profitability based on that.
+
+And so we've not raised any more funding after that. And right now we don't have any plans to raise more funding. The third one is that we have a core value of transparency within the company.
+
+And so we try and do things in a very open way. And this is exciting because I think by sharing our failures and successes, we can really help a lot of people and do things like this. So one of the most controversial things that we've been transparent about that you might have come across is we are completely transparent about salaries and equity within the company.
+
+So we have a formula to determine the salary of everyone in the company. And we make that formula public. But not only that, but we have a list of everyone in the company and their salary.
+
+And that's public too. So this is all available just at a Google spreadsheet. And if you want to check it out, you can go to buff.ly slash openpay.
+
+Cool. So before Buffer, I worked on a previous startup for about a year and a half. Ultimately, it was a failure.
+
+But I learned a lot of lessons along the way that contributed to how I thought about starting off Buffer. I think the two big mistakes that I wanted to mention. The first one is that I just built whatever came to my mind and without validating it.
+
+And the second one was that I didn't make enough effort to talk with people about what I was building. And I think overall, the big mistake was that I just enjoyed the coding too much and I kind of forgot about building a business. During that time, I discovered the lean startup concepts and Eric Ries.
+
+And I think that really changed my mindset in a lot of ways, changed how I thought about approaching ideas. And in a way, that kind of changed my life because it then changed a lot of things about how I built things. So kind of based on the lean startup techniques that I came across, I decided with Buffer, I wanted to take a different path.
+
+And so the funny thing is that as soon as I had the idea for Buffer, the first thing I did was just to think about coding and just jump in. And then I kind of had to just stop myself and say, you know, how should I approach this in a lean way? And how can I validate this without going ahead and building the whole product?
+
+And so I think that's probably one of the big lessons that I've learned after a few different failures is that I think if I look back now, it's clear that I was building things as a hobby, really. And I think that's what happens when you just go and build whatever comes to your mind. And that can be fun, but I think, you know, if you really want to build a business, you need to validate your ideas.
+
+Either that or you've just got to get really lucky. So thinking about how to approach things in a lean way, I thought, how can I validate the idea of Buffer before I even built a product? And so this is what I came up with.
+
+It's a simple three-page website. And at the time, I built this myself. But there's lots of tools out there right now that are much better equipped to build something like this than diving into code.
+
+So something like Unbounce would be absolutely perfect for building this. And yeah, so kind of just to walk through this, the most important thing to notice about this three-page website is that the first page made it look like the product already existed. And I think that was really important.
+
+If you wanted to get a ton of signups, it might not be the best thing to do. But if you want to truly validate whether people want your idea, I think it's kind of crucial. So the first page was just like a landing page.
+
+It had a headline and then three steps. And then it had a plans and pricing button. And then they would click the plans and pricing button and go to the next page, which was just a pricing page.
+
+And then from there, they would choose one of the plans. And then they would end up on the final page. And the final page just says, hello, you've called us too soon.
+
+We're not quite ready yet. And then it would give them a chance to put their email in a box and give me their email and be notified when the product actually existed. So I drove a bit of traffic to this three-page website.
+
+And luckily, some people went all the way through and gave me their email at the end. So that was pretty great. And as you already know, I was kind of obsessed with the Lean Startup.
+
+So I was pretty excited about looking at the analytics and checking the funnel and looking at all the numbers and things. And that was another big lesson that I learned is that in the early days, the numbers are just not that useful. You just don't have the volume, really.
+
+But instead, what was useful and what I did was that every person that gave me their email, I personally emailed them and got in touch. And then I had a conversation with them. So I had a lot of conversations over email and had a few Skype calls as well.
+
+And what I found was that once people understood the concept, quite a few of them said that they would want to use this product. And a few even said that they would pay for it if it existed. At the same time, quite a few people told me that I was crazy and that no one would ever use this and no one would pay for it.
+
+But I was pretty happy that I actually had some validation from a few people that said that they would want to use it. So that gave me kind of enough confidence to go ahead and think about building the first kind of minimal version of the actual product. Cool.
+
+So I'd kind of decided to build the first version of the product. And that was when I reflected on the lean startup concepts again. And something that Eric Ries said really kind of stood out in my mind.
+
+At one of his conferences, one of his presentations, someone asked this in the Q&A session. They said, how minimal should your minimum viable product be, your first version of your product? And Eric Ries said that there's probably not a perfect answer, but the answer is almost always that it should probably be much more minimal than you think.
+
+So I really tried to keep this in mind when I approached building the first version of Buffer. So the first thing that I approached in kind of a minimal way was the actual feature set itself. So the first version of Buffer, you could only use it for Twitter.
+
+So there was no other networks you could use it for. Not only that, but you could only use it for one Twitter account. And there was no analytics either.
+
+So it really was purely just this idea of the Q for one Twitter account. And that was it. And I think that's kind of an important point is that when you're doing your first version, I think it's useful to be kind of laser focused with what you put out there.
+
+And so I think it helps you then when you put it out there that it's going to be a very clear signal one way or the other. Either it works or it doesn't. Whereas if you have a bunch of features, it's going to be much more cloudy.
+
+And you're not going to know what to focus on, what to improve. A couple of other things that we left out in this first version. The first was the actual upgrade process of going from the free version to the paid version.
+
+And so normally when you pay for a product, you expect that you put your card details in. And then you kind of get an email probably. And you get access to these paid features right away.
+
+What happened with the first couple of months of Buffer was that you would pay with PayPal. And then I would get an email into my personal inbox that said someone had paid with PayPal. And then I would rush to the database and upgrade them manually.
+
+And then email them the welcome email personally. And I would apologize for the delay of our systems. And this kind of worked out really well because, I mean, maybe it wasn't an ideal experience for the user.
+
+But what happened then was that I had a lot of conversations with users. And then it actually became an even better experience for them. Another example was that on the paid version, there was a paid feature of using your own custom Bitly details.
+
+And that was another thing where the way I thought about it was it's on the paid version, but it doesn't really have validation yet. And it didn't make sense for me to build that out before I had any paying customers. Why would I work on a paid feature when I could instead work on trying to get that first paying customer in the first place?
+
+So there was this feature to have your own custom Bitly details, which would let you then see the click analytics in your Bitly dashboard. But so this didn't exist. And then so the first couple of people that upgraded, it actually wasn't a problem because they purely upgraded to get more space in their buffer.
+
+But the third person that upgraded sent me an email and said, doesn't seem like this is working. So I said, okay, I'll look into it. And then I thought that's probably a good time for me to actually build this feature.
+
+And so, yeah, and then it took me about a couple of hours. And then I replied back and said, you know, maybe you can try it now. And I think it's fixed now.
+
+And so then he was really happy with it. And again, I got to have a conversation and learn more about what other things he would want as well. So the end result of the kind of landing page experiment and the minimal first version was pretty great.
+
+It was a seven-week process in total from having the idea to launching the first version. And we had the first paying customer after four days. So it worked out well.
+
+It was just a $5 payment. It took a while. I was still working full-time doing web development on the side.
+
+So it took a while to be able to drop that and focus full-time. But it was a whole new experience for me. Yeah, so we kind of started off well.
+
+But what happened then over the next year or two is that we struggled to approach everything with that same kind of discipline. And a few weeks ago, we were lucky to have Heaton Shaw as an advisor. He's going to be speaking a little bit later.
+
+And he said to us that he sees a strange thing with startups. They'll do customer development once, but then they'll fail to make it part of the product process. And this is something that we found to be really true.
+
+That's something we struggle with a lot. So I've got a couple more examples I want to share with you of one where we've failed and then another one where we've kind of succeeded. Cool.
+
+So here's the first one. This is our browser extension pop-up. So we have browser extensions for Chrome, Firefox, and Safari.
+
+And almost 40% of all the sharing that happens comes from a browser extension. So it's been a huge part of our success. And back in 2012, we started to notice an interesting thing going on with Facebook at the time, which was that pictures were becoming a lot more prevalent on social media.
+
+And today, they're a really big part of Twitter as well. So they've kind of become a big deal. Back then, we noticed it.
+
+And so we tried it out in our own accounts. And we saw a lot of engagement. So we were excited to try and help our users with this as well and get a lot of engagement by using pictures.
+
+We also were quite inspired by things like Pinterest, where they'll show you all the pictures on the page and let you pin the pictures. So we thought we could do something like that. So we kind of decided that we wanted to enhance the browser extension and bring in this picture sharing kind of ability into it.
+
+So we got to work. And a couple of months later, we came up with this. So you can see there's like four tabs on the left-hand side.
+
+So we would let you choose between sharing a link, a picture, a video, or just a status update. And that's how it looks if you're sharing a picture. And so we were pretty excited with this.
+
+We started using it ourselves. And it was working really well for us. We got a lot more engagement by using pictures.
+
+And then we kind of we were so excited that we nearly rolled it out to the whole user base. And then I think one of us in the team just said, well, maybe we should let a few users try this first and see what they think. So we decided to do some user testing.
+
+My co-founder, Leo, just jumped on. He actually jumped on seven Skype calls with customers. And we just enabled it for them and asked them to talk us through how it felt and what they were and what they thought things meant and stuff like that.
+
+The results were pretty shocking. We discovered that six out of seven people were completely confused with the UI. And so we discovered that people thought that the picture here was like the link attachment that would come up in Facebook for when you're sharing a link.
+
+And people just didn't get it at all. And we discovered that our team was completely biased. Like we knew exactly how it worked because we knew the problem we were solving from the first place.
+
+So we knew exactly what the UI meant and stuff. So that was kind of a big shame. And especially because we could have known this exact same learning just by doing user testing with mockups two months earlier.
+
+The final story I want to share with you guys this afternoon is how Buffer for Business came about. So Buffer for Business is our paid plans beyond the most popular $10 a month plan for Buffer. So we have $50 a month, $100 a month, and $250 a month.
+
+And then we have a few enterprise customers beyond that. And it's only been available for just over six months. But it's already become a pretty big success.
+
+And it's 27% of our monthly revenue now. So, yeah. So the first thing for us to kind of decide with Buffer for Business was what would the product even be.
+
+So we had a couple of different ideas in mind when we thought about Buffer for Business. We had either just purely extending what already existed so people could have more accounts, more team members, and share more content. The other one was something we were really excited about was a brand new product.
+
+And the idea was to help companies to make use of all employees if they connect their personal Twitter and Facebook accounts and have them share the news from the company, the press releases, or job listings and things like that. So we thought this would be really great for marketing departments for companies. So what we did was we spoke with quite a few different customers.
+
+So my co-founder, Leo, he did a lot of customer development. And what we found was the thing that we were really excited about just ended up not resonating at all with people when we spoke with them. So I think the best thing, the most useful thing we heard was head of marketing said, I can't rely on the team to do marketing.
+
+That's what we have to do. And so this will be a nice to have, but we wouldn't pay for this alone. Whereas the extending Buffer and having more functionality, that was something that really resonated and people were super excited about.
+
+And we had a lot of people that were hitting the limits of the $10 a month account. And so there was a lot of kind of pent-up demand there. So we knew which one we needed to build.
+
+And so I just want to walk you through then the process we went through kind of after that. So we tried to think about how can we validate this further and kind of build this out in a really lean way. And what we realized is that if we just go in Stripe, we can add more plans in there.
+
+So we added just a bunch of plans for different price points. And then Leo would just talk with customers who were hitting those limits and ask them if they wanted to get on to Buffer for Business, which all it was really was releasing those limits. And quite a few people wanted that.
+
+So then he would just move them onto the plan in Stripe. And then we would start charging them more. So this was great.
+
+And in a very short space of time, we had our first $10,000 in revenue. And that was 6% of our revenue at the time. So it was pretty huge right away.
+
+We then thought, how can we get more leads? So what we decided to do was to set up a WUFU form just asking for their email and phone number if they want to get more information about Buffer for Business. And so we advertised this in Twitter and on the blog.
+
+And that helped us grow the revenue even more. Then we realized that we could drive more leads if we put just a little bit of doing a tiny bit of code and put something on the pricing page at the bottom. So just letting people go to that WUFU form.
+
+So the next thing we did was to, we thought it might be good to better qualify the leads. That helped Leo a lot. So we added a bunch more fields to the WUFU form.
+
+And, yeah, then finally, by that time it was kind of a month or two after we'd started. And we'd learned a lot. And the pricing points became kind of clear.
+
+So we decided to do a pricing page. But we still didn't do it ourselves and write any code or anything. We just decided to use WUFU.
+
+So we had this WUFU page with the pricing plans. And we couldn't connect it to our database. So we had to, like, ask for their email again and stuff.
+
+But it worked really well. And it helped us to be able to test different prices and things like that. So this was great.
+
+And, yeah, so today Buffer for Business is one of the best things we've done in the last year. And it's 27% of our revenue now. And it's almost 100K a month in revenue that we're getting from Buffer Business.
+
+So that's, yeah, that's all the stories I want to share with you guys. One quick thing to refer back to the middle of the talk on how we're trying to make this a process now. So we have Heaton mentioned to us these four steps.
+
+And in the last few weeks, we've been really trying to rigorously follow these steps. And especially kind of making these steps required for everything that we do is what's helping a lot. Especially the hypothesis part is where we actually need to talk with people.
+
+So cool. That's everything. Thanks so much for listening.
+
+And I'd love to answer any questions you have. I think we can take two questions. Hey there.
+
+How are you? Hey. Good.
+
+I'm Michael from Lots of Stops. Great talk. If you wouldn't mind, so you have your team is all over the world, right?
+
+Yeah. So that's what I'm looking to do as I build my company. And I'm curious if you might want to briefly talk about the pros and cons of having a team that's dispersed worldwide.
+
+Yeah. Absolutely. That's a really awesome question.
+
+So I think there's some huge benefits that we've found. We were hacked last year. And it was pretty crazy.
+
+It was a tough situation. But the fact that the team was fully distributed all across the world meant that we didn't have to do a crazy, you know, two or three days staying up all night just to resolve that. And we could have the different people in the world jumping in at different points.
+
+So it's been really, really great. I think the one key thing I would say with a distributed team is I got some advice from a guy called David Cancel. He's done quite a few startups.
+
+And he's the chief product officer for HubSpot right now. And he said to me, he's had a few startups and he's tried both ways. He said, what you want to do is have either everyone in an office or have everyone distributed.
+
+And if you go halfway, it's going to be really tough because then you end up with, like, second class citizens and, you know, communication happening in the office that other people don't know about. So that's how we do things. We have an office in San Francisco, but we just have four or five people in there.
+
+And we still use HipChat a lot. And we kind of say that HipChat is our office. So, yeah, that's probably what I'd say.
+
+But, yeah, we can catch up afterwards if you have any more questions as well. Hey, I think it's really cool you're into the Lean startup. I work for the publisher that actually publishes the Lean series.
+
+And we want to use Buffer for business right now. So we're very excited about that. Awesome.
+
+I'm interested in validation. Did you ever try to validate something and failed? Was there ever an idea that didn't validate that you considered and didn't go through with?
+
+Yeah, I mean, so the browser extension was a key one that failed. Another one was, I think that's probably the best example. There is one that we didn't validate and it went through.
+
+And then we found out a few months later. So we did a whole redesign of the Buffer dashboard. And we didn't validate it at all.
+
+And then we didn't look at any numbers or anything. We didn't A-B test it or nothing. So then two months or three months after we'd launched it, we started to get really focused on data and look at numbers and things.
+
+And we managed to trace back that we had a huge drop in activation of new users. So the new dashboard was converting new users to active users much worse than before. And that's something that we've actually been kind of catching up with ever since.
+
+Very cool. Thanks. Sure.
+
+Thanks, Joel. Cool. Awesome.
+
+Thank you.

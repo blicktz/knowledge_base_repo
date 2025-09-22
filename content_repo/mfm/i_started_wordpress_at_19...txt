@@ -1,0 +1,437 @@
+All right, today's episode is special. We've got Matt Mullenweg. Matt founded a company called WordPress, which is used by something like 45% of all websites on the internet.
+
+So it's just a huge thing. And we talked to Matt about a bunch of interesting things. Sean, what did we talk to him about?
+
+He had an offer to sell his company for $200 million when he was 24 years old. He turned it down. We asked him what that was like.
+
+We talked to him about some of the recent drama that they've had. We talked about how they've been acquiring companies. They bought the small company in South Africa and how it turned out to be a huge thing for their business.
+
+Like, you know, a billion dollar plus win. And he's just a student of the game. He's been doing it for like 20 years.
+
+This guy started this company when he was 19 years old and is still doing it. And it's become this absolute juggernaut. So enjoy this episode with Matt Mullenweg.
+
+Tell me if this is right, because this sounded like almost too good to be true, but I'd read that in 2008, you had an acquisition offer. I think you were only 24 years old for $200 million. At that point, I think you'd only raised a million dollars.
+
+And I think you raised a million dollars at $3 million in valuation. Something like relatively, like you're 24, you're going to be worth nine figures, something crazy like that. You turn it down.
+
+But then you talk about how you didn't have control of the company because you were young and you maybe just like made some mistakes with funding, something like that. What's the conversation like with yourself when you're like, I'm turning down something that might make me worth over $100 million at the age of 24. You talked about, and you're, you know, you're named the first million.
+
+It's kind of funny. Like, I guess technically on paper, my first million was that first funding round, right? In theory, I owned like half the company that was now worth $4 million.
+
+But as you know, like that's paper money. Like I was still, you know, eating ramen and, and Mountain Dew and pizza, like living, you know, a very broke San Francisco, uh, sort of college kid life. Um, but it was in 2008 that, uh, we had this acquisition offer and you're right.
+
+It was, uh, about two, two and a half years in this company. Someone tried to buy us for 200 million and the investors at the time, uh, did something, which now is quite common, but at the time was, was pretty forward looking, which is a secondary. So they said, uh, he said, wow, you know, we're 20 people.
+
+We've been doing this for two and a half years. A $200 million exit would be pretty amazing. And like I said, I would walk away personally with a lot of money.
+
+Um, but you know, we think this could be actually way bigger. So let's, let's build that. And so we took that acquisition, made it a valuation and, you know, took, um, you know, turn that into a funding round where we put a lot more capital into the company so we could, you know, really build things out.
+
+And, uh, and I sold some stock myself. So I, that was my first, that was my first million liquid, uh, was kind of in 2008. I think I was 24.
+
+And, um, and that was a step change, you know, I was able to like, you know, pay off my credit cards and buy my, my, my house. I'm like, you know, all that sort of stuff that you, you want to do that you dream of. And it sort of removed some of those, um, sort of early economic things.
+
+And I was really able to focus on just the business and swinging for the fences, which is what they wanted me to do. You know, I hear these stories like suck turns down a billion dollars from Yahoo or whatever, this story about you at such a young age, turning down, you know, the opportunity to exit and have this huge payday. Um, I think you're a better man than me.
+
+I don't think I would have been able to resist that. Uh, was that an easy decision for you? Was that a hard decision?
+
+Like what? And like, you're like, I think this could be bigger, bigger, let's go for it. Is that just like blind, not blind faith, but just like an extreme amount of self-confidence and faith?
+
+Like, how do you even, or did you even want to do it? And the investors were like, nah, too bad. No, it wasn't an easy decision at all.
+
+Of course. Like you have to, uh, you have to really seriously consider these things also as a fiduciary. You know, like you have a responsibility to shareholders, um, to consider every acquisition.
+
+And we've had other acquisition offers and people trying to buy automatic. Yeah. As recently as this year, I think you have to ask yourself in any acquisition, like, will the mission that we're doing be accelerated by this transaction or will it be hampered?
+
+Hey, let's take a quick break to talk about our sponsor today. HubSpot has put together a list of 200 AI business ideas. These are business ideas that you could create using AI and it's a list of 200.
+
+They did a huge brainstorm. So you could check it out. If you just click the link below, you can get access to these 200 AI ideas.
+
+Uh, I'll give you an example of a couple of them. One of them is you could build an AI dressing room. So let's say you go to an e-commerce site and you want to see what something would look like on you.
+
+You can use AI to actually take a picture of you and show you what the clothes would look like on you or what the makeup would look like on your face. It's pretty cool. Right.
+
+Um, or AI tools for real estate brokers, maybe something that takes their listings and makes them more, more fancy, more, more, more beautiful and attract more buyers. So check it out. It's a brainstorm of 200 possible AI ideas brought to you by HubSpot.
+
+You can get it free in the link below. It's like we acquire a lot of companies like WooCommerce, I think did a lot better because we acquired it, um, than they would have on their own. Um, but there's probably other things that we try to buy that we, that we didn't buy that did really well on their own.
+
+Um, uh, Reddit was actually, we looked at Reddit at one point. Did you look at them in their, uh, Condé Ness? Yeah.
+
+Like $10 million valuation days. I actually really wanted to buy Reddit. I couldn't convince my board.
+
+Um, they thought it was like too outside of our, like kind of, uh, early stuff. So we never got that far in the discussions or anything, but yeah, there was a point when they were like for employees and for sale and kind of, and the wired offices on third street in San Francisco. And, um, yeah, I, I, I just thought it was really cool.
+
+So obviously they've, they took it very well. But when you created WordPress, it seemed like it took off like within a year. Um, I forget which year, uh, you started it, but like, like I said earlier, I think I was using it starting in like 10 or 11, 2010, like pretty early on.
+
+And I, at the time was like a Tennessee college kid. So if I had heard about it, then a lot of people had heard about it. What was the first version of WordPress?
+
+Like 2003. Oh, wow. Okay.
+
+I wrote a blog post on this because basically like what people see as overnight success is often a thousand days of irrelevance or people haven't heard of you. You know, at one point there was a joke that WordPress had more developers than users. The first few blogs were just ones I set up for my friends in high school, you know, cause no one was using software.
+
+So I just kind of like would manually set it up for people. Um, you know, early we used to do these upgrade parties where just, I'd say like, you know, a new version of WordPress would come out. I just open up my apartment, you know, go to Costco, bought some booze, ordered some pizza and said, Hey, just come to my apartment and I'll upgrade your site for you.
+
+So really, you know, the early days were very much bootstrapped and, uh, yeah, just doing the work, you know, just doing everything. So it looks like overnight success later. Uh, we had some breakout points, you know, when Google type change our license and other things, I think fortune favors to prepare.
+
+It was because we had put in a lot of grind and a lot of work, a lot of community building, a lot of contributions, a lot of code, a lot of everything, um, in the, you know, many, many days before that. But what's crazy to me is, uh, like, I remember like four or six years ago, something I was looking at, like, it said that WordPress was used by something like 30 or 20% of all the websites on the internet. Then recently I went and looked at it.
+
+Now it's like 40%. Are you guys? And like, the thing that struck me, I was like, are you the most under monetized business on earth?
+
+Like how, like, how are you not like the biggest company on earth? Because I used WordPress and I used WooCommerce, which you also own at my old company, my WooCommerce license, Sean, I think it was a $300 lifetime or $300 a year. And the product that I was using it was making many millions of dollars.
+
+And I've got a friend, Sean, you and I both have a friend who made a hundred million dollars off of the $300 a year license or whatever it was. It was like nothing. You guys have to be like the least monetized company there is.
+
+Sean O' I think the way I'd put it is WordPress is almost like kind of the dark matter of the web. So, you know, when you build like a list of like, what's the top website, you know, we're not going to show up. I mean, WordPress.com will be in the top 100 or whatever, but like, uh, uh, the beauty of it is that, you know, the ecosystem of WordPress is probably like $10 billion a year, at least, you know, um, of revenue.
+
+Now my company automatic is, you know, 5% of that. Uh, but if you add up all the companies and all the people, I'm not even counting, like all the stuff that you talked about, like people selling things on WooCommerce, which we know is like, uh, I think last year was over 30 billion of goods and services sold through WooCommerce, but actually more than half of automatic revenue comes from things that aren't just WordPress. So we have a variety of different businesses, uh, some really cool mobile apps like day one or pocket cast, uh, a new one called beeper.
+
+What were like the top two acquisitions, right? Like even Buffett, for example, if you study Buffett's portfolio, it's like a huge amount of the gains came from like a couple of like really key acquisitions at key time, right? Seize Candy at a specific time has given them over a billion dollars, I think of free cashflow over the years.
+
+And what's the, what, what's the revenue number that you could say the whole company does? We've publicly saved. We're over half a billion in revenue now.
+
+Okay. Got it. All right.
+
+So yeah. To answer the challenge question, what brings it or what's been the surprising thing? What are like the crown jewel, like best acquisitions that you feel proud of?
+
+Our most successful is probably WooCommerce. And so this came a lot from, you know, WordPress as a platform, and so I did a lot of study of platforms. And so that led me to do a lot of deep reading on Microsoft, actually.
+
+And it was funny, like, if you look at some of the press around Windows 95 coming out, they talked about how for every dollar that Microsoft made from Windows, there was $20 made by the word Windows ecosystem. By the way, that ratio is similar to what I talked about earlier, where automatic makes about 5% of the money in the WordPress ecosystem. So I sort of found that platforms often do this.
+
+They create a lot more value, a true platform. Have you heard that story of Bill Gates talking about the, when he meets Mark Zuckerberg, he talks about the Facebook platform. Have you heard this?
+
+There's like a quote I remember reading, which was like, Gates was like, this is not a platform. He goes, a platform is when the companies built on top of it generate far more value than the host platform. Whereas the Facebook platform at the time was like, Facebook was this gargantuan thing, all the small things on top.
+
+And Facebook was just sucking a lot of the value back in. And he kind of famously was like, that's not what a platform is. I would agree with that assessment.
+
+And, and also that's not a platform, which now a lot of businesses are built on. And there were some that sort of came up in the early days, like Zink or whatever, but like, or Spotify even, but it's now not something that like every business is built on because you can get work pulled, right? Like a not true platform, they might give you some distribution early on when you align with their interests, but then they can easily pull the rug on you.
+
+Which I think Facebook ended up doing to a number of companies. So yeah, I want to build a true platform. But of course, Microsoft famously had Microsoft Office.
+
+So they had an application built on top of Windows, which ended up being very lucrative. So it was like, what's going to be you know, I have this platform WordPress, which is now becoming like an operating system for the web. We were obsessed about backwards compatibility and auto updates and things like that, learning a lot from successful operating systems in the past.
+
+What's our Microsoft Office? And that ended up being WooCommerce, which was a sort of small company, like I think 40 people based out of South Africa, a plugin for WordPress. It actually started as a theme company.
+
+It's called WooThemes. They developed this, actually a fork of another open source e-commerce thing. And they, they started doing it just to sell more themes, because themes were kind of the big business for WordPress at the time.
+
+And this e-commerce plugin took off a bit. Actually, we looked at buying it years prior. But the, you know, candidly, the code was really crappy.
+
+And so we were like, Oh, this is like really crappy code. We're, you know, automatic is very much like an engineering led like technology R&D company. So we're like, Oh, this is, but it just kept taking off because they did such a good job, like building something people want.
+
+So even though the code wasn't scalable, well organized, you know, they built something, they were really great at that product market fit. So WooCommerce was taking off. And so we, that was an early acquisition that we did.
+
+Funnily enough, the the competitor there was, there were, there's some private equity that was trying to buy this plugin. So we kind of won over the private equity because they wanted to join like our culture and everything like that. And Woo, you know, like I said, at the time, it was 40 people, pretty small.
+
+They only had like four engineers, by the way. So a lot of those people were like customer support or other things. We were able to take what we were really great at, which is like engineering, scalability, all that sort of stuff.
+
+And, and apply it to what they had done really brilliantly, which is like great, this thing that people love to use. And that's, like I said, I think last year did over 30 billion of goods and services sold. So that's, that's definitely one of our best acquisitions that we've done.
+
+But I also that e-commerce is, is an incredibly competitive space. And, you know, we're, we're blessed to have an incredible competitor Shopify, which is a company I have a ton of respect for, you know, the founders and entrepreneurs and the whole thing. They, they, they're actually a really, really great company.
+
+So, you know, Toby and I think have a lot of mutual respect for each other and, you know, drive each other to be better. So do you look at that? This is again, like, we're kind of giving you a compliment and an insult at the same time.
+
+So the backhanded compliment is in full effect here. So on one hand we're saying, oh my God, there's 43% of the internet uses WordPress or, you know, y'all's products. There's 500 million websites using WordPress.
+
+Like that is just such a mind boggling number. And so on one hand, that's absolutely incredible. And on the other hand, Sam was saying, are you the most like under monetized given that are you the most under monetized because you look at like a Shopify Shopify alone right now, market cap is 150 billion.
+
+So one could say the ruthless capitalist could say, Matt, you're doing all this work, your whole company, including WooCommerce and all this stuff is going to be worth several billion dollars, but the closed source Shopify all like variant of, of, of the, of the e-commerce side is worth 150 billion. Like what, what, what should I take away from that? And what do you, what do you take away from that?
+
+What's what meaning do you put on that? Matt Satterjee There's definitely some things that are easier in a proprietary sort of closed ecosystem software model. Um, you know, it's easier to, you know, Shopify is really great at forcing people to use their payments, for example, and in WooCommerce, you know, you can use ours, but you can also use a lot of other stuff.
+
+Um, uh, I think there are sort of average revenue per subscribers is like 10x what, what WooCommerce is is how I think about it is, is very much sort of short term versus long term. So one, we have this philosophy of open source, which is, um, you know, I, I want all of the work I do, all of my creative output to increase the amount of freedom and liberty in the world. And just something I believe very morally.
+
+So that's why I've dedicated my life to open source. Um, because open source software, you know, you sort of have a bill of rights attached to it, right. The freedom to use this software for any purpose to see how it works, to modify it, to redistribute those modifications, the four freezes of the GPL.
+
+And, um, to me, that's, that's a moral decision. You know, that is, uh, the software I create, I want, uh, not to have a proprietary license, you know, Shopify is amazing. If Shopify changed their policies tomorrow, their customers are stuck with it.
+
+You know, they have no recourse on their proprietary license. Uh, where with open source, you know, we could change our policies tomorrow. I could become evil or whatever.
+
+And automatic could be, you know, sell or be a terrible company. You would still own all the code, you know, WordPress and WooCommerce, et cetera, belong just as much to you as they do to me. And that sort of freedom and liberty is, I think, better in the long term.
+
+So I'd say open source has a slow burn. So it often is kind of slower to start up, but then over time it builds sort of this compounding momentum that, um, is a bit unstoppable. And there's two things.
+
+One, it can be very successful on its own, right? As WordPress has, you know, it's 10 X the number two in the market. Um, but two, one great thing it does is it forces the proprietary folks to be a bit more open.
+
+So I use proprietary stuff myself and a lot of Apple things are proprietary and I, you know, I really love their products. I think Apple is probably a bit more open than they would be otherwise because Android exists, right? There's, there's an open competitor and which is by the way, open source.
+
+And, um, so that, that it kind of influences the market. So even if, uh, we don't have make as much money as Shopify or don't have the market share Shopify in the e-commerce space yet. Although, you know, check in in 10, 20 years, let's see where we are.
+
+Uh, that we forced the proprietary folks to, to be a bit more open with how they do things. The, the short answer there is basically I do it because that's what I believe. I believe in open source.
+
+I just believe that the moral decision comes first. And secondly, in the long run, let's see, uh, in the long run, uh, we'll see. Is that, is that a good, a good summary?
+
+Proprietary. It's just as easy to have a failure of a proprietary company as it is an open source website. So I think, you know, be proprietary open source is a little bit orthogonal, uh, or not causal to like, uh, whether you're a successful product or not.
+
+And so, uh, people get really attached to it, but, um, I would say in the short term, it's definitely usually a bit easier to monetize, uh, a purely proprietary stack. But over the long term, you can create a much, much bigger thing. If you have this kind of like flywheel of an open source, uh, community adoption, et cetera, innovation, you know, a ton of innovation happens with open source.
+
+By the way, Sam, isn't it nuts that, so Matt is clearly like this thoughtful, almost like soulful entrepreneur who is, has been building this thing since he was literally like a kid, 19, 19 years old. Like a guy you'd call wise when he was 21. Yeah, exactly.
+
+Like, oh, he's an old soul type of thing. Uh, works on open source software. Like you said, it's widely used.
+
+It's like almost free. It's so, so cost, uh, so affordable. It's like only good.
+
+All I hear is like only good. And then you had this like random villain arc that people tried to paint on you in the last year with this like drama that's going on. I couldn't believe it.
+
+I was like, if I was going to put money on who's like the least drama attracting founder, it might've been you. Um, so I thought that was nuts. Sam, quick, your reaction to that real quick.
+
+And then I want to hear Matt's thoughts on it. So I didn't follow it too much. I'm a WordPress user, but I just, and I'm friends with Jason Cohen, uh, of, uh, WP engine.
+
+You guys had a, uh, a fight, but I was actually shocked, Matt. I thought that some of the stuff that you said, I was shot. You like, you, you were, you were, people were insulting you and you felt like insulted them back.
+
+And I didn't. And I was like, I was like, I've read a lot about Matt's work. I don't know Matt and I've listened to him.
+
+He doesn't seem like someone who would ever like insult someone. And I was actually surprised that you were going as hard as you were. And I guess your perspective is like, they're coming after everything I made or they don't contribute whatever.
+
+But I was actually surprised that you were, you, you were pissed off. And I didn't think that you would be the type of guy that would come off pissed off. You know, a failure mode.
+
+And I think that can kill many open source projects is one that get taken advantage of. And so just like a schoolyard bully, like you kind of have to stand up for yourself. And, um, so it's kind of funny because you say you don't think of me of doing this, but actually, if you look at the history of WordPress, there has been maybe four or five times in the history where I had this kind of villain arc.
+
+People were like, we had a fight to protect like our principles and like the sustainability and like the future of WordPress. Can you give the one minute summary of what happened? Cause I even half followed it.
+
+And I'm sure there's a bunch of people listening that don't even know what we're talking about. Could you give like the one minute and try to be objective with this? Like, like not, not just the, your side of the story, but what, what, what happened?
+
+Can you explain? You know, it's an ongoing legal battle, so I can only say so much, but, um, basically there's a company called WB engine started off like very positive in the community. Jason Cohen, I think is awesome, by the way.
+
+Um, but in 2019, they were bought by a private equity firm called Silver Lake and sort of over the subsequent five years, uh, started, um, becoming, I would say more parasitic of WordPress. Also creating with, uh, how they were marketing themselves and branding themselves, a lot of confusion in the marketplace, um, in a way that was threatening our trademark, you know, the WordPress trademark. So people would sort of say, Oh, it's WordPress engine.
+
+And they wouldn't correct them. And they, they would think it was official. I even had very close friends who were WB engine customers who thought that was my company.
+
+And I would frequently get support requests for WB engine, like my sites down and things like that. And, um, you know, you know, for a long period of time and, you know, two years prior to this fight started, um, you know, just doing our best to partner with them and resolve all these things and resolve the trademark stuff. And, um, they just weren't responding.
+
+And basically WP engine is a web hosting service, mostly, or maybe only for WordPress sites. And, uh, the accusation I believe was that you felt they weren't contributing to the project as much as they should have been given that they make like a lot of money. And also there was a trademark, uh, people confused the two companies on the contribution thing.
+
+Is that like, like, is like, I guess, like, what's your leg to stand on, on that? You know, for example, you know, like, does somebody have to contribute? Is that like a rule or is that a suggestion?
+
+Right? Is this like, uh, you're at church, you should put something in the tray, but you don't have to technically, but it's frowned upon. Like what, what is the take there?
+
+So WordPress, we do have this program we call five for the future. Um, by the way, this is all voluntary because it's open source license. You don't have to do anything.
+
+You do whatever you want. Um, but we say that if you're building a business on WordPress, um, if you can allocate, you know, somewhere between zero, one and 5%. Profit or revenue?
+
+It doesn't matter. However you want to define it. It could be time, could be hours, could be whatever, but, and put that back into what we call core, um, core WordPress, which is something that, uh, belongs in the open source project.
+
+So it's accessible to everyone. It doesn't just benefit your company. Um, that's part of what's made us so sustainable and allowed us to be a open source project, which has really thrived more than, you know, some of, you know, other great CMSs that were open source that came up at the same time, like Joomla or Drupal or something like that, which haven't had as much success as us.
+
+By the way, I think this is great self-interest as well. And, um, WP Engine is fairly unique in that pretty much every other company in the WordPress ecosystem does this quite a bit. And in fact, if you look at old versions of WP Engine's website, they were very supportive of this and actually even say on their website, they would dedicate, you know, two or four full-time people and everything like that.
+
+You know, fast forward to 20, 24, um, they were had less than that on core. So I think that's, that's a whole like, um, sustainability, uh, health of the ecosystem, health of the product issue. Um, it's not a legal issue at all.
+
+The trademark abuse of not just the WordPress, but also the WooCommerce trademark. So you could argue that WordPress, WP, whatever, but like they were also abusing the WooCommerce trademark, which is fully owned by automatic. Um, you have to protect that.
+
+If you don't protect your trademarks, you lose them. And so, um, we're having discussions around that. We have trademark licenses with other web posts, great relations with every other, and they're, they're just a web host.
+
+They're not a tech company. They don't really create a lot of IP. Um, and there are web posts, which, uh, people think is the largest, but they're actually, you know, probably the sixth or seventh largest WordPress web posts.
+
+There's a lot of bigger ones. And, uh, they're a single digit percentage of all the WordPresses in the world. You know, they probably have like 700,000, 800,000 or something.
+
+So people have made this into a bigger deal. It is, I, you know, some of these previous controversies that got mainstream media coverage, just, you know, CNN, I had this hot nacho scandal in the first couple of years of WordPress or a thesis fight or the Easter massacre of themes, like all these things I'm mentioning, you probably haven't heard of. It used to be like half my Wikipedia page.
+
+Now it's not. Today, if you go to my Wikipedia page, you know, their PR firm has a whole paragraph about this. I think in five years, maybe it'll be a sentence or not even out there at all.
+
+So it's not my first rodeo. Sometimes you have to fight to protect your open source ideals and the community and your trademark, by the way. Um, but, uh, you know, I expect this to resolve in the next few months.
+
+And, um, and now they're the sort of, although it's easy to find, like if you go on Reddit or Twitter, um, I get a lot of hate. A lot of people were pissed at you. I tweeted out that you were coming on to, uh, to the pod yesterday.
+
+If there was a lot of angry people and I was, I was a little surprised by that, to be honest. Yeah. And, you know, some of the people are uncomfortable with, you know, us having to fight, protect ourselves.
+
+Um, you know, WP Engine, uh, took some very aggressive legal action. So it turned out when we thought we were sort of good face negotiating, they were preparing a legal case to attack us because, you know, three days after I gave this presentation, they launched this huge lawsuit with Quinn Emanuel. It's kind of like the, one of the biggest, nastiest law firms.
+
+And, you know, private equity is so famously like goes in, hollows out businesses, extracts all the value, it kind of kills it. There's this crazy story. I don't know if you saw it recently where like, one of the reason there was like shortages of fire trucks in LA was like the fire truck manufacturers have been like rolled up by private equity and they've been like jacking the prices.
+
+And that was like huge waiting list for like fire, new fire trucks and fire truck repairs. And, uh, you know, there's lots of examples. Not all private equity is bad.
+
+There's good investors and bad investors in every asset class. Look, I didn't follow the story in depth. I didn't need to, I'm not a lawyer.
+
+Don't need to be. It's common sense to me. Uh, who, whose side am I going to be on the, the private equity backed company that's, you know, sounds almost like it's made by the, by you guys, but it's not, or the founder who's been working on this for like, you know, 20 plus years of his life, open sourced.
+
+It is, you know, used by everybody. It's kind of like a staple of the internet and, you know, captures like a tiny bit of the value along the way. Um, it was, it's pretty obvious to me, uh, you know, which side I was going to, going to come down on.
+
+So I think it was, it was actually a common sense test. I think for most people, and I can't believe how many people are like, you know, on the PE side, it actually reminds me a little bit of like the AI stuff right now. Wait, Sean, we did a whole podcast about the founder of this PE firm though, and how like, uh, fascinated, fascinated we were with them.
+
+We do profiles on ruthless killers. And then we're at the end, we're like, isn't that awesome. And we're like, yeah.
+
+Do you want to be that way? Hell no. Like, that's not me.
+
+But like, I'm glad that these people exist. Like you need all these people in an ecosystem. Like it's not, they're not all bad.
+
+And there's impressive things about how I think his name was Egan Durbin or whatever. They like, I think that's the guy that we talked about, you know, it's impressive in the same way that David Goggins is impressive, but I'm not going to go out there and run until my toenails bleed. Like I like that he exists.
+
+That doesn't mean I want to be like him or even that I think that's the right thing for most people to do. I think it was on, uh, uh, on your blog. It could have been on the Tim Ferriss podcast.
+
+You wrote about how, um, I think WordPress or automatic has like roughly 2000 people. Um, and I think you wrote about how you tried a bunch of different ways to hire people. You're like, did all these tests like Google does like these like brain teasers and you tried a bunch of other stuff.
+
+And you said two interesting things that stood out. You said, um, uh, what I found is that, uh, the people who are the best writers oftentimes are the best people who we hire, uh, not PhDs, not master degrees. It was a correlation between your ability to write and communicate, communicate via the written word.
+
+And then the second thing you said that was pretty wild. You said, uh, you now, or you used to hire people just by like emailing or texting. Like it was like just through chat, not ever face to face, not phone calls, things like that.
+
+Do you still hire people strictly through text communication? Yeah. For some roles we might do a zoom, if it's a sales role or something like that, you know, obviously it's important to see how someone, uh, interacts.
+
+Um, but basically, you know, for a lot of our roles, you know, written communication is going to be the primary thing. Um, but also like people want to talk to someone, like, we're not going to be like, no, you can't. But, uh, yeah, a lot of, uh, our hiring process can be completely asynchronous and completely text-based.
+
+And for the first thousand or so hires, I did a final chat for every single person. Is your chat like slacking or G chatting or something? Yeah.
+
+It ended up being on Slack when, when Slack was invented, you know, before that, I think it was on like Skype or AIM or something, you know, in the early days or, or IRC. I think the way you said it was, uh, we do auditions, not interviews. So what, what does that mean?
+
+How do you, how do you do auditions? Well, we do a trial project. So we actually hire people on a standard sort of 25 an hour contract.
+
+And so we pay them, uh, to do, you know, we have screens with, you know, resumes and a little interview and stuff, but then we say like, let's actually do some work together. And, um, and there's various versions of this for different roles. We've done sandbox versions.
+
+We've also done it where they were actually talking to real customers, you know, like a support person was actually like answering real tickets, but we've always been smaller than a lot of the big tech, but we compete with them. And so we need to have like the same caliber or better of talent. So, um, part of, I think, automatic's advantage is we've created an environment and also sort of a way of hiring that finds people who might be overlooked by sort of a, a meta or Google or something like that.
+
+Um, and we give them an opportunity, not just to be hired, but also to participate in a company in a way that they can still be just as influential and have as much impact. Cause even like, you know, there's, there's other companies that might have remote workers, but if you're not at headquarters, you're not going to be, you know, close to the sun, you're not going to be next to see you, you're not going to be able to grow or, or have an impact. But we've tried to create it where our center of gravity, our headquarters is really on the internet.
+
+And, you know, I have colleagues in 90 countries, 90, even though we're only, you know, 750 people. So, um, and another sort of innovative thing we do, we didn't do this in the beginning, but we moved to it probably like 2012, 2013 is, uh, we pay people the same salaries regardless of location. So it's, it's kind of funny because we'll all like that quality DEI stuff, whatever it's so much of I feel like is virtue signaling because if you ask these companies and say like, Hey, you know, I'm not going to call anyone out by name, but let's say big tech company, do you pay someone in Pakistan the same that you pay them in California?
+
+Usually the answer is no. If they're doing the same job, you know, the same, like code wrangler engineer or whatever like that. And, uh, they usually say no.
+
+And they usually have some reason like cost of living or local markets or whatever, but we sort of moved to where we said, Hey, same work, same pay. You know, it's kind of a, something that, you know, the past hundred years, that wasn't always true for men and women, even, you know, or, or racial things or something like that. So I think the same moral reasons where I say like same work for same pay of people of different skin colors or something like that, within a country, I think you should do that globally.
+
+And I think that's the future of work, actually, because, um, to the extent that you can be equally as valuable and generate as much value for a customer, wherever you are, um, you should receive the equal pay for equal work. Have you guys read, um, American Kingpin, the story of, uh, Ross Albright, the Silk Road? Uh, have you read that, Matt?
+
+I think I've read some of the long form wild articles, but I've never read the whole book. Yeah. Oh, you gotta read this book, man.
+
+I'm rereading it now. Cause he just got released and it's like the best book I've ever read. It's like a total page turner.
+
+The story of it for listeners, basically Ross Albright was accused and I think he did it where he started Silk Road, which was eBay for drugs and two years. It did like 2 billion in sales, gross sales, something like that. But what's crazy is like, it kind of sucks because this whole business was documented because he chatted with everyone.
+
+Like he had 12 coworkers and he did two things that were interesting that I actually think are going to be common. The first thing is that he, obviously, because it was an illegal enterprise, he never, they didn't, they didn't know the identity of the workers. It was just like their username.
+
+Like one guy's name was like chronic pain. That was his username. So he just, he didn't know this guy's real name.
+
+He just knew chronic pain as like the guy Ross knew everybody's name. They didn't know each other's names or his. He, he made them send a license so that he could basically have that, like, you know, uh, always have that in his back pocket, have leverage, but chronic pain didn't know Ross's.
+
+Uh, yeah, sorry. I forgot that was actually important detail. That's actually very similar to like early hacker culture.
+
+You know, everyone was sort of known by their username. There's like interesting merits to that. And then the other thing was that they only communicated via messaging.
+
+And I was reading this book. I'm rereading it now. And I was like, those two attributes are kind of interesting for a company, which is like, uh, like anonymous workers and, but you're still oddly friends.
+
+Like he'd be, he developed relationships with his coworkers. This is a great LinkedIn post for you, Sam. Like 13 management lessons I learned from the silk road.
+
+Here you go. I believe that he did murder for hire four times. He did a lot of bad, but he was actually an inspiring leader.
+
+Like when you read like some of his like, like stuff. Well, he was very idealistic, right? Like he, he had certain beliefs that drove him, right?
+
+He, he didn't intend, like he didn't necessarily, um, intend. Like for example, he wasn't super interested in selling guns on the platform, but he believed that people should be able to sell what they want. And therefore, and it, and his team was like, no, no, you shouldn't do this.
+
+This is going to increase the target on our back. Like you're cool with the drug side, but you don't care about this. So let's just ban it.
+
+It's going to cause problems. And he was like, well, no, that's not the ethos of what we're doing. Like we wrote a creed of what we stand for and why we're doing this.
+
+And therefore we got to stand by it. And they call them captain. You know, it was very much just like, uh, like, uh, we are revolutionizing thing.
+
+And that's like a really interesting thing. Matt has a, uh, you, you don't get called captain, but what is your like a benevolent dictator for life? Right.
+
+Uh, BD BDFL. It's a term in open source that's applied to like Linus at Linux or, or Guido at Python or something like that. David Heimer, Hanson at rails.
+
+Um, but it's, it's sort of a joking thing. And one that I think none of us like really attach ourselves to, uh, just kind of like an internet lower thing. Matt has a lot of other interesting things, right?
+
+Cause you got this like multi-billion dollar company used by most of the internet, but you run your company, these interesting ways where remote work, I think is your famously were early and heavy into remote work. And you've talked a lot about that, but you do a couple other interesting things. So we talked about auditions instead of interviews, but you also do, um, everybody in the company, including yourself works customer support.
+
+I think one or two weeks out of the year. Can you talk about that one? Yeah.
+
+Part of our hiring process is your first two weeks of doing customer support for every single hire, whether you're like our new CFO or chief legal officer or, um, um, or whatever role it is. Um, so, and then once a week, a year, you rotate back into doing customer support. Um, gosh, uh, by the way, lots of companies have versions of this.
+
+Um, so it's definitely not, you know, when we're the first to do this or anything like that. Matt Levin Why should a company do that? Matt Levin If you look at every successful business, um, the closer they are to customers, generally the more successful they are.
+
+Matt Levin And so it's very easy, especially when you're running something on the internet and distributed for, you know, people to become numbers or stats or something on your look or dashboard or something like that. Matt Levin And so, you know, getting back to like every individual, you know, every, every number of your signups, you might have like 5,000 signups in a day, but each one of those people is like, has a story. You've just learned a lot about your product.
+
+And it's, um, I think the best way to sort of do iterative customer development. Matt Levin I think Eric Ries talked about this or Steve Blank, you know, the kind of like get out of the office and go meet the customers. And I'm very inspired by like leaders at Salesforce, talk to Mark Breenoff or someone like that.
+
+They'll typically spend a quarter to a third of their time with customers. Even at that scale. Matt Levin Is there a story or any epiphany you had from doing this?
+
+You've probably done this now, you know, for, for decades. So is there like an insight that came from this? Matt Levin Just the other day, a few days ago, I spent like, uh, 30, 45 minutes with, uh, the gentleman who kind of checks expenses at the company.
+
+You know, cause we have like these ramp cards and people who expense things and stuff like that. You know, sometimes we like say, you need a receipt for this. So we question an expense.
+
+And I just call it to understand more about this and also make sure that the way we were doing this was the most hated man at the company, by the way. Matt Levin Well, I had gotten some feedback from folks. They felt, um, you know, some of the questions they were getting felt a little aggressive.
+
+And so, you know, we, we want to talk about, um, one, I just kind of want to see like the tools they used and how the work did and stuff like that. So some of that was just shadowing. So I was like, okay, cause I want to understand the interfaces.
+
+Um, this was also really helpful, like going through support. I realized that some of our internal tools like don't represent your best practices and design or usability. So, you know, sometimes, you know, so the internal stuff doesn't get the love that your external stuff does.
+
+Um, but then also, you know, we just sort of talked about like the culture of automatic, you know, bedside manner, if you will, like, how can we like, you know, hold these principles, like we need to, uh, really enforce our policies and make sure we do, you know, we get audited and everything. So like, uh, we, we need to have these things from like a good accounting principles point of view. Um, but also doing it a way that like, when we have these conversations, we're talking about the principles of it and the reason why.
+
+So it's not just like, I'm giving you Sean a hard time because you didn't have a receipt, but like, hey, if we don't have this receipts, you know, are, are, you know, it's sort of hard to affirm my question of this. And then, you know, that might create an issue for X, Y, Z or something like that. When I first moved to Silicon Valley, I, I came to work with this guy, Michael Birch, and he was, he represented everything I wanted.
+
+He had already built like successful tech companies and he had made it. And I was a 23 year old kid who wanted to make it. And so I'm super excited to go into the work the first day.
+
+And I'm like, I'm going to learn so much from this guy. Cause he'd not just done it one time. He's built like four successful companies.
+
+And so I, I'm ready for him to teach me to kind of like the dark arts. I'm like, what's the strategies to growth hacks? What this like super, like high level strategic thinking.
+
+And the very first week he puts me on, um, not the new shit, like the oldest company that he had started. Something he started back in 2001. Was it like birthday calendar or something?
+
+Yeah. Birthday alarm. Is that still going?
+
+Birthday alarm? It's still going. And so I, as like 25 year old company now, now.
+
+So I, at the time I was like, oh man, like I got to do this, like whatever. And he tells me the story. So I actually learned this really valuable lesson in it.
+
+I go, so what's the, I got curious because instead of just like being bored at doing like birthday alarm, which you know, seemed like this old outdated product at the time, I got a little curious. So I started asking him like, where did this come from? Like, how did you even come up with this idea?
+
+Why did you build this product? And what he told me was he goes, my very first startup, I had quit my job. I wanted to like build a successful tech company, like do an internet company.
+
+Internet was like the new thing back in 99, 2000. And he quit a high paying insurance job while his wife was pregnant and was like, I'm going to make it. So he tried to create something really fancy.
+
+So he's like, oh, with the internet, he created something that many people have tried. Like Sean Parker tried to create this, a self updating address book, which is like, you know, I have your information. I have your name, your address, but you moved, Matt.
+
+Now I don't know that you moved. So wouldn't it be cool if you could just update your info in one place and it updated in all your friends address books. So we now have your latest and greatest address.
+
+So that's what he wanted to build. And he's spending like nine months heads down, like doesn't leave the bedroom coding this thing. And it's not really going anywhere.
+
+But because he was a one man show, he was also doing, you know, he was the designer, he was the developer, he was the ops guy, he was the customer service guy, like he did all of it. And he was like, it's the customer service that was actually the key because he was answering support tickets. And he's like over and over again, he's like, I spent like, you know, seven hours a day banging my head against the wall, trying to figure out why nobody wants to use our product.
+
+I think it's so cool, but nobody wants it. And then in the hour I was doing customer support, he's like, I noticed that a bunch of people kept thanking me for the birthday reminder feature I had built in, like just the one feature, which was like a throwaway idea, which was just if you know, forget the address, if it was someone's birthday, I would just tell you, you know, Hey, it's our birthday today. Remember that this is before Facebook existed, right?
+
+So you didn't have Facebook or a bunch of other ways that people could do this. So he just threw away the whole product and renamed the company birthday alarm.com. And he's like, I expected to go nowhere.
+
+And that was the thing that took off. And you know, at that time, birthday alarm had generated for him and his wife personally, like probably $20 million of pure profit by that time. Because it was just every year was just generating a few million dollars of profit.
+
+And it's still to this day, generating a few million dollars a year of profit. Like it's this incredible business. That's just the gift that keeps on giving that only came because he was answering the support tickets.
+
+And he got curious, like, huh, like, why are they keep talking about this birthday reminder thing? Is that is that actually maybe I should do that? And he did it on a on a whim.
+
+And then in two days had built the product that actually people wanted, you know? That's awesome. I have one last question for you.
+
+And it's on AI. So there's a lot of stuff you could talk about with AI. But I just am curious on your quick take about DeepSeek.
+
+Because it's also, you know, they came out with this open source thing that there's a lot of people on either side of how much they believe about the story. But like, what's your quick reaction to what you saw with DeepSeek? DeepSeek is a really cool model.
+
+So, you know, every model has like kind of a vibe and the way it's tuned and everything like that. And so it's a really fun one to play with. And I would say, you know, the thing I tell people with all this AI stuff, just like use it, play with it, you know, because it's such early days.
+
+And there's kind of a, you know, the way to prompt it, the way to interact with it, there's there's a skill there that you'll learn. And the vibes of the DeepSeek model are very cool. I think what's I'm most excited about as an open source guy is that they actually open source the model, wrote really amazing papers about how they built it, and it opened weights.
+
+So like, for example, at my company, I would say, don't use like DeepSeek.com, you know, for various reasons, that's hosted in China and stuff like that. But like, we can run the model ourselves, you know, locally. And that's pretty cool.
+
+Or you can get it through Perplexity, which hosted in the US. So like, there's, there's lots of ways to access it. And it's, it's a really fun model.
+
+So all these models have are like good at different things. They have a coding version, they just released a cool image thing. And so like, think of these as like little entities that you can interact with and run and spin up and boot.
+
+And you should just learn the nuances and kind of flavors of each one. Matt, do you guys actually believe that they've only taken the amount of funding that they've said? Didn't they say something like five or $10 million?
+
+They said that's what it costs to run the final training. Matt, do you guys think that's what it costs to run the final training? That might be true for like some, something, but obviously, like, I'm sure they've spent, invested a ton in other things.
+
+So, and I know there's kind of this theory that maybe that's like a PR or psyop or whatever like that. When I started reading about them, I got fearful. It was pretty insane, right?
+
+That the market reacted the way it did that, you know, it wiped out a trillion dollars of value in 24 hours. It was pretty wild how big that announcement was. I didn't think, I didn't think that was going to happen.
+
+And I think you called it, Matt, didn't you like tweet about this during Christmas time? Well, Andre Capathy, you know, so full credit, like tweeted about this, like the day after Christmas, and I saw his tweet and retweeted it. So that's when I first learned about DeepSeek and started playing with it.
+
+But yeah, I think that with all these things, there's some, you can verify all the things. They made some amazing advancements in like how they train things and how they run things and how they did memory interconnects and working within constraints. There's some really cool engineering breakthroughs and they shared it.
+
+And this is stuff that I think OpenAI had also figured out, but they hadn't like shared it publicly. And so what I love about the DeepSeek guys is they, they're open sourcing it all. So, and it's all available under like a true open source license.
+
+It's not like the Lama license where it's free to have 700 million users or something, or I think Quinn Alibaba one, which is also a really great model that people are sleeping on. So check out Quinn and some of these other models coming out of China. They're really, really good, but it's a true open source license.
+
+So. That's awesome. Matt, thanks for coming on, Matt.
+
+It's good to see you again. And thanks for, thanks for sharing everything you did about, about WordPress. It's been a pleasure.
+
+Yeah. We appreciate you, man. All right.
+
+That's the pod. So. Bye.
+
+Bye. Bye. Bogi.
+
+Bye. Bye. Bye.
+
+Bye. Bye.

@@ -73,9 +73,9 @@ curl -H "Authorization: Bearer mv_mtvG2X4U_dqRgdWMvSEoFtpMjRJkL4zlkwEXYH2I" \
 
 ### Server Configuration
 ```bash
-export WORKER_COUNT=6                    # Number of processing workers
-export MODEL_INSTANCES=6                # Number of model instances
-export MAX_CONCURRENT_UPLOADS=6         # Max concurrent uploads
+export WORKER_COUNT=2                    # Number of processing workers
+export MODEL_INSTANCES=2                # Number of model instances
+export MAX_CONCURRENT_UPLOADS=2         # Max concurrent uploads
 export MAX_CONNECTIONS=100              # Max total connections
 export USE_RAM_FILESYSTEM=true          # Use /dev/shm for faster I/O
 ```

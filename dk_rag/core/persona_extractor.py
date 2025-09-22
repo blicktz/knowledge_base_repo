@@ -33,17 +33,18 @@ class PersonaExtractor:
     combined with statistical insights.
     """
     
-    def __init__(self, settings: Settings):
+    def __init__(self, settings: Settings, persona_id: Optional[str] = None):
         """Initialize the persona extractor"""
         self.settings = settings
+        self.persona_id = persona_id
         self.logger = get_logger(__name__)
         
         # Initialize LLM
         self.llm = None
         self._init_llm()
         
-        # Initialize statistical analyzer
-        self.statistical_analyzer = StatisticalAnalyzer(settings)
+        # Initialize statistical analyzer with persona context for caching
+        self.statistical_analyzer = StatisticalAnalyzer(settings, persona_id)
         
         # Extraction prompts
         self.prompts = self._init_prompts()
@@ -221,12 +222,16 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
             "core_beliefs": core_beliefs_prompt
         }
     
-    async def extract_persona(self, documents: List[Dict[str, Any]]) -> PersonaConstitution:
+    async def extract_persona(self, documents: List[Dict[str, Any]], 
+                             use_cached_analysis: bool = True,
+                             force_reanalyze: bool = False) -> PersonaConstitution:
         """
         Extract complete persona constitution from documents
         
         Args:
             documents: List of document dictionaries with 'content' key
+            use_cached_analysis: Whether to use cached statistical analysis if available
+            force_reanalyze: Force fresh statistical analysis even if cache exists
             
         Returns:
             PersonaConstitution object
@@ -240,20 +245,23 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
         self.logger.info(f"Starting persona extraction from {len(documents)} documents ({total_words:,} words)")
         self.logger.info(f"Estimated processing time: {estimated_time:.1f} minutes")
         
-        # Define extraction steps for progress tracking
-        extraction_steps = [
-            ("Statistical analysis", lambda: self.statistical_analyzer.analyze_content(documents)),
-            ("Preparing content", lambda: (self._prepare_content(documents), self._format_statistical_insights(None))),
-            ("Linguistic style", lambda: None),  # Placeholder, will be updated
-            ("Mental models", lambda: None),     # Placeholder, will be updated  
-            ("Core beliefs", lambda: None)      # Placeholder, will be updated
-        ]
+        # Check if we can use cached analysis
+        cache_status = "checking cache..." if use_cached_analysis else "fresh analysis"
         
         # Initialize progress bar
-        with tqdm(total=len(extraction_steps), desc="Persona Extraction", unit="step") as pbar:
-            # Step 1: Statistical analysis
-            pbar.set_description("Persona Extraction: Statistical analysis")
-            statistical_report = self.statistical_analyzer.analyze_content(documents)
+        total_steps = 5
+        with tqdm(total=total_steps, desc="Persona Extraction", unit="step") as pbar:
+            # Step 1: Statistical analysis (with cache support)
+            if use_cached_analysis and not force_reanalyze:
+                pbar.set_description(f"Persona Extraction: {cache_status}")
+            else:
+                pbar.set_description("Persona Extraction: Statistical analysis")
+            
+            statistical_report = self.statistical_analyzer.analyze_content(
+                documents, 
+                use_cache=use_cached_analysis, 
+                force_reanalyze=force_reanalyze
+            )
             pbar.update(1)
             
             # Step 2: Prepare content for LLM analysis
@@ -567,9 +575,11 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
         return preferences
     
     # Synchronous wrapper for the main extraction method
-    def extract_persona_sync(self, documents: List[Dict[str, Any]]) -> PersonaConstitution:
+    def extract_persona_sync(self, documents: List[Dict[str, Any]], 
+                            use_cached_analysis: bool = True,
+                            force_reanalyze: bool = False) -> PersonaConstitution:
         """Synchronous wrapper for extract_persona"""
-        return asyncio.run(self.extract_persona(documents))
+        return asyncio.run(self.extract_persona(documents, use_cached_analysis, force_reanalyze))
     
     def _estimate_processing_time(self, total_words: int, num_documents: int) -> float:
         """

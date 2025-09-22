@@ -1,0 +1,113 @@
+So let's give it up for Max and Grammarly. Hi everyone, I'm Max and I'm a co-founder of Grammarly and today I'm going to talk about bootstrapping. And I'm going to use Grammarly a lot as an example today.
+
+So let me just say a few words about the company to those who are not familiar with it. Grammarly is providing AI powered products that help people improve their communication, help them make their emails, social media messages, documents more effective, clear and mistake free. So Grammarly has a very big mission, improving lives by improving communication.
+
+It's so big it almost sounds undoable, not just not bootstrappable. And today I'm going to tell you how it is actually possible to do, how this can be done. And we're doing it now.
+
+Millions of users are using Grammarly and it materially improves their lives. And I promise you if you install Grammarly after this conference, your life is going to get better. Even if just tiny little bit, it's going to get better.
+
+So this mission is real, we live by it. But it's so big it may seem it's not something that can be bootstrapped. But we did it and today I'm going to share with you a framework that helped us do it.
+
+And just to illustrate what I mean by good scale, by kind of we did it. This is not to brag, there's just some numbers to show you what I mean by the scale of our company. So it all started in 2004 when my co-founder and I decided that it's time to get real, it's time to build a real company.
+
+So we read a lot of manuals, mostly from IKEA, and we assembled our first office in Toronto. As you can see on this picture, my co-founder Alex was the brain of the operation and I was the muscle. So that's why he got the window seat.
+
+Yes, that's how real bootstrapping looks like. It's not very glamorous, I admit it. But it's just a start.
+
+So in 2009, until 2009 we were focused on plagiarism detection, which is kind of a very niche area. But it's related to communication. And in 2009 our understanding of communication evolved, our vision evolved, and we had new mission.
+
+How people communicate better. And we realized it was very ambitious, it was very difficult from a technology standpoint, and it had massive market. It was diverse because communication problems and needs are different for everybody.
+
+So what do we do? Is it too much to bootstrap? But we decided to give it a try.
+
+We had some experience, we had some learnings from previous projects, so we decided to give it a try. And what helped us get through it, what helped us do this, was kind of a three element framework that I'm going to share with you today. And I very much hope it's going to help at least some of you to do something big and do something impactful.
+
+So step number one may look familiar to some of you. I guess many here know the concept of MVP. If you don't Google it, it's very useful concept, it's a great concept.
+
+But the challenge with it is that most people apply it incorrectly. They just go straight to the product. They minimize their product.
+
+They go with minimum, and it's easy to make this mistake because it says minimal viable product, right? So they go straight to the product. You have to start your MVP with your market.
+
+You have to pick a small homogeneous segment with one pane that's sold by small fraction of functionality that you're envisioning building eventually. And this functionality is something that's going to be useful to the rest of your market at some point. So let me illustrate it with a diagram what it actually means, how that works.
+
+So let's say on the vertical axis you have product functionality, product depth, like how much value you're creating for users. And on the horizontal one you have market breadth, like the size of your market. So, and the area of the chart is the amount of work you have to do to get there.
+
+The blue shaded area is your ultimate vision. It's like 10, 15, 20 years of work. So you don't want to start there.
+
+You want to do something smaller, trim it. And what most people end up with is what I call typical MVP. It's that gray area at the bottom here.
+
+It's broad because you're building for everyone. And it's very thin because, well, you have limited resources. So what you end up with, you're spending a ton of work to build something that barely qualifies as a toy and people forget about it in like a few weeks.
+
+But if you MVP your market first, if you find this very small group, very homogeneous group and build your MVP specifically for them, just for them, you're going to end up doing much, much less work. And the product is going to be better so that it not only gets kind of elevated to a level of tool rather than toy, but you can also charge money for it, which is extremely important for a bootstrap product. You get early revenue very quickly.
+
+And just using Grammarly as an example again, our MVP market was academics, students, researchers, instructors. And that strong pain that we identified for them was making documents, making papers compliant with rigorous academic standards. And that pain could be solved by a subset of checks of corrections suggestions that would be needed for other people as well.
+
+So we were not deviating from our long term vision of just like building a tool that would help people communicate. And just let me give you an example of what this optimization of building that MVP for that tiny small market gave us. For example, pretty much everyone, 99% of our potential market wanted feedback in real time.
+
+You type and you see feedback, you see suggestions, but academics didn't. They were fine waiting five minutes, 10 minutes, and 15 minutes to get feedback on their document. Why?
+
+Because they spent weeks writing it. So extra five minutes doesn't matter. They just go get a cup of coffee.
+
+And that realization, optimizing for that, allowed us to not worry about speed and worry about accuracy more. But it also allowed us to cut engineering costs by 50% and cut server costs by more than five times. And that's just one optimization.
+
+So don't underestimate the step. Try to go with narrow market first, MVP or market first before MVP in your product. Now moving on to step number two, sell before you build.
+
+And it's easy to explain easier to explain with an example how we did it. So as soon as we had specifications for our MVP, we went to a bunch of conferences, trade shows for our target market academics and try to sell the product just using bare demos. And it was invaluable.
+
+It got us feedback on the product. It got us validation of some of our ideas. And the bonus point, it also lined up first buyers so that we had first revenue literally days after we released the product.
+
+Literally days. That's extremely important for startup again, because basically our first buyers funded the rest of the company. And this approach applies not only to B2B, not only to sales.
+
+If you are working on a consumer product, it still applies. There are still ways to do it. For example, for our consumer focused features, we used AdWords.
+
+To advertise upcoming big features and see how people respond to them. If people click on ads, in what numbers, to help us prioritize those features. So essentially, we kind of pre-sold, tested the features before they were developed with real users.
+
+Here is an example of a kind of mailing we did to potential educational customers. And this example reminds me of one very important point I wanted to make. When you do pre-selling or kind of selling something that you don't have, like smoke testing, it's very easy to kind of not be completely ethical.
+
+Please don't do that. It's possible to do that in a completely ethical way without any bait and switch or anything like that. Be ethical.
+
+And just, if you put your mind to it, you can completely do it in a very positive and ethical way. An example of one of the kind of tricks we use to make sure that it's completely fine. When we sold somebody on a feature that we didn't have, we actually gave them a free trial that ended after we released that feature.
+
+So before they actually paid us money, they saw the complete product that was promised to them. And as a result of our approach to this, of this approach to this pre-selling, every customer we sold product that we didn't have, eventually was completely happy and we used them as references to build more and more customers. So be ethical, it's worth it, it pays off.
+
+Expand product in the market iterations. That's the final step. And that's where most people fail.
+
+That's where big dreams die. So pay attention. The kind of the trick here, the main principle here is build for your next segment.
+
+Not for the segment, not as much for the segment you have now. And just using example to illustrate it, not quite an example, but analogy. What is more valuable, building for 10,000 users that you have or for 1 million users that you're about to have?
+
+Of course the latter. So think about it this way. It's very helpful.
+
+But of course it's never black and white. Whatever you build helps both your existing users and your new users. So how do you balance that?
+
+I use this formula where you basically take size of your current segment and benefit to it, and size of the new segment and benefit to it, and factor in the risk. It kind of spits out the relative value of anything new you build, and it's very helpful for evaluating new opportunities and things you can build. So this is how this looks when you put it back on the graphs that we saw earlier.
+
+You expand your market, you expand your product functionality for that market, and gradually you delight more and more users. So some do's and don'ts, kind of to sum it up and to make this model even more practical and useful. First, don't bite off too much.
+
+Small quick steps are less risky. They are generating revenue quicker. You're gonna be kind of releasing new features, expanding your market in smaller but quicker steps, and each new improvement is gonna help you get more revenue, which is very important for a bootstrap company.
+
+Then don't get stuck chasing your tail. This is a big mistake that many people make. And let me explain what I mean by this.
+
+Let's say you had success on a specific segment of the market. And as a result of that, all the feedback that you got, all the data that you're collecting, is gonna be about that segment. But it's not gonna teach you about users you don't have.
+
+Users that you have are very poor at teaching you about users that you don't have. So you have to realize that. You have to break out of it.
+
+You have to go out of your existing user base, go out of the data that's easily available to you, and look broader. Look to your next segment. Look to expansion.
+
+And keep focused on your vision. And then finally, expect each next step to be harder. Initially, if you've done a good job creating your MVP, kind of specking out your MVP, you collected all low-hanging fruit, you skimmed all the cream, you killed flocks of birds with one stone, you've done all that.
+
+But once you've done all that, it's over. It's no longer that easy. So each next step is gonna be progressively more difficult.
+
+And again, it seems obvious, but most people don't think that like that. They fall into the trap of thinking, well, I'm getting better at what I do. I'm getting more resources.
+
+My company is growing bigger. So each next step should be easier. No, it's the other way around.
+
+If you've done your job right, you've done all the easy things in the beginning. And each next thing is gonna be more and more difficult. And yeah, that's it.
+
+It's a very simple framework. I really hope it's gonna help some of you guys build something new. It doesn't even have to be a startup.
+
+It may be a product within your existing company. It can be applied pretty broadly. And it worked really well for Grammarly.
+
+We started, as I mentioned, we started as a very narrow tool for very narrow market on purpose. And then right now we have a broad suite of AI-powered products that help people improve different aspects of their communication from effectiveness, tone, correctness, clarity, pretty much all across the board. And that's just the beginning.
+
+Thanks.

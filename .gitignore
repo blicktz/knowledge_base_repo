@@ -249,3 +249,5 @@ test_outputs/
 
 # RunPod deployment files
 .runpod_pod_id
+.sqlite3
+chroma_db/

@@ -1,0 +1,109 @@
+Okay, hey everyone. My name is Aram Sabedi. I'm the founder of ZeroCator.
+
+Today I'm going to tell you about how I started ZeroCator without writing a single line of code for the first 12 months. So, so some quick background first. Started ZeroCator about five years ago.
+
+We're up to 80 employees now. We're here feeding over 700 companies and we have offices in San Francisco, DC, Chicago, and New York. So, 2007, I discover Hacker News and I become completely, completely obsessed with everything to do with startups.
+
+And I have this very romanticized idea of sleeping under a desk and I can't wait to start a company. So, only problem is I'm 21 years old at the time and I have no idea how to do this. So, I figure the best plan is to join a startup, figure out what it's all about, and then go do my own thing.
+
+So, to this end, I sell my car, I get a ride to the Bay Area, and I start looking for housing. I convinced this retired dentist to give me the keys before he's gotten a signature or money or anything. And I started applying to jobs.
+
+Now, my timing for this could not have been better. Neither can my clicker. There we go.
+
+So, it was 2008 and nobody was hiring. And, especially, nobody was hiring somebody with no particular marketable skills. So, I applied to job after job after job and got nothing.
+
+So, I started applying to every job I could find because, at this point, I was really starting to run out of money. And, you know, I still get nothing. I end up walking to downtown Berkeley and I walk into every open door and actually ask for a job application.
+
+And, as one does in this sort of situation, I got a job at, you know, Ben and Jerry's. Fun fact, this guy eventually became a customer. So, meanwhile, I come across a job post for Justin TV and I apply.
+
+It's for a community manager job. And, I actually get a response back. And, I go through a series of interviews and each time, and I think this is the only time they did interviews this way over the entire time, I was there.
+
+But, each time they would tell us how many other candidates we were competing with. So, it was like 24 people, 16 people. And, I really started thinking of ways it could stand out.
+
+So, I tell them things like, just to be fair, I should mention I'm going to quit in a year and start my own company. This is what you call a high variance strategy. And, I got the call.
+
+And, they decided not to hire me for that job. But, apparently, my startup enthusiasm had made an impression and they decided to make a role for me. And, I started at Justin TV as the fifth employee doing office operations.
+
+Now, if you don't know what office operations is, it's kind of like the junk drawer of startup jobs. If something doesn't go somewhere, you throw it to that guy and he'll take care of it. Don't worry about it.
+
+So, I did this for 18 months. And, I met a lot of really great people. I learned a lot.
+
+I went from being clueless to slightly less clueless. And, it was just a really educational experience. But, you know, after 18 months, I started to get worried that I was stuck because I only planned to be there for a year.
+
+So, I gave myself a deadline. I decided I was going to quit my job in six months. So, I had to come up with an idea and get it to Raman Profitable by then.
+
+Now, I was living off of less than $1,500 a month at the time. So, Raman Profitable was kind of a low bar. And, I would do things so I didn't forget, like add a countdown timer to my desktop and change my work password to six months quit.
+
+And, this is just how I did for a while. So, I was responsible for a lot of different things at Justin TV. I wore a lot of hats.
+
+And, out of all the responsibilities I had, guess which one was the most annoying? I'll give you a hint. It rhymes with bordering brunch.
+
+Now, Justin TV was an extremely opinionated about food company. I mean, these guys, I thought at the time it was normal, but now that I've seen thousands of companies, actually, they're in the top one percentile of opinionation about food. No, seriously, we would have email conversations across the whole company, 50 emails long, about the merits of olives and whether or not they were disgusting.
+
+Olives are highly polarizing, I've learned. Unfortunately, I had what Paul Graham calls schlep blindness, which is where you have a startup idea right in front of your face and you just can't see it. And, to be fair, in 2009, food startups weren't really considered a legit thing.
+
+It's not really something people ever raise money doing. Fortunately, around this time, the office manager at Dropbox apparently heard that our food had gotten pretty good, and she emailed the founder of Justin TV asking for our list, the list I had come up with. And, around the same time, I was having this conversation with Justin about different startup ideas I was considering.
+
+And he mentioned this office manager and suggested I help them out. So, three months later, I quit my job. By the way, I think this is a really good recipe for startup ideas.
+
+You know, you get a job at the bottom of the totem pole where they throw you all the crap nobody wants to do. I guarantee you'll find a hair on fire problem. So, this is zero cater 1.0.
+
+I should say, I should say 0.1. You'll notice it's a giant spreadsheet. You should also notice that Dropbox is on there at 30 people.
+
+The real lesson of this whole talk is that I should have asked to be paid in equity. No, seriously, that Facebook graffiti guy is worth like $500 million now. So, for the first website, I looked up a couple simple tutorials on CSS and HTML and made something really basic in Notepad.
+
+For the company menu pages, I made a separate page and each week when I wanted to update their menus, I'd go in and edit the HTML and upload it through FTP. My sales formula was pretty simple. I had a list of companies I wanted to talk to.
+
+I would look them up on LinkedIn, look for second and third-degree connections, and then ask for deductions. Now, this part kind of sucked and I'm pretty sure everybody I knew got sick of me pimping their LinkedIn connections, but there you are. So, I did this for a year.
+
+Got to $500,000 a year gross sales run rate, and everything broke. I'll give you an example. I was spending 20 hours a week creating invoices by hand, which is stupid.
+
+There's no reason to do this, but there you are. This really sucked. So, this is the point where I started really looking for a technical co-founder.
+
+And it took three months, but I convinced a friend to join. And, you know, at this point I'd moved to San Francisco and my roommates were getting a little pissed at me for running a business out of the living room. So, we got our first office.
+
+It was at 8th and Howard, and it cost us $200 a month and people smoke crack in the doorway. Not even kidding. So, the first thing we did was automate this giant spreadsheet into a Django app.
+
+The second thing we did was automate billing into the Django app. And we had this beautiful moment where I clicked this button and 20 hours of work happened in three seconds. Oh my God, it was amazing.
+
+So, we applied to Y Combinator in the meantime. And we got an interview with Paul and Jessica. We sat down with them.
+
+And I actually think we got it pretty easy. We were pretty lucky in that Paul liked the idea right away. And at one point he asked Jessica how she felt about ordering the catering for all these Y Combinator events.
+
+And she said she hated it. So, we got the call that night. We've been accepted into the winter 2011 class of Y Combinator.
+
+So, a few months into Y Combinator I'm talking to the sales manager that I'm trying to recruit. And I tell him our numbers and there's kind of a pause and he asks if he can introduce us to this VC that he knows. And the thing that Y Combinator teaches you about fundraising is that it's an all or nothing proposition.
+
+So, we weren't ready to go into fundraising mode so I really tried to push him off. But he was really adamant just wanted me to meet this guy 15 minutes over coffee. Okay, I'll meet him for 15 minutes.
+
+So, I go and meet the guy and the next day I get an email. We'd also like to know if you're willing to go up to a million dollars. Now, remember I was mostly bootstrapped up to this point.
+
+And my average bank balance for the previous year was pretty much around $8,000. So, this was a big deal. So, you've probably heard of startups referred to as an emotional roller coaster.
+
+And I'll give you a great example. One day, this guy wants to give me a million dollars. The next day my co-founder quit.
+
+And so, I have a friend who has a great saying. He says, startups are like, startups do to co-founder relationships what puppies do to socks. They try to pull them apart.
+
+And, you know, I never really worked with this guy before. And I hadn't felt like he was really that invested. He didn't like some of the decisions I was making.
+
+So, we parted ways. Now, this happens to about a quarter of companies. They lose a co-founder.
+
+And it's actually one of the most common reasons for a startup to fail. This is why they try to dig into the relationship so much in any YC interview. So, here I was as a single non-technical founder trying to raise money, which usually doesn't really go very well.
+
+Fortunately, and this is one of my favorite things, my favorite thing about startups, traction trumps everything and qualifications don't matter. Qualifications don't matter because if you believe you can go, if you believe you can do something, you can go out and do it. And eventually, if you're right, people will be forced to acknowledge that.
+
+So, we raised money from a great set of investors. Actually, we didn't raise money from any of those VCs. But they did fund ZeroCater because they've all used ZeroCater.
+
+We find it's less diluting to get money for food instead of equity. Yeah. So, what's the takeaway for all this?
+
+We did raise a $1.5 million seed round. So, what's the takeaway? There are some quotes that I really like.
+
+People have described startups as being like being punched in the face repeatedly, pissing blood, and my favorite, chewing glass. Now, there's a great piece of slang from World War II, and you've all heard it before, SNAFU. SNAFU stands for situation normal, all fucked up.
+
+And that's startups in a nutshell. And this is actually one of the most important things to realize. Because if you start a company, you'll inevitably be in a situation where everything is fucked up, and you'll probably be in many of those situations.
+
+And if you don't understand that this is just the way things are, you'll probably quit. And the most important thing, the biggest existential risk to your startup is you quitting. So, that's really the most important part of winning in the long run.
+
+All right, guys. That's it. If you're interested in using ZeroCater, just email eat at zerocater.com.
+
+We're also hiring for a lot of roles. VP of product, VP of engineering. Take care.

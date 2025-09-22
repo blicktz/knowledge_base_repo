@@ -1,0 +1,181 @@
+Hey everyone, thanks so much for taking the time to come listen to all of us speak and really appreciate Sam and crew having me over here. Today my goal is to talk a little bit about the early decisions that can make or break a company or sort of define the trajectory of a company within a space. So a little bit more about me, about six plus years ago I started my first company, I actually joined Udemy as a co-founder, it was the vision of two Turkish immigrants who grew up in a one-room schoolhouse in southeastern Turkey and I met them while they were on their journey and got the opportunity to help them build that company to what it is today.
+
+Then about halfway through that time period I left and went and spent six months at Lyft, so really just a passerby and that story but had the opportunity to really learn why it was successful and take those lessons and then started Sprig. How many people here are familiar with Sprig? Fantastic.
+
+For those of you who aren't, Sprig's mission is to make it simple to eat well and our basic belief is that you shouldn't have to choose between quality and convenience, that you should be able to push a button on your phone, get a healthy locally sourced amazing meal delivered to you now within 15 minutes on average in San Francisco. And we just raised around so that we can go and take this vision to every place in the world and hopefully end sort of the terrible choice that we face every day right now in society which is am I going to work hard for my food or I'm going to eat crap. And Sprig hopes to change that.
+
+So one of my goals here is to talk a little bit about the detailed, like the specific decisions that we made really early on at Udemy and Sprig that made them successful because if you think about it, both Udemy and Sprig are in extremely crowded or competitive markets. I mean they're big markets, education and food. And so as a result there were a lot of really early strategic decisions that most people didn't really understand at the time, right?
+
+So we had a lot of trouble raising money at both companies, both at Udemy and at Sprig because investors didn't understand why these strategic decisions we made at Udemy were going to be impactful. And so what I want to do here is just provide a little bit of a lens for how we made those decisions, why we made them, and I'll leave the outcomes up to you to decide. So I don't feel like it's totally appropriate and some of the information is confidential about whether or not these decisions worked out, but they certainly did shape the companies as they are today.
+
+And so I think like the most important thing to realize is that all of these companies started with a very clear vision. And I remember like getting asked this question, I get this asked this question about both Udemy and Sprig and Lyft too, frankly. And the questions, you know, what were you thinking when you first started the company?
+
+Like how has it changed? What's different? And I've realized now that the answer is always, has always been at least for my companies that the vision has never changed.
+
+And that really, we've gotten better at explaining the vision and perhaps we've better defined the details of how that vision will come to life. But the original vision of Udemy was always to make possible for anyone to learn anything they wanted. And that's something that has always been constant and drove a lot of the original decisions on the strategic decisions that we made.
+
+And so the major strategic decisions, there are three of them that we made at Udemy that today, some of them may seem obvious and some of them don't seem obvious. And remember, that's important. One of the most common things about these early strategic decisions is that they always look like hindsight's 20-20.
+
+They always look kind of obvious 10 to 20 years later. But you're going to be in a situation in the future if you're starting a business, or you're joining a company, which is actually equally as hard to do successfully, that where you're going to have to make these strategic decisions when it's not obvious, so that in 10 years it is. And the three ones at Udemy were, you know, whether or not we should be live or recorded, paid versus free, open versus closed.
+
+I'll talk about them in more detail. So at Udemy, one of the initial things that was super interesting was, as I mentioned, I joined the company. In fact, the company had over a hundred thousand lines of code and was around for about three plus years in some format or the other in sort of Turkey, actually, before I ever got my hands on the product and got an opportunity to work on the company.
+
+And so by nature of that, my co-founders, who were both engineers, had built this, or at that point, they had built this beautiful live education platform. It was at the time, and I think maybe even to this day, the most robust live online education platform in existence. It was completely flash-based, which at the time was, of course, a really smart decision.
+
+It's since been killed by Apple in some ways, but it was flash-based. It could support multiple video cameras. It had a beautiful whiteboard and a presentation, and it has an extensible infrastructure for applications on top of it.
+
+And so this was an incredible effort. Imagine these two guys from Turkey who have been slaving away for three years building a live education platform, and I went and tried to sell this platform because that was my job. I was the business co-founder who would talk to customers and sell it.
+
+And I spent months and months and months trying to sell instructors on coming on the platform and teaching courses on Udemy. And this is the first lesson of any successful company, which is that the only way to really know whether or not your idea works is to interview and pitch customers. I tend to do it in two ways.
+
+Either one, I'm discovering information by interviewing customers, or two, I'm actually literally just pitching customers and trying to get them to use my product and getting some level of early traction, and witnessing people and trying to use some sort of soft skills to figure out whether or not what they're doing is right. And so one of the big early decisions that I made was, and I said this hundreds of times before we ever did it, but it was like, I want you to kill the live platform. Like, it's only going to be recorded.
+
+And at the time, there were dozens of online education companies, and not a single one of them believed that recorded was going to be the future. And the reason why I had that insight was because I said, hey, nobody's teaching on these live courses, like I could not get traction on live courses. And so I begged my co-founders, and actually, they agreed, to be honest.
+
+So it was one of those things where it was just like, you know, prioritizing on the product roadmap, to build a lot of an offline component, sort of an asynchronous component where you could post videos on Udemy. We ended up making the decision to post videos, and I was able to get traction on a couple early video courses. And that defined the company in a lot of ways, from a synchronous live online education marketplace, which clearly didn't work, to an asynchronous video marketplace, which is one of the biggest early decisions we made that was fairly painful at the time.
+
+And then the second thing that we had to decide was whether or not to go paid versus free. Yeah. Was to go paid versus free.
+
+And this was a really tough decision. And even today, if you look at companies like Codecademy, or Coursera, or Udacity, or Khan Academy, there are dozens of online education providers that have decided to go completely free. And so I want to tie this back to the mission again.
+
+The mission of Udemy was always to make education open and accessible. And I think it was very, very easy for the press and for sort of the emotions of decision makers involved in this to say, if education is going to be open and accessible, it should be free. And at Udemy, we decided to charge for courses, and we decided to enable charging.
+
+And the reason was, because we felt like we understood the marketplace better than anyone else. And our view was that actually, if our goal was to make education open and accessible, the only way to do that would be if instructors were going to make money. And so our view, it wasn't paid for selfish reasons so that we could make money.
+
+It was paid because that was the only way to increase the library of courses that we had at Udemy. And by dramatically increasing the library courses, we were increasing the amount available to consumers to learn from. And so today, Udemy has, you know, tens of thousands of courses on the platform, it's probably the largest online course marketplace on the internet, certainly one of the certainly the most successful financially.
+
+And that was a large part of the fact that we decided to go paid, mostly because of the same reason why the Khan Academy was free. Like our view is five minute videos on YouTube, we're not actually teaching people a whole lot. But for 10 hour court, you know, four to 10 hour courses online, with a small financial cost would actually be better for people.
+
+And so we ended up making that decision, and it was huge for the company. And then the final thing is open versus closed. And so another thing about the Khan Academy or Coursera, Udacity was this idea that like, only elite professors or educators could be good at teaching online.
+
+And, you know, one of the big decisions at Udemy very early on was how close do you make an education marketplace, right? Certainly, if you're, you know, eBay, or Odesk, or Kickstarter, you're going to have different views on open or closed. And it's important to recognize that actually every marketplace needs to take a different stance, based on its specific market that it's in.
+
+And our insight in education was, hey, actually in education, if you are more open, then you're more likely to attract the unexpected teacher in, you know, in Barcelona, who happens to be an incredible web development instructor, but doesn't have a PhD in education, or doesn't have a PhD in computer science. And so, again, it was an example of where I think it was so easy and obvious to say, like, only elite professors could become instructors in, in the, in, you know, online. And that's what a lot of other our counterparts took.
+
+And by making it open, these strategic decisions had an outsized impact on our scale, because now we're able to serve so many more, so much more diversity to our customer base. And so, I think, like, in summary, it's, it's not necessarily the case that it's obvious even today, whether those strategic decisions will bear out. I mean, Udemy's on year five, it's got, you know, billion dollar companies usually take seven to 10 plus years to, to really reach fruition.
+
+And, but I think that today, we're, at least from what I know, almost certainly one of the strongest players in the marketplace in online education. And, and the main reason for that was making decisions based on this idea of, hey, how do I deliver upon my mission in the most productive manner? And I think that's really powerful.
+
+Now, the next thing is Sprig. And I'll talk a little bit about Sprig. Sprig's mission was to enable anyone to get a hot, healthy meal at the touch of a button.
+
+And really what it was, was just about making access to sort of quality meals available to anyone, anyone on the planet. And this was particularly interesting, because it wasn't that long ago, and the, and the sort of war is still raging on. I think like, one of the interesting things about Sprig is that, and the same thing is somewhat true for Udemy, but I think it's much more true for Sprig.
+
+Businesses are about customers, like consumer businesses, if you're working in a consumer business, SaaS business too, frankly, B2B business too, but if you're in a consumer business, the customer wins, it's a democracy. Like at the end of the day, the company that's going to be the most successful company in a given space is going to be voted on by the people who actually buy from that customer base, from that product. The reason why that's important is because I feel like so many entrepreneurs and lots of second tier investors today are always looking for the easy way out.
+
+What's the business that's going to make me the most money tomorrow? What's the business that sort of like provides a good unit economics? And so I'm going to pay $10 today for a user, I'm going to get $12 back in six months, and I'm going to make money off of that user forever, right?
+
+And the problem with that is that markets don't play out over six to 12 months. And if you take a snapshot of any one business at one period of time over the course of 10 years, it may look really, really attractive on the inside. But consumers decide whether or not businesses are successful.
+
+And so I think that's a completely perverse way of looking at businesses. Uber is not amazing because Uber said, hey, like, you know, we're going to be a distributed marketplace that has this beautiful sort of like 20% take between supply and demand. Uber was successful because they did whatever it took to deliver the customer a car within five minutes or three minutes now, because they believed that that was what was going to make customers the most value.
+
+And so in every space, there's some really, really hard thing that you have to do and take on as a founder in order to achieve the long term results that you want. And so at Sprig, we had three very difficult things that we decided to take on that nobody else, that almost nobody else took on all three of these things. And I think that's one of the like interesting lessons.
+
+So the first part of this is eliminating friction. So our view at Sprig is that when it's a daily recurring habit, something like food, that the easier it is to transact in that product, or sorry, in that market, the more likely you are to win. And the best example is McDonald's, right?
+
+McDonald's the most convenient meal on the planet. Also the most successful food franchise in the history of America. And our vision was that friction was the most important thing.
+
+Now, you look at the food space today, and everybody else has decided to go against that. Why do DoorDash and Postmates have couriers that pick up from restaurants? There's two reasons.
+
+One, obviously, I mean, there are many reasons. And there's many valid reasons for this. This isn't to denigrate another competitor.
+
+It's really just to show you what my philosophy is. My philosophy is that just because it's an easier business model to have restaurants make the food, and it's an easier business model to have 1099 contract workers go and pick up the food from one place and drop it off to another so you can wipe your hands clean of the transaction. That's not what matters.
+
+It does not matter whether or not your business looks pretty on the inside. What matters is whether or not consumers really love your product and whether or not you're delivering the product that 10 years from now is going to dominate the market. So we take on a ton of pain like Sprig is by far one of the hardest businesses to run in the on-demand economy space, right?
+
+We build, we make all of our own food. We have to control the entire supply chain from the time it comes to the farms, from the time it grows on the farms to the time it gets to the customers' door. And then we have to figure out how to deliver that food to you in 15 minutes.
+
+Hot. And, you know, that's the pain we decided to take on because when I look at the food space, I say, what's going to happen in 10 years? In 10 years, nobody's going to push a button and wait 45 minutes to an hour and a half to get food from a restaurant down the street that's fucking putting a shit ton of butter in their food and oil so that you eat it and are addicted to it.
+
+That's just not the future. And so one of the things we believe in at Sprig is we will take on the pain so that you have a great experience, right? And I think that's one of the examples of something that I really get frustrated with when I meet people who are building companies who are always like, well, the margins are so great.
+
+I'm like, fuck the margins. Like, what are we trying to do here? Are we trying to build a business that's going to sell, you know, $10 million in revenue and make 80% EBITDA?
+
+Like, that's not interesting to me. Like, my goal as an entrepreneur is to change the world and to be an iconic and build iconic companies. And that requires doing hard work.
+
+And the hard work that Amazon and Google and Uber did, I think, are great examples. So you take, I already talked about Uber, I'll talk about Amazon. Everyone else in the e-commerce space when Amazon was starting out was saying, was trying to do a distributed model.
+
+Almost everyone. What I think Amazon and Bezos recognized was that five to 10 years from now, the customer is going to be able to order something on the internet that comes to them in two days. And now they're looking at one hour, right?
+
+And so Amazon went through the absolutely batshit crazy idea at the time that they were going to build warehouses all over the country and house like hundreds of millions of dollars worth of inventory. Now probably billions of dollars worth of inventory in these warehouses. And then they're going to actually like ship real product to customers.
+
+Like at the time, this was an insane proposition. Today, like Bezos and Amazon are much larger than any other company and kicked eBay's ass, frankly, which was the only other company that got to that level of scale in this space. Because they said, we're going to do the hard work.
+
+And we're going to make this business work. And we're going to deliver customer the ultimate value. Google the same way, right?
+
+Every search engine was saying, well, we can't figure out how to make search work. So we're just going to give you a directory. And Google said, no, like actually, it's really, really important to make search as easy as possible.
+
+And even though the algorithms are hard and are going to require building our own data centers and our own bots that scrape the internet, like we'll do the work. And so that's, that's one thing. And the second thing is having a position on what type of product and what you're going to stand for.
+
+So at Sprague, one of the things we do is we source all of our own ingredients. People don't often know this. We don't do a great job of telling the story yet, but we actually source all organic produce.
+
+And all of our meats are sustainably raised, free range, hormone free, antibiotic free. And we personally know most of the farms from which we source. And the reason for this is that we believe in five to 10 years, people are going to get far more educated about food and are going to care a lot more about what they eat and realize that the addiction we have to sugar in America is counter is, is just as bad as an addiction to cigarettes or cocaine.
+
+And so as a result, we made a long term bet at Sprague that today, I think a lot of investors are like, do people really care about this? Do people really care about health and wellness? Do people in the middle of America really care about this?
+
+And we took a very different approach and said, actually, we think even if not everyone cares about it today, they'll care about in five to 10 years. And we're going to ride that wave and be on the forefront of that. This is a bet, you know, I don't know if it'll work out, but it's something that we're making, I think, in large part because we are customer driven and thinking about what the customer wants.
+
+And then the final thing I think is that you really can't know some things without actually doing the business. So when we first started Sprague, the idea was to build a marketplace for food. Our idea was you should be able to open your phone and order a chef from the personal chef down the street or from your neighbor who cooks really good food, really good Thai food, right?
+
+Or the Jewish family three blocks down who's got an amazing recipe for matzo ball soup. But a lot of people would have taken that vision and sort of, because of their ego associated with how focused they were on their vision and their view of the market, and would have just charged forward. And you see lots of companies and lots of founders who are incredibly ego driven about how they make decisions.
+
+And so they don't really listen when they're in the marketplace. And so what we do, I think, at Sprague that we've done quite well is actually we look at this and say, you just heard me say I wasn't sure if the organic bet was going to work. Like, there are very few founders out there who will say that publicly, and that's ridiculous.
+
+The best founders and the things that I've learned at least in my career is that the best founders have no ego. And so whereas we thought it was going to be a marketplace, and we started executing on it. We started executing on a marketplace.
+
+We started working with many different chefs. And pretty clear, pretty quickly by serving chefs food from all different places around San Francisco, we realized that most chefs are really, really bad. And that it's not a profession where the like 90% are better than the 10%, which is the exact opposite of Udemy, by the way, in our opinion, right?
+
+In our opinion at Udemy, leveraging the 90% was the best way to surface the best content, because there's no real cost to having an additional online course. But at Sprague, right, if we serve you bad food, you're not going to come back. And so as a result, we actually ended up switching from a marketplace to a consolidated model where we make all the food, again, owning a kitchen, building out the supply chain, dealing with all the hassles of making real food and managing a 100-person sort of culinary team, about 60 right now, I guess.
+
+And I think that was another key strategic decision that we made that sort of really informed what Sprague was about. So I guess my point is that overall when you look at companies in the early days, you'd be shocked by how much these core strategic decisions define the potential success of a company. And I would recommend, A, to make sure that you're always questioning those strategic decisions in case someone else in the market proves that you're wrong, and actually like their idea is better than yours, and then just go ruthlessly copy them.
+
+And then on the flip side, in the event that you are right and focus on this, that it could dramatically allow you, and you have to be patient with some of those bets, because over time you'll see that those bets will lead to outsized results. So that's sort of a little bit of the story of Udemy and Sprague, and I want to open it up for questions. Come on down for questions.
+
+Hi. You talk about having a very clear vision at the outset, and that hasn't really changed over time, and yet you also talk about how you're very open to changing tactics. So have you come across situations where your initial vision has changed, and how, and what was the trigger for that if that's the case?
+
+Yeah, so I think it's important to recognize that the original mission statement or vision of a company tends to be really, really broad. And so it's the type of thing that's hard to change, right? Like wanting everyone to be able to have access to healthy food is sort of the type of thing that could have a hundred different variations to it.
+
+And so actually like I think the point of that statement was that, you know, no actually. Like at Udemy and Sprague we've never changed what we've been trying to do. We've just changed how we're going to do it, and we're so maniacally focused on the vision actually, or the mission, that we don't care about how we get there.
+
+And that's actually what's most important, is that the process by which you get to the end result is far less important than the end result itself. And so if you guide yourself by the end result, you're much more likely to succeed and find the right product. Because you're most likely wrong about the first product you come up with.
+
+Hi, I was hoping you could talk a little bit, you talked about the supply chain for the food. What about the logistics of delivery and, you know, making sure it arrives hot? Do you feel like you've taken any shortcuts there?
+
+Because I order Sprig all the time and it's always there very quickly and I don't know how you do it. It's really hard. So there's really two things that Sprig does that's unique.
+
+The first thing is that we have a culinary science team that basically tries to figure out how to deliver food well. Okay? So delivering food is a difficult challenge because there's all these factors that you have no control over, right?
+
+Traditionally food is made to be served right after it's made and served on your plate. And the delivery method, whether it's the fact that you have a third party in between the chef and the customer, whether it's the fact that you're going through a car, is a difficult process. And so we focus really hard on that.
+
+And we test every meal that we make in advance to see whether it delivers well. And even then I'm sure if you're a Sprig customer, you know we miss sometimes. And so we're constantly focused on that.
+
+The second thing is how we deliver the 15 minute SLA. And what we do is we build a real-time system that can deal with routing and inventory management in real-time. And again, like if you compare us to our competitors in the space, nobody is building a real-time system that's at the level of complexity of Sprig.
+
+And simultaneously trying to figure out how to make food that actually delivers well. In fact, you almost hear nobody talking about these problems as problems that they're dealing with. And that's kind of the point, right?
+
+So how does Sprig deliver so quickly? It's because we have a team of, you know, eight engineers, two PhD data scientists, who focus all their time on the real-time algorithm that makes sure you get your food quickly. And every time we screw it up, we beat ourselves up like crazy about it.
+
+And people go around the office like depressed. It honestly feels like a lot of times at Sprig that we're not like on track to become a billion-dollar company and we're actually going to fail the next day. Because people take it so personally and they're so focused and so hard on themselves on actually delivering the customer the best value that we, like, we hate it when you don't have a great experience.
+
+And as a result, like, you see that in the outcomes, which is that actually today, it's very, very rare to get a delivery time over 35 minutes. I mean, it's, you know, a few percentage points. Oh, sorry.
+
+Sorry. Yeah, we, I mean, we use contract delivery folks as well as other on-demand services. And so we pay them on a per delivery basis.
+
+So they make, and that's one of the reasons why it matters to be so quick, because they make more if they deliver, if they're able to deliver more meals. Hey, great talk. So I've been recently become interested in this idea of the egoless entrepreneur who finds a mission that's greater than themselves and it's no longer, should I do this or should I do that?
+
+It's what furthers the mission? And I've read a bit about Elon Musk who, one of the reasons why employees respect him is because he has a picture of Mars and then a picture right next to Mars Terraform, but he has no pictures of himself in his offices. And so when you are egoless as an entrepreneur and you draw from sources like the customer or the business or what's best for the business or what's best for the customer, it seems like your greatest source is the customer.
+
+Can you relay a specific story where you found the customer wanted something, just like kind of like Jobs said, well, if you deliver what the customer wanted, you would have given a course or something? What was when you backtracked against that and you went against what the customers were saying in the market? Yeah, I mean, almost all the strategic decisions I talked about just now, like if you take the live versus recorded one, I mean, most people would ask you that they would prefer live online education to recorded online education.
+
+So the reality is taking your ego out of it is not about being submissive to the customer. It's merely about listening and not letting your own like self-worth be tied to the idea you have. So I don't think being egoless is about like, oh, like it's not about being selfless, right?
+
+That's different. I mean, I have that value too, but that's not the important value for an entrepreneur. The important value for an entrepreneur is to realize that decisions are extremely challenging and that every decision you make is fairly important.
+
+And so you should be willing to change and backtrack on those decisions if they turn out not to be moving in the right direction. And the quicker and more efficiently you make decisions and then change decisions when they're wrong, the better off you are achieving long term results. I was actually kind of curious if you've looked at automation for Sprig and where you think that may go in the future with drone delivery, robotic chefs, other things along those lines.
+
+Yeah, I mean, our mission is to make it simple to eat well, right? So if drones make it simpler to deliver you food, one day that may happen. I think it's very clearly farther away than everyone thinks.
+
+I mean, VR and drones are the new hot thing that everyone's talking about. You know, there was a time where we were all talking about flying cars. I mean, there is a very reasonable possibility that this becomes real, but I try to focus more on five to ten years out and wait for the science to catch up with reality there.
+
+And so if it happens, like we will immediately go and try to figure out how. But I think that's, you know, it's much further away than people realize. At least that's my perspective for now.
+
+Hey, thanks everyone. Appreciate it.

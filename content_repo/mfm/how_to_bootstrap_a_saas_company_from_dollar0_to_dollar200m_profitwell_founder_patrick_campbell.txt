@@ -1,0 +1,955 @@
+All right, we are live. What's going on, man? How are you?
+
+What's going on, gentlemen? So we have Patrick Campbell. The company was ProfitWell?
+
+Yeah, so it started to become ProfitWell. But originally it was something else first, right? Yeah, we called it Price Intelligently.
+
+So we did a little piece of pricing software, morphed into pricing software and service, a lot of service actually, and then started building this metrics tool and all that kind of fun stuff. And then recently sold to Paddle, which is a payments infrastructure product, if that makes sense. And the headline price was $200 million and you bootstrapped the company.
+
+And I think in a tweet you said you owned, I don't know if it was you and your co-founder or company owned, but you guys owned almost all of it, right? Yeah, we were bootstrapped, so we owned 100% of it. And so we, yeah, but we were pretty generous.
+
+I think I tweeted about the fact that we were pretty generous about giving out equity. So it wasn't like I had 100%. We had, I think the headline numbers, we had 13 millionaires.
+
+We had like 30, 35 people made 6Ks or more. And then I think there's like 120 people all in, people who had worked at the company previously and the current employees who got some sort of consideration out of the deal. So, and the price was, I think that it was over 200.
+
+It was over 200 technically. Like we're not public. I don't know.
+
+It's so weird about these numbers. It's like, what are you public with? What are you not?
+
+And I have a board and a boss now. So I have to have to be a little careful, not that careful, but a little careful about all the things I say. You do seem like you're cultivating that trillionaire energy that we like to see.
+
+So I got to say, I'm getting the vibe. I'm getting that extreme satisfaction and relief vibe that comes when you sell a company. Well, Sean, ask him where he just moved.
+
+If only you knew how tightly wound I am. So yeah, that's interesting. Ask him where he just moved to.
+
+Go ahead. Tell him. Where did you just move to?
+
+I moved to Puerto Rico for all of the obvious reasons. Just put it out there. Just to be very clear, very obvious reasons why I moved here and it's 80 and I'm not a huge fan of the heat, but I am like basically recording with a 6K camera right now.
+
+And that's that's that trillionaire energy where it's like, where do you put the money? I don't like cars. So I got a really cool, like dope set up basically.
+
+I mean, that bookshelf needs a little upgrade too. If I must be honest here, I feel like, you know, this was like, you know, I don't have anything behind me like let's throw some books up and kind of go from there. So we'll get there.
+
+We'll get there. So what what exactly did you guys? Well, I we used you, I believe, but I think we got I think we used you for free.
+
+And I was like, how did these guys make money? What exactly did you guys do? Yeah.
+
+So the headline kind of positioning is we we basically exist to run and grow subscription businesses automatically. And the automatically thing was the thing that like really worked well for us. And what I mean by that is like in the perfect vision world, you should be able to plug in profit well to any subscription business.
+
+So into Stripe, Chargebee, Zorro, whatever you're using for your billing and then automatically like you get all of your metrics for free, which is probably what you're referencing. And then we reduce your churn, your cancellations automatically, optimize your pricing automatically. And now with the whole paddle deal, we like take care of your taxes automatically, chargebacks, all that kind of fun stuff.
+
+And so, yeah, I think the the the big thing for us was when we were this pricing service, we wanted to get to something that was more pure software. And we were helping a company with their pricing. It was about to IPO.
+
+And we actually discovered they were calculating MRR and churn completely wrong, which was really fascinating. And so we kind of put those two insights together and then started producing this metrics product. So you get all of your financial reporting if you're a subscription or SaaS company.
+
+And then there were like 30 competitors and it was like all overnight, like the space where we thought we were going to be billionaires for like metrics. All of a sudden it was like, oh, my God, like everyone and their mother is building a Stripe integration. And so we did some homework, we did some research, all that kind of fun stuff and basically discovered that like either this is a terrible business and we should stop doing it because no one is really great at monetizing metrics or the free route, which is what we did.
+
+And I think that's probably when we should have raised money, like in hindsight. But long story short, that's what grew. And we had at the end, well, still going, but we had 30,000 companies using ProfitWell basically when we sold.
+
+And that number is just kind of going up every single day, which is great. And when you reached out to us and you were like, hey, I think you do listen to the pod. Is that kind of why you reached out?
+
+Of course. Yeah, absolutely. I'm glad to hang out with the 12 year olds from a recent episode.
+
+I learned. Yeah, you said something which kind of tipped me off. You were like, I grew up in Wisconsin doing hood rat shit.
+
+Hat tip to Sam. I was like, oh, okay. He knows.
+
+Yeah, you get inside jokes. He knows about sometimes you just want to do hood rat shit. Of course.
+
+That's why we're getting a ranch built in Utah right now. Everything's going to be great. I guess that's the hood rat world there.
+
+Are you really? You're building a ranch in Utah? Yeah, that's the goal.
+
+So I grew up in Wisconsin, right? So I grew up like literally milking cows as a kid and like, you know, kind of having the, let's say the Sam Parr lifestyle. Like my dad has no idea what I do.
+
+He is like just confused. He thinks I'm being a tax evader, moving to Puerto Rico, like all that kind of fun stuff. Which you are.
+
+Blue collar. Sam, he's like you just more rich. Yeah, yeah.
+
+What'd you say, Sean? That's funny. Yeah, yeah.
+
+I said, he's like you just more rich. It looks like it. That's what it seems like.
+
+I do what I can. I think the difference is that Sam's living a little, like I'm like all in, like just still like nose to the grindstone. But yeah, I grew up in Wisconsin and then after school I moved to DC.
+
+I worked in US intelligence and then worked in tech in Boston. And that's kind of when I got into the, to the business space basically. But what I was going to say is you reached out intelligently because we get a bunch of people who are like, Hey, would love to come on and tell my story.
+
+It's like, yeah, I'm sure you would. Who wouldn't want to come on and tell their story? Like, I also like to get, you know, free fame.
+
+But the, the thing you did was you sent us like, I don't know, six or seven bullet points. You're like, here's, you know, here's some stuff I can talk about. And then you sent us, I would say like five or six really interesting things.
+
+So I kind of want to hop around on those. Sam, did you have a favorite one that you liked from these? Okay, well, let's, so do you have it in front of you?
+
+It's hidden industry. I got in front of it. So, okay.
+
+Yeah. That's the juicy one. That's the juicy one.
+
+So basically you said, I think we have the largest subscription financial database in the world, right? Like you, you guys have a hundred percent 20, 30 billion dollars of annual recurring revenue flowing through your system, which is just a bunch of data that will tell you, I bet you there's some things that are like, huh? No way they make that much.
+
+Right. There's like some surprising niches that, that make a lot of money. And then there's maybe some trends or benchmarks.
+
+So, so take it where you want it. But I think that's one that's going to be super interesting for, I know, I want to know what I want to know the answer. So I know people listening will too.
+
+Yeah, totally. So there's, there's, there's a couple of things. So one, like just to give an example, like, um, we, we would always like, so we study the data and aggregate.
+
+That's what helps like train our algorithms for like churn reduction and all that kind of fun stuff. But then the other really interesting thing is like, we publish a lot of content on this. So a lot of SaaS companies, it's like, Oh, what should our churn be?
+
+What should this look like? So we publish a lot of that. The other thing that got really interesting was we would basically be kind of like a hidden, like helper for deal flow for a lot of VCs.
+
+And we would never like reveal someone's like particular numbers, of course not. But like, what was really fascinating is when kind of the, the jungle scout Amazon, you know, kind of play was happening. Like we would all of a sudden have like all of these apps just break our QA scripts.
+
+Cause every time like someone was growing too fast, we would go, Oh, something must be broken with the metrics. Right. Right.
+
+Um, so that's a little bit of context. Um, there's like three or four really fascinating industries, especially going into a recession that I think are really good for like people who want to fast move into them. One, um, one of these industries that's kind of crazy to talk about quilting and crafts, um, quilting and crafts subscription companies are like growing insane.
+
+Um, what's fascinating is the quilting space. If the, if you didn't know quilting is, um, it's about a four and a half billion dollar per year industry. Um, the average quilter spends about eight to $9,000 per year on like quilting supplies.
+
+Um, most of that, comes not just online, but it comes through quilt shops. Um, so there's a really interesting local play that we've seen some of these companies, um, use and some of the more popular apps. Quilting just means like making a blanket that has like designs on it.
+
+Right. Uh, for the most part, um, now as a mom, a Midwest mom who does hardcore quilting, like there's a lot of other stuff like our house, we didn't have pictures up. We had quilts that were hung.
+
+Right. Of like different designs and all kinds of stuff. But yeah, every major milestone in my life, I got a quilt.
+
+Like I have six quilts in Puerto Rico that are useless. I got a quilt to me just given how like warm it is here. Right.
+
+Mom, what's there's, there's paint. I see you went to someone else's house. They had a painting on the wall.
+
+It's like, no, no, no, you don't need that. Just put a blanket on the wall. Yeah, we need quilts.
+
+Yeah. Yeah. Yeah.
+
+It's great sound deadening. It's really good sound deadening, but yeah, it's really interesting. Cause like that market has gone wild.
+
+Like even like knitting, like crafts, that type of stuff. And what's really interesting about it is like, especially in the subscription space, there's a lot of these built in type projects that these companies have started taking advantage of. So there's this thing called block of the month club that has been around since quilters have existed.
+
+You create a block of a quilt every single, you know, month basically. And it's like a community type thing. Um, so there's something there.
+
+Quilt retreats are a huge thing, like quilt retreats. Like I didn't know about that. Like all of these mostly like middle-aged or older women coming together, like hanging out and staying up all night talking and like, you know, quilting.
+
+So that's one space, the craft space, knitting, all that kind of stuff is really interesting. Another one that's interesting is, uh, basically old people, uh, Before you move on before Sam, do you know stuff about quilting? I feel like you have knowledge about this stuff.
+
+No, I don't, but I'm looking at, I just Googled block of the month club. So that that's like a, that's like a genre of clubs. That's not like the name of a, of a club.
+
+Right. And I just, I'm just like, yeah, yeah. Or I don't know a style and I'm looking up what, what these are, what these are.
+
+And I'm looking at the businesses. It wouldn't shock me if some of these are doing nine figures. So a hundred million dollars plus in subscription revenue based off just some of their traffic.
+
+Like there's Craftsy, there's Annie's kit clubs.com. Do you know anything about these? Yeah, yeah, yeah.
+
+So there's, there's, there are definitely nine figure companies in the space. I'll put it that way. And then nine figures a year.
+
+So a hundred million plus in subscription revenue for sale. And they basically like, I don't know what differentiates all of them. I'm just clicking on the ads, but they just sell, like they send you a block.
+
+You know what a block is, Sean? Like just one square patch of the quilt? A square patch.
+
+And during the holidays, This is making my dreams come true right now. Just this whole like learning you guys. People think that I, I am Midwestern.
+
+I grew up in like an urban environment. So I grew up in like the city. So we didn't, we weren't exactly quilting, but we basically what they do is they, they send you a patch, like a, like a block, like a six inch by six inch block.
+
+And it looks like it's like, got like pumpkins and a snowman on it. And that's like the holiday version of what do you do with that? You stitch that into the other blocks that you've been getting.
+
+Yeah. So basically here's, here's how quilt gets made. I can't believe I'm about to explain this.
+
+So a quilt gets made by these blocks. Now, sometimes it's just design. Sometimes it's got stuff on it, like snowman and stuff like that.
+
+So you create these blocks, you build a top. So let's say you want like a king size bed. It's just the top.
+
+So it's just one layer of fabric. What you do is you take it to a quilt shop and then you go to the quilt shop and that quilt shop is going to charge you per inch to put a back. And then a batting, which is like the stuff that makes it kind of a blanket.
+
+And then they like put a design in there as they like put those layers together. And then you have a quilt. Right.
+
+And then some hardcore moms, like my mom has her own basically quilting machine. That's like an eight foot machine to basically make all of these quilts out. So yeah, it's, and this is the thing.
+
+Your mom's a batting. 99% of them are on like Facebook. They're all like, they're, they're really targetable, which is really fascinating.
+
+And like the YouTube content that's come out of like the quilt community is pretty wild as well. And yeah, there's, there's this one in Missouri. I can't remember exactly, but it was like this town that was like basically, you know, on its last legs, this woman, her, you know, basically her son started doing YouTube videos where she would just explain how to do quilting stuff.
+
+It's created, it basically revitalized the town, like because everyone comes on buses to come visit the town and go to the quilt shop and all that kind of fun stuff. And the quilt shows quilt and craft shows are pretty fascinating. This is all my childhood coming out.
+
+Cause I got dragged to use bookstores and quilt shops basically. And the quilt shows are wild. Like they'll just be famous quilters on stage with a camera, like doing quilt stuff, like basically, which is just kind of a fascinating world.
+
+And it's a lot of money in it. That's like kind of like old school, meaning like there's a couple of really big players that kind of sell everything. And there's all these new school folks coming in and kind of lopping off different segments.
+
+What's a new school company that I would look at? So the one I was describing. These moms, while you're looking at that, these moms, these quilters are not using Instagram a lot.
+
+It looks like I'm like looking up quilting on Instagram. And Facebook groups real heavy. There's not a ton of pages on Instagram that are doing quilting, but yeah.
+
+It's like an opportunity, by the way, to like build big quilting pages on Instagram. They are Facebook groups. They're the Facebook group.
+
+I've seen, I saw just researching while I'm here. I'm looking at tons of highly engaged quilting Facebook groups. Well, it's also interesting.
+
+Like you'll even in Boston, like there'll be these little like meetups. So the younger community, they're, they're kind of going through, um, knitting into like quilting because it's like, oh, you get to build something. The designs are a lot more modern, all that kind of fun stuff, but yeah, it's an interesting, interesting world.
+
+A Missouri star quilt company is the one that I was referencing. The YouTube kind of, kind of world. How big is that?
+
+Uh, I don't know their revenue individually. I don't think they have a subscription. Sean, have you heard of Hallmark?
+
+You know, Hallmark cards? Of course. So.
+
+My neighbor used to own like 50 Hallmark stores. Really? I was like, how is these, how are these people so rich?
+
+And they're like, oh, now they own like a hundred Hallmarks. So Hallmark is an interesting company related to this. And I'm, everything I'm saying is, is off the top of my, off memory.
+
+So I may be wrong, but they, Hallmark is a privately owned business. It's owned by a family. And I think it's one of the largest privately owned companies in the world, in America.
+
+And they do $5 billion a year in revenue. And I think that they make money in two ways. They, uh, have these stores that are franchises and they just sell cards.
+
+So Hallmark just sells cards. And then the other thing that's kind of weird is they own Hallmark media, which is a Hallmark TV station channel. Yeah.
+
+Yeah. Where they make like, it's a joke. It's like a genre Hallmark movies, which is like a sappy movies that mom's like, but I wouldn't be surprised if they own, like if they're just like, uh, you know, behind the scenes and the quilting game, just calling the shots.
+
+You know what I mean? Yeah. They're deep in the underground quilt game.
+
+Yeah. Big quilts. Yeah.
+
+Big quilts. Yeah. Yeah.
+
+That is interesting. There's only one, one I fear. It's big quilts coming after us.
+
+In fact, we should stop laughing about this. So it's those companies, man. They're huge.
+
+Some of the big originals. They're huge. This, this hobby, I think has legs for a couple of reasons.
+
+One is, um, it has a bunch of factors that individually are strong characters of like, you know, potentially good businesses. But when you stack them, it becomes even more valuable. So it's like, this is a stacking of trends.
+
+So you have the trend of DIY and crafts at home. Right. Then you have the trend of oddly satisfying, which is you've seen these videos of people cutting sand or like ASMR stuff like this, which is like, there's a therapeutic benefit to doing these things, like these repetitive, tedious, clean, straight lines, you know, stuff with your hands that you can do that has like a, a tactile feel to it.
+
+Then you add on community and it's like, oh yeah, people get together and they do this together. Okay. So now this is an excuse.
+
+It's like, you know, guys get together to play poker or something like that. It's like, yeah, yeah. We don't all really, you know, we're not trying to be the best poker player, but it's just an excuse to sit around and bullshit.
+
+And so you start stacking these on top of each other. Then it's like nostalgia because people are making quilts out of like their kids clothes and stuff like that because you know, they don't want to. Yeah.
+
+What do I do with these old stuff? And then all it becomes this, like this, like memory and this heirloom. And I'm like, you know, I have a blanket that my grandma made before she passed away.
+
+And it's like, that means something to our family. Cause she made it right. It's like a memory of her.
+
+So you stack all these things on top of each other. And now you have this, like, you know, sort of like this, uh, you know, Long Island iced tea of a business where you stacked all these different, you know, things into one cocktail. And it's, it's just a strong, you know, son of a bitch.
+
+Additionally, I think, uh, maybe you could kind of tell me if this is true or not, but from my experience, most people in Silicon Valley and young people, they're like, we're going to make this app or this widget for like millennials or Gen Z. In reality, every business that I know of personally that are the majority of my friends who own businesses that sell stuff to women in middle America between the ages of 30 and 60, hands down has the highest loyalty and engagement and lowest amount of churn. Is that accurate?
+
+Other than businesses. I'm talking about a group of consumers. Yeah.
+
+So normally if you're selling to normally older audiences from a consumer perspective, retain at a higher rate, um, mainly because of the implications that you're already alluding to, um, it's, they're, they're less finicky. Like they're harder to convert sometimes because of that loyalty, but once they're in, they've like made a decision and then they're, they're sticking it out for quite some time. Um, and this is kind of like as a lesson, like I can tell you anytime there is a more premium product or a more niche audience, you just have better churn like every single time.
+
+So like butcher box started with the, you know, whole kind of, um, paleo crowd, a very niche was very premium, um, in terms of price point worked out really well. Whoop started very high. They were like, we're athletes.
+
+And then all these people who were like, I want to be an athlete too. And they're charging 30 bucks a month. Right.
+
+Um, that's always what I recommend is if you're starting something, especially if you're bootstrapping, um, start high and then come down. It's a lot easier, um, than it is to like start really cheap and then go back up unless you're running a freemium model, which is a very different model to run. Sean, have you ever been doing, have you been doing Applebee's lately?
+
+Oh, hell yeah. Chili's and Applebee's baby. Have you really been doing Applebee's?
+
+Yes, I have. That's hilarious. Um, so do you know how their whole shtick is like, even though it's a chain, it like they, they put like the neighborhood baseball team on the wall, which who knows if it's actually, they're actually from that neighborhood, like, you know, whenever you go there, they make it feel like that.
+
+Well, I had a friend that worked on the advertising part of, of Applebee's. And one time we had to go there and like order everything on the menu and drink and eat it all. And it was horrible.
+
+But I was like, Tony, this food is like quite bad. Like this is horrible. I don't like, I don't, I don't think you're going to be able to build up, make this cool.
+
+Like, you know, you're telling me like a, it was like a nuclear green, like limeade. Like, I was like, dude, this is horrible. I don't want to drink this shtick.
+
+This is awful. Or like one time I thought. Why does the cheese taste like beans and the beans taste like cheese?
+
+What's going on here? Yeah. Well, they, they sent over something.
+
+I'm like, I don't know what this is. And so we dipped it in there and it was icing. Uh, like it was like a side of icing.
+
+And I was like, dude, this is horrible. Why do people like this? He's like, well, it's mostly middle America.
+
+And they call them, I believe that they called their ideal customer a Jim Bob, which is someone who is in their fifties, sixties and seventies and has a little bit of money. But once they continue going there, because it feels like it's the last like, hurrah for the neighborhood and they're supporting their neighborhood and they're willing to put up with the crappy food because it somehow feels like their way of life is under attack. And this is like the last like thing that represents their neighborhood, even though it's some huge national.
+
+Yeah. The world is changing so much. And this is all, this is the one staple that like you walk in and it's feels exactly the same as it did when you were 14.
+
+Right. What are we going to say? I literally wrote this last night.
+
+So I'm reading a Slack message last night, 1235 AM. So right after midnight, I just Slack this to myself. I wrote, if you're selling a cool thing to a cool person, you're playing the game wrong.
+
+That is hard mode. And this is all of, you know, you, you meet most people in DTC, most people in Silicon Valley, it's like they're, they are in their twenties, they're cool and new in the world. And they're selling to cool and new people in LA and New York and San Francisco.
+
+And they're like, yeah, of course. Like, you know, I'm going to create this new cool thing and I'm selling to new cool people. And what you want to do is you want to sell simple things to simple people.
+
+And so, um, and I had a buddy tell me this with, with, um, project I was working on. He goes, he goes, okay, so what's your main like sales channels? I call Facebook ads.
+
+He goes, okay, so that means your customer at scale is an overweight, overworked mom in Texas. And he's like, so I look at your website and I don't see anything that like appeals to her. Like it doesn't have to look like her, at least to look like how she wants to look.
+
+And, um, and it basically was like, you know, if you can't sell to an overweight, overworked mom in Texas, like you can't scale. And I was like, what the hell? Like, okay.
+
+Okay. But you don't even know any overweight, overworked moms in Texas, do you? I used to live in Houston.
+
+That turned out to be a valuable, it's just like you were saying, like, you know, my mom used to drag me probably kicking and screaming to these quilting shows. And now that you're an entrepreneur, you're like, ooh, quilting niche. Tell me more.
+
+Right? Like, it's like, we flip, you know, the thing we used to resist now we, you know, want to, want to go, go for. And so it was the same thing.
+
+Like growing up in Texas, I was like, man, I just thought everything cool was in New York and San Francisco and LA. And I just wanted to go there. And now that I'm here, I'm like, dude, I don't want to sell to these like fickle millennials who are like, you know, you know, trying to do like berry detoxes.
+
+Like I want to sell, you know, something to a mom in Texas. Cause if I could do that, that's a license to print money. And like, if you go look at the, you know, the best selling car, last, I don't know, 30 years is the Ford F-150.
+
+It's a, you know, it's a pickup truck that sells for, for $36,000. You go around San Francisco, you won't see one. Right.
+
+Uh, you know, you would think the best selling car in America is the Tesla Model X, you know? And it's like, that's just not the case. Uh, cause you're in, you're in a bubble.
+
+And so, you know, and I think the Jim Bob, you know, overweight mom in Texas, the, you know, the other one is, you know, the enterprise sales one is like, you know, you're selling to Bob, the mid-level manager or the senior manager who's, you know, got a little bit of a belly and he's losing his hair. Like that's who you're selling to. And you gotta like, can you nail that sale?
+
+Cause if you can, you could build a very, very big business. And I mean that in like the most loving way possible, which is basically just saying to most entrepreneurs and most kind of young people, like get out of your bubble. Well, you end up not chasing fads.
+
+Like there's a lot of fads, like business built on, built on fads. Right. And, and those are great businesses, right?
+
+Like we hear about them all the time. The guy who, what was it? The, um, the teeth, like, I can't remember like the, the, the hillbilly teeth.
+
+You remember this at gas stations, like apparently like $20 million, like business, right? Like the snuggie, huge fad, you know, hundreds of millions of dollars, I believe in revenue, but like something like quilting has been around forever. It's not sexy.
+
+Right. But the targeting gets really interesting. And like some of the other things, right?
+
+Like you guys talk about this a lot where it's like services, business, you know, lawn care, HVAC, all these other things end up being like stuff that sticks around. And like, you know, I've been working on for a long time and, you know, through the businesses that you don't really hear of. And there's a lot of opportunity in terms of roll up or like flipping the model that, you know, was basically being used by the folks that are the incumbents.
+
+So what are some of these other, or if you're, if you're going to innovate, innovate on just one thing. So it's like, oh, quilting people love, but there's not a lot of Instagram theme pages and communities on Instagram. Okay.
+
+That's like, it's just like, I can do one new thing on top of nine old time, you know, nine things that are still going to be the same. And that's like a new thing, right? Sam did the news, but he did it through email instead of through, you know, printed papers.
+
+Right. And so like one new thing and then he didn't need to change everything else. Everything else could stay the same because the human needs stayed the same.
+
+All right. Yeah. Sorry.
+
+We went up long ass time on quilting, but talking about quilting, baby. It's great. Yeah.
+
+What else you got? What are some other kind of niches that you like? Three other spaces have to go deeper.
+
+Trades roll ups, plumbing companies, HVAC companies, electrician companies. There's a lot of that stuff happening. It's not like machine shops or those types of things where it's just like hard to innovate.
+
+It's like skilled enough that there's a niche and there's like a moat, but it's not skilled enough that you can't roll it up. A lot of these guys and gals are looking for basically a way to retire. And it's kind of like accountant, you know, shops, like they don't get more than one X max.
+
+Right. In terms of their business, basically things to sell to kids of old people. That's the best way to put it.
+
+What is that? What does that mean? I don't know.
+
+I saw you wrote that. Products that prey on baby boomer kid guilt. Yeah.
+
+Yeah. So a really good example. It's not a huge company because it's a one man shop out of Boston is Nanograms.
+
+It's basically a, I don't know if you email or you post it on Instagram and then it automatically sends a postcard to your Nana or to, you know, whomever you want to send it to. That's hilarious. So there's some really interesting things that are happening there where like you have high disposable income in a certain group, low amount of time that wants to be spent necessarily with like, you know, their parents or their grandparents, depending on, you know, the, the personality.
+
+And as basically the trend that's happening is there's a huge portion of the population that are aging. So you're seeing like the multiples on things like old folks homes or hospice care actually increasing pretty substantially, which is kind of crazy. And then there's, there's, there's gotta be more technology plays.
+
+I don't have like a giant technology play there. I just have seen like a number of people like start to build on that particular trend. And then the last one, which I think is really interesting is death.
+
+That sounded terrible. I find death interesting. No, I'm not that, that's scary.
+
+But there are four or maybe five companies that basically own everything in the literal last mile of your life. Coffins, the, the funeral service homes, everything that's being sold in the funeral service homes, even like how the memories and kind of like that last part looks. There are some businesses that have tried, but because of like the five people kind of owning everything and multi-billion dollar companies.
+
+What's the biggest one? What's essentially happened? I don't have the names in front of me.
+
+I know someone tried five years ago, a guy named Dave Balter in Boston basically tried to start a like memory company where basically you would load up memories essentially. And then all of a sudden you would get that information back via Alexa. So you could be like, oh, Alexa would tell me about my grandpa or something like that.
+
+And what happened like six years ago or something with him in an adventure. But he was the one telling me that like, basically he would go visit, you know, these companies like, hey, maybe I could sell to these companies. And they were all like buttoned up suits, you know, all that kind of fun stuff.
+
+And so that's a space that I think given the aging population, there's probably something there that, that makes sense as well. Gotcha. Okay.
+
+Let's, let's switch gears real quick. You had said something else, which was, um, let's do some quick hits. Okay.
+
+So let's try to do these. Uh, give me the kind of the quick, quick jab on these. You said I used NSA learnings to do competitive intelligence.
+
+What the hell are you talking about? Yeah. Yeah.
+
+Yeah. So I, my first job out of school, I worked at NSA. Uh, so I was an Intel analyst, best way to put it.
+
+And I was like Jack Ryan's desk job. So none of the cool stuff. I did have weapons and defensive driving training, which is kind of cool.
+
+The defensive driving training is like so much more useful than the weapons training in my real life. Um, but what's really interesting about it is. Like it's basically was the best career start in like first principles thinking and like thinking about like a target.
+
+Um, and so I had a competitive Intel program basically at profit. It was just me running it where, um, I had every quarter I had stats and it's kind of like what you guys have talked about before, but like a little bit deeper. So what I did is I had shadow lists of like our each competitor, even our partners, like customers.
+
+And I would send like shadow NPS surveys, um, you know, product research surveys, these types of things. And the thing that people miss on competitive Intel is like, it has to be done over time. Um, and this is something that like they teach you when you're going after a target on the inside, which is like, I need to understand not just a point.
+
+I need to understand like multiple points in order to kind of create a profile basically. And as an analyst, how did you get that NPS stuff? No, he said he sent a fake NPS.
+
+I straight up sent surveys to their customers. I just straight up sent surveys to their customers. Walk me through that.
+
+Walk me through all your research methodologies. This is crazy fascinating. Yeah.
+
+Yeah. So, um, there's two, there's two main sources of information. There's moles and then mass data.
+
+Moles are like qualitative, like almost like customer development, product conversations. These are former employees. These are, um, you know, customers I know that are friendly to me.
+
+They're not going to switch because of whatever, but I can like talk to them. Okay. Well, let's pause that former employees.
+
+You go, you find, okay, this person used to work here. What happens? What is the, what is the guy?
+
+I do this all the time. Present this. Yeah.
+
+Me and Sam have talked about this on the pod once. But totally. So I like you meet him at a conference.
+
+Uh, oh, it looked like on Twitter that didn't end well. They weren't like after four long, wonderful years at so-and-so I've now moved on. But it was like, I'm now over here.
+
+Right. They took out the competitor name. That's someone I want to like, like a better phrase target and have a conversation with and be like, Hey man, how's everything going?
+
+Right. Like that type of a thing. And again, you're not going to get a vast amount of information, but again, it's about collecting different points.
+
+Right. And then I've talked to an investor and then I've talked to an investor who's thinking of investing in the company. And then I've talked to like some customers who are officially churning from the product and all of a sudden I can start putting this together.
+
+But the, the more fascinating stuff and that's color, right? Like that's color that kind of guides your analysis. Cause you as an analyst, what you're trying to do is you're trying to predict what's going to happen or based on some sort of stimulus, what they're going to do.
+
+Right. So if all of a sudden something comes in or there's a feature that's launched or some sort of messaging or marketing thing that happens, what are they going to do? And that's going to help you respond to whatever they're going to do.
+
+Right. And prepare for it. Right.
+
+So that was really interesting because you almost get like feel from those types of people. Like, oh, it turns out like there's an exodus. A lot of people are leaving.
+
+That's great. Let's step on the gas here. But the real kind of secret sauce is what, you know, Sam started asking about, which was there are many lists of customers that you can find.
+
+If they have some sort of a snippet, obviously built with clear bit, all those types of things. Right. That's one.
+
+Everyone likes to talk about their customers. Right. So they have case studies.
+
+That's two. Everyone likes to put the logos on their website. That's three.
+
+Right. And so you're looking at social, you're looking at built with, you're looking at all these logos and then I'm like, well, who's the main customer. Right.
+
+I can go find all those email addresses. Right. And you're not looking for like, oh my God, I have 10,000 people.
+
+Cause most of these people don't have 10,000 customers. Right. But what we were looking for is enough that then I'm going to start sending on an every three month basis, a survey or every other month, I'm going to send an NPS survey.
+
+And then I'm going to send. So what domain do you send the survey from? Like, yeah, like your name plus feedback, like feedback.com or something or what?
+
+There's a couple. I don't want to go too deep, but like, like, probably my reputation's already fried on this. So like, um, but let's say you're, let's say you're trying to, uh, let's say you're creating a HubSpot competitor and you want to get HubSpot NPS information.
+
+Do you send an email that it's like, um, uh, hubspot feedback.com or like get hubspot feedback.com or something like that? Yeah. I wouldn't go that far because if someone finds that out, like it looks real bad.
+
+Right. Um, but what I would, and I'm sure people are going to think everything I'm saying is really bad, but like whatever. Right.
+
+And so what I would do is I'll do more like marketing software research.com or something to that effect. Mm-hmm . And then the way that I position it is, Hey, so-and-so you've been identified as a user of HubSpot.
+
+I would love 30 seconds of your time to understand what you love and what you don't love. Right. And the 30 seconds there, 30 to 60 seconds there is really important.
+
+We've sent, uh, our pricing software is fed through surveys. We've sent like probably 10 million surveys at this point. If you're not compensating someone on an individual basis, the raffle thing doesn't work.
+
+It's it, I mean, it will work with some people, but most people doesn't work. But if you're not compensating, you have 30 to 60 seconds. So I'll send a survey that max five questions, right?
+
+NPS standard question. Here's five features. What's the most appreciated or most preferred feature on that list?
+
+Same list. What's the least preferred? Right.
+
+So three questions. Maybe I'll throw in a anything else you want to tell us about HubSpot. Right.
+
+And then all of a sudden I have like a picture and then I'm going to send, oh, it's interesting. We're thinking about building this thing. They're thinking about building that thing.
+
+Like let's do something next, next quarter or next month. But the same survey can be sent multiple different times. But the important thing here is you're building a timeline, right?
+
+Because now all of a sudden I can see these trends. And what was really interesting and the thing that I told you guys about was not only, so first, you should never show this information to your product team. It is the worst information.
+
+Like we've seen like competitive based product teams are really bad. Like it just doesn't work. But I have data and I'm happy to share it, that competitive based marketing teams, like teams that it's correlative, of course, it's not causal.
+
+But those folks who have competitive programs typically have much better retention and lower CAC because they just understand. What are you talking about? What does this mean?
+
+Basically he's saying, in planning this, what he's saying is you learn this stuff. If you go tell the product team, hey, here's what they said they want or here's what you should build. Screws them up.
+
+They screws them up. They don't build the right stuff. But if you go to a marketing team and you say, here's what pain points were most important to them, or here's what benefits were most important to them, or here's how they ranked these guys versus us.
+
+The marketing teams, if you have that competitive intel as part of your process, a marketing team will perform better than a marketing team without that competitive. Perfect example. Real world example.
+
+We start hearing, this is the early days of the metrics product. We realize getting accuracy for metrics is actually incredibly difficult because it's not like marketing metrics that can be like 5% off. Like financial metrics, if you tell me I have this much money that's supposed to be in my bank account, I'm making decisions based off that.
+
+It has to be 99.9, if not 100. Right? So we start feeling this just as a product team.
+
+All of a sudden we start hearing from some of my moles, if you will, and they don't know that they were these people, just to be clear. It's not like I turned them and they're like, you know, there's drops and everything like that. But also I start hearing like, ah, yeah, we're using it, but the accuracy sucks.
+
+Right? So all of a sudden we start hearing this totality of information. All of a sudden that is our core marketing strategy.
+
+Every single time. Comparison pages, we didn't do that many of them, but every single comparison page is the number one thing. All of our ads, like competitive ads, that's what they were.
+
+And then over time, all of a sudden that became their home pages, right? Because they're reacting to us rather than us reacting to them because we found the snippet that makes the most sense. And the most like aggressive thing, if this doesn't sound aggressive enough, is so I have all this data, I have all this information, I've collected it, I've synthesized it.
+
+I know. By the way, do you keep that like a spreadsheet or like a notion and you're making, and you're writing like narrative formats? It depends on how I'm using it, right?
+
+So the data is just tracking over time, right? So I have, I can send you like some slides or something like that. So I have some slides that like I put together for when we were going to go raise money for the first time as well, because it's just really good data in general.
+
+One thing I have is, is basically spreadsheets that has a lot of this information, especially the qualitative. And then the other thing that I build off of this are red team docs. I don't know if you guys know what those are, but basically like every thought I've had or every thought that I learned from this data, because this data, like customer data and market data is probably 10x more important, but this is like some interesting data that's easy to talk about in a podcast.
+
+But red team docs is when I look at all this data, it's like, what are the things that kill us? Every single thought that I've had that could like kill us or hurt us goes into a doc. Some of those docs get built out.
+
+Oh, someone accuses me of X. Someone says this on Twitter. And then it basically at minimum has, here are the steps that we're going to take so that when that thing happens, all of a sudden we have a head start on the little critical piece of the thinking.
+
+But to make a long story short, the thing that I referenced with you guys is I would have, like these are all funded competitors. So they would try to go raise money. I would have their, the people they were trying to raise money from come to me, like not tell me that they were trying to raise money, but it's obvious because they invest in the space.
+
+It's not the associate. It's like the partner coming, like all that kind of stuff. Some of them would straight up tell me like, hey, we're thinking of investing in so and so.
+
+What do you think? But what I would do then is I would show them these slides and I would just basically be like, here's all the information on, on us and, and the person that you're thinking of investing in. I wouldn't say that unless they were upfront about it.
+
+And what it, I, I know for one, we, we killed one of the rounds that someone was trying to raise. Like I can tell you that definitively. Because one, like, okay, I'm going to invest in someone going against this psycho who like has all this information, right?
+
+Like that's a pretty scary thing. And then two, like all of our numbers are better because I, you know, we just ended up, you know, doing really well at certain, a certain number of things. Right.
+
+And so, um, that, that I think is, again, it's a program that I think that you should have at least at a bare minimum, um, from a marketing and go to market perspective. If you have a market that becomes really competitive, if you're in like the blue ocean, as they say, like it's probably a waste of time. Um, but it's just something where our ocean got red real quick.
+
+Um, quicker. I think the look on your face, tell me what you're thinking right now. Yeah.
+
+I think I'm very good at research and I'm very good at doing what I do, which is like doing the exact same thing of finding moles, getting Intel, reverse engineering. You have said, I think I'm in a nine out of 10. You have said some, some things to me that I realized that there's another couple levels that I can go to improve.
+
+It's pretty magical. Uh, that, the, that, that's pretty amazing. Yeah.
+
+Well, and then keep in mind, like I have all this market data, right? So that was interesting too, because all of a sudden I can understand like, so for example, COVID hit again, I can't look at anyone's accounts and we're very, very, um, very, very like strict about that, but I can see, oh, this sector that has 50 plus accounts, which is our, our terms, this sector's tanking, this sector's taking off. I can change my marketing almost instantly.
+
+Right. And when you have some competitive Intel, especially on segments, like I knew the segments that are competitors are going after. And I knew the segments we were going after.
+
+It just helps feed the wheel. And when you're feeding the wheel and you're getting that PhD in your business, which I think is really important if you're, if you're going all in, like all of a sudden it's like now a lot of the decisions, like we don't have to think about because it's like, we know what's happening. We know what strings being pulled.
+
+Let's react to it. Let's respond to it and kind of go from there. How much of your time is spent on that?
+
+You are, sorry, go ahead, Sean. You're a freak. Well, now it's a system.
+
+You're doing that in the best way possible. It's a system now. So it's a system.
+
+So I don't spend that much time with it. I just get to collect. Right.
+
+And it's just documentation. Right. So for example, I have names, like I know I have, I have six names that I can tell you of users of a competitor of ours.
+
+I see them pretty regularly, especially since events are back. I'm friends with a couple of them. Right.
+
+And I'm not like, I, I'm not hiding the fact like, Hey, how's it going with competitor A? Right. Like I'm not hiding it.
+
+Right. Like in that, and that's the thing that like, there's a point here where I think you're, you're kind of being an asshole, like, and you're, you know, being like conniving. And then there's a point where you're just like being smart and collecting data.
+
+Um, and I try to stay like, obviously on that part of, of the divide, if that makes sense. Would you ever turn that into a business? Yes.
+
+Yeah. I think you could create a really good business around collecting NPS data. Honestly, G2 crowd reviews.
+
+That's where there's a ton of like data. Like I would love, someone should create this because it would just do my job, which is great. Um, quarterly report kind of like for, this is the thing, Forrester reports.
+
+I think there's also like a market to like blow that whole business up. Give me like quarterly reports instead of these reports where you called a hundred people, a quarterly report on the same company or on the same industry that has, here are the reviews, the new reviews, positive of a competitor here, the bad reviews, um, negative of a competitor. Um, here's NPS data, all that kind of fun stuff.
+
+And you know, again, you have to be careful on how much you use this information. Like you're using it to build like a profile. You're not using it to like immediately react to.
+
+And that's a mistake. A lot of people make. Sean and I had, we brainstormed this a lot and we were talking about how we both use glass door reviews because even though like glass door is typically like either fake or incredibly happy employees or like disgruntled employees, there's not really a middle, but like you could still get a lot of interesting information from there.
+
+And you get information from like LinkedIn. Like they'll say like, you know, I manage a pipeline of a $10 million a year business. And like, Oh, thanks for telling me.
+
+And like, we would like, we, we, we brainstormed this idea of this business where we, I think we called it like I spy or something, or like it involved like spying on like many people in a, in a particular industry and just sending you an email because you can use like Facebook ads manager and be like, Oh wow, these guys just made a switch. They are now targeting older women as opposed to younger women. And we called it like spy something.
+
+And it's kind of funny. You worked for the NSA, you, you, you, you know, you are the spy that we were talking about. So like, it is kind of interesting.
+
+I do think actually a business could be built doing this. I can't find this client info. Have you heard of HubSpot?
+
+HubSpot is a CRM platform. So it shares its data across every application. Every team can stay aligned.
+
+No out of sync spreadsheets or dueling databases. HubSpot grow better. I think the problem is, is that.
+
+So I've been talking about customer development, customer research, because you should do all of this for your customers. That's what you first start with rather than your competitors. Like better stuff sounds sexier.
+
+Right. But I think that like, I used to talk when I give talks at conferences or like events all about customer development, 15% of people like care. And then even when you give them, like everyone cares, everyone tweets the tweet.
+
+Oh yeah. You should talk to your customers. Right.
+
+15% of people actually do the work. And then when you actually take care of the work for them and just give them the data, and this is the one risk of this type of a business, I'm sure there's a big business in it, but then they like, don't know what to do with it. Right.
+
+And so all of a sudden it's like, okay, you're kind of giving people information, which that's probably fine because it's a vitamin then like they don't, they, they like that they have it. Right. But then actually implementing on stuff like they probably don't do it.
+
+And that means like, I don't know if you get, if you get a 36 month customer, like I'll take it. Right. Like they don't need to be 60 months necessarily for, for you to build a big business.
+
+Right. You're doing one other thing that I find fascinating. Uh, actually, actually, well, there's two.
+
+You said you're buying, I'll start with the less fascinating one. You said you're buying a shit ton of debt for pennies on the dollar and going to forgive it. So what's, what's actually going on there?
+
+Everyone wants to be Mr. Beast on a long enough timeline. Everyone wants to be Mr.
+
+Beast. That's what I feel. So, uh, no.
+
+So like, here's the thing. I, I'm probably going to reinvest everything that I got into this until like another business. Did you say how much, how much did you make from the sale?
+
+Trying. I got to work with a lot of people. Uh, so I'm trying not to, to, to be super.
+
+Over or under nine figures. Uh, I'm not going to say what I got. Let's just put it that way.
+
+But, um, I asked you if it, I was, I asked you if it was over or under a hundred million dollars and it took you a minute to think about it. So what I'm going to assume. It's that number, give or take 30%.
+
+Uh, give or take 30%. Yeah. Let's just, let's, but like, again, part of it's stock.
+
+It's not all cash. Like there's a lot of different factors here that we, I don't want to get into, but I am, I'm going to, I'm fine right now. Like I'm going to do fine that if that makes sense.
+
+So, um, but I want to reinvest it. Cause like, again, I'm, I'm not a car guy. I'm not like, and again, I've had it for like two months.
+
+I went from like, this is a fun fact. I did the whole Dave Ramsey. Don't have any debt, pay off the house as soon as possible thing.
+
+So in January I had $20,000 in my bank account and I paid off house. Like that was it. And then this happened.
+
+So, um, I haven't adjusted to it is what I'm trying to say. So like, this might change in like six months, but I, I want to like, you know, I want to go all out and go all out, not in a way of like, you know, like fancy cars and stuff like that, but like in stuff that's really interesting and gets me on the quickest path to learning. And one of the reasons for the debt thing, um, and also the, I don't know if you're going to bring up the other one, but like the debt thing was this, the debt market's just crazy.
+
+Like it's insane, right? It's, it's, it's insane how much debt there is, how that debt is purchased. I don't understand it.
+
+Um, and this is one of the ways that I can like really understand it and also do some good in the world where it's like, I can buy a bunch of debt for pennies on the dollar. I can understand how that system works, how debt collectors work, how the debt collectors sell to another debt collector. Um, and then also like, obviously forgive some medical debt.
+
+Make it simple. What, what, what debt have you bought? What, what, how are you buying debt?
+
+What debt are you buying? How are you buying it? What are you doing with it?
+
+Yeah. Yeah. I'm, I have not actually purchased the debt yet.
+
+Right. I am basically exploring right now. I just put some feelers out.
+
+Cause that's the other thing. The debt market. Who did you reach out to, to see if you can acquire some debt?
+
+See, see, that's the interesting part that's about to, was about to bring up. It's so shadowy that like, there's not like a website that's like, we buy all the debt and then sell the debt and all that kind of stuff. There's nothing.
+
+So I have a buddy. Um, I think he's, I don't know if he's cool with me saying his name, but he used to, he runs a really cool subscription conference now, but he used to do this. And I was asking him, he was on like the, the board of one of these debt agent, like associations, like a business association.
+
+And I was like, Hey man, isn't it scammy? And he was explaining to me that like, in that market, there's like 20% of the market. That's like very bad.
+
+Like those are the ones you hear all the stories about threatening people. The other part of the market, like he was in this, he was like, he would just call people and be like, Hey, like, what can you do? Right?
+
+Because he bought it for pennies on the dollar. So he's like, give me 30%. Great.
+
+Like he made money. They get it done. All that kind of stuff.
+
+And this is like someone who owes, this is like someone who owes $2,000 because they got an x-ray or took an ambulance or, um, Yeah. I don't know whatever else you have credit card debt for. Right?
+
+Yeah. And the other thing is the reason, the reason this is interesting, and this is like to kind of speak a little bit more like how I'm thinking is like, I don't want to build a quilt company, although it would be fascinating. Don't get me wrong.
+
+Like I, the stuff Palmer Luckey is doing in defense. I'm, I'm all about it. The stuff that like, uh, Aaron Swartz did, uh, before his passing, like in terms of opening up, uh, databases that were, that were behind, um, gateways, but supposed to be free and making them free.
+
+Like that's the type of stuff I want to do. And like, if you look at debt, right? Money in politics and defense.
+
+Those are three giant areas where like there's huge things holding us back. Um, cost plus pricing and defense is holding us back. The Palmer's working on it.
+
+Debt. There's just a, so much debt. Um, most of it's student or not most of it, but a lot of it's student debt.
+
+And so like, there's something interesting there of like, how can you make money, but also like not be a jerk. Right. And also like, you know, take that burden off people's plates and then politics, money in politics, there's, there's something there because I don't think we're just going to magically have, you know, people wake up and be like, let's vote against having this much money in politics.
+
+So like, what's the world would look like where you accelerate the money in politics and hopefully break some of the log jams and kind of go from there. So that's, that's, those are the three things I really think about, um, in terms of like post paddle life, if that makes sense. And, uh, Sam, you want to do anything on those?
+
+Otherwise there's one another. Yeah. Well, before we, I want to get to this last one, this is interesting, but I do want to do a quick, I have a quick question, which is you you're 32, right?
+
+33. How old are you? Uh, yeah, 30, 33.
+
+Yeah. I turned 34 in a couple months. So you're 33, 34.
+
+You just made a huge sum of money. Have you done the math to when you become a billionaire? Uh, I'm sure you have.
+
+And, uh, how does it feel to have such a huge sum at such a young age? I mean, that's pretty wild, right? Here's the thing I learned and some of your guests.
+
+So actually friend of the show, her Mosey, I talked to him a couple of weeks ago and what I told him and he kind of was like, yeah, exactly back was it amplifies the worst in you and the best in you. You're just the same person. Right?
+
+So like, I thought when I was going to get money, I was going to like, oh, I'm going to be healthier because I can like afford, you know, someone to yell at me about eating. It's like, no, like now I can afford to go to terrible places all the time. Right.
+
+And I, you know, I could afford that before, but like, I think it's one of those things where I'm a big believer, something I talk a lot about, and I don't know if this is interesting, but like Teddy Roosevelt of all people wrote this speech called the strenuous life and is basically his concept. And I think it's a better speech. Everyone references man in the arena.
+
+I think man in the arena is shit versus strenuous life. He basically said in modern parlance, like if you've been given something like whether it's, you know, middle-class life, upper-class life, whatever it is, if you've had an exit, even though you worked for it, right? Whatever.
+
+Like your duty is to re like, go be strenuous again. Right? Your duty is to go crazy and like, you know, go deeper and make big swings.
+
+Right. And that's why I'm talking about like, I don't want to go into quilting. Cause it's like, yeah, there's a money grab there.
+
+I think it's great. But like, I want to like fix democracy. I want to like have defense.
+
+I want to fix debt. Like I want to try and fix those types of things because I think like for every person doing that, like you obviously have tons of people that are digging ditches who have no ability to like, you know, they're leading a strenuous life. Like they have to.
+
+So yeah, I'm, and I know that sounds like, I don't know, people judge that answer like in multiple different ways, but like, yeah, I'm having fun, but I'm also like all in, right? Like I'm trying to go. And it's part of the reason we went to paddle is like, I didn't want to like hand over the keys.
+
+Cause I wasn't done yet. I want to see what a company going through a public offering like looks like, like, I want to see that so that I can decide, do I like that? Do I want to go big next or do I want to do more like small?
+
+So that's kind of what, what I'm thinking about, if that makes sense. When you were younger, were you kind of like highly competitive at anything or like, you know, you between ages, I don't know, 12 to 18. Did, if you look back now, if you were like a researcher, just getting to observe you behind the glass panel, would you have seen anything in the way you behaved that would lead you to think, oh, this guy's going to have like a really interesting career in life?
+
+Or would you have looked like an, you know, an average teenager at that time? Um, yeah. So I had a not, I don't know how Sam would look at this.
+
+I had like a Midwest childhood, let's say a bad Midwest childhood, which is like the things that happened to me, like would clearly be abused today, but maybe back then, like they were like, okay. And so, um, so there was that. And I think that like, that makes me an incredibly insecure human being.
+
+Like I'm, I'm incredibly insecure about like most things, but what I kind of learned, and I don't know if this was trial and error, but I had some good like mentors in life is like, instead of like taking that and go become, you know, a deadbeat, like channel it, right? Like use that anxiety, like and channel it. The one thing in the answer to your question.
+
+Um, fun fact, I am a national champion debater. Um, so I, uh, I did speech and forensics, um, in, in high school. Should I make the joke, John?
+
+Yeah. John or do what to do? There you go.
+
+Would you consider yourself a master? 12 year olds, 12 year olds. I love it.
+
+Yeah. So I, I did, um, By the way, we did this segment. I don't know if you heard this.
+
+We did this segment on here. I said, I observed these three patterns. People who are amazing at debate, go on to do amazing in business.
+
+People who are amazing gamers can go on to do amazing. Um, and I think poker was maybe my other one, but those three are like, you wouldn't associate that with success in the business world, but they have like this, I just keep seeing it over and over and over again. Well, so you know what it is.
+
+So I, I did, um, so I like, I was doing football and like wrestling and all that stuff. I had to have foot surgeries for whatever, some reason. And basically I was like, Oh, I can't, I can't do wrestling that season.
+
+So I went and started doing what's called forensics when you're in high school. And then I was like, Oh, you can get scholarships. So I went to the school.
+
+I went to on scholarship to, to do this. And it was one of the best schools in the country for it. It's Bradley university, like lovely school, but like as the Northwestern kids would make fun of us in Illinois, like you get a public school education at a private school price, basically, unless you're on scholarship, that type of a thing.
+
+And if you think about it, so what I was doing is at least in college for 40 hours a week, four years, I was synthesizing information and structuring arguments and getting to root cause. Right. Which are these things that we always talk about.
+
+I never wanted to go into business. I, my dad still thinks I should be a doctor. I was going to go into law law, but you know, more people were graduating, you know, in law school than actual legal jobs.
+
+And I graduated. So long story short, it was one of those things where I was like, you know, I can synthesize information really quickly. Right.
+
+And, and that's like, I talk a little faster and all this other stuff. And so I think that's, that's helped me a lot because literally our marketing strategy in the early days was I just write blog posts and I can write them pretty quickly and they're relatively deep. They're not all gems, but you know, it's one of those things that, that definitely helped me and I use it.
+
+I probably use it every day. You want to go to the last one, Sean? This is the most interesting one.
+
+You're doing, you're also doing a hostile takeover of a publicly traded person. So I saw this, it's this guy, I don't know how you say it. I've only got the background.
+
+I'm going to go to the next one. KMikey M is his hack handle. And there's this guy.
+
+Yeah. Yeah. Tell the story.
+
+What, who is this guy? What did he do with it? What the heck are you doing?
+
+Okay. So again, quickest path to learning. That's, I think that's really important for like entrepreneurs, executives in general, Mike Merrill in like 13 years ago, 2008, something like that.
+
+He became the first publicly traded person. So he sold shares in himself. He's, there's an interface.
+
+The, the, the website is a little buggy sometimes, but there's an interface. He sold shares. He gets the money, but then what he does is he gets to choose to put votes up.
+
+And then the people who bought shares vote their shares. And he doesn't do little stuff. Like he does little stuff like, what color glasses should I get?
+
+So a lot of the things we probably don't want to make decisions on ourselves, which is really interesting hack. But he also, what he'll do is he goes and he'll put, should I move in with my girlfriend? He puts that up for a vote.
+
+The debate is fascinating because some of them are his friends and his family. And then there's just randos in Connecticut being like, I've known Mike for like a long time through the project. I don't think this makes sense.
+
+He said this like three years ago, blah, blah, blah, blah, blah. It's fascinating. So I knew about this, uh, girlfriend, what's the URL again?
+
+Say that spell it out. K Mikey M K M I K E Y M. And, um, so I, I got a little money and I was like, I've, I don't know what it's like to like do a takeover of a company.
+
+Right. And this is when Elon Musk was like doing his stuff with Twitter. And so long story short, I was like, oh, this could be fascinating.
+
+One, because there's like, I don't know how people react when this stuff happens. And so he put an auction up for, um, additional shares. And this is what he does every so often when he needs some cash, he'll actually put an auction up and people can buy, um, presumably if it's a Dutch auction under the share price.
+
+Right. And I did like, by the way, do you like, do you get anything as a shareholder? There's no dividends.
+
+There's no like, uh, nothing like that. You can sell your shares. People buy like shares.
+
+So like I put my shares up and get money, like actually get cash. Right. Dude, look at Sean, go to the website.
+
+Um, so he, he just says a thing. So look, let me give you an example. It's called the finger holers contract gig.
+
+I guess finger holers, the name of the company, but the short, the TLDR is, should I take a short term gig contract coordinating the development of a community around the launch of an NFG project called finger hole finger holders? Should he take a job? Yeah.
+
+And then it goes the whole background of like, why I'm interested in this? Why do I want to do this? What are the contract details?
+
+How much are they going to pay me? What's the proposal? And then there's 300, I think there's like a crazy amount of comments that says like pros working on a project sounds fun cons NFTs are divided.
+
+The divisive and it may alienate some of your shareholders. And there's like incredibly thoughtful discussion on why he totally or should. What?
+
+So listen to this. So I sneakily, I start buying shares and I start researching people who haven't been active because you can see the last time they like logged in and stuff. Cause I want to start contacting them.
+
+He launches this auction of about 2000 shares. And I know that most votes, there's only about 5000 shares that are voting. So I was like, cool.
+
+If I get 2000 shares, which is like 10, 11% of the entire thing. And then I did a sneaky way of doing the auction, which we can get into if it's interesting. But anyways, so I get the shares and then I go speak at his shareholder meeting.
+
+He has a shareholder. How much did you pay for the 2000 shares? Uh, it was like 13 grand.
+
+And so his market cap is only like, uh, is, is, yeah, it's not, it's, it's, I don't know, 130,000 where everyone gets in. Yeah. So right now he's got, I think 16,000 shares or something that are, have been sold in the share price.
+
+I haven't checked today, but there's a share price. It goes up and down based on like purchases and stuff, but he's worth it. It's in the six figure range.
+
+I think ballpark. I think so. Yeah.
+
+Yeah. Yeah. So if you owned all the shares, theoretically, that's the value.
+
+But then the other thing is the community makes it interesting. So I go speak at the shareholder conference and I go, Hey, and it's on YouTube. And I say, listen, I'm doing a hostile takeover of Mike.
+
+Here's why. Like, I think the project's undervalued. You guys voted to like make him not go on social media.
+
+Like that doesn't make sense. Like in order to get more people, he has to like do this blah, blah, blah. I think.
+
+And then all the questions are like, well, what about like, is this good for Mike? Cause there's a lot of his friends, like his actual in-person friends. And I was like, listen, I think what's good for what's good for the share price is good for Mike and vice versa.
+
+And I talk, like I talk about, it's like a half hour interview I did and it, and then everyone, and then there's all these people, especially the people who don't know him who are like, I think Patrick, I think the takeover is good for the project. I think it's this. And you only needed like 500 to a thousand more shares roughly to control the vote.
+
+You thought? No, no, no. I already, I already had, I got 1930 out of the auction.
+
+Right. Right. But you said each vote has about 5,000 and you just need, you just need 51%.
+
+But it's never, it's never one sided. It's never one sided. So like if, if it's 2,500, So you already can swing whatever vote.
+
+And, and what's funny is I'm texting him and I'm like, Hey man, just so you know, here are my intentions. Like it's like a little, it's a little takeover, right? That, that, that's cool.
+
+That's some insider trading though. No, no, I didn't, I didn't do anything. It's like when Elon, Elon goes and talks to Parag and he's like, Hey, look, I'm doing this and here's what I want to do with Twitter.
+
+And also there's kind of nothing you could do about it, but I'm going to inform you because that just seems like, you know, the standard, the right thing to do. Yeah. Yeah.
+
+Yeah. What does, uh, what is, what obligation does this guy have to follow what you say? Like, like, wait, no, what if he just says, ah, fuck off.
+
+I'm done with this project. In, I mean, he could shut the project down. I don't know.
+
+Like, so first, before I started doing this, I started tweeting to him about what happens if there was a hostile takeover. Elon Musk seems interesting. Right.
+
+Cause I wanted to see like, is this like, it's, is this going to be a good investment? Probably not. But like, I'm learning, I can't tell you how much I'm learning.
+
+Right. Because all of a sudden it's like, Oh, interesting. Shareholder made, they responded to this.
+
+And these aren't like the investors that I want to be working with for the rest of my life, but it's really fascinating. Um, he has never, to my knowledge in 13 years gone against what a vote has said, but he could, it's all in good faith. He could.
+
+I mean, there's no, yeah, there's no like, Oh my God, I can sue him or anything. Also he, he gets to choose what he puts up for vote. So if he's like, ah, you know, I just want to move on to my girlfriend.
+
+I don't have to put it up for a vote. But there has been some talk of you get to burn some of your shares in order to put a vote up for a vote, which is fascinating. It's he's been covered by wired Atlantic, all kinds of stuff.
+
+It's in, it was in a lull and I'm injecting some excitement into it again. And yeah, I'm looking at the price chart. So it looks like it's, it started 2008.
+
+It opened at a dollar 99 cents. It looks like. And it basically was like between one and $3.
+
+Then it kind of peaked in 2013. Maybe he got some press or something like that. It was 13, 1350, something like that.
+
+And then for the last six years, it's basically been flat at roughly four or five bucks for a takeover. And now it's 685 right now. And so, um, it was about five when I started the takeover.
+
+This is far more interesting to be as small as it is. Right. I mean, it's cool to be as unknown of a project.
+
+It feels, it's, it feels unknown to be as unknown of a project as it is. It's been around this 2008. It's pretty under covered, right?
+
+Well, so in the beginning he got a lot, he was like on the today's show, he was on all kinds of stuff. And then he did, cause what was interesting is he's had some epics with it. Like a project was, I think it was called the girlfriend project.
+
+And it was literally about his relationship. His girlfriend buys shares. His ex-girlfriend is still a shareholder.
+
+I'm pretty sure his current, I don't know if it's his wife or not is, is like a share. Like, and that was the end of the shareholders meeting was his ex-girlfriend and his current girlfriend or wife having a conversation. It was the most interesting like half hour I've ever seen in my life because they were just, and they're friendly.
+
+I think there might be friends, but just them talking about Mike. And it's kind of beautiful because you have all these people who like, are there just from a money perspective or just a fascination perspective in my case, or from a love perspective, like supporting this guy and like trying to make the right decisions for him. So I think it's brilliant.
+
+Like, as soon as I announced this on Twitter, we got some inbound from like some, like, I don't think they're, they're documentarians or something like that. Like, I don't know if it'll come with anything, but it's like, it's a fascinating story that I think deserves more, more, more give. So I'm glad you asked about it because you guys have a pretty medium audience.
+
+So that's great. There's, there's even like a, what happens when I die? Like unlike a company, I will die.
+
+So what happens to my shares after I die? There's like, this is pretty crazy. I mean, it kind of makes no sense in that.
+
+Like, yeah, it's completely nonsensical. Yeah. But bro, you bought $150,000 image of a monkey.
+
+So like, this is, you know, like, did you buy an ape? Punk. You got a, oh, you're a punk guy.
+
+This is from Ape Fest. So this is my nice. Yeah.
+
+It was a 50. It was a coin flip to use the milk road portfolio. Either we buy up an ape or a punk and they were the same price on that day.
+
+And we knew that the, the purchase was going to have to happen. The board ape was about to buy the punks. And so it was like, what do we, which asset should we buy now knowing this news is about to break or it has just broken or something.
+
+And we flipped punk and then apes went through the roof. And punk's had been flat or down. Everything's down now too.
+
+It's interesting. Very interesting. Dude, check this out.
+
+So if you go to Mike's blog, so there's news.kmikeem.com where he like, it's, it's ran like a shareholder company. I mean, like a, like the investor relations page of a publicly traded company. And he has the list of all of his principles.
+
+And on health, it says like, as of October 23rd, 2019, I'm in favor of experimenting with psychedelics. And you click psychedelics and there's a like notes from a board meeting about like who voted and why they voted and what is the reason and what the reasoning is and how they are or are not going to start doing psychedelics. Then in 2016, I will not take a psyllium pills.
+
+I don't know what that is. And it's like, talks about why he wanted to take them and everyone's voting. And he has like a update on that.
+
+And then like entertainment, um, shareholders will have direct control over my television, television watching. I will. And then 2019, I will watch Spider-Man.
+
+Um, there's subscriptions. I will not subscribe to Spotify. Uh, yeah, some of these are like stupid, like the glasses one, it says that 34 users voted with 18, 1800 shares.
+
+So 34 people participated in that vote for the glasses. I guess that was not a very, uh, not a very big one. Let's see this.
+
+And if I believe he's put, I haven't, I'm pretty sure he's put like who he's voting for like president up. Like he's done stuff like that as well, which gets really fascinating. Yeah.
+
+But that's just as meaningless as the glasses thing. Interesting. He is in, uh, I believe he's in Oregon.
+
+So I'm not sure. I mean, he's in a state that is going to vote one way or the other anyways. Wow.
+
+Yeah. 2020, I will endorse Bernie Sanders for president. Okay.
+
+Uh, amazing. Listen, man, this was, this was fun. Uh, I'm glad you came on and, uh, I think you brought some good stuff, but Sam, what'd you think?
+
+Dude, can you send me, send me the, uh, the research thing? That was the most fascinating thing. That was really interesting.
+
+I will. And I'll send you some redacted, I'll send you the structure and you can feel redacted. No, no one will.
+
+I won't share it with any of these losers. It'll just be for me. Don't redacted.
+
+Okay. Let me think of it. I met again, I have a boss.
+
+I'm on a board. I gotta be careful now. So yeah.
+
+Well, are you guys, I'll send you something and paddle isn't public now, but it will be right. Uh, I mean, we're, we're not going next year. And a number of years probably before anything like that happens, but I'm great.
+
+You know, there's no laws. I'll hook you up. I'll hook you up with something.
+
+Don't worry. Don't worry. This was awesome.
+
+I, I typically hate having not hate. I, I say no to everyone. Sean brought you in.
+
+We kind of hate having guests, but then we have many ways and we're not, we're not fully sure why we do it, but we do it in the moment. It seems like a good idea halfway through the episode. It's like, I kind of wish I was just bullshitting with Sam instead of doing this conversation, but I'm always happy when we do it.
+
+Cause I don't have to prepare, but, uh, one out of every four is awesome. And I'll just hope that everybody thinks they're that one out of four. You actually were that one out of four.
+
+So good for you. What makes a good guest versus not a good guest just for the audience to hear. If they come to the pod, if they already know the vibe, if they know the, what's cool that that tends to work really well.
+
+I think, what do you think, Sam? I agree. And most people, most people aren't like Sean and I, and that they don't do this for a living.
+
+And so they need to come prepared with the things. And even us, we come with some, we do research. Sometimes we do, sometimes we don't, but there's at least bullet points.
+
+So it's like, all right, next. And you did a good job of saying next. A lot of people, um, if you, I don't know if you paid attention, but Sean very purposely in the beginning, he was like, I don't really care about the company and your background.
+
+Let's just move on to the other stuff. And, uh, we, we actually, we, we, we tend to do that a lot. And so that was cool.
+
+Um, and so that's also the least interesting, except for Michael sailor, that episode was like, that episode was money. Cause he was just so weird. Like it was just like, what's going to happen guys.
+
+Like what's going to happen the next minute. That was, that was an interesting one. Did you hear when he out, out of me, I was like, yeah, I like fast cars.
+
+He goes, I don't like fast cars, but I have a really fast jet. That's well, no, the quote, the quote I tell everyone from that episode is, yeah, I don't really like things that you can't in normal use go at their max speed. Like, and that's what he was referring with cars.
+
+Like it was like boats and jets. I'm allowed to, to go at max speed, you know, cars, not really. So I just thought that who even has that thought about like, am I utilizing this machine to its fullest velocity?
+
+A guy who puts most of his balance sheet to Bitcoin. That's, that's who has that thought, which is great. I love that those people exist.
+
+But dude, Sean, I, did you see my Instagram or Twitter or something I did? I, uh, this weekend I was in the Hamptons. Uh, that's not a humble brag.
+
+It was my in-laws house. So I had nothing to do with it, but, and that's a Midwest thing. He just did a Midwest thing.
+
+Just so you know, the very Midwest. Oh, I have a, yeah, I have an Equinox member, but like they're going to do my laundry. So it's like worth, it was on sale.
+
+Like I'm not a big time guy. I'm not a big time guy. Yeah.
+
+That's what he said. It was my in-laws house. And I went out there and I drove, we went to the beach for bonfire on the fourth and we drove by this area that was just pat.
+
+It was like a, it's like a small one lane road and it was packed full of cars, but they were fancy cars. And in front of me was a Bugatti and it was a special Bugatti. And I looked it up.
+
+It was like a $5 million Bugatti. And I was like, what the fuck is going on here? And so I get to the parking lot to park my car and it was full of black limousines, but not limousines, like the escalates full of them.
+
+And then in the corner, one of the limos had their trunk open and literally I'm not exaggerating. I have video of it. A hundred limousine drivers were just hanging out, drinking Coke, eating chips.
+
+And I was like, what the fuck is going on here? And they go, it's Michael Rubin's party. Michael Rubin has a famous white party.
+
+And I made a joke. I was like, he only lets whites in, which they didn't like the drivers. No.
+
+Yeah. Yeah. I was like, you know, like, oh, whites only really, that's weird.
+
+Maybe I should go. I don't know. It was a bad joke.
+
+And anyway, I go Rubin and they go, yeah, it's Rubin. He, he's having this party. It's famous.
+
+He goes, I drove this one guy was like, yeah, we drove Drake. And so that guy was like, yeah, Jay Z's there. And I was like, wait, really?
+
+And I looked it up on Instagram and it was this crazy party. And I was like, well, tell me everything. He goes, you know, I drove this guy and he's broke.
+
+One guy goes, I drove Tyrese. Remember Tyrese from Fast and Furious? Yeah.
+
+Yeah. Yeah. He's like, I drove that guy.
+
+And the driver goes, I'm richer than he is. That guy's broker than a joke. I got more money than that guy.
+
+And I was like, wait, what? Really? And he like kept dishing.
+
+He kept telling me all this. And he goes, the guys who are really rich, they typically drive themselves because they got that Bugatti and they want to show it off. Yeah.
+
+But it was really fascinating. I was just hanging with these. We hung with them for like half an hour, just asking them all rumors and gossip and they knew it all.
+
+That's amazing. I, after you sent that, you sent me that video and then I went on Instagram and I saw like six NBA players were posting stories from the party. So it was like James Harden's at the party.
+
+Mm-hmm . And then whoever, you know, like these other guys were Joel Embiid's at the party and it's, it's the all white party where everybody's, everybody's like, it was just rappers and athletes it seemed like, which is, which is great. Exactly.
+
+It was, it was so cool. And like, he's got like this private beach area and then we were like a hundred yards down the beach and right next to the parking lot. And it was just packed and we, there's Bugattis, there's all these crazy cars.
+
+It was pretty, it was pretty wild. I just imagined you in the, in the party with like, you know, that meme where it's the guy at the party yelling into the girl's ear and you're just like, it's a newsletter. We send it daily.
+
+It's a marketing automation company. Technically I'm there, but like, you know. The full snapshot of your customers in one CRM.
+
+No, I said, my ranch in Austin. My first million. I said million.
+
+Yeah. Yeah. No, no, no.
+
+With an M. You use Spotify? We're on there.
+
+We got video access on there. No, we mostly talk about 12 year old stuff, but it's pretty cool. Yeah.
+
+Sean? No, he's not here. He doesn't leave his house.
+
+Sometimes he has long hair. Sometimes he has short hair. I don't know.
+
+No, I'm not at, my in-laws live here. That's why. My in-laws are over here.
+
+No, my dad-in-law is jacked more than I am. It's kind of uncomfortable sometimes. That's fucked up.
+
+That bit will not get old for a while. That's awesome. I guess we should, we got to end there, right?
+
+Yeah. Yeah. Thanks for coming, dude.

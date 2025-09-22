@@ -18,8 +18,8 @@ The FastAPI transcription server has been upgraded to support multiple concurren
 ### 3. Configuration
 Environment variables to control concurrency:
 ```bash
-WORKER_COUNT=4        # Number of concurrent workers (default: 4)
-MODEL_INSTANCES=4     # Number of GPU model instances (default: 4)
+WORKER_COUNT=2        # Number of concurrent workers (default: 2)
+MODEL_INSTANCES=2     # Number of GPU model instances (default: 2)
 MODEL_NAME=turbo      # Whisper model to use (default: turbo)
 ```
 
@@ -40,11 +40,11 @@ MODEL_NAME=turbo      # Whisper model to use (default: turbo)
 
 ### Starting the Server
 ```bash
-# Default configuration (4 workers, 4 models)
+# Default configuration (2 workers, 2 models)
 python runpod_fastapi_server.py
 
 # Custom configuration
-WORKER_COUNT=3 MODEL_INSTANCES=3 python runpod_fastapi_server.py
+WORKER_COUNT=2 MODEL_INSTANCES=2 python runpod_fastapi_server.py
 ```
 
 ### Testing Concurrent Clients

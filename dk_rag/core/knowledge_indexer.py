@@ -6,11 +6,15 @@ import asyncio
 from typing import List, Dict, Any, Optional
 from pathlib import Path
 
+from typing import List, Dict, Any, Optional
+from pathlib import Path
+
 from ..data.storage.vector_store import VectorStore
 from ..data.storage.artifacts import ArtifactManager
 from ..data.processing.transcript_loader import TranscriptLoader
 from ..core.persona_extractor import PersonaExtractor
 from ..core.statistical_analyzer import StatisticalAnalyzer
+from ..core.persona_manager import PersonaManager
 from ..config.settings import Settings
 from ..utils.logging import get_logger
 from ..utils.validation import validate_documents
@@ -19,41 +23,69 @@ from ..utils.validation import validate_documents
 class KnowledgeIndexer:
     """
     Orchestrates the complete knowledge indexing and persona extraction pipeline
+    with multi-tenant support for isolated persona management
     """
     
-    def __init__(self, settings: Settings):
-        """Initialize the knowledge indexer"""
+    def __init__(self, settings: Settings, persona_id: Optional[str] = None):
+        """Initialize the knowledge indexer with optional persona context"""
         self.settings = settings
         self.logger = get_logger(__name__)
+        self.persona_id = persona_id
         
-        # Initialize components
-        self.vector_store = VectorStore(settings)
-        self.artifact_manager = ArtifactManager(settings)
+        # Initialize persona manager
+        self.persona_manager = PersonaManager(settings)
+        
+        # Initialize components - persona-specific if persona_id provided
+        if persona_id:
+            # Ensure persona is registered
+            if not self.persona_manager.persona_exists(persona_id):
+                raise ValueError(f"Persona '{persona_id}' not registered. Register it first.")
+            
+            # Use persona-specific components
+            self.vector_store = self.persona_manager.get_persona_vector_store(persona_id)
+            self.artifact_manager = self.persona_manager.get_persona_artifact_manager(persona_id)
+        else:
+            # Legacy mode - use global components
+            self.vector_store = VectorStore(settings)
+            self.artifact_manager = ArtifactManager(settings)
+        
         self.transcript_loader = TranscriptLoader(settings)
-        self.persona_extractor = PersonaExtractor(settings)
-        self.statistical_analyzer = StatisticalAnalyzer(settings)
+        self.persona_extractor = PersonaExtractor(settings, persona_id)
+        self.statistical_analyzer = StatisticalAnalyzer(settings, persona_id)
     
     def build_knowledge_base(self, 
                            documents_dir: str,
+                           persona_id: Optional[str] = None,
                            rebuild: bool = False,
                            file_pattern: str = "*.md") -> Dict[str, Any]:
         """
-        Build complete knowledge base from documents
+        Build complete knowledge base from documents for a specific persona
         
         Args:
             documents_dir: Directory containing documents
+            persona_id: Persona identifier for tenant isolation
             rebuild: Whether to rebuild from scratch
             file_pattern: Pattern for files to include
             
         Returns:
             Dictionary with indexing results
         """
-        self.logger.info(f"Building knowledge base from: {documents_dir}")
+        # Use instance persona_id if not provided
+        if persona_id is None:
+            persona_id = self.persona_id
+        
+        if not persona_id:
+            raise ValueError("persona_id required for building knowledge base")
+        
+        self.logger.info(f"Building knowledge base for persona '{persona_id}' from: {documents_dir}")
+        
+        # Get persona-specific vector store
+        vector_store = self.persona_manager.get_persona_vector_store(persona_id)
         
         # Clear existing data if rebuilding
         if rebuild:
-            self.logger.info("Clearing existing vector store...")
-            self.vector_store.clear_collection()
+            self.logger.info(f"Clearing existing vector store for persona '{persona_id}'...")
+            vector_store.clear_collection()
         
         # Load documents
         self.logger.info("Loading documents...")
@@ -74,12 +106,22 @@ class KnowledgeIndexer:
         summary = self.transcript_loader.get_document_summary(documents)
         self.logger.info(f"Loaded {summary['total_documents']} documents with {summary['total_words']:,} words")
         
-        # Add documents to vector store
-        self.logger.info("Indexing documents in vector store...")
-        chunks_added = self.vector_store.add_documents(documents)
+        # Add documents to vector store with persona metadata
+        self.logger.info(f"Indexing documents in vector store for persona '{persona_id}'...")
+        # Add persona_id to all documents metadata
+        for doc in documents:
+            doc['persona_id'] = persona_id
+        chunks_added = vector_store.add_documents(documents)
         
         # Get collection statistics
-        collection_stats = self.vector_store.get_collection_stats()
+        collection_stats = vector_store.get_collection_stats()
+        
+        # Update persona stats in registry
+        self.persona_manager.update_persona_stats(persona_id, {
+            'documents': len(documents),
+            'chunks': chunks_added,
+            'total_words': summary['total_words']
+        })
         
         results = {
             'documents_loaded': len(documents),
@@ -95,7 +137,9 @@ class KnowledgeIndexer:
     def extract_and_save_persona(self,
                                 documents_dir: str,
                                 persona_name: str,
-                                file_pattern: str = "*.md") -> str:
+                                file_pattern: str = "*.md",
+                                use_cached_analysis: bool = True,
+                                force_reanalyze: bool = False) -> str:
         """
         Extract persona from documents and save artifacts
         
@@ -103,11 +147,19 @@ class KnowledgeIndexer:
             documents_dir: Directory containing documents
             persona_name: Name for the persona
             file_pattern: Pattern for files to include
+            use_cached_analysis: Whether to use cached statistical analysis if available
+            force_reanalyze: Force fresh statistical analysis even if cache exists
             
         Returns:
             Path to saved persona artifact
         """
-        self.logger.info(f"Extracting persona '{persona_name}' from {documents_dir}")
+        # Register or get persona ID
+        persona_id = self.persona_manager.get_or_create_persona(persona_name)
+        
+        self.logger.info(f"Extracting persona '{persona_name}' (ID: {persona_id}) from {documents_dir}")
+        
+        # Get persona-specific artifact manager
+        artifact_manager = self.persona_manager.get_persona_artifact_manager(persona_id)
         
         # Load documents
         documents = self.transcript_loader.load_documents(
@@ -122,9 +174,22 @@ class KnowledgeIndexer:
             if self.settings.validation.strict_mode:
                 raise ValueError(f"Validation failed: {validation_issues}")
         
-        # Extract persona
-        self.logger.info("Extracting persona constitution...")
-        persona = self.persona_extractor.extract_persona_sync(documents)
+        # Extract persona with cache support
+        if use_cached_analysis and not force_reanalyze:
+            if self.statistical_analyzer.has_cached_analysis(documents):
+                self.logger.info("Using cached analysis for persona extraction...")
+            else:
+                self.logger.info("No valid cache found, performing fresh analysis...")
+        elif force_reanalyze:
+            self.logger.info("Force reanalyze enabled, performing fresh analysis...")
+        else:
+            self.logger.info("Cache disabled, performing fresh analysis...")
+        
+        persona = self.persona_extractor.extract_persona_sync(
+            documents, 
+            use_cached_analysis=use_cached_analysis, 
+            force_reanalyze=force_reanalyze
+        )
         
         # Validate persona
         from ..utils.validation import validate_persona, auto_fix_persona
@@ -151,9 +216,9 @@ class KnowledgeIndexer:
         # Update metadata with quality scores
         persona.extraction_metadata.quality_scores = quality_scores
         
-        # Save persona artifact
-        self.logger.info("Saving persona artifact...")
-        artifact_path = self.artifact_manager.save_persona_constitution(
+        # Save persona artifact using persona-specific artifact manager
+        self.logger.info(f"Saving persona artifact for '{persona_id}'...")
+        artifact_path = artifact_manager.save_persona_constitution(
             persona,
             persona_name,
             metadata={
@@ -171,21 +236,33 @@ class KnowledgeIndexer:
     
     def update_knowledge_base(self,
                             new_documents_dir: str,
+                            persona_id: Optional[str] = None,
                             file_pattern: str = "*.md") -> Dict[str, Any]:
         """
-        Update existing knowledge base with new documents
+        Update existing knowledge base with new documents for a specific persona
         
         Args:
             new_documents_dir: Directory with new documents
+            persona_id: Persona identifier for tenant isolation
             file_pattern: Pattern for files to include
             
         Returns:
             Dictionary with update results
         """
-        self.logger.info(f"Updating knowledge base with documents from: {new_documents_dir}")
+        # Use instance persona_id if not provided
+        if persona_id is None:
+            persona_id = self.persona_id
+        
+        if not persona_id:
+            raise ValueError("persona_id required for updating knowledge base")
+        
+        self.logger.info(f"Updating knowledge base for persona '{persona_id}' with documents from: {new_documents_dir}")
+        
+        # Get persona-specific vector store
+        vector_store = self.persona_manager.get_persona_vector_store(persona_id)
         
         # Get current stats
-        before_stats = self.vector_store.get_collection_stats()
+        before_stats = vector_store.get_collection_stats()
         
         # Load new documents
         new_documents = self.transcript_loader.load_documents(
@@ -197,11 +274,18 @@ class KnowledgeIndexer:
         # This is a simplified check - in production you'd want more sophisticated deduplication
         new_documents = self.transcript_loader.deduplicate_documents(new_documents)
         
-        # Add to vector store
-        chunks_added = self.vector_store.add_documents(new_documents)
+        # Add to vector store with persona metadata
+        for doc in new_documents:
+            doc['persona_id'] = persona_id
+        chunks_added = vector_store.add_documents(new_documents)
         
         # Get updated stats
-        after_stats = self.vector_store.get_collection_stats()
+        after_stats = vector_store.get_collection_stats()
+        
+        # Update persona stats
+        self.persona_manager.update_persona_stats(persona_id, {
+            'chunks': after_stats.get('total_chunks', 0)
+        })
         
         results = {
             'new_documents': len(new_documents),
@@ -216,43 +300,68 @@ class KnowledgeIndexer:
     
     def search_knowledge(self, 
                         query: str,
+                        persona_id: Optional[str] = None,
                         n_results: int = 10,
                         source_filter: Optional[str] = None) -> List[Dict[str, Any]]:
         """
-        Search the knowledge base
+        Search the knowledge base for a specific persona
         
         Args:
             query: Search query
+            persona_id: Persona identifier for tenant isolation
             n_results: Number of results
             source_filter: Optional source filter
             
         Returns:
             List of search results
         """
-        self.logger.debug(f"Searching for: '{query}'")
+        # Use instance persona_id if not provided
+        if persona_id is None:
+            persona_id = self.persona_id
+        
+        if not persona_id:
+            raise ValueError("persona_id required for searching knowledge")
+        
+        self.logger.debug(f"Searching in persona '{persona_id}' for: '{query}'")
+        
+        # Get persona-specific vector store
+        vector_store = self.persona_manager.get_persona_vector_store(persona_id)
         
         if source_filter:
-            results = self.vector_store.search_by_source(query, source_filter, n_results)
+            results = vector_store.search_by_source(query, source_filter, n_results)
         else:
-            results = self.vector_store.search(query, n_results)
+            results = vector_store.search(query, n_results)
         
         self.logger.debug(f"Found {len(results)} results")
         return results
     
-    def analyze_knowledge_base(self) -> Dict[str, Any]:
+    def analyze_knowledge_base(self, persona_id: Optional[str] = None) -> Dict[str, Any]:
         """
-        Analyze the current knowledge base
+        Analyze the current knowledge base for a specific persona
         
+        Args:
+            persona_id: Persona identifier for tenant isolation
+            
         Returns:
             Analysis results
         """
-        self.logger.info("Analyzing knowledge base...")
+        # Use instance persona_id if not provided
+        if persona_id is None:
+            persona_id = self.persona_id
+        
+        if not persona_id:
+            raise ValueError("persona_id required for analyzing knowledge base")
+        
+        self.logger.info(f"Analyzing knowledge base for persona '{persona_id}'...")
+        
+        # Get persona-specific vector store
+        vector_store = self.persona_manager.get_persona_vector_store(persona_id)
         
         # Get collection statistics
-        collection_stats = self.vector_store.get_collection_stats()
+        collection_stats = vector_store.get_collection_stats()
         
         # Sample some chunks for analysis
-        sample_results = self.vector_store.search(
+        sample_results = vector_store.search(
             "insights knowledge wisdom learning",
             n_results=100
         )
@@ -334,5 +443,8 @@ class KnowledgeIndexer:
     
     def cleanup(self):
         """Clean up resources"""
-        self.vector_store.close()
+        if hasattr(self, 'vector_store'):
+            self.vector_store.close()
+        if hasattr(self, 'persona_manager'):
+            self.persona_manager.cleanup()
         self.logger.info("Knowledge indexer cleanup complete")

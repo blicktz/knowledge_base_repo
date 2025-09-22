@@ -1,0 +1,681 @@
+What's up, guys? Sean here. Sam is out today, but we've got my friend Greg Eisenberg filling in.
+
+Greg is a great dude. You guys will like him a lot. He's been a founder of a couple companies, sold two of them, one to stumble upon, one to WeWork.
+
+He's at WeWork now. He's an investor in companies. He's a cool guy.
+
+You guys will like him a lot. He's got a real brain for designing products. Anytime there's a social or consumer product, he's one of the best thinkers around.
+
+I think you guys will see that. We spend the first half of the conversation talking a little bit about his background, and then the second half is we go through a bunch of random ideas he has on his notes app on his phone just for fun. I think you guys will like it.
+
+Tweet at me, SeanVP. Tweet at Greg. Let us know what you think about the episode.
+
+As always, enjoy. Hope everybody's doing great out there in the quarantine. Keep hustling and building stuff.
+
+Keep yourself busy with good things. All right. Take care.
+
+Enjoy the episode. Okay, so I should introduce you. Greg is on the podcast.
+
+Greg is a homie from, I don't know how long I've known you, a few years at least. We, you know, I guess the world probably now knows you for your haircut website. Right.
+
+It's true. Explain what that is. What is the URL?
+
+Do you probably need a haircut? Is that it? Youprobablyneedahaircut.com.
+
+Yeah, we're the busiest virtual barbershop on the internet. Dude, so what happened? Okay, so people are in quarantine.
+
+They need haircuts. And how does this idea go from a little germ, a little sperm in your head to a real idea out there? I mean, you know me.
+
+I like, you know, I get sort of excited about stuff that goes viral. And I was talking to a buddy of mine. He's a stylist, out of work, couldn't pay his rent.
+
+I was like, I need a haircut. I like to look good. You know, built the MVP.
+
+And then just threw it on Product Hunt. And before I knew it, it was on the Today Show, ABC. And basically the way it works is, it's pretty simple.
+
+Like, for people who need haircuts, they book an appointment. They get connected to a virtual stylist. And they could either cut their own hair or they can have a friend cut their hair for you.
+
+And so, this is a dope idea. When it came out, I was like, who's behind this? I know, I feel like I know the person behind it.
+
+I didn't know it was you. But I was like, I feel like it's either you, it's Alex2. Or it's like, you know, one of you sort of viral memers of products.
+
+Yeah. I feel like, actually, in general, I've spent hours brainstorming with you before. I feel like for you to get excited about building something, it's got to start with some emotion.
+
+Like, either you think of something that makes you laugh, and then you're just giggling, but you're serious about it once you start laughing. Or it's some, like, really sad story, and you're like, okay, this is an injustice in the world. I want to go solve.
+
+But is that a fair characterization of you? Yeah. I mean, I do like things that kind of go viral.
+
+And, like, for me, you probably need a haircut. I mean, I told my girlfriend, I was like, I'm 100% sure this is going to go viral. And she's like, well, how do you know?
+
+How do you know? And I was like, well, like, the name and kind of, you know, where we're at, and it was the timing. Like, you just seat it with a couple of journalists and, you know, throw it up on Product Hunt.
+
+And, like, before you know it, like, I don't know, we probably had 150,000 uniques in the first 24 hours. How many actual haircuts? Probably more, probably over 1,000 at this point.
+
+Yeah. Yeah, definitely actually more than 1,000. We have one silo-s who did 200.
+
+So, yeah, more than 1,000 probably. And any public speaking thing where they're like, hey, can you send me, like, your bio? This absolutely needs to be the first thing.
+
+You know, I, you know, conducted over, I'm responsible for over 100,000 haircuts over the internet. And the crazy thing is that people, like, actually look good. Like, I, I, I.
+
+Well, the crazy thing is you don't have a haircut right now. You're growing it up. The crazy, try booking a haircut, like, this weekend.
+
+You can. The site is busy, you know. I'm an entrepreneur.
+
+I'm out here. I gotta, I gotta make it happen for the people. I love it.
+
+There's a reason I have this hat on because, you know, your boy butchered himself with his own 2 a.m. haircut, with his own clippers, without using your website. And, you can't see my hair, so that's why.
+
+All right, so let's give people background, and then we're gonna shoot the shit as we do. Sure. Greg, first, do you remember when you became a millionaire?
+
+Do you remember the day? Of course, you always remember the day. Tell me about the day.
+
+But I actually, like, you know, where I started, actually, and I've never publicly said this, where I started, I think you might know this, where I started to actually make a little bit of money was really as a teenager doing affiliate marketing. Oh, affiliates. That's right.
+
+And, like, the underbelly of the internet. Yes. And, you know, not people, not a lot of people talk about, you know, there's a lot of, actually, great entrepreneurs who actually came from that area.
+
+Area, I think Julian Smith, who, you know, is also, was in that era as well. But I actually remember 2008, it was my, I think it was my 18th birthday, and I was doing affiliate marketing. Basically, I was doing deals with, you know, the eHarmony's, the match.com's, and Zynga's, who were, like, they were willing to pay you three, four, five, six bucks for every install you generated for them.
+
+And back then, there was this, I mean, there's still arbitrage now, but there was this arbitrage where if you could, you know, create a landing page and cost you $1 to get someone to it, to install that game, or get that lead to eHarmony, they would pay you five bucks. Right. So, I would just figure out, like, kind of, just some innovative ways to do it.
+
+You know, one thing I did, which, you know, which I invented, was the autoplaying video pop-under ad, which ruined the internet. Were you desperately trying to find which tab is playing the sound? Well, we did it for a poker company, and yeah, that's it.
+
+And basically, you know, we, I remember getting, like, one, two percent conversions on it, and this was a pop-under ad. It cost, like, a fraction of a penny. But, you know, from that whole experience of, like, as a teenager kind of working in affiliate marketing, it really just taught me, like, what do people want?
+
+Yes. Because, you know, I didn't grow up poor or anything, but, like, my parents weren't giving me money to, like, go, and a lot of money to, like, go and buy the things that I wanted. So, I was like, okay, I'm going to have to go out there and do it myself.
+
+And I ended up building, you know, I put it, like, okay, $100 a month on this landing page, $1,000. And it sort of grew. And you really pay attention if it's your own money.
+
+You really do pay attention. And, you know, if the difference between, like, a one percent conversion rate and a 1.2 percent conversion rate is if you make $100 a day or lose $100 a day or, at bigger scales, lose $100,000 a day or gain $100,000 a day. And if you realize it's around just subtle details, like having a woman with red hair or have the eyes look at you in the landing page or certain copy, all these little nuanced things add up to getting people to do things on the Internet.
+
+Totally. Me and I think, you know, Furkan, the CTO that I had at my startup, we used to literally look for, hire for, can we find anyone who's done affiliate marketing? Because we were like, people who understand those arbitrages, they actually understand how the Internet works.
+
+You understand what makes people click, what drives them to actually take action, how the economics of the Internet works, how to move traffic around. And that's a, probably, it's not a great long-term path, but it is like a great place to sharpen your sword so that then you can do damage with like products that actually matter or like more sustainable businesses versus these kind of like, you know, moment in time arbitrages. Yeah.
+
+I was, I tweeted the other day, actually. I was like, the people I want to hire are, if I'm building a consumer Internet thing, is like X game developers or game product people or game marketers or X affiliate marketers. Like, those are the people that understand game dynamics, mechanics, social mechanics, how to, how to build like, you know, game, game companies have very sophisticated marketing funnels and understand the flow very well.
+
+And the same with affiliate marketers, like those are the people that have been there, done that, that are, that are probably undervalued in the market. Yeah. And then you, you went on, you did a bunch of other things.
+
+You did an agency that was kind of like building websites for big, big brand, bigger brands. Yes. Then you did, by the way, we had James Altucher on the last one and he said he did the same thing basically.
+
+That was because kind of his first hit was like making American Express dot com or like whatever those websites. Well, yeah, after, after I, the affiliate marketing, I mean, no, no one's lower on the totem pole in terms of status and reputation than in domainers and affiliate marketers. So I was just like, how do I gain credibility?
+
+So got into the agency game and said, I would only work with the top clients, which is all status, all status, like 100% status. So did you have like status symbols? Do you have like dope car or anything like that?
+
+Did you do anything to play the status game? I mean, not, not, I mean, I feel like for us, like internet entrepreneurs, like that's not even like the status, like the status isn't dope cars or dope like houses. I feel like it's, you know, it's more about.
+
+Do you have a clubhouse invite or not? Yeah, exactly. That's what, you know, whatever is cool at the moment.
+
+So yeah, I ended up start, you know, doing this agency. It was called Stress Limit Design. And we ended up doing like high profile projects, like the TechCrunch redesign, which was like in 2010, which was like a big deal.
+
+And that spawned a lot of business. And then like, I think you had Andrew Wilkinson from Tiny on the show. We had a similar model where we took a percentage of our revenue and we built our own startups.
+
+And the startups is, was all really all around this idea around building mostly community. So like we built like start a vertical. So we did like startcooking.com, which was like at the time, the largest video cooking site on the internet.
+
+Things in the finance space, a company called Wall Street Survivor, which became the most popular financial education and stock market simulator on the internet. And just like, how do you look at a vertical and build something that they really want and then wrap around community? Yeah.
+
+So did that. And then I realized I wanted to go do something. I wanted to do the whole San Francisco kind of like, I was living in Montreal, Canada at the time.
+
+I'm like, I want to go do the whole, like, this is like post social network. Yeah. Right around then, probably when it came out of 2012, maybe.
+
+And what did you think was hot shit back then? Were you like reading certain blogs? Was it Twitter?
+
+Was it the social network, the movie? What was hot shit? Because I literally 2012 is when I moved to San Francisco too.
+
+And my journey was like, I was starting like a restaurant. I started, I was trying to start the Chipotle of sushi at the time, which ended up becoming this like cloud kitchen. And then somebody, you know, Monumentor gave me the book, The Lean Startup.
+
+And I was like, oh shit. Yes, we should test if there's demand before we pour everything into this and sign personal guarantees for this lease. And that led me to Paul Graham's essays.
+
+And I was like, oh, this guy, this Paul Graham guy, this is the shit. I don't know why his website looks like this, but this is amazing. And so then I started to like, you know, drink the Kool-Aid of Silicon Valley.
+
+And I was just, I picked up and moved from Australia just off of the Kool-Aid. I changed my phone number. I was like, here's a San Francisco phone number.
+
+That means I'm in, I'm committed. And then I moved. So what were you, what got you hooked?
+
+I mean, I'm, I'm like a product designer. So like for me, it was really, and I love social apps. And so for me, it was really like the Pat, like Pat, you know, that was like so cool back then, you know, Pat.
+
+Yeah. So yeah, for those of you who don't remember, it was like kind of a, you know, it was based on this idea around Dunbar's number, which is like a person only really has 150 relationships. So like, what if you designed a social network around 150 people, like private.
+
+And it was just super well designed and beautiful. And they invent, they kind of were like way ahead of their time. Like Danny Tran invented like reactions and stuff like that.
+
+Right. And I just like remember looking at a lot of like those people, like the dig guys, the stumble upon guys and just being like, I mean, you needed to be there. You needed to be there.
+
+And, and, and, you know, even if you took quick trips, it just didn't feel that there was something special going on in that era. So came down. You're speaking past tense.
+
+You still think that's, that's true or that's not true anymore? I mean, I think it's for me, I think like Bay area is like very much. Um, I mean, listen, it's a wonderful place, but I think for most people, it's very much like, I look at it like a college experience.
+
+Like if you're not from there, it's like you go there for six, eight, 10 years, you do your stint, build your network as much as possible. You build your network and then you bring it to wherever you're from or whatever major city that you live near, um, where do you live now? No, I live in New York city now.
+
+Okay. Nice. Yeah.
+
+Did you sell your place here or what? Yeah, it's gone. You know, Greg had this fat house here in San Francisco.
+
+It was awesome. It was a great, great little place. I mean, that was a crazy story.
+
+That was like a community. Like it wasn't even like it was my place, but like it was a community place. Like I, you know, we threw so many events there and it was, you came to some and, um, it was like a co-working space.
+
+If instead of working, you just partied there, it was like a co-partying space. It was wonderful. It was awesome.
+
+I do miss it. So yeah, I think like, you know, that's what drew me to San Francisco and I started something called five by, which basically took a look at all, you know, integrated with all the video popular, you know, apps like YouTube and, um, Vimeo and all these sort of sources. And we built like a beautiful curation layer on top of it so that when you press the funny button, you'd actually get videos that would make you laugh.
+
+Yep. And we sold that to stumble upon, which is Garrett Camp's company, which at the time was one of the largest social apps by referring traffic. So you ended up being within reach of being able to invest in Uber, right?
+
+Because you knew, you knew Garrett. And then do you remember the first time you heard that he was doing this Uber thing? Yeah.
+
+I mean, I don't remember exactly, but I remember when I met him, you know, Uber was, you know, it was a thing. It wasn't obviously what it is today, but you know, I definitely, I definitely wasn't like, Hey, like take my money. Right.
+
+Um, you know, I think, uh, but you know, I guess you live and you learn, you live and you learn. I have a friend who, uh, who, you know, Garrett pitched him and he was in New York. So this is, you know, one of the smartest guys I know.
+
+And, um, Garrett pitched him on the seed round of Uber and, and this is in, you know, in Manhattan. He was just like, Garrett, like, I don't know what you're thinking about, man. Like people aren't going to like press a button, like, and like a car is going to come.
+
+It's just, you know, you raise your hand. Look at me. I mean, he raises his hand, the car comes.
+
+Watch this. Watch this. Bam.
+
+You know, like it's about creating 10 X better product. This isn't 10 X quote unquote. Yeah, that's true.
+
+In New York, it actually wasn't right. It's just a whole bunch of other places. It was, right.
+
+It's like people without with crypto. They're like, Oh, watch this credit card. Boom.
+
+Paid for coffee. I'm done. You know, look at this bank.
+
+You know, don't need to worry about my money. It's like, well, yeah, but that's not the experience for most people in most of the world. And so maybe this doesn't solve your problem, but it's going to solve somebody's.
+
+Exactly. So we always sold that. Are you a crypto guy?
+
+Am I a crypto guy? I, um, I have some crypto. I, not enough crypto, but I have some crypto.
+
+I dabble. I mean, my whole thing is like, everyone should have two to 5% of their net worth in crypto as a hedge. Right.
+
+I calculated the other day. I think I'm at 9%. Um, cause I was like, am I going a little too crazy with this?
+
+But then I was like, no, no, no, it's okay. It's at 9%. That's, that's except that's in the acceptable range.
+
+I'm at 7.5%. So it also grows. Right.
+
+So as it grows, the thing is, are you going to sell off? No. Um, no.
+
+So yeah, not, not gonna, not gonna sell off. Um, we'll see if this ages well, this podcast. The other, yeah, exactly.
+
+The other thing is like pay to learn in a way, right? It's like, dude, I, okay, this is interesting. I need to get in the game.
+
+I need to get a little bit of skin in the game just to like be, be, um, you know, if not like sort of driving things in that, that space, but at least I'm in the passenger seat or the backseat or the trunk. Like, like I'm involved in the journey of where that's going by putting a little bit of skin in the game. So I highly recommend that too, because, uh, that's been my approach with a lot of things now is just, um, pay to learn.
+
+Right. Yeah. I think like for me, like I learned best when I'm just like pushed into the ground, just like push me into the arena.
+
+And like, listen, like I've, like I've lost a lot of opportunity and I've learned a lot of things. And you just have to assume that you're in it for the long, long game and like life is long hopefully, and that you have enough at, it's all about at bats, like getting at bat, trying different things, you know, build good relationships in the end, you'll be fine if you, if you learn and if you have a lot of at bats. All right.
+
+This episode is brought to you by super side. All right. So here's the deal.
+
+I'm incredibly impatient, like horribly, horribly impatient. And if I get an idea at midnight by 8am the next day, I want it done. Um, you know, but that's really hard because if something needs to be designed, where am I going to find a designer at midnight to try to make this thing, bring it to life?
+
+Um, so, you know, I don't think I'm alone. Other startups, even huge companies need design help fast, and they just don't have the internal resources or expertise to get it done. So how do you get reliable design done without dealing with expensive agencies and lots of freelancers?
+
+You use super side. That's our sponsor for this week. Just go to superside.com slash MFM and tell them what you want.
+
+They have a team of designers that can get it done fast. You know, they are 20 times faster than hiring a designer and 50% more affordable than a traditional agency. So if you need high quality design done fast, try super side, lots of fast growing teams that are stretched are using them already.
+
+Check them out. Superside.com slash MFM. I've used them before.
+
+I love them. Check it out. So we sold the business to stumble upon, um, ran it as an independent unit and sort of helped out some will upon as well.
+
+Um, left, grew that to like one of the fastest growing video discovery apps at the time, um, left, um, in 2015 ish, um, and started islands, which was based on this thesis around group chat as the new social network. And it was going to verticalize and that you'd have a place to talk with your workplace friends that became Slack, a place to talk with your gamer friends that became places like discord. And we focused on just the college market.
+
+So raised a couple million bucks on the idea and away we went. And then what's your story on how that ended up? So, um, the story is we sold the business to WeWork in May, 2019.
+
+Um, and I would have loved to have continued building it out. It, you know, it, it had amazing, it had a lot of really good metrics. Like the daily active users would send between 30 and 50 messages every single day.
+
+Weekly active users would open the app 47 times per week. Um, the average user would invite 2.1 people. It was a beautiful product.
+
+People loved it. Um, so it had like engagement. It had and retention was a 50% 45 day.
+
+So like that's too, you know, it's like pretty damn good for a social app above, above what you normally see. But like when I went out in the market to raise money, um, I wanted to raise a lot of money. And the reason I wanted to raise it is because we were seeing five to 25% penetration on every school we launched at within a couple of weeks.
+
+And we had all these metrics. So it was just like, Hey, give us money so we can scale this to every college in the United States. But at the time, um, this is around Facebook antitrust type stuff.
+
+Uh, Twitter wasn't really like, you know, innovating that much. Or they had a lot of like, um, kind of like health of the health of the product that they were doing. Snapchat, the stock was at $5 and 90 cents.
+
+Like social was kind of like, and, and house party was flat, you know, social was kind of like, no one wanted to look at it, you know? And I could have raised two, three, 4 million bucks to continue it. But like, I was kind of like, I'm very much, and you are too, like very much like a go big or go home.
+
+Yeah. And I just figured, yeah, let's find a good home for it. You went home.
+
+Okay. Gotcha. Um, all right.
+
+So tell me, tell me what's it got your interest now. Uh, so what are you doing day to day basis nowadays? So I am the head of product that we work, which is awesome.
+
+Interesting place to be. I'm a co-founder of a product studio called late checkout, which spun up the, you probably need a haircut idea. And among other ideas, um, which is kind of a reincarnation of what we had at stress limit.
+
+It's part agency, part, um, part product studio. Um, I've been an advisor for the last year and a half or two years for tick tock. Um, which has been amazing to see cause they've obviously grown tremendously.
+
+Um, and so I've been keeping busy. Yeah. Yeah.
+
+Okay. Nice. Um, so people, when they listen to this, what they like to hear about is they like to meet interesting people.
+
+So I think that's check. Uh, and then the second part is the people who are listening are either current entrepreneurs in the market doing something, or they're people who have a job or thinking about making the shift or their college student thinking about making the leap. Um, and, um, you know, one of the things that we do a lot of is we sort of, you know, uh, guess and check or sort of pontificate on, uh, you know, why doesn't somebody solve this problem?
+
+Or wouldn't it be cool if you did this or, Hey, that thing's working. What if you applied it in this other way? And so, uh, I'm curious, do you have, um, I don't know, do you have like in your phone, do you have like a notes app of like startup ideas, half big startup ideas?
+
+Yeah, I have probably, there's probably over a hundred ideas here. I thought what might be fun. Cause you mentioned that just before you're like, Oh, Hey, like give any ideas.
+
+I have a notes file. I can literally just like, yeah, let's do it. We can play, we can play a game where I just go like this and just spin the wheel.
+
+Yeah, let's do it. All right. Pulling it up.
+
+Okay. Some of them are like, you had a couple of glasses of wine. No, no, no.
+
+I understand. I understand. All right.
+
+Metamucil for millennials. Okay. What about Metamucil does what?
+
+It's rehydrating or it's like diarrhea or whatever? Fiber. Fiber.
+
+Fiber. Okay. So, um, I think the, the genesis of this one was, um, you know, I think I love subscription based businesses.
+
+I love businesses that are like repeatable. Right. Um, people who take Metamucil take it every day, mostly, um, to get their routine.
+
+Yeah. Kind of in check routine. Yeah.
+
+Uh, a lot of brands right now are just being kind of like rethought of with like, obviously as D to C with like kind of a nice brand. Like I don't connect with Metamucil. I'll tell you that.
+
+Not at all. Yes. You know, maybe it just, so it's like, that's like a no brainer.
+
+Yeah. I like that one. In fact, when I did, I did a podcast with the guy from, so who created Soylent and he was like, yeah, like, you know, part of the original thesis was kind of like the, um, you know, I forgot what the other shake is called.
+
+Ensure. Uh, it's like ensure for millennials. Um, and they don't, they don't market it that way, but they were thinking about it that way, uh, early on.
+
+And so Metamucil is another one. All right. I like it.
+
+I'll give that a solid nine out of 10. Actually, you came out hot with that one. All right.
+
+Spin again. Yes. Uh, second opinion.com when you need a second opinion on literally anything.
+
+Okay. These are experts giving you opinions or what? I don't know, man.
+
+Like being an adult is hard, right? And we have to deal with it. And sometimes we need relationship advice.
+
+Sometimes we need, I don't know how to fix something. Like, you know, what I've learned from you probably need a haircut actually is that people are actually open to getting help and they'll pay for it. Right.
+
+And so it's like, imagine you're having like a big fight with your girlfriend and you want to tell someone, but you want an unbiased opinion. You need a second opinion based on the text that you're going to say. Right.
+
+Second opinion.com here to help. Great domain. If you could get it.
+
+Um, okay. I like this. What, what vertical would be the best?
+
+That's kind of where this gets interesting to me. Cause like, where would you start? And you know, maybe you actually just end there because it's, it's, you specialize.
+
+Uh, but if, if nothing else, you start with one where people really want this or people really have this problem. So, so where could it, where could it be hot? So a good framework for thinking about like how to think about consumer, like internet products is like, what is the thing that's going to get a lot of media attention?
+
+Cause you want free customers and you also, yeah, you want free customers and also word of mouth is the best customer anyways. Um, so like what's something like, why don't you just reverse engineer? What would be a good PR story?
+
+Like, that's just one way to look at like MVP, right? It's like, what's the minimal viable press release or somebody was doing this like for dating profiles. Um, so which especially as Tinder got hot, that was the time where somebody was like, Oh my God, there's Tinder coaches.
+
+They'll tell, they'll give you a, you know, an objective opinion on your profile and how you're coming across and you pay for it. And that's like actually a thing. And that worked when that worked when there's like kind of the wave of internet, you know, Tinder itself was kind of newsworthy.
+
+And then you could piggyback off that in the way that you guys sort of piggybacked off of, you know, all the sort of quarantine woes with the, you probably need a haircut. So you'd probably want to find something that is people already talking about. And then you sort of, you offer the second opinion around that space.
+
+Exactly. So, you know, maybe, yeah. So one idea is like, maybe you start with like relationship, like relationship advice, um, because that's like evergreen that that's always.
+
+And, but then you've launched like the viral piece of it. Should I get a divorce.com? Or I was even thinking more on, like you have to answer the why now.
+
+And the why now is like a lot of like single people are like, should I go on a date with this person? Like an in-person date less than six feet, let's say, or should I make out with Johnny? And then you press the button and it's like, no, or something like that.
+
+Like, so I think like, that's where it comes down to like, yeah, like building little games, building little like nuanced things that like surprise people, delight people, people want to write about. Okay. I love it.
+
+Spin again. This is kind of like. I'm going to give that one a six and a half out of 10.
+
+Yeah. This is maybe even a three and a half out of 10, but like we're picking random ones here. Yeah.
+
+Text me a secret.com. And this is, I didn't do a full spin. So I guess it was related to second opinion.com, but like we all have secrets and a lot of the time we want to like talk about those.
+
+Get them off our chest. Get them off our chest. So this is a service that does that.
+
+Here's another one. I like that idea. So, so here's, here's what I'm imagining.
+
+Um, I get matched with someone and it tells me a little bit about them. 29 years old, male, San Francisco, rich. And then he basically, but I don't know more than that.
+
+And then they open up and you can open up or you can sort of roulette. We'll get to the next person. It's a secret network of telling secrets to each other.
+
+Yeah, man. And the business model is blackmail. It's genius.
+
+We'll make millions. We'll make millions. I'm doing the money burns, you know?
+
+Evil, evil hands. Uh, next idea, which is a bit more, uh, the, the opposite of this idea, more, you know, nice for the world is a wash and fold for low income families. So I, a lot of people, especially in New York city, but you know, everywhere in the world and cities spend a lot of time in laundromats.
+
+Mm-hmm. And if you're a working mom or working dad, like, you know, sitting for two, three hours at a laundromat is like, take, is a lot of unproductive time that you could either be spending with your children. Um, or you could be like doing a side hustle or whatever it is.
+
+Right. So like, how do you like do wash and fold and just take that out of the equation so that they can focus on, uh, what it is they want to be doing. And so this is just philanthropic.
+
+It's like, uh, uh, it will be taken care of for you. We're going to give back hours of productivity to the people who, people who need it. Yes, absolutely.
+
+Okay. All right. Here's another one.
+
+Um, Spotify, but for work in progress, it's called watercolors. So the whole idea here is, um, okay. Life is messy.
+
+And there's a reason why there's an eraser at the end of a, of a pencil. But like when you go on Spotify, it's all these like highly curated, like I've produced this piece of content for the last six years and this is, you know, here, here it is. Right.
+
+What if, what, what, what, what if artists can put like, just like little pieces of work that are like unfinished, um, and create almost like a SoundCloud type website or app. Um, and, and it's called, uh, yeah, what'd I call it? Watercolors.
+
+I don't know why I called it watercolors, but I, that's the idea. So for the unfinished thing, would it be like a dribble where it's like a shot? It's like, it's like 10 seconds of the song.
+
+It's not the whole thing raw. It's a snippet that you like. Yeah, it could be whatever, whatever the artist decides.
+
+So if the artist decides they want to do a like 10 second thing, great. This is like, here, check this riff. But I just think that there's a whole dimension of music that we're not exploring.
+
+And I also think that, um, it's just kind of like, I want to see more apps. I want to see more websites where it's fine to put unfinished work. I think that's a part of the creative process.
+
+Yeah. And I think that, um, it's a good message that we should be spreading. Yeah.
+
+And I think, uh, stories is an awesome format for unfinished things. Like just like stories got people to share little raw moments of their life. Cause they're like, look, it gets, it's gone after 24 hours.
+
+I feel like if you can make it ephemeral, uh, then more people, the question really is why don't people share more unfinished work? And then you wouldn't work backwards from that. Like, well, here's my objection.
+
+Here's my hesitation. Here's what I'm worried about. And then you could figure out product design that will solve those problems.
+
+Well, yeah, I think like to talk to, to speak to that, I think, you know, artists and I include myself as an artist because I'm a product designer is like, we don't, we, we like to show our best work. Right. So like putting unfinished work isn't quote unquote our best work.
+
+So I think like a part of this is like, you know, that's a big challenge with this one. But I think like educating the artist around, like, it's okay. Like you, it's cool.
+
+Like, and in fact, like if you're like an artist, hundreds of thousands of followers, or even like 20, like if you just have like a thousand really engaged people, like they want to interact. Like I, I, I know there's one artist, he has 2000 followers, but like he posts on stories, like little unfinished things. And I'm like, post more of this.
+
+Right. Yeah. I'm with you.
+
+I, we, I used to call it working in public and then somebody sent me this link. I think Jessica Livingston or somebody was calling it working with the garage door open. I don't know who, who I was reading, but they were saying like, imagine your startup, you know, you're starting in the garage, but what if you had the garage door rolled open and like, what are the sort of serendipitous benefits you could have of putting your work out there in public?
+
+Like, you know, you want one more, you want a couple more? Yes. Yes.
+
+I get, we can literally do this for hours. Um, this is just a concept. So like, I just wrote, you know, what are cool ideas that take something free and then you charge for them?
+
+Like, and then I put IG water, like water bottles. If you think of water bottles, like no one was charging for water until some, someone was like, Hey, wouldn't it be cool if like you can transport this water and like we would sell it and then we can have like a luxury brand and like you can have Evian and it's going to be from France. And then there's this whole new category, like new categories.
+
+Um, the founder of a gumroad tweeted the other day, he was just like, if you want to make $10 an hour, do you see that tweet? Um, no, you want to, you want to make like $10 an hour, like go work for some, someone you want to make a hundred dollars an hour, like charge companies or something like that. I'm butchering it here.
+
+But if you want to make a thousand dollars, like a thousand dollars an hour, the point is it was like, you want to make $10,000 an hour, create, create a new category and be like the leader of the new category. And I think like, I'm always interested in like new categories, like virtual, you know, barbershop new category. Like, yeah, it may not work, but it might work and if it works, it's going to work big Uber new kind of like, it's really just like a new on demand, like using technology to bring a car to you, like new category, like boom.
+
+Yeah, for sure. Um, so what, what's something that's free that could be, uh, it could be charged for. So for example, uh, water is a good example.
+
+You know, when you first said that my brain was like, oh, air, but actually air is also charged for air purifiers, uh, diffusers, things like that. Um, humidifiers. There's P there's ways that people have found a way to essentially charge for air in a way they're processing it, but they're doing it.
+
+Um, what else is free that could be charged for? So content. I mean, or, or put another way, like what are the things that we take for granted as human beings that we can charge for?
+
+And that opens up like a whole other set of products and services. And those are hard because those are blind spots, right? You have to actually think hard because they are just embedded in the world.
+
+You don't even realize that they're sticking out because they're, you take them for granted by definition. Absolutely. And that's why like I had, I was before we were chatting, I actually, someone called me and it was like, Greg, where do you, where do you see like the consumer internet going?
+
+And I was like, it's, this stuff comes out of nowhere. The stuff literally comes out of nowhere. There's like, you can look back in hindsight and be like, oh yeah, like we can connect the dots for these reasons.
+
+But I think like the dots are actually pretty messy to connect if we actually look at it. And I think like the best actually consumer businesses are kind of like somewhat random. They're somewhat random.
+
+It's based on like an entrepreneur just like being obsessed with like, like I, um, uh, Ben Rubin, for example, the founder of house party, he's an architect. He thinks of, you know, house party is, is these rooms sort of physical space, you know, digital references, representations of these physical spaces. The guy is like spent years being, you know, studying to be an architect and obsessing his like entire teenage years about like presence and what that means.
+
+So like, it's not because then in like 2016 or whatever, 2015, like live video was like important to why, you know, it was like, no, the guy's literally been like thinking about it forever. And he's like the expert in the world on it. Have you ever seen, there's this video of Evan Spiegel from Snapchat.
+
+He's in a kitchen and he's explaining Snapchat on like, um, you know, like a notebook, like just like a notepad of paper. And he's got like, you know, he flips it three times. And it's like, those are his slides essentially.
+
+Have you seen this video? I have. It's actually, everyone should watch that.
+
+Everyone should watch this video because it's, he's taking, when you go through that, it's he, like, I've never met him, but he's such a, like, you just realize that he's amazing because he's able to distill a really quote unquote complicated sort of, like, he just makes it so simple. And I think the beauty of it is like everyone on his team could look at that and like, oh yeah, then they, they repeat it to other people. Yeah.
+
+What's Snapchat? Oh, it's so hard to use. No, actually it's so simple.
+
+Right. Exactly. Yeah.
+
+The video, the video is amazing. Even like, I just remember one detail in it, uh, on the product design. He's like, yeah.
+
+So he explains first, you know, why, um, why, you know, it opens up to the camera so you could take a photo and it's meant to be, he's like, basically photos today are thought of as memories. You take a photo and you're stashing it away for essentially your, your, your keepsake. He's like, but we use photos for communication.
+
+Uh, we just think if you send somebody a photo, it's a great way to communicate, you know, what you're doing, how you're feeling. If you take a photo of your face, it's, you know, it's better than typing in many ways. He's like, first Snapchat is just using photos and videos for communication, not for memories.
+
+It's like, boom, insight one insight too. He's like, and then we created this thing called stories. And he's like, uh, for stories, you know what we wanted to do.
+
+He's like every social network is reverse chronological. So you open up your feed and you see sort of the latest thing first. He's like, but that's not how our brains are really wired.
+
+Um, you know, we communicate through story and that's what we remember. And so, um, you know, when you click on a Snapchat story, it starts from beginning, then it goes middle and end. And it sounds like obviously duh, but that was counterintuitive.
+
+Twitter was reverse chronological. Instagram was reverse chronological. Facebook was reverse chronological.
+
+Your email was reverse chronological and so that was the, um, you know, with stories, he's like, when we do it beginning, middle end, you can, uh, you know, your, your, when somebody clicks your thing, they're going to experience it the way you are wanting to tell that story. And, um, I was like, oh, okay, guy's a genius. Like that's what that is.
+
+It's, uh, taking complicated things, making them simple or taking things that seem simple on the surface and show and showing how much is actually below the surface, how much thought went into, uh, crafting that simple experience. Yeah. I think what I like about that is like, he starts with the key insight.
+
+Well, it's, you know, pictures worth a thousand words is one way of looking at it. So communicating through photos is a richer way of communicating through them through text or calling somebody. Right.
+
+And so great. And people do do this and that's sort of like the immediate hater is, well, I can just, I can go to iMessage and I can upload a photo and then I can hit send and I can send that to you and then sort of, so the first insight is, um, people use photos for memories. They should use it for, they, you know, it would, it's a really effective way to communicate.
+
+That's the insight. And then he changed the how, which was like, well, what if we reduce the friction to zero? So like, yeah, you could open up iMessage, click your friend's name, click the camera button, click the gallery button, find the photo, then hit send, and then they get it.
+
+And like, then they view it. Um, or you open up our app, the camera's already open. And you push, you know, you take the photo and then you send it to as many friends as you want one to many and like, boom, it was done.
+
+And so they changed the how lower the friction of getting people to do what they already wanted to do. Right. So I think it starts with the, it starts with the key insight.
+
+Next, it goes to like, what is who, what is the community that has a burning need for this? Like, instead of like a lot, you know, a mistake a lot of people make is they create software and then they find the community versus like finding the community and then building the software. Right.
+
+So like, you know, with this particular key insight, the way it relates to the community, I mean, Snapchat started off in high schools in Los Angeles at like preppy, preppy, preppy, preppy, you know, $50,000 a year high schools. And these people were sending, you know, their kids, they're sending like naked pictures or sending pictures of drugs or sending things that their parents don't want them to see or just like making, or just basically things that their parents don't want to see. So like, obviously, we should change one thing.
+
+The unique insight wasn't just that the user for communication. It's that when photos stick around forever, people, you know, it's so hesitant to share. It sucks.
+
+And so there's a whole bunch of things we want to share that we don't want to stick around forever. And so that ephemerality was the, was sort of the key mechanic. So second, second piece burning, you know, what is the burning need for the community?
+
+And then third, I think is like, okay, how, like, what is the, okay, now you, you want to build software. Now explain to me how that ladders up to one and two and why this is the most beautiful and the fastest. And, you know, and then if you have those three, like forget decks, forget like, business plans, like just show me one, two, and three.
+
+And if you show me one, two, and three, two, and three, like the market for, you know, when people looked at Uber initially, people were like on demand black cars, San Francisco, come on. Right. Such a small market.
+
+What are you talking about? And I know, I know people who did that. And it's like, yeah, like, but sometimes small markets, you can't always pick a really big market.
+
+Sometimes those small markets actually expand to be new categories in really big markets. So I think you've got to play the field. I think you've got to also, you've got to look at small.
+
+You've got to look at medium and look at large. And I don't think that if the market is small, you should be like, I can't do this. Right.
+
+And I guess if we're being honest with Snapchat, they didn't realize the high school was the community that they, that would need this the most, because I think what ended up happening was they had it, they built it while they're in school. Summer hit usage was pretty flat. They were thinking like, Oh, college kids will want to do this, which ended up being true.
+
+College kids did want to use it to send photos from parties and whatnot. Photos you don't want to stick around forever. And then somebody, you know, introduced it to their niece or something, something like that.
+
+And then basically in the school, I think they were using it was, am I right on iPads to send sort of in classroom iPads to send, you know, messages to each other across classrooms or whatever. And the teachers couldn't catch it basically because the message destroyed burn after reading essentially. Is that, do I have history correct?
+
+Yeah, that's it. That's it. And then with Uber, same thing where I think they also probably thought it was a small market because neither Garrett nor Travis ran the company initially, right?
+
+They hired a guy, you know, guy off Twitter wants to run this thing. Sure. Come on over.
+
+And he became a billionaire, you know? But like, I think if they knew what Uber becomes, they probably run it from day one themselves. I think they sort of observed over time, holy shit, there's a lot of pull here.
+
+And then this could go even further. And so, you know, it progressively stacked up from there. I agree.
+
+And I think like for the people listening, I think it's important to like when you're thinking about what do you want to spend your time doing? Think about like, what have you spent your time doing? Like, what have you spent your life doing?
+
+And why do you have like this unique advantage or these, you know, what are some key insights that you can have about the world that you could build stuff for? So what's the answer for you? I mean, I have a lot.
+
+I've had, you know, I think every person has had unique insights. Like, for example, like, or unique backgrounds. Like, my family used to own like store, you know, stores in Quebec for, I don't know, 100 years.
+
+And I grew up and because of that, like every Saturday, my mom would drop me off at the mall where my dad's store was. And I spent a lot of time in a mall, frankly, because that's my mom was there. My dad was there and my dad was working.
+
+So I kind of like walked around. I got to know the mall really well. And I learned I have a unique perspective on the world in terms of like commerce, in terms of like, what does the mall even represent as like a meeting point for people to like, you know, young people and old people.
+
+And why are they there? And like, what are the types of restaurants there? Why is there a restaurant?
+
+Why is the food court here? Like, why are things, you know, how are things merchandise? You know, I think one of the big reasons I became a product designer was because I saw that, you know, if you put like a product by like, I remember like, yeah, basically, like if you put products like near, you know, the lineup, like people will buy them.
+
+And I was like, wow, like the UI UX, you know, the interface user experience of the physical world is a real thing. And that just led me to digital. Right.
+
+Yeah, for sure. So I like that. Basically, there's one school of thought.
+
+And I think this is the Paul Graham school of thought. This is where I encrypt this idea from. But he basically says, if you want to invent the future, just live in the future and then invent what's missing.
+
+And it's not sort of this crazy thing. It's like back to this. There's some quote where it's like, if you want to paint the perfect painting, become perfect and then just paint.
+
+Right. But the idea is like if you already do something in your lifestyle that is unusual, that is sort of forward thinking in some way. Maybe you're somebody who doesn't own your house.
+
+You rent and you rent your car and you rent everything. Then the sharing economy is quite obvious to you. Right.
+
+If you go and do couch surfing and you think that's normal, Airbnb is a normal idea for you, even though it's abnormal to others. But to you, you're like, no, I live in this future where this is true. Right.
+
+I push button and my groceries appear. Not everybody does that today, but I live in that future where that exists. And I'm going to sort of enable that for more people.
+
+Right. And so one way of looking at it is what are things that are normal to you? It's normal to me to record something and have hundreds of thousands of people I've never met listen to me in their ear balls every morning while they commute to work.
+
+And they feel like they know me. That's a normal thing for me, but not for most. But like maybe there's something that I could sort of make that make that make my normal normal for others.
+
+So that's one way of thinking about it. And what you said is sort of the counter to that or the compliment to that, which is, you know, don't try to get interested in sort of new things to try to create a company. Look at what you're already interested in, the life you've already lived.
+
+And there's embedded insights and domain expertise and nuance that you understand because you live that way. And then think, how do I how do I start something that leverages those insights and that experience that I've already had? Yeah.
+
+And be mindful of the fact like, oh, hey, like, why am I so why do I love this? Like, why do I love spending time at the mall? Or like, why do I love looking at like how things are merchandise and stuff like that?
+
+And being like, wow, like, I. I have an eye for that. And let your imagination go wild and be like, oh, you know, it would be cool if you could do this, you know, like what if you could do that?
+
+And then then that's when you start like, oh, yeah, wouldn't it be cool if you can like create that something? And that's when a business is created to fill that void. And what are some of the most interesting either products or startups you've seen invested in?
+
+You've noticed existing things. What are some of the most interesting things that have caught your eye lately? So I'm trying to pull up my phone.
+
+There's an app. Have you I was playing with it today. It's called It's Me.
+
+Do you know It's Me? No. Is this the avatar app?
+
+Yes. OK, I think I had it before, but I forgot what it is. Yeah.
+
+So it started it recently started to kind of take off. But the way it works is you log in with Snapchat, pulls your emoji and you say your age if you want to meet with like girls or guys or both. And it chat roulette style, like you press a button that connects you to someone.
+
+It says a bit about like where they're from, who they are. And you see the avatar talk. So you're like you're you're talking, but you see yourself as an avatar.
+
+Yeah. And I think what I find, you know, like what is the key insight there? Is that like, man, like being, you know, for a lot of people, like being in a physical form, be it even on like a Zoom or FaceTime or, you know, literally physical is tough for people.
+
+And having that like wall is nice as like an icebreaker to eventually get you to meet in person, et cetera. I like that. Let me connect that to the last idea.
+
+So when I first started working in this kind of Twitch ecosystem, the live streaming ecosystem, I saw this one guy, his name's Manny. I think his handle's like the one Manny or something like that. And Manny, it streams on Twitch, but he's a dog.
+
+He's not actually a dog. He's a guy, but his avatar is a dog. And so he's one of the few Twitch people who their little webcam area is not themselves.
+
+It's a it's a dog that he uses this, you know, obscure app or it got, I think it might have got bought by now, but it's called FaceRig at the time. So FaceRig was this obscure app. You have to have a Windows machine.
+
+Go on Steam, download FaceRig, pay 20 bucks for FaceRig. Then you get the dog and the dog will mimic your head movements and your mouth movements while you're streaming. And so for him, he was like, oh, yeah, this is way more comfortable for me than putting my own real face out there as the like kind of the show.
+
+And so I saw that and then I tried it and I was like, wow, that really does make me feel way less anxious about kind of like performing if I if I just have this little, you know, goofy looking dog as me instead of me. And so that's another one where it's like, OK, today it took a lot of extra work to go find this app, download it, pay money, blah, blah, blah, set it up on a PC. But once you've experienced the magic at the end of that, you're like, OK, magic is here.
+
+Now can I make this way less friction? I've lived in the future. I saw what life was like.
+
+And now I'm going to bring that back to the present and make it accessible to more people. And it sounds like these guys were guys and gals were building this app might have done that. They might have made it way simpler for somebody to have that same experience.
+
+Yeah, absolutely. And it's simple. It's fast and magical.
+
+And I think what I like about it, I like about your story, actually, is that like that dude was like he was unique and he was like, yeah, I'm going to do this. I don't care what people think. Like, this is what I'm going to do.
+
+And he like pushed the envelope and did something weird. And it turns out like weird things are actually like head turners and like head turners are actually create word of mouth. And word of mouth actually creates audience and creates buzz and creates all these things.
+
+So like same with Snapchat, right? Like it's obvious now that like a message would disappear, a photo would disappear, a video would disappear. But at the time, like no one that didn't exist.
+
+It's a new concept. So like people like, you know, listeners like tap into that like uniqueness about yourself and don't be afraid to do it. Because who knows, you might be on the verge of a Snapchat or something like that.
+
+And people will doubt it. There's a reason my Snapchat handle is still SVP test because I was like this app ain't going nowhere, right? Like I don't have to worry about making a real handle here.
+
+I'll just do this test account because I just want to try this silly fad. And then, you know, this will be gone in a month. And of course, famous last words.
+
+Yep, absolutely. Let me give you let me give you an idea that's sort of like that. OK, so my friend Damien, he's the founder of a company called Doodil.
+
+Have you ever heard of this? I haven't. It's like a British based company, Doodil as in due diligence.
+
+So basically they surface private company information in a way that's I think the EU has different laws of what you need to disclose so he can provide like, you know, revenue information, employee information so you can get a lot more information about companies there. So he built this platform. It's like a fintech guy doing fintech things.
+
+It's a super, super valuable company. I think it might be a billion dollar company. And so anyways, he did that.
+
+And so the other day I see him on Facebook and he posts like, hey, you know, you know, I, you know, I've left and I was thinking about my next thing. So I come up with this new thing called Battelle. And I was like, oh shit, what's Battelle?
+
+Is this like some neobank is this, you know, what is this new fintech product? And he's like, it's not fintech. It's a remote sleep school for parents.
+
+And basically he's like, I met this woman and what she does is she teaches parents how to put their baby to sleep. And, you know, so they get a good night's sleep and the parents aren't up all night feeding every two hours and whatnot. And she doesn't use what's called the cry it out method, which is the normal way you do this, but it's like really hard on the parents to fight through and let their kid cry it out.
+
+She's like, she doesn't use the cry it out method. And she's a, you know, she's like the dog whisperer. It's amazing.
+
+I watched her work her magic on 200 families. And I thought, okay, I'm going to help this woman scale her, her, you know, magic to, you know, as many families as I can. And so he created this remote sleep school.
+
+It's basically cost a thousand bucks, but you're going to teach your kids going to get a good sleeping program. So it's like, you know, what's that worth to you? And like, I don't know if you know this, I had a kid eight months ago.
+
+So now I'm in that position. And so I was like, oh, dude, I'll beta test this now because, you know, I'm going on three hours of sleep right now. And damn, I would love if I could, you know, do this.
+
+And so I think that there's these fringe sort of weird things where it's like, would people really pay a thousand dollars for this woman to zoom call you and, and teach you how to put your kid to sleep? Like, you know, but I think that that's one of these products that is just weird enough, solves a real problem and like adds a lot of real value and is charging for something that normally this advice is just like a free mommy blog telling you, hey, try this. And instead it's like, no, here's a super high end version of that, but we're going to guarantee the result in a, in a better way than an average blog would do.
+
+What do you think of that idea? I think it's, I actually really like it. I think like, I'm a big believer in, you know, come for the tool, stay for the network.
+
+But like the way I look at it is like, come for the tool, stay for the vertical network where the vertical here would be parents. Yes. Like the fact that he's capturing such a high, like you're just in the, your beginning stages, my friend.
+
+And like, you're, you're about to buy a whole lot of products and services for your child and maybe even more children if you have. So like the fact that like, here's the thing, here's one thing I'll tell you. If, if they help you with this problem, you're definitely going to be, wow, that was amazing.
+
+My trust in them will be like 1000 points, you know? Right. So that's what it is.
+
+It's like, when you're looking at like building a vertical, something in a vertical, it's all about like, what is the trust quotient you can have with the vertical? And I like that this particular task will give you a lot of, a lot of, you know, a lot of cred for this business. And yeah, man, I think like, that's the other thing is like, it could, I could see it being like a million dollar a year business, but I can also somehow see it being a billion dollar business.
+
+And so it's worth a shot. Yeah. And you know, the math I think works where he has both options where it's like, you know, thousand people paying a thousand bucks a month or sorry, a thousand bucks for the program.
+
+That's a million bucks. And can he find a thousand parents to do this? I'm very confident just through Facebook ads.
+
+So I think he could bootstrap to a million dollars in revenue very quickly with sort of like 30, 40% margins on that and just pocket that. So I think very low tech, easy to start bootstrapable into the single digit millions. Let's call it between one and 9 million.
+
+Or what you said, which is like, cool. If he thinks about this bigger, like how do I, now that I have trust with these parents and I've solved one problem for them, the problem they had during their first seven months of their baby, how do I help them with their next phase and the next phase and the next phase and, you know, could go, could go bigger from there. So I like, I like having those options on the table where it starts with sort of those humble beginnings and it might just be a great cashflow business or goes for the sort of home run.
+
+Yeah, man. Tell them to keep going. I will.
+
+Well, I don't think you need, I don't think it is my, my encouragement to keep going. That's the best entrepreneurs don't need any advice or encouragement. It's true.
+
+I remember I invested in this, I invested in Lambda school and afterwards I was talking to my friend, we, we did it together and I was like, here's three reasons, you know, here's what I want out of this investment. Cause I was like, I don't know if this will make us money or not, but you know, I want to learn about like this idea of this trade school thing for education. I want to hang out with the founder, you know, monthly and be helping him solve problems.
+
+I think it'll be really interesting. And you know, lastly, you know, I hope we, we get a return on this. And he replied, he was like, Oh, all I care about is the return.
+
+Don't give a shit about the rest, but Hey, they each to their own. And on my end, I was like, and ironically, the return is going to be there. But for the first two, like Austin doesn't need my help.
+
+Doesn't ask for my help. You know, if I text him something, I'm actually just taking up his time. And it reminds me of kind of what an investor told me, which is the best companies don't need us.
+
+That's the reality of the value add services is that the best companies rarely need your help and the worst companies you can't save anyways. And so, you know, it's, there's some in the middle where you can help influence their trajectory, but this idea of investors really helping out or encouraging entrepreneurs or whatever else is sort of overblown. It's marketing.
+
+I totally agreed. I think, um, actually last week there was this founder. He's just like literally, he crushes it.
+
+Like for years, he's done 10% year over year growth and I started month over month growth. And I responded to his investor update, keep it up. And then he just responds right away.
+
+He's like, as if I'm wasn't going to keep it up, dot, dot, dot, dot. He came like, thanks bro. Yeah, yeah, exactly.
+
+I was like, that's amazing. I just took a picture of myself smiling and sent it back to him. That's so good.
+
+That's great. All right. We should wrap up.
+
+Kind of went over time, but, uh, yeah. Anything else? We do one last spin of the one last spin of the idea.
+
+Well, let's do it. Let's get one more. Then we're out of here.
+
+We'll do a quick one. Let's throw it. Let's do it.
+
+Notes. Boom. Okay.
+
+So this one is a quarantine-ish idea, but it could last beyond quarantine. It's an idea that basically, um, I called it chef's table. Um, and it's this idea that like, uh, I don't know if you saw Carbone, the restaurant in New York City, um, is not doing, they're just doing one meal per night and then it sells out.
+
+So it's kind of like a drop. Yep. Um, which builds a lot of buzz and demand and it sells out every night.
+
+Um, which is, uh, it's, it's, it's a drop for a restaurant, but, um, you, um, have a live stream with the chef telling you about like, if it comes with wine or, or the meal. It's like, this is how I did it. And it's more of an experience.
+
+And it's if you could probably instead drop it off of $3,000, we've made a sham. Does the anatomist now come down like, you know, you wouldn't have had her own chairman. It was funny, but...
+
+Is so cool that you would-� al- you know, pick these, these, you know, carrots myself and Hudson Valley. And here's explaining it. And I think like, that's what I miss most about sort of restaurants, I guess, is like the, the stories behind and the experience behind it, which you don't really get if you're just like frying up some eggs in the morning.
+
+For sure. Okay. So here's a twist on this idea.
+
+You're a high-end restaurant. Your business is gone right now. Um, like you're a Michelin star restaurant.
+
+What do you, what are you doing? You can't do anything. And so here's your, your pivot.
+
+You go live on Instagram before the drop. So you go live before and you're showing the prep. It's the, you know, you're in the chef's kitchen.
+
+They're talking about it. They're drinking wine there and you're seeing it being prepared. And people, I think like to see as the show chef's table has shown, people like to watch high-end food get made real skills, you know, that, that sort of thing, as long as you have a personality with it.
+
+And, um, and then basically by the end of the 20 minutes, um, the, the, the meal is ready for the drop. The drop goes live and it's, um, you know, it uses the new Facebook shop thing that came out yesterday. You'll push the button and it orders it basically.
+
+And it is like a hundred dollar meal. Um, and it's, you know, it's the stuff you don't find on Postmates or grub hub or whatever, which are all kind of like the bottom of the barrel. So you come in at the very top end of those and it's like the delivery experience is going to be, you know, the packaging is going to be amazing and whatnot, but you're going to get what you just saw on the IG live.
+
+And so you do these like a hundred or $150 drops, um, you know, for high-end stuff through the, through the delivery network. But you can go live before, uh, to build up that, that anticipation of QVC, but for high-end cooking. I like it.
+
+I think we kind of merged the ideas. That's why it's nice to have co-founders. Okay, great.
+
+I'll incorporate it and we'll, we'll get this off the ground. Um, sweet. All right, Greg, where should people find you?
+
+If they like your, your style, they want to hear more of you. If you want to hear more of me, check me out on Twitter. My name's at Greg Eisenberg, G-R-E-G-I-S-E-N-B-E-R-G.
+
+Check and just holler. Cool. We'll put it in the show notes too.
+
+All right. All right, Greg, I got to run, but this has been good. Good catching up.
+
+Yeah, you too. Take care. All right, man.
+
+See ya. Bye. Bye.

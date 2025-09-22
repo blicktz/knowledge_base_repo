@@ -1,0 +1,271 @@
+I always hate being the speaker in between a crowd and its alcohol. So I'll tell you what we're going to do. I'm going to make this fun, I'm going to make this short, and then we're going to go get some drinks.
+
+Sound good? Alright, so today I'd like to tell you the story of Goodreads. My wife and I started it as co-founders 10 years ago.
+
+I do the product and engineering, she does the editorial and PR and all kinds of stuff. And I'm just going to walk through some of the strategies of how we did this and some of my beliefs on how you grow and scale a company. So, if you're not familiar with Goodreads, we have 50 million registered members on the site.
+
+About 400 million monthly page views, which according to Quantcast makes us the top 60 US website. That means we have more traffic than Apple.com, Walmart.com, and MajorLeagueBaseball.com. And our audience is interestingly 70% female.
+
+So that roughly mirrors actually who buys and reads books. And I think of the larger social sites, only Pinterest probably has more female slant than we do. Alright, so I'm going to tell you guys my number one secret of success, and it was supposed to come in with an animation, but there it is.
+
+So whenever anybody asks me, you know, how did you do this? What was the number one thing that led to your success? My answer is always solve a problem.
+
+And I'm in a lot of product reviews at Goodreads. I get pitched a lot of business plans. And the first question I always ask anybody on creating something new is, what problem are you solving and for whom?
+
+And if they don't have a super, super crisp answer, it's a big red flag. And sometimes you even run into people who don't even have a problem. They just have a solution and they're looking for a problem.
+
+You know, variants of that are technological. I have this awesome AI technology or machine learning technology or image recognition technology and I'm trying to figure out how to make a business out of it. Or I'm an awesome sales dude from XYZ big company and I'm trying to figure out how to make a lot of page views for some company, because I know how to monetize the shit out of page views.
+
+So in my opinion, in my experience, that never works. What works is when you kind of start backwards from just obsessing over how can I solve a problem for someone. And the great thing about solving a problem is if you do solve a problem, you can make that the mission of your company.
+
+So at Goodreads, our mission is to help people find books, very simply, and share what they thought of those books. And that's really at the core of what they do. And this does at least two really good things for you.
+
+Number one, it really helps you build a real good culture for a company. You know, recruiting here in San Francisco Bay Area is very difficult, but we actually do decently well. We have 120 employees right across the bay in downtown San Francisco, because anyone who's attracted to this kind of problem and helping us solve this mission finds us.
+
+The second thing it does that's really powerful is it helps you focus. And I think all great, you know, most big successful companies, you find this phrase mission-driven. I'm even starting to see that phrase bubble up in a lot of VC meetings where VCs are talking about finding mission-driven founders.
+
+But the thing that's powerful it does is it helps you focus, but almost more importantly it helps you figure out where not to focus. You know, as you get one of these things that starts to grow, you suddenly have a hundred different opportunities in front of you. And saying no to all but a few of them is actually really, really difficult.
+
+So I love this quote from Warren Buffett, The difference between successful people and really successful people is really successful people say no to almost everything. It's very hard to do. So Goodreads, we were acquired by Amazon three years ago.
+
+It's a big exciting moment for me. And as part of that process, I met Jeff Bezos. And the very first thing he said to me, the first, literally first words out of his mouth were, We like mission-driven people.
+
+And I was kind of like, what? And I kind of expected like, hey Otis, nice to meet you. Or something like that.
+
+But he said, we like mission-driven people. You started Goodreads, you must be mission-driven. And I thought that was pretty powerful.
+
+In fact, Amazon's collected a whole cadre of mission-driven companies. But the biggest thing I think I've learned from Jeff is actually that he has the same secret I do. When you ask him, what is the top thing you've done right to grow Amazon?
+
+And by the way, I consider Jeff Bezos probably the number one CEO or one of the top anyways in the world right now. He has the same answer. You obsess over solving customers' problems.
+
+And you know, I've heard him say that directly. You can Google that. He's been quoting a saying that in the press.
+
+And I love this quote from him. If you're customer-focused, you're always waking up wondering, how can we make that customer say, wow? We don't just want to solve their problem.
+
+We want to do it in a way where they say, wow. I thought that was pretty powerful. All right.
+
+So let me tell you the story of how Goodreads came to be. So it was 2005, and I walked into a friend's apartment in San Francisco. And if you're a reader at all like me, well, A, you probably have one of these bookshelves in your house.
+
+One of these bookshelves where you've carefully curated all your favorite books that you've ever read. And B, if you walk into someone else's house and you see that bookshelf on display, you kind of go right for it. And it's fascinating, right?
+
+It tells you a lot about that person. And in this case, I was able to just literally sit there and grill my friend. Dude, what did you think about Infinite Jest?
+
+What did you think about Diamond Age? What did you think about The Girl Who Played Fire or Dune or Freakonomics? And I walked away with ten books that I was excited to read.
+
+And I thought, wow, that's pretty powerful. That information is actually gold. And in my day job at the time, I was a product manager and engineer at a company called Tickle.
+
+Tickle was an early social network and dating site. We actually used to compete with Sam Yegan, so that was fun to see him talk. So I said, wow, what if we could take all this awesome social networking stuff that I've learned how to do in my job and apply it to books?
+
+And we'd make a social network where everybody would put on their profile that bookshelf that I know is in their house. And not only that, but put what they thought of those books. If they did that, I could just browse the site instead of having to barge down their living room doors and grill them about the books.
+
+And I would never lack for a good book recommendation again. And, you know, I think it's worked. And so I kind of had an inkling when we did this that other people would have this problem and would find this valuable.
+
+And one of the first places we actually got a lot of traction where it turned out a lot of people did have that problem was in the early blogosphere. So this was the blogosphere of 2007. There was LiveJournal and Blogger.
+
+And what we found was there was this whole community of 70% women who were blogging their book reviews. And they had 10 friends on their blog roll, remember blog rolls, who were doing the same thing. And when they found Goodreads, they adopted us in droves because basically we did what they wanted but better.
+
+We helped them connect, you know, share their thoughts about books and connect to like-minded readers. Another good thing we did early on, and this is super important when you're just starting a company, is you've got to nail the product market fit for your power users. So the first thing we did, one of the first features we launched was groups.
+
+And the very first group I created was Goodreads Feedback. And this is a group where we just talk to our users about what's going on with the product. And we still use it today.
+
+It's got almost 20,000 people in the group. And I don't know if you can see this on the slide, but I've personally made over 4,000 comments in this group. And I haven't commented much in the last few years.
+
+My team mostly does it now. So most of this was in the early days. And I would literally spend an hour or two a day in this group.
+
+And my favorite moment was when I could just respond back to someone who mentioned a problem or a bug or something that they couldn't do and say, I fixed it, or here it is. But the key thing about this is if you nail the product market fit for your power users, those are the people who are going to say, this product is awesome, and spread the word. They become your influencers, your mavens.
+
+And by the way, they're the people who create all the content, at least for us. We're a long-tail content site, so they're the people writing all the reviews, creating all the discussion. So once we kind of nailed that first flywheel, that's what led us to start to grow to the people who just wanted to consume the content, which is fine.
+
+All right, so I have a theory about product development that I've developed over the years, which I think is pretty powerful, that I'd like to share with you guys. And my theory is when there's a problem that a lot of people have, you will find small numbers of people going out of their way to solve that problem using kind of manual or hacked together tools. And then the trick, of course, is can you productize what they're trying to do, make it easy for them to do with technology to really amplify, and then you can grow really fast.
+
+And I already showed you one example of that with the blogosphere. Those people were hacking together Blogger and WordPress to solve a problem, and then we made a better product, and they adopted us. But I find this to be a really powerful lens for the world.
+
+And now every time I'm evaluating a new idea, I try to think, where can I see people going out of their way to manually do this? We see it all the time on our own product, usually in our message boards, where people are using our message boards to try to hack them together to solve some problem. And you can pretty much point to every major company and see that they did the same thing.
+
+So before Craigslist was around, you know, the way to buy and sell goods in a neighborhood was literally through a community bulletin board, maybe a garage sale that you advertised around the neighborhood. It was very inefficient, and only a few people did that. And then Craigslist came around, and a lot more people did that.
+
+So I'll give you two examples of where we did that with Goodreads. Number one is, if you're an avid reader, there are amazing avid readers on Goodreads. I read a book or two a month.
+
+I don't know about you guys. I consider that pretty good. But there are people who read a book a week.
+
+There are people who read a book a day. And if you're one of these people, you know, you actually have trouble remembering what you've read. So we found that there were a lot of, in our early research, there were a lot of people who were literally creating spreadsheets on their computers of all the books they'd read and when they'd read them and what they thought.
+
+And then a corollary to that is the to-read list. You actually still find this today that, you know, it happens all the time. You're out at a conference, you're having lunch with a friend.
+
+They say, dude, you've got to read this book. It's amazing. Maybe you hear it on NPR.
+
+And most of us just kind of hope we remember that later. But small numbers of people will actually go and pull out a little notepad that they keep in their purse or a piece of paper in their wallet and write it down. I would be willing to bet one of you in this room actually has such a thing on you right now.
+
+Anyone? That's a lot more than I actually thought. So we productize both of these.
+
+These are screenshots of our mobile app, but our desktop app is great at this too. We make it super easy for you to catalog all the books you've read on Goodreads. You can slice and dice and sort it all kinds of different ways and have great metadata.
+
+And then you can keep your to-read list, which is really the kind of best feature about our mobile app, is now you can easily pull it out and record that book recommendation, where when you walk into the bookstore library you can pull it out and there's all the books you wanted to read. So these have become two of the big core use cases of Goodreads today. Another thing I believe in business, and this is a truism, is if you see something working, double down on it.
+
+And if you're building consumer-based internet product anyway, there's two ways to do that. Number one, you can make your product better. Keep listening to your users, keep making your product better, and you've got to have that strong base.
+
+And the second thing you can do is you can kind of tune your growth channels. And for us, we've always kind of focused 80% on making a great product, 20% on tuning our growth channels. That's obviously, you know, an average.
+
+So I'll walk you through some of the ways we tuned our growth channels. So first, if you solve a problem, Google will reward you. So back in the early days of Goodreads, I was very naive, and I hooked up Google Analytics for the first time.
+
+And I was like, well, that's weird. Google says it's giving me half my traffic from search, from SEO. And I kind of didn't believe it.
+
+I was like, it must be wrong. It must be buggy somehow. And then later I met a guy who had an SEO company, a company that ranks well with Google Sites.
+
+And he kind of was like, oh, yeah, you've got an SEO site. You should go learn about that. So then I did, and we got quite good at learning how to drive traffic to a long tail content site for SEO.
+
+And, you know, so, but my main point to you is we didn't go around thinking, oh, we'll get a lot of traffic from SEO. Like, it happened quite by accident. And then once we learned it, we did it, we kind of learned how to tune the Nevers.
+
+And the main inputs for tuning SEO are really, you know, work on your inbound links. So give people easy tools to share your product, because then they'll do that, and that'll put links out there in the wild. And the second way is have lots of great content.
+
+And that was the main thing for us. So we focused on how can we have as many reviews as we can across as many books as we can. Very simple.
+
+Second, we built some widgets for blogs. So when, back when we were going viral in that early blogosphere, we built some widgets for those guys to kind of just share, show off the books that they had been reading on the side of their blogs. And we still have these today.
+
+They're still effective. And that helped us go, you know, viral even faster amongst the blogosphere. And the other sort of smart thing we did was, you know, if you build one of these, it's basically just a line of JavaScript or Flash.
+
+It doesn't help you with SEO at all. So we added in like a little logo at the bottom that was just static HTML to get a link right to our homepage. So everybody who copied this link, this widget to their blog gave us some SEO juice to our homepage.
+
+Address book importers. Back in 2007 to 10, these things, man, these were the secret sauce. They really worked.
+
+Before you guys get excited, they don't really work anymore. But back then, they helped you go very viral. And, you know, if you kind of Google around hacker blogs, you can find this kind of stuff.
+
+But back then, this was really innovative stuff. And the reason they were so powerful was you could design these really tight viral loops. And what I mean by that was if you could get within 24 hours one user to invite one other friend, that's all we needed to have happen, then you have a viral factor of 1.0.
+
+And if you get just a hair above 1.0, you know, one becomes two, becomes three, becomes four, and it quickly grows astronomically. And 30 to 60 days later, your traffic does this. So these things were very innovative and required a lot of tuning.
+
+You basically had to have a growth team just fully focused on this stuff and focused on conversion rate through every piece of the flow. And half of it was copy. You know, what do you guys think would do better as a viral subject line?
+
+Let's compare books, A or B? Join my reading network. A?
+
+Raise your hand for A. Raise your hand for B. I think you guys are wrong.
+
+It was B. Join my reading network. 3x better than A.
+
+So like that kind of stuff. You would have never guessed unless you test. So once address book import has stopped working so well, we found another viral channel, which was the Facebook Open Graph.
+
+You might remember this. It launched in 2011 and Spotify was the poster child. Everything you listened to was streamed onto your Facebook profile.
+
+But there were 30 launch partners for the Open Graph and we were one of them. And here you can see a cool picture I snapped of Zuckerberg talking us at the F8 the year after that is a good example of a site using Open Graph. But these viral loops were very similar but different.
+
+So they were the same process. Within 24 hours you want one user to turn into two. But here we're using Facebook sharing.
+
+Sharing what I'm reading. Share my review. Share the book I just started as the way to drive the inbound links.
+
+And again you need a dedicated growth team to really grok this stuff and understand it. So 2007 to 2012 for us were a lot about this. 80% make the product better.
+
+20% tune our growth channels. You know we did a lot of great stuff on the product. We launched a recommendation engine which was very powerful.
+
+And book clubs and lists and our mobile apps. And what this did was give us a strong bat now which is a really geeky way for saying we had a lot of options. You know we were running the company break even to slightly profitable.
+
+We raised a series A that we didn't spend any of. And this gave us a lot of options when you have this kind of growth to kind of say we could raise more money. We could not raise more money.
+
+We could also you know this also kind of attracted the attention of acquirers. So that's as I said earlier what happened to us. So March 28th 2013 we announced that we were being acquired by Amazon.
+
+Got on the top of Tech Meme which I was proud of. And you know I'll tell you quickly how that came to be. But given that the theme of my talk is solve a problem it's probably no surprise that that came to be because we were focused on solving a problem.
+
+And the problem we wanted to solve was the basic flywheel of Goodreads. We wanted all users who read books to use Goodreads and find value in it. And we weren't quite getting that.
+
+We weren't getting everyone to remember when they put a book down to open up their Goodreads app and come say what they thought of it. So we needed to make it easier for people to do that. To share that.
+
+And then of course at the same time you had Amazon. Well first they took e-commerce digital. Buying physical books online.
+
+And then they launched the Kindle in 2007 which created this digital reading revolution. Which is the same year we launched ironically. And you know today in this public survey I found 40% of books are bought online.
+
+But in trade books I think it's much higher than that. So this created an opportunity for Kindle to say hey we could actually build a book. And then we built social stuff into our e-reading device.
+
+And we were saying hey we have all this great social community stuff. We'd like to bring into the e-reading experience. So when we got together with the Kindle folks it was like a glove.
+
+It was like they had the same idea we did. We wanted to do the same stuff. And we were both very excited for that.
+
+So it just made it not easy to say yes. But made it exciting. So I'll share with you my two secrets of acquisitions.
+
+Again I couldn't I was supposed to unveil those. But number one people price people strategy and price. So these are the three ingredients you've got to have to make an acquisition work.
+
+And I've been on both sides of acquisitions now. And I've seen some others up close. So people you've got to be super super excited with the people you're going to work with.
+
+In our case I think Amazon and the folks at Kindle are super super smart and passionate and innovative. And I like what they're up to. And the strategy is got to do like I said fit like a glove.
+
+Like you've got to be excited about the same stuff they're excited about. And that's really key. And then of course you have to come to a price that you both agree on.
+
+And if you have if you're missing any one of those three things that's where acquisitions go astray. And number two companies are bought not sold. In a hundred percent of the times I've witnessed this is true.
+
+It always starts with the acquiring company go going hey we have we have some problem we want to solve. We want some place we want to invest in. Should we build it or should we buy it?
+
+And then they run a search and see how cheap they can buy something. So my message to you is if you're thinking about selling your company don't go around trying to sell it. Because that's not how it happens.
+
+Instead go around trying to solve a problem. And if you happen to find a big company who's trying to solve the same problem. And you like the people and you can agree on a price.
+
+That's where it might happen. So it's pretty exciting to me say that we're now a couple years in the world. Now a couple years into that big vision that we joined Amazon to build.
+
+We've now got good reason integration and an app on the e-ink reading devices and on the Kindle Fire tablets. But we're really only about one percent just scratching the surface into the big vision for what I think you know the future of reading. The future of digital reading can go.
+
+And it's pretty exciting to be not only a part of that but helping innovate on it. So in conclusion my tenets for building a company. You know as I said in the beginning you've got to start with solving a problem.
+
+A hundred percent of the successful companies I've seen and you saw a bunch of them today where the founders said we were just passionate about solving some problem. We weren't trying to make a billion dollar company or anything like that. And then you've got to listen to your customers and keep solving their problems.
+
+You know we had the feedback group. I used to spend an hour a day doing customer service emails. We still have a program where all our people do customer service for a day once a year.
+
+Super, super powerful to listen to your users. And then number two, if you're really solving a problem look for how people are going out of their way to solve that and see if you can productize it. Pretty much every feature we've built on Goodreads I could point to an example where that has been true.
+
+And number three, be mission driven. Keeps you focused, makes it easy to say no to stuff and helps you track the right people and build the right culture. So, that's what I got.
+
+Thank you very much. Time for a couple questions. Hi Otis, my name is Martin.
+
+I'm a big Goodreads fan from Argentina. And I wanted to ask you if you think it would make sense to apply the Goodreads model for discovering content, in this case books, for a different medium. Like podcasts.
+
+What would you do similarly? What would you do differently? I would love to get your take on it.
+
+Thank you. A good question. I think we get asked about once a week if someone can build Goodreads for movies or some other similar sounding genre.
+
+So, there's definitely an idea there. Yeah, I think a lot of what we have done can be applied to other genres. You know, we kind of do an interesting mixture of the best way to find books is through your friends.
+
+So, we're a social network. But it actually turns out your friends kind of suck at helping you recommend books. Like usually you're interested in other kinds of books than what your close friends tend to be reading.
+
+So, the best way to then do it is find like-minded readers. So, you know, just building the community where people can find like-minded people to them and see what they're reading. That really works.
+
+And then number three, we leverage the kind of the big data. We leverage the wisdom of the crowds. And that we've built like a world-class recommendation engine with a bunch of machine learning stuff to do that.
+
+But it's essentially just looking and, you know, like recommendations by books tends to work really well behaviorally. So, if you're really into World War II books and you've read five, we could look through our database and say, who are the other people who've read those same five tagged as World War II? What else have they read?
+
+Find three others and you'll probably like those. Find three others. So, that kind of pattern matching and behavioral data tends to work really well.
+
+So, I think all those, all three of those things, friends, community, and kind of looking for patterns amongst those first two things with machine learning can be applied to a lot of genres. Hope that answered the question. Thank you for speaking with us today.
+
+My name's Matt and I'm a voracious reader. I've always won a read-a-thon where I got to, you know, meet the Oakland A's. I've been, I still read, you know, every day I've got my Kindle in my bag.
+
+But I lurk on your site. And I do it because books are really personal to me. And I just, I haven't quite felt the trust with social networks that I want to expose what I'm reading.
+
+Even though I will happily talk to anyone about a book. So, at a time when, I'm sure lots of people are dealing with sort of long tail business models where they have lots of lurkers. But also, there's increasing issues with like data privacy.
+
+And potentially, especially outside of this country, but who knows, with authoritarian governments and, you know, banning books, subpoenaing librarians. How do you treat user privacy in this context? And also, maybe you could give some tips for people who have problems with lurkers just viewing their site but not contributing content.
+
+Thanks. Sure. So, first I'd say lurking is a feature, not a bug.
+
+It's actually part of our business model. Like I said, 90% of our content is written by 10% of our people. And that's by design.
+
+So, most people can just use Goodreads to read reviews, read discussions, find lists that have been created by other people. And they don't, we don't need them to contribute. We've got a lot of content already.
+
+And that's fine. For those who do want to contribute content but maybe only see, have a limited number of people see it, we do offer the ability to make a private profile. Where then only your friends could see your profile and only your friends could see your friends.
+
+But we don't have the ability for you to make, have private book reviews. So, if you write a book review, it would go on the book page like all others. But if anyone clicked on your profile, it would say private profile.
+
+It is a feature request on our backlog to address that. But in the world of all the exciting things we have to do, we're not there yet. So, thank you.
+
+With governments, I mean, have you had any conflicts where people have wanted to see everyone who's, I don't know, downloaded the Communist Manifesto or anything like that? You would think so. But no, I have never gotten that request or had any issue there.
+
+We have been blocked in China for most of our existence, so. Thanks. Hi, Otis.
+
+My name is Talia. And I think that one of the beauties of book clubs and walking into someone's apartment and looking at their bookshelves is how personal it is and the sense of community that it offers. So, I was wondering if you could tell me how you've been able to effectively foster that same sense of community on a digital platform.
+
+You know, I think the powerful thing about the internet in general is if there's ten other people in the world who are into some really weird and arcane thing that you're into, you can find them. And that's kind of what we found to be true at Goodreads. If there's ten other people that are into reading 1960s ballet books, like my wife is, she found those people on Goodreads and found some other cool ballet books.
+
+And so, I think that's a lot of what you see the community doing on Goodreads. It's just kind of finding these like-minded readers. And sometimes it's in really rare and niche areas.
+
+And other times it's in really big areas. So, you know, one of my favorite book clubs on Goodreads is called Sword and Laser, run by Veronica Belmont. And it's got 20,000 people in it and they read a sci-fi book and a fantasy book every month.
+
+And then people come on and discuss it. And it feels kind of fun to be part of a community. Right now they're reading Aurora by Kim Stanley Robinson.
+
+I recommend everyone check it out. All right, that's it. Thank you so much.
+
+Thank you guys. All right, we did it. All right, we did it.

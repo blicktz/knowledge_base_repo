@@ -1,0 +1,81 @@
+Jessica McKellar Reviewer Good evening. Hi. My name is Jessica McKellar.
+
+I am a CTO... I'm sorry, I'm a founder and the CTO of Pilot.com, which is a bookkeeping firm that is powered by software. This is my third company, so I should probably consider myself an entrepreneur, but that's not actually how I think about myself.
+
+I think about myself as an activist who happens to be one. And my story tonight is about how I came to think about myself in that way. So to do this, I want to introduce you to two people in my life.
+
+The first person I want to introduce you to is Sam. I've never met Sam. Sam is a person I know on the Internet, and Sam emailed me one day because he had questions about how to think about how to learn to program.
+
+He was emailing me because I've produced a bunch of open-source intro to programming material that lives online. And so he emailed me, and he was asking for some tips and tricks. And I read his email, and I replied to those questions, but in reading his email, it seemed to me like there might be a question behind the questions that he was asking.
+
+And in my reply to Sam, I asked him why he wants to learn how to program. I'm going to read you his response. Because I get emails like this pretty frequently, and they have a pretty powerful impact on how I think about the world.
+
+Sam says, thanks for the response. I'm actually in Stevenville, Texas, I guess not far from Austin, but if you compare the two, it's a pretty big difference. It's a college town, but if your first vehicle isn't a tractor, you don't really fit in.
+
+Why do you ask? I've been learning to program, but it comes and goes. It's a problem of studying or procrastination, but I've been better lately.
+
+I'm currently doing phone tech support for a less-than-usual rate per hour, and they'll pile on tons more things, but the idea of the smallest raise is a huge fucking inconvenience to them. If raises occur, it's only in dreams, and even then, unlikely. I get yelled at all day, and I don't make enough.
+
+It's the American dream. I think maybe you're starting to see where I'm coming from. I'm just very unhappy with my current life and job, and it's stagnant, and I only make enough to still be behind.
+
+I can't learn or improve. It's only the exact same shit day in and day out. I want something where my skills are actually appreciated, maybe compensated above the minimum for once in my life.
+
+I've been on the other side of this fence for too long, and I just feel like giving up. This is my second email from Sam. Sam, we're just getting to know each other.
+
+It's going to take a little while to unpack this. But Sam and I have kept corresponding, and I'm helping him think about some programming projects, and Sam has multiple things going on in his life, but at the end of the day, Sam is a guy from a small town in Texas who just wants to live a life that is meaningful and valued. So Sam is the first person I wanted to introduce you to.
+
+The second person's name is Shaw. And Shaw is a smart and charismatic leader who cares deeply about the idea of entrepreneurship. He sees that as a way to be creative and to build things that can make people's lives better.
+
+He also sees it as a way to redistribute wealth, and he also sees it as a way to create opportunities for yourself if you're in an environment where you might not have very many. Shaw is also currently incarcerated at San Quentin State Prison. He's been there for 17 years, and he's serving time for assault with a firearm, and he's got quite a ways to go.
+
+Shaw committed a serious crime, and he's paid dearly for it, but he's also transformed his life over the past 17 years and has, frankly, probably worked harder than I will ever have to do on anything in my life to demonstrate to society that he is worth a second chance. Shaw is also a guy who wants to be able to build something meaningful and valued. And so to explain why I'm connected to Sam and to Shaw, I actually need to take us backwards in time a little bit.
+
+I need to take us back to when I lived in Boston, and I was bright-eyed and bushy-tailed and fresh out of school, and I was working as a software engineer at a company founded by some friends of mine out of MIT. So I had my work stuff, doing my thing, and one day a friend of mine named Ashish came up to me and said, hey, Jessica, I have a project for us. Okay, Ashish, what's up?
+
+I've noticed that there are no women in the Boston Python user group, and you know Python, I know Python. What if we made it like a project to get more women into this user group? Because it's a really good group.
+
+Like, the people are good, the content is good. Why is it only dudes? Okay, this sounds like an interesting project.
+
+Yeah, let's do it. And we brainstormed on ways to tackle this problem. We drew inspiration from some outreach initiatives that were happening out west, and we devised this intro to programming in Python curriculum that we taught as a series of weekend workshops.
+
+And initially we were really bad at it because we hadn't written, like we hadn't taught before, we hadn't developed curricula before, but we learned a lot through each iteration of this introductory workshop. And it started working. We started advertising these workshops, and they developed a reputation for being pretty good, and in particular for being a really welcoming and accessible place for new programmers.
+
+And so these workshops kept running, and they started filling up really quickly. And actually this had a transformative effect on the user group. The user group actually ended up quadrupling in size to becoming the largest Python user group in the world, in large part due to these outreach efforts, and the people directly impacted by these efforts, but also the signaling that it provided more broadly in the community that this was a place that cared about diversity and inclusion, and was welcoming to people of diverse backgrounds.
+
+And so we were running these workshops, and we'd been running them for about a year. And then a really important thing happened. At a user group event, this woman named Risa, who had gone through, she'd actually gone through the intro workshop twice.
+
+She came up to me and she wanted to tell me something. Risa had been out of the workforce for a while. She'd been focusing on raising her daughter.
+
+And she had decided that she wanted to get back into things, and in particular she wanted to be a software engineer. But she had no prior programming experience. And so she had gone through these intro workshops, and she had worked very hard in a very focused way to prepare herself to apply for software jobs.
+
+And so she came up to me at one of these user group events to say that she'd finally done it. So six months beforehand she had not known how to program, and she went through these intro workshops, and she wanted to tell me that this was really the kick in the pants that she needed to really focus on this. And she had worked very hard, and she had landed a job as a software engineer, and she was starting in a couple of weeks.
+
+And that was really exciting to me, because that wasn't... I hadn't intended to build up a system that might potentially change someone's life in quite that way, and the fact that it was having this unintended consequence was really powerful to me. And I was thinking about this in the car on the way home, and I was thinking, it's cool that we run these intro to programming workshops, it's cool that Rese got a job.
+
+Wait, what problem are we solving again? Wait, why aren't there any women in this user group? Actually, like, do I actually understand why that's happening?
+
+Also, actually, why aren't there any people of color in this user group? Actually, remind me again who has, like, the opportunity to take programming classes? And actually, who has access to a computer at home, so they might even be able to experiment with this stuff?
+
+Oh, shit, this isn't actually about Python. And you start realizing that the disparities that you see, in, like, this tiny little idea, like this idea of an open source user group, the disparities that you see, who is there and who isn't, are a reflection of some very fundamental disparities in society that we've collectively created around education and access and representation and stereotypes. At this point, my 22-year-old mind is, like, open.
+
+Because when you start doing this root cause analysis on why there are no women in a programming user group, you realize that while you can implement the tactical fix of running a programming workshop, if you want to actually solve this problem, you have to reach back to these really fundamental societal inequalities and address those. And at that point, congratulations, you're an activist, and you can't really turn back. So at that point, my commitment to this work really grew.
+
+I became a director for the Python Software Foundation, which is a nonprofit behind the language. I produced a bunch of material, programming material, that I made freely available online so people could learn from it. I joined the staff of PyCon, which is a large open source conference to work on inclusion and representation.
+
+And concurrent with that, I had my work life, where I was busy building companies and building teams. And then I started paying attention to these bigger picture issues in a more intentional way. I started caring about voting rights.
+
+I bought an American flag cat suit and started running polling stations during elections. I started paying attention to criminal justice reform, and in particular, investing money and time in initiatives, bringing the stories of people who are incarcerated to the public, because I believe that empathy around that will be a prerequisite to reform. And I'm definitely out of time.
+
+That's too bad. And at some point in that process, I had the single most important realization that I've had as an adult human being, which is that the work that I do inside of work and the work that I do outside of work are actually the same thing. And the work is always about building a diverse and inclusive community that is doing the right thing.
+
+And this realization is important. This realization is important because it reframed how I think about what my job is. Because my job today is only peripherally to be the CTO of a tech company.
+
+This company is one of a constellation of opportunities in my life to connect people and do the hard work of pushing the communities I'm in to a more just place. So this is why half of the people that I work with in my company are people that I met doing open source community building. And why my engineering team is 50% women.
+
+That's why the people from work are also the people building job training programs for incarcerated people with the California Department of Corrections. That's how I ended up in a room with Shaw and 15 other lifers at San Quentin State Prison talking about technology in the criminal justice system as part of a journalism class at the institution, which is how I met Shaw. That's how I'm working...this is a true story.
+
+I'm working with guys who graduated from that job training program at San Quentin that was built by my coworkers to submit talks to PyCon, which is this programming conference that I've been running diversity and inclusion initiatives for for the past five years. When I say it's all connected, it's really all connected. And this is why I always answer emails from people like Sam, who's just a guy from a small town in Texas, who wants to have a chance to live a life that's meaningful.
+
+And that's why Shaw knows that if he ever gets out, he always has a job with me. So this stuff is all connected. And I am so grateful to have had the opportunity to experience these open source things early and realize this orientation for my life because it's had a profound impact on who I am as a person, as well as as a manager and as a leader.
+
+And that's how I became an activist who happens to be an entrepreneur. Thank you.

@@ -1,0 +1,579 @@
+You said earlier, you said, I wanted to make a certain amount of money by age 30. What was your number? What was your target?
+
+On the lower end, it was $7 million. I had built out my spreadsheet model and assumed a certain rate of interest and basically said, if I make a certain amount of money, this is an annuity that will be good enough for my entire life, assuming I don't need capital to do anything. Just if it's time, like I'm riding or something.
+
+Then if I do something in the world, I had mapped out something like 150-300 million as a basis that would get me started on that path. We're officially live. So Brian, I've been messaging you for like six or eight months now.
+
+But basically, I'll give a very brief background and you can tell us a little bit more because inevitably, I'll miss something. But you started a bunch of stuff. The biggest thing is Braintree.
+
+I think you bootstrapped that, right? I did. So you bootstrapped that, sold it for something like $800 million to PayPal.
+
+You guys also bought Venmo, which I think is the greatest acquisition, one of the best acquisitions of all time because you bought it for nothing compared to what it is now. And then you've done a bunch of other things. You've done Kernel, which is interesting.
+
+But you have this fund that's interesting. But the thing that I started reading was your new thing called Blueprint, which I'm an idiot. And so the stupid way of describing it is you have your biological age and then you have your chronological age.
+
+Your chronological age is just how many years old you are. And then you have your biological, which measures a bunch of different things like your organs, your blood. And you're basically trying to reverse your biological age faster than the chronological age goes up, which inevitably means you live forever.
+
+I mean, is that basically it? And you're blogging and sharing everything along the way. Is that right?
+
+Great job. So there. Brian, what is your chronological age and what is your current biological age?
+
+I left my mother's womb 45 years ago. And biologically, I'm a few hundred different ages. And so you, for example, if you're looking at the age of your heart, you can characterize the age of the heart through a few dozen markers.
+
+You can do the same thing with other parts of the body. And so you're actually a collection of some very large number of markers because different parts of the body age at different speeds. And then your life choices and environment also affects that.
+
+So I want to ask you all about this blueprint thing because I think it's amazing. But can I ask you a few questions about Braintree first? Please.
+
+So Braintree, I mean, you guys are owned by PayPal now. Another competitor of yours, I think, is Stripe, which is... These are high-tech companies, pretty complicated things.
+
+How on earth do you bootstrap a business like that? I mean, I think by year three or year four, you're doing like eight or 9 million in revenue. I mean, you guys took off.
+
+So I understand how you were able to bootstrap it once you got to maybe 10 million in revenue. But how on earth do you make something like that from scratch? I guess it started when I was 21.
+
+I decided that I wanted to try to do something meaningful for humanity. I grew up reading a whole bunch of biographies about people who had done things, their time and place. And I admired people who tried to identify the thing on the horizon that was barely reachable during their lifetimes, and they went after it.
+
+And at the age of 21, I didn't know what that was, and I didn't know how I could do it. And so I thought, you know, given my options that I might as well, I'll become an entrepreneur, I'll make a whole bunch of money by the age 30. And then at that point, I'll try to go after something.
+
+And so it was a naive contemplation of how to go about doing things. I'd grown up in a small town, basically, you know, with my grandpa on a farm. I didn't meet my, I didn't meet an engineer until I was 21 or 22 years old.
+
+It was very much a farm boy like, raised in a deeply religious community. And so I did a bunch of startups, and I just accidentally fell into payments. Because I was building a startup, I was struggling to pay my bills, I had a child at the time, and I would do anything for money, I applied for 60 jobs, nobody even contemplated hiring me.
+
+And so I found this job to sell credit card processing services door to door. And so I agreed to do it. And it was 100% commission, and I became the company's number one salesperson in a matter of months doing it part time while building my startup.
+
+And so I just accidentally stumbled into payments and learned there was this big opportunity, PayPal had grown up during the internet, but they had stopped really innovating for a couple years. And so developers didn't have the tools they liked. And so I started Braintree.
+
+And we landed a big deal early on with OpenTable, they were accepting credit cards as a form of to increase the likelihood the person would show up for the reservation, but they didn't want to store the credit card data because they had compliance issues. And so we built out a custom solution for them that allowed us to store credit card data on our side instead of them. So they didn't have the compliance, but still accept credit cards.
+
+And so from scratch, we built this payment system, first for them, then we expanded out to more general merchants. And we got a few customers like Airbnb, GitHub, Uber, we helped Uber do their the payment experience where you get in the car, you arrive at your destination, you leave the car, no exchange of payment information, no signing of receipts, no printing out receipts. We started doing a few things like that.
+
+And we really made our headway into high tech companies going very quickly, they prefer to use our software. You just said a bunch of things that were all super interesting. First of all, you're kind of like Elon Musk without the fame.
+
+You had your kind of payments, he had x.com and PayPal, you had your payments thing. Now you're doing like a brain interface and stuff like that. You do these moonshot projects trying to live forever, that sort of stuff.
+
+So I think you're fascinating, dude, you said something about door to door sales. And on the pod, we've talked about this before, which is that, you know, our producer who's not here today, because having a baby, you know, he's Mormon, and he did his mission. And we talked about, you know, what that's like, we've talked about, you know, Cutco and some of these like, you know, door to door textbook companies where it really breeds this like, amazing entrepreneur, because you have to learn sales, you have to be able to work hard face rejection all the time, you know, that sort of thing.
+
+And it's like this, right of passage, I think if you come out the other side of that, you were successful at door to door sales, I would bet on you with any role in my company, if you're successful at door to door sales. But I've never done it. So I'm just talking out my ass here.
+
+Is that accurate in your view? And how, you know, I guess, how do you think about door to door sales? And how did you become the number one, when you don't seem like the most, you know, charismatic guy?
+
+I mean, I don't know if you had the kind of the same haircut back then. But like, I don't know, I don't know. I mean, it's I guess the one thought on this, you know, my, my kids are 1917 and 13.
+
+And they're currently going through these important life decisions on what they study in school and what they tried to do. I'm doing everything I can to help them focus on CS, math and physics. These are the tools that you these are the language that you want to be fluent in, to be architects of the future.
+
+And in many ways, my choice of doing the door to door sales was just a, it was my hacker attempt at paying the bills with the child, while I buy time before I start something new. And it was out of desperation, it was like, I was seeking it out. And so it was just a, and that's also the case, just dealing with the reality of my skills, I had grown up in this farm, like community people that just didn't have any engineering background.
+
+And so the, the thing that I enjoyed the most about the sales was, it's not doing high pressure sales tactics, and it's not trying to manipulate somebody, it's not trying to perfect the skill. It's about getting in and figuring out the system, like what is really going on. And if you, if you jump into the world of payments in the year 2007, when I started this, it was defined by deep distrust.
+
+That it was a game where credit card payments is really expensive. And when a, when a business owner gets their credit card monthly invoice, it's so complicated, they have no idea what's going on. And the providers make it even more complicated in how they report things.
+
+And so it creates this opportunity for people to be extremely deceptive and create high commissions. And so in looking at that system, opportunity number one, be honest, be transparent, be honest and be trustworthy. And then number two is because there was so much skepticism on this, businesses didn't know how to differentiate, why should I do this work with this company versus that company, when in reality, most companies were mostly the same, there was very hard to differentiate in payments.
+
+And so two is making that known. So again, the customer has a very clear understanding. And then three is just being reliable and, and competent, like that, you know, that when the customer tracks with you and your team, they say, what an amazing experience.
+
+And so it was once you figure out how the system worked, it was very easy to solve. And so I would just walk in. And like, the moment you walk into store, they can tell you're not a customer by the way you're dressed, and maybe the way you're walking, whatever, and they immediately hate you.
+
+And so you have to overcome this animosity from the get go. And so I would take out $100 bill, and I'd say, I will, I will give you this, for one minute of your time. And if you say no to me, you can keep it.
+
+And I think, all right, whatever, this sounds fun, what do you got? And I would just walk them through these basic principles, like, here's what's going on, here's what they're doing. I'm really no different than anyone else, you're just going to find something clean and transparent and reliable with me.
+
+And most people would be like, okay, I just like, I just want it to be done. Like, I don't want to deal with any more deception. I don't want to have to change again.
+
+I don't want these machine leases. And so it was it was really just again, it's system deconstruction and reconfiguration. And it was the skill set that I tried to build again and again, through every business I built, walking into a new world, and trying to figure out what is really going on, and then how to deconstruct it and then maneuver within it.
+
+Was the early product just like an agency where you were getting your friends to help install these credit card processors? Or what was that early V1 or Braintree? Because you said you're not an engineer.
+
+What did that look like? Because this is pretty complicated stuff, it seems. The first product was for OpenTable.
+
+It was just allowing someone to make a reservation, put in their credit card number and have it stored. So to the user, it appeared as if I was entering my credit card information in the OpenTable system, when in fact, they're entering it into our system behind the scenes. And so...
+
+Who built it? I had a team of engineers, of software engineers do it. And how'd you fund that?
+
+I had made enough money from selling this stuff door to door that I could bootstrap it and hire them. How much did you make roughly? Did you do it for like a year or something like that to cover the bills and all that, say, create a stash?
+
+11 months. And I remember at the 11 month mark, my portfolio of customers were generating, I think it was like 59,000 a month of revenue. And I thought that's interesting, right?
+
+Like, I mean, I'm coming from this world where my family, we would decide whether to spend our $5 family date budget on going through a car wash or going to go in and get something at a restaurant. Like we grew up in such a frugal environment. And then seeing that it was like $59,000 a month.
+
+Now I'd always been wanting to build... I was not willing to trade my time for money. You know, if someone was going to say, I'll pay you $15 an hour to do blank, I didn't want to make that exchange.
+
+I wanted to say, I am willing to take zero for an indefinite period of time in exchange for the opportunity to make a whole lot more. And that was true. Like I didn't make any money until I was really 34 years old.
+
+I was the entire time working for basically zero. But that's when I started seeing that what kind of money you could make in payments on this residual revenue basis. The 59,000, that was what you were getting as your residuals.
+
+So that's what the company was. The company was, and they were giving me a cut. Yeah.
+
+And so you're getting a cut of that. And so you, you're saying these things where you're like, I knew I didn't want to trade time for money or like, I wanted to like do the biggest like technological breakthrough. And I didn't know what that was.
+
+So I first decided to make some money and by 30, I'll have that figured out. You're saying these things that as a 21 year old, most people don't know or have the perspective or wisdom, wisdom to think that way. Yeah.
+
+It's pretty profound. And you're also saying you grew up kind of like on a small farm and a deeply religious community. So it's not like you were surrounded by these other, like, you know, by other technologists or, you know, you know, business sort of like mentors.
+
+So where is this coming from? Did you read? And even this like a hundred dollar bill trick, like, you know, uh, did you read like how do you think and grow rich or like, what did you, did you read any biographies or books that like change your way?
+
+Or how the heck did you do this as a small farm boy to like get this type of thinking in your brain? I could probably make up an answer. Uh, it seems to me right now.
+
+I have no idea. What books, what biographies you said, you read a lot of biographies. What were you reading that changed your life?
+
+I've probably read over a hundred, maybe even 200 biographies at this point. And, uh, like, for example, I would go on deep dives of trying to understand certain world history events like world war II. And so one interesting biography I read is of a gentleman, Dietrich Bonhoeffer.
+
+He was trying to assassinate Hitler. And so you understand world war II and he was deeply religious. You understand world war II and Germany and Nazism through the frame of this individual and his plans to go about and his observations about what other people were doing in the community.
+
+And so I found like these, these biographies provided this back door on how to understand events as they were told to me in school. In school, you have this highly compressed version of history of like, all right, everybody, let's get on the same page. If we understand these big things that happened, but you really miss out on the nuance.
+
+And we all know how flawed historical accounts are, because of just the nature of, of humans and the way people write history. And so these biographies helped me start to piece together an understanding of reality that was much more nuanced and sometimes contrary to, to primary narratives. And so it, it invites me to always reject the first narrative that's offered and understand it not for a factual statement, but for a wishful attempt to be understood, to be accepted.
+
+You said earlier, you said, I wanted to make a certain amount of money by age 30. What was your number? What was your target?
+
+Well, on the, on the lower end, it was $7 million. I had built out my spreadsheet model and assumed a certain rate of interest and basically said, if I make a certain amount of money, this is an annuity that will be good enough for my entire life. Assuming I don't need capital to do anything.
+
+Just if it's time, like I'm writing or something. Then if I do something in the world, I had mapped out something like 150, 300 million, as a, a basis that would get me started on that path. When you sold, when you were 34, right?
+
+Yes. And what did you, what were you able to walk away with? Were you able to hit your, your, your, the north end of your target?
+
+Yeah, I hit 300 billion. What is that? You know, you're, you're a religious farm kid who doesn't know much in, and then in a matter of 11 or 12 years, you're able to walk away with, you know, north of $300 million.
+
+What does that feel like? And what do you do with that money once it hits your account? You don't seem like a victory dance kind of guy.
+
+Wait a second. But true. That's true.
+
+That's true. That is very true. It's sobering because you know, it's bigger than what you realize, but you don't know in what ways.
+
+And so it wasn't the case that I had a long list of things I wanted to buy that were just waiting for this cash to come in. I don't think I spent any money for a long time. And I think you're now looking back now, even my most aggressive expectations on how life would change weren't even close to how significantly my reality would change over the years with that event.
+
+Well, what do you mean? What changed? I mean, your, your relationship with the world fundamentally changes.
+
+I mean, in any relationship, there's power dynamics of wealth, and power and status and age. There's all sorts of things that shape human interactions. And it creates a different entry point for everything.
+
+Because now we all know this from our experiences, when you engage with people of different powers of different levels, it changes the dynamics of your relationship with them, expectations, interests, rationale, justifications. It just alters everything about, I mean, I remember one of the, one of the first stories that I heard, someone shared with me is Larry Bird. I don't know if this is true, the second or third hand, but Larry had a group of good friends that he went back and saw.
+
+And he had just made money, I think, signing it for the NBA, sat down to have dinner with his friends. And Larry was like, you know, I got it. Don't worry about it.
+
+And his friends are great, great, Larry. It's amazing. Thank you so much.
+
+Second time happens. And everyone's quiet, assuming Larry's gonna pick up the bill. He does.
+
+Third time, it's just like, of course, Larry's gonna pick this up and probably take us somewhere else. And so Larry, from his perspective, was just like, you know, the fund was removed because now instead of me being able to do something, be generous with someone, I'm now in this expectation. And so it deterred him from wanting to interact with people because there was this expectation on him that anything he did, there will be this expectation.
+
+And so it just, it is a, I think anyone who's experienced fame or anything of the sort, there are these underlying dynamics of human interactions, which are just a reality for everybody. And yeah, it would have been helpful. I think thinking back, if I could have spoken to somebody and if they said, Hey, like, let me just share five really important things with you on what it means to have money and how you can best navigate this, because it's taken me some time to learn.
+
+Well, there's probably going to be like 150,000 people that listen to this. You could be that mentor for them. So what would you say?
+
+What are those five things? Give us three, at least. David Pérez, One is transparency of intent.
+
+You know, when, when you're with somebody, it's very important that you establish why you're doing what you're doing and the roles you're going to play with each other. If it's ambiguous, then it creates complications in your relationship. And so it's, it's unpleasant for anyone to be surprised in a relationship of what somebody really wants in the relationship.
+
+So just transparency, like we're doing this in these conditions. David Pérez, Two, I'd say that money is not a resource that is valuable for necessarily for the things that allows you to acquire is most valuable for the time it creates that you can solve problems with money. David Pérez, And so utilize it wisely, not on acquiring frivolous things, but on solving fundamental problems of time.
+
+And, and then three is, there's a weird psychological relationship with it, where you're not that, and it is not you. And to have an identity independent of that, because it can get very confusing if you don't maintain those clear boundaries. David Pérez, What did you, so I know that I read that you invested $100 million into your fund, which you guys have invested in all types of cool stuff.
+
+And it seems like you've had some really good outcomes. And then you started a company called Kernel that we could talk about a little bit. What did you do with the rest?
+
+This is a good question that Sean always asks. He goes, what do you do with your money? You know, like if you had a pie chart, like where would it be like, just boring index funds and bonds?
+
+It was Sean for a long time, he was like, heavy into crypto and heavy in cash. What about you? David Pérez, It depends on what your objectives are.
+
+I mean, I think good advice for me at that point would have been, you are an entrepreneur, you're always going to be an entrepreneur. Cash is king. Don't put your money in anything that's going to be illiquid.
+
+So there's been times over the past couple years where I desperately needed cash. And it was not... I didn't have liquid levels that I wanted.
+
+And so liquidity for entrepreneurs is really important. Number two is that like the movement into OS fund was like, okay, wait, I did bring to Venmo primarily a software engineering objective within an established industry of payments. I was moving into science.
+
+And the question I was trying to solve, for example, could we build a global biological immune system? So we all know that if a problem in the world arises, and that problem can be addressed by software engineers coding in their computers to solve the problem, we're pretty good at that as a species. If a problem arises in the world, that requires the engineering of biology of atoms and molecules and organisms.
+
+We're not there yet. We don't have the ability to deploy millions of people who can just engineer biology at a moment's notice and solve problems. Like is the coral reef dying because the water is too acidic?
+
+We need carbon capture. Like we need, you know, whatever the problem is. And so I wanted to invest in companies that would basically serve as the foundational building blocks for humanity of building this infrastructure.
+
+So we could actually engineer with the reliability, atoms, molecules, and organisms. So if I wrote this in this blog post, like if for example, a pandemic happened, it would be amazing if we had these capabilities to build up the biological infrastructure of detection, vaccine creation, you know, remediation, whatnot. And that actually was true.
+
+Ginkgo Bioworks, one of my first investments, I ended up working on the mRNA vaccine. Ginkgo Bioworks, one of my first investments, I ended up working on the engineering of biology. And so some of the companies like we are doing synthetic biology engineering, one company is doing their storing information on using DNA.
+
+So instead of a hard drive made of the material we're accustomed to, they store it on DNA because that's nature's hard drive. Another company is doing nanotech, building these structures atom by atom, like literally assembling them like Legos. And so the companies, and they've been successful, like some of these are breakeven, some of these are profitable.
+
+And so I wanted to do this because Brain Tree Venmo was really nice to teach about software engineering. I wanted to understand science and engineering of science. And so it was really a great educational experience for me of getting deep in the trenches with a bunch of PhD entrepreneurs across the range of all these different scientific disciplines.
+
+Robert Leonard How much do you think... I want to talk about the health stuff in a second. But how much do you think Venmo alone is worth right now?
+
+You guys bought that for 28 million, I think. Only like five or six or seven years into Brain Tree, like pretty early into Brain Tree's existence. Did you pay mostly cash for that?
+
+I mean, how did you finance that deal? And what do you think that's worth now? Because you keep saying Brain Tree Venmo as if Venmo is as powerful or as valuable as Brain Tree.
+
+I don't know the current values. I mean, I sold the company several years ago. I know it's very valuable and so is Brain Tree.
+
+And so this was a decision I made when I did sell Brain Tree Venmo for 800 million. It was a decision of, okay, so I'm now 34 years old. I want to move on to this next stage of life.
+
+Accumulation of money was not my objective. And I could have stuck with the company and we could have made more, been more valuable. But it was like, okay, so if I do this, it's 300 million.
+
+That's a good enough starting base to go off into these other things. And because they were going to be in the areas of deep tech, I knew they would take a decade or so to start. It was just going to be a long startup process.
+
+And so, and looking at the prime of my years, I thought I'll take this, I'll have a go at this and try to do something meaningful there. But it was just a calculation of time and reconfiguring my life towards that. And so you've now, let's say that's 10 years ago, 10, 11 years ago, we're basically 11 years and a hundred million dollars in.
+
+And you probably at the beginning had a bunch of things that were bets that you thought were interesting might pan out predictions maybe of what, what the world might look like in 2022. Can you, as best as you can give us the summary of like, you know, what were you right about? What were you wrong about?
+
+And where do you think the, the big sort of like promise is now? The venture fund has been remarkably successful, especially a, as a newbie into this, into this world. Uh, the number of good investments relative to the bad investments is extremely high.
+
+So I'd say we've done remarkably well on the deep tech side with synthetic biology, genomics, nanotech on kernel. I think we nailed the technology selection. Uh, initially there was the, the idea was, could we make brain measurement ubiquitous in society?
+
+And we can pretty, we can measure almost everything about ourselves in a fairly routine way, except for our brains. We don't have good technology. Explain, explain what kernel is.
+
+People, listeners probably don't know what kernel is. So I mean, I've just seen it as like a helmet that you put on and like, you think something and you could change like something on a computer because of your brain waves. And so if you think about, uh, like, so wearables are a familiar concept.
+
+We put this thing on our fingers or our wrists and it gives us data like, uh, sleep stats, respiration rate, heart rate, cardiovascular expenditure and exercise. Like we get these, this set of data and it's pretty easy to acquire. And then we can use this information to help us understand our health and wellness.
+
+We currently can't do that for our brain. So if I have a question, um, am I in the early stages of cognitive decline? Uh, do I have anxiety?
+
+And so what kind of anxiety do I have depression? What kind of depression, uh, is, is my lifestyle conducive to states of focus or not? What is my emotional reaction to things?
+
+Just really basic questions. And the, most people think that their self-awareness is basically the sensor system that captures their brain. Like because I'm conscious and because I can feel when I have a headache, it basically is a robust enough sensor system to do it.
+
+And that's not correct. Uh, so much happens in our brain that we are unaware of. And there's so much data in our brain that is informative to what we want to do.
+
+And so this, what we, at Colonel, what we've done is we've built a neuroimaging helmet. Like you said, Sam, you just put it on your head. It takes one minute to set up.
+
+It uses light to measure the brain activity. And these brain activity patterns are extremely informative. So for example, I did, uh, I was a pilot participant for a ketamine study.
+
+The ketamine is, has been used for the treatment of depression. We use it as an off-label study with healthy people. But the question is, what does ketamine do to your brain?
+
+And you know, you, of course, someone can do ketamine and they can be like, Hey, Sam, how was ketamine? Like, I don't know. I'll get a different dimension.
+
+And I think I feel better, but I'm not sure. But it's kind of like, you know, how was your sleep for the past week? Uh, it's an extremely imprecise answer.
+
+And you're going on this subjective self-assessment and your memories fade and you don't really know. And it's like, it's a disaster. And so this, this measurement system is basically meant to standardize the measurement of the brain.
+
+And so the part of the challenge was building the device of identifying, is there a technology in existence that can be built that makes brain measurement mainstream? So everyone does it for everything. And then second is, can we find applications for early markets?
+
+And so we've built the tech, we have a few papers coming out and now we're in the product market fit, finding the first application for the technology. When you, so for the listeners, if you just Google Brian Johnson blueprint, you'll see it. I don't, what's the URL?
+
+Is it just for the blueprint? What is it? Blueprint.brianjohnson.co.
+
+What, uh, sorry, Sam, one, one final comment on this, just, uh, for, to make this maybe an attempt to make it as intuitive. When people begin experiencing cognitive decline, uh, and this may be true, what happens with, with intoxication with alcohol too. We just did an alcohol study.
+
+When your brain is impaired, like we just saw this with alcohol, uh, with moderate alcohol, your brain, uh, compensates for the deficiency. And so you, you can't pick up the impairment, but you can, you can record it and identify it. But at a certain level of, of intoxication, your brain can no longer make up for that impairment.
+
+And so then it reveals itself an impairment in behavior. And so that's true with somebody who may be experiencing cognitive decline. You may be along the path of cognitive decline.
+
+And you may say, I feel great. I seem great. I'm moving great.
+
+Everything's great, but you just can't pick it up. And so it's the value of like, uh, wouldn't it be amazing if I had the ability to measure my brain on a routine basis that informs me of these things that I myself cannot identify? And wouldn't it be neat if everyone did it and it was just incorporated into standard of care across all things and how we dealt with our mental health and wellness, you know, all the above.
+
+Is there anything people can do if they're in cognitive decline or is it just sort of like, well, I've measured this sad news. All right. You know, well, I don't, don't have a sober up.
+
+Have you guys ever seen on 23 and me or something like that? They, they used to have like an all, so I guess, uh, Alzheimer's is genetic and like, there's like a particular type of gene that you could have. It increases the likelihood that you're going to have it.
+
+And 23 and me used to do this thing where they said, uh, all right, you have it. But before we can even tell you, if you have it, you have to sign this paperwork saying, you're not going to assume this is a diagnosis and you can't flip out. Well, I had it.
+
+And then like, I did flip out. And then they eventually removed that. I believe, I don't think they have it anymore.
+
+Cause they said people were just flipping out too much. And one of the reasons they removed it is they tell you that you have this and they're like, good luck. Like maybe put like frames, like they're like, there's all these, like, I don't know if they said this, but like people were like, if you like have frames of pictures upside down.
+
+And so you have to like work harder to like figure out who's in the picture, that's going to like help you like get a stronger brain. But in general, when I was researching, I was like, Oh shit, I have this gene. What do I have to do?
+
+People were like, uh, good luck. You know, just like, I guess hopefully you'll be all right. But there wasn't like that many things.
+
+So yeah. Can you actually fix any of these things? We think about it.
+
+Uh, so, uh, we are accustomed to the idea of society having engineering standards. So we know that when we buy an appliance, it's going to fit through our front door. We don't have to go measure our front door, look at the dimensions of the website and be like, is this going to fit or not?
+
+Because we know that the door size is standard, the appliance size is standard. It can be moved into my house. That's true for everything.
+
+We, you know, so many things we do in life. We just know these standards. When we agree, we build society.
+
+And so we have millions of invisible standards. We have very few standards about our brains because we can't measure it. We know the timing that's appropriate for green light, red, yellow light, and red light on lights, because we know the reaction time of humans to lights.
+
+We know breaking power. We know people stop times. So we do have data.
+
+We can actually determine that. We do not have engineering standards around the brain. Depression, anxiety, cough, and decline because we have no measurement.
+
+And so the fundamentally the way to, how could we actually create a step change, function, change in the world and how we deal with our minds, you begin with measurement. And once you have numbers, science begins with numbers and counting, and then ecosystems form around that. So genetics, I think is kind of like that.
+
+It's not as numerical as what the brain measurement could be. But that was a fundamental thing is if you give everyone the numbers, you give them the opportunity to build solutions around those problems. This data is wrong every freaking time.
+
+Have you heard of HubSpot? HubSpot is a CRM platform where everything is fully integrated. Whoa, I can see the client's whole history, calls, support tickets, emails, and here's a task from three days ago I totally missed.
+
+HubSpot, grow better. HubSpot is a big one. So this blueprint, your blog, I don't know what you're calling it, your experiment, it's pretty wild because I saw what you used to look like.
+
+You weren't bad looking, but you definitely were thicker than you are now. Your jawline is like crazy cut right now. And you just look way different than you used to do.
+
+I mean, it's pretty fascinating. And Braintree is amazing. You've built something amazing.
+
+This blueprint thing is way crazier and unique and odd. And it's awesome. And I've read it.
+
+And you're basically, if I remember correctly, I've been following it for a bunch of months and you do regular updates. And at first, I think you got down to 6% body fat and you're like, okay, I think 6% is a little bit too low. Let's go to 7.5%.
+
+And then you're also eating this nutty pudding, I think you called it. So you have a vegan diet and you're just eating nuts and tons of vitamins and what appears to be not tasty, boring, food. You've gone all in.
+
+And the premise behind this is I think you had this blog post that said, late night, Brian no longer gets to make decisions or something like that. You're at home at night and you're hungry and you would go and snack and eat bad food. And you're like, I'm no longer letting that guy make any decisions.
+
+He no longer has a say. We're letting experimental Brian make the decisions from now on. This thing's crazy, man.
+
+Brian is like, why are you doing this? And what have you found to be actually meaningful versus not meaningful? And by the way, you're doing the knees over toes guy thing, I noticed.
+
+You're like walking backwards. You're doing the tibialis raises. This guy was onto something.
+
+You're doing it, it looked like. Brian I am. Brian Yeah.
+
+I mean, so blueprint for me, this goes back to the age of 21. And to me, this is the best answer I've ever come up with in my life. If you, if you pose the question, how can we imagine the human race and intelligence generally surviving itself and thriving?
+
+Like what is our plan as a species to thrive? Blueprint to me is the best idea I've ever come up, come up with and the most practical idea I've ever come up with to address that. And so from the outside perspective, it appears to be health and wellness and anti-aging and whatnot.
+
+That's all true, but really it's a philosophical endeavor for the future of intelligence. And so the way this, I would bridge this is this began in, from a pro basically I had a problem of overeating every day, every night at 7 PM, I would overeat. I'd either have a second serving for dinner or a third serving or have desserts or do something that I would consider to be self-harm, like eating too much food, the wrong food.
+
+And it was just causing bad things to me. I couldn't sleep well. It was, I was overweight, like all the above.
+
+And so I tried everything to fix it and I couldn't. And so I playfully said, I'm going to fire evening Brian because the Brian who wakes up in the morning, he exercises, he does really well eating, same with lunch, Brian, but this 5 PM, 10 PM, Brian, like, boy, is he a rascal? He's always making the wrong choice.
+
+Like I could absolutely rely upon him to make the wrong choice. And he always had an infinite number of reasons on why today was okay to do the thing. And so I was like, you know what, I've had it like, he's done.
+
+He's absolutely out. And so I playfully wrote this blog post of like, all Brian's got together. We had discussion.
+
+We're like, Brian, even Brian, you're making this thing awful. And so I just, I revoked his authority from 5 PM to 10 PM to eat. And so what started off as like this playful thing now turned into what I'm trying, what I basically have done to my entire system system is I now only eat what my body asks for, according to data and science.
+
+Have you not done that at all? Have you had any splurges since you've started this? And do you ever intend to do that?
+
+Brian Smith I have had infractions? Yes. Although this is, I think this is, I think this is the most interesting part of the entire thing.
+
+So just to be clear, the starting point, this is a big deviation from how society is structured right now. Right now, our minds have unquestioned authority in deciding what we eat. So if you think about your daily life, you go to the store and you walk down aisles, you're like, ah, maybe this, maybe that.
+
+You decide how much you put on your plate. You decide if you go to a restaurant, you're presented with a menu. You decide if you're going to have a pizza party.
+
+You decide if you're going to eat Doritos. Like you're making these decisions all the time. And it's a combination of how you feel, what you want, like, you know, you're trying to be good or whatever, but you're basically giving your mind unquestioned authority to do it.
+
+Blueprint flips that. And it says, my mind has zero authority. My body has 100% authority.
+
+So it, the measurement of my heart and liver and lungs and DNA methylation patterns, it directly asks for what it wants via data. And I can never override it. And so in this idea, so the thought experiment is if you could achieve perfect health and maintain perfect health, but it, but it required you to accept basically what an algorithm was doing to deliver what you eat and when you eat, would you do it?
+
+And then in that thought experiment, Sam, and I've had this conversation hundreds of times now, the reaction people have is almost this fear response and their conscious mind panics. And it's like, I, I see it like a computer screen scrolling of like infinite number of questions, but like, what if Cheetos, pizza, parties, 7 to play, like whatever. And then it, like the mind is panicking for the contemplation of loss of control, that it can't do the things that it thinks that the mind says, the only way I can be happy in existence is if I still get to choose what I do when I do it.
+
+And the mind cannot get over it. It cannot just say, hold tight. Like, is it, like, let me just contemplate, is it possible that I am a self-harm machine?
+
+I cannot stop myself from committing self-harm. I probably would never be able to do it. And if I keep on doing this, it's probably going to lead to a predictable outcome.
+
+And so it's such an interesting interaction of rolling through this thing of, and I think it's really on par if we say like, what are the major things that have impacted humanity of, is the earth the center of the universe? Or, you know, it did, is there an evolutionary force creating all things on earth? I think this one could be on that scale of a societal understanding that our unquestioned granting of authority to our conscious minds is at the root of all of our problems in society.
+
+And so the contemplation here is if I imagine this, could I stop self-harm from happening inside of Brian? Because just like there's wars going on, and there's all these tribal factions in the world, the same thing is going on inside of me with my own body and my cravings and whatever else. I've achieved goal alignment within myself on this program.
+
+And so that's really what this whole thing is about, is it's trying to think through, how could I achieve goal alignment? And we hear a lot about AI goal alignment with humans and that being an existential threat. But I think the more interesting starting point is not for me to look on the other side of my eyeballs and say, let me find everyone else who's got a problem in the world.
+
+Let me look at myself and say, what is my own internal chaos and war? And can I even try to resolve conflict within myself? There's a part of me that's like, wow, this is incredible.
+
+I'm going through the blueprint site. I'm looking at the routine. I'm looking at the photo.
+
+I mean, you're completely shredded. This is amazing. So there's part of me that's like, wow, this is incredible.
+
+And then there's a part of me that's like, you're doing the thing a little bit where it's like, is this Mayo? No, he's calling it aioli where it's like, oh, wow, this is not only just great for your health. This is transcendence for the race and the society.
+
+And I'm like, okay, maybe I could see how that's true. But it, I mean, it does seem like you're not actually, it's not that your body's deciding your brain has just decided I'm going to use data about what my body wants instead of impulse, you know, whatever my impulse driven, you know, brain was trying to do before. But like, I guess, regardless, when I look at this, I'm like, this is amazing, but man, you know, this looks like a full time PhD, full time effort, plus PhD level intelligence, plus a bunch of money to be able to do this.
+
+I think he says his cost, by the way, his costs, I think, say like three grand a month, like, it's not like crazy. Well, I think it's three grand a month, but it's also like the mental energy that you would have to put towards doing this is like, you know, the real cost. So but but you did it in service of other people, too.
+
+So like, you know, what is the 8020? What have you discovered have been the the highest leverage, you know, changes? I know it's in this, but say it out loud, because not everyone's gonna go read the whole thing.
+
+So like, what are the the highest leverage changes that you were able to make during this experiment? The first shot on this, maybe just a reflection. Why is it in society?
+
+Do we accept this ferocious system to invite everyone to commit self harm? Like when you walk into the grocery store? I mean, it is violence, outright violence through the representation of advertising and ingredients and sugar.
+
+And you're in there and you're supposed to be on on equal footing with that, like, no way we're outmatched. And the same thing when we're sized up against algorithms. It's a totally unfair match in society.
+
+We just gleefully allow the self harm. And so the individual is pitted against algorithms, and capitalism, like, good luck individual on trying to keep your shit together. And so it's just it's an unfair thing.
+
+And I think it's a it's just bad for everyone to be in this game. But then in terms of like, the basics for people, it's really understanding that trying to win this game with willpower is a losing game. If you put yourself in a situation where you have option A and option B, you're probably going to lose 50% of time or more.
+
+And that's the whole thing I've been trying to blueprint is, yes, it's expensive right now. Yes, like it's difficult. This always happens with innovation.
+
+It's always expensive and it's inaccessible. And then in time, it gets better. And that's why I openly blog about all the things I'm doing is I'm trying to get this out so others can improve upon it.
+
+I think the most important thing that someone could do to win here would be to accept the basic principle that it's a system that drives what you eat. It's not your decision making. But what about the specific truth?
+
+Are there any like truths or any like hypotheses that you believe to be true? Like for, you know, you're like, well, I even though you said you did a great analogy with the door frame, how it's standard and how bodies aren't necessarily like that. But like has going vegan like made a huge difference to you?
+
+Is there anything about like, for example, a lot of us sit at chairs, you know, 80 hours a week staring at screens and we work really hard. Is there any like where you're like, oh, you know, actually he's 30 hours. He's in a piston squat right now doing this whole interview.
+
+Yeah. Are you like, well, you know, like 30 hours is, I think in the what's the Israeli guy, he wrote the book Homo Sapiens. And one of his books, he was like, you know, like hunter and gatherers worked only 30 hours a week.
+
+And that kind of seems like an ideal number. Is there anything like just sapiens? No homo.
+
+Okay. My bad. My bad.
+
+I'm inclusive. So yeah, is there any like, is there any truths that you've discovered for you that, you know, it maybe is not right for everyone else? I started, I got my pilot's license several years ago.
+
+And in doing so, I was assessing the risk of death. And one of the stats that stood out to me was that over 70% of incidents in aviation were attributable to amateur pilots. And so while I went through the certification of every plane I flew, I was typegraded in every plane and you know, whatnot, I refused to fly alone, because I knew the risk of error was just, the map was there, the stats were there.
+
+The same is true with health and wellness. I tried to do this on my own, you know, almost like going around this little bag, listening to podcasts, reading books, reading literature, and trying to put little gems of insight into my bag and try to piece together my own protocol. It's the same as trying to fly an airplane by myself, you know, I study it, I get typed in it, my error rates just can be very high.
+
+And so, and then three is that the value here in this conversation would not be somebody feeling motivated in this moment of doing something good, because tomorrow, they're going to fail. And it's also the value here is not debating is a vegan diet better than a carnivore diet. To me, the real essence of this conversation, the only way this conversation can be a value besides of all the chatter going on the world of everyone else talking about this is one, is there a engineered solution that actually solves this from a system perspective?
+
+And two, can you do so with data? It doesn't do anyone any good to debate is carnivore better than vegan? It's a meaningless conversation.
+
+Data is the only thing that matters. And so that's why I publish all my data is like, I mean, I'm vegan for ethical and moral reasons. But I'm not vegan, because I think it's, it's, you know, I didn't at the at labor of extraction, we just put the data, we're agnostic to these inputs.
+
+And so that's really what I'm trying to say, this is not a health and wellness gig, this is not a diet, a trend, this is really trying to get the structural formation of what it means to be human, our relationship with food, our relationship with happiness, and, and, you know, like how we structure our lives. And it's also trying to say, let's get past these silly tribal debates, at these layers of abstraction, which are meaningless, and they just confuse everyone, because then people immediately say, first, they say eggs are bad for you, then they say they're good for you, no one knows, and they just stop at that point. When in reality, there are more right answers than wrong in terms of doing this in a methodical way.
+
+You know, before we started recording, Sean was just like gushing about how like jacked and ripped you are and how he thought you looked great. Is it mostly, are you getting any more attention from women? Or is it all just guys like Sean, who are just like eyeballing you?
+
+Because whenever I get in shape, I'm like, oh, yeah, my wife's gonna love this. And she's like, I guess you look all right. It's always dudes.
+
+It's only men. I think Sam, I would say the, the person most happiest is me. You know, like, I, I had terribly complicated emotions, looking at myself in my worst years.
+
+It just was so I felt so much shame and guilt and lack of respect, because I just felt out of control and powerless. And now when I look at myself, I have such positive emotions, that I'm stable, that things are reliable, that I trust myself. You know, I trust the systems that are built, is transformed my relationship with myself, it transforms what I think about what I can become as a person, the relationships I have.
+
+So it just, it's hard to articulate how significant of a psychological shift has been for me and my own understanding, my own identity. Wow. You just gave a really great answer to a really dumb question.
+
+That was amazing. I'm glad you did that because we set you up with sort of a goofy question. And I think you said something really profound there.
+
+I wanted to ask you, you said, you said something like, it was a bit of a cliffhanger. You were like, you know, willpower is not the answer. And you said, you know, the the good thing that could come of this is not, oh, you listen to this podcast and you're motivated to go, you know, go eat two pounds of veggies tomorrow, because, you know, you'll revert and you're up against this, you know, the grocery stores, this sugar casino, basically.
+
+And then, you know, you're all your social media is just this like algorithm designed to hook you. And, you know, you are sort of David versus Goliath here, or I guess bad analogy, David won. But like, you know, you were powerless compared to the onslaught that's coming at you, trying to get you to make a certain decision.
+
+And, you know, do you, but you didn't quite say you're like, you know, there's a system, but okay, if I take that, I'm like, tomorrow I wake up, Brian's gone. I'm like, all right, today's about a system. Yeah.
+
+And I'm going to be like, wait, what the fuck was he talking about? What's the system? What am I supposed to do?
+
+And that's where I would stop. So I want to make sure we don't leave it at that. What would you say is the approach that you advocate for?
+
+Because you say it's the data. Is it, oh, I should begin tracking certain markers and that's the step to take and then let my own intuition ride? Is it, is it I got a fire evening, evening, Sean, because I had the same problem.
+
+I have the same problem now that you, you described you had then. What do you, what would you say is the actionable way forward that, that sort of is the sustainable successful path? Yep.
+
+I'd say three things. One, fire the worst version of yourself. So whatever you do, whatever it is, like whatever time, however, where the circumstances are, identify that person and fire him.
+
+So be successful at that one act. Step number two is make a firm commitment on a one step towards the system. So for example, for me, that's calories.
+
+I eat 1,977 calories per day. That's it. Not anymore.
+
+And that is my absolute budget and I cannot go over it. And so set a firm boundary, that that's what you're going to do. You're going to stick with it.
+
+And then three is you can start refining the details of what those calories are. And when you eat it, you know, you want to pack more nutrition in over time, but just acknowledge that you yourself are powerless to win in a, in a moment by a moment, willpower game and structurally set up the path to win. Fire the worst version of yourself to get that muscle to build, set very clear boundaries.
+
+And then you can, you can refine. Don't worry about taking on the whole thing all at once, but just this baby step. And then you'll build this muscle.
+
+Like my 17 year old is, he, he does the identical things I do. And, you know, Sam, you came back and you're like, how many times have you made infractions? And like, you know, so he went through this whole thing of how many times did he have to make the error of eating too much or making an exception or breaking the protocol or whatever.
+
+And it was something like, I don't know, I forget what we talked about. It was like something in the thirties range, you know, where in the morning, he'd be like, dad, I failed like, fine, fine. Right.
+
+Like, but he finally got to the same point where I did, where you can get to that moment and you're tempted to do something and you can model out exactly what, how it's going to feel to do that thing. And you can model out exactly what it's going to feel like after you've done that thing, you can model out your sleep and you can model out your next morning, how you feel about yourself. And pretty soon the simulation becomes so clear in your mind.
+
+You're like, yeah, no, like there's nothing in that series of events where I win, like literally nowhere. Why am I going to do it? And then it just becomes a point where people ask me, do you have cheat days?
+
+And no, a cheat day sounds awful to me. It sounds like the worst feeling in the world to be full and to be regretful. Like, no, that's the last thing in the world I want to do.
+
+These baby steps and you build up your muscles and then it soon just becomes a way of being. You're clearly incredibly unique. You're very insightful.
+
+You're very wise. You're a person who like you talk to me and I'm like, oh, man, this guy has a lot of things figured out. But you're also, you're like very precise.
+
+And you're like, I follow the data. Were you a good manager? You think?
+
+Did people like working with you and for you? Or did they find you to be just like too challenging because you're so you're just so unique? Yeah.
+
+I mean, I joke my team at Braintree that I didn't care what they thought. I only cared to learn what their significant others thought because it's very hard to get someone's real opinion of you because it's difficult for someone to be honest. But what we all know when we go home from work and we're talking to our significant others, like that's the truth serum in action, you know, like where we really say something.
+
+And so I do have some data where people have said I'm the best boss they've ever had in their life. I'm sure other people dislike the way I do certain things. But I certainly, I care deeply about being a high value person in these people's lives.
+
+And so not only, you know, a good steward of the business, but creating an environment where they become their best selves. Was that a learned behavior? Was that like a learned behavior?
+
+Like, were you like, well, if I treat people right, I'm going to get my outcome? And or was it just like you was this like, is this how you were raised? Like what motivated that?
+
+Yeah, it just feels like the right way to do things. I mean, like, if you think about like more structurally in society, we accept this exchange of spending our life points for a system of rewards that includes status and wealth and something else. And I suppose why I bring this up is I think, um, we all know how much money is in our bank account, we know how much we weigh, we know how many followers, social media followers we have.
+
+But we don't know, for example, our speed of aging, like how fast are you aging in this moment? And if you had aging points, like your bank account, would you spend them a certain way? And so what I'm saying is we have fundamentally accepted that we are on this decline in life, we're going to spend our life points, we're going through the grave.
+
+And the things that may live on may include our reputation or like our, our contributions or whatever. And I suggest now that may be the opportunity for us to flip it. So if you say, in the year 2022, if you're looking at the horizon of possibilities for humanity, like what is the thing you can barely see, which is barely imaginable, you would say, basically, don't spend your life points recklessly.
+
+If you can live long enough, there may be a new wave here. So like blueprint, I'm trying to do two things. I'm trying to maximally slow my rate of aging, because entropy is very strong, you're not going to beat it.
+
+So I'm right, I'm currently aging at 0.76. So I, for every 365 days a year, I age 277. So I basically get like October, November, December for free.
+
+And then for the, for the, for the months I do age, then the progress is to reverse that aging that has happened, so that I can be the same biological age. And so if we have aging points, we have an Asian bank account, then society could shift instead of us saying, we're going to be a martyr for wealth or status or whatever. Would it change in that balance?
+
+And would it more be about humans? So we become obsessed about what we can become as a species, not what our technology can become. Right.
+
+And let me ask you, you, like a lot of people who listen to this are entrepreneurs. And I think one of the cool things when we have somebody like you come on versus like, you know, our buddy who's doing like a vending machine arbitrage and like, you know, is he tells a different story, which is like, oh, this is great. I got this income stream coming in and I was able to quit my job and do this thing.
+
+Right. That's one sort of inspiring story. This is a different one, which is like, you know, spend your creative and entrepreneurial energies on things that really matter both to you and your lifespan, as well as like, you know, just the human civilization.
+
+What do you wish people were working on? What opportunities do you see where you're like, man, we need more talent and brains going and trying to solve X or this breakthrough just happened. And really nobody's doing Y or if I had more time, I would be doing it.
+
+You know, this other thing, I'll give you an example. We had Palmer lucky on and we're like, cool. You did Oculus.
+
+Now you're doing Andrew. And he was like, yeah, but before that I was playing with this idea of like reforming the prison system this way, or creating this like oil-based food. That's like zero calorie food that would just run straight through.
+
+Like he had these crazy ideas. He's like, I think somebody could go do these things. Do you have any ideas like that, that are like, you know, I think somebody could go do X.
+
+I do a lot of them, but I would say I'm really obsessed with one. That's a goal alignment or cooperation at the basis of everything that exists on planet earth. There's a singular question at play.
+
+Can it cooperate? And so this blueprint thing, this question is, can I bring world peace to Brian in my body? The answer is yes, I did.
+
+Now my mind is, is a whole nother thing, right? The negative self-talk, like all the stuff that goes on in my brain, that's an entirely different project. But blueprint is applicable to climate change.
+
+It's the same thing. If we were to measure the world with millions of data points and let the earth speak, and then we work within those constraints, that's the solution for how we can coexist with a healthy planet. Versus right now, our minds overrun the planet.
+
+We do what we want, when we want and how we want, and it comes at the expense of our planet. So just like we're committing self-harm to ourselves, we're committing harm to the earth. Collectively, it's the same problem.
+
+And so if you think about goal alignment within ourselves, between each other, with planet earth and with AI, it's a gigantic computational goal alignment problem. And so the idea like this AI alignment problem we have, we've talked about now, like between AI and humans, like what? Like we don't have goal alignment within ourselves, let alone between humans and then humans and AI.
+
+It's a, it's kind of a crazy notion. Then, you know, like if you look at the number of disconnects on that entire stream and the starting point in most people's assumptions is, let me start with what I can see and how I can change other people's behavior versus looking in. And so I'd say, yes, I have ideas, but none of them matter because unless we can solve cooperation, what is it that we have to look forward to as a species?
+
+So what's an example of that? So like you, uh, you talked about basically like goal alignment first with your body, right? And you were able to solve that.
+
+And blueprint is a good example. What's another example of how you would take this idea of cooperation or goal alignment and what would be like a more specific like point of attack or, or like product or service or whatever that would be created along those lines? I mean, the brain, like, so I would love to tackle my brain next.
+
+And that's what kernel is. If I have this device and I can measure my brain, if you think about it in like what we eat today is a dietary input to our bodies. And you think about what is my diet for my brain?
+
+Like the news sources, the social media sources, my friends, my environment, we have no idea what's happening. We don't, we haven't, we don't have a measured. And so is it possible that we basically eat 90% junk food in a given day to our brains, because that's just the way society is structured.
+
+And so I'd love to address that of getting the baseline of where I am at my brain. And then more broadly, I've been talking to several people, uh, who, uh, specialists in math and computational methodologies to try to figure out it, are there mathematical approaches in the same way that John Nash came up with, um, you know, uh, game theory, are there mathematical approaches to think about how we might solve this, uh, between humans, between humans and AI, between the human AI and the planet. And so, you know, the, I can do this with my body.
+
+It's a, it's a pretty straightforward thing to do now, but it's just gonna get more complicated, uh, than more agents you have in the game. So I've like worked with Tim Ferriss, uh, in the past. And like, I remember I would ask, like, we were just an example is, uh, he, we'd be walking our dogs together and I'd be like, Oh, Tim, that's a cool dog leash.
+
+And he'd be like, Oh, this dog leash, you know, the reason it's interesting is made of horse's hair, which is good for the dog for this reason and that reason. I found it in Japan. And, uh, then we had like biology on the podcast, you know, and he was like, he would go through these, like, we were just asking him like, what do you have for breakfast?
+
+And he would just give us this like complex answer. And it was actually pretty profound. Palmer lucky was kind of like that too.
+
+And you are 100% in that same ballpark where I make a stupid joke and I ask a dumb question, or we ask something that seems straightforward and simple. And you give like a pretty profound answer. And what's interesting is you actually do this thing that Elad does where you ask them a question and most people don't do this.
+
+They pause. They don't, they'll actually not talk for like 10 seconds and they just think, and I actually, I try not to interrupt because most people are uncomfortable with that. One time I interrupted you or I, or you got silent, the, by the way, the key to a good interview is you don't interrupt that.
+
+So I kind of screwed that up, but you, uh, you like are really thoughtful and like, in one way it's exhausting. Cause like everything you say is like profound. And I'm like thinking about it and I'm like, well, I want to ask you all these questions about that too now and this and this, on the other hand, it's, uh, it's refreshing.
+
+I mean, it's just enlightening. You're just, you're, you're just an interesting human and you, you, you, your, your intensity is, I can see it being off putting for some people, but for me, like I'm, I'm, I'm, I'm into it. Uh, you're, you're just a very unique person.
+
+I think it's like really interesting to hear, uh, your perspective. Even, I don't think you've said anything that I agree or, uh, that I disagree with, but maybe you have, and it's like, well, that's okay, but you're just like an original thinker. I dig it.
+
+Thank you, Sam. Appreciate that. What's a, give us before we go, what's one of these contraptions behind you?
+
+Uh, give us what, what is one of these interesting things? That's just a Keurig machine, isn't it? Yeah.
+
+One of them looks like a soda stream or something. That looks like a genetic sequencing machine. That'd be funny.
+
+Like got me like, you know, Coke and Pepsi and yeah. Is that a red bull behind you? Yeah.
+
+Uh, yeah. So we, I, last week, a couple weeks ago, I, we bought a medical grade, hospital grade ultrasound machine. And so part of this has just been buying the kind of equipment that allows us to do the stuff we're trying to do.
+
+And so for example, ultrasound. So if you look at the, the pyramid of measurement, wearables are like part of the first category. And then you get to biofluids, like blood draws and, and, and, you know, urine and whatever else.
+
+Uh, imaging is an entirely different quality class. And so if you want to get really good data on, on yourself, it's an ultrasound and MRI and, and, uh, you know, like stuff we're doing with Colonel. And so, um, we really had to build up this infrastructure.
+
+So one of the reasons why this is so expensive is we've basically built out like a mini clinic hospital here with all the stuff we have. And that's where a lot of the expense comes. Is that just in your house?
+
+Mm-hmm . And are there like four dudes just kind of like that are your physicians that are monitoring you at all times or what's going to, what's your team, what's your stack for, for people with the body stuff? Yeah.
+
+Uh, for the ultrasound, we have five sonographers. So one sonographer specializes in, uh, the heart. One does lungs, pancreas, liver, uh, kidney.
+
+Another one does a muscle skeletal. Another one does, uh, uh, Doppler for the brain. And so for example, I, we just did, um, one of the ways to quantify working out is we're using ultrasound to measure tendons, ligaments, like all the component parts of my joints, ankles, knees, hips, elbows, shoulders.
+
+And then we implement this, these exercise regimes. And then we look at the changes. So like, are they working?
+
+If so, what degree, but everything we do is quantified. And so it's not like, oh, this thing makes me feel better. Feelings rarely matter with anything we do.
+
+And so, yeah, this, the hardware and the, the specific team. And so just like we have five sonographers to run the ultrasound machine, we have specialists in lung, specialists in the heart, specialists in other areas. So the team is like 25 or so maybe now, uh, all together that have different specialties.
+
+Man, this is crazy. Sean's answer to that question is like, I just got like a poster of dogs playing poker, one shoe, three AirPods and a couple of empty Diet Coke cans. Like we ask you, it's just like, oh, you mean that ultrasound machine?
+
+I see. I don't need all this measurement. Like if you just export my DoorDash history, it'll tell you how I'm aging.
+
+And I'm aging like a greyhound right now. Yeah. Does Chick-fil-A make you older or younger?
+
+What are your thoughts on ranch? Dude, Brian, this has been awesome. Thanks for, thanks for coming on.
+
+We've been, we talked about you way back as like this awesome guy and it's amazing to get to meet you and hear some of the stories and ask, ask our questions firsthand. So appreciate you coming on. Yeah.
+
+Thanks for having me. Huh? Thank you.

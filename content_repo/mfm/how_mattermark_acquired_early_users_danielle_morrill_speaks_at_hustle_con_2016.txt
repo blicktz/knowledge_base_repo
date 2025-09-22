@@ -1,0 +1,207 @@
+This is awesome. So happy to be here. I'm going to be telling you a little bit about starting Mattermark, my company.
+
+So let's jump right in. I've got 10 minutes. I'm Danielle Morrill on Twitter, so tweet to me if I don't tell you a story that you want to hear, and we'll keep going on Twitter afterwards.
+
+So just to jump right in, so how did I get to Mattermark? So I was really excited to give this talk because they were like, tell your life story. So in 1985, just kidding.
+
+All right, so I did a bunch of things before, and the biggest thing that I did that led me to build Mattermark was I actually dropped out of community college pretty early on and started working at a shipping company. Shipping companies are super interesting. I know there's some founders who've been here talking about logistics today.
+
+So when you work in shipping, you see all this interesting data. So we're going to come back to data in a little bit. Ended up getting into the startup scene up in Seattle, publishing some stuff, working on a startup there that ended up getting acquired.
+
+And then I moved to the Bay Area right after the economy crashed in 2009 to work for Twilio when it was just three founders and little old me as a marketing contractor. I ended up being the first employee there. Did that for about three and a half years and then started a company called Referrly that got into Y Combinator to do social referrals for products, so kind of like affiliate marketing for everyone.
+
+Turned out to be a really crappy business. Eleven months in, negative gross margins, which we now know from the startup press are bad thing, restarted the company entirely as Mattermark. And that's what I'm going to tell you about today.
+
+So through Y Combinator, shutting down Referrly, so of course I went to Paul Graham and I wanted some advice. I said, you know, I'm really burned out. This business is not working.
+
+And right now I'm also kind of just disillusioned about Silicon Valley. And I really, of all the things that I dislike, you know, they say find that thing that drives you crazy in that world, the problem that you want to solve. I really hate TechCrunch.
+
+Yeah. I've written this before, don't worry. It's not news.
+
+They know. And so I really hate it because it doesn't cover the startups my friends are working on. And it doesn't really feel like I'm connected to it.
+
+It feels like it's like Google, Apple, Microsoft, Nokia, Yahoo, whatever. It's like, well, you know, most of my friends are building startups that are like three people in an apartment. So PG was like, well, if you want to kill TechCrunch, then do that.
+
+So really? Like that's probably not going to be a very good business. So could it be a good business?
+
+Could it have traction? I honestly didn't worry about that. At first I was like, I just want to do something I like because I'm really worried I'm going to get jaded and I'm going to get out of this town.
+
+And I'm never going to come back. So I decided, okay, over 30 days, what I'm going to do is I'm going to write a blog post every day. Like, can I live like this?
+
+Can I actually publish every day? Do I have any right to say anything negative about these journalists? Turns out it's really hard.
+
+Really hard to publish every day. Not only that, but I'm not a journalist or wasn't then or I'm not sure what I am. But we had a couple posts that really took off.
+
+We wrote a post about zombie startups, including ourselves. We wrote a post about zombie VCs where we took a bunch of data from Crunchbase and tried to show which VCs were talking a big game but not actually actively investing in startups. And that pissed off everybody in the industry.
+
+And it was awesome. So the first lesson there was if you piss off everybody, you might have something. Because people don't get pissed off about a lot of things.
+
+They're usually just ambivalent. So that was very interesting. And it validated that we could build an audience.
+
+You know, TechCrunch has an audience. We could build an audience. We liked data because we didn't have any leads.
+
+We didn't have any relationships. We didn't have any sources. And no PR people were sending us any pitches.
+
+So some of the posts that were successful gave us a sense of the type of stuff that might work. And we got this really encouraging email. So at one point we indexed or we listed all the companies in the Andreessen Horwitz portfolio and we ranked them based on some growth metrics we were tracking.
+
+And I got this email from Marc Andreessen, who I'd never met. And it was like, yeah, what that guy said. Holy shit.
+
+We should be doing this ourselves, is what he said. And the smiley face is copy pasted. It's real.
+
+I swear. And I thought, I was like, okay, well, holy shit. Why aren't they doing this?
+
+Right? Like, it must be, there must be some reason. And it turns out, it's hard.
+
+It's time consuming. There's a lot of stuff to do at a VC firm. We knew nothing about that at the time.
+
+We knew nothing about venture capital. People think, oh, well, they were always VC insiders. That's why they started this business.
+
+No, definitely not insiders. So we published some of our research and the data at the bottom of our blog post. So people started emailing us saying, can we get more of those spreadsheets?
+
+And then they would have one for a while and they would say, can we get an update? And we were like, you know, sure. Why not?
+
+Here's the update. And at some point there's just so many spreadsheets and so many updates that my husband, my CTO, was like, we should probably, you know, like build software for this. Maybe like, you know, make it simple to log in.
+
+So finding and analyzing data is hard. That's what you realize. So let's build this little database.
+
+So turns out you can take a MySQL database, you can shove it into a really stupid, simple JavaScript library, and you have a really ugly ass database that people can log into. And you don't have to worry about, you know, a sign-in system, just some HT access, and everybody's logging into the same damn thing. And that's what we had.
+
+It's really simple. And for those of you who don't know what some of that stuff is, it doesn't matter because it was so simple that I could set it up without even necessarily being very good at writing code. So now we have these spreadsheets.
+
+We have these lists. We had about 20,000 startups we were tracking. And you guys can probably imagine there's way more than 20,000 companies out there.
+
+And it's me, my husband, Kevin, our CTO, and my best friend, Andy, living in this tiny apartment in San Francisco. And Andy is the data monkey. Literally, I would come up with a post idea.
+
+And I'd be like, okay, you've got 48 hours to get all the data. Will I write the other post? And then Andy would go and get all the data.
+
+And I'd write the post. Andy would document how he did it. And then Kevin would write the software so that he never had to do it again.
+
+And then we just did that over and over and over again. People thought we, you know, had magic, but we didn't have magic yet. And then something really crazy happened.
+
+And this is definitely where we got lucky. So Lena Rao, who I believe now writes at Fortune, was writing for TechCrunch at the time. And TechCrunch wrote a trend piece about quantitative venture capital.
+
+This is in the summer of 2013. And at the very end of the post, she said, maybe some smart startup will come along and solve this problem. The post goes out on a Friday.
+
+I read this post. I'm in Palo Alto, so I think trying to sell to someone. And I pull over and I call up my co-founders.
+
+I'm like, oh my God, we have to jump on this now. She just told the whole valley to build this. And we're building it.
+
+How do I get her phone number? So, you know, imagine tapping around on Facebook and Twitter and whatever and call her and say, okay, we're building this thing. Let me show you what we made.
+
+We want to launch on Monday. And all we had was that thing we showed you before, that little ugly spreadsheet in yellow with a little single user login. And we had no marketing page.
+
+We had no login system. We had no user system, nothing. She said, great.
+
+I'd love to launch you exclusively on Monday. So we were like, okay, cool. We were moving into a new apartment that weekend.
+
+We were all sick. So we built the rest of the product. So when we launched, and it was free.
+
+So people could sign up. These were leads. Also, oh, I'd never really done B2B before or SaaS.
+
+So we were like, oh, leads. What's that? So we're in TechCrunch.
+
+It's amazing. You know, backed by NEA and Andreessen. By the way, I think Andreessen wrote us a $50,000 check when our bank account was at its lowest.
+
+So it doesn't matter. It's a really nice headline. We got this thing out there.
+
+And we had some early customers. So that was how we built the prototype. How do we get the early customers?
+
+Well, honestly, we just contacted every single venture capital firm. NEA was already an investor. So that was really helpful.
+
+They offered us an enterprise contract right out of the gate. And then Albert Wenger at Union Square Ventures is a data nerd. He loves consuming APIs.
+
+Give him access. He wrote an amazing blog post. And these are surprises.
+
+We just wake up, and there's this blog post from him talking about how every VC of the future is going to need to use data. And we're just like, not really sure this is all really happening. And the funniest thing was we launched with this tagline that Mattermark was like a Bloomberg for startups.
+
+And Bloomberg actually launched a venture capital fund the same day. So that was weird. So we obviously needed to connect with them.
+
+And then we ended up doing a research project with them. I'll never forget Roy telling me, hey, you should really take our $50,000 because it's the best capital you'll ever take. It's not dilutive.
+
+And I was like, oh, maybe I could get someone else to give me $50,000. It's not dilutive. I mean, we didn't know anything about B2B.
+
+We'd been making like $1.37 at a time on affiliate marketing for the past two years. So it was a lot better. So then we realized we've got to go and sell all the VCs.
+
+We've got to do it as fast as possible. We've got to go down Sand Hill Road. And over the next three weeks, we just tried to meet with everyone we could.
+
+It's funny. It was actually easier to get meetings for selling them something than pitching them. I guess not very many people are trying to sell things to VCs.
+
+I don't know. But it was really weird. It's like suddenly I'm in these boardrooms that I could never get into before.
+
+You know, Sequoia and Google Ventures. And I'm like, okay, this is, I'm on the other side. What side am I on?
+
+I don't really know. And we're learning how venture capital works. So literally sit me down with an associate and tell me what's hard about your job.
+
+Why are you wasting time? You've got an MBA from Harvard. You probably don't need to be a data monkey.
+
+And setting them free from that. So we had all this validation. And we decided we better start charging money for this.
+
+Also, we're going to be broke because we're all living in an apartment together. And we only had like $150,000 of the million we'd raised left, which was only going to last us like six or seven more months. So we launched Mattermark Pro for $499 a month.
+
+And the way that happened is Albert from USV, who I mentioned before, basically I was on the phone doing like a discovery call, making sure things were going well. And he said, I feel kind of guilty that you're not charging me. I was like, okay, so should I charge you?
+
+He's like, yeah, how much is it? Okay. I'm thinking to myself, my expense reporting policy in my last job was, oh yeah, $499 because $500 is where you have to get approval.
+
+That was the logic. So really good way to price your product. So he was like, great, where do I put my credit card?
+
+Let me call you back. Also, he's on the East Coast, so it's like 830 in the morning. I run over to Kevin, wake him up.
+
+You got to build a stripe for him right now. What? What?
+
+Get up. Get up. They want to give us money.
+
+Can it wait? No, it can't wait. You're kidding me?
+
+Like it can't wait. And besides, Stripe is amazing. So we had 25 minutes later, because he's awesome.
+
+We had a stripe for him up and I call him back. Sorry, I didn't know the URL. Here's the page.
+
+Totally have it together. And then they paid us. So that was the beginning of the addiction to SaaS.
+
+So then we had money in the bank. We got 12 paying customers, something close to that, 499 times whatever, in the first month. And three years later, we're at, we're actually at 3.5 million in ARR now.
+
+So we make about just shy of $300,000 a month. So that's what happened. And it was a little bit crazy.
+
+And it's still crazy, in fact, because we're going a lot bigger with Mattermark today than before. We don't just sell the VCs anymore. Now we realize sales teams have the exact same problem VCs do.
+
+So now we're in the process of figuring out how to track every company in the world, which is going to be hopefully another set of crazy stories that I'll get to come back and tell you at the next conference. So I'm out of time and I'd love to answer two questions, but thank you for hearing the beginning of my life story. I think we have time for two questions.
+
+Really good job with the clicker, by the way. You killed it. Thank you.
+
+Any questions? Yeah, thank you. Follow me on Twitter.
+
+When you guys launched, it was more of like a news type service, and now you have it kind of paid upon it. You know, what's the ground? How big is the first year?
+
+What direction do you see? Is that like a big pivot for you? Or what do you think you're about now?
+
+Yeah, so the question is, are we pivoting away from venture capital? Kind of how do we see the balance of serving the VC customers? And news aggregation.
+
+So news aggregation is awesome. So we have a newsletter called the Mattermark Daily. It goes out every day to about 100,000 people.
+
+I highly recommend you subscribe on our website. And it tries to aggregate the best of the content that comes from the VCs and the best of the content that comes from startup operators. And really importantly, we really look for those editorial column style pieces where you're telling your own experience because that's what I wanted.
+
+And ideally, in a dream world, I'd write all those stories. So I think we'll continue to do that primarily because it comes from a place of passion, and it's how we build our community. We now do crawl the majority of the internet for news.
+
+And so we do, our technology pulls facts out of news and organizes them into a database. So that turns out to be really valuable for lots of purposes. But over the long term, our business will probably become less focused on venture capital just because it's only a, you know, maybe 20 to $50 million a year revenue business if we get every single drop of it.
+
+Whereas if you solve the problems for salespeople, it's a much bigger market. So I think I don't like to think of it as a pivot because we still love those initial customers. It's just a realization that to really be as big a business as we want to be, we've got to keep expanding.
+
+Speaker 1 Speaker 1 Hey, Danielle. My name is Brian. I'm curious what some of the non-intuitive signals you found were that indicate that a startup is on to something.
+
+Speaker 1 Non-intuitive? Well, now I feel like they're obvious, but they probably weren't intuitive. So So I think early employee count is very important, kind of net employee count, so you're turning people over, they're leaving and coming, but is the graph ultimately up and to the right and how fast is that growing?
+
+Now I hesitate to say it's not an intuitive because when I say it you're probably like, well duh, you don't hire more people into your startup until things feel like they're going well, but it turns out that's a really hard thing to track, so it has been a really valuable data point that we track really well. I think I have time for one more. I don't have a question.
+
+I just want to say you are a total badass. Thanks. Total badass.
+
+And okay, so I was actually the sponsor T-shirts matter, but Reid Hoffman, who I used to work with, he was my manager, he's got this really famous phrase, if you're not embarrassed by your first product launch, then you've launched too late, well I launched too late. I'm supposed to have a table, I paid money for a table, I couldn't get my shit together, I was embarrassed. Anyways, for every single speaker, everyone will get a free T-shirt because I have the database.
+
+That's hustle. Right there. 10% off once I get my shit up and running.
+
+So there's that. Oh, and then, okay, I'm an investor, I'm an angel investor in HustleCon Media, and I sent an email to 100 people, I didn't BCC them, including Sarah Lacey, and she replied back that it was inconsiderate, and then... Sam Parr basically wanted to fire my ass.
+
+Good luck with your business. Good luck. Thank you very much, Tanya.
+
+Thank you, everyone. One second. All right.
+
+All right.

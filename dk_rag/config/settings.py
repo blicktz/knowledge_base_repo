@@ -166,13 +166,24 @@ class Settings(BaseModel):
         """Get LLM configuration with resolved environment variables"""
         return self.llm.config
     
-    def get_vector_db_path(self) -> str:
-        """Get absolute path to vector database"""
+    def get_vector_db_path(self, persona_id: Optional[str] = None) -> str:
+        """Get absolute path to vector database, optionally for a specific persona"""
+        if persona_id:
+            base_dir = Path(self.storage.vector_db_dir).parent / "personas" / persona_id / "vector_db"
+            return str(base_dir.resolve())
         return str(Path(self.storage.vector_db_dir).resolve())
     
-    def get_artifacts_path(self) -> str:
-        """Get absolute path to artifacts directory"""
+    def get_artifacts_path(self, persona_id: Optional[str] = None) -> str:
+        """Get absolute path to artifacts directory, optionally for a specific persona"""
+        if persona_id:
+            base_dir = Path(self.storage.artifacts_dir).parent / "personas" / persona_id / "artifacts"
+            return str(base_dir.resolve())
         return str(Path(self.storage.artifacts_dir).resolve())
+    
+    def get_persona_base_path(self, persona_id: str) -> str:
+        """Get the base directory path for a specific persona"""
+        base_dir = Path(self.storage.artifacts_dir).parent / "personas" / persona_id
+        return str(base_dir.resolve())
     
     def get_cache_path(self) -> str:
         """Get absolute path to cache directory"""

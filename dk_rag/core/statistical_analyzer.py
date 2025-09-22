@@ -23,6 +23,7 @@ from ..data.models.persona_constitution import StatisticalReport
 from ..config.settings import Settings
 from ..utils.logging import get_logger
 from ..utils.device_manager import get_device_manager
+from .analysis_cache import AnalysisCacheManager
 
 
 class StatisticalAnalyzer:
@@ -31,9 +32,10 @@ class StatisticalAnalyzer:
     and insights about speaking style and content themes.
     """
     
-    def __init__(self, settings: Settings):
+    def __init__(self, settings: Settings, persona_id: Optional[str] = None):
         """Initialize the statistical analyzer"""
         self.settings = settings
+        self.persona_id = persona_id
         self.logger = get_logger(__name__)
         
         # Initialize spaCy model
@@ -46,7 +48,12 @@ class StatisticalAnalyzer:
         # Report device usage for other libraries
         self._report_library_devices()
         
-        # Analysis results storage
+        # Initialize cache manager if persona_id provided
+        self.cache_manager = None
+        if persona_id:
+            self.cache_manager = AnalysisCacheManager(settings, persona_id)
+        
+        # Analysis results storage (legacy in-memory cache)
         self.analysis_cache = {}
         
     def _init_spacy(self):
@@ -126,17 +133,31 @@ class StatisticalAnalyzer:
         # scikit-learn uses CPU (no built-in GPU support)
         device_manager.log_library_device_usage("scikit-learn", "CPU", "TF-IDF and statistical analysis")
     
-    def analyze_content(self, documents: List[Dict[str, Any]]) -> StatisticalReport:
+    def analyze_content(self, documents: List[Dict[str, Any]], 
+                       use_cache: bool = True, 
+                       force_reanalyze: bool = False,
+                       max_cache_age_hours: Optional[int] = 24) -> StatisticalReport:
         """
         Perform comprehensive statistical analysis on the content
         
         Args:
             documents: List of document dictionaries with 'content' key
+            use_cache: Whether to use cached analysis if available
+            force_reanalyze: Force fresh analysis even if cache exists
+            max_cache_age_hours: Maximum age of cache in hours (None = no limit)
             
         Returns:
             StatisticalReport with analysis results
         """
-        self.logger.info(f"Starting statistical analysis of {len(documents)} documents")
+        # Try to load from cache first (if enabled and not forcing)
+        if use_cache and not force_reanalyze and self.cache_manager:
+            cached_report = self.cache_manager.load_analysis(documents, max_cache_age_hours)
+            if cached_report:
+                self.logger.info(f"Using cached statistical analysis for {len(documents)} documents")
+                return cached_report
+        
+        # Perform fresh analysis
+        self.logger.info(f"Starting {'fresh ' if force_reanalyze else ''}statistical analysis of {len(documents)} documents")
         
         # Combine all text content for most analyses
         all_text = " ".join([doc.get('content', '') for doc in documents])
@@ -184,8 +205,55 @@ class StatisticalAnalyzer:
             sentiment_analysis=sentiment_analysis
         )
         
+        # Save to cache if cache manager available
+        if self.cache_manager:
+            try:
+                self.cache_manager.save_analysis(report, documents)
+                self.logger.debug("Saved analysis results to cache")
+            except Exception as e:
+                self.logger.warning(f"Failed to save analysis cache: {e}")
+        
         self.logger.info("Statistical analysis completed")
         return report
+    
+    def has_cached_analysis(self, documents: List[Dict[str, Any]], 
+                           max_age_hours: Optional[int] = 24) -> bool:
+        """
+        Check if cached analysis exists for the given documents
+        
+        Args:
+            documents: Documents to check cache for
+            max_age_hours: Maximum age in hours
+            
+        Returns:
+            True if valid cache exists, False otherwise
+        """
+        if not self.cache_manager:
+            return False
+        return self.cache_manager.has_valid_cache(documents, max_age_hours)
+    
+    def get_cache_info(self) -> Dict[str, Any]:
+        """
+        Get information about cached analyses
+        
+        Returns:
+            Dictionary with cache information
+        """
+        if not self.cache_manager:
+            return {"status": "no_cache_manager", "persona_id": self.persona_id}
+        return self.cache_manager.get_cache_info()
+    
+    def clear_analysis_cache(self, older_than_days: Optional[int] = None):
+        """
+        Clear cached analysis files
+        
+        Args:
+            older_than_days: Only clear files older than this many days (None = all)
+        """
+        if self.cache_manager:
+            self.cache_manager.clear_cache(older_than_days)
+        else:
+            self.logger.warning("No cache manager available")
     
     def _extract_keywords(self, documents: List[Dict[str, Any]]) -> Dict[str, int]:
         """Extract top keywords using TF-IDF from individual documents"""

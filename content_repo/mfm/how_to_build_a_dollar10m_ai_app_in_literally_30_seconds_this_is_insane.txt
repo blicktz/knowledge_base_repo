@@ -1,0 +1,741 @@
+This is the first AI agent thing that has been a mind-blowing moment for me, where I am not a programmer, I am not a coder, but I can now create software. That's insane. There are apps built on Replit agents that otherwise would take probably $100,000 of developer time.
+
+And you can build it like in, you know, $25 paid to Replit. It's pretty wild how fast these companies are scaling. I don't think in the history of Silicon Valley we've seen anything like that, even in the like Web 2.0 era.
+
+So what is like a fast ramp for an AI company? What's impressive that kind of broke the frame of how long things would take? So I would say reaching 10 million in three or four months ARR.
+
+Oh my God. Can I ask a blunt, crude question? How can I use your software to become a billionaire?
+
+I would say building... Okay, so how do we want to start this? So Amjad, you're awesome.
+
+So you're today in a position that I think a lot of people want to be in. You're doing the Silicon Valley dream. You had this idea.
+
+You go through YC. You've now raised hundreds of millions of dollars. You're valued at a billion-dollar valuation.
+
+So that's today. But then the cool thing about your story is that didn't seem likely 10 years ago. It's a very unlikely success story.
+
+And yeah, you went through YC, but you were rejected a bunch of times. Like, yeah, you're in Silicon Valley now, but you started off coding in an internet cafe in Jordan. That's what's interesting to me.
+
+And we asked you beforehand, we're like, hey, what killer stories could you come on the podcast and tell? And you go, you wrote this. So I'm going to read it word for word, and then I want you to tell us the story.
+
+You go, rejected four times and Rickrolling into YC, raising tons of money and meeting amazing billionaires. So let's do the first part. Rejected four times and Rickrolling into YC.
+
+Can you tell the story? Yeah, so I left my job at Facebook in 2016. And Replit has been a side project for a while, and it's been growing.
+
+I've been working on it nights and weekends. And it grew to a point where the server cost was meaningful. And I was like, okay, I guess I have to start a company around it.
+
+And so I went to my manager at Facebook and was like, look, I have this side project. Can we make it somehow a project at Facebook? And we looked into that.
+
+I sent Zuck an email at the time, and he ignored me. Like, okay, I guess I have to start a company. And so, yeah, I quit my job, applied to YC the first time.
+
+We did the whole thing. We did the form and the video and all of that. And we didn't even get a call or anything like that.
+
+It was just like we got the rejection letter. And so I was like, okay, I have this Facebook stock, some savings. I sold the Facebook stock.
+
+I put like half of it in Bitcoin and then half of it into the company or just for us to kind of live. How much money was that? It was like 70K or something like that.
+
+What was the original product of Replit? So it was basically an editor and a console. You could type code there, and you can run it.
+
+You can switch a language, and that's it. By the way, Sam, have you ever used Replit? I was using it today before this.
+
+It's magical. And also your tweets describing what it is. Like, for example, your doctor saying, you know, he wants me to track my sleep.
+
+So I just uploaded the PDF that he wanted me to fill out into Replit, and it made an application so I can upload it much easier. Yeah, it's like pretty magical. Sean, are you able to use it?
+
+It's definitely out of my league still. Both me and Sam have joked around because we both have maybe five or six times false started of like, I'm going to learn to code this summer. It's like a New Year's resolution thing where you just keep saying you're going to do it.
+
+You do 20% of it, 30% of it, and you give up. You know, we buy the Udemy course, learn Python the hard way. You start doing it.
+
+And nothing really ever stuck. And one of the biggest problems was that nobody really talks about this. Do you think learning to code is like learning Spanish?
+
+It's like learning a language. You're like, okay, so how do I need to say the thing? But before you can even do that, it's like, oh, I'm supposed to download this program, so I need to download an editor.
+
+And then I need to download all these packages to be able to use the thing. That's where I stop. And it's like just setting up the environment is so goddamn confusing to a beginner that you don't even get to do the part where you actually write the code and be able to run.
+
+And then it's like, oh, how do I run the code? I got to host it somewhere. Now I got to learn how to do hosting and serve.
+
+What is that? And so there's all these things around it that were confusing. Replit solved all of that, which was amazing.
+
+And I actually did your like 100 days of learning to code. Like it's actually made it really easy. You know, if I didn't have kids, I would just be doing a lot more because you solved that problem for me.
+
+And I know I'm asking you about the YC rejection. I want to come back to that. But to give Sam maybe a little more of the context, I think, correct me if I'm wrong, maybe I'm making this up.
+
+I think the reason you wanted to have this kind of like online editor, online environment where it's all hosted there was because when you were younger, you were living in Jordan. And I guess you used to go try to learn to code out of an internet or go try to code out of an internet cafe. But that means every time you go, you have to set everything up for the first time because it's not your home base, not your home computer where you set it up once and it's there.
+
+Is that true? Is that why you felt the problem like 10x what a normal person would feel? Yeah, basically, like every time I wanted to do a little homework, I have to like spend an hour setting up the environment.
+
+At the time, the web was moving so fast until we had Google Docs and we had Gmail. We had this, you know, client slide JavaScript application sort of revolution. And I'm like, okay, you know, why can't I type code into the browser and run it?
+
+And I started looking around and turns out like nobody solved this problem. There were some experiments. And it was kind of crazy to me because it was almost like, you know, finding a $100 bill in New York Grand Central Station, right?
+
+Like it's like, oh, I found an idea that nobody's paying attention to. And is that true? Because it's kind of crazy.
+
+You know, the world is big. There's a lot of programmers. That seems like an obvious thing.
+
+I mean, I'm a total outsider. So my question is like, was there some technical challenge to that? Because that seems like, I guess it's easy to say things that are successful are obvious ideas looking back.
+
+But like, yeah. Well, it seems like there's probably two things, right? There's the technical challenge of being able to make this all work in a browser, right?
+
+That was not obvious. But then it seems like the second thing was, I keep going back to the internet cafe thing because it's sort of like the hardship made the problems like unavoidable to you. Whereas anybody else who learns to code, if you're just doing it at home in America, you might do that setting up once, maybe you have a little bit of the problem.
+
+But you're not running into it face first every day as if you were working out of internet cafe. Yeah, absolutely right. I mean, you know, Paul Graham talks about it all the time.
+
+It's like, you know, the best startups are solving your own problem. And I felt that problem really deeply. And I started working on it.
+
+I discovered why it's hard. Well, it's hard to run different languages in the browser. You can run JavaScript, but you can't run Python, for example.
+
+So we started writing interpreters, writing compilers to run on JavaScript. And then, you know, it took us a couple years, had like few languages running. It was like pretty rough prototype, but people started using it.
+
+My friends and people at school, and I'm like, okay, this idea has legs. And so let me work on it more. And then 2011 had a breakthrough.
+
+And the breakthrough was we were the first to compile Python, Ruby, a bunch of languages to JavaScript and run them straight into the browser. And that went super viral. Like, so we open sourced it.
+
+We put it up and like on Hacker News. And that was my first experience of like going viral on the internet, which is I was like, oh, my God, this is like an amazing rush. And I still feel that rush.
+
+Can you put that in context for a non-engineer? Is the thing you guys did, is it on a scale of like one to Satoshi Nakamoto solving the like double spend problem? Like how hard of an invention was that?
+
+That was like the nerdiest analogy you ever could have came up with. That's what I'm here for. So like, was it genius or was it just that nobody had taken as much time as it would take to do that?
+
+Like where was that breakthrough? How would you describe that breakthrough? It's definitely not on the order of like the double spend problem aware.
+
+It's like a fundamental invention. It was like, you know, pushing like a huge rock bolt like up a mountain. It took so much grit and just obsession to be able to hack the browser in order to run things that the browser wasn't supposed to run, wasn't designed to run.
+
+And so I would say it is solving hundreds of problems as opposed to solving like, you know, one invention. Perfect, perfect. Which is double spend.
+
+Yeah. So you're working on it as a side project for a number of years. That's a long time, by the way, Sean.
+
+Can you imagine like having a side project that's a hobby that takes three hours a night with little, I mean, doing that for two years is kind of a long time, no? Dude, the only two things I've ever done that with is this podcast and my kids. And there's really no way out of the kids thing.
+
+So, you know, it's- And the podcast was a hit right away. The podcast, yeah, gave me results right away. So it actually doesn't count.
+
+You were doing this without the kind of like financial rewards or fame rewards or any other major rewards during that time. How many years did you do this side project thing and what kept it going? You know, 2009 was the original idea.
+
+Wow. 2011 was the breakthrough and, you know, went viral on Hacker News and then and then. And I think that was the first time I felt like a little bit of fame, a little bit of return on investment.
+
+Like I remember Brendan Eich, the inventor of JavaScript and was the CTO at Mozilla, like tweeting about it. I was like, wow, this is amazing. Like, you know, Kid and Jordan, like made this like fundamental breakthrough and like, you know, browser attack.
+
+And like, I'm getting this recognition. That's pretty cool. And also some articles wrote about it.
+
+It was people talked about it in conferences. And so all that was evidence for my O1 visa to come to the States. Basically my entire adult's life, I'm working on this, which is crazy, right?
+
+Like I was- How old are you now? I am 36. Wow.
+
+I think. And, you know, I- Well, you've been working on this since you're 21, I think. Yeah, 21.
+
+Yeah, that's a while. That's your whole life. Your whole adult life.
+
+And, you know, it continued to like, you know, incrementally improve my life. So it wasn't this, you know, working in a room for 11 years and nothing happened. So I get this visa to the United States and they go work at Code Academy and they use the open source work that we did, right?
+
+And a bunch of companies in the U.S. And a bunch of companies in the U.S. There was like this boom in like MOOCs, if you remember that, Udacity, Coursera, whatever.
+
+And a lot of them used the open source version of Replit to create interactive courses. Right. And suddenly, like the world opened up to me.
+
+I'm getting job offers all over the place and I have choices where to go. And so we decided to go to New York. All right.
+
+So a lot of people watch and listen to the show because they want to hear us just tell them exactly what to do when it comes to starting or growing a business. And really, a lot of people who are listening, they have a full-time job and they want to start something on the side, a side hustle. Now, a lot of people message Sean and I and they say, all right, I want to start something on the side.
+
+Is this a good idea? Is that a good idea? And again, what they're really just saying is just give me the ideas.
+
+Well, my friends, you're in luck. So my old company, The Hustle, they put together a hundred different side hustle ideas and they have appropriately called it the side hustle idea database. It's a list of a hundred pretty good ideas.
+
+Frankly, I went through them. They're awesome. And it gives you how to start them, how to grow them, things like that.
+
+Gives you a little bit of inspiration. So check it out. It's called the side hustle idea database.
+
+It's in the description below. You'll see the link, click it, check it out. Let me know in the comments what you think.
+
+Naval has this great quote where he says, people always ask him about like, you know, how to build a great network or networking. What are your tips for networking? And he's like, my only tip for networking is do something great and watch your network will appear overnight.
+
+People will immediately come to you because you've done something great, right? You didn't go try to get a coffee with Brendan Eich. Like you build something really cool that the creator of JavaScript and Mozilla browser was like, hey, that's awesome.
+
+I want to reach out and get to know you. And I think that's actually how you back to the YC thing. I think that's how you ended up getting into YC later was Paul Graham actually just thought what you were doing was cool.
+
+But like, let's go to the YC part. So you quit the Facebook job, half the money in Bitcoin, half the money in your startup, apply to YC, rejected. That was the first rejection.
+
+What were the other rejections? VCs kind of wouldn't talk to us. Or, you know, we'd get meetings with VCs.
+
+Some of them are like yawning and I think one of them slept. And it was just like not interesting to them. Dude, I had that happen one time as well.
+
+Like a guy literally felt it was like he was literally 80 and it was Friday at four and it was warm in the office. And he like fell asleep mid pitch. Like it was warm.
+
+Yeah, it was like a cold day. It was warm inside. So I was like, yeah, I mean, like I was like, you deserve this.
+
+But dude, what what did they not see in you? Because like it's so easy to be to look back in the past. But like you seem like you got the it factor.
+
+This seems like such an obvious idea. You worked on it for two years. Smart people are talking about it.
+
+What were you missing? What was the case against it? Well, I think, you know, Silicon Valley is like probably the most meritocratic place in the world.
+
+But it is also status driven. At least then it was very status driven. Like if you look at the people who got in YC, like with Stanford dropouts and things like that.
+
+And I think since then, YC has improved and gets international people and all of that. But, you know, my background wasn't wasn't really interesting to them. You know, I didn't have any fancy colleges or any of that.
+
+Also, being married a couple was somehow like something that they thought it was a disadvantage. You didn't match the patterns. You didn't match the Stanford pattern.
+
+You didn't match the co-founder relationship pattern. You didn't match the trend of what categories have big exits. You weren't on trend at that time.
+
+Right. Yeah. And so continue to apply to YC.
+
+Every season of YC, we'll send in the application. And, you know, our thesis developed more. And we felt like we had started making some money.
+
+Some people started paying for our service. We had an API at the time that people paid for. A lot of educators and people learning code started to pay for Replit.
+
+What was the revenue when you got in? Like maybe 10 grand a month. It was enough to sustain us at that point.
+
+It was like the ramen profitability. But before YC, the person who actually, the first one to bet on us was Roy Bahat from Bloomberg Beta. So I knew him from my Code Academy days.
+
+And it was such a, the meeting with him was so refreshing. Like he, he was like just a straight shooter. He, he would tell me like, he, here's where I think, you know, the idea or the category is, is hard.
+
+You know, here is where I think the valuation should be. And it was like the first meeting. He just gave me everything he was thinking about.
+
+He didn't obscure anything. And I was, I was feeling really good about it. And so, yeah, he gave us $500,000 on a, on a 6 million valuation.
+
+So that was the first check we got. Nice. And then how did the, how did you eventually get into YC?
+
+So basically, you know, we're grinding and, and, and, and the product was getting better every, every week. And I started writing articles about what we're solving. So we're solving pretty hard problems.
+
+And so this articles kept going in Hacker News. And Hacker News was really excited about what we're doing. And program reads Hacker News a lot, probably still to this day.
+
+And one day, like December, 2017, I wake up, there's a DM on, on my phone and it is Sam Altman. And he's like, Hey, I run YC and we're interested in what you're doing. I'm like, dude, I know who you are.
+
+You have to tell me you run YC. And he's like, okay, let's, let's meet, you know, come to this address. And it wasn't the YC address.
+
+I was like a little confused. And so I go there and it was the OpenAI office in the, in the mission. And so I, I meet him there and, and, you know, we're talking a little bit.
+
+And then he's like, he turns his computer around. He's like, this is, this is Paul's email. He emailed Sam and told him this, this company is very important.
+
+You should reach out to them. And he's like, okay, talk to, to PG. I'm going to give you his email, talk to him.
+
+And then maybe you can, maybe we can work on something to get you into YC. So I started this email relationship with, with Paul, which was really fascinating. I mean, he, he, he's a great writer, right?
+
+And so we talked about, we talked about Replit. We talked about the, the, the problems of setting up an environment, the problems of hosting an application. It turns out after he sold via web, he started working on, on something like Replit.
+
+He started working on like an editor. You write some Lisp, of course, because he likes this, this very obscure program languages. And, but by the way, Paul Graham is the founder of YC at the time he was starting to, to retire.
+
+And, and Sam was, was running YC. And, and so, you know, we had this email relationship where he, he wrote me essays essentially on, on, on the problem we're solving. By the way, were you, were you intimidated?
+
+You know, Paul Graham writing essays to you privately. Are you like, is that high stakes replies there for you? Yes.
+
+Like I, I would spend hours, uh, kind of crafting the emails and, uh, and trying to like be as good of a writer as, as I can. Um, but you know, one thing about me is like, I was never like nervous about meeting like famous and established people. And I think that helped me, uh, over time because like, you know, I can be myself and I can talk to them at the same level as opposed to like being a fan boy or, or, you know, Why, why, why was that?
+
+What, what, were you just oblivious to it or you just had a different mindset about it? What was the reason? Yeah.
+
+I, I, I felt like my life was, was taking on this trajectory that was not to be too superstitious, but like, it was this force. Um, and, and I felt like everything's going to be great and, you know, it's going to be hard, but, you know, I'm meeting all these people, uh, things are opening up to us. And, um, and so when, when I go and, and, and meet people, my mindset is like, uh, I want to impress them and I want to be able to, you know, get money from them or like, I have a goal.
+
+And I think having a goal when you're, when you're meeting someone actually puts you in a very different mindset than, than again, like fanboying and, and, um, right. And just being very excited about the meeting. Dude, have you guys seen that?
+
+Uh, do you guys know the director, Guy Ritchie? He's, uh, that like British director. He's got this great story.
+
+He was on some podcast, maybe Joe Rogan. And he was like, you know, I just want to be the director of, of my own life. And I want to live my life like a movie.
+
+And what you're describing is sort of like that, where you're like, I just, I am destined for greatness. And like, we are taking on this, uh, amazing, uh, problem. And like, we are going to do wonderful things and it will be hard, but we will triumph.
+
+And I think that's a, that's actually great. That's a great story to tell yourself. And I think it's very motivating and it makes life more exciting.
+
+I think that's really cool. Yeah. So I actually, uh, wrote a, uh, a blog post.
+
+The title is do what makes the best story. Uh, and, and the idea is like when you're faced with decisions where there's no obvious answer, like the fork in the road where the pros and cons are sort of the same, the heuristic I use in my life is like, what is a more interesting story? And obviously like Elon talks about this, like the, the most, uh, the most entertaining outcome is, is most likely.
+
+Uh, yeah, I wasn't thinking about it in terms of entertaining, but in terms of like, what makes the story interesting. If, if my life was a movie, what would, what would be exciting about, about that story? You know, for example, when, when I was in college, I was like coding all the time and I wasn't really going to class.
+
+And so, uh, so I was failing a lot, not because I was failing the exam because, you know, they would bar me from the exam because I wasn't showing up. And, and I decided to, to hack the university to change my grades. And we're not talking like metaphorically, like a life hack.
+
+No, no. You actually hacked into the servers and changed your grade. Is that what happened?
+
+Yeah. I w I went into, into the basement. I spent like two weeks.
+
+I did the, what's his name? The famous inventor, Michelangelo or something like that. I did his sleep, polyphasic sleep where you work for hours and then you sleep 15 minutes.
+
+And it was, it was sort of like, I was writing on the wall. I was like, it was like a full on insanity. Were you angry?
+
+Why did you decide to hack them? I know so many smart people who work so much harder to cheat or get around the thing than just doing the thing. And, and there's like a 50% of the time they end up being like losers.
+
+And then 50% of the time they are in fact like the greatest. They're on this podcast. Yeah.
+
+Well, I think it is like some ADHD, right? Like you can't sit, you can't sit in class, but if you're interested in something, you're going to like hack and like work on it a ton. Right.
+
+Right. And I almost got away with it, but the servers at the, at the university crashed and it crashed on my record. So the, one of the administrators there gave me a call and he, he said, look, there's like this, there's some anomaly in your, in the, in the record of your exam and school and it's crashing our databases.
+
+Do you know anything about it? And I was like, what's the anomaly? And he's like, you know, there, there's a field in the database that says you're barred from the exam and your grade should be, should be 35.
+
+That's, that's the default grade of, of failing the exam. And instead my grades were like, you know, 75, 90, whatever. Um, that's the, that's what I entered into there.
+
+And I didn't understand that there was another field by the way that, you know, that that's not good, good design for, for a database. Um, and so, since then I, I, I, you know, I had, um, there was a fork in the road. I could, I could lie and I think I could get, get away with it and, uh, you know, and, and just say like, that's a bug on your side.
+
+And, but I was like, what's the most interesting story? Um, is they, they catch me and it becomes a story that people talk about. And, and I was like, okay, I'm just gonna, I'm just gonna like come clean and just, uh, tell them what I did.
+
+Uh, so you're like better, better than getting the grade would be getting the reputation. Yes, exactly. So you tell them and then what happened to kick you out?
+
+No. So, um, you know, I, I, I'm kind of a convincing person. So I, um, I go the next day and it's like all the deans there and they're discussing my case and they're like trying to find out what, what I did.
+
+And, and they're all computer science deans. So I went in there and I changed the subject to technical aspects of the hack. And I drew on the whiteboard and show them what I did and, and all of that.
+
+And they were very impressed. It's like a goodwill hunting moment. It, it, yeah.
+
+And, and like my reputation back then is like, I'm, I'm a loser. I'm failing everything. Right.
+
+I don't show up to class and, and it is, it is kind of like goodwill hunting. And then, um, you know, they say, okay, you have to go talk to the president because I think he, he's going to make the final call. So I, I go, uh, to, to the president and, uh, and he's a very intellectual person and we talk and I, you know, I tell him like, look, you know, I, I have this talent and I feel like it was undiscovered and I feel like I was treated unfairly.
+
+And, and, and I, I use the, the, you know, I use the university as my sandbox. Like I didn't like, you know, I came clean or I didn't, uh, you know, mean to, to do anything, anything bad. And, and, and, and he gave me the Spider-Man line.
+
+He's like, with great power comes great responsibility. And it actually affected me. And I was like, okay, you know, you know, I think, uh, you know, I, you know, I, I, I need to do something in order to, to, to, to kind of pay back.
+
+And I told him I'm going to work, uh, this summer for free to, to make sure I secure your, your databases. And so they, they let me off the hook and they're like, okay. That's awesome.
+
+Yeah. What a great story, dude. That is an amazing story.
+
+Sam, by the way, would you ever want to compete with Omjot at anything? No, this is like this mentality. This is, uh, it's scary.
+
+Like, yeah, I would not want to. You're like, excuse me, Dean, have you heard of the word prodigy? Uh, you're like, you're like, you're like, I have my talents haven't been used well at this university.
+
+I accept your apology, Dean. It's like, why are you failing me? Yes.
+
+Yes. That's so good. Okay.
+
+So I love the principle. Do what makes the best story. I love the hack story.
+
+That's, that's amazing. Where we, how did we get here? We were talking about, um, YC.
+
+YC. Okay. Sorry.
+
+Let's get to the story of YC. Yeah. Because that's where we started.
+
+Okay. So Sam's like, yeah, you should do YC. Actually the batch starts tomorrow.
+
+Why don't you fill an application? It's just a, just a, you know, process, uh, you have to do. And we can do a late interview tomorrow.
+
+And I'm like, fuck, I want to fill the application again. Like you made me do it like four times. Like, I don't want to do it again.
+
+And so, you know, I, I kind of do a bare bones application about, about reflet. And then there's the video. I'm like, yeah, man, I don't want to, I don't want to do the video.
+
+So, so I, I pasted, uh, a YouTube link and we go the next day, uh, Haya and I, by the way, for people who don't know the YC applications, like one page, it's like six or seven questions, but then they say, upload a video two or three minutes. You're talking about your startup. So that's the video part.
+
+And then the interview is 10 minutes where there's rapid fire. So you have like 10 minutes and it's like this make or break thing. It's less than a lunch, you know, like there's less than a job interview.
+
+It's more intense. So you're waiting around for that. Yeah.
+
+I mean, my view was they recruited us to YC. Like, why are you making us do, do, do this stuff? Right.
+
+And, and so. Yeah. I was going to ask that.
+
+Like they're asking, they're acting like, you know, Paul Graham's like, you know, maybe I could pull some strings. It's like, I know a guy. Yeah.
+
+Like you're the guy. So I, I don't understand what they're, uh, what they're bullshitting. I don't get it.
+
+Well, I, I think they, they wanted to, to just like go through the process. It's like the process applies to everyone. And I, I respect that.
+
+So, uh, you know, the, uh, they, they call us to, to the interview. Um, and, and I walk in and, and there was, uh, Jared and Dora and, and, and all these amazing YC partners. And there's Michael.
+
+He was the CEO at the time. And I shake their hands and I shake Michael's hand and, and I felt like his grip was, was a little too hard. I was like, okay, that's fine.
+
+And then I, I go sit down on the chair and, and the moment I sit down, Michael looks at me. Why did you recall us? Oh my God.
+
+And, and, and I'm like, you know, we, we applied several times and, and I thought it'd be fun to do. And, and, you know, I thought this, this interview was just, uh, we're just, you know, formality and, and, and he's like, that's not how you get into YC. And he was, he was very, very angry.
+
+Well, it turns out when we're sitting outside, they were getting rickrolled inside, right? So, say, imagine their mindset, looking at the application and, and, and getting the, the, the, the Rickroll song. And, uh, and then they give us a very tough interview.
+
+In that moment, did you, it's like, and that's when I realized I fucked up. Like, did you realize like. Yes.
+
+How I'm coming across? Like, what, what, what was your mindset there? Like, they must be thinking.
+
+I was nervous. I was very nervous and I was regretful, uh, immediately. Yeah.
+
+Cause you probably, it's like, oh, here's this entitled, uh, just another, just another tech entitled guy when they don't know you're like immigrant from Jordan. Who's like scraped his way here. Right.
+
+They don't, the reality and how you were coming across weren't connected in that moment. No, they weren't at all. And, uh, and so, uh, and so I, you know, we go outside and, and I tell hi, okay, this is done.
+
+Let's, let's call an Uber and get back to work. Like we don't have, we don't need to get into YC. So I call an Uber and, uh, just before I arrive, I receive a call and, and I, I take the call and it's like, Hey, it's Adora.
+
+Uh, you got in, come back. Uh, the, the, the kickoff is about to start. And I was like, what?
+
+Are you sure? She's like, yeah, come back, sign, sign the paperwork and get started. So I was stunned the whole day.
+
+Like it was, you know, we start, we go to the dinner and I'm like, you know, you know, phased out and, and, and all, but, but like, it was really exciting. And, you know, people who, who, who's never been to the YC office and, and mountain view, it's all orange, like bright orange and, and the lights and everything. It feels like a cult like environment.
+
+And like, isn't it like a, I think I've seen the inside. Doesn't it like a, like a, they have like a steeple or isn't like one of the rooms that like is a triangle, like a church almost. Yeah, yeah, exactly.
+
+And Sam gets up and tells us what, what the experience is going to be. It's like, this is the hardest time you're going to work. You know, you better tell your friends and family that you're going to go away for three months.
+
+You can't help them move or all of that. You just got to be focused on, on work. So Haya and I like took it very seriously.
+
+Okay. I was like, okay, this, these three months are, are, are very important for, for the success of the company. And we transformed the product in these three months.
+
+It went from a simple sort of editor output to a place where you can host applications and build real things and all in three months. So we're working, you know, 12 hour, 13 hour days. And, and, and it was, it was only three of us at the time.
+
+Our first employee actually was, was sort of a runaway kid. He grew up in California, a little down, down South. And, and he didn't want to go to school.
+
+And so he leaves his, his home. He goes to hack reactor and, and he becomes, he becomes a programmer and he was 18. He was looking for a job.
+
+I knew the guys at hacker actor, they use replet. And I'm like, send me your best programmer. And he's like, look, this kid is a little awkward, but he's the best.
+
+And so he comes in and he yells at our interview. Music to my ears. Yeah.
+
+And basically I like him because, you know, it, it mirrors kind of my life story a little bit. Where's this guy now? But we got him, we got him some liquidity after six years of working.
+
+I felt that's the right thing to do. And because he was kind of burnt out and didn't want to continue. So I, I called my, I called my brother in Jordan.
+
+I'm like, look, you gotta, you gotta come out here when YC, you need to. And he's a programmer. I taught him programming when he was a kid.
+
+And I was like, you gotta, you gotta come, come help us. And he's still with us today. And I called my friend from Code Academy, Moody.
+
+He's still with us today as well. I'm like, you gotta, you gotta help us. Like, like, you know, you could do it remotely.
+
+And so we assembled like a team of five people essentially. And so we, we go really hard and we were like one of the hottest companies in YC at the time. And can you give some sense of the scale of it now?
+
+Like, you know, I invested in it. Probably a year ago or so, two years ago, something like that. I don't know when, but the numbers were off.
+
+You had user growth. First, your graph looked like a hockey stick because you zoom out and you, you, you, you ignores all of the little like years where nothing was really going on. But you have this crazy growth.
+
+But the crazy thing about it is that your growth was developers. So it's like, you know, one developer user is worth, I don't know, 10, 20 times, just like a normal internet user. But you had this crazy hockey stick growth of developers.
+
+Can you talk about, can you just say a couple of like permission to brag? Can you say a couple of brag worthy stats that would impress us? Yeah.
+
+So, so Replit was very easy to get started with. And so people would start, uh, starting, using it in college or high school and continue using it for many years. And so it was sticky for especially junior developers when they're starting out.
+
+Um, and, uh, and it was, it was spreading on its own, like word of mouth. Uh, you know, there was a viral component to it. People can share URL and then suddenly you're in the same environment as them.
+
+Right? Like, and then we have this like multiplier coding experience. And so people were collaborating and, um, and also, uh, COVID was really great for us because we were, I think the only collaborative editor experience on the web at the time.
+
+And so a lot of people were remote and, and needed something to work with, uh, with each other. And so, uh, Replit was adopted at the time. And so the, the, the growth, uh, was, was off the chart and the servers were going down and the marginal user, any web app is sort of like zero, zero cost.
+
+But for us, it was, uh, you know, we, we try to optimize it a lot, but it was still on the order of like one to $5, like a month. And, you know, the, the growth was off the charts, but I, I, you know, I have to admit it was hard to monetize at the time because, uh, developers are actually not used to pay for things. Now they kind of are paying for things because of AI, but at the time they, they weren't, uh, they weren't paying.
+
+And then, um, you know, as, as we added limits and things like that, that they felt like they, they can like move on and set up their own developer environment. And so it took, took a lot of, you know, creative thinking to figure out how to charge for people. And ultimately AI was the thing that, that people are paying for.
+
+And the reason is like the productivity benefit of AI is like, uh, it's like obvious. Um, and people was like, okay, this saves me time and makes me a better developer. And so people are paying for it right now.
+
+Well, can you give any indication on how many users or how many, um, how much revenue the businesses, you know, signups, we, we have like more than 30 million, I think 35 million, uh, users right now in terms of active users, it kind of fluctuates, but. You know, three, uh, you know, two to 3 million a month, probably a hundred thousand, uh, apps hosted, hosted on Replit, um, because you can build an app and, and, and deploy it all in, in one environment. Um, it, in terms of revenue, I can't share right now, but like, uh, especially this year, it's been like exponential growth.
+
+Sam, check this out. This agent thing, I gotta show you this. So you, you haven't used this, right?
+
+Sam? No. All right.
+
+So, so watch this. So yesterday I was like, I'm gonna mess around. I was doing research for this, but I was like, I, I just got like sucked into Replit and I started doing that and stopped doing research.
+
+So I go and I, I go to Replit and it's changed. Cause now when you, before, when you would go, it would be like, here's a coding screen with a blinking cursor and it's like, write some code. And I'd be like, oh, cool.
+
+I don't really write code. So I don't know how to use this product exactly. Maybe I could learn to code.
+
+Maybe I could, uh, you know, pay somebody to, to build something on here, but whatever I was stuck. So now you open up Replit and it just, it's like chat GPT. It just goes, well, so what would you like me to create?
+
+And so I go on there, watch this. So I go, I'll give you the exact prompt. I said, build me an app that will text me every morning asking how I ate yesterday.
+
+Let me answer via text messages and then track the results on a monthly calendar grid. If texting doesn't work, you could also use WhatsApp or something else. Okay.
+
+So basically on the right here is just like the chat and it just goes, absolutely. Let me propose what we'll build. And then it just kind of like explains to me like a project manager.
+
+It goes, I'm going to help you create a food tracking app through SMS messaging with a calendar visualizations. We'll start with the SMS later. We can add WhatsApp as an alternative.
+
+It's like, okay. Okay. Prioritizing things.
+
+That's interesting. And then it goes, the Apple sent daily messages, blah, blah, blah. And then it goes, how would you like me to proceed?
+
+And it's like, there was like, you know, add more features, change the instructions or like go ahead and build the prototype. So I clicked build the initial prototype. And then literally, I don't know if you can see this, but like it starts like auto scrolling as it's writing code.
+
+Like this is all just a code it's generating. So like, you know, like I'm not doing anything. I'm literally sitting back with popcorn while this is happening.
+
+So it's like, here's your calendar grid. And it's like, uh, Hey, I need, I'm going to use Twilio for the SMS. It decides I'll use Twilio for the SMS.
+
+Can you go to Twilio and give me your account and your phone number so that it'll be like we use Twilio for sending SMS. So I go to Twilio, I give it my SMS. And then it's like, it's made, it literally made the thing exactly how I want.
+
+So this works now. Yeah. I actually got stuck on the Twilio step because Twilio has to verify my phone number.
+
+So it like, it hasn't verified it yet, but I can go into, I, in Twilio, I see it tries to send me the message and it's just as awaiting Twilio verification to like be able to use this. Um, so I'm like a little bit stuck there, which is like a common thing with agents. I feel it's like almost absolutely incredible.
+
+And then kind of frustrating at some point where you have to like, you know, fight through some walls. Well, I think I'm just tweeted. I think he said, uh, I want people to be able to build an app faster that they can just Google the answer to a question.
+
+And that's exactly what happened here. Well, that's insane. So this screenshot, uh, is the agent looking at the result is trying to verify this.
+
+So this is not the running app. If you click run, you can hit the running app. It says the top took a screenshot and then it shows it to me.
+
+It's like, Hey, is this how you want it? And I was like, Oh, cause before it had it where it was like not the right month on top. I go, Oh, put the month on top.
+
+Like don't say monthly food tracking, right? December. And then it also said like, Hey, would you like any other style improvements?
+
+I can make it broader. I can change the color scheme. And I'm like, dude, this is literally better than an employee, right?
+
+Like first it's instantaneous. Uh, second, I could, you know, I don't have to pay, pay somebody to sit in the desk, to sit around waiting for me to do something. I had a, uh, idea on a whim, go to rep it and did the thing with the agent.
+
+This was, uh, like, there's been a few like mind blowing moments for me in my like tech career, you know, like I graduated 2010. So I'll start at that point where it's like the first time I took an Uber, I was like, holy shit. That was amazing.
+
+I pushed a button, a car showed up. The guy got in. I didn't even have to pay for, like it just paid through my phone.
+
+That was magic. And I could see, you know, I could see him on an app getting closer and closer to the restaurant. That was like one of them.
+
+You know, chat GPT for sure was another where I could just, you know, tell it to make something and it would write something and it would write it for me. This is another one of them. This is the first AI agent thing that has like been a mind blowing moment for me where, um, I am not a programmer.
+
+I am not a coder, but I can now create software. This is like amazing. Can I ask a blunt, crude question?
+
+How can I use your software to become a billionaire? Because like, I see this and I'm like, you know, like the, the, the ridiculous analogy that I use is I'm like, uh, I feel like an artist sometimes where I like, I feel like I have the ability to conceptualize certain things, but I can't paint. It's like, I can't fucking paint what I want to paint.
+
+That's in my head. Like, because I literally don't have that skill set sometimes. And so like, I'll be working on stuff and I'm like, dude, I want this to do this, but I got to go talk to this developer and I don't want to have this conversation.
+
+And that's just like a pain in the ass. And so like, you basically are making it so I can finally express myself easily. I like how you're on the first date.
+
+You're like, how can I get you to take the clothes off? You're like, how do I use your thing to get really rich? I mean, that's basically like, like you had on the document, you're like, uh, here's just, here's the opportunities.
+
+Just use Repli to do X, Y, and Z. And I want to go through that because this is like amazing. This is actually, you know, there's like, there's like a viral clip on YouTube or Twitter, like a bunch of places where it's like the headline, which we probably have used, which is like billion dollar one person companies or something like this.
+
+You're the closest person to this probably, uh, to that question, to answer that question. Yeah. So there are apps, uh, built on Repli agent that otherwise would take probably a hundred thousand dollars of, of developer, uh, time.
+
+And, and you can build it like in, you know, $25 paid to Repli. I will say that there there's limitations, right? It, it is not, it is not perfect.
+
+This is like the worst it's, it's, it's going to be. It, it sometimes gets stuck with problems. You can, you, you need to have some skill in prompting to coax it, to like, uh, figure it out.
+
+And it's sort of like teaches you over time because it tells you what it's doing as it's editing the code. Right. And so over time you're learning how to use it.
+
+You're actually learning how code works. You're learning how maybe you're not learning how to exactly type code, but you're learning the different components in where things could go wrong. You're learning about database.
+
+We have like database. You can go in and look at the tables and look at what's happening. And so, you know, the division for this is that that's all you need.
+
+That's all you need to build an entire startup. And, you know, every day we're inching towards that, you know, and I, I talked about like pushing the boulder up, up the hill. And I think that's one of my, one of my talents is like, okay, what are the problems that you can make progress on every day and every week such that, you know, in a year time you have this exponential progress and the product is so much better.
+
+The other thing is we're riding this wave of the foundation models getting better. So every time they get better, we plug in a new foundation model and the product is suddenly better. So you're riding this, you know, two exponential curves, which is like the engineering we're doing, but also the underlying models and infrastructure is, is, is getting better.
+
+So I think in a, in a year's time, it's going to be really mind blowing. In a couple of years time, I think we're going to see stories like someone getting super rich, making an app and replet that, that sort of goes viral. And so we're adding Stripe integration right now.
+
+You can, you can already use kind of Stripe on, on replet, but we're adding integration that makes it super easy to start monetizing your app. So Sam said, how do I get rich? And you're like, disclaimer, it's not fully there yet, but now you still have to answer the question.
+
+I mean, the question is like, what kind of applications? It's like, what are the ideas? What kind of applications you can build?
+
+I would say AI applications are, are growing really fast. Like the revenue ramp in some of those AI applications is kind of crazy. Can you, can you tell the story of Magic School?
+
+I thought this was really interesting. Yeah. So Magic School is like an AI application for educators.
+
+It's, it's basically like helping them use foundation models and LLMs to do their work, to do assignments for, for kids to have an interactive like AI experience. And so it's like a full suite of AI for educators. The guy who created it is a, was a teacher, right?
+
+The guy who created it was a teacher. He took some time during COVID to, to learn how to code and he started using replet and him and, and I think another person built the initial thing totally on replet. And because you can go from an idea all the way to deployment and, and it immediately started growing.
+
+Like, um, you know, people, these AI apps, like when, when the adoption starts happening, it goes super viral. You don't need a ton of marketing. And the revenue ramp was, was one of the craziest ones I've seen, especially for education.
+
+Yeah. It was like a known thing. It was like hardest thing you could do selling into schools, into teachers.
+
+They're overworked. They're underpaid that they don't have the time to like figure out your new tool, but this thing is great. So if you, if you go to it, it's basically like, because teacher spends a lot of their time, not in the classroom.
+
+It's after, after school is done, they have to grade papers. They have to create the lesson plan for the next day. They have to create the quizzes or the multiple choice tests.
+
+And they have to like, so they have to constantly do this. And there was these platforms like teacher pay teachers where I could just, if I don't want to make it myself, cause I'm tired after the school day, I might be able to go buy one for nine bucks from another teacher who teaches fifth grade science in some other state. And I would take that and I would, I would buy it that way.
+
+What magic school did was, it was like, cool, generate a quick, you just say like, I want to, I teach, you know, fifth grade biology. I want to do a pop quiz about, you know, how this, how mitosis works. And then it'll basically create either a lesson plan or a quiz or, you know, a, a, a, a student like interactive, like, you know, workbook that they need to create or whatever.
+
+And so it lets a teacher not have to spend, you know, four hours a night creating the materials that they need just to teach class. Cause AI can do it for them. And this thing looks, I don't know these guys, I don't know anything about them, but it says, you know, over 4 million educators are using this, which are 4 million educators and their students, which I don't, I don't know if they're counting.
+
+Well, if you go on similar web, they have millions of monthly unique. So that's like a really big, I think they raised like 20 million bucks too. Yeah.
+
+So I mean, that's like a pretty huge signal. So they, they launched in like, I want to say July, 2023. So then like a little over, over a year.
+
+And do you know that these like SAS metrics are like how long to get to whatever, like a hundred million or whatever the AI apps. And I would say magic school is on that trajectory is like, just like that, you know, the curve is like, you know, all the way straight up. This is kind of weird, but maybe this is like a feature of yours that you helped this company become potentially one of the faster growing companies of all time.
+
+And you only earned $20 a month from that. Yeah. So Replit had, you know, always a problem of value capture.
+
+Partly that's why like VC struggled with it for a long time. So that there's some logic for why it is hard to monetize these things and like capture some of the value. I will say, you know, I invested in magic school, so there's some of that.
+
+And with AI, I think we're going to be able to, you know, you know, capture at least a little bit more of that value. If people are monetizing these apps on Replit via the agent, there's a way I think where we can potentially take a cut out of that, especially if we make it like super simple to start monetizing an app. And also like if once we reach scale, you know, it is like chat GPT, like you don't need a lot of skill to do that.
+
+And it's going to get easier and easier. Once we reach scale and you have, you know, millions of people paying for this, and it's not just like 20 bucks, you're going to pay incremental after you finish your credits. So we give you monthly credits.
+
+And then afterwards, if you want to continue, you can like buy more credits. Are there other companies like Magic School, like cool companies like that you've seen that maybe we haven't heard of that are using AI? Yes.
+
+So, you know, I'm very excited about agents right now. And, you know, I think I predicted earlier this year on a podcast that, you know, this is going to be the year where like agents are born. And next year is like where agents are going to scale.
+
+So there's this company called 11X. And 11X creates AI SDRs. And so basically, you don't need to hire SDRs.
+
+Like there are some companies that feel like, you know, they can bootstrap their sales without SDR. You can have like one AE and that AE account executive is like running these like tens of AI SDRs. And the revenue ramp on 11X was also crazy.
+
+It's pretty wild how fast these companies are scaling. I don't think in the history of Silicon Valley, we've seen anything like that, even in the like web 2.0 era. So what is like a fast ramp for AI, maybe not 11X specifically, but just for an AI company?
+
+What's like, what's impressive that kind of broke the frame of how long things would take, but you've seen it now? Yeah. So I would say reaching 10 million in three to four months ARR.
+
+Oh my God. That's wild. Yeah.
+
+Yeah. We, I invested in Jasper, which was like one of the early kind of chat GPT rapper type of companies where they was like, Hey, like marketing, you know, you need to write a blog post. You need to write a description for a product or whatever.
+
+And so you could use it for writing any kind of marketing copy. And their graph was, I'd never seen it. It was like in 10 months or 11 months, they scaled like 50 million in annual recurring revenues.
+
+It was, it was like, I've never seen anything even remotely close to that. It was, it brought up a question like, is this sustainable? Is this like, what is happening here?
+
+Like this is, I've just, it doesn't compute, but it definitely broke my frame of what is possible because I'd been working, you know, in Silicon Valley since, you know, 2011, 11, 12. And that just, that wasn't a thing. You would never see a graph like that.
+
+What are some other companies that have gotten to that like 10-ish or 10-ish million or similar trajectory in three month type of businesses? Yeah. So this is, I wanted to kind of give a, you know, sort of a disclaimer about this, which is the big question in the investor community right now is like the moats question.
+
+And that, that started around the time that ChatGPT kind of came out and there was these GPT wrappers, sort of this condescending way of looking at a lot of these companies. It's like, ah, if you can create a GPT wrapper, you know, in a month, then, you know, a lot of other people will create GPT wrappers in a month and you're going to be competing on price and the margins go down. And yes, the ARR is great, but you're, but Anthropic is capturing or, or, or OpenAI is capturing most of the ARR, not you.
+
+You're kind of a, you're kind of like a middleman and you're going to have like a hard time having, having margins. And, and I think it's, it's totally a valid question. Um, now I think, you know, moats develop over time, uh, through, uh, strategy and technical excellence.
+
+So, I mean, some of these companies can go down pretty fast and there are examples of that, uh, right now. Um, but, uh, but I think if you, it, you know, you can have, you can start building technical like with Replit. And again, this like idea of like pushing a bull up a hill, you know, we have this runtime environment.
+
+We have like this infrastructure, we have the deployment, we have databases, we have all these integrations. I mean, it's the only one in the world that is like an end to end environment to, to make software. And like to catch up with that, it's going to take years.
+
+Right. And so, again, it's a big question. I don't think it's answered yet.
+
+You know, there are, there are strategic things you could do if you reach scale, if the switching costs are high, you know, that, that may be like a way to, to, to have sustainable moats, but, but it is definitely a big question. You know, it's crazy, Sean, like for the long, I hate using the D word democratize. I think that's like such an overused, like Silicon Valley.
+
+Don't do it. But this is actually one of those few examples where like, for the longest time, building a website or a web app, like you just literally couldn't. And so now you are making the technology that everyone can do it.
+
+And so what I think is like, guys like Sean and me, or people like us who have an audience, it's like, why don't we just, why aren't we like constantly launching like companies using this technology? Because like our ability to get users, because we just get on the microphone and talk about it, that's like actually a competitive advantage. Whereas being technical is no longer, it's still an advantage, but it's not as much as before.
+
+It's like getting customers now is actually the only hard part, which is still hard, but it's way easier if you're popular. Yeah. So, you know, the playbook I would use is like, I would go into some inefficient market or industry.
+
+So a deal from Magic School went into this hugely inefficient industry, which is schools and education. And by the way, another product is Synthesis Tutor, which is also going viral right now. And they have also this revenue ramp that's kind of crazy.
+
+Both Sean and I invested in that company. I think all three of us did. Yeah.
+
+Yeah. And for a while they had like this thing where like, you know, they had educators on the payroll and whatever. They replaced all of that with AI.
+
+Now, like, you know, the kids sit in front of the iPad and they're talking to the AI and like learning really fast and it's much better than the previous product. Right. So basically like find an industry where you're familiar with and just like build a GPT wrapper to like automate some of the work there.
+
+And like you could do it like a hundred times and one of them will take off. Yeah. It's the era of the idea guy now.
+
+It's our turn. It's our turn to shine. Right.
+
+Because now the limits and the kind of the value creation is do you understand a problem well enough to know how to take this really powerful magic wand and point it at that problem and be able to make that more efficient. And then of course, do all of the other hard things, go get customers, make it sustainable, build a good team, you know, like do all the normal entrepreneurship stuff. But it seems like more than ever having a great idea is the kind of like key unlock to doing these things because building has become easier.
+
+And I'll give you kind of my my personal epiphany that I had while I was doing this. So I invested in repli mostly when I just thought you seemed really smart and I saw a growth curve of developers using it. And I thought, oh, cool.
+
+Like I've experienced this problem before, like a one stop place where I can come in, write the code, host it. All the all the stuff you talked about, like don't have to download Java, don't have to do any of that shit. I did that that appealed to me at the time.
+
+I think actually in the same way that synthesis like took AI and actually almost like really like 10x to the value prop of the business. I think you guys are doing the same as well. Here's my quick pitch, which is now that I think of repli as like basically what Shopify was for creating, you know, like online stores.
+
+I think repli is that for creating software. So to me, you guys are. Dude, his eyes just brightened when you shopify for software.
+
+So like I'll give you my example. I recently celebrated a milestone that was both. I was proud of it and really embarrassed also.
+
+So a few years ago, I started a e-commerce brand and we just crossed 50 million in revenue, like kind of like cumulative lifetime revenue. Half of it was like, you know, this year, but but 50 million total. And I was like, wow, like 50 million.
+
+That's great. Like that's I had never created a business that had done 50 million in revenue. So that was like a personal pride point.
+
+At the same time, I was telling it to a friend of mine who's not an entrepreneur. He's like, yeah, man, I would love to learn how to, you know, like make websites and like make products and manufacturing. And I was like, I don't know how to do any of that.
+
+Like I was, I was like this, this brand that is a 50 million in revenue for me. I don't, I just stacked Alibaba times Shopify. I've never manufactured a product in my life.
+
+Still don't know how to. And I've never made a website that's like, you know, actually used by customers. Still don't know how to.
+
+But I was able to, I was able to skip all the work and get to the brand part, like do the thing where we created a product that people liked and you know, it's a successful company now. And I thought, wow, Replit's going to do that for the software space. And I was like, it used to be that the job was software engineer.
+
+And now it's going to be software creator. It's like, I can be a creator of software without being a programmer myself. That little shift is a big shift because the way I think about it, I don't know how many developers there are.
+
+I think GitHub has like a hundred million or 200 million accounts. So I'll just use that. Like there's 200 million, let's say, developer, you know, software engineers in the world.
+
+Well, now there's going to be 200, 2 billion people that can create software. Because if you've got the internet, you've got your phone, you can create software now. You can just tell the agent, make me an app that does this, make a tool that does this.
+
+And so you 10x the number of people that can create software in the same way that Shopify and Alibaba 10x or more the number of people who could create products and go sell them like hard goods. That's how I see what you're doing. Yeah.
+
+So even at the start of Replit, there's our initial seed deck. And the deck kind of has this Elon Musk style, like, you know, master plan. Master plan.
+
+And it was like, we build a platform, we grow it, and then AI is going to make the thing a lot more accessible. Because our mission was make programming accessible. Then we updated our mission was create a billion programmers.
+
+And then so the moment that, you know, even GPT-3 came out, I was like, this is the thing. And I wrote this thread on Twitter about how AI agents will just change how programmers work. This is the deck.
+
+So 2015, this is, I don't even know if OpenAI was a research lab at that time, maybe. Definitely, you know, there was no chat GPT, but this is your master plan deck. So we're going to grow by building tools for teachers and students.
+
+We're going to build a simple network and AI assisted interface that blurs the distinction between learning and building. Evolve into a platform where people can learn, build, explore, and host applications. Like talking about AI back in 2015 in your actual pitch deck.
+
+Dude, it's also clear how Code Academy was highly influential to you. Because I remember, years ago, Sean said, everyone tries to learn how to code. I used Code Academy, and it was a pretty cool interface.
+
+And it's very similar to what you're describing. You know, at some point, I kind of lost hope in courses. Because like, you know, we have 100 days of code, we're telling users that to use our application, you need to invest 100 days.
+
+And that's kind of crazy. Like there isn't any like, successful company in the world, you need 100 days to learn it. And so that's when I kind of changed my mindset.
+
+And I said, okay, it needs to be chat GPT like it needs to be just a prompt. And we started building that earlier this year. And now that's all we're focused on, we want to create new programmers.
+
+You know, existing developers, great, they have a lot of tools. But we want to we want to go after the citizen developer, right? Everyone is a developer.
+
+And I think that's, you know, that's what you're talking about. You go from like 100 million developers in the world, I think it overstates the numbers probably more 30 million. And then you 10x that is what does the world look like, when anyone with an idea could could make something.
+
+And one of my favorite books is the sovereign individual. The thing I really was excited about is this idea of ideas become wealth. And so you no longer have the bottleneck of making something.
+
+That's where we're headed. And this is what you're talking about, Sean is like the the it's the time for idea guy. And like, maybe that's, you know, tongue in cheek.
+
+And like, maybe the way to talk about it, in more precise terms, is that people who can find these gaps in markets, people who have expertise in certain areas, that they can tell there's inefficiency, and they can like create a AI application that can immediately plug that. Like I saw this video on Twitter the other day, it was of a snake that got its head chopped off. And it like, floated around and bit the bit like the tail of its own body.
+
+And then like the body like reacted, your employees, are they thinking that this they're sort of doing that to themselves? Where they're like, like, like, like, when you make jokes, dark, or like, when you're like, talking like, you know, like, you don't need to hire all these programmers to do all this stuff. Are they like, sitting there with their hands in their pocket?
+
+Like, like, does that mean us? You know, I always wanted the company to be super lean. And so for a long time, we're like 10 people.
+
+But like, now we're like 70 people. That's still nothing. Yeah, so I'd rather not hire a lot more people, because I think that, again, the efficiency for programmers, so look, citizen developers are going to go from zero, to like, say 10x.
+
+But also existing software engineer are going to go from 10x to 100x. Right? And so, and so they're going to become more and more productive.
+
+The moment we, we automate all of software engineering, I think that's sort of like the moment of AGI. So I think it's like a little far away. And the reason I say this is because once you automate software, then the agents can rebuild themselves.
+
+And you go into this, into this loop of, you know, increased intelligence, every version builds its next version, builds its next version. And so this is what they call intelligence explosion that would lead to the singularity, right? So it's like a pretty crazy time when we automate all of software engineering.
+
+And so I think, I think it's coming. I don't know if it's 10 years or 15 years. But I think that's the time where the world really radically changes.
+
+Have you met anybody in kind of the tech industry that blew you away, either personally, or maybe you've read about them, maybe met a friend of a friend told you a story? Because I saw a picture of you with Jensen. You know, you've met Paul Graham.
+
+I know that you're like connected in the AI circles. You met Sam Altman. In addition to building the tech, I love the characters.
+
+And I love the stories is why every, you know, Elon snippet of how he runs his companies goes viral and shit like that. What are your favorite kind of inspiring stories or crazy stories that you've either experienced directly or read? You know, one of the craziest stories when we're raising from A16Z, Mark invites me to breakfast at like 10 a.m.
+
+at his house. And so I go there and I expect like I'm going to talk about the business. And so we spend like two or three hours talking about politics and the world and like all sorts of things that are interesting to him.
+
+And I thought like this guy is like, is like more than just a technologist. He's like a philosopher. And so right now he's going out and he's talking about this stuff.
+
+Like his Joe Rogan interview went super viral. And he's been always have like these interesting ideas about the world. And the interesting thing about A16Z is his partner Ben is sort of like the executor, sort of the executive, right?
+
+He wrote the hard thing about hard things where like he teaches you like about what it means to run a company. It's painful. It's hard.
+
+And what it means to hire executives or what it means to scale a company. And so you have this duo of like the doer and like the philosopher. And I think that's really amazing.
+
+And I think they have really big plans. And if I was the doer, I would just hate the philosopher. I'd be like, are you going to do anything?
+
+What are you talking about politics for right now? It's got to be the worst to be the doer and the doer philosopher relationship. You know, I think Sam was interesting to kind of meet him and talk to him because he's very effective.
+
+Like he, like the first time I met him, or like maybe not the first time, but like he was on his computer as I'm talking. And so I'm talking, I was like, yeah, we're fundraising. I went to talk to, you know, A16Z.
+
+I'm like really big fan of Mark. And he was typing on his computer. Okay, I introduce you to Mark.
+
+And then, you know, when you send Sam emails, it's like pretty quickly replies with like, you know, a couple of words or like a couple of sentences. So I saw how effective and fast you can be. And that, I'm not like that.
+
+You know, I'm trying to be more like that. But I'm someone who really values the quietness, like to think about ideas and to think about strategy and things like that. So I'm not always on top of communication.
+
+It actually makes me like a little, you know, it's overwhelming. But I think seeing these people, at least, you know, inspired me to be a little more like that. You tweeted out this story that I loved about, you said, the most gangster story in Silicon Valley is Steve Jobs buying Pixar for $5 million, investing $50 million, and operating at a loss for a decade.
+
+So much so that he had to cut personal checks to make payroll and somehow turning it around to a $7 billion exit. Why did you like that story? You know, there are people who are overrated in Silicon Valley, and I think there are people who are underrated.
+
+Like, I think people think about Steve Jobs in terms of like, yeah, the flashy things, iPhone, iPod, you know, coming on stage and doing that. The thing I like about the Steve Jobs story is when he was lost in the desert for 10 years. So he left, he was fired from Apple.
+
+And then he created two companies that were failing the whole time. Like, next computing, next computers, and Pixar were literally failing. Like, they didn't do anything.
+
+You know, they weren't selling. He was just like investing more and more of his money. Like, I think he was going to go broke.
+
+But he kept going for 10 years. Like, how do you do that? And, you know, I'm a person who, like we talked about in my story, where I want to be able to go the distance.
+
+I think going the distance is an advantage for entrepreneurs. And Pixar became this hugely valuable company. And it goes from making no revenue to making billions of dollars and going public over a couple of years.
+
+And next computers saved Apple. Apple was having a problem with OS. Like, Intel, you know, they had a chip before.
+
+I don't know. They made it internally or something like that. And then everyone was moving to Intel.
+
+Intel was the best computing chip. And they wanted their computers to be fast. And so they needed a new operating system.
+
+And they tried to buy. They went to the market. They tried to acquire companies.
+
+They couldn't find a great operating system. And Next Computing had a great operating system. And that became Mac OS.
+
+So they bought. I didn't know that. I thought Next was just a failure.
+
+I didn't even realize it actually. I thought they just bought Steve back, Aquahire. But it wasn't just Aquire.
+
+No. I mean, Objective-C, for example. You know, Next Computing was really obsessed with this idea of object-oriented programming.
+
+And they innovated a lot on what that means. And, you know, it is based on Unix. But it has a lot of interesting features on top of that.
+
+So it saved Apple. Because Apple was otherwise not going to be competitive without these new chips. Right.
+
+Well, dude, I know we kept you half an hour over. I apologize for that. But this was amazing.
+
+This was one of my favorite episodes in a long time. And I'm not just saying that. You can go check all the other episodes.
+
+I don't say that at the end. So this was awesome. Thanks so much for coming on.
+
+Where should people... Twitter is the best place to follow you? Yeah.
+
+Twitter. Amos Hod on Twitter. And the Replit handle on Twitter as well.
+
+Just R-E-P-L. Dude, thank you very much. You're the best.
+
+Of course. Of course. My pleasure.
+
+I'm sorry. Thank you.

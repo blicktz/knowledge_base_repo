@@ -62,8 +62,8 @@ OUTPUT_DIR = Path("/workspace/outputs")
 JOBS_DIR = Path("/workspace/jobs")
 
 # Multi-client concurrent processing configuration
-WORKER_COUNT = int(os.environ.get("WORKER_COUNT", 6))
-MODEL_INSTANCES = int(os.environ.get("MODEL_INSTANCES", 6))
+WORKER_COUNT = int(os.environ.get("WORKER_COUNT", 2))
+MODEL_INSTANCES = int(os.environ.get("MODEL_INSTANCES", 2))
 MODEL_NAME = os.environ.get("MODEL_NAME", "turbo")
 
 # RAM filesystem configuration
@@ -1626,7 +1626,6 @@ def main():
         log_level="info",
         # Connection limits and timeouts
         limit_concurrency=max_connections,
-        limit_max_requests=1000,
         timeout_keep_alive=30,
         timeout_graceful_shutdown=30,
         # HTTP configuration

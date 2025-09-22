@@ -1,0 +1,293 @@
+I love this song. It was great. Thanks guys.
+
+All right. Hi everyone. I'm Amanda Bradford.
+
+I'm founder and CEO of the league and today I wanted to talk to you guys about one of my favorite activities which is pre-gaming. Do I have a clicker? Oh, here it is.
+
+I'm sure a lot of you know about this. You were well versed in college and good news it applies after college too. So the way I see it is a product launch is basically identical to throwing a kick-ass party and behind every great party is actually a really epic pre-game.
+
+If you don't throw a lot of parties ask your friends that do and I guarantee you they will agree with me. This is kind of like the little secret to how to host an awesome party. So quickly just give you overview of what I wanted to talk about today.
+
+First is some background on my company, the league, myself, how I define success for a product launch, the benefits of pre-gaming of which there are many, the art of pre-gaming and it is an art, the main event itself which is your product launch and then we can do Q&A. So quick background, what is the league? What is the league?
+
+It's a great question. It's changed a lot actually in the last year and a half but you know the league is a dating app, we're iOS only and the idea behind the league is for kind of smart, intelligent, educated people that want to date on kind of ambition and intelligence and not just play hot or not all day. So we use Facebook and LinkedIn to double authenticate all of our users.
+
+This serves two purposes. One, it lets you see more context about a profile so you're not just making decisions based on looks. It also lets you have more privacy.
+
+So we block you from your LinkedIn coworkers, we block you from your LinkedIn connections, we block you from your Facebook friends and I really designed that for myself. I usually work with a lot of guys in tech and when I did my internship in finance and the last thing I wanted was for them to kind of be deciding yes or no on my dating app profile, it was pretty awkward. So yeah, so the social graphs we use from Facebook and LinkedIn let you prevent that and not have any awkward struggles around your coworkers.
+
+And then on top of that we really curate the community. So everybody who signs up goes to a waitlist and we keep a very like small engaged community and we pull off the waitlist to ensure that the community stays in the way is like very high quality. If you have a photo where you're crushing a beer on your forehead you may be on the waitlist for a little bit longer.
+
+And if you're using fake photos or spammy accounts like we kind of screen all of the noise out that you see on a lot of other dating apps. Whoa, you're right. It is a little bit tricky here.
+
+All right. So who am I? So I graduated from Stanford Business School and prior to that I had been at Google and Salesforce in a variety of kind of engineering slash sales roles.
+
+So I got my undergrad at Carnegie Mellon in Information Systems and graduated knowing that I wanted to do something in technology. So I joined Salesforce.com and went to Google, went to business school, did some internships in business school in venture capital and mobile startups. And I think at the end of it I knew I really wanted to do something in entrepreneurship and I studied that in business school and I wasn't quite sure what I wanted to do.
+
+And I'll kind of get into why I started the league but that's kind of my background. So I call myself a wannabe tech executive I guess for most of my career. And why am I up here talking?
+
+I think that's a good question you should be asking. Because there's a lot of people up here that are talking that have achieved a lot more than we have at the league. We're still very early stage.
+
+We're dealing, you know, have the same fundraising struggles as many of you guys probably do. And, but I think why I'm up here is that we did a really good job of launching our product from nothing and to gaining brand awareness in a pretty short time. And I think our users, you know, were a really key reason to that and that's sort of why I'm talking here about the pregame and why it was so important.
+
+And, you know, mobile apps in general in the consumer space are notoriously very hard to launch. It's really, you know, every day I think there's at least like 30 new dating apps that go live on the app store. It's a very noisy, crowded environment and it's really hard to get kind of above the noise.
+
+And I think we did a really good job with that. I'm here to teach you the tricks that I use to do that. But I think that's why I was invited to speak.
+
+So I'm excited to share the secrets with you guys. So why did I start the league? Quick like story about myself, a little personal I guess.
+
+I got out of a five year relationship in November of my second year of business school. You could say I went on a dating app bender in December. I tried pretty much every dating app there is under the sun.
+
+Had a lot of the same like complaints on each one. I really didn't want my coworkers seeing me. I wanted to be able to filter on like intelligence and ambition and it's really hard to do that.
+
+And I also wanted kind of that same community feeling I had at Stanford where you're in this environment where everyone is super ambitious and they value kind of intelligence and drive and they want that in a relationship. And I went on a couple of dates in the wild and I realized that kind of being an alpha female and being super career driven isn't always what everybody wants to date. And I think I wanted kind of a way to qualify out those people without having to go and, you know, do a two hour coffee date to realize that it was a waste of my time and their time.
+
+So that was kind of the inspiration behind it. And you can see here my wireframes that I started. And I guess this slide is really just to encourage you guys that you don't have to have like VC funding.
+
+You don't have to have a technical degree. I mean, this is I use the Balsamiq to just mock up what I wanted to build, the really MVP functionality. And I use my second semester in business school to do that because in business school, your second semester, you're not doing much studying.
+
+So I really focused on this project. I did an independent study with one of my professors and, you know, my goal was to launch it by the end of the, by the time I graduated. And, you know, I worked on figuring out how to get it built.
+
+And I think this is like, I guess I want to stop here and just sort of explain a little bit about like why I always encourage people to kind of take the leap. A lot of people get stuck in this phase of like, okay, it's going to cost me $20,000 to find a developer. Like, what do I do?
+
+I need an investor. And I always, whenever people come and tell me that I say like, how much do you spend on vacations? How much do you spend on clothes?
+
+How much do you spend on going out to eat at like boozy dinners and expensive places? How much do you spend on Ubers? And like kind of tally all that up and decide if, you know, is this is actually like a way more exciting investment.
+
+You not only learn, but you also have the opportunity to potentially change your whole career path for maybe $20,000 of development costs. And when you think about how much you spend on college, I mean, it's just, I guess I always encourage people to reframe the investment and not get sticker shock on kind of investing in yourself, which is essentially what you're doing. So I'll get off my soapbox.
+
+That's just my little motivational speech here. So how did we launch? And I like to quote my bro-tastic friend here and say, you know, we pre-gamed harder than a lot of startups party.
+
+So first I want to talk about what, you know, what is a successful product launch and how do you define that? And, you know, the definition of a product launch, you guys know this is when you turn your product on and people show up. And hopefully they stay, maybe they spend money, but at the end of the day you want them to show up.
+
+And that's exactly the same thing as a party. So you have a party, you say it's at 8 p.m. At 8 p.m.
+
+you're there hoping that people will show up. It's the same kind of anxiety. It's the same prep work you need to do.
+
+And so when I think about how to explain how to launch a product well, I always, you know, use the analogy of like how would you throw a really awesome large party? So what defines a good product launch? And the way I think about this is what do my investors ask as soon as we launch our product?
+
+They ask you how many people showed up, how many daily active users do you have? They ask you what is your engagement like? Are people interacting?
+
+Are they talking? Like, are people having kind of fun? What's your retention?
+
+Are they staying? Do they check it out and leave because it sucks? And what's your K factor?
+
+That's virality. Like, are people telling friends? Are they bringing in people?
+
+And if you think about like a party, when you call your friend and tell them to meet you at a party downtown, they ask you the same freaking questions. They say, how many people are there, man? Like, I don't know.
+
+I'm watching House of Cards. Oh, is it fun? Like, how fun is it really?
+
+And then how long, how much longer are you staying? By the time if I get up off the couch, put clothes on, are you even going to, is anyone still going to be there? And then who else is there?
+
+You know, are there, you know, for singles, it's often like, are there single people there? But you want to know that it's a healthy, kind of vibrant party, and it's exactly the same as any consumer product. So, oh, this product thing.
+
+All right. So, yes, parties are an investment. And I think, again, that's why I think it's like the perfect analogy and a way more fun analogy to think about when you're thinking about how to launch your product.
+
+So, the dirty secret is that you don't even have to have that good of a party. You really just need an epic pregame. And pregames are awesome because there's no expectations for pregames.
+
+They're really cheap. And people just feel special for being able to go to a pregame. So, it's sort of like you don't even need to spend money on a band or crazy, you know, food and drinks and open bar.
+
+You just got to have a really good pregame. So, the benefits of pregaming are quite a bit. So, sorry about this, guys.
+
+So, why does one attend a pregame? You guys know this from college. But, you know, free booze, that's one thing.
+
+That's what I call the value. And when you're underage, this is really high value, right? Like, you would go to almost any pregame.
+
+If you're 19, you can't get your hands on alcohol. And even if the weirdest person across the hall has a pregame, you're probably going to show up. So, that's a kind of part of the value you need to offer.
+
+Then you also get to have input on the playlist, on what drinking games you're playing. You get to kind of like define the party. And I think, as you think about it as like from a beta testing perspective, you get to have impact on the features.
+
+Maybe you think the green that they're using is really ugly. You could tell the designer that and they might change the green before they launch. That's like really exciting for someone to be able to kind of change how the whole party is going.
+
+You get to have real conversations versus superficial ones. You know, at parties you're yelling over music, asking people like, hey, what's up? But at pregames you can actually find out what, you know, where that person is from, what they're thinking about, what they're passionate about.
+
+You actually get to know people. And I like to think of that as like you're kind of getting really deep engagement early on. You get to arrive at a party with a tribe or a family.
+
+I think, you know, you can think about when you're in line for the bathroom or you lose your purse. You have kind of people that are sort of there for you and with you. And I think you feel like you have a family to depend on.
+
+And that makes you stay longer ultimately. And then you get to, you know, at the pre-party you can charge your phone. You can put your coat in the bedroom, even hang it up.
+
+You get to use a master bathroom. Like you get this kind of VIP access. And so I think these are kind of why as a pre-gamer you like going to these and why a lot of times the pre-game is way more fun than the actual party.
+
+Because you have all this stuff. And then if you take it from the host perspective. So if I'm hosting a huge New Year's Eve party, why would I like add more work to my plate and host a pre-game on top of that?
+
+Like talk about, you know, more stress, right? But it's actually way, really, really good investment, especially if that party is really critical. And when it's a product launch, it's probably the most critical moment of your company.
+
+And pre-games ensure, the number one thing pre-games do is this number one point, which is they show up and they show up on time. So I don't know if any of you have had a party where you tell your friends to show up at 8 and they come at 9.30, but that's my friends. And I've had plenty of parties without a pre-game.
+
+And let me tell you, the person that comes right at 8 p.m. is not usually your friend. It is the person you know the least, have the least in common with, and you're not even sure you remember.
+
+their name. And it's like a really awkward moment. And then you come and then you're like, where are my friends?
+
+It's getting, you know, it's 9. This party is sort of lame. So the number one thing that pre-games do is ensure that like you have a good crowd there when the party opens up.
+
+The next thing it does is ensures that you have like high engagement at your party. So you have, you know, your pre-gamers have already kind of caught up with each other, and now they're ready to meet new people. Right?
+
+So they're, they're like outgoing. They have had a couple drinks. They're going to engage with other people and welcome them to the community.
+
+Say, hey, check out the band back here. You know, they're going to be kind of part of your host committee. And I think that's really important to have as many people sort of, you know, welcoming your new kind of strangers to the party as possible.
+
+Um, pre-gamers also feel a lot more commitment to the party. So if you think about it, if I have, you know, 30 people over to my apartment, I tell them how hard I've worked on this New Year's Eve party, how nervous I am about it, and how I really want everyone to have a good time. Like, your pre-gamers feel you.
+
+And they're like, okay, I'm going to help her have a really good party. And they're committed. And even if, even if the party is kind of lame, they'll stay longer than they should because they're, they're there for you.
+
+They kind of know the whole story. And I think that's really important to mitigate, kind of mitigate the risk that your party isn't that great. Um, and then the last piece is they'll get their friends to join them.
+
+So I think, you know, think about this when you're going to a party, you know, you're going to be there four hours on a Saturday. I don't know about you guys, but I call my friends and I say, hey, come meet me at this party. That way I can catch up with my friends and go to the party and sort of kill two birds with one stone.
+
+So I think, um, as you think about why, you know, why you want to have a pre-game, it, it really helps to, to kind of get this core group of users invested. Um, so the art of the pre-game. So this is sort of where I tell you what, what we actually did with the league.
+
+And the first part you need to remember is it's exactly like hosting a party, but the secret is there's like zero expectations. So it's way cheaper and it's a lot more kind of easy to do on a shoestring budget. So you got to do the same, the same activities though, build an invite list, get people to show up and then act cool when they're there.
+
+So I'll go into like what I mean by that. Um, but first this is probably where you should spend the most amount of time and this is building your invite list. And I like to say, use the VIP approach.
+
+This is the least scalable, the most time consuming, but also the, by far the most effective. And this is where you actually are meeting people in person, like over the course of months. And you're, you're putting a face with the name.
+
+You're telling them about your company, but you're not selling them anything. You're not pitching. You're just getting to know them as people.
+
+Just as like making friends, like you're a new person in town. I mean, it's, it's really the same thing. You're just sort of building your contacts.
+
+Um, and then I think the other piece is the lurker socialite piece, where you go to these large scale events and your friends aren't going to keep going with you. Because you'll need, you know, you're going to be going out a lot during this phase and people that aren't building a business don't want to go out five nights a week. So you're going to have to be comfortable going out by yourself, talking to people, being the kind of weird lurker person that is there and just goes up and strikes up conversations.
+
+And I think getting confidence with that and being able to do that and not be creepy is, you know, a skill that is definitely worth gaining. And I, you know, I did that a lot. I would go and tell people, you know, you slip in that you're building something, but it's not the focus of the conversation.
+
+The focus of the conversation is just really getting to know them as people, understanding, you know, how they could potentially be helpful to you in the future. But not, again, not scaring them or pitching them or asking them to sign up for anything. You just want to be, you know, you're basically just building your contacts.
+
+And then the last piece is door to door sales. I like to think about this as like when you're a freshman and you want to have a pregame, you go around everyone in your dorm and say, hey, hey, I'm having a pregame in my room at 8, do you want to come? And you're essentially extending an invitation, right?
+
+And nobody's going to be offended or upset that you are extending them an invitation to an event. With door to door sales, you don't want to just go and be like, hey, I'm Amanda, starting a dating app. Will you sign up?
+
+Like nobody wants that knock on their door. Like don't do that. So make sure you're inviting them to something that could add value to their life.
+
+And you're doing it in a way that you're giving them something, right? You're not asking them for anything you're giving. So again, this is the most effective approach.
+
+The next, whoops, the next approach is the network approach. I think you should do this, but don't spend too much time on it. It doesn't like convert to the super highly.
+
+So, you know, definitely email your fraternity brothers and your, you know, your brother, have him email his fraternity brothers and Facebook posts and do all that stuff. I call that like kind of your digital network. But I wouldn't, you know, don't expect this to be like your golden ticket or anything.
+
+This is going to get you, you know, some downloads or some conversions, but these are not going to be your ambassadors. And they're not going to care that much about you. So just do it, but don't expect a lot from it.
+
+And then I try to avoid the I have no friends approach, but this is where you kind of make an ad or do your Craigslist posting for your pregame. And this kind of reeks of like desperation. And it's like, imagine if you're in college and you saw someone putting a Craigslist posting for their pregame in their dorm room.
+
+Like, you're kind of like, man, you can't, you don't have anyone you could have invited without, you know, posting your Craigslist. So, and I had just, I mean, you shouldn't do this ever. But I just, again, like the people you're going to get from this are usually not the kind of people you want kind of in your core group of ambassadors.
+
+So the next step is getting people to show up. And this is where you actually give them something that they can't get otherwise. So what we did, like, you know, think back to college, booze was a huge draw.
+
+That was obviously what, you know, 99% of parties decided to give to get people to show up. But I mean, there's other things you can do. So you can see here, we had an MBA happy hour and we didn't even have that much free booze.
+
+I think I got like 10 cases or 10 bottles of wine sponsored. But the draw here was the MBAs had just graduated and they really wanted to meet each other. And nobody had like created an event for them to meet each other.
+
+So that was what I did. It wasn't even about the league. It wasn't even about dating or singles or not singles.
+
+It was just an event for MBAs to meet. And we got a ton of people to show up just for that like one thing that we could offer, which was connecting with like minded people from like a similar industry that wanted to connect anyway. I did a girls night where we left a clothing store.
+
+We left it open an extra two hours and let people come in and get a discount. And so that's another example of kind of offering them some access and exclusive thing that they can't get otherwise. We did an open bar.
+
+So this is the one area we did spend money. We spent $3,500 and we did an open bar for two hours. And we did require people to have the app downloaded to get in.
+
+But you know, when you're offering them an open bar, like that's a pretty good ROI for the person. And we're also offering like singles and people like coming where they're single people. So that was our two draws.
+
+But so this is kind of the one where we did sort of ask for for signups and we did check signups. But you know, we also gave them a pretty good pretty good return on that download. You can see here we had a really good turnout.
+
+This is our Redford party. And just to like caveat this, this is all before we even launched the product. So we had a product in the app store that literally was just like, what's your Facebook?
+
+And we got their email address and that's all we did. And so everyone like kind of made fun of me because they're like, oh, is that the waitlist app? Like because it wasn't open for anyone.
+
+And everyone's like, when are you launching that? It's been like seven months of parties. And so we definitely pre-gamed for a really long time.
+
+And here's one more trick we used is just giving people free classes. So we worked with SoulCycle and Barry's Bootcamp to have like league specific classes. You can see here, I got people to come to a, you know, free.
+
+These are $30 classes that they got for free because we worked out a deal. And then we also got a yacht. We rented a yacht for Fleet Week, which is really, again, hard thing to get on your own.
+
+Like all the boats are sold out. So we had that to get people to go. And we actually charged tickets for this party.
+
+So we didn't even spend any money on it. And again, these are all just examples of like giving your users something that they can't get otherwise. And this is the boat.
+
+It was a really fun party. So then the last piece is be cool. So don't force them to listen to a sales pitch.
+
+The worst thing you can do is like make them hear something before you give them alcohol or before you give them, you know, people to talk to. So just make it a fun party. They'll start to associate positive feelings with your brand and with you as a founder.
+
+And don't worry about the fact that like nobody downloaded your app, but they came to your party. Like this is part of the sort of pre-work you need before you start really asking them for things. So if you ask too early before you've gained trust, it's just it leaves a bad taste in people's mouth.
+
+So when to end the pre-game. We've all been to a pre-game that doesn't actually go to the party, right? So you have too much fun or too much alcohol.
+
+So what we did is we actually put a hard stop in the, you know, hard line in the sand and said at 250 girls and 250 guys, we're going to launch our alpha. And so you can see here all the pre-gaming we did from July to November. And we actually put in the app a screen so that our users knew when we were launching.
+
+And we're like, okay, we only need two, you know, 100 more guys, 100 more girls. Call to action for our users who had downloaded it to help us get to that kind of final mile. And this also held us accountable so that we actually launched and didn't have too much fun with the pre-party.
+
+And then, so now you're at the main event, right? So you're actually at the launch, launch party. And this is where you heard your pre-gamers to the party and you say, be fun, be fun and talk to people and like make this a cool party, right?
+
+So this is where they show up, they're highly engaged, they're committed and they're inviting other people. And this is where the three, you know, the four metrics you need to be thinking about for your launch always. And this is where your product starts to shine, right?
+
+So the party, if you're hosting a party, it's the party that's shining. If you're doing a product launch, it's where the product shines. But you've sort of done all the pre-work.
+
+Now your product is sort of set up for success. So it still needs to work. It needs to be a good product.
+
+But you've definitely mitigated a lot of the risk of like launching and having everybody just sort of having a lackluster launch. I mean, you can see here 419 of our 500 like pre-gaming beta testers attended our, you know, first day when we opened. They actually showed up, logged in, 70% messaged, 50% invited friends.
+
+And we didn't even have a launch party. So this was all pre-funding, pre, you know, we spent $3,500 essentially on this entire five-month pre-party. And then they, our ambassadors, which I call them now, our founding members, they really did the rest.
+
+And they brought in people and the product really grew from there. And these small numbers, I just want to like highlight them because, you know, 419 people logging in is not a lot, right? So it's, you don't have to have a million downloads.
+
+Or when you read the like tech crunches, like you just realize that you can start small and grow. You don't have to, your launch doesn't have to be a million users. So, and then, so we actually do this for every city launch.
+
+You can see our New York launch, which we did five months later. We had a pre-party and then we had a real party. And then to be even more meta, this all was actually before our real launch in New York.
+
+So like the whole parties are actually pre-parties. So we really believe strongly in pre-partying. And we ended up launching the next week after that.
+
+So we launched like May 7th and we had the party April 28th. And I really like this method because I think expectations are just lower. You're not doing a launch party, you're doing a pre-parties.
+
+And people are just getting oriented with the brand. And so I really, I really feel strongly that the pre-game is actually way more important than the party itself. So to recap, when the party is good, everything's good.
+
+People are inviting people. The first experience is awesome. And so the way to ensure that the first experience is awesome for people you don't know is make sure you have a pre-party for the users you do know.
+
+And get them really to be your ambassadors. And behind every party is an epic pre-game. So that's sort of the key takeaway here.
+
+So now I'm happy to open it up for any Q&A. All right, we've got time for two quick questions. Hi, my name is Fallon Austin.
+
+I'm the founder of Trilancer.com. And I love this presentation. I've never heard the idea of pre-game when applied to business.
+
+I think it's a terrific idea. Cool. And I was hoping with my specific business you could give me some suggestions.
+
+It's going to be an online marketplace for copywriters. And the copywriters are going to give you little demonstrations of their writing abilities before you choose them. What kind of free, exclusive kind of giveaway comes to mind?
+
+I love the ideas you had, but I'm not sure that the bars scenes, although bars is always very fun, would translate to an online marketplace like mine. What do you think? So I'm really into building community, right?
+
+So if the copywriters are kind of your bread and butter, these are the people you need for your company to survive, right? So I think doing whatever kind of they're looking for. Are they looking to network with other copywriters?
+
+Are they looking to network with people that are going to pay them? I really do. I mean, you say the bar scene's not good.
+
+I know a couple of copywriters that do very well at the bar scene. So I do think that just bringing people in person together and offering them, maybe it's a copywriter that you bring in that can talk about how they worked their way up and inspire the more junior copywriters. But I do think in-person events, because you just get so much more loyalty from people who know the face behind a brand.
+
+And again, it's not scalable at all. Like, you can't do that. Like, we can't even do this in LA already.
+
+But it's for launching when you're launching from nothing. It's so important. Like, I mean, if you can talk to 500 people in person before you launch, I would highly encourage it.
+
+So I would say talk to them, ask them what kind of events they'd want to go to, and then create some of these events. And they don't need to be expensive. Like, any bar will tell you, oh yeah, you're going to bring 40 people to my bar on a Monday night when I usually make nothing?
+
+Like, sure, why don't you have the back room? So it's a very, like, cheap and easy way to get people. And so yeah, I would kind of go work with the copywriters and sort of win them over.
+
+I love it. Thanks a lot. If anyone is interested in drinking with copywriters, sign up at trylancer.com and we'll figure out where the event will be.
+
+I'll come. Hi Amanda, thanks for sharing your story. The question I have is, you talked a lot about building a list and then inviting them to the party.
+
+One of the biggest concerns about building a list is those leads going cold before they convert. What's your number one strategy to stopping that? So building a list.
+
+That's why I try to not build lists. So we didn't even use a website for, we always had an app in the app store. And for some reason I do, I'm a pretty big proponent of like, not having people go to a website to log, to get their email address and then asking them later to go to an app store and download it.
+
+That's like asking someone for two things. So we didn't even start collecting email addresses until we had an app in the app store that could work. And that way I only had to ask them once to do it and I could do it when I'm in person and be awkward about it and be like, hey, download this.
+
+I want to get your opinion on this one onboarding issue we're having. So you can almost like arm twist people into downloading it and then they're kind of, they're yours for life. So that's one piece I would say.
+
+And then as far as keeping them warm, I mean you see how many events we had, right? So we were emailing every month being like, we have another cool thing. Like we're at Redford or come to our Fleet Week party.
+
+And so we were always sort of inviting them to things. And even if they didn't show up, they kind of had a positive association with the brand because we weren't ever asking them for something. We were always just inviting them to things.
+
+And so I think, yeah, I was worried too. I was like five months is a really long time to like keep these people hanging. But we tried to really nurture them and always be kind of giving them something every three to four weeks.
+
+Thank you. All right. Thank you, Amanda.
+
+Cool. Thanks guys. All right.
+
+So, um.

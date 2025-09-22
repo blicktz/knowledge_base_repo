@@ -1,4 +1,4 @@
-# Configuration for Virtual Influencer Persona Agent - Phase 1
+# Configuration for Virtual Influencer Persona Agent - Multi-Tenant Architecture
 
 # LLM Configuration for Persona Extraction
 llm:
@@ -102,10 +102,17 @@ data_processing:
 
 # Storage Configuration
 storage:
+  # Base directories - personas will be created under these
   artifacts_dir: "./data/storage/artifacts"
   vector_db_dir: "./data/storage/chroma_db"
   cache_dir: "./data/storage/cache"
   logs_dir: "./logs"
+  
+  # Multi-tenant settings
+  multi_tenant:
+    enabled: true
+    personas_base_dir: "./data/storage/personas"
+    isolation_mode: "strict"  # strict = completely separate stores, shared = shared embeddings
   
   backup:
     enabled: true

@@ -1,0 +1,77 @@
+Our next speaker is Jack Smith and he's the previous co-founder of Vungle which does in-app video ads and has raised 25 million dollars as well as the co-founder of Ship, the on-demand shipping company that's raised 20 million dollars and fun fact Jack Smith's only 25 so yeah he makes us all feel great. So today Jack's gonna explain how he's been able to use automation to get a lot of shit done very quickly. Hi guys I was excited to come down today because hustling it's not a word that I'd heard of before coming to America but after I came to America I felt they really embodied kind of the philosophy of how I approach a lot of things and so I wanted to just talk today about automation or you could also call it like process optimization and just kind of a mind frame of how to think through approaches to some different things.
+
+So yep just a bit about my background was that I moved to America three years ago now with my first startup Vungle and had had the opportunity to be involved with some really great companies and so seen different ways to approach business. Now when I'm talking about process optimization or automation it's really talking about how can we use kind of computer power or maybe low-cost labor to achieve a task faster because at the end of the day we're all strapped for time. And so the time to use process optimization for me is when you break down something that you want to do and you can clearly see that there's a bottleneck because there's no point in trying to automate something if the amount of time that you spend automating it is longer than it would have taken to do anyway you know.
+
+But if you can clearly see all right this is a project I'm going to do and this thing is just a real it's the real bottleneck in the process then what you'd want to look at is how can we just attack just this bottleneck. And so an example that I want to give and because it sounds quite technical at the start but as I said it's just a frame of mind and it can be applied if you're just in your personal life doing trying to get a start-up off the ground anything it's a way of thinking through stuff. The example I'm going to use is recruiting an office manager because it's something it's one of the first hires that you maybe do going into a start-up.
+
+It's something I talked about on the 500 startups mailing list just we were discussing it a bit and I said how we had hired our office manager at Vungle. People found it interesting so I thought I'd just share with everyone here. If you are a start-up and you want to recruit your office manager pretty much what 90% of startups do is they just shove it on, shove an ad on Craigslist.
+
+And to an applicant this is what it looks like. Like you've just got a stream of just office manager for start-up, office manager for really exciting start-up, venture-backed start-up, blah blah blah. You just lost the noise and all that it's going to result in like shoving an ad on Craigslist.
+
+You're just going to get like hundreds and hundreds of emails. And so a clear bottleneck in this process is well I've got hundreds of emails I've got to look through. So when approaching this I thought it through in terms of all right how can we attack that bottleneck?
+
+Filtering through hundreds and hundreds of cold emails. Those lists which not gonna be relevant. And when you look at most of the ads on Craigslist, startups are recruiting the same kind of attributes for an office manager.
+
+They want someone with good personality, good communication skills and that can follow instruction. How are you gonna be filtering those just based on reading someone's cold email? You know that they've got a good personality.
+
+Doesn't come across an email. So what I did I'm just gonna show again this is a basic example of what I'm talking about with automation or process optimization. A basic example of how I filtered that process.
+
+What I use is it's a free tool called Wufoo here. I just set up a basic form. So just asking the person's name, email address and phone number and you'll see it's asking for the phone number in this format.
+
+Now what we're testing here is can someone just follow basic instruction? You see I didn't give out my email address in the ad. So they're not emailing me.
+
+They just fill out this basic form. Then what happened is I used this thing called Zapier. Now this is really awesome.
+
+Again, it's quite basic to understand. It's a bit like if if some people have heard of that. It's like if this then that.
+
+And so what you do is I chose my Wufoo form on the left and a Twilio account on the right. Both of these like a Wufoo form is free. Twilio.
+
+I think I loaded like $5 or $10 on my account. And Twilio lets you spin up like a new kind of cell phone number in the cloud. So it's not your phone number.
+
+It's just like a cloud phone number. And so what I did is every time that someone filled out that form, every time they filled out that form, a text message would get sent to the phone number that they entered in the form. And it's a stock message I wrote.
+
+But because it says, hey, name, I'm using the name that they entered in the form. So basically they fill out the form and like five minutes later they'll get a text saying like, hey, Jack, like thanks so much for applying for office manager position. Can you just check out this link for me when you get a moment?
+
+So again, I didn't do anything. I just took me like a couple of minutes to set up the thing. It's all automated.
+
+But so many people thought that it was me texting them. Like you again, because it's a number in the cloud, I wasn't getting loads of spam text back because I only saw them when I logged in. It's not going to my phone.
+
+But when I did log in, you see people like, oh, wow, thanks so much for taking the time out to text me. So you replied so fast, et cetera. But again, this is me just filtering the stuff.
+
+So I'm like, hey, can you just go to this link? And on this link, it was like a landing page. Again, I just hacked it together really fast.
+
+And I just embedded a YouTube video of myself. And it's me just talking for like one to two minutes just like, hey, I'm Jack. This is my company, Vungle.
+
+It's really exciting. Blah, blah, blah. A bit about me because it's important that I show that I'm willing to put myself out there.
+
+And then I use this again, another tool. I'll come back to these tools at the end so you've got them for reference. But this one's called Mail View.
+
+And what it is is it's embedded next to it. So basically I was saying, hey, here's me. Can you just record me a one to two minute video of you?
+
+And the person just clicks record. They just record a video. And that's it.
+
+And this is actually the girl that we ended up hiring as our office manager. Because what it meant is rather than having these hundreds of emails from people, I could just have filtered down just a few one to two minute videos to just flick through. And just if we look at what we were judging in that role, it's just you can't even compare.
+
+Being able to judge someone's personality from like an email versus a one to two minute video. Like it's a no brainer. So what we did here, another bit that I think is important is just using Gmail canned responses.
+
+Is anyone that we rejected, I think it's good to send them an email just saying like, look, thanks so much for taking the time out to record a video. But we went to another candidate. Because if they've jumped through all your hoops, you might as well.
+
+It's only fair to thank them. So these are the tools that I covered. And this was just a short overview of how we hired an office manager.
+
+But when you look at it, it was just filtering. All right. We need, we've got a process.
+
+There's a massive bottleneck, which is reviewing loads of candidates. What is the criteria? Judging their culture.
+
+Can they follow basic instruction? And so we've set up filters to filter out those. Can they fill out a basic form with their actual phone number?
+
+Like if they didn't fill out their phone number, they wouldn't have got the texts. They're not going to proceed. Can they record a video that's just a basic video?
+
+You know, and so in the end, we only were judging people that could follow basic instruction. And then with screening, are they a good culture fit? And how do they come across in that video?
+
+And so hopefully you can apply that thinking in other areas of your work. So this is me. I'm going to soon, like this is my website, but then I'm soon going to launch a resource called Hustle X.
+
+So this is why I want to come down because like hustling is really something that I'm passionate about. And here I'm just going to try and collate kind of resources and tips and stuff from bits that I've shared with companies I advise, et cetera. I was like, well, I might as well share that with everyone.
+
+So this bit I'll be launching soon. All right. Thanks a lot, guys.
+
+Thank you.
