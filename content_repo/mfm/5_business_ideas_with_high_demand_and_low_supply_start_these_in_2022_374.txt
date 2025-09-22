@@ -1,0 +1,745 @@
+With the pandemic, a bunch of restaurants have gone online, quote unquote, they have the QR codes, right? And something that I think of every single time as an internet marketer is why they are not A-B testing their menus. And so I think someone needs to go and create A-B testing software that restaurants can ingest super easily.
+
+What's up, Steph? Steph is back, back in the house, one of the most requested return guests of all time. We should have you on more.
+
+What are you doing now, by the way? You left the hustle slash HubSpot, you went to Andreessen. Is that where you're at still, or are you doing other things?
+
+Yeah, exactly. I'm at A16Z. I'm their new podcast host, so they've had a podcast for like seven or eight years.
+
+And then it went on hiatus. They looked for a new host and that's me. We haven't gone live yet, but we will be soon.
+
+Every time you come on, you bring this like document. That's basically like, it's sort of what me and Sam do. But when me and Sam do an episode, we have like two or three bullet points each, like three words.
+
+And I have two and he has two. And that's how we prepare. You send this like Encyclopedia Britannica of topics, ideas, like half baked things in your head.
+
+So like, I'm looking at this, this is like seven or eight pages or something like that. Oh no, 12 pages long. So we have a lot to choose from.
+
+So where do you want to start? I wanted to share this one idea. I think I've actually talked about it on another couple of pods, but with the pandemic, a bunch of restaurants have gone online, quote unquote, they have the QR codes, right?
+
+And you pull up the menu. Some restaurants have reverted back to the physical menu, but tons of restaurants are still using these QR codes. And something that I think of every single time as an internet marketer is why they are not A-B testing their menus.
+
+And so I think someone needs to go and create A-B testing software that restaurants can ingest super easily. And the basis of this is, well, A, if you think about what has made so many internet companies successful, it is the fact that they have these alternate worlds that they can A-B test, right? Google homepage, are we using this font or this font?
+
+We're using this color or this color? Netflix, you know, Amazon, every, all of these large internet companies have used this, but also there's the restaurant equivalent. So the hustle did a story on this woman, Michelle Banesh.
+
+And you can just look up design restaurant menus, the hustle or something like that to get the article. But we wrote about this woman who her job was literally to go redesign menus, physical menus. And based on her understanding of human psychology, orientation, there's like this Z or Z effect on the menu and the way people scroll.
+
+She was able to figure out how to get one restaurant, just as an example, to bring in $9 more per customer by redesigning their menu. Same products, but just the orientation, the order of the menu, the design of it. And I was thinking, why aren't restaurants not using this?
+
+As in now we have the QR code, which allows us to direct someone to any unique link, right? We have the digitization of this. And so you could hire someone like Michelle, and she could probably figure out how to do this for you.
+
+Or someone should just create a software that allows restaurants to do this. They don't need to change their menu at all, but they can mess around with the menu design the same way you mess around with landing page design and get higher conversion. And of course the average restaurant owner is not going to know how to do this.
+
+And that's why I think there needs to be just some sort of software that says, hey, we can increase your conversions by 50%. We can increase your average customer value by $3, whatever it is. And I haven't seen it anywhere.
+
+This is amazing. This is great. I remember, so I started a restaurant back in the day.
+
+My very first startup was a restaurant. And we were, but when we finally got to launch, long story short, we were like, do we want to launch a physical restaurant? We got to sign this 10 year lease with a personal guarantee.
+
+That sounds scary. And our mentor kind of was like, could you test your concept by doing delivery only? And basically it was like a cloud, what a cloud kitchen is today, but this was back, you know, more than 10 years ago now where there was no DoorDash, there was no Uber Eats at the time.
+
+But it was like, what if people could just order online? What if you just had a kitchen nearby downtown? There was no physical seating.
+
+There's no, there's no storefront. You just deliver. And we were like, okay, listen.
+
+And so we tried it. And when you do that, you're really conscious of, well, our home menu is online. So that means we could run a test to just see like what makes people order more or not.
+
+And so we did the most basic of AB tests. The first thing we did was we were trying to lower prices and we talked to this guy, Dan Ariely, who was, um, he wrote this book, predictably irrational. And we were like, Dan, Hey, we're, you know, three dudes trying to build this like sushi restaurant startup, you know, um, do you know anything about the restaurant industry?
+
+And he's like, I know a lot about the restaurant industry. He goes, I get paid by companies to come in and help them with either the menu or like he told us about some experiment. I think Panda express had paid him a bunch of money to do, to basically say, could we get people, we have healthy items on the menu and people tell us the reason they don't eat here is because it's unhealthy, but nobody orders the healthy items.
+
+So like what gives? And he's like, Oh, humans are predictably irrational. They'll tell you one thing and then they won't do it.
+
+And he, the, the one test he had made was when you walk into a Panda express, instead of putting both items on the menu and just having you choose, it was right when you walk through the door, it would say there was like a little angel path. It's like, if you're going to eat healthy, go this way. And there was like the devil, if you're going to eat indulgently, you know, like if you want full flavor, go this way.
+
+And when people make that choice upon walking in and then they only see a menu of those items, like they were happier with their choice and they ordered more of those items. And so he like figured out that was the only way he could design this restaurant to do that one thing. Um, and so similarly, he was like, Oh, he goes, Oh yeah, I can help your business.
+
+Um, your prices are too low. And we go, what do you mean? Like, everybody says sushi is too expensive.
+
+We're trying to make it more affordable. Like, how is that a bad thing? And I'm like, what are you talking about, man?
+
+We're trying to do the people's work here. He's like, he's like sushi, uh, people like, do you ever want to, if I told you, you can eat cheap sushi, would you want that? And he's like, no.
+
+And he's like, you know, he's like, so just like the, you know, wine industry, uh, people buy expensive things because it makes them feel good that they bought a higher quality thing. And so he goes, just test the price. So we did it.
+
+We basically upped the price 50% on one menu versus the other. We just AB tested it and we had like higher conversion rate on the higher price, which is crazy. Um, like not even just it netted more money, it was higher conversion rate on the higher price.
+
+So that was like the first time I saw this like menu AB testing. I mean, think about how big of a lift that is. Like if you can convert every customer to higher rate at a higher dollar amount, that's like, you know, meaningful in an industry that's like 10% margins.
+
+And so we did that. Then we tested other things like, uh, instead of just saying, you know, this is a, whatever, this is like the Philadelphia role. We use salmon.
+
+It's like Alaskan salmon. And hand caught Alaskan salmon farm caught hand, hand, you know, handled Alaskan salmon or whatever. We just started adding all these extra words that were like, meant nothing changed.
+
+I think they were all true, but it's like always fresh, never frozen Alaskan salmon hand caught by a farmer near you. And it's like, Oh, people like love that. And then they would buy more.
+
+And so you can see these little menu tricks. Now, what I didn't think of, which is your, your genius idea is how do you actually turn that into a business where you could become an agency that does this for companies? You could become a piece of software that does this as AB testing of QR codes.
+
+Um, you could do this with physical menus also, by the way, like you could just give out two different versions of the physical menu and say, and just track the tickets and be like, cool. We know what the, what the checkout is for both, um, for how much they spend on both sides. And we could just prove to you that menu design, a is better than B and like, you know, your current menu was designed by like your niece who knows Photoshop.
+
+So like, you know, I think we can do better than that. And if we do, if we beat your current menu, then you pay us, you know, $50 a month and we'll keep running tests for you. Yeah.
+
+I think this is actually a really, really great idea. Yeah. I think the key difference, I mean, you always look for inflection points.
+
+I think you guys say are changes. And so before you're right, you could do this with physical menus, but you know, the data is so much harder to get and you have to like match up the physical menu with the POS software you're using. But now I don't know what the percentage is, but we all know a ton of restaurants are using these QR codes.
+
+And so they're already, they've like taken the major step that they went before of digitizing the experience. And so now what you need to do is just apply those analytics. And so some company needs to just go create the software.
+
+Ideally it integrates into the POS. So you just literally can pop out a report at the end. But even if you don't have integrating with the POS, I think you can even just like look at, oh, how long does someone spend on this menu versus this menu?
+
+How are they scrolling? Yeah. What items are being sold?
+
+I don't think you would even need to, because you're basically, so basically they'll scan the QR code and it's like, you know, Google optimize or optimize any one of those, you don't enter an AB test. Exactly. And then you're going to pass the final value.
+
+Here's the final cart that they're checking out with to the, you know, to, to the thing. And when it's in person, like in restaurant, like they check out with everything, you know, they, they don't, they don't like, they don't walk away. They actually do order food.
+
+So you can kind of like bet pretty heavily on that. I wonder if people would also do this with a door dash or Uber eats. Like, Yeah.
+
+Could I be a service that just optimizes your door dash listing with photos, menus, copy. And like, if you're a national chain, that's in like, you know, whatever thousand cities and I can get you an extra half a point conversion or extra $2, you know, cart size, that's pretty meaningful for, for, for these, you know, these restaurants that are on, on these delivery platforms. Yeah.
+
+I was thinking about that too, because Uber eats menus are always so long and you know, there's like that, what's it called where there, you have too many options. Yeah. Paralysis by analysis or whatever.
+
+Exactly. Exactly. Yeah.
+
+And also Uber eats will have three or so items at the top of like our most popular items. And I don't know if Uber actually selects that for the restaurant, but if you had the option and actually if you're an engineer at Uber working on this, like create a platform where people can AB test on Uber eats so that they feel like that's a platform where they're making more money versus door dash versus their own, like that's a value add past. If someone created their own online menu that people ordered from, which would make obviously more sticky for people to stay there.
+
+Well, I looked at the startup that was, I know this works because I looked at this startup that was doing exactly this. What they were doing was they would go to a local mom and pop restaurant that was like, let's say Chinese food and they'd say, great. You know, Mr.
+
+Hans Chinese, you know, great. Everybody loves you locally and now you're on door dash, but like your photos are kind of crap. You're, you know, your descriptions are all off.
+
+You're not saying what foods are vegan, even though they are vegan. You're just, you don't list them. Like you're just not optimized.
+
+So what he would do is he would partner with the restaurant and he would just create a shadow, like a, like a clone of the brand, but he would call it like, you know, um, like choo choo Chinese. Like it would be like a more like catchy name though. All the photos are super bright.
+
+Um, so it's like, you know, on a backdrop of like orange or red or whatever, and like really good looking photos. And they would, he would trim the menu down. He'd be like, look, people come in here, they want like fried chicken and they want dumplings and they want this and that.
+
+And so he would just do like, this is just these items. Um, he wrote better copy. He took better photos.
+
+And then all it was, was when an order gets placed on those restaurants, that same restaurant just gets a ticket and they don't even, it's like, they don't even know it's like from this other brand basically. And then later they would send them packaging. That's like, Hey, if it comes in through this register, this like a ticket printer, um, put it in the choo choo Chinese, like box, don't put it in Mr.
+
+Han's like, you know, like local box. Um, and so they just created separate packaging. So he's like, yeah, we have 200 restaurants.
+
+We do like, you know, 17 million in GMV and we operate none of these restaurants. They were already restaurants that already existed. All we did was just rebrand them for Postmates and Uber Eats and DoorDash.
+
+And I was like, oh my God, like, this is like a mind blowing idea that actually works. He's like, yeah, they love it because they get like 30% extra revenue just because we're better at marketing on those platforms than they are. And, um, I wonder how they're doing now.
+
+I actually haven't caught up with them. I didn't, I didn't end up investing. Cause I was like, I don't know where this goes.
+
+Like this is, I feel like this could just get like banned or blocked in one second, but like, uh, it was a fascinating idea. And that guy was really talented who was doing it. Yeah.
+
+Uh, one more thing on the idea of food. Have you seen that? I think it's the FDA, their food pyramid, or at least in Canada, that's what we called it, the food pyramid.
+
+And you have like all these grains and they're like, tell it, eat this much bread. And, and they're rethinking that. Have you seen that?
+
+They're, they're re releasing. Well, they should, right? Cause it was like carbs, the foundation of the diet.
+
+Yeah. Yeah. Like fruit was this time fruit and vegetables were this like, they shared a little section.
+
+Like they had bunk beds at the top of the pyramid. It was crazy. Yeah.
+
+They were, uh, you know, people got upset because I mean, a simple example is they'd be like, nuts, no nuts, too much fat. And then they'd be like, but white bread. Okay.
+
+You know, foundational. And so, uh, they're coming out with a new food pyramid of sorts and that impacts, I didn't know this, but foods can, um, apply the word healthy to their products. Like, you know, brands, you could like actually have the word healthy on your cereal box as an example, based on this food pyramid or some sort of requisites.
+
+And they're changing that. And I just thought, I don't know if there's a business idea here, but I feel like there's going to be a ton of content, a ton of changes coming out because of this. Because I mean, the food pyramid was pretty foundational.
+
+And so I don't know what the business idea here is, but it's just like one of those, uh, there's, there's gotta be something here. Well, that's a good inflection. I'll give you another inflection like that, that I was thinking about recently over the weekend.
+
+Um, so, you know, like the law changed that allows college athletes to monetize their brand, their face called NIL name and likeness. And, um, so that came into effect this year. And so now college athletes can get paid.
+
+For example, when we did our MFM camp, we paid, uh, Puff Johnson, this basketball player at North Carolina to come like drop in and play pickup with us. It was just a cool moment. It's like, oh yeah, here's like this guy who's going to be in the NBA in a couple of years.
+
+Like he's just, he's just playing with us and we paid him. I don't even know what, like $200 or something like that to show up for, for an hour. And he's like, cool.
+
+I got nothing else going on on a Saturday. Like, I'll go pick up 200 bucks. And by the way, he was an awesome guy.
+
+Um, so that's a little like market that's gotten created. And I was like, I was asking Ben, I was like, how did you book him? Like, what'd you use?
+
+And he's like, I just DM'd him on Instagram. And I was like, oh, interesting. There's no, there's not really a great marketplace yet.
+
+That's connecting college athletes to the, like people who want to pay them for their, you know, just to do an appearance or a sponsorship, whatever. There's some people trying, but nobody's like, don't know. There's going to be one company that just owns the, here's the liquidity.
+
+It's like, we got all the athletes. And then like, because of that, we got all the brands and we take care of all the transactions and you don't need to use Instagram DMS and like Venmo. Like it just all happens through platform.
+
+And we have all the reporting that we hand over to the universities. So I think that's like a big idea is I create angel list for like, you know, the NIL marketplace. The second thing is just what opportunities does this open up?
+
+So Dave Portnoy who runs Barstool, they jumped on this pretty early. They're like, oh great. We'll have a Barstool athlete program where you can sign up to be a Barstool athlete, which will help you get these deals.
+
+And, uh, they came out there like we're taking zero percent cut on these deals. I don't know how or why, but they just decided to say that. And, um, and he's like, we have 200,000 college athletes as part of this now, something, something like huge number like that.
+
+That's insane. So I was thinking, I was like, man, so many different products and brands have been built off influencer marketing, everything from, you know, movement watches, which were like early to Instagram, like influencer marketing and built a hundred million dollar watch brand. Um, you know, sugar bear hair, you know, they got the Kardashians to be take pictures with this gummy, you know, the biting, this little blue gummy.
+
+And that became like this iconic look. And then that became like, again, a hundred million dollar, like, you know, uh, supplements brand. And so now I'm thinking, well, all of a sudden overnight, you now can tap into the influencer marketing of college athletes across the country.
+
+Um, and probably very few brands are doing this just yet. And you could almost create a company just working backwards from, all right, if I could get every influential college athlete to post something, what product should I make that's going to work best with their audience and like their trust and all that stuff, because it's kind of an unsaturated marketing channel right now. And an unsaturated marketing channel right now is like worth, it can be worth like a hundred million dollars.
+
+If you can, if you can be the first to figure it out that, that platform. And so you could kind of think about what products would their audience buy? Because now I can reach them for a very low cost and they, this couldn't, this literally couldn't happen before.
+
+So you have this inflection change. And so I think that's another like brainstorm that somebody could do and figure out what product would fit that category and just work backwards from the distribution. What would you do?
+
+Do you have any thoughts on if you were to choose that as your channel, people talk about like channel market fit, what, what product would you create? Well, so, so thinking on the e-commerce side, just for a second. So I was like, all right, you can, uh, and I don't know if e-commerce is the best, like, I think probably like some credit card or debit card or something like that is probably the best.
+
+Like if you can basically go get, you know, a million people, a million college students to start using your credit card because you got, you know, a hundred thousand athletes to just say like, Oh, I'm using this and sign up for this bonus point program and you get a, you know, whatever, $500 credit for spring break or whatever. I don't know. You should come up with some offer, but you distribute it through these athletes and you basically say, cool.
+
+If I, if I get at age 18 to 21, somebody to pick my credit card, what's that worth to me? Um, and I think that's probably like, you know, one of the best categories you could be in, but if it's not that, let's just take e-commerce for a second. Like, I think that you want the, you find the, you know, the first go to the class of the best e-commerce products to like high repeat purchase rate, high, like kind of lock in basically high margin, um, you know, low shipping.
+
+This is why like native deodorant was such a great product. It weighed less than a pound. So you could ship it in a normal envelope.
+
+So shipping was low cost. It's repeat purchase because you wear deodorant every day and you run out of it every whatever, two, three months. And so you're going to keep buying in.
+
+Um, it's high margin. Like it only costs this much to make and they could charge whatever, 20 bucks to, to sell a two pack. And so like it had a lot of the traits that make for a great product.
+
+And so I would try to figure out like whether it's like protein powder or like athletic greens or, you know, like some, you know, like sparkling water brand or like, you know, some seltzer, smelly water. Oh yeah. Smelly water.
+
+I try to figure out some product like that. That's like mass appeal, high margin, high repeat purchase rate. And then I would just like work backwards from that.
+
+And I wouldn't do, you know, products that are like, you know, big one-off purchases with the low repeat purchase. I just try to stay away from those. So I would go look at the winners of like current e-commerce and then I would try to, you know, retrofit those and be like, would that like particularly hit with a, um, a college crowd?
+
+Like, I think like an energy drink would be like amazing. Uh, like, I think, I think if you could do like, you know, whatever Red Bull rock star type of thing is, if you could just make like the next, the next either, you know, um, vitamin water or, or energy drink, I think that's probably the, the strongest one. Um, but if it's not that, then some kind of like subscription product, like maybe deodorant or, um, I don't know, something like that.
+
+This is probably where I'd go for. Deodorant would work. You can be like, don't smell on the court or some, you know, cheesy thing like that.
+
+But yeah, I think deodorant would actually be. Well, you could also like, just like just riffing on that. You could take the deodorant brands and you could like make it specific.
+
+You could make the sense specific to the, to the campus. So like, you know, I don't know, whatever, whatever the name, like, you know, you have like longhorn, you know, whatever for UT. And then you have like the names of the sense that like kind of fit that market.
+
+It's the same set. You're just labeling it differently depending on where it's at, but you're now pulling into that kind of like brand affinity they already have with their, with their campus or whatever else. And it makes sense for the athlete to be promoting that.
+
+Cause it's like, again, they're like a college athlete for that school. Maybe you could do some things like that to like juice how, you know, how attractive it is. I kind of love that because I, I'm just, you know, my marketing hat is on and there's so many taglines.
+
+You could be like, sniff out your competitors or like, you know, you, you could imagine these internet wars of like, oh man, that like that university's scent sucks or that like high school, like, have you smelt that? Like that stuff's nasty or like, you know, people actually competing on which, which college has the best scent. For every, every stick that's bought here, we, you know, drop one stink bomb at your rival school.
+
+Like, you know, it's like some, some way to like, you know, compete with the other schools. Nice. I can find this client info.
+
+Have you heard of HubSpot? HubSpot is a CRM platform. So it shares its data across every application.
+
+Every team can stay aligned. No out of sync spreadsheets or dueling databases. HubSpot grow better.
+
+Okay. Let's do a quick one, which is, I actually saw this in the trends newsletter a while ago. I didn't write this, but, um, it was the stat, which is the average person spends one and a half thousand dollars after a breakup.
+
+I have no idea where the stat came from, but definitely got the wheels spinning. And they came up with a bunch of different ideas, which I think actually are getting some traction. Divorce party ideas is something that gets search volume.
+
+Breakup cake. Um, people throwing their own breakup parties. And I was just like, huh, I don't know if there's, you know, specific brands that are taking this on, but I was like, huh, that that's that one and a half thousand dollars.
+
+Don't know where it came from, but there's something there. That's like, if I'm, if I'm F Jerry, you know, that like Instagram account and they have these, like they've built a kind of like a little media empire. They have a bunch of other accounts, but they also have products they make.
+
+Like they made that, that card game. I think they, they make some products. If I was, if I was one of those accounts, I would be jumping on this.
+
+I would basically say, all right, it's already viral. It's me more of the, it's, it's remarkable. People are going to talk about this.
+
+So how do I make, you know, like the best breakup cake delivery service or, um, you know, like, uh, the, the revenge body kit. And it's like, you know, we send you this like seven day detox, um, where you send you like a healing crystal. We send you like juice cleanse and whatever else to like, you know, get that person out of your, out of your life.
+
+So you're going to get the bad juju, you know, away. And I'd be like, you know, this is called bad juju or whatever. And I would just try to create like a viral product through that.
+
+Um, because I think it's on brand and I think it has like enough demand where there's, you could see this doing, you know, two to $10 million a year, all organic, just because the product is so viral. Um, you know, it's probably not going to be enormous, but there's a, there's enough of a niche there, especially if you're one of these accounts, cause you already got distribution. Um, or you're somebody who goes to those accounts and partners with them and says, Hey, I got the right product for you guys.
+
+Let's do, you know, some kind of profit share and, uh, I'll run this business and you guys just help me promote this, like, you know, uh, whatever, like the breakup vodka. And it's like, you know, this is the breakup vodka kit or whatever, you know, whatever the thing is. Yeah.
+
+I mean, I'm imagining, you know, all the tropes of someone gets broken up with and then they become super fit and like they get a PhD and they just become like the best version of themselves after the breakup. Doesn't always happen, but you could imagine something like that. Or something that's even less work.
+
+It's like, what's those, what are those like voodoo dolls where you like poke it and you're like, you know, you're sending like ill will towards them. You could just like upload a photo of your person. We print you a doll that looks like, you know, like close enough like them.
+
+And like, you can do that. That reminds me of, did you see that startup empty? It was fake.
+
+Did you hear about this? It's, I think it was, you know, it had the silly spelling too. It was like E M P T I or something.
+
+And it was a fake startup that people thought was real. And basically they sent people these empty boxes. Um, and the whole idea was like, look, we send you these empty boxes and there's some like mood of motivational quote from Buddha in it.
+
+And it's like, you know, rid yourself of all the things you don't need in your life. And the idea is that people are supposed to take all their junk, put it in these boxes and send it to this company for free, but they pay this company to send them these boxes. Um, but it was a fake startup and all these people are writing about it.
+
+And they're like, oh, this is so smart. Like what a cool company. Yeah, exactly.
+
+It was a joke, but yeah, actually you could do that with this too. You could send them the breakup box. It's like, put all their crap in this, all the crap they've left in your house that reminds you of them, put it in this, send it to us and we will send you a video of us like burning this box in this like epic way.
+
+And like, you get to have that at the end. That's, you know, those are the types of ideas you could do with this. Nice.
+
+So you were right before we started recording, you were starting to tell me, you go, here's my theory of why people like this podcast. What is your theory? Okay.
+
+So there are many reasons to love my first million. I think there's something that you guys have done, especially recently when you and Sam just go back and forth and you tell a really funny joke. And then Sam just starts laughing hysterically, like in a contagious way that most people would hold back maybe on a podcast, but it's, it's literally as people say, like you're in the room with him.
+
+And it reminded me of this subreddit I found recently called r slash contagious laughter. 4.5 million people subscribe to this. And it's one of, I think the top hundred subreddits out there.
+
+And it's literally just a feed of people laughing and there's, there's dozens of posts every day. And I was just, as I went down it, I was like, there's gotta be a post of Sam and Sean. Well, okay.
+
+Let me tell you a couple of interesting things about this. First. I think this must, I think the subreddit must be kind of like almost like new or growing faster recently.
+
+Right. Because I hadn't heard of this subreddit before and I kind of keep an eye on, on the top. Maybe I just missed it, but I've also seen this trend on Tik TOK.
+
+I don't know if you've seen it. Somebody will be like, I'm a clinical psychologist and I can make you happier in the next 10 seconds. Repeat after me.
+
+Ha. And there's like a duet. So that guy's like, ha.
+
+She's like, ha ha. Ha ha. Ha ha.
+
+And you're just like, okay, I see where this is going. And then she just gets like, ha ha ha ha. And like, by the end, both people are just cracking up.
+
+Like, cause it's like 10 deep and you can't help yourself. Like the body will just start like genuinely laughing just from making the sound. Like it goes both ways.
+
+It's not like something funny happens. Therefore, I break out laughing. It's like, if you break out laughing intentionally, you could just like, it could, it's like something funny just happened basically.
+
+And, um, yeah. And so I've thought about this, like contagious laughter thing in two ways. One is as a, I was thinking about the podcast and I was like, just watching, I was watching the all in pod and, um, I love that podcast, but they do something that really bothers me, which is one of them will crack a joke and the other guys don't, what I call sell the joke.
+
+Like they don't laugh. Um, and I don't know if they don't laugh because they're trying to there, a, they don't think it's funny. B it's not that they're trying to keep it serious or see, they might just edit it where they just don't use the audio track from someone.
+
+Cause it kind of makes it a little choppy cause you're using one on top of the other, but it totally changes the vibe of something when, um, in a podcast, especially when the other person actually sells your joke. Like if you, if you try to crack something and I go with it or, and this works for, for other things on my first million too, uh, I call it the homie move where Sam will be like, do you know how many people buy this thing? And I know it's probably a high number if he's telling me like that, but I'll be like, I don't know what, like, like a hundred.
+
+And just to give them the like, no dude, a million. And like, I give them that like assist basically. And so there are several things like that where you've got to kind of sell the other person's thing.
+
+And it's not fake. It's just like, be expressive, like laugh hard, react big, that stuff works when it comes to content. And people are very shelled up about that sort of thing.
+
+Um, I don't know if that, that is in line with what you're talking about. Totally. One of the funniest moments on my first million was your Orlando Bloom story, which I think if I just heard you telling it by yourself, I'd be like, yeah, that's pretty funny.
+
+But Sam's laughter layered onto that where he was, you can just tell he was dying as you were telling that story, just made it honestly top five moments on my first million history for me. But that's why I think this subreddit is so great, even in their rules or their like community guidelines. You know how someone posts something and there's typically a bot that says, hey, report this if X, Y, and Z on that subreddit, it's like report this if you're laughing at a joke or some sort of incident and not the laughter specifically.
+
+They're like, we only want you to be on here to hear other people laughing. So I don't know. I just thought that was like a fun, a fun thing and reminded me of why I think some people love my first million.
+
+It's just so authentic. Well, you're, you're about to do a podcast. And do you remember what I told you, my advice to you when it came to, to doing a podcast?
+
+I don't know if you remember this. This was a couple of years ago now. I actually don't.
+
+You should tell me that. I was like, um, don't be too normal. Or I was like, you're too normal.
+
+I was like, you need to be, um, like to me, the ideal podcast guest is like half insane. Um, and what that means is like, there's things that they're not even aware of that are insane. Like Sam has a ton of these where he's like, dude, I was thinking that, you know, you know, you think about like what happens if someone broken right behind me right now and tried to kill me.
+
+I'm like, no, I don't think that the fact that you think, I think that means you're kind of insane. You're not even aware of that. That's a weird thing you're doing.
+
+You think that other people do that too. And then the second is like being willing to say something crazy stuff like that. Uh, and then the third is like, they don't hedge, um, and like try to downplay.
+
+Like most people are basically taking their own little volume knob and turning it down all the time because they want to fit in. And so the best thing you could do if you want to be a personality on the internet is like, you can't have that. I'm trying to fit in, turn the volume down thing.
+
+You gotta like turn it up if anything. Um, and so that was my theory on it. Now I do think I might be wrong.
+
+Cause like there's people like Lex Friedman or whoever who are successful with their podcast and like, you know, it's like, you know, Lex is not the, his volume is like down to two. Basically he's a very monotone, calm, normal person and people, people do end up loving it. So I don't think my theory was, was entirely correct, but I do think it helps to have like, you know, a bit of a screw loose and like, you know, you're a very stable, smart person.
+
+You don't have that much of a screw loose. I think you're almost playing from behind, uh, when it comes to internet content. No, I think you're right.
+
+I, so in preparing for every episode that I do, I go and listen to that person on other podcasts and it's crazy how they get asked the exact same questions everywhere they go, because they're just kind of a template of like, okay, so tell me about your life. Like, tell me why you went this direction in your career. And I think you've even talked about this on my first million.
+
+You're like, we don't do that. We, we ignore all the questions that we know everyone's going to ask. I guess maybe some people want to hear, but we ask you like the real stuff, like how much do you make?
+
+Like what keeps you up at night? Like when have you failed or like even more than that? You actually just ask the questions that people probably want to hear.
+
+Yeah. There's this, there's this great thing that happens. If you always ask questions like that, you it's like a get out of jail free card.
+
+It's like, well, that's just what he does. Versus if you just try to spring that on one person, it's a bit like, whoa, it's a little intrusive there, but it's like, oh, that's his stick. That's the, that's the show stick.
+
+Like that's what they do. Um, then you can get away with being a little more blunt. And so, uh, you know, cultivating like an image of being, you know, sort of a don't give an F slash blunt personality has all these advantages because people just create new rules for you.
+
+They're like, ah, you know, if a normal person did this, yeah, I would feel wrong, but that's, that's just Sean being Sean. That's just Sam being Sam. And you're like, whoa, okay.
+
+And I just get to be that. Uh, that's awesome. That is awesome.
+
+Wow. Okay. This is good.
+
+Let's keep going. What else you got? Cheating scandals.
+
+Everyone's talking about it. Chess, poker, fishing. I even saw Irish dance in a newsletter recently.
+
+So every, you know, cheating's everywhere, but, uh, well, if people are out of the loop, frame it, frame it for them about what, what, what are the controversies? Okay. So I don't know all of them in depth, but I've been following the chess one pretty closely.
+
+Magnus Carlsen, world chess champion played Hans Niemann several weeks ago. Uh, Niemann beat him, but then there was all this controversy after where, uh, Magnus was acting sketchy and then eventually came out with this statement saying, Hey, I believe Hans cheated. Um, I can't speak to exactly why.
+
+And then there has been a history of Hans cheating in the past as well. So there's all of these people on the internet who are taking sides and saying, no, Hans has been really good. How could you cheat over the board?
+
+And then there's people who believe in Carlsen and are like, no, he's had a history of cheating. We just don't know how. Um, and then there's been a similar poker controversy and then a fishing one where they were stuffing fish with like lead balls.
+
+And so I think a bunch of people have just, you know, become fascinated with this idea that, oh my gosh, people are cheating, even though they have been for a long time. But, um, I have a couple ideas around the idea of cheating, but I first want to hear your take. Like what, what do you think about these cheating scandals?
+
+Well, there's something very seductive about them. I don't know about you, but like, I don't follow chess normally, but when it came to this, I was like, God damn it. If I don't have to get to the bottom of this, like, you know, here goes four hours of like YouTube rabbit holing to figure out.
+
+And I don't, it's not even like, it's a better entry point for me than just this person is great. Or this was a great match. It's like, here's the controversy.
+
+Oh, what is it? Right. And it goes back to this thing that, uh, I remember Dana White said once Dana White's the president of the UFC.
+
+And he goes, I go, they were like, you know, UFC is kind of a strange, small thing, but you're saying it's going to be huge. Why do you believe that? He goes, I believe that because if you go to a park or a playground right now and you've got a basketball court, people are playing basketball, you've got a football field, people playing football, you soccer over here, baseball over there.
+
+And then somebody screams fight and there's a fight going on. Guess where everybody's heads turning to the fight. And that was his whole thesis of like, why I think the UFC is going to be big, because fighting is this universal, universal thing that just gets you to turn your neck, whether you wanted to or not.
+
+And it's actually kind of played out. The UFC has become this global sport, you know, a $5 billion plus company. And, um, and it succeeded in places where, you know, like football doesn't really translate into Europe or Asia, but fighting does fighting, you know, like there's Chinese, the Chinese viewership is big in the UFC.
+
+So is Russian. And so is, you know, wherever every little country. So I think controversy is kind of the same thing, uh, where like, I wasn't that into chess until I found out that there might be this like scandal, what's the scandal I gotta know.
+
+And, um, and then you look at the evidence and you're like, well, there's two kind of like interesting components. One is like, how did, how would somebody cheat? That's kind of interesting.
+
+It's sort of like a, uh, oceans 11, like how did they rob the bank type of thing? Uh, because you know, you're sitting there at a chess board, it's not online. So, you know, this guy had been, he had been caught cheating online, admitted to cheating online.
+
+And many people cheat online to basically have a program running because you know, AI can play chess better than a human can. Um, but then you have, how was he cheating over the board? And there was this, then somebody threw out this crazy, uh, theory, which was that anal beads.
+
+Yeah. He's got anal beads, you know, basically up his butt that vibrate and tell him, you know, what, what move to make or whatever. And so, and, and, and the way that Magnus did it kind of added to it.
+
+So he first, when he got beat, it was big news because Magnus is the greatest player in the world. Maybe the greatest player of all time. He then goes online and he tweets out this thing.
+
+Like, um, uh, he tweeted out like a meme or a quote from a soccer coach who was like, you know, I can't, if I say what I want to say, I'll get in trouble. And people are like, what is he trying to say? Then he comes out with a statement saying, I think he cheated.
+
+Then he plays him again. And one move or two moves into the match, he just resigns. He basically quits and walks away.
+
+Um, again, sort of like saying, I'm not going to play with this cheater. And, um, and so some people are like, is this just sour grapes? And other people are like, no, he knows something, but he's not said why he thinks he's cheating yet.
+
+And then over time, Probably because he doesn't know, right? Well, now he did come out. Like I don't think Magnus can, he thinks that Hans cheated, but he doesn't know how.
+
+And that's probably why he hasn't been descriptive about it. Cause he's like, I think this guy's cheated. There's two pieces of evidence.
+
+One is just, he says he didn't look like he was trying. Like the guy beat me. I'm the greatest player in the world.
+
+And I know what it looks like when people try to beat me, they're very focused and concentrated. He barely looked like he was paying attention yet. He played basically a perfect game and beat me.
+
+That was his first thing was just like, I didn't feel like he tried and he beat me. Um, so that was the first piece of evidence. And the second was people went back and looked at all of his like past games as he ranked up.
+
+Cause he's had like this crazy rise from like, you know, a normal great player to like grandmaster or whatever top ranked player. And they, and they did this thing where they basically can put your game history back in this like chess solver engine and see how close to perfect, how close to AI did you play? And like the greatest players of all time have played like at 62 or 72% of their moves matched, you know, like what the AI would do like perfect moves.
+
+And he's had like several get many games where he's at a hundred percent and like the greatest players ever will have like no games at a hundred percent during their like rise to the top. And so it's sort of fishy on that front. Like, you know, really this guy's making like a hundred percent game theory, optimal moves, uh, and the greatest players ever at best are like at 70%.
+
+And so that those are the kinds of pieces of evidence against him, but still nobody knows how he did it. If he, if he is indeed cheating. Yeah, exactly.
+
+So I used to play chess competitively as a kid, and both of those are very compelling arguments. The first one, especially like if you've ever played chess across the board, if you're in a tough situation, certainly if you're playing the world chess champion, you are concentrating so hard. I think there's stats that say like, you know, a full chess match can burn like a thousand calories or whatever, if you're sitting at the board for several hours.
+
+And so I think that's really compelling. My question is, A, how do you prove that someone's cheating? I don't know if you can, I think you can prove someone has the intent to cheat if you catch them with like, yeah, some anal beads or something in their shoe.
+
+Um, but how do you actually prove that someone has cheated? And then I'm also curious to know how these, you know, like the chess federation, et cetera, how are they going to change the way they operate to catch this cheating in the future? I don't, I don't know.
+
+I guess they make people walk through a metal detector, but, um, I don't know. It's a game of whack-a-mole, right? Yeah.
+
+You can always do the next thing. Exactly. That's like, and I'm not going to get caught once, you know, it's just like, you know, in the Olympics you have USADA or WADA who are basically the agencies that are supposed to catch you from doping.
+
+But what happens is guys go to the Olympics, they test clean, they break all the records and oh, they're a natural athlete. And then six years later, WADA updates their tests so they can test for new stuff. Uh, that's new to them, but the athlete had it all along and then they go back to test the samples and they're like, oh, turns out they were doping.
+
+Right. And this has happened like a few times in, in the Olympics and in high level sports. And so there's this problem of like, it's this cat and mouse game between cheaters and the, and the, and the sort of like the anti-cheat, but anti-cheat is actually a really interesting business-like category.
+
+So I didn't really know much about this until we started building a startup that was in the gaming space. This was the company that ended up getting acquired by Twitch. But when we were building in this space, we would play games in the office just for fun.
+
+We played Fortnite, played Overwatch, played a bunch of different games like that. And, um, and then you, you sort of see two things. One is like, wow, the importance of like, um, this sort of hand-eye coordination aim, basically being able to aim and shoot, uh, in these games is like critical.
+
+And then there's like, you'll play somebody and you're like, oh my God, like as soon as I peek around the corner, boom, I get headshot immediately, perfectly one time, every time by the same guy. And it's like, oh, it's an aim bot. It's like, basically somebody is using a, basically like a piece of software that will automatically just aim for your head every single time more than a human can do.
+
+And so then the games have all these anti-cheat mechanisms built in to prevent that. Cause it's, I mean, it ruins the game when you have, when you have cheaters. And so at the highest levels and these games now have like a really big competitive scene, e-sports, like they have to figure out how to catch this.
+
+And so you have a software game and then you have software anti-cheat, which is different than like the Olympics or this like chess metal detector thing where it's a, it's an offline game. Now you did offline, offline anti-cheat. And so I think that the offline world needs to sort of learn more from the gaming world about anti-cheat, because there's these companies that are quite big that are anti-cheat providers to all games.
+
+Cause each game individually can't build the security system that's going to stop every, you know, potential form of cheating. And so there's just individual companies that are like, we are anti-cheat software. Every game becomes our customer and we can use them.
+
+And so I think that's, what's going to have to happen, which is like, you're going to have to have like anti-cheat companies that are security systems basically for the, for the competitive integrity of the games. And I think chess and poker and, you know, fishing and others are going to have to like ramp up in this area. But the irony is, this is the best thing that's ever happened.
+
+It was the best thing since Queen's Gambit, right? I paid more attention than ever on these things. Yeah.
+
+I mean, there's like conspiracy theories, which is like Hans and Magnus are in this together and like they're, they're associated with chess.com and they're all doing this to just like hype up chess, which I don't think is true, but I mean, it's kind of crazy when you think about fishing, for example, how was the fact that there was lead balls in a fish not caught earlier? I mean, I think you're right that some of these in-person sports are just like way behind on the concept of cheating, which is ancient. So I'm interested to see how that progresses.
+
+But one idea, like you said, there's going to be this wave of measures that needs to be put in place. And I just thought of this, this thing that I saw, you guys have had Peter Lovells on the podcast before, and he had, so Nomadlist is one of his companies. And for ages, people kept trying to copy Nomadlist.
+
+There's all these companies were like, we're going to hire 10 engineers and we're going to just like smash you. Right. Cause you're one engineer and, and we're just going to take all your data.
+
+And he would just for fun, uh, put in fake data. So there was this country or city that he put in called Dorabo. And he would just do that to be like, who copied my dataset just to see, which I kind of loved.
+
+And I am, I was trying to think through how that maybe it could be applied elsewhere. I don't know if it could be applied to chess, but you could imagine like, what if stockfish just had, just had like a couple incorrect moves that would catch the cheater. It's like, oh, you played G4.
+
+You were not supposed to play G4. If you were a great player, you would know otherwise. And I just wonder what other kind of spoofs or like tricks you could put in as anti-cheating measures.
+
+Well, I don't know if you saw this. Uh, I was looking at, I was on Twitter this morning and I saw that Elon had tweeted, um, at somebody, this story and it's, that was pretty interesting. So somebody tweeted at Elon, they go, Hey, Elon, back in the day you had this, uh, 2008, I think there was somebody who was leaking internal company data and, um, they kept leaking it to news outlets.
+
+It was bad for business. And then you found them. Uh, I'm curious, how did you find them when it, when it had happened?
+
+And he goes, actually, it's an interesting story because normally Elon's tweets are just memes, but he's like, actually it's an interesting story. We sent everybody in the company the same email, but with one slightly different space somewhere in the email. Um, so like we would, you know, between this period, we would either do two spaces or one space, but we, it was a long email.
+
+And so we were able to create like a unique fingerprint for everybody in the company. We sent them all a slightly unique, uh, email that was like sort of like binary proof that this was your email that got out. And he's like, so we found the person that way, you know, we caught them sort of immediately.
+
+It was the fastest path to catching them versus going through all the email, like servers and like patting people down as they leave the, leave the, leave the factory. Like, how are we going to find this person? And that was the best way to do it was to put out something juicy that was false, space out the thing differently.
+
+And then they caught the person immediately. And he's like, you know, that we, we, you know, we asked them to pursue a career at another company. And like, you know, we let them go.
+
+That's a nice way of saying it. Yeah. That's so clever.
+
+Yeah. So I'm interested to see how this progresses because I do wonder, it's like, who, who wins? Do the cheaters win?
+
+Do the anti-cheating measures win? Historically, I mean, in gaming, what was the case? Like, could the anti-cheating measures keep up with the cheaters?
+
+No, like the, the best cheater is always one step ahead because you know, there's always a, the bigger, the more money involved, the bigger, the incentive to cheat. And so you're, anytime you have a big pot of money, you're going to find people are going to cheat. And this is why, you know, PayPal and Facebook and others, they, they have so much, so much staff every day dedicated just to catching cheaters.
+
+And because there's a huge amount of money involved in it. This is why people love Bitcoin. They're like, wow, if somebody could have hacked this or spoofed this or done a double spend, there is a literally like half a trillion dollar prize for the taking.
+
+And because it hasn't, that just shows you how secure this is. So it's like the absence of a hack shows the security. And so with, with anywhere there's a lot of money, there's going to be an incentive to cheat.
+
+And there's always, the hardest part is that it's usually not sophisticated. So for example, in the, if you follow the poker one that's been going on, it's like this, this like high stakes game in LA that they stream the game. And so they have like a Twitch channel or whatever, where they're streaming the game.
+
+So it's like, kind of like the world's poker, but just going on all the time. People are playing for like, each person has like a hundred or $300,000 on the table. So you get these pots and like half a million dollar pots.
+
+And this girl makes this, this woman's playing this hand and she plays it in a way that kind of makes no sense. She has jack four offsuit. It doesn't make any sense why you would even be in the hand.
+
+Speaker 1 The board has no jacks, no fours, and it has a flush draw, has a straight draw. The other guy has both and he bets, he bets. She, you know, she calls an all in when she has nothing and she wins the hand and people are like, there is no way you can make that call.
+
+Like there's no, you're holding those cards. The only explanation is you looked at your cards wrong and you thought you had something else, but she kind of like, if you read the audio is there too, where she's like, no, I don't have it. Right.
+
+She's basically saying, I don't have a, they're like, do you have a three? She's like, no, I don't have a three. Um, and so she's basically, she's like, oh, you know, I just did this as a bluff catcher.
+
+And literally the guy's face when she calls at first, he's like, oh, you got me. I didn't have it. You caught my bluff.
+
+But then she turns over her cards and he's like, okay, you caught my bluff, but you caught my bluff with that. That makes zero sense that you would ever try to even catch a bluff with that. And he's literally stone faced for like a minute and a half.
+
+He doesn't say anything. He's just looking and his eyes are just moving between the table and her. And he's like, you could tell the computer in his brain is like breaking.
+
+It's like, there's no way this could have happened. He has detected basically an anomaly and an anomalous move that has to be something like cheating. Like there's no other explanation.
+
+How somebody could make a $200,000 bet on with those cards, unless you knew what my cards were and what's coming out. And so, um, and so they like launched this investigation and like, I think Reddit and YouTube are great at that where they like crowdsource the investigation. They're like finding old clips.
+
+Yeah. Like more than any police officer could do, you know, put Reddit on the case. It's like when they found the Boston bomber or whatever, I don't know if that ended up being true enough, but like, it's the same idea.
+
+And so they're showing basically what it looks like happened was just, there's a human in the production team who was probably feeding her the information. And she had like a vibrator device on her, like in her pocket or in her pants or something like that. Um, that was like signaling her just like, if it vibrates, that means you're good.
+
+Uh, like call the bet. If it doesn't vibrate, that means you don't have, you're not winning full. And, um, that's what people think is the like sort of most likely explanation for this at this point.
+
+But that's hard because it's human engineering and like, um, there's this conference that happens every year. I forgot the name of it, but you might know it's in Vegas and it's like the hacker conference. I don't know if you've heard, it's like Defcon or something like that.
+
+It's like, Oh, that's familiar. Yeah. It's basically, it's the number one, like hacker con hacker convention.
+
+Like, and like, I don't know why anybody would go to this. It's like, you know, walking into a, you know, a shark den basically. But one thing that they showed, I kind of went down this rabbit hole of like, what, what do they talk about at this thing?
+
+And one thing they showed is just how much of like hacks is not like brilliant computer engineering. It's somebody just calling you and being like, Hey, I'm just verifying some information with the bank here. Could you just tell me your mother's maiden name and your date of birth and your last four, your social?
+
+All right. Thank you. You're confirmed.
+
+Nothing else to worry about. And then they just take that and they call the bank and they say, Hey, I need to change my password. Can you change it for me?
+
+I forgot what my old one is, but you know, Oh, my security questions. Yeah. My mother's maiden name is this and here's my last four.
+
+And then they get the password change to take all your money. And they didn't hack in the system. They just literally like they catfished you, right?
+
+They, they sort of like, uh, the, you know, human engineering, they basically just like trick you into giving up information. And that's how a lot of the big hacks happen is they just trick a human into giving them their password and then they don't need to break in. It's like, you gave me the keys.
+
+I can just walk right in. Exactly. That's why SIM swapping is like one of the unfortunately super common ways of hacking people because people will just go into like an AT&T and be like, Hey, I'm this person.
+
+This is my phone number. I lost my SIM. Could you give me a new one?
+
+And they just get that. Um, and so, yeah, it's, it definitely humans are the like faulty piece in the equation. There's a great business that came out of this insight, which was, uh, there's many of them now, but, but when I heard this, I remember thinking, Oh my God, that is genius.
+
+It's basically a business that goes to companies and they say, Hey, the number, you know, that 90% of these hacks happen just because your, your employee is going to just type their password on the wrong page. And they're like, yeah, I guess that's true. Yeah.
+
+They go. So here's what we're going to do. We're going to send false phishing emails to your employees.
+
+And, um, but don't worry, like, you know, when they type it in, we're just going to give you a report every month because you're paying for our contract, which is just to say this employee, click this link and this would have been a breach, but thankfully we caught it. You can now educate the employees better. And we, you know, this is a way to like, you know, make sure that your, your employees are not going to fall for this.
+
+And, um, and those companies do extremely well because it's way cheaper to like prevent the hack that way, just by having somebody kind of stress test your employees in that way, try to break through the system and just say, Hey, here's where we found a vulnerability. And, um, I thought that was just like a genius business category to be in. Yeah.
+
+I, I have a coworker that fell for one of those recently and she's like, Oh man, I got to do this training. But I was like, really, that's all we have to, we just got to do a little bit of training. Like this seems pretty faulty if all these employees are clicking on this.
+
+Uh, but I kind of love the idea of ethical hacking. Have you seen, there's been someone recently, I think their, their code name or their hacker name is like Bjork sky or something. And they've hacked into three of Indonesia's like large government databases.
+
+And at first people were like, Oh man, this is just Indonesia is a huge country, right? In terms of population. They're like, Oh, they've got like millions, hundreds of millions of records the first time.
+
+And then the second time they were like, Oh my gosh, this happened again. Like this person has way too much data. But by the third time they were like, this person is just exposing how fragile all of our systems are.
+
+Cause they haven't, you know, sent the data anywhere. They're just like, you guys, you have to fix this. And they're just like using proof to show it instead of saying, you know, going to people and tweeting, like our systems are really insecure or whatever.
+
+Instead, they're just like, let me just show you. And I think it's, uh, I mean, I think, have you heard of wiz? I think that's like some sort of enterprise security software, uh, was the fastest, or at least one of the fastest that hit a hundred million ARR recently, like faster than deal faster than a lot of the companies that we're familiar with.
+
+Yeah. Just W I Z. Right.
+
+I think that's the name of it was cloud security. Yeah, exactly. Yeah.
+
+They had, they came out with some, I've never heard of this company. It's like, Hey, we're the fastest growing company in the world. It's like, what's that?
+
+What exactly. And they do is this what they do? They do the, uh, sort of like bug bounty stuff.
+
+Yeah. A hundred million ARR in 18 months. I don't know exactly what they do, but I just know there's some sort of enterprise security software.
+
+And, uh, yeah, they're like quietly the big, the biggest, fastest or not the biggest, the fastest growing company in a while. Yeah. That's insane.
+
+All right. Enough, uh, enough hacking and cheating and stealing. Uh, although I do, I just, I love that stuff.
+
+I can't get enough. I love the controversy. I know.
+
+Same. Let's do these internet portfolios. So I think these are, these are pretty cool.
+
+I think these are good inspo for people and you've curated a group of them. Let me, let me kind of set it up, which is basically people have these kind of like, um, personal websites, portfolios. And I think you, you, you wrote something on this doc.
+
+I want you to explain, you wrote evidence greater than, greater than, greater than confidence. Uh, so what does that, what does that mean? And then why do these interest you?
+
+Yeah. So I think in the age of social media, especially it's like really easy for you to be seen as an expert in something, you know, someone who's done no marketing can look up a bunch of Wikipedia articles and start tweeting threads on it. And a bunch of people who don't know any better can just say, oh wow, this person has a lot of confidence.
+
+Right. And you know, that's fine. Um, but what I think is important, especially in this era where everyone can seem like an expert is evidence, evidence over confidence.
+
+And what do I mean by evidence? It's like, don't tell me you're this business expert, show me the businesses that you've built and how successful they are and how you built them, or let me see how you built them instead of you telling me how you built them. And I think one version of this for individuals are these personal portfolio sites.
+
+So, you know, you can have a site, which again, it's like I've written for fortune and I have this many followers on Twitter or, you know, all of these things that you've made up that tell people you're confident instead of how about you just show me your skills. And some of these portfolios, which we'll hopefully pull up here, um, are just really fascinating because as soon as I go to them, I'm like, this person is a bad-ass. I want to hire them just based on what I see here, based on the evidence that they are a killer creator.
+
+And so we should pull some of them up. But for example, pull up this one from Bruno Simon and tell me what you see. So basically it's Bruno-Simon.com and you land and it's literally a like Jeep that's on the screen.
+
+You click start and there's a Jeep that's on the screen and it says, use your keys to move around. And it's like, and you just like, you can, you can go forward and you can just like drive into stuff. It's like a 3D, it's basically a game.
+
+And it's like his resume almost, but you can basically drive around, crash into stuff. And like, clearly this person is like super talented artist, creative web developer type of person. It's like, all right, I'm going to drive to the projects section.
+
+Um, and like, okay, I'm in the project section and I could see their different things. If I park my car on the open on the, on the parking spot there, it'll open that, like, you know, um, that link to go see that website that they built. And this is amazing.
+
+Like, this is one of the best portfolios I've ever seen. Like, this is like stunning. Yeah, it's pretty awesome.
+
+Pull up, um, another one, which is just another example. Click the one that says interactive resume from Robbie Leonardi. Robbie.
+
+Okay. Oh my God. It's like basically a game of Mario.
+
+So there's a character and I'm scrolling and all of a sudden I'm like, okay, level one, that's his about. Oh, wow. This is cool.
+
+Um, this is sick. It's basically like a chart of like, oh, I'm good at design illustration, whatever. But it's like, I'm running through the level and I'm like learning these different things about the person, about what they're into.
+
+Okay. NBA fan. Oh my God.
+
+Now I'm underwater. I'm doing the underwater level. Yeah.
+
+So this is crazy. They basically just took a resume, designed it beautifully and made it play like a Mario Mario game. And at the end of the level, it's like contact me here.
+
+If you want to work with me or whatever, you know, here's my contact form. You, you've won, you've made it to the end of the level. You've won.
+
+The thing I love about this is I assume these people are not applying for jobs, but can you imagine if you had a job opening and you had like a hundred typical resumes of people being like, yeah, I've worked here for three years. I've done this. I have this degree.
+
+And then one of them was this, how could you not hire this person? How could you choose something? So I made a crappy version of this when I applied for, so when I moved to Silicon Valley, I did this.
+
+So basically I, I applied to two jobs when I wanted to move to Silicon Valley. I applied to Stripe and I applied to a place called Monkey Inferno. Stripe, everybody knows, turned into like, you know, whatever, a hundred billion dollar company.
+
+I would have been like employee, I don't know, like 35, 40 at the time. So it would have been great. I would have probably made like 10, 30 million dollars, something like that.
+
+Just as like a mid-level sales, biz dev type guy that I was going to join as. Unfortunately, I crashed and burned in the interview when he was like, sell me this pen. And I was like, and I just fumbled it.
+
+But the, the other job I applied to is Monkey Inferno and Monkey Inferno was this really cool company. And one thing that's interesting is the more the company shows that they're unique, the more you sort of get the vibe and you're like, okay, I can read the room. You're cool and unique and you appreciate like a, you know, creativity and a sense of humor.
+
+So that's how I'm going to apply. So I didn't send in a resume. I just made a website.
+
+And I, you know, I can't code. I'm not like, you're way more technically talented, let alone these people who are like, you know, frigging, you know, they're creating like, you know, fake Mario game as their resume. But I made a basic website that was basically, and I just sent an email.
+
+I tried to copyright it while I was like, you know, my first line of the email was like, you know, Hey Michael, I'm applying for the, I saw your role for product manager. And even though, you know, I have none of the qualifications you're looking for, let me explain to you why I'm the man for the job. And like, you know, I think that was like going to get his attention to read the next thing, just to be like, is this guy, you know, a complete clown or like, is there something here?
+
+And so I wrote this email and then I said, you know, I, rather than add a, you know, resume to the stack of resumes, like I made a website for you. And so I, my, my website wasn't about me. It was like, why I should work at monkey in front.
+
+So it was like more tailored, um, to him. And I had these same things. I had this like, um, skills chart, but I included stuff that I wasn't good at.
+
+I was like, hard work. I was like, ah, 40%. Like, you know, that was like one of my lowest skills.
+
+I was like, yeah, I'm kind of lazy actually. Um, you know, I, I'm kind of lazy. I can't force myself to do things that I don't love to do, but I gave him like things.
+
+And then in the interview, like, I remember one of the guys was like, why would you apply for a job and write your hard work is not high. And I was like, well, I'm glad you asked. I can explain here's, here's what I think about that.
+
+And, um, and so I had this whole thing and I kind of wrote a resume exactly for them. I was like, you know, here's some of the, my mottos. Here's like, I looked at your companies.
+
+Here's some of the things I think I could do for them. And so I kind of tailored it to that. And I remember he later told me, he was like, you know, if you hadn't done that website, like, there's no way we would have hired you.
+
+Cause on paper you had like literally none of the qualifications we were looking for. Like the entire job description was like, just not you. But, um, that website was really cool.
+
+It was really unique. Nobody else had done something like that. And so it just made me feel like we got to talk to this guy.
+
+And so that was like the, the in that got me, got me the job in the, in the end, in the end. Yeah. I mean, I think I've hired a decent amount now and there's so many people who mass apply to jobs and they're like, yeah, I I'm interested in this job and I have the qualifications, but the times I've been really impressed is like, you can tell someone really wants to work there and has done their research.
+
+And you know, the second they get in, you almost don't have to train them on the company. You probably have to train them on other things, but you know, they understand exactly what you're trying to do because they've been following your company or your team or your people for a while. Um, so I think that's, that's spot on.
+
+Right. Let's do a couple of, a couple of these other ones. So, uh, yeah, let's rapid fire through some of the Neil, the Neil dot fun one, I think I've talked about before on here.
+
+This one's awesome. Um, so it's N E A L dot fun, uh, Ben, I don't know if you could pull it up, but basically it's like, it's, it's just like the headline is a tiny website on the internet. And then he's basically got a bunch of little, like interactive little projects that he's made that you could do.
+
+And I remember I went through the absurd trolley problems one, um, which is basically like, if you remember in school where it's like, you know, there's a train on the tracks that's going to kill five people, but you can pull the switch and just kill this one. Would you do it? And you're like, yeah, I guess I'd rather kill one than five.
+
+I think I would do it. And then it basically like changes it to like, but the one is a baby. Would you do it?
+
+And you're like, no, I wouldn't kill the baby. And then it's like, it's like, okay, but the other one is five cats. Would you do five cats?
+
+And it's like, it just takes you through 30, like absurd variations of that, of that question. And each one, when you say yes or no, it says 74% of people agree with you. 26% disagree.
+
+There's been 2.1 million votes of this. And you're like, wow, that's like, that's cool. You can see where do you differ from like, you know, the masses when it comes to these things.
+
+And so that's the one I did. Are there any other cool ones that he's got here? Well, I mean, he has so many, I'll call it a couple.
+
+So it feels like he just took all of his curiosities, which are the same curiosities that many people have and turn them into these, yeah, internet games of sorts. So one of them is like, explore the scale of space or see who was alive in X year. You're like, I wonder who was alive in 1870.
+
+And you can kind of see what famous people or influential people were alive at the same time. Another one that's fun is the internet's greatest debates. So it's all these questions like, you know, is it Jeff or gift, or I can't remember what some of the other ones are, but he gets the internet to vote on them.
+
+So you actually, you know, you get the answer to the internet's greatest questions. But as you can see, if people are watching on screen, there's just so many that he's built. Like this one that was like design the next iPhone.
+
+It just lets you drag and drop. Like you can put a camera on the, like, I put it like off to the side, like halfway off the camera. You could put an Android logo on it.
+
+That's good. This is, this guy's good. What does this guy do for a living?
+
+Is he, this is what he does? Or he's like, I don't know. Let's pull him.
+
+I'm pulling up his Twitter. His name is Neil Agarwal. So he says creative coder.
+
+Yeah, this guy's cool. Yeah. I like these personal portfolio.
+
+You had a pretty good portfolio website that you had built. Do you like maintain it or what did you do with it? I haven't updated it in a while, but I will say the page that gets the most traffic or, or really gets the most people who contact me is my open page.
+
+So a lot of, well, not a lot. Some startups have an open page, uh, that is, we make this much revenue. We have this many page views and normally they don't go much past that.
+
+I created an equivalent. I haven't updated it in a while, but it was basically like, okay, this is how much I make from my personal projects, but it's also my goals. And it's like, if my goal, for example, is I exercise 50% of the days in a year, I hooked it up to my spreadsheet and it publicly tracks it daily.
+
+So you can see exactly how much I'm doing, or it shows what books I'm reading, or I don't know, silly things like that. But people seem to love that for some reason. Yeah.
+
+Yeah. People do love that. They wish they were like as organized and on top and clear about their goals as you.
+
+That's why they love it. But you, you only put your side project revenue on here, right? Yeah.
+
+I've actually, you know what I have debated, I've been wanting to write an article, which is about my, like, uh, you could say monetary ascent through life. Um, as in. Wow.
+
+That's, that's, that's like post-economic, my monetary. Oh, no, no, no. That's amazing.
+
+I'll say. So the reason it's an ascent is not because I make so much now, but I just made so little starting out. And so I've been wanting to write about that because it's kind of, you know, I feel like I've learned some things, but also I think it'd be interesting to actually publicly say in this year I made X and, and I've seen some celebrities do this, but you know, 20 years later, they're like, look at my tax returns.
+
+Right. But I kind of want to do it now and say, look, five years ago I was making X and then I made X and to really like publicly share how much I made, how, like what jobs they were, et cetera, and what I learned along the way. But I know I'm just going to get trashed.
+
+You know what I mean? Because, because saying you make a bunch of money now is not, is not something people love. So I've stayed away from it, but I kind of want to anyway.
+
+Yeah. Yeah. I've thought about those same things and I'm just like, uh, why do I want to invite this in?
+
+I don't need this. Once you make a bunch of money, you're like, I don't need to kind of whore myself out there for the, uh, for the attention anymore. So there's kind of this, like, this like a counterproductive thing where it's like, well, the reason I would, for me, I'm very like simple, which is like, uh, people, when they do that stuff, they're like, I just want to increase transparency in the world.
+
+Or like, you know, I just want other people like me to know, you know, I think, you know, we should openly share. I think we should openly share strategies. I think we should openly share tactics.
+
+I think you should privately with a group of trusted people share the, your numbers itself, but to publicly for everybody share how much you make, I think only is in your interest when you're not making that much, but it's growing. Then once you're making a bunch at that point, the kind of risk reward flips, I think at least. Um, and so, you know, I'm, I'm not that into that, but, but this is cool.
+
+I noticed there's no 2022 goals. What happened? We're almost at the end.
+
+I know I gotta, I gotta post it, but I will say I'm way behind on them. So maybe that's why are you, are you like a goal hitter? Like, do you hit like most of these goals?
+
+No, I mean, I'm one of those people who I hit some of them, but that's how I think it should be. Right. If you're hitting a hundred percent, you're not setting ambitious goals.
+
+If you're hitting nothing, then you're just lost in the world probably. But I hit maybe 50% every year. Yeah.
+
+I think at Amazon, they had said, somebody had said like 75%, if you, if you're hitting more than 75% of your goals, like you weren't sufficiently ambitious, if you're hitting less than 75% of your goals, uh, or like maybe, maybe it was a little bit less than that. I don't know, but it was like, you're not executing well enough. I feel like you didn't, you didn't do good enough job.
+
+Um, yeah. Okay. Uh, all right.
+
+What else we got? You got a bunch of ideas on here. You want to give us some, let's go, let's do some quick ones.
+
+Okay. So business ideas. I don't know if there's one for like a new business idea here, but I thought this was interesting.
+
+I'm calling it salty bowls. And smelly water. And so basically there's two examples of everyone wants to eat healthier.
+
+Uh, that's, I think a pretty universal human, uh, want at least. And two companies are doing something interesting here. So Kirin, which is K I R I N it's a company in Japan and they partnered with a university and they found a way to make, to basically use a super weak electrical current, both in bowls and chopsticks so that when you're eating something about the ionization or the electric current makes something taste saltier.
+
+So you can imagine like when you actually eat something, your, um, taste buds or yeah, what there's some, something happening chemically on your tongue. And they've basically found a way to somewhat reproduce this. So you can actually eat food every, not everyone, a lot of people, including myself, love salty food.
+
+You're actually eating foods with less sodium, but they taste salty. And then I'm just going to quickly tack on the other one, which is similar where it's, I'm calling it smelly water because it's this company, uh, called air up, which basically has found a way to create a scented ring around a bottle's lip. So similarly, they found a way to make something taste better in this case through scent instead of electrical current.
+
+And they, I think raised $68 million. And so I think it's just this like interesting phenomena of how do you make something, and there's the train, how do you make something taste good without actually changing the caloric or the, the intake of the food? And hang on your, your note here says it's making a hundred million plus a year.
+
+Um, put, uh, as like an estimate, according to glimpse air up is this like flavored ring of the bottle. So you basically, you bring a bottle up to your lips. The water itself is not flavored.
+
+The ring is scented or flavored in some way so that when you drink the water, you get that, you know, whatever hint of citrus or whatever you're looking for. Is that it? Yes.
+
+And I put according to glimpse because I wasn't able to reproduce or like find that number online. I don't know where they got it. Um, they definitely raised a bunch of money.
+
+I just don't know if that revenue number is correct. That is crazy. Wow.
+
+Um, have you tried either of these? No, I want to, I saw the chopstick bowl one very recently. So I kind of want to order one.
+
+And then I haven't tried air up. Wow. Uh, these are, this is fascinating.
+
+I had not, uh, I didn't know you had said the salty bowl, smelly water thing. I didn't understand what it was until you said that, but that's crazy. I mean, the, the sort of like salt taste without, without extra salt.
+
+That's kind of, I mean, that's, that's kind of genius if you could do that. All right. You want to close things off?
+
+Yeah. We can wrap it up. Where, where should people kind of find you, follow you?
+
+Where do they get your next podcast that's coming out? Uh, tell the people what they want. Yeah.
+
+So you can find me at stephsmith.io or on Twitter, stephsmithio. And then, yeah, we're going to be hopefully launching the podcast soon. The A16Z podcast.
+
+You can find it anywhere that you find your podcasts. Do you have a name yet or, or not yet? It's called the A16Z podcast.
+
+Oh, okay. Yeah. Sorry.
+
+It should be easy to find. Yeah. All right.
+
+All right. Uh, thanks for coming on Steph and, uh, best of luck with the pod. Thanks.
+
+Bye.

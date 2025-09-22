@@ -1,0 +1,647 @@
+By the end of this episode, Sam, we're going to see me replace a developer, a salesperson, a designer, a marketer, a researcher, a product manager with AI agents. Sam Wittman Okay, I'm in. Are you going to tailor this to someone like me who's like a Neanderthal?
+
+Sam Wittman I'm going to tailor this to anyone who is an idea person. Sam Wittman So anyone who listens to your podcast, My First Million or my podcast, the Startup Ideas podcast, anyone who considers themselves an idea person, solopreneur, someone who wants a side hustle, someone who wants a business to make money and is interested in trends and ideas. Sam Wittman Okay, I'm into this dude.
+
+Sam Wittman Okay, so we're going to go through six steps. Sam Wittman The first is how to find the right idea and trend. The second is sketching out the idea.
+
+Sam Wittman I'm going to talk about the tools I use. Sam Wittman I'm also going to give away all the workflows so people can just copy them. Sam Wittman We're going to scope out the MVP using a tool called Manus.
+
+Sam Wittman We're going to vibe code prototype using bolt.new. Sam Wittman We're going to vibe market the business and automate it using lindyai. Sam Wittman And then we're going to use an AI agent product manager using idea browser.
+
+Sam Wittman Because I'm above the age of 30, I feel a little uncomfortable using the word vibe. Sam Wittman But do we get a pass? Sam Wittman Can I say the V word?
+
+Sam Wittman You can say the V word. Sam Wittman I don't know. Sam Wittman For now we can both say the V word even though it's cringe as hell.
+
+Sam Wittman All right, I'll try it on. Sam Wittman Let's get into it. Sam Wittman All right, so what's the first step?
+
+Sam Wittman The first step is I'm assuming you don't have an idea. Sam Wittman Okay. Sam Wittman So let's go find an idea.
+
+Sam Wittman Every single day, ideabrowser.com. Sam Wittman I created this for myself. Sam Wittman Okay.
+
+Sam Wittman So it basically uses, so every single day a new idea comes with a trend. Sam Wittman So today's idea is to create an AI SEO agency. And it gives you a name, LLM boost.
+
+Sam Wittman And it basically says that there's 400 million people that are a lot of people questioning ChatGPT, etc. Sam Wittman Someone should start an agency specializing in LLM, large language model SEO. Sam Wittman Did your methodology give you this idea for ideabrowser.com?
+
+Sam Wittman 100% This is basically productize Greg. Sam Wittman I run a holding company as my day job. And we're constantly incubating and investing in ideas.
+
+So we basically said, how can we have an unfair advantage using AI to find the latest trends and ideas? Sam Wittman All right, I'm into this. Sam Wittman But there's a twist.
+
+Sam Wittman So it says, we're going to offer a free AI powered audit quiz that instantly shows businesses where they rank in AI searches. Most will be shocked they don't exist. Sam Wittman And then we're going to sell premium optimization services to fix it.
+
+Sam Wittman So for example, it's going to ask, Hampton, I don't know how much of your traffic is organic SEO. Sam Wittman Let's say 1000 people a day from search. Sam Wittman What people are noticing is that LLM search as a part of organic search is maybe now 5% or 10%.
+
+Sam Wittman Dude, we are just now getting people, we have gotten a bunch of people who have signed up and they found us via chat GPT. Sam Wittman Right. Sam Wittman So it would be cool if Hampton, for example, would show up more often.
+
+Sam Wittman I agree. Sam Wittman So this is like a good idea, right? And it gives you like an opportunity score, a problem score, and this uses all AI agents.
+
+Sam Wittman You can go in depth and stuff like that. Sam Wittman It tells you exactly what business model you should use, what your pricing should be, what are competing customers. Sam Wittman It really does all the work for you.
+
+The go to market strategies, what is the target audience? Sam Wittman It actually scrapes and goes through Facebook groups, YouTube channels like this, Reddit, and it basically set it, it's almost like your AI co-founder in that sense. Sam Wittman One of the cool features is, let's just say, you know, let, there's a lot of ideas that are really good.
+
+Sam Wittman But Sam, for example, you might not be the best person to go after this idea. Sam Wittman So you can basically go through a founder fit score and say, Sam Wittman I'm Sam, I'm the founder of Hampton. I specialize in community.
+
+Is this a good idea for me? And then it uses AI to basically generate an assessment to see if we should actually go and do this idea. Sam Wittman Okay, this is awesome.
+
+And do you have a bunch of people, and this is a product too, I just signed up for it. Do you have a lot of customers for this? Sam Wittman I haven't publicly posted about it.
+
+Sam Wittman Wow. All right. So this is awesome.
+
+All right. So give me a six and a half out of 10. Sam Wittman Yeah.
+
+So it says your skill alignment, it's kind of, it's actually kind of savage. It's because your skill alignment is four on 10. Which I don't disagree with.
+
+Sam Wittman I agree with. Sam Wittman Yeah. So it just goes through this, and it gives you some immediate actions to do what you should do.
+
+Okay, maybe we should partner with an AI and SEO expert. You know, maybe you should launch a community driven platform for client engagement. Anyways, the point of this is, Sam Wittman Dude, this is awesome.
+
+Sam Wittman Yeah, and there's way more you can do. You can also, you know, it tells you exactly what your offer should be. It gives you different frameworks.
+
+Like, Alex Hermosey has the value equation, which I really like. Sam Wittman Dude, this is going to be a huge product that you made. This is really cool.
+
+Sam Wittman And it's all, yeah, it's special to this. And it also has this AI assistant, like we can ask it, like, you know, what are the key risks of the business? And you can have a full on, it's like chat GPT for ideas.
+
+There is a feature, and we can go to it maybe at the end if we have time, where you upload your own idea, and it generates a report based on all the data of like YouTube and Reddit and all of AI, basically. Sam Wittman But step one is to use this website to get an idea. That's pretty awesome.
+
+Sam Wittman And you know this, you want to build an idea based on a trend because it's easier. Sam Wittman Yeah. Sam Wittman So look, find, you know, use something like ideabrowser.com to get an idea based on a trend, and then go.
+
+So that's step one. Sam Wittman Hey, really quick, if you're enjoying this episode, the team at HubSpot, they actually went and summarized the entire thing. And so it's in a PDF that's really easy to read, so you can refer back to it.
+
+All you have to do is click the link below, or if you're watching on YouTube, just scan the QR code. But this thing is awesome. I just proofread it, and it walks you through Greg's entire five step system from idea to paying customers using nothing but free tools and AI prompts.
+
+So you should go and check it out. It's a very easy summarization of this entire episode. Again, the link is below, or if you're on YouTube TV, you can scan the QR code.
+
+All right, now back to the show. Okay, so I think ideas are important. I think that for a lot of people just starting out, ideas are unimportant, because it's just like, just get into something and you'll figure it out.
+
+But I think that if you have a proven track record of like, I execute, so execution, or going forward is not a problem for me. And then if you have that personality, ideas are actually incredibly important. I talked to Kevin Ryan, who's a, I believe he's a billionaire, but he's founded a MongoDB, which is a 35 or $50 billion company, business insider, guilt group, Zola, but he started all these amazing companies.
+
+And he started it via his incubator. And he told me that ideas are incredibly important. And he was like, I get one good idea a year.
+
+And I want to make sure it's important and great, because I go hard on that idea. And so I have to make sure that I'm going in the right direction. And so I actually have grown to become a believer that ideas are actually really important.
+
+It's not just execution. If you have a past of you move forward. I think you're right.
+
+So that's step one. Step two is, okay, I kind of cheated in the sense that you do need a human being involved in this process, not 100% with AI. So step two is, you got to sketch out the idea.
+
+So I use a tool, not affiliated, by the way, with TLDraw. Have you seen this? No, what is this?
+
+Basically, I'm going to everything that as you're talking, I'm going to it. Yeah, well, I wanted to give away like the stack. I'm going to give away the stack that I use.
+
+So basically, it's kind of like a FigJam competitor, I think it's free to sign up. And I just wanted to sketch out what this quiz would look like. So because, you know, if you remember, the idea is, we need to do two things.
+
+People are going to land on this website, Idea Browser gave us the name, LLM Boost. We need to learn about the business. So for example, Hampton, you know, what's the URL, what type of customers you want, then we need to do research with agents.
+
+And then we need to check that, you know, is Hampton coming up in ChatGP? Is Hampton coming up in Claude? Is Hampton coming up in Grok?
+
+And then we need to give it a score. So I just drew this out. And the reason I drew this out is because I've noticed, and this is a tip for everyone listening.
+
+I noticed that when you go to an LLM, I use I'm using Manus, and I can talk about that. And you give it an image like that, you're going to get better results. That's crazy.
+
+And how long did it take you to draw that out? Like seven minutes. I hate drawing on computers.
+
+Yeah. The beauty about TL Draw, though, I will say is like it makes it for like bad drawers like you and I to just like make these boxes. So it's for us.
+
+It's for us. Digjam is also really good. Okay, it's tldraw.com.
+
+Tldraw.com. Exactly. The next step is to scope out our minimal viable product, right?
+
+So we need to figure out how we actually get to build this thing, right? There's so many question marks. And instead of going to a product manager, or instead of trying to figuring out the self, you and I are lazy, right?
+
+We're just going to go and get AI to do this whole thing for us. So Sam, have you ever heard of Manus? No, I'm on their website right now.
+
+It says Manus is a general AI agent that bridges minds and actions. It doesn't think it delivers results. It excels at various tasks and work and life and getting everything done while you rest.
+
+All right, that sounds great to me. Yeah, so it's it's very, you know, people might ask, like, how is this different than ChatGPT or Cloud or some of those? And it's almost like a ChatGPT supercharged.
+
+So I'll go through my prompts. But basically, it's almost like we're watching, you know, if people are seeing or it literally goes and surfs the internet for you. And based on that, like learn stuff, and then executes on the task.
+
+So it's like having 100 agents working for you. But doesn't OpenAI research do this too? Yeah, but not like, first of all, I can watch it happen in real time and give it feedback, which is kind of cool.
+
+Well, sorry, OpenAI has operator too, though. Operator. Yeah, this is like a supercharged version of operator.
+
+So wow, you think this is better than operator? I mean, I have to give a disclosure, which is, it's Chinese. So like, be careful.
+
+I mean, I'm not like putting, you know, my financial data and uploading it. Right. So do they like, like they like put like, P.S.
+
+like capitalism is horrible. And like, you know, we're gonna come and dominate you eventually. Totally.
+
+Totally. It's, it's, you know, it's, there's a subtle, subtle nuance to that, for sure, in the vibe. So, but I will say it's, it's extremely good at, for this use case.
+
+So, I'm going to go through the prompts. And we're going to end by the end of this section. We're going to have a good idea of like, what we're building, and all the specs.
+
+And I just signed up for as we were talking, is it, it has all these like cool, like research data analysis, all these other like toggles that I couldn't use these. Uh, do you, does this cost money or is this free? Free to use.
+
+Initially, they give you like a lot of these, they give you like, they get you hooked. They're like drug dealers. They get you hooked.
+
+And then you have to buy, you know, then you have to buy credits. It's a credit system. All right.
+
+Okay. I have an account now. Yeah.
+
+And by the way, this was invite only up until recently. So, your unfair advantage, like people listening to this, like get on this now before everyone finds out. Well, I looked at their traffic.
+
+It looked like they went live in March because they had like zero traffic. And then in March, they had 23 million site visits. It's insane.
+
+Yeah. Okay. It's insane.
+
+So, have you heard of Whisperflow? I feel like I love Whisperflow. Whisperflows is my favorite AI tool.
+
+Okay. So, I love Whisperflow too. You can use it on a phone and, or desktop.
+
+So, I literally just- So, Whisperflow, by the way, it's a, it's a, I think it might be free too. Maybe I paid $100, but basically I click a button on my computer and anywhere where I would normally be typing, it transcribes what I'm saying. So, I'm just talking all day instead of typing.
+
+Exactly. So, that's what I did here. It's like, I basically did a prompt, where it's like, I'm starting, you took the idea from Idea Browser, I uploaded the image and I'm like, I'm starting an agency for LMSEO.
+
+I just basically explained what I'm doing. I'm not going to go through the full prompt. But the key here is when you're doing the initial prompt, don't forget to say, ask me any questions before you get started.
+
+So, we have the right strategy for this. I've noticed that by putting that in there, that small one, you know, one sentence, you're going to get better output. So, you were talking to it and got the text and also you attached the image.
+
+Yeah. You, you should attach any, any images or documents that you think are relevant to whatever it is you're trying to do. Understood.
+
+And then, and then, so the reply was, this is interesting. Here's a bunch of questions that I have to ask before we get started. Okay.
+
+Yeah. So, I mean, it asks the right questions. I would, I would say like, who is the target audience for the quiz?
+
+What is the main goal for the person? What is the key differentiators between traditional SEO and LMSEO? So it asks these questions and then, you know, I use Whisperflow, as you can see, like it's so casual.
+
+I'm using Whisperflow just to respond. Okay. Uh, wow.
+
+So, wow is coming up. It's, it's, it gets even crazier. So, you know, I say things like the ultimate business goal to be give, to give them a benchmark for where they're ranking in LLMs now.
+
+And then we provide a service for helping them level up their LLM SEO with tools and services. So I'm basically giving some more information. Wait, would you, and would you ask it to critique the idea?
+
+Oh yeah. I do that all the time. So you'll be like, does this make sense?
+
+Or do you think it should be different? Like, could I just say it like my goal is to scale to a hundred million in revenue in 10 years? Dude, sometimes I'll take an idea from idea browser, I'll put it in and then, you know, ask it to critique it.
+
+And then through the conversation with Manus, I'm like, you know what, I don't want to do this anymore. And this is better you think than you, because I do the same thing with OpenAI, but with my own company. So with OpenAI, our ChatGPT, I'll upload like my financials.
+
+I'll upload like a book that I like, like, for example, it could be like a Warren Buffett book. And I'll be like, ask Warren, what would Warren say about this? How would Warren solve these problems that I'm facing?
+
+Yeah, that's, that's a really good actually hack for using any of these LLMs is like, pretend you're XYZ person you look up to. How would, how would, would Warren Buffett start this business? Why or why not?
+
+Would Sean Pory start this business? Why or why not? Yeah.
+
+Or sometimes I'll be like, pretend that you're a BCG or McKinsey consultant and you're like, cold hearted and all about operations. Explain to me how that personality type would execute on this problem or whatever. Yeah, that's a good hack.
+
+People should definitely do that. Okay, so Manus is awesome. But you're saying that Manus for what you're doing right now, this is better than ChatGPT.
+
+Oh, yeah, it's, it's night and day. It's actually night and day. Wow.
+
+Okay. And so ChatGPT is not going to do this, for example, like, like, once we, it's start, you know, we're clarifying some stuff, it literally creates a to do list for the project. This is like, literally like what a project manager product manager would do.
+
+Uh, okay, this is insane. Right? So phase one, research and planning, clarify quiz objectives.
+
+You know, phase two, question and prompt development, create detailed quiz questions, draft specific, clear and actionable questions for each category. Phase three, validation and finalization, validate questions and prompt with users. And then the delivery, report and send quiz materials to user, provide the finalized quiz materials to the user.
+
+It's basically putting an entire project plan for what I'm doing with Manus right now. Wow. I feel like all of my employees need to know how to do all this.
+
+Yeah. Send this to everyone. Send this to everyone.
+
+It's just going to make you a lot more productive. So what was the second question? So the first thing that you did was you explain the business and then what was it?
+
+And then it asked you a bunch of questions. You answered the questions. And then what?
+
+So we got the project plan and then it goes and gets to work. It's your product manager. It's your AI product manager.
+
+And it actually goes and creates the two things that we actually need. Because remember, we're trying to product, we're trying to create like essentially a SaaS software to basically score how a company like Hampton is going to, you know, come out in a, uh, LLM in a, in a chat GBT. So we need two things we need to.
+
+What are the questions that we need to ask the business and how do we test on the different LLMs and, and I don't know how to do that. So that's why we're going to, we asked Manus to do it and Manus figured it out for us. Holy shit.
+
+So what you're looking at Sam is the, the quiz detailed questions that we can make as like, almost like a type form on our product. What's the name of our product? It's called LLM boost.
+
+All right. So you go to LLM boost.com and right on the first page, you see, uh, like a quiz and you're going to start taking that quiz. Yeah.
+
+We're going to, and Sam, we're going to, like, I, I'm going to actually show you how I vibe coded it in like four minutes. So, um, we're going to actually go through that product after. Okay.
+
+How's your heart rate right now? I feel, um, like I'm taking notes and I'm like, I need everyone at my company to know exactly how to do this. And I'm like, do I hire a Greg?
+
+Like, how do I teach all of my, or am I like, do I just have to get good at this? And I have to teach everyone? Like, is my job as, as the boss, just to be like teaching people how to use AI?
+
+Is that it? I don't think this is something that you can outsource. Yeah.
+
+So then you're saying that I need to get good at this and then I need to teach people. I mean, unfortunately. Wow.
+
+Okay. Yeah. The unfair advantage and the returns that you're going to get by understanding these tools is just worth it.
+
+Like, why would you want to outsource it? Well, because I'm not an expert in it, but I guess I have to become an expert, but how do you stay on top of all of this? It's my job, you know, it's my job to stay on top of this stuff.
+
+I know, but tell me how, like, how did you know Manus is awesome? Because I'm a nerd, dude. Dude, that's such a, that's such a cop out.
+
+Like, are you playing on Twitter all day? Are you in, like, what are you doing? I do have tweet notifications for like some creators that I like and that I'm, you know, following everything that's new that's coming out.
+
+And I'm also, when I say I'm a nerd, I love playing with the tools, not just like reading them. But you're just hearing this through word of mouth, word of mouth being just like, just the trades. You're reading the trades.
+
+The trades. Yeah. You're reading the trades, you know, it's just the trades.
+
+It's not some, it's not some, it's not PC weekly anymore. It's a guy on Twitter. And then I would say like, what I like about the podcast, and you probably like this too, is that it's an opportunity to actually learn in public.
+
+So I'm just learning in public on the podcast. All right. Well, this is cool.
+
+What, now what? So we got these two quizzes and exactly, you know, how we can, yeah, we have that, basically the quiz for the business. And then we have the prompt testing for the LLMs.
+
+But when I went through it, I actually felt that this was too long. Like, no one's going to answer a thousand questions. So I basically said, is there any way to make the quiz shorter?
+
+It's huge quiz. And then I also, I downloaded a LLM SEO mini course from the vibe marketer.com. It's another, you know, whatever it's a course.
+
+And I just uploaded the content to make it even better. Because I was reading, I'm a nerd and I was reading this stuff. And I was like, I want to make sure that we have this course and all this content in here.
+
+So I just basically, the point here is you can paste anything into here for context, PDFs, documents and stuff like that. This was a free course? This was a paid, I paid, well, I'm, it's a co-founder of mine started this course.
+
+Okay. So you got it for free, but it's a paid course. And is this the thing on school?
+
+It's a thing on school. Yeah. Okay.
+
+Got it. So it's 150 bucks and you got some course and you put it in there. Understood.
+
+So it's like, thank you. And then it goes, I'm going to review the transcripts and refine the prompts and the quiz questions. So then it goes, my plan, and doesn't it sound like a human?
+
+My plan is to analyze the transcript you provided to extract key insights relevant to LLM SEO and how businesses are found in LLMs. And then it's going to work on the strategies to shorten and consolidate the quiz. And then it's going to revise both the quiz questions and the prompt template.
+
+It's like such a, it's so pleasant dealing with an employee like this. All right. Yeah.
+
+It's going to be like, hey, uh, my grandma died. I got to go to the funeral in Tampa. I'll be back in two weeks.
+
+And then it's like going to take a 10 day vacation. Mattis takes notifications. Oh, okay, cool.
+
+So it is a great employee. So it goes and does it for us. We've got the files to review.
+
+And I want to give away one more tip on Manus. So, or actually it works on any LLMs. So we talked about this in the beginning, you know, we're lazy, right?
+
+So how do we, I know what I want to do next. Now that I have the quiz, it's like, I want to go vibe code. I want to build this product, but I need to know what is the best prompt.
+
+Yeah. Mattis Borgia Mattis Mattis Mattis Yeah. To prompt in this case, I'm using bolt.new.
+
+And so the best thing you can do is actually ask Manus or ChatGPT, what is the best prompt? So say, I say, can you create a prompt that I can give my AI developer that I would use to generate this landing page with a multi-step funnel that asks the LLM questions, include all the necessary fields that they need to have and have a clean, modern design. Mattis Borgia By the way, this is another huge hack is to ask it the prompt that you should ask it.
+
+Mattis Borgia It might be the biggest hack of using LLMs. Like, well, is ask for the prompt. You will never be able to out prompt the person, the guy, you know, the software that sees all the prompts.
+
+Mattis Borgia I also use Kubera. Do you know Kubera? K-U-B Mattis Borgia I use the product.
+
+Mattis Borgia I love Kubera. Yeah. Mattis Borgia I'm not affiliated with it at all.
+
+But I know the founder and it's like a net worth tracker. So it doesn't, it's just like mint or whatever. You can just track all your finances.
+
+And they have an AI chat GPT integration. And then I was like, all right, what questions do you think I should ask you on happiness, on life strategy, whatever? Like, tell me some questions you think I should ask you.
+
+And it gave me a list of all the questions that I should ask it that I never even thought of. And I started having a conversation with it. It was really amazing.
+
+And so asking the LLM what you should ask it is shockingly useful. Mattis Borgia Amen, brother. So we asked it and it does it.
+
+Mattis Borgia I'm going to go open it up just to show you what that prompt looks like. It's a super long prompt. So it goes through the project goal.
+
+It's like develop a high converting landing page and integrate a multi-step quiz funnel. Mattis Borgia And this is the prompt that you're going to give to bolt.new, which is the thing that's going to make the website. Mattis Borgia Correct.
+
+Mattis Borgia Yeah. Mattis Borgia Wow. So it's a really long prompt.
+
+Mattis Borgia Like really long. Like obviously you and I would have never done this. Mattis Borgia Yeah, that would have taken a week.
+
+It's like writing a term paper. Mattis Borgia Look at this dude. Mattis Borgia Yeah.
+
+Wow. Okay. Mattis Borgia So thank you Mattis and the People's Republic of China.
+
+Mattis Borgia And we then move on to a Silicon Valley startup called bolt.new. And I will show you how I one prompted the website. Mattis Borgia And is bolt.new the same thing as cursor, lovable and all this other stuff?
+
+Mattis Borgia There's bolt.new, lovable, cursor and I mean there's a lot of them now. Mattis Borgia Winsurf is another one that just I think got acquired for 3 billion. I don't know if you saw that.
+
+Mattis Borgia Yeah, I did. That was the same thing? Mattis Borgia Yeah, it's like a similar thing.
+
+So cursor and windsurf are for more technical people. Mattis Borgia Got it Mattis Borgia I would say. Lovable and bolt are for non-technical people who want to ship software.
+
+Mattis Borgia And why do you prefer this one over lovable? Mattis Borgia You know, I started using this first. I find it, I find the output to be really good.
+
+Mattis Borgia But use whatever works for you. Mattis Borgia Understood. Okay, so you typed in or you copied that huge thing in there.
+
+Mattis Borgia And then I get this webpage. Okay. And it says, by the way, I'm not like creating copy here, right?
+
+Mattis Borgia You know, I'm not doing anything. I literally one-shotted it and says, your customers are searching for you on LLMs, but you're not there. Sad face.
+
+Mattis Borgia Our free quiz helps you understand your visibility in chat, GPT, perplexity, and other AI models and what to do about it. Take the free LLM SEO quiz now. Mattis Borgia Oh my God.
+
+Okay. Mattis Borgia Sam, your words guy. Not bad.
+
+Mattis Borgia This is more than not bad. Your customers. Yeah, I mean, it's the best.
+
+This is the best. I like how it has- Mattis Borgia Sam, you're the- humans are the best, but you know, it's a close second. Mattis Borgia But I like how it says there's even a testimonial from a CEO of a major internet company.
+
+And you want to know something? I would leave that in there. Mattis Borgia Why?
+
+Mattis Borgia I would just leave it as we're seeing, here's the testimonial. We're seeing a much higher conversion rate from prospective users coming from organic LLM traffic versus organic search from the CEO of a major internet company. I think the CEO of a major internet company has probably said that before.
+
+So it's not- Mattis Borgia It's not wrong to keep that in there. Mattis Borgia It's like define major. Mattis Borgia Mattis Borgia A person has said that.
+
+Mattis Borgia I don't know if they've said it about LLMboost.com, but like a person has said that for sure. Mattis Borgia So let's get into the quiz. So it creates the quiz.
+
+Mattis Borgia Wait, so did you do any work before this? Because I'm on Bolt.new right now. It takes like a few minutes to make the website if you're using the free account like I am, right?
+
+Mattis Borgia I'm pretty sure I have a free account. Maybe I have a paid account. Mattis Borgia Okay, so while we were talking, I just said, make a personality quiz website.
+
+Mattis Borgia And I got a webpage that like I just clicked start now. Mattis Borgia Right. Mattis Borgia And it works.
+
+The website works. Mattis Borgia Yeah, it's crazy. It's absolutely crazy.
+
+Mattis Borgia Okay, awesome. Mattis Borgia Yeah, so there's this thing that you can literally just say English to and software comes out of it, which is bonkers. And so it says, what type of business do you want to operate?
+
+Let's just say like a service business. Mattis Borgia Do you have a website for your or we can just do like you actually we can do Hampton would be a service business actually. Mattis Borgia Yeah, yeah Mattis Borgia Do you have a website?
+
+Yes, I do. Mattis Borgia How often do you publish new content? Mattis Borgia Weekly.
+
+Yeah, weekly or more often. Mattis Borgia What topics does your content typically cover? Mattis Borgia How to guides Mattis Borgia Like this is relevant.
+
+Mattis Borgia Let's go to case studies. Go to case studies. Click case studies.
+
+Mattis Borgia You can click both. Mattis Borgia Oh, wow. Okay.
+
+Mattis Borgia But before today, how familiar were you with LMSEO? Mattis Borgia Somewhat familiar. Mattis Borgia Okay.
+
+Do you use do you or your team use AI tools like ChatTBG for business? Mattis Borgia All the time. Mattis Borgia Are your competitors visible in AI search to your knowledge?
+
+Mattis Borgia I am not sure. Mattis Borgia How important is SEO for your business currently? Mattis Borgia Somewhat important.
+
+Mattis Borgia Joinhampton.com Mattis Borgia People don't search CEO communities, but in LLMs, they'll ask it CEO questions, and it would be amazing if we were recommended. Mattis Borgia Put your name, Sam, Par Mattis Borgia Okay. Mattis Borgia Look at this.
+
+Mattis Borgia Look at this. Mattis Borgia I want the report. Oh, look, they put a little privacy thing.
+
+Mattis Borgia That's a small detail that I get. So they should put like the Chinese emoji flag at the end. Mattis Borgia And that's like the symbol for gotcha.
+
+Mattis Borgia Mattis Borgia Totally. Mattis Borgia Mattis Borgia We respect your privacy and will only use information. Mattis Borgia Use your information to send you your quiz results and related LLM SEO information.
+
+Mattis Borgia We will never share your information with third parties. This is the little details that if you don't use Mattis or an LLM like that and ask it to do the prompt for you, you will miss. Mattis Borgia Boom.
+
+So in 24 hours, Sam, you're going to get a personalized LLM SEO score. You're getting an analysis of your current AI search visibility. You're going to get specific recommendations for improvement and additional resources to help you to help optimize your business for LLM visibility.
+
+We just built a SaaS in like 30 minutes or something. Mattis Borgia But it's not doing though. Is it going to do the work for me?
+
+Mattis Borgia It's not. You have to then hire the person to like the consultant. Mattis Borgia Like so who's going to do a personalized LLM SEO score?
+
+Mattis Borgia This software. Mattis Borgia Wait, what? Mattis Borgia Manis Borgia Manis Borgia Manis Borgia Mattis Borgia Mattis Borgia Manis Borgia Manis Borgia All I have to do to get it to to to to for this to work all I have to do is that Bolt has these like integrations.
+
+Mattis Borgia So let me see my my analysis. Analyze me, baby. Mattis Borgia I have to just put in all I have to do is get it ChatGPT API key and hook it up and I can get you your score.
+
+How hard will that be? In under an hour, you can have ChatGPT analyze the data and you would probably want to have an integration with Supabase. Do you know Supabase?
+
+No, dude. Okay, so Supabase is it's a database. So this is just the front end, right?
+
+In simpler English words, I would say it's just the thing that is showing it, but you need to hook it up to a database, a place where you can store the data. And you can also, and if you want to take payments, you're going to want to add Stripe as well. What?
+
+Okay, so and the way that you would create this report for me is by doing what? I would, so in the Manus, details, it tells you exactly what we should prompt ChatGPT, perplexity, all that stuff. And we just need an API key because it will cost money to actually use the intelligence of those LLS.
+
+But what would we ask ChatGPT? So we can actually go back to Manus and see that. So here's the testing.
+
+So it's crazy, dude. So section one, brand and company info prompts to check if an LLM can accurately retrieve basic information about the company and its offerings. things.
+
+So if you actually filled, so if Hampton just, so it would take your information, your quiz information, and then in company name, it would say Hampton. Yeah, yeah, yeah. Right?
+
+Yeah. So it's going to take all that quiz information and it's going to just put it in all these questions and then we're going to have agents basically figure this out for us. And it's going to output a score.
+
+And the agents would be ChatGPT? Yeah. And they would be, I would be asking ChatGPT itself, how does Join Hampton rank?
+
+Yeah. Well, you'd actually, you would probably, the prompt would be, yeah, the prompt would be like, what can you tell me about Hampton? Then it would, then the output would go to Supabase.
+
+This is getting a bit technical, but then the output would go to Supabase and it would say, this is what we learned about Hampton. And then ChatGPT or OpenAI would say, okay, based on that, it performed well, not well, you know, we're going to give it a score of 70 on 100. And then, now you have that score.
+
+So Supabase is the one that's giving the score? Supabase is what stores the data. OpenAI, ChatGPT is what crunches the numbers.
+
+Manus is what's given us the questions that we should ask. And ChatGPT is the one that is analyzing if it ranks well. And then what would I have to do better to rank well?
+
+That's a great question. So that's where it's, you basically send people the report. And you say like, you scored really well here, you didn't score well here.
+
+We can help you, like that's the business model. We can help you, you know, get better LLM SEO for $2,000 a month. Here's a package.
+
+For $5,000 a month, here's a package. Well, I know, but if I bought the $2,000 package, what would it be doing? Oh, it would be 80%.
+
+Here's the thing that no one says. 80% of, or 90% of good LLM SEO is just good regular SEO. So getting backlinks.
+
+Backlinks. Another thing that's really worth doing is, in a world where you have tools like Replit, I think you had him on the show, Bolt, you know, creating calculators and software, that's also a high quality signal for a lot of these LLMs. All right.
+
+This is blowing my mind. I think the next piece is going to blow your mind even more. Okay.
+
+Do it. So you might be thinking, okay, cool, Greg, you built something and it's a prototype. But the hardest part about getting a business to, to a million dollars a year in revenue or $2 million a year is getting customers.
+
+How the hell do you get customers? Well, let's do what I call vibe marketing. So I'm using a tool called Linde.
+
+Linde.ai. Today, we're going to go through two to three Linde workflows that you can copy that can help you get you customers on autopilot. Okay.
+
+So, and I'm showing this, by the way, it's not even so that you can copy it. It's just so that people listening to this could, in their own businesses and own ideas could, could be thinking about, okay, how can I use a tool like this? That's what I'm doing with all these tools.
+
+You don't need to use Mattis. You don't need to use, you know, Bolt. You don't need to use IdeaBreads.
+
+You don't need to use Linde. But just think like this. So this is a flow that I use for our design agency, LCA, that does design for AI interfaces or an AI age that has literally made us millions of dollars.
+
+And it could be used for LLM boost too. The way it works is this. I take my tweets.
+
+I create content on Twitter. I post it to LinkedIn. Okay.
+
+I literally just copy and paste it. Then if I have a post on LinkedIn, then it looks at who comments and likes it. Then it puts all that data.
+
+So Sam Parr might like and comment and say like, cool, cool post. It goes into that database and it gives me data enrichment. So I basically, it says Sam Parr, oh, he lives in New York, Hampton.
+
+He's got 5,000 followers, whatever it is. So it decides if a lead is qualified or not. It says LLM scores the prospect based on zero to five, based on our secret sauce.
+
+It's a criteria. If the lead is qualified, we actually get their email and phone number on prospect. And so- Do you have to have a prospect account?
+
+We have to have a prospect account. Yes. So it'll give me your email.
+
+Then it updates it. And then we have a Slack channel that says Sam Parr, potential customer just commented. And for us, like for our business, we, our average con, our average deal size is a million dollars.
+
+So we're only trying to find like CEO, look at these, like our list of customers. Like it's the GM of Nike. It's the president of Dropbox, right?
+
+And you made content that the GM or whoever liked. Yes. And, oh my God, dude, I am all about it.
+
+I almost didn't want to share this. What videos, what video titles do you have that are all about marketing, uh, things like this? All my vibe marketing stuff.
+
+I just did like a presentation on vibe marketing. I go through like a bunch of workflows. Watch that.
+
+That's a good primer. Start with that. Oh my God.
+
+Um, sorry to give you homework. So you're making me weak at the knees, Greg. We are nerds, dude.
+
+If this is making us weak at the knees, yeah. It is. Wait, the next thing is going to make you like super weird.
+
+Just because I know how much money I have to spend doing this normally and how much work and how tedious it is. Like people who have like, dude, before I literally had a person combing through this, like going through my likes. Okay.
+
+So check this out. So we notify the potential prospects. And then what happens is we have a salesperson.
+
+If, if the salesperson hearts the message, it automatically sends them a text message or email. Wait, hearts. What does heart mean?
+
+Like heart, like, like a heart. If they press the X, like an emoji. I'm asking you how to define something and you're just saying the words over and over again.
+
+So you, the, you know, the symbol of love. Yeah. But where is there a symbol of love on LinkedIn?
+
+On Slack. Wait, okay. So that's where you're.
+
+Okay. So I post something on LinkedIn, the GM of Salesforce, who I want to sell to clicks it and says, you go, Sam or whatever you rock, Sam. I get notified in Slack that I, that he said, you go girl.
+
+And then someone on my team clicked heart. And then what? Then that person gets a personalized email or text message.
+
+Oh my God. Yeah. Insane.
+
+Right. What's the email say? It's personalized.
+
+I, you know, you, you might want to say, I don't know. Like, how does the, well, it's like, Hey, like saw, saw that, you know, imagine this, right? Let's just use the example of, yeah, we'll use LCA, like design agency.
+
+So let's just say, check out this, you know, we just designed Dropbox dash. It's an AI version of Dropbox. And then I noticed that the, or it notices that the VP of product of Shopify likes it.
+
+So personalized email goes out and says, Hey, Shopify, like how can we transition Shopify from a cloud company to an AI company? I'd love to jam with you on it. I saw that you liked my post.
+
+That's crazy. It's crazy. But what's even crazier is the next thing I'm going to show you.
+
+And I know I keep saying that, but this is, this is going to blow your mind. It's a bit more complicated. So bear with me for a second.
+
+And then I'm going to show you, by the way, I don't, I don't want to forget. I'm going to show you how you can find some of these workflows. So what if, and by the way, both of these things we can use for LLM boost.
+
+What if you can have an email negotiator as a AI agent? So basically what if it, you can have someone negotiate on behalf of you automatically using AI. So hear me.
+
+Like, like for example, if I'm like, I'm, I'm apartment shopping right now and like, it could like email apartments that I like. Well, no. So let's just say, let's use the example of LLM boost just because we were talking about it.
+
+So let's just say on LLM boost, we created a pricing page and it was like, there's three packages for SEO, $3,000 a month, $5,000 a month, and then contact us. You know, someone clicks contact us. They're like, Hey, I'll pay up front, but I want a discount, but I want a discount.
+
+No problem. So it goes in. So it gets, we get the email and then it checks a knowledge base.
+
+So a knowledge base could be anything from like notion, Google drive, Dropbox, a website even. And so you do have to do some upfront human work of like saying, okay, if someone, you know, contacts us and wants a discount, you know, we don't want to, we won't go lower than 10% or 15%. If it finds a response, it automatically responds to the inbound lead.
+
+Now it gives it an objective. So the prompt here, you can see on the right hand side, the prompt is your job is to negotiate with the emailer and respond to their questions until a decision is made in regards to the partnership opportunity. Did you write this prompt?
+
+So Lindy has a template section. I recommend people go and check them out. You can actually just copy these, some of these workflows and prompts.
+
+So it goes, Hey, first name, appreciate the interest. We only discount 10% for fall deals. And it is our busiest time for collabs.
+
+Let me know what you decide. You know, keep responses to one to two sentences, never make offerings. So this is insane.
+
+Do all of your employees know how to do all this stuff incredibly well? I mean, dude, we're like incubating AI products and have the agencies for, for this stuff. So yes.
+
+How many, how many employees do you have? We're probably like 55, 60. And if you didn't have this stuff, how much bigger would it like?
+
+I want to know how much you're saving doing this. Oh, we're probably saving. Well, first of all, we're doing, we're doing things out at, at a speed and, and scale.
+
+We wouldn't be able to do with human beings realistically. So there's money that we had left on the table, like millions of dollars a year that per year, especially on the LCA side, like these big partnerships yield. Like, it's so important that you reach out to someone like five minutes, 10 minutes, 25 minutes after they are engaged, or else they might even forget about you.
+
+You know what I mean? Like in that LinkedIn example. So I would say we're probably saving $5 million a year plus.
+
+God damn. Yeah. Could, could I just hire, like, are there agencies that I, or I wish that like I had a full-time staff member who just did this stuff, who just audited everything that we do and was like, let's automate it.
+
+You know, I don't mean to plug all my stuff, but, um, you can, you can, you can go to boringmarketing.com. That's what you guys do? Like very small, like, I don't know how many clients, couple, couple dozen clients.
+
+Yeah. We spend more of our time building software and technology that automates this, but. I just want you to come on every week and just show me how to do everything like this.
+
+Professor Greg. So this is kind of cool. So you can, I don't know if you know this, Sam, but you can, you can actually use, uh, I call it clode.
+
+Um, people, Americans call it clod. Actually, everyone makes fun of me. I call it clode, but you can use clode, clode, clode.
+
+Is that, is that Canadian? I think it's French. I think in French, you call it, you just call it clode, not, not, not clode.
+
+Not clode. Okay. You can use clode to basically call a phone number and have a full on community, you know, voice conversation.
+
+I've been the recipient of those. I think those are horrible. They're 85% there, but it's worth playing with it because Lindy was like, not it 66 months ago.
+
+It was like 20% there and now it's closed. So I, I don't know if I would use it to, to, you know, reach out to customers, but Sam, this is what you should do. You create a one 800 number.
+
+It's like one 800 joint Hampton. People call it and you ask for feedback. So we, you call it, you know, you get feedback and someone says, I had an amazing experience with Hampton.
+
+It was awesome. And it's anonymous feedback. Then it gets stored in a database.
+
+So we stored an air table. And then we let our team know and summarize. We summarize the call.
+
+And this is using Twilio air table. And then we posted to Slack. So we know every single day we're getting feedback around what people are saying about some of our products and services.
+
+We should do that for MFM. You should 100%. You should totally do it.
+
+I can build it for you too. Let's do it. I want to build that one sometime.
+
+I want an MFM hotline that people call and can say whatever. And we make a segments out of it. Yeah.
+
+Easy. Easy peasy. Oh my gosh.
+
+So those are three workflows worth considering. Now, I have to make mention, there are other tools that you could use besides Lindy. There's Gumloop.
+
+And there's N8N. Dude, these names are funky. Gumloop, Supabase.
+
+These are some like interesting names. I like things that are really easy to do. Like, I like that there's templates on Lindy.
+
+I find N8N. N8N is almost like, the cursor and Windsurf for vibe marketing. It's like a bit more, you know, it's a bit more technical.
+
+So I like Lindy and Gumloop because they're, they're a bit more simple for guys like us. You can actually go through and look at all the different templates and workflows that you can go and cut and duplicate if you don't want to create the flows yourself. Oh my gosh.
+
+Oh my gosh. Okay. Newsletters into Twitter content.
+
+If you're a medical scribe, your custom AI medical scribe, your custom AI medical scribe. And by the way, and by the way, there's like, I don't know why people don't do this, but more people don't do this, but there's thousands of $1 million a year plus business ideas, just taking Lindy's and Gumloop's workflows and just selling it into the real world. Right?
+
+Sell a medical scribe to like $299 a month. Dude, I invested in a startup that's doing that. Okay.
+
+I hope the customers don't see that you can just use Lindy. Dude, this is a good one. I haven't seen this.
+
+Elon Lindy calls your team to ask them what they got done this week. Oh my God. That's insane.
+
+That's insane. This is wild. Last thing, because I know we have to head in a couple.
+
+And I know this is a comment I always get on my podcast where people are like, okay, Greg, but you know, that's just a service business. That's just a service business. You just showed us how to like build a service businesses.
+
+Well, number one, it's a AI powered service business. Like the quit, we created SAS, but okay. I hear you commenter.
+
+I hear you. If this, if we were actually building this business, how can we take it from being a service business to more of a tech business, software business? So one thing I always do is, you know, if you're, if you get to step five, you have a business, it's probably doing hundreds of thousands of dollars a year, if not millions.
+
+And you probably have ideas on where you can take it. So what I, what I usually do, Sam is I'll go back to idea browser and, um, use idea agent and upload an idea I have and just see if it's good or not. So, so before this, you know, Ahrefs, right?
+
+I love Ahrefs. I always call it H H refs, but yeah, I like it. I don't actually know how to pronounce it.
+
+So while going through Manus and building this, I was like, it got me thinking that Ahrefs, I think it, do you know how much revenue they're doing? Like they're big. Yeah.
+
+Like 80 or 90, like they're in the hundred million dollar range and it's bootstrapped. So incredible business. Awesome.
+
+Um, but there's probably an opportunity to create like an AI, like an Ahrefs for LLM SEO. Yeah. Right.
+
+And there's probably that niche. And I think SEM rush, they're publicly traded to SEM rush also has like a, is a competing product. So I just went on idea browser, posted my, I was like, well, you know, give me breakdown.
+
+SEM rush is like a $450 million a year. Oh wow. Yeah.
+
+So it's like, if you can get 1% of that, 5% of that, 10% of that. Um, so I just went and I, I looked at some, uh, you know, some of the data here. Um, and it tells me exactly what I should do.
+
+So it tells me exactly what my offer should be. Um, it tells me my pricing. Um, I like looking at, um, like the value equation.
+
+So like I mentioned the, the perceived, you know, the Alex Hermosi stuff, the value ladder. This is Russell Brunson. Like if we were going to create an AI version of Ahrefs, what would this look like?
+
+Well, we'd want to create an L and interactive SEO audit tool. Great. We've already created that.
+
+We would want to create a starter plan. Okay. $99 a month.
+
+And it literally just tells you exactly what to do. Well, but, but you're, you're skipping a big thing, which is you have to build the software. Like, I, like you're telling me to create the monthly plan.
+
+It's like, yeah, okay. Uh, I could accept that money, but how do I create the thing that crawls the, the, the web and tells me how many backlinks I have? That's the old way of thinking, Sam.
+
+You used to have to create. What's the new way? You used to have to go and create it.
+
+If you think that AI, Ahrefs is a good idea. You literally go back and you repeat all the steps. So you go.
+
+That, are you overselling this? Like, can I actually have bolt.new, whatever it's called, make all of the code that create, like, there must be a reason why Ahrefs has 300 developers on staff, or they did up until this was all invented at least. But like, you know, like there is like proprietary things there, right?
+
+I mean, the short answer to your question actually is bolt, lovable. That's a good place to get your front end, build something simple. Once you're ready to scale it, using tools like cursor, replet, windsurf, which are more technical, you know, developers today are using those products and they're 10x developers.
+
+It's just so much faster. So listen, I'm not saying it's as easy as one, two, three, four, five, six. It's hard.
+
+Building a startup is hard. It's a roller coaster. There's going to be things that you learn, but the reality is this is the framework for how to build it.
+
+And you can build it using tools like this. I'm hyped. I'm hyped.
+
+I was telling Ahre, I messaged her in the middle of this episode. I said, schedule Greg another time to come on right now, because my mind is blown. This is absolutely insane.
+
+Did you message her or did you do some like Neuralink agent to message her? Like, was it a workflow that you had created in the past? Brother, I am a Neanderthal.
+
+I'm not there yet. Like, I literally messaged my team. I said, um, I have some mind blowing stuff to show you.
+
+I'm calling you in 20 minutes. Mind blowing. And I took screenshots of that Lindy.
+
+And I'm just going to say, we must do this immediately. This was amazing. Amazing.
+
+Well, I'm happy. That was the goal. My goal was to share some sauce, get, get, get you thinking, um, hopefully not piss off your team too much.
+
+Um, but I think they're going to come out of the other side of this, uh, way more productive. You're the man, Greg. Uh, I call your YouTube channel just the Greg Eisenberg YouTube channel, but it's the startup ideas channel, right?
+
+Or startup ideas show on the Greg Eisenberg YouTube channel. Exactly. Thank you.
+
+You're the best. Thank you for having me. This was awesome.
+
+That's it. That's the pod. Thanks.
+
+Thanks. Thanks. Thanks.
+
+Thanks. Thanks. Thanks.
+
+Thanks. Thanks. Thanks.

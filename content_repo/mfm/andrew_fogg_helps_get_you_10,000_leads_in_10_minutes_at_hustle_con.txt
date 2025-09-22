@@ -1,0 +1,53 @@
+Our next speaker is Andrew Fogg. Andrew is the founder of Import.io, a really popular web data platform. Import.io has raised over $4.5 million and has a team of 30.
+
+Andrew started Import.io in the UK, but they are now located permanently in SF. So let's please welcome Andrew Fogg. Andrew Fogg.
+
+I'm going to stick to the time limit, but it's going to be one, instead of one slide every 20 seconds, it's going to be one every five seconds. We're going to do it in five. So are we ready for this?
+
+Are we going to wake us all up? Okay. So let's get to it.
+
+10,000 leads in 10 minutes. Let me clear my throat. Right.
+
+Let's start with the basics. What's a lead? We call these dog leads in the UK, which is where I'm from.
+
+I believe they're called dog leashes here, so I don't know how that translates. But what's a lead? According to Wikipedia, a lead is a person or entity that has the interest and authority to purchase your product or service.
+
+The information on a business card is the perfect example of what you're looking for. You have a named individual, an associated company, and their contact details. Leads represent the first stage of your sales process.
+
+But where do leads come from? Well, you can buy databases of telephone numbers, email addresses, and mail addresses. You can attend trade shows and collect business cards.
+
+Or you can stalk people on social media. Two things are important where leads are concerned. Quantity and quality.
+
+Databases provide huge quantity, but famously, they have really poor quality. Trade shows and social media, on the other hand, deliver great quality, but they cost a lot of time and a lot of money, which restricts the quantity that you can deliver. I'd like to share a new approach that delivers both quantity and quality.
+
+And it's based on web data, which is what I do. And it's inspired by our users. I'm basically telling you one of the best ways that I've seen people using our product.
+
+It's a very simple recipe. First, where are your people at? Find a website where your users are.
+
+Find a website where your users can be found. Then, build an API to that website using Import.io, naturally. And extract as much data about every lead as you can.
+
+Pull the data down into a spreadsheet, which will give you thousands of leads. It will take a matter of minutes. And then use that data to create conversational, extremely personalized message templates.
+
+Hi, first name. I was browsing, etc. I'd use the IDA recipe that was discussed earlier.
+
+Make it freaking personal. I can't emphasize this enough. It's a conversation.
+
+Start sending out the messages and be creative about the channels that you're using. Email is the most obvious one, but I've also seen people do automated SMS, at messages on Twitter, etc. There's lots of different channels you can use.
+
+Automate the messaging, but don't go too quickly. You need to get the cadence right. So as to avoid being spammy, and because you're starting a conversation with a real person, and you need to be able to respond and engage.
+
+If you send out 5,000 mails, and people start responding back, you're going to be swamped, and you're not going to be able to do it. So how do we do this? Well, within Port.io, you can turn any website into data without writing any code, which makes web data available to everyone, which is awesome.
+
+It's also super awesome for developers, developers who used to have to write custom code, web scrapers, etc., in order to get web data. So developers are an important segment for us, an important market segment. There are lots of developers on Odesk, and if you search Odesk, you find that 13,000 of them list scraping as one of the services that they provide.
+
+They have the exact problem that we solve. So we used Import.io to create an API to the list of scraping users. We then pulled them all down to a spreadsheet.
+
+We created a personalized message template that included a link to Import.io. We created the link using the Google URL builder, which allows us to track the use of that link in our own Google Analytics. We also used the Google URL shortener so that we can use our own domain name in the shortened URL, and it kind of looks less spammy.
+
+We then built another API to the Odesk messaging system. It logs into Odesk, navigates to the individual user's profile, and messages to them with an invitation to apply for a job. It's a real job.
+
+It requires use of Import.io. And if the user follows the link, we can follow them through to account creation in our analytics. And it's a very simple way that we're experiencing with at the moment of getting our 10,000 leads.
+
+We've got time's up. I want to give props to Matt Ellsworth, who pioneered a lot of these techniques at the storefront. If you're interested, Matt has a Udemy course that you can follow to learn some more.
+
+Thank you. Thank you.
