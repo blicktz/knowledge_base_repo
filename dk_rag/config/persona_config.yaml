@@ -20,11 +20,11 @@ vector_db:
   provider: "chromadb"
   config:
     persist_directory: "./data/storage/chroma_db"
-    collection_name: "influencer_transcripts"
+    collection_name: "script_collection"
     distance_metric: "cosine"
     embedding_model: "sentence-transformers/all-mpnet-base-v2"
-    chunk_size: 1000
-    chunk_overlap: 200
+    chunk_size: 500
+    chunk_overlap: 100
 
 # Statistical Analysis Configuration
 statistical_analysis:
@@ -41,7 +41,7 @@ statistical_analysis:
     
   nltk:
     collocations:
-      window_size: 2
+      window_size: 3
       min_frequency: 3
       significance_threshold: 5.0
     ngrams:
@@ -53,6 +53,7 @@ statistical_analysis:
   keywords:
     max_features: 1000
     min_frequency: 2
+    max_frequency: 0.8
     ngram_range: [1, 3]
 
 # Persona Extraction Configuration
@@ -81,10 +82,10 @@ persona_extraction:
 # Data Processing Configuration
 data_processing:
   chunk_strategy: "semantic"  # semantic, fixed, sentence
-  chunk_size: 1000
-  chunk_overlap: 200
+  chunk_size: 500
+  chunk_overlap: 100
   min_chunk_length: 100
-  max_chunk_length: 2000
+  max_chunk_length: 1000
   
   filters:
     min_sentence_length: 10

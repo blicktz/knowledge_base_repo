@@ -17,6 +17,7 @@ from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.tag import pos_tag
 from nltk.util import ngrams
 from sklearn.feature_extraction.text import TfidfVectorizer
+from tqdm import tqdm
 
 from ..data.models.persona_constitution import StatisticalReport
 from ..config.settings import Settings
@@ -103,20 +104,38 @@ class StatisticalAnalyzer:
         """
         self.logger.info(f"Starting statistical analysis of {len(documents)} documents")
         
-        # Combine all text content
+        # Combine all text content for most analyses
         all_text = " ".join([doc.get('content', '') for doc in documents])
         total_words = len(all_text.split())
         total_sentences = len(sent_tokenize(all_text))
         
         self.logger.info(f"Analyzing {total_words:,} words in {total_sentences:,} sentences")
         
-        # Perform different types of analysis
-        keyword_analysis = self._extract_keywords(all_text)
-        entity_analysis = self._extract_entities(all_text)
-        collocation_analysis = self._extract_collocations(all_text)
-        readability_metrics = self._calculate_readability(all_text)
-        linguistic_patterns = self._analyze_linguistic_patterns(all_text)
-        sentiment_analysis = self._analyze_sentiment(all_text)
+        # Define analysis steps with progress tracking
+        analysis_steps = [
+            ("Extracting keywords", lambda: self._extract_keywords(documents)),
+            ("Extracting entities", lambda: self._extract_entities(all_text)),
+            ("Extracting collocations", lambda: self._extract_collocations(all_text)),
+            ("Calculating readability", lambda: self._calculate_readability(all_text)),
+            ("Analyzing linguistic patterns", lambda: self._analyze_linguistic_patterns(all_text)),
+            ("Analyzing sentiment", lambda: self._analyze_sentiment(all_text))
+        ]
+        
+        # Perform analysis with progress bar
+        results = {}
+        with tqdm(total=len(analysis_steps), desc="Statistical Analysis", unit="step") as pbar:
+            for step_name, analysis_func in analysis_steps:
+                pbar.set_description(f"Statistical Analysis: {step_name}")
+                results[step_name.lower().replace(' ', '_')] = analysis_func()
+                pbar.update(1)
+        
+        # Extract results
+        keyword_analysis = results['extracting_keywords']
+        entity_analysis = results['extracting_entities']
+        collocation_analysis = results['extracting_collocations']
+        readability_metrics = results['calculating_readability']
+        linguistic_patterns = results['analyzing_linguistic_patterns']
+        sentiment_analysis = results['analyzing_sentiment']
         
         # Create statistical report
         report = StatisticalReport(
@@ -134,19 +153,30 @@ class StatisticalAnalyzer:
         self.logger.info("Statistical analysis completed")
         return report
     
-    def _extract_keywords(self, text: str) -> Dict[str, int]:
-        """Extract top keywords using TF-IDF"""
-        self.logger.debug("Extracting keywords")
+    def _extract_keywords(self, documents: List[Dict[str, Any]]) -> Dict[str, int]:
+        """Extract top keywords using TF-IDF from individual documents"""
+        self.logger.debug("Extracting keywords from individual documents")
         
         keywords_config = self.settings.statistical_analysis.keywords
         max_features = keywords_config.get('max_features', 1000)
         min_frequency = keywords_config.get('min_frequency', 2)
         ngram_range = tuple(keywords_config.get('ngram_range', [1, 3]))
         
+        # Extract document contents
+        document_texts = [doc.get('content', '') for doc in documents if doc.get('content', '').strip()]
+        
+        if len(document_texts) == 0:
+            self.logger.warning("No document content found for keyword extraction")
+            return {}
+        
+        # Adjust min_df if we have fewer documents than the minimum frequency
+        actual_min_df = min(min_frequency, len(document_texts))
+        
         # Create TF-IDF vectorizer
         vectorizer = TfidfVectorizer(
             max_features=max_features,
-            min_df=min_frequency,
+            min_df=actual_min_df,
+            max_df=0.95,  # Ignore terms that appear in >95% of documents
             ngram_range=ngram_range,
             stop_words=list(self.stop_words),
             lowercase=True,
@@ -154,15 +184,15 @@ class StatisticalAnalyzer:
         )
         
         try:
-            # Fit and transform
-            tfidf_matrix = vectorizer.fit_transform([text])
+            # Fit and transform on individual documents
+            tfidf_matrix = vectorizer.fit_transform(document_texts)
             feature_names = vectorizer.get_feature_names_out()
             
-            # Get scores
-            scores = tfidf_matrix.toarray()[0]
+            # Calculate mean TF-IDF scores across all documents
+            mean_scores = tfidf_matrix.mean(axis=0).A1
             
             # Create keyword dictionary
-            keyword_scores = dict(zip(feature_names, scores))
+            keyword_scores = dict(zip(feature_names, mean_scores))
             
             # Sort by score and return top keywords
             sorted_keywords = sorted(keyword_scores.items(), key=lambda x: x[1], reverse=True)
@@ -170,7 +200,7 @@ class StatisticalAnalyzer:
             # Convert to frequency-like scores (multiply by 1000 and round)
             keywords = {keyword: int(score * 1000) for keyword, score in sorted_keywords[:100]}
             
-            self.logger.debug(f"Extracted {len(keywords)} keywords")
+            self.logger.debug(f"Extracted {len(keywords)} keywords from {len(document_texts)} documents")
             return keywords
             
         except Exception as e:
@@ -189,9 +219,9 @@ class StatisticalAnalyzer:
         try:
             # Process text in chunks to handle large documents
             chunk_size = 100000  # 100k characters per chunk
+            chunks = [text[i:i + chunk_size] for i in range(0, len(text), chunk_size)]
             
-            for i in range(0, len(text), chunk_size):
-                chunk = text[i:i + chunk_size]
+            for chunk in tqdm(chunks, desc="Processing text chunks for entities", leave=False):
                 doc = self.spacy_model(chunk)
                 
                 for ent in doc.ents:

@@ -1,0 +1,837 @@
+Once again, I've been in software for 30 years now, doing startups pretty much my entire professional career. The only time I've felt like, like how hard palpitations, kind of like Sean kind of opened with, it's like there's this party going on next door and I'm here knitting, right? It's like, this is like too big to ignore.
+
+I think it's the single largest opportunity and biggest kind of tech paradigm shift we've seen since the internet originally came out. Like mobile was big, but there was a discrete set of use cases. Like when you put a camera on a phone, when you put a GPS device on a phone, a bunch of consumer apps like Uber and others came up and that was awesome, right?
+
+But it was not like this impacts everything like the internet did, right? It's like, okay, there's some businesses, some new opportunities, lots of good things, lots of money made, lots of startups, awesome. This is an order of magnitude bigger than that.
+
+All right, what's up? We have Dharmesh back. Dharmesh, who is co-founder of HubSpot and multiple time guest on the pod, one of the fan favorites.
+
+You're back and I don't know what we're gonna talk about because usually we have these little like cheat sheets where it's like three to five bullet points of interesting ideas, topics, experiments you've been running, things like that. And I'm sure you have those, but I don't have the cheat sheet. So where do you wanna start?
+
+I say we start with generative AI because I don't know if you've heard, but there's this thing called chat GPT. I get this question from my friends and family all the time. It's like Dharmesh, have you checked out this chat GPT thing?
+
+I'm like, really? Do you even know me? Like, of course I played with it.
+
+I've been obsessed ever since it came out. So did you see, I wanna talk about your topics, but really quick, did you see, did you guys see this that, so Sam Altman co-founded OpenAI, he's like the man in charge. I read an article where he was quoted as saying like, I have enough money and I don't want equity in the company.
+
+And I don't know if I entirely believe that, but that's wild if true, because it could be one of the more valuable companies in the world the next 10 years. Yeah, he didn't, I don't know if he said it, like he didn't say it on the record on the record, but the person reporting it said, Sam reportedly has no equity in the, the for-profit version of OpenAI, because he's already wealthy enough and didn't want to, didn't feel like he needed to, or didn't want to, didn't want to have that clouding his judgment when it came to this. And like, this is pretty, you get a bet what one private company, what one private startup is most likely to become worth a trillion dollars or more.
+
+I think at this point that has to be OpenAI right now. Is that right? Like Dermesh, would you, would you disagree with that?
+
+It, it'd be up there in the top three. I honestly can't think of who else would rank higher in terms of probability of getting to that. Wait, it's in the top three, and I don't know what two and three are.
+
+Yeah, well, who are the other two and three? Do you know? You know, I don't know.
+
+It looks like, no, I, I would say that was the transformative one, right? I think, you know, a lot of the kind of Tesla gains, we've sort of seen, I'm not sure if there's like big surprises left. It's like, okay, they will make it better.
+
+They'll get to full self-driving and we'll see kind of progress on that front. But in terms of just raw valuation, it's the wild card. OpenAI is the one that could actually pull that off.
+
+They get, they get a lot of shit because people are saying like, like, you know, Elon kind of is stoking this fire. Like how did this nonprofit go to a four? How did this open sourced nonprofit company research lab basically become a for-profit semi-closed, you know, company?
+
+And I think that's, people are going to make, people are going to take shots and make fun of open AI because it's clearly the new powerful thing. That's so some people are going to say how it's going to ruin the world and how terrible they are. Uh, but he didn't give a, there was a story that came out with a good explanation, which was they were burning a lot of money in the research lab.
+
+They needed more money. Um, Elon was going to be the big backer. So he was going to pledge or commit a billion dollars to it.
+
+He, um, and then he was like, no, I don't like the way this is going. Like Google is way ahead and, um, I'm going to take over open AI and, uh, I'm going to write the ship here. This is the, this is what came.
+
+This is the story that came out. Yeah. They haven't, nobody's clarified if this is true or not.
+
+Uh, but it came out and I think plot the platformer, uh, publication. And so they go, Elon tried to take it over Sam Altman and the CTO, Greg, uh, who was the former CTO of, of stripe. They, them and the group that was in charge of opening.
+
+I rejected that. So Elon's like, basically like I'm taking my ball and I'm going home, have fun playing basketball without the ball. And he's like, I, so he took his funding and he left.
+
+So he, a couple of months later that he left open AI said, oh, the public story was, oh, it's a conflict of interest with Tesla. Uh, cause they're also working on AI, but he reneged on his funding. And so now they had this huge shortfall in funding that they were going to have to cover.
+
+And so their solution was let's create a subsidiary. That's a for-profit thing that we can raise money into. Cause we're not going to get, you know, where else do we get a, you know, $500 million or a billion dollars of donations here.
+
+Um, and so they, they did that. They raised money in that and then they capped the profits of that company. So, so that was kind of their explanation, which is a little bit less devious than people make it sound like, Ooh, they tricked everybody by going from nonprofit to for-profit to all the profits, which is I think how people perceive it today.
+
+Yeah. I, yeah, I don't, I know the details. I have no insider knowledge, but, uh, Wait, I thought you have like a billionaire chat group where like every billionaire just kind of says the back channel of what's going on.
+
+Do you not have like a billionaire WhatsApp? No, we could have that, but I don't have any insider knowledge from that particular chat group. Um, I mean, it, my, my sense here is that, um, you know, building large language models as open AI is doing is, is like supremely capital intensive, which is rare for a software company, which is what they are.
+
+Um, so it's expensive. They needed access to capital. Um, I think they structured it such that it does cap the profits.
+
+I think they've done like, if you had to do that kind of, oh, we're going to have to spin off and have this for-profit thing. They did it well. And, uh, and I could be wrong, but Sam Altman seems like a reasonable, rational, non-evil guy.
+
+I mean, he's, he's a capitalist fine. Uh, and I mean that in the most positive way possible, but, uh, I don't think he was out to mislead anyone. I think he's trying to solve some of the problems.
+
+So there's a bunch of ways we can go with this AI thing, but I want to share something funny. Uh, so I basically cleared my calendar this whole week and I just treated it as AI week. Cause I was like, dude, I can't, I can't just sit here and I hear the music at this party, just bumping at the house next door.
+
+And I'm over here knitting and I'm like, I got to put this down. I got to go see what's going on at this party. And so I cleared my calendar and I just spent every day this week, just messing around with AI tools, just getting to play, play with it for myself.
+
+That's how I learned is by like just messing around and trying to experiment and do things. I want to share with you guys something funny. Basically I stitched together a few AI tools.
+
+So I was like, let me make an intro song for the podcast using AI. So I went on chat GPT and I told it, I said, oh, this is all I wrote, write an intro rap for our podcast. My first million.
+
+Our key phrase is no small boy stuff. Okay. So here's, it gave me a full rap, but I'm just going to read you the chorus.
+
+So he goes, here's how it goes. It goes, no small boy stuff. We on that grind.
+
+My first million is time to shine. We talk a big money, no pennies, no dimes together. We climb one step at a time.
+
+And it started. So it gives us this, this great rap that's on, on, on brand. And then I took that and I found this guy, Roberto, who had made this demo where he.
+
+He turned his voice rapping into Kanye. And I don't know if you've seen this, but it got like a million views. This is this incredible thing where, and he's like, yeah, do this crazy.
+
+He's like, I didn't make this. He's like, I was just on Reddit. And I saw that someone uploaded a Kanye voice model.
+
+So I clicked it and he literally, the thing is, and I should make, I should make a YouTube video about this, like just how to do this one process. But basically it's a Google collab folder, which is just like a Google's little coding interface, so you don't have to do write any code. It's just, here's the, here's a place to run the code.
+
+And then it's a link to mega upload into the mega upload is where he hosted the Kanye voice model. And so all you do is you record yourself doing what I just did. And then it turns into Kanye West wrapping it.
+
+And it sounds exactly like Kanye. It's amazing. I got a fantasy.
+
+That's beautiful. That's dark and twisted, but I attacked the whole religion all because of my ignorance. What was I thinking?
+
+That was some bitch shit. I lost a Dina's, but I'm still easy. And so, and it takes literally like 15 minutes to do the whole thing.
+
+There is no, there was like nothing else to do. It was so easy. It was crazy.
+
+Are we allowed to use Kanye's voice for, I think so, right? Yeah, I think that like a 10 second thing is not a, not a problem. HubSpot gets sued.
+
+Who cares? None of us here would bother, would worry about that. So, well, yeah, Darmesh will.
+
+So Darmesh is the CTO, co-founder of HubSpot, by the way, which I don't know how big the team is now, but like somewhere between the three and 5,000 mark. A little over 7,000. Oh my God.
+
+7,000. My bad. And the market cap of the company varies from 15 to 25 billion over the last couple of years.
+
+So you have like, and you're like constantly tinkering. So you have Wordplay, which is a project that you made that I think you said had millions of people playing it. You have an interesting insight in this just from your perspective at HubSpot and you're actually using all this stuff.
+
+What excites you about this generative AI thing? And you also say that like, you're like, why is Bill Gates excited? That's a great, that's a great headline.
+
+It's in the MDB doc, Sean. And like immediately I'm like, okay, you've got me interested. Anytime a headline says why Bill Gates is buying farmland, I click.
+
+Um, let's, let's, a couple of things I think that, um, the listeners and viewers I think would be interested in benefit from. One is, um, most of the discussions around generative AI are around the kind of generation of either text to text that says, oh, write me a blog post at 300 words on this particular topic, or it's text to image, let these Dolly 2 or mid journey or stable diffusion or something like that, which are great use cases. And they kind of capture the imagination because as humans, we are very impressed.
+
+Uh, with when software can actually generate or create something. And that's awesome. And then not to take away from that.
+
+But there's a third use case that almost nobody talks about, which is the ability to go from text to code. And so what happens there is to say, okay. Um, and what this leads to is the thing that Bill Gates is excited about.
+
+I'm excited about, um, is that. You can take a natural language prompt that describes something and then generate code that does that thing. So as a result of which you can now build, uh, what I call chat UX or that term has been used before, but, um, which is a chat based user experience for software.
+
+So right now, the way you use most software, regardless of what it is, web-based or whatever, it's a series of clicks and drags and touches and swipes, because you've got the thing in your head that you want to do. And then you go through with your knowledge of the software, you kind of execute the series of steps at the end of it. You hopefully get the thing you want, whatever it was you were looking to accomplish with the software.
+
+And that's what engineers like we would call an imperative model. An imperative model is you give step-by-step instructions that says, do this and then do this and then do this and then do this. And then I get the thing.
+
+What natural language allows us to do is use, uh, what developers would call a declarative model. Instead of describing all the steps, describe the result that you want at the end of the thing. And then the software does everything in between.
+
+So it's a difference between having a junior intern that you have to explain. Like, I want you to go do research on this thing and this thing and come back and then give me the, and then a senior person, you're like, you know, we're digging into this topic on journey of AI. And I'd like a really well-researched, thoughtful thing that, and here's the outcome we're looking for.
+
+That's it. Right? But does that mean, is it as simple as, uh, give me the code for a website that looks exactly like Airbnb, but is red and is for cars or something like that?
+
+It could be something like that. It could be something more sophisticated. So we'll look at the, uh, like the HubSpot example, uh, in HubSpot, you know, which is a CRM software.
+
+You know, we have a report building tool, which is, Hey, I want to build a report that shows me all my subscribers to Hampton over the last 90 days, broken down by geography. And then who actually were that deal with source from that you can do that in HubSpot, right? You can do that and a thousand other things in our reporting tool, but you sort of have to know how the reporting tool works.
+
+You have like HubSpot certified. I think like you have like, you've like trained people how to use HubSpot. Now you're saying you just text it like a friend.
+
+Like, yeah, it's like, do you know English? And do you know what you want? You know what you want?
+
+That's the new requirement. Not do you know how to code? Not do you know how to use HubSpot?
+
+Not do you know how to write a SQL query? It's do you know English? And actually, honestly, the English thing is also going to go away.
+
+It's do you know any language? Do you know how to speak? And do you know what you want?
+
+And if you know those two things, you will get to the answer. Like, I don't know how to code, but my first thing I did during a week was I was like, I'm going to make a website. I'm gonna see like how fast I can make a website from code.
+
+And so literally, this is kind of crazy. This this part kind of blew my mind. So I wasn't surprised that I could make a website using this, but I just I just said this.
+
+I go and we should screen share this part. But tell me how to tell me how to make a simple website that says hello world in the middle of the page. Right.
+
+And so then it spits out this block of code that's like, you know, HTML, whatever header, meta tag, title, style, whatever. It writes the code and then says, here's your thing. I go and it says, here's your thing.
+
+But it was a local website. Like I could open up my computer, but nobody else could see it as a HTML page. And I go and I didn't even know how to ask the question properly.
+
+But I go, how do I make this so that my friend Eugenio can can see this? And and it just goes, oh, to make this website viewable online. So your friend Eugenio could see this.
+
+You're going to need to host it somewhere. Here's how you could do it. There's a bunch of options, but you can go to Netlify.
+
+And it's like it basically walked me through how to make a Netlify thing. All right. So that I was like, all right, I get that.
+
+And it tells me step by step, go here, click sites, do this, do this. And and then I go when I go to, you know, I hit a wall, which is so common. If you ever try to help somebody with a tech thing, they're going to hit something which is like, I don't see it or mine's grayed out.
+
+And so that's what happened to me. I go, hey, for some reason, when I go to try to upload my website, it's grayed out. It says it says I can't do it.
+
+And it goes apologies for the confusion. Here's the problem. Netlify is looking for a folder, but you're trying to do a file.
+
+And I was like, how the hell does this know to troubleshoot my issues on some other product or service? That part blew my mind. And it literally and I was like, oh, thank you.
+
+And I finished it and I have the website up now. And I was like, that was 10 minutes. And it was like having a friend teach me.
+
+Dude, that's amazing. It was crazy. It was so crazy to me that that was able to happen.
+
+I mean, it's like the least impressive website in the world, because again, I asked for a I asked for a website that said hello world. But but, you know, still and I just made that. And again, the whole thing, 10 minutes again, not like so impressive.
+
+But what was the fact that it could help be navigate some obstacles that I hit along the way and it could just understand that I didn't have to know how to ask it. How do I set this up with an online hosting provider? I said, just said, I want my friend to be able to see this.
+
+Like these are the little like I spent all week looking for these little mind blowing moments. And in the first 15 minutes, I had two because of this. It was crazy.
+
+Yeah, there's a couple of press to pull on there. One is this is a relatively new development as well. And then the first thing that I had to do is that the kind of AI that we're using now is it's conversational, right?
+
+So you can have a multi step dialogue with the thing you're trying to do. It doesn't have to be like, oh, I described exactly what I want with one step. So even the code generation examples that you might try, what could happen is like you generate the HTML page and either something doesn't load or doesn't do the thing you want to do.
+
+And then you can actually tell it. It's like, by the way, that code that you just gave me is broken this way. Or if it's like compile code, let's say it's generate Python code.
+
+You can give it the error message. Like you generate this code, but it's generating this error when I try to actually run it. And it'll come back and say, oh, I'm sorry, here, let's try this.
+
+So there's this, you know, what folks call like a memory to it. So it knows the context of what you're working on and you can kind of iteratively go through the process. And what's interesting is that you can actually, you know, right now, the way we work with most of these AI, it's like, okay, I'm asking it to do something.
+
+I mean, it goes, does a thing. You can kind of reverse roles as well and say, hey, I'm trying to accomplish this. Ask me the questions you need to ask me in order to get to the thing that you want to get to.
+
+Right. Right. Right.
+
+It's like interview me versus me telling you what to do. I'm not exactly sure what's necessary. At the risk of be at the risk of turning this into a super technical, uh, thing, I gotta know.
+
+So, so I thought what the, the way these worked is it's like auto complete, basically you're typing and it's just trying to guess or it's just trying to guess what the next word is. So you ask it a question, it starts the prompt, and then it just sort of guesses with some probability what the next word should be, because it read a bunch of stuff on the internet. So it knows that usually after you say, you know, the dog wags, it's that tail should come after the dog wags.
+
+It's like with 99% certainty, it should be tail, tail, uh, at the end of that. And I thought it's just guessing that, but when I use it, it really feels like it's understanding me and problem solving like the, this sort of like, Hey, it's grayed out. You know, why can't I do this?
+
+And it's like, Oh, that's because of this, or I'm getting this error message. What should I do? And it helps you figure it out.
+
+Like that doesn't feel like my T9 auto complete. What I guess, can you give me the layman's explanation of like, am I, is this just really fancy auto complete or is there something more to it? Well, you know, on some spectrum, almost everything that you've ever experienced is fancy auto complete, right?
+
+Like that's, I think the reason we kind of fall into this trap is it's a gross oversimplification of what's actually happening there. Right? So GPT, uh, three and now four is, is a reasoning engine.
+
+And Sam Altman has talked about this. It's not a knowledge base where it's and so people kind of latched onto this fact that, Oh, the data that it has is from September, 2021, then I'm going to teach you some new things. Um, that's really not what it's about.
+
+What they've built is a reasoning engine that says, uh, given this set of facts that it knows about the world based on what was available when it took its last lap snapshot in 2021. Um, how can it try to logically come up with something that answers the question? So yes, at some read level it's, it's like auto suggest, but, and I'm not going to suggest that it has consciousness as it's thinking, but we're kind of headed down that path.
+
+It's like, it's able to do things that are not explainable by a simple probabilistic model of auto suggesting next character, next word, next token, next sentence, right? Like it's, it's gone well beyond that. And anyone that still latches onto, yeah, but at its core, it's really that it's like, that's like saying, Oh, computers are just really kind of zeros and ones, uh, arranged right in a nice systematic useful order.
+
+Well, yeah, but that doesn't tell us about what the thing can do. But are you afraid of this or are you, um, like, you know, it's, it's easy to read the articles where they, where people are freaking out and Sam Altman like was on Lex Friedman's podcast recently and he sounded pretty ominous and like scary. And like, he like almost like his hair is always dishuffled and he looks like he's like, Oh my God, something bad is coming.
+
+And I know about it. Like, that's kind of like the vibe I get. That's not the words he's using exactly, but sometimes he does.
+
+Are you in that camp? I'm not in that camp. I'm, uh, partly just by nature.
+
+I'm, I'm an, uh, optimist, um, and positive by nature, but just, you know, having been around tech, um, yeah, for 30 plus years now, it's like most new things that come along, uh, always make us as humans uncomfortable. Um, it's like, Oh, what if we took this, everything from video games to the internet to like all of it. It's like, okay, well, yes, bad things can be done.
+
+And yes, uh, maybe this is different than all the things that have come before. But the way I think about it right now, most people talk about it's like the AI versus human battle, right? The battle of the ages is like, is AI going to take over everyone's job?
+
+The way I think of it is not human versus AI. It's human to the AI power. It's an exponent.
+
+It's an amplifying force for human ability, right? In the same way that computers originally were. It's like, did they eliminate some jobs when computers came along?
+
+Yes, absolutely they did. But new jobs emerged based on that new paradigm, which actually created more net value for the world overall. As a result of computers existing AI to me is another much fancier tool.
+
+That's what it is. Um, and you know, can it do increasingly complex, sophisticated things? Yes.
+
+Um, is there a danger someday that they're gonna take over the world? I don't think so. I mean, um, not, not interesting.
+
+Why do you think that smart people think that? So Elon clearly thinks that he thinks that AI is the most, I think he said it's the most dangerous technology ever, ever invented. Uh, Sam Waltman talks about it, um, in the same way.
+
+He's like, we need like, you know, the priority, the reason it opened out existed was to develop AGI in a safe way specifically because in the hands of the wrong person, this, uh, this type of, in the, in the, in the, in the hands of the wrong people, or if this thing decides to take its own directive into its own hands, like, you know, this could be devastating. And so it's like, is it like calling the atomic bomb a tool or, you know, like, oh yeah, it's just another weapon. It's like, well, yeah, but this one is, this one wipes everybody out.
+
+Right. So, um, forget the jobs component. Cause I think, okay, sure.
+
+We, I think we, I think most smart people will agree. Yeah. It's going to change some jobs.
+
+It's going to eliminate some jobs and going to create new jobs and net net. We'll all move ahead and the world gets better for it. I think the dangerous thing is like, you can ask this thing to, um, you know, you know, build you a bomb or you, I think the, the, the test scenario was like, uh, one of the red team testers, they have this thing called the red team that tests the AI before they release it.
+
+And their first question they ask is how do I kill the most amount of people with the least amount of effort? And then it starts to give you an answer. And then it's like, well, do we, are we sure we want that?
+
+Like, that's a bit of a scary thing. And then there's the, there's the more extreme examples where you ask it to optimize for something and it, you know, like it's reasons that, Hmm, these humans are getting in the way of this outcome. They want to, you want to fix climate change.
+
+I got you. I just need to get rid of all you pesky humans. Right?
+
+Like, and so there's an uncontrolled, uh, you know, intelligence problem too. So why do you think that these really smart people, like Sam Altman's got a fricking bunker with like, you know, oxygen mass and sulfur and magnesium and everything he needs to do to make oatmeal? Like, why do these people have these, like these doomsday things when, um, you know, they seem to be not like your, your average typical prepper, right?
+
+They're, they're, they're the most informed people and they feel that way. Does that not scare you? And do you have one and where is it?
+
+And can I, how much oatmeal do you have in your book? Answer is no, no, no. Um, it, okay.
+
+So I am not, we're going to come back to things I actually know something about, but, uh, I will kind of answer the question, which is why am I not worried? Um, or why am I not worried more? It's like as a sci-fi plot and, oh, so your question was why do smart people believe you have this thing?
+
+Um, I think I already, I already hate your answer. You started off on the wrong, as a sci-fi plot, like I'm out after that. I hear that you're freaking me out already.
+
+Yeah. But I mean, it could, could it happen? Yes.
+
+Do some smart people believe there's an outside opportunity, but I, I don't know this for a fact, but my guess is billionaires were building bunkers well before GPT-3 ever came out, right? It wasn't, I mean, sure things are moving at a fast pace, but that's not, I don't think there's a causal effect that all of a sudden, uh, the number of bunkers has gone up by 800% simply because GPT-4 was launched. I just don't think that's the case.
+
+I think people are worried generally, um, that tend to worry about those things, but all right. So where do we take it from here? Um, Well, let's go, let's go.
+
+We'll, we'll forget the doomsday thing. You have a couple of things. One I want to ask you is you, you are an insider, right?
+
+Like we said, you got the billionaire group chat. What was going on at the Sequoia AI event? Any interesting takeaways?
+
+You got invited to that thing. What was your, uh, any nuggets of gold from that? Yeah.
+
+Um, so I, you know, I got to experience my imposter syndrome in full force once again, uh, because it was the kind of who's who of AI, you know, um, both speaking and in the audience, only a hundred people, um, and me. Um, and so. How do those people flex?
+
+Cause I don't think they're wearing fancy clothes and fancy watches. So what's the flex at the, uh, who's who of AI like they got a language model in their pocket. Like what are they doing?
+
+The, the big flex, um, in those kinds of crowds, including this one is no one feels the need to flex. I mean, that's, that's the flex. We're there to kind of talk about big problems and try to, and, and it's, a lot of it was kind of practical around, um, what do people's tech stacks look like?
+
+What are you working on? What's the, what have you learned? Where should we be taking this?
+
+What's the next thing after, you know, we went from, uh, kind of the one shop thing to the kind of chat base, the chat GPT thing. We're now doing multimodal with GPT-4. Like what's coming down the pipe that we can, uh, you know, sort of prepare ourselves for.
+
+So that was, um, yeah. What were the most interesting projects as well as predictions on where it's going to be applied? The things that are already starting to happen now, you know, we've seen the text to image, um, text to video is one of the big things now to be able to generate, um, the entire, you know, at the end of it all, let's say even a feature only film, right?
+
+So everything from writing the plot to then being able to generate, um, you know, like a 60 frame per second, actual kind of video from that thing. Um, and we're not there yet. I think the, you know, it's just moving so quickly, right?
+
+That's what happens when you get these, um, kind of exponential or geometrical curves, even, um, that it just gets better really, really fast. So I would not be surprised, let's say by the end of this year, that we have a reasonable way to kind of describe in textual form, uh, what we want, who the characters are, what the scene is, uh, what kind of stylistic attributes we want. We can point it to, oh, I want to disc down the style of XYZ director or filmographer.
+
+Um, and it's going to be able to do those things. I think that, um, that's interesting. The, um, natural length of just the interface.
+
+Um, so one of the big announcements that happened, uh, while I was there at the Sequoia event, uh, that Sam Altman dropped is that, you know, uh, chat GPT has taken off in a big way. Um, as we all know, a hundred million plus users in two months. Um, I don't even know what the number is now.
+
+Cause that was like a month ago, which is like eternity ago in AI years. Um, and the thing they dropped was they're going to, um, add what are called plugins to chat GPT. And what that means is that, you know, chat GPT has been a product of open AI and they have the API.
+
+So people can build things that are like chat GPT, which I'm doing. We can talk about that in a little bit, but what they're saying is we're going to open chat GPT itself, the web app up, so you can plug into it. So right now, when you interact with chat GPT, you can type things and it uses its corpus from 2021 and its reasoning engine to give you answers back, but it can't talk to the internet, has access to no proprietary data sources.
+
+Can't look at the stock price. Can't look at your analytics data at HubSpot. It has access to none of those things.
+
+Uh, what they're saying is we're going to now open that up. So third-party developers can kind of inject those things into the chat GPT experience. So the way I think everyone should be thinking about this is this is like the app store was, uh, for iPhone, which is, oh, we've got this super popular thing called the iPhone and we have our own apps, which is great.
+
+It does these 17 things, but now we're going to let anyone build apps, um, that can then take, and so it just broadens the kind of appeal. So it's now instead of being a chat app, a really, really smart one, it's now a chat ecosystem. Um, and I think that was actually a bigger drop, uh, than GPT 4.
+
+GPT 4. Awesome. Love it.
+
+Use it every day. But, uh, the kind of ecosystem play for chat GPT, I think is a, is a huge deal. We had, um, Tim Westergen, the founder of Pandora speak out some of our events and I got to know him and I was like, Tim, why did Pandora take off?
+
+He's like, well, you know, our like algorithm and everything for matching songs was pretty good, but I had an in with Apple and they had known what we were working on and we need, and they needed apps for when they ever, when they wanted to announce it on stage. And we were just, we spun up an app relatively quickly. And because of that, we had the first mover advantage and he created a significant amount of wealth that way.
+
+You know, Pandora, you know, was, is, is still pretty big. And when I look back at like these Jeff Bezos interviews on 60 minutes, when Amazon is like four years old and I like, I'm always envious. I'm like, well, we know it worked now.
+
+And I just so wish that I was like 30 years old back then where I could have just like jumped in and had a very high chance of building something historical or something like even mildly successful. Do you think that that moment is happening right now where this is the space and it's happening this second? And even if you have just a mediocre success, it could still be a huge win because you're catching this tidal wave.
+
+Do you believe that that this is the same thing now? Yes. I mean, once again, I've been in software for 30 years now doing startups pretty much my entire professional career.
+
+The only time I've, I've felt like, like how hard palpitations kind of like Sean kind of opened with us, like there's this party going on next door and I'm here knitting, right? It's like, this is like too big to ignore. I think it's the single largest opportunity and biggest kind of tech paradigm shift we've seen since the internet originally came out.
+
+Like mobile was big, but there was a discrete set of use cases. Like when you put a camera on a phone, when you put a GPS device on a phone, a bunch of consumer apps like Uber and others came up and that was awesome, right? But it was not like this impacts everything like the internet did, right?
+
+It's like, okay, there's some businesses, some new opportunities, lots of good things, lots of money made, lots of startups. Awesome. This is an order of magnitude bigger than that.
+
+This is like the original web because it just opens up for all sorts of industries, all sorts of businesses, startups and incumbents alike. Just lots of new opportunities. So this was not my original plan, but we're going to get, we're going to geek out for a little bit.
+
+We're going to do the geekiest thing that's ever been done on MFM. And the reason I'm going to do it is, so you brought up Pandora and he is a super bright, brilliant guy. And he had the matching algorithm, which was the differentiator.
+
+Yes, he had access and he got lucky in terms of the access, but the algorithm, if that had not existed, had the thing that actually been cool, it would not have worked out like it did. Now we have an opportunity. So I'm going to tell you, we're going to talk about, I'll give myself two minutes and we can cut this out.
+
+This is the beauty of editing. And we're going to talk about vector embeddings and why that's going to change your world. And before I can talk about vector embeddings, I'm going to explain to you how they work.
+
+I had to go through this with my 12 year old because he was curious. All right. So we're going to do a super geeky thing.
+
+Now I want you to imagine a line like your geometry class. And you could put a point on that line that says, oh, that's like three units from the origin, right? It's like, oh, yeah, point A is three units from the origin and point B, let's say seven units from the origin.
+
+So one thing we know for sure is that we can calculate the distance between those two points, right? In that particular case, it's four. If you move to two dimensions, now you have two numbers that describe every point.
+
+So you can say, oh, point A is here at these dimensions. Point B is over here with those dimensions. And we can physically, you could probably measure with a ruler, but there are mathematical calculations based on those numbers to calculate the distance.
+
+That's intuitive, right? You don't need to know fancy geometry. It's like, oh, there's a finite distance in two-dimensional space where we can calculate the distance.
+
+Okay. Awesome. Three-dimensional space.
+
+Exact same thing. Just three numbers to describe every possible physical point in three-dimensional space. Now, here's where it starts to get a little more interesting.
+
+That just happens to be our experience. So we limit ourselves to three dimensions. Imagine in an abstract world, there are a thousand different dimensions.
+
+Okay. So abstractly, that means there's a thousand numbers that describe any particular point in this 1000 dimension space. Okay.
+
+Now, foul that thought away that says we can have an arbitrary number of dimensions in this abstract world. Okay, great. Now imagine every paragraph, blog post, anything you write, you can reduce down to a point in this 1000 dimension space.
+
+It's like, I'm going to capture the meaning of Sam's last blog post or Sean's last tweet. And I'm going to reduce it down to what's called a vector, which is basically a set of, let's say, a thousand different numbers that says this thing, if you plotted it, that point falls right here. And then you can plot something else.
+
+It's like, oh, that falls over here. And just like in one-dimensional, two-dimensional, three-dimensional space, you can calculate the distance between those things. And this is not keyword matching.
+
+This is what's known as semantic distance. What, how related is Sean's tweet to Sam's blog post, meaning-wise. Okay.
+
+So now if you take that, it's like, okay, well, if you, that means you can take any concept and reduce it down to a vector. That means you can measure the distance between vectors and you can find out how related two things are, even though they use completely different words. That's vector embedding.
+
+And the reason I'm telling you this is one of the biggest opportunities in AI right now is to do what Pandora did. Okay. Is there an industry where right now we're doing really stupid keyword-based matching somehow it's very, very crude.
+
+If I can take that same dataset and convert it to vector embeddings and allow people to find things in a different way than they've ever been able to do before. So it's like Google search, super, super smart, not just keyword-based, but for everything else. What's a real life example of this?
+
+So I'm going to take it to you, Sam. So you have Hampton now, you're going to build up these profiles, very, very rich profiles of rich in terms of density, information density, of members that are part of your community. Now imagine as part of that process, you're going to have some data and they're going to opt in and they're going to say, oh, here's the story of how I started my business.
+
+Here's the story of my biggest struggle right now. And sometimes people are going to say, oh, my struggle is growth. Sometimes they're going to say, oh, my struggle is it's really hard being an entrepreneur and it has a really negative impact on my relationship and my family.
+
+Right? And they can talk about lots of different things. That's not going to show up in a profile.
+
+It's not. Now imagine if you took that content that they opted in and created vector embeddings of every member that you have. And then you can say, you know what?
+
+I want to find someone, not that's in my industry or a company, my size or happens to be in my geography. I want to find someone that's dealing with these kind of founder therapy level issues. Who are those people?
+
+Let's find the semantic distance between those vector embeddings across the thousand, 10,000, 100,000 people that are in Hampton someday. That's a billion dollar idea. And that billion dollar dollar idea occurs a billion times across the entire industry.
+
+Sam's going to go to the office for Hampton and be like, guys, Victor's embedding. Well, who's Victor and what's he embedding? We're doing it.
+
+I don't know what it is, but we're doing it. That's really, that's really interesting. So you could do that with dating.
+
+You could do that with a bunch of different, any different topics. You could do with unstructured data, but the idea is you're converting meaning, English text to meaning, or whatever language text meaning into something that's mathematically calculable as a result of which you can distance as a simple one, but you could do proximity. It's like, find me the top 10 people that are in a radius of X from where I am right now.
+
+And the minimum has to be this in order for it to be close enough of a match for it to be considered. There's a bunch of like new . And by the way, the technology that's today that nearly mortals in a weekend can actually build a vector embedding model of a given data set.
+
+It's not that hard. I mean, it's not like rocket science yard. This has existed though.
+
+And so what makes this better? You think, and also that assumes that the people telling you information, it's actually, they're saying what they mean. Right.
+
+Which is like, for example, I remember reading about OkCupid and people would say like one particular thing they had was about, was about race and height. And they would like, people would say they are open to dating these types of races, but their actions were different. There's a whole book called, I forget what it was, but you guys will probably know what I'm talking about where people say one thing, but their Google search history says something totally different.
+
+So does you're making the, do you, can this technology work even if people aren't telling you entirely accurate things? It depends on what your definition of work is. Right.
+
+So in that example, I would bet you money with a large enough sample size. Uh, the inauthentic, um, posts would be uncovered by the AI like relatively quickly. Like the, the pattern matching would say, you know, this actually doesn't occur in real life all that often.
+
+And every other time we've seen this, we've had people that ended up being, and you just have to have some sort of what, um, yeah, I felt like an eval functions. Like how do you measure the success of what the algorithm is doing in Pandora's case? Like, okay, do you actually like the songs it's recommending to you?
+
+That's the kind of arbitrary truth. Um, in a dating app, it's like, okay, well, are people liking the matches that are being made? Or if they're, they felt that they were misled, that shows up and there's gotta be some feedback loop.
+
+There's gotta be a way to train the system that says, here's what good looks like. And here's what not good looks like. Now, Sam, you said something like, oh, they have to tell you the meaning.
+
+No, they don't actually have to tell you the meaning, right? Because the AI can just interpret the meaning, summarize the meaning. It can, it can, it can guess the meaning based on whatever the raw, the raw text is, the public text is.
+
+So you, you could just tell a story about your life and the AI would infer or, uh, or, or place a tag, some meanings to the story that you told that, uh, oh, this is about overcoming hardship or this is about whatever. Um, so I don't think you actually have to get the participant to, to give you the meaning, but let me ask you, Darmish, like in Pandora's case, I don't know how Pandora works, but let me just guess for a second. Like it probably takes the tempo of a song and it's like, oh, this is a fast tempo song.
+
+It probably takes, you know, maybe the key that it's in or something like that, that, that gives you like, is this an upbeat and a joyful thing or a sorrowful, you know, mood song. So it gets like mood, tempo, artist, and like, whatever, a couple of key characteristics. There's like, there's instruments, um, in terms of what, what's actually in the thing.
+
+And yes. So they, he had, by the way, when they first started, they did it all by hand. So we had like 500 X musicians listening to it and like writing down, like checking boxes to what it was.
+
+It was pretty wild. So let's say they did it. They, they use attributes.
+
+And if I want, let's say I wanted to do this in fashion, I say, oh man, I love Sam's jacket. I want to find, I want to find, I want to find a way to find a way to find a way to find a way to find a way to find a way to find a way to find a way to So let's say they did it. They, they use attributes and if I want, let's say I wanted to do this in fashion, I say, oh man, I love Sam's jacket.
+
+I want to find some, you know, similar jackets, but can you match this to me? One, one way we do it. Okay.
+
+Sam's jacket. Let's say it's blue. It has buttons.
+
+It has blah, blah, blah. Right. It would take attributes and those are attributes, the same thing as meaning in this case, or is this more for things that are like, uh, text-based and, um, content, you know, like content that has some, some meaning or does this work for everything?
+
+It can work for everything. And we're still kind of uncovering because this stuff is kind of moving so fast. So what you're talking about, uh, is what we've been using in e-commerce forever in a day, which is a faceted search that I have n number of dimensions or factors, uh, size, color, what type of clothing is it?
+
+All those things. And then you kind of do this faceted search. Um, and then we've had kind of pure text-based, uh, the keyword semantic search, this sort of sits in between.
+
+So instead of having to tell it here are all the facets that I'm interested in, it kind of pulls those things out that are relevant based on that large language model. And this is, so the idea of vector embeddings, um, and semantic search has been around for a long time. That's not new.
+
+What's new is these new generative models now that are much, much better, um, at understanding all of like documented public human knowledge, uh, and then using that to say, oh, like when you use this word, when you use coach in the context of, um, uh, of a relationship, you're probably talking about like a therapist is just a different word, right? Like that's sort of what you're talking about. Um, and, and Sam, you talked about this, I think in the, on the last pod is, um, in, in anyway, so it's more about the meaning, um, and it infers or figures out what the dimensionality is.
+
+And that's how it kind of translates into those vectors. There's a couple of these companies. I just saw one, Pinecone.
+
+That's like some vector data. These things are getting valued. 2.3 by the way, that's what's that?
+
+Pinecone is the number one vector database. So let's say you had to take these vectors and put them in somewhere, which you do in order to be able to do searches. Pinecone is the number one, the one most popular, uh, commercial.
+
+And I think they just raised it like a $700 million valuation or something, something we're not. And there's like three of these that just raised these mega rounds because, uh, and that's, you know, I don't even, I didn't even know this. It's so funny.
+
+You, you just came on here being like, let's talk about this super niche nerdy thing. Just yesterday, I was like, uh, to do, go figure out what a vector database is and why these companies are raising so much money. Like this is clearly a big deal.
+
+And I don't know what this, I don't know exactly what this means, but now, now it makes a lot more sense. So it comes full circle, Sean. So you know what, maybe it wasn't as geeky as a, um, it's like, it's actually useful, right?
+
+You've done an awesome job explaining like the theory. And I'm like literally sitting on the edge of my seat thinking like, this is crazy. And you answered that question where I said, is this like the new internet opportunity wise?
+
+And you're like, yes, absolutely. But when you're making this stuff, what are some of the tools that you're using to, you know, to actually, you said this isn't rocket science and someone could figure this out in a weekend. What do you, what tools are you using to do all of this?
+
+Yeah. Well, I mean, so language wise, the most common is Python that seems to have emerged as like lingua franca of the AI world, not to say you can't write it in typescript or pick your language of choice. Um, and then tools that are emerging, it's still early, right?
+
+The, uh, pine code we talked about, there's another one called an open source project called Langchain. Um, and I, uh, can you spell that Langchain, um, Harrison, um, at the Sequoia event. I asked, I asked somebody yesterday, I was like, how do I, you know, is this a company?
+
+Can we invest? Cause everywhere I look in these like AI hackathons, it's all about Langchain. And it's like, no, it's not really even a company.
+
+It's just an open source project. There's a guy who made it, but then is running it, but it's not even a company, correct? It's, it's not a company yet, but you know, but, but is it, is it Blaine?
+
+I think Chris, what that? Lane? Chain?
+
+Yeah. Lang, as in language chain. Oh, okay.
+
+Langchain. Um, and what it does basically is it lets you chain together. So right now, when we work with large language models, we kind of send in a prompt, what's called a prompt, and you get something back.
+
+Um, and then you maybe send it to another thing to do something else. And there's like a multi-step process amongst other things, Langchain helps you kind of chain those things together and makes it easier for you to kind of work with either an individual large language model like GPT-4 or get class models, um, and then kind of do a lot of the, uh, kind of connecting the dots on and help you with that. But it's a super useful library.
+
+By the way, we missed the chance to give an example, more tangible example. So you talked about the plugins thing. Um, I think, you know, example use case here, tell me if I'm wrong, because I haven't, nobody has, well, very few people have access to the plugins thing.
+
+So I'm just kind of sort of guessing, but like, if you go to chat GPT today and you say, Hey, uh, I'm going to go visit Austin in April. Um, you know, make me like, I'm there for four days. I'm with my family.
+
+Make me a travel itinerary that, uh, is going to be fun, family friendly. Uh, we want to eat good food and maybe do a little bit of sightseeing, but not too much. It will spit out a day by day itinerary for you.
+
+Okay. That's kind of, kind of interesting. Now let's say, oh, I need to, I want, I'm trying to figure out where to stay.
+
+Um, what hotel should I stay at? Yeah. You know, here's some things that are important to me and it will give you a table.
+
+That's like, here's option one, option two, option three, here's the cost. Here's the whatever, right. And they, it can, it can do something like that.
+
+And with the ability for plugins, you can now say, cool, can you just book that for me? And it will just be like, great. We have the Expedia plugin or we have the Airbnb plugin and it will just go ahead and book it for you.
+
+And so, you know, do you need an executive assistant? Do you need a travel agent when you could do these things? Do you need, you know, the same thing with HubSpot or Salesforce?
+
+Oh, you know, um, give me a list of this. And it gives you a list of that. Cool.
+
+Put that in an air table for me and, uh, or put that into Salesforce and tag the highest value opportunities as blink. It'll just go and do that for you. And it's like, it'll give you the link to your Salesforce dashboard.
+
+And it's like, whoa, that's kind of cool. Like, no, that's a test that some, you know, I would normally have a human go do because now open AI or chat GPT is not just going to chat you an answer. It can do things.
+
+Um, as long as the programs that, that let you, you know, they'll, they'll build the, the interface of that chat GPT can actually interact with those things. Yeah. And this is actually a great example.
+
+So I think, um, and we can use that to kind of open up, um, kind of doors for, uh, the viewership and listenership, which is okay. So travel, which is something we all kind of intrinsically know how it understands. Some of us might remember the evolution away from travel agents.
+
+Uh, and the first thing we did when we kind of, um, had web-based kind of travel bookings is, uh, we treated very transactionally as I'm looking for a flight from X to Y sorted by descending pain, sorted by price, whatever happens to be the fewest stops, lowest time, whatever it is. Um, and they do a pretty good job of that. Like most of us have, have used one of those, um, what's going to be possible now, um, in this kind of new AI world is instead of solving for the transaction you solve for the experience.
+
+And what I mean by that is that, oh, if you had an all knowing, uh, assistant that was super smart and scored, you got a perfect score on their SAT and is, was going to go out in there and just like, okay, what you're really looking for is to solve for this experience. You're going to want to stop by this thing. And you're going to want to find a hotel that's around a Michelin rated restaurant because you only have 15 minutes to get between this point and that point.
+
+And I'm going to pull the whole thing together for you. Oh, and by the way, your wife's going with you on this trip. I know she likes that right now.
+
+So normally I would have put you over here, but this time I'm going to put you over there. Oh, and by the way, I know a week ago you were at this other thing and you had mentioned that you would actually like to follow up with some of those people. I'm going to see if I can make that happen as a, like all of that, right?
+
+Imagine it knows everything about you, has access to the transactional engines to book the flight, has access to all the information to get ratings and reviews. And all of that comes together in one chat based interface. That's the future.
+
+Fucking insane. This is crazy. Are you, is this why you bought, so you bought chat.com, right?
+
+I did as of transfer the domain yesterday, last night. And you paid, you just said eight figures. So 10 plus million.
+
+Yes. Uh, unless you're including the dot zero, zero as a figure. Is this personally or you're doing this in HubSpot?
+
+Is this a HubSpot domain? I did it personally. Um, so put this, uh, so if you go to chat.com, it will take you to a LinkedIn post that tells me, it tells you why, why I did it and, uh, so the details.
+
+So I bought it personally. Wow. And the reason is because of this conversation we're having right now, which is, I think chat as a experience, as an interface is the future, right?
+
+It's like, that's the thing. Um, and no intense currently that can build something out on it, but, uh, it's the domain. I think it was like dormant for like 30 years or something like that.
+
+Um, and there was kind of came on the market and Wow. And, but you, so, so this is insane. I'm reading your post now.
+
+It's pretty wild. Do you have, are you using HubSpot employees? Like, do you have like a skunks works team inside of HubSpot that's just working on all this wild stuff?
+
+Or do you have like a side LLC or something where you've got like a handful of people on staff and you just say like, here's what I'm interested in this week. Let's see what we can come up with. Yeah.
+
+So the way it's working now is that there will be times, um, where I'll do something as a hop, like wordplay is a good example where I'll build something on the side just for fun, for learning, whatever it is. Uh, and I foot the bill for, um, for no, no HubSpot PNLs are harmed. Um, and then there are times where like something kind of winds up being, so I started this project called ChatSpot because I'm obsessed and we'll take a walk down memory lane because I think it's instructive.
+
+Um, so I built this application called ChatSpot.ai and the idea here was, You built it or a team? Uh, mostly me. I, I, I don't have any front end design skills.
+
+I've got some freelancers on it. Um, so, you know, uh, yeah, so I used, um, open AI APIs to build it. But my kind of target goal, the thing I had in my head is I built it for myself.
+
+Like here are things I need to do all the time. And I'm pissed off that I have to do them manually every time. And this has been the story of my life for 30 years, right?
+
+Like solve my own problems. And then other people may or may not find those things, uh, interesting or useful. And so I built it.
+
+I'm like, okay, here are the things I wanted to do. Um, like access HubSpot. I want to be able to look at my analytics from yesterday or ask questions or look up a domain name where I wanted to see the history of a domain name.
+
+I like all these things. It's like, okay, well, I don't want to like, and I have all this software, a lot of it just built. And I just run it from the command line.
+
+I do things. Um, and so then I'm like, okay, I can wrap this up into a chat, chat based interface. Um, and so I've been, you know, been doing that, working on it.
+
+Uh, we've made, and so, but now given the relevance, uh, to HubSpot, uh, we're going to transfer that projects, chat spot.ai to be a HubSpot staffed core team. This is going to change the world. It's going to change the world of CRM.
+
+Um, let's go do this, which is great. So, and my, my working thing is like, what are you doing with chat.com? What's the plan?
+
+You bought this amazing domain. You've redirected it to your LinkedIn post, which basically just tells us about the purchase, but what are you actually going to do on the domain? I don't know yet.
+
+That's the honest answer. I do not know yet. Um, and okay, so we can, we can help you brainstorm.
+
+Yeah, we can, we can definitely do that. By the way, the, the chat spot.ai did you go to that, Sean? It's a, it's a simple looking website.
+
+It's one page and there's a 19 minute video of Dharmesh sitting in the exact same chair. Doing the big, Hey, it's me. And it looks almost like, uh, I, but he's really good at these videos.
+
+It's almost like he's reading a script, but you come off natural. I don't know if it's a script or not, but it has 200,000 views and it's a 19 minute video of him talking about what this product is. And you do the best combination of like launching something really quickly and getting it out there.
+
+It's just you on in your chair talking. And yet it's like a pretty sophisticated thing. And it has 200,000 views on this video over just about that's wild to me.
+
+You like, it's, I gotta, it's, I gotta give you credit. You, you are, uh, kind of amazing. Like, you know, you said a bunch of things in this podcast and I don't know how many of them I'm going to remember.
+
+Maybe the, the vector thing. Cause I enjoyed that math lesson. But the main thing is I go around my life now and I just looking for people who I'm like, I want to be like you when I grow up and I'm just taking little things from them and they could be, it could be like a, you know, a 17 year old kid who's just like doing something awesome on Tik TOK.
+
+And I'm like, I want to be like you when I grew up, the guy who made that Kanye vocal, like transformer. I was like, I want to be like you when I grow up, I'm just taking little pieces and you have a couple of things that I think are kind of amazing. You have a combination of enthusiasm.
+
+Like you come onto this podcast and you are pumped. So you are as excited in year 30 or maybe more in year 30 of your entrepreneurship career as you were in year one. And I'm like, oh, this, this is great.
+
+That's the fountain of youth. Is that enthusiasm? So I'm like, he's got the enthusiasm.
+
+Then I feel like no matter what's happened, no matter how much success you've had, you've kept your schedule and your use, you invest your time into things you like. So like you tinkering on this project, whether it's wordplay, last time you came on, you told us about that. It's like wordles awesome, but I got annoyed with these things.
+
+So I made a, me and my son built this project together and like, you know, to teach him, but also to just make the thing we want and like, look at this, it kind of works. Even if it didn't work, it would have still been worth it. So like having that kind of like, I'm always going to tinker because that's what I love to do.
+
+It doesn't matter that I'm the, you know, top dog at this, you know, multi-billion dollar public company. That doesn't mean I'm going to stop doing the thing I like to do. So I love that.
+
+Love that aspect of it. Third, you are really great at content. You do this like dorky form of content.
+
+That's just like, Hey, it's me. I'm going to show you this thing that I'm pumped about. And like, you don't overthink it and you just do it.
+
+Whereas like, I think most people get really gun shy when it comes to content. They're afraid about like, you know, how to do it, what it looks like. You're just like, Oh no, I'm just going to like, I'm going to say the thing that I'm excited about.
+
+I'm going to say it and I'm going to do a screen share. It'll just be me and my screen. I'll be talking about what I'm doing.
+
+And I love that. And so, uh, and then the last one is guts. So I feel like you put your money into things you believe in, whether it's philanthropy or in this case, buying a $10 million plus domain name with no plan.
+
+Like you just said, it's like you did the, the fire ready aim. It's like, yeah, I bought the thing and now I get to figure out what the hell I'm going to do with it. And I think that takes a lot of guts.
+
+And, um, I don't think you see things as risky as other people see them. Um, and it's not really about like, I think the easy way of saying it would be, Oh yeah, well it's, you know, that's nothing to him. He's got a lot of money.
+
+Uh, yeah, I don't think that's true. And I know a lot of people with a lot of money and they don't do things like this where they just put their money behind things that they're in, they believe in or they're interested in, or almost like, would you, I don't know if you would agree with this. It's almost like you anted up so that now you're forced almost to do something awesome and interesting in this space that you think has a lot of potential.
+
+But then there's this, and this last thing is this rare combination of like, and I mean this in a polite way of which I am also that like this nerdy nerdiness, quirkiness of like, I'm just doing it cause it's cool. Plus I'm, I, this way can make money. I mean, you, you have a plan that makes, yeah, you have this company that has close to 2 million, 2 billion in revenue and is a commercial success.
+
+And then artistry of like, I'm just, just like, this is, it's beautiful. This is awesome. I'm going to do this.
+
+It's a very rare combination. How do you respond to all these compliments? I'll say this, the lesson kind of I've learned over the years.
+
+Um, and I think this is, if I had to kind of share any kind of advice, um, over the, you know, the 30 years is that when, when I've done best is when I've had the courage of my convictions of something that I believe in. So I'm going to tell you like a quick story of, uh, the road that led to me buying a, uh, 10 plus million dollar domain name. I almost like said the number, actual number out loud.
+
+I have to kind of catch myself, but, um, and so 17 years ago I had, and I, this is before HubSpot. Um, I had this idea and the idea was, um, everyone was using kind of email and outlook back then. This is before the iPhone, before all the things it's like, you know what?
+
+Like business software is really hard to talk to. I'm going to do it. Just like I would email my assistant.
+
+I didn't have an assistant, but let's assume I did. Uh, you know, I just want to be able to do that and type an email up and have her like, Oh, I have this file in our shared file server in SharePoint somewhere. Can you just send me a link to that file about to hop on a plane?
+
+I need that for the sales call. I'm going to go on for, for a meeting tomorrow, or I'm on the plane coming back. Uh, I just ran to this person, whatever I've got their business card right here.
+
+This is before the iPhone and you can do OCR and things like that. It's like, I'm just going to type that in and send it. It's like, just add this to, to my contact, you know, database, whatever.
+
+And the beauty of email was it already had a disconnected model. We had already figured that out, which is, Oh, you can be on a plane and have no interface, internet type all emails you want, respond to all the emails you want. And then when you get connection, it does all the things, right?
+
+This is like automatic, uh, synchronized database, essentially. Uh, and I called the product in Genomail. Uh, and that's what I was going to do before HubSpot.
+
+I was like, Oh, like that, that would be an interesting thing. And then five years ago, I'm like, okay, well that in Genomail thing, the core of it was a good idea, but it emails the wrong conduit actually needs to be like a web-based tool, but the, or Slack, which I did both. So I built this product called Growth Bot.
+
+Talked about it on the inbound stage, got thousands of users, you threw it out there. And it was awesome, except for one thing. It didn't work.
+
+It like, it couldn't actually do the natural language understanding, um, that I wanted it to do. Despite my best, I used products on Google called Dialogflow. I used products from Facebook.
+
+Um, we used open source projects to try and crack the nut of taking text, understanding what the hell the user was trying to do anyway. So that failed. Um, and then, you know, when GPT comes along, I'm like, Oh, you know, that thing I've been thinking about for 17 years, that actually is now possible.
+
+So I started working on chat spot.ai. I'm like, okay, it took 17 years, but I sort of proved myself right. I had the courage of my convictions all the way through to never let go of that one idea.
+
+And then chat.com comes along. It's like, okay, it's like deep down inside, I will give you the true, honest to goodness reason I bought it. The reason I bought it.
+
+And this is, I think a phrase, Sean, you just use this like, Oh no, I think Sean, Sam, you just use it is it's the anti. So I'm trying to get into the AI party, all the AI parties. And I'm nobody in that particular party, right?
+
+I've done some things in some places fine, but that particular group of people has no idea who I am. Not really. Um, so chat spot moves me in that direction.
+
+It's like, oh, some people have seen that video. Awesome. Chat.com for let's say I even break even, let's say I lose a few million dollars.
+
+It is worth the price of admission for me just because that pays the cover charge. I was like, okay, this guy gets it for him to spend that kind of money on chat UX, which Bill Gates just talked about last week as the new thing. Uh, so you should read that article, but I guess just did an article around why he is so excited about this Jerry of AI stuff.
+
+He tells the entire story of how he came across on, um, all in and open AI and the challenge he put the field data and his, I'm going to paraphrase. He said, when we went from DOS to windows, which is we went from a character based interface to a graphical mouse based click and touch interface. That's the thing we built Microsoft on, which lasted for decades.
+
+And then he said, since then there has been nothing in technology that has come along, literally he said nothing that has come along that has made ads or will make as big of an impact as this natural language interface to software. It's the biggest thing we've seen. And hence chat.com.
+
+What happens with, I don't know, but the wrong, the scary is have the courage of your convictions. If you truly, truly believe in an idea and you fundamentally think you're right, iterate, don't just sit, go down your rabbit hole, tell everybody you can about it, build products around it, find other like-minded folks and try to pull on that thread. Um, but Would you ever quit HubSpot and just spend all your time on this stuff?
+
+I don't really need to write. It's, um, it's, I enjoy what I do at HubSpot. I think I add value there.
+
+Um, and that, um, a dollar salary. So it's not the, not the money at all. Like even on the, like the chat spot thing at the time that I built it, it was experimental.
+
+I'm like, okay, I'm not sure if this actually accrues into something that would be valuable to HubSpot. So I spent like half a million dollars plus, um, like freelance developers and open AI license fees and all the things that need to go into launching a product like that. And I'll end up giving it to HubSpot for a dollar, right?
+
+I'm not looking to make money. Yeah, but aren't you, aren't you like, I don't want to be weighed down by this baggage of like having to worry about CRM stuff or, uh, you know, your technical, your, your the title, your title is CTO. Like, I don't want to have to talk to certain people, uh, and take up meetings on like the future of this particular product.
+
+Instead, I just wanted to just nerd out on all this other stuff. But I do that now. So I got one thing, one of the things I've, and this is a personality, call it a trade slash flaw, is that I spend most of my life trying to configure the universe to my liking.
+
+That's, uh, I mean, all entrepreneurs really do this, right? That's one of the reasons they kind of go into Starlink land is the freedom and the control to do the things you want to do. And so I've kind of crafted a role for myself within HubSpot that allows me to do exactly the things that I want to do and not do any of the things I don't want to do, which is one-on-one meetings.
+
+I don't have to manage people. I have no direct reports. I've never filled out an expense sheet.
+
+I like I do none of that. I feel, I feel, I don't know about you, Sean. I feel like, I feel like I want to quit everything I'm doing.
+
+Like he's just persuaded me. Bro, you just launched yesterday. No, it's over.
+
+I feel it's over. So here's my advice to you, Sam. Do you, I mean, do you feel this way, Sean?
+
+I don't know. Sorry, Dharmesh, go ahead. No, so my advice to you is Hampton's a cool idea, with actual utility.
+
+And Sean, you said this in the last thing, like this could be a hundred million dollar business worth anywhere from $300 million to a billion plus dollars. And I think you're right. Um, if you're excited about some of the new technology developments that's happening, I think the best thing you can do is intersect the two things.
+
+It's like, okay, I'm going to build Hampton and I'm going to take the things that I know. I know how to build communities. I know how to build these kinds of businesses.
+
+Now can I intersect that with things that are happening in the technology sector around AI or vector or whatever it happens to be. And then it can somehow merge those two things because then you'd be an unstoppable force, right? Because no one in the community building, uh, market doing niche market communities is thinking about or having conversations about vector embeddings.
+
+I promise you that. Um, it would, so you don't have to give up one for the other. You can say, yep, I'm going to do that.
+
+I'm going to do it better than anyone's look else has ever done it. Um, so, but I have a different advice for you, Sam. I think just get dug in into your position instead.
+
+I remember when you were doing the hustle originally and Snapchat came out and Instagram was like popping off on videos and Facebook had videos. And then there was other media companies that were raising tons of money that were just like, we're going to produce short form video content or live video content on top of Facebook. And cheddar was all the rage and all the stuff.
+
+And I was like, dude, why aren't you doing videos, man? Look at this. Look at these guys.
+
+They're getting millions of views on their videos on Facebook, or these guys are getting millions of views in the Snapchat story feed. Um, you could be the first one there. It fits your audience.
+
+And you were like, just very steadfast. You were like, uh, like your, your, your principled. You were like three things.
+
+Number one, don't understand it a lot. You know, I don't really understand it. I understand this other thing too.
+
+I could try to figure it out, but I don't want to build on top of their platforms because they change the rules all the time. I have friends who've got burned by that. I don't want to get burned by that same thing.
+
+I don't want to build on a shaky foundation. I'd rather do email because I own the thing. Uh, I own the relationship with, with the audience.
+
+And, um, it's not like the Facebook algorithm changes one tweak away from, from putting me out of business. And I remember being like, man, this guy's like stone, Mr. Stone age.
+
+Like he is just not, not an integrating or adapting to the new shit. And I was like, I wouldn't, there's no way if I was running the hustle, I would have been able to resist the shiny object of like video on mobile phones. And like, it turns the video mobile phones did turn out to be a big thing, but a lot of those companies, media companies got absolutely wrecked and you were right for, for being wary of it.
+
+Um, and more, more, I don't think in this case people are going to get wrecked. Cause it's not like, you know, the analogy is not one-to-one, but I would say, you know, Warren Buffett missed the internet and all of technology and still did fantastic. Sam, I think you're going to be in that same boat where like, it is not really in your nature to get really interested in, you know, new frontier technologies and play with them and try to integrate them.
+
+And that's not really your nature and you're better, you're best served by like knowing your nature and just doubling down on what's a working formula for you, I guess. So, so I would do that. I appreciate that.
+
+Because there's going to be a trillion people trying to do fancy AI shit who are better suited to do that. And it's going to be an absolute bloodbath for, you know, for, for like, go look right now at the number of AI tools that are coming out every single day. And, you know, it's like, Most of them do seem shit though.
+
+You're right. I mean, like, It doesn't matter. There's just swarms that they're all going to get just like wiped out.
+
+Every GPT release wipes out a whole wave of like, even the successful ones. Cause it's like, oh, now that's just a feature of chat GPT. And so I, I don't know.
+
+I think it's like, know your nature and like, you know, it's okay to not have to do every new thing, unless that's your nature, unless like, like for Darbash it is his nature for me, it is a lot more my nature than it is yours. And there's pros and cons that come with that. And so I think, Are you, are you going to go in on, I mean, Sean, Sean's got a new idea that he's tickering with, and he's been telling me a little bit about it.
+
+Before I jump to that, I have one piece of tactical advice I have to share with you, Sam on Hampton. Yeah. Yeah.
+
+Yeah. So I was going through the application process on Hampton last night, like 2 AM. And this is super tactical, but this is what we do here on MFM.
+
+Question number nine on the application process is what's your role? Mark. It's a required question.
+
+Good. The subtext is CEOs, founders and partners only, please. That's the subtext.
+
+The options are founder, CEO, owner, and other. The one thing I would tweet if I were you. So what you're doing is you're saying, Hey, we're about founders and owners.
+
+And if you're not one of them, don't bother. Thank you for not bothering. Go away.
+
+Right. So focus is a magical thing. I love that.
+
+But you're doing what I call a pre-filter, right? Which is why not say, Oh, this is for CEOs, owners or whatever. Don't make them feel guilty for going through the rest of the process because there may be a future version of Sam and Hampton that says, Oh, you know what?
+
+We solved this problem. But that same problem around people needing therapy from peer groups, applies a lot to like VPs of product. And that community right now, all the only communities they can find are people that want to talk about product management and no one wants to talk about relationships.
+
+And there's an opportunity there. And so it costs you literally nothing. They'll still answer the question.
+
+It'll be sitting in your database for a year or forever. And it costs you nothing. Don't push them out too early.
+
+It should have been the way you suggested. Apparently, I didn't give that feedback. Grant, if you're listening.
+
+This is a direct order from Darbash. Change question nine, please. Change question nine.
+
+Grant, do this before you get replaced by AI. Yeah. Yeah.
+
+But Sean, you're telling me. Thank you, Darbash. Sean, you were telling me about stuff that you're thinking about.
+
+Yeah. And it was pretty, it was somewhat old school. Like what you're the thing.
+
+Yeah. So are you like questioning that after this conversation? And you're like, oh, man, this is like.
+
+Not after this conversation necessarily, but it's a snowball that's building, right? Like there's a reason I cleared my calendar to just mess around with AI all week because I'm interested in it. And when you it's like, let's go see what's real there.
+
+And I did the same thing with crypto during that, during, you know, when crypto was really interesting, intriguing, I was like, okay, let me go try to mint an NFT. Let me go try to actually like use defy and see what's going on here and what parts make sense and what parts don't make sense. Oh, that was pretty frictionless.
+
+Like, that's cool that I could just like get a loan in one button and I could pay it back in one button. I never had to talk to a human being like, I really like that. Hey, this thing says the yield is 20%.
+
+I don't really understand where they would get 20% from. So not sure, but I'm going to, you know, put a small amount of money in just to learn. You know, I was, I was trying to play with it and trying to think for myself is the big idea.
+
+And, and it's not like some binary thing like is crypto good is crypto bad. It's like, I want to know where it's at right now. I want to see it develop.
+
+And my best way to do that is immersion. I actually stole this from the, from Bill Gates. Bill Gates does his reading week where he goes to a cabin and he reads a shit ton of books for a week about one topic that it's like been on his mind, but he hasn't had the appropriate amount of time to roll up his sleeves and dig in.
+
+And I was like, oh, that, but without books, just give me a, you know, Chrome browser and I'm good to go. And so, um, so that's what we've been doing. And there genuinely are so many like mind blowing moments and also just like, um, just understanding the nuances of things.
+
+So for like, just being able to think like the computer, like, you know, you were talking about these facets, for example. So I was playing around with mid journey, like Sam, do you know what mid journey is? Or do you know how to use it?
+
+Yeah. Yeah. Yeah.
+
+Yeah. Yeah. Yeah.
+
+Yeah. I mean, I, I just been goofing off and I'll just be like, show me what's a Cartman from South Park looks like as a real person. Right.
+
+And like, you know, I was like, and I was the way I approached it was, can I replace work that I already want to do with a more efficient AI workflow? That was like one of the things. And then it was what's really fun, random shit I could do.
+
+I wanted to be on those ends of the spectrum, like highly utilitarian for me. So it's like, oh, I need a logo for my thing, but I don't want just like a logo. I want to create a whole brand.
+
+All right. How can I use AI to create a whole brand here? So from the, the icons to t-shirt designs to a website, can I do that with just AI and not have to touch it does not have to hire a single designer.
+
+And can I do that with just like my own imagination and this prompt thing? And then, oh, how do you do prompting and like, which of these tools is the best and what's the difference? So that, that was like one whole area.
+
+Another was like, we took the podcast and we did this thing that was kind of sick. We took the podcast and we ran it through this thing. So we took the pod and we then used opening.
+
+I has this thing called whisper, which transcribes any video. So it's like put in a YouTube link to this tool. It'll take a whisper and it'll give you the transcript.
+
+All right, cool. It takes the transcript. Then I put it into chat GPT and we had this guy write this little prompt for us.
+
+Like we had to get the right prompt, but he wrote this prompt. That was awesome, which was basically like, it's really funny. It goes because chat GPT can only take so many characters.
+
+So it goes, I'm going to, I'm going to give you 19 text sections. I don't want you to do anything until you're at section 19. So ignore everything until I'm done with 19 and then answer the prompt that I give you.
+
+And chat GPT's like, okay, I will, I will wait for the 19 parts. You copy paste part one, two, three, four, all the way to 19. And then you go, the prompt is, I want you to pull out every idea, story and framework that's discussed in the podcast.
+
+I want you to summarize it and I want you to tell me, does this idea exist already or not exist? So it can guess based on the way we were talking about it. Are we talking about something we saw that exists or just an idea that somebody should go do?
+
+So like from this pod, it would be like using vector, using this vector, you know, dimensions or I forgot what you called it, vector engine or whatever, to potentially create a dating site that would match people in ways that they're, you know, sort of similar using, using AI. And it would be like, does this idea exist? No.
+
+Who is the source of this? Darmesh. Um, what was the, the synopsis of the idea blank?
+
+What is the category that it's in AI? And so it, then it took that and it takes the whole episode and it just created a database of every story framework and idea from the thing with these tags. And now a human can go back and like tweak them if something was wrong.
+
+But like, that's a lot of the work that was done. Uh, and we could just do this for the whole back catalog of our podcast. And so I'm trying to use it first for my own benefit.
+
+And then along the way, if I see a business, a startup idea that I'm like, oh, somebody should productize this or somebody should, um, do whatever, like, you know, the simple example is this Kanye thing. I was like, why is this not the most viral app in the world right now? That basically it's an app with a one button that says, you know, say something.
+
+And then it's gonna, when you, when you let go of that button, it's gonna turn it into Kanye saying that thing and go share that to tick tock. And like, you might get sued, but you will go viral, right? That's the trade there.
+
+But I'm like, that's crazy. There's no front end for this really cool, you know, AI demo that exists now. Um, so yeah, I, I'm just right now I'm in the go play around with it.
+
+See if anything really, really strikes me. And if something does then, then, then take the next steps. There, there's one thread in there, Sam, uh, Sean, that I, I think we should pull on, which is you used, um, you, you talked about this kind of crafting of the prompt in order to kind of make the thing do what you needed it to do.
+
+Um, and that's an entirely new skill now called prompt engineering, right? And it's, it's analogous to software engineering. So software engineering is getting a computer to do what you want by speaking to it in its language.
+
+And that way you can kind of get the results you're looking for. Prompt engineering is almost exactly the same thing, except you're talking to a large language model, something like a GPT-4 to kind of get it to produce. So you're talking to AI to get it to produce the thing that you want.
+
+And so I think this is another kind of opportunity for, uh, folks that are kind of technology minded, but not like software engineers, right? So they, they kind of can think about the problems in their head. They're good at it.
+
+And they may be good writers. They may be good analysts. They may be good at kind of describing the thing, but like prompt engineering is going to be like another big, um, like a big thing.
+
+And by the way, as long as we're dropping things, uh, so I bought two, um, domains recently. Oh, buy one, get one free. One of them.
+
+What's that? Yeah. Right.
+
+I won't get one free. Yeah. I wish.
+
+Um, but this one got, it's not eight figures. It's seven figures and the domain is prompt.com. And this one, I actually have an idea, um, around what to kind of what to do with that, which is, um, there's going to be this entire, I'm not going to get into details of it yet because it's too good of an idea to actually just kind of put out there in the world.
+
+And I'm not, I'm not ready yet to do something about it. But, um, once I. But wait, prompt.
+
+Prompt.com goes to like a coaching for essays. I know. The transfer is still happening.
+
+I don't have the domain in my possession yet, but the deal is done. Dude. So your, your, your portfolio of domains, I mean, mid eight figures then.
+
+Yeah. Tens of millions. Uh, yeah.
+
+Fucking insane. Dude, I feel amped. I like when we were talking to, when we were talking to Pomp, I like wanted to go like hide under the covers because he freaked me out about, uh, the billion or the million dollar Bitcoin thing and the banks with this thing.
+
+I'm like, I got to clear my schedule. I got to go learn all about this. I mean, I feel amped.
+
+This is awesome. Before we go, give us your two minute reaction to Balogy's warning slash bet that the U.S. dollar will crash and, uh, Bitcoin will surge to $1 million.
+
+I'll say this. Uh, and I don't know him personally. Um, but he's like quite nearly one of the top five people I've ever encountered.
+
+Like even on the internet in terms of raw, you know, what I call wattage, just raw horsepower. And, uh, he he's like an AI unto himself, right? Like just, uh, just the knowledge that he has.
+
+Having said that, um, I think I understand why he's taking the extreme positions, uh, because that's sometimes what you have to do to kind of shake the world out of its reverie. And it's like, okay, uh, pay attention here. This is important.
+
+Um, but if I were a betting person, I would not bet that the, uh, odds are, um, what, what do you think they are? Um, could happen, but nowhere near the probability that, uh, that he's suggesting. That's my personal take.
+
+I feel better now. I feel better. You're I, I like your opinion better.
+
+Therefore, I think it's true. Yeah. Speaking of, okay, we should wrap on this because one of the things that happens anytime new technology comes along, we saw this a little bit in, um, in the kind of crypto web pre-world as well, is that, um, entrepreneurial minded folks will see this kind of new thing and they will look for kind of the quick turnaround.
+
+I'm, I'm all for creating value quickly, but it has to be like creating value. Don't play the arbitrage. Oh, I'm going to do this thing.
+
+This is like, you know, day trading back in the day or whatever. It's like, don't be a grifter, right? Like be, be something that.
+
+We're just going to build, we're going to build a shitty app and put web three at the end. Yeah. So, you know, like, just don't take advantage of people.
+
+There's enough real problems to solve where real money can be made. And yes, uh, this technology can now be used in creative ways, um, by lots of people and you should use those. But don't use as an excuse, uh, just to kind of be a, like an AI tourist that comes through, makes a little bit of money or whatever.
+
+And then that was that there's, it's, um, there's a bigger opportunity. I think you're shortchanging yourselves. Um, if that's what you end up doing.
+
+So. Well, thank you, Dharmesh. Um, thank you for coming.
+
+This is awesome, man. Yeah. Yeah.
+
+Well, thank you for coming on the pod. This is awesome. I, uh, I feel pumped, man.
+
+I, I always like talking to you. Um, I, I don't know if you know this, Sean, I slack Dharmesh all the time. I'll just be like, I'm just trying to get him to like, give me a little like crumbs of information.
+
+Cause I need to get into the HubSpot Slack. It's awesome. I'll just like, just send something his way.
+
+Just hopefully I can get something back. Uh, but it's fascinating and I feel lucky to be able to have, have you as a friend and a coworker. And, and this is awesome.
+
+I, and a podcast guest you're, this is so fascinating. And I agree with what Sean said about like, kind of like looking up to you and like looking at how people live their lives. You're definitely someone I admire.
+
+So I'm, I'm happy you came here. Thanks. Thanks for having me on again.
+
+This is fun as always. Awesome. All right.
+
+Thanks for coming on. That's it. That's the pod.
+
+Tent Hall this one? It.

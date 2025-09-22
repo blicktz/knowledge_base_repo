@@ -1,0 +1,389 @@
+All right, my friend, I recorded one of my favorite types of episodes. My friend Howie started a company called Airtable. They're worth around $10 billion, so he has seen it all.
+
+He knows what's going on in the world of AI, and he has an amazing perspective. And for this episode, I asked him a very simple question, which is, if he were 21 again today or he didn't have Airtable, what companies or business ideas would he want to work on? And he came with seven.
+
+Seven different ideas that he would work on today. And so if you are looking for a different business idea or you're an AI nerd, which a lot of us are right now, you're going to love this episode. Tell me about live shopping with AI avatars.
+
+I personally think this is a really interesting area. I mean, you think about live shopping, which is a huge thing in Asia. I mean, there's like probably tens of billions, not $100 billion plus GMV in commerce dollars that are getting transacted through live shopping.
+
+This is basically where you have an influencer go and peddle a product, right? Is this like on Instagram? I mean, I pay attention a little bit to Asia, but is there a website I can go to to see this right now?
+
+There's actually a big chunk of Timu that is powered by this and definitely TikTok. So TikTok has a huge amount of these kind of like influencers that basically go and, and, you know, there's actually a shop tab that you can even click on. You see these products and it's a person basically describing the benefits of a product.
+
+So think about like influencer marketing, like taken to the extreme where you just watch, you know, people peddling products and you click it, you, you, you buy. And there's actually one company that's doing really well in the U.S. called Whatnot.
+
+Um, and it actually, Oh yeah, I like Whatnot. Yeah, exactly. Um, and then, you know, what's cool about it is like, there's so much personality, you know, to the content, like in a way it's almost like watching Twitch.
+
+It's not just about the actual product. It's about like seeing this person, like talk about this product and maybe it's a, you know, um, like a really cool, like new shoe from Nike or like a vintage shoe. And they're talking about like their own experience with it and childhood, you know, uh, experiences with like the Jordan brand or whatever.
+
+And, and so it comes as like really interactive experience. You know, my pitch for this idea is basically, well, obviously you can have like really rich, engaging experiences in the very near future with avatars. Right.
+
+And if you go to HeyGen.com, it's a great avatar product. It's the easiest, fastest, self-serve avatar product out there. Are you an investor in these guys?
+
+Uh, I am an investor in HeyGen. Uh, and I really liked the team there and they just built like the best, easiest to use avatar product. Um, that was kind of their, their claim to fame.
+
+They have, uh, basically pre-made avatars. So these are like, you know, trained on or effectively created from like real human actors that they've licensed from. So, um, you know, you can use one of their pre-made avatars or you can create your own, you know, I think of it, this as like a really fundamental capability.
+
+Like you think about all the things you can do with avatars, um, you know, sending a sales video, uh, where you're pitching each target customer, you know, in a, in a personal way. Right. So, uh, a CEO sending a thank you note via video to every single attendee of our last event, that kind of thing in this case, like I think applying the avatar concept to live shopping, where you can now have this one-on-one interaction with, and it could be a celebrity.
+
+Like maybe you get some, um, uh, some like real influencers to sign onto this. And, you know, it's like, uh, Kim Kardashian type who's actually like represented in avatar form and each person shopping gets to have a one-on-one interaction with her about skims and, you know, the skims products that they want to try out. Are you guys using any of this at Airtable?
+
+We actually do have an internal setup where it's all powered by Airtable. We use our own Airtable web agents to go in and research different, uh, target customers. We've learned a lot about them and then we can actually generate customized email pitches for each of them.
+
+So right now it's just email, but we are experimenting with, with more of the video stuff. We actually have a setup internally where we can now generate an avatar video powered by HeyGen automatically from content in a row of Airtable. So it could be a list of different event attendees and that use case I just described, like I may actually do it for, um, uh, thank you notes for, for different events that I host in the future.
+
+Like if I host a, uh, a dinner with, with, um, our, uh, you know, some of our customers, I could actually now go and automate creating a video that looks like it's me. And I would probably be upfront about it and say like, Hey, like here's an avatar version of how we like saying thank you for coming. And like the novelty of it itself actually would tickle people's fancy, but, um, but like to send a personalized thank you video from me to every attendee for all of our events.
+
+Can you do that now? Like if I, if I wanted to implement, I mean, that sounds awesome. If I want to go and do that right now, how would I set that up?
+
+So you, you can do it today. It just requires a little bit of scripting and Airtable and that itself, you can actually generate with AI. So the idea is like you would go and create like a list of different people you want to send the video to, or even a list of topics you want to create a video for.
+
+And then we already have an Airtable, a scripting layer where you can define any arbitrary code it's hosted in our infrastructure. And in this case, you would just define the code to go and talk to the HeyGen API. A lot of these AI products have APIs.
+
+And so you can go and create your own kind of orchestration layer and Airtable to go and automatically for each row, ask HeyGen to generate a video program programmatically for you using this avatar. And then you get a link to a HeyGen video that you could then go and directly send to a customer or download it and then attach it, et cetera. What's this AI personalized news thing?
+
+When I think about like my news reading habits, uh, you know, it's like, I do sometimes appreciate reading just like the front page of like the journal or the financial times. Right. And there's something very valuable about like that curated experience.
+
+Like everybody sees the same front page. So ironically, like I actually do get the, uh, the print edition of, um, of newspapers because I like that like physical and consistent experience. Like I know I'm seeing the exact same paper as like millions of other people out there, but for anything else, like if I'm reading something online or if I see a link, like I end up usually just taking all of the contents and copy pasting it into Chachapiti or Claude and then asking it to summarize.
+
+Right. And say like, Hey, like pull out like the key information, et cetera. And I even have some safe props to do this.
+
+But what I really want is not just to do that manual summarize for each article. I want it to go and like automatically look for all of the articles that are interesting to me. Like there are certain topics that I care about and I just want like an AI news aggregator that goes out and knows what I care about.
+
+And more importantly, like it doesn't just summarize the news for me until like, here's the summarized articles. It actually becomes this interactive agent that I can talk to. So like, you know, your friend who is the super news expert, they're always reading all the articles.
+
+Like, uh, Nick, our mutual friend, as an example, like he knows everything that's happening in the world. Like you go to Nick and you get 30 minutes with him and you learn about any topic you want. Like, I want that.
+
+I want Nick in like AI form, uh, where I could just ask it, like, tell me more about this and it can go and give you more info. Dude. My, um, so my company, I, my company that used to own this podcast before we sold it was the hustle.
+
+It was a, it was a daily newsletter. This was our pitch to our customer. We were like, we are your smart.
+
+I think our tagline was where you're smart. No bullshit friend who will tell you what you need to know every morning. And I had a team.
+
+It was crazy. We had a team of three people who would reach almost 3 million people a day writing this newsletter. And we actually were tinkering with this idea and it was so manual where we were like, what if a user tells us what they care about?
+
+And we write tons of different bits of news and we plug it into someone's email based off of what their interests are. And then we'll even go. Yeah.
+
+So you can mix and match. Yeah. And I was like, we'll even go and get like an expert, like Howie to like comment on some of the stuff.
+
+And we'll put some of the comments in the thing, in the newsletter. And it was like, I was like, Oh my God, this is so manual. And what you're describing is like, whenever I'm thinking about newsletters, I'm like, this is just changes everything.
+
+And I actually think, you know, yeah, it could still be a great business. You, I would just use AI for all of it. Totally.
+
+And maybe like you could take it to the next level, which is like, it actually becomes a platform where like Substack, you allow creators to actually create their own branded newsletters and they push the distribution promo of each one. But because you're powering this like kind of white label AI, you know, powered platform, like they can very easily spin up their own custom newsletter. You know, a different direction is like you create these like different AI personalities.
+
+I think a commonly underappreciated thing is like AI doesn't have to be robotic, right? It doesn't have to just be like utilitarian, summarize this article in like a clean, you know, AP, you know, style, like you could actually have it injected with tons of personality and say like, be like a TMZ gossip reporter who just like sensationalizes the crap out of this like new celebrity gossip, right? And I think there's just so many interesting ways to play around with that.
+
+And like news by nature is like a very high engagement use case, right? It's like literally something you read every day or maybe even every hour. And so like the opportunity to like change how people interact with like finding out about this stuff.
+
+Like I think that's a, there's going to be a very large business to be created there, right? Like Buzzfeed, you know, hustle, et cetera. Like, you know, all of these were like high growth businesses in that era of news.
+
+And I think now there's going to be a different high growth era of AI news. Hey, I got a quick break because I want to tell you something cool. So our sponsor for this episode is HubSpot.
+
+But instead of the ad telling you about HubSpot, they just want to do something that's useful for you. So they did some research and they found that a bunch of people in our community have side hustles. They start a business on the side, they get it going, and then it becomes their main hustle over time.
+
+And so instead of just telling you about the features of HubSpot, they wanted to give you something that will be useful for your side hustle. And so they've put together a database of AI prompts. So things that you could put into chat GPT or your favorite AI tool that will help you with your side hustle.
+
+So check it out. It's going to save you a bunch of time. I think it's a prompt database that you should be using to make your side hustle more successful.
+
+And you could use this as your little personal little cheat sheet, your tool set to be a better operator with your side hustle. So you could either scan this QR code that's on the screen or get the link in the description to get the AI prompt database. All right, back to the show.
+
+Are you a personal finance nerd? Kind of. I was a very early Mint user.
+
+And I remember really wanting to let go and more have visibility over my different expenditures and aggregating it. I will say the tedious act of going and doing a lot of planning is not my forte. But I have basically a multifamily office type setup that now helps with a lot of that stuff.
+
+You listed on here real-time AI avatar products for different vertical applications like personal finance advisors. Tell me about that. So the idea here actually is like, you know, if you're a very high net worth client, you can get a very strategic wealth advisor who literally sits down with you, looks at your balance sheet, looks at all your assets, and talks about your goals, and actually comes up almost with like a plan as good as a, you know, a CFO's plan for a real corporation, but for you as an individual, right?
+
+Like the business of you, Sam, as an individual. And you can plan it out. You can think about the cashflow needs you have, what kind of assets you want to invest into for near term versus long-term yield.
+
+And I mean, the reality is like most people don't get that level of attention, right? And don't get that level of like, you know, thoughtful design to a financial plan. And, you know, furthermore, like most people don't even have access to a live financial advisor to just call up and talk to, right?
+
+Like there's something very comforting, I think, about like getting to like literally talk to somebody. And it's maybe why a lot of banks still have like, you know, retail locations, right? So many of them, even though like, you know, for most transactions, you don't really need it.
+
+Like people want to go in and talk to a person. So I think the idea here is like using the really smart reasoning capabilities of the newest models. Like I don't think you could have done this pre-03, where you actually can come up with like a very thought out, you know, kind of personal financial plan.
+
+And, you know, recommend like, here's how much you should invest into equities versus bonds. And like, here's how much you should spend. But do it like with a, you know, an avatar on top of it, so that it's a very human like experience.
+
+And you get to talk to them and just like, call them up anytime you're feeling stressed about your financial situation. Do you use any consumer facing personal finance apps at all? Now?
+
+I don't because I have this this team that that I can actually go and talk to. But like, I think, you know, to me, it's like if everybody could have that experience, I mean, It's awesome. Everybody would be able to plan better.
+
+Have you seen? Let me show you one. It's called Kubera.
+
+K-U-B-E-R-A.com. I have no association with these guys. But I've talked about them so much that I'm actually like on their homepage because they like, quote, they like, quote, they quoted me.
+
+Oh, yeah, there you are. And this doesn't matter if you're worth $50,000 or $100 million. A lot of people use software to aggregate their net worth.
+
+Because even if you only have 50 grand, sometimes you'll own a couple of cars, you'll own maybe two bank accounts, you'll maybe have some amount of money in Robinhood, whatever. And then if you're really wealthy, you have many, many dozens of accounts, right? You have like, you have some money with this person, some money with that person, you have probably...
+
+Some like private investments. And this just does a really good job of aggregating it, of all of it, which a lot of companies claim they do that. The issue is that...
+
+Yeah, Adapar kind of does that for like the high end. Yeah, dude. Adapar seems awesome.
+
+But I think you have to have a lit... Like I think... So like Morgan Stanley or JP Morgan, I forget who I talked to.
+
+You have to have at least $50 million in liquid net worth with one of those banks in order to get access to Adapar or something like insane. Like you have to have... You have to be a little bit more even than an ultra high net worth client.
+
+So like Adapar is crazy, but I've never even seen it. But with Kubera, they do such a good job of aggregating all the stuff because the connections don't break. And so anyone who's ever used Mint or who have used Wealthfront or like whatever, the connections to all of your accounts breaks all the time.
+
+And you got to like... Oh yeah. Re-enter the password.
+
+Just like log in. Oh my God. It's the hugest pain.
+
+And so these guys have done a good job with that. But what they do is they have this version where you can export the information. Is it called...
+
+What's it called? Is it called JSON? Yeah, JSON.
+
+So you can export it in JSON format, which is what ChatGPT uses. Or you could just connect your Kubera with your ChatGPT. It started as an export.
+
+Now it automatically does it. And you can ask it questions. And so what I've done is I've used Kubera.
+
+So I use Kubera to upload all my accounts. And when you do this, they don't actually have access to transact, obviously. They can just view your accounts.
+
+And then I use ChatGPT where I will create a project that has like a Warren Buffett book. Or sometimes I'll have like a more aggressive financial advisor, like a book of someone who has written something on financial advising. Because like you have different gurus sometimes.
+
+You know what I mean? Like different... Yeah.
+
+And I can use this to ask it questions and have my own personal finance advisor. Do you know what I mean? Yeah.
+
+Yeah. That's something like, give me advice using the fundamental investor theory. Yeah.
+
+And so you'll be like, look, my net worth is blank today. If I want to be at this mark in 10 years, show me what I should do. Or if I want to buy a house in eight years, what would you suggest is a good budget to have based off of what you know about me now?
+
+You know what I'm saying? Yeah. Yeah.
+
+I'm sure it works great for that. Dude, it's awesome. It's so awesome.
+
+Now having a financial advisor is still great sometimes because you still like financial advisors, oftentimes the value is not in the advice that they give. It's the fact that there's a human being that you can trust. But anyway, this is how I've been using AI.
+
+Yeah. I mean, imagine that like that experience that you're getting, but like now, you know, to your point about like feeling like you can trust a human more. I mean, how much of that is based on like the fact that it actually is a human versus how much of it is like literally just like the psychology of like talking to a face?
+
+No, I think like I could have, I think you and I think that because of our age, I, my, if I had, here's what I had to bet. If I, I'm making this up, I bet that the 18 year old today in five years, they're going to go to the doctor. And when they go to the doctor, they're going to tell their doctor, this is the illness that I have.
+
+And I think it's this, because what you and I would have said five years ago, or your parents would have said five is Web, WebMD says that it appears as though I have this illness. Right? Yeah.
+
+No. So the young guys nowadays, they just say, chat GPT said this. And the doctor is going to say, well, I agree with you.
+
+And according to my belief, chat GPT says blank and chat GPT, I think is going to be the stamp of approval or AI. Like, I think they're going to trust AI more than a human being. Does that make sense?
+
+Oh, for sure. I mean, I think like today it's already better to, I mean, everybody should be taking all of their, you know, personal, like, uh, health diagnostics, you get a blood test or whatever. And like running that through chat GPT, like upload it, ask go three, like, Hey, like, here's my, my, uh, other symptoms.
+
+Here's how I feel like, tell me what I might have. Right. Or tell me what could be wrong.
+
+Like, um, I've, I've seen so many stories from like both personal friends, as well as like on Reddit, Twitter, et cetera, of like people who caught diagnoses that their doctor just missed, not necessarily because they're bad doctors. Although a lot of doctors probably are bad doctors, right? Like, dude, they spent 10 minutes with you.
+
+Like, what are they going to solve? Exactly. Yeah.
+
+So like I, I had a, I got an injury lifting weights, uh, like two months ago or something like that. And I just used chat GPT to do PT and they just told me what to do. And I just followed the routine for three weeks and like my back improved.
+
+Totally. I mean, it's literally trained on the best knowledge out there. Like you're getting the, the like wisdom of like Peter Atiyah meets Huberman meets like, you know, all of these like, you know, health prognosticators to, to, uh, to inform like, you know, chat GPT is a response to you.
+
+I've become the most extreme version of optimist for new disruptive entrepreneurs and startups. Meaning, you know, I think, um, I think the world moves through these different, you know, kind of phases, right. And in, in a stable phase where the technology has been pretty stable, you know, that was basically true of the web, um, and web tech for, you know, at least like 2018, maybe until like Gen AI hit.
+
+So for a few years, like it was very stable, the technology became very mature. And then it really became about like, how can you go and either leverage your existing distribution if you're an incumbent? So it's really hard to compete against big existing players like Salesforce or Microsoft, et cetera, you know, in, in that era to now, like, it's like the, all of the assumptions are off and every company is kind of up for grabs.
+
+Right. And what I mean by that is like, you can look all the way at non-tech companies. And let's say if you're a property management firm, like, you know, half of your cost structure is, is, uh, automatable, right.
+
+If not more. And in that world, like the, the margins on the business are so low. Like, um, I actually talked to a, uh, the founder of a, uh, of a company based in Germany, that's doing exactly this.
+
+They're, they're buying up different property management firms and basically using their own AI tech to automate a large part of, of the job. And actually they don't fire people. They keep everybody employed, but they take on more business as a result.
+
+And so they've quickly become, um, one of the largest property management companies in Germany, if not in Europe, um, by just going and aggregating these traditional businesses and creating that AI leverage, taking what probably was like a low percents margin business to become a, you know, tens of percents margin business. I mean, you know, the, from a PE standpoint, that leverage is huge. So I think that's a playbook that we're seeing a lot of like excited around, because I think every traditional, uh, business, especially one that has a large, you know, uh, part of their cost structure that could be automated is kind of up for grabs.
+
+Like think about obviously call centers, BPOs, um, but really any labor intensive, um, business process, uh, outsourcing, uh, companies. So that's basically, you know, there's a lot of these, um, offshore companies that have like literally thousands of employees that you can go and outsource very, um, rote tasks to, right? So like analysts work, like go comb through these documents and look for, um, you know, kind of, uh, facts or, or, uh, you know, do research for me.
+
+Um, support centers themselves are a form of BPL, right? So you have these like big call centers that are basically, uh, client agnostic. So it's not just one company's call center.
+
+They can take on business from any client. So we could go and say like, Hey, like I want to spin up a call center for air table. And traditionally that just meant like you have a whole bunch of humans sitting in a room somewhere and you know, you're, you're basically hiring them on demand.
+
+And now of course, a huge amount of that can be automated. Dude, I get so many of those calls a day. And a lot of times they say that they are in AI, they're horrible.
+
+They, they, they still suck. Do you get a lot of those calls? I do.
+
+Although I mean, I don't pick them up. Dude, I pick them up. I always pick them up.
+
+Like, I like, I like want to get to know these people. Like, you know, sometimes it's like the, I could, I could hear like where they are. Like, here's what I get all the time.
+
+I always get a text message that says, this is Coinbase. Uh, someone in Serbia logged into your account. And like, I know it's a scam, but I called them and I'm like, Oh my God, let's like figure out how this scam works a little bit.
+
+Like I do it all the time. So I'll spend like, I mean, you're, first of all, you're totally feeding the bear because if they, if you can give them a response, they know you're like, you know, you're a more likely target. Dude, I'm so into it.
+
+They're like, what's your name? I'm like, Oh, it's a Kevin Smith. And they're like, Oh, I see your account right now.
+
+I'll be like, uh, you do what? Like, tell me about it. Tell me how much do I have?
+
+Yeah, this is awesome. Uh, and so like, they're like, they go through these whole scripts and I'm like, this is, this is awesome. Uh, that, that you found my account.
+
+Uh, do you, you gotta figure out how to scam the scammer. Like by the end of it, you get them to give you their, their, uh, their info. Have you seen the YouTube channels that do that?
+
+They're so funny. No, I haven't. Dude, there's guys on, there's guys on YouTube that have 10 million subscribers and they're really like sharp guys.
+
+And they will like get, they'll pretend like they're old ladies. Like they use a voice changer and they get the scammer to install software where they, the scammer's, uh, web camera will come on and they can control like the, it's like the greatest, this is the greatest. That is insane.
+
+It's the greatest amazing. But these, these AI call companies, they're, they're still horrible. Are you bullish on them?
+
+Well, you know, I think the, um, the models have to get better at real time synchronous, uh, interactions for, for, uh, you know, for, especially for voice calls to fully get taken over by AI. I think for chat, like you're chatting with somebody, like it's already better in, in many cases. Right.
+
+Cause like, you know, those chat experiences are horrible with humans because like the human is probably doing like 20 different parallel chats. They don't really know or care about you. Whereas an AI can be fully attentive, but I agree.
+
+I think the voice, uh, is just not quite there yet. Um, you've probably seen that Sesame, um, voice demo where it's like, uh, uh, you know, one of the better real time voice interactions. What's it called?
+
+I'm gonna interrupt and, uh, Sesame.ai, you can literally call it. Uh, Oh yes, I did see this. I absolutely.
+
+Do you think this is a good product? I, you know, it's a research team and this is a demo product, but I think it shows where the models are going. And I think, you know, it could be from this team and this company, but also, I mean, you know, that opening eye, um, and 11 labs, et cetera, they're all working on making that interactivity better.
+
+Open AI revealed the, the, the last voice mode release where you could actually interrupt the AI halfway through a conversation. Like that was kind of a big deal. It's still not there yet.
+
+Cause it doesn't feel right. I mean, if you just talk to it, like it doesn't feel like a human, but I think that will be, um, a frontier that we just, we pass or across in the next year or two. So one of the last things you had on here was, uh, uh, AI productivity tools.
+
+Um, you said cursor for email. Uh, what's that look like? So I just generally think this, this, um, this form factor of it's not about using AI to completely replace the current workflow, right?
+
+So the cool thing about cursor is it's not just like a chat interface alone that you're using to generate code or to say like, Hey, you don't need to code. Like it's actually an IDE, like they forked VS code, a popular IDE. And then they added this like agentic coding experience on top.
+
+But as a developer, you can still be in the code. And in fact, I think that's the value of cursor. So I just think applying that, um, paradigm to a lot of other productivity experiences, one of them being email.
+
+It's like, you think about email, you go in and like, usually you just come in and like, you know, click on each email, read each one, et cetera. You can currently go to a separate product like Gemini or now Claude and OpenAI both have, um, integrations into email and you can ask questions about your email. But I think the ideal experience is actually a blended one where you can actually do agentic workflow and maybe AI is automatically doing some pre-reading of your emails, telling you what's important, what's not maybe even doing some like research across your other content sources, like looking up, you know, info in your other accounts and your calendar, doing a web search to help you decide like, Hey, like I got this pitch from an entrepreneur who wants to be on my podcast.
+
+Like, is it worth my time? Right. And it can already have a recommendation for you.
+
+So I just think like, you know, one of the places that you spend a lot of time today, I mean, news, I think email, if you're a developer, you're in your IDE, like, I think that's where I would attack is like, start with where people are actually spending a lot of time. And on first principles, like a lot of that time could be automated or augmented with AI. So I'm going to ask you how you'd build this, because from my, I had an email company, I know a little bit about email, but not, I don't know the tech.
+
+I don't know the technical capabilities of everything, but like email sucks to build on top of because Gmail owns everything. And yeah, superhuman did something interesting where for the listeners, superhuman was a brand new email client and new download superhuman. And you use that instead of Gmail, they recently sold last week for I think the rumor was 800 million or something like that.
+
+Yeah, I saw that too. Great to grammarly. And it was a very bold mission.
+
+I think they fell short if they sold or that's what I'm guessing if I had to guess, but it was pretty magnificent of a of an effort to like get after it. And my question to you is, if you were going to build something like this, you pretty much would have to start from scratch, I would think of a new email client, not a Gmail plugin. Yeah.
+
+So interestingly, I also worked in email before Airtable. So my startup before then was a YC company, Etax. And it was actually, I think we were the first startup to build a Gmail plugin.
+
+And it wasn't like an official plugin at the time, there was no plugin framework, like, we literally figured out like kind of on our own how to hack what's called the DOM, which is basically the HTML representation from Gmail of the email client, and like literally just injected a UI on top of that with a Chrome extension. And so, you know, we kind of pioneered this idea of like, oh, wow, you could be an email. And then we added our own sidebar to every email that you had to show information about who you're talking about.
+
+But could they have banned you? They could have certainly a sent us a cease and desist and said, like, what you're doing is against our TOS as a site. And then B, they could do some things to make it annoying for us.
+
+And like, it's almost like they could change that, they could just keep moving the target. So like, they could change the layout of the page, just make your life, life, without making it look different. Yeah, to the user in ways that would break our integration.
+
+And that did happen. I don't think it was intentional. I think they would just update the page, re-render it.
+
+And then it would change the layout. And then like, for a day, our extension would like be broken, and we'd have to furiously try to like code a fix to it. And that was like, kind of the really, really early days.
+
+And ironically, Superhuman, the founder, Rahul was actually the founder of a company that kind of competed with us back in that time, like 2010. Reportive. Yeah, yeah.
+
+For anyone who's above probably 33 that was involved in technology, Reportive was a game-changing tool. That was so cool that they created that. Yeah, yeah.
+
+So, you know, email has been like, I mean, it's interesting because from the time that Reportive and eTax existed to now, like, email really hasn't changed very much at all. Like, you look at Gmail, like, it's kind of the same product. And, you know, the a status quo argument is like, well, it's like good enough, don't fix it.
+
+But I think that like, you know, to me, Superhuman was like an interesting innovation on email. Like, they did build their own client. I don't actually think it's that hard.
+
+Like, certain things seem really hard to do in theory. But then in practice, like, it's actually not that hard. Like, Airtable, I mean, obviously, it's hard to build Airtable.
+
+But like, you know, we ended up architecting our own proprietary database engine to power it instead of using something off the shelf, like my sequel or Postgres to power the real time collaboration parts at our table. And it turned out that like, it was the right decision. And ultimately, it turned out to be cleaner and better for us to go that route than to try to repurpose something off the shelf.
+
+But it's harder, you know, you have to raise, you have to raise 10s or 100, or you did. And someone else would also have to raise a fuckload of money to do that. But also, getting revenue for that, I think would be a slog.
+
+I don't you guys did it fast, but like superhuman did not. Yeah. And I think I mean, superhuman was an interesting product for a number of reasons.
+
+I mean, one, I think it was a really good product. But it was really hard to articulate, like, what is the killer feature or set of features that make it 10x better than email without, you know, or normal email, right. And I think it was, you know, it was like faster, they had some nice features, like tracking emails, etc.
+
+But it was hard to say this is like, clearly a different paradigm, like this is 10x better, right. And I think that with AI, like, you could now build a product that actually is radically different, radically better. And so in fact, like, a former Airtable employee of mine, JB, is now working on a company that's doing exactly this, I did a little funding, what's it called?
+
+Round into it. So chief.so. Oh, is it loading for you?
+
+Okay, there we go. Yeah, you have to give them you have to write a bigger check, though. So they can get a like a dot AI.
+
+Exactly. Yeah. I think it's a really interesting space.
+
+I think I actually think that you can build this product without a massive team and a massive funding round. And maybe part of that is because, you know, like in a very meta way, like if you're very AI leveraged in how you build products, like you can get so much more done as an AI leverage team than you could have done in the past, like her cursor itself, it's just hard to build a business when you charge $20 a month, meaning it's like it's that's not enough, or that's, it precludes too many people. The first one.
+
+Yeah. And so actually, one of the premises here is that there is a top 1% audience and not necessarily meaning like 1%, like richest people, but like there's a 1% power user audience of email for whom email is like their life, right? Probably for you, definitely for me, every VC, maybe even like realtors, lawyers, et cetera, like email is everything to them.
+
+Like, and, and like, if you can make them 10% more efficient at email, like they'll pay not 20, but 200 a month, right? Maybe even like 2000 a month. Like if you gave me an awesome email product that even saved me, like call it five hours a week in, in, uh, in time.
+
+And like, not only that, but allowed me to not miss key opportunities. Like sometimes like, I mean, I get like literally hundreds of real emails every day that Gmail considers important. Frankly, with that many coming in, like I miss some and sometimes they're really important.
+
+I have a, I have a full-time assistant and it feels like a large chunk of her job is just categorizing my emails. Yeah, for sure. Um, and you know, some people have like, uh, you know, full-time EA who like literally doesn't just categorize the emails, but like goes through and does research on each one and tells you like, Hey, I did some research.
+
+This is how you should respond. So I think, um, I think it's a huge, huge space. And, um, I mean, one of my lessons learned from, uh, from cursor actually.
+
+And, uh, I remember, um, did you invest in them? You know, first looking at cursor, what's that invested in cursor? I did.
+
+Um, and, uh, actually I was introduced to them by, uh, Peter Fenton from benchmark who's our investor at air table. And, uh, you know, just what, what are the most like phenomenal, uh, pickers of talent and opportunity, uh, spaces, uh, that I've ever met and just, you know, brilliant in, in, uh, every way as an investor. But I remember having this discussion with him of like, what is the TAM for something like cursor?
+
+And you have to factor in like, of course, like Microsoft exists. They actually literally own VS code, even though it's open source and you could fork it. Um, they already have GitHub.
+
+They have this massive developer audience. Like how big can an upstart get? And this was when like cursor was probably like low millions in revenue.
+
+And, you know, my argument actually was that like the, the developer audience for, for AI augmented coding is so large. I mean, today you might have like, call it 30 million developers. That's the number that, um, Stripe always quotes.
+
+Maybe that actually will expand to like 50 to a hundred million developers. It gets easier to develop. And then on top of that, like it would be perfectly rational for every single one of those people to pay at least a thousand dollars a year for a AI, um, like an, a coding agent that makes them way more productive, like not like 10%, but like two X, right.
+
+And maybe even rational for them to pay $10,000. Okay. Now you're talking about like a 30 to $300 billion TAM, like carving off even a small few percent niche of that, especially when like coding itself is so fragmented, you've got like different types of coding and different languages, front end, back end, et cetera.
+
+Like all you have to do is win like a sizable 5% niche and you've built like a multi-billion revenue business. Is that the framework for how you think of what's interesting for starting companies? I think so.
+
+I mean, I think there's like, you can either go really broad, um, like in this, you know, cursor example or cursor for X. So pick a market that's just so big. Like there's so many potential target users, like tens of millions at least.
+
+And for whom the value is significant enough that they will pay for it. It's not a freemium or it's not purely like a free ad driven product experience. It's not a consumer product.
+
+Pick something that's like broad enough and deep enough where there's just a very large pie to capture value out of. And then even if you end up only capturing a niche of that pie, like you have a really large business on your hands. I think the alternate path is go really deep and narrow.
+
+So this is more like the property management example, where it's like, you're probably never going to have like a hundred million users who need property management software. But like, if you go into that vertical and you attack it, you might have 5,000. Yeah.
+
+Yeah. And if you go in and attack it very deeply and for each one, you can extract even more revenue out of them because in this, I mean, the most leverage way you can extract revenue out of, out of a vast space is like, not just to sell white label software that you charge a property management firm X dollars per month. You actually take the entire cake by buying them out outright, running the PE playbook and getting leverage on there.
+
+And what's Airtable? The first one? Airtable is definitely the first one.
+
+So, you know, we're in a space where like, especially now that we've relaunched the product as, as basically an agentic first product. So you can literally come in and talk to our agent Omni to ask it to build any app, right? So like, it's very much akin to the five coding products out there.
+
+But the difference is like ours is backed by the reliable no code components that we've spent the past 10 years building and making scalable and real-time collaborative, et cetera. And so if you want to build any business app, I mean, for you guys, for instance, for your business, like if you want a CRM, right? If you want a way to track, you know, people who are coming on your show, if you want like a content pipeline, any of those things, like we want to be the best way to spin up a reliable business app for internal operations.
+
+Like we're not trying to be like an external consumer facing prototype tool. Like if you want that, go to like, you know, the replets and the V zeros, et cetera, the world to spin up like a consumer facing hobby app. But like for a business app, like, you know, the, the need for that definitely is at least tens of millions of people out there who want to build apps for their own business.
+
+And every single business should be creating apps this way and probably replacing is, you know, uh, over the next few years, like old legacy software with this. What's a last question. What's this, uh, all you wrote on the sheet, you just wrote exotics question mark, exotic ideas, um, for, um, uh, for AI, like, so that, you know, it's more off the beaten path stuff.
+
+Um, I think, I think there's some like really interesting new niches that will be created. Like an example would be like, what's the next consumer social app that's AI native. Right.
+
+And I don't think that just means like, you know, it looks like Instagram, it looks like TikTok and it's got some like AI features to help you like write posts and so on. Like, I think it might mean like, I mean, there are a few startups that are trying to do this where, you know, it's like you actually have like social networks or chat groups where half the participants are actually AI avatars. Right.
+
+And like, what does that look like? Um, and, and, uh, I think what's interesting about this space is that like, unlike the PE AI approach where it's like, take a known problem and do something that's very like solvable, right? Like automate support costs, automate property management costs with AI.
+
+It's like, you can very clearly visualize what that looks like. I think what's really interesting is that like, we don't know what the consumer, uh, behaviors are going to look like in an AI native era. Like, you know, we saw the transition from like linear TV to internet, um, to mobile, et cetera.
+
+And at each point, I think there were, there were some surprises about like the, the, the way that the content and the engagement pattern has actually changed. Right. It's not like we just took people watching linear TV.
+
+Right. And then gave them YouTube. It's like, do the same thing.
+
+We somehow went from TV to watching video games on my phone. Exactly. Yeah.
+
+I mean, like nobody would have guessed like Twitch, right? Um, like how's that like the big thing. And so I just think like there there's, um, when you have people who are not just technologists, like the, the first wave of post chat to P innovation was very much driven by like technologists who were very close to the, uh, the models and the model research and understood what the models were capable of.
+
+I think we're going to see more and more people who are actually more artists than technologists and think about like the artistry of like, what does consumer psychology and behavior look like when you have this, this new paintbrush, which is like AI powered experiences. In some cases, I think you can create like hyper-engaging consumer engagement, uh, consumer experiences that like actually could be even more addictive than, than, uh, you know, social media is today. Right.
+
+Imagine like you have, you know, people have like the perfect girlfriend or boyfriend, uh, avatar, you know, people are already kind of doing this right with even chat to PT or Grok, et cetera, Grok unhinged. I don't know if you played with that, but like, it's, it's pretty interesting. Like it's Grok, uh, the, the Elon, uh, AI product, but unhinged mode is where, and they also have a sexy mode, which you can guess what that is, is basically where they've taken off all of the, um, uh, the, uh, PG and safety features that chat, PT and Claude have.
+
+Right. So like you could have a very explicit conversation with, with this AI and it will happily engage, which just kind of shows you like most of the AI experiences we're getting, especially from the big model companies have been very like cleaned up. Dude.
+
+I asked my, my chat, PT controversial questions all the time. Like, yeah, like it, it's like, it refuses, it refuses. And sometimes I ask it things where I'm like asking on a, like, like, for example, I love history and I'll like, if I'm reading about world war two, I'll ask it about very sensitive topics, but I'll just like explain to me this topic, but I'll be like, uh, but anyway, it, it won't even touch some of these things.
+
+Yeah, exactly. And, and, you know, that's the whole debate is like, you know, it's a little bit like free speech censorship, but like applied to AI, right. It's like, you know, at, at like, how much can you actually, you know, sensor AI for safety and, and for, um, like moral clauses, uh, how much of that is, is even like globally applicable versus like what's moral for one, one, uh, one culture, maybe immoral for another, et cetera.
+
+And, and I think it's interesting to see grok be, uh, not like completely unfiltered, but like, it is a lot more pushing of the boundaries. Right. So I had never heard of this.
+
+I don't think there's, yeah, yeah, yeah, no. I mean, you should try it today. Like, like, like, like the unhinged, like I was trying to learn about the Israel Palestine conflict.
+
+Like, I'm just trying to understand the background and like chat GPT won't even like touch some of the topics. And I'm like, oh, I'm just trying to learn controversial. Yeah.
+
+Like, exactly. Yeah. Like, um, and, and so I think that's, that's gonna be really interesting when, when you start to see like people really push the boundaries.
+
+I mean, you know, they say, um, uh, a lot of great, uh, tech is like always, always, uh, pioneered for like the, uh, the salacious, the black market, you know, I mean, Silk Road type stuff. Right. Like, and, and so like, what is, what does that look like in the AI era?
+
+Well, you're the man. I appreciate your, your insight. I like, uh, I enjoyed this.
+
+This was awesome. It's fun because, uh, you have a really interesting perspective. You're a young guy, but you've been in the game for like so long and you have such breadth because of, uh, the size of your company.
+
+And so it's really cool to just see your thinking and, uh, how you, uh, how you, uh, are gonna like somewhat predict the future and, and, and all that stuff. But, uh, dude, you're bad-ass. I appreciate you doing this.
+
+Oh, thank you. Well, really enjoyed the combo and, uh, happy to chat anytime, bud. All right.
+
+That's it. That's the pod. where you, um, on LinkedIn has been watching, um, you know, we might be winning Substanceела yet.
+
+We'll follow some of that stuff, too. We'll be monitoring in our videos, numbers, and videos on video, and you can watch this episode before we dive through to our big videos.

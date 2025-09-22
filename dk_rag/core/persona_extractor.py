@@ -13,6 +13,7 @@ from langchain.prompts import PromptTemplate
 from langchain.output_parsers import PydanticOutputParser, OutputFixingParser
 from langchain_openai import ChatOpenAI
 from langchain_anthropic import ChatAnthropic
+from tqdm import tqdm
 
 from ..data.models.persona_constitution import (
     PersonaConstitution,
@@ -238,25 +239,48 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
             PersonaConstitution object
         """
         self.extraction_start_time = time.time()
-        self.logger.info(f"Starting persona extraction from {len(documents)} documents")
         
-        # Step 1: Statistical analysis
-        self.logger.info("Performing statistical analysis...")
-        statistical_report = self.statistical_analyzer.analyze_content(documents)
+        # Estimate total processing time based on content size
+        total_words = sum(len(doc.get('content', '').split()) for doc in documents)
+        estimated_time = self._estimate_processing_time(total_words, len(documents))
         
-        # Step 2: Prepare content for LLM analysis
-        combined_content = self._prepare_content(documents)
-        statistical_insights = self._format_statistical_insights(statistical_report)
+        self.logger.info(f"Starting persona extraction from {len(documents)} documents ({total_words:,} words)")
+        self.logger.info(f"Estimated processing time: {estimated_time:.1f} minutes")
         
-        # Step 3: Extract different persona components
-        self.logger.info("Extracting linguistic style...")
-        linguistic_style = await self._extract_linguistic_style(combined_content, statistical_insights)
+        # Define extraction steps for progress tracking
+        extraction_steps = [
+            ("Statistical analysis", lambda: self.statistical_analyzer.analyze_content(documents)),
+            ("Preparing content", lambda: (self._prepare_content(documents), self._format_statistical_insights(None))),
+            ("Linguistic style", lambda: None),  # Placeholder, will be updated
+            ("Mental models", lambda: None),     # Placeholder, will be updated  
+            ("Core beliefs", lambda: None)      # Placeholder, will be updated
+        ]
         
-        self.logger.info("Extracting mental models...")
-        mental_models = await self._extract_mental_models(combined_content, statistical_insights)
-        
-        self.logger.info("Extracting core beliefs...")
-        core_beliefs = await self._extract_core_beliefs(combined_content, statistical_insights)
+        # Initialize progress bar
+        with tqdm(total=len(extraction_steps), desc="Persona Extraction", unit="step") as pbar:
+            # Step 1: Statistical analysis
+            pbar.set_description("Persona Extraction: Statistical analysis")
+            statistical_report = self.statistical_analyzer.analyze_content(documents)
+            pbar.update(1)
+            
+            # Step 2: Prepare content for LLM analysis
+            pbar.set_description("Persona Extraction: Preparing content")
+            combined_content = self._prepare_content(documents)
+            statistical_insights = self._format_statistical_insights(statistical_report)
+            pbar.update(1)
+            
+            # Step 3: Extract different persona components
+            pbar.set_description("Persona Extraction: Linguistic style")
+            linguistic_style = await self._extract_linguistic_style(combined_content, statistical_insights)
+            pbar.update(1)
+            
+            pbar.set_description("Persona Extraction: Mental models")
+            mental_models = await self._extract_mental_models(combined_content, statistical_insights)
+            pbar.update(1)
+            
+            pbar.set_description("Persona Extraction: Core beliefs")
+            core_beliefs = await self._extract_core_beliefs(combined_content, statistical_insights)
+            pbar.update(1)
         
         # Step 4: Create extraction metadata
         extraction_metadata = self._create_extraction_metadata(documents)
@@ -553,3 +577,34 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
     def extract_persona_sync(self, documents: List[Dict[str, Any]]) -> PersonaConstitution:
         """Synchronous wrapper for extract_persona"""
         return asyncio.run(self.extract_persona(documents))
+    
+    def _estimate_processing_time(self, total_words: int, num_documents: int) -> float:
+        """
+        Estimate total processing time based on content metrics
+        
+        Args:
+            total_words: Total word count across all documents
+            num_documents: Number of documents
+            
+        Returns:
+            Estimated time in minutes
+        """
+        # Base processing rates (conservative estimates)
+        statistical_analysis_rate = 10000  # words per minute
+        llm_processing_rate = 500  # words per minute for LLM analysis
+        
+        # Statistical analysis time
+        stats_time = total_words / statistical_analysis_rate
+        
+        # LLM processing time (3 extraction steps)
+        llm_time = (total_words / llm_processing_rate) * 3
+        
+        # Base overhead for model loading, etc.
+        overhead_time = 2.0  # minutes
+        
+        # Document processing overhead
+        doc_overhead = num_documents * 0.01  # 0.01 minutes per document
+        
+        total_time = stats_time + llm_time + overhead_time + doc_overhead
+        
+        return max(total_time, 1.0)  # Minimum 1 minute

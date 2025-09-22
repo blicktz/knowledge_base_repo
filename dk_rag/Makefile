@@ -8,13 +8,13 @@ PYTEST := poetry run pytest
 MODULE := dk_rag.cli.persona_builder
 
 # Default paths - customize these for your setup
-DOCS_DIR ?= /Volumes/J15/copy-writing/dk_books_md
+DOCS_DIR ?= /Users/blickt/Documents/src/pdf_2_text/content_repo/greg_startup
 OUTPUT_DIR ?= ./output
 CONFIG_FILE ?= ./config/persona_config.yaml
-PATTERN ?= *.md
+PATTERN ?= *.txt
 
 # Default persona name for extraction
-PERSONA_NAME ?= influencer
+PERSONA_NAME ?= greg_startup
 DK_PERSONA_NAME := dan_kennedy
 
 # Search query for testing
