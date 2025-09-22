@@ -1,4 +1,5 @@
-# Configuration for Virtual Influencer Persona Agent - Multi-Tenant Architecture
+# Configuration for Virtual Influencer Persona Agent - OpenRouter Version
+# This version uses OpenRouter for Gemini access which may have higher rate limits
 
 # LLM Configuration for Persona Extraction
 llm:
@@ -184,32 +185,32 @@ validation:
     min_catchphrases: 3
     min_vocabulary_terms: 10
 
-# Map-Reduce Extraction Configuration
+# Map-Reduce Extraction Configuration (OpenRouter Version)
 map_reduce_extraction:
   enabled: true  # Enable map-reduce for large corpus processing
   
   # LLM configuration for map-reduce phases
   llm_provider: "litellm"
-  llm_model: "gemini/gemini-2.0-flash"  # Cost-effective for batch processing
+  llm_model: "openrouter/google/gemini-2.0-flash-exp"  # Cost-effective through OpenRouter
   
   # Alternative models for different phases
-  map_phase_model: "gemini/gemini-2.0-flash"  # For processing batches (uses GEMINI_API_KEY)
-  reduce_phase_model: "gemini/gemini-2.0-flash"  # For consolidation (uses GEMINI_API_KEY)
+  map_phase_model: "openrouter/google/gemini-2.0-flash-exp"  # For processing batches (via OpenRouter)
+  reduce_phase_model: "openrouter/google/gemini-2.0-flash-exp"  # For consolidation (via OpenRouter)
   
-  # Batch processing parameters
+  # Batch processing parameters (OpenRouter may have higher limits)
   batch_size: 10  # Number of documents per batch
-  max_tokens_per_batch: 20000  # Max tokens to send per batch (reduced for Gemini limits)
-  parallel_batches: 1  # Reduced for Gemini rate limits (10 requests/min)
+  max_tokens_per_batch: 30000  # Max tokens to send per batch
+  parallel_batches: 3  # Number of concurrent batch processes
   
   # Caching configuration
   cache_batch_results: true  # Save individual batch results
   resume_from_cache: true  # Resume from cached batches if interrupted
   cache_compression: true  # Compress cached batch results
-  cache_ttl_hours: 1000000  # Cache time-to-live (indefinite)
+  cache_ttl_hours: 168  # Cache time-to-live (7 days)
   
   # Processing parameters
   max_retries: 2  # Retries for failed batches
-  retry_delay_seconds: 10  # Delay between retries (increased for rate limits)
+  retry_delay_seconds: 5  # Delay between retries
   timeout_seconds: 120  # Timeout per batch
   
   # Consolidation strategies
@@ -226,7 +227,7 @@ map_reduce_extraction:
   # Progress tracking
   show_progress: true  # Show progress bars
   save_intermediate: true  # Save after each batch
-  
+
 # Development Configuration
 development:
   debug_mode: false

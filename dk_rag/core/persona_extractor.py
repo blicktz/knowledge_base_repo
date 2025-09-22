@@ -23,6 +23,7 @@ from ..data.models.persona_constitution import (
     ExtractionMetadata
 )
 from ..core.statistical_analyzer import StatisticalAnalyzer
+from ..core.map_reduce_extractor import MapReduceExtractor
 from ..config.settings import Settings
 from ..utils.logging import get_logger
 
@@ -46,11 +47,17 @@ class PersonaExtractor:
         # Initialize statistical analyzer with persona context for caching
         self.statistical_analyzer = StatisticalAnalyzer(settings, persona_id)
         
+        # Initialize map-reduce extractor if enabled
+        self.map_reduce_extractor = None
+        if settings.map_reduce_extraction.enabled:
+            self.map_reduce_extractor = MapReduceExtractor(settings, persona_id)
+        
         # Extraction prompts
         self.prompts = self._init_prompts()
         
         # Track extraction state
         self.extraction_start_time = None
+        self.use_map_reduce = settings.map_reduce_extraction.enabled
         
     def _init_llm(self):
         """Initialize the LLM using ChatLiteLLM for OpenRouter access"""
@@ -249,7 +256,7 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
         cache_status = "checking cache..." if use_cached_analysis else "fresh analysis"
         
         # Initialize progress bar
-        total_steps = 5
+        total_steps = 5 if not self.use_map_reduce else 4
         with tqdm(total=total_steps, desc="Persona Extraction", unit="step") as pbar:
             # Step 1: Statistical analysis (with cache support)
             if use_cached_analysis and not force_reanalyze:
@@ -264,24 +271,37 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
             )
             pbar.update(1)
             
-            # Step 2: Prepare content for LLM analysis
-            pbar.set_description("Persona Extraction: Preparing content")
-            combined_content = self._prepare_content(documents)
+            # Step 2: Format statistical insights for LLM consumption
+            pbar.set_description("Persona Extraction: Preparing insights")
             statistical_insights = self._format_statistical_insights(statistical_report)
             pbar.update(1)
             
-            # Step 3: Extract different persona components
+            # Step 3: Extract linguistic style (always uses sampling approach)
             pbar.set_description("Persona Extraction: Linguistic style")
-            linguistic_style = await self._extract_linguistic_style(combined_content, statistical_insights)
+            # Use representative sampling for linguistic style regardless of map-reduce setting
+            sampled_content = self._prepare_sampled_content(documents)
+            linguistic_style = await self._extract_linguistic_style(sampled_content, statistical_insights)
             pbar.update(1)
             
-            pbar.set_description("Persona Extraction: Mental models")
-            mental_models = await self._extract_mental_models(combined_content, statistical_insights)
-            pbar.update(1)
-            
-            pbar.set_description("Persona Extraction: Core beliefs")
-            core_beliefs = await self._extract_core_beliefs(combined_content, statistical_insights)
-            pbar.update(1)
+            # Step 4 & 5: Extract mental models and core beliefs
+            if self.use_map_reduce and self.map_reduce_extractor:
+                # Use map-reduce strategy for comprehensive analysis
+                pbar.set_description("Persona Extraction: Map-Reduce analysis")
+                mental_models, core_beliefs = await self._extract_with_map_reduce(
+                    documents, statistical_insights, pbar
+                )
+                pbar.update(1)
+            else:
+                # Use traditional approach with content truncation
+                pbar.set_description("Persona Extraction: Mental models")
+                combined_content = self._prepare_content(documents)
+                mental_models = await self._extract_mental_models(combined_content, statistical_insights)
+                pbar.update(1)
+                
+                pbar.set_description("Persona Extraction: Core beliefs") 
+                core_beliefs = await self._extract_core_beliefs(combined_content, statistical_insights)
+                if total_steps == 5:
+                    pbar.update(1)
         
         # Step 4: Create extraction metadata
         extraction_metadata = self._create_extraction_metadata(documents)
@@ -330,6 +350,105 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
             self.logger.warning(f"Content truncated to {max_tokens} tokens for LLM analysis")
         
         return combined
+    
+    def _prepare_sampled_content(self, documents: List[Dict[str, Any]], 
+                               first_tokens: int = 20000, 
+                               random_tokens: int = 20000) -> str:
+        """
+        Prepare representative sampled content for linguistic style analysis
+        Uses first portion + random sample to capture style diversity
+        
+        Args:
+            documents: All documents
+            first_tokens: Tokens from beginning
+            random_tokens: Tokens from random sample
+            
+        Returns:
+            Sampled content string
+        """
+        import random
+        
+        # Combine all content
+        all_content = []
+        for doc in documents:
+            content = doc.get('content', '')
+            if content.strip():
+                all_content.append(content)
+        
+        combined = "\n\n".join(all_content)
+        
+        # Estimate tokens (rough: 1 token ≈ 4 characters)
+        total_chars = len(combined)
+        first_chars = first_tokens * 4
+        random_chars = random_tokens * 4
+        
+        sampled_content = ""
+        
+        # Add first portion
+        if total_chars > first_chars:
+            sampled_content += combined[:first_chars]
+            
+            # Add random sample from remaining content
+            remaining_content = combined[first_chars:]
+            if len(remaining_content) > random_chars:
+                # Take random sample from middle portion
+                start_pos = random.randint(0, len(remaining_content) - random_chars)
+                sampled_content += "\n\n[... SAMPLE FROM MIDDLE ...]\n\n"
+                sampled_content += remaining_content[start_pos:start_pos + random_chars]
+        else:
+            # Content is small enough to use entirely
+            sampled_content = combined
+        
+        self.logger.info(f"Sampled {len(sampled_content)} characters from {total_chars} total for linguistic analysis")
+        return sampled_content
+    
+    async def _extract_with_map_reduce(self, documents: List[Dict[str, Any]], 
+                                     statistical_insights: str,
+                                     pbar: Optional[Any] = None) -> Tuple[List[MentalModel], List[CoreBelief]]:
+        """
+        Extract mental models and core beliefs using map-reduce strategy
+        
+        Args:
+            documents: All documents to analyze
+            statistical_insights: Statistical insights about the corpus
+            pbar: Optional progress bar to update
+            
+        Returns:
+            Tuple of (mental_models, core_beliefs)
+        """
+        self.logger.info("Using map-reduce extraction for comprehensive analysis")
+        
+        try:
+            # Extract mental models and core beliefs in parallel if possible
+            mental_models_task = self.map_reduce_extractor.extract_mental_models(
+                documents, statistical_insights
+            )
+            core_beliefs_task = self.map_reduce_extractor.extract_core_beliefs(
+                documents, statistical_insights
+            )
+            
+            # Execute both extractions
+            mental_models, core_beliefs = await asyncio.gather(
+                mental_models_task, core_beliefs_task
+            )
+            
+            # Log extraction statistics
+            stats = self.map_reduce_extractor.get_processing_stats()
+            self.logger.info(f"Map-reduce completed: {stats['completed_batches']}/{stats['total_batches']} batches")
+            self.logger.info(f"Cache hit rate: {stats.get('cache_hit_rate', 0):.1%}")
+            
+            return mental_models, core_beliefs
+            
+        except Exception as e:
+            self.logger.error(f"Map-reduce extraction failed: {e}")
+            # Fallback to traditional approach
+            self.logger.info("Falling back to traditional extraction approach")
+            combined_content = self._prepare_content(documents)
+            
+            mental_models = await self._extract_mental_models(combined_content, statistical_insights)
+            core_beliefs = await self._extract_core_beliefs(combined_content, statistical_insights)
+            
+            return mental_models, core_beliefs
     
     def _format_statistical_insights(self, report: StatisticalReport) -> str:
         """Format statistical insights for LLM consumption"""
@@ -594,20 +713,46 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
         """
         # Base processing rates (conservative estimates)
         statistical_analysis_rate = 10000  # words per minute
-        llm_processing_rate = 500  # words per minute for LLM analysis
         
         # Statistical analysis time
         stats_time = total_words / statistical_analysis_rate
         
-        # LLM processing time (3 extraction steps)
-        llm_time = (total_words / llm_processing_rate) * 3
-        
-        # Base overhead for model loading, etc.
-        overhead_time = 2.0  # minutes
+        if self.use_map_reduce:
+            # Map-reduce processing estimation
+            config = self.settings.map_reduce_extraction
+            batch_size = config.batch_size
+            parallel_batches = config.parallel_batches
+            
+            # Estimate number of batches
+            estimated_batches = (num_documents + batch_size - 1) // batch_size
+            
+            # Time per batch (includes map and reduce phases)
+            # Map phase: faster per word due to batch processing
+            words_per_batch = total_words / estimated_batches
+            map_time_per_batch = (words_per_batch / 2000) * 2  # 2 extraction types, 2000 words/min
+            
+            # Reduce phase: consolidation time (fixed cost per type)
+            reduce_time = 2.0  # 2 minutes for consolidation
+            
+            # Total batch processing time with parallelization
+            total_batch_time = (estimated_batches * map_time_per_batch) / parallel_batches
+            llm_time = total_batch_time + reduce_time
+            
+            # Linguistic style extraction (sampled)
+            linguistic_time = 1.0  # Fixed time for sampled content
+            
+            overhead_time = 3.0  # Higher overhead for map-reduce setup
+            
+        else:
+            # Traditional processing estimation  
+            llm_processing_rate = 500  # words per minute for LLM analysis
+            llm_time = (total_words / llm_processing_rate) * 3  # 3 extraction steps
+            linguistic_time = 0  # Included in llm_time
+            overhead_time = 2.0  # minutes
         
         # Document processing overhead
         doc_overhead = num_documents * 0.01  # 0.01 minutes per document
         
-        total_time = stats_time + llm_time + overhead_time + doc_overhead
+        total_time = stats_time + llm_time + linguistic_time + overhead_time + doc_overhead
         
         return max(total_time, 1.0)  # Minimum 1 minute

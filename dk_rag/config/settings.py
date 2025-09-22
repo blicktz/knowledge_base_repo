@@ -108,6 +108,39 @@ class DevelopmentConfig(BaseModel):
     testing: Dict[str, Any] = Field(default_factory=dict, description="Testing configuration")
 
 
+class MapReduceExtractionConfig(BaseModel):
+    """Configuration for map-reduce extraction process"""
+    enabled: bool = Field(default=True, description="Enable map-reduce extraction")
+    llm_provider: str = Field(default="litellm", description="LLM provider for map-reduce")
+    llm_model: str = Field(default="gemini/gemini-2.0-flash-exp", description="Default model for extraction")
+    map_phase_model: str = Field(default="gemini/gemini-2.0-flash-exp", description="Model for map phase")
+    reduce_phase_model: str = Field(default="gemini/gemini-2.0-flash-exp", description="Model for reduce phase")
+    
+    # Batch processing
+    batch_size: int = Field(default=10, description="Documents per batch")
+    max_tokens_per_batch: int = Field(default=30000, description="Max tokens per batch")
+    parallel_batches: int = Field(default=3, description="Concurrent batch processes")
+    
+    # Caching
+    cache_batch_results: bool = Field(default=True, description="Cache individual batch results")
+    resume_from_cache: bool = Field(default=True, description="Resume from cached batches")
+    cache_compression: bool = Field(default=True, description="Compress cached results")
+    cache_ttl_hours: int = Field(default=168, description="Cache time-to-live in hours")
+    
+    # Processing
+    max_retries: int = Field(default=2, description="Max retries for failed batches")
+    retry_delay_seconds: int = Field(default=5, description="Delay between retries")
+    timeout_seconds: int = Field(default=120, description="Timeout per batch")
+    
+    # Consolidation
+    mental_models: Dict[str, Any] = Field(default_factory=dict, description="Mental models consolidation config")
+    core_beliefs: Dict[str, Any] = Field(default_factory=dict, description="Core beliefs consolidation config")
+    
+    # Progress
+    show_progress: bool = Field(default=True, description="Show progress bars")
+    save_intermediate: bool = Field(default=True, description="Save after each batch")
+
+
 class Settings(BaseModel):
     """Main settings class for the persona agent"""
     
@@ -122,6 +155,7 @@ class Settings(BaseModel):
     performance: PerformanceConfig = Field(default_factory=PerformanceConfig)
     validation: ValidationConfig = Field(default_factory=ValidationConfig)
     development: DevelopmentConfig = Field(default_factory=DevelopmentConfig)
+    map_reduce_extraction: MapReduceExtractionConfig = Field(default_factory=MapReduceExtractionConfig)
     
     # Additional metadata
     version: str = Field(default="1.0.0", description="Configuration version")
