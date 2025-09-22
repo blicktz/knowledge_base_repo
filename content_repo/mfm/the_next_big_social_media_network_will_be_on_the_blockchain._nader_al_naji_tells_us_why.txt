@@ -1,0 +1,717 @@
+And I was like, wait a minute, Sean. So you're telling me that there's a website that you invest money in. You don't know who made it.
+
+It doesn't work a lot of the times. And you can't get the money out. And he's like, yeah.
+
+I was like, oh, okay. Got it. Just making sure we're on the same page here.
+
+I feel like I can rule the world. I know I could be what I want to. I put my all in it like no days off on the road.
+
+Let's travel. Never looking back. What's up?
+
+Sean here. We have Sam and we got a guest. His name is Natter.
+
+I've said it right because it's Natter like ladder, but people know you as Diamond Hands if they've been following. We did a section on the podcast. I don't know how many months ago where I was like, hey, there's this thing that caught my eye.
+
+It's called BitCloud. And it's this crazy idea of a social network where it's almost like a Robinhood meets Twitter. It's like everybody's got their every profile.
+
+Every person has their own coin and you can like invest in people and you can buy their coin and people's prices can go up or down as they get more famous. And I said, you know, there was a couple I said, I don't know if this is going to work, but I do hope that someday there's a, like a decentralized social network. So a social network that's not, you know, super top down controlled the way Facebook is, the way Twitter is.
+
+And this was the first credible attempt I had ever seen. I had seen some other experiments, but this is the first credible one where I said, oh, they have a growth hack. And the growth hack is that when I saw my profile, my profile was already created for me.
+
+It was a clone of my Twitter profile. And I think it had like $60,000 sitting in the piggy bank and it just said, claim it, verify your account, like claim it. And that money's yours.
+
+And I said, oh, that's going to work. People are going to respond to that kind of incentive. Sam did it too.
+
+Sam, you had, I don't know what, $50,000 of your thing. Sam claimed it and withdrew within a month or something like that. He bounced out of there.
+
+But, um, so people will remember BitCloud. You were the creator of BitCloud. At the time you were an anonymous account only known as Diamond Hands.
+
+Now BitCloud has been renamed to Deeso, essentially that that's, you know, the new brand and you've come out in the public and now you're doing podcasts. So that's where we are. Welcome to the show.
+
+And why we rename it? BitCloud's awesome. That's a great name.
+
+I love that name. Yeah, man. I mean, so just for context, Sam and Sean, thanks for that awesome intro, man.
+
+Uh, yeah. I mean, so since early 2019, I've been working really on a blockchain that can power social, social networks. Uh, you know, not just BitCloud, but many other apps.
+
+Now they're actually over a hundred apps being built on the actual blockchain itself, which we call decentralized social or Deeso. Uh, and so, uh, BitCloud was actually just the first app that really we launched on the blockchain. Um, and so kind of after working on it for almost two years from early 2019, we were like, Hey, you know, uh, now let's kind of put all the features together that this blockchain can support into some kind of product.
+
+Uh, and so that was BitCloud and it was really just a prototype. And it was intended to kind of exercise and test, uh, a lot of the functionality, but the biggest one is like the storage and the indexing of posts, which is a very hard problem for, for blockchain to solve. And I don't think anyone other than Deeso really has, has, has had a good solution to that.
+
+Um, but, uh, but yeah, obviously we launched it. So, so let me give a little, let me give a, let me give a layman, layman explanation of this. So Sam, I don't know if you know this, but, um, there are actually a bunch of different types of, of blockchains because the apps that you're building on top of them have different needs.
+
+So like, you know, Bitcoin has its blockchain and it's all it's trying to do is, you know, really store value, be super secure. It's a, it doesn't need to be the fastest, uh, because Bitcoin is not about speed. It's about security really above all else.
+
+And then Ethereum was like, okay, we're going to make a blockchain that's more programmable. It's going to have maybe less security than Bitcoin because it's more programmable, but it's going to be able to do all these other things. And then like these apps came out, like on top of Ethereum that were like, uh, crypto kitties and top shot, which were basically like the first kind of like NFT projects that got big and they immediately like overwhelmed the Ethereum network.
+
+And so the guys who built, uh, NBA top shot when they, uh, you know, they were the same crew that built crypto kitties. So when they went out to build NBA top shot, they actually made their own blockchain called flow and flow was optimized for the use case of trading NFTs and, uh, it can do higher volume. And so they all have different trade-offs.
+
+And so what you're saying is you made a blockchain that was good at doing one thing, which is social networks are basically about posting photos and videos and containing all that. But today, if you go try to embed a photo and a video on top of the Bitcoin blockchain or Ethereum blockchain, it would be, it's not made for that. And so it would be either too big, too slow, too, whatever, just to render one like newsfeed.
+
+So you guys built your own. So is the name of the blockchain Deeso and the app is BitCloud? Is that the idea?
+
+Yeah, exactly. And BitCloud, by the way, Sean, it's really interesting. It's actually just one app.
+
+Uh, there's actually over a hundred now, uh, that are built on top of it. So you could like actually see the same data. Yeah.
+
+You say that, but like, does anybody use any of these apps? Like, you know, I got a hundred items on my desk. They're all worthless.
+
+Does anyone care? So like, does anyone care about these hundred apps on top of Deeso? Yeah, Sean, what's really interesting is diamondapp.com is actually more popular than BitCloud already now.
+
+Um, so I think it just passed it, even though it launched like a week ago. Uh, polygram.cc is the app that people go to for NFTs. So actually when people share Deeso NFTs, they actually usually share links to Polygram, uh, not BitCloud.
+
+Uh, Pulse is really good for, uh, trading coins and Cloutfeed is actually a mobile app. Uh, by the way, Cloutfeed, I think, might already have more users than BitCloud as well, which is kind of crazy. Um, oh, nice.
+
+I use Cloutfeed, uh, cause it's, cause there's no mobile app, right? So I think that's one of the challenges. Why isn't there an app?
+
+Uh, because you're almost sort of playing with one hand tied behind your back, Twitter, Facebook, they can send you push notifications. They're a normal app for Cloutfeed. I had to like save something to my home.
+
+I had to safely save a website onto my home screen to make it look like an app, but it still can't do push notifications. So is there a rule that's, that Apple's blocking or Google Play's blocking? No, well, there are apps.
+
+So there's Cloutfeed and Flick app is actually another one. Uh, that's actually created by the former CEO of FanDuel. Uh, and it's also very, very popular.
+
+Uh, but really like Sean, you're touching on our strategy, which is we actually don't want to build any products at all. I didn't even want to launch BitCloud ideally. Uh, I think that with this kind of next wave of social, I think what we're going to see is kind of a separation of concerns where you have this blockchain, which is the diesel blockchain that powers, you know, kind of the backend of all of these things.
+
+And then people who are much better than me at building products actually go out there and build them. Right. Um, and so for example, if you look at diamond app or you look at polygram dot, you know, again, polygram dot CC, you go to them and you're like, Whoa, this looks way better than that crappy Craigslist like thing that Natter built on, you know, which is BitCloud.
+
+Um, and so it's really the strategy for us to not build anything and to let, we call it the app layer to be owned by other people, uh, to give it away actually. So I think we should, I think we should do two things. I think we should explain why this matters.
+
+Cause to most people you're saying like polygram and diamond app, and it's like, these are things they've never heard of and they should go check it out. But like, I think, I think it's more important to just get, have the idea click in their head first, which is if I went to Facebook, let's say I was a bad guy, right? Uh, I go to Facebook and I wanted to take the most valuable thing I could take.
+
+It wouldn't, you know, it wouldn't be the engineers. It wouldn't be the sign out front. It wouldn't be Mark Zuckerberg.
+
+I couldn't even, Mark Zuckerberg is less valuable than the one most important thing. It's basically the database, right? So Facebook would guard with its life access to the database, which is basically a whole bunch of rows that says Sam Parr, here's his date of birth.
+
+Here's his profile picture. Here's who he's friends with. And that information they keep under lock and key and they give out little tidbits.
+
+Like when they created a platform or you could build a Facebook app on top of Facebook, or you can do login with Facebook. They give you a little bit of access cause it's so valuable, right? Um, if I'm an app, I don't want to make you go through a full registration form and upload a photo and then ask you to name all your friends and add them.
+
+If I could just let you push one button and boom, I grab your Facebook profile and a Facebook friends. That was a really powerful idea, but Facebook obviously keeps it under lock and key. And what's cool about it, this is the same way that like, you know, what's the most valuable asset that the U S government has.
+
+It's either the guns or the money. It's one of the two, but let's just take the guns out for a second. The money, right?
+
+The right to sort of print the money and say, we get to collect taxes in this currency. Therefore we have a monopoly on money. And Bitcoin kind of broke that monopoly in a way it said, Hey, here's money without the government.
+
+If you like the money part, but you don't want the government, you can use Bitcoin. And what you're kind of doing is the same idea, which is you're turning a social network inside out. The thing that Facebook and Twitter would never do, they would never just give you account, a root access to its database.
+
+What you're saying is here's a social network and the database is fully open and available to all. If anybody wants to build any app, you can use this database. It is fully transparent and accessible.
+
+That's the main reason it exists. And so you're kind of taking a social network and you take the thing they protect at its core and you're turning it inside out. You're putting it right at the surface for other people to use.
+
+That's the big idea for this stuff. And what does that mean? That means today, if you don't, people are complaining about the Facebook algorithm, right?
+
+Fake news, or I don't like that Facebook censored Donald Trump, or I don't like that Facebook did this. Well, you're shit out of luck. You can't go use Facebook too.
+
+You can't go use Facebook red, which has a different algorithm. But with, with this idea of DSO, that's what could happen. Somebody could just make a new app with a new algorithm that says, I'm only going to show pictures of hot girls.
+
+I'm only going to, I'm not going to censor anything, or I'm going to highlight things that you, you get to decide how your feed is curated. And so you could build another app that people could use without starting all over from scratch. So it gives people choice.
+
+I think that's the big idea. Did I get it right? Or did I miss something?
+
+Yeah. And maybe just to put like a slightly different, different take away of saying it is today, you know, Facebook, Twitter, you know, they're really about monopolizing content. Like you said, keeping it under lock and key so that they can show ads on it.
+
+And if they allow anyone else to build an app, like if they allow another company to build an app on that monopolized content, they lose those eyeballs and they can't show ads to them and it impacts their bottom line. So really, the fact that their business model is driven by ads is what kind of forces them to say, okay, this content's under lock and key. We're the only ones who can build apps on it.
+
+We're the only ones who can curate it and show a feed. And we can't let anyone else aggregate eyeballs other than us. We're the only ones.
+
+So really what Deeso is about, yeah. Right. And there's one other component you just mentioned there, which is the users, the people creating all the content, essentially doing all the work, us, the dancing monkeys that go sit on Twitter all day, coming up with interesting ideas, giving them the interesting content, we get zero.
+
+Right. So like if I go check my Twitter ad split or my Facebook ad split and Facebook made, I don't know how many tens of billions of dollars on ads this year, but I get zero. Right.
+
+And so that's the other component, which is their business model is we got to keep all the eyeballs. And then we want to keep as much of the rev share as possible. That's their natural kind of the game theory would lead them to do that.
+
+And with something like Deeso, you know, I can make a post. I can post on there. I can go post on BitCloud and people will literally, I can make money off of it.
+
+Basically, if my post goes viral, I will actually benefit from the virality, from the value of my content. And that's the other, if all this shit works, right? Like forget the blockchain, forget about the how it works.
+
+If it works, that's one thing that's going to change that the creators who make all the content will get a much larger share of the revenue. What do you think that share ends up being? Is it more like 50, 50?
+
+Is it 90, 10? Is there even a rev share? Like how much do you as the maker of the Deeso blockchain get?
+
+Yeah. Well, that's the funny thing is that today, the way Facebook makes money is with ads. And like you said, it doesn't share very much of that with the creators because when you have a monopoly on something, you know, you can be pretty greedy about it.
+
+And so Deeso, we're really all about opening up the content. So instead of monopolized content, it's open content. So when you make a post on BitClout, for example, it actually shows up in Diamond app, in CloudFeed and all these other apps, because again, the content is open.
+
+It's kind of like a utility rather than a monopoly. And the question then, if you have all the content open, it's like, okay, wait, but like, how does anyone make money if all the content's open? Like, can't like show ads, you know, on, you know, when all the content is open, you know, that's why Facebook is the way that it is.
+
+But the interesting thing is when you put all of the content on a blockchain, you actually get two things. You get openness, you know, that, you know, all the content's open, anyone can build on it, which we've been talking about. But you also get access to kind of a new set of features that involve money in a very direct way.
+
+And so, you know, for example, right, what you were talking about earlier is the fact that, you know, someone can have a coin associated with their profile that anyone can buy or sell, right? That was one of the features that, you know, the DSO blockchain supports. That feature is very difficult to do in a centralized way, both because kind of the traditional financial system is very kludgy.
+
+So to have it, for example, be that anyone in any country can like throw tens of thousands of dollars around left and right, you know, the traditional financial system isn't really built for that. And then aside from that, right, it's all open. So people can actually build on it and iterate and create new experiences off of that same kind of money feature set that we haven't even thought of before.
+
+And so going back to how does anyone make money, right, the DSO blockchain has a native coin called DSO, right? And so by holding it, similar to how anyone holds Bitcoin, right, as more usage comes onto that blockchain, the demand for DSO should go up, which should cause the price to increase. You know, and then everyone who holds DSO does very well.
+
+But aside from that, you know, because that's how, you know, I and anyone who's bought DSO makes money, you know, the creator can basically keep the rest. And so there might be small fees charged by the apps that kind of enable the creator to do like, you know, for example, clout feed or diamond app might charge small fees in order to earn an honest living and to make good money. And so I think we might see, you know, basically a splitting of the market by a bunch of different apps that kind of charge small fees to allow the creators to do what they do.
+
+But that's competitive as opposed to monopolistic, and will hopefully result in a lot more of the value accruing to the creator as a result. So that's kind of the way to think about it. Can I actually, let me ask you just a couple kind of quick questions, because Sean is deeper in this world than I am.
+
+And I actually think that there's a few more interesting stories here than just the technology. So how many people work there right now as full-time staff? Yeah, so we have about a dozen people.
+
+How much? Yeah. And yeah, and what's funny is that team, we're now focusing mainly on the blockchain.
+
+And so but if you count all the people who are working on apps, you know, but we got hundreds in your right and and totally. Yeah, we 12 people. That's crazy.
+
+So you raised you raised funding to do this. Yeah, a hundred million dollars, right? So how much money in total?
+
+Yes, it's actually 5000 Bitcoin, which, you know, has appreciated a bit. And yeah, and you raised so you raised money. But besides that money, can you tell me how much money has been invested?
+
+So Dharmesh, who we've had on this pod, I think I don't I don't know. But if I had to guess, I wouldn't be surprised if he spent over a million buying other people's coins roughly. I think he said it publicly.
+
+I think he said it on on big cloud. He's investing over a million dollars. Can you tell me how much has been invested on the platform?
+
+Um, yeah, well, so what's really cool is because it's a blockchain, it's open, right? All of this data is open. So you can go, for example, to prosper cloud.com.
+
+Or, you know, I think bit cloud pulse.com slash stats or like any of these websites, and they'll tell you, I think right now there's about 80 million dollars invested in people's coins, which to me is actually really low. Yeah, but that's so amazing. You know, I think we actually, yeah.
+
+Yeah, yeah, it is. It's awesome. And all that.
+
+Does that count the money you guys invested? Because when I showed up from day one, you guys did a smart growth hack, which is that you sort of pre bought a bunch of coin from Naval and from Chamath and from Kim Kardashian and whoever. So you kind of bought coins at a very low price for all these so that their accounts had some initial value, which would attract those people to come claim their accounts.
+
+So does that 80 million count the money that you guys bought? Yeah, I think it does. But I don't think it was very much, very many coins that we actually put in.
+
+It was like maybe 10s of 1000s of diesel, you know, that went into it. I'd have to look at actually how much of it is that appreciation of that. But yeah, but there's definitely a piece of it that's that.
+
+For the people, wait, let me say one more thing. We're looking at you now that you're in a dark room, you have the shades pulled down. We had biology on here a while ago, and he had the same thing.
+
+It was very dark. And he was like, you know, I don't. And he said on the pod, he's like, I don't really like talking about my my location because because he said, I say some crazy, I make crazy predictions.
+
+I'll speak out against powerful people. And I'm, you know, I don't want to like take unnecessary risk and let them know where I am. Are is this?
+
+Are you in the same boat? Okay, not at all. Well, you know, we're reporting the middle of the day.
+
+Yeah. It's dark. I was curious, like, are you?
+
+Are you? Yeah. Yeah.
+
+Do you? Yeah. Unlike most Bond villains?
+
+I know, I'm just kidding. Yeah. No, no, I'm very open.
+
+I'm in LA. You know, I have a house here. Do you have security?
+
+I'm a very open person. Well, I don't know if you're supposed to talk about your security because that, you know, there's security obscurity. Dude, it's like saying, I don't kiss and tell when someone asks if you hooked up with someone.
+
+Like you've just acknowledged it by not saying go. Yeah. But yeah, you know, I'm, yeah, I'm safe.
+
+I like to think I'm safe. Sorry. Let me ask this last question.
+
+This is the last final. So you guys had a crazy. The last final question.
+
+Love it. I love it. So you told me you're 29.
+
+I looked at your LinkedIn. You've had some, like, all your jobs have been like fancy, like high-end, really great jobs. So, but like compared to the job that you have now, they were normal.
+
+Is working at BitCloud at all, or Deeso, is it at all a normal, like, are you going to run this like a normal company or are you going to be a little, like, if you had to explain to your parents, like how your staff works and things like that? Would it appear as though you do have a normal, a normal company or are you doing some eccentric stuff that would be intriguing? Yeah.
+
+Well, that's funny, actually. So just to go into some eccentricities of the project, you know, that 5,000 Bitcoin I mentioned, all that money actually came in before there was any corporate entity set up to do anything. And so essentially the way it worked was the blockchain was running.
+
+And if you sent Bitcoin to this treasury wallet, the blockchain would basically watch that treasury wallet and give you Deeso coins when it saw that there was a deposit there to like a corresponding key. And so it was all automatic. And so there were over 44,000 purchases.
+
+And I don't even know 99% of like them who they are, because they could just send Bitcoin to that thing and they would get Deeso coins on the Deeso blockchain. And yeah, we, you know, we didn't set up a corporate entity. And that was, you know, kind of two reasons.
+
+There's a big reason that we don't want people to rely on it, to feel like this is a centralized thing that's going to own everything. You know, when you have equity holders, you know, they're, they have to kind of fiduciary duty forces them to milk everything and to be like, hey, like, we should close this down at some point and really like make money off of it in like a different way. So that was, that was important.
+
+But, but yeah, and then, you know, just, just from a regulatory standpoint, you know, I really, you know, there was no issuer of anything, you know, you just kind of threw Bitcoin in and got Deeso back. And so what happened recently is, and obviously that made it very difficult to hire, you know, that made it very difficult to even talk about who we are. But very recently, you know, the platform has, you know, the blockchain has kind of gotten decentralized enough, you know, where there are thousands of nodes running, running things.
+
+There's, like I said, like, you know, over a hundred projects, a lot of them pretty legit. And we felt comfortable setting up a corporate entity and kind of more normalizing how we hire and stuff. So now, as of a couple of weeks ago, there's the Deeso Foundation.
+
+And so I'm on the board of it. And I'm the only one right now, but we're hoping to basically bring on some really legit people to join me. And so it can actually be this kind of well governed thing.
+
+And everyone's going to work for that entity. And so I think going forward, it will look very normal. And it'll kind of just be, you know, an organization that's a nonprofit where people are paid with cash and Deeso, like a combination of the two.
+
+And we develop the blockchain and fund other people to build apps. Like I said, we're giving away the app layer. So that's kind of how we're thinking about it.
+
+So early on, I remember the story was nobody knows the creator, but like I heard kind of through back channels, oh, we kind of know who it is. Because it seemed like you went out fundraising. Because it was like, hey, this is, should I send my Bitcoin to this random ass wallet and get back this coin back that I don't know if I want it?
+
+What is the value of this coin? Which the site didn't even work half the time when you first launched. And it was, no, no, these are, site barely worked.
+
+It looked like a virus. And then, you know, and it was like, no, no, no, there's, so I texted some people. I said, hey, do you know what's, who's behind this?
+
+Is this legit? They said, I think it's legit. The guy behind it's legit.
+
+The people behind it are real builders. And they said, you know, Andreessen and social capital and like a few tier one VCs have like are backing it. And so that gave people a lot of comfort.
+
+And that's why people like me and others put in money. I sent $100,000 into, into, into, into big cloud or whatever to get, it wasn't even called Deeso at the time. I was getting back cloud or something.
+
+Yeah. Different names for the same currency. And, um, and so, uh, so are you, but you're saying it now like, oh, I don't know.
+
+These strangers on the internet started sending us Bitcoin. Like, I'm pretty sure you did some kind of road show or somebody was doing some kind of sales pitch to bridge those two gaps. What's that?
+
+I don't buy this Dennis Dennis. Look, you're way sharper and, uh, you're, you're, you're, you're, you're playing us a little. No, no, no, no.
+
+I don't mean to play anyone. Uh, no, totally. Just to give a little more detail.
+
+I love it. I love it. Uh, but yeah, just to give a little more detail.
+
+Um, yeah. So what, what's funny is, uh, you know, I worked on this almost blockchain for almost two years since early 2019. And I met a lot of investors through my last company, which was called basis, you know, where I raised $140 million and then it didn't work, uh, wound up giving, you know, deciding to kind of do what I think is the right thing, give all the money back.
+
+Uh, but so what happened with Deeso is I kind of worked on it for two years, you know, alone by myself, brought on a couple of good friends. Uh, and then I talked to a bunch of the big names that are now involved. So like social capital, Andreessen, Sequoia, all of them.
+
+Um, and so what's funny about that is that, uh, I, I, you know, obviously I, I did, I talked to those people, uh, and so of the 44,000 purchases, it's probably a few hundred where, you know, I kind of told them, Hey, this is what it is. Uh, and so, um, what's interesting about it is. But those were the big purchases, right?
+
+So yeah, they might be a few hundred, but they were millions each, not, uh, like, you know, so it might make up 80% of that. I think about $30 million worth, uh, was that, um, which is, I think not, not a huge percent. And no one has, no one owns more than 5% of the supply from that.
+
+Uh, so I actually think, you know, I, I actually cared a lot about keeping it very well distributed, like any good cryptocurrency, but, um, uh, but yeah, but all of them actually don't own, importantly, they don't own equity in anything. Uh, all of their interest is in the same asset that you or I hold, which is Deeso. Um, some of them used corporate entities to convert dollars to Bitcoin in order to do this weird thing.
+
+Uh, but they hold Deeso, like those entities hold Deeso for them. Uh, and they'll like take delivery, like, you know, whenever they want. So, so that's cool.
+
+And I think at the beginning you had a bunch of things sort of like, we just retrace this story, right? So you do basis, you, you have this idea for stable coin, you end up giving back the money when you decide it's not going to work. You, um, you have this new, new idea for, for a decentralized social network.
+
+You raise some money from legit hitters. Other people pile in, like you're saying, it's all pretty quote unquote fair, which is that we're all owning the same thing. And, um, and then you get to the point of the launch, you're, you decide to be anonymous.
+
+You try to go the Satoshi route. Um, but it doesn't work. Why didn't that, why'd you want to do that?
+
+And why didn't that work? Too many people just found out. Yeah.
+
+Well, so, yeah. So basically, you know, I've been working on this blockchain, the diesel blockchain for almost two years. And, uh, we were like, Hey, you know, we should really launch kind of a prototype app to start testing it like in the, in the field, so to speak.
+
+Uh, and that was bit cloud. Um, and we wanted to, you know, not really like have it go mainstream until at least like the middle of this year, like the middle of 2021. Um, and so, but, you know, we obviously launching earlier is better.
+
+And so we kind of accelerated said, okay, in March, we're going to start sharing these like password protected links with some people, just get a few hundred users kind of see how the blockchain is holding up with like this kind of activity. Uh, and so, um, yeah, so, so what ended up happening was, uh, it, it, you know, kind of went out of control and the links got like way overshared. Um, and to the point where I kind of had to go out there, uh, you know, I, I had to start, you know, saying, Hey, like, this is what this is and, and this is like, you know, what's going on.
+
+Uh, but, um, for me personally, you know, I've always been really, I think I've, I've always admired how like Satoshi kind of like launched Bitcoin, um, without creating kind of like a centralized person that everyone kind of relies on or like, this is our, you know, our guy. Um, so it was really, I wanted to kind of do the same thing there. Uh, and so I launched with, you know, uh, a pseudonym diamond hands, um, and immediately, you know, it was kind of very hard to get press.
+
+It was hard to get people to kind of listen to the story that, that is the real story versus making up their own. Uh, and so we had a lot of, uh, press saying, Hey, like this is a scam. And by the way, because it was just a prototype, there were a lot of things were missing.
+
+So you couldn't cash out your money. You couldn't actually convert your money from dollars. And I was like, wait a minute, Sean.
+
+So you're telling me that there's a website that you invest money in. You don't know who made it. It doesn't work a lot of the times and you can't get the money out.
+
+Right. And he's like, yeah, I was like, oh, okay. Got it.
+
+Just making sure we're on the same page. Yeah. Right.
+
+Rightfully so. Uh, any, any other time, I would say that's a complete scam. Uh, uh, also none of the code was open.
+
+So even though it's a blockchain and it was running on a few dozen nodes, like no one could actually audit it or be like, Hey, this is a real thing. Uh, so we were just not prepared at all. So let me, let me tell you something.
+
+There was a whole bunch of criticisms, like what you're talking about, right? The code is not open source. You can't cash out.
+
+Oh, they scraped our Twitter profiles. Um, oh, there's, you know, there's a big pre-buy people got in super cheap. Uh, you know, all this stuff, there was all these criticisms of it.
+
+We don't know who the founders are. You know, they're kind of anonymous, but my theory, and you tell, I want to know what you think about this. So I have this phrase, which is, I think emotion commits the crime and then logic does the coverup.
+
+So all these logical complaints, I don't think are the real reason why people were so like up in arms about this new project that actually is like a really net. Like if something like this existed, it would be a huge net positive in the world. And those same people hate Facebook.
+
+Well, this is the antidote. If something like this could actually get off the ground and work. And so, um, I was surprised that the emotion was there.
+
+And I think I, at least this is my theory. I think that people don't like when someone gets rich without quote unquote earning it. And I think what people saw is that the insiders, so the people who created it, or maybe the early buyers, they bought so early on the bonding curve, they got so early on and wow, a hundred million dollars is coming to this thing.
+
+These coins have run up in price or the profiles have going up in price. And there was this feeling like, like, I don't know, I don't know how well you did, but here's my guess. I think you've made tens of millions of dollars already liquid without, uh, at the minimum.
+
+And your project is like under 10,000 DAU or something like that. Right. So, uh, or under 50,000, let's say.
+
+So like in already in the tech world, this tech gets backlash because people will raise at like a hundred million dollar valuation and people are like, oh, I've been running this restaurant and laundromat for years. And how does this little app with, you know, with, with no business model be worth a hundred million dollars, right? There's already people who get upset about that.
+
+But, but the one saving grace is that they're not liquid. So it's not like the founders running around in a Lambo, just living in a mansion in LA, but in crypto you're liquid too. So you, you get the early hype and you get the liquidity of the Lambo and the mansion.
+
+And I think that that is actually what triggers people about crypto in general, Bitcoin in general, you know, people who buy an NFT and they get rich, you know, they're, they make a million dollars off this random image. Um, to, I think to other people that feels inherently unfair. And so do you, what do you think is my theory, what do you think of my theory?
+
+And then what's your kind of response to the people who do feel that way? I think there must be some like validity to your theory, because if you read, there's a great book called the infinite machine about Ethereum and it catalogs, like what happened to Ethereum, how it launched all this stuff. They got major backlash from Bitcoin people because of the way they raised money where they were like, Hey, like, you know, projects aren't supposed to like take Bitcoin for, you know, another shit coin.
+
+Like, you know, this is like bad. I mean, I read that book after, you know, kind of everything that was happening with BitCloud. And I was like, this is eerily similar.
+
+Um, so, so I think part of, part of what you're saying has to be part, like, like a factor. Um, you know, dude, look, that said, you know, since then, Diso is listed on exchanges, you can trade it on blockchain.com, Ascend X and a really big one, you know, a couple big ones are coming soon. And, you know, like the code is all open and people have gotten really passionate about it.
+
+Um, you know, contributing to it. The last couple of people we've hired are like open source, like they were just contributing to it and we hired them. So I think that, um, you know, if I saw someone who's very clearly a scammer making lots of money, I would be upset in a way that I would be, I wouldn't be as upset if I felt like there was a shred of them not being a scammer, which we didn't have because I was anonymous.
+
+You couldn't cash out. The app was going down a lot. Um, so, uh, whatever, whatever theory there is, is probably exacerbated.
+
+Can I give you some feedback? And it's like, it's a compliment. I, I, when you first launched, I was like diamond hands.
+
+Like when I think of diamond hands, I think of finance bros and, um, uh, you know, when I think of this anonymous thing, I was like, I actually, I'm not on board with this. Although I agree. I think it was wise for you to, to launch anonymously.
+
+I actually think it's wonderful that you're coming out because your personality, even though we've only known each other for 45 minutes now, your personality, I, for some, you have a very trusting, you, you, you give off trustworthy vibes. And I actually think it's, it's, you've done the right move by coming out and discussing things. Um, I, I actually, it makes me like BitClout more before the, the way that it looked and the diamond hands name, I was like, I don't know if I, uh, if, if this, if this screams trust, but you, I think it's good to have like, what, what, what's the, uh, like I'm a pretty big new, but what's the founder of Ethereum?
+
+Uh, what's how do you say? Yeah. So I found it on Twitter and I've, I've watched a lot of his interviews screams trustworthy.
+
+Like I, I, I, I, I like, I buy what he's saying. I'm like, oh, you're, you're like, he's really young, but he's way wise beyond his ears. He says a lot of intelligent things that I agree with.
+
+He seems good natured. You have a very similar quality. So I think it's smart that you're doing it.
+
+And let's not lie, Sam, Vitalik looks like a boy genius, like Uber nerd. And we're like, oh, this guy's probably going to matter, but that, you know, you're, you're, you're, you're the perfect mix of like intelligent nerd, but you also like look pretty slick. You're good looking.
+
+Yeah. You're smooth. You, you, you've got a good, you've got a good, uh, anyway, it's, this is a compliment.
+
+I think it's good that you're doing what you're doing. You're too kind, man. I appreciate it.
+
+Let's do, let's do one, one like thought exercise. Cause I think most people still aren't going to really fully understand. Okay.
+
+If a social network, oh, decentralized, blah, blah, blah. So let's take about this. Think about it from the perspective of the user who doesn't care if a database runs on SQL or the blockchain and, um, who, you know, they're going to use something because it provides some new value to them.
+
+Right. So even, even the idea of like it not being a monopoly, like, I think most people are inherently fairly lazy and they, they're probably going to just go with a default app anyways, uh, you know, for a social network, even if there was more choice. So let's just take the actual like fun bit.
+
+So, um, on BitClout, there was this idea that every creator, every user had a coin. And so I had a coin and I, you know, you give me a number, I want it to go up. I'm, I'm odd.
+
+I'm like a monkey. I'll immediately start playing whatever game is required for that number to go up. And so my coin started at a certain price.
+
+I remember it at its peak, it was like $5,000 a coin. My market cap was like half a million dollars. I was on top of the world.
+
+And now I stopped using it and it's crashed. I'm down Forex and all this good stuff. But what is the, aside from the pure gambling side of speculation and just the joy of seeing money go up, whether as a holder or the owner of the coin, what is the actual purpose?
+
+Why should individuals on a social network have their own coin? What would you do with that? Why is that a good idea?
+
+And just walk through like a use case. So no theory, but like, here's Joe, here's Sam. You guys, here's why Sam would want this and why that's good for Sam.
+
+Sam is like the idiot of this podcast. I'll take it. He was like, Sam, so do you know there's different blockchains?
+
+Yeah, go ahead, Natar. I'll let you, I'll let you lean into that. No, I do.
+
+Talk to me like I'm fine. Totally. Well, like, yeah, I mean, look, it's a great question.
+
+I mean, so there's a deeper story to, you know, and so by the way, the diesel blockchain supports all kinds of money stuff, right? Not just coins, but also NFTs and diamonds, which are like tips and people can build other things too. But the coins, having a coin associated with your profile is kind of what I think to be kind of, you know, this wave was about NFTs.
+
+I think the next wave is going to be about creator coins, also known as social tokens. And the reason why I got really excited about them as a, as like kind of an asset class is actually a cashflow story. So essentially, you know, with DSO, right, when you use any app, right, to access DSO, you can do a lot of the same things you do on a traditional social network, like you can post, and you know, all that kind of stuff.
+
+But you know, you can also do stuff with money, and you have new ways to monetize that kind of arise. And so what's interesting is that essentially, you can have creators making money through these other features, and then take a percentage of that cash flow, and send it back to that creators coin holders as a dividend long term. And so just to give an example, right, today, when you sell an NFT on any DSO app, you know, like Polygram or Diamond, you can actually set a percentage that's like what we call a creator coin, a coin holder royalty.
+
+And so every time that NFT resells, a percentage of that sale goes back to the coin holders. And so I think that essentially, the coins, if you if you play this out, right, and you have like, for example, promoted posts where someone can give you an you can have an inbox of posts that people pay you to like repost your followers, and a percentage of that can go to the coin holders. You know, you kind of have all of these new kind of like money native, you know, blockchain native business models for creators making money.
+
+And if you allow a percentage of that to flow to the coins, then suddenly, it's kind of like you unbundled the equity of a company like Facebook into like each creators coin, and therefore the fans or the holders of that creator. And so to me, the coins are exciting as a means long term of like democratizing, kind of like the cash flows of a social network into the fans of a particular creator. And if you play that all of that out, suddenly, it makes it a lot easier for really awesome smaller creators to get discovered, right?
+
+Because when you create that kind of loop of like, oh, if they become big, cash flows will flow to their coin from their monetization on the platform, right? And those cash flows will be big if they're popular, suddenly you want to back the smaller creator who you recognize is awesome, but that nobody else really knows about. And so to me, kind of democratizing the ownership of a social media platform is like what the coins are about and creating that incentive for smaller creators to get discovered, get invested in, have people kind of grow with them is kind of the long term of it.
+
+But obviously, it's early. So a lot of people don't, what's it gonna look like in five or 10 years? I think what do you think your business will be like?
+
+Yeah, I mean, so even in a couple of years, you know, I mean, you know, let's say we have like, you know, 10 million daily active users, right? There are a lot of ways that we can build monetization for creators into the blockchain. NFTs are already there and creators have made hundreds of thousands of dollars off of that, like tens of thousands.
+
+I think for one of them, they had over $100,000 flow to their coin already through the creator coin royalties. But there are other features too, you know, like for example, that like that pay to promote or pay to repost kind of mechanism where an advertiser can say, hey, repost this to your fans, I'll give you this amount of money. And then a percentage of that can flow to the coins.
+
+So basically, anyway, new ways that we create for creators to monetize on the platform, a percentage of that can flow to the coins. And suddenly the coins kind of become not just about pure speculation, but about, hey, like, what kind of cash flows is this creator going to do? And that it's going to be a lot because not just because, you know, the platform is more efficient, you know, like, I do think, you know, things like NFTs, things like, you know, pay to repost can be more efficient than the traditional model today, where we have kind of a centralized company just showing random ads.
+
+But yeah, but also just because there are so many more things that you can do, right, that could, you know, earn cash flows that end up going to the coin that we haven't even thought about yet. So you did the thing that I was hoping you wouldn't do, which is you did the theory. Sorry.
+
+So, you know, anytime this is the tell in the tech world, anytime somebody starts talking about democratizing anything, it's the smart guy way of... Democratizing to do... It's true.
+
+I can't stand that word. Yeah, exactly. You know, you want your company to be disruptive and democratizing at the same time, right?
+
+And also, if they say there's a new asset class, they're probably, it's probably a good idea, but they're giving you kind of like the grandiose Steve Jobs vision. Actually, I shouldn't say Steve Jobs, because Steve Jobs is great at basically saying a thousand songs in your pocket and like, just leading with the killer hook. And I think for this, you know, what I was hoping you would say, and so I'm going to kind of say it here, is I don't know if you know this, but Sam is a aspiring fitness influencer, a rising fitness influencer.
+
+And so those who are... Yeah, rising, I should say, not aspiring. He's aspired.
+
+Oh, perfect. I got my two now. I love it.
+
+You want to plug your water brand? Oh, you're up here. Dude, Bitcoin...
+
+My niche is like guy next door. Your niche could be like, like... Love it.
+
+I'll be like the nerd who, you know, started really frail and then made his way. And there's definitely a need. And so, you know, someone like Sam basically, I know Sam, I say this guy and I see his videos.
+
+I'm like, oh, these are great videos. He's only getting, you know, a couple thousand views, let's say right now. But basically what this world would let me do is as an early believer, I can bet on Sam.
+
+I could say, I like this guy's content. I think this guy's going to blow up. And I can kind of vote for his success.
+
+I can give him some... I can buy his coin, which gives him money to like make better content. It gives him a little boost of morale to keep going.
+
+But it also lets me go on the ride with him because I think we've all been there before. We discover a band early or a brand early or an influencer early. And then you believe in them and you're so right.
+
+They actually do take off. They never knew you. They never had a real relationship with you.
+
+And you didn't benefit from the fact that, you know, Kim Kardashian... If you knew Kim Kardashian back when she was just Paris Hilton's closet organizer and you thought she was great, you missed out on the ride. And so this lets your true fans go on the ride with you and it turns your fans into sort of shareholders with you.
+
+And so, oh, bro, I study this stuff. You know, Kim Kardashian, where did this come from? I have to know.
+
+I must know. And sure enough, there's a story. And so, you know, Sam, let's say I would bet on Sam.
+
+Sam would get that cash flow. Sam could use that to make a cooler video. And when Sam makes that video and he gets more followers, they have to buy in at a higher price point than I did because now Sam's more established.
+
+So my stock is going up. I'm earning instead of just following, right? I own instead of just following, which is the way the world works today with Twitter and Instagram.
+
+You just follow, you don't earn. And then this, you know, furthermore, Sam could say, Hey, you know what? How do I make my coin really valuable to hold?
+
+What if I kind of only fans it? And I said, I'm going to do some exclusive stuff with only my coin holders who hold over a hundred of my coin. So it's up to him to decide if he wants to make his coin more juicy, more, more enticing to hold, which again, will make my stock go up.
+
+If I know Sam's the kind of guy, he connects with his fans. He's going to put in the effort that's going to make these coins more valuable. And so it takes this idea that's been around for a long time, the thousand true fans, the thing that any artist knows that they need, those real believers, and it turns them into people who actually benefit from your rise.
+
+And so that's what I think, that's the good thing that I think will come of this aside from, you know, destroying Facebook and all that good stuff. I think the good thing that will come of this, it'll make being a tastemaker and a curator, like a job, pretty much. You can actually get paid for having good taste, for following, for believing in somebody early on, which is the way that things should be.
+
+I think. Yeah. Sean, how are you better at explaining this than me also?
+
+I, I, I'm kind of, uh, I'm not offended, but, uh, that's awesome. Well, dude, when I first shouted out big cloud, I got a lot of shit. And I was like, okay, I got to come up with a reason that I like this.
+
+Besides, I think this is going to make a lot of money for me. Uh, so I started thinking about what, what is the appeal here? And I had to defend myself and in doing so, I had to come up with a case of why does this show matter at all besides just being a gamble?
+
+Yeah, that's true. I did. I, I, I remember it.
+
+Uh, but yeah, Sean, just to add, which is really interesting. Uh, like you said, there's actually never been a way to actually invest in someone when they're small and make money on their rise, like in like this easily, this efficiently. Uh, and what's really interesting is there's actually yet another interesting kind of like layer on it, which is once you invest in someone, your bias is to be supportive.
+
+Your bias is actually to be, Hey, I want this guy to succeed. I want this person to, to, to be something. And you can align in a way that you can't really on like, you know, without that mechanism, like being able to buy in to someone, you know, uh, uh, creates kind of an incentive that doesn't exist.
+
+And what's crazy is that, um, even BitClout, you know, BitClout, Diamond, all these apps, uh, they're actually very positive discourse. A lot of it, um, even though, you know, there's not really any kind of, you know, there's not like, there's less moderation than traditional social media. Right.
+
+Um, and the reason I think is basically you're investing in people, right. You're, you're going long. Uh, and, and when you give people the ability to, to like move money around, right.
+
+People naturally go long. And when they go long, they actually, uh, uh, get aligned and, and want to support you. Um, and so weirdly enough, like, I love, like when people say like money is like the root of all evil, you know, like money is bad.
+
+And, and I think that's part of why people reacted weirdly to BitClout. Cause like, Oh, money prices, whatever. But like, if you just look past that for two seconds, you'll see that it's actually being used as an alignment tool.
+
+That's making a lot of positive things happen that haven't happened. What are your, um, let me, let me ask you a couple of personal questions real quick. Right.
+
+What do your parents do for a living? Yeah. So, uh, my, my dad was an engineer and my mom is a social worker.
+
+What city? Yeah. So my mom was in Virginia where I grew up, uh, for a long time.
+
+She actually moved to San Francisco. Uh, uh, my dad passed away a few years ago, but yeah. Looking at your LinkedIn, you, you, you've always been a freak.
+
+You went to Princeton, you know, you, you, you, you, you, you studied computer science and applied math at Princeton. You worked. Yeah.
+
+It's a compliment. That's a compliment. That's a compliment.
+
+You worked at D Shaw, the famous for, uh, being high frequency training, but also like, that's where I think Jeff Bezos worked. And, uh, the founder, I forget his name. Shaw.
+
+Is it just Shaw? Uh, David Shaw. David Shaw.
+
+Yeah. He's, you know, a wizard. You worked, you went to Google at, uh, and you were a software engineer there.
+
+And then you raised $125 million for a startup, which is crazy or 133 million. You, you, you said on this blog post, you gave the money back cause you know, it didn't work out so well. What are your, what does your mom think about like when you're trying to explain to your mom, who's a social worker, my mom's a teacher, so she doesn't, you know, and I'm in tech too.
+
+When you're explaining to your mom, what you do for a living or your aunts and uncles or your brother and sister friends who aren't, you know, like you, what did they think about this? The fact that a 29 year old, although, you know, you were 25, it looks like when you raised 133 million, are they like, what do they think of this life that you have? Yeah.
+
+I mean, so my mom watches every single video that comes out. She's going to watch this and she's going to call me about it and, and tell me all her thoughts. Uh, so, so there's that.
+
+Uh, but yeah, man, I mean, I just, you know, I live modest life, you know, I, I don't think anything really has changed for me personally. And like, look, you know, to your point and to Sean's point earlier, you know, on like, oh, someone made so much money without like having produced something. Right.
+
+Um, you know, I'm very serious about just mentally. I don't think of myself as having any money. Right.
+
+Until we've really made it like, you know, I'm talking millions of users, people really getting value at a large scale. Right. Uh, so to me, it's very important to not think about, oh, I'm, I've made it when, you know, like, like we have a lot to do like left to do.
+
+Um, and so, yeah. And, and by the way, you know, funny, funny fact, uh, with basis, uh, my last company where I raised 140 million and returned it. Um, I actually had less money after that in, in my bank account than when I started it, which is basically about three years of runway from my like Google and D.D.
+
+Shaw savings. Right. Or, uh, no, no, I'm very lucky just because, you know, I, I mean, I had, you know, like three years of runway, like, you know, maybe like a few hundred K or whatever.
+
+Uh, and, um, I'm very lucky to have had that, uh, because if I didn't have that, I would have had to go back immediately to working at Google, which, oh, oh my God, that's so bad. It's the best company in the world. I'm very lucky.
+
+Right. But, um, but yeah, my, my, like, it's funny, like I've been through like very high highs and like, well, the lows aren't very low because I'm very lucky obviously. But, uh, but yeah, after basis, I was like, I'm going to try and do something else that's really impactful, like not in the context of working at a company.
+
+And if I can find something before I run out of money, that's great. But if not, I'm going to go enjoy my life at Google, which I love, you know, I really love being an engineer at Google. I like to talk about this human shit and you're, I have a feeling that this, I was not, you heard the last podcast.
+
+I was the, I was the hater of the two, uh, of, of big cloud. My opinion is likely changed as of now because of how, um, you know, Sean's like this, uh, my good friends, Neville is like this. You're incredibly emotionally stable.
+
+And because of that, I actually think that that could make, uh, this business incredibly successful. Well, I mean, I appreciate it, man. I mean, yeah, I mean, I think that, uh, yeah, I mean, I think it's just really important to keep perspective.
+
+Right. You know, I mean, and also like, you know, Sam, just to emphasize, you know, I'm really lucky. So it's not like, it's a lot easier for me to be emotionally stable.
+
+I feel than like someone who's actually had it pretty hard, you know? And so I think it's genetic. Yeah.
+
+I think it's genetic. And I think it's upbringing. I think if you're, if you're surrounded by love when you're, when you're growing up and for some genetic stuff, you're, you're just going to be like pretty stable.
+
+It's, I just like, now I understand. Now I want to buy your coin on big cloud. Oh, nice.
+
+Oh, I'm I, that is like the biggest compliment you can give me in this entire podcast. I actually own some Sean already, but I don't know, Sam, if I found what's your handle on, on, uh, on diamond or, I mean, that's all so. I don't know if you made your account.
+
+I haven't logged in. We'll find it after this. Yeah.
+
+Yeah. I think you've converted me now. I, like I said, I, I don't think I was complete, a complete hater, but of the two, I was the, the more of the hater for sure.
+
+Sean was like, I probably made fun of Sean cause he was like, this is the greatest thing ever. Uh, and, and, and we'll see who's right. But I, I, you could have Well, I think I, I kind of, I don't know if I fully said this the first time, but basically I think that whoever can, can break through and create a decentralized social network, social network will, that'll be one of the most important changes in the world over the next 20 years.
+
+Like self-driving cars, I think is going to save a bunch of lives. I think AI is going to introduce a lot of like productivity gains and like, you know, kind of cause some labor like changes in the way that labor works. And I think that whoever can take social networking and make it an open, uh, do it the crypto way with the crypto values.
+
+I think that that person or that, that group of people is going to have done a lot of great in the world. And I think it's going to be a huge project. I think it is going to be a multi-trillion dollar project when it, whenever it works.
+
+And I think I said this early on, which is, I don't, I'm not saying that this one will work. I think there's still probably a sub 5% chance that this works. And I said, but if it works, the payoff is huge.
+
+So I, that's the type of bet you make in the tech world, low probability, high payoff. And when you, when you go at it with an enthusiasm, you're going to learn about it and you're going to go for that ride with a bunch of early adopters. And even if it crashes and it doesn't end up working out, we're going to all have learned a bunch of lessons so that when the right one does come around, you say, ah, that one makes sense.
+
+This solves the problems of the last one, or this feels different. And so I know that this is the real one, but you never know unless you go in with, you know, sort of a belief mentality towards these things. It's easy to just say, this is not going to work and you'll be right on 99 out of a hundred times.
+
+It's just that the one that a hundred matters, you'll have also said is never going to work and you wrote it off and therefore you didn't benefit from it in any way. That's like, you know, optimism pays in the tech world. And so even though I got a lot of shit, you got 10,000 times more shit for, for, for doing the project.
+
+Um, I just feel like that's such a misguided way of living. And like, you know, again, optimism pays in this business. So I find skepticism is useful at certain points, but you know, you want to default to optimism and then go in and find the things that don't smell quite right.
+
+And, uh, but, but, you know, even then you'll just have learned a bunch and gotten a bunch of experience and played with all the new things so that, you know, when the real one is here. And, and yeah, and I think it's really awesome that, you know, for me, you know, I get to do the thing that I love in the world, which is to build cool shit. And, uh, and, and that's helpful to people.
+
+And even though, like you said, like 5%, you know, and, and you can do that. And, and it actually is something that, uh, you know, at least the expected value can help. But, uh, give us, give us the, uh, the craziest story.
+
+Cause I remember I was on big cloud and it's like, Oh, Pamela Anderson joins and she's a huge fan. And then like, I don't know whoever, it was all kinds of crazy characters, you know, that were joining this thing. I was like, I haven't thought about Pamela Anderson in like 20 years.
+
+Uh, this is amazing. And she's like, you know, good to creating all these incentives for her coin holders. You on the inside, every day, you must've just been seeing all the random stuff and getting threats from one side and praise from these random people.
+
+Give us a, give us a war story or a crazy story that like, is just kind of fun. Uh, that, that, that's happened. Um, yeah.
+
+I mean, what's interesting is that it did attract a lot of like pretty famous people to like join or create profiles. You know, I think like Diplo and Blau, Tyga and Antonio Brown are still like posting there and stuff. Uh, but, um, I think probably the craziest story is, uh, at some point I went to a dinner, uh, in LA and I don't know if I'm like even allowed to say, but there were like a lot of famous people there and I got to kind of like tell them about it.
+
+Uh, give cat, give, give, give categories. Like you're talking like, like that fast and furious actors. Are we talking?
+
+Yeah. Hollywood. No, no.
+
+Like the bad Hoobah stank. How do I even, uh, there were billionaire tech CEOs and then also, uh, the biggest celebrity, like someone's name who Sean mentioned earlier, uh, who was a closet, closet organizer. Uh, Shimshark.
+
+Yeah. Uh, all of them. Yeah.
+
+And so I think, um, yeah, just being able to kind of explain our vision to, to all these people was really awesome. Uh, and, uh, and yeah, and I think what's cool is like, you know, when you really get to explain it, everyone gets excited about it. Even, even in spite of kind of all the initial, like, oh, you can't cash out or like this and that, like when you're like, Hey, like this is what it is.
+
+Um, it's inspiring. And like you said, Sean, uh, if we can actually use these features, these new kind of like money features, like the coins, like the NFTs, like diamonds, all that stuff to decentralize social media, it's going to do a lot of good, you know, um, independent of the fact that they make creators more money and align with fans and all that. Did you ever think that when you were in high school in Virginia, that you'd be a crypto nerd hanging out in LA at a mansion dinner with Kim Kardashian?
+
+I mean, what's funny about it is, uh, I was really into Bitcoin in college in like 2013. Uh, so I built a minor, I met Mark Carpelles, who's the CEO of Mt. Gox.
+
+Uh, my friend and I like went to Japan and randomly tweeted him and he was like, come by our office. I met him. So I was really into like Bitcoin and crypto.
+
+Uh, and you know, when Bitcoin crashed, I was like, okay, I guess I'm going to go do my hedge fund thing or whatever. Uh, but it's funny. I think if you told like college natter that like, this is what he'd be doing, I think he'd be like, yeah, that's awesome.
+
+You know, that's, that's cool. I think that's about right. Uh, the game card actually in part, like, you know, maybe not.
+
+No, I mean, that's badass. Um, can, what, I'm gonna, it's like, I'm asking you stock tips. I'm on BitCloud.
+
+Uh, I'm on the site now. What, uh, and I could see this. I mean, I could just go and find it, but what, what creators do you own and what, what, uh, what, which one are you gonna be making any purchases anytime soon?
+
+What do you like? Yeah, definitely. I own active creators.
+
+So if a creator is active and like posting and like doing fun stuff or interesting stuff, I buy them. Um, but really the thing that I, uh, you know, like my, the hedge fund side of me really likes is NFT artists because for NFT artists, uh, even today, not theoretical, um, all of them set royalties that go to their coins. Um, and so there's real cash flows there that are often like totally disparate, like, you know, like their coins are not like correctly priced for like how much money is gonna actually flow to their coins.
+
+Um, and so I've been, yeah, I, I bought like Spookies and, um, uh, Cloudpunk, you know, early Illumina Monati is like another one. Um, and those like, just the cash flows are like above what it was when I like, you know, those are made up for what it was when I invested in it. So, uh, so that's kind of like, I think that's a strategy that like just traditional, like I do like, I get it.
+
+Um, and then as we create more cash flows, going to the coins will be even more. Um, but aside from that, because I know that, you know, creators who could get big are gonna have ways that cash flows go to the coins, the smaller creators who I think are active and are like gonna do cool shit. Anyone in particular, you know, that's, that's like the other one.
+
+Um, oh, there are a bunch. Um, well, so Dharmesh has been crushing it. He's not a smaller creator, uh, but he's just been super active and doing a lot of stuff.
+
+He's the number fourth creator of all time right now. Yeah. Yeah.
+
+Yeah. He's, he's, he's very big on the platform. Um, I'm trying to see, like, there's like Matryoshka who's, who's a woman who's very active there and does a lot of stuff.
+
+Tidgin is this developer who does a lot of awesome stuff. Um, yeah, it's a DTA. You want to know my, my strategy that, that worked on BitCloud at least early on this worked pretty well.
+
+I, I, I, I was, I was thinking about, I was like, okay, who do I buy? Do I buy the famous people that are not on yet? There's people building scrapers to try to figure out someone's thinking about it or they tweeted it out and it hasn't gotten verified yet.
+
+So go front run that. I figured out there's a very simple way to win. And I said right now with any early project, I've built a bunch of social networks.
+
+And I know anytime you build a social network at first, 70% of the conversation on that social network is about the social network. This happened with the stuff I built. It's happened.
+
+If you go to clubhouse, 80% of the rooms are just ended up, they will end up talking about how great clubhouse is or what it's going to be, or what's bad about it. They're just always talking about the platform itself. So I knew, okay, if people are going to be interested in the platform itself, I invested in all of the analysts who could, who could go through the on-chain data and report how, what prices were working, you know, how many, how many new users there were and all that good stuff.
+
+And so I bought all the analysts dirt cheap and they went up like crazy. Cause again, they were talking about the platform in a way that was a differentiated because the normal person didn't know how to go analyze the blockchain. And then the other one was basically rich, active people.
+
+So I said, I saw Dharmesh was just going to buy his own coin and whale shark was just going to buy his own coin. Craig Clemens was going to buy his own coin. And so it's like a company that does a share buyback.
+
+It's like, oh, okay. This person has the, they have enough funds where they could like dramatically move their own coin price. So all I got to do is just buy them and wait for them to do their buybacks.
+
+And sure enough they did. And Dharmesh even said it publicly. He's like, I'm going to buy for every follower I get, I'm going to buy back my, every, every coin holder I get, I'm going to buy back 10 X of my own coin or something crazy like that.
+
+And I was like, well, that's a Ponzi scheme that I love. That's perfect. Great.
+
+Uh, like I'll just hitch onto that ride. This guy's guaranteeing. And I know he's a man of his word.
+
+He's going to buy, he's going to buy back his own stuff and I could just front run that. So that worked amazingly at the beginning. I don't know if that would still work now.
+
+I mean, I think the strategy of forecasting what content is going to be popular and then investing in the people who are producing it. I mean, that's like, that's like the name of the game, I think. Um, so I think that's pretty awesome.
+
+Uh, like there was a guy who would do, uh, fake designs, like mock-ups like, oh, this is what the client could look like. Oh, if they added NFTs, this is how it could look. It's just like, kind of like design porn.
+
+Yeah. Design porn. I was like, oh, that's going to work.
+
+People are, again, it's talking about the platform and in a differentiated way, because this guy's a designer and he's going to just design mock-ups all the time. This is going to go viral. Great.
+
+Yeah. No, that's genius. Honestly.
+
+Um, yeah. And it'll be interesting to see how it works at scale. Um, especially because diamond app is like so mainstream and I think can actually get like some bigger people to like join and start using it.
+
+Um, yeah, I, I honestly, I wonder how it's going to play out. Um, by the way, another fun thing we didn't talk about is there's actually an algorithmic feed that's like open source now built into the blockchain. So that would probably play into your strategy where you can look at how the feed works and then try and figure out what, what's going to get to the top.
+
+It's pretty hard to game, I think, but, uh, but that's, that's another like interesting. Have you talked to Darmesh? So for the people listening, Darmesh is one of the co-founders of HubSpot.
+
+As of today, he's probably worth just off HubSpot stock. It's public. You can go and look, probably like a billion and a half.
+
+So very, very, very successful. He was part of big cloud very early. I mean, he, he was telling us very early on that he was buying a lot and he's, he wasn't an angel investor, but he was an early investor in Coinbase.
+
+He was an early investor in crypto. He obviously has HubSpot, wildly successful. And he's like, this is my thing.
+
+So have you, have you hung out with him? He, that guy is interesting as hell. Well, what's crazy is I think I met Darmesh like pretty late in the game.
+
+I had like a pretty short call with him where I just kind of, we just talked about, you know, life, what the thing is and what, what BitCloud and Deeso is and all that stuff. Um, so what's funny is I think Darmesh just like really independently kind of saw, whoa, you know, like, you know, if, like you said, Sean, you know, in the 5% where it works or whatever, like this is huge. Uh, and, um, so what's funny, yeah, I, I've had a very short conversation with him.
+
+I'd love to, to hang out with him more, but, uh, you know, he's busy and, uh, obviously we have a lot to do too. I think he's busy using Big Cloud. I honestly think, you know, He does post a lot.
+
+I think 99% of people, um, they'll say they're not doing it for the money and then they totally are. He's like the one person I believe that is not actually doing it for the money. So I, I genuinely believe he's doing it because he's like, I want this to win.
+
+And in order for this to win, we need like economic activity. We need like positive energy in the system. So I'm going to literally like almost in a philanthropic way, put a bunch of money into just like get kickstart this because it's going to take enough people doing that.
+
+Because like I said, right now it's small, it's really small. And like that, you know, there's the, with crypto, there's these hype cycles at the beginning, but there's a vicious other side, which is that if it doesn't just keep magically going up, people get disillusioned for a bit and then it has to get another thing that like picks it up. And so, um, I think he was genuinely just trying to kick, you know, kickstart activity and enthusiasm.
+
+Totally. And I mean, another thing to your point, Sean, uh, I have, you know, good news to you, for you, like with regard to if we can do like a social media, you know, decentralized social, it's going to be really awesome, which is that, um, I actually think I won't say the word it's inevitable, but I think it's actually very asymmetric, like in favor of decentralized platforms, actually winning. Um, the main reason being that I think when all the content is open and anyone can build on it, I think that the speed of iteration that you can have and the like caliber of product is just a lot higher.
+
+Um, so, you know, just like, you know, on that 5%, you know, it's like if, you know, for example, just because all the content is open, right, we can have like all this over a hundred teams that like we didn't even hire, just go out there and build way better apps than we were capable of building internally. But then it's even bigger, which is like, you get like, once you get a little bit bigger, you know, let's say you have like a million users. Now you have like traditional publishers basically looking at the open content and being like, Hey, like with one engineer, we could spin up like a speed, a feed like ESPN or something can spin up a sports feed for sports influencers.
+
+Right. And be like, Hey, like this is cheap. Like we should do this and get into the social game and make marginal money.
+
+Um, and then, you know, in other countries, this is, I think, something that Dharmesh really likes, uh, you know, for example, in a country like India or Russia or something like that, uh, today they use Twitter a lot. They use, they use basically apps built predominantly by people in Silicon Valley. Uh, and the reason is that, you know, Silicon Valley has a monopoly on the content and you know, they, because they have that, you have to use their apps, but when all the content is open, you can actually have people in the native country, build the apps that you use and tailor it to their, uh, to their user base.
+
+Um, you can read stories about how Facebook was just horrible in Japan for a really long time. And like nobody, you know, they had to make all these optimizations that were like Kluji, uh, to, to, you know, that they were just leaving on the ground. Like no one was doing them because they're centralized kind of centrally planned organization.
+
+So I think once you have a blockchain that can actually handle posts and data, which hasn't really has not existed until Diso, um, I, I think it just kind of opens the floodgates for this like number of innovators and an amount of energy that wants to build that is, it just has to beat the centrally planned model. Like I just don't see how it doesn't. You gotta get the problem though.
+
+I know that like, I, I, it always works this way. You make a big splash. Um, and then there's like either down, it goes down or it plateaus and then it needs to go up right now.
+
+You guys had that massive splash. It went away for a minute because as it does everything, novelty always goes, it goes away. And then you got it.
+
+You're going to have your comeback up. And so I hope that you could pull this off and you have to make it so like, I want to go there and all of us want to go there on a consistent basis. Because if you can't pull that off, you're not dick.
+
+And I want you to kick ass. Totally. And I have a funny story for you actually.
+
+Uh, so I think on that, the crypto side of things helps us a lot, uh, because crypto, it's really hard to kill something that's crypto. I've, I've learned. Uh, and so just to give you an example, uh, CryptoKitties was this NFT project that got really, really big and then died or whatever.
+
+Right. And what's funny is during the CryptoKitties hype, I gave a talk about my project different. It was like a stable coin.
+
+Uh, but the co-founder of OpenSea, Xander Tala was at the talk. He came, he came up to me after and was like, Hey man, like, you know, I'm thinking that, you know, I like this like NFT thing. We're going to make a marketplace for things like CryptoKitties.
+
+And I was like, dude, really? You know, like, what are you doing with your life? This NFTs are dumb.
+
+That was like, that's never gonna, you know, happen again. But you know, crypto has a way of like when there's a really interesting concept, which I think NFTs were right. Uh, it kind of plays dead for a while and then people realize it, it comes back, it gets that kind of bootstrapping.
+
+Yeah, absolutely. Um, and so, uh, you know, so from my standpoint, obviously we're doing a lot of fun stuff. We have actually just today, we rolled out a referral program that any one of the apps can use, uh, you know, where if you, someone can share you a link, they get $25, you get like $5 or something.
+
+Uh, and so, you know, that's the first money we've invested in growing the user base. Uh, and I think that's going to do well, but I really think a big part of it is, you know, when you have a really good concept, which I think creator coins alone are, are interesting, not to even mention like diamonds and stuff, uh, sometimes just take some time for the market to figure it out. Uh, but yeah, I think the initial hype kind of, to me showed me, okay, this is, this is something that, you know, once people maybe get a little bit bored of NFTs, they're going to look at the next thing and this is just going to be waiting, you know?
+
+So I don't know, obviously not, it's all five, whatever the 5%, like Sean said, I love that. But, uh, that's my, you know, that's kind of my view on it. It's awesome, man.
+
+Well, listen, I appreciate you coming on. Uh, I think you did great. And I think that for people who, uh, who like trying new stuff, they should go check it out.
+
+So what's the best starting point for them now? So is it, is it BitClout still or is there a better starting point now? Yeah, well, in six months it might change, but right now, diamondapp.com is awesome.
+
+Uh, it, you know, the developers basically wanted to make it a 10X of BitClout and I think they achieved it. Um, so that's great. Uh, and then if you like NFTs specifically, polygram.cc is a really awesome place to browse the NFTs.
+
+If you're into that, uh, it's just a great, great way to look at them. But yeah, man, thanks for having me. I mean, this was incredible.
+
+Like you guys, I, like I said, I'm, I'm a little bit like afraid of how well you explained it and how much better it was than me. But, um, yeah, I gotta, I gotta work on that, I guess. Just send people like this, like a clip or something.
+
+We have a Jonathan on the line. It's okay. When you were in college, when you were in college, like mining Bitcoin, I was just, uh, you know, sitting there trying to, I have no skills.
+
+So I'm just there, they're trying to convince people to buy, you know, like random like objects in my room. And so, you know, you get good at what you get good at. You got good at something that was extremely valuable.
+
+And I got good at this other thing, like explaining things. It's gonna work out for you. I just, I know, I know, I know like this is like this crazy bet that I'm making on you, but something tells me you're gonna be okay.
+
+All right, dude. I mean, look, the upside of all this is that if DSO works, it helps a lot of people, man. And honestly, not even DSO, if anyone figures out decentralized social, and if we helped in that, like really like my, my mentality is if we instigated something really good, we've done a good thing for the world.
+
+And I sleep very well at night knowing that no matter what happens, like pushing this forward, let me ask you, you know, uh, has helped, you know? Well, let me ask you one, one other thing I've always wondered, which is you had all these big people invest in buying, buying the currency before you guys launched and then you launched and they didn't all use it. Like, where are they?
+
+What's up with that? Did you hit them up? And you're like, Hey brother, it would be nice if you're the number one or two person on the network.
+
+You own the coin, you invest in this before we launched. Can you go like, you know, use the thing like, or did you not pull that card? What's up with that?
+
+That must've, that must've sucked a little bit. That's actually mostly me. Uh, so we have a lot of people who are like really big names, not just in VC, but also like in Hollywood and all that stuff who, who bought DSO.
+
+Um, and they asked me like Natter, like is now the time like to really like bring this in and like do it. Uh, and I just didn't feel like BitCloud was quite there yet. Uh, now, uh, with Diamond and Polygram, I mean, I think now, you know, I, I think it's a bit different, but it was mostly me kind of, cause I don't want them to join, bring all their users.
+
+And then people are kind of like, this isn't good enough. This looks weird. And we lose like half of them right out the gate.
+
+Right. So, you know, like, like I said, we're playing the long game here. Um, so the longer we wait to really bring in the big people and tell them, Hey, now is the time.
+
+Uh, I think the better it's going to be and the more users we'll have. So, uh, but we're, we're there, I think with Diamond. Uh, so you'll probably start seeing, uh, some of the bigger people using it and being a part of it.
+
+Well, thanks for doing this. We're like, yeah, our schedule got all screwed up. Sean was late cause his house is flooding and we were, we were tinkering with the timing and you overstayed with us and we really appreciate that.
+
+So you've been very generous with your time. Um, this is badass, man. Awesome.
+
+Yeah, this was fun. Good to meet you. Where should people, uh, find, follow you?
+
+What's your, so are you still under diamond hands? Yeah. I'm at Natter now.
+
+Uh, you can follow diamond hands and Natter. Diamond hands is going to still going to do some fun stuff, but, uh, Natter is where I post from. So yeah.
+
+Awesome. All right. All right.
+
+Thank you so much. Thanks for coming on. Incredible.
+
+Just incredible. Now, when we find out that you, uh, don't let have DJ moments play, put our Instagram more favorite titles of why the people look up like that. Love by you whatever you make.
+
+Good to meet you. So, when we start to probably take our darlingades and livepodcast message, we see that highlights and downstairs differences before entering podcasts even in the description of our

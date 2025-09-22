@@ -9,6 +9,7 @@ from typing import Optional
 import json
 
 from ..core.knowledge_indexer import KnowledgeIndexer
+from ..core.persona_manager import PersonaManager
 from ..data.storage.artifacts import ArtifactManager
 from ..config.settings import Settings, get_settings
 from ..utils.logging import setup_logger
@@ -26,6 +27,7 @@ class PersonaBuilderCLI:
         self.logger = None
         self.knowledge_indexer = None
         self.artifact_manager = None
+        self.persona_manager = None
     
     def setup(self, config_path: Optional[str] = None, debug: bool = False):
         """Setup CLI components"""
@@ -50,14 +52,23 @@ class PersonaBuilderCLI:
             self.settings.development.debug_mode = True
         
         # Initialize components
-        self.knowledge_indexer = KnowledgeIndexer(self.settings)
-        self.artifact_manager = ArtifactManager(self.settings)
+        self.persona_manager = PersonaManager(self.settings)
+        # Note: knowledge_indexer and artifact_manager will be initialized per-command with persona context
+        self.knowledge_indexer = None
+        self.artifact_manager = None
     
     def build_knowledge_base(self, args):
         """Build or rebuild the knowledge base"""
         self.logger.info("=" * 60)
         self.logger.info("BUILDING KNOWLEDGE BASE")
         self.logger.info("=" * 60)
+        
+        # Register or get persona
+        persona_id = self.persona_manager.get_or_create_persona(args.persona_id)
+        self.logger.info(f"Using persona: {persona_id}")
+        
+        # Initialize persona-specific knowledge indexer
+        self.knowledge_indexer = KnowledgeIndexer(self.settings, persona_id)
         
         results = self.knowledge_indexer.build_knowledge_base(
             documents_dir=args.documents_dir,
@@ -85,6 +96,13 @@ class PersonaBuilderCLI:
         self.logger.info("=" * 60)
         
         try:
+            # Register or get persona
+            persona_id = self.persona_manager.get_or_create_persona(args.name)
+            self.logger.info(f"Using persona: {persona_id}")
+            
+            # Initialize persona-specific knowledge indexer
+            self.knowledge_indexer = KnowledgeIndexer(self.settings, persona_id)
+            
             artifact_path = self.knowledge_indexer.extract_and_save_persona(
                 documents_dir=args.documents_dir,
                 persona_name=args.name,
@@ -96,6 +114,9 @@ class PersonaBuilderCLI:
             print("\nPersona Extracted Successfully!")
             print("-" * 40)
             print(f"Saved to: {artifact_path}")
+            
+            # Initialize persona-specific artifact manager
+            self.artifact_manager = self.persona_manager.get_persona_artifact_manager(persona_id)
             
             # Load and display summary
             persona = self.artifact_manager.load_persona_constitution(name=args.name)
@@ -127,7 +148,7 @@ class PersonaBuilderCLI:
     
     def list_personas(self, args):
         """List available personas"""
-        personas = self.artifact_manager.list_artifacts(name=args.name)
+        personas = self.persona_manager.list_personas()
         
         if not personas:
             print("No personas found")
@@ -137,14 +158,15 @@ class PersonaBuilderCLI:
         print("-" * 60)
         
         for persona_info in personas:
-            size_mb = persona_info['size'] / (1024 * 1024)
-            compressed = "✓" if persona_info['compressed'] else "✗"
             print(f"Name: {persona_info['name']}")
-            print(f"  Timestamp: {persona_info['timestamp']}")
-            print(f"  Size: {size_mb:.2f} MB")
-            print(f"  Compressed: {compressed}")
-            if args.verbose:
-                print(f"  Path: {persona_info['path']}")
+            print(f"  ID: {persona_info['id']}")
+            print(f"  Created: {persona_info['created_at']}")
+            if persona_info['stats']['last_updated']:
+                print(f"  Last Updated: {persona_info['stats']['last_updated']}")
+            print(f"  Documents: {persona_info['stats']['documents']}")
+            print(f"  Chunks: {persona_info['stats']['chunks']}")
+            if args.verbose and persona_info.get('metadata'):
+                print(f"  Metadata: {persona_info['metadata']}")
             print()
     
     def analyze_knowledge(self, args):
@@ -273,18 +295,24 @@ class PersonaBuilderCLI:
         print("\nTesting components:")
         
         try:
-            # Test vector store
-            stats = self.knowledge_indexer.vector_store.get_collection_stats()
-            print(f"✓ Vector store: {stats.get('total_chunks', 0)} chunks")
+            # Test persona manager
+            personas = self.persona_manager.list_personas()
+            print(f"✓ Persona manager: {len(personas)} personas registered")
         except Exception as e:
-            print(f"✗ Vector store error: {e}")
+            print(f"✗ Persona manager error: {e}")
         
         try:
-            # Test artifact manager
-            artifacts = self.artifact_manager.list_artifacts()
-            print(f"✓ Artifact manager: {len(artifacts)} personas")
+            # Test vector store (if we have any personas)
+            personas = self.persona_manager.list_personas()
+            if personas:
+                first_persona = personas[0]['id']
+                test_knowledge_indexer = KnowledgeIndexer(self.settings, first_persona)
+                stats = test_knowledge_indexer.vector_store.get_collection_stats()
+                print(f"✓ Vector store (persona: {first_persona}): {stats.get('total_chunks', 0)} chunks")
+            else:
+                print("ℹ No personas registered yet")
         except Exception as e:
-            print(f"✗ Artifact manager error: {e}")
+            print(f"✗ Vector store error: {e}")
         
         print("\n✓ Validation complete")
     
@@ -529,6 +557,8 @@ Examples:
             finally:
                 if self.knowledge_indexer:
                     self.knowledge_indexer.cleanup()
+                if self.persona_manager:
+                    self.persona_manager.cleanup()
         else:
             parser.print_help()
             sys.exit(1)

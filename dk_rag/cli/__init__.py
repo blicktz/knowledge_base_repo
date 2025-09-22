@@ -2,6 +2,5 @@
 Command-line interface for the persona building system
 """
 
-from .persona_builder import PersonaBuilderCLI
-
-__all__ = ["PersonaBuilderCLI"]
+# No imports needed - modules are executed directly via -m flag
+__all__ = []

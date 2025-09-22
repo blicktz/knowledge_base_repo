@@ -1,0 +1,563 @@
+If you want to reverse engineer things, you have to have a model with economies of scale that gets you to three to four thousand dollars per employee or your model is not real. It is not scalable. What's going on, man?
+
+How are you? I'm so excited to be here and talk about all my first millions, talk about the millions I lost, a few learnings on scaling and whatever you want, Sam. It's great to be here.
+
+I love you for many reasons. One of them is you're so catchy and you're so good at summarizing important things, but explain it in a very simple to understand ways. But before we get into that, I need to talk about background because to the OG software guys, you are the guy.
+
+If we talk to the founders of HubSpot or guys who run multi or tens of billions of dollars companies, they say, if you want to learn about software, Jason's the guy. But we have a bunch of sometimes 20-year-old kids listening to this, and I want to give a little background. I don't want to spend too much time on this, but basically what I know about you is you started a few software companies, including EchoSign, which you sold for nine figures.
+
+I don't know the exact amount, but you've said nine figures. Then you've been investing in startups as a VC since 2013, which I think you said you 10xed your fund or something like that. Is that right?
+
+That is about right. What else did you do besides EchoSign before that? Before that, I had a startup where I made my first million.
+
+When the internet died for a while, I actually founded a startup making implantable batteries from nanomaterials, which I knew nothing about, which is interesting. We sold it for $50 million after 12 and a half months. It is kind of an MFM story, and I learned a lot from it.
+
+What was that company called? It was called Nanogram Devices, and we did something that was thought to be impossible, and we got bought by our competitor. It was a classic buyout after 12 and a half months when we took away one of our largest customers.
+
+Did you raise funding? We did, and it was hard. I'm dating myself.
+
+This was one of the crummiest points. We raised $9 million in our seed round and sold 70% of the company in our first round. And that was the deal.
+
+That was the deal. There was no choice. There was no negotiation.
+
+It was a different time. And that meant what you and the founder, you and your other partners, I don't know how many you had, had $15 million left over to share after the $50 million exit. I'd say it was more like about $10 million or maybe even $8 million to share.
+
+So it was enough. Interesting for the first million, it was just enough to not work for the man. I have worked harder.
+
+I worked even harder on the next startup, on EchoSign, which Adobe bought. So EchoSign, was that basically like what DocuSign is now? You guys just sold earlier?
+
+Yeah, a lot of learnings. Yeah, we actually, DocuSign believe, I mean, I'm really dating myself. DocuSign was basically a printer driver company when we started.
+
+We were the first web solution. I wrote it all myself in PowerPoint and crappy wireframes, and we built it. And we got to $1 million a month burning $4 million.
+
+So we got to $12 million ARR, growing 100% with 110% revenue retention and cash flow positive. So if we, and we sold it in 2011, and 2011 was a long time ago, in internet time and in real time. It was just before we understood the metrics around recurring revenue businesses.
+
+And so even my board, my investors didn't, like, they weren't sure we had a good business. If I said to you today, Sam, I've got a business doing a million bucks a month, growing 100% with 110% revenue retention and profitable. You would say that's the ticket.
+
+That's the ticket. Now, DocuSign was bigger. We had about 36% market share.
+
+But we were cash flow positive and growing 100%. So, you know, we only raised $4 million. So when you sell your company to make your second millions, sometimes the second one is there's a certain logic in it.
+
+And the logic actually in its own way can be stressful, right? It can be stressful. That was a very complicated decision because it made sense on paper, given that the team wanted to do it, and part of the team wanted to do it, and given how little we'd raised, right?
+
+But in my gut, I knew it was emotionally, I knew it was the wrong thing to do. Scott Galloway came out a while ago, and I didn't get to talk to him about this, but he had this awesome presentation. You and Scott are similar in that you're just, you have beautiful language.
+
+That's what I describe these types of people. I'm like, they pick their words beautifully. Scott has this thing.
+
+So Scott sold L2. I don't know how much. I think $1 to $200 million.
+
+I forget the exact amount, but nice exit. And he was like, well, I wanted to have a nine-figure exit, and I wanted to do it in this data business because that's what I knew. And so I worked backwards, and I sort of reverse engineer it.
+
+And he said something like, he was like, I knew I needed to have an international presence. I knew I needed to charge at least $50,000 a year for a service. And then he lists all these things, and then he spent eight years, however long, building it.
+
+And I love that because I love reverse engineering. And so what I tell a lot of people, I'm like, they want to create this amazing stuff. And I'm like, yeah, that's cool.
+
+And sometimes that works, but you can actually kind of reverse engineer a bunch of stuff to figure out what's the rules of the game that I need to play. And then you optimize for the rules. And I wanted to have you on to basically like reverse engineer what it takes to get like either $100 million in revenue or even $100 million in outcome, because I actually think those rules are actually the same.
+
+I was like, Jason, I want to talk about this like reverse engineering thing. And you like banged out this like five or eight point thing. You said that a lot of startups right now, because they raise money in a zero interest environment, it's like $100,000 in revenue per employee.
+
+And you said, no, the new minimum needs to be $300,000 to $400,000. Is that right? It is.
+
+As you're trying to reverse engineer whether your business model makes sense, like this is one thing to reverse engineer. Certain business models have economies of scale and some don't. And if you want to go really big, you want a business with economies of scale.
+
+And if you step back in the old days of software, the old Adobe's, Microsoft's Intuit's made a million dollars in revenue per employee. A million dollars. Okay.
+
+You'd have a bunch of engineers. They'd go off in their offices. Everyone used to have a private office to code.
+
+You'd spend two years building a piece of software, a small team. You'd put it on a DVD-ROM or CD-ROM. That costs 50 cents.
+
+And then you'd package it up. That costs 50 cents for a dollar. And then someone would sell it for you between $50 and $400.
+
+This was a really good business. There were 90% margins. And the classic Adobe, Microsoft Intuit, 50 cents of every dollar went straight to cash flow.
+
+50 cents. We don't see this anymore in companies to go public. It was so profitable.
+
+So that was a million. And then things just deserve, or whatever you want to call it, it got crazy. And we reached a low in 2021 of $100,000 in revenue per employee for all these unicorns.
+
+$100,000. So we got, we only were 10% as efficient as we used to be. Now the pendulum swung back.
+
+So historically, we're at a million per employee. The low point was $100,000 per employee. When employees in the Bay Area probably cost you $250,000 fully burdened with insurance, benefits, this and that.
+
+So you're losing $150,000 per employee. Now every public company, at least, public SaaS software company is at $300,000 to $400,000. HubSpot's at $310,000, which we talked about.
+
+Cloudflare's at $400,000. That's where you have to be. And so- But when?
+
+When do you have to be there? So one way to think of it, if you're lucky enough or unlucky enough, depending on how you look at it, to raise capital, angel money, venture capital, whatever, it bridges the gap. It bridges the gap to get you to $300,000 to $400,000 per employee.
+
+But you're going to have to get there. And if your product isn't profitable enough, if your gross margins are too low, if it doesn't make sense, make some changes. You have to have a model.
+
+If you want to reverse engineer things, you have to have a model with economies of scale that gets you to $300,000 to $400,000 per employee, or your model is not real. It is not scalable. And then you have another point here.
+
+Marketing Automation and HubSpot for years was a marketing company. In two years, CRM, its sales product will be bigger than its marketing product. It has to be.
+
+And you want to be there by 10,000 customers. This is the same for econ businesses, too. Like they sell a handful of SKUs and then they reach like some type of critical mass.
+
+And then like, all right, we need to create more stuff. So, like we made deodorant, now we need to make toothpaste or shampoo or something like that. But the second one has to be bigger.
+
+This is the mistake founders make. What's easiest, Sam, is to add a product extension. Okay, we sell shampoo in e-commerce.
+
+Okay, let's sell shampoo and conditioner. That's the easiest thing because our customers already know us. If they bought shampoo, they'll buy shampoo and conditioner.
+
+But the problem is if the second product isn't bigger than the first and the first one's still growing, you never catch up. It's never enough, right? If you're selling 150 million of shampoo and you're growing 20% a year, you're adding 10 million a year, right?
+
+And you launch shampoo and conditioner and it does a million its first year, it's great, but it will never get there. The second one has to be bigger than the first. And we all default to the easy second product and you actually have to do the harder one.
+
+That's interesting. So at The Hustle, we had, I don't remember, a million and a half subscribers. I think we were doing a million a month in revenue.
+
+And a media company is basically, you build an audience and then you launch multiple businesses to that audience. So whether it's advertising, conferences, software, whatever. That's kind of typically how media companies are weird.
+
+It's usually a collection of small businesses or different businesses. And I think we were at a million a month. I forget.
+
+I think about that. And I wanted to create a subscription service called Trends. And it was like, we like, and dude, I fucked it up so bad because I charged $300 a year, which is so stupid.
+
+It should have been $30,000 a year. It should have been way more expensive. I think in the first month we did, I don't remember exactly, but in the first month we did almost a million in sales.
+
+And then it was a pain in the ass. But by the end, I think when we sold, I think we were at five, like maybe 10 months later, we were at 5 million a year in sales with it. But it only had like four or five people running it, which so is profitable.
+
+But the mistake I made was the thing of not making it bigger than the first thing. And I so like intimately know that mistake. And it's really hard because I'm like, well, this is like a clear extension.
+
+Just do this, then this. But it just, because it's also like a psychological thing of like, why pay attention to this thing? Just put money back into the main thing.
+
+This is an advantage to hiring a VP of sales, for example. Founders underprice their products, usually. They underprice them.
+
+We're so, because we know what's more, is it more important to get the product off the ground and get 100 customers than to optimize pricing. As founders, we're always going medium or long, right? So we almost always leave money on the table so that we can make people happy and get them going.
+
+Dude, I've underpriced. Everything I've done, I've underpriced. Yeah, and so have I, and so have 80% of founders, not all, but it's a, I hate this term, but it's a feature, not a bug.
+
+Because as painful as it is, you can fix pricing later, at least for new customers. It's harder to fix it for grandfathered customers, right? But for new customers, then just double it to 600 and 1,200 and 1,800.
+
+Like it is, it's hard. I think it's like rooted in like imposter syndrome of like, I don't know if this is good enough. But then you talk to, if you talk to a good salesperson, you're like, dude, like I could like just put a zero behind that.
+
+I'll sell it. You know what I mean? Like if you talk to a good salesperson can get it done.
+
+A good one will not rip people off, but a good one will get the full value for your product. In a way, as a founder, you almost never can. You almost never can, right?
+
+That's why a lot of the classic Sasser content is about hiring a VP of sales because that's why in the first quarter, the first nine days, you should see a lift from a good VP of sales, at least because they can run this playbook. With the same leads, the same customers, the same dynamics for trends or something else. Someone with the confidence to ask 30,000 for trends, knowing it's cheap compared to Gartner or Forrester or whatever, they'll take that off your plate.
+
+If they're good and you'll see a 30 to 100% revenue lift from someone that's great, right? Someone that's mediocre will rip your customers off and never understand your product and misspell trends and never read it and not know what it is. A mediocre one will actually see a revenue decline from founder-led sales, but a good one will solve that piece, right?
+
+So I think the other thing, you just didn't give it enough time either. I sold the company at four and a half years, but that was like, I was okay. I don't regret that at all because I wanted to get some financial freedom and I was broke.
+
+I think I paid myself the first two years, my salary was 20 grand. The third year, maybe a hundred. And then the fourth year, I think I paid myself a few hundred thousand dollars, but I was like, I was fucking poor.
+
+And so I was impatient. And what you talk about all the time, the worst thing is a tired CEO. And I was a tired, I was, I was tired of being poor, basically.
+
+And that was a huge mistake, by the way. Pay yourself way more if you can, is what I've learned. As soon as you can afford it, pay yourself market is the learning.
+
+Yes. It's the learning always as soon as you can afford it. And you had this other thing on here.
+
+You talked about, you want 30% of your revenue to be outside of North America. That's very intimidating. That's probably the most intimidating thing here is going global.
+
+And at least in my opinion, I think it's a very intimidating thing. Obviously some businesses, this doesn't really work, right? If you're highly regulated, it can take a long time, for example, right?
+
+If you're very specific, but at scale, at scale, the average public software leader gets about a third of their revenue outside of the US HubSpot's now a majority. The majority of HubSpot's customers, small businesses are outside of North America, the majority. And so if so, let's step back in terms of reverse engineering, right?
+
+If there's a couple of things, if you don't lean into them, you're going to have less revenue than you otherwise would. International and partners are two of them. If you try to only sell direct is an issue too.
+
+And so how do you do this? How do you learn how to sell in France, right? In Germany and Milan and London?
+
+It's not as complicated as it sounds. What you do is build your business, build your brand, right? Find a niche where you're one of the top two or three folks.
+
+You don't have to beat HubSpot everywhere, but find a little segment where you're better, your little area and watch who wants to buy you. And if you're in software, what will happen is Australia, New Zealand, UK, some parts of France and others are very used to buying from US companies. They will find you if you are the best vendor.
+
+They will find you. You don't actually have to find them. Now, traditional industries won't find you, right?
+
+It's going to be tech focused folks. It's going to be early adopters. It's going to be cool kids, but they will find you.
+
+And as soon as you cross 5% of your revenue in an area, then invest in it. Just invest in it. As soon as you see a cluster in England or New Zealand or somewhere you didn't expect, Chile or Brazil, like support it.
+
+And then the cheat code, this sounds obvious, okay? The one one is just support it, like make your product open, right? The one that takes work is also localize your product earlier.
+
+And most of your engineers don't want to do this. They don't want to localize the product into Spanish and Portuguese. Turn it into 30 languages.
+
+Not super complicated engineering tasks, but 95% of engineers just don't want to do it for a variety of reasons. So, you know, you can get going in the English-ish countries and even in Europe, right? But you're not going to penetrate certain areas if you don't actually localize your product.
+
+But that's the second cheat code. The first one is just be welcome to it. You don't have to go hunt customers in Japan if you have zero.
+
+Like you don't have time as founders. Going to Japan is like the worst place ever to go because the culture is so different. And there's been so many failures of Japanese companies wanting to come to America and America to Japanese because the culture is like wildly different.
+
+Because I actually looked at... But one of the ways that I researched cool company ideas is I like to look at Japanese publicly traded companies. There's this one called Yuzabase.
+
+Have you heard of Yuzabase? Yuzabase is a media company in Japan. They own three products.
+
+One of them was sort of like CB Insights and it was doing 30 or 50 million in revenue. The second one was a news app called News Picks. That was doing another 30 million.
+
+And then I think they had one more thing. And I remember going and trying to download their app and it was all in Japanese and I couldn't really figure it out. But I eventually translated it and I was like, I'm going to make this app in America.
+
+And I'm going to do it at the hustle. And so I built out this whole thing and I was going to launch it and everything. And the culture of what they were trying to do, it required users to leave feedback and opinions on news, which is not so common here.
+
+And I remember like, fuck, why is this Japanese idea not working? And then I realized I was just like reading Wikipedia or whatever. And there's this whole term to describe the failure of American companies trying to break into Japan because the culture is so different.
+
+And it scared me like hell to like do anything involving Asian cultures because our cultures are so different. I'm like, I can never crack that. Whereas Germany, France, it's like mostly similar.
+
+But yeah, the whole Japanese thing freaks me out. I'll give you two examples. But like Salesforce had 10% of their revenue in Japan in the early days.
+
+10%. Now they didn't, you can Google it. You can see what Mark Benioff said, they didn't plan it.
+
+They got dragged into Japan. Some of it was through partnerships and others. But my point is that wasn't on their day zero plan.
+
+Okay. But it took off there. I was just talking with Howard Lerman, who he's got a new company called Rome, but he founded Yext and took it up to a billion.
+
+And they were huge in Japan. And we were talking about how he's going to do Japan the next time. But they got dragged into Japan for small businesses.
+
+They got dragged in. So my point is don't show up to Japan with no traction asking for a tour in the city. But if somehow in your first 100 customers, first 500, you've got five in Japan, don't dismiss them.
+
+Don't be snarky like some folks are. Don't say it doesn't matter. In fact, say, oh my God, we've got five customers for Japan in our products, not even in Japanese.
+
+We've got something good here. Like, let's take a pause and let's figure out what the heck is going on. Like Salesforce did and get 10% of our revenue from Japan.
+
+That's how you do it. Is there a sweet spot for how much you charge? I think with a lot of people starting out, like what I did, like, well, my business was a two prong in that we had users and then we had advertisers or advertisers for spending six figures a year.
+
+But I had to acquire fucking 4 million subscribers in order to like make it work. And it was really hard. Acquisition.
+
+Um, yeah, and, and so is there like a price point where you're like, you want your average customer to be paying 50,000 a year? I think that pricing is over discussed. And I'll tell you why there are, we have all now bought 200, at least most businesses have bought over 200 SaaS apps.
+
+Okay. It's too many, 200 pieces of business software. And we all kind of know what stuff should cost.
+
+Like we know what notion should cost. We know what HubSpot should cost. We're on Riverside.
+
+I don't know what Riverside is. What do you guys pay? 300 bucks a month.
+
+Okay. Like, okay. Let's say you pay 300 bucks, 400 bucks a month.
+
+Now, if someone else has a better version of Riverside and they want 50,000, you're going to like a month, you're going to kind of Bach. Right. But what if someone had something that was better than Riverside?
+
+It was $30 a month. It would seem too cheap. Right.
+
+It would seem too cheap. So my point is there are organic price points. And what you want to do is anchor around them.
+
+Go figure out the couple of products out there that are most similar to yours and charge the exact same way. And either charge the same pricing, or if you're nervous, charge a smidge lower, 10% lower, 20% lower. If you charge too much lower, you're telling the market you're not as valuable as Riverside, right?
+
+Or you're not as valuable as HubSpot. And you can actually, customers will bounce off you if you're too cheap. If you're too cheap, they will get confused.
+
+So anchor around the comps. If you're truly 10 times more valuable than Riverside, okay? And Riverside's very good.
+
+We're using it to record the session. If you're 10 times more valuable, maybe charge twice as much because you're telling the market we're 10 times more valuable than the leader, right? We're 10 times more valuable.
+
+But whatever you do, founders that say there's no one like us, there's no comp, try harder. Try harder. It doesn't have to be the same as you, just it feels the same.
+
+It feels a similar amount of value, a similar type of utilization. Do I use it eight hours a day? Do I use it once a month?
+
+Do I use it as an API? Is it metered? Is it per seat?
+
+Just there's hundreds of apps like you. And if you price similar to similar value apps, you remove friction. You remove friction from the sales process.
+
+And that's what you want to do until you're really big. And this is why we also underpriced as founders, because you want to remove friction. We want every deal to close in the early days, don't we?
+
+We want every deal to close. And so your job as a founder, if you want to scale, if you want to reverse engineer things, your job, because no one else in your company will do this. Your job is every day to relentlessly remove friction from your customer acquisition process, remove friction.
+
+And people added at scale. The classic one is contact me. You know, you go to a website, you're all excited to buy on your own.
+
+And I got to talk to a rep. Well, yeah, there's a couple reasons. One reason is they've gotten to hundreds of millions in revenue and they actually want to add friction to the sales process.
+
+Right. But you don't want to do that until you're at tens of millions of revenue. You want to every day come into work.
+
+And if you can't do anything else on your company, remove friction. How can I make sign up easier? How can I add single sign on?
+
+How can I make it easier to check out from my e-commerce thing? How can I make the bundle easier? How can I make support better?
+
+Remove friction. Having support that happens automatically in seconds rather than waiting five minutes on the dumb bubble, that removes friction, doesn't it? Whatever it takes, remove friction.
+
+The last point you have is the most challenging. It's getting to net revenue retention of 100%. Yes.
+
+And I don't know how you would describe yourself. I think of you as you're a CEO founder type, but I think that you have an edge on sales and operations. The churn part, I think, and this is maybe naive, I think that's mostly product.
+
+Maybe it relates to who you sell to and how you position it, but it's like product. And it's the hardest part is like figuring out how do I make something that integrates in someone's workflow? Or how do I make something that's so essential to someone's life that not only do they not want to get rid of it, they're going to tell their coworkers and their coworkers are also going to have to start using it.
+
+It's so freaking hard. And I think it's part art, part science. But you said that you have to have 100% net revenue retention.
+
+The good news is that a lot of the big boys sucked at first. I think Brian Halligan, I think he told me that they were churning out something like at one point, like 5% to 10% or maybe even more per month. And he was like, it was horrible.
+
+And it took us four or five years to figure it out. But what do you have to say about churn and retention? How do you make it good?
+
+If you want to reverse engineer things to your point, you need to really honestly have a path at a product level so that you can eventually get to that 100%, right? And you can stage it. So I don't know if HubSpot really was churning 5% or more in the early days.
+
+Let's say its revenue retention is more like 50% in the beginning, okay? I think he told me there was like a quarter or two where it was like existential crisis bad, where it was like, you know, it was something like that. I think they were like year four where it was like, this is not going to work if we don't figure this out.
+
+Yeah. Well, I know from when I talked to him, it was 75% from him to actually like 30 million in revenue, which is kind of late. It's they still hadn't totally figured out until they went multi-product and a bit into the mid-size of SMB.
+
+But the point is like on the one end, yeah, their VCs were critical, blah, blah, blah, blah. But they did have a plan to get there. They had a plan to get there.
+
+They were going a little bit upmarket, a little bit upmarket, not a lot, just a little bit into bigger small businesses and to have more than one product to add value. And in fact, it's interesting, HubSpot nominally has raised prices, but the average customer today pays $11,000. The average customer two years ago paid $11,000.
+
+The average customer four years ago paid $10,000, okay? So what HubSpot has done, which a lot of folks don't do, they get it wrong. And this is why HubSpot is one of the reasons it's so successful, is they're adding more value for the same dollar.
+
+They're adding more value each year for the same dollar. That's software is supposed to be a service, SaaS, software as a service. We forgot about it.
+
+In 2023 and late 2023, SaaS became software as a ripoff. Everyone got massive price increases for no benefit, right? Some folks will grumble about HubSpot.
+
+It has raised prices. But overall, the prices haven't gone on much. And now they have five times the amount of software that's 50 times more powerful, right?
+
+It's like 250 times better than when Brian started. And that's what you've got to aspire to as a founder. The flip side is, here's the, like, if you have a high-churn business, and HubSpot started there.
+
+A lot of folks start in high-churn business. Be honest. Build a spreadsheet.
+
+I know you and I talked a little bit about this in the hustle in the early days because you had high churn as a media business. It's inherent to a media. You had high subscriber churn, okay?
+
+You were stressed about this. I actually wrongly, wrongly challenged you to be less stressed because I thought you were a great founder and would figure it out. But you've got to put it in a spreadsheet and say, look, if you have churn north of 3% a month, 3, 4, 5, and that is endemic to certain models, look at what gravity does to you around when you get to double-digit millions, when you get to 10 million, 15 million, 20 million.
+
+Usually gravity weighs you down because you're losing so many customers each month. It almost becomes impossible to replace that leaky bucket. So the hustle was a daily newsletter.
+
+We sent an email six days a week. We were at one point, I'm trying to remember, we were at 1.7 million subscribers. We lost 50,000 subscribers, or no, maybe it's 40,000 subscribers per month.
+
+And we were adding like 4,000 a day or something like that. It was insane. Can you imagine that?
+
+Losing 40,000 people. We were like, how are we going to fix this? And eventually we did.
+
+But I know that companies like, I don't know what the hustle is at now. I think they're close to 3 million subscribers and the churn is really low. Morning Brew is at like 4.5 million subscribers.
+
+And you want to know what all the newsletters do that people don't talk about. So we grew organically to 100,000 subscribers. I imagine many do too.
+
+And then you do paid marketing to get to many millions. And then you get a name after four or five years. And then you quit advertising or you spend very little.
+
+And you're just like, we're just going to stay at 3.5 million, 3 million subscribers. And we're going to launch more newsletters. That's the name of the newsletter.
+
+That's how you get to 100 million in revenue for newsletters. It's the exact same thing as software, which is you go multi-product. But except unlike software, the churn is outrageous.
+
+But thankfully, the market size is like 30 million people. But it's like crazy high. But that ties to the point of being very self-aware about this, right?
+
+And that churn, so you churned out, you had like, you're churning out. I'm getting that math wrong. I think you were churning out about 30% of your growth each month, right?
+
+In that phase, right? It was four. So if we sent an email to a million people and if we had a million subscribers in one month and we sent six times a week times four, that's 24 times a month, we would lose roughly four and a half percent of the million.
+
+So that's that three to five percent churn we talked about, right? And on the way up, it's sort of okay because the hustle is exploding and there's viral elements and it's great. But eventually gravity, that's the, you got to be honest about gravity and come up with a strategy to address it, right?
+
+For small businesses. That math just, it's, you know, and I think you would echo this around 10 million in revenue, you need so much growth to overcome that churn, right? You need like epic, epic, like you can't even, it's not even what your gut says as a founder, you need so, you need double digit growth per month.
+
+Here's the insight. You need double digit growth per month to overcome that churn at scale, right? You need double digit.
+
+And you need to understand which business you're in. So you're in the conference business now. I was in the conference business, sorta.
+
+I think my conference business was doing over the handful of years, I think we probably did 3 million in revenue. You're doing 30 million in one year. So we're not in the same ballpark.
+
+But what I learned with the conference business is it sucks. It sucks hard. And for some reason, I still love it.
+
+And same with media. I freaking love it, but it's way harder, I think. And why are you in the conference business if you're supposed to know all of this great stuff about software?
+
+Because software seems like we all work the same amount of hours per week. Like it just seems like just start a software company. Why start a conference business where you're in kind of an uphill battle?
+
+It's a good question. I mean, do you guys make a profit on 30 million? Yeah, we do.
+
+But we've got to. So Sastra Annual is our big flagship event. And so we get 12,000 people in the Bay Area.
+
+Now it's every September. It costs $10 million to turn the lights on. That's a stressor.
+
+It costs $10 million to turn the lights on. Okay. Before you make a dollar.
+
+Okay. So $1,000 an attendee is your cost. Yeah.
+
+About $1,000 per attendee is the full, the honest, fully burdened costs about $1,000. We do one in Europe in June for $3,500. That's much cheaper.
+
+That'll be about $300 to turn the lights. Well, $300 per attendee. But it's still like a million and a half to $2 million to turn the lights on.
+
+Okay. $2,000,000 and a half and $10,000,000. What's the average cost?
+
+So you've got to get over that. And then you've got to pay people. Right.
+
+And then you've got other expenses. So until you cross, it's funny. It is a terrible business.
+
+We should talk about it. I literally had a VC managing $500 million in revenue, making millions and millions a year just in fees with a good track record. Call me the other day saying they wanted to build a conference business because investing is so hard.
+
+It's like, dude, you still get paid if there's a natural disaster or like a rainstorm. That was like my whole thing. I'm like, dude, I'm working so hard for this freaking conference.
+
+And if it rains, attendance is down. Like it just sucks. Like one or two days of like some crazy weather or something can like change things.
+
+Terrible. The reason we did it was on accident. We built this community around content, right?
+
+So we built content and then it's a community. And yeah, we got some newsletters and some podcasts are not quite at your scale, but they have some scale. And then we just did meetups.
+
+And just so many people came to the meetups in the beginning. You've done them. And this is a long time ago.
+
+Like this sounds small today, but our first meetup in 2013, we had 800 people come and these were great CEOs. Great CEOs, right? CEOs that now are have gone public or have nine figure businesses.
+
+And they all came in that what I didn't know it would be a business, but I knew we had product market fit. So I wanted to build. Then I did another meetup and the other meetup had a thousand and we had to turn people away.
+
+And then then we did a one day event just to do it. I didn't. It wasn't a business.
+
+I outsourced the first two years. I never even looked at a financial statement. Now, the first two years I had a partner.
+
+He kept all the profit or the revenue. I just drove the engagement right in the content. And so this by the second year, we had 3000 people.
+
+And there was demand. So the real reason I got into the business, Sam, wasn't because I wanted to, because after the second year, he quit. My partner quit and didn't want to do it anymore because it was too much work.
+
+So I quit. I had no ability to do this. I had no team.
+
+I had no blueprint. I didn't know how the revenue or the finances worked. And I had to learn for the third year from scratch.
+
+And so it wasn't intentional. I felt like the community wanted this, that there was demand, organic demand. And but, yeah, it is a terrible business.
+
+Once it got once it got now, you can do the math in your head. Right. Once it got over 15 million in revenue, it finally generated actual profits.
+
+Right. But that's a lot of years. Not fake 15, not pretending you're at 15, not not claiming revenue.
+
+That's not real. But you've got to really just get over 15 to clear the nut. But they so a lot of trade show businesses on the high end can sell for 15 times earnings.
+
+But a lot of them can go for eight or 10. If it's like a B2B trade show, there's a bunch of companies. Yeah, or more.
+
+A handful. A handful. Yeah.
+
+The best ones can go for 20 times if it's been around for 40 years and it's an annuity at that point. And for some reason, it's always British companies. A lot of British companies buy trade shows.
+
+So there's Informa, there's Euro Money. There's a bunch of them. Would you ever sell?
+
+Yeah, Hive. They bought my friend Ryan Dice's company, I believe. The Traffic Summit.
+
+Yeah. Would you, what could you sell Saster for and would you do it? We've had two folks that have approached us to buy Saster over the years.
+
+I wouldn't say we've ever had like a term sheet to be on the table. The learning from that is it's really been based on comps. I know we talk about EBITDA and blah, blah, blah, blah.
+
+It's really been based on comps, right? And ShopTalk was bought for $150 million at about our size. Probably under, they got a good deal.
+
+And Money 2020 sold for a good deal. It sold for $100 million when it was only doing $10 million in revenue. But both were like iconic.
+
+Dude, let's talk about that. Let's talk about that. The guy who started those companies is in Hampton.
+
+I've got to know him. That guy is amazing. Off the charts.
+
+And then he sold another company for $30 million. But listen, these guys started a Google, these guys started a tech company, I believe, like a payment company. They sold it to Google for $100 million.
+
+They went and started a conference. It kicked ass. They sold it for something like $50 or $100.
+
+I forget the first one. They sold Money 2020 for $100 million. And now it's doing $100 million.
+
+Then they did it again with ShopTalk, which is like a trade show for D2C. Now, what's the other founder's name? It's a white guy and an Indian guy.
+
+The white guy has a new one named, it's called Health. That I don't know. That I don't know.
+
+I know Anil a little bit. I know Anil a little bit. But yeah.
+
+HLTH. You've got to look at this because here's what these guys do. The website is all the same.
+
+It's like the same avatars for it. It's like the same graphic design. It looks just like ShopTalk or Money 2020.
+
+It's the same thing again and again. They do the same thing. And he's done this like four times.
+
+I think this is their fourth time that they've created a new trade show. I should have known it. I see it now.
+
+Yeah. So I think this is significantly larger than ShopTalk and Money20. And so health is like, they do these trade shows where they get all, what a trade show basically is, what a lot of people don't realize, it's basically a marketplace that lasts for three days.
+
+And so you get a combination of buyers and sellers and you hope that you create some type of transaction. And what he does is he charges people so you can go for free, but you have to offer up a 30 minutes of your time to be pitched, I believe, to set up a meeting. Or you could pay money to set up a meeting with a...
+
+Yeah. They're $800 per 10-minute meeting now at ShopTalk. So I don't know what they are at Health.
+
+They're $800 for a quick meeting. And these guys pick a variety of niches where they're like, all right, there's a bunch of buyers and sellers in this market. And they scale up these trade shows faster than anyone I've ever seen.
+
+I think... It's epic. And a lot of people don't know this.
+
+They run other companies. The guy I'm referring to, I'll find out his name. And he's also on the board of a large private equity firm.
+
+These guys are killers. And for some reason, they pick trade shows as their main thing, which boggles everyone's mind. It was like, why would a bunch of tech guys who can make their money in significantly easier ways start a freaking trade show?
+
+They've knocked it out the park. It's like a gem of a business, a study. They are gems.
+
+I will say, I only know Anil a little bit, the other co-founder of these multiple companies, Money2020 and ShopTalk. But it is interesting in terms of convergent evolution that he got into it by accident, too. How so?
+
+They built Money2020 to support their fintech. They didn't build Money2020 originally to be a standalone business. They built it to support their startup.
+
+Like many of us do events to support our companies, right? Jonathan Weiner. Yeah.
+
+Okay. I don't know him. I know the other one.
+
+And it took off. It took off. Money2020 took off.
+
+Then ShopTalk that they did was a heat-seeking missile, right? They actually, like, it was, this was totally tactical. And they even gave up on a lot of things and just did these paid meetings, right?
+
+They just did it. And going back to the conversation, how do you get into something? Sometimes you, you plan it out on a whiteboard.
+
+And sometimes they're like these guys for these, these events, it found them. It found them. And then they, then they leaned into it and it became experts.
+
+But I know I've, I don't know Jonathan, but I do know Anil a little bit. I remember talking with him the last time I saw him in person. And he's like, man, this is a hard business.
+
+So you think, and he built, he like us, he, or like me, he built a software business. And it is, it is hard. I don't know.
+
+I would just caution folks like anything. Everything's harder than it looks to get into. I would just caution folks that there aren't, there aren't a lot of shortcuts and you need, I'm sure that the HLTH is wildly successful, but you gotta be, it's like, this is one of these businesses where if you're not in the top two, you're worthless, you're worthless.
+
+You have no value at all. Nothing. Because they are marketplaces.
+
+Why are you going to go? Why are you going to go to the fourth tier event in an industry? And in fact, most of them died in 2020.
+
+Most of the fourth tier stuff died. It sort of stumbled around when we all worked together in the office and in the Bay Area, but most of them never came back. Only the best ones really came back after, after lockdown.
+
+Let me ask you one last question. You are an investor. Yeah.
+
+So you've, you've raised money for your own startups and now your latest one's bootstrapped and you're an investor. You've deployed tens or hundreds of millions of dollars into companies. I have a theory.
+
+I think that if you are, if you're, if you're, if building wealth in a five or 10 period is your number one or number two priority for starting a company. Yes. You should basically raise no money or very little money and you should not raise venture capital.
+
+Do you agree or disagree with that? If your goal is to get the first points on the board to make your first millions. Yeah.
+
+I think what you call it, you use the word shekels a lot or nickels. If you want to get a few nickels. No, your first, it's a lot.
+
+If you want to get the money to not work for the man where we started this conversation, listen, all this stuff's harder than it looks. It's all hard as we know. But if you want to have an exit for 10 to $30 million, $10 to $50 million, which is still harder than it looks statistically, right?
+
+But north of 10, then yeah, you want to raise only a fraction of that. Don't raise that much. So if you raise, here's a simple way to think about it.
+
+If you raise a couple million dollars, which is hard, like it's not, it looks easy on the internet. It's hard. But if you raise a couple million dollars, you've lost no optionality.
+
+The only thing you've suffered is some dilution. The only thing you've suffered is some dilution. After a couple million, the game changes.
+
+After a couple million, the game changes. And so, yeah, I think there's something to be said for raising nothing, but most people raise nothing because they can't raise anything. I think there's even more to be said, if you can, of being one and done.
+
+Anywhere from half a million to 2 million, whatever you can close together. And you use it not to pay yourself. That's what losers do.
+
+You use it to hire a few good people to de-risk this investment, to accelerate this investment. You use it to hire a few good people and get it off the ground. Most of us need a little help.
+
+Like some folks just literally, they can do it on their own. They're two great engineers. They don't need any help.
+
+They can go do it on their own. Most of us are not those people, especially if you're a business person. It's harder to do it on your own, right?
+
+Unless you build something on WordPress or tools, it's hard to do on your, you need a little bit of money, but stop there. Not only do you maintain control and have less dilution, but then any exit works. Then any exit works.
+
+Once you raise more than 10 million, it can be worth it. But if you raise more than 10 million, and this goes to your point, people don't get this in today's world. If you raise more than 10 million, you're signing up for a billion dollar exit.
+
+And anything less than that is a disappointment. It just might not even work out. Like there's so many variables.
+
+You may run out of money. You might not get people. Once you start raising $10 million, you get addicted to burning more money too.
+
+There's lots of issues that creep out from that, but you got to commit to a billion. If you don't see a billion dollar, if you don't feel it in your bones, then don't raise double digit millions. Just don't do it.
+
+It's not, it's not generally not worth it. Find a way to do it with less. And, um, and everyone will be chill.
+
+If you raise single digit millions or less and sell for whatever, everyone will be chill. Everyone will be chill. They're not chill.
+
+Once you get to the double digit millions, it ain't chill for a long list of reasons. People start expecting a lot. And too many folks these days think that, um, venture capital is free.
+
+It has no cost. Um, the social contract between investors and founders has broken down the last three years. It has broken down.
+
+Um, I, I literally just suffered my worst investing loss ever. I'm 10 X lifetime. I suffered my worst investing loss ever.
+
+How much loss ever? 5 million of not all of my capital. Some of it's mine.
+
+5 million out of 200. Okay. So it's not going to change the pace, but I've never lost this much money.
+
+And you know what the founder said? I try. What do you care?
+
+It's not really your money. What do you care? It's not really your money.
+
+What do you say to that? I could honestly, Sam, I could, I had to bring in a friend to deal with him. I couldn't talk to him again.
+
+I spent years of my life helping him. I helped him raise all his money. I put them in all of our Sasser events for free.
+
+I promoted him constantly for years. And then he says, what do you care? It's not your money.
+
+I remember when I took a little bit of angel money and I, and I remember thinking like, I am like a steward, a steward of this. I was like, I have to die to get a return. That's how I felt though.
+
+But kids don't feel that way these days. I was like, it's my life's mission. Now I have just like, cause to take someone's hard earned money, I felt so much stress.
+
+I felt stress. I remember when I hired someone who had a kid, I was like, oh, I have a kid now. And then I remember feeling the stress when I took someone's money.
+
+I'm like, this person just trusted me with $25,000. I better go hungry or die in order to get a return from them. Because if they, if someone loses my money, I'm going to want to beat them up.
+
+You know what I mean? I was like, it's like a big deal. I was like, this is someone's mortgage that I just took from them.
+
+I better make this, get a good return. Jason, I appreciate you doing this, man. Where do you, where do people find you on Twitter?
+
+You're a Twitter guy now instead of Quora, even though you got famous on Quora. So Quora was great for five years and now it's non-existent. But yeah, you can find me on Twitter at Jason LK.
+
+Or honestly, if you're a businessy person, find me on LinkedIn. Dude, thanks for doing this. You're the man.
+
+I appreciate you. And that's the pod. And that's the pod.
+
+All right. We'll see you next time. Porfino.
+
+We'll see you next time. Bye. Thank you.

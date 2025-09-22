@@ -1,0 +1,431 @@
+All right, this is super cool. This type of stuff only happens, I think, on MFM. But here's the deal.
+
+I have a friend named Wade Foster. He started a company called Zapier. Zapier is a business that was bootstrapped to hundreds of millions in revenue, and it's worth five or $10 billion.
+
+And I had the CEO and founder on Wade, I had him on MFM. And I said, look, share your screen and show me how you're using AI to save 10, 20, 30 hours a week. It's pretty amazing.
+
+He did it. And he broke down like three or four different ways that he has automated parts of his life and his business. And it's really, really cool, because this guy has an incredible perspective, because he has such a large company, but because he helped create this whole automation industry.
+
+So if you want to save a bunch of time, this stuff is not complicated. I don't know AI that well. And I'm going to implement a ton of the stuff that I've just learned.
+
+And by the way, if you're listening to this with audio only, you might want to go to Spotify video or YouTube to watch this. It has a lot of visuals, you can still get a ton of value on audio, but it just better, I think on YouTube. So give it a watch, give it a listen, and let me know if you dug it.
+
+Talk soon. So I'm thinking about how to introduce you. But basically, I met you in 2016 or 17, something like that when you spoke at one of my events.
+
+And I asked you to speak at one of my events, because you founded and ran a company called Zapier. You know, you guys took off before AI was way before it was ever a thing. But you basically, if I remember correctly, you only raised at the time a million dollars, but you got it to nine figures in revenue, and then eventually raised a series A at something like a $5 billion valuation.
+
+Is that about those numbers about right? Close. So the seed round was 1.2.
+
+And then the 5 billion number that wasn't, that was all secondary. So none of that stuff went on to the balance sheet of the company. How much did you guys raise?
+
+Was that public? It wasn't, we didn't raise anything. Well, you took money.
+
+Early investors, early employees, like got some liquidity from it, but nothing came to the company. How big are you guys now? What is the public number?
+
+I don't know the public number. Nine figures is public though. Nine, you're at nine figures in revenue.
+
+And dude, it just, it's one of my favorite companies. I never thought in a million years, I'd be fired up about such like a dorky product, like connecting APIs, but basically my entire company and everyone I know, our entire companies run off of Zapier. Well, it's, it's wild.
+
+Like the, so the first decade of existence, that dorky company thing, like a hundred percent true. Like no one cares about workflow. Automation is like, like we think it's cool.
+
+And there's like definitely people who do think it's cool. But like the Silicon Valley wisdom is, you know, raise a bunch of money, throw bodies at the problem, like blitz scale, go like nuts. And so like people like say they, they cared about automation, but their actions sort of like betrayed them in a lot of cases, certainly in tech.
+
+And so we're kind of like a out here doing our thing. Not a lot of people sort of in our space. Now you get into the AI world and it's sort of totally inverted where everyone cares about automation.
+
+Everyone cares about AI. Uh, and so the market potential for us has just ballooned enormously. Um, but of course there's a lot more players in the space now.
+
+Yeah. At the time when I, like when you guys were just getting going, it was basically you and maybe one other company doing this. Now there's so many more.
+
+Yeah. And you know, everybody has their angle, their niche, you know, vertical, this vertical, that, um, you know, more dev centric, less dev centric. Like, yeah.
+
+So there's, you know, there's just, everybody's kind of trying to get a piece of this. What is, you know, going to be, you know, a trillion dollar opportunity. In 10 years, how big do you think your company will be in terms of revenue?
+
+10 years? Uh, well, shoot, I think we should be well past, uh, a billion in ARR if we do our jobs, right. Yeah.
+
+And you think you will still not have raised the money? Uh, I don't think we will. So you're going to, you're going to be one of the largest, one of the larger ever companies that only, I mean, I don't know if you still say bootstrap, but you only raise, um, you turn, uh, you turn a million dollars into something worth tens of billions of dollars.
+
+I mean, that's gotta be one of the more efficient stories ever. Yeah. You know, this is how they used to do it though.
+
+Um, you know, if you look at, you know, Microsoft's and how their, uh, fundraising trajectory went, if you look at Amazon and their fundraising trajectory, now those companies obviously went public much earlier in their life cycles, but you know, they didn't raise huge gobs of money. Yeah. How much did Google raise?
+
+I think they raised like, uh, low tens of millions of dollars. I think it was something like that. Google and Google was a lot like Google had a big round.
+
+I think it was their a or their B that was huge. And people were like, Whoa, this is, this is nuts. And nowadays, like, you know, what the, the, the AI companies, the, the foundation model companies, they'll do like a billion dollar series.
+
+Hey, it was like, Whoa, this is different. So I, this is different. I want to ask you about all of that, but someone like, I've noticed that I had better conversations with people while we are doing stuff.
+
+Um, and that doing stuff is this thing where we basically have asked people like you. So people who run big companies, how many, how many employees do you have? 700 and change.
+
+Okay. So you have 700 employees and you're trying to get everyone to use AI at your company. And you guys are an AI company at this point.
+
+You were kind of an AI company a little bit before that was really popular. The thing that I want to do that I've loved doing lately is I want you to share your screen and show me how you're using AI and really practical use cases. And you said, that sounds good.
+
+And so while you're showing the screen, I might ask you questions about like the background of the company and things like that. So I asked you to make a list. You, you have a list.
+
+One of them stuck out, right? You want to tell me what that was? Well, so the first one, this is like a pretty basic, like thing that, uh, I use day to day, which is like a instant dossier, um, creator.
+
+So, uh, you know, you can use it for all sorts of things. Like it's handy. Uh, it's particularly handy when you're sort of like out and about, like you're going to a dinner or you're at an event and you got a list of names or you're sitting down and there's name tags everywhere.
+
+And you're like, okay, who are these people? Uh, and so that use case, uh, you know, I usually just like feed Claude, uh, some details on the person and then, uh, Claude will just return like a quick little dossier that includes, you know, public details about the person, but also like what's going on. Like, are they a customer?
+
+Is there any details in our HubSpot account? Like, is there anything that zoom info can tell me, uh, just to kind of just like get some quick hitters to be like, Hey, is there something I can sort of talk to this person about? It's sort of like, you know, if you ever watched veep, uh, uh, Selena has like, yeah, like has Gary in her ear, like, you know, just saying like these things.
+
+And so you kind of get like your own little version of this. And so do you do a lot, you do a lot of these dinners with customers and potential investors, things like that? A reasonable amount of them.
+
+Uh, but the cool thing about this one is you can use it in all sorts of ways. So, you know, if you're just sitting in your home office and you've got a string of meetings coming up, you can do it for all the people that you're about to meet that day. If you've got, um, leads coming in on your website and you want to go enrich those and send those over to your sales reps, you can do the same thing.
+
+So like this process works in all, is applicable in all sorts of different scenarios. And mostly what you're doing is you're just sort of like amending how you utilize it based on the situation you're at. So I can maybe do a screen share on this.
+
+Yeah. You know, Claude, I do a, the thing I love about Claude is Claude has, um, tools connected. And so, uh, the Zapier MCP server is available here and you can see, uh, you know, if you click into here, like you can connect all these different things, but you know, with Zapier, you have access to 8,000 different tools.
+
+And so I can just like turn on all sorts of different tools to, to use within, um, Claude. So, uh, for example, you can see here, we've got eight tools turned on, but basically these tools are a series of HubSpot, um, capabilities, like finding contact information, finding company information, finding deal information, and zoom info in points. So like finding again, contact information and finding company information.
+
+And the other thing you can do inside of Claude is you can make projects. So I don't know if you've used projects before. So I've used it with ChatGPT.
+
+It's like, I have a health project. I have like a therapist project. I have like a business project.
+
+There you go. So you can assign these tools like to, or you can give these projects like certain system prompts to like help them do a certain task. And so within one of the projects I have, it basically sort of coaches it on how to do like, uh, contact information for me where I'm like, Hey, make these, these dossiers for myself.
+
+So, um, we can actually use the, I actually made a quick one for us, which is this, my first million demo. And I have like, um, I got a buddy who's gonna be cool if I use them, uh, their, their name on this stuff. So tell me more about Lars from um, social puppy.
+
+And so what was in that file that you uploaded? So I didn't upload any files. Basically what this chat has access to is it's got access to the Zapier HubSpot account.
+
+And then it's got access to our zoom info account. And then it knows my like system instructions, which basically say, Hey, step one is look up the contact and company inside of HubSpot. Step two is look up information inside of zoom info.
+
+Step three is go find anything on the web to, to go do this. Now you might've seen there were some errors popping up here. This is one of the tricky things about, uh, MCP and Claude right now is that it's still a little buggy.
+
+Like MCP is technically like a, it's been out for like, maybe, I don't know, two or three, their tool stuff has been out for maybe two or three months. And so it mostly works. Speaker 1 Hold up just a really quick break.
+
+I know you're watching this and you're thinking, this is a ton of information. Our producer Ari, she just listened to the entire episode and she wrote out all the important stuff. So if you want to go and implement a lot of these workflows or whatever you want to call them, she wrote them all out.
+
+And so you can use the QR code on the screen, or there's a link below in the description. You can click that and you should still watch and listen to the rest of the episode, but the thing that she made, it's a PDF and it has, uh, everything written out. So you just click and link off to all the important, great stuff.
+
+All right, back to the episode. What does MPC stand for? And what is MPC?
+
+It's this, yeah, MCP is called model context protocol. So effectively what this is, is a way for agents to talk to data. So, you know, in the old world, we would have APIs where, you know, you would say, Hey, I want to talk to the Gmail API or want to talk to the HubSpot API or the Slack API.
+
+And these were ways for like SaaS companies to talk back and forth to each other. And so that protocol works really well for the SaaS tools with agents. They don't exactly know how to utilize like all those API endpoints.
+
+And so MCP is basically this layer that sits in the middle that helps them go find different tools that they can go use and then, uh, take advantage of them. Got it. So unfortunately right here, you can see this one is, uh, oh, it, it worked.
+
+Um, but the cool thing you can see is it's iterating over a bunch of different endpoints. So it's saying, Hey, this didn't work. Um, let me try more director approach.
+
+Okay. That didn't work. So this is Claude trying to figure out how to go do this task.
+
+They're like, Hey, I, you know, I'm not exactly sure. I've got access to a bunch of different tools. Some of these things might work.
+
+Some of these things may not work. And then at the end, it'll spit out information on it. So it pulls up, you know, LinkedIn URL.
+
+You can see that Lars is a product manager at Zapier. Uh, he's got, you know, he's hanging out in Vancouver. You can see all the different things that sort of we know about them.
+
+And then social puppy happens to be his side gig. Uh, it's this way for people who own dogs to, to do meetups together. Of course he's not paying for HubSpot.
+
+So, you know, they took a look in HubSpot and was like, yeah, there's no deal associated with this. Um, for, for Lars. Do you see what it says?
+
+It said colleagues describe him. Wait, what was that? Colleagues describe him as incredible drive and enthusiasm for the goals.
+
+It's having incredible drive and enthusiasm for the goals. Yep. Okay.
+
+And he's known for being fun and energetic. That's cool. Okay.
+
+And I would say that that's, knowing Lars, I would say that's accurate. Yeah. So when you're going to, uh, let's say you have a work dinner, let's say you're, you're flying like, uh, uh, to a different city and you want to meet with like 10 customers and just like host, like a cool hang with them to get to know them.
+
+Let's say they're big customers. Would you just upload all six of the names and then just tell it, like, make this in note card format or I mean, how would you do it? Well, okay.
+
+So, uh, I want to show off something separate. So if I was doing that, I would actually do this as an internal tool that we built. Now this that I was just showing off, this is kind of for like basic on demand stuff.
+
+Yeah. So you can see like it did a good job, but you know, if I'm trying to show up to like a dinner and I know who's going to be there in advance, I want to come in well equipped. Like, I don't want to do this sort of like on the fly sort of thing.
+
+I want to come in having done my research. So we built an internal tool. This is a company brief generator now uses Zapier interfaces.
+
+So this is like a pretty easy thing to build. And then what it does is you put in a domain name. So you could put in Netflix or Shopify or Slack or whoever, you know, you're meeting somebody from this company.
+
+And then what this does is it goes and retrieves information from three sources. So one, it pulls from a web search. So it just goes and finds like, what, what do we know about this company That's an internal, like, Google, you can think of it.
+
+It'll go search all your sort of like internal stuff. Glean is basically, I've been trying to use it. It's you just log in to everything.
+
+And yeah, okay. Okay. And so it'll search like Slack and Google Drive and you know, all the tools you give it access to.
+
+So we'll do a glean search. And then the third thing it will do is it will hit our actual customer database. Well, a replica of it in Databricks and help understand like what usage is going on inside the company.
+
+Then on the other side, it spits out a report. And so I actually did Hampton before this call. Oh my God, let me see.
+
+All right. You want to see it? And so it's going to be using this and at your company, what roles are using this?
+
+Everybody uses this internally. So if you're customer facing at all, you will do this. So it doesn't have like a crazy amount of information on on Hamptey, but you can see here the company summary.
+
+So this is like public pulling a bunch of like public data on it. Now, I did some like research on it and it's it's sort of correct. Like I'm betting you're spotting things here that you're like, Oh, that's not quite right.
+
+I think the goal of having this if you're if your intention is to connect with me at a dinner or something like that, like you have ammo there. Exactly. And that's what I'm getting out of this.
+
+I'm not, you know, like, like I looked up before, like, it doesn't look like Jordan is the CEO anymore. Right. So that's a thing where I'd be like, Okay, you know, I probably don't want to talk about that.
+
+But there's, you know, this, oh, it's a membership community. It's in New York. Like, you know, here's some things that I can, you know, riff with you on, you know, it pulls up a bunch of information.
+
+Then you can see, here's our glean summary where it's got, you know, more issues about like what's going on with the account and things like that. And so, you know, maybe there was a payment issue with you all at some point in time. That is so awesome.
+
+Yeah. And so I can be prepared where I'm like, if you come up to me and you're like, Wade, like you really screwed me over in 2024, like, I can be like, yeah, hey, I'm really sorry about that. Here's what we did to fix this.
+
+We did this, this, this, and this. And all of a sudden, you're like, okay, wait, it's really on top of it. Like, I feel better about, you know, Zapier as a vendor versus like, you know, if I didn't have this, and you were just like, Wade, I'm still pissed about what happened in December in 2024.
+
+And I'm like, um, what happened? I don't know what happened. And so now you're like, man, he doesn't even know what's going on in his own company.
+
+And so you have a tool like that. And then lastly, it didn't actually pull much. So I don't know how much usage is going on here.
+
+But for companies that are really using Zapier, the visualizations area pulls up a whole bunch of metadata about how their accounts is being used. So I can see like, oh, you know, they use Slack and HubSpot and Google, and they're using AI or not using AI in the account. Here are the users that are using it, all that sort of stuff.
+
+Well, who built this? I think it was like one of our data analysts built this tool. On like Repplet or something?
+
+Uh, no, this is mostly just a Zap. So it's, you know, a Zapier interface. So you put in a domain name, then there's a Zap that goes out and it hits those three areas.
+
+So it hits, does a web search, probably a step one, it does a glean search of step two, and then it does an internal search on our Databricks instance at step three. And then the output is an HTML file. What would I Google to find the landing page that allows me to make this?
+
+So we have a bunch of templates that you can check out. So zapier.com template slash use cases. This has like a bunch of places where you can go figure out how to do versions of this for yourself.
+
+So like anything under lead management is going to give you like great examples for ways to like build a version of this for yourself. And then the second place you can check out is we have this, this project that's product called agents, which is in beta, but it has its own templates, which these are pretty slick as well too. So you can, you know, company research is the number one thing here.
+
+So you can go build a version of this to, to help you with company research. Have you seen on the office? They, um, they show like, uh, I guess, Michael stole Dwight's notes on his customers, but he forgot how to like, he didn't know how to like read them.
+
+And he's like, Oh, uh, I see you, uh, are Eric from PA. Right. And, uh, you have a gay son, right?
+
+Uh, well, they're like weird. It's like green is color coded. Green is color coded to mean this, to mean this, which means stop.
+
+Oh man. Oh, what's the second one. Cause you have a bunch here.
+
+Yeah. So, um, we could go to the agents manning the inbox one, or there's another, even more basic one. Like how basic do you want to get?
+
+You drive baby. I like I'm basic. I'm pretty, I, I, I'm a, I'm a, I'm a huge noob when it comes to this.
+
+All right. So here's one that I do all the time. All right.
+
+So what's this use case? I, you know, if you're, if you run a company, you probably get like a Google doc, like of a business review or a strategy memo or something like that shared with you all the time. And you're trying to figure out like what's going on in this thing.
+
+And you know, the use case that I like to do is I like to just talk to like, just go back and forth with chat GPT to try and better understand this. So I didn't want to share our own internal stuff. So I actually pulled the, uh, some of you might've seen this, like Mr.
+
+Beast put out this, like, uh, leaked, had this leaked memo of like how they do their production stuff. So I figured we could just try it. So for the viewer, um, about a year ago, Mr.
+
+Beast, the famous YouTuber, he has a production company. He has like a 50 or a hundred page document that sort of breaks down how he wants his team to behave in different situations. So like, yeah, for example, one famous thing is he was like, I want you to hire a consultant.
+
+Consultants are amazing. They'll like save you time, whatever. I want you to post this many videos.
+
+So he like had the outline for the company processes and culture. Speaker 2 So here's what I like to do. I like to give it to chat GPT, basically tell it what it is.
+
+I like to say it's a rough draft and then I want it to, uh, succinctly describe back to me what is in the doc. So I mostly just don't want it to, I don't want it to like put its opinion on it. So, you know, you'll do that.
+
+And then, you know, it kind of describes back to you like, okay, here's what it is. You know, the core philosophy, what makes a YouTube video go viral. You know, it kind of just goes through the doc a little bit, but it's kind of, it's kind of generic.
+
+So I'm like, Hmm, like, I don't, I don't know that I love this. So then I might just say like, Hey, be a hundred X, you know, more specific. And I stole that from this, uh, woman who's the runs product at whoop Hillary.
+
+Uh, I saw a YouTube video where she did this and I found that to be like, okay, now you start to get like, all right, a lot of really good nitty gritty details inside of this where you can see what's going on. And all the while, you know, for Zapier internal stuff, I, I'm able to now try and get a better sense of like, what is this team trying to tell me? So when would you use this?
+
+So you're using the Mr. Beast one as an example, but give me a realistic, uh, Zapier, like, so you're within your company, Say we're trying to decide, you know, uh, maybe I'll give you an example. Like we're trying to decide, should we launch a voice agent or not?
+
+Right. Okay. Hypothetical thing.
+
+And some product team will say, Hey, I want to go make a case for it. And they'll write up a strategy memo to say, here's why we should or shouldn't do this stuff. Now, if they're like really good at making their case, they'll have, you know, qualitative data to support their evidence.
+
+They'll have quantitative data to support their evidence. They'll have multiple options for like how to go tackle this. And, you know, we could go route a, we could go route B, we could do, you know, a hacky version.
+
+Here's what like the all in version looks like. And then they'll have their like strong recommendation for how to go do this stuff. Yeah.
+
+Yeah. That's like what I great, like strategy memo looks like to me, but not everyone like sort of comes in and does that. And they don't always tee up the information in the way that like I am best at interpreting it.
+
+And so I will usually start by reading the raw document myself. So that way I like, okay, I understand what the team is trying to say in their own words. Then I'll upload it like this to chat GPT and start going, okay, what is chat GPT think about this stuff to start to augment it and get like a thought partner on what am I going to sort of try and what types of questions should I ask the team?
+
+You know, what types of things am I trying to get out at the end of the day? Got it. Okay.
+
+So that's how I end up using this. But the interesting question is like, you kind of ask it a couple questions like this. And so chat GPT starts to get a warm up and then you ask it like the real questions, the 100 times more specific one.
+
+That's a really good hack. Another good hack that I use is I will tell chat GPT the problem I'm trying to solve and what I think the prompt should be. And then I just say now write the prompt for me.
+
+Totally. Yeah. Meta prompting, right?
+
+You're like, I need a prompt to do X. Yeah. Yeah.
+
+And so this is like the way that I see like some of the people that I'm like, holy cow, you're like really using chat GPT or like using these tools exceptionally well is they don't just like ask their question right away. They usually ask like these warm up questions where they're trying to like gather a bunch of contacts, get a bunch of specific information going. And then once they sort of have enough of like things in memory for chat GPT, then they start asking like the real things they want to know, which is like, where are my blind spots?
+
+But the blind spot question is, uh, so let's say that you're using the voice AI. So you're saying where are Wade's blind spots and deciding if this is a good idea? Is that what you're saying?
+
+Well, basically, you know, because I'm presenting it as my own idea. Uh, it, and then when I ask, where is the blind spots? Sorry, I'm scrolling really fast.
+
+I understand what you're saying. So where am I blind? You're really saying the author, where's the teams?
+
+Yeah. Where's the team's blind spots? I got it.
+
+Okay. Yeah. And you know, as you read through this now, so like if I was, you know, uh, Mr.
+
+Beast and I was going through the blind spots, you would say, oh, okay. Interesting role specific guidance. Yeah.
+
+There are different roles inside the team. So should I add like, you know, training that's specific to different roles or should I not? You know, there's no feedback system for creative feedback.
+
+Do I care about that or not? And now when I asked this blind spot question, I'll find that like, there's usually one or two things that chat GPT will catch where I'll go, oh yeah, that's a good one. And then there'll be a bunch of things where I'll be like, nah, I I'm good.
+
+Like that, that's not an actual blind spot. Like that's not real. Like we'll, we'll be fine with that.
+
+And so it's like, I find this just like simple back and forth to be like good at just catching stuff. Like it just catches like simple errors that are obvious. Um, it doesn't do the work for me.
+
+It doesn't do the thinking for me, but it just, it augments it. It's like just having a thought partner there that can help you navigate any of the sort of tricky decisions that you're there. You're talking to.
+
+What are some other good warmup questions? You had, you had a good one, which was the meta prompt. The second thing that you can do is just blab a bunch of context to it.
+
+So a lot of folks use things like a super whisper or whisper flow. You talk to it. You talk to it.
+
+Yeah. I love that. So yeah, my co-founder goes on like long walks with his dog and he will literally just talk back and forth, back and forth, back and forth.
+
+And then he'll take the transcript of that and then input that and say, Hey, based on all of this, now I want you to go write a strategy memo on XYZ thing versus saying, Hey, just write the strategy memo on this. Yeah. Can you actually walk, walk me through that?
+
+You know, I, I take, I'm like a history buff and I like go for walks with AI with Chachapiti and like, we're just conversing about World War II. Uh, and like, it's so funny that like, I, it's great. Like, I'm like, wait, so why do they do this?
+
+And how did these people react to that? Like, that's like, I have my, I have like a historian who I have conversations with obviously using it this way is significantly more productive. Can you walk me through, uh, his conversation with that?
+
+Like, is it on chat GPT? And then does he say like at the end now transcribe all of this? He, I see, I'm trying to think how he does it.
+
+So you, if you talk to chat GPT, it does give you the transcript. And so I suspect he'll just take the transcript out of it. I, maybe he, uh, he might have it.
+
+He might actually just tell it like, Hey, give me the whole transcript of this conversation in JSON format or something like that because he's an engineer and he likes stuff in JSON format and he'll be able to do something more sophisticated with it and then upload it back into the next prompt. Got it. Okay.
+
+This is awesome. So good ways to, um, warm up questions. So, uh, I like the meta prompt.
+
+You like, um, be a hundred X more specific. Another one that I like to do that I think people don't do a lot. Describe it back to me.
+
+Oh, that's a good one. So you'll say, describe it back to me. I like to say before we get into it, if there's any questions that you think you need answered, so you have full context, please ask them now.
+
+Yep. I do that as well. That's a hundred percent, a great one.
+
+Like I, I have a really long running chat GPT project around like my personal health and wellness. And so there's a whole bunch of stuff I don't know in health and wellness space. And so I'll just take exports of like, I have a workout app that I have, and I'll just like upload the outputs of that.
+
+I have like a sleep app and I'll upload that. And I'm like, here's a bunch of stuff data on me. You know, I want to know how to improve my overall health and wellness, but tell me if I can give you more information that gives you better, better suggestions for me.
+
+Yeah. Dude, this is awesome. So you basically like this whole episode, it's turning into like a thing where it's like, how can you save me 20 or 30 hours per week?
+
+Yeah. You've done a good job so far of, of saving time. What are a few other, um, ways that you're using this stuff?
+
+So Zapper agents is another one that's interesting to go give a try to. So most people, when they talk about agents, they are usually talking about like chat agents, where you're going back and forth with chat GPT, or you're going back and forth with Claude. What's different about Zapier agents is these are fully automated agents.
+
+Like these are things where you can say, Hey, I want you to just go do this job for me always. So for example, let's make an agent that replies to your email. Uh, and actually I don't want it to reply to my email because I'm a little scared that it might reply in a way that is not up to my standards.
+
+So what I actually want you to do is make drafts for my emails. So I'm just going to do like a really basic thing here, which is, let me start from scratch here. So you can just do like new agent here and we're just going to do a custom agent.
+
+We're just going to like do like, just kind of blab into this box here. So what is this? This is Zapier.
+
+Uh, this is Zapier agents. Um, and so it has access to all of Zapier's tools and it has access to Zapier's trigger infrastructure, meaning these agents wake up based on all the events that might happen in your world. So you get a new email, you get a new lead, you get a new, uh, customer, you have a new project come in, like all the things that you can think about that happen in all the SAS tools you use in your software.
+
+You can use that to wake up your agent and have the agent go do something. So in this case, we're going to use Gmail. Anytime you get a new email to wake this agent up, because then we want that agent to go, uh, reply to the email.
+
+So we're going to just do some, a really basic prompt. This is not a prompt you would actually use, but I want to show off how this works. So you would say, Hey, uh, anytime I get a new email, uh, write a draft reply for me.
+
+So this is like super basic. Um, and we're going to see what this thing goes and does. So you can see, you know, building these agents takes a little bit of effort, um, to do it, but you get this copilot that starts to like suggest like, okay, we're getting ready to go build this agent with you.
+
+Uh, I'm going to, I'm going to help you make this workflow, but I need some more details. So that question you were saying, Sam, which is like, Hey, ask me more questions to help me make this better. Like it's baked into the experience here.
+
+Cause we know that like, when you say, Hey, anytime you get a new email, write a draft reply for me, if that's what you're going with, like, you're probably not going to actually have a great agent. Like you need to provide these agents with tons of details to actually make it good. So, you know, it's asking me like, what email service do you use?
+
+I'm like, Oh, I use Gmail for my email. Um, two, I want you to save it as a draft reply inside Gmail and then reply content. What should the draft reply include?
+
+Um, you know, it should, you know, it's like, Hmm, I don't know. Like what should it include? Like I get a lot of different types of emails.
+
+That's interesting. And it's like email filtering. Should this apply to all new emails, only emails from specific.
+
+So it starts to ask you questions that start to make you think. Yeah. So maybe like, uh, only internal, only my coworkers or something.
+
+Yeah. Well, so I was thinking, actually, I don't want it to draft a reply to every email. What I really wanted to do is reply to everyone that is asking about a job at Zapier.
+
+Because I get a lot of people that are emailing me and saying like, I'd love to work at Zapier. This would be an amazing thing. It's basically just like a, like a super smart vague, like, um, responder.
+
+Yeah, like when I go on vacation. Yeah, you used to have like these autoresponders, but they were like, all those autoresponders were like pretty dumb. Dude.
+
+And this is great because like we get, you know, for MFM, we get dozens a day of people wanting to come on the podcast and totally ruins my inbox. Yeah. All right.
+
+Okay. So now here we're going, right. So it's starting to build the actual prompts for the agents.
+
+You know, when a new email is received in Gmail, analyze the content to determine if the sender is asking about a job or a career opportunity, look for keywords like job, career, position, hiring application, blah, blah, blah. So like we're making it, it's actually making a really good prompt for ourselves. So now I start to go, ah, this is interesting.
+
+So I can come in and edit this directly. So thank them for their interest in Zapier. Yeah, I'd like that.
+
+Direct them to the career page. Yep. That sounds great.
+
+Mention that they can find current opera openings and apply directly through the career page. Yep. I like that.
+
+Keep the tone welcoming and professional. Um, I like that. Okay.
+
+But you know, what I really wanted to do is, um, Rub them the wrong way. With that, you know, like, you know, let's see, I want them to be polite. But really brief.
+
+Because I find that these agents like get really wordy. And that's not how I write an email. Like I do really short emails where I'm like, Hey, thanks for, thanks for checking us out.
+
+Did you check out the jobs page? You know, maybe I actually should ask them maybe and say, thank them for their interest in Zapier and ask if they've already applied for a job, something like that. Yeah.
+
+Um, if I was being really fancy, what I could do is say, I want you to actually go look inside our applicant tracking system and go, that's crazy if they've already replied. Um, so you could do something like that. Uh, say this is a draft reply in Gmail so you can, you know, review and send it manually.
+
+If the email is not job related, take no action. Right. Uh, that's really important.
+
+Like I do not, you know, I do not want you writing draft emails for, I don't know, a customer. So there you go. And I'm gonna be like, Hmm.
+
+All right. So this feels pretty good here. I like this.
+
+So, you know, go test the agent and, and turn it on. Uh, and so it'll go in now and look at my own inbox and see, you know, Hey, do I have anybody that is asking for a job in my inbox right now? And I actually cleaned out my inbox before this.
+
+So it's probably not gonna find anything, which is why there was a problem testing this agent here. How hard has it been to encourage, I guess, I mean, your company is very technical, but how hard has it been to encourage your staff to really embrace this stuff? So for us, I think we have it better than the marginal company because we're an automation company.
+
+Like our employees nerd out over this stuff. We have a company value that's don't be a robot, build a robot. So we're literally trying to teach people that automation is a core primitive, but even for us, there still is a learning curve.
+
+Like, yeah, we employ a bunch of engineers, but you know, we have accountants on staff and HR folks on staff and, you know, folks that, you know, probably haven't by default been exposed to this stuff as much. And so we really do make it our mission to help people help make this technology a lot more accessible. So like, you could see when we were building this agent, like, we're just assuming that somebody's going to come in and do a bad prompt.
+
+Like, we just know that because most people don't come in breaking the problem down step by step, by step, by step, by like this. Do you have like a full, like you, you, you know, at 700 people, you almost need like a five person team. And it's like, all I'm going to, or, or do you just send them a bunch of YouTube channels?
+
+I don't know. Like, how do you train? Because this shit changes every three weeks.
+
+Jason Valey We had a wake up call when chat GPT launched because we were like, holy cow, our roadmap and how we are operating the company, it needs to shift. Like it is, there's so much more opportunity and candidly threats to our business if we are not paying attention to this stuff. Jason Valey And so we did a handful of things that has gotten our usage of AI from effectively zero to now just shy of a hundred percent.
+
+The last time we, we did a stats on it, we were right around 90% of our employees using this stuff daily. And so the three things were first, we called a code red and we did a hackathon where I stopped the company for an entire week. And I said, I don't care what job you're in.
+
+You know, if you're in HR accounting or support or sales or engineering, we're all going to press pause for the whole week. And we're going to go build stuff with AI. You know, if you're an engineer, maybe you're going to build a feature for our products.
+
+If you're in recruiting, maybe you're going to go see how you could use chat GPT to write job descriptions or, you know, how you could do basic research. You know, this is 2023, I think. Right.
+
+So it's pretty basic stuff back then. So that was really important for people to just start to get familiar with the tooling. Then from there, at the end of the hackathon, we did show and tell.
+
+So we said, Hey, everybody's got to show off what they built. That does two things. One, it promotes accountability.
+
+So people are actually going to take this stuff seriously because they got to show it off to their teammates. Two, it also promotes knowledge sharing, because now you get to see how other people do this stuff. And I have found that that's been the most impactful for my own learning.
+
+It's like, Oh, tell me what prompts you did there. Like, show me how you did that. Because there's just like a bunch of people out there that are like constantly experimenting and nerding out on this stuff in ways that I just simply don't have time on my hands to look like try all this stuff.
+
+So I benefit a lot from just like watching how other people are using this stuff. Then the second thing we did is we said, we're going to go do these hackathons every so often. So about every three to six months, we do it again.
+
+Now we don't do it for a full week. Usually we just do a day or two. But that gets people to keep coming back to the watering well to see what's changed, what's new.
+
+And that helps again, people get like refresh their mental model of what these models are capable of and what the tools are capable of. It's so awesome, man. This is so awesome.
+
+Do you want to do one more or do you have one more? No, I don't I can't demo this one because it's a lot more sophisticated to demo. But I want to show like what great can actually look like.
+
+I think mostly what I've showed today is candidly like pretty basic starter stuff. But this is where if you have a couple people embedded in all your functions inside of a company, you can really start to use AI at a pretty impressive rate. So for example, a couple weeks back, like the internet went viral because there was this guy who had been hired by a bunch of different YC companies.
+
+He was like five or six jobs at once. Tell that story. So basically, I think I forget the guy's name, but I started mix panel, called him out.
+
+But he was like, just so you know, I just caught this one employee working for us and turns out he's had another job. And then like dozens of other companies were like, dude, he worked for me too. Turns out 100% he got called out.
+
+Then he did a podcast where he was like, yeah, I've been working three to four to five jobs at any given point. I've been doing this for two to three years. And everyone said the same thing, which was he passed the he was amazing.
+
+Like he I thought he was this amazing employee. And he nailed the job interview. And everyone was like, how that, that was the most impressive part, which is how on earth did this guy crush the interviews so well that he got these positions.
+
+So that's the story. Yeah. Yeah.
+
+And it turns out, there's a whole subreddit about this. There's a subreddit called like over employed. It's crazy.
+
+It's crazy. It's it's like, I mean, hats off to him. Like, I think if these people worked that hard at like starting a business or like just even in their core job, I think they would be incredibly successful.
+
+These folks obviously have some unique skills. They just employ them in like, you know, nefarious ways. Yeah, it's various ways.
+
+I've always thought like, I think there was a book, uh, freaking Amit wrote a book where they like look at drug dealers and like how much work they do. And they like, it turns out they only make like $14 an hour for how much work. And like the conclusion was like, you guys are, you should do normal jobs.
+
+You would make more money and you're clearly very hard working. Totally. So what is this?
+
+This is a, this is a template that I think would have caught this guy. It's a candidate risk detector. So effectively what you do here is it hooks into things like Ashby, Slack, Verifone, IP, an IP API, and you run through applicants and then it tries to score their risk on is this applicant potentially fraudulent.
+
+And so effectively, you know, you get an applicant that comes in, it takes the details of what came in from the applicant, and then it runs checks on the IP address, phone numbers, and a whole bunch of other metadata. And then it compares them to other applicants to try and spot mismatches or suspicious patterns or things like that. 05 million.
+
+10 years ago, this would have been like machine learning engineers that are like building this type of stuff. They'd be like, you know, you, you really would have like, it would have really been tough to go set this up. But this was built by Casey who is on our talent team.
+
+She just, just part of the talent team. Like that's what she's good at. Is Casey like Frank Agnelli Jr.
+
+Where you remember the catch me if you can't move, where they like he gets he's like a check fraudster and after 20 years he gets caught and the fbi is like uh hey do you want a job catching other fraudster so did casey have like 10 jobs and you caught her no she didn't but that would make a better story yeah if it if we did casey should have done more illegal stuff yeah and so you can see pretty much here like how the the the process how the template actually works do does the way your business work so if you scroll up it said uh kit a kit this is a uh an agent that someone made or do you guys call agent or templates yeah this is a this is an a this is actually i mean you could call it an agent this is actually just a straight-up workflow in this case but it has ai as part of it so are you guys going to become a platform where people could sell their agents that they make i like that idea so yeah understood uh uh yeah i mean that that's a no-brainer you know is a that's a no-brainer so that would be awesome uh and it would definitely like blow you guys up i mean very similarly to microsoft and shopify like the platform model like is is an amazing model um and these are the types of templates you could sell right the thing like the you know thing i was showing before about the like email reply thing it that's that's super simple but this this takes some effort like casey you know she probably went i don't know i i'd have to ask her but i would guess this probably took her a couple days of just like trying to think through break it down into all the different steps you know find all the tools she needed to to use but at the other end you know it saves our hr team like a huge amount of headaches because now we're like not having to go spend time on these candidates that are you know maybe trying to pull one over on us what what do you call your industry automation like platform automations so we think about this as like ai orchestration at the end of the day it's like ai orchestration workflow automation like ai automation this is the kind of stuff that like the most sophisticated teams are are doing right now is they're building things like these candidate risk detector for hiring teams and they're using that to like solve problems that candidly they could solve before or like do work that they just couldn't do before who who's the biggest in your space are you the are you guys the big guys there i mean i yeah we are like it's us it's um you know microsoft's got a product that does stuff like this you know workado that's like you know much has started like much much much more enterprise oriented though these days zapier is like very enterprise oriented as well too and then uh you know there's a handful of like small startups that are doing stuff like this as well too dude this is awesome i um do you remember what so i used to have this trick and you're the first uh person who was a victim of this trick that i will admit that this was my trick so i had so for years from the ages of like 24 to like 28 i would host this event called hustle con where i would get people like you to come give a talk and i would lie to everyone the speakers i would be like you know you're talking at three o'clock you have to be there at 10 a.m for the uh mic check and all that stuff and at conferences there aren't mic checks the mics the mics the mics work it's the same mic it works fine the reality was is i wanted you to come backstage to just hang out i wanted to like not necessarily hang out with me but i wanted to see way talk i think it was like i was in the room you were in the room and then like the founder of the athletic and i would just sit and listen to you talk and and just like it was it was very inspiring um that was i think 16 or 17 i forget exactly when and you were there i didn't even have to lie to you you were there from like eight to seven two days in a row just sitting on this couch with me and i don't know if you were doing this this like on purpose but i'm pretty sure you were doing the same thing i was doing and it was awesome because that that i that was the biggest impact of probably on my business that i ever had because or my life because i remember being with you and the founder of we work miguel and casey neistat and all these ballers and i was like wade might be a little different but most all these guys they're not that much smarter than me but they're like i was like they're not a thousand times smarter than me but they're a thousand times more successful than me why why does that gap exist it's because they are fearful but they do it anyway or you know things like that and it was very inspirational well i think that's like there's this meme that goes around the internet of like you can just do things yeah and i think that that is like if i could sort of like go back to my former self or just talk to the graduating class or whatever it's like just do stuff like it's like you know i think most people are so scared that they're gonna have egg on their face but usually what happens is that when you fail nobody even noticed nobody even cares like that's what usually happens and so if you mess up who cares nobody saw it like try again um and so there's just so much advantage to be had around just like trying stuff well um you did just do stuff you you did the damn thing so i appreciate you coming here and doing this um uh thank you for being so gracious and and making this happen you bet when i come back we'll actually have to do the mfm thing and like jam on business ideas and stuff like that right after we get done hitting uh uh you know off for this we'll we'll get you scheduled we'll do the second one right i'm down no i'm uh we're in love it um all right god bless thank you that's it that's a pod so

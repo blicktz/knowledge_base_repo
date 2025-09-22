@@ -15,7 +15,6 @@ PATTERN ?= *.txt
 
 # Default persona name for extraction
 PERSONA_NAME ?= greg_startup
-DK_PERSONA_NAME := dan_kennedy
 
 # Search query for testing
 SEARCH_QUERY ?= "mental models for productivity"
@@ -74,6 +73,7 @@ setup: install setup-spacy setup-env ## Complete setup (install + spacy + env)
 build-kb: ## Build knowledge base from documents
 	@echo "$(BLUE)Building knowledge base from $(DOCS_DIR)...$(NC)"
 	$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" build-kb \
+		--persona-id "$(PERSONA_NAME)" \
 		--documents-dir "$(DOCS_DIR)" \
 		--pattern "$(PATTERN)"
 	@echo "$(GREEN)✓ Knowledge base built$(NC)"
@@ -85,6 +85,7 @@ rebuild-kb: ## Clear and rebuild knowledge base from scratch
 	if [ "$$confirm" = "y" ] || [ "$$confirm" = "Y" ]; then \
 		echo "$(BLUE)Rebuilding knowledge base from scratch...$(NC)"; \
 		$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" build-kb \
+			--persona-id "$(PERSONA_NAME)" \
 			--documents-dir "$(DOCS_DIR)" \
 			--pattern "$(PATTERN)" \
 			--rebuild; \
@@ -97,6 +98,7 @@ rebuild-kb: ## Clear and rebuild knowledge base from scratch
 update-kb: ## Update knowledge base with new documents
 	@echo "$(BLUE)Updating knowledge base with documents from $(DOCS_DIR)...$(NC)"
 	$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" build-kb \
+		--persona-id "$(PERSONA_NAME)" \
 		--documents-dir "$(DOCS_DIR)" \
 		--pattern "$(PATTERN)"
 	@echo "$(GREEN)✓ Knowledge base updated$(NC)"
@@ -104,7 +106,7 @@ update-kb: ## Update knowledge base with new documents
 .PHONY: analyze-kb
 analyze-kb: ## Analyze knowledge base statistics
 	@echo "$(BLUE)Analyzing knowledge base...$(NC)"
-	$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" analyze
+	$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" analyze --persona-id "$(PERSONA_NAME)"
 
 # =============================================================================
 # PERSONA EXTRACTION TARGETS
@@ -119,14 +121,6 @@ extract-persona: ## Extract persona from documents (use PERSONA_NAME=name)
 		--pattern "$(PATTERN)"
 	@echo "$(GREEN)✓ Persona '$(PERSONA_NAME)' extracted$(NC)"
 
-.PHONY: extract-dk
-extract-dk: ## Extract Dan Kennedy persona specifically
-	@echo "$(BLUE)Extracting Dan Kennedy persona...$(NC)"
-	$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" --verbose extract-persona \
-		--documents-dir "$(DOCS_DIR)" \
-		--name "$(DK_PERSONA_NAME)" \
-		--pattern "$(PATTERN)"
-	@echo "$(GREEN)✓ Dan Kennedy persona extracted$(NC)"
 
 .PHONY: list-personas
 list-personas: ## List all available personas
@@ -149,18 +143,21 @@ export-personas: ## Export all personas to output directory
 search: ## Search knowledge base (use SEARCH_QUERY="your query")
 	@echo "$(BLUE)Searching for: $(SEARCH_QUERY)$(NC)"
 	@$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" search "$(SEARCH_QUERY)" \
+		--persona-id "$(PERSONA_NAME)" \
 		--n-results 10
 
 .PHONY: search-mental-models
 search-mental-models: ## Search for mental models and frameworks
 	@echo "$(BLUE)Searching for mental models...$(NC)"
 	@$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" search "mental models frameworks problem-solving" \
+		--persona-id "$(PERSONA_NAME)" \
 		--n-results 15
 
 .PHONY: search-beliefs
 search-beliefs: ## Search for core beliefs and principles
 	@echo "$(BLUE)Searching for core beliefs...$(NC)"
 	@$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" search "core beliefs principles values philosophy" \
+		--persona-id "$(PERSONA_NAME)" \
 		--n-results 15
 
 .PHONY: search-interactive
@@ -171,6 +168,7 @@ search-interactive: ## Interactive search session
 		read -p "Search> " query; \
 		if [ -n "$$query" ]; then \
 			$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" search "$$query" \
+				--persona-id "$(PERSONA_NAME)" \
 				--n-results 5; \
 		fi; \
 	done
@@ -229,16 +227,44 @@ clean: ## Clean cache and temporary files
 	@rm -rf data/storage/cache/* 2>/dev/null || true
 	@echo "$(GREEN)✓ Cleaned$(NC)"
 
+.PHONY: clean-caches
+clean-caches: ## Clean all analysis and extraction caches (preserves data)
+	@echo "$(BLUE)Cleaning all analysis and extraction caches...$(NC)"
+	@echo "$(YELLOW)Cleaning statistical analysis caches...$(NC)"
+	@rm -rf data/storage/personas/*/analysis_cache/* 2>/dev/null || true
+	@echo "$(YELLOW)Cleaning map-reduce extraction caches...$(NC)"
+	@rm -rf data/storage/personas/*/map_reduce_cache/* 2>/dev/null || true
+	@echo "$(YELLOW)Cleaning general cache directory...$(NC)"
+	@rm -rf data/storage/cache/* 2>/dev/null || true
+	@echo "$(YELLOW)Removing empty cache directories...$(NC)"
+	@find data/storage/personas -type d -name "*cache" -empty -delete 2>/dev/null || true
+	@echo "$(GREEN)✓ All caches cleaned (data preserved)$(NC)"
+
 .PHONY: clean-all
-clean-all: clean ## Clean everything including vector DB (DESTRUCTIVE!)
-	@echo "$(RED)⚠ WARNING: This will delete all data including vector DB and personas!$(NC)"
+clean-all: clean ## Clean everything including vector DB, caches, and personas (DESTRUCTIVE!)
+	@echo "$(RED)⚠ WARNING: This will delete all data including vector DB, personas, and caches!$(NC)"
+	@echo "$(YELLOW)This includes:$(NC)"
+	@echo "  - Vector database (ChromaDB)"
+	@echo "  - All persona artifacts"
+	@echo "  - Statistical analysis caches"
+	@echo "  - Map-reduce extraction caches"
+	@echo "  - Log files"
 	@read -p "Are you sure? [y/N]: " confirm; \
 	if [ "$$confirm" = "y" ] || [ "$$confirm" = "Y" ]; then \
-		echo "$(BLUE)Removing all data...$(NC)"; \
+		echo "$(BLUE)Removing vector database...$(NC)"; \
 		rm -rf data/storage/chroma_db/* 2>/dev/null || true; \
+		echo "$(BLUE)Removing persona artifacts...$(NC)"; \
 		rm -rf data/storage/artifacts/* 2>/dev/null || true; \
+		echo "$(BLUE)Cleaning statistical analysis caches...$(NC)"; \
+		rm -rf data/storage/personas/*/analysis_cache/* 2>/dev/null || true; \
+		echo "$(BLUE)Cleaning map-reduce extraction caches...$(NC)"; \
+		rm -rf data/storage/personas/*/map_reduce_cache/* 2>/dev/null || true; \
+		echo "$(BLUE)Removing persona directories (if empty)...$(NC)"; \
+		find data/storage/personas -type d -name "*cache" -empty -delete 2>/dev/null || true; \
+		find data/storage/personas -type d -mindepth 1 -empty -delete 2>/dev/null || true; \
+		echo "$(BLUE)Removing log files...$(NC)"; \
 		rm -rf logs/* 2>/dev/null || true; \
-		echo "$(GREEN)✓ All data removed$(NC)"; \
+		echo "$(GREEN)✓ All data, caches, and personas removed$(NC)"; \
 	else \
 		echo "$(YELLOW)Cancelled$(NC)"; \
 	fi
@@ -298,7 +324,7 @@ lint: ## Run code linters
 # =============================================================================
 
 .PHONY: quickstart
-quickstart: setup build-kb extract-dk ## Run complete quickstart setup
+quickstart: setup build-kb extract-persona ## Run complete quickstart setup
 	@echo "$(GREEN)✓ Quickstart complete!$(NC)"
 	@echo "$(YELLOW)You can now:$(NC)"
 	@echo "  - Search: make search SEARCH_QUERY='your query'"

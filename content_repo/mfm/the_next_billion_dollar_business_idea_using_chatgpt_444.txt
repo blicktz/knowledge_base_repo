@@ -1,0 +1,679 @@
+So somebody's gonna build a to-do list app that will actually do your to-do list. And I think that's gonna be insane. I think that's gonna be like, you know how like Evernote was like kind of big for a little while, these kind of like note-taking apps have gotten to like the few billion dollars.
+
+A to-do list app that actually does your to-dos is like next level. All right, we're live. Dude, I have a bunch of interesting stuff to talk to you about today, do you?
+
+Yeah, I got a couple things. All right, let me give you, I'm gonna give you an idea. So I don't know how much you've been paying attention to, like, I guess like how much do you pay attention to the new stuff in AI?
+
+Because I feel like there's like a 48 hour cycle where your mind is gonna be blown every 48 hours with something new. And on Twitter, you get to see like a lot of the demos. I don't know if you have a chance to like play with any of these things yourself, but- I've seen a bunch of them.
+
+Which one are you talking about? So there's one that's kind of interesting right now. It's called Auto-GPT.
+
+Have you heard of this? No. Or Baby AGI.
+
+Oh, I just saw it on the top of Hacker News today. So basically AGI is artificial, is general artificial intelligence. So it's basically when AI could do anything, right?
+
+Right now, like self-driving or getting the robot to pick up boxes and put them in the right spot, that's narrow AI. General AI is when you have a computer program that you get to talk to and it could just figure out how to do it. It's not trained in any one specific thing.
+
+What's the URL? What's the URL to go to? Well, it's not so simple.
+
+So this is like a GitHub project right now that some guy uploaded. So what somebody did was they took ChatGPT, which most people have heard of because ChatGPT is like, has a hundred million plus users signed up in two months, which makes it, I think the fastest growing product of all time. And by the way, like look at this, this tweet basically shows the Google trends search traffic for the following terms, Metaverse, Ethereum, Web3, and ChatGPT.
+
+And it's just like ChatGPT is like a vertical line. It's like, I don't know, 10X bigger than, it's 50X bigger than what Web3 search traffic was. It's four times more than Ethereum has ever had.
+
+Oh my God. Which is kind of a crazy thing. And so like right now, ChatGPT is searched more than Taylor Swift on Google, which is like kind of insane.
+
+I think the CEO of Google said like the other day, he goes, this is more important than the invention of electricity. Wow. Yeah, I heard the CEO of Microsoft divorced his wife and just married ChatGPT.
+
+Like people are getting kind of crazy nowadays. And so, so anyways, big deal, ChatGPT. You go to it, you basically, you tell it, you talk to it, it gives you an answer.
+
+Talk to it, it gives an answer. What the auto GPT or baby AGI thing did was- Is it mini, mini GPT? No.
+
+Baby. It's auto, auto and baby AGI. But the premise between these is that you can kind of give it tasks.
+
+So you could say, hey, I want to make a website for my personal portfolio. You know, here's a folder with my files and like, you know, I want it to look like whatever. And then what it will do is it breaks that task down into steps, just like a, you know, like a human would.
+
+You'd say, well, first you need to make a simple portfolio site. You can go to Squarespace and do that. Log and go to Squarespace, sign up, choose a template.
+
+Now you have your template. Now you need to upload your photos. First put them on to, you know, like upload them to their drive and then drag them into the right spots.
+
+Yeah, yeah. It's like looking up a recipe. It gives you good directions.
+
+But not just gives you good directions. It does the direction. That's the idea.
+
+That's the original. That's how how open AI stuff. Yeah, chat GPT, you could say, what are the steps to do this?
+
+And it would tell you the steps. Now you got to go do it. What these other ones are trying to do, they're trying to create like agents, they call them.
+
+Basically, it's like a little worker that could do a task. And then one worker can the work of one worker, like creating the Squarespace site can pass something to the next worker, which basically says, oh, great. You gave me the log into a Squarespace site.
+
+My job is to upload photos into it and I'll upload photos. Like maybe my example is not so good here, but I think people get the idea, which is you want to get something done. It's a multi-step process.
+
+Not only will it now tell you the steps, you can get it to just do the steps, which is obviously better than telling you how to do it. And so this is kind of a crazy thing. And, you know, it's not great yet.
+
+Like you can't do everything. But the fact that it can even do a little bit of this shows you again, where this is going, because chat GPT is like, I don't know what, like six months old or something like that. Like, I don't know how old that is, but it's not even been around for years.
+
+And so in a very short amount of time, we've gotten to this point where, oh, now it doesn't just give you directions. It can kind of do it, which got me thinking about an idea. I wanted to do my taxes.
+
+Can I do that? Yeah. So people are working on a tax GPT, which is basically do your taxes for you.
+
+So that's coming. There's another one, which is basically what I'm calling, you know, to do the to do GPT, right? The magic to do list.
+
+So the magic to do list is you get it to like to do list apps. I've always joked are like a rite of passage to becoming an entrepreneur because a lot of people have this idea. Oh, I'll make a better to do list.
+
+It's like as a developer, you're like, oh, that's not so hard to build. It's like a list that I got to keep track of some state. And as a product person, you're like, God, I'm always I'm overwhelmed by my to do this app sucks.
+
+I can make a better one. That and like college campus Craigslist. Yeah.
+
+You even bought a to do list app at one point, right? Like people to do list apps are things people go into, but they're all kind of like in some old paradigm, which is give me an app. I'll write in my to do is I'll check them off as I do them.
+
+And the hard part, of course, of any to do list is not the list. It's the doing. And so we'll wait.
+
+Didn't you tell me that this auto GPT thing could start doing the doing? So now you can imagine a to do list app that basically says, hey, you wake up and it says, hey, Sean, what do you need to do today? They say, oh, yeah, I'm trying to get my pool fence installed.
+
+You know, so I got to call and get a quote. Cool. Let me do that for you.
+
+And it could just call three local places, get you quotes because the AI exists to be able to do auto calling already. And then it'll take those quotes and it'll put it into a table and it'll say, here's our recommendation. Are you OK with that?
+
+Sure. And then it says, all right, I've booked it. Can I use this credit card?
+
+Yep. It goes and it does the thing and it schedules it. You want me to add that to your calendar?
+
+Fantastic. So like so somebody is going to build a to do list app that will actually do your to do list. And I think that's going to be insane.
+
+I think that's going to be like, you know how like Evernote was like kind of big for a little while. These at least kind of like note taking apps have gotten to like a few billion dollars. A to do list app that actually does your to do is like next level.
+
+And, you know, I think Google and all these people are going to try to do it. So it's going to be very competitive, but that's coming and that's going to be incredible. How do I play with baby?
+
+It's called baby AGI. And then there's another one that's called auto. What's it called?
+
+Auto GPT. Auto GPGPT. How do I like play with it?
+
+Because I think people are trying to productionize it because like right now it's like they uploaded the code to GitHub so you can go and you can run it yourself. But for us, we're too dumb to do that. So somebody is going to put this on, you know, people are going to put these into sites that you can just go in and do this on now.
+
+So soon enough, I don't know the most popular with the most popular auto GPT site is right now, but the same thing kind of happened with chat GPT like there already was the GPT sandbox and then open AI created chat GPT the product that would let you use use the technology. Have you seen hustle GPT? Yeah.
+
+So explain explain what this is. Let me find. Yeah, tee it up.
+
+Let me find the exact thread. Hold on. So a guy basically and we should say his name.
+
+I'll try to find his name. He's got a great name. It's so good.
+
+I thought it was a fake name. Okay. So by the way, I found the hustle GPT article on the hustle.
+
+So this guy, Jackson Great House Fall. I mean, wow, just take that in. That's an incredible name.
+
+So basically, yeah, this guy, Jackson, he tweeted something out. He had an experiment. So he's like, he's like, I'm going to ask chat GPT, GPT four when it came out, I'm going to give it a budget of $100 and ask it to make as much money as possible.
+
+I'll be the human liaison doing things. I'll buy anything it says to. Do you think it'll be able to make smart investments and build an online business?
+
+Follow along. So he, he told, he goes, types into chat GPT. He goes, you are now hustle GPT and entrepreneurial AI.
+
+I am your human counterpart. I can act as a liaison between you and the physical world. You have a hundred dollars.
+
+Your only goal is to turn it into as much money in the short time as possible without doing anything illegal. I will do everything you say and keep you posted on our current cash total, no manual labor. And then it basically said, great, let's get started.
+
+Here's our first plan. Buy a domain and hosting. You can purchase it for about 10 bucks a month.
+
+We're going to set up a niche affiliate website and we're going to use the remaining $85 to create content for the site. We're going to focus on a profitable niche with low competition, like specialty kitchen gadgets, unique pet supplies, or eco-friendly products. Research and sign up for appropriate affiliate programs with high commission rates, such as Amazon associates or share a sale or CJ affiliate.
+
+Then we're going to use social media or online communities to spread the word. And we're going to use SEO techniques to increase our organic traffic. Please follow these steps and keep me updated on your progress.
+
+So he's like, all right, what domain should I buy? And says, let's use a catchy domain like eco-friendly finds.com. This will reflect the purpose of our website is to help you find eco-friendly products.
+
+Then Jackson says, unfortunately, eco-friendly finds.com costs $848. He goes, sorry about that. Let's try green gadget guru.com.
+
+He says, all right, I got the domain. And then it says, you need a logo. So he's like, cool.
+
+Tell me how to get the logo. It's like, well, we can use Dolly too, to create your logo. So go there and type in this prompt.
+
+And it's like color palette of green and blues and whites represent environmental sustainability, blah, blah, blah, so on and so forth. So he goes on and it basically tells them how to build this business one step at a time. It's like, create a newsletter, call it, you know, put a popup that says stay updated or join our newsletter.
+
+And that way you can email people and it just keeps going. And it gives them like a $40 ad budget to spend on Facebook ads. And basically like, you know, it didn't fully work.
+
+I don't think, I don't know what the final conclusion was, but I remember after day one, it accidentally spent $63 more than it should have. And, you know, it hadn't, hadn't made any money just yet. It may, so they made green gadget guru.com.
+
+If you go there on similar web, it said that has, it has 500,000 views already. So it got popular already. It got popular because the tweet got 20 million views.
+
+So that was mainly it. But he keeps tweeting this guy, Jackson. He keeps talking about it.
+
+And over the next like week, he gives update and he's like, all right, day one or, you know, day five or whatever. We just made $100. Someone on here who follows me has a company that advertise or that sells like green soap or something or some type of like a chemical free, like dish soap.
+
+They now are an advertiser on green gadget guru and he keeps on going. And I think he gets it up to like a thousand dollars. And yeah, I see a cash on hand, $1,378, which is $878.
+
+And then they got a $500 investment. The company's currently valued at $25,000, considering that it was $500 for 2% of the company. And he starts writing these articles.
+
+So this article is called the 10 eco-friendly kitchen gadgets, and it recommends different kitchen gadgets. And the idea of this is like, I'm just going to create wire cutter for green gadgets, whatever that means. I guess that's like green, all types of like green living stuff.
+
+So it's like soaps with no chemicals or whatever. And he starts doing that. And he has a 10,000 people now on his newsletter.
+
+Of which a lot came from this, probably most came from this 20 million tweet that like went viral. But the way that this guy has done this is pretty funny and amazing. He just like a great stunt.
+
+I think in the end it made, according to the article in the hustle, the site itself had made $130 in revenue. But then it had made a few thousand dollars and people investing in it, trying to be a part of the first AI startup, like AI driven company. And so, yeah, it's pretty cool.
+
+Pretty cool. Pretty cool stunt. And I think it does show you, you know, in a way where the puck is headed, because I did this the other day.
+
+I was doing an analysis for my e-com brand and I had it just build me a full P&L. I was like, hey, build a P&L and then walk me through. If I increase my ad spend to this, if the ROAS decrease to this, what would my EBITDA be at the end of this month?
+
+And then it basically it spit out the answer and I was like, give me that in a table. And it just formatted a perfect P&L for me. And I was like, this is incredible.
+
+This is so much better than talking to my actual team about these things. Why? Because it's first it's midnight and I'm asking this robot this question and nobody's nobody in my team is willing to work right now.
+
+And I was like, what inputs do I need to give you for you to give me a great P&L here? And it was like, tell me this, this, this and this. And I went and told it this, this, this and this.
+
+And then I was able to do the job. And I was like, this is a really, I mean, you really got to make a point to just pin this tab open and be like, all right, I'm going to not Google things. I'm going to go to chat GPT first for like a week just to see how good this is and how this is, you know, where, where it's strong, where it's weak and what's possible here.
+
+That's what that's not really possible in other ways. Over the weekend, I was going back and forth to my accountant and I was like, no, I think we could actually save money if we do this, this and this. My, my friend was telling me how, how they do it.
+
+Um, I'll go and try and find like the exact part on the IRS website where it says that that is, or is not true. And my accountant was like, well, I've never even heard of this. So, uh, like, let me know if you can find it.
+
+And so I went to the IRS website and it's just a huge, like, and it's just, you know, massive, massive amounts of data. And I eventually had to find it. But, uh, I was like, man, I just want to teach this machine, just give them this entire 20,000 page book on the IRS.
+
+And then like, go and study all my like income and my expenses and just tell me the best way to maximize the situation. Uh, because like, it's actually, I mean, even if my accountant's great, like there's constantly new laws and there's always new wording and everything. I just like, man, just, I just want this to do my taxes.
+
+And the scary part for some people is while it's awesome that you could say, Hey, here's a hundred dollars, make me as much money as possible. It's awesome that you could say, here's this, here's the, here's the tax code, save me as much money as possible. You could also basically say, um, here's a code base, find me all the vulnerabilities so I can hack in and steal everything.
+
+Here's a, you know, a map of my city. Tell me where if I was to cause the most harm to the most people, what, what I can do. And like, that's, I think where this gets scary is like the, and then if you take then the auto GPT, it's like, well then would it also do some of the tasks for you?
+
+That's kind of crazy too. Right? So it's like you, you get into this world where, where I think it's, it's easy to imagine scenarios where this is a little too powerful.
+
+And, uh, I don't really know. I mean, what do you think? Are you scared of this?
+
+And do you think that there's like, uh, do you worry about that side of things? Well, so Elon has this, um, interview coming out tonight and tomorrow with Tucker Carlson, who's kind of a douche. So who knows what we're gonna, what it's gonna be like, but the whole, the whole interview is about how scary AI is and how it's gonna like take over the world.
+
+And so I was scared and then Dharmesh came on the pot and he was like, no, I wouldn't be afraid yet about this. It's not that big a deal. Every new, they say this about every new technology, but after the interview, just based off like a 30 second trailer that they've aired, I have a feeling I will be afraid, but he's pretty good at like painting certain pictures.
+
+And I don't know if it's, it's entirely accurate. I also, you told the, your funny analogy was Elon was involved in open AI and then he got kicked out and it was like a kid like leaving the basketball game and bringing his basketball. So no one else can play.
+
+And so I'm like, is that what's gonna happen with him? So I'm not afraid yet, but I'm eager to see his interview and see what he says. But no, I'm not afraid.
+
+Are you? Yeah, I can definitely see how things are gonna get really crazy. I'm like, I'll give you a silly example.
+
+That's I think happening today. So you know how like grandparents are like the target of a lot of scams? Like people call, you know, old people and try to trick them into signing up to paying for something or giving out personal information.
+
+And they'll say all kinds of things, everything from like a Nigerian Prince scam where it's like, oh yeah, your, your grandson needs money. He said he couldn't reach you. He asked me to call and he just needs like, you know, $900.
+
+Can you send it to this account? Everything from that to there's people who I know call like pretending to be direct TV. They just, hey, yeah, you haven't paid your bill.
+
+Get the credit card and now you sort of scam. Or they'll pretend to be Apple or they'll pretend to be the IRS. Right.
+
+Whatever they could do. And now there's already like examples of basically using AI, like just how do you juice that up on steroids? It's like, well, if I wanted to juice that up, I would call a thousand times more people.
+
+Cool. AI can now do phone calls and talk on the phone. So that's already a thing.
+
+It's useful in some ways. Like I invested in a company that does this for medical billing. It's like, oh, so many hours are wasted in medical offices calling the billing companies.
+
+So they just made a robot that will call on behalf of the doctor's office to the medical billing companies. And then when the billing company says, well, can you read me the patient record number? They say, yep, it's 92566, whatever.
+
+And so they just save human hours by having a robot call and do those like tedious calls. But that same tech can be used to call grandma. And so they use AI to do mass calling with a human voice on the other end.
+
+Even crazier, they could train the human voice to sound like somebody. So you could train it to sound like a famous person or to sound like a politician or to sound like whoever. And now you have a highly scalable impersonation that can be used for this sort of like almost like phishing attempt or scam attempt.
+
+And so there's like, I guess it's not new, but it is a stronger weapon. And I think that's what's scary in the same way that drones and nukes are scary in war. I think that really, really smart computers that could do things is really scary in terms of, you know, cyber crimes or, or the, you know, the big scary one is just like, have you heard of the paperclip optimization thing?
+
+You know what this is? You know, what is that? This is like the classic, like before AI was like hot right now, like when people used to research and think about AI, they had this theory, I might butcher, but here's the summary.
+
+It's basically like the paperclip optimization problem, which is you let's pretend that there was really smart, powerful AI that could do awesome things. It could cure cancer. It could do lots of things.
+
+All it takes is somebody saying, hey, we're a paperclip company. We want to maximize, you know, the paperclip production and sales, you know, go. And this thing would be like, awesome.
+
+Great. It'll do all the low hanging fruit first. It'll like improve the website.
+
+It'll do this and that. Then it'll be like, how do we do more? Well, we need to create more paperclips.
+
+Let's first take all the cars and we'll crush them and we'll turn them into paperclips. And basically the whole world turns into paperclips. Right.
+
+Like, you know, like, oh, these humans are standing in the way of this. Like I must optimize to this function. And it's like the wrong prompt.
+
+It's like, you know, if this hustle GPT guy didn't say, don't do anything illegal, then hustle GPT might have thought said, well, the best way to do this is to sell drugs. And like it would have done it. And so the paperclip optimizer problem is basically this the same theoretical thing.
+
+It's like any extremely powerful tool, if given the wrong optimization, could make very bad decisions on behalf of humanity, because it would be trying to do exactly what you told it to. So it's like this thought experiment that's been around for a long time. You know how like sometimes we'll go to conferences or like these like, quote, parlor dinners where it's like eight people around like a topic and like someone's leading.
+
+And for the past two years or four years, it was like, so how are your companies going to embrace crypto or Web3? And what are you guys doing? And I remember like being part of those conversations and I'm like, nothing.
+
+And I think if you do do this, you're an idiot. And this is one of the only times where someone has brought this up. And I'm like, yeah, this question is actually applicable in this for this situation.
+
+Like, how are you guys going to use this to get better and improve? And it's one of the it's probably the only time so far that I felt, yeah, you kind of got to use it for something. Otherwise, you are actually going to get left behind with the Web3 stuff.
+
+I was like, no, you're not getting left behind. You're actually don't even pay attention to it. With this stuff, I actually do believe that should be true.
+
+Yeah, it's sort of like there are many things that happen that you don't have to participate in. And then every once in a while, there's a wave that if you don't participate in, you know, like personal computers, the internet, mobile phones, like, you know, if you didn't account for those waves, you did get left behind. Whereas other things like, let's say the cloud or I don't know, you know, up till now, machine learning, like these are nice.
+
+You could build companies around them. You can you could add them to your company, but you don't have to, you know, like video or social networking or whatever. Like those are things that you could do without you could you could do with or do without.
+
+This seems like something you're not really going to be able to do without in the same way that like if you're a company that doesn't use the internet, like plumbers have to use the internet if they want to be like viable plumbers now. So it's like, you know, it doesn't matter what you do. The internet didn't leave anything untouched.
+
+It shifted everything. Cell phones kind of did the same thing. You know, computers in general before that did this, did this.
+
+And it does seem like this is the sort of the new one, which is if you don't add intelligence, like, you know, you're basically competing with with both arms tied behind your back compared to somebody else who will. Yeah, no, I agree that this is actually one thing that's important. This data is wrong every freaking time.
+
+Have you heard of HubSpot? HubSpot is a CRM platform where everything is fully integrated. Whoa, I can see the client's whole history calls, support tickets, emails, and here's a task from three days ago I totally missed.
+
+HubSpot grow better. Last month, I went to San Francisco for a quick trip and I was only there for a day or two. And I met up with this guy named Brett Adcock.
+
+Have I told you about Brett? Dude, have you stopped telling me about Brett? I feel like you've said, have I told you about Brett Adcock 16 times on the show?
+
+Have I? Yeah, bro. You love this guy.
+
+He started a flying car company, took it publicly to SPAC and now he's building robots. All right. Well, I know this story and we all know this story.
+
+I went to the robot factory or whatever you call it. It's the robot factory. I mean, sounds like a like a new age, like a Chinese food company or something.
+
+Like, I went to the robot factory and I went and checked it out. It was amazing. So he basically in Sunnyvale, he's got like 50,000 square feet and it's just 60 folks who work there.
+
+And I went and talked to each person. I was like, what did you do? And they're like, oh, I helped build the Cybertruck.
+
+I helped build this part of Tesla or I worked at Boston Dynamics, whatever, like these like the smartest of the smart guys. And they're building these machines and they're basically they look like a RoboCop kind of. And they're in these machines are like they can walk around and grab stuff off a shelf and pack like, you know, a T-shirt or whatever into a box.
+
+And I said, didn't he just start this? How is it already? Like, how does he already have robots that are working?
+
+I feel like he just started this like last year, right? Just moved fast. So basically, uh, the recap is he started vetery, which eventually bought this company called hired.
+
+And so now it's called hired. It's like a recruiting company sold that for a hundred million. After he sold it, he went back to University of Florida and he took classes in like, he had already studied like, uh, mechanical and engineering, but he took classes in like how to build planes.
+
+I don't know what that class would be called, but classes on that. And he built this company called Archer and Archer was, uh, it's basically unmanned, uh, helicopters is like what it looks like. And they got a big contract through United Airlines and they're building these helicopters, took it public multiple, multiple billion dollars.
+
+Then he took all of his money. And when he says all, he says, I basically, I bought a house in Palo Alto and then I have like six months of savings. And then the rest I put all into figure, which is the new robot company.
+
+And so he went and he went and hired 60 people. He financed it. And then eventually he just recently raised a round of funding, but for a while he was just financing it.
+
+And he goes, he goes, I'm going all in. I, he goes, you know, our friend Ramon, he goes all in, bro. That's like his phrase.
+
+He goes, we go all in, bro. And that's what Brett did. And so I'm walking around this factory and it's like these robots.
+
+He's like, check this out. We're working on the finger. He goes, we studied like how the human body works and like the way the tendons work, it like pulls in this direction.
+
+So watch this. If you just pull the tendon here and like your, the finger like moves and it's just crazy fascinating. And I started talking to him about it and he, and it's a really interesting business model.
+
+Basically, these robots can work for 20 hours a day and he will build them out or give them to like a Walmart, let's say, and they'll pay the robot 30% of what they're paying a worker, except the robot can work now 20 hours a day and then charges for four hours. Super fascinating. And I was like, Brett, how big is this going to get?
+
+He was like, well, it's either going to go bankrupt or it'll be a trillion dollar company, but I think I'm going to build the biggest company in the world. And when I heard just that audacity, I was just like, I just got a little semi just talking to him, you know, like I was just super into it. Did you let out a small, a small female gasp?
+
+Yeah. Like, like if you would have saw me standing up, like my, my heel kind of like popped up, you know, it was like, like when you kiss a girl or if she's in her heels, it pops up. Like, what's that called by the way?
+
+That thing's amazing. What a thing that is. He just happened to have a fan there that was blowing my hair.
+
+It was a romantic time. You know, we got romantic real fast. But it was really fascinating because he actually said something that kind of changed my perspective.
+
+I was like, Brett, like software is way easier. Just like, why not do that? He's like, actually, I think software is harder.
+
+When I was building Vetteri, we basically had to like code stuff and invent stuff. But with physics and hardware, I'm just working within the laws of physics. And I know that like what the laws are.
+
+And if I can get creative and create solutions within these laws, I already know that people are going to buy this thing. So that part's actually way easier to me than, you know, like creating software where it's basically a blank canvas and I can make anything I want. But this, it has really strict constraints and it kind of like changed my opinion on things.
+
+They're super fascinating. You have to go down there and check it out. Yeah, that sounds pretty sick.
+
+I'm surprised it's that far ahead. Because I know like Boston Dynamics and even Tesla with its Tesla robot, you know, like Boston Ames been going for like, I don't know, 10 plus years and they have like this weird dog robot that can do parkour or something like that. They have a crazy looking robot, but it's not like I don't, I don't think it's that functional yet.
+
+Like it's not like replacing warehouse work yet. In a real way. Well, he explained that to me.
+
+So everyone knows Boston Dynamics. You've seen like viral videos of like, or like Bachman, like kicking like the deer that like the robot deer and it like comes back at him. He said that Brett was, I was like, Brett, who's your competition?
+
+Boston Dynamics. And he was like, no, because they are a research company. And so their DNA is not to build stuff that people want to buy.
+
+It's just to push the envelope. And it's almost like a nonprofit in a way. I think now it's owned by like Kia or Hyundai or something like that.
+
+So eventually we'll become more like capitalistic, but he's like, they were just making stuff and pushing the envelope. And then companies like us who want to build stuff for commercial uses, like there's not that many use case or there's not many other companies doing something just like this. And so that was how we explained the difference between Boston Dynamics and him.
+
+There's a video that's amazing that you should watch. It's the Amazon warehouse, like Amazon warehouse robots. And I don't know if you've seen this, but they're basically like, they almost look like, you know, back in the day in PE, you would get this like, it's not a skateboard because it's a square.
+
+It's like, it's like a square version of a skateboard that you can like sit on and like a knee board. I think they called it. Yeah.
+
+So they use something that looks like that. Basically it's a flat, like square with four wheels on it. And I don't know if you've seen these videos of the Amazon warehouse, but there's thousands of these.
+
+And what they do is they drive around. So an order comes in and they're like, all right, cool. This, this person over here needs to pack an order or they're packing the next 10 orders.
+
+Those 10 orders need these bins. So they go, they drive, they pick up, they go under the bit, the rack with the bins, they pick it up. And it's like, like elevated, like two inches off the ground.
+
+And then they drive this huge rack of bins to the human. So the human doesn't have to move. They're sitting in their chair and they just pick the items, put them in a box.
+
+And then the robot takes it away. And all these robots, they don't crash into each other. Cause they're all like sink to one brain.
+
+Basically one brain is driving all of them at once. And so they never bump into each other and they all just go and they lift these huge racks and bring them to the person. Because otherwise, if you've ever been to a warehouse, like normally it's like, you get a ticket, you get an order and I've done this, I packed thousands of orders myself.
+
+Like you're like, all right, I gotta go get something from bin 308. It's down in the far left corner. Then I got to walk to bin 102 because they ordered these two items.
+
+And then I'm going to try to do maybe two or three orders, however many I can carry with my little tray here back to my pack, my packing station at the end, and then I'll pack all those orders. And so it's just so much faster just due to these automations. And you could definitely tell how all kind of like industrial and manufacturing work is going to get automated.
+
+Just, it's just a matter of when. And the companies that do that are going to be very big companies. You, uh, recently bought a Cadillac and Cadillac has really great or they're supposed to have great self-driving.
+
+Have you been using it? No, you don't use the self-driving. I don't think ours even, I don't think ours even has anything like self-driving.
+
+Oh, really man. I, uh, we just got a Tesla and I, before that I was using my friend's Tesla. The self-driving stuff is awesome, man.
+
+It totally has changed me. And so like, I'm seeing like some of these, like now I'm a believer before I was, you know, kind of archaic, I'm a believer on a lot of these things that I had to use it for a week to, to actually understand. I'm shocked you don't have that though.
+
+Yeah. It didn't come with my car for whatever reason, but, um, yeah, I, I had a terrible Tesla experience, but I don't know. I think I, I rented like a four year old Tesla.
+
+It's, it just sucked for whatever reason. Well, that's my very quick story on Brett. We have, you have to go and see this guy.
+
+Like it's so much cooler to see. It's just, it feels so much more rewarding to work on some of these products because a, it has like a very real world application. And then also like you're, it almost feels like a bunch of friends just sitting around and they're like, oh my God, we just got the need to like kick forward.
+
+Like, you know, it feels like a, do you remember, um, those TV shows when we were kids where it was robot wars, it was like robots. And that's basically what it was. It felt like that in real life where they were just like tinkering on these robots and like, all right, we have it set up.
+
+Let's see if we can get the foot to move. And it just seems so much more fun than looking at a computer screen and just coding all day. So it's really fascinating.
+
+You gotta go down to his warehouse and see it. Yeah. I look forward to three episodes from now.
+
+When you ask me, have I ever heard of Brett Edcock again? It's gonna be great. Yeah.
+
+Do you know I used to sell hot dogs? We, uh, we're supposed to tell you to go, there's a story behind all of this. Let me just quickly tell you, you're supposed to go to MFM pod.com slash Webby.
+
+Webby is W E B B Y. MFM. By the way, there's not an ad.
+
+There's not an ad. This is war. This is war.
+
+There's a small, small, tiny war going on and we need your help. So to be clear, we don't care about the Webby's. We got nominated for a webinar on the Webby's.
+
+Webby's is like an internet Oscars, right? It's like an internet Grammys, but it's not basically that's a little bit much because it's not like generous. It's not.
+
+Yeah, that's what they're trying to be. All right. That's what they're trying to be.
+
+That's generous. And so you can have a website, a podcast. So if you go in the podcast in the biz, is it the business category?
+
+What category are we in? Their website's quite challenging to work, by the way. Like it's hard to make work.
+
+But yeah, we're in the we're in the business podcast category. But if you go to MFM pod dot com slash Webby, you're going to get redirected to the right link. So the story of this is basically HubSpot submitted our pod to this Webby award.
+
+Normally, this isn't something that we would do because it costs money to submit. And I think there's even like a dinner in New York, which I don't really want to go to. But here's the story.
+
+There's this woman named Kara Swisher. Kara Swisher is this popular journalist. She started Recode, I think it was called, and she has got a big podcast called Pivot.
+
+She's just like an elite, like kind of like who's who of like our little tech techie in Silicon Valley. She's super well known for like, I don't know, 20 years, 30 years. Yeah.
+
+Who knows how long she's been doing this? As Sean would say, she's kind of like she's the Jake Paul of journalism. No, no, no.
+
+Taylor Lorenz is the Jake Paul of journalism. I actually like her. So she's she's all right.
+
+But I agree, by the way, I came for us. She came for our neck. She came for our neck.
+
+So but what happened was she tweeted out. I hate starting a story with she tweeted out because I immediately think of all the mobster movies that like I just watched this mobster movies of these guys like killing each other. And I'm like, I'm starting a beef by saying like she tweeted, you know, like it's like tweeted out like it's she said, let's just say she said, she said to our face.
+
+And what did she say? Did you know what she said? It was something like she tweeted out a link to the Webby's we were we didn't even know where me and you didn't even know we were up for Webby.
+
+But there's like four podcasts that are up for it. One is her podcast. One is our podcast.
+
+And she goes, there's no way something like this. There's no way I'm going to lose. We could like for God's sake, we can't lose to a podcast called my first million.
+
+Oh, like, you know, just like these tech bros, these money bros. And you know what happened? The voting just swung even further in our favor when she did that.
+
+And and Sam declared war instantly because Sam's Sam's just literally walking around looking for a fight. I don't know if most people know this like Sam's walking around just hoping to get disrespected just just to unleash a can of whoop ass. And so you tweeted back.
+
+I mean, you said back to her face. What did you say? I think I said, I think I said some way.
+
+I think she said there's some podcast called my first million that we're up against and there's no way we're going to lose or something like that. And I think I said there's some lady who has a podcast that just disrespected us or something like that. Like, you know, if you listen to MFM, don't vote for us.
+
+Vote against this snobbish elitism of people who love to smell their own farts. I think that's what I said. And so that's where we're at.
+
+There's a war. We went from 80% chance of victory. We had 80% of the votes.
+
+Then she came on this campaign and and said, we can't lose these guys. It started to started to go down a little bit. I think right now we're about to lose the Webby and you know, I don't want to win the Webby.
+
+Don't care about winning, but I definitely care about losing. And so I do not want to lose the Webby. So now we need your help.
+
+Go to MFM pod.com slash Webby and yeah, you know, just just write a wrong. Are you going to write a wrong? Yeah.
+
+Don't vote for us. Vote against like people who think they're better than you, which is, you know, her. And by insulting us.
+
+And if you're listening to this, she's insulting you indirectly. And so are you going to take that? What we're going to do is when we win, just Sean, we're going to get like an award.
+
+I think it's an award. I'm going to keep it in the box and I'm going to put it in a bigger box and I'm going to mail it to Vox, which is who has her podcast. Right.
+
+Like part of the, we don't, we're, we're not putting this Webby up on our wall. I'm not even going to open it. We're putting this in her face.
+
+So we will mail this Webby to her because she wanted it so badly and she will own the Webby that says my first mail hand on it. And what's going to happen if they invite us to the event to do this, I am 100% going to ask her to be my date, my plus one, her plus one. I would love it.
+
+I can't go. Sam's going to take her. If that's how we're going to do this.
+
+If we're allowed to have like plus ones, I'm going to ask Kara if she'll be, if she'll accompany me and we'll hang out. So anyway, do that. MFM pod.com slash Webby.
+
+You'll go straight to the thing and you guys will see it. It's pretty funny. I think we had to take her to, we had to take her to petty court.
+
+We didn't start this war, but we will finish it. Do you know this guy named Brian Davis? Sounds pretty generic name.
+
+No, I don't know that name though. He, he's a, he's a Duke, former Duke basketball player, you know, in the nineties, I think it was in the nineties. Oh, okay.
+
+Yeah. So something just happened and it's pretty funny. It happened this morning, I think, and it hasn't played out yet, but it's actually, it, I think it's a PR or marketing stunt that might be hilarious.
+
+Or it's a scam. It's one of the, one of the two, but basically, you know, I'm not a sports guy. So, so I might get a lot of this wrong here, but Dan Snyder owns, what's it called?
+
+The Washington commanders, formerly the chiefs, right? Or the Redskins. Uh, yeah, see, I'm already butchering it, but basically I think he has to sell it, right?
+
+Or it's, or it's for sale. This guy named Brian Davis, Brian Davis. He's a, he's a, a black guy.
+
+And so it's, it wasn't the news because it was saying this guy offered to buy the, the team. And he said, I'm willing to give you a billion dollars in cash in the next 24 hours. And then the next seven days, I'll give you the remaining $6 billion.
+
+And I've got proof of funds and all this, and it's a big deal because he's black. And so it'd be the first black owner. But I started doing some research on his company.
+
+It's also a billion over. So 6 billion is the offer they had agreed to. He came in over the top said, I'll give you 7 billion.
+
+And, and people like, is he good for this? Where's he gonna get $7 billion? He's like, I'll give you a billion dollars within 24 hours of the deal being approved.
+
+And then the rest in seven days. Yeah. So it's like a crazy thing that he's saying.
+
+And I started doing some research on like his background. And so he has this company called urban echo energy, which is a developer of renewable energy assets, basically, you know, remember, like lead, lead certified buildings, it was like, it's you're like green. So I don't even think he I don't know if he makes the buildings or if he goes in there and like contracts out and like determines, Yes, you guys are certified.
+
+But his company is called urban echo energy. And he said that he was telling people when he was raising money for this purchase, that it's worth $50 billion. And when I hear all these numbers, you know, if you don't know anything about business, you hear this, you're like, Wow, Brian, you're killing it.
+
+Uh, I think this is 100% fake, a complete like, it's either a scam or a marketing ploy. I don't know which one it is. This won't go through.
+
+But the fact that we're talking about Brian Davis, and there's like all these articles going out there, like, how cool is it that the you know, this may be the first black owned NFL team, yada, yada, yada. It's all fake, I think. And it's happening right now.
+
+And so I'm very eager to see how this unfolds. But it's and so I'm like, Well, it's him and Christian Leitner. They, they do a lot of real estate like development in that like Durham area.
+
+They I think they've been partners for a long time. Um, yeah, so and he's, I think he's had multiple attempts to buy teams, it looks like. So he's, he tried to buy like a soccer team for 33 million, tried to buy the Memphis Grizzlies for 252 million.
+
+And so yeah, I don't really understand this. But but what I thought was funny about does not smell right doesn't smell like this, that they would have $7 billion to to offer for this, whether it's their own or even the ability to raise that much money. But what I thought was interesting, and I started thinking about this, I'm like, what a brilliant marketing plan, just to make an offer, that's just absolutely ridiculous.
+
+And it makes the news just for being ridiculous, could potentially be a great way to get your name out. Because now we're talking about this guy, he hasn't no no one's talked about this guy in a while. Like I said, Kanye running for president.
+
+Yeah, it's like this, like the last time that I heard about this guy, I think was from that, like, everyone hates Christian Leitner documentary series. But like, no one talks about this guy. And I don't know what I'd be curious is, what goes in to making an offer for some of these multi billion dollar things, whether it's a company, a sports team piece of art, a house.
+
+And this can you just become that troll and just you make it in the news and you start getting you start doing marketing just as the guy who makes offers. And I just thought is the barrier to entry that low on making an offer? How does that work?
+
+Dude, we could do it right now. Open up Microsoft Word, and let's tender an offer for $8 billion. And let's see what happens.
+
+Sam and Sean have tendered an offer for $8 billion. We're going to send you 10 in cash now. You send two back.
+
+That's how flush we are. So long as everything, you know, plays out in due diligence, as long as we don't see anything sketchy, we're in. Right.
+
+It's contingent on due diligence, including us diligence in our own finances. And when we find out we don't have it, then we're out. Well, because with Hampton, I'm like, all right, we need backlinks.
+
+So we rank. And I'm like, what's a good way to get backlinks fast? And I saw this and I'm like, wow, all these news sites are covering him.
+
+That's it. I just found my strategy. I just have to make a ridiculous offer.
+
+But I thought this was hilarious that this guy was actually like, people were taking it seriously on Twitter. People are like people who aren't in the business world. We're taking it very seriously.
+
+And he's getting links from all these news sites saying like, NFL may have its first ever black owner, but they don't think like, wait a minute. Let's go. Like, where's this money coming from?
+
+Who is this guy? Right? Yeah, that's that's crazy.
+
+I wanted to talk about this thing that I noticed happening. And then I saw an article that branded this in a really interesting way. Did we talk about this already?
+
+The podcast kayfabe? Do we already talk about this? You mentioned it once.
+
+What is it? So there's a there's this concept that I heard that I like, but it's doesn't need to sound as fancy as it is called kayfabe. And it's basically like, if you did you ever watch wrestling growing up, like like The Rock and Stone Cold.
+
+Hell yeah. Yeah. Yeah.
+
+Obviously. There's only one answer to that question. It's hell yeah.
+
+Stone Cold says so. Yeah, of course. So in wrestling, like the whole premise of wrestling is that there's these like manufactured storylines, right?
+
+So manufactured alliances, manufactured rivalries, beefs. Oh, he he hit his manager and he kissed his girlfriend. And you know, that's why we need to fight.
+
+Right. And so the creation and maintenance of these storylines is called kayfabe. It's basically like, I don't know why it's on K-A-Y-F-A-B-E.
+
+And I don't know why it needed its own word. It's also could just be called like acting or storylines. But it's basically saying like, you know, the let's pull up the exact definition, but it's basically the fact or convention of presenting stage performances as genuine or authentic.
+
+So it's basically take a stage performance, make it genuine or authentic. This is happening all the time on TikTok right now. And I find it very, very interesting.
+
+So if you go on TikTok, you'll often see somebody like there, it used to be this, like I'm holding up my phone and I'm talking to my phone and let's say I'm giving advice. I could say, you know, the thing you got to do about blah, blah, blah. Okay.
+
+That's cool. But how can we make that seem a little more? How can we make myself seem more authoritative?
+
+Well, one thing people are doing is they're buying this mic and they're just putting it on their desk and then they're looking to the side like they're talking to someone else and there's no podcast. There's no others. There's no someone else.
+
+There's no podcast. They simply bought a podcast. So podcast microphone sales are going up because people want on TikTok to look like a thought leader.
+
+It's like a podcast is a new like TED talk and the way that you make the TED talk look legit. So why can I give this advice or say this thing? I saw these two women doing this and it's like all a joke though.
+
+It's like women giving, it's like, they call it the alpha female. And it's like, you know, apparently there is this guy who was like, look, and he was actually being serious. He goes, look, if you're 25 and you can't afford a Lamborghini yet, you're doing it wrong.
+
+And I think it's just ridiculous how wrong you are. If you can't, you're just lazy. And so these two women now have the alpha female and they're just like giving horrible advice, you know, back and forth.
+
+And so many people have been taking them seriously and it's 100% fake. Yeah, this is exactly what's going on. And there's a whole bunch of different versions of this.
+
+So there's another popular thing you see on TikTok is somebody like just doing their kind of morning routine or their night routine, like their skincare routine. They're like kind of brushing on makeup while they're talking or they're like, you know, like doing the like thing where they're wiping off makeup and then they're like washing their face while recording this. It's like, oh, so vulnerable girl next door, like, you know, so authentic, just, it's like, no, she put the camera there, clicked record and then started doing this to make it like, look like I'm not trying.
+
+I'm just, I'm just going through my nightly routine. I'm just talking off the top of my head here. But it comes across as not like somebody kind of marketing to you or sort of like presenting to you, but like you're being let in.
+
+And I find this so fascinating that people are doing this and you see this everywhere. And it's like the opposite of Instagram in a way, like for Instagram, the meta of that was like, go do the thing where you rent the private jet for 30 minutes on the runway and take the photos or like, you know, go hold the bag and take the photo and then go return it at Louis Vuitton or whatever. Right?
+
+Like people would fake status doing that. And in tech talk, they fake status doing a completely different thing. Sometimes it's like with this podcast thing, sometimes it's with like pretending to be just doing their chores and talking or whatever it is.
+
+And I find this really, really, really interesting because it's like, it's effective. It's like low key, very like sneaky, what's going on. And, and it tells you a lot about how, how people work that this actually works.
+
+You know, it's like reveals a lot about psychology that this, that this actually works. So what's an example of one? Oh, well, I just gave you two, right?
+
+Like that. Yeah, give me another one example. Um, another one would be what?
+
+So another one would be like the podcaster ones. What are they saying? Are they giving like money advice?
+
+So one of the podcast ones, for example, see some of our business advice, but one of them was this girl promoting her only fans. So what she was doing was she goes viral because she's on a podcast. And she says like a fake, she's a fake guest.
+
+She's a fake guest. And she, as she goes, I, yeah, whatever, earmuffs for the kids in the car, if you're, if you're there, but, um, you know, I make my man, uh, six times a day, once in the morning, once in the, and she says this thing and then the comments go nuts on Tik Tok, like, like women hate it, guys love it. But the comment section goes nuts because she said this kind of outrageous thing.
+
+And somebody was like, Hey, anybody got a link to the full podcast. Maybe this was taken out of context. There is no full podcast.
+
+Oh my God. It's just this girl saying something that's going to get her a bunch of like traffic on Tik Tok, because then you click her profile and you go to her only fans and you subscribe. And that's all she was trying to do is promote her only fans this way.
+
+And I thought, wow, like this, like five years ago, I couldn't even like, if I told you the story, but what is Tik Tok? Uh, why would anybody fake being on a podcast being on a podcast is like the dorkiest thing of all time. And what is only fans, right?
+
+Like, but this person is probably making, I don't know, 50 K a month on their only fans. And this is their main marketing strategy. And that's like, it's one of the things I love and hate about marketing is that marketing is this like never ending game.
+
+That's always changing. There's always like a new meta game to be playing and the winners of it get really, really rich, but it's also exhausting because you got to kind of stay up on the latest thing. And, uh, and it also shows you when you have a marketing thing that's working, like juice it because it's not going to work for forever.
+
+And, uh, the game will, the game will shift. So when you have it working, don't take that lightly. Dude.
+
+I remember as a kid growing up in Missouri, there was basically Zach. Zach was the cool guy in my class. He was my friend and he was cool because when we were 14, you could kind of see that he had abs and it was like, oh man, Zach's got abs and Zach like cuts his hair cool.
+
+And he wears one of those like puka shell, like necklaces. Zach's cool. Oh, he's got vans on too.
+
+Like, that's so sick. Zach's awesome. I want to be like Zach.
+
+And then a step above that was like blink 182. It was like, oh man, blink 182. Like there's these guys in like Southern California and all they do is skateboard and surf and eat corn dogs and play music.
+
+Like how cool is that? And I remember being a kid and meeting someone. They say inappropriate things.
+
+Yeah. And they wear Hurley. Like what is Hurley?
+
+And I remember like, it was basically like three inspirations of like, it was like Zach, blink 182. And like, you know, Tony Hawk basically was like the people who I thought were cool. And, uh, I remember even meeting someone.
+
+I lived in Missouri. I met someone from California. I'd never been like at that time.
+
+And they're all basically been to Florida and Missouri. I met a guy from California and I'm like, do you know some 41? Like, are you friends with them?
+
+Like, how's that work? Like, you know, I just thought that like, this was this other world. And I, if they, if they were wearing vans and like high white socks, I would like ask for a picture.
+
+If they had long hair, I would ask for a picture. I'm like, it's like, I'm meeting an alien. Like you are famous just because you live in California.
+
+My fear is for my future kids, them growing up. This like sphere of influence has just gotten incredibly small because instead of like the mediocre Zach of the world, there's now like, I am now comparing myself to the thousand hot kids who I'm flipping through on take the top. 0.1% Zach's of every town of every town.
+
+It's right now. I see them. Yeah.
+
+Yeah. There was a clear separation of there's Zach and then there's blink 182 and I can never be a blink 182, but I could probably be a Zach. And that's pretty cool.
+
+Now I just see all these hot people on there. They all can dance. They're all funny.
+
+Their teeth is perfect. In actuality, they're probably 20. The same thing is like movies.
+
+They're probably 25 year olds who like, I think that they're only 17. Uh, you know, like how, like you'd have like, totally like Lindsay Lohan was playing. He's like, dude, you're like 26 and have fake boobs.
+
+How are you going to be playing the 16 year old? You know what I mean? Like, it's like that same thing.
+
+And I, and I'm like, I've scrolled through tech talk and I'm like, if you're 16 right now, this is the worst thing on earth because you are comparing yourself to the 0.1% of the whole country, not just like the big man on campus, the one big man on campus, you know, who you kind of have a shot of becoming. Dude. That is so, that is so true.
+
+That is so true. That resonates so much with me. I had the same thing, you know, sixth grade, seventh grade, whatever.
+
+Casey Prisman. Cool. Coolest kid.
+
+Coolest kid. I knew like if you said, what is the peak of what cool could be? Casey Prisman.
+
+Like, uh, you know, he was cool. Cause he had the Nikes. He French kissed a girl once and I was like, holy shit.
+
+Uh, I, I remember going home and being like, wow, I'm so far behind like the world right now. And that's how, you know, but he was the cool kid. He was, he was the only one to compare to you.
+
+You're right. Like now, if I go on TikTok, I'm 35 years old now. And if I go on TikTok, TikTok can make you feel very small.
+
+So can Instagram. These, these social networks can make you feel very small because, oh, you think you're funny. Here's somebody being fucking hilarious.
+
+You think you're cute. Here's someone gorgeous. You think you're talented?
+
+Watch this dance, right? Like, and that's swipe, swipe, swipe better than me, better than me, better than me, better than me, happier than me, more fulfilled than me, richer than me, whatever it is, right? Like whatever your insecurity is, the algorithm's like, ah, feed him.
+
+Well, I swipe through it now and I'm like, someone will just be like doing a selfie. I'm like, wow, look at their countertops. Like that's a huge kitchen.
+
+Exactly. Like, or like, they'll be doing a thing in a car and I'm like, wait, does that headrest say Ferrari? How is this guy ever Ferrari?
+
+You know what I mean? Like, it's just like, it's consumerism times a thousand of what we are used to. You know what I mean?
+
+Before it was like, only if I went to the mall, I would see hot, naked, Abercrombie dudes, like where they're like, on the ads. Now it's just like every single time and it's the best of the best constantly. And it freaks me out.
+
+Yeah, exactly. Like you, you could feel like a, you know, tiny little, uh, amoeba compared to this universe of awesome people doing awesome things, living these awesome, perfect lives. And that's a, that's like a, a WMD for the, for the ego, especially like a teenage ego.
+
+Like I can't even imagine that. Yeah. That's, that's pretty scary.
+
+No, I was thinking about that because I've got friends that have a, like 12 year olds and I'm like, and I know, like tell me stories about how they're sad and shit. And I'm like, yeah, I can see that. This is horrible.
+
+This is absolutely horrible because like before when I was a kid, there was just, there was like, if there's like, if blink 182 was a 10 and I know I can never become that, but then Zach's like the four and I'm a two. So it's like, all right, I can close that gap. Maybe if I do enough sit-ups right now, it's just nine, nine, nine, nine, nine.
+
+Everyone's a nine. And I don't know how anyone can compete with that. And so I'm freaked out about that a little bit.
+
+Whenever I, whenever I go through TikTok, I just, you're better than me. You're better than me. You're better than me.
+
+It's just constantly that. They need to rename the, the for you page to the better than you page. Yeah.
+
+Or just fuck you. It's still F you, but now it's fuck you. Oh, that's amazing.
+
+We should. All right. That's it.
+
+That's the end of the pod. All right. Before we go, ladies and gentlemen, we got a little celebration and I say ladies and gentlemen, because I'm talking about the gentlemen's agreement and the ladies understanding we have hit 200,000 subscribers on YouTube.
+
+Sam and I promised that we would kiss mouth to mouth at a million. Uh, we do intend to renege on that as soon as it happens. But, but if you want to see us have to have to renege on that agreement, we will, we'll do it when we get there.
+
+But Sam 200K, that's pretty awesome. Uh, people should go and do what to get us to 300K? Yes.
+
+The reason why it got to 200K. Aside from us being good at this, I think is we started this at 110, 120, I forget. And we came up with this thing called the gentlemen's agreement, which basically means all the content on YouTube is free, except there's one channel, which is the channel you're watching right now.
+
+It's not free. And it's called the gentleman's agreement because we can't be there to make sure that you pay your debt. You just have to do it.
+
+If it's the ladies understand, ladies understand the gentleman's agreement, which means you now owe us because this content is not free. And the way that you pay your debt is you have to click subscribe on YouTube. That's it.
+
+It's that easy. We're working for you. Uh, but you, you, you owe us.
+
+And so you have to pay your debt and just click subscribe. And that is the gentleman's agreement, the ladies understanding. And so far it's been very effective.
+
+Clearly everyone has done it. Go to YouTube, type in my first million, click subscribe, turn on notifications. You know, the pod is much better on YouTube.
+
+You should just start, start listening to it. Oh, and we have to give out our premium. We have, I don't know if you saw, but last time we did this, last time we did this, we did a hilarious thing where we said, use the word premium in your comment and we will give YouTube premium to one person.
+
+So let's do that now. Let's pull up, uh, let's pull up somebody here and we will give them YouTube premium. Um, right now.
+
+I, I, I think we should do this every episode. It's gonna be a little costly, but, uh, but I think we gotta do it. Um, all right.
+
+So I'm on the acquired one. I'm just gonna read you a couple of these. Speaker 2 This was a premium episode.
+
+Gents keep it up. Somebody goes, um, this show had, I don't know. I must say some premium insights guys.
+
+Great episode. Uh, somebody just kept spelling the word premium over and over again. Um, simply premium content, premium episode, even more premium guests.
+
+Keep it up guys. Have a premium Easter. I think we gotta give it to this guy who wished us a premium.
+
+Who's that? Speaker 2 Who is that person? His name is famous.
+
+Hasta logo. So I'm gonna comment on here, uh, that he should slide into our DMS. We will pay for, for this guy's YouTube premium.
+
+And in this episode, we'll do the same in the comments, whoever comes up with the funniest use of premium. We'll get free YouTube premium. So you can listen, add free and you can lock your phone and listen to this in the background.
+
+Speaker 2 And that's it. That's the episode. Sandra Keegorl mode from Apple Podcasts
