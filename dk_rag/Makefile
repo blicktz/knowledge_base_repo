@@ -13,6 +13,13 @@ OUTPUT_DIR ?= ./output
 CONFIG_FILE ?= ./config/persona_config.yaml
 PATTERN ?= *.txt
 
+# Storage Configuration - automatically reads from config YAML file
+# NOTE: This must align with storage.base_storage_dir in the config YAML file
+STORAGE_BASE_DIR ?= $(shell $(PYTHON) -c "import yaml; print(yaml.safe_load(open('$(CONFIG_FILE)'))['storage']['base_storage_dir'])" 2>/dev/null || echo "/Volumes/J15/aicallgo_data/persona_data_base")
+PERSONAS_DIR := $(STORAGE_BASE_DIR)/personas
+CACHE_DIR := $(STORAGE_BASE_DIR)/cache
+VECTOR_DB_DIR := $(STORAGE_BASE_DIR)/vector_db
+
 # Default persona name for extraction
 PERSONA_NAME ?= greg_startup
 
@@ -239,36 +246,36 @@ clean: ## Clean cache and temporary files
 	@find . -type f -name "*.pyc" -delete 2>/dev/null || true
 	@find . -type f -name ".DS_Store" -delete 2>/dev/null || true
 	@rm -rf .pytest_cache 2>/dev/null || true
-	@rm -rf data/storage/cache/* 2>/dev/null || true
+	@rm -rf $(CACHE_DIR)/* 2>/dev/null || true
 	@echo "$(GREEN)✓ Cleaned$(NC)"
 
 .PHONY: clean-caches
 clean-caches: ## Clean all analysis and extraction caches (preserves data)
 	@echo "$(BLUE)Cleaning all analysis and extraction caches...$(NC)"
 	@echo "$(YELLOW)Cleaning statistical analysis caches...$(NC)"
-	@rm -rf data/storage/personas/*/analysis_cache/* 2>/dev/null || true
+	@rm -rf $(PERSONAS_DIR)/*/analysis_cache/* 2>/dev/null || true
 	@echo "$(YELLOW)Cleaning map-reduce extraction caches...$(NC)"
-	@rm -rf data/storage/personas/*/map_reduce_cache/* 2>/dev/null || true
+	@rm -rf $(PERSONAS_DIR)/*/map_reduce_cache/* 2>/dev/null || true
 	@echo "$(YELLOW)Cleaning general cache directory...$(NC)"
-	@rm -rf data/storage/cache/* 2>/dev/null || true
+	@rm -rf $(CACHE_DIR)/* 2>/dev/null || true
 	@echo "$(YELLOW)Removing empty cache directories...$(NC)"
-	@find data/storage/personas -type d -name "*cache" -empty -delete 2>/dev/null || true
+	@find $(PERSONAS_DIR) -type d -name "*cache" -empty -delete 2>/dev/null || true
 	@echo "$(GREEN)✓ All caches cleaned (data preserved)$(NC)"
 
 .PHONY: clean-llm-cache
 clean-llm-cache: ## Clean only LLM map-reduce result caches (preserves statistical analysis)
 	@echo "$(BLUE)Cleaning LLM map-reduce result caches only...$(NC)"
 	@echo "$(YELLOW)Removing cached LLM responses and extraction results...$(NC)"
-	@rm -rf data/storage/personas/*/map_reduce_cache/* 2>/dev/null || true
+	@rm -rf $(PERSONAS_DIR)/*/map_reduce_cache/* 2>/dev/null || true
 	@echo "$(YELLOW)Removing empty map-reduce cache directories...$(NC)"
-	@find data/storage/personas -type d -name "map_reduce_cache" -empty -delete 2>/dev/null || true
+	@find $(PERSONAS_DIR) -type d -name "map_reduce_cache" -empty -delete 2>/dev/null || true
 	@echo "$(GREEN)✓ LLM result caches cleaned (statistical analysis preserved)$(NC)"
 	@echo "$(YELLOW)Note: Statistical analysis caches and persona data preserved$(NC)"
 
 .PHONY: clean-all
 clean-all: clean ## Clean everything including vector DB, caches, and personas (DESTRUCTIVE!)
 	@echo "$(RED)⚠ WARNING: This will delete all data including vector DB, personas, and caches!$(NC)"
-	@echo "$(YELLOW)Note: This assumes default storage location (./data/storage). Custom storage directories require manual cleanup.$(NC)"
+	@echo "$(YELLOW)Storage location: $(STORAGE_BASE_DIR)$(NC)"
 	@echo "$(YELLOW)This includes:$(NC)"
 	@echo "  - Vector database (ChromaDB)"
 	@echo "  - All persona artifacts"
@@ -278,18 +285,18 @@ clean-all: clean ## Clean everything including vector DB, caches, and personas (
 	@read -p "Are you sure? [y/N]: " confirm; \
 	if [ "$$confirm" = "y" ] || [ "$$confirm" = "Y" ]; then \
 		echo "$(BLUE)Removing persona vector databases...$(NC)"; \
-		rm -rf data/storage/personas/*/vector_db/* 2>/dev/null || true; \
+		rm -rf $(PERSONAS_DIR)/*/vector_db/* 2>/dev/null || true; \
 		echo "$(BLUE)Removing persona artifacts...$(NC)"; \
-		rm -rf data/storage/personas/*/artifacts/* 2>/dev/null || true; \
+		rm -rf $(PERSONAS_DIR)/*/artifacts/* 2>/dev/null || true; \
 		echo "$(BLUE)Removing persona registry...$(NC)"; \
-		rm -f data/storage/personas/persona_registry.json 2>/dev/null || true; \
+		rm -f $(PERSONAS_DIR)/persona_registry.json 2>/dev/null || true; \
 		echo "$(BLUE)Cleaning statistical analysis caches...$(NC)"; \
-		rm -rf data/storage/personas/*/analysis_cache/* 2>/dev/null || true; \
+		rm -rf $(PERSONAS_DIR)/*/analysis_cache/* 2>/dev/null || true; \
 		echo "$(BLUE)Cleaning map-reduce extraction caches...$(NC)"; \
-		rm -rf data/storage/personas/*/map_reduce_cache/* 2>/dev/null || true; \
+		rm -rf $(PERSONAS_DIR)/*/map_reduce_cache/* 2>/dev/null || true; \
 		echo "$(BLUE)Removing empty persona directories...$(NC)"; \
-		find data/storage/personas -type d -name "*cache" -empty -delete 2>/dev/null || true; \
-		find data/storage/personas -type d -mindepth 1 -empty -delete 2>/dev/null || true; \
+		find $(PERSONAS_DIR) -type d -name "*cache" -empty -delete 2>/dev/null || true; \
+		find $(PERSONAS_DIR) -type d -mindepth 1 -empty -delete 2>/dev/null || true; \
 		echo "$(BLUE)Removing log files...$(NC)"; \
 		rm -rf logs/* 2>/dev/null || true; \
 		echo "$(GREEN)✓ All data, caches, and personas removed$(NC)"; \
@@ -303,9 +310,8 @@ backup: ## Backup personas and knowledge base
 	@mkdir -p backups
 	@timestamp=$$(date +%Y%m%d_%H%M%S); \
 	tar -czf "backups/dk_rag_backup_$$timestamp.tar.gz" \
-		data/storage/artifacts \
-		data/storage/chroma_db \
-		data/storage/personas \
+		$(VECTOR_DB_DIR) \
+		$(PERSONAS_DIR) \
 		config/*.yaml \
 		2>/dev/null || true
 	@echo "$(GREEN)✓ Backup created in backups/$(NC)"
