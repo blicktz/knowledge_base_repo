@@ -255,6 +255,16 @@ clean-caches: ## Clean all analysis and extraction caches (preserves data)
 	@find data/storage/personas -type d -name "*cache" -empty -delete 2>/dev/null || true
 	@echo "$(GREEN)✓ All caches cleaned (data preserved)$(NC)"
 
+.PHONY: clean-llm-cache
+clean-llm-cache: ## Clean only LLM map-reduce result caches (preserves statistical analysis)
+	@echo "$(BLUE)Cleaning LLM map-reduce result caches only...$(NC)"
+	@echo "$(YELLOW)Removing cached LLM responses and extraction results...$(NC)"
+	@rm -rf data/storage/personas/*/map_reduce_cache/* 2>/dev/null || true
+	@echo "$(YELLOW)Removing empty map-reduce cache directories...$(NC)"
+	@find data/storage/personas -type d -name "map_reduce_cache" -empty -delete 2>/dev/null || true
+	@echo "$(GREEN)✓ LLM result caches cleaned (statistical analysis preserved)$(NC)"
+	@echo "$(YELLOW)Note: Statistical analysis caches and persona data preserved$(NC)"
+
 .PHONY: clean-all
 clean-all: clean ## Clean everything including vector DB, caches, and personas (DESTRUCTIVE!)
 	@echo "$(RED)⚠ WARNING: This will delete all data including vector DB, personas, and caches!$(NC)"

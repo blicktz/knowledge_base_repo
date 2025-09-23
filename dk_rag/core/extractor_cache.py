@@ -10,7 +10,7 @@ from pathlib import Path
 from datetime import datetime, timedelta
 from typing import Dict, List, Any, Optional, Tuple, Union
 
-from ..data.models.persona_constitution import MentalModel, CoreBelief
+from ..data.models.persona_constitution import MentalModel, CoreBelief, LinguisticStyle
 from ..config.settings import Settings
 from ..utils.logging import get_logger
 
@@ -623,6 +623,146 @@ class ExtractorCacheManager:
                 self.logger.warning(f"Failed to read metadata file: {e}")
         
         return log_data
+    
+    def save_linguistic_style(self, all_documents: List[Dict[str, Any]], 
+                             statistical_insights: str, linguistic_style: LinguisticStyle):
+        """
+        Save linguistic style extraction result to cache
+        
+        Args:
+            all_documents: All documents used for extraction
+            statistical_insights: Statistical insights used
+            linguistic_style: Extracted linguistic style result
+        """
+        cache_key = self._calculate_linguistic_style_hash(all_documents, statistical_insights)
+        cache_file = self.cache_dir / f"linguistic_style_{cache_key}.json"
+        
+        try:
+            # Prepare cache data
+            cache_data = {
+                "linguistic_style": linguistic_style.model_dump() if hasattr(linguistic_style, 'model_dump') else linguistic_style.__dict__,
+                "metadata": {
+                    "corpus_hash": self._calculate_full_corpus_hash(all_documents),
+                    "insights_hash": hashlib.sha256(statistical_insights.encode('utf-8')).hexdigest(),
+                    "total_documents": len(all_documents),
+                    "timestamp": datetime.now().isoformat(),
+                    "cache_version": "1.0"
+                }
+            }
+            
+            # Write to cache file
+            if self.compression_enabled:
+                with gzip.open(f"{cache_file}.gz", 'wt', encoding='utf-8') as f:
+                    json.dump(cache_data, f, indent=2)
+            else:
+                with open(cache_file, 'w', encoding='utf-8') as f:
+                    json.dump(cache_data, f, indent=2)
+                    
+            self.logger.debug(f"Saved linguistic style to cache: {cache_key}")
+            
+        except Exception as e:
+            self.logger.warning(f"Failed to save linguistic style cache: {e}")
+    
+    def load_linguistic_style(self, all_documents: List[Dict[str, Any]], 
+                             statistical_insights: str) -> Optional[LinguisticStyle]:
+        """
+        Load cached linguistic style extraction result
+        
+        Args:
+            all_documents: All documents used for extraction
+            statistical_insights: Statistical insights used
+            
+        Returns:
+            Cached linguistic style if valid cache found, None otherwise
+        """
+        cache_key = self._calculate_linguistic_style_hash(all_documents, statistical_insights)
+        cache_file = self.cache_dir / f"linguistic_style_{cache_key}.json"
+        
+        # Check both compressed and uncompressed versions
+        compressed_file = Path(f"{cache_file}.gz")
+        
+        target_file = None
+        if compressed_file.exists():
+            target_file = compressed_file
+        elif cache_file.exists():
+            target_file = cache_file
+        else:
+            return None
+        
+        try:
+            # Load cache data
+            if target_file.suffix == '.gz':
+                with gzip.open(target_file, 'rt', encoding='utf-8') as f:
+                    cache_data = json.load(f)
+            else:
+                with open(target_file, 'r', encoding='utf-8') as f:
+                    cache_data = json.load(f)
+            
+            # Validate cache
+            if not self._validate_linguistic_style_cache(cache_data, all_documents, statistical_insights):
+                self.logger.debug(f"Linguistic style cache validation failed: {cache_key}")
+                return None
+            
+            # Reconstruct LinguisticStyle object
+            style_data = cache_data.get("linguistic_style", {})
+            linguistic_style = LinguisticStyle(
+                tone=style_data.get('tone', ''),
+                catchphrases=style_data.get('catchphrases', []),
+                vocabulary=style_data.get('vocabulary', []),
+                sentence_structures=style_data.get('sentence_structures', []),
+                communication_style=style_data.get('communication_style', {})
+            )
+            
+            self.logger.debug(f"Loaded linguistic style from cache: {cache_key}")
+            return linguistic_style
+            
+        except Exception as e:
+            self.logger.warning(f"Failed to load linguistic style cache: {e}")
+            return None
+    
+    def _calculate_linguistic_style_hash(self, all_documents: List[Dict[str, Any]], 
+                                        statistical_insights: str) -> str:
+        """Calculate hash for linguistic style cache key"""
+        corpus_hash = self._calculate_full_corpus_hash(all_documents)
+        insights_hash = hashlib.sha256(statistical_insights.encode('utf-8')).hexdigest()
+        
+        # Combine corpus and insights for final hash
+        combined = f"linguistic_style:{corpus_hash}:{insights_hash}"
+        return hashlib.sha256(combined.encode('utf-8')).hexdigest()[:16]
+    
+    def _validate_linguistic_style_cache(self, cache_data: Dict[str, Any], 
+                                        all_documents: List[Dict[str, Any]], 
+                                        statistical_insights: str) -> bool:
+        """Validate if cached linguistic style result is still valid"""
+        metadata = cache_data.get("metadata", {})
+        
+        # Check corpus hash
+        current_corpus_hash = self._calculate_full_corpus_hash(all_documents)
+        cached_corpus_hash = metadata.get("corpus_hash")
+        if current_corpus_hash != cached_corpus_hash:
+            return False
+        
+        # Check insights hash
+        current_insights_hash = hashlib.sha256(statistical_insights.encode('utf-8')).hexdigest()
+        cached_insights_hash = metadata.get("insights_hash")
+        if current_insights_hash != cached_insights_hash:
+            return False
+        
+        # Check document count
+        if len(all_documents) != metadata.get("total_documents", 0):
+            return False
+        
+        # Check age
+        try:
+            cache_time = datetime.fromisoformat(metadata.get("timestamp", ""))
+            age = datetime.now() - cache_time
+            if age > timedelta(hours=self.cache_ttl_hours):
+                self.logger.debug(f"Linguistic style cache expired: {age}")
+                return False
+        except Exception:
+            return False
+        
+        return True
     
     def clear_cache(self, extraction_type: Optional[str] = None, 
                    older_than_hours: Optional[int] = None):

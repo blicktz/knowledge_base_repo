@@ -18,6 +18,7 @@ from ..data.models.persona_constitution import MentalModel, CoreBelief
 from ..config.settings import Settings
 from ..core.extractor_cache import ExtractorCacheManager
 from ..utils.logging import get_logger
+from ..utils.llm_utils import robust_json_loads
 
 
 class MapReduceExtractor:
@@ -93,6 +94,7 @@ class MapReduceExtractor:
             self.logger.info(f"Initialized map phase LLM: {config.map_phase_model}")
         except Exception as e:
             self.logger.error(f"Failed to initialize map phase LLM: {e}")
+            self.logger.debug(f"LLM init error details: {str(e)}")
             raise
         
         # Reduce phase LLM (for consolidation)
@@ -125,6 +127,7 @@ class MapReduceExtractor:
             self.logger.info(f"Initialized reduce phase LLM: {config.reduce_phase_model}")
         except Exception as e:
             self.logger.error(f"Failed to initialize reduce phase LLM: {e}")
+            self.logger.debug(f"Reduce LLM init error details: {str(e)}")
             raise
     
     def _init_prompts(self) -> Dict[str, str]:
@@ -500,7 +503,7 @@ The two candidate beliefs express the same core idea of valuing action over plan
         cached_results = self.cache_manager.load_batch_result(batch_documents, extraction_type)
         if cached_results is not None:
             self.processing_stats["cached_batches"] += 1
-            self.logger.debug(f"Loaded batch {batch_index} from cache")
+            self.logger.info(f"Loaded batch {batch_index} from cache")
             return cached_results
         
         # Calculate batch hash for logging
@@ -535,26 +538,34 @@ The two candidate beliefs express the same core idea of valuing action over plan
         batch_log_dir = self.cache_manager.create_batch_log_directory(batch_hash, extraction_type)
         self.cache_manager.save_batch_input(batch_log_dir, prompt)
         
+        # Debug logging for prompt
+        self.logger.debug(f"Processing batch {batch_index} with {len(batch_documents)} documents")
+        
         try:
             # Process with LLM
             start_time = time.time()
             response = await self.map_llm.agenerate([[HumanMessage(content=prompt)]])
             processing_time = time.time() - start_time
+            self.logger.debug(f"LLM response received in {processing_time:.2f}s for batch {batch_index}")
             
             result_text = response.generations[0][0].text
+            
+            # Debug logging for response
+            if not result_text:
+                self.logger.error(f"Empty/None response from LLM for batch {batch_index} (hash: {batch_hash[:12]})")
             
             # Save complete response
             self.cache_manager.save_batch_response(batch_log_dir, result_text)
             
-            # Extract JSON from XML structure if present
-            if "<json_output>" in result_text and "</json_output>" in result_text:
-                json_start = result_text.find("<json_output>") + len("<json_output>")
-                json_end = result_text.find("</json_output>")
-                json_text = result_text[json_start:json_end].strip()
-                result_json = json.loads(json_text)
-            else:
-                # Fallback: treat entire response as JSON (backward compatibility)
-                result_json = json.loads(result_text)
+            # Parse JSON using robust XML-aware extraction
+            try:
+                result_json = robust_json_loads(result_text, self.logger)
+                self.logger.debug(f"JSON parse successful, got {len(result_json) if isinstance(result_json, list) else 'non-list'} items")
+            except (json.JSONDecodeError, ValueError) as e:
+                self.logger.error(f"JSON parse failed for batch {batch_index} (hash: {batch_hash[:12]}): {str(e)}")
+                self.logger.error(f"Check batch logs at: xml_responses/{extraction_type}/batch_{batch_hash[:16]}/")
+                self.logger.debug(f"Failed response text (first 1000 chars): {result_text[:1000] if result_text else 'None'}")
+                raise
             
             # Save extracted JSON
             self.cache_manager.save_batch_output(batch_log_dir, result_json)
@@ -608,12 +619,12 @@ The two candidate beliefs express the same core idea of valuing action over plan
             self.processing_stats["completed_batches"] += 1
             self.processing_stats["total_processing_time"] += processing_time
             
-            self.logger.debug(f"Processed batch {batch_index}: {len(results)} {extraction_type} in {processing_time:.1f}s")
+            self.logger.debug(f"Processed batch {batch_index} (hash: {batch_hash[:12]}): {len(results)} {extraction_type} in {processing_time:.1f}s")
             return results
             
         except Exception as e:
             self.processing_stats["failed_batches"] += 1
-            self.logger.error(f"Failed to process batch {batch_index}: {e}")
+            self.logger.error(f"Failed to process batch {batch_index} (hash: {batch_hash[:12]}): {e}")
             
             # Save error metadata
             error_metadata = {
@@ -656,6 +667,20 @@ The two candidate beliefs express the same core idea of valuing action over plan
             self.logger.info(f"Found cached consolidated {extraction_type} results")
             return consolidated_results
         
+        # Scan for cached batches to show resume status
+        cached_batch_count = 0
+        for i, batch in enumerate(batches):
+            cached_result = self.cache_manager.load_batch_result(batch, extraction_type)
+            if cached_result is not None:
+                cached_batch_count += 1
+        
+        # Display resume status information
+        if cached_batch_count > 0:
+            self.logger.info(f"Resume detected - Found {cached_batch_count} cached batches from previous run ({cached_batch_count} of {len(batches)} batches)")
+            self.logger.info(f"Will process {len(batches) - cached_batch_count} new batches and load {cached_batch_count} from cache")
+        else:
+            self.logger.info(f"Starting fresh extraction - Processing all {len(batches)} batches")
+        
         # Process batches with progress tracking
         all_candidates = []
         config = self.settings.map_reduce_extraction
@@ -685,6 +710,15 @@ The two candidate beliefs express the same core idea of valuing action over plan
                     all_candidates.extend(result)
                     
                     if config.show_progress:
+                        # Update progress bar with cache statistics
+                        cached_so_far = self.processing_stats.get("cached_batches", 0)
+                        processed_so_far = (i + j + 1) - cached_so_far
+                        cache_rate = (cached_so_far / (i + j + 1)) * 100 if (i + j + 1) > 0 else 0
+                        pbar.set_postfix({
+                            'cached': cached_so_far,
+                            'processed': processed_so_far,
+                            'cache_rate': f"{cache_rate:.1f}%"
+                        })
                         pbar.update(1)
                         
             except Exception as e:
@@ -693,7 +727,14 @@ The two candidate beliefs express the same core idea of valuing action over plan
         if config.show_progress:
             pbar.close()
         
+        # Calculate and display final statistics
+        cached_batches = self.processing_stats.get("cached_batches", 0)
+        processed_batches = len(batches) - cached_batches
+        cache_hit_rate = (cached_batches / len(batches)) * 100 if len(batches) > 0 else 0
+        
         self.logger.info(f"Map phase completed: {len(all_candidates)} candidates from {len(batches)} batches")
+        self.logger.info(f"Cache efficiency - {cached_batches} cached, {processed_batches} processed ({cache_hit_rate:.1f}% cache hit rate)")
+        
         return all_candidates
     
     async def _reduce_phase(self, candidates: List[Union[MentalModel, CoreBelief]], 
@@ -742,23 +783,27 @@ The two candidate beliefs express the same core idea of valuing action over plan
             top_k=top_k
         )
         
+        self.logger.debug(f"Reduce phase for {extraction_type} - consolidating {len(candidates_data)} candidates")
+        
         try:
             # Process with reduce LLM
             start_time = time.time()
             response = await self.reduce_llm.agenerate([[HumanMessage(content=prompt)]])
             processing_time = time.time() - start_time
+            self.logger.debug(f"Reduce LLM response received in {processing_time:.2f}s")
             
             result_text = response.generations[0][0].text
+            if not result_text:
+                self.logger.error(f"Empty/None reduce response from LLM")
             
-            # Extract JSON from XML structure if present
-            if "<json_output>" in result_text and "</json_output>" in result_text:
-                json_start = result_text.find("<json_output>") + len("<json_output>")
-                json_end = result_text.find("</json_output>")
-                json_text = result_text[json_start:json_end].strip()
-                result_json = json.loads(json_text)
-            else:
-                # Fallback: treat entire response as JSON (backward compatibility)
-                result_json = json.loads(result_text)
+            # Parse JSON using robust XML-aware extraction  
+            try:
+                result_json = robust_json_loads(result_text, self.logger)
+                self.logger.debug(f"Reduce JSON parse successful, got {len(result_json) if isinstance(result_json, list) else 'non-list'} consolidated items")
+            except (json.JSONDecodeError, ValueError) as e:
+                self.logger.error(f"Reduce JSON parse failed for {extraction_type}: {str(e)}")
+                self.logger.debug(f"Failed reduce response text (first 1000 chars): {result_text[:1000] if result_text else 'None'}")
+                raise
             
             # Convert to appropriate objects
             consolidated_results = []

@@ -24,8 +24,10 @@ from ..data.models.persona_constitution import (
 )
 from ..core.statistical_analyzer import StatisticalAnalyzer
 from ..core.map_reduce_extractor import MapReduceExtractor
+from ..core.extractor_cache import ExtractorCacheManager
 from ..config.settings import Settings
 from ..utils.logging import get_logger
+from ..utils.llm_utils import safe_json_loads
 
 
 class PersonaExtractor:
@@ -46,6 +48,9 @@ class PersonaExtractor:
         
         # Initialize statistical analyzer with persona context for caching
         self.statistical_analyzer = StatisticalAnalyzer(settings, persona_id)
+        
+        # Initialize cache manager for linguistic style caching
+        self.cache_manager = ExtractorCacheManager(settings, persona_id)
         
         # Initialize map-reduce extractor if enabled
         self.map_reduce_extractor = None
@@ -280,7 +285,7 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
             pbar.set_description("Persona Extraction: Linguistic style")
             # Use representative sampling for linguistic style regardless of map-reduce setting
             sampled_content = self._prepare_sampled_content(documents)
-            linguistic_style = await self._extract_linguistic_style(sampled_content, statistical_insights)
+            linguistic_style = await self._extract_linguistic_style(sampled_content, statistical_insights, documents)
             pbar.update(1)
             
             # Step 4 & 5: Extract mental models and core beliefs
@@ -356,7 +361,7 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
                                random_tokens: int = 20000) -> str:
         """
         Prepare representative sampled content for linguistic style analysis
-        Uses first portion + random sample to capture style diversity
+        Uses first portion + deterministic sample to capture style diversity
         
         Args:
             documents: All documents
@@ -367,6 +372,7 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
             Sampled content string
         """
         import random
+        import hashlib
         
         # Combine all content
         all_content = []
@@ -376,6 +382,11 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
                 all_content.append(content)
         
         combined = "\n\n".join(all_content)
+        
+        # Create deterministic seed from content hash for consistent sampling
+        content_hash = hashlib.sha256(combined.encode('utf-8')).hexdigest()
+        seed = int(content_hash[:8], 16)  # Use first 8 hex chars as seed
+        random.seed(seed)
         
         # Estimate tokens (rough: 1 token ≈ 4 characters)
         total_chars = len(combined)
@@ -388,16 +399,19 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
         if total_chars > first_chars:
             sampled_content += combined[:first_chars]
             
-            # Add random sample from remaining content
+            # Add deterministic sample from remaining content
             remaining_content = combined[first_chars:]
             if len(remaining_content) > random_chars:
-                # Take random sample from middle portion
+                # Take deterministic sample from middle portion
                 start_pos = random.randint(0, len(remaining_content) - random_chars)
                 sampled_content += "\n\n[... SAMPLE FROM MIDDLE ...]\n\n"
                 sampled_content += remaining_content[start_pos:start_pos + random_chars]
         else:
             # Content is small enough to use entirely
             sampled_content = combined
+        
+        # Reset random seed to avoid affecting other code
+        random.seed()
         
         self.logger.info(f"Sampled {len(sampled_content)} characters from {total_chars} total for linguistic analysis")
         return sampled_content
@@ -481,8 +495,15 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
         
         return "\n".join(insights)
     
-    async def _extract_linguistic_style(self, content: str, statistical_insights: str) -> LinguisticStyle:
-        """Extract linguistic style using LLM"""
+    async def _extract_linguistic_style(self, content: str, statistical_insights: str, 
+                                       documents: List[Dict[str, Any]]) -> LinguisticStyle:
+        """Extract linguistic style using LLM with caching support"""
+        
+        # Try to load from cache first
+        cached_result = self.cache_manager.load_linguistic_style(documents, statistical_insights)
+        if cached_result is not None:
+            self.logger.info("Loaded linguistic style from cache")
+            return cached_result
         
         prompt = self.prompts["linguistic_style"].format(
             content=content,
@@ -493,8 +514,8 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
             response = await self.llm.agenerate([[HumanMessage(content=prompt)]])
             result_text = response.generations[0][0].text
             
-            # Parse JSON response
-            result_json = json.loads(result_text)
+            # Parse JSON response with cleanup for Gemini markdown formatting
+            result_json = safe_json_loads(result_text)
             
             # Create LinguisticStyle object
             linguistic_style = LinguisticStyle(
@@ -504,6 +525,9 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
                 sentence_structures=result_json.get('sentence_structures', []),
                 communication_style=result_json.get('communication_style', {})
             )
+            
+            # Save to cache
+            self.cache_manager.save_linguistic_style(documents, statistical_insights, linguistic_style)
             
             self.logger.debug(f"Extracted linguistic style with {len(linguistic_style.catchphrases)} catchphrases")
             return linguistic_style
@@ -531,8 +555,8 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
             response = await self.llm.agenerate([[HumanMessage(content=prompt)]])
             result_text = response.generations[0][0].text
             
-            # Parse JSON response
-            result_json = json.loads(result_text)
+            # Parse JSON response with cleanup for Gemini markdown formatting
+            result_json = safe_json_loads(result_text)
             
             # Create MentalModel objects
             mental_models = []
@@ -574,8 +598,8 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
             response = await self.llm.agenerate([[HumanMessage(content=prompt)]])
             result_text = response.generations[0][0].text
             
-            # Parse JSON response
-            result_json = json.loads(result_text)
+            # Parse JSON response with cleanup for Gemini markdown formatting
+            result_json = safe_json_loads(result_text)
             
             # Create CoreBelief objects
             core_beliefs = []
