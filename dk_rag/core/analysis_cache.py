@@ -140,7 +140,7 @@ class AnalysisCacheManager:
                 "analyzer_version": "1.0.0",
                 "settings_hash": self._calculate_settings_hash()
             },
-            "statistical_report": statistical_report.dict(),
+            "statistical_report": statistical_report.model_dump(mode='json'),
             "document_summaries": [
                 {
                     "source": doc.get('source', 'unknown'),
@@ -209,7 +209,7 @@ class AnalysisCacheManager:
             
             # Convert to StatisticalReport object
             report_data = cache_data["statistical_report"]
-            statistical_report = StatisticalReport.parse_obj(report_data)
+            statistical_report = StatisticalReport.model_validate(report_data)
             
             cache_timestamp = cache_data["metadata"]["timestamp"]
             self.logger.info(f"Loaded cached analysis from {cache_timestamp}")

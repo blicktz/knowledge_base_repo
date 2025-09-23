@@ -8,7 +8,7 @@ PYTEST := poetry run pytest
 MODULE := dk_rag.cli.persona_builder
 
 # Default paths - customize these for your setup
-DOCS_DIR ?= /Users/blickt/Documents/src/pdf_2_text/content_repo/greg_startup
+DOCS_DIR ?= /Users/blickt/Documents/src/pdf_2_text/content_repo/test1
 OUTPUT_DIR ?= ./output
 CONFIG_FILE ?= ./config/persona_config.yaml
 PATTERN ?= *.txt

@@ -249,8 +249,12 @@ test_outputs/
 
 # RunPod deployment files
 .runpod_pod_id
-.sqlite3
+*.sqlite3
 chroma_db/
-data/
+data/storage/
 
 backups/
+
+dk_rag/data/storage/personas
+dk_rag/data/storage/cache
+dk_rag/data/storage/artifacts

@@ -19,7 +19,7 @@ from nltk.util import ngrams
 from sklearn.feature_extraction.text import TfidfVectorizer
 from tqdm import tqdm
 
-from ..data.models.persona_constitution import StatisticalReport
+from ..data.models.persona_constitution import StatisticalReport, CollocationItem
 from ..config.settings import Settings
 from ..utils.logging import get_logger
 from ..utils.device_manager import get_device_manager
@@ -409,8 +409,14 @@ class StatisticalAnalyzer:
             # Sort by score
             collocations.sort(key=lambda x: x['score'], reverse=True)
             
-            self.logger.debug(f"Extracted {len(collocations)} collocations")
-            return collocations[:50]  # Return top 50
+            # Convert to CollocationItem objects
+            collocation_items = [
+                CollocationItem(**collocation_dict) 
+                for collocation_dict in collocations[:50]  # Top 50
+            ]
+            
+            self.logger.debug(f"Extracted {len(collocation_items)} collocations")
+            return collocation_items
             
         except Exception as e:
             self.logger.error(f"Collocation extraction failed: {e}")

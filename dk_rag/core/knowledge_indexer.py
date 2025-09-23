@@ -12,6 +12,7 @@ from pathlib import Path
 from ..data.storage.vector_store import VectorStore
 from ..data.storage.artifacts import ArtifactManager
 from ..data.processing.transcript_loader import TranscriptLoader
+from ..data.processing.chunk_processor import ChunkProcessor
 from ..core.persona_extractor import PersonaExtractor
 from ..core.statistical_analyzer import StatisticalAnalyzer
 from ..core.persona_manager import PersonaManager
@@ -50,6 +51,7 @@ class KnowledgeIndexer:
             self.artifact_manager = ArtifactManager(settings)
         
         self.transcript_loader = TranscriptLoader(settings)
+        self.chunk_processor = ChunkProcessor(settings)
         self.persona_extractor = PersonaExtractor(settings, persona_id)
         self.statistical_analyzer = StatisticalAnalyzer(settings, persona_id)
     
@@ -106,12 +108,21 @@ class KnowledgeIndexer:
         summary = self.transcript_loader.get_document_summary(documents)
         self.logger.info(f"Loaded {summary['total_documents']} documents with {summary['total_words']:,} words")
         
+        # Chunk documents before adding to vector store
+        self.logger.info("Chunking documents...")
+        chunks = self.chunk_processor.chunk_documents(documents)
+        
+        # Get chunk statistics
+        chunk_stats = self.chunk_processor.get_chunk_stats(chunks)
+        self.logger.info(f"Created {chunk_stats['total_chunks']} chunks from {chunk_stats['unique_parent_documents']} documents")
+        self.logger.info(f"Average words per chunk: {chunk_stats['avg_words_per_chunk']:.1f}")
+        
         # Add documents to vector store with persona metadata
-        self.logger.info(f"Indexing documents in vector store for persona '{persona_id}'...")
-        # Add persona_id to all documents metadata
-        for doc in documents:
-            doc['persona_id'] = persona_id
-        chunks_added = vector_store.add_documents(documents)
+        self.logger.info(f"Indexing {len(chunks)} chunks in vector store for persona '{persona_id}'...")
+        # Add persona_id to all chunks metadata
+        for chunk in chunks:
+            chunk['persona_id'] = persona_id
+        chunks_added = vector_store.add_documents(chunks)
         
         # Get collection statistics
         collection_stats = vector_store.get_collection_stats()
@@ -119,19 +130,21 @@ class KnowledgeIndexer:
         # Update persona stats in registry
         self.persona_manager.update_persona_stats(persona_id, {
             'documents': len(documents),
-            'chunks': chunks_added,
+            'chunks': len(chunks),
             'total_words': summary['total_words']
         })
         
         results = {
             'documents_loaded': len(documents),
             'total_words': summary['total_words'],
-            'chunks_created': chunks_added,
+            'chunks_created': len(chunks),
+            'chunks_indexed': len(chunks_added) if isinstance(chunks_added, list) else chunks_added,
             'collection_stats': collection_stats,
-            'document_summary': summary
+            'document_summary': summary,
+            'chunk_stats': chunk_stats
         }
         
-        self.logger.info(f"Knowledge base built successfully: {chunks_added} chunks indexed")
+        self.logger.info(f"Knowledge base built successfully: {len(chunks)} chunks created and indexed")
         return results
     
     def extract_and_save_persona(self,
@@ -430,10 +443,16 @@ class KnowledgeIndexer:
         # This is a simplified check - in production you'd want more sophisticated deduplication
         new_documents = self.transcript_loader.deduplicate_documents(new_documents)
         
+        # Chunk new documents
+        self.logger.info("Chunking new documents...")
+        new_chunks = self.chunk_processor.chunk_documents(new_documents)
+        chunk_stats = self.chunk_processor.get_chunk_stats(new_chunks)
+        self.logger.info(f"Created {chunk_stats['total_chunks']} new chunks")
+        
         # Add to vector store with persona metadata
-        for doc in new_documents:
-            doc['persona_id'] = persona_id
-        chunks_added = vector_store.add_documents(new_documents)
+        for chunk in new_chunks:
+            chunk['persona_id'] = persona_id
+        chunks_added = vector_store.add_documents(new_chunks)
         
         # Get updated stats
         after_stats = vector_store.get_collection_stats()
