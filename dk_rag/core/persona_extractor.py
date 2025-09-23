@@ -20,7 +20,11 @@ from ..data.models.persona_constitution import (
     MentalModel, 
     CoreBelief,
     StatisticalReport,
-    ExtractionMetadata
+    ExtractionMetadata,
+    CommunicationStyle,
+    FormalityLevel,
+    DirectnessLevel,
+    FrequencyLevel
 )
 from ..core.statistical_analyzer import StatisticalAnalyzer
 from ..core.map_reduce_extractor import MapReduceExtractor
@@ -121,11 +125,11 @@ Return a JSON object with this exact structure:
     "vocabulary": ["term1", "term2", "term3"], 
     "sentence_structures": ["pattern1", "pattern2"],
     "communication_style": {{
-        "formality": "formal/informal/mixed",
-        "directness": "very_direct/direct/indirect",
-        "use_of_examples": "frequent/occasional/rare",
-        "storytelling": "high/medium/low",
-        "humor": "frequent/occasional/rare"
+        "formality": "very_formal/formal/neutral/informal/very_informal",
+        "directness": "very_indirect/indirect/neutral/direct/very_direct",
+        "use_of_examples": "never/rare/occasional/frequent/constant",
+        "storytelling": "never/rare/occasional/frequent/constant",
+        "humor": "never/rare/occasional/frequent/constant"
     }}
 }}
 
@@ -481,7 +485,7 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
             insights.append(f"Top entities: {', '.join(top_entities)}")
         
         if report.top_collocations:
-            top_collocations = [item.get('ngram', '') for item in report.top_collocations[:5]]
+            top_collocations = [item.ngram for item in report.top_collocations[:5]]
             insights.append(f"Top phrases: {', '.join(top_collocations)}")
         
         if report.readability_metrics:
@@ -494,6 +498,74 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
             insights.append(f"Questions: {question_ratio:.1%}, Exclamations: {exclamation_ratio:.1%}")
         
         return "\n".join(insights)
+    
+    def _parse_communication_style(self, comm_style_data: Dict[str, Any]) -> CommunicationStyle:
+        """Safely parse communication style data with validation and defaults."""
+        
+        # Helper function to map values to valid enum values
+        def map_to_formality(value: str) -> FormalityLevel:
+            value = str(value).lower().strip()
+            mapping = {
+                'very_formal': FormalityLevel.VERY_FORMAL,
+                'formal': FormalityLevel.FORMAL,
+                'neutral': FormalityLevel.NEUTRAL,
+                'informal': FormalityLevel.INFORMAL,
+                'very_informal': FormalityLevel.VERY_INFORMAL,
+                # Handle common variations
+                'mixed': FormalityLevel.NEUTRAL,
+                'casual': FormalityLevel.INFORMAL,
+                'professional': FormalityLevel.FORMAL
+            }
+            return mapping.get(value, FormalityLevel.INFORMAL)  # Default to informal
+        
+        def map_to_directness(value: str) -> DirectnessLevel:
+            value = str(value).lower().strip()
+            mapping = {
+                'very_indirect': DirectnessLevel.VERY_INDIRECT,
+                'indirect': DirectnessLevel.INDIRECT,
+                'neutral': DirectnessLevel.NEUTRAL,
+                'direct': DirectnessLevel.DIRECT,
+                'very_direct': DirectnessLevel.VERY_DIRECT
+            }
+            return mapping.get(value, DirectnessLevel.DIRECT)  # Default to direct
+        
+        def map_to_frequency(value: str) -> FrequencyLevel:
+            value = str(value).lower().strip()
+            mapping = {
+                'never': FrequencyLevel.NEVER,
+                'rare': FrequencyLevel.RARE,
+                'occasional': FrequencyLevel.OCCASIONAL,
+                'frequent': FrequencyLevel.FREQUENT,
+                'constant': FrequencyLevel.CONSTANT,
+                # Handle common variations
+                'low': FrequencyLevel.RARE,
+                'medium': FrequencyLevel.OCCASIONAL,
+                'high': FrequencyLevel.FREQUENT,
+                'none': FrequencyLevel.NEVER,
+                'sometimes': FrequencyLevel.OCCASIONAL,
+                'often': FrequencyLevel.FREQUENT,
+                'always': FrequencyLevel.CONSTANT
+            }
+            return mapping.get(value, FrequencyLevel.OCCASIONAL)  # Default to occasional
+        
+        try:
+            return CommunicationStyle(
+                formality=map_to_formality(comm_style_data.get('formality', 'informal')),
+                directness=map_to_directness(comm_style_data.get('directness', 'direct')),
+                use_of_examples=map_to_frequency(comm_style_data.get('use_of_examples', 'occasional')),
+                storytelling=map_to_frequency(comm_style_data.get('storytelling', 'occasional')),
+                humor=map_to_frequency(comm_style_data.get('humor', 'occasional'))
+            )
+        except Exception as e:
+            self.logger.warning(f"Failed to parse communication style, using defaults: {e}")
+            # Return safe defaults
+            return CommunicationStyle(
+                formality=FormalityLevel.INFORMAL,
+                directness=DirectnessLevel.DIRECT,
+                use_of_examples=FrequencyLevel.OCCASIONAL,
+                storytelling=FrequencyLevel.OCCASIONAL,
+                humor=FrequencyLevel.OCCASIONAL
+            )
     
     async def _extract_linguistic_style(self, content: str, statistical_insights: str, 
                                        documents: List[Dict[str, Any]]) -> LinguisticStyle:
@@ -517,13 +589,17 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
             # Parse JSON response with cleanup for Gemini markdown formatting
             result_json = safe_json_loads(result_text)
             
-            # Create LinguisticStyle object
+            # Create LinguisticStyle object with proper communication style parsing
+            communication_style = self._parse_communication_style(
+                result_json.get('communication_style', {})
+            )
+            
             linguistic_style = LinguisticStyle(
                 tone=result_json.get('tone', ''),
                 catchphrases=result_json.get('catchphrases', []),
                 vocabulary=result_json.get('vocabulary', []),
                 sentence_structures=result_json.get('sentence_structures', []),
-                communication_style=result_json.get('communication_style', {})
+                communication_style=communication_style
             )
             
             # Save to cache
@@ -534,13 +610,21 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
             
         except Exception as e:
             self.logger.error(f"Linguistic style extraction failed: {e}")
-            # Return default linguistic style
+            # Return default linguistic style with proper communication style
+            default_communication_style = CommunicationStyle(
+                formality=FormalityLevel.INFORMAL,
+                directness=DirectnessLevel.DIRECT,
+                use_of_examples=FrequencyLevel.OCCASIONAL,
+                storytelling=FrequencyLevel.OCCASIONAL,
+                humor=FrequencyLevel.OCCASIONAL
+            )
+            
             return LinguisticStyle(
                 tone="Analysis failed - using default",
                 catchphrases=[],
                 vocabulary=[],
                 sentence_structures=[],
-                communication_style={}
+                communication_style=default_communication_style
             )
     
     async def _extract_mental_models(self, content: str, statistical_insights: str) -> List[MentalModel]:
@@ -691,7 +775,7 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
         # Extract from collocations
         if report.top_collocations:
             for collocation in report.top_collocations[:10]:
-                ngram = collocation.get('ngram', '').lower()
+                ngram = collocation.ngram.lower()
                 
                 if any(term in ngram for term in ['make money', 'build business', 'start company']):
                     themes.append('entrepreneurship')
@@ -706,13 +790,14 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
     
     def _infer_communication_preferences(self, linguistic_style: LinguisticStyle) -> Dict[str, Any]:
         """Infer communication preferences from linguistic style"""
+        comm_style = linguistic_style.communication_style
         preferences = {
             'preferred_format': 'conversational',
-            'uses_storytelling': linguistic_style.communication_style.get('storytelling', 'medium') == 'high',
-            'direct_communication': linguistic_style.communication_style.get('directness', 'direct') in ['direct', 'very_direct'],
-            'uses_examples': linguistic_style.communication_style.get('use_of_examples', 'occasional') == 'frequent',
-            'humor_level': linguistic_style.communication_style.get('humor', 'occasional'),
-            'formality_level': linguistic_style.communication_style.get('formality', 'informal')
+            'uses_storytelling': comm_style.storytelling.value in ['frequent', 'constant'],
+            'direct_communication': comm_style.directness.value in ['direct', 'very_direct'],
+            'uses_examples': comm_style.use_of_examples.value in ['frequent', 'constant'],
+            'humor_level': comm_style.humor.value,
+            'formality_level': comm_style.formality.value
         }
         
         return preferences
