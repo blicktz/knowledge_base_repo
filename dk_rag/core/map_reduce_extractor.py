@@ -18,7 +18,8 @@ from ..data.models.persona_constitution import MentalModel, CoreBelief
 from ..config.settings import Settings
 from ..core.extractor_cache import ExtractorCacheManager
 from ..utils.logging import get_logger
-from ..utils.llm_utils import robust_json_loads
+from ..utils.llm_utils import robust_json_loads, clean_llm_json_response, clean_reduce_phase_json_response
+from llm_output_parser import parse_json
 
 
 class MapReduceExtractor:
@@ -114,7 +115,7 @@ class MapReduceExtractor:
             llm_kwargs = {
                 "model": config.reduce_phase_model,
                 "temperature": 0.3,  # Lower temperature for more deterministic consolidation
-                "max_tokens": 6000,  # Higher for consolidation tasks
+                "max_tokens": 52428,  # 80% of Gemini 2.5 Flash max output (65536 tokens)
                 "timeout": config.timeout_seconds * 2,  # Longer timeout for complex consolidation
                 "max_retries": config.max_retries
             }
@@ -306,7 +307,7 @@ Your primary goal is to synthesize the raw data from the <candidate_models_json>
 ---
 ## JSON FIELD DEFINITIONS ##
 
-You must generate a final JSON object for each consolidated model with ONLY the following fields:
+You must generate a final JSON ARRAY containing multiple consolidated models. Each object in the array must have ONLY the following fields:
 
 - **`name` (string):** The final, most common or clearest name for the framework from the cluster.
 - **`description` (string):** A comprehensive, synthesized description that combines the best elements from all candidates in the cluster.
@@ -360,7 +361,9 @@ The two candidate models clearly refer to the same "3-P Framework". I will merge
 </candidate_models_json>
 </input_block>
 
-<output_block>"""
+<output_block>
+
+**IMPORTANT**: Your response must be a complete JSON array. Ensure your response ends with a proper closing bracket ']' to form valid JSON."""
 
         # Reduce phase prompt for core beliefs
         reduce_core_beliefs_prompt = """
@@ -381,7 +384,7 @@ Your primary goal is to synthesize the raw data from the <candidate_beliefs_json
 ---
 ## JSON FIELD DEFINITIONS ##
 
-You must generate a final JSON object for each consolidated belief with ONLY the following fields:
+You must generate a final JSON ARRAY containing multiple consolidated beliefs. Each object in the array must have ONLY the following fields:
 
 - **`statement` (string):** The final, master statement of the belief, synthesized to be as clear and profound as possible.
 - **`category` (string):** The single, most fitting category for the synthesized belief from the merged group.
@@ -433,7 +436,9 @@ The two candidate beliefs express the same core idea of valuing action over plan
 </candidate_beliefs_json>
 </input_block>
 
-<output_block>"""
+<output_block>
+
+**IMPORTANT**: Your response must be a complete JSON array. Ensure your response ends with a proper closing bracket ']' to form valid JSON."""
 
         return {
             "map_mental_models": map_mental_models_prompt,
@@ -785,6 +790,10 @@ The two candidate beliefs express the same core idea of valuing action over plan
         
         self.logger.debug(f"Reduce phase for {extraction_type} - consolidating {len(candidates_data)} candidates")
         
+        # Create reduce log directory and save input
+        reduce_log_dir = self.cache_manager.create_reduce_log_directory(extraction_type)
+        self.cache_manager.save_reduce_input(reduce_log_dir, prompt, candidates_data)
+        
         try:
             # Process with reduce LLM
             start_time = time.time()
@@ -796,9 +805,50 @@ The two candidate beliefs express the same core idea of valuing action over plan
             if not result_text:
                 self.logger.error(f"Empty/None reduce response from LLM")
             
-            # Parse JSON using robust XML-aware extraction  
+            # Save complete response
+            self.cache_manager.save_reduce_response(reduce_log_dir, result_text)
+            
+            # Parse JSON using llm-output-parser library
             try:
-                result_json = robust_json_loads(result_text, self.logger)
+                self.logger.info(f"DEBUG: Raw reduce response (first 500 chars): {result_text[:500] if result_text else 'None'}...")
+                self.logger.info(f"DEBUG: Raw response total length: {len(result_text) if result_text else 0}")
+                
+                # Use specialized LLM output parser designed for markdown/mixed content
+                try:
+                    result_json = parse_json(result_text)
+                    self.logger.info(f"DEBUG: llm-output-parser successful")
+                except Exception as parse_error:
+                    self.logger.error(f"DEBUG: llm-output-parser failed: {str(parse_error)}")
+                    # Fallback to direct JSON parsing as last resort
+                    try:
+                        result_json = json.loads(result_text)
+                        self.logger.info(f"DEBUG: Direct JSON parse successful as fallback")
+                    except json.JSONDecodeError as fallback_error:
+                        self.logger.error(f"DEBUG: All parsing methods failed. Original error: {str(parse_error)}, Fallback error: {str(fallback_error)}")
+                        raise parse_error
+                
+                self.logger.info(f"DEBUG: Parsed result_json type: {type(result_json)}")
+                self.logger.info(f"DEBUG: Result_json length: {len(result_json) if isinstance(result_json, (list, dict)) else 'not list/dict'}")
+                
+                # Check for truncated response indicators
+                if result_text and not result_text.strip().endswith((']', '}', '```')):
+                    self.logger.warning(f"Response appears truncated - does not end with proper JSON closing")
+                    
+                # Validate reasonable output count (warn if suspiciously low)
+                expected_min_items = max(2, len(candidates) // 10)  # At least 10% consolidation
+                if isinstance(result_json, list) and len(result_json) < expected_min_items:
+                    self.logger.warning(f"Suspiciously low output count: {len(result_json)} items from {len(candidates)} candidates (expected at least {expected_min_items})")
+                
+                # Ensure result_json is a list for iteration
+                if isinstance(result_json, dict):
+                    self.logger.info(f"DEBUG: Converting single dict to list")
+                    result_json = [result_json]
+                elif not isinstance(result_json, list):
+                    raise ValueError(f"Expected list or dict from JSON parsing, got {type(result_json)}")
+                
+                if isinstance(result_json, list) and result_json:
+                    self.logger.info(f"DEBUG: First item type: {type(result_json[0])}")
+                    self.logger.info(f"DEBUG: First item content: {str(result_json[0])[:200]}...")
                 self.logger.debug(f"Reduce JSON parse successful, got {len(result_json) if isinstance(result_json, list) else 'non-list'} consolidated items")
             except (json.JSONDecodeError, ValueError) as e:
                 self.logger.error(f"Reduce JSON parse failed for {extraction_type}: {str(e)}")
@@ -807,8 +857,9 @@ The two candidate beliefs express the same core idea of valuing action over plan
             
             # Convert to appropriate objects
             consolidated_results = []
-            for item_data in result_json:
+            for i, item_data in enumerate(result_json):
                 try:
+                    self.logger.info(f"DEBUG: Processing item {i}: type={type(item_data)}, content={str(item_data)[:100]}...")
                     if extraction_type == "mental_models":
                         consolidated_results.append(MentalModel(
                             name=item_data.get('name', ''),
@@ -828,10 +879,33 @@ The two candidate beliefs express the same core idea of valuing action over plan
                             related_mental_models=item_data.get('related_mental_models', [])
                         ))
                 except Exception as e:
+                    self.logger.info(f"DEBUG: Exception processing item {i}: {e}")
                     self.logger.warning(f"Failed to create consolidated {extraction_type} object: {e}")
                     continue
             
-            # Cache consolidated results
+            # Save parsed JSON output and metadata
+            self.cache_manager.save_reduce_output(reduce_log_dir, result_json)
+            
+            # Prepare comprehensive reduce metadata
+            reduce_metadata = {
+                "extraction_type": extraction_type,
+                "timestamp": datetime.now().isoformat(),
+                "consolidation_strategy": strategy,
+                "min_frequency": min_frequency,
+                "top_k": top_k,
+                "input_candidates": len(candidates),
+                "output_results": len(consolidated_results),
+                "processing_time": processing_time,
+                "model_used": self.settings.map_reduce_extraction.reduce_phase_model,
+                "parsing_method": "llm-output-parser",
+                "prompt_length": len(prompt),
+                "response_length": len(result_text) if result_text else 0,
+                "parsed_json_length": len(result_json) if isinstance(result_json, list) else 1,
+                "consolidation_ratio": len(consolidated_results) / len(candidates) if len(candidates) > 0 else 0
+            }
+            self.cache_manager.save_reduce_metadata(reduce_log_dir, reduce_metadata)
+            
+            # Cache consolidated results (existing functionality)
             consolidation_metadata = {
                 "strategy": strategy,
                 "min_frequency": min_frequency,
@@ -850,6 +924,26 @@ The two candidate beliefs express the same core idea of valuing action over plan
             
         except Exception as e:
             self.logger.error(f"Failed to consolidate {extraction_type}: {e}")
+            
+            # Save error metadata if reduce_log_dir was created
+            try:
+                if 'reduce_log_dir' in locals():
+                    error_metadata = {
+                        "extraction_type": extraction_type,
+                        "timestamp": datetime.now().isoformat(),
+                        "consolidation_strategy": strategy,
+                        "min_frequency": min_frequency,
+                        "top_k": top_k,
+                        "input_candidates": len(candidates),
+                        "error": str(e),
+                        "error_type": type(e).__name__,
+                        "processing_stage": "reduce_phase",
+                        "model_used": self.settings.map_reduce_extraction.reduce_phase_model
+                    }
+                    self.cache_manager.save_reduce_metadata(reduce_log_dir, error_metadata)
+            except Exception as meta_error:
+                self.logger.warning(f"Failed to save error metadata: {meta_error}")
+            
             return []
     
     async def extract_mental_models(self, documents: List[Dict[str, Any]], 

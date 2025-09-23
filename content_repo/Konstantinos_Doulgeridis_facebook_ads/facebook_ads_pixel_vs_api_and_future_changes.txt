@@ -1,0 +1,43 @@
+Hi guys, no introduction or anything, let's go straight to the subject. Hi guys, no introduction, I have nothing, I can't think of, I cannot think of any introduction I guess. So let's go straight to the subject.
+
+Facebook Pixel and API, what are the differences and what's the future of the Pixel? Actually it's so funny because after 50 videos I cannot think of any thumbnail, I cannot think of introduction and stuff. I guess it's going to come to me eventually.
+
+So what is the Facebook Pixel, what is the API? We know that the API came to our lives with the iOS changes but this is not true because programs like Hyros and other programs that they were doing better reporting, they had API long before we have seen it coming to the platform. Now, what is the API?
+
+API is when we have reporting server to server, okay. So the data that we are receiving is coming from one server to another server. The Pixel on the other side is reporting data browser to browser.
+
+This is why it has been so heavily impacted by the iOS changes. That means that when we are having server to server reporting, our reporting is more accurate. A lot of companies like Hyros, Wicked Reports, they have found that and this is why they were having better reporting because they were relying more in API reporting instead of having the Pixel reporting.
+
+Why Facebook was using Pixel though? Didn't they know about the API? Facebook is a massive platform, okay.
+
+It needs to have easy solutions so that everyone can apply them because the more people that they use it, the more money it gets from the advertisement. So Facebook should not be accounted as a super sophisticated platform. Of course, with all the changes that they do and stuff, it's becoming more and more difficult to do ads.
+
+Yeah. But at the end of the day, you have to understand that their ultimate goal is to have a plugin thing that everybody can use, okay. This is why they have the boost button, this is why they have other options and they try to make it even more easier as the time goes by but they are just adding so many things that at the end of the day, it's becoming even more difficult for the people to understand.
+
+So this is why Facebook was using the Pixel and this is why now after what happened, they had no other option but to integrate the API so that we can have better reporting. And we all know that at the start, it was very difficult for people to actually install the API to their sites. That means that Facebook was right.
+
+API was much more difficult instead of adding a line of code in your header section and having reporting. So we analyzed what is Facebook Pixel, what is API, just for theory. Let's discuss a little bit what is going to happen from now on.
+
+We know that now we have API and we have Pixel, they're working together and they're not reporting double events. We have the deduplication events so that we can have only one unique event per transaction. This is good.
+
+They're working as a synergy. But what is the future? The future, by talking with several representatives and other people from Facebook, we know that Pixel is going to be removed eventually.
+
+We know that Facebook is going to do a transition to only API because Pixel is not going to be a good option anymore. So based on that note, what you should do if you are using only Pixel up to now, keep in your mind that you might have some results now. But if your account is old, keep in your mind that later you will be left with nothing.
+
+Because if you don't integrate your API now so that it can start receiving data also, this is going to be devastating for you when the Pixel is going to be actually removed. And maybe it's going to be removed at the end of the year. Maybe it's going to be removed earlier or later.
+
+It doesn't matter. You need to start protecting your account and you need to start preparing for the next day. So if you're having only Pixel, please, for the love of God, I'm having a whole video.
+
+It's actually my first video in the channel, which I explain how to go and find the API and stuff. I don't have a detailed video about the API and how to install it. Because as you can understand, there are a thousand stores and different coding and stuff.
+
+So you should actually call a developer. Good luck with that. To actually do an API integration and make sure that everything is working.
+
+But in terms of what you should have inside your Facebook Ads Business Manager, I have a whole video video, which I'm going to put a link in the description. Just to summarize. First of all, you need to know that API is better tracking because it's server to server reporting.
+
+Second thing is that, for now, you can have your Pixel and your API working together as a synergy and this is going to help you produce good results and we have the application events, no problem at all. Third thing is that, third thing is that you need to prepare for the next day. Okay?
+
+So if you're having only your Pixel installed, you need to put the API because maybe the Pixel is going to be removed in one month or at the end of the year. It doesn't matter. You need to do it now so that you can start generating results also for your Pixel and prepare for the next day without having a Pixel which has zero data.
+
+In any case, that's all I had for you today about the API and the Pixel. I hope you liked the video and I hope that you liked the content. Consider to subscribe and like this video if you liked it.
+
+Watch my other videos and I have also launched my course. If you want, you can go and you can check it. I'm going to see you in a future video as always.

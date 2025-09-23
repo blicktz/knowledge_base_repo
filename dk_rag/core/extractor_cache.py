@@ -624,6 +624,123 @@ class ExtractorCacheManager:
         
         return log_data
     
+    # Reduce phase logging functions
+    def create_reduce_log_directory(self, extraction_type: str, timestamp: str = None) -> Path:
+        """
+        Create directory for reduce phase processing logs
+        
+        Args:
+            extraction_type: Type of extraction ('mental_models' or 'core_beliefs')
+            timestamp: Optional timestamp for directory naming (defaults to current time)
+            
+        Returns:
+            Path to the reduce log directory
+        """
+        if timestamp is None:
+            from datetime import datetime
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        
+        reduce_dir = self.cache_dir / "xml_responses" / f"reduce_{extraction_type}" / f"reduce_{timestamp}"
+        reduce_dir.mkdir(parents=True, exist_ok=True)
+        return reduce_dir
+    
+    def save_reduce_input(self, reduce_dir: Path, prompt: str, candidates_data: list) -> Path:
+        """
+        Save the complete reduce prompt and candidate data sent to LLM
+        
+        Args:
+            reduce_dir: Directory for this reduce session's logs
+            prompt: The complete prompt sent to the reduce LLM
+            candidates_data: The candidate data being consolidated
+            
+        Returns:
+            Path to the saved input file
+        """
+        # Save the complete prompt
+        input_file = reduce_dir / "input.txt"
+        try:
+            with open(input_file, 'w', encoding='utf-8') as f:
+                f.write(prompt)
+            self.logger.debug(f"Saved reduce input to {input_file}")
+        except Exception as e:
+            self.logger.error(f"Failed to save reduce input: {e}")
+            raise
+        
+        # Save the candidates data separately for easy analysis
+        candidates_file = reduce_dir / "candidates.json"
+        try:
+            with open(candidates_file, 'w', encoding='utf-8') as f:
+                json.dump(candidates_data, f, indent=2, ensure_ascii=False)
+            self.logger.debug(f"Saved reduce candidates to {candidates_file}")
+        except Exception as e:
+            self.logger.error(f"Failed to save reduce candidates: {e}")
+            # Don't raise here as this is secondary data
+        
+        return input_file
+    
+    def save_reduce_response(self, reduce_dir: Path, response: str) -> Path:
+        """
+        Save the raw response from reduce LLM
+        
+        Args:
+            reduce_dir: Directory for this reduce session's logs
+            response: Raw response text from the LLM
+            
+        Returns:
+            Path to the saved response file
+        """
+        response_file = reduce_dir / "response.xml"
+        try:
+            with open(response_file, 'w', encoding='utf-8') as f:
+                f.write(response)
+            self.logger.debug(f"Saved reduce response to {response_file}")
+            return response_file
+        except Exception as e:
+            self.logger.error(f"Failed to save reduce response: {e}")
+            raise
+    
+    def save_reduce_output(self, reduce_dir: Path, output_json: list) -> Path:
+        """
+        Save the parsed JSON output from reduce phase
+        
+        Args:
+            reduce_dir: Directory for this reduce session's logs
+            output_json: Parsed JSON data from the reduce response
+            
+        Returns:
+            Path to the saved output file
+        """
+        output_file = reduce_dir / "output.json"
+        try:
+            with open(output_file, 'w', encoding='utf-8') as f:
+                json.dump(output_json, f, indent=2, ensure_ascii=False)
+            self.logger.debug(f"Saved reduce output to {output_file}")
+            return output_file
+        except Exception as e:
+            self.logger.error(f"Failed to save reduce output: {e}")
+            raise
+    
+    def save_reduce_metadata(self, reduce_dir: Path, metadata: dict) -> Path:
+        """
+        Save reduce phase processing metadata
+        
+        Args:
+            reduce_dir: Directory for this reduce session's logs
+            metadata: Metadata about the reduce processing
+            
+        Returns:
+            Path to the saved metadata file
+        """
+        metadata_file = reduce_dir / "metadata.json"
+        try:
+            with open(metadata_file, 'w', encoding='utf-8') as f:
+                json.dump(metadata, f, indent=2, ensure_ascii=False)
+            self.logger.debug(f"Saved reduce metadata to {metadata_file}")
+            return metadata_file
+        except Exception as e:
+            self.logger.error(f"Failed to save reduce metadata: {e}")
+            raise
+    
     def save_linguistic_style(self, all_documents: List[Dict[str, Any]], 
                              statistical_insights: str, linguistic_style: LinguisticStyle):
         """

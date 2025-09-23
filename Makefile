@@ -20,8 +20,9 @@ DOCKER_FULL_NAME_MULTI := $(DOCKER_USERNAME)/$(DOCKER_IMAGE_NAME_MULTI):$(DOCKER
 RUNPOD_POD_NAME ?= whisper-transcription-$(shell date +%s)
 RUNPOD_POD_NAME_MULTI ?= whisper-multi-$(shell date +%s)
 #RUNPOD_GPU_TYPE ?= NVIDIA RTX A5000
-RUNPOD_GPU_TYPE ?= NVIDIA GeForce RTX 4090
-#RUNPOD_GPU_TYPE ?= NVIDIA RTX A6000
+#RUNPOD_GPU_TYPE ?= NVIDIA RTX 5000 Ada Generation
+#RUNPOD_GPU_TYPE ?= NVIDIA GeForce RTX 4090
+RUNPOD_GPU_TYPE ?= NVIDIA RTX A6000
 RUNPOD_AUTO_SHUTDOWN ?= false
 DEBUG_LOGGING ?= false
 TRANSCRIBE_API_KEY_ENV := mv_mtvG2X4U_dqRgdWMvSEoFtpMjRJkL4zlkwEXYH2I
@@ -612,7 +613,7 @@ docker-deploy-multi: docker-push-multi ## Build and push multi-worker Docker ima
 	@echo "🐳 Your multi-worker image: $(DOCKER_FULL_NAME_MULTI)"
 	@echo "🌐 Docker Hub: https://hub.docker.com/r/$(DOCKER_USERNAME)/$(DOCKER_IMAGE_NAME_MULTI)"
 	@echo ""
-	@echo "⚡ Features: 6 concurrent workers, 6 GPU model instances, 6x throughput, RAM filesystem"
+	@echo "⚡ Features: 4 concurrent workers, 4 GPU model instances, 4x throughput, RAM filesystem"
 
 runpod-check: ## Check RunPod CLI installation
 	@echo "Checking RunPod CLI installation..."
@@ -693,8 +694,8 @@ runpod-create-multi: runpod-check ## Create and deploy multi-worker RunPod insta
 		--containerDiskSize 10 \
 		--ports "8080/http" \
 		--env "TRANSCRIBE_API_KEY=$(TRANSCRIBE_API_KEY_ENV)" \
-		--env "WORKER_COUNT=6" \
-		--env "MODEL_INSTANCES=6" \
+		--env "WORKER_COUNT=4" \
+		--env "MODEL_INSTANCES=4" \
 		--env "MODEL_NAME=turbo" \
 		--env "USE_RAM_FILESYSTEM=true" \
 		--env "RAM_FILESYSTEM_SIZE=40g" 2>&1); \

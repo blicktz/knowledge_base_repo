@@ -1,0 +1,279 @@
+Let's go a little bit fast in to the way that we can see that the catalog is here. No, maybe let's close the catalog over here and let's see the normal settings. So the settings is going to be this one, Advanced Plus, and then let's go here.
+
+Basically, in the Adset level, I like to put in the names, just something like the targeting that I'm going to do. For example, Stacked Lookalikes 10%. And that's it.
+
+Okay, here you're having the option of Website and Shop. We now have the shops in our life with Facebook and Instagram, and you can advertise either sending people just to the website or to the website and shop. Basically, what we need to be careful of here is that in the shop, basically, people are going to convert within Facebook and Facebook is going to charge you for that, some fees.
+
+Or you can send them immediately to the website. Is it converting better with Website and Shop? Yes, you're having some good results.
+
+It's not bad at all. But some people don't like it because of the extra fees that Facebook is actually charging. I do like to use Website and Shop, especially in Ad accounts that they have a good Website and Shop.
+
+For the sake of this, we're just going to do Website. It doesn't change anything except from the fact that people are going to be able to complete the purchase within the Facebook shop. Let's do Website here.
+
+And let's do... We have different options here. We have Maximize for a maximum number of conversions, which is what we almost always use.
+
+We have different options here to optimize for Leak Links, Weak Reads, Impression or Landing Page Views. I would strongly suggest you not to use those. These are not bad settings, but it's not good for eCommerce because Facebook is extremely capable of understanding who is going to convert and who is not going to convert.
+
+So when you are having a campaign which is optimizing for Link Clicks, I can show you actually an example over here. This is coming from an agency that is doing it. This campaign over here, it's optimizing for Link Clicks.
+
+Okay. So this is a campaign, as you can see here, they optimize for number of Link Clicks. So when they optimize for Link Clicks, the results that they get in the maximum period is 0.34 in the ROAS, which is having 19 sales, optimizing for Link Clicks with...
+
+By the way, they have 38 cents on Link Clicks and they don't... The other campaigns that they're optimizing for purchases, they are much more expensive. But this is what you ask from Facebook.
+
+Basically, you are coming here and you are asking, hey, optimize for Link Clicks. And the other campaign is optimizing for purchases. It's not like Facebook is doing something wrong.
+
+It's the way that we are using the settings. So when you're optimizing over here for Link Clicks and you're spending... I haven't done this, by the way.
+
+Okay. It's being done by an agency. We will do separate video about that also.
+
+If you have done 7.8K spent and you have 0.34 and then you lie saying that, okay, but we're getting eight ROAS, for example, in retargeting. If we calculate together the amounts over here from... Because here in retargeting, you are spending 1.2.
+
+You have nine frequency, which is already high, and you have eight ROAS. If we calculate together this and this... Let's filter them by selection.
+
+We can see that the ROAS that you are getting after spending 9K, it's nothing close to the eight ROAS. Because a lot of times people say, okay, I'm going to do a Link Clicks campaign and then I'm going to retarget in order to get it. Okay.
+
+Here there is a Link Clicks campaign, which is spending 7.8K or 8K. But there is also retargeting its eight ROAS. But this doesn't say anything because at the end of the day, the mixed ROAS over here is 1.5K with a 9K spent.
+
+And on retargeting, you just spent 1.2K. So this is a myth that you are going to be able to do Link Clicks campaigns or each campaigns or something and then you're going to take so much traffic that you're going to be able to retarget. And it's going to give you money.
+
+The ultimate way to actually test that in the previous case that I showed you is if we only do retargeting campaigns and see how much ROAS we're going to get. Because the other campaigns over there were actually conversion ads. Optimizing for Link Clicks and Reads and Impressions and all of that, it can be used but only for specific reasons.
+
+So don't use it because Facebook is extremely capable of categorizing the different categories of people and knowing who is going to convert and who is not going to convert. When you're optimizing for Link Clicks, yes, it's going to give you lower Link Clicks, but there's no one there to actually convert in your retargeting ads. Because the people that they are in the Link Clicks section that Facebook is going to send you, almost they never purchase and it's extremely good at doing that.
+
+Now, in smaller countries, a lot of times when you have an Android Pixel, some people they start from Add to Cart and purchase. But the case over there is completely different because if you have enough budget into your ads, maybe Facebook is going to be able to give you people who only do Add to Cart, but there are going to be people inside these audiences because the potential reach in these smaller countries is small, that they also Add to Cart and purchase. Because Add to Cart is also part of purchase for the people that they are actually purchasing.
+
+So in smaller countries, yes, Add to Cart and optimizing for checkout event, maybe it's going to work. But in bigger ad accounts and in other accounts that they work in United States and in these big countries that everybody wants to run ads for, I can tell you that you should use only one event and this one is the purchase event. I cannot stress how important it is to have Conversion API also into your website.
+
+With Shopify it's very easy, but I know that a lot of people, they are just having Pixel. You should hire a developer and do the API integration. It's much better for the results.
+
+Now, that being said here, either you can use website and shop or website. Both of those are very good settings. In my opinion, you should use website and shop to work better.
+
+You have to set up your shops and you have to have everything ready there. Sometimes it's converting better also there. It wasn't like this.
+
+It actually got improved over here. Maximize number of conversions. You can also do value optimization over here and go for ROAS and stuff, but we're going to explain these things on manual bidding.
+
+So here we go for maximum number of optimization. Purchase event, because we explained that all the other events, Facebook is extremely capable of actually getting you, for example, in United States, only people that they just reach to the checkout and they never go to the purchase. Next, continue.
+
+Attribution setting. I like to use 7 days click 1 day view. This 1 day engage view is a new thing.
+
+You can experiment with it. It doesn't matter. But 7 days click 1 day view is very important in my opinion, because after iOS, we have all of this need for more data.
+
+So the more data that you have, the better it is. And the more data we have to optimize, basically. So it's better for us to use a 7 days window of data instead of using the 1 day, because the other option over here, guys, as you can see, is going to be 1 day.
+
+In order for you to run ads with 1 day, you need to have some crazy budgets, because basically every day is going to be a new struggle and you're going to be asking. Imagine this. What is it better to optimize with 7 sales which come from the last 7 days or optimize with 1 sale which came yesterday and go to this data to the next day?
+
+To me, it's better to optimize with more data and Facebook is a game of data. Of course, it says that we're going to be charged by impression. We don't have any other option.
+
+This pattern over here that you toggle on or off, it's called Dynamic Creative Ads. Basically, the way that it's working is that when you're going to turn it on, you can come here and you can have only one ad. Let me select a page over here.
+
+You can come here, for example, and you can select images or videos and you can have 10 images. You can have 10 primary text, 5, sorry, 5 primary text, 5 headlines and 1 URL. And you can even have different options over here for learn more or shop now and so on.
+
+If you don't use this option, what you do is a traditional way of doing ads. I really like Dynamic Creative Ads. They pair also really nice with the crazy method.
+
+And then after you are running your ads, you can come, for example, let me go in one other account and show you. So, okay guys, I found one just now. This is having 22 sales, okay?
+
+So if you go here, then you can come here and you can break down the results and you can go over here by Dynamic Creative. Come on. You can click on Image.
+
+This is a video. Image or video, okay? So, in the breakdown over here...
+
+In the breakdown over here, you can come and you can break it down by Image and you can see which one was the best one. And over here, we can see that the 21 sales are coming from this specific video. You can do the same thing over here by just doing the text and see which one of the...
+
+1, 2, 3, 4 texts in this case work better. We have 13 sales from this one and so on and so on. You can do the same thing also for your description, your call to action and all of that, okay?
+
+So, basically, this is the way that you can run Dynamic Creative Ads and then you can break down the results and see which creatives are the best ones. If you don't do that... I really like them.
+
+I use them. They are working very well. If you don't do that, you can do traditional ads over here and you can come here after you create one, you can duplicate and you can do another one.
+
+The biggest disadvantage with Dynamic Creative Ads is that you cannot use different creatives for the different placements. For example, if we come here on the ads and we just upload one image that my developer is going to hide... You can see here that we're having the option of editing and actually being able, when we edit, to come inside and change to the different size that we want.
+
+So, we can use one by one for the feed, nine by 16 for the storage placement. But when you do that with Dynamic Creative Ads and you have this on, when you come here, basically, you can use just one image and we're using most of the time one by one. That's it.
+
+You can do nothing else about it. You don't have influence to the different placements so that you can do different creatives for the reels and the stories. This is the disadvantage.
+
+On the other hand, on the normal ads, if you do 10 ads for 10 different creatives, it's much more big budget distribution. But when you do it with Dynamic Creative Ads, it's much more efficient. So, you take something, you lose something, there are advances and disadvantages to that.
+
+If you do normal ads over here and you're not going to have this on, I strongly suggest you to go between 3 and 5 ads. Don't do more than that. Now, let's go to the budget and schedule.
+
+Basically, this is the area that you're going to put your budget if you have over here into your campaign the CBO optimization turned off. But here, you can put your budget over here, your date over here, sorry. We always start our ads the next day at 6am.
+
+Okay. What is the reason for that? We discussed about the CBO and how it optimizes, but do we know how it actually gets the initial results?
+
+So, basically, a CBO, initially, it's watching engagement. So, it's going to see which of your ads is engaging better and then it's going to spend more money to it. And then, after it gets a first sale, it's going to get another sale, another sale, because you have an optimization event for purchase.
+
+If you have an optimization event for checkout, it's going to check that getting the checkout and then another checkout, another checkout. This is why I'm saying that we should not blame Facebook if we optimize for other events, except from purchases. Now, if you think of it, in the first 24 and 48 hours, a lot of times I get this message and I was also observing it when I was firstly doing ads, that Facebook was actually giving me better results in the first 24 and 48 hours.
+
+The reason for that is because Facebook knows extremely well who is going to convert and not. So, it knows the low-hanging fruits, as we call them, and it's going to give you those low-hanging fruits in order for you to start getting your first sales. Because it's completely different from starting with zero purchases, but starting with one purchase, then it's going to help you get another one and another and another one.
+
+And this is why CBO optimization is doing better from ABO, because when Facebook is going to decide to give one purchase to one ad set, then it might get another two or three based on the initial purchase. And then the CBO optimization is going to decide to give that budget in order to do that. But in an ABO, even if it gives one sale, you're not there to increase the budget or the budget to increase automatically in order to start spending more and get more sales.
+
+This is why CBO is always winning, almost always winning ABO optimization. I haven't seen an ABO campaign winning any CBO campaign for the past one and a half year. So, that's the reason that we want to start our ads at 6 AM.
+
+A lot of times people say that they want to start their ads at the reset, which is at 12 o'clock, which is also another thing which is very important. You need to understand that the budgets that we spend on Facebook, they are daily and they set every day. So, I don't care if you're spending $1,000 in a month, but I do care that you spend 30 per day.
+
+So, we need to also know what we are asking. This goes also for the budgeting of the CBO. If you're having an average cost per purchase of $150 and you just want to have a budget of $50 per day, then you know that most probably you're not going to have a sale every day.
+
+I hope that it makes sense. Is it right to start it at the reset because this is when it resets? Well, if you have an e-commerce store, which you have if you're watching this video most probably, you know that the worst hours of the day are from 0 at the start of the day until the 5, 6 am, 7, 8.
+
+So, I prefer to start my ads at 6 am and have these hours, which is going to be considered by the way, the best hours of the day for me and optimize like this instead of me starting at 12. So, is it wrong? No, I don't consider it wrong.
+
+It's just a personal preference to start at 6 am instead of starting at the reset of the hour and the new day. The reason though is this, that we need to let Facebook spend during the day because these are considered, this day is considered one of the best days that we're going to have. And then we're going to have some very good days later after optimization.
+
+But initially, this is a push that we don't want to miss. Why am I saying that? Because a lot of times people think and they say, okay, I'm going to start my ads at 8 o'clock in the evening, which means that it's the prime hour.
+
+So, I'm going to start advertising on the prime hour and I'm going to have the best results at that point. Well, if you start advertising at 8 pm, for example, or at 6 pm, which is the hour that the prime hour starts, you're going to have an issue because basically, you're going to squeeze all of the budget that you have for the remaining of the day because the budget is reset at 12 o'clock. So, you're just going to spend for 5, 6, 7 hours all of your budget and Facebook is going to spend it.
+
+It doesn't care. Of course, it's not going to spend all of it, but it's going to be really pushed to do so. So, it's much riskier like this, but with the way of starting at 6 am, at least you leave a fair time to your Facebook ads to spend during your best day, which is the first day that Facebook is going to give you one sale or two just to boost a little bit the event and you are going to have the snowball effect of having more sales.
+
+Of course, the more newer the pixel is, the more difficult it is to continue having sales after the initial low hanging fruit that Facebook is going to actually give you. Set an end date. I don't put an end date because I manage my ads and I watch them daily.
+
+So, I don't have to put an end date unless if it's a promo and I know when it's going to end. But no, there's no conspiracy theory that if you put an end date, Facebook is going to give you less results and stuff. I have tested it extensively.
+
+There's no way. Over here, we have the audience control over here. And as you can see, we have the new Advanced Plus audience that Facebook actually introduced.
+
+Over here, we have the selection of United States and I think we have a video which is coming live for Advanced Plus audience. So, it's coming today. So, I explained extensively this new feature over here.
+
+I don't want to repeat myself. So, I'm going to put a link over here so that you can check everything about this. But I'm going to go to the traditional because most probably for 2024 still, at least for the first quarters, we're going to work still with this one and maybe later we will do transition to the new Advanced Plus audience if it's going to work better.
+
+The old one, it has this. I just want to focus on some technical things over here. First of all, custom audiences.
+
+This is the area that you can add your... you don't have the option for saved audience in the new option over here. Custom audiences.
+
+You have the option here of putting some custom audiences like website visitors and all of that when you want to do a normal campaign which is going to be retargeting and you want... this is the place that you're going to add your custom audiences for website visitors and all of that. Also here, you can add your lookalikes if you want to use your lookalikes or the stacked lookalikes crazy method.
+
+The thing that I want to point out here is the exclusions, okay? I don't like to have exclusions, especially into my cold traffic ads. The reason is very simple.
+
+If you are not selling something that people are not going to buy again, you should not have exclusions. If you're selling something like a course that people are not going to buy again, perfect. You can have exclusions, it's totally fine for people who purchased.
+
+But I really see people again and again excluding past purchasers from their funnels and I think that is really bad. Let me tell you why. Let's say that you're having a t-shirt company and you're selling t-shirts and you're having different collections every two or three weeks.
+
+What is the point of you excluding your basic fan base? A lot of people that they say, I want Facebook to be just a platform that gives me new client. This is total BS.
+
+And the reason is that even if Facebook is going to steal a sale from you from email marketing, okay? Let it steal it. It's totally fine.
+
+Because at the end of the day, me, for example, who I'm the biggest fan of this brand that has t-shirts and stuff, I'm going to buy again and I'm going to be used as data so that Facebook can find more people like me. When you're excluding past customers, you're limiting yourself from scaling. It's not about the results that you see on the Ads Manager and inflating results with Facebook stealing sales from Google or from email marketing or SMS marketing.
+
+And we can make a discussion all day long about if Facebook has had an influence to this decision of someone buying from email because maybe they have seen the videos on Facebook. But I'm not going to take it there, which is complete theory. I'm going to take it to the deep technical side over here.
+
+It is also data. Even if it steals it 100% and Facebook had nothing to do with the decision of someone to buy, if Facebook steals it and this person is coming here, it's still another purchase that Facebook is going to use to say, okay, Konstantinos was a purchase. Let's find another person like him and so on and so on.
+
+This is why I also don't care if cold traffic ads are stealing some sales from the retargeting, which we know that is happening 100%. So that's the reason that I wouldn't exclude any past customer unless if you have a business that it's actually not going to sell something to the same people. But I'm seeing also clothing brands, for example, that they have a new collection every month that they're just excluding past customers and I just don't get it, okay.
+
+Again, if someone is excluding past customers for the other reasons, okay, but if you're watching a video and you're seeing him excluding and you're just blindly following that and you're excluding without thinking what you're doing, this is where the problem is. So there are no good and bad settings, right? So we exclude wherever we have to exclude.
+
+But if we have repeated customers, even if Facebook is going to still say it, even if it's going to inflate our results here, we are going to not exclude people because it's going to help us get more new customers from our fan base, which is our ideal customers. United States or whatever you want to target here, the ages, the gender, these are up to you and your demographics. We have the interests over here.
+
+We have other videos explaining about it. There's nothing technical here. Let's go to placements.
+
+So what do we use here? Do we use Advanced Plus placements or do we use Manual placements? Advanced Plus placements, let's not get ourselves, it's automatic placements.
+
+Here we have the new feature from Meta, which is this Advanced Plus, which means that Meta is doing something with the AI technology. Basically, it says that it's going to distribute the budget between the placements with the help of an AI. Okay?
+
+So in that case, I can tell you that automatic placements are working better, but we need to discuss something. I have done videos and the people that are in the channel for a long period, they know my opinion about automatic placements. And no, I'm not going to call them Advanced Plus placements.
+
+It's still automatic placements. And I'm not going to call CBO Advanced Plus budget. It's CBO.
+
+So automatic placements means that Facebook is going to decide the different placements that it's going to use. Just so that we can be clear, most of the times the placements that you're going to see working, if you break down the results, like the way that I showed you about the dynamic ads, you can break down the results and see in which platform you're having sales, in which placements and so on. If you do that, you're going to see that most of the placements that they're working is Facebook feed, Instagram feed, Instagram stories, Facebook stories, Instagram reels, and that's it.
+
+And the thing here is that you might see charging 10 cents or $1 or $2 in this placement, this placement, this placement, but Facebook says, okay, we spent some money there. We didn't get any results. So then we focused on the ones that they were working.
+
+And I get messages that they tell to me and I also thought of it. Why should I give them one cent or 10 cents or $2, $3 for these different placements? Let me test to run it with money replacements and just put all of this.
+
+And the results are worse. And here comes the conspiracy theory podcast, which I have that for Facebook is very important to have these placements because if they are taking 10 cents or 20 cents from all the extra placements, for all the ad sets that are going to be created, in all of the campaigns that are going to be created, in all of the ad accounts, and then in all of the businesses, then you can understand that this is a very big portion of their income. So imagine in a world that we were not going to use automatic placements, but we were going to use only manual placements and they didn't have this income.
+
+This is a very big strike for them and much less income for them. So I do believe that they favor automatic placements. And as long as me, you and everyone who is watching this video were saying, okay, Facebook, you can steal $5 per ad set or $10 per ad set as long as I'm getting the results that I want.
+
+As long as we know it, I'm fine with it. Okay. But I'm not fine when people are saying that automatic placements are better because Facebook is doing the distribution of the budget and knows where to spend after that.
+
+Guys, if that was the case, I was going to be able to see at least in my 10 years career or 12 or how much it is, I don't remember. Because after some point you say I have experience of 10 years plus, so you forget how many years it is. So I would love to see one campaign or one ad set having sales, a lot of sales, not one or two in the audience network or somewhere else, a lot of sales in another placement or in article or in stream.
+
+I have never seen it. I have seen one sale here, one sale there and stuff, but I have never seen consistent sales like what I see on feed and stories and reels. So if that was the case and Facebook was actually doing that work, trying to find sales there, these were also going to be placements that they were going to be converting and we were going to be able to see them even once in a while.
+
+Okay. But we never do. So I do believe that it's a conspiracy theory and you know, some people are afraid to blame Facebook, I guess, and I don't blame them for that.
+
+It is what it is. But I do believe that this is the reason. I think that Facebook is favoring it and we just have to accept it, you know.
+
+Let's go now to the ads and let's close this super long video. Basically on the ad name I would just put something like this is the name is July 2024 for example video ads or explain one. We have the Facebook page and the Instagram account where we're going to use them.
+
+Particip ads is ads that you can run with other pages and influencers and all of that. You can toggle it on and then you can go and you can put the creators page and you can do it like this. Have I tested it?
+
+Yes, nothing crazy. To me it's kind of, the results were kind of the same. Like we ran them, we ran the same creative from the partnership and on our page and it was better.
+
+And in my opinion, to be honest with you, controlling the creative and have it into your page is better instead of just what is it going to happen if you have very good results. You're going, they're going to ask you for more money to continue running ads. So it's problematic.
+
+So it's better to own the asset, to own the assets instead of that. Then we have the create ad. We can either use here, as we said, we have the dynamic ads, but we can have here these two options, use existing posts and create ad.
+
+In create ad you can use singly match casual or collection. I don't like to use that, to be honest with you, and I don't like to use also this other option that we have seen. Let me turn it on.
+
+I don't like to use also this one. Okay, so these two options is something that I don't like to use. For some reason they don't work very well for me and I just try to avoid them.
+
+Especially this one guys, okay. Especially this option over here. I don't like to use it at all.
+
+But this option here, a lot of times I leave it on, I haven't seen any significant differences over here. Okay. A lot of times people are asking me about instant experience ads.
+
+I know about them, but I don't like them. They look really nice. Okay.
+
+They look like you have a website within your ads, but I don't use them at all. I don't like them. Here we have single image and of course a casual thing.
+
+You know how to do them. You can play with them. You can understand them.
+
+The most important thing that I want to mention here about the ads. First of all, is that over here on the URL parameters you can put your UTM tags and you can track things on Google Analytics. Here you have your website events.
+
+For languages, I must say that it is working really well. It is a Google Translate. It is basic, but I have seen it working very well.
+
+Especially in Europe that we have many countries. We're super fragmented with many languages. I have seen it working really well with languages and the translation.
+
+And this is one area that I think that it can be used. Here we have the website URL that we're going to use. And about call to action, learn more and shop now are the ones that are working better for me.
+
+And I think that you can use them. Here you have the option also of adding five primer text, five headlines and five descriptions. And now let's go to the last two things that I want to say about the ads.
+
+Because the ad creative is something that I don't go into depth. Because I truly believe that every owner who has a brand for two, three, four, five years, they know how to sell their products. And they have to be the ones that they are creating their content.
+
+Whoever is not creating their content and they just leave it to an agency to create it and stuff. I just believe that all the owners, they need to be deeply involved with their content that they are producing. And the ads because this is their baby and they know how to sell it better instead of how an agency is going to sell it in theory.
+
+So in my opinion, that's the point. And this is how I think that we should approach the creatives. And of course, the creatives is something very important that the more the time passes by, the more we're going to focus on creatives on these years.
+
+Two notes over here. This stupid advantage plus creative over here. If we edit it, you can see it has music on, while it does text improvements and stuff.
+
+Guys, this is causing so many troubles and headaches to me. Sometimes the client doesn't like the music. Sometimes it's going to take the headline, for example, and it's going to put it on the top of the image and do that.
+
+I do understand that these are AI optimizations. By using them, I haven't seen any bad results, but it's causing many issues in how the ads are looking. Okay.
+
+And I just remove them, just show that I'm going to use the creatives that the client gave to me. Maybe we're going to use them later. But for example, sometimes they put a stupid music.
+
+By the way, you can preview the music that they're going to put, but this is not your decision to make and the client cannot be inside the ads manager in order to decide if they like this music or not. So a lot of times they create all of this confusion on how we run the ads. Last thing.
+
+Here, you can edit each of the placements over here and you can do different changes to the... You can crop and you can change the size of the image. For the feed, we're using 1x1 and for the feed and for the stories and reels, we're using 9x16.
+
+I like to use 1080x1080 and for the placement over here, 1080x1920 for the stories and the feed. Last note and very, very, very important. When you're working on ads, a lot of times you're duplicating and you're going to duplicate into another one, another one.
+
+I need to clarify that what you see here is not what Facebook is going to use. What Facebook is going to respect first is what you put here, the primary text and the headline. So if you're running any ads and you're seeing that, okay, but here I'm having this primary text, okay, and then you're coming here and you're seeing that, but in the headlines you have a different one, this is what Facebook is going to actually use.
+
+So be careful of what you have inside the edits over here for the different placements because this is what Facebook is going to use. And of course, it's going to respect the primary text, the headline and the destination. The same way that it's going to respect the different size that you're going to put.
+
+So if you have something here, it has to be the same over here inside the edit group because Facebook is going to use whatever is inside the edit group. I'm saying that because a lot of times people are running ads and they're just seeing different copy and they don't know where it's coming from, okay. It took me some time to find it out also.
+
+And the last thing is the product tag guys, okay, because whoever is using actually Shopify, all the products are being linked with Facebook. So you need to be careful because over there when you are doing the ads, Facebook is auto-tagging products. With the help of AI, it's finding out which products are those and it's auto-tagging.
+
+So you might be running ads without using the option over here, which is website and shop, just website. And you might see just above your headline a text over there, which is going to say two products and the side of the shop so that people can click and go to the shop. It makes total sense because Facebook wants to actually push more people to the shop because they want to have more control of data and they also want to get commission for their sales.
+
+And they have spent a lot of money actually developing also the shops and work like this. So be careful because a lot of times when you are uploading something, you have to come here and check if it auto-tagged products. And a lot of times it's not only doing that, it's also tagging wrong products.
+
+So you have to be careful with auto-tagging and check all of the placements, the stories and the feed to check about auto-tags. And when you do so, you can remove them or leave them. Most of the times I remove them because a lot of times they are actually wrong.
+
+But this is also a way for you, if you don't have auto-tags, to go and tag a product so that you can also be able to send people to your shop by tagged products. I guess, guys, that's all I had about these settings. I wanted to cover things which are more technical and of course we're going to make more videos on 2024 series about how we're going to address to the ads.
+
+This video is already too long but we had to cover how we do ads. Let's go and do one fast thing here with the catalog so that we can see the differences. On the catalogs again, we have the option over here of doing purchase over here.
+
+As you can see, it doesn't give us the option of website and shop. Again, seven days, one day click and we have also here some promoted products and stuff which this is basically the product set. The product sets are the different sets that we can create.
+
+I like to create product sets which are based on... you can click here for example and you can name this in stock for instance and you can come here and instead of item group id for example, what I like to do in most of my catalogs, you can categorize them also by categories and stuff. I like to do availability, availability is in stock and then when I'm having that I'm naming it like this in stock so I can run ads only with catalog items that they have in stock, they have stock within the store and of course going to expect that and show only these items that they are actually listed as having stock within Shopify.
+
+Again, the same rules over here. Here we have a different prompt over here of having the advanced plus audience that we can use but this is how we used to run it either with having the traditional one over here and the only difference here is the exclusions that you can exclude people. Most of the times the reason that they are doing this is because we were doing retargeting a lot with catalog especially on the last 30 days or you can do it retarget ads to people as you can see and you can say view or add it to cart but not purchase in the last 30 days for example you can put it here.
+
+This was the initial push for all the advertisers that now we're doing a bottom of funnel of people who view content and add it to cart in the last 30 days but exclude people who purchase in the last 30 days. This is the only exclusion that I do into my retargeting. Sometimes in some clothing brands that they have a lot of collections coming all the time I don't even do that but this was the initial for all of those that you're thinking why view content and add to cart?
+
+Why not add to cart and check out for example okay? This is where it's coming from okay? This was the initial thing and we were doing it for 30 days and you can even add more exclusions here and stuff automatic placements is the same and then the catalog and then the catalog is going to look having multiple products over here and you can put in the headline the product name and I like to add also a description saying free shipping and stuff if I have the option but it's going to be basically a catalog.
+
+Here the same rules about the AI creative and the different things that they can mess up your creatives and all of that. I can talk for another two three hours but I will try to make it on other videos explaining it more but I wanted to make one video which summarizes all of the different settings and why we run ads at six o'clock why all of that just taking the journey through a campaign that we're going to create. I hope that you're going to like it and if you have any questions let me know in the comments.
+
+Don't forget that if you want to learn more you can check my other videos, my book or my website or my course and until we meet again guys be creative and be consistent.

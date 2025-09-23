@@ -487,3 +487,79 @@ def robust_json_loads(text: str, logger: Optional[logging.Logger] = None) -> Any
     if logger:
         logger.error("All JSON extraction methods failed, attempting direct parse")
     return json.loads(text)
+
+
+def clean_reduce_phase_json_response(text: str) -> str:
+    """
+    Clean LLM response text specifically for reduce phase JSON extraction.
+    
+    Designed to handle reduce phase responses that may have content before/after
+    the markdown code blocks, unlike the existing clean_llm_json_response which
+    expects the code block to span the entire string.
+    
+    Args:
+        text: Raw LLM response text from reduce phase
+        
+    Returns:
+        Cleaned JSON string ready for json.loads()
+        
+    Raises:
+        ValueError: If no valid JSON content can be extracted
+    """
+    if not text or not text.strip():
+        raise ValueError("Empty or whitespace-only text provided")
+    
+    text = text.strip()
+    
+    # Handle XML wrapping first: <json_output>content</json_output>
+    xml_match = re.search(r'<json_output>\s*(.*?)\s*</json_output>', text, re.DOTALL | re.IGNORECASE)
+    if xml_match:
+        text = xml_match.group(1).strip()
+    
+    # Use specialized reduce phase markdown stripping
+    cleaned = _strip_reduce_markdown_blocks(text)
+    return cleaned if cleaned != text else text
+
+
+def _strip_reduce_markdown_blocks(text: str) -> str:
+    """
+    Strip markdown code blocks from reduce phase responses.
+    
+    Unlike the existing _strip_markdown_blocks, this function looks for markdown
+    blocks anywhere in the text, not just spanning the entire string. This handles
+    reduce phase responses that may have additional content before/after the JSON.
+    
+    Handles:
+    - ```json\n{content}\n``` (anywhere in text)
+    - ```\n{content}\n``` (anywhere in text)
+    - ````json\n{content}\n```` (anywhere in text)
+    """
+    if not text:
+        return text
+    
+    # Patterns that find markdown blocks anywhere in the text (no ^ or $ anchors)
+    # Prioritize json-tagged blocks first
+    # Use non-greedy matching and allow for content after closing backticks
+    patterns = [
+        r'```json\s*\n?(.*?)\n?```',        # ```json ... ``` (no trailing space requirement)
+        r'````json\s*\n?(.*?)\n?````',      # ````json ... ````
+        r'```\s*\n?(.*?)\n?```',            # ``` ... ``` (generic, no trailing space requirement)
+        r'````\s*\n?(.*?)\n?````',          # ```` ... ```` (generic)
+    ]
+    
+    for i, pattern in enumerate(patterns):
+        match = re.search(pattern, text, re.DOTALL | re.IGNORECASE)
+        if match:
+            content = match.group(1).strip()
+            
+            # Validate this looks like JSON (starts with { or [)
+            if content and content[0] in '{[':
+                # Additional validation - try to parse it to ensure it's valid JSON structure
+                try:
+                    json.loads(content)
+                    return content
+                except json.JSONDecodeError:
+                    # If this match fails JSON parsing, try the next pattern
+                    continue
+    
+    return text
