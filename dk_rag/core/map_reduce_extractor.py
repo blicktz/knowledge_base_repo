@@ -678,12 +678,6 @@ The two candidate beliefs express the same core idea of valuing action over plan
         batches = self._batch_documents(documents)
         self.processing_stats["total_batches"] = len(batches)
         
-        # Check for existing consolidated results first
-        consolidated_results = self.cache_manager.load_consolidated_result(documents, extraction_type)
-        if consolidated_results is not None:
-            self.logger.info(f"Found cached consolidated {extraction_type} results")
-            return consolidated_results
-        
         # Scan for cached batches to show resume status
         cached_batch_count = 0
         for i, batch in enumerate(batches):
@@ -970,6 +964,12 @@ The two candidate beliefs express the same core idea of valuing action over plan
         Returns:
             List of consolidated mental models
         """
+        # Check consolidated cache first - if found, return directly
+        consolidated_results = self.cache_manager.load_consolidated_result(documents, "mental_models")
+        if consolidated_results is not None:
+            self.logger.info("Found cached consolidated mental_models results")
+            return consolidated_results
+        
         # Map phase: extract candidates from batches
         candidates = await self._map_phase(documents, "mental_models", statistical_insights)
         
@@ -990,6 +990,12 @@ The two candidate beliefs express the same core idea of valuing action over plan
         Returns:
             List of consolidated core beliefs
         """
+        # Check consolidated cache first - if found, return directly
+        consolidated_results = self.cache_manager.load_consolidated_result(documents, "core_beliefs")
+        if consolidated_results is not None:
+            self.logger.info("Found cached consolidated core_beliefs results")
+            return consolidated_results
+        
         # Map phase: extract candidates from batches
         candidates = await self._map_phase(documents, "core_beliefs", statistical_insights)
         

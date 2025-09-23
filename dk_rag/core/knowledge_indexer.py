@@ -26,14 +26,14 @@ class KnowledgeIndexer:
     with multi-tenant support for isolated persona management
     """
     
-    def __init__(self, settings: Settings, persona_id: Optional[str] = None):
-        """Initialize the knowledge indexer with optional persona context"""
+    def __init__(self, settings: Settings, persona_manager: PersonaManager, persona_id: Optional[str] = None):
+        """Initialize the knowledge indexer with shared persona manager and optional persona context"""
         self.settings = settings
         self.logger = get_logger(__name__)
         self.persona_id = persona_id
         
-        # Initialize persona manager
-        self.persona_manager = PersonaManager(settings)
+        # Use provided persona manager instance
+        self.persona_manager = persona_manager
         
         # Initialize components - persona-specific if persona_id provided
         if persona_id:

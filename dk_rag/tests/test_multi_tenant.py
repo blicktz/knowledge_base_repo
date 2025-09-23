@@ -111,8 +111,8 @@ def test_persona_isolation():
         
         # Test 6: Test KnowledgeIndexer with persona context
         logger.info("\n[Test 6] Testing KnowledgeIndexer with persona context...")
-        indexer1 = KnowledgeIndexer(settings, persona1_id)
-        indexer2 = KnowledgeIndexer(settings, persona2_id)
+        indexer1 = KnowledgeIndexer(settings, persona_manager, persona1_id)
+        indexer2 = KnowledgeIndexer(settings, persona_manager, persona2_id)
         
         # Search through indexer (should only find persona-specific content)
         search_results1 = indexer1.search_knowledge("test content", persona_id=persona1_id)

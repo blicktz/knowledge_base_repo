@@ -365,7 +365,7 @@ class PersonaManager:
         
         # Save the persona constitution
         file_path = artifacts_dir / filename
-        persona_dict = persona.dict()
+        persona_dict = persona.model_dump(mode='json')
         self._save_json(persona_dict, file_path, compress=compress)
         
         # Create artifact entry
@@ -455,7 +455,7 @@ class PersonaManager:
         output_path.parent.mkdir(parents=True, exist_ok=True)
         
         # Save as uncompressed JSON for better readability
-        self._save_json(persona.dict(), output_path, compress=False)
+        self._save_json(persona.model_dump(mode='json'), output_path, compress=False)
         
         self.logger.info(f"Exported persona '{persona_name}' to {output_path}")
         return output_path

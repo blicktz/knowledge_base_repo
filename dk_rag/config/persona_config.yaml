@@ -207,8 +207,8 @@ map_reduce_extraction:
   # Consolidation strategies
   mental_models:
     consolidation_strategy: "frequency_weighted"  # frequency_weighted, confidence_based, hybrid
-    min_frequency: 2  # Minimum appearances across batches to include
-    top_k: 50  # Keep top K models after consolidation
+    min_frequency: 1  # Minimum appearances across batches to include
+    top_k: 100  # Keep top K models after consolidation
   
   core_beliefs:
     consolidation_strategy: "frequency_weighted"

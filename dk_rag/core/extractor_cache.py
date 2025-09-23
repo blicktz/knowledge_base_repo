@@ -53,14 +53,9 @@ class ExtractorCacheManager:
     
     def _get_cache_directory(self) -> Path:
         """Get the cache directory path for this persona"""
-        if hasattr(self.settings, 'get_persona_base_path'):
-            # Multi-tenant mode
-            persona_base = Path(self.settings.get_persona_base_path(self.persona_id))
-            return persona_base / "map_reduce_cache"
-        else:
-            # Legacy mode
-            base_cache = Path(self.settings.get_cache_path())
-            return base_cache / "map_reduce" / self.persona_id
+        # Multi-tenant mode - use configurable storage path
+        persona_base = Path(self.settings.get_persona_base_path(self.persona_id))
+        return persona_base / "map_reduce_cache"
     
     def _calculate_batch_hash(self, documents: List[Dict[str, Any]], 
                              extraction_type: str) -> str:

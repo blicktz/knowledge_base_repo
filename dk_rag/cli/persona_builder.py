@@ -65,7 +65,7 @@ class PersonaBuilderCLI:
         self.logger.info(f"Using persona: {persona_id}")
         
         # Initialize persona-specific knowledge indexer
-        self.knowledge_indexer = KnowledgeIndexer(self.settings, persona_id)
+        self.knowledge_indexer = KnowledgeIndexer(self.settings, self.persona_manager, persona_id)
         
         results = self.knowledge_indexer.build_knowledge_base(
             documents_dir=args.documents_dir,
@@ -98,7 +98,7 @@ class PersonaBuilderCLI:
             self.logger.info(f"Using persona: {persona_id}")
             
             # Initialize persona-specific knowledge indexer
-            self.knowledge_indexer = KnowledgeIndexer(self.settings, persona_id)
+            self.knowledge_indexer = KnowledgeIndexer(self.settings, self.persona_manager, persona_id)
             
             artifact_path = self.knowledge_indexer.extract_and_save_persona(
                 documents_dir=args.documents_dir,
@@ -153,7 +153,7 @@ class PersonaBuilderCLI:
             self.logger.info(f"Using persona: {persona_id}")
             
             # Initialize persona-specific knowledge indexer
-            self.knowledge_indexer = KnowledgeIndexer(self.settings, persona_id)
+            self.knowledge_indexer = KnowledgeIndexer(self.settings, self.persona_manager, persona_id)
             
             # Perform statistical analysis only
             self.knowledge_indexer.extract_statistical_analysis_only(
@@ -183,7 +183,7 @@ class PersonaBuilderCLI:
             self.logger.info(f"Using persona: {persona_id}")
             
             # Initialize persona-specific knowledge indexer
-            self.knowledge_indexer = KnowledgeIndexer(self.settings, persona_id)
+            self.knowledge_indexer = KnowledgeIndexer(self.settings, self.persona_manager, persona_id)
             
             # Perform LLM processing only
             artifact_path = self.knowledge_indexer.extract_llm_analysis_only(
@@ -264,7 +264,7 @@ class PersonaBuilderCLI:
         self.logger.info(f"Analyzing knowledge base for persona '{persona_id}'...")
         
         # Initialize persona-specific knowledge indexer
-        self.knowledge_indexer = KnowledgeIndexer(self.settings, persona_id)
+        self.knowledge_indexer = KnowledgeIndexer(self.settings, self.persona_manager, persona_id)
         
         analysis = self.knowledge_indexer.analyze_knowledge_base(persona_id=persona_id)
         
@@ -321,7 +321,7 @@ class PersonaBuilderCLI:
             sys.exit(1)
         
         # Initialize persona-specific knowledge indexer
-        self.knowledge_indexer = KnowledgeIndexer(self.settings, persona_id)
+        self.knowledge_indexer = KnowledgeIndexer(self.settings, self.persona_manager, persona_id)
         
         results = self.knowledge_indexer.search_knowledge(
             query=args.query,
@@ -386,7 +386,7 @@ class PersonaBuilderCLI:
             personas = self.persona_manager.list_personas()
             if personas:
                 first_persona = personas[0]['id']
-                test_knowledge_indexer = KnowledgeIndexer(self.settings, first_persona)
+                test_knowledge_indexer = KnowledgeIndexer(self.settings, self.persona_manager, first_persona)
                 stats = test_knowledge_indexer.vector_store.get_collection_stats()
                 print(f"✓ Vector store (persona: {first_persona}): {stats.get('total_chunks', 0)} chunks")
             else:
