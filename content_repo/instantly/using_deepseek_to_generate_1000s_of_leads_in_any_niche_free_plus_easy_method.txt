@@ -1,0 +1,65 @@
+AI has completely revolutionized the way that we do lead gen, and in this video, I'm going to show you exactly how you can use DeepSeek to do all of your lead gen for you in any niche completely for free. And in the case you've been living under a rock, DeepSeek just released one of their strongest AI models out there, DeepSeek R1. This beats the current top AI models available, and while a model like ChatGPT01 charges $200 a month, DeepSeek is completely free.
+
+So first, I'll show you exactly how to build a super clean lead list using DeepSeek, and then I'm going to show you exactly how you can reach out to those leads on a consistent basis without needing to even be at a computer. So the first thing that we're going to do is we're going to need to find our leads. We're going to need to get leads using DeepSeek.
+
+We're going to use Google's advanced search. So all we really need to do is copy a query like this and really just replace this in quotations with your ideal niche. So let me just show you a couple examples here.
+
+If I go to Google, if I just type in site, Instagram, my niche at Gmail or at Yahoo or Outlook, what's going to populate are hundreds and hundreds of people's Instagrams with their Gmails in their bio and us being able to scrape that data. So I can do this for plumbers, tons of plumbers. And what's going to happen, what we'll see is we'll see their emails right here.
+
+I could do it for online coaches. I can find their emails right here. In this case, what I'm going to do is I'm actually going to change this to fitness coaches.
+
+I'm just going to go ahead and copy this prompt over. In addition, what we can do is we can also change this to LinkedIn.com and we can find all the LinkedIn data in the LinkedIn people who are branded as let's call it a fitness coach. I can also do the same thing for Facebook.com and I can find the same thing for fitness coaches on their Facebook.
+
+So this is really allowing us to pull the data from this. But what the problem with this is, is it's a hassle to basically just copy and paste, have to visit the website, add them to a CSV file, and it can just take a lot of time and is not going to be conducive for you guys to do this. This is where DeepSeek comes into play.
+
+So what I'm going to do is I'm just go to Instagram. I'm going to leave this as fitness coaches. And what I'm going to begin to do is I'm going to start copying and pasting into a note section here.
+
+So once we have all of the search results, what we need to do is move on to step number two, which will be organizing the data with DeepSeek. What I'm first going to do is I'm going to go ahead and copy this prompt, which is going to basically tell DeepSeek to format the data that I've copied into my notes with these columns. First name, last name, company name, etc.
+
+I'm going to go to DeepSeek. I'm going to paste that. Then I'm going to open up my notes section here.
+
+I'm going to select everything on this page. And I'm going to go ahead and paste. I'm going to hit enter.
+
+What's going to happen is it's going to start organizing all of my leads that I've gotten essentially from the notes section into a easy to copy and paste table. So after we organize the data, the third thing that we're going to want to do is we're going to want to export the data into a Google sheet. So I'm going to go to my Google sheets, create a new blank spreadsheet.
+
+I'm going to call this lead lists. I want the columns to match. So first name, last name, company name, website, URL, email, and phone number.
+
+And then all I have to do is copy over this data that it already formatted, go back to my leads list and just paste it. And now what it'll do is it'll match up the emails from what I pulled from the advanced Google search phone numbers. If we get it company name, first name, last name.
+
+So now that we have a list of people that we can reach out to, how do we actually reach out to them in an automated manner so that we're not having to basically copy and paste the same message over and over again. And this is where we can set up the automated outreach with Zapier. What we're going to do is we're going to set up an automation in Zapier.
+
+That's going to automatically send an email to them. We want to go to Zapier and we want to create a new zap. And the trigger of the news app is going to be from our Google sheet.
+
+So we're going to go to Google sheets. We're going to trigger event is going to be a new or updated spreadsheet row, basically saying whenever there's a new row, that's, what's going to trigger the automation. We're going to select our account.
+
+We're going to click on continue. And we're going to find the spreadsheet here. So lead lists, worksheets going to be sheet one, which is going to be sheet one right there.
+
+And then we're going to go to trigger column can just be really any one of them. And then we're going to go ahead and click on continue. And we're going to click on test.
+
+And what we'll see in the test is data from our spreadsheet. So what we're going to do is we're going to continue with selected record. So the next thing that we need to do after the trigger is we need to add a delay between emails because what we don't want to do is we don't have to send like 100 emails at once or 50 emails at once because that could basically ruin the reputation sending of your domain or your email and end up in spam.
+
+So what we're going to do is we're going to create a delay of 60 minutes. That way every hour, basically, it's going to send an email based off of the updated spreadsheet row. So we're going to click on add a step.
+
+We're going to click on delay. We're going to click on action event delay for we're going to click on continue. We're going to do delayed for let's do 60 delayed for unit minutes, add that again, and we're going to click on continue.
+
+And we can skip the test here because it's not really relevant. And then continue. Basically, now what's happening is every time a spreadsheet row is added to Google Sheets, and it's going to delay one hour, and then it's going to do another action.
+
+So the next action that we're going to do is we're going to automate the email outreach with Gmail and basically send emails on repeat. So instead of needing to basically every hour, send an email, put a calendar reminder, put an alarm on your phone, we can set this up automatically, which is going to save you a ton of time and a ton of hassle. So how do we do this, we're going to go back to Zapier, we're going to click on action, and we're going to find let's just call it Gmail action event, send an email account, you can connect your account here.
+
+So now inside of here, what we're able to do because we have the email is we can map the field from the spreadsheet row and send an email to the email that we have on the Google Sheet that we have. And what we can do is we do from your email from name, you could just do your name if you wanted to or your business name, whatever would be most relevant for you reply to you can just leave that blank because they'll automatically reply to you. Now what we can do is we can create custom copy based off of the fields that we've pulled from deep seek.
+
+So from a copy perspective, I mean, a couple of things one, we can pre write the copy or two, we can even use deep seek to write copy for us. So if I go to new chat, and we could say something like I help fitness coaches add two new clients per week using our fitness funnel on Instagram, write me a three sentence polarizing cold email, make it short, have the call to action be can I send over a personalized showing how it works, give me say four options, we could use one of these just to kind of get our creative juices flowing. In any event, I basically wrote my own.
+
+So we could even say write me four subject line examples to make them two words and use the prospects first name. I'll use this as an example here. So we're going to start with the subject line, let's go back to Zapier, and we're going to paste this.
+
+And what I can do because we map the column is I can pull the first name from the spreadsheet. So basically say Travis comma two clients weekly, and now we can write the body of the email, I'll just use the one that I wrote real quick, click on first name, go back to Zapier paste this. And then in first name, we can add in first name, then your name or your signature, whatever you want to do.
+
+Now continue, I'm going to skip test because I'm not going to send an email here. But if you wanted to test it perfect, you could just use your data if you wanted to do that. But I'm gonna go ahead and skip test.
+
+Now all we need to do is rename this to fitness funnel campaign, perhaps plus auto sending via Gmail. And then all I need to do is click on publish. So now anytime you add new leads to your leads list here, it'll automatically detect it and it will automatically send an email to them every single hour.
+
+So the final step is basically running the automation 24 seven, which is once this is complete. So once this is complete, your real task is just to add more leads to the lead list consistently. And when you add more leads to the leads list, what will happen is it will automatically send emails to the person that you added to the leads list, which is brilliant.
+
+And you can basically have 24 seven outreach going on for your business. So this is one of the easiest ways that you can generate leads book calls and grow your business on autopilot for free. But if you want to know what it looks like in practice to actually start a service based business from scratch and actually sell your services in less than 10 hours, then click on the video on the screen to find out exactly what that looks like and how I was able to do that.
+
+So you can basically just copy and paste what I've done to go sell your service, no matter what it is, whether it's video editing, social media, lead gen, SEO, whatever it could be. Thanks so much for watching and we'll see you on the next one.

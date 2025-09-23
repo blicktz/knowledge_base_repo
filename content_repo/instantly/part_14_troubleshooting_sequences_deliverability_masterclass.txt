@@ -1,0 +1,15 @@
+So now let's cover some additional ways you can troubleshoot your email sequences and make them better. So as I mentioned previously, having any kinds of attachments like links, images, and yeah, any kind of attachments in your email sequences lower their deliverability substantially. So especially for the first contact, so let's say you're sending an email to someone you've never sent an email before, you really want to avoid all kinds of attachments in there.
+
+So send them out in plain text, try to get a response from them. Once you get the response, it's much safer to send out links and other attachments over. So this also includes like having custom fonts, colors, custom formatting stuff.
+
+So one way you can actually make sure that none of this exists in your emails is by cleaning any HTML code. And how you can do that is pretty simple and instantly. So I'll zoom in again so you can see, but there's a button, a paintbrush button that you can press.
+
+You just highlight your email copy, click that. And that way you will remove all HTML from your email copy. Because sometimes if you're copying your text over from some other place, it can have like hidden HTML code in it that doesn't even affect the visual of your email.
+
+So you can't even like see it in there, but it's actually there. So even as a safety measure, you can always just press that button because yeah, we've seen a major difference with this. So a person was sending like test emails to themselves, they were all going to spam.
+
+And then he just did this clean HTML thing and they started the inboxing. So that was like the only difference that was made. And it already increased deliverability from like going to spam every time to going to the inbox every single time.
+
+So another thing you can test is the scheduled time window of your campaigns. Again, make sure that those are going out in the most optimal times for your target audience. Otherwise, they will be buried by other emails they're receiving.
+
+And yeah, the lower they get in the inbox, the less likely they're being responded to. So yeah, now we'll cover some further testing and optimizing methods in the next video.

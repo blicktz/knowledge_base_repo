@@ -1,0 +1,171 @@
+instantly just dropped their newest API version and it's already completely revolutionized how you can do cold email marketing. You can finally create workflows you never could before that are absolutely game-changing which enables you to save hours and hours of time that you'd previously waste on manual tasks. An absolute ton of possibilities just open up for you to grow your business no matter if you run an outbound sales agency like myself, any kind of service-based business, a SaaS company, or something else where you really need to use the best cold email strategies.
+
+So in this video I'm going to show you how you can get started all of the new features within API v2 and what they're capable of and then five use cases for these new features and automation platforms like N8n. The benefit here is that this applies to everyone including you and no matter where you're at in your business you can learn how to apply these new features and scale your business even more efficiently with cold email. So first I want to go over why even consider using the API versus the front end features of instantly.
+
+Anything you do on the front end usually involves some sort of manual entry such as setting up an email campaign, navigating through the unibox, analyzing the analytics, but what if you can automate and customize some of those manual features and products that instantly has already developed for you? This is where the API comes in. Now don't get me wrong API documents can sure make you go cross-eyed and even put you to sleep fast or make you want to rip all your hair out from all those API error calls, but take it from me the API is definitely where you want to be an absolute productivity wizard or Jedi or Avenger, whatever your superpower is.
+
+This is definitely for you. With that said, let's go ahead and dive in. So firstly what you're going to want to do is just go ahead and get acquainted with the API documents and you'll want to read the introduction.
+
+Usually it goes over a lot of the very basics and things like that. I usually don't spend too much time on this because I want to get right to the endpoint to make sure I know what I'm looking at and to make sure that it's even capable of doing that. Another thing that I usually like to do, feed it into good old chat GPT or Claude or one of your favorite LLMs, Brock, there's a number of them nowadays.
+
+But with that said, you can feed it in there and then say what your use case is. See if there's an example of what you can do and what you can accomplish. And then even so much as say what platform or automation workflow sequencer or anything like that that you're going to put into there.
+
+Like any end, make, Zapier, that kind of thing. The next thing you want to do is just do getting started, the authorization. You're going to want to firstly go to your instantly workspace and then you're just going to go to settings in the lower left corner and then you're going to go to integrations and then click API keys.
+
+Then you'll just click an API key, name it, and then you'll want to set the proper scopes. Most people just do all all, but consider your situation, consider your use case. A lot of times you want to narrow down the scopes that you're going to want to make sure are locked down.
+
+For security reasons, there's a number of different things that can get away from and just to make sure that you're secure there. So definitely take that into account when you're creating those API keys. Lastly, it's only going to display once.
+
+So make sure you note take it or put it into some sort of secure document. With that said, let's go over some of the features that API v2 has to cover for you. You'll notice these grouped endpoints here.
+
+We've talked about analytics. We get warmup analytics. We have a number of endpoints and then it'll do an example.
+
+A lot of times, depending on what your flavor is of coding, a lot of times you're going to be doing curl commands. This is in your general no code or low code type of scenarios where you're doing HTTP API request. You'll notice here there are common points to do, whether it's post, get, patch, delete, that sort of thing.
+
+A lot of times, in most cases, you're going to do a post or a get request. Either you're sending information or you're going to get information back. A lot of times if it's a delete or a patch, you're doing some sort of endpoint call.
+
+So just make sure you're selecting the right one. And of course, leverage your good old AI consultant chat GPT or Claude or Grok or any of them. Obviously, there's a lot of things here when you analyze the analytics and reporting and all that kind of stuff.
+
+Now, if you're running like a cold agency, you may manage a ton of clients where this could be a really good scenario for you to automate some things, which I'll demonstrate here in a second. As far as automated reportings, you can have that sent to a Slack channel. You can have it sent to a custom dashboard like Looker Studio or Airtable or any sort of customary thing that you want.
+
+Nowadays, you can even hop into Lovable or Bolt.new and create a beautiful, quick dashboard if you so desire. And your client would definitely love you for that. Moving on from analytics, you're going to see account endpoints when you're going to be able to see that you can do a number of different things when it's specific to email accounts.
+
+And then you'll go to campaign. Just poke around in here. Definitely encourage you just be familiar of what it is.
+
+But you'll notice here post get and you have patch delete. So just to make sure you are looking at the proper endpoint to know which one you want to actually accomplish. And then, for example, we have create campaign, which is everybody's favorite.
+
+You'll notice this one has actually a lot of embedded. It's a huge object, essentially, where you have JSON that you have to send through. And a lot of these, some of them are standard.
+
+Some of them you're going to want to send as a specific text or string or number. Try to pay attention when it comes to that kind of stuff. You'll notice here there are specific ones.
+
+So you'll have an object, but then you'll have something like this where it's a Boolean, where something like if you want to send on Sunday, Monday, that's what these numbers are here for, you'll be able to see true or false. Pay attention whether it's a string, a number or Boolean like true or false to actually get your 200 status code as fast as possible. All right.
+
+So the next thing we have is the email endpoint. So you'll notice on the schema here, there are a number of different things that you can actually do when it comes to the endpoints working with email. We have reply to email, list email, get email.
+
+You get the gist. You could do a number of different things. Obviously, the big thing here that we want to do is get that wonderful 200 status code, which could be ever so challenging in certain scenarios.
+
+But you'll notice there's different powerful things here that we can do when it comes to making emails. With that, you can also do a number of different things when it comes to tying these endpoints to an agent. So I'll demonstrate here in a second.
+
+But you can even so much as catch a reply, send it through a sentiment analysis, and then be able to actually reply or track better your email campaigns, things like that as far as replying to specific people. Another thing to take into account as well, sometimes you're going to get those 99 no's for every 100 yes or so. You can actually reply to those no's and see if you can do like an AI agent that is trained on objection handling, overcoming indifference, those kinds of things where you can really elaborate and maybe even get some quick wins.
+
+Don't always turn those no's away. Let's move on. Email verification.
+
+We have the very simple API call where you can verify emails or check an email verification status. These are pretty simple calls, which are usually baked into platforms like Clay. Then we have lead lists where you can do a number of different actions when it comes to navigating leads.
+
+Again, we have post, get, patch, delete, the common ones. Same with inbox placement tests. Now in the front end, you'll be able to do a lot of different very easy inbox placement tests where you can just do an automated one.
+
+You can also do a one-off one. But this actually makes it a lot easier as well, where let's say you want to dynamically rotate infrastructures where you had batch one or batch two to be able to make sure that if something goes say below 80% inbox placement rate, you'll be able to swap that out and make sure that your infrastructure is always performing in FireEnal Cylinder. With that, you'll have inbox placement analytics.
+
+Some things you can play around with here to be able to analyze your analytics, get reports on things like that to make sure that you're always analyzing and making sure the infrastructure is sound so that way clients are happy. And then you have a number of different miscellaneous ones. So you have account campaign mapping, you have lead actions that you can do right here, such as add lead.
+
+This is actually a big one as well. So you'll notice on create lead, you'll be able to create a lead from an email address with a name, no different than you were to upload a CSV or send it from something like Clay. You'll notice that there's a number of different actions here, and then you can add to a campaign or move lead to a subsequence and that kind of thing.
+
+Pretty standard stuff, but you can actually do this on a custom note here or a custom application such as any den or make or any sort of custom application that you have. And then we have a number of different backgrounds, jobs, custom tags. Definitely.
+
+This is a good, powerful one right here. Block list. Sometimes people don't want to be reached out, so you can always do block list actions here.
+
+Lead labels. Again, these are another big thing. So if you have a large team, sometimes you want to label things a certain way to be able to standardize things all from the back end, which makes things a lot easier.
+
+And then you have higher level things such as workspace, get workspace and that kind of thing. So if you're running an agency, you could actually do a number of different things when it comes to very high level workspace actions here. And then we have campaign subsequence, and then we have good old audit logs, which is a really wonderful tool actually to be able to analyze what is happening as far as audits and actions if you want to make sure you're tracking things accordingly.
+
+So we're going to dive into some of the simple, hopefully simple, use cases on some of the things that we use internally here at Top of Funnel. So one of them is campaign reporting. Sometimes you have clients that want their analytics sent to them, either their Slack channel, or it could be email, could be whatever makes it easy for them to be able to analyze what's going on and not always have to log into the instantly dashboard.
+
+It's nice to see at a quick glance from your phone or however you want to visualize the analytics from there. And so with automations, most of you might be aware automations are usually a trigger and an action that sequence from that. This particular trigger could be custom, however you want.
+
+And this particular one, it's every two weeks on a Wednesday, just based on volume. And so I made this workflows in such a way that we could adjust the trigger. So that way when it's sent and then the number of days where I could just essentially do every two weeks or I could do every seven days, something where it's very easy just to adjust from there.
+
+Then we have another endpoint here, which is good old instantly API v2, where we are doing a get request. And then we are going to get the analytics endpoint. From here, we have query parameters which refer back to the previous one.
+
+This actually refers to now. And then we're going to go back 14 days based on the previous one. And so from that, this is actually another deeper API integration here when it involves pagination.
+
+So if you're running a lot of campaigns or if you're running a lot of accounts or anything like that, where it involves multiple pages, there's actually going to be a new page, the next page that comes, and then it's going to be next starting after. So what we do here is if it's a next starting after, meaning there's actually another page, if that exists, what it's going to do is it's going to take that and then it's going to do a starting after. So that way it properly paginates and then it's going to continue page after page until the starting after does not exist anymore.
+
+That would indicate to the API that there are no more pages. So sometimes this will actually take a little bit of time to actually paginate if you're running a lot of campaigns and it'll summarize everything. So this is a code node to basically parse out the data and to analyze it into one beautiful total analytics.
+
+And then from here, we are going to send this to a human in the loop node. And so this is a send and wait. Sometimes I just call it a hiddl, a human in the loop, and essentially it's going to send to me so that way I can quickly review it on my phone or on the Slack app on the desktop.
+
+And I'll just make sure like, Hey, does everything look good? Is this crap analytics or is this really, really good? And then I'll prove it.
+
+And then it'll automatically forward to the channel. And then this one right here, I like to just make sure I keep track of execution data. So that way, if I need to debug or dive into an execution, it makes things a whole lot easier to search.
+
+With that, I mean, you have essentially a seven node workflow where you can essentially know all the things when it comes to analytics versus having to always dive into your dashboard and things like that. So next we have unbooked routing lead forms. So what this actually is, is a hidden API endpoint.
+
+Well, it's not really publicly displayed on their API docs, that I found. But Calendly actually has a form submission where you have to manually subscribe to a webhook. And so if you go into their terminal, you can actually subscribe a webhook, such as any to end to be able to capture that data and put it through a workflow.
+
+So this use case is if somebody is actually trying to book an appointment with you and say time zone difference, say availability, there's a whole lot of variables. Maybe they got distracted and their wife asked them to go clean something up. They didn't actually book an appointment with you, right?
+
+So that's a lost lead. Well, if they submit the form, that's actually something that you can capture. And then what you can do is put that through a workflow such as this, another seven node workflow, and basically you'll capture it.
+
+And then this is a very simple one where we just wait two to three hours or a few minutes, however you want to. Although it would be a little creepy. And then what you do is you check Calendly to see if they actually book an appointment.
+
+So I would probably give it 15, 20 minutes minimum, because what will happen is they submit the form and then it's going to check the Calendly to see if they're actually on your calendar. And then if it is on your calendar, then it will not do anything. If it's not a booked appointment, then what you could do is just add them to an instantly campaign to reach out to them and be like, Hey, what happened?
+
+I thought you wanted to talk or, you know, go on a date or something. So that's an easy workflow that you can hopefully capture some potentially lost business otherwise. So we're going into a little bit more comprehensive nodes.
+
+I don't even know how many nodes this has. I lost count. I would try to make this as easy as possible to explain and why it's so important.
+
+Depending on what business you run, you might offer free trials. You might offer some sort of package, a lead magnet, or maybe it could be a de-anonymizing website visitors like the instantly website visitors or any other competitors out there. And then what you can do is you can actually capture that.
+
+And then you can start to score that particular person for what their industry is, any sort of head count, location, a number of different factors to where you can actually score these leads all automatically. What will happen is this will do a number of different checks. This will check their website.
+
+It'll actually scrape their website to better understand it. We will actually scrape the footer of the website to see if there's any social links. Could be YouTube, could be LinkedIn, X, things like that.
+
+And then in this particular one, we're checking for LinkedIn. Then from there, we're going to make sure it's normalized and clean. We're going to send that through a LinkedIn agent to scrape that.
+
+And then from there, we're going to pass along the information. And then we're going to run it through a different scoring algorithms here to score the country, the staff count, the industry. And then we come up with an algorithm score to do both quantitative and qualitative.
+
+And so for that, if they score above a 70, we know they're a great person, a great fit for that particular industry. We're going to immediately send that to Slack channel saying, Hey, you need to pay attention to this person. And you think you should give them a call.
+
+And then if it's a below a 70, you know, we're essentially going to check the instantly database to see if they're already in there. And then we're going to extract the name. We're going to randomize the SDRs that are on the team.
+
+If you have more than one, and then we're going to drop them into an instantly campaign to be like, Hey, how's it going? And try to start a conversation to make sure that they're taken care of. If it's below a 40, you know, that's pretty much your low hanging fruit.
+
+So what you could do is at least send them something just to have that quality customer experience and to start any conversations, but usually to see, to make sure that they have any questions to their answers. With that said, that's pretty robust. As far as this workflow, this is one of the more comprehensive ones.
+
+But the point is here is you can sit there and you can create campaigns and have things dropped in instantly. And this is obviously more of a systems and an unlimited evergreen operation where people are being dropped into a campaign. You're doing an active outreach, you're actually scoring and everything else.
+
+And then from here, obviously, you can also push this to your CRM or a tracker, such as Google sheets or anything like that, to be able to closely monitor things and make sure your CRM is fresh, full of leads. Now, diving into the fun stuff, good old AI agents. So this one is a very simple chat bot.
+
+It's a very simple AI agent. And this is a chat node just for demonstration purposes, but you can tie this to a telegram, a Slack, WhatsApp, anything like that, and just be able to chat with an agent to do a number of different tasks. And so with this one, essentially, all you got to do is just attach tools, which in the API, really, these are all tools that could be done and interact with an LLM.
+
+But these are the very basic tools to where the agent can actually do a number of different things. Now, something with agents and using API endpoint tools, you don't want to make it too complex. You usually want to keep it pretty standard.
+
+I usually like to keep things very similar and in buckets. That way, the agent doesn't have to do a lot of different calls because a lot of times it'll understand what you said, and then it'll do a call, and then it'll understand in a comprehensive way to tokenize and come up with the response, and then it'll respond accordingly to you. Now, whether or not that's true or it hallucinates, this is usually obviously the cutting edge piece of system prompting, prompt engineering, and making sure that it's grounded to the proper context and for what you want to have for your use case.
+
+But in this simple one, we just basically said, hey, what campaigns am I currently running right here? And then it did a query, and then it was able to tell me what the output is. And so in my chat bot, I could just say, what am I running?
+
+I could also say, create this campaign for me, name it today's date, have Monday through Friday, that kind of thing, and then it will create the campaign for you. So these are just four endpoints that'll usually be very productive, right? But you can even so much as just have an interaction, use natural language to interact with API v2 of instantly.
+
+And then lastly, this one is a lot of fun as well. But again, this is kind of putting all the things together of being able to really have a good streamlined operation and really scale up your outreach. Even when the replies come in, we are capturing all replies.
+
+So essentially any reply that comes in, we are extracting that information. And then we are extracting the name because sometimes the name will change. Sometimes they'll forward it to another person.
+
+Sometimes we'll send it to a common organization box where actually a person will reply, even though it says like contact or info at whatever business. Those are some scenarios as well, but we will extract the name from there. And then we're going to put it through what I like to call advanced sentiment analysis.
+
+The reason I call it sentiment analysis is because instantly has a very great sentiment analysis where someone says, yes, I would be interested or no, go kick a curb or anything like that. Those are very obvious sentiment analysis tags where it's a yes, no out of office, that sort of thing. But there might be scenarios where you actually want to take a little bit further to analyze, be able to put proper tags on things.
+
+Sometimes you want to do analytics on what kind of reply it is. It could be, yes, I'm interested, but not now. It could be, yes, I'm interested.
+
+Call me right now. It could be, no, go kick a curb. It could be also, no, I haven't considered that, but that may not be an into no.
+
+So what you could do is you can actually train an agent to overcome indifference, maybe to educate. You could do a lot of different things in order to even open up the conversation based on their reply. A lot of these things are very manual, especially when you're working in the unit box.
+
+So a lot of times what you'll actually do is just navigate through it. And sometimes it takes some cognitive horsepower to reply, especially if you're trying to overcome an objection or do anything in the sale process or there's a little bit of friction. And the way I like to see it is the first objection is usually when the sale starts.
+
+So if you get that objection already and they're already maybe cracking open the door on being curious, you could probably reel them in, which you can train an agent to do that. With this one, we are getting the email with the webhook. It does not yet incorporate the UUID or the data set that is needed in that webhook.
+
+And so what you actually need to do is do a request where you'll see all the information here and then you'll just pull the information like the UUID, the actual details of the actual email. And then what we're going to do is in this AI agent, you do a really robust system prompt. A lot of times I'll actually attach a tool or a vector database to ground it.
+
+You call like a RAG agent, right, to be able to ground it. No different than if you had an employee that had a manual that says you will respond to the SOPs and to the requirements that are in this manual. Do not say anything else.
+
+That way, you know, your replies are going to be very consistent, accurate, and to the point. That way you're not upsetting anybody, including yourself. This one is a very large system prompt.
+
+A lot of times with system prompts and prompt engineering, you want to use like O3, use a lot of the reasoning models to really come up with a really good, robust system prompt to make sure your agent is sound. And then usually you can tie a smaller agent, such as 4.1 mini to the agent to be able to work with that. And then as it scales, obviously I can change out the node as far as the LLM is concerned to really test and make sure that the agent is responding accordingly in the best appropriate fashion.
+
+Then from here, eventually I will attach this tool to where I can do it automatically. But again, I'm doing a HIDL, which is a human in the loop. So as soon as it comes up with the reply, it will send me the reply, which you can see here on the screen.
+
+And if I want to approve or disapprove, then I could either move forward or not and make sure that the reply that I'm seeing is actually going out and it's a good sound reply. Then from there we have approved or disapproves, which actually replaced the email. And then it goes to a reply tracker from there for us to further analyze.
+
+And so in summary, while all their cold email tools have their merits, Instantly's API v2 offers a pretty unbeatable combination of comprehensive features, robust security, seamless integrations, and user-friendly support. It makes it pretty obvious choice for agencies and businesses that want to take cold email seriously and get results. Now, speaking of results, if you have not done cold email before or have not seen real results for yourself, you might not actually know what's possible to achieve with it and what that looks like.
+
+So click here to check out a video where we actually start a service-based business, get everything set up and go through the entire process of starting and selling that service using cold email, get real results so you can copy this entire strategy for yourself. I'll see you over there.

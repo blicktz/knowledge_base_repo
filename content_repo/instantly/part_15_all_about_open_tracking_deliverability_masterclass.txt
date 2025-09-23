@@ -1,0 +1,17 @@
+So now finally let's cover some further testing and optimizing you can do with your campaigns to get even better results that you are getting right now. So the first thing you can do is disable open tracking and focus on reply rates instead. So even though open rates are an important metric, they can actually be super misleading and even hurt your deliverability on top of it.
+
+So basically how this works is that open rates are measured by a tracking pixel within your emails and that tracking pixel in itself is an attachment. So it's like a tiny image and every time that image gets loaded a tracking event is recorded. So basically as I said previously as well, having any kind of attachment in your emails lowers deliverability.
+
+So adding the tracking pixel is an attachment. So it will lower deliverability every single time. So thankfully there's an option in instantly for every campaign where you can disable open tracking.
+
+So this will take the pixel out of your emails. So now your emails will not have any kind of attachments in them and will be more likely to land in the inbox. The only downside to this obviously is if you disable open tracking, you will not see your open rates.
+
+But then again, open rates are kind of meaningless. If you've seen that they're like performing good, open rates good, you can kind of disable it because yeah, you don't really want people to just open your emails. You're looking for replies, looking for meetings, looking for business.
+
+So the good thing you can do is just focus on reply rates. Are these emails bringing in replies or not? And the one way you can just increase getting replies is disable open tracking.
+
+So this is one of the simplest ways you can actually increase the availability because it's literally just one click. You go into your settings, click one button and you can be sure that your deliverability just got better. And the difference is kind of huge as well.
+
+We've seen the difference in inboxing rates be as close to us like 20%. So 20% more of your emails will be landing in inbox instead of spam or like promotions or some other place. So yeah, that's like a really low hanging fruit.
+
+If you want to get better deliverability, try turning off open tracking. So one way you can do it is have open tracking on for one or two campaigns just so you can like measure the overall health of your sending accounts, but for all other campaigns, turn it off. And you can actually see the difference for yourself as well.

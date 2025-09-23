@@ -1,0 +1,13 @@
+So what you want to do next is set up a custom tracking domain. So this will be added in the exact same manner as you did previously for SPFD, Kim Demark. So this is just a DNS record entry again.
+
+And so what a custom tracking domain is, is it's basically your personal domain used to track opens and clicks in your emails. And this is super important for deliverability because if you don't have your own custom tracking domain, a public one will be used. And that's pretty much like sharing a toothbrush with everyone else.
+
+So it's really bad for the health of your domains. And yeah, you want to avoid that for sure. So as I said previously, it's just another DNS record entry.
+
+And you do it by going into your domain provider's DNS records, adding a CNAME type record and setting the values that are shown here. So again, as previously, we have guides for the most popular players. So I'll link those below in the video and you can check them out.
+
+But again, the process is the exact same. The only thing that differs is having settings and those ways to add DNS records differ between different providers. But the idea is exactly the same.
+
+And yeah, if you have that set up, you usually want to do that for every domain. So it's really good if you're already in those DNS records, changing stuff to get it all done in one go. So yeah.
+
+So yeah.

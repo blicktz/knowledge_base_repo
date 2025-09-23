@@ -1,0 +1,151 @@
+Vibe coding has taken over the internet. But here's the thing, while everyone's Vibe coding games and apps for fun, I had a different thought. What if we could Vibe code something and actually generate leads to grow your business?
+
+Well, clearly AI does a great job at mostly everything. Surely there are ways to turn this around and turn this into new opportunities, right? Well, in this video, I'm going to show you how to set up your own lead generation tool that you can Vibe code away and generate leads for your business on autopilot.
+
+Let's not waste any time and get straight into it. Just to start off, we're going to need to get our code editor, you know, with an environment such as cursor. There are a number of other ones like windsurf, vs code, the list goes on.
+
+But for this use case, we're just going to dive right into cursor. If you just go to cursor.com, you'll just need to download it, obviously, if you're on a Mac, but vs code will be another great one as well. Definitely have a AI code editor where you can have a chat bot and get your Vibe on.
+
+We're going to dive right into cursor. Now, what you will see here is actually just an empty folder. So all you need to do is just on your computer, start with an empty folder.
+
+This will be your root directory, which basically has nothing in it, which is a fresh canvas to actually get you started. With that, I have actually done a bit of prep work on my other channel where we set up different scrapers called crawl for AI, as well as set you up with the environment to really just alleviate the pain of setting up libraries and all these things just to get you started. So if you just simply go to this repository, you can fork it and then bring it over.
+
+So in order to do that, all we need to do is just click on this green button right here. And we're just going to copy this URL. And then we're just going to clone it.
+
+And then we're going to bring this up. And we're going to leave this on auto here. But really, this is the chat bot.
+
+There are a number of them as well, which is augment code. There's also Claude code. Just start with one just to get yourself situated with it and not be overwhelmed.
+
+And we're going to go from here. So we're going to paste this and we're going to say, I want to clone this repo, clone it, and then tell me all about what it does. And then we're going to let it do its thing.
+
+So you can see here, it is running the terminal commands, which is get clone. And then it's going to start to read all the files here, such as the readme, which most of them come with. And you can already see that it just went ahead and cloned it.
+
+And we have all the files. One of the coolest things that I believe to be great about a coding environment such as Cursor is that it's a lot more powerful than your standard chat GPT. And that is because we can actually hop different LLMs, which you can see right here.
+
+You know, where's obviously we have Claude, we have GPT-5, we have Gemini, we have Grok, we have all of them. And this is super powerful because we can just in an instance where if one LLM is just not doing the job for you, you can usually switch between them. But for this use case, we're going to leave it on auto.
+
+So I would just start with just the chat bot and actually read a lot of it, what it does, because you're actually going to find that there's going to be some nuggets in here that have words that if you're new to this space, that you can actually start to learn of how it works to actually do a little bit of engineering around lead generation and just code when it comes to the actual data acquisition and the outbound of that. The more you can understand how data is actually acquired, you normalize it, you enrich it, obviously what we talk about here, and then you actually formulate this data in order to prepare it and then send it for outreach, then the better off you're going to be because really, that's the name of the game. And it's a new unlock to be able to get data, use the data and then turn into leads, right.
+
+So you can see right here, we cloned it. And it's worth looking over the readme as well. Now, one of the things here, you'll notice this says dot MD, which means this is a markdown file.
+
+Markdown files are really, really good format for not only being able to read it, but it's also great for large language models to also prioritize and read it as well. You see these hash marks right here, where these indicate h1, h2 and h3 headers. So that way you can actually show you and the LLM to know how important things are from a hierarchy perspective.
+
+And so we can see here, it's worth, you know, definitely looking into of what it is to be familiar with the project. In this case, we named it GTM mastermind, which I think, you know, you really can't get much more around data when you're in a coding environment. And then we're going to do some scraping, right?
+
+We can see that this mastermind template complete overview. It is a way for being able to do scraping. It takes a list of targeted companies from a CSV file, which we can actually load to it as well.
+
+So consider this kind of like your knowledge base of being able to analyze CSV files. And we're talking rows and columns across the entire thing, being able to analyze and get intelligence around everything here. Then we have the core architecture.
+
+This engine is built around web scraping. So I imported an awesome, popular scraper called crawl for AI. This definitely is one of the best ones out there, especially when it's super, super cheap.
+
+We're talking nearly free here. And then you can even use something like fire crawl when crawl for AI is not performing well for you. So fire crawl is another great option as a fallback.
+
+When you import this and you put this into code, it definitely can perform versus using other platforms as well. The next thing here is proxy support. So if you're doing a large scraping, then it might be worth actually putting into a proxy.
+
+And what a proxy does is just allows you to protect your IP address. That way, if you're sitting there scraping repetitive sites and things like that, you're just going to protect your IP address, which is basically your fingerprint of your computer. So that way you don't get blocked or anything like that.
+
+You have parallel processing. Think of it if you had multiple tabs or multiple browsers of being able to scrape simultaneously, almost like a machine gun style where you have one by one. It's just going to be a lot slower, right?
+
+So a lot of times what you want to do is do parallel scraping. So that way it's actually running simultaneously, which actually speeds up the process. And we have the AI analysis layer.
+
+When you do a web scrape, you're going to get a lot of HTML, CSS, JavaScript. There's going to be a lot of unusable text and code in there. And so what it does, it allows to import all of that, normalize it, and actually process it into clean markup or markdown language, or even JSON in order to structure the data.
+
+So that way it can be actually used. Then there's the third thing right here, which is data processing. So there's two libraries here called Polars and Pandas.
+
+These are very powerful because these are Python libraries that allow you to actually look at CSVs and to be able to analyze cross even columns and rows to be able to actually know what you're looking at and then optimize the CSV from there. And then we have cost tracking as well around API usage and expenses. So from here, you can look this over.
+
+I won't waste any more time, but it's great to know, you know, just an overview of what you're looking at from an environment perspective and that we actually have a good solid base to actually start web scraping away. So quick start, I'm going to use my speech to text called spokenly, and we're just going to start to vibe away, right? What I want you to do now is to look to scrape public data, such as home service companies, such as HVAC or plumbing, and primarily from Google maps.
+
+What we are looking to do is to scrape this information more importantly, with the name of the business, as well as the emails associated with that. And what I want to do is to also analyze the website and be able to understand more about what the company does, such as how long they've been in business and what they do as far as the service is concerned. With that said, this is my first time using something such as this.
+
+So I'm going to need your assistance and being able to explain the technical aspect of what this means. So that way we can learn and improve along the way. So avoid any heavy jargon or really technical semantics.
+
+And if you need to, then I need you to explain what that actually means. So this is really helpful. You know, when you send this and it starts to do the thing and vibe away, then you're going to use the AI to bridge the gap.
+
+You're going to run into some friction points around being able to something doesn't go as planned. And then you can say, okay, explain this to me. Why is this happening?
+
+Explain to me what do I need to do to fix that? It will figure it out. So you can see right here, one of the coolest things that I personally love about this stuff that's improved even week over week, month over month, is it actually organizes it into do or task items.
+
+This keeps the AI very focused and being able to do exactly what it needs to do. And we're just going to let it do its thing. So it's going to start generating markdown files here.
+
+And while it works, you can see that we have a dot cursor. So any directory that starts with a dot means it's going to be initially hidden. So it's going to be essentially ignored or hidden on your hard drive.
+
+We can see here, we have a dot MD. So we actually needed to make it a dot MDC file. So I'm going to rename this to a dot MDC.
+
+And what that means is it's actually going to turn this into a rules. So we're going to say always apply. And then we have project rules.
+
+So you can see at the top here that is not there. So we're going to rename the MDC. And then you can see that the rules actually applies here.
+
+And then you have even things like codecs, which is super powerful, we can even use those. So you just kind of have to just figure it out and start with one, see where it goes from there. And just let it rip.
+
+Another thing while it's still going, we are going to look at MCP integrations. So with MCP, I talk about this quite often, but set yourself up with good MCPs. And if you're not keenly familiar on what MCP is, basically means model context protocol.
+
+And these are external connectors, which allow the agent to do a whole lot more stuff. So you can see we have different tools here, like with Firecrawl, where I could say, use Firecrawl MCP to go scrape this website. And then we can get more information from there.
+
+And then I have a number of other different things here, GitHub, there's also the Think tool, browser MCP, I use this a ton. This allows you to navigate, go back, go forward, do like mouse clicks and all that stuff. So literally, you can say use browser MCP to go to this website, and then take a screenshot and go from there.
+
+All right, so it looks like the web scraping is kicked off. So we're testing it here, we are actually building a custom one. And here's what we've built, think of it like a super powered research assistant, finds companies, searches Google Maps, visits websites, finds emails, analyzes businesses, organized data, sends results.
+
+What I want to do now is scrape public information. So let's start with graciously scraping in parallel across Nevada for HVAC and plumbers. And I want to search this and ensure that we have emails for each company.
+
+I want to do this with public information, so no API keys are going to be necessary, unless we're talking about using something like DeepSeq in order to convert this into markdown and personalization. This is actually a new project. So a lot of times you got to start, you know, loading up API keys and making sure that we're all set up on that regard.
+
+So we're going to need to add probably an API key to be able to process the AI when it comes to that stuff here. We don't need Google Maps API key, that's for sure. That's it, AI analysis.
+
+But while it's doing that, we are going to set up a DeepSeq because DeepSeq, even though it's a Chinese environment or Chinese LLM, definitely the cheapest. So we're going to go with that. So we're going to go API keys, we're going to create a new API key.
+
+We're going to call this cursor crawl for AI demo HVAC. We're going to copy this and then we're going to go to virtual environment. We should have a dot there is dot ENV deep seat API.
+
+There it is. We're going to say I have added DeepSeq API key to the ENV dot example. Go ahead and send that into the queue.
+
+And while that's working, we are also going to set up an N8N. We're going to create a workflow and we're going to call this a webhook and we're going to go here. We're going to do a post request and we're going to copy this.
+
+We're going to do that as the webhook and then we're going to save and we're going to go ahead and turn it on. The reason we want to turn it on is because we want to be able to catch executions. And while this is going, we need to see a payload.
+
+We're going to say here, before you kick this off in mass, I want to see a sample payload first. Let me know when you do this. So that way, when we do that, we're going to be able to have a sample payload, which we'll go to executions and then we're going to see what that looks like.
+
+And then we can start to map out the actual data and then start to add it to instantly, which if, by the way, if you haven't already installed the instantly NAN integration designed by yours truly, you can just go right here. You go to settings, you go to community nodes, and then you just need to click install, type in NAN nodes instantly. You hit, I understand.
+
+And when you hit install and you will see that it's installed, by the way, this is for the community version. So the verified cloud version will be coming here soon. And then you will see that there's a number of actions that I am currently still implementing here, but there's a number of different things that we can already do, hopefully with good enriched information.
+
+But quite simply, all we need to do is add to campaign, which from here, we'll go ahead and set up a campaign. So we have my campaign, and then we will also start to create our outreach. And so we'll just select the dropdown.
+
+We'll type in my campaign and it should populate. There it is. And we can start to map out everything from there.
+
+So we're actually going to hit save. We're going to turn this off because it's not completely configured and I want to be able to catch an execution without it erroring out. So let's check up on our scraper here.
+
+Let's see. Okay. Ready for launch Nevada scraping.
+
+Okay. So your webhook is working perfectly. Now I can run full Nevada scraping pipeline that will find 60 plus HVAC companies.
+
+That's a good initial sample if we're going scaled. Scrape their websites for email business details. Use the deep seek AI to analyze each company for personalization.
+
+Send each company individual to your webhook. So what this is going to do, it's going to scrape and then it's going to send each one of these through a webhook in which it's going to add to instantly campaign. And then we are off to the races.
+
+So from here, we're just going to hit save and then we're going to go to instantly and we're going to say AI ready website, AI readiness. And we're just going to type up instantly greeting, which I have as a shortcut. I came across your website while searching for home services in Nevada.
+
+I am from Reno, Tahoe. All good. You know, whatever you can do to kind of smooth it out to a game rapport.
+
+So from here, we're going to say I am a local business owner in Nevada and specialize in AI readiness to help small businesses like yourself prep to be discovered by AI search tools like chat GPT, etc. I saw there are a bit of improvements that that could be made and happy to send you a report on that. Mind if I sent over a video covering this upon them responding, I could record a loom or whatever the next call to action or lead magnet that you want to do.
+
+And we'll save it. And we'll go from there. Now if we wanted to take things further, we could actually capture leads.
+
+And then you can do this as a CSV. I'm just going right to N8N to instantly as an example here to make this as easy as possible. For this purpose, we're just going to go off of this kind of data here.
+
+Sometimes you just got to push through the friction, get this scraper set up. Obviously with web scraping, it's a bit experimental and it's very brittle at times. But when you're using AI to bridge the gap on all that kind of stuff, sometimes you just got to push through and vibe away or send up our engine here.
+
+Perfect. And just send that to N8N. Sweet.
+
+So now we have real information. That's what it is. And then it also added here.
+
+Perfect. All right. So we do have a real business.
+
+This is obviously going to be quite the task. So sometimes, you know, I'll let it run and I'll go do an errand or hang out with my family or work on something else. And so a lot of times this is going to be something that's automated and actually working for you.
+
+Right. So imagine having an assistant doing a lot of these things for you. Well, here you go.
+
+This is your engine. It's obviously going to send through N8N. It's going to add a lead to campaign, turn on the campaign, and then you'll be ready to go.
+
+So you saw me vibe code a lead gen tool just now, but what you might not know is that we actually vibe built an entire business in just 10 hours on this channel. Click here to check out the video that we did where we built a business completely from scratch. It went from zero all the way to the first sale using tools just like what you saw in this video.
+
+The video will be perfect for you. If you've been thinking about starting a lead generation business, or if you just want to see how a cold email system works in real life. So I'll see you over there.

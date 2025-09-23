@@ -1,0 +1,11 @@
+So now let's cover how you can actually test deliverability issues. So usually you can tell it by just looking at the metrics like warm-up health score, reply rate, open rate, but there are additional things you can do. So within Instantly, if you go to a sequence, I'll zoom in a bit here so you can see it better.
+
+So when you go to a sequence and you click preview email at the bottom, then go check deliverability score and send out the test email. So what this will do is send out your copy with your email account that you've chosen from above and give you like a deliverability score, check if everything set up correctly and also give you some tips on how you can improve the score. So of course you want it to be a hundred, but basically you just want it to be as high as possible.
+
+And usually the most popular things that get you a low score is having too many attachments, having to take set up done incorrectly and yeah, just using spam words in general. And yeah, so basically if you go through all the methods we covered in the previous section of common deliverability problems, if you fix all of these, you should be getting a score of a hundred. So thankfully, even if you get a low score, there are exact steps you can follow to fix it.
+
+And as an alternative method, you can use Glock apps to test your deliverability. So I've included a guide on how to do it in this document, but basically it works similarly. You will be sending out test emails to a bunch of email addresses that are owned by Glock apps.
+
+And then you will see how many of these emails landed in the inbox. So I'm going to zoom in again here. So the test I run, I ran previously, like around 98% of my emails landed in the inbox.
+
+So again, it's pretty unrealistic to get a hundred, but basically the main thing you want to aim for is that like a big majority of your emails are landing in the inbox. And again, if you're getting like a bad score, you will get like action steps you can follow to make your email deliverability better. Intro

@@ -1,0 +1,67 @@
+AI has taken over marketing in 2024, and if you do not want to get left behind, you need to start using it to get you more leads and grow your business. In fact, ever since implementing this exact same AI system that I'm going to teach you in today's video, we've been able to get more leads, more sales. And in this video, I'm going to show you exactly how you can use this AI system to generate more leads for your business and get more booked calls.
+
+So I'm going to show you two different ways on how you can scrape leads very efficiently using AI. Let's just say our target market is online coaches. So if I just go to Google and I type in site colon Instagram.com in quotations, online coach, gmail.com or yahoo.com or hotmail.com, what's going to pull up is a ton of Instagram pages of online coaches.
+
+And the beautiful thing is what you'll see is you can find their emails directly in the description, which makes it really easy to then find more people to reach out to. Let's just say I'm targeting real estate agents. I know that there's a brokerage called Compass.
+
+What I can do is I can go to agents, I can go find an agent, I can type in let's call it San Diego. And what's going to pop up is a list of a ton of agents. And guess what their emails are right here.
+
+And these are people that we can reach out to, I'm going to show you two things that we can do. Let's just go to this example. So you can type in your niche, whatever your niche is, it will show up, you can also change this to like LinkedIn, and that will also show up.
+
+So what we can do is we can just simply copy these, I'm just going to paste it right here. So now this is a ton of information, it's super disorganized and like kind of all over the place. And this is where the fun begins by copy all of these, what we can do is we can go to chat GPT, we can tell chat GPT to format this in a leads list, format this list into a CSV file header being name and email.
+
+If there is no email, do not include it in the list. And what chat GPT will do for us is they will format exactly what we just pasted over. What we can do is we can literally hire a VA or ourselves can go through multiple pages and get hundreds of emails using that same method.
+
+The other example, let's just say we wanted to do the same here, we can find a directory, whatever your niche is, let's go to chat GPT. So as this is loading, what we can do is we can simply go ahead and copy the lead list, we can go ahead and paste it into our Google sheet. Basically, what we want to do is we want to create a system to automatically be adding names to this Google sheet.
+
+So you can just simply hire somebody to scrape from the internet, format and chat GPT, add to your Google sheet, whatever your niche is. So once we have the list of leads, now what we want to do is we want to come up with a way to automatically send emails to them on demand. In order to send emails on demand, there's a few things that we need to do.
+
+First things first, we want to create a zap. So what we can do is we can use schedule by Zapier and this can run every single hour. And then what we can do is we can pull the emails from the Google sheets.
+
+So if we go to the event being get mini spreadsheet rows, and then the account you want to link your account up, have the action be first row being one row count, however many rows that you have the columns to pull from. And then if we click continue, we want to test this bad boy, and this should pull up the names. And then what we want to do is we want to send the email by Zapier, we can connect our Gmail account, connect any sort of email account, and we can send an email from our email after we connect Google to the column of the recipient that we have.
+
+So in this case, it would be here. So what we also want to do is use AI to write email copy. For this case, what I'm going to do is I'm just going to say, write me a cold email using this format.
+
+Hi, there. We help niches achieve desired outcome using our unique mechanism in 90 days. It's the same thing we did to help case study, write it as if I help real estate agents get five new listing appointments per week.
+
+So now what we can do inside of Zapier is we can go ahead and format this from we can select our email, all we need to do is just continue to add to the spreadsheet. And then our emails will automatically be sent using Zapier and using this whole AI system. This is how you can simply just fill your pipeline with leads, use AI, format the list, use Zapier to automatically just send them emails on demand.
+
+But the problem with this AI system is that it's more manual than it needs to be. You're only sending from one email provider. So if you're not really able to send that volume needed in order to get high results, and it's your personal email box that you're sending emails from, which could ruin your domain, there is a better way that I want to quickly show you that still uses AI that can do all of this pretty much 10x.
+
+And that's instantly. The beautiful thing about instantly when it comes to scraping leads, we can simply use the lead finder. Let's find people who are CEOs in California, for example, what we'll pull up is the list of all of the CEOs in California, we don't have to manually do anything, manually copy anything over to chat GBT.
+
+They have the lead finder automatically built into the tool so that can add access to hundreds of millions of contacts and email addresses. And as you can see here, they have the emails, they have the location, the employees, the industry and so much more this data is fire. And the other problem is with doing this manual is it can be kind of a drag when it comes to actually making sure the emails are legit.
+
+Like oftentimes when we get a big list of emails, whether we're scraping from Google, like I showed you or pulling from like a directory, what can happen is the emails might be outdated or not just relevant anymore. And when we send the emails to them, the problem could be that they're going to bounce back and it's just going to be a waste for you. Inside of instantly, they have an automatic verification tool, meaning all the leads that we're pulling, we're going to upload the leads from lead finder or from our CSV file.
+
+And what instantly is automatically going to do using AI is verify the leads, make sure the emails are actually legit. And this verifies like the catch all emails, basically, it's like a sales email, and it verifies the emails of the direct person that we're reaching out to, which is a beautiful thing because we want to make sure that we're only sending to the right emails and to prevent anything from bouncing. The way that I showed you, we're only using one email.
+
+And the problem with using one email or our personal email is if we're sending too many emails, we could get flagged as spam and that could ruin our email reputation and all of our emails could begin to end up in spam. In addition, if we're sending a high volume of emails from our personal email, that's not going to be a good look. So instead, what we do is we buy a separate domain that's agency, we'll buy a go agency, you dot com, work with agency, you dot com, whatever the variations could be, we'll buy emails for each domain.
+
+And those are the emails that we're sending these cold emails from. And what else we're doing is we're warming up the email. So we're not just buying these emails, and we're starting to blast 100 emails a day per email.
+
+What we're doing is we're slowly starting to build a reputation with the email in order for it to build trust so that when we do send the email, the providers are like, Oh, this is a legit email, it's been sending emails back and forth for the last couple of weeks. The cool thing is with instantly dot AI, we can do that literally in just three clicks, go to email accounts, we can click add new, and they have a done for you setup, which is a Gmail. So let's just say if my website was agency, you dot co, cool, I want to buy fresh agency, you dot com, perfect agency, you.
+
+So and if I click next, what's automatically going to happen is we're going to get three emails per domain. And I can basically set up my forwarding domain to my current email address. And then basically, it's automatically going to create the email for me.
+
+So I can place the order, it's $30 per year for the domains and $30 per month for the emails. And each email can send about 50 emails per day. So if we have six emails, we can send 300 emails every single day, which is a super high line way more than what I showed you was Zapier.
+
+And the cool thing about this as well is it's automatically going to warm up for us. So it's going to make sure your health score on your emails are in fact, super dialed in. And when it comes to email copy, if I go to create a campaign, let's just say I want to create a campaign with this home service, I can simply go to sequences and I can have AI write all of my copy for me on the bottom left hand side, I can click AI generator, I can do AI sequence generator.
+
+So I can say my company is named home service pro. And then we help home service companies book five project leads per day using our home service Insta funnel pro system home service companies doing more than 100k a month. We recently helped john's plumbing get 10 new clients last week, Bob's heating had to hire a new sales team to keep up with the lead volume.
+
+These are just some case studies that they're asking for so they can create the prompts. How many emails do I want to send three awesome. And this will automatically generate pretty solid email sequences.
+
+So I don't have to go to chat gbt. And it's also going to do the follow up sequence. So it's not just going to send one email, but it's going to send three emails if they do not respond.
+
+So if I click on use this sequence, this will automatically generate. And if I click on preview, I can see what it looks like giving the leads that I have in here. Hi, Mike, I noticed that home service pro is doing great work in the home service industry.
+
+Recently, we helped john's plumbing secure 10 new clients in just one week using our home service Insta funnel pro system. This could be game changer for you, especially if you're looking to consistently book five projects daily, would you be open to a quick chat this week to support how we can achieve similar results for this instead of all of these going into my personal email with a bunch of email responses, or in this case, if we're not verifying the emails, bounced emails instantly has what's called a unibox where we can manage all of the responses in one section. That means all of the responses will go here.
+
+And it's going to be able to prioritize them by responses. So AI is automatically categorizing them as interested, not interested. Also, we can see our analytics over the last six months, 12 months, seven days, and we can see what our reply rate is, we can see how many emails that we've sent how many per campaign and how we're actually performing.
+
+And this is all using the power of AI. And this is the tool that I prefer as opposed to doing something manual, like I just showed you. And that's the AI marketing system that can book sales calls daily for your business.
+
+The truth is whether your prospect replies to your email or puts that email in their trash bin comes down to email copy and writing an effective cold email script. If you want to learn how to write an effective cold email script so that you can book more leads using cold email, go ahead and click on this video right here to learn exactly how to do it. Thanks so much for watching guys.
+
+We'll see you on the next video.

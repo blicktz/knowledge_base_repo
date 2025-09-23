@@ -271,6 +271,266 @@ def verify_phase2_setup():
     print("✅ All Phase 2 components verified successfully!")
 ```
 
+### **Project Structure Updates for Phase 2**
+
+#### **Complete Updated Project Structure**
+
+```
+dk_rag/
+├── core/                           # Core processing modules
+│   ├── persona_extractor.py       # [Phase 1] LLM-based extraction
+│   ├── statistical_analyzer.py    # [Phase 1] Statistical analysis
+│   ├── knowledge_indexer.py       # [Phase 1] Orchestration layer → UPDATE for Phase 2
+│   ├── persona_manager.py         # [Phase 1] Persona management
+│   ├── map_reduce_extractor.py    # [Phase 1] Map-reduce processing
+│   ├── analysis_cache.py          # [Phase 1] Analysis caching
+│   ├── extractor_cache.py         # [Phase 1] Extraction caching
+│   └── retrieval/                 # [NEW] Phase 2 Advanced Retrieval
+│       ├── __init__.py            # Module initialization & public API
+│       ├── hyde_retriever.py      # HyDE implementation with prompt templates
+│       ├── hybrid_retriever.py    # BM25 + Vector fusion logic
+│       ├── reranker.py           # Cross-encoder reranking components
+│       └── advanced_pipeline.py   # Complete Phase 2 orchestration
+├── data/
+│   ├── models/                    # Pydantic data models
+│   │   └── persona_constitution.py # [Phase 1] Core data models
+│   ├── storage/                   # Storage interfaces
+│   │   ├── vector_store.py        # [Phase 1] ChromaDB integration
+│   │   ├── artifacts.py           # [Phase 1] Persona artifact management
+│   │   ├── bm25_store.py          # [NEW] BM25 index management & persistence
+│   │   └── retrieval_cache.py     # [NEW] Caching for expensive retrieval operations
+│   └── processing/                # Data processing
+│       ├── chunk_processor.py     # [Phase 1] Text chunking
+│       └── transcript_loader.py   # [Phase 1] Document loading
+├── config/                        # Configuration management
+│   ├── settings.py               # [Phase 1] Core settings
+│   ├── persona_config.yaml       # [Phase 1] YAML config → UPDATE for Phase 2
+│   └── retrieval_config.py       # [NEW] Phase 2 specific configurations
+├── prompts/                       # [NEW] Prompt templates & management
+│   ├── __init__.py               # Prompt utilities and loaders
+│   ├── hyde_prompts.py           # HyDE hypothesis generation prompts
+│   └── query_templates.py        # Query transformation templates
+├── utils/                         # Utilities
+│   ├── logging.py                # [Phase 1] Logging utilities
+│   ├── validation.py             # [Phase 1] Validation utilities
+│   ├── device_manager.py         # [Phase 1] GPU/CPU management
+│   └── llm_utils.py              # [Phase 1] LLM utilities
+├── cli/                          # Command-line interface
+│   └── persona_builder.py        # [Phase 1] CLI commands → UPDATE for Phase 2
+├── tests/                        # Test suite
+│   ├── test_persona_extractor.py # [Phase 1] Persona extraction tests
+│   ├── test_analysis_cache.py    # [Phase 1] Cache testing
+│   ├── test_multi_tenant.py      # [Phase 1] Multi-tenant tests
+│   └── retrieval/                # [NEW] Phase 2 retrieval tests
+│       ├── __init__.py           # Test utilities for retrieval
+│       ├── test_hyde_retriever.py # HyDE functionality tests
+│       ├── test_reranking.py     # Cross-encoder reranking tests
+│       ├── test_hybrid_search.py # BM25+Vector fusion tests
+│       └── test_advanced_pipeline.py # End-to-end Phase 2 tests
+└── scripts/                      # Utility scripts
+    ├── verify_chunks.py          # [Phase 1] Chunk verification
+    └── migrate_to_multi_tenant.py # [Phase 1] Migration utilities
+```
+
+#### **New Components Detailed Description**
+
+##### **1. Core Retrieval Module (`dk_rag/core/retrieval/`)**
+
+**`hyde_retriever.py`** - HyDE Implementation
+```python
+class HyDERetriever:
+    """Hypothetical Document Embeddings retriever"""
+    
+    def __init__(self, llm, base_embeddings, vector_store):
+        self.llm = llm
+        self.embeddings = base_embeddings
+        self.vector_store = vector_store
+    
+    def generate_hypothetical_answer(self, query: str, persona: PersonaConstitution) -> str:
+        """Generate hypothesis using influencer persona"""
+        
+    def retrieve(self, query: str, k: int = 20) -> List[Document]:
+        """Main HyDE retrieval pipeline"""
+```
+
+**`hybrid_retriever.py`** - BM25 + Vector Fusion
+```python
+class HybridRetriever:
+    """Combines BM25 keyword search with vector similarity"""
+    
+    def __init__(self, bm25_store, vector_store):
+        self.bm25_store = bm25_store
+        self.vector_store = vector_store
+    
+    def search(self, query: str, k: int = 20, bm25_weight: float = 0.4) -> List[Document]:
+        """Hybrid search with configurable fusion weights"""
+```
+
+**`reranker.py`** - Cross-Encoder Reranking
+```python
+class CrossEncoderReranker:
+    """Advanced reranking using cross-encoder models"""
+    
+    def __init__(self, model_name: str = "mixedbread-ai/mxbai-rerank-large-v1"):
+        self.reranker = Reranker(model_name)
+    
+    def rerank(self, query: str, candidates: List[Document], top_k: int = 5) -> List[Document]:
+        """Rerank candidates using cross-encoder scoring"""
+```
+
+**`advanced_pipeline.py`** - Complete Phase 2 Orchestration
+```python
+class AdvancedRetrievalPipeline:
+    """Orchestrates HyDE + Hybrid Search + Reranking"""
+    
+    def __init__(self, hyde_retriever, hybrid_retriever, reranker):
+        self.hyde = hyde_retriever
+        self.hybrid = hybrid_retriever
+        self.reranker = reranker
+    
+    def retrieve(self, query: str, persona: PersonaConstitution) -> List[Document]:
+        """Complete Phase 2 pipeline: HyDE → Hybrid → Rerank"""
+```
+
+##### **2. Storage Extensions (`dk_rag/data/storage/`)**
+
+**`bm25_store.py`** - BM25 Index Management
+```python
+class BM25Store:
+    """Manages BM25 index creation, persistence, and search"""
+    
+    def __init__(self, index_path: str):
+        self.index_path = index_path
+        self.bm25_index = None
+    
+    def build_index(self, documents: List[str]) -> None:
+        """Build and persist BM25 index"""
+        
+    def search(self, query: str, k: int = 20) -> List[Tuple[int, float]]:
+        """Search BM25 index and return (doc_id, score) pairs"""
+```
+
+**`retrieval_cache.py`** - Retrieval Caching
+```python
+class RetrievalCache:
+    """LRU caching for expensive retrieval operations"""
+    
+    @lru_cache(maxsize=128)
+    def cached_hyde_generation(self, query: str, persona_hash: str) -> str:
+        """Cache HyDE hypothesis generation"""
+        
+    @lru_cache(maxsize=256)
+    def cached_reranking(self, query_hash: str, candidates_hash: str) -> List[float]:
+        """Cache reranking scores"""
+```
+
+##### **3. Prompt Templates (`dk_rag/prompts/`)**
+
+**`hyde_prompts.py`** - HyDE Hypothesis Generation
+```python
+HYDE_PROMPTS = {
+    "influencer_response": """
+    You are {influencer_name} with the following characteristics:
+    - Tone: {tone}
+    - Catchphrases: {catchphrases}
+    - Core Beliefs: {core_beliefs}
+    
+    A user asks: "{query}"
+    
+    Write a detailed, authentic response as if you were answering directly.
+    Include your typical frameworks, examples, and speaking style.
+    
+    Response:""",
+    
+    "detailed_explanation": """...""",
+    "framework_focused": """..."""
+}
+```
+
+**`query_templates.py`** - Query Transformation
+```python
+QUERY_TEMPLATES = {
+    "step_back": "What are the fundamental principles behind: {query}?",
+    "decomposition": "Break down this complex question: {query}",
+    "context_expansion": "What related topics should I consider for: {query}?"
+}
+```
+
+##### **4. Configuration Updates**
+
+**Updated `persona_config.yaml`**
+```yaml
+# [Existing Phase 1 config...]
+
+# Phase 2 Advanced Retrieval Configuration
+retrieval:
+  hyde:
+    enabled: true
+    prompt_template: "influencer_response"
+    cache_size: 128
+    
+  hybrid_search:
+    enabled: true
+    bm25_weight: 0.4
+    vector_weight: 0.6
+    
+  reranking:
+    enabled: true
+    model: "mixedbread-ai/mxbai-rerank-large-v1"
+    top_k: 5
+    batch_size: 32
+    device: "auto"  # auto-detect GPU/CPU
+    
+  caching:
+    enabled: true
+    hyde_cache_size: 128
+    rerank_cache_size: 256
+```
+
+#### **Integration Points & Updates**
+
+##### **Update `core/knowledge_indexer.py`**
+```python
+# Add Phase 2 retrieval integration
+class KnowledgeIndexer:
+    def __init__(self, settings: Settings):
+        # [Existing Phase 1 code...]
+        
+        # Phase 2 additions
+        if settings.retrieval.enabled:
+            self.setup_phase2_retrieval()
+    
+    def setup_phase2_retrieval(self):
+        """Initialize Phase 2 advanced retrieval components"""
+        from .retrieval import HyDERetriever, HybridRetriever, CrossEncoderReranker
+        # Setup components...
+```
+
+##### **Update `cli/persona_builder.py`**
+```python
+# Add Phase 2 CLI commands
+@click.command()
+@click.option('--use-advanced-retrieval', is_flag=True, help='Use Phase 2 advanced retrieval')
+def search(query: str, use_advanced_retrieval: bool = False):
+    """Search with optional Phase 2 advanced retrieval"""
+    if use_advanced_retrieval:
+        # Use Phase 2 pipeline
+        pipeline = AdvancedRetrievalPipeline(...)
+        results = pipeline.retrieve(query, persona)
+    else:
+        # Use Phase 1 basic retrieval
+        results = basic_vector_search(query)
+```
+
+#### **Migration Strategy**
+
+1. **Backward Compatibility**: All Phase 1 functionality remains unchanged
+2. **Gradual Adoption**: Phase 2 can be enabled/disabled via configuration  
+3. **Testing Strategy**: Comprehensive test suite ensures reliability
+4. **Performance Monitoring**: Built-in performance tracking for Phase 2 components
+
+This structure maintains clean separation between Phase 1 and Phase 2 while providing clear upgrade paths and integration points.
+
 ## **Core Implementation: 3 High-Impact Techniques**
 
 ### **1. HyDE (Hypothetical Document Embeddings) - Primary Enhancement**

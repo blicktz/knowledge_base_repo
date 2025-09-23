@@ -1,0 +1,177 @@
+So if you are a recruiter who wants to grow his recruiting firm, then this video is for you. So I just finished writing up a 20-page Google Doc that outlines the strategy on how you can scale your talent acquisition, but also your business development with cold email. So you can get more candidates and you can get more clients with this strategy, with this setup.
+
+So yeah, there's going to be four pillars that we're going to cover in this video. The first one is going to be tech setup, sending domains and connecting accounts, how that works when you're doing cold email and cold outreach. Then the second one is data.
+
+You're going to need data. You're going to need email addresses of potential candidates you're looking to recruit or of potential clients for your firm. So I'm going to show you how to go about that in LinkedIn Sales Navigator, how to scrape LinkedIn Sales Navigator, how to put filters on, and also how to get that data.
+
+And then the next step is really to reach out to those people, to reach out to that data and those email addresses. And that's done with the sequences and instantly. Instantly is a sending tool, a cold email tool, and you can set up the sequence.
+
+So it's automated and you will send a free step or however many steps you want. You know, the first step, a follow-up, a follow-up to those people that you found to bring them into your ecosystem. Then the last step is really the replies.
+
+You know, once you have all the replies coming in from interested candidates or from clients that need you help with recruiting, and how to manage that, you know, when the replies are coming in and I'll show you how that works, it's called the Unibox. So, yeah, I mean, at first glance, if this is like your first time doing a cold email or you're just getting started with a cold email, you know, this may seem a little bit overwhelming. It was the same thing for me when I was starting out with cold email.
+
+But really, once you figure this out, it's really one of the best, most reliable and scalable ways of growing your recruiting firm. And, yeah, you just have the ability, you know, to drum up amazing talent fast, to get more clients and grow your company. So let's jump into it here.
+
+First step is really tech setup. So as a concept, I want to talk about secondary sending domains. Secondary sending domains are just domains that are not your business domain name.
+
+So let's say, you know, your company is called bestrecruiter.com. I don't recommend doing outreach, cold outreach from bestrecruiter.com. So what do we do?
+
+We set up, we buy additional domains. Very simple. We can add a suffix or a prefix to that main domain.
+
+So let's say, you know, again, your domain is bestrecruiter.com. You can buy the domain name meetbestrecruiter.com. And then you do all your outreach through meetbestrecruiter.com.
+
+And that way you have things neatly organized and separate. And so that anything that you're doing with your cold outreach doesn't affect your main domain. And you can also buy more and more domains in order to reach more people.
+
+So it's also something that I will be going into detail later on. But the sending domains here, you'll have meetbestrecruiter.com. You'll just buy them.
+
+It's cheap. It's 10 bucks. And it can really help you send more cold emails.
+
+Then, once we have the secondary sending domains in place here, we want to go ahead and purchase email accounts. So this new domain that you purchased, and it's brand new, we're going to connect that to a Google Workspace. So this new domain is a Google Workspace.
+
+Or Outlook works also. I'm just doing a Google Workspace. Or Zoho was also a good one.
+
+But just for simplicity's sake, and it's been very reliable with Google Workspace, we go ahead and connect that secondary sending domain to meetbestrecruiter.com. We connect it with Google Workspace. And then we set up additional users.
+
+So let's say your name is John Smith. There's an example name. You can set up additional users, these email addresses here.
+
+John at meetbestrecruiter.com. John.smith at meetbestrecruiter.com. And that way, you can send more emails.
+
+You can reach more people. Each one of these email addresses can contact the lead list that you upload to the campaign. Something, again, that I'll show you later.
+
+I recommend GoDaddy as a domain name provider. Just to buy it from there. It's very simple.
+
+It has good integrations. One click makes the process simpler as you're setting up the tech side of things. You know, the tech side of things, admittedly, it's a little bit boring.
+
+It's a little bit tedious. But two hours of focused effort, and you get it done. And you only have to do it once.
+
+That's the good thing. And, yeah, next step, you know, you buy the sending domains. You connect them to G Suite.
+
+And then they're ready to send. And as an additional point here, you have to add SPF, DMARC, and DKIM to the sending domains. So this is kind of tech jargon, but it's just, you know, in the DNS settings of the new domain, you make some changes there.
+
+Again, you only have to do it once. But this really, really helps with deliverability. And deliverability, just making sure that you land in that primary inbox where people see you, right?
+
+You don't want to land in the promotions folder or even worse in the spam folder. That's why you have to set up SPF, DMARC, DKIM to land in the primary folder where the candidates or the potential clients are going to see you. So this is the tech setup.
+
+It's one of the pillars. Just follow the step-by-step instructions. I have a link here as well.
+
+And it will show you a video on how to do that. But, you know, I'd rather talk about the data and the cold email templates here than go into really detail. But you'll have a detailed video here when you're setting up your sending domains for the outreach.
+
+Okay, great. Then the next step, you know, is really going to be to connect them to Instantly. And what Instantly is, Instantly is Instantly.ai is a cold email tool for more replies, more revenue.
+
+So it really helps you scale your outreach campaigns. And you have the email inboxes already. Just connect them to Instantly.
+
+And then you can set up campaigns and it will automate the sending. It will do a lot of the heavy lifting. All this legwork, all this manual work is automated by Instantly.
+
+So you can focus on more important parts of your business, like closing deals and thinking about strategy and hiring new people and so on. So we have the sending domains. We did the text setup and we connect them.
+
+We connect the email accounts to Instantly. Okay, that's the first pillar. Then as a next step, we're going to scrape LinkedIn Sales Navigator.
+
+So let's say if you're looking for more candidates for a particular role, let's say you're recruiting for a machine learning engineer role. We need to find these people, right? And the good way to do that is really for LinkedIn Sales Navigator, scraping the searches, finding the email addresses of these people, taking the email addresses and then putting them into Instantly and sending them a cold email.
+
+So this is how we go about that. So this is a really important part as well. I recommend LeadHype.
+
+LeadHype is a good tool to grab data. You could just put in the filters, you know, whatever your search is. Let's say, you know, again, like machine learning or you're looking for experienced sales reps or marketing people, developers, whatever you're looking for here.
+
+You can just type it in. You can copy the URL and then you can scrape it. And scraping just means it will look at all the pages and see and get the email addresses of all these people.
+
+So maybe an example here, an example with screenshots, extracting the lead list. Let's say, you know, machine learning engineer in the greater Boston area, Florida, Virginia, whatever, you know, your geography is. You can put that in and then you can scrape it.
+
+So it will scrape it here. We have some detailed screenshots. We'll just get all the data.
+
+And then once you have that, right, you have like a couple hundred, a couple thousand potential candidates there. Then one additional step is kind of verifying the lead list. So we want to verify all these email addresses, make sure those email addresses are real.
+
+They exist. They're good to go. We can email them.
+
+So this is the additional step that we do here. And as a tool there, I recommend Million Verifier. It's a good verification service after you're scraping the leads.
+
+Verify them. And then they're ready to be cold emailed. So this is the data side of things here.
+
+Also, again, I'm going to link this document below in the description. So you have it for reference. It's a straightforward process.
+
+Then we upload this lead list to Instantly. And you can see how you can really automate this process. You scrape leads.
+
+You just put in, you upload them to Instantly. Instantly, you get a little sequence going, like a three-step sequence. I'm going to show you some cold email templates later in this video too that you can use.
+
+And it will just automatically contact them. So this is how it works here. So let me just show you a quick example and show you how easy this is.
+
+Let's say we create a new campaign, Machine Learning Candidates. Just as an example here. You click Continue.
+
+It will load the dashboard. And then here you can upload all the leads you found through the Sales Navigator scraping. Just upload them here.
+
+Then as a next step here, you can just put in the copy. Let me just show you how that would look like. Here we also show you the screenshots in the document.
+
+I show that here. Very detailed. And then let's say we also have some really good cold email templates.
+
+So you upload it. You upload all the leads here. And then you put it in a sequence.
+
+You can just, let's say, very simply here. Let me just look for the Machine Learning example that I was just talking about. So here.
+
+Yeah. Let's just grab this. And we just paste it in here.
+
+And, you know, you can add a subject line. You can dynamically insert the first name. Let's say, you know, the proven performer here with subject lines is the quick question one.
+
+But, yeah, you can just add it here, right? Then you save it. Here you can add your signature.
+
+Here you can add your signature. And also give them a way to opt out. If you don't want to receive any messages from me, please reply with no thanks.
+
+Just give them an easy way to opt out here. Also, right, this is the sequence that's going to go in place. Let's say you upload a thousand potential candidates.
+
+Instantly can really automate all of that sending for you. And you can add follow-up steps here. You know, let's say, let me look for a follow-up step.
+
+Yeah, so very simply, right? You can just say, maybe this one wouldn't work in this situation, right? This would be more of a business development follow-up.
+
+But let's say, you can say, first name, just very simple here. First name, interested, or not really. Short and sweet.
+
+But I'm sure, you know, from your experience, you can come up with some other follow-ups here. But this would be like a super simple one. Maybe even a little bit of a takeaway, right?
+
+Hey, are you interested in this opportunity? We can say, maybe. Not really.
+
+Okay. You can see how easy it is to set up a campaign here. We also set up the schedule.
+
+And then options. We connect the sending accounts. And then we hit launch.
+
+And it's ready to go. It's going to do all the work for us. And we don't have to do the manual work.
+
+And on autopilot, it will reach out to a lot of people. Everybody that you uploaded here initially. Next step.
+
+Also in this document. Again, I'll link it in the description below. You'll find a bunch of solid templates here that you can get inspired with.
+
+Then what you'll see, you know, once you contact all these candidates, you'll see the replies coming in. Which is the best part, right? This is where we all make money, right?
+
+We have interested people coming to us and saying, yes, sure. Love to hear more. Please send me more info.
+
+Whether that's, you know, potential candidates. Also potential clients for your firm. Like people say, hey, like, you know, I'm interested in your recruiting services.
+
+Let's do a call. Let's do a call. Right?
+
+So after a while, you know, you launch these campaigns. They're running. They're doing the outreach for you.
+
+And then you have all these replies coming in. And they're all going to be in one place. Just a couple of examples here of everything, you know.
+
+Feel free to shoot through some info. Like cold email really, really works if you follow the steps, right? The four pillars that I mentioned.
+
+Tech setup, the data, the emails, and then also managing the replies. You just have to follow the proven plan. And, yeah, so this is it.
+
+The good thing about Instantly is that all the replies from your outreach will be neatly organized in one place. If I'm on place, you can easily reply to all these companies. Maybe have fun making money.
+
+Have fun growing firm. I think that's a better way to say it. And, yeah, that's it.
+
+So I hope this was useful. It's an overview here. You'll see the link of this document in the description.
+
+You're not just finished writing this here. And give you access. You can follow this plan to scale talent acquisition and to get more clients.
+
+So if you want to, you know, try it instantly, which really does all the heavy lifting, all the legwork for you in this process of cold email and outreach, you can go to instantly.ai. You can click on the Get Started button. And you can sign up for a free trial.
+
+It's free. You can try it out for two weeks. No strings attached.
+
+You don't have to put in a credit card or anything like that. Just check it out. Check out the account.
+
+And you'll see, like, how simple and intuitive it is. And a lot of recruiters are really using it to grow their business. And I hope it can help you, too.
+
+And also, we have a great support team. So if you sign up for an account, our support team are more than happy to help you out as you're setting up your campaigns. If you have any questions, we're there to help you.
+
+So, yeah, I hope this was helpful. And I talk to you soon, hopefully. And if you have any questions, let me know in the comments if this video was valuable.
+
+Feel free to give it a like, subscribe. And have a good one. Take care.
+
+Take care.

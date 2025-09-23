@@ -390,7 +390,7 @@ You must generate a final JSON ARRAY containing multiple consolidated beliefs. E
 <candidate_beliefs_json>
 [
     {{"statement": "You must act to get information.", "category": "entrepreneurship", "supporting_evidence": ["Action produces information..."], "frequency": 9, "confidence_score": 0.95, "batch_source": "batch_001.txt"}},
-    {{"statement": "Launching is better than perfect planning.", "category": "entrepreneurship", "supporting_evidence": ["You learn more from a failed launch than a perfect plan..."], "frequency": 7, "confidence_score": 0.90, "batch_source": "batch_002.txt"}}}
+    {{"statement": "Launching is better than perfect planning.", "category": "entrepreneurship", "supporting_evidence": ["You learn more from a failed launch than a perfect plan..."], "frequency": 7, "confidence_score": 0.90, "batch_source": "batch_002.txt"}}
 ]
 </candidate_beliefs_json>
 </input_block>
@@ -772,13 +772,20 @@ The two candidate beliefs express the same core idea of valuing action over plan
         
         # Prepare consolidation prompt
         prompt_key = f"reduce_{extraction_type}"
-        prompt = self.prompts[prompt_key].format(
-            candidate_models=json.dumps(candidates_data, indent=2) if extraction_type == "mental_models" else json.dumps(candidates_data, indent=2),
-            candidate_beliefs=json.dumps(candidates_data, indent=2) if extraction_type == "core_beliefs" else "",
-            strategy=strategy,
-            min_frequency=min_frequency,
-            top_k=top_k
-        )
+        if extraction_type == "mental_models":
+            prompt = self.prompts[prompt_key].format(
+                candidate_models=json.dumps(candidates_data, indent=2),
+                strategy=strategy,
+                min_frequency=min_frequency,
+                top_k=top_k
+            )
+        else:  # core_beliefs
+            prompt = self.prompts[prompt_key].format(
+                candidate_beliefs=json.dumps(candidates_data, indent=2),
+                strategy=strategy,
+                min_frequency=min_frequency,
+                top_k=top_k
+            )
         
         self.logger.debug(f"Reduce phase for {extraction_type} - consolidating {len(candidates_data)} candidates")
         

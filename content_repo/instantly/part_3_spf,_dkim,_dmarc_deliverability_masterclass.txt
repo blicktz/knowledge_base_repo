@@ -1,0 +1,17 @@
+So after you bought your domains, what you want to do next is set up your DNS records. So if you have any previous experience with cold email, you probably heard these three lot. So basically you want to set up SBF, DKIM and DMARC.
+
+And as I said in the beginning, I also want to explain what these are. So you just don't blindly enter the records into your domains, but also understand what they're doing. So in the simplest terms as possible, what an SBF record does is it tells the internet which servers are allowed to send emails on your behalf.
+
+So basically if you're using Google as your email provider, you can tell the internet with an SBF record that Google servers are allowed to send emails from your domain. And what it does is it prevents spoofing, which means that bad actors can't fake that they're sending emails from your domain or on your behalf. And next the DKIM record.
+
+So what that does, it adds a signature at the end of your emails, which everyone can check that this matches with the domains set up. And that means that this email is legit. And again, prevents spoofing in this manner.
+
+And then finally a DMARC record. So what a DMARC record essentially does, it tells the world that you want your email to be authenticated. And it also ties together your SBF and DKIM records.
+
+So basically the main reason for all of these records is to show email providers that you're legit, that these emails are sent from the correct sender and thus should be put into the inbox. So you can think of it as having all your documentation correct before going on a trip somewhere in another country. It's much more likely you get in if you have all the valid documents that they need.
+
+So yeah, and how to set these up. So this actually depends heavily on what providers you're using. So I'm going to add the most most popular providers down below the guides for them.
+
+You can check them out. But yeah, the idea of the process is exactly the same. The only thing that differs is if you're using different providers, they all have their settings in different places.
+
+It's just that looks a bit different. But the idea for these records is always the exact same thing. So yeah, next we'll talk about custom tracking domain.
