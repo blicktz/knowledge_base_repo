@@ -1,0 +1,77 @@
+What's up marketers? This is a video highly requested by you about the ISO 14 changes and how it's going to affect our Facebook ads. So we're going to dive into what is changing with ISO 14, how we know it's going to affect your Facebook ads and what you can do to prepare for it.
+
+In fact, I'm going to show you exactly how my agency is preparing for it because there is a lot we need to do ahead of time. But I want to call this out directly. No one knows everything.
+
+We don't know exactly how these changes are going to affect our Facebook ads performance. Therefore, this is not a time to panic. This is a time to get informed and to get started on important action items that are going to be putting you in the best position possible.
+
+So I'm going to dive into exactly what we know. There is quite a bit, and I'm going to share all the great resources that I have with you in the description bar below. So the first thing I want to talk about is what is the big change that is going to be occurring with ISO 14 and really, you know, what is the drama about?
+
+And I think the most important thing to understand here is how this is going to look like for your potential consumers. Essentially for users that have ISO 14 installed on their Apple devices in early 2021, they are going to be given a prompt asking them if they want to share their data with each of their apps. It's going to look something like this.
+
+And this is called Apple's app tracking transparency prompt. And I suspect like many other people suspect that tons of people are going to opt out of this. Tim Cook, Apple CEO says that users should have a choice over how their data is being shared and used.
+
+So this ATT prompt is giving you that choice. However, Facebook claims that Apple is not playing by their own rules. And in the process, they're hurting small businesses who are already struggling during the pandemic.
+
+I'm going to link both of these resources below, but you should check them out and figure out for yourself, like how you feel about these changes. Because this is not just a change that's going to affect Facebook advertisers or small businesses. This is going to affect a large part of the internet and really how we move forward as a society with tracking users' data.
+
+So the big change that's coming from this is businesses that advertise mobile apps or that use conversion campaigns, the way that they optimize target and report is going to be affected. So the next thing I want to dive into is what we know about this change. Like I said, we know that conversion campaigns are going to be affected in how we optimize target and report, which is pretty much everything.
+
+And this is really the most important equation and thing to understand, I think, because myself and most media buyers are using conversion campaigns to drive revenue for businesses. With that said, the exact nature of how it's going to affect those areas is not totally clear at this time. But here are the things that we do know.
+
+Number one, there's going to be even more delayed reporting. And I think this is something that Facebook advertisers have been seeing more and more of over the next few years. But Facebook is saying that we can expect reporting delays of up to three days for conversion campaigns.
+
+Additionally, website conversion events are going to be reported at the time that they occur and not the time that an impression happened. Which I think the easiest way for me to explain this is maybe as an advertiser, you've noticed that when you've looked at your data over the last seven days and then went back a few weeks later to look at that exact same seven day data, you might have seen that your results improved. And that's because people later down the line might have seen your ad as an impression or maybe even clicked on it.
+
+And then later down the line, they ended up converting. And that means that that conversion is actually being attributed to the last time that they saw that ad. But now what they're saying is that it's going to be reported in Facebook at the time that they convert, not necessarily at the time that they saw your ad.
+
+Now I think this is going to really hurt businesses who make daily decisions based on what's in Facebook ads manager. So this is going to be many Facebook advertisers. And I think that now there's going to be a much bigger need for businesses to look for alternative reporting resources.
+
+Additionally, the next thing I want to talk about that is that there's going to be no more support for breakdowns. So for both app and website conversion campaigns, delivery and action breakdowns such as age, gender, placements and region are not going to be supported. So I think that this is actually going to possibly force Facebook advertisers to start segmenting their ad sets by age, by gender, by region additionally, as well as placements.
+
+So segmenting all of your ad sets by Facebook versus Instagram, Facebook mobile versus Facebook desktop, which is something I'm really not looking forward to as an advertiser if we have to sort of revert back to that Michigan method style of running ad campaigns, because I've really adopted the more power five approach. So I'm particularly interested, but also concerned about this change particularly. Additionally, the next big change we know is going to happen is as more people are opting out of ISO 14 tracking, the size of our retargeting pools is going to decrease.
+
+And this is also going to be happening for your dynamic product ads. So those are your catalog sales campaigns. Not only are your retargeting pools going to decrease, also the custom audiences that you're using to create lookalike campaigns, those are also going to be decreasing, which could also make lookalike audiences less effective.
+
+Another big change that's going to happen is 28 day click, 28 day view and seven day view through attribution windows are no longer going to be accessible. Right now, Facebook's default attribution window is 28 day click in one day view. I personally don't use this as much because I think it is, you know, giving too much power to Facebook, but I know a lot of advertisers or small businesses just use the default attribution out of the box, so to speak.
+
+So if you don't know what your attribution window is, you can actually go look through it right here on your ads manager. I think you should start making those changes to do seven day click one day view as soon as possible. Just know that your results being tracked in Facebook, something you should know though, is that this change is going to make the attribution in Facebook look worse.
+
+So if you start noticing that your results are dropping, be sure to really correlate that with what's happening in your Shopify. Something I've been communicating with my clients a lot about this particular change is in addition to showing them ROAS numbers or CPA numbers. I'm actually talking a lot more about a marketing efficiency number these days, which is really the amount of revenue versus the amount of ad spend.
+
+So it's just like a much clearer, broad ROAS, I guess, breakdown. But I would start encouraging your clients, but also business owners to start looking at that number a little bit more before worrying that Facebook isn't working anymore. Because I feel like a lot of advertisers with this particular change are going to claim that Facebook is no longer going to work for them when really it's just reporting.
+
+Now another big change that I want to discuss today is that you're now going to be limited to only eight conversion events per domain. Now, I think that this is going to be most tricky for businesses who use custom pixel events to drive important actions for their businesses. But for those of you who are just using the events out of the box for Shopify and Facebook ads, this is your page views, your view content, add to cart, initiate checkout and purchases.
+
+Those are the only events that you're really tracking. You're not going to have too much to worry about here. And that's just going to kind of be defaulted in your events manager.
+
+However, if you are tracking tons of different custom events that you created yourself, then you're going to have to figure out which one are the eight most important for your domain and then start tracking those. Now, the last thing I want to talk about is how my agency is prepping for the big ISO 14 changes and really what you can learn from that and implement into your own agency, for your own clients, or even for your own business. I think that these are going to be wildly important for anyone who is advertising on Facebook ads in 2021.
+
+So the first thing that I am doing is I am communicating extensively with my clients about what's going on. My friend Andrew Foxwell actually created a great email template that you can use to update your own clients about these changes. However, if you're a business owner or you work on an in-house marketing team, informing your colleagues and your management about these massive changes is going to be just as important.
+
+Something else that you can do now is to implement conversions API or Cappy via Shopify. Immediately, this is going to help attribute even more of your sales to Facebook ads. Again, Andrew has another great blog article about this that I will be linking below.
+
+So at the agency, we've already had this installed for a majority of our clients. So if you don't know what this is or haven't installed it, you need to check this out as soon as possible. Now, the next thing you're going to need to do is you're going to need to verify your domain to your business manager.
+
+So this is going to be really important if you have another agency working on your campaigns, or you have other people working on your ads manager, or if you plan to in the future. I also believe that this domain verification is going to help offset the number of ad account disables that are going around right now. I'll give you directions on how to do this in one of the links below.
+
+Now, the next thing that you're going to need to do is you're going to need to update Facebook's SDK. Now, this is going to help personalized ads be able to be delivered to those on ISO 14 devices. And you can do this in events manager.
+
+However, you're going to need to be an app admin to do so. And essentially what this allows is Facebook SDKs enables you to pass app data from your app to Facebook. And you're going to be able to more accurately track and measure the actions that people are taking in your app.
+
+So this is going to be more important if you have an app number one, and if you are driving campaigns to do app installs. Either way, I think it's something that everyone should do. Now, the next thing I'm really spearheading is I am planning for eight conversion events per domain.
+
+So again, if you are using more than eight conversion events per domain for optimization or for reporting, you need to prepare an action plan on how to operate within the eight conversion events per domain based on your business priorities. And again, if you are using the standard events right out of the box, such as page view, view content, I already listed them all. But if you're, if you really haven't touched doing custom events, this is not really something you have to worry about because Facebook is already going to default to those particular events.
+
+But if you are creating your own events, this is something that you're going to have to take very seriously and create an action plan for. And the last thing I'm going to suggest is you're going to need to do an analysis and figure out what percentage of your conversions are coming after seven days. Again, since the default attribution window of 28 days is no longer going to be available and you're not going to be able even able to see that data in Facebook ads anymore, you're going to need to figure out a little bit more of what your customer journey looks like.
+
+So you're going to have to figure out, okay, are people converting day one, day seven, day 30? And I have a lot more information about that because how you are attributing success to your Facebook ads is about to change. And that is it.
+
+Like I said, I have tons of great resources on the big ISO 14 changes in the description bar below. I'm also going to be including a number of other videos by other YouTubers that really helped me in creating my own video. I think really the biggest thing that you can do is try to inform yourself from multiple resources.
+
+I filmed this video on December 26th. So there is a complete possibility that new information has come out by the time that you're watching this as well as just like something that I missed. This is something that personally I don't feel that I am as strong on as a Facebook advertiser.
+
+So I hope that this video at least helped you boil down really number one, what this big change is all about and some of the big changes that we know is going to happen. But if you want a more interview on it, be sure to check out these other resources. And I'm also going to link to a few other YouTubers again, whose videos helped me out a lot in creating this.
+
+So that is all. This is actually my last video for 2020. I will be seeing you guys in 2021.
+
+one later

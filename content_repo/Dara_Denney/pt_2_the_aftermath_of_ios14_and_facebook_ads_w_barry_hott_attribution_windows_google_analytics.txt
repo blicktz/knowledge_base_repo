@@ -1,0 +1,545 @@
+What's up marketers? Welcome to part two of the aftermath of iOS 14 and Facebook ads where Barry Hott and I tackle your top questions about iOS 14 and how the rollout is affecting our clients at Thesis. If you didn't see part one, be sure to check out that link in the description bar below.
+
+In part one, Barry and I discuss some of your most frequently asked questions such as, should I shift spend to Android? Do bid caps and cost caps work? And how are you guys approaching retargeting?
+
+But before we dive in, I want to thank you so much for your positive feedback on that video. Barry and I have really enjoyed being able to talk with you guys in the comments section or on Twitter. So if you have any questions about part one or part two or anything else we didn't address about iOS 14 and Facebook ads, please hit us up in the comments or on Twitter so that we can continue the conversation.
+
+And I am so excited for you to see part two where Barry and I dive into the questions that the top media buyers are asking about attribution windows and Google Analytics. So without further ado, let's dive in. So next question, which is a biggie, is should I shift my attribution window to one day click?
+
+This is like the big question. And it's impossible to answer. It is impossible to answer.
+
+Yeah. If this is the first time you're asking yourself this, this is also a problem. Because we take over accounts from other advertisers and we get to audit other accounts, right?
+
+We see a lot of accounts that have prior to iOS 14 used conversion windows. They used to be called conversion windows and other attribution windows. Used to use conversion windows that we would not recommend.
+
+They would be seven day click, one day view. I would not recommend using one day view on any of my optimizations because it inflates your stats from conversions that are not actually being driven by your ads. They're not incremental conversions.
+
+And it allows Facebook to optimize to show ads to people that are already likely to convert. So I'm very anti one day view in anything. So that's, that's the first problem is a lot of advertisers.
+
+That's the, that has been the default and they don't know the difference and it's hidden. It's basically hidden in the bottom. You have to like click the show more options thing.
+
+Yeah. It can even come up. So you know, that that's, that's one thing, but prior to the iOS 14 change, this was an easier question to answer because you could opt up, you could have the window set at seven day and have, or, and have another one set at one day.
+
+And then for both of those, you could look at the actual Facebook attribution for the, each of those separate periods. Yeah. So you could see like seven day and then you could just see like what your like view through conversions were separately.
+
+Or the click or the click conversions, right? You could see, yeah, you could see the view through conversion separate from the click conversions, right? Exactly.
+
+And then you could also see one day click conversions separate from the seven day click conversions for either type of window. Yeah. But now it's forced.
+
+So whatever you select is, is, you know, you get what you get and you don't get upset is basically what's happening. So it's, it's basically impossible in Facebook to compare the two or three options. If you do one day click versus seven day click, just as an example, because of, uh, you can't see the one day click conversions for the seven day click attribution.
+
+You can know, it's no longer, you can't even tell if they're forget about apples to apples. You can't even tell if there are two different fruits. Like you can't even tell if they're like, like, you know, a fruit and a vegetable or like a fruit and a steak, like you can't tell because they're totally unrelated, uh, numbers now.
+
+And what makes it even more convoluted is that the one day click numbers include people that opted out, seven day click doesn't. So there's all these things, but like, we're literally testing this right now for a client. Yeah.
+
+And in Facebook, uh, there, there are, they've historically been on seven day click, um, which is, which is fine for a lot of clients historically. I, um, but they're one where I've always kind of said, well, they probably should be on one day click. We're trying to get people to take action today and try and optimize, you know, those are the people we really want, not the people that are considering.
+
+Yeah. I want to pause you there because I want to like confirm with people. Like I want to like, make sure people understand like the difference between seven day click and one day click.
+
+Cause the real problem with trying with like telling Facebook that you want this attribution window is it's not just an attribution window for one. It's also an optimization window. So when you are telling Facebook, Hey, I want to have a seven day click attribution optimization window, you're telling Facebook to find people who will convert within seven days of clicking on an ad.
+
+And when you compare that with looking at P when you compare that with optimizing towards people who convert within one day of clicking on an ad, that's a much higher intent customer and has a lot of implications because if you were just looking at the attribution window, that would be one thing, but when you're optimizing for people who would click, who would purchase within seven days, which is one days, you're fundamentally changing your targeting. And you're looking at a higher subset of people who are going, who are much more likely to take an action quicker. So, but if you're, if you're hearing that and you're asking, well, why would I ever do, why would I, why would anyone not do one day click seven day click makes a lot of sense, especially historically has now, I think it makes less sense, but seven day click makes a lot of sense for brands that have something that has a higher consideration period.
+
+It also makes sense for products or brands that have maybe a higher price or whatever it is. They, you can't spend enough to get enough conversions to complete your learning phase. You would want that seven days of data, assuming that it's something that like the conversions do come in over the seven days.
+
+So again, likely something higher consideration and higher price. Those are things where you'd need that data because you're not going to get enough people that just like see the ad, click the ad and buy, right? It doesn't happen for a lot of products, for a lot of services either.
+
+So that's why you would want to use a seven day click, but you just need to know that it's going to get you different, it's going to get you different users. Like you said, Dara. And like, like I was saying, the test we're running and by the way, actually, Dara, thank you for, for clarifying that super helpful.
+
+But yeah, when we're doing this test right now, it's wild. Like the one day click performance, right? Versus seven day click, same budgets, right?
+
+Same creative. We're just running them, you know, against each other. The one day click CPA is way worse.
+
+It's like $50. Yeah. Seven day click one in Facebook.
+
+It's like $50 in Facebook and like for one day click and like $30 for the seven day click. But in Google analytics, when we look at those, those UTMs for those campaigns, the one day click is actually winning. So we still need to run this for longer because, you know, the seven day click data should, you know, needs more time because there's more people that take longer perhaps versus the one day click one, but we're seeing some weird, really interesting results there.
+
+And what's really going to happen for, for something like that is we have to recalibrate what our Facebook CPA is versus what our actual CPA is. So that we have a goal that makes sense in Facebook because it's very possible that now your Facebook goal doesn't exactly is, or is it's by the way it's never been perfect from Facebook to Google analytics or any other third part tracking, it's always been blurry. If anything, the change from a conversion day reporting versus impression day conversion reporting that should help Facebook and Google analytics or other third party tools actually better align for the most part.
+
+But you're still always, it's always going to be blurry. Yeah. And having, you know, you're going to have to develop a, like just a proxy for whatever your attribution window is to, to understand like, okay, my, my CPA might've used to be $30, but now I know that it needs to be $50 in Facebook, but in, in reality, in GA or Shopify or whatever third party you're using, you might actually be getting $30.
+
+You're still getting a $30, even though it says 50 in, in Facebook, because it's either not tracking people as well or the, the conversions might be happening later and Facebook might not be getting it. So like, that's the problem. If you have someone who converts after three days, three days later, right.
+
+Yeah. On, and you're often, you have the one day click attribution window set that person doesn't, hasn't converted in terms of Facebook ads, but they have converted and it might be able to be attributed through Google analytics or some other third party tracking. So that's what you're going to have to be doing more of.
+
+You're going to have to build a better proxy, build a better representation of how your Facebook ads are doing outside of Facebook ads manager, because that's, first of all, always been a problem, but now it's a much blurrier, bigger problem. Yeah. And I think that, you know, it's, it's cool that you're, we're doing like this test on a client, because if you think that you're on the incorrect attribution window, you can test some one day click versus seven day click over a period of a few weeks, but you're going to have to use GA or another third party tracking to analyze the data to see what's actually working.
+
+So. Because it's going to lose in Facebook. It's going to, it has to, fundamentally, it can't beat it.
+
+And like, that's another terrible thing. Sorry to interrupt you. That's another terrible thing.
+
+If you're like taking over from another, another, another client or something like that, and they're using seven day click and one day view. You're never going to beat them. Yeah.
+
+Yeah. I think we should be using one day click. Yeah.
+
+If we're looking in Facebook ads manager, seven day click, one day view now will always beat seven day click and will always beat one day click. Fundamentally it has to, um, just because it's getting so many more conversions, it can track some more conversions. Whereas the one day click has so few that it can track.
+
+So you have to be looking, you have to test those. You really, really should. If you take away anything from this video, that's the thing you should be playing with.
+
+If you're not already comfortable with your conversion, uh, attribution setting in your ad sets, that's the thing you should go play with. Um, because you got to look in, in Google analytics or again, your third party tracking to see which of those performs best. That is like, that is the biggest change here.
+
+And you probably should have been doing that before the iOS 14 change anyway. Yeah. And another point too, is like when you're going through this process or maybe once you found like, Oh, like I am actually getting better results ultimately from like one day click, you're going to have to recalculate your CAC and your ROAS goals for what is being represented in Facebook, which is going to help you more directionally for things that are going to, you know, for things that you're going to need to look at that are probably going to be more in the ads manager platform, like creative testing and looking at those hook rates and those like click-through rates and being able to more properly evaluate that.
+
+And then looking at the like conversion rate data from that. So, you know, step one, you know, if you decide to test it, um, you'd number one, you're going to be testing every a period of few weeks. This is not an easy solution.
+
+You're not going to get it done within even one month, I'd say like more than a few weeks. Maybe one month. Yeah.
+
+It depends on, depends on how much you're spending and how many conversions you get. Yeah. Yeah.
+
+And then it's still need a month. Yeah. Use third-party tracking like GA to analyze that data, see what's actually working.
+
+And then if you decide to ultimately change your attribution window, and I think going through this exercise, no matter what you're going to realize that you're going to need to recalculate your CAC and ROAS goals. I think that that's something that, um, we're doing with our clients right now. And it hasn't quite got to the point where we're officially shifting over goals, but it's something that we're actively working on and looking at every day, because again, we know that iOS 14 hasn't rolled out in full, but we fully expect within the next few weeks that our in platform.
+
+So like our ads manager tracked CAC and ROAS goals, those will definitely be changing. I would place money on it. Yeah.
+
+Yeah, definitely. And if I can, for one second, I know I already spoke ill of the one day view earlier, but I just want to be, I'm not just like anti that. And I just don't, it's not just a belief I've done the incremental lift tests.
+
+I've seen the cases where we're optimizing in that way. It, it looks much better in ads manager with the one day view, but when you actually do an incremental test, which you can't really do as effectively or at all anymore in Facebook, RIP it's certainly shown that it does, those, those do not match up. I've seen accounts where you see like 50% converted through one day view.
+
+And then when you do that incremental lift, you're seeing that basically zero of those are actually incremental. They wind up being completely, you don't know how or why, what's actually driving those people. But what you do know is that those aren't being driven by Facebook, they're being driven by something else and Facebook served an ad in time ahead of someone making that conversion.
+
+Yeah. And I think too, it's like the way that this, the way that I like to think about this too, with view through conversions is Facebook is super smart, but it's also a little lazy. And if it can attribute, and if it can attribute like a conversion to, to something and it knows that it can get a view through conversion, it's going to more actively go after that instead of going after people who are actually making a click-based action on your ad.
+
+It's just infinitely, it's, it just makes your numbers look so much better. Right. Because Facebook can deliver those impressions super cheap.
+
+Facebook can choose to deliver a right-hand column impression to someone who, if that person's already shown signals to Facebook that they might be interested in buying something for whatever reason, because they have tons of signals that you don't even think about, right? Like tons. They could have already been looking at your page.
+
+You're probably not excluding people that have been to your page. They're probably, they could be targeting someone who's been to other similar products on the internet and like, then you, they find your product and they buy and they happen to have been shown an impression for your, for, from your account, but that didn't motivate them to buy. There's so many things.
+
+So many, so many things, especially, especially for those accounts, the, the, the dreaded setup I hate seeing is one day view included and no exclusions. That is a recipe for disaster, uh, or, or, uh, well, a recipe for terrific success. If you, uh, if you believe the numbers in Facebook, a disaster, if you believe in reality and use any sort of third-party tracking or incremental lift.
+
+Yeah, exactly. I, it's like, if, if for those people that like need to see like a four or five row as, which like just does not happen anymore, or at like at the scale that we often work in, it's like the only way that you could get that is like zero exclusions and view through conversions. Right.
+
+Right. Yeah. I, I question anyone.
+
+And I'm sure there's some people out there still finding weird niches to, to make crazy row as I'm sure there's a few, but like, yeah, anytime I see someone posting a screenshot of like, Oh, here's my 15 X, you know, row as I'm like, all right, but show me the one day click. Like I always wanted people to show, they always just show the default one. I could, I could show off some fancy 28 day click one day view or 28 day click 28 day view back in the days, you know, raw as screenshots, they blow people's minds.
+
+It's just not the game I play, you know, you know? Yeah, absolutely. So I'm glad that we talked a little bit about Google analytics.
+
+Cause another question I've been getting a lot of is how are UTMs and GA tracking going to be affected and should people use this as their source of truth now? As far as I know, UTMs are work. GA is working just as, just as poorly as it was before for tracking Facebook ads, right?
+
+Like again, that's a whole separate can worms. We're not getting into on this call, right? But you're, you're probably your conversions are probably being undercounted on Google analytics or any third part tracking anyway, because people do take longer and people do see and click on ads and then Google it and then come back later.
+
+And that doesn't get attributed to Facebook at all in those platforms. So that's a, that's always going to be a problem, but that problem is not any different now than it was a month ago or two months ago. So yeah, you should still be using Google analytics again.
+
+Maybe I don't know if source of truth, but at least another source of data. Yeah. Your source of truth should always be your, you know, like, well, it's hard, it's hard because there's multi multiple touch attribution and I, yeah, that's a whole nother can worms, but definitely would continue to look at GA.
+
+I would not expect to see a significant change in how Google analytics is attributing. And it's again, a good guide between, to just have as a touch base between Facebook and what you're actually seeing. Especially just to be able to see if you can see a flat line of relative, you know, conversions in GA, but you see a dip in conversions in Facebook, you know, that should be a signal to you to like recalibrate what your, your, your goal cost is in Facebook.
+
+That's what you should be looking for. And yeah, I think that that's pretty much what I would say. Yeah.
+
+I mean, I agree. Like Google, Google analytics and Facebook ads, I mean, have never been a one-to-one comparison. So sort of shifting this to your source of truth, I think is a little bit misleading.
+
+And what we do for a lot of our clients is we try and triangulate that data, like pulling super metrics reports that are looking at Shopify data, looking at certain ads manager data, especially as it's related to in-app experiences, and then trying to fill the gaps with what we're missing using Google analytics. But like, I also don't think we have a perfect solution for it. I don't think anyone does.
+
+I've actually seen a few comments on Twitter. And I had a few people ask me about Hydros tracking, which is like server side tracking, essentially, Kathy. I really want to, I really want to try it.
+
+I really want to try it. Just to see how bad it is. Yeah, I know.
+
+Because he, he waves it around on a USB stick, like he'll, like, get it in the mail. I mean, that's gotta be, I don't know. Yeah, I, I'm not going to say anything, but he, he waves it around on a USB stick in those ads.
+
+I know I see them all the time. Alex Becker, please sponsor this video. Yeah.
+
+Yeah. But I mean, we haven't tried it. I've heard lots of mixed reviews, which I'm not going to report here just because like, I haven't like tried it myself and.
+
+Yeah. You don't want to get sued. Yeah.
+
+Exactly. Like, it's just like, it's, I mean, it's server side tracking. It's similar enough to what Cappy is.
+
+And we do recommend that all of our clients install Cappy. Um, you made a look, what am I wrong about that statement? No, no.
+
+Oh, okay. Sorry. That's not what that's not.
+
+I was just like, I'm not commenting. I have no idea. I don't trust it.
+
+I don't trust it. I mean, I'm so distrustful of so many software things. Yeah.
+
+Yeah. Yeah. In the industry for a long time.
+
+Like a lot of this is just baloney. So I'm not saying that's, that's what this is. But, uh, you know, I've, I've, I've, I just.
+
+I think a lot of people who've worked in the industry for a while are naturally suspicious of like, like software solutions as, as it regards to Facebook ads. Like I know you and I have talked before about like automation platforms, um, and stuff like that. And it's yeah, never, never seen it like work well.
+
+So yeah, maybe we're just too small brained, honestly. Maybe, maybe. Yeah.
+
+I, I mean, I would love to test out like what I would call like a Jesus take the wheel, like automation form for Facebook ads, but I've just, yeah, I've never seen it. Let's do it. Let's talk about this later.
+
+Let's pick one and just like, let's do it. Pick a client and do it later. Okay, cool.
+
+Yeah. Thanks for attending. Automatically see if it'll automatically respond to our clients' slacks as well.
+
+That's what we need. Nah. That's what we need.
+
+Yeah. Okay. So last question.
+
+And then I want us to like go through, like comb through the Twitter thread really quick is if data is going to be delayed up to three days and we're losing signal across the board, how will our approach to creative testing be changing? Yeah. It's, it's on a very, the, yeah, very good question as have all of these been, um, I'm still going to be looking at a lot of the metrics that I can to, to get a good glimpse into anything quickly.
+
+I mean, the thing is we're still going to be getting, we're not losing Android data and that's depending on the account, sometimes 20, sometimes 80%, you know, it depends. Um, but like that's still, that data is still going to come in and you're still, for me, you know, I'm always trying to like compare creative to whatever else I have. Yeah.
+
+So if I'm launching stuff, I'm going to get a quick understanding of like, okay, there's a three day delay on some, some of this data. So what am I used to now when I launch a, a net new ad set of something good, something I know works, uh, what does that look like? And then how do I compare net new creative to that or iterations versus that?
+
+That's how, how I would, you know, be thinking about it. Um, and you know, like I, I always look at the other data to just, I don't dwell on CTRs or CPCs or CPMs, or, uh, I don't dwell on those things because you can have, uh, an ad with a 4% click-through rate that drives no conversions because it's just click bait. Yeah.
+
+Click bait doesn't necessarily a better click-through rate, right? Just because you're getting more people to the site doesn't mean it's going to work. They, you might be deceiving them.
+
+So, and I've seen plenty of people do that. They're like, Oh, just, you know, get people to click at all costs and then it doesn't work well. So you can't just focus on CTR CPC, but you can look at it as a, as a barometer, right?
+
+You, you'll also hopefully know like, yeah, if my CPC is more than $20, I'm not going to get a $30 CPA. Like that's just, you, you have to know that, right? So if you haven't had the bombs, you haven't had the bombs, but we also look at things like hook rate.
+
+Uh, we also things that look at things like hold rates. So we're understanding, um, how much people are looking into how much people are, uh, watching three seconds of a video out of the people that are served it. And then also how many plays there are out of the people that are served it.
+
+So we look at those things. That's not going to answer the question for you. We look at things, you know, upper funnel metrics, like add to carts, initiate checkouts, which again, there might, those might be delayed.
+
+So, you know, we might lose some stuff there, but I think at the same time, you're still going to have a bar. You're still going to be a real, it's still a flat playing field, right? All of the, the, all of the ads that we're going to be testing, all of the ad sets we're testing are going to be affected by this.
+
+So it's not like, you know, we'll still be able to know what a does versus b. And if those are in the realm of not that we split test rigidly like that, but if a or b are anywhere near where we need them to be or not. Yeah.
+
+And I think like an important takeaway from me for that is like, don't think about like creative tests that you've done a month ago or three months ago. And like how those looked like, think about where you are now and what your results look like now. And use that as your guiding light for comparison with creative testing and directionally, if you know, like, okay, like in this core campaign, like these ads are doing well, and this is the kind of data that I'm seeing in ads manager from that, then you can use that as a barometer for your creative tests.
+
+By the way, I know a few other people had asked about dynamic creative testing or dynamic creative optimization. That's not something that traditionally we've used too much at thesis. And I know that like what we'll do with it is like, you know, we'll test it and add accounts, see if we can get like a major win from it.
+
+I think like a, there's a few big changes with iOS 14 and with dynamic creative optimization, correct? Well, we've seen, we do know that you won't have the breakdowns available. So we, we can't see like what creative in a dynamic creative ad set.
+
+You can't see which of those is performing best. You can't see which of the ad copies performing best. You can see which one's getting the most spend, which just to be clear, like 90% of the time, that's what I would focus on because like, by the way, again, if you're hearing this for the first time, go Google Facebook breakdown effect, because what often happens is the second or third best performing, you might see a lower CPA or a higher ROAS, but Facebook's already, if Facebook spending a significant amount more on that, on that top spending ad, that's probably because, or, or element, that's probably because Facebook's already determined that one is the most scalable and would have done better than had it allocated the budget to those other ones.
+
+So don't think that you can be like, oh, dumb Facebook, why don't you spend more on this third best, third top spending one? It's because Facebook probably knows, or you didn't give enough time for Facebook to, to spend it on different ones. But really, the top spending asset in any of those is, is going to probably scale well if you take it out of that dynamic creative.
+
+So that's, that's what I would, I think it'll still be fine, still be usable. Mm-hmm. And yeah, we don't, we don't use them much because they're, they're harder to scale, harder for us to iterate, harder for us to report on.
+
+Yeah. But they are valuable. I like them.
+
+I've used them in the past. I, I use them sometimes for, for some purposes. And I like them.
+
+I do. I, you know, you should use them more. Yeah.
+
+Previous to me coming to thesis and, you know, obviously pre iOS 14, I use them as a way to rapidly test creatives for some, for some clients, I found that this was really effective. Like we were able to find like the best combinations of like headlines, copy, creative, and then relaunch that. But I actually found that the effectiveness of that over time wasn't as strong as just creating the, like the assets, like as a singular asset.
+
+And yeah, because it's such a pain to create those dynamic creative ad sets and edit them. Yeah. Yeah.
+
+There's, they're really not, they're not really great to work with. So you're better off. It's so much easier just to duplicate an ad set, edit all the ads and let it rip with new copy and then do it again.
+
+And you have a little bit more control. Yeah. That, that to me like is, is, is a little bit more scalable.
+
+But I do kind of, there is a lot I like about the dynamic creative testing stuff. The thing I like the most for is for images. Images.
+
+I don't love it as much for video, but I do like it more for being able to quickly test a bundle of images with like, especially if they're all net new and I have new copy, I want to test with them. That's when I'll really enjoy doing the dynamic creative optimization. Yeah.
+
+And like, would you just like find like the best winners and then be able to launch those into like core or something? Yeah. Yep.
+
+Or, or then I have my next steps. If I, because as you know, you don't know, like you could, you could hand me a thousand images and even, even though I've spent, you know, probably almost a billion dollars on Facebook ads now, I couldn't tell you the ones that are going to perform best. Yeah.
+
+Like fundamentally can't. So you gotta just pick the, you know, pick a bunch that you think are going to work, especially when you get a big payload of images, you gotta, that's a great way to just spit out a bunch, uh, and find something, get something to rise up to the top. I've, I've done that multiple times now to find an image that can work and scale over time.
+
+An image that we can use in videos, an image that we can use in carousels and couldn't have done it without using a dynamic creative ad to test 10 images against each other, realize eight of them are total garbage. One of them sucks. And one of them is great.
+
+You know, like, and that is pretty cool. Um, when that you can do it, or sometimes you just find out all 10 are terrible, move on. Um, I just, uh, did that for ranch water, just had two dynamic creative image tests, just completely waste waste money.
+
+Couldn't, couldn't, couldn't barely get a conversion. So, um, that happens too. But yeah.
+
+Yeah. And I find too that like a cool thing, a cool or possibly negative thing, depending on your perspective about dynamic creative testing or optimization is that they don't hold on to social proof as well. Cause if you're thinking about it, you have like five ads, you have five headlines, you have 10 creatives, you had five primary texts and each of those different combinations is going to attract its own, every unique combination is going to hold on to that social proof.
+
+So a lot of times the, like the social proof is, looks like it's a lot less. Right. And it's really hard to track, but it could be good for some brands.
+
+It could be good for some brands, especially if you are attracting negative comments for whatever reason, or you find it very hard to, um, you find it very hard to monitor your comments, then that might be something I would suggest. Exactly. That is exactly the right solution, uh, that I was about to say.
+
+So I'm thrilled you said that. Yeah. Such a, it's such a fun trick.
+
+And that's, I think that's why when there's so many times there's all these people that hate, like say like, Oh, dynamic creative works so much better in scales, whatever. It's probably because it's preventing people from vandalizing your act. Yes.
+
+Like it, which is good. You know, I'm not saying that I'm against it. I'm like for it, but like, it's so funny to me.
+
+People are like, think that they're outsmarting the algorithm or outsmarting like these things, but it's really, there's like real users that view these ads and those, those are humans that have thoughts and feelings and they have eyeballs and they use them. And it's very likely that they're using them to see the negative comments on your ads. And they're like, Oh, not buying this.
+
+So that I think happens more than you, uh, than people believe. And like you said, dynamic creative prevents that. Exactly.
+
+And, uh, yeah, just the importance of checking your, your ad comments yet again and how it can like make your content sink or swim. Cool. So looking through Twitter, one that I see, and I think relates to something we touched on earlier is do catalog sales campaigns still work post iOS 14 or catalog sales campaign is no longer recording purchases.
+
+Our other conversion campaigns still work. We spoke with our Facebook rep and several support agents and they can't give me a resolution to this issue. Well, I think number one, like, do they still fundamentally work?
+
+Yes. I haven't seen anything terribly broken for any of our clients. This, this sounds like a niche issue, but like we had touched on before, I think that particularly dynamic cattle or like catalog sales retargeting, we're going to see a bigger and perhaps the biggest degradation of, um, results there.
+
+And what I mean by results is like reporting essentially. So we could be losing that's, that has the potential to be where we're losing the most signal. So that's my perspective.
+
+I'm not sure if you've, if you have another one. Yeah. That sounds like a, a funky technical issue.
+
+A funky tech issue. Yeah. Yeah.
+
+I don't, I don't know, like to maybe double check your pixels set up, your domain set up. Um, we, we recently had an issue with a newer client where they like, didn't have a portion of their site was on a different domain. Like on a, part of the site was like on a different Shopify domain.
+
+So that wasn't verified. So they weren't able to get stuff there. So it is possible if your site, here it is.
+
+If your site, I did just answer this. I think I solved it. I think I solved the puzzle.
+
+If, if you're driving to like Shopify and you're that, whatever that domain is, is not verified, is not pixel verified. Uh, and people are taking actions on there. Add to cart view content.
+
+Right. That's not getting passed back. So you wouldn't be able to do dynamic ads.
+
+Yeah. So what you're saying, if those people didn't prioritize those events, it's not being passed back. No, not that it didn't prioritize them.
+
+If it's on a different domain. Mm. Okay.
+
+But maybe if these, do you think also though, if they already verified the domain or they like, they have the same domain, but they didn't prioritize those events. That could also be a potential issue. Oh, they didn't even add it at all.
+
+Oh my gosh. Yeah. Yeah.
+
+For sure. That is definitely a problem. We also had it with a client.
+
+Yeah. For sure. Yeah.
+
+They didn't have add to cart or initiate checkout or view content in there. Yeah. So yeah, those, those both, I would bet, I would bet it's the domain because it's not uncommon for people to have their, like their website and then like the Shopify.
+
+Shopify is still like uses the Shopify.com URL, which would not work anymore. And I bet there's a lot of people that are dealing with that and they don't understand how or why. I really hope that's it.
+
+And I am so sorry if that's not, but if it's not, I'll be very surprised, but it does. Yeah. That it's one of the, it's gotta be one of those two things.
+
+Other question. How can we use UGC on the top of funnel more effectively? Now, when I first saw this question, I was like, well, number one, like just a layup of a question.
+
+Yeah. Like just, just, just use it and just test it. But I think, you know, we actually want, we actually posted a new blog post today on the thesis on the thesis blog website that was written by laser.
+
+laser. Who's one of our growth team leads. It's an awesome article about the 20 different iterative tests you can do on creative and, you know, I think.
+
+You and I both contributed to that. I think. Yes.
+
+I mean, laser laser did most of the work, but you know, we put some good ideas in there. Yeah. But essentially like the, what this article is about, it's about the 20 different types of iterative tests you can do on creative.
+
+And really what we're using this document for is when we find creative that works, we are then we're not just using that creative until it dies and then trying something net new. We're trying to make several different iterations to that, to always continually make it better. And this is a really good way to fight creative ad fatigue and also just actually bring home fundamental learnings about what is improving your creative ad performance.
+
+So adding things like different, like different end cards, adding things like a different hook, changing up the first three seconds. If you want more, you got to read the blog. You got to go read that blog post.
+
+Exactly. But if you know, for the specific question, how can we use UGC on top of funnel more effectively is when you find something that hits make do tests of different iterations of that creative to find, to make actual learnings about what is actually, you know, what is actually performing well with that specific creative. So I'll be sure to link that in the description bar below.
+
+Yeah. And I'll add, I mean, I think we answered that earlier. I think we talked earlier about focusing on targeting broadly with your creative.
+
+Yes. Making UGC. If you're making it yourself, how the thinking, like when I'm creating this, how do I make this the most broadly appealing thing rather than how do I make this like funny to my friends?
+
+How do I make this funny to more people or more interesting to more people or more relevant to more people? And then also the more broader question or answer would be use UGC from many different people. Yes.
+
+Yeah. Right. The more people that are in your ad that can be related, related to the more people that can see themselves in your ad, the more people that can pay attention, will pay attention and care and buy your product.
+
+That's it. Simple. Exactly.
+
+I mean, this is something that we've done for several clients is like, and it's going to sound kind of crunchy when I say it, but like making a matrix of like the different types of ages and the different types of people and, and backgrounds that you have like featured in your UGC and make sure that you're, you know, showcasing a variety of voices and unique viewpoints. This is something that like we're concentrating quite a bit on and is really great to, once you get past the stage of testing single testimonials and you start like, you know, combining them into compilations, which is like where I think the real fun is too. Next question.
+
+Next question. Raba wants to know if we've been seeing creative winners dying faster than previously since the rollout. You know, I, I've responded to like what kind of creative they're talking about, because that would matter more.
+
+I would expect to see, you know, user generated content, testimonial type stuff. I would expect to see that get more negative comments and fade out quicker. Yeah.
+
+But, you know, going back to all that stuff we talked about earlier about just moderating comments on it, making sure you're looking for that. That's probably what's happening more. But I haven't seen anything tangible about creative, like lasting for a shorter period since iOS 14.
+
+But, you know, it's definitely something that's been happening over the last many years. I've seen things like don't last very long, particularly in the UGC world, where either it's from negative comments building up or I think they go that people, you know, Facebook will blast it out to the people that I'll think is most relevant to and it fades quickly. You might just, you know, not understand why it might be more niche than you think it is.
+
+It might only be relevant to a smaller pocket of people that maybe look like you. Yeah. Or look like the person in the ad might be who it resonates with or the opposite.
+
+You know, like I sometimes think about that, like maybe I'm maybe the ads that I'm in only work to people that find me attractive. Right. Like, like, let's, you know what I mean?
+
+Like, like, I don't mean that from like a people find me attractive standpoint. I mean that from like a numbers standpoint. Yeah.
+
+Maybe if I put a prettier person in this ad instead of me, it would do better just at scale. I mean, but it's not always about attractiveness. It's about like weirdness or like, you know, willing to watch this person do something.
+
+Yeah. Right. It's a lot, a lot of those things, but like there is something there of like, well, if I looked different, different people would pay attention to what I'm saying and how I'm saying.
+
+And not only like different people are going to pay attention. It's just like the way that Facebook works. Facebook is fundamentally going to deliver that to different people.
+
+So it's like, there's so many. Based on how people, based on how other people are doing. Yeah.
+
+Yeah. It's not random. It's not like Facebook.
+
+I don't think Facebook, there's a system, they're analyzing the creative, like frame by frame. Like, okay, it's this person with this thing. And that's not happening as much as it's showing it to some people.
+
+And then based on who engages with it, who, who pays attention to it. That's the thing that Facebook does. There's a metric there that we don't see is attention.
+
+Yeah. People that pay attention to ads, which is like currency to Facebook, people that pay attention to ads. That's what it's looking for quickly.
+
+And that's how Facebook can, can optimize quicker than we ever could, is it's looking at those other factors that it has in its control that it doesn't tell us or doesn't report on. So that's what I firmly believe. But maybe it is scanning frame by videos, frame by frame to look for trends and things that have worked before and match it up to people who have engaged with those things before.
+
+It's possible. I would say that I believe some of that is happening, but like spoiler alert guys, that is based on no like real logic and no real like evidence. It's just like a gut, like Facebook theory that if you've worked any time in the platform, you end up developing for yourself.
+
+Another question I think is interesting is how do you make decisions on turning on or off ad sets and ads? And what I think that this person is actually asking is like, do we use like Google analytics and look at our UTM data to determine whether or not we're turning off ad sets and ads? Do I look at GA before I turn off an ad set?
+
+Yeah. No. Yeah.
+
+I don't have the time. Yeah. Not yet.
+
+Not yet. Yeah. Not, I would say not yet.
+
+I could see, I feel like I'm popping. I'm in Google analytics way more than I used to be like pre iOS 14, even like just pre this year. Um, and, but what I'm looking at there is way more directional data on how like Facebook ads are doing as a whole.
+
+Yeah. And I think that there, I could see a world in which I am like segmenting and looking at like specific ad set data. I don't know about ads.
+
+That seems like very down the rabbit hole, but I could see a world in which I'm doing that, but I'm not doing it now. So. I mean, the, the question, right.
+
+Is like, how do I make decisions on turning off on off ad sets and ads? Like, because the whole thing we talked about, right. This whole time was like, it's, I'm still making the same decision.
+
+As I was, but the, as we've talked about this whole time, it's just maybe based on a different number. And as that number is maybe a different proxy for what the actual sales are, but I'm not going to, I wouldn't recommend anyone spending a lot of time going from Facebook. Yeah.
+
+For at the ad or ad set level to rely on the UTMs to go back to GA and be like, okay, let me see what it is here. Or, you know, even if you have it automated through super metrics or whatever. Right.
+
+I still wouldn't really focus too heavily on that. That's like not necessary. You should be able to get the data in Facebook from the pixel enough to make your decisions comparatively about like what's working and what's not.
+
+Yeah. It's just that data that you're now analyzing and ads manager, it looks different. And like, you have to change with it.
+
+Another question from Matt lady, who's actually going to be my next interview guest. Oh, yeah. He asks, are you using CBO?
+
+And if so, when? When the mood strikes? When you're feeling like CBO.
+
+Yeah. I mean, I, and I'm going to speak in incredibly broad terms, not even thinking about any client or account in particular. And across the board, I feel like for testing, we are primarily using ad set budgeting so that we can control the amount of spend that every test or batch of creatives is getting.
+
+That's pretty standard. I would work with a few growth managers at thesis that use CBO and instead opt to use minimum ad set budgets or maximum ad set budgets. And that's totally fine.
+
+I don't actually see a big divergence between results in using either method. And I think that it is, this question is largely says more about the media buyer than it says about like conventional wisdom about what does better. Yeah.
+
+As my personal viewpoint, but like, I prefer to use ABO for, for testing and I prefer to use CBO for scaling, but there are like, I've, I've diverted from that. Um, yeah, pretty much. Yeah.
+
+That's my, I've almost the exact same sentiment. I just, I've been burned by CBO so many times. It's really like disappointing.
+
+It's, and it's gotten better. It's gotten so much better over time, but like, like a year and a half, like two years ago. Oh my God.
+
+Um, but yeah, especially, I do like the ingenuity of creative testing with CBO and setting minimums. So it does allow, it does, there is a benefit to that. And for a lot of people who are like, listen, if, who are listening to this, there is a benefit to that.
+
+If you like, don't want to pay attention to it a lot. The benefit can be that you can just like launch new creative in there, set a minimum. So it makes sure it gets them spend at a maximum if you want to prevent any major damage, but maybe don't even, and then just like let them fight it out.
+
+There is absolutely some value to that. Yeah. Um, that works.
+
+I mean, it's, I think it's not as I'd rather be able to force some stuff based on, cause right. When you do that with CBO, it only does that based on the top, whatever you're optimizing to is that one metric purchase typically for us. Right.
+
+But I, as a human with eyes who can look at ads manager and I can see cost per ad to cart, cost per initiate checkout, those things change quicker. I might be able to be actually more aggressive. I might see an ad just that we just launched yesterday has a really low cost per ad to cart.
+
+And I might be like, Ooh, this one's, this one's got something here. And I might crank that baby up. Yeah.
+
+Um, and similar to the problem with CBO on the other hand is when you're trying to like scale down something that's getting a lot of spend and it's not doing well, your choices aren't great. Your choices are turn it off, but turning it off isn't great because you're turning off an ad set that is getting a lot of spend, which means Facebook thinks it's going to do good, which means that whatever isn't getting as much spend probably isn't going to do that well. Yeah.
+
+That's not good. You're, you can scale back your overall campaign budget, which is probably counterintuitive to what you actually need to be doing, which is scaling. And you know, those, uh, you can also set like a camp on ads at max, but then that's just really annoying.
+
+And to this day, too much to my chagrin, Facebook has not added in a column to be able to show you an ads manager, the ads at minimum and ads at maximum. Oh my God. I know.
+
+Absolutely insane to me that that's still not a thing after however long CBO has been in existence. I like demanded that the first week that CBO was unveiled. And I think they do that intentionally to prevent you from using it commonly.
+
+Uh, like using it frequently. They don't want you, they don't want you. That wouldn't, that would fundamentally make CBO much more user friendly.
+
+And I could see a world in which I would test it more. Right. Like you, like you CBO for testing more, but.
+
+To be able to bulk edit those in that way, or just quickly go down the line and see it because it's, you can't even see, you can't even see an ad set budget minimum or maximum in ads manager without clicking into that ad set. Yep. I, gosh, I hope there's someone who's like, yeah, you can.
+
+And there's some trick. I just don't know. Yeah, I know.
+
+Please comment below. Gee, like make. So happy.
+
+Make our day. Yeah, please do. Please do.
+
+Or if anyone. I'd pay that person $10. Or if anyone from Facebook is watching this, like.
+
+They're not. They don't care. They're not.
+
+They definitely haven't watched this long. That's for sure. I'm going to trim.
+
+I'm seriously going to have us trim that piece. And I'm going to, I'm going to put that in a Facebook group to some engineers so they can see us laugh at the stupidity of that. It's bad.
+
+Yeah. Yeah. No, please do.
+
+Cause I. So other question. Do you have any thoughts on landing pages versus PDPs and has it changed at all since iOS 14?
+
+Uh, I mean, will we work? We're very biased. We work at a company that's known for their landing pages.
+
+So all about landing pages. I think I'll just give a quick note, which is that you can try a landing page versus a PDP and the landing page might lose. That doesn't mean landing pages don't work the same way.
+
+Like, you know, using UGC one time doesn't mean UGC doesn't work or using a, you know, whatever one time. So just using a landing page doesn't mean it's good enough. It's got to be fast.
+
+It's got to be relevant. It's got to have, you know, simple, easy to ingest stuff. And it's got to drive people to do the action that you want them to do.
+
+Um, play with it. Uh, landing pages are, from my experience, almost always going to win. You want to be playing with your landing pages more than you want to be playing with your, your PDPs.
+
+So yeah. And I have no reason to think that they'd be doing worse. Where I remember the, the, the, the fear that I felt when they, they first announced the iOS 14 changes and domain stuff.
+
+And I was like, Oh, there goes our whole business. Because I thought sub domains, weren't going to be included. Oh God.
+
+Yeah. Sub domains are happily included and part of the domain verification. Thankfully, like they're just part of whatever the main domain is.
+
+So nothing's lost there. Um, the only other, you know, there's some GA loss sometimes in, if you don't set up your like GA tracking from one sub domain to another back. There's some that I've seen that deter people from landing pages before because they didn't set it up properly or don't understand.
+
+Um, they're like, Oh, it's much worse. I don't know. Um, but in reality it's a technical issue.
+
+Um, so yeah, from, from a Facebook ads perspective, uh, if I'm ever driving something directly to a PDP, you know, I expect that I can beat it with a landing page that goes to that same PDP eventually, uh, or even better case scenario. I can create a landing page that has the add to cart and send someone to check that specific product. But if it, you know, it depends on what you're dealing with.
+
+If you're dealing with a, you know, brand that has many products or has one product, whatever it is, there's different ways you can, you can go about that. But yeah, I would expect LP over PDP all day. And that's, we can, let's make that a t-shirt.
+
+Let's do that. That should be our next thesis or t-shirt. Yeah.
+
+T-shirt. Thank you. Trademark.
+
+Yeah. Thank you. I'm going to slack that to someone right now.
+
+Yes, please. I think actually the only play, like the only reason I'd see like PDPs winning over landers is if it was in retargeting perhaps. And that's only if the, like, if the user journey or the amount of clicks it took to check out was expat, like if it was a lot longer on the landing page, which sometimes it can be.
+
+But like you're saying you should have like an add to cart or like a cart, like already added onto your landing page in that instance. So yeah. But I think like we haven't seen a big divergence on that, but I don't think that that's like a data point that we've been specifically looking at.
+
+Like since iOS 14 have landers versus PDPs, like have that date has that data changed? No, I'd say not. So yeah.
+
+Yeah, it's it's, you know, say by the way, same thing as category pages, by the way, don't assume that your PDP is, is, is the, is the winner. You know, I recommend to anyone once in a while, test an ad to your homepage, test an ad to a category page, you know, or a multiproduct page or any, any, any section. But almost always, you know, again, giving away free tips here almost always drive someone to give that gives them more drug someone just a page that gives them more context and more of a reason to buy.
+
+Yeah. Rather than just like a, here is the thing you should buy it. Here's the price and size.
+
+That's not always the best way to sell something from an ad on Facebook. Yeah. And we can potentially edit this out, but most common landing pages, successes that we see involve listicles, sometimes a list of quiz, sometimes a overview page.
+
+And if this is too much about list of quiz is, is trademark. That's confidential. No, I mean like no one knows what that is.
+
+Right. Like it's a, it's a, you know, listicle that goes into a quiz. Yeah.
+
+We can, we can, we can say this, like, look, great. If someone wants to go produce that themselves, they don't need to hire us. Be our guest and send us the link so that we can see it.
+
+We'd love it. We'll rip it apart. We'll give you some free advice, but no, like, yeah, go, go for it.
+
+Make those. Like you don't need us to make, to make those, you, you know, if you want us, we're, we're very, we're going to make a better one than you. Yeah.
+
+And we're going to optimize it better over time than you probably, but, and, and continue to iterate it well, but you know, but yeah, anyone who's not doing a lot with that stuff. Yeah. Go, go use any of those cheap landing page tools.
+
+Pay a little bit of money and, and use, what are, what are some of those good ones? Instapage, Unbounce. What's the one that integrates with Shopify?
+
+Shogun. Shogun. Shogun.
+
+Shogun. Yeah. And it's, it's a little slow, a little clunky, but we'll get the job done probably.
+
+And you could probably beat a PDP with a Shogun page. Yeah. And if that's something that you're not testing and haven't tested pre or post iOS 14, like that I would consider a high fidelity test.
+
+Agreed. So, you know, absolutely agree. Like, and be ready to fail, be ready to fail.
+
+But like, if you're not that far off, if your performance is close, then keep tweaking it. Cause you, you can, if you can beat that PDP, you'll have way more freedom to do stuff on a landing page than you would on a PDP. Yeah.
+
+Yeah. Oh, and, and that's because the traffic is different. The people that come into your homepage and go to a PDP are very different and you wouldn't want to modify that page for those people.
+
+It's very different than the people that are coming directly from an ad into your site via a landing page. That context, that feeling that, that where they are in their life cycle, their buying cycle is very different. So you want to, you want to cater to that.
+
+Yeah, absolutely. So next step, I actually love this question. And more than I love this question, I loved her response to you was our conversion ads still going to work.
+
+And then you said, yes. And Sandra Staab said, great storytelling, Barry. I also, I got a IRL, LOL.
+
+That made my day actually, because like, look, I absolutely am being obnoxious by just saying yes and not handing any context to that. I really hope she's getting to watch this because the fact that she gave me crap about it makes like warms my heart. I really do enjoy that.
+
+But yeah, the conversion ads are still working. Like, if not, I don't know, I want to say we'd be out of business, but like, I'm sure we'd still be in business just doing optimizing this something else. Yeah.
+
+Yeah. And like when I initially saw this question immediately, I thought, compared to what else? Like, we don't have another option to make this work.
+
+Unless like Facebook comes out with a supercharged objective that would bypass like these quote unquote issues. But like, our conversion ads still going to work? Yes, they are.
+
+They are definitely not going to be tracked and reported on as well. And that's just kind of part of the game. But yeah, you know, it's it's the same question of when people say like, I when I saw that question, I immediately thought back to the millions of times people have asked me like, or told me Facebook ads are so expensive.
+
+And I'm like, compared to what though? Like, yeah, have you tried advertising on TV or like in a newspaper or something like that is very expensive compared to like $10 CPMs, which could be expensive to some people, but we don't have another option with conversion ads. And there's still definitely the choice.
+
+The choice. That look, if conversion ads did go away, right? We're still going to be the people that are going to be the best at making traffic ads, get people to convert.
+
+You better believe that, you know, like, that's, that'll be it. That'll be such a fun game to have to play. Is, you know, it's the same game.
+
+It's we've been preparing for this our whole lives. We're already, you know, aggressively doing that. So nothing changes for us.
+
+For us as as, as people that understand what ads can convert, we're still going to be the best of anyone that can be doing that. But yeah, there would be some loss there. But like, also if no one on the planet could optimize the conversions and everyone just optimizing the link clicks, then like, then the Facebook would just be delivering the ads to different people.
+
+And those people would be more likely to convert versus today. If you optimize the link clicks, people, the people that are likely to purchase are not as likely to be the people that Facebook delivers to the people that are just link clickers, you know? So yeah, there's, there's a lot there that you'd have to like really understand or think about, about like how Facebook optimizes to, delivers ads to different people and why, and how that would change fundamentally if every single advertiser couldn't do that anymore.
+
+That would like, that changes a lot of things. And that's the thing a lot of advertisers forget about by the way, is like, we're just focused on purchase, you know, conversions purchase. Yeah.
+
+We still have to fight our impressions. Still have to fight with advertisers that are out there for link clicks, advertisers that are out there for brand dollars, advertisers that are out there for local regions, right? Like there's, you know, if there's high competition in a geo in a specific city for some reason, right?
+
+Yeah. Like that's gonna, we're gonna spend less there because Facebook's just gonna be like, well, these are taken care of. So let's deliver elsewhere.
+
+Like there's so much complexity to it. Trying to understand it all is really not not a great exercise, not really worthwhile. Yeah.
+
+Yeah. And that's coming from someone who kind of understands it pretty well. Like, yeah, really trying to get all of it is not, is not net positive.

@@ -30,7 +30,7 @@ class MultiTenantMigration:
         self.persona_manager = PersonaManager(settings)
         
         # Backup paths
-        self.backup_dir = Path(settings.storage.artifacts_dir).parent / "backup_pre_migration"
+        self.backup_dir = Path(settings.storage.base_storage_dir) / "backup_pre_migration"
         
     def backup_existing_data(self):
         """Create backup of existing data before migration"""

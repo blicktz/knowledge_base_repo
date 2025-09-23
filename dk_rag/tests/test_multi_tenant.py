@@ -28,8 +28,7 @@ def test_persona_isolation():
     with tempfile.TemporaryDirectory() as temp_dir:
         # Create test settings with temp directory
         settings = Settings.from_default_config()
-        settings.storage.artifacts_dir = f"{temp_dir}/artifacts"
-        settings.storage.vector_db_dir = f"{temp_dir}/vector_db"
+        # Note: Using temp directory for personas base path in tests
         
         # Initialize persona manager
         persona_manager = PersonaManager(settings)
@@ -47,7 +46,7 @@ def test_persona_isolation():
         
         # Test 2: Verify persona directories exist
         logger.info("\n[Test 2] Verifying persona directories...")
-        personas_dir = Path(settings.storage.artifacts_dir).parent / "personas"
+        personas_dir = persona_manager.personas_base_dir
         
         for persona_id in [persona1_id, persona2_id, persona3_id]:
             persona_dir = personas_dir / persona_id

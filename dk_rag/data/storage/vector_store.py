@@ -122,6 +122,28 @@ class VectorStore:
         
         return collection
     
+    def _log_configuration_info(self):
+        """Log vector store configuration information."""
+        try:
+            config = self.settings.vector_db.config if hasattr(self.settings.vector_db, 'config') else self.settings.vector_db
+            model_name = config.get('embedding_model', 'sentence-transformers/all-mpnet-base-v2') if isinstance(config, dict) else getattr(config, 'embedding_model', 'sentence-transformers/all-mpnet-base-v2')
+            
+            self.logger.info("=" * 60)
+            self.logger.info("VECTOR STORE CONFIGURATION")
+            self.logger.info("=" * 60)
+            self.logger.info(f"Embedding Model: {model_name}")
+            self.logger.info(f"Collection Name: {self.collection.name}")
+            self.logger.info(f"Persona ID: {self.persona_id}")
+            self.logger.info(f"Distance Metric: {config.get('distance_metric', 'cosine') if isinstance(config, dict) else getattr(config, 'distance_metric', 'cosine')}")
+            
+            # Get current collection stats
+            current_stats = self.get_collection_stats()
+            self.logger.info(f"Current chunks in collection: {current_stats.get('total_chunks', 0)}")
+            self.logger.info("=" * 60)
+            
+        except Exception as e:
+            self.logger.warning(f"Failed to log configuration info: {e}")
+    
     def add_documents(self, documents: Union[List[str], List[Dict[str, Any]]], metadatas: Optional[List[Dict[str, Any]]] = None, ids: Optional[List[str]] = None) -> List[str]:
         """
         Add documents to the vector store.
@@ -158,6 +180,9 @@ class VectorStore:
             raise ValueError("documents, metadatas, and ids must have the same length")
         
         try:
+            # Log configuration info before indexing
+            self._log_configuration_info()
+            
             # Log the start of indexing
             self.logger.info(f"Starting to index {len(doc_texts)} documents/chunks in vector store...")
             
@@ -188,6 +213,10 @@ class VectorStore:
                     self.logger.info(f"Vector indexing progress: batch {batch_num}/{total_batches} ({batch_num/total_batches*100:.1f}%) - {end_idx}/{len(doc_texts)} documents indexed")
                 
                 self.logger.info(f"Vector indexing complete: {len(doc_texts)} documents indexed in vector store")
+            
+            # Verify indexing was successful
+            final_stats = self.get_collection_stats()
+            self.logger.info(f"Post-indexing verification: Collection now contains {final_stats.get('total_chunks', 0)} total chunks")
             
             return ids
             
@@ -238,13 +267,14 @@ class VectorStore:
         try:
             count = self.collection.count()
             return {
-                'document_count': count,
+                'total_chunks': count,
+                'document_count': count,  # Keep both for backward compatibility
                 'collection_name': self.collection.name,
                 'persona_id': self.persona_id
             }
         except Exception as e:
             self.logger.error(f"Failed to get collection stats: {e}")
-            return {'document_count': 0, 'collection_name': 'unknown', 'persona_id': self.persona_id}
+            return {'total_chunks': 0, 'document_count': 0, 'collection_name': 'unknown', 'persona_id': self.persona_id}
     
     def delete_collection(self):
         """Delete the entire collection."""

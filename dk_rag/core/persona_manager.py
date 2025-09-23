@@ -27,7 +27,7 @@ class PersonaManager:
         self.logger = get_logger(__name__)
         
         # Setup base personas directory
-        self.personas_base_dir = Path(self.settings.storage.artifacts_dir).parent / "personas"
+        self.personas_base_dir = Path(self.settings.get_personas_base_dir())
         self.personas_base_dir.mkdir(parents=True, exist_ok=True)
         
         # Cache of loaded vector stores
@@ -184,9 +184,6 @@ class PersonaManager:
         
         # Update vector DB path
         persona_settings.vector_db.config['persist_directory'] = str(persona_dir / "vector_db")
-        
-        # Update artifacts path
-        persona_settings.storage.artifacts_dir = str(persona_dir / "artifacts")
         
         # Update collection name to be persona-specific
         persona_settings.vector_db.config['collection_name'] = f"{persona_id}_documents"

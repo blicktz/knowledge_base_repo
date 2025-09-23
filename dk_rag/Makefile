@@ -268,6 +268,7 @@ clean-llm-cache: ## Clean only LLM map-reduce result caches (preserves statistic
 .PHONY: clean-all
 clean-all: clean ## Clean everything including vector DB, caches, and personas (DESTRUCTIVE!)
 	@echo "$(RED)⚠ WARNING: This will delete all data including vector DB, personas, and caches!$(NC)"
+	@echo "$(YELLOW)Note: This assumes default storage location (./data/storage). Custom storage directories require manual cleanup.$(NC)"
 	@echo "$(YELLOW)This includes:$(NC)"
 	@echo "  - Vector database (ChromaDB)"
 	@echo "  - All persona artifacts"
@@ -276,15 +277,17 @@ clean-all: clean ## Clean everything including vector DB, caches, and personas (
 	@echo "  - Log files"
 	@read -p "Are you sure? [y/N]: " confirm; \
 	if [ "$$confirm" = "y" ] || [ "$$confirm" = "Y" ]; then \
-		echo "$(BLUE)Removing vector database...$(NC)"; \
-		rm -rf data/storage/chroma_db/* 2>/dev/null || true; \
+		echo "$(BLUE)Removing persona vector databases...$(NC)"; \
+		rm -rf data/storage/personas/*/vector_db/* 2>/dev/null || true; \
 		echo "$(BLUE)Removing persona artifacts...$(NC)"; \
-		rm -rf data/storage/artifacts/* 2>/dev/null || true; \
+		rm -rf data/storage/personas/*/artifacts/* 2>/dev/null || true; \
+		echo "$(BLUE)Removing persona registry...$(NC)"; \
+		rm -f data/storage/personas/persona_registry.json 2>/dev/null || true; \
 		echo "$(BLUE)Cleaning statistical analysis caches...$(NC)"; \
 		rm -rf data/storage/personas/*/analysis_cache/* 2>/dev/null || true; \
 		echo "$(BLUE)Cleaning map-reduce extraction caches...$(NC)"; \
 		rm -rf data/storage/personas/*/map_reduce_cache/* 2>/dev/null || true; \
-		echo "$(BLUE)Removing persona directories (if empty)...$(NC)"; \
+		echo "$(BLUE)Removing empty persona directories...$(NC)"; \
 		find data/storage/personas -type d -name "*cache" -empty -delete 2>/dev/null || true; \
 		find data/storage/personas -type d -mindepth 1 -empty -delete 2>/dev/null || true; \
 		echo "$(BLUE)Removing log files...$(NC)"; \

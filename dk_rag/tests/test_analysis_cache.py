@@ -30,8 +30,7 @@ def test_analysis_caching():
     with tempfile.TemporaryDirectory() as temp_dir:
         # Create test settings with temp directory
         settings = Settings.from_default_config()
-        settings.storage.artifacts_dir = f"{temp_dir}/artifacts"
-        settings.storage.vector_db_dir = f"{temp_dir}/vector_db"
+        # Note: Using temp directory for test
         
         # Test persona
         persona_id = "test_persona"

@@ -65,9 +65,7 @@ class DataProcessingConfig(BaseModel):
 
 class StorageConfig(BaseModel):
     """Configuration for data storage"""
-    artifacts_dir: str = Field(default="./data/storage/artifacts", description="Artifacts directory")
-    vector_db_dir: str = Field(default="./data/storage/chroma_db", description="Vector DB directory") 
-    cache_dir: str = Field(default="./data/storage/cache", description="Cache directory")
+    base_storage_dir: str = Field(default="./data/storage", description="Base storage directory for all data")
     logs_dir: str = Field(default="./logs", description="Logs directory")
     backup: Dict[str, Any] = Field(default_factory=dict, description="Backup configuration")
     compression: Dict[str, Any] = Field(default_factory=dict, description="Compression settings")
@@ -185,47 +183,40 @@ class Settings(BaseModel):
         return config_data or {}
     
     def _ensure_directories(self):
-        """Ensure all required directories exist"""
-        directories = [
-            self.storage.artifacts_dir,
-            self.storage.vector_db_dir,
-            self.storage.cache_dir,
-            self.storage.logs_dir
-        ]
-        
-        for directory in directories:
-            Path(directory).mkdir(parents=True, exist_ok=True)
+        """Ensure required directories exist"""
+        # Only create logs directory - persona-specific directories are created by PersonaManager
+        Path(self.storage.logs_dir).mkdir(parents=True, exist_ok=True)
     
     def get_llm_config(self) -> Dict[str, Any]:
         """Get LLM configuration with resolved environment variables"""
         return self.llm.config
     
     def get_vector_db_path(self, persona_id: Optional[str] = None) -> str:
-        """Get absolute path to vector database, optionally for a specific persona"""
-        if persona_id:
-            base_dir = Path(self.storage.vector_db_dir).parent / "personas" / persona_id / "vector_db"
-            return str(base_dir.resolve())
-        return str(Path(self.storage.vector_db_dir).resolve())
+        """Get absolute path to vector database for a specific persona"""
+        if not persona_id:
+            raise ValueError("persona_id is required - single-tenant mode is no longer supported")
+        base_dir = Path(self.storage.base_storage_dir) / "personas" / persona_id / "vector_db"
+        return str(base_dir.resolve())
     
     def get_artifacts_path(self, persona_id: Optional[str] = None) -> str:
-        """Get absolute path to artifacts directory, optionally for a specific persona"""
-        if persona_id:
-            base_dir = Path(self.storage.artifacts_dir).parent / "personas" / persona_id / "artifacts"
-            return str(base_dir.resolve())
-        return str(Path(self.storage.artifacts_dir).resolve())
+        """Get absolute path to artifacts directory for a specific persona"""
+        if not persona_id:
+            raise ValueError("persona_id is required - single-tenant mode is no longer supported")
+        base_dir = Path(self.storage.base_storage_dir) / "personas" / persona_id / "artifacts"
+        return str(base_dir.resolve())
     
     def get_persona_base_path(self, persona_id: str) -> str:
         """Get the base directory path for a specific persona"""
-        base_dir = Path(self.storage.artifacts_dir).parent / "personas" / persona_id
+        base_dir = Path(self.storage.base_storage_dir) / "personas" / persona_id
         return str(base_dir.resolve())
-    
-    def get_cache_path(self) -> str:
-        """Get absolute path to cache directory"""
-        return str(Path(self.storage.cache_dir).resolve())
     
     def get_logs_path(self) -> str:
         """Get absolute path to logs directory"""
         return str(Path(self.storage.logs_dir).resolve())
+    
+    def get_personas_base_dir(self) -> str:
+        """Get absolute path to personas base directory"""
+        return str(Path(self.storage.base_storage_dir) / "personas")
     
     def is_debug_mode(self) -> bool:
         """Check if debug mode is enabled"""
@@ -259,15 +250,17 @@ class Settings(BaseModel):
         if not api_key:
             issues.append("LLM API key not configured")
         
-        # Check directory permissions
+        # Check base storage directory permissions
         try:
-            test_file = Path(self.storage.artifacts_dir) / "test_write"
+            base_storage = Path(self.storage.base_storage_dir)
+            base_storage.mkdir(parents=True, exist_ok=True)
+            test_file = base_storage / "test_write"
             test_file.touch()
             test_file.unlink()
         except PermissionError:
-            issues.append(f"No write permission to artifacts directory: {self.storage.artifacts_dir}")
+            issues.append(f"No write permission to storage directory: {base_storage}")
         except Exception as e:
-            issues.append(f"Cannot access artifacts directory: {e}")
+            issues.append(f"Cannot access storage directory: {e}")
         
         # Check model availability
         spacy_model = self.statistical_analysis.spacy.get('model', 'en_core_web_sm')
