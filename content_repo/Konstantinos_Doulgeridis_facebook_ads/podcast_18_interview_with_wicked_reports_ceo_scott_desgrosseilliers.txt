@@ -1,0 +1,759 @@
+Υπότιτλοι AUTHORWAVE But today we have a different podcast. We're going to do the first interview of the channel. And I recently met Scott.
+
+We had a discussion and we decided that we're going to do an interview, but it's going to be a different interview from the other interviews that you might see. And they're related to this kind of programs. I'm not going to include any link in the description.
+
+It's not going to be a paid interview. Scott didn't give me any money for it. So it's just going to be a discussion between two people that they are passionate about data, because this is the common element that we have with Scott and the way that we can actually track them better.
+
+Because in my case, they helped me to have better optimization. In Scott's case, they help him to track them better so that he can give more information to his customers about the product. So the questions have not been given to him.
+
+He doesn't know what am I going to ask him. And our agreement is that he has to answer to everything that I'm going to ask. So, Scott, nice to have you here.
+
+I would like to make an effort to say your last name. I will try to use all of my friends' accents. It's going to be De Grossier.
+
+Oh, that is a beautiful pronunciation. It's beautiful? Really?
+
+Okay. So, is it Canadian? I'm French Canadian.
+
+So, the first, well, the De Grossier, my lineage, he came over on a boat, the Nonsuch, and claimed the Hudson Bay for France. Okay. Okay.
+
+Makes sense. And then he had relations with an Indian, and I'm French Indian. Ah, really?
+
+You're French Indian? Yep. Okay.
+
+Like Indian, like the Native Americans? Oh, like Native American, Canadian Indian. Canadian Indian.
+
+Okay. Makes sense. So, I would like to start the interview, first of all, with my first question, which is, can you tell us a little bit about your background, your profession and stuff?
+
+How did you end up thinking about Wicked Reports and how everything started? Because from my experience, I have seen Wicked Reports after iOS. No, I knew it before, I guess.
+
+But to me, it's one of the oldest programs that they're out there for this job that it's doing. It is not like the other programs that they came after iOS. So, I would like to know what made you create this product before the iOS?
+
+That means that you show a market gap over there. And what's your background and how everything started? Sure.
+
+So, my background is, I have a finance degree, but I was always into data since I was about 11 years old. I'm now 51. So, 40 years ago, I had a natural love for data.
+
+I love statistics for sports. I used to go to the horse track with my dad and, you know, the horse races, there's stats in the program. And I was fascinated with using the stats to try to predict the horses to win.
+
+And in a way, that's Wicked Reports is trying to use the stats to predict what horses are successful at that. I did. I did not bad.
+
+You know, I do $2. I was a 12 year old. I do all the bets.
+
+We will have to talk after the interview. Maybe we can bet on some horses, I guess. Yeah.
+
+And then I used to use statistics for fantasy sports, you know, draft players for your own teams. And this was back in the 80s and 90s. And I would generally always win, actually, because I was using data other people weren't.
+
+And so, and I would play some advanced leagues where you take your statistics and you'd have a budget and you could bid on the players in an auction. And so I've always loved doing that type of stuff. And then after I got my degree in finance is I was a day trader in the mid late 90s.
+
+That was before that was a common thing. You had to use the phone. You had to download the trades.
+
+It'd take like four to five hours to get the stats. Then you'd be on the phone trying to trade. And so I've been, you know, kind of cutting it, you know, early adopter into a lot of things that have to do with numbers and stats.
+
+Just my passion. I love it. I still do.
+
+And so how it came about Wicca Reports. So I was, I worked at Motorola for a long time running, you know, back when the Razer phone, they were really popular. All their data.
+
+We're working on them. We're in the country, the world. We were delivering the phones, a lot of complex IT projects.
+
+Can you say, because you cut off a little bit there with your connection. Can you say it a little bit more? You were working in a Motorola?
+
+Motorola. Motorola. So you're tracking.
+
+I was in the phone department. And so I was tracking, you know, databases to track many, many things around the phones. And then I managed the teams that would code up the interfaces to run my data.
+
+And then I was at apartments.com running a bunch of databases for them. And at that time, this is, I think 2013. Memory serves correct.
+
+My friend, Mark at getmainlobster.com. I was doing some side hustle with him doing some of his shopping cart work and commerce. He's like, hey, Facebook, it's terrible to sell lobster online.
+
+And I said, oh, yeah, why is that? And he said, well, I spent four grand. I got 12,000 clicks.
+
+I only made one sale for 200 bucks. I lost my shirt because that was his budget at the time was four grand. Okay.
+
+And I was like, well, I mean, how do you know you lost your shirt? And he said, well, Facebook told me I made one sale. I was like, well, did any of them buy?
+
+Because he was really good at doing email. This is in fact, you do these really fun emails. And I was like, well, what if someone bought off the emails eventually?
+
+And he's like, well, I don't know. And so I looked around for software at the time and it was like nothing. There was literally nothing out there, particularly for an SMB.
+
+He was around 2 million a year at the time, a million. Okay. And so I hacked something up.
+
+And we decided to test out this idea I had on how I thought I could track if people bought from his emails after Facebook ads, which is still a thing people don't understand. And I think we'll get into today. Don't seem to understand well enough how it works.
+
+So our region of the, I know you got a global audience. So we decided to test out his particular product selling lobsters online. It's a very New England region.
+
+It's a region of the US where they're very popular. and then elsewhere. It's usually quite expensive because you can only get them in this certain region and it's tough to ship it.
+
+And he had a way to do that. And so what we targeted was people that liked our sports teams, but didn't live in the region. because we thought, you know, the only reason they're going to be fans of our sports teams and not live here is because they used to live here.
+
+And therefore they'll have an affinity for the food they grew up with or, you know, it's very intertwined, the food and the sports. So we run the ad as a decent idea and we run an ad. And what we did was, you know, you opt in and you get free shipping or some deal like that, some coupon.
+
+You run the ad. He'd redirect him to the page that was already on his e-commerce store that already did the offer without opting in. But the ad, you know, you're in an ad, you don't know.
+
+Opt it in, redirect them. That was it. Very simple.
+
+And he spent 5,000 bucks and it took him about a month to spend the five grand and he broke even at the time. And then he turned them off. He's like, well, I broke even, but after product costs, I lost money.
+
+So I guess Facebook still doesn't work. And I was like, well, let's see. I can keep now that I know who came in from this offer.
+
+I'll keep tracking it, pulling his sales every day and doing all this pivot table, Excel work. And lo and behold, after three months, he had made 10 to one on his money because all the delayed conversions that were happening as people got comfortable with his brand or, you know, some of these people are busy. Like maybe I was going to buy something right now.
+
+And then I'm like, oh, crap. I got my interview with Constantinos. And then I miss the I forget.
+
+And then I get busy with my kids and I know all the bonds. And maybe the email reminds me in two weeks and I buy. So that type of stuff was happening with his product.
+
+All sorts of things. All sorts of reasons people didn't buy immediately. But then the light bulb went off in his head and he started spending more and more.
+
+and now he literally he drives no exaggeration three to 500 K a month from Facebook. And he was not going to do it. So that was like even now.
+
+And Gary first case day was an extreme example of the success of how understanding attribution can really lead to big dollars if you have the right framework. Even now he's doing it. Even now he's spending this amount of money after the eyes and after everything.
+
+He's still. Oh, yeah. Okay.
+
+And when did I started back in which state? He started in 2014 and he slowly scaled up and has been ebbs and flows for all sorts of reasons, but never an ebb down to where he's he's always consistently making more than he's putting in on it. 2014.
+
+That's crazy. And at that point, even with the 28 days attribution model, he couldn't see the sales coming even delayed on that thing. And we get reports was the only solution.
+
+2014. The tracking was very, I mean, Facebook's evolved there. Now it's a model delayed conversion.
+
+Who knows what that number is? Yeah. But at the time it was, you know, I think it was his WooCommerce.
+
+He had WooCommerce and I think the pixel wasn't set up right. Okay. Okay.
+
+It should have showed some of the sales, but the delay, the way Facebook tracks is very different from how we track. And so it's not ever going to, it's not designed to line up and it shouldn't actually. If we line up with Facebook, you shouldn't be spending with us.
+
+You should just use Facebook. Which takes me to my next question actually. Tell us a little bit.
+
+How are you tracking? What are you doing differently? Are you tracking from as far as I know, most of these companies were like yours that were using API before even Facebook actually used API.
+
+and Facebook was using pixel. I understand the concept of Facebook to be honest with you Scott. I think that Facebook tried to create a platform which was going to be for dummies.
+
+Okay. You have no clue. You come inside.
+
+You put a code, which is the pixel. You do this. You do that.
+
+Because the API brought also the need of developers being able to know how to do it and stuff. Companies like yours, they have always a team of people helping people to install the API. so that it's going to track properly.
+
+So Facebook was saying, okay, I want to make a platform which is going to be friendly for everyone. And even damage can use it. You just do it.
+
+You just run some ads and boom, it's working. And it was working like this. So in case, as I like to say, back in 2016, 18, you can take somebody who had the brain surgery, take him to a computer to do some Facebook ads and he was going to have sales.
+
+It was that easy. So the whole thing is that the game became more difficult and the more things that they were putting in order to fix things, they made the platform super complex after some point because they were adding to it all the time. So tell us a little bit about it.
+
+Did you start having API from the beginning? How was it? Did you track with more data points like the, I don't know, their IPs, whatever?
+
+Tell us a little bit. I'm very curious to understand. Sure.
+
+And it helps to understand. So Facebook, why they could, you know, what made it so good is they had your phone number through their login, you know, because they'd say, hey, we're going to text you a code login. So they would just send the phone number to Facebook, to Apple, and Apple would spit out everything you've done.
+
+And they just read that in as the Bible and use that for their tracking. So they didn't need to worry about the things they now need to worry about. That was one thing.
+
+And then the second thing is they were third party. So they're using that data for all sorts of reasons that aren't illegal or anything, but it they're tracking you off site. So they're tracking everywhere you're going.
+
+And they're using your phone number to look it up. And those two things are radically different than how we do it. So that the foundation is couldn't be more different.
+
+So what I started back in 2014 and I'm, you know, I'm trying to get a patent in this, but it's tough to get IP patents. So I don't know if we'll get it or not. It's not a thing I would recommend because it's a lot of money in time and not much result.
+
+But we started from a real order and look back in time. Just a second. You're saying that all the other companies that came after you, they copied your model.
+
+This is what we're saying. Yeah, I am the first one. I have prior art and in the patent world.
+
+And this is what you're saying that that all the companies like Hyros, Triple Whale, whoever came out, they just copied your model. This is what you say. They are using exactly the same thing.
+
+I don't know what they decided to do when they sat down to create their code. At least the methodology. They use the same methodology of starting from an order and looking back.
+
+We were the first people, particularly from our direct competitors, because we were the first ones around. And that's how I coded it back in 2013. And those companies didn't exist then.
+
+So whether they also had the idea and then said, Oh, hey, look, you know, I don't know, because at the end of the day, it doesn't matter if you track every click successfully. It doesn't matter what your model is. The whole point of all this attribution is that you're improving your ROAS or you're getting more clarity on what's working.
+
+And however that happens, if you can confidently make more return on your money or quit wasting money, then the platform's doing its job. The methodology and the mechanics of it don't necessarily matter at the end of the day. That being said, I love talking about them and look forward to doing it today.
+
+But people would get on the calls and be back in the old days. Well, oh, I had 20 orders and you only track 19. 19.
+
+I'd be like, who cares? What if I tracked all 20 and you didn't make any money? You didn't get any insight from the data, then it wouldn't matter.
+
+Wouldn't matter if I track. People were super spoiled at the start of Facebook. They're super.
+
+And there are still people that are crying babies about Facebook and after iOS. Some of them, they just said, no, I'm not going to do it anymore. I'm not getting 100% of what they was getting.
+
+I'm not going to continue doing it there. There's just they were just super spoiled with it. Yeah, I don't know yet.
+
+They was the glory days are over, but there's still a lot of money to be made. In my opinion, I see. But I mean, so we would look back from an order and then we also pull in data from the CRM because I mean, what the most important and accurate data you have is your sales.
+
+The second most important source of data is your CRM. So we started with those two things right from the get go, because those are like the Bible of data that we know we can trust. And then we add in clicks, IPs, device identifiers, merging of profiles of emails based on logic that we can trust.
+
+We think why some two different emails are the same person. We had all kinds of these things going on so that we can look back in time and create a use a graph of all the activity. And then we then we went out with funnel vision.
+
+We map based on all this concept of your funnel, meaning cold traffic that is not in your first party data. Middle funnel that has been in your first party data, but isn't ready quite to buy yet. And then bottom funnel, which is they should be buying based on this clicker.
+
+It's it's go time and we create hack and row as and all these LTV models for those different parts of the funnel. So you can because nowadays with the glory days, we know, on Facebook, you've got to look at each part of the funnel and optimize it accordingly. You're doing that with your messaging and your targeting.
+
+You've got to do that with your data as well. And if you don't, you're leaving money on the table, in my opinion. So from what what am I understanding if I would I would try to make it simpler.
+
+Okay, so we get a point as a program that's going to show you track better. What is happening in reality with your account? We will go later on on the interview.
+
+I will tell you my honest opinion on how I used it and what you did with me. But in order to understand it, Facebook, what it was having back in the days, I'm not going to talk about now with API. Maybe they fixed it a little bit better, but let's talk about earlier.
+
+They were having what we call user ID. Okay, so whoever was coming from Facebook, you had a unique ID, which was identified that it was Konstantinos. It was Scott that is doing specific actions inside that the pixel was capturing.
+
+And then that's it. But what you did is that you came inside and you said, okay, let's use also the phone number. Let's use also track them based on a different data point.
+
+Like, I don't know, you will tell me something that makes sense. Not only the remain, for example, but not only the more entry data points. Okay, so I will say stupid example.
+
+Maybe you don't their IP, for example. Okay, maybe we can track them based on the program that they are using as if they use Firefox or Google Chrome. Maybe we will track them based on what kind of files they are doing to the side with different entry points.
+
+And then understand that instead of having just one user ID, we have, let's say, 200 or 100 different identifications for this person so that we will be able to do it again and again. Even if some of those identifications factor are missing from the equation, if I'm correct. And now on top of that, Facebook was doing it only for 28 days.
+
+You will do it for life. Okay, so somebody can come now and by five months later, you are going to capture it. Am I correct in the way that I understand it?
+
+Yep. Perfect. The other thing where Facebook was misleading was they've since got more accurate on this piece was you could have a 28 day view attribution.
+
+And so think of all the times you're on Facebook and all the crap on your screen. Yeah, yeah. Well, if you scrolled by something, you viewed it and nobody, nobody was watching the 28 days view attribution.
+
+You had to be stupid to watch because you were watching three rows and it's 13 rows with the other view. And by the way, it wasn't even set on the conversion on the attribution setting on the bottom. It wasn't even set as that.
+
+And the only thing that you could do with 28 view is to see it on the columns if you want it, but nobody was watching it. By the way, back in the day, you could also go and touch it and say that I want to see the results on my account on my columns. based on seven days attribution or not based on 28 days attribution.
+
+And companies that they were having very strong omnipresence with a lot of different platforms. Yes, they were actually putting it on seven days even before the iOS was coming out. And another thing that I think that your program is doing perfectly well is the last click.
+
+If you are running ads on Pinterest, Google, Facebook, blah, blah, blah. And with last click, you can see where the user clicked last and what was the actual ad? Was it Facebook, Google?
+
+Who made him actually buy it? Yeah. You need to do multi, you need to have a multi channel solution though, because otherwise, if you go in and take Pinterest view and then Microsoft's and then Facebook and Google's, you're likely to have three times, four times the sales.
+
+sales, if you add up all those conversions, they're all good at looking back. Yeah. And so that's why looking at it full funnel makes more sense because Pinterest might say, hey, we sold something.
+
+And really that was a top of the funnel 25 days ago. Click still important in the journey, but you need to know where so you can optimize the spend. If you're thinking it's the bottom of the funnel and I'll just spend more and I'll make more.
+
+No, you got to be able to a lot of these econ brands, the SMS and email close a lot and they still close a lot. And no matter how much people think they don't or do. They do.
+
+They're very good. So you need to be continually hammering that home. And then the paid has to feed into that channel is a lot of the reverse engineering of all this data to make a result.
+
+Yeah. The way that I see it, Scott, and tell me if I'm right. Right now, the biggest battle is between Google and Facebook.
+
+And it's always this battle that I even go to brands and working with them. And because I'm improving the results on Facebook, then the Google team that is doing the Google ads, they say that they also have improved progress. But I know that they're stealing sales from each other.
+
+Okay. In my opinion, it's fine. You're a data guy.
+
+I'm a data guy. Even if it's stealing, if it's using it for optimization, fine, let it be. But let's know the actual truth of what is happening there.
+
+And for me, this is why these programs are very important in order to know who is actually bringing the volume and stuff, but not using them actually for optimization because we need to trust whatever Facebook sees as optimization data and not what we have over there as actual results in the platform. Well, there's some cases where you don't need Facebook's pixel to optimize for you as much as you think. Okay.
+
+Particularly on cold traffic top of the funnel. So if you're a sales cycle, let's say, you know, you think even in natural econ brand, if you're selling something that's more than a hundred bucks, there's probably a couple weeks consideration in there. Okay.
+
+Generally, not always, but generally. And so Facebook might never, their pixel with the seven day click window might never be able to show you revenue, no matter how much you pipe in with a conversion API and think you're fixing things. You can't, it just will refuse to acknowledge the revenue because it's more than seven days from the click.
+
+But if you get a top of the funnel ad and you're just doing like likes my competitor, lookalikes of my customers, all the usuals, but it's cold brand new exposure to your brand, but they, they see something and they opt in for a contest or a free shipping or buy one, get whatever your deal is. If they're opting in there and it takes a couple of weeks to close them, Facebook might never see or purport rosy results, but you're still making good money. And I literally just cut videos for our explainer videos for our product where this particular one day in one day was March 14th.
+
+This was a couple of days ago, 12 sales total on Facebook. and really he had 66. That's an extreme example because of people taking time to buy people buying more of the people that bought outside the seven day click window was literally 54 additional sales.
+
+And that's a dramatic amount. This is someone spending, you know, a 90 grand a month, a hundred grand a month. The more you spend, the bigger the results, but you're talking five times.
+
+He has five times the row as that Facebook is showing. So if you, you, if, and his cat was 69 bucks, which you can't do, but his cat was really 19. If you knew about all the delayed sales.
+
+Now, this is not really an extreme example. It happens. Brands come in, people buy right away.
+
+And I'm like, well, I know they do, but a lot still buy later. and that's going to make you happy. Once you've seen a couple iterations of buying cycles, go through this, this guy's had a lot of iterations of that.
+
+So we had that much more delayed revenue. I think I am going to show up in, it's not going to show up in there, but you still would spend in my opinion, because he's still making money. I think I have seen your, your, your last newsletter.
+
+Most probably this is what you're referring to. Yeah. I have seen it today.
+
+Yesterday. Which I wanted to touch on also to tell you something. So I have some more questions, but I'm going to do it later.
+
+Since you touched on this technical thing, I want to do something different in this interview. I'm going to say how I use wicked reports, my opinion, and then you can also comment on that. Okay.
+
+So first of all, since you touched it already, you are mentioning that, yes, you are having some sales, but Facebook is lying on the reporting. And my, my view on that, and let me tell you that because there are so many companies and so many agencies that they are actually getting paid a commission from a triple wave from whoever in order to convince the clients to use it. because it's another income for them.
+
+They convince them that they have to optimize through that way. Let me tell you what is, what's my opinion about it. By using it, I realized that first of all, the claim that a lot of companies had like Hyros, that you can fix the iOS 14.5 problem.
+
+It was a false claim. And it never came because, and it makes total sense in my opinion, because I believe that Alex Becker, which sold the company eventually. Alex Becker is having an audience of dropshippers of younger people, not established business.
+
+Most of them and so on, most of them are doing on crypto and stuff. So it's all about the hustle mentality. And all of these people, they were actually wanting to have a blueprint.
+
+Okay. Now it's the situation is not okay. Give us a solution that we can just put in and it's going to work and so on.
+
+And then it created the mentality that this program programs are actually solving the problem of the iOS 14.5 and the reporting and everything. And you can use them in order to continue without nothing changing into your platform, which I strongly disagree. What's your opinion?
+
+There, there was no way to fix the iOS issues. So any claim of that was complete BS because Facebook could not use the Facebook suddenly could not look up your phone number and use the results without your approval, no matter how they got the data. They get the data in.
+
+And so we're a Facebook conversion partner. So we talked to Facebook about it. Hey, how can we get you data?
+
+You can use. They say you can't. Well, you can get us more data.
+
+Great. Because Facebook was also loving the idea that the conversion API was going to help because that was giving them more data for their cohort models of how they're going to do conversion modeling. So they wanted it for that and they wanted it to use for to help with lookalikes, but they can't take the data you send them and suddenly send it to Apple to get the read out of what you're doing on your phone and virtually everyone opted out of.
+
+I want the most extreme example. I heard 96% opted out. I don't know.
+
+95. 95. Yeah.
+
+So these are the data that they come up. I always get so irritated, but it was great. This data is coming from Apple.
+
+Apple has announced that 95% of users opted out. Now, when I break down my results now on the platform and on the people, I can see that while in the iOS 14.5 we had much more Android users having sales doing the purchases and everything. Now what I can see is that again, the iOS users are more.
+
+Okay. So I don't know if this 95% and only 5% in United States state to continue using and being advertised is correct. But this is what Apple announced 95%.
+
+What that means is Facebook can't look up your results. Yeah. Using your phone number.
+
+It doesn't mean Facebook ads don't still work. It means all the ways that Facebook had hinged all their data on having this pristine browsing history from your iPhone. Yeah.
+
+They lost that which then started to degrade things because it was very, very good at working with that data set and they haven't been able to recover from the fact they can't get. Yeah. They still could do all sorts of things that they aren't doing, but they never recovered from that particular loss that admittedly very valuable stream of data.
+
+Since you're talking to them, I have I have one question. So they talk about and you also mentioned it conversion modeling. Basically, Facebook is saying that we can you can start one campaign and we can calculate how many sales you're going to get.
+
+So we're putting a number and by the time that you're going to start getting data, these numbers going to be close to reality. Okay. So that's just guessing.
+
+Okay. What kind of sense to you are you're going to have. Do you think that Facebook is doing this in a big scale and they're actually guessing?
+
+or these are actual results that they're reporting because I'm a little bit skeptical about the conversion modeling, as they said. Conversion modeling has its place in time, and it's only as good as the model and the data going in. and your business model may mean that it's a very black box situation.
+
+So basically, if they're conversion modeling, if you follow it and it leads to more money in your pocket, then it was good. And if not, then it was so I keep on an individual advertising basis. It's a it's probably a coin flip.
+
+Overall, I mean, they had to do something. Do they have the capacity of doing it? Is it accurate?
+
+Pardon me? Do they have the capacity of doing it? Is it accurate?
+
+What do you think? They have the capacity to do it. Yeah, they had.
+
+Well, I don't know. They're laying off a lot of folks now, but they had a ton of people sitting in all the, you know, I'd go out there, you know, they have a humongous campus of people doing all sorts of data oriented things. But they never did understand the delayed conversion.
+
+I mean, I had it was 80% so this, but this is fresh because I just cut the video literally two days ago. That lobster guy 80% of his conversions are greater than seven days. We're talking tens and tens of thousands of dollars a month.
+
+And they never understood that fact. Very few people understood it. Like I'd be out there.
+
+Wow. Look at how much ROI we can show you. And they still would be like, wait, how are you?
+
+Why? And they would just think, oh, go back. Just keep widening the click window.
+
+I'd be like, no, like they're they're closing on email and SMS, but Facebook's really valuable. Just more top and middle people aren't clicking and buying on Facebook as much as you guys like to think they do, but not as much. But there's a bunch more revenue.
+
+If you look up in middle funnel, they never got it. So I mean, the fact that the people I mean, we talked to people just a couple down from Zuck, you know, so I mean, they didn't get it. So that means it didn't make it into the data model for that particular.
+
+So why do you think, Scott, that this has happened actually? Because at some point what? And by the way, I would like to share your opinion about why do you think that Apple did this?
+
+because it's a company that because of Steve Jobs, it has deep roots in monopoly. They say this is our people, our data. We are only the ones that we're going to take money out of the people's data.
+
+Facebook, no. Do you think that it's because of their mentality or it was something else? Because I don't buy I don't buy the excuse of we want to protect our people's data.
+
+I just don't buy it. No, Apple. Yeah, I don't think that I think they saw a chance to hurt arrival to get more ad spend on their Apple platform.
+
+Okay. And just for them to make more money while hurting arrival. I mean, another another close monopoly for them.
+
+Another close monopoly. They're still using all the data. They didn't say they're not going to use it.
+
+Okay. Okay. I don't think they're all this altruistic.
+
+I mean, they there's all sorts of Apple stories on how they, you know, sweatshops in China to make the phones. Okay. All sorts of Apple stories that aren't the most flattering.
+
+So basically, it's two giants that they're just battling for their toy, which is their users basically. Yep. Okay.
+
+Perfect. So another thing. Why do you think that we left the 28 days attribution model while it was working well for Facebook?
+
+And we know that it was reporting also for that. It shared a lot of businesses that they were selling high ticket items like your friend. I'm guessing that he's getting big orders for the lobsters.
+
+And why do you think because we had less data? It was another technical thing that we don't know. Why they didn't use the API before?
+
+Did they just not see it coming from Apple and they were just living in a sugar cloud thinking that nothing is going to happen? So tell us a little bit about that. So first, let's talk about the conversion API because we were the second person, second company ever white listed for the conversion API.
+
+We literally had it years before, two years before it came out or 18 months. So I'm very familiar with it. I know the engineer that wrote it like, and they need it.
+
+So the API is only the work of one person? Just one engineer? No, they're a particular solution engineer that would first deal with the customers, us being the customer of the API.
+
+They initially only had two people using it, so they didn't need it. There was other people building it, but this was the person that would deal with the ad tech companies. Nice.
+
+They only had one because they only had two companies using it when they started. So he, what was interesting to me on that was that they need conversions within an hour of them happening or else it's going to degrade your performance. Okay.
+
+Because we were like, why not batch them in? Because these conversions are taking a week to do and they're trying to, the ad bidding algorithm needed the conversions. If, if they were stale by more than an hour, it was not good news.
+
+And if they were stale by like six or eight hours, it could hurt performance. So speed was important, but I was like, that doesn't jive with how long people are taking to convert you. So if you have a 28 day window on a sale, but the algorithm needs to optimize based on a sale happens within an hour of a click.
+
+Or an hour of it happening hour of the sale happening, they need to know those two things are in opposition in terms of trying to optimize. And so that is what they had to shrink it down because however they're doing their algorithms don't those rules just don't add up. So that's why they shortened it in my opinion.
+
+It was based on that insight. Now, no one, they can't reveal like precisely why they're doing and not doing, but. Which is difficult to make sense to me because we, we've integrated with Google and we, we send them in once a day because then they readjust as they see the delayed conversions that it makes more sense.
+
+Yeah. Okay. Which, which brings me to my next two questions then.
+
+So when I was optimizing by using wikid reports, Kairos, triple wave, and I wasn't watching all the data of Facebook. Then the results, even, even on a campaign that it was reporting very well. Okay.
+
+Then the results while I was scaling, the results were becoming worse because Facebook was using the data that it could see, not the data from wikid reports and stuff. Because there are companies like Kairos that I, I met personally engineers over there for some of my clients. And they said, no, it's reporting the data back to the asset level in order to use it for optimization.
+
+How does Facebook work? It says, Kostantinos did an action and bought something. They're going to find a similar person.
+
+And then it finds Scott. And then it says, Kostantinos and Scott did it. So I'm going to find a similar person like this too.
+
+And it goes like this. To my experience, when I was optimizing, it wasn't reporting the data back to the asset level to continue this process. You could have an idea if it's working or not.
+
+So you were just optimizing on the idea, but you were optimizing and scaling on the idea, but you were not scaling based on the fact that it was having 20 sales there that are reported. And these 20 people are going to be used for optimization to find more. And this is my take on how these programs have been used.
+
+And I didn't use them for optimization. I use them in order to know a general picture of how the company is actually doing. What's your opinion on that?
+
+I think you can use the data to scale. But you shouldn't try to be a day trader on the algorithm because it's reporting conversions that are modeled and delayed up to 72 hours. So if you think you're in there doing a day trader, oh, look, I got seven sales day.
+
+I'm going to spend a day based on the last seven days. Yes. Not day trading.
+
+I think you can use it to make more because I think when ad sets are showing as profitable, you should start incrementing the spend up because they're profitable. And then you need that conversion. How long they're taking to convert.
+
+You don't immediately. So if people are taking seven days to convert and you bought X amount of cohorts each day, you know, say you bought 10 and 10 people are converting a day, then you're going to increase your spend that those new clicks you bought day eight, because the first seven, they need their week to convert before you're going to see the lift. And I know as a, but I know I mean to buy two, like it, when you increase spend, you want to see more revenue that very next day.
+
+It sucks. It sucks waiting, but that, uh, the revenue, the RO, the return you're seeing is based on a period of time. So you need to give it the same amount of time, which, and then it may be that you fished out the ad set and there ain't enough people left.
+
+And therefore you spent seven more days and you found out your return. Isn't like, if you made a hundred percent in seven days, you need another seven days to get your new spend to get to that level too, because it's a, you know, this is trickle in a people. And, and maybe the reason why you showed the set, all these sales is because you sent the great email and a great SMS, and then you bought people on day eight.
+
+They haven't got that email and SMS yet, which is going to lift your ROAS. If you're not sending them the same stuff at the same time, you got to evaluate all on the same timeline. And it's very hard for people to do that.
+
+Okay. So my personal experience is this, that I'm running ads. I'm watching wicked reports, hires, triple whale, whatever.
+
+And then, uh, for example, in Facebook, I'm getting the report of 10 sales on hires on wicked reports on triple whale, because I'm using all of them. This is why I mentioned all of them. Uh, I'm, I'm getting, uh, 20 sales.
+
+Okay. Okay. If I continue scaling my campaign with the pace of the 20 sales and not with the pace and the growth that I see with the 10 sales, then I'm going to start spending a lot of money while Facebook is using the 10 sales, the 10 sales data to find more people.
+
+So from my experience, by using that and using only watching the other platform that it was giving me the actual results, that was becoming a gamble because some campaigns were scaling and they're failing. immediately because they had less data as a base. And some of those were not.
+
+You're assuming it's because they had less data. Why did they fail? Let's say it's an ad set.
+
+This is an ad set. Let's keep a small number. Let's pretend you're doing the 10 sales a day.
+
+And there is only actually a thousand legitimate customers to get in that ad set. You can exhaust an ad set because they just, the quality goes down in the ad set itself. You have to eventually.
+
+So I'm not saying there is, sometimes it is. I'm talking about consistency. So whatever I'm telling you, I was doing it for months in order to decide.
+
+And do you know what I realized that I said to myself, okay, I'm going to, I'm not going to aim for two rows, for example, in the platform of Facebook. I'm going to point on 1.6, go lower on my rows because I know that some sales are not going to be reported. And I'm going to optimize based on the 1.6, but not based on the two rows that I see in reality.
+
+Because if two rows is reported on WIKI reports and I'm going to continue optimizing this campaign based on what I see on WIKI reports, then the row as in reality and in the platform are going to drop and I'm going to drop to 1.8, 1.6. So what I realized is that I want to optimize with the data that they see on the platform. So I'm lowering my rows below and my expectations of the platform while I know that in reality they are going to report more.
+
+And of course, I'm checking WIKI reports in order to understand what is my balance that they have to keep right now on as a row as on Facebook in order to optimize with the data that Facebook sees. Okay, I'm guessing that WIKI reports is not saying that it's giving data back to the asset level for optimization, but it's saying that it's showing the actual picture. Am I correct?
+
+It is going to show the actual picture because we're using order IDs, which we've done since the beginning. But based on different models, we won't double count the order unless you pick a model where we can over count because it's more for signal and less for order level accuracy. So yeah, that is a way to use it.
+
+So in my opinion, what I did is I was lowering my expectations on Facebook. I wasn't aiming for that. I was watching WIKI reports and all of these platforms to actually see if this new level of rows that I'm asking from Facebook in the Facebook expansion is correct in order to know if I'm correct there, because I was working with a lower break even rows from what in reality I want to have.
+
+Okay, and I was working with the data within Facebook. And of course, I was watching a little bit to be honest with you. If one of these, if it wasn't on two rows and one of them was on five rows, maybe I was spiking a little bit the budget in one of them because I was seeing that in reality it was working.
+
+So I'm not blaming you for saying that. On the other hand, yeah, because if I see five rows in reality, okay, it's in the human nature to because Facebook is a little bit of gamble also. You cannot just avoid it.
+
+But the other thing that I realized is that to be honest with you, WIKI reports helped me a lot in cases like subscription models. Because with Facebook, there was no way that we will be able to actually understand how many months somebody can stay, how much money somebody is spending, for example, even in an e-commerce store, and how much money can we spend in a course of six months? Let's say that you're taking somebody.
+
+How much money can I spend? And how much money can I lose? Because this client is going to recuperate this amount that I lost in the next six months.
+
+And this is impossible to do it with Facebook. It's really needed in programs in e-commerce stores that they have repeated customers that they have lifetime value customers and orders and they buy again. On subscription models, you can understand that somebody stays for five, six months in average.
+
+So you can go lower in your cost per acquisition in order to get them because they're going to give you this money in the next month and all of that. And I found from my experience, huge, huge impact to this kind of companies or companies like, for example, furniture companies, which I had one company. I mentioned those on my videos that I was having good results with the 28,000 attribution.
+
+It was working. Then on the seven days, we had to switch that to lead generation model with a Facebook platform in order to have a call center call them and close the deals. But even after that, we didn't know which people were buying and we were just relying on the call center to tell us, we close this guy, we close this guy, this guy.
+
+But with this kind of programs, we were able to actually track the whole thing. He came as a lead. He converted and so on and so on.
+
+So this is my honest opinion on how I use these programs. And I wanted to give it to you as a customer. You know, I appreciate that.
+
+I think subscription brands are our wheelhouse. Great ideal customer because it's a lifetime value play. And if you understand, we can educate you on your customer lifetime value and cycle and retention rates so that you can pay for cold traffic that's negative ROAS at the time, because then with the recur, you're profitable.
+
+And if as long as you have something that's sticky enough that like if three months out, six out of 10 are still paying you, then you then if you can just get to you don't even have to get the break even on your CAC at the first month. And then you get that volume in because all of a sudden you stack up a couple months of people recurring. It's almost like you're in an interest in the bank.
+
+Then suddenly you have a real you can really kill it. People that understand that do pretty well with our platform. We have some really happy subscription folks.
+
+Yeah, last thing before we go to the main thing of the questions style, because right now is my confession and you actually criticize now we'll go to the question soon again, which is going to be the second phase of our interview before I let you go to your busy day. Now, help me understand a little bit here. Have you been criticized for telling the truth that like I like I have like telling the truth for this is not the solution to the ice 14.5.
+
+This is something that is going to help you get better report better understanding of your lifetime value of the journey of your customer. What what are they doing until they reach which is the main leading platform of your ads? Where are you getting the most money?
+
+What kind of frauds can you ask within Facebook in order for you to be able to have the actual ads that you want? Have you been criticized for not telling the BS story that this is fixing the ice, which is the solution to convince people to buy your product? Do you feel that your company was left behind because you wasn't lying?
+
+You would not like I feel like we left a lot of revenue on the table when people were scared and panicked and just wanted what's the solution. And that hurt us. But attribution is about the truth.
+
+And that's a core principle of my life as a human. So I'm not going to go lie, particularly how hard it is to grow a brand already. You know, you bet.
+
+You know, it's an all consuming thing. I'm not going to tell someone what they want to hear. When I know how hard it is to get successful.
+
+You know, I just too much respect for how much that takes to, you know, just deviate from my core principles. It's not going to do it. So it wasn't really a question for me.
+
+That being said, it drove me nuts when I saw people saying we fix iOS. I was like, there is no fix. Yeah.
+
+Now, there's a different way of buying your media that's going to work because iOS is broken the old way. That is true. But it is no like we fix it.
+
+It's just, yeah, I had a hard time with that message. Cool. One more technical thing, and then we will go to a little bit more general questions.
+
+Live reporting. Okay. So after what happened with Hyros being bought by another company, there are a lot of people that they understood that they're not going to fix the problem with Hyros and the claim that iOS.
+
+Because when you take clients like this, then when the problem is not solved, they're going to leave the platform. So I'm sure that you also got a lot of clients from Hyros and Triple Whale came outside and they had what they called live reporting. So the live reporting is something that Triple Whale first found.
+
+Did you have it in Wicked Reports before them? What changed and you could do live reporting? Is it a new brand idea, brand new idea about how reporting is working?
+
+And tell us also if Wicked Reports has it. We did not have it and Triple Whale came out with it first and that cost us a few. We would lose some deals because of live reporting for sure.
+
+That was the number one feedback from some of our advocates that, you know, we have the council of people we talked to about trends in the industry and things. And they're like, you need live data. You need live data.
+
+Now, interesting thing enough, you set up live data and not a lot of those people that close and buy with that. We now have it. We've had it now for seven months and people say they need it.
+
+Not as it's less than half of the people actually even go to the report each week. Yeah. People come in and say, man, I need live data.
+
+They don't actually go to live data anymore. The reason why we didn't have it is because we saw so much value and success using attribution with delayed conversion data. I didn't want to misguide people to start acting on live data because all of a sudden we show a bunch of sales from Facebook.
+
+Well, it was because you sent out a killer email that day. It wasn't because the algorithm suddenly rewarded you. So I felt it was missed.
+
+It could mislead where you should spend your money. So it was a real just it was a more foundational principle. Okay.
+
+But the market overwhelmingly wanted to know also because Facebook's reporting was so delayed and same with Google in some cases that they just wanted to know our opinion of what's happening intraday. And so we put it in. What I have seen and the way that I have used it, I haven't used it in weekly reports.
+
+I have used it in triple way is that and I told you also in a discussion that we had for experienced people like me that they know very well an account. Let's say that you're in another account for five, six months. You can go and you can watch some live data and you can just do a bump up of let's say from 1K that your campaign is going to spend that day.
+
+You can do a 10K bump up so that you can end up spending 2K, 3K. And of course, by watching the live data and the tendency, you can slow it down or not. But it's a very huge risk and really difficult to use it.
+
+I don't know why people are obsessed with live reporting. The problem here is that most of the people that they want to use it, they actually don't know how to use it. This is the issue.
+
+And they don't get the big results. Like all of a sudden, if you look back seven months, they're at the exact same revenue they were. Yeah.
+
+And that's because they're thinking one thing is happening and it's not. Yeah, yeah, yeah. Yeah, yeah, yeah.
+
+Because the people have this experience, this customer journey, and it's not this funnel that works the way you want. People, by the way, they fit this. If it is email, they can see the last clicks on the sales.
+
+They can understand if it's coming from email or not. They just don't know how to use it. They just think that it's good, but they don't know how to use it.
+
+Yeah. That's why my opinion is where we want to get to this year is like, so we have an integration being announced a webinar next week with Revealbot because it will auto-move the data. Mm-hmm.
+
+And my thinking has become, how can we have an automated media buying with delayed conversions and the multi-channels taken into account? So the human element is less impacting with the logic. Because it really is just mostly logic.
+
+And then the human can just be thinking about new offers. Yeah. Yeah.
+
+It's a different stage of the funnel. So if you can think about what's my offer at the top of the funnel, because what works for people that are new to the brand is very different to try to get a repeat buyer. There's different considerations.
+
+You know, particularly when they're in the middle funnel and they're comparing you against all your other competitors, then that's a different message as well. And so marrying the data to the message to the funnel in a precise, consistent, logical way is, it's a challenge for a person to do it because, you know, they're human. So they react.
+
+Okay. Okay. So tell us a little bit about the core clients that are using WIKI reports.
+
+For example, now in the market, the way that I see it as meeting with people and stuff, Triple Whale has all the market of e-commerce, most of them. You are in the SaaS area. Most.
+
+Tell us if this perception is wrong. That's wrong. That's completely wrong.
+
+Tell us about it. This is why we're here. Tell us about it.
+
+We have a fair amount of e-commerce people. We have people that are the ones that are serious about marketing attribution, or that have a concept of spending on top of the funnel, a lot of budget at top of the funnel. Higher price products are the ones that have delayed conversion time and subscription brands are our wheelhouse customers.
+
+We have a lot of people using the API with all their unique systems. Okay. I would say we have, but our biggest area is agencies and media buyers of agencies are over half of our business.
+
+And so. So these are the people that they are using it and they say to the clients, you have to use it because it's going to help our job be better. Yeah.
+
+Or they pay for it themselves because it's such an asset. Okay. Because then if we have an agency working with us, they get a dedicated slack channel.
+
+And so then, and they have a dedicated rep. And so then we can help them with the talk tracks of how to explain it to the client, particularly when it comes to the, because what an agency will love is like after a couple months. The clients may or may not notice.
+
+The clients may or may not notice. And we teach the agency to say that you can go in and run a report and show all the revenue from things you aren't spending on anymore. And so then in some cases, it could be a significant amount of money, like 10 to $40,000 for the month was from old campaigns.
+
+And so you want to remind the client, Hey, you know, you did 400,000 this month. 40 grand was from me. And it was not the stuff we've been working on just to remind them of how much money you've made.
+
+You're making them this month, old stuff. It helps retain them. So we have talk tracks like that.
+
+So but e-commerce with triple whale, I mean, yeah, they've got a lot of nice e-commerce metrics that we don't, you know, that's not, we're just, we're marketing attribution customer lifetime value. That's our thing. Are you thinking of adding them?
+
+Are you thinking of doing improvements on that area? I'm trying to, I'm in a contemplative phase if we're going to go after that fully, or is it going to be subscription brands, or is it going to be just what the agencies need to work, you know, and it's one of the things that we're going to do. You know, and it's one of those three paths we're going to take.
+
+And it's a, it's a, it's not to be, it's not been decided yet. Okay. Yeah.
+
+We got some makeup ground on all that e-commerce. There's a lot of companies out there doing that too. Hello.
+
+Hello. E-commerce. To be honest with you, the way that I see it as a media buyer, e-commerce companies, they sell to more people, which means more revenue, which means more money, which means that they need your product more.
+
+Okay. The way that I see it, it's more massive in terms of that. SAS products can be also huge.
+
+Okay. Subscription also huge. Don't get me wrong, but there are e-commerce stores that are huge.
+
+Okay. And we see it all day long. Now, last phase.
+
+Let's talk a little bit about the history. So Wicked Reports was here as the first program. We have discussed about that.
+
+Then Hyrus came and we had the ice 14 thing where it came really fast high. You lost the chunk of the market there. I believe you should have advertised more aggressively what you're doing on that period.
+
+because the way that I saw it in this period, Scott, in my honest opinion, is that everybody was thinking, okay, Wicked Reports is all it's working, but we have something fresh, something new. Okay. And then Hyrus was sold.
+
+It was went out of the market, then Triple Whale came. Of course, there are other programs, but we're talking about the massive ones here. And you lost a chunk of the market because of the live reporting because this was their main flagship.
+
+So what do you think that is going to happen in the future? Tell us a little bit about, do you know the chunk of the market that you had right now or in first, second, third, who has the most users if you have this kind of data? And those are a little bit of the new things that Wicked Reports is going to roll out.
+
+And one more thing, just to make your life more difficult. We have the 28 days attribution coming back. We have the pixel being removed in the next year and all APIs staying on Facebook.
+
+Do you think that things are going to be even worse, slightly better, exactly the same for the next period and how these programs are going to be used in the future are going to be a necessity? Okay. Okay.
+
+So first thing, what we, I do think Triple Whale is currently leading us on e-commerce. No, it's cool. They had a lower end e-commerce metrics only product.
+
+I think with attribution, we've had people defect to us. They've had, we've had people go to them because they want the full suite with the financials and all that product, the cogs. And in our case, we've had people that are more serious about attribution say, hey, their numbers aren't adding up when they come to us.
+
+Okay. Because we need with accuracy. You know, that's our, we want to prove all that.
+
+In total numbers, who has the most clients right now? I don't know how we prove that. I don't know.
+
+Maybe you did a research decision I'm asking because I don't know. Yeah, I don't know how you get a clear view of that. I think you should pay a statistics teams that can do this research so that you will know I'm third on the market, second on the market in terms of users and stuff.
+
+Getting it sliced by the customer demographics would be what I would want to know. Like international, US agency versus brand, Shopify versus Woo versus API. I don't know how we're going to get that.
+
+I don't know. You are the CEO of WikidReports. WikidReports you have to find a way like you found a way of reporting.
+
+But if you ever do it, send it on newsletter so that they can announce it on my next podcast of who is the leader of the market because this is what they know. Okay, let's go to. It depends on the net.
+
+I think it will depend on the niche. Hyros has a lot. He has the crypto people and some of the info.
+
+They pay them more to do different niches. The agencies are getting paid a grand plus to push it. So that's why they push it.
+
+Yeah, okay. Okay. So what we have coming though is so Funnel Vision just got released.
+
+And so it uses the marketing funnel plus our first party data, plus the first party data, the brand, plus our tracking to automatically segment the people where they are in the funnel and report the row as on those levels. So rather than have to go in and pick all these different attribution models and try and sort them out is one report that covers eight models in one without having to go pick models and then try to say, okay, I picked the model. What does this mean or not mean?
+
+It just is because marketers think in terms of top, middle, bottom of funnel, and this automatically segments all the clicks that way against order ID level attribution. So that's the biggie coming out. That's just out.
+
+And we have a bunch of like really cool stuff around that. Like you're going to be able to see the customer acquisition path down at the ad set level, front and back. Because you'll be able to say, oh, this was a Facebook click, click at the top of the funnel.
+
+Show me what email closed all these people. And then vice versa. This is the email where what Facebook ad set got them on my list.
+
+So we have all this backward and forward analysis due out in about two weeks. That's going to be pretty slick. That's amazing.
+
+And then the customer lifetime value reporting that is on steroids. So you can segment by products purchased acquisition channel lifetime value, and then hit a button and create an audience from that. So you can basically interrogate your data almost like a customer data platform.
+
+Well, and then turn it into audiences. So those are what's coming out first half. And then we're then then we're getting into AI over the summer.
+
+So we have a unique data. What is the AI going to do? We have nine years of full funnel attribution data.
+
+No one else has that, particularly with these SMB brands. I mean, maybe someone has it from like running ads for Macy's or stuff, but or household name Nike. But for SMB brands, one to 100 million econ in particular subscription brands, we have we've understood this market and we have all the data from because we have clients that have been with us for like five, six, seven years.
+
+So we have all this trend data that we're going to train our models on so that it can automatically tell you what to do. Okay. And that's something that because then as long as your data is accurate, you're getting precisely what to do.
+
+Yeah, because right now we already have. I have a scale kill chill framework I created based on your funnel. So how you should look at it and how you should act.
+
+We have we have it sorted out. We've segmented by the funnel. We have the framework on exactly what you should do in your ad spend based on specific metrics.
+
+And no one really else has that. So now we're going to train our A.I. so that it will know how to understand delayed conversions and the impact of the channels and just constantly tell you what whenever you go in, it'll tell you what to do so that we don't have to rely on a human to interpret it.
+
+It'll always be telling you precisely what to do. So I'm pretty excited about that. That'll land, you know, give or take August.
+
+Nice. What do you think about the future about the 20 days attribution coming back and about the removal of the pixel on the next year? Well, I mean, Facebook is the fox watching the hen house.
+
+So I mean, they're going to whatever they're bringing back is because it shows more optimistic Facebook results. Otherwise, they wouldn't do it. So you think that the glass is already broken?
+
+It's not going to be fixed. It's not going to be. I don't I don't I mean, they're laying on tens of thousand people.
+
+And you tell me they got a magic answer for all their problems. Suddenly, I don't I don't buy it. Yeah, yeah.
+
+Yeah. I can't predict that. I don't I don't know.
+
+I'm not doing right in that code. I don't know how it's what it's going to do. I'm sure it's going to present a more optimistic view.
+
+They after all, they have done now the what they call business accounts. Okay, because the stock of Facebook is rising as long as they have new accounts. So now they say, Okay, Scott, you have your personal account and you're using it for your business.
+
+What if you create another account in Facebook so that you can use it for your business and you keep the personal with your dog, wife, kids separate from the job. So what does this mean is going to have more accounts now. So that means that the stock is going to very clever solution.
+
+That's a good catch. I didn't see that part. Of course, of course.
+
+Of course, of course, I'm analyzing Facebook, not only as a platform, but also from all the tricky spooky things that they do here and there. So last thing before we go, always, I answer some questions of the people on the channel. I gathered two questions from my YouTube videos that people are asking, and I wanted you to answer them there from my videos.
+
+First question is, What is the difference between the Facebook API and the Facebook pixel? The Facebook API is a way for advertisers to send Facebook first party data. Okay.
+
+And that could be from your CRM or from your shopping cart. Okay. Facebook pixel is code that you put in your website that Facebook sees a visitor, tries to identify them, but then follows them around the web forever, hopefully for all its various data needs.
+
+And why is API better than the pixel? I don't know that it is really. I guess the thing with the API is that it's based on real business data.
+
+Okay. But the pixel is allowing Facebook to track off sites so they know where you're going for websites so they can try to throw you into interest audiences. So they see you went to ESPN, so you like sports.
+
+And otherwise they may not know that. Yeah. So they use that.
+
+They use the browsing history they're allowed to track. So they can profile you. And so the problem is that iOS didn't let them to use their browsers.
+
+So no data. So they have to go through the API thing, which is server to server reporting. But the API is just telling you I'm a customer or it's giving them demographics to help with their conversion modeling because they have more data.
+
+Now they're also going to use that when your customer says find more when your competitor is like find more people like my customers. And they go, Oh, you're like this other company that just uploaded all their customer data. We know exactly who to target now for you.
+
+So there's downsides to the conversion API because Facebook has a crystal clear picture of who your customers are when competition wants to advertise. So that's the downside of it. But you kind of need to do it because Facebook can't work without good data.
+
+Exactly. Catch 22. Last thing.
+
+I have seen with my own eyes, but I cannot prove it. There are some companies that they have private solutions the same way that we have the chat GPT now and the AI and some companies, they had it much earlier than us. And we just didn't know it.
+
+I think that there are companies that they have private solutions and private problems that it doesn't go public and they use it in house in order to track. Do you think that the programs like wicked reports, triple whale and all that they're going to become better with AI? Is that the market that we have now with the data that they're going to be more and more and more developments like you do with wicked reports and that the next years they're going to just be a necessity?
+
+So as you said, Facebook is not going to be fixed. But do you think that it's going to be just a setback solution and nothing more than that? I think it's going to be a necessity that you need to add technology to win long term.
+
+Because if you're trying to, if you're a smaller company, smaller meaning under 100 million. And you're trying to navigate these budgets and all this complexity that just keeps getting more and more complex. You can't keep your brain around all of it and also do your day job.
+
+So you're going to need a tool that shortens that learning, shortens that analysis time, because in theory, we have it all solved now. But it takes time and learning and you can't ever really take your eye off it. And so then when you do, you fall behind or there's adjustments or, oh, there's an ad set that was profitable and I missed it because I was busy that day.
+
+So, I mean, everything gets more and more efficient over time or it develops entropy and it degrades. And that's not the case with ad tech, too. You're going to need to have more and more tight.
+
+But nothing. You know what? No data can solve a bad offer or a bad product.
+
+I always say that. Your product also makes me wrong. I mean, I can show you.
+
+People come in, fix my stuff and be like, well, these ads are bad and people are returning your product. I can't fix that. I can just report what's already out.
+
+I also tell them the same. I can do your ads and stuff. If I give you good traffic from Facebook and your funnel is wrong, it's not my fault.
+
+So it's a lot of things and then a lot of moving parts to make something successful. Correct. Correct.
+
+And then you know, before we go, I think that people would like to know, first of all, how they can contact you? Do you have a process that the team of yours is coming and it's putting the API, it's helping them? Somebody who's going to explain them how they are going to use the program and everything?
+
+And tell us, is Wicked reports expensive? because we heard a lot of big numbers from Kairos and the way that they were charging back after iOS. And people, I think they're a bit afraid why they should not, because these programs are affordable in my opinion, and the way that they see with the clients using them.
+
+And I would like you to tell some things about that and how people can start working with you. They can come to the site and book a meeting with someone and then what's the process? Yeah.
+
+Yeah, so wickedreports.com, we have live chat on the site that's generally manned by a human. And if not, it pings our team to someone to get on there. But if not, you can immediately see a video demo on the site.
+
+And it has chapters so you can jump to the things that are interesting rather than just watch the whole thing if you want. And then you can, of course, book a live zoom so we can hear your specific business challenges and KPIs and describe precisely how we're going to help solve them. Now, when you purchase, you get a dedicated tracking specialist that works with you.
+
+Now, sometimes you don't need that person for almost anything. And sometimes you need them for like three, four hours of time. It really depends on your time availability, your tech stack.
+
+If you can describe your tech stack, excuse me, like 15, 20 seconds, it's gonna be easy. If it's a five minute conversation to explain all the stuff you got going on, then that's why it's tricky to track. But we have solved many of those.
+
+I mean, we've been doing this for nine years. We have very standardized processes that our team follows. You know, they know how to do it.
+
+Once you get tracking in place, then that's when you start realizing the benefits. Our tool automatically notices when your data is ready to be analyzed at certain points, and it'll pop up and trigger what analysis you should run. And in addition, you can get a live zoom from our data analyst where they'll walk you through what they're seeing you should do with your ad spend, which is a pretty unique feature, I think, to us.
+
+Our pricing starts at $500 a month. You pay $250 to get started, and then you can pay another two, and then 14 days in your subscription kicks in at 500. It can go up.
+
+We price based on how many people we track in your CRM. So all traffic that we can identify to a person is free, unlimited users, unlimited revenue, unlimited ad spend. It's how many people we track, because that's our kind of our cost, but also our value.
+
+The more people we track, the more insights you get. Give us a little bit the ladder. The ladder is $20 for every $10,000.
+
+Okay, perfect. So we have people on the high end spending like maybe $4,000, $5,000 a month. On the low end, people spending $500.
+
+Up to 50,000 contacts is $500. Okay. So it's not revenue based as it is in other programs.
+
+Correct. We used to do that, but it was more aligned to how it just was more of a value metric in my opinion. We're paid to track people and report ROAS.
+
+The more people, the more it costs us, the more complexity, but also the more value. Okay. Ultimately.
+
+Now, we do have a godfather offer now where we will do one time payment of $5,000. You don't pay again. We work forever until we've found and identified 25 grand in wasted ad spend.
+
+So if you haven't made 5X, you never pay again. Okay. I like it because it puts guardrails on.
+
+You know exactly what you're trying to do in there and our team's on the hook to help you get there. And then as a bonus, I go in and train you on funnel tracking personally, and you have a dedicated Slack channel, and you have access to our product manager as well. Amazing.
+
+It's kind of more of a high end offer, but it's not really that high end. I mean, if you're spending- I don't think they're so high end because the internet is there. The internet is there.
+
+It's not so high end. If somebody believes in their product and they think that they can hit it, but the data reporting is wrong, there you go. I like the guarantee behind it because it aligns with the right motivation for the customer.
+
+It's not like, I'm going to fix iOS, which isn't even true. It's, hey, we should be able to find wasted ad spend and then identify where to put it. And until we've given you 25K in value, you're never going to pay again.
+
+And then you go to our normal payment plan. Cool. I think we covered everything.
+
+I'm very happy with the questions I made to you. We disagree a little bit in the optimization thing and if you can scale ads there, but it's fine. at the end of the day, as I said, guys, there's not going to be any link in the description.
+
+Scott, say again, the site. Wakerreports.com. So you can go there.
+
+You can do whatever you want. This is not an affiliated interview or a paid interview. I just wanted to make a discussion with Scott about everything.
+
+as I said, most probably this channel is never going to be monetized unless if I believe a lot in the product. And I want to, not that I don't believe in Wakerreports, by the way. I know it sounded a little bit stupid, but the thing is that in my opinion, Scott, the way that I see it, I see that after high-ross dropping, I see a lot of high-ross run to Wakerreports and triple-wave.
+
+This is a situation right now. You are the two leaders of the market. I can see it clearly.
+
+I think that I'm very happy that you came to this interview today because to be honest with you, I've watched several of your interviews in order to know who you are and understand how you speak and be prepared for the interview. And I realized that nobody was going deep into technical. So I'm very happy that we covered this because in this channel, we go very deep in technical.
+
+and I'm using Wakerreports. I'm already a user. I like the product.
+
+I have friends of mine who are using Wakerreports and I also see people that they tell me that we left from this program and we went to Wakerreports. So obviously, you're doing a very good job and keep it up because a program like yours, if Facebook ever collapses on data reporting, maybe they're going to be the only solution. that we can use so that we can keep having our clients and our jobs and everything.
+
+Any last remarks before we go, Scott? I appreciate you having me on and I enjoyed the intense questions. It was fun.
+
+I hope you enjoyed them and I didn't put you in any bad situation, which I think you didn't. You did a very good job answering. So guys, I'm going to see you in the next podcast and maybe it's going to be an interview.
+
+Maybe it's going to be, but I think that the next podcast, guys, most probably is going to have a lot of your questions because they piled up. In this podcast, I did the interview with Scott, so we have a lot of things to discuss about it. I hope that you enjoyed it.
+
+Let me know on the comments or send me a message telling me, Konstantinos, you are an idiot. Don't do an interview again or whatever you want to say to me. And I hope that you will go to Wicked Reports to explore, see what is it there.
+
+All I wanted to do with this podcast, guys, is to present you the truth of how I see it. And then it's up to you if you're going to use it or not and how you are going to see it and how you're going to evaluate it. But just to be clear, I think that Scott was extremely honest with everything and I really enjoyed it.
+
+Scott, thank you very much. Thank you. Thank you.
+
+This was the Facebook Ads Breaking News Podcast. Like it or not, it is what it is. The Enter fee pay has been erased.
+
+Slide for example Wednesday CFP in November swear away from February 12th, it is the last 20 to the February вот the first 10th tozuguputmayı Charles, the véritable number of star-selling entrevists of..." Food LagWithства
