@@ -1,0 +1,565 @@
+Every day, every day, you should be in ChatGPT. I don't care what your job is, right? You could be a sommelier at a restaurant, and you should be using ChatGPT every day to make yourself better at whatever it is you do.
+
+Can I ask you about the story really quick? And you have like a list of stuff here that's like all amazing. It's actually a lot of it's very actionable.
+
+But the reason I want to ask you about the story is for the listener. Dharmesh founded HubSpot, $30 billion company. You're the CTO, and you're an OG for Web 1.0, Web 2.0.
+
+And your first round or one of your first rounds was funded by Sequoia. Your partner, Brian, is an investor at Sequoia. So you are in the insider.
+
+You're an insider, I believe. You may not acknowledge it. I don't know if you do or do not.
+
+You are an insider. The cool part is that you're accessible to us. When did you first see what Sam was working on?
+
+And how long have you felt that this is going to change everything? So I actually have known Sam before he started OpenAI. And I got access to the GPT API.
+
+It was a toolkit for developers to be able to kind of build AI applications, right? Effectively. And so I built this little chat application that used the API.
+
+And so I could have a conversation with it. So I actually built that thing that night. It was a Sunday.
+
+I had the whole transcript two years before chat GPT came out. So that's four years ago? It was 2020.
+
+So five years ago. Wow. Okay.
+
+This summer. And so even then, it's like, and as soon as I, like, you sort of have that moment. It's the same that all of us have with chat GPT.
+
+I just had it two years earlier. And then I'm showing everyone, like, Brian, you are not going to believe, like, I have this thing, you know, through this company called OpenAI and watch me, like, type stuff into it and see, like, see what happens. And we would ask it, like, strategic questions about HubSpot.
+
+It's like, how should it, like, who are the top competitors? And they were, even then, two years before chat, it was shockingly good, right? But the thing you sort of have to understand about the constraints of how a large language model actually works is that you type and you have a limited, just imagine this, if we're going to just use the physical analog sheet of paper can only fit a certain number of words on it.
+
+And that certain number of words includes both what you write on it that says, I want you to do this. And the response has to fit on that sheet of paper. And that sheet of paper is what, in technical terms, would be called the context window.
+
+And you'll hear this tossed around. It's like, oh, this, you know, ChatGPT has a context window of whatever, or this model has a context window of whatever. That's what they're talking about.
+
+All right. So why is that? Why does anybody care about the context window?
+
+It's like, well, sometimes you want to provide a large piece of text and say, summarize this for me. Well, in order for you to do that, it has to fit in the context window. So if you want to take two books worth of information and say, I want you to summarize this in 50 words, those two books worth of information have to fit inside the context window in order for the LN to process it.
+
+Most, the frontier models are roughly 100,000 to 200,000. They measure it in tokens, which is like 0.75 of a word. But that's like a book.
+
+So yeah, is that a book? I think it's, I think the average book is like 240,000 words, I think, but I'm not sure. That's not a lot.
+
+So what I, the way that I use ChatGPT is I'll like, let's say a fun way is I'll, I'll put a historical book that I loved reading and I'll be like, summarize this so I remember the details. So you're telling me that if it's a thousand page book, it's not even going to accurately summarize that book. It won't fit.
+
+You're like, if you paste something large enough into ChatGPT or whatever AI application you're using, it will come back and say, sorry, that doesn't fit. Effectively, what they're saying is that does not fit in the context window. So you're gonna have to do something different.
+
+All right. A few episodes ago, I talked about something and I got thousands of messages asking me to go deeper and to explain. And that's what I'm about to do.
+
+So I told you guys how I use ChatGPT as a life coach or a thought partner. And what I did was I uploaded all types of amazing information. So I uploaded my personal finances, my net worth, my goals, different books that I like, issues going on in my personal life and businesses.
+
+I uploaded so much information. And so the output is that I have this GPT that I can ask questions that I'm having issues with in my life. Like, how should I respond to this email?
+
+What's the right decision? Knowing that you know my goals for the future, things like that. And so I worked with HubSpot to put together a step by step process showing the audience, showing you the software that I use to make this, the information that I had ChatGPT ask me, all this stuff.
+
+So it's super easy for you to use. And like I said, I use this like 10 or 20 times a day. It's literally changed my life.
+
+And so if you want that, it's free. There's a link below. Just click it, enter your email, and we will send you everything you need to know to set this up in just about 20 minutes.
+
+And I'll show you how I use it again, 10 to 20 times a day. All right. So check it out.
+
+The link is below in the description. Back to the episode. I usually use projects and I have like, let's say a health project and I'll upload tons and tons of books or tons of blood work.
+
+And I'm hoping that it's going to pull from all those books in my project. Is that true? That is true.
+
+So here, and this is a perfect segue, right? Because this is the next big unlock. So number one thing to like understand in our heads is there's this thing called a context window.
+
+Here's why it matters. So let's, we're going to take a, we're going to pop that on the stack and we're going to push down the stack and we're going to come back to it. So the thing we have to remember is two things.
+
+Number one, it doesn't know what it's never been trained on. That's one of the limitations, right? So if you ask it something that only you, Sam, have in your, in your files and your email, whatever that the training model was, I mean, the LLM was never trained on, it's not going to know those things.
+
+It doesn't matter how smart it is. It just information it's never seen. So it's not going to know that.
+
+That's kind of problem number one. Problem number two. So let's say your website for Hampton was actually on, um, uh, in the training side, right?
+
+Because it's on the public internet or whatever. But the training happened at a particular point in time. Like they ran the training, ran the training, ran the training and said, okay, we're done with the training.
+
+Now the machine is done. Let's let the customers in right now. If the website changes.
+
+It's not going to know about those new updates that you've made to your website because the training was done at a particular date. If completed, it's kind of training course. Right?
+
+So those are the two things we sort of have to remember is that it doesn't know what it doesn't know. And number two, that the things that did know were frozen at that particular point in time. Right?
+
+So it has a seen new information. And those are relatively large limitations, right? So especially if you're going to use it for business use or personal, it's like, well, I've got a bunch of stuff that I want it to be able to answer questions about or whatever inside my company or inside, uh, my own personal life.
+
+How do I get it to do that? Um, and so here's the hack and this is, this was a brilliant, uh, brilliant discovery. So what they figured out is to say, okay, let's say you have a hundred thousand documents that were never on the internet.
+
+That's in your company. It's all your employee hiring practices, your model. Here's how we do compensation.
+
+All of it, right? It's like, oh, you have a hundred thousand documents. And obviously you can't ask questions about those hundred thousand documents straight to chat GPT.
+
+It doesn't know anything about those, never seen those documents. So this is, and we talked about this two episodes ago, um, this thing called vector embeddings and RAG retrieval augmented generation. Um, and I'll, I recommend you folks go listen to that.
+
+I think it's a, it's a, it's a fun episode, but I'll kind of summarize it, which is what you can do. And what we do is to say, we're going to take those hundred thousand documents and we're going to put them in this special database called a vector store, a vector database. And what we can do now is when someone asks a question, we can go to the vector store, not the LLM, go to the vector store and say, give me the five documents out of the hundred thousand that are most likely to answer this question based on the meaning of the question, not keywords based on the actual meaning of the question.
+
+So it's called a semantic search is what the vector store is doing. So it comes back with five documents. Let's just say.
+
+Now, as it turns out five documents do fit inside the context window. So effectively we said, okay, well, yeah, it would have been nice. Had you trained on the hundred thousand documents, but that was not practical because I didn't want to expose all of that.
+
+I'm going to give you the five documents that you actually need. I just say, give it to you in the context window. And now, as you can imagine, it does an exceptionally good job at answering the question when it knows the five documents that should be looking.
+
+You just gave it to them. Right. So it's having this, uh, so we'll kind of, uh, jump metaphors here.
+
+It's like hiring a really, really good intern that has a PhD in everything. Right. They went to school, they read all the things, read all the internet.
+
+The intern knows everything about everything that ever was publicly accessible. They're trained, show up for the first day of work. That's all they know.
+
+They're not learning anything new and they know nothing about your business. Now it's like, okay, well, I know, you know, everything about everything. I have this question about my business.
+
+Here are five documents that you can read right now and answer my question. Just like, oh, I can do that. I like that analogy, the intern with the PhD and everything.
+
+Because that's so much how it is, right? It's as helpful and available as an intern. But it's as knowledgeable as somebody with a PhD and everything.
+
+And then, like you said, you know, my, the, another analogy for that is like, it's a store. You have shelf space, which is kind of limited, but they do have a back and you can always get, send the employee to the back and see if they can find it in the back for you. Right.
+
+That's kind of like what you're saying. Put it in the database. They can go fetch the specific thing that you're asking for.
+
+Because, you know, you gave it access to the back. You gave it a badge that lets it go in there. Have you uploaded all of, like, have you, first of all, I want to know what your chat GPT looks like.
+
+I want to know how you use it on a, like, I just want you to just screen share. Just like, show me exactly what you do. But also, have you uploaded your entire life?
+
+Like, have you uploaded all of HubSpot to chat GPT where you could just ask it any question? Yeah, multiple times. Right.
+
+So. And what format? Tell me how you did that.
+
+So I did. So OpenAI has called this, it's called an embeddings algorithm that takes any piece of text, a document, an email, whatever it happens to be, and creates this kind of point in the high dimensional space, you know, called a vector embedding. And, you know, a point in high dimensional space.
+
+So in three dimensional space, physical space that we know of, we think of points being in three dimensions, X, Y, and Z axis. Like, oh, here's where this point is in space. High dimensional space, you can have a hundred dimensions, you can have a thousand dimensions.
+
+You can describe each document as this kind of point in space. So what I've done, so it used to be in the early kind of GPT world, the number of dimensions you had access to was roughly like 100 to 200 dimensions. And so you would lose a lot of the meaning of a document, right?
+
+They would sort of get it right. It would sort of capture the meaning. And then we went to like a thousand dimensions.
+
+It's like, oh, well, now we can much more accurately sort of represent and capture a document of kind of arbitrary length and be able to find it, give it a prompt or give it some sort of search query. And then recently, within the last year, we've gone the latest algorithm from OpenAI, embeddings algorithm is like 3072, I think, dimensions. But where do you do this?
+
+Do you just literally upload it as a project? Or you had to do an API connection? How do you actually do this?
+
+I'm doing an API connection, right? In fact, I'm running the lease. Let me see where it is now.
+
+And anyone could do this? Or you have special access because you're friends with it? No, anyone can do this.
+
+The API for the embeddings model, they have two versions. They have the 3000 dimension version. They have a 1000 dimension version.
+
+And is the results of this like, are you driving a NASCAR and I'm driving like a scooter? Like, is that the difference? Like, if I just like, for example, what I will do is I'll just like download my company's financials and I'll upload it.
+
+And then I'll like explain what my company does. But the way that you do it is a lot different. Now, are we talking a massive gap in results that you get versus what I get?
+
+Um, yes. The short answer is yes. And the reason is like, so I do, I do that as well in terms of I'll describe the company or whatever.
+
+I try to provide it context. And that's why it's called the context windows. You try to provide the LLM context for what you're asking it to do.
+
+You know, the difference is that, you know, because I can go through like, and by the way, the richest, and I'm working on a kind of nice and weekends project right now that takes email, which, you know, so you would be amazed. Like if you had to write no other words right now, if you did nothing, but say, I'm going to take all of my emails I've ever written, uh, that are still stored and give it, uh, to a vector store, use an embedding's algorithm, and then use Chad GPT to let me kind of answer questions. So if I want to say, oh, I want you to give me a timeline for when we start first started using hub to name products or whatever, how'd that come about?
+
+Or what were the winning arguments against doing that versus whatever? Like, it's shocking how good the responses are when you give it access to that kind of rich data, right? Somebody needs to create just like a $10 a month, a single website that's like, hey, make your Chad GPT smarter.
+
+And it's a website where it's like, connect your Gmail, connect your Slack, connect your everything. And I would pay them happily 20 bucks a month to just set this up for me so that my chat, to give my Chad GPT, like the extra pill that says, you now have access to my data. Is this, because, because you're talking about like, I have the API to the vector embeddings and like, well, I have the flux capacitor too, but I don't know what to do with it.
+
+Right? Like I need a button on a website with a Stripe payment button that I could just connect the stuff. Is there, is there a caveman version of this?
+
+There's, I mean, there are tools out there and there are startups working on it, right? There's two pieces of good news. One is there are startups working on it.
+
+The challenge here is not that they're doing a bad job. The challenge actually comes down to if it were a startup and a startup came to you, it's like, oh, we just started last week, but we've got this thing. It really works.
+
+In fact, Dharmesh may be an investor. How willing would you be to hand over literally your entire life and everything that's in your email over to this startup? Like, so part of the challenge we have is that the access control that let's say you're using Gmail, which a lot of us use.
+
+When you provide the keys to your Gmail account to a third party, there is no degree of real granularity. You can say, oh, I wanted to read the metadata. That's like level one.
+
+Level two access, I wanted to read my full email. And level three is I wanted to be able to write and delete emails on my behalf. But if you wanted to like read like the actual body of the email, you can't say I only wanted to read messages that are from HubSpot.com or I want to ignore all messages from my wife and my family or whatever in the thing.
+
+There's no way to control that. Right. So you sort of have to have trust.
+
+Create custom GPTs and open AI and do projects and cloud. You have Google Gems, which are essentially like a small baby version of this, right? That says, oh, you can upload 10 documents, 100 documents, and it'll let you ask questions against that.
+
+What it's really doing behind the scenes is creating a vector store. That's effectively what's happening. My expectation is all the major companies will actually have a variation of this, starting with Google should be the first one because they already have the data.
+
+There is absolutely zero reason why Google Gemini does not let you have a Q&A with your own email account. That's just like insanely stupid, right? Like I'll just go ahead and say it.
+
+It's just there's something not right with the world when they already have the data and they have the algorithm. They have Gemini 2.5 Pro, which is an exceptionally good model, right? So there you have all the pieces, but have not yet delivered, but I hope is a little distant.
+
+Then tell me and Sean, we're early adopters, but neither of us are technical. What can we do to, I want to get it on this, baby. All right.
+
+So give me two weeks. Here's what I'll be. So that's one thing I do trust, and I trust myself.
+
+I'm an honest guy. I'll give you like this internal app that I'm building. Let you point your Gmail to it.
+
+It'll go and it'll run for a day or two days or something like that. And then you will be amazed. You will be able to ask questions.
+
+And by the way, like, and the thing I'm like working on now is once you have this capability, right? Like step one is just being able to do Q&A, right? It's like, oh, just I'm going to step to like, imagine kind of fast forwarding.
+
+Like it has access to all of your kind of history. So imagine you're able to say, you know what? I'm not doing this, by the way.
+
+But if I were, it's like, I want to write a book about HubSpot and all the lessons learned and like everything. It's all in my email. Do the best possible job you can writing a book.
+
+If you have questions along the way, ask me. But other than that, write the book. I think you would be able to write the book.
+
+Wow. What else are you doing with AI? So give me your day-to-day.
+
+Like, for example, the CEO of Microsoft had this great thing where he goes, I think with AI, then I work with my coworkers. And that really shifted the way I work because I used to brainstorm or have a meeting to talk about stuff with my coworkers, which was honestly always like a little disappointing. I felt like I'm the one bringing the energy and the ideas and the questions and I'm hoping that they're going to.
+
+But dude, just sparring with AI first and then taking the kind of like distilled thoughts to my team of like, here's how we're going to execute has been way better. Like that little one sentence he said shifted the way I was doing it. How are you kind of using this stuff?
+
+Yeah. So a couple of things. So let's start at the high level and we'll drill in a little bit.
+
+So what we're used to with ChatGPT, this is sort of your kind of early evolution of most people's use is because it's called generative AI, you use it to generate things, right? Generate a blog post, generate an image, generate a video, generate audio, all those things. That's kind of the generation kind of aspect.
+
+And that's part of what it's good at. Then you sort of get into the, oh, but it can also kind of summarize and synthesize things for me. It's like, oh, take this large body of text, take this blog post, take this academic paper and summarize it in this way.
+
+Or like so a seven-year-old would understand it kind of thing, right? So that's the kind of step number, step number two. Step number three, and we're going to get into how this is now possible, is you can do effectively, you can take action, have the LM actually do things for you.
+
+And I'll just kind of put it broadly in the kind of automation bucket. Like I can automate things that I was doing manually before. And then the fourth thing is around orchestration.
+
+It's like, can I just have it manage a set of AI agents? And we'll talk about agents in a little bit and just do it all for me. I just want to give it a super high order goal.
+
+It has access to an army of agents that are good at varying different things. I don't want to know about any of that. I just wanted to go do this thing for me, right?
+
+And then that's sort of where we are on the slope of the curve. The first three things are possible today and work well today, right? So you can generate, as we know, it can generate blog posts.
+
+It can write really well. It can generate great images now, including images with text. It can do great video now with higher fidelity, higher character cohesion, all these things.
+
+Sean, so the thing, the vision you had three years ago when I was on was around creating the next Disney, the next kind of media company. You have the tools now, my friend, to finally start to approach that, right? But then you should sort of move into, and this is what we were just talking about, this kind of synthesis and analysis thing.
+
+This is where deep research kinds of features come in. It's like, okay, well, I want you to take the entire of the internet or entirety of what Sean has written about copywriting, and I want you to write a book just for me that summarizes all of that in ways I enjoy. Because I like analogies, and I like jokes, and I like this, and I like that.
+
+Write a custom version of Sean Puri's book on copywriting, right? That kind of synthesis, I think, would be super interesting. And then automation is now possible.
+
+So agent.ai is one of those things. There's other tools out there that says, hey, I want to take this workflow or this thing that I do, and I want to just do it for me. Give us a specific.
+
+What's a specific automation that you've used that's like, you know, useful, helpful, saves you time? I'll tell you a couple. One is around domain names, which is, okay, so I have an idea for a domain name, and I'm going to type words in.
+
+And these things exist, and I will tell you the manual flow that I used to go to is like, okay, first of all, I can brainstorm myself and come up with possible words and various other words, whoever hears the things. Then I'll say, okay, which domains are available? Absolutely zero of them that are good that will pop into my mind are like freely available to kind of just register that no one's registered before.
+
+Okay, fine. Then I'll say, okay, well, which ones are available for sale? Okay, what's the price tag?
+
+Is that a fair approximation of the value? Is it like below market, above market? We don't know because there's no Zillow for domain names yet.
+
+So create that. So I have something that automates all of that and says, oh, so you have this particular idea for this concept, for this business, business, whatever it is. Here are names.
+
+Here are the actual price points. Here are the ones that I think are below market value, above market value. Tell me which ones you want to register.
+
+That's in ChatGPT? No, it's an agent.ai is where it lives right now. But now there's a connector between agent.ai and ChatGPT through this thing called MCP, which you'll hear about a bunch if you haven't already.
+
+One thing I want to kind of get out there, just so we keep connecting the dots, because I want everyone to have this framework in their head. So we talk about large language models. It can generate things.
+
+We talk about the context window. We talked about faking out the context window by saying, oh, we can do this vector database and bring in the right five documents, stuff them into the context window. Here's the other big breakthrough that's happened, I'll say recently within the last year, year and a half, is what's called tool calling.
+
+And what tool calling is, is a really brilliant idea. And the tool calling says, okay, well, the LM was trained on a certain number of things, but if we had this intern that came in, it would be like saying, okay, well, whatever you know, you know, but we're not going to give you access to the internet. Like that would be stupid, right?
+
+We would give the intern access to the internet. It's like, if I ask you something that you weren't trained on, go look it up, right? That would be like thing number one on the first day of work.
+
+And as it turns out, the LM world, the intern couldn't, didn't have access to the internet. All it had was whatever notes it happened to take during its PhD training and all things, right? And so what tool calling allows, and this is a weird approach to it, but this is because of the way LMs work.
+
+So remember the LM, it's architected such that you give it the context window in, it spits things out. That's it. It doesn't have, and you can't reprogram the architecture split.
+
+Now all of a sudden, we're going to give you access to tool calling. So here's the hack that they came up with. They said, okay, in the instructions that we give it in the context window, we're going to say, you have access to these four tools.
+
+And it doesn't actually have access to the four tools. It's that I want you to pretend like you have access to these four tools. The first tool is this thing called the internet.
+
+And the way the internet works is you type in the query and it will give you some things back. You have this other thing called a calculator and you can give it a mathematical expression and it gives you an answer back. And you have this other tool that lets you do this and you can have n number of tools.
+
+And so here's what happens. In the context window happening behind the scenes, chat GPT, which is the interface right now that is interacting with the LA. You're not talking with the LM directly, right?
+
+It gets a prompt and it says, okay, by the way, LLM, I want you to pretend like you have access to these four tools. And anytime you need them, when you pass the note back to me, the results, the output, just tell me when you want to use one of those tools. All right.
+
+So we give it a query. It's like, okay, well, I want to look up like the historical stock valuation for HubSpot and when it changed as a result of, is there any correlation to the weather? Is it seasonal or whatever it is, right?
+
+In terms of market cap of HubSpot versus seasonal changes. All right. Well, that's not something you would have access to, but here's what actually happens.
+
+This is so cool, right? So the LM gets it and the LM's in the context window that we gave it. We gave it instructions as to pretend like you have these four tools, one of which is stock price lookup, let's say historical stock price lookup.
+
+It'll pass the output back to the application, not us and say, and in the output it says, oh, please invoke that tool you told me I had access to and look up this result. I want you to search the internet for X. What was the weather?
+
+I want you to do this for the stock price. And then we do that. We, the chat GPT application, fill the context window with whatever it is the LM asked for and then pass it back in.
+
+So the LM effectively has access to those tools even though it never accessed the internet, it never accessed the stock market, but it pretended like it had access to it and we never see this. This is happening behind the scenes. Now here is the big massive unlock, right?
+
+Which is, well, everything can be a tool, right? Now you don't have to build this kind of vector store or whatever because you would never build a vector store of all possible stock prices from the dawn of time. Now, I guess you could, but then it's outdated immediately.
+
+Now it's like, what if we just gave it 20 really powerful tools including browser access to the internet? Well, that's like a 10,000, 100,000 times increase in that intern's capability, right? And so that's where our brains should be headed now, which is exactly where the world is headed that says, what tools can we give the LM access to that will amplify its ability and cause zero change to the actual architecture?
+
+Literally, it doesn't have to know anything about anything. It's like, I just want you to pretend that you have access to these tools. It doesn't need to know how to talk to those tools.
+
+It doesn't need to know about APIs. It doesn't need any of that stuff. Do you think that, I mean, this is all mind-blowing and you have an interesting perspective because, you know, I think three episodes ago that you're on, you created this thing called Wordle.
+
+Was it Wordle? Wordplay. Wordplay.
+
+That does like 80 grand a month. It was just like a puzzle that you do with your son. It was amazing.
+
+But now you have new projects. You have agent AI, you have a few other things, but you still run a $30 billion company. Do you think that the majority of value creation is my stock portfolio going to go up because I own a basket of tech stocks?
+
+Or is the best way to capitalize as an outsider, obviously you start a company, or is it investing in new startups that are using AI or AI-first startups? Yeah, it's a good question. Neither an economist nor a stock analyst.
+
+But I will say this. The thing I'm most excited about with AI, and I actually said exactly this in a talk I gave well before GPT on the inbound stage, and I said, you know, as AI is starting to kind of come up, it's not a you versus AI. That's not the mental model you should have in here.
+
+It's like, oh, well, AI is going to take my job because it's me trying to do things that the AI is then eventually going to be able to do. The right mental frame of reference you should have, it's you to the power of AI. AI is an amplifier of your capability.
+
+It will unlock things and let you do things that you were never able to do before, as a result of which it's going to increase your value, not decrease it, right? But in order for that to be true, you actually have to use it. You have to learn it.
+
+You have to experiment with it. And the only real way to get a feel for what it can and can't do is you have to do it. So I'll give you the very, very simple, everyone should do this.
+
+I do this personally, is that anytime you're going to sit down at a computer and do something, research, whatever it is you're going to do, you should give chat GPT or your AI tool of choice a shot at it. Try to describe, pretend like you have access to this intern that has a PhD in everything. It's like, okay, well, maybe it doesn't know anything about me or whatever.
+
+Fine. So then tell it a few things about you. But imagine you have access to this all-knowing intern that has a PhD in everything.
+
+Give it a crack at solving the problem that you're about to sit down and spend some time on. And what you will invariably find, number one, is you'll be surprised by the number of times it actually comes up with a helpful response that you would never have expected it would be even remotely able to do. Like, how can it do that?
+
+It's because it has a PhD in everything, right? And so now actually, we'll talk about reasoning and whether models are actually doing that or not if we have time. So that's my advice, is every day, every day, you should be in ChatGPT.
+
+If you're a knowledge worker at all, it doesn't matter, you don't even have to be a knowledge worker. I don't care what your job is, right? You could be a sommelier at a restaurant and you should be using ChatGPT every day to make yourself better at whatever it is you do.
+
+And that might be the introduction of that orthogonal skill. So orthogonal means that line that's 90 degree intersection to another line. And the most common use is when we have an X and Y axis, right?
+
+It's like, oh, the X axis and the Y axis are orthogonal to each other because they have 90 degrees separating them. The common usage, when you say, oh, that's an orthogonal concept, it means it's unrelated. It's completely different.
+
+That's like the Y and X axis are completely independent of each other. You can say, oh, you can be here on the X axis, but here on the Y axis and they're not related to each other. So that's what I mean when I say orthogonal concepts or skills or ideas.
+
+Yeah, anyway. Is there anything you disagree with that's kind of the consensus? Because a lot of things you're talking about like, hey, AI is going to change everything.
+
+It's super smart. Agents are coming. They can do some stuff now, more stuff later.
+
+These are all probably right, but they're also consensus. I'm just curious, like, is there anything you disagree with that you hear out there that drives you nuts where you're just like, people keep saying this. I think that's either wrong.
+
+It's overrated. It's the wrong timeline. It's the wrong frame.
+
+It's whatever. Is there anything that you disagree with that you've heard out there? I've heard variations, two variations I disagree with.
+
+One that I've, I think, spent so much time, hopefully kind of talking folks out of, which is, it's just autocorrect. It's not really thinking. And that's a matter of like, what do you think thinking is, right?
+
+It's like, okay, well, if it produces the right output to which we think would require thought, so I think that is flawed reasoning to say, oh, well, and this often comes from the smartest people, the most experts in their field, because, oh, it's really like a stochastic parrot. You'll hear this phrase, which is, it's like a Paul Billy-driven, pattern matching based, it just so happens that it's been trained on the internet, but it's not really like human intelligence. And I agree with that phrasing, which is it's not like human intelligence, but that does not mean that all it's doing is sort of mimicking stochastically all the things that it's read before, because in order to do what it does, it is a form of creativity, different from what we normally experience.
+
+That's kind of thing number one that I disagree with. Thing number two is people are thinking, I both disagree with the, oh, the scaling laws are going to continue forever indefinitely, that the more and more compute we throw at, the more knobs we put on the machine, the smarter and smarter it's going to get. I think there's going to be a limit to that at some point.
+
+It's like nothing goes on forever. It's going to asymptotically move towards, we're going to have to come up with new algorithms. So GPT can't be the do-all end of all things, right?
+
+There will be a new way discovered. So I think that's going to happen. But I think the smarter, and I did not say this, other people have said it, the best way to kind of think about AI right now is as you use it, it's to kind of truly find a frontier of what it's incapable of.
+
+It's like, okay, it can sort of do this thing, but not very well. If that's the way you describe its response, you are exactly where you need to be, which is if you can sort of do it right now, sort of. If you have to squint a little bit, it's like, ah, it's kind of something, but wait six months or a year, right?
+
+Like it's, that's the beauty of an exponential curve. It gets so better, so much better, so fast that if it can sort of do it now, it will be able to do it, and then it'll be able to do it really well. That's the inevitable sequence of events that's going to happen.
+
+Sam, have you heard this about startups? There's like a, kind of the smart money in startups believes that the right startup to build is basically the thing that AI kind of can't do right now. That's the company to start today because you just have to stay alive long enough, give it the 12 to 18 month runway that it needs for the thing to go from, eh, didn't really work very well to like, oh my God, this is amazing, but you've built your brand, your company, your mission, your customer base, you've been building that all along the way, and you're basically just betting you're going to be able to surf the improvement of the model.
+
+Dude, by the way, that's how I feel at my company. My company is not related to this at all, but in terms of like our operations, we're like, things are very manual and I'm like, oh my God, once I'm able to finally implement AI when it can work for this purpose, my profit margins are going to go through the roof. I mean, that's how I feel about it, but it, which isn't entirely related to that, Sean, but a little bit.
+
+One thing I'll plant out there since this is my first million, we like talking about ideas. At a macro level, here's the entirely new pool of ideas that I think are now available on a trend that I think is inevitable, which is ad agents get better and better, right now, most of us, when we use AI, use ChatTPD, we use them as tools, which is great, perfect, fine. Over time, you need to shift your thinking and think of them as teammates.
+
+Think of them as that intern that just got hired, right? And as a result of that, so let's assume for a second, let's stipulate that I'm right. All we don't know is how long is it going to take for me to be right, is that we're going to have effectively digital teammates that are part of all of our teams.
+
+Every company is going to someday have a hybrid team consisting of carbon-based life forms and these kind of digital AI agents. Okay. So if you accept that, the way that's going to happen is not going to be like all of a sudden we one day wake up and every organization now starts kind of mixing them.
+
+What's going to happen is it's going to slowly introduce this way. It's like, oh, I have this one task, whatever, that an agent is better at and it's reliable enough for the thing and the risk is low enough and I'm going to have it do that. Right.
+
+We already see elements of that. But here's what's going to happen. But as a result of that kind of gradual kind of infusion and adoption of that technology, the way to win and the opportunities that get created is like, how do I help the world accomplish this end state that I know is going to come?
+
+So here, I'll give you some examples. If we were to hire, if you, Sam, were to hire a new employee tomorrow, here's what you would do. You would say, oh, well, I'm going to onboard that employee, spend a couple of days.
+
+I'm going to tell them about the business. Whoever's managing that employee, let's say with a direct report of yours, maybe you'll have a weekly one-on-one or every other week or whatever. That one-on-one will consist of looking at the work they did, whatever.
+
+It's like, oh, over here you did this or whatever and it could be copy editing. It could be anything, whatever the role happens to be. You're going to give them feedback.
+
+Right. That's what you do for a human worker. All of those things have a direct, literally a direct analog in the agent world.
+
+Right. And what we're doing right now is we're hiring these agents and expecting them to do magic. Just like if we hired an exceptionally smart, has a PhD in everything employee and expected them to do magic with no training, no onboarding, no feedback, no one-on-one, no nothing.
+
+Well, your results are not going to vary. They're going to be crap because you did not make the investment in getting that agent. Now, the big unlock here, so whether you're an HR person or whatever, it's like figure out, well, what does employee training look like for digital workers?
+
+What do performance reviews look like for digital workers? How do we do that? How do we do recruiting for digital workers?
+
+How do we, like, what are all the mechanisms that need to exist? What is a manager of the future? What are the new roles that will be created as a result of having these hybrid teams?
+
+It's like, okay, well, now maybe we're going to need someone that's like the agentic manager, human, that knows all the agents that are on their team or whatever and has kind of built the skill set to how to do recruiting for their team, how to do performance reviews, how to do all of that, but for agents or hybrid teams versus just purely human ones. That's just a whole other, and we're going to need the software, we're going to need the onboarding, we're going to need training, we're going to need books written, we're going to need all of it to kind of adopt, and it's going to take, it's going to take years, right? It's not happening overnight.
+
+Two years ago, I asked you, is it going to be horrible or is this going to be amazing? And you said, I saw this with the internet, nothing is as extreme as the most extreme predictions. I listened to you and I trusted you then.
+
+I actually think, knowing what I know now, I'm actually more fearful than I was a couple years ago where I'm like, oh, this is actually going to put a lot of people out of work and it's maybe not good or bad, but things are going to change drastically more than I thought. And my, so I don't remember how I phrased the question, but is this going to change the future more than you thought two years ago or less than you thought two years ago? Has your opinion on that changed?
+
+I still think they're going to be unrecognizable. My kind of macro level sense, and this is maybe just my inherent optimism about things, is that it's going to be kind of a net positive for humanity. And this is the other thing that lots of people would disagree with me on.
+
+It's like, oh, well, is this an existential crisis to the species? And I've not said this before, but I'm going to see how it sounds as the words leave my mouth. I'm probably going to regret it.
+
+But in a way, we are actually, and Sean, you said this earlier, we're sort of producing a new species, right? So that's like saying, okay, well, homeosapiens as they exist absent AI is likely not going to exist. So the way we know the species as it exists today with where we have a single brain and in natural form, you know, four appendages or whatever, maybe that's going to be different.
+
+But I think of that as an extension of humanity, not the obliteration of humanity, right? That's the, that's, you know, human 2.0 or n.0 of the way we kind of think of the species right now. So I'm, I think things are still moving very, very fast.
+
+And this is the, this is why I think humans have issues with exponential curves. We're just not used to them when something is kind of doubling or, you know, every n months, it's hard to wrap our brains around how fast this stuff, you know, can move things that we thought were, like the things we have today, Sam, if we had just described them to someone a year and a half ago, there's like, ah, well, chatGPD is cool or whatever, but it's never going to be able to do that. And now we're like, those are like par for the course, right?
+
+Like we can do like, things that were literally like, ah, there's no way, no way. It's like, yeah, it's good at like text and stuff like that, but that's because it's been trained on text. Now I can do images.
+
+Well, I can do images, but like video with like 30 frames a second, that's like generating 30 images per frame of like per second of videos, like all of that. It's like, yeah, but you know, diffusion models, the way they work is because you're not going to get, you get a different image every time. So how are you going to create a video because it requires the same character, the same setting in subsequent frames?
+
+That's not how the thing is arched. That's not how image models work. And we solved all of those things, right?
+
+Now we have character cohesion, setting cohesion, video generational. Anyway, so my answer is, it's exactly, not exactly, but it's close to like, yep, this is what exponential advancement looks like. I'm still of the belief that we're going to have more net positive.
+
+That is not to say that in the interim, there's not going to be pain. And there's two things I will put out there as cautionary, cautionary words. One is in the interim, anyone that tells you that there's not going to be job dislocation, there's not going to be roles that get completely alliterated is lying to you.
+
+That is going to happen. It's already happening, right? It's that there is no world in which that does not occur.
+
+That's kind of thing number one. Thing number two, and we didn't talk about this, but we should have, is that because of the architecture of how LMs currently work, maybe they'll figure out a way to do that. They produce hallucinations.
+
+And that's just a fancy way of saying it makes things up, right? And that's sort of okay, but not okay because it doesn't know it's making it up because of the way the architecture works. It's like the intern that thinks it's been exposed to all there is to know in the world.
+
+It's like, I know all the things. You asked me a question. I know I know all the things.
+
+So I'm going to tell you the thing that I know. It was like, well, yeah, but you didn't know this. And what you said is actually factually, like provably, demonstrably wrong.
+
+And it has absolutely zero lack of confidence in its output, which is fine for some things if you're writing a short fiction story or something like that. It's not great at all for other things like healthcare-related where you need kind of predictable, accurate responses. So I think we need to be aware of the limitations around it when we're doing research and things like that.
+
+And the problem is when we have relatively, I'll say naive, I don't mean this in a disparaging way, folks that are naive to a subject area asking ChatGPT for things where it can't judge the response, right? We're sort of taking it on faith that it's ChatGPT and our mesh said it's got a PhD in everything. So of course it's going to be right.
+
+Well, no, it's often not right. And it's kind of up to us to figure out what our kind of risk tolerance is. It's like, what is it okay for it to be wrong?
+
+How would I test it for my domain, for my particular use cases? Yeah, so. What do you think about this situation where Zuck is throwing the bag at every researcher?
+
+$100 million signing bonuses, even more than that in comp. And he's poaching basically his own dream team. He's like, okay, you're not going to, I can't acquire the company.
+
+Well, why don't I go get all the players? You can keep the team, I'll keep the players. And he's going after them with these crazy nine-figure offers.
+
+$100 million signing bonus and $300 million over four years, I think is what I saw. Is that true? I think that was like the higher, yeah, so the higher end.
+
+And some people have said there's even like billion-dollar offers to certain people that are out there. This is like job offers. So Dharmesh is like, were you shocked by this?
+
+Because I mean, my reaction to this was, that's bullshit. First time I heard it, then I was like, wait, the source is Sam Altman. Why would he say that?
+
+And then I was like, okay, that's insane. And then an hour later, I was like, wait, that's actually genius because for a total of three billion or something, he can acquire the equivalent of one of these labs that's valued at 30, 40, 50, or $200 billion. What a power play.
+
+I know, obviously, you're an investor in OpenAI, so maybe you don't like this. Maybe you have a different bias here. But I'm just, from one kind of like leader of a tech company to another, like what's your view of this move?
+
+I think it's one of the crazier moves. If I had to use one word, I would say diabolical. Not stupid, not silly, but diabolical.
+
+And here's why, right? This is the, like in the grand scheme of things. So this is not just a, oh, can we use this technology and build a better product that will then drive X billion dollars of revenue through whatever business model we happen to have.
+
+There's a meta thing at play here that says whoever gets to this first will be able to produce companies with billions of dollars of revenue or whatever, right? Because that's, it's like kind of finding the secret to the universe, the mystery of life kind of thing. It's like, okay, well, whoever wins that and gets there first will then be able to use the technology internally for a little while and be able to just kind of run the table for as long as they want.
+
+So there's, it's got incalculable value, right? The upside is just so high that no amount of, like if you can increase your probability even by a marginal amount, if you had the cash, why wouldn't you do it? Right?
+
+So do you think, A, do you think it'll work? Do you think this tactic will work for him? Do you think he will be able to build a super team?
+
+Is he just going to get a bunch of engineers who now have yachts and don't work? Like what's going to happen when you give somebody a hundred million dollars offers? You put together this, smash together this team of, I think he's got a hit list of 50 targets.
+
+And I think like, you know, something like 19 or 20 of them have come on board already. What's your prediction of how this plays out? It feels a little bit like a Hail Mary pass, right?
+
+That's okay. They're going to take this. It's like, okay, well, there's not a whole lot of things we can do.
+
+You know, the chips are down. I'm going to mix metaphors now too. But that works sometimes.
+
+It works sometimes. That's exactly why people do it. People catch them.
+
+What other option do we have? Right? Like everything else hasn't worked yet.
+
+So let's try this thing. But I think the challenge, I still think it's a dialogically smart move. I'm not going to use the word ethics or anything like that.
+
+But here's the challenge though, right? If we were having this conversation, we'll call it two years ago, give or take. OpenAI was so far ahead in terms of the underlying algorithm.
+
+And this is even before ChatGPT hit the kind of revenue curve that it's hit. Just raw, the GPT algorithm was just so good. And they were so far ahead.
+
+It was actually inconceivable for folks, including me, that others would catch up. It's like, okay, well, they'll make progress. They'll get closer.
+
+But then OpenAI is obviously going to still keep working. And they're going to be far ahead for a long, long time. That's proven not to be true.
+
+Right? We've seen open source models come out. We've seen other commercial models come out.
+
+There's Anthropic. And they have, by most measures, comparable large language models, right? Within like one standard deviation.
+
+They're pretty good. And sometimes they're better at some things, worse at others. But it's not this single horse race anymore.
+
+So the thing that I'm a little bit dubious of is that even if you did this, you pull all these people together. Like it didn't really work for OpenAI in the true sense of the word, right? Like they weren't able to create this kind of magical thing that it's like, okay, maybe they end up doing it somewhere else.
+
+But I think there's more smart people out there. The technology has kind of deep-seek proved that you could actually, and they didn't actually have an actual innovation in terms of reasoning models and things like that versus kind of the early generation large language models. So jury's still out.
+
+How much better is a $300 million over, so $100 million a year engineer over like a $20 million engineer? Is it like, I followed some of these guys on Twitter and it was, they're fantastic follows. And do you think that their IQ is just so much better or is it because they've had experience?
+
+Is it really because they just saw how OpenAI works and they want that experience? Are they like, is this like espionage? What is, how good could a $100 million or $300 million a year engineer be?
+
+Well, that's the thing, so this is software, right? So this is a, you know, a world of like 95% margins. So let's say, yeah, I think part of the value is yes, they're super smart, but even human IQ asymptotically moves towards a certain ceiling, right?
+
+You take smartest people in the world, however you want to measure IQ. And so that doesn't explain away the value, right? That's not that.
+
+It's not that they've seen the inside of OpenAI and they have some trade secrets in their head that they can then kind of carry over. It's like, oh, here's how we did it over there. And here's how we ran evals.
+
+And here's how we did, you know, the engineering process. They'll have some of that because we always carry some amount of kind of experience in our heads. I think the larger thing, I think, kind of primary kind of vector of value is they sort of have demonstrated the ability to kind of see around corners and see into the future, right?
+
+They believed in this thing that almost no one believed in at the time. They sort of saw where it was headed and they were working at it, tripping away at it, whatever. And that's much rarer than you would think for really smart people to do this stupidly foolish, seemingly stupid, foolish thing.
+
+It's like, you're going to do what now? Right? And we're still asking ourselves a variation of that question that we would have asked three years ago, except now we have ChatGPT and we have the things in it and we're still like, well, you say that we're going to have like these kind of digital teammates and they're going to be able to do all these things and it can't even do this simple thing right.
+
+Right? Like we sort of keep elevating our expectations and what we believe is or is not possible. They sort of know what's possible and they almost think of what many of us would consider impossible as actually being inevitable.
+
+Have you guys, has HubSpot, have you made any of these offers? I don't think so, but that's not the game we're in, right? So we're not, we're not in that league.
+
+We're not trying to build a frontier model. We're not trying to invent AGI. We're at the application layer of the stack.
+
+So we want to benefit from it, right? You know, we didn't, in any layer of my entrepreneurial career, I have not been the guy in the center of the universe or the company. But you're not, you're not like, oh man, I met this person.
+
+Like we need to offer like an MBA contract in order to secure this, this guy. No, and there's a reason for this, right? It's like for the kinds of problems we're solving.
+
+What's the, there's a sports term about the best alternative to the player or something like that that was replacement cost? Or wins above replacement is the metric they use in sports. So yeah, it's just not, it's not worth it given our business model and given what we do.
+
+I have one last thing on the kind of AI front. This is one of the things, answering your question, Sean, in terms of things I disagree with folks on is that there's a group of people, very smart, that will say, oh, well, AI is going to lead to a reduction in creativity, broadly speaking, right? Because you're just going to have AI do the thing.
+
+Why do you need to learn to do the thing? And I have a 14 year old, right? So it's like, okay, well, if he just uses AI to write his essays and do his homework or whatever, it's going to reduce his creativity.
+
+And I understand that particular kind of line of reasoning that says, yeah, if you just have it do the thing, you're not going to. But I think the part those folks are missing is that, you know, creativity is kind of, in the literal sense, the word is like, okay, I have this kind of thing, idea in my head and I'm going to express it in some creative form, be it music, be it art, be it whatever it happens to be. And the problem right now is that whatever creative ideas we have in our head are limited in terms of how we can manifest them based on our emerging skill set.
+
+So Sean can have a song in his head right now that like he may be composing things in his head, but until he learns the mechanics of how to actually play an instrument, whatever the instrument happens to be, there's no real way to manifest that, right? We can't tap into his brain and do that. So in my mind, AI actually increases creativity because it will increase the percentage of ideas that people have in their heads that they will then be able to manifest regardless of what their skills are or not.
+
+And I love that. So my son, he's a big Japanese culture fan, big manga fan in Japanese comic books and anime. And so he's an aspiring, you know, author someday.
+
+And what he can do now, right? And he's been able to do this for years, which is, so he's always had and he likes fantasy fiction as well. So he's had these ideas for writing things, but he lacked the writing skills.
+
+He doesn't know about character development, doesn't know about any of these things. So what he uses ChatGPT for is he's got this, like, 2000 word prompt that describes his fictional world. Here are the characters, here's the power structure, here are the powers people have, here's what you can and can't do.
+
+And then the way he tests the world is he turns it into a role-playing game. It's like, okay, I'm going to jump into the world, now you ChatGPT, I'm going to do this. Tell me what happens.
+
+Oh, this happened. Okay, now I'm going to do this. Okay, well, now you've got this power.
+
+And so it will sort of kind of pressure test kind of his world and so that's an expression of his creativity because the world was sitting in his head but now he can actually share that with friends, maybe turn that into a book someday because it's going to take the ideas that he has and hopefully in the meantime he will kind of develop some of those foundational skills but he doesn't have to wait until like 12 years of writing education before he can take this idea as a child. He has lots of creativity but as a practitioner most of those things that he would love to be able to manifest in the world he has nothing close to the skills required whether it's drawing or writing or anything. So I think that's what AI can help us kind of elevate and once again we have to use it responsibly but it should be able to elevate our skills.
+
+I want to show you guys an example of this real quick. So I had this idea not long ago, a couple weeks ago of creating a game using only AI. So I don't know if you guys ever played the Monkey Island games from like when I was a kid.
+
+I played Monkey Island. It was an incredible game. It was basically this guy wants to be a pirate.
+
+It's like this very funny but like 8-bit art style game and so I created a version of that called Escape from Silicon Valley. I didn't create the whole game but I create like the art but like check this out. So I go into AI and I basically start creating the game art and so it's like the story is basically like deep in San Francisco.
+
+The year is 2048. The block is starting his third term in office. You know, Nancy Pelosi passes away, the richest woman on earth.
+
+And then, you know, Elon is promising that self-driving cars are coming really, really soon for real this time. And here you are, you're this character and you're in the opening AI office and basically the idea is- Oh, Charlie, look at that. What's that?
+
+Look at the Charlie bar. Yeah, yeah, exactly. I was putting in some references to like, you know, stuff that I thought was it would be cool.
+
+That is so cool. What did you use to make those images? So that right there was just ChatGPT and the Journey Mix.
+
+I tried using, you know, Scenario and a couple other like game-specific tools like check this out. So like I created all these like technical characters. So it's like I create Zuck and Palmer Luckey and like Chamath and Elizabeth Holmes in jail.
+
+Oh, that is awesome. And I had it basically write the scenes for the levels with me, like write the dialogue with me, create the character art. Dude, that looks sick.
+
+Why didn't you do that? Well, because I did the fun part in the first two weeks where I was like, oh, the concept, the levels, the character art, the music, seeing what AI could do, but then to actually make the game, the AI can't do that. And so I was like, oh, now I need to like, I mean, people who build games spend years building it.
+
+It's like, oh, this is like minimum six to 12 months doing this like very, very arbitrary project. But I still love the idea and I'm gonna like package up the whole, the whole idea. Darmesh, last question.
+
+Just really quick, where do you hang out on the internet that we and the listener can hang out to stay on top of some of this stuff? Like are there, like who's a reputable handful of people on Twitter to follow or reputable websites or places to hang out at? That's interesting.
+
+So I spend most of my time on YouTube, as it turns out. and I sort of give into the vibe, so to speak, and let the algorithm sort of figure out what it thinks I might enjoy. It gets it right sometimes, gets it wrong sometimes.
+
+So it's a mix of things. But the person that I think if you want to kind of get deeper into like understanding AI, there's a guy named Andre Karpathy. I don't know if you've come across him.
+
+Just search for Karpathy. Dude, you don't want to know how I know, like I get so many ads that says like Andre Karpathy said this is the best product or Andre Karpathy showed me how to do this. Now I'm going to show you.
+
+Like I don't even know who Andre is other than ads run his name to promote him. Yeah, I mean, he's one of the true OGs in AI, but he has that his orthogonal skill or one of them, I think he's got like nine, he's probably like a nine tool player of some sort, but he's able to really simplify complicated things without making you feel stupid, right? So he's not talking down to you.
+
+He's like, okay, like here's how we're going to do this. We're going to kind of build it brick by brick and you're going to understand at the end of this hour and a half how X works, right? And he's amazing.
+
+So that would be one. So him, any other YouTubers or Twitter people or blogs? On the business side, actually, like Aaron Levy from Box is actually very, very thoughtful on the, if you're in software and business and the AI implications there, I think he's really good.
+
+Heaten Shah, who you both know now at Dropbox through the acquisition has been on fire lately on LinkedIn. So he's one I would go back, especially for the last like three, four months and read all the stuff he's written. I think he's on point.
+
+Yeah, so. Those are awesome. Dharmesh, thanks for coming on.
+
+Thanks for teaching us. You're one of my favorite teachers and entertainers. So thank you for coming on, man.
+
+My pleasure. It was good to see you guys. It was fun.
+
+Likewise. Thank you. That's it.
+
+That's the pod. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye.

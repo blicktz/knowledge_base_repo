@@ -112,15 +112,30 @@ analyze-kb: ## Analyze knowledge base statistics
 # PERSONA EXTRACTION TARGETS
 # =============================================================================
 
-.PHONY: extract-persona
-extract-persona: ## Extract persona from documents (use PERSONA_NAME=name)
-	@echo "$(BLUE)Extracting persona '$(PERSONA_NAME)' from $(DOCS_DIR)...$(NC)"
-	$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" --verbose extract-persona \
+.PHONY: extract-persona-stats
+extract-persona-stats: ## Phase 1-a: Statistical analysis only (spaCy/NLTK)
+	@echo "$(BLUE)Phase 1-a: Statistical analysis for '$(PERSONA_NAME)' from $(DOCS_DIR)...$(NC)"
+	$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" --verbose extract-persona-stats \
 		--documents-dir "$(DOCS_DIR)" \
 		--name "$(PERSONA_NAME)" \
 		--pattern "$(PATTERN)"
-	@echo "$(GREEN)✓ Persona '$(PERSONA_NAME)' extracted$(NC)"
+	@echo "$(GREEN)✓ Statistical analysis complete for '$(PERSONA_NAME)'$(NC)"
 
+.PHONY: extract-persona-llm
+extract-persona-llm: ## Phase 1-b: LLM map-reduce processing only
+	@echo "$(BLUE)Phase 1-b: LLM processing for '$(PERSONA_NAME)' from $(DOCS_DIR)...$(NC)"
+	$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" --verbose extract-persona-llm \
+		--documents-dir "$(DOCS_DIR)" \
+		--name "$(PERSONA_NAME)" \
+		--pattern "$(PATTERN)"
+	@echo "$(GREEN)✓ LLM processing complete for '$(PERSONA_NAME)'$(NC)"
+
+.PHONY: extract-persona-full
+extract-persona-full: extract-persona-stats extract-persona-llm ## Complete persona extraction (both Phase 1-a and 1-b)
+	@echo "$(GREEN)✓ Complete persona extraction finished for '$(PERSONA_NAME)'$(NC)"
+
+.PHONY: extract-persona
+extract-persona: extract-persona-full ## Extract persona from documents (use PERSONA_NAME=name)
 
 .PHONY: list-personas
 list-personas: ## List all available personas

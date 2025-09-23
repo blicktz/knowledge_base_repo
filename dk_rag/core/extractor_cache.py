@@ -472,6 +472,158 @@ class ExtractorCacheManager:
         
         return cache_info
     
+    def create_batch_log_directory(self, batch_hash: str, extraction_type: str) -> Path:
+        """
+        Create directory for batch processing logs
+        
+        Args:
+            batch_hash: Hash of the batch content
+            extraction_type: Type of extraction ('mental_models' or 'core_beliefs')
+            
+        Returns:
+            Path to the batch log directory
+        """
+        batch_dir = self.cache_dir / "xml_responses" / extraction_type / f"batch_{batch_hash[:16]}"
+        batch_dir.mkdir(parents=True, exist_ok=True)
+        return batch_dir
+    
+    def save_batch_input(self, batch_dir: Path, prompt: str) -> Path:
+        """
+        Save the complete prompt sent to LLM
+        
+        Args:
+            batch_dir: Directory for this batch's logs
+            prompt: The complete prompt sent to the LLM
+            
+        Returns:
+            Path to the saved input file
+        """
+        input_file = batch_dir / "input.txt"
+        try:
+            with open(input_file, 'w', encoding='utf-8') as f:
+                f.write(prompt)
+            self.logger.debug(f"Saved batch input to {input_file}")
+            return input_file
+        except Exception as e:
+            self.logger.error(f"Failed to save batch input: {e}")
+            raise
+    
+    def save_batch_response(self, batch_dir: Path, response: str) -> Path:
+        """
+        Save the complete LLM response
+        
+        Args:
+            batch_dir: Directory for this batch's logs
+            response: The complete response from the LLM
+            
+        Returns:
+            Path to the saved response file
+        """
+        response_file = batch_dir / "response.xml"
+        try:
+            with open(response_file, 'w', encoding='utf-8') as f:
+                f.write(response)
+            self.logger.debug(f"Saved batch response to {response_file}")
+            return response_file
+        except Exception as e:
+            self.logger.error(f"Failed to save batch response: {e}")
+            raise
+    
+    def save_batch_output(self, batch_dir: Path, output_json: list) -> Path:
+        """
+        Save the extracted JSON output
+        
+        Args:
+            batch_dir: Directory for this batch's logs
+            output_json: The extracted JSON output
+            
+        Returns:
+            Path to the saved output file
+        """
+        output_file = batch_dir / "output.json"
+        try:
+            with open(output_file, 'w', encoding='utf-8') as f:
+                json.dump(output_json, f, indent=2, ensure_ascii=False)
+            self.logger.debug(f"Saved batch output to {output_file}")
+            return output_file
+        except Exception as e:
+            self.logger.error(f"Failed to save batch output: {e}")
+            raise
+    
+    def save_batch_metadata(self, batch_dir: Path, metadata: dict) -> Path:
+        """
+        Save batch processing metadata
+        
+        Args:
+            batch_dir: Directory for this batch's logs
+            metadata: Metadata about the batch processing
+            
+        Returns:
+            Path to the saved metadata file
+        """
+        metadata_file = batch_dir / "metadata.json"
+        try:
+            with open(metadata_file, 'w', encoding='utf-8') as f:
+                json.dump(metadata, f, indent=2, ensure_ascii=False)
+            self.logger.debug(f"Saved batch metadata to {metadata_file}")
+            return metadata_file
+        except Exception as e:
+            self.logger.error(f"Failed to save batch metadata: {e}")
+            raise
+    
+    def get_batch_log(self, batch_hash: str, extraction_type: str) -> Dict[str, Any]:
+        """
+        Retrieve all logged data for a batch
+        
+        Args:
+            batch_hash: Hash of the batch content
+            extraction_type: Type of extraction
+            
+        Returns:
+            Dictionary containing all batch log data
+        """
+        batch_dir = self.cache_dir / "xml_responses" / extraction_type / f"batch_{batch_hash[:16]}"
+        
+        log_data = {}
+        
+        # Read input
+        input_file = batch_dir / "input.txt"
+        if input_file.exists():
+            try:
+                with open(input_file, 'r', encoding='utf-8') as f:
+                    log_data['input'] = f.read()
+            except Exception as e:
+                self.logger.warning(f"Failed to read input file: {e}")
+        
+        # Read response
+        response_file = batch_dir / "response.xml"
+        if response_file.exists():
+            try:
+                with open(response_file, 'r', encoding='utf-8') as f:
+                    log_data['response'] = f.read()
+            except Exception as e:
+                self.logger.warning(f"Failed to read response file: {e}")
+        
+        # Read output
+        output_file = batch_dir / "output.json"
+        if output_file.exists():
+            try:
+                with open(output_file, 'r', encoding='utf-8') as f:
+                    log_data['output'] = json.load(f)
+            except Exception as e:
+                self.logger.warning(f"Failed to read output file: {e}")
+        
+        # Read metadata
+        metadata_file = batch_dir / "metadata.json"
+        if metadata_file.exists():
+            try:
+                with open(metadata_file, 'r', encoding='utf-8') as f:
+                    log_data['metadata'] = json.load(f)
+            except Exception as e:
+                self.logger.warning(f"Failed to read metadata file: {e}")
+        
+        return log_data
+    
     def clear_cache(self, extraction_type: Optional[str] = None, 
                    older_than_hours: Optional[int] = None):
         """

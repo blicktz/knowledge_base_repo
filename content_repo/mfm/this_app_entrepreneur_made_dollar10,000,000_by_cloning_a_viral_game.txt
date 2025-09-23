@@ -1,0 +1,783 @@
+Yeah, so got a crazy story for you guys. So you might have seen the app Wordle recently. Have you guys seen it?
+
+Yeah. New York Times just bought it. You play?
+
+Yeah, so New York Times just bought it. But about two weeks ago, one of my friends, he's a great mobile app developer, bootstrapper. He basically was like, oh, Wordle is going viral and there's no mobile app that everyone's using.
+
+So the Wordle guy had put out this crazy story. He put out this story about how he was peer. He didn't want to monetize it.
+
+It was just a toy for his girlfriend. It went viral out of nowhere, which I don't know if I believe because he works at Mischief. And I'm not sure I totally buy that story.
+
+But that was his story to the media. So my friend was like, holy shit, there's a huge opportunity for someone to build the mobile app. This guy doesn't own the trademark of the name.
+
+It's kind of like Rift Off an old game show. So my friend built an app over the weekend, called it Wordle the app. Went viral.
+
+So basically like over the weekend, got like 30,000 organic downloads, was top of the app store. And my friend's one of these guys who likes to build in public. So he tweets everything he always has.
+
+He used to like put his portfolio up so you could see everything he's doing. Sam, by the way, this is going to support your build in public thesis, by the way. And this is like the perfect case study of how you feel about building public, which is, I like it in theory.
+
+It's like the face tattoo thing, right? I like that other people do it. I don't want to do it.
+
+And here's why. Here's the cautionary tale. Like when, you know, when the D.A.R.E.
+
+officer brings like, you know, someone who's like been in jail for drugs to the classroom. It's like a before and after of meth. Yeah, exactly.
+
+It's like very rocky. But Sean, explain what Wordle is. Because all I know, I don't play word games.
+
+I play real sports. And so I'm not trying. I don't waste my time with that.
+
+So when people are, what is this game? It's a game. Okay, so it's a simple game.
+
+You literally, the way I get to it, you just Google Wordle. First link, you click it, and it's just five empty, like, letters, like five squares where you've got to guess a word. There's no clues.
+
+It's not like a crossword. It's literally just like guess a word. So you type in a word.
+
+You might type in. Like, I always start with irate because Darmesh from HubSpot said the word irate has three vowels plus the letter T plus the letter R. So you're getting a lot of common letters there.
+
+So it's a great start word. So you type that word in, and then it'll tell you either it'll either show up gray, which means the letter's not in the word. Yellow, which means it's in the word, but you got it in the wrong spot.
+
+Or green, which is this is the right letter in the right spot. And then you have, I think, five or six guesses to be able to get the word in the end. And then the beauty of it is at the end, it's like you got it.
+
+You feel the sense of accomplishment. The whole thing takes you like two minutes to play the game. So it's like really easy to play in that sense.
+
+And then if you get it right, it lets you share that you got it right. But it doesn't share what the word was. It shares like the like imagine what you're looking at now, which is like the word and all these colors.
+
+But take the letters off. It just shows the colors. So it'll show somebody else.
+
+Oh, man, I started off not having any of the letters. Then I got the T at the end. Then I got one letter at the end.
+
+And that's what that score is. And then like my fourth one, I got it right. So that's why you see that grid of green squares posted on Twitter.
+
+And it started going viral on Twitter. And what's like the score? Okay, so I just got it moist.
+
+But did you really just play that? Are you watching a video? I think this morning I was trying to just do like an illustration, you know, just trying to get some accurate B roll.
+
+All right. So I understand. So people have been sharing this like crazy.
+
+And Dharmesh, the founder of HubSpot. He plays a daily. And he even built a competitor to it as well.
+
+And so your buddy, Ben Levy, what's this guy's name? His name is Zach Shaked. And what's the name of the app?
+
+It was called Wordle, the app. So part of the story, basically. So he goes and builds this app.
+
+He tweets like, holy shit, this is the fastest growing app I've ever built. You know, I've built 10 other businesses. They've all done really well.
+
+But this is the only one that's like growing organically like crazy. And he basically, the Wordle creator sees it. And he's like, yo, he gets on the phone with them.
+
+He calls him. And he's like, hey, this just doesn't feel right. By the way, this whole thing's just happening in a Twitter thread.
+
+Ben sends me the first tweet. He's like, yo, Zach's, because I've met Zach through Ben. He's like, yo, Zach actually cloned Wordle.
+
+Next tweet. Look at this shit. He's tweeted out of graph.
+
+It's going crazy. Third tweet. Someone says, dude, you just ripped off Wordle.
+
+Like you're going to get whatever, sued or something. And you don't own the trademark for this. He goes, what trademark?
+
+And so I'm seeing the tweets in real time. And he's bragging. He's bragging about how good it's doing.
+
+And he's like, ha, like there was no app. Now I'm dominating this. I'm getting all these free downloads.
+
+This is amazing. And he's just tweeting update after update. Okay, so Ben, pick it back up.
+
+So then somehow the Wordle guy gets in touch with him. So the Wordle guy DMs him and he's like, yo, let's get on the phone. And my friend Zach is like, hey, like you don't own the trademark.
+
+I know nobody owns it. There's a bunch of other apps called Wordle before this. But like let's partner or something.
+
+And the guy's like, eh, I don't like, you know, he basically said some version of like, I don't do this for money. This is just fun. You know, ironically, he sells the New York Times like a week later, but that's separate.
+
+So my friend gets off the phone with him. And he's like, all right, I'm going to talk to a lawyer. I'm going to figure out what I should do.
+
+Like clearly there's no ability for us to work together here. And then like 20 minutes later, some big tech reporter dunks on him pretty aggressively. And he's like.
+
+Dunks on who? Your buddy or the original creator? Dunks on Zach, my friend.
+
+And he's like, he basically says something like, wow, like app developer has no ethics. Clones Wordle bragging about how he's at the top of the app store. And then, you know, when that happens, everyone goes and looks at Zach's past tweets.
+
+And he ironically had two tweets. So like six months ago, he tweeted, I hate app clones. Like someone's cloning my app and I'm going to like, you know, he basically like disputed every app that was cloning his old app and posted a big thread about how app clones are the shittiest people.
+
+Didn't he call them like scumbags or something? Yeah. He was like, they're the scums of the earth that you're copying my app.
+
+And then he also had. Wait, you said, you said the word ironic. So was he being serious?
+
+No, he was being serious. It was ironic that he tweeted that. And then he was doing, you know, and then he was being opportunistic.
+
+And then he also tweeted like, at the beginning of the year, I have two goals for 2022. It's like, be more vulgar and make $10 million this year. So he just gets like proceeded to get dunked on really aggressively.
+
+And people start buying his domain and are like, you know, I'm going to start like, I'm going to dispute every app you've ever made. I'm like going to make sure that everyone knows you're the worst of the worst. And like, so basically that's what happens.
+
+Apple ends up pulling down every single word. He calls you right somewhere in the middle here. He calls you for some advice, right?
+
+Yeah. So he calls me in the middle of this and he goes, Hey, this is crazy. Like app is doing really well.
+
+I think this is a big business. Like, you know, I know, I know how much these apps convert, like free to paid. This is just growing organically.
+
+This is a 10 to a hundred million dollar mobile app here. What would you do? And I was like, well, I think, you know, ethically, I'm not sure.
+
+I think you did kind of copy him, but I get that. Like, this is version one and you're going to make it better. Like I could buy that.
+
+But right now you're probably stuck. Like the mob has you, but he's like, well, maybe there's a Trumpian version to this where like, you know, I kind of own that. Like, this is my approach and like, I'm doing it.
+
+There is no trademark. Apologize, apologize, put up the white flag, take it away. Right.
+
+These are options on the table, right? I can just say, sorry, I did wrong. I could say, you know, sorry, I said what I said and I'm going to make these, I'm going to change the name.
+
+I'm going to make some concessions. And then there was go full Trump and full Trump was like, just lean into it. And yeah, but you could do that in a non like douche way.
+
+What you could say is, yeah, like, look, we're not claiming to be innovators here, but we're executors. And so we find things that are great and we make them available for the masses. Sue me.
+
+Like, you know, that's like the way that you could take this. That's what, that's what Racket Internet says. They go, we're not innovators.
+
+We're executors. We're operators. So how did the conversation go, Ben, when you guys talked about these options?
+
+Yeah. So basically I was like, you know, I think those three options are on the table and he was like, yeah, but I don't think, you know, I don't think we're really doing anything wrong. Like, you know, yeah, there is no mobile app.
+
+So like, well, people can think that I think it's fine. So he basically was like, I'm going to double down. You know, by the way, this other guy didn't create Wordle.
+
+There was a, you're saying there was a game show back in the day that was the same game. He created a web version of it. Is that right?
+
+Because I think that changes it too, which is like, this guy also copied this show, right? Like, and it looks like this guy, Zach, did he redo the app, but call it Word Love? Well, that's later in the story.
+
+That's like after Wordle got shut down in the app store, he recreated a new, you know, another word game. So Apple literally just shut down all the clones? Or just him?
+
+Yeah. They shut down everyone that was using the name Wordle after that. And to clarify, yeah, there was a game show that Wordle was based on.
+
+And I think the guy's story was like, I did this for my girlfriend. It wasn't for profit. So he didn't get crucified for it.
+
+I see. So what did Apple say? Why did they say they could just take down all these things?
+
+Or you don't know, you don't know why they just took it down? There was no statement. They just took down every Wordle app and said, you know, you don't own this trademark.
+
+Like you're being taken down because we do decide what we do. Yeah. So I'm not a lawyer here, obviously, but I have done some trademark stuff.
+
+And I'm almost positive that someone's going to correct me, but I'm almost positive that even if you don't own the trademark, if you're like, and you can make the argument, if you're like the first or the most popular, and if there's like a general consensus that like, yes, when people think of this name, they think of you and these other clones or these other people are trying to like steal, you know, like act like they're you. The courts tend to favor your side, even if you don't own the trademark. Yeah.
+
+Just because they don't literally have that trademark. There is probably some like, you know, you'd probably win. Yeah, I think I think that's probably true.
+
+And like he he knew that like there was some argument that there's been other apps called the Wordle, but it was pretty clear that like they would have a good case. So he proceeds to kind of double down on it, gets dunked on aggressively. Like basically, you know, he doubles down a little bit, like says like, no, like this is based on the game show.
+
+You don't own a trademark. I'm looking at it now. Versions of that.
+
+And then it goes completely viral, like 10,000, you know, it gets like 10,000 people in the tech Twitter circle are dunking on him. There's articles. Can we stop for a second?
+
+Why? Why was his goal be more vulgar for 2020? Why was that a goal?
+
+That's such a random. You said that. My mind is still wondering why was that?
+
+Does that mean like be more aggressive? I think he meant like be more aggressive, like when he sees opportunities, be more assertive and like, you know, be as aggressive as possible and opportunities present themselves. Okay.
+
+Which clearly was what this was. So he went, he went hard. He got dunked on.
+
+And basically what happened was people bought his dome. People squatted on his names. ZachShaked.com.
+
+They were like, we're going to go vote down every single app you own. We're just basically going to attack you. Oh, it's so hard.
+
+Then what happened? How's this end? So, I mean, basically it ended with him shutting the app down as you'd expect.
+
+And now he's like making a new word game because he likes the word game space. But I think his, like when I was talking to him about it earlier, he was like, you know, the biggest thing for me is building in public is not always good. You know, like the fact, you know, by building in public, like I just assumed I, you know, this was great for me.
+
+And this is the really dark side of me building in public. Well, let's be more specific. He had $10 million in his hands and decided that the tweet love for talking about what he was doing was worth that.
+
+Because if he just stayed as an anonymous developer, he just put it under some shell company developer name, left it in the store, didn't brag about it. It wouldn't have got picked up by journalists as like the story isn't that other people, there are apps in the store called Wordle that are owned by different people. That's not the story.
+
+The story is look at this guy cloning this thing, ripping it off, bragging about it, and then getting shit on on Twitter. That's the story. So if he just didn't do that, then that doesn't get to Apple.
+
+Like I think there's a pretty good chance he gets away with it. Because I know there's a, the app store is full of clones. Like Flappy Bird had tons of clones.
+
+Every slot machine game. There's, people don't know this. Like random apps, like slot machine apps are what like produces the most revenue in the app store.
+
+And, and you know, nobody really cares about it. They're under these like random holding company names. Because you don't talk about it.
+
+When you're crushing it, you shut up. Yeah. It's when you're not crushing it that you want to talk about it.
+
+As soon as you start crushing it, zip. Yes. When you're doing well, you only talk about it when you're not doing that well, or when you are doing so well that you think that like, you know, you can't catch up.
+
+That's why people are always like, why don't you talk about your e-commerce thing? And I'm like, why is it working? What do I need, what do I need to tell you guys about it for?
+
+Yeah. And I also think that like. But transparency, like, yeah, cool.
+
+I, I favor transparency, uh, with people I trust, not strangers on the internet. Also, I don't value transparency. Well, it's like, if it's my wife or my family or my coworkers, all right, I'll give you transparency.
+
+I don't owe you, my Twitter follower, or even my podcast listener to tell you my every detail. I'll be very honest with you. I tell people things when it's beneficial to me and I don't when I don't.
+
+And I actually recommend that strategy to anybody. There is no like a force that is, there's nobody forcing you to tell everybody everything, uh, when there's no gain to be had for you. Yeah.
+
+And there's actually clear downsides. And this guy just totally screwed it up. If you should have shut up, you just got to shut up sometimes.
+
+And that's really hard. It's the building in public thing, man. And also it impacted the wordle guy.
+
+Now he got all this competition and he had a lot of stress. I think that like, when you're doing well, you just shut up. You don't talk about it.
+
+Yeah. And I think, you know, part of it becomes your identity. Like I'm the building public guy.
+
+So like I do everything in public. Uh, and I think he was just like, you know, type of guy. It's like, I'm a really good at growth and I'm really good at building apps and.
+
+I wanted some love for it, you know? And then by the way, I recommend this guy's blog or subset. Cause he actually, uh, he does a good job of building in public.
+
+Like he, uh, Ben, what was the one that we were, we were reading? And I remember telling you, I was like, dude, this guy's stuff is actually really good. He had like no followers, but like, uh, or like, you know, not no followers, but he had a very small following, but I thought his content was actually really interesting.
+
+He would talk about like, all right, I'm going to build this product because of this reason. So first thing I'm going to do, I'm going to go to, you know, lean domain search. I'm gonna get a name generator for this.
+
+Okay. I got the name. Boom.
+
+Now I'm going to go do this. Boom. Here's how I do this.
+
+Boom. All right, I'm going to fire up some paid ads. Look, here's the dashboard.
+
+And like, he was actually making progress. So he wasn't just like, you know, stuck in, he wasn't just talking theory. Like he was actually getting users, getting revenue.
+
+And he was very, um, again, he was giving out a ton of value. And so I was like, oh, cool. I like to learn all this stuff.
+
+Great. Uh, thank you very much. And, uh, at, in those projects, the trade probably worked right.
+
+He got interest and respect and attention and he gave up, you know, just a little bit of knowledge. Uh, but in this case it did not pay off. Yeah.
+
+And he like openly shares all of his app numbers. Like that link I just dropped. Zach.so slash dashboard.
+
+You can see all of his app numbers, all the churn. Uh, so it's a big part of his identity and he's really good at it. But you know, sometimes it doesn't always pay to be public to build in public.
+
+Dude. Cornrows and face tattoos. It's cool that other people do it, but not for me.
+
+Yeah. The other thing is like identity. Be real careful what your identity is because your identity comes with like, you know, some serious trade-offs.
+
+People have an identity and then they'll like, uh, you know, they use it to build a little prison for themselves. Here's the, here's my walls and chains that I put on myself by like labeling myself in this way. I like to, I like people will be like, oh, I thought you said this the other day.
+
+I'm like, yeah. Change my mind. Speaking, well, listen, you know, done speaking of prisoners and building an identity.
+
+I saw that, um, someone did a survey like a, like a reputable source, but I forget who did a survey and they asked, they did a survey and they asked young folks, Gen Z, who they follow for crypto and NFT advice. And it was like, I think they surveyed hundreds of thousands of people. Pomp was number one for the most trusted person.
+
+Pomp is like our friend and started out like just a guy on Twitter. Now he's like pretty official. How on earth does this guy do so much?
+
+So he's got a 200,000 person email list who he talks to, I think every day, every day, he's got a daily business show. And I think he has like multiple hours of three hours. It's a professionally produced morning show.
+
+Meaning like he's there on camera with his brothers. They got an agenda, a rundown of stories they're going to cover. It's like a news show, business news show.
+
+I think it's called the business news show or some shit like that. Best business show. Best business show.
+
+And he does it for multiple hours in the morning, every morning. And I think I was with him and his wife a while ago and she was joking. She's like, man, he writes all of it.
+
+I don't know how he does it, but he writes really fast. How on earth does this guy have this much output? I have a tremendous amount of respect for that because I know how hard that is.
+
+And I know there's not usually people I look at and I say, I can't, I couldn't do that. And I know when I look at that, I couldn't do that. There's no way I could maintain that level of output.
+
+At the same time, I would not want to do that. That is not a person I want to build for myself. I don't think he's going to be able to keep it.
+
+He won't be able to sustain that for more than two or three years. Yeah, that's crazy. He's got like an empire.
+
+How big is his empire, you think? You think he's making more money from selling stuff as opposed to actual Bitcoin? We've speculated on this before.
+
+So let's, I don't know if we, we've kind of done this before. You want to do it again? Yeah.
+
+Okay, fair enough. So he's got a couple of components, right? He's got the paid sub stack.
+
+So he's got the free, there's like a free version of it. But the daily one, I think goes to a paid group. Ben, do you know roughly what the paid size is?
+
+I think it's like, I think it's something like 70,000 people paying like $10 a month or something like that. I want to say it's like 70K-ish. So that would be what?
+
+700,000. By the way, the, I don't do public math. That was stolen from Pump.
+
+Pump said that. I thought it was fucking hilarious and stole it because I think it's amazing. It's amazing rule to live by.
+
+So he's got about 200,000 people total on his list. And he's got, I think, 70 that are in the paid group. Let's just call it that.
+
+Then he's got a job board. I think the job board we had heard, either heard or we had kind of investigated, looked like it was doing about a million dollars a year. That's cryptojobs.com or something.
+
+So then he said, all right, you learn about crypto from me. You want to work in crypto? Boom.
+
+He also has sponsors on all the newsletters. So at the end of every newsletter, it's like, thanks to these 10 companies. He like rolls the credits.
+
+And if I had to guess, that would be, if he has 200,000 free subscribers, that'd be around between 100,000 to $200,000 a month in sponsor revenue. So we're at, I think what we've just added up to is about two to two and a half million dollars a year. And then that stuff.
+
+His videos. He does about a million dollars a year on his Bitcoin course, which I don't think he even shows up for, or maybe he does. But like, I think he's got teachers.
+
+It's like pretty automated. So let's add another million there. That's let's say three, three and a half million on the course.
+
+Then there's investing. So investing is probably where the real money is to be made. Very hard to say kind of what both crypto investing.
+
+So like buying Bitcoin and other tokens, as well as investing in companies that serve the crypto economy. That's kind of like, and he had a fund. The fund was pretty big.
+
+Ben, how big was the fund? But he closed it. He returned all the investment money.
+
+Hundreds of millions of dollars. Hundred? No, that was the fund he was at before this.
+
+Right. Sorry. His personal fund, which is like the pop rolling fund or whatever.
+
+Oh yeah. I think it was like 25 million a year or something like that, which is the equivalent of a hundred million dollar fund. So I think he was doing 20 to 25 million a year.
+
+Again, these are all plus or minus 50%. And then his YouTube got 4 million views in the last 30 days. And then his podcast, I bet, is around where we are.
+
+But dude, YouTube at 4 million views, that's like $4,000 or something. YouTube pays like nothing on just the views. But maybe his sponsors, because I think his best business show has a main sponsor that's like...
+
+Yeah, it's SoFi. Because one time I got in trouble because I disrespected them when they were... Well, they're not a sponsor anymore, right?
+
+So can you tell the story? Yeah. So basically, one time The Hustle wrote an article about SoFi's CEO getting in trouble for...
+
+I don't remember what... Was it a sexual thing or was it fraud? Something like that.
+
+And he... In the headline, we wrote, SoFi, more like so fucked. And they bailed as a sponsor.
+
+And I told that story on his podcast. And he got really... He wasn't mad.
+
+Uncomfortable. Yeah. I was like, well, you just tell him I said it.
+
+You know, you didn't say it. I said it. So SoFi can't...
+
+You're like a menace. Yeah. To the SoFi marketing team.
+
+They're like, God, everywhere we go, this guy comes in and hits the same SoFi, SoFi joke. It's a good joke. It's a good joke.
+
+So anyway, I would get... I would... So at this point, I would say he's in the huge range of five and seven million a year, just off like Pomp.
+
+That's income, right? Then not even counting the sort of equity value. Because there's also Bitcoin Pizza, which was his like ghost kitchen he launched.
+
+What else is there, Ben? He's got merch. Is he a merch?
+
+I think he's got merch. Yeah, he's got merch. What are the other part of his empire, of his Pomp empire?
+
+He's got his brothers. So I really respect that. Anybody who takes...
+
+You know, anybody who's got the when I eat, we all eat mentality, I respect that. And he brought his brothers along. So there's one brother, Joe.
+
+He does awesome content about the business of sports. His other brothers are his co-hosts for the Best Business Show. Because when I asked him, I was like, dude, why are you signing up to do this morning show?
+
+Like, that's so much work to do a YouTube show every day for multiple hours. He's like, yeah, but I'm just like, it's me hanging out with my brothers, shooting shit, busting each other's balls and talking business. Like, that's kind of what I would...
+
+If I just said, what's my ideal life? It's like, oh, just hang out with my brothers and like... I mean, I get it.
+
+I could do that. The problem is, is like, let's say you want to take like a three-week vacation. You know?
+
+Yeah, there's a difference between I like to do it and I have to do it. Right. And he's in the half to do it, it seems like right now, where you're committed to a schedule.
+
+All right. You want me to tell you about an interesting company? Yeah.
+
+Actually, one plug there while Ben's here. So we... I don't know when we're going to talk about the Milk Road.
+
+I want to talk about my new project that me and Ben have launched, a new company. But there is a version of this, which is the one... We were like, all right, this is a great idea.
+
+But there's one drawback, which is you have to write this email every day. And it's the same thing. It's a prison.
+
+And we were very conscious about it. It's like, Ben, you want to sign up for this? This is the prison we're going to choose to be in.
+
+Like, if this is what we choose, fine. But let's not get here and be surprised because that's the commitment we got to make. We were every night, and so Ben at midnight after the babies are asleep or whatever, it's like, you know, he's like, hey, here's the draft for tomorrow morning's email.
+
+And then I was up till 2 a.m. last night editing the thing. And so there's definitely a pain in the ass component to it that I'm experiencing, which is one-tenth of what Pomp does, but it's more than enough for me.
+
+And you did the same thing with the hustle. It's hard, man. It's hard.
+
+I loved it. I mean, to me, it's like, I think I told you, it's almost like running a marathon or like being in a fight or something. It's like you're scared to do it.
+
+You do it, and you get in the thick of it, and you like kind of enjoy it. And then you get to a point where you can take a break, and you're like, this is horrible. I never want to do this again, which is how I felt like last year.
+
+And then you get like six months out, and you're like, fuck, I missed the action. I need to get into it. And so it's really hard to write a newsletter every single day.
+
+To do any type of content creation every single day for more than a year is very, very, very hard. Really tough. And we're only, what, less than a month into it.
+
+Ben, what's the, where are you at in the grind? Like, I think we're giving it a year for like how long you could tolerate this and sustain this pace. Where are you at right now?
+
+You're only in month one. I'm at the still exciting, still fun to research and write, but I am at the holy shit, Sean's a way better writer than I am point. But I'm still, it's still fun.
+
+Yeah, sometimes I go into edit. I'm like, oh, let me just touch up this little wordsmith. And then like, I overhauled the whole thing.
+
+Cause I'm like, oh no, I think this could be better. And I'm like, actually it was fine before, but like, I just can't help myself. Like last night, actually, this is an interesting point to talk about at SM actually.
+
+So, so we should say two things. What, we'll talk about what this company is and why we started it. Basically every year me and Ben have started one company.
+
+Last year's company was the e-commerce company. And we grew that from zero to about 10 million in revenue profitably. And we, and to do that, like never had done a physical product before.
+
+Never, like never knew how to get things manufactured and all that. Never had been spending like, you know, $200,000 a month on Facebook ads and being responsible for that return and making sure you don't grow broke. So, so that was the adventure last year.
+
+This year we were like, what do we want to do? And we basically were like, whatever it is, it's got to be in either crypto or like kind of like teaching slash audience building. That's the stuff I like to do.
+
+Crypto is like the topic me and Ben are obsessed with. And that's why we came up with this thing called the milk road, which is basically, it's an email you get every day. And we just say, it's kind of like, it's the way I got, it's the way I got good at crypto, which was my buddy Furkan, who's way smarter than me.
+
+He was like, he, you know, he bought Ethereum in the crowd sale. He bought, he was mining Bitcoin back in the day. Like this guy's just been ahead of the curve on stuff.
+
+He's an engineer. And every day he basically just sends me like three links. He's like, yo, check this out.
+
+You seen this? I'm always like, no, I haven't seen it. And then I'm always like, wait, what is this?
+
+Why is this interesting? And he's like, oh, so the reason this is cool is because ABC, and he just breaks it down super simple for like a dumb ass like me. And I was like, dude, if I could just take that idea and provide that like as a newsletter, like Furkan doesn't care.
+
+He's never going to create a sub stack or a newsletter. He's like too smart and too cool for all that shit. But I was like, if I could take that idea of like a smart friend, just showing you one or two cool things a day that's going on in crypto and explaining it in simple plain Jane English, I think that that would actually be useful.
+
+How many subscribers do you guys have? So we've been doing it for, I think, three weeks now, and we're at 16,500 as of today. So it's grown like last week we're at 10,000.
+
+So this week alone, we've grown about 50%. What was the cause? Two things.
+
+We turned on paid ads. And so you referred or you know a guy who is good with this stuff. He's been helping us out.
+
+He's really good. Actually, like I've tried like five agencies for Facebook ads. This guy's like better than all of them.
+
+How much are you spending to acquire an email? Right. I don't want to say that right now, but it's in the good range.
+
+Remember when you were like, dude, back in the day, it used to be X. Now it's Y. We're getting it for X still.
+
+But we also aren't spending a ton. So maybe as we spend more, that's going to go down. But honestly, there's such a big appetite for learning crypto because people know, people kind of know.
+
+All right, this seems like the next big wave. Like, you know, there was the internet. There was mobile phones.
+
+There's iPhone. And now like crypto seems to be the big wave. Super hard to keep up with.
+
+And I know there's money to be made. So I think the appetite is there where I think we're going to keep getting subscribers for pretty cheap because the appetite, I've never seen an appetite for content like this in my life because I've been trying to make content that people want. And I'm always talking about shit I'm into.
+
+And like, you know, it's often like. I think the name is good. I think the name is pretty good.
+
+And you're using that platform Beehive. Is that any good? Beehive is pretty good.
+
+It's pretty new. So like there's a lot of features we need where we're like, yo, we need to be able to, for example, if I do a partnership with somebody or somebody plugs us in their newsletter or let's say Facebook ads, we pay for Facebook ads. I need to know if that subscriber like worth the same as an organic.
+
+Like, are they still opening it 20 days later? You know, I need to know like based on where they came from, are they still opening it to know where I should put my energy spreading the word? And so they don't have features like that yet.
+
+But we're kind of working with them to be like, yo, help us like good. We need X. Can you build it?
+
+We'll be your best customer if you can kind of like help us get what we need. Sick. I think it's I think it's going to work.
+
+It just I think that you'll start seeing what you've already seen progress. After one year, you're going to see a lot of progress. And then if you continue to do it for three years, then shit really starts to accumulate.
+
+The media really does compound. I didn't believe that it did compound because I'm like, well, it's not like subscription revenue necessarily. But then I realized I'm like, yeah, but if I like just continue doing this and I get known you like it becomes it compounds in terms of cultural relevance.
+
+And that usually translates to revenue. That's a good point. And I've always said this and I've always fucked this up.
+
+That's the reason I keep saying it. So mostly as a reminder myself, like the best advice I give them, the advice I give the most to others is the advice that I've had. This is the lesson I've had to relearn five times because I just can't like get it through my thick head.
+
+And that's that what you work on and who you work with matters way more than how hard you work. And to put that another way is the most important decision you make is what project to work on. And so like I'll tell you, like I've worked on some really shitty projects like we did a hackathon and we built this app called Beer Hunt.
+
+And it was like every time you drink beer, you like take a picture of it, you check it in. Yeah, but you don't give a shit about that. But and it's like and people got excited.
+
+Why? Because, oh, beer, everybody loves to like it would get a big reaction. Anytime we told somebody about it, they'd laugh and they'd be like, oh, that's cool.
+
+I'll send it to my buddy or whatever. And so people liked it who were especially craft beer types. But I wasn't a craft beer type.
+
+And also like I didn't have the filter of like, dude, if I'm going to do anything, it's going to basically take up all my time for like three years minimum. Is this the one? Right.
+
+And and I was treating it like a, you know, like a hookup and I should have been treating it like marriage because projects are more like marriage really when they like once you decide to do them, you're going to do them for multiple years. Right. Like and so.
+
+So I've chosen a bunch. I did a sushi restaurant. Horrible project.
+
+Beer app. Horrible project. Tried to build the next big social network and messaging app.
+
+Worked so hard. Built cool shit. But like the fucking hardest industry to like, you know, you're just running around with a bottle trying to catch lightning.
+
+So my project selection has been horrible to date. The best project I ever selected was this podcast. And then, you know, the e-commerce one was OK.
+
+Not not great. It's like it's successful, but it's more successful just because I got better at business. It's still a really hard business to be in and kind of a roll up your sleeves type of business to do.
+
+I think this is probably the next best. Like, I think I finally did project selection right. And the reason why is.
+
+I think that crypto is as important as like, you know, mobile apps and iPhone was in kind of like 2009, 2008, 2010, maybe. And as important as like the Internet was back in like 1999. I think that's true.
+
+And when there's a huge wave happening, it kind of doesn't matter exactly what you do. You just need to make sure you're out in the water paddling with your board. And I had been kind of like I'd been investing and thinking about it, but like it wasn't my job.
+
+It wasn't my job to think about it every single day. What this newsletter does, like, I don't know if the news I don't know if the media business is going to be amazing. I think it could be.
+
+But even if it's not, the fact that my job is that every day I have to learn two amazing things, like two interesting things about crypto and be able to explain it to tens of thousands of people. That is like that is a job that I think is going to pay off in weird ways. I think I think we're going to get into good investments because people are like, oh, cool.
+
+Yeah, you guys got that big distribution. Yeah, we want you in this project. Yeah, I mean, I'm going to find that's what happened with the hustle.
+
+Right. And it's like, I'm going to find cool projects because I'm literally I have to say something interesting tomorrow morning at 7 a.m. when this email goes out.
+
+I'm not going to say something boring. So that means I got to learn something every day. So that means I'm turning myself into kind of like a learning machine.
+
+So that is why I think this is the right project. And the reason I share this is because I think it's the most important decision you make in any project you do in any endeavor you do is just at the beginning. What project you decided to go for?
+
+Dude, I that's wonderful. I'm reading three to two books on this topic. The first is called Wanting, which is Andrew suggested it.
+
+That's why I bought it. He suggested it on this pod. It's called Wanting and it's about mesmic desire.
+
+Memetic. Sorry, memetic desire. And the second one is the Daily Laws.
+
+And it's this daily it's about the 48 Laws of Power and mastery and all these great books by this guy named Robert Green. But you read just one page a day. And the whole first section that I'm continuing reading is like, how do you find what you care about?
+
+And it's really great because the the the thing is, is you want to find you want to find stuff where you are able to when you get into it, you actually get more energized. And I've done a lot of stuff like copywriting stuff, which I think is fun sometimes. But when I do it, I'm like, oh, I got to like I'll be like, fine, I'm going to get this done by one o'clock on Monday.
+
+I got to get this done. And then I realized one time a couple of years ago, I moved apartments and I remember the mover coming and I planned for a week. So I was like, all right, we're going to get all these box.
+
+We're going to stack these box here. This is how we're going to move it. The movers are to come at eight o'clock.
+
+I'm going to be there. I'm going to lift us up. And then I was I got up at 5 a.m.
+
+because I couldn't go to I couldn't sleep. I was like, I'm so excited to move and to like physically move these things and set up the new place. And I was thinking about that when I was figuring out what I'm going to do next.
+
+And that's one of the reasons why I'm getting into short term rentals right now is because I just got it. And I think that the point I'm trying to make is when you're thinking about what gives you energy, it doesn't have to be you said it. But I don't actually think you meant this this way.
+
+You said I think this is a big deal and I don't think that's why it excites you. It excites you just because the I don't know why it excites you, but like the literally just like it's a new money. That's kind of interesting.
+
+I don't think it would matter if like everyone's talking about it or not. Like I don't know if you if that's what excites you. What excites you is like literally the tiny minute details.
+
+For some reason, it's just maybe the math. Maybe like you're overthrowing the system. Something about that is really interesting to you.
+
+Right. And so for me, I was like, I just love moving these fucking boxes and moving into a new apartment. I don't know why I love doing that, but like I love going out on the street and hunting for places and talking to the guy at the bar.
+
+Like, what do you think about this neighborhood? Are all the hipsters moving here? Like, I love it.
+
+I get obsessed with it. And like I what I was trying to do, what I should do next is I was thinking about what do I just get so much energy of? And I remember I cannot sleep the day before I've got to move because I'm so excited.
+
+That's so funny, but I think most people hate that, but you love it, which is why it's even more valuable when you when the thing you get energy from is things that drain other people's energy. Like bingo, you're going to outcompete everybody because for them, it's going to be working for you. It's going to be play.
+
+Like my coworker, this guy, Paul Gebheim told me this once. He goes, he was like, I hadn't really thought about this. I was really young at the time.
+
+I was like maybe 24, 24, 25. And he goes, he goes, yeah, so you should you should go talk at this event. And I was like, why is it going to like give growth to the to our app?
+
+Or like, are we going to recruit people? He's like, no, you should go talk because you love talking, right? Like he's like talking gives you energy, so you're going to love it.
+
+And I go, what? He goes, he goes, yeah, it's like, you know, for most people, if they had to go give a talk in front of a bunch of people, they would like they'd be drained by the time they even get up on the stage. And then afterwards, there'd just be like finally some relief from the anxiety I've been feeling.
+
+He's like, you're the opposite. He's like, I noticed that he goes, he goes, yeah, he goes, it's like going to the gym. You know, you go to the gym and like, if you just look at the math, it's like, well, there's a lot of energy expended working out.
+
+But how do you feel after you work out? You feel, yeah, you feel physically a bit tired, but you feel like your actual spirit feels energized. Like you go give energy and somehow you get energy in that moment.
+
+And he's like, so, you know, there's some stuff that's energy drains, even though it's not that taxing. It's like just thinking about your good. Think about filing your taxes for like the next 20 minutes.
+
+Watch. You'll feel fucking awful. By the end of it, you'll go need a nap or a drink.
+
+And it's like, on the other hand, if you do stuff that gives you energy, you know, blah, blah, blah. And so, you know, you can audit your calendar and say, I'm going to highlight in green the things that I do that give me energy and put in red the things that suck my soul. And, you know, if I want to have a better life, I should probably just do more of the green shit.
+
+I think that's great. I think that I'm talking to a ton of people right now who are messing. They're like, you know, I've made a little bit of a name for myself.
+
+What should I do? In my career. But like, I don't even like it.
+
+What the fuck do I do? And I'm like, oh, yeah, it's tough. But you got to find where you have to find what gives you energy.
+
+That doesn't necessarily mean what makes you happy, by the way. But what gives you energy? Totally, because it can be really challenging and frustrating at times.
+
+And, you know, it'll have highs and lows. In fact, I add this channel to every slack that I do. So like I just put it in our e-commerce one because we just had like a big low where we got effed over by this like crazy unforeseen circumstance.
+
+It's like, oh, well, here's another one. And so, you know, my team, they get so bogged down by these highs and lows. And I was like, guys, remember, like we we stood in line to get on a roller coaster.
+
+Why are we surprised when there's highs and lows? That's what a roller coaster does. Like, if you didn't want the thrill, like, you know, we can go sit in the grass over there.
+
+We don't have to be on a roller coaster. That's such a good line. I'm stealing that.
+
+And it's like, you know, so I create a slack channel called highs and lows. And I say, well, now we have a place to put it, which is in itself like therapy. It's like, ah, dude, this is going to be an epic low that I put in there.
+
+And we went we wrote the low and then we started writing some highs that we've had. And like it just it's what you should expect. Don't be surprised when the roller coaster goes up and down, when you stood in line to get on a roller coaster, you were excited about going on this roller coaster.
+
+You know, that's that's what you wanted. You wanted the adventure. And so and so, you know, that's how I think that's like a good tip for really any business.
+
+That's a great line with the Milk Road, which Milk Road is the name of the crypto email that me and Ben sent out every day. And like you go to Milk Road dot com about the domain, by the way, for two thousand dollars. I think it's pretty good.
+
+Pretty good. That's a good buy. Two grand for milk road dot com.
+
+That's a great buy. I would have thought you had to get the dot co. We had milk road dot xyz and it was like just such bullshit.
+
+Like people couldn't even like the thing wouldn't even load. I don't know why, but like milk road dot com. So when we started writing this, I was like, all right, I found my thing.
+
+Now, I found my thing when I was probably like 32 or something like that. Right. So it took me 12 years maybe to figure out what's the thing that gives me energy.
+
+And mine was I just want to get paid to be curious. And it's like, what does that mean? It's like, I don't know, like every like every day I hear about different stuff or reading about things or talking to people.
+
+Wouldn't it be great if just like going and learning that thing was somehow how I got rich and rich and famous? Like, wouldn't that be dope? And like the podcast does that.
+
+It lets me just be curious. I can be like, oh, someone's making a bunch of money selling turnkey tailgates to universities. How does the economics of that work?
+
+Like that shouldn't be something I'm I get I get the license to go spend three hours figuring out. But the podcast gives me that license and cool. It gives me money and fame for for doing it.
+
+Power and influence. Great. As a byproduct.
+
+Then the second thing, the e-commerce one, for example, does not give me this. And that's why I don't think long, long term. It's for me because it's not me being professionally curious.
+
+It's like more of an opportunistic thing. Milk road is that because every day I'm like I like, for example, yesterday. I'm like, this guy came out with this thing.
+
+I think you'll find interesting. So most of the time people talk about the prices. People spend a lot of time talking about price of crypto, which is kind of annoying once you stay in it for a while.
+
+But let's say the price of Ethereum right now is about twenty six hundred dollars per ETH. And it should be five thousand. Yeah, people people come out and they should be there like, oh, like ETH is going to five thousand.
+
+ETH is going to ten thousand. ETH to the moon. Nine times out of ten.
+
+This is, you know, either hopes and dreams or it's like just clickbait. Like if I say I think Bitcoin is going to five million a coin. Guess what?
+
+That's going to get covered by a bunch of people. And like a bunch of people are going to share it because it's outlandish. And hey, you know, don't hold me to it.
+
+What are you going to do? I'm just making some far fetched prediction about the future. And the last one is they are like using some weak ass logic like like people do this with Bitcoin all the time.
+
+They're like, there are fifty five million millionaires in the world and there's only twenty one million Bitcoin. There's not enough Bitcoin for the millionaires to all have one. So price is going to go way, way up.
+
+And it's like, OK, like I understand the general idea of what you're saying, but like that's so unsophisticated compared to. And this is why like Warren Buffett comes out and says Bitcoin is rat poison or it's pure speculation. There's no fundamentals.
+
+That was like the that's the common narrative. So what I thought was kind of cool was was that Ben just linked to an article in the chat where I did the clickbait thing where I said I'm putting 25 percent of my net worth into Bitcoin. This is like, you know, a year and a half ago or something like that.
+
+And I was like, because there's a there's a wave of institutional capital coming in. I'm going to front run the wave. But it just sounds great.
+
+And guess what? You know, these these news news websites, you know, like this like cringy. So wait, it's a picture of my face.
+
+What was the thing that happened? All right. So this guy came out.
+
+He's a he's like a kind of like a crypto quant investor. He's got like his own fund or whatever. And he said, you know, I actually think that there's a way to value Ethereum like you would value any stock, any stock of a company.
+
+He goes, so how do you value a company? You value a company based on his cash flows. Well, guess what, Ethereum has revenue.
+
+So what's the revenue of Ethereum? Ethereum has revenue because there's transaction fees. And, you know, this is not new, but there's something new of like Ethereum changed what it does with the transaction fees.
+
+So now you can value it. So, for example, Bitcoin has transaction fees, but the transaction fees get paid to miners. So as a Bitcoin holder, you don't get that revenue.
+
+And the miners all have different expenses. One guy's in Greenland. His expenses are low because the electricity is cheap there, whatever.
+
+So you could never really get the profits, the net profits of Bitcoin transactions or the Bitcoin network because it really wasn't. That's not. It wasn't.
+
+It was apples to oranges. But Ethereum has changed what it does with the fees, which now lets you create a valuation model. So what happens?
+
+All right. Ethereum transaction happens. So you can't get the transaction fee for the transaction fee.
+
+Um, 70% of that, it's called the base fee. And do you know what they do with the base fee? You know where that goes?
+
+No, I don't know anything what you're talking about, to be honest. Okay. So you, okay.
+
+Well, I'll, I'll explain in the most simple terms. When there's an Ethereum, when there's a transaction in Ethereum, there's a fee, right? That's cool.
+
+Visa, MasterCard. Everybody has a fee when you do a transaction. The Ethereum fee gets broken into two parts.
+
+There's the base fee, which is just burned. So they take 70% of the transaction fee and they just get rid of it. Why would you do that?
+
+Well, this is like when a, when a company buys back stock, it's a share buyback. They basically buy stock on the open market and just get rid of it. What does that do?
+
+It makes, it shrinks the supply of the stock, which makes the price go up, right? There's less supply, but there's the same demand. So price goes up.
+
+So the, so Ethereum started doing this thing last year where it takes the fee and it just buys back Ethereum and gets rid of it, which drives the price of it drives the supply down price up. Okay, cool. That's the first bit.
+
+The second bit is there's like a tip that's 30% of the fee. Today that goes to miners, but there's a, like the way Ethereum, there's like Ethereum 2.0 coming out. When it does that, that's going to go to the holders of Ethereum, to the long-term holders of Ethereum.
+
+So that's like a dividend being issued out. So now you have, now Ethereum has revenue, which last month that was 1.3 billion in fees. So real significant revenue, and we know that that accrues, the value accrues to the holders of Ethereum.
+
+So what price target did he put on it? So he does a model. He does a discounted cash flow model.
+
+And he basically says, based on this revenue, based on this multiple and based on the discount rate, the price target for Ethereum right now, right now, the present value of Ethereum, according to this model is $10,000 per ETH. ETH is trading at 2.6k. If you believe this guy's model, he's undervalued currently by about 4x.
+
+And he put the model out there. So anybody can go change it. You could say- What's his name?
+
+His name is- What do I Google to read it? What was his name? Ryan Alice.
+
+A-L-I-S. Ryan Alice. Ryan Alice.
+
+Ryan Alice. And so you could say, okay, maybe he's got really aggressive assumptions in his model. Well, actually, he just used the average price to earnings multiple of the S&P 500.
+
+And he assumed 25% annual growth for the Ethereum network over the next 20 years, which is not like super aggressive. Right? Ryan Alice.
+
+He's like, I'm going to talk to my perspective on how they were. And I'm going to talk to my perspective on how they were doing. Right?
+
+And then I'm like, I've been in 40% this year. You know, it's growing much faster than that right now. So you've used pretty conservative estimates.
+
+Now, there's always risks, right? Any- I have this phrase I put in my- I put in the newsletter this morning, which is that, you know, more fiction gets written in Excel than in- Right. you know, because you can make an Excel model dance and make it look great just by tweaking two little variables.
+
+So you always have to be careful with the stuff. You got to do your own homework. I found this to be really interesting because the common narrative is, oh, it's all speculation.
+
+It's got no intrinsic value. There's no fundamentals. There's no analysis you can do on it.
+
+You're just guessing what the next guy is going to buy. And that actually is true for most coins. And it was true for Ethereum until now.
+
+And one of the best things you can do as an investor is spot when something, a common narrative is now no longer true. Those are usually pretty big opportunities. So anyways, I'm up till 3 a.m.
+
+last night because I'm learning what this guy's model look like. I'm kind of checking it for myself. Does this make sense to me?
+
+And I'm putting that in the newsletter is like, hey, let me make this simple for you to understand. Like, this is kind of cool. And so even though that's a lot of work, that's a prison of my own making that I'm happy to do because I would rather be doing nothing else.
+
+I hope that you're going to be into this, though, for years. I think you will be. That's the big TBD.
+
+That's the, that's the, I think you will be. For now, I'm into it. I'm providing a fuck ton of value.
+
+Nine months from now, 28 months from now, am I going to feel the same? I don't know. But hopefully we can hire a writer who doesn't feel the same.
+
+I think with most people, even the shit they love, it does get boring sometimes. And then what you do is you walk away or you chill and then you, you fall in love again. I mean, I have to imagine that even stealing Steven Spielberg is like, I don't want to make a movie this year.
+
+Right. You know what I mean? Uh, I think is that how they feel?
+
+I wonder what like Nadal or what's, what's the tennis player or the, uh, um, Rafael Nadal. Yeah. I wonder like what he thinks about like tennis or something like that.
+
+I mean, I like Usain Bolt was like, I don't even like training, man. I'm just doing this cause I'm good at it. And it like, I like winning, but I don't really love, I'm not in love with this right now.
+
+Um, and like, I think that's normal. I think that's natural. And you see even like fighters like Dustin Poirier, when he beat kind of McGregor, he was like, man, I'm over this.
+
+I don't want to do this anymore. I don't even like this anymore. Tom Brady just retired yesterday.
+
+Right. And he was like, basically he's, he's what he's 44 now. So he's been doing this for like, you know, 20 plus years, um, professionally.
+
+And he was like, football is, he's like, I still love the games, but football is a 365 days a year commitment for me. I don't know if you know about Tom Brady, but he like sleeps every day at like 8 PM. The guy who started like the T12 or whatever his thing is called the T body or whatever his thing is called.
+
+Wanted to come on the pod. Oh really? His trainer?
+
+Yeah. That guy, Alex. I don't know if it's trainer or business partner, but like he branded himself as the guy who started it.
+
+Um, TB to the TB 12 method. Um, so, uh, yeah, I think people do get burnt out. Tony Robbins has this thing.
+
+He says, which he goes, people's number one need in life is certainty. So like, you need to know where your next meal is coming. If you've got a roof over your head, where you're going to sleep.
+
+That's why we love relationships. Cause we love the certainty and comfort of knowing who's going to be there, who you talk to, what you do every day. We love routines.
+
+He goes, but you know, God in her infinite wisdom made it so that, uh, the second biggest need we have is uncertainty, which is variety, which is, it's like a seesaw. What do you do? As soon as the thing is balanced, you start jumping around to mess it up.
+
+Right. And like, you got to know that about your nature. And, um, and there's like, you know, it's, it's completely normal to enjoy a structured routine.
+
+And then at the same time, crave variation doesn't mean you don't like the thing or it's not cool anymore. Uh, it's just that that's how humans are wired. All right.
+
+Sick. Let's wrap up here because I've got, I've got some stuff that I wanted to cover, but we didn't get to it today. And so we'll save that for Monday.
+
+Right. Okay. Cool.
+
+Producer Ben, what'd you think of the app? Good episode. Uh, uh, good episode.
+
+Ben Levy, good addition. Good story. Uh, yeah.
+
+Solid episode. Ben, your, your meme was amazing. He did this meme, which is like, walks into Sean's office for interview.
+
+Is your name Ben? Yes. You're hired.
+
+We're putting together a team. If your name's Ben and you're talented, get it, get at us. How's your, uh, what were your, what was your numbers in January?
+
+Ben? Oh, I need to look it up. It was, uh, it didn't beat my best month, which was, um, like just below a hundred.
+
+My best month was 97 or something like that. And this was just below that. What's the latest, uh, who are you profiling right now?
+
+What story are you telling? Uh, well, I'm still in the middle of Walt Disney. I haven't put out part two yet.
+
+Um, so I'm in the middle of that. And also I'm, I'm a, I'm a bigamist. I'm a cheater when it comes to research.
+
+So I'm also doing a little research on other stuff too. Yeah. So I know a fair bit about Walt Disney.
+
+What's like, give me one tidbit. That's like, bet you didn't know this or this is super what I found super fascinating. Give me one.
+
+I haven't listened to that. He's optimistic and he went broke and bankrupt a few times, right? Yeah.
+
+I mean, that was the most amazing thing to me. Um, I actually, the tidbit that like has blown my mind the most, um, is there's this story where basically they're inventing cartoons of sound and like, they're showing it to this audience. Audience is going crazy.
+
+Right. So they keep showing it to him again and again and again. And finally a couple of his animators are like, we can't do this.
+
+It's six hours. They've been showing it to him. It's two in the morning.
+
+So they just like go outside of the theater a little bit and they're like, smoking and talking and he comes out and he goes, yeah, what are you guys gonna do? Can you stand out here talking about babies or you're gonna come inside and change the world? And it blew my mind.
+
+Cause I was like, if you just told me that, that quote out of context, I would have told you it was Steve jobs. Like it was, it's so similar. And then I just like started putting it.
+
+I would have thought of Sam par when he said, uh, do you want your kids to have braces? It's so those are just like two stories that I'm breaking this down now in the second episode, the similarities between their stories are actually like kind of uncanny. They have a lot of weird similarities.
+
+Yeah. Isn't it? I've always thought that like you could, with all types of people that you could basically, there's like, I was always trying to think how many categories are there of people?
+
+Cause I remember meeting some people. I'm like, Oh, you are this, you are exactly this human being. And after listening to your podcast, I remember listening to Edison and I'm like, Oh, Elon is exactly like that.
+
+And if I study Edison, I bet you I can like make sense of a lot of what Elon's doing and help predict what he might do. And I wonder if you could do the same for like a jobs and a, uh, uh, a Walt Disney where you just put them in the same category. You're like, I bet I can understand a lot of stuff because of Ben, this is perfect for your, your, uh, consulting business that you, that you've created off the pod, you know, those disc personality surveys where it's like, you're a dominant and, you know, indifferent or whatever, you know, like some bullshit like that.
+
+You're a red blue and you can get along with greens. Uh, you just need to do that with like great, great people in history. It's like you're 42% jobs and actually like, you know, say you're 42% jobs and you're 60%, um, you know, like whatever, uh, you know, Walt Disney.
+
+And it's like, what does that mean? It's like, well, you're like jobs in this way and everybody just gets a compliment. It's like, oh yeah, I'm, I'm 82% Edison actually.
+
+And I don't work well with Disney's. I'm 32% Wozniak. I need to find my job.
+
+Yeah. Yeah. Do something like Myers-Briggs over the top of it.
+
+I like that. Um, all right. I'm all about making up fake personality, uh, quizzes.
+
+I think that's great. I got to run. I got to go get my workout in.
+
+It's about to snow and get freezing in Austin. Like the first time in a long time. So I got to get an Austin like shut down when it snows.
+
+Yeah. It's stupid. Like last year we were shut down for like a week, but I didn't have power and water for six days and it was like 20 degrees.
+
+So it was kind of warranted by the way, speaking of one liners, you said an amazing one after we recorded last week. Uh, the, like, like he was just saying that Walt Disney quote, what was the one that you said that our, our buddy said, he goes, he goes, and this guy's like worth a hundred plus million dollars. He said, um, people hate on get rich quick schemes.
+
+Are they crazy? Getting rich quick is the best way to get rich. Why would anyone hate on that?
+
+I love getting rich quick. I only want to get rich quick. Yeah.
+
+He goes, you got a good get rich quick scheme for me. I love that. And this guy like sold his company in like two years.
+
+So like, it was a get rich quick scheme. It worked. Uh, so funny.
+
+All right. See you guys. Bye.

@@ -132,177 +132,305 @@ class MapReduceExtractor:
         
         # Map phase prompt for mental models
         map_mental_models_prompt = """
-You are analyzing a batch of content from an influencer to identify MENTAL MODELS and FRAMEWORKS.
+You are a highly precise AI analyst acting as a knowledge extractor. Your task is to identify and structure the repeatable, actionable frameworks ("Mental Models") an influencer teaches by following a strict input-output format.
 
-CONTENT BATCH:
-{content}
+## TASK DEFINITION & GOAL ##
 
-STATISTICAL INSIGHTS:
-{statistical_insights}
+Your primary goal is to find and formalize structured, step-by-step processes from the provided text.
 
-Your task is to extract CANDIDATE mental models from this batch. Focus on:
-1. Systematic approaches to problems mentioned in this content
-2. Step-by-step methodologies described
-3. Frameworks with clear stages
-4. Problem-solving patterns shown
-5. Decision-making processes outlined
+**What Qualifies as a "Mental Model":**
+A Mental Model is a repeatable recipe or process for achieving a specific outcome. You must look for:
+- **Explicitly named frameworks** (e.g., "The 5-Step Content Funnel," "My Audience Growth Flywheel").
+- **Numbered or sequential instructions** (e.g., "There are three things you must do. First, you need to X. Second, you do Y...").
+- **Clear, multi-step processes** for a specific task (e.g., validating a business idea, hiring a key employee).
 
-For each mental model found, provide:
-- NAME: Clear, descriptive name
-- DESCRIPTION: What the model does
-- STEPS: Numbered steps (2-10 steps)
-- APPLICATION_CONTEXTS: Where it's used
-- EXAMPLES: Real examples from this batch
-- FREQUENCY_SCORE: How often it appears in this batch (1-10)
+**What to AVOID (These are NOT Mental Models):**
+- **Vague advice:** Do not extract simple platitudes like "be consistent," "work hard," or "listen to your customers."
+- **Single opinions or recommendations:** Do not extract statements like "I think Notion is the best tool" or "You should post on Twitter."
+- **Philosophical statements:** Do not extract high-level beliefs that lack a clear, actionable sequence of steps.
 
-Return a JSON array of mental models:
+You will receive an <input_block> with the content to analyze. You MUST generate an <output_block> that contains your detailed reasoning and the final, precisely formatted JSON.
+
+---
+## JSON FIELD DEFINITIONS ##
+
+You must adhere to the following definitions for each field in the JSON object:
+
+- **`name` (string):** A concise, descriptive name for the framework. If the influencer gives it a name, use that. If not, create a name that summarizes its purpose (e.g., "Startup Idea Validation Process").
+- **`description` (string):** A single sentence explaining the purpose and outcome of this model. It must answer: "What does this framework help someone achieve?"
+- **`steps` (array of strings):** An array where each string is a distinct, actionable step in the process, kept in the correct sequence.
+- **`application_contexts` (array of strings):** A list of specific situations or domains where this model is applied (e.g., "Validating a startup idea", "Growing a YouTube channel").
+- **`examples` (array of strings):** A list of brief, concrete examples of the model being used (e.g., "My last SaaS launch", "The 'Creator Funnel' campaign").
+- **`frequency_score` (integer):** An estimated integer from 1 to 10 representing how often this model is mentioned *within this specific content batch*. A single clear mention is a 5; a central, repeated theme is a 9 or 10.
+- **`confidence_score` (float):** A float between 0.0 and 1.0 representing your confidence that this is a true, well-defined model. Use 0.9+ for explicitly named frameworks with clear steps.
+- **`batch_evidence` (array of strings):** A list containing 1-2 of the most compelling and direct verbatim quotes from the text that prove the existence of the model.
+
+---
+## EXAMPLE ##
+
+<input_block>
+<content_to_analyze>
+To launch a new product, I always follow my 3-P Framework. First, you have to Plan your priorities. Figure out the one thing that matters. Second, Protect your time fiercely. Block it out on your calendar. Finally, Perform with focus. Turn off all distractions and just execute. I used this for my last SaaS launch and it was a game changer.
+</content_to_analyze>
+</input_block>
+
+<output_block>
+<thinking>
+The user mentioned a "3-P Framework". It has three clear, sequential steps. This qualifies as a mental model. I will extract its name, description, steps, and context. It was used for a 'SaaS launch', so that is both the context and an example. It's a central theme here, so frequency is high. Confidence is very high as it's named and has clear steps. I will pull direct quotes for evidence.
+</thinking>
+<json_output>
 [
     {{
-        "name": "Framework Name",
-        "description": "Brief description of what this framework does",
-        "steps": ["1. First step", "2. Second step", "3. Third step"],
-        "application_contexts": ["context1", "context2"],
-        "examples": ["example1", "example2"],
+        "name": "The 3-P Framework",
+        "description": "A three-step framework for successfully launching a new product by focusing on priorities, time management, and execution.",
+        "steps": [
+            "1. Plan your priorities and identify the single most important task.",
+            "2. Protect your time by blocking it out on a calendar.",
+            "3. Perform with focus by eliminating distractions during execution."
+        ],
+        "application_contexts": ["Product Launches", "SaaS Business"],
+        "examples": ["Used for my last SaaS launch"],
         "frequency_score": 8,
-        "confidence_score": 0.9,
-        "batch_evidence": ["supporting quote 1", "supporting quote 2"]
+        "confidence_score": 0.95,
+        "batch_evidence": ["To launch a new product, I always follow my 3-P Framework.", "Finally, Perform with focus. Turn off all distractions and just execute."]
     }}
 ]
+</json_output>
+</output_block>
 
-Only include frameworks that are clearly explained. Be generous in this MAP phase - capture all potential models.
-Confidence score should be 0.6-1.0 based on clarity in this batch.
-"""
+---
+## YOUR TASK ##
+
+<input_block>
+<content_to_analyze>
+{content}
+</content_to_analyze>
+</input_block>
+
+<output_block>"""
 
         # Map phase prompt for core beliefs
         map_core_beliefs_prompt = """
-You are analyzing a batch of content from an influencer to identify CORE BELIEFS and principles.
+You are a highly precise AI analyst acting as a knowledge extractor. Your task is to identify and formalize the foundational principles, or "Core Beliefs," that guide an influencer's worldview and advice by following a strict input-output format.
 
-CONTENT BATCH:
-{content}
+## TASK DEFINITION & GOAL ##
 
-STATISTICAL INSIGHTS:
-{statistical_insights}
+Your primary goal is to uncover the fundamental, often repeated, rules and assumptions that underpin the influencer's content.
 
-Your task is to extract CANDIDATE core beliefs from this batch. Look for:
-1. Repeated philosophical statements
-2. Fundamental principles about life/business/success
-3. Strong opinions stated as facts
-4. Values consistently promoted
-5. Beliefs that underpin advice given
+**What Qualifies as a "Core Belief":**
+A Core Belief is a foundational principle that is treated as a truth. It's the "why" behind their advice. You must look for:
+- **Underlying assumptions** (e.g., "Every business must leverage automation to survive").
+- **Strong, principled stances** (e.g., "Action produces information; it's better to launch than to plan perfectly").
+- **Frequently repeated philosophical rules** about how the world works in their domain.
 
-For each belief found, provide:
-- STATEMENT: Clear, concise belief statement
-- CATEGORY: Area it relates to (productivity, business, personal development, etc.)
-- EVIDENCE: Supporting quotes/examples from this batch
-- FREQUENCY_SCORE: How often this belief appears in this batch (1-10)
-- CONFIDENCE: How sure you are this is a core belief
+**What to AVOID (These are NOT Core Beliefs):**
+- **Simple opinions or preferences:** Do not extract statements like "I think AI is cool" or "Our next guest is fantastic."
+- **Factual statements:** Do not extract verifiable facts like "The market is growing by 10% a year."
+- **Specific, tactical advice:** Do not extract instructions that aren't tied to a deeper principle (e.g., "You should post three times a day on Twitter").
 
-Return a JSON array of core beliefs:
+You will receive an <input_block> with the content to analyze. You MUST generate an <output_block> that contains your detailed reasoning and the final, precisely formatted JSON.
+
+---
+## JSON FIELD DEFINITIONS ##
+
+You must adhere to the following definitions for each field in the JSON object:
+
+- **`statement` (string):** A single, well-articulated sentence that captures the essence of the core belief. It should be a timeless principle, not specific advice.
+- **`category` (string):** A single, lower-case keyword that best describes the domain of this belief (e.g., 'entrepreneurship', 'marketing', 'personal_development', 'mindset').
+- **`evidence` (array of strings):** A list containing 1-2 of the most powerful, direct, verbatim quotes from the text that prove the influencer holds this belief.
+- **`frequency_score` (integer):** An estimated integer from 1 to 10. How prominent is this belief *within this specific content batch*? A single, powerful statement might be a 6; a belief that is the central theme of the text would be a 9 or 10.
+- **`confidence_score` (float):** A float between 0.0 and 1.0. How confident are you that this is a foundational, core belief and not just a fleeting opinion? Use 0.9+ for beliefs that are stated explicitly, with strong conviction, and are central to the main argument.
+- **`batch_source` (string):** The identifier for the source of this content, which will be provided in the input. Use the value from the `{batch_description}` variable.
+- **`related_topics` (array of strings):** A list of 2-3 keywords or short phrases that are closely related to this belief (e.g., for a belief about 'action over planning', related topics could be 'lean startup', 'prototyping', 'validation').
+
+---
+## EXAMPLE ##
+
+<input_block>
+<content_to_analyze>
+Look, a lot of people get stuck in analysis paralysis. They plan forever. I believe you have to ship. Action produces information. You learn more from a failed launch than from a perfect plan that never sees the light of day. Just get it out there. It's the core of the lean startup methodology.
+</content_to_analyze>
+<batch_description>how_to_build_a_startup.txt</batch_description>
+</input_block>
+
+<output_block>
+<thinking>
+The influencer repeatedly emphasizes action over planning. The phrase "Action produces information" is a very strong, concise statement of this principle. This is a clear core belief. I will categorize it as 'entrepreneurship'. I will extract the most powerful quote as evidence. This is the central theme of the provided text, so frequency is high. Confidence is also very high because it's stated as a core belief. The related topics are about shipping products and validating ideas. The batch source is provided in the input.
+</thinking>
+<json_output>
 [
     {{
-        "statement": "Clear belief statement", 
-        "category": "category_name",
-        "evidence": ["supporting quote 1", "supporting quote 2"],
-        "frequency_score": 7,
-        "confidence_score": 0.8,
-        "batch_source": "batch_description",
-        "related_topics": ["topic1", "topic2"]
+        "statement": "Action produces information; it is better to launch and learn than to wait for a perfect plan.",
+        "category": "entrepreneurship",
+        "evidence": ["You learn more from a failed launch than from a perfect plan that never sees the light of day."],
+        "frequency_score": 9,
+        "confidence_score": 0.95,
+        "batch_source": "how_to_build_a_startup.txt",
+        "related_topics": ["lean startup", "product validation", "execution"]
     }}
 ]
+</json_output>
+</output_block>
 
-Be generous in this MAP phase - capture all potential beliefs that appear in this batch.
-Focus on beliefs that are clearly stated or strongly implied in this specific content.
-"""
+---
+## YOUR TASK ##
+
+<input_block>
+<content_to_analyze>
+{content}
+</content_to_analyze>
+<batch_description>{batch_description}</batch_description>
+</input_block>
+
+<output_block>"""
 
         # Reduce phase prompt for mental models
         reduce_mental_models_prompt = """
-You are consolidating mental models extracted from multiple batches of influencer content.
+You are a senior AI strategist. Your task is to analyze a large collection of candidate "Mental Models" and produce a final, consolidated, and de-duplicated list of the top {top_k} frameworks, strictly adhering to the provided instructions and the required JSON format.
 
-ALL CANDIDATE MENTAL MODELS FROM BATCHES:
-{candidate_models}
+## TASK DEFINITION & GOAL ##
 
-CONSOLIDATION STRATEGY: {strategy}
-FREQUENCY THRESHOLD: {min_frequency}
-TARGET COUNT: {top_k}
+Your primary goal is to synthesize the raw data from the <candidate_models_json> into a clean, definitive, and ranked list of the most important mental models. You will achieve this by following a precise algorithm.
 
-Your task is to create the FINAL, consolidated list of mental models by:
+**Consolidation Algorithm:**
+1.  **Analyze & Cluster:** First, carefully review all candidate models provided. Group them into clusters where each model in a cluster represents the same core framework, even if the names or details are slightly different.
+2.  **Synthesize Each Cluster:** For each cluster of candidate models, you must create one single, master version. Merge the descriptions into a single, clear statement. Combine and refine the `steps` into a single, logical, and de-duplicated sequence.
+3.  **Aggregate Data:** Combine all unique `application_contexts` and `examples` from the cluster into unified lists.
+4.  **Calculate Final Scores:** For each consolidated model, calculate the `total_frequency` by SUMMING the `frequency_score` of all candidates in its cluster. Calculate the final `confidence_score` by taking the AVERAGE of the `confidence_score` of all candidates in its cluster.
+5.  **Filter & Rank:** Apply the filtering logic based on the `CONSOLIDATION STRATEGY: {strategy}` and `FREQUENCY THRESHOLD: {min_frequency}`. Then, rank the resulting models and select the `TARGET COUNT: {top_k}`.
+6.  **Format Output:** Format the final ranked list into the required JSON structure, providing all required fields.
 
-1. **DEDUPLICATION**: Merge similar/duplicate models that represent the same concept
-2. **FREQUENCY WEIGHTING**: Prioritize models that appeared across multiple batches
-3. **QUALITY FILTERING**: Keep only the most clearly defined and useful models
-4. **SYNTHESIS**: Combine evidence and examples from multiple batches
+---
+## JSON FIELD DEFINITIONS ##
 
-For each final mental model, provide:
-- Synthesized information from all relevant batch candidates
-- Combined evidence and examples
-- Total frequency score across all batches
-- Confidence based on consistency across batches
+You must generate a final JSON object for each consolidated model with ONLY the following fields:
 
-Return a JSON array of the top {top_k} consolidated mental models:
+- **`name` (string):** The final, most common or clearest name for the framework from the cluster.
+- **`description` (string):** A comprehensive, synthesized description that combines the best elements from all candidates in the cluster.
+- **`steps` (array of strings):** A de-duplicated and logically ordered list of steps that represents the complete framework.
+- **`application_contexts` (array of strings):** A combined, de-duplicated array of all unique contexts from the cluster.
+- **`examples` (array of strings):** A combined, de-duplicated array of the best and most illustrative examples from the cluster.
+- **`total_frequency` (integer):** The SUM of all `frequency_score` values from the original candidates that were merged into this final model.
+- **`confidence_score` (float):** The AVERAGE of all `confidence_score` values from the merged candidates, rounded to two decimal places.
+- **`batch_sources` (array of strings):** An array of strings listing the `batch_source` of *every* candidate that was merged into this final model.
+- **`consolidation_notes` (string):** A brief, one-sentence explanation of how the model was consolidated (e.g., "Merged 3 candidates related to the '3-P Framework'").
+
+---
+## EXAMPLE ##
+
+<input_block>
+<candidate_models_json>
+[
+    {{"name": "The 3-P Launch Method", "description": "A framework for launching products.", "steps": ["1. Plan priorities.", "2. Protect time.", "3. Perform with focus."], "application_contexts": ["Product Launches"], "examples": ["SaaS launch"], "frequency_score": 8, "confidence_score": 0.95, "batch_source": "batch_001.txt"}},
+    {{"name": "My 3-P Framework", "description": "How to execute on a project.", "steps": ["1. Plan the work.", "2. Protect your calendar.", "3. Perform the execution."], "application_contexts": ["Project Execution"], "examples": ["My last big project"], "frequency_score": 6, "confidence_score": 0.90, "batch_source": "batch_005.txt"}}
+]
+</candidate_models_json>
+</input_block>
+
+<output_block>
+<thinking>
+The two candidate models clearly refer to the same "3-P Framework". I will merge them into a single cluster. I will synthesize the name to "The 3-P Framework" and combine the descriptions. The steps are similar, so I will merge and refine them. I will create a unique list of contexts and examples. I will calculate the total_frequency by summing 8 + 6 = 14. I will calculate the average confidence score as (0.95 + 0.90) / 2 = 0.925, which I'll round to 0.93. I will list both batch sources.
+</thinking>
+<json_output>
 [
     {{
-        "name": "Final Framework Name",
-        "description": "Synthesized description",
-        "steps": ["consolidated steps"],
-        "application_contexts": ["all contexts found"],
-        "examples": ["best examples from all batches"],
-        "total_frequency": 15,
-        "confidence_score": 0.95,
-        "batch_sources": ["batch1", "batch2", "batch3"],
-        "consolidation_notes": "How this was synthesized"
+        "name": "The 3-P Framework",
+        "description": "A three-step framework for launching products and executing on projects by planning priorities, protecting time, and performing with focus.",
+        "steps": ["1. Plan priorities and the work.", "2. Protect time on your calendar.", "3. Perform with focused execution."],
+        "application_contexts": ["Product Launches", "Project Execution"],
+        "examples": ["SaaS launch", "My last big project"],
+        "total_frequency": 14,
+        "confidence_score": 0.93,
+        "batch_sources": ["batch_001.txt", "batch_005.txt"],
+        "consolidation_notes": "Merged 2 candidates representing the same 3-P framework."
     }}
 ]
+</json_output>
+</output_block>
 
-Focus on models that:
-- Appeared in {min_frequency}+ batches OR had high frequency in fewer batches
-- Are clearly actionable and well-defined
-- Represent distinct, valuable frameworks
-"""
+---
+## YOUR TASK ##
+
+<input_block>
+<candidate_models_json>
+{candidate_models}
+</candidate_models_json>
+</input_block>
+
+<output_block>"""
 
         # Reduce phase prompt for core beliefs
         reduce_core_beliefs_prompt = """
-You are consolidating core beliefs extracted from multiple batches of influencer content.
+You are a senior AI strategist and philosopher. Your task is to analyze a large collection of candidate "Core Beliefs" and produce a final, consolidated, and de-duplicated list of the top {top_k} foundational principles, strictly adhering to the provided instructions and the required JSON format.
 
-ALL CANDIDATE CORE BELIEFS FROM BATCHES:
-{candidate_beliefs}
+## TASK DEFINITION & GOAL ##
 
-CONSOLIDATION STRATEGY: {strategy}
-FREQUENCY THRESHOLD: {min_frequency}
-TARGET COUNT: {top_k}
+Your primary goal is to synthesize the raw data from the <candidate_beliefs_json> into a clean, definitive, and ranked list of the most important core beliefs. You will achieve this by following a precise algorithm.
 
-Your task is to create the FINAL, consolidated list of core beliefs by:
+**Consolidation Algorithm:**
+1.  **Analyze & Cluster:** First, carefully review all candidate beliefs provided. Group them into clusters where each belief in a cluster represents the same underlying principle, even if the wording of the `statement` is different.
+2.  **Synthesize Each Cluster:** For each cluster, create one single, master belief. Your most important task is to write a new, elegant `statement` that captures the core idea of all candidates in the group.
+3.  **Aggregate Data:** Combine all unique `evidence` quotes into a master list and select the most powerful 1-2 quotes. De-duplicate all `related_topics`.
+4.  **Calculate Final Scores:** For each consolidated belief, calculate the `total_frequency` by SUMMING the `frequency_score` of all candidates in its cluster. Calculate the final `confidence_score` by taking the AVERAGE of the `confidence_score` of all candidates in its cluster.
+5.  **Filter & Rank:** Apply the filtering logic based on the `CONSOLIDATION STRATEGY: {strategy}` and `FREQUENCY THRESHOLD: {min_frequency}`. Then, rank the resulting beliefs and select the `TARGET COUNT: {top_k}`.
+6.  **Format Output:** Format the final ranked list into the required JSON structure, providing all required fields.
 
-1. **DEDUPLICATION**: Merge similar beliefs that express the same principle
-2. **FREQUENCY WEIGHTING**: Prioritize beliefs that appeared across multiple batches
-3. **QUALITY FILTERING**: Keep only the most fundamental and clearly expressed beliefs
-4. **SYNTHESIS**: Combine evidence from multiple batches
+---
+## JSON FIELD DEFINITIONS ##
 
-For each final belief, provide:
-- Synthesized statement representing the core principle
-- Combined evidence from all relevant batches
-- Total frequency across all batches
-- Confidence based on consistency
+You must generate a final JSON object for each consolidated belief with ONLY the following fields:
 
-Return a JSON array of the top {top_k} consolidated core beliefs:
+- **`statement` (string):** The final, master statement of the belief, synthesized to be as clear and profound as possible.
+- **`category` (string):** The single, most fitting category for the synthesized belief from the merged group.
+- **`evidence` (array of strings):** An array containing the BEST 1-2 verbatim quotes from across all merged candidates.
+- **`total_frequency` (integer):** The SUM of all `frequency_score` values from the original candidates that were merged into this final belief.
+- **`confidence_score` (float):** The AVERAGE of all `confidence_score` values from the merged candidates, rounded to two decimal places.
+- **`batch_sources` (array of strings):** An array of strings listing the `batch_source` of *every* candidate that was merged into this final belief.
+- **`related_mental_models` (array of strings):** A list of names of any mental models that appear to be directly related to this core belief, based on the evidence and topics. If none, provide an empty array.
+- **`consolidation_notes` (string):** A brief, one-sentence explanation of the consolidation (e.g., "Merged 2 candidates about the importance of action over planning.").
+
+---
+## EXAMPLE ##
+
+<input_block>
+<candidate_beliefs_json>
+[
+    {{"statement": "You must act to get information.", "category": "entrepreneurship", "evidence": ["Action produces information..."], "frequency_score": 9, "confidence_score": 0.95, "batch_source": "batch_001.txt", "related_topics": ["lean startup", "validation"]}},
+    {{"statement": "Launching is better than perfect planning.", "category": "entrepreneurship", "evidence": ["You learn more from a failed launch than a perfect plan..."], "frequency_score": 7, "confidence_score": 0.90, "batch_source": "batch_002.txt", "related_topics": ["prototyping", "execution"]}}
+]
+</candidate_beliefs_json>
+</input_block>
+
+<output_block>
+<thinking>
+The two candidate beliefs express the same core idea of valuing action over planning. I will merge them into a single cluster. I will synthesize a new, more comprehensive statement. The category is consistent. I will select the best evidence from both. I will sum the frequencies (9 + 7 = 16) and average the confidences ((0.95 + 0.90) / 2 = 0.925, rounded to 0.93). I will list both batch sources. The topics are all related and can be merged. I do not see any specific mental models mentioned, so I will leave that field empty. I will write a consolidation note.
+</thinking>
+<json_output>
 [
     {{
-        "statement": "Final belief statement",
-        "category": "primary_category",
-        "evidence": ["best evidence from all batches"],
-        "total_frequency": 12,
-        "confidence_score": 0.9,
-        "batch_sources": ["batch1", "batch2"],
-        "related_mental_models": ["related frameworks"],
-        "consolidation_notes": "How this belief was synthesized"
+        "statement": "Action produces information; it is better to launch and learn than to wait for a perfect plan.",
+        "category": "entrepreneurship",
+        "evidence": ["Action produces information...", "You learn more from a failed launch than a perfect plan..."],
+        "total_frequency": 16,
+        "confidence_score": 0.93,
+        "batch_sources": ["batch_001.txt", "batch_002.txt"],
+        "related_mental_models": [],
+        "consolidation_notes": "Merged 2 candidates about the principle of prioritizing action over planning."
     }}
 ]
+</json_output>
+</output_block>
 
-Focus on beliefs that:
-- Appeared in {min_frequency}+ batches OR had high confidence in fewer batches
-- Are fundamental to the influencer's worldview
-- Are clearly actionable or prescriptive
-- Represent distinct principles
-"""
+---
+## YOUR TASK ##
+
+<input_block>
+<candidate_beliefs_json>
+{candidate_beliefs}
+</candidate_beliefs_json>
+</input_block>
+
+<output_block>"""
 
         return {
             "map_mental_models": map_mental_models_prompt,
@@ -375,6 +503,9 @@ Focus on beliefs that:
             self.logger.debug(f"Loaded batch {batch_index} from cache")
             return cached_results
         
+        # Calculate batch hash for logging
+        batch_hash = self.cache_manager._calculate_batch_hash(batch_documents, extraction_type)
+        
         # Prepare content for this batch
         batch_content = "\n\n".join([
             f"Document: {doc.get('source', f'doc_{i}')}\n{doc.get('content', '')}"
@@ -383,10 +514,26 @@ Focus on beliefs that:
         
         # Select appropriate prompt and LLM
         prompt_key = f"map_{extraction_type}"
-        prompt = self.prompts[prompt_key].format(
-            content=batch_content,
-            statistical_insights=statistical_insights
-        )
+        
+        if extraction_type == "mental_models":
+            # Mental models prompt only needs content
+            prompt = self.prompts[prompt_key].format(
+                content=batch_content
+            )
+        else:
+            # Core beliefs uses batch_description instead of statistical_insights
+            # Generate batch description from document sources
+            batch_description = f"batch_{batch_index}_" + "_".join([
+                doc.get('source', f'doc_{i}')[:15] for i, doc in enumerate(batch_documents[:3])
+            ])
+            prompt = self.prompts[prompt_key].format(
+                content=batch_content,
+                batch_description=batch_description
+            )
+        
+        # Create batch log directory and save input
+        batch_log_dir = self.cache_manager.create_batch_log_directory(batch_hash, extraction_type)
+        self.cache_manager.save_batch_input(batch_log_dir, prompt)
         
         try:
             # Process with LLM
@@ -395,7 +542,22 @@ Focus on beliefs that:
             processing_time = time.time() - start_time
             
             result_text = response.generations[0][0].text
-            result_json = json.loads(result_text)
+            
+            # Save complete response
+            self.cache_manager.save_batch_response(batch_log_dir, result_text)
+            
+            # Extract JSON from XML structure if present
+            if "<json_output>" in result_text and "</json_output>" in result_text:
+                json_start = result_text.find("<json_output>") + len("<json_output>")
+                json_end = result_text.find("</json_output>")
+                json_text = result_text[json_start:json_end].strip()
+                result_json = json.loads(json_text)
+            else:
+                # Fallback: treat entire response as JSON (backward compatibility)
+                result_json = json.loads(result_text)
+            
+            # Save extracted JSON
+            self.cache_manager.save_batch_output(batch_log_dir, result_json)
             
             # Convert to appropriate objects
             results = []
@@ -423,6 +585,20 @@ Focus on beliefs that:
                     self.logger.warning(f"Failed to create {extraction_type} object: {e}")
                     continue
             
+            # Save batch metadata
+            batch_metadata = {
+                "batch_index": batch_index,
+                "batch_hash": batch_hash,
+                "extraction_type": extraction_type,
+                "document_count": len(batch_documents),
+                "processing_time": processing_time,
+                "timestamp": datetime.now().isoformat(),
+                "model_used": self.settings.map_reduce_extraction.map_phase_model,
+                "result_count": len(results),
+                "document_sources": [doc.get('source', f'doc_{i}') for i, doc in enumerate(batch_documents)]
+            }
+            self.cache_manager.save_batch_metadata(batch_log_dir, batch_metadata)
+            
             # Cache the results
             self.cache_manager.save_batch_result(
                 batch_documents, extraction_type, results, 
@@ -438,6 +614,20 @@ Focus on beliefs that:
         except Exception as e:
             self.processing_stats["failed_batches"] += 1
             self.logger.error(f"Failed to process batch {batch_index}: {e}")
+            
+            # Save error metadata
+            error_metadata = {
+                "batch_index": batch_index,
+                "batch_hash": batch_hash,
+                "extraction_type": extraction_type,
+                "error": str(e),
+                "timestamp": datetime.now().isoformat()
+            }
+            try:
+                self.cache_manager.save_batch_metadata(batch_log_dir, error_metadata)
+            except:
+                pass
+            
             return []
     
     async def _map_phase(self, documents: List[Dict[str, Any]], 
@@ -559,7 +749,16 @@ Focus on beliefs that:
             processing_time = time.time() - start_time
             
             result_text = response.generations[0][0].text
-            result_json = json.loads(result_text)
+            
+            # Extract JSON from XML structure if present
+            if "<json_output>" in result_text and "</json_output>" in result_text:
+                json_start = result_text.find("<json_output>") + len("<json_output>")
+                json_end = result_text.find("</json_output>")
+                json_text = result_text[json_start:json_end].strip()
+                result_json = json.loads(json_text)
+            else:
+                # Fallback: treat entire response as JSON (backward compatibility)
+                result_json = json.loads(result_text)
             
             # Convert to appropriate objects
             consolidated_results = []

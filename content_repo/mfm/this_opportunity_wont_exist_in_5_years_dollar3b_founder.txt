@@ -1,0 +1,819 @@
+Myself, I've been an engineer for like, you know, a couple decades now and I no longer write code. I only prompt. All right.
+
+So you founded this company, but your story is crazy. So you're high school dropout, grew up in Argentina, have been building things and hacking on things since, you know, a very young age. Sold a company kind of early on.
+
+I don't know if it was big sale or small sale. And then you built this product that has just taken off. Every front end developer I know loves it.
+
+It's valued. I don't know, $3 billion or so, you know, whatever, give or take. And you've just done this incredible thing.
+
+And now you have this AI tool that's also like super on trend. And it's something that is doing really, really well. It's a really cool agent that builds sites for you.
+
+That's my version of the summary of your story. It's a great summary. Maybe the only thing I'll add is that the crazy way that I've been able to go from like a teenager in Argentina to today has been a lot of open source.
+
+So I've been involved in creating a lot of technologies that have become foundational in the tech ecosystem. And I felt like that and the web has sort of been my ticket to success. Of course, over decades of hard work.
+
+Well, explain that. So why did you drop out of high school? I've never been a fan of like the high school dropout moniker because I actually really loved the high school that I went to.
+
+So it was a high school in Argentina. It was a free public school that had an entry exam. You had to study really hard to get in.
+
+And it worked so hard to get in. Entered in position number 10 out of like thousands of students. But I had two competing interests.
+
+I was becoming popular in this open source ecosystem because I was creating libraries for JavaScript and front end development. You're like becoming popular in open source, but you're only 15, 16 years old. So when did you start?
+
+Started coding very early. Like, you know, seriously, I would say when I was 10 years old. I was creating websites, shipping.
+
+I started doing work online, helping my parents with our like home finances. Was it just a lucky break or what got you started? Lucky break in some ways, but open source.
+
+So I was contributing a lot to like online forums, helping people out. And the lucky part was I remember this guy whose name I guess I'll never know. It was like dark shadow one, two, three.
+
+He's like, hey, you seem to really enjoy helping people out by writing tutorials and guides and things like that. There's this website. It's a freelancing website.
+
+You could just sell your services here because you know so many things about Linux and PHP and programming. So there was a bit of a lucky break in that I figured out a business model for myself really early on. I got my first check when I was like 11 years old.
+
+Then I had a client in the Netherlands when I was like 12 or 13. Are you pretending to be an adult or are you openly like I'm 11? I wanted really badly for you to never come up.
+
+And I'm really, I guess, lucky that at the time, like even Skype was not a thing. So it was like actually kind of rare that you have to get on the phone. So I really took advantage of that.
+
+But so when I got into this high school, my reputation for doing all of this work and then my reputation in the open source world were both growing simultaneously. So as my grades were decaying, my sort of online net worth and contribution and notability in the world was growing. So I would write articles.
+
+I would get to the front page of dick.com. I would write open source software. I would get a lot of traction.
+
+I would get written. Give me a sense. Are you, I'm going to say it in a dumb way.
+
+Like, are you a genius or you were just being extremely helpful? Like, was it just like nobody was writing the tutorial on how to host your WordPress site or whatever? Right, right.
+
+I started that way. Or was it like you were figuring things out and really cutting edge stuff? Where were you?
+
+Yeah. When I advise young people and like how to bootstrap their careers, I say start by teaching anything. So I started with like how to compile.
+
+There was a project called RPPPO to get internet connectivity in Linux. And it's like, it's just like writing down the tutorial today, HIGPD will do a hundred times better job. Right.
+
+Or like at best it becomes training data for an AI to then explain it back to people. But then over time I started coming up with my own breakthroughs. And so I, my quote unquote big break was I started contributing to a library called Mootools when I was 15, 16 years old.
+
+And this library got picked up by Facebook to become sort of the inspiration slash foundation for their JavaScript infrastructure. And I got a job offer from Facebook when I was like 17 years old. And so my contributions to that project was starting to become more important.
+
+And... So you got a job offer from Facebook when you were 15? Yeah.
+
+So I was, I was probably 17, 16. So super early days of Facebook. So in many ways, you know, you could play out another timeline in which I was in America already.
+
+And like, I was an early engineer at Facebook, things like that. Did you turn it down? Well, when they discovered I was in Argentina and other age, I was like, oh yeah, maybe we should look for someone else.
+
+But that same project kept opening up doors for me because other startups started using the same foundation. And they were like, hmm, who should we hire? And the first thing you think of is I'm going to hire the people that contributed to the project.
+
+We do that ourselves today with our open source projects. Like Next.js, we go and like, okay, who's contributing? Like, hmm, that person seems really interesting.
+
+So when I was about 18, that's when this startup from Switzerland reached out and saying, hey, like, we want to hire a Mutuals developer. And that's when I basically just dropped out of high school. Like, I had my first real job offer from a company in Lausanne, Switzerland.
+
+And for my parents, for myself, it was kind of surreal, right? Like, I'd never left the country. And I was like leaving Argentina for the first time with a job offer in hand at like an amazing country.
+
+You know, so it was kind of surreal. Yeah, we hired a kid. And when I was doing a startup in San Francisco, we had a guy who was in eighth grade and he emailed me, Johnny Dallas.
+
+And he said, hey, I love to code. My dad met somebody. I met Pete at a dog park, our sis admin guy.
+
+And he was like, I don't know anyone else who codes. Can I just come hang out for the summer? I just want to be around other programmers.
+
+And I was like, oh, man, amazing. Yes, for sure. He comes in first day.
+
+We just actually give him a test. We're like, hey, we want you to make this little onboarding quiz. HTML, just make a quiz.
+
+Like, multiple choice. Take them down to flow and land them in one of these four buckets. And he just sits there.
+
+And he sits there to like seven or eight at night. I feel bad. But he's like, not asking for help.
+
+I just want to see how it plays out. And he actually ships the quiz at the end of the evening. I was like, all right, this kid's legit.
+
+By the time he's in 10th grade, we're like, this guy's, you know, he's working basically full time for us. He's after school. He's coming in.
+
+And so we had this, I had a conversation with his mom. I remember at the like downtown. And she's like, I can't imagine my son being like a high school dropout.
+
+And I said, do you know LeBron James and Kobe Bryant? I was like, your son is going pro. And so I think that should be a little bit of a.
+
+Yeah, totally. If any kid is listening to this, it worked like a charm on that mom. Try this on your mom or try this on anybody.
+
+You can really go pro early. Yeah, totally. I always give people very caveated advice, right?
+
+Like I tell them, look, I went to a high school that was giving us college level content. So I actually developed a good foundation, a good quote unquote world model. I was, I became quite competent in a lot of sciences and we had really good chemistry classes, physics, math, et cetera.
+
+So I'm actually really thankful that I had a good foundation. And then by the time I decided not to continue down like the normal quote unquote educational career, I had a really good alternative, right? Like by that time, it was really clear that my, my skills were going to take me somewhere.
+
+I didn't know specifically I was going to get in, I was eventually going to end up in San Francisco building companies, but you know, it was, it was a bit of a leap of faith. I was well substantiated in existing evidence of success. Hey, let's take a quick break for a message from our sponsor HubSpot, who's making this episode possible.
+
+Listen, if you're trying to build something big and I'm talking about a hundred million dollar or a billion dollar company, one of the most important things is to focus on the market. Where is the opportunity? You are like a surfer on a surfboard and you're trying to find the biggest, best wave possible for you to go on.
+
+Well, HubSpot has put together a cheat sheet that is studying and sort of reverse engineering what's working today. So they're looking at the top performing industries that you could be looking at the funding routes that work the best and the growth strategies that the fastest growing companies are using. So if you want a one pager, that is a cheat sheet on the, the big company playbook.
+
+You can get it right now. Just either scan this QR code that you see on the screen or click the link in the description below. All right, back to the show.
+
+You were talking about MooTools and talking about JavaScript. I read something great that you said, you go, I kind of bet on JavaScript because I realized that for the backend, there's, you know, a hundred different languages you could choose, but the browsers only know JavaScript. Yeah.
+
+Right. It was an unfair advantage. Looking back, I think you always arrive to success by finding asymmetries or finding alpha or finding unfair advantages.
+
+And JavaScript has this unfair advantage that, and I can explain how it won as well, but right now, every single device on the planet, on the client, inside a web browser can run one language. And that language is JavaScript. It can't run Python.
+
+It can't run C++. It can't run Java. And the way that JavaScript got there was actually by beating a lot of alternatives.
+
+So way back in the day, we had Macromedia Flash as a proprietary plugin that Steve Jobs put to rest eventually with the iPhone. Was he right on that, by the way? Was his taste correct?
+
+Absolutely. Absolutely. We had Java applets, right?
+
+So there was an idea that the JVM Java was going to be that universal language. And the fact that when I started going deep into JavaScript, there was still a little bit of a perception of like, it's like a toy. Why was that?
+
+Why was it? Because, okay, I'm a mostly non-technical person. Yeah.
+
+But I love, you see, I love situations like this where like, there was a hundred contenders and one wins, but it doesn't win because it had the obvious traits of what you would think would win. But there's this other thing that actually proved to be a big advantage. Totally.
+
+You know, we were just talking about like mid-journey before this. Yeah. And we're like, mid-journey, like, it's not like the product design.
+
+It's not like somebody, some designer sat down and said, then you'll open up Discord and there'll be a hundred random channels and in it will be strangers making images. But actually, bad was better. Bad was good.
+
+Yeah. Because you learned how to use it. Have you heard of the essay, Worse is Better?
+
+Not worse. I haven't seen Worse is Better. I've seen the Paul Buchheit one where he's like, if you're great, you don't have to be good.
+
+I think it's maybe similar, but can you explain Worse is Better? Yeah, Worse is Better was a paradigm in the early days of the internet of, specifically that essay spoke about worse in the sense of less powerful, because sometimes when you constrain out technology, you make it a lot more predictable. Right.
+
+And so there were some advantages to like markup languages that made them worse, but better and became the successful foundation of the internet. But there's a broader point that Brendan Eich, the creator of JavaScript has pointed out, which is that sometimes the success of technologies or startups can be best understood through the lens of evolution and natural selection and Darwinism, rather than like the obvious, quote, unquote, intelligent design. So there was an article that he shared at one point called, what would Charles Darwin think about clean slate architectures?
+
+Okay. And so JavaScript was almost like a piece of DNA that evolved and became more sophisticated over time, but started out looking very simple, small. It was a piece of code that it would inline into the markup.
+
+So when you think about markup in the sense of like MySpace codes or like HTML, it was like, can we bring HTML slightly more alive? Okay. So we need something that's very minimalistic that we can put right there inside the markup code.
+
+And from there it became more powerful, more sophisticated. But most people, when they looked at it in the beginning, they were like, well, it can't be fast. It can't be typed.
+
+It can't be correct. It can't scale. It can't have a module system.
+
+But all of these observations that people were making were not actually paradoxically, they were not quite technical. They were like, well, at that point, as it exists at that time, it cannot do those things. So a lot of the alpha that I created in my career was by actually taking it seriously and saying like, well, we can add this thing.
+
+So very simple example. It's a little technical, but JavaScript lacked classes. It couldn't do object-oriented programming in the conception that people had with things like ActionScript or C++ or Java.
+
+But in the Mood Tools team, we did figure out a way of quote unquote faking it. We created a function called class with an uppercase C. And then when we presented it to developers, they're like, well, like, so you added classes to JavaScript?
+
+Well, yeah, we kind of added them. And that actually was one of the salient features that stood out to the Facebook team and many other teams in the Bay Area. And so by evolving that thing and actually betting on it, that became the asymmetry of my early career.
+
+And again, like the experts at the time, and this is why I think there has been a shadow of doubt cast on experts for many years. Now the experts, I think we're familiar with this because angel investments that are successful had the same characteristics of like, look at how rough that entrepreneur looks or like, look at how shitty the homepage looks. And like, you have to be able to project out what it's going to be in the future.
+
+And now JavaScript has eaten the world. Yeah. One of the best blog posts I ever did was I just went back to the Wayback Machine.
+
+I just said, here's what the first website of Airbnb looked like. Here's what the first website of Uber looked like, which actually is like very important for entrepreneurs to look at. You kind of know intellect.
+
+If I asked you, you'd be like, yeah, I probably started off rubbish, but literally go look at it, read it, look at the thing, look at the actual pixels, because it does a couple of things. First, you're overthinking it. Whatever you're doing, you're probably overthinking to start, to launch.
+
+Second, it shows how far you really have to go to like iterate, to make things better. And also like how narrow of a wedge you take, like the Airbnb initial one is like, there's a design conference, the hotels are booked and expensive, stay on, sleep on another designer's couch or airbed. And you just take so much from those like initial, initial webpages.
+
+And you're right. Like once you hang around in Silicon Valley enough, it humbles you so that the things that look like toys or the things that start narrow or the things that seem limited on six dimensions, but are really good at this one thing that can't be underestimated. And it does raise the question of genius versus accident.
+
+And there's just so many good stories about the creation of JavaScript. One was the extreme time constraint that Marc Andreessen put Brendan Eich into. The reason it's called JavaScript is they needed to market it as Java.
+
+They just added script. There's no relation whatsoever between the two things. And so the other one was, I think Brendan always says that it took him 10 days to conceive the language.
+
+And that's primarily because of deadlines. So we're like, okay, we have to ship something that makes pages come alive. For those that are not technical, the way that I sometimes explain what we do with running JavaScript on the server and running it on the client is there is this newspaper in Harry Potter, which is like a regular newspaper.
+
+But when you open it, it comes alive. Pictures move. Yeah.
+
+So think of getting the newspaper as the server is giving you the server rendered, pre-rendered artifact. So it comes with all the letters, all the static images, et cetera. But then it's really cool that you can open it.
+
+And what we call it technically is it becomes hydrated. It becomes alive and more code can run on your side of the equation. And that can be a very enriched experience.
+
+So that's the power of JavaScript. That's a great analogy. It can run at the production line.
+
+It could be manufactured, could be printed, but then it can be shipped to you and then it can become alive again. And so in those 10 days, Marc Andreessen wanted to basically pitch that. Like one of the initial names is I think LiveScript.
+
+And then they renamed it to JavaScript to market it more to like the enterprise traction that it'd be akin to today. Like we want to call things agents and perhaps they're not agents or whatever. Like you could use the evolution example.
+
+It's like the skin color blended in with the trees. It's like JavaScript just blended in with the Java. That's right.
+
+That gave it an evolutionary advantage versus getting eaten because it stood out. The other interesting observation is, okay, so you have 10, 12 days, you have to ship something, whatever. And what is the minimum surface that you can ship on top of which evolution can be bootstrapped?
+
+I think that's much better than try to aim for completeness of that initial version. And what I asked myself when I studied the success of others is, were they really clever to think, hmm, I have to delete, delete, delete. Like I think you were referencing Rick Rubin's reducing thing.
+
+I'm a reducer, not a producer. So I think if you're truly brilliant, I think you'll find that you have to delete and delete and delete. And that's one path to success.
+
+And because you know what the more complete picture would look like, but you can exercise that restraint. Or you can just stumble upon it through deadlines, right? Like you have the classic YC, let's make you ship a startup in three months.
+
+And so that acts as a forcing function for the reduction of the surface. And I think there's something about human nature or perhaps the pressure that people put themselves under, which is that I have to add more. I have to make that homepage.
+
+I have to add more images. I have to add more gradients, whatever. But then through the exercise that you talked about, you can go back and see, well, actually things look pretty simple and they focus a lot on the content and the, on the essentials.
+
+So you, you're doing MooTools, you go out there to Switzerland. How do you get to Vercel and what's the like insight you have to start this company that has become this juggernaut, right? Like, I think I've DM'd you like every year for three years being like, hey, can I invest in this thing?
+
+Cause it's such a juggernaut that like, so obvious to me that when you have this sort of developer or love, you really can't help but win. And you were like on the, you were on the right waves that, uh, to be on for the last few years. The pattern throughout my career has been iteration.
+
+Velocity is the most important thing to optimize for. So my previous startup, which I sold to WordPress, anytime I would start a project before starting the project, I would start on the mechanism to ensure I was CTO of that startup. I would start on the mechanism to ensure that my colleagues, my engineers, my, everyone in the company could ship really fast.
+
+My obsession became how quickly can you go from idea to shareable artifact from idea to URL. And today it's seems obvious that V0 is so successful and that you can prompt and get a link and you can go from prompt to application. But I didn't have AI at the time.
+
+What I had was what I can do is I can streamline the deployment pipeline of ideas. Sorry, just so I can summarize what you said. You said most important principle for me when I work on a project is that we're going to be able to ship fast and iterate fast.
+
+In order to ship fast and iterate fast, we need like our pit crew. If we're a Formula One car, we need our pit crew to not take six hours to change the tires or to get refueled to get back on the road to go for the next lap. So what you were saying is you would focus more than the average bear on that pit stop between idea and actually showing a shareable artifact.
+
+And because Verso didn't exist. So I had the insight that instead of just assuming that the world that maybe takes hours to ship or you can ship once a week, I was like, no, let's look at the web. The web is so fluid because of all of the reasons that we just outlined.
+
+It's just, it's so alive. Why can't we be shipping a hundred times a day? Why can't we try lots of different things?
+
+I actually just interviewed recently for Offsite, the founder of DoorDash. And he was talking about how DoorDash started out with one HTML page and six PDFs of the restaurants that they were going to deliver for. And they just brought the idea online as soon as possible.
+
+So to some people, it becomes obvious that the most important thing is to get the idea out into the world as a URL and see if it sticks. So I wanted to create a platform where that was the norm. And that was sort of the inception, the idea for Vercel.
+
+And because before Vercel, I was at WordPress, I noticed WordPress as a company had become quite good at deploying one app, WordPress.com. But if you were working for the company and you had a new idea, you were kind of getting stuck. You had to go to the IT team and be like, hey, please, can you set up a server for me?
+
+Can you give me an area here where I can come up with a new application or a new idea? And so Vercel started out as, can we reduce that friction from idea to live to seconds? In fact, it became such an obsession.
+
+It started measuring each millisecond of like, you have an idea, you write it down in JavaScript or HTML or whatever, you press deploy. How quickly can we get it online? It was literally- That level of obsession.
+
+I love the Formula One metaphor because it's about shaving down the seconds that we're stopping this car. And this car is not just one app or one idea or one person. It's literally how the entire business works.
+
+This is why Vercel has been so successful with the largest companies in the world, like investment banks. And also it powers most of the YC startups that are creating new ideas in the manner that I just described, which is like, hey, I need to try something out and I need to hit demo day. What is the quickest way to deploy?
+
+It's Vercel. So it sounds like this might be one of those startups where you didn't need to pivot a ton. It sounds like you maybe had the correct idea.
+
+Like you knew the pain, you knew the problem correctly. And it sounds like you had the right idea of a solution, then you obviously made it better. Yeah.
+
+Is that true? Yes and no. So when you achieve some level of success, people start studying your success a lot.
+
+And people ask me a lot, like, did you pivot? Did you not pivot? What can be for the chicken or the egg?
+
+And the reason that they asked me this is we have an extraordinarily successful open source project that Vercel created called Next.js. Next.js powers a lot of the modern internet. Like you talk about Mid Journey, Mid Journey is built with Next.js.
+
+And by the way, you make money off of that? I didn't understand that part. It's just you open source that.
+
+It's widely adopted. Does Vercel benefit in it in any way really? Yes, because it's in the service of, okay, how can we get that Formula One car going?
+
+Okay, start with Next.js. You're going to cut down on the whole assembly of the car. Okay.
+
+The alternative to Next.js is that you have to procure the chassis and the wheel and the engine. This is actually what was happening to engineers when I started the company. I was like, okay, so how do you start a new idea?
+
+Oh, well, I go to Home Depot and I shop for like 200 different kinds of wheels and I grab the wheel and I go to this thing and then I assemble the Formula One car and then maybe I get started running it and then maybe I see if I have product market fit. So you created Next.js and I believe the story is you were trying to build something and to use React, you were like, oh shit, I got to like go get the engine and the chassis. I got to go get all these pieces.
+
+All right, I'm just going to build this kind of template for myself once. Literally the website for the company, kind of like the experience of DoorDash. Like I had to build Zite.co, our domain name at the time.
+
+And I was like, okay, to get started with React, I have to do like get a PhD. So to your point about what's the idea correct? This idea is so powerful that you cut down the time for humanity to go from some hypothesis to a production grade deployment and going down from weeks of setup to seconds.
+
+It seems obvious. What was not obvious and felt like endless pivots was narrowing down the scope, the reduction that you just talked about. We started out with like, oh, you can deploy anything.
+
+You can deploy Java. It's so contradictory even to my Genesis story, right? Like you can deploy Haskell.
+
+You can deploy PHP. And then we realized, wait, why are we doing all this? Clearly, we believe that the modern web will be powered by frameworks like Next.js.
+
+And we believe that there's alpha in the market and the world of democratizing this idea of using both JavaScript as your sort of like backend and frontend language, which massively simplifies software development. So I will say we didn't pivot in the sense of going into a different space, but we simplified the offering way, way, way significantly. You have this interesting seat where you get to see what a bunch of people are building on your platform or using VZero or whatever.
+
+And then you also just like, you're on the edge, I would say, of like tinker, hacker, technical person who kind of sees what's possible, but you only have so many hours in the day. So you tweeted out this thing that said, free AI ideas. Yeah.
+
+And it's like, if Gordon Ramsay opened up a lemonade stand, it's like, oh, wow. Like, you know, Steve Jobs was like, hey, free product lessons for toddlers. Yeah.
+
+I'd be like, get my daughter in that class. Right. So when you say free AI ideas, I want to show up.
+
+So can we run through some of your AI ideas? Yeah. And I'll give you a little bit of background.
+
+Right. So I've always been obsessed with democratizing the web for everyone. So anyone with an idea has to be able to create.
+
+And that's why we created VZero, because VZero is like ChatGPT, but for creating web applications. Instead of giving you text, it gives you a fully working web application. So you say, I want to make a, make me an app or a site.
+
+Maybe the next DoorDash. You can literally type that in. It'll make one.
+
+Yeah. And the difference, I would say, there's many players that are trying to build this. But one of the things that I'm really excited about is that it's banking on the lessons of the last 10 years of building the world's most popular framework for JavaScript and building the production-grade infrastructure to support it.
+
+Right. Right. Like I'll name a cool brand that uses Vercel.
+
+Ramp. Supreme.com. Brex.
+
+In fact, we have so many successful companies in every market segment that you could imagine. But all of those companies needed expert engineers. Right.
+
+Like in order to build like a really cool website, like drinkhgwilding.com, you need to learn Next.js. Now the magic of Vercel is that we cut down the learning from like, I need to know all of the foundations of computer science and all of the foundations of AWS and how to deploy software. We brought it down to like take a React course and use Next.js.
+
+But with AI, we can cut that down even further. It's just to speak English. And we will steer the model towards what we think are going to be the world's most successful outcomes.
+
+We care deeply about performance. When e-commerce websites deploy on Vercel, they vastly outcompete everything else. So we'd recently heard about a public company that sells billions of dollars worth of consumer electronics a year that improve their conversion rate by 30% on some markets to 90% on some other markets.
+
+Why? Because the website is faster. So imagine if you could go to an agent and say, I want to create the next big competitor to apple.com.
+
+We're going to make it faster, more accessible, beautifully designed and deployed on this enterprise-grade infrastructure. You get those out of the box. Get those for free.
+
+Out of the box. So, and it's true to the spirit of the company of like, how can we get that Formula one card running as soon as possible? So it's opening up creation and deployment to basically every human on the planet.
+
+Okay. But you were saying that's context for the AI ideas because what? Because of two things.
+
+One is that with V0, any idea that I have, I can bring it to reality. But then there is a meta. So we're being very successful with V0 because we created AI for web engineers or AI for people that are interested in shipping to the web.
+
+There's going to be so many other verticals that are going to be similarly disrupted. And it seems really obvious to me because I'm on the, you know, to your point and behind the scenes of building things like V0. But I think there's going to be, for example, why don't we have a V0 for creating video games?
+
+A studio that combines the best of both worlds of software 1.0 techniques and software 2.0 techniques. And I don't know if you're familiar with that framework, but. Explain.
+
+So Andrew Karpathy, who's the leader of AI at Tesla and later OpenAI came up with this incredible essay that I think is canon now. Like everybody must read this because it's so ahead of its time of, he called it software 2.0. And he says, look, software 1.0 was what I grew up with.
+
+Programming languages, data structures, algorithms. You learn how to make things more efficient by writing better for loops and recursion. And you're in control of everything.
+
+And everything is very deterministic and predictable. Software 2.0, we're still using foundations of computer science, but we're making the process a lot more stochastic, probabilistic. Instead of writing every circuitry of the programming language, we're relying on training models with data.
+
+And the output of what those models do might resemble what a program might do on its own, like a 1.0 program might do on its own. So the best example would be, you can use ChatGPT 4.0 with image generation to produce like incredible diagrams. And there's ways of generating those diagrams with traditional software engineering.
+
+But this AI is almost like this miracle general purpose program that can do anything based on what it's been trained on. So let's call training and neural networks and AI software 2.0. And it has all of this magical emergent properties that were not thought through by the engineers.
+
+The engineers didn't have to go and write every if else branch that is under the hood and think about every corner case. And that's why it's so exciting to people because every time a new model comes out, we're all like, we call it discovering the latent space. We're all trying to figure out what is even possible because even the creators of the models don't know what's possible, which is in stark contrast to software 1.0.
+
+Software 1.0 is like, there's a PM giving you tickets. Right. I know exactly what this can do.
+
+I know exactly what it can't do. Yes. I know if you push this button, you're going to get this exact result.
+
+I know if you push that button, you're going to get that exact result. The new model you're saying, even the makers of it are like, I'm not sure exactly what it could do, how well it could do. You push this button, you're going to get something.
+
+Yes. It could be phenomenal. It could be, you know, a little bit unpredictable in some ways.
+
+But my, what I offer is that the successful AI products of the future are going to be an intersection of these two worlds. The software 1.0 parts of the product are still going to be highly valuable. If not, vZero would just be purely an autonomous AI, but think about it.
+
+It's still writing Next.js code. It's still using UIs that make it friendly for people. It still has a community of templates that you can, with one click, deploy.
+
+And it's still banking on the 10 years of investment of Vercel infrastructure and our partner infrastructure, like Supabase and Neon and the databases that we bring in. So I think people are going to be able to do this in many other verticals. So video games is an obvious one to me because you will want parts of the game engine to be just like Unreal Engine is, right?
+
+Like you'll want something like a Next.js, but for video games that is under the hood. But then you want to open up video game creation to as many people as possible. Like start with a prompt and you're going to be like, I want to create something that is like Pokemon Red, but the art should resemble this and it should be in three-dimensional space.
+
+And it has 10 missions. So you start describing with English what you actually want. So is this possible today?
+
+Like what is the tech, the tech could do this today? Oh yes. In fact, I'm like, why is it someone who does this?
+
+Please like, where are y'all at? And so I'll tell you some of the things that we've done to help facilitate this world. So using the game engine metaphor, you can think of VZero as one video game that Vercel built.
+
+And you can think of Vercel as a game engine. And so there's going to be way many, many other video games that people are going to create. So if you have an idea for an AI agent, you can deploy it on the Vercel platform.
+
+So you can do VZero for doctors. You can do VZero for video games. You can do VZero for lawyers.
+
+So any vertical that you can imagine, we even templatized. So we've open sourced a lot of what makes VZero so great so that entrepreneurs can come in and say like, look, I see an opportunity for AI to disrupt this space. Let's take the video game example real quick.
+
+Did you make a Doom thing or did you support Doom or was that an AI generated Doom? No. So that was the one you're talking about is my Doom captcha thing.
+
+So for context, I hate captcha, first of all. Like captcha is a thing where you go to a website and it tells you, please tell me how many. Makes you feel stupid because you're like, is this a bike?
+
+That's right. Is this a bike? Or select the staircases, right?
+
+So I created one, which was instead of you select staircases or stoplights, you have to kill three enemies in Doom. And funny enough, the idea came over Christmas break. And what I did is I went to VZero.
+
+And I said, I want to create a captcha that looks exactly like Google captcha. Because it needs to look familiar for people for the joke to land. Like it pops up.
+
+Yeah. Yes. And then I basically took advantage of the fact that Doom has been open sourced.
+
+So what I did is, and this is kind of like maybe a little bit more of advanced engineering here, but like I took a WebAssembly version of Doom that can run inside the browser. And they prompted my way to basically spawn the user in a very specific level. And then this actually involved hacking the C code base of the game.
+
+And then basically set it up so that it was a constrained version of the video game. So you kill three players and you pass the captcha. So it's almost like creative engineering, you can call it.
+
+And this is something I think is also going to be big in the world. You could argue that someone could create an entire platform for just creative coding. AI for creative coding, where like the next generation of artists are going to be playing in this dynamic medium.
+
+They're going to be offering up things that are highly interactive. So you could create the V0 for interactive art. So it's kind of meta, right?
+
+But like I started with V0 and I created this thing and it went viral and like there's like three or four like news articles written about it. But it literally took a couple hours of prompting. Like myself, I've been an engineer for like, you know, a couple decades now and I no longer write code.
+
+I only prompt. The last one on this video game thing, because it kind of blows my mind that that's possible. I would have assumed it's not possible yet.
+
+Can it only make very simple Flappy Bird style games? Or can it make like, can you build a Fortnite? Can it make Fortnite?
+
+You know, where are we at today of like what's actually possible? Yeah. So there's two levels to this.
+
+If you go to V0 today, you could prompt and create a one-off video game. But the next level is that I think there's going to be entrepreneurs who are going to create the next big AI platforms and deploy them to oversell. And so it depends on where you want to play.
+
+If you just want to create something that looks like Fortnite, you could do that today. You could just prompt. Like it's possible.
+
+Really? Yeah. I mean, I think you'll probably go down a journey similar to what JavaScript went through, where you're going to be able to get something basic going.
+
+And it might take you the next 10 years to perfect it to the level of what Fortnite is today. But this is the beauty of things like V0. Like anybody can cook.
+
+You can start. You can get it out there. Kind of like DoorDash was six PDFs and a website.
+
+You can get the V0 of Fortnite out there into the world. But I think there's also going to be ambitious people that maybe have skills that are more on the game engine side. Kind of like I created Next.js and can say, look, there's an opportunity to create a framework that works really well with LLMs.
+
+That enables broad, massive scale game creation. And the things that you can facilitate in that world are, for example, for a game to be successful in its really high quality textures. It needs really cool art.
+
+So you can start creating kind of like a platform that facilitates bringing the art in. So that's why I mentioned with you will need Software 1.0 skills just to create kind of like the platform and create the connective tissue that facilitates this highly opinionated workflow. Because creating video games, you know, obviously there is a lot that is like art and like emergent.
+
+The game creator has to come in with an idea. But there is a lot of things that are highly predictable. Like there is kinds of games.
+
+There is like the 2D platformer. What does a 2D platformer need? Well, all of the runtime infrastructure, all of the things that make a game work already exist on the Internet.
+
+And the AI is perfectly capable of sort of orchestrating it. So what a would-be game creator would need is a very easy way of like generating the game assets. And so what I would do if I was an entrepreneur doing this is like I would connect it to other image generation models.
+
+So that when you come to this game creation studio, I'm kind of like guiding you into like here's all the things that you're going to need. Here's all the integrations. Sound creation is another good example.
+
+11 Labs allows you to create sounds with LLMs. In fact, I've vibe coded a few things that required sound. And instead of like Googling for like open source sound effects or whatever, I just went to 11 Labs and I prompted for that.
+
+So, and I can do that because I know everything that kind of exists in the AI world. I know that 11 Labs exists. You're a creative engineering.
+
+Exactly. But imagine a would-be game creator doesn't know that. So they just want to go to a platform that has already built-in sound creation with AI.
+
+And so behind the scenes, you can sort of like plug this in. So maybe to summarize, I think there's all of these permutations of technologies that already exist that are making new platforms possible. And I think entrepreneurs don't need to like go and train foundation models.
+
+They just need to go in and put the pieces together into opinionated workflows. The things that are becoming obvious to people today are, you know, AI for legal, AI for developers. And I think those are kind of like the zero to one is what feels very immediate, what feels very emergent.
+
+I sometimes call it unbundling chat GPT. When chat GPT came out, people were like, hmm, I can ask you for a draft of a NDA. And so people said, you know, I can take that slice of an idea and I can turn it into a legal platform.
+
+What we realized was like, hmm, you can go and ask it for web UI. Chat GPT was quite good at outputting, you know, React, HTML, Next.js. And so we went and said, oh, this can be V0.
+
+This can be a whole platform for web development. And so what I challenge people to think about is that what are those like clusters of queries that people are going to chat GPT for that can become entire platforms? And I'm sure there are a lot of people that are going to these things and saying like, I want to create a video game.
+
+But this is just one of the many ideas that I shared on that thread. Right. So let's go back to this type form idea.
+
+So this seems like a super simple one, which I like because like you don't need to build like world changing blah, blah, blah, just to be able to do this. Yeah. So that one arose from the fact that if you look at why type form has been so successful, it's an interface innovation.
+
+It gives you one question at a time. It feels friendly for the, I mean, I hate responding to surveys, but the most palatable that you can make it for me is if you give me small chunks. Multiple choice versus like, boom, I'm going to have to answer this whole long page.
+
+Yeah. Here's an IRS form. Please fill it out.
+
+In fact, IRS would probably have way higher completion rates and people paying taxes on time if like they create a better UI, essentially. Have you ever used TurboTax, by the way? TurboTax is actually a phenomenal user experience.
+
+It's type form. It's one question at a time. They don't ask you for things that you don't know the answers to, which is the problem with taxes.
+
+So smart. I mean, like, what do you owe? No, they just say.
+
+And this is one of the golden rules of onboarding, right? Forget about forms. Onboarding, like, give me one thing to do.
+
+Remove all the distractions. Remove all the links that might take me out of the flow. I give people this little hack sometimes.
+
+Like, if you're in a flow where you want people to complete a task, why are you making the logo clickable? And why are there like six footer links taking me to like the fucking founding story of the company? Right.
+
+Why a destructive person? So I type form kudos. Like, they nailed that.
+
+But I think there might be an opportunity on two levels. One is I keep using this formula of if I need to create a form and very quickly send it to you, I could have the V0 for form creation where I prompt my way to tune the form. Yeah, because it could even come up with the questions for you.
+
+Exactly. Like, hey, I'm coming up with a, I'm trying to get, I'm asking my friends what dates work for the bachelor party. Send a quick survey out to my friends.
+
+In fact, I'm sure someone will go to V0, listen to this and start creating the AI form creator. Right. I think it's a really good idea.
+
+And by the way, I think there's an add on to this. So I had a similar idea once, but I was thinking we own this business called somewhere.com. Great domain name.
+
+Yeah. We paid a great price for this domain name. I'm not, jury's out on that one.
+
+But, you know, you find talent in LADAM or South Africa or like your story, right? There's talent is everywhere. Opportunity is not always everywhere.
+
+And so when the website, the way it works today is you land and you click like, okay, I want to start hiring. And then there's a long form and it's all there. It's a bad experience.
+
+It's like your name, what you're hiring for, your budget, you know, do you need a full-time, part-time, whatever. And then it says, great, now book a call. And then you're going to talk to the sales guy.
+
+And I'm like, you know, with AI, what this should really do is you should land and be like, hey, what are you hiring for? What do you need? And then you say, I need a designer.
+
+Cool. So, you know, cool. We got plenty of designers.
+
+We actually just hired designers for X, Y, Z company. Tell me, are you looking for a graphic designer or blah, blah, blah? Totally.
+
+Yeah. What are they going to do? And you kind of just quickly tell it.
+
+It says, you know, we recently placed somebody like this candidate profile pulled from our system. Yeah. And just say, you know, would this be the type of person that, you know, would fit the type of thing you're looking for?
+
+They cost this much. That's pretty affordable to be able to hire somebody of this level of talent. And you're like, yeah, yeah, that would be great.
+
+More like that. It's like, awesome. What's your email?
+
+I'll send it to you. I'm like, it's a salesperson. And it's not a form.
+
+And it's a salesperson that does what all salespeople do. They ask questions. Yeah.
+
+Follow up. They note what you say. They respond intelligently.
+
+They follow up where they need. They disqualify you if you're not a good fit. And if you are a fit, they're basically giving you bits of proof and promise along the way to get you to say, yes, I can't believe this doesn't exist.
+
+It's a more dynamic interface, right? So you said something really interesting, which is I think when people have ideas, it's like they're looking, they're staring into like a vector space. They know that there's something there that they want to do.
+
+And this is for everything. Like you may have an idea for like a survey that you want to send to your customers. And you're like, yeah, I know that it's mostly about getting product feedback and how happy they are and what they do for work.
+
+But you might be forgetting that there's a very important question that people that do this surveys typically ask. And you just don't know about it. This is why an AI first type form would make so much sense.
+
+Because when you prompt it, I want this form for this thing, it'll know things that you don't. And this even goes back to. And it'll, by the way, summarize all the results for you at the end.
+
+Because it'll be like, you know, that's otherwise a full manual step I have to do. Great. We got 300 responses.
+
+All right. I got to go through those. And this is why AI is going to disrupt everything.
+
+Because what you just talked about, like, okay, I can also bring AI to the results process. And my other point was you can even bring AI to the submission process. Because instead of being rigid and making you select between 20 things and then you press other and whatever, there might be innovations also in that maybe it's purely conversational.
+
+Maybe it's hybrid conversational and what we call generative UI, which is that. Right. On the fly.
+
+Exactly. On the fly, it chooses what is the right format to answer this question. And it might learn another thing that humans do poorly is where do you hear from us?
+
+And we write down fucking like AOL and Google. And you're like, wait, does anyone use this anymore? That should also, you should also give it to the AI to choose, okay, this customer is coming from Argentina.
+
+So in Argentina, no one uses this thing. You know the UTM on their link. That's right.
+
+And you know it from GYP headers. But this is an A++++ idea. There were a lot of people nitpicking my idea in the thread, which is like, this is a freaking tweet storm.
+
+Like I'm not like describing the freaking entire company, right? And they were saying, no, but UI is still better because so and so. And I was like, sure.
+
+But again, it doesn't mean that the UI is as rigid as it is today. And that the eight choices of checkboxes are rigid as well. And I remember there was this company called Wufu in a YC batch at one point.
+
+They had created a beautiful for a builder. And the form builder was all drag and drop. And you had to select the type of response.
+
+All that stuff is going to go away. In fact, that would give you a rule of thumb that if drag and drop is involved as a primary interaction mechanism, it's probably ripe for disruption. Because no one was actually drag and drop stuff.
+
+You just want to say like, this is my idea. Just build it. Right, right.
+
+Yeah, that's like a tell. It's like a poker tell. Drag and drop is like the, maybe to use the software 1.0 and 2.0 metaphor.
+
+Drag and drop was making 1.0 more paddleable and accessible to more people. Visual coding, visual programming was that as well. How can we make 1.0 more accessible?
+
+Well, we invented dragging stuff and showing it in two-dimensional space. Let's do some more. So you had one that was called AI camera.
+
+What's the AI camera idea? This was back to like embrace the wrapper. Embrace the fact that models are fucking phenomenal.
+
+And there's a few hyper online people like me that know all of them or try to know all of them of like deep grand V3 just landed on how he pays and whatever. You're paying attention to that level of depth? Yes.
+
+But the average consumer just wants to take awesome photos. Yeah. And so I've been, this one came up because we were at a very big meeting for a bank that wanted to use Vercel in New York.
+
+And the champion on the bank side was like, let's take a photo with a beautiful like New York backdrop, whatever. And it was so awkward that we tried to, we tried to take the photo 20 times. Because it's hard to take a photo with like, where's the sun and the back lane.
+
+We want New York to be visible, but we want our faces to be visible. And like someone blinks during the photo. And so, I mean.
+
+If there's men involved in a photo, it's a terrible photo. Yes. It's just a general rule.
+
+Taking it. Yeah. Standing in it.
+
+Posing in it. We don't know how to do any of it. So think of the input from the shutter.
+
+Think of the click of the camera. And this is a software camera, like a camera app. As the input into the prompt rather than the output.
+
+If you're extremely good at taking photos, it could just be the output. Or maybe it's lightly tuned and filtered and whatever and becomes the output. But maybe just embrace the fact that it's an idea to give the AI.
+
+Right? And the AI will know that if that photo was taken in that place, the goal is to obviously show people smiling. No one should be blinking.
+
+The backdrop needs to look amazing. And, you know, maybe actually gives you five permutations of we know what good looks like. We know the shades, the lighting, the maybe it removes objects for you.
+
+And so, I also mentioned that there is software 1.0 techniques and software 2.0 techniques to embed into everything. You shouldn't believe that you need the perfect model that will make the photo perfect either. You can give people a workflow.
+
+So, what I had imagined at the time was like it's going to look like Instagram. Because I love how Instagram, you took the photo and then- Filter picker. And then it's called like San Ramon filter and whatever, like Oakland and like hipster, whatever.
+
+So, imagine it's giving you permutations. But also, maybe it gives you the tool to like select something. Maybe already, I mean, it's just purely brainstorming now, by the way.
+
+Like you had me like full-on brainstorming. Like there's a model that is really good for like that Apple uses for like removing objects on the scene. So, maybe by the time it gives you the produced photos, all of the objects are already movable.
+
+So, you get- Because what happens a lot of the time is someone blinks, but also there's an object that you don't want on the scene. Like your baby was like crawling in there, your dog pooped. And like you want to take that out.
+
+I have the best one, Argentina. What's the name of that beautiful waterfall? Like the craziest, the waterfall place.
+
+Igwasu Falls. Igwasu Falls. Take out the tourists.
+
+I go there with my fiance and we take this photo under the waterfall. We're kissing. Somebody takes a photo and there's this dude in the like kind of the angle, you know, the background there.
+
+And he's got his shirt off and he's taking like a photo for the boys. And it's like ruined this photo. And my wife is like, I want to frame it because I think it's so funny.
+
+And she's like been trying to find a Photoshopper to like get rid of this thing. 100%. And you're right.
+
+Like that would be like her dream would be the magic, magic camera that says, let me guess, you want this guy out of here. Yes. And we have the model that is good at taking, you know, detection and then good at removal automatically.
+
+Yeah. And this is all possible today. You know, your job will mostly be to combine models, create pipelines of models, prompting even, right?
+
+Do you think that Apple will just make this kind of default on the camera? I mean, Apple could have shipped Instagram. Apple could have shipped so many things.
+
+Like Apple could also ship that the Zoom annoying popover of facial effects, whatever goes away and they haven't is still broken. Like when the balloons come up. So I know I'm in a post worrying about what Apple does world.
+
+I'm actually more worried about their constraints on developer freedom on how they tax you and only let you run one browser engine. That's kind of my mental model. Like Apple is like in the IBM phase of like, let's preserve what we have at all costs and litigate.
+
+Like they're almost becoming like Oracle of our generation. Purely it's all about terms of service. And 2.1.1 prohibits this.
+
+It's like, hopefully, you know, I'm saying this so that the company becomes better in the interest of like open public feedback. Tim Sweeney from Unreal from Epic Games just had a similar comment on the Lex Freeman podcast. I think there needs to be a world where developers can just ship.
+
+That's the main idea of our cell. And like Apple has sort of been constraining that. So I'll tell you, like there's so many cameras that you can ship to the phone that people love.
+
+Right. So there is Halliday camera, I think it's called and it's pronounced. There is obviously Instagram is a camera.
+
+Right. So Snapchat is a camera. So, yeah.
+
+And also. But it's also time. Like, you know, these things come in these waves.
+
+About every seven, eight, ten years, the window reopens on, you know, these kind of like things. If you just look at Instagram and Snapchat, when they came out, it was sort of like this eight year period after Facebook came out. Yeah.
+
+And like there was enough new stuff, new either new social norms, like people taking pictures everywhere, new technology, like smartphones, that all of a sudden there was like an opportunity for those. It's now been another ten years post Snapchat and Instagram for somebody to build a better camera. And there's a wedge through utility.
+
+Like you can build a better camera. You can build a better like, oh, just import your photo and start editing. Like the exact approach.
+
+I mean, who knows how this is going to happen, but it has to happen. It has to happen that like I can take great photos, even if I don't, if I didn't capture everything perfectly. Like the AI is already there.
+
+Like just make it happen, people. Yeah. You could even actually just do the camera roll part, right?
+
+Because, you know, Google Photos and all these, they try to do this. Like, hey, we made a memory. And like, you know, like my mom loves these.
+
+It's like, oh, I forgot about that. It sticks together and it put corny music on top. There's no cool factor to that.
+
+Those are all pretty. Totally. Bad, but it's your photos and your memory.
+
+So it's still good enough. Imagine if you had taste and you did it, like imagine if Kevin Systrom and you, you realize, oh, there's a gold mine on people's camera rolls. That I could just be generating, I could just be mining that and creating like actually good content.
+
+Yeah. There's so many thoughts that come to mind. One is, look, brilliant things happen when people focus and obsess over a problem domain.
+
+So the operating system makers have so many irons in the fire. And there has to be someone that just loves to take great photos and wants to democratize that with everybody else. Right.
+
+So that's kind of how I think about it. And there's so many angles. There is the memory video creation.
+
+There is the photo. There is some aspects of shareability of the photos. So who knows?
+
+I mean, like, I think my prediction is more so around like something amazing is going to happen in this space more than like, what is this specific thing? All right. I want to do a couple of your other ideas.
+
+Oh, this one was clever. Absurdly smart autocomplete. Like I didn't know when you said that I was like autocomplete, who cares?
+
+And then I saw your kind of like brief description. I was like, that's actually brilliant. Can you explain what this idea is?
+
+Yeah. I think when it started to become obvious that LLMs were going to transform software engineering, it was when we started typing code into a code editor and it just suggested stuff based on the whole project, the whole, sort of corpus of code that has existed in humanity. The next wrinkle was that things get better, the richer the context.
+
+So if you only give the LLM one line of code and nothing else, it'll still produce something useful and it'll blow people's minds. And I think we're in the time of humanity when like things blow our minds for like a week and then we get immediately bored and used to it. But the next wrinkle was what if you put the content of your clipboard into the prompt?
+
+Because developers typically are like what they just saw they put into their clipboard because they intend to search for it or make a mutation. So what's in the clipboard is likely to be kind of what's in your mind. Could help.
+
+Yeah. Right. And so auto completions get better and then they get better with more context and they get smarter models and with search.
+
+Because now when I am in a different file, I'm likely to be writing code that is related to the dependency of this other file. So long story short, things get better with better context and auto completion is sort of the first manifestation of how LLMs and AIs can enhance your cognitive ability. Yeah.
+
+I mean, it's just in time expertise. Yes. Right.
+
+Like in line right while I'm writing it. Yes. Give me the perfect thing right there without me having to leave, go ask things.
+
+Think of a question. Just give me a suggestion right there. So now what's the that worked in code?
+
+You're saying what about the rest? Yeah, exactly. And I get frustrated with like how bad spell checking is.
+
+So if you look at, you know, macOS spell checker, it's gotten better over the years. But it just doesn't know the things that you literally saw 10 seconds ago. Like someone tells you, hey, can you send me the B0?
+
+Someone says in Slack. And then you go to an email and you start writing B0 and Apple goes, I think you meant via. Like it comes up with a new word.
+
+It's like, no, no, no. I literally just was talking about this. How could I possibly want to not write that down?
+
+And so that's where the inspiration came for it. And I think there's a lot of ways to go about this. Like one is like you enhance the operating system.
+
+It's a non-trivial task. But I think this general idea applies to so many things where we forget that the LLMs are here. The context is not evenly distributed.
+
+Meaning if you just put the right things into the prompt, magic will happen without changing the actual sort of engine of intelligence. And so that example you gave of like the B0 one sounds minor. Like, oh, who cares?
+
+You just push bat space twice and just fix it. But what you're saying is if the AI knows what I'm talking about, what I'm thinking about, what I'm working on, what we're doing, then in the same way that in code, it auto-suggests the right code because it knows about my whole multiple files in the projects. It'll do the same when I write that email.
+
+It won't just give me the generic thing. It knows how I talk and it knows what we were talking about. It knows what the plan was that I'm trying to relate to this guy.
+
+Yeah, it's like the black mirror, the entire history of you. Is that the one where the camera is like, it's like your memory is external memory, basically? The other thing that's really interesting is that these systems are all about next token prediction, right?
+
+And right now we're not fully exploiting that because we're not putting in the sequence of everything we're doing and everything we're thinking about. Every time you go from app to app, that context is getting lost. And we typically actually tend to work sequentially.
+
+What happens is I read an email that is about a problem. And then I go with another app and I'm likely going to discuss that problem. Or I'm going to try to look for the person that is an expert in that problem.
+
+So the other way to go about this is like, you know, how can you ingest this series of apps and integrations and systems that people use to do their work and you connect the dots? There's one more that you have here. You said more granular v zero.
+
+So this is almost like, hey, come disrupt us. Yeah. It's what I talked about with the game engine, right?
+
+Like just like chat GPT got broken down into like individual things. We have a big effort at Vercel to sort of like, we want to be the platform of platforms. We want the next Shopify to be born on Vercel.
+
+And what I anticipate will happen is that if an entrepreneur says, I want to make it easy for people to sell online. They're probably just like we did with the type form exercise. They're probably going to start with AI.
+
+They're going to, they're not going to build the same Shopify that exists today. They're going to create something that starts with intelligence. It starts with maybe importing a photo of the product that you want to sell.
+
+Maybe it starts with a prompt of what you want your store to be. Maybe it's so smart at like, if it's a physical store that already exists, it knows everything about it. It's like one button, create the store and it ingests all the products and SQs and categories and whatever.
+
+So similar to the game engine thought experiment that we went through, like that would be a more granular VZero. It's like, okay, VZero can create anything. But, and the reason that this would work out is that it's the same reason that Shopify worked out.
+
+Like there is things that are very general, like AWS, like Vercel. You know, Vercel sort of like AWS on steroids in a way, like we're making it so easy for people, but it's still a broad platform on top of which any idea can be deployed. And so I really believe that AI will transform everything.
+
+It'll transform website building. It will transform e-commerce. It'll transform form building.
+
+So a lot of the exercises that I do is that, look, there's going to be VZero for legal. Our, our general counsel uses a tool called GC.AI. GC.AI is essentially VZero for lawyers.
+
+And it was built on the Vercel platform. And, and the other wrinkle is. And it's used to what, build their website only, or it does more than that?
+
+No, this is for drafting contracts. So like you can prompt your way to, you know, saying like, I need this contract between these two parties, or I need to review a contract. I need to import documents.
+
+And so that's kind of what I mean by the more granular VZero. It's more like a theme that a specific idea. One of the other things I wanted to ask you about, something I brought for you.
+
+I thought this was incredible. This is a piece of, you know, internet, internet history here. So explain what I just handed you and the backstory of this.
+
+Thanks for printing this out because I use this example so much as like the magic of Silicon Valley. I was, I ended up at this party, you know, the classic, like, could have been an office warming party, something along these lines or like meet up. And people were, you know, having conversations, passing out drinks.
+
+And I met this gentleman named Brian Armstrong. And he did something that I find myself doing a lot is I walk up to people, not with networking agendas or random ideas. I walk up to people with content.
+
+Okay. I want to show them something. Okay.
+
+I want to show them an app. I walk up to people and- Like strangers you mean? Or what are you talking about?
+
+Well, people in the context of like networking. Yeah, you're at an event. I'm at an event, whatever.
+
+But I could do it with an Uber driver. Like I have no limits. I take no prisoners.
+
+So he walked up to me and he's like, here's a, I'm working on Coinbase. It's a, yeah, it's like a bank for digital currency and I'm building an app and he shows me the app. And then he goes, if you install the app, I'll send you a Bitcoin.
+
+Just think about how crazy that is. Like if you install an app, like first of all, twist my arm. I love trying out new things.
+
+Right. And I loved Bitcoin at that time. I'll give you a hundred thousand dollars or whatever.
+
+What year was this? Cause the date, the date is on this email. What year was this?
+
+Yeah. So November 9th, 2012. So it's the magic of the Bay area because you can just walk up on both sides.
+
+You can just walk up to people and show them things. You can see their reactions. You can get their feedback, et cetera, et cetera.
+
+And on my side. And there's some people on the street that will show you some things you didn't ask for too. That's another part of San Francisco.
+
+Oh yeah, yeah, for sure. It comes with a lot of diversity. And, but on my side, you know, it's like, well, you can be there on the receiving end of new ideas, new opportunities, new, like you can invest.
+
+Like if I had been an investor at the time, I was like, Hey, this Brian guys is pretty smart and he's hustling hard and digital currency might as well give it a shot. Right? So yeah.
+
+Thanks for sharing this. So he sent you this email. He sent you the Bitcoin.
+
+So the important thing is that it says worth $10 and 81 cents. For the app installed. Now that's $103,000 as of this morning.
+
+Yeah. And then I actually ended up following Coinbase for many years. At the time, I think I was poor or I had just began.
+
+I can't remember exactly when I sold my company, but I couldn't angel invest most likely at this time. But that was the other thing that I started doing when I sold my first company, right? Like I put it all back into the game, which is kind of crazy.
+
+In fact, I talked to this guy who I really respected in the JavaScript community. And, and he was like, he was also starting to do angel investments. And he goes, well, the way that I treat Bitcoin is like an angel investment.
+
+I put in a $20,000 check into Bitcoin. And I remember when I sold my company, I did that. And, and it was probably also because of the serendipity of like having Coinbase and, you know, this infrastructure that was nascent, but I was, I had been exposed to.
+
+The magic of Silicon Valley is that you can still do these things. You can just like make things happen. Did it also help that you were, you know, born and raised in Argentina and you had seen kind of like, maybe you questioned currency more than the average bear did, right?
+
+Yeah, 100%, 100%. So the concrete memory, I was a young child, but it had everyone in Argentina stressed the F out was, and people can fact check us and look this up. But it was like, I think we had like three presidents in three days.
+
+One president had almost like, I think he, he raged quit because there was an economic and financial meltdown. I think it was, this was about like 2000, 2001. The next guy comes in and he's like, Oh cool.
+
+And the vice president becomes president. Somebody along the sides is like, cool. Like I'll try to fix it.
+
+Two weeks in he's out too. And then someone comes in who I, I'm not even sure if he was like literally like next in line. Another guy comes in.
+
+And I think this is the guy that I'm pretty sure that is the third guy. It that goes to national TV. They do the whole thing where like they interrupt all of the ongoing channels and they like precedent comes in.
+
+It's like, he's addressing the financial turmoil. And he's saying, look, there's a lot of noise about how your dollar savings will get lost. Uh, and they might get converted into pesos and they might get converted at a non beneficial rate.
+
+And he said, do not worry Argentinians. And this is a national TV fully synchronized across every screen in the country. Do not worry.
+
+Your dollars are safe. If you deposited dollars, this is the exact quote. If you deposited dollars, you will receive dollars.
+
+If you deposited Argentinian pesos, you will receive Argentinian pesos. Literally a week later, it didn't happen. The dollars got converted into pesos and then the currency lost its value.
+
+So basically your money was stolen from you. Uh, the banks were in, uh, cahoots with the government to make this transactions happen. Your money is effectively just like when, when people joke, I, I take it personally, to see Michael Jordan, people joke, oh, Bitcoin is just a database.
+
+We could replace it with Postgres and we would get a lot more throughput. So, well, not really. What we had in Argentina was Postgres or maybe worse.
+
+Maybe it was Excel or something. And like, and the government literally did go in and in the currency column said, select all convert. Right.
+
+Like that is the database that is not immutable. And so I became extremely pilled with Bitcoin because I have that, like, I have the concrete memory and I have my dad screaming at the screen and saying like, these people are so corrupt. They're like screaming.
+
+And then the other thing that happened was all this protest of people that had large dollar savings. And then the other thing that, uh, it was so terrible because Argentina has been guilty of this before Mele many times of like, if you're rich, that's frowned upon. That's terrible.
+
+You probably got rich by screwing someone up. That is like how the culture was largely configured. So it was very hard to empathize with this protest that would happen because people would literally be outside of the banks protesting that their savings got stolen.
+
+But the way that it would get sort of, um, um, um, you know, manipulated by the media was, are you going to empathize with that rich guy? Oh, poor him. He's complaining about his huge dollar savings.
+
+So that added even more insult to the injury that there was no empathy to people that were losing their money. And so, you know, the Bitcoin seems so obvious in the context of like, we need a globally distributed database that is immutable, that has extreme security guarantees, because this is your life. This is your, the things that you might leave for your kids.
+
+This is everything you've worked your entire life for. You cannot trust any given actor. You cannot trust the government.
+
+You cannot trust the banks. You cannot trust, you know, your friends. You cannot trust anyone.
+
+Like you need to be able to have a cryptographic certainty. You can only trust math and the universe, which is kind of like the two emergent properties of it. You trust the universe in terms of like the energetic, uh, demands on top of which Bitcoin banks that it's so hard to mint a block.
+
+Right. You can't do this cyber attacks and whatnot. And you're also banking on the cryptographic verification.
+
+Like you, you, if you want, you can be a node and verify the blockchain yourself with software that you run as opposed to trusting the world of like, is this legit? Is this the chain that I should be looking at? Which is why, I mean, we can go into a whole different tangent, but like I've always been, uh, somewhat unsympathetic to non proof of work systems because they create an uncertainty about what is the right chain to be looking at.
+
+And, um, uh, in, in that category falls like Ethereum and a few others. Two questions for you. One, uh, given that you went through that, do you like kind of denominate yourself in Bitcoin?
+
+Do you like put a huge percentage of your own net worth in Bitcoin? Or like how, how have you decided to do that? So I put my entire net worth into Vercel.
+
+I've always, I've, I, so having said all of this, I always think about the mental model that Warren Buffett has offered of like, if I had, if I could have a cube of all gold on the planet. You know, like I would look at it as like, oh, it's this shiny block of gold, or I could have a cube of all of the productive farmland in the U S and all of its companies. What cube would I rather own?
+
+But it is a false dichotomy. I want to own both. I want Bitcoin and I want assets in product productive assets that are going to grow over time that I also want to support.
+
+And so I like the idea of by far, first and foremost, placing a bet on myself in Vercel. So that's kind of my primary net worth. But if Bitcoin is not some percentage of my net worth, I would be really worried because I would not have that rock solid foundation that I missed when I was in Argentina.
+
+Like it, it didn't feel like I had access to something that could be so reliable and trustworthy. So I am a fan of a potential future in which everything is denominated under the hood. Everything is re-based on top of this system.
+
+That would be really cool. I, uh, so when I do these podcasts, like the way I, people think that this is the, oh, how did it go? And I'm like, it's good or bad.
+
+Actually for me, I get the wind far before we sit down because I, when I know you're coming on, I go down a rabbit hole of Guillermo and I go and I read your old stuff and I learn from you. That's where I get, and I'm in, I'm in this for the wisdom. So I'm like, I'm looking for the golden nuggets, the insights, the wisdom, the frameworks that he uses, the stories that inspire me, or I can remember, or I can tie to my own life.
+
+So by the time I sit down here, this is all gravy. Now I'm here just having chicken nuggets. I'm eating lunch.
+
+But one of the things that I saw on your old blog, I think it was like 2016 or something. It was a newspaper clipping. I forget who it was, if it was Edison or who it was, but they had this idea of the energy dollar.
+
+It's wild. It's wild. I've never heard of this.
+
+But like, I guess back in the day, like the, was it Edison or I don't remember who it was. It might have been Ford. I can remember.
+
+Yeah. It was like two of like kind of the luminaries of the time. It was like Ford and somebody else.
+
+Yeah. And then we're talking about this concept of an energy dollar. Like, Hey, we need a currency that's based off of like the production of joules, you know, joules of energy, joules of electricity or work.
+
+And then that'll be a more sort of like rock solid. It tracks reality. That's Bitcoin.
+
+It tracks the universe perfectly, right? It's also related to the Kardashev scale and like our ability to capture energy from our nearby star and the types of civilizations that we are. And the other one that the, the reason I've been actually also thinking about this more recently is we're clearly entering a world in which energy can be transmuted into intelligence.
+
+I mean, it's already the case that I can do so much test time compute that any, any problem seems tractable with enough cycles of GPUs. And the only limiting factor does seem to be our ability to harness energy. And so the, the unit of wealth or the store of wealth has to be something that is rare, right?
+
+And it has to be something that's provable. And so the idea of tracking our, yeah, our fundamental store of wealth through energy. I mean, I'm very intrigued by that.
+
+So. Well, dude, thanks for coming on. I think what you've built is amazing.
+
+Your story is great. You're a big ball of energy. And some of these ideas are really, really good.
+
+Like I'll share more. So there's that. There's a free ideas to thread coming on X.
+
+So. Okay. The sequel.
+
+Is it going to be like a shitty movie sequel or, you know, just doesn't live up to the first one. But I did set a high bar. I don't want to, I don't want to brag.
+
+When that comes out, can we do brainstorm too on here? Where we riff on them? Because that's what we do here.
+
+So. All right, man. Thank you so much.
+
+So much. And I'll see you next time. I'll see you next time.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye.

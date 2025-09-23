@@ -146,6 +146,93 @@ class PersonaBuilderCLI:
             self.logger.error(f"Persona extraction failed: {e}")
             sys.exit(1)
     
+    def extract_persona_stats(self, args):
+        """Extract persona - statistical analysis only (Phase 1-a)"""
+        self.logger.info("=" * 60)
+        self.logger.info("PHASE 1-A: STATISTICAL ANALYSIS")
+        self.logger.info("=" * 60)
+        
+        try:
+            # Register or get persona
+            persona_id = self.persona_manager.get_or_create_persona(args.name)
+            self.logger.info(f"Using persona: {persona_id}")
+            
+            # Initialize persona-specific knowledge indexer
+            self.knowledge_indexer = KnowledgeIndexer(self.settings, persona_id)
+            
+            # Perform statistical analysis only
+            self.knowledge_indexer.extract_statistical_analysis_only(
+                documents_dir=args.documents_dir,
+                persona_name=args.name,
+                file_pattern=args.pattern,
+                force_reanalyze=getattr(args, 'force_reanalyze', False)
+            )
+            
+            print("\nPhase 1-a: Statistical Analysis Complete!")
+            print("-" * 40)
+            print("Statistical analysis cached for LLM processing stage.")
+            
+        except Exception as e:
+            self.logger.error(f"Statistical analysis failed: {e}")
+            sys.exit(1)
+    
+    def extract_persona_llm(self, args):
+        """Extract persona - LLM processing only (Phase 1-b)"""
+        self.logger.info("=" * 60)
+        self.logger.info("PHASE 1-B: LLM MAP-REDUCE PROCESSING")
+        self.logger.info("=" * 60)
+        
+        try:
+            # Register or get persona
+            persona_id = self.persona_manager.get_or_create_persona(args.name)
+            self.logger.info(f"Using persona: {persona_id}")
+            
+            # Initialize persona-specific knowledge indexer
+            self.knowledge_indexer = KnowledgeIndexer(self.settings, persona_id)
+            
+            # Perform LLM processing only
+            artifact_path = self.knowledge_indexer.extract_llm_analysis_only(
+                documents_dir=args.documents_dir,
+                persona_name=args.name,
+                file_pattern=args.pattern,
+                use_cached_stats=getattr(args, 'use_cached_stats', True)
+            )
+            
+            print("\nPhase 1-b: LLM Processing Complete!")
+            print("-" * 40)
+            print(f"Saved to: {artifact_path}")
+            
+            # Initialize persona-specific artifact manager
+            self.artifact_manager = self.persona_manager.get_persona_artifact_manager(persona_id)
+            
+            # Load and display summary
+            persona = self.artifact_manager.load_persona_constitution(name=args.name)
+            summary = persona.get_summary()
+            
+            print("\nPersona Summary:")
+            print(f"  Mental Models: {summary['total_mental_models']}")
+            print(f"  Core Beliefs: {summary['total_core_beliefs']}")
+            print(f"  Catchphrases: {summary['total_catchphrases']}")
+            print(f"  Vocabulary Terms: {summary['total_vocabulary_terms']}")
+            print(f"  Processing Time: {summary['processing_time']}")
+            
+            if args.verbose:
+                print("\nQuality Scores:")
+                for key, value in persona.extraction_metadata.quality_scores.items():
+                    print(f"  {key}: {value:.2f}")
+                
+                print("\nTop Catchphrases:")
+                for phrase in persona.linguistic_style.catchphrases[:5]:
+                    print(f"  - \"{phrase}\"")
+                
+                print("\nMental Models:")
+                for model in persona.mental_models[:3]:
+                    print(f"  - {model.name}")
+            
+        except Exception as e:
+            self.logger.error(f"LLM processing failed: {e}")
+            sys.exit(1)
+    
     def list_personas(self, args):
         """List available personas"""
         personas = self.persona_manager.list_personas()
@@ -483,6 +570,22 @@ Examples:
         extract_parser.add_argument("--skip-cache", action="store_true", 
                                    help="Skip using cached analysis altogether")
         
+        # Extract persona - statistical analysis only (Phase 1-a)
+        extract_stats_parser = subparsers.add_parser("extract-persona-stats", help="Phase 1-a: Statistical analysis only (spaCy/NLTK)")
+        extract_stats_parser.add_argument("--documents-dir", required=True, help="Directory containing documents")
+        extract_stats_parser.add_argument("--name", required=True, help="Name for the persona")
+        extract_stats_parser.add_argument("--pattern", default="*.md", help="File pattern to match")
+        extract_stats_parser.add_argument("--force-reanalyze", action="store_true", 
+                                         help="Force fresh statistical analysis even if cache exists")
+        
+        # Extract persona - LLM processing only (Phase 1-b)
+        extract_llm_parser = subparsers.add_parser("extract-persona-llm", help="Phase 1-b: LLM map-reduce processing only")
+        extract_llm_parser.add_argument("--documents-dir", required=True, help="Directory containing documents")
+        extract_llm_parser.add_argument("--name", required=True, help="Name for the persona")
+        extract_llm_parser.add_argument("--pattern", default="*.md", help="File pattern to match")
+        extract_llm_parser.add_argument("--use-cached-stats", action="store_true", default=True,
+                                       help="Use cached statistical analysis from Phase 1-a")
+        
         # List personas
         list_parser = subparsers.add_parser("list-personas", help="List available personas")
         list_parser.add_argument("--name", help="Filter by persona name")
@@ -533,6 +636,8 @@ Examples:
         commands = {
             "build-kb": self.build_knowledge_base,
             "extract-persona": self.extract_persona,
+            "extract-persona-stats": self.extract_persona_stats,
+            "extract-persona-llm": self.extract_persona_llm,
             "list-personas": self.list_personas,
             "analyze": self.analyze_knowledge,
             "search": self.search,

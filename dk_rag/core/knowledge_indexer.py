@@ -234,6 +234,162 @@ class KnowledgeIndexer:
         
         return artifact_path
     
+    def extract_statistical_analysis_only(self,
+                                         documents_dir: str,
+                                         persona_name: str,
+                                         file_pattern: str = "*.md",
+                                         force_reanalyze: bool = False) -> str:
+        """
+        Phase 1-a: Extract statistical analysis only using spaCy/NLTK
+        
+        Args:
+            documents_dir: Directory containing documents
+            persona_name: Name for the persona
+            file_pattern: Pattern for files to include
+            force_reanalyze: Force fresh analysis even if cache exists
+            
+        Returns:
+            Path to cached statistical analysis
+        """
+        # Register or get persona ID
+        persona_id = self.persona_manager.get_or_create_persona(persona_name)
+        
+        self.logger.info(f"Phase 1-a: Statistical analysis for '{persona_name}' (ID: {persona_id})")
+        
+        # Load documents
+        documents = self.transcript_loader.load_documents(
+            documents_dir,
+            file_pattern=file_pattern
+        )
+        
+        # Validate
+        from ..utils.validation import validate_documents
+        validation_issues = validate_documents(documents)
+        if validation_issues:
+            self.logger.warning(f"Document validation issues: {validation_issues}")
+            if self.settings.validation.strict_mode:
+                raise ValueError(f"Validation failed: {validation_issues}")
+        
+        # Perform statistical analysis only
+        self.logger.info("Performing statistical analysis...")
+        statistical_report = self.statistical_analyzer.analyze_content(
+            documents, 
+            use_cache=not force_reanalyze, 
+            force_reanalyze=force_reanalyze
+        )
+        
+        # Log analysis summary
+        self.logger.info(f"Statistical analysis complete: {len(statistical_report.top_keywords)} keywords, "
+                        f"{len(statistical_report.top_collocations)} collocations")
+        
+        # Return path to cached analysis
+        cache_info = self.statistical_analyzer.get_cache_info()
+        cache_path = cache_info.get('cache_dir', 'statistical analysis cached')
+        
+        return cache_path
+    
+    def extract_llm_analysis_only(self,
+                                documents_dir: str,
+                                persona_name: str,
+                                file_pattern: str = "*.md",
+                                use_cached_stats: bool = True) -> str:
+        """
+        Phase 1-b: Extract persona using LLM map-reduce processing only
+        
+        Args:
+            documents_dir: Directory containing documents
+            persona_name: Name for the persona
+            file_pattern: Pattern for files to include
+            use_cached_stats: Whether to use cached statistical analysis
+            
+        Returns:
+            Path to saved persona artifact
+        """
+        # Register or get persona ID
+        persona_id = self.persona_manager.get_or_create_persona(persona_name)
+        
+        self.logger.info(f"Phase 1-b: LLM processing for '{persona_name}' (ID: {persona_id})")
+        
+        # Get persona-specific artifact manager
+        artifact_manager = self.persona_manager.get_persona_artifact_manager(persona_id)
+        
+        # Load documents
+        documents = self.transcript_loader.load_documents(
+            documents_dir,
+            file_pattern=file_pattern
+        )
+        
+        # Validate
+        from ..utils.validation import validate_documents
+        validation_issues = validate_documents(documents)
+        if validation_issues:
+            self.logger.warning(f"Document validation issues: {validation_issues}")
+            if self.settings.validation.strict_mode:
+                raise ValueError(f"Validation failed: {validation_issues}")
+        
+        # Check if statistical analysis is available
+        if use_cached_stats:
+            if not self.statistical_analyzer.has_cached_analysis(documents):
+                raise ValueError(
+                    "No cached statistical analysis found. "
+                    "Please run Phase 1-a (extract-persona-stats) first, "
+                    "or set use_cached_stats=False to perform fresh analysis."
+                )
+            self.logger.info("Using cached statistical analysis from Phase 1-a")
+        else:
+            self.logger.info("Performing fresh statistical analysis...")
+        
+        # Extract persona using LLM processing
+        persona = self.persona_extractor.extract_persona_sync(
+            documents, 
+            use_cached_analysis=use_cached_stats, 
+            force_reanalyze=False
+        )
+        
+        # Validate persona
+        from ..utils.validation import validate_persona, auto_fix_persona
+        
+        persona_issues = validate_persona(persona, self.settings)
+        if persona_issues:
+            self.logger.warning(f"Persona validation issues: {persona_issues}")
+            
+            # Attempt auto-fix
+            if self.settings.validation.auto_fix:
+                self.logger.info("Attempting to auto-fix persona issues...")
+                persona = auto_fix_persona(persona, self.settings)
+                
+                # Re-validate
+                persona_issues = validate_persona(persona, self.settings)
+                if persona_issues and self.settings.validation.strict_mode:
+                    raise ValueError(f"Persona validation failed after auto-fix: {persona_issues}")
+        
+        # Calculate quality scores
+        from ..utils.validation import validate_extraction_quality
+        quality_scores = validate_extraction_quality(persona)
+        self.logger.info(f"Extraction quality scores: {quality_scores}")
+        
+        # Update metadata with quality scores
+        persona.extraction_metadata.quality_scores = quality_scores
+        
+        # Save persona artifact using persona-specific artifact manager
+        self.logger.info(f"Saving persona artifact for '{persona_id}'...")
+        artifact_path = artifact_manager.save_persona_constitution(
+            persona,
+            persona_name,
+            metadata={
+                'source_dir': documents_dir,
+                'file_pattern': file_pattern,
+                'quality_scores': quality_scores,
+                'processing_stage': 'Phase 1-b: LLM processing'
+            }
+        )
+        
+        # Log summary
+        summary = persona.get_summary()
+        self.logger.info(f"LLM processing complete: {summary}")
+        
+        return artifact_path
+    
     def update_knowledge_base(self,
                             new_documents_dir: str,
                             persona_id: Optional[str] = None,
