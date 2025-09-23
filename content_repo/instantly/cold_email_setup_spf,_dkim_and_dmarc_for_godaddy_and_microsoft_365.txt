@@ -1,0 +1,59 @@
+This video will be about connecting GoDaddy domains to Microsoft 365. If you're using Microsoft 365 as a workspace, you need to create some DNS records into your domain DNS. Let's start by opening two tabs and logging into your Microsoft Admin Center and your GoDaddy Admin.
+
+So you want to go to your domain list here and in Microsoft 365 you want to search for domains. Click on domains and you are taken to the page with all the domains that you've created. So we will add a new one by clicking to add domain.
+
+Now you want to copy the domain name and click on use this domain. Microsoft asks you to verify the domain ownership. So let's click on verify.
+
+And then click on connect. And then click continue. Now we need to create three records into the GoDaddy.
+
+These are MX, TXT and CNAME records. So let's start from MX record. Click on the GoDaddy.
+
+Click on the GoDaddy. You want to find your domain here in the domain list. Click on three dots and click manage DNS.
+
+These are all the domain records already created for your domain and we are going to add a new ones. So click on add button. You want to choose MX as a type.
+
+Hostname is add and this is the value. And the zero here, that's the priority. TTL is one hour.
+
+And click add record. So let's add a new one. So the next one is TXT record.
+
+And the value. Let's copy the value. One hour TTL and add record.
+
+And the last one is CNAME record. And the value. So don't worry if you make a mistake here and save it.
+
+You can easily edit it or delete the already saved record and start again. So we created three records. Normally it takes a few minutes for them to update.
+
+But let's try to verify them. So let's check the DNS records. So we have one SPF record.
+
+We have MX record. And the CNAME record. So we have one SPF record.
+
+All right, now we are done. Now we can continue and create the DKIM. So just type it here in the search bar.
+
+So let's find the domain that we want to connect. Let me see if this is the one. Lab.
+
+Yeah. Click on generate DKIM keys. And now you want to copy these.
+
+So you will create two CNAME records with these values. Click add. Choose CNAME.
+
+So the first hostname is selector1, domain key. And copy the value. Add record.
+
+Then the next one. Select your tool. Type is CNAME.
+
+Paste the name. And paste the value. And paste the value.
+
+And paste the value. Close. Now we need to wait some time for the records to update.
+
+And then we can click on this toggle switch and enable the DKIM signatures. There's a little bit of that. There's also an update.
+
+And then we can start with the last page. So let's see. Maybe they have updated already.
+
+OK, let's wait a bit more. And then try again. All right.
+
+Click OK. Now the DKIM signatures have been activated. And we can continue and add the last.
+
+DNS, that's DMARC record. So let's go to GoDaddy, click Add, choose DXT, name is underscore DMARC and value. I'm gonna copy the value from our help article.
+
+You can copy as well. You can create your own or you can use some of the online tools to generate your DMARC. Just don't forget to replace your email here.
+
+So instead of the generic one, put the one that you want to receive the reports on. And now that's ready, we can click on Add record. Now you can go ahead, go back to Microsoft and create users for this domain.
+
+Then you can connect those users to instantly and start the warm-up process.

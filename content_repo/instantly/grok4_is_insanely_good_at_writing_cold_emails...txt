@@ -1,0 +1,155 @@
+Grok 4 just came out and it is officially the best AI model out there. It can achieve perfect SAT scores every time and outperforms almost every grad student in every discipline. So I want to know how good it is at cold email marketing and if it can replace the human touch.
+
+So in this video, I'll be testing Grok 4 to see if it's really that good. And we'll find out if you should actually use it in your cold outreach or not. What's even better is instantly.ai now has an integration with Grok 4 so that you can use it to write emails, write follow-up emails, write personalized lines, and so much more.
+
+This is a game changer for the industry. First things first, what I'm going to do is I'm going to go to instantly.ai and I can use the tool called Super Search. We can search many different filters.
+
+So let's just say we wanted real estate agents. Let's just say we wanted e-commerce owners. Let's just say we wanted sales directors with sales job openings.
+
+The opportunities are really endless with the amount of different tilters that you can use to build your lead lists. In this case, what I did is I built a couple of lead lists that I'm going to really just demo how we can integrate these lead lists with Grok 4. So the first list that I built was recruiters.
+
+Let's just say I wanted to reach out to recruiting firms and help them get more deals that they could recruit for, essentially. That was the intention of the list that I built here. And all I did is I went to industry and keywords, industry is staffing and recruiting, and then location, United States.
+
+And there are hundreds of thousands, if not millions of leads that we could pull from this database of 450 million leads. So what I did is I went ahead and clicked on find emails. And what I'm able to do is I can then enrich the emails.
+
+What that means is I can actually pull job listings. I can validate their email. I can fully enrich their profile.
+
+I can get technologies used. I can find out information in the news, funding type. And what it will do is it will update my lead lists with all the information about the prospects.
+
+So full profile, contact headline, contact summary, their job level, the company description, company website. What it's doing for me is it's giving me the information that I can then use Grok 4 to create really good prompts. Once we have the fully enriched list, verified email, stuff on their LinkedIn profile, their contact summary, what I can do is I can click on add a column and we'll see some options right here.
+
+So we could add more enrichments if we wanted to. But in this case, what we're going to do is we're going to use AI. And what I'm going to do under the account section is I'm going to scroll down to instantly X AI account.
+
+And I'm going to choose Grok 4. And what you guys can do is you can write your own prompt. You can use the variables based off of what we pulled from the lead list.
+
+And that will generate basically whatever you wanted to tell you. If it's a first personalized line, if it's a follow-up email, if it's an email, whatever it could be. And I went ahead and wrote some of these prompts that I'm going to use.
+
+And just to prefix this, like prompt engineering is probably where you'd want to spend a lot of the time because the better you prompt it, the better output you are going to get. So for this example, I'm going to say I help recruiting companies get more clients they can recruit for, write a three to five cold email, targeting their specific pain points, using details from their headline, contact summary and website requirements. Just some details of like writing a junior high level, keep it short, keep it human, aim for 20 seconds.
+
+And then my call to action. Now with my prompt, all I do is paste it in my prompt. It will automatically pull from the variables and I can go ahead and click on generate test output.
+
+With the test output, what I'll be able to do is just really test the prompt. So if you guys are building prompts from scratch, this will be your best friend. Sorry, the co-founder's general, love to help in line, American, and American, and find a lot of US companies.
+
+It's cool that you're awesome. Nice. This output obviously is really good because I've tested it out quite a bit.
+
+And I can click generate and I can just enrich the leads. And now what it'll do is it'll put the Grok 4 prompt for all of the leads that I just pulled. And I just pulled 10 just for the sake of speed.
+
+All of the leads already have a personalized email written for them using Grok 4. Now what I can do is I can click add another column, use AI. I can go back to my prompts and I can do a follow-up email.
+
+So very similar prompt that we can go ahead and paste in there. I can call this follow-up email number one, create variable, select XI, Grok 4, and generate test output. And guys, I'm going to be doing this for a few different industries.
+
+So stick with me because I'm also going to give you all of these prompts completely for free. And I'm going to show you how you can find them. That looks great.
+
+So let's just go ahead and do that as well. So now in a matter of minutes, Grok 4 just pulled the list of leads, enriched their profiles, got the verified emails, pulled their contact summary, things that I can then leverage with the prompt. And it wrote my personalized email in my follow-up email.
+
+And it's actually pretty solid. These are really good emails. Now, what do we do with these?
+
+Well, simple. I can just go to my campaigns. I can add a new campaign.
+
+I can just say recruiters example, click on continue. And then what I can do is I can go ahead and go back to my lead list. That's already enriched here with the emails.
+
+And I can go ahead and select these. And I can go ahead and move these to a campaign of recruiters example. And then it'll go ahead and copy those 10 leads over.
+
+I can go back to my campaign. And then if I go to leads, all of them will automatically be added. All I need to do is in my sequences, I can click on the variables and I can find email one.
+
+I can just go ahead and add my signature at the end. I can even just write a quick little subject line and then click on preview. And the email has already been written for me.
+
+It's personalized. I'm personalizing the first line, making it short, having it follow my prompt. And I can click add a step.
+
+I can go on variables. I can do follow-up email number one. I'll leave this blank just because it'll pull the last one.
+
+Say two days later. Click on preview. And there's my follow-up email already written.
+
+I can go to options. I can go ahead and click launch. And now my personalized emails will be launched in just a couple of minutes.
+
+I have a couple more here that I wanted to show you just so you guys can get your wheels turning and be just as excited about this as I am. Let's just say you're targeting e-commerce companies. So I wrote a prompt for you guys.
+
+You're acting as a cold email system for my outreach offer. I help them increase their load speed. I want you to write a three to five cold email sentence.
+
+And what I want them to do is I want them to audit the website or company description that mention something specific you notice about their site that could pique their interest. This could be related to layout, product, page structure, load speed, missing call actions, or conversion opportunities. Make the first line personalized and specific to what you found, for example.
+
+And then the guidelines, which is junior high reading level, start with high first name, 20 second read time, et cetera, et cetera. And go back to instantly. I'm going to build the list, which I already did.
+
+And found it right here. So these are basically people who are using Shopify, WooCommerce, indicators that they are in e-commerce or selling something online. So it already pulled everything about the contact, C-level, department, company description, company website, same process.
+
+Add column, use AI, click right here, XAI, Grok 4, paste the prompt, create new column, email, one, generate test output. Let's just test this bad boy out. As browsing on Aria's site, notice your product pages for the Heritage Western Boots takes around 45 seconds to fully load, likely due to those gorgeous high res images, which should be causing some visitors to bounce before converting.
+
+Incredible. As someone who helps e-commerce brands like yours boost conversions and speed up sites, I have a few quick ideas to shave off that load time without losing the visual appeal. Mind if I send over a short Loom video with my thoughts?
+
+Wow. So let's just go on this website here real quick. Let's just make sure that they have Heritage Western Boots.
+
+And look at that. Heritage Western Boots. A lot of them.
+
+Then I'm going to click generate. Let's just do it for first 10 because I only pulled 10 for the example here. And email is written.
+
+Okay, let's do another example then. If we go to the follow-up prompt, I can write another follow-up email for the same list. So if I click on add a column, use AI, paste my prompt.
+
+Perfect. Create a new column. Call this follow-up XAI, Grok 4.
+
+Let's generate a little test output to make sure this is good. And voila. Following up with my note about the free site audit, I filmed for Ariat as a pioneer in high performance, equestrian, footwear, and apparel.
+
+Solid. Opinor says you can quickly boost conversions and revenue by making it easier for riders to shop without delays. Just say yes and I'll send it over.
+
+It's a quick video showing exactly how to increase sales with simple tweaks. Wonderful. Generate.
+
+That's also queued up to then write the follow-up email for that specific lead. So once I have the list fully enriched, what do I do? I go to my campaigns, create a new campaign, call this e-commerce site speed.
+
+Click on continue. Go back to my super search. Go back to my lead lists.
+
+Select the list of leads that I want to send over. And I can go ahead and move these to my campaign of e-commerce site speed. Then I just insert the variable.
+
+Rinse and repeat. Let's do another example. Let's just do like real estate agents.
+
+I can pull a list of real estate agents, fully enrich them as I did before, find their company description, their contact summary from their LinkedIn, contact headline. Let's go ahead and add another email. For this one, I did a personalized line.
+
+Help real estate agents get more seller and buyer leads. Using our real estate social system, your task is to create one short personalized sentence based off their headline and summary. Rules right at junior high reading level, make it entirely about them, not me or what I do.
+
+Find a point of connection you can personally relate to, something in experience, interest, or achievements. Keep it natural, human, not salesy. Avoid greetings or closings.
+
+Keep it short, direct, conversational. Bury the style. You may reference shared experiences, parallel goals, common challenges, or unique details from their profile.
+
+Aim for authenticity. So I'm going to do personalized line. I'm going to do XI, GROC4.
+
+Let's do a little test output just to confirm. I can totally relate to those childhood days helping at your grandparents' house, roadside stand. My family had a similar setup, selling veggies from our garden.
+
+They taught me so much about connecting with people. So just enrich the first 25. What this is going to do is it will create a personalized line for the first 25 prospects, which I pulled here.
+
+Then go to campaigns, add new campaign. Let's just call it real estate. Go back to my super search, lead lists, find real estate agents, copy these over, select all, move to campaign of real estate.
+
+And then if I go back to my campaigns of real estate, I will see the leads pop in here with the personalized line right here. So then how I do this in the sequence, I could say something like, hi, first name. What I would do is I go to variables, I'd go to personalized line, and then I can basically continue with writing my email.
+
+And then I can click preview. Hi, Jamie, I also transitioned from a marketing background down to your advertising route and business venture studio for killer sex in Toronto's real estate scene. Beautiful.
+
+That's relatable. That's going to catch their attention. And then you continue on with maybe another line in the call to action here.
+
+And that's your personalized line. Let's do one more before I let you go. Next one is going to be based off of like job listings.
+
+So what's cool inside of Instantly Super Search is they have a feature where you can go to job listings. So like maybe people are hiring for sales. What does that tell you?
+
+Well, it tells you that they're probably growing and they're going to need more leads and continue to grow with the lead flow. Maybe you help people find new recruits and you are a recruiter yourself. Cool.
+
+Find people hiring for SaaS or like an engineering job in the SaaS space, whatever it could be. The opportunities are really endless. Really, to me, job listings indicate growth, which is always a positive thing in basically lead gen.
+
+So from like a lead list perspective, what I did is I basically found people hiring a sales role. So what's cool is it'll show the job listings right here where I can basically see all the listings that these companies are hiring for and then use that inside of my personalized lines. So I basically said my offer was I helped them get leads and the list that I pulled was for people hiring sales reps.
+
+So in that case, I'm going to go ahead and add a column here. Again, paste my prompt, which is you're acting as my cold email assistant. I have information on their job listings and mentioned the job list that they're hiring for.
+
+Connect that hiring to growth and with growth, they'll need more leads to keep up. My curiosity angle offer to send them a list of 100 targeted leads, show them the system that can generate them 20 qualified leads a day. That's already doing that for me.
+
+And then just some rules and generate a little test output. Make sure this is good to go. I noticed AB Tasty is hiring for sales roles like account executive, key account manager, and sales development.
+
+Presenting this clear sign your team is gearing up for major growth and helping brands optimize experiences through personalization and experimentation, just like you do for clients like LVMH and McDonald. That expansion, keeping your pipeline full of qualified leads must be a top priority to fuel all of those new hires and hit revenue goals. Want me to send you a list of 100 targeted leads, plus a quick demo of my system.
+
+So you can start booking calls this week. Just reply yes and I'll give it to you today. Wonderful.
+
+Click generate, enrich verse 25. And these are now written. I can just quickly review these.
+
+Not bad. Same thing. Go to a campaign, create a new campaign, and I can then use this in a campaign.
+
+So you just saw me build a few different campaigns using Grok4 inside of Instantly. It literally makes writing personalized emails super scalable, super easy. And if you do want the prompts that I just built for these examples, you can literally take them, go into ChatGPT or Grok4 and say, rework these prompts for my offer and for my target list.
+
+And you can use the exact ones. Just go ahead and click the link down in the description to grab that. All right.
+
+So you just saw the examples of how you could use Grok4 to do basically all of your cold emailing for you. But if you've never done cold email yourself, you might not actually know what kind of results you can get with it. So if you click on the video on the screen here, you can check out a video where I start a brand new business and use Instantly to handle all of my lead generation.
+
+And in that video, we do it completely from scratch to making my first sale in less than 10 hours of work. So I will see you on that video.

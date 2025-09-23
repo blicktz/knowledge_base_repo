@@ -1,0 +1,29 @@
+If you could get the email of the people that are actually visiting your website, you'd probably convert a lot more people. Years ago, this might sound impossible, but today it is not. So in this video, I'm walking through the newest feature for Instantly that will allow you to convert website visitors into actual leads for your business.
+
+So the people that are visiting your website are probably people that are pretty aware of the problem that they have, and they're just checking you out to make sure you're legit, check out some of your case studies. And now what we're able to do is we're able to take the people that are visiting your website and send them an email before they go research some other competitors, they decide against it, or forget who you are five minutes after leaving your website. This feature literally gives you everything that you need to reach out to that prospect.
+
+It's everything from their website URL, their email, their LinkedIn profile, and so much more. So first things first, if we go into Instantly, what we will see on the left-hand side is this thing called website visitors. So what it'll prompt you to do is set it up, and what it's going to give you is essentially a code.
+
+So what will pop up is install this script with HTML code. So after you type in your domain, it'll give you a code to add to your website. So what we want to do is we want to just place it within the head tag of your website.
+
+There's a guide here on how to do it, or you can simply Google the website provider of what you have. In my case, it's going to be Squarespace. So if I just log into my Squarespace, if I go to pages, website tools, code injection, I can simply add in the code here.
+
+Then what I want to do is I will want to just test this bad boy out to make sure that it is firing. And this says, congratulations, you have successfully installed the visitor tag. You can now close this tab.
+
+That tells me I have this tag set up on my website. So now I can start collecting website data. So now what we want to do after this is in fact successful in firing is we want to go to the website visitors, and we want to simply create a new view.
+
+And I'm going to call this AgencyU Case Study Visitors. And I want to send a Slack notification every time somebody does this, which is pretty simple to set up. I just click on the eye icon, and then I go ahead and click on the URL right there.
+
+What that's going to do is it's going to prompt me to download incoming webhooks to my Slack, which is perfect. And what we'll be able to do is we'll be able to post to the channel using this webhook. I'm just going to do a direct message, click on add, and then I can go ahead and paste this URL into the view.
+
+Then what it's going to ask me is if I automatically want to add all matching leads to a campaign or a list. So campaign, I'm going to do AgencyU Case Study Campaign, check for duplicates across all campaigns, and verify the leads, of course. And if I wanted to, I could also filter by revenue, seniority level, or department level, because it does pull that.
+
+But in this case, because I'm doing just case study visitors, I just need to pick people who have visited the case study section of our website. So I'm going to go to agencyu.co slash case studies. I'm going to go ahead and copy this URL.
+
+I'm going to go, let me say URL is case studies. And now I can save. So now everybody who meets that specific criteria will be added to the case study visitors.
+
+So over time, as more people hit on your website, more people will be added to this list. And you as a salesperson, you as a business owner, you as a B2B marketer, now have a list of pretty warm people that you can reach out to, whether it's you're adding them to a campaign on Instantly, or you're finding them on LinkedIn and messaging them on LinkedIn, or you're calling them through this tool as well. If you want to use the tool that I just went over, go ahead and click link down in the description.
+
+And if you are wanting to use cold email in your business, you need to make sure that your script is effective when leveraging a tool like this and doing cold email. Go ahead and click the link right here and we'll show you exactly how to do that. Thanks so much for watching, guys.
+
+We will see you on the next one.

@@ -1,0 +1,75 @@
+Hi everyone, I'm Reo from Instantly and I wanted to make this video to show you guys how you can get started with cold emailing in 2022 in just two hours. So this guide will be mostly focused for people who haven't gotten their cold email set up yet, they're not sending any cold emails, but if you're an old timer, you might even still find something useful from this guide. So yeah, let's get straight into it.
+
+So the first thing what we're going to cover is the tech setup, then we'll move to finding and verifying leads, then we'll move to copywriting, and after that, finally, we'll learn how to set up campaigns in Instantly. So for each of these steps, even though we're not going to cover them fully in this video guide, there will be links throughout the guide for each of these steps. So anytime you're stuck on anything here, we have a guide prepared for you that'll take you through it in just a couple of minutes.
+
+But this is like the general outline, what you need, you need your tech setup done right, you need your email accounts, then you need to find leads to target, then you need to write your copies, what you're going to actually send to these leads, and then you need to set up the outreach processing instantly so that those emails keep going out the way you want to and the way that they will land in the inbox as often as possible. So the first thing is tech setup. So I've assigned like a time slot, how long it should take.
+
+Obviously, if you're a beginner, it might take longer, if you're an advanced person, you might do it super fast. But basically, all the things you need are an Instantly account, a GoDaddy account, this is for the domains, Google Workspace account, so that's for the email accounts, then you need to create Google Workspace users, which are those email accounts, and then you need those accounts connected to Instantly and also enable warmup. So as you can see, all of these are hyperlinked.
+
+I will link this presentation down in the description as well. So you can just jump into it and click on whatever link you want, whatever thing you have a question with. And like I said, there will be guides for every step of this, so you'll get it done easily.
+
+And then that's the final thing, you need to set up SPF DKIM DMARC. So these are probably the most annoying for beginners. But again, we have guides that will walk you through step by step.
+
+And if you're using those big players like GoDaddy and Google, you will not run into any issues doing this. And yeah, all the rest is covered in our technical setup guide, which I'll link down below as well, if you want to look into the extra stuff there. But basically, once you've finished all of these links, you'll have your tech setup ready to go.
+
+Then as the next thing, you want to find and verify leads. Again, this should take around 30 minutes. And what you're going to do is get an Apollo account, which I've linked there, and then also get a million verifier account, which I've linked there.
+
+So Apollo is for lead finding and million verifier is for lead verifying, and you need both of these. So then you have to try to think what are the people or the companies who have gotten the most value out of your service so far, and who in those companies in charge of dealing with what you offer. So basically thinking like this, you'll come up with a niche or a segment that you want to target.
+
+So these could be like financial CEOs in the United States, or something like that. And then you can go and scrape them off of Apollo, ratify the million verifier, and then later import them into the instant account. And again, down below, we have a lead mining guide going through everything in detail, link below.
+
+So you can just click on the here and see basically the whole process will be walked along you just step by step, everything super clear. So the third thing is the copywriting. So this is the most like hands-on creative aspect of cold emailing.
+
+So you actually need to sit down, write some copy. That's good. That's going to convert people and avoid all this salesy jargon, those long emails that usually do not get any responses.
+
+So thankfully, again, we have a copywriting masterclass. It's a bit, I think it's over 50 pages of different strategies, different ways how to approach copywriting. So basically what you're going to do in this step is open up the copywriting masterclass and then write five completely different copies based on the strategies they show there.
+
+But those copies should be meant for the people that you chose in the previous step when you're refining your leads. So basically you want to have five completely different copies ready here. So you can test them out later in the next step if we're going to do the campaign setup.
+
+So finally, the campaign setup in instantly. Now that you have your text setup leads found and verified and copies ready, you just have to plug them all into instantly and start sending out emails. So like the hard part is now done.
+
+All you have to do is just put it all together and click on launch. So steps you're going to take are first create a campaign. Second, upload verified leads into your campaign.
+
+Third, setting up the email sequence. Fourth, adjust settings and launch. And now I'm going to quickly go over these steps visually as well so you know what to look for.
+
+So to create a campaign, at the first arrow, you want to go to the campaigns tab and then at the second arrow, you want to just click on add new. That will pop up like a name list. So basically, you just have to set a name for your campaign.
+
+It doesn't matter what it is. But if you later want to find it based on based on the name, so make sure you name it as you'd like. Then when your campaign is ready, you will be sent to the leads tab, where you can import the leads that you later later got from Apollo and verify the million verifier.
+
+So basically, you click import and then just select the file that has those leads and those will be interrupted here. And then one important thing here is that you have to make sure that all of these variables match the columns that were in your lead list. So let's say if there's a first name column and first names, we automatically detect them as well.
+
+But you want to make sure if it's not right that all these variables are right. So first name, last name, company name, address, all kinds of stuff are like fitting. That's because later if you want to put them into the copy, this is the way our system will like find them from your lead list.
+
+Then after importing leads, you go to the sequence tab. So this is pretty self-explanatory. But basically here you will just copy in all the copies that you made in previously.
+
+So the five ones. So you will copy in one here. And you now you have two choices.
+
+You either create separate campaigns and you put separate copies into every campaign. Or you can use our AZ testing feature, which isn't on this screenshot. But basically here, where I'm hovering my mouse at step one, you'll have like variation A, variation B, variation B.
+
+So you can test multiple different step ones with different copies right in one campaign. You don't have to do separate ones, but you can if you want to. So basically, make sure you insert all of your email copies, some things to keep in mind, keep them plain text.
+
+So when you're doing cold emailing, they really should be in plain text. That means that no links, no attachments, no nothing in them. They're just vanilla, nothing in them, just text.
+
+And yeah, once someone replies back, that's a good point where you can actually start replying with links and attachments and more info or stuff like that. But the first one should be just plain text. Then next to the sequence tab, you'll see the settings tab.
+
+There, you basically just want to set an appropriate sending schedule. So this is usually at the same time your leads are awake, your leads are doing work. So let's say if you're targeting Europeans, you want to make sure the schedule is on European business hours.
+
+Then in the campaign, you can choose which email accounts you want to use. You can use one of them, you can use all of them. It doesn't matter.
+
+It's up to your preference. I usually put all of the email accounts into the campaign. Then you want to choose if you want your sequence to stop if a reply is received.
+
+So this is usually recommended because even someone says, no thanks, please stop emailing me. This will stop the sequence. They won't get any more replies.
+
+And if they reply, yes, I'm interested, you anyway want to take it like over manually and you don't want this sequence to continue automatically. So I would recommend enabling that and then you just set the daily sending limit for the campaign. So how many this campaign will send in total.
+
+If you have five email accounts in a campaign, the number you set there will be split between those five emails. So let's say if a daily volume of 100 for the campaign and five email accounts, it will do 20 emails per email account. And then at the bottom, you just click launch and the campaign is launched.
+
+It will start sending based on the leads, based on the sequence, based on the settings you've chosen. And then what you just want to do is keep monitoring the results in the analytics tab and see how it's working. And then you just keep optimizing testing.
+
+You can basically just run this same thing over and over again, create new leads, find new leads, verify new leads, create some new copies, test them out, test different angles, try to push people straight for a call, try to just ask for information. So basically, once you have this system set up, you just test until you land on a winning combo. And then you will just start printing meetings for your company.
+
+And that's pretty much it. So it takes around two hours if you're fast with your fingers. And you'll have like the best kind of cold outreach system set up in just two hours minimal cost.
+
+It's a pretty no brainer. So yeah, if you like this video, make sure to subscribe. And that's it for now.
+
+Peace.

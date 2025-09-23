@@ -1,0 +1,69 @@
+In this video, I'm going to show you why your emails are going to spam so you can avoid this in the future. And I'll literally just hand you four strategies you can implement straight away to get your deliverability to 99%. So you can actually get the most out of your cold email strategy, land in the inbox with every email you send, book more calls for your business, and scale with cold email.
+
+These are the same strategies that helped one of our clients go from a very high bounce rate of around 25% to now just 2%. If you want to get results like that, watch through the end, take notes, and implement everything you learned in this video. So if you're newer to cold email or you just haven't been up to date with cold email trends, yes, they exist.
+
+Cold email actually changes pretty frequently. You'll need to be filled in with why your cold emails are landing in spam. Because if you don't know these things, you'll end up making the same mistakes over and over again.
+
+And your cold email campaigns won't be successful. You'll keep wondering why you aren't seeing results and the whole vicious cycle continues. What you need to know is what red flags in your metrics will look like, such as high bounce rate, low reply rate, or spammy language that you're including in your copy.
+
+Then you'll need to know how deliverability works. You've probably heard of DKIM, DMARC, all the DNS records that we will go over later in this video, I promise. And you'll need to be aware that spam filters exist and the words that you should be avoiding.
+
+Cold emails might also go to spam because of scripts reading too similar. So you should probably split test a couple of different emails and instead of just having one email for each sequence, have at least four. So now that you know what's actually causing your cold emails to go to spam, let me show you all the steps you can take to fix this.
+
+So first, let's look at email authentication. And yes, this is one of the most boring parts of this, but if you don't do it right, you can completely sabotage your cold email system. So please pay attention.
+
+Because in recent years, email platforms have started enforcing more verification things to fight scammers and spammers. Which means, if you don't have it set up properly with Google and Outlook, they're going to think that you're a spammer. So what you'll need to do is set up your SPF, your DKIM, and DMARC records.
+
+So this is our agency's workspace in Instantly. You can see all the email accounts that we have here and Instantly makes it really easy to check the health score of the accounts and if the DNS records are properly set up. So DNS records is essentially a way for you to let everyone else online know that your domains and emails are trustworthy and they belong to you.
+
+So if I click on here, test domain setup, it's going to tell me that everything looks good, which is great. And you can also click here to read a guide if you want. And if you don't have the email accounts, you're brand new to Instantly, you're brand new to cold email, and you want to set up email accounts, then I highly recommend to go and do it through the done for you email setup service.
+
+So if you click right here, you can go ahead and input your domain. So in my case, it's oneway.io. I click enter.
+
+And then it's going to recommend domains that are similar to your original domain. So I'm just going to go ahead, let's say select a couple of these, let's say four, it's only going to recommend.org.co.com. That's because these three have the highest reputation online and Instantly wants to ensure you have the highest deliverability possible.
+
+So then you can go ahead and click on next, then you add your forwarding domain. So in my case, it'll be oneway.io. You'll have the first and last name.
+
+And then when you place an order, Instantly is going to set up. And as you can see here, it takes instantly anywhere from 24 to 72 hours to set up all your DNS records. To take it another step.
+
+If you go into one of your campaigns and you go to sequences, click on preview, and then click on check deliverability score, Instantly is going to tell you if the email you wrote follows the right protocol and has all the DNS records set up correctly to make sure that your email is going to land in the primary inbox. So if you implement this setup and make sure your authentication is set up correctly, the chances of you landing in spam becomes extremely small. Now, something that actually goes hand in hand with email authentication is domain warmup.
+
+And if you don't do this one step, then your email and domain reputation is absolutely going to burn. And you can say goodbye to any chance of getting business with cold email. Something I see with tons of business owners, even in the comments of these videos is that they want to rush the warmup process and get started right away.
+
+And while that spirit is awesome, and I love the energy, that is just a way to fast track your sending emails death. So what you need to be doing is warming up your emails for 14 days at the minimum. This means sending emails back and forth with various different accounts.
+
+But this is absolutely not worth your time. So you'll want to use a tool for this. Something like Instantly has a feature where you can hook up your sending accounts and warm them up.
+
+It does everything for you. So all you need to do is set it up and let them do their thing. I highly recommend that you start with a small number of emails sent and then increasing them gradually.
+
+You can start off with around 5 emails sent per day and then get them warmed up all the way up to 30. So just by warming up your domains, you're going to have a huge leg up on the competition because your sending reputation is going to be infinitely higher and Google and Outlook will trust you. On the topic of domain warming and authentication setup, I have to mention that traditionally, these things take a long time to set up.
+
+And this is going to be a shameless plug, but instantly actually just dropped the done for you pre warmed up email account setup and the accounts are actually ready to send as soon as you buy them. So if you want to save tons of time and be able to start sending today, go check the link in the description. With that technical stuff out of the way, let's look at some of the tactical things you could do inside of your cold emails.
+
+And there are a few because like I mentioned earlier, if you're just sending the same email to everybody, you're going to be marked as spam. But it goes deeper than that. Because if you're going to be a If you also have a bunch of spam words in your email copy, your deliverability is going to tank.
+
+Words like free, guaranteed, act now, limited time offer, earn money, risk free, best price, click here, congratulations, no obligation. These words are a guaranteed one way ticket to spam land. Something you can do is personalize your emails a little bit more.
+
+And there are a lot of ways you can do this. But the easiest is just to use data from your lead list and put Spintax in your messages. So coming into instantly, you can easily add Spintax and check whether your copy has any spam words in it.
+
+So here's a sample copy that I have written. If I want to add Spintax into it, if I just click on AI tools and click on AI Spintax writer, Spintax helps us land in the primary inbox because it's rotating different variations of the email copy. So it doesn't look like you're sending the exact same templatized email across to everyone.
+
+But it's always good practice that even though AI did this in a couple of seconds, make sure you go through everything to make sure that it meets your standard. So if I click on preview. So hello, Dave, I was reviewing the job description for as your role that GEOH is hiring for the job post clearly states using some tools like outreach generally that indicates Yeah, so this to me looks good.
+
+If I needed to move a word around and just make sure you're removing it from you. So let's say I wasn't a fan of this word outdated manual sales process, I can delete this, delete this, boom, and now we should be good to go. But what if some of my copy has spam words in it, and I'm not aware, again, I click on AI tools, I click on AI spam words checker, and I found nothing, which is great.
+
+But I do want to show you if I wrote a really bad email what it would look like. So if I said something like good day, sir, we have a huge discounts 99% off this Friday, let's say something like act now before the price goes back up. There we go.
+
+So it found quite obvious the huge discount 99% off this Friday, you probably don't want to say something like this. But what's great is that it's not just telling you what the spam words are, it's giving you a better alternative if you still really want to communicate this message, right? So in here, it says if I just click on it, it's going to replace the copy that I have.
+
+So if I click on apply, and you can see this is now the updated copy. Now it's important to note, I probably don't recommend you even mentioning anything price related in your copy. This is just to prove a point that it's important to run your copy through the AI spam word checker.
+
+And I just wanted to show you how it looks like, because it's one thing to just identify it. It's another thing to also give you an alternative. So your copy lands in the primary inbox.
+
+And the fourth tip, this is going to be something really simple, but a lot of people just don't do for whatever reason is a simple text opt out. Simply let the reader know that if they don't want to receive your emails anymore, they can just say so and you'll stop sending them further messages. Something as simple as if you don't want to hear from me again, just reply to this email and tell me to go kick rocks.
+
+You'd be surprised by how well that works. I say this because when you send emails and there's no opt out, then email hosting services will market as spam and it's against GDPR. Because these are pretty much unsolicited emails you're sending and you do need to adhere to the policy.
+
+Now in this video, I talked about cold email setup and how to really nail everything for deliverability. But naturally, I didn't talk about some of the tactical bars of sending cold email, like building lists extremely well, writing copy and even using AI to do the heavy lifting. So click here to check out a video about what happens when you send half a million cold emails and what lessons were learned from that.
+
+Or if you feel like you could be doing a better job at keeping track of your leads and following up with them properly, click here to see how the Instantly CRM works and how you can use it to make more sales.

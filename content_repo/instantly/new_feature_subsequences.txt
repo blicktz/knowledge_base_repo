@@ -1,0 +1,41 @@
+Hi everyone, Rejo from Instantly here and I'm super excited to talk about this new feature we just launched called Subsequences. So Subsequences allow you to follow up with your leads automatically based on certain conditions and triggers and Subsequences will only become available once you've already launched the campaign and it will show up right here at the top. So the best way to understand how they work and how you can use them is to go through some examples.
+
+So let's set up a few Subsequences right away. So the first thing you want to do is click on Add New and name your Subsequence. So that can be whatever you want.
+
+Then you click on Next. And now you can choose based like what trigger you want to use for this Subsequence. So you have two options.
+
+The first one is to select a lead condition, let's say interested, meeting booked, whatever you want. And the second option is using text. So if a reply contains a certain phrase, a certain word, this Subsequence will be triggered.
+
+So let's say for the first example, let's choose if a lead is marked as interested and click on Create. So now I can set up a sequence and this sequence will be sent out to everyone from this campaign that have been marked as interested. So whatever you want to write to interested people, but let's say, hey, here's my meeting link and you link the meeting and you have your signature at the end.
+
+And as you can see here, leave empty to use parent campaign subject. So it will kind of be threaded together with the previous, the main sequence. So yeah, you can add steps, you can do whatever you want here, but basically it can be another full sequence here.
+
+Then you set the schedule. So by default, this is the same that you had for the parent campaign. And finally, before launching, you have the options again and all the other options like open tracking, delivery optimization, all that kind of stuff is inherited from the parent campaign.
+
+So this will have the exact same settings that the parent campaign has. And yeah, so once you're ready with your sequence, once you're ready with the schedule, you just click on launch and this sub sequence will go live. So now you'll be able to see it here, you'll see how many people have been sent this sub sequence and so on.
+
+So let's set up another example. Clicking on add new again, let's just call it my sub sequence two. And now let's say another use case for sub sequences is wrong person.
+
+So if someone is marked this wrong person, what you can do is ask for the right person, right? So again, click on create. And now in the sequence, you can just write like, Hey, and can you please let me know who the correct person in your company to talk about is?
+
+And then you say signature. So obviously, this is just an example. But basically, anytime you tag someone as wrong person, you can automatically ask for the right person.
+
+And then again, you can add follow ups, if they don't respond to the first one, then you can get the right contact. And then you can reach out to the right contact, which your main offer again. Other things are the same schedule options, all that kind of stuff.
+
+Click on launch, you can publish it. And there you have it. So now you kind of have two sub sequences based on two different triggers here.
+
+And let's do a final quick example as well. My sub sequence three, and based on text. So as you can see here, you can use multiple trigger phrases separated with a semicolon.
+
+So let's say, please tell me more. Tell me more. I need more information.
+
+So all that kind of stuff. Again, people asking for more information about your product about your service. So again, clicking on create.
+
+And now the sequence part again. So now here's where you can provide more info because you already know that these people responded to your main sequence, asking more info, asking for more details. So now here you can share more info about your details, go be more specific, and so on.
+
+And again, add steps, set the schedule, options, launch. And that's kind of it. That's pretty much it.
+
+So there's tons of use cases here. You can do this with if someone's out of office, you can follow up with them automatically in another sub sequence, and, and so on. So these can be put into place for every campaign you're running.
+
+And this will make the whole process so much easier because now all these sequences will be sent out right when you can give those triggers like assign lead status. The reply contains a text. So now everything will run much more smoother.
+
+You'll get more deals, more meetings, and yeah. So that's pretty much it. Hope you like this new feature and thanks for watching.

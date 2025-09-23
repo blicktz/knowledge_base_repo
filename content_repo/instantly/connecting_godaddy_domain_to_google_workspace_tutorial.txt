@@ -1,0 +1,61 @@
+Hi, in this video I'm going to show you how to connect GoDaddy domain to your Google Workspace. So let's get started. First, log in to your Google Workspace.
+
+Go to admin.google.com. Use your admin account to log in. And in the second tab, log in to your GoDaddy account.
+
+So copy the GoDaddy domain you want to connect to your Google Workspace. Go to domains section in Google Workspace. And we are going to add a new domain here.
+
+Click on add a domain. So paste the domain here and select secondary domain. Click add domain and start verification.
+
+Sign in to your GoDaddy account to verify this domain. Connect. Wait a few minutes here.
+
+Now that we've verified the ownership of the domain, we want to activate Gmail. So Google will set up the MX records. I'm going to pause the video here.
+
+Just so we... Because we need to wait 5 minutes. So now that we have MX records created, actually let's go and check it in GoDaddy domain DNS zone.
+
+Go to the DNS records of that domain. And check. So we have the MX records created.
+
+Google created two SPF records. We will have to keep just one. This is the default SPF record.
+
+And we are going to keep the value. But the host name is going to be just the add sign. So let's modify this.
+
+Alright, so we have the correct SPF record. This is an extra one. Let's delete the SPF record.
+
+Now if you get this message from GoDaddy, You can just edit the part here. Save it. And then delete it.
+
+And there you go. So it's important not to have more than one SPF record. Other than that, we need DKIM record.
+
+So let's get that done. Go back to Google workspace. In the search bar, type DKIM.
+
+Select the domain you want to create a record for. So let's just double check. We have the right domain.
+
+And click Generate New Record. Now we will have to copy this from Google and paste it into GoDaddy DNSO. So we have a TXT record here.
+
+This is the host name and this is the value. So copy the host name. Click on Add New Record.
+
+Click on Add New Record. The type is TXT. And paste the value.
+
+And click Save. So that's it. Now we have to wait a few minutes for the record to propagate.
+
+And then we need to click on Start Authentication. I'm going to pause the video here and come back in 10 minutes to start authentication for this domain. Now that we have the authentication started, there's only one more DNS record you need to create.
+
+And that's DMARC. And we are going to use an easy DMARC tool to generate the DMARC record. Just go to the platform and click on Record Generator.
+
+So here you want to enter the domain. Then the policy you can keep None. Then here you want to enter the email address.
+
+I still don't have this one created, but I'm going to create it and the reports are going to be sent to this email address. Subdomain policy None. These will be relaxed.
+
+And we are going to get the reports if the DKIM or SPF fail. So these reports are just for troubleshooting. If you want to check, it's not really important what you enter here.
+
+It's important that you have the DMARC record created in your DNS zone. So click on Generate. You can disregard the warning here.
+
+So we need to publish this record. This is the value. So click on Add New Record.
+
+The type is dxt. The name is underscore DMARC. And just paste the value here.
+
+And click Save. So now we have all the records created. We have MX, SPF, DKIM and DMARC.
+
+And the domain is now ready to be used instantly. And you can create email addresses, email accounts with this domain. And if you want to ahi.
+
+And you can select list, click. And native to PCEP. For more information, visit the website.
+
+Oppereine

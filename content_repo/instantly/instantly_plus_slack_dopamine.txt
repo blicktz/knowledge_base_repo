@@ -1,0 +1,27 @@
+Hi everyone. So I wanted to create this quick video to show you guys how you can set up Slack integration in Instantly so that you get notifications in your Slack channel every time a lead is marked as a certain status. So as you see on this screenshot, we have a Slack channel called Instantly Interested Leads.
+
+And every time someone marks a lead as interested in Unibox, we get a notification in the Slack channel. So we mostly use this internally as like a motivational tool. So we constantly see that people are interested in our service.
+
+But basically, you can set this up for yourself or for your clients. So for example, if you're running like a lead generation agency, you can set up Slack channels with your clients. And every time you mark a lead as either like interested, closed, meeting, booked or whatever, you can choose that yourself.
+
+I'll show you later. Then your clients will get notifications around that. So that can be again used to show your clients that things are moving.
+
+There's interested people coming in. There's meetings being booked and basically like be on top of everything. And this can be also used as with like a sales team so that your salespeople will see when like interested leads are coming in.
+
+If replies are coming in and they can hop into the Unibox, hop into the mailboxes and like reply as fast as possible. So now let's go through how you can set this up. So we're going to go into instantly.
+
+And as I mentioned, like in the Unibox on top here, you can basically choose different lead statuses. So there's like interested meeting booked meeting complete, not closed, closed and all that kind of stuff. So you can create those slack notifications around all of these.
+
+And that's up to your personal preference. So the way you set this up is you go to settings, then you go to integrations and then here and slack. You want to click on add new.
+
+And then here before filling any of this information in, what you want to do is click on the create a slack webhook link here, which will take you to this page. And basically here you just log into slack and click the add to slack button, which will take you to this page. And here you'll be able to choose the channel that you want to use it to get those notifications.
+
+So just for demo purposes, I've chosen my own DMS here. But basically, you can like choose any channel you want and you select it here and then you click on add incoming webhooks integration. And that will take you to this page.
+
+So here what you want to do as a first thing is copy this webhook URL. So you're going to need that later instantly. But just to quickly go over this side as well.
+
+This really isn't that important. But in the bottom here you have like a descriptive label, customized name and customized icon. So basically here you can customize the name, the username that will send those notifications.
+
+You can call that whatever you want. But basically, like instantly bought could work. And then also like a custom icon.
+
+so basically you can put like your own logo here or instantly's logo here it doesn't really matter but you can play around with this then you just hit save settings and then that's it so yeah once again make sure you've copied this url and then we're gonna switch back to instantly and then what you want to do is paste this url into the first first box here and then moving down you have to select the campaign you want to send the notifications from so usually you want to get you want to choose like all campaigns um but yeah if you have like any specific campaigns or like you want notifications for a specific campaign you can just select it from here but yeah for now we'll choose all campaigns because we want to get notifications about replies from all of the campaigns and then moving to the event type as i showed you previously all the lead statuses um are here so again you can choose uh whichever one you want notifications for uh the ones that we most often use our lead is marked as interested um then reply received and then also uh meeting booked so these are like the main ones that we use but you can use whatever you want and then basically you just select one of those and hit add slack webhook and uh then it says webhook added successfully and then that's it and now you'll start receiving notifications in your slack channel and you can stay on top of um on top of all the replies and uh interested leads that are coming in and as a final thing basically if you're not using slack if you're using any other tool you can set up this same exact thing uh through zapier or through our custom api and uh basically receive those notifications in any other chat platform that you're using and uh yeah so that's pretty much it thanks for watching see you

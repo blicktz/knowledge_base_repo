@@ -1,0 +1,81 @@
+So now let's go over troubleshooting, testing and optimizing your email campaigns. So now that you have everything set up properly and emails are actually going out and you're monitoring your results daily, let's go through everything you can keep in mind and what you can do to make your results even better. So the first thing we can cover is common deliverability problems.
+
+So the most common deliverability problems usually come from sending out too many email accounts too fast per account. So imagine like from the email bots and servers looking at the email sending stats, there's a new account that was created and it just starts spamming right away from day one. That's super sketchy, right?
+
+And that's a surefire way to get stuck in spam. So the first thing to always repeat to people is every time you're facing problems, try sending out less emails. It's better to send out five emails that land in the inbox rather than sending like a hundred that all go into spam.
+
+So here we cover some common deliverability problems and how to fix them. So the first thing you might encounter is open rates are slightly low. So they're not like super low, but they're not great either.
+
+So they're like 30 to 50%. So this usually refers to a problem with your target audience and or subject line. So having your operates in this area probably isn't an issue with being stuck in spam because they're still kind of being open.
+
+So what you should do is try different demographics, different targeting, try going for people from smaller markets that are more likely to respond and open your emails. And on top of that, you can test different subject lines and also having custom personalizations in your emails. So basically if they see the subject line and then they also see like the snippet of your email beginning, so that's super important to have those as good as possible.
+
+So yeah, some of the best performing subject lines are with the quick question thing. So first name, quick question, just quick question, question about company names. You can test these all out.
+
+But basically what we've seen so far is this quick question, first name, subject line always performs the best. And there's really no reason to like overthink it. If we've seen what works, let's do it until it does not work anymore.
+
+So yeah, we've tested a bunch of different ones and always like still funnily enough, the quick question ones that basically everyone is using is already performing the best. So next you might encounter that your open rates are very low. So that's usually like less than 30%.
+
+And now this usually means there's a problem with deliverability. So meaning that your domains accounts are either blacklisted or stuck in people's promotions folder where they never get seen or opened. And as I said in the previous section, the best fix for this is to completely pause the cold outreach.
+
+You don't want to send out emails if they're being stuck in spam. So stop all cold outreach and just let warm up run. But usually what we recommend to people is already if you're facing this, you should be creating a few more domains and sending accounts as a backup.
+
+Because yeah, if it happens that you can't save those domains, you might want to swap them off with new ones and just get rid of the get rid of the ones that were getting really bad results. And yeah, after after weeks pause by just letting warm up run, you can restart the campaigns again slowly from scratch and see if that made any difference. And yeah, if that doesn't help, you can try giving the warm up system even longer time.
+
+So let's say two, three weeks and then trying again. But yeah, a good thing is to always create backup domains that you can swap to if you encounter any of these problems. The next thing you may encounter is open rates are good, but reply rate is bad.
+
+So this now usually indicates a problem with your copy offer and or targeting. And it's pretty much a sign that your deliverability is good. It's just that the copy is not resonating and people just don't care about what you're sending to them.
+
+So now refer back to the copywriting and lead mining sections that we already covered. There's different copies, there's different lead sources, different job titles, countries, company sizes, so on. And yeah, another thing you might consider is that people are looking at your website and they don't like what they see.
+
+And that's why they don't respond. So they open your emails, but they'll just see that you're you're not like winning their trust. So that's one thing you can think about as well.
+
+Check out your landing pages, see if it's as good as they can be. And another thing you may face is open rates are good, reply rates are good, but all of those replies are negative. There's just people saying that don't email me anymore.
+
+So this is really similar to the previous problem. And most likely indicates again an issue with your offer not being attractive enough for the people you're sending them to. So again, one thing you can try is moving towards a softer call to action.
+
+So instead of pushing for a meeting right in the first email, you can just ask for interest, basically try to get any kind of positive reply and take it from there. And yeah, we basically seen that it's so much easier to land meetings if you do a few back and forth emails before and just don't straight hop into like booking a meeting. So now let's quickly cover some other delivery problems as well.
+
+The most common thing we see also is email accounts not set up properly. All the text set up is just done wrong. Then bad subject lines.
+
+Again, there's no need to like reinvent the wheel really just use subject lines that have already been proven to work. Then another problem is email accounts not warmed up enough or not using warm up at all. So basically you want to warm up your accounts for at least two weeks and also just keep warm up on at all times.
+
+Never turn it off. Then a common problem is email accounts sending too many emails. So that's like a volume problem.
+
+Do not send over 50 emails per day per email account. And you can also just to be safer send lower than that. It doesn't mean that you have to send 50 emails per day.
+
+Then another thing is using spam words. So I'll link it in the description as well. There's a list of words you basically want to avoid.
+
+These are with like sales words urgency. Basically, if you look at the typical like scam email, everything they say in there, you want to avoid like sounding similar. Then non personalized emails.
+
+So sending out just the obvious same copy to everyone, not making it relevant to the target you're sending. So again, these emails are super likely to not get any responses. Then unverified lead list.
+
+So that's what we covered in the lead mining part. You really want to make sure that your email lists are verified. And yeah, so you minimize balances.
+
+That's super important. Then these using images and using links is pretty much the same thing. One thing that hurts your deliverability is adding too many attachments into the emails.
+
+So what we suggest is just sending plain text emails. Do not add any images, any links, any attachments. And yeah, after you get a response, you can add links, images and stuff.
+
+That's fine. So that's the first point of contact. It's the best way of increasing your deliverability is basically just removing everything.
+
+Then people not using a custom tracking domain. So as I said in the custom tracking domain part, if you use a public one, so basically, if you don't set up your own, you will be assigned a public one and that will hurt your domains by a lot. So you don't want to do that.
+
+Then blacklists. So if your domain is put into a blacklist, you will get lower deliverability. So usually being in like one to two blacklists isn't that bad.
+
+But if you're like in a lot of them, that's definitely a cause for concern. And what we've seen is that it's really not worth it to try to get yourself out of blacklists. It's more simple to just create new email accounts because you actually have to send emails to these blacklist companies and try to convince them to remove you from those.
+
+So yeah. And you can check if you're in any blacklist from third party services like MX Toolbox. I'll link it in the description as well.
+
+So you can check it out. Then another problem is sending to a generic email. So let's say instead of sending to name at company.com, you're sending to info at company.com.
+
+So usually people are just deleting all kinds of offers from those and only talking to their existing clients or people looking for more information. Another thing is sending at the wrong times. So make sure that your emails are going out in the work hours of these people that you're targeting.
+
+So if you're sending to US people, you want to make sure that your emails are going out during the US working hours, not at some random midnight times. So if you're not going to see what will happen, it will just get buried in the inbox by all other emails and they're more or less likely to be seen. So another thing is reputation of email service providers, IPs.
+
+So again, another reason to use the big players, they automatically take care of the sending service IP reputation. So if you have your own custom solutions, it's always difficult to keep your IPs reputation as high as possible. So if you go with the big players, you completely avoid this problem.
+
+So another thing is pixel disabled by certain email clients. So some email clients, especially like iPhones, MailApp, they have privacy settings that don't allow you to load tracking pixels. So basically you won't ever see if someone opens an email.
+
+And this is an industry wide problem. And I think this will only get worse as other companies will follow suit and do the same. So, and last thing, your email domain is not pointing to an actual website.
+
+So basically you want to make sure that you have redirect to your main website. As we talked about in the domain forwarding part, you just set up simple forwarding and that's it. So next we will cover testing deliverability issues.OFFPedچ Consumer involve

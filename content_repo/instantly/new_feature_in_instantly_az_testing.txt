@@ -1,0 +1,23 @@
+Hi everyone. So we just had another big update to instantly, which is the AZ testing feature. And in this video, I want to walk you through what changed and how you can use this new feature to make your email campaigns better.
+
+So once you're logged into instantly, you need to navigate to the sequence tab and here you'll find a new feature. So if you remember previously, we just had steps here. So you could create step one, step two, so on, which would be like a follow up email to your first step.
+
+But additionally, what you can do now with this new feature is test different variations of each step. And the reason we don't call this just AB testing, but AZ testing is because you can add as many variants as you want all the way to Z. So like basically you can just go really into testing different things here.
+
+And just as an example, what you can test here is for example, different subject lines. So if you look at the AB variants here in the first one, I have first name included in the second one, I don't, but the email copy is the exact same. So basically here you can see if greeting people based on the names works better compared to not including their name and so on.
+
+So you can make changes to the subject line and also to the email body. So you can basically test out everything you want. And yeah, the same goes for additional steps.
+
+So you can add multiple variants into step two as well. And yeah, so one thing to note here is if you want emails to be threaded, do not change the subject line for those steps. So as you can see here, it says previous email subject as the subject line.
+
+So basically, yeah, just leave this field empty and enter the email copy if you want it to be threaded. If you change the subject line as well, it will break the thread. So that's one thing to keep in mind here.
+
+And yeah, so basically, you can test whatever you want here, how many steps you have doesn't matter, you can add variants all the way up to Z. And so once you've have launched the campaign, what you can do in the analytics tab is all the way down, you can see analytics based on the variations. So basically, you can see how your different variations did.
+
+And here, with this toggle, you can just turn them on and off. So if you notice, like, okay, let's say for step one, the variant B is performing worse than all the others, I can just disable it from here, and it will stop sending out this variant. So you can do the same thing in the sequence itself.
+
+So as you can see, now I pause the right B, it shows as post. And here for every step, you have to toggle again. So yeah, anytime you wish to pause a variation, just disable it from the toggle here.
+
+And yeah, you can also delete, delete the variations if you would like. And yeah, that's pretty much it, the general overview of the of the new feature. So basically, you can just test out everything you want in a single campaign.
+
+And yeah, make make changes based on the results, you can see what performs best, what performs the worst. And yeah, this way, you can move towards like the most optimized campaign that you can have for your mission for your targets. Thanks for watching.

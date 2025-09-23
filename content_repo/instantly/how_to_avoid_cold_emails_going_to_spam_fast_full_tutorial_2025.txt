@@ -1,0 +1,81 @@
+One of the most underrated but most important parts of cold email is having good deliverability. Because if your emails are bouncing or landing up in spam or your deliverability sucks, you're never going to be able to actually have success with cold email. So in this video, I'm going to show you exactly how to make sure that your emails land in the inbox, as well as show you exactly how you can figure out what the problem is with your cold emails so that you can make sure that it lands in the inbox.
+
+Let's get into it. So what most people do when they run their email campaigns is they'll send the emails and they'll hope that it's landing in an inbox with little to no data. And when they sense that maybe the emails aren't landing in spam, maybe their reply rates are really low or their open rate isn't as high.
+
+What they'll end up doing is they'll end up thinking, oh my gosh, I got to go buy more domains. I got to go buy more websites and I got to go try this thing again and make sure that it actually works. The problem with this is that you are completely blind to what's actually working and what's not working when it comes to your email deliverability.
+
+And you don't have any insight or data to know exactly if this is successful or if this is not successful. And you don't know why it's successful or why it's not successful. So with Instantly's new inbox placement feature, what we're able to do is we're not only able to tell before we actually launch a campaign, whether this will land in the inbox or not, but we'll also be able to set up automations to know that if the campaign that we've launched and that we're currently running is in fact landing in the inbox.
+
+What this allows us to do is this allows us to constantly make sure that we're landing in the inbox of customers. And what that does is make sure that we're going to increase the likelihood of them opening the email, responding to the email, getting more leads and ultimately closing more deals for us. So there's really three different ways that we can use the inbox placement feature, which I'm going to show you right now.
+
+We can simply go to instantly.ai and let's just say I'm going to create a new campaign and I just created a campaign called the Instantly placement feature video, obviously. And what we can do is we can create a series of sequences. So I already typed out a sequence based off of our offer.
+
+And I'm like, okay, cool. This is great. This is copy that I would potentially use.
+
+Perfect. So one thing to note before we launch these campaigns is we want to go to our email accounts. We want to select the emails that we're sending from, and we want to go to our settings and we want to make sure that the daily inbox placement tests have a maximum test limits per day of 10 per day.
+
+This leaves plenty of room for other emails to be sent. So really important that we check that and make sure that it's at 10 before we launch the test. So if your campaign limit is 30 emails a day from this specific account, and you've already hit that campaign limit, then this won't test until it actually resets.
+
+Now what I can do before I even start this campaign is I can test to see if this is actually going to land inside of the inbox from the emails that I'm sending from, as well as based off of the copy. So what we're going to do is we're going to head over to the left, we're going to click on inbox placement. And then what I'm going to do is I'm going to go ahead and click on add new, and I'm going to say, this is inbox placement test.
+
+I'm going to do a send a single test email for analysis, just basically test my opener, it's going to be quick, and I'm going to get immediate results. And we're going to see if this works. And then I'm gonna do option one from instantly because I created the campaign inside of instantly, I'm gonna continue, I'm gonna select North America and Europe, assuming that's who I'm going to send it from, I'm going to check the spam filters, spam assassin spam filter, and then the Microsoft spam filter, I'm going to click on continue accounts to use, I'm gonna select the accounts that I'm going to be sending from.
+
+So let's just go ahead and select a couple here. And then I'm gonna select the campaign, which is the one that we just created. And I'm gonna go ahead and select the sequence step that I want to test.
+
+What you can also do is you can write a new copy if you wanted to. But in this case, we're going to do the inbox placement feature, because we're going to be testing everything, it will basically show the email copy, which is great. And then delivery mode will be one by one, and I'm gonna go ahead and click on launch the test.
+
+And what will happen is it will show up a test like this. So I'm going to do is I'm going to jump down to content insights as the other ones load and we'll get back to the deliverability insights here in a second. But off the bat, what it tells me is the content insights.
+
+So basically analyzes my copy, right? So links and images, no links or images found, which is good for deliverability. Overall email score says room for growth.
+
+Why? I can see spam filters, triggers found. So added 50k per month without increasing his workload.
+
+So this could be perceived as a financial promise, which is often flagged as spam filters. Cool, I'm gonna go back to my campaign and update. Personalization score, high potential for improvement.
+
+This email lacks personalization. Perfect. Maybe I could should add some personalization in there.
+
+Subject line score. I need to make it specific to the role or company. So consider adding in the company name.
+
+Structure improvement, use plain text or standard HTML format. Perfect. That's good.
+
+A content quality score, room for growth. Language is natural, but lacks a conversational tone. Good to know.
+
+Value prop is unclear and could be more compelling. Use a more conversational tone. I'd love to hear your thoughts on this.
+
+Perfect. And a call to action score is present, but it lacks urgency and specificity. So now what this basically told me is this told me insights on my content, whether it's good content or the copy could use some and it gave me exactly what I needed to update, which I should go back and update before I actually launch this campaign.
+
+So let's just say this is now ready to rock and all of the insights have been added. So what it's going to show us up top is the deliverability insights. So what this shows us is the percentages of emails that ended up in the inbox.
+
+So right here, a hundred percent, only 11% into the recipient of Microsoft and a hundred percent inside of Google. Great. And if I scroll down to the spam filter score, what we want to look at right here is we want to look at our spam filter score.
+
+So the lower, the better. So if you have anything that's like a five, that means that your emails are ending up in spam, which is no bueno. And it means that we need to fix a lot of things.
+
+And then if we open this up, then we'll be able to see everything's good to go. All of the validity of why it is ending up in the actual inbox. Then if we scroll down to email placement, this will allow us to see the deliverability per account that we've actually selected to send from.
+
+So as we can see, all these are green, all these are good delivered to the inbox. So there's no issues with the sending accounts that we'll be sending from except for one of them. So this really gives us the data to make informed decisions, not only on our copy, but the accounts that we're using, the emails that we have, the domains that we have, which allows us to make decisions whether or not we should be using the accounts and what we actually need to update to make sure that we're actually landing in the inbox filter.
+
+So now what I'm gonna do is I'm gonna show you how to automate this whole process to make sure that your emails consistently land in the inbox. And it's not just a one-time thing as well, set up an automation to make sure that you're aware of if there's any issues with any of your sending accounts. So what we're gonna do is we're going to inbox placement, click add new, we're gonna do another test, inbox placement test to automatic.
+
+And we're gonna go ahead and click on continue. We're gonna click on automated, not one time. So automated, we're gonna set up a recurring email test and we're gonna track performance over time.
+
+And this is gonna be great for ongoing campaigns as specified. Perfect. So we're gonna select those again.
+
+We're gonna select a few accounts. Why not? And then we're gonna select the account to use.
+
+So now what we're going to be able to do is we're going to be able to run the test automatically. I can say, okay, every Monday at 9am Pacific time, I want this to run. For delivery mode, we're going to choose one by one just because it is a safer bet than doing it all at once.
+
+As we can see here, all at once decisions, emails all at once with a delay of a few seconds between each meal, we want to be safe, then sorry. And then what I can do is I can add an automation, let's just say the inbox placement goes below 80%. Then what we're going to do is we're going to pause the campaign emails for 14 days.
+
+What we can also do is we can set up like a Zapier automation so that every time that happens, we can send a web hook to an automation to send us a notification through Slack, which would be pretty killer insight to have, we can have it pause the account, we can have it add or remove tags. Then once I go ahead and launch test, then I know this is going to be launched automatically and it's going to be active and we're going to be rocking and rolling. So once we launched the campaign for the automatic, now what's going to happen is this going to run every single week, we can see every single Monday, exactly how many people opened it, we can see the deliverability insights on our campaign, and we can be able to make informed decisions on how we want to move forward with this based off of the test and to make sure that we're getting the proper insights that give us the proper insights to make decisions based off of the campaign based off of the accounts, all that good stuff.
+
+So we have the one off that we can launch before we launch the campaign, we have the automatic once the campaign is live, and we want to make sure that we're refining it and actually leaning in the inbox. Now what we can also do is we can set up one for campaigns outside of instantly. So let's just say you're not using a tool like instantly, what we can do is we can click add new, we can do inbox placement outside test, and we can go ahead and click on continue, we're going to do one time for this, and we're going to click on option two, which is run the test from outside of instantly.
+
+So we're going to run the test by sending emails to test inboxes, I'm just going to click North America, that's fine. And what we're going to do is we're going to insert this code anywhere into our email. So if I just copy this, what you can do is you can write your email copy.
+
+And then what we're going to do is we're going to go ahead and copy these emails, and we're going to send our email campaign to this list of emails. And then once we launch the test, what we'll be able to see is we'll be able to see the inbox percentage. So we can see 100%, which is great, we can see the spam filter score, which is zero, which is exactly what we want it to be.
+
+And we can see our content insights, of course, which they're probably not gonna be that great. Blacklist reports and email placement showing that everything was delivered inside of the inbox, which is a great sign. So everything in this video was about deliverability and checking your copy to make sure that it all looks good.
+
+But there's a lot more that goes into making a killer campaign so that you can actually get results from cold email. So in the next video, we show you exactly how to create a perfect campaign and take you behind the scenes of an actual campaign that we ran to get 113 sales calls in just 30 days. So check out that video and copy that exact same strategy yourself so you can get similar results.
+
+Thanks so much for watching. We'll see you on that one.

@@ -1,0 +1,127 @@
+Today I'm going to show you step-by-step on how to use various large language models, including DeepSeq V3, Grok 3 Mini, and GPT 4.1 Mini, integrate it with an open-source web crawler and extract usable data from any website. For example, if you run any business, lead generation is something that you'll just always need to be doing if you want to grow. And with how fast AI is innovating, it's important to know which AI model to use, how to effectively web scrape using large language models, integrate it with a proxy to protect yourself from getting blocked, and do it as efficiently and as cheaply as possible.
+
+With the world of AI as it is right now, it's important to stay keen on the latest when it comes to which model to use and how much they cost. By the end of this video, you're going to have a system that not only reliably and consistently scrapes data from any website, but you can do it as cheaply as possible. So I'm going to get you set up.
+
+Basically from here, you'll just need to have an integrated development environment, also known as an IDE. There are two popular ones that come to mind. In this case, we're going to use Kerser.
+
+So you'll just need to go to Kerser.com and get yourself familiar with it. Go ahead and download it on whichever platform that you're using, whether it's a macOS or Windows or Linux. You're going to want to navigate to Crawl4AI, which is the open-source crawler that we're going to be using today.
+
+This is one of the top crawlers that I've found to be great. There's a number of them out there like Firecrawl, which obviously is also making waves when it comes to that. But it's really important to know even how web scraping even works.
+
+What you're looking at here is a rendered website where it looks beautiful and you can easily read it. But when it comes to computers and HTML, CSS, JavaScript, if you right-click and go to inspect, it basically will just read everything right here and then take the data and then obviously feed it right back to you because that's what this sees. And so it's important to know when you do scrape data, you're actually extracting what you see right here on the front end.
+
+And then this is where we're actually going to use large language models in order to interpret that data and then make a good, either markdown file, JSON, or CSV file where you can upload a list into something like Instantly for lead generation. If you just navigate over to their GitHub repo, Uncle Code is the guy that has made this. And so basically if you go to this repo here, you'll just need to go into Cursor and then simply ask the agent in order to get this going, just say clone this repo and then paste the URL there.
+
+Now there's two ways that I recommend to do this as far as importing or cloning crawl for AI. You can set up a virtual environment, which is effective to do that. Basically that isolates the environment, so that way dependencies or anything that is outside your system, it's going to be isolated for you.
+
+So that way when you're testing things or installing libraries, you're not going to run any problems across your system. The other way too, which I like to do most of the time is just use Docker. Basically Docker is almost like a container.
+
+It's a boxed package software. So if you think like a shoe box, you have just all these codes and dependencies that are in this neat tight container that is not going to affect the environment that it's in. Therefore you just keep it contained and if you need to delete it or anything like that, when it comes to testing, everything else is going to be safe and sound and not have to worry about anything.
+
+Next thing you're going to want to do is set up DeepSeq. And in this test we're doing DeepSeq v3. We're also testing XAI Grok 3 mini, which is a reasoning model that's extremely cost effective.
+
+And then good old OpenAI in order to test their newest model, which is as of today, GPT 4.1 mini. And so we have run several tests that way you can get the best analysis and compare results. That way you can make the best decision for which large language model you want to use.
+
+Now in past, DeepSeq obviously has really created waves when it comes to costs on scraping tons of data or just running through large amounts of tokens. There has been concerns obviously with the fact that they're based out of China and things like that. So there's a number of different vendors being open source where you can actually host that.
+
+And so that's definitely an option as well. For the purpose of this, we're just going to run through some natural integrations here with their actual cloud service. And then so that way you can see right from the core how much that costs and everything like that.
+
+Then we have XAI. We're just going to want to go to console.x.ai and then you're just going to go to API keys, set up your API key, and that way you'll have an API key from there, which we'll get into in a second. Backtracking over to DeepSeq, you just want to do the same thing.
+
+You go to their API platform and then you just go to API keys and then get yourself an API key. Don't worry, this key won't work by the time this video is uploaded. So all good there.
+
+You're going to go to OpenAI as well. Just hit log in, go to their API platform, and then you're going to see all the information you'll need. You just hit settings and then just create your API keys from there.
+
+Basically you are set and then you'll have your API keys. Now the next thing you're going to want to do, which in my opinion is extremely important because when it comes to data scraping, if you're doing a lot of data scraping, sometimes you're going to get blocked. There's going to be bot protections.
+
+When you're scraping websites, depending on what site you're doing, you're going to want to do a proxy server. Well in this case, you want to rotate proxies so you're protecting your IP address. So that way when you ping those servers, it's going to be the actual rotational proxy and protect you from there.
+
+That way on your host machine, you're not going to be blocked from that website. You're not going to be affected in that regard. Having a good proxy server, which there are tons of them out there.
+
+My preference is Evomi. And then another one that I use as well as Bright Data. I found these both to be pretty consistent and always working.
+
+The thing about large language models that you'll just want to consider not only is cost, but also the context window. Because depending on how much you're trying to scrape, a context window is essentially kind of the working memory. With DeepSeek, it's only 64k tokens.
+
+And it's basically a working memory of the model to be able to remember what the heck you're talking about. So think of it like if I just gave you a ton of information, I just started just throwing things at you like the book of this, the Bible, and all these things. You know, that's going to be a lot of tokens or a lot of information.
+
+And you're probably not going to remember the first thing that I told you. Therefore, the context window is only so large. With DeepSeek, it's 64k currently.
+
+And these things are always coming out. So by this video, or when you watch this, it could be probably double or triple. But Grok 3 Mini, in my opinion, is one of my favorite.
+
+Because with this, it's a very good reasoning model. It's also more than double of the context window here. And then you, of course, have GPT 4.1, which again is also basically double what DeepSeek V3 is.
+
+So there are a number of benefits or pros and cons to using which particular model you want to use. It's not always about cost, but obviously having the best model for the use case. Then of course, there is always the cost.
+
+When it comes to models, there's input and output. They usually rate these by tokens per million. And so what you want to do is always look at the documents here.
+
+And when you look at the documents, just go into here. And just as an example, we have Grok 3 Mini. And you can see right here, input is 30 cents, outputs 50 cents per million.
+
+Generally speaking, tokens vary. It's usually somewhere in the range of 1.5 words. There's a number of different tokenizers as well.
+
+OpenAI has a really good one where if you really want to get into the weeds of how many tokens something is, then I would definitely recommend using a tokenizer within that particular vendor. So that way you can better understand how many tokens am I using and how can I narrow this down or make it more efficient. So diving into the model prices and context windows.
+
+This is actually a really good reference site right here. So I recommend you guys book that or bookmark it. This is a JSON huge document.
+
+What I like to do is just tell Kerser to ingest this. That way I know what the cost is, context window, all that stuff. So that way you have all the information you need as of late.
+
+And I just bookmark this so that way it's always there. From there, we are going to go into the comparison. And you'll see here Grok 3 Mini GPT 4.1 Deep Seek.
+
+Now I mentioned Grok 3 Mini is a reasoning model, which you could see. GPT 4.1 is general purpose. And the Deep Seek also we use the base chat model.
+
+Now, as I mentioned before, when you scrape a website, if I go to inspect, and a lot of times a lot of this stuff is not going to be very relevant to you. Like there's going to be iframes, there's going to be div classes, there's going to be images. Sometimes that's not needed, things like that.
+
+For your use case, especially in lead generation, you want to find what it is, maybe what service they offer when you're scraping, like their value proposition, and of course leads, right? They have email address, or an owner, or the founders. This is going to be the information that is going to be most important to you.
+
+And so this is where AI is going to be able to actually crawl the website. And you can see right here, this is actually cursor.com, which I wanted to just run as a test. You can see this is a markdown.
+
+So when you see these hashes, this is a markdown file, which is really, really good for feeding into another large language model. So it can understand. And then of course, we can read it a little bit better, right?
+
+When you run a scraper, there's usually three outputs that I like to do. Markdown file, so that way if I feed it into another large language model, it's going to know exactly what I'm feeding it. JSON, which is structured.
+
+And then of course, the CSV, so you can further define the workflow, work it into something like clay or instantly.ai to further enrich the information. When you do actually put crawl4ai into here, you're going to want to set your variables. You're going to want to put your API keys in here.
+
+And then just like I mentioned before earlier, just set the environment variables there. Definitely make sure you protect your tokens so that way it doesn't get into the wrong hands. I definitely recommend also looking at README files when you go into the actual repo.
+
+It's important to just get yourself familiar with it. There's usually a lot of updates. For me, what I like to do is to go here, custom, and then do releases.
+
+So that way I'm notified of any releases that I may be interested in from there. For the purpose of this use case, I want to make sure there was some good information that you guys could take from there. So I ran a number of different scrapes.
+
+So we did cursor. You can see that we have a number of different things here. And then there was also the CSV, which you could see I could just export this or it is a CSV, but upload that.
+
+In your case, all you need to do is to be able to identify your ICP and then go into your web scraper and just say, Hey, scrape TechCrunch or scrape Crunch Brace or whatever website that you want to do. It will scrape the website. I'll put the file into there for further workflow, such as instantly or something like that.
+
+As I mentioned before, when it comes to proxies, just make sure that you have your proxy set up, make sure you set it as rotational. So that way it's always rotating an IP. So that way you're not going to be blocked and then you'll just want to make it sure it's active and you're not capped out.
+
+All right. So now we have our scraper all set up and ready to go. We got to actually put it to real use, right?
+
+So we can generate some opportunities. So for this video, I have generated real estate leads because this is actually the one of the highest success rates, as far as scraping is concerned, to actually get names, email addresses, all that stuff. Depending on your niche and your vertical, you may have to do some more creative ways in order to obtain information.
+
+Google Maps is also a really good resource in order to obtain business information with email addresses tied to that. Now in here, what we've done is I've already generated a list, basically said, I need you to go out and do some real estate scraping of public information. It's also got their names, their email addresses, their phone numbers.
+
+So if you want to do some cold calling, as well as I told it to generate a personalized line. So based about their company or their practice, you know, anything like that. And so this could actually be uploaded to a merge tag into Insulink.
+
+So that way you can just immediately personalize without needing to do any extra steps here. So you can see right here, this list of contacts here, we have all the information and then we have, I came across your real estate profile and noticed your luxury home expertise, anything like that. So we're going to go ahead, open this.
+
+You can see these beautiful personalized lines here. These are all personalized lines where the Crawl4ai scraper actually went out to their website, obtained the information, including their name and their email, as well as generated a personalized line because we're using DeepSeq and Grok3 in order to leverage the information that is scraped. Once we have our list of scraped information, we're going to go ahead and upload this to Instantly.
+
+We're going to name our campaign, real estate agents, scrape. We're going to hit continue. We're going to hit add leads and then we're going to upload a CSV.
+
+We're going to click to upload and this file right here. And you can see that it's pre-populated, the first name, last name, email address, phone. We can go ahead and import that as well if we want to.
+
+But all the information has been good to go. And then we'll just have our personalized first line. We're going to go personalization.
+
+So we're going to go ahead and hit upload. And then from here, we're just going to say more real estate leads. Hi, first name.
+
+And then right here, this is our personalization. I have an offer you cannot resist and would love to tell you about it. It will be open for penny chat.
+
+And then if we hit preview, we can see here came across your real estate profile and noticed your expertise in the park city luxury market. Just off the bat, we have email addresses that we know are likely very valid. If not, you can always use insulate to validate these.
+
+Make sure that you definitely do that. And then from here, we have our personalization. And then all we need to do is set up the schedule to make sure that we're sending on the days and the times that we want to do that.
+
+And you can go to options. You select your email addresses that you have ready to go. Always best practice to say send emails as text only, no HTML.
+
+And then if you want to contain any links or images, things like that, you know, get a little bit more creative. I would say click this on and then send it for your second or your third sequence. Then from here, set any other variables that you want to have when it comes to ESP matching, you know, things like that.
+
+Go ahead and hit resume campaign and you're off to the races. Now, if you want to see the best lead generation strategies and business growth tactics that we're using in action, we made this video where we actually start a service based business from scratch, sell it using similar methods to what I just showed you in this video, and quite literally take you through the full process from start to finish of everything that was done to successfully sell that service. This is all so you can essentially copy what we did for yourself and see results.
+
+I'll see you over there.

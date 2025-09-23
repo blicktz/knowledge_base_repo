@@ -1,0 +1,87 @@
+I just sent over 500,000 AI personalized emails to various businesses to see if you could really make money using email alone. In this video, I'll show you exactly how I used AI to personalize every single one of those emails, the results I got, and how much I earned from all of this. And to be honest, it even surprised me.
+
+So let me explain exactly what we're doing here. This is called cold emailing. If you're not familiar, cold emailing is when you reach out to your ideal customer to offer them your product or services.
+
+So now the follow-up question here is how do you turn cold email into actual money? And it's all about targeting the right businesses with the right messaging. You need a strategy that cuts through the noise, grabs their attention, and show companies why they should care about what you're offering.
+
+This is where we leverage AI personalized emails so we can send out hyper-targeted, hyper-relevant emails that when the reader receives, it really feels like it was only meant for them. And when you do this at scale, you can quickly generate sales and then increase your client base. To cut through the noise of crowded inboxes, we cannot rely just on volume.
+
+We need relevance. And AI allows us to do that at scale for every single lead without having to manually write the emails for every single lead. Now, why is this important?
+
+Decision makers that you're trying to get in touch with get bombarded every single day with generic messages. AI changes that by tailoring your message to that specific person and the challenges that their business is probably going through. When you do that, it makes your message stand out and significantly increase the odds of you getting a reply from that decision maker.
+
+Let me show you how that works. Okay, so first you'll need to upload a lead list. There's a lot of different ways to do this.
+
+In this case, I want to showcase Instantly's Lead Finder. It's pretty straightforward. As you can see, all the filters on the left-hand side, obviously there's like the basic filters like location, but it gets a little bit more in depth with lookalike domains, for example, or technologies that the companies might use or the recent news that they've had that you could use as a trigger.
+
+So these are all great filters to get started when you're building a lead list. Quick pro tip, I would recommend to use the employee size as a way to determine roughly how much money the companies are making just because the revenue data I find to be very hard to get accurately. But if you know that a company has, let's say 20 employees and they just raised the series A funding, then chances are they have capital to invest.
+
+Once you upload the lead list into a campaign, you go to leads and then you click on this brain icon. It's called AI prompts. Now, this is one of my favorite features inside of Instantly.
+
+Essentially, what it allows you to do is use either prompts that the community has built, or you can build your own and then obviously save it as your own template. So you can just create a new prompt here and then go on about your day. But for a lot of the use cases, the community has already done a great job to build the prompt so you can use.
+
+So as you can see here, company name cleanup, this is a basic use case, it can get a lot more custom and specific depending on your use case. So for example, if you remember one of the filters when you were building a lead list and instantly is lead finder is news. So if we know that a company recently acquired another company, then you can use that variable in your AI prompt to mention that in the first email line.
+
+So for example, I'll share with you a prompt that my team and I put together. This prompt helps us write custom call to actions. And what you need to get this done is a couple of things.
+
+So one of the things you need is you need to scrape the body text of the website of the lead that you're going after. You will also need a description of the ideal customer profile. But if you want a simpler way to do this, if you just have the description of their website, then you'll be able to get this done as well.
+
+But I'll walk you through the prompt very quickly. So it says here, I scraped the data from the website provided data and then the description of the website. Then the task is read all of the scrape data to gain the comprehensive understanding of what the company does.
+
+We will also find the ideal customer profile ICP below that indicates their target audience. Based on the information you now have about the company and its target audience, generate a one liner that follows this format. If we could help you dream outcome in a quantifiable way with how we can help, would that be interesting?
+
+If you want access to this prompt, I'll include it in the description down below alongside other prompts that are my agency's favorites. But again, I cannot recommend the template hub enough. There's a lot of fun stuff that you can do here to make your copy very, very customizable.
+
+Two pro tips I also want to leave you with is if you're not satisfied with the prompts that you're seeing, like they're just not getting you the output that you want, use chat GPT to fix your prompt. So I always like to say you are an expert GPT prompt engineer. I want you to take my prompt and improve it.
+
+I'm not happy with my current output and tell it why you're not happy. Tell it the things that you're not happy with and then have a back and forth with it. And eventually it will create a prompt that is ideal for what you're looking for.
+
+The second pro tip is the best output that you're going to get from AI. Yes. Like you need to have good prompt engineering, but the more information you feed it, the better the output is going to be.
+
+That's why I'm a big fan of including as much information in the description of the companies I'm going after, because the more I give it, the better the output is going to be. The more context I give it, the better GPT is going to understand what I'm going after. So make sure you take your time to figure out what's the ideal prompt that works for your use case, for your niche lead list.
+
+And then once you find the winning formula, just double down on it. If you're wondering how to scrape the data of company websites or company descriptions, you will have to use another tool for this. One tool that I like to use is make.com.
+
+Let me just showcase why using AI prompts is really powerful when it comes to email copy, because you go from something that looks like this. Hi, I'd like to introduce our services. You'd be surprised, but like that's how a lot of the emails that are being sent out look like.
+
+You want to stay away from that. Instead, what you want, hi, first name, this will be a variable. Obviously I noticed company name has been expanding into new markets.
+
+We've helped companies like similar company one and similar company two streamline that process. And I think we can help do the same. So a couple of things I want to point out here, the clean company name.
+
+So I could actually change this to be like this clean company name. That's going to be huge, has been expanding into new markets. You're telling them why you're reaching out in a way, because it's based on observation and it gives your outreach a purpose.
+
+It doesn't feel like you're just reaching out for the sake of reaching out. Then we've helped companies like similar company one and similar company two. Having a niche lead list is going to play a huge role in why your campaigns will convert.
+
+So if you're working with a niche lead list here, then you know for a fact that these similar company one and similar company two are going to resonate with almost everyone in this lead list. And then you're telling them very quickly, elevator pitch, like you helped them streamline that process. And I think we can help you do the same.
+
+So the difference between this and what I just showed you guys earlier, huge. And that's what's going to help you convert your emails. Another pro tip to remember, spend a lot of time figuring out what you want to say in the first line and split test that as much as possible.
+
+Because when you get an email landing in your primary inbox, that first line is the preview line. So before people even consider if they want to reply to you, work with you, no, no, no, whatever the case is, they need to open the email. And in order for them to open the email, there are two things that are going to either stop them or allow them to, which is the subject line and the preview line.
+
+So make sure you're nailing both of those down and you're split testing, add as many variants as you can. So make sure you're solving all these problems one by one. And then it's really hard for you to fail.
+
+What's amazing is that when you know how to leverage AI the right way, it looks like we were able to manually write every single email at scale. So we ran a side-by-side comparison of two campaigns. One relied on AI personalization and another with a standard non-personalized messages.
+
+So as you can see from my screen here, the numbers are not that impressive, right? So out of 1188 sequences started, we only got two opportunities. And this is the kind of email copy that we used.
+
+As you can see, it doesn't really speak to the lead. It could have been sent to everyone and anyone. And now look at the difference of an AI personalized campaign that we sent out, but the opportunity is at 73.
+
+So let's have a quick look at the type of copy we used here. Hi, first name. I noticed company name might have a focus on three targeting revised.
+
+So like these are three things that we use AI to figure out that are very targeted and personalized for the lead that we're reaching out to. And then we go into the pitch. So that first line is going to have a huge difference in your conversion rate.
+
+So now let's move on to talk about how we were able to generate the leads and prepare for this massive outreach campaign. It's not enough to send cold emails to just anyone. We need to be hyper-targeted and hyper-focused on which companies are going to benefit the most from our offer.
+
+Instantly's lead finder allows us to build lead lists based on industry, company size, and even recent business activities that show a signal that they're looking to grow. Pro tip, talk to someone that looks like your ideal customer profile. Interview them.
+
+I know you know someone that either fits your ICP or knows your ICP. Get them on a call and then apply the filters accordingly. That's why it's extremely important to leverage all of these filters here and then some in order for your copy to sound like it was only directed at them.
+
+Okay, so the results are in. So I wanted to share my screen to show you the kind of numbers you can expect. So out of 570,000 emails sent, we got 3,400 opportunities.
+
+Now, as you can see, if you were to glance at this quickly, you'd be like, oh, 2% reply rate. That's not that much. But when you just look at the raw numbers, we got 11,000 replies.
+
+And out of 11,000 businesses that engaged in the conversation with us, we got 3,400 businesses that were interested in pursuing something deeper. Oh, and you know what's the best part? These conversations aren't just one-time engagements.
+
+Many of these leads can be nurtured for future campaigns, keeping our pipeline full for months to come. This strategy has proven that with the right tools and the right approach, you can rely on cold email as an acquisition channel to write hyper-targeted messaging so you can scale your outbound efforts. If you want to learn how to write cold emails that don't just get you replies but actually convert them to real sales opportunities, then click here to learn a little bit more about the strategies we've been using.
+
+And that's it for me from today. Thank you. Ciao.

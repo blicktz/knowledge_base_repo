@@ -1,0 +1,107 @@
+You can have the best cold emails, the best offer, but if nobody is receiving your emails or they're getting sent to spam, none of that will matter. Good news for you guys, we have multiple features built within Instantly to ensure your emails are being delivered into the primary folder to your potential clients. So with that being said, let's dive into today's video, like, comment and subscribe and let's go.
+
+Okay, so here are the seven features inside of Instantly AI that help you with deliverability. The first one is warm-up, then spin text, then we have inbox rotation, A to Z copy rotation, provider managing, universal global blacklist and then dynamically rotating sending app here. So I'll go through each one here in this video.
+
+I'll start with warm-up and warm-up is simple to activate. So you just go to your sending account, you connect your sending account and the only thing you have to do here is just click on this flame. When it's gray, it's not on yet and then when you turn it on and it turns green, then you have warm-up enabled and that's all you have to do.
+
+So what warm-up does is basically it interacts with other sending accounts and you will have these conversations with them in order to boost up your reputation, the reputation of your sending domain, of your sending account. And in the past, you know, you had to do this manually. If you had a new sending account or new domain, you had to like manually email your friends back and forth.
+
+Now instantly completely automated this and we have a pool of over 200,000 inboxes in our warm-up network, in our pool and they're all conversing, interacting with each other in order for you, you know, already sending accounts to have good reputation and land in the primary inbox and have some history to them. So what that looks like, let me just show you a quick example. Once you click the green flame, it will drop your sending account into the pool and you will conversate back and forth.
+
+Hey, happy you found our service useful. And then replying back and forth conversations, which kind of signals to ESPs that, hey, like there's something going on. There's people positively replying to these emails, improving your deliverability overall.
+
+So this is one thing, the warm-up pool, we have one of the biggest warm-up pools and most diverse warm-up pools in the industry. So you're in good hands with Instantly and you can connect an unlimited amount of sending accounts to the warm-up. Just click the flame on each one and you can put them all into the warm-up.
+
+So that's the first thing. Then we have the second one is Spintax. So this is pretty cool.
+
+Let me just show you how that would work. I'll set up an example campaign here. So as an example, we'd have this.
+
+So usually, you just have one variation of your cold email. But with Spintax, Spintax is just a formatting way, a naming convention in a way where you can rotate words and synonyms. So for example, you can see this here, right?
+
+Hi, hello, and hey, they are interchangeable. And then you just put two brackets in front, have random, hi, hello, hey, and then first name. This can be dynamically inserted.
+
+Basically, for every word where there's like two other synonyms, you can add the structure to it and not every email that you send out will be the same. Every email will be pretty much unique because you're interchanging all these words and phrases. Every time the email goes out once and then the next one will again have a different variation of what it previously was.
+
+So when you can see this, hey, I'd love to learn here, find out. It's saying the same thing overall, but it's using different words. And then, you know, I'd love to find out more about the way you handle, manage, deal with sales at company name.
+
+Company name is dynamically inserted. And then, you know, even the question here, right? You can even insert entire sentences and you can ask, can I give you a quick call anytime next week?
+
+And then, do you have any time this or next week for a quick chat, right? These two things are saying the same thing, but it's different words. And that makes your call email more unique.
+
+And the more unique it is, the more likely, you know, you're landing in a primary folder because you're not sending out the exact same message hundreds of times. And then here, the same thing. So let me just show you what that would look like.
+
+You know, let's say I would go here and type this in. And then if we go to preview, just format this a little bit so it's easy to read. If I go to preview, then you can see, right, all these brackets and all that, they're gone.
+
+But it will create a unique variation each time for every single lead. So you can see this one changed. So this is a good way to improve deliverability in a simple way.
+
+And then one thing that also helps is, right, usually you would have to do this, these brackets and the random and the straight line. You would have to do this manually each time. But here's a prompt you can use and I'll add this document in the description of this YouTube video.
+
+And here's a prompt you can use. And then you can just have ChatGPT do it for you. This prompt, played around a little bit with it.
+
+And it works on, by itself, finding out what it can spin tax and then adding the right structure to it as well. So you can just use that. And you don't even have to do it manually.
+
+If it's for longer sentences, then you can just do it manually like here. But, yeah, this is one good way to really have unique cold emails going out. And let's say, you know, just for the sake of this example, usually this would be just one email, one variation.
+
+But if we go here and we see and we're going to count this, how many unique variations that is, you can see this. We're going to have, if we use the spin tax structure, we're going to have 16,384 different variations of this cold email. Right.
+
+Making it more unique and more unique is better. So, yeah, that's a good example as well. So next thing, we covered warm up, we covered spin tax.
+
+Inbox rotation is a good one as well. So let's look at inbox rotation. So here you can, for example, you know, I'll just show this as an example I'll add.
+
+What you can do with instantly is called inbox rotation. So you can, for one campaign, for one lead list, you can use multiple accounts that are sending to that lead list. So as an example, this sending account number one will send to lead number one.
+
+The sending account number two will send to lead number two. The sending account number three will send to lead number three and so on and so forth. Right.
+
+And that way you're not sending, let's say, 500 cold emails just from one account. But this 500 cold emails that you want to send out on that day are spread out around 10 sending accounts. So each one will only send 50 cold emails.
+
+And that will ensure, you know, you stay under the radar. You keep deliverability high for every single sending account. Not one single sending account is sending too much.
+
+You're sending too much from one account that raises red flags. So just distribute all that volume across multiple sending accounts and they will do inbox rotation. And you can still reach out to a lot of leads with that without sending to a lot of leads just from one single address.
+
+So that's another one. So we have warm up, spin tax, inbox rotation, A to Z copy rotation. So that's what we have here.
+
+Let me just show you an example from scratch. So let's say I have this here and then I can create multiple variations. So on step one, it's going to lead number one, it's going to send variation A.
+
+And then to lead number two, it's going to send variation B. So I'm just inserting a couple of templates here just for the sake of this example. And we have three examples here, right?
+
+Variation A, B, C. We can even do D, E, F, up to Z. So you can have a lot of variations kind of spinning with that similar concept as an inbox rotation or similar concept to spin tax as well, right?
+
+On this step, we're not sending out the same email over and over again. To one third of the people, we're going to send variation A. To one third of the people, we're going to send variation B.
+
+And to another third of the people, we're going to send out variation C. So that way, again, we keep it more unique and we're not blasting out the same messaging over and over again. And then even if you wanted to combine this A to Z split testing with spin tax, then that's even better.
+
+So like a couple additional boosts for deliverability. Okay, so A to Z, copy rotation or split testing, same thing. Then another one, provider matching.
+
+So this is a little bit more of an advanced one. If you're just starting out and launching your first campaigns, don't worry about that. It's more for people who are already getting like 5, 10, 15 positive replies a day.
+
+And they really want to squeeze out the last ROI, really optimize that last 5% that they can. Then you can do provider matching. And what provider matching does, it matches your leads email provider with your mailbox provider for boosted deliverability.
+
+So you've seen if you send from Google to Google, that will have better deliverability. And if you're sending from Outlook directly to Outlook, that will also have better deliverability and will enable an additional deliverability boost. So that's the fifth feature here for increased deliverability.
+
+And then we are going to have a universal global block list. So this is something we're doing from our end. You don't have to worry about that.
+
+That's automatic. So this is just a list of domain that we know for sure are bad and cause your cold email to get reported. So when we encounter a lead with a known domain that files complaints to ESPs automatically on all unsolicited or cold emails, we will automatically mark that lead as unsubscribed and no emails will go out to it.
+
+So this feature works in the background and does not require any input from you, the user. So this just works in the background. We got your back there to make sure you don't send to domains that automatically file complaints for cold emails.
+
+So that's one thing that's automatic. Also the last feature, I'm mentioning that here, but you don't have to activate that yourself. It's just we have hundreds of dynamically rotating sending IPs.
+
+Other cold email tools out there only have like static IPs or not that many IPs. We have literally hundreds that are dynamically rotating to ensure that your deliverability is maximized. So instead of having a handful of static IPs, we have hundreds of dynamically rotating sending IPs, which really, really helps with open rates and reply rates and making sure that you land in that primary folder.
+
+So these are the seven. Just circling back very quickly on warm up. So warm up when you're here.
+
+You can see the flame, right? You just click this little flame icon. And then here also you'll see the stats of what's going on.
+
+And yeah, that's it. That's that's the video. Seven features to boost deliverability of your cold emails with instantly.
+
+If you're conscious of all these features and take advantage of them, each one only takes a few clicks to activate or instantly already does it automatically for you. And you'll have no issues with deliverability when sending cold emails again. If you want more resources on how to succeed with cold email, check out our software instantly.ai in the description, and you can use it to start sending cold emails today.
+
+There's also something inside called instantly accelerator, which is basically a full cold email program course with eight modules with everything you'd ever need to know about cold email and how to get more meetings and more clients. And with that being said, thanks for listening. And I'll talk to you soon.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.

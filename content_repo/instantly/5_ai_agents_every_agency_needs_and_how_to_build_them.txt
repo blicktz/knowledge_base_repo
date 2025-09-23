@@ -1,0 +1,239 @@
+If you're running a business and you still aren't taking advantage of AI agents, you are simply falling behind. With AI agents catching all the buzzwords as of late, it's never a better time to hop on the bandwagon and know exactly what agents to use and how to leverage them. So in this video, I'm going to show you five AI agents that every business should have, why you need them, as well as how to get each of them working for your use case.
+
+The first thing to unpack here, there's a lot of ambiguity when it comes to the definition of an AI agent and what it actually means. The term agent and agency for that matter, meaning a group of them, are nothing more than someone that is an expert in that particular field and can act on your behalf. Think of it like a real estate agent, where they are specialists in home buying and selling, and they can help you facilitate the purchase or selling of a home.
+
+An AI agent is no different and can be designed to be completely customized to your specific business needs, automating tasks, streamlining workflows, and acting on your behalf just like a human expert would. The first agent here is none other than the good old ChatGPT. Now I know ChatGPT is obviously one of the most popular things here, especially when it comes to AI and innovation, especially with their recent ChatGPT 5.
+
+And I would say you should definitely have this on your computer, either bookmark or even download it to your phone and your Mac computer. And the reason for that is because there's a lot of native benefits that you can do, such as bringing up a shortcut to be able to interact and type in anything you want and be able to have prompts no matter what you want to do or what application you're in. The other thing too here is with ChatGPT and the application, you actually have a number of different functions here where you can upload a file, upload a photo, you can take a screenshot, you can take a photo.
+
+There's a number of different leverage points here in order to pull in documents, which if you haven't toyed with it yet, it's definitely worthwhile because this is a perfect leverage opportunity for you to be able to analyze data, analyze an image, generate an image, just making yourself a whole lot more productive when it comes to operating your business. The other thing which actually make it somewhat agentic, because what it'll do is be able to do things like web search, to be able to connect to the real world in order to append and bring information into your window here. Because a lot of times ChatGPT and other language models, they're not going to have external connections to the world and they're going to have a cutoff date, which is actually not useful for you if you're trying to research recent information.
+
+So think of it like news or funding or anything like that, that you would actually want to pull in that research. So enabling the useful tools here, such as web search is going to be largely beneficial. The other thing too here, which is, this is a major one is deep research.
+
+These actually make it agentic because what it is doing is going on your behalf to actually search and research and actually validate your sources through reasoning in order to pretty much come up with a full report on anything. What we do is we use it for our clients and even for ourselves to be able to pull in any information that we can possibly do in order to develop like comprehensive company profiles, such as master system prompts in order for us to use that as grounding, like a RAG agent. So that way they can come up with good copy for future campaign.
+
+The other thing that is absolutely a powerhouse, which actually makes it agent, that's why it's called agent is none other than ChatGPT agent. What this actually does is it will go out and it will bring up a browser and we'll actually search websites for you. It'll interact by typing in keyboards.
+
+It'll bypass captchas, at least most of them anyway, and it will go through and do research for you. It will take screenshots, no different than you would as a human. Just as a use case here, I went ahead and tested it when it first came out and you'll see here that it says you are a sales development representative and expert lead generation consultant.
+
+Your job is to scour the internet for companies that could largely benefit from your services. You work for Top of Funnel, which is our growth marketing agency that primarily serves B2B from startup all the way to enterprise. Now, I'll save you the time here, but you can see here that I basically put in a role, a task and an output for exactly what I want, which I talk about a lot in my videos and my channel is RTO.
+
+You want to define the role, then you want to define the task. You want to define the guardrails and parameters around that task, what good looks like, what bad looks like, and then control the output of what you wanted to do. And then in this instance, I actually had it sent to a webhook payload.
+
+So you can actually send this as of this recording. Right now, they are only doing get requests, whereas when it was released, you can actually do post requests. Because another powerful thing that you can do here is the agent will actually not only go to the web, it will actually execute code like Python, and then it will actually execute the terminal commands as well, which means you can do curl requests, which are API calls.
+
+It's really cool because you can actually see what it did, it'll bring up a browser, it'll start to reason and go through everything here on exactly what it's doing. But this is leverage big time because it's actually doing the research and doing everything that I need to do in order to accelerate and grow my business. So right here, you can see it worked for 11 minutes.
+
+I mean, anybody can save 11 minutes, right? And then it came up with a list of companies that would be a good candidate for us to reach out to. And you can see enterprise B2B companies, next steps, I've prepared JSON payload for each of the company with the stage type and everything right here.
+
+And then it says into that payload webhook. And you can see right here, when it did initially come out, I was able to actually send that to N8N and I also send it to a clay workflow as an example. But now you can only do get requests.
+
+The catch here is you actually can also do a get request while sending a payload, but it's inconsistent. The most consistent one is definitely doing a post request. However, what I would definitely say, because they just recently changed this, is just go ahead and compile everything to a CSV, which you can see right here, of which you can download that and upload it to any platform like instantly or clay or anything like that to your heart's desire and be able to do what you want.
+
+But the powerful thing here is ChadGBT is definitely a vital piece to accelerating your business and making sure that you can use this as leverage no matter what you're doing. Because once you kick this off, I can go to my kid's soccer game or go out and do errands or anything like that. And I can check the progress right on my phone to know exactly what's happening.
+
+So super, super clutch and super vital when it comes to operating your business. Another thing that we did for a client of mine that we're working with is being able to utilize agent to actually go through CAPTCHAs. So you could see what this one, I had to basically visit ZocDoc and tell me what dental practices that have appointments available and return back the entire CSV of those that who are listed.
+
+The thing for this use case is we can actually determine through this particular website, if we see a lot of available appointments, to us that's a signal that they are hungry for more patients. And especially like on ZocDoc, if they are promoting their practice, it means they're actually paying for ads, meaning they're really hurting for patients. So this gives us, you see where it says sponsored right there.
+
+I can actually know and say, you know, Hey, Dr. Pierre, I noticed that you, you know, are sponsoring your ads. Or for example, Ryan, we can reach out to him and notice that he's obviously paying.
+
+So he has an interest in getting more appointments for his practice. And so that is something that could be screenshot and then put into the CSV for us to be able to do it. And you'll see right here, this actually worked for 45 minutes.
+
+And right here, it actually executed Python. Pandas is a library that which it works for CSVs and actually preparing lists here. And it went ahead and sent everything.
+
+And then it sent it off there to the webhook. But I can also go ahead and download the CSV as well, in which I can just upload. And you can, you know, pursue lead generation with that way.
+
+So I would say you should definitely have it on your computer. And then being able to hit option space, you can bring this up, and you'll be able to prompt away at no matter what application that you're in. Second to that, I think a big use case here is being able to use Claude.
+
+And the reason I bring this up to this is another agent number one that I would definitely use is because Claude is very powerful in a unique way, aside from ChatGPT, when it comes to creative copywriting. It's also, I find it really, really good and still the best and the goat of when it comes to coding and just generating React artifacts, you know, anything that you want to formulate into a creative piece to have a visual dashboard or anything like that. The other big piece here is going to search and tools.
+
+And you'll see here, I have a number of different connectors and MCP servers. So that way I can actually use Claude with external sources such as MCP and be able to pull that information in. If you're not familiar with MCP, I talk about it a lot.
+
+And I definitely think it's a huge thing in terms of large language models and being able to connect different sources. To me, it's the next biggest thing. It's not anything insanely innovative, but it's the next thing to APIs because it allows APIs to talk to large language models in a much more dynamic way should anything on the API side be changed.
+
+But you can see here, if I were to even so much as go to settings and I brought this up here and you'll want to go to the top and make sure you're running the latest one, right? But you can go to extensions here. I mean, you'll see I can hit browse extensions.
+
+We have desktop extensions so you can read and send messages. You can control Chrome. You can do Windows MCP.
+
+You can do Spotify, Airtable, ClickUp. There's a number of different things here in which you can connect it and even file systems. So you could have it read directories and be able to navigate and create files and things like that.
+
+I would say definitely be careful here and only give it access to files and folders that you really want to have access to and don't give it to your root directory or anything like that. That could really set you up for a bad time. You'll definitely see a lot of connectors here as well as web.
+
+So there's Asana, there's Canva, Gmail, Google Drive. The powerful thing here is Anthropic and Claude are already largely, I mean, they're trying to push this technology. So it's clearly a work in progress, but they are the leading provider when it comes to that.
+
+From here, you will see that I have Firecrawl MCP, which I talk about a lot, but I can simply just say, you know, scrape topoffunnel.com using Firecrawl.com and tell me what they do. And this is just an example, but this is actually very different than a web search because what it'll do is it'll actually scrape the website and then it's going to pull it in. The LLM is going to make sense of the information for it to pull in context and then you can take action from there, right?
+
+So Firecrawl is a huge thing, but you can see Firecrawl is definitely another good use case here. With that said, we have a number of other different ones that obviously the biggest thing with MCP is select your sources carefully. And I would definitely make sure you select an MCP, preferably from either a trusted developer or the actual makers themselves, such as, you know, GitHub and things like that.
+
+I would say Claude and ChatGPT, definitely a first agent you should absolutely have on your computer. No question. The second agent that I would say is none other than a lead generation agent.
+
+And a lead generation can be done in various ways. You know, we could scrape the internet just like I demonstrated here. We could do different signal monitors.
+
+We can set up different agents to be able to monitor and then take action. This is no different than any automation where you're doing a scheduled job, just like you would when you go to work and you start to do research for yourself. This is an agent where lead generation is the research and understanding about what to do next.
+
+So it really comes down to two things that's triggers and actions and using agent and to be able to do those triggers and actions is just allowing you to take a lot of context and information and then act on that behalf. Just like I mentioned before, where you're going to be able to know each step of the way of what you're doing throughout the workflow. In this example, we have a scheduled trigger where we're basically every day at 9am.
+
+We are sending it off to go and search Appify. This particular one, I have it searched for a sales development representative. And just as an example, we did five.
+
+You can set it for however many you want. And in this workflow, I made it so that it really is only five because a lot of times if it's doing every five, it's going to be a lot, especially we're just testing this out. So once it actually gets better, then we can increase it to, you know, 500 or a thousand and things like that.
+
+But the bigger the job, the more it takes for actual scraping, but it does work and it allows you to search any job title and anything like that for however many jobs that you want to go for. You can use this for lead generation. You can use this for recruiting.
+
+Basically it's going on in Indeed, or you can select any Appify actor to be able to trigger that based on the search or even Google Maps or anything like that and run the Appify scraper. With Appify, it'll kick off the scraper right on their platform. This is through the N810 workflow here.
+
+And then we are going to wait about five seconds because we know things are not done instantaneously. And what we're going to do is we're actually going to do what you call polling the API. So what it's going to do is it's going to wait and then it's going to check job progress.
+
+And if it's still in progress, it's going to be false because this basically says this is equal to succeeded. And we want to make sure if it doesn't say succeeded, it's going to loop. It's going to wait another five seconds and it's going to check again.
+
+And then it's going to continue to poll every five seconds until it's true. And then we're actually going to poll the results. From the results, we're going to actually remove duplicates because the last thing we want to do is to run through duplicative efforts here.
+
+So it's going to suppress those of any similar or duplicative jobs that come through. And then from here, just to make sure we're reaching out to the companies themselves, we want to screen out any recruiting or job boards, anything like that, that's an extension of an actual job posting. And this basically uses piloter to scrape the actual job posting and the URL that's provided.
+
+So if it was so-and-so company, it's going to go to that company website and it's going to reason with it and download the HTML and CSS and JavaScript. And it's going to see, all right, is this a job board or recruiting firm? And if it's not, it'll be true or false, which you can see right here.
+
+If it's false, then the workflow shall continue. If it's true, it doesn't move forward. Then from here, we actually have another agent.
+
+So this is actually a team of agents where we are finding the hiring manager. So what the hiring manager is doing, it's we are saying you are the hiring manager finder, an AI system that recommends the most likely hiring authority, the person one level up who can greenlight or strongly influence the hire. Biggest thing here is that we're looking for the most senior or we are defaulting to another level up.
+
+And then I went ahead and put into the prompt here based on the size of the company, because if you're reaching out to these huge enterprises, you could reach out to the CEO, but let's be real, the chances of them being immediately involved with job postings, if it's a really large organization is probably not going to happen. And so if you're reaching out to a CEO of like Microsoft and saying, Hey, I noticed you hired an SDR out of Florida. He's not going to immediately know that and go from there.
+
+Right. But if you reach out to a company that's less than 100 employees, you can bet your tail that the CEO is probably really involved. And then we are using lead magic where they have an API endpoint where it'll take that role and we will actually find it if they're on LinkedIn.
+
+Another great feature is you can actually send this to clay because clay has find people at these companies as well, but to streamline this and keep it clean inside of any end where it's an evergreen workflow. It just works no matter what I know ceiling when it comes to number of executions or rows, I like to keep it all contained in here. And then from there, we're going to get the LinkedIn URL to the person of the hiring authority.
+
+We're going to parse that and sanitize it to make sure the URLs are nice and clean. We're going to then enrich the profile through a LinkedIn enricher. Scraping and piloter are good ones that we use all the time.
+
+And then from here, we are going to get company info. So we're going to go to the website. We're going to search information about them using Serper and we're going to just get you more information regarding the website, what they do.
+
+And then from here, I'm actually using full enrich. Full enrich is basically like a waterfall where it will check a number of different providers. And if the first one does not come up with a confirmed and verified email, it's going to go to the next one and to the next one, to the next one.
+
+So this makes it one node, very easy. A little pro tip here in their API docs. By the way, they did just release an N8N integration.
+
+I have yet to test it. However, I did discover though, this actually doesn't matter. That's why I left it in here, just so I can get a 200 status code.
+
+What you actually want is just to send this because we're not going to send it to a webhook because what I'm actually going to do is I'm going to pull it. And just like we did with Appify, and it's going to say in progress. And instead of sending the data to another webhook workflow, we're just going to continue it and we're going to pull it.
+
+And as soon as it's completed, we're already going to have the information, append that to the same workflow. And then we're going to forward this to a copy agent. Now from here, copy agent is going to basically understand everything when it comes to your company.
+
+And I took it out for obvious reasons here, but we're going to say, you're an expert cold email copywriter. Your role is to take the information you receive about a company and utilize Firecrawl.mcp to scrape their website in order to understand what they do, who they sell to, and to gain additional context. The reason we're using Firecrawl for this is again, for the same reason, we can actually scrape their website and understand exactly what it is.
+
+The other thing about this as well is I can actually select different tools that we want to use, which I specify. So you can do all tools selected or all except. This allows you to control the agent to know exactly what we want to do.
+
+So we have Firecrawl scrape, we have crawl, we also have search and deep research. The other thing that I would need to add to this is map. So mapping it, you know, if they have about us or a blog article or meet the team or careers or anything like that, that's going to be super powerful here.
+
+Now on MCP, I don't want to go too off course here, but the biggest thing I'll say is SSE is actually being deprecated. But as of this recording, Firecrawl mostly has an SSC according to their docs. But the actual next one, when it comes to remote MCP servers is HTTP streamable, where you have just MCP as the URL with proper authentication, and it's a lot more secure.
+
+And it's definitely very useful. And then from here, of course, you want to send it somewhere, right? So we're going to send it to instantly where we're going to add it to a campaign.
+
+Very simply, we're going to add all the information here. And then since we generated copy, we're actually going to put message as the variable there. And then the actual output is going to be populated there.
+
+And then of course, with HeyReach, I developed this integration as well, which we're still testing and it will definitely be released here soon. Pretty exciting news around that. But we could just add them to campaign and then connect with the people and start conversations from there.
+
+So we have multi-channel outreach right here when it comes to LinkedIn, as well as sending a cold email. So this would be next agent or team of agent that I would definitely recommend that every business needs. Now the third agent.
+
+So you're generating all these replies, you're using ChatGPT or Claude. Now you're starting to get some emails coming in and now you're like, Oh my gosh, how do I handle all these replies? Right?
+
+Well, have yourself a good reply agent. A reply agent instantly just released their version here. And it's definitely really good.
+
+Actually, even with very little context, it comes up with some good replies, which it will forward to your Slack channel. And it's worth a try for sure, because it can definitely handle a lot of uplift, especially if you're not immediately available and can't reply because the best opportunity, let's be real, when the lead replies that they want to learn more and be interested in your service or your widget or whatever, the best thing to do is reply, you know, momentarily. I wouldn't say instantly, no pun intended, but you want to reply in a very short amount of time in order to capture while the interest is still there.
+
+So if you go into your platform and you just go to the agent right here, you can easily create an agent. I would check out the other video as well, where we walk through how to actually add it, but you can do this in literally less than five minutes. You can do it in autopilot mode.
+
+You could toggle a number of different things here. The biggest thing I would focus on though, is being able to provide context and clarification, handover and escalation, and then other guidance information. You want to add and utilize these things where you can just literally spill the beans, do whatever you need to say when it comes to your business and how you talk and everything like that.
+
+So you have guidance, you have integrations, you have a number of different things that you can do, whatever your use case or your business is and getting a reply agent. I also design reply agents for ourselves that we've been using for quite a while for our own purposes, as well as clients. And that is if you go into instantly, you can actually go to settings and then go to integrations and then web hooks, and you can actually send all replies over to a reply agent.
+
+This will actually throw all replies to you. And then you could do what you call sentiment analysis, which we like to do advanced sentiment analysis because not all replies are either positive, neutral, or negative. Sometimes it's going to be a hot positive.
+
+Sometimes it's a positive, but maybe in a month or two, sometimes it's a positive and they need a little bit more information. There's going to be a number of different things depending on your client or your offer in which you want to have a priority as far as what positive that is and sentiment analysis. We're basically catching all the replies.
+
+And then from here, we are seeing if this is actually the first reply, meaning is first true. And sometimes you go back and forth where, you know, you might have three or four emails exchanged before you actually take the conversation forward. We want to filter those out, right?
+
+So you're actually going to filter out only the first. And then from here, we're going to do sentiment analysis, which we're using GPT 4.5 mini. And we want to be able to weigh in on what that sentiment analysis is.
+
+For mostly positive, you know, for neutral, it's basically providing additional information. And for negative, you know, sometimes you can try to overcome indifference. Sometimes you can try to overcome saying, Hey, you know, would you consider this?
+
+Or do you know anybody else that might find this valuable? And then of course, there's the good old kick rocks, you know, don't ever contact me again, which is fine. You add them to a block list, you move on, right?
+
+So in the context of sentiment analysis, when we take a positive reply, we're actually just going to get email details, which is the ID, the body, anything that we're missing in the initial payload from the reply. We're going to wait about five minutes because who replies on the very next second, that's a bit of a creeper status, right? We want to make sure that we're waiting just a little bit of time in order to feel natural and not automated.
+
+And then from here, we have a positive reply agent where it's actually going to take everything. It's going to understand context around the nature of the actual email. It's going to reply, and then it's going to use the instantly reply to email endpoint as a tool, and it's actually going to reply.
+
+The additional thing on this particular agent is we're actually CCing another person in order to loop them into the conversation. This is great when you have bigger sales teams and being able to really make sure everybody's involved in order to move the lead forward, right? Then from here, we're just simply preparing the data to make sure we don't have any unescape JSON, which basically means if you have a long message and you have all these new lines, that it's not going to break the workflow.
+
+So we're going to prepare it and then we're going to send it as a Slack message. And then we're going to add and update contacts inside of HubSpot for this particular use case. And then we're actually going to do the same thing through a code node to prep it for HubSpot.
+
+And we're actually going to append that as an email inside the activity log to this lead that we just did. So everybody knows exactly the conversation that was said, and we can keep everybody happy and keep deals closed. So for this reason, this is why you need a reply agent inside your business to make sure that your business runs efficiently.
+
+Now, the fourth agent that everybody needs in their business is good old Instantly Copilot. Instantly just dropped their V2 of their Instantly Copilot. And I think it's definitely a necessity because it can be managed all within Instantly platform where you can do a number of different tools and a lot of different things when it comes to growing your business.
+
+Now you can see in this one, I just said, search the internet on some of the most recent fundings around my ICP. And if you go into memory, you can actually add a lot of context when it comes to your business. So that way it actually knows what your ICP is.
+
+So right here, you can see that it searched the internet and it's going down through a number of different companies here. You can obviously, I gave it very little information, but the more information you give it, the better your results will be. And from here, I'll say, what are some B2B tech companies that also have received this recent funding?
+
+Use the internet search to get this idea. And then it goes from here. It starts to research everything from that.
+
+And then I said, give me more companies. Okay. And then it'll start to do super search.
+
+And then it'll ask you if you want to enrich. And then I said, let's enrich 100. It said, cool.
+
+So it actually used super search to go in and search people within my ICP. And then it says, okay, next, how many leads do you want me to enrich using these filters? I said, let's stick to 100 for now.
+
+It creates a super search enrichment all within instantly here. And then it goes through, give me more companies because I wanted to reach out to more. And right here, you say, let's create an outreach campaign and build a sequence.
+
+And then it went ahead and create everything there, created a sequence. I've created lead filters around this plan. And then it actually created a multi-step sequence all for me around copy that I've formulated it through.
+
+And we have a draft setup all through natural chat. Another thing that you can do as well, which are simple things as you can get advice, you can say audit my workspace, you can do best performing campaigns, you can have it write a sequence. There's a number of different simple things here, which it'll always just be a good leverage point just to go in.
+
+And if you're not quite sure what the best tool is or where to go, you can just simply use this just like ChatGPT, but it's actually conformed and works really well with instantly. So with this one, definitely a good vital piece to run your business, especially if you're doing cold outbound. All right.
+
+Now the fifth agent that I really think every business needs is actually a very unique one. And anybody should be using this because I haven't met a single person that can actually type faster than they can speak. So with that, I would definitely say that you need to have a speech to text tool on your computer or your phone, whatever device you typically use, and definitely leverage how you speak a lot more than you type.
+
+Basically, I've brought up an app called Spokenly, which I found to be actually really, really good. And I'll demonstrate why here in a second, you know, you say, okay, speech to text, how exactly is that agentic? And you're right, it's not agentic to do speech to text.
+
+But the key thing here is that you can be able to just trigger any combination of keys. And you can literally speak your words because a lot of times ideas are going to go right out your mouth. The really cool thing about Spokenly is that you can actually use your own API keys.
+
+And there's a number of different models here that I can hop across everywhere. I can even use the Apple speech recognition ones. You can do local mode only.
+
+So if I'm offline or on a flight or something, I can actually use the same thing here. And it's right local to my machine. So sometimes I'll use Nvidia.
+
+There's a lot of different models that you can actually download and just have it based on there, right? So I'm using currently GPT-40 Mini Transcribe because it's the most accurate. Now onto the agentic piece here, it actually has an agent mode.
+
+And so if I were to even, you know, do a shortcut here, just like this, I have agent mode enabled. And this actually makes my computer an agent. What other agent could you not use better than your own computer to actually do things, right?
+
+All these agents out here that I just showed you, you can have all the agents, but really all it's doing is moving data. It's hardly launching an application or actually typing things out or doing things for you. Well, this is the tool to do that.
+
+So I did command one where it can actually launch apps. It can close apps. It can do YouTube search.
+
+A lot of times you actually want to, within reason, make one particular or a few tools that it can actually do, because if you do too much, then it will actually confuse itself and not be able to do a whole lot. So let's just test to make sure that it works, but I'm going to do YouTube search and I'm just going to hit command one, search YouTube for instantly cold email. And there it is.
+
+And it typed in instantly cold email. So that's spokenly props to the dev for a great tool there. The other one that I would definitely try out, and this one's free and it's open source.
+
+So I would say that is Edo. If you go to Hey Edo, I think it is, you can actually use this and the settings here. They actually use Grok, yeah, WhisperLarge 3.
+
+And they actually just recently added GPT-OSS. So it goes through Grok. And the cool thing about Grok, this is Grok with the Q, by the way, they are tokens per second powerhouses.
+
+So it's very, very quick and allows you to do dictation very quickly, no matter what you're doing. And you can see here just on average speed. I mean, it says right now, 190 words.
+
+You can clearly see that when you are able to speak, I mean, you're going to be at least two to three X of your typing speed. So it would definitely be worthwhile to actually get a speech to text. And if it has agent mode, like I just showed here on spokenly, then you're going to be that much better off.
+
+So that's the fifth agent. Now as a bonus, I know I said five AI agents, but this is just too good to not mention and to make sure that you're at least aware of what is possible. I would say that any AI code editor such as Cursor, which I talk about a lot on my channel, is definitely the super agent to have on your computer.
+
+Why am I saying this? Well, a number of different things. First of all, it's agentic, meaning it will execute tasks for you.
+
+Second is it can do anything you possibly want, which is build landing pages, build applications. It will scrape the internet. It will call any tool.
+
+You can literally have an idea of what you want to do, such as a dashboard or an idea for a SaaS app or anything that you can possibly imagine and say what you want to say and be able to execute that. Nowadays, it is definitely a new unlock when it comes to leveraging this. I can understand why some people are intimidated by it, but rest assured, I think that this is never a better time to actually dive into a code editor like Cursor to be able to leverage what you have here.
+
+You'll see on my screen here, I actually have a GTM mastermind template, which is on my repo. Definitely recommend to fork it or clone it and download to your computer because what it does is it allows you to basically scrape the internet using Crawl4AI or Firecrawl and be able to append a knowledge base or be able to bring in a lot of information around your business or your client and be able to actually do a true GTM mastermind around any use case you want. I mean, literally the data is out there.
+
+It can be pulled in and you can use it from there, right? And the other advantage here is this is actually able to hop different LLMs such as Claude, we have GPT, we have Gemini from Google, we have Grok4, we can do KimiK2. When you think about agentic and you think about, okay, what do I need to do?
+
+A lot of times different models are always going to be more beneficial than another. You just got to know like who their maker is and what they are best at and just through the trending topics. But I have multiple agents here like Augment Code is a powerhouse for me, Claude Code.
+
+There's a number of different agents when it comes to using the right use case, but not to get overwhelmed, but if you start simple and you simply use Cursor Agent, you're going to be able to do a lot of different things. And in my opinion, this can't be better. Once you actually start to get your wheels turning and you get familiar with this kind of environment.
+
+This is why I mentioned this as a bonus because it is a bit more advanced, but if you're really trying to run your business and if like me, if it depends on your livelihood and feeding your kids and all that kind of stuff, then it's definitely worth checking out. Check out my channel for more information on that. If you want to see what it looks like to start a business from zero to one, where we show you how to get your first client in 10 hours or less, we document the whole thing for you to see.
+
+Check out this video. With enough dedication and grit, you can also do it too. I'll see you over there.

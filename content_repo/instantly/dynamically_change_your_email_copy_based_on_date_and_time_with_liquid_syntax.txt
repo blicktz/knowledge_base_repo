@@ -1,0 +1,17 @@
+Hi everyone. So I wanted to show you four new ways how you can use liquid syntax in your email copies to dynamically change them based on date and time to make them more relevant and more likely to be opened and replied to. So let's get right into it.
+
+First way you can use this is with this snippet of code down below. I'll copy it into the description as well so you can copy it right from there. But basically what this will do is it will say good morning if it's before 12 pm, good afternoon if it's between 12 pm and 3 pm and good evening if it's after 3 pm.
+
+So yeah let's switch into incident for a second where I've copied this code in and you can see that if you click on preview email it will turn to good afternoon. So one thing to note here is in the preview itself it will dynamically change it based on your time zone but if you're actually going to send out these emails through this campaign it will use the schedules time zone. So let's say here I have eastern time as the schedule for the campaign.
+
+So this good morning, good afternoon, good evening will be based on this schedule that you set in your campaign. So another way you can use this is greetings based on the day of the week. So this snippet of code down below here says hope you're having a good start to the week if it's between Monday and Wednesday and hope you're having a good week So you can change this out with anything you want and yeah basically change it based on your preferences.
+
+So the next one kind of is a similar one it uses the exact same conditions it just switches out what it's saying. Another thing you can do not just greetings but you can actually offer meetings based on day of the week. So let's say if it's between Monday and Wednesday and Wednesday and you can also use the same same conditions.
+
+So you can also use the same conditions as well. So you can also use the same conditions as well. So you can see how it works.
+
+So just delete this paste this in and now if I click preview email it will say are you available anytime next week since I'm recording this on a Friday. So yeah and the final method is a pretty simple one. So this is simply just inserting the day of the week so we'll just see what day it is today Monday if it's Monday, Tuesday if it's Tuesday and that's how the code looks.
+
+So I'll paste that into Instantly as well just to show you guys but basically what you can do with this is just like I hope you're having a good Wednesday and just paste that code and it will change dynamically based on what day it is for the prospect. So yeah again if I click preview it will just say the day of today and yeah that's pretty much it. I'll put all these codes into the description so you can copy them in on your own and yeah like I said feel free to change any of the sentences I showed above.
+
+There's a million different ways you can actually use them depending on what you're offering and what you want to say. So yeah that's pretty much it. Thanks for watching and if you enjoy these videos make sure you subscribe and yeah see you later.

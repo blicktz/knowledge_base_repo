@@ -1,0 +1,73 @@
+This video will be about setting up Namecheap domain with Google Workspace and creating DNS record for Namecheap domain. So start by opening two tabs. In one tab login to your Microsoft 365 admin center and in the second one login to your Namecheap.
+
+Then from the main window you will type domains and click on domains. Here is the list of domains that you've already created and we are going to add a new one. Click on add domain and enter your domain name.
+
+I'm gonna copy it from here but you can type it manually. And now you can click add use this domain. So now we will have to add a new txt record to prove the ownership of the domain.
+
+So select the first option and click continue. Now we need to create this txt record in our Namecheap DNS management. Let's click on manage here.
+
+And then click on advanced DNS. So it takes you to all the DNS records that exist already for this domain. So you wanna click on this red button.
+
+Add new record. Add new record. We will create a txt record.
+
+Host is add. And we will copy the value. TTL is 60 minutes.
+
+And click save all changes. So now we created the txt record. Click verify.
+
+We will have to wait a few minutes and click again. So now the records have been updated. We can continue.
+
+And we can add these three new records. So we will create mxt record, cname record and txt record. So let's start with mxt records.
+
+On the DNS page scroll down and find the mail settings. From the drop down list select custom mx and then we will add the host. The host is add and we will copy the value.
+
+And then click on the menu. Let's see priority is 0 and TTL is 60 minutes. Click save all changes.
+
+So now we have mxt record created. We can continue to create a cname record. Let's copy the host name.
+
+We will add the cname record here. Click on the red button. Paste the host name.
+
+Let's copy the value. And TTL is 60 minutes. Click save all changes.
+
+So now we have created all three records. So the next one is txt record. So the host name is add and the value is copied.
+
+Add new record. Txt. Add and paste the value here.
+
+And select 60 minutes. Save all changes. So now we have created all three records.
+
+We can continue. Domain setup is complete. Click done.
+
+As you can see the domain is listed here and status is healthy. Now we can continue to create Dekim and then demarc records. So to create Dekim record we need to go to the security section.
+
+Type Dekim. Type Dekim. Type Dekim.
+
+And find your domain here on the list. So this is the domain that we just connected. You want to click on it.
+
+And then click on create Dekim keys. So Microsoft will create keys that we need to copy into the Namecheap. Now we need to create CNAME records.
+
+We will create two CNAME records. So first and the second. So click on the red button and select CNAME.
+
+Then copy the hostname. Copy the value. And click save all changes.
+
+Now let's do another one. And click save all changes. So now that we created two Dekim records.
+
+It will take a few minutes or even hours for the records to update. So you can try and enable it right away. And if it's not updated yet, you can come back and try again later.
+
+So yeah, here's the message. That obviously we need to wait a bit longer. So I will pause the video and come back later to try and enable it again.
+
+So let's try again. Okay, so the Dekim signatures are created. And now we can proceed to the last step and that's adding the DMARC record.
+
+So let's go to Namecheap and we will create a new record. That's gonna be txt record and the host is underscore DMARC. And the value I'm gonna copy from our help article.
+
+So you can use this article to generate the DMARC as well. Or you can create it yourself. Or you can use some of the online generators.
+
+And let's not forget to change the email address here to the one that you want to use for receiving DMARC reports. Now that we've copied the text, we will click Save Changes. So now the DMARC is ready.
+
+We have MX records, SPF, Dekim, DMARC. Now we can go ahead and create users for this domain. We can connect them to instantly and then start warmup process for the accounts.
+
+While I'm done, let's see. Let's scroll down to the Dans German Melchare section. So let's try to cancel the letter....
+
+animals. But if I can find it, let's refer in to whatever time, if my institution has chosen from one Paris, sounds. So for much, if you want to do it all the room.
+
+So that's all. And then Quad right. The LiDOM is in Chem pele and this method.
+
+Now that's it. Yes, I'm gonna hit spricht charter every single allein. So for me asゴdelnatus .

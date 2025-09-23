@@ -1,0 +1,81 @@
+OpenAI just came out with a bombshell update. We have a banger for you today. We're gonna launch ChatGPT Agent.
+
+ChatGPT Agent is now open for the public to use. And this is a game changer for any business trying to do lead generation and get more clients. So in this video, I'm gonna show you exactly how I'm going to be using this to get clients from my own business so that you can just copy me.
+
+Let's get into it. So I broke this down into four different sections that I thought it would be helpful to go over and show you the capabilities of ChatGPT Agent, as well as show you exactly how you can use it for your business. And we're gonna go through it literally just step-by-step and I'm gonna show you exactly how I'm using ChatGPT Agent to grow my business.
+
+So first things first, that we're gonna hit on is the targeted list building. What we can have the ChatGPT Agent do is literally scrape websites for potential leads. It can scrape information from specific websites and it can deliver that in a ready-to-use format, essentially.
+
+So let's go ahead and see what it can do. So what I'm gonna do is I'm gonna go ahead and copy this prompt here that you are a B2B lead generation assistant based off the criteria below, return five qualified leads in the table. I'm just gonna do five for now.
+
+Criteria, industry, SEO, agency owners, location, United States, size, under 20 employees. For each lead, give me their business name, their website, the founder name, the founder email, the email if available, the LinkedIn URL, the services offered, the company size, and the service description. That's gonna be a lot.
+
+Let's see if the ChatGPT agent can do this. Go ahead and go to ChatGPT, under tools. I'm gonna click agent mode.
+
+I'm gonna go ahead and paste this here and it's going to get to work. As we can see, we can literally watch in front of our eyes as the ChatGPT agent is searching relative websites. For example, this is using Clutch.co, which is a pretty well-known industry or a pretty well-known website where there's a directory of a lot of agencies.
+
+I can just sit back and the ChatGPT agent is going to do the work for me, which is pretty nice. All right. In just a couple of minutes, it was able to return literally in a table, the business name, the website, the founder, and the role, their email, if we could find it, the general contact email, the LinkedIn URL, if they could find it, services offered, the size and the service description.
+
+Now we've just seen the power of the ChatGPT agent in building a list that's targeted and gives me all of the ammo that I need in order to basically start reaching out to these people, which is pretty remarkable. Now what I can do is I can use the ChatGPT agent to start my outreach prep. I can do a few things with this.
+
+So first, I can actually write personalized emails based off of their profiles. What I'm gonna do is I'm gonna go back to our ChatGPT agent and I'm gonna go ahead and ask it to write me a email. So I'm just gonna prompt it with, I help mark an agency scale using cold email.
+
+You're a cold outreach copywriter for each company listed above. Write a personalized email based on their website and services. Speak their language and speak to desired outcomes of the prospects and add it to the table.
+
+Use junior high reading level, make it five sentences long and call to action is giving them a list of 100 qualified leads and an example email that we'd send so they can see how it apply for their business. Space it appropriately for easy readability. Include first line that shows personalization, a short message that explains how we help businesses like them, a case study and a call to action.
+
+Now, what the ChatGPT agent will do is we'll analyze the information and we'll begin writing personalized emails based off of this and hopefully add it to a table. So let's just see what it does here. Nice.
+
+Okay, now I'm gonna say put these in a CSV file for easy export along with the leads. Put the email as a header and now it's been added to a CSV file. Let's check it out here.
+
+And look at that. Everything has now been added there. Now, if we don't want it to write the whole email, what we'd have to do is just write a personalized first line at scale.
+
+What I'm gonna say is I'm gonna give it a similar prompt and I'm just gonna say for each company listed, write a personalized line based off of their services, speak their language and find something I can relate to that we have in common. Use junior high reading level, make it one sentence long. So let's just say I just want a personalized line.
+
+Let me just go ahead and add that in there. And then hopefully it'll add it to the CSV file so that I can just quickly continue to work off of the CSV file, which it should. Perfect.
+
+Let's double check that this is good to go. And it went ahead and added the personalized line. Let's take this a step further now.
+
+What if I wanted to build a multi-step campaign? We can have it actually generate email campaigns for us or follow-up campaigns for us. So what I'm gonna do is I'm just gonna have it generate a follow-up one, a follow-up two and a final bump and add it to the CSV file.
+
+For each lead, generate a follow-up one, follow-up two, add it to the CSV file, created the emails, created the personalized lines and it wrote the follow-up email. So let's check those out. Let's see how these did.
+
+On our CSV file, we have the company, the service description. We have an email that we could use. We have a personalized line that we could use and we have a follow-up one, a follow-up two and a final bump, a follow-up three.
+
+All that we can use. All just in a matter of minutes using the chat GPT agent. Now, once I have the list of leads, all I need to do is go to a tool called instantly.ai.
+
+I can go to campaigns. I can create a new campaign. And then what I'll be able to do is click on add leads, click on CSV upload, upload the file, click right here.
+
+And I can see all the leads have been added. And all I need to do is just map these to the headers that are in leads. So let me do that real quick.
+
+And for ones that don't show up here, all I'm gonna do is I'm gonna use a custom variable, like email one. I'm gonna use a custom variable. Personalized line, custom variable.
+
+Follow-up one, custom variable. Cause that will show up when I go to write the email and make it really easy for me to add. Then I click upload all.
+
+Now, all I need to do is click on this button called variables. And then I can find my email one, click on preview. And that is beautifully written.
+
+All I need to do is add in the account signature. And this could be good to send. If I just wanted to use the personalized line, I could click on the variables and I could find personalized line there.
+
+And then I could click on preview. And that would show just the personalized line that we created using the ChatGPT agent. So let's just go ahead and use the emails that we made.
+
+I'm just gonna go ahead and use email number one. And I'm gonna say thoughts, question mark. Cool.
+
+And I can add a step. And I can say two days later, what am I gonna do? I'm gonna do variable.
+
+I'm gonna find the next follow-up. Cheers, Austin. And then I'm gonna click next.
+
+I'm gonna do four days. And I'm gonna send the next follow-up, follow-up number two. And then I'm gonna add another step.
+
+And I'm gonna change this to four days too. And what's gonna go here? Follow-up number three, which will be the last one.
+
+And I can say, cheers, Austin. Now, if I click on save, I can go ahead and click here. Doesn't look anything to a blind eye or it doesn't look like anything.
+
+Click on preview. Email has been written. Step number two, doesn't look like much.
+
+Preview, follow-up email has been written. Step number three, follow-up three. Email has been written, okay?
+
+Click on save. And last but not least, email has been written. And all I really need to do once this is done is I can click on options and I can go ahead and launch this guy.
+
+And the cool part about this AI tool is that when somebody responds, it has an AI reply agent that I've trained to reply to my emails. They can give me the option to review them before sending, or it can just reply on my behalf based off of what I trained it to do. So this is an amazing way to use ChatGPT agent and cold email to get new clients.
+
+But if you're a bit newer to your business, you don't have a ton of experience getting clients, then click on the video on the screen to check out the next video where I actually set up a service-based business completely from scratch and get my first sale. Oh, and I did all of that in 10 hours as a challenge. I'll see you on that video.

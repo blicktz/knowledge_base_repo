@@ -1,0 +1,61 @@
+Hi! So this video is going to be about setting up a GoDaddy domain with Google Workspace and creating DNS records for GoDaddy domain. You will need to log in to your GoDaddy and to your admin console, Google admin console, so you can do it in both apps here.
+
+Then when you're taken to the home you can access your domains from this box here. If this is not visible then you can go to account, domains and manage domains. Here is the list of all the domains that you have connected before.
+
+Verified means that they have been verified by Google and Gmail was activated which means that the MX records have been added to your domain. So this is what we are going to do with the new domain as well. So go to your GoDaddy, login here and go to all your domains.
+
+If you have a list, find your domain here. I just have this one, just bought it. So click on manage DNS.
+
+This is where all your DNS records are listed. So here we will be adding some new records. Now you want to copy the domain to Google.
+
+Click on add domain, paste the domain name here, select the secondary domain type and click add domain and start verification. So Google is asking you to log in to your GoDaddy. It will open up a new window.
+
+Click on connect. And now it's verifying your domain. So it will take a few minutes.
+
+I'm just gonna pause the video and come back. So now that Google has verified your domain, it's taking you back to the domains page. From here we can go ahead and activate Gmail and create MX records in the GoDaddy domain DNS.
+
+So you want to click on set up MX record and then next. Again it's taking a few minutes to activate it. And the Gmail has been activated now.
+
+Let's see the DNS records. So we have SPF records and the MX records have been created by Google. Now we need to add the Dekim and the DMARC records.
+
+Let's go to apps, then Gmail. And then here we are going to set up Dekim records. So you need to select your domain first.
+
+And then here you are going to generate the string of data that you will add to domain manually. So let's generate the new record. So this, you can choose any of those.
+
+I'm gonna choose the 2048 length. Google is alright for the prefix. And generate.
+
+So this is the domain key that you need to copy. Let's do it. So we are going to create a new TXT record.
+
+Click on add. And the type will be TXT. The name will be Google domain key.
+
+And this is the value. We will just copy and paste it. And that's all.
+
+Click add record. Now your record has been created. It may take some time for the data to update.
+
+Let's try and start authentication anyway. Yeah, so we will need to wait a bit for the records to update. So the Dekim authentication has been updated.
+
+We can continue and create the DMARC. So before setting up DMARC, we want to make sure that all the records have been created. And here, as you can see, there are two SPF records.
+
+We shouldn't have two or more SPF records because then our domain will fail validation and might be marked as spam. So we are going to delete one of these. Let's edit this one.
+
+So we will copy the lower one. Save it like that. This is the correct SPF.
+
+So it shows that all the emails sent from Google domain will be validated. And now we can delete the other one. Yeah, so let's create the DMARC.
+
+Click on add. The type will be TXT. The name will be DMARC.
+
+So I'm copying from our help article. And the value. You can also use this one.
+
+So the TTL needs to be set to one hour. That's all. Just click on add record.
+
+Before that, you want to change the email address here. It needs to match your email address. You need to input your email address here so you can receive the reports from DMARC validations.
+
+And click add record. So that's it. The DMARC has been set as well.
+
+And we have finished adding the DNS records to the GoDaddy domain. You can go back to Google workspace and create the users for this domain. And then you can connect them to instantly and start warming up.
+
+And do efendim spin the button. Then you can use both on display. musician be on display.
+
+And keep performing. The DMARC.unya button. mierda gives you 5- TeamsP.
+
+And share that 위 horizontally from CANGoW posting in the view. And 생각이 causes

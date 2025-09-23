@@ -1,0 +1,165 @@
+All right. Hello, everyone, and welcome to this week's Instantly Strategy webinar. As always, my name is Rayo, and I'm one of the co-founders of Instantly.
+
+So, yeah, excited for today. So, again, as usual, the way I structure these webinars is first I give kind of like a presentation of some of the things I think are going to be useful for you guys. And then in the end and also meanwhile, I'll also be taking questions.
+
+So anytime anyone in the webinar has any kind of question or topic you want me to talk about, please let me know in the comments below in the Zoom chat section or like the Q&A. Both work just fine. All right.
+
+So let's get right into it. So the first thing I always like to cover basically on all webinars is the Instant Accelerator. So I'm pretty sure everyone on this webinar already knows about this, but maybe someone watching later is just hearing about this now.
+
+So if you're in your Instantly account in the bottom left corner, there's this space shuttle icon we call the Instant Accelerator. And what this basically is a cold email course that we put together based on our experience running a cold email agency before Instantly and now also while building Instantly, like everything we've learned and seen. And to quickly show you how this works is it's kind of like a course takes you from start to the end, which is kind of like the sales part.
+
+So you can navigate through the topics and if you click on one of the items, so some of these are going to be Google documents. Some of these are going to be YouTube videos. So, yeah, you can take it as a course start to finish or you can kind of hop in, hop out from different parts.
+
+And yeah, just like check out the part that's most interesting to you. But the idea of it was to take you all the way from the start to basically make someone who doesn't know anything about cold email into a really good cold emailer. So that's what this is.
+
+All right, moving forward. So one new feature we added, I believe it was yesterday or on Monday, is a new feature for the Lead Finder. And that's a new search for a search for domain.
+
+So you can find it if you go to Lead Finder, you go to more filters and here you'll find domains. So you kind of have two options. Either you enter them manually or you click on this icon here.
+
+You can upload a CSV or like Google Sheet with a list of domains. And what this basically is, it will try to find matches from our database for these domains. So let's say I do Microsoft.com.
+
+It's going to look for leads that match this domain. So it's going to find a bunch of leads, 69,000 for Microsoft. And you can do this for like all kinds of companies.
+
+And the use case for this is let's say you have a domain list of potential leads that you want to target, but you don't have any kind of emails. So this way you'll be able to find if we do have any kind of matches in our database. And then you can just select the ones you want to use, push them straight to a campaign.
+
+It will also verify them on the go. And yeah, so that's kind of like one new use case. And we're constantly working with third-party partners to make our like Lead Finder offering even better.
+
+So we're constantly adding leads to the database. So let's say if you didn't find a bunch of leads for your specific search last time, then it's always a good idea to come back every now and then try the search again, because yeah, we're adding new leads all the time. So chances are your search is going to get a lot better in the coming future as well.
+
+All right. So moving forward, one thing I wanted to talk about today that I haven't really covered for a long time is the use of spin tags. So again, probably people who've been around for longer already know what this is, but it's basically a way to randomize the content of your emails.
+
+And why is it good to randomize the content of your emails? It makes it less likely to be detected as spam. So to bring you an example, let's say someone sends out like 10,000 emails that have the exact same content.
+
+Let's say there's like minor differences, like let's say only the first name or whatever like variable people most general use. So now if you're looking at this from the email service provider size, someone sent the exact same email for 10,000 times to people they've never spoken to before. Or there's a really, really good chance that this person is like just a plain out spammer and it's pretty good to just block them or like make their emails go into spam essentially.
+
+So that means it's a really good idea to make sure that your emails that are going out are as unique as possible and as random as possible. And spin tags is one good way to basically like kind of in a way automate this. So here is one example of spin tags.
+
+So this is kind of how it looks like in the email body itself. So first of all, it has curly brackets. Then it has the word random, which kind of makes it randomize the selection of what's coming next.
+
+And then you have variables. Word one, word two, word three, and then you close it off with curly brackets as well. Two things to note here is you don't have to use like three variables.
+
+You can just add another vertical like line symbol, put word for there. And it doesn't even have to be words. It can be like entire phrases, sentences, and all that stuff as well.
+
+So to illustrate how this works, let's go into instantly. Let's go into a campaign I have here. So as you can see, I have this thing here.
+
+Random, word one, word two, word three, right? And if I click on preview email, you can see it chose word one. And now basically every time I preview, it's going to like randomize what it's going to say.
+
+So as you saw, it was word one. Now it's word three. So it's kind of like randomly choose these, right?
+
+So now let me show you like an example, an actual example of a copy. So here you can see like a bunch of spin tags going on in this copy, right? Let's paste this in here.
+
+So as you can see, random learn, find out here. Random handle, manage, deal with, increase, boost, raise. Can I give you a quick call anytime next week?
+
+Do you have any time this week or next for a quick chat? Like all this kind of stuff, right? And now if you click on preview email, you kind of see it chose all of these random ones.
+
+And every time I preview again, it kind of generates it again. So every time it's going to be different, right? And as you can see, a lot of these are just like plain synonyms.
+
+And some of these are just like saying the same thing with different words. And as most of you probably know, now everyone's using chat GPT. So that's super, super helpful for generating these pin tags options as well.
+
+So let's go into chat GPT for a second. And I'll show you like one way you can do it. So let's say you can say, say the following sentence in two different ways.
+
+Would you like to hear more? And then put the results in the following format. So you kind of give it a spin tags instantly format.
+
+And as you can see, it says, would you like to hear more? Shall I continue? Do you want me to share additional details?
+
+So you know, sometimes these are not going to be like the best. So you kind of have to play around with the prompt. Try to make it, you can give it like more examples.
+
+Like, you know, you can give like working spin tags examples, make it better. And then you don't have to do like, say it in a different way. You can do like synonyms, right?
+
+Ask for like, bring two synonyms for this word. And then put the results in the following format, you know? It's going to do the same thing.
+
+So you can kind of automate this, make up these spin taxes faster. And yeah. And yeah, so that's how you make your emails unique.
+
+Like you just put in a bunch of spin taxes. And the cool thing is, is like, you don't even need that many of them to already make it. So you can like send out this copy at like a thousand times.
+
+And none of them are going to be exactly the same. So you know, you're always going to have the first names, company names, all that in there as well, which is going to help with this. But yeah, spin tax is also a good idea.
+
+And it's a pretty like low hanging fruit as well. It doesn't really take that much time. You just look up a bunch of synonyms, say some things in a different way, put them into this format that we have here.
+
+And boom, that's like pretty much it. So if you haven't already done this, I just suggest you do this. It's, yeah, like I said, it's pretty simple to do.
+
+And it does help, especially for people who are sending out more volumes. So I think if you're sending like 10 emails a day, it's not as important. So because your volumes are so low, but the more you send out the same kind of copies, the more value kind of spin tax starts to bring to the table.
+
+So yeah, definitely check that one out. All right. So one lesson that I covered in the previous webinar as well is kind of how copy and targeting and the whole kind of setup is more important than volume, especially when you're like first starting out.
+
+So basically, if you're sending out a bunch of emails that no one opens, no one responds to, it's going to hurt your durability. So basically, email service providers are seeing that this person is emailing a lot, but no one like cares. So they're being put in like the lower reputation bracket and all that kind of stuff, essentially meaning that you land in spam more often, right?
+
+So when you're scaling up volumes, you have to make sure that your copy and targeting is actually working, showing promise. And there's a reason to scale up a volume, right? So you can start off with lower volumes, validate your offer, validate your copy targeting, then increase volumes by getting more sending accounts.
+
+So that's another important point, like don't just blatantly increase volume, because, you know, we kind of suggest the limit of 30 cold emails, 20 warm up emails daily. If you're already at that, and you want to send out more, more emails, get additional sending accounts. So that way, it's much safer.
+
+But yeah, basically, volume will not fix like a copy and targeting problem. So make sure that that is on point before you start scaling up volumes, because otherwise, you're kind of wasting your efforts as well. So if no one's opening, no one's replying, it doesn't really help to send a bunch more.
+
+So yeah, and again, if you want to work with copy and targeting, again, the best place to go is instantly accelerator. We have a section for both of these, the lead section, the copywriting section. If you go through the copywriting masterclass, go through the lead mining masterclass, there's like so many things you can do there, like testing different copies, testing different targeting.
+
+You don't have to go for CEOs all the time, you can go for lower people, like lower titles in the same company. Basically, just see what kind of what kind of combination of these things works the best for you. So, so yeah, and once you find like a banger, then you feel free to just scale up the volume.
+
+So yeah, so that's how that should be done. All right, and then also one more thing, instantly is official partners. So there's been people that are looking for help with like setup help with running the email campaigns and like a combination of any of these things that it comes to like cold emailing.
+
+So we partnered up with LeadHype. If you go to leadhype.com slash instantly, you'll be able to contact them. And basically, they're an agency who's verified by us.
+
+We made sure that what they do is really good. So yeah, anytime you need help with just like domain account setup, basically what you'll get is like, let's say you say I want 10 domains, this many accounts, they'll like buy them, set them up correctly, connect them to instantly. So now your account has everything set up and you can just do like the fun part.
+
+Or if you don't even want to do that, they can do the sending for you as well. So you're only going to get like interested leads in your inbox. So yeah, consider that if you don't want to set this up yourself.
+
+And yeah, so that's pretty much it from my side. So yeah, now it's kind of like the Q&A section. If you guys have any kind of questions, topics that you want me to cover, now is the time to let me know.
+
+So I'm going to give you like a minute or two to come up with any questions you have that we can take a look at. All right, we got a question from Jonas. Let me just copy this here so people who watch the recording can see this as well.
+
+So Jonas is asking, how many emails should you send per test campaign to know that you got a good sample size? So that's a great question. First of all, what I would say is as much as you can.
+
+And what I mean by that is it depends on like your lead list sizes. So let's say if your offer is super niche, super specific, and you only have like a thousand leads total that you ever found on the internet that you can contact. Then you have to be much more careful with these sample sizes, right?
+
+If you don't have that many people to work with. So I would say with like a generic offer that you have a ton of leads to target, there's like a low hundreds target. So let's say like 200, 300 emails per campaign is already a good sample size to kind of make sure or like make decisions based on.
+
+So let's say you send out 300 emails, you look at open rates, reply rates, all that kind of stuff. If it's showing promise, you continue sending. If it's not showing any promise at all, you scrap it, you try something different.
+
+So that's what I would say. But always if you have like massive lead lists, if you have the option to send out more, I would say like 500, 600 is even better. So usually the more like data points you have, the better decision you can make.
+
+But yeah, again, depends a lot on your initial lead list that you're starting out with. If it's just like a super small list, you have to be much more careful with it. And also one kind of tip with like if you're working with a smaller lead list, it makes sense to put more effort into each email.
+
+So like more personalization, maybe even offering them like are interested in seeing a Loom video I made for you. You can make like custom Loom videos for those people. And yeah, but if you have like a generic lead list, you can experiment, test a bunch of stuff for like hundreds of people and see what works and what doesn't.
+
+All right. Any other questions? All right.
+
+We have a second question. How often do you hit back up a list and how do you keep track of emails who want to unsubscribe if you hit them again in the future? So I would say in terms of like how often, there is no like a real clear answer.
+
+What I would do is like once you've done like the usual sequence, let's say with like emails spaced apart like a few days, I would move to like a less regular one, like let's say like every week or so. And as like they still don't respond, you can kind of stop and try again like a month later. So like let's say if they do not open, do not reply, don't like just keep spamming all the time, kind of make a pause and then try again with a different angle in like a few weeks down the line.
+
+But yeah, there's huge value in like follow-ups. So like even if you find like an old lead list that you mailed like five months ago, there's a bunch of people in there who didn't open, didn't reply. Feel free to just take them out again, hit them up again.
+
+We constantly saw in our agency like people activating again after like a long time. Even that goes with like positive leads. If someone responds like I'm interested and then doesn't respond anymore, hit them up like we hit some people up like two months later and they were like, okay, I'm going to come on a call and turned up to be in like clients in the end.
+
+So there's huge value in follow-ups. What we used to say is like keep following up until they come on a call or they tell you to stop. So if they don't do one of those two, it's like fair game to just keep following up with them.
+
+And then the second part of the question, how do you keep track of emails who want to unsubscribe if you hit them again in the future? So like to make sure you don't hit the same people twice. So there's kind of two ways you can do it instantly.
+
+The first way is the easiest way. What we did as well is basically if you set up a campaign in the options, you have the option that says stop sending emails on reply, right? So now anytime someone responds anything, so even if it's like unsubscribe, I don't want to talk to you, it will stop the sequence for them.
+
+And what we did is we left the lead in the campaign. So let's say Max in this case responded, no, thanks. It stopped the sequence and now they're still here.
+
+And now if I go to import other leads, it says check for duplicates across all campaigns, right? So anytime we were like importing people again, it always checked duplicate. So we made sure that Max, like in this case, who said no, thanks, is never imported again.
+
+So Max is kind of sits in this campaign doing nothing, gets no more emails. And that's kind of how we already handled it. But let's say you want to delete this lead.
+
+You don't want to have this in the lead section. What you can do is add them to the block list. So you can find the block list if you go to settings block list here.
+
+So you can import people to here manually if you want, but you can also do it in the unibox. So let's say if someone responds like, no, thanks, please take me off the list. Let me move my camera here.
+
+You have this option here. So you can remove lead and add email to block list. So this will block any future imports as well.
+
+So that's the second way you can do it. First way is kind of like passive. You don't do anything.
+
+The second way is you delete them and add them to the block list. So that's kind of like the safer option, I would say. But yeah, that's how you can do it.
+
+All right. Yeah, no problem, Jonas. Okay.
+
+If you guys don't have any other questions, then that's pretty much it from my side. Hopefully today was useful. And yeah, we do these webinars actually three times per week.
+
+So if you guys go to Insulin Accelerator, you go to live coaching, you'll find like the Insulin Strategy sessions here. And as you can see, Tuesdays, Wednesdays, Thursdays, each of these are done by a different co-founders. Tuesdays is Role, Wednesdays is me, and Thursdays is Nils.
+
+And we don't have like a fixed content schedule or whatever. We kind of talk about whatever we think is the best individually. So each of these are going to be different.
+
+And you're welcome to join like all of these if you're interested. And yeah, sign up whenever you want to like ask something from us or whatever it is. So yeah, so that's it from my side.
+
+Hopefully this was useful. Thank you so much for coming. And I hope you have a nice day.

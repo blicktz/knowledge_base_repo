@@ -1,0 +1,23 @@
+Hi everyone, Rayo from instantly here and I wanted to make this video to talk about a new feature we just launched called provider matching. So the way this new feature works is it will try to match your sending email service provider with your recipient's email service provider. So in other words, for example, it will use all your Google accounts to send to leads for also using Google accounts.
+
+The same goes for like Soho, Microsoft and so on. So the reason we built this new feature is because we noticed that there's a deliverability boost if you're sending between the same email service providers as compared to sending across email service providers. So one more way to visualize this is it will use your accounts and match them with your leads accounts.
+
+So basically Google accounts will send to Google leads, Soho accounts will send to Soho leads and so on. So before I go into instantly and show you where this new feature is, I just wanted to quickly talk about a few questions people been asking regarding this feature. So the first thing is what if none of your inboxes match with any of the leads inboxes?
+
+So basically, let's say you only have Google accounts, but all the leads in your campaign are using Microsoft. So in this case, there's nothing to worry about. The campaign will just work as normal.
+
+So it will send just as if this feature was not enabled. So you don't have to disable it. But basically, you don't have to worry either.
+
+So the campaign will just work as normal. And then the second scenario. So just like an example situation, what happens if only one inbox matches 80% of your leads inboxes?
+
+So let's say you only have one Google inbox, and 80% of your leads in that campaign are also using Google. So in this case, the campaign will only use that one Google account to send to all of these 80% of leads that are also using Google. So the campaign waits until that Google account is available when it has enough sending limit to continue sending.
+
+And for the remaining 20%, if there's no match, the campaign will just work as usual again. So basically, in this case, you'll probably notice like a drop in expected sending volume, because you only have one Google account to take care of all of these leads. So it will only match these.
+
+And if this happens, you may consider adding more Google accounts, or just adding a wider selection of all different kinds of email service providers, as you can take full advantage of this new feature. So now let's tap out of this slideshow going to instantly, I can quickly show you where this new option is. So in every single campaign, when you go to options, scroll all the way down, click on show advanced options, and then scroll down a bit more, you'll find this feature called provider matching.
+
+So it's now tagged as new as well. So it's easier to find. But basically, all you have to do here is just click, click on this box here, check it enable provider matching for deliverability boost.
+
+And that's all you have to do. And this feature will start running on the background. So yeah, so that's pretty much it.
+
+Thank you so much for watching and see you later.

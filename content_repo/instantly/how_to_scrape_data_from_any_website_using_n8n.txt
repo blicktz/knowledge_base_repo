@@ -1,0 +1,183 @@
+In this video, I'll be walking you through how to scrape any data you need from a website in just a few minutes using N8N. For example, if you're a business doing any kind of lead generation, adding a data scraper like this into your workflow can be an absolute game changer for you. And the best part is that compared to some tools and software out there, this is super cost effective.
+
+So without further ado, let's get into it. Firstly, talk about it all the time on this channel as well as my own, but one of the software that I use on a daily basis is none other than N8N. And the reason I think it's super effective here is because of scalability.
+
+There's a lot of things you can do within this and they have two versions of it. Essentially, you can do self-hosted, which you can see right here through GitHub. You can just basically either bring it to your local host, which is on your computer, or you can stand it up on a VPS like DigitalOcean, AWS, Render, things like that, where you can actually park that onto a cloud and you can go to town for essentially free for unlimited workflows to essentially do whatever you want.
+
+But what I would recommend is starting off with just a cloud instance, or if you have the technical chops to stand up your own instance, definitely recommend you do that. And you'll be able to play around with a lot of the different integrations that are baked into this product, as well as making your own HTTP requests to connect virtually any software that you need from start to finish. With platforms like N8N, there are two things to take into account.
+
+There's triggers and actions. Triggers are basically your web hooks, your app-based events, your scheduled jobs, things like that. Actions are sequential nodes or steps that are taken in order to do what you want to do with that data.
+
+So right here, I'm in a blank canvas because I'm going to do this live and we're going to see how we can scrape some websites. What I have here is a simple HTTP request node because it's essentially the same thing as if I were to go into my actual URL there. And what you would do is if I were to just simply go HTTP colon slash slash www.topoffunnel.com, which is our website.
+
+And I just executed step. You can see very quickly that this is actually the content of our website, which is a lot of unreadable, usable data as it is right now. There's going to be a lot of scripts.
+
+There's going to be a whole lot of jargon and stuff that you probably don't have immediate use for. But what we want to do is to take the content from here and make it usable. There's a number of different things that we can do in order to make it usable.
+
+But we need to plan for that in order for the next step to happen properly. There are three types of outputs that we generally like to do. Obviously, the first two is going to be markdown, which is usually the most common because it's actually easy to read for humans.
+
+And it's also parsable by AI models in order to prioritize and be able to make the next step for whatever you want to do for your output. The second one is JSON, which essentially we're going to do a structured output parser. So that way we can take the data points and be able to wire it exactly how we want to do as well.
+
+And then the third one is really kind of a catch all. It's based on fire crawl, you can do a markdown, HTML, there's a number of different kind of catch all's that are really not usable for everyday things that we do for what we're looking for. So I would just say the two priority ones that I would take into consideration is markdown and JSON.
+
+You can see when we do these, just to simply demonstrate of just how it works. This is actually not ideal, because a lot of times we don't want to take in the entire data of a website, especially if you're doing it for lead generation, because that's going to be a lot of data to chew through. And if we feed it into an AI model, everything you see here has to be tokenized, which is not cost effective.
+
+So a lot of times what you'll want to do is to just simply, you'll want to parse it out. And there's also a number of different layers that go into that, because if we do this at scale, you actually have to consider the other things that we do when we do web scraping. And that is your fingerprint.
+
+And what goes into your fingerprint are things like your IP address, your browser that you're using, and a number of different authentication things that might be contained with it. But you want to protect your IP for the most part is because when you're actually making the request, you are saying, hey, I want to view this website, and it's going to be from your IP address. So if you're doing this on blast, and you are at risk for probably getting banned or doing some things that probably don't want to get into.
+
+But if it's very low, and you're doing it with all the fair share kind of things, then you'll be just fine in being able to do web scraping. But this is the core fundamentals of what it is. The second thing that I want to talk about with when it comes to web scraping is there's two types of websites.
+
+There's static and dynamic. That's it. Static is basically like a flyer.
+
+So if I were to go to this website, it's almost like viewing kind of a vanilla old school website where what you see is what you get. And those are what you call static website. And then there's the second one, which is dynamic.
+
+But then what will happen is there's actually a middle ground where they're doing another call to the server, the three step process where you're making the request, the request is going back, and then it's coming back from the server back to your browser. And that's through JavaScript. And so a lot of times what you want to do is use a third party service such as Firecrawl or ZenRows and things like that, where you actually can render the website so it could be properly scraped.
+
+That way you can make your next step from there. And what I'm going to do is demonstrate exactly that of how to use something like Firecrawl. And Firecrawl is a wonderful platform in which that I use quite heavily for a number of different things because it's fast, reliable web scraper for LLMs, just like it says.
+
+And there's a number of benefits in which you'll be able to use this because they have a cloud infrastructure as well as they are open source. So you can actually trial with it as well. But I find their infrastructure to be super cost effective because they are using random proxies, which protects your IP address.
+
+They also do anti-bot detection. So there's a lot of ways that you can actually leverage this. We are going to implement using Firecrawl in our workflow.
+
+So that way we can move forward with it and understand better context around the leads that you're looking to scrape and then add them to a campaign. And none other than what we're going to do is do an HTTP request. If we go into the documents, you just go to docs.firecrawl.dev, any web scraper that you use.
+
+But in this case, go to the documents because we are working with HTTP requests. And you'll see a number of different areas here that if you're not familiar with this, these are different languages. But the most common one we're going to want to pay attention to is the curl request because it's most simple.
+
+You can see here that we are going to be doing a post request. So if I just go here, the method is going to be a post request. And then from there, we have authorization, which is the bearer and your API key.
+
+Now, if you haven't already signed up for Firecrawl, you'll just want to go to firecrawl.dev. And then you're going to see right here that your API key is going to be generated. You just simply copy that.
+
+And then what I like to do is you'll just go to generic credential type and you'll go to bearer auth. And then you'll see right here, you just go ahead and hit the pencil and you just add your bearer token and you should be good to go. From here, we're going to send the body.
+
+We're going to send JSON. And a lot of times you can do the name and the value as simply as it is right here. But in this case, we're actually going to do using JSON right here.
+
+And we are going to pull this example. And what we want to do is do only the curly braces. We don't want to have these apostrophes or tick marks as far as that.
+
+So we're going to copy the example here on the usage. Again, we want to only do the curly braces using JSON. So we're going to copy the endpoint and we're going to copy and paste in there.
+
+And we'll see there if we can do a 200 status code on the first try. There we go. Now, the response here is we can see we have markdown and then we have HTML.
+
+But if I were to just take out HTML and only do markdown, we would just get markdown. Now, this is your trigger. This is what I was talking about, triggers and actions.
+
+And this is actually a manual trigger by default. There are a lot of different triggers that you can actually do. But in this case, I'm going to use this manual trigger node here and we're going to edit the fields here.
+
+And if you're doing multiple, this is what you call an object. And then with the curly braces, this is actually called an array. So these curly brackets aren't even necessary when you have one object.
+
+It's kind of excessive. But if you have multiple key value properties, then you would need to use a comma, but not on the last one. So if we save that here, what I'm going to do is you can see this pass through and I'm going to do we have the URL here and then I'm going to delete this.
+
+And as you can see, we are making a request for the URL that we're feeding into here and the format is going to be markdown and let's give it a rip. So we have a lot of different information here. This is good stuff.
+
+You can see it came out with markdown. We're going to pin that for this case here. We're going to command S to save.
+
+Now the next thing we're going to want to do is we need to find people. We need to find who we do want to reach out to. And NETN has all the points where you can make API calls, things like that.
+
+But one thing it does not have is lead generation stuff. What we're actually going to do is we're going to use what's what you call lead magic. Lead magic is led by my good friend Jesse.
+
+It's a great platform that you can do a number of different enrichments. One endpoint they have is called role finder. Role finder allows you to feed in simple information such as their company name, company domain, and job title.
+
+And you'll be able to get a nice enriched validated email address as well. So we're actually going to do role finder first and then we're going to see if we have enough information to actually pass that through all the way to our instantly campaign. So we're going to make another HTTP request.
+
+It's going to be a post request. And then on the authentication, same thing. You're going to do content type application JSON, which is by default what you're going to typically have.
+
+X API key, same thing. You're just going to copy your API key. This is actually going to be a header auth.
+
+And then you see here, you hit the pencil and then you're just basically going to do the key, which is going to be exactly this X API key. And then you paste in your API key and then save it. And we are going to, again, this is a curl request.
+
+So we're going to select everything we want right here without the tick marks or the apostrophe. And we are going to send body. We're going to do JSON using JSON.
+
+And then we are going to pass that through. Now we're just going to take the default data and we're going to make sure we get a successful response. Looks good.
+
+What we actually need to do is to clean this up. So we're going to use AI and we're going to do a simple open AI message. 4.1 mini will do.
+
+And we're going to define the system message. We're going to say you are an expert company name and website analyst period. Your objective is to take the information provided to you from a previous website scrape and to only output the URL of the actual domain and the TLD.
+
+I also want you to output the company name in lowercase with no spaces. There it is. Beautiful.
+
+So what we did is we've scraped the website and put it in markdown. And then what we're doing now is we're cleaning up the data. We could actually use a code node for this, but the reason I'm using an AI model for this is because we actually don't know what's going to come back from the website.
+
+So with proper error handling and you're going to need to analyze several executions in order to just see what kind of data you have. This is where the difference between having fuzzy data or, you know, raw logical data, whether you would determine to use an AI model or a code node such as JavaScript. And I think with AI in this use case is probably going to be the most consistent because we want it to work.
+
+If we were to simply put in instantly.ai, we do a scrape for instantly.ai. You'll see that we are pulling in instantly.ai in markdown format, which we can see here in the table. This is all from there.
+
+And then we're going to use an open AI node to take the data that we want to make sure is nice and clean. So on the system prompt, I have put, you are an expert company name and website analyst. Your objective is to take the information provided to you from a previous website and to only output the URL of the root domain and the TLD, not the HTTP.
+
+I also want you to output the company name in lowercase with no spaces. I'll put the company name only as part of company name data field. So that way we can make sure that any information has passed through.
+
+It's going to know we're going to take the data right here. And actually we are going to feed in the data that we get. And let's see what we come up with.
+
+All right, perfect. So we fed in the markdown file and it put output company name and the root domain and we're good to go. So we're going to pin that.
+
+And then from here, we're going to make HTTP requests from a provider called LeadMagic, where we can simply feed in company name, company domain, and job title for us to find who we need to contact in order to send them an email. We are going to do a post request. This is going to be the endpoint.
+
+We're going to do a header authentication, and then you'll just want to load your API key from there. We are going to send the body. And then from here, we're going to map the company name.
+
+All right. And then URL root domain. And we're going to map that there.
+
+And let's see what we have. We found my buddy Raul. Now we have essentially his LinkedIn profile URL, and we're going to rename this role finder.
+
+From here, we're going to do another HTTP request. We're going to do email finder. Going to be another post request.
+
+We're going to change the post. And we're going to copy that. We're going to go generic header, and then lead magic.
+
+And we can see from here, we want to pass in first name, last name, domain, company name. We are going to copy this JSON, and we're going to do send body. We're going to send JSON.
+
+From here, we're going to drag first name, and then last name. And then we have domain. We have a company name.
+
+Perfect. So we've mapped the fields. Now we're going to see what we come up with.
+
+And we're good to go. So this is going to be find email. We're going to pin that.
+
+And then from there, we're actually going to use an AI model. In this case, we'll do an agent because we want to use agents. And we want it to be scalable in such a way that I could use much different LLMs if I want to.
+
+And we'll go from there. We're going to remove the you are helpful assistant. And we're going to use chat GPT to use our chat GPT.
+
+I am designing an AI agent where I need to have a system message drafted up in order to formulate good copy around sending a cold email. What I want to do is I want you to draft up a system message with high level XML and proper markdown formatting. So that way it can be articulate, concise, and know exactly what to prioritize.
+
+Some things in this cold email copy is that I want it to be very straightforward to the point. I want it to be value driven. I wanted to really make sure that we emphasize value first on being able to help provide a solution to the problem.
+
+The solution that we provide is top of funnel where we help companies that are B2B streamline operational efficiencies and making sure that any operations that they have that are manual, such as sales, customer experience, ticket handling, things like that, that we can implement automations around that, including custom AI agents. And this allows them to save time, save money, but also raise their top line as well with B2B outbound sales. Your job is to come up with copy that is around our value proposition, as well as take the markdown format that I am providing to you, which consists of information about their website.
+
+And what I want you to do is to simply draft up a message with no greeting and no sign off, but only the body. Do not say, I hope this email finds you well or anything related to that, because this does not help move the conversation. And frankly, it is small talk that nobody wants to deal with.
+
+With that said, I want you to output only a system message in a code snippet, again, with high level XML formatting and markdown. So that way the AI agent knows exactly what to do. And I'll put this in a code snippet and nothing else.
+
+All right, we will see what we get. So we have these, this is XML right here. This is obviously the goal.
+
+And then it chunks, it basically groups things together to know exactly how it needs to go. And we're going to paste that. Let's make sure it looks good.
+
+And then we're going to say, here is the markdown information about the website. And we are actually going to go back a little bit and we're going to do our fire crawl. We're going to put that in there.
+
+Now what we have is all the information about their website. And we're going to see what that looks like. This is good.
+
+So what we're going to do from here is we are actually going to take this and we're going to streamline a little bit more, come up with a call to action that would be appropriate for the next step. We could do something like, would you be open to learning more? Or do you mind if I send you a video on how this works?
+
+Or would you be open to a discovery strategy on how we can provide these benefits to you? And let's see what that looks like. Looks good.
+
+Now there's a couple of things you can do. You can actually push this to Google Sheets where you can actually just add that as a different row. That way, when you're sending these executions, you can parse everything out.
+
+And then you're scraping data. You're finding the role. You're finding their email address.
+
+And then you're creating good copy just based on this workflow alone. So with that said, we are going to actually just add directly to a campaign. And what I did is I created a campaign here.
+
+We're going to do a quick question. And then we are actually going to go instantly. And if you haven't already found, instantly is actually a node developed by yours truly.
+
+We are in the process of making this official. It's definitely very usable. So if you already haven't found that, please check out my channel and you'll be able to find it there where you'll be able to quickly install it.
+
+With that said, we are going to add lead to campaign and we are going to, we could do from a list here and we're just going to go my campaign because that's what I called it. There it is. We're going to do the find email.
+
+We're going to parse that through. First name, last name. We're just dragging the properties.
+
+And then we are going to do the output as the personalization, which could actually be the entire message. And then we're just going to hit execute step. And there it is.
+
+We'll see here if I were to just hit save. I should actually have first name and we'll say I have first name. And then let's see what it looks like for a personalization.
+
+With this, you can see that the message has passed through. I mean, this is obviously doing the whole damn message. You can do your opener line or you can do the entire message too, which we can format and go from there.
+
+But nonetheless, you can see from start to finish how we've scraped. We found the role. We found the email.
+
+We actually now have a copy agent to put what your value proposition is for whatever business that you're actually doing and what solution you provide. And then we're taking the context of their website and actually applying that. And we're adding to their campaign directly.
+
+All you have to do is just turn on this workflow. I need to have my schedule trigger where I can feed information just simply from the website. And so I've started from a simple URL to be able to go all the way through to outreach.
+
+And so with that said, this is pretty much the workflow. Now, if this got you thinking on how you can really leverage these types of workflows I just demonstrated for you and you want to go a little bit deeper into how you can use something like Instantly to actually automate all of the outbound sales that you need to do in your business, click here to check out the next one where we go way deeper into Instantly's features and the ways you can use the software itself to consistently generate leads and grow your business. See you over there.

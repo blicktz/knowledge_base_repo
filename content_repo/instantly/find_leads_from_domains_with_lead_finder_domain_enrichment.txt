@@ -1,0 +1,39 @@
+Hello everyone! In this video we are going to use domain enrichment feature in LeadFinder. This is a powerful feature which allows you to get more information on your list of domains such as leads that are associated with those domains, more information on industry, company size, etc.
+
+Making your prospecting more efficient and targeted. So first navigate to LeadFinder tool. Just click on the magnifying glass here in your Instantly account.
+
+And on the left hand side, these are all the filters available. But we are going to focus on domain enrichment. Under more filters, you will find the domains option.
+
+This is where you want to input the list of domains that you want to enrich. Now it's possible to enter just a single domain if you want to find a specific person from a specific company. But in this video we are going to demonstrate how to use it with a list of domains.
+
+So for larger list of domains you can use a csv file. Simply click on upload button, upload domains, and attach your list of domains here. Now how to obtain your domains?
+
+There are a few ways. You can get them from online data sources such as Clutch, then GoodFirms, TheManifest, Crunchbase, and so on. I will list this in the description.
+
+And also it's important to find the databases that have the website available which you can then scrape. And to scrape these websites you can use some third-party tool. I'm using Octoparse and also DataMiner, but there are plenty other available online.
+
+So I'm going to demonstrate how to get the list with Octoparse. So I have created a search here in Clutch. There are plenty filters here that you can use.
+
+I created a search for Facebook advertising agencies. Simply copy the URL link and paste it into a new task in Octoparse and click Save. Now the web scrape is to work like this.
+
+It will map the page. You just want to auto-detect web page data. And once it detects the elements of the page, you can tell it what to scrape for.
+
+So just pay attention that the website is included in the scraping results. I'm going to show you in a second how that looks. Okay, so just check the list underneath your search.
+
+This is the section where you want to look for and the websites are here. So the websites will be included in the results. Now you can just create the workflow and click on Run.
+
+If there are any next pages in your search, you can tell the scraper to click on a next page in order to obtain the total results available. And click on Run. Standard mode and now the Octoparse will start generating data.
+
+I already completed this step. So I'm just going to continue and upload the CSV file with the same results to LeadFinder. So I'm back to LeadFinder here.
+
+I'm going to click on Upload CSV. Select my file here. Select the column which contains the website.
+
+Select the column. Now it detected over 3000 domains in the list. So I'm going to use some filters to narrow down the search such as SEO, Founder.
+
+You can also use anything else if you haven't already used them in your initial search on the database. But since I already used industry and the size within the clutch, I'm just going to use the titles filters here. And this is really it.
+
+Now the rest, it's really easy. Just select the results and add them to campaign. And this is how you use the domain enrichment feature in LeadFinder tool.
+
+So it is designed to make your prospecting more efficient and targeted and also helps you launch the campaign in just minutes. So if you find this useful, we'll be uploading many more cold email videos like this. Make sure to like and subscribe.
+
+And if you have any questions, just write them in the comments. We will reply. Thanks for watching.

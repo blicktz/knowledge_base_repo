@@ -1,0 +1,23 @@
+A few weeks ago, Google announced new policies that they're implementing in 2024, which could have a big impact on the way many are going to use cold email. Many are calling for the death of cold outbound, and others are saying that companies will have to change their overall strategy for lead generation. In this video, I'm going to reveal to you what changes Google had announced that has caused such a stir-up and what this means for you as a marketer.
+
+First, let's look at the authenticating email space. Google and Yahoo will require mass email senders to authenticate their email using security protocols like SPF, DKIM, and DMARC. Basically, what this does is it helps authenticate email senders by verifying that the emails came from the domain that they claim to be from.
+
+These three authentication methods are important for preventing spam, phishing attacks, and other security email risks. So here it's saying we need to set up the SPF and DKIM email authentication for the domain, and we also need to set up the DMARC email authentication for your sending domain. Next thing that it talks about is the one-click unsubscribing.
+
+So both email providers will ask you to offer your subscribers a one-click unsubscribe option in every message you send, meaning instead of confirming unsubscribe, making it confusing, they have to jump through a few hoops, you have to be able to just click unsubscribe and they'll be off the list. Next thing they talk about is honoring the unsubscribes promptly. You'll have to process the unsubscribes within two days, meaning instead of milking it, they need to be off the list ASAP.
+
+The next thing is a low spam complaint rate. So to ensure you send emails that people actually want, the two providers are enforcing a clear spam rate threshold of 0.3%, meaning if you send a thousand emails, if just three of them say that this is spam, then your emails are going to be in trouble. So what does this mean for you as a cold emailer?
+
+This isn't a big deal if you know how to bypass it. If we pull up what Google sent out, if we look at, do these sender guidelines apply to messages sent to Google Workspace accounts? The answer is no.
+
+It only applies to sending to personal accounts. So if you're watching this, you're likely not sending emails to personal Gmail accounts, but you're sending them to business accounts, Workspace accounts. It clearly lays out that this only applies toward personal and not Google Workspace emails.
+
+Next, we want to make sure that we have a strong email pool that we're sending from, meaning we don't just have three emails in our instantly, but have several that we can rotate through to prevent our emails from being marked as spam, as well as not blasting 5,000 emails per day with one email. We should aim for 50 emails per day per email. And if you're warming them up properly, you will be in good shape.
+
+0.3% really isn't that bad and can be resolved by ensuring we have enough emails, as well as are rotating them based on the sends inside of your campaign. Next, let's talk about the authenticating it with the DKIM and the DMARC and the SPF records. Good thing for you guys, Instantly Accelerator has a whole document on how you can do this step-by-step and make sure that your emails are in fact authenticated and you will be in good shape sending emails.
+
+So again, not an issue whatsoever as it pertains to the authentication method that Google is putting into place. Everyone has been saying that cold email has been dead for the last 10 years, when in reality, the people who perform always go back to the fundamentals. A good offer, good copy, a good technical setup in targeting the right people.
+
+If you'd like to check out the cold email software that can help you bypass all these recent Google changes to ensure that your domains do not get flagged, you can check out instantly.ai. Link is in the description. Also, click on this video if you wanna learn how to cold email to get clients in 2024.
+
+I'll see you in the next one.

@@ -1,0 +1,207 @@
+I've sent over 3 million cold emails over the past eight years. And this video is a culmination of my years of knowledge around cold email, sales. I want us to start off with the buyer and seller persona.
+
+It helps you tailor your outreach, your methodology, because you understand who the person is that you're reaching out to. And if you don't, then that's going to directly negatively impact your whole process. The more you understand who's buying, the more you get in their shoes, the more your reply rate will increase, the more meetings you'll book, the more sales you'll close.
+
+I just threw together a quick example of what this buyer persona could look like. It can be much, much longer. This is just a snippet.
+
+Let's look at this. I have their job title, key responsibilities, their industry, their demographics, and what their aspirations are, their pain points. So you've developed this whole buyer persona.
+
+Now you need to ask yourself before you even start going any further, will this individual check their email? I had a client that I was working with who was a software company. And with them, I was building campaigns to reach out to CTOs of large organizations.
+
+Let's say 10,000 or more employees. I didn't consider if they would actually have the time or desire to respond to cold emails. That negatively impacted me.
+
+I had to really work on my targeting and massage it because my original intent didn't take into consideration that this individual is part of a massive organization and doesn't have time to really check their email. And if they do, they're putting out fires. They don't really care about products that are being served.
+
+But that's why it's important to understand and consider, is the individual I'm trying to reach out to actually going to check their email? So the next part is defining your seller persona. The seller persona is something that people already have like a rough understanding of.
+
+We know what the product is and what we have to offer. But the more refined you can have that, the more you know what makes you stand out, the more you know what pain points you're solving and what your brand voice is and what your strengths and what your weaknesses are. Even what the sales cycle is like, does it take three months for your product to be implemented?
+
+Does it take six months to sign a contract? Taking the time to define your seller persona is very important as well because you might have all these thoughts in your brain, but the water might be a little muddy. So bringing that clarity, either through documentation or verbal recording or however you do it, I really recommend it because it'll help you significantly.
+
+Now, unique selling proposition. And what are you offering that people can't say no to? Identifying this and breaking it down is super helpful in your messaging.
+
+You can look at your competitors and see what they're doing. You can use AI to help you come up with ideas. You got to figure out what's going to make you stand out in the noise.
+
+When I'm referencing partnering with AI, what I'm talking about is once you've roughly defined your buyer and seller persona, you can take that information over to, let's say, chat GPT, for example, give it what you have so far and ask it to help you to further define and refine your buyer and seller persona. This can really help. And it sometimes is a great strength that you can rely on when it's maybe a weakness of yours defining these things.
+
+Defined your buyer and seller persona. You've identified that your buyer does check their email and this is worth your time. Now we're going to get into the setup.
+
+The foundation of all this is what's your budget? Your budget's going to impact how much you can pay for data, how many domains and emails you can have. It's going to impact your CRM.
+
+Defining your budget is important. If you're a sole practitioner, I'd say comfortable range would be probably be like three to five hundred. So you have your budget defined.
+
+Let's get going. You need to buy domains. Why you need to buy domains is let's say you work for Bob's Electric.
+
+Only having one domain is going to constrain you because if you're doing cold email outreach and you get that domain blacklisted, then the company itself with its existing customers may not be able to have interaction because your emails going to them will go to spam or theirs coming to you will go to spam. As a protocol to protect your main domain, you buy multiple domains and have them forward to your host one. What this allows you to do is as you're doing your cold email outreach, if one of these secondary domains gets burned or blacklisted, it doesn't impact the core business.
+
+Some people buy five domains. Some people buy 10. Some people buy hundreds.
+
+It depends on the quantity of outreach that you want to do. It's suggested that you might do three to five emails per domain that you purchase. An important note when buying domains is they need to be warmed up just like email accounts.
+
+Don't buy a domain and then just instantly start blasting. You need to give it some time. The name of the domains.
+
+Try to make variations of let's go back to Bob's Electric. So you can make it bobselectrician.com or you can use chat GBT to come up with these ideas and then take it over to your domain host and figure that out. Now you've got to set up your email accounts.
+
+You've got to decide who you're going to be using as an email provider. Are you going to use Gmail? Are you going to use Outlook?
+
+Register and buy as many accounts as you want in correlation with how many domains you're buying. Now you're going to have to format your accounts with your domains. You don't want all your Gmail accounts to say tim at gmail.com.
+
+You want it to be Tim W at Bob's Electric or Timothy at Bob's Electric. You've got to format it so that those domains that you just bought are attached to the end of your email accounts. How you do this is through your DNS records, your SPF, your DKIM, and your DMARC.
+
+These are all extremely important factors in your deliverability. Once you get the URL synced with your accounts, then you've got to go into the DNS records and make sure these are all in place. Now you need to warm up your accounts.
+
+You want to show that there's emails coming in and going out. That's what email warmups do. They help prove the reputation is positive of your domain and that it's not millions of emails going out and none coming back.
+
+How long you should do this for is debated. I personally do four to six weeks and then I start my campaign slowly. This is up to you and you've got to figure out what works for you.
+
+Instantly offers an excellent warmup tool. Before you start sending cold emails, you can actually check your reputation. For example, let's say you have a campaign that's performing super good and then all of a sudden just tanks.
+
+No responses, high bounce rate. It probably means you're blacklisted or you have a bad reputation. So you can use tools like this to help you find out and understand what the problem is and seeing if you can solve it.
+
+But you definitely want to check up on your reputation regularly. When you've defined your buyer persona and you go to a database and you look up how many people there are of that specific niche of individuals, if it's 5,000 or 10,000 people, then it's probably enough for you to be able to run a cold email campaign. If it's below a thousand, you're going to have to run hyper personalized messaging because you don't have a lot of margin for error.
+
+So you're going to have to spend more time on really making sure each individual email is almost handwritten. Building your database, you can do this with many tools out there, Seamless AI or Dun & Bradstreet. I personally use Instantly's Lead Finder.
+
+I love it just because it's all on one platform. You might have to get a little creative. You could look at public directories, buy it from other people.
+
+The other thing you need to consider is that data ages quickly. So when you buy information, you want to know how old it is because the older it is, the chances of the quality being high are not as good. After you've built your database of emails that you're going to be reaching out to, you need to verify.
+
+There are a lot of verification tools out there. But why this is important, the first is spam traps. So blacklists will put out fictitious emails into the ether.
+
+And when people buy databases, they most likely will buy a spam trap. And if you email that spam trap, you'll instantly be blacklisted because you're in their minds spamming. The other reason is if you buy a database and it's old data, you want to make sure the emails you're reaching out to are actually current.
+
+And the verification tool is there to help you do that, which allows your bounce rate to be lower, which means you're not going to be going to spam as much. If for some reason you forget to do this or a campaign isn't running well, you can verify your database with a couple providers just to really clean it out. But you definitely need to have this as part of your process before starting a campaign.
+
+Now at this stage, you need to find a cold emailing software. So I like instantly, it just solves so many problems. But there's other providers out there.
+
+You need to find one that suits your budget. Do not try to use a newsletter software like a cold emailing software. It's not going to work.
+
+When it comes to the email signature, you need to do it within your cold emailing software and in your actual email providers. Here are some examples. The one with Linda, if I was reaching out to realtors, I would probably try to make my signature look like most realtors' emails just because I want to make them feel the level of professionalism is equal to them.
+
+I do like John Doe's as well because it's more text-based. There's tons of tools out there that will help you find these and give you ideas of what this could look like. After you've done that, CRMs is next because you want to manage and take care of all the work that you've done.
+
+And if someone's positively replying to your campaigns, you don't want them to go to the wayside. So you need to take the time to sync up a CRM to your software or with instantly, the CRM is instantly built in. But you need to have it so that you can make sure you're on top of your leads and you're generating good relationships.
+
+Also, just real quick, I just want to show you instantly CRM just as a rough example of tracking leads and seeing what's going on. It's really important that you understand CAN spam or if you're cold emailing in Europe, the GDPR. You got to look into how you can be legally compliant so you don't get yourself in trouble.
+
+I've taken a few pictures. You can pause and read through this if you want or go out and Google CAN spam and the regulations. Blacklists.
+
+This is an aspect of cold emailing that you just need to get familiar with because it's a push and pull. There are a huge amount of blacklists out there. There are tools to help you find out if you've been blacklisted.
+
+For example, on here there's Dan Tor. If you get listed by Dan Tor, go to their website and find out why you've been listed. The terms might not actually apply to you and you can actually petition them and ask them to remove it.
+
+Some of them you have to pay. There's no way you can get off of them. It's important for you to understand that this is why we buy multiple domains because if something gets blacklisted, we can either let it rest, put it to the side, or just get rid of it if we can't get this solved.
+
+When you're reaching out to people and if they are piqued up, interested in wondering why this random person is emailing me, they're probably going to Google you and you want to know what they're going to find. What is this buyer persona going to find on you when they Google the company's name or your name, when they look at your LinkedIn? So it's important that you take this into consideration because you're trying to be in their shoes.
+
+You're like, what are they going to find on me? Taking the time to an incognito window, Google your company or Google your name and figure out if you need to clean up some links or make more content so that you're popping up when searched. Something you need to consider because you want to control the whole sales process.
+
+Now we get to get into the part where you start building for the outreach part. This is where you get to write, you test, and you sell. This is where the money's made.
+
+If you don't feel like you're a good copywriter, go out there and learn from other copywriters. If you're looking for ideas, use AI to give you ideas. This is an art form that you need to give yourself time and space to learn how to do.
+
+Your follow-ups. I just want to show you a few ideas for follow-ups. When you're doing follow-ups, it can be hard sometimes.
+
+Some people use case studies in their follow-up messages. Some people ask more questions. But these are just a few examples I wanted to show you of a fictitional outreach.
+
+When you're following up with people, get creative and try not to have your messaging sound like you're needy. Make sure that you're coming from a position where you're wanting to solve pain points, not wanting to get sales. When it comes to the subject line, I personally like a subject line that's one to three words long with no capitalization.
+
+Others like it up to six words. They use capitalization. They use their names.
+
+But the subject line is your initial point of contact. Think if your buyer persona is holding their phone and they're looking at their email application. How many words are they going to see?
+
+A lot of people use quick question. It's very important that you provoke the open because that's what you need in order to get the engagement and responses. Don't just brush over this quickly.
+
+Take your time. Craft a good subject line and test it out and see what's actually working for you. With the length of an email, what's worked in my campaigns is keeping my emails between 50 and 70 words in length.
+
+That's not including the signature. When you're writing your emails, you need to make sure that you're staying away from spammy words. This could be free cash or urgent.
+
+There's tons of lists out there that suggest what is a spam word. There isn't an actual index where it says these are for sure spam words because there's so many blacklists that have different filtration systems. Don't use links in the first email if possible.
+
+The more links you use in an email, the higher the chances are it goes to spam or the person who's reading it or opens it thinks it's spammy. In general, I try to use links in the second to fifth email. You can try, but the less links, the better.
+
+The next category is personalization. Personalization. The extent to which you go to personalize a message.
+
+I find it you can over personalize messages, but there are lots of standard ways to personalize a message. You know, first name, name of business, location. So my suggestion is if you're going to go down the personalization route, you do it in such a way that makes the person believe and know that you really understand them.
+
+Now, have fun with your email copy. I was doing campaigns for a payment processing company. It's a highly saturated market.
+
+It's hard to get people to respond and get on the phone. I just got fed up with it and started to have fun. I decided to write a campaign that was all based around pizza.
+
+After months of hitting my head against the wall, I finally had a campaign that was working well and it came out of a place of just having fun. My subject line was pizza, one word, all lowercase. And the content was asking someone about their favorite pizza and me trying to quantify the value I bring to them through their pizza.
+
+It was a shot in the dark, but it worked and I had fun. So you've written your email. You've written your copy.
+
+Now, before you get it into your email software, you need to test it. Use this site to test it. Here's what it looks like and this is what you want to see it.
+
+It's just really good to use this tool as a safety guard before moving forward. Knowing your provider's limits. What this is referencing is Gmail, for example, you probably don't want to send more than 30 to 50 emails a day on an account that's been warmed up.
+
+Some people only send 10 emails a day from accounts. That's why they have so many. Knowing what your provider's limits are, though, is an ever-changing landscape and their rules, too.
+
+So you need to make sure that you're current on this so that you don't waste your money and time locking up all your accounts and burning all your domains. Take the time to know what the limits are. Work within them or well below them so you never get in trouble.
+
+So you've got this all built. Your campaign's up and going. You need to scale with caution.
+
+Your account's been warmed up and you start your first campaign. Let's say you send five emails a day. In a week, you send 10 emails a day.
+
+You need to just think of it like a ramp, slowly moving up. The more you proceed with caution, the more your domain's reputation is going to look healthy. Rather than if you buy a domain, set up the emails, and you start sending 10,000 a day.
+
+It's going to instantly just go down. But if you take the time to build the domain strength and build your account's reputation, then be able to deliver more and more. When it comes to negative feedback, monitor your bounce and unsubscribe rates.
+
+If your bounce rate is very high, even if it's over 5%, 3%, even, sometimes I will go back and re-verify my list because it's telling me that my list isn't good. Sometimes you can actually read the bounce messages back and it'll tell you why they're bouncing. It might say that the email address no longer exists.
+
+It might say that the company's firewall or security system won't allow it through. When it comes to unsubscribe, if you have a high unsubscribe rate, that means you're probably targeting the wrong people or your copy isn't good. So make sure you monitor these because they're negative feedback per se, but they actually help you tweak and alter your course to make sure that you get closer to success.
+
+So these are good metrics to follow. When it comes to positive metrics, I like to only look at my response rate. Open rate is kind of a vanity metric in my opinion because you don't know what security systems out there are actually opening emails before getting delivered to someone.
+
+And someone just clicking on an email and closing it right away, I don't really care about that as much as I care about the response rate. The thing about response rates is some industries are very saturated and it takes high quantities to get a couple meetings. If your campaign you're running, you've tried everything and you're only getting a 1% response rate, then you can just increase your volume if you have to.
+
+Monitor it and make decisions moving forward on what you want to do and how you want to do it. Using AI like ChatGBT, eBard, you can use it to give you ideas for your email copy. You can say, hey, this is a five email sequence.
+
+I'd love to make it seven. Using images and videos, is this something that you should do? My suggestion would be that images in a first email isn't recommended.
+
+Videos sometimes, but generally speaking, in a reply sequence, I prefer to put images, links, videos. That would be my suggestion in approaching that because I find that the first email is the one that actually gets me into their inbox. And then after that, I can do a little more risky type of content that might have previously put me in the spam box.
+
+Using Spintax, it's a way to create that there are multiple variations of the same email going out so that it looks like there's unique emails being sent from your email account. It reduces the chances of you being blacklisted or going to spam because it looks like you're writing every single email individually. Here is a prompt that I use with ChatGBT.
+
+I wrote a fictitious email. I like to Spintax multiple words rather than just one word. I find that it helps the structure of the sentence do better.
+
+I'm going to hop over into Instantly now and show you what this looks like actually on the platform. You're going to use Spintax. Make sure the software that you're using actually supports using Spintax.
+
+You can also Spintax the subject line if you like. And every time I click on preview, it's going to actually change the messaging. I'm actually using Instantly to read through all the different variations, but I try to make sure and read through that every single variation stays congruent with the original message.
+
+And that can be hard to get the AI to do. And within Instantly, I can just keep seeing different variations. And I like that.
+
+Now the fun part. You get to build your campaigns. Now, I recommend you do three to five at least emails for your original reply sequence.
+
+Some people do drip. Some people do seven emails. Some do 10.
+
+Some do 20. I did one campaign where I was reaching out once every two weeks for like six months. You need to also consider when you're creating these campaigns, what time of day should I reach out to these people?
+
+I would test and try things. Personally, I find people are more positively responding than the 9 to 12 a.m. But it's like if I'm targeting nationwide, different time zones, it can get a little hard.
+
+But I try to stay away from Mondays personally. Why I wanted to touch on defining your goals real quick. If your goal is to get 10 sales meetings a week, this is going to motivate you to get from the one meeting a week you're getting to the 10.
+
+You're going to try to figure out, is it the volume I need to send? Is it my email copy? Is it my bounce rate?
+
+All of this will be motivated by your vision and your desire and your goal of the outcome. So it's good to connect with it because it will help you through some of the tedious tasks and the headaches that you're going to encounter. How quickly you reply to positive responses will impact directly your chances of closing or getting them on a call.
+
+Instantly has an amazing tool for this. It actually is an AI autoresponder for any positive response because it makes sure it's under that five minute mark, which I highly suggest that you can try to get to. Why it's helpful to have an AI help on that is if you're running a large campaign and having hundreds of responses, it helps you quickly manage that response and getting it under that time limit.
+
+If you're doing inbox management by individually signing into 50 different Gmail accounts, let's say for an example, it's going to be really hard to do that. You need a unibox. Instantly has a unibox.
+
+There are other uniboxes out there, but you need a centralized location where you can just check and maintain and make sure that you can quickly respond. You got to take the time to test and adjust and tweak. You got to figure it out.
+
+Is your database working? Are people responding but not getting on a call? What's the psychology of what's stopping them from getting on a call, but they're responding to the message?
+
+Is it how you're presenting it yourself? Is it the language you're using? These are all important factors that need to be taken into consideration.
+
+If you're always talking about yourself, why would anybody respond to that when it's supposed to be all about the buyer, not the seller? What can you do to provoke that conversation? What can you do to provoke them to open the email?
+
+What are they going to find? These are all factors that you need to take into consideration. And as you start this journey, continue to take that into consideration until you start hitting those goals.
+
+And once you start hitting those goals that you want, then go back and reassess and see if you can do better or create new goals to achieve for. But overall, I can literally write everything for you and do this whole process for you. I would still have to take the time to test and adjust.
+
+No matter how seasoned you are, every single outreach is a little unique and you have to figure out what's working. Now, my desire is that after you've watched this video and you've implemented what we've covered, that you look like this cold emailing master guru god. But if you're curious about the main software that I use, which is Instantly AI, you can click here for a full tutorial on how to use Instantly as your cold emailing software to reach out to thousands of people every day.
+
+I'll see you in the next one.

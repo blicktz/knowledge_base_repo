@@ -1,0 +1,67 @@
+Hi. In this video, I'm going to explain how to connect Google domain to your Google workspace. And this is important if you want to create email accounts to send from, you need to connect your domain to your email workspace.
+
+This is why we are doing this. But if you bought your Google domain with workspace, with Google workspace service as a service, the process may be different for you. Essentially, you want to go ahead and check your domain, go to DNS and see if all the records are there.
+
+You should have the Google workspace section and MX, SPF and DKIM records in place. And then you can go ahead and manage custom records, add the DMARC and custom tracking domain. Now I'm going to do it from scratch for everyone who bought the domains without the workspace.
+
+So these domains need to be connected manually to Google workspace. So let's get started. First, you can start by forwarding the domain to your main page.
+
+And this is done by going to website and then clicking add forwarding address. Let me delete this one and show you how to actually do it from scratch. So when you click on website, click on forward domain and then just enter your primary website to your URL, the website you want to delete to open when they Google your when they enter your sending domain into the browser URL.
+
+In this case, I'm going to enter the instantly website and just paste it, click forward. And this is all you need to do. Now let's get started by connecting this domain to work workspace.
+
+Now open your Google admin workspace. So this is where you have all the domains connected, where you have your user accounts, email accounts created. Log in with the admin email account and go to domain section.
+
+So simply click on the search bar. You can access any section from the search bar. Just type in domains.
+
+Click on manage domains. Click on add domain. And we are going to add the new domain here and select secondary domain as a type.
+
+Click add domain and start verification. Now the Google verified it. Just you can log in in the same tab.
+
+So the verification goes quicker. Now click on activate Gmail. Set up MX records and click next.
+
+Sign in to activate. Click yes connect. So Google will create these records automatically.
+
+So it's really a simple process. Go to Google workspace. Now if you go back to your Google domains page with DNS, reload the page.
+
+And let's see. So here's the Google workspace. Here are the records.
+
+And now we are just going to create the DMARC record and custom tracking domain. So there's a section custom records. And this is where you enter all the other records that are not from Google workspace.
+
+We can add the CNAME here and the DMARC here. So for DMARC enter the hostname underscore DMARC. Type is TXT.
+
+And the data. And the data. And the data.
+
+You can copy it from our articles or you can generate it by using Easy DMARC. So if you want to copy it from the article, simply search for DMARC in our help center. And here it is.
+
+So you can copy this section. And if you want to generate it, you can generate it with Easy DMARC. So DMARC record generator.
+
+Click there. Enter your domain. So keep the policy to none.
+
+This is where you want to send the reports to. This is not mandatory, but Easy DMARC is asking you to enter here so you can remove this tag later on when you enter it in the section here in the DNS. So I'm just going to enter the email address I'm going to create for this domain.
+
+This is going to be non relaxed, the same, the 100 and. And you can keep this on one so you can receive the reports if DKIM or SPF don't pass or align. So click on generate.
+
+Here's your record. You can disregard these warnings. This record is completely enough for cold emails.
+
+So paste it here. Now you can delete this email address if you don't want to receive the reports and click save. And then just one more record we need to create.
+
+Create new record is custom tracking domain. And you get that info when you log in to your instantly. So when you click on your account and go to settings, you will see the custom tracking domain section.
+
+And just copy the data from here. So the record is CNAME, the host is INST, and this is the value.ori move. All right.
+
+Click save. Okay, this seems good. So this is verified.
+
+Gmail is activated. Let's just double check the records here. So we have the DKIM.
+
+Let's see if DKIM is activated here in Google. Simply click on DKIM. And find the domain.
+
+Yep, this is activated. So all you need to do is just to check if all the records have been propagated. And you're good to go.
+
+You can create your email accounts. So let's just quickly check the records. Go to EasyDemark.
+
+And then click on Domain Scanner. So here is our domain. SPF is here.
+
+DMark as well. And DKIM. So everything looks good.
+
+Now you can simply go ahead and get more user accounts with this domain. And then follow the instructions to connect your Google accounts to instantly.

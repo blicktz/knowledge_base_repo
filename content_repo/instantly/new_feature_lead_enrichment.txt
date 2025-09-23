@@ -1,0 +1,15 @@
+Hey guys, Rayo from Instantly here and today I'm super excited to talk about a new feature we just launched which is the lead enrichment feature. So a lot of you that are already familiar with just lead finding, lead mining in general are probably familiar with this concept as well of enriching leads. So basically what it is, is let's say you have a lead list and you only have let's say a person's first name, last name, maybe their company website and that's it.
+
+And now you kind of want to find their email, you maybe want to find other bits of information about them and that's where enrichment comes in. So if you go into Instantly and you go to the lead finder section and then you switch to the enrichment tab so here's where you'll be able to use this new feature. So basically what you want to do is you want to click on create new list.
+
+You can call your list whatever you want, you click on create and then as usual you have two options CSV or Google sheets. We're going to go with the CSV option for now and yeah it's going to show your lead finder credits here and what that means is that every enriched lead uses one lead credit and if the enrichment fails we don't charge a credit for it. So yeah you just want to choose a CSV that you want to use.
+
+So I have one ready here and then what you want to do is map all of these variables. So let's say in my case as I said I have the first names, I have the last names and then I have the company websites as well. So you want to make sure that these are mapped correctly and as it says here we kind of need one of these three options from you.
+
+We either want you to have first name, last name, company name or LinkedIn URL or email. So either of these combinations work fine but you need at least one of these three to be available. So in my case I have the first option right, I have these available, these are mapped correctly, I click on upload all and it will create a list here.
+
+So as you can see all the enriched ones are going to show up here. The ones that still are loading will show like the pending status here but basically all leads that failed enrichment like we didn't find them in our lead finder will be deleted from here automatically. So you will only have the enriched leads here and now what you can do is as usual you can select all the results, push them straight into a campaign or like create a new one.
+
+You can also download the CSV back and yeah like when I uploaded the list I only had the first name, last name and the company website right. But now I have all these extra bits of information available that I can use in the outreach. I can even call them and all that good stuff.
+
+So yeah so that's pretty much how the new feature works. I'm excited to hear what you guys think about it and yeah always if you have any feedback please let us know and thanks so much for watching. Bye bye.

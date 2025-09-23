@@ -290,8 +290,8 @@ Your primary goal is to synthesize the raw data from the <candidate_models_json>
 **Consolidation Algorithm:**
 1.  **Analyze & Cluster:** First, carefully review all candidate models provided. Group them into clusters where each model in a cluster represents the same core framework, even if the names or details are slightly different.
 2.  **Synthesize Each Cluster:** For each cluster of candidate models, you must create one single, master version. Merge the descriptions into a single, clear statement. Combine and refine the `steps` into a single, logical, and de-duplicated sequence.
-3.  **Aggregate Data:** Combine all unique `application_contexts` and `examples` from the cluster into unified lists.
-4.  **Calculate Final Scores:** For each consolidated model, calculate the `total_frequency` by SUMMING the `frequency_score` of all candidates in its cluster. Calculate the final `confidence_score` by taking the AVERAGE of the `confidence_score` of all candidates in its cluster.
+3.  **Aggregate Data:** Combine all unique `categories` from the cluster into unified lists.
+4.  **Calculate Final Scores:** For each consolidated model, calculate the `total_frequency` by SUMMING the `frequency` of all candidates in its cluster. Calculate the final `confidence_score` by taking the AVERAGE of the `confidence_score` of all candidates in its cluster.
 5.  **Filter & Rank:** Apply the filtering logic based on the `CONSOLIDATION STRATEGY: {strategy}` and `FREQUENCY THRESHOLD: {min_frequency}`. Then, rank the resulting models and select the `TARGET COUNT: {top_k}`.
 6.  **Format Output:** Format the final ranked list into the required JSON structure, providing all required fields.
 
@@ -303,9 +303,8 @@ You must generate a final JSON ARRAY containing multiple consolidated models. Ea
 - **`name` (string):** The final, most common or clearest name for the framework from the cluster.
 - **`description` (string):** A comprehensive, synthesized description that combines the best elements from all candidates in the cluster.
 - **`steps` (array of strings):** A de-duplicated and logically ordered list of steps that represents the complete framework.
-- **`application_contexts` (array of strings):** A combined, de-duplicated array of all unique contexts from the cluster.
-- **`examples` (array of strings):** A combined, de-duplicated array of the best and most illustrative examples from the cluster.
-- **`total_frequency` (integer):** The SUM of all `frequency_score` values from the original candidates that were merged into this final model.
+- **`categories` (array of strings):** A combined, de-duplicated array of all unique categories from the cluster.
+- **`total_frequency` (integer):** The SUM of all `frequency` values from the original candidates that were merged into this final model.
 - **`confidence_score` (float):** The AVERAGE of all `confidence_score` values from the merged candidates, rounded to two decimal places.
 - **`batch_sources` (array of strings):** An array of strings listing the `batch_source` of *every* candidate that was merged into this final model.
 - **`consolidation_notes` (string):** A brief, one-sentence explanation of how the model was consolidated (e.g., "Merged 3 candidates related to the '3-P Framework'").
@@ -316,15 +315,15 @@ You must generate a final JSON ARRAY containing multiple consolidated models. Ea
 <input_block>
 <candidate_models_json>
 [
-    {{"name": "The 3-P Launch Method", "description": "A framework for launching products.", "steps": ["1. Plan priorities.", "2. Protect time.", "3. Perform with focus."], "application_contexts": ["Product Launches"], "examples": ["SaaS launch"], "frequency_score": 8, "confidence_score": 0.95, "batch_source": "batch_001.txt"}},
-    {{"name": "My 3-P Framework", "description": "How to execute on a project.", "steps": ["1. Plan the work.", "2. Protect your calendar.", "3. Perform the execution."], "application_contexts": ["Project Execution"], "examples": ["My last big project"], "frequency_score": 6, "confidence_score": 0.90, "batch_source": "batch_005.txt"}}
+    {{"name": "The 3-P Launch Method", "description": "A framework for launching products.", "steps": ["1. Plan priorities.", "2. Protect time.", "3. Perform with focus."], "categories": ["Product Launches"], "frequency": 8, "confidence_score": 0.95, "batch_source": "batch_001.txt"}},
+    {{"name": "My 3-P Framework", "description": "How to execute on a project.", "steps": ["1. Plan the work.", "2. Protect your calendar.", "3. Perform the execution."], "categories": ["Project Execution"], "frequency": 6, "confidence_score": 0.90, "batch_source": "batch_005.txt"}}
 ]
 </candidate_models_json>
 </input_block>
 
 <output_block>
 <thinking>
-The two candidate models clearly refer to the same "3-P Framework". I will merge them into a single cluster. I will synthesize the name to "The 3-P Framework" and combine the descriptions. The steps are similar, so I will merge and refine them. I will create a unique list of contexts and examples. I will calculate the total_frequency by summing 8 + 6 = 14. I will calculate the average confidence score as (0.95 + 0.90) / 2 = 0.925, which I'll round to 0.93. I will list both batch sources.
+The two candidate models clearly refer to the same "3-P Framework". I will merge them into a single cluster. I will synthesize the name to "The 3-P Framework" and combine the descriptions. The steps are similar, so I will merge and refine them. I will create a unique list of categories. I will calculate the total_frequency by summing 8 + 6 = 14. I will calculate the average confidence score as (0.95 + 0.90) / 2 = 0.925, which I'll round to 0.93. I will list both batch sources.
 </thinking>
 <json_output>
 [
@@ -332,8 +331,7 @@ The two candidate models clearly refer to the same "3-P Framework". I will merge
         "name": "The 3-P Framework",
         "description": "A three-step framework for launching products and executing on projects by planning priorities, protecting time, and performing with focus.",
         "steps": ["1. Plan priorities and the work.", "2. Protect time on your calendar.", "3. Perform with focused execution."],
-        "application_contexts": ["Product Launches", "Project Execution"],
-        "examples": ["SaaS launch", "My last big project"],
+        "categories": ["Product Launches", "Project Execution"],
         "total_frequency": 14,
         "confidence_score": 0.93,
         "batch_sources": ["batch_001.txt", "batch_005.txt"],
@@ -367,8 +365,8 @@ Your primary goal is to synthesize the raw data from the <candidate_beliefs_json
 **Consolidation Algorithm:**
 1.  **Analyze & Cluster:** First, carefully review all candidate beliefs provided. Group them into clusters where each belief in a cluster represents the same underlying principle, even if the wording of the `statement` is different.
 2.  **Synthesize Each Cluster:** For each cluster, create one single, master belief. Your most important task is to write a new, elegant `statement` that captures the core idea of all candidates in the group.
-3.  **Aggregate Data:** Combine all unique `evidence` quotes into a master list and select the most powerful 1-2 quotes. De-duplicate all `related_topics`.
-4.  **Calculate Final Scores:** For each consolidated belief, calculate the `total_frequency` by SUMMING the `frequency_score` of all candidates in its cluster. Calculate the final `confidence_score` by taking the AVERAGE of the `confidence_score` of all candidates in its cluster.
+3.  **Aggregate Data:** Combine all unique `supporting_evidence` quotes into a master list and select the most powerful 1-2 quotes.
+4.  **Calculate Final Scores:** For each consolidated belief, calculate the `total_frequency` by SUMMING the `frequency` of all candidates in its cluster. Calculate the final `confidence_score` by taking the AVERAGE of the `confidence_score` of all candidates in its cluster.
 5.  **Filter & Rank:** Apply the filtering logic based on the `CONSOLIDATION STRATEGY: {strategy}` and `FREQUENCY THRESHOLD: {min_frequency}`. Then, rank the resulting beliefs and select the `TARGET COUNT: {top_k}`.
 6.  **Format Output:** Format the final ranked list into the required JSON structure, providing all required fields.
 
@@ -379,11 +377,10 @@ You must generate a final JSON ARRAY containing multiple consolidated beliefs. E
 
 - **`statement` (string):** The final, master statement of the belief, synthesized to be as clear and profound as possible.
 - **`category` (string):** The single, most fitting category for the synthesized belief from the merged group.
-- **`evidence` (array of strings):** An array containing the BEST 1-2 verbatim quotes from across all merged candidates.
-- **`total_frequency` (integer):** The SUM of all `frequency_score` values from the original candidates that were merged into this final belief.
+- **`supporting_evidence` (array of strings):** An array containing the BEST 1-2 verbatim quotes from across all merged candidates.
+- **`total_frequency` (integer):** The SUM of all `frequency` values from the original candidates that were merged into this final belief.
 - **`confidence_score` (float):** The AVERAGE of all `confidence_score` values from the merged candidates, rounded to two decimal places.
 - **`batch_sources` (array of strings):** An array of strings listing the `batch_source` of *every* candidate that was merged into this final belief.
-- **`related_mental_models` (array of strings):** A list of names of any mental models that appear to be directly related to this core belief, based on the evidence and topics. If none, provide an empty array.
 - **`consolidation_notes` (string):** A brief, one-sentence explanation of the consolidation (e.g., "Merged 2 candidates about the importance of action over planning.").
 
 ---
@@ -392,26 +389,25 @@ You must generate a final JSON ARRAY containing multiple consolidated beliefs. E
 <input_block>
 <candidate_beliefs_json>
 [
-    {{"statement": "You must act to get information.", "category": "entrepreneurship", "evidence": ["Action produces information..."], "frequency_score": 9, "confidence_score": 0.95, "batch_source": "batch_001.txt", "related_topics": ["lean startup", "validation"]}},
-    {{"statement": "Launching is better than perfect planning.", "category": "entrepreneurship", "evidence": ["You learn more from a failed launch than a perfect plan..."], "frequency_score": 7, "confidence_score": 0.90, "batch_source": "batch_002.txt", "related_topics": ["prototyping", "execution"]}}
+    {{"statement": "You must act to get information.", "category": "entrepreneurship", "supporting_evidence": ["Action produces information..."], "frequency": 9, "confidence_score": 0.95, "batch_source": "batch_001.txt"}},
+    {{"statement": "Launching is better than perfect planning.", "category": "entrepreneurship", "supporting_evidence": ["You learn more from a failed launch than a perfect plan..."], "frequency": 7, "confidence_score": 0.90, "batch_source": "batch_002.txt"}}}
 ]
 </candidate_beliefs_json>
 </input_block>
 
 <output_block>
 <thinking>
-The two candidate beliefs express the same core idea of valuing action over planning. I will merge them into a single cluster. I will synthesize a new, more comprehensive statement. The category is consistent. I will select the best evidence from both. I will sum the frequencies (9 + 7 = 16) and average the confidences ((0.95 + 0.90) / 2 = 0.925, rounded to 0.93). I will list both batch sources. The topics are all related and can be merged. I do not see any specific mental models mentioned, so I will leave that field empty. I will write a consolidation note.
+The two candidate beliefs express the same core idea of valuing action over planning. I will merge them into a single cluster. I will synthesize a new, more comprehensive statement. The category is consistent. I will select the best supporting evidence from both. I will sum the frequencies (9 + 7 = 16) and average the confidences ((0.95 + 0.90) / 2 = 0.925, rounded to 0.93). I will list both batch sources. I will write a consolidation note.
 </thinking>
 <json_output>
 [
     {{
         "statement": "Action produces information; it is better to launch and learn than to wait for a perfect plan.",
         "category": "entrepreneurship",
-        "evidence": ["Action produces information...", "You learn more from a failed launch than a perfect plan..."],
+        "supporting_evidence": ["Action produces information...", "You learn more from a failed launch than a perfect plan..."],
         "total_frequency": 16,
         "confidence_score": 0.93,
         "batch_sources": ["batch_001.txt", "batch_002.txt"],
-        "related_mental_models": [],
         "consolidation_notes": "Merged 2 candidates about the principle of prioritizing action over planning."
     }}
 ]
@@ -861,18 +857,17 @@ The two candidate beliefs express the same core idea of valuing action over plan
                             name=item_data.get('name', ''),
                             description=item_data.get('description', ''),
                             steps=item_data.get('steps', []),
-                            application_contexts=item_data.get('application_contexts', []),
-                            examples=item_data.get('examples', []),
-                            confidence_score=item_data.get('confidence_score', 0.5)
+                            categories=item_data.get('categories', []),
+                            confidence_score=item_data.get('confidence_score', 0.5),
+                            frequency=item_data.get('total_frequency', 1)
                         ))
                     elif extraction_type == "core_beliefs":
                         consolidated_results.append(CoreBelief(
                             statement=item_data.get('statement', ''),
                             category=item_data.get('category', ''),
-                            evidence=item_data.get('evidence', []),
+                            supporting_evidence=item_data.get('supporting_evidence', []),
                             frequency=item_data.get('total_frequency', 1),
-                            confidence_score=item_data.get('confidence_score', 0.5),
-                            related_mental_models=item_data.get('related_mental_models', [])
+                            confidence_score=item_data.get('confidence_score', 0.5)
                         ))
                 except Exception as e:
                     self.logger.info(f"DEBUG: Exception processing item {i}: {e}")

@@ -1,0 +1,125 @@
+What's up guys, in this video we're going to be cold emailing prospects live using instantly.ai. I'm going to be walking you all through the entire process of writing a winning email, setting up my campaign and launching it so it gets sent to hundreds of potential prospects. By the time you're watching this video, I should have already gotten a bunch of replies back and if you like this video right now, in the next one we can go over the replies and how to follow up with these leads.
+
+But for now, let's hop right into my computer so we can get started. Okay, so we'll be setting up a campaign here. I'm going to be selling lead generation, demand generation, booking meetings for either marketing agencies, B2B SaaS, companies with sales teams or high ticket coaches, right?
+
+We're going to be selling them, hey, we can get you more meetings. But obviously, if you're another type of agency, let's say you're a branding agency, you're a TikTok agency, you're an SEO agency, all of this still works very well in a B2B context, right? If you just need high ticket B2B clients, the same process applies.
+
+Obviously, the copy is going to be a little bit different, the targeting, the type of leads that you get is going to be different. But overall, the process, the thesis behind it is exactly the same. So let's get started here.
+
+The first thing that we'll do is we'll get some leads, right? So what I'm going to do is I'm a lead to an agency, I'm going to reach out to marketing agencies, or more specifically, decision makers in marketing agencies, and I'm going to tell them, hey, do you want more meetings? And I'm going to show you exactly how that looks like.
+
+So let's jump into it. The first thing, obviously, like I said, we'll focus on marketing agencies here. We need a data source, right?
+
+We need email addresses of decision makers at marketing agencies. So where do I get these from? There's a couple of different sources that you can get them from.
+
+One is called LeadHype. There's a couple others like Apollo, you might have heard. There's also Findemail, which is a good one.
+
+Today, I'm just going to show you how to do it in LeadHype, how to get the leads and the data in LeadHype, because it's super simple. It's also quite inexpensive, and it's a good start. If you're just starting out, LeadHype is a good tool.
+
+And yeah, like I said, it's inexpensive, and you can also scrape Sales Navigator. So Sales Navigator, right, is the database of LinkedIn, and here you'll find everyone in your target market. And what it will do, you apply these filters, it will find everybody in this target market, and then it will scrape the email addresses, right?
+
+And the email addresses later on, we're going to need for our prospecting campaigns. So let's do that here. Have it open here.
+
+Just go to LeadHype, you know, go to the Sales Navigator section. And remember what I said, we're going to be targeting marketing agencies. So let's look for some marketing agencies here.
+
+First of all, let's see, we have industry, just going to type in marketing. We can say marketing services. Then, okay, what kind of job title do these people have, right?
+
+We want to reach out to the decision makers, preferably. Let's say I'll do as just CEOs. You can potentially also do like founder, if you're reaching out to smaller companies, seniority level.
+
+Let's see what kind of filters can apply geography. Let's say reaching out to people in the United States only for this one. But, you know, the good thing with cold emailing is you can go global.
+
+You can also target your United Kingdom, any other English speaking countries, and even non-English speaking countries, right? We've run campaigns before, or just emailed people in Scandinavia and Germany, like Western Europe, with English cold emails. And that worked also really well.
+
+But just for the sake of this live campaign here, I'm going to be targeting United States. So the United States marketing services. Let's see.
+
+I also want to filter a little bit here by employee headcount, company headcount. So probably for this campaign, I'm just going to be targeting a little bit smaller companies. Let's say 1 to 50 employees.
+
+Here we have 1 to 15 employees in the US, marketing services, chief executive officer, founder. And yeah, that looks already pretty good. So let me copy that URL.
+
+Let me refresh this page, actually, because it should show some results here. Okay. And then once we copy the URL, we're going to move on to the dashboard and then we're just going to put it here, sales navigator.
+
+And then I'm going to say marketing US 1 to 50 employees, CEO or decision makers. I'm going to type that in here and I'm going to let it start scraping. Okay.
+
+So this will take a little bit. So let me just pause the video here and then after a while, we'll see it show up and we'll give us all the email addresses. All right.
+
+So this one is still pending, right? It's scraping here, but I already put in a search yesterday. So I'm just going to download that just so I can show you, you know, I can get this video to you sooner and we don't have to wait around until it's scraped.
+
+So this one I scraped yesterday. I'm just going to download here. Right.
+
+It scraped all the marketing and decision makers in the UK with 1 to 50 employees. I'm going to download that here. Boom.
+
+And then what I'm going to do is open a spreadsheet in Google Sheets. I like to do it in Google Sheets. So just here.
+
+And then I'm going to import this data that I scraped from LeadHype. Just drop it here. I'm going to replace current sheet import.
+
+And also like to, you know, grab the name here. And put it into the name. And then, you know, I'm going to clean this up a little bit.
+
+Middle name. There's a bunch of stuff that we don't need here. Company name we might need.
+
+Company domain. We don't need city. Just going to delete all of this.
+
+So we have it nice and tidy. Then I'm going to put some filters on it. Apply filter.
+
+Let me move this around. And then I just want to. I don't want to have the blanks.
+
+Right. We don't only want cells that have a value. So I'm just going to put this in here.
+
+Rest. Delete this. Okay, good.
+
+Okay. And now we have our lead list. So our lead list is here.
+
+From the previous targeting that we decided, we decided we're going to do, we're going to offer lead generation to marketing agencies. We went to, we went to lead hype and to status navigator. We put in some filters, you know, depending on who we're targeting.
+
+We're grabbing that URL. Lead hype scrapes it. We download it from lead.
+
+Have we put it into a spreadsheet, Google sheets. We clean up the spreadsheet a little bit. And then the next step that's important is doing another check, making sure that these emails that we have here are actually verified.
+
+So I'm going to download this. And what I'm going to do is I go to million verifier, million verifier, which is a tool that allows you to verify again or verify that these emails, right? All these emails that we have here are actually good to go.
+
+So just create an account, go into a million verifier, and then select the file. Select it here. And then I'm going to start verifying.
+
+Boom. And then we'll verify here. So I'm going to pause this video.
+
+This takes a, this takes a moment. And then I'm going to show you how to set up a campaign with the verified list. Okay.
+
+And then once you're here, so this is still taking a while, but I'll just show it to you with another example that I uploaded. You can just go here and download reports and just click good emails only. And then we'll download it here.
+
+And then you have it ready right now. You scraped it from lead time. You did a check, made sure everything's fine.
+
+And then you verified it. And now you're good to go and upload it into Instantly. So let me just show you how that looks like.
+
+What are you going to do now with this lead list of your target market? So let's switch over to Instantly. I'm going to go into the campaigns tab.
+
+I'm going to click here, add new. So here, remember we were targeting in our case, the agency's decision makers. So I'm just going to put that into the campaign name.
+
+I'm going to click continue. And then first step here, I'm going to click import. I can either use the CSV file or a Google sheet or enter manually.
+
+I usually do CSV. Click to upload. And then I'm going to pick the lead list of decision makers here.
+
+And then you'll see all the email addresses, first name, last name. And it will automatically attribute that, which is great, right? So you have the lead list here.
+
+The decision makers just upload all. Then we have Pac-Man here processing all the leads, uploading it, boom. And all contacts are uploaded.
+
+Great. So here you can come up with cold email and cold email sequence, right? Here we have a bunch of templates to help you out.
+
+In case you don't know exactly what to say, you can just go here to the templates and you can see how many we have. Just grab one of those. And you could put, obviously, don't take them one-to-one, but just put your own spin on it.
+
+Whatever your offer is. We have for SEO agency, recruiting firms, e-com email marketing agencies, conversion rate optimization agency, content marketing, TikTok agency, and so on and so forth. So in that case, just come up with some ideas or you can also come up with some, some of your own copy.
+
+So just for sake of example here, I'm going to use this one. Then, hey, first name. LinkedIn profile was impressive.
+
+Wanted to reach out. We help marketing agencies, right? We said this was the target initially.
+
+Get five to eight additional meetings per week with potential customers. And that's, then you can save it. Then you can even add additional steps.
+
+So let's say, you know, you wanted to add more steps. Let's see if we could just add one more step here. Let's see if a follow-up.
+
+Yeah, so I like this one too. This follow-up here is great. And this second step will take the previous email subject line.
+
+One of our other marketing agency clients. Okay, obviously, you know, this was a true case study for us when we created this template, but just, you know, come up with some results that you got for a similar client. Or you can also do another follow-up, which would be, hey, first name.
+
+I understand you're busy. Is there someone else? I should be, is there someone else at company name?
+
+I should be directing this to. You can also say here. And you set the schedule.
+
+So let's say, you know, these people are in Eastern time, they are in the U.S. You can send the Eastern time schedule. if they're in the uk uh you just send it on the uk schedule monday to friday and then also options and then in the options here this is really cool you can send the email accounts that should reach out to those prospects so you can see you can add as many as you want obviously you have to connect these first but uh it's it's quite straightforward you connect them to instantly and then all these 15 email addresses it will do inbox rotation and they will one after the other they will reach out to the different leads so this one will reach out to lead number one and then this one will reach out to lead number two and this one to lead number three and so on then open tracking the descending limit all of this don't worry about it if you're just getting started super simple 200 and we uploaded like 500 leads there so with 15 inboxes you can do like 30 per inbox in that case you know we can send 450 per day and really contact a lot of people here and with a good offer so then you just click launch poof you click launch and that's um and and that's it then it will start sending and you can get and then you know after a couple hours after a day you will see all the positive replies uh coming in and boom that's it we're about to send out 450 emails to a bunch of qualified prospects and now we just have to wait and see what comes back so if you guys want to use instantly.ai for yourself you can try out the free trial in the description no credit card is required other than that make sure you're subscribed to the channel and have liked the video in future we'll be going over these responses and how to follow up with them to actually close them and turn them into customers see ya

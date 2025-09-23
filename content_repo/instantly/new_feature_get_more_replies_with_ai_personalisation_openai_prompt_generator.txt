@@ -1,0 +1,53 @@
+Hey guys, Raoul here and super exciting news today. We have just added OpenAI, AI prompt creator to Instantly, which is going to help you get more replies by letting you personalize leads at scale with AI. So I'm going to show you quickly how it works in this video and I'm going to create a more in-depth video later.
+
+This is just for you to get an idea of how it works. So if you want to use it, go to Instantly, go to any campaign, go to the leads section and click this brain button here, AI prompts. Once you open it, first step, you want to go to the OpenAI page and get your API key, add it here, save, boom, you're ready to get started.
+
+We have Template Hub, which already has some prompts that you can use. Main mounts, for example, we can clean up the company name, we can generate a first line, we can get three targeting options based on company description, we can get a restaurant recommendation based on location, or we can get emails from domain. So there's a bunch of stuff here and you can create your own ones if you want to get creative.
+
+But let's start with the simplest ones. So company description from URL. So what it does is you have to select the input column, which is going to be sent to OpenAI.
+
+Obviously, we're going to select website and then the output column, we're going to create a new one, company description from the URL, and you can generate test output. And you can see from this domain, the first one, it generated Niko Boy is a leading manufacturer and a distributor of high quality wooden products, da da da da da da. So it generated a company description purely based on URL.
+
+And you can use now this description to generate even more precise personalization and targeting options. You can generate first lines based on this, you can come up with email copy based on this. And if you now generate this for all leads, I'm going to show it here, I did it a little bit before, company description from URL.
+
+So all of the leads now have this description for them. So hopefully you understand now how amazing this is. You can do this to thousands of leads, get the description, get the first line, get the restaurant recommendation, whatever it is that you want to try, you can now do it.
+
+And the second part is if you go to my templates, so here you can create a new prompt and the prompt can be literally anything you want. So let's take the one that I just did. I can do like super simple one based on name, but variable, say website, right?
+
+Short company description. That's, that's how easy it can be. So we can now set this output.
+
+It's going to take this website. And again, it's had a new output. And this can be like, this seems like too long, like way too long.
+
+And so the short wasn't good enough. So what I would have to do is write a short, let's say maximum three sentences. It says company description.
+
+Let's try this one. Okay, much better. It stopped shorter.
+
+We can use this one. Then you can save, you can give it name. Let's do this description from URL.
+
+You can type. Put a description to it. Lauren Ipsum, choose category.
+
+And then you can choose if you want to make it public. If you make it public, everybody on Instantly in the template subsection can use it. I recommend to do it.
+
+If you want to be friendly, help other people out. If you find something cool, share it with the community. And you then just add the input description, which people are going to see later.
+
+So in our case, it's going to be URL or website and save. Now that I have it in my list here. And we can just like keep using it and edit it.
+
+If you want, we can take the ones that will be like hearted. We can edit prompts that we've made. So this one like based on property one, it can be location, recommend that unique restaurant, just output with the name of restaurant.
+
+So you can use this for example, as you should send your regular copy and then, Hey, by the way, if you're in location, check out this restaurant. So that's like something you can try. And now that we've added or we create the prompt, what you can do is if you go to sequences, you can now actually use it in a template.
+
+So you can have whatever template you want. And then let's shoot the variable. Comments come from URL.
+
+I'm just going to show like in the preview email. So whatever we did, it can show up in the email. So let's say this is the description.
+
+Hey, found your website and I reach out. And then let's say this is like three targeting options. This is the first line.
+
+You can just use the variable that we just generated and use this inside the email. It's going to populate that variable with your personalized AI prompt outputs. So that's how simple it is.
+
+You can start now generating personalized lines, personalized targeting, personalized emails at scale. Give it a try. OpenAI API is pretty cheap.
+
+You can do a lot of tests and get creative. I think this is the biggest thing I can give to you is like start with the ones that we have, just like get used to it, but then start thinking about what's some like unique angles that specific for your niche that you can use that nobody else is using. And then those are going to be super valuable for you for your specific niche.
+
+So if you're a lead generation agency, you might want to tell your targets like, hey, we can target these people. Or if you're a Facebook ad agency, you can do based on company description, come up with three ad ideas, and you can just have those ad ideas in the email. So get crazy, get creative and super excited to see what you come up with.
+
+If you create something cool, share it in the comments down below or add it to template hub. Super excited to check it out, what you guys are doing. Good luck.

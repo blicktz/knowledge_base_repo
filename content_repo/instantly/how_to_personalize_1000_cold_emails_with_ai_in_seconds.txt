@@ -1,0 +1,95 @@
+You need to listen to me right now. You have two choices when it comes to AI. You can either adopt it or you can get left behind.
+
+Now, whether you like it or not, AI is here to change the world for good. So it's your job to learn AI and to use it to make more money. Now, it's not just about jumping on the AI bandwagon.
+
+It's about understanding AI and how to use it to generate more leads for your business. So in today's video, I'm gonna show you how to book 100 or more sales calls every single month using Instantly's new AI feature. Now, Instantly finally cracked the code on AI integration.
+
+It allows you to add AI personalization to all of your emails in just minutes. And the best part, it costs pennies. Now, before you start doubting, I, like you, used to think that AI personalization sucked.
+
+In fact, I used several tools that did AI first line writing. And one, it was expensive. Two, the first lines weren't very good.
+
+And three, it was a massive interruption to our workflow. It took a lot of extra time. Instantly changed all of that with this new integration that I am so excited to show you.
+
+The personalization is flawless, the workflow is uninterrupted, and it costs pennies. Now, I'm gonna share my screen and show you exactly how this works. So I'm here in my demo Instantly account, and I'm gonna create an AI test campaign.
+
+So the first thing that you're gonna want to do is import a set of leads. Now, if you're going to use this AI feature correctly, you're gonna want as much information as you can find. So I'm gonna import the title, the company, the industry.
+
+Now, the more information that you input when you're first putting data into your campaign, the more that you're going to be able to do once you start writing those AI first lines. So let's go ahead and upload, and I'm not going to check for duplicates. Now, as you can see in my leads tab, I've got all of my data uploaded.
+
+Now, the feature is as simple as this little tiny brain that says AI prompts in Instantly. Once you've uploaded your leads, that will show. Now, in order to use this feature, let's go ahead and click on it.
+
+Now, before I show you the template hub and my templates, let's go into Settings, and you need to add your OpenAI API key. This is step number one. So let's go ahead and click that Here button, and it will open up to your OpenAI.
+
+Now, if you don't already have an account, you're going to need to sign up for OpenAI, your build, based on the credits that you use, and I will tell you that it is almost negligible what this costs. I think the entire time that I've been using this OpenAI API integration across multiple different platforms, I've paid less than $100 over the course of six months. So sign up for OpenAI so that you can access these API keys and start building amazing integrations.
+
+So let's go ahead and create a new secret key. I'm going to title it Instantly, and I'm going to grab that key and paste it right there. Now I'm ready to start using this new AI integration.
+
+So Instantly was absolutely genius. They've got a template hub where people can share their AI templates, their personalization templates, so that you don't have to think of your own prompts. Prompting AI is the hardest part, and that's why, in my opinion, everybody else has failed where Instantly has succeeded.
+
+Because now you have access to prompts that are the most effective, and you know they're the most effective because the most people are using them. They have all of these likes and all of these runs. Now if I search LeadGenJ, I have some templates that I've shared personally from my account.
+
+Some of my personal templates are finding the pain point in the industry and finding the competitor. I love to use this one. So some of the most popular prompts that I'm going to run you through.
+
+Company name cleanup. Now I hate when I get an email, and they're trying to personalize it with my company name, but instead of saying OtterPR, they say OtterPR LLC. That sounds like it's lazy.
+
+It sounds like a human did not write that. Company name cleanup will go through, and it will remove LLC. It will remove ink.
+
+It will remove all caps. All of the things that cause you to think, oh wow, a human definitely didn't write that. Company name cleanup is going to be amazing.
+
+The next most popular one here is general unique opening sentence. This is a prompt where you can write that first line. The first lines that it produces are better than not using AI, but still not my favorite way to implement AI.
+
+Company complement is another popular AI prompt, another personalized first line, and there's several different variations for these first lines for company's description, so I encourage you to run through these and have some fun. Now for the sake of learning, I'm going to go ahead and use the general unique opening sentence. I'm going to input the website here, and on the output column, it can either create a new column.
+
+This way you don't have to interrupt your workflow. In the past with my former videos, it was all done in a Google sheet, and you had to add another column, upload the data to a first line, export the data. This will add that column for you.
+
+I'm going to go ahead and generate a test output to see what it outputs. If Akron values integrity and has a trusted reputation, let's connect. Honestly, not my favorite, but for the purpose of learning, let's go ahead and generate for all leads so you can see how this works.
+
+Okay, it says it's generating the AI column, and now that's going to work in the background, so when I refresh this, you're going to see that column, and you're going to see some of that new data. Now, before I do refresh it, I want to show you how to create your own templates. You can create your own prompts here, so you can get as specific as possible to meet your specific needs with your offer and your industry.
+
+This is why the more information that you input into your campaign, the more that you can work with. So here I can choose from website, industry, company name, SEO description. All of these things are things that I can use in my own prompts, and then I can then make my prompt available to the public or keep it private if I don't want other people using it.
+
+All right, let's go ahead and refresh to see what this AI did. Okay, so it will start to populate here. Obviously, it hasn't gotten yet.
+
+This does take a while because it's running it all through OpenAI, and then it's putting it back in that lead column. Now, one AI prompt that I love to use that works every single time is the competitor prompt. So this is one that I created, find competitor, use industry, and find a well-known private competitor.
+
+The prompt's actually a lot longer than that, but you can't see the entire thing. So we're going to run this one as well. So we've got the industry and the company name, and we're going to output another column.
+
+So we're going to generate a test output. So this first lead was Akron Auto Auction. It's an automotive company, and the competitor that it found was Mannheim Auto Auction.
+
+Now, it looks like we actually did some research into them, and we could actually find a competitor that they know and they trust. So let's go ahead and generate for all leads as well. All right, now while that's going, here's how you can actually implement this in your campaigns.
+
+We're in sequences, and now that I've created those additional AI columns, I can now use these personalizations in my emails. All right, so I refresh that page and look at our leads now. We've got our Find Competitor column, all with their main competitors, and general unique opening sentence.
+
+All of these are first lines that you can now use in your emails. So let's go actually use these in a sequence. So let's use a personalized subject line.
+
+Instead of a generic subject line, we're going to put their company name, and we're going to put Lead Gen J Find Competitor. Now you've got their company with their competitor. This is a very unique subject line that I promise is going to get much more opens than something generic.
+
+They're going to see their company name alongside one of their main competitors, and they're going to have no choice but to open that email. Now as an introduction, we're going to go ahead and start pretty generic. Hello, first name.
+
+But as our first line, now we can use that general, unique opening sentence. And all we have to do is place that in there like a normal variable. And now we've got a personalized email that's going to get even more traction than a regular email.
+
+How easy was that to do? And do you want to know what that probably cost me? Under 10 cents.
+
+Now things that you need to keep in mind as you're using this new AI tool. Not all AI is better than nothing. You need to use it cleverly.
+
+If I were setting up my own campaign with this, I would probably not use the prompt for that general first line. I would create my own prompt and I would learn how to prompt ChatGPT and experiment with the test outputs to get something that really matches my industry and matches my target clientele. One thing that you can use that will apply across all industries is this finding your competitor.
+
+Now what I found in my research and my comparisons using AI generated campaigns and non-AI generated campaigns is don't use generic AI generated first lines but using the competitor does seem to work very well. Now I will warn you, there is a drop off if you use AI incorrectly. So I encourage you to play with this.
+
+Experiment with some of these different prompts. Experiment with some of these different AI templates that other people have created and see how they affect your campaign performance. You can always create split tests by adding a variant to do an AI generated variation versus a non-AI generated variation.
+
+See what the open rates are, see what the reply rates are, and adjust accordingly. If you really want to supercharge this AI functionality, I recommend you doing this. And this is a little bit more advanced.
+
+But if you scrape data from LinkedIn and you're able to get their LinkedIn description and import that into Instantly, you can use that data point to write the best first line imaginable. Remember, Instantly's AI tool can only use the data that you input it. It cannot scrape the web right now.
+
+It cannot scrape other LinkedIn accounts. So feed it as much data as you can. Experiment with prompts that relate to your industry and then start experimenting with AI.
+
+This is incredibly powerful if you use it to the fullest of its ability and importing as much data as you can so that the AI can do its job using template prompts or creating your own prompts. So you can then add it as personalization in your sequences. And you can do this on a mass scale for pennies on the dollar.
+
+So go ahead and try this. This is how you're going to book a hundred plus sales meetings every single month. But that's not enough.
+
+A lot of other stuff can go wrong along the way. So you need to watch the other videos in Instantly's Accelerator program and watch some of the other videos listed right here. You need to learn how to set up your domains.
+
+You need to learn how to do email copy. You need to learn how to find good data and clean that data. All of that is available and instantly.
+
+Please subscribe if you're not already and please like this video so you see more like it.

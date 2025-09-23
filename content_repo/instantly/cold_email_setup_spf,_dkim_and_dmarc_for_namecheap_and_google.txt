@@ -1,0 +1,87 @@
+Hi, in this video I'm gonna talk about connecting your Namecheap domain to your Google workspace. So if you have a domain with Namecheap and you want to send emails with Google, then you need to enter some DNS records manually to Namecheap. And I'm gonna demonstrate how to do that.
+
+Start with having two tabs open. So in one, log in to your admin console in Google and the second one log in to your Namecheap. Then you wanna start by adding the domain from Namecheap to Google.
+
+When you log in to Google from the home page, you can access the domains from this box. In case this is not visible, click on accounts, then domains and manage domains. So here's the list of all the domains that we have connected before.
+
+They have been verified and the Gmail has been activated. So we are gonna do the same to the new one. Go to your Namecheap and get the domain that you want to add.
+
+So you can access the domain list by hovering over account and clicking domain list. So you want to copy the domain name from Namecheap to Google. Click add domain.
+
+Paste the domain name here. Select the secondary domain and click add domain and start verification. So Google is asking us to sign in to Namecheap and go to advanced DNS.
+
+So this is the domain that we are connecting. You want to click on manage. And then advanced DNS.
+
+We will create some new records here. So after we've done this, we can go to step 2. We will create a new TXT record.
+
+So the Google has gave us here the data that we need to copy to Namecheap and create a new record. It will be a TXT record and host will be at and this is the value. So let's create a new record.
+
+You will scroll a bit down and click add new record button. Choose the TXT, host add and we will copy the value. So it's copied.
+
+You just click on it and save all changes. So we created a TXT record. And now we need to protect the domain.
+
+So this process takes around 5 minutes. I'm going to pause the video and come back later. So the domain has been verified and the next thing that we need to do for this domain is to activate the domain.
+
+So you can just click on activate Gmail. Set up MX record. Click next.
+
+And these are the instructions for creating the MX record. So we will go once again to advanced DNS. And then click next step 2.
+
+We are already here from previous steps. So let's continue. Now we need to create the MX record for Gmail.
+
+So you can scroll down and see where the mail settings are. Instead of email forwarding, we will choose Gmail from the drop down list. And then click save changes.
+
+So it automatically creates MX records for your domain. Click on activate Gmail. So the Google will check if all the records are in place.
+
+So Google has finished activating the Gmail. As you can see the Gmail has been activated. And now the next step is adding the DKIM record to the domain.
+
+So let's go to dashboard. dashboard. Click on apps.
+
+Then click on Google workspace. And click on Gmail. You want to go to authenticate email.
+
+And from the drop down list. Choose the domain that you are connecting. Now we will generate a new record for this domain.
+
+You want to keep the length to 2048. It's more secure than 1024. Prefix selector can be Google.
+
+Then click generate. So this is the new record that we need to create. It's going to be a TXT type.
+
+This is the name. And this is the value that we will copy there. Now let's go to advanced DNS.
+
+Click on add new record. Then find TXT record. So copy the host.
+
+And copy the value. Click save all changes. So we created the DKIM records now.
+
+It takes a while. A few minutes or so. To update the information.
+
+But let's try and start authentication now. So yeah. We will have to wait a bit.
+
+For the records to update. And then we can try again. To start authentication.
+
+So now that authentication process has started. We can proceed and create another DNS record. So next step is adding the SPF record.
+
+Go to your advanced DNS and click add new record. Choose TXT record. Post is at.
+
+And then type this value if you are sending emails from Google Workspace. And then click on save changes. So next record to create is DMARC.
+
+Go to your advanced DNS settings and click on add new record. DMARC is TXT record. And the host is underscore DMARC.
+
+And the value. We have provided the value in our help article. So I'm going to copy that one.
+
+And explain a bit more about the tags. So first thing you need to do is to change the email address that's in the DMARC record. And put your own email address for receiving the reports about emails that have passed and failed the DMARC SPF and DKIM checks.
+
+So let's start from the beginning. The first tag is P equals none. Here P defines the policy and specifies what you want to do with your emails.
+
+It tells the recipient servers to do nothing with the emails in this case. So you will have a report only policy for all the emails that pass or fail the DMARC checks. So next one is SP equals none.
+
+So it's the same policy, but it applies only to sub domains. Next is PCT tag. And it specifies the percentage of the emails that you want to check.
+
+In this case, it's going to be 100% of emails checked. Then RUA. This is the email address for receiving the reports about which emails have been authenticated using SPF and DKIM and which not.
+
+And the other one. So you can have two email addresses here, different ones. So RUF applies to email address that you choose to receive forensic reports containing emails that failed SPF, DKIM or DMARC.
+
+So this is going to be only for failed emails and you can use it for troubleshooting. So next one is RI. And it specifies the interval for receiving the reports.
+
+In this case, it translates to 24 hours. So you will receive reports every 24 hours. And now ASPF and ADKIM.
+
+These specify the policy whether it's going to be strict or relaxed for checking. And FO equals 1 tells the email service provider that you want an email sample if the email fails the checks. So after that, you can save all changes.
+
+And now we have the DMARC in place. So now that we added all the records to your domain DNS, you can continue and create the users for this domain. And later on you can connect them to your instantly account and start the warm-up process.
