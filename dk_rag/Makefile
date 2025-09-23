@@ -302,6 +302,7 @@ backup: ## Backup personas and knowledge base
 	tar -czf "backups/dk_rag_backup_$$timestamp.tar.gz" \
 		data/storage/artifacts \
 		data/storage/chroma_db \
+		data/storage/personas \
 		config/*.yaml \
 		2>/dev/null || true
 	@echo "$(GREEN)✓ Backup created in backups/$(NC)"

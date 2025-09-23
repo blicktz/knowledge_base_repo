@@ -82,7 +82,7 @@ class MapReduceExtractor:
             llm_kwargs = {
                 "model": config.map_phase_model,
                 "temperature": 0.7,  # Slightly lower for more consistent batch results
-                "max_tokens": 4000,
+                "max_tokens": 52428,  # 80% of Gemini 2.5 Flash max output (65536 tokens)
                 "timeout": config.timeout_seconds,
                 "max_retries": config.max_retries
             }
@@ -562,10 +562,22 @@ The two candidate beliefs express the same core idea of valuing action over plan
             # Save complete response
             self.cache_manager.save_batch_response(batch_log_dir, result_text)
             
-            # Parse JSON using robust XML-aware extraction
+            # Parse JSON - try llm-output-parser first (better with markdown/mixed content)
             try:
-                result_json = robust_json_loads(result_text, self.logger)
-                self.logger.debug(f"JSON parse successful, got {len(result_json) if isinstance(result_json, list) else 'non-list'} items")
+                # Try llm-output-parser first (handles markdown wrapped JSON better)
+                try:
+                    result_json = parse_json(result_text)
+                    self.logger.debug(f"llm-output-parser successful, got {len(result_json) if isinstance(result_json, list) else 'non-list'} items")
+                except Exception as parse_error:
+                    self.logger.debug(f"llm-output-parser failed: {str(parse_error)}, falling back to robust_json_loads")
+                    # Fallback to robust XML-aware extraction
+                    result_json = robust_json_loads(result_text, self.logger)
+                    self.logger.debug(f"robust_json_loads successful, got {len(result_json) if isinstance(result_json, list) else 'non-list'} items")
+                
+                # Check for truncation indicators
+                if result_text and not result_text.strip().endswith((']', '}', '```', '</json_output>', '</output_block>')):
+                    self.logger.warning(f"Response for batch {batch_index} appears truncated - does not end with proper closing")
+                    
             except (json.JSONDecodeError, ValueError) as e:
                 self.logger.error(f"JSON parse failed for batch {batch_index} (hash: {batch_hash[:12]}): {str(e)}")
                 self.logger.error(f"Check batch logs at: xml_responses/{extraction_type}/batch_{batch_hash[:16]}/")
