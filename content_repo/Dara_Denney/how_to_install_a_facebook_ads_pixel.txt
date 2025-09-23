@@ -1,0 +1,17 @@
+Hey guys, welcome to my channel. Today I'm going to show you the easiest way to connect your Facebook Ads pixel to your Shopify account. The place we're actually going to start is in your Facebook Ads Manager.
+
+From here we're going to go on the left hand side to Events Manager. Events Manager is where your pixel lives and if you haven't created a pixel already that's okay I'm going to show you how to do this in this next step but if you have created a pixel already you're gonna see that it's gonna show up right here. If you don't have a pixel go ahead and click add new data source and then select the pixel option but since I already have a pixel and you can only have one pixel per ad account that's why I can't create it here.
+
+So when you're in Events Manager and you see your pixel you're gonna notice that there's a big number underneath your pixel name and that's your pixel ID. So you're gonna go ahead and copy your pixel ID. In another tab you're gonna go ahead and go to the admin section of your Shopify account.
+
+On the left hand side you're gonna click online store preferences and here you're gonna be see a section for title and meta description, Google Analytics, and Facebook pixel. You're actually just gonna paste the pixel ID that you have from your Events Manager. So this number right here you're gonna put that right there and hit save.
+
+Now that's the hardest part of this entire process but we do want to just test it to make sure that it's working. So you're gonna go back to Events Manager, click on your pixel, and hit test events. Next you're going to click another open tab and go directly to your Shopify site and this is your public facing site.
+
+So once you're here go ahead and go back to test events and you can see that it's actually tracking page views but we want to make sure it's tracking everything else. So next go ahead and click on one of your products. Here you can see the view content event is triggering and the next one we want to test is add to cart.
+
+Go ahead and go back and make sure the add to cart is triggering and then we're gonna view cart and checkout. And then we're gonna go back and see that the initiate checkout event has triggered. And with that done you now know that your Shopify account and your Facebook Ads pixel are properly integrated.
+
+And that's it! You're done and you're ready to go sell some stuff and make some more money. If you guys want to know how to also connect your Google Analytics account to your Shopify account in an easy way just exactly like this, look in the description below I have another video for you guys.
+
+And as always please feel free to ask me any questions that you have about Facebook Ads, marketing, and remote living. Okay guys talk to you later! Bye!

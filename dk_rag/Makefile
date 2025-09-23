@@ -218,12 +218,12 @@ check-quality: ## Check persona extraction quality
 	@echo "$(BLUE)Checking extraction quality for available personas...$(NC)"
 	@for persona in $$($(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" list-personas 2>/dev/null | grep "Name:" | cut -d: -f2); do \
 		echo "Checking $$persona..."; \
-		$(PYTHON) -c "from dk_rag.data.storage.artifacts import ArtifactManager; \
+		$(PYTHON) -c "from dk_rag.core.persona_manager import PersonaManager; \
 		              from dk_rag.config.settings import Settings; \
 		              from dk_rag.utils.validation import validate_extraction_quality; \
 		              settings = Settings.from_file('$(CONFIG_FILE)'); \
-		              am = ArtifactManager(settings); \
-		              persona = am.load_persona_constitution(name='$$persona'.strip()); \
+		              pm = PersonaManager(settings); \
+		              persona = pm.load_persona_constitution(persona_name='$$persona'.strip()); \
 		              scores = validate_extraction_quality(persona); \
 		              print(f'Quality scores: {scores}')"; \
 	done

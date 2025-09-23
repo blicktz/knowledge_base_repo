@@ -16,7 +16,6 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from dk_rag.config.settings import Settings
 from dk_rag.core.persona_manager import PersonaManager
 from dk_rag.data.storage.vector_store import VectorStore
-from dk_rag.data.storage.artifacts import ArtifactManager
 from dk_rag.utils.logging import setup_logger
 
 

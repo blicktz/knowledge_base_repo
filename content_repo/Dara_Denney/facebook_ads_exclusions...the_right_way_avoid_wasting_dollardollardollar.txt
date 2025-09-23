@@ -1,0 +1,59 @@
+What's up marketers in today's video, I'm going to be talking about Facebook ad exclusions and what you need to know to make sure that you're maximizing your reach without wasting your ad dollars. But first of all, what are exclusions in Facebook ads? So inside of all of your Facebook ad campaigns, specifically at the ad set level where you are mapping out your targeting, you actually have the ability to exclude audiences from your targeting.
+
+Now this can be custom list type audiences like pixel based audiences. So people who've purchased from you or people who've been to your website could also be custom list uploads like your email list. And it can even be as detailed as lookalike audiences if you wanted.
+
+You can also exclude interests from your targeting as well. So today's video is going to show you exactly how I set up my exclusions and my Facebook ads campaigns. And I'm not going to lie.
+
+I really don't overthink this too much. However, I do see people making the same mistakes over and over. So I'm going to be sure to go over those so that you guys make sure that you're not wasting your ad dollars on this type of thing.
+
+So the first thing that I want to talk about is my account structure, because if you guys know what kind of account structure that you're working with, this is really how you're going to build the foundation of your exclusions. Now, I recently made a video for you guys that shows my core account structure for my Facebook ads campaigns post iOS 14. So I'm actually going to be building off of that.
+
+So as you can see here, I have three campaigns. I have one prospecting testing campaign. I have one core prospecting campaign and I have one retargeting campaign.
+
+And really, if you guys want a deep dive on what is inside of these campaigns, please be sure to watch that video. But the quick overview is that the creative testing campaign is for creative testing and really inside of there, I am launching net new creative tests every single week inside of a new ad set. So what I really like to do is I like to combine iterative testing with net new testing.
+
+So I'll actually create anywhere from three to six variants of a single ad and launch that in its own ad set so that I can test quicker and get learnings. And if I find a winner from that testing, what I then do is I drip that into my prospecting and my retargeting campaign. So in regards to exclusions, my exclusions are going to differ between retargeting and prospecting in most cases.
+
+And I know many of you probably have more than three campaigns. So what I'd actually encourage you to do is really think about your campaigns in terms of prospecting. So those are your cold audiences, people who've never heard of you versus your retargeting audiences.
+
+So those are going to be like your website visitors, your social engagers, people who have engaged with you in some manner. And those are going to be how you're going to divide up your exclusion. So you're going to have the same exclusion strategy for your prospecting campaigns and the same exclusion strategy for your retargeting campaigns.
+
+So let's go ahead and dive into what my exclusions look like for retargeting. Because spoiler alert, this is going to be super, super simple. Now at the retargeting level, I'm going to be targeting people like social engagers and website visitors.
+
+Sometimes I do break it out to be as granular as people who've added to cart. But post iOS 14, these numbers aren't as accurate anymore, unless I'm using an account that's at a really big scale. So typically inside of these campaigns, I will have two ad sets.
+
+One is going to be a social engagers. One is going to be a website visitors. The exclusions are going to be the same here.
+
+And the only thing that you're going to be excluding is your past purchasers. Now the caveat here and something that I see a lot of new media buyers not doing is they are only excluding pixel based audiences. But what I really think you need to do, especially post iOS 14, is you need to be uploading a dynamic custom list.
+
+So this is going to be from your ESP, your email service provider like Klaviyo, to make sure that you're always getting your past purchasers excluded from your campaign and spoiler alert, you always want to exclude your past purchasers from prospecting, prospecting, testing and retargeting. So this is going to be uniform across the board. But specifically for retargeting, you are going to need to exclude purchases only.
+
+But you want to make sure that you have a pixel based audience and a custom list export that is dynamic so it's continuously updating your past purchasers. Now, next up, I'm going to talk about prospecting. So this is going to be your core prospecting campaign as well as your retargeting.
+
+Now, what I like to do in addition to excluding your purchases here is I do like to go ahead and exclude those retargeting audiences. So if you have a 30 day social engagers as well as a 30 day website visitors, I go ahead and I exclude that from prospecting creative testing as well as prospecting core. Now, I do want to say that sometimes with accounts at scale, I am only excluding past purchasers from prospecting, prospecting, creative testing and retargeting.
+
+And that's because these retargeting audiences really aren't as accurate as they used to be anyways, and especially for your creative testing, I actually like to give the algorithm as much juice as possible and to not be as restrictive. Really, the biggest thing that you should not do with your exclusions is to be too complicated and to be too smart. Really, as long as you are excluding your past purchasers, which is just a complete waste of money, and you have some sort of perspective on how you want to be excluding retargeting with accounts that are not quite at scale, I go ahead and I exclude my retargeting audiences.
+
+But again, with my bigger accounts, I tend to not do that as much, even though I still have retargeting campaigns, because I want to give the algorithm as much room to grow. And at that size anyways, it's probably already hitting those people because those exclusions are not as accurate post iOS 14. Now, something that I want to mention and something that I've seen people do, and even I did a little bit in the past, is I never, ever exclude other lookalikes or other interests from the targeting.
+
+To me, this is just a complete waste of time, and it's something that I've never, ever seen work. I know that there were a few strategies that I was testing out maybe in like 2018, where I was excluding other lookalikes from each other so that I could really determine if a 1% lookalike was better than a 5% lookalike. But this is not our game anymore.
+
+We know that the biggest lever that we have for success is creative, and it's not micromanaging the targeting algorithm. That would be a futile losing battle, because for the most part, broad audiences are really what is moving the needle here. And if you want to learn more about my perspective on broad audiences and how I'm really using these audiences to scale my biggest clients, be sure to take a look at this video.
+
+Now, something that I've mentioned a little bit here is really beyond making sure that you're excluding your past purchasers, especially your pixel and your custom lists, is you really do have to develop a bit of your own theory on your exclusions. Are you going to be the type of media buyer who is going to be excluding down to the very day your social engagers and your website visitors, aka your retargeting audiences from your prospecting campaigns? That is a completely fine strategy.
+
+And for accounts that are not at scale, typically that's what I do. But for accounts that are at scale, I typically am just excluding my past purchasers. I really try not to overcomplicate this so much.
+
+But I will say that there are some interesting things that I've seen other marketers do that could or could not be very smart, which would be things like excluding one day social engagers with the idea that if someone is engaging with you in social media or engaging with your ads, they're probably going to be converting anyways. So that's just like an additional optimization you can make. I don't know.
+
+It seems kind of low fidelity for me, but I have seen smart marketers that I admire do that. So it's something that I've thought about from time to time. I've also seen this with website visitors as well.
+
+Again, with the idea, if people have been to your website within the last one to three days, then they're probably really likely to convert and you don't want them in your retargeting audiences or in your prospecting campaigns. So it's just an additional thing for you guys to think about and to test. But again, for the most part regarding exclusions, I keep it really, really simple.
+
+Just make sure that you are excluding your past purchasers, both via a pixel and a custom list audience. And that's it. I'm really curious to hear what your guys' exclusion strategies are.
+
+Because again, I'm pretty simple here. I don't want to complicate it. But I know that other media buyers and other marketers have a different perspective than me.
+
+So please comment below to let me know what your exclusion strategy is so that we can start that conversation. All right. Thanks, everyone.
+
+Talk to you next week. Bye.

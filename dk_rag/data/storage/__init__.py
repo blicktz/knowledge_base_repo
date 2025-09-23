@@ -13,8 +13,3 @@ try:
 except ImportError:
     pass
 
-try:
-    from .artifacts import ArtifactManager
-    __all__.append("ArtifactManager")
-except ImportError:
-    pass

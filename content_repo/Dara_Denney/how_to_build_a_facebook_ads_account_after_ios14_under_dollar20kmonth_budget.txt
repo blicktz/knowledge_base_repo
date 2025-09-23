@@ -1,0 +1,251 @@
+What's up marketers? In today's video I'm going to show you exactly how I would build out a Facebook ads account in a post iOS 14 world with a monthly budget of $5,000. This video is a part of a series that I'm doing for the channel so if you like this kind of content be sure to like and subscribe because those small actions really do help me out as a new creator.
+
+Now a big reason why I wanted to create this video is because a lot has changed in the way that I approach ad accounts since iOS 14. So regardless of what type of budget you have I actually think this build out could fit for accounts spending less than 20 grand per month or even those accounts spending less than three grand per month. So today we are going to go through everything from the account structure and build out targeting budget distribution the learning phase and of course creative so let's go ahead and dive right in.
+
+Now before you even step inside to Facebook ads manager you're going to need to do some things to prepare you for setting up those campaigns. I call this the pre-build prep. This is going to include things like planning out your structure, figuring out your budget distribution, and knowing exactly what type of ad creative to run.
+
+Let's first talk about the structure. I often hear people refer to this as the funnel. Now I really don't like using the term funnel when talking about Facebook ads because I often find that it leads people to over complicating their approach.
+
+One of the biggest myths in advertising on Facebook ads is that you need to season your pixel with engagement campaigns or traffic campaigns. This is not necessary and often leads to spending a lot of money on unqualified people. The truth is is that Facebook is not that complicated and you need to tell Facebook exactly what you're trying to achieve by using the platform.
+
+And in this case it's going to be e-commerce so we're going after those purchases. The metrics that we're really going to be using to figure out if we're successful or not on the platform is going to be cost per purchase and in some cases ROAS. So therefore all of today's campaigns are going to be conversion campaigns optimizing for the purchase objective.
+
+This is actually one thing that has not changed since iOS 14. I am still not using add to cart campaigns, review content campaigns, or any of those other types of objective campaigns. I am still using conversion to purchase objective campaigns.
+
+So instead of thinking about it like a funnel, I actually like to group people into two types of potential customers. Prospecting, which is going to be your cold audiences, people who have never heard of you, never engaged with you, never been to your website, and then your retargeting audiences. These are the people that have had some kind of touch point with your brand whether or not it's through engagement on social media or by visiting your website or through a custom list export, which could be an email list that you have exported and uploaded onto Facebook as a custom list, or even like a list of past customers.
+
+I know this might seem too simple, but the truth is, is that Facebook works way better in consolidation, especially after iOS 14. So that means the less campaigns, the less ad sets, the better. Even as of December, 2021, some of the accounts where I'm managing $1 million per month in ads spent on the platforms, sometimes they're only using two or three campaigns.
+
+That's the truth. Now the next part of your pre-build prep is going to be your budget distribution, which means that you want to figure out how much of your budget you're going to be spending in prospecting versus retargeting. And for the most part, I really like to put more of the spend into prospecting than retargeting.
+
+The reality is, is that a lot of people in your retargeting audiences are already going to be converting anyways. And those audiences are becoming a lot less reliable over time due to iOS 14. So in this circumstance, if you're doing a brand new build out for your account, I would go ahead and put 90% of your monthly budget into prospecting and only 10% into your retargeting audiences.
+
+When you break this down into a daily budget, this is going to be about $170 per day. So that would mean that we would be spending $20 a day in retargeting and $150 a day in prospecting. If you're interested in learning more about budget distribution, retargeting versus prospecting, be sure to take a look at this article below, which actually shows the budget distribution in between several of our clients at Thesis.
+
+It's really cool stuff. Now, the final part of your pre-build prep is to organize all of your ad creative in advance. This is going to include everything from your images and video to your copy and to the landing pages you're going to be driving that traffic to.
+
+At this budget range, I find that the most common landing pages that advertisers are using are going to be a homepage or a collection page of some kind, maybe like a collection of bestsellers. The main point is you're going to want to organize all of this content and copy beforehand. And I'm going to actually show you the exact types of content that I would recommend for this specific build out towards the end of the video when I'm going through the entire user flow.
+
+Once we have our structure plan, our budget distribution and our ad creative all finalized, that's when we start the build out. And we're going to start off by building out the retargeting campaign. So let's go ahead and hop into the platform and launch this thing.
+
+Now we're going to start off by building the retargeting campaign. You can already see, I have the prospecting campaign build up, but let's go ahead and start with retargeting. So like I said earlier, we're going to be using a conversion campaign with the optimization to purchase.
+
+So go ahead and click conversions right there and hit continue. First things first, we're going to name our campaign. My naming convention is pretty simple, but the one that I use at Thesis is pretty complicated.
+
+So if you guys are interested in how Thesis actually names their campaigns, their ad sets and their ads, let me know because I can go into depth on that as well. So I'm going to go ahead and name this DD Retargeting US. So the next section here is a special ads category.
+
+So for some businesses, you're going to actually have to tell Facebook if you are advertising for credit card offers, employments, housing, social issues, but this is just pretty standard retargeting. So we don't have to select a category. Next up, there are some campaign details.
+
+You can't actually edit this auction section. So I don't know why Facebook has it like that. So just leave it as it is.
+
+And again, we already chose the campaign objection, which is to have conversions. But if you want to ever change that, you can do that in this section right here. Now, next up under show more options is a campaign spending limit.
+
+Now I traditionally do not use these, but if you wanted to make sure that a campaign never spent over a certain amount, this is where you could actually edit that. Next section below is going to be AB test. Now I typically never use this feature right inside of Facebook.
+
+If you're interested in learning more about why that is, let me know and I can make a special video for it. Now down here, this is actually a section that is pretty important. And this is going to be CBO or campaign optimization.
+
+Now my personal philosophy on CBO is that the choice between CBO or ABO, which is ad set budgeting, doesn't really affect performance. I actually believe that CBO versus ABO is really left up to the media buyer and how they can best optimize campaigns. And for retargeting, I like to use CBO.
+
+So I'm going to go ahead and turn that on. But spoiler alert for prospecting, I actually like to use ABO. And I will go into more about why that is when we hop into the prospecting campaign.
+
+But for now, we're going to set our daily budget, which is going to be $20 like we had discussed earlier. And then you're going to see a little section down here for campaign bid strategy. I am going to leave it on lowest cost.
+
+And I will say that for about 95% of all of our campaigns at thesis, we use lowest cost. But if you're interested in learning more about cost cap, minimum ROAS, and even bid cap, then take a look at this video above where I go into all of these different bidding strategies. All right.
+
+Now this little carrot right here is ad scheduling. If you wanted to run your ads at a specific time of day, then you would be able to do that here. And I never do this.
+
+I find that Facebook knows a lot better than me when to run my ads. So I legitimately have never edited that or used it. Next step, we're going to hit next.
+
+And now we are at the ad sec section. This is actually where you're going to be identifying your targeting. So it's a very important part of the campaign build out process.
+
+So here I'm going to rename the ad set. And again, this is just going to be a retargeting audience. And since this is going to be the only ad set that I'm actually going to be using this campaign, I'm just going to call it retargeting all right below here.
+
+Since we're using conversion campaign, this section has popped up. We are not going to be using conversion for app or messenger or WhatsApp. We're just going to keep it right here on the website.
+
+Now we're going to be choosing a conversion event. And like I explained earlier, we are going to be using a purchase optimization. Now this little notice right here is probably not going to show up on your ad accounts.
+
+It's only because this is a fake ad account that I just created earlier today. So it doesn't have any pixel data. Now this section right here is for dynamic creative and dynamic creative actually allows you to upload 10 different types of images or videos along with five different copy options, headline options, description options, so that Facebook can find the best combinations and create ads for users based on what they think is going to be best for them.
+
+I do not recommend using this at this time. It's something that I still have been testing and prospecting with really mixed results. So still as of December 2021, don't recommend using it.
+
+I especially don't recommend using it for retargeting because you want to build up as most social proof as possible on those assets. So go ahead and leave that off. Next up, we have budget and schedule.
+
+And we really just want this to start immediately. I've been filming this on December 6th at about 8pm. So yeah, let's go ahead and start it immediately.
+
+And we want this to be an Evergreen campaign. So you don't need to set an end date. Now under here, show more options.
+
+This is where you can set your ad set spend limits. So when you're using a CBO campaign, you can set ad set limits for a daily minimum and a daily maximum of spend. But since this is going to be the only ad set within this particular campaign, I don't need to add these.
+
+So I can go ahead and hide those right there. Next up is the most important part of the ad set building process, in my opinion, is the targeting. Now since this is a retargeting audience, we are going to be adding people who have already been to our website or who have engaged with us on social media.
+
+I typically don't add things like video view audiences because those need to be updated with every single video, which is just a pain. And I found that by lumping people who've engaged with videos on Facebook or on Instagram, that tends to do just fine. So here we have our Facebook engagers, our Instagram engagers, and then also going to have our website visitors.
+
+So one of the big call outs I want to make immediately is I have these audiences up to a timeline that is as high as they go. So for all website visitors, it's going to be 180 days for Facebook engagers and Instagram engagers. That's going to be the last year.
+
+And the reason why I like to do this, especially for brands that are spending below 20k, especially brands that are brand new, is I really just want to get as much data as possible in those audiences. And because you had already told Facebook, hey, I want you guys to find as many purchases as you can, you might as well give them the biggest sample set of people to find your purchases. And I'm going to go a little bit more into how you can safeguard that and to how you can make sure that you're not blasting these people out of the water.
+
+But I'm going to go into that more towards the end where I'm going through the optimizations that I would make after launching this type of account setup. Below here, one final thing to note on this retargeting audience is we are going to want to exclude certain people. And the big call I have here is we want to exclude people who have already purchased from us.
+
+This is one of the most simple mistakes I see beginning media buyers making is that they continue running ads to people who have already bought from you. And in some cases, you do want to send ads to those people. However, I would do that in a brand new loyalty campaign so that you make sure that your prospecting and your retargeting ads are going after those net new customers.
+
+So here I have a Klaviyo export that is based on all purchasers and then a pixel based audience based on the all the purchasers that have gone through the pixel in the last 180 days. Now for this brand, it's only going to be the United States. Age is fine.
+
+Gender is fine. Now I find that for retargeting, I tend to not touch these because again, I want the biggest sample set possible. This little notice right here about detailed targeting is just saying that mostly now all that is automated.
+
+Thanks, Facebook. And then this section right here at demographics, interests or behaviors. This is actually where you would add those interest audiences.
+
+But again, since this is a retargeting ad set and a retargeting campaign, we are not going to be touching that. And I tend even when targeting the United States just to leave it on all languages because for the most part, it is just going to be hitting English speaking people. So I don't know if you think differently, find me on that one in the comments below here, show more options.
+
+Oh goodness. What this is interesting. I tend to not touch this too much, but there are a few interesting connection types here, especially for retargeting.
+
+If you want to connect with people who currently like or follow your page, which again, that is going to be included in Facebook engagers. People who are similar to those who currently like a follow your page. I mean, if you're segmenting and excluding the proper audiences, those could be net new people, which we wouldn't want to use.
+
+But again, for the most part, I tend to not use those Facebook connections. So now there's a little option right here. If you want to save this audience so you can use it in the future, we're not going to do that.
+
+And here is placements. For the most part, I still recommend using automatic placements in Facebook ads in 2021. However, I do highly recommend looking at where Facebook is placing your ads on a regular basis.
+
+I look at this probably almost every single day across multiple accounts, especially when I am looking at the different tests that are running. But this is the place where if you only wanted to show on the Facebook newsfeed or on the Instagram feed, you could edit that, edit that. But I do not recommend editing that.
+
+I still recommend using automatic placements. Now, right down here, we have optimization and delivery. Here you could set a cost control and you also have the option to edit your attribution setting.
+
+And I do recommend still using seven day click. Now in our testing at Thesis, we've actually found that view through conversions tend to be less incremental overall. And really a big problem that Facebook has is this optimization for ad delivery window actually tells Facebook the type of people it wants to go after.
+
+So it could tell Facebook, hey, go after the people who are going to convert by clicking on this ad, which is ultimately a lot more valuable and shows more of the incremental improvement that your ads are having on your overall business. Whereas if someone just viewed it and maybe didn't interact with the ad, to me, that doesn't have as much weight as someone who actually engaged with the ad and clicked on it. So that's why I like to keep seven day click.
+
+For some brands, we still use one day click. But I will say that since iOS 14, I have opted more of my clients to shift to seven day click or stay at that seven day click attribution because so that we can have more data essentially. And what I've seen a few times recently is if we're doing one day click, for instance, it's really hard to optimize, especially at the ad level because we're just not getting as much data.
+
+Now, after you've edited your attribution setting, then next. Now, this is where you're going to be building out the ad section and the ad creative on Facebook. This is objectively the funnest part of the build out process because you get to see your ad come to life.
+
+But I'm not going to show you the exact ad creative that I'm using just yet. I'm going to show that to you when I'm going through the entire account flow. Okay.
+
+So I just finished building out that retargeting campaign. Now I'm going to dive in and finish building out the rest of the account. And when I'm done, I'm going to show you guys every single detail, but I'm going to go ahead and dive in and do that.
+
+Okay. Now let's dive into the entire account build out. So as you can see here, we have only two campaigns and truly that is all that you need for a budget of this size.
+
+And frankly, for a lot of my clients at thesis where we're spending more than 500 K per month, oftentimes it looks exactly like this. So you can see at the top right here, we have our retargeting campaign. Let's go ahead and hop in there for a little bit.
+
+I did rename the ad set just so that you could know that we have both social engagers and website visitors in there. And again, the big reason why we're not segmenting this out is so that we can exit the learning phase a little bit quicker and just be more consolidated. Plus, since we don't have different content in both of those buckets, there's really no reason to keep them separate.
+
+So let's go ahead and go back in here into our prospecting campaign. This is going to be the most important campaign of your entire build out, because this is how you're going to find net new customers and net new people to get interested in your brand. So this is where your creative testing is going to take place.
+
+This is also where you're going to be doing a lot more rigorous audience testing. But this is how I would start it off to begin with. So let's go ahead and pop in here.
+
+Now, first call out that I want to have is bid strategy. We're still going to be using lowest costs. This is still a conversion campaign with an optimization for purchase.
+
+And the budget is going to be $50 per day per each ad set. Now, the actual budget that you would be using for your campaigns, it's going to vary really based on your AOV or the costs that it's taking to acquire customers. If you have a much higher AOV or a higher ticket item, then you're probably going to want to consolidate that more.
+
+Consider having a much higher daily budget because $50 a day just really isn't going to cut it. But if you have a lower ticket item, this should be just fine. But as you can see here, I am starting the campaign off right away with a lookalike stack, an interest stack, and then a broad audience.
+
+Now, for the most part, I still find the best traction and efficiency out of completely broad audiences. Now, these are audiences that have no targeting. So no custom audiences and no interest targeting.
+
+And this is actually where I find is the best place to do your creative testing. But however, due to iOS 14, I have found better efficiency coming out of lookalike audiences and interest audiences lately. But if you want to learn more about broad audiences and why I always, always, always have them in my accounts, be sure to take a look at this video right here, which is going to do a deep dive on why I always use broad audiences.
+
+Now, you can see for the other two ad sets that I'm using, these are both lookalike stacks and interest stacks. Again, one of the biggest questions I actually get on this channel is, why do I stack my interests? Why do I stack my lookalikes?
+
+And again, it is about compounding different data points for Facebook to work from. Now, I often find this is one of the most common questions I get for interest particularly. So if I was working for a yoga brand, instead of just targeting yoga or yoga pants, I would actually do a stack of several different interests.
+
+So if you're interested in learning more about why I do that, I have created an entire video about that as well. Be sure to take a look at that right here. Now, additionally, I would also be doing a lookalike stack.
+
+And really depending on where you are in your advertising journey, you might not be able to create a lookalike that is based off purchasers. So what I would do is I would create a 1% lookalike that is based on all the lookalikes that you can create at this point in time, whether or not it's website visitors, social engagers, add to carters, and eventually working up so that you can create those purchaser lookalike audiences, which are still the most valuable. And I find I'm getting the most traction out of them.
+
+Actually, I did forget to put that initially, this would be a 1% audience. So let me go ahead and do that right now. Okay, there you go.
+
+And again, another part of the reason why I'm stacking these is for more data points for Facebook, I often find that I get the biggest efficiency and that there is the rephrase, I often find that I get the biggest rephrase, I often find that I get the best efficiency from Facebook, when I stack those lookalikes instead of just targeting one at a time. Because the reality is it doesn't rephrase because the reality is, it doesn't really matter if you're getting the best traction out of social engagers versus website visitors. Facebook is for the most part moving towards being fully automated on the media by anyways.
+
+So I like to give it as many options as possible, of course, while still opting to give it more efficiency, which is why I do like breaking it into between lookalikes and interests and then having full broad. Now, the next thing I know that you guys are going to talk about is creative. So let's go ahead and jump in here.
+
+So when you jump into the ad level of your account, you can see right here right away that we only have four ads. Now this is actually one of the bigger things that has changed since iOS 14. Facebook used to recommend that we have anywhere from six to seven ads in every single ad set, but now they're recommending three or four ads.
+
+And I do tend to opt on the higher side of that just so that I can give Facebook as many options as possible. But I am seeing better efficiency by using the slightly reduced amount of ads now in the ad set. And as you can see here, I have three video options and an image option.
+
+And really a big part of that strategy is I'm finding that when I'm giving Facebook more options when it comes to formats inside of these ad sets, that's when I tend to get the biggest efficiency. And particularly with images, I know that I have preached a lot about video in the past and many other advertisers have, but because so many advertisers now are using video, I actually find that I get lower CPMs and ultimately better costs on my purchases and on Facebook in general, if I have a few images and every single ad set. So be sure to add that as well.
+
+But now what I want to do is I want to go through these actual ad strategies with you in depth so that you can create ads that are like these, which are all top performing ads that I use inside of my ad accounts right now. So let's go ahead and dive into that. Now, if you've been following my videos for a while, then you already know that creative is literally the most important lever that you can pull in your Facebook ad accounts.
+
+It's my personal belief that media buying is largely going to be automated in the next few years, which is why it's so important to vest heavily in your creative and to test as much creative as possible with inside your ad accounts. So for this specific ad account, I would go ahead and launch three to four different types of ads. And these are the exact ad strategies that I would be using.
+
+And frankly, if you already have a Facebook ad account and you already have some structure that you're working with, you should probably be testing these out anyways. Now, the first type of strategy is UGC video or user generated content style video. Again, if you have been following me for a while, then you already know that this is really the best type of creative that you can be using in your ad accounts today.
+
+Because to be honest, people don't want to buy from brands. They want to buy from people that have shared interests and values as themselves. They don't like being marketed to frankly.
+
+So UGC has really bridged that gap in showing proper product usage and proper product benefits without feeling overly markety. So the two strategies that I'm still using a lot in my ad accounts at Thesis is number one, what I would call a short style video that focuses primarily on product usage. So it's not the typical type of UGC where someone is having their phone in a selfie position and giving a review on a product, those still work.
+
+Spoiler alert, that's the second ad type that I'm going to recommend. But this is actually showing full product usage. And I thought that this ad by Freeha New York did an excellent job of that.
+
+It's going through this entire bag and all the different pockets and exactly how to use those different features. Now, clearly this was probably shot in a studio or at least in a white box, but you can tell that it was filmed with an iPhone. And really this is all that it takes to make a winning ad on Facebook now.
+
+And you don't even have to have a white box if you did this just like on the floor of your apartment or whatever, or even out in the street, out in the grass, that would perfectly suffice. But I thought this was an excellent ad. Now, like I said, the second ad type in terms of UGC that I would recommend you guys testing would be a single testimonial style of ad.
+
+Now, I really love this ad from Dark Cards. And really the thing that I think they're doing super well here is the hook or the first three seconds of this ad, they are burning a piece of paper that says business cards, which I think is hilarious. And they have a headline bar that also says why people are ditching business cards.
+
+And even though I think that this brand is not exactly right for me, I think that it did an excellent job of creating content that number one, gets the user's attention, keeps them watching, and then talks about how effective their product is for a specific group of people. And this instance entrepreneurs. And you know, the fact that they chose a cute girl is, you know, all the better, I suppose.
+
+Now, another UGC example that I wanted to show you guys, and really to show you how simple this could be, is this boomerang style of UGC, which is literally just opening and closing this gift set from Brightland. I saw this on pop up in my feed during Black Friday. And I thought, wow, this is a great ad.
+
+It looks, you know, kind of branded super cute, like high level UGC, as my clients would call it. But you know, it looks great. And it's definitely eye catching.
+
+And what was really cool is today on my feed, I actually saw that they are doing a little AV test here and added some text overlay, which is super smart. I would highly recommend that when you guys do find certain ads, either videos or images that are starting to get traction, do an iterative test by adding some text overlay. And like I said, I really love this version that Brightland did, because they have added native text overlay.
+
+So this is stuff that I see on Instagram stories that my friends are using. So be sure to use those type of strategies in your ad creatives as well. Now, the next type of ad that I want to talk about is use an image or a carousel.
+
+Now, I know that this seems super simple. But like I said earlier, I'm finding the best traction out of ad sets where I have multiple formats of ads inside of them, not just video or not just images. And for the reason why actually images are doing so well is because too many people are using video on Facebook ads manager.
+
+And I'm finding a lot lower CPMs with images and oftentimes they have even higher conversion rates. Now you could start with your top performing organic images popping into a carousel. But I also like to use text overlay, maybe in the form of customer testimonials or even press hits.
+
+I often find a little bit more traction out of press hits these days and customer testimonials because so many people think that they're just faked anyways, even though I've legitimately never faked a single customer testimonial in my entire career. But you know, to each his own. I thought that this press hit by Italic was pretty good.
+
+I actually saw this a number of times on my own feed. And part of the reason why I think this does really well is because it also gives a synopsis on what the brand is all about. So Italic is a way to get designer goods essentially for cheaper, which is cool.
+
+And the fact that it was rated by Cosmopolitan, I guess all the better for certain types of people. And then we have a Paravel ad. I've never heard of this brand actually, but the fact that they have been reviewed in afar seems like a good thing, right?
+
+So this is just definitely a strategy in terms of like press hits and like extracting certain press quotes that you're definitely going to want to test in the early days. Now, another way you could do this too is by using like a gift style ad. So you could just have it cycle through different press logos, like this house and ad.
+
+It's pretty probably a strategy. And especially for fashion, I often find that these like really simple ads that showcase the product front and center tend to work better than big elaborate videos. And in some cases, even UGC.
+
+So keep that in mind. Now I did take another screenshot of this Oliver Campbell ad as well, because I thought it was a really good example of an image ad that is actually special. Now I was actually in the market recently for a pair of white shoes.
+
+So it is no surprise that I got this ad. But what is so remarkable is that it does such a good job of showing the quality. So here's day one of the shoe.
+
+Hey, here's day 276 issue. It barely looks like it's worn. So if you can showcase some sort of smart before and after like this ad, I think that that would be a really good move.
+
+It's something we've been testing more at Thesis is finding a way around Facebook's before and after clause, which essentially Facebook doesn't allow you to use like before and after images. This is mostly for like weight loss, for instance. But we've been finding ways around it for a few of our clients and they tend to perform really, really well.
+
+So keep that in mind. Now, the last type of ad that I want to talk about is what I like to call an explainer or benefits video. Now, this is going to be slightly different than like a UGC video.
+
+Oftentimes this is where you're going to use some more curated content. But I thought that these two ads, this one by Thousand Fail, did a really good job of explaining the core benefits of the product. So these are white sneakers that stay white, kind of like Oliver Campbell.
+
+Apparently it's not that novel. But this is also going deeper and saying, Hey, you know what? It also cleans easy and they don't smell as bad or whatever.
+
+But I think that this product in this product video is really hitting on the core value props of these shoes, which is awesome. And another shoe brand, clearly you see what type of advertisers are advertising me, is this Frida Salvador ad. Now, this actually starts off with a suede shoe.
+
+It says that it is rain or shine, which I'm immediately skeptical of, which is why I don't buy suede. But the fact that it also shows someone running water over these suede boots is a really good hook, I think. And ultimately, I think that even though this ad is not really user generated content, which again, is what performs the best and it's more branded, it's a really solid, strong ad because hitting on the core value props of the product.
+
+So what I would do is I would think about the true benefits that people are going to be getting from your product. And if there aren't any, you should stop advertising. But if you can think about how you are actually improving people's lives, how you are actually providing a solve, put that in the ad.
+
+And you know, you can use for these like explainer benefit videos, you can use user generated content, that would be a very great iterative test if you found messaging that works. But I'm recommending for all of my ad accounts to really have these explicit explainer benefits style videos. And we see them perform really well.
+
+So now that we've talked about everything from your pre-build prep to your entire ad account structure, build out and creative, I want to give you guys some final advice about how I would start to optimize these campaigns. Now, the first thing I want to know is that you should always start optimizing at the ad level, you never want to preemptively turn off an ad set without looking at what types of creatives are actually getting the most spend at the ad level. Because oftentimes what I'll find is that the ad set is actually doing okay.
+
+There are just a few ads inside of that ad set that aren't as efficient. And if you go ahead and turn those off, you'll find that the overall ad set will be performing a little bit more efficiently. So the way that I go about optimization, start at the ad level, and I turn off the ads that aren't going to be as efficient.
+
+And I like to do this now after iOS 14, about once a week, and then about once every two weeks, I evaluate the ad sets and the actual targeting. And if I see, okay, broads not working, lookalikes aren't working, interests aren't working, then I will turn them off and opt for a new ad set to test. What I've been finding recently, again, post iOS 14, is I am getting slightly better efficiency from lookalikes and from interest targeting instead of just broad.
+
+But still, I always like to keep a broad ad set live. But in this case, if you find that it's just not performing for you, go ahead and turn it off and add a new interest stack or add a new lookalike stack. Sometimes in accounts of this size, I end up seeing that I just have three interest stacks, which is totally okay.
+
+Follow the data and always test new things. But don't worry if your ad account doesn't look exactly like someone else's ad account like on Twitter or on YouTube. Now, as far as testing ad creatives, again, I do have a video where you can look into my exact methodology here.
+
+But that methodology is really more reserved for ad accounts that are spending more than 20k per month. And in this case, for this specific ad account, what I would recommend doing is just once a week, launching a net new creative into every single one of your ad sets. So this is going to be for your prospecting audiences and your retargeting audiences.
+
+And try to be careful to not allow the amount of ads to exceed over six in any given ad set. That's generally a sign that you probably have ads that aren't getting enough spend or aren't really as efficient as they should be. So you can go ahead and turn those off and opt in for something better.
+
+And something you should note too, especially for your retargeting audiences, make sure that you're keeping an eye on the frequency. A rule of thumb I have about frequency is I like to have about a frequency of three or four over the last seven days. Anything more than that is when I tend to find that I am blasting people.
+
+So that is definitely one key metric to track in regards to your retargeting. In regards to prospecting, that is probably going to hover around a one or maybe a two. But if it's a two over the last seven days, that means that you probably have too much audience overlap.
+
+So try to keep that below like a 1.5 in my opinion, just to make sure you're getting the right amount of reach and you're reaching new audiences within that specific campaign. I know that was a lot. I don't know why I like moved to the couch for this like mood setting to close out the video, but I did.
+
+I had so much fun with this specific video and I'm having a lot more fun trying to create new interesting content for you guys. So if you made it to the end of this video, leave me a comment below about the type of video you would like to see for me next. And I will pick one of those from the comments to do next week.
+
+Okay. Thanks so much guys. It's been awesome.
+
+See you next Sunday.

@@ -1,0 +1,207 @@
+Analyzing meta ads data is, well, complicated. In fact, in 2025, many advertisers are still focusing on the wrong metrics, like click-through rate, CPM, or CPC. So in this video, I'm gonna show you exactly how to analyze Facebook ads data the right way from the beginner to expert level.
+
+This way you can scale smarter and not waste your money. So if you ever felt like you were missing something critical when analyzing your ad campaigns, this video is for you. Here's our agenda.
+
+Here's everything that we're gonna go through today. First, my 2025 updated column setup in Ads Manager. And then we're gonna go over the tools I use to make data-driven decisions, like Motion and Triple Whale.
+
+Then we're gonna explore some advanced data. This is actually the data that I find nearly all advertisers, even experts, tend to miss out on. One last thing, I also have a free creative reporting checklist that you guys can download in the link in the description bar below.
+
+But more on that in a bit. So these right here are all of the metrics that I'm gonna be tracking inside of Ads Manager. And here's exactly what it looks like.
+
+So first you're gonna see we have the delivery column set up. This campaign ran a few months ago, so the campaign is off. And we also have the bid strategy and attribution setting right here.
+
+Now, if you guys have any questions about the different types of bidding strategies, or even the different types of attribution settings, please let me know in the comments. I'm more than happy to jam on that there, or even make future videos about it. But if you're just starting off, I would highly suggest for your bidding strategy to do highest volume, and for your attribution setting to have seven-day click, and one-day view.
+
+And essentially what bid strategy means is, this algorithm is going to go after the highest volume of conversions. There's gonna be a few different ones, but that's definitely the one that you're gonna wanna start off with, if you are just beginning. An attribution setting is essentially saying, hey, if someone clicks on your ad within a seven-day period, or views it within 24 hours, one day, then that means that that specific ad or campaign will then have that purchase attributed to that specific ad.
+
+Now, once we scroll over here, we can see budget, this is an ASC campaign, which is why we have Adset, and this was a $700 daily budget. Now, if you're just starting off, you're not gonna have budgets that high, of course. I would suggest starting off with at least $100, especially if you're doing an ASC campaign.
+
+But now let's get to the data, let's get to the good stuff. Now, you can see here, we have amount spent, purchases, cost per purchase, and ROAS. Now, these four metrics are essentially going to show you if your campaign is working, and specifically, what is working.
+
+Everything else is going to tell you why. Now, when I'm looking at data and ads manager, I actually like to sort from highest to lowest, so that I can prioritize what's working the best, or at least what's getting the most amount of spend. Because if something isn't working, but it's getting a ton of spend, that's obviously something I'm gonna wanna optimize and turn off.
+
+Next, we're gonna have purchases. Now, your purchases, or your cost per purchase, could also be substituted for lead, or cost per lead. But since most of my brands are in e-commerce, and they're going after purchases, that's why I have that as the primary KPI.
+
+And your cost per purchase is essentially going to be, how much does it cost to acquire a customer on that ad? Your ROAS, self-explanatory, is your return on ad spend. So for every one dollar that you put into this campaign, or to this ad, how many dollars are you then getting back from those customers?
+
+Now, again, these four metrics are going to be your primary KPIs. They're gonna guide everything. Now, the next five metrics are actually gonna tell you about the people you are reaching.
+
+So we have frequency. This specific metric is going to show you how many times, on average, people are seeing your ads. Now, this was looking at the data over a one month period, and we were actually reaching quite a few new people with this specific campaign.
+
+I actually tend to get a little worried if I see frequency numbers above five across the last seven days or the last few weeks, because this might tell me that we are starting to hit a lot of retargeting audiences. So if you see those higher frequencies, it might be a sign that your creatives are targeting the same people over and over again, or your campaign is. Now, your reach is gonna show you the individual people that saw your ad, whereas the impressions is actually going to show the number of times that your ads were shown, sometimes to the same people, which is why I really like looking at the frequency number two, because I always wanna make sure that my ads are reaching new people and not just hitting the same people over and over again.
+
+And then we have, of course, cost per reach and CPM. Now, I'd say that CPM is probably going to be a lot more important than cost per reach, but CPM is actually the number that I find a lot more advertisers talk about. And this is essentially the cost per 1,000 impressions.
+
+Now, I know that you're probably looking at this CPM number and you're like, oh, mine are maybe a lot higher, maybe a lot lower. What is the average CPM? And the truth is, is that your CPM is highly dependent on your industry, right?
+
+And sometimes even specifically your product. If you're curious about benchmarking data and where you should be falling for your specific product or demographic or location, Varos is the tool that I use to make sure that my brands are within the benchmark, essentially. And then the next six metrics that I really like looking at here are your unique outbound click-through rate.
+
+Now this is essentially just a click-through rate, but I like looking at unique outbound because this is the one that actually looks at how many individual users are clicking through and actually going through to your landing page. If you look at just the average click-through metric, you are actually looking at people who click on your ad, go nowhere, click on your ad and end up going to the profile or click on your ad and don't actually make it to the landing page. This is the purest click-through rate, which is why I really like to follow this one.
+
+And again, if you're looking for that type of benchmarking data to know what is a good click-through rate, that's something that Varos can really help out with. And then I have CPC. Now there isn't a CPC for unique outbound click-through rate, essentially.
+
+So I look at the next best one, which is cost per link click, which is just essentially going to tell me, hey, for someone to click on the link that goes to the landing page, what's the average cost of getting someone to click on that link? Then after that, we're going to have the hook rate. Now, this is actually something that is not already inside of ads manager.
+
+You actually have to add this as a custom metric. I am going to show you the exact formula for that later on in this video. But essentially what the hook rate shows us is, hey, when looking at video creative only, what percentage of people actually watched the first three seconds of that video?
+
+Now, this can really help show if you are targeting the right people by using the right type of messaging and creative and visuals inside of the first three seconds of your video ads. So we can see here that we actually have a few differences, right? And of course, we don't have data for this top one because that was actually an image ad.
+
+There is no equivalent, unfortunately, for a hook rate or a hold rate for image ads. The only thing that we have really is click-through rate. And your click-through rate isn't always going to be an amazing indicator of great performing creative because now that the targeting on meta ads is primarily broad, sometimes you are going to see lower click-through rates because we are just hitting a much broader audience instead of the more concentrated audiences where we would see those more inflated click-through rates.
+
+So your hold rate is similar to your hook rate and it's going to tell you one of two things. It's either going to tell you the percentage of people who watched the first 15 seconds of your ad, or if your ad is under 15 seconds long, it's going to show you what percentage of people actually just watched the entire thing. Now, I like being able to look at hold rate and then also cross-analyzing that with the video average playtime because oftentimes that I will find that if we just look at one or the other, if you have really long video ad creatives, like you have, you know, maybe ones that are a minute or a minute and a half versus ones that are 30 seconds, sometimes your average video playtime will look a lot longer.
+
+I find that it's a much purer metric because we're really able to zero in on ad creative that retained people past three seconds instead of just looking at that average video playtime, which again can be conflated. Now, the last metric that I really like to look at is post shares, which just essentially says, hey, how many times was this ad shared organically? Now, the reason why I like to track this is because on the organic social media side, Meta has actually said multiple times that the number one metric that they have for success is shareable content.
+
+So how many people are sharing that piece of content to stories or even sharing that in the DMS? So that's something I also really like to track on the ad buying side. And that's my dashboard setup.
+
+I really like to keep this as simple as possible. I really just want to look at the metrics that are most important to number one, being able to determine what is working and to why potentially it is working, but more on that in a bit. So I'm going to be honest.
+
+I actually do a lot of my analysis inside of motion motion is the creative strategy tool. It's what I use to analyze all of my creatives and honestly build reporting that helps me get my brands to the next level. In fact, there's a brand that I work with that spends millions of dollars per month on meta ads.
+
+And we have several creative team members and departments and so many moving pieces. And motion has really been imperative to our success and sharing data that actually moves the needle. For instance, every single week, I look at this report that shows me the top performing creatives for the week automatically.
+
+This is something that I also share with the broader team. Now I am going to spend the next few sections of this video inside of ads manager. But if you want to take a look at the advanced reports that I'm using inside of motion, be sure to skip to this part of the video.
+
+It's really advanced stuff and worth even beginners looking at. Okay, let's get into it. How to analyze data inside of ads manager.
+
+Now, step number one is actually a mind shift change that I need everyone to get on the same page for. So a mistake I often see is that people try to optimize and analyze at the same time. But really, the analysis needs to be done first before you start tweaking things.
+
+So take a deep breath and focus on one thing at a time. And I'm going to simplify this, especially for the beginners. When you are looking at all of this data inside of your ads manager, you are actually only trying to answer two questions.
+
+Number one, what is working? What is working inside of your ad account? What creatives are working?
+
+What campaigns are working? What's working? And number two, a little bit more complicated, but why is it working?
+
+These two questions and the answer for these two questions will ultimately guide every single thing that you do inside of ads manager. And that brings us to step number two, which is going to be analyzing your primary metrics versus your storytelling metrics. So all of your metrics are going to fall into one of these two categories.
+
+Now your primary metrics are going to tell you what is working. And these are the only metrics that you should be using to optimize your account. So these primary metrics are going to be things like your amount spend, your purchases, your cost per purchase, and even your ROAS.
+
+And if you're doing lead generation, of course, then you are going to swap those results around for cost per lead or number of leads. Now, these are the only things that you should be using to optimize your account. So if you see, oh, this cost per purchase and these number of purchases are profitable for me, I should increase the budget, not looking at your secondary metrics.
+
+Now your secondary metrics are going to help illuminate potentially why something is working, right? So this is going to be your frequency, your CPM. So all of these metrics potentially could illuminate why potentially an ad creative is working or not working.
+
+If you have a high CPM, potentially that's saying, Hey, this creative is costing too much to deliver, which is why ultimately we're not able to get the type of costs that we want, right? Maybe you're saying that your click through rate is too low and your CPC is too high. So people aren't ultimately clicking on that ad to go through to the landing page.
+
+Now, what I will say is very often the most important storytelling metrics often comes down to video creative because we have a lot more data when looking at video creative, right? We're able to see, Hey, how good did this creative do at actually hooking our audience or how good did this video do at maintaining and retaining that viewership? And also ultimately on average, how long was someone viewing that data?
+
+So what I will say is video hook and video hold aren't automatically inside of ads manager. This is a custom metric that you have to add in, but I do have the formula right here for you so that you can add those in. And again, the thing that's, you know, sort of frustrating is this is only going to be available for your video creatives, not necessarily your images, but I do have more data that we can look at later on in this video that are going to help illuminate a lot more as to why certain creatives worked or didn't work.
+
+But again, this isn't necessarily data that you're going to get inside of ads manager, but more on that in a bit. So let's put all this data into action, right? And analyze a campaign that I worked on a few months ago.
+
+Okay. This is an ASC campaign that we ran a number of months ago. And I do want to point out, actually, I've seen a lot more success with ASC campaigns in the recent months.
+
+If you have a lot more ad creative inside of them, I've actually heard that the minimum number you should have in an ASC campaign for optimal performance is 20. So something to consider there. Now, when I'm going into ads manager and I'm going to start analyzing things, the first thing I like to do is actually sort highest to least amount spent so that I can really prioritize what is getting the most amount of spent.
+
+And for this specific ad campaign, we can actually see, wow, there is something that is very, very clearly winning. But let's take a step back for a second, right? Let's first look at this ad campaign as a whole.
+
+And this is something that you can do as well, looking for the account level, right? So we can see that the amount spent was about 11k, 525 website purchases, 21.9 costs per purchase. So that's how much it was costing for us to acquire a customer and 525 purchases overall with a average ROAS of a 2.77.
+
+And for this specific brand, just looking at these internal ads manager metrics, this was actually doing really, really well for us. So just looking at those metrics alone, I would say, hey, this definitely qualifies for us to increase spend on this. You know, if we have already been increasing this steadily over the last two to three days by 20%, maybe we can try increasing it even a little bit more.
+
+But overall, this campaign is working out pretty fabulously. But most of it is being attributed to one ad, right? So we want to zero in on this specific ad and really get to the heart of why this is working, right?
+
+So we can see that this has spent well enlarged the bulk of the spend, right? So that's going to be about 75%. We have a really strong cost per purchase of about $21.50.
+
+And the purchase ROAS is also within our striking distance. We really want to see and scale anything above a 2 when looking at internal metrics. Now, let's try and understand the story of potentially why this is working, right?
+
+We see the outbound click-through rate, which honestly is pretty average for the account. So there's not something super spectacular with the specific click-through rate. Sometimes I will see, oh, a specific ad creative is working really well because it has a high click-through rate.
+
+But to be honest, click-through rate isn't always a reliable metric to gauge performance on because a lot of times the audiences that your campaign or even just specific ad is targeting can be really broad. So sometimes a low click-through rate is actually not a bad indicator of it being successful or not successful. It could actually just be speaking directly to the right people and getting them to act instead of everyone else to act, right?
+
+And yeah, when we're looking at the specific campaign, this specific ad creative has definitely inflated the average. But actually what we had saw in the ad account previously was the average hook rate was around 30% and the average hold rate was anywhere from 7 to 8. So this was almost double that, which is an indicator of a really, really strong creative.
+
+Now, the real heart of why a specific ad creative performed or didn't perform, that type of insight generally isn't in the data itself. It's going to be in the ad creative, right? It's going to be in the messaging, in the type of visuals, and even the format that you're using.
+
+Now, a question that I often get with people who are new to meta ads is they will look at ad creatives like these three right here that have better cost per purchases and even higher ROASs. And they'll ask me, Dara, why isn't meta putting more spend to these more profitable ads? Now, this is actually something that meta has written about multiple times in the past called the breakdown effect.
+
+Now, essentially what this means is that meta has determined through its algorithm that if it would push more spend to these specific ads, that it actually wouldn't be as profitable. Sometimes media buyers trust this, sometimes they don't. To be honest, I've tested it multiple times for myself in the past by trying to throttle more spend to these ad creatives.
+
+And typically they don't perform as well. For whatever reason, meta has really determined that the actual winner for this specific campaign is this one. So really it's going to be better for you to analyze what is happening at the ad creative level versus what is happening at these.
+
+And what I will say, what was interesting about our top performer is it was a pure educational play and it was actually just giving information about the specific product. Now, my guidance for you is to not dwell a ton on what's working and why isn't it working. I would actually suggest, hey, focus more on trends that you're noticing in your ad account, specific messaging and visuals and even ad formats that really seem to be moving the needle for you and figure that out and double down and pressure test those theories on things that seem to be working.
+
+You don't need to know exactly why every single ad creative didn't work, especially in the early days. Next up, let's talk about using first party data, right? So your triple whale, your north beams and beyond.
+
+So a question that I very often get is, okay, do I need triple whale? Do I need north beam in order to advertise on meta ads? And the simple answer is no.
+
+But there are times that it's really worth it. In fact, a brand that I work with does use triple whale to help optimize their campaigns. I'm going to explain how they do that in a bit.
+
+So ultimately, my take on this is first party data tools like triple whale and north beam are really only good for brands who are starting to scale up quite a bit. But to be honest, many brands don't need them at all. And if you're just starting off, then I absolutely would not recommend it as manager is going to be sufficient enough for you.
+
+The question you ultimately have to ask yourself is, is attribution actually an issue for you? Or are you just primarily using meta ads to drive customer acquisition? If that's the case, then you don't need these tools.
+
+I don't find that triple whale magically unlocks insights on a creative level, unless a brand truly has multiple attribution channels that they're using. And by multiple attribution channels, I mean, like, are they investing into TV? Are they investing into podcast or influencer or even Google?
+
+And I will say, yeah, with a brand that I work with, we do use triple whale because we have those multiple channels that we are investing into. Again, though, many brands don't need it as manager alone is often enough to make solid optimization decisions. And first party tools are really only the most valuable when you're managing larger budgets and need precision across multiple data sources.
+
+So if you're feeling overwhelmed by the data, my advice is to first master ads manager. And then you can begin to layer in tools like triple whale or north beam when you start to scale up your budgets, especially if you are starting to invest in additional channels. Okay, now let's talk about how I am using motion for those bigger creative swings.
+
+Again, motion isn't just a creative analytics tool. It's a tool for overall creative strategy. It quickly helps me identify what works to spot patterns and iterate effectively and honestly just gives me the confidence that I need to take much bigger creative swings that ultimately scale.
+
+So here are a few of my favorite reports. Like we talked about the top performing creatives report. I like to look at this on a weekly level, but I'm also looking at it monthly to do those creative retros with the brands that I work with.
+
+Also, if I'm doing individual creative tests for brands, I like to create a motion report just for those individually so I can really zoom in and analyze what's working or not working about a specific creative test. I also like to conduct a format analysis where I am looking to see at a high level, hey, what type of creative diversity does this account have and do we need to potentially invest into more images or more video or even carousels or catalog ads? And then of course, I like to dive into a more secondary format analysis.
+
+So sometimes this can be statics, right? We want to see what types of creative strategies are really working for statics specifically. If it's more testimonials or us versus them or even before and after or celebrity or creator statics.
+
+Same thing for videos. We really want to zoom in and understand, hey, what types of video ads, creative templates or formats are working so that we can easily recreate those, especially when we're doing a new product launch or we're trying to make iterations. Another analysis that I really like to do is looking at agency partners.
+
+So I work with a really big brand where we are actually managing multiple agency partners. So we like to compare across agencies, which agencies are actually moving the needle for us. And sometimes we'll invest more in the agencies that are doing better for us, increase scope, increase retainers, or even decide, hey, we want to move on from a certain partner and start investing in someone new.
+
+We also like to take a look at what types of creators are working the best for us. Sometimes with certain brands, I'll look at, you know, the celebrity programs and just see what types of celebrities we should reinvest in again, or certain influencers, or even down to UGC creators. This type of comparison analysis is incredibly helpful so that we can look and see, who should we invest in it again?
+
+Or who should we find that is similar to the types of creators that are working for us? Of course, you can make these types of reports inside of ads manager, but I find that it is so much easier, not only on myself to make these reports automatically in motion, but also to share across teams that maybe are a little bit intimidated by ads manager. Okay, now let's dive into some advanced analytics.
+
+And what we're actually going to zoom in on is specifically how I am analyzing creative for bigger impact. In fact, what I've noticed is that most people actually analyze their creatives the wrong way. Here's an example of how people will often analyze a creative test for me, right?
+
+So we'll look at something like this and say, okay, you know what version B was the winner. It had a 1.2 row as the 1.64 click through rate. The hook rate was about average at 21%.
+
+Hold rate also was average at a 7.8. So we're ultimately going to do a few more variants of B since that was the winner. And they will stop there.
+
+If you've made an analysis of this, I hate to inform you that this is not a real analysis. In fact, we're missing a lot of data points here that actually make this helpful. Things like qualitative data and additional data points that are inside and also not inside of ads manager.
+
+I'm going to break all of those down for you right now. Now let's zoom in on some of the qualitative data, right? This is actually going to be some of the qualities about your ad creative that can help provide further analysis.
+
+So this can be things like format. So for this specific creative, right? This was a UGC creator testimonial ad.
+
+Um, and there was none of that in the analysis, but maybe when we look at other top performers or what else is performing in the ad account, maybe that is similar or dissimilar. Maybe it's an outlier. That kind of information is really important to know and to share.
+
+Another piece of data here is the creator. So we can think, hmm, is part of the reason why this creative performed down to the creator? In this case, yes.
+
+This was something that we actually saw when working with this creator multiple times. This was absolutely something that impacted the performance. So we ended up reinvesting and working with her.
+
+And again, and that's definitely something that you should bring up as a part of your analysis. We're also missing an analysis on the messaging, which we're going to do in just a second. And then of course, on the imagery.
+
+So the imagery and the format are a little bit different. Um, sometimes when I think of the imagery, I like to think of the overall production quality. Um, I like to think about also the setting.
+
+So, oh, and the specific ad creative, she's in her car. Maybe that's something that's potentially affecting performance. We actually have seen that for several brands that I've worked with, that being in a different location instead of just inside of your house can actually have a big impact on performance.
+
+And that's worth noting, especially if you have a winning creative. Now let's talk about this messaging analysis, right? Now, when we looked at the other three creatives that were being tested, we noticed that, oh, creative A had more value-based messaging, right?
+
+But we also had a bit of a competitor comparison going on and it was super numerical, super numbers heavy. While B ultimately, the winner, leaned into a bit of negative marketing. Also was using a really strong trigger word here, hate.
+
+I find that that, that word is something that actually tends to, um, reach out and hook people really well. And it was also a question. So it feels like you're talking directly to the audience and C was actually using messaging around it being fast and being easy.
+
+And it was also a lot more problem solution oriented. And now it's really interesting too, as we're doing this messaging analysis, something that I like to think about is, huh, at what part of the marketing journey, potentially is this ultimately targeting? And a part of the analysis we did on this creative after we ran it was, oh, actually messaging B had the most scalable messaging because it was able to appeal to the widest range of people to more of that problem aware slash unaware segment.
+
+So, you know, we did see initially, actually, A was the one that came out of the gate and was starting to convert a lot more quickly because it was getting more of that low hanging fruit, right? It was easier to convert down in the funnel, but ultimately the one that ended up running and winning for us the longest was the one that had that more scalable messaging. So this is advanced stuff, right?
+
+But it is important when you're doing that analysis to understand, hmm, potentially why is this converting better for my audience? Is it because it's more scalable? Potentially.
+
+Additional data you can find inside of ads manager that I find is helpful for analyzing creatives is going to be your breakdown data. So this is going to be things like your age, your placements, and even your gender. Being able to look at specific creative tests and say, ooh, was this pulling into a certain age demographic?
+
+How is that potentially impacting the overall performance? Maybe if we see, oh, we find that a specific creative is actually targeting more of the 50 plus range and that's working a lot better for us. That might be a sign that we want to develop more creative for that audience or speak more directly to that audience.
+
+An interesting thing to see too about placements is, oh, is Instagram or Facebook working better for my brand? Is the feed or even stories or reels what's really moving the needle here? Is that because of how we're actually formatting the specific creatives?
+
+There's a lot to potentially pull apart there. And then finally, comparative data. Now, I think that no analysis is really complete, candidly, without comparing it to other data points that you have.
+
+Now, some of this can be your own data points, like your own top performers or your own current tests that are currently going on. I often find that when you are analyzing creative, being able to compare it to your own performance can be really helpful in illuminating where it's falling inside of your general ecosystem. But another comparative data set that you can have too, potentially, is your competitor data.
+
+So what you can actually look at is see, hey, what types of ad creative is my competitors running? Is it similar to what we are running? Are they seeming to be learning similar things using similar formats, similar messaging strategies, and also look through the lens at their messaging and seeing how scalable potentially their messaging is and if they seem to be repeating anything month over month.
+
+Now, I know a lot of that is super complicated. That's why it's more of the advanced stuff, right? I do have a slide here for how this tends to look if I am going super in-depth on a specific creative test and how everything is lied out.
+
+Now, again, I know that this is a lot of work and this isn't something that I suggest for every single test, but if you're doing a really big swing or you find that you have a unicorn banger of ad that is scaling to the moon, you might want to do an in-depth analysis like this so that you can really pull apart the things that are actually working here and can actually help you to get to the next level and make another winning ad. And that's it. Don't forget, I also have that creative reporting checklist for you guys.
+
+If you learned anything at all in this video, please be sure to give me a like and subscribe because those small things really do help me out so much as a creator and I can't wait to see you guys again next week. See ya! Bye!

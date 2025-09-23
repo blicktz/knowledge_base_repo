@@ -227,6 +227,12 @@ class ExtractionMetadata(BaseModel):
     # Cache information
     cache_hits: int = Field(default=0, ge=0, description="Number of cache hits during processing")
     cache_misses: int = Field(default=0, ge=0, description="Number of cache misses during processing")
+    
+    # Quality assessment scores (populated after extraction)
+    quality_scores: Optional[Dict[str, float]] = Field(
+        default=None, 
+        description="Quality assessment scores for extraction components"
+    )
 
 
 class PersonaConstitution(BaseModel):
@@ -299,6 +305,18 @@ class PersonaConstitution(BaseModel):
             ),
             "has_statistical_report": self.statistical_report is not None,
             "processing_time": self.extraction_metadata.total_processing_time_seconds,
+        }
+    
+    def get_summary(self) -> Dict[str, Any]:
+        """Get a summary of the persona extraction results."""
+        return {
+            "total_mental_models": len(self.mental_models),
+            "total_core_beliefs": len(self.core_beliefs),
+            "total_catchphrases": len(self.linguistic_style.catchphrases),
+            "total_vocabulary_terms": len(self.linguistic_style.vocabulary),
+            "processing_time": f"{self.extraction_metadata.total_processing_time_seconds:.2f}s",
+            "overall_quality": self.overall_quality_score,
+            "completeness": self.completeness_score,
         }
 
     def get_top_mental_models(self, n: int = 10) -> List[MentalModel]:

@@ -10,7 +10,6 @@ from typing import List, Dict, Any, Optional
 from pathlib import Path
 
 from ..data.storage.vector_store import VectorStore
-from ..data.storage.artifacts import ArtifactManager
 from ..data.processing.transcript_loader import TranscriptLoader
 from ..data.processing.chunk_processor import ChunkProcessor
 from ..core.persona_extractor import PersonaExtractor
@@ -44,11 +43,9 @@ class KnowledgeIndexer:
             
             # Use persona-specific components
             self.vector_store = self.persona_manager.get_persona_vector_store(persona_id)
-            self.artifact_manager = self.persona_manager.get_persona_artifact_manager(persona_id)
         else:
             # Legacy mode - use global components
             self.vector_store = VectorStore(settings)
-            self.artifact_manager = ArtifactManager(settings)
         
         self.transcript_loader = TranscriptLoader(settings)
         self.chunk_processor = ChunkProcessor(settings)
@@ -171,8 +168,7 @@ class KnowledgeIndexer:
         
         self.logger.info(f"Extracting persona '{persona_name}' (ID: {persona_id}) from {documents_dir}")
         
-        # Get persona-specific artifact manager
-        artifact_manager = self.persona_manager.get_persona_artifact_manager(persona_id)
+        # Use persona manager for artifact operations
         
         # Load documents
         documents = self.transcript_loader.load_documents(
@@ -231,7 +227,7 @@ class KnowledgeIndexer:
         
         # Save persona artifact using persona-specific artifact manager
         self.logger.info(f"Saving persona artifact for '{persona_id}'...")
-        artifact_path = artifact_manager.save_persona_constitution(
+        artifact_path = self.persona_manager.save_persona_constitution(
             persona,
             persona_name,
             metadata={
@@ -323,8 +319,7 @@ class KnowledgeIndexer:
         
         self.logger.info(f"Phase 1-b: LLM processing for '{persona_name}' (ID: {persona_id})")
         
-        # Get persona-specific artifact manager
-        artifact_manager = self.persona_manager.get_persona_artifact_manager(persona_id)
+        # Use persona manager for artifact operations
         
         # Load documents
         documents = self.transcript_loader.load_documents(
@@ -386,7 +381,7 @@ class KnowledgeIndexer:
         
         # Save persona artifact using persona-specific artifact manager
         self.logger.info(f"Saving persona artifact for '{persona_id}'...")
-        artifact_path = artifact_manager.save_persona_constitution(
+        artifact_path = self.persona_manager.save_persona_constitution(
             persona,
             persona_name,
             metadata={

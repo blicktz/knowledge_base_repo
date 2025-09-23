@@ -4,13 +4,14 @@ Manages persona-specific vector stores and ensures data isolation
 """
 
 import re
-from typing import Dict, Optional, List, Any
-from pathlib import Path
-from datetime import datetime
 import json
+import gzip
+from typing import Dict, Optional, List, Any, Union
+from pathlib import Path
+from datetime import datetime, timezone
 
 from ..data.storage.vector_store import VectorStore
-from ..data.storage.artifacts import ArtifactManager
+from ..data.models.persona_constitution import PersonaConstitution, StatisticalReport
 from ..config.settings import Settings
 from ..utils.logging import get_logger
 
@@ -29,9 +30,8 @@ class PersonaManager:
         self.personas_base_dir = Path(self.settings.storage.artifacts_dir).parent / "personas"
         self.personas_base_dir.mkdir(parents=True, exist_ok=True)
         
-        # Cache of loaded vector stores and artifact managers
+        # Cache of loaded vector stores
         self.active_vector_stores: Dict[str, VectorStore] = {}
-        self.active_artifact_managers: Dict[str, ArtifactManager] = {}
         
         # Load persona registry
         self.registry_path = self.personas_base_dir / "persona_registry.json"
@@ -42,7 +42,12 @@ class PersonaManager:
         if self.registry_path.exists():
             try:
                 with open(self.registry_path, 'r') as f:
-                    return json.load(f)
+                    data = json.load(f)
+                    # Handle both old flat format and new nested format
+                    if "personas" in data:
+                        return data["personas"]
+                    else:
+                        return data
             except Exception as e:
                 self.logger.error(f"Failed to load persona registry: {e}")
                 return {}
@@ -51,8 +56,14 @@ class PersonaManager:
     def _save_registry(self):
         """Save the persona registry to disk"""
         try:
+            # Save in unified nested format
+            registry_data = {
+                "personas": self.persona_registry,
+                "created_at": datetime.now(timezone.utc).isoformat(),
+                "last_updated": datetime.now(timezone.utc).isoformat()
+            }
             with open(self.registry_path, 'w') as f:
-                json.dump(self.persona_registry, f, indent=2)
+                json.dump(registry_data, f, indent=2)
         except Exception as e:
             self.logger.error(f"Failed to save persona registry: {e}")
     
@@ -95,17 +106,20 @@ class PersonaManager:
             self.logger.info(f"Persona '{persona_name}' already registered as '{persona_id}'")
             return persona_id
         
-        # Create persona entry
+        # Create persona entry with unified structure
         self.persona_registry[persona_id] = {
             "name": persona_name,
             "id": persona_id,
-            "created_at": datetime.now().isoformat(),
+            "created_at": datetime.now(timezone.utc).isoformat(),
+            "last_updated": datetime.now(timezone.utc).isoformat(),
             "metadata": metadata or {},
             "stats": {
                 "documents": 0,
                 "chunks": 0,
-                "last_updated": None
-            }
+                "stats_updated_at": None
+            },
+            "artifacts": [],
+            "latest_artifact": None
         }
         
         # Create persona directories
@@ -150,35 +164,6 @@ class PersonaManager:
         self.logger.info(f"Initialized vector store for persona: {persona_id}")
         return vector_store
     
-    def get_persona_artifact_manager(self, persona_id: str) -> ArtifactManager:
-        """
-        Get or create an artifact manager for a specific persona
-        
-        Args:
-            persona_id: The persona identifier
-            
-        Returns:
-            Persona-specific artifact manager instance
-        """
-        # Check if persona is registered
-        if persona_id not in self.persona_registry:
-            raise ValueError(f"Persona '{persona_id}' not registered. Register it first.")
-        
-        # Return cached instance if available
-        if persona_id in self.active_artifact_managers:
-            return self.active_artifact_managers[persona_id]
-        
-        # Create persona-specific settings
-        persona_settings = self._create_persona_settings(persona_id)
-        
-        # Initialize persona-specific artifact manager
-        artifact_manager = ArtifactManager(persona_settings)
-        
-        # Cache the instance
-        self.active_artifact_managers[persona_id] = artifact_manager
-        
-        self.logger.info(f"Initialized artifact manager for persona: {persona_id}")
-        return artifact_manager
     
     def _create_persona_settings(self, persona_id: str) -> Settings:
         """
@@ -244,7 +229,8 @@ class PersonaManager:
             return
         
         self.persona_registry[persona_id]["stats"].update(stats)
-        self.persona_registry[persona_id]["stats"]["last_updated"] = datetime.now().isoformat()
+        self.persona_registry[persona_id]["stats"]["stats_updated_at"] = datetime.now(timezone.utc).isoformat()
+        self.persona_registry[persona_id]["last_updated"] = datetime.now(timezone.utc).isoformat()
         self._save_registry()
     
     def delete_persona(self, persona_id: str, delete_data: bool = False):
@@ -263,8 +249,6 @@ class PersonaManager:
             self.active_vector_stores[persona_id].close()
             del self.active_vector_stores[persona_id]
         
-        if persona_id in self.active_artifact_managers:
-            del self.active_artifact_managers[persona_id]
         
         # Delete from registry
         del self.persona_registry[persona_id]
@@ -290,7 +274,6 @@ class PersonaManager:
                 self.logger.warning(f"Error closing vector store for {persona_id}: {e}")
         
         self.active_vector_stores.clear()
-        self.active_artifact_managers.clear()
         self.logger.info("Persona manager cleanup complete")
     
     def persona_exists(self, persona_id: str) -> bool:
@@ -322,3 +305,204 @@ class PersonaManager:
             return self.register_persona(persona_name, metadata)
         
         return persona_id
+    
+    # Artifact Management Methods
+    def _save_json(self, data: Union[Dict, List], file_path: Path, compress: bool = False):
+        """Save data as JSON with optional compression."""
+        try:
+            if compress:
+                with gzip.open(str(file_path) + ".gz", 'wt', encoding='utf-8') as f:
+                    json.dump(data, f, indent=2, ensure_ascii=False)
+            else:
+                with open(file_path, 'w', encoding='utf-8') as f:
+                    json.dump(data, f, indent=2, ensure_ascii=False)
+        except Exception as e:
+            self.logger.error(f"Failed to save JSON to {file_path}: {e}")
+            raise
+    
+    def _load_json(self, file_path: Path) -> Dict[str, Any]:
+        """Load JSON data with optional decompression."""
+        try:
+            # Try compressed version first
+            if Path(str(file_path) + ".gz").exists():
+                with gzip.open(str(file_path) + ".gz", 'rt', encoding='utf-8') as f:
+                    return json.load(f)
+            # Fall back to uncompressed
+            elif file_path.exists():
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    return json.load(f)
+            else:
+                raise FileNotFoundError(f"No JSON file found at {file_path}")
+        except Exception as e:
+            self.logger.error(f"Failed to load JSON from {file_path}: {e}")
+            raise
+    
+    def save_persona_constitution(self, persona: PersonaConstitution, persona_name: str, 
+                                 compress: bool = True, metadata: Optional[Dict[str, Any]] = None) -> str:
+        """
+        Save a persona constitution.
+        
+        Args:
+            persona: PersonaConstitution object to save
+            persona_name: Name identifier for the persona
+            compress: Whether to compress the saved file
+            metadata: Optional metadata about the artifact
+            
+        Returns:
+            Artifact ID of the saved persona
+        """
+        persona_id = self._sanitize_persona_id(persona_name)
+        
+        if persona_id not in self.persona_registry:
+            raise ValueError(f"Persona '{persona_name}' not registered. Register it first.")
+        
+        # Create persona directory and artifacts subdirectory
+        persona_dir = self.personas_base_dir / persona_id
+        artifacts_dir = persona_dir / "artifacts"
+        artifacts_dir.mkdir(exist_ok=True)
+        
+        # Generate artifact ID and filename
+        timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+        artifact_id = f"persona_{persona_id}_{timestamp}"
+        filename = f"{artifact_id}.json"
+        
+        # Save the persona constitution
+        file_path = artifacts_dir / filename
+        persona_dict = persona.dict()
+        self._save_json(persona_dict, file_path, compress=compress)
+        
+        # Create artifact entry
+        artifact_entry = {
+            "artifact_id": artifact_id,
+            "filename": filename + (".gz" if compress else ""),
+            "created_at": datetime.utcnow().isoformat(),
+            "compressed": compress,
+            "file_path": str(file_path) + (".gz" if compress else ""),
+            "quality_score": persona.overall_quality_score,
+            "completeness_score": persona.completeness_score,
+            "metadata": metadata
+        }
+        
+        # Add artifact to persona registry
+        self.persona_registry[persona_id]["artifacts"].append(artifact_entry)
+        self.persona_registry[persona_id]["latest_artifact"] = artifact_id
+        self.persona_registry[persona_id]["last_updated"] = datetime.utcnow().isoformat()
+        
+        self._save_registry()
+        
+        self.logger.info(f"Saved persona constitution for '{persona_name}' as {artifact_id}")
+        return artifact_id
+    
+    def load_persona_constitution(self, persona_name: str, artifact_id: Optional[str] = None) -> PersonaConstitution:
+        """
+        Load a persona constitution.
+        
+        Args:
+            persona_name: Name identifier for the persona
+            artifact_id: Specific artifact ID to load (loads latest if None)
+            
+        Returns:
+            PersonaConstitution object
+        """
+        persona_id = self._sanitize_persona_id(persona_name)
+        
+        if persona_id not in self.persona_registry:
+            raise ValueError(f"Persona '{persona_name}' not found in registry")
+        
+        persona_info = self.persona_registry[persona_id]
+        
+        # Find the artifact to load
+        if artifact_id is None:
+            # Load latest artifact
+            if not persona_info.get("artifacts"):
+                raise ValueError(f"No artifacts found for persona '{persona_name}'")
+            artifact_entry = persona_info["artifacts"][-1]  # Latest artifact
+        else:
+            # Find specific artifact
+            artifact_entry = None
+            for entry in persona_info["artifacts"]:
+                if entry["artifact_id"] == artifact_id:
+                    artifact_entry = entry
+                    break
+            
+            if artifact_entry is None:
+                raise ValueError(f"Artifact '{artifact_id}' not found for persona '{persona_name}'")
+        
+        # Load the artifact
+        artifact_path = Path(artifact_entry["file_path"])
+        if artifact_entry["compressed"]:
+            # Remove .gz suffix for _load_json to handle it
+            artifact_path = Path(str(artifact_path).replace('.gz', ''))
+        
+        persona_data = self._load_json(artifact_path)
+        return PersonaConstitution(**persona_data)
+    
+    def export_persona(self, persona_name: str, output_path: Path, format: str = "json") -> Path:
+        """
+        Export a persona constitution to a file.
+        
+        Args:
+            persona_name: Name identifier for the persona
+            output_path: Path to save the exported file
+            format: Export format (currently only 'json' supported)
+            
+        Returns:
+            Path to the exported file
+        """
+        if format != "json":
+            raise ValueError(f"Unsupported export format: {format}")
+        
+        persona = self.load_persona_constitution(persona_name)
+        
+        # Ensure output directory exists
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        
+        # Save as uncompressed JSON for better readability
+        self._save_json(persona.dict(), output_path, compress=False)
+        
+        self.logger.info(f"Exported persona '{persona_name}' to {output_path}")
+        return output_path
+    
+    def get_persona_stats(self, persona_name: str) -> Dict[str, Any]:
+        """
+        Get comprehensive statistics for a persona.
+        
+        Args:
+            persona_name: Name identifier for the persona
+            
+        Returns:
+            Dictionary containing persona statistics
+        """
+        persona_id = self._sanitize_persona_id(persona_name)
+        
+        if persona_id not in self.persona_registry:
+            raise ValueError(f"Persona '{persona_name}' not found")
+        
+        persona_info = self.persona_registry[persona_id]
+        
+        try:
+            persona = self.load_persona_constitution(persona_name)
+            return {
+                "name": persona_info["name"],
+                "id": persona_info["id"],
+                "created_at": persona_info.get("created_at"),
+                "last_updated": persona_info.get("last_updated"),
+                "artifacts_count": len(persona_info.get("artifacts", [])),
+                "latest_artifact": persona_info.get("latest_artifact"),
+                "stats": persona_info.get("stats", {}),
+                "metadata": persona_info.get("metadata", {}),
+                "quality_summary": persona.get_quality_summary()
+            }
+        except Exception as e:
+            self.logger.error(f"Failed to load persona constitution for stats: {e}")
+            return {
+                "name": persona_info["name"],
+                "id": persona_info["id"],
+                "created_at": persona_info.get("created_at"),
+                "last_updated": persona_info.get("last_updated"),
+                "artifacts_count": len(persona_info.get("artifacts", [])),
+                "latest_artifact": persona_info.get("latest_artifact"),
+                "stats": persona_info.get("stats", {}),
+                "metadata": persona_info.get("metadata", {}),
+                "error": str(e)
+            }

@@ -6,7 +6,7 @@ import json
 import time
 import asyncio
 from typing import Dict, List, Any, Optional, Tuple
-from datetime import datetime
+from datetime import datetime, timezone
 
 from langchain.schema import BaseMessage, HumanMessage, SystemMessage
 from langchain.prompts import PromptTemplate
@@ -725,13 +725,11 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
                 source_documents.append(doc['file_path'])
         
         metadata = ExtractionMetadata(
-            extraction_date=datetime.now(),
-            extractor_version="1.0.0",
+            extraction_timestamp=datetime.now(timezone.utc),
             llm_model=self.settings.llm.config.get('model', 'unknown'),
-            total_processing_time=total_time,
-            source_documents=source_documents,
-            extraction_parameters=self.settings.persona_extraction.dict(),
-            quality_scores={}  # Can be populated later with quality assessment
+            llm_provider=self.settings.llm.provider,
+            total_processing_time_seconds=total_time,
+            source_documents_count=len(documents)
         )
         
         return metadata

@@ -10,7 +10,6 @@ import json
 
 from ..core.knowledge_indexer import KnowledgeIndexer
 from ..core.persona_manager import PersonaManager
-from ..data.storage.artifacts import ArtifactManager
 from ..config.settings import Settings, get_settings
 from ..utils.logging import setup_logger
 from ..utils.validation import validate_config_file
@@ -26,7 +25,6 @@ class PersonaBuilderCLI:
         self.settings = None
         self.logger = None
         self.knowledge_indexer = None
-        self.artifact_manager = None
         self.persona_manager = None
     
     def setup(self, config_path: Optional[str] = None, debug: bool = False):
@@ -53,9 +51,8 @@ class PersonaBuilderCLI:
         
         # Initialize components
         self.persona_manager = PersonaManager(self.settings)
-        # Note: knowledge_indexer and artifact_manager will be initialized per-command with persona context
+        # Note: knowledge_indexer will be initialized per-command with persona context
         self.knowledge_indexer = None
-        self.artifact_manager = None
     
     def build_knowledge_base(self, args):
         """Build or rebuild the knowledge base"""
@@ -115,11 +112,8 @@ class PersonaBuilderCLI:
             print("-" * 40)
             print(f"Saved to: {artifact_path}")
             
-            # Initialize persona-specific artifact manager
-            self.artifact_manager = self.persona_manager.get_persona_artifact_manager(persona_id)
-            
             # Load and display summary
-            persona = self.artifact_manager.load_persona_constitution(name=args.name)
+            persona = self.persona_manager.load_persona_constitution(persona_name=args.name)
             summary = persona.get_summary()
             
             print("\nPersona Summary:")
@@ -130,9 +124,10 @@ class PersonaBuilderCLI:
             print(f"  Processing Time: {summary['processing_time']}")
             
             if args.verbose:
-                print("\nQuality Scores:")
-                for key, value in persona.extraction_metadata.quality_scores.items():
-                    print(f"  {key}: {value:.2f}")
+                if hasattr(persona.extraction_metadata, 'quality_scores') and persona.extraction_metadata.quality_scores:
+                    print("\nQuality Scores:")
+                    for key, value in persona.extraction_metadata.quality_scores.items():
+                        print(f"  {key}: {value:.2f}")
                 
                 print("\nTop Catchphrases:")
                 for phrase in persona.linguistic_style.catchphrases[:5]:
@@ -202,11 +197,8 @@ class PersonaBuilderCLI:
             print("-" * 40)
             print(f"Saved to: {artifact_path}")
             
-            # Initialize persona-specific artifact manager
-            self.artifact_manager = self.persona_manager.get_persona_artifact_manager(persona_id)
-            
             # Load and display summary
-            persona = self.artifact_manager.load_persona_constitution(name=args.name)
+            persona = self.persona_manager.load_persona_constitution(persona_name=args.name)
             summary = persona.get_summary()
             
             print("\nPersona Summary:")
@@ -217,9 +209,10 @@ class PersonaBuilderCLI:
             print(f"  Processing Time: {summary['processing_time']}")
             
             if args.verbose:
-                print("\nQuality Scores:")
-                for key, value in persona.extraction_metadata.quality_scores.items():
-                    print(f"  {key}: {value:.2f}")
+                if hasattr(persona.extraction_metadata, 'quality_scores') and persona.extraction_metadata.quality_scores:
+                    print("\nQuality Scores:")
+                    for key, value in persona.extraction_metadata.quality_scores.items():
+                        print(f"  {key}: {value:.2f}")
                 
                 print("\nTop Catchphrases:")
                 for phrase in persona.linguistic_style.catchphrases[:5]:
@@ -248,8 +241,8 @@ class PersonaBuilderCLI:
             print(f"Name: {persona_info['name']}")
             print(f"  ID: {persona_info['id']}")
             print(f"  Created: {persona_info['created_at']}")
-            if persona_info['stats']['last_updated']:
-                print(f"  Last Updated: {persona_info['stats']['last_updated']}")
+            if persona_info['stats'].get('stats_updated_at'):
+                print(f"  Last Updated: {persona_info['stats']['stats_updated_at']}")
             print(f"  Documents: {persona_info['stats']['documents']}")
             print(f"  Chunks: {persona_info['stats']['chunks']}")
             if args.verbose and persona_info.get('metadata'):
