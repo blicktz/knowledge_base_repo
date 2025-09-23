@@ -163,11 +163,9 @@ You must adhere to the following definitions for each field in the JSON object:
 - **`name` (string):** A concise, descriptive name for the framework. If the influencer gives it a name, use that. If not, create a name that summarizes its purpose (e.g., "Startup Idea Validation Process").
 - **`description` (string):** A single sentence explaining the purpose and outcome of this model. It must answer: "What does this framework help someone achieve?"
 - **`steps` (array of strings):** An array where each string is a distinct, actionable step in the process, kept in the correct sequence.
-- **`application_contexts` (array of strings):** A list of specific situations or domains where this model is applied (e.g., "Validating a startup idea", "Growing a YouTube channel").
-- **`examples` (array of strings):** A list of brief, concrete examples of the model being used (e.g., "My last SaaS launch", "The 'Creator Funnel' campaign").
-- **`frequency_score` (integer):** An estimated integer from 1 to 10 representing how often this model is mentioned *within this specific content batch*. A single clear mention is a 5; a central, repeated theme is a 9 or 10.
+- **`categories` (array of strings):** A list of categories or domains where this model applies (e.g., ["entrepreneurship", "marketing", "productivity"]).
+- **`frequency` (integer):** An estimated integer from 1 to 10 representing how often this model is mentioned *within this specific content batch*. A single clear mention is a 5; a central, repeated theme is a 9 or 10.
 - **`confidence_score` (float):** A float between 0.0 and 1.0 representing your confidence that this is a true, well-defined model. Use 0.9+ for explicitly named frameworks with clear steps.
-- **`batch_evidence` (array of strings):** A list containing 1-2 of the most compelling and direct verbatim quotes from the text that prove the existence of the model.
 
 ---
 ## EXAMPLE ##
@@ -192,11 +190,9 @@ The user mentioned a "3-P Framework". It has three clear, sequential steps. This
             "2. Protect your time by blocking it out on a calendar.",
             "3. Perform with focus by eliminating distractions during execution."
         ],
-        "application_contexts": ["Product Launches", "SaaS Business"],
-        "examples": ["Used for my last SaaS launch"],
-        "frequency_score": 8,
-        "confidence_score": 0.95,
-        "batch_evidence": ["To launch a new product, I always follow my 3-P Framework.", "Finally, Perform with focus. Turn off all distractions and just execute."]
+        "categories": ["entrepreneurship", "productivity"],
+        "frequency": 8,
+        "confidence_score": 0.95
     }}
 ]
 </json_output>
@@ -241,11 +237,9 @@ You must adhere to the following definitions for each field in the JSON object:
 
 - **`statement` (string):** A single, well-articulated sentence that captures the essence of the core belief. It should be a timeless principle, not specific advice.
 - **`category` (string):** A single, lower-case keyword that best describes the domain of this belief (e.g., 'entrepreneurship', 'marketing', 'personal_development', 'mindset').
-- **`evidence` (array of strings):** A list containing 1-2 of the most powerful, direct, verbatim quotes from the text that prove the influencer holds this belief.
-- **`frequency_score` (integer):** An estimated integer from 1 to 10. How prominent is this belief *within this specific content batch*? A single, powerful statement might be a 6; a belief that is the central theme of the text would be a 9 or 10.
+- **`supporting_evidence` (array of strings):** A list containing 1-2 of the most powerful, direct, verbatim quotes from the text that prove the influencer holds this belief.
+- **`frequency` (integer):** An estimated integer from 1 to 10. How prominent is this belief *within this specific content batch*? A single, powerful statement might be a 6; a belief that is the central theme of the text would be a 9 or 10.
 - **`confidence_score` (float):** A float between 0.0 and 1.0. How confident are you that this is a foundational, core belief and not just a fleeting opinion? Use 0.9+ for beliefs that are stated explicitly, with strong conviction, and are central to the main argument.
-- **`batch_source` (string):** The identifier for the source of this content, which will be provided in the input. Use the value from the `{batch_description}` variable.
-- **`related_topics` (array of strings):** A list of 2-3 keywords or short phrases that are closely related to this belief (e.g., for a belief about 'action over planning', related topics could be 'lean startup', 'prototyping', 'validation').
 
 ---
 ## EXAMPLE ##
@@ -254,23 +248,20 @@ You must adhere to the following definitions for each field in the JSON object:
 <content_to_analyze>
 Look, a lot of people get stuck in analysis paralysis. They plan forever. I believe you have to ship. Action produces information. You learn more from a failed launch than from a perfect plan that never sees the light of day. Just get it out there. It's the core of the lean startup methodology.
 </content_to_analyze>
-<batch_description>how_to_build_a_startup.txt</batch_description>
 </input_block>
 
 <output_block>
 <thinking>
-The influencer repeatedly emphasizes action over planning. The phrase "Action produces information" is a very strong, concise statement of this principle. This is a clear core belief. I will categorize it as 'entrepreneurship'. I will extract the most powerful quote as evidence. This is the central theme of the provided text, so frequency is high. Confidence is also very high because it's stated as a core belief. The related topics are about shipping products and validating ideas. The batch source is provided in the input.
+The influencer repeatedly emphasizes action over planning. The phrase "Action produces information" is a very strong, concise statement of this principle. This is a clear core belief. I will categorize it as 'entrepreneurship'. I will extract the most powerful quote as supporting evidence. This is the central theme of the provided text, so frequency is high. Confidence is also very high because it's stated as a core belief.
 </thinking>
 <json_output>
 [
     {{
         "statement": "Action produces information; it is better to launch and learn than to wait for a perfect plan.",
         "category": "entrepreneurship",
-        "evidence": ["You learn more from a failed launch than from a perfect plan that never sees the light of day."],
-        "frequency_score": 9,
-        "confidence_score": 0.95,
-        "batch_source": "how_to_build_a_startup.txt",
-        "related_topics": ["lean startup", "product validation", "execution"]
+        "supporting_evidence": ["You learn more from a failed launch than from a perfect plan that never sees the light of day."],
+        "frequency": 9,
+        "confidence_score": 0.95
     }}
 ]
 </json_output>
@@ -596,18 +587,17 @@ The two candidate beliefs express the same core idea of valuing action over plan
                             name=item_data.get('name', ''),
                             description=item_data.get('description', ''),
                             steps=item_data.get('steps', []),
-                            application_contexts=item_data.get('application_contexts', []),
-                            examples=item_data.get('examples', []),
+                            categories=item_data.get('categories', []),
+                            frequency=item_data.get('frequency', 1),
                             confidence_score=item_data.get('confidence_score', 0.5)
                         ))
                     elif extraction_type == "core_beliefs":
                         results.append(CoreBelief(
                             statement=item_data.get('statement', ''),
                             category=item_data.get('category', ''),
-                            evidence=item_data.get('evidence', []),
-                            frequency=item_data.get('frequency_score', 1),
-                            confidence_score=item_data.get('confidence_score', 0.5),
-                            related_mental_models=item_data.get('related_topics', [])
+                            supporting_evidence=item_data.get('supporting_evidence', []),
+                            frequency=item_data.get('frequency', 1),
+                            confidence_score=item_data.get('confidence_score', 0.5)
                         ))
                 except Exception as e:
                     self.logger.warning(f"Failed to create {extraction_type} object: {e}")

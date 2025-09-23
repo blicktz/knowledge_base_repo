@@ -1,0 +1,53 @@
+#### But your responsibilities as entrepreneur do not include paying any more taxes than the minimum legally required of you. If you can arrange your business structure or affairs differently or relocate your business in order to pay fewer taxes, it is your sworn responsibility to do so.
+ Is it your responsibility to improve your customers’ lives? No, it is not. Now, it’s pretty smart to sell them things that, if they use them as you intended, will improve their lives. That’s smart. But it’s not your responsibility to see that it gets done. Nor should you lose any sleep over the customers who do not use what you sell them to improve their lives.
+ I had to come to grips with that in my businesses very early on, or I’d have had my wealth attraction severely suppressed. A lot of my wealth has been derived from writing and recording and publishing information products intended to help people better their attitudes, thinking, skills, businesses, and finances—just like this book. Frankly, the shrinkwrap never comes off a whole lot of what I sell. And you will kill yourself in my business if you worry about making them take off the shrinkwrap. The books never get read. The ideas never acted on. My clients very successfully sell perfectly good exercise equipment that gathers dust in buyers’ garages, bottles of health-producing nutritional supplements that age unopened on closet shelves, business opportunities never worked on, heck, even vacation homes they rarely visit.
+ Should I feel guilty about the majority who pay their money but then never do anything with what they bought? Should I follow them home and refund their money? When I take a cruise, stay at a top-flight resort or buy another racehorse, I give no thought to whether the money paying for it came to me from someone who used what they bought or from someone who has never benefited at all. That’s not my responsibility. It is theirs.
+ My preference is for you to actually read this entire book and extract from it ideas you act on and derive benefit from, but frankly that preference is based at least as much, if not more, on my profit motive, rather than your profit. Readers who do act on ideas turn out to be much better long-term customers.
+ Earlier in this book I mentioned having had a client who builds and installs deluxe, premium-priced backyard sheds. If his customer puts the shed in his backyard and never moves the crap out of the garage into the shed, and still can’t park the car in the garage—or, more probably, he moves all of the crap out of the garage, into the shed, and then restocks the garage
+
+-----
+
+#### with more crap and still can’t park the car in the garage—should my client go out there and give him his money back?
+ Of course not. In fact, he should go out there and sell him a second shed. Sell him garbage removal service. Sell him a how-to-do-a-garage-sale kit. Sell him something .
+ The entrepreneur’s responsibility is this: maximum profit and wealth to his shareholders. If you’re the sole shareholder, that’s you. Then your responsibility is just to play fair, not lie, cheat, or steal. Integrity for the entrepreneur is optimizing sales and profits and value in the business he captains.
+ Just as the boxer who pulls punches in a championship fight lacks integrity, just as the quarterback who does not thoroughly prepare for the Super Bowl game lacks integrity, just as the lawyer who does not thoroughly prepare for trial and do everything he can for his client lacks integrity, just as the doctor who operates hung over lacks integrity, the business owner who “pulls his punches” also lacks integrity.
+
+## Are You “Guilty” of Opportunism?
+
+#### Shortly after President George W. Bush sent our troops into Iraq, American Greetings Corporation rushed to the presses with a line of greeting cards to be sent to the military in Iraq. They created what they called the romantic ones, like one with a picture of a great-looking babe in a camouflage piece of lingerie, standing next to a bed. And the caption : “I’ve got some maneuvers to show you when you get home.” There were war-themed cards for brothers, for sisters, for fathers, for mothers. The company got massive publicity as a result of this, including on CNN, MSNBC, Entertainment Tonight, USA Today.
+ They also drew criticism. I saw a critical discussion of this on some talk show. A liberal Hollywood celebrity attempting to launch a career as a political talking head railed about how horrible it was that this company was profiteering on the war. She contended, if, in fact, they are going to sell these things, they should be giving all the money away.
+
+-----
+
+#### Of course, she, the show, and the network she was appearing on were also opportunists profiteering on exactly the same thing. The “story” of this outrage was their content, their programming, their product. She did not offer to donate her pay for the evening to a charity.
+ This is an illustration of a position often taken about this thing called opportunism. Truth is, everyone is opportunistic. Some are just better at it than others. The homeless beggar who discovers a dumpster filled nightly with exceptionally good leftovers and returns to it each night is an opportunist. If he keeps it secret and does not tell the other homeless folks about it, he’s exceptionally opportunistic. I doubt this liberal denouncing the greeting card company would criticize the homeless person. Or recognize and acknowledge her own opportunism.
+ What is viewed as opportunism by many is entrepreneurship. That’s what it is. Every man’s tragedy is somebody else’s opportunity. That’s commerce.
+ I have clients in the fire alarm business. This business wouldn’t exist if there weren’t fires. You couldn’t sell alarms if somebody wasn’t having a house burn down around them. If there were no deaths, there’d be no business. In fact, the local sales organizations in this industry very opportunistically target neighborhoods immediately after a home has caught fire and burned to the ground.
+ They position their business as the mission to protect people, to save lives. That’s how they sell what they sell. But their business wouldn’t exist if it wasn’t for the tragic problem in the first place.
+ But here’s what’s really important. If there weren’t really appealing profits in the fire alarm business, the thousands of people whose lives are saved each year by having full-house fire alarm systems would, instead, be crispy critters. The fire alarm sales business is a difficult business. Appointments to visit with people in their homes, to discuss a subject no one is voluntarily interested in have to be obtained. Salespeople must be recruited, trained, and managed. This all requires considerable cost, investment, and patience. The salespeople must suffer a lot of rejection, must convince people to accept and act on a threat they prefer to ignore. A factory has to exist to manufacture alarms, requiring capital from investors.
+ None of that can happen without a lot of wealth to be had from this business.
+ So, the alarm that goes off at 2:00 A.M., that gets little Debbie, her Dad, Mom, and kitty-cat out of their house alive at 2:11 A.M., immediately
+
+-----
+
+#### before the entire home becomes a blazing inferno at 2:14 A.M. is on the wall of their home because a “greedy, opportunistic” fire alarm salesperson was in their home last week and delivered a high-pressure sales presentation with all the passion and persuasiveness he could muster .
+ So one man’s tragedy is another man’s opportunity. Entrepreneurship is all about opportunism.
+ A gas station raises its prices on the Friday before a holiday weekend. Is its proprietor an evil opportunist? What do you think? It’s all part and parcel of what he must do in order to achieve maximum success in his business. At other times during the calendar year, there are price wars in his neighborhood and he sells his gas for less than it costs him in order to stay in business. If he’s in an extremely competitive environment, he sells his gas at a loss the entire time in order to get business into his repair shop.
+ There are all sorts of fluctuations in his business. He’d better make maximum profits when the opportunity presents itself, in order to compensate for the times when he can’t make any profit at all.
+ Consider the person who owns a convenience store in the middle of a gang-ridden ghetto, where nobody else will open a store. He mostly sells to people who can’t get 20 miles away to the nearest supermarket. He sells at double what you would pay for the same products at the supermarket 20 miles away. Is he an evil opportunist? Well, would you go open a store there? If his store’s not there, how do his customers get anything at all? His risk is much higher than the guy with the supermarket 20 miles away. Every time he works in the store, there’s a very real chance somebody’s going to walk in the door and blow his head off, or try. His theft rate is probably 400% or 500% worse than the supermarket’s. For assuming all of that added risk, shouldn’t he be an opportunist?
+ Getting all this stuff about greed and opportunism out of your head is critical. As an entrepreneur, you have a particular role in the world. You are a vitally important economic force. You have certain real responsibilities you need to embrace, illegitimate responsibilities others would impose you must reject. You also have rewards you deserve and should embrace.
+
+
+
+-----
+
+## Wealth Magnet 5
+
+ No Fear
+
+#### I s there a “dirty little secret” behind many wealthy entrepreneurs’ success stories?
+ Yes, but probably not any that would instantly pop in to most people’s minds. Some people think it’s luck or who they knew or rich relatives or disreputable behavior, somehow taking ruthless advantage of others, climbing to wealth by stepping on others. It is none of those things.
+ It is a past bankruptcy. Or at least a huge failure and wipeout and near bankruptcy experience.
+ I’ve worked closely, personally, with hundreds of first generation, from- scratch millionaire and multi-millionaire entrepreneurs. Nearly half have gone bankrupt before ultimately achieving lasting success and wealth. A significant number of legendary entrepreneurs have bankruptcies in their past. This is true of historical figures as well as contemporary ones. The incredible commonality among successful entrepreneurs is those who have been broke or formerly gone through bankruptcy.
+
+-----

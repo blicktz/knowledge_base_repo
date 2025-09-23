@@ -1,0 +1,89 @@
+###### Regardless, Starbucks experienced nearly a 15% revenue growth in 2012, and continued success in 2013.
+ These two tales probably indicate that the core customer base owned by Starbucks is a significantly different core customer base than that owned by Chick-fil-A, and both have large armies of brand loyalists likely to agree with the stand taken by the company they already support. Knowing who your customers and who your brand loyalists are, how they line up on issues, who their heroes are, and who their enemies are is important. I’m not suggesting that the CEO, of Chick-Fil-A or of Starbucks aren’t authentic and sincere in their conflicting viewpoints. I’m not accusing them of simple pandering. Mostly, I personally respect and admire both of them and their companies, and I like one’s coffee and the other one’s chicken. But they may both have been emboldened by a good understanding of their respective core constituencies. Courage in context is easier than courage in a vacuum.
+ The bigger and broader point is that a short-term media or social media reaction, pro or con or both, to a company or its owner, CEO, celebrity endorser, or other “face” taking a controversial position or otherwise getting into troubled waters often has little or no lasting negative impact and can, instead, have positive impact, in making a larger population aware of the brand or at least rallying the loyalists. Some entrepreneurs who own valuable personal or corporate brands even intentionally, repeatedly court controversy, like Kenneth Cole and American Apparel. Donald Trump finds somebody to pick a very public fight with anytime he wants media attention and publicity—his targets have included comedian Rosie O’Donnell and President Obama. Hugh Hefner fueled Playboy’s rise with controversy. By its nature, the brand was controversial—although it seems quaint now, compared to everything else on the media landscape. But Hef ginned up controversy; he didn’t try to tamp it down. In the description of Toby Keith’s brand-building (see Chapter 20), a similar strategy is revealed: risking and not worrying about controversy and criticism from media or noncustomers in order to strengthen brand loyalty with the base.
+ Of course, anytime you personally take a potentially controversial position or attach your company or brand to one, you do take risks. Not long ago, you could do it in communications only with your customers, members, or subscribers, or even in targeted media as Chick-Fil-A’s
+
+
+-----
+
+###### president did, and never have it see the light of day with the public or the mainstream media. There is still some “spread” between what is said publicly and what is said to supporters and donors by politicians. If you get direct mail for candidates or from the RNC or DNC, you will sometimes see much more pointed and strident position taking and demonizing done there than by the same candidate or organization’s spokespersons on the Sunday talk shows. But it is harder and harder to protect that firewall. Governor Romney got caught making derogatory remarks to donors in a closed-door meeting about the 47% of Americans on the dole, taped via a cell phone, and the incident did damage. In the prior campaign, Senator Obama had his disdainful remarks intended only for Left Coast donors about the voters in rural areas clinging to their guns and Bibles captured and made public, but he survived the damage. Cell phone cameras and video cameras, recording devices the size of a shirt button, social media welcoming unfiltered content and spreading it virally and rapidly, and mainstream media increasingly drawing its content from that social media produces an environment where nothing can be “off the record.” If you are going to court controversy, you should do it consciously and deliberately, not casually or impulsively.
+
+##### If You Punch Their Enemy in the Nose, You Are Their Friend
+
+###### The Trump Technique of picking a fight with a villain or enemy can be an effective way to use controversy with little or no risk if you choose carefully, attack broadly, and know your brand loyalists and target market well. I, for example, have long done well with my audiences of “from scratch” millionaire, multi-millionaire, and up-and-coming entrepreneurs and sales professionals by attacking, vilifying, and mocking 1) pin-headed academics, academic theorists, and Ph.D.s (which stands for: Piled Higher and Deeper); 2) Big, Dumb Companies and their corporate suits; 3) Madison Avenue ad agencies; 4) slothful employees; 5) socialist-leaning critics of ambition, initiative, achievement, success and wealth; and 6) nanny-state meddlers. I can and have attacked Michael Moore, Mayor Bloomberg, Obamacare, named companies doing incredibly dumb advertising, etc., with abandon in my books, newsletters, and speeches, and
+
+
+-----
+
+###### been cheered. Good places to see this are in my books No B.S. Ruthless Management of People and Profits—starting right out in Chapter 1, and No B.S. Sales Success in The New Economy –notably in the chapter about sales managers. A lot of people are not consciously completely aware of how much of this I do, and how much I leverage it, but it is actually a major force fueling my own brand.
+ Life Extension, a major marketer of its own brand of nutritional supplements, uses its own magazine to frequently attack the FDA and the medical establishment. The magazine does have limited newsstand distribution, but it is primarily subscribed to, sent to, and written for its own customers, so its take on medical establishment, big pharma, and government conspiracy to suppress natural health cures is “preaching to the converted,” a smart means of reinforcing and strengthening brand loyalty. Life Extension is certainly not alone in this approach in their industry, and when I write direct-response copy for clients in this field, I almost always incorporate the same enemies. They do it as well and aggressively as anybody, though, and can be seen at www.lifeextension.com.
+
+##### Making Your Brand about a Movement, Not (Just) a Business
+
+###### I have also worked hard to position myself as a leader of a movement— actually of movements—not just an entrepreneur out to make a buck. I have, in fact, led a movement toward direct-response advertising and direct marketing in hundreds of diverse industries and professions, including those where it was rarely seen or used before I lit the light and ignited the revolution. In more than a hundred fields, there are Dan Kennedy-created, taught, or directly influenced marketing “gurus,” each directly guiding the marketing of thousands to tens of thousands of their industry’s members to use of my kind of marketing. These include people like Ben Glass at Great Legal Marketing, Richard James at YourBusinessAutomated.com, and Ken Hardison at Personal Injury Lawyers Marketing Association (PILMA), each working with thousands of law firms; Craig Proctor and Kinder & Reese, each working with thousands of Realtors; Jay Geier at The Scheduling Institute, Dr. Tom Orent, and Greg Stanley at Whitehall Management, each working with thousands of dentists; and so on. Combined, we have created
+
+
+-----
+
+###### a tidal wave of change in these fields. This same change led by Kennedy- linked thought leaders, trainers, and marketing companies has permeated the auto retailing, auto repair, carpet cleaning, landscaping, home remodeling, restaurant, travel, insurance, financial services, chiropractic, cosmetic surgery, retail in just about every category, assisted living and nursing homes, even funeral parlors, as well as B2B environments, like software companies, industrial chemicals and supplies, and industrial equipment. Most of the business owners, company CEOs, private practice professionals, and sales professionals engaged in these groups downstream from me are familiar with my brands and understand they are part of a change movement in marketing, and they’re proud of it. It’s like being part of any revolution: It’s self-validating, it’s cool, it’s exciting, it’s daring. You can certainly see that the Iron Tribe guys have adopted very comparable positioning for their radical change movement in fitness and health.
+ I have always taken a position as a champion of “the little guy:” the small-business owner, the shopkeeper, the local service provider, the employer of 5 to 50, the true backbone and lifeblood of the economy. Also, the champion of the often-looked-down-upon salesman, who gets knocked down only to get up and knock on the next door, and in doing so, creates all the revenue that ultimately builds every university and hospital and backs every worker’s paycheck. I tell them that any other group can take all the vacations they want and we’ll still all get along, but if all the small-business owners or all the salespeople went to sleep for 30 consecutive days, the entire nation would grind to a halt. There’d be suffering, starvation, and, soon, rioting in the streets. These people are heroes. They eschew job security, comfort, 9-to-5ing in favor of investment and risk, constant uncertainty, long hours. They don’t take jobs—they make jobs. They are part of the great entrepreneur movement, the independence and self-reliance movement. Here in the United States, they share legacy with the founders and builders of this nation. When they are demonized as workaholics or evil, greedy capitalists or wild-eyed dreamers or some other stereotype, it is sometimes by the merely ignorant, but often by those of a competing movement toward a dependent, forcibly equalized, socialist state. Together, I and they carry not only the economy but the philosophy that made us a great society squarely on our shoulders. A business made prosperous is a burnishing of the Liberty Bell and a force for real social good, and earned
+
+
+-----
+
+###### wealth and privilege is admirable and deserved—for all success (and failure) is ultimately behavioral choice. With this sort of message, basically my brand message, I lift the self-esteem and sense of worth of my customers. We are in it together!
+ All this makes my personal brand and the business brands attached to me more significant. To brand loyalists, this is a source of pride, that they are associated and involved with something important, not just a customer of a business.
+ If you leap to the idea that it’s easy for me to do this in my field, but, well, your business is different—it’s ordinary, mundane, selling commodities, and you can’t follow this path, I suggest looking at the clothing company Bills Khakis. You will see their “mission page” from their Summer 2013 catalog in Figure 18.1 on page 202. I’m sure they won’t mind the publicity. Their brand is “cut and sewn in the USA,” necessarily clever wording because some of the fabric itself may be imported. They began as a direct-response marketer, essentially a mail-order company, and used radio advertising on the ultra-conservative talker Glenn Beck’s programs, in which they emphasized their status as “an authentic American sportswear company,” to drive response. Today, they are a strong mail-order catalog company, an ecommerce company (www.BillsKhakis.com), and also have their products sold in hundreds of stores nationwide. They have latched onto the “Made In America Movement,” in resurgence after a long sleep begun in the 1960s.
+
+**FIGURE 18.1: Bills Khakis Ad**
+
+
+-----
+
+###### Similar movements that businesses can attach themselves to, which have current and rising influence, are “Support Local Businesses,” “Homegrown Produce,” and “Farm to Table,” and nonprofit causes and the reputable charitable organizations associated with them, like support for veterans and the Wounded Warriors organization, or eradicating child hunger and the nation’s or your local Food Bank. Steve Adams, who you’ve met in this book, does a fine job of linking his pet stores to animal rescue organizations, thus the movement against animal abuse.
+
+##### Finding a Rising Tide
+
+###### There are big, societal rising tides. Some come and go. Others are perennial. Patriotism is a rising tide. In a local community, its high school football team may be a rising tide, as the focus of the entire town’s attention every Friday night for several months. Entrepreneurship has always been my rising tide. Obsession with celebrity is a rising tide, and the GKIC Members in the catering business included in Chapter 11 have risen with it with their local business, just as my long-time client Guthy-Renker
+
+
+-----
+
+###### Corporation rose with it from their very first TV infomercial as a startup to their multibrand, multidistribution-channel $1.8 billion business now. Home shopping TV was the rising tide for my one-time client Joan Rivers. Reality TV has recently been the rising tide for a number of otherwise rather obscure businesspeople, like the folks seen in Pawn Stars or Duck Dynasty. Hefner’s rising tide was the sexual revolution of the 1960s. Limbaugh’s rising tide was the Bill Clinton administration and his role as the number- one Voice of Opposition. In this chapter, we’ve discussed other rising tides.
+ Find yours.
+
+
+-----
+
+#### CHAPTER 19
+
+
+## The Power of Paranoia and
+ Death by a Thousand Cuts
+
+###### by Dan S. Kennedy
+
+
+###### y two favorite quotes about paranoia are “Only the paranoid survive,” from Harold Geneen, once head of the once mighty ITT, and “Just because you’re paranoid doesn’t mean they’re not
+
+# M
+
+###### out to get you,” which I first heard from Dr. Charles Jarvis.
+ It’s no fun walking around worried and paranoid, seeing evildoers lurking in the bushes everywhere you turn. We all prefer comfortable complacency. Most do not prepare for the walk across the shopping center parking lot having their Mace® or other weapon at the ready, taking care to walk closer to the middle than the rows of parked cars to avoid being easily yanked between autos by a waiting attacker. Most do not have a fire extinguisher on every floor of their homes, smoke detectors and heat detectors, preplanned escape routes. A small percentage of homes have
+
+
+-----
+
+###### “safe rooms.” Most do not ask for hotel rooms on lower floors. Now, the younger people who’ve grown up living their lives online have little concern over privacy and think nothing of publicly displaying their lives, their children, their homes in social media and storing all their financial and personal information in some distant “cloud,” despite hackers’ theft of data being in the news on a near-daily basis.
+ A friend once told me, “You never really learn to always pull into your garage and wait until the door closes behind you before getting out of your locked car until you find yourself standing there facing three thugs who were waiting in the bushes, have a bag put over your head and your hands tied behind your back, and are shoved into your house to lie on the floor while they rob the place, rape your wife, and threaten your children.”
+ A famous sales video in the fire alarm business was titled “Another Man’s Family” because everybody thinks of things like fires and home invasion robberies and tall trees toppling over on them and teenage sons peddling drugs, etc., as happening only to other people’s families.
+ The same embrace of comfortable complacency occurs in business, especially with companies with famous and powerful brands. All sorts of dangerous emotional states occur, from the boardroom in the office tower penthouse down to the store manager and secretary: the sense of inevitability. A sense of entitlement. Disdain for upstart competitors and odd, new ideas. Taking customers and customers’ loyalty for granted. Resenting the need to work or sell or innovate.
+ Most people who think of Facebook as a permanent part of our lives have little or no memory of MySpace. Most people who think of Walmart in the same way have no memory of Woolworth’s. Diners Club and Carte Blanche were once elite and successful credit card brands. I still have a Diners Club card, but it is really just a Mastercard. Carte Blanche, gone. Everybody knows McDonald’s but Bob’s Big Boy is a fading memory. Holiday Inns and Howard Johnson’s once dominated the freeway-exit motel industry. It was briefly believed that People’s Express was the airline destined to take over the industry. Kinney Shoes. Montgomery Wards. The graveyard of dead national brands and the once giant, even dominant companies they fronted is unimaginably large. There are more dead than alive in just about every category of commerce and industry.
+
+
+-----
+
+##### No One Is Ever Really Safe
+
+###### Brand is absolutely no assurance of success or longevity, nor insurance against sloth or stupidity. Brand as protective armor for the business battlefield is illusion. Legacy brands certainly exist and some thrive. Dating way back but still alive and valuable today, in my field, Dale Carnegie comes to mind. In the very busy diet industry where fads come and go and few survive as brands, Weight Watchers, once a client of mine, comes to mind. Tupperware. Disney, discussed in Chapter 17. The Rolling Stones are still on tour. But these are more notable exceptions than rule. If you create or come into possession of a valuable brand, you must then sleep with one eye open forevermore. A growing number of barbarians gather at your gates, surround your fortress walls. Barbarians because they lack respect for their elders, they are rude and brash and coarse and bold, they do not fear, and they will kill you and eat you and leave only bones behind without a twinge of remorse. Most brand owners who are destroyed first sow the seeds of their own destruction and create their own vulnerability. In many cases, they deserve to die.
+ Brands lose their luster and power many different ways.

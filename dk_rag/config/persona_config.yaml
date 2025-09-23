@@ -182,14 +182,14 @@ map_reduce_extraction:
   
   # LLM configuration for map-reduce phases
   llm_provider: "litellm"
-  llm_model: "gemini/gemini-2.0-flash"  # Cost-effective for batch processing
+  llm_model: "gemini/gemini-2.5-flash"  # Cost-effective for batch processing
   
   # Alternative models for different phases
   map_phase_model: "gemini/gemini-2.0-flash"  # For processing batches (uses GEMINI_API_KEY)
-  reduce_phase_model: "gemini/gemini-2.5-flash"  # For consolidation (uses GEMINI_API_KEY)
+  reduce_phase_model: "gemini/gemini-2.5-pro"  # For consolidation (uses GEMINI_API_KEY)
   
   # Batch processing parameters
-  batch_size: 10  # Number of documents per batch
+  batch_size: 5  # Number of documents per batch
   max_tokens_per_batch: 500000  # Max tokens to send per batch (leveraging Gemini 2.0 Flash 1M context)
   parallel_batches: 1  # Reduced for Gemini rate limits (10 requests/min)
   
