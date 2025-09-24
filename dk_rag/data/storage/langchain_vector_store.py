@@ -60,8 +60,9 @@ class LangChainVectorStore:
             embedding_model = getattr(config, 'embedding_model', 'sentence-transformers/all-mpnet-base-v2')
             persist_directory = getattr(config, 'persist_directory', './data/storage/chroma_db')
         
-        # Use the collection name from persona_settings (already persona-specific)
-        collection_name = collection_base
+        # Use persona-specific collection name
+        collection_name = f"{self.persona_id}_documents"
+        self.logger.info(f"Using persona-specific collection: {collection_name}")
         
         # Setup persona-specific persist directory
         persona_vector_db_path = self.settings.get_vector_db_path(self.persona_id)
@@ -209,12 +210,7 @@ class LangChainVectorStore:
         Returns:
             List of (document, score) tuples
         """
-        if hasattr(self.vector_store, 'similarity_search_with_score_by_vector'):
-            return self.vector_store.similarity_search_with_score_by_vector(embedding, k=k)
-        else:
-            # Fallback: get documents and assign default scores
-            docs = self.similarity_search_by_vector(embedding, k=k)
-            return [(doc, 1.0) for doc in docs]
+        return self.vector_store.similarity_search_by_vector_with_relevance_scores(embedding, k=k)
     
     def get_all_documents(self) -> List[Dict[str, Any]]:
         """

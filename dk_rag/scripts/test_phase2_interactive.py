@@ -19,7 +19,7 @@ import argparse
 import sys
 import time
 from pathlib import Path
-from typing import Dict, List, Any, Optional
+from typing import Dict, List, Any, Optional, Union
 
 # Add the parent directory to Python path for imports
 sys.path.append(str(Path(__file__).parent.parent))
@@ -135,7 +135,7 @@ class Phase2Tester:
         """Print info message"""
         print(f"{self.COLORS['YELLOW']}ℹ {text}{self.COLORS['END']}")
     
-    def print_results(self, results: List[Dict[str, Any]], title: str = "Results"):
+    def print_results(self, results: List[Union[Dict[str, Any], Any]], title: str = "Results"):
         """Print search results in a formatted way"""
         self.print_subheader(title)
         
@@ -146,18 +146,29 @@ class Phase2Tester:
         for i, result in enumerate(results, 1):
             print(f"\n{self.COLORS['BOLD']}{i}. {self.COLORS['END']}", end="")
             
-            # Extract content and metadata
-            content = result.get('content', result.get('document', ''))[:200] + "..."
-            metadata = result.get('metadata', {})
-            score = result.get('score', result.get('distance', 'N/A'))
+            # Handle (Document, score) tuples from retrieve_with_scores()
+            if isinstance(result, tuple) and len(result) == 2:
+                doc, score = result
+                content = doc.page_content[:200] + "..."
+                metadata = doc.metadata if hasattr(doc, 'metadata') else {}
+            # Handle (doc_id, score, doc_text) tuples from BM25 with return_docs=True
+            elif isinstance(result, tuple) and len(result) == 3:
+                doc_id, score, doc_text = result
+                content = doc_text[:200] + "..."
+                metadata = {'doc_id': doc_id}
+            # Handle Document objects
+            elif hasattr(result, 'page_content'):
+                content = result.page_content[:200] + "..."
+                metadata = result.metadata if hasattr(result, 'metadata') else {}
+                score = metadata.get('similarity_score', 'N/A')
+            # Handle dictionary results
+            else:
+                content = result.get('content', result.get('document', ''))[:200] + "..."
+                metadata = result.get('metadata', {})
+                score = result.get('score', result.get('distance', 'N/A'))
             
             print(f"{self.COLORS['CYAN']}{content}{self.COLORS['END']}")
             print(f"   Score: {score}")
-            
-            if metadata:
-                print(f"   Source: {metadata.get('file_path', 'Unknown')}")
-                if 'chunk_index' in metadata:
-                    print(f"   Chunk: {metadata['chunk_index']}")
     
     def test_hyde_retrieval(self, query: str):
         """Test HyDE (Hypothetical Document Embeddings) retrieval"""
@@ -175,18 +186,9 @@ class Phase2Tester:
                 self.print_error("HyDE retriever not available")
                 return
             
-            # Generate hypothetical document
-            print(f"\n{self.COLORS['YELLOW']}Generating hypothetical document...{self.COLORS['END']}")
-            
-            # Get the expanded query/hypothesis from HyDE
-            hypothesis = hyde_retriever.generate_hypothesis(query)
-            
-            print(f"\n{self.COLORS['BOLD']}Generated Hypothesis:{self.COLORS['END']}")
-            print(f"{self.COLORS['CYAN']}{hypothesis[:300]}...{self.COLORS['END']}")
-            
-            # Perform HyDE search
+            # Perform HyDE search (this will generate hypothesis internally)
             print(f"\n{self.COLORS['YELLOW']}Searching with HyDE-enhanced query...{self.COLORS['END']}")
-            results = hyde_retriever.retrieve(query, k=5)
+            results = hyde_retriever.retrieve_with_scores(query, k=5)
             
             elapsed = time.time() - start_time
             
@@ -214,16 +216,16 @@ class Phase2Tester:
             
             # Perform hybrid search
             print(f"\n{self.COLORS['YELLOW']}Performing BM25 + Vector hybrid search...{self.COLORS['END']}")
-            results = hybrid_retriever.search(query, k=5)
+            results = hybrid_retriever.search_with_scores(query, k=5)
             
             elapsed = time.time() - start_time
             
             # Also get individual BM25 and vector results for comparison
             print(f"\n{self.COLORS['YELLOW']}Getting BM25-only results...{self.COLORS['END']}")
-            bm25_results = hybrid_retriever.bm25_store.search(query, k=5)
+            bm25_results = hybrid_retriever.bm25_store.search(query, k=5, return_docs=True)
             
             print(f"\n{self.COLORS['YELLOW']}Getting Vector-only results...{self.COLORS['END']}")
-            vector_results = hybrid_retriever.vector_store.search(query, n_results=5)
+            vector_results = hybrid_retriever.vector_store.similarity_search_with_score(query, k=5)
             
             self.print_success(f"Hybrid search completed in {elapsed:.2f}s")
             
@@ -311,12 +313,12 @@ class Phase2Tester:
                 
                 print(f"\n{self.COLORS['YELLOW']}Processing with full Phase 2 pipeline...{self.COLORS['END']}")
                 
-                results = self.advanced_pipeline.search(
+                results = self.advanced_pipeline.retrieve(
                     query=query,
                     k=5,
-                    enable_hyde=True,
-                    enable_hybrid=True,
-                    enable_reranking=True
+                    use_hyde=True,
+                    use_hybrid=True,
+                    use_reranking=True
                 )
                 
                 elapsed = time.time() - start_time
@@ -342,19 +344,19 @@ class Phase2Tester:
             print(f"\n{self.COLORS['YELLOW']}Phase 1: Vector-only search...{self.COLORS['END']}")
             start_time = time.time()
             
-            phase1_results = self.vector_store.search(query, n_results=5)
+            phase1_results = self.vector_store.similarity_search_with_score(query, k=5)
             phase1_time = time.time() - start_time
             
             # Phase 2: Full pipeline
             print(f"\n{self.COLORS['YELLOW']}Phase 2: Full advanced pipeline...{self.COLORS['END']}")
             start_time = time.time()
             
-            phase2_results = self.advanced_pipeline.search(
+            phase2_results = self.advanced_pipeline.retrieve(
                 query=query,
                 k=5,
-                enable_hyde=True,
-                enable_hybrid=True,
-                enable_reranking=True
+                use_hyde=True,
+                use_hybrid=True,
+                use_reranking=True
             )
             phase2_time = time.time() - start_time
             

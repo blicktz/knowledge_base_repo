@@ -355,19 +355,10 @@ Your goal is NOT to answer the user's question in a conversational way. Instead,
             query_embedding = self.embeddings.embed_query(search_query)
             
             # Search with hypothesis embedding
-            if hasattr(self.vector_store, 'similarity_search_with_score_by_vector'):
-                results = self.vector_store.similarity_search_with_score_by_vector(
-                    query_embedding,
-                    k=k
-                )
-            else:
-                # Fallback if method not available
-                documents = self.vector_store.similarity_search_by_vector(
-                    query_embedding,
-                    k=k
-                )
-                # Assign default scores
-                results = [(doc, 1.0) for doc in documents]
+            results = self.vector_store.similarity_search_with_score_by_vector(
+                query_embedding,
+                k=k
+            )
             
             # Add metadata
             for doc, score in results:
