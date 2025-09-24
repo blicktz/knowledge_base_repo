@@ -10,111 +10,198 @@ from typing import Dict, Optional
 
 # HyDE prompt templates for different query types
 HYDE_PROMPTS = {
-    "default": """Please provide a comprehensive and detailed answer to the following question. 
-Include relevant information, examples, explanations, and any important context that would help someone 
-fully understand the topic. Be thorough and informative.
+    "default": """You are an expert AI assistant tasked with generating a hypothetical document to be used for a semantic search query.
 
-Question: {query}
+Your goal is NOT to answer the user's question in a conversational way. Instead, your goal is to generate a concise, information-rich document that contains the types of keywords, concepts, and technical terms likely to be found in a perfect, detailed answer.
 
-Detailed Answer:""",
-    
-    "detailed_explanation": """You are an expert providing a thorough explanation. Write a detailed, 
-informative response to the following question. Include:
-- Key concepts and definitions
-- Relevant examples and use cases
-- Important considerations and best practices
-- Common misconceptions to avoid
+## USER QUESTION ##
+{query}
 
-Question: {query}
+## INSTRUCTIONS ##
+1.  **Be Concise:** The entire document must be between **150 and 250 words**.
+2.  **Be Concept-Dense:** To make the document dense and useful for search, ensure it includes relevant information, examples, explanations, and important context.
+3.  **Be Factual and Objective:** Write as an expert explaining a topic. Do not use personal opinions or any conversational language.
+4.  **Omit Filler:** Do not include any introductions, pleasantries, or concluding summaries. Begin the response directly with the core information.
 
-Comprehensive Explanation:""",
-    
-    "technical_response": """Provide a technical and detailed answer to the following question. 
-Your response should be accurate, specific, and include:
-- Technical terminology and concepts
-- Implementation details where relevant
-- Practical examples or code snippets if applicable
-- Common patterns and approaches
+## HYPOTHETICAL DOCUMENT ##
+""",
 
-Technical Question: {query}
+    "detailed_explanation": """You are an expert AI assistant tasked with generating a hypothetical document for a semantic search query.
 
-Technical Answer:""",
-    
-    "framework_focused": """Answer the following question by providing a structured response that includes:
-- The main framework or methodology involved
-- Step-by-step breakdown of the approach
-- Key principles and best practices
-- Real-world application examples
+Your goal is to generate a concise, information-rich document containing the keywords and concepts likely to be found in a comprehensive explanation.
 
-Question: {query}
+## USER QUESTION ##
+{query}
 
-Structured Framework Answer:""",
-    
-    "concept_explanation": """Explain the following concept or topic in detail. Your explanation should:
-- Define the core concept clearly
-- Explain how it works
-- Discuss why it's important
-- Provide relevant examples
-- Compare with related concepts if applicable
+## INSTRUCTIONS ##
+1.  **Be Concise:** The entire document must be between **150 and 250 words**.
+2.  **Be Concept-Dense:** Ensure the document's content touches upon the following aspects:
+    * Key concepts and their definitions.
+    * Relevant examples and primary use cases.
+    * Important considerations or best practices.
+    * Common misconceptions to clarify.
+3.  **Be Factual and Objective:** Explain the topic clearly and directly.
+4.  **Omit Filler:** Do not include conversational introductions or summaries.
 
-Topic/Question: {query}
+## HYPOTHETICAL EXPLANATION ##
+""",
 
-Detailed Concept Explanation:""",
-    
-    "problem_solution": """For the following problem or question, provide a comprehensive solution that includes:
-- Clear understanding of the problem
-- Systematic approach to solving it
-- Detailed solution steps
-- Alternative approaches if applicable
-- Potential challenges and how to address them
+    "technical_response": """You are an expert AI assistant tasked with generating a hypothetical document for a technical search query.
 
-Problem: {query}
+Your goal is to generate a concise, information-rich document containing the keywords and terminology likely to be found in a specific technical answer.
 
-Comprehensive Solution:""",
-    
-    "factual_response": """Provide a factual, informative answer to the following question. 
-Focus on accuracy and completeness. Include:
-- Verified facts and information
-- Relevant statistics or data if applicable
-- Sources of information
-- Context and background
+## TECHNICAL QUESTION ##
+{query}
 
-Question: {query}
+## INSTRUCTIONS ##
+1.  **Be Concise:** The entire document must be between **150 and 250 words**.
+2.  **Be Concept-Dense:** Ensure the document's content touches upon the following aspects:
+    * Core technical terminology and concepts.
+    * Key implementation details or logic.
+    * Practical examples or brief code snippets where applicable.
+    * Common patterns and established approaches.
+3.  **Be Factual and Objective:** Provide accurate, technical information.
+4.  **Omit Filler:** Do not include conversational introductions or summaries.
 
-Factual Answer:""",
-    
-    "tutorial_style": """Create a tutorial-style answer for the following question. 
-Structure your response as if you're teaching someone:
-- Start with the basics
-- Build up complexity gradually
-- Include examples at each step
-- Provide practical tips
-- Summarize key takeaways
+## HYPOTHETICAL TECHNICAL DOCUMENT ##
+""",
 
-Question: {query}
+    "framework_focused": """You are an expert AI assistant tasked with generating a hypothetical document for a search query about a framework or methodology.
 
-Tutorial-Style Answer:""",
-    
-    "comparison": """Answer the following question by providing a detailed comparison. Include:
-- Key similarities and differences
-- Advantages and disadvantages of each option
-- Use cases for each
-- Recommendations based on different scenarios
+Your goal is to generate a concise, information-rich document containing the keywords and structured concepts likely to be found in a detailed framework breakdown.
 
-Question: {query}
+## USER QUESTION ##
+{query}
 
-Detailed Comparison:""",
-    
-    "best_practices": """Provide a comprehensive answer focusing on best practices for the following topic:
-- Industry-standard approaches
-- Common pitfalls to avoid
-- Proven strategies and techniques
-- Tips for optimization and efficiency
-- Real-world examples of successful implementation
+## INSTRUCTIONS ##
+1.  **Be Concise:** The entire document must be between **150 and 250 words**.
+2.  **Be Concept-Dense:** Ensure the document's content touches upon the following aspects:
+    * The name and purpose of the main framework.
+    * A summary of its step-by-step breakdown.
+    * Its key principles and associated best practices.
+    * A brief real-world application example.
+3.  **Be Factual and Objective:** Describe the framework systematically.
+4.  **Omit Filler:** Do not include conversational introductions or summaries.
 
-Topic: {query}
+## HYPOTHETICAL FRAMEWORK OUTLINE ##
+""",
 
-Best Practices Guide:"""
+    "concept_explanation": """You are an expert AI assistant tasked with generating a hypothetical document for a search query that asks to explain a concept.
+
+Your goal is to generate a concise, information-rich document containing the keywords and definitions likely to be found in a clear concept explanation.
+
+## TOPIC/QUESTION ##
+{query}
+
+## INSTRUCTIONS ##
+1.  **Be Concise:** The entire document must be between **150 and 250 words**.
+2.  **Be Concept-Dense:** Ensure the document's content touches upon the following aspects:
+    * A clear definition of the core concept.
+    * A brief explanation of its mechanism or how it works.
+    * A discussion of its importance and primary examples.
+    * A brief comparison to related concepts.
+3.  **Be Factual and Objective:** Explain the concept with clarity and accuracy.
+4.  **Omit Filler:** Do not include conversational introductions or summaries.
+
+## HYPOTHETICAL CONCEPT EXPLANATION ##
+""",
+
+    "problem_solution": """You are an expert AI assistant tasked with generating a hypothetical document for a search query about solving a problem.
+
+Your goal is to generate a concise, information-rich document containing the keywords and steps likely to be found in a comprehensive solution.
+
+## PROBLEM ##
+{query}
+
+## INSTRUCTIONS ##
+1.  **Be Concise:** The entire document must be between **150 and 250 words**.
+2.  **Be Concept-Dense:** Ensure the document's content touches upon the following aspects:
+    * A concise summary of the problem.
+    * The core of a systematic approach to the solution.
+    * An outline of the main solution steps.
+    * A mention of potential challenges or alternative approaches.
+3.  **Be Factual and Objective:** Present the solution in a clear, step-by-step manner.
+4.  **Omit Filler:** Do not include conversational introductions or summaries.
+
+## HYPOTHETICAL SOLUTION OUTLINE ##
+""",
+
+    "factual_response": """You are an expert AI assistant tasked with generating a hypothetical document for a fact-based search query.
+
+Your goal is to generate a concise, information-rich document containing the specific facts, data, and statistics likely to be found in a definitive answer.
+
+## USER QUESTION ##
+{query}
+
+## INSTRUCTIONS ##
+1.  **Be Concise:** The entire document must be between **150 and 250 words**.
+2.  **Be Concept-Dense:** Ensure the document's content touches upon the following aspects:
+    * The most critical verified facts and information.
+    * Relevant statistics or data points.
+    * Key context or background information.
+3.  **Be Factual and Objective:** State information clearly and accurately.
+4.  **Omit Filler:** Do not include conversational introductions or summaries.
+
+## HYPOTHETICAL FACT SHEET ##
+""",
+
+    "tutorial_style": """You are an expert AI assistant tasked with generating a hypothetical document for a "how-to" search query.
+
+Your goal is to generate a concise, information-rich document containing the keywords and structure likely to be found in a step-by-step tutorial.
+
+## USER QUESTION ##
+{query}
+
+## INSTRUCTIONS ##
+1.  **Be Concise:** The entire document must be between **150 and 250 words**.
+2.  **Be Concept-Dense:** Ensure the document's content touches upon the following aspects:
+    * An outline of the basic steps, from simple to more complex.
+    * Inclusion of examples or practical tips for the main steps.
+    * A summary of the key process or takeaways.
+3.  **Be Factual and Objective:** Present the steps in a clear, instructional format.
+4.  **Omit Filler:** Do not include conversational introductions or summaries.
+
+## HYPOTHETICAL TUTORIAL ##
+""",
+
+    "comparison": """You are an expert AI assistant tasked with generating a hypothetical document for a comparison-based search query.
+
+Your goal is to generate a concise, information-rich document containing the keywords and points of comparison likely to be found in a detailed analysis.
+
+## USER QUESTION ##
+{query}
+
+## INSTRUCTIONS ##
+1.  **Be Concise:** The entire document must be between **150 and 250 words**.
+2.  **Be Concept-Dense:** Ensure the document's content touches upon the following aspects:
+    * The key similarities and differences between the items.
+    * The primary advantages and disadvantages of each.
+    * The most common use cases for each option.
+3.  **Be Factual and Objective:** Compare the items based on clear criteria.
+4.  **Omit Filler:** Do not include conversational introductions or summaries.
+
+## HYPOTHETICAL COMPARISON ##
+""",
+
+    "best_practices": """You are an expert AI assistant tasked with generating a hypothetical document for a search query about best practices.
+
+Your goal is to generate a concise, information-rich document containing the keywords and strategies likely to be found in an expert guide.
+
+## TOPIC ##
+{query}
+
+## INSTRUCTIONS ##
+1.  **Be Concise:** The entire document must be between **150 and 250 words**.
+2.  **Be Concept-Dense:** Ensure the document's content touches upon the following aspects:
+    * A summary of industry-standard approaches.
+    * A mention of common pitfalls to avoid.
+    * An outline of proven strategies and techniques.
+    * Tips for optimization or efficiency.
+3.  **Be Factual and Objective:** Present the best practices as clear, expert recommendations.
+4.  **Omit Filler:** Do not include conversational introductions or summaries.
+
+## HYPOTHETICAL BEST PRACTICES GUIDE ##
+"""
 }
 
 
