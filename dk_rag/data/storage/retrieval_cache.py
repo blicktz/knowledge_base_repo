@@ -410,6 +410,31 @@ class RetrievalCache:
         
         if expired_count > 0:
             self.logger.info(f"Cleaned up {expired_count} expired cache entries")
+    
+    def get_cached_result(self, cache_key: str, cache_type: str = "general") -> Optional[Any]:
+        """
+        Public method to get cached result.
+        
+        Args:
+            cache_key: Cache key to look up
+            cache_type: Type of cache (default: "general")
+            
+        Returns:
+            Cached result or None if not found/expired
+        """
+        return self._load_from_cache(cache_type, cache_key)
+    
+    def cache_result(self, cache_key: str, result: Any, cache_type: str = "general", metadata: Optional[Dict[str, Any]] = None):
+        """
+        Public method to cache result.
+        
+        Args:
+            cache_key: Cache key
+            result: Result to cache
+            cache_type: Type of cache (default: "general")
+            metadata: Additional metadata (currently unused but kept for API compatibility)
+        """
+        self._save_to_cache(cache_type, cache_key, result)
 
 
 def timed_cache(cache: RetrievalCache, operation: str):

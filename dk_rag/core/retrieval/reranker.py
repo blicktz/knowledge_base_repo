@@ -206,7 +206,7 @@ class CrossEncoderReranker:
         final_scores = [score for doc, score in top_results]
         final_candidate_texts = [doc.page_content for doc, score in top_results]
         self._log_reranking(query, final_candidate_texts, final_scores, {
-            **log_metadata,
+            **(log_metadata or {}),
             "total_candidates": len(candidates),
             "final_candidates": len(top_results)
         })

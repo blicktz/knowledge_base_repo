@@ -261,8 +261,8 @@ class Phase2Tester:
             # First get initial results (before reranking)
             print(f"\n{self.COLORS['YELLOW']}Getting initial retrieval candidates...{self.COLORS['END']}")
             
-            # Use hybrid search to get candidates with scores
-            hybrid_results_with_scores = self.advanced_pipeline.hybrid.search_with_scores(query, k=10)
+            # Use hybrid search to get candidates with scores (get more candidates for better reranking)
+            hybrid_results_with_scores = self.advanced_pipeline.hybrid.search_with_scores(query, k=25)
             
             print(f"Retrieved {len(hybrid_results_with_scores)} candidates for reranking")
             
