@@ -143,6 +143,30 @@ class Phase2Tester:
             self.print_info("No results found")
             return
         
+        # Debug: Log what we received
+        print(f"DEBUG - print_results received {len(results)} results")
+        if results:
+            first_result = results[0]
+            print(f"DEBUG - First result type: {type(first_result)}")
+            if isinstance(first_result, tuple):
+                print(f"DEBUG - First result is tuple: {len(first_result)} elements")
+                if len(first_result) == 2:
+                    doc, score = first_result
+                    print(f"DEBUG - First tuple: doc_type={type(doc)}, score={score}")
+            elif hasattr(first_result, 'metadata'):
+                print(f"DEBUG - First result metadata keys: {list(first_result.metadata.keys()) if first_result.metadata else 'None'}")
+            
+            # Debug: Show scores from first 3 results
+            debug_scores = []
+            for i, result in enumerate(results[:3]):
+                if isinstance(result, tuple) and len(result) == 2:
+                    debug_scores.append(result[1])
+                elif hasattr(result, 'metadata') and result.metadata:
+                    debug_scores.append(result.metadata.get('similarity_score', 'N/A'))
+                else:
+                    debug_scores.append('N/A')
+            print(f"DEBUG - First 3 scores: {debug_scores}")
+        
         for i, result in enumerate(results, 1):
             print(f"\n{self.COLORS['BOLD']}{i}. {self.COLORS['END']}", end="")
             
@@ -261,22 +285,25 @@ class Phase2Tester:
             # First get initial results (before reranking)
             print(f"\n{self.COLORS['YELLOW']}Getting initial retrieval candidates...{self.COLORS['END']}")
             
-            # Use hybrid search to get candidates
-            hybrid_results = self.advanced_pipeline.hybrid.search(query, k=10)
+            # Use hybrid search to get candidates with scores
+            hybrid_results_with_scores = self.advanced_pipeline.hybrid.search_with_scores(query, k=10)
             
-            print(f"Retrieved {len(hybrid_results)} candidates for reranking")
+            print(f"Retrieved {len(hybrid_results_with_scores)} candidates for reranking")
+            
+            # Extract documents for reranker (reranker expects List[Document], not List[Tuple[Document, float]])
+            hybrid_docs = [doc for doc, score in hybrid_results_with_scores]
             
             # Perform reranking
             print(f"\n{self.COLORS['YELLOW']}Reranking with cross-encoder...{self.COLORS['END']}")
             
-            reranked_results = reranker.rerank(query, hybrid_results, top_k=5)
+            reranked_results = reranker.rerank(query, hybrid_docs, top_k=5, return_scores=True)
             
             elapsed = time.time() - start_time
             
             self.print_success(f"Reranking completed in {elapsed:.2f}s")
             
             # Show before/after comparison
-            self.print_results(hybrid_results[:5], "Before Reranking (Top 5)")
+            self.print_results(hybrid_results_with_scores[:5], "Before Reranking (Top 5)")
             self.print_results(reranked_results, "After Reranking")
             
             # Show reranking model info
@@ -318,7 +345,8 @@ class Phase2Tester:
                     k=5,
                     use_hyde=True,
                     use_hybrid=True,
-                    use_reranking=True
+                    use_reranking=True,
+                    return_scores=True
                 )
                 
                 elapsed = time.time() - start_time
@@ -356,7 +384,8 @@ class Phase2Tester:
                 k=5,
                 use_hyde=True,
                 use_hybrid=True,
-                use_reranking=True
+                use_reranking=True,
+                return_scores=True
             )
             phase2_time = time.time() - start_time
             

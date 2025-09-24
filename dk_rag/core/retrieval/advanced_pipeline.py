@@ -5,7 +5,7 @@ This module orchestrates all Phase 2 retrieval components into a complete
 pipeline that achieves 40-60% improvement over basic vector search.
 """
 
-from typing import List, Dict, Any, Optional, Union
+from typing import List, Dict, Any, Optional, Union, Tuple
 from datetime import datetime
 import json
 from pathlib import Path
@@ -127,8 +127,9 @@ class AdvancedRetrievalPipeline:
         use_hyde: Optional[bool] = None,
         use_hybrid: Optional[bool] = None,
         use_reranking: Optional[bool] = None,
+        return_scores: bool = False,
         metadata: Optional[Dict[str, Any]] = None
-    ) -> List[Document]:
+    ) -> Union[List[Document], List[Tuple[Document, float]]]:
         """
         Execute complete advanced retrieval pipeline.
         
@@ -140,10 +141,11 @@ class AdvancedRetrievalPipeline:
             use_hyde: Override for HyDE usage
             use_hybrid: Override for hybrid search usage
             use_reranking: Override for reranking usage
+            return_scores: If True, return (Document, score) tuples; if False, return Documents only
             metadata: Additional metadata for logging
             
         Returns:
-            List of top-k relevant documents
+            List of Documents or list of (Document, score) tuples based on return_scores parameter
         """
         self.logger.info(f"Advanced retrieval for query: {query[:100]}... (k={k})")
         
@@ -183,22 +185,36 @@ class AdvancedRetrievalPipeline:
             
             if use_hybrid:
                 # Hybrid search
-                candidates = self.hybrid.search(
-                    search_query,
-                    k=retrieval_k,
-                    bm25_k=retrieval_k * 2,
-                    vector_k=retrieval_k * 2
-                )
+                if return_scores:
+                    candidates = self.hybrid.search_with_scores(
+                        search_query,
+                        k=retrieval_k,
+                        bm25_k=retrieval_k * 2,
+                        vector_k=retrieval_k * 2
+                    )
+                else:
+                    candidates = self.hybrid.search(
+                        search_query,
+                        k=retrieval_k,
+                        bm25_k=retrieval_k * 2,
+                        vector_k=retrieval_k * 2
+                    )
                 stage_timings["hybrid_search"] = time.time() - start_time
                 num_documents["after_retrieval"] = len(candidates)
                 self.logger.debug(f"Hybrid search retrieved {len(candidates)} documents")
             else:
                 # Fall back to vector search only
                 if hasattr(self.hyde.vector_store, 'similarity_search'):
-                    candidates = self.hyde.vector_store.similarity_search(
-                        search_query,
-                        k=retrieval_k
-                    )
+                    if return_scores and hasattr(self.hyde.vector_store, 'similarity_search_with_score'):
+                        candidates = self.hyde.vector_store.similarity_search_with_score(
+                            search_query,
+                            k=retrieval_k
+                        )
+                    else:
+                        candidates = self.hyde.vector_store.similarity_search(
+                            search_query,
+                            k=retrieval_k
+                        )
                 else:
                     candidates = []
                 stage_timings["vector_search"] = time.time() - start_time
@@ -209,10 +225,17 @@ class AdvancedRetrievalPipeline:
             if use_reranking and candidates:
                 start_time = time.time()
                 
+                # Extract documents from scored tuples if needed
+                if return_scores and candidates and isinstance(candidates[0], tuple):
+                    candidate_docs = [doc for doc, score in candidates]
+                else:
+                    candidate_docs = candidates
+                
                 final_documents = self.reranker.rerank(
                     query,  # Use original query for reranking
-                    candidates,
+                    candidate_docs,
                     top_k=k,
+                    return_scores=return_scores,
                     log_metadata={"pipeline_stage": "reranking", **(metadata or {})}
                 )
                 
@@ -225,16 +248,30 @@ class AdvancedRetrievalPipeline:
                 num_documents["after_reranking"] = len(final_documents)
             
             # Add pipeline metadata to documents
-            for doc in final_documents:
-                if not doc.metadata:
-                    doc.metadata = {}
-                doc.metadata.update({
-                    "pipeline": "advanced",
-                    "hyde_used": use_hyde,
-                    "hybrid_used": use_hybrid,
-                    "reranked": use_reranking,
-                    "original_query": query
-                })
+            if return_scores and final_documents and isinstance(final_documents[0], tuple):
+                # Handle (Document, score) tuples
+                for doc, score in final_documents:
+                    if not doc.metadata:
+                        doc.metadata = {}
+                    doc.metadata.update({
+                        "pipeline": "advanced",
+                        "hyde_used": use_hyde,
+                        "hybrid_used": use_hybrid,
+                        "reranked": use_reranking,
+                        "original_query": query
+                    })
+            else:
+                # Handle plain Document list
+                for doc in final_documents:
+                    if not doc.metadata:
+                        doc.metadata = {}
+                    doc.metadata.update({
+                        "pipeline": "advanced",
+                        "hyde_used": use_hyde,
+                        "hybrid_used": use_hybrid,
+                        "reranked": use_reranking,
+                        "original_query": query
+                    })
             
             # Log pipeline execution
             self._log_pipeline_execution(
@@ -248,6 +285,14 @@ class AdvancedRetrievalPipeline:
                 f"Pipeline complete: {len(final_documents)} documents returned "
                 f"(total time: {sum(stage_timings.values()):.2f}s)"
             )
+            
+            # Debug: Log score information
+            if return_scores and final_documents:
+                if isinstance(final_documents[0], tuple):
+                    scores = [score for doc, score in final_documents]
+                    self.logger.info(f"DEBUG - Pipeline returning scores: {scores}")
+                else:
+                    self.logger.info("DEBUG - Pipeline return_scores=True but returning Documents without scores")
             
             return final_documents
             
@@ -263,33 +308,45 @@ class AdvancedRetrievalPipeline:
             )
             
             # Fallback to basic search
-            return self._fallback_retrieve(query, k)
+            return self._fallback_retrieve(query, k, return_scores)
     
-    def _fallback_retrieve(self, query: str, k: int) -> List[Document]:
+    def _fallback_retrieve(self, query: str, k: int, return_scores: bool = False) -> Union[List[Document], List[Tuple[Document, float]]]:
         """
         Fallback to basic vector search when pipeline fails.
         
         Args:
             query: User query
             k: Number of documents to retrieve
+            return_scores: Whether to return scores with documents
             
         Returns:
-            List of documents from basic search
+            List of documents or (document, score) tuples from basic search
         """
         self.logger.warning("Using fallback retrieval due to pipeline error")
         
         try:
             # Try basic vector search
             if hasattr(self.hyde.vector_store, 'similarity_search'):
-                documents = self.hyde.vector_store.similarity_search(query, k=k)
-                
-                # Add fallback metadata
-                for doc in documents:
-                    if not doc.metadata:
-                        doc.metadata = {}
-                    doc.metadata["retrieval_method"] = "fallback_vector"
-                
-                return documents
+                if return_scores and hasattr(self.hyde.vector_store, 'similarity_search_with_score'):
+                    results = self.hyde.vector_store.similarity_search_with_score(query, k=k)
+                    
+                    # Add fallback metadata to documents in tuples
+                    for doc, score in results:
+                        if not doc.metadata:
+                            doc.metadata = {}
+                        doc.metadata["retrieval_method"] = "fallback_vector"
+                    
+                    return results
+                else:
+                    documents = self.hyde.vector_store.similarity_search(query, k=k)
+                    
+                    # Add fallback metadata
+                    for doc in documents:
+                        if not doc.metadata:
+                            doc.metadata = {}
+                        doc.metadata["retrieval_method"] = "fallback_vector"
+                    
+                    return documents
         except Exception as e:
             self.logger.error(f"Fallback retrieval also failed: {e}")
             return []

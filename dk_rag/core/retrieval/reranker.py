@@ -129,20 +129,25 @@ class CrossEncoderReranker:
         """
         timestamp = datetime.now().isoformat()
         
+        # Extract candidate counts from metadata if available
+        total_candidates = metadata.get("total_candidates", len(candidates)) if metadata else len(candidates)
+        final_candidates = metadata.get("final_candidates", len(scores)) if metadata else len(scores)
+        
         log_entry = {
             "timestamp": timestamp,
             "query": query,
-            "num_candidates": len(candidates),
+            "total_candidates": total_candidates,
+            "final_candidates": final_candidates,
             "model": self.model_name,
             "reranker_type": self.reranker_type,
             "device": self.device,
-            "scores": scores,
-            "metadata": metadata or {},
+            "final_scores": scores,
+            "metadata": {k: v for k, v in (metadata or {}).items() if k not in ["total_candidates", "final_candidates"]},
             "component": "CrossEncoderReranker"
         }
         
-        # Save first 3 candidates for reference (to avoid huge logs)
-        log_entry["sample_candidates"] = candidates[:3] if len(candidates) > 3 else candidates
+        # Save all final candidates (these are the top-k results)
+        log_entry["final_candidates_text"] = candidates
         
         # Save to timestamped file
         filename = f"rerank_{timestamp.replace(':', '-')}.json"
@@ -182,14 +187,17 @@ class CrossEncoderReranker:
         # Extract text from documents
         candidate_texts = [doc.page_content for doc in candidates]
         
+        # Debug: Log number of candidates being processed
+        self.logger.info(f"DEBUG - Reranker processing {len(candidates)} candidates, top_k={top_k}")
+        
         # Perform reranking based on backend
         if self.reranker_type == "cohere":
             scores = self._rerank_cohere(query, candidate_texts, top_k)
         else:
             scores = self._rerank_local(query, candidate_texts)
         
-        # Log the reranking operation
-        self._log_reranking(query, candidate_texts[:5], scores[:5], log_metadata)
+        # Debug: Log raw scores before any processing
+        self.logger.info(f"DEBUG - Raw scores from reranker model: {scores[:10]}")  # Show first 10
         
         # Create (document, score) pairs
         doc_score_pairs = list(zip(candidates, scores))
@@ -199,6 +207,15 @@ class CrossEncoderReranker:
         
         # Select top-k
         top_results = doc_score_pairs[:top_k]
+        
+        # Log the reranking operation with final results
+        final_scores = [score for doc, score in top_results]
+        final_candidate_texts = [doc.page_content for doc, score in top_results]
+        self._log_reranking(query, final_candidate_texts, final_scores, {
+            **log_metadata,
+            "total_candidates": len(candidates),
+            "final_candidates": len(top_results)
+        })
         
         # Add reranking metadata to documents
         for doc, score in top_results:
@@ -211,6 +228,9 @@ class CrossEncoderReranker:
         self.logger.info(f"Reranking complete, returning top {len(top_results)} documents")
         
         if return_scores:
+            # Debug: Log the scores being returned
+            returned_scores = [score for doc, score in top_results]
+            self.logger.info(f"DEBUG - Reranker returning scores: {returned_scores}")
             return top_results
         else:
             return [doc for doc, _ in top_results]
