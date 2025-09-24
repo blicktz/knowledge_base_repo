@@ -10,7 +10,7 @@ from typing import Dict, Optional, List, Any, Union
 from pathlib import Path
 from datetime import datetime, timezone
 
-from ..data.storage.vector_store import VectorStore
+from ..data.storage.langchain_vector_store import LangChainVectorStore as VectorStore
 from ..data.models.persona_constitution import PersonaConstitution, StatisticalReport
 from ..config.settings import Settings
 from ..utils.logging import get_logger
@@ -155,8 +155,8 @@ class PersonaManager:
         # Create persona-specific settings
         persona_settings = self._create_persona_settings(persona_id)
         
-        # Initialize persona-specific vector store
-        vector_store = VectorStore(persona_settings)
+        # Initialize persona-specific vector store with explicit persona_id
+        vector_store = VectorStore(persona_settings, persona_id)
         
         # Cache the instance
         self.active_vector_stores[persona_id] = vector_store

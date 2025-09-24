@@ -20,6 +20,14 @@ class HyDEConfig(BaseModel):
     cache_ttl_hours: int = Field(default=168, description="Cache time-to-live in hours")
     auto_select_prompt: bool = Field(default=True, description="Auto-select best prompt based on query")
     
+    # LLM configuration for hypothesis generation
+    llm_provider: str = Field(default="litellm", description="LLM provider for hypothesis generation")
+    llm_model: str = Field(default="gemini/gemini-2.0-flash", description="Fast model for hypothesis generation")
+    temperature: float = Field(default=0.7, description="Temperature for hypothesis generation")
+    max_tokens: int = Field(default=4000, description="Max tokens for hypothesis generation")
+    timeout_seconds: int = Field(default=30, description="Timeout for LLM calls")
+    max_retries: int = Field(default=2, description="Max retries for failed LLM calls")
+    
 
 class HybridSearchConfig(BaseModel):
     """Configuration for Hybrid Search (BM25 + Vector)"""

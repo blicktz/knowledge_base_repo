@@ -7,6 +7,7 @@ and uses them for more effective semantic search.
 
 import json
 import hashlib
+import os
 from typing import List, Dict, Any, Optional, Union
 from datetime import datetime
 from pathlib import Path
@@ -15,6 +16,7 @@ from langchain.schema import Document
 from langchain.embeddings.base import Embeddings
 from langchain.llms.base import BaseLLM
 from langchain.vectorstores.base import VectorStore
+from langchain_litellm import ChatLiteLLM
 
 from ...utils.logging import get_logger
 from ...config.settings import Settings
@@ -30,27 +32,29 @@ class HyDERetriever:
     
     def __init__(
         self, 
-        llm: BaseLLM,
         embeddings: Embeddings,
         vector_store: VectorStore,
         settings: Optional[Settings] = None,
-        cache_dir: Optional[str] = None
+        cache_dir: Optional[str] = None,
+        llm: Optional[BaseLLM] = None  # Keep for backward compatibility but will be replaced
     ):
         """
         Initialize HyDE retriever.
         
         Args:
-            llm: Language model for hypothesis generation
             embeddings: Embeddings model for encoding
             vector_store: Vector store for similarity search
             settings: Optional settings object
             cache_dir: Directory for caching LLM interactions
+            llm: Deprecated - HyDE now uses dedicated LLM configuration
         """
-        self.llm = llm
         self.embeddings = embeddings
         self.vector_store = vector_store
         self.settings = settings or Settings()
         self.logger = get_logger(__name__)
+        
+        # Initialize dedicated HyDE LLM
+        self._init_hyde_llm()
         
         # Setup cache directory for LLM logging
         if cache_dir:
@@ -60,11 +64,80 @@ class HyDERetriever:
             self.cache_dir = Path(base_dir) / "retrieval_cache" / "hyde_llm_logs"
         
         self.cache_dir.mkdir(parents=True, exist_ok=True)
-        self.logger.info(f"HyDE retriever initialized with cache at: {self.cache_dir}")
+        self.logger.info(f"HyDE retriever initialized with dedicated LLM and cache at: {self.cache_dir}")
+    
+    def _init_hyde_llm(self):
+        """Initialize dedicated LLM for HyDE hypothesis generation"""
+        hyde_config = self.settings.retrieval.hyde
+        
+        # Determine API key based on model provider
+        if hyde_config.llm_model.startswith('gemini/'):
+            # Using Gemini directly
+            api_key = os.getenv('GEMINI_API_KEY')
+            api_key_param = "api_key"
+        elif hyde_config.llm_model.startswith('openrouter/'):
+            # Using OpenRouter
+            llm_config = self.settings.get_llm_config()
+            api_key = llm_config.get('api_key')
+            api_key_param = "openrouter_api_key"
+        else:
+            # Other providers
+            api_key = None
+            api_key_param = None
+        
+        try:
+            llm_kwargs = {
+                "model": hyde_config.llm_model,
+                "temperature": hyde_config.temperature,
+                "max_tokens": hyde_config.max_tokens,
+                "timeout": hyde_config.timeout_seconds,
+                "max_retries": hyde_config.max_retries
+            }
+            
+            # Add API key if available
+            if api_key and api_key_param:
+                llm_kwargs[api_key_param] = api_key
+            
+            self.llm = ChatLiteLLM(**llm_kwargs)
+            self.logger.info(f"Initialized dedicated HyDE LLM: {hyde_config.llm_model}")
+        except Exception as e:
+            self.logger.error(f"Failed to initialize HyDE LLM: {e}")
+            # Fallback to persona_extractor LLM if available
+            if hasattr(self.settings, 'persona_extraction'):
+                self.logger.warning("Falling back to persona extraction LLM")
+                # Create a simple LLM wrapper - this is a temporary fallback
+                self.llm = None
+            raise
     
     def _get_query_hash(self, query: str) -> str:
         """Generate hash for query for caching."""
         return hashlib.md5(query.encode()).hexdigest()
+    
+    def _sanitize_model_info(self, model_str: str) -> str:
+        """
+        Sanitize model string to remove API keys and sensitive information.
+        
+        Args:
+            model_str: Raw model string representation
+            
+        Returns:
+            Sanitized model info with only model name
+        """
+        try:
+            # Extract model name from the string
+            if "model='" in model_str:
+                start = model_str.find("model='") + len("model='")
+                end = model_str.find("'", start)
+                if end > start:
+                    model_name = model_str[start:end]
+                    return f"model: {model_name}"
+            
+            # Fallback: just return a generic identifier
+            return f"HyDE LLM ({type(self.llm).__name__})"
+            
+        except Exception as e:
+            # Safe fallback if parsing fails
+            return f"HyDE LLM (parsing error: {str(e)[:50]})"
     
     def _log_llm_interaction(
         self,
@@ -85,6 +158,9 @@ class HyDERetriever:
         timestamp = datetime.now().isoformat()
         query_hash = self._get_query_hash(query)
         
+        # Sanitize model string to remove API keys
+        model_info = self._sanitize_model_info(str(self.llm))
+        
         interaction = {
             "timestamp": timestamp,
             "query_hash": query_hash,
@@ -92,7 +168,7 @@ class HyDERetriever:
             "prompt": prompt,
             "response": response,
             "metadata": metadata or {},
-            "model": str(self.llm),
+            "model": model_info,
             "component": "HyDE"
         }
         
@@ -126,13 +202,21 @@ class HyDERetriever:
         
         # Default prompt template - comprehensive and detailed
         if not prompt_template:
-            prompt_template = """Please provide a comprehensive and detailed answer to the following question. 
-Include relevant information, examples, explanations, and any important context that would help someone 
-fully understand the topic. Be thorough and informative.
+            prompt_template = """You are an expert AI assistant tasked with generating a hypothetical document to be used for a semantic search query.
 
-Question: {query}
+Your goal is NOT to answer the user's question in a conversational way. Instead, your goal is to generate a concise, information-rich document that contains the types of keywords, concepts, and technical terms likely to be found in a perfect, detailed answer.
 
-Detailed Answer:"""
+## USER QUESTION ##
+{query}
+
+## INSTRUCTIONS ##
+1.  **Be Concise:** The entire document must be between **200 and 250 words**.
+2.  **Be Concept-Dense:** Focus exclusively on the core topics of the question. Pack the response with relevant keywords, entities, and core concepts.
+3.  **Be Factual and Objective:** Write as an expert explaining a topic. Do not use personal opinions or any conversational language.
+4.  **Omit Filler:** Do not include any introductions, pleasantries (e.g., "That's an excellent question..."), or concluding summaries. Begin the response directly with the core information.
+
+## Your Answer: ##
+"""
         
         # Format prompt with query
         prompt = prompt_template.format(query=query)

@@ -101,6 +101,18 @@ rebuild-kb: ## Clear and rebuild knowledge base from scratch
 		echo "$(YELLOW)Cancelled$(NC)"; \
 	fi
 
+.PHONY: rebuild-bm25
+rebuild-bm25: ## Force rebuild BM25 index only (preserves vector store)
+	@echo "$(YELLOW)⚠ This will force rebuild the BM25 index (preserves vector store)!$(NC)"
+	@read -p "Continue? [y/N]: " confirm; \
+	if [ "$$confirm" = "y" ] || [ "$$confirm" = "Y" ]; then \
+		echo "$(BLUE)Rebuilding BM25 index for persona '$(PERSONA_NAME)'...$(NC)"; \
+		$(PYTHON) scripts/rebuild_bm25.py --persona-id "$(PERSONA_NAME)" --config "$(CONFIG_FILE)" --verbose; \
+		echo "$(GREEN)✓ BM25 index rebuilt (vector store preserved)$(NC)"; \
+	else \
+		echo "$(YELLOW)Cancelled$(NC)"; \
+	fi
+
 .PHONY: update-kb
 update-kb: ## Update knowledge base with new documents
 	@echo "$(BLUE)Updating knowledge base with documents from $(DOCS_DIR)...$(NC)"

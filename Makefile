@@ -1,4 +1,4 @@
-.PHONY: help install convert test clean example batch batch-custom setup-dirs docker-build docker-deploy docker-build-multi docker-deploy-multi runpod-create runpod-create-multi runpod-info runpod-stop runpod-start runpod-delete runpod-delete-auto runpod-batch-auto runpod-logs youtube-mp3 youtube-setup youtube-test youtube-help
+.PHONY: help install convert test clean example batch batch-custom setup-dirs docker-build docker-deploy docker-build-multi docker-deploy-multi runpod-create runpod-create-multi runpod-info runpod-stop runpod-start runpod-delete runpod-delete-auto runpod-batch-auto runpod-logs youtube-mp3 youtube-setup youtube-test youtube-help rebuild-bm25
 .DEFAULT_GOAL := help
 
 # Variables
@@ -271,6 +271,17 @@ dk-interactive: ## Run DK assistant in interactive mode
 dk-rebuild: ## Rebuild DK knowledge base
 	@echo "Rebuilding DK knowledge base..."
 	$(PYTHON) dk_rag/generate_copy.py --setup-only --rebuild-kb --documents-dir $(MD_OUTPUT)
+
+rebuild-bm25: ## Force rebuild BM25 index only (preserves vector store)
+	@echo "⚠️  This will force rebuild the BM25 index (preserves vector store)"
+	@read -p "Continue? [y/N]: " confirm; \
+	if [ "$$confirm" = "y" ] || [ "$$confirm" = "Y" ]; then \
+		echo "Rebuilding BM25 index for DK knowledge base..."; \
+		cd dk_rag && $(MAKE) rebuild-bm25; \
+		echo "✅ BM25 index rebuilt successfully (vector store preserved)"; \
+	else \
+		echo "Cancelled."; \
+	fi
 
 dk-test: ## Test DK assistant with sample task
 	@echo "Testing DK assistant with sample task..."

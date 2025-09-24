@@ -9,7 +9,7 @@ from pathlib import Path
 from typing import List, Dict, Any, Optional
 from pathlib import Path
 
-from ..data.storage.vector_store import VectorStore
+from ..data.storage.langchain_vector_store import LangChainVectorStore as VectorStore
 from ..data.processing.transcript_loader import TranscriptLoader
 from ..data.processing.chunk_processor import ChunkProcessor
 from ..core.persona_extractor import PersonaExtractor
@@ -26,6 +26,7 @@ from ..core.retrieval.hyde_retriever import HyDERetriever
 from ..core.retrieval.hybrid_retriever import HybridRetriever
 from ..core.retrieval.reranker import CrossEncoderReranker
 from ..core.retrieval.advanced_pipeline import AdvancedRetrievalPipeline
+from ..core.retrieval.embedding_wrapper import ChromaEmbeddingWrapper
 from ..config.retrieval_config import Phase2RetrievalConfig
 
 
@@ -767,7 +768,7 @@ class KnowledgeIndexer:
             
             # Build BM25 index with progress tracking
             self.logger.info("Building BM25 index...")
-            self.bm25_store.build_index(documents)
+            self.bm25_store.build_index(documents, rebuild=rebuild)
             
             self.logger.info(f"✅ Successfully built BM25 index for persona '{persona_id}' with {len(documents)} documents")
             
@@ -799,8 +800,8 @@ class KnowledgeIndexer:
             # Get persona-specific vector store
             vector_store = self.persona_manager.get_persona_vector_store(persona_id)
             
-            # Get embeddings model (assuming it's available from vector store)
-            embeddings = vector_store.embedding_function if hasattr(vector_store, 'embedding_function') else None
+            # Get embeddings model - the new vector store has LangChain-compatible embeddings
+            embeddings = vector_store.vector_store.embeddings if hasattr(vector_store, 'vector_store') else None
             
             # Get LLM from persona extractor
             llm = self.persona_extractor.llm if hasattr(self.persona_extractor, 'llm') else None
@@ -813,7 +814,6 @@ class KnowledgeIndexer:
             if self.retrieval_config.hyde.enabled:
                 cache_dir = str(self.retrieval_config.storage.get_cache_dir(persona_id))
                 self.hyde_retriever = HyDERetriever(
-                    llm=llm,
                     embeddings=embeddings,
                     vector_store=vector_store,
                     settings=self.settings,

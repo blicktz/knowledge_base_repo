@@ -242,6 +242,14 @@ retrieval:
     cache_ttl_hours: 168  # 1 week
     auto_select_prompt: true
     
+    # Dedicated LLM for fast hypothesis generation
+    llm_provider: "litellm"
+    llm_model: "gemini/gemini-2.0-flash"  # Fast model (uses GEMINI_API_KEY)
+    temperature: 0.7
+    max_tokens: 4000
+    timeout_seconds: 30
+    max_retries: 2
+    
   # Hybrid Search (BM25 + Vector)
   hybrid_search:
     enabled: true

@@ -27,7 +27,7 @@ sys.path.append(str(Path(__file__).parent.parent))
 from dk_rag.config.settings import Settings
 from dk_rag.core.persona_manager import PersonaManager
 from dk_rag.core.knowledge_indexer import KnowledgeIndexer
-from dk_rag.data.storage.vector_store import VectorStore
+from dk_rag.data.storage.langchain_vector_store import LangChainVectorStore as VectorStore
 from dk_rag.utils.logging import get_logger
 
 
@@ -186,7 +186,7 @@ class Phase2Tester:
             
             # Perform HyDE search
             print(f"\n{self.COLORS['YELLOW']}Searching with HyDE-enhanced query...{self.COLORS['END']}")
-            results = hyde_retriever.search(query, k=5)
+            results = hyde_retriever.retrieve(query, k=5)
             
             elapsed = time.time() - start_time
             

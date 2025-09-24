@@ -8,7 +8,7 @@ This package contains vector store, artifact management, and storage utilities.
 __all__ = []
 
 try:
-    from .vector_store import VectorStore
+    from .langchain_vector_store import LangChainVectorStore as VectorStore
     __all__.append("VectorStore")
 except ImportError:
     pass

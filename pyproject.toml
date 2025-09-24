@@ -28,7 +28,8 @@ streaming-form-data = "^1.19.1"
 langchain = "^0.3.0"
 langchain-openai = "^0.2.0"
 langchain-anthropic = "^0.2.0"
-chromadb = "^0.6.1"
+chromadb = "^1.1.0"
+langchain-chroma = "^0.2.6"
 spacy = "^3.7.0"
 nltk = "^3.8.0"
 pydantic = "^2.0.0"
@@ -39,6 +40,7 @@ llm-output-parser = "^0.3.0"
 bm25s = "^0.2.14"
 rerankers = "^0.10.0"
 cohere = "^5.18.0"
+langchain-community = "^0.3.29"
 
 
 [tool.poetry.group.dev.dependencies]
