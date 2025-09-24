@@ -19,6 +19,15 @@ from ..config.settings import Settings
 from ..utils.logging import get_logger
 from ..utils.validation import validate_documents
 
+# Phase 2 imports
+from ..data.storage.bm25_store import BM25Store
+from ..data.storage.retrieval_cache import RetrievalCache
+from ..core.retrieval.hyde_retriever import HyDERetriever
+from ..core.retrieval.hybrid_retriever import HybridRetriever
+from ..core.retrieval.reranker import CrossEncoderReranker
+from ..core.retrieval.advanced_pipeline import AdvancedRetrievalPipeline
+from ..config.retrieval_config import Phase2RetrievalConfig
+
 
 class KnowledgeIndexer:
     """
@@ -51,6 +60,19 @@ class KnowledgeIndexer:
         self.chunk_processor = ChunkProcessor(settings)
         self.persona_extractor = PersonaExtractor(settings, persona_id)
         self.statistical_analyzer = StatisticalAnalyzer(settings, persona_id)
+        
+        # Phase 2 components (initialized on first use)
+        self.retrieval_config: Optional[Phase2RetrievalConfig] = None
+        self.bm25_store: Optional[BM25Store] = None
+        self.retrieval_cache: Optional[RetrievalCache] = None
+        self.hyde_retriever: Optional[HyDERetriever] = None
+        self.hybrid_retriever: Optional[HybridRetriever] = None
+        self.reranker: Optional[CrossEncoderReranker] = None
+        self.advanced_pipeline: Optional[AdvancedRetrievalPipeline] = None
+        
+        # Initialize Phase 2 if enabled in settings
+        if hasattr(settings, 'retrieval') and getattr(settings.retrieval, 'enabled', False):
+            self.setup_phase2_retrieval()
     
     def build_knowledge_base(self, 
                            documents_dir: str,
@@ -611,10 +633,298 @@ class KnowledgeIndexer:
         self.logger.info(f"Exported knowledge base to: {export_dir}")
         return exports
     
+    # Phase 2 Advanced Retrieval Methods
+    
+    def setup_phase2_retrieval(self):
+        """
+        Initialize Phase 2 advanced retrieval components.
+        """
+        try:
+            self.logger.info("Setting up Phase 2 advanced retrieval...")
+            
+            # Load retrieval configuration
+            if hasattr(self.settings, 'retrieval'):
+                self.retrieval_config = self.settings.retrieval
+            else:
+                self.retrieval_config = Phase2RetrievalConfig.from_env()
+            
+            # Setup storage paths
+            base_storage = self.retrieval_config.storage.base_storage_dir
+            bm25_path = self.retrieval_config.storage.get_bm25_index_path()
+            cache_dir = self.retrieval_config.storage.get_cache_dir()
+            
+            # Initialize cache
+            if self.retrieval_config.caching.enabled:
+                self.retrieval_cache = RetrievalCache(
+                    str(cache_dir),
+                    cache_size=self.retrieval_config.caching.hyde_cache_size,
+                    ttl_hours=self.retrieval_config.caching.cache_ttl_hours,
+                    enable_compression=self.retrieval_config.caching.enable_compression
+                )
+                self.logger.debug("Retrieval cache initialized")
+            
+            # Initialize BM25 store
+            if self.retrieval_config.hybrid_search.enabled:
+                self.bm25_store = BM25Store(
+                    str(bm25_path),
+                    k1=self.retrieval_config.hybrid_search.bm25_k1,
+                    b=self.retrieval_config.hybrid_search.bm25_b
+                )
+                self.logger.debug("BM25 store initialized")
+            
+            self.logger.info("Phase 2 retrieval setup complete")
+            
+        except Exception as e:
+            self.logger.error(f"Failed to setup Phase 2 retrieval: {e}")
+            # Disable Phase 2 if setup fails
+            if self.retrieval_config:
+                self.retrieval_config.enabled = False
+    
+    def build_phase2_indexes(self, persona_id: Optional[str] = None, rebuild: bool = False):
+        """
+        Build Phase 2 indexes (BM25) for advanced retrieval.
+        
+        Args:
+            persona_id: Persona identifier
+            rebuild: Whether to rebuild existing indexes
+        """
+        if not self.retrieval_config or not self.retrieval_config.enabled:
+            self.logger.warning("Phase 2 not enabled, skipping index building")
+            return
+        
+        persona_id = persona_id or self.persona_id
+        if not persona_id:
+            raise ValueError("persona_id required for building Phase 2 indexes")
+        
+        self.logger.info(f"Building Phase 2 indexes for persona '{persona_id}'...")
+        
+        # Get vector store for persona
+        vector_store = self.persona_manager.get_persona_vector_store(persona_id)
+        
+        # Get all documents from vector store
+        try:
+            # This is a simplified approach - in practice, you might need to 
+            # store document texts separately or retrieve them differently
+            collection_stats = vector_store.get_collection_stats()
+            
+            if collection_stats.get('document_count', 0) == 0:
+                self.logger.warning("No documents found in vector store")
+                return
+            
+            # For now, we'll build from the documents directory used during indexing
+            # In a production system, you'd store this metadata
+            self.logger.info("Phase 2 indexes would be built here")
+            self.logger.info("Note: Full implementation requires document text storage")
+            
+        except Exception as e:
+            self.logger.error(f"Failed to build Phase 2 indexes: {e}")
+    
+    def get_advanced_retrieval_pipeline(self, persona_id: Optional[str] = None) -> Optional[AdvancedRetrievalPipeline]:
+        """
+        Get the advanced retrieval pipeline for a persona.
+        
+        Args:
+            persona_id: Persona identifier
+            
+        Returns:
+            AdvancedRetrievalPipeline instance or None if not available
+        """
+        if not self.retrieval_config or not self.retrieval_config.enabled:
+            return None
+        
+        if self.advanced_pipeline is not None:
+            return self.advanced_pipeline
+        
+        try:
+            persona_id = persona_id or self.persona_id
+            if not persona_id:
+                self.logger.warning("No persona_id provided for advanced retrieval")
+                return None
+            
+            # Get persona-specific vector store
+            vector_store = self.persona_manager.get_persona_vector_store(persona_id)
+            
+            # Get embeddings model (assuming it's available from vector store)
+            embeddings = vector_store.embedding_function if hasattr(vector_store, 'embedding_function') else None
+            
+            # Get LLM from persona extractor
+            llm = self.persona_extractor.llm if hasattr(self.persona_extractor, 'llm') else None
+            
+            if not llm or not embeddings:
+                self.logger.error("LLM or embeddings not available for HyDE")
+                return None
+            
+            # Initialize HyDE retriever
+            if self.retrieval_config.hyde.enabled:
+                cache_dir = str(self.retrieval_config.storage.get_cache_dir())
+                self.hyde_retriever = HyDERetriever(
+                    llm=llm,
+                    embeddings=embeddings,
+                    vector_store=vector_store,
+                    settings=self.settings,
+                    cache_dir=cache_dir
+                )
+            
+            # Initialize hybrid retriever
+            if self.retrieval_config.hybrid_search.enabled and self.bm25_store:
+                self.hybrid_retriever = HybridRetriever(
+                    bm25_store=self.bm25_store,
+                    vector_store=vector_store,
+                    bm25_weight=self.retrieval_config.hybrid_search.bm25_weight,
+                    vector_weight=self.retrieval_config.hybrid_search.vector_weight
+                )
+            
+            # Initialize reranker
+            if self.retrieval_config.reranking.enabled:
+                cache_dir = str(self.retrieval_config.storage.get_cache_dir())
+                self.reranker = CrossEncoderReranker(
+                    model_name=self.retrieval_config.reranking.model,
+                    use_cohere=self.retrieval_config.reranking.use_cohere,
+                    cohere_api_key=self.retrieval_config.reranking.cohere_api_key,
+                    device=self.retrieval_config.reranking.device,
+                    batch_size=self.retrieval_config.reranking.batch_size,
+                    cache_dir=cache_dir
+                )
+            
+            # Create advanced pipeline
+            if self.hyde_retriever and self.hybrid_retriever and self.reranker:
+                cache_dir = str(self.retrieval_config.storage.get_cache_dir())
+                self.advanced_pipeline = AdvancedRetrievalPipeline(
+                    hyde_retriever=self.hyde_retriever,
+                    hybrid_retriever=self.hybrid_retriever,
+                    reranker=self.reranker,
+                    cache_dir=cache_dir,
+                    enable_hyde=self.retrieval_config.hyde.enabled,
+                    enable_hybrid=self.retrieval_config.hybrid_search.enabled,
+                    enable_reranking=self.retrieval_config.reranking.enabled
+                )
+                
+                self.logger.info("Advanced retrieval pipeline initialized")
+                return self.advanced_pipeline
+            else:
+                self.logger.warning("Could not initialize all pipeline components")
+                return None
+                
+        except Exception as e:
+            self.logger.error(f"Failed to initialize advanced pipeline: {e}")
+            return None
+    
+    def advanced_search(
+        self,
+        query: str,
+        persona_id: Optional[str] = None,
+        k: int = 5,
+        use_phase2: bool = True
+    ) -> List[Dict[str, Any]]:
+        """
+        Perform advanced search using Phase 2 pipeline.
+        
+        Args:
+            query: Search query
+            persona_id: Persona identifier
+            k: Number of results to return
+            use_phase2: Whether to use Phase 2 advanced retrieval
+            
+        Returns:
+            List of search results with metadata
+        """
+        persona_id = persona_id or self.persona_id
+        if not persona_id:
+            raise ValueError("persona_id required for search")
+        
+        self.logger.info(f"Advanced search for query: {query[:100]}...")
+        
+        # Try Phase 2 pipeline first
+        if use_phase2 and self.retrieval_config and self.retrieval_config.enabled:
+            pipeline = self.get_advanced_retrieval_pipeline(persona_id)
+            if pipeline:
+                try:
+                    documents = pipeline.retrieve(query, k=k)
+                    
+                    # Convert to result format
+                    results = []
+                    for doc in documents:
+                        result = {
+                            'content': doc.page_content,
+                            'metadata': doc.metadata,
+                            'retrieval_method': 'phase2_advanced'
+                        }
+                        results.append(result)
+                    
+                    self.logger.info(f"Advanced search returned {len(results)} results")
+                    return results
+                    
+                except Exception as e:
+                    self.logger.error(f"Phase 2 search failed: {e}")
+                    # Fall through to basic search
+        
+        # Fallback to basic vector search
+        self.logger.info("Using fallback basic search")
+        vector_store = self.persona_manager.get_persona_vector_store(persona_id)
+        
+        try:
+            documents = vector_store.similarity_search(query, k=k)
+            results = []
+            for doc in documents:
+                result = {
+                    'content': doc.page_content,
+                    'metadata': doc.metadata,
+                    'retrieval_method': 'basic_vector'
+                }
+                results.append(result)
+            
+            return results
+            
+        except Exception as e:
+            self.logger.error(f"Basic search also failed: {e}")
+            return []
+    
+    def get_phase2_statistics(self) -> Dict[str, Any]:
+        """
+        Get Phase 2 retrieval statistics.
+        
+        Returns:
+            Dictionary with Phase 2 statistics
+        """
+        stats = {
+            "phase2_enabled": self.retrieval_config.enabled if self.retrieval_config else False,
+            "components_initialized": {}
+        }
+        
+        if self.retrieval_config and self.retrieval_config.enabled:
+            stats["configuration"] = self.retrieval_config.to_dict()
+            
+            # Component initialization status
+            stats["components_initialized"] = {
+                "bm25_store": self.bm25_store is not None,
+                "retrieval_cache": self.retrieval_cache is not None,
+                "hyde_retriever": self.hyde_retriever is not None,
+                "hybrid_retriever": self.hybrid_retriever is not None,
+                "reranker": self.reranker is not None,
+                "advanced_pipeline": self.advanced_pipeline is not None
+            }
+            
+            # Get component statistics
+            if self.bm25_store:
+                stats["bm25_statistics"] = self.bm25_store.get_statistics()
+            
+            if self.retrieval_cache:
+                stats["cache_statistics"] = self.retrieval_cache.get_cache_statistics()
+            
+            if self.advanced_pipeline:
+                stats["pipeline_statistics"] = self.advanced_pipeline.get_statistics()
+        
+        return stats
+    
     def cleanup(self):
         """Clean up resources"""
         if hasattr(self, 'vector_store'):
             self.vector_store.close()
         if hasattr(self, 'persona_manager'):
             self.persona_manager.cleanup()
+        
+        # Cleanup Phase 2 components
+        if self.retrieval_cache:
+            self.retrieval_cache.cleanup_expired()
+        
         self.logger.info("Knowledge indexer cleanup complete")

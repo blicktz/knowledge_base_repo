@@ -1,0 +1,44 @@
+## Simplifying by Betting the Shortcut Odds
+
+#### It is easy to fault the tourists for their foolish purchase decisions, but a close look offers a kinder view. These were people who had been brought up on the rule “You get what you pay for” and had seen the rule borne out over and over in their lives. Before long, they had translated it to mean expensive = good. The expensive = good stereotype had worked well for them in the past because normally the price of an item increases along with its worth; a higher price typically reflects higher quality. So when they found themselves in the position of wanting good turquoise jewelry but not having much knowledge of turquoise, they understandably relied on the old standby feature of cost to determine the jewelry’s merits.
+ Although they probably didn’t realize it, by reacting solely to price, they were playing a shortcut version of betting the odds. Instead of stacking all the odds in their favor by trying painstakingly to master each feature signifying the worth of turquoise jewelry, they simplified things by counting on just one—the one they expected to reveal the quality of any item. They bet price alone would tell them all they needed to know. This time because someone mistook a “[1]/2” for a “2,” they bet wrong. But in the long run, over all the past and future situations of their lives, betting those shortcut odds represents the most rational approach.
+ We’re now in a position to explain the puzzling result of the chapter’s opening study—the one showing that people given a drink said to boost problem-solving ability solved more problems when they paid more for the drink. The researchers traced the finding to the expensive = good stereotype: people reported expecting the drink to work better when it cost $1.89 versus $0.89; and, remarkably, the mere expectation fulfilled itself. A similar phenomenon occurred in a separate study in which participants were given a pain reliever before receiving small electric shocks. Half were told the pain reliever cost $0.10 per unit while the other half were told it cost $2.50. Although, in actuality, all received the same pain reliever, those who thought it was more expensive rated it much more effective in dulling the pain of the shocks.[4]
+ Such automatic, stereotyped behavior is prevalent in much of human action because in many cases, it is the most efficient form of behaving, and in other cases it is simply necessary. You and I exist in an extraordinarily
+
+-----
+
+#### complicated environment, easily the most rapidly moving and complex ever on this planet. To deal with it, we need simplifying shortcuts. We can’t be expected to recognize and analyze all the aspects of each person, event, and situation we encounter in even one day. We haven’t the time, energy, or capacity for it. Instead, we must often use our stereotypes, our rules of thumb, to classify things according to a few key features and then respond without thinking when one or another of the trigger features is present.
+
+**Figure 1.1: Caviar and craftsmanship**
+The message to be communicated by this Dansk ad is, of course, that expensive equals good.
+
+_Courtesy of Dansk International Designs_
+
+#### Sometimes the behavior that unrolls will not be appropriate for the situation, because not even the best stereotypes and trigger features work every time. We accept their imperfections because there is really no other choice. Without the simplifying features, we would stand frozen— cataloging, appraising, and calibrating—as the time for action sped by and away. From all indications, we’ll be relying on these stereotypes to an even greater extent in the future. As the stimuli saturating our lives continue to grow more intricate and variable, we will have to depend increasingly on our shortcuts to handle them all.
+
+-----
+
+#### Psychologists have uncovered a number of mental shortcuts we employ in making our everyday judgments. Termed judgmental heuristics, these shortcuts operate in much the same fashion as the expensive = good rule, allowing for simplified thinking that works well most of the time but leaves us open to occasional, costly mistakes. Especially relevant to this book are those heuristics that tell us when to believe or do what we are asked. Consider, for example, the shortcut rule that goes, “If an expert said so, it must be true.” As we will see in chapter 5, there is an unsettling tendency in our society to accept unthinkingly the statements and directions of individuals who appear to be authorities on a topic. That is, rather than thinking about an expert’s arguments and being convinced (or not), we frequently ignore the arguments and allow ourselves to be convinced just by the expert’s status as “expert.” This tendency to respond mechanically to one piece of information in a situation is what we have been calling automatic or click, run responding; the tendency to react on the basis of a thorough analysis of all of the information can be referred to as controlled responding.
+ Quite a lot of laboratory research has shown that people are more likely to deal with information in a controlled fashion when they have both the desire and the ability to analyze it carefully; otherwise, they are likely to use the easier click, run approach. For instance, in one study, university students listened to a recorded speech supporting the idea of requiring all seniors to pass comprehensive examinations before they would be allowed to graduate. The issue affected some of them personally, because they were told that the exams could go into effect in the next year—before they had the chance to graduate. Of course, this news made them want to analyze the arguments carefully. However, for other subjects in the study, the issue had little personal importance, because they were told the exams would not begin until long after they had graduated; consequently, these students had no strong need to carefully consider the arguments’ validity. The study’s results were straightforward: those students with no personal stake in the topic were primarily persuaded by the speaker’s expertise in the field of education; they used the “If an expert said so, it must be true” rule, paying little attention to the strength of the speaker’s arguments. Those students for whom the issue mattered personally, on the other hand, ignored the speaker’s expertise and were persuaded primarily by the quality of the speaker’s arguments.
+
+-----
+
+#### So it appears that when it comes to the dangerous business of click, run responding, we give ourselves a safety net. We resist the seductive luxury of registering and reacting to just a single (trigger) feature of the available information when an issue is important to us. No doubt this is often the case. Yet I am not fully comforted. Recall that we learned that people are likely to respond in a controlled, thoughtful fashion only when they have both the desire and the ability to do so. I have become impressed by evidence indicating that the form and pace of modern life is not allowing us to make fully thoughtful decisions, even on many personally relevant topics. Sometimes the issues may be so complicated, the time so tight, the distractions so intrusive, the emotional arousal so strong, or the mental fatigue so deep that we are in no cognitive condition to operate mindfully. Important topic or not, we have to take the shortcut.
+ Perhaps nowhere is this last point driven home more dramatically than in the life-and-death consequences of a phenomenon that airline-industry officials have labeled Captainitis. Accident investigators from the US Federal Aviation Administration noted that, frequently, an obvious error made by a flight captain was not corrected by the other crew members and resulted in a crash. It seems, despite the clear and strong personal importance of the issues, the crew members were using the “If an expert says so, it must be true” rule in failing to attend or respond to the captain’s disastrous mistake.[5]
+
+-----
+
+**Figure 1.2: The catastrophic consequences of Captainitis**
+Minutes before this airliner crashed into the Potomac River near National Airport in Washington,
+DC, the accompanying exchange occurred between the pilot and copilot concerning the wisdom of
+taking off with ice on the wings. Their conversation was recorded in the plane’s black box.
+
+**_Copilot: That reading doesn’t seem right._**
+**_Captain: Yes, it is._**
+**_Copilot: Naw, I don’t think it is. [Seven-second pause.] OK, maybe it is._**
+**_Copilot: Larry, we’re going down._**
+**_Captain: I know it._**
+
+[Sound of impact that killed the captain, the copilot, and sixty-seven passengers.]
+
+_© Cohen/Liaison Agency_

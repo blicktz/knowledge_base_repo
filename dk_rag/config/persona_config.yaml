@@ -189,7 +189,7 @@ map_reduce_extraction:
   reduce_phase_model: "gemini/gemini-2.5-pro"  # For consolidation (uses GEMINI_API_KEY)
   
   # Batch processing parameters
-  batch_size: 13  # Number of documents per batch
+  batch_size: 5  # Number of documents per batch
   max_tokens_per_batch: 500000  # Max tokens to send per batch (leveraging Gemini 2.0 Flash 1M context)
   parallel_batches: 1  # Reduced for Gemini rate limits (10 requests/min)
   
@@ -229,3 +229,61 @@ development:
     use_sample_data: false
     sample_size: 100
     mock_llm_calls: false
+
+# Phase 2 Advanced Retrieval Configuration
+retrieval:
+  enabled: true  # Enable Phase 2 advanced retrieval
+  
+  # HyDE (Hypothetical Document Embeddings)
+  hyde:
+    enabled: true
+    prompt_template: "default"
+    cache_size: 128
+    cache_ttl_hours: 168  # 1 week
+    auto_select_prompt: true
+    
+  # Hybrid Search (BM25 + Vector)
+  hybrid_search:
+    enabled: true
+    bm25_weight: 0.4
+    vector_weight: 0.6
+    bm25_k1: 1.5
+    bm25_b: 0.75
+    retrieval_k_multiplier: 2
+    use_rrf: false  # Use weighted fusion instead of RRF
+    rrf_k: 60
+    
+  # Cross-Encoder Reranking
+  reranking:
+    enabled: true
+    model: "mixedbread-ai/mxbai-rerank-large-v1"
+    use_cohere: false  # Set to true to use Cohere API
+    cohere_api_key: "${COHERE_API_KEY}"  # Optional Cohere API key
+    cohere_model: "rerank-english-v3.0"
+    top_k: 5
+    batch_size: 32
+    device: "auto"  # auto-detect GPU/CPU
+    
+  # Caching and Logging
+  caching:
+    enabled: true
+    hyde_cache_size: 128
+    rerank_cache_size: 256
+    cache_ttl_hours: 168
+    enable_compression: true
+    log_llm_interactions: true
+    log_performance_metrics: true
+    
+  # Storage Paths
+  storage:
+    base_storage_dir: "/Volumes/J15/aicallgo_data/persona_data_base"
+    bm25_index_path: null  # Uses base_storage_dir/indexes/bm25 if null
+    cache_dir: null  # Uses base_storage_dir/retrieval_cache if null
+    
+  # Pipeline Settings
+  pipeline:
+    default_k: 5  # Default number of final results
+    default_retrieval_k: 25  # Default candidates before reranking
+    enable_fallback: true  # Fallback to basic search on errors
+    log_pipeline_execution: true
+    parallel_processing: false

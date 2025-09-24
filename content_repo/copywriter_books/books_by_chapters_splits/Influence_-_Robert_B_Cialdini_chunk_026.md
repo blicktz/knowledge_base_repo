@@ -1,0 +1,87 @@
+#### “bereavement” can make sense of this bewildering array of facts, what can? There is a sociologist who thinks he has the answer. His name is David Phillips, and he points a convincing finger at the “Werther effect.”
+ The story of the Werther effect is both chilling and intriguing. More than two centuries ago, Johann Wolfgang von Goethe, the great man of German literature, published a novel titled Die Leiden des jungen Werthers (The Sorrows of Young Werther). The book, in which the hero, named Werther, commits suicide, had a remarkable impact. Not only did it provide Goethe with immediate fame, but it sparked a wave of emulative suicides across Europe. So powerful was this effect that authorities in several countries banned the novel.
+ Phillips’s own work has traced the Werther effect to modern times. His research demonstrated that immediately following a front-page suicide story, the suicide rate increases dramatically in those geographical areas where the story has been highly publicized. It’s Phillips’s argument that certain troubled people who read of another’s self-inflicted death kill themselves in imitation. In a morbid illustration of the principle of social proof, these people decide how they should act on the basis of how some other troubled person has acted.
+ Phillips derived his evidence for the modern-day Werther effect from examining twenty years of suicide statistics in the United States. He found that within two months after every front-page suicide story, an average of fifty-eight more people than usual killed themselves. In a sense, each front- page suicide story killed fifty-eight people who otherwise would have gone on living. Phillips also found this tendency for suicides to prompt suicides occurred principally in those parts of the country where the first was highly publicized. He observed that the wider the publicity given the first suicide, the greater the number of later ones (see figure 4.5). Newer research indicates the pattern isn’t limited to newspaper accounts. On March 31, 2017, Netflix premiered the web series 13 Reasons Why, in which a young high school student commits suicide and leaves behind a set of thirteen tapes detailing the reasons. In the next thirty days, suicides among young adolescents rose by 28.9 percent—to a number higher than at any month in the five-year span analyzed by the researchers, who ruled out “social conditions” explanations for the increase.
+
+-----
+
+**Figure 4.5: Fluctuation in number of suicides before, during, and after month of suicide story**
+**Author’s Note: This evidence raises an important ethical issue. The suicides that follow these stories**
+are excess deaths. After the initial spurt, the suicide rates do not drop below traditional levels but
+only return to those levels. Statistics such as these might well give pause to newspaper editors
+inclined to sensationalize suicide accounts, as those accounts are likely to lead to the deaths of scores
+of people. Data indicate that in addition to newspaper editors, TV broadcasters have cause for
+concern about the effects of the suicide stories they present. Whether they appear as news reports,
+information features, or fictional movies, these stories create an immediate cluster of self-inflicted
+deaths, with impressionable, imitation-prone teenagers being the most frequent victims (Bollen &
+Phillips, 1982; Gould & Shaffer, 1986; Phillips & Cartensen, 1986, 1988; Schmidtke & Hafner,
+1988).
+
+#### If the facts surrounding the Werther effect seem to you suspiciously like those surrounding the influence of suicide stories on air and traffic fatalities, the similarities have not been lost on Phillips either. In fact, he contends that all the excess deaths following a front-page suicide incident can be explained as the same thing: copycat suicides. Upon learning of another’s suicide, an uncomfortably large number of people decide suicide is an appropriate action for themselves as well. Some of these individuals then proceed to commit the act in a straightforward fashion, causing the suicide rate to jump.
+ Others, however, are less direct. For any of several reasons—to protect their reputations, to spare their families the shame and hurt, to allow their
+
+-----
+
+#### dependents to collect on insurance policies—they do not want to appear to have killed themselves. They would rather seem to have died accidentally. So, purposively but furtively, they cause the wreck of a car or a plane they are operating or are simply riding in. This can be accomplished in a variety of all-too-familiar-sounding ways. A commercial-airline pilot can dip the nose of the aircraft at a crucial point of takeoff or inexplicably land on an already occupied runway against the instructions from the control tower; the driver of a car can suddenly swerve into a tree or into oncoming traffic; a passenger in an automobile or corporate jet can incapacitate the operator, causing the deadly crash; the pilot of a private plane can, despite all radio warnings, plow into another aircraft. Thus, the alarming climb in crash fatalities we find following front-page suicides is, according to Phillips, most likely due to the Werther effect secretly applied.
+ I consider this insight brilliant. First, it explains all of the data strikingly well. If these wrecks really are hidden instances of imitative suicide, it makes sense that we should see an increase in the wrecks after suicide stories appear. It makes sense that the greatest rise in wrecks should occur after the suicide stories that have been most widely publicized and have, consequently, reached the most people. It also makes sense that the number of crashes should jump appreciably only in those geographical areas where the suicide stories were publicized. It even makes sense that single-victim suicides should lead only to single-victim crashes, whereas multiple-victim suicide incidents should lead only to multiple-victim crashes. Imitation is the key.
+ In addition, there is a second valuable feature of Phillips’s insight. It allows us not only to explain the existing facts but also to predict new facts that have not yet been uncovered. For example, if the abnormally frequent crashes following publicized suicides are the result of imitative rather than accidental actions, they should be more deadly. That is, people trying to kill themselves will likely arrange (with a foot on the accelerator instead of the brake, with the nose of the plane down instead of up) for the impact to be as lethal as possible. The consequence should be quick and sure death. When Phillips examined the records to check on this prediction, he found that the average number of people killed in a fatal crash of a commercial airliner was more than three times greater if the crash happened one week after rather than one week before a front-page suicide story. A similar phenomenon can be found in traffic statistics, where there is evidence for
+
+-----
+
+#### the deadly efficiency of post-suicide-story auto crashes. Victims of fatal car wrecks that follow front-page suicide stories die four times more quickly than normal.
+ Still another fascinating prediction flows from Phillips’s idea. If the increase in wrecks following suicide stories truly represents a set of copycat deaths, then the imitators should be most likely to copy the suicides of people who are similar to them. The principle of social proof states that we use information about the way others have behaved to help us determine proper conduct for ourselves. As research we’ve already reviewed showed, we are most influenced in this fashion by the actions of people who are like us—by peer-suasion.
+ Therefore, Phillips reasoned, if the principle of social proof is behind the phenomenon, there should be some clear similarity between the victim of the highly publicized suicide and those who cause subsequent wrecks. Realizing that the clearest test of this possibility would come from the records of automobile crashes involving a single car and a lone driver, Phillips compared the age of the suicide-story victim with the ages of the lone drivers killed in single-car crashes immediately after the story appeared in print. Once again, the predictions were strikingly accurate: when the newspaper detailed the suicide of a young person, it was young drivers who then piled their cars into trees, poles, and embankments with fatal results; but when the news story concerned an older person’s suicide, it was older drivers who died in such crashes.
+ This last statistic is the clincher for me. I am left wholly convinced and, simultaneously, wholly amazed by it. Evidently, peer-suasion is so powerful that its domain extends to the fundamental decision for life or death. Phillips’s findings illustrate a distressing tendency for suicide publicity to motivate certain people who are similar to the victim to kill themselves— because they now find the idea of suicide more legitimate. Truly frightening are the data indicating that many innocent people die in the bargain (see figure 4.6).
+ Consider the fatal consequences of one locally publicized suicide in which a teen stepped in front of a speeding train. In the next six months, a second, third, and fourth student from the same high school followed his lead and died in the same way. Another such suicide was prevented by a fifth classmate’s mother who noticed her son was missing from the house and suspected his intent. How did she know where to go to intervene and
+
+-----
+
+#### stop the teen’s deadly action? She went directly to the rail crossing where his peers had died.
+ Perhaps nowhere are we brought into more dramatic contact with the unsettling side of the principle of social proof than in the realm of copycat crime. Back in the 1970s, our attention was brought to the phenomenon in the form of airplane hijackings, which seemed to spread like airborne viruses. In the 1980s, our focus shifted to product tamperings, such as the famous cases of Tylenol capsules injected with cyanide and Gerber baby- food products laced with glass. According to FBI forensic experts, each nationally publicized incident of this sort spawned an average of thirty more incidents. Since then, we’ve been jolted by the specter of contagious mass murders, occurring first in workplace settings and then, incredibly, in our children’s schools.
+
+**Figure 4.6: Daily fluctuation in number of accident fatalities before, on, and after suicide-story**
+**date**
+
+-----
+
+**Author’s Note: As is apparent from these graphs, the greatest danger exists three to four days**
+following the news story’s publication. After a brief drop-off, there comes another peak
+approximately one week later. By the eleventh day, there is no hint of an effect. This pattern across
+various types of data indicates something noteworthy about secret suicides. Those who try to disguise
+their imitative self-destruction as accidents wait a few days before committing the act—perhaps to
+build their courage, to plan the incident, or to put their affairs in order. Whatever the reason for the
+regularity of this pattern, we know that travelers’ safety is most severely jeopardized three to four
+days after a suicide-murder story and then again, but to a lesser degree, a few days later. We would be
+well advised, then, to take special care in our travels at these times.
+
+#### As an example, immediately following the bloody rampage by two Littleton, Colorado, high school students, police responded to scores of similar threats, plots, and attempts by troubled students. Two of the attempts proved “successful”: a fourteen-year-old in Taber, Alberta, and a fifteen-year-old in Conyers, Georgia, killed or wounded a total of eight classmates within ten days of the Littleton massacre. In the week following the horrendous murder-suicide attack at Virginia Tech University, media across the country reported more murder-suicides of their own, including three in Houston alone. It is instructive that after the Virginia Tech massacre, the next such event of similar size occurred not at a high school but at a university, Northern Illinois University. More recently, mass shootings have spread to entertainment venues—theaters and night clubs.
+ Events of this magnitude demand explanation. Some common thread needs to be identified to make sense of them. In the case of workplace murders, observers noticed how often the killing fields were the backrooms of US post offices. So the finger of blame was pointed at the “intolerable strains” of the US postal environment—so much so that a new label emerged, “going postal,” for an act of stress-fueled workplace violence. As for the school-based slaughter, commentators remarked on an odd commonality: nearly all the affected schools were located in rural or suburban communities rather than in the ever-simmering cauldrons of inner- city neighborhoods. So, this time, the media instructed us as to the “intolerable strains” of growing up in small town or suburban America. By these accounts, the stressors of US post-office environments and of small- town American life created the explosive reactions of those who worked and lived there. The explanation is straightforward: similar social conditions create similar responses.
+ But you and I have been down the “similar social conditions” road before in trying to understand anomalous patterns of fatalities. Recall how
+
+-----
+
+#### Phillips considered the possibility that a set of common social conditions in a particular environment might explain a rash of suicides there? It wasn’t a satisfactory explanation for the suicides; and I don’t think it is a satisfactory account for the murder sprees either. Let’s see if we can locate a better alternative by first trying to regain contact with reality: the “intolerable strains” of working at the post office or of living in rural/suburban America?! Compared to working in the coal mines or living on the gang- ruled, mean streets of inner cities? Come on. Certainly the environments where the mass slaying occurred have their tensions. But they appear no more severe (and often less severe) than many other environments where such incidents have not taken place. No, the similar social conditions theory doesn’t offer a plausible account.
+ Then what does? I’d nod right at the principle of social proof, which asserts that people, especially when they are unsure of themselves, follow the lead of similar others. Who is more similar to a disgruntled postal employee than another disgruntled postal employee? And who is more similar to troubled small-town American teenagers than other troubled small-town American teenagers? It is a regrettable constant of modern life that many people live their lives in psychological pain. How they deal with the pain depends on numerous factors, one of which is a recognition of how others just like them have chosen to deal with it. As we saw in Phillips’s data, a highly publicized suicide prompts copycat suicides from similar others—from copies of the cat. I believe the same can be said for a highly publicized multiple murder.
+ As is the case for suicide stories, media executives need to think deeply about how and how prominently to present reports of killing sprees. Such reports are not only riveting, sensational, and newsworthy but also malignant—as considerable research indicates that they possess a contagious character.
+
+### Monkey Island
+
+#### Work like Phillips’s helps us appreciate the awesome influence of peer- suasion. Once the enormity of that force is recognized, it becomes possible to understand perhaps the most spectacular act of deadly group compliance of modern times—the mass suicide at Jonestown, Guyana. Certain crucial features of the event deserve review.
+
+-----
+
+**Figure 4.7: “Malfunctioning Copier”**
+Five minutes before the start of school on May 20, 1999, fifteen-year-old Thomas (“TJ”) Solomon
+opened fire on his classmates, shooting six of them before he was stopped by a heroic teacher. In
+struggling to comprehend the underlying causes, we must recognize the effect on him of the publicity
+surrounding a year-long string of similar incidents—first in Jonesboro, Arkansas; then in Springfield
+Oregon; then in Littleton, Colorado; and then, just two days earlier, in Taber, Alberta. As one of his
+friends declared in response to the question of why distraught students were suddenly turning
+murderous at school, “Kids like TJ are seeing it and hearing it all the time now. It’s like the new way
+out for them” (Cohen, 1999).
+
+_AP Photo/John Bazemore_
+
+#### The People’s Temple was a cultlike organization based in San Francisco that drew its recruits from the city’s poor. In 1977, the Reverend Jim Jones —the group’s undisputed political, social, and spiritual leader—moved the bulk of the membership with him to a jungle settlement in Guyana, South America. There, the People’s Temple existed in relative obscurity until November 18, 1978, when Congressmen Leo R. Ryan of California (who had gone to Guyana to investigate the cult), three members of Ryan’s fact- finding party, and a cult defector were murdered as they tried to leave Jonestown by plane. Convinced that he would be arrested and implicated in the killings and that the demise of the People’s Temple would result, Jones sought to control the end of the Temple in his own way. He gathered the
+
+-----

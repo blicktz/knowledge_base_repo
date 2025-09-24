@@ -1,0 +1,75 @@
+##### One of the more effective ways to sell in print is through direct mail. It’s a way to target a specific prospect who has exhibited certain buying tendencies, and it’s a way to target all of those tendencies in a very efficient way. But there are some important notes about copywriting that need to be observed in this form of communication.
+ As I have mentioned throughout this handbook, the personal approach to selling can’t be beat. Selling is really a personal relationship between the seller and the buyer. It’s a relationship of trust. And to enhance that trust there is nothing like having your prospects know clearly whom they are dealing with. Your prospects will pick up the vibrations of what you write, especially if you are making your communications sound very personal.
+ Direct mail copy is among the most personal types of copy you can write. It is a letter written directly to another individual. It is a message to a person whom you have sought out by simply refining your mailing criteria to focus on just those attributes that represent your prospect. By selecting a mailing list that encompasses those attributes, your chances of success will be greatly enhanced.
+ The most important thing to be aware of is to keep the message personal. Using the first person is important. Use the word I and avoid the term we when referring to your associates. In fact, it is a lot better when referring to your company to talk about the staff as a team—for example, “My team of great engineers is available to help you.” Compare that to: “We at Acme Motors have the skill and knowledge to provide assistance to you.” And your letter becomes even more personal when it is signed by the sender.
+ In a direct mail piece, the letter is the most important part of the entire mailing package. In it you must include the sales pitch, the slippery slide— designed to get the recipient of your mailing piece to read the entire letter— and all the psychological triggers described earlier. You have the space and the time to make a very good sales presentation.
+ The length of the letter can vary. If you can get your message onto one page, you make the mailing less intimidating. More pages are okay, too, if you’ve written a strong enough first page to keep them reading and of course if the subject is interesting to the reader; then you’re doing your job
+
+-----
+
+##### as a copywriter. Write 10 pages if you feel it is important to do so in order to sell your product or service, but the letter has got to be so compelling that the reader continues to read straight through to the end of the letter as if on a slippery slide.
+ Use any collateral material that is included with the letter to visually describe your product or service. The more important message, however, is in the letter. A brochure won’t sell your product as effectively as a good letter. The brochure or the color flyer could be critical to the sale but not nearly as important as the letter.
+ And you can certainly refer to the brochure in your letter, but don’t rely on that fancy brochure to do the complete selling job. It won’t, no matter how pretty and how good it may look.
+ Don’t forget that postscript (PS). The PS in a letter is often the most-read line of type on the page. So either offer something in the PS that causes the reader to solidify a buying decision or reiterate a very important point.
+ Use objects with the letter. When I did advertising for my ski-lift account I had a small number of prospects—around 500. It was therefore practical for me to include something unusual in each mailing. I sent a large button that said “No Jerk” to emphasize the smooth nature of my ski lift. I sent a brochure that expanded so that one side read “expand” and sent it with a nice letter. My prospects looked forward to each mailing simply to find out what I was going to say and include in my next mailing.
+ In direct mail, the mailing list is also a critical element to the success of a direct mail piece. Your own satisfied customers for a similar product will be your best and hottest list if they’ve purchased recently—the more recently the better. If you purchase lists, make sure the prospects on a list are demographically similar to your customers and that they have bought fairly recently through the mail and for purchases within the price range of what you are offering.
+ But let’s say you have a great letter, a cute little gimmick you are mailing with your letter and a first-rate mailing list. What is missing? How about a great message on your envelope? Your envelope is like the headline on a mail order ad. It will attract those prospects interested enough to read the subheadline, which usually is inside the envelope so you often need to get them to open the envelope in order to read the subheadline. Of course you can put the subheadline on the envelope, too. You might even try using some attention-getting statement if you feel the statement will cause the
+
+-----
+
+##### customer to open the envelope. If recipients are interested in your offer, they will know right away whether to open the envelope or throw it into the trash.
+ Just as people are inclined to discard Internet spam if they don’t recognize the sender without even opening the e-mail, recipients of your mailings are inclined to throw out your mailing piece without even opening it. But there are ways to get them to open the envelope.
+ If you put no name or headline on the envelope (just the return address), most of the recipients will open it out of curiosity. After all, it might be a credit card (many credit cards are sent this way). If the envelope has your company name and address and the person receiving it recognizes it as a company he or she has bought from before, chances are they will open it.
+ A computer-addressed envelope that looks like it was individually typed provides a strong incentive to open the envelope as well.
+ A good tip is for you to study the mail that comes into your mailbox. Which ones do you open and which ones do you quickly throw out? Often you are representative of the people who are your prospects.
+ What works can be easily determined if you test every mailing piece you send out against a different version of the same mailing piece. Testing is the critical factor that makes a big difference in the success of anything you do in direct marketing. And as a copywriter you can learn so much by observing what works and what doesn’t.
+
+####
+
+-----
+
+# Newspapers
+
+##### Newspapers are one topic I can speak about from a great deal of experience. Not only have I advertised in many daily and weekly newspapers, but I actually published a weekly newspaper, the Maui Weekly, for six years in Maui, Hawaii, before I sold it to the island’s daily newspaper in 2005.
+ If the ad you are placing in a newspaper is a mail order ad, it should pay for itself and cover the cost of the insertion the first time it appears.
+ If you are advertising something that promotes a retail establishment, then frequency is a major key. Putting an ad in a paper only once is simply a waste of time and money. Often people don’t respond right away. There is a lag time between seeing your ad the first time and then seeing it so often that a level of trust develops. Or it could be simply the time isn’t quite right when the ad first appears because of other events in the community.
+ Let’s say you are advertising a restaurant. The ad is to appear each week in the dining section of the weekly newspaper for a total of 13 weeks. The ad appears the first week and there seems to be little response. The ad appears the second week and a few more people show up. Slowly but surely the restaurant’s customers appear in greater numbers.
+ I can remember when I was in college at the University of Miami and a restaurant owner who saw that I was a student asked if I knew how to encourage other students to come to his Old Hickory Barbeque restaurant. I told him that I felt I could reach the students. I knew what the students responded to and felt that an ad in the daily college paper, the Hurricane, would do the trick. But as an aspiring copywriter, I also knew that the copy for this chicken and rib joint on the outskirts of town had to be so compelling and different that students would respond to it and not think of it as just advertising.
+ So the ad I ran talked about a chicken and rib special and then I told students that there was a catch. To get this special price, they had to bring in the top of a Brinks armored car. The ad ran. I held my breath and at first was too embarrassed to go to the restaurant and see the owner, concerned that maybe I had been a little over-the-top in what I had written. But to my surprise when I finally pulled up to the restaurant, there was a line around the block—with students carrying pieces of plywood, sheets of tin, garbage
+
+-----
+
+##### can covers marked “Brinks Armored Car Top” and a variety of other similar objects. The ad was a huge success.
+ I was communicating with the students in a way that they appreciated. And they responded in large numbers. It was also one of the few times when an ad for a retail establishment worked without the benefit of frequency.
+ Mail order ads in newspapers are designed to hit the mass market. Assuming you are advertising in a daily newspaper covering a large metropolitan area, then you’ve got to think in terms of lower-priced items that the mass market may relate to in large enough numbers. If, however, you have higher-ticket items, the Wall Street Journal would be your better venue for advertising. In the case of the Wall Street Journal, you go to a higher demographic to find the target audience you’ll need to sell your product or service.
+ At its peak, my mail order company, JS&A, used the Wall Street Journal extensively to sell my high-priced gadgets. In fact, at one point we were among the Journal’s largest advertisers. I liked the Journal because I was able to get my ads into the paper quickly—usually within a few days—and get my response a few days later. With the fast pace at which our products were introduced, peaked and then became obsolete, this speed was essential in introducing new products quickly and keeping up with the rapid price deterioration that was taking place in the consumer electronics industry.
+ You could make a nice profit in a daily newspaper if you bought your space right. And there are brokers who handle this type of advertising and are able to provide the newspaper space at very low prices so that indeed a nice profit can be made.
+ The same principles that apply to a mail order ad described in the first part of the book apply here, of course. And your goal is to make a profit from your mail order ad the first time you run it.
+ If the cost of space is a concern and you can get your message across in a smaller ad without much copy, then a small ad might be a good way to conserve your cash. An ad with a low-priced offer where the low price is the big attraction works well in this kind of situation. But keep in mind that you are competing with other small ads instead of dominating the page as you would with a larger, more descriptive ad.
+
+-----
+
+##### Daily newspapers in the United States are losing circulation. Weekly community newspapers are gaining in circulation. Why? Because the public can get their national and international news from TV or on the Internet 24/7. Community newspapers such as the Maui Weekly cover issues of interest to the local community—news that can’t be found on TV or on the Internet.
+ One of the things I did when I first bought the Maui Weekly in 1999 was to change the format of the paper and keep this same format week after week. Each issue was interesting and consistent. I also used many of the principles that I’ve explained in the first three sections of this book to enhance my rapport with the community. I found that consistency was my most important principle. It took awhile but before long the community embraced the publication and looked forward to receiving it each week. And our circulation and advertising grew as a result. The one powerful trigger of consistency also worked for our advertisers. Keeping a regular schedule and the same format while changing the copy proved to be successful for our advertisers as well.
+ The big advantage of a newspaper is the fast response time—your ability to get your ad into a paper quickly and the speed of the response you receive after your ad appears. The life of each issue of a daily newspaper is usually just a few days, so your prospect will generally respond quickly during that time frame. For a weekly, the life of an issue is typically around 10 days.
+ Frequency is also an important consideration if you are running retail advertising for such establishments as restaurants, car dealerships, furniture stores, clothing outlets and real estate sales.
+ Another nice feature of running ads in newspapers is the sheer volume of newspapers available to advertise in. If your ad works, it can be run nationally and reach millions of people in a relatively short period of time.
+ If you have a product or service that would appeal to the general public and it is priced low enough while representing good value, newspapers are a good choice. For a higher-priced product, refine your choice of newspapers to the more upscale papers such as the Wall Street Journal or many of the other business publications.
+
+####
+
+-----
+
+# Billboards
+
+##### A billboard uses few words to convey its message, so those words must be very powerful or create immediate awareness or the billboard is useless. From your research you must write a single headline and, at the most, a minimal subheadline, accompanied by a graphic that conveys the big idea you’re trying to convey.
+ Here is where simplicity is the controlling factor. Your message has to be so simple and direct that occupants of cars passing by at 75 miles an hour can pick out the message and quickly grasp its meaning.
+ A billboard can create curiosity and a buzz such as in the Folgers coffee teaser campaign of the late 1960s that stated, “A mountain is moving to Chicago,” when Folgers introduced its coffee to the Chicago area. The mountain was actually the graphic on the container of coffee, but nobody knew exactly what the billboards meant until the formal announcement.
+ The point you always want to remember when you write copy for a billboard is that you need to capture the imagination of your prospect in a very short, simple and effective way in a matter of a few seconds.
+ Billboards have been used effectively to create a buzz, as in the Folgers example, or to establish brand recognition, and are ideal for a recognized brand as well as to build brand awareness. They can be used to promote an establishment up the road or to sell beer. But whatever the task, the key is brevity and simplicity.
+
+####
+
+-----
+
+# Press Releases

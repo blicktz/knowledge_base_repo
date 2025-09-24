@@ -1,0 +1,435 @@
+It's a great first business. It's not complicated. Basically zero startup costs and like has a ton of opportunity to grow.
+
+You can make a hundred grand a year doing this strategy. The goal here is just like, I'm just trying to make passive income, right? That whole thing could be automated.
+
+ChatGPT can go in one shot these now. I love print on demand, especially when compared to dropshipping. All this stuff's coming from China.
+
+It takes a month to get to work. It's probably crappy quality, weird packaging. And then the seller is hardly making any money because you really have to use paid ads to make dropshipping work.
+
+Worst case, you learn and you make money on the next thing because of what you learned. Best case, you make a lot of money. So what do you have to lose?
+
+Okay. I had my friend Cody Schneider on the podcast. And if you like idea guys, AI ideas, tactical ideas, how to start a business, how to grow a business, unique business ideas that you can start with very little money.
+
+He's your guy. I had some of the most fun I've ever had while recording an episode. I'm not exaggerating.
+
+I already know Cody's going to be a return guest. Today. We talked all about print on demand business opportunities.
+
+He said, Etsy stores for a decade, he's done all kinds of print on demand. And now with these AI image generation capabilities, it is easier to start a print on demand business than ever before. We got super tactical nitty gritty.
+
+I break down terms for you in a more simple way. Here's a quick glossary. He mentions ROAS that's return on ad spend, how much money you make from the money you spend on ads.
+
+He mentioned JSON, which is just a way of displaying data. And he mentions N8N, which is a piece of software that offers automation capabilities. You're going to love this one.
+
+Enjoy. Everything that I'm going to share today is like, you could learn this in a weekend if you put like eight hours into it. Yeah.
+
+So first one I want to start with, because I think it'll be just different for your audience is, do you know a lot about like print on demand? Do you know that category? Cool.
+
+Yeah. So like Etsy is a huge place for print on demand, but traditionally, like if you wanted to go and create like a ton of graphics for print on demand, it used to take hours. You would have to have like some type of tedious.
+
+Yeah. Like design, you know, skill set. So there's this opportunity right now, but I think this is like a weekend business you could start.
+
+That's like basically zero startup costs and like has a ton of opportunity to grow. So it's basically, it's doing Etsy print on demand, but using AI generated graphics. I'm going to break down all of this.
+
+For how you do this is basically, you need to go and do product research on Etsy for which are the best selling products. So there's tons of tools that do this. My friend owns one of these companies.
+
+It's called Everbee. And let me bring it up and I can show you what this looks like. So basically it's Matt, do you know, jungle scout, Chris?
+
+Oh yeah. For Amazon, right? Totally.
+
+So it's basically jungle scout, but for Etsy. And what it does is it helps you identify like best-selling products on Etsy. So it's a Chrome extension.
+
+They also have like a web app version of it, but what it does is it'll show you the product. So you go to Etsy and you search a keyword, like we'll say like horse shirt, you know, or we'll say horse sweatshirt, something very generic. And then from here, you're going to find these like these products that are selling well and how you identify those is using a software like Everbee that basically will show you like the estimated search volume.
+
+It'll show you the estimated sales, the estimated revenue. So what this allows for you to do then is say we identify like, Hey, this one is working, you know, selling super well, right? I can then take that image.
+
+So I'll take a screenshot of this and I go to the chat GPT API and I say, you know, generate a version of this basically. So now to break this down, what this ends up looking like, you have the keywords that they're like basically optimizing for. So all of these, you put those in the title, the description ends up being exactly the same, do the exact same pricing structure.
+
+And then now you can, because of these AI tools, you can go and generate these images for this print on demand catalog that like before, like you would have to have, you know, some type of skillset to even be able to like, you know, like design this or like some type of like drawing capability, right? It's, you know, chat GPT can go in one shot these now. And what we're doing this or the experiment we've been running with is like just vector style images.
+
+So stuff where it's like very like black and white, an example of this would be, you know, something like this as an example, less variables for chat GPT to screw it up. Exactly. Yeah.
+
+But like, you know, okay, it's running in this direction. It's it's gonna like perfectly make a version of this, but it's an entirely new version. Now you said chat GPT API.
+
+Are you just using the app or using like something that you can use just the chat GPT app? We're doing this at scale, right? So we're like, okay, let's go generate 1000.
+
+Like we're gonna find 1000 winning products. And we're gonna go generate 1000 different, you know, images. But if you wanted to start this out manually, you could go to chat GPT.
+
+And here, let's just like do it actually. So I'm curious. Now are you are you using ever be for like the scale and automation part or just for the research?
+
+Just for the research, once you've identified the URL, so like never be you can have it where it basically you can download the research as a CSV. So the Chrome extension runs, it shows you the best winning products from this page, you download it as a CSV, we'll take those top 10 winners. And then we'll go and generate, you know, graphics based off of those top 10 winners.
+
+Something to think about for people if they're gonna do this is, I would stay away from words and like phrases as much as you can, you can kind of turn into a just a nightmare to like, from a trademark standpoint, you can look up these trademarks. So like, for example, dogs and horses make me happy. So like some random person probably owns that trademark.
+
+And occasionally, they'll just go to all of the main like sellers, like horses make me happy trademark. They'll go to all the main sellers and ask for like, the sellers to take them down. And you'll get flagged as like, yep, like basically, you know, abusing the trademark, which gets a like a negative like mark against your Etsy shop.
+
+And so if you get like three of them, you typically like yeah, you get shuts down, they flag your social, and you have to like, you know, basically restart the whole process. So I would just stick with generics. Those just safer.
+
+And again, because this is a scale of volume game, like, how can I get 10,000 listings on Etsy live? That's, you know, that's what you're trying to do here. So but yeah, but you can do this with the chat GPT, like just the web app, or you can use the chat GPT image API, you provide the image type, and all this can be done with no code, like it can be done with like make.com super easy, which is an automation, you can do this with N8N, which is an automation and N8N is a little bit more complicated, unless you know this trick, believe it or not 67% of the people that watch my YouTube videos, don't subscribe to me, and over 90% think that they're subscribed to me.
+
+So do me a quick favor and check that you're subscribed to me. If you're not please do it would mean a lot. So with N8N, they're leaning forward.
+
+So with N8N, it's just JSON is how they structure the flows. So like with make, you basically have to go through and like set up each of the nodes. But I can just go and tell AI to make an N8N JSON file for the flow that I'm trying to create.
+
+So we're going to just do this right now I'm using perplexity pro. Perplexity pro is cloud four. And so I'm going to say make N8N JSON file or JSON flow for the following workflow.
+
+And we'll do take image from Google drive, send to chat GPT API, save image to new Google drive folder. And what it's going to do right here is it's basically going to go and write the N8N JSON code. And then I can just take that into my N8N instance, I can copy and paste that in.
+
+And it's basically going to like work right out of the box is like what we're seeing. It's like Claude is so good at writing this type of JSON code. It's ridiculous.
+
+So you can see this being rendered here. Let me see if I can break that down for everyone. So stuff like Zapier or was the automation platform pre AI.
+
+Of course they do AI stuff, but that's like they invented automations, right? N8N is the AI first, more complex, but more feature rich version of Zapier or make.com. You're saying N8N is kind of tricky, difficult to work with if you're a non-coder because of these JSON files.
+
+But if you pay 20 bucks a month for perplexity pro, which uses Claude four on the backend and you prompt it as you just showed, which we'll put in the show notes, you can get around that confusion and anyone, even the layman like myself can use N8N successfully. Correct? 100%.
+
+Absolutely. That's exactly it. Why N8N is so powerful is because it has a ton of community nodes.
+
+So, and it can also just do web hooks really easily. So even if there isn't a node, like for example, there's no Zapier or make.com integration with a web hook, you can call most APIs and an API is just basically like an end point that you can say, Hey, I want this back from you. Right.
+
+And then you like, Just a way for software to talk to each other. Exactly. Exactly.
+
+And then it sends that information back. And so that is how you can basically like, you know, this is a really small version of this, where this extends to, and you can even get further is like, okay, cool. I identified all of the winning products on Etsy.
+
+I extracted the photos from all those winning products, you know, scraping using something like scraping B or, you know, any of these like scraping softwares honestly, Appify would probably work for this as well. And then once I have all those images in a Google drive folder, I can be like, okay, like do this flow, but I want to extend this flow out even further. I want you to also upload this to printify automatically for me, add it to, you know, shirts, to do sweatshirts, to mugs, you know, all the different variations that you could sell of the same graphic.
+
+And then within printify, you can just bulk select one click publish, and it goes live on Etsy. And so that's like the whole, like, you know, process that you can do with this. So, so yeah, your automation, sorry, go ahead.
+
+No, I was just gonna say, yeah, questions. Happy to answer anything. So, so with what you're doing, you're using N8N and other similar tools to scale this, this Etsy strategy.
+
+What is your goal? Like, are you just reselling stuff on Etsy? Are you cross selling, you know, bestsellers on Etsy on other platforms on your own Shopify site?
+
+What is your whole goal with this? Yeah. I mean, you could take these same graphics and go to like Amazon merch, which is a second, another category Etsy we found is this like, I've also sold on Etsy for like the last, whatever it is, like 10 plus years.
+
+So we just know the platform way better. But the thing with this is basically, it's just a volume game. Like you're trying to get 10,000 listings up.
+
+Yeah. And the margin on these shirts, 50 of them will be good. And exactly.
+
+The rest of them won't make any money. Exactly. You know what it's the classic rule, like 80, 20 rule, right?
+
+Where it's like 20% of your products are going to make 80% of your revenue. It's going to be that same strategy. You don't know what's going to win, but the arbitrage here is that to create these graphics, like I used to, like we used to do this, we would hire like offshore talent.
+
+They were like, you know, doing like illustrator files. They could only do like one a day. So I got 10 of them working in the Philippines doing one a day.
+
+I mean, it was just like a massive operation. Now you can do that same thing, but like without any humans, maybe one person running this, just a one, you know, just you basically running this and get to a scale where the listings are at a volume size that you're just creating more surface area. And really the, to break down like why this works.
+
+So Etsy is a platform that already has a bunch of organic search traffic for a lot of these keywords. Like if I go and search, you know, a horse sweatshirt on Google, like Etsy is going to come up in those top listings. You're going to see them here.
+
+That's, that's Amazon. So what you're doing is basically what they would call parasite SEO. You're using the domain authority and the current rankings of these websites to get like sales.
+
+So for example, Etsy is here. Somebody clicks into horse sweatshirt. If you rank in that top position for horse sweatshirt, you're going to just get sales.
+
+As long as the graphic is something that people want to buy. And you know what people want to buy, because we already did the research with ever be to identify those things. Right.
+
+And so what you're basically like, this is solving is the cold start problem of how do I get, you know, like, how do I get trust enough for people to buy this from me? Yeah. When I lean on a platform, I can solve that's that cold start problem.
+
+So, Yeah. And for those listening, parasite SEO is just like a parasite. It's just SEO where you don't have any authority.
+
+You have no reputation online. Google doesn't know you exist. You just latch on to someone like Etsy and say, Hey, I'm relevant now.
+
+Exactly. Exactly. And you're, you're really just using, like you could, we could go and look at this actually, like for all of the, let me bring this up.
+
+So like, do you see this forward slash market URL? So that means they have this like subdirectory on the entire website. Like that's where all of their product collection pages is what they would be called.
+
+I mean, so Etsy has created 19 million of those and we have the opportunity basically to go and build products for all 19 million that we can then show up in front of. Right. So they have all this traffic that they're trying and like, how do they make money?
+
+They make money when somebody comes in and makes a purchase. So if your products, if somebody comes in and they make a purchase, you rank higher within their internal search algorithm. And then they're doing all the work for you though, to show up for, you know, 18 K gold chain for grounding shoes, for Briar Rose ring for, I mean, also if you're trying to find product categories that are like new and like, like quickly, like becoming like, like, like searched Etsy is actually a great place to do research for this.
+
+So do that search. What I did is site colon Etsy.com forward slash market. You select tools on Google, and then I can say, show me in the past 24 hours.
+
+And so it's going to give me all of the pages. Yeah, that's it. That's what we're here for Cody.
+
+That's why people watch this. Totally. And so here's some of them that come up.
+
+It's gag portraits, tweeted bird, phone case, gold filled or gold filled Canada. Some of them don't make any sense. Right.
+
+But at least this gives you an understanding of the like Etsy is seeing that people are starting to search these. And so it is building out these pages programmatically based off this data. That is their real business is basically a huge marketplace, looking at the data, building pages to like, get this free traffic.
+
+And then, you know, categorizing all the products appropriately to increase the sales as much as possible. Right. And so this is like a really quick and easy way to like, you know, find a product category that's growing quickly.
+
+Offensive, like offensive get well, car soon cards. This is a great one. Like that you could just like literally only build a shop.
+
+Yeah. Round that use AI to generate the graphics and the images. Yeah.
+
+Yeah. Like Canva. Right.
+
+And use a like a print on demand company, some like gelato. I think they have these that will actually like print these cards and send them to people. So, you know, what's crazy to me is so many of these trends start with short form video.
+
+Like all of a sudden someone posts on TikTok about Dubai chocolate, which no one's ever heard of. And this video goes mega viral, gets a hundred million views. And then it just starts disseminating out on TikTok.
+
+Now you have hundreds and thousands of people posting out Dubai chocolate. And then you go to this tool, you go to Google with this trick and you search Dubai chocolate. And then days, weeks, months later, you start to see it down to kind of filter down the funnel.
+
+Now people are making purchasing decisions based on this, what started as one viral video. And then it becomes more and more saturated and you can look at the Google Trends chart and it goes up and then it goes down. But what you're showing us enables people to get ahead of that.
+
+Right. Because as soon as people go from TikTok to I want to buy, it's going to show up right here and you won't be too late. A hundred percent.
+
+A hundred percent. And the whole point of this too, is you're not guessing, right? Like you're not guessing about any of this.
+
+Like all of this is data driven. The only AI part of this is the human labor. Like there's nothing else that's happening.
+
+The goal here is just like, I'm just trying to make passive income, right? Like this is a passive income type of business. That's just an online business version.
+
+And you know, I'm not saying you're not going to get like crazy wealthy doing this, except I know you can do that. Right. But it's like results in reality, the average person, like, I mean, you can do it.
+
+It's just, it's just, it's a lot of work, but like realistically, like you could, you could make another a hundred grand a year doing this strategy. It's not unreasonable. This was like one of the first businesses that I ran was basically a version of this.
+
+So anyway, yeah. So let me summarize the opportunity. So you're going to Etsy.
+
+You're using that tool ever be you're finding winning products. Then you're using an N8N template, which you make in perplexity pro that template will go out and connect your research with your chat GPT API, find winning products. And then once you find them, you're using the same keywords, similar pictures to post them on the same platform.
+
+And that's something that a lot of people are like, all right, this is retail arbitrage. I buy on Amazon, sell on Walmart, buy on eBay, sell on Facebook. Like, no, like you just find the winners and sell them on the same platform where the demand's already proven.
+
+And then the magic of print on demand is you're not buying any t-shirts. You're not taking possession of any of this stuff. Like you're just sending all of these orders through an API, through an automation to a big warehouse in Kansas city, Missouri, and they're shipping out the hats and sweatshirts all over the world.
+
+Right. Well, while you make, you know, cents to dollars on every little transaction. A hundred percent.
+
+I mean, the costs for this are so cheap too, right? I think Etsy listing now, I don't know if it's 20 or 30 cents. I can't remember, but again, you, you pay that premium because they have all the traffic.
+
+So you don't have to solve the traffic problem. You just have to make the product that's most likely to sell. Yeah.
+
+So their cost is basically like the subscription for something like an Everbee, the cost to generate the image, and then basically the listing fee on Etsy. Oh, last thing too, on the image generation side, an actual like technical thing. Quick question.
+
+What if there were a private community out there of people that were building businesses based on this podcast? Well, I just made it. And it's only for business starters and business builders.
+
+It's called TK owners. And it's basically like having me and a hundred other business geniuses as your business partner. Also, there's going to be exclusive new trends, growth hacks, business ideas, and a database of everything I've ever talked about.
+
+You'll find thousands of startup case studies. You'll have weekly ask me anythings with me. Well, I'll answer your questions directly.
+
+You can join now at TK owners.com link in the show notes. You'll go and remove the background from those images that they provide back. One of them is like BG background.
+
+A ton of services. Yeah. Yeah.
+
+A ton of, yeah. Hundreds of those. Basically you'll get into that, that version where it's like a PNG, where it has a clear background.
+
+That's what you're, what you're actually doing in a printify, but just making sure, you know, trying to get over. So you remove the background. You remove the background before you sent it, send it to chat GBT through the API.
+
+Remove the background before you send it to printify. So you would scrape it from Etsy, send it to chat GBT, get the image back, send it to a background remover, get the image back, send that to printify, send that to Etsy. Okay.
+
+At what point, if any, is your manual involvement needed throughout this process? That whole thing could be automated. Like they would just be the, the research on the front end and reality, you could probably automate that in some capacity.
+
+There's just like not a great tool out there for it, but you can, but the thing is like, a lot of this stuff is so fun. Like why automate the research? It's so fun.
+
+Totally. Totally. And then the posting, the final process of like posting them live within printify or within, uh, you know, printful.
+
+Those are the two pieces, that whole middle section, which is all the labor like that can basically be removed. Right. So yeah.
+
+Okay. First of all, like this isn't like very tangible, but for those listening, this stuff that he's describing, like setting up an automation, your first automation for the first time and just seeing it work, it's just the best feeling in the world. It's just so fun.
+
+Like it's, you know, skydiving level fun. So this isn't like, you know, yeah, you can make money scrubbing toilets. I talk about that stuff.
+
+That's not fun. Scrubbing toilets objectively is not fun. This is fun.
+
+And you know, worst case you make no money, but you learn and you make money on the next thing because of what you learned best case, you make a lot of money. So what do you have to lose? No, a hundred percent.
+
+Have you ever found a situation since you've been on Etsy for so long where there is an advantage to take a winning product? That's just winning organically copy it and just put paid ads behind it. Cause you know that your cost per acquisition will be low enough.
+
+Yeah. Great question. Google ads in particular are like shopping ads.
+
+Absolutely. Right. If you're seeing like this horse shirt is absolutely crushing it on Etsy.
+
+We know that like, you know, Etsy ranks for horse sweatshirt on page one. And like a majority of the traffic has to be coming from that. You throw up a Shopify store and you know, run like Google shopping ads directly to that and Google shopping ads, just so like people understand what those are, are the ads.
+
+Let me screen share and I can show you what they look like in the actual like search results, but it's the ads that look like, like again, let's do horse sweatshirt. It's these here where it's like these, like, you know, the images, these are all Google shopping ads. So how you do these is you basically set up like a Shopify store.
+
+You then connect it to Google shopping. So it pulls in all of your skew data. And then within Google ads, you can say, Hey, I want you to bid on this keyword horse sweatshirt and show this specific product for that keyword.
+
+So you could double down on this. And then what this turns into is it's just like an arbitrage game and you're like, it's a ROAS game. Right?
+
+So it's like, I put a dollar in and maybe $2 comes out. So like, maybe my margin isn't crazy good. Right.
+
+And what I mean by that is like for every dollar I spend in ads, I get like, you know, $2 back in revenue. And that, so, and say your margin on that second dollar is only, you know, 20%, which is like probably what you'll end up seeing. So it's like, I'm only making like 20 cents off of every dollar I spend.
+
+But if I go and spend, you know, a hundred grand and like that 20 cents starting to look, it suddenly looks big. The arbitrage here as well. And also again, just more sauce for everybody is that ad spend.
+
+If you have an Amex or a Chase Sapphire card, they're the Amex card. I can't remember the name of it, but they get Amex gives you Forex points on every dollar you spend on paid ads. And Sapphire gives you 3x points on every dollar you spend on paid ads.
+
+And so what that translates into is like, yeah, maybe you're making the super small margin and like, oh yeah, we're getting 25, you know, whatever, like 20 grand a month off of this shirt, or two grand a month off the shirt. But you can use this as a way to like go and stack points. So it's like, oh, you want to take a, you know, a trip to Southern France and want to fly business class, you know, all the way there.
+
+And then also stay in a hotel for free. You're basically spending money to make small fractions of money. And then the byproduct of that is like layering on these.
+
+Beautiful. So I have friends that do this. I've done this in the past as well.
+
+So I love print on demand, especially when compared to drop shipping, you know, 10 years ago, drop shipping was everything. But when you really break down the business model, it's pretty crappy. Like all this stuff coming from China, some woman in middle America, you know, buys this $30 thing.
+
+It takes a month to get to her. She likely chart file dispute against her credit card by then. By the time it gets there, it's probably crappy quality.
+
+It comes in this weird packaging. The branding is not the same as the person she thought she bought it from. And then the seller is hardly making any money because you really have to use paid ads to make drop shipping work.
+
+And then like you might be selling these handheld blenders that were all the rage on TikTok at the time. And then by the time it arrives, it's not cool anymore. No one wants it.
+
+But with print on demand, as long as we're wearing t-shirts, sweatshirts, hats, there's going to be a business there. And they're not coming from China. They're coming from any number of factories.
+
+And these big companies like printify have a half dozen factories all over the country. So you can still get the shirt in a few days. If the design or the pattern goes out of style, you lose nothing.
+
+Like totally, you have no inventory you're sitting on. You have no sunk costs. I think it's also just a better business.
+
+Like the biology of the business is better, right? Like I always is crazy to me, all of the, like everybody that goes into drop shipping, because it's like, you can never sell a drop shipping company, right? Like full stop, period.
+
+But I could sell a print on demand company. Like I could sell you all the IP I own, all the graphics I own, and also the like cashflow that I own and like flip that like on a marketplace or sell it to someone else. Well, and NN templates have value now.
+
+Oh, 100%. Three months ago, they didn't exist. Totally.
+
+Today, they're actually valuable. People sell them. Totally.
+
+Totally. Yeah. It's a great first business.
+
+It's low. It's low cost. It's very approachable.
+
+It's very clear. Like it's like, it's not complicated. The math is easy.
+
+So anyway, You acquire a half a dozen skills that you could use with so many other things. A thousand percent, dude. A thousand percent.
+
+I say this all the time on my podcast. Like generally speaking, this first business, whatever it is that you do, it's not going to work. Like statistically speaking, everything we're talking about right now won't work because that's numbers.
+
+Law of large numbers. I mean, most businesses don't work, but the idea is to get you started, get your foot in the door, get, get in the game. So you can acquire these skills and pivot towards something that does eventually work.
+
+A hundred percent. It's not just hoodies and sweatshirts. Like there's so many things that you can create.
+
+Stickers, notebooks, stickers, custom notebooks, printables, right? Coosies. Print.
+
+Have you done anything with printables? Like, yeah, totally. Absolutely.
+
+Yeah. Like, you know, kids coloring books. There's also like this, I wouldn't call it print on demand, but it's like digital assets.
+
+So like Excel templates and like procreate color palettes. Like there's, there's thousands of these different like categories that you can go into. And the idea here is that it's like, it's a non asset type business, but like I can go down the road.
+
+Like anything that's digital and anything that you could sell on the print on demand side, there's like a ton of opportunity there. But I think the thing to remember is like, don't get pigeonholed into like, oh, it's gotta be sweatshirts and t-shirts alone. Like you can make really good margins on stickers.
+
+You can make really good margins on like even mugs, right. Or like whatever. There's so many of these companies now that are competing against each other.
+
+So they're always adding new skew types, like, you know, baby jumpers and like a huge, a big piece of this too, that like a lot of people make a lot of money is doing custom ones, like print on demand custom. And what I mean by that is with laser engraving or. Yeah, yeah, yeah.
+
+Something like that. Or even like, you know, brides, like, you know, are going out like they want to get custom jackets made that are important embroidered. So it's like, like you go and you find a, like a embroidery on demand company.
+
+And you like custom embroider their names to denim jackets so that when they go to Nashville, like they all are matching, right, or whatever. Like there's that that's a huge category of this too, is that custom component. And so I don't think you just have to do like, you know, that graphic thing that I was describing, there's all of these different layers to this that you can kind of kind of unravel.
+
+Yeah, it's really just finding and what's it's easier than ever to find these print on demand companies, right? Like when I started out, there was like two companies. Now it's like I go to perplexity and I'm like list 100 print on demand companies and the unique things that they sell.
+
+And it's like, boom, like, here's a list. Let's do a little, a little ideation freestyle, no prep. I'm in the middle of launching a store, like for myself called tkostore.com where you can buy shirts and stuff, because it's a no brainer.
+
+I'm using a company called fourth wall to do it. And it's basically print on demand for creators. What opportunity do you see if I were to say gun to your head, Cody, I need you to come up with a business idea that merges print on demand with creators, because most creators out there aren't selling merch, right?
+
+A lot of them are a lot of times. It's like the first thing they go to, like, how do I monetize? Let's sell a t shirt.
+
+But even so, like just statistically, most creators aren't selling anything. Maybe they do brand and stuff for other companies or something. They're collecting emails.
+
+But how would you do that? What type of an automation would you set up to go out to all the creators say on Instagram, they have over 100,000 followers, maybe pick a niche, not pick a niche, DM them and say, Hey, I will make like a, I'm answering the question for myself. I will make a fully, a fully functional store for you.
+
+And all I charge is 5% of revenue, pay me nothing upfront. And then you just use something like fourth wall on the backend. What do you want to?
+
+Yeah, I think it's brilliant. I'll walk you through how I would do it. Exactly.
+
+Like play by play. So the first thing I would do is I would go and I would look for like phrases or like keyword phrases that they say often in their content. So like one that's one of mine, I was going to say that.
+
+Dang it. Yeah. So what I can't, what am I on my channel is I say a thousand percent, a thousand percent.
+
+Yeah. And I always like in the comments, people will just like, you know, basically like flame me about it. And like, even my family is like, you'd say it's just, it's one of those things.
+
+So video is cool, but you know, what's better long form audio via podcast and my newsletter, TKO pod.com. Go there to subscribe for free to my newsletter. It's one email a week, very tactical.
+
+And then go to my audio podcast, three episodes a week, stuff like this. You're going to love it all free. No sleazy sales, bitch TKO pod.com.
+
+So you go and identify and take the transcripts of all the things that they published. You would identify those phrases that are recurring and you basically analyze that. Cool.
+
+Here's these ones that they're saying often. That's what the merch turns into, right? Like I'm just imagining a dad hat that says a thousand percent comma a thousand percent or something ridiculous.
+
+Right? So then you take that and you now have these merch ideas. I would go to the creator and I would be like, I would pitch them literal like examples of the ideas.
+
+Like, Hey, you're, you say this a lot. You have to make it real for them. Exactly.
+
+They're not going to be able to imagine what you have in mind. Show them a dad hat that has some, you know, some, something on it. Right.
+
+That is like a part of their community. Is there something you say often, Chris? Oh yeah.
+
+I start every single short form video with look at this freaking guy right here over a thousand times. And I was just going to say, like, I have this now, if you're listening and you want to start this with me, I'm sorry, it's too late. You dropped the ball.
+
+Okay. But if someone would have slid into my DMS and said, Chris, I just bought TKO store.com, the domain, it's all yours. I set up a site for you.
+
+Look at this shirt. The shirt says, look at this freaking guy right here. It's all yours.
+
+I just want 5% of revenue. I'll add new designs. Uh, I'll do everything.
+
+I'll manage it. I'll manage everything logistics. I don't know how simple it is on the backend.
+
+At least, you know, the average creator doesn't, he's just using another company to do this. I would have said, yes, I want a t-shirt store event store. Eventually you just saved me all the hassle.
+
+I have three and a half million followers. Like that could have been a big customer for him, but I had to do it myself. Totally.
+
+Totally. And I think that is the, going to be the differentiator is coming to them with examples. It's not like pitching like this esoteric, like to your point, like you bought the domain, the Shopify store already exists.
+
+Like, you know, we shut that down too. Like all this could be done in like a weekend, right? Yeah.
+
+Like a week's a $10 domain. Shopify's free trial for 30 days. Like you don't need to spend hardly any money to do this.
+
+Totally. Totally. Okay.
+
+So you, you built this, you got this set up now. How do you actually reach out to them? DMS is one of them.
+
+If they're YouTube creators, you can go and you can get the email addresses from their profiles. So for that. Yep.
+
+Totally. So let me look you up. Oh man.
+
+You're a butcher in that name. Spelling is not my gift. You're not even subscribed to me.
+
+What are you doing? I know, dude. This is on my personal, it's on my main, but anyways, I can do this.
+
+I hit this. I get their email. Awesome.
+
+Right there. Cool. I reached out.
+
+Cold email is I built you a merch store, all lowercase. That's the subject line. Yeah.
+
+I'm opening that email. A hundred percent. I'm opening that.
+
+Yep. Yep. And then explain what you did link to the actual, actual merch, give them a proposal, ask them for an interview.
+
+So how do you do this at scale? You can go and you can use something like Appify. They have a YouTube channel, email scraper.
+
+There's an endpoint. I don't know which one it is. You'll have to look through these, but basically you can go and just imagine I go and I scrape every one of these channels, every creator.
+
+And then I cold email, reach out to them. And what you could probably do is be like, Hey, if you want to see it, like your store, just like, email me back. Yes.
+
+And I'll send you the URL and then you make it. And then you build it. And then you build it.
+
+Right. How do you actually do this cold email right at scale? Like say, you're trying to email a thousand people a month.
+
+So to do that, you go find that email and then you would go and you'd validate that email with something called million verifier, which is an email validation software. Basically checks whether it's like, you know, like a valid email or DNS score. Exactly.
+
+Exactly. So, or, you know, if it's a catch all or do not send, right. And this, the reason you have to do this is if you send a bunch of cold email, it's like, like bad emails, it'll basically just like ruin the IP of that email address that you're sending from.
+
+And so it'll just ruin the reputation from a deliverability standpoint. So once I validated that email, I then go into something like instantly AI and I set up a cold email campaign. And I just literally, that I'm sending the exact same thing to all the creators.
+
+And I'm just saying like, I built you a merch store, right? Like that is the subject line. Yeah.
+
+And be like, you know, if they had like answer, yes, like just, uh, you know, respond yes. And I'll send you the link to the, to the store. Yep.
+
+And then like they respond, yes. You quickly build the store on the line. Yep.
+
+You quickly build the store and then immediately that turns into a lead. And then you basically have a business right out of this. That's it.
+
+So it's a great idea. Actually, this is like a really, really, really good idea. Yeah.
+
+Okay. Cool. Cody's proud of me.
+
+Cody's proud of me. Cody's proud of me. I'm a nobody, man.
+
+I just, I just see a lot of stuff, right? Just like you. So it's like, when you see good stuff, you're like, that is, that is, that's good content.
+
+And what's going to happen is like, this is what I do. Like, let's say someone with a million followers response says yes. And then I send it to him and then they like, they say, sign me up.
+
+I send him a contract. He signs up and now I'm crunching my numbers. I'm just like, all right, I just need 1%, 1, a $15 profit per shirt.
+
+I get 5% of that. Yeah. I'm going to make a hundred thousand dollars a month.
+
+And then you launch and you make like $2,000 a month. And then you're like, huh? And then you're like, I'm making $2,000 a month.
+
+Like from a cold email, just for my time. Just like, I just, I just typed in the right words on my keyboard and I created $2,000 a month. I just need to do that 10 more times.
+
+And I've got a quarter million a year. Like that's what happens. Like either in my experience, either you don't get anywhere close to your projections, but you still have an awesome business and you learn a ton or you 10X your projections and you're like, holy crap.
+
+So many more people want this merch than I ever imagined. I thought I'd make a hundred grand. I'm making 500 grand.
+
+You know, one thing to add is like, I would focus on creators that are long form too. I think that short form creators don't have as much like per social relationship. And so like, I would go to, you know, all of these creators that have long form content where it's like somebody sitting down and spending an hour listening to you talk, right?
+
+Like, and they're doing that weekly. Like you're basically brainwashing them over a 90 day period. Like if they show up for 98 or they go and binge your whole back catalog.
+
+All right. You're in luck because Cody is coming back on in a week. So be sure to subscribe, share with a friend, and we're going to chat all things, AI business ideas.
