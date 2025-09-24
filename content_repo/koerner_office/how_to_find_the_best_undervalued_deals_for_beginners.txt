@@ -1,0 +1,335 @@
+Holy cow, that's almost 50% response rate. Every time I do it, it just shocks. I now have a relationship with 129 people that I didn't have a relationship with 20 minutes ago.
+
+That's the best when you can get to a price before even getting them on the phone. If they're easier to find, then they're easier to find good deals because you have more deals to pull from. When they say no, the more it actually means yes.
+
+And so I just look at it as like every word they have to read is another piece of friction between them and a close. Some of my most popular videos ever here on YouTube like this, this, and this one are when I simply hit record on my screen and build or start a business in real time live. I love doing it.
+
+You guys love watching it. And so you're really gonna love this one. But instead of starting or building a business live, I went from zero to having several amazing real estate deals on the hook over the course of minutes.
+
+And I bear all soup to nuts, how to scrape the leads, how to text the leads, how to talk to the leads. I get on the phone with them, put them on speaker, share my screen. And the more leads you reach out to, the higher the chance of getting 100% seller financing where you put no money down.
+
+So if you have ever been interested in buying real estate or buying an existing business, and you wanna find these leads off market where all the best leads are, and you wanna do so very fast and creatively, this is the video for you. Please excuse the poor audio and video quality on this video, but I'm confident that the quality of the content will more than make up for it. I didn't have my fancy professional equipment when I filmed this, but you're gonna love it.
+
+So this is Outscraper, and I wanna show you how I use Outscraper, but then I didn't wanna have to wait for it to scrape. It's very quick. It's very cheap.
+
+It's not real estate centric. It's Google Maps centric. And so if you want more results, I would recommend doing the Reonomy trick.
+
+It's actually interesting because Reonomy is real estate first, but the data isn't quite as clean as this data. But this data isn't real estate first, so there's not as many leads. When you log into Outscraper, you just go to Google Maps Data Scraper.
+
+I'm just gonna look at RV parks right now because they're easy to get a hold of. So I just type in RV park, and this is an actual category within Google Maps. And then I picked a random state that I didn't think that any of you guys would be buying in, South Dakota.
+
+You can't do it by county, but you can do it by city and by zip code or by state. So it preloads all 50 states. Just close that out, and then go down here and check South Dakota.
+
+And then it's always a good idea to cap your results just so you don't accidentally spend a bunch of money. I capped it at 500, and then it's probably a good idea to get all the data you can because it's a difference of pennies. You might as well.
+
+I would check emails. I would wanna know the owner of the phone numbers. Might as well get company insights.
+
+Might as well validate emails. That'll help skip a step. I would not check the box to ignore without emails because we prefer phones.
+
+And I would not check the box to delete email duplicates because phone first. That's our whole strategy is phone first. Go to advanced parameters.
+
+I would delete duplicates because that way you don't have to pay for them. And then right here is nice because you can choose the columns in the CSV that you want to scrape. Like I don't need to know the latitude and longitude.
+
+It'll just slow me down. It's just more data to sift through. So I prefer name, name for emails, which is just basically a second data source for name.
+
+The category, which is the Google Maps category. Because sometimes I'll choose RV parks, but for some reason it will give me like an RV dealership. And so that way I can very cleanly scrape those out.
+
+And then you type. I think that's just like a subcategory. Phone, address, street, city, postal code, area, state.
+
+We don't need both of these states. It's the same country. I like to see their rating and reviews because that gives me a good idea of how good they are or how long they've been around.
+
+Link directly to the reviews here. Number of photos. That also tells me how much they care about their park.
+
+How invested are they in their GMB profile? This verified is actually important because Google will automatically scrape like Manta and local records, and they will add businesses to Google Maps. And so if it's an unverified listing, it means Google added it, but the owner has never done anything with it.
+
+Those are pretty good because a lot of times those are very under the radar parks. So I want to know if the owner has ever claimed their park. Owner ID, I think that's just a numerical score.
+
+Owner title, owner link. We don't really need the carrier name. We do need the carrier type.
+
+We want to know if it's a landline or a cell. And then these are like three different email options here. You don't need all this, you know, Reddit, Medium, Skype stuff.
+
+Basically, the further you get down this list, the less relevant it becomes, right? The 80-20 of this is we want the park name and we want the phone number and the email because the owner's name is likely to be missing or inaccurate, which you'll see in a minute. If I were doing this fresh, I would click get data and then it's going to give me an estimate of how many it will scrape.
+
+That's always inaccurate. I would just ignore it. It says 500 because that's what I said as the limit, but it doesn't really know.
+
+So this will cost me 10 bucks and take seven to 25 minutes, but I've already done this exact search. So I go back to tasks and I'm going to download this. So it looks like it got all 500.
+
+And I'm just going to put this in Google Sheets so we can all stay in the browser. Oh, here's a little quirk. You might cringe at Google Sheets.
+
+If so, just use the spreadsheet. If not, for whatever reason, there's a formatting quirk on the phone number, which is like the most important data point. You have to get rid of the plus one space in the middle of all these phones.
+
+So I just do a find and replace all and then I'll get rid of the dashes too just to keep it standardized. So once I do that, then I'll copy it. All right.
+
+So go ahead and filter this. It gave us the phone enricher. We don't really need that.
+
+I'm going to delete that. We do need that. See the category and type right here?
+
+It's like, it looks like it's the exact same thing. So you really don't need both of those. Owner ID, don't need that.
+
+This column is for like, if it's service area or a physical retail location. These are physical locations, obviously. So we'll delete that.
+
+South Dakota. Rating and reviews. Reviews link.
+
+Number of photos. Look how interesting this owner verified is here. We've got 500 parks.
+
+It's almost 50-50, which is really good. I want more owner verified. Yeah.
+
+Two, 259 unverified. That's really surprising to me. If we were to run a search for like dentists, it'd be like 98% verified.
+
+And you can also see on all the false ones, there's no data over here because they don't have as much data. Whereas on the owner verified ones, I think this is just a link to the listing. All right.
+
+So now one of the most important things here is the type of phone number. And Outscraper is not great at telling us this. So we want to know every phone number.
+
+And so I use two tools for this that I referenced. One is searchbug.com. It's fast.
+
+It's cheap. It costs like 10 bucks. But what's better than 10 bucks?
+
+Free. And so I use Sly Broadcast. And so Sly Broadcast is a ringless voicemail provider.
+
+But as part of their ringless voicemail service, they will validate your list for free. So you don't have to pay anything at any time if you only want to get your phone numbers validated. So you do have to do this right because Sly Broadcast doesn't like a ton of different columns and they don't like blanks in your data.
+
+And so I want to only upload my phone numbers or my listings that have phone numbers here. But what Sly Broadcast will do is it will keep everything in the same order. And so I'm going to just throw these in a CSV, delete the header.
+
+So we've got 387 phone numbers. And then you go to manage lists. Create a new recipient list.
+
+Doesn't matter what you call it because you're not going to refer to it again in here. You can paste them in here or you can upload it. It will let you attach a one second column so you can reference the phone numbers.
+
+But it's given me issues in the past. So I just upload the phones is all. And then like magic, it literally takes three seconds to process hundreds.
+
+You just click on these three dots and you click download. So if I do it too early, it won't have finished all of them. So I usually wait a few seconds and then I'll download it.
+
+So voila. And so I'm going to go back here. So take these and I just want to make sure that they're aligned right.
+
+And so I'm just going to kind of do a cursory glance. Oh, and they're not. Oh, okay.
+
+Yep. There's duplicates. That's why.
+
+So I'm going to remove the duplicates. That's what will really screw you up. Remove the duplicates by phone.
+
+But this is tricky though because it's going to delete all of these ones that don't have phone numbers as well. So I'm just going to do this. Duplicated the sheet.
+
+Remove duplicates. I guess I could have just highlighted that. All right.
+
+So now that I removed duplicates, I'm going to delete that sheet. Now we're left with 452. And so I'm basically going to do that whole process.
+
+Slide broadcast again. So I'm basically going to do that process over again. All right.
+
+So I'm just looking. I'm making sure they all align. Numbers are the same.
+
+Now, if you look anecdotally at search bugs that these were, it's mostly the same. But slide broadcast just fills in all the gaps. So I'm going to delete this column altogether because it's less accurate.
+
+And I'm going to delete this column. And so this percentage will probably be constant throughout the country. So we started with 500 and we're left with 129 cell phones.
+
+So 26%. So you can just kind of expect whatever you scrape, a quarter of them are going to be cell phones. Right.
+
+So now, I'm only going to focus on the cell phones here and I'm going to start texting them. So before I do that, let's start looking at the type of personalized variables that we're going to upload in our text. So I usually use the street name or the city name when I'm referencing something in a text.
+
+That can be problematic if whatever you scrape is missing data on one of those two. But every one of these has a city name. So there's nothing to clean.
+
+So that's great. And almost every one of them has a street name. So if you do reference the street name, there are some weird things like it will add in a plus here.
+
+So you'll want to do a find and replace if there's like a weird character. But these look pretty good. And so I'm probably just going to reference the city name.
+
+And look, some of them are in Minnesota or Nebraska for whatever reason. All right. So this is going to be what I upload to the texting platform.
+
+All right. So this is the platform that I prefer. I would get going on creating an account here because it can take a little while.
+
+You might want to try creating an account at slytext.com and cinchmessagemedia.com as well. Just to hedge your bets. If you want to start texting like today, then you can use Porterhouse as well.
+
+That's the app that allows you to text in blue like an iPhone. So if we're using this, I'm going to go to contacts and then lists and then new list. So I'm going to call this South Dakota RV Park 1 create list and then I'm going to click import.
+
+I'm going to add it to that list and I'm only going to import the columns that matter to me. So these are kind of the personalized variables that come standard. It doesn't matter which one you use.
+
+You just have to remember it. So I'm going to pair the first name with the city because there is no personalized variable for city. So I just need the phone number and the city in this case.
+
+If we wanted to get really granular and we were texting a thousand, I would pair like as much as I could. That way I could keep my data really clean in whatever CRM or Google Sheets or Excel that I was using because we're going to get a lot of interested parties and it's going to be hard to keep things straight. So phone in city, no advanced options, click import.
+
+We're good. These automations are pretty cool because you can basically have the software auto reply if they say something. So like if they say yes, then reply with awesome.
+
+I'm looking for RV parks in the area. But like I don't recommend that because I don't think anyone's trying to buy 10 RV parks a month here. I definitely recommend more high touch.
+
+So but if you if you do want to cast a wide net, these automations work well, but you have to be really careful because you'll forget to pause them and then you'll send another campaign and then you'll just start sounding like an idiot and sending all kinds of ridiculous stuff. Ask me how I know. All right.
+
+So now we're going to we're going to send a message. We're going to go to new message. You can have multiple phone numbers really easily.
+
+I use this one for most everything. And then here I'm going to go search contact lists. Go to this one.
+
+So you will you'll pay two credits if it goes over 160 characters, which is great because it's a forcing function to keep your message short anyway, because shorter always perform better. If I were local, I would put the word here because that makes all the difference. It insinuates that you are there, but I'm not.
+
+So I won't. But you will have better results if you put the word here. All right.
+
+You know, I'm always talking about data, the numbers that actually matter because you need data to grow and you need to grow to make real money. Beehive is the newsletter platform that I've used for over a year and a half because of their data. Well, for multiple reasons, but especially because of their data.
+
+Yes, most platforms will tell you someone opened your email. Cool. But Beehive tells you everything.
+
+Engagement drop off, which links people ignore and which ones they click again and again. What keeps readers scrolling? You get real time subscriber insights, A-B testing results, even predictive analytics measures.
+
+It's like having your entire subscriber base give you feedback live and you can set up automated sequences, welcome emails, re-engagement campaigns, all based on that behavior because the truth is if you can't measure it, you can't improve it. And Beehive shows you what's actually happening. So head to beehive.com slash Chris for 30% off three months.
+
+That data will change how and what you write. The best results come when you're willing to play the long game and just seek to start a conversation on the first message as opposed to ask them right up front if they're interested in selling. So I'm going to say so yeah if I put the word here right there it would do a lot better.
+
+But what's really cool is you can see a preview. You really want to check this to make sure that you don't screw up that personalized aspect. The reason I'm not putting RV park is because it could be a mobile home park.
+
+So park covers all. So I always just use park even if I'm searching for one of the two. I'm going to go ahead and send them all at once.
+
+So we ready? They go out all at once. Look at that.
+
+Four responses. How fast is that? Every time I do it it just shocks me.
+
+I mean it's only 129 people and we already have a 10% response rate. It's crazy. I should have throttled it but it belongs to the city.
+
+Always has. So a lot of times I'll just start looking like this person in Quinn. Campground.
+
+Okay that's interesting. Benju Quinn. This is surprising even for me.
+
+This person's responded four times. One thing I don't like about message media is it's kind of clunky. It's kind of hard to keep track of unread and read and who you're talking to.
+
+If it looks somewhat promising get the data out of here to something else. I mean 23 responses. That's crazy.
+
+So let's type up a response and then I'm going to copy and paste it. So all right let me start sending a response here. So I want to establish that I'm qualified to buy a park and that like I can meet them in person.
+
+So I'm just going to send this to everyone that said yes and then we'll come back and see what they say after that. seeing like sometimes it will show as unread when I already responded for a minute. So it's a little quirky.
+
+This is the number for reservations for Fifth Street RV. So that could be like a property manager. Another that's probably a property manager.
+
+Look how accurate this data is though. Like this is the first person that said we never did and they do own a campground. So that seems to be like a campground campground.
+
+Not really what we're looking for. So this person said no. They don't want to sell.
+
+So I could say let me know if that changes. Because even like they said no. They didn't ghost me.
+
+All right. I think we're almost through them. Give me a call.
+
+I don't do business over text message. Okay. I will.
+
+I like to do a little more research before I call them so I don't sound like an idiot. Okay. So Buckshot Resort.
+
+Let's look up Buckshot Resort. Oh, it's on the water. Literally off the reservation.
+
+What is going on? I wonder if this is just old Google Maps data. All right.
+
+This could be it right here. A lot of times it's just wrong. Well, it's got a website.
+
+Oh, that's got some good pad sites. Looks full. It's really full.
+
+Pretty bad roads. It's nice though. You got the water right there.
+
+Bunch of trees. Very shaded. It's kind of an interesting model.
+
+Full hookups. 2,500 bucks for the season and offshore spots are 2,000. That seems so cheap.
+
+Even at six months, that's 400 bucks a month for a lakefront spot. I mean, 200 a month for a year. I like this part.
+
+I like to go look at their social media. 900 followers. I mean, I bet this thing stays full.
+
+They're posting regularly. All right. So do a little more research.
+
+They don't have any reviews. So that tells me it's not a private equity guy. All right.
+
+Let's do it. Hey, is this the Buckshot owner? Yeah, this is Shane.
+
+Hey, Shane. This is Chris. We were just texting about your park.
+
+Oh, sure. Okay. How are you?
+
+I'm all right. Good. Yeah, I know this is random, but I live a few states away in Dallas and I buy RV parks all over the country.
+
+And I thought yours was awesome. You're right on a lake. You're in South Dakota.
+
+I went there with my family a couple of years ago. It was not as bad as I thought it was. And yeah, I just want to learn more about it.
+
+What would you like to know? Well, how long have you owned it? Did you build it or did you buy it?
+
+Oh, so it's on family land we've had for over a hundred years and we've had kind of a primitive or rustic campground out there for about 20 years. Last year, we went ahead and renovated and put in all utilities, you know, water, sewer, electric. So it's our second.
+
+This will be our second season full time. Oh, okay. I bet you've owned the land for 20 years.
+
+Oh, geez. Okay. So you're from the area then?
+
+Yeah. Are you, do you live there on site? Are you managing it?
+
+I do manage it, yeah. Well, only seasonally I'm around, but typically in Arizona for the rest of the year. Okay.
+
+And how full does it normally stay? We're strictly a seasonal model at this point. And so we're somewhere probably 85% full.
+
+Okay. How does that compare to last year? I think we're plus six this year.
+
+Okay. And it's like 2,000 to 2,500 a year? Yeah, 2,500 on the shoreline, 2,000 off.
+
+And does that include any bills, any utilities, or is that extra? Water, sewer, and then garbage are included. Electric is 10 to pace, camper pace.
+
+And how many pads were there? I couldn't, I couldn't glean that from your website. Um, yeah.
+
+Well, I know you're trying to run some numbers here in your head and do some math. So before I give you the keys to the castle here, I guess I probably should find out a little bit more about you first and what we're doing here. No, I don't blame you at all.
+
+Yeah. So my name is Chris Kerner and I've been buying mobile home and RV parks since 2019. And I also have a newsletter about it.
+
+Um, and I tweet about mobile home and RV parks, believe it or not. And I just love it. I started in single family back in Alabama, 2010, moved to Dallas a decade ago.
+
+And, um, I just, I bought my first RV park in Southern Oklahoma and I fell in love. And I just, I don't know why people buy single family at this point, because it just seems so much more efficient. Yeah.
+
+A lot less, uh, a lot less operational overhead. I would suggest. I mean, clearly the south is, uh, a little bit stronger, uh, year round, you know, we're, we're kind of limited up here to about a six month timeframe, but yeah, that must be nice.
+
+I can't imagine, you know, turning off my phone for six months. It's not a bad deal. Yeah.
+
+So I, I buy parks individually and then I buy bigger campgrounds, um, as part of a fund as well. This one I'm more curious about personally, as opposed to with my fund. Gotcha.
+
+What's a standard offer on something like this? Yeah. So usually I, how, have you been in real estate for a while?
+
+You familiar with cap rates and all that? A little bit, yeah. Yeah.
+
+So I try to buy at a bare minimum, 10% cap rate. So you take your net operating income for the year, divide it by your potential purchase price. So making a hundred grand a year in net profit, I try to pay under a million for something like that.
+
+Um, but there's a lot of different variables. Like maybe your rents are way under market. And if I know that I can bring them to market fairly, then I could pay a little more for it.
+
+Or if there are other kind of levers I can pull. If you had paved roads, I could pay more. Uh, I, I like that you already have, are you on city utilities or well and septic?
+
+We've, uh, septic. Okay. I mean, we're probably, I mean, from the actual closest town, I mean, it's 20 miles, so.
+
+Okay. We wouldn't come in to us, which, um, yes, full water. Yeah.
+
+They're kind of shut down right now. It's currently low water. Gotcha.
+
+Yeah. So that's, that's kind of who I am. You could look me up online.
+
+I'm kind of weird, but I'm not a scammer, so. Well, yeah, that's, I mean, I tried recalling the number when I got the text because I normally don't, you know, I, if I, if I engage and text with people about the campground, it seems like I'm texting for weeks and I really don't have time for that. So I prefer to just place a phone call, get it over with.
+
+Um, but it was weird that it definitely didn't ring through. That was a little abnormal. When I called just now?
+
+Oh, yeah. Well, the reason is because I use software to send the text and then the number I'm calling from right now is my iPhone. So that's why.
+
+Gotcha. Gotcha. Okay.
+
+Well, um, I guess I got your info here. I think the, the land itself is, is definitely worth probably more than what you're going to factor in from a, you know, rate of return on the rents perspective, but. How much land?
+
+Uh, I think, well, we're, uh, in the process of, of adding another 20 seasonal spots. I think that would probably, you have to count this, probably, I don't know, around 20 acres, something like that. Okay.
+
+And then your park's using like a, maybe what, 20% of that? No. So we are, uh, what are we now?
+
+We're about 12 acres, I think. So we're adding another eight to it. It's just still land.
+
+It's just, we, uh, ran out of shoreline spots. Those have been booked last year and this year. So those were seemingly going faster than the offshore.
+
+So we just decided to create some more onshore. Okay. I mean, technically we probably have a mile and a half of shoreline.
+
+It's just as, uh, as they, uh, continue to express interest and waiting list grows, then we just build out, I guess. But the new stuff doesn't have, uh, kind of mature overhead tree cover that the existing does. Okay.
+
+So we'll have to be planting there, but. So how big is the total parcel? I mean, if you have a mile and a half of shoreline, that's a ton.
+
+Yeah. I mean, we've got, I mean, farming and ranching is our typical or go to, that's our, that's our moneymaker. This is kind of a side gig for us.
+
+So I don't, I mean, we've got over, I don't know, two or 3000 acres, something like that, but, but only a portion of that obviously is shoreline. Okay. Well, yeah.
+
+I mean, if you ever decide to sell and you want to talk prices, I'd love to chat. Yeah. We can, uh, I've got a, I'll, I'll get with a partner of mine here and see where we're, see what our thoughts are.
+
+I don't know. I mean, it's nice to have mailbox money at this point. Um, you know, so we'll see if we're willing to part with anything or, you know, money always talks.
+
+Sure. Okay. This is my personal cell phone.
+
+So if you want to save it, um, I can text you my, my first and last name, if that helps. And we can, I'll do a little bit of a Google search here and make sure that I'm, you know, not giving away too much information to do a competitor or something of that nature. Yep.
+
+I don't blame you. Yeah. I appreciate the call here and, uh, yeah, go ahead, send that over and we'll take it from there.
+
+Okay. Thanks, man. Yeah.
+
+Bye. Bye. Bye.

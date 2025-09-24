@@ -18,25 +18,20 @@ from ...core.retrieval.hyde_retriever import HyDERetriever
 from ...prompts.hyde_prompts import HYDE_PROMPTS
 
 
-class MockLLM(BaseLLM):
+class MockLLM:
     """Mock LLM for testing"""
     
     def __init__(self, response="This is a test response"):
-        super().__init__()
         self.response = response
-    
-    def _call(self, prompt: str, **kwargs) -> str:
-        return self.response
     
     def invoke(self, input: str) -> str:
         return self.response
     
-    @property
-    def _llm_type(self) -> str:
-        return "mock"
+    def __str__(self):
+        return "MockLLM"
 
 
-class MockEmbeddings(Embeddings):
+class MockEmbeddings:
     """Mock embeddings for testing"""
     
     def embed_documents(self, texts):
@@ -46,11 +41,10 @@ class MockEmbeddings(Embeddings):
         return [0.1, 0.2, 0.3]
 
 
-class MockVectorStore(VectorStore):
+class MockVectorStore:
     """Mock vector store for testing"""
     
     def __init__(self):
-        super().__init__()
         self.documents = [
             Document(page_content="Test document 1", metadata={"source": "test1"}),
             Document(page_content="Test document 2", metadata={"source": "test2"}),
@@ -59,6 +53,12 @@ class MockVectorStore(VectorStore):
     
     def add_texts(self, texts, metadatas=None, **kwargs):
         return ["doc1", "doc2", "doc3"]
+    
+    @classmethod
+    def from_texts(cls, texts, embedding, metadatas=None, **kwargs):
+        """Required abstract method implementation"""
+        instance = cls()
+        return instance
     
     def similarity_search(self, query, k=4):
         return self.documents[:k]

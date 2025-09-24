@@ -1,0 +1,259 @@
+The craziest AI image editing tool that the world has ever seen has just dropped thanks to Google slash Gemini. It's called Nano Banana. And yeah, editing pictures is cool, but starting businesses based on editing pictures is even cooler.
+
+So throughout the course of this video, I'm going to walk you through soup to nuts, A to Z, exactly how to use Nano Banana, how to vibe code an app that can edit pictures with Nano Banana without any coding experience, because I don't have any, and then how to scrape leads of potential customers and text them pictures that you edited for them on their behalf without their permission to get your foot in the door so they can become a customer of yours and pay you a lot of money every month to add value to their life. So let's get going. There are 2 million real estate agents in America, and about 70% of them list homes for sale that either have bad pictures or pictures of homes that aren't staged.
+
+And that's a major problem because homes that are staged, as in homes that have furniture and decorations and everything in it, when the pictures are taken, sell 73% faster than homes that are not staged. Furthermore, homes that are staged when they're listed for sale sell for 6% to 10% more. We're talking about tens and hundreds of thousands of dollars of additional value for staging a home.
+
+Okay, so that's the problem. That's the pain point that we're seeking to solve today. And now with Nano Banana, we have a solution.
+
+Here's what the idea is. I'm going to use a vibe coding tool that uses Nano Banana on the back end to attach a prompt to a picture that is pulled from a home that is listed for sale on Redfin or Realtor.com. It's going to edit that picture according to my prompt.
+
+And then I'm going to proactively send that edited picture to the realtor that has that listing. How's the picture going to be different? Well, if they're not professional pictures, I'm going to use Nano Banana to make them look like they were taken with a DSLR expensive camera.
+
+Or if they are professional, but it's not a staged home as in the interior photos have no furniture, no decorations, no artwork, I'm going to have Nano Banana add all that. And then I'm going to proactively give these pictures for free to the listing agent. That's my foot in the door to get his or her business for all of their listings, both present and future.
+
+Now, as long as your prompt is not too complex, which mine will not be, it costs about 3.9 cents to edit one picture. If a listing has 30 pictures, 10 of them are interior photos, it's going to cost me 39 cents to edit all of those pictures for the real estate agent. Now, if I educate that real estate agent and say, Hey, what if I could charge you a buck per photo to make your home look staged or to make the photos look like they were taken with a DSLR camera, that is the asymmetric bet of the century.
+
+You've got a 96% profit margin because you're charging a dollar and you're paying 4 cents. They're only paying you $20 to increase the likelihood of their home selling faster and or for more money. What do they have to lose other than $20?
+
+And yes, I know what you're thinking. That's not enough money. We need to charge more.
+
+Don't worry, we will. I'm a capitalist. You're a capitalist.
+
+We're all on the same page. But I just want to prove that realtors are willing to pay for this service. All right.
+
+So without further ado, let's go ahead and build this app. It's going to be a web app only used by us for now. And I'm going to use Lindy to build it.
+
+I use Lindy for my AI automations, but they just added a vibe coding feature that I'm really loving. So let's do it. Here's my prompt.
+
+Use Gemini's Nano Banana API to build a very simple web app where I can upload up to 30 photos plus a prompt to have the pictures edited. And then I can download the photos to my computer. I'm going to click the build apps button and we're off to the races.
+
+While that builds, I want to show you two very cool things. First of all, here's what Nano Banana is capable of. I took a random picture of Zillow.
+
+I said, make this picture look more professional. Boom. Suddenly, this house has beautiful green grass.
+
+Okay, not bad, not bad. Then I found another home that has a picture of this ugly living room with no furniture, no artwork. It needs to be staged.
+
+This is how simple my prompt was. Stage this room to look fully furnished and decorated. I know you didn't see it happen.
+
+You're going to have to trust me. It took four seconds to spit out this picture. Boom.
+
+Look at that. And it's the same room. It didn't hallucinate.
+
+It's got the weird tile on the floor right there. It has the opening on the right. It has the window in the middle.
+
+How much better does that look? And yes, potential buyers of these homes are going to be looking at pictures that make the home appear staged with furniture and artwork. And it is not actually staged in real life.
+
+And yes, that's a bait and switch. But you know what? It doesn't matter.
+
+If I'm a potential home buyer and I see a beautiful home that looks staged and then I go see it and it's not staged, who cares? Am I going to get mad at someone? No, but I'm going to be more likely to go tour that home because it looked more beautiful because of the furniture in the picture.
+
+So don't overthink it. Overthinking is the enemy to just launching. Lindy asked, what specific types of photo edits do you want the prompt to support?
+
+What file format should be supported? And do you need any specific styling preferences on this app? And I said, I'm going to be adding furniture to photos of empty rooms, all the common file types, clean modern design.
+
+All right, we're going to time Lindy to see how long this takes. It's 438 right now. Okay, so I hopped over to chat GPT five real quick.
+
+And I said, which real estate website has the easiest API to work with? If I'm vibe coding a web app that will pull pictures from listings. If you're over here wondering like, what is an API?
+
+What is your, don't worry. An API is just a language that software uses to talk to each other. If you get a notification on your phone, that was probably powered by an API.
+
+And you don't need to know what it means. You just need to know how to type it into your vibe coding app. Okay, while Lindy builds this app, I'm going to scrape some real estate agents phone numbers.
+
+Okay, I'm here now scraper. I'm going to go to Google, Google Maps data scraper, real estate agent. I'm going to go Oklahoma.
+
+Let's go Oklahoma City 1000 max results. All I care about is the phone number here. Okay, says it should take seven to 25 minutes.
+
+Okay, Lindy has a rough draft of what we're building here. Furniture room editor dot Lindy dot site. It's asking me to do something weird with my API key.
+
+So I'm going to have it just integrate that feature into the app. All right, here's how we get the API key. We are at AI studio dot Google dot com slash API key, we're going to click create API key.
+
+And my editor is going to blur this out. So you don't make my life difficult. I'm going to create one in a new project.
+
+Okay, there it is. That's it. That's how you create an API key, you click create API key, then you click copy.
+
+That's it. As technical as this gets. Okay, Lindy said that it added a field for my API key.
+
+Obviously, this is not long term scalable. I don't want it out there in the public. This is literally a private password that should never be shared.
+
+But honestly, I'm just trying to make a quick video right now and build a quick business right now before I go to a yummy Thai restaurant with my wife for our standing Saturday night date. So we're going to make this quick. Okay, here's what Lindy gave me.
+
+There's my API key. Cool, cool, cool. Let's add some room photos.
+
+I'm going to go to Oklahoma City on Zillow. Okay, and I'm going to try to just randomly find a home that doesn't look like it has professional pictures. Oh, got him.
+
+That home needs some work. Oh, you know what? Let's throw a curveball real quick.
+
+Instead of taking an empty room and staging it, we're going to take a messy, ugly room. Well, we want to keep it ugly because it's going a little too far if we make an ugly room beautiful, because that is a definite bait and switch and people will go tour the house and not be happy. But we're going to take a messy room.
+
+I've never tried this. It's the first time. We're going to take a messy room and make it clean.
+
+How about that? Okay, save image. You know what?
+
+Let's do it with two photos because our app is supposed to do it with up to 30. So there's a lot to work with here. These are messy rooms.
+
+It's terrible photos, bad lighting, etc. Okay, so we'll try it with two pictures. Go back to Lindy.
+
+Here's my prompt. Make these bedrooms appear more organized and less messy, but don't change the color of the floor or walls. It still needs to be the same room.
+
+Make the pictures appear like they were taken with a DSLR with great lighting. How cool is this? So I upload the photos and then there's a preview right here.
+
+I've got my prompt. I'm going to copy that just in case it glitches on me. And the submit button says add furniture to rooms.
+
+Now I'm throwing it for a loop because that's not what I'm asking it to do. But let's see. Okay, it went really fast.
+
+It took about a second per photo, two seconds total. Either it glitched out or it's just really fast. Downloaded a zip file.
+
+All right, here's what it did. Drum roll, please. Oh, didn't change anything.
+
+The pictures are the exact same. But at least the core functionality works. It just appears that it's not actually using the API because nothing changed.
+
+Let's go ahead and do the same prompt within Nano Banana. Upload the same two pictures and see what it spits out. There's a good lesson in this.
+
+You're building a business and you hit some friction. You will always hit friction. There will always be problems to overcome.
+
+You can go one of two ways with it. You can find a plan B, a workaround, something not as good, not as scalable, but it keeps the momentum going, keeps the progress. Or you can just say, meh, I'm going to look at Instagram or next onto the next.
+
+No, stop. Keep it going. Do things that don't scale.
+
+Believe it or not, 67% of the people that watch my YouTube videos don't subscribe to me. And over 90% think that they're subscribed to me. So do me a quick favor and check that you're subscribed to me.
+
+If you're not, please do. It would mean a lot. All right, this is a little embarrassing.
+
+I'm not going to lie, but I figured out what was happening with all these bugs. It wasn't using my API because my API wasn't ready to use yet. I had to connect billing.
+
+Took three clicks. Now everything's working. I redesigned the app a little bit.
+
+I made it more simple. Okay, here's what we're working with. Let's try this.
+
+I'm going to upload a picture. I'm simply going to say add furniture. Now this is my app.
+
+I just built this. Process. Okay, took about 12 seconds.
+
+And look what it spit out. Click to view isn't working, but whatever. Download it.
+
+All right, there we have it. It's gorgeous. It furnished the room.
+
+Okay, so my app is working. Now we're going to go back to Outscraper and we're going to look and see if it's done. Done.
+
+Awesome. Okay, cool. Now we're going to download it.
+
+Okay, let's go ahead and open up this data in Google Sheets. All right, here we are. I'm going to delete all of the columns that I don't want or need.
+
+I don't need any of this stuff. I want the name, the address, the phone number, the type of phone number, and good to go. All right, we only want cell phone numbers.
+
+We're going to highlight all these. Going to delete everything except mobile. And we're going to delete everything that is unclassified.
+
+Okay, we are left with 562 real estate agents in Oklahoma City that have cell phone numbers. I no longer need this column because I know they're all mobile. I want to remove the duplicates, data cleanup, remove duplicates, data as hetero.
+
+Boom. Cool. 542 left.
+
+Awesome. Let's go ahead and remove the plus one and space from these so they can all be standardized. Awesome.
+
+Cool. Okay, now what we need to do is get all of these leads out of Google Sheets and into a CRM like HighLevel. I've used HighLevel for years.
+
+I love it. It's way cheaper than HubSpot and it can do a bunch of other things as well. Okay, here's the leads.
+
+Remember, we've already scrubbed them. We've deleted most of the columns. We're just going to hit file, download, CSV.
+
+Then we're going to go into my HighLevel account. We're going to click Contacts, Import Contacts. Next, click to upload.
+
+Boom. We got to map them all out. Name, phone, street address, city, postal code, state.
+
+Cool. Easy enough. Next.
+
+Now, very, very important part of this process. I need to check this box, Add Imported Contacts to a Workflow. I'm going to show you that workflow in a minute.
+
+It's not hard to set up. Check the box and then I'm going to go to the workflow that I already set up for the purposes of this business, of this video. Real Estate Staging New Lead.
+
+And I'll show you how that works in a minute. Okay, very important that I do this correctly. I need to add tags to these imported contacts.
+
+I created a tag called Real Estate Staging. That will help me separate these contacts from other contacts I have in HighLevel that I'm using for other initiatives. And now this specific tag is tied to a specific pipeline workflow, which I'm about to show you.
+
+So this tag is not just to keep me organized, but it's to trigger an automation, which I'll show you here in just a sec. Start bulk import. All right, now I'm going to click on Opportunities.
+
+And then I'm going to hit this drop down here and go to Real Estate Staging Pipeline. Boom. Now you can see them coming in.
+
+Remember, I uploaded about 450 something. Here they are. Okay, now I'm going to go find a home for sale in Oklahoma City that one of these realtors has listed.
+
+And I'm going to find one that has pictures that are not staged. Boom. Here we are.
+
+There was a $60,000 price cut, which means this probably isn't selling. And maybe it's not selling because the home is not staged correctly. I'm going to click on all the photos.
+
+Boom, boom, boom. I'm going to pick one. Cool.
+
+Let's pick this dining room right here. Save image as. Okay.
+
+Now this is a little manual, but we can automate this later. As much as I love showing videos how to automate everything, it's really not important in the early stages because oftentimes we get so caught up in automating and perfecting and over-optimizing everything that we never actually get to launch the thing. So automations and time-saving tactics can come later.
+
+So part of this is going to be done in a non-scalable way just so we can get moving so we can have some momentum under our feet. Okay, let's go into this app that I vibe-coded. We're going to upload the picture and I'm simply going to say add furniture.
+
+The most simple prompt ever. While this is processing, let's go back to the listing and see who the listing agent is. Brenda Hockle.
+
+Okay, awesome. She should be in our scraped list, but there's a chance she isn't. Let's check.
+
+Okay, boom. Picture's done. We're going to look at it right there.
+
+Looks a lot better. We're going to download it. Awesome.
+
+Now let's go back into our contacts. There's Brenda right there. Perfect.
+
+Click on her name. We're going to scroll down here. Click on additional info.
+
+You can see a ton of custom fields in here. File upload. There it is.
+
+Real estate staging. That is the custom field that I added to all of these contacts. That is also a trigger.
+
+When I upload a photo to this real estate saved staging section, it will trigger an automation to text that person. I'm going to show you how it works in real time. Upload a file.
+
+There it is. Click save. Okay.
+
+Look at that. Okay. That's a text.
+
+Me uploading that file triggered a text. Let me show you how and where and why that text message happens. We're going to click on automation.
+
+These are some of my workflows. Real estate texting setup. And look, total enrolled one, active enrolled one.
+
+That's Brenda. I just texted her. Click on that.
+
+Here's how it works. Contact changed. Real estate staging has changed.
+
+Okay. That's the trigger. That was me uploading the photo that triggered this SMS.
+
+Hey, first name. I saw your listing here on Zillow and notice you didn't have a staging setup yet. I went ahead and mocked up a demo.
+
+Interested more. Let's chat. And then it puts in a link to the picture and then it will connect it to an opportunity, which basically turns it from a contact to a warm lead.
+
+And here's how I have the settings. If you want to pause it and copy those. Now, when this happens, it will also update the pipeline, which I'll show you right here.
+
+You go back here, opportunities, real estate staging pipeline. Look at this. This is called a Kanban board.
+
+Companies like Trello and Pipedrive do this really well. And so as part of that workflow, it automatically moved her from just a new lead to a text sent. And then it'll go a step further.
+
+If over a certain time period, she doesn't respond, it'll go into no response. And then I will automatically follow up. If she does respond, then it will go into response.
+
+If she calls me or I call her, it will automatically go to called. And then as she proceeds down the pipeline, maybe I give her some free samples. Maybe I sell her a few pictures.
+
+Maybe she joins a monthly recurring plan for 500 bucks a month for unlimited revisions to unstaged photos. I can continue moving her down the pipeline and then I can assign a value to her as a lead or as a customer. So you can see the value of the total leads or total customers at any stage in the pipeline.
+
+Super cool stuff. If you click into the opportunity, you can create a task with automatic reminders. You can book an appointment through here.
+
+You can add notes. It's a CRM, right? But on steroids.
+
+And then if I want to navigate back to our conversation, our text conversation, I can just click that bubble right there and we're good to go. So that's a wrap. Nano banana is pretty incredible.
+
+It's kind of fun to say that. And it unlocks a whole world of new business opportunities. This is just one of thousands, but just like in your hometown, there's a dozen auto repair shops.
+
+There could, should, and will be hundreds, if not thousands of agencies out there one day doing little tasks like these. Nothing is too niche. Nothing is too small anymore.
+
+We're on a planet with 8 billion people and we're all connected by the internet. There could be a thousand of these agencies that just edits photos for real estate agents. And there'd still be room for everyone.
+
+If you want to take this a step further and you want us to do all the high level automations and pipelines and workflows for you, or even build a high level website for you, we can help you with all that. I have a private community for people that are serious about building or starting a business. It's called TK owners.
+
+You can find us at tkowners.com and it includes a $97 a month high level account. We have a master account. And so we can have unlimited sub accounts under us.
+
+So for $99 a month to be in TK owners, 97 of that is paid for. If you use any of these high level features, in addition, you get weekly AMAs with me, weekly AMAs with podcast guests that have had a Slack group with over 400 founders and founders to be in it. And all of these other features that you're going to enjoy the heck out of.
+
+So whether you join us at TK owners or not, no worries, just go do something, just go launch something. You can just do things. So do them.
+
+Thanks for joining on the Kerner office. Would love your subscribe and share. We'll see you next time.

@@ -1,0 +1,599 @@
+There's this guy CJ on Axe. He posted a tweet and said, and it cost me nine bucks on VOLT to do this. Then someone asked him, how much did you build a client?
+
+He was like, $9,000. Most people still don't know that they can actually build software without being a developer. You can literally go from not even having a website to accepting payments in like five or 10 minutes.
+
+Whatever software tool you use, replicate that in VOLT. Worst case, you save money for yourself. Best case, you resell that to others.
+
+People will pay so much money for a dashboard. Go start a dang dashboard agency. What are some prompting best practices?
+
+Show us how the average user with no technical knowledge can go from nothing to something on VOLT. This is the greatest time for entrepreneurs to be alive in the history of the world. Why?
+
+Because if you're marketing or business heavy, you probably don't know how to code. But now you don't need to know how to code. There are apps like Cursor, Replit, Lovable, Winsurf, Vercel.
+
+So many that are just vibe coding apps. Use natural language. Build a website.
+
+Build an app. I'm having the best time of my life. And so I'm on a mission to interview the founders of all of these businesses because I want to know from all of them what makes theirs different or unique.
+
+And most importantly, how are their users using their app to make money and to save time? What are the common use cases? Building an agency on top of it.
+
+Building apps on top of it for others. And what are the fringe, weird use cases that people can learn from? So today I had the founder of Bolt.nuon.
+
+His name's Eric Simons. And he opened the curtain on how people are using Bolt to build big businesses. They went from zero to $20 million in annual recurring revenue in their first two months because people like me are building really cool things on top of it.
+
+They didn't pay me to do this interview. I just think it's a cool app and it's one I use on a daily basis. Hopefully you can learn a lot from it.
+
+Please share with a friend. Okay, well, Eric, why don't you just start by telling us who you are and what you do? Hey, awesome.
+
+I'm Eric. I'm the co-founder and CEO of Bolt.nu, which is the fastest way to take an idea and turn it into a real web or mobile application. Okay.
+
+And what makes Bolt.nu different from other competitors out there? Totally. Yeah, I think with Bolt, some things only focus on like web apps.
+
+And so we kind of do web and mobile. And generally it's insanely fast to get up and running with something that looks, not just like basic, but really stunning. As far as your website or your mobile app.
+
+But really importantly, we really focus on the end-to-end experience of actually building businesses online. I mean, that's not just like a basic storefront, but having, like if you want to build a SaaS application or like a new AI application, having payments built in and be able to actually use different APIs and that sort of thing. All that is like integrated into this AI agent we've made.
+
+Yeah, it feels like a lot of the other bolts of the world are like, they're really cool party tricks and they're really cool for getting an MVP out there. Something that looks flashy, but there's not a lot under the hood. Either when it comes to design or functionality or accepting payments, as you say.
+
+Yeah, exactly. And you might be able to do it, but it takes a lot of like, of manual work to go and add those things in, right? So you're kind of back at square one then where it's like, well, you're kind of spending maybe as much time than as you would if you had started in an IDE on your computer.
+
+Whereas like with Bold, you can literally go, we can do a demo of this, but you can literally go from not even having a website to accepting payments on your app in like five or 10 minutes. And actually building a real application, like a course selling website or whatever have you. And that's crazy.
+
+That's never existed before in history to be able to create custom software that you can actually sell like that. What do you think that means for the startup ecosystem? Like that it's so easy, so frictionless, so affordable, like to zoom out a little bit.
+
+What does that mean for all these new startups out there? It's an amazing thing, right? Because the thing that's always been really difficult about entrepreneurship is that, you know, the best entrepreneurs tend to be the ones that have spent a lot of years building companies.
+
+And it's largely because, you know, you can't really go and take classes on how to do business. I mean, you can, but like, but you don't really learn a lot of practical skills on how to actually go and build products and sell products and everything that goes into starting a startup. And by, you know, being able to like go and take ideas and launch them into reality and get immediate feedback, that shortens the cycle, right?
+
+Of you actually being able to try and build a business and really accelerates the learning process for entrepreneurs. If you have to choose a single metric, like what's going to determine if an entrepreneur is going to be successful in starting a company, it's really just a, it's a numbers game. You know, if it's, how many hits at bat do you get on like building a product, getting feedback, entering on it, et cetera.
+
+If in my view, like this is the tool that my co-founder and I wish we'd had since he and I were 13 learning how to code together through all the things we've built over the past two decades, because it's, you know, you want to just be able to go and launch things, get feedback as fast as possible and iterate and adapt. So I think it's just an explosion of new things that would have never existed before. But I think we're going to see crops of entrepreneurs that, you know, are able to be successful far faster and often in many cases where they may not have been able to, you know, afford to just keep taking swings on products.
+
+On a scale of one to 10, how technical would you say you are? I'm reasonably technical. Yeah, I don't know, like eight or nine or something like that.
+
+So you have like a software engineering background? I do, yeah. I never went to college actually.
+
+But back, so my co-founder and I, he and I grew up down the street from each other in the summer of Chicago. And when we were 13, we learned how to build web apps together and we've been building, you know, startups and whatever have you ever since. And he and I have just been best friends for the past 20 years.
+
+When we went to graduate from high school, you know, we were looking at going to college and it was going to be like a hundred grand in state for four years. And we were like, this doesn't make any sense. Like we're already making.
+
+We can build stuff. What are we doing? Yeah.
+
+We were already making like 50 bucks an hour doing website contracting work or whatever. You know, when you're like 18, that's like meaningful. Six figures.
+
+Yeah, exactly. And so, so here's how this works. I make you free videos.
+
+I actually know what I'm talking about. I have no greasy sales pitch at the end. And if you implement what I talk about, you'll make a lot more money and have a better life.
+
+And all I ask for in return is that you hit the subscribe button and maybe even the notification bell just like that. Thank you. And this was very unpopular back in like 2010.
+
+But I think it's like the world's kind of come around to the idea that, okay, actually maybe forcing everyone to go to college and be in six figures of dad isn't the best idea for everyone at least, right? So. I applaud you.
+
+2010 is when I was in college and I've always been entrepreneurial. I didn't have to go to college, but I just had this nagging insecurity and maybe a nagging like future dad. I had my first kid in 2010 where it's like, oh, this is like a form of insurance.
+
+It's a good thing to do. I've got two college degrees. I've never used either one of them.
+
+I feel like AI is taking away all of my excuses, like my macro excuses. Because when I was in high school to, you know, early 2000s, I used to say, oh, why wasn't I born five, 10 years earlier? I could have been in the dot-com boom.
+
+I would have moved out to San Francisco. And then crypto comes around and it's like, I didn't buy Bitcoin until 2016, which seems early today, but seemed very late then. It's like, oh, why wasn't I in the right message board?
+
+I could have bought Bitcoin at five cents, you know? And now with AI, it's like, okay, Chris, where's your excuse? You're on the cutting edge of this.
+
+You're on Twitter. You see like when a new model or a new app comes out, you're right there using it. You have no excuse.
+
+And the other excuse I used to tell myself is I'm not technical. I can't code. If I could code, I would be, you know, that's my Achilles heel.
+
+If I could do that and market, you know, if I could be the marketer and the coder, I could build whatever I want. And now it's like, I can't. For the last like six months, I've been in these vibe coding apps all day and it is so much more wonderful than I ever imagined.
+
+I'm just loving it. I have an idea and I just build it. Instead of like going to my brother-in-law, who's really good at coding, like, hey, can you, well, I'm kind of busy.
+
+Like I can just do it myself. It's amazing. Yeah, it's huge.
+
+And like, and it's truly like, it's the tool that my co-founder and I wish we'd had because like I learned how to code. It was somewhat intrinsically interesting to like learn about programming, but to me, it was always a means to an end. Like I just wanted to build stuff.
+
+I wanted to build products. I wanted to build businesses. And, you know, if you're going to, if you're going to build digital based products, like you have to, you know, building software is, at least was a required part of that or knowing how to, you know, so I look at today and, you know, some people have this opinion of, oh, well, you know, people should still learn how to code.
+
+Like it's, you know, I mean, and not, I'm not saying you shouldn't by the way, but people, there's kind of this, oh, but we're losing something. Like we also don't speak Latin anymore. Right.
+
+Yeah. Things change. Like the floor of complexity will kind of go away and meaningfully drop the bar on what it takes to go and build and do things.
+
+I think that's a good thing. And anyone that says software engineers are going away, period, like that's just, it's just not true. Like it's, what's going to happen is you just have developers and this is happening already.
+
+Developers are just focusing on higher value tasks than just like going and changing basic syntax for styles or whatever. And so they're just being way more effective at their job and they are working on things that are very complicated that AI models are not well suited for. And so it's, you know, maybe a good analogy is like modern industrial manufacturing.
+
+It's like, there are still maybe some people that say everything should be handmade. Every car should be handmade. Like, I guess Rolls Royce still exists.
+
+They still do that, but it's like this niche market, right? Right. They're expensive.
+
+They break down a lot, right? You know, in fact, it actually turns out having these great, you know, automated manufacturing processes overseen by humans with higher leverage tends to be better for everyone holistically. Yeah.
+
+I mean, there are still people pulling, pulling around tourists in horse-drawn carriages in Central Park. That doesn't mean that the right decision a hundred years ago was to triple down on horse-drawn carriages. You buy a dang car.
+
+Exactly. Like, I think that big question of do I learn to code or not, it all depends on where you are. Like, if I'm 20 something or, you know, a teenager, like, and I'm on the fence about like going hard on business or going hard on coding, like, I'm going hard on business and I'm learning all of these vibe coding tools and that's my coding, like my shortcut, right?
+
+Whereas if I'm already a coder, like, I'm going to learn how to embrace this as much as I can and like you said, delegate and elevate and just start doing more important. Like, you'd be dumb as a coder to abandon coding because, oh, this is going to take my job so let's start looking for, like, you are in the best position possible right now to further embrace coding, right? Yep, exactly.
+
+Exactly. It just gives you so much, like, understanding how software works and how to build software gives you just so much more leverage on how to actually control and use AI tools and agents to go and do your bidding to, you know, change the world or whatever, right? Yeah, it's like the difference between a college, like a business professor that, like, spent 30 years running and starting businesses, like, his effectiveness in the classroom versus a business professor that's always only been a business professor, right?
+
+Which one do you take? Like, I would rather have a coder that knows these AI tools than someone like me, frankly, but I can build these myself and they don't, myself, and they don't have to be amazing. They just have to be cool.
+
+Exactly. So, I love talking to founders about, like, 80-20 of use cases of your tools. So, I'd love to hear, like, the 80%, like, what are people using it for?
+
+What's, like, the bread and butter? And then what are, like, those one-off use cases that really just make you scratch your head but are really interesting to the listener? Yeah, that's a great question.
+
+I mean, this was, like, kind of crazy things. We launched Bolt, like, last October and before this, we were making a developer IDE and so only developers were using our product and the scale of revenue just, like, we almost went out of business. So, like, a month after Bolt launched was when we were going to start spinning down the company because, you know, been around for seven years.
+
+We got into the company to 700,000 of ARR and so Bolt was the last experiment we ran. Like, this in-browser development environment technology we made and Bolt, we paired this Frontier AI agent with it that we made and overnight, it just took off. Like, in the first two months, we went from zero to 20 million of ARR.
+
+Oh my gosh. It was crazy. That's product market fit, right?
+
+Like, if anyone's wondering, how do I know? Like, if you can't sleep because of all the inbound you have, that's product market fit. exactly.
+
+And it's the first time I've seen anything like it. I've been doing startups with my co-founder for 20 years. I've never seen anything like this because every other launch we'd ever done, it's like, you'll have this, even if you do great marketing and you spend a lot of time on the product, most things you'll have this, you know, tick up on the day of the launch, next day it drops and then it just flattens out.
+
+Yeah. Back to the grind of, okay, we got to make this thing better. And that's okay.
+
+That doesn't mean you should quit. Absolutely not, right? Like, and that is the normal thing.
+
+What happened here is from day one, it just, the revenue just was cranking. And so, and our team was super excited on the first day and I was like, guys, temper your enthusiasm. Like, this is how it works.
+
+I've seen this movie for 20 years. It's coming back down. Yeah.
+
+And then the next day it didn't. And I was like, okay, so like maybe the word of mouth is kind of whatever. And then it just kept going day after day after day.
+
+And, and then the other kind of crazy thing was that most of the people that were emailing us as customers for support and stuff were not developers. They were designers or PMs or just people who are entrepreneurs and, you know, people that were salespeople making a website for their daughter. It's like, we were like, what is going on?
+
+Like, this is, this is not the market that we, you know, kind of thought that was going to pick this tool up, but it's a much bigger market, right? Massive, right? Massive.
+
+And so after the first month, it became very clear to us, like, okay, this is something, you know, Bolt was really one of the first products that kind of hit that nerve where it's like, this is not just developers can build software now. And what does that mean? Right?
+
+I mean, it's like, dude, there's like a billion people on this planet that now actually can be empowered to go and take their ideas and put them into reality. That's going to change everything. So I'm very enthralled by what you're saying right now.
+
+When you made that pivot, so from what I understand, you were like a browser extension for developers. When you made that pivot, was the reason for the pivot because you were just kind of looking around, seeing at these other guys thinking, oh my gosh, like we could do that. We're not far from that.
+
+They're crushing it. Or was it like some, something deeper than that? I was actually pretty skeptical, I would say, of the AI stuff.
+
+From 2022 to, you know, beginning of 2024, not that like chat GPT was obviously for, I think for everyone in the world was like a mind blowing moment. In my head, after the first month after that came out, I was like, what else is this beyond like chat GPT? What's kind of the killer use case here?
+
+How is this, you know, what are the next things that this thing's going to get incredibly good at doing that's really valuable? And I mean, honestly, tangibly there weren't, you know, there weren't a ton of things that were really progressing. And so kind of by the beginning of 2024, like our company, everyone else in the world was like adding AI features into their app.
+
+And they didn't make any sense for a lot of these. They're just like AI, AI, like a classic hype bubble thing. It was like adding blockchain to your name five years ago.
+
+Exactly. And so, so we were looking at it, we're like, we think there might, there might be another, because back in 21, we, the exact same, saw the same thing happen with the web three stuff. And people were like, you should have web three.
+
+And we were like, this seems like a bubble. People thought we were nuts. People were like, you should raise money.
+
+You should, you know, grow the company to a hundred. And we're like, no, this seems like a bad idea. It turns out would have been a bad idea, was a bad idea for a lot of people.
+
+So I was kind of had the same sort of lens where I was like, I haven't seen anything yet that really strikes me as the breakthrough, like the next breakthrough thing for AI applications that will drive, what they're saying is trillions of dollars of potential revenue per year. Right. Beginning of 2024, you know, I was using ChatGBT to just generate code snippets.
+
+And I would take it and I'd put it into our product. Our product was an IDE for you to build web apps in the browser. And I was like, oh, you know, like ChatGBT should basically have like ARB stuff built into it.
+
+So like when you tell it to like build a web app or whatever, it just like does it in the browser. Like that's the magic of WeDo is like allowing you to run, you know, full, you know, dev environments in a browser. And our vision originally was basically to make building full stack applications as easy as using Canva or Figma.
+
+Just you go to a browser URL, just boots, et cetera. Remove the friction. Exactly.
+
+And so, you know, it kind of clicked. I was like, okay, well, like the code that ChatGBT is writing is like, I think kind of good. So, you know, let's make a demo of this.
+
+We spent a week doing that in February of 24, found out opening eyes models just were really not great for code generation. Like it just, the experience didn't work because you would tell it to build something. It would just break.
+
+It was ugly. What would come out? Which leaves an opening for you.
+
+Exactly. Well, and so, and we were like, this is a cool idea. Maybe, but it's not feasible right now with the current state of the frontier models.
+
+Then in May, a couple of months after that, we got an early preview of Anthropics Sonnet 3.5 model. It was immediately obvious. I was like, holy hell, like this is huge difference.
+
+Step function difference in how good this thing is at writing software and the output quality of it. And so we green, you know, brought the project back off the shelf, greenlit it and launched it. But so, so that's kind of the long story short of it though is like the best things that I've ever done in my career have always been things where it's been like intrinsically.
+
+I'm like, this would be kind of cool. Like I am doing, I'm using ChatGPT in this way right now. I wish that I didn't have to like copy and paste to like an environment to run it.
+
+Like I, maybe we should just kind of build them together. And like, I just want that. And like, and our expectations when we launched Bolt is that we were like, this would be incredible if we added 100K of ARR, right?
+
+By like within a year. We were at 700K at that point of ARR after seven years. And so we had no idea how explosive the thing would be.
+
+Yeah, it really came from just, you know, my own actual curiosity and needs versus kind of looking at the market going, oh, we want to be part of that. Because if you look at like the 2022, 2023 era of AI coding stuff, there was tons of people just slapping AI and for that exact reason, because they were all looking around like, oh, they're doing this, they're doing that, but like none of it added value. How did you get the word out when you made this pivot?
+
+Good question. We put together a tweet. Like that was, I was hoping you'd say that.
+
+Yeah, you know, it's unconventional, but you know, we like over the past like seven years, like it's always important like when you're building like a startup, you should always be building community around it because you never know which of your iterations is going to be the one that clicks. And ideally, you want some amount of built-in distribution for the, you know, to propagate what great messages you're going to send out basically, right? So we built up, you know, some like a small following, out of maybe 20,000 people were following our accounts or whatever at the time.
+
+And, but we put out one tweet, like there wasn't even a blog post, there wasn't a press release and it was a darn good tweet. We spent some time on it and that just basically explained, hey, this is what this thing is and, you know, why it, why it exists, why it's different and better than the other stuff that's out there. And it went viral.
+
+that was important for seeding kind of the initial set of users that came in and tried the thing. But what, what kept that, that, you know, growth flywheel going was that the experience was amazing, right? Like people would, and this is still true today.
+
+When you go to bolt.new, there's no like marketing landing page you have to sift through. There's no like crap, you know, like most products, there's like all this crap you have to go through to even just try the thing out. Quick question.
+
+What if there were a private community out there of people that were building businesses based on this podcast? Well, I just made it and it's only for business starters and business builders. It's called TK Owners and it's basically like having me and a hundred other business geniuses as your business partner, but you give them 0% equity.
+
+Also, there's going to be exclusive new trends, growth hacks, business ideas, and a database of everything I've ever talked about. You'll find thousands of startup case studies. You'll have weekly ask me anythings with me while I'll answer your questions directly.
+
+You'll be in my Slack channel where I'm hanging out every week and helping members one-on-one. We've got exclusive guest speakers, including some names that you'll recognize. And if you're building something cool, I'll introduce you to anyone you need.
+
+TK Owners is the fastest way to plug into a smart, ambitious group of builders and accountability partners that are sharing wins without the fluff. And it's 99 bucks a month, about the cost of an energy drink per day. You can join now at TKOwners.com.
+
+Link in the show notes. I'm not going to lie. When I'm vibe coding stuff, I'm looking at Bolt.new for my landing page example.
+
+Like remove the friction, remove the distraction. Anyway. Totally.
+
+Yeah, exactly. It's like just kind of get people straight into the action because if you have a great product experience, it will speak for itself, right? Yeah.
+
+And so the prompt box is there. You hit enter. Within a minute, you have a web app or whatever that's built that looks great and it's mind-blowing.
+
+And so people would deploy that URL. They'd be like, wow, I have a website live on the internet. And then they would share that whether, you know, in iMessage or on X or whatever and be like, wow, look who I just made with Bolt.new.
+
+And so that was like, we saw this crazy, you know, organic word of mouth thing happening and that's like still the primary driver of how people find out about Bolt. Yeah, there's no paid acquisition. Like there's zero dollars, you know, on the marketing for the launch of the thing.
+
+I don't want to go too deep into this, but what was the anatomy of that tweet that made it so great in your opinion? Good question. By the way, have you ever heard of the Amazon PRFA Q approach?
+
+No. So it's, this is a really, this is a good one. This is good.
+
+Yeah. So, so Amazon PRFAQs, when Amazon wants to go and release a product, before they start making designs or writing code or anything, they write a press release and an FAQ for the product. What are you saying the day that it is launched?
+
+Because you effectively have to answer the questions of why is this unique? Where are we innovating on this? What problems is this actually solving?
+
+Right? Proactively removing friction to people ever using your thing. Bingo.
+
+And you're starting at the end, right? You're starting at like on launch day and then working backwards from there. Right?
+
+So, and what that provides is then when everyone's built, when you say, okay, well, we're going to do this project, there, the North Star is so clear on where you actually need to get to. Right? And so for us, the approach we've taken is we have like our approach is a tweet thread FAQ.
+
+So what we do is because it's even more distilled format of like a blog post or a press release because you have to, every tweet has to have a purpose. If it wants to be good, at least you don't have like a run on thread or whatever. And the first tweet, it was really the video demo that we had to showcase like just going to bolt on new typing and a prompt and what you could actually build out of it.
+
+And one of the guys on our team did a great job with that. As I recall, the text of that tweet kind of started with the classic, like, you know, wouldn't it be great if, you know, chat GBT could actually. I think I'm looking at the tweet right now.
+
+It took like maybe a dozen or two revisions just for the first tweet to get it to where we were like within 280 characters and et cetera. Was this the one? That is exactly it.
+
+All right. Why don't you go ahead and read it for those that are only listening? Okay.
+
+So this tweet says, what if AI dev products Claude, V0, et cetera, let you install packages, run backends and edit code? Introducing Bolt.new by StackBlitz. Prompt, edit, run and deploy full stack apps, full dev environment, NPMV, Next.js with Frontier AI free.
+
+Exclamation point. That's it. That's the tweet.
+
+And then in the comments, then you get to the nitty gritty, right? You don't want to put that up front. Exactly.
+
+Most interested people will start scrolling, but if you put that up front, then you just turn people off. And this is why I love that doing tweet threads is kind of like the focal point of how you make marketing messaging because the first tweet is the thing that needs to grab people's attention and be like, hey, this is a thing that sounds dope and is relevant and is something you would want, right? Like we all agree on that because that's really what you want to get on that because once you have them there, they will then read through all of the cool things that this thing can do.
+
+It's way easier to make all the subsequent, you know, kind of tweets, by the way, because you're really just speaking to the specific features that really stand out and, you know, et cetera. Not that we didn't spend time iterating on those, but that tweet specifically, what we really wanted to anchor to is like, you know, the way we find this out is we would just go talk to like our friends and prospective customers or whatever and we'd say, hey, this is what we've built. Here's kind of, you know, the general pitch.
+
+What do you think? They would ask that question. Well, how is this different from Claude or V0, right?
+
+Why do I need this? Like, what are the actual things that has these stuff? And that's, if you look at that tweet, that's exactly, it's like, hey, wouldn't it be great if these things that you know and love could do this?
+
+So, and you kind of have to like, you have to talk to people to kind of get a sense of like, what is that? What's the first thing people are going to ask you? Like, yeah, but like, what about blah, blah, blah?
+
+You know, it's kind of like the first question on this pocket. What about kind of the other app builders? Right?
+
+It's like, whatever, it's like, okay, well, how do you, if we deserve to exist, what exactly is that reason? Right? And like, how are we, that's super important to have.
+
+And anyway, so something that we've learned over the years when we've launched up is just really having, you know, a very well thought out hook and explanation of, you know, what this thing is, why it deserves to exist, why it's going to solve your problems. Way easier said than done to do that well. I think one of the magical things about that tweet was you put the URL right there, not below the fold, not in a comment, but right up front.
+
+And I've looked at the Twitter code and there's a misconception out there. It says, if you put a URL in your tweet, Twitter's going to de-boost it because they don't want to take people off the platform, which makes logical sense. So most people, myself included for a while, thought, okay, I'm never going to put links in tweets.
+
+I'll put them in the comment tweet, which I would still say 80% of the time is best practices. But Elon himself recently came out and tweeted and said, hey, we don't like automatically de-prioritize or de-boost tweets from the algorithm if they have a link. What we do do is we do whatever we can to keep people in the platform.
+
+And so it doesn't have to be a link. It might be. But if your tweet is not interesting enough, maybe because they're clicking on your link and leaving Twitter, maybe it's because it's just not compelling.
+
+There's not a good hook. There's not good payoff. We're not going to boost it.
+
+But if your tweet is compelling enough and it has a link and people stay on Twitter, like maybe they click the link and they just keep reading all of your comments. They're watching all of your videos. So Twitter's like, wow, I don't give a crap that he put a link in here because they're staying on Twitter even longer than they would have otherwise.
+
+Let's boost the heck out of this. Like sometimes you can really find magic because you lose a ton of people if you put the link in even the first comment. Like you lose 80% of people.
+
+But if you can find magic and go viral with the URL and the top tweet, oh man, zero to 20 million ARR in two months. Totally. In this case.
+
+Totally. Yeah, absolutely. Absolutely.
+
+And that was the thing too with our, the .new domain because we originally did launch with developers. And so one of the stipulations of having a .new domain is that when you go to that URL, it has to immediately start some type of action. So if you go to like docs.new, that takes you to a new Google document or a Google like a Google document.
+
+Oh yeah, that's what I used to open all my docs. I never even connected it to bolt.new. Yeah, exactly.
+
+And so, and that's why we chose the .new domain and partially because the .com was taken, but we were like, we really want people, the magic of this experience is zero friction between your idea into reality. And so the .new domain actually requires you to, you know, remove the marketing crap basically. Right?
+
+I love it. Okay. So my ADHD is on full display.
+
+Let's get back to the original question that I brought us away from. 8020 of how to use Bolt, how people are using it. Most of the people that are coming to Bolt by and large are folks that are entrepreneurs actually, like they're building businesses.
+
+And then there's a large portion of folks that are, you know, assisting in building businesses like PMs, designers, engineers, even like sales and marketing teams, et cetera. We have two kind of splits of where our revenue comes from, which is one is prosumer, which is that's the entrepreneurs starting businesses. And then we have B2B, which is existing businesses like Fortune 500s or scale-ups.
+
+And that's where we see a lot of like, you know, designers, PMs, engineers, you know, adopting us to accelerate, you know, their prototyping and workflows and that sort of thing. Right? The prosumer side and just by sheer number of heads on the platform, entrepreneurs is like the number one thing.
+
+And they're coming here and starting, you know, businesses of like all types, which is insanely cool to see. Do you have some examples like what, like selling info products or agency web, like they're selling websites or what are they doing? Yeah, totally.
+
+So certainly a lot of agencies use Bolt to go and build stuff for their clients, right? That's a pretty large one. And the ROI on that is insane.
+
+Like there's this guy, CJ on X, he has the most legendary ROI story we've seen where he posted a tweet and said, hey, this is the web, the application I made for my client. And it cost me nine bucks on Bolt to do this. And then you have people, you got a good amount of pickup.
+
+And then someone asked the question I was going to ask, had they not, which is how much did you bill the client? He was like $9,000. That's like buying Bitcoin in 2010.
+
+It's crazy, right? And so if you like search like Bolt arbitrage, there's kind of a growing number of people that like are kind of connecting the dots on this. So there's a lot of agencies that use this for just accelerating the development workflows.
+
+And this is becoming a much more, you know, a very common thing at this point that folks are doing. But then you have folks that are starting like SaaS businesses, right? There's a lot of different types of these that we see.
+
+So you have people that are, that will make course building websites for themselves, for example. So instead of going to, you know, one of these other platforms, you can actually own all of your revenue and have your own site to do it, et cetera. Instead of giving a 10 or 30 or 50% cut or whatever it is to go and, you know, use some other hosted platform and that sort of thing.
+
+So that's like, you know, just kind of one example of something we've seen. Other ones too, is like people are making AI applications. One example is this guy named Paul, who's been part of, he was like one of the first couple of weeks of folks that were on our platform, but built an entire CRM with Bolt that has AI integrated into it.
+
+And so you can literally- Industry specific? I think he was just kind of going after a general, just general industry. Like anyone who's like- Like a CRM to fit his needs, hoping that maybe other people would like it as well.
+
+Yeah, absolutely. And you can go sign up for it, you know, et cetera. We've seen a lot of different, you know, cool types of businesses and folks, you know, making like real money now going and actually selling monthly subscriptions and, you know, et cetera for this stuff, right?
+
+What kind of app did CJ build? The $9,000 one, what was that for? That was for one of his clients.
+
+It was a dashboard, as I recall, for some type of reporting in their product, et cetera. And he was, you know, being acting as like an agency, consulting with them and building out web apps and whatever happened. That just reminds me of just a framework that I have.
+
+First principle, like people love dashboards. I don't care if you own an auto repair shop, your CEO of a Fortune 500 company. And I think the first principle behind it is like, it just makes us feel good that we have everything under control.
+
+Like my whole business is on one screen. I know what's going on. Really, you don't.
+
+But my point is, people will pay so much money for a dashboard that is simply just aggregating together data via API through an interface that you build with something like Bolt. So go start a dang dashboard agency. That's the thing.
+
+You won't be the first person to do it. Like AI enabled. Totally.
+
+And so we're actually running this hackathon right now for the entire month of June where I don't know if you saw this, but like, so we're throwing it. Yeah. Million bucks.
+
+The world's largest hackathons. We have over 100,000 people that are participating in this at this point. We crossed the world record, which was like 66,000.
+
+Guinness is like officially going to market, you know, like I've never done it before. I've never been in the world record, but we're all going to be there. It's been so, so cool to see all these folks going and like and building ideas that they would not.
+
+And the reason we did this, by the way, was that most people still don't know on planet Earth that they can actually build software without being a developer. And so that's like, that was why we kind of created this lightning rod of attention for this hackathon of like, hey, over a million dollars in prizes, you do not need to be technical. In fact, it's better if you're not technical and you come to do this and, you know, come on and, you know, try Bolt for free and like build something and, you know, see what you can build.
+
+And there's been amazing stuff for like folks. There's an app that someone's building in South Africa for giving access to like emergency services down there because apparently there's not really great infrastructure for if you needed to go to the hospital, like where do you actually go? Like, which kind of blows my mind because you would expect that this would be kind of a solved problem in 2025.
+
+I think it was like a month or two ago, one of his friends had an accident in South Africa and they didn't have internet access and had no idea where to go and that's like a common thing. So there's stuff like that where people are building applications that are actually meaningful, kind of even beyond just a business sense, like actually, you know, obviously important for humans. I think it's very key that you said, like it's actually better if you're not a developer.
+
+Like I think of this study where they took a bunch of executives and a bunch of kids and they gave all of them a bunch of marshmallows with toothpicks and they said, all right, build the biggest tower you can and they put them in groups of like three and all the executives that got together and they had like two hours to do it. They spent the first hour, hour and a half planning, game planning, engineering. Let's get the load bearing right on this.
+
+Let's have a big enough foundation and the kids just started freaking sticking marshmallows with toothpicks and they started building and falling over, building, and the kids won, right? Because they weren't biased and they just started trying and failing, trying and failing and when I think of a developer going into something like Bolt, they probably have all these preconceived biases and confirmation biases and they go into like, well, I don't want to build this because it's probably going to and they might be wrong in a lot of cases because they have these assumptions that just aren't true whereas someone that's totally ignorant like myself can go like, yeah, build me an iPhone app and then it's like, okay, and you're going to hit problems. You're going to hit friction.
+
+It's like, okay, let me take this over to chat GPT. Let me export my repository to GitHub. Okay, huh?
+
+And like you just start working through these problems which that's all entrepreneurship is, is problem solving. And entrepreneurs know how to do that very well. And I can actually see a scenario where the non-technical vibe coders, if you will, are crushing it.
+
+For sure, right? I mean, like that's 100% because like the big problem with like, you know, the building like apps and software being gated to date on having development experience is that once you're a really proficient developer, you lose touch, you know, naturally with what the experience of using software is as a non-developer, right? And, and this is something for us as a company, like we were building tools for developers before.
+
+Now we were building tools for non-developers. And so for us, we are having to completely transform how we approach building, building the experience of our product because a lot of our engineers' own instincts no longer actually match with the end users using the product. to that.
+
+And so who are we hiring to bring in? It's like folks that are like great PMs and designers that have really good perspective of, okay, what really represent the end users' experiences. And then for our engineers, there's lots of ways to kind of get that context on the engineers.
+
+Like some companies, every engineer has, knows a customer personally that they talk to every week, right? To like have that built in like empathy and, you know, you know, thread with them, right? But it's a huge advantage for folks that are, are building apps is if they don't, if they're not kind of actually bogged down in the bajillion details that go into building a software product.
+
+And that's like the stuff that's come out with this hackathon is some of the coolest ideas that I have seen from hackathon largely because it's not just engineers making stuff for engineers. It's stuff that's like, wow, this is like, we brought a girl on our live stream that is a new mom and built an AI app for new moms that helps you like, you know, you can ask it questions about, you know, what do you do? Like how much, you know, generally should you be feeding the baby or like, how do you get them on the right sleep schedule?
+
+Blah, blah, blah. Which, you know, I had, you know, my first kiddo a year and a half ago and I was like, yeah, that's a real problem. Like that's like, you know, a real thing.
+
+And, you know, but as an engineer, my first thought wasn't, hey, I should go build an app for this. And, you know, like it just, yeah, it didn't click. That's what's really cool about this is that it connects people that are directly exposed and feeling the problem to with the tools to actually solve it, you know?
+
+Yeah. So video is cool, but you know what's better? Long form audio via podcast and my newsletter, tkopod.com.
+
+Go there to subscribe for free to my newsletter. It's one email a week, very tactical. And then go to my audio podcast, three episodes a week, stuff like this.
+
+You're going to love it. All free. No sleazy sales pitch, tkopod.com.
+
+What are some weird, unexpected ways that people have used Bolt to make a ton of money? Maybe they built an agency on top of it. Maybe it was a random website, anything.
+
+That's a good question. I think the agency's one has been so interesting, but it makes a ton of sense why that's the case. The other really interesting ones that I've seen have really revolved around folks that are going and building, you know, platforms where they are owning the content that they're making and selling it directly.
+
+And in fact, you're kind of cutting out the middleman of some of these other tools, right? So whether they're selling courses, whether they're selling, you know, materials or access to community or, you know, et cetera. Like that's, that to me is like some of the most interesting stuff because some of these tools will take a substantial cut out of your earnings, right?
+
+And like, yeah, before you could have gone and signed up for Stripe and done yourself, but like, you know, the previous company I ran before this was, you know, we were selling courses online, kind of like ProSite. And for my co-founder, I was just, him and I was, you know, like a basically a lifestyle business. And it took, you know, him and I like a month or two to get just the infrastructure set up with payments and login and dah, dah, dah, before we could even start selling courses.
+
+And in retrospect, it probably wasn't worth our time, but we just didn't, you know, we're like, we're bootstrapping. We had a 30 or 40% cut is brutal. Like we got to pay rent.
+
+That to me is, you know, some of the most interesting things from like a monetization standpoint that, that I've seen, you know, for Bolt. But that could be a good framework of just like whatever software tool you use that is more expensive than you think it needs to be or takes a bigger percentage cut than you think it needs. Try to replicate that in Bolt.
+
+Absolutely. At worst case, you save money for yourself. Best case, you resell that to others.
+
+Absolutely. One of my friends, actually, a tangible example of this and this, they're not making money on this, but they have, there's like a teleprompter iPad app, right? So they're using it to like, you know, they're recording videos and it's like 30 bucks.
+
+I don't know of any good teleprompter apps. So I would love to hear about this. Yeah.
+
+So this blew my mind because he sent me a message. He was like, yeah, like you've been using this app. It's like 30 bucks a month and it sucks on the iPad.
+
+And so I went to Bolt and just one shot said, make me a teleprompter app. And it did and it's better. And it, you know, costs basically, you know, two cents or something to me.
+
+Yeah. And then they own it forever. Right?
+
+So there's a lot of things like that where, you know, tools that you're paying for, you actually may not need to pay for them. And in fact, you can customize them for your own use cases for your business, which is like a very common use case, actually across the spectrum of people. We see whether it's entrepreneurs or it's actually a fortune 500s or whatever, like they're also using Bolt to just build internal tools for themselves that are kind of bespoke, you know?
+
+Do you have any examples of big businesses that have already been built with Bolt, like from an ARR perspective or number of customers perspective? Yeah. Good question.
+
+I think I'd have to pull, I know that there's startups that have launched using us for parts or, you know, or full parts of their web apps, whatever have you. I think it's a YC startup called Denormalize that used us to build their application and they're doing stuff around AI, data pipelines, et cetera. And they've raised a couple million dollars at this point.
+
+There's a lot of these though, right? So the one thing is because folks own their entire Stripe accounts, we don't have observability per se into how big some of these folks are getting, but we hear this a lot though, where they're like, hey, we use this to build out this entire thing. And we certainly see the companies that are growing by headcount and adding seats on us, you know, we see that as well.
+
+But yeah, I mean, there's a lot of cases where, you know, certainly startups are going to raising, raising money and are making substantial amounts of ARR, but also existing scale-ups in Fortune 500s that are like, you know, launching new products out of this thing that are, you know, doing, responsible for tens of millions of dollars in revenue per year sort of thing. Yeah, I could see someone saying like, well, yeah, I want to get into Y Combinator, but I can't just build something with Bolt to get in. And it's like, you can.
+
+You can. You can. Yeah, you absolutely can.
+
+I'd love for you to show us, like, show us how the average user with no technical knowledge can go from nothing to something on Bolt. Cool. Yeah, absolutely.
+
+Let me go share my screen here. Okay, and for those listening on audio, I'll be describing what's going on here. All right, so we get the Bolt homepage here, simplest thing in the world.
+
+What do you want to build? And there's just a text box. We can tell it we want to build.
+
+Maybe let's just have, like, you know, create a course selling website, perhaps, something like that. So I'm Eric Simons. I want to build a course selling website for my new course on how to use Bolt.new to make production web applications.
+
+Anything else you want to add here? No. I'd love to ask you questions as we wait for this to prompt.
+
+What are some prompting best practices? Like the first prompt, start with, like, something, you know, relatively simple. Like, you start with, like, the homepage and start with maybe some of the, you know, just static parts of the application and, like, figure out, like, how the colors, the UI, UX you want.
+
+That's what this thing's going to go do right now. You want to, like, because if you look at it from a typical product development process, that's usually where you want to start is just with, okay, let's make sure the general flows, the layout, the look and feel, et cetera. Let's make sure all of that stuff works properly and then we start, like, layering on functionality.
+
+Yeah. And so in the next steps here, depending on what comes back, we'll either make some changes to the colors or whatever have you or to the layout. We're like, okay, cool, this looks great and let's start adding in some functionality and at that point, you kind of want to break these things out, you know, into specific tasks, like, you know, prompt by prompt just so that it's easy for you to, if you have to roll back, you're like, okay, this, that, that didn't really work.
+
+There's, like, only one thing that I was working on there. I can easily roll that back. But generally, you don't want to, like, completely jam a ton of stuff, you know, into the chat just because you might end up with results that are hard to roll back and kind of have fine-grained control.
+
+Okay. Right. So me, I'm, like, super impatient and when I'm building something, I'm like, do this and then it starts, I'm like, also do this and then do this and then do this and then do this.
+
+Would you not recommend that? It depends. So especially if you're doing, like, if you're changing kind of parts of the UI and that sort of thing, totally fine.
+
+Yes. If you're, when you're kind of getting into more complex functionality, it's good to, like, kind of break it down and take it more step-by-step. I'll show you one feature we have actually that allows you to kind of consolidate changes like that that are maybe large and et cetera.
+
+It's called discussion mode and this down here in our chat box is this little, like, discussion icon. If you click on that, then, you know, you can actually just have a conversation where the agent isn't actually building anything. It's just helping effectively answer questions and build a plan on what to go and build with you.
+
+Right? Okay. So this is the app we got back.
+
+So it's called Boltmaster. Looks good. Gave us some branding.
+
+Yeah. Like, pretty good. Wow.
+
+That looks really good. Yeah. I'm not like a design master, but I think that this looks legitimately good.
+
+Let's say, for instance, it's not good enough for me. I want to look something, I want to see something much more sleek. Maybe I have some examples I can go screenshot it.
+
+What, what prompting tips do you have for asking it to change the user interface to look a certain way? For sure. Yeah.
+
+I mean, if there's like certain like colors or, you know, like, Hey, I want more animations. You can just tell it to do that. You can just say, Hey, like I, I want it to be like a purple theme or I want it to like, and if you have specific examples, you can actually just take screenshots, drop them into the chat and it'll use that as reference then and go, okay, I will make something that looks more like this.
+
+Right? How well does it work with screenshots? Like, let's say I went and took Airbnb's homepage, which is known for design.
+
+I just screenshot it and said, no, this isn't vacation rentals, but make it look like this. Sure. How well would it do with that?
+
+Let's give it a shot. I'll go ahead and drag in the screenshot of Airbnb. Make the theme look more like Airbnb.
+
+Like, because design is something that is very easy to ignore, but I feel moves the needle much more than people would assume. Absolutely. Absolutely.
+
+Right. And so that to me is what's cool is I'm building something from scratch and bolt. What I'm often doing is I will go and find, you know, great design inspiration to pull from and, you know, tell bolt to, to go and look at that and then, you know, spin up design based on that.
+
+Right. And hopefully, hopefully the demo gods play well with me here, but it's, it's really looking at the screenshots. Like, hmm, I don't know.
+
+There we go. Cool. What happens?
+
+Cause this has happened to me in other apps where I just hit brick wall. For instance, I'm trying to build this website right now and it will not let me log out. I click log out.
+
+It just refreshes and I put the code in GitHub and ChatGPT and they all say that, oh, I see what's happening. It's just, it's actually logging you out, but it's not refreshing on the UI over, over and over. And I cannot fix it.
+
+Yeah. And it's a very simple thing. What are your tips for getting around that brick wall?
+
+Absolutely. Cause it's going to happen. Yeah.
+
+Yep. And this stuff does happen, right? And so that's like one of the reasons we rolled out discussion mode is it's very useful for solving these types of issues because it's, you know, instead of it, you know, typically when you go to other, like even with the normal build mode agent in bulk, and this is how ChatGPT and a lot of the other things by default will work is they'll, instead of being like, hey, let's like maybe talk this through and like have you do a couple of things to test stuff.
+
+It'll just be like, oh, I definitely know what's going wrong. It's like, it has no idea, right? Whereas discussion mode will say, okay, let's try this.
+
+Okay. Can you give me this information? No.
+
+Okay. And it'll actually start instrumenting the code base. If things are still going wrong, it'll start adding logs and et cetera to then pull in and go, okay, well, what is it?
+
+What's happening now? Right. That typically goes a very long ways.
+
+Right. I mean, the cool thing about discussion mode is that every message of discussion mode takes like one 10th of the price of a normal agent message. Right.
+
+And so you can send way more discussion mode messages, which is important for debugging and not just burning through your entire, you know, monthly allotment. Right. So this thing, you know, shamelessly, shamelessly.
+
+That's pretty close. I mean, there's no shame on this podcast. So we're all about copy paste.
+
+Yeah. Yeah. Obviously when pulled with the exact color scheme and this is like, you know, took exact inspiration, you know, from those listening, it looks like Airbnb.
+
+Yeah. Like it took about 90 seconds and it looks like Airbnb. Airbnb for courses.
+
+Yeah. Yeah. Yeah, exactly.
+
+Exactly. I mean, how much time and effort and care and money does Airbnb pour into design? Oh, I mean, so like in all seriousness, why try to become a good designer when you can just do stuff like this?
+
+I think for, for a lot of applications, right? I think that you don't need to for bolt. Like we, we spent time on the UI UX, but as I mentioned earlier, like we started bolts development in July and we launched in October.
+
+So there's 90 days, right? And we poured log into the UI UX of it to the degree you could, but we didn't even have a mobile response of view for bolt. And we didn't have it until the beginning of this year.
+
+Like we went to zero to 20 million ARR without a mobile response of view. Right. And I'm not saying there's a lesson in there.
+
+There is just freaking launch. Absolutely. Right.
+
+If the value you're providing is actually insanely great, which it should be like, that's the, that's what you have to do. Right. There's all these other things that you should do that people were yelling.
+
+It was like, how do you not have a mobile response of view? You know? Well, we made, we had to cut corners somewhere to get it out online.
+
+Yeah. And for a lot of applications folks build, it's like the design of this, what comes out of these models is excellent. And it's why would you go and spin cycles on something that is usually kind of, you know, somewhat ancillary to the core value you actually have to go and provide.
+
+Not that you should ignore design at all or something, but there's a certain bar you have to hit. And unless you're doing something that is design specific and that's one of the key reasons, you know, that your app is going to win and is competitive or something. Right.
+
+And those are few. Like there's not a lot of those. You know, it's, you should be just be focusing on solving the end user's problems.
+
+You know? Do you have any other like prompting hacks, like shortcuts, like talk to it this way or say this or this phrase or I'm very curious about that. I encourage people to just like, you know, throw vibes at it, especially for design.
+
+And like, you can say, hey, like go and, you know, make it beautiful, like make this thing pop, like, you know, add a page that, you know, really focuses on XYZ. Like sometimes it's just better to let the AI take a crack at whatever you have to do versus you trying to like really spec out exactly how it should be. Because I think that some people will just get really, really, really detailed.
+
+And then what comes out is, is, you know, we'll like work, but it's, you know, they're spending all this time on things where, you know, in these models that they're trained on, you know, the best, you know, apps in the world. And so you get to kind of leverage a lot of the best practices just by saying, hey, we need a pricing page. Can you just kind of go whip something up with these three prices?
+
+And it's like, what comes back? It's like, yeah, oh, okay. Yeah, that's great.
+
+You know, like I went to thought it out that way, you know? So. In a previous podcast, I suggested people do this and I'm curious what your thoughts are on this.
+
+Let's say you have an idea for a website and you pull up Bolt alongside four other direct Bolt competitors and you just start prompting all five at the same time. Do this, make this website, same prompt in all five browser windows. What result are you going to get from Bolt?
+
+Either good, better, you know, different, worse, whatever, it doesn't matter. How is Bolt going to be unique when you're prompting five different, you know, vibe coding apps the same way? Totally.
+
+Yeah. I think we've got pretty, the best like design output at this point of all the things out there. We've spent a lot of time on that because like, again, it's like, we're trying to get you from idea to business, you know, as fast as possible, right?
+
+And in less than five minutes. And so if you're having to spend a ton of time on just making the website, like look like something that could actually sell a product, that's a problem. And so that's the first prompt, that is what you're going to see with Bolt.
+
+On the second prompt, you'll save time. Absolutely. Just on the design portion.
+
+Oh yeah. And what comes out is stunning, right? And on the second prompt, you're actually, you have a real backend and payments, et cetera, integrated with the thing, right?
+
+That's what you're going to really notice and the speed of it too. Like that's like, we really have, and this, a lot of it comes from the seven years we spent building this technology. Like, so this is like how we're running this in browser here, by the way, this is the seven years of technology we spent before Bolt on our previous product.
+
+And this is, no one else has the, a pure in browser-based dev environment. All the other providers have to use cloud VMs for every time you open up one of their things. So you will notice there's, it takes a long time to boot those things.
+
+Often, sometimes they won't boot at all because, you know, the server is borked or whatever, blah, blah, blah. With Bolt, every single time, like when I refresh this chat window, this is booting a fresh operating system on my device, inside of my browser, booting it up, installing it, getting it running, et cetera, you know, within seconds. And that's, and you know, on the other guys, this can take minutes to do that.
+
+So that's like, I think those are the things that you'll tangibly notice when you kind of go compare these things against each other. How viable is it to build like a production ready iPhone app with Bolt? You can do it.
+
+Absolutely. Yeah. We have an integration with Expo, which is like a React Native thing.
+
+And so on the homescape, you just say like, you know, build me a mobile app, mobile app that looks like Spotify or whatever. This will actually, you know, get a real native application spun up that using just a, you can take a picture of a QR code, you know, that'll pop up here, but you can actually run that app on your device. And as you are prompting, it'll up like hot reloaded, you know, in your hand in real time.
+
+Right. And so, so that's like, we're one of the few providers that can actually do this. Again, it's because we're running all this stuff locally on device that we can let you build mobile apps and not just kind of like specific types of web apps or something.
+
+Yeah. What type of functionalities are still difficult for Bolt? Like, let's say I wanted to build a WhatsApp clone and I wanted people to have encrypted chat between, you know, anywhere they are on the earth.
+
+Is there any like sort of feature or product or database or something that like Bolt is still kind of young at but improving? That's a really good question. I think for all of these things, there's kind of a complexity curve of when you start adding in functionality that's reasonably complicated and not super common, you may start...
+
+Like an Uber clone. Like an Uber clone. We're using like GPS data and stuff.
+
+Yeah. And especially with Uber because it's like a lot of what makes Uber work is the dispatching algorithms and software behind it. And obviously, there's tons of humans that have to support that operation, right?
+
+And that's where things get a lot more complicated because now you're not just talking about, you know, really a like what, you know, software is like a CRUD based application, create, read, update, destroy, where you're just, you're putting, you're uploading things to a database, you're downloading things. Now you're dealing with real-time systems where you have to have, you know, servers that are doing sophisticated algorithms that you have to invent to, you know, be matchmaking drivers to passengers, et cetera, et cetera. It's like things of that nature would be very difficult to do with Bolt or any tool for that matter without having knowledge of it.
+
+But it also depends on the use case too. If you're building an app where you only ever have 20 drivers to be assigned to different like orders, okay. I mean, you know, that actually would work.
+
+Like you don't need some crazy sophisticated, you know, mapping algorithm or something for that, right? Yeah. And you can just be doing a more direct matchmaking thing.
+
+And again, this is like where you're spending, like as people build their projects up, they're spending a lot more time in discussion mode in Bolt because they're going, okay, I need to go add this functionality, blah, blah, blah. And then discussion mode will come back and go, okay, we're going to have to go do this, that. Here's kind of the trade-offs.
+
+Like what are you actually trying to do here? And, you know, really honing in on the plan, which is exactly, you know, when you, when engineers write software that, you know, they don't just kind of go, oh, we're building Uber. Great.
+
+And then just start coding. It's like, there's, you have to do a lot of planning to kind of really think through, okay, how is this going to work? What's the actual, you know, intended, you know, experience we're delivering here, et cetera.
+
+Right. And so the same thing is true with this and coming back to earlier in the conversation where it's like knowledge of building software being important. This is why, right?
+
+It's if you want to build more complicated things, but it's not even like even knowing how to code. It's also just understanding at a high level, okay, what are like the tools and services that, that you can use to solve different types of problems? How do you glue these things together?
+
+Those sorts of things. Right. And yeah, what we see a lot is people will come here.
+
+They will, they'll build their first website, which is something that's maybe, you know, maybe a personal website or it's like a course selling website, something like that. And then they're like, oh, I want to go build something more complicated. And, and then they have to go learn some stuff along the way, which again, discussion mode in our discord community is helpful with, et cetera.
+
+You know, folks like there's something really powerful about being intrinsically motivated to go and learn about this stuff because you're like, oh, I know I can build this. Yeah. And therefore I'm going to go dig in and like, you know, understand how I would do it versus if you don't even know how to code, like it's really hard to kind of get past that point.
+
+Right. And so I said, here's a mobile app. So this is like previewing it.
+
+You saw this QR code. So if you scan this on your device, you can actually run it. Oh, wow.
+
+But yeah, so this is Spotify or Spotify clone and you know, wow, et cetera. But that's a zero shot, you know? Yeah.
+
+I've never even attempted a mobile app with any of these vibe coding apps, but I want to. Yeah. It's cool.
+
+It's fun. I mean, it's, yeah, it's so different to be holding this thing in your hand and then seeing it update live as a native app. It's really, it's something else.
+
+This was amazing. I know people are going to love it. Where can they find you?
+
+We know where to find Bolt, Bolt.new. Yeah. What about Eric?
+
+Yeah, you can find me on X. I'm Eric Simons over on X and then our X account for Bolt is Bolt.new like spelled out D-O-T, you know, B-O-L-D-O-T-N-E-W. Yeah.
+
+That's where you can find us. Okay. Thanks for watching.
+
+I hope you enjoyed it. Share with a friend and if you want to use Bolt, I'd love it if you use my affiliate link in the show notes. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye.
