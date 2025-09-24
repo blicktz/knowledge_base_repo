@@ -153,6 +153,24 @@ class KnowledgeIndexer:
             'total_words': summary['total_words']
         })
         
+        # Build Phase 2 indexes (BM25) if enabled
+        phase2_results = {}
+        if self.retrieval_config and self.retrieval_config.enabled:
+            self.logger.info("Building Phase 2 indexes (BM25)...")
+            try:
+                self.build_phase2_indexes(persona_id, rebuild=rebuild)
+                phase2_results = {
+                    'bm25_built': True,
+                    'bm25_documents': len(chunks)
+                }
+                self.logger.info("✅ Phase 2 indexes built successfully")
+            except Exception as e:
+                self.logger.error(f"Phase 2 index building failed: {e}")
+                phase2_results = {
+                    'bm25_built': False,
+                    'bm25_error': str(e)
+                }
+        
         results = {
             'documents_loaded': len(documents),
             'total_words': summary['total_words'],
@@ -160,10 +178,13 @@ class KnowledgeIndexer:
             'chunks_indexed': len(chunks_added) if isinstance(chunks_added, list) else chunks_added,
             'collection_stats': collection_stats,
             'document_summary': summary,
-            'chunk_stats': chunk_stats
+            'chunk_stats': chunk_stats,
+            'phase2_results': phase2_results
         }
         
         self.logger.info(f"Knowledge base built successfully: {len(chunks)} chunks created and indexed")
+        if phase2_results.get('bm25_built'):
+            self.logger.info("Phase 2 advanced retrieval ready (BM25 + Vector + Reranking)")
         return results
     
     def extract_and_save_persona(self,
@@ -648,10 +669,10 @@ class KnowledgeIndexer:
             else:
                 self.retrieval_config = Phase2RetrievalConfig.from_env()
             
-            # Setup storage paths
+            # Setup storage paths - use persona-aware paths
             base_storage = self.retrieval_config.storage.base_storage_dir
-            bm25_path = self.retrieval_config.storage.get_bm25_index_path()
-            cache_dir = self.retrieval_config.storage.get_cache_dir()
+            bm25_path = self.retrieval_config.storage.get_bm25_index_path(self.persona_id)
+            cache_dir = self.retrieval_config.storage.get_cache_dir(self.persona_id)
             
             # Initialize cache
             if self.retrieval_config.caching.enabled:
@@ -703,18 +724,52 @@ class KnowledgeIndexer:
         
         # Get all documents from vector store
         try:
-            # This is a simplified approach - in practice, you might need to 
-            # store document texts separately or retrieve them differently
             collection_stats = vector_store.get_collection_stats()
+            doc_count = collection_stats.get('document_count', 0)
             
-            if collection_stats.get('document_count', 0) == 0:
+            if doc_count == 0:
                 self.logger.warning("No documents found in vector store")
                 return
             
-            # For now, we'll build from the documents directory used during indexing
-            # In a production system, you'd store this metadata
-            self.logger.info("Phase 2 indexes would be built here")
-            self.logger.info("Note: Full implementation requires document text storage")
+            self.logger.info(f"Building BM25 index from {doc_count} documents...")
+            
+            # Get all documents from vector store
+            all_documents = vector_store.get_all_documents()
+            
+            if not all_documents:
+                self.logger.warning("Failed to retrieve documents from vector store")
+                return
+            
+            # Initialize BM25 store with persona-specific path
+            if not self.bm25_store:
+                bm25_path = self.retrieval_config.storage.get_bm25_index_path(persona_id)
+                self.bm25_store = BM25Store(
+                    str(bm25_path),
+                    k1=self.retrieval_config.hybrid_search.bm25_k1,
+                    b=self.retrieval_config.hybrid_search.bm25_b
+                )
+            
+            # Check if rebuild needed
+            if not rebuild and self.bm25_store.index_exists():
+                self.logger.info("BM25 index already exists, skipping build (use rebuild=True to force)")
+                return
+            
+            # Prepare document texts with progress tracking
+            documents = []
+            self.logger.info(f"Processing documents for BM25 indexing...")
+            
+            for i, doc_data in enumerate(all_documents):
+                if (i + 1) % 100 == 0 or i == len(all_documents) - 1:
+                    progress = (i + 1) / len(all_documents) * 100
+                    self.logger.info(f"  Processing documents: {i + 1}/{len(all_documents)} ({progress:.1f}%)")
+                
+                documents.append(doc_data['document'])
+            
+            # Build BM25 index with progress tracking
+            self.logger.info("Building BM25 index...")
+            self.bm25_store.build_index(documents)
+            
+            self.logger.info(f"✅ Successfully built BM25 index for persona '{persona_id}' with {len(documents)} documents")
             
         except Exception as e:
             self.logger.error(f"Failed to build Phase 2 indexes: {e}")
@@ -756,7 +811,7 @@ class KnowledgeIndexer:
             
             # Initialize HyDE retriever
             if self.retrieval_config.hyde.enabled:
-                cache_dir = str(self.retrieval_config.storage.get_cache_dir())
+                cache_dir = str(self.retrieval_config.storage.get_cache_dir(persona_id))
                 self.hyde_retriever = HyDERetriever(
                     llm=llm,
                     embeddings=embeddings,
@@ -776,7 +831,7 @@ class KnowledgeIndexer:
             
             # Initialize reranker
             if self.retrieval_config.reranking.enabled:
-                cache_dir = str(self.retrieval_config.storage.get_cache_dir())
+                cache_dir = str(self.retrieval_config.storage.get_cache_dir(persona_id))
                 self.reranker = CrossEncoderReranker(
                     model_name=self.retrieval_config.reranking.model,
                     use_cohere=self.retrieval_config.reranking.use_cohere,
@@ -788,7 +843,7 @@ class KnowledgeIndexer:
             
             # Create advanced pipeline
             if self.hyde_retriever and self.hybrid_retriever and self.reranker:
-                cache_dir = str(self.retrieval_config.storage.get_cache_dir())
+                cache_dir = str(self.retrieval_config.storage.get_cache_dir(persona_id))
                 self.advanced_pipeline = AdvancedRetrievalPipeline(
                     hyde_retriever=self.hyde_retriever,
                     hybrid_retriever=self.hybrid_retriever,

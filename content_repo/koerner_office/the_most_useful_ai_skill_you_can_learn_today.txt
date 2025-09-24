@@ -1,0 +1,431 @@
+Are there any low hanging fruit ways that people could make money with these tools? I'm not a technical person. You're not allowed to say that anymore.
+
+You can literally go on YouTube, chat GVT, and learn whatever. We live in a beautiful time. Platforms like NE8make.com or Gumboop, it's a perfect place where a non-coder can experience what it feels like to build something that's actually useful.
+
+I have no doubt you'll be able to build cool stuff. I see a lot of people, Chris, like get frustrated. Oh, it's not working.
+
+Oh, it's like this. Just like give it a few tries. Read up.
+
+Ask chat GVT. Pessimists are often right. Optimists make money.
+
+I challenge everyone watching. Build at least one after this episode, at least one automation. Use the heck out of all the free trials.
+
+And most importantly, have fun learning. When you're having fun, you're not working. The idea of being able to chain certain tasks together, certain actions together, and build workflows is pretty impressive without having to write code.
+
+Like platforms like NE8make.com, like, you know, whichever one floats your boat, I think are a great place for someone who is an idea guy or gal should be experimenting, right? Or Gumboop. Like there's a lot, there's a lot of great tools out there, right?
+
+I think it's a perfect place where a non-coder can start to experience what it feels like to build something that's actually useful. So if I was a non-developer, and I've thought about this for a long time, a lot of the stuff that I would do is I would play with a lot of the tools, like I mentioned, but I would also start to automate even the small things in my life, right? It doesn't have to be perfect.
+
+I think you rob yourself of having to, like, not everything has to be a SaaS. Maybe there's some things you build for yourself, right? And in doing this, you prepare yourself to be that person who builds something that's pretty awesome, right?
+
+So I challenge everyone watching, build at least one after this episode, at least one automation that does something that you do on a regular basis, right? Let's say you get a lot of spam emails, right? Maybe something that reads those and you use GBT to respond in a hilarious troll way.
+
+I don't know what it is, whatever it is. Just something to learn. Yeah, just something to learn.
+
+I think there is value in learning. And oftentimes, especially with like Twitter, every one is perfect. Everything is perfect.
+
+People don't make mistakes. At least that's how it looks like when you're looking at other people's stuff. But I really challenge you to just build, have fun, enjoy the process, break things, learn, enjoy the pain.
+
+That's what it's like being a developer, right? So I think there are certain things that even as the models get perfect, they're not going to read your brain unless you put the chip in. And I don't think people do that.
+
+But I say that all to say, embrace it, right? Embrace it and just have fun. And if it's fun that you're having, it doesn't become stressful.
+
+Because I see a lot of people, Chris, like get frustrated. Oh, it's not working. Oh, it's not this.
+
+It's like tools don't get built in a day. At least something valuable, right? If you're building a language, I understand.
+
+But most people don't even know the different types of databases and are frustrated when after one prompt, the front-end's connection or the back-end's connection to the database doesn't work. Yeah. Give it a few tries.
+
+Try again. Try tomorrow. Maybe read up.
+
+Ask ChadGBT. One thing that I do is for every place I get stuck at, just because I want to learn from it, I will literally either screenshot whatever error I've experienced or where I've got stuck at and ask ChadGBT. What happened and how do I learn from this?
+
+I think just investing in these little small actions prepares you for tomorrow's world. Because I'm one of those people that doesn't think like I'm not an AI is going to replace everyone type of person. I am a person who says AI is going to change things.
+
+And the people who change with the times and update themselves with the times will be the ones who reap the rewards. There's a same. Pessimists are often right.
+
+Optimists make money. Yeah. Yep.
+
+I love that. I love that thing. What is the coolest automation you've built?
+
+And are you willing to show us how it works? Yeah. So my favorite one, it was an AI pizza ordering agent.
+
+Oh, that's cool. Basically, it went to my favorite spot, which is dominos.com. Dominos.ci.
+
+I live in Canada. Domino's is the best pizza place in the world. So what it essentially did was I, the user, had a chatbot interface.
+
+So I also built a web app for this. So it wasn't just an automation and I'll kind of explain how you can build both. There was a chatbot interface and this chatbot interface, I'll use circle had an AI agent I built.
+
+I use agents loosely, but you get what I'm trying to say. And this agent interfaced with dominos' API. Now I will say the reason why I didn't publish this or I don't maintain it is because the API that it used to interact with dominos was like not an official API.
+
+It was like some guy who built it six years ago and like, there's no really secure way to handle payments. So it's a little sus, which is why I only built it for myself. But basically the way it worked is user would come on the site.
+
+The AI agent would notice that they're on the site and would say, oh, would you like to order pizza? And then it would give you four options because that's how I configured it. And then it would go back and forth.
+
+So it would have this conversation with you where it asks you a question, you give it an answer. That answer becomes, gets stored in a DB and then it keeps going back and forth. And then it turns everything that was needed to make the order was set.
+
+Once the AI agent had everything it needed, it would then call the dominos API, make a payment and all that stuff. Here's where things get interesting. And maybe we'll have this as homework for people is I think NEA webhooks.
+
+Yeah. So NEA, and I'm pretty sure gum, that's what's hot in the streets now, I believe. But with NEA, they have what you call webhooks.
+
+And basically what's awesome about this is you can connect whatever automation you've built. Like, let's say I have an automation that every time I get an email, I'm a YouTuber, I get people email me if I need someone who make my thumbnail. So maybe I have an automation that, you know, read all my emails.
+
+And if someone mentions thumbnails, ask how much, right? Something simple, right? I don't want to go back and forth.
+
+I just want to know how much, right? If they're emailing me, they're probably sending me their portfolio, what they have, ask for how much. And then you can get fancy where you can get it to send you like a message to WhatsApp, Telegram and all this stuff, right?
+
+But what's interesting with webhooks is I can connect this automation with a web app. And that's when it becomes interesting. So let's say you have an automation where a user just needs to give you their email.
+
+And then what you will do is you will scrape the internet for a specific shoe. And if it goes below a certain price, then it sends them a notification. You can build that automation in any aid, right?
+
+But how do you package that? How do you sell that? Or how do you build an interface that makes it very, very simple for someone to use that automation, right?
+
+Webhooks is where it comes in handy. So again, I'll have it highlighted here. You can literally just search N and A and A and N and and then webhooks.
+
+And the first doc will take you there. Again, will you get this right the first time? Is this painful?
+
+Will you have to vibe code a few things if you don't know how to code? 100%. But if you do this, most people don't know how to do this.
+
+I have no doubt you'll be able to build cool stuff, right? So I'm very much interested in how do I turn these cool automations or really agents into something that a user can use, right? So this is why you can maybe call this vibe coding plus vibe automating.
+
+Quick question. What if there were a private community out there of people that were building businesses based on this podcast? Well, I just made it.
+
+And it's only for business starters and business builders. It's called TK owners. And it's basically like having me and 100 other business geniuses as your business partner, but you give them 0% equity.
+
+Also, there's going to be exclusive new trends, growth hacks, business ideas, and a database of everything I've ever talked about. You'll find thousands of startup case studies. You'll have weekly ask me anythings with me while I'll answer your questions directly.
+
+You'll be in my Slack channel where I'm hanging out every week and helping members one-on-one. We've got exclusive guest speakers, including some names that you'll recognize. And if you're building something cool, I'll introduce you to anyone you need.
+
+TK owners is the fastest way to plug into a smart, ambitious group of builders and accountability partners that are sharing wins without the fluff. And it's 99 bucks a month about the cost of an energy drink per day. You can join now at TK owners.com link in the show notes.
+
+So vibe coding plus vibe automating, you take something you built in NA8. I will admit as a developer, I like building these myself, right? But I still learn how to use the tools because again, I want to be up to date with the times, but if you're someone who doesn't know how to code, you take some of these automations and then you take a vibe code tool, I'm biased, I'll say tempo, or any other vibe code tool of your choice.
+
+I would really learn in building something, combining these two, right? I think you start to build applications that are more useful than your standard landing page, but you also start to see how these different components work, right? How a website works, right?
+
+Like you don't have to be developer to know that, okay, every like functional app has a front end and a backend, right? The front end is the user facing side, the backend handles all API calls. You know, if a website has username, password and all that stuff, that's authentication.
+
+If I'm doing something on a website, I log out and I come back in and information's there, that means the website has a database, right? These things are not, shouldn't be guarded as, oh, only technical people should know this. I think it's a very easy excuse.
+
+I think you can know base level how these things work. And I guarantee anyone who knows even like, and this is why product managers, designers, they cook with these types of tools because they have technical knowledge. They're not technical people, but they have technical knowledge.
+
+So when you combine that knowledge with these AI tools, whether it be automation, vibe coding, cloud code, whatever it is, almost always, those are the people who end up, you know, having the most fun of building the coolest things. The non-technical people, the product managers. Well, people with a kind of a base level technical knowledge, but not coders.
+
+I say non-technical people in technical organizations or environments. Yeah. Okay.
+
+When it comes to building your average automation like this, what tools do you like to use for what types of tasks? And you know what, let's, let's expand that out. What LLMs, what tools are your go-to tools for certain tasks?
+
+Yeah. So I will draw a line. I have, let's say a spectrum, right?
+
+Let's say from user facing, cool, vibey to genius, code, difficult, right? Let's say that this is a spectrum, right? Yep.
+
+If I'm building anything where code is being generated, or I feel as if the task is very, like requires some sort of calculation or whatever, anything difficult, I'm always going with Claude. Almost always, right? And then on the opposite spectrum, let's say I want to build like a nice image generator, right?
+
+For people to generate cartoons, or I want to build a poem generator, or I want to build an agent that talks in slang, right? Almost always open AI. And if you use open AI enough, like I don't want to open my personal chat GBT because it showed my history and stuff, but my chat GBT starts to talk like me.
+
+Like it will say, bruh, but B-U-R-U-H because I talk like that, right? So like the model is sort of designed to be in a very psychopathic and weird way, like almost personable, right? Yeah.
+
+Yeah. So it almost becomes my go-to for like, I don't even want to be to that guy, be that guy. If I'm building anything B2C, and I wanted to have a personality, I'll always go for something like open AI.
+
+And for anything, again, agentic, writing code, complex stuff. Binary, like binary outputs. I'm going for something Claude.
+
+And then Gemini, honestly, is like an all-star where Gemini can sort of be both, right? And there is a use case to Gemini where like Gemini is also the most cost effective, where, and maybe we can have another graph here just to paint this picture. One of the things that, especially if you plan on building something that's going to be used a lot or scaled is something you want to think about early on.
+
+If we were to compare price, Claude is up here. Gemini is, you know, very cheap. And then open AI, depending on the model is very right there, right?
+
+So there are a lot of things I would take into consideration. In the initial building stage, I'm not really worried about cost and neither are you. So I wouldn't really think too much about that.
+
+I think you should only worry about cost when, you know, you've made more than a million dollars. Then it makes sense. But until then, it's just a matter of what type of app are you like building.
+
+Anytime I'm building anything user-facing, building a basic chatbot, I'm always going for open AI. But if I'm building any coding assistance, anything that I feel like requires more agentic, especially with Claude 4.0, I'm going with Claude, right? And then Gemini is like an all-star where like I, you can pretty much use it anywhere.
+
+They have an image generator. They also have 2.5 Pro, which is a great coding assistant. It's not as good as Claude 4.0, but it's pretty up there.
+
+So this is how like I sort of played myself. Now for someone who is a beginner and, you know, let's say you're building some sort of automation, you want to pick an agent, just go with open AI. Just go with open AI.
+
+Almost always open AI should be enough for you. And I would go open AI and Gemini. Claude is on the more expensive side.
+
+I don't want people to lose money. So I would almost go, always go with open AI. And if you're really like cost is a big thing, then Gemini.
+
+So that's kind of how I look at these models. This is the spectrum I think of in my mind. Where do perplexity and Grok come into play for you, if at all?
+
+I'll be honest, like these models, like these three just do it well for me. Like I have not used Grok in terms of the, like the API. Now I've used Grok like to like answer tweets, to describe tweets.
+
+I'm like, that feature is great, but it's never been like compelling enough where like I wanted to use it. Like I wanted to use the model perplexity. If I'm going to be honest, open AI is like deep research.
+
+And search is just such a great product that I used to use perplexity, but not anymore. So like I'm satisfied with these tools, right? There isn't something those tools do or those models do that is not here.
+
+Now, if one of them launches a new model and it's exceptional and it's well, and it does something better than these guys, guess what? I'll move over, right? Part of the game is being able to know, okay, what's out, what's popping, which one's doing great, and then being able to move over, right?
+
+Just because this is my set today doesn't mean literally tomorrow won't change because I will tell you before cloud 4.0, I was literally using just open AI Gemini. Cloud 3.7 was not good in my opinion, and it just felt like a waste of money. So I literally stopped using cloud and it was just Gemini open AI.
+
+4.0 dropped and I'm completely on the cloud trade now, right? So part of the game is being flexible and malleable to like all the new tools coming out. Are there any like low hanging fruit ways that people could make money with these tools that whether that's building a wrapper or starting us like an agency or services business, AI implementation, AI automation, implementation business, what's top of mind for you nowadays?
+
+Yeah. Like I actually had an interesting conversation at the office today and someone was like, we were talking about like some of the new apps that have come out and myself and a fellow engineer were like, yo, like some of these things are so easy to build. Again, talking from an engineering mind.
+
+And we were shocked that one of the companies we were looking at raised so much money. Like I think upwards to like $10 million for something that honestly would have probably taken us maybe two to three days to build. Right.
+
+And someone who's there said, you know, oftentimes because we're all in this tech bubble, we feel like some of the stuff that's normal to us isn't impressive to somebody else, isn't valuable to somebody else. And sometimes it just takes popping out of that bubble. So I say that to say the best opportunities, at least that I think right now are those where you look outside of this tech bubble, right?
+
+Because in this tech bubble, look who you're competing with, right? There are so many bright minds and so many engineers, non-technical people and technical people. This tech bubble we're in is not the best place to start, especially if you're a beginner, right?
+
+So if you are not a teenager and you're an adult, you've had some experience or you work a job, you've been part of some industry, I would literally start there. What are some things in your industry, at your job, at your office, at your company? What are some workflows?
+
+What are some tasks? What are some things that you dread? You would be surprised how receptive people would be if you solved problems that you genuinely understood, right?
+
+Let's say, for example, Chris, I'll throw out a free idea. I really wanted to build an AI bookkeeping. Tax season is hell.
+
+Keeping up with receipts is annoying. I download all these apps, QuickBooks, Xero, whatever. They mess everything up.
+
+Everything is not organized well. My rent transactions are categorized as business. It's a mess, right?
+
+So there's a lot of manual and tedious work. And there was a part of it that I wish this app existed and maybe I should build it. But I didn't build it.
+
+The reason why I didn't build it is I'm not a bookkeeper. I'm not an accountant. So I would build something surface level and sure, it would work for me.
+
+But imagine an actual bookkeeper. Imagine an actual accountant, someone who's in the trenches, who knows the pain points, who knows the long tasks. I think if you are that person, and I'm not saying you have to be professional.
+
+I'm saying you just have to have a job, literally. And I'll talk to the folks who don't have a job to the youngins. For those people, that is the best place you should look.
+
+It's terrible, especially as a beginner, to be like, what's the next? Can I maybe build a model or try to do something egregious and insane that's in this tech bubble that there are thousands of people who are in this space daily building it? But if you're someone who's non-technical, who is having fun using these apps, who's learned how to build something cool with these tools, start from industry in, right?
+
+Number one, the best problems to solve are your own. Number two, the best problems are to solve are the ones that you're in that industry. You're in that business.
+
+You're in that, like that to me is the goldmine. Because you know the customer, you have the customer, you work there, you are there, you know the problems, and you even know how to communicate, right? Because building it is part one.
+
+Being able to market it is a whole nother behemoth on its own. And you can do that well if you're in that industry, right? So I would start there.
+
+My place, my job, my people, whatever that situation is that you're familiar with, solving those problems, solving. For example, I have a friend who works at a pharmacy and he's having fun building things for pharmacies. And it's not because he's a super technical genius, but it's because he's worked in pharmacies.
+
+He knows how annoying billing is. He knows how annoying like the software is that where they register medication and all that stuff. He also knows all the compliance that's required, right?
+
+And these are all boring problems for someone who's not in that space to solve. But for someone who's in the tech space to solve, if you're stuck in that tech bubble, what does solving pharmacies problems sound like? It sounds boring, but that's where the money is.
+
+If you can solve the problems for a specific industry, especially you're a part of, you're golden. I love it. I mean, even if you're, everyone's in an industry, but you're having a hard time thinking of problems in your industry, ask Chad GPT, like, Hey, I'm a pharmacist.
+
+I want to build an app for other pharmacists. What are some common pain points? I would use deep research for this.
+
+I would say, I want you to go deep, like go to Reddit, go to message boards, go to social media, find all the gripes, all the negative tweets, all the complaints about the pharmaceutical industry and list them all out for me. It lists out 20. Okay.
+
+Take the seven that you think are most relevant, pace those down and say, okay, now I want 20 more that are a lot more like these seven. So you can just keep refining it. Pretty soon you'll have 30 to 50 problems and all of them will ring true to you as someone in the industry.
+
+And then you can say, okay, I'm going to use, I'm going to take the top three and build wrappers from these three and distribute them to my friends and coworkers just to test and play around with and see what feedback I get and then iterate from there. Right? Yep.
+
+100%. And I think like you mentioned, like going back to actually using AI to do the research, right? So video is cool, but you know, what's better long form audio via podcast and my newsletter, TKO pod.com.
+
+Go there to subscribe for free to my newsletter. It's one email a week, very tactical. And then go to my audio podcast, three episodes a week, stuff like this.
+
+You're going to love it all free. No sleazy sales, bitch. TKO pod.com.
+
+I've actually done something similar where I go to church every Sunday. I serve at a church, I teach at a church and you know, there's certain things I've realized that I'm like, Oh, like I live in Canada as well. So for example, payments for a lot of charities at the softwares are either terrible, the percentage they charge is very, very high.
+
+And like, you can't just use like Stripe, you have to build a website and stuff like that. So I was like, Oh, I'm going to build a payment solution for my church. And I did that.
+
+If I wanted to turn it to a business, I could, I don't have time, but if I wanted to, I could, but you see, and I almost guarantee if I wanted to build that business, it would do so well because it's a problem I experienced that I know the industry experience, I built the solution and I'll price it much fairer than the competition. It's just a perfect formula. So I think starting where you are and speaking to your people.
+
+And when I say your people, I'm not talking about race, creed or anything like that, but I'm talking about your industry, in your business, in your line of work. I am telling you the things that if you think in a tech bubble mindset, you'll always think, Oh, this is simple. This is boring.
+
+But at the end of the day, first principles, people solve, people pay to get their problems solved. As long as you're entertaining people or solving their problems, you should be getting paid. Right?
+
+So that's how I think of things don't be too tech inflated. I think sticking it to your industry and the problems in your space and solving that is a great way to start. I like the back to your bookkeeping, your AI app for bookkeeping.
+
+It reminds me of Cal AI. And for those listening, Cal AI is an app that basically said, MyFitnessPal has hundreds of millions of users. It's a nine figure company, or it has a hundred million dollars plus of revenue.
+
+We're just going to do that except AI first. Right? And that one sentence, that one liner, that model is like that, but AI first, right?
+
+Instagram was like, Oh, Facebook. That's cool. How about mobile first Facebook pictures forward mobile first.
+
+We're not even going to have a desktop site at all. We don't even worry about that. And all these others, other apps in like the late two thousands, early 2010s, their whole model was just, Oh, we're going to take that website and do mobile first.
+
+An actual desktop version of this may never happen. And that's fine. So now it's just like, Oh, we're just going to do that except AI first, AI first and foremost, AI foundational.
+
+So that could be QuickBooks except AI first. That could be anything except AI first and QuickBooks, MyFitnessPal and all of those, they're going to integrate AI, but it will, they will never be AI first. They'll never be built with AI first and foremost.
+
+Right? And one thing I would add to that too, is like a lot of the, like the new apps like Kali and stuff that you mentioned, they have one big differentiator. And this is like, I plan on making a video on this.
+
+And this is going to be a moat for a lot of people. And that's user experience, how your app looks and feels. I'm notorious for two things.
+
+If you know me personally, my like IDE, like the, where my, where I write my code, I change the theme every like two, three days browsers. I change every five or six. And the reason being is I love the place that I'm working or the apps that I'm using or the sites that I'm using, whatever I'm using, I want it to look and feel nice.
+
+I say that to say that most people, most people, most people, most people, most people, if you focus on crafting a beautiful and elegant user experience, that most of the time is almost enough to do well. You have like, for example, there are ticketing softwares, like where you can like use, like, you know, you can like, let's say you're running an engineering team and you need to track like tickets and who's building what and you assign tasks and stuff. There's stuff like Jira, for example, Jira has been around for like, maybe as long as I have.
+
+And it's an ugly app. Yeah. Yeah.
+
+It's ugly. And, but then you have something like linear, which basically is Jira. But look at that.
+
+Which one? Jira, except pretty. That's their, their business.
+
+Pretty fast, right? Like they're very thoughtful with every single thing that they do. And I think in a world where everyone is saying, Oh, AI is coming for the devs.
+
+AI is coming for this. The people who care about these little things, right? How the app is crafted, how the user experiences, the features, what makes things pop, what makes someone want to just use their app, even when they don't need to.
+
+I think those people went big. Yeah. UX becomes a moat.
+
+I call it the sauce. I think UX becomes a moat where if you're someone and homework for anyone who wants to do this is I would collect sites and apps that you wish you built. Not because they made money.
+
+We'll worry about the money stuff later. Yeah. Yeah.
+
+They made money, but because it made you feel a special type of way for me, like I use linear and every time I use it, I'm like, man, I wish I built this. Like, yeah, I wish I could put my face on this and say, I built this. And that's how software is good.
+
+So I think being able to craft and develop a taste for how user experience should be, how apps should be, how sites should be, even as a non-technical person can be very fruitful. I actually think, Chris, there's going to be a time where even though the models are going to get better that, and this has happened for years, but I think it's going to happen even more that a lot of non-technical people are going to hire, are going to partner up with technical people, right? I think we're still going to enter, we're still going to be in a world where you like devs are needed and will help supercharge things.
+
+But I think it comes to a point where the non-technical person will start to be valuable too, if they take these things into consideration, right? But if you just, you go to some app and you're like, build me, no plan, no idea, no understanding, right? And again, this is not an excuse.
+
+The excuse isn't, oh, I'm not a technical person. You're not allowed to say that anymore. You can literally go on YouTube and learn whatever.
+
+You can literally go chat GVT and learn whatever, right? So say that to say, we live in a beautiful time. Well, like they say, if you build it, they will come.
+
+And I think you would say, if you build it beautifully, they will come, right? Like beautiful apps. They do.
+
+I mean, look at it this way. Let's say you're looking for a co-working space in Canada. You go tour two of them.
+
+You go into one and it's like a little dirty. It's kind of gross and there's no artwork on the walls and it's just bare bones. You could tell that they cheaped out.
+
+They didn't put much thought into it. They just wanted to get the max value per square foot as possible. And they did some things to kind of look nice, but you could just tell, eh, this is nice.
+
+And in a vacuum, if this were my only option, I'd probably use this because I need a co-working space. And then you go to the next space next door and it's gorgeous. And it's, there's indoor plants and there's furniture from restoration hardware.
+
+You're like, that's a $12,000 couch. I feel good in here. This is good energy.
+
+Like you're going to not just choose that one, but you'll probably pay twice as much to use that one. So everything I'm outlining is obvious. Like everyone would rather choose that one, but we don't treat our software like that.
+
+We just throw out something, our MVP. And then if it works, then we leave it like that forever. Cause if it's not broke, don't fix it.
+
+But like, look at Airbnb, they were designed first from day one and it's a hundred billion dollar company. Like that was their whole strategy design, right? We're going to have a beautiful design.
+
+And I think, I think it matters. I think it matters more than ever. And like, unless you are building something very innovative and game changing, maybe you can get away with having ugly UI, design, but we're entering a time where the expectations high.
+
+Like if I see a site and it looks like it was made in 2005, unless it's a government site or whatever, like, or like some, like, you know, farm, like whatever, like a hospital site or whatever, there is no excuse. Right. Cause they, they have like compliance and all that stuff and, or banking, whatever that's fine.
+
+But any business, any SaaS, any startup, like design is super important. So make sure that, you know, you develop that taste and that craft. And it comes from, you know, looking at sites that you like, for example, I can go on the gum loop site and maybe find, you know, I like the little diagram they have here.
+
+And another thing you can do is actually go to popular, like frameworks. Like for example, there's magic UI, like this is like a component library. Like you can see these different designs.
+
+Yeah, sure. They're meant for developers, but again, just being able to develop that taste of like, Oh, this, this is a nice animation. Right.
+
+And then you have obviously the creme de la creme apple side, like what's beautiful about apple? Why? Like what's their style?
+
+Oh, you see, they have a specifics font. You see that they're spacing and the letters and the mental grid. Like I actually spend a considerable amount of time just doing this, admiring these beautiful design, elegant user experiences.
+
+There's another one. This is a crypto startup, but nonetheless, they're again, like a lot of people hate. I bet if you went to the site and you just used it, you'd feel a certain type of way.
+
+Right. So I think these things become a moat and you don't have to be a technical person to develop this taste. And if you're betting on the fact that the models are going to get so good that you'll be able to build stuff for you, I think being able to develop the part of you that can help guide the model to build stuff like this is important.
+
+Right. And that through time that could come through building stuff and breaking it that comes through like, you know, testing out all these tools. And I don't hear anyone speaking this, but I highly suggest make some friends that are developers because I know everyone's talking about, Oh, developers are going to get replaced, but I'm telling you, you have you a couple of developer friends that you keep around.
+
+You buy them pizza every one in a while. Once in a while, I am telling you, it will yield results, not only from the knowledge, but also from like, you know, maybe you partner up together and build stuff together or maybe they know of tools that you don't know, or maybe they even answer or help things like the amount of like people that I know who are like cousin of mine was vibe coding and the tool he was using. I'm just couldn't get the API stuff down.
+
+And he like spent two, three days. So guess what I did, Chris, I hopped in, I fixed the firm. It was a 30 second fix for me.
+
+It's easy. Right. I think.
+
+And then he continued to build his app. Right. So make some developer friends.
+
+I think it'd be very helpful. That's a good idea. When it comes to beautiful design, do you know of any AI tools out there where you can say, Hey, copy and paste this website or copy and paste this app?
+
+Unfortunately, many of them will not give you a one-to-one copy. You will have to, I think this is a workflow I would say if I were to do that. So step one is screenshot, right?
+
+Step two is obviously feed screenshot to AI. Which AI? Build again, whatever vibe code tool you want to use it, it honestly at this point in terms of design, wasn't like, it doesn't really matter.
+
+You start to see that certain models have like certain design tastes or like lean certain ways. That's kind of up to you to decide, right? All of them.
+
+But you're going to get a result and the result is maybe 40% of what it actually looks like. The way you get the 40% to 100 is by going through every section of the site that doesn't look pixel perfect and telling it. So say, for example, I take a screenshot here, right?
+
+Let's say I take a screenshot here and let me just pull the screenshot here. And I drop this in the model. I tell it, make it look like this.
+
+I almost can guarantee you it will not. It will get the layout down. It will get product resources, pricing, customer blog content, contact down and get the buttons down.
+
+We'll get the text down, but it won't get it. It'll mess up someplace. So what my job is now is to go section by section and start to tell it to fix it.
+
+So, for example, something that you might not have noticed here. Look how rounded this button is. This is not a square button, right?
+
+It has a little bit of roundedness to it. So what you're going to do is you're going to you can screenshot this again and then upload it. Or you could just tell it the buttons aren't the same.
+
+Please round it more. So that's one part you can fix. And then you can maybe see that you notice how there's a grade like it gets darker here, right?
+
+It's not just white like it's white and turns to gray and starts to get darker and darker, right? You start you have to pinpoint each section where it does not look perfect and then make it perfect by telling it. Now, here's advice that might sound counterintuitive, but hear me out.
+
+If you're building something and I used to say this and I'll explain why I used to say this, but I'm going to say the opposite. If you're building something, I think the landing page should be the last thing you should focus on. I think design should have its own time.
+
+If you're thinking about design and features at the same time, especially as a non-technical person, I wouldn't do it. I think design deserves its own time. I used to tell people build a landing page first, and I think for very, very beginner people, I would say that.
+
+The reason why I say that is the dopamine, right? It's momentum. Yeah, it's momentum, right?
+
+It's like you get the landing page done and it just feels great. It's exciting. Like you have this dopamine rush.
+
+It helps you to keep going. But if you're on the discipline side, you've done this before. This isn't your first rodeo.
+
+I would start to build the stuff that you're actually trying to build, and then you could put the landing page on top and focus on design, right? But if you're a complete beginner, start with your landing page, get the dopamine hit, get excited. But I would not start with the design first unless I have no idea what I'm building and I just want to have a nice landing page.
+
+Yeah, beautiful. Two questions. Number one, can you explain in two sentences what MCP is and why people should care about it?
+
+The simple phrase I've been hearing is the USB-C for LLMs. Okay. Meaning like the new iPhones have USB-C.
+
+My MacBook has USB-C. That person's Android has USB-C, right? We all can use the same charger.
+
+We all can share the same SSD drive, right? It makes it easy for all these different devices to use that external functionality. In the same way, what MCP allows you is it allows for LLMs to easily access external services, right?
+
+So, for example, linear, right? Linear is a ticketing tool, right? Let's say I have an LLM here.
+
+It could be Claude. It could be whatever. And I have linear.
+
+I have linear over here. Now, if I want my LLM to have access to linear without MCP, let's just say MCP doesn't exist, I would have to go to linear's API documentation, right? I would have to learn how their documentation works.
+
+And then I would have to basically write some code. And I have to, assuming I have some backend, I'd have to write some code to connect to linear's API. Not difficult.
+
+But what happens when you have 20 different things you want to connect with? 20 different APIs, documentation, not everything is the same. It gets very annoying.
+
+MCP is a standard where third-party services like linear will follow a specific rule set on how to build their MCP server. And the LLMs, aka the MCP client, knows exactly how to connect to these servers, right? It's like the USB port.
+
+So the LLMs have the USB port. Linear and all these third-party tools are building their product with a USB-C in it. So it's easy to connect and plug in, right?
+
+And for most people, this might not sound like a big deal because, again, there are still LLMs that connect to APIs. But from a production standpoint, from building out these robust – like if we ever wanted a Jarvis, right, like an Ironman, where you tell the assistant, oh, fetch my email, contact this person, make sure to close this ticket and all that stuff. To build it without something like MCP, it's a very robust job.
+
+Now, MCP isn't perfect. There's still a lot of caveats and stuff like the Anthropic team and stuff are figuring out. But it's to say that it's a standard for LLMs.
+
+And it means that we're going to be living in a world where the LLMs will essentially have access to anything that has an MCP server, which at this point is almost every third-party SaaS service out there. Okay. Okay.
+
+Last question. Is it worth someone trying to learn how to use MCPs and NNN or 80-20 of it is learn how to use Lindy and Gumloop and Zapier and you're good to go? Or do you think it's worth taking that extra time?
+
+Okay. So my advice is different for different people. If you don't have a lot of time on your hands and you maybe have one or two hours a day, I would just be an avid user of these LLMs, right?
+
+Use ChatGVT. Before you Google it, maybe ChatGVT at first, right? Get into that habit of using those tools.
+
+But if you are someone, like maybe you don't have four kids and you don't have this big family that you have to take care of. I understand not everyone has a time, so I want to be understanding that. But if you have all the time, you work nine to five and after five, you're free.
+
+Use everything. Learn everything. Maybe you like something.
+
+Maybe you won't, right? Just listening to what I think you should learn is pointless because literally as soon as this episode airs, tomorrow, one of the tools might launch a crazy update. And maybe everything I've said changes.
+
+The one thing that I want people to take from this is we're entering a time, we're entering a new, I don't want to sound cliche and say industrial revolution, but we're entering a time where things are changing. And being part of the change means learning everything. Some of it will fail.
+
+Most of it will fail. Some of it will succeed. But the knowledge, the experience, they can never take that away from you.
+
+So use all the tools. Learn all the tools. Use the heck out of all the free trials.
+
+A lot of these tools have free trials. Take advantage of all of that. And most importantly, have fun learning, right?
+
+I think when you're having fun, you're not working. When you're having fun, it's not work. And when it's not work, you can do it continuously, right?
+
+So that's the biggest advice I would give to people. Have fun building using these tools. Man, that was beautiful.
+
+Thank you, Mike. I appreciate that. It was amazing.
+
+Where can we find you? Yeah, so I'm on X at Rasmicki. I can maybe pop it up here.
+
+You can find me here. I troll every now and then. I also have a YouTube channel where I talk about dev, non-dev stuff.
+
+Obviously, Chris, I really appreciate you bringing me on here. It was a pleasure. And I hope people learn something.
+
+Of course. Thank you. All right.
+
+What'd you think? Please share it with a friend. And we'll see you next time on the Kerner Office.
+
+Thank you. Thank you. Thank you.
+
+Thank you. Thank you. Thank you.
+
+Thank you. Thank you. Thank you.
+
+Thank you. Thank you. Thank you.
+
+Thank you. Thank you. Thank you.

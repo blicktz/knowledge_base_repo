@@ -72,17 +72,27 @@ class StorageConfig(BaseModel):
     bm25_index_path: Optional[str] = Field(default=None, description="BM25 index path")
     cache_dir: Optional[str] = Field(default=None, description="Cache directory")
     
-    def get_bm25_index_path(self) -> Path:
-        """Get BM25 index path, using default if not specified"""
+    def get_bm25_index_path(self, persona_id: Optional[str] = None) -> Path:
+        """Get persona-specific BM25 index path"""
         if self.bm25_index_path:
             return Path(self.bm25_index_path)
-        return Path(self.base_storage_dir) / "indexes" / "bm25"
+        
+        if not persona_id:
+            raise ValueError("persona_id is required - single-tenant mode is no longer supported")
+        
+        base_dir = Path(self.base_storage_dir)
+        return base_dir / "personas" / persona_id / "indexes" / "bm25"
     
-    def get_cache_dir(self) -> Path:
-        """Get cache directory, using default if not specified"""
+    def get_cache_dir(self, persona_id: Optional[str] = None) -> Path:
+        """Get persona-specific cache directory"""
         if self.cache_dir:
             return Path(self.cache_dir)
-        return Path(self.base_storage_dir) / "retrieval_cache"
+        
+        if not persona_id:
+            raise ValueError("persona_id is required - single-tenant mode is no longer supported")
+        
+        base_dir = Path(self.base_storage_dir)
+        return base_dir / "personas" / persona_id / "retrieval_cache"
 
 
 class PipelineConfig(BaseModel):

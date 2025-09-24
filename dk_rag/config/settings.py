@@ -12,6 +12,9 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
+# Import Phase 2 retrieval configuration
+from .retrieval_config import Phase2RetrievalConfig
+
 
 class LLMConfig(BaseModel):
     """Configuration for LLM providers"""
@@ -154,6 +157,7 @@ class Settings(BaseModel):
     validation: ValidationConfig = Field(default_factory=ValidationConfig)
     development: DevelopmentConfig = Field(default_factory=DevelopmentConfig)
     map_reduce_extraction: MapReduceExtractionConfig = Field(default_factory=MapReduceExtractionConfig)
+    retrieval: Phase2RetrievalConfig = Field(default_factory=Phase2RetrievalConfig)
     
     # Additional metadata
     version: str = Field(default="1.0.0", description="Configuration version")

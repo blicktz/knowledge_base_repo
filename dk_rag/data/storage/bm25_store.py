@@ -65,6 +65,10 @@ class BM25Store:
         # Try to load existing index
         self._load_index()
     
+    def index_exists(self) -> bool:
+        """Check if BM25 index exists on disk."""
+        return self.index_file.exists() and self.metadata_file.exists()
+    
     def build_index(
         self,
         documents: List[str],

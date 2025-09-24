@@ -69,8 +69,8 @@ class CrossEncoderReranker:
             self.cache_dir = Path(base_dir) / "retrieval_cache" / "reranker_logs"
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         
-        # Auto-detect device if not specified
-        if device is None:
+        # Auto-detect device if not specified or if "auto" is requested
+        if device is None or device == "auto":
             if torch.cuda.is_available():
                 device = "cuda"
             elif torch.backends.mps.is_available():

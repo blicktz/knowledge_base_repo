@@ -324,13 +324,24 @@ class TestConfiguration:
         """Test storage path configuration"""
         config = Phase2RetrievalConfig()
         
-        bm25_path = config.storage.get_bm25_index_path()
-        cache_dir = config.storage.get_cache_dir()
+        # Test with persona_id
+        test_persona_id = "test_persona"
+        bm25_path = config.storage.get_bm25_index_path(test_persona_id)
+        cache_dir = config.storage.get_cache_dir(test_persona_id)
         
         assert isinstance(bm25_path, Path)
         assert isinstance(cache_dir, Path)
         assert "bm25" in str(bm25_path)
         assert "cache" in str(cache_dir)
+        assert test_persona_id in str(bm25_path)
+        assert test_persona_id in str(cache_dir)
+        
+        # Test that methods require persona_id
+        with pytest.raises(ValueError, match="persona_id is required"):
+            config.storage.get_bm25_index_path()
+            
+        with pytest.raises(ValueError, match="persona_id is required"):
+            config.storage.get_cache_dir()
 
 
 if __name__ == "__main__":

@@ -324,6 +324,26 @@ class VectorStore:
             self.logger.error(f"Failed to get document {doc_id}: {e}")
             return None
     
+    def get_all_documents(self) -> List[Dict[str, Any]]:
+        """Get all documents from the collection for BM25 indexing."""
+        try:
+            results = self.collection.get(include=['documents', 'metadatas'])
+            
+            documents = []
+            for i, doc in enumerate(results['documents']):
+                documents.append({
+                    'document': doc,
+                    'metadata': results['metadatas'][i] if results['metadatas'] else {},
+                    'id': results['ids'][i]
+                })
+            
+            self.logger.debug(f"Retrieved {len(documents)} documents for BM25 indexing")
+            return documents
+            
+        except Exception as e:
+            self.logger.error(f"Failed to get all documents: {e}")
+            return []
+    
     def clear_collection(self):
         """Clear all documents from the collection."""
         try:

@@ -1,0 +1,385 @@
+Replit is the granddaddy of all Vibe Coding apps out there, and they just released a new update. It's called Agent 3. Agent 3 will go for up to 200 minutes on your behalf, troubleshoot, debug, solve problems on your behalf in the background.
+
+I had to try it out, and I know that you guys love the videos where I find a business idea, I validate a business idea, and then I launch a business idea all in one go. So that's what I'm going to do today. And I'm going to show you a new method for finding business ideas that is so obvious, so stupidly simple, right under your nose every single day, that you're going to kick yourself.
+
+This one's a certified banger. Alright, what should I build? Well, let's go to the world's most visited website, google.com.
+
+Now, as a business owner, I know that invoicing software can be a pain, and it's hard to find invoicing software that is specific to a certain industry. Let's start by going to Google Trends and type in invoicing software. Okay, I'm going to go back the last five years.
+
+Boom, look at that, up and to the right. Especially over the last year, for whatever reason, invoicing software is surging. So we know there's demand for it.
+
+Now, I'm going to go to google.com, just to the homepage, and type in invoicing software 4. Okay, now the autocomplete tells us where the demand is. It's giving us a combo of which of these keywords have the highest search volume, and which of them are trending in the right direction.
+
+So the first thing it says is small business. I like that, that's kind of what we're thinking here, but it's too broad, way too broad. If I read down the list, it goes small business free, freelancers, contractors, mechanics, Mac, large business, sole traders, yada yada.
+
+I think it's very interesting that before freelancers, before contractors, it's small business free. That shows me there's demand for free invoicing software. Now, this is a very tricky word.
+
+Free to them doesn't necessarily mean unpaid to you or to me. Because with invoicing software, Stripe is going to charge about 2.9% to process that credit card payment. But we can mark that up.
+
+And the business owners that are using our invoicing software can mark that up if they want. So maybe our credit card processing fee is 3.5%. So then we can make half a percent of every single cent pushed through our software.
+
+And then our customers can mark it up, or they can just pass it on if they want. It's a win-win all the way around. So now I'm going to change this and say free invoicing software for small business freelancers, yada.
+
+Okay, cool. Let's do, I'm going to go all the way down here to contractors because that is a massive industry. That could be a home service business.
+
+It could be a home builder. It could be a roofer, general contractor, subcontractor. You get the idea.
+
+So let's make free invoicing software that's AI enabled and built with AI because we don't know how to code for contractors. Cool. Okay, so as luck would have it, Replit just released what they're calling Agent 3.
+
+Now what is Agent 3? It's basically Replit on steroids, Vibe Coding on steroids. Instead of it thinking for a few seconds or a few minutes, it will think and go and act on your behalf, search the internet for solutions, problem solve, troubleshoot for up to 200 minutes straight.
+
+It claims to have 10 times more autonomy than version 2. If you build an app, it will self-test the apps in a real browser and then it will fix any issues it has automatically before even consulting with you. It can generate other agents for you and basically it just allows you to be hands-off for hours at a time while it just works and grinds.
+
+So this is going to be my first time using it. Let's see how it goes. Here's my prompt.
+
+Build me a free invoicing software for contractors where my customers can use natural language either via SMS or a chatbot window. I'm actually going to change that either via email or a chatbot window to create and send invoices that have a Stripe link attached. I only need a Stripe and Resend API and I'll get to that in a minute.
+
+It should be very simple. So the functional version should enable my small business customers to email or use a mobile-friendly chatbot window. Something like send an invoice for $800 to Mary Smith for tree trimming services.
+
+We're going to check the box for web app because that's exactly what this is. We're using agent 3 automatically and we're going to go. Okay.
+
+Now, while this is working, we're going to go to Resend. Resend is basically an infrastructure layer that powers email marketing services or transactional emails such as sending an invoice from a business. I've never used Resend.
+
+I don't have an account. I just heard that it's a good solution for transactional emails like this. This is not an ad.
+
+Get started. Log in with Google. Wow.
+
+I like that. One click and I added an API key. And it makes sense because this is not a publicly facing email marketing service like Beehive or MailChimp.
+
+This is meant to be the plumbing for sending emails. Mostly transactional emails. You would never use this for a newsletter or for your Shopify store.
+
+Believe it or not, just because you're watching this doesn't mean you're subscribed to my channel. YouTube's going to show you stuff even if you're not subscribed to it. Over half of people that watch my videos are not subscribed.
+
+It would mean the world to me if you just hit subscribe. Thank you so much. Okay.
+
+So easy enough. With a few clicks, we already have our Resend API. I'm pretty sure under their free plan, we can do what we need to do.
+
+We still need our Stripe API. So I'm going to go into Stripe. Now I need to create my Stripe API key.
+
+I'm going to go to Stripe. Click on Developers. Click on API keys.
+
+Create secret key. For building my own integration. I'm going to type in Invoice Biz Create.
+
+Boom. There's my key. Those should be the only two API keys I need for this.
+
+Let's go back to Replit. Okay. It says, I'll include the following features.
+
+Natural language processing to extract invoice details from text input. Mobile-friendly chatbot. Email interface that processes incoming emails to automatically generate invoices.
+
+Invoice generate. Yada, yada, yada. It says it's going to take 20 plus minutes to build the entire app.
+
+Yeah. I don't care about design. Let's go for it.
+
+Let's one-shot prompt this bad boy. I'm going to see if I can give it my API keys early. Where can I submit my API keys for both Stripe and Resend?
+
+They are ready. Now what Replit will do now is put your prompt into a queue. It used to get tripped up because people, such as myself, would ask it to do like seven things all in a row.
+
+Boom, boom, boom, boom. And they would only do like two. And then we get mad over here like, what are you doing?
+
+You're hallucinating. And as Louis C.K. would say, it has to go to space.
+
+In other words, be grateful that we have this miracle that will build apps for us. We're asking it to do too much. So Replit has gotten ahead of that.
+
+And it doesn't really let us do that anymore, which honestly is a good thing because it helps better set our expectations. Now, an SMS or a texting integration for this would be perfect. That way, if you're out on a job site, you just cut down a tree.
+
+You want to send them an invoice. Instead of logging into your CRM, filling out their name, their phone, their email, their address, and all that, you can just text a number and say, send Mary Smith an invoice for $800 for tree trimming services. Boom.
+
+And then Mary just gets it just by you sending a text. Okay. Or you just open your chatbot window and you say the same thing.
+
+And then you tell the chatbot what Mary's phone number is. And then Mary will get a text with a link to an invoice that has a Stripe checkout link. Now, here in the United States, they have what's called A2P registration that takes about two weeks.
+
+And that's a regulation enforced by the government that requires dirty marketers like myself to go through this long, arduous process to register a phone number, to make it legal to text people, whether it's a marketing text or a transactional text such as this. So can we do that? Yes.
+
+But for the purposes of this video, that's going to take a couple of weeks. You're going to do it through Twilio. You're going to create an API key in Twilio.
+
+You're going to buy a phone number in Twilio for $1 a month. And then you're going to go through the A2P registration. But in order to get something launched, we need to launch an MVP, a minimum viable product.
+
+So if we're building a car, instead of starting with wheels and then adding a body and then adding an engine, that's not an MVP. If we're building a car, we need to start with a scooter because at least with an MVP, you can move around from point A to point B. Then you upgrade to a bike.
+
+Then you upgrade to a motorcycle. Then you upgrade to a car. That's the right way to build a business.
+
+So instead of waiting until we have everything perfect, we've got A2P registration. We have the perfect design. We have the perfect logo.
+
+We have the domain name. We have the marketing plan, business plan. And then maybe we can launch.
+
+By the time we get to launch day, we're probably never going to be to launch day because we put so much friction, so many roadblocks between us and launch day that we never launched. So we're in the business of launching fast, moving fast and breaking things, launching with an ugly product that we're kind of embarrassed about, but that works. It works at least a little bit.
+
+Because if you're not at least a little bit embarrassed by version one of your product or service, then you probably waited too long to launch. Okay. We need a domain name for this thing.
+
+I like the name invoice freely. It's four syllables. It's easy to spell.
+
+It says what you do. I'm not pigeonholing myself into only home services or into only plumbing. Any business that sends an invoice could hear the name of that, know how to spell it and think this is for me, or at least this could be for me.
+
+So this domain name is unregistered. It's 11 bucks. I'm going to go ahead and buy it.
+
+Now, the haters out there will say, invoicing software is such a crowded market. There are so many solutions to invoicing software. And to them, I would say, I know, but you know what?
+
+There's 33 million small businesses that all need invoicing software, and most of them are not happy with it. So I don't care. I don't care.
+
+Huge market means huge demand and more surface area for being able to stand out, more opportunity to stand out. Even if we had 100 customers on this business, that could be $1,000 a month. That's awesome.
+
+With almost no cost. Okay. I'm back on Replit, and it's telling me it needs my four API keys.
+
+I almost forgot about my OpenAI API key because we're going to be using natural language to ask OpenAI through our app, through the API to go do things for us. So we're going to click this plus button right here. Then we're going to go to secrets.
+
+This is where we store our secrets. We're going to click new secret. We're going to type in resend underscore API key.
+
+I go back here. Boom. Copy.
+
+So just to confirm, I asked Replit, hey, I added my resend API key to my app secrets. Did you see it? And it's like, yes, I see it.
+
+It already has my OpenAI API key. It should have my Stripe key. Nope.
+
+It doesn't for some reason. So Replit needs two Stripe API keys from me. Here's a pro tip for you.
+
+The Stripe secret key starts with SK and then the Vite Stripe public key starts with PK. All of those are in the API keys tab within the developer section of your Stripe account. Don't get intimidated by this stuff.
+
+ChadGPT can walk you all through it. So new secret, Vite Stripe, public key value. Public key is in PK.
+
+Now it should have everything. Continue building. You should have all four API keys.
+
+Now please verify that they all work. Okay. It says it has all four of my API keys and it's going to verify that they're all working properly.
+
+Okay. All four are working perfectly. There it is.
+
+There's our preview. There's our dashboard. It's right there.
+
+Let's give it a shot. Send an invoice to Mary Smith for $800 for tree trimming. Her email is, and then I'm just going to type in my email.
+
+It even added a dashboard that shows how many invoices I've sent out, how much I've paid this month, how much is pending, how many customers I have. I didn't ask for that. Super cool.
+
+All right. Perfect. I've extracted the following invoice details.
+
+Customer, Mary Smith. Amount, $800. Service, tree trimming, due date.
+
+Should I create this invoice and send it to the customer? Yes. Now, if I wanted it to not prompt that back to me, I could ask it to do that, but I kind of like confirming it.
+
+Okay. I did not receive the invoice. The dashboard updated.
+
+It shows I have one invoice and one customer, but no invoice arrived. Now this is cool. Very, very cool.
+
+All right. I can click this eyeball. And I can see the invoice that it created.
+
+This is as Mary will see it, I assume. And I see a Stripe link. Let's see if that works.
+
+Okay. All right. That is cool.
+
+It pulled up Stripe. Like it's right there. Stripe.
+
+There it is. Boom. In case you can't see it.
+
+It's right there. That is impressive. I could pay that right now and it would work.
+
+I just click send again. I'm going to ask it. Everything is working great.
+
+Except the email is never arriving to the customer. I told the chat bot to send the invoice to Chris at cofounders.com. Okay.
+
+While it's working, I'm going to go ahead and publish this on the custom domain that I bought. Because that can take a few minutes to populate. I want to be efficient with our time.
+
+So I'm going to click publish. Then I'm going to click publish. You can't publish to a custom domain until you publish to the replet domain first.
+
+So the reason that my email didn't send is because of the from email address. The email service is trying to send from the email address invoices at yourcompany.com because there's no from email environment variable set. But this domain isn't verified with resend.
+
+That makes perfect sense. If I owned yourcompany.com and I went into resend and verified my domain name, which basically gives me the authority to send emails from that domain name. So resend knows that I'm not a spammer or a scammer.
+
+Then it will send it. But I haven't done any of that. So it's now telling me to add a from email in my secrets.
+
+So I'm going to go in here and put a different email of mine in there. Now the question is, am I going to have to validate that domain name from resend? All right.
+
+It's going to retest it again. Okay. Yep.
+
+I'm still bugging out. I think I need to go into my resend account right here and add a domain. Use a domain you own to send emails.
+
+So, okay. So in order to send any emails through resend transactional marketing or otherwise, they need you to add your own custom domain name. Now I don't need to go pay Google workspace for like an actual email address that I use actively that where I receive emails.
+
+This is going to be a no reply email. Like when you get the marketing emails and it says no reply, I'm just going to use one of the hundreds of domain names I own to send these transactional emails from, even though I won't be receiving any incoming emails at those addresses. So I'm going to click add domain.
+
+Then I'm going to go into my Namecheap account and I'm going to pick just one of these many domain names that I'm not using for email. This one's called chrisgpt.ai. I'm going to go to advanced DNS.
+
+I'm going to click custom MX. Then I go back to resend chrisgpt.ai, add domain. Okay.
+
+This is telling me what to make those custom MX records. Don't be intimidated. It's very simple.
+
+You're just going to copy this. This is going to be send. The value is going to be this.
+
+The priority is 10. Save all changes. Okay.
+
+Back here. Text. Send.
+
+And then that. Now the text record is going to be up here. Add new record.
+
+Text. Send. Paste that.
+
+Go back here. Text. That.
+
+And then that. Text. That.
+
+And then that. Boom. Boom.
+
+Now DMARC. Text underscore DMARC. And this basically tells the inboxes that this is a trustworthy email.
+
+I'm not spoofing. I'm not impersonating someone else. Text.
+
+Underscore. DMARC. That.
+
+Boom. Now we're going to click. I've added the records.
+
+This can take a little time. That's cool. Right here we can check these boxes to enable click tracking and open tracking.
+
+So we can see if someone's looking at our invoices or clicking on the invoices. That can help us know if we should get aggressive with them or not. Okay.
+
+Let's go back into replet. It says everything's ready. We want to connect this to our new domain.
+
+Now this doesn't have to be connected to ChrisGPT.ai. We're just using that domain to send these transactional emails with the invoices. We want this domain to live on the one we just bought.
+
+Invoicefreely.com. I click domains. Manually connect from another registrar.
+
+Invoicefreely.com. Okay. Now you already know how to do this.
+
+We're going to go back to our domain list. We're going to go. We're going to find it.
+
+Manage. Advanced DNS. Add new record.
+
+A at that. We're going to add. A at that.
+
+Boom. Go back here. Text at that.
+
+Add new record. Okay. This is also going to take a few minutes.
+
+All right. Let's go back to resend. Boom.
+
+All the DNS records are verified. You already start building and sending emails with this domain. Amazing.
+
+So if I can do it, you can do it. We're going to go ahead and enable click tracking. Open tracking.
+
+It says not recommended. It can produce inaccurate results and decrease deliverability. Okay.
+
+We'll turn it off. That's fine. No risk to click tracking, however.
+
+So now, theoretically, Replit should work. My prompt was, okay, I added a send from email in resend. Try to send that last email again.
+
+Go back to the preview. All right. So before I told it to use the send from email, chrissendeeds.com, but that's not the domain name that I verified in resend.
+
+So Replit was getting confused. So I said, ignore that. The domain I verified in resend is chrissendpt.ai.
+
+So the send from email can be no reply at chrissendpt.ai. Now I have to update that secret right here. Let me go here.
+
+Boom. Edit. Update.
+
+To secret. From underscore email. No reply at chrissendpt.ai.
+
+Add secret. Okay. Done.
+
+We have a pod in TK Owners for people vibe coding apps. And a pod is just a group of people that all share a common interest. They're all vibe coding apps troubleshooting together.
+
+So if you're serious about building a business or growing a business, go to TK Owners.com and join us. I myself do a weekly ask me anything. I'll help you grow your business.
+
+I'll help you start your business. We have a second weekly ask me anything with smart people that I have on the podcast. You're going to love it.
+
+So come check it out. Let's freaking go. Oh my gosh.
+
+There it is. I got to show you what I just discovered. Go over here.
+
+Look at this. In my junk mail. Right freaking there.
+
+No reply at chrissgpt.ai. Sent to my email. Invoice 001 from your business name.
+
+I can change that. I can fix that. Boom.
+
+Dear test customer. Thank you for your business. I literally have tingles right now.
+
+Like this is silly. This is silly. I have tingles.
+
+The amount's not right. $150. But I don't care.
+
+I don't know why it's $150. The email worked. And that was the broken part.
+
+I click on the link. And it's $150. This is a test invoice.
+
+That's okay. We're going to get it to work. I'm freaking amped right now.
+
+This never gets old. Okay. I republished.
+
+Now I'm just going to go ahead and use this chat bot again. And would you look at this freaking thing right here. When I go to invoicefreely.com.
+
+Boom. Look what you get. There it is.
+
+On this custom domain name. Does it get any more beautiful than that? I can use the app right here in my custom domain name.
+
+Make an invoice for John Smith for $400 for gutter cleaning. Let's go ahead and throw it a curveball. Let's add in his address as well.
+
+His address is 123 Maple Drive, Dallas, Texas 75443. And you can email the invoice to him at, this is one of my personal email addresses that's getting blurred out. Let's see if that works.
+
+Now I don't even know if the fixed version published yet. Okay. John Smith, gutter cleaning, due date, yada, yada, yada.
+
+Yes. Create invoice. All right.
+
+Well, two steps forward, one step back. It's hosted on a custom domain name, which is awesome. But I didn't get the email.
+
+So I basically told Replit, I prompted it to make an invoice for John Smith, yada, yada, yada. And the email never arrived, not even in spam. Okay.
+
+Okay. Now here's something interesting. When I go into my Resend account and I go to the first tab, Emails, I can see that it sent these emails.
+
+Or at least it's queued. It's queued up to send. That's interesting.
+
+Okay. And I click on this. There's the invoice.
+
+And it's $400. It's not $150. So I'm going to go tell Replit what I learned in Resend.
+
+I said, these emails show as queued in Resend. Does that help? If I go into my app here and I click the eyeball, I can see it.
+
+I click it. It opens the Stripe link. $400.
+
+Gutter cleaning. Perfect. We're almost there.
+
+We're so close. Oh, oh, oh, oh. Look at this.
+
+Look at this freaking thing right here. I was just impatient. I was just impatient.
+
+Entire screen. Boom. It's in my spam.
+
+But there they are. $400. Right there.
+
+Pay now. It worked. It worked.
+
+It went to my spam. We can fix that. I'm not surprised it went to spam.
+
+It's this shady, no reply dot AI email. That's pretty easy to fix. But it works.
+
+It's on a custom domain. And it freaking works. So now I better get some sort of a lead capture.
+
+Email capture lead magnet on this. Because once this video goes live, you guys might want to use invoice freely. Am I planning on making this a business?
+
+No. But it's really hard to create a business via a vibe coding app. And then not have it go public.
+
+Especially since so many of you people are going to see it. So. All right.
+
+To wrap this up. I feel good about this. I feel confident about this.
+
+The app works. We've ad coded it in under an hour. Replit Agent 3 is legit.
+
+It's absolutely legit. I've never had Replit work this good for me. Period.
+
+End of story. And I've had it make very, very similar apps to this. And it just broke a lot more.
+
+So. Last time I built a similar app to this. It didn't have a dashboard in there.
+
+It didn't automatically add things that it thought I might like. So this is probably as about as simple as tasks can get for Replit. It can do much, much more than this.
+
+But. I'm super impressed. I love it.
+
+And it works. All the APIs just work. OpenAI works.
+
+It just works. So. Big fan of Replit Agent 3.
+
+And I hope this video is as much of a banger for you as it is for me. Join us at TK Owners. Share this with a friend.
+
+Please subscribe. We'll see you next time on The Kerner Office. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye. Bye.
+
+Bye. Bye.

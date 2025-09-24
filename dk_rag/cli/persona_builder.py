@@ -81,6 +81,19 @@ class PersonaBuilderCLI:
         print(f"Chunks created: {results['chunks_created']}")
         print(f"Total chunks in database: {results['collection_stats'].get('total_chunks', 0)}")
         
+        # Display Phase 2 results
+        if 'phase2_results' in results and results['phase2_results']:
+            phase2 = results['phase2_results']
+            print("\nPhase 2 Advanced Retrieval:")
+            print("-" * 30)
+            if phase2.get('bm25_built'):
+                print(f"✅ BM25 Index: Built successfully ({phase2.get('bm25_documents', 0)} documents)")
+                print("   Advanced retrieval ready (HyDE + BM25 + Vector + Reranking)")
+            else:
+                print("❌ BM25 Index: Build failed")
+                if 'bm25_error' in phase2:
+                    print(f"   Error: {phase2['bm25_error']}")
+        
         if args.verbose:
             print("\nDocument Summary:")
             for key, value in results['document_summary'].items():
