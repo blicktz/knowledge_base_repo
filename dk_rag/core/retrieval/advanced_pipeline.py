@@ -286,14 +286,6 @@ class AdvancedRetrievalPipeline:
                 f"(total time: {sum(stage_timings.values()):.2f}s)"
             )
             
-            # Debug: Log score information
-            if return_scores and final_documents:
-                if isinstance(final_documents[0], tuple):
-                    scores = [score for doc, score in final_documents]
-                    self.logger.info(f"DEBUG - Pipeline returning scores: {scores}")
-                else:
-                    self.logger.info("DEBUG - Pipeline return_scores=True but returning Documents without scores")
-            
             return final_documents
             
         except Exception as e:

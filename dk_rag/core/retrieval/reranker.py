@@ -187,17 +187,11 @@ class CrossEncoderReranker:
         # Extract text from documents
         candidate_texts = [doc.page_content for doc in candidates]
         
-        # Debug: Log number of candidates being processed
-        self.logger.info(f"DEBUG - Reranker processing {len(candidates)} candidates, top_k={top_k}")
-        
         # Perform reranking based on backend
         if self.reranker_type == "cohere":
             scores = self._rerank_cohere(query, candidate_texts, top_k)
         else:
             scores = self._rerank_local(query, candidate_texts)
-        
-        # Debug: Log raw scores before any processing
-        self.logger.info(f"DEBUG - Raw scores from reranker model: {scores[:10]}")  # Show first 10
         
         # Create (document, score) pairs
         doc_score_pairs = list(zip(candidates, scores))
@@ -228,9 +222,6 @@ class CrossEncoderReranker:
         self.logger.info(f"Reranking complete, returning top {len(top_results)} documents")
         
         if return_scores:
-            # Debug: Log the scores being returned
-            returned_scores = [score for doc, score in top_results]
-            self.logger.info(f"DEBUG - Reranker returning scores: {returned_scores}")
             return top_results
         else:
             return [doc for doc, _ in top_results]

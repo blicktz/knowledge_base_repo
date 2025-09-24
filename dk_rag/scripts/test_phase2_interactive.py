@@ -143,30 +143,6 @@ class Phase2Tester:
             self.print_info("No results found")
             return
         
-        # Debug: Log what we received
-        print(f"DEBUG - print_results received {len(results)} results")
-        if results:
-            first_result = results[0]
-            print(f"DEBUG - First result type: {type(first_result)}")
-            if isinstance(first_result, tuple):
-                print(f"DEBUG - First result is tuple: {len(first_result)} elements")
-                if len(first_result) == 2:
-                    doc, score = first_result
-                    print(f"DEBUG - First tuple: doc_type={type(doc)}, score={score}")
-            elif hasattr(first_result, 'metadata'):
-                print(f"DEBUG - First result metadata keys: {list(first_result.metadata.keys()) if first_result.metadata else 'None'}")
-            
-            # Debug: Show scores from first 3 results
-            debug_scores = []
-            for i, result in enumerate(results[:3]):
-                if isinstance(result, tuple) and len(result) == 2:
-                    debug_scores.append(result[1])
-                elif hasattr(result, 'metadata') and result.metadata:
-                    debug_scores.append(result.metadata.get('similarity_score', 'N/A'))
-                else:
-                    debug_scores.append('N/A')
-            print(f"DEBUG - First 3 scores: {debug_scores}")
-        
         for i, result in enumerate(results, 1):
             print(f"\n{self.COLORS['BOLD']}{i}. {self.COLORS['END']}", end="")
             
