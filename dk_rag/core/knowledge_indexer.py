@@ -29,6 +29,17 @@ from ..core.retrieval.advanced_pipeline import AdvancedRetrievalPipeline
 from ..core.retrieval.embedding_wrapper import ChromaEmbeddingWrapper
 from ..config.retrieval_config import Phase2RetrievalConfig
 
+# Multi-knowledge RAG imports
+from ..models.knowledge_types import KnowledgeType, validate_knowledge_type
+from ..models.knowledge_results import MentalModelResult, CoreBeliefResult, IndexingResult
+from ..data.processing.persona_knowledge_processor import PersonaKnowledgeProcessor
+from ..core.knowledge_builders import MentalModelsBuilder, CoreBeliefsBuilder
+from ..data.storage.multi_knowledge_store import TranscriptKnowledgeStore
+from ..data.storage.mental_models_store import MentalModelsStore
+from ..data.storage.core_beliefs_store import CoreBeliefsStore
+from ..core.retrieval.cache import MultiKnowledgeRetrievalCache
+from ..core.retrieval.knowledge_aware import MentalModelsPipeline, CoreBeliefsPipeline
+
 
 class KnowledgeIndexer:
     """
@@ -70,6 +81,17 @@ class KnowledgeIndexer:
         self.hybrid_retriever: Optional[HybridRetriever] = None
         self.reranker: Optional[CrossEncoderReranker] = None
         self.advanced_pipeline: Optional[AdvancedRetrievalPipeline] = None
+        
+        # Multi-knowledge components (initialized on first use)
+        self.knowledge_processor: Optional[PersonaKnowledgeProcessor] = None
+        self.mental_models_builder: Optional[MentalModelsBuilder] = None
+        self.core_beliefs_builder: Optional[CoreBeliefsBuilder] = None
+        self.transcript_knowledge_store: Optional[TranscriptKnowledgeStore] = None
+        self.mental_models_store: Optional[MentalModelsStore] = None
+        self.core_beliefs_store: Optional[CoreBeliefsStore] = None
+        self.multi_knowledge_cache: Optional[MultiKnowledgeRetrievalCache] = None
+        self.mental_models_pipeline: Optional[MentalModelsPipeline] = None
+        self.core_beliefs_pipeline: Optional[CoreBeliefsPipeline] = None
         
         # Initialize Phase 2 if enabled in settings
         if hasattr(settings, 'retrieval') and getattr(settings.retrieval, 'enabled', False):
@@ -971,6 +993,579 @@ class KnowledgeIndexer:
         
         return stats
     
+    # Multi-Knowledge RAG Methods
+    
+    def _setup_multi_knowledge_components(self, persona_id: str):
+        """
+        Setup multi-knowledge components with separate store instances.
+        
+        Args:
+            persona_id: Persona identifier
+        """
+        if not persona_id:
+            raise ValueError("persona_id required for multi-knowledge setup")
+        
+        try:
+            # Initialize knowledge processor
+            if not self.knowledge_processor:
+                self.knowledge_processor = PersonaKnowledgeProcessor()
+            
+            # Initialize document builders
+            if not self.mental_models_builder:
+                self.mental_models_builder = MentalModelsBuilder()
+            if not self.core_beliefs_builder:
+                self.core_beliefs_builder = CoreBeliefsBuilder()
+            
+            # Initialize separate vector stores with completely isolated ChromaDB instances
+            if not self.mental_models_store:
+                self.mental_models_store = MentalModelsStore(
+                    settings=self.settings,
+                    persona_id=persona_id
+                )
+                self.logger.info("Mental models store initialized with isolated ChromaDB instance")
+            
+            if not self.core_beliefs_store:
+                self.core_beliefs_store = CoreBeliefsStore(
+                    settings=self.settings,
+                    persona_id=persona_id
+                )
+                self.logger.info("Core beliefs store initialized with isolated ChromaDB instance")
+            
+            # Keep transcript store for backward compatibility if needed
+            if not self.transcript_knowledge_store:
+                self.transcript_knowledge_store = TranscriptKnowledgeStore(
+                    settings=self.settings,
+                    persona_id=persona_id
+                )
+            
+            # Initialize multi-knowledge cache
+            if not self.multi_knowledge_cache:
+                base_cache_dir = f"/Volumes/J15/aicallgo_data/persona_data_base/retrieval_cache"
+                self.multi_knowledge_cache = MultiKnowledgeRetrievalCache(
+                    base_cache_dir=base_cache_dir,
+                    cache_size=128
+                )
+            
+            # Initialize shared reranker (reuse from Phase 2 if available)
+            if not self.reranker and self.retrieval_config:
+                self.reranker = CrossEncoderReranker(
+                    model_name=self.retrieval_config.reranking.model,
+                    use_cohere=self.retrieval_config.reranking.use_cohere,
+                    device=self.retrieval_config.reranking.device
+                )
+            elif not self.reranker:
+                # Default reranker if Phase 2 not enabled
+                self.reranker = CrossEncoderReranker()
+            
+            # Initialize pipelines with separate stores
+            if not self.mental_models_pipeline:
+                self.mental_models_pipeline = MentalModelsPipeline(
+                    vector_store=self.mental_models_store,
+                    reranker=self.reranker,
+                    persona_id=persona_id,
+                    cache=self.multi_knowledge_cache
+                )
+            
+            if not self.core_beliefs_pipeline:
+                self.core_beliefs_pipeline = CoreBeliefsPipeline(
+                    vector_store=self.core_beliefs_store,
+                    reranker=self.reranker,
+                    persona_id=persona_id,
+                    cache=self.multi_knowledge_cache
+                )
+            
+            self.logger.info(f"Multi-knowledge components initialized with separate stores for persona: {persona_id}")
+            
+        except Exception as e:
+            self.logger.error(f"Failed to setup multi-knowledge components: {e}")
+            raise
+    
+    def build_mental_models_index(
+        self,
+        persona_id: str,
+        json_path: str,
+        rebuild: bool = False,
+        validate: bool = True
+    ) -> IndexingResult:
+        """
+        Build mental models knowledge base from Phase 1 JSON.
+        
+        Args:
+            persona_id: Unique persona identifier
+            json_path: Path to Phase 1 JSON artifact
+            rebuild: Force rebuild existing index
+            validate: Validate JSON schema before processing
+            
+        Returns:
+            IndexingResult with statistics and any errors
+        """
+        self.logger.info(f"Building mental models index for persona '{persona_id}' from: {json_path}")
+        
+        try:
+            # Setup components
+            self._setup_multi_knowledge_components(persona_id)
+            
+            # Process the persona JSON file
+            processing_result = self.knowledge_processor.process_persona_file(
+                json_path=json_path,
+                validate_schema=validate
+            )
+            
+            if processing_result.errors:
+                self.logger.warning(f"Processing had {len(processing_result.errors)} errors")
+            
+            if not processing_result.mental_models:
+                result = IndexingResult(
+                    knowledge_type=KnowledgeType.MENTAL_MODELS,
+                    persona_id=persona_id,
+                    source_file=json_path
+                )
+                result.add_warning("No mental models found in JSON file")
+                return result
+            
+            # Build documents
+            documents = self.mental_models_builder.build_documents(
+                knowledge_data=processing_result.mental_models,
+                persona_id=persona_id,
+                source_file=json_path
+            )
+            
+            # Index documents using dedicated mental models store
+            indexing_result = self.mental_models_store.index_documents(
+                documents=documents,
+                rebuild=rebuild
+            )
+            
+            # Update with processing info
+            indexing_result.source_file = json_path
+            if processing_result.errors:
+                for error in processing_result.errors:
+                    indexing_result.add_error(f"Processing error: {error}")
+            
+            self.logger.info(
+                f"Mental models index built: {indexing_result.documents_indexed} documents indexed"
+            )
+            
+            return indexing_result
+            
+        except Exception as e:
+            self.logger.error(f"Failed to build mental models index: {e}")
+            result = IndexingResult(
+                knowledge_type=KnowledgeType.MENTAL_MODELS,
+                persona_id=persona_id,
+                source_file=json_path
+            )
+            result.add_error(f"Critical error: {e}")
+            return result
+    
+    def build_core_beliefs_index(
+        self,
+        persona_id: str,
+        json_path: str,
+        rebuild: bool = False,
+        validate: bool = True
+    ) -> IndexingResult:
+        """
+        Build core beliefs knowledge base from Phase 1 JSON.
+        
+        Args:
+            persona_id: Unique persona identifier
+            json_path: Path to Phase 1 JSON artifact
+            rebuild: Force rebuild existing index
+            validate: Validate JSON schema before processing
+            
+        Returns:
+            IndexingResult with statistics and any errors
+        """
+        self.logger.info(f"Building core beliefs index for persona '{persona_id}' from: {json_path}")
+        
+        try:
+            # Setup components
+            self._setup_multi_knowledge_components(persona_id)
+            
+            # Process the persona JSON file
+            processing_result = self.knowledge_processor.process_persona_file(
+                json_path=json_path,
+                validate_schema=validate
+            )
+            
+            if processing_result.errors:
+                self.logger.warning(f"Processing had {len(processing_result.errors)} errors")
+            
+            if not processing_result.core_beliefs:
+                result = IndexingResult(
+                    knowledge_type=KnowledgeType.CORE_BELIEFS,
+                    persona_id=persona_id,
+                    source_file=json_path
+                )
+                result.add_warning("No core beliefs found in JSON file")
+                return result
+            
+            # Build documents
+            documents = self.core_beliefs_builder.build_documents(
+                knowledge_data=processing_result.core_beliefs,
+                persona_id=persona_id,
+                source_file=json_path
+            )
+            
+            # Index documents using dedicated core beliefs store
+            indexing_result = self.core_beliefs_store.index_documents(
+                documents=documents,
+                rebuild=rebuild
+            )
+            
+            # Update with processing info
+            indexing_result.source_file = json_path
+            if processing_result.errors:
+                for error in processing_result.errors:
+                    indexing_result.add_error(f"Processing error: {error}")
+            
+            self.logger.info(
+                f"Core beliefs index built: {indexing_result.documents_indexed} documents indexed"
+            )
+            
+            return indexing_result
+            
+        except Exception as e:
+            self.logger.error(f"Failed to build core beliefs index: {e}")
+            result = IndexingResult(
+                knowledge_type=KnowledgeType.CORE_BELIEFS,
+                persona_id=persona_id,
+                source_file=json_path
+            )
+            result.add_error(f"Critical error: {e}")
+            return result
+    
+    def search_mental_models(
+        self,
+        query: str,
+        persona_id: str,
+        k: int = 5,
+        use_reranking: bool = True,
+        min_confidence_score: float = 0.0,
+        filter_by_categories: Optional[List[str]] = None,
+        return_scores: bool = False
+    ) -> List[MentalModelResult]:
+        """
+        Search mental models with simplified pipeline.
+        
+        Args:
+            query: Search query
+            persona_id: Persona identifier
+            k: Number of results to return
+            use_reranking: Whether to use reranking
+            min_confidence_score: Minimum confidence filter
+            filter_by_categories: Optional category filters
+            return_scores: Whether to return relevance scores
+            
+        Returns:
+            List of MentalModelResult objects
+        """
+        self.logger.info(f"Mental models search for persona '{persona_id}': {query[:100]}...")
+        
+        try:
+            # Setup components
+            self._setup_multi_knowledge_components(persona_id)
+            
+            # Execute search
+            results = self.mental_models_pipeline.retrieve(
+                query=query,
+                k=k,
+                use_reranking=use_reranking,
+                return_scores=return_scores,
+                min_confidence_score=min_confidence_score,
+                filter_by_categories=filter_by_categories,
+                metadata={"search_type": "mental_models"}
+            )
+            
+            self.logger.info(f"Mental models search returned {len(results)} results")
+            return results
+            
+        except Exception as e:
+            self.logger.error(f"Mental models search failed: {e}")
+            return []
+    
+    def search_core_beliefs(
+        self,
+        query: str,
+        persona_id: str,
+        k: int = 5,
+        use_reranking: bool = True,
+        min_confidence_score: float = 0.0,
+        filter_by_category: Optional[str] = None,
+        conviction_level: Optional[str] = None,
+        include_evidence: bool = True,
+        return_scores: bool = False
+    ) -> List[CoreBeliefResult]:
+        """
+        Search core beliefs with simplified pipeline.
+        
+        Args:
+            query: Search query
+            persona_id: Persona identifier
+            k: Number of results to return
+            use_reranking: Whether to use reranking
+            min_confidence_score: Minimum confidence filter
+            filter_by_category: Optional category filter
+            conviction_level: Filter by conviction level
+            include_evidence: Whether to include supporting evidence
+            return_scores: Whether to return relevance scores
+            
+        Returns:
+            List of CoreBeliefResult objects
+        """
+        self.logger.info(f"Core beliefs search for persona '{persona_id}': {query[:100]}...")
+        
+        try:
+            # Setup components
+            self._setup_multi_knowledge_components(persona_id)
+            
+            # Execute search
+            results = self.core_beliefs_pipeline.retrieve(
+                query=query,
+                k=k,
+                use_reranking=use_reranking,
+                return_scores=return_scores,
+                min_confidence_score=min_confidence_score,
+                filter_by_category=filter_by_category,
+                conviction_level=conviction_level,
+                include_evidence=include_evidence,
+                metadata={"search_type": "core_beliefs"}
+            )
+            
+            self.logger.info(f"Core beliefs search returned {len(results)} results")
+            return results
+            
+        except Exception as e:
+            self.logger.error(f"Core beliefs search failed: {e}")
+            return []
+    
+    def get_multi_knowledge_statistics(self, persona_id: str) -> Dict[str, Any]:
+        """
+        Get comprehensive statistics for all knowledge types.
+        
+        Args:
+            persona_id: Persona identifier
+            
+        Returns:
+            Dictionary with multi-knowledge statistics
+        """
+        try:
+            self._setup_multi_knowledge_components(persona_id)
+            
+            stats = {
+                "persona_id": persona_id,
+                "multi_knowledge_enabled": True,
+                "vector_store_stats": self.multi_knowledge_store.get_all_stats(),
+                "cache_stats": self.multi_knowledge_cache.get_cache_statistics(),
+                "pipelines": {
+                    "mental_models": self.mental_models_pipeline.get_statistics(),
+                    "core_beliefs": self.core_beliefs_pipeline.get_statistics()
+                }
+            }
+            
+            return stats
+            
+        except Exception as e:
+            self.logger.error(f"Failed to get multi-knowledge statistics: {e}")
+            return {
+                "persona_id": persona_id,
+                "multi_knowledge_enabled": False,
+                "error": str(e)
+            }
+    
+    def build_mental_models_index_auto(
+        self,
+        persona_id: str,
+        rebuild: bool = False,
+        validate: bool = True
+    ) -> IndexingResult:
+        """
+        Build mental models knowledge base from the latest Phase 1 artifact.
+        
+        Uses automatic artifact discovery to find and process the most recent
+        Phase 1 JSON artifact for the given persona.
+        
+        Args:
+            persona_id: Unique persona identifier
+            rebuild: Force rebuild existing index
+            validate: Validate JSON schema before processing
+            
+        Returns:
+            IndexingResult with statistics and any errors
+        """
+        self.logger.info(f"Auto-building mental models index for persona '{persona_id}'")
+        
+        try:
+            # Initialize knowledge processor if not already done
+            if not self.knowledge_processor:
+                self.knowledge_processor = PersonaKnowledgeProcessor()
+            
+            # Initialize mental models builder if not already done
+            if not self.mental_models_builder:
+                self.mental_models_builder = MentalModelsBuilder()
+            
+            # Initialize mental models store if not already done
+            if not self.mental_models_store:
+                self.mental_models_store = MentalModelsStore(
+                    settings=self.settings,
+                    persona_id=persona_id
+                )
+            
+            # Process latest artifact
+            processing_result = self.knowledge_processor.process_latest_artifact(
+                persona_id=persona_id,
+                settings=self.settings,
+                validate_schema=validate
+            )
+            
+            # Check for processing errors
+            if processing_result.errors:
+                result = IndexingResult(
+                    documents_indexed=0,
+                    errors=processing_result.errors,
+                    warnings=processing_result.warnings,
+                    indexing_duration_seconds=0.0
+                )
+                return result
+            
+            # Check if we have mental models
+            if not processing_result.mental_models:
+                result = IndexingResult(
+                    documents_indexed=0,
+                    errors=["No mental models found in latest artifact"],
+                    warnings=processing_result.warnings,
+                    indexing_duration_seconds=0.0
+                )
+                return result
+            
+            # Build documents from mental models
+            documents = self.mental_models_builder.build_documents(
+                processing_result.mental_models,
+                persona_id,
+                processing_result.source_file
+            )
+            
+            # Index the documents using dedicated mental models store
+            indexing_result = self.mental_models_store.index_documents(
+                documents,
+                rebuild=rebuild
+            )
+            
+            # Add processing warnings to indexing result
+            indexing_result.warnings.extend(processing_result.warnings)
+            
+            self.logger.info(
+                f"Auto-built mental models index: {indexing_result.documents_indexed} documents indexed"
+            )
+            
+            return indexing_result
+            
+        except Exception as e:
+            self.logger.error(f"Auto-build mental models index failed: {e}")
+            return IndexingResult(
+                documents_indexed=0,
+                errors=[f"Auto-build failed: {e}"],
+                warnings=[],
+                indexing_duration_seconds=0.0
+            )
+    
+    def build_core_beliefs_index_auto(
+        self,
+        persona_id: str,
+        rebuild: bool = False,
+        validate: bool = True
+    ) -> IndexingResult:
+        """
+        Build core beliefs knowledge base from the latest Phase 1 artifact.
+        
+        Uses automatic artifact discovery to find and process the most recent
+        Phase 1 JSON artifact for the given persona.
+        
+        Args:
+            persona_id: Unique persona identifier
+            rebuild: Force rebuild existing index
+            validate: Validate JSON schema before processing
+            
+        Returns:
+            IndexingResult with statistics and any errors
+        """
+        self.logger.info(f"Auto-building core beliefs index for persona '{persona_id}'")
+        
+        try:
+            # Initialize knowledge processor if not already done
+            if not self.knowledge_processor:
+                self.knowledge_processor = PersonaKnowledgeProcessor()
+            
+            # Initialize core beliefs builder if not already done
+            if not self.core_beliefs_builder:
+                self.core_beliefs_builder = CoreBeliefsBuilder()
+            
+            # Initialize core beliefs store if not already done
+            if not self.core_beliefs_store:
+                self.core_beliefs_store = CoreBeliefsStore(
+                    settings=self.settings,
+                    persona_id=persona_id
+                )
+            
+            # Process latest artifact
+            processing_result = self.knowledge_processor.process_latest_artifact(
+                persona_id=persona_id,
+                settings=self.settings,
+                validate_schema=validate
+            )
+            
+            # Check for processing errors
+            if processing_result.errors:
+                result = IndexingResult(
+                    documents_indexed=0,
+                    errors=processing_result.errors,
+                    warnings=processing_result.warnings,
+                    indexing_duration_seconds=0.0
+                )
+                return result
+            
+            # Check if we have core beliefs
+            if not processing_result.core_beliefs:
+                result = IndexingResult(
+                    documents_indexed=0,
+                    errors=["No core beliefs found in latest artifact"],
+                    warnings=processing_result.warnings,
+                    indexing_duration_seconds=0.0
+                )
+                return result
+            
+            # Build documents from core beliefs
+            documents = self.core_beliefs_builder.build_documents(
+                processing_result.core_beliefs,
+                persona_id,
+                processing_result.source_file
+            )
+            
+            # Index the documents using dedicated core beliefs store
+            indexing_result = self.core_beliefs_store.index_documents(
+                documents,
+                rebuild=rebuild
+            )
+            
+            # Add processing warnings to indexing result
+            indexing_result.warnings.extend(processing_result.warnings)
+            
+            self.logger.info(
+                f"Auto-built core beliefs index: {indexing_result.documents_indexed} documents indexed"
+            )
+            
+            return indexing_result
+            
+        except Exception as e:
+            self.logger.error(f"Auto-build core beliefs index failed: {e}")
+            return IndexingResult(
+                documents_indexed=0,
+                errors=[f"Auto-build failed: {e}"],
+                warnings=[],
+                indexing_duration_seconds=0.0
+            )
+    
     def cleanup(self):
         """Clean up resources"""
         if hasattr(self, 'vector_store'):
@@ -981,5 +1576,15 @@ class KnowledgeIndexer:
         # Cleanup Phase 2 components
         if self.retrieval_cache:
             self.retrieval_cache.cleanup_expired()
+        
+        # Cleanup multi-knowledge components
+        if self.transcript_knowledge_store:
+            self.transcript_knowledge_store.cleanup()
+        if self.mental_models_store:
+            self.mental_models_store.cleanup()
+        if self.core_beliefs_store:
+            self.core_beliefs_store.cleanup()
+        if self.multi_knowledge_cache:
+            self.multi_knowledge_cache.cleanup_expired()
         
         self.logger.info("Knowledge indexer cleanup complete")

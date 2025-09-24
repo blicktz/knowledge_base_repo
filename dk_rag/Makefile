@@ -170,6 +170,48 @@ export-personas: ## Export all personas to output directory
 	@echo "$(GREEN)✓ Personas exported to $(OUTPUT_DIR)$(NC)"
 
 # =============================================================================
+# PHASE 2 KNOWLEDGE RAG BUILD TARGETS
+# =============================================================================
+
+.PHONY: build-mental-models
+build-mental-models: ## Build mental models RAG from latest Phase 1 artifact (PERSONA_NAME="greg_startup")
+	@echo "$(BLUE)Building mental models RAG for persona: $(PERSONA_NAME)$(NC)"
+	@echo "========================================"
+	@echo "🔍 Auto-discovering latest Phase 1 artifact..."
+	@echo "🧠 Rebuilding from scratch (small data size)..."
+	@cd .. && $(PYTHON) -m dk_rag.cli.knowledge_builder build-mental-models-auto --persona-id "$(PERSONA_NAME)" --rebuild --verbose
+	@echo "$(GREEN)✅ Mental models RAG build complete!$(NC)"
+
+.PHONY: build-core-beliefs
+build-core-beliefs: ## Build core beliefs RAG from latest Phase 1 artifact (PERSONA_NAME="greg_startup")
+	@echo "$(BLUE)Building core beliefs RAG for persona: $(PERSONA_NAME)$(NC)"
+	@echo "========================================"
+	@echo "🔍 Auto-discovering latest Phase 1 artifact..."
+	@echo "💭 Rebuilding from scratch (small data size)..."
+	@cd .. && $(PYTHON) -m dk_rag.cli.knowledge_builder build-core-beliefs-auto --persona-id "$(PERSONA_NAME)" --rebuild --verbose
+	@echo "$(GREEN)✅ Core beliefs RAG build complete!$(NC)"
+
+.PHONY: build-knowledge-rag
+build-knowledge-rag: ## Build both mental models and core beliefs RAG (PERSONA_NAME="greg_startup")
+	@echo "$(BLUE)Building complete knowledge RAG for persona: $(PERSONA_NAME)$(NC)"
+	@echo "======================================================"
+	@echo "🔍 Building mental models and core beliefs from latest Phase 1 artifact..."
+	@echo ""
+	@echo "$(YELLOW)Step 1/2: Mental Models...$(NC)"
+	@$(MAKE) build-mental-models PERSONA_NAME="$(PERSONA_NAME)"
+	@echo ""
+	@echo "$(YELLOW)Step 2/2: Core Beliefs...$(NC)"
+	@$(MAKE) build-core-beliefs PERSONA_NAME="$(PERSONA_NAME)"
+	@echo ""
+	@echo "$(GREEN)🎉 Complete knowledge RAG build finished!$(NC)"
+	@echo "$(GREEN)   - Mental models RAG: ✅$(NC)"
+	@echo "$(GREEN)   - Core beliefs RAG: ✅$(NC)"
+	@echo ""
+	@echo "$(YELLOW)💡 You can now search these knowledge bases using:$(NC)"
+	@echo "   cd .. && $(PYTHON) -m dk_rag.cli.knowledge_builder search-mental-models --persona-id \"$(PERSONA_NAME)\" --query \"your query\""
+	@echo "   cd .. && $(PYTHON) -m dk_rag.cli.knowledge_builder search-core-beliefs --persona-id \"$(PERSONA_NAME)\" --query \"your query\""
+
+# =============================================================================
 # SEARCH & QUERY TARGETS
 # =============================================================================
 
@@ -290,6 +332,8 @@ clean-all: clean ## Clean everything including vector DB, caches, and personas (
 	@echo "$(YELLOW)Storage location: $(STORAGE_BASE_DIR)$(NC)"
 	@echo "$(YELLOW)This includes:$(NC)"
 	@echo "  - Vector database (ChromaDB)"
+	@echo "  - Mental models knowledge databases"
+	@echo "  - Core beliefs knowledge databases"
 	@echo "  - All persona artifacts"
 	@echo "  - Statistical analysis caches"
 	@echo "  - Map-reduce extraction caches"
@@ -298,6 +342,10 @@ clean-all: clean ## Clean everything including vector DB, caches, and personas (
 	if [ "$$confirm" = "y" ] || [ "$$confirm" = "Y" ]; then \
 		echo "$(BLUE)Removing persona vector databases...$(NC)"; \
 		rm -rf $(PERSONAS_DIR)/*/vector_db/* 2>/dev/null || true; \
+		echo "$(BLUE)Removing mental models vector databases...$(NC)"; \
+		rm -rf $(PERSONAS_DIR)/*/vector_db_mental_models/* 2>/dev/null || true; \
+		echo "$(BLUE)Removing core beliefs vector databases...$(NC)"; \
+		rm -rf $(PERSONAS_DIR)/*/vector_db_core_beliefs/* 2>/dev/null || true; \
 		echo "$(BLUE)Removing persona artifacts...$(NC)"; \
 		rm -rf $(PERSONAS_DIR)/*/artifacts/* 2>/dev/null || true; \
 		echo "$(BLUE)Removing persona registry...$(NC)"; \
@@ -414,7 +462,8 @@ help: ## Display this help message
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
 		awk 'BEGIN {FS = ":.*?## "; \
 		    groups["SETUP"] = "$(GREEN)Setup:$(NC)"; \
-		    groups["KNOWLEDGE"] = "$(GREEN)Knowledge Base:$(NC)"; \
+		    groups["KNOWLEDGE"] = "$(GREEN)Knowledge Base (Phase 1):$(NC)"; \
+		    groups["KNOWLEDGE_RAG"] = "$(GREEN)Knowledge RAG (Phase 2):$(NC)"; \
 		    groups["PERSONA"] = "$(GREEN)Persona Extraction:$(NC)"; \
 		    groups["SEARCH"] = "$(GREEN)Search & Query:$(NC)"; \
 		    groups["TEST"] = "$(GREEN)Testing & Validation:$(NC)"; \
@@ -423,6 +472,7 @@ help: ## Display this help message
 		    groups["QUICK"] = "$(GREEN)Quick Start:$(NC)"}; \
 		{if ($$1 ~ /^setup/) group = "SETUP"; \
 		 else if ($$1 ~ /^(build|rebuild|update|analyze)-kb/) group = "KNOWLEDGE"; \
+		 else if ($$1 ~ /^build-(mental|core|knowledge)/) group = "KNOWLEDGE_RAG"; \
 		 else if ($$1 ~ /^(extract|list|export)/) group = "PERSONA"; \
 		 else if ($$1 ~ /^search/) group = "SEARCH"; \
 		 else if ($$1 ~ /^(test|validate|check)/) group = "TEST"; \
@@ -438,6 +488,11 @@ help: ## Display this help message
 	@echo "  make build-kb DOCS_DIR=/my/docs   # Build KB from custom directory"
 	@echo "  make extract-persona PERSONA_NAME=gary_vee  # Extract specific persona"
 	@echo "  make search SEARCH_QUERY='productivity tips' # Search knowledge base"
+	@echo ""
+	@echo "$(YELLOW)Phase 2 Knowledge RAG Examples:$(NC)"
+	@echo "  make build-mental-models           # Build mental models RAG for $(PERSONA_NAME)"
+	@echo "  make build-core-beliefs            # Build core beliefs RAG for $(PERSONA_NAME)"
+	@echo "  make build-knowledge-rag           # Build both RAG systems (recommended)"
 	@echo ""
 	@echo "$(YELLOW)For more information, see dk_rag/PHASE1_README.md$(NC)"
 
