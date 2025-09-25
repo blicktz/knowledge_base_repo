@@ -1,104 +1,54 @@
-# DK AI Copywriting Assistant
+# DK RAG - LangChain Persona Agent System
 
-A Retrieval-Augmented Generation (RAG) system that generates high-persuasion email copy using DK's proven direct response principles.
+This directory contains the complete LangChain-native persona agent system.
 
-## Features
+## 🚀 Quick Start
 
-- **RAG-powered Context Retrieval**: Uses DK's book content as dynamic knowledge base
-- **Smart Query Formulation**: Automatically selects relevant context based on your task
-- **OpenRouter Integration**: Uses Google Gemini 2.0 Flash for high-quality generation
-- **Local Vector Database**: Fast, local similarity search with scikit-learn
-- **Interactive & Batch Modes**: CLI and interactive usage options
-
-## Quick Setup
-
-1. **Install dependencies** (from project root):
-   ```bash
-   poetry install
-   ```
-
-2. **Setup API keys**:
-   ```bash
-   make dk-setup
-   ```
-   This will create a `.env` file. Edit it with your API keys:
-   - `OPENROUTER_API_KEY`: Get from [OpenRouter](https://openrouter.ai/keys)
-   - `OPENAI_API_KEY`: Get from [OpenAI](https://platform.openai.com/api-keys)
-
-3. **Initialize knowledge base**:
-   ```bash
-   make dk-setup
-   ```
-   (Run again after setting API keys)
-
-## Usage
-
-### Generate Copy (One-off)
+### Run the Agent
 ```bash
-make dk-generate TASK="Write an email for a webinar about marketing for developers"
+# From this directory
+python main.py
+
+# Or from project root  
+python -m dk_rag.main
 ```
 
-### Interactive Mode
+### Test the Agent
 ```bash
-make dk-interactive
+# From this directory
+python test_agent.py
+
+# Or from project root
+python -m dk_rag.test_agent  
 ```
 
-### Direct Python Usage
-```bash
-poetry run python dk_rag/generate_copy.py "Your copywriting task here"
-```
+### API Documentation
+Once running, visit: http://localhost:8000/docs
 
-### Other Commands
-```bash
-make dk-rebuild     # Rebuild knowledge base
-make dk-test        # Test with sample task
-```
+## 🏗️ Architecture
 
-## System Architecture
+- **`main.py`** - FastAPI application entry point
+- **`test_agent.py`** - Comprehensive testing suite
+- **`agent/persona_agent.py`** - LangChain ReAct agent with memory
+- **`api/persona_api.py`** - FastAPI endpoints with conversation features
+- **`tools/agent_tools.py`** - LangChain @tool functions
+- **`chains/synthesis_chain.py`** - LCEL chains for response synthesis
 
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   User Task     │───▶│   Query Gen     │───▶│  Context Search │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-                                                       │
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│  Generated Copy │◀───│   OpenRouter    │◀───│ Prompt Builder  │
-└─────────────────┘    │ (Gemini 2.0)    │    └─────────────────┘
-                       └─────────────────┘
-```
+## 📚 Full Documentation
 
-## Configuration
+See `/README_LANGCHAIN.md` in the project root for complete documentation, examples, and migration details.
 
-Edit `openrouter_config.yaml` to customize:
-- LLM model (default: `google/gemini-2.0-flash-001`)
-- Chunk size and overlap for document processing
-- Similarity thresholds and max results
-- API endpoints and headers
+---
 
-## Files Structure
+This system uses LangChain's `create_react_agent` with built-in conversation memory, replacing the previous manual orchestration with a mature, maintainable framework.
 
-```
-dk_rag/
-├── generate_copy.py      # Main CLI script
-├── rag_system.py         # RAG implementation
-├── prompts.py           # DK-style templates
-├── openrouter_config.yaml # Configuration
-└── db/                  # Vector database (auto-created)
-```
+## ⚙️ Configuration-Driven
 
-## Troubleshooting
+All models and parameters are driven by `config/persona_config.yaml`:
 
-### No relevant context found
-- Check that markdown files exist in MD_OUTPUT directory
-- Try rebuilding the knowledge base: `make dk-rebuild`
-- Verify chunk size and similarity thresholds in config
+- **Light Tasks**: `gemini/gemini-2.0-flash` (query analysis)
+- **Heavy Tasks**: `gemini/gemini-2.5-pro` (response synthesis) 
+- **Retrieval Counts**: Mental Models (k=3), Core Beliefs (k=5), Transcripts (k=5)
+- **API Settings**: Host, port, CORS, rate limiting all configurable
 
-### API errors
-- Verify API keys are set correctly in `.env`
-- Check OpenRouter account has credits
-- Ensure model `google/gemini-2.0-flash-001` is available
-
-### Performance issues
-- Reduce chunk size in config for faster processing
-- Adjust max_results to return fewer context chunks
-- Consider using a smaller model for testing
+No hardcoded values - change the YAML to adjust behavior!

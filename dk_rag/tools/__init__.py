@@ -1,18 +1,21 @@
-"""Phase 3: Agent Tools for Persona System"""
+"""LangChain-native tools for persona agent system"""
 
-from .base_tool import BasePersonaTool, ToolInput
-from .query_analyzer_tool import QueryAnalyzerTool
-from .persona_data_tool import PersonaDataTool
-from .mental_models_tool import MentalModelsRetrieverTool
-from .core_beliefs_tool import CoreBeliefsRetrieverTool
-from .transcript_retriever_tool import TranscriptRetrieverTool
+from .agent_tools import (
+    query_analyzer,
+    get_persona_data,
+    retrieve_mental_models,
+    retrieve_core_beliefs,
+    retrieve_transcripts,
+    PERSONA_TOOLS,
+    get_tools_for_persona
+)
 
 __all__ = [
-    'BasePersonaTool',
-    'ToolInput',
-    'QueryAnalyzerTool',
-    'PersonaDataTool', 
-    'MentalModelsRetrieverTool',
-    'CoreBeliefsRetrieverTool',
-    'TranscriptRetrieverTool'
+    'query_analyzer',
+    'get_persona_data',
+    'retrieve_mental_models',
+    'retrieve_core_beliefs',
+    'retrieve_transcripts',
+    'PERSONA_TOOLS',
+    'get_tools_for_persona'
 ]

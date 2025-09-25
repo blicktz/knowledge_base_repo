@@ -316,6 +316,18 @@ agent:
     
   # Tool-specific Settings
   tools:
+    # Query Analysis Tool (Light task - fast model)
+    query_analysis:
+      llm_provider: "litellm"
+      llm_model: "gemini/gemini-2.0-flash"  # Light task - fast model
+      temperature: 0.3  # Lower temperature for structured extraction
+      max_tokens: 1000
+      timeout_seconds: 20
+      max_retries: 2
+      cache_results: true
+      cache_ttl_hours: 24
+      log_interactions: true
+    
     # Persona Data Tool
     persona_data:
       cache_session: true  # Cache per session to avoid repeated loading
