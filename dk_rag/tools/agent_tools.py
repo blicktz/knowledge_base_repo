@@ -45,8 +45,7 @@ def retrieve_mental_models(query: str, config: RunnableConfig = None) -> List[Di
     if config and "configurable" in config:
         persona_id = config["configurable"].get("persona_id")
         settings = config["configurable"].get("settings")
-        # Use optimized rag_query if available
-        rag_query = config["configurable"].get("rag_query", query)
+        # Use LLM model directed query string directly , let LLM figure out what to query
     
     if not persona_id:
         raise ValueError("persona_id required in config")
@@ -83,16 +82,11 @@ def retrieve_mental_models(query: str, config: RunnableConfig = None) -> List[Di
             # Handle tuple format (item, score) when return_scores=True
             if isinstance(result, tuple):
                 item, score = result
-                score_value = score if score is not None else 0.0
             else:
                 item = result
-                score_value = 0.0
             
             formatted_results.append({
-                'content': item.content if hasattr(item, 'content') else str(item),
-                'score': score_value,
-                'rank': i + 1,
-                'metadata': item.metadata if hasattr(item, 'metadata') else {}
+                'mental_model': item.content if hasattr(item, 'content') else str(item),
             })
         
         tool_logger.info(f"Retrieved {len(formatted_results)} mental models")
@@ -122,8 +116,8 @@ def retrieve_core_beliefs(query: str, config: RunnableConfig = None) -> List[Dic
     if config and "configurable" in config:
         persona_id = config["configurable"].get("persona_id")
         settings = config["configurable"].get("settings")
-        # Use optimized rag_query if available
-        rag_query = config["configurable"].get("rag_query", query)
+        # Use LLM model directed query string directly , let LLM figure out what to query
+
     
     if not persona_id:
         raise ValueError("persona_id required in config")
@@ -160,16 +154,11 @@ def retrieve_core_beliefs(query: str, config: RunnableConfig = None) -> List[Dic
             # Handle tuple format (item, score) when return_scores=True
             if isinstance(result, tuple):
                 item, score = result
-                score_value = score if score is not None else 0.0
             else:
                 item = result
-                score_value = 0.0
             
             formatted_results.append({
-                'content': item.content if hasattr(item, 'content') else str(item),
-                'score': score_value,
-                'rank': i + 1,
-                'metadata': item.metadata if hasattr(item, 'metadata') else {}
+                'core_belief': item.content if hasattr(item, 'content') else str(item),
             })
         
         tool_logger.info(f"Retrieved {len(formatted_results)} core beliefs")
@@ -199,8 +188,8 @@ def retrieve_transcripts(query: str, config: RunnableConfig = None) -> List[Dict
     if config and "configurable" in config:
         persona_id = config["configurable"].get("persona_id")
         settings = config["configurable"].get("settings")
-        # Use optimized rag_query if available
-        rag_query = config["configurable"].get("rag_query", query)
+        # Use LLM model directed query string directly , let LLM figure out what to query
+
     
     if not persona_id:
         raise ValueError("persona_id required in config")
@@ -242,29 +231,19 @@ def retrieve_transcripts(query: str, config: RunnableConfig = None) -> List[Dict
                 # (Document, score) tuples from retrieve_with_scores()
                 doc, score = result
                 content = doc.page_content
-                metadata = doc.metadata if hasattr(doc, 'metadata') else {}
-                score_value = score
             elif isinstance(result, tuple) and len(result) == 3:
                 # (doc_id, score, doc_text) tuples from BM25 with return_docs=True
                 doc_id, score, doc_text = result
                 content = doc_text
-                metadata = {'doc_id': doc_id}
-                score_value = score
             elif hasattr(result, 'page_content'):
                 # Document objects
                 content = result.page_content
-                metadata = result.metadata if hasattr(result, 'metadata') else {}
-                score_value = metadata.get('similarity_score', None)
             else:
                 # Dictionary or other format
                 content = str(result)
-                metadata = {}
-                score_value = None
                 
             formatted_results.append({
-                'content': content,
-                'metadata': metadata,
-                'score': score_value
+                'extracted_transcripts': content,
             })
         
         tool_logger.info(f"Retrieved {len(formatted_results)} transcript chunks")
