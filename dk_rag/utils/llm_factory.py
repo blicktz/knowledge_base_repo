@@ -74,9 +74,9 @@ def create_agent_llm(persona_id: str, settings: Settings) -> ChatLiteLLM:
         Configured ChatLiteLLM instance for agent reasoning
     """
     llm_config = {
-        "llm_model": settings.agent.query_analysis.llm_model,
-        "temperature": settings.agent.query_analysis.temperature,
-        "max_tokens": settings.agent.query_analysis.max_tokens
+        "llm_model": settings.agent.synthesis.llm_model,
+        "temperature": settings.agent.synthesis.temperature,
+        "max_tokens": settings.agent.synthesis.max_tokens
     }
     
     return create_llm_with_logging(
