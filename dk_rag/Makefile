@@ -8,10 +8,11 @@ PYTEST := poetry run pytest
 MODULE := dk_rag.cli.persona_builder
 
 # Default paths - customize these for your setup
-DOCS_DIR ?= /Users/blickt/Documents/src/pdf_2_text/content_repo/dk_books
+DOCS_DIR ?= /Users/blickt/Documents/src/pdf_2_text/content_repo/greg_startup
 OUTPUT_DIR ?= ./output
 CONFIG_FILE ?= ./config/persona_config.yaml
-PATTERN ?= *.md
+PATTERN ?= *.txt
+BATCH_SIZE ?= 4
 
 # Storage Configuration - automatically reads from config YAML file
 # NOTE: This must align with storage.base_storage_dir in the config YAML file
@@ -21,7 +22,7 @@ CACHE_DIR := $(STORAGE_BASE_DIR)/cache
 VECTOR_DB_DIR := $(STORAGE_BASE_DIR)/vector_db
 
 # Default persona name for extraction
-PERSONA_NAME ?= dan_kennedy_god_of_direct_response_marketing
+PERSONA_NAME ?= grep_isenberg_startup_guy
 
 # Search query for testing
 SEARCH_QUERY ?= "mental models for productivity"
@@ -137,7 +138,8 @@ extract-persona-stats: ## Phase 1-a: Statistical analysis only (spaCy/NLTK)
 	$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" --verbose extract-persona-stats \
 		--documents-dir "$(DOCS_DIR)" \
 		--name "$(PERSONA_NAME)" \
-		--pattern "$(PATTERN)"
+		--pattern "$(PATTERN)" \
+		--batch-size $(BATCH_SIZE)
 	@echo "$(GREEN)✓ Statistical analysis complete for '$(PERSONA_NAME)'$(NC)"
 
 .PHONY: extract-persona-llm
@@ -146,7 +148,8 @@ extract-persona-llm: ## Phase 1-b: LLM map-reduce processing only
 	$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" --verbose extract-persona-llm \
 		--documents-dir "$(DOCS_DIR)" \
 		--name "$(PERSONA_NAME)" \
-		--pattern "$(PATTERN)"
+		--pattern "$(PATTERN)" \
+		--batch-size $(BATCH_SIZE)
 	@echo "$(GREEN)✓ LLM processing complete for '$(PERSONA_NAME)'$(NC)"
 
 .PHONY: extract-persona-full
@@ -456,6 +459,7 @@ help: ## Display this help message
 	@echo "  PERSONA_NAME   - Name for persona extraction (default: $(PERSONA_NAME))"
 	@echo "  SEARCH_QUERY   - Query for search operations (default: $(SEARCH_QUERY))"
 	@echo "  PATTERN        - File pattern to match (default: $(PATTERN))"
+	@echo "  BATCH_SIZE     - Documents per batch for extraction (default: $(BATCH_SIZE))"
 	@echo "  CONFIG_FILE    - Configuration file path (default: $(CONFIG_FILE))"
 	@echo ""
 	@echo "$(YELLOW)Available Targets:$(NC)"

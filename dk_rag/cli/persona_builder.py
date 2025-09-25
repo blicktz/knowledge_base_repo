@@ -164,6 +164,11 @@ class PersonaBuilderCLI:
         self.logger.info("=" * 60)
         
         try:
+            # Override batch_size if provided via CLI
+            if hasattr(args, 'batch_size') and args.batch_size is not None:
+                self.settings.map_reduce_extraction.batch_size = args.batch_size
+                self.logger.info(f"Overriding batch_size from CLI: {args.batch_size}")
+            
             # Register or get persona
             persona_id = self.persona_manager.get_or_create_persona(args.name)
             self.logger.info(f"Using persona: {persona_id}")
@@ -194,6 +199,11 @@ class PersonaBuilderCLI:
         self.logger.info("=" * 60)
         
         try:
+            # Override batch_size if provided via CLI
+            if hasattr(args, 'batch_size') and args.batch_size is not None:
+                self.settings.map_reduce_extraction.batch_size = args.batch_size
+                self.logger.info(f"Overriding batch_size from CLI: {args.batch_size}")
+            
             # Register or get persona
             persona_id = self.persona_manager.get_or_create_persona(args.name)
             self.logger.info(f"Using persona: {persona_id}")
@@ -584,6 +594,7 @@ Examples:
         extract_stats_parser.add_argument("--documents-dir", required=True, help="Directory containing documents")
         extract_stats_parser.add_argument("--name", required=True, help="Name for the persona")
         extract_stats_parser.add_argument("--pattern", default="*.md", help="File pattern to match")
+        extract_stats_parser.add_argument("--batch-size", type=int, help="Number of documents per batch (overrides config)")
         extract_stats_parser.add_argument("--force-reanalyze", action="store_true", 
                                          help="Force fresh statistical analysis even if cache exists")
         
@@ -592,6 +603,7 @@ Examples:
         extract_llm_parser.add_argument("--documents-dir", required=True, help="Directory containing documents")
         extract_llm_parser.add_argument("--name", required=True, help="Name for the persona")
         extract_llm_parser.add_argument("--pattern", default="*.md", help="File pattern to match")
+        extract_llm_parser.add_argument("--batch-size", type=int, help="Number of documents per batch (overrides config)")
         extract_llm_parser.add_argument("--use-cached-stats", action="store_true", default=True,
                                        help="Use cached statistical analysis from Phase 1-a")
         
