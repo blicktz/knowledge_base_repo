@@ -1,82 +1,150 @@
-# Phase 2 Testing Scripts
+# Interactive Chain Testing Scripts
 
-## test_phase2_interactive.py
+This directory contains interactive testing tools for the LangChain Persona Agent system.
 
-Interactive testing script for Phase 2 advanced retrieval features including HyDE, Hybrid Search, and Cross-Encoder Reranking.
-
-### Prerequisites
-
-1. **Knowledge Base Built**: Run `make build-kb` first to ensure both vector store and BM25 indexes are built
-2. **Phase 2 Enabled**: Ensure `retrieval.enabled: true` in your config file
-3. **Persona Available**: Have a persona created and configured
-
-### Usage
+## Quick Start
 
 ```bash
-# Basic usage
-python scripts/test_phase2_interactive.py --persona-id greg_startup
+# From project root
+python dk_rag/scripts/test_interactive.py
 
-# With custom config file
-python scripts/test_phase2_interactive.py --persona-id dan_kennedy --config ./config/persona_config.yaml
+# Or make it executable and run directly
+chmod +x dk_rag/scripts/test_interactive.py
+./dk_rag/scripts/test_interactive.py
 ```
+
+## Main Script: `test_interactive.py`
+
+An interactive menu-driven script that allows you to test each component of the LangChain persona agent system individually.
 
 ### Features
 
-**Individual Feature Tests:**
-1. **HyDE Retrieval** - Test hypothetical document generation and enhanced search
-2. **Hybrid Search** - Compare BM25, Vector, and fused results with score breakdowns
-3. **Cross-Encoder Reranking** - Before/after reranking comparison with detailed scores
+- **Step-by-step testing**: Test each component in isolation
+- **Interactive prompts**: Enter custom queries and test data
+- **Multiple personas**: Switch between available personas
+- **Detailed output**: Shows inputs, outputs, timing, and errors
+- **Configuration display**: Shows active models and settings
+- **Error handling**: Graceful error handling with detailed messages
 
-**Interactive Mode:**
-- **Interactive Search** - Real-time search interface using full Phase 2 pipeline
-- **Phase 1 vs Phase 2** - Side-by-side comparison with performance metrics
+### Available Tests
+
+1. **Query Analysis Test**
+   - Tests the `query_analyzer` tool
+   - Input: Custom user query
+   - Output: Structured analysis (core_task, rag_query, intent_type, etc.)
+
+2. **Persona Data Retrieval Test**
+   - Tests the `get_persona_data` tool
+   - Input: Selected persona
+   - Output: Linguistic style, communication patterns, metadata
+
+3. **Mental Models Retrieval Test**
+   - Tests the `retrieve_mental_models` tool
+   - Input: Custom search query
+   - Output: Top-k relevant mental models with scores
+
+4. **Core Beliefs Retrieval Test**
+   - Tests the `retrieve_core_beliefs` tool
+   - Input: Custom search query
+   - Output: Top-k relevant core beliefs with scores
+
+5. **Transcript Retrieval Test**
+   - Tests the `retrieve_transcripts` tool (Phase 2 pipeline)
+   - Input: Custom search query
+   - Output: Top-k relevant transcript chunks with metadata
+
+6. **Synthesis Chain Test**
+   - Tests the LCEL synthesis chain
+   - Input: User query + context
+   - Output: Complete synthesized response using mock retrieval data
+
+7. **End-to-End Agent Test**
+   - Tests the complete ReAct agent with conversation memory
+   - Input: User query
+   - Output: Full agent response with tool usage
+
+8. **Configuration Validation**
+   - Validates all settings and dependencies
+   - Shows detailed configuration information
+   - Reports any issues or missing components
 
 ### Sample Session
 
 ```
-python scripts/test_phase2_interactive.py --persona-id greg_startup
+🧪 LangChain Persona Agent - Interactive Step Tester
+============================================================
 
-Available Tests:
-1. Test HyDE Retrieval
-2. Test Hybrid Search (BM25+Vector)
-3. Test Cross-Encoder Reranking
-4. Interactive Search (Full Pipeline)
-5. Compare Phase 1 vs Phase 2
-6. Exit
+📋 Configuration:
+   Base Storage: /Volumes/J15/aicallgo_data/persona_data_base
+   Query Analysis Model: gemini/gemini-2.0-flash (fast)
+   Synthesis Model: gemini/gemini-2.5-pro (heavy)
+   Retrieval Config: MM=3, CB=5, T=5
 
-Select option (1-6): 4
+👥 Available Personas: greg_startup, dan_kennedy
+   Selected Persona: greg_startup
 
-Interactive Search - Full Phase 2 Pipeline
-Full Pipeline Includes:
-• HyDE query expansion
-• Hybrid search (BM25 + Vector)
-• Cross-encoder reranking
+🧪 Test Options:
+   1. Query Analysis Test
+   2. Persona Data Retrieval Test
+   3. Mental Models Retrieval Test
+   4. Core Beliefs Retrieval Test
+   5. Transcript Retrieval Test
+   6. Synthesis Chain Test
+   7. End-to-End Agent Test
+   8. Configuration Validation
+   9. Select Different Persona
+   0. Exit
 
-Enter your search queries (type 'quit' to exit)
+Enter your choice (0-9): 1
 
-Search> productivity frameworks
+🔍 Query Analysis Test
+==============================
+Enter your query [Write me a sales email for a new SaaS product]: Help me create a pricing strategy
 
-Processing with full Phase 2 pipeline...
-✓ Search completed in 1.23s
+⏱️  Running query analysis...
+✅ Query Analysis Results:
+{
+  "core_task": "Develop a pricing strategy for a product or service",
+  "rag_query": "pricing strategy product pricing models revenue optimization",
+  "provided_context": "",
+  "intent_type": "task"
+}
 
-Phase 2 Pipeline Results
-----------------------------------------
-1. Productivity frameworks like GTD and PARA METHOD help organize...
-   Score: 0.89
-   Source: /path/to/document.txt
-   Chunk: 15
+⏱️  Execution time: 1.34s
 
-[Additional results...]
-
-Search> quit
+Press Enter to continue...
 ```
 
-### Troubleshooting
+### Usage Tips
 
-**"Persona not found"** - Run `make list-personas` to see available personas
+1. **Start with Configuration Validation** - Run test #8 first to ensure everything is set up correctly
 
-**"Knowledge base is empty"** - Run `make build-kb PERSONA_NAME=your_persona`
+2. **Test Individual Components** - Test each component (1-6) individually to understand their outputs
 
-**"Phase 2 pipeline not available"** - Check that `retrieval.enabled: true` in config and knowledge base was built after Phase 2 configuration
+3. **Try Different Queries** - Use various types of queries to see how the system responds
 
-**Import errors** - Ensure you're running from the dk_rag root directory
+4. **Check End-to-End** - Run test #7 to see the complete agent in action
+
+5. **Switch Personas** - Use test #9 to switch between different personas and see how responses differ
+
+### Error Handling
+
+The script includes comprehensive error handling:
+- Shows detailed error messages
+- Logs exceptions for debugging
+- Allows you to continue testing after errors
+- Graceful handling of missing dependencies or data
+
+### Dependencies
+
+All dependencies are handled automatically through the main project configuration. The script will inform you if any required components are missing.
+
+## Development
+
+To add new test cases:
+
+1. Add a new test method to the `InteractiveChainTester` class
+2. Add the option to the `display_menu()` method
+3. Add the choice handling to the main loop in `run()`
+
+The script follows the same configuration and logging patterns as the rest of the system.

@@ -336,7 +336,7 @@ agent:
       
     # Mental Models Retriever Tool
     mental_models:
-      k: 3  # Number of mental models to retrieve
+      k: 4  # Number of mental models to retrieve
       use_reranking: true
       min_confidence_score: 0.7
       log_retrievals: true

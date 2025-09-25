@@ -17,6 +17,11 @@ from ..core.knowledge_indexer import KnowledgeIndexer
 from ..core.persona_manager import PersonaManager
 from ..utils.artifact_discovery import ArtifactDiscovery
 from ..utils.logging import get_logger
+from ..utils.llm_utils import robust_json_loads
+
+
+# Import robust JSON parsing library
+from llm_output_parser import parse_json
 
 logger = get_logger(__name__)
 
@@ -81,8 +86,19 @@ Now analyze the query and return the JSON:"""
         messages = [HumanMessage(content=prompt)]
         response = llm.invoke(messages)
         
-        # Parse JSON response
-        extracted = json.loads(response.content)
+        # Log raw response for debugging
+        logger.info(f"DEBUG: Raw LLM response (first 500 chars): {response.content[:500] if response.content else 'None'}...")
+        logger.info(f"DEBUG: Raw response total length: {len(response.content) if response.content else 0}")
+        
+        # Parse JSON response using robust parsing pattern
+        try:
+            # Try llm-output-parser first (handles markdown/mixed content better)
+            extracted = parse_json(response.content)
+            logger.debug(f"llm-output-parser successful")
+        except Exception as parse_error:
+            logger.debug(f"llm-output-parser failed: {str(parse_error)}, falling back to robust_json_loads")
+            # Fallback to XML-aware extraction
+            extracted = robust_json_loads(response.content, logger)
         
         # Validate required fields
         required_fields = ['core_task', 'rag_query', 'intent_type']
@@ -96,8 +112,8 @@ Now analyze the query and return the JSON:"""
         logger.info(f"Query analysis completed: {extracted['core_task'][:50]}...")
         return extracted
         
-    except json.JSONDecodeError as e:
-        logger.error(f"Failed to parse JSON response: {str(e)}")
+    except Exception as e:
+        logger.error(f"Query analysis failed: {str(e)}")
         return {
             "core_task": query,  # Fallback to original query
             "rag_query": query,
@@ -189,30 +205,40 @@ def retrieve_mental_models(query: str, persona_id: str, settings: Settings = Non
     
     # Use config for retrieval parameters
     config = settings.agent.tools.mental_models
-    k = config.k
+    k = config.get('k', 3)
     
     logger.info(f"Retrieving {k} mental models for persona: {persona_id}")
     
     try:
         # Initialize knowledge indexer
-        persona_manager = PersonaManager(settings)
+        persona_manager = PersonaManager(settings) 
         knowledge_indexer = KnowledgeIndexer(settings, persona_manager, persona_id)
         
-        # Search mental models using existing tested pattern
-        results, scores = knowledge_indexer.search_mental_models(
+        # Search mental models using KnowledgeIndexer method
+        results = knowledge_indexer.search_mental_models(
             query=query,
+            persona_id=persona_id,
             k=k,
-            use_reranking=config.use_reranking
+            use_reranking=True,
+            return_scores=True
         )
         
         # Convert to serializable format
         formatted_results = []
-        for i, (result, score) in enumerate(zip(results, scores)):
+        for i, result in enumerate(results):
+            # Handle tuple format (item, score) when return_scores=True
+            if isinstance(result, tuple):
+                item, score = result
+                score_value = score if score is not None else 0.0
+            else:
+                item = result
+                score_value = 0.0
+            
             formatted_results.append({
-                'content': result.get('content', str(result)),
-                'score': score,
+                'content': item.content if hasattr(item, 'content') else str(item),
+                'score': score_value,
                 'rank': i + 1,
-                'metadata': result.get('metadata', {})
+                'metadata': item.metadata if hasattr(item, 'metadata') else {}
             })
         
         logger.info(f"Retrieved {len(formatted_results)} mental models")
@@ -242,30 +268,40 @@ def retrieve_core_beliefs(query: str, persona_id: str, settings: Settings = None
         
     # Use config for retrieval parameters
     config = settings.agent.tools.core_beliefs
-    k = config.k
+    k = config.get('k', 5)
     
     logger.info(f"Retrieving {k} core beliefs for persona: {persona_id}")
     
     try:
-        # Initialize knowledge indexer  
-        persona_manager = PersonaManager(settings)
+        # Initialize knowledge indexer
+        persona_manager = PersonaManager(settings) 
         knowledge_indexer = KnowledgeIndexer(settings, persona_manager, persona_id)
         
-        # Search core beliefs using existing tested pattern
-        results, scores = knowledge_indexer.search_core_beliefs(
+        # Search core beliefs using KnowledgeIndexer method
+        results = knowledge_indexer.search_core_beliefs(
             query=query,
+            persona_id=persona_id,
             k=k,
-            use_reranking=config.use_reranking
+            use_reranking=True,
+            return_scores=True
         )
         
         # Convert to serializable format
         formatted_results = []
-        for i, (result, score) in enumerate(zip(results, scores)):
+        for i, result in enumerate(results):
+            # Handle tuple format (item, score) when return_scores=True
+            if isinstance(result, tuple):
+                item, score = result
+                score_value = score if score is not None else 0.0
+            else:
+                item = result
+                score_value = 0.0
+            
             formatted_results.append({
-                'content': result.get('content', str(result)),
-                'score': score,
+                'content': item.content if hasattr(item, 'content') else str(item),
+                'score': score_value,
                 'rank': i + 1,
-                'metadata': result.get('metadata', {})
+                'metadata': item.metadata if hasattr(item, 'metadata') else {}
             })
         
         logger.info(f"Retrieved {len(formatted_results)} core beliefs")
@@ -295,8 +331,8 @@ def retrieve_transcripts(query: str, persona_id: str, settings: Settings = None)
         
     # Use config for retrieval parameters
     config = settings.agent.tools.transcripts
-    k = config.k
-    retrieval_k = config.retrieval_k
+    k = config.get('k', 5)
+    retrieval_k = config.get('retrieval_k', 25)
     
     logger.info(f"Retrieving {k} transcript chunks for persona: {persona_id}")
     
