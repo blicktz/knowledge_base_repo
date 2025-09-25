@@ -7,11 +7,11 @@ import sys
 from pathlib import Path
 
 # Add project root to Python path
-project_root = Path(__file__).parent
+project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 
-from config.settings import Settings
-from tools.agent_tools import get_tools_for_persona
+from dk_rag.config.settings import Settings
+from dk_rag.tools.agent_tools import get_tools_for_persona
 
 
 def test_config_usage():
@@ -28,11 +28,11 @@ def test_config_usage():
         # Test agent configuration sections exist
         print(f"\n📋 Agent Configuration:")
         print(f"   Agent enabled: {settings.agent.enabled}")
-        print(f"   Query Analysis Model: {settings.agent.tools.query_analysis.llm_model}")
+        print(f"   Query Analysis Model: {settings.agent.query_analysis.llm_model}")
         print(f"   Synthesis Model: {settings.agent.synthesis.llm_model}")
-        print(f"   Mental Models k: {settings.agent.tools.mental_models.k}")
-        print(f"   Core Beliefs k: {settings.agent.tools.core_beliefs.k}")
-        print(f"   Transcripts k: {settings.agent.tools.transcripts.k}")
+        print(f"   Mental Models k: {settings.agent.tools.mental_models.get('k', 'not configured')}")
+        print(f"   Core Beliefs k: {settings.agent.tools.core_beliefs.get('k', 'not configured')}")
+        print(f"   Transcripts k: {settings.agent.tools.transcripts.get('k', 'not configured')}")
         
         # Test API configuration
         print(f"\n🌐 API Configuration:")
@@ -42,7 +42,7 @@ def test_config_usage():
         
         # Test model selection logic
         print(f"\n🤖 Model Selection Logic:")
-        query_model = settings.agent.tools.query_analysis.llm_model
+        query_model = settings.agent.query_analysis.llm_model
         synthesis_model = settings.agent.synthesis.llm_model
         
         if "2.0-flash" in query_model:

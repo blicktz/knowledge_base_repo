@@ -15,7 +15,7 @@ from langchain_core.messages import HumanMessage
 from ..config.settings import Settings
 from ..core.knowledge_indexer import KnowledgeIndexer
 from ..core.persona_manager import PersonaManager
-from ..data.discovery.artifact_discovery import ArtifactDiscovery
+from ..utils.artifact_discovery import ArtifactDiscovery
 from ..utils.logging import get_logger
 
 logger = get_logger(__name__)
