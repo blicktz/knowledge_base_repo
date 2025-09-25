@@ -121,8 +121,14 @@ Remember: You are {persona_name}. Think, speak, and reason exactly as they would
         if not session_id:
             session_id = str(uuid.uuid4())
         
-        # Configure conversation thread
-        config = {"configurable": {"thread_id": session_id}}
+        # Configure conversation thread with persona context
+        config = {
+            "configurable": {
+                "thread_id": session_id,
+                "persona_id": self.persona_id,
+                "settings": self.settings
+            }
+        }
         
         try:
             # Invoke the agent with the user message
@@ -177,7 +183,13 @@ Remember: You are {persona_name}. Think, speak, and reason exactly as they would
             List of message dictionaries from the conversation
         """
         try:
-            config = {"configurable": {"thread_id": session_id}}
+            config = {
+                "configurable": {
+                    "thread_id": session_id,
+                    "persona_id": self.persona_id,
+                    "settings": self.settings
+                }
+            }
             
             # Get checkpointed state
             checkpoint = self.memory.get(config)
@@ -207,7 +219,13 @@ Remember: You are {persona_name}. Think, speak, and reason exactly as they would
             True if successful, False otherwise
         """
         try:
-            config = {"configurable": {"thread_id": session_id}}
+            config = {
+                "configurable": {
+                    "thread_id": session_id,
+                    "persona_id": self.persona_id,
+                    "settings": self.settings
+                }
+            }
             
             # Clear the checkpoint
             self.memory.delete(config)

@@ -4,11 +4,12 @@ Complete rewrite using @tool decorator pattern
 """
 
 import json
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Optional
 from datetime import datetime
 from pathlib import Path
 
 from langchain_core.tools import tool
+from langchain_core.runnables import RunnableConfig
 from langchain_litellm import ChatLiteLLM
 from langchain_core.messages import HumanMessage
 
@@ -27,7 +28,7 @@ logger = get_logger(__name__)
 
 
 @tool
-def query_analyzer(query: str, persona_id: str = None, settings: Settings = None) -> Dict[str, Any]:
+def query_analyzer(query: str, config: RunnableConfig = None) -> Dict[str, Any]:
     """
     Analyze user queries to extract core tasks and generate RAG queries.
     
@@ -41,16 +42,21 @@ def query_analyzer(query: str, persona_id: str = None, settings: Settings = None
     """
     logger.info(f"Analyzing query: {query[:100]}...")
     
+    # Extract context from RunnableConfig
+    settings = None
+    if config and "configurable" in config:
+        settings = config["configurable"].get("settings")
+    
     if not settings:
         from ..config.settings import Settings
         settings = Settings()
     
-    # Use config for LLM initialization (light task - fast model)
-    config = settings.agent.query_analysis
+    # Use settings for LLM initialization (light task - fast model)
+    llm_config = settings.agent.query_analysis
     llm = ChatLiteLLM(
-        model=config.llm_model,
-        temperature=config.temperature,
-        max_tokens=config.max_tokens
+        model=llm_config.llm_model,
+        temperature=llm_config.temperature,
+        max_tokens=llm_config.max_tokens
     )
     
     # Build analysis prompt
@@ -131,17 +137,26 @@ Now analyze the query and return the JSON:"""
 
 
 @tool
-def get_persona_data(persona_id: str, settings: Settings = None) -> Dict[str, Any]:
+def get_persona_data(config: RunnableConfig = None) -> Dict[str, Any]:
     """
     Load and extract static persona data from latest artifact.
     
     Args:
-        persona_id: The persona identifier
-        settings: Application settings
+        config: Runtime configuration containing persona_id and settings
     
     Returns:
         Dictionary with linguistic_style, communication_patterns, and metadata
     """
+    # Extract context from RunnableConfig
+    persona_id = None
+    settings = None
+    if config and "configurable" in config:
+        persona_id = config["configurable"].get("persona_id")
+        settings = config["configurable"].get("settings")
+    
+    if not persona_id:
+        raise ValueError("persona_id required in config")
+        
     logger.info(f"Loading persona data for: {persona_id}")
     
     try:
@@ -187,25 +202,34 @@ def get_persona_data(persona_id: str, settings: Settings = None) -> Dict[str, An
 
 
 @tool
-def retrieve_mental_models(query: str, persona_id: str, settings: Settings = None) -> List[Dict[str, Any]]:
+def retrieve_mental_models(query: str, config: RunnableConfig = None) -> List[Dict[str, Any]]:
     """
     Retrieve relevant mental models using RAG pipeline.
     
     Args:
         query: The search query
-        persona_id: The persona identifier  
-        settings: Application settings
+        config: Runtime configuration containing persona_id and settings
     
     Returns:
         List of relevant mental model dictionaries
     """
+    # Extract context from RunnableConfig
+    persona_id = None
+    settings = None
+    if config and "configurable" in config:
+        persona_id = config["configurable"].get("persona_id")
+        settings = config["configurable"].get("settings")
+    
+    if not persona_id:
+        raise ValueError("persona_id required in config")
+        
     if not settings:
         from ..config.settings import Settings
         settings = Settings()
     
-    # Use config for retrieval parameters
-    config = settings.agent.tools.mental_models
-    k = config.get('k', 3)
+    # Use settings for retrieval parameters
+    mm_config = settings.agent.tools.mental_models
+    k = mm_config.get('k', 3)
     
     logger.info(f"Retrieving {k} mental models for persona: {persona_id}")
     
@@ -250,25 +274,34 @@ def retrieve_mental_models(query: str, persona_id: str, settings: Settings = Non
 
 
 @tool  
-def retrieve_core_beliefs(query: str, persona_id: str, settings: Settings = None) -> List[Dict[str, Any]]:
+def retrieve_core_beliefs(query: str, config: RunnableConfig = None) -> List[Dict[str, Any]]:
     """
     Retrieve relevant core beliefs using RAG pipeline.
     
     Args:
         query: The search query
-        persona_id: The persona identifier
-        settings: Application settings
+        config: Runtime configuration containing persona_id and settings
     
     Returns:
         List of relevant core belief dictionaries
     """
+    # Extract context from RunnableConfig
+    persona_id = None
+    settings = None
+    if config and "configurable" in config:
+        persona_id = config["configurable"].get("persona_id")
+        settings = config["configurable"].get("settings")
+    
+    if not persona_id:
+        raise ValueError("persona_id required in config")
+        
     if not settings:
         from ..config.settings import Settings
         settings = Settings()
         
-    # Use config for retrieval parameters
-    config = settings.agent.tools.core_beliefs
-    k = config.get('k', 5)
+    # Use settings for retrieval parameters
+    cb_config = settings.agent.tools.core_beliefs
+    k = cb_config.get('k', 5)
     
     logger.info(f"Retrieving {k} core beliefs for persona: {persona_id}")
     
@@ -313,26 +346,35 @@ def retrieve_core_beliefs(query: str, persona_id: str, settings: Settings = None
 
 
 @tool
-def retrieve_transcripts(query: str, persona_id: str, settings: Settings = None) -> List[Dict[str, Any]]:
+def retrieve_transcripts(query: str, config: RunnableConfig = None) -> List[Dict[str, Any]]:
     """
     Retrieve relevant transcript chunks using Phase 2 advanced pipeline.
     
     Args:
         query: The search query
-        persona_id: The persona identifier
-        settings: Application settings
+        config: Runtime configuration containing persona_id and settings
     
     Returns:
         List of relevant transcript chunk dictionaries
     """
+    # Extract context from RunnableConfig
+    persona_id = None
+    settings = None
+    if config and "configurable" in config:
+        persona_id = config["configurable"].get("persona_id")
+        settings = config["configurable"].get("settings")
+    
+    if not persona_id:
+        raise ValueError("persona_id required in config")
+        
     if not settings:
         from ..config.settings import Settings
         settings = Settings()
         
-    # Use config for retrieval parameters
-    config = settings.agent.tools.transcripts
-    k = config.get('k', 5)
-    retrieval_k = config.get('retrieval_k', 25)
+    # Use settings for retrieval parameters
+    ts_config = settings.agent.tools.transcripts
+    k = ts_config.get('k', 5)
+    retrieval_k = ts_config.get('retrieval_k', 25)
     
     logger.info(f"Retrieving {k} transcript chunks for persona: {persona_id}")
     
@@ -354,11 +396,35 @@ def retrieve_transcripts(query: str, persona_id: str, settings: Settings = None)
         
         # Convert to serializable format
         formatted_results = []
-        for doc in results:
+        for result in results:
+            # Handle different tuple formats from advanced pipeline
+            if isinstance(result, tuple) and len(result) == 2:
+                # (Document, score) tuples from retrieve_with_scores()
+                doc, score = result
+                content = doc.page_content
+                metadata = doc.metadata if hasattr(doc, 'metadata') else {}
+                score_value = score
+            elif isinstance(result, tuple) and len(result) == 3:
+                # (doc_id, score, doc_text) tuples from BM25 with return_docs=True
+                doc_id, score, doc_text = result
+                content = doc_text
+                metadata = {'doc_id': doc_id}
+                score_value = score
+            elif hasattr(result, 'page_content'):
+                # Document objects
+                content = result.page_content
+                metadata = result.metadata if hasattr(result, 'metadata') else {}
+                score_value = metadata.get('similarity_score', None)
+            else:
+                # Dictionary or other format
+                content = str(result)
+                metadata = {}
+                score_value = None
+                
             formatted_results.append({
-                'content': doc.page_content,
-                'metadata': doc.metadata,
-                'score': getattr(doc, 'score', None)
+                'content': content,
+                'metadata': metadata,
+                'score': score_value
             })
         
         logger.info(f"Retrieved {len(formatted_results)} transcript chunks")
@@ -384,28 +450,11 @@ def get_tools_for_persona(persona_id: str, settings: Settings) -> List:
     Get configured tools for a specific persona.
     
     Args:
-        persona_id: The persona identifier
+        persona_id: The persona identifier  
         settings: Application settings
         
     Returns:
-        List of configured LangChain tools
+        List of LangChain tools configured for the persona
     """
-    # Pre-configure tools with persona context
-    def make_persona_tool(base_tool, persona_id, settings):
-        """Create a persona-specific version of a tool"""
-        def wrapper(*args, **kwargs):
-            # Inject persona_id and settings if not provided
-            kwargs.setdefault('persona_id', persona_id)
-            kwargs.setdefault('settings', settings)
-            return base_tool(*args, **kwargs)
-        
-        wrapper.__name__ = base_tool.__name__
-        wrapper.__doc__ = base_tool.__doc__
-        return wrapper
-    
-    # Create persona-specific tools
-    configured_tools = []
-    for tool in PERSONA_TOOLS:
-        configured_tools.append(tool)
-    
-    return configured_tools
+    # Tools now handle context via RunnableConfig, so no wrapping needed
+    return PERSONA_TOOLS

@@ -13,6 +13,9 @@ import os
 project_root = Path(__file__).parent
 sys.path.insert(0, str(project_root))
 
+# Fix HuggingFace tokenizers parallelism warning
+os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
+
 
 def main():
     """Main entry point for the LangChain FastAPI application"""

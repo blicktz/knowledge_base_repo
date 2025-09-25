@@ -5,6 +5,7 @@ Allows testing each component of the LangChain persona agent system individually
 """
 
 import sys
+import os
 import time
 import json
 from pathlib import Path
@@ -13,6 +14,9 @@ from typing import Dict, Any, List, Optional
 # Add project root to Python path
 project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root))
+
+# Fix HuggingFace tokenizers parallelism warning
+os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
 
 from dk_rag.config.settings import Settings
 from dk_rag.tools.agent_tools import (
@@ -372,7 +376,7 @@ class InteractiveChainTester:
             session_id = f"test-session-{int(time.time())}"
             
             # Run agent
-            results = agent.chat(query, session_id)
+            results = agent.process_query(query, session_id)
             
             execution_time = self.format_execution_time(start_time)
             print(f"\n✅ Agent Response:")
