@@ -18,6 +18,7 @@ from langgraph.checkpoint.memory import MemorySaver
 from ..config.settings import Settings
 from ..tools.agent_tools import get_tools_for_persona
 from ..utils.logging import get_logger
+from .universal_llm_logger import create_universal_llm_logger
 
 logger = get_logger(__name__)
 
@@ -43,6 +44,10 @@ class LangChainPersonaAgent:
         # Initialize memory for conversation context
         self.memory = MemorySaver()
         
+        # Create universal LLM logger
+        cache_dir = f"/Volumes/J15/aicallgo_data/persona_data_base/personas/{persona_id}/retrieval_cache"
+        self.llm_logger = create_universal_llm_logger(persona_id, cache_dir)
+        
         # Create the ReAct agent with all components
         self.agent_executor = self._create_agent()
         
@@ -65,7 +70,7 @@ class LangChainPersonaAgent:
         # Create system prompt that defines the persona behavior
         system_prompt = self._build_system_prompt()
         
-        # Create the ReAct agent with memory checkpointing
+        # Create the ReAct agent with memory checkpointing and LLM logging
         agent_executor = create_react_agent(
             model=self.llm,
             tools=self.tools,
@@ -121,14 +126,18 @@ Remember: You are {persona_name}. Think, speak, and reason exactly as they would
         if not session_id:
             session_id = str(uuid.uuid4())
         
-        # Configure conversation thread with persona context
+        # Set user query context for logging
+        self.llm_logger.set_user_query(user_query)
+        
+        # Configure conversation thread with persona context and LLM logging
         config = {
             "configurable": {
                 "thread_id": session_id,
                 "persona_id": self.persona_id,
                 "settings": self.settings
             },
-            "max_concurrency": 1  # Execute tools sequentially to prevent model loading conflicts
+            "max_concurrency": 1,  # Execute tools sequentially to prevent model loading conflicts
+            "callbacks": [self.llm_logger]  # Add comprehensive LLM logging
         }
         
         try:
@@ -190,7 +199,8 @@ Remember: You are {persona_name}. Think, speak, and reason exactly as they would
                     "persona_id": self.persona_id,
                     "settings": self.settings
                 },
-                "max_concurrency": 1  # Execute tools sequentially to prevent model loading conflicts
+                "max_concurrency": 1,  # Execute tools sequentially to prevent model loading conflicts
+                "callbacks": [self.llm_logger]  # Add comprehensive LLM logging
             }
             
             # Get checkpointed state
@@ -227,7 +237,8 @@ Remember: You are {persona_name}. Think, speak, and reason exactly as they would
                     "persona_id": self.persona_id,
                     "settings": self.settings
                 },
-                "max_concurrency": 1  # Execute tools sequentially to prevent model loading conflicts
+                "max_concurrency": 1,  # Execute tools sequentially to prevent model loading conflicts
+                "callbacks": [self.llm_logger]  # Add comprehensive LLM logging
             }
             
             # Clear the checkpoint
