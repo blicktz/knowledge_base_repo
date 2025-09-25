@@ -10,122 +10,14 @@ from pathlib import Path
 
 from langchain_core.tools import tool
 from langchain_core.runnables import RunnableConfig
-from langchain_litellm import ChatLiteLLM
-from langchain_core.messages import HumanMessage
 
 from ..config.settings import Settings
 from ..core.knowledge_indexer import KnowledgeIndexer
 from ..core.persona_manager import PersonaManager
 from ..utils.artifact_discovery import ArtifactDiscovery
 from ..utils.logging import get_logger
-from ..utils.llm_utils import robust_json_loads
-
-
-# Import robust JSON parsing library
-from llm_output_parser import parse_json
 
 logger = get_logger(__name__)
-
-
-@tool
-def query_analyzer(query: str, config: RunnableConfig = None) -> Dict[str, Any]:
-    """
-    Analyze user queries to extract core tasks and generate RAG queries.
-    
-    Args:
-        query: The user query to analyze
-        persona_id: ID of the persona (for context)
-        settings: Application settings
-    
-    Returns:
-        Dictionary with core_task, rag_query, provided_context, and intent_type
-    """
-    logger.info(f"Analyzing query: {query[:100]}...")
-    
-    # Extract context from RunnableConfig
-    settings = None
-    if config and "configurable" in config:
-        settings = config["configurable"].get("settings")
-    
-    if not settings:
-        from ..config.settings import Settings
-        settings = Settings()
-    
-    # Use settings for LLM initialization (light task - fast model)
-    llm_config = settings.agent.query_analysis
-    llm = ChatLiteLLM(
-        model=llm_config.llm_model,
-        temperature=llm_config.temperature,
-        max_tokens=llm_config.max_tokens
-    )
-    
-    # Build analysis prompt
-    prompt = f"""You are a query analysis specialist. Analyze the following user query and extract structured information.
-
-User Query: "{query}"
-
-Extract and return a JSON object with the following fields:
-
-1. "core_task": A clear, concise description of what the user wants to accomplish (1-2 sentences)
-2. "rag_query": An optimized search query for RAG retrieval that captures the key concepts and terms
-3. "provided_context": Any specific context, examples, or details the user provided
-4. "intent_type": Classify the intent as one of:
-   - "question" (asking for information)
-   - "task" (requesting an action or creation)
-   - "analysis" (requesting analysis or evaluation)
-   - "advice" (seeking recommendations or guidance)
-
-Return ONLY the JSON object, no other text.
-
-Example response:
-{{
-    "core_task": "Create a sales email for a new product launch",
-    "rag_query": "sales email product launch marketing copywriting persuasion",
-    "provided_context": "New SaaS product for small businesses",
-    "intent_type": "task"
-}}
-
-Now analyze the query and return the JSON:"""
-    
-    try:
-        # Use LangChain message format
-        messages = [HumanMessage(content=prompt)]
-        response = llm.invoke(messages)
-        
-        # Log raw response for debugging
-        logger.info(f"DEBUG: Raw LLM response (first 500 chars): {response.content[:500] if response.content else 'None'}...")
-        logger.info(f"DEBUG: Raw response total length: {len(response.content) if response.content else 0}")
-        
-        # Parse JSON response using robust parsing pattern
-        try:
-            # Try llm-output-parser first (handles markdown/mixed content better)
-            extracted = parse_json(response.content)
-            logger.debug(f"llm-output-parser successful")
-        except Exception as parse_error:
-            logger.debug(f"llm-output-parser failed: {str(parse_error)}, falling back to robust_json_loads")
-            # Fallback to XML-aware extraction
-            extracted = robust_json_loads(response.content, logger)
-        
-        # Validate required fields
-        required_fields = ['core_task', 'rag_query', 'intent_type']
-        for field in required_fields:
-            if field not in extracted:
-                extracted[field] = ""
-        
-        if 'provided_context' not in extracted:
-            extracted['provided_context'] = ""
-        
-        logger.info(f"Query analysis completed: {extracted['core_task'][:50]}...")
-        return extracted
-        
-    except Exception as e:
-        logger.error(f"Query analysis failed: {str(e)}")
-        return {
-            "core_task": query,  # Fallback to original query
-            "rag_query": query,
-            "provided_context": "",
-            "intent_type": "unknown"
-        }
 
 
 @tool
@@ -208,9 +100,12 @@ def retrieve_mental_models(query: str, config: RunnableConfig = None) -> List[Di
     # Extract context from RunnableConfig
     persona_id = None
     settings = None
+    rag_query = query  # Default to original query
     if config and "configurable" in config:
         persona_id = config["configurable"].get("persona_id")
         settings = config["configurable"].get("settings")
+        # Use optimized rag_query if available
+        rag_query = config["configurable"].get("rag_query", query)
     
     if not persona_id:
         raise ValueError("persona_id required in config")
@@ -223,16 +118,16 @@ def retrieve_mental_models(query: str, config: RunnableConfig = None) -> List[Di
     mm_config = settings.agent.tools.mental_models
     k = mm_config.get('k', 3)
     
-    logger.info(f"Retrieving {k} mental models for persona: {persona_id}")
+    logger.info(f"Retrieving {k} mental models for persona: {persona_id}, rag_query: {rag_query}")
     
     try:
         # Initialize knowledge indexer
         persona_manager = PersonaManager(settings) 
         knowledge_indexer = KnowledgeIndexer(settings, persona_manager, persona_id)
         
-        # Search mental models using KnowledgeIndexer method
+        # Search mental models using optimized rag_query
         results = knowledge_indexer.search_mental_models(
-            query=query,
+            query=rag_query,
             persona_id=persona_id,
             k=k,
             use_reranking=True,
@@ -280,9 +175,12 @@ def retrieve_core_beliefs(query: str, config: RunnableConfig = None) -> List[Dic
     # Extract context from RunnableConfig
     persona_id = None
     settings = None
+    rag_query = query  # Default to original query
     if config and "configurable" in config:
         persona_id = config["configurable"].get("persona_id")
         settings = config["configurable"].get("settings")
+        # Use optimized rag_query if available
+        rag_query = config["configurable"].get("rag_query", query)
     
     if not persona_id:
         raise ValueError("persona_id required in config")
@@ -295,16 +193,16 @@ def retrieve_core_beliefs(query: str, config: RunnableConfig = None) -> List[Dic
     cb_config = settings.agent.tools.core_beliefs
     k = cb_config.get('k', 5)
     
-    logger.info(f"Retrieving {k} core beliefs for persona: {persona_id}")
+    logger.info(f"Retrieving {k} core beliefs for persona: {persona_id}, rag_query: {rag_query}")
     
     try:
         # Initialize knowledge indexer
         persona_manager = PersonaManager(settings) 
         knowledge_indexer = KnowledgeIndexer(settings, persona_manager, persona_id)
         
-        # Search core beliefs using KnowledgeIndexer method
+        # Search core beliefs using optimized rag_query
         results = knowledge_indexer.search_core_beliefs(
-            query=query,
+            query=rag_query,
             persona_id=persona_id,
             k=k,
             use_reranking=True,
@@ -352,9 +250,12 @@ def retrieve_transcripts(query: str, config: RunnableConfig = None) -> List[Dict
     # Extract context from RunnableConfig
     persona_id = None
     settings = None
+    rag_query = query  # Default to original query
     if config and "configurable" in config:
         persona_id = config["configurable"].get("persona_id")
         settings = config["configurable"].get("settings")
+        # Use optimized rag_query if available
+        rag_query = config["configurable"].get("rag_query", query)
     
     if not persona_id:
         raise ValueError("persona_id required in config")
@@ -368,7 +269,7 @@ def retrieve_transcripts(query: str, config: RunnableConfig = None) -> List[Dict
     k = ts_config.get('k', 5)
     retrieval_k = ts_config.get('retrieval_k', 25)
     
-    logger.info(f"Retrieving {k} transcript chunks for persona: {persona_id}")
+    logger.info(f"Retrieving {k} transcript chunks for persona: {persona_id}, rag_query: {rag_query}")
     
     try:
         # Initialize knowledge indexer and Phase 2 pipeline
@@ -376,9 +277,9 @@ def retrieve_transcripts(query: str, config: RunnableConfig = None) -> List[Dict
         knowledge_indexer = KnowledgeIndexer(settings, persona_manager, persona_id)
         pipeline = knowledge_indexer.get_advanced_retrieval_pipeline(persona_id)
         
-        # Use Phase 2 advanced pipeline with all enhancements
+        # Use Phase 2 advanced pipeline with optimized rag_query
         results = pipeline.retrieve(
-            query=query,
+            query=rag_query,
             k=k,
             use_hyde=True,
             use_hybrid=True, 
@@ -427,9 +328,8 @@ def retrieve_transcripts(query: str, config: RunnableConfig = None) -> List[Dict
         return []
 
 
-# Tool registry for easy access
+# Tool registry for easy access (query_analyzer removed - it's now a preprocessing step)
 PERSONA_TOOLS = [
-    query_analyzer,
     get_persona_data, 
     retrieve_mental_models,
     retrieve_core_beliefs,

@@ -17,8 +17,12 @@ from langgraph.checkpoint.memory import MemorySaver
 
 from ..config.settings import Settings
 from ..tools.agent_tools import get_tools_for_persona
+from ..utils.llm_utils import robust_json_loads
 from ..utils.logging import get_logger
 from .universal_llm_logger import create_universal_llm_logger
+
+# Import robust JSON parsing library
+from llm_output_parser import parse_json
 
 logger = get_logger(__name__)
 
@@ -90,14 +94,14 @@ class LangChainPersonaAgent:
         system_prompt = f"""You are a virtual AI persona of {persona_name}. Your goal is to respond authentically as {persona_name} would, using their tone, style, knowledge, and problem-solving approach.
 
 CORE INSTRUCTIONS:
-1. You must FIRST use the query_analyzer tool to understand what the user is asking
-2. Then gather relevant context using the available retrieval tools:
+1. The user's query has been analyzed and structured for optimal retrieval
+2. Gather relevant context using the available retrieval tools:
    - get_persona_data: Get your linguistic style and communication patterns
    - retrieve_mental_models: Get relevant frameworks and methodologies you use
    - retrieve_core_beliefs: Get your foundational principles and beliefs
    - retrieve_transcripts: Get relevant examples of your actual words and ideas
 
-3. Once you have gathered this context, respond authentically as {persona_name}:
+3. Once you have gathered context from the tools, respond authentically as {persona_name}:
    - Adopt the tone and style from your linguistic data
    - Apply relevant mental models to structure your thinking
    - Ensure your reasoning aligns with your core beliefs
@@ -110,6 +114,86 @@ CORE INSTRUCTIONS:
 Remember: You are {persona_name}. Think, speak, and reason exactly as they would."""
 
         return system_prompt
+    
+    def _analyze_query(self, user_query: str) -> Dict[str, Any]:
+        """Analyze user query and extract structured information as a preprocessing step."""
+        self.logger.info(f"Analyzing query: {user_query[:100]}...")
+        
+        # Use settings for LLM initialization (light task - fast model)
+        llm_config = self.settings.agent.query_analysis
+        llm = ChatLiteLLM(
+            model=llm_config.llm_model,
+            temperature=llm_config.temperature,
+            max_tokens=llm_config.max_tokens
+        )
+        
+        # Build analysis prompt
+        prompt = f"""You are a query analysis specialist. Analyze the following user query and extract structured information.
+
+User Query: "{user_query}"
+
+Extract and return a JSON object with the following fields:
+
+1. "core_task": A clear, concise description of what the user wants to accomplish (1-2 sentences)
+2. "rag_query": An optimized search query for RAG retrieval that captures the key concepts and terms
+3. "provided_context": Any specific context, examples, or details the user provided
+4. "intent_type": Classify the intent as one of:
+   - "question" (asking for information)
+   - "task" (requesting an action or creation)
+   - "analysis" (requesting analysis or evaluation)
+   - "advice" (seeking recommendations or guidance)
+
+Return ONLY the JSON object, no other text.
+
+Example response:
+{{
+    "core_task": "Create a sales email for a new product launch",
+    "rag_query": "sales email product launch marketing copywriting persuasion",
+    "provided_context": "New SaaS product for small businesses",
+    "intent_type": "task"
+}}
+
+Now analyze the query and return the JSON:"""
+        
+        try:
+            # Use LangChain message format
+            messages = [HumanMessage(content=prompt)]
+            response = llm.invoke(messages)
+            
+            # Log raw response for debugging
+            self.logger.info(f"DEBUG: Raw LLM response (first 500 chars): {response.content[:500] if response.content else 'None'}...")
+            self.logger.info(f"DEBUG: Raw response total length: {len(response.content) if response.content else 0}")
+            
+            # Parse JSON response using robust parsing pattern
+            try:
+                # Try llm-output-parser first (handles markdown/mixed content better)
+                extracted = parse_json(response.content)
+                self.logger.debug(f"llm-output-parser successful")
+            except Exception as parse_error:
+                self.logger.debug(f"llm-output-parser failed: {str(parse_error)}, falling back to robust_json_loads")
+                # Fallback to XML-aware extraction
+                extracted = robust_json_loads(response.content, self.logger)
+            
+            # Validate required fields
+            required_fields = ['core_task', 'rag_query', 'intent_type']
+            for field in required_fields:
+                if field not in extracted:
+                    extracted[field] = ""
+            
+            if 'provided_context' not in extracted:
+                extracted['provided_context'] = ""
+            
+            self.logger.info(f"Query analysis completed: {extracted['core_task'][:50]}...")
+            return extracted
+            
+        except Exception as e:
+            self.logger.error(f"Query analysis failed: {str(e)}")
+            return {
+                "core_task": user_query,  # Fallback to original query
+                "rag_query": user_query,
+                "provided_context": "",
+                "intent_type": "unknown"
+            }
     
     def process_query(self, user_query: str, session_id: Optional[str] = None) -> str:
         """
@@ -131,12 +215,17 @@ Remember: You are {persona_name}. Think, speak, and reason exactly as they would
         # Set user query context for logging
         self.llm_logger.set_user_query(user_query)
         
-        # Configure conversation thread with persona context and LLM logging
+        # Step 1: Always analyze the query first (preprocessing)
+        query_analysis = self._analyze_query(user_query)
+        
+        # Configure conversation thread with persona context, query analysis, and LLM logging
         config = {
             "configurable": {
                 "thread_id": session_id,
                 "persona_id": self.persona_id,
-                "settings": self.settings
+                "settings": self.settings,
+                "query_analysis": query_analysis,  # Pass analysis to tools
+                "rag_query": query_analysis.get('rag_query', user_query)  # Optimized search query
             },
             "max_concurrency": 1,  # Execute tools sequentially to prevent model loading conflicts
             "callbacks": [self.llm_logger]  # Add comprehensive LLM logging

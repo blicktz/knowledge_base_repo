@@ -20,7 +20,6 @@ os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
 
 from dk_rag.config.settings import Settings
 from dk_rag.tools.agent_tools import (
-    query_analyzer, 
     get_persona_data,
     retrieve_mental_models,
     retrieve_core_beliefs, 
@@ -156,7 +155,9 @@ class InteractiveChainTester:
         start_time = time.time()
         
         try:
-            results = query_analyzer.invoke({"query": query, "persona_id": self.current_persona, "settings": self.settings})
+            # Query analysis is now internal to the agent, test via agent
+            agent = LangChainPersonaAgent(self.current_persona, self.settings)
+            results = agent._analyze_query(query)
             execution_time = self.format_execution_time(start_time)
             self.print_results("Query Analysis Results:", results, execution_time)
         except Exception as e:
