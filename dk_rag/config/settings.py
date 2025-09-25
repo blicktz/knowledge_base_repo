@@ -180,8 +180,20 @@ class AgentSynthesisConfig(BaseModel):
     log_interactions: bool = Field(default=True)
 
 
+class AgentLLMLoggingConfig(BaseModel):
+    """Configuration for persona-specific LLM logging"""
+    enabled: bool = Field(default=True)
+    directory_name: str = Field(default="llm_logging")
+    save_prompts: bool = Field(default=True)
+    save_responses: bool = Field(default=True)
+    save_extracted: bool = Field(default=True)
+    include_metadata: bool = Field(default=True)
+    compression: bool = Field(default=True)
+    retention_days: int = Field(default=30)
+
+
 class AgentLoggingConfig(BaseModel):
-    """Configuration for agent logging"""
+    """Configuration for agent logging (legacy)"""
     enabled: bool = Field(default=True)
     save_prompts: bool = Field(default=True)
     save_responses: bool = Field(default=True)
@@ -209,6 +221,7 @@ class AgentErrorHandlingConfig(BaseModel):
 class AgentConfig(BaseModel):
     """Configuration for Phase 3 agent system"""
     enabled: bool = Field(default=True)
+    llm_logging: AgentLLMLoggingConfig = Field(default_factory=AgentLLMLoggingConfig)
     query_analysis: AgentLLMConfig = Field(default_factory=AgentLLMConfig)
     synthesis: AgentSynthesisConfig = Field(default_factory=AgentSynthesisConfig)
     tools: AgentToolsConfig = Field(default_factory=AgentToolsConfig)
@@ -347,6 +360,11 @@ class Settings(BaseModel):
     def get_personas_base_dir(self) -> str:
         """Get absolute path to personas base directory"""
         return str(Path(self.storage.base_storage_dir) / "personas")
+    
+    def get_llm_logging_path(self, persona_id: str) -> str:
+        """Get absolute path to LLM logging directory for a specific persona"""
+        base_dir = Path(self.storage.base_storage_dir) / "personas" / persona_id / self.agent.llm_logging.directory_name
+        return str(base_dir.resolve())
     
     def is_debug_mode(self) -> bool:
         """Check if debug mode is enabled"""

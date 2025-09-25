@@ -18,8 +18,8 @@ from langgraph.checkpoint.memory import MemorySaver
 from ..config.settings import Settings
 from ..tools.agent_tools import get_tools_for_persona
 from ..utils.llm_utils import robust_json_loads
+# Will import llm factory functions inside methods to avoid circular imports
 from ..utils.logging import get_logger
-from .universal_llm_logger import create_universal_llm_logger
 
 # Import robust JSON parsing library
 from llm_output_parser import parse_json
@@ -39,18 +39,15 @@ class LangChainPersonaAgent:
         self.settings = settings
         self.logger = get_logger(f"{__name__}.{persona_id}")
         
-        # Initialize LangChain LLM
-        self.llm = self._initialize_llm()
+        # Initialize LangChain LLM using factory (import here to avoid circular imports)
+        from ..utils.llm_factory import create_agent_llm
+        self.llm = create_agent_llm(persona_id, settings)
         
         # Get persona-specific tools
         self.tools = get_tools_for_persona(persona_id, settings)
         
         # Initialize memory for conversation context
         self.memory = MemorySaver()
-        
-        # Create universal LLM logger
-        cache_dir = f"/Volumes/J15/aicallgo_data/persona_data_base/personas/{persona_id}/retrieval_cache"
-        self.llm_logger = create_universal_llm_logger(persona_id, cache_dir)
         
         # Create the ReAct agent with all components
         self.agent_executor = self._create_agent()
@@ -119,13 +116,9 @@ Remember: You are {persona_name}. Think, speak, and reason exactly as they would
         """Analyze user query and extract structured information as a preprocessing step."""
         self.logger.info(f"Analyzing query: {user_query[:100]}...")
         
-        # Use settings for LLM initialization (light task - fast model)
-        llm_config = self.settings.agent.query_analysis
-        llm = ChatLiteLLM(
-            model=llm_config.llm_model,
-            temperature=llm_config.temperature,
-            max_tokens=llm_config.max_tokens
-        )
+        # Use the factory to create query analysis LLM with explicit context
+        from ..utils.llm_factory import create_query_analysis_llm
+        llm = create_query_analysis_llm(self.persona_id, self.settings)
         
         # Build analysis prompt
         prompt = f"""You are a query analysis specialist. Analyze the following user query and extract structured information.
@@ -212,9 +205,6 @@ Now analyze the query and return the JSON:"""
         if not session_id:
             session_id = str(uuid.uuid4())
         
-        # Set user query context for logging
-        self.llm_logger.set_user_query(user_query)
-        
         # Step 1: Always analyze the query first (preprocessing)
         query_analysis = self._analyze_query(user_query)
         
@@ -227,8 +217,7 @@ Now analyze the query and return the JSON:"""
                 "query_analysis": query_analysis,  # Pass analysis to tools
                 "rag_query": query_analysis.get('rag_query', user_query)  # Optimized search query
             },
-            "max_concurrency": 1,  # Execute tools sequentially to prevent model loading conflicts
-            "callbacks": [self.llm_logger]  # Add comprehensive LLM logging
+            "max_concurrency": 1  # Execute tools sequentially to prevent model loading conflicts
         }
         
         try:
@@ -290,8 +279,7 @@ Now analyze the query and return the JSON:"""
                     "persona_id": self.persona_id,
                     "settings": self.settings
                 },
-                "max_concurrency": 1,  # Execute tools sequentially to prevent model loading conflicts
-                "callbacks": [self.llm_logger]  # Add comprehensive LLM logging
+                "max_concurrency": 1  # Execute tools sequentially to prevent model loading conflicts
             }
             
             # Get checkpointed state
@@ -328,8 +316,7 @@ Now analyze the query and return the JSON:"""
                     "persona_id": self.persona_id,
                     "settings": self.settings
                 },
-                "max_concurrency": 1,  # Execute tools sequentially to prevent model loading conflicts
-                "callbacks": [self.llm_logger]  # Add comprehensive LLM logging
+                "max_concurrency": 1  # Execute tools sequentially to prevent model loading conflicts
             }
             
             # Clear the checkpoint

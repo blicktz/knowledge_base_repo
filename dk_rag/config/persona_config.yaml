@@ -290,6 +290,17 @@ retrieval:
 agent:
   enabled: true
   
+  # LLM Logging Configuration
+  llm_logging:
+    enabled: true
+    directory_name: "llm_logging"  # Will be placed under base_storage_dir/persona_id/
+    save_prompts: true
+    save_responses: true
+    save_extracted: true
+    include_metadata: true
+    compression: true
+    retention_days: 30  # Optional: auto-cleanup old logs
+  
   # Query Analysis Tool Configuration
   query_analysis:
     llm_provider: "litellm"
