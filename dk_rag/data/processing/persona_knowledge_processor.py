@@ -51,7 +51,8 @@ class PersonaKnowledgeProcessor:
     def process_persona_file(
         self,
         json_path: Union[str, Path],
-        validate_schema: bool = True
+        validate_schema: bool = True,
+        knowledge_type: Optional[str] = None
     ) -> ProcessingResult:
         """
         Process a Phase 1 persona JSON file.
@@ -59,6 +60,7 @@ class PersonaKnowledgeProcessor:
         Args:
             json_path: Path to the persona JSON file
             validate_schema: Whether to validate the JSON schema
+            knowledge_type: Type of knowledge to extract ('mental_models', 'core_beliefs', or None for both)
             
         Returns:
             ProcessingResult with extracted data and any errors/warnings
@@ -79,23 +81,25 @@ class PersonaKnowledgeProcessor:
             # Load and parse JSON
             persona_data = self._load_json_file(json_path)
             
-            # Extract mental models
-            mental_models = self._extract_mental_models(
-                persona_data, 
-                validate_schema=validate_schema
-            )
-            result.mental_models = mental_models['data']
-            result.errors.extend(mental_models['errors'])
-            result.warnings.extend(mental_models['warnings'])
+            # Extract mental models (only if requested)
+            if knowledge_type is None or knowledge_type == 'mental_models':
+                mental_models = self._extract_mental_models(
+                    persona_data, 
+                    validate_schema=validate_schema
+                )
+                result.mental_models = mental_models['data']
+                result.errors.extend(mental_models['errors'])
+                result.warnings.extend(mental_models['warnings'])
             
-            # Extract core beliefs
-            core_beliefs = self._extract_core_beliefs(
-                persona_data,
-                validate_schema=validate_schema
-            )
-            result.core_beliefs = core_beliefs['data']
-            result.errors.extend(core_beliefs['errors'])
-            result.warnings.extend(core_beliefs['warnings'])
+            # Extract core beliefs (only if requested)
+            if knowledge_type is None or knowledge_type == 'core_beliefs':
+                core_beliefs = self._extract_core_beliefs(
+                    persona_data,
+                    validate_schema=validate_schema
+                )
+                result.core_beliefs = core_beliefs['data']
+                result.errors.extend(core_beliefs['errors'])
+                result.warnings.extend(core_beliefs['warnings'])
             
             self.logger.info(
                 f"Extracted {len(result.mental_models)} mental models and "
@@ -488,7 +492,8 @@ class PersonaKnowledgeProcessor:
         self, 
         persona_id: str,
         settings: Optional[Any] = None,
-        validate_schema: bool = True
+        validate_schema: bool = True,
+        knowledge_type: Optional[str] = None
     ) -> ProcessingResult:
         """
         Process the latest Phase 1 artifact for a persona.
@@ -500,6 +505,7 @@ class PersonaKnowledgeProcessor:
             persona_id: Persona identifier
             settings: Settings instance for configuration
             validate_schema: Whether to validate the JSON schema
+            knowledge_type: Type of knowledge to extract ('mental_models', 'core_beliefs', or None for both)
             
         Returns:
             ProcessingResult with extracted data and any errors/warnings
@@ -523,7 +529,7 @@ class PersonaKnowledgeProcessor:
             
             try:
                 # Process the artifact
-                result = self.process_persona_file(json_path, validate_schema)
+                result = self.process_persona_file(json_path, validate_schema, knowledge_type)
                 
                 # Add artifact metadata to result
                 result.source_file = str(artifact_info.file_path)

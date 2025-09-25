@@ -1412,11 +1412,12 @@ class KnowledgeIndexer:
                     persona_id=persona_id
                 )
             
-            # Process latest artifact
+            # Process latest artifact (mental models only)
             processing_result = self.knowledge_processor.process_latest_artifact(
                 persona_id=persona_id,
                 settings=self.settings,
-                validate_schema=validate
+                validate_schema=validate,
+                knowledge_type='mental_models'
             )
             
             # Check for processing errors
@@ -1508,11 +1509,12 @@ class KnowledgeIndexer:
                     persona_id=persona_id
                 )
             
-            # Process latest artifact
+            # Process latest artifact (core beliefs only)
             processing_result = self.knowledge_processor.process_latest_artifact(
                 persona_id=persona_id,
                 settings=self.settings,
-                validate_schema=validate
+                validate_schema=validate,
+                knowledge_type='core_beliefs'
             )
             
             # Check for processing errors

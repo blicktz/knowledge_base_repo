@@ -8,10 +8,10 @@ PYTEST := poetry run pytest
 MODULE := dk_rag.cli.persona_builder
 
 # Default paths - customize these for your setup
-DOCS_DIR ?= /Users/blickt/Documents/src/pdf_2_text/content_repo/greg_startup
+DOCS_DIR ?= /Users/blickt/Documents/src/pdf_2_text/content_repo/dk_books
 OUTPUT_DIR ?= ./output
 CONFIG_FILE ?= ./config/persona_config.yaml
-PATTERN ?= *.txt
+PATTERN ?= *.md
 
 # Storage Configuration - automatically reads from config YAML file
 # NOTE: This must align with storage.base_storage_dir in the config YAML file
@@ -21,7 +21,7 @@ CACHE_DIR := $(STORAGE_BASE_DIR)/cache
 VECTOR_DB_DIR := $(STORAGE_BASE_DIR)/vector_db
 
 # Default persona name for extraction
-PERSONA_NAME ?= greg_startup
+PERSONA_NAME ?= dan_kennedy_god_of_direct_response_marketing
 
 # Search query for testing
 SEARCH_QUERY ?= "mental models for productivity"
@@ -294,42 +294,42 @@ check-quality: ## Check persona extraction quality
 # =============================================================================
 
 .PHONY: clean
-clean: ## Clean cache and temporary files
-	@echo "$(BLUE)Cleaning cache and temporary files...$(NC)"
+clean: ## Clean cache and temporary files for persona (PERSONA_NAME required)
+	@echo "$(BLUE)Cleaning cache and temporary files for persona: $(PERSONA_NAME)$(NC)"
 	@find . -type d -name "__pycache__" -exec rm -rf {} + 2>/dev/null || true
 	@find . -type f -name "*.pyc" -delete 2>/dev/null || true
 	@find . -type f -name ".DS_Store" -delete 2>/dev/null || true
 	@rm -rf .pytest_cache 2>/dev/null || true
-	@rm -rf $(CACHE_DIR)/* 2>/dev/null || true
-	@echo "$(GREEN)✓ Cleaned$(NC)"
+	@rm -rf $(CACHE_DIR)/$(PERSONA_NAME)/* 2>/dev/null || true
+	@echo "$(GREEN)✓ Cleaned cache for $(PERSONA_NAME)$(NC)"
 
 .PHONY: clean-caches
-clean-caches: ## Clean all analysis and extraction caches (preserves data)
-	@echo "$(BLUE)Cleaning all analysis and extraction caches...$(NC)"
+clean-caches: ## Clean analysis and extraction caches for persona (PERSONA_NAME required)
+	@echo "$(BLUE)Cleaning analysis and extraction caches for persona: $(PERSONA_NAME)$(NC)"
 	@echo "$(YELLOW)Cleaning statistical analysis caches...$(NC)"
-	@rm -rf $(PERSONAS_DIR)/*/analysis_cache/* 2>/dev/null || true
+	@rm -rf $(PERSONAS_DIR)/$(PERSONA_NAME)/analysis_cache/* 2>/dev/null || true
 	@echo "$(YELLOW)Cleaning map-reduce extraction caches...$(NC)"
-	@rm -rf $(PERSONAS_DIR)/*/map_reduce_cache/* 2>/dev/null || true
-	@echo "$(YELLOW)Cleaning general cache directory...$(NC)"
-	@rm -rf $(CACHE_DIR)/* 2>/dev/null || true
+	@rm -rf $(PERSONAS_DIR)/$(PERSONA_NAME)/map_reduce_cache/* 2>/dev/null || true
+	@echo "$(YELLOW)Cleaning general cache directory for persona...$(NC)"
+	@rm -rf $(CACHE_DIR)/$(PERSONA_NAME)/* 2>/dev/null || true
 	@echo "$(YELLOW)Removing empty cache directories...$(NC)"
-	@find $(PERSONAS_DIR) -type d -name "*cache" -empty -delete 2>/dev/null || true
-	@echo "$(GREEN)✓ All caches cleaned (data preserved)$(NC)"
+	@find $(PERSONAS_DIR)/$(PERSONA_NAME) -type d -name "*cache" -empty -delete 2>/dev/null || true
+	@echo "$(GREEN)✓ Caches cleaned for $(PERSONA_NAME) (data preserved)$(NC)"
 
 .PHONY: clean-llm-cache
-clean-llm-cache: ## Clean only LLM map-reduce result caches (preserves statistical analysis)
-	@echo "$(BLUE)Cleaning LLM map-reduce result caches only...$(NC)"
+clean-llm-cache: ## Clean LLM map-reduce caches for persona (PERSONA_NAME required)
+	@echo "$(BLUE)Cleaning LLM map-reduce result caches for persona: $(PERSONA_NAME)$(NC)"
 	@echo "$(YELLOW)Removing cached LLM responses and extraction results...$(NC)"
-	@rm -rf $(PERSONAS_DIR)/*/map_reduce_cache/* 2>/dev/null || true
+	@rm -rf $(PERSONAS_DIR)/$(PERSONA_NAME)/map_reduce_cache/* 2>/dev/null || true
 	@echo "$(YELLOW)Removing empty map-reduce cache directories...$(NC)"
-	@find $(PERSONAS_DIR) -type d -name "map_reduce_cache" -empty -delete 2>/dev/null || true
-	@echo "$(GREEN)✓ LLM result caches cleaned (statistical analysis preserved)$(NC)"
-	@echo "$(YELLOW)Note: Statistical analysis caches and persona data preserved$(NC)"
+	@find $(PERSONAS_DIR)/$(PERSONA_NAME) -type d -name "map_reduce_cache" -empty -delete 2>/dev/null || true
+	@echo "$(GREEN)✓ LLM result caches cleaned for $(PERSONA_NAME) (statistical analysis preserved)$(NC)"
+	@echo "$(YELLOW)Note: Statistical analysis caches and persona data preserved for $(PERSONA_NAME)$(NC)"
 
 .PHONY: clean-all
-clean-all: clean ## Clean everything including vector DB, caches, and personas (DESTRUCTIVE!)
-	@echo "$(RED)⚠ WARNING: This will delete all data including vector DB, personas, and caches!$(NC)"
-	@echo "$(YELLOW)Storage location: $(STORAGE_BASE_DIR)$(NC)"
+clean-all: clean ## Clean all data for persona (PERSONA_NAME required, DESTRUCTIVE!)
+	@echo "$(RED)⚠ WARNING: This will delete all data for persona: $(PERSONA_NAME)!$(NC)"
+	@echo "$(YELLOW)Storage location: $(PERSONAS_DIR)/$(PERSONA_NAME)$(NC)"
 	@echo "$(YELLOW)This includes:$(NC)"
 	@echo "  - Vector database (ChromaDB)"
 	@echo "  - Mental models knowledge databases"
@@ -337,29 +337,29 @@ clean-all: clean ## Clean everything including vector DB, caches, and personas (
 	@echo "  - All persona artifacts"
 	@echo "  - Statistical analysis caches"
 	@echo "  - Map-reduce extraction caches"
-	@echo "  - Log files"
-	@read -p "Are you sure? [y/N]: " confirm; \
+	@echo "  - Retrieval caches"
+	@read -p "Are you sure you want to delete all data for $(PERSONA_NAME)? [y/N]: " confirm; \
 	if [ "$$confirm" = "y" ] || [ "$$confirm" = "Y" ]; then \
 		echo "$(BLUE)Removing persona vector databases...$(NC)"; \
-		rm -rf $(PERSONAS_DIR)/*/vector_db/* 2>/dev/null || true; \
+		rm -rf $(PERSONAS_DIR)/$(PERSONA_NAME)/vector_db/* 2>/dev/null || true; \
 		echo "$(BLUE)Removing mental models vector databases...$(NC)"; \
-		rm -rf $(PERSONAS_DIR)/*/vector_db_mental_models/* 2>/dev/null || true; \
+		rm -rf $(PERSONAS_DIR)/$(PERSONA_NAME)/vector_db_mental_models/* 2>/dev/null || true; \
 		echo "$(BLUE)Removing core beliefs vector databases...$(NC)"; \
-		rm -rf $(PERSONAS_DIR)/*/vector_db_core_beliefs/* 2>/dev/null || true; \
+		rm -rf $(PERSONAS_DIR)/$(PERSONA_NAME)/vector_db_core_beliefs/* 2>/dev/null || true; \
 		echo "$(BLUE)Removing persona artifacts...$(NC)"; \
-		rm -rf $(PERSONAS_DIR)/*/artifacts/* 2>/dev/null || true; \
-		echo "$(BLUE)Removing persona registry...$(NC)"; \
-		rm -f $(PERSONAS_DIR)/persona_registry.json 2>/dev/null || true; \
+		rm -rf $(PERSONAS_DIR)/$(PERSONA_NAME)/artifacts/* 2>/dev/null || true; \
 		echo "$(BLUE)Cleaning statistical analysis caches...$(NC)"; \
-		rm -rf $(PERSONAS_DIR)/*/analysis_cache/* 2>/dev/null || true; \
+		rm -rf $(PERSONAS_DIR)/$(PERSONA_NAME)/analysis_cache/* 2>/dev/null || true; \
 		echo "$(BLUE)Cleaning map-reduce extraction caches...$(NC)"; \
-		rm -rf $(PERSONAS_DIR)/*/map_reduce_cache/* 2>/dev/null || true; \
-		echo "$(BLUE)Removing empty persona directories...$(NC)"; \
-		find $(PERSONAS_DIR) -type d -name "*cache" -empty -delete 2>/dev/null || true; \
-		find $(PERSONAS_DIR) -type d -mindepth 1 -empty -delete 2>/dev/null || true; \
-		echo "$(BLUE)Removing log files...$(NC)"; \
-		rm -rf logs/* 2>/dev/null || true; \
-		echo "$(GREEN)✓ All data, caches, and personas removed$(NC)"; \
+		rm -rf $(PERSONAS_DIR)/$(PERSONA_NAME)/map_reduce_cache/* 2>/dev/null || true; \
+		echo "$(BLUE)Cleaning retrieval caches...$(NC)"; \
+		rm -rf $(PERSONAS_DIR)/$(PERSONA_NAME)/retrieval_cache/* 2>/dev/null || true; \
+		echo "$(BLUE)Removing empty directories for persona...$(NC)"; \
+		find $(PERSONAS_DIR)/$(PERSONA_NAME) -type d -empty -delete 2>/dev/null || true; \
+		echo "$(BLUE)Cleaning general cache for persona...$(NC)"; \
+		rm -rf $(CACHE_DIR)/$(PERSONA_NAME)/* 2>/dev/null || true; \
+		echo "$(GREEN)✓ All data and caches removed for $(PERSONA_NAME)$(NC)"; \
+		echo "$(YELLOW)Note: Persona registry and other personas preserved$(NC)"; \
 	else \
 		echo "$(YELLOW)Cancelled$(NC)"; \
 	fi
