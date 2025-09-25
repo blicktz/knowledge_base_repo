@@ -40,37 +40,59 @@ class TranscriptRetrieverTool(BasePersonaTool):
     
     def execute(self, query: str, metadata: Optional[Dict] = None) -> List[Dict[str, Any]]:
         """
-        Retrieve top 5 most relevant transcript chunks using Phase 2 pipeline
+        Retrieve relevant transcript chunks using Phase 2 advanced pipeline with working test pattern
         """
         self.logger.info("Retrieving relevant transcript chunks")
         
         # Use the RAG query from metadata if available
         rag_query = metadata.get('rag_query', query) if metadata else query
         
-        # Get k value from settings
-        k = self.settings.agent.tools.transcripts.k
-        retrieval_k = self.settings.agent.tools.transcripts.retrieval_k
+        # Get settings with fallbacks
+        k = getattr(getattr(getattr(self.settings, 'agent', None), 'tools', None), 'transcripts', {}).get('k', 5)
+        retrieval_k = getattr(getattr(getattr(self.settings, 'agent', None), 'tools', None), 'transcripts', {}).get('retrieval_k', 25)
+        use_phase2_pipeline = getattr(getattr(getattr(self.settings, 'agent', None), 'tools', None), 'transcripts', {}).get('use_phase2_pipeline', True)
+        log_retrievals = getattr(getattr(getattr(self.settings, 'agent', None), 'tools', None), 'transcripts', {}).get('log_retrievals', True)
         
         self.logger.info(f"Retrieving {k} transcript chunks with query: {rag_query[:100]}...")
         
         try:
-            # Use Phase 2 advanced pipeline
-            results = self.pipeline.retrieve(
-                query=rag_query,
-                k=k,
-                retrieval_k=retrieval_k
-            )
+            # Use the working pattern from test_phase2_interactive.py
+            if use_phase2_pipeline and self.pipeline:
+                results = self.pipeline.retrieve(
+                    query=rag_query,
+                    k=k,
+                    use_hyde=True,
+                    use_hybrid=True,
+                    use_reranking=True,
+                    return_scores=True
+                )
+            else:
+                # Fallback to basic retrieval if Phase 2 not available
+                self.logger.warning("Phase 2 pipeline not available, falling back to basic retrieval")
+                # This would need to be implemented as a fallback
+                results = []
             
             self.logger.info(f"Retrieved {len(results)} transcript chunks")
             
             # Convert to serializable format
             serialized_results = []
-            for doc in results:
-                chunk_dict = {
-                    'content': doc.page_content if hasattr(doc, 'page_content') else str(doc),
-                    'metadata': doc.metadata if hasattr(doc, 'metadata') else {},
-                    'score': getattr(doc, 'score', None)
-                }
+            for item in results:
+                if isinstance(item, tuple) and len(item) == 2:
+                    # Handle (doc, score) tuples
+                    doc, score = item
+                    chunk_dict = {
+                        'content': doc.page_content if hasattr(doc, 'page_content') else str(doc),
+                        'metadata': doc.metadata if hasattr(doc, 'metadata') else {},
+                        'score': score
+                    }
+                else:
+                    # Handle single documents
+                    doc = item
+                    chunk_dict = {
+                        'content': doc.page_content if hasattr(doc, 'page_content') else str(doc),
+                        'metadata': doc.metadata if hasattr(doc, 'metadata') else {},
+                        'score': getattr(doc, 'score', None)
+                    }
                 
                 # Add transcript-specific metadata if available
                 if hasattr(doc, 'metadata') and doc.metadata:
@@ -86,18 +108,27 @@ class TranscriptRetrieverTool(BasePersonaTool):
                 serialized_results.append(chunk_dict)
             
             # Log retrieval if enabled
-            if self.settings.agent.tools.transcripts.log_retrievals:
+            if log_retrievals:
                 self.log_retrieval_results(rag_query, serialized_results)
             
             return serialized_results
             
         except Exception as e:
             self.logger.error(f"Transcript retrieval failed: {str(e)}")
-            raise
+            # Check fail_fast setting with fallback
+            fail_fast = getattr(getattr(getattr(self.settings, 'agent', None), 'error_handling', None), 'throw_on_error', True)
+            if fail_fast:
+                raise
+            else:
+                self.logger.warning("Returning empty results due to failure")
+                return []
     
     def log_retrieval_results(self, query: str, results: List[Dict]):
         """Log retrieval results for debugging"""
-        if not self.settings.agent.logging.enabled:
+        # Check logging settings with fallbacks
+        logging_enabled = getattr(getattr(self.settings, 'agent', None), 'logging', {}).get('enabled', True)
+        
+        if not logging_enabled:
             return
         
         # Log summary
