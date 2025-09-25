@@ -127,7 +127,8 @@ Remember: You are {persona_name}. Think, speak, and reason exactly as they would
                 "thread_id": session_id,
                 "persona_id": self.persona_id,
                 "settings": self.settings
-            }
+            },
+            "max_concurrency": 1  # Execute tools sequentially to prevent model loading conflicts
         }
         
         try:
@@ -188,7 +189,8 @@ Remember: You are {persona_name}. Think, speak, and reason exactly as they would
                     "thread_id": session_id,
                     "persona_id": self.persona_id,
                     "settings": self.settings
-                }
+                },
+                "max_concurrency": 1  # Execute tools sequentially to prevent model loading conflicts
             }
             
             # Get checkpointed state
@@ -224,7 +226,8 @@ Remember: You are {persona_name}. Think, speak, and reason exactly as they would
                     "thread_id": session_id,
                     "persona_id": self.persona_id,
                     "settings": self.settings
-                }
+                },
+                "max_concurrency": 1  # Execute tools sequentially to prevent model loading conflicts
             }
             
             # Clear the checkpoint
