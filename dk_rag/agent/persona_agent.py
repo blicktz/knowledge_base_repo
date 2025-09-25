@@ -49,8 +49,8 @@ class LangChainPersonaAgent:
         # Initialize memory for conversation context
         self.memory = MemorySaver()
         
-        # Create the ReAct agent with all components
-        self.agent_executor = self._create_agent()
+        # Agent will be created dynamically per query with query analysis context
+        self.agent_executor = None
         
         self.logger.info(f"LangChain PersonaAgent initialized for: {persona_id}")
         self.logger.info(f"Available tools: {[tool.name for tool in self.tools]}")
@@ -67,11 +67,11 @@ class LangChainPersonaAgent:
             max_tokens=model_config.max_tokens
         )
     
-    def _create_agent(self):
-        """Create ReAct agent with tools and memory"""
+    def _create_agent(self, query_analysis: Optional[Dict[str, Any]] = None):
+        """Create ReAct agent with tools and memory, optionally with query analysis context"""
         
-        # Create system prompt that defines the persona behavior
-        system_prompt = self._build_system_prompt()
+        # Create system prompt that defines the persona behavior with query context
+        system_prompt = self._build_system_prompt(query_analysis)
         
         # Create the ReAct agent with memory checkpointing and LLM logging
         agent_executor = create_react_agent(
@@ -83,10 +83,25 @@ class LangChainPersonaAgent:
         
         return agent_executor
     
-    def _build_system_prompt(self) -> str:
-        """Build system prompt for the persona agent"""
+    def _build_system_prompt(self, query_analysis: Optional[Dict[str, Any]] = None) -> str:
+        """Build system prompt for the persona agent with optional query analysis context"""
         
         persona_name = self.persona_id.replace('_', ' ').title()
+        
+        # Build query analysis section if available
+        query_context = ""
+        if query_analysis:
+            core_task = query_analysis.get('core_task', '')
+            intent_type = query_analysis.get('intent_type', '')
+            provided_context = query_analysis.get('provided_context', '')
+            
+            query_context = f"""
+USER QUERY ANALYSIS:
+- Core Task: {core_task}
+- Intent Type: {intent_type}
+- User Context: {provided_context if provided_context else 'None provided'}
+
+"""
         
         system_prompt = f"""You are a virtual AI persona of {persona_name}. Your goal is to respond authentically as {persona_name} would, using their tone, style, knowledge, and problem-solving approach.
 
@@ -108,7 +123,11 @@ CORE INSTRUCTIONS:
 
 4. Your response should feel like it's coming directly from {persona_name}, not an AI system.
 
-Remember: You are {persona_name}. Think, speak, and reason exactly as they would."""
+Remember: You are {persona_name}. Think, speak, and reason exactly as they would.
+
+{query_context}
+"""
+
 
         return system_prompt
     
@@ -208,6 +227,9 @@ Now analyze the query and return the JSON:"""
         # Step 1: Always analyze the query first (preprocessing)
         query_analysis = self._analyze_query(user_query)
         
+        # Step 2: Create agent with query analysis context for better reasoning
+        agent_executor = self._create_agent(query_analysis)
+        
         # Configure conversation thread with persona context, query analysis, and LLM logging
         config = {
             "configurable": {
@@ -226,7 +248,7 @@ Now analyze the query and return the JSON:"""
             
             # Stream the agent's execution for real-time feedback
             response_content = ""
-            for step in self.agent_executor.stream(
+            for step in agent_executor.stream(
                 {"messages": messages}, 
                 config=config, 
                 stream_mode="values"
@@ -246,7 +268,7 @@ Now analyze the query and return the JSON:"""
             
             if not response_content:
                 # Fallback if no response captured
-                final_state = self.agent_executor.invoke({"messages": messages}, config=config)
+                final_state = agent_executor.invoke({"messages": messages}, config=config)
                 if final_state["messages"]:
                     response_content = final_state["messages"][-1].content
                 else:
@@ -335,7 +357,8 @@ Now analyze the query and return the JSON:"""
             "model": self.llm.model,
             "tools": [tool.name for tool in self.tools],
             "has_memory": True,
-            "framework": "LangChain ReAct Agent"
+            "framework": "LangChain ReAct Agent",
+            "dynamic_agent": True,  # Agent is created per query with query analysis context
         }
 
 
