@@ -679,28 +679,97 @@ def advanced_retrieval_pipeline(user_query: str, persona: PersonaConstitution) -
 
 #### **Phase 3: Sophisticated Prompting & Agentic Architecture**
 
-**Objective:** To build the agent's "brain" that uses the Persona Constitution and the retrieved context to reason and generate a final, authentic response.
+
+**Objective:** To build a sophisticated, multi-step agentic "brain" that can first understand complex user intent by pre-processing queries, then retrieve relevant persona and factual knowledge, and finally synthesize an authentic, in-character response using a structured, internal reasoning process.
 
   * **Key Components & Tools:**
 
-      * **Agent Framework:** **`LangChain Agents`** is the ideal tool for implementing the ReAct framework.
-      * **LLM Provider:** The same LLM API used in Phase 1.
-      * **Application Server:** **`FastAPI`** to create a scalable API endpoint for the final chat agent.
+      * **Agent Framework:** **`LangChain Agents`** (or a similar framework) to orchestrate the multi-step reasoning and tool usage.
+      * **LLM Provider:** Your chosen LLM API, used for query analysis and the final, high-fidelity synthesis.
+      * **Query Analysis Prompts:** The "Core Task Extraction" and "Query Decomposition" prompts.
+      * **Final Synthesis Prompt:** A master prompt template incorporating Constitutional AI rules and a forced "Chain-of-Thought" scratchpad.
+      * **Agent Tools:**
+        1.  `query_analyzer_tool`: Pre-processes the user's raw input.
+        2.  `persona_retriever_tool`: Searches the indexed Persona Constitution.
+        3.  `transcript_retriever_tool`: Searches the indexed video transcripts.
+      * **Application Server:** **`FastAPI`** to create the scalable API endpoint.
 
   * **Implementation Process:**
 
-    1.  **Develop the Meta-Prompt Template:** Create a prompt template that dynamically combines three elements:
-          * The **Persona Constitution** (from Phase 1).
-          * The **Retrieved Context** (from the Phase 2 pipeline).
-          * The **User's Query**.
-    2.  **Configure the ReAct Agent:** Set up a `LangChain` agent. The agent's "tools" will be the retrieval pipeline from Phase 2. The agent's main prompt will instruct it to follow a specific reasoning process:
-          * **Thought:** First, verbalize a plan. "The user is asking about [X]. My mental model for this is [Y]. I need to find context about [Z]. I will use my retrieval tool."
-          * **Action:** Call the retrieval tool with a search query.
-          * **Observation:** Receive the context from the tool.
-          * **Thought:** "I have the context. Now I will synthesize it into an answer that follows my core beliefs and uses my signature speaking style."
-    3.  **Deploy as an API:** Wrap the fully configured agent in a `FastAPI` endpoint. This endpoint will receive a user's message, run the entire agentic chain, and return the final response as a JSON object.
+    **Step 1: Implement the Query Analyzer Tool**
 
-  * **Deliverable:** A live API endpoint that can hold a conversation as the virtual influencer.
+      * Create a function that acts as the agent's tool for understanding user input. This tool takes the raw user query and, using the "Core Task Extraction" prompt, returns a structured object containing the `core_task`, a clean `rag_query`, and the `provided_context`.
+
+    **Step 2: Design the Final Synthesis Prompt with a Reasoning Scratchpad**
+
+      * This is the master prompt for the final synthesis step. It is the most critical component for ensuring persona adherence. It should be designed with two key SOTA techniques:
+
+          * **Constitutional Rules:** A section of hard, non-negotiable rules (`MUST`, `MUST NOT`) that govern the agent's tone, style, and reasoning.
+          * **Forced Chain-of-Thought:** A structure that requires the LLM to show its work in a `<scratchpad>` before generating the final `<answer>`, forcing it to explicitly apply the persona's logic.
+
+      * **Master Prompt Template:**
+
+        ```text
+        You are a virtual AI persona of [Influencer's Name], a [brief description of influencer]. Your goal is to respond to the user in a way that is identical to the real [Influencer's Name] in tone, style, knowledge, and problem-solving.
+
+        ### Rules of Engagement ###
+        - You MUST adopt the energetic, encouraging, and direct tone described in the <linguistic_style> context.
+        - You MUST use the vocabulary and catchphrases provided in the <linguistic_style> context where appropriate.
+        - You MUST NOT break character or mention that you are an AI.
+        - Before writing your final answer, you MUST verify that your reasoning aligns with the principles in the <core_beliefs> context.
+        - If the user's question is directly addressed by a framework in the <mental_models> context, you MUST apply that framework in your reasoning.
+
+        ### Context Block ###
+
+        <linguistic_style>
+        {your_static_linguistic_style_summary}
+        </linguistic_style>
+
+        <core_beliefs>
+        {retrieved_core_beliefs}
+        </core_beliefs>
+
+        <mental_models>
+        {retrieved_mental_models}
+        </mental_models>
+
+        <factual_context>
+        {retrieved_transcript_snippets}
+        </factual_context>
+
+        <user_task>
+        {the_core_task_extracted_from_user_query}
+        </user_task>
+
+        ### Response Generation ###
+        First, think through your response step-by-step in a private scratchpad. Then, write the final answer to the user.
+
+        <scratchpad>
+        1.  **Analyze the User's Task:** What is the user's core need?
+        2.  **Select a Mental Model:** Based on the user's task, is there a relevant Mental Model in the context? If so, which one and how will I apply its steps?
+        3.  **Check Belief Alignment:** Does my planned approach align with the provided Core Beliefs? For example, does it prioritize action over planning?
+        4.  **Incorporate Factual Context:** What key facts or examples from the factual context can I weave into my answer to make it more concrete?
+        5.  **Plan the Response Structure:** How will I structure my answer? I will start with an encouraging opening, apply the chosen framework, use a specific example, and end with a characteristic closing phrase.
+        </scratchpad>
+
+        <answer>
+        [Your final, in-character response to the user goes here]
+        </answer>
+        ```
+
+    **Step 3: Construct and Orchestrate the Full Agentic Chain**
+
+      * This step wires everything together into a coherent workflow within your agent framework.
+          * **A. Initial Analysis:** The agent receives the raw user input and its first action is to call the `query_analyzer_tool`.
+          * **B. Parallel Retrieval:** The agent takes the clean `rag_query` from the analyzer's output and calls both the `persona_retriever_tool` and `transcript_retriever_tool` to gather all dynamic context.
+          * **C. Final Synthesis Call:** The agent assembles all the retrieved information (persona models, beliefs, transcript snippets), the user's context and task (from the analyzer), and the static persona rules into the **Final Synthesis Prompt** from Step 2. It then makes the final, single call to the LLM to generate the structured `<scratchpad>` and `<answer>` response.
+          * **D. Parsing and Delivery:** The agent parses the LLM's final output. The content of the `<scratchpad>` should be logged for debugging and analysis. The content of the `<answer>` is sent to the user.
+
+    **Step 4: Deploy as an API**
+
+      * Wrap the entire orchestrated agentic chain (from Step 3) in a `FastAPI` endpoint. This endpoint receives the raw user message, triggers the full reasoning and retrieval process, and returns the final, parsed answer.
+
+  * **Deliverable:** A live API endpoint that orchestrates a sophisticated, multi-step agentic chain. The agent is capable of handling complex, context-rich user queries and responding with high-fidelity authenticity by using a "Chain-of-Thought" reasoning process for persona synthesis.
 
 -----
 

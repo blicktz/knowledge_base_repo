@@ -285,3 +285,129 @@ retrieval:
     enable_fallback: true  # Fallback to basic search on errors
     log_pipeline_execution: true
     parallel_processing: false
+
+# Phase 3 Agent Configuration
+agent:
+  enabled: true
+  
+  # Query Analysis Tool Configuration
+  query_analysis:
+    llm_provider: "litellm"
+    llm_model: "gemini/gemini-2.0-flash"  # Light task - fast model
+    temperature: 0.3  # Lower temperature for structured extraction
+    max_tokens: 1000
+    timeout_seconds: 20
+    max_retries: 2
+    cache_results: true
+    cache_ttl_hours: 24
+    log_interactions: true
+    
+  # Synthesis Engine Configuration  
+  synthesis:
+    llm_provider: "litellm"
+    llm_model: "gemini/gemini-2.5-pro"  # Heavy lifting - best model
+    temperature: 0.7  # Higher temperature for creative synthesis
+    max_tokens: 4000
+    timeout_seconds: 60
+    max_retries: 2
+    use_chain_of_thought: true
+    include_scratchpad: true
+    log_interactions: true
+    
+  # Tool-specific Settings
+  tools:
+    # Persona Data Tool
+    persona_data:
+      cache_session: true  # Cache per session to avoid repeated loading
+      cache_ttl_minutes: 60
+      auto_cleanup_temp_files: true
+      
+    # Mental Models Retriever Tool
+    mental_models:
+      k: 3  # Number of mental models to retrieve
+      use_reranking: true
+      min_confidence_score: 0.7
+      log_retrievals: true
+      
+    # Core Beliefs Retriever Tool
+    core_beliefs:
+      k: 5  # Number of core beliefs to retrieve
+      use_reranking: true
+      min_confidence_score: 0.6
+      include_evidence: true
+      log_retrievals: true
+      
+    # Transcript Retriever Tool
+    transcripts:
+      k: 5  # Number of transcript chunks to retrieve
+      retrieval_k: 25  # Candidates before reranking
+      use_phase2_pipeline: true  # Use full Phase 2 pipeline
+      log_retrievals: true
+      
+    # General Tool Settings
+    parallel_execution: true
+    timeout_seconds: 30
+    fail_fast: true  # No fallback initially - fail immediately on error
+    
+  # LLM Interaction Logging
+  logging:
+    enabled: true
+    save_prompts: true
+    save_responses: true
+    save_extracted: true
+    include_metadata: true
+    log_directory: "logging/llm_interactions"  # Under base_storage_dir/persona_id/
+    
+    # Component-specific log directories
+    components:
+      query_analysis: "query_analysis"
+      mental_models: "mental_models"
+      core_beliefs: "core_beliefs"
+      transcripts: "transcripts"
+      synthesis: "synthesis"
+      
+  # Performance Settings
+  performance:
+    enable_progress_logging: true
+    log_timing_metrics: true
+    batch_tool_execution: false  # Sequential for now
+    max_concurrent_tools: 1  # Sequential execution
+    
+  # Error Handling (Simplified - No Fallbacks)
+  error_handling:
+    use_fallbacks: false  # Disabled initially
+    throw_on_error: true  # Fail fast for debugging
+    include_traceback: true  # Full error details in logs
+
+# FastAPI Configuration  
+api:
+  enabled: true
+  host: "0.0.0.0"
+  port: 8000
+  reload: false  # Set to true for development
+  workers: 1
+  
+  # API Settings
+  settings:
+    title: "Persona Agent API"
+    version: "1.0.0"
+    docs_url: "/docs"
+    redoc_url: "/redoc"
+    
+  # Rate Limiting
+  rate_limiting:
+    enabled: false  # Enable later for production
+    requests_per_minute: 60
+    
+  # CORS Settings
+  cors:
+    enabled: true
+    allow_origins: ["*"]
+    allow_methods: ["GET", "POST"]
+    allow_headers: ["*"]
+    
+  # Health Check
+  health_check:
+    enabled: true
+    endpoint: "/health"
+    include_version: true

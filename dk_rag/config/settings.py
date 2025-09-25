@@ -142,6 +142,123 @@ class MapReduceExtractionConfig(BaseModel):
     save_intermediate: bool = Field(default=True, description="Save after each batch")
 
 
+# Phase 3 Configuration Classes
+class AgentToolsConfig(BaseModel):
+    """Configuration for agent tools"""
+    persona_data: Dict[str, Any] = Field(default_factory=dict)
+    mental_models: Dict[str, Any] = Field(default_factory=dict) 
+    core_beliefs: Dict[str, Any] = Field(default_factory=dict)
+    transcripts: Dict[str, Any] = Field(default_factory=dict)
+    parallel_execution: bool = Field(default=True)
+    timeout_seconds: int = Field(default=30)
+    fail_fast: bool = Field(default=True)
+
+
+class AgentLLMConfig(BaseModel):
+    """Configuration for agent LLM calls"""
+    llm_provider: str = Field(default="litellm")
+    llm_model: str = Field(default="gemini/gemini-2.0-flash")
+    temperature: float = Field(default=0.3)
+    max_tokens: int = Field(default=1000)
+    timeout_seconds: int = Field(default=20)
+    max_retries: int = Field(default=2)
+    cache_results: bool = Field(default=True)
+    cache_ttl_hours: int = Field(default=24)
+    log_interactions: bool = Field(default=True)
+
+
+class AgentSynthesisConfig(BaseModel):
+    """Configuration for response synthesis"""
+    llm_provider: str = Field(default="litellm")
+    llm_model: str = Field(default="gemini/gemini-2.5-pro")
+    temperature: float = Field(default=0.7)
+    max_tokens: int = Field(default=4000)
+    timeout_seconds: int = Field(default=60)
+    max_retries: int = Field(default=2)
+    use_chain_of_thought: bool = Field(default=True)
+    include_scratchpad: bool = Field(default=True)
+    log_interactions: bool = Field(default=True)
+
+
+class AgentLoggingConfig(BaseModel):
+    """Configuration for agent logging"""
+    enabled: bool = Field(default=True)
+    save_prompts: bool = Field(default=True)
+    save_responses: bool = Field(default=True)
+    save_extracted: bool = Field(default=True)
+    include_metadata: bool = Field(default=True)
+    log_directory: str = Field(default="logging/llm_interactions")
+    components: Dict[str, str] = Field(default_factory=dict)
+
+
+class AgentPerformanceConfig(BaseModel):
+    """Configuration for agent performance settings"""
+    enable_progress_logging: bool = Field(default=True)
+    log_timing_metrics: bool = Field(default=True)
+    batch_tool_execution: bool = Field(default=False)
+    max_concurrent_tools: int = Field(default=1)
+
+
+class AgentErrorHandlingConfig(BaseModel):
+    """Configuration for agent error handling"""
+    use_fallbacks: bool = Field(default=False)
+    throw_on_error: bool = Field(default=True)
+    include_traceback: bool = Field(default=True)
+
+
+class AgentConfig(BaseModel):
+    """Configuration for Phase 3 agent system"""
+    enabled: bool = Field(default=True)
+    query_analysis: AgentLLMConfig = Field(default_factory=AgentLLMConfig)
+    synthesis: AgentSynthesisConfig = Field(default_factory=AgentSynthesisConfig)
+    tools: AgentToolsConfig = Field(default_factory=AgentToolsConfig)
+    logging: AgentLoggingConfig = Field(default_factory=AgentLoggingConfig)
+    performance: AgentPerformanceConfig = Field(default_factory=AgentPerformanceConfig)
+    error_handling: AgentErrorHandlingConfig = Field(default_factory=AgentErrorHandlingConfig)
+
+
+class APISettingsConfig(BaseModel):
+    """Configuration for API settings"""
+    title: str = Field(default="Persona Agent API")
+    version: str = Field(default="1.0.0")
+    docs_url: str = Field(default="/docs")
+    redoc_url: str = Field(default="/redoc")
+
+
+class APIRateLimitConfig(BaseModel):
+    """Configuration for API rate limiting"""
+    enabled: bool = Field(default=False)
+    requests_per_minute: int = Field(default=60)
+
+
+class APICORSConfig(BaseModel):
+    """Configuration for API CORS"""
+    enabled: bool = Field(default=True)
+    allow_origins: List[str] = Field(default_factory=lambda: ["*"])
+    allow_methods: List[str] = Field(default_factory=lambda: ["GET", "POST"])
+    allow_headers: List[str] = Field(default_factory=lambda: ["*"])
+
+
+class APIHealthCheckConfig(BaseModel):
+    """Configuration for API health check"""
+    enabled: bool = Field(default=True)
+    endpoint: str = Field(default="/health")
+    include_version: bool = Field(default=True)
+
+
+class APIConfig(BaseModel):
+    """Configuration for FastAPI application"""
+    enabled: bool = Field(default=True)
+    host: str = Field(default="0.0.0.0")
+    port: int = Field(default=8000)
+    reload: bool = Field(default=False)
+    workers: int = Field(default=1)
+    settings: APISettingsConfig = Field(default_factory=APISettingsConfig)
+    rate_limiting: APIRateLimitConfig = Field(default_factory=APIRateLimitConfig)
+    cors: APICORSConfig = Field(default_factory=APICORSConfig)
+    health_check: APIHealthCheckConfig = Field(default_factory=APIHealthCheckConfig)
+
+
 class Settings(BaseModel):
     """Main settings class for the persona agent"""
     
@@ -158,6 +275,10 @@ class Settings(BaseModel):
     development: DevelopmentConfig = Field(default_factory=DevelopmentConfig)
     map_reduce_extraction: MapReduceExtractionConfig = Field(default_factory=MapReduceExtractionConfig)
     retrieval: Phase2RetrievalConfig = Field(default_factory=Phase2RetrievalConfig)
+    
+    # Phase 3 configuration sections
+    agent: AgentConfig = Field(default_factory=AgentConfig)
+    api: APIConfig = Field(default_factory=APIConfig)
     
     # Additional metadata
     version: str = Field(default="1.0.0", description="Configuration version")
@@ -190,6 +311,11 @@ class Settings(BaseModel):
         """Ensure required directories exist"""
         # Only create logs directory - persona-specific directories are created by PersonaManager
         Path(self.storage.logs_dir).mkdir(parents=True, exist_ok=True)
+    
+    @property
+    def base_storage_dir(self) -> str:
+        """Convenience property to access base storage directory"""
+        return self.storage.base_storage_dir
     
     def get_llm_config(self) -> Dict[str, Any]:
         """Get LLM configuration with resolved environment variables"""
