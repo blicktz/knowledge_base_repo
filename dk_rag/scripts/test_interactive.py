@@ -20,7 +20,6 @@ os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
 
 from dk_rag.config.settings import Settings
 from dk_rag.tools.agent_tools import (
-    get_persona_data,
     retrieve_mental_models,
     retrieve_core_beliefs, 
     retrieve_transcripts
@@ -98,12 +97,11 @@ class InteractiveChainTester:
         """Display the main test menu"""
         print(f"\n🧪 Test Options:")
         print("   1. Query Analysis Test")
-        print("   2. Persona Data Retrieval Test")
-        print("   3. Mental Models Retrieval Test") 
-        print("   4. Core Beliefs Retrieval Test")
-        print("   5. Transcript Retrieval Test")
-        print("   6. Synthesis Chain Test")
-        print("   7. End-to-End Agent Test")
+        print("   2. Mental Models Retrieval Test") 
+        print("   3. Core Beliefs Retrieval Test")
+        print("   4. Transcript Retrieval Test")
+        print("   5. Synthesis Chain Test")
+        print("   6. End-to-End Agent Test")
         print("   8. Configuration Validation")
         print("   9. Select Different Persona")
         print("   0. Exit")
@@ -163,27 +161,6 @@ class InteractiveChainTester:
         except Exception as e:
             print(f"❌ Query analysis failed: {str(e)}")
             logger.exception("Query analysis test failed")
-    
-    def test_persona_data(self):
-        """Test persona data retrieval"""
-        if not self.current_persona:
-            print("❌ No persona selected. Please select a persona first.")
-            return
-            
-        print(f"\n👤 Persona Data Retrieval Test")
-        print("="*35)
-        print(f"Persona: {self.current_persona}")
-        
-        print(f"\n⏱️  Loading persona data...")
-        start_time = time.time()
-        
-        try:
-            results = get_persona_data.invoke({"persona_id": self.current_persona, "settings": self.settings})
-            execution_time = self.format_execution_time(start_time)
-            self.print_results("Persona Data Results:", results, execution_time)
-        except Exception as e:
-            print(f"❌ Persona data retrieval failed: {str(e)}")
-            logger.exception("Persona data test failed")
     
     def test_mental_models(self):
         """Test mental models retrieval"""
@@ -450,16 +427,14 @@ class InteractiveChainTester:
                 elif choice == "1":
                     self.test_query_analysis()
                 elif choice == "2":
-                    self.test_persona_data()
-                elif choice == "3":
                     self.test_mental_models()
-                elif choice == "4":
+                elif choice == "3":
                     self.test_core_beliefs()
-                elif choice == "5":
+                elif choice == "4":
                     self.test_transcripts()
-                elif choice == "6":
+                elif choice == "5":
                     self.test_synthesis_chain()
-                elif choice == "7":
+                elif choice == "6":
                     self.test_end_to_end_agent()
                 elif choice == "8":
                     self.test_configuration()

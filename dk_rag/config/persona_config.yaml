@@ -318,8 +318,8 @@ agent:
     llm_provider: "litellm"
     llm_model: "gemini/gemini-2.5-pro"  # Heavy lifting - best model
     temperature: 0.7  # Higher temperature for creative synthesis
-    max_tokens: 6000
-    timeout_seconds: 60
+    max_tokens: 10000
+    timeout_seconds: 180
     max_retries: 2
     use_chain_of_thought: true
     include_scratchpad: true

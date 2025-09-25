@@ -14,75 +14,10 @@ from langchain_core.runnables import RunnableConfig
 from ..config.settings import Settings
 from ..core.knowledge_indexer import KnowledgeIndexer
 from ..core.persona_manager import PersonaManager
-from ..utils.artifact_discovery import ArtifactDiscovery
 from ..utils.logging import get_logger
 
 logger = get_logger(__name__)
 
-
-@tool
-def get_persona_data(config: RunnableConfig = None) -> Dict[str, Any]:
-    """
-    Load and extract static persona data from latest artifact.
-    
-    Args:
-        config: Runtime configuration containing persona_id and settings
-    
-    Returns:
-        Dictionary with linguistic_style, communication_patterns, and metadata
-    """
-    # Extract context from RunnableConfig
-    persona_id = None
-    settings = None
-    if config and "configurable" in config:
-        persona_id = config["configurable"].get("persona_id")
-        settings = config["configurable"].get("settings")
-    
-    if not persona_id:
-        raise ValueError("persona_id required in config")
-        
-    logger.info(f"Loading persona data for: {persona_id}")
-    
-    try:
-        # Initialize artifact discovery
-        if not settings:
-            from ..config.settings import Settings
-            settings = Settings()
-            
-        artifact_discovery = ArtifactDiscovery(settings)
-        
-        # Auto-discover and load latest artifact
-        json_path, artifact_info = artifact_discovery.get_latest_artifact_json(persona_id)
-        
-        logger.info(f"Loading from artifact: {artifact_info.file_path.name}")
-        
-        # Load and extract relevant data
-        with open(json_path, 'r') as f:
-            full_data = json.load(f)
-        
-        extracted_data = {
-            'linguistic_style': full_data.get('linguistic_style', {}),
-            'communication_patterns': full_data.get('communication_patterns', {}),
-            'persona_metadata': {
-                'name': full_data.get('name'),
-                'description': full_data.get('description'),
-                'extraction_timestamp': artifact_info.timestamp.isoformat()
-            }
-        }
-        
-        # Cleanup temp file if needed
-        artifact_discovery.cleanup_temp_file(json_path)
-        
-        logger.info("Persona data extraction completed")
-        return extracted_data
-        
-    except Exception as e:
-        logger.error(f"Persona data loading failed: {str(e)}")
-        return {
-            'linguistic_style': {},
-            'communication_patterns': {},
-            'persona_metadata': {'name': persona_id, 'description': '', 'extraction_timestamp': ''}
-        }
 
 
 @tool
@@ -328,9 +263,8 @@ def retrieve_transcripts(query: str, config: RunnableConfig = None) -> List[Dict
         return []
 
 
-# Tool registry for easy access (query_analyzer removed - it's now a preprocessing step)
+# Tool registry for easy access (query_analyzer and get_persona_data removed - they're now preprocessing steps)
 PERSONA_TOOLS = [
-    get_persona_data, 
     retrieve_mental_models,
     retrieve_core_beliefs,
     retrieve_transcripts

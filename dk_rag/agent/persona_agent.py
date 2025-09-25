@@ -18,6 +18,7 @@ from langgraph.checkpoint.memory import MemorySaver
 from ..config.settings import Settings
 from ..tools.agent_tools import get_tools_for_persona
 from ..utils.llm_utils import robust_json_loads
+from ..utils.artifact_discovery import ArtifactDiscovery
 # Will import llm factory functions inside methods to avoid circular imports
 from ..utils.logging import get_logger
 
@@ -67,11 +68,11 @@ class LangChainPersonaAgent:
             max_tokens=model_config.max_tokens
         )
     
-    def _create_agent(self, query_analysis: Optional[Dict[str, Any]] = None):
-        """Create ReAct agent with tools and memory, optionally with query analysis context"""
+    def _create_agent(self, query_analysis: Optional[Dict[str, Any]] = None, persona_data: Optional[Dict[str, Any]] = None):
+        """Create ReAct agent with tools and memory, optionally with query analysis and persona data context"""
         
-        # Create system prompt that defines the persona behavior with query context
-        system_prompt = self._build_system_prompt(query_analysis)
+        # Create system prompt that defines the persona behavior with query and persona context
+        system_prompt = self._build_system_prompt(query_analysis, persona_data)
         
         # Create the ReAct agent with memory checkpointing and LLM logging
         agent_executor = create_react_agent(
@@ -83,8 +84,8 @@ class LangChainPersonaAgent:
         
         return agent_executor
     
-    def _build_system_prompt(self, query_analysis: Optional[Dict[str, Any]] = None) -> str:
-        """Build system prompt for the persona agent with optional query analysis context"""
+    def _build_system_prompt(self, query_analysis: Optional[Dict[str, Any]] = None, persona_data: Optional[Dict[str, Any]] = None) -> str:
+        """Build system prompt for the persona agent with optional query analysis and persona data context"""
         
         persona_name = self.persona_id.replace('_', ' ').title()
         
@@ -103,30 +104,67 @@ USER QUERY ANALYSIS:
 
 """
         
+        # Build persona data section if available
+        persona_context = ""
+        if persona_data:
+            linguistic_style = persona_data.get('linguistic_style', {})
+            
+            # Extract key linguistic elements
+            tone = linguistic_style.get('tone', '')
+            catchphrases = linguistic_style.get('catchphrases', [])
+            vocabulary = linguistic_style.get('vocabulary', [])
+            comm_style = linguistic_style.get('communication_style', {})
+            
+            # Build persona context section
+            persona_sections = []
+            
+            if tone:
+                persona_sections.append(f"- Tone: {tone}")
+            
+            if catchphrases:
+                catchphrase_list = ', '.join(catchphrases[:8])  # Limit to avoid overwhelming
+                persona_sections.append(f"- Key Catchphrases: {catchphrase_list}")
+            
+            if vocabulary:
+                vocab_list = ', '.join(vocabulary[:12])  # Limit to avoid overwhelming
+                persona_sections.append(f"- Specialized Vocabulary: {vocab_list}")
+            
+            if comm_style:
+                formality = comm_style.get('formality', '')
+                directness = comm_style.get('directness', '')
+                if formality:
+                    persona_sections.append(f"- Communication Style: {formality}")
+                if directness:
+                    persona_sections.append(f"- Directness: {directness}")
+            
+            if persona_sections:
+                persona_context = f"""
+PERSONA LINGUISTIC PROFILE:
+{chr(10).join(persona_sections)}
+
+"""
+        
         system_prompt = f"""You are a virtual AI persona of {persona_name}. Your goal is to respond authentically as {persona_name} would, using their tone, style, knowledge, and problem-solving approach.
 
 CORE INSTRUCTIONS:
-1. The user's query has been analyzed and structured for optimal retrieval
+1. The user's query has been analyzed and you have access to your linguistic profile
 2. Gather relevant context using the available retrieval tools:
-   - get_persona_data: Get your linguistic style and communication patterns
    - retrieve_mental_models: Get relevant frameworks and methodologies you use
    - retrieve_core_beliefs: Get your foundational principles and beliefs
    - retrieve_transcripts: Get relevant examples of your actual words and ideas
 
 3. Once you have gathered context from the tools, respond authentically as {persona_name}:
-   - Adopt the tone and style from your linguistic data
+   - Use your specific tone, catchphrases, and vocabulary from your linguistic profile
    - Apply relevant mental models to structure your thinking
    - Ensure your reasoning aligns with your core beliefs
    - Ground your response in facts from your transcripts
-   - Use appropriate catchphrases and vocabulary naturally
    - NEVER break character or mention that you are an AI
 
 4. Your response should feel like it's coming directly from {persona_name}, not an AI system.
 
-Remember: You are {persona_name}. Think, speak, and reason exactly as they would.
-
+{persona_context}
 {query_context}
-"""
+Remember: You are {persona_name}. Think, speak, and reason exactly as they would."""
 
 
         return system_prompt
@@ -207,6 +245,48 @@ Now analyze the query and return the JSON:"""
                 "intent_type": "unknown"
             }
     
+    def _load_persona_data(self) -> Dict[str, Any]:
+        """Load and extract static persona data from latest artifact (mirrors query analysis pattern)."""
+        self.logger.info(f"Loading persona data for: {self.persona_id}")
+        
+        try:
+            # Initialize artifact discovery
+            artifact_discovery = ArtifactDiscovery(self.settings)
+            
+            # Auto-discover and load latest artifact
+            json_path, artifact_info = artifact_discovery.get_latest_artifact_json(self.persona_id)
+            
+            self.logger.info(f"Loading from artifact: {artifact_info.file_path.name}")
+            
+            # Load and extract relevant data
+            import json
+            with open(json_path, 'r') as f:
+                full_data = json.load(f)
+            
+            extracted_data = {
+                'linguistic_style': full_data.get('linguistic_style', {}),
+                'communication_patterns': full_data.get('communication_patterns', {}),
+                'persona_metadata': {
+                    'name': full_data.get('name'),
+                    'description': full_data.get('description'),
+                    'extraction_timestamp': artifact_info.timestamp.isoformat()
+                }
+            }
+            
+            # Cleanup temp file if needed
+            artifact_discovery.cleanup_temp_file(json_path)
+            
+            self.logger.info("Persona data loading completed")
+            return extracted_data
+            
+        except Exception as e:
+            self.logger.error(f"Persona data loading failed: {str(e)}")
+            return {
+                'linguistic_style': {},
+                'communication_patterns': {},
+                'persona_metadata': {'name': self.persona_id, 'description': '', 'extraction_timestamp': ''}
+            }
+    
     def process_query(self, user_query: str, session_id: Optional[str] = None) -> str:
         """
         Process a user query using the LangChain ReAct agent.
@@ -227,8 +307,11 @@ Now analyze the query and return the JSON:"""
         # Step 1: Always analyze the query first (preprocessing)
         query_analysis = self._analyze_query(user_query)
         
-        # Step 2: Create agent with query analysis context for better reasoning
-        agent_executor = self._create_agent(query_analysis)
+        # Step 2: Load persona data (static context)
+        persona_data = self._load_persona_data()
+        
+        # Step 3: Create agent with query analysis and persona data context for better reasoning
+        agent_executor = self._create_agent(query_analysis, persona_data)
         
         # Configure conversation thread with persona context, query analysis, and LLM logging
         config = {
