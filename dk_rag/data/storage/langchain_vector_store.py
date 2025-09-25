@@ -14,7 +14,7 @@ from langchain.schema import Document
 
 from ..models.persona_constitution import PersonaConstitution
 from ...config.settings import Settings
-from ...utils.logging import get_logger
+from ...utils.logging import get_logger, get_component_logger
 from ...core.retrieval.embedding_wrapper import ChromaEmbeddingWrapper
 from ...utils.model_manager import get_model_manager
 
@@ -40,7 +40,7 @@ class LangChainVectorStore:
         if persona_id is None:
             raise ValueError("persona_id is required - multi-tenant isolation requires explicit persona identification")
         self.persona_id = persona_id
-        self.logger = get_logger(__name__)
+        self.logger = get_component_logger("LCVecStore", persona_id)
         
         # Setup ChromaDB configuration
         self._setup_chroma()

@@ -17,7 +17,7 @@ from langchain_core.messages import BaseMessage
 from langchain_core.outputs import LLMResult
 
 from ..config.settings import Settings
-from ..utils.logging import get_logger
+from ..utils.logging import get_logger, get_component_logger
 
 
 class SimpleLLMLoggingCallbackHandler(BaseCallbackHandler):
@@ -48,7 +48,7 @@ class SimpleLLMLoggingCallbackHandler(BaseCallbackHandler):
         self.persona_id = persona_id
         self.logging_base_dir = Path(logging_base_dir)
         self.settings = settings
-        self.logger = get_logger(f"{__name__}.{persona_id}.{context_name}")
+        self.logger = get_component_logger("LLM-Log", f"{persona_id}:{context_name}")
         
         # Current call tracking
         self.current_call_dir = None

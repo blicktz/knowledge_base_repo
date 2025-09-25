@@ -43,7 +43,7 @@ try:
 except ImportError:
     CHROMADB_AVAILABLE = False
 
-from .logging import get_logger
+from .logging import get_logger, get_component_logger
 from .device_manager import get_device_manager
 
 
@@ -67,7 +67,7 @@ class ModelManager:
     """
     
     def __init__(self):
-        self.logger = get_logger(__name__)
+        self.logger = get_component_logger("ModelMgr")
         self.device_manager = get_device_manager()
         
         # Thread-safe model storage

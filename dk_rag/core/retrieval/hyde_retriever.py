@@ -18,7 +18,7 @@ from langchain.llms.base import BaseLLM
 from langchain.vectorstores.base import VectorStore
 from langchain_litellm import ChatLiteLLM
 
-from ...utils.logging import get_logger
+from ...utils.logging import get_logger, get_component_logger
 from ...config.settings import Settings
 
 
@@ -51,7 +51,7 @@ class HyDERetriever:
         self.embeddings = embeddings
         self.vector_store = vector_store
         self.settings = settings or Settings()
-        self.logger = get_logger(__name__)
+        self.logger = get_component_logger("HyDE")
         
         # Initialize dedicated HyDE LLM
         self._init_hyde_llm()

@@ -20,7 +20,7 @@ from ..tools.agent_tools import get_tools_for_persona
 from ..utils.llm_utils import robust_json_loads
 from ..utils.artifact_discovery import ArtifactDiscovery
 # Will import llm factory functions inside methods to avoid circular imports
-from ..utils.logging import get_logger
+from ..utils.logging import get_logger, get_component_logger
 
 # Import robust JSON parsing library
 from llm_output_parser import parse_json
@@ -38,7 +38,7 @@ class LangChainPersonaAgent:
     def __init__(self, persona_id: str, settings: Settings):
         self.persona_id = persona_id
         self.settings = settings
-        self.logger = get_logger(f"{__name__}.{persona_id}")
+        self.logger = get_component_logger("Agent", persona_id)
         
         # Initialize LangChain LLM using factory (import here to avoid circular imports)
         from ..utils.llm_factory import create_agent_llm
@@ -209,10 +209,6 @@ Now analyze the query and return the JSON:"""
             # Use LangChain message format
             messages = [HumanMessage(content=prompt)]
             response = llm.invoke(messages)
-            
-            # Log raw response for debugging
-            self.logger.info(f"DEBUG: Raw LLM response (first 500 chars): {response.content[:500] if response.content else 'None'}...")
-            self.logger.info(f"DEBUG: Raw response total length: {len(response.content) if response.content else 0}")
             
             # Parse JSON response using robust parsing pattern
             try:

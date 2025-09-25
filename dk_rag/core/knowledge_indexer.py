@@ -16,7 +16,7 @@ from ..core.persona_extractor import PersonaExtractor
 from ..core.statistical_analyzer import StatisticalAnalyzer
 from ..core.persona_manager import PersonaManager
 from ..config.settings import Settings
-from ..utils.logging import get_logger
+from ..utils.logging import get_logger, get_component_logger
 from ..utils.validation import validate_documents
 
 # Phase 2 imports
@@ -50,7 +50,7 @@ class KnowledgeIndexer:
     def __init__(self, settings: Settings, persona_manager: PersonaManager, persona_id: Optional[str] = None):
         """Initialize the knowledge indexer with shared persona manager and optional persona context"""
         self.settings = settings
-        self.logger = get_logger(__name__)
+        self.logger = get_component_logger("KnowIdx", persona_id)
         self.persona_id = persona_id
         
         # Use provided persona manager instance

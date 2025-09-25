@@ -25,7 +25,7 @@ except ImportError:
 import torch
 from langchain.schema import Document
 
-from ...utils.logging import get_logger
+from ...utils.logging import get_logger, get_component_logger
 from ...utils.model_manager import get_model_manager
 
 
@@ -57,7 +57,7 @@ class CrossEncoderReranker:
             batch_size: Batch size for reranking
             cache_dir: Directory for caching reranking results
         """
-        self.logger = get_logger(__name__)
+        self.logger = get_component_logger("Reranker")
         self.model_manager = get_model_manager()
         
         # Store configuration (models loaded lazily when needed)
@@ -391,7 +391,7 @@ class DualEncoderReranker:
         """
         from sentence_transformers import SentenceTransformer
         
-        self.logger = get_logger(__name__)
+        self.logger = get_component_logger("DualEnc")
         
         # Auto-detect device
         if device is None:

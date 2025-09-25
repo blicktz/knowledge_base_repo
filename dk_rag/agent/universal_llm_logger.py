@@ -16,7 +16,7 @@ from langchain_core.callbacks import BaseCallbackHandler
 from langchain_core.messages import BaseMessage
 from langchain_core.outputs import LLMResult
 
-from ..utils.logging import get_logger
+from ..utils.logging import get_logger, get_component_logger
 
 
 class UniversalLLMLoggingCallbackHandler(BaseCallbackHandler):
@@ -40,7 +40,7 @@ class UniversalLLMLoggingCallbackHandler(BaseCallbackHandler):
         """
         self.persona_id = persona_id
         self.base_cache_dir = Path(base_cache_dir)
-        self.logger = get_logger(__name__)
+        self.logger = get_component_logger("LLM-Universal", persona_id)
         
         # Track current LLM call context
         self.current_call_context = None

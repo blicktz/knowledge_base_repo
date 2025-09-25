@@ -13,7 +13,7 @@ from langchain.schema import Document
 from langchain.vectorstores.base import VectorStore
 
 from ...data.storage.bm25_store import BM25Store
-from ...utils.logging import get_logger
+from ...utils.logging import get_logger, get_component_logger
 
 
 class HybridRetriever:
@@ -44,7 +44,7 @@ class HybridRetriever:
         self.vector_store = vector_store
         self.bm25_weight = bm25_weight
         self.vector_weight = vector_weight
-        self.logger = get_logger(__name__)
+        self.logger = get_component_logger("Hybrid")
         
         # Validate weights sum to 1.0
         weight_sum = self.bm25_weight + self.vector_weight

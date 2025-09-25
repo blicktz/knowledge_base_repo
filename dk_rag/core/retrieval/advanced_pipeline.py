@@ -17,7 +17,7 @@ from .hyde_retriever import HyDERetriever
 from .hybrid_retriever import HybridRetriever
 from .reranker import CrossEncoderReranker
 from ...prompts.hyde_prompts import select_best_prompt, HYDE_PROMPTS
-from ...utils.logging import get_logger
+from ...utils.logging import get_logger, get_component_logger
 
 
 class AdvancedRetrievalPipeline:
@@ -61,7 +61,7 @@ class AdvancedRetrievalPipeline:
         self.enable_hybrid = enable_hybrid
         self.enable_reranking = enable_reranking
         
-        self.logger = get_logger(__name__)
+        self.logger = get_component_logger("AdvPipeline")
         
         # Setup cache directory for pipeline logs
         if cache_dir:

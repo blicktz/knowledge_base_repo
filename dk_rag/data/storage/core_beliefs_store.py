@@ -17,7 +17,7 @@ from ..models.persona_constitution import PersonaConstitution
 from ...config.settings import Settings
 from ...models.knowledge_types import KnowledgeType
 from ...models.knowledge_results import IndexingResult
-from ...utils.logging import get_logger
+from ...utils.logging import get_logger, get_component_logger
 from ...core.retrieval.embedding_wrapper import ChromaEmbeddingWrapper
 from ...utils.model_manager import get_model_manager
 
@@ -47,7 +47,7 @@ class CoreBeliefsStore:
         self.settings = settings
         self.persona_id = persona_id
         self.embedding_model = embedding_model
-        self.logger = get_logger(__name__)
+        self.logger = get_component_logger("CBStore", persona_id)
         
         if not persona_id:
             raise ValueError("persona_id is required for multi-tenant isolation")

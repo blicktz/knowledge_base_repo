@@ -11,7 +11,7 @@ from typing import Dict, Optional, Tuple, Any
 from pathlib import Path
 from datetime import datetime
 
-from .logging import get_logger
+from .logging import get_logger, get_component_logger
 
 
 class ComponentRegistry:
@@ -23,7 +23,7 @@ class ComponentRegistry:
     """
     
     def __init__(self):
-        self.logger = get_logger(__name__)
+        self.logger = get_component_logger("CompReg")
         self._lock = threading.RLock()
         
         # Component caches

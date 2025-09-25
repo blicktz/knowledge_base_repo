@@ -15,7 +15,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 import time
 
-from ...utils.logging import get_logger
+from ...utils.logging import get_logger, get_component_logger
 
 
 class RetrievalCache:
@@ -49,7 +49,7 @@ class RetrievalCache:
         self.cache_size = cache_size
         self.ttl_hours = ttl_hours
         self.enable_compression = enable_compression
-        self.logger = get_logger(__name__)
+        self.logger = get_component_logger("RetrCache")
         
         # Create cache subdirectories
         self.hyde_cache_dir = self.cache_dir / "hyde_cache"

@@ -15,7 +15,7 @@ from typing import Optional, Tuple, List
 from dataclasses import dataclass
 
 from ..config.settings import Settings
-from ..utils.logging import get_logger
+from ..utils.logging import get_logger, get_component_logger
 
 
 @dataclass
@@ -49,7 +49,7 @@ class ArtifactDiscovery:
             settings: Settings instance for configuration
         """
         self.settings = settings or Settings.from_default_config()
-        self.logger = get_logger(__name__)
+        self.logger = get_component_logger("ArtifactDisc")
         
         # Get base storage directory from config
         self.base_storage_dir = Path(self.settings.storage.base_storage_dir)

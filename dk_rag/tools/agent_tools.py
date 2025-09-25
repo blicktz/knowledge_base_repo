@@ -14,10 +14,15 @@ from langchain_core.runnables import RunnableConfig
 from ..config.settings import Settings
 from ..core.knowledge_indexer import KnowledgeIndexer
 from ..core.persona_manager import PersonaManager
-from ..utils.logging import get_logger
+from ..utils.logging import get_logger, get_component_logger
 from ..utils.component_registry import get_component_registry
 
+# Module-level logger for non-tool specific logging
 logger = get_logger(__name__)
+
+def _get_tool_logger(tool_name: str, persona_id: str):
+    """Get a tool-specific component logger."""
+    return get_component_logger(f"Tool:{tool_name}", persona_id)
 
 
 
@@ -54,7 +59,9 @@ def retrieve_mental_models(query: str, config: RunnableConfig = None) -> List[Di
     mm_config = settings.agent.tools.mental_models
     k = mm_config.get('k', 3)
     
-    logger.info(f"Retrieving {k} mental models for persona: {persona_id}, rag_query: {rag_query}")
+    # Get tool-specific logger
+    tool_logger = _get_tool_logger("MM", persona_id)
+    tool_logger.info(f"Retrieving {k} mental models for persona: {persona_id}, rag_query: {rag_query}")
     
     try:
         # Get long-lived knowledge indexer from registry (server-optimized)
@@ -88,11 +95,11 @@ def retrieve_mental_models(query: str, config: RunnableConfig = None) -> List[Di
                 'metadata': item.metadata if hasattr(item, 'metadata') else {}
             })
         
-        logger.info(f"Retrieved {len(formatted_results)} mental models")
+        tool_logger.info(f"Retrieved {len(formatted_results)} mental models")
         return formatted_results
         
     except Exception as e:
-        logger.error(f"Mental models retrieval failed: {str(e)}")
+        tool_logger.error(f"Mental models retrieval failed: {str(e)}")
         return []
 
 
@@ -129,7 +136,9 @@ def retrieve_core_beliefs(query: str, config: RunnableConfig = None) -> List[Dic
     cb_config = settings.agent.tools.core_beliefs
     k = cb_config.get('k', 5)
     
-    logger.info(f"Retrieving {k} core beliefs for persona: {persona_id}, rag_query: {rag_query}")
+    # Get tool-specific logger
+    tool_logger = _get_tool_logger("CB", persona_id)
+    tool_logger.info(f"Retrieving {k} core beliefs for persona: {persona_id}, rag_query: {rag_query}")
     
     try:
         # Get long-lived knowledge indexer from registry (server-optimized)
@@ -163,11 +172,11 @@ def retrieve_core_beliefs(query: str, config: RunnableConfig = None) -> List[Dic
                 'metadata': item.metadata if hasattr(item, 'metadata') else {}
             })
         
-        logger.info(f"Retrieved {len(formatted_results)} core beliefs")
+        tool_logger.info(f"Retrieved {len(formatted_results)} core beliefs")
         return formatted_results
         
     except Exception as e:
-        logger.error(f"Core beliefs retrieval failed: {str(e)}")
+        tool_logger.error(f"Core beliefs retrieval failed: {str(e)}")
         return []
 
 
@@ -205,7 +214,9 @@ def retrieve_transcripts(query: str, config: RunnableConfig = None) -> List[Dict
     k = ts_config.get('k', 5)
     retrieval_k = ts_config.get('retrieval_k', 25)
     
-    logger.info(f"Retrieving {k} transcript chunks for persona: {persona_id}, rag_query: {rag_query}")
+    # Get tool-specific logger
+    tool_logger = _get_tool_logger("TS", persona_id)
+    tool_logger.info(f"Retrieving {k} transcript chunks for persona: {persona_id}, rag_query: {rag_query}")
     
     try:
         # Get long-lived knowledge indexer from registry (server-optimized)
@@ -256,11 +267,11 @@ def retrieve_transcripts(query: str, config: RunnableConfig = None) -> List[Dict
                 'score': score_value
             })
         
-        logger.info(f"Retrieved {len(formatted_results)} transcript chunks")
+        tool_logger.info(f"Retrieved {len(formatted_results)} transcript chunks")
         return formatted_results
         
     except Exception as e:
-        logger.error(f"Transcript retrieval failed: {str(e)}")
+        tool_logger.error(f"Transcript retrieval failed: {str(e)}")
         return []
 
 

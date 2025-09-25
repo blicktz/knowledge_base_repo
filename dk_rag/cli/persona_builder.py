@@ -11,7 +11,7 @@ import json
 from ..core.knowledge_indexer import KnowledgeIndexer
 from ..core.persona_manager import PersonaManager
 from ..config.settings import Settings, get_settings
-from ..utils.logging import setup_logger
+from ..utils.logging import setup_logger, get_component_logger
 from ..utils.validation import validate_config_file
 
 
@@ -29,9 +29,12 @@ class PersonaBuilderCLI:
     
     def setup(self, config_path: Optional[str] = None, debug: bool = False):
         """Setup CLI components"""
-        # Setup logging
+        # Setup logging with component-specific prefix
         log_level = "DEBUG" if debug else "INFO"
-        self.logger = setup_logger("persona_cli", level=log_level)
+        # First setup base logger
+        setup_logger("persona_cli", level=log_level)
+        # Then use component logger
+        self.logger = get_component_logger("CLI", "PersonaBuilder")
         
         # Load settings
         if config_path:

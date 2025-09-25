@@ -17,7 +17,7 @@ from ..cache import MultiKnowledgeRetrievalCache
 from ....models.knowledge_types import KnowledgeType
 from ....models.knowledge_results import CoreBeliefResult
 from ....data.storage.core_beliefs_store import CoreBeliefsStore
-from ....utils.logging import get_logger
+from ....utils.logging import get_logger, get_component_logger
 
 
 class CoreBeliefsPipeline:
@@ -54,7 +54,7 @@ class CoreBeliefsPipeline:
         self.cache = cache
         self.knowledge_type = KnowledgeType.CORE_BELIEFS
         
-        self.logger = get_logger(__name__)
+        self.logger = get_component_logger("CBPipe", persona_id)
         
         # Setup cache directory for pipeline logs
         if cache_dir:

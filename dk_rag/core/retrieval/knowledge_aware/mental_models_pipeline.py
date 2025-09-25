@@ -17,7 +17,7 @@ from ..cache import MultiKnowledgeRetrievalCache
 from ....models.knowledge_types import KnowledgeType
 from ....models.knowledge_results import MentalModelResult
 from ....data.storage.mental_models_store import MentalModelsStore
-from ....utils.logging import get_logger
+from ....utils.logging import get_logger, get_component_logger
 
 
 class MentalModelsPipeline:
@@ -54,7 +54,7 @@ class MentalModelsPipeline:
         self.cache = cache
         self.knowledge_type = KnowledgeType.MENTAL_MODELS
         
-        self.logger = get_logger(__name__)
+        self.logger = get_component_logger("MMPipe", persona_id)
         
         # Setup cache directory for pipeline logs
         if cache_dir:
