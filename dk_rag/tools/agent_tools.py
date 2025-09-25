@@ -15,6 +15,7 @@ from ..config.settings import Settings
 from ..core.knowledge_indexer import KnowledgeIndexer
 from ..core.persona_manager import PersonaManager
 from ..utils.logging import get_logger
+from ..utils.component_registry import get_component_registry
 
 logger = get_logger(__name__)
 
@@ -56,9 +57,9 @@ def retrieve_mental_models(query: str, config: RunnableConfig = None) -> List[Di
     logger.info(f"Retrieving {k} mental models for persona: {persona_id}, rag_query: {rag_query}")
     
     try:
-        # Initialize knowledge indexer
-        persona_manager = PersonaManager(settings) 
-        knowledge_indexer = KnowledgeIndexer(settings, persona_manager, persona_id)
+        # Get long-lived knowledge indexer from registry (server-optimized)
+        component_registry = get_component_registry()
+        knowledge_indexer = component_registry.get_knowledge_indexer(settings, persona_id)
         
         # Search mental models using optimized rag_query
         results = knowledge_indexer.search_mental_models(
@@ -131,9 +132,9 @@ def retrieve_core_beliefs(query: str, config: RunnableConfig = None) -> List[Dic
     logger.info(f"Retrieving {k} core beliefs for persona: {persona_id}, rag_query: {rag_query}")
     
     try:
-        # Initialize knowledge indexer
-        persona_manager = PersonaManager(settings) 
-        knowledge_indexer = KnowledgeIndexer(settings, persona_manager, persona_id)
+        # Get long-lived knowledge indexer from registry (server-optimized)
+        component_registry = get_component_registry()
+        knowledge_indexer = component_registry.get_knowledge_indexer(settings, persona_id)
         
         # Search core beliefs using optimized rag_query
         results = knowledge_indexer.search_core_beliefs(
@@ -207,9 +208,9 @@ def retrieve_transcripts(query: str, config: RunnableConfig = None) -> List[Dict
     logger.info(f"Retrieving {k} transcript chunks for persona: {persona_id}, rag_query: {rag_query}")
     
     try:
-        # Initialize knowledge indexer and Phase 2 pipeline
-        persona_manager = PersonaManager(settings) 
-        knowledge_indexer = KnowledgeIndexer(settings, persona_manager, persona_id)
+        # Get long-lived knowledge indexer from registry (server-optimized)
+        component_registry = get_component_registry()
+        knowledge_indexer = component_registry.get_knowledge_indexer(settings, persona_id)
         pipeline = knowledge_indexer.get_advanced_retrieval_pipeline(persona_id)
         
         # Use Phase 2 advanced pipeline with optimized rag_query

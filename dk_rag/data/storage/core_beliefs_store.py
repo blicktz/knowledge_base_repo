@@ -19,6 +19,7 @@ from ...models.knowledge_types import KnowledgeType
 from ...models.knowledge_results import IndexingResult
 from ...utils.logging import get_logger
 from ...core.retrieval.embedding_wrapper import ChromaEmbeddingWrapper
+from ...utils.model_manager import get_model_manager
 
 
 class CoreBeliefsStore:
@@ -73,13 +74,17 @@ class CoreBeliefsStore:
         self.logger.info(f"Core beliefs store initialized for persona: {persona_id}")
     
     def _setup_embeddings(self):
-        """Setup embedding function for the collection."""
+        """Setup embedding function for the collection using ModelManager."""
         try:
-            from chromadb.utils import embedding_functions
+            model_manager = get_model_manager()
             
-            chroma_embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(
-                model_name=self.embedding_model
+            # Get ChromaDB embedding function from ModelManager (lazy loading)
+            chroma_embedding_function = model_manager.get_chroma_embedding_function(
+                self.embedding_model
             )
+            
+            if chroma_embedding_function is None:
+                raise RuntimeError(f"Failed to load ChromaDB embedding function for {self.embedding_model}")
             
             # Wrap for LangChain compatibility
             self.embedding_function = ChromaEmbeddingWrapper(
@@ -87,7 +92,7 @@ class CoreBeliefsStore:
                 self.embedding_model
             )
             
-            self.logger.info(f"Initialized embedding function with model: {self.embedding_model}")
+            self.logger.info(f"Initialized embedding function with model: {self.embedding_model} (using ModelManager)")
             
         except Exception as e:
             self.logger.error(f"Failed to initialize embedding function: {e}")

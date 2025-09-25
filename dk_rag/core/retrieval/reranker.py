@@ -26,6 +26,7 @@ import torch
 from langchain.schema import Document
 
 from ...utils.logging import get_logger
+from ...utils.model_manager import get_model_manager
 
 
 class CrossEncoderReranker:
@@ -46,7 +47,7 @@ class CrossEncoderReranker:
         cache_dir: Optional[str] = None
     ):
         """
-        Initialize cross-encoder reranker.
+        Initialize cross-encoder reranker with lazy model loading.
         
         Args:
             model_name: Model to use for reranking
@@ -57,8 +58,12 @@ class CrossEncoderReranker:
             cache_dir: Directory for caching reranking results
         """
         self.logger = get_logger(__name__)
+        self.model_manager = get_model_manager()
+        
+        # Store configuration (models loaded lazily when needed)
         self.model_name = model_name
         self.use_cohere = use_cohere
+        self.cohere_api_key = cohere_api_key
         self.batch_size = batch_size
         
         # Setup cache directory
@@ -69,47 +74,49 @@ class CrossEncoderReranker:
             self.cache_dir = Path(base_dir) / "retrieval_cache" / "reranker_logs"
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         
-        # Auto-detect device if not specified or if "auto" is requested
+        # Store device configuration (used by ModelManager)
         if device is None or device == "auto":
-            if torch.cuda.is_available():
-                device = "cuda"
-            elif torch.backends.mps.is_available():
-                device = "mps"
-            else:
-                device = "cpu"
-        self.device = device
-        
-        # Initialize reranker
-        if use_cohere and COHERE_AVAILABLE:
-            self._init_cohere(cohere_api_key)
-        elif RERANKERS_AVAILABLE:
-            self._init_local_reranker()
+            # Let ModelManager handle device detection
+            self.device = None
         else:
-            raise ImportError("Neither rerankers nor cohere package is available. Please install one of them.")
+            self.device = device
         
-        self.logger.info(f"CrossEncoderReranker initialized with model: {model_name}, device: {device}")
-    
-    def _init_cohere(self, api_key: Optional[str]):
-        """Initialize Cohere API reranker."""
-        if not api_key:
-            raise ValueError("Cohere API key required when use_cohere=True")
+        # Set reranker type for logging (determined by configuration)
+        self.reranker_type = "cohere" if use_cohere else "local"
         
-        self.cohere_client = cohere.Client(api_key)
-        self.reranker_type = "cohere"
-        self.logger.info("Using Cohere API for reranking")
+        # Check availability without loading models
+        if use_cohere and not COHERE_AVAILABLE:
+            raise ImportError("cohere package not available. Please install it to use Cohere reranking.")
+        elif not use_cohere and not RERANKERS_AVAILABLE:
+            raise ImportError("rerankers package not available. Please install it to use local reranking.")
+        
+        self.logger.info(f"CrossEncoderReranker configured with model: {model_name}, type: {self.reranker_type}")
+        if not use_cohere:
+            self.logger.info("Model will be loaded on first use for better performance")
     
-    def _init_local_reranker(self):
-        """Initialize local reranker model."""
-        try:
-            self.reranker = Reranker(
-                self.model_name,
-                device=self.device
+    def _get_reranker_model(self):
+        """
+        Get the reranker model from ModelManager (lazy loading).
+        
+        Returns:
+            Loaded reranker model
+        """
+        if self.use_cohere:
+            return self.model_manager.get_reranker_model(
+                model_name=self.model_name,
+                use_cohere=True,
+                cohere_api_key=self.cohere_api_key
             )
-            self.reranker_type = "local"
-            self.logger.info(f"Using local reranker: {self.model_name}")
-        except Exception as e:
-            self.logger.error(f"Failed to initialize reranker: {e}")
-            raise
+        else:
+            return self.model_manager.get_reranker_model(
+                model_name=self.model_name,
+                use_cohere=False
+            )
+    
+    def _is_model_loaded(self) -> bool:
+        """Check if the reranker model is already loaded."""
+        cache_key = f"cohere_{self.model_name}" if self.use_cohere else self.model_name
+        return self.model_manager.is_model_loaded(cache_key, "reranker")
     
     def _log_reranking(
         self,
@@ -133,6 +140,9 @@ class CrossEncoderReranker:
         total_candidates = metadata.get("total_candidates", len(candidates)) if metadata else len(candidates)
         final_candidates = metadata.get("final_candidates", len(scores)) if metadata else len(scores)
         
+        # Get actual device being used (from ModelManager or configuration)
+        actual_device = self.device if self.device else self.model_manager.device_manager.get_torch_device()
+        
         log_entry = {
             "timestamp": timestamp,
             "query": query,
@@ -140,7 +150,7 @@ class CrossEncoderReranker:
             "final_candidates": final_candidates,
             "model": self.model_name,
             "reranker_type": self.reranker_type,
-            "device": self.device,
+            "device": actual_device,
             "final_scores": scores,
             "metadata": {k: v for k, v in (metadata or {}).items() if k not in ["total_candidates", "final_candidates"]},
             "component": "CrossEncoderReranker"
@@ -228,7 +238,7 @@ class CrossEncoderReranker:
     
     def _rerank_local(self, query: str, candidates: List[str]) -> List[float]:
         """
-        Rerank using local model.
+        Rerank using local model from ModelManager.
         
         Args:
             query: Search query
@@ -238,8 +248,14 @@ class CrossEncoderReranker:
             List of scores
         """
         try:
+            # Get reranker model from ModelManager (lazy loading)
+            reranker = self._get_reranker_model()
+            if reranker is None:
+                self.logger.error("Failed to load local reranker model")
+                return [1.0] * len(candidates)
+            
             # Use rerankers library
-            results = self.reranker.rank(
+            results = reranker.rank(
                 query=query,
                 docs=candidates,
                 doc_ids=list(range(len(candidates)))
@@ -259,7 +275,7 @@ class CrossEncoderReranker:
     
     def _rerank_cohere(self, query: str, candidates: List[str], top_k: int) -> List[float]:
         """
-        Rerank using Cohere API.
+        Rerank using Cohere API from ModelManager.
         
         Args:
             query: Search query
@@ -270,11 +286,16 @@ class CrossEncoderReranker:
             List of scores
         """
         try:
+            # Get Cohere reranker from ModelManager (lazy loading)
+            cohere_reranker = self._get_reranker_model()
+            if cohere_reranker is None:
+                self.logger.error("Failed to load Cohere reranker")
+                return [1.0] * len(candidates)
+            
             # Call Cohere rerank API
-            response = self.cohere_client.rerank(
+            response = cohere_reranker.rank(
                 query=query,
-                documents=candidates,
-                model="rerank-english-v3.0",
+                docs=candidates,
                 top_n=min(top_k, len(candidates))
             )
             
@@ -330,11 +351,15 @@ class CrossEncoderReranker:
         Returns:
             Dictionary with reranker information
         """
+        # Get actual device being used
+        actual_device = self.device if self.device else self.model_manager.device_manager.get_torch_device()
+        
         stats = {
             "model": self.model_name,
             "type": self.reranker_type,
-            "device": self.device,
-            "batch_size": self.batch_size
+            "device": actual_device,
+            "batch_size": self.batch_size,
+            "model_loaded": self._is_model_loaded()
         }
         
         # Count logged rerankings

@@ -16,6 +16,7 @@ from ..models.persona_constitution import PersonaConstitution
 from ...config.settings import Settings
 from ...utils.logging import get_logger
 from ...core.retrieval.embedding_wrapper import ChromaEmbeddingWrapper
+from ...utils.model_manager import get_model_manager
 
 
 class LangChainVectorStore:
@@ -69,17 +70,22 @@ class LangChainVectorStore:
         persist_dir = Path(persona_vector_db_path)
         persist_dir.mkdir(parents=True, exist_ok=True)
         
-        # Create embedding function using sentence transformers
+        # Create embedding function using ModelManager
         try:
-            from chromadb.utils import embedding_functions
-            chroma_embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(
-                model_name=embedding_model
+            model_manager = get_model_manager()
+            
+            # Get ChromaDB embedding function from ModelManager (lazy loading)
+            chroma_embedding_function = model_manager.get_chroma_embedding_function(
+                embedding_model
             )
+            
+            if chroma_embedding_function is None:
+                raise RuntimeError(f"Failed to load ChromaDB embedding function for {embedding_model}")
             
             # Wrap it for LangChain compatibility
             embedding_function = ChromaEmbeddingWrapper(chroma_embedding_function, embedding_model)
             
-            self.logger.info(f"Initialized embedding function with model: {embedding_model}")
+            self.logger.info(f"Initialized embedding function with model: {embedding_model} (using ModelManager)")
         except Exception as e:
             self.logger.error(f"Failed to initialize embedding function: {e}")
             raise
