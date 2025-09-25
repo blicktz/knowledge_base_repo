@@ -297,7 +297,7 @@ agent:
     temperature: 0.3  # Lower temperature for structured extraction
     max_tokens: 1000
     timeout_seconds: 20
-    max_retries: 2
+    max_retries: 1
     cache_results: true
     cache_ttl_hours: 24
     log_interactions: true

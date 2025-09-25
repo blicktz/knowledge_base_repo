@@ -56,7 +56,9 @@ class LangChainPersonaAgent:
     
     def _initialize_llm(self) -> ChatLiteLLM:
         """Initialize LangChain-wrapped LLM"""
-        model_config = self.settings.agent.synthesis  # Use synthesis config for main agent
+        # Use query_analysis config for agent reasoning (fast model)
+        # The synthesis model will be used separately for final response generation
+        model_config = self.settings.agent.query_analysis  # Use fast model for agent reasoning
         
         return ChatLiteLLM(
             model=model_config.llm_model,

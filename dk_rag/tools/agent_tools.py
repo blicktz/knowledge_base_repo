@@ -126,14 +126,6 @@ Now analyze the query and return the JSON:"""
             "provided_context": "",
             "intent_type": "unknown"
         }
-    except Exception as e:
-        logger.error(f"Query analysis failed: {str(e)}")
-        return {
-            "core_task": query,
-            "rag_query": query,
-            "provided_context": "",
-            "intent_type": "unknown"
-        }
 
 
 @tool

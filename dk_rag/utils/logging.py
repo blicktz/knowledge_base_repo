@@ -93,6 +93,8 @@ def get_logger(name: str) -> logging.Logger:
     # If logger has no handlers, set it up with defaults
     if not logger.handlers:
         setup_logger(name)
+        # Prevent propagation to avoid duplicate logging
+        logger.propagate = False
     
     return logger
 
