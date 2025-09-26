@@ -112,6 +112,7 @@ class DevelopmentConfig(BaseModel):
 class MapReduceExtractionConfig(BaseModel):
     """Configuration for map-reduce extraction process"""
     enabled: bool = Field(default=True, description="Enable map-reduce extraction")
+    skip_reduce: bool = Field(default=False, description="Skip reduce phase and output mapped results directly")
     llm_provider: str = Field(default="litellm", description="LLM provider for map-reduce")
     llm_model: str = Field(default="gemini/gemini-2.0-flash-exp", description="Default model for extraction")
     map_phase_model: str = Field(default="gemini/gemini-2.0-flash-exp", description="Model for map phase")
@@ -218,9 +219,20 @@ class AgentErrorHandlingConfig(BaseModel):
     include_traceback: bool = Field(default=True)
 
 
+class AgentMemoryConfig(BaseModel):
+    """Configuration for agent memory management"""
+    enabled: bool = Field(default=True)
+    max_tokens: int = Field(default=6000)
+    strategy: str = Field(default="last")
+    include_system: bool = Field(default=True)
+    start_on: str = Field(default="human")
+    end_on: List[str] = Field(default_factory=lambda: ["human", "tool"])
+
+
 class AgentConfig(BaseModel):
     """Configuration for Phase 3 agent system"""
     enabled: bool = Field(default=True)
+    memory: AgentMemoryConfig = Field(default_factory=AgentMemoryConfig)
     llm_logging: AgentLLMLoggingConfig = Field(default_factory=AgentLLMLoggingConfig)
     query_analysis: AgentLLMConfig = Field(default_factory=AgentLLMConfig)
     synthesis: AgentSynthesisConfig = Field(default_factory=AgentSynthesisConfig)

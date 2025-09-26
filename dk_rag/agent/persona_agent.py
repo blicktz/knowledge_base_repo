@@ -12,6 +12,7 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.messages.utils import trim_messages
 from langgraph.prebuilt import create_react_agent
 from langgraph.checkpoint.memory import MemorySaver
 
@@ -68,17 +69,49 @@ class LangChainPersonaAgent:
             max_tokens=model_config.max_tokens
         )
     
+    def _create_pre_model_hook(self):
+        """Create a pre-model hook for token-based message trimming"""
+        memory_config = self.settings.agent.memory
+        
+        def pre_model_hook(state):
+            """Trim messages to stay within token limit before sending to LLM"""
+            if not memory_config.enabled:
+                return state
+            
+            max_tokens = memory_config.max_tokens
+            strategy = memory_config.strategy
+            include_system = memory_config.include_system
+            start_on = memory_config.start_on
+            end_on = memory_config.end_on
+            
+            trimmed_messages = trim_messages(
+                state["messages"],
+                strategy=strategy,
+                token_counter=self.llm,
+                max_tokens=max_tokens,
+                start_on=start_on,
+                end_on=tuple(end_on) if isinstance(end_on, list) else end_on,
+                include_system=include_system
+            )
+            
+            self.logger.debug(f"Trimmed messages from {len(state['messages'])} to {len(trimmed_messages)} (max_tokens={max_tokens})")
+            
+            return {"messages": trimmed_messages}
+        
+        return pre_model_hook
+    
     def _create_agent(self, query_analysis: Optional[Dict[str, Any]] = None, persona_data: Optional[Dict[str, Any]] = None):
         """Create ReAct agent with tools and memory, optionally with query analysis and persona data context"""
         
         # Create system prompt that defines the persona behavior with query and persona context
         system_prompt = self._build_system_prompt(query_analysis, persona_data)
         
-        # Create the ReAct agent with memory checkpointing and LLM logging
+        # Create the ReAct agent with memory checkpointing, message trimming, and LLM logging
         agent_executor = create_react_agent(
             model=self.llm,
             tools=self.tools,
             checkpointer=self.memory,
+            pre_model_hook=self._create_pre_model_hook(),
             prompt=system_prompt
         )
         

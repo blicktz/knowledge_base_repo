@@ -965,6 +965,14 @@ The two candidate beliefs express the same core idea of valuing action over plan
         # Map phase: extract candidates from batches
         candidates = await self._map_phase(documents, "mental_models", statistical_insights)
         
+        # Check if reduce phase should be skipped
+        config = self.settings.map_reduce_extraction
+        skip_reduce = config.skip_reduce
+        
+        if skip_reduce:
+            self.logger.info("Skipping reduce phase - outputting map results directly")
+            return candidates
+        
         # Reduce phase: consolidate into final results
         final_results = await self._reduce_phase(candidates, "mental_models", documents)
         
@@ -990,6 +998,14 @@ The two candidate beliefs express the same core idea of valuing action over plan
         
         # Map phase: extract candidates from batches
         candidates = await self._map_phase(documents, "core_beliefs", statistical_insights)
+        
+        # Check if reduce phase should be skipped
+        config = self.settings.map_reduce_extraction
+        skip_reduce = config.skip_reduce
+        
+        if skip_reduce:
+            self.logger.info("Skipping reduce phase - outputting map results directly")
+            return candidates
         
         # Reduce phase: consolidate into final results
         final_results = await self._reduce_phase(candidates, "core_beliefs", documents)

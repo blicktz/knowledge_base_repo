@@ -169,6 +169,7 @@ validation:
 # Map-Reduce Extraction Configuration
 map_reduce_extraction:
   enabled: true  # Enable map-reduce for large corpus processing
+  skip_reduce: true  # When true, output mapped results directly without reduce phase
   
   # LLM configuration for map-reduce phases
   llm_provider: "litellm"
@@ -290,6 +291,15 @@ retrieval:
 agent:
   enabled: true
   
+  # Memory Management Configuration
+  memory:
+    enabled: true
+    max_tokens: 6000  # Maximum tokens for conversation history
+    strategy: "last"  # Keep most recent messages
+    include_system: true  # Always preserve system message
+    start_on: "human"  # Ensure trimmed history starts with human message
+    end_on: ["human", "tool"]  # Valid ending message types
+  
   # LLM Logging Configuration
   llm_logging:
     enabled: true
@@ -319,8 +329,8 @@ agent:
     llm_model: "gemini/gemini-2.5-pro"  # Heavy lifting - best model
     temperature: 0.7  # Higher temperature for creative synthesis
     max_tokens: 10000
-    timeout_seconds: 180
-    max_retries: 2
+    timeout_seconds: 300
+    max_retries: 1
     use_chain_of_thought: true
     include_scratchpad: true
     log_interactions: true
@@ -347,14 +357,14 @@ agent:
       
     # Mental Models Retriever Tool
     mental_models:
-      k: 5  # Number of mental models to retrieve
+      k: 3  # Number of mental models to retrieve
       use_reranking: true
       min_confidence_score: 0.7
       log_retrievals: true
       
     # Core Beliefs Retriever Tool
     core_beliefs:
-      k: 5  # Number of core beliefs to retrieve
+      k: 3  # Number of core beliefs to retrieve
       use_reranking: true
       min_confidence_score: 0.6
       include_evidence: true
@@ -362,7 +372,7 @@ agent:
       
     # Transcript Retriever Tool
     transcripts:
-      k: 5  # Number of transcript chunks to retrieve
+      k: 3  # Number of transcript chunks to retrieve
       retrieval_k: 25  # Candidates before reranking
       use_phase2_pipeline: true  # Use full Phase 2 pipeline
       log_retrievals: true
