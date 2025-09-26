@@ -185,7 +185,7 @@ class PersonaKnowledgeProcessor:
                     if validate_schema:
                         validation_errors = self._validate_mental_model_schema(model_data, i)
                         if validation_errors:
-                            result['errors'].extend(validation_errors)
+                            result['warnings'].extend(validation_errors)
                             continue
                     
                     # Process and clean the mental model
@@ -242,7 +242,7 @@ class PersonaKnowledgeProcessor:
                     if validate_schema:
                         validation_errors = self._validate_core_belief_schema(belief_data, i)
                         if validation_errors:
-                            result['errors'].extend(validation_errors)
+                            result['warnings'].extend(validation_errors)
                             continue
                     
                     # Process and clean the core belief
@@ -287,9 +287,9 @@ class PersonaKnowledgeProcessor:
         # Check required fields
         for field in self.mental_model_required_fields:
             if field not in model_data:
-                errors.append(f"Mental model {index} missing required field: {field}")
+                errors.append(f"Mental model {index} missing required field: {field} (will be skipped)")
             elif not model_data[field]:
-                errors.append(f"Mental model {index} has empty required field: {field}")
+                errors.append(f"Mental model {index} has empty required field: {field} (will be skipped)")
         
         # Validate field types
         if 'name' in model_data and not isinstance(model_data['name'], str):
@@ -330,9 +330,9 @@ class PersonaKnowledgeProcessor:
         # Check required fields
         for field in self.core_belief_required_fields:
             if field not in belief_data:
-                errors.append(f"Core belief {index} missing required field: {field}")
+                errors.append(f"Core belief {index} missing required field: {field} (will be skipped)")
             elif not belief_data[field]:
-                errors.append(f"Core belief {index} has empty required field: {field}")
+                errors.append(f"Core belief {index} has empty required field: {field} (will be skipped)")
         
         # Validate field types
         if 'statement' in belief_data and not isinstance(belief_data['statement'], str):

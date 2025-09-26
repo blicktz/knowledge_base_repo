@@ -27,16 +27,19 @@ def _get_tool_logger(tool_name: str, persona_id: str):
 
 
 @tool
-def retrieve_mental_models(query: str, config: RunnableConfig = None) -> List[Dict[str, Any]]:
+def retrieve_mental_models(query: str, config: RunnableConfig = None) -> str:
     """
     Retrieve relevant mental models using RAG pipeline.
     
+    This tool searches for structured frameworks and step-by-step processes.
+    Call this tool ONLY when the user needs methodological guidance.
+    
     Args:
-        query: The search query
+        query: The search query (must be 10-20 words with rich context)
         config: Runtime configuration containing persona_id and settings
     
     Returns:
-        List of relevant mental model dictionaries
+        JSON string of relevant mental model dictionaries with explicit tool name
     """
     # Extract context from RunnableConfig
     persona_id = None
@@ -90,24 +93,39 @@ def retrieve_mental_models(query: str, config: RunnableConfig = None) -> List[Di
             })
         
         tool_logger.info(f"Retrieved {len(formatted_results)} mental models")
-        return formatted_results
+        
+        # Return as JSON string with explicit tool identification
+        result = {
+            "tool_name": "retrieve_mental_models",
+            "results": formatted_results,
+            "count": len(formatted_results)
+        }
+        return json.dumps(result, indent=2)
         
     except Exception as e:
         tool_logger.error(f"Mental models retrieval failed: {str(e)}")
-        return []
+        error_result = {
+            "tool_name": "retrieve_mental_models",
+            "error": str(e),
+            "results": []
+        }
+        return json.dumps(error_result)
 
 
 @tool  
-def retrieve_core_beliefs(query: str, config: RunnableConfig = None) -> List[Dict[str, Any]]:
+def retrieve_core_beliefs(query: str, config: RunnableConfig = None) -> str:
     """
     Retrieve relevant core beliefs using RAG pipeline.
     
+    This tool searches for foundational principles and philosophical beliefs.
+    Call this tool ONLY when the user asks for opinions or "why" questions.
+    
     Args:
-        query: The search query
+        query: The search query (must be 8-15 words focused on principles)
         config: Runtime configuration containing persona_id and settings
     
     Returns:
-        List of relevant core belief dictionaries
+        JSON string of relevant core belief dictionaries with explicit tool name
     """
     # Extract context from RunnableConfig
     persona_id = None
@@ -162,24 +180,39 @@ def retrieve_core_beliefs(query: str, config: RunnableConfig = None) -> List[Dic
             })
         
         tool_logger.info(f"Retrieved {len(formatted_results)} core beliefs")
-        return formatted_results
+        
+        # Return as JSON string with explicit tool identification
+        result = {
+            "tool_name": "retrieve_core_beliefs",
+            "results": formatted_results,
+            "count": len(formatted_results)
+        }
+        return json.dumps(result, indent=2)
         
     except Exception as e:
         tool_logger.error(f"Core beliefs retrieval failed: {str(e)}")
-        return []
+        error_result = {
+            "tool_name": "retrieve_core_beliefs",
+            "error": str(e),
+            "results": []
+        }
+        return json.dumps(error_result)
 
 
 @tool
-def retrieve_transcripts(query: str, config: RunnableConfig = None) -> List[Dict[str, Any]]:
+def retrieve_transcripts(query: str, config: RunnableConfig = None) -> str:
     """
     Retrieve relevant transcript chunks using Phase 2 advanced pipeline.
     
+    This tool searches for concrete examples, stories, and real-world evidence.
+    Call this tool ONLY when you need specific facts, anecdotes, or data.
+    
     Args:
-        query: The search query
+        query: The search query (must be 10-20 words with specific examples keywords)
         config: Runtime configuration containing persona_id and settings
     
     Returns:
-        List of relevant transcript chunk dictionaries
+        JSON string of relevant transcript chunk dictionaries with explicit tool name
     """
     # Extract context from RunnableConfig
     persona_id = None
@@ -247,11 +280,23 @@ def retrieve_transcripts(query: str, config: RunnableConfig = None) -> List[Dict
             })
         
         tool_logger.info(f"Retrieved {len(formatted_results)} transcript chunks")
-        return formatted_results
+        
+        # Return as JSON string with explicit tool identification
+        result = {
+            "tool_name": "retrieve_transcripts",
+            "results": formatted_results,
+            "count": len(formatted_results)
+        }
+        return json.dumps(result, indent=2)
         
     except Exception as e:
         tool_logger.error(f"Transcript retrieval failed: {str(e)}")
-        return []
+        error_result = {
+            "tool_name": "retrieve_transcripts",
+            "error": str(e),
+            "results": []
+        }
+        return json.dumps(error_result)
 
 
 # Tool registry for easy access (query_analyzer and get_persona_data removed - they're now preprocessing steps)

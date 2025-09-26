@@ -1149,9 +1149,16 @@ class KnowledgeIndexer:
             
             # Update with processing info
             indexing_result.source_file = json_path
+            
+            # Add processing errors (critical issues)
             if processing_result.errors:
                 for error in processing_result.errors:
                     indexing_result.add_error(f"Processing error: {error}")
+            
+            # Add processing warnings (validation issues for skipped items)
+            if processing_result.warnings:
+                for warning in processing_result.warnings:
+                    indexing_result.add_warning(warning)
             
             self.logger.info(
                 f"Mental models index built: {indexing_result.documents_indexed} documents indexed"
@@ -1227,9 +1234,16 @@ class KnowledgeIndexer:
             
             # Update with processing info
             indexing_result.source_file = json_path
+            
+            # Add processing errors (critical issues)
             if processing_result.errors:
                 for error in processing_result.errors:
                     indexing_result.add_error(f"Processing error: {error}")
+            
+            # Add processing warnings (validation issues for skipped items)
+            if processing_result.warnings:
+                for warning in processing_result.warnings:
+                    indexing_result.add_warning(warning)
             
             self.logger.info(
                 f"Core beliefs index built: {indexing_result.documents_indexed} documents indexed"

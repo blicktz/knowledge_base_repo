@@ -8,11 +8,11 @@ PYTEST := poetry run pytest
 MODULE := dk_rag.cli.persona_builder
 
 # Default paths - customize these for your setup
-DOCS_DIR ?= /Users/blickt/Documents/src/pdf_2_text/content_repo/Nick_Theriot
+DOCS_DIR ?= /Users/blickt/Documents/src/pdf_2_text/content_repo/Konstantinos_Doulgeridis_facebook_ads
 OUTPUT_DIR ?= ./output
 CONFIG_FILE ?= ./config/persona_config.yaml
 PATTERN ?= *.txt
-BATCH_SIZE ?= 3
+BATCH_SIZE ?= 5
 
 # Storage Configuration - automatically reads from config YAML file
 # NOTE: This must align with storage.base_storage_dir in the config YAML file
@@ -22,7 +22,7 @@ CACHE_DIR := $(STORAGE_BASE_DIR)/cache
 VECTOR_DB_DIR := $(STORAGE_BASE_DIR)/vector_db
 
 # Default persona name for extraction
-PERSONA_NAME ?= nick_theriot_youtuber
+PERSONA_NAME ?= konstantinos_doulgeridis_youtuber
 
 # Search query for testing
 SEARCH_QUERY ?= "mental models for productivity"

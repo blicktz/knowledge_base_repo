@@ -77,15 +77,31 @@ def build_mental_models(ctx, persona_id: str, json_path: str, rebuild: bool, val
         if result.success:
             click.echo(f"✅ Mental models index built successfully!")
             click.echo(f"   Documents indexed: {result.documents_indexed}")
+            if result.documents_processed > result.documents_indexed:
+                skipped = result.documents_processed - result.documents_indexed
+                click.echo(f"   Documents skipped: {skipped} (validation errors)")
             click.echo(f"   Processing time: {result.indexing_duration_seconds:.2f}s")
             if result.index_size_mb > 0:
                 click.echo(f"   Index size: {result.index_size_mb:.1f} MB")
-        elif result.partial_success:
-            click.echo(f"⚠️ Partial success: {result.get_summary()}")
-            if verbose and result.warnings:
+            if result.warnings and verbose:
                 click.echo("Warnings:")
                 for warning in result.warnings:
                     click.echo(f"   - {warning}")
+        elif result.partial_success:
+            click.echo(f"⚠️ Mental models index built with warnings!")
+            click.echo(f"   Documents indexed: {result.documents_indexed}")
+            if result.documents_processed > result.documents_indexed:
+                skipped = result.documents_processed - result.documents_indexed
+                click.echo(f"   Documents skipped: {skipped} (validation errors)")
+            click.echo(f"   Processing time: {result.indexing_duration_seconds:.2f}s")
+            if result.index_size_mb > 0:
+                click.echo(f"   Index size: {result.index_size_mb:.1f} MB")
+            if result.warnings:
+                click.echo("Warnings:")
+                for warning in result.warnings[:10]:  # Show first 10 warnings
+                    click.echo(f"   - {warning}")
+                if len(result.warnings) > 10:
+                    click.echo(f"   ... and {len(result.warnings) - 10} more warnings")
         else:
             click.echo(f"❌ Failed to build mental models index")
             if result.errors:
@@ -147,15 +163,31 @@ def build_core_beliefs(ctx, persona_id: str, json_path: str, rebuild: bool, vali
         if result.success:
             click.echo(f"✅ Core beliefs index built successfully!")
             click.echo(f"   Documents indexed: {result.documents_indexed}")
+            if result.documents_processed > result.documents_indexed:
+                skipped = result.documents_processed - result.documents_indexed
+                click.echo(f"   Documents skipped: {skipped} (validation errors)")
             click.echo(f"   Processing time: {result.indexing_duration_seconds:.2f}s")
             if result.index_size_mb > 0:
                 click.echo(f"   Index size: {result.index_size_mb:.1f} MB")
-        elif result.partial_success:
-            click.echo(f"⚠️ Partial success: {result.get_summary()}")
-            if verbose and result.warnings:
+            if result.warnings and verbose:
                 click.echo("Warnings:")
                 for warning in result.warnings:
                     click.echo(f"   - {warning}")
+        elif result.partial_success:
+            click.echo(f"⚠️ Core beliefs index built with warnings!")
+            click.echo(f"   Documents indexed: {result.documents_indexed}")
+            if result.documents_processed > result.documents_indexed:
+                skipped = result.documents_processed - result.documents_indexed
+                click.echo(f"   Documents skipped: {skipped} (validation errors)")
+            click.echo(f"   Processing time: {result.indexing_duration_seconds:.2f}s")
+            if result.index_size_mb > 0:
+                click.echo(f"   Index size: {result.index_size_mb:.1f} MB")
+            if result.warnings:
+                click.echo("Warnings:")
+                for warning in result.warnings[:10]:  # Show first 10 warnings
+                    click.echo(f"   - {warning}")
+                if len(result.warnings) > 10:
+                    click.echo(f"   ... and {len(result.warnings) - 10} more warnings")
         else:
             click.echo(f"❌ Failed to build core beliefs index")
             if result.errors:
@@ -544,15 +576,31 @@ def build_mental_models_auto(ctx, persona_id: str, rebuild: bool, validate: bool
         if result.success:
             click.echo(f"✅ Mental models index built successfully!")
             click.echo(f"   Documents indexed: {result.documents_indexed}")
+            if result.documents_processed > result.documents_indexed:
+                skipped = result.documents_processed - result.documents_indexed
+                click.echo(f"   Documents skipped: {skipped} (validation errors)")
             click.echo(f"   Processing time: {result.indexing_duration_seconds:.2f}s")
             if result.index_size_mb > 0:
                 click.echo(f"   Index size: {result.index_size_mb:.1f} MB")
-        elif result.partial_success:
-            click.echo(f"⚠️ Partial success: {result.get_summary()}")
-            if verbose and result.warnings:
+            if result.warnings and verbose:
                 click.echo("Warnings:")
                 for warning in result.warnings:
                     click.echo(f"   - {warning}")
+        elif result.partial_success:
+            click.echo(f"⚠️ Mental models index built with warnings!")
+            click.echo(f"   Documents indexed: {result.documents_indexed}")
+            if result.documents_processed > result.documents_indexed:
+                skipped = result.documents_processed - result.documents_indexed
+                click.echo(f"   Documents skipped: {skipped} (validation errors)")
+            click.echo(f"   Processing time: {result.indexing_duration_seconds:.2f}s")
+            if result.index_size_mb > 0:
+                click.echo(f"   Index size: {result.index_size_mb:.1f} MB")
+            if result.warnings:
+                click.echo("Warnings:")
+                for warning in result.warnings[:10]:  # Show first 10 warnings
+                    click.echo(f"   - {warning}")
+                if len(result.warnings) > 10:
+                    click.echo(f"   ... and {len(result.warnings) - 10} more warnings")
         else:
             click.echo(f"❌ Failed to build mental models index")
             if result.errors:
@@ -606,15 +654,31 @@ def build_core_beliefs_auto(ctx, persona_id: str, rebuild: bool, validate: bool,
         if result.success:
             click.echo(f"✅ Core beliefs index built successfully!")
             click.echo(f"   Documents indexed: {result.documents_indexed}")
+            if result.documents_processed > result.documents_indexed:
+                skipped = result.documents_processed - result.documents_indexed
+                click.echo(f"   Documents skipped: {skipped} (validation errors)")
             click.echo(f"   Processing time: {result.indexing_duration_seconds:.2f}s")
             if result.index_size_mb > 0:
                 click.echo(f"   Index size: {result.index_size_mb:.1f} MB")
-        elif result.partial_success:
-            click.echo(f"⚠️ Partial success: {result.get_summary()}")
-            if verbose and result.warnings:
+            if result.warnings and verbose:
                 click.echo("Warnings:")
                 for warning in result.warnings:
                     click.echo(f"   - {warning}")
+        elif result.partial_success:
+            click.echo(f"⚠️ Core beliefs index built with warnings!")
+            click.echo(f"   Documents indexed: {result.documents_indexed}")
+            if result.documents_processed > result.documents_indexed:
+                skipped = result.documents_processed - result.documents_indexed
+                click.echo(f"   Documents skipped: {skipped} (validation errors)")
+            click.echo(f"   Processing time: {result.indexing_duration_seconds:.2f}s")
+            if result.index_size_mb > 0:
+                click.echo(f"   Index size: {result.index_size_mb:.1f} MB")
+            if result.warnings:
+                click.echo("Warnings:")
+                for warning in result.warnings[:10]:  # Show first 10 warnings
+                    click.echo(f"   - {warning}")
+                if len(result.warnings) > 10:
+                    click.echo(f"   ... and {len(result.warnings) - 10} more warnings")
         else:
             click.echo(f"❌ Failed to build core beliefs index")
             if result.errors:

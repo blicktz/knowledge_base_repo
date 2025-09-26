@@ -127,9 +127,9 @@ class BaseKnowledgeBuilder(ABC):
         required_fields = self.get_required_fields()
         for field in required_fields:
             if field not in item:
-                errors.append(f"Item {index} missing required field: {field}")
+                errors.append(f"Item {index} missing required field: {field} (will be skipped)")
             elif not item[field]:
-                errors.append(f"Item {index} has empty required field: {field}")
+                errors.append(f"Item {index} has empty required field: {field} (will be skipped)")
         
         return errors
     

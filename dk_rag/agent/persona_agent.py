@@ -109,6 +109,74 @@ class LangChainPersonaAgent:
         
         return pre_model_hook
     
+    def _validate_tool_calls(self, message) -> bool:
+        """
+        Validate tool calls to prevent concatenated or malformed tool names.
+        Returns True if valid, False if invalid.
+        """
+        if not hasattr(message, 'tool_calls') or not message.tool_calls:
+            return True  # No tool calls to validate
+        
+        valid_tool_names = {'retrieve_mental_models', 'retrieve_core_beliefs', 'retrieve_transcripts'}
+        
+        for tool_call in message.tool_calls:
+            tool_name = tool_call.get('name', '')
+            
+            # Check for concatenated tool names (e.g., "retrieve_transcriptsretrieve_transcripts")
+            if tool_name not in valid_tool_names:
+                self.logger.error(f"INVALID TOOL CALL DETECTED: '{tool_name}'")
+                self.logger.error(f"Valid tools are: {valid_tool_names}")
+                
+                # Check if it's a concatenation
+                for valid_name in valid_tool_names:
+                    if valid_name in tool_name and tool_name != valid_name:
+                        self.logger.error(f"Tool name appears to be concatenated. Contains '{valid_name}' but full name is '{tool_name}'")
+                
+                return False
+            
+            # Check tool call arguments
+            if 'args' not in tool_call:
+                self.logger.error(f"Tool call missing 'args': {tool_call}")
+                return False
+            
+            # Validate query parameter exists
+            args = tool_call.get('args', {})
+            if 'query' not in args:
+                self.logger.error(f"Tool call missing 'query' parameter: {tool_call}")
+                return False
+        
+        # Log successful validation
+        tool_names = [tc.get('name') for tc in message.tool_calls]
+        self.logger.info(f"Tool calls validated successfully: {tool_names}")
+        return True
+    
+    def _check_tool_usage_policy(self, messages_history: List, intent_type: str) -> bool:
+        """
+        Check if tools were used when required based on intent type.
+        Returns True if policy is satisfied, False if violated.
+        """
+        # conversational_exchange is the only intent that doesn't require tools
+        if intent_type == 'conversational_exchange':
+            return True  # No tools required
+        
+        # For all other intents, check if at least one tool was called
+        tools_called = []
+        for msg in messages_history:
+            if hasattr(msg, 'tool_calls') and msg.tool_calls:
+                for tool_call in msg.tool_calls:
+                    tool_name = tool_call.get('name', '')
+                    if tool_name in {'retrieve_mental_models', 'retrieve_core_beliefs', 'retrieve_transcripts'}:
+                        tools_called.append(tool_name)
+        
+        if not tools_called:
+            self.logger.error(f"TOOL USAGE POLICY VIOLATION: No tools were called for intent_type='{intent_type}'")
+            self.logger.error(f"Expected at least one tool call for non-conversational queries")
+            return False
+        
+        self.logger.info(f"Tool usage policy satisfied: {len(tools_called)} tool(s) called for intent_type='{intent_type}'")
+        self.logger.info(f"Tools used: {tools_called}")
+        return True
+    
     def _create_agent(self, query_analysis: Optional[Dict[str, Any]] = None, persona_data: Optional[Dict[str, Any]] = None):
         """Create ReAct agent with tools and memory, optionally with query analysis and persona data context"""
         
@@ -131,17 +199,45 @@ class LangChainPersonaAgent:
         
         persona_name = self.persona_id.replace('_', ' ').title()
         
+        # Determine if tools are mandatory based on intent type
+        intent_type = query_analysis.get('intent_type', '') if query_analysis else ''
+        
+        if intent_type != 'conversational_exchange':
+            tool_enforcement = """
+## ⚠️ MANDATORY TOOL USAGE FOR THIS QUERY ⚠️
+
+**CRITICAL: This query requires tool usage.**
+
+You MUST call at least ONE tool before providing your final answer. The intent type of this query requires you to retrieve information from your knowledge base.
+
+**DO NOT skip tools.** Even if you think you know the answer from earlier in the conversation, you MUST retrieve fresh information from the tools to ensure authenticity, accuracy, and to ground your response in your actual experience.
+
+**If you attempt to provide a Final Answer without calling any tools first, the system will reject your response as a policy violation.**
+
+Follow the tool calling sequence specified in your reasoning process below based on the intent type.
+
+"""
+        else:
+            tool_enforcement = """
+## TOOL USAGE: OPTIONAL FOR THIS QUERY
+
+This query appears to be simple conversational exchange (greetings like "hi/hello/thanks" or brief acknowledgments like "ok/got it"). 
+
+You may skip tools and respond directly ONLY if this is genuinely just small talk with no substantive content.
+
+"""
+        
         # Build query analysis section if available
         query_context = ""
         if query_analysis:
             core_task = query_analysis.get('core_task', '')
-            intent_type = query_analysis.get('intent_type', '')
+            intent_type_display = query_analysis.get('intent_type', '')
             user_context_summary = query_analysis.get('user_context_summary', '')
             
             query_context = f"""
 USER QUERY ANALYSIS:
 - Core Task: {core_task}
-- Intent Type: {intent_type}
+- Intent Type: {intent_type_display}
 - User Context: {user_context_summary if user_context_summary else 'None provided'}
 
 """
@@ -187,6 +283,8 @@ PERSONA LINGUISTIC PROFILE:
 """
         
         system_prompt = f"""You are a virtual AI persona of {persona_name}. Your goal is to respond authentically as {persona_name} would, using their tone, style, knowledge, and problem-solving approach. You will reason and act according to the ReAct framework (Thought, Action, Observation).
+
+{tool_enforcement}
 
 ## CONTEXT PROVIDED FOR THIS TURN ##
 
@@ -271,43 +369,72 @@ Before calling ANY retrieval tool, you MUST follow these query formulation rules
 ❌ BAD: "customer acquisition" (2 words, no context)
 ✅ GOOD: "proven strategies and tactical frameworks for acquiring first 50 customers for early-stage AI voice call answering SAAS startup business" (18 words, rich context)
 
+
+## CRITICAL TOOL USAGE RULES ##
+
+**YOU MUST FOLLOW THESE RULES EXACTLY:**
+
+1. **ONE TOOL AT A TIME**: Call ONLY ONE tool per Action. NEVER call multiple tools simultaneously.
+2. **WAIT FOR OBSERVATION**: After calling a tool, you MUST wait for the Observation before taking another Action.
+3. **EXACT TOOL NAMES**: Use EXACTLY these tool names:
+   - `retrieve_mental_models` (NOT retrieve_mental_modelsretrieve_mental_models)
+   - `retrieve_core_beliefs` (NOT retrieve_core_beliefsretrieve_core_beliefs)
+   - `retrieve_transcripts` (NOT retrieve_transcriptsretrieve_transcripts)
+4. **PROPER FORMAT**: Each tool call must be in the correct format with the tool name as a single, non-repeated string.
+5. **NO CONCATENATION**: Do NOT concatenate or repeat tool names. Each tool name appears ONCE per call.
+
+If you violate these rules, the system will reject your tool call with an error.
+
+
 ## YOUR REASONING PROCESS (Thought) ##
 
 Your 'Thought' process must be a structured, internal monologue that follows these steps:
 
-**Step 1: ANALYZE INTENT & FORMULATE DETAILED RETRIEVAL PLAN.**
+**Step 1: ANALYZE INTENT & FORMULATE RETRIEVAL PLAN.**
 - Examine the `<user_query_analysis>` provided above. Your plan will be based directly on the `intent_type`.
-- **CRITICAL: Before stating your plan, FIRST extract key query elements:**
+- **IMPORTANT**: You will call tools ONE AT A TIME, in SEQUENCE. Not all at once.
+- **Extract key query elements:**
   1. Main goal/action from `core_task`
   2. Industry/domain from `user_context_summary`
   3. Specific constraints/numbers from `user_context_summary`
   4. Intent-driven keywords based on `intent_type`
 
-- **Formulate your plan according to these rules:**
+- **Formulate your plan according to these rules (call tools sequentially):**
 
-    - **If `intent_type` is `instructional_inquiry`:** The user needs a process. Your plan MUST be:
-      * Use `retrieve_mental_models` with a PROCESS-ORIENTED query (10-20 words) including: goal + methodology keywords + industry context + user specifics
-      * Use `retrieve_transcripts` with 2-3 EXAMPLE-ORIENTED query variants (10-20 words each) including: "examples of", "case studies" + goal + industry + outcomes
-      * Example thought: "I will search mental models using: 'proven strategies frameworks and systematic approaches for acquiring first 50 customers for AI SAAS voice call answering startup business' and transcripts using variants: 'real world examples case studies of getting first customers for SAAS startup' and 'stories experiences about finding initial users and early traction for AI services'"
+    - **If `intent_type` is `instructional_inquiry`:** [TOOLS MANDATORY] The user needs a process.
+      * ⚠️ REQUIRED: You MUST call tools for this intent type
+      * FIRST, call `retrieve_mental_models` with a PROCESS-ORIENTED query - MANDATORY
+      * THEN, after receiving results, call `retrieve_transcripts` for examples - MANDATORY
+      * Call tools ONE AT A TIME in this order
+      * Example thought: "I will FIRST call retrieve_mental_models with: 'proven strategies frameworks for acquiring first 50 customers for AI SAAS startup', then WAIT for results, then call retrieve_transcripts for examples"
 
-    - **If `intent_type` is `principled_inquiry`:** The user wants your opinion or philosophy. Your plan MUST be:
-      * Use `retrieve_core_beliefs` with a PRINCIPLE-ORIENTED query (8-15 words) including: "beliefs about", "philosophy on" + topic + strategic context
-      * Use `retrieve_transcripts` with 2 ILLUSTRATIVE query variants including: "why I believe", "reasons for" + topic + anecdotes
-      * Example thought: "I will search core beliefs using: 'core beliefs and principles about customer acquisition strategy for early-stage startups' and transcripts using: 'reasons and rationale behind customer acquisition approaches' and 'why I prioritize certain customer acquisition tactics'"
+    - **If `intent_type` is `principled_inquiry`:** [TOOLS MANDATORY] The user wants your opinion or philosophy.
+      * ⚠️ REQUIRED: You MUST call tools for this intent type
+      * FIRST, call `retrieve_core_beliefs` with a PRINCIPLE-ORIENTED query - MANDATORY
+      * THEN, after receiving results, call `retrieve_transcripts` for illustrative stories - MANDATORY
+      * Call tools ONE AT A TIME in this order
+      * Example thought: "I will FIRST call retrieve_core_beliefs with: 'core beliefs about customer acquisition for startups', then WAIT for results, then call retrieve_transcripts"
 
-    - **If `intent_type` is `factual_inquiry`:** The user needs a specific fact or example. Your plan should:
-      * Primarily use `retrieve_transcripts` with 2-3 SPECIFIC query variants (10-20 words) targeting the exact information
-      * Include: specific keywords + context + desired outcome/metric
-      * Example thought: "I will search transcripts using specific variants: 'specific example of [exact topic] with [outcome]' and '[topic] case study with numbers and metrics'"
+    - **If `intent_type` is `factual_inquiry`:** [TOOLS MANDATORY] The user needs a specific fact or example.
+      * ⚠️ REQUIRED: You MUST call tools for this intent type
+      * FIRST, call `retrieve_transcripts` with a SPECIFIC query - MANDATORY
+      * If more context needed, THEN call other tools after receiving first results
+      * Call tools ONE AT A TIME
+      * Example thought: "I will FIRST call retrieve_transcripts with: 'specific proven lead magnet examples that worked with metrics and results'"
 
-    - **If `intent_type` is `creative_task`:** The user wants you to create something. Your plan MUST be:
-      * Use ALL THREE tools with comprehensive queries
-      * Mental models: Process/framework for the creation task
-      * Core beliefs: Principles guiding the creation
-      * Transcripts: Examples and templates for inspiration
-      * All queries should be 10-20 words with full context
+    - **If `intent_type` is `creative_task`:** [TOOLS MANDATORY - ALL THREE] The user wants you to create something (email, copy, plan, etc.).
+      * ⚠️ REQUIRED: You MUST call ALL THREE tools for this intent type
+      * FIRST, call `retrieve_mental_models` for framework - MANDATORY
+      * THEN, call `retrieve_core_beliefs` for principles - MANDATORY
+      * FINALLY, call `retrieve_transcripts` for examples - MANDATORY
+      * Call tools ONE AT A TIME in this specific order
+      * DO NOT SKIP - All three tools are required for authentic creative output
+      * Example thought: "I will FIRST call retrieve_mental_models for email writing frameworks, THEN retrieve_core_beliefs for my philosophy on direct response copy, FINALLY retrieve_transcripts for proven email examples"
 
-    - **If `intent_type` is `conversational_exchange`:** The user is making small talk. Your plan is simple: DO NOT use any tools. Proceed directly to a Final Answer.
+    - **If `intent_type` is `conversational_exchange`:** [TOOLS OPTIONAL] The user is making simple small talk.
+      * This is the ONLY case where you may skip tools
+      * Examples: "hi", "hello", "thanks", "ok", "got it"
+      * If there is ANY substantive question or request, treat it as a different intent type and use tools
 
 - **IN YOUR THOUGHT, explicitly state the exact query strings you will use for each tool call.** Do not just say "I will search mental models" - say "I will search mental models using the query: '[full expanded query here]'"
 
@@ -510,6 +637,9 @@ User Query: "Hey Greg, I'm building an AI voice-call answering service and I'm t
             
             # Stream the agent's execution for real-time feedback
             response_content = ""
+            invalid_tool_call_detected = False
+            all_messages = []  # Track all messages for policy validation
+            
             for step in agent_executor.stream(
                 {"messages": messages}, 
                 config=config, 
@@ -517,16 +647,37 @@ User Query: "Hey Greg, I'm building an AI voice-call answering service and I'm t
             ):
                 # Get the latest message
                 if step["messages"]:
+                    all_messages = step["messages"]  # Keep track of full message history
                     latest_message = step["messages"][-1]
                     
-                    # Log tool calls for debugging
+                    # Validate tool calls before proceeding
                     if hasattr(latest_message, 'tool_calls') and latest_message.tool_calls:
+                        if not self._validate_tool_calls(latest_message):
+                            invalid_tool_call_detected = True
+                            self.logger.error(f"Invalid tool call detected. Stopping agent execution.")
+                            self.logger.error(f"Latest message: {latest_message}")
+                            break
+                        
+                        # Log valid tool calls
                         for tool_call in latest_message.tool_calls:
                             self.logger.info(f"Tool called: {tool_call['name']}")
                     
                     # Capture the final AI response
                     if latest_message.type == 'ai' and latest_message.content:
                         response_content = latest_message.content
+            
+            # Handle invalid tool calls
+            if invalid_tool_call_detected:
+                error_response = f"I apologize, but I encountered a technical issue with tool selection. Let me try to answer your question directly based on my knowledge."
+                self.logger.warning("Returning error response due to invalid tool call")
+                return error_response
+            
+            # Validate tool usage policy after execution
+            intent_type = query_analysis.get('intent_type', '')
+            if not self._check_tool_usage_policy(all_messages, intent_type):
+                self.logger.warning(f"Tool usage policy violated for intent_type='{intent_type}'")
+                # Log the violation but still return the response
+                # In production, you might want to retry or force tool usage
             
             if not response_content:
                 # Fallback if no response captured
@@ -597,6 +748,7 @@ User Query: "Hey Greg, I'm building an AI voice-call answering service and I'm t
             # Use astream_events for real token streaming (LangGraph bug workaround)
             self.logger.info("DEBUG: Starting astream_events for token streaming")
             token_count = 0
+            invalid_tool_detected = False
             
             async for event in agent_executor.astream_events(
                 {"messages": messages},
@@ -606,8 +758,21 @@ User Query: "Hey Greg, I'm building an AI voice-call answering service and I'm t
                 # Log all events for debugging
                 event_type = event.get("event", "unknown")
                 
+                # Validate tool calls
+                if event_type == "on_tool_start":
+                    tool_name = event["data"].get("name", "unknown_tool")
+                    valid_tools = {'retrieve_mental_models', 'retrieve_core_beliefs', 'retrieve_transcripts'}
+                    
+                    if tool_name not in valid_tools:
+                        self.logger.error(f"INVALID TOOL CALL in streaming: '{tool_name}'")
+                        invalid_tool_detected = True
+                        yield f"\n\n[Error: Invalid tool call detected. Please retry your request.]"
+                        break
+                    
+                    self.logger.info(f"Tool called: {tool_name}")
+                
                 # Filter for LLM token streaming events
-                if event_type == "on_chat_model_stream":
+                if event_type == "on_chat_model_stream" and not invalid_tool_detected:
                     chunk = event["data"]["chunk"]
                     
                     # Extract content from different chunk formats
@@ -626,11 +791,6 @@ User Query: "Hey Greg, I'm building an AI voice-call answering service and I'm t
                         token_count += 1
                         self.logger.info(f"DEBUG: Streaming token #{token_count}: '{content[:20]}{'...' if len(content) > 20 else ''}'")
                         yield content
-                
-                # Log tool calls for debugging
-                elif event_type == "on_tool_start":
-                    tool_name = event["data"].get("name", "unknown_tool")
-                    self.logger.info(f"Tool called: {tool_name}")
                 
                 # Log other significant events
                 elif event_type in ["on_chat_model_start", "on_chat_model_end"]:
@@ -688,6 +848,7 @@ User Query: "Hey Greg, I'm building an AI voice-call answering service and I'm t
             # Track state using node transitions
             current_node = None
             emitted_tools = set()
+            tools_called_list = []  # Track which tools were called for validation
             first_final_answer = True
             
             # Stream using messages mode with metadata
@@ -708,6 +869,10 @@ User Query: "Hey Greg, I'm building an AI voice-call answering service and I'm t
                         for tool_call in chunk.tool_calls:
                             tool_name = tool_call.get('name', 'unknown_tool')
                             tool_id = tool_call.get('id', '')
+                            
+                            # Track tools for policy validation
+                            if tool_name in {'retrieve_mental_models', 'retrieve_core_beliefs', 'retrieve_transcripts'}:
+                                tools_called_list.append(tool_name)
                             
                             # Only emit once per unique tool call
                             if tool_id and tool_id not in emitted_tools:
@@ -739,6 +904,13 @@ User Query: "Hey Greg, I'm building an AI voice-call answering service and I'm t
                                 first_final_answer = False
                 
                 current_node = langgraph_node
+            
+            # Validate tool usage policy after streaming completes
+            intent_type = query_analysis.get('intent_type', '')
+            if intent_type != 'conversational_exchange' and not tools_called_list:
+                self.logger.error(f"TOOL USAGE POLICY VIOLATION in streaming: No tools called for intent_type='{intent_type}'")
+            elif tools_called_list:
+                self.logger.info(f"Tool usage policy satisfied in streaming: {len(tools_called_list)} tool(s) called - {tools_called_list}")
             
             self.logger.info("Structured streaming completed successfully")
             
