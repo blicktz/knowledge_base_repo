@@ -687,7 +687,8 @@ User Query: "Hey Greg, I'm building an AI voice-call answering service and I'm t
             
             # Track state using node transitions
             current_node = None
-            agent_has_tool_calls = False
+            emitted_tools = set()
+            first_final_answer = True
             
             # Stream using messages mode with metadata
             async for chunk, metadata in agent_executor.astream(
@@ -697,34 +698,28 @@ User Query: "Hey Greg, I'm building an AI voice-call answering service and I'm t
             ):
                 langgraph_node = metadata.get("langgraph_node", "")
                 
-                # Tool node - emit tool events
-                if langgraph_node == "tools":
-                    if hasattr(chunk, 'name'):
-                        # Tool call message
-                        yield StreamEvent(
-                            event_type="tool_call",
-                            content=f"🔍 Using {chunk.name}...",
-                            metadata={"tool_name": chunk.name}
-                        )
-                    elif hasattr(chunk, 'content'):
-                        # Tool result message
-                        tool_name = getattr(chunk, 'name', 'tool')
-                        yield StreamEvent(
-                            event_type="tool_result",
-                            content=f"✅ Tool completed",
-                            metadata={"output": str(chunk.content)[:200]}
-                        )
-                
                 # Agent node - check if this is thinking or final answer
-                elif langgraph_node == "agent":
+                if langgraph_node == "agent":
                     # Check if message has tool calls (indicating thinking/planning phase)
                     has_tool_calls = hasattr(chunk, 'tool_calls') and chunk.tool_calls
                     
                     if has_tool_calls:
-                        # This is a thinking/reasoning message (agent is planning to use tools)
-                        agent_has_tool_calls = True
+                        # Extract and emit tool call events for each unique tool
+                        for tool_call in chunk.tool_calls:
+                            tool_name = tool_call.get('name', 'unknown_tool')
+                            tool_id = tool_call.get('id', '')
+                            
+                            # Only emit once per unique tool call
+                            if tool_id and tool_id not in emitted_tools:
+                                emitted_tools.add(tool_id)
+                                yield StreamEvent(
+                                    event_type="tool_call",
+                                    content=f"Using {tool_name}",
+                                    metadata={"tool_name": tool_name, "tool_id": tool_id}
+                                )
+                        
+                        # Emit thinking content if present
                         if hasattr(chunk, 'content') and chunk.content:
-                            # Some models stream thinking content
                             yield StreamEvent(
                                 event_type="thinking",
                                 content=chunk.content if isinstance(chunk.content, str) else "",
@@ -732,15 +727,16 @@ User Query: "Hey Greg, I'm building an AI voice-call answering service and I'm t
                             )
                     else:
                         # No tool calls = final answer
-                        # Stream the content as final answer
                         if hasattr(chunk, 'content'):
                             content = chunk.content if isinstance(chunk.content, str) else ""
                             if content:
+                                # Signal to clear tools on first final answer chunk
                                 yield StreamEvent(
                                     event_type="final_answer",
                                     content=content,
-                                    metadata={"phase": "response"}
+                                    metadata={"phase": "response", "clear_tools": first_final_answer}
                                 )
+                                first_final_answer = False
                 
                 current_node = langgraph_node
             

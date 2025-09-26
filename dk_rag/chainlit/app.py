@@ -152,7 +152,7 @@ async def on_message(message: cl.Message):
                 
             elif stream_event.event_type == "tool_call":
                 tool_name = stream_event.metadata.get("tool_name", "unknown")
-                tool_id = id(stream_event)
+                tool_id = stream_event.metadata.get("tool_id", id(stream_event))
                 
                 tool_step = cl.Step(name=f"🔍 {tool_name}", type="tool")
                 tool_step.start = True
@@ -161,32 +161,22 @@ async def on_message(message: cl.Message):
                 tool_steps[tool_id] = tool_step
                 await tool_step.send()
                 
-            elif stream_event.event_type == "tool_result":
-                tool_output = stream_event.metadata.get("output", "")
-                
-                # Update most recent tool step
-                if tool_steps:
-                    tool_step = list(tool_steps.values())[-1]
-                    tool_step.output = f"{stream_event.content}\n\n**Result:**\n{tool_output}"
-                    tool_step.end = True
-                    await tool_step.update()
-                
             elif stream_event.event_type == "final_answer":
+                # Remove all tool steps when final answer starts
+                if stream_event.metadata.get("clear_tools", False):
+                    for tool_step in tool_steps.values():
+                        await tool_step.remove()
+                    tool_steps.clear()
+                    
+                    if thinking_step:
+                        await thinking_step.remove()
+                        thinking_step = None
+                
                 if not final_message:
                     final_message = cl.Message(content="")
                     await final_message.send()
                 
                 await final_message.stream_token(stream_event.content)
-        
-        # Finalize steps
-        if thinking_step:
-            thinking_step.end = True
-            await thinking_step.update()
-        
-        for tool_step in tool_steps.values():
-            if not tool_step.end:
-                tool_step.end = True
-                await tool_step.update()
         
         if final_message:
             await final_message.update()
