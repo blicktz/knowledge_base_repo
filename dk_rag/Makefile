@@ -22,7 +22,7 @@ CACHE_DIR := $(STORAGE_BASE_DIR)/cache
 VECTOR_DB_DIR := $(STORAGE_BASE_DIR)/vector_db
 
 # Default persona name for extraction
-PERSONA_NAME ?= Nick_Theriot_Youtuber
+PERSONA_NAME ?= nick_theriot_youtuber
 
 # Search query for testing
 SEARCH_QUERY ?= "mental models for productivity"

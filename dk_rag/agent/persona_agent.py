@@ -651,8 +651,8 @@ User Query: "Hey Greg, I'm building an AI voice-call answering service and I'm t
         """
         Process a user query with structured streaming events for UI organization.
         
-        This method yields StreamEvent objects that categorize different types
-        of agent activity (thinking, tool calls, final answer) for better UI presentation.
+        Uses LangGraph's stream_mode="messages" with node metadata to properly
+        separate thinking/reasoning from final answers.
         
         Args:
             user_query: The user's input query
@@ -663,20 +663,14 @@ User Query: "Hey Greg, I'm building an AI voice-call answering service and I'm t
         """
         self.logger.info(f"Processing query (structured streaming): {user_query[:100]}...")
         
-        # Generate session ID if not provided
         if not session_id:
             session_id = str(uuid.uuid4())
         
-        # Step 1: Always analyze the query first (preprocessing)
+        # Analyze query and load persona data
         query_analysis = self._analyze_query(user_query)
-        
-        # Step 2: Load persona data (static context)
         persona_data = self._load_persona_data()
-        
-        # Step 3: Create agent with query analysis and persona data context for better reasoning
         agent_executor = self._create_agent(query_analysis, persona_data)
         
-        # Configure conversation thread
         config = {
             "configurable": {
                 "thread_id": session_id,
@@ -691,188 +685,66 @@ User Query: "Hey Greg, I'm building an AI voice-call answering service and I'm t
         try:
             messages = [HumanMessage(content=user_query)]
             
-            # Track current state
-            current_thinking_content = ""
-            in_final_answer = False
-            tool_calls_active = {}  # Track active tool calls
-            FINAL_ANSWER_ACTION = "Final Answer:"  # ReAct format marker
+            # Track state using node transitions
+            current_node = None
+            agent_has_tool_calls = False
             
-            self.logger.info("DEBUG: Starting structured astream_events")
-            
-            async for event in agent_executor.astream_events(
+            # Stream using messages mode with metadata
+            async for chunk, metadata in agent_executor.astream(
                 {"messages": messages},
                 config=config,
-                version="v2"
+                stream_mode="messages"
             ):
-                event_type = event.get("event", "unknown")
-                event_data = event.get("data", {})
-                event_name = event.get("name", "")
+                langgraph_node = metadata.get("langgraph_node", "")
                 
-                # Log all event types to understand the flow
-                if event_type not in ["on_chat_model_stream"]:  # Don't spam with token events
-                    self.logger.info(f"DEBUG: Event - type: {event_type}, name: '{event_name}'")
+                # Tool node - emit tool events
+                if langgraph_node == "tools":
+                    if hasattr(chunk, 'name'):
+                        # Tool call message
+                        yield StreamEvent(
+                            event_type="tool_call",
+                            content=f"🔍 Using {chunk.name}...",
+                            metadata={"tool_name": chunk.name}
+                        )
+                    elif hasattr(chunk, 'content'):
+                        # Tool result message
+                        tool_name = getattr(chunk, 'name', 'tool')
+                        yield StreamEvent(
+                            event_type="tool_result",
+                            content=f"✅ Tool completed",
+                            metadata={"output": str(chunk.content)[:200]}
+                        )
                 
-                # Tool call start - create step for tool usage
-                if event_type == "on_tool_start":
-                    tool_name = event_data.get("name", "unknown_tool")
-                    tool_input = event_data.get("input", {})
-                    run_id = event.get("run_id", "unknown")
+                # Agent node - check if this is thinking or final answer
+                elif langgraph_node == "agent":
+                    # Check if message has tool calls (indicating thinking/planning phase)
+                    has_tool_calls = hasattr(chunk, 'tool_calls') and chunk.tool_calls
                     
-                    tool_calls_active[run_id] = tool_name
-                    
-                    self.logger.info(f"DEBUG: Tool started - {tool_name}")
-                    yield StreamEvent(
-                        event_type="tool_call",
-                        content=f"🔍 Using {tool_name}...",
-                        metadata={"tool_name": tool_name, "input": tool_input, "run_id": run_id}
-                    )
-                
-                # Tool call end - provide result
-                elif event_type == "on_tool_end":
-                    run_id = event.get("run_id", "unknown")
-                    tool_name = tool_calls_active.get(run_id, "unknown_tool")
-                    tool_output = event_data.get("output", "")
-                    
-                    self.logger.info(f"DEBUG: Tool completed - {tool_name}")
-                    yield StreamEvent(
-                        event_type="tool_result", 
-                        content=f"✅ {tool_name} completed",
-                        metadata={"tool_name": tool_name, "output": str(tool_output)[:200] + "..." if len(str(tool_output)) > 200 else str(tool_output), "run_id": run_id}
-                    )
-                    
-                    # Clean up
-                    if run_id in tool_calls_active:
-                        del tool_calls_active[run_id]
-                
-                # Agent completion - this is the key event for final answer detection
-                elif event_type == "on_end":
-                    # Check if this is the main agent completion
-                    if event_name in ["agent", "agent_executor", "RunnableSequence", ""]:
-                        self.logger.info(f"DEBUG: Main agent completed - extracting final answer from output")
-                        
-                        # Yield any accumulated thinking content first
-                        if current_thinking_content.strip():
-                            self.logger.info("DEBUG: Yielding accumulated thinking before final answer")
+                    if has_tool_calls:
+                        # This is a thinking/reasoning message (agent is planning to use tools)
+                        agent_has_tool_calls = True
+                        if hasattr(chunk, 'content') and chunk.content:
+                            # Some models stream thinking content
                             yield StreamEvent(
                                 event_type="thinking",
-                                content=current_thinking_content.strip(),
+                                content=chunk.content if isinstance(chunk.content, str) else "",
                                 metadata={"phase": "reasoning"}
                             )
-                            current_thinking_content = ""
-                        
-                        # Extract final answer from agent output
-                        output = event_data.get("output", {})
-                        final_content = ""
-                        
-                        if isinstance(output, dict):
-                            # LangGraph agent outputs usually have 'messages' array
-                            messages_output = output.get("messages", [])
-                            if messages_output and isinstance(messages_output, list):
-                                last_message = messages_output[-1]
-                                if hasattr(last_message, 'content'):
-                                    final_content = last_message.content
-                                elif isinstance(last_message, dict):
-                                    final_content = last_message.get('content', '')
-                            
-                            # Fallback to direct content
-                            if not final_content:
-                                final_content = output.get('content', '') or str(output)
-                        else:
-                            final_content = str(output)
-                        
-                        if final_content.strip():
-                            self.logger.info(f"DEBUG: Yielding final answer from agent completion: '{final_content[:100]}...'")
-                            in_final_answer = True
-                            yield StreamEvent(
-                                event_type="final_answer",
-                                content=final_content,
-                                metadata={"phase": "response", "source": "agent_completion"}
-                            )
-                
-                # Chat model streaming - accumulate as thinking content
-                elif event_type == "on_chat_model_stream":
-                    chunk = event_data.get("chunk", {})
-                    
-                    # Extract content from chunk
-                    content = ""
-                    if hasattr(chunk, 'content') and chunk.content:
-                        content = chunk.content
-                    elif isinstance(chunk, dict) and 'content' in chunk:
-                        content = chunk['content']
-                    elif hasattr(chunk, 'choices') and chunk.choices:
-                        choice = chunk.choices[0]
-                        if hasattr(choice, 'delta') and hasattr(choice.delta, 'content'):
-                            content = choice.delta.content or ""
-                    
-                    if content:
-                        # Use proper ReAct parsing logic to detect final answer (matches LangChain's ReActSingleInputOutputParser)
-                        accumulated_content = current_thinking_content + content
-                        
-                        # DEBUG: Log what content we're receiving to understand the format
-                        self.logger.info(f"DEBUG: Received content chunk: '{content[:50]}{'...' if len(content) > 50 else ''}'")
-                        self.logger.info(f"DEBUG: Accumulated content length: {len(accumulated_content)} chars")
-                        self.logger.info(f"DEBUG: Looking for '{FINAL_ANSWER_ACTION}' in accumulated content")
-                        
-                        # Check if we've transitioned to final answer mode
-                        if not in_final_answer and FINAL_ANSWER_ACTION in accumulated_content:
-                            self.logger.info("DEBUG: Detected Final Answer transition")
-                            in_final_answer = True
-                            
-                            # Split content at the Final Answer marker
-                            parts = accumulated_content.split(FINAL_ANSWER_ACTION, 1)
-                            thinking_part = parts[0].strip()
-                            final_answer_part = parts[1] if len(parts) > 1 else ""
-                            
-                            # Yield thinking content before Final Answer
-                            if thinking_part:
-                                self.logger.info("DEBUG: Yielding thinking content before Final Answer")
-                                yield StreamEvent(
-                                    event_type="thinking",
-                                    content=thinking_part,
-                                    metadata={"phase": "reasoning"}
-                                )
-                            
-                            # Start yielding final answer content if any
-                            if final_answer_part.strip():
-                                self.logger.info(f"DEBUG: Yielding initial final answer content: '{final_answer_part[:20]}...'")
+                    else:
+                        # No tool calls = final answer
+                        # Stream the content as final answer
+                        if hasattr(chunk, 'content'):
+                            content = chunk.content if isinstance(chunk.content, str) else ""
+                            if content:
                                 yield StreamEvent(
                                     event_type="final_answer",
-                                    content=final_answer_part,
+                                    content=content,
                                     metadata={"phase": "response"}
                                 )
-                            
-                            # Clear thinking buffer since we've processed it
-                            current_thinking_content = ""
-                            
-                        elif in_final_answer:
-                            # We're in final answer mode - stream all content as final answer
-                            self.logger.info(f"DEBUG: Streaming final answer token: '{content[:20]}...'")
-                            yield StreamEvent(
-                                event_type="final_answer",
-                                content=content,
-                                metadata={"phase": "response"}
-                            )
-                        else:
-                            # Accumulate thinking content
-                            current_thinking_content += content
                 
-            # If we have any remaining thinking content, yield it
-            if current_thinking_content.strip() and not in_final_answer:
-                self.logger.warning("DEBUG: Agent completed without 'Final Answer:' prefix detected!")
-                self.logger.info(f"DEBUG: Final thinking content (first 200 chars): '{current_thinking_content[:200]}...'")
-                self.logger.info(f"DEBUG: Final thinking content (last 200 chars): '...{current_thinking_content[-200:]}'")
-                self.logger.info(f"DEBUG: Does final content contain 'Final Answer:'? {FINAL_ANSWER_ACTION in current_thinking_content}")
-                
-                # FALLBACK: If agent didn't use "Final Answer:" prefix, treat all accumulated content as final answer
-                # This handles cases where Gemini ignores the formatting instruction
-                self.logger.warning("FALLBACK: Treating accumulated content as final answer (missing 'Final Answer:' prefix)")
-                yield StreamEvent(
-                    event_type="final_answer",
-                    content=current_thinking_content.strip(),
-                    metadata={"phase": "response", "source": "fallback_no_prefix"}
-                )
+                current_node = langgraph_node
             
-            self.logger.info("Structured streaming query processing completed successfully")
+            self.logger.info("Structured streaming completed successfully")
             
         except Exception as e:
             self.logger.error(f"Structured streaming query processing failed: {str(e)}", exc_info=True)

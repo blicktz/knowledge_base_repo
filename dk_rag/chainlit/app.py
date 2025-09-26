@@ -135,18 +135,13 @@ async def on_message(message: cl.Message):
     try:
         logger.info(f"Processing message for persona: {persona_id}")
         
-        # Track different components
+        # Track UI components
         thinking_step = None
-        tool_steps = {}  # Track tool steps by run_id
+        tool_steps = {}
         final_message = None
         
-        logger.info("DEBUG: Starting structured streaming from agent")
-        
         async for stream_event in agent.process_query_structured_stream(message.content, session_id):
-            logger.info(f"DEBUG: Received {stream_event.event_type} event")
-            
             if stream_event.event_type == "thinking":
-                # Create a collapsible thinking step
                 if not thinking_step:
                     thinking_step = cl.Step(name="💭 Thinking", type="reasoning")
                     thinking_step.start = True
@@ -156,52 +151,47 @@ async def on_message(message: cl.Message):
                 await thinking_step.update()
                 
             elif stream_event.event_type == "tool_call":
-                # Create a new tool step
                 tool_name = stream_event.metadata.get("tool_name", "unknown")
-                run_id = stream_event.metadata.get("run_id", "unknown")
+                tool_id = id(stream_event)
                 
                 tool_step = cl.Step(name=f"🔍 {tool_name}", type="tool")
                 tool_step.start = True
                 tool_step.output = stream_event.content
                 
-                tool_steps[run_id] = tool_step
+                tool_steps[tool_id] = tool_step
                 await tool_step.send()
                 
             elif stream_event.event_type == "tool_result":
-                # Update the corresponding tool step
-                run_id = stream_event.metadata.get("run_id", "unknown")
                 tool_output = stream_event.metadata.get("output", "")
                 
-                if run_id in tool_steps:
-                    tool_step = tool_steps[run_id]
+                # Update most recent tool step
+                if tool_steps:
+                    tool_step = list(tool_steps.values())[-1]
                     tool_step.output = f"{stream_event.content}\n\n**Result:**\n{tool_output}"
                     tool_step.end = True
                     await tool_step.update()
                 
             elif stream_event.event_type == "final_answer":
-                # Stream the final answer directly to a main message
                 if not final_message:
                     final_message = cl.Message(content="")
                     await final_message.send()
                 
                 await final_message.stream_token(stream_event.content)
         
-        # Finalize all steps
+        # Finalize steps
         if thinking_step:
             thinking_step.end = True
             await thinking_step.update()
         
-        # Ensure tool steps are marked as ended
         for tool_step in tool_steps.values():
             if not tool_step.end:
                 tool_step.end = True
                 await tool_step.update()
         
-        # Final update to main message if it exists
         if final_message:
             await final_message.update()
         
-        logger.info("Structured response sent successfully")
+        logger.info("Response completed successfully")
         
     except Exception as e:
         logger.error(f"Error processing message: {str(e)}", exc_info=True)
