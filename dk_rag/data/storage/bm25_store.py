@@ -89,16 +89,32 @@ class BM25Store:
         
         self.logger.info(f"Building BM25 index for {len(documents)} documents...")
         
+        # Defensive: Filter out None/empty documents
+        valid_documents = []
+        valid_doc_ids = []
+        skipped = 0
+        
+        for i, doc in enumerate(documents):
+            if doc is None or doc == '':
+                skipped += 1
+                self.logger.warning(f"Skipping null/empty document at index {i}")
+                continue
+            valid_documents.append(doc)
+            if doc_ids and i < len(doc_ids):
+                valid_doc_ids.append(doc_ids[i])
+            else:
+                valid_doc_ids.append(str(len(valid_documents) - 1))
+        
+        if skipped > 0:
+            self.logger.warning(f"Filtered out {skipped} null/empty documents before indexing")
+        
         # Store documents and IDs
-        self.doc_texts = documents
-        if doc_ids:
-            self.doc_ids = doc_ids
-        else:
-            self.doc_ids = [str(i) for i in range(len(documents))]
+        self.doc_texts = valid_documents
+        self.doc_ids = valid_doc_ids
         
         # Tokenize documents
         self.logger.debug("Tokenizing documents...")
-        self.tokenized_docs = self.tokenizer.tokenize(documents, return_as="ids")
+        self.tokenized_docs = self.tokenizer.tokenize(valid_documents, return_as="ids")
         
         # Build BM25 index
         self.logger.debug("Creating BM25 index...")

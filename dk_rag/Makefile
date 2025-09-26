@@ -8,7 +8,7 @@ PYTEST := poetry run pytest
 MODULE := dk_rag.cli.persona_builder
 
 # Default paths - customize these for your setup
-DOCS_DIR ?= /Users/blickt/Documents/src/pdf_2_text/content_repo/greg_startup
+DOCS_DIR ?= /Users/blickt/Documents/src/pdf_2_text/content_repo/mfm
 OUTPUT_DIR ?= ./output
 CONFIG_FILE ?= ./config/persona_config.yaml
 PATTERN ?= *.txt
@@ -22,7 +22,7 @@ CACHE_DIR := $(STORAGE_BASE_DIR)/cache
 VECTOR_DB_DIR := $(STORAGE_BASE_DIR)/vector_db
 
 # Default persona name for extraction
-PERSONA_NAME ?= grep_isenberg_startup_guy
+PERSONA_NAME ?= my_first_million_show_hosts
 
 # Search query for testing
 SEARCH_QUERY ?= "mental models for productivity"
@@ -378,6 +378,22 @@ backup: ## Backup personas and knowledge base
 		config/*.yaml \
 		2>/dev/null || true
 	@echo "$(GREEN)✓ Backup created in backups/$(NC)"
+
+# =============================================================================
+# UI TARGETS
+# =============================================================================
+
+.PHONY: ui-chainlit
+ui-chainlit: ## Launch Chainlit chat UI on port 9009
+	@echo "$(BLUE)Starting Chainlit UI on port 9009...$(NC)"
+	@echo "$(YELLOW)Access at: http://localhost:9009$(NC)"
+	@cd .. && poetry run chainlit run dk_rag/chainlit/app.py --port 9009
+
+.PHONY: ui-gradio
+ui-gradio: ## Launch Gradio chat UI on port 7860
+	@echo "$(BLUE)Starting Gradio UI on port 7860...$(NC)"
+	@echo "$(YELLOW)Access at: http://localhost:7860$(NC)"
+	@cd .. && $(PYTHON) dk_rag/ui/gradio_chat.py
 
 # =============================================================================
 # DEVELOPMENT TARGETS

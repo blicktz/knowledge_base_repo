@@ -779,6 +779,7 @@ class KnowledgeIndexer:
             
             # Prepare document texts with progress tracking
             documents = []
+            skipped_null_docs = 0
             self.logger.info(f"Processing documents for BM25 indexing...")
             
             for i, doc_data in enumerate(all_documents):
@@ -786,13 +787,23 @@ class KnowledgeIndexer:
                     progress = (i + 1) / len(all_documents) * 100
                     self.logger.info(f"  Processing documents: {i + 1}/{len(all_documents)} ({progress:.1f}%)")
                 
-                documents.append(doc_data['document'])
+                doc_content = doc_data.get('document')
+                if doc_content is None or doc_content == '':
+                    skipped_null_docs += 1
+                    self.logger.warning(f"Skipping null/empty document at index {i}, id: {doc_data.get('id', 'unknown')}")
+                    continue
+                
+                documents.append(doc_content)
+            
+            # Log skipped documents summary
+            if skipped_null_docs > 0:
+                self.logger.warning(f"Skipped {skipped_null_docs} null/empty documents during BM25 indexing")
             
             # Build BM25 index with progress tracking
-            self.logger.info("Building BM25 index...")
+            self.logger.info(f"Building BM25 index with {len(documents)} valid documents...")
             self.bm25_store.build_index(documents, rebuild=rebuild)
             
-            self.logger.info(f"✅ Successfully built BM25 index for persona '{persona_id}' with {len(documents)} documents")
+            self.logger.info(f"✅ Successfully built BM25 index for persona '{persona_id}' with {len(documents)} documents ({skipped_null_docs} skipped)")
             
         except Exception as e:
             self.logger.error(f"Failed to build Phase 2 indexes: {e}")

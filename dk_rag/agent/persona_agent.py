@@ -4,7 +4,7 @@ Complete rewrite leveraging LangChain's agent framework
 """
 
 import uuid
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, List, Optional, AsyncIterator
 from pathlib import Path
 
 from langchain_litellm import ChatLiteLLM
@@ -516,6 +516,84 @@ User Query: "Hey Greg, I'm building an AI voice-call answering service and I'm t
             # Provide a helpful error response in character
             error_response = f"I'm experiencing some technical difficulties right now. Could you please try rephrasing your question? I want to make sure I give you the best response possible."
             return error_response
+    
+    async def process_query_stream(
+        self, 
+        user_query: str, 
+        session_id: Optional[str] = None
+    ) -> AsyncIterator[str]:
+        """
+        Process a user query with streaming output (async generator).
+        
+        This method yields response chunks as they're generated, enabling
+        real-time streaming UIs like Chainlit to display responses incrementally.
+        
+        Args:
+            user_query: The user's input query
+            session_id: Optional session ID for conversation continuity
+            
+        Yields:
+            Response chunks as strings
+        """
+        self.logger.info(f"Processing query (streaming): {user_query[:100]}...")
+        
+        # Generate session ID if not provided
+        if not session_id:
+            session_id = str(uuid.uuid4())
+        
+        # Step 1: Always analyze the query first (preprocessing)
+        query_analysis = self._analyze_query(user_query)
+        
+        # Step 2: Load persona data (static context)
+        persona_data = self._load_persona_data()
+        
+        # Step 3: Create agent with query analysis and persona data context for better reasoning
+        agent_executor = self._create_agent(query_analysis, persona_data)
+        
+        # Configure conversation thread
+        config = {
+            "configurable": {
+                "thread_id": session_id,
+                "persona_id": self.persona_id,
+                "settings": self.settings,
+                "query_analysis": query_analysis,
+                "rag_query": query_analysis.get('rag_query', user_query)
+            },
+            "max_concurrency": 1
+        }
+        
+        try:
+            messages = [HumanMessage(content=user_query)]
+            
+            # Stream and yield chunks in real-time
+            last_content = ""
+            async for step in agent_executor.astream(
+                {"messages": messages}, 
+                config=config
+            ):
+                if step.get("messages"):
+                    latest_message = step["messages"][-1]
+                    
+                    # Log tool calls for debugging
+                    if hasattr(latest_message, 'tool_calls') and latest_message.tool_calls:
+                        for tool_call in latest_message.tool_calls:
+                            self.logger.info(f"Tool called: {tool_call['name']}")
+                    
+                    # Yield new content chunks
+                    if latest_message.type == 'ai' and latest_message.content:
+                        new_content = latest_message.content
+                        if new_content != last_content:
+                            # Yield only the new part
+                            chunk = new_content[len(last_content):]
+                            if chunk:
+                                yield chunk
+                            last_content = new_content
+            
+            self.logger.info("Streaming query processing completed successfully")
+            
+        except Exception as e:
+            self.logger.error(f"Streaming query processing failed: {str(e)}", exc_info=True)
+            yield f"I'm experiencing some technical difficulties right now. Could you please try rephrasing your question? I want to make sure I give you the best response possible."
     
     def get_conversation_history(self, session_id: str) -> List[Dict[str, Any]]:
         """
