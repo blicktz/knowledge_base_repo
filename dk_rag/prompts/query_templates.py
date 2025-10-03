@@ -87,10 +87,21 @@ def create_query_expansion_prompt(query: str) -> str:
         Query expansion prompt
     """
     return f"""## LANGUAGE HANDLING ##
-CRITICAL: Detect the primary language of the original query and produce ALL query variations in that same detected language.
-- If the query is in Chinese (中文), write all variations in Chinese
-- If the query is in English, write all variations in English
-- Your output language must match the query language, NOT the language this prompt is written in
+CRITICAL: Detect the primary language of the input and produce your ENTIRE output EXCLUSIVELY in that single language.
+
+**STRICT RULES:**
+1. **SINGLE LANGUAGE ONLY**: Use ONLY the detected input language. NO mixing of languages.
+2. **NO TRANSLATIONS**: Do not provide translations, explanations, or parenthetical notes in other languages.
+3. **NO ROMANIZATION**: If input is Chinese, do NOT include Pinyin romanization. If input is English, do NOT include IPA or phonetics.
+4. **ASSUME FLUENT READER**: The reader is a native/fluent speaker of the input language and does not need assistance from other languages.
+
+**Examples:**
+- ✅ CORRECT for Chinese input: "恢复秩序和繁荣"
+- ❌ WRONG for Chinese input: "恢复秩序 (huīfù zhìxù - restore order)"
+- ✅ CORRECT for English input: "Restore order and prosperity"
+- ❌ WRONG for English input: "Restore order (恢复秩序)"
+
+Your output language must match the input language, NOT the language this prompt is written in.
 
 Generate 3 different variations of the following query that would help find relevant information.
 The variations should:
@@ -116,10 +127,21 @@ def create_answer_extraction_prompt(query: str, context: str) -> str:
         Answer extraction prompt
     """
     return f"""## LANGUAGE HANDLING ##
-CRITICAL: Detect the primary language of the user question and context, then produce your ENTIRE answer in that same detected language.
-- If the question is in Chinese (中文), answer in Chinese
-- If the question is in English, answer in English
-- Your answer language must match the question language, NOT the language this prompt is written in
+CRITICAL: Detect the primary language of the input and produce your ENTIRE output EXCLUSIVELY in that single language.
+
+**STRICT RULES:**
+1. **SINGLE LANGUAGE ONLY**: Use ONLY the detected input language. NO mixing of languages.
+2. **NO TRANSLATIONS**: Do not provide translations, explanations, or parenthetical notes in other languages.
+3. **NO ROMANIZATION**: If input is Chinese, do NOT include Pinyin romanization. If input is English, do NOT include IPA or phonetics.
+4. **ASSUME FLUENT READER**: The reader is a native/fluent speaker of the input language and does not need assistance from other languages.
+
+**Examples:**
+- ✅ CORRECT for Chinese input: "恢复秩序和繁荣"
+- ❌ WRONG for Chinese input: "恢复秩序 (huīfù zhìxù - restore order)"
+- ✅ CORRECT for English input: "Restore order and prosperity"
+- ❌ WRONG for English input: "Restore order (恢复秩序)"
+
+Your output language must match the input language, NOT the language this prompt is written in.
 
 Based on the following context, provide a direct and comprehensive answer to the question.
 If the context doesn't contain enough information, indicate what's missing.

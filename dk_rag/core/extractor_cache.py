@@ -13,6 +13,7 @@ from typing import Dict, List, Any, Optional, Tuple, Union
 from ..data.models.persona_constitution import MentalModel, CoreBelief, LinguisticStyle
 from ..config.settings import Settings
 from ..utils.logging import get_logger
+from ..utils.text_utils import count_words
 
 
 class ExtractorCacheManager:
@@ -21,16 +22,18 @@ class ExtractorCacheManager:
     and avoid reprocessing batches when extraction is interrupted
     """
     
-    def __init__(self, settings: Settings, persona_id: str):
+    def __init__(self, settings: Settings, persona_id: str, language: str = "en"):
         """
         Initialize the extractor cache manager
-        
+
         Args:
             settings: Application settings
             persona_id: Identifier for the persona (for multi-tenant isolation)
+            language: Content language ('en', 'zh', etc.)
         """
         self.settings = settings
         self.persona_id = persona_id
+        self.language = language.strip() if language else "en"
         self.logger = get_logger(__name__)
         
         # Setup cache directory
@@ -135,14 +138,14 @@ class ExtractorCacheManager:
                 "extraction_type": extraction_type,
                 "timestamp": datetime.now().isoformat(),
                 "document_count": len(batch_documents),
-                "total_words": sum(len(doc.get('content', '').split()) for doc in batch_documents),
+                "total_words": sum(count_words(doc.get('content', ''), self.language) for doc in batch_documents),
                 "extractor_version": "2.0.0",  # Map-reduce version
                 "model_used": self.settings.map_reduce_extraction.map_phase_model
             },
             "batch_documents": [
                 {
                     "source": doc.get('source', 'unknown'),
-                    "word_count": len(doc.get('content', '').split()),
+                    "word_count": count_words(doc.get('content', ''), self.language),
                     "char_count": len(doc.get('content', ''))
                 }
                 for doc in batch_documents
@@ -245,7 +248,7 @@ class ExtractorCacheManager:
                 "extraction_type": extraction_type,
                 "timestamp": datetime.now().isoformat(),
                 "total_documents": len(all_documents),
-                "total_words": sum(len(doc.get('content', '').split()) for doc in all_documents),
+                "total_words": sum(count_words(doc.get('content', ''), self.language) for doc in all_documents),
                 "consolidation_strategy": consolidation_metadata.get("strategy", "unknown"),
                 "results_count": len(consolidated_results),
                 "extractor_version": "2.0.0",

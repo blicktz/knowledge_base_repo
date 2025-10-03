@@ -32,6 +32,7 @@ from ..core.extractor_cache import ExtractorCacheManager
 from ..config.settings import Settings
 from ..utils.logging import get_logger
 from ..utils.llm_utils import safe_json_loads
+from ..utils.text_utils import count_words
 
 
 class PersonaExtractor:
@@ -61,7 +62,7 @@ class PersonaExtractor:
         self.statistical_analyzer = StatisticalAnalyzer(settings, persona_id, self.language)
         
         # Initialize cache manager for linguistic style caching
-        self.cache_manager = ExtractorCacheManager(settings, persona_id)
+        self.cache_manager = ExtractorCacheManager(settings, persona_id, self.language)
         
         # Initialize map-reduce extractor if enabled
         self.map_reduce_extractor = None
@@ -260,9 +261,9 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
             PersonaConstitution object
         """
         self.extraction_start_time = time.time()
-        
+
         # Estimate total processing time based on content size
-        total_words = sum(len(doc.get('content', '').split()) for doc in documents)
+        total_words = sum(count_words(doc.get('content', ''), self.language) for doc in documents)
         estimated_time = self._estimate_processing_time(total_words, len(documents))
         
         self.logger.info(f"Starting persona extraction from {len(documents)} documents ({total_words:,} words)")

@@ -10,6 +10,7 @@ import uuid
 from typing import List, Dict, Any, Optional
 from ...config.settings import Settings
 from ...utils.logging import get_logger
+from ...utils.text_utils import count_words
 
 # Optional Chinese tokenization
 try:
@@ -103,8 +104,8 @@ class ChunkProcessor:
 
             # Log first 3 documents in detail for Chinese text
             if self.language == "zh" and i <= 3:
-                word_count = len(content.split()) if content else 0
-                self.logger.info(f"Document {i} details: {content_size} chars, ~{word_count} tokens, source: {doc.get('source', 'unknown')[:50]}")
+                word_count = count_words(content, self.language)
+                self.logger.info(f"Document {i} details: {content_size} chars, ~{word_count} words, source: {doc.get('source', 'unknown')[:50]}")
 
             try:
                 # Chunk the document

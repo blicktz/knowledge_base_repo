@@ -84,7 +84,7 @@ class KnowledgeIndexer:
             # Legacy mode - use global components
             self.vector_store = VectorStore(settings)
 
-        self.transcript_loader = TranscriptLoader(settings)
+        self.transcript_loader = TranscriptLoader(settings, self.language)
         self.chunk_processor = ChunkProcessor(settings, language=self.language)
         self.persona_extractor = PersonaExtractor(settings, persona_id, self.language)
         self.statistical_analyzer = StatisticalAnalyzer(settings, persona_id, self.language)

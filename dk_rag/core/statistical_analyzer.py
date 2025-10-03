@@ -23,6 +23,7 @@ from ..data.models.persona_constitution import StatisticalReport, CollocationIte
 from ..config.settings import Settings
 from ..utils.logging import get_logger
 from ..utils.device_manager import get_device_manager
+from ..utils.text_utils import count_words
 from .analysis_cache import AnalysisCacheManager
 
 
@@ -65,7 +66,7 @@ class StatisticalAnalyzer:
         # Initialize cache manager if persona_id provided
         self.cache_manager = None
         if persona_id:
-            self.cache_manager = AnalysisCacheManager(settings, persona_id)
+            self.cache_manager = AnalysisCacheManager(settings, persona_id, self.language)
         
         # Analysis results storage (legacy in-memory cache)
         self.analysis_cache = {}
@@ -169,7 +170,7 @@ class StatisticalAnalyzer:
             # Return minimal empty report
             from ..data.models.persona_constitution import StatisticalReport
             return StatisticalReport(
-                total_words=sum(len(doc.get('content', '').split()) for doc in documents),
+                total_words=sum(count_words(doc.get('content', ''), self.language) for doc in documents),
                 unique_words=0,
                 average_sentence_length=0.0,
                 lexical_diversity=0.0,
@@ -187,10 +188,10 @@ class StatisticalAnalyzer:
         
         # Perform fresh analysis
         self.logger.info(f"Starting {'fresh ' if force_reanalyze else ''}statistical analysis of {len(documents)} documents")
-        
+
         # Combine all text content for most analyses
         all_text = " ".join([doc.get('content', '') for doc in documents])
-        total_words = len(all_text.split())
+        total_words = count_words(all_text, self.language)
         total_sentences = len(sent_tokenize(all_text))
         
         self.logger.info(f"Analyzing {total_words:,} words in {total_sentences:,} sentences")
@@ -538,7 +539,7 @@ class StatisticalAnalyzer:
             patterns['exclamation_ratio'] = len(exclamations) / len(sentences) if sentences else 0
             
             # Sentence length distribution
-            sentence_lengths = [len(s.split()) for s in sentences]
+            sentence_lengths = [count_words(s, self.language) for s in sentences]
             if sentence_lengths:
                 patterns['sentence_length_stats'] = {
                     'min': min(sentence_lengths),
