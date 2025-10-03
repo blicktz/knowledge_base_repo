@@ -15,6 +15,13 @@ import numpy as np
 import bm25s
 from bm25s.tokenization import Tokenizer
 
+# Optional Chinese tokenization
+try:
+    import jieba
+    JIEBA_AVAILABLE = True
+except ImportError:
+    JIEBA_AVAILABLE = False
+
 from ...utils.logging import get_logger
 
 
@@ -31,23 +38,42 @@ class BM25Store:
         index_path: str,
         tokenizer_type: str = "default",
         k1: float = 1.5,
-        b: float = 0.75
+        b: float = 0.75,
+        language: str = "en"
     ):
         """
         Initialize BM25 store.
-        
+
         Args:
             index_path: Path to store/load the index
             tokenizer_type: Type of tokenizer to use
             k1: BM25 k1 parameter (term frequency saturation)
             b: BM25 b parameter (length normalization)
+            language: Language code ('en' for English, 'zh' for Chinese)
         """
         self.index_path = Path(index_path)
         self.index_path.mkdir(parents=True, exist_ok=True)
-        
+
         self.logger = get_logger(__name__)
-        self.tokenizer = Tokenizer(stemmer=None, stopwords="en")
-        
+        self.language = language.strip() if language else "en"
+
+        # Setup language-aware tokenizer
+        if self.language == "zh":
+            if not JIEBA_AVAILABLE:
+                self.logger.warning("jieba not available for Chinese tokenization, falling back to English")
+                self.tokenizer = Tokenizer(stemmer=None, stopwords="en")
+            else:
+                # Create custom tokenizer for Chinese using jieba
+                self.logger.info("Using jieba tokenizer for Chinese language")
+                self.tokenizer = Tokenizer(
+                    stemmer=None,
+                    stopwords="zh",  # Chinese stopwords
+                    splitter=self._jieba_tokenize
+                )
+        else:
+            # Default English tokenizer
+            self.tokenizer = Tokenizer(stemmer=None, stopwords="en")
+
         # BM25 parameters
         self.k1 = k1
         self.b = b
@@ -64,7 +90,20 @@ class BM25Store:
         
         # Try to load existing index
         self._load_index()
-    
+
+    def _jieba_tokenize(self, text: str) -> List[str]:
+        """
+        Tokenize Chinese text using jieba.
+
+        Args:
+            text: Text to tokenize
+
+        Returns:
+            List of tokens
+        """
+        import jieba
+        return list(jieba.cut(text))
+
     def index_exists(self) -> bool:
         """Check if BM25 index exists on disk."""
         return self.index_file.exists() and self.metadata_file.exists()

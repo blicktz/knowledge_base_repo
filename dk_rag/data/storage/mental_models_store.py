@@ -34,20 +34,30 @@ class MentalModelsStore:
         self,
         settings: Settings,
         persona_id: str,
-        embedding_model: str = "sentence-transformers/all-mpnet-base-v2"
+        embedding_model: str = None,
+        language: str = "en"
     ):
         """
         Initialize mental models vector store.
-        
+
         Args:
             settings: Application settings
             persona_id: Unique persona identifier
-            embedding_model: Name of the embedding model to use
+            embedding_model: Name of the embedding model to use (if None, uses language-appropriate model)
+            language: Content language for selecting appropriate embedding model
         """
         self.settings = settings
         self.persona_id = persona_id
-        self.embedding_model = embedding_model
+        self.language = language.strip() if language else "en"
         self.logger = get_component_logger("MMStore", persona_id)
+
+        # Get language-appropriate embedding model if not specified
+        if embedding_model is None:
+            from ...utils.model_manager import get_model_manager
+            model_manager = get_model_manager()
+            embedding_model = model_manager.get_embedding_model_for_language(self.language)
+
+        self.embedding_model = embedding_model
         
         if not persona_id:
             raise ValueError("persona_id is required for multi-tenant isolation")

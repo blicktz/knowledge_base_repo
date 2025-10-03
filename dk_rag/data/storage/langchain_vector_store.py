@@ -27,40 +27,45 @@ class LangChainVectorStore:
     LangChain's Chroma implementation for full compatibility.
     """
     
-    def __init__(self, settings: Settings, persona_id: Optional[str] = None):
+    def __init__(self, settings: Settings, persona_id: Optional[str] = None, language: str = "en"):
         """
         Initialize the LangChain vector store.
-        
+
         Args:
             settings: Application settings containing vector DB configuration
             persona_id: Unique identifier for the persona (for multi-tenant support)
+            language: Content language for selecting appropriate embedding model ('en', 'zh', etc.)
         """
         self.settings = settings
         # Require persona_id - no fallback to maintain multi-tenant isolation
         if persona_id is None:
             raise ValueError("persona_id is required - multi-tenant isolation requires explicit persona identification")
         self.persona_id = persona_id
+        self.language = language.strip() if language else "en"
         self.logger = get_component_logger("LCVecStore", persona_id)
-        
+
         # Setup ChromaDB configuration
         self._setup_chroma()
-        
+
         self.logger.info(f"LangChain vector store initialized for persona: {persona_id}")
     
     def _setup_chroma(self):
         """Setup ChromaDB with LangChain's Chroma wrapper."""
         config = self.settings.vector_db.config if hasattr(self.settings.vector_db, 'config') else self.settings.vector_db
-        
+
         # Get configuration values
         if isinstance(config, dict):
             collection_base = config.get('collection_name', 'script_collection')
-            embedding_model = config.get('embedding_model', 'sentence-transformers/all-mpnet-base-v2')
             persist_directory = config.get('persist_directory', './data/storage/chroma_db')
         else:
             collection_base = getattr(config, 'collection_name', 'script_collection')
-            embedding_model = getattr(config, 'embedding_model', 'sentence-transformers/all-mpnet-base-v2')
             persist_directory = getattr(config, 'persist_directory', './data/storage/chroma_db')
-        
+
+        # Get language-appropriate embedding model from ModelManager
+        model_manager = get_model_manager()
+        embedding_model = model_manager.get_embedding_model_for_language(self.language)
+        self.logger.info(f"Selected embedding model for language '{self.language}': {embedding_model}")
+
         # Use persona-specific collection name
         collection_name = f"{self.persona_id}_documents"
         self.logger.info(f"Using persona-specific collection: {collection_name}")

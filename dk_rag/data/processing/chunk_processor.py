@@ -11,6 +11,13 @@ from typing import List, Dict, Any, Optional
 from ...config.settings import Settings
 from ...utils.logging import get_logger
 
+# Optional Chinese tokenization
+try:
+    import jieba
+    JIEBA_AVAILABLE = True
+except ImportError:
+    JIEBA_AVAILABLE = False
+
 
 class ChunkProcessor:
     """
@@ -20,17 +27,19 @@ class ChunkProcessor:
     across chunk boundaries.
     """
     
-    def __init__(self, settings: Optional[Settings] = None, chunk_size: int = 500, chunk_overlap: int = 100):
+    def __init__(self, settings: Optional[Settings] = None, chunk_size: int = 500, chunk_overlap: int = 100, language: str = "en"):
         """
         Initialize the chunk processor.
-        
+
         Args:
             settings: Application settings (chunk config will be extracted if provided)
-            chunk_size: Target number of words per chunk
-            chunk_overlap: Number of words to overlap between chunks
+            chunk_size: Target number of words/characters per chunk
+            chunk_overlap: Number of words/characters to overlap between chunks
+            language: Content language ('en' for English, 'zh' for Chinese)
         """
         self.logger = get_logger(__name__)
-        
+        self.language = language.strip() if language else "en"
+
         # Extract chunk configuration from settings if provided
         if settings and hasattr(settings, 'vector_db'):
             config = settings.vector_db.config if hasattr(settings.vector_db, 'config') else settings.vector_db
@@ -43,8 +52,13 @@ class ChunkProcessor:
         else:
             self.chunk_size = chunk_size
             self.chunk_overlap = chunk_overlap
-        
-        self.logger.info(f"ChunkProcessor initialized: chunk_size={self.chunk_size}, overlap={self.chunk_overlap}")
+
+        # For Chinese, warn if jieba is not available
+        if self.language == "zh" and not JIEBA_AVAILABLE:
+            self.logger.warning("jieba not available for Chinese text segmentation, using character-based chunking")
+
+        unit = "characters" if self.language == "zh" else "words"
+        self.logger.info(f"ChunkProcessor initialized: chunk_size={self.chunk_size} {unit}, overlap={self.chunk_overlap}, language={self.language}")
     
     def chunk_documents(self, documents: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """
@@ -78,21 +92,30 @@ class ChunkProcessor:
     def chunk_document(self, document: Dict[str, Any]) -> List[Dict[str, Any]]:
         """
         Chunk a single document into smaller pieces.
-        
+
         Args:
             document: Document dictionary with 'content' and metadata
-            
+
         Returns:
             List of chunk dictionaries
         """
         content = document.get('content', '')
         if not content:
             return []
-        
+
         # Clean and prepare content
         content = self._prepare_content(content)
+
+        # Language-specific chunking
+        if self.language == "zh":
+            return self._chunk_chinese_document(content, document)
+        else:
+            return self._chunk_english_document(content, document)
+
+    def _chunk_english_document(self, content: str, document: Dict[str, Any]) -> List[Dict[str, Any]]:
+        """Chunk English document by words."""
         words = content.split()
-        
+
         # If document is smaller than chunk size, return as single chunk
         if len(words) <= self.chunk_size:
             chunk = self._create_chunk(
@@ -104,17 +127,17 @@ class ChunkProcessor:
                 end_word=len(words)
             )
             return [chunk]
-        
+
         # Split into overlapping chunks
         chunks = []
         chunk_index = 0
         start = 0
-        
+
         while start < len(words):
             end = min(start + self.chunk_size, len(words))
             chunk_words = words[start:end]
             chunk_content = ' '.join(chunk_words)
-            
+
             chunk = self._create_chunk(
                 content=chunk_content,
                 parent_document=document,
@@ -123,29 +146,127 @@ class ChunkProcessor:
                 start_word=start,
                 end_word=end
             )
-            
+
             chunks.append(chunk)
             chunk_index += 1
-            
+
             # Move start position for next chunk (with overlap)
             start = max(start + self.chunk_size - self.chunk_overlap, start + 1)
-        
+
         # Update total_chunks count in all chunks
         for chunk in chunks:
             chunk['total_chunks'] = len(chunks)
-        
+
         self.logger.debug(f"Split document '{document.get('source', 'unknown')}' into {len(chunks)} chunks")
+        return chunks
+
+    def _chunk_chinese_document(self, content: str, document: Dict[str, Any]) -> List[Dict[str, Any]]:
+        """Chunk Chinese document by characters."""
+        char_count = len(content)
+
+        # If document is smaller than chunk size, return as single chunk
+        if char_count <= self.chunk_size:
+            chunk = self._create_chunk(
+                content=content,
+                parent_document=document,
+                chunk_index=0,
+                total_chunks=1,
+                start_word=0,
+                end_word=char_count
+            )
+            return [chunk]
+
+        # Split into overlapping chunks by character count
+        chunks = []
+        chunk_index = 0
+        start = 0
+
+        while start < char_count:
+            # Calculate end position
+            end = min(start + self.chunk_size, char_count)
+
+            # Try to find a sentence boundary near the end
+            if end < char_count:
+                end = self._find_chinese_sentence_boundary(content, end)
+
+            # Extract chunk content
+            chunk_content = content[start:end]
+
+            chunk = self._create_chunk(
+                content=chunk_content,
+                parent_document=document,
+                chunk_index=chunk_index,
+                total_chunks=None,  # Will be set after all chunks are created
+                start_word=start,
+                end_word=end
+            )
+
+            chunks.append(chunk)
+            chunk_index += 1
+
+            # Move start position for next chunk (with overlap)
+            overlap_start = max(start + self.chunk_size - self.chunk_overlap, start + 1)
+            # Ensure we make progress
+            start = min(overlap_start, end - 1) if end > start else end
+
+        # Update total_chunks count in all chunks
+        for chunk in chunks:
+            chunk['total_chunks'] = len(chunks)
+
+        self.logger.debug(f"Split document '{document.get('source', 'unknown')}' into {len(chunks)} chunks ({char_count} characters)")
         return chunks
     
     def _prepare_content(self, content: str) -> str:
         """Clean and prepare content for chunking."""
-        # Normalize whitespace
-        content = re.sub(r'\s+', ' ', content)
-        # Remove excessive line breaks
-        content = re.sub(r'\n{3,}', '\n\n', content)
-        # Strip leading/trailing whitespace
-        content = content.strip()
+        if self.language == "zh":
+            # For Chinese, preserve structure but remove excessive whitespace
+            content = re.sub(r'\n{3,}', '\n\n', content)
+            content = content.strip()
+        else:
+            # For English, normalize whitespace
+            content = re.sub(r'\s+', ' ', content)
+            content = re.sub(r'\n{3,}', '\n\n', content)
+            content = content.strip()
         return content
+
+    def _split_chinese_text(self, content: str) -> List[str]:
+        """
+        Split Chinese text into tokens (characters or words).
+
+        Args:
+            content: Chinese text content
+
+        Returns:
+            List of tokens (jieba words if available, otherwise characters)
+        """
+        if JIEBA_AVAILABLE:
+            # Use jieba for word segmentation
+            return list(jieba.cut(content))
+        else:
+            # Fall back to character-based
+            return list(content)
+
+    def _find_chinese_sentence_boundary(self, text: str, target_pos: int) -> int:
+        """
+        Find the nearest Chinese sentence boundary near target position.
+
+        Args:
+            text: Chinese text
+            target_pos: Target character position
+
+        Returns:
+            Adjusted position at sentence boundary
+        """
+        # Chinese sentence terminators
+        terminators = ['。', '！', '？', '；', '\n']
+
+        # Search forward for terminator (within 100 chars)
+        for i in range(target_pos, min(target_pos + 100, len(text))):
+            if text[i] in terminators:
+                return i + 1
+
+        # If no terminator found, return target
+        return target_pos
     
     def _create_chunk(
         self, 
@@ -164,6 +285,14 @@ class ChunkProcessor:
         # Start with parent document metadata
         chunk = parent_document.copy()
         
+        # Calculate word/character count based on language
+        if self.language == "zh":
+            # For Chinese, character count is more meaningful
+            word_count = len(content) if content else 0
+        else:
+            # For English, use word count
+            word_count = len(content.split()) if content else 0
+
         # Update with chunk-specific content and metadata
         chunk.update({
             'content': content,
@@ -172,11 +301,12 @@ class ChunkProcessor:
             'total_chunks': total_chunks,
             'start_word': start_word,
             'end_word': end_word,
-            'word_count': len(content.split()) if content else 0,
+            'word_count': word_count,
             'char_count': len(content) if content else 0,
             'is_chunk': True,
             'parent_source': parent_document.get('source', 'unknown'),
-            'parent_filename': parent_document.get('filename', 'unknown')
+            'parent_filename': parent_document.get('filename', 'unknown'),
+            'language': self.language
         })
         
         # Create a descriptive source for the chunk

@@ -8,11 +8,14 @@ PYTEST := poetry run pytest
 MODULE := dk_rag.cli.persona_builder
 
 # Default paths - customize these for your setup
-DOCS_DIR ?= /Users/blickt/Documents/src/pdf_2_text/content_repo/Konstantinos_Doulgeridis_facebook_ads
+DOCS_DIR ?= /Users/blickt/Documents/src/pdf_2_text/content_repo/nihaixia
 OUTPUT_DIR ?= ./output
 CONFIG_FILE ?= ./config/persona_config.yaml
 PATTERN ?= *.txt
 BATCH_SIZE ?= 5
+
+# Language Configuration
+CONTENT_LANG ?= zh  # Default to English. Options: en (English), zh (Simplified Chinese)
 
 # Storage Configuration - automatically reads from config YAML file
 # NOTE: This must align with storage.base_storage_dir in the config YAML file
@@ -22,7 +25,7 @@ CACHE_DIR := $(STORAGE_BASE_DIR)/cache
 VECTOR_DB_DIR := $(STORAGE_BASE_DIR)/vector_db
 
 # Default persona name for extraction
-PERSONA_NAME ?= konstantinos_doulgeridis_youtuber
+PERSONA_NAME ?= nihaixia_suanming
 
 # Search query for testing
 SEARCH_QUERY ?= "mental models for productivity"
@@ -83,7 +86,8 @@ build-kb: ## Build knowledge base from documents
 	$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" build-kb \
 		--persona-id "$(PERSONA_NAME)" \
 		--documents-dir "$(DOCS_DIR)" \
-		--pattern "$(PATTERN)"
+		--pattern "$(PATTERN)" \
+		--language "$(CONTENT_LANG)"
 	@echo "$(GREEN)✓ Knowledge base built$(NC)"
 
 .PHONY: rebuild-kb
@@ -96,6 +100,7 @@ rebuild-kb: ## Clear and rebuild knowledge base from scratch
 			--persona-id "$(PERSONA_NAME)" \
 			--documents-dir "$(DOCS_DIR)" \
 			--pattern "$(PATTERN)" \
+			--language "$(CONTENT_LANG)" \
 			--rebuild; \
 		echo "$(GREEN)✓ Knowledge base rebuilt$(NC)"; \
 	else \
@@ -120,7 +125,8 @@ update-kb: ## Update knowledge base with new documents
 	$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" build-kb \
 		--persona-id "$(PERSONA_NAME)" \
 		--documents-dir "$(DOCS_DIR)" \
-		--pattern "$(PATTERN)"
+		--pattern "$(PATTERN)" \
+		--language "$(CONTENT_LANG)"
 	@echo "$(GREEN)✓ Knowledge base updated$(NC)"
 
 .PHONY: analyze-kb
@@ -139,7 +145,8 @@ extract-persona-stats: ## Phase 1-a: Statistical analysis only (spaCy/NLTK)
 		--documents-dir "$(DOCS_DIR)" \
 		--name "$(PERSONA_NAME)" \
 		--pattern "$(PATTERN)" \
-		--batch-size $(BATCH_SIZE)
+		--batch-size $(BATCH_SIZE) \
+		--language "$(CONTENT_LANG)"
 	@echo "$(GREEN)✓ Statistical analysis complete for '$(PERSONA_NAME)'$(NC)"
 
 .PHONY: extract-persona-llm
@@ -149,7 +156,8 @@ extract-persona-llm: ## Phase 1-b: LLM map-reduce processing only
 		--documents-dir "$(DOCS_DIR)" \
 		--name "$(PERSONA_NAME)" \
 		--pattern "$(PATTERN)" \
-		--batch-size $(BATCH_SIZE)
+		--batch-size $(BATCH_SIZE) \
+		--language "$(CONTENT_LANG)"
 	@echo "$(GREEN)✓ LLM processing complete for '$(PERSONA_NAME)'$(NC)"
 
 .PHONY: extract-persona-full
@@ -473,6 +481,7 @@ help: ## Display this help message
 	@echo "$(YELLOW)Common Variables:$(NC)"
 	@echo "  DOCS_DIR       - Directory containing documents (default: $(DOCS_DIR))"
 	@echo "  PERSONA_NAME   - Name for persona extraction (default: $(PERSONA_NAME))"
+	@echo "  CONTENT_LANG   - Content language: en (English) or zh (Chinese) (default: $(CONTENT_LANG))"
 	@echo "  SEARCH_QUERY   - Query for search operations (default: $(SEARCH_QUERY))"
 	@echo "  PATTERN        - File pattern to match (default: $(PATTERN))"
 	@echo "  BATCH_SIZE     - Documents per batch for extraction (default: $(BATCH_SIZE))"
@@ -507,6 +516,7 @@ help: ## Display this help message
 	@echo "  make quickstart                    # Complete setup and extraction"
 	@echo "  make build-kb DOCS_DIR=/my/docs   # Build KB from custom directory"
 	@echo "  make extract-persona PERSONA_NAME=gary_vee  # Extract specific persona"
+	@echo "  make build-kb PERSONA_NAME=nihaixia CONTENT_LANG=zh  # Build KB for Chinese content"
 	@echo "  make search SEARCH_QUERY='productivity tips' # Search knowledge base"
 	@echo ""
 	@echo "$(YELLOW)Phase 2 Knowledge RAG Examples:$(NC)"

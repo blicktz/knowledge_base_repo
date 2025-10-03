@@ -1,0 +1,333 @@
+I have 13 portfolio companies and I just doubled one of them in 60 days by solving five key problems. And what I'm going to do is show you the data of what it was before, why it was wrong, what we fixed, and what happened after. Enjoy.
+
+Three young founders who are all sad because they were not making the amount of money that they wanted to make. So before I show you the data, let me explain what each of these terms actually mean. So show rate is the percentage of people who have an appointment who show up for their appointment.
+
+So in any business, if you deal with people, you will have sessions or appointments. You have a time slot that someone says they're going to show up, right? If it's a sales consult, then they are a prospect and they're going to show up to get sold.
+
+So if I have 100 people who have an appointment and 70 show up, that would be a 70% show rate. The second one here is offer rate, which we forgot to put in the rate. So let me just put that in for you.
+
+There we go. Offer rate, which is the percentage of people that we actually make an offer to. You might be like, well, why would I not offer everybody?
+
+Well, not everyone's qualified. And so, for example, if I work with only gym owners and somebody comes on and is like, oh, I'm a personal trainer. Well, you shouldn't be here.
+
+We had all these other things that said, don't be here. But you still came. Why are you here?
+
+That means that you don't offer them anything. And that's it. Now, if 100% of people who showed up, show rate, you were able to offer to, then that means that your offer rate would be 100%.
+
+And that is an indicator of the quality of the lead flow that you have. The third is close rate. This depends on how you can track this.
+
+All right. So you can either do it based on percentage of people who show or you can do it on percentage of people who are offered. What I normally do is I'll just track both.
+
+I'm going to guess that this one is off of offer rate because it's what we have here. It's good to have both stats here because let's say a salesman wants to artificially increase his close rate. Well, then he will just say, well, I'm not going to offer anyone unless I know they're going to say yes.
+
+And so then their close rate is high. And then they'll show that there's a really low quality score. But if that salesman, this is why having team stats is so important and individually is because if the team is all saying that their offer rate is 70 and one guy saying his offer rate is 30, but he has 100% close rate and they all have 30% close rates, we know where the data went.
+
+And this is why having high quality data allows you to see what the problems are. If I didn't have this percentage, then I wouldn't know it's because we have low quality leads or because my salesman sucked. This data allows me to identify the problem and then fix it.
+
+So the fourth set here is percentage of cash collected up front. Meaning if we're selling $1,000 widgets and the average cash we collect today is $500 because people do payment plans, then we would know our cash collected percentage would be 50%. If I have a low close rate but high cash collected percentage, that would tell me a different story than a really high close rate and really low cash collected percentage.
+
+I'd be like, oh, so they're just getting anyone to say yes and taking $10 down if they can versus somebody saying we have a hard line. And so it's really trying to find the magic between these two and saying, how can I get as many people to say yes and get as much cash collected up front? The final one here is just units sold.
+
+And this is really just the output of these four. Well, if we multiply these things together, how many do we end up closing? And that's the result.
+
+So beforehand, damn, we had a 49% show rate. So let's say we have 100 appointments. Now we have 49 who actually show up for their appointment.
+
+And then of the 49, we're able to offer 83% of them beforehand. So 80% of that is 40. 40 people now are getting offered out of our original 100 appointments.
+
+Of the people who get offered, 27% of them, which is 10 people roughly, are actually buying in that closing percentage. And then our cash collected from those 10 people is we're getting a little less than half of the cash that we closed down. Now I gave you 100 as a number, but the actual number of units sold for this business in the prior month was 56 units.
+
+All right. So this is current state. If you don't know these numbers in your business, you should so that you can improve them.
+
+Let's say I invest in your business today. The first thing we're going to do is get the data so that we can see what baseline is, so we can see where the discrepancies are and where we think the biggest opportunities for improvement are. And you're going to have to wait until the end of the video.
+
+I'm going to show you what happened after. So let's start with problem number one or opportunity for improvement number one. We had a low show rate, as in based on our benchmarks of 70% for any kind of appointment type business.
+
+We think that we should have at least 70 there. Allen, which is a company that I had, all we did was show rates. We were doing 4,000 appointments a day.
+
+We experimented, we had a machine learning team to think like, what was the number of communications that we had to have with a prospect? What was the delay between responses that got the most people? What were the total number of exchanges?
+
+How far apart were the exchanges? There was lots of data that we were able to collect. So their number was 49% of appointments were showing up.
+
+What we wanted them to be at was 70%. This is our benchmark where we'd say, okay, this isn't a problem anymore. Now, do we want to improve things?
+
+Absolutely. But where are we going to allocate our effort? At the constraint.
+
+This was a constraint. Now, to give context here, this delta is a 40% difference. 40% is a lot.
+
+Think about the S&P 500. They're like, we try and grow 9% a year. It's like, boom, I unlock that.
+
+I get 40% growth. I don't have to do anything else for like four years in the S&P. Big wins.
+
+That's what we look for. Lots of things can affect show rate. By the way, the number one one that affects show rate is number of total time slots available.
+
+Take that to the bank. But one of the other ones is the targeting and the offer itself. So targeting is who's actually seeing this promotion.
+
+If I'm targeting teeny boppers, for example, I might get people to schedule, but then realize that they're not here for a laser hair removal appointment. So the targeting there would be off. And so that would affect our show rate.
+
+And that has nothing to do with our lead nurture sequence or our salesman or anything like that. It's just the wrong people we're seeing. So that was issue number one.
+
+For context for us, just imagine that's underneath. It was 25 to 35-year-olds who were gainfully employed and loved their job. And this, when we came in to look at it, was actually targeting 18 to 24-year-olds.
+
+The reason that this was far off for us is that the ad objective, now I'm going to get a little bit tactical with you. Ad acquisition is not common at Holdco. We have media buyers.
+
+We have pros who do this for a living. And so when they zoomed in on how their media buyer was optimizing the traffic, they were optimizing against what a lot of people would initially think they should do, which is optimizing for the lowest cost leads and the lowest cost appointments. What we had to do was switch to optimize around cost per sale.
+
+If we can optimize around who we actually sell to, we will shift where the sales come from. And just to give you how big of a problem this was, they had to cancel 75% of their appointments before the 49% show rate. The sales guys are spending most of their time just looking at their appointment, looking up the person canceling to get their 49% show rate.
+
+And that's about the closest thing to literally burning money. So the second big problem was multitasking. And this really goes for any role, but especially like sales-driven roles.
+
+They had a setting team and a closing team. And the setters were both trying to call leads to get appointments and then also nurturing and doing the follow-up to remind them of the appointment. And as similar as that may sound in your mind, it's two completely different activities.
+
+You're banging phones, calling people up, you're in that flow. And then you're like, oh, wait, Sarah has an appointment today. Let me go remind Sarah.
+
+Does Sarah going to show up to it? And then you're like, wait, I'm calling. And then you start like, and you go back and forth, right?
+
+So they had three big issues. Number one is that they weren't double dialing, right? Which is one of the most common things that you can do, by the way, if you're doing phone calls, because a lot of initial screens will stop the first call.
+
+But if you dial twice, you'll get through. Number two is that the time to contact was too slow. So a lead would come in and they would just like sit there for 30 minutes, 60 minutes, an hour, two hours, three hours, right?
+
+And they weren't getting contacted. It's like, what did this person do? They're like, oh, I'd like to find out more information.
+
+Nothing. And the third thing is that they didn't have the right time to set appointments and they weren't nurturing correctly. So we go same day, next day.
+
+I'm just giving you some secrets. And they didn't have morning of nurture. Meaning if you have an appointment today and you booked this appointment three days ago, if I don't remind you that day that you have an appointment, the likelihood that you show is lower.
+
+And so these are the problems that they have. No double dial, slow speed to contact, and they didn't have any morning of nurture. But wait, there's more.
+
+The second problem they had, or opportunity for improvement, was that they had a low close rate. And this is based on our benchmark. I would normally give you a KPI, but it has so many different variables in terms of what percentage close rate is.
+
+Because if you're selling in person, for example, for a low ticket thing, you might be able to sell 80% plus of people walking the door. On the flip side, if you're selling an investment opportunity over the phone on a first or second contact, you might sell 5%. But for this particular type of sale that they had, which was a two call close for like, I would say a mid price consumer service, in my opinion, they should have been about 40%.
+
+So 40% is what I wanted them to be at. And then current was 27%. So this is where they were.
+
+This is where we wanted them to be. And again, for context here, this is about a 50% improvement. So problem number one is that they had service level discovery.
+
+If you're not familiar with that terminology in a sales script, there's different kind of phases that you go through in a conversation. And the opening part is often a little bit of rapport. And then right after that, you get into discovery.
+
+And discovery is where you're discovering what the problems that the person is going through. You're trying to understand why they are where they are, why they're on the phone with you, why they decided to take time out of their day, why this problem is important to them, what they've tried in the past, et cetera, et cetera. Right?
+
+This is the discovery. This gives you all the ammunition that you're going to use at the end of the sale to close it. So the way that they were doing it was simply saying, how much money do you want to make?
+
+Just asking the one question, which is the big obvious question. It's surface level. But the big thing that you always want to ask when you're selling is intention.
+
+Why do they want this? Like what changes as a result of this? How will your life look different?
+
+What can you not do now that you would be able to do as a result of this change? Who else in that, in your life would that affect? Why does that matter to you?
+
+Right? And so these are all why questions and it's to dig up their intentions. Because if you can understand why someone's there, it's much easier to get them to agree to getting them there.
+
+Right? But if you don't know that someone's trying to, let's say, replace their income versus quit their job versus just have side hustle money, those are very different intentions. If I want to talk to side hustle money, I'm probably not going to be like, this is going to take a ton of time.
+
+On the flip side, if someone's like, I hate my job. I just want to do something that's not this, then I might talk about what the day-to-day looks like in this scenario and ask them if that sounds better to them. So if you think about sales process, what they were doing is they were asking questions that were here, surface level.
+
+But this is where all the meat is. And that's where all the money is, is the questions that are below the surface, is understanding why someone's even doing this to begin with. Look at that iceberg.
+
+Killer iceberg. And so the second issue is that they had a lot of objections coming up on the call. I'll say objections, but I also mean obstacles for those of you who are sales senseis.
+
+Objections happen after you talk about the number, obstacles happen before you talk about the number. If you come on the phone and I say, hey, why are you here? And you're like, I just want to find out more information.
+
+That's actually an obstacle. Like you already have to confront that. Because like, no, you're not hopping on phone calls all day, just trying to find information.
+
+What problem are you trying to solve? And then they're like, well, and then you get into it, right? But if you don't address that up front, it'll blow up on you in the close.
+
+So objections and obstacles is what they were encountering a lot of. And part of that is because their discovery was wrong, right? They were talking to service level.
+
+So then lots of shit was blowing up on them in the close. Common objections that happen after you present price is this is too much. I need to think about it.
+
+I have to talk to my spouse. I'm not sure if this is for me. I'd like to get more data.
+
+Can you send me a brochure? Like these are all just the make believe things that people will say in order to not buy from you. Interestingly, a lot of times if you stay in the service level, they'll even give you what we call smoke screens.
+
+But basically like they'll just come up with a reason that they're not going to do it. And it's not even the reason they just throw a smoke bomb up and they're like, I don't like English, you know, walk away, right? It has nothing to do with it.
+
+They just want to get off the phone. So those are the two issues that we had on the sales. And that was getting us to this 27% close rate.
+
+And what this looks like is lots of argumentation and like hard closing. And it's because the sales and positioned properly and they were basically talking at people and not listening. If the salesperson is talking more than the prospect in your sales, like these are likely issues that are coming up.
+
+I'm going to give you two examples real quick to show you how important delivery of a message is. So if I say I have to think about it and I say, oh, like what are your main concerns or what are the main, like what are the main variables that you're considering? You're not thinking, wow, this guy's a douchebag.
+
+I sound like I just genuinely want to know. I call it childlike curiosity. I always cue it by tilting my head.
+
+I'm like, huh, what are the main things? And I would increase my voice at the end there. An improperly trained salesperson might be like, well, what are the main concerns you have?
+
+And all of a sudden that sounds like a very different thing. So they're saying the script, but they're not, but the prospect isn't hearing the same message. And these are little details that actually can make a huge difference in ultimately how you close.
+
+There's a lot of things in tone, but I'll just say one is how you raise or lower your voice. And the second is where you choose to emphasize. If I say, I didn't say he hit his wife.
+
+If I say it like that, I have neutral tone. If I say, I didn't say he hit his wife, then it's like, I'm not saying that. I didn't say he hit his wife is now saying that like, those weren't my words.
+
+I didn't say he hit his wife. He's the one to question. I didn't say he hit his wife means like he might've done something else, but he did something to his wife.
+
+I didn't say he hit his wife. It could have been somebody else's. I didn't say he hit his wife.
+
+It might've been his kid. Right? And so it's the same sentence, but simply emphasizing different parts of it, communicate different things.
+
+And so the tone and emphasis create a altogether package of how we communicate. And for them, their tonality was way off as a team because they were missing the first five minutes of discovering and setting the frame properly. And so I'll give you the last set of problems, opportunities for improvement.
+
+And then we'll dive into what we did to solve them and what happened. Sales problem three, opportunity for improvement. People and org structure issues.
+
+So issue number one is that CEO was the sales manager. And that was because he was the best closer. He had a significantly higher close rate than the rest of the team, but he wasn't a very good sales manager, even though he was a good closer.
+
+By the way, that's one of the main issues that a lot of sales teams have is they promote their best closer as a sales manager. And oftentimes those are two very different skills. And we could see this because the churn on their sales team was through the roof.
+
+Just to be clear, like they were a group of young founders. It's not uncommon. It's actually probably very common because usually when you start a business, learning how to promote and sell the product is usually the job of the founders.
+
+Like how do I get people to want to buy the thing? And so they end up getting the most reps early on and also understanding the prospect better than just about anyone. And so one of the big things, you guys are a little mini sales lesson today, is that companies will over-educate on the product and under-educate on the prospect.
+
+The person that you should be educating your sales staff on is who we're talking to more than what we're selling. Because for me, if I know someone deep in their core of what their intentions are, I can tell them anything. I know someone inside and out, and then someone says, sell this thing.
+
+And I know nothing about it. I could probably get them to buy. On the flip side, I know everything about this thing, and I don't know who I'm talking to.
+
+I'm talking to a child, a man, a woman, old, young, different language. And so a lot of people talk like, hey, sell me this pen. When in reality, what we want to do is like, talk to John.
+
+The majority of good sales trainers who try to do that gimmick, what they want the person to do is ask them a question. It actually has nothing to do with the pen. And so if they say, sell me this pen, what you do is you take the pen and you put it in your pocket and you say, how's it going?
+
+What brought you in today? Right? Because I got to go from where they're at to wanting a pen.
+
+I'm not going to just be like, hey, buy this pen. Give me money. Like it doesn't work that way.
+
+But bad salesmen do. So the second issue was the setting team expectations. One of the benefits of working with someone who has more experience is that we know what the benchmark should be.
+
+And so a lot of times we can reset someone's minimum standard. And they're like, well, they're setting two a day. We're like, they should all be minimum setting three.
+
+And that sounds tiny. But again, two to three is a 50% increase in sets. And that's across the whole team.
+
+So that means a lot of productivity. But if you set the bar low, people will just naturally shrink down to that level. All right.
+
+So you understand the problems. And here is the data. This is before they had a low show rate issue.
+
+They had low close rate and multiple issues around that. And they had people and organizational issues. I want you to pause real quick in the video, in the comments, to be like, what would you do?
+
+How would you attack these issue if this was your business? And then I'll tell you what we did. Now, there's two elements of solutions.
+
+Element one is what would you do to attempt to solve the problem? And the second is which one do we do in what order? The third problem, that was actually the first thing we decided to fix.
+
+We said we hired a sales director. The reason for that was because the CEO was overly involved. He was micromanaging.
+
+He wasn't a good manager. And he also wasn't doing CEO stuff. And so we had to hire an experienced sales director who, in this instance, had been a sales trainer for a similar type of sale in a consumer good.
+
+This guy ended up being exceptional in being able to implement the rest of the changes that we outlined. So this was in terms of order of importance. I think if we hadn't done this and had tried to do the rest of them, it would have fallen flat.
+
+This is like one of the most common errors that business owners and founders make is that they see the what and not the who. Or they focus on the how and not the who. And if you have the same problem that has recurred multiple quarters in a row in the same department, underneath of the same who, it might not be a what issue.
+
+It might be a who issue. One of the reasons having experience is helpful is because you know what it looks like when it's right. Some of the biggest costs in the business are hiring incorrectly.
+
+You waste the time trying to find them. You waste the time onboarding them and training them. And then you waste the time of all the time it takes you to figure out that they're not the right fit.
+
+And all the lost growth that you would have had to then start that process over again. That's tough. But a lot of businesses have to deal with that, which is why picking personnel is so important.
+
+With this instance, we looked at culture fit, which is like, do we think that this guy will fit in? Which we usually, the founders pick that part out. Like, hey, does this guy fit in?
+
+Cool. And then we're going to hardcore drill on usually experience and tactical knowledge. And so we have subject matter experts at Holdco.
+
+Media buying, CRO experts, sales experts, finance experts, whatever. And we will then do tactical interviews. We talked about earlier, you can know that someone is good based on the quality and quantity of the data that they collect.
+
+I would ask somebody, what data do you plan on collecting? And how would you plan on fixing those things? Based on how vague they are and how high level they go in terms of their solutions, it'll tell you how nuanced they can be in their thinking and ultimately executing solutions.
+
+Sales directors specifically, in my experience, when I have guys who are like, I just want to build up people. I want to give these guys skills. And they marry that with like, and these are the metrics that I track to know X, Y, and Z.
+
+That's a good sales director. The next thing we decided to solve, boom, was fixing the ad targeting. And the reason we did the sales director first was because we're like, well, how do we know if anything else is going to happen afterwards if we fix this?
+
+So what we ended up doing here, it turns out, is that we also had another personnel issue. The media buyer was asleep at the wheel. They were optimizing around the wrong stuff.
+
+They were trying to split their attention and start their own side hustle. It was clear that they were negligent. They actually were doing the right thing.
+
+And then they stopped doing the right thing. And it was clear that that type of behavior the founders felt was not going to correct itself. So they let go of that person, hired a new person, and boom, fixed the ad targeting problem.
+
+We were back to 25 to 35-year-old people who love their job. What did we fix next? Boom.
+
+We reduced the sales team. What? And we reset expectations for the setting team.
+
+What we looked at is sales team utilization. If we know that guys can take 10 sales a day and they're actually only taking four, then we have too many salespeople. In this instance, it gives you an opportunity to cut the fat, for lack of a better term, and reward the people who are actually doing their jobs and closing well.
+
+If you cut the lowest percentage of the team and you have utilization, like you have space, you lose the lowest closing percentage people and you gain more closes just by shifting the closing rate overall of the team. When you make those changes, in my experience, salespeople get into a rhythm. If you don't take enough sales calls, you're too desperate to close the deal.
+
+And then you start being too hard and not listening enough because it's about you, not them. When salespeople have more and more consults, they sell from the back of their heel. They're open-minded.
+
+They're asking questions. They're feeling good. And they get in a rhythm.
+
+The setting team, we both downsized and increased expectations. How did all these sales increase? By having fewer people.
+
+We had better people. That's how. And that also helps recreate the culture of the team so that we can have a new standard set of high performers.
+
+Because there's nothing that demotivates a high performer like a low performer who's still on the team. And so we went from two to four in terms of our expectation per day for the team in terms of sets. Sales fix numero cuatro.
+
+I'm messing all my columns up now. Just gonna have to deal with it. We promoted one setter to lead nurture specialist.
+
+I was saying earlier that they were multitasking, right? So they're doing some setting and they're doing some lead nurture. And that gets really hard for a team of six guys to split those things.
+
+We took one of the setters who was really good and made that person the lead nurture specialist who basically acted as the bridge for both the setting team and the closing team. To basically coordinate and remind the people of their appointments. And we equipped that lead nurture specialist with one of our checklists for what that role needs to do to get the most people to show up.
+
+And I'm not gonna give you all because of the long checklist. I'll give you two quick examples. One of them is doing a three-way intro once you have the set appointment between the setter and the closer and doing it via iPhone if you can.
+
+Because now you have a known person and an unknown person and a person that bridges the two. They might no show on Johnny over here, but not on the guy that they just spoke with. And so the idea is how can I bridge that gap and kind of make the association for them add some trust.
+
+The other thing is that the closers morning of would remind them with either a voice memo or a video text personalized to them being like, Hey, John, really excited for our appointment today. I saw your profile XYZ personalized to you. Really pumped for you.
+
+I think we might be able to help you out. So that's just a couple of things that we have on that list that we had them implement and all do consistently. And sales team fix number five, boom, is we optimize the sales scripts.
+
+I said earlier that the discovery was too surface level. So we re-scripted the discovery, made sure we were asking deeper, more meaningful questions. And a part of that is also bringing some of the objections to the front.
+
+It's much easier. And this is the terminology that our team uses, which is killing zombies, right? It's a lot easier to kill a zombie when it's far away than when it's on top of you.
+
+If somebody is trying to bring up a zombie in the close, another way of saying it is like, you want to diffuse the bomb before it goes off in the close in your face. So we solve the problem before we bring it up. Now, this is actually something that we added to this part of the script, which is prior to the appointment, we say, Hey, is there anyone else who'd be required to make a decision about this thing?
+
+If they say yes, then you say, cool, well, let's push back the appointment. Let's get that person on. That way you have all the decision makers present.
+
+So these are just little things, but like little 1% improvements over and over, over again is what yield these 50% boosts. And the third main change we did was that we drilled the team on looping. And looping is just a sales terminology for basically when you encounter an objection, handling the objection, and then asking again, handle the objection, ask again, right?
+
+Because a lot of salespeople are afraid to ask if someone says no, and they don't want to ask again, right? And I can tell you this is that the number of sales you make is direct proportional to how many times you ask. There's ways to do it wrong and there's ways to do it right.
+
+The idea is that you should be able to resolve the concern, right? So if someone says, I need to think about it and you say, well, what are your main concerns? And they say, well, it seems really complicated.
+
+And you say, oh, what part specifically feels more complicated? They're like, it's the whole tech thing. And we're like, oh, we also have a vendor that can actually fill that in.
+
+I think it's a couple of bucks extra, but like, we can just handle that for you. Does that solve the problem? And they're like, oh, okay.
+
+So you guys, you guys just handed that one part of it. Like, yeah, we can handle that part of it for you. Cool.
+
+Now this is where the salesman says, great. You want to move forward? Do you have your idea on you?
+
+Hey, what card do you want to? Like you can just make the ask right after that. And so then at that point, you might say, ready to move forward then?
+
+And they might say, this feels like a fast decision. It's like, oh, well, what makes it fast? How long have you been thinking about this?
+
+They're like, well, I mean, I just met you and you say, well, how long have you wanted to solve this problem? And then they would say, well, I mean, a long time. It's like, well, that doesn't sound like a fast decision at all.
+
+It sounds like you've already made the decision a long time ago. You wanted to change. Now we're just acting on it.
+
+So now do you want to move forward, right? Keep looping and continuing to resolve the concern. Ask again, resolve the concern.
+
+Ask again. Drum roll, please. What happened in the real world?
+
+So let's go to the data. All right. So in our first column, we had 49% show rates.
+
+After we implemented sales fix two, fixing the ad targeting. Sales fix four, promoted one lead center to lead nurture specialist. And sales fix three, reduce the team size and reset expectations.
+
+Survey says we had a 70% boost, which is almost exactly the KPI. And that's because when you do things that work, they work. So that was a 40% improvement in sales.
+
+And to be clear, this was just over two months. All right. So some of these changes can happen real quick.
+
+If you know what you're doing. The second change we had is our offer rate. And so here's what happened.
+
+Survey says 80%. We actually offered just about the same amount of people. Realistically, what they were doing is offering people who weren't qualified because the sales team wanted to eat.
+
+And I get that. Like there's a human component here. They were offering people who were not qualified the deal because they needed commissions, right?
+
+Which is what we were trying to fix with the targeting. Close rates. We went for 27% and 60 days later, we were at 41%.
+
+So 1% above our benchmark. All right. This is a 50% improvement in sales.
+
+So 40 and 50. Kazam. Next up, we have percentage of cash collected.
+
+A really good metric for knowing how strong the sales team is. And this is especially important for that early discovery portion and how good they are at looping and closing. Because the deeper you get the discovery, the more convicted the buyer will be about the solution.
+
+And the more likely they are to pay up front as a measure of their conviction in the solution. The survey says we went from 47 to 82%. So we almost doubled the amount of cash that we were collecting up front per sale in 60 days.
+
+We had a 40% improvement and we had a 50% improvement. And we had a almost doubling of cash collected. So if we almost doubled the amount of sales that happened and we almost doubled the cash upfront collected, what do we do to the cash flow of the business?
+
+Forexed. Ah, much more enticing. After we added all these four changes together and we waited 60 days, what happened?
+
+Survey says we went from 56 to 93 sales a month. And that was just from a few of these fixes on one particular part of the organization. And you might think after we made all these changes that we're done.
+
+We ride off into the sunset. But wait, there's more. There were even more problems in the business on the product and customer success side, which we will get to in the next video.
