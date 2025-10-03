@@ -173,7 +173,7 @@ class StatisticalAnalyzer:
                 unique_words=0,
                 average_sentence_length=0.0,
                 lexical_diversity=0.0,
-                top_keywords=[],
+                top_keywords={},
                 top_ngrams=[],
                 top_collocations=[]
             )

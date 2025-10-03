@@ -86,7 +86,7 @@ class KnowledgeIndexer:
 
         self.transcript_loader = TranscriptLoader(settings)
         self.chunk_processor = ChunkProcessor(settings, language=self.language)
-        self.persona_extractor = PersonaExtractor(settings, persona_id)
+        self.persona_extractor = PersonaExtractor(settings, persona_id, self.language)
         self.statistical_analyzer = StatisticalAnalyzer(settings, persona_id, self.language)
         
         # Phase 2 components (initialized on first use)
@@ -417,8 +417,8 @@ class KnowledgeIndexer:
             if self.settings.validation.strict_mode:
                 raise ValueError(f"Validation failed: {validation_issues}")
         
-        # Check if statistical analysis is available
-        if use_cached_stats:
+        # Check if statistical analysis is available (only for English)
+        if use_cached_stats and self.language == "en":
             if not self.statistical_analyzer.has_cached_analysis(documents):
                 raise ValueError(
                     "No cached statistical analysis found. "
@@ -426,6 +426,8 @@ class KnowledgeIndexer:
                     "or set use_cached_stats=False to perform fresh analysis."
                 )
             self.logger.info("Using cached statistical analysis from Phase 1-a")
+        elif use_cached_stats and self.language != "en":
+            self.logger.info(f"Statistical analysis not available for language '{self.language}', skipping cache check")
         else:
             self.logger.info("Performing fresh statistical analysis...")
         

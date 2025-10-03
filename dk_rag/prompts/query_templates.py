@@ -79,14 +79,20 @@ def generate_multi_queries(query: str, num_variations: int = 3) -> List[str]:
 def create_query_expansion_prompt(query: str) -> str:
     """
     Create a prompt for LLM-based query expansion.
-    
+
     Args:
         query: Original query
-        
+
     Returns:
         Query expansion prompt
     """
-    return f"""Generate 3 different variations of the following query that would help find relevant information.
+    return f"""## LANGUAGE HANDLING ##
+CRITICAL: Detect the primary language of the original query and produce ALL query variations in that same detected language.
+- If the query is in Chinese (中文), write all variations in Chinese
+- If the query is in English, write all variations in English
+- Your output language must match the query language, NOT the language this prompt is written in
+
+Generate 3 different variations of the following query that would help find relevant information.
 The variations should:
 1. Use different words but maintain the same intent
 2. Be more specific or more general as appropriate
@@ -101,15 +107,21 @@ Query Variations:
 def create_answer_extraction_prompt(query: str, context: str) -> str:
     """
     Create a prompt for extracting answers from retrieved context.
-    
+
     Args:
         query: User query
         context: Retrieved context
-        
+
     Returns:
         Answer extraction prompt
     """
-    return f"""Based on the following context, provide a direct and comprehensive answer to the question.
+    return f"""## LANGUAGE HANDLING ##
+CRITICAL: Detect the primary language of the user question and context, then produce your ENTIRE answer in that same detected language.
+- If the question is in Chinese (中文), answer in Chinese
+- If the question is in English, answer in English
+- Your answer language must match the question language, NOT the language this prompt is written in
+
+Based on the following context, provide a direct and comprehensive answer to the question.
 If the context doesn't contain enough information, indicate what's missing.
 
 Context:
