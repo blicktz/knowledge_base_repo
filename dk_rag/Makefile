@@ -234,18 +234,22 @@ search: ## Search knowledge base (use SEARCH_QUERY="your query")
 		--n-results 10
 
 .PHONY: search-mental-models
-search-mental-models: ## Search for mental models and frameworks
-	@echo "$(BLUE)Searching for mental models...$(NC)"
-	@$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" search "mental models frameworks problem-solving" \
+search-mental-models: ## Search for mental models (use SEARCH_QUERY="your query")
+	@echo "$(BLUE)Searching mental models for: $(SEARCH_QUERY)$(NC)"
+	@cd .. && $(PYTHON) -m dk_rag.cli.knowledge_builder search-mental-models \
 		--persona-id "$(PERSONA_NAME)" \
-		--n-results 15
+		--query "$(SEARCH_QUERY)" \
+		--top-k 15 \
+		--verbose
 
 .PHONY: search-beliefs
-search-beliefs: ## Search for core beliefs and principles
-	@echo "$(BLUE)Searching for core beliefs...$(NC)"
-	@$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" search "core beliefs principles values philosophy" \
+search-beliefs: ## Search for core beliefs (use SEARCH_QUERY="your query")
+	@echo "$(BLUE)Searching core beliefs for: $(SEARCH_QUERY)$(NC)"
+	@cd .. && $(PYTHON) -m dk_rag.cli.knowledge_builder search-core-beliefs \
 		--persona-id "$(PERSONA_NAME)" \
-		--n-results 15
+		--query "$(SEARCH_QUERY)" \
+		--top-k 15 \
+		--verbose
 
 .PHONY: search-interactive
 search-interactive: ## Interactive search session
