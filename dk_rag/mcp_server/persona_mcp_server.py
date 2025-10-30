@@ -20,9 +20,8 @@ class PersonaMCPServer:
     """Simplified MCP Server - 3 tools for data retrieval only."""
 
     def __init__(self):
-        # Load settings
-        config_path = "dk_rag/config/persona_config.yaml"
-        self.settings = Settings(config_path=config_path)
+        # Load settings using default config (path-independent)
+        self.settings = Settings.from_default_config()
 
         # Initialize MCP server
         self.server = Server("persona-agent")
