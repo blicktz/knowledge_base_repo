@@ -6,25 +6,56 @@ are handled in Skills, not here!
 
 import json
 import asyncio
-from typing import Any, Dict, Optional
-from mcp.server import Server
-from mcp.server.stdio import stdio_server
-from mcp.types import Tool, TextContent
+import logging
+import logging.handlers
+from pathlib import Path
+from typing import Dict
+from mcp.server import FastMCP
+from mcp.types import TextContent
 
 from dk_rag.config.settings import Settings
 from dk_rag.core.knowledge_indexer import KnowledgeIndexer
 from dk_rag.core.persona_manager import PersonaManager
 
 
+def configure_mcp_logging():
+    """Configure logging for MCP stdio transport - file only, no console output."""
+    # Remove all existing handlers from root logger
+    root_logger = logging.getLogger()
+    for handler in root_logger.handlers[:]:
+        root_logger.removeHandler(handler)
+
+    # Set up file-based logging only
+    log_dir = Path("./logs/mcp_server")
+    log_dir.mkdir(parents=True, exist_ok=True)
+
+    file_handler = logging.handlers.RotatingFileHandler(
+        log_dir / "mcp_server.log",
+        maxBytes=10 * 1024 * 1024,  # 10MB
+        backupCount=5,
+        encoding='utf-8'
+    )
+    file_handler.setLevel(logging.DEBUG)
+    file_handler.setFormatter(logging.Formatter(
+        '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    ))
+
+    root_logger.addHandler(file_handler)
+    root_logger.setLevel(logging.INFO)
+
+
 class PersonaMCPServer:
     """Simplified MCP Server - 3 tools for data retrieval only."""
 
     def __init__(self):
+        # Configure logging for MCP stdio transport (file-only, no console)
+        configure_mcp_logging()
+
         # Load settings using default config (path-independent)
         self.settings = Settings.from_default_config()
 
-        # Initialize MCP server
-        self.server = Server("persona-agent")
+        # Initialize MCP server with ERROR log level to prevent logging leakage
+        self.mcp = FastMCP("persona-agent", log_level="ERROR")
 
         # Initialize persona manager
         self.persona_manager = PersonaManager(self.settings)
@@ -49,7 +80,7 @@ class PersonaMCPServer:
         """Register the 3 data retrieval tools."""
 
         # Tool 1: Retrieve Mental Models
-        @self.server.call_tool()
+        @self.mcp.tool()
         async def retrieve_mental_models(query: str, persona_id: str) -> list[TextContent]:
             """
             Retrieve step-by-step frameworks and mental models.
@@ -101,7 +132,7 @@ class PersonaMCPServer:
                 )]
 
         # Tool 2: Retrieve Core Beliefs
-        @self.server.call_tool()
+        @self.mcp.tool()
         async def retrieve_core_beliefs(query: str, persona_id: str) -> list[TextContent]:
             """
             Retrieve philosophical principles and core beliefs.
@@ -153,7 +184,7 @@ class PersonaMCPServer:
                 )]
 
         # Tool 3: Retrieve Transcripts
-        @self.server.call_tool()
+        @self.mcp.tool()
         async def retrieve_transcripts(query: str, persona_id: str) -> list[TextContent]:
             """
             Retrieve real examples, stories, and anecdotes from transcripts.
@@ -210,80 +241,15 @@ class PersonaMCPServer:
                     }, indent=2)
                 )]
 
-        # Register tool metadata
-        @self.server.list_tools()
-        async def list_tools() -> list[Tool]:
-            return [
-                Tool(
-                    name="retrieve_mental_models",
-                    description="Retrieve step-by-step frameworks and mental models for process-oriented queries. Returns structured frameworks with name, description, and steps.",
-                    inputSchema={
-                        "type": "object",
-                        "properties": {
-                            "query": {
-                                "type": "string",
-                                "description": "Process-oriented search query (10-20 words with context, e.g., 'customer acquisition strategies for AI SAAS startup')"
-                            },
-                            "persona_id": {
-                                "type": "string",
-                                "description": "Persona identifier (e.g., 'dan_kennedy', 'greg_startup')"
-                            }
-                        },
-                        "required": ["query", "persona_id"]
-                    }
-                ),
-                Tool(
-                    name="retrieve_core_beliefs",
-                    description="Retrieve philosophical principles and core beliefs for opinion-based queries. Returns belief statements with category and supporting evidence.",
-                    inputSchema={
-                        "type": "object",
-                        "properties": {
-                            "query": {
-                                "type": "string",
-                                "description": "Principle-oriented search query (8-15 words, e.g., 'beliefs about customer retention and loyalty')"
-                            },
-                            "persona_id": {
-                                "type": "string",
-                                "description": "Persona identifier (e.g., 'dan_kennedy', 'greg_startup')"
-                            }
-                        },
-                        "required": ["query", "persona_id"]
-                    }
-                ),
-                Tool(
-                    name="retrieve_transcripts",
-                    description="Retrieve real examples, stories, and anecdotes from transcripts. Use for factual queries and concrete evidence.",
-                    inputSchema={
-                        "type": "object",
-                        "properties": {
-                            "query": {
-                                "type": "string",
-                                "description": "Example-specific search query (10-20 words with specific context, e.g., 'successful lead magnet examples with conversion rates')"
-                            },
-                            "persona_id": {
-                                "type": "string",
-                                "description": "Persona identifier (e.g., 'dan_kennedy', 'greg_startup')"
-                            }
-                        },
-                        "required": ["query", "persona_id"]
-                    }
-                )
-            ]
-
-    async def run(self):
+    def run(self):
         """Run the MCP server using stdio transport."""
-        async with stdio_server() as (read_stream, write_stream):
-            await self.server.run(
-                read_stream,
-                write_stream,
-                self.server.create_initialization_options()
-            )
+        self.mcp.run(transport="stdio")
 
 
 def main():
     """Entry point for MCP server."""
     server = PersonaMCPServer()
-    asyncio.run(server.run())
+    server.run()
 
 
 if __name__ == "__main__":
