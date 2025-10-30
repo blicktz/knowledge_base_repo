@@ -195,27 +195,53 @@ class PersonaMCPServer:
             try:
                 indexer = self.get_knowledge_indexer(persona_id)
 
-                # Initialize advanced retrieval pipeline if not already done
-                if not indexer.advanced_pipeline:
-                    indexer._init_retrieval_components()
+                # Get the advanced retrieval pipeline (initializes if needed)
+                pipeline = indexer.get_advanced_retrieval_pipeline(persona_id)
+
+                if not pipeline:
+                    # Fallback error if Phase 2 not available
+                    return [TextContent(
+                        type="text",
+                        text=json.dumps({
+                            "error": "Advanced retrieval pipeline not available. Phase 2 may not be enabled.",
+                            "tool": "retrieve_transcripts",
+                            "persona_id": persona_id,
+                            "query": query
+                        }, indent=2)
+                    )]
 
                 # Use advanced pipeline for transcript retrieval
                 results = await asyncio.to_thread(
-                    indexer.advanced_pipeline.retrieve,
+                    pipeline.retrieve,
                     query=query,
                     k=3,
+                    use_hyde=True,
+                    use_hybrid=True,
+                    use_reranking=True,
                     return_scores=True
                 )
 
                 formatted_results = []
-                for doc, score in results:
-                    formatted_results.append({
-                        "content": doc.page_content,
-                        "document_id": doc.metadata.get("document_id", ""),
-                        "chunk_id": doc.metadata.get("chunk_id", ""),
-                        "score": float(score) if score else 0.0,
-                        "metadata": doc.metadata
-                    })
+                for result in results:
+                    # Handle tuple format (doc, score) when return_scores=True
+                    if isinstance(result, tuple) and len(result) == 2:
+                        doc, score = result
+                        formatted_results.append({
+                            "content": doc.page_content,
+                            "document_id": doc.metadata.get("document_id", ""),
+                            "chunk_id": doc.metadata.get("chunk_id", ""),
+                            "score": float(score) if score else 0.0,
+                            "metadata": doc.metadata
+                        })
+                    elif hasattr(result, 'page_content'):
+                        # Document without score
+                        formatted_results.append({
+                            "content": result.page_content,
+                            "document_id": result.metadata.get("document_id", ""),
+                            "chunk_id": result.metadata.get("chunk_id", ""),
+                            "score": 0.0,
+                            "metadata": result.metadata
+                        })
 
                 output = {
                     "tool": "retrieve_transcripts",
