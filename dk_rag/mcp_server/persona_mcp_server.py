@@ -19,18 +19,26 @@ from dk_rag.core.persona_manager import PersonaManager
 
 
 def configure_mcp_logging():
-    """Configure logging for MCP stdio transport - file only, no console output."""
+    """Configure logging for MCP stdio transport - file only, no console output.
+
+    Returns:
+        Path: Absolute path to the log file
+    """
     # Remove all existing handlers from root logger
     root_logger = logging.getLogger()
     for handler in root_logger.handlers[:]:
         root_logger.removeHandler(handler)
 
-    # Set up file-based logging only
-    log_dir = Path("./logs/mcp_server")
+    # Set up file-based logging only - use absolute path
+    # Get project root (3 levels up from this file: mcp_server -> dk_rag -> project_root)
+    project_root = Path(__file__).parent.parent.parent
+    log_dir = project_root / "logs" / "mcp_server"
     log_dir.mkdir(parents=True, exist_ok=True)
 
+    log_file_path = log_dir / "mcp_server.log"
+
     file_handler = logging.handlers.RotatingFileHandler(
-        log_dir / "mcp_server.log",
+        log_file_path,
         maxBytes=10 * 1024 * 1024,  # 10MB
         backupCount=5,
         encoding='utf-8'
@@ -43,25 +51,30 @@ def configure_mcp_logging():
     root_logger.addHandler(file_handler)
     root_logger.setLevel(logging.INFO)
 
+    return log_file_path
+
 
 class PersonaMCPServer:
     """Simplified MCP Server - 3 tools for data retrieval only."""
 
     def __init__(self):
         # Configure logging for MCP stdio transport (file-only, no console)
-        configure_mcp_logging()
+        self.log_file_path = configure_mcp_logging()
 
         # Load settings using default config (path-independent)
         self.settings = Settings.from_default_config()
 
-        # Initialize MCP server with ERROR log level to prevent logging leakage
-        self.mcp = FastMCP("persona-agent", log_level="ERROR")
+        # Initialize MCP server with INFO log level for observability
+        self.mcp = FastMCP("persona-agent", log_level="INFO")
 
         # Initialize persona manager
         self.persona_manager = PersonaManager(self.settings)
 
         # Cache for persona-specific knowledge indexers
         self._knowledge_indexers: Dict[str, KnowledgeIndexer] = {}
+
+        # Set up logger for tool call tracking
+        self.logger = logging.getLogger(__name__)
 
         # Register tools
         self._register_tools()
@@ -88,6 +101,7 @@ class PersonaMCPServer:
             Use for "how-to" questions that need process guidance.
             Query should be 10-20 words with rich context.
             """
+            self.logger.info(f"[TOOL CALL] retrieve_mental_models | persona_id={persona_id} | query={query}")
             try:
                 indexer = self.get_knowledge_indexer(persona_id)
                 results = indexer.search_mental_models(
@@ -97,6 +111,7 @@ class PersonaMCPServer:
                     use_reranking=True
                 )
 
+                self.logger.info(f"[TOOL SUCCESS] retrieve_mental_models | results_count={len(results)}")
                 formatted_results = []
                 for result in results:
                     formatted_results.append({
@@ -121,6 +136,7 @@ class PersonaMCPServer:
                 )]
 
             except Exception as e:
+                self.logger.error(f"[TOOL ERROR] retrieve_mental_models | error={str(e)}", exc_info=True)
                 return [TextContent(
                     type="text",
                     text=json.dumps({
@@ -140,6 +156,7 @@ class PersonaMCPServer:
             Use for "why" questions and opinion-based queries.
             Query should be 8-15 words focused on principles.
             """
+            self.logger.info(f"[TOOL CALL] retrieve_core_beliefs | persona_id={persona_id} | query={query}")
             try:
                 indexer = self.get_knowledge_indexer(persona_id)
                 results = indexer.search_core_beliefs(
@@ -149,6 +166,7 @@ class PersonaMCPServer:
                     use_reranking=True
                 )
 
+                self.logger.info(f"[TOOL SUCCESS] retrieve_core_beliefs | results_count={len(results)}")
                 formatted_results = []
                 for result in results:
                     formatted_results.append({
@@ -173,6 +191,7 @@ class PersonaMCPServer:
                 )]
 
             except Exception as e:
+                self.logger.error(f"[TOOL ERROR] retrieve_core_beliefs | error={str(e)}", exc_info=True)
                 return [TextContent(
                     type="text",
                     text=json.dumps({
@@ -192,6 +211,7 @@ class PersonaMCPServer:
             Use for factual queries and concrete evidence.
             Query should be 10-20 words with specific context.
             """
+            self.logger.info(f"[TOOL CALL] retrieve_transcripts | persona_id={persona_id} | query={query}")
             try:
                 indexer = self.get_knowledge_indexer(persona_id)
 
@@ -200,6 +220,7 @@ class PersonaMCPServer:
 
                 if not pipeline:
                     # Fallback error if Phase 2 not available
+                    self.logger.error(f"[TOOL ERROR] retrieve_transcripts | error=Pipeline not available")
                     return [TextContent(
                         type="text",
                         text=json.dumps({
@@ -221,6 +242,7 @@ class PersonaMCPServer:
                     return_scores=True
                 )
 
+                self.logger.info(f"[TOOL SUCCESS] retrieve_transcripts | results_count={len(results)}")
                 formatted_results = []
                 for result in results:
                     # Handle tuple format (doc, score) when return_scores=True
@@ -257,6 +279,7 @@ class PersonaMCPServer:
                 )]
 
             except Exception as e:
+                self.logger.error(f"[TOOL ERROR] retrieve_transcripts | error={str(e)}", exc_info=True)
                 return [TextContent(
                     type="text",
                     text=json.dumps({
@@ -269,6 +292,11 @@ class PersonaMCPServer:
 
     def run(self):
         """Run the MCP server using stdio transport."""
+        self.logger.info("=" * 60)
+        self.logger.info("MCP Server Starting - persona-agent")
+        self.logger.info(f"Log file: {self.log_file_path.absolute()}")
+        self.logger.info("Available tools: retrieve_mental_models, retrieve_core_beliefs, retrieve_transcripts")
+        self.logger.info("=" * 60)
         self.mcp.run(transport="stdio")
 
 
