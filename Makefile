@@ -1114,3 +1114,18 @@ youtube-help: ## Show YouTube MP3 download help
 	@echo "  - Downloads are queued in Metube and processed automatically"
 	@echo "  - Files are saved to Metube's configured output directory"
 	@echo "  - Use Metube web interface to configure audio format (MP3/M4A/etc)"
+#=============================================================================
+# Persona MCP Server and Skills Management
+#=============================================================================
+
+.PHONY: generate-skills generate-skill-% test-mcp-server
+
+generate-skills: ## Generate Claude Code Skills from all persona artifacts
+	poetry run python dk_rag/scripts/generate_persona_skills.py
+
+generate-skill-%: ## Generate Skill for specific persona (e.g., make generate-skill-dan_kennedy_god_of_direct_response_marketing)
+	poetry run python dk_rag/scripts/generate_persona_skills.py --persona-id $*
+
+test-mcp-server: ## Test the MCP server standalone
+	poetry run python -m dk_rag.mcp_server
+

@@ -45,6 +45,7 @@ langgraph = "^0.6.7"
 gradio = "^5.47.1"
 chainlit = "^2.8.1"
 jieba = "^0.42.1"
+mcp = "^1.19.0"
 
 
 [tool.poetry.group.dev.dependencies]
