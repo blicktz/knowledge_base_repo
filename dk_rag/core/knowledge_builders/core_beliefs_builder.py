@@ -158,10 +158,13 @@ class CoreBeliefsBuilder(BaseKnowledgeBuilder):
         
         # Add core belief specific metadata
         metadata.update({
-            # Core belief fields (simple types only - complex data is in document content)
+            # Core belief fields
             'statement': item.get('statement', '').strip(),
             'category': item.get('category', '').strip(),
-            
+
+            # Structured data (array stored for programmatic access)
+            'supporting_evidence': item.get('supporting_evidence', []),
+
             # Derived metrics for search optimization
             'evidence_count': len(item.get('supporting_evidence', [])),
             'evidence_strength': self._calculate_evidence_strength(item),

@@ -169,10 +169,14 @@ class MentalModelsBuilder(BaseKnowledgeBuilder):
         
         # Add mental model specific metadata
         metadata.update({
-            # Core mental model fields (simple types only - complex data is in document content)
+            # Core mental model fields
             'name': item.get('name', '').strip(),
             'description': item.get('description', '').strip(),
-            
+
+            # Structured data (arrays stored for programmatic access)
+            'steps': item.get('steps', []),
+            'categories': item.get('categories', []),
+
             # Derived metrics for search optimization
             'steps_count': len(item.get('steps', [])),
             'categories_count': len(item.get('categories', [])),
