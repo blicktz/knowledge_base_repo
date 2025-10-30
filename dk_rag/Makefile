@@ -7,8 +7,8 @@ PYTHON := poetry run python
 PYTEST := poetry run pytest
 MODULE := dk_rag.cli.persona_builder
 
-# Default paths - customize these for your setup
-DOCS_DIR ?= /Users/blickt/Documents/src/pdf_2_text/content_repo/nihaixia
+# Default paths - customize these for your setup,DOCS_DIR must match the persona name in oder to build correct kb
+DOCS_DIR ?= /Users/blickt/Documents/src/pdf_2_text/content_repo/Alex_Hormozi
 OUTPUT_DIR ?= ./output
 CONFIG_FILE ?= ./config/persona_config.yaml
 PATTERN ?= *.txt
@@ -96,6 +96,9 @@ rebuild-kb: ## Clear and rebuild knowledge base from scratch
 	@read -p "Are you sure? [y/N]: " confirm; \
 	if [ "$$confirm" = "y" ] || [ "$$confirm" = "Y" ]; then \
 		echo "$(BLUE)Rebuilding knowledge base from scratch...$(NC)"; \
+		echo "$(BLUE)Clearing transcripts retrieval cache...$(NC)"; \
+		rm -rf "$(STORAGE_BASE_DIR)/retrieval_cache/transcripts/"* 2>/dev/null || true; \
+		echo "$(GREEN)✓ Cache cleared$(NC)"; \
 		$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" build-kb \
 			--persona-id "$(PERSONA_NAME)" \
 			--documents-dir "$(DOCS_DIR)" \

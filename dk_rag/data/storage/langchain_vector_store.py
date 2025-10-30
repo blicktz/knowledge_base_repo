@@ -222,7 +222,78 @@ class LangChainVectorStore:
             List of (document, score) tuples
         """
         return self.vector_store.similarity_search_by_vector_with_relevance_scores(embedding, k=k)
-    
+
+    def search(self, query: str, n_results: int = 10) -> List[Dict[str, Any]]:
+        """
+        Search documents and return results in dictionary format.
+
+        Wrapper around similarity_search_with_score that returns results in the
+        format expected by knowledge_indexer and CLI commands.
+
+        Args:
+            query: Search query string
+            n_results: Number of results to return
+
+        Returns:
+            List of result dictionaries with content, metadata, and similarity_score
+        """
+        try:
+            # Perform similarity search with scores
+            results_with_scores = self.similarity_search_with_score(query, k=n_results)
+
+            # Convert to expected dictionary format
+            formatted_results = []
+            for doc, score in results_with_scores:
+                formatted_results.append({
+                    'content': doc.page_content,
+                    'metadata': doc.metadata,
+                    'similarity_score': score
+                })
+
+            self.logger.debug(f"Search returned {len(formatted_results)} results")
+            return formatted_results
+
+        except Exception as e:
+            self.logger.error(f"Search failed: {e}")
+            return []
+
+    def search_by_source(self, query: str, source_filter: str, n_results: int = 10) -> List[Dict[str, Any]]:
+        """
+        Search documents filtered by source.
+
+        Args:
+            query: Search query string
+            source_filter: Source to filter by (exact match on metadata['source'])
+            n_results: Number of results to return
+
+        Returns:
+            List of result dictionaries with content, metadata, and similarity_score
+        """
+        try:
+            # Perform similarity search with metadata filter
+            filter_dict = {"source": source_filter}
+            results_with_scores = self.vector_store.similarity_search_with_score(
+                query,
+                k=n_results,
+                filter=filter_dict
+            )
+
+            # Convert to expected dictionary format
+            formatted_results = []
+            for doc, score in results_with_scores:
+                formatted_results.append({
+                    'content': doc.page_content,
+                    'metadata': doc.metadata,
+                    'similarity_score': score
+                })
+
+            self.logger.debug(f"Search by source '{source_filter}' returned {len(formatted_results)} results")
+            return formatted_results
+
+        except Exception as e:
+            self.logger.error(f"Search by source failed: {e}")
+            return []
+
     def get_all_documents(self) -> List[Dict[str, Any]]:
         """
         Get all documents from the collection for BM25 indexing.
