@@ -108,13 +108,23 @@ class MentalModelsPipeline:
                 filter_by_categories=filter_by_categories
             )
             stage_timings["vector_search"] = time.time() - start_time
-            
+
             if not candidates:
                 self.logger.warning(f"No candidates found for query: {query[:100]}...")
                 self._log_pipeline_execution(query, stage_timings, {}, pipeline_metadata)
                 return []
-            
+
             self.logger.debug(f"Vector search found {len(candidates)} candidates")
+
+            # Debug: Log metadata presence for first few candidates
+            for i, doc in enumerate(candidates[:3]):
+                steps_text = doc.metadata.get('steps_text', '')
+                name = doc.metadata.get('name', 'Unknown')
+                self.logger.debug(
+                    f"Candidate {i+1}: '{name}' - "
+                    f"steps_text length: {len(steps_text)} chars, "
+                    f"metadata keys: {list(doc.metadata.keys())}"
+                )
             
             # Stage 2: Cross-Encoder Reranking (optional)
             if use_reranking and candidates:
@@ -126,8 +136,22 @@ class MentalModelsPipeline:
                     return_scores=return_scores
                 )
                 stage_timings["reranking"] = time.time() - rerank_start
-                
+
                 self.logger.debug(f"Reranking returned {len(final_results)} results")
+
+                # Debug: Verify metadata preservation after reranking
+                for i, item in enumerate(final_results[:3]):
+                    if return_scores:
+                        result, score = item
+                    else:
+                        result = item
+                    steps_count = len(result.steps) if hasattr(result, 'steps') else 0
+                    name = result.name if hasattr(result, 'name') else 'Unknown'
+                    self.logger.debug(
+                        f"Reranked result {i+1}: '{name}' - "
+                        f"steps count: {steps_count}, "
+                        f"has metadata: {hasattr(result, 'metadata')}"
+                    )
             else:
                 # No reranking, convert to MentalModelResult and take top k
                 final_results = self._convert_to_results(candidates[:k], return_scores)

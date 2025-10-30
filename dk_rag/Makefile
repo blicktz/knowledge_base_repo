@@ -188,39 +188,69 @@ export-personas: ## Export all personas to output directory
 build-mental-models: ## Build mental models RAG from latest Phase 1 artifact (PERSONA_NAME="greg_startup")
 	@echo "$(BLUE)Building mental models RAG for persona: $(PERSONA_NAME)$(NC)"
 	@echo "========================================"
-	@echo "🔍 Auto-discovering latest Phase 1 artifact..."
-	@echo "🧠 Rebuilding from scratch (small data size)..."
-	@cd .. && $(PYTHON) -m dk_rag.cli.knowledge_builder build-mental-models-auto --persona-id "$(PERSONA_NAME)" --rebuild --verbose
-	@echo "$(GREEN)✅ Mental models RAG build complete!$(NC)"
+	@echo "$(YELLOW)⚠️  This will delete existing mental models database for $(PERSONA_NAME)$(NC)"
+	@read -p "Continue? [y/N]: " confirm; \
+	if [ "$$confirm" = "y" ] || [ "$$confirm" = "Y" ]; then \
+		echo "$(BLUE)Removing old mental models database...$(NC)"; \
+		rm -rf "$(PERSONAS_DIR)/$(PERSONA_NAME)/vector_db_mental_models"; \
+		echo "$(GREEN)✓ Old database removed$(NC)"; \
+		echo "🔍 Auto-discovering latest Phase 1 artifact..."; \
+		echo "🧠 Rebuilding from scratch (small data size)..."; \
+		cd .. && $(PYTHON) -m dk_rag.cli.knowledge_builder build-mental-models-auto --persona-id "$(PERSONA_NAME)" --rebuild --verbose; \
+		echo "$(GREEN)✅ Mental models RAG build complete!$(NC)"; \
+	else \
+		echo "$(YELLOW)Cancelled$(NC)"; \
+	fi
 
 .PHONY: build-core-beliefs
 build-core-beliefs: ## Build core beliefs RAG from latest Phase 1 artifact (PERSONA_NAME="greg_startup")
 	@echo "$(BLUE)Building core beliefs RAG for persona: $(PERSONA_NAME)$(NC)"
 	@echo "========================================"
-	@echo "🔍 Auto-discovering latest Phase 1 artifact..."
-	@echo "💭 Rebuilding from scratch (small data size)..."
-	@cd .. && $(PYTHON) -m dk_rag.cli.knowledge_builder build-core-beliefs-auto --persona-id "$(PERSONA_NAME)" --rebuild --verbose
-	@echo "$(GREEN)✅ Core beliefs RAG build complete!$(NC)"
+	@echo "$(YELLOW)⚠️  This will delete existing core beliefs database for $(PERSONA_NAME)$(NC)"
+	@read -p "Continue? [y/N]: " confirm; \
+	if [ "$$confirm" = "y" ] || [ "$$confirm" = "Y" ]; then \
+		echo "$(BLUE)Removing old core beliefs database...$(NC)"; \
+		rm -rf "$(PERSONAS_DIR)/$(PERSONA_NAME)/vector_db_core_beliefs"; \
+		echo "$(GREEN)✓ Old database removed$(NC)"; \
+		echo "🔍 Auto-discovering latest Phase 1 artifact..."; \
+		echo "💭 Rebuilding from scratch (small data size)..."; \
+		cd .. && $(PYTHON) -m dk_rag.cli.knowledge_builder build-core-beliefs-auto --persona-id "$(PERSONA_NAME)" --rebuild --verbose; \
+		echo "$(GREEN)✅ Core beliefs RAG build complete!$(NC)"; \
+	else \
+		echo "$(YELLOW)Cancelled$(NC)"; \
+	fi
 
 .PHONY: build-knowledge-rag
 build-knowledge-rag: ## Build both mental models and core beliefs RAG (PERSONA_NAME="greg_startup")
 	@echo "$(BLUE)Building complete knowledge RAG for persona: $(PERSONA_NAME)$(NC)"
 	@echo "======================================================"
-	@echo "🔍 Building mental models and core beliefs from latest Phase 1 artifact..."
-	@echo ""
-	@echo "$(YELLOW)Step 1/2: Mental Models...$(NC)"
-	@$(MAKE) build-mental-models PERSONA_NAME="$(PERSONA_NAME)"
-	@echo ""
-	@echo "$(YELLOW)Step 2/2: Core Beliefs...$(NC)"
-	@$(MAKE) build-core-beliefs PERSONA_NAME="$(PERSONA_NAME)"
-	@echo ""
-	@echo "$(GREEN)🎉 Complete knowledge RAG build finished!$(NC)"
-	@echo "$(GREEN)   - Mental models RAG: ✅$(NC)"
-	@echo "$(GREEN)   - Core beliefs RAG: ✅$(NC)"
-	@echo ""
-	@echo "$(YELLOW)💡 You can now search these knowledge bases using:$(NC)"
-	@echo "   cd .. && $(PYTHON) -m dk_rag.cli.knowledge_builder search-mental-models --persona-id \"$(PERSONA_NAME)\" --query \"your query\""
-	@echo "   cd .. && $(PYTHON) -m dk_rag.cli.knowledge_builder search-core-beliefs --persona-id \"$(PERSONA_NAME)\" --query \"your query\""
+	@echo "$(YELLOW)⚠️  This will delete existing mental models AND core beliefs databases for $(PERSONA_NAME)$(NC)"
+	@read -p "Continue? [y/N]: " confirm; \
+	if [ "$$confirm" = "y" ] || [ "$$confirm" = "Y" ]; then \
+		echo "$(BLUE)Removing old databases...$(NC)"; \
+		rm -rf "$(PERSONAS_DIR)/$(PERSONA_NAME)/vector_db_mental_models"; \
+		rm -rf "$(PERSONAS_DIR)/$(PERSONA_NAME)/vector_db_core_beliefs"; \
+		echo "$(GREEN)✓ Old databases removed$(NC)"; \
+		echo "🔍 Building mental models and core beliefs from latest Phase 1 artifact..."; \
+		echo ""; \
+		echo "$(YELLOW)Step 1/2: Mental Models...$(NC)"; \
+		cd .. && $(PYTHON) -m dk_rag.cli.knowledge_builder build-mental-models-auto --persona-id "$(PERSONA_NAME)" --rebuild --verbose; \
+		echo "$(GREEN)✅ Mental models RAG build complete!$(NC)"; \
+		echo ""; \
+		echo "$(YELLOW)Step 2/2: Core Beliefs...$(NC)"; \
+		cd .. && $(PYTHON) -m dk_rag.cli.knowledge_builder build-core-beliefs-auto --persona-id "$(PERSONA_NAME)" --rebuild --verbose; \
+		echo "$(GREEN)✅ Core beliefs RAG build complete!$(NC)"; \
+		echo ""; \
+		echo "$(GREEN)🎉 Complete knowledge RAG build finished!$(NC)"; \
+		echo "$(GREEN)   - Mental models RAG: ✅$(NC)"; \
+		echo "$(GREEN)   - Core beliefs RAG: ✅$(NC)"; \
+		echo ""; \
+		echo "$(YELLOW)💡 You can now search these knowledge bases using:$(NC)"; \
+		echo "   cd .. && $(PYTHON) -m dk_rag.cli.knowledge_builder search-mental-models --persona-id \"$(PERSONA_NAME)\" --query \"your query\""; \
+		echo "   cd .. && $(PYTHON) -m dk_rag.cli.knowledge_builder search-core-beliefs --persona-id \"$(PERSONA_NAME)\" --query \"your query\""; \
+	else \
+		echo "$(YELLOW)Cancelled$(NC)"; \
+	fi
 
 # =============================================================================
 # SEARCH & QUERY TARGETS
