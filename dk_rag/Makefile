@@ -194,6 +194,9 @@ build-mental-models: ## Build mental models RAG from latest Phase 1 artifact (PE
 		echo "$(BLUE)Removing old mental models database...$(NC)"; \
 		rm -rf "$(PERSONAS_DIR)/$(PERSONA_NAME)/vector_db_mental_models"; \
 		echo "$(GREEN)✓ Old database removed$(NC)"; \
+		echo "$(BLUE)Clearing mental models retrieval cache...$(NC)"; \
+		rm -rf "$(STORAGE_BASE_DIR)/retrieval_cache/mental_models/"* 2>/dev/null || true; \
+		echo "$(GREEN)✓ Cache cleared$(NC)"; \
 		echo "🔍 Auto-discovering latest Phase 1 artifact..."; \
 		echo "🧠 Rebuilding from scratch (small data size)..."; \
 		cd .. && $(PYTHON) -m dk_rag.cli.knowledge_builder build-mental-models-auto --persona-id "$(PERSONA_NAME)" --rebuild --verbose; \
@@ -212,6 +215,9 @@ build-core-beliefs: ## Build core beliefs RAG from latest Phase 1 artifact (PERS
 		echo "$(BLUE)Removing old core beliefs database...$(NC)"; \
 		rm -rf "$(PERSONAS_DIR)/$(PERSONA_NAME)/vector_db_core_beliefs"; \
 		echo "$(GREEN)✓ Old database removed$(NC)"; \
+		echo "$(BLUE)Clearing core beliefs retrieval cache...$(NC)"; \
+		rm -rf "$(STORAGE_BASE_DIR)/retrieval_cache/core_beliefs/"* 2>/dev/null || true; \
+		echo "$(GREEN)✓ Cache cleared$(NC)"; \
 		echo "🔍 Auto-discovering latest Phase 1 artifact..."; \
 		echo "💭 Rebuilding from scratch (small data size)..."; \
 		cd .. && $(PYTHON) -m dk_rag.cli.knowledge_builder build-core-beliefs-auto --persona-id "$(PERSONA_NAME)" --rebuild --verbose; \
@@ -231,6 +237,10 @@ build-knowledge-rag: ## Build both mental models and core beliefs RAG (PERSONA_N
 		rm -rf "$(PERSONAS_DIR)/$(PERSONA_NAME)/vector_db_mental_models"; \
 		rm -rf "$(PERSONAS_DIR)/$(PERSONA_NAME)/vector_db_core_beliefs"; \
 		echo "$(GREEN)✓ Old databases removed$(NC)"; \
+		echo "$(BLUE)Clearing retrieval caches...$(NC)"; \
+		rm -rf "$(STORAGE_BASE_DIR)/retrieval_cache/mental_models/"* 2>/dev/null || true; \
+		rm -rf "$(STORAGE_BASE_DIR)/retrieval_cache/core_beliefs/"* 2>/dev/null || true; \
+		echo "$(GREEN)✓ Caches cleared$(NC)"; \
 		echo "🔍 Building mental models and core beliefs from latest Phase 1 artifact..."; \
 		echo ""; \
 		echo "$(YELLOW)Step 1/2: Mental Models...$(NC)"; \
