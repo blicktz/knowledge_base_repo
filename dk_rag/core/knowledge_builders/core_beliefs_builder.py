@@ -162,8 +162,8 @@ class CoreBeliefsBuilder(BaseKnowledgeBuilder):
             'statement': item.get('statement', '').strip(),
             'category': item.get('category', '').strip(),
 
-            # Structured data (array stored for programmatic access)
-            'supporting_evidence': item.get('supporting_evidence', []),
+            # Structured data (stored as delimited string for ChromaDB compatibility)
+            'supporting_evidence_text': '\n'.join(str(e) for e in item.get('supporting_evidence', [])),
 
             # Derived metrics for search optimization
             'evidence_count': len(item.get('supporting_evidence', [])),

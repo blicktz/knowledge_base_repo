@@ -173,9 +173,9 @@ class MentalModelsBuilder(BaseKnowledgeBuilder):
             'name': item.get('name', '').strip(),
             'description': item.get('description', '').strip(),
 
-            # Structured data (arrays stored for programmatic access)
-            'steps': item.get('steps', []),
-            'categories': item.get('categories', []),
+            # Structured data (stored as delimited strings for ChromaDB compatibility)
+            'steps_text': '\n'.join(str(s) for s in item.get('steps', [])),
+            'categories_text': '|'.join(str(c) for c in item.get('categories', [])),
 
             # Derived metrics for search optimization
             'steps_count': len(item.get('steps', [])),
