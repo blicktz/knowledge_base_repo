@@ -95,6 +95,7 @@ class PersonaSkillGenerator:
             'copywrite_experts': 'copywrite-experts',
             'instantly_ai_founders': 'instantly-ai',
             'konstantinos_doulgeridis_youtuber': 'konstantinos',
+            'starter_story_youtuber': 'starter-story',
             'nihaixia_suanming': 'nihaixia'
         }
 
