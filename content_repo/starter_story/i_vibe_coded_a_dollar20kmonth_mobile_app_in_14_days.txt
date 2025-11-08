@@ -1,0 +1,137 @@
+I'm 23 years old and my apps do over a million dollars in sales a year. This is Connor, a 23-year-old kid who cracked the code on building apps that actually make money. I built my latest app in less than two weeks, 100% with AI.
+
+To prove it, he joined a hackathon of over 55,000 people, built an app from scratch, grew it to $20,000 a month, and won the entire thing. The apps that I build are designed to make money from day one. I asked Connor to come onto the channel to break down his entire playbook for building money-making apps fast.
+
+And in this episode, we will dive into how he finds validated ideas that can make money from day one, exactly how he vibe codes these apps quickly, and his step-by-step playbook on how to grow them into money-making machines. Strap in because this is an episode you cannot miss. I'm Pat Walls, and this is Starter Story.
+
+All right, welcome Connor to the channel. Tell me about who you are, what you built, and what's your story. Hi, I'm Connor, and over the past few years, I've built a handful of mobile apps.
+
+These apps have done over a million in revenue now. I really only got into entrepreneurship roughly three years ago just by watching YouTube videos and staying optimistic on what I'm building. Okay, Connor, that's amazing.
+
+Can you share with me what types of apps that you've built? So I've built a bunch of different apps. I've probably got around six apps now.
+
+My most recent app is called Payout, and this is one that I just recently launched in the beginning of August and just scaled it up to doing $20,000 a month in revenue. The downloads is over 12,000, over 1,300 new subscriptions. One cool thing is this is part of the Revenue Cat Chip-a-Tone competition.
+
+It's a hackathon that people can release new apps to the App Store. This year it had over 55,000 entrants, and it won first place for the Build and Grow Award, which has a total grand prize of $65,000 for the app that has the most growth over the two-month period. Before we get into the app and how you built it, I got to understand a little bit more about your background.
+
+I know you're only 23 years old, and it's pretty impressive what you've done. So tell me how you get to this place where you even start building apps. So before I started building apps, I was just, you know, any other kid playing too much video games, staying up late, no computer science background.
+
+One night in the middle of the night, I woke up and I just had a random app idea, and I wrote down the whole app idea in my notes. You know, I'd never coded anything. The next morning, I woke up and I just started watching YouTube videos, and I didn't have a MacBook at the time, and I really wanted to make an iOS app, and I didn't really have any money.
+
+So I started doing random tasks, just like selling random items around my room. And eventually, like, I got my hands on an old MacBook. I started building a social app called Hotspot Events.
+
+This app took me six to eight months to build. Kind of failed. I really had no idea what I was doing.
+
+After that first app, I quickly realized that apps that are social are super hard to scale. So I eventually moved on to utilities and tools, and these are much more easy to scale as a one-man person. This was all about three years ago, and since then, I've scaled these apps to doing over a million in subscription revenue.
+
+Okay, I mean, that's amazing. I love that you did this without having all the crazy tools or anything like that. So my next question for you is, how do you build these apps?
+
+What is your playbook for building these apps? How do you think about building an app from scratch? Yeah, before I get into how I do things today, I think it's important that people know that, you know, you don't need all these fancy tools.
+
+I was just watching YouTube videos and going on Stack Overflow, and now my process today is pretty straightforward. I have a very specific set of steps that I follow to make sure that the app I'm building has the ability to convert, drive a lot of sales, also have really good user retention. My first step is that I'll go and download a whole bunch of apps, maybe 20 apps that are in the niche that I'm diving into, as well as other apps that I just think are beautiful apps that I want to draw inspiration from for their design perspective.
+
+The next thing I do is screenshot every single page and every single onboarding. And I take all these screenshots, and I'll put them all in one big line in a Figma file, so I can see all of the onboardings, every question they ask, every graph they have. And I'll pick out all the ones that I like, and I'll grab some from one, some from another, and then I'll redesign them so I'll have my theme and my aesthetic that I want for my app.
+
+I think it's really important to have an extensive onboarding. Realistically, 90% of users will probably only ever see your onboarding if you have a paywalled section in your app. So I think it's really important that you spend a lot of time on this, maybe even as much time as designing the actual functionality of the app.
+
+When it comes to the onboarding, these are the most important things that you want to do to make sure that your app converts successfully. The first one is you want to invoke emotion. You want to make sure that when the user is going through the onboarding, they feel strongly about it.
+
+Most purchases are made emotionally and are not logical when it comes to consumers. You also want to make sure that you show the strongest incentives of your app, how it's going to improve your user's life. You want to make sure that they understand the benefits and that it's very simple for them to be able to make that purchase.
+
+It's also important to make sure that the app feels personalized. In today's day and age, when there's so much competition, people want to make sure that what they're buying feels like it's meant for them specifically, rather than just like a generally applicable app. Finally, you want to make sure that you have some sort of charts, graphs, something to make the app feel more scientific.
+
+People like to know that something that they're using has been proven to work, that other people have successfully used it. And by adding these charts and graphs, it'll make it so your app seems very legitimate. The next step is you're going to want to design your data structures.
+
+This is very important specifically for vibe coding. It's important to know what your data is going to look like, how it's shaped. Because when you feed the AI, such as cursor or Claude, it'll make it much more simple for the AI to know what exactly you're trying to build.
+
+So it doesn't have to make any guesses on what you're trying to make. I recommend making a text document with an explanation, as well as some JSON data that explains what your data actually looks like, and some information about each of the attributes that you're going to have for your data. By giving it this text document in advance, it allows me to code this thing very quickly.
+
+With this prep done, you can actually start to build the app. Usually, I'd start with building the core functionality of the app, skipping the onboarding, and just going straight for the main features of the app. You can really just drop the screenshots into Claude or Cursor, whatever AI you're using.
+
+And because it's now able to read the images and understand what it's looking at, it'll actually be able to write the code for the full screen for you. When working with AI, it doesn't always get everything right on the first time. So sometimes you need to just continue to work with it, and eventually it'll get the details correct.
+
+I don't recommend being too picky, because it's important to get a version out quickly, rather than getting a perfect app out. As far as the tools that I use now, I honestly just use Claude. That's the only thing I'm using for AI coding, and it does everything for me.
+
+It is absolutely insane that Connor was able to build and launch this app in just a few weeks. I hope that his story inspires a lot of people watching to get started and Vibecode stuff as well. However, I need you to be careful.
+
+I see a lot of people get into Vibecoding, try to one-shot something real quick, get lost, not be able to deploy, and then give up. Because here's the truth about building with AI. You need to know how to use these AI tools effectively, what to build, how to ship fast, and how to build something that actually works.
+
+Well, this is exactly why we launched Starter Story Build, which is our program where you will learn how to launch your project using only AI coding tools and do it in just a couple of weeks. Once you understand how to actually leverage these AI tools, you can build a lot faster and save a whole lot of time. So if you're ready to learn how to build apps the right way with AI, we'll head to the first link in the description to check out Starter Story Build.
+
+Our next cohort is starting this week, so definitely check out that link and save your spot. All right, let's get back to the video. The next question I have for you is around validation.
+
+You've built multiple apps that are really successful, and I know you've also built some stuff that wasn't successful as well. Looking back, how do you know if your app idea is validated and it's worth taking it the distance? So the way I see it is there's two different types of apps.
+
+There's innovating new ideas, and there's modifying versions of existing ideas. If you're creating a modified version of an existing app, then congrats, your app is already validated by other people. Now all you have to do is make some modifications and make it so the app feels like it's your own.
+
+The other option is when you're making something brand new. What I usually do when I'm making something brand new is go look on TikTok, Instagram, see if anyone's talking about the problem that you're trying to solve. You want to make sure that there's an easy path for you to market this app by looking at the comments and seeing like, are people asking questions, asking like, how do I solve this problem?
+
+Then now with the current state of how fast you can build apps, I actually will skip the waitlist steps and just go ahead and build the app. I really believe that any app can make thousands of dollars these days. Your idea doesn't have to be some crazy app that changes society to make a couple thousand dollars.
+
+There's hundreds of millions of people in the US alone, and if you can even capture a tiny grain of sand out of that, then you can make more than enough to sustain yourself. I agree with that too. There are so many apps out there that are crushing it that we don't even know about.
+
+It's pretty insane what's possible today. But as we know, building it is not enough. We have to focus on one very important thing, which is distribution.
+
+My next question for you is around marketing. What was your playbook to grow this app from zero to $20,000 a month in 50 days? And what is your general playbook for marketing apps?
+
+For this app, there was a couple different tactics that I used to get the app off the ground. The first one was influencer campaigns. This is when you work with an influencer and have them promote the app for their already existing audience.
+
+If you can work with an influencer and get them to promote your product, people already have some degree of trust for that influencer, and they're more likely to listen to their recommendations. For this app, I partnered with a content creator that was already in the niche for the app I was building, and his videos were able to drive a bunch of traffic to the app, like thousands of downloads. The goal is to create relatable, viral content about your app that comes off as natural and unprocessed.
+
+Once one of these videos starts to perform well, you can get more videos like that made with other creators, so you can have people just repeat formats that are working for you. One of the major benefits of running these UGC campaigns is that as these creators produce content, you're building out a library of ads that you can run in the future, and you already know relatively how good the performance will be on ads based on how well it did organically. And my goal is to always get my app to the point where I can run paid ads.
+
+It's the most consistent way to drive revenue growth to your app. Recently, the paid ads algorithm has changed. Facebook is trying to balance two things.
+
+They wanna make sure that the advertisers are happy with their results while also keeping people on the platform by making sure the videos are entertaining. The more entertaining your video is, the cheaper it'll be to get your video put in front of people, but you also wanna make sure that you're driving conversions. So your ad has to also make sure that it pushes your product.
+
+So it's important to find that balance between having a video that's very entertaining and also has the potential to convert. Thank you for sharing all those growth tactics. I think that might be the most important part.
+
+We haven't really talked too much about what your app actually does. Would you be able to show us a quick demo of your onboarding and how your app works? So my app is called Payout.
+
+It's a class action lawsuit discovery app that lets people find class action lawsuits that they already are applicable for. And this is basically just a way for people to get some money from companies that have done something wrong. So for the onboarding, I'll quickly run through it here, asking for activity, notifications.
+
+You can see the social proof. Here's the paywall. This paywall has been converting really well.
+
+You can see that I have a weekly and a yearly option here. And the goal is to prioritize users to get the yearly option since it has the highest lifetime value per customer. Here's the main feature of the app.
+
+It's a list of class action lawsuits that you can check and see if you're applicable for. For example, this one is the NBA Top Shot app. They had a privacy settlement over the Metapixel being on their website.
+
+You can see the description requirements of who's applicable for this lawsuit. You can press the get started button and fill form. And this will take you to a form that you can fill out, put all of your information in and have everything ready to go to mail this in and claim your class action settlement.
+
+And you can see the app will prepare the PDF ready for you to mail in. There's also the wallet tab where you can keep track of all the class action lawsuits that you're applying for and your forms tab where you can see all the forms that you've already filled out. Okay, I mean, that's a really cool idea for an app.
+
+I think anybody watching this right now probably wants to go on there and check and see if they're owed any money from these class action lawsuits. What is it about this app that really makes it work? Why do you think it did zero to 20K a month so fast?
+
+I think the value proposition for this app is just very obvious. There's some core things that all people want. They want to be healthier.
+
+They want to make more money. They want to look attractive. All sorts of things like this.
+
+I like to make apps that tap into these core human desires. And I think that anybody that wants to build apps should be doing the same. And this one plays into people want to make more money.
+
+So it's very easy for people to invest money into an app that they know will make them more money. Okay, I want to change topics a little bit and understand how you built this app. What tech stack do you use and what tools do you use to run this business?
+
+I use Figma for UI design, apps or screenshots and making the app icon. I use Mixpanel for analytics. I use Claude Code for vibe coding.
+
+For the more technical stuff, I'll use Next.js and TypeScript for my website and backend. I use Vercel for hosting. I use GitHub for version control as well as making it easier to host.
+
+I use Expo for cross-platform build management. And I use RevenueCat for subscription analytics and pricing testing. Okay, cool.
+
+Thanks for sharing. That's a pretty simple stack you got there. I like that.
+
+The last question that I have for you that I ask everyone who comes on to Starter Story, what advice would you have for anyone watching this that wants to build apps like you? You've built a bunch of successful stuff. You built some failed things.
+
+What would be your number one piece of advice on getting started today? My number one piece of advice would be to build something simple with a great onboarding. A simple app can make lots of money.
+
+You only really need one to three good features and your onboarding will pull most of the weight for you. All right. Well, that's great advice.
+
+Thank you, Connor, for coming on. I love what you built. Amazing stuff you shared here.
+
+Thanks for coming on and sharing everything. Yeah, thanks for having me. All right.
+
+I want to thank Connor for coming on to the channel. I hope this video finally gives you the proof that you can build apps in a matter of weeks that grow really, really fast. This video was the playbook here on how to do it and we're showing you the real actual app that he did it with.
+
+If you're ready to launch your app, then definitely check out Starter Story Build. We will help take your idea, turn it into a real app, get it in front of real people using only AI tools. If you're ready to get off the sidelines and launch, head to the link in the description and check out Starter Story Build.
+
+I promise you won't regret it. All right. That's it for this episode.
+
+Thank you guys for watching. We'll see you in the next one. Peace.

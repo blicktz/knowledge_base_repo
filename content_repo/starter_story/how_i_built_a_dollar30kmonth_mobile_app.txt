@@ -1,0 +1,147 @@
+My app has been downloaded five million times and I did it all by myself. This is John McAvoy, a gentleman from Scotland who taught himself how to code and built something incredible. I had a problem I needed to solve, so I built it.
+
+But here's what's even crazier. His app has been downloaded over five million times thanks to one simple strategy that costs him zero dollars. App Store optimization, it's really just about research and patience.
+
+I asked John to come onto the channel and he shared everything. And in this video, we'll go over the app that makes him $30,000 a month, his advice for finding great app ideas, and the simple and free strategy that helped him hit five million downloads. All right, this one's going to be fun.
+
+Let's dive in. I'm Pat Walls, and this is Starter Story. Okay, welcome, John from Scotland.
+
+Tell me about who you are, what you built, and what's your story? I built an app called Momigo. There's a bus and train tracking app.
+
+It covers over 160 cities, so it's been downloaded about just over five million times so far since 2017. I did it all solo with no previous developer experience. Okay, John, I mean, you're one guy who built an app that's used by millions of people.
+
+I think that's crazy. Can you share some of the numbers behind this app, behind what you built? Yeah, so right now, it's around $30,000 monthly recurring revenue.
+
+Pretty much all that subscription-based. Total number of downloads is around 5.2 million at the moment. The monthly active users is around 400,000, with around 75,000 ratings so far.
+
+All right, I mean, that's crazy. You did this without developer experience. Can you tell me a little bit more about your background and how you even got to a point where you could build an app like this?
+
+Yeah, so I started my career in graphic design, and as I started my career, more and more, I was just more curious about development. So JavaScript, backend systems, databases. It's just this curiosity about being able to make something out of nothing, creating software that just works and could be used by so many people.
+
+That's amazing. It reminds me of my story. Just it's so cool to build something and know that someone out there in the world is using it.
+
+Let's fast forward a little bit to the app that you actually built. How did you even get the idea for an app like this? At the time, I was working for a bus company in Edinburgh in Scotland.
+
+I wanted a way to see where a bus was on a map. Uber had just come out. It was such a thrill to be able to see a taxi coming along the map towards you, and I wanted to have the same experience waiting for a bus.
+
+I wanted something that would allow me to finish having my coffee in the morning without having to stand at a bus stop for 10, 20 minutes in the rain. And that was the initial idea behind the app. For any developer, any idea you have has to be something that you, a problem that you yourself have.
+
+And if it works for you, there's a good chance it'll work for lots of other people. Okay. So you mentioned you came from a designer background and you essentially taught yourself how to code.
+
+You're sort of self-taught. So tell me about how you actually built this thing. What was the build journey to turn basically no coding knowledge into a pretty, pretty legit complicated app?
+
+First of all, I started off with just creating designs in Illustrator. And once that was done, I started chipping away bit by bit at the development side. At this point, I didn't have any experience with smartphone app development.
+
+I turned to some of my coding experience in the past for websites. And so the first few versions of the app were built in Xamarin that uses C-sharp.net. That's what I was comfortable with at the time.
+
+It was a really tough process because the paradigm of creating an iOS and Android app is so different from creating a website. It was months of building, failing, tweaking. And once it was launched, I was able to spend some time making the code better because it was a mess.
+
+At this point, Swift had been around for a few years and Flutter had just been released. So I took a few months to rebuild the app in native Swift on iOS. And because of the way the app works with maps and sliding panels, Flutter was perfect.
+
+So it was able to rebuild very quickly within two or three months. Cool. Well, nowadays you can pretty much do all that with AI tools in three days, which is funny to look back at how much really had to go into building apps.
+
+When we chatted earlier, you let me know about this one thing that really took your app to the next level. Can you tell me what that was? Yeah, it's called app store optimization.
+
+And this is the process of finding specific phrases that people are searching for and including those in your app title, subtitle, and keyword list in order that when people search that sentence or phrase, your app comes up first. Okay. App store optimization.
+
+Can you break down what actually worked for you? How you got your app used by millions of people for essentially free? Can you give me this playbook right now?
+
+Okay. With app store optimization, there are three basic steps. Step one, you want to find in this case, location specific keywords, things like New York subway, Chicago train, add those to the title and metadata of the app that will start process of the app appearing in searches for those specific keywords.
+
+But it wasn't until I did some research that growth really happened. First of all, I could see that different cities use different terminology. So for example, in New York, you've got the MTA subway and Chicago, you have the CTA L train.
+
+Once I started adding these kind of keywords, I found that downloads increased substantially. At the same time, also updated screenshots. So they're much more location specific.
+
+So each localization would have its own set of screenshots to hone in on the fact that this app works for where you are right now. The next step was to use other localizations. So for example, if you were to add keywords to Mexican Spanish, those same keywords would be indexed for the US app store and have the same weight as the native US English localization.
+
+Step two was to find more keywords that worked. You have two choices. You can use Apple search ads, start testing a few keywords at a time to see which ones convert or using the app store itself.
+
+Search for terms, keywords and phrases around what your app does. By typing in the first few characters into search, you'll see a list come up. And most people, when you start typing, will see the list appear and tap on the first or second entry.
+
+So by looking at those lists, I was able to determine what are the most high impact keywords people are searching for. And the best thing about this is, is because they're very specific, they don't have a huge popularity. So by targeting those keywords specifically in the right place at the right time, you can quite easily get into the top five for a keyword.
+
+And step three, asking for ratings within the app. At this point, you should be at the top 10 for the keywords you're looking to target. If an app wants to get to number one, it needs ratings coming in all the time.
+
+You need to have golden moments where you can ask for a rating. In this case, it could be when you tap on a stop and see a live tracking of a bus or train. You can actually see it moving on the map.
+
+That's a great moment to ask the customer for a rating where the customer is most likely to respond positively. If you can get those ratings coming in, your app will rise organically to the top for all the keywords that you're targeting. Now, here's something I love about John's story.
+
+John didn't just build a cool app. He built a real business. That means dealing with taxes, bookkeeping, and all the admin stuff that has nothing to do with actually building.
+
+So many solo founders like John trip up on this part and put it off until it becomes a mess. Well, that's where Dula comes in. Dula helps you set up your LLC, handle your bookkeeping, and stay tax compliant all in one place.
+
+It's basically like having an ops team without the overhead. They don't just hand you a checklist and leave you to figure it all out. They actually stick with you and make sure you're set up for success from day one.
+
+Thousands of entrepreneurs in over 175 countries use Dula because it actually works. So let Dula handle the boring stuff for you so you can focus on what actually matters in building your business. If you're starting something right now, just head to the first link in the description and use code starter story for 10% off.
+
+Thank you to Dula for supporting the channel. All right, let's get back to the story. Let's switch topics a little bit to the growth of an app like this.
+
+I really want to understand what it takes to grow an app like yours from zero to $30,000 a month. Can you walk me through kind of the journey there? For the first couple of years, more and more downloads were coming in and I started to monetize using banner ads.
+
+It was making around say $8,000 a month, but then the pandemic hit and suddenly my ad revenue just disappeared. I knew I needed to pivot quickly. At this point, subscriptions were becoming more mainstream.
+
+So I rebuilt the app with subscriptions in mind, with premium features that would entice people to pay on an annual basis. In August 2020, that new update was released and over the next year, it grew and grew and eventually replaced the missing ad revenue. But in 2021, this is when the real growth happened because finally starting to use A-B testing, I started creating different paywalls to see which one performed better.
+
+And over the course of maybe two or three months, with maybe 10 experiments, I was able to increase the conversion rate from 0.5% all the way up to 8% just by optimizing the onboarding and paywall. And suddenly growth skyrocketed, going from around $8,000 a month to over $30,000. Okay, John, I would love to actually see your app.
+
+Would you be able to give us a quick demo of what your app actually does? I'd also love if you showed us this kind of onboarding paywall thing that you mentioned sort of changed the business as well when you made that big pivot. Could you show us the app?
+
+Okay, this is the first launch of the app. And it's really designed to very quickly show the value of the app. Because most people who are downloading and installing the app are doing so at a bus stop or a train station.
+
+So there's no time for a 20 screen onboarding. First of all, quickly ask for your location because that's one of the most important permissions for this app. And then shows you a few kind of screens about what you're going to get from this app.
+
+Not just bus tracking, but all the extra features. And this is kind of setting it up for the paywalls to come. It kind of shows a bit of social proof, right?
+
+It's just join millions saving time. And this gets the customer prepared. And that is the paywall itself.
+
+It's got three different options. A seven day free trial for a yearly plan. You have a weekly plan for a low commitment.
+
+And for people who just don't like subscriptions, you've got a lifetime plan. Now the great thing here is after a lot of experimentation, what I've found is a real unlock is for people who just tap on the close button, the app starts a reverse trial. So if I close it just now, it says enjoy a week of pro on us.
+
+And now your seven days free trial of all the pro features starts without you having to pay or without you having to make any kind of commitment. At this point, you've got a few screens showing what you get from pro showing off all the details. Finally, you're in the app.
+
+And now you can see everything around me. I can just move around the map. And I've just choose a little bus stop here.
+
+And what I can do here is I can just tap on a departure. And this is real magic moment. This is where you can actually see the bus on the map is moving.
+
+And if I tap on go, it will turn on trip assist. And then at that point, I won't just track where I am. I've got machine learning set up on the server that will keep track of what's happening up ahead on my journey.
+
+So if there's a train or bus that's delayed, or I'm going to miss a connection, the server will know and send me a notification and offer me an alternative route. And that's the real kind of magic of the app. All right.
+
+Well, the other question I have for you is what is this built on? Like what tech and what stack is this app built on right now? With this app, I go for old and boring, Laravel, PHP for the backend.
+
+And for all the kind of marketing materials, the kind of UI of the app, graphics, it's just Adobe Creative Suite. I use Lottie quite a lot for things like animations. I would create an animation in After Effects and convert it into Lottie for inclusion within the app.
+
+For ASO research, I tend to go for app figures. Revenue Cut is fantastic for subscription management. And the biggest unlock for me is using event analytics.
+
+I use Mixpanel. I use Cloudflare for a kind of geographic load balancer. And that costs around $90 a month.
+
+I do use ChatGPG for pretty much everything. And that's around $20 a month. On that same note, could you also share some of the costs around this business?
+
+I understand you're just one guy running it here. What are some of the tools you're paying for? What are the margins look like on this?
+
+The biggest cost for me are servers. So I run about 20 dedicated servers that cost around $2500 a month. For various third-party APIs, like mapping, that's around $1000 a month.
+
+Okay, last question that we ask everyone who comes on the Starter Story channel. If you could stand on John's shoulders when you're just starting out, back when you're a graphic designer, or for anyone watching this right now, what would be your advice for anyone starting a mobile app like you in 2025? Two things.
+
+Number one, you need to solve a problem that you have. Because when you're working nights and weekends, you're hitting walls all the time, you need something to keep you going. And solving your own problem is probably the best way to get past that block each time.
+
+And secondly, for the first couple of years, I was relying on kind of vanity metrics to see how well I was doing. Things like monthly active users. That wasn't really moving the needle.
+
+It was only when I moved to event-based analytics that growth really happened. Being able to set up A-B tests for different paywalls to see which one is more effective. By trusting the data that you get from these kind of analytics, you'll have a much better idea of who your customers are and what they want.
+
+All right. Well, that was great advice. Thank you for sharing that, John.
+
+What you built is awesome. I think it's amazing that you built something by yourself that's used by millions of people. I think it's amazing.
+
+So thanks for coming on, sharing everything, especially all that cool stuff about App Store optimization. Thanks for coming on. It's been my pleasure.
+
+Thanks to John for coming on the channel and sharing his strategy. I think it's insane that someone like John from Scotland can come up with an idea, build it, and then 5 million people can use it and love it and it can make money. That's just amazing.
+
+That's what Starter Story is all about. And this is exactly why we launched Starter Story Build, where we will help you take your idea and turn it into a real app using only AI tools. So if you're ready to launch your project, just like John did, head to the link in the description to check out Starter Story Build.
+
+All right. That's it for this episode. Thank you guys for watching.
+
+We'll see you in the next one. Peace. Bye.
+
+So

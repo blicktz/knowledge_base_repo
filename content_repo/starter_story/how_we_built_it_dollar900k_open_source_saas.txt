@@ -1,0 +1,143 @@
+I'm Yule, co-founder of PaperMark. And I'm Mark. We bootstrapped PaperMark to 75k MRR.
+
+This husband and wife duo built a near million dollar business thanks to this open source SaaS. Yeah, I think off the bat, being open source was the right bet for us. In just a year and a half, they took a weekend open source project to $75,000 MRR.
+
+PaperMark started as a tweet. So I asked both of them to come onto the channel and break all of it down. In this video, you'll learn why open source is actually a really genius business model, how there are loads of big companies just waiting to be open sourced, and how to grow in open source if you're just starting out today.
+
+All right, let's dive in. I'm Pat Walls, and this is Starter Story. All right, welcome Mark and Yulia to the channel, telling me about who you are, what you built, and what's your story.
+
+Hey, Pat, I'm Mark, co-founder of PaperMark. It's the open source successor to DocSend for sharing documents and data rooms securely. PaperMark started as an open source project on the side without the idea to actually go commercial.
+
+And we are close to reach our first million MRR. Okay, that's crazy. In 1.5 years, you guys basically built a million dollar business.
+
+Let's go back to how you guys found the idea for this. How did you find the idea for PaperMark? Yeah, it's actually funny.
+
+It started as a tweet. I pushed out a tweet, and I basically said, like, I'm going to build an open source alternative to DocSend. And it went just like crazy.
+
+Within, you know, a couple of hours, it got like 40,000 views. Lots of people mentioned that they would love to see this as an open source project. So over the weekend, I actually built it, at least their first MVP, the first version that was usable, and pushed out on Monday the launch tweet, and it got like 100k views.
+
+And then soon after, their first customers came and were asking, like, can we give you money to buy the service? And that's kind of how it kicked it off. That's crazy.
+
+The amount of founders that I talked to that have built a business based off a single tweet is actually way higher than you'd think. I just want to understand a little bit more about what PaperMark is and what it does for our audience who may not totally be in this space. Can you briefly explain what PaperMark actually does?
+
+So essentially, the PaperMark is a document analytics and sharing platform. So you kind of turn your document into the link, which you later can share, protect with the password, with the watermark, and then get the whole analytics so they can see exactly, okay, someone was on my document for five minutes on this slide, one minute here. So you know exactly what happened.
+
+And the PaperMark is essentially alternative to the DocSend and other data room providers, which exist already for 10 years or more, but they, like, don't innovate anymore. They don't produce anything new. They mostly focus on the enterprise customers.
+
+That's why the open source kind of new solution was needed in this market. All right. So the main reason I wanted to bring you guys on the channel is that you built this business on top of open source, which is a super cool model.
+
+You guys managed to find a way to not only build an open source project, but build a really, really nice business on top of it. Can you first explain to me just what open source is? And then we'll get into the business side of things.
+
+Yeah, of course. So open source, like the name says, the source code that's powering the project is publicly available. So anyone can look at it.
+
+Anyone can contribute to it. And the cool thing is that the entire, like, history of the project is also publicly available. It also opens up the project globally to any developer in the open source ecosystem that likes to contribute or that is interested in the project and wants to contribute to it.
+
+There are, of course, licenses that have some protective mechanism. And in the end, you have these communities that form around each project. And they can be larger or smaller depending on the popularity of the project or the maintainer as well.
+
+A lot of developers these days, they want to show off their work. Maybe they can't find a job, but they can do open source projects. They can contribute to open source in order to advance their own career.
+
+So attracting early users, open source is great because you can just ultimately ship in public. All right. So can you break it down for me?
+
+So you have open source. All the code is free. Anybody can use it.
+
+How does this actually work for your business? And how do you make money? So the business model for Papermark is basically you can either self-host it for free or for many of the users that maybe not be tech savvy, that don't want to host it themselves because they don't want to deal with the overhead or the maintenance.
+
+We have a hosted version that we charge for. For the open core model, our core software of Papermark is open source and self-hostable. And then if you need advanced features, you can acquire a license and still run it on your infrastructure as a self-hosted version, but just with our enterprise license attached to it so that you can enjoy the full suite just as it is on papermark.com.
+
+Looking back, what are the benefits to building open source that you've realized? Number one, it's highly defensible because you have nothing to hide behind. You essentially give away the core product for free.
+
+There's no need for anyone else to kind of build the same project and charge anything for it because it's essentially already as low as it can get. Number two, it's very scalable because there's essentially zero barrier to entry. We have people coming to our project every day, looking at it, either contributing to it, running it for their small teams, or then seeing the open source project and converting actually to papermark.com because they don't want to deal with the self-hosting of it.
+
+They just come to us because we do the best service in hosting the solution. Number three, we have that community-driven R&D velocity. Incumbents only have like the employees that basically maintain the software.
+
+We have the community that basically looking through the projects, monitoring it, seeing where they can contribute new features. If they find like issues, they can immediately swoop in and like provide a solution for it. The velocity with the community is just like immense.
+
+And number four, it's very secure and has high trust. The code can be audited by any third party. You're not hiding behind proprietary software that we need to grant access to someone at a bank that is trying to evaluate whether it would be a great fit for the infrastructure.
+
+They have to run through so many checks and they can do that very easily by auditing our open source code and seeing that nothing nefarious is going on and everything is extremely secure. All right, before we move on with the interview, I do want to talk about one thing. As a founder, you're likely moving fast towards product market fit, your next funding round, or your next big enterprise deal.
+
+But with AI accelerating how quickly startups are building and shipping, security expectations are higher earlier than ever. Getting security and compliance for your business right can unlock growth, but it can also stall it if you wait too long. With deep integrations and automated workflows built for fast-moving teams, Vanta gets you audit-ready fast.
+
+And it keeps you secure with continuous monitoring as your models, infrastructure, and customers evolve. Fast-growing startups like Langchain, Writer, and Cursor trusted Vanta to build a scalable foundation from the start. Go to Vanta.com slash StarterStory to get $1,000 off Vanta and join over 12,000 ambitious companies already scaling with the platform.
+
+That's Vanta.com slash StarterStory for $1,000 off. I'll put a link in the top of the description for you to check it out. Thank you, Vanta, for sponsoring the channel.
+
+I love the platform that you're building. And without further ado, let's get back to the interview. For anyone watching right now who's a developer, who's excited about open source, what are the opportunities right now to build an open source and also build a business on top of it?
+
+With the era of AI, founders can target much smaller niches and smaller markets. It just makes it so easy to create a very small differentiated business off of an existing incumbent. The kind of like key markets that I see today that are being rebuilt is anything that has to do with like a CRM.
+
+They have become so large that the software itself is very complex. And they try to do this like one size fits all where, of course, once you're in at like the highest tier, you can then customize it to your own use case. But why not build a very targeted CRM for veterinarians or like office building managers that have like a very specific use case to use the CRM and don't need like the entire complexity.
+
+Think about reducing complexity in what existing businesses are there and just like build it very simple. Think to yourself like, is there an open source alternative? Does it make sense to build an open source alternative?
+
+Is the market massive? Is there enough room for other players in the market? Because oftentimes you will find that software is not really the differentiator.
+
+So being open and open source is no detriment to you or your business. Okay, let's change subjects a little bit. Let's talk about growth.
+
+I mean, zero to 900,000 ARR. There's something here, whether it's open source, whatever it is. But if you guys can just break down, how did you grow this quickly?
+
+What were the right decisions that you made? Yeah, I think off the bat, I think being open source was the right bet for us. Building in public with open source is extremely natural because you have nothing to hide behind already.
+
+There's no downside to sharing the small progress even that you're making. Even if the features are not 100% complete, share that on Twitter, on LinkedIn, just with anyone. And you'll slowly gather community around that.
+
+Then lastly, in terms of growth, we also participated in this month-long open source hackathon called Hacktoberfest. There was like a cycle where we build faster, more customer notice that we're building and shipping features, whereas the incumbents are slow and like sleeping. And then they start switching because now the feature sets are reaching feature parity and even going beyond that.
+
+Cool. And thanks for sharing that. Can you break down some of the numbers behind the business?
+
+So in the first year, we grew to 20,000 MRR. To middle of the second year, we grew to 75,000 MRR. So we are getting closer to our first million middle of the second year.
+
+We're serving around 30,000 users because there's like a lot of free users. Then we serve around 1,000 customers, 60 contributors, 7,000 stars. Maybe the focus if our North Star metric is the amount of views on the shared documents.
+
+So we have 800,000 views on the shared documents. It means that people upload their documents, then share the link, and then 800,000 view their documents. Let's change topics a little bit.
+
+I know a lot of people watching this are developers, even people building an open source. Let's talk about TechStack. Tell me about how this business is built.
+
+Yeah. So we run Papermark as two projects in Next.js. So one project is our website and our marketing content.
+
+And the other project is the open source project, which powers like app.papermark.com. It runs Next.js with TypeScript on our day-to-day. Of course, we're like so many others are using Cursor as kind of like our AI IDE.
+
+Everything's hosted on GitHub. Papermark is hosted on Vercel. PlanetScale for our Postgres database.
+
+Trigger, it's a background tool. Resend is, I think, like a fan favorite these days for like easy email. It gets delivered to your inbox, like in terms of transactional emails, like really quickly.
+
+And then, of course, Stripe. On that same note, can you break down some of the costs and margins to run this business? What does it look like to run a business built on open source?
+
+Yeah, so our main cost is spending on freelancers and founder salaries around 80%. Then we have around 15% on different experiments with marketing and growth. And 6% to 5% is the tools.
+
+Thank you for sharing that. Last question that I have is advice. For anyone who wants to build an open source, do things in open source, potentially even build a business in open source, what would be your advice to someone watching this?
+
+I think being an open source alternative to like in any market, to any big incumbent, isn't a surefire success. You need to reach at least feature parity with the existing tools in the market. And then you need to outship them, right?
+
+You only need to be better than the current offering in the market. You want to become the clear successor to the incumbents, not just be an alternative that's also there. And you need to turn that excitement around open source into product momentum.
+
+So convert them into paying customers or even users of your tool. Only then you can actually make it a successful business. From my experience, I didn't know how to code at all.
+
+And I decided, okay, I'm going to build the first project. I took existing open source to build on top of. And then what I built, I also made open source.
+
+And I feel so much push and support from the open source community and contributors. I would definitely, if you want to try open source and see really what it is, you need to kind of jump into it. You will not get the whole idea if you're not going to build that.
+
+Just do it open source from the beginning. Try to be part of the community. Help people contribute.
+
+And they will do the same. And you will see how your project grow. All right.
+
+Well, that's great advice. Thank you, Yulia and Mark, for coming on the channel. It's so impressive what you guys built in just a couple years.
+
+Thanks for sharing everything about the open source model, building an open source. It was awesome. See you guys soon.
+
+Thanks, Beth. Thank you. I wanted to thank Mark and Yulia for coming onto the channel.
+
+I loved hearing about how they grew Papermark and their unique approach to building this project with open source. However, I must remind you that it all still started with a simple idea. And nowadays, that's all you need to potentially build something that changes your life.
+
+And that's why we launched Starter Story Build. We'll help you take that idea up here and turn it into a real app using only AI tools. So if you're ready to launch your project, then head to the link in the description and check out Starter Story Build.
+
+All right. That's it for this episode. Thanks again for watching.
+
+We'll see you in the next one. Peace. Peace.
+
+Peace. Peace. Peace.
+
+Peace. Peace. Peace.
+
+Peace. Peace. Peace.
+
+Peace. Peace. Peace.

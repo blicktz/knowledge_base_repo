@@ -1,0 +1,111 @@
+I met a guy who has the perfect strategy for finding micro SaaS ideas. I think anyone can build a business like mine. And with this simple strategy, he's been able to build a pretty successful business.
+
+Today, UFO makes 11,000 MRR. He didn't need to come up with a brand new idea. He didn't need a crazy marketing strategy.
+
+He just focused on one simple thing. I think anyone can copy this strategy to make their first $10,000. And I had Abhishek come on the channel and break down this strategy step by step.
+
+In my opinion, the best approach to build a SaaS is... In this video, we'll go over where to start looking for ideas, how to identify if one is worth working on, and how to get your first customer without actually building anything. I think you're going to like this one.
+
+Let's dive in. I'm Pat Walls, and this is Starter Story. All right, welcome Abhishek to the channel.
+
+Tell me about who you are, what you built, and what's your story. My name is Abhishek, and I built Uform. It's an alternative to Typeform.
+
+I launched it in 2023, and over the last two years, we have grown it to around 11,000 MRR now. Okay, so immediately, I just want to get into it right away. I think your approach is super cool, kind of finding this big idea, building a small version of it.
+
+Can you tell me about how you even came up with the idea on how to do this? I was working on my previous SaaS, which was a no-code chatbot builder. It was called Botflow, and it had 200 users or so.
+
+So, majority of them were using it because they wanted a conversational form. And when I talked to them and found that they were using it as an alternative to Typeform, I found that Typeform recently raised their pricing. So, then I found there was like a gap in the market.
+
+But pricing is something that I found like this can't be the only reason. So, I then searched Twitter, Reddit, Typeform's own forum and all. I found there are like some other features as well that users want, and Typeform is not providing.
+
+So, then I sold that chatbot builder, Botflow, and started working on Uform. Okay, I mean, you just talked about it right there. You called it finding the gap.
+
+What do you mean exactly by that? Finding the gap is something where you can, you know, take something which is already working. People are using it.
+
+But there are some gaps, like some pain points people are not finding with the current competitors. If you can fill that gap, you can definitely get users. I think like most of our developers think most of the ideas or most of things have already built in the market, right?
+
+But there is always a gap. Thank you for sharing that. I mean, I just love this strategy.
+
+Taking a big idea, building a really small version of it, maybe even undercutting the prices, building other features. Tell me about why you think other people watching this should adopt this approach as well. In my opinion, the best approach to build a SaaS is you should not invent things.
+
+As an indie hacker, as a bootstrap, you can't create the next Uber. You can't create the next Facebook. You need a lot of money for that in your VC funding.
+
+In fact, you should upload the market, which is already validated. Like there are already big players there. So, people are actually using it and then just find the gap.
+
+Okay, let's take a deeper dive into the finding the gap strategy. Can you break down this strategy so that someone watching could think about how they could do something similar? The idea is simple.
+
+Step one, you look for a popular tool and search social platforms like Twitter and Reddit with keywords like X alternative, where X is basically the product with lots of users. So, for in my case, it was type form. Then, step two, find the pain points or gaps which they are not solving.
+
+It is fine if the pain point is pricing, but only if pricing is too high. Then, step three, reach out to those users with your solution with just a basic landing page explaining your solution. So, messaging is the key here.
+
+And bonus point, step four, have a tool to simply easily migrate your competitor's user to your platform with a one click. In uForm, we have a landing page where you can paste your type form URL and it will generate a uForm within a few seconds. So, people can see like, okay, this is what we are getting in uForm.
+
+Okay, cool. So, I mean, that's an awesome strategy. You're a busy founder.
+
+You don't have time to go build other things, but people watching this might be wondering, okay, how can I do this strategy right now? What are the big $100 million companies out there that I can kind of go do the same thing you did? So, what would be your advice or ideas you have around that?
+
+Yeah, so there are lots of opportunities there which I would love to build, but I don't have time to do. Two of them which I can state right away. One is Canny Alternative.
+
+This is my personal pain point I have faced because we are a small startup and Canny has recently tried to go upmarket. So, I searched for a lot of Canny Alternative in the market, but none as simple as Canny. Apart from that, there is one gap that I found recently.
+
+This is an app where you can build your forest, the digital forest, by doing some habits. And why you should build an alternative right now is if you search with the latest reviews there, most of them are one star. I think these are the things that you should do, but you will find that there are people who say that, okay, Facebook is crap.
+
+I don't want to go there. But definitely don't build things like a social media and marketplace or something. That is something that as an indie hacker, you should always tell.
+
+All right, before we wrap up with Abby Shake's story, I wanted to pop in with a question. What do you want to build? No, seriously.
+
+What project have you been thinking about for a long time? Maybe it's a micro SaaS like the one we're talking about today. Or maybe it's just a simple tool that will help you be more productive.
+
+Whatever it is, AI has made it possible to build anything. But let's be honest, it's still really hard to figure out where to start. I get DMs every single day from people asking me how to build, what to build, and what tools to actually use.
+
+So I decided to create something that makes it easier for you to build with AI. It's called Starter Story Build, and it's our program where in just a few days, you'll go from a simple idea to a production-ready app. You'll get guidance from our resident experts, and you'll get the roadmap for how to build with AI forever.
+
+Honestly, I wish this existed when I was just starting out. So if you're curious, check out the link in the description to learn more about Starter Story Build. All right, let's get back to the episode.
+
+I'd love to learn a little bit more about Uform, and just walk me a little bit through kind of how you built it. Just give me a high-level overview of what you did until you got the first paying customer, and so on. So my approach was simple.
+
+I didn't actually make all the features that Typeform was providing. So we initially didn't do anything which might be like a fancy landing page or a logo or anything like that. The first version of Uform had just you can collect some data using like fields like name, email, star rating, and all.
+
+And apart from that, you can just download your data as a CSV. There was no integrations with Google Sheet, API, etc. Nothing was available there.
+
+So this was an MBB that I think I built in two weeks. And the landing page was a basic landing page that time, which just had a start using Uform, which used to take you to the Uform page. And later on, like my wife created the current page when we got like, I guess, 200 plus users.
+
+Okay, cool. I mean, that's awesome. The next question that I have is around some of the numbers behind it.
+
+I know you're super transparent about that stuff. So how's the business going? And share with me some of the numbers.
+
+Yeah, currently we are doing around 11,000 MRR. And there are around 35,000 or so users, registered users. And paying customers is around 500 something.
+
+We are actually basically in a freemium model. I guess 90% plus of features are free. So our conversion rate is around somewhere around 1.5 to less than 2%.
+
+Traffic per month, we get around 35,000 visitors per month, unique visitors. And apart from that, a good stat right now is we have recently caused 4 million form submissions. Cool.
+
+Well, thanks for sharing that. What tech stack did you use to build this business and what tools do you use on a daily basis? Yeah, so Uform is built on Laravel.
+
+I chose Laravel basically because I love it. I'm working on this since last, I guess, 10 years. So I wanted to keep the stack, which I'm comfortable with.
+
+And it is hosted on AWS, Amazon AWS. We use Cloudflare for security and storage. Apart from that, Stripe for payments.
+
+We use OpenAI a lot for fraud detection because our freemium model, lots of bad users comes in who tries to be in the system. Then we use Slide for help docs. They are great.
+
+Apart from then, Gmail for workspace. Simple Analytics for web analytics. Kenny for feedback management.
+
+And Mailgun for email. Then in total, I think our last month expense was around less than $1,200. Next question I have is, you know, you built this successful business.
+
+What have been some of the most surprising lessons that you've learned along the journey? First of all, the messaging is important with your app. The message about what your product does should resonate with basically your ideal customer.
+
+After that, it is all about how good your product is and your customer support, which will not only keep your existing customers, but they will also refer others to your product. And the last question is, if you could stand on Abhishek's shoulder before you had this successful business, this amazing SaaS business that you built, what would be your advice to yourself or to people watching this who want to do something similar? If you are young, take risks early because you have less responsibilities and don't neglect marketing.
+
+That is an important thing. Apart from that, I would say don't build things because you can. If you really want a SaaS business to support your lifestyle, then I think you should first search for what people are looking for and then build it.
+
+Well, that's great advice. Thank you, Abhishek, for coming on. I love the business that you built and I hope to see you at 100,000 MRR.
+
+Thank you, Beth. Thanks a lot. Man, I just loved hearing about how Abhishek thinks about building apps.
+
+I think the strategy is cool because it's very approachable. There are a lot of low-hanging fruit out there that exists like this where you can go find a big company, figure out what users like and dislike, and then build that micro version of it. It's not necessarily easy, but the strategy is pretty simple and I think it's very doable.
+
+And with tools like Lovable and Cursor, you can spin up these projects and get started and have a real working prototype in just a few hours. And that's exactly why we built and launched Starter Story Build. In a few days, you'll learn how to build stuff with AI and who knows, in a few months, you might have your own $10,000 per month micro SaaS.
+
+If you're interested in Starter Story Build, head to the first link in the description to learn more. Thank you again for watching. I'll see you in the next one.
+
+Peace.

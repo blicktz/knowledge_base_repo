@@ -9,14 +9,14 @@ PYTEST := poetry run pytest
 MODULE := dk_rag.cli.persona_builder
 
 # Default paths - customize these for your setup,DOCS_DIR must match the persona name in oder to build correct kb
-DOCS_DIR ?= /Users/blickt/Documents/src/pdf_2_text/content_repo/Alex_Hormozi
+DOCS_DIR ?= /Users/blickt/Documents/src/pdf_2_text/content_repo/starter_story
 OUTPUT_DIR ?= ./output
 CONFIG_FILE ?= ./config/persona_config.yaml
 PATTERN ?= *.txt
 BATCH_SIZE ?= 5
 
 # Language Configuration
-CONTENT_LANG ?= zh  # Default to English. Options: en (English), zh (Simplified Chinese)
+CONTENT_LANG ?= en  # Default to English. Options: en (English), zh (Simplified Chinese)
 
 # Storage Configuration - automatically reads from config YAML file
 # NOTE: This must align with storage.base_storage_dir in the config YAML file
@@ -26,7 +26,7 @@ CACHE_DIR := $(STORAGE_BASE_DIR)/cache
 VECTOR_DB_DIR := $(STORAGE_BASE_DIR)/vector_db
 
 # Default persona name for extraction
-PERSONA_NAME ?= nihaixia_suanming
+PERSONA_NAME ?= starter_story_youtuber
 
 # Search query for testing
 SEARCH_QUERY ?= "mental models for productivity"
@@ -450,6 +450,13 @@ ui-gradio: ## Launch Gradio chat UI on port 7860
 	@echo "$(BLUE)Starting Gradio UI on port 7860...$(NC)"
 	@echo "$(YELLOW)Access at: http://localhost:7860$(NC)"
 	@cd $(PROJECT_ROOT) && $(PYTHON) dk_rag/ui/gradio_chat.py
+
+.PHONY: ui-browser
+ui-browser: ## Launch Streamlit knowledge browser on port 8505
+	@echo "$(BLUE)Starting Knowledge Browser on port 8505...$(NC)"
+	@echo "$(YELLOW)Access at: http://localhost:8505$(NC)"
+	@echo "$(YELLOW)Browse mental models and core beliefs in article format$(NC)"
+	@cd $(PROJECT_ROOT) && poetry run streamlit run dk_rag/ui/knowledge_browser.py --server.port 8505
 
 # =============================================================================
 # DEVELOPMENT TARGETS

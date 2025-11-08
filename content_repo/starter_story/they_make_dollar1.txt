@@ -1,0 +1,141 @@
+These guys went from zero to $120,000 a month with an AI app. And the crazy part is they did it in less than a year. I drove out to Miami, Florida to ask them exactly how it works and how one platform got them 10,000 paying users in a matter of days.
+
+So it was sort of like a great springboard for us in order to establish a solid brand. The boys started their journeys working at VC-backed startups, but they grew sick and tired of the system. So they got together to build something for themselves and along the way discovered something that would change their lives.
+
+The main reason I think Castmagic won is... In this video, Blaine, Ramon, and Justin share their exact blueprints on how to come up with a million dollar idea, how they built it in two weeks, and how they scaled it to six figures an MRR in just 10 months. I think one of the key things here is...
+
+I'm Pat Walls, and this is Starter Story. Hi, Ramon. Thank you for having me.
+
+Thank you, Pat. We are here in this beautiful Miami apartment with your two co-founders, Blaine and Justin. And we are here to talk about this amazing app that you built.
+
+Tell me about what you built. Yeah. So we built castmagic.io, which leverages AI to create content with the context of your videos, audio files, conversations, any media really, you can repurpose it.
+
+And we started Castmagic about 10 months ago, and today we're north of 120,000 in MRR. Let's talk about the opportunity of AI apps. What's going on here?
+
+I think if you can embed yourself into an existing workflow and radically remove the friction of like the barrier to entry to doing something such as creating a podcast, those are the tools that are really taking off. And, you know, I think these are real needs and not just a sort of vitamin. It's more the painkiller analogy thing.
+
+Yeah. All right. So we got Blaine here.
+
+He's the co-founder and he runs product. Tell me about how you found the idea for this app. Yeah.
+
+So essentially I host DTC pod with Ramon and I noticed this problem, which in my mind at the time was just about how do you write show notes from your podcast? I can't just like assign it to a random VA who isn't going to understand the context of like the person I talked to and all of that. So that was kind of the inspiration when we saw AI coming up.
+
+We're like, wait a minute. Like, I think AI might be able to do this. The real lesson there for any founder is just by doing something and putting yourself in a situation where you're constantly doing, you're going to unearth problems that are worth solving.
+
+And maybe those problems have bigger implications than you thought they would in the first place. Yeah. You figured out this problem that you have and then you decide to make it a product.
+
+What happens after that? I think distribution for an early stage startup is something that's like super, super critical. Starting with yourself at the core of it, build something for yourself and then very quickly get as close to the customer as you can.
+
+Either create content that attracts people to you and so they can kind of come inbound. So that's why I think personal brand putting out content is such an important thing or find a distribution partner that can like really help you scale. So we're talking with the team at AppSumo and they said, Hey, we've got this opportunity.
+
+Would you guys be down to like launch two weeks from now? And we're like, Oh shit, two weeks. But that's a really good opportunity to get distribution and start growing basically.
+
+Yeah. Let's talk about marketing and growth. You guys grew zero to 120 K MRR in nine months.
+
+How did you do that? So AppSumo was a sort of like a great springboard for us in order to establish a solid brand. We launched with them and I think it's been one of the most successful launches ever on AppSumo.
+
+So, you know, around 350,000 in revenue generated gave us probably around 10,000 users or so. We offered a lifetime deal, which means that our customers have access to us and our services forever. For people that self-subscription say, well, why in this world would I ever do that when I can get recurring subscription?
+
+But we needed to build a brand. We needed to build the foundation. We needed the feedback.
+
+The other thing that worked really well for us as creators, we started incentivizing people to create content on socials. You know, some people we were paying, some people we were reaching out as to be an affiliate. And one of the best ways to do this is like scrape Instagram, scrape the platforms, find companies that might be adjacent industries, look up those hashtags and then build volume.
+
+Once you build volume and responses, now you have leverage to negotiate with the rates and then just go from there and start paying out based on CPMs and then decide who's worth sponsoring and get enough volume to test if it's a viable channel for you or not. Yeah. You have a one man marketing team.
+
+You don't have some big marketing team. You've grown this business to a hundred thousand, 120,000 MRR. How do you operate a marketing team with one person?
+
+I have contractors that help me on a specific vertical, but something people don't do enough is like research. You can actually go and like map out how did this company that is similar to us that serves our same exact customer base. How did they get distribution?
+
+And so in our case, I went back and tried to find businesses that really grew through affiliates. So like, how do I set a system here? And a tangible example here is I noticed myself going back and forth with a bunch of the creators on like ideating content concepts.
+
+And then I was like, this isn't going to scale. So I created a whole notion document of a bunch of concepts. Now I don't have to get on a call with them and strategize on the content.
+
+So it really just all comes down to systems. Ramon and the boys are proof that you don't need funding to start and build a million dollar business in less than a year. All you really need is a simple idea and the right strategies to bring it to life.
+
+And the best way to do that, like Ramon said, is by studying other businesses. So if you're serious about building your own product like the boys at CastMagic, but don't know where to start, well, right now you can download our deep dive SaaS report for free. It'll break down over 52 different micro SaaS business ideas, making millions, along with trending ideas, growth strategies, and tons of other stuff you'd want to know.
+
+Just head to the first link in the description to get it. Now let's get back to how these guys actually built this thing. All right, let's talk about tools.
+
+What coding languages and what tools did you use to build this app? In the first two weeks, I can't emphasize enough how much you have to accept building an imperfect product. A bit of an unconventional choice to a lot of people.
+
+I built this with Elixir. It's very stable. It's a language that scales really well.
+
+And because Elixir has a tool called Phoenix and LiveView, you're able actually to build the entire front end and back end in the same language. For the landing page, we built it in Webflow. We could make it look good using templates, and therefore we could spend all of our time as a development team working on the part that mattered most to our users, which was the product.
+
+All right, let's talk about pricing. How is CastMagic priced and how did you come to that strategy? We offer a subscription billed monthly with a cap on usage.
+
+It's funny, we really just kind of threw out numbers that we wanted to test and found that it worked. And we are always analyzing what we're spending on LLMs and transcription, making sure that we have enough margin to justify the outputs that we're giving our customers. And so far we've been able to keep those in balance so that both our customer and us can win from the relationship.
+
+Okay. We are back with Ramon to talk now about AI. It's changing like crazy differentiation.
+
+Tell me why was CastMagic successful when there are thousands of other AI apps that weren't? So the main reason I think CastMagic won is for three reasons. Number one, we solved our own problem.
+
+Number two, we build a brand by partnering with the right creators. And number three, we built and continue to invest in the product to increase the quality of the outputs. That's really what it boils down to in an AI product.
+
+It's not just how does the platform work, but what is the quality of the output that I'm getting here? And are they taking any shortcuts in the backend? And clearly we weren't.
+
+So then the customers are now invested into us. You have to ask yourself, how do I position myself and how do I build the brand for the long term here? All right.
+
+So what do you do when ChatGPT comes out with a new model and then they essentially replace your product? How do you think about that? We are solving a workflow problem.
+
+And there's always ways in which you can continue to optimize that process more and more. That is in ChatGPT's business. ChatGPT is there to provide the infrastructure.
+
+They have a future, not a product. They solve one small pain point. They don't solve like an entire solution that only a platform that covers a workflow from A to Z can solve.
+
+Yeah. Tell me some of the numbers, some of the financials behind this business. Churn single digits like net churn is single digits.
+
+That goes back to the value of like, you know, solving like an existing problem, not creating a novelty. We have over 120,000 in MRR. We're growing over 20% month over month.
+
+I think one of the key things here is we don't spend over 20% of our revenue on marketing. Marketing always has to be less than 20%. And that is because we want to make money.
+
+We want to be profitable. So far it's working. And you know, those are principles I think that we'll continue to use to grow the business.
+
+Yeah. So you guys built this three friends. Tell me about why your team works and why you guys work so well together.
+
+I think the reason we work so well together is because we've all been through the journey and we know it's a long one. And initially in the beginning, we're not getting stuck in the small details. And we also know when to have fun.
+
+Yesterday we were meeting, we did our whole roadmap thing and we took out some time to go and play nine holes of golf. It's not that serious. So I'm curious on Blaine's take here though.
+
+And Justin's. Yeah. I mean, I think the biggest thing is just like alignment, right?
+
+I think so many co-founders, especially maybe first time around, they partner with people out of personal convenience or because out of necessity almost rather than like true, true alignment. The second thing that I think is so, so important is that you have skills that complement each other so everyone can stay in their lane. Having a team that doesn't like overly overlap and step on each other toes, I think is massive.
+
+So I think finding not only alignment, but also people that you can build with that you like vibe with, but also complement each other's skill set is like the best thing that you can do. I think a big part of that is the trust that we have in each other too. And we're very honest about what we're building.
+
+Like we're not afraid to say like, Hey, this isn't as good as it could be. And I think that shows in where we are today and what we've built. Let's talk about VC.
+
+You guys have all gone through the VC. I'm going to be the anti VC poster. Tell me a little bit about your past with VC and how you're thinking about these days.
+
+Yeah. So I've had two venture backed companies in the past. The first was seeded their series C they've raised over $80 million to date.
+
+The second one was called Omni Panel. We were backed by CRV. We raised a two and a half million dollar seed.
+
+And this time around, it just feels very different. It feels like we spent all the time we would have spent like talking to VCs, explaining like the broad vision for our product. And we just spent it talking to customers and building crap for ourselves that we ended up using.
+
+So I think that's something that's really valuable for anyone who's getting to start. Don't seek validation elsewhere. Build something that customers want.
+
+They're willing to pay for and that you yourself that solves a problem for you and you'll be in good shape. And then if you want to take VC to accelerate that growth, that's up to you. And you can figure out if that's the right decision for your business.
+
+Yeah. I think in my experience, I built a business called Trend.io. I tried racing for that business for almost four years.
+
+The effort that it took to actually get good at fundraising, it's a skill set in itself. If you're not great at building a business and generating revenue, then you choose to get great at fundraising. You're just going to have the whole thing backwards.
+
+How do you guys all work together? How do you stay aligned? How do you meet as a team?
+
+I think from a team perspective, what's really cool about how we operate is, you know, Ramon's in Fort Lauderdale. I'm here in Miami. Justin's in Austin.
+
+A lot of the work is async during the work week. But what we're really mindful and the reason we're all here today in Miami is because every quarter we get together for at least a week to like meet on all the important things. So I just think it's like a really great model for startups or founders who are like looking to get the business started.
+
+It's not like where you are, where your office is, et cetera. It's like find a great group of people wherever they are in the world and, you know, do your own thing. But like make sure that, you know, you also get together to get like really aligned on the things that need to happen in your business.
+
+The other thing that we do just in terms of operationally is we do a Monday 30 minute standup call and a Friday 30 minute standup call just to align on product, what everyone's doing. But we really try to block out the calendar and not be stuck on calls all day and more focus on like just shipping. Yeah.
+
+All right. Thank you guys for having me in this amazing apartment, this amazing business that you guys built. Do what they did for all this advice and you have a $120,000 MRR AI app.
+
+Good luck guys. Hey guys, I hope you took away some golden nuggets from that video. That'll help you along your business journey.
+
+And for anyone that still feels a bit lost, maybe you don't know where to start or you need some inspiration on some good marketing strategies. Well, I got something for you right now. If you head to the first link in the description, you can download our deep dive SaaS report for free.
+
+It has over 50 different micro SaaS businesses making millions along with the tools they use, the business models they run and tons of other stuff that will help you on your journey. Just click the first link in the description to grab it. And if you're serious about building something, consider joining Starter Story and we'll help you do it.
+
+Much love and see you guys in the next one. Peace.

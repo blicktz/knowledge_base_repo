@@ -168,7 +168,7 @@ class StatisticalAnalyzer:
         if not self.analysis_enabled:
             self.logger.info(f"Statistical analysis skipped for language '{self.language}'")
             # Return minimal empty report
-            from ..data.models.persona_constitution import StatisticalReport
+            # Note: StatisticalReport already imported at module level (line 22)
             return StatisticalReport(
                 total_words=sum(count_words(doc.get('content', ''), self.language) for doc in documents),
                 unique_words=0,

@@ -44,6 +44,7 @@ langchain-community = "^0.3.29"
 langgraph = "^0.6.7"
 gradio = "^5.47.1"
 chainlit = "^2.8.1"
+streamlit = "^1.30.0"
 jieba = "^0.42.1"
 mcp = "^1.19.0"
 

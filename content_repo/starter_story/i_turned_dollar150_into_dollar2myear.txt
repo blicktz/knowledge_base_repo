@@ -1,0 +1,189 @@
+This guy turned $150 into a $2 million AI app. But what's even crazier is he barely even knew how to code. In February, I bought the domain stealthgpt.ai for $150.
+
+Watch a bunch of YouTube tutorials, and we got our first customers in March. He invited us into his house in Lakeland, Florida, to show us exactly how he started this thing as a solopreneur and the marketing strategy he used to grow to $200,000 MRR. We started leaning a lot into and just found a tremendous amount of success through that channel.
+
+Before the success, Joseph tried and failed several business ideas. Unfortunately, one of those was crypto, and it left him with a $150,000 penalty from the federal government. We talk about what he learned from this and how it gave him new perspective that eventually led to a new business idea that would change his life.
+
+After a few days of like trialing it, I cracked it. In this video, Joseph shares his exact ideation, product development, and marketing blueprints that he used to build a $200,000 per month AI app. I'm Pat Walls, and this is Starter Story.
+
+Hi, Joseph. Thank you for having me in your beautiful home. Tell me about this business that you built.
+
+Yeah, so we made Stealth GPT. It's a web app, subscription-based model like a SaaS, and basically what it does is it can generate AI-generated text that's undetectable, or it can take text from things like Clawd, ChatGPT, Gemini, and make that undetectable. We got to $190,000 MRR recently.
+
+It took us about 15 months to do it. Wow. Let's talk about some of the financials around this.
+
+Like how much revenue, how much profit is this doing? Profit, we're doing about $10,000 to $30,000 a month after all of our expenses and everything. Most of our money goes into marketing a new customer acquisition.
+
+It's a lot of reinvestment into the current business that we can continue growing at the rate that we're growing at. We spend about $100,000. We're on a pace.
+
+Like it always is adjusting upward. We've also brought in a staff. So six to seven people.
+
+We're actually hiring two more people right now. We spend, I think, about like $50,000 to $60,000 a month on salaries alone. Other than that, it's like our database and our hosting and, you know, our AI stack and everything like that kind of composes of probably about an additional, I want to say like $5,000.
+
+So I think that gave you about $160,000 worth of a picture. So in the lifespan of stealth, we have had 400,000 signups, about 15 to 20,000 subscribers as a whole. Active subscribers, we're looking at about 8,500.
+
+Wow. Yeah. That's amazing.
+
+Yeah. Can you give me a timeline of how you get into coding, how you get into indie hacking? I was a big fan of RuneScape when I was a kid, like giant RuneScape head.
+
+And I remember when I was coming out of college, I started looking at RuneScape again. And I was like, now I'm a bit older. I'm a bit more mature.
+
+I don't want to spend 13 hours a day playing RuneScape anymore. And I kind of like the idea of coding. I know that's something, it's an important skill.
+
+So I'm like, let me figure out how to make a bot to do some gold farming in RuneScape. I started Harvard's like CS50 class, watch a bunch of YouTube tutorials, started building for myself. So for example, I built a website for myself and I built like a blackjack game.
+
+Took a few years to learn how to code, that kind of thing, and built stealth GPT. All right. Let's talk about failure for a second.
+
+So I know that in your journey, you had something that kind of really set you back. Can you tell me a little bit more about that? I was 23 years old.
+
+I started my first company, J Squared Invest. And I started because I was getting involved with like crypto and stuff like that. I saw there was like a huge market need for people who didn't understand how to get into Bitcoin or Ethereum.
+
+They didn't know what Coinbase was. They didn't know how to open up a wallet. So I just saw an opportunity like any other entrepreneur.
+
+I had no money. So I got a loan from my father, got the lawyers, got the company ready, all that kind of stuff. And we just started taking in clients.
+
+2017, markets were great, very bullish. Everything went to the moon until 2018 came around. And pretty much I lost all my money.
+
+I had a lot of money in the crypto markets. Of course, the company got rinsed. And then a few months later, I get hit with this email out of nowhere from the CFTC.
+
+I guess there was like some like accusations of like, oh, I took client money or stuff like that. Every time I got an email from these people, it was like, it was devastating. It was devastating to get an email from them.
+
+But it was also devastating every day thinking like, are they going to do something today? Are they going to email me today? Are they going to who knows what?
+
+Because you're at their full mercy. You're at the full mercy of the government at that point. And you got really nothing.
+
+We later settled with them after I think like two or three years of dealing with this issue. It was like a $400,000 total settlement. Still paying for it to this day.
+
+The whole process cost us $50,000 before we even got to a trial, before anything like that. Because I was broke at the time, I couldn't pay any of it. I had to completely borrow it from my parents.
+
+Having to do that was like devastating. You know, as like a child, you want to make your parents proud and you want to make them happy. Everyone was really happy for me when I first started my company and they were very impressed and all that kind of stuff.
+
+And then here I am having to beg for their help or else I'm going to get crushed like a bug, like by the government. And it was, it was a horrific situation, but thank God my parents, I'm blessed to have loving parents and they're always there for me. And they always have been there for me.
+
+So really appreciate that. Yeah. Coming off that, how do you find this idea for StealthGPT?
+
+How do you come up with the idea? 2022 rolls around and ChatGPT is like a thing. And I was like, okay, this is going to dominate online content.
+
+People are going to produce all this content with AI and they're going to put it online. Naturally, there's going to be some kind of pushback. There's going to be people who care.
+
+Is the content that I'm reading right now human or is it AI? And TikTok, because it, I guess, spies on the neural nets of your brain or something like that, just knew I was thinking about this and served me up a video in my timeline. It's like, hey, there's this AI detector called GPT-0.
+
+They're able to scan with like a 99% accuracy. Is this content AI generated or not? So I started going to work, just reverse engineering it, really trying to figure out, can I consistently beat this AI detector and keep making it say that this is human generated?
+
+After a few days of like trialing it, I cracked it. Like eventually just every single response I was throwing through the AI detector was coming up human. And I was like, okay, we got something here.
+
+And so around January is like when I first had the idea for stealth GPT after seeing that TikTok video. And then in February, I bought the domain stealth GPT.ai for 75 bucks a year and they make you buy two years minimum. So it's $150.
+
+By March, we had our first real website with Next.js and React live. And we got our first customers in March. Joseph was able to change his life because of one simple SaaS idea he turned into millions.
+
+He showed us that all it really takes is a willingness to learn from others paired with a solid problem to solve. If you're serious about doing something similar, but you're still looking for an idea, well, you're in luck. You can download our 52 micro SaaS idea report to show you ideas just like Joseph's that will give you inspiration to get started on your own project.
+
+Just click the first link in the description and you'll get it all for free. And if you're serious about actually building it alongside other successful founders, consider joining Starter Story and we'll help you with that. Much love and hope you guys enjoy the rest of the video.
+
+You build your MVP. How do you get your first customer? I listed the website on Futurpedia, which I saw some people talking about.
+
+We kind of let people use the service for free, like 10 tries for free, and then they would have to pay for a subscription. So we offered like three different tiers of pricing for as low as like $4.99 to like $15. Yeah.
+
+And then we get these two customers. And I remember thinking at the time, I was like, how the heck did these guys find us? Like in the wide ocean of the internet.
+
+And they're like, oh, well, we actually heard about you mentioned on the show from this TikTok guy. This guy named Phil covers a lot of products, like basically every single day, like obsessively over like every project. So when we listed on Futurpedia, I guess he follows that and tracks that.
+
+And it was like a cool little cute video. And that's how we got our first customer. So Phil, thank you.
+
+Wherever you are. Thank you so much. That's the power of just posting your stuff.
+
+You never know what's going to happen, right? Exactly. Yeah, that's true.
+
+So you got this product. It's pretty much validated. And now you're trying to scale it.
+
+How do you actually scale a business like this? Yeah. We kind of went at it with like a UCG type strategy on like TikTok and Instagram, talking about like the service and just kind of letting people know at that point, it was like market education because something like this has never existed before.
+
+We needed to tell people like, hey, what is StealthGPT? What does it do? Just kind of intrigue them into it.
+
+So a lot of focus on just explaining what the product is and why people need a product like StealthGPT. When we got past the summer, we started leaning a lot into Google ads and really investigating Google ads and just found a tremendous amount of success through that channel. They were converting like insanely low cost per conversion, $10, $15, $20 in the early days.
+
+And that allowed us to scale a ton. So we would get a lot of money in and then we'd just pour more into Google ads. And it was just like putting gasoline on a fire, just kind of kept going and going and going.
+
+So you've built this software to hundreds of thousands of users. What's your approach to building a great product? When you're trying to build a solution to a problem, you're trying to make money on it.
+
+You're trying to build a business. You need to make a solution to as broad of a problem as possible. And so, yes, I talk to my users.
+
+I do get their feedback. I do ask them like, hey, what would you want to see on these different tools and whatnot? Sometimes I'm like, okay, that's a good suggestion.
+
+Let's kind of play around with that. That could help a lot of other users. But then sometimes I'm just like, yeah, that's something that maybe you would like.
+
+And that'd be great for you. And no, I'm not going to spend hundreds of hours building this whole complex like method that you want or feature that you want. So really what I use our customers for as far as feedback goes is how is the quality?
+
+And then also with the experience, like how is it using the app? Was it easy to figure out what this tool does, what that tool does? And that's where the users come in and they're very helpful.
+
+As far as like other features and stuff like that, like core stuff, engineers out there and coders, they really want to build like the most complex, like high powered application out there and give the user so much freedom. That's horrible. People want to use the internet like this.
+
+I want to be able to give you my problem and then one click get that problem solved. Yeah. Don't make it complicated.
+
+Don't add all that stuff. Now, not every problem can be solved in one click, but as much as it can be, try to get it to one click. Yeah.
+
+Let's talk about tools and languages. What is this company built on? We're built on Next.js and React.
+
+I think that's like the best stack that you can work with these days. One thing that was very critical to our infrastructure was like Vercel. Vercel works really well with Next and allows us to like deploy something out there in like a few minutes and hey, if a user has a problem with it, we can roll it back, figure out what the problem is and then push it back into production.
+
+And we use Supabase for our database and they've been phenomenal. We use Discord a lot for our communication and we use Buffer for our marketing management for like our different channels, Instagram, TikTok, Facebook, whatever. Zendesk for like support.
+
+Google Sheets and Google Docs and whatnot. I mean, they have a perfect suite for like us to collaborate on our documents and stuff like that. You know, GitHub, of course, got to be in there.
+
+Cool. So you started this thing as a solopreneur. You did it all by yourself.
+
+Tell me a little bit about that experience. When I first started out building the idea, I didn't really think I needed too much. You know, it was going to be like a very basic rudimentary idea.
+
+Let's see if it works. And after the first two months, once I actually started to see like real traction, I knew at that point in time, I knew it in my gut, we got something good over here. And if I can just get some more hands in the cookie jar, that'd be really helpful to help me build this thing.
+
+Because remember, I mean, before that, I didn't even know how to code. So we went out there and did that. I'm so happy that we did.
+
+Our team is phenomenal. All of our developer hires have come through Twitter posts. So no one has a pedigree.
+
+No one has really done anything before we've built this thing. And we're kind of just building an amazing piece of software over here. Let's talk about ideas.
+
+A lot of people watching this are looking for the right idea. What advice would you give to someone who's looking for an idea that can make money like yours? So the best way to kind of go through this is like, think about problems in your life.
+
+And I've seen that as like common advice. And it's true. Think about a problem that you have dealt with, like something that bothers you, something that pisses you off, something that wastes your time, wastes your money, everything like that.
+
+Everyone's got problems like that. Or talk to people and ask them like problems in areas that are kind of passionate to you. Because obviously if you're working on something that you care about, you're passionate about, you're going to do it so much better than if you didn't care.
+
+It was monotonous and it was boring. Also, you need to honestly be able to critique your idea and be honest with yourself to say, is this actually good? Will people actually buy this?
+
+Or am I just kind of hyping myself up and thinking I just came up with the next big thing? All right. Let's talk about day in life.
+
+What is it like to have built this business and run this business full time? The first thing in the morning is just systematically like checking all the systems, making sure everything's green, everyone's good. Now we're done with that.
+
+Let's check on our ads performance. So I go look at what our ads are doing right now. I look at what our ads were doing yesterday.
+
+After we get through all that kind of stuff, the rest of the day is just kind of a lot of ideation, a lot of talking with the team, making sure everyone's doing what they're supposed to be doing. I'm very like hands off for the most part. Like I'm not like, oh, hey man, what are you doing?
+
+It's more like, you know what your role is. You know what your role is. You know what your role is and then constantly kind of getting updates and feedback as we kind of go through it and learning.
+
+Like I actually spend like a considerable amount of time, like scrolling the timeline on Twitter. I see a lot of your posts on there. I see a lot of other great like indie hackers and founders and whatever.
+
+And even some accounts like a non-account, anime profile picture, get no traction. They get maybe one or two likes on them. I'm like, you know what?
+
+That's a, that's a good idea. Like I'm like, give that a shot. A lot of learning, like always trying to stay up on the, like the day to day.
+
+We're never out of the loop and that's very important to the process. Yeah. Well, the last question that, uh, that we ask all of our founders who built these amazing businesses, if you could sit on Joseph's shoulder, you know, when you're just starting out, what advice would you have for him?
+
+I would say like the marketing really is just important, if not more important than the product itself. At the end of the day, if you cannot get distribution, if you cannot get eyeballs on what you're building, you're toast. Also, there's never been a better time to build.
+
+You can, if you have a laptop and wifi, even if you don't have wifi, there's a Starbucks down the street or something that does. You have the power with AI, with things like Vercel and Supabase and the free tiers out there. You have the power to put something online today.
+
+Don't waste this opportunity. I love it. Thank you so much.
+
+What you built is amazing. Follow this advice and you'll make millions. You could make millions with AI.
+
+Good luck. All right. See ya.
+
+Yo, what's up guys? Thank you all for watching Joseph's story. I think the coolest part is how he took just a very simple idea and turned it into a massive business.
+
+Thanks to this crazy AI trend. He's proof that all it takes is a simple idea and some hard work, and you can build a life-changing business. If you're serious about starting your own thing, but you still don't know where to start, or you need some inspiration, head to the first link in the description, and we're going to give you our free micro SaaS deep dive report.
+
+52 different SaaS ideas, exactly how much money they make, and a bunch of other cool information you'd want to know. Just click the first link in the description and we'll send it over. Also, leave a comment on some other types of businesses that you want us to cover or any other content you'd like to see us do.
+
+I'd love to hear your ideas. All right. That's a wrap.
+
+I appreciate you guys a ton, and I'll see you in the next one. Peace.
