@@ -379,14 +379,14 @@ class DualEncoderReranker:
     
     def __init__(
         self,
-        model_name: str = "sentence-transformers/all-mpnet-base-v2",
+        model_name: str = "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
         device: Optional[str] = None
     ):
         """
         Initialize dual-encoder reranker.
-        
+
         Args:
-            model_name: Sentence transformer model name
+            model_name: Sentence transformer model name (uses multilingual model by default)
             device: Device to run on
         """
         from sentence_transformers import SentenceTransformer

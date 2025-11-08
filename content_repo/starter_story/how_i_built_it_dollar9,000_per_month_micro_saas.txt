@@ -1,0 +1,185 @@
+My app does one thing and makes 9k a month. This is Leandro, and he built an app that literally does just one thing. If you want to build a successful plugin, you need to understand this.
+
+But before the success, he was freelancing and doing side jobs until he came across a framework that changed everything. It has hundreds of business ideas waiting to be built. In this video, Leandro shares it all.
+
+How to quit freelancing and build for yourself, how to validate and build your idea in two weeks, and this huge opportunity hiding in plain sight. All right, let's get into it. I'm Pat Walls, and this is Starter Story.
+
+Welcome, Leandro, to the channel. Thank you for coming on. Tell me about who you are, what you built, and what's your story.
+
+My name is Leandro, and I built an app that does only one thing and makes 9k per month. Sync2Sheets is an add-on that runs on the sidebar of Google Sheets and allows users to sync their Notion databases to Google Sheets. I built it in two weeks, and it has been around for four years now.
+
+All right, cool. So you built a plugin that makes $9,000 a month. Tell me a little bit more about this business and some of the numbers behind it.
+
+So Sync2Sheets runs on the side of Google Sheets, and it's kind of part of the Google Workspace marketplace. We have more than 70k users in the application. We have more than 450 paying customers.
+
+We get kind of 5k visitors a month. And Lifetime Revenue probably around 120k for the last four years. I would say that the last year or two years is where we made most of the money.
+
+All right. So one reason why I wanted to bring you on the channel and what I love about your business is it just does one thing. I think that's super cool.
+
+Tell me a little bit about how you found this idea. So what happened four years ago, I was building an integration between Google Sheets and another service. I was working with the Sheets API, so I gained a lot of knowledge about it.
+
+And at that time, Notion released their official Notion API. There was a gap between what users needed and what was available in Notion. So I said, okay, I need to validate if there's going to be a need for that kind of integration to sync Google Sheets with Notion.
+
+So what I did, I went to Reddit. I checked the subreddit of Notion and searched for keywords like Sheets, Google Sheets, Excel, CSV, all related keywords to what I was trying to build and validate. And I found a lot of people trying to export the information from Notion into Sheets to work with the data.
+
+I was confident to build an MVP in two weeks. So I just built MVP and started to find users and beta testers to get a shot. Cool.
+
+Well, I mean, I think that's super cool. If you're starting today, where would you go looking for more opportunities for this type of business? I believe Zapier is a good place to go and find those kind of opportunities.
+
+So if you go to Zapier and you check, for example, the most common subs, you will see that pair of two applications. For example, I believe in some QuickBooks and Sheets. There's a lot of companies and small businesses using QuickBooks for accounting, and they need to move that information to check the invoices, the payment orders and everything, and work with that data.
+
+And doing that in Zapier is kind of messy. You need to create different subs for updates, for creates, deletes, and everything. So if you're able to build that in just one piece of software that does everything, you're going to be solving a huge pain problem for customers.
+
+That's perfect. I love that. Let's take a step back.
+
+I know that you have an interesting background. You live in Buenos Aires, Argentina. Tell me about your background and how you got into building apps.
+
+So I first studied electronics engineering. I really love like taking things apart and investigating everything. I went to college.
+
+College made me literally hate electronics. So that way I said, okay, I need to learn by myself. I chose JavaScript because in JavaScript, you can build mobile apps, web apps, and everything.
+
+So it took me kind of a year. Life got in the way. I did freelance in eight years.
+
+It's kind of hard. You have an entrepreneur spirit. You want to make the decisions.
+
+And sometimes you're not in charge. So yeah, I was kind of tired of that kind of work. I wanted to create my own schedule for the day.
+
+Just be able to build things, be with a computer, solve problems. I said, okay, I already have some savings. I already know how to go.
+
+I have experience. Now I want to give it a shot. It was during COVID that I decided to take that step.
+
+I quit everything. No more clients. No more anything.
+
+I just decided to build my own thing. Cool. Okay, let's get a little bit more technical here.
+
+I want to know about how you actually built this thing, how long it took to build, and how you launched it. So the add-on is built using Apps Script. Apps Script is a language from Google services that allows you to extend Google docs, sheets, slides, and all Google services.
+
+So that's what I used to build the UI and everything of the add-on. Then I used VS Code as my coding editor. To build MVP, as I mentioned before, it has some experience using the Sheets API.
+
+So that really helped at the beginning to create the first version. And it took me two weeks. No AI.
+
+Just Stack Overflow, Google, and searching for everything there. I love that. Let's talk about ideas.
+
+How do you go about finding ideas that can make money? Yeah, I'm not the kind of guy that go looking for ideas. Usually I read a lot, blog posts, eggs, YouTube videos.
+
+Ideas spark in my mind, and I just write it down. I have a huge list of ideas. And it's funny when the same idea pops up different times.
+
+Those are the kind of ideas that you work on. But if I were to look for ideas, I would use... I think Upwork would be a great place to find ideas.
+
+Because you can go there and see what people are looking for to build. And maybe if you can translate that into a known solution to offer to other users. I think there could be some really good insights in there.
+
+On that same note, let's talk about validating those ideas. Once you've come up with an idea and even potentially launched it or thinking about launching it, how do you know if that idea is validated? What's your approach to that?
+
+Yeah, for new ideas, I usually first look if there is something that already exists that is similar or the same. Is this an enterprise solution? Is this for small businesses?
+
+Is this for individuals? You can check the existing pricings to see what's the potential for that idea. That's kind of the first step.
+
+Then if I'm going to continue building, I need to know that I'm going to be able to have something that differentiates me from the rest of the products that already exist. If I can't find that angle, I maybe look for something else. Because if you're not able to differentiate yourself, it's going to be hard to enter into the market.
+
+And then, yeah, try to find your first five users willing to try it out, right? Use Reddit, use X, use Facebook groups, LinkedIn groups as well. Having those users using the app while you're building it is amazing.
+
+It's really like the insights and all the validation that you get, that you're building exactly what they need is super important. Cool. So let's talk about MVP.
+
+I think a lot of people watching this may have tried to build stuff. And sometimes when you get towards the end, you're not sure what features to include and what not to include. Tell me about how you approach that with your plugin.
+
+First, I need to be able to transfer the information from one place to the other. No formatting, no anything. I just wanted the data to be there in sheets.
+
+And then I started to think about the user experience and what users could want the data to look like. And I realized they could want the data to look like similar to how it looks in Notion. So that's when I added conditional formattings, data validation for select, for drop downs and everything.
+
+I also wanted the sync to work and allow users to move columns, hide columns. So I focus in those little details that make the difference, right? Awesome.
+
+All right. Well, before we get into how Leandro turned this simple idea into a $9,000 per month micro SaaS, let's talk about where the next big solo apps are being built. If you're a solo dev or SaaS builder like Leandro, you know that marketplaces are one of the smartest ways to grow and build a business.
+
+You don't need an audience. You don't need to run ads. You just need to build something people already need where they already are.
+
+And one marketplace that's flying under the radar right now is Monday.com. It's a multi-product platform with products for project management, CRM, service management, and more. They've got over 245,000 customers across over 200 industries, and over 90% of their enterprise customers use apps on the marketplace.
+
+That is massive built-in demand. And what's great is that the Monday.com marketplace isn't saturated yet. So this is a good chance to get in early and stand out while the opportunity is wide open.
+
+They've made it super dev-friendly with robust APIs, MCP support, flexible SDKs, and a team that's actually invested in helping your app succeed. Plus, monetization is native. You set the pricing and they handle the billing and payments.
+
+We worked with them to put together this free ebook that breaks down the exact type of users on Monday.com, what they need, and where the biggest opportunities are. Click the first link in the description to grab it, brainstorm your next idea, and start building. Thanks to Monday.com for supporting the channel.
+
+Now, let's get back to Leandro's story. Let's talk about the launch of this. So you built it, and then what happened?
+
+Did you put it on the marketplace, and how many users did you get? Tell me about what the launch process was like. Yeah, so the first step was to publish it into the World Works Pay marketplace.
+
+And then I started to spam a lot of famous groups related to Notion and Reddit as well. So I searched keywords related to the product, and I started to have conversations with users, both in the groups and in personal DMs. So that way, I got some first users to try the application.
+
+And the same with the marketplace. Once the application is in the marketplace, if there's someone looking for something Notion-related, they're going to find it, and they're going to try it. Also, something that really helped was having a chat interface in the landing page at the beginning, because that way you can have real conversations with customers and with users, and try to understand what they need.
+
+All right, so let's talk about growth. After you kind of launched this thing, you're posting it on a bunch of forums. What did you do after that to actually start growing as a business, and distribute, and get your product in front of more people?
+
+Yeah, so the first source of insults was, of course, the marketplace. That was super important. I realized I needed to do SEO stuff, and so I started to think about what kind of blog posts I could write that users can find interesting and relate it to Notion and Google Sheets.
+
+So that's right now one of our main traffic channels. And I also use Reddit a lot. I have a service called F5Bot that is free.
+
+That lets you track different keywords on Reddit. So I set up some keyword tracking related to CSV, Google Sheets, Sheets in that super Reddit. And every time I get an email with a notification that a new post or comment was added, I just go there and reply.
+
+Of course, you need to try to be not spammy and really give value to the users. And if your product can be a solution for their problems, then you recommend your product. You say you are the founder.
+
+I also did a launch on Product Hunt a year and a half after launching the product for the first time. So that also was a really nice source of traffic. Not paying customers, but yes, traffic and visibility.
+
+And I remember I also posted on Hacker News. I got to the front page. I was crazy.
+
+The spike you get in traffic is amazing. But again, the same. It doesn't translate into paying customers.
+
+It's just visibility, backlinks that improve domain rating, but that's it. That's great. All right.
+
+Well, let's get a little more technical here. I'd love to hear about your tech stack. What kind of tools and languages do you use and have you used to build these products?
+
+So TypeScript is my language. DS Code, I use it as my editor. I have now started to use Cursor a little bit.
+
+All my infrastructure is in Google Cloud and Firebase. I use ZenGrid for transactional emails and marketing emails as well. Mixpanel for analytics.
+
+I really love Mixpanel because you are able to know exactly what each user is doing with the application. I use Paddle as my payment processor instead of Stripe. Because Stripe is not available in Argentina.
+
+And I use Tideos as a customer support tool to have the chat in the landing page. It takes time, but it gives you a lot of insights and direct communication with your customers. And I think that even at the beginning is super important.
+
+That's awesome. On that same note, can you actually share with me the costs and the margin of a business like this? Yeah, of course.
+
+So I guess in terms of percentage of margin is 90%. My main expense right now is cloud infrastructure. Because again, you are kind of syncing between two services and you are doing that all the time in real time.
+
+So there's a lot of compute going on. But apart from that, the rest of the tools are cheap. It's not a huge expense.
+
+Cool. All right. Okay.
+
+So you built this successful business. It's making $9,000 a month, somewhat on autopilot. What have you learned through this process that surprised you?
+
+It was crazy to realize how small changes affect the business. Moving a button, changing a text, or just moving things around in the UI can have such a profound impact. Sometimes just small decisions make a lot of difference.
+
+At the beginning, we had a free plan. And I realized that a lot of users were just using the free plan. And that was enough for them.
+
+They didn't need to pay. So I made the decision to remove the free plan. It was risky.
+
+There was a lot of people angry about that. But basically, in that moment, we went from 5K to 8K in two months, I think. So yeah, just a small decision that makes a huge difference to the business.
+
+That's amazing insight. I'd love to hear about what your typical day in life looks like. You're running an app that makes $9,000 a month.
+
+What does a typical day look like for you in Argentina? So I have a two-year-old child. We usually wake up at 7, 7.30, prepare some mates, breakfast.
+
+I go with him to the kindergarten. After that, I'm ready to start working. I usually work in spikes.
+
+So when I have to do development, I kind of put together a lot of tasks, do a huge spike of work. And then I chill, spike, chill. That's kind of my way of working.
+
+And I try to do things that are going to make a difference. If I see that a task or something is not going to move the needle, I just don't do it and focus my time on something else. Cool.
+
+Last question that we ask all founders who come on Starter Story. If you could stand on Leandro's shoulders when you were a freelancer trying to find that business idea, what advice would you give him? Yeah, I think it's super important to at least find your first user that is willing to pay for your application.
+
+What happened to me with some other products is that you build it for free first. You have a lot of usage. And as soon as you start charging, then they don't use the application anymore.
+
+So that's the moment when you realize that there was not enough value for them. So charging from the beginning, I think it's super important to not waste time building something that no one is going to be willing to pay for. And then when you realize that it's going to work, just go for it.
+
+All right. Well, that was great. Thanks for coming on, Leandro.
+
+I love your story. I love the business that you built. Hopefully you'll be building a bunch more cool plugins and grow to 100K MRR.
+
+And we'll see you next time. Thanks for coming on. Thank you for having me.
+
+It was super fun. I wanted to thank Leandro again for coming on the channel. I love his story because he's proof that you can take a simple idea and turn it into a really solid business.
+
+My favorite part about his business is that although it's not a massive, huge million dollar business, it's a super cool business that kind of works on autopilot. It's great for developers. And again, like we said, it just does one thing.
+
+If you're interested in building something similar and you're serious about actually doing this, I'd encourage you to check out Starter Story Build. In two weeks, you'll come up with an idea, you'll build it, and you'll launch it and come out the other side with a real live production app. I'll put the link in the description if you want to check that out.
+
+But otherwise, thank you guys for watching. I'll see you in the next one. Peace.

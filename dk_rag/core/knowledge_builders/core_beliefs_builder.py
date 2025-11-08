@@ -6,6 +6,7 @@ Optimizes content for vector similarity search by combining belief statements,
 categories, and supporting evidence into coherent searchable text.
 """
 
+import hashlib
 from typing import List, Dict, Any
 from langchain.schema import Document
 
@@ -155,13 +156,27 @@ class CoreBeliefsBuilder(BaseKnowledgeBuilder):
         """
         # Start with base metadata
         metadata = self.create_base_metadata(item, persona_id, source_file, doc_index)
-        
+
+        # Extract statement once to avoid duplication
+        statement = item.get('statement', '').strip()
+
+        # Create hash-based unique identifier to avoid data duplication
+        # (Core beliefs don't have a separate 'name' field in the artifact like mental models do)
+        statement_hash = hashlib.md5(statement.encode()).hexdigest()[:16]
+        unique_name = f"belief_{statement_hash}"
+
         # Add core belief specific metadata
         metadata.update({
-            # Core belief fields (simple types only - complex data is in document content)
-            'statement': item.get('statement', '').strip(),
+            # Hash-based unique identifier (no duplication with statement)
+            'name': unique_name,
+
+            # Core belief fields
+            'statement': statement,
             'category': item.get('category', '').strip(),
-            
+
+            # Structured data (stored as delimited string for ChromaDB compatibility)
+            'supporting_evidence_text': '\n'.join(str(e) for e in item.get('supporting_evidence', [])),
+
             # Derived metrics for search optimization
             'evidence_count': len(item.get('supporting_evidence', [])),
             'evidence_strength': self._calculate_evidence_strength(item),

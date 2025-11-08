@@ -47,31 +47,47 @@ class KnowledgeIndexer:
     with multi-tenant support for isolated persona management
     """
     
-    def __init__(self, settings: Settings, persona_manager: PersonaManager, persona_id: Optional[str] = None):
-        """Initialize the knowledge indexer with shared persona manager and optional persona context"""
+    def __init__(self, settings: Settings, persona_manager: PersonaManager, persona_id: Optional[str] = None, language: str = "en"):
+        """Initialize the knowledge indexer with shared persona manager and optional persona context
+
+        Args:
+            settings: Application settings
+            persona_manager: Persona manager instance
+            persona_id: Optional persona identifier
+            language: Content language ('en', 'zh', etc.)
+        """
         self.settings = settings
         self.logger = get_component_logger("KnowIdx", persona_id)
         self.persona_id = persona_id
-        
+
         # Use provided persona manager instance
         self.persona_manager = persona_manager
-        
+
+        # Get language from persona metadata if available, otherwise use provided language
+        if persona_id and self.persona_manager.persona_exists(persona_id):
+            self.language = self.persona_manager.get_persona_language(persona_id)
+        else:
+            self.language = language
+
+        # Strip whitespace from language parameter
+        self.language = self.language.strip() if self.language else "en"
+
         # Initialize components - persona-specific if persona_id provided
         if persona_id:
             # Ensure persona is registered
             if not self.persona_manager.persona_exists(persona_id):
                 raise ValueError(f"Persona '{persona_id}' not registered. Register it first.")
-            
+
             # Use persona-specific components
             self.vector_store = self.persona_manager.get_persona_vector_store(persona_id)
         else:
             # Legacy mode - use global components
             self.vector_store = VectorStore(settings)
-        
-        self.transcript_loader = TranscriptLoader(settings)
-        self.chunk_processor = ChunkProcessor(settings)
-        self.persona_extractor = PersonaExtractor(settings, persona_id)
-        self.statistical_analyzer = StatisticalAnalyzer(settings, persona_id)
+
+        self.transcript_loader = TranscriptLoader(settings, self.language)
+        self.chunk_processor = ChunkProcessor(settings, language=self.language)
+        self.persona_extractor = PersonaExtractor(settings, persona_id, self.language)
+        self.statistical_analyzer = StatisticalAnalyzer(settings, persona_id, self.language)
         
         # Phase 2 components (initialized on first use)
         self.retrieval_config: Optional[Phase2RetrievalConfig] = None
@@ -401,8 +417,8 @@ class KnowledgeIndexer:
             if self.settings.validation.strict_mode:
                 raise ValueError(f"Validation failed: {validation_issues}")
         
-        # Check if statistical analysis is available
-        if use_cached_stats:
+        # Check if statistical analysis is available (only for English)
+        if use_cached_stats and self.language == "en":
             if not self.statistical_analyzer.has_cached_analysis(documents):
                 raise ValueError(
                     "No cached statistical analysis found. "
@@ -410,6 +426,8 @@ class KnowledgeIndexer:
                     "or set use_cached_stats=False to perform fresh analysis."
                 )
             self.logger.info("Using cached statistical analysis from Phase 1-a")
+        elif use_cached_stats and self.language != "en":
+            self.logger.info(f"Statistical analysis not available for language '{self.language}', skipping cache check")
         else:
             self.logger.info("Performing fresh statistical analysis...")
         
@@ -712,7 +730,8 @@ class KnowledgeIndexer:
                 self.bm25_store = BM25Store(
                     str(bm25_path),
                     k1=self.retrieval_config.hybrid_search.bm25_k1,
-                    b=self.retrieval_config.hybrid_search.bm25_b
+                    b=self.retrieval_config.hybrid_search.bm25_b,
+                    language=self.language
                 )
                 self.logger.debug("BM25 store initialized")
             
@@ -769,7 +788,8 @@ class KnowledgeIndexer:
                 self.bm25_store = BM25Store(
                     str(bm25_path),
                     k1=self.retrieval_config.hybrid_search.bm25_k1,
-                    b=self.retrieval_config.hybrid_search.bm25_b
+                    b=self.retrieval_config.hybrid_search.bm25_b,
+                    language=self.language
                 )
             
             # Check if rebuild needed

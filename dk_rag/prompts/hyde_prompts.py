@@ -14,6 +14,23 @@ HYDE_PROMPTS = {
 
 Your goal is NOT to answer the user's question in a conversational way. Instead, your goal is to generate a concise, information-rich document that contains the types of keywords, concepts, and technical terms likely to be found in a perfect, detailed answer.
 
+## LANGUAGE HANDLING ##
+CRITICAL: Detect the primary language of the input and produce your ENTIRE output EXCLUSIVELY in that single language.
+
+**STRICT RULES:**
+1. **SINGLE LANGUAGE ONLY**: Use ONLY the detected input language. NO mixing of languages.
+2. **NO TRANSLATIONS**: Do not provide translations, explanations, or parenthetical notes in other languages.
+3. **NO ROMANIZATION**: If input is Chinese, do NOT include Pinyin romanization. If input is English, do NOT include IPA or phonetics.
+4. **ASSUME FLUENT READER**: The reader is a native/fluent speaker of the input language and does not need assistance from other languages.
+
+**Examples:**
+- ✅ CORRECT for Chinese input: "恢复秩序和繁荣"
+- ❌ WRONG for Chinese input: "恢复秩序 (huīfù zhìxù - restore order)"
+- ✅ CORRECT for English input: "Restore order and prosperity"
+- ❌ WRONG for English input: "Restore order (恢复秩序)"
+
+Your output language must match the input language, NOT the language this prompt is written in
+
 ## USER QUESTION ##
 {query}
 
@@ -29,6 +46,23 @@ Your goal is NOT to answer the user's question in a conversational way. Instead,
     "detailed_explanation": """You are an expert AI assistant tasked with generating a hypothetical document for a semantic search query.
 
 Your goal is to generate a concise, information-rich document containing the keywords and concepts likely to be found in a comprehensive explanation.
+
+## LANGUAGE HANDLING ##
+CRITICAL: Detect the primary language of the input and produce your ENTIRE output EXCLUSIVELY in that single language.
+
+**STRICT RULES:**
+1. **SINGLE LANGUAGE ONLY**: Use ONLY the detected input language. NO mixing of languages.
+2. **NO TRANSLATIONS**: Do not provide translations, explanations, or parenthetical notes in other languages.
+3. **NO ROMANIZATION**: If input is Chinese, do NOT include Pinyin romanization. If input is English, do NOT include IPA or phonetics.
+4. **ASSUME FLUENT READER**: The reader is a native/fluent speaker of the input language and does not need assistance from other languages.
+
+**Examples:**
+- ✅ CORRECT for Chinese input: "恢复秩序和繁荣"
+- ❌ WRONG for Chinese input: "恢复秩序 (huīfù zhìxù - restore order)"
+- ✅ CORRECT for English input: "Restore order and prosperity"
+- ❌ WRONG for English input: "Restore order (恢复秩序)"
+
+Your output language must match the input language, NOT the language this prompt is written in
 
 ## USER QUESTION ##
 {query}
@@ -50,6 +84,12 @@ Your goal is to generate a concise, information-rich document containing the key
 
 Your goal is to generate a concise, information-rich document containing the keywords and terminology likely to be found in a specific technical answer.
 
+## LANGUAGE HANDLING ##
+CRITICAL: Detect the primary language of the technical question and produce your ENTIRE hypothetical document in that same detected language.
+- If the question is in Chinese (中文), write the document in Chinese
+- If the question is in English, write the document in English
+- Your document language must match the question language, NOT the language this prompt is written in
+
 ## TECHNICAL QUESTION ##
 {query}
 
@@ -69,6 +109,23 @@ Your goal is to generate a concise, information-rich document containing the key
     "framework_focused": """You are an expert AI assistant tasked with generating a hypothetical document for a search query about a framework or methodology.
 
 Your goal is to generate a concise, information-rich document containing the keywords and structured concepts likely to be found in a detailed framework breakdown.
+
+## LANGUAGE HANDLING ##
+CRITICAL: Detect the primary language of the input and produce your ENTIRE output EXCLUSIVELY in that single language.
+
+**STRICT RULES:**
+1. **SINGLE LANGUAGE ONLY**: Use ONLY the detected input language. NO mixing of languages.
+2. **NO TRANSLATIONS**: Do not provide translations, explanations, or parenthetical notes in other languages.
+3. **NO ROMANIZATION**: If input is Chinese, do NOT include Pinyin romanization. If input is English, do NOT include IPA or phonetics.
+4. **ASSUME FLUENT READER**: The reader is a native/fluent speaker of the input language and does not need assistance from other languages.
+
+**Examples:**
+- ✅ CORRECT for Chinese input: "恢复秩序和繁荣"
+- ❌ WRONG for Chinese input: "恢复秩序 (huīfù zhìxù - restore order)"
+- ✅ CORRECT for English input: "Restore order and prosperity"
+- ❌ WRONG for English input: "Restore order (恢复秩序)"
+
+Your output language must match the input language, NOT the language this prompt is written in
 
 ## USER QUESTION ##
 {query}
@@ -90,6 +147,12 @@ Your goal is to generate a concise, information-rich document containing the key
 
 Your goal is to generate a concise, information-rich document containing the keywords and definitions likely to be found in a clear concept explanation.
 
+## LANGUAGE HANDLING ##
+CRITICAL: Detect the primary language of the topic/question and produce your ENTIRE hypothetical document in that same detected language.
+- If the question is in Chinese (中文), write the document in Chinese
+- If the question is in English, write the document in English
+- Your document language must match the question language, NOT the language this prompt is written in
+
 ## TOPIC/QUESTION ##
 {query}
 
@@ -109,6 +172,12 @@ Your goal is to generate a concise, information-rich document containing the key
     "problem_solution": """You are an expert AI assistant tasked with generating a hypothetical document for a search query about solving a problem.
 
 Your goal is to generate a concise, information-rich document containing the keywords and steps likely to be found in a comprehensive solution.
+
+## LANGUAGE HANDLING ##
+CRITICAL: Detect the primary language of the problem description and produce your ENTIRE hypothetical document in that same detected language.
+- If the problem is in Chinese (中文), write the document in Chinese
+- If the problem is in English, write the document in English
+- Your document language must match the problem language, NOT the language this prompt is written in
 
 ## PROBLEM ##
 {query}
@@ -130,6 +199,23 @@ Your goal is to generate a concise, information-rich document containing the key
 
 Your goal is to generate a concise, information-rich document containing the specific facts, data, and statistics likely to be found in a definitive answer.
 
+## LANGUAGE HANDLING ##
+CRITICAL: Detect the primary language of the input and produce your ENTIRE output EXCLUSIVELY in that single language.
+
+**STRICT RULES:**
+1. **SINGLE LANGUAGE ONLY**: Use ONLY the detected input language. NO mixing of languages.
+2. **NO TRANSLATIONS**: Do not provide translations, explanations, or parenthetical notes in other languages.
+3. **NO ROMANIZATION**: If input is Chinese, do NOT include Pinyin romanization. If input is English, do NOT include IPA or phonetics.
+4. **ASSUME FLUENT READER**: The reader is a native/fluent speaker of the input language and does not need assistance from other languages.
+
+**Examples:**
+- ✅ CORRECT for Chinese input: "恢复秩序和繁荣"
+- ❌ WRONG for Chinese input: "恢复秩序 (huīfù zhìxù - restore order)"
+- ✅ CORRECT for English input: "Restore order and prosperity"
+- ❌ WRONG for English input: "Restore order (恢复秩序)"
+
+Your output language must match the input language, NOT the language this prompt is written in
+
 ## USER QUESTION ##
 {query}
 
@@ -148,6 +234,23 @@ Your goal is to generate a concise, information-rich document containing the spe
     "tutorial_style": """You are an expert AI assistant tasked with generating a hypothetical document for a "how-to" search query.
 
 Your goal is to generate a concise, information-rich document containing the keywords and structure likely to be found in a step-by-step tutorial.
+
+## LANGUAGE HANDLING ##
+CRITICAL: Detect the primary language of the input and produce your ENTIRE output EXCLUSIVELY in that single language.
+
+**STRICT RULES:**
+1. **SINGLE LANGUAGE ONLY**: Use ONLY the detected input language. NO mixing of languages.
+2. **NO TRANSLATIONS**: Do not provide translations, explanations, or parenthetical notes in other languages.
+3. **NO ROMANIZATION**: If input is Chinese, do NOT include Pinyin romanization. If input is English, do NOT include IPA or phonetics.
+4. **ASSUME FLUENT READER**: The reader is a native/fluent speaker of the input language and does not need assistance from other languages.
+
+**Examples:**
+- ✅ CORRECT for Chinese input: "恢复秩序和繁荣"
+- ❌ WRONG for Chinese input: "恢复秩序 (huīfù zhìxù - restore order)"
+- ✅ CORRECT for English input: "Restore order and prosperity"
+- ❌ WRONG for English input: "Restore order (恢复秩序)"
+
+Your output language must match the input language, NOT the language this prompt is written in
 
 ## USER QUESTION ##
 {query}
@@ -168,6 +271,23 @@ Your goal is to generate a concise, information-rich document containing the key
 
 Your goal is to generate a concise, information-rich document containing the keywords and points of comparison likely to be found in a detailed analysis.
 
+## LANGUAGE HANDLING ##
+CRITICAL: Detect the primary language of the input and produce your ENTIRE output EXCLUSIVELY in that single language.
+
+**STRICT RULES:**
+1. **SINGLE LANGUAGE ONLY**: Use ONLY the detected input language. NO mixing of languages.
+2. **NO TRANSLATIONS**: Do not provide translations, explanations, or parenthetical notes in other languages.
+3. **NO ROMANIZATION**: If input is Chinese, do NOT include Pinyin romanization. If input is English, do NOT include IPA or phonetics.
+4. **ASSUME FLUENT READER**: The reader is a native/fluent speaker of the input language and does not need assistance from other languages.
+
+**Examples:**
+- ✅ CORRECT for Chinese input: "恢复秩序和繁荣"
+- ❌ WRONG for Chinese input: "恢复秩序 (huīfù zhìxù - restore order)"
+- ✅ CORRECT for English input: "Restore order and prosperity"
+- ❌ WRONG for English input: "Restore order (恢复秩序)"
+
+Your output language must match the input language, NOT the language this prompt is written in
+
 ## USER QUESTION ##
 {query}
 
@@ -186,6 +306,12 @@ Your goal is to generate a concise, information-rich document containing the key
     "best_practices": """You are an expert AI assistant tasked with generating a hypothetical document for a search query about best practices.
 
 Your goal is to generate a concise, information-rich document containing the keywords and strategies likely to be found in an expert guide.
+
+## LANGUAGE HANDLING ##
+CRITICAL: Detect the primary language of the topic/question and produce your ENTIRE hypothetical document in that same detected language.
+- If the topic is in Chinese (中文), write the document in Chinese
+- If the topic is in English, write the document in English
+- Your document language must match the topic language, NOT the language this prompt is written in
 
 ## TOPIC ##
 {query}

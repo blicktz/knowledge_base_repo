@@ -3,16 +3,20 @@
 
 # Configuration Variables
 # -----------------------
+PROJECT_ROOT := $(shell cd .. && pwd)
 PYTHON := poetry run python
 PYTEST := poetry run pytest
 MODULE := dk_rag.cli.persona_builder
 
-# Default paths - customize these for your setup
-DOCS_DIR ?= /Users/blickt/Documents/src/pdf_2_text/content_repo/Konstantinos_Doulgeridis_facebook_ads
+# Default paths - customize these for your setup,DOCS_DIR must match the persona name in oder to build correct kb
+DOCS_DIR ?= /Users/blickt/Documents/src/pdf_2_text/content_repo/starter_story
 OUTPUT_DIR ?= ./output
 CONFIG_FILE ?= ./config/persona_config.yaml
 PATTERN ?= *.txt
 BATCH_SIZE ?= 5
+
+# Language Configuration
+CONTENT_LANG ?= en  # Default to English. Options: en (English), zh (Simplified Chinese)
 
 # Storage Configuration - automatically reads from config YAML file
 # NOTE: This must align with storage.base_storage_dir in the config YAML file
@@ -22,7 +26,7 @@ CACHE_DIR := $(STORAGE_BASE_DIR)/cache
 VECTOR_DB_DIR := $(STORAGE_BASE_DIR)/vector_db
 
 # Default persona name for extraction
-PERSONA_NAME ?= konstantinos_doulgeridis_youtuber
+PERSONA_NAME ?= starter_story_youtuber
 
 # Search query for testing
 SEARCH_QUERY ?= "mental models for productivity"
@@ -44,7 +48,7 @@ NC := \033[0m # No Color
 .PHONY: install
 install: ## Install Python dependencies via Poetry
 	@echo "$(BLUE)Installing Python dependencies...$(NC)"
-	@cd .. && poetry install
+	@cd $(PROJECT_ROOT) && poetry install
 	@echo "$(GREEN)✓ Dependencies installed$(NC)"
 
 .PHONY: setup-spacy
@@ -83,7 +87,8 @@ build-kb: ## Build knowledge base from documents
 	$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" build-kb \
 		--persona-id "$(PERSONA_NAME)" \
 		--documents-dir "$(DOCS_DIR)" \
-		--pattern "$(PATTERN)"
+		--pattern "$(PATTERN)" \
+		--language "$(CONTENT_LANG)"
 	@echo "$(GREEN)✓ Knowledge base built$(NC)"
 
 .PHONY: rebuild-kb
@@ -92,10 +97,14 @@ rebuild-kb: ## Clear and rebuild knowledge base from scratch
 	@read -p "Are you sure? [y/N]: " confirm; \
 	if [ "$$confirm" = "y" ] || [ "$$confirm" = "Y" ]; then \
 		echo "$(BLUE)Rebuilding knowledge base from scratch...$(NC)"; \
+		echo "$(BLUE)Clearing transcripts retrieval cache...$(NC)"; \
+		rm -rf "$(STORAGE_BASE_DIR)/retrieval_cache/transcripts/"* 2>/dev/null || true; \
+		echo "$(GREEN)✓ Cache cleared$(NC)"; \
 		$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" build-kb \
 			--persona-id "$(PERSONA_NAME)" \
 			--documents-dir "$(DOCS_DIR)" \
 			--pattern "$(PATTERN)" \
+			--language "$(CONTENT_LANG)" \
 			--rebuild; \
 		echo "$(GREEN)✓ Knowledge base rebuilt$(NC)"; \
 	else \
@@ -120,7 +129,8 @@ update-kb: ## Update knowledge base with new documents
 	$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" build-kb \
 		--persona-id "$(PERSONA_NAME)" \
 		--documents-dir "$(DOCS_DIR)" \
-		--pattern "$(PATTERN)"
+		--pattern "$(PATTERN)" \
+		--language "$(CONTENT_LANG)"
 	@echo "$(GREEN)✓ Knowledge base updated$(NC)"
 
 .PHONY: analyze-kb
@@ -139,7 +149,8 @@ extract-persona-stats: ## Phase 1-a: Statistical analysis only (spaCy/NLTK)
 		--documents-dir "$(DOCS_DIR)" \
 		--name "$(PERSONA_NAME)" \
 		--pattern "$(PATTERN)" \
-		--batch-size $(BATCH_SIZE)
+		--batch-size $(BATCH_SIZE) \
+		--language "$(CONTENT_LANG)"
 	@echo "$(GREEN)✓ Statistical analysis complete for '$(PERSONA_NAME)'$(NC)"
 
 .PHONY: extract-persona-llm
@@ -149,7 +160,8 @@ extract-persona-llm: ## Phase 1-b: LLM map-reduce processing only
 		--documents-dir "$(DOCS_DIR)" \
 		--name "$(PERSONA_NAME)" \
 		--pattern "$(PATTERN)" \
-		--batch-size $(BATCH_SIZE)
+		--batch-size $(BATCH_SIZE) \
+		--language "$(CONTENT_LANG)"
 	@echo "$(GREEN)✓ LLM processing complete for '$(PERSONA_NAME)'$(NC)"
 
 .PHONY: extract-persona-full
@@ -180,39 +192,79 @@ export-personas: ## Export all personas to output directory
 build-mental-models: ## Build mental models RAG from latest Phase 1 artifact (PERSONA_NAME="greg_startup")
 	@echo "$(BLUE)Building mental models RAG for persona: $(PERSONA_NAME)$(NC)"
 	@echo "========================================"
-	@echo "🔍 Auto-discovering latest Phase 1 artifact..."
-	@echo "🧠 Rebuilding from scratch (small data size)..."
-	@cd .. && $(PYTHON) -m dk_rag.cli.knowledge_builder build-mental-models-auto --persona-id "$(PERSONA_NAME)" --rebuild --verbose
-	@echo "$(GREEN)✅ Mental models RAG build complete!$(NC)"
+	@echo "$(YELLOW)⚠️  This will delete existing mental models database for $(PERSONA_NAME)$(NC)"
+	@read -p "Continue? [y/N]: " confirm; \
+	if [ "$$confirm" = "y" ] || [ "$$confirm" = "Y" ]; then \
+		echo "$(BLUE)Removing old mental models database...$(NC)"; \
+		rm -rf "$(PERSONAS_DIR)/$(PERSONA_NAME)/vector_db_mental_models"; \
+		echo "$(GREEN)✓ Old database removed$(NC)"; \
+		echo "$(BLUE)Clearing mental models retrieval cache...$(NC)"; \
+		rm -rf "$(STORAGE_BASE_DIR)/retrieval_cache/mental_models/"* 2>/dev/null || true; \
+		echo "$(GREEN)✓ Cache cleared$(NC)"; \
+		echo "🔍 Auto-discovering latest Phase 1 artifact..."; \
+		echo "🧠 Rebuilding from scratch (small data size)..."; \
+		cd $(PROJECT_ROOT) && $(PYTHON) -m dk_rag.cli.knowledge_builder build-mental-models-auto --persona-id "$(PERSONA_NAME)" --rebuild --verbose; \
+		echo "$(GREEN)✅ Mental models RAG build complete!$(NC)"; \
+	else \
+		echo "$(YELLOW)Cancelled$(NC)"; \
+	fi
 
 .PHONY: build-core-beliefs
 build-core-beliefs: ## Build core beliefs RAG from latest Phase 1 artifact (PERSONA_NAME="greg_startup")
 	@echo "$(BLUE)Building core beliefs RAG for persona: $(PERSONA_NAME)$(NC)"
 	@echo "========================================"
-	@echo "🔍 Auto-discovering latest Phase 1 artifact..."
-	@echo "💭 Rebuilding from scratch (small data size)..."
-	@cd .. && $(PYTHON) -m dk_rag.cli.knowledge_builder build-core-beliefs-auto --persona-id "$(PERSONA_NAME)" --rebuild --verbose
-	@echo "$(GREEN)✅ Core beliefs RAG build complete!$(NC)"
+	@echo "$(YELLOW)⚠️  This will delete existing core beliefs database for $(PERSONA_NAME)$(NC)"
+	@read -p "Continue? [y/N]: " confirm; \
+	if [ "$$confirm" = "y" ] || [ "$$confirm" = "Y" ]; then \
+		echo "$(BLUE)Removing old core beliefs database...$(NC)"; \
+		rm -rf "$(PERSONAS_DIR)/$(PERSONA_NAME)/vector_db_core_beliefs"; \
+		echo "$(GREEN)✓ Old database removed$(NC)"; \
+		echo "$(BLUE)Clearing core beliefs retrieval cache...$(NC)"; \
+		rm -rf "$(STORAGE_BASE_DIR)/retrieval_cache/core_beliefs/"* 2>/dev/null || true; \
+		echo "$(GREEN)✓ Cache cleared$(NC)"; \
+		echo "🔍 Auto-discovering latest Phase 1 artifact..."; \
+		echo "💭 Rebuilding from scratch (small data size)..."; \
+		cd $(PROJECT_ROOT) && $(PYTHON) -m dk_rag.cli.knowledge_builder build-core-beliefs-auto --persona-id "$(PERSONA_NAME)" --rebuild --verbose; \
+		echo "$(GREEN)✅ Core beliefs RAG build complete!$(NC)"; \
+	else \
+		echo "$(YELLOW)Cancelled$(NC)"; \
+	fi
 
 .PHONY: build-knowledge-rag
 build-knowledge-rag: ## Build both mental models and core beliefs RAG (PERSONA_NAME="greg_startup")
 	@echo "$(BLUE)Building complete knowledge RAG for persona: $(PERSONA_NAME)$(NC)"
 	@echo "======================================================"
-	@echo "🔍 Building mental models and core beliefs from latest Phase 1 artifact..."
-	@echo ""
-	@echo "$(YELLOW)Step 1/2: Mental Models...$(NC)"
-	@$(MAKE) build-mental-models PERSONA_NAME="$(PERSONA_NAME)"
-	@echo ""
-	@echo "$(YELLOW)Step 2/2: Core Beliefs...$(NC)"
-	@$(MAKE) build-core-beliefs PERSONA_NAME="$(PERSONA_NAME)"
-	@echo ""
-	@echo "$(GREEN)🎉 Complete knowledge RAG build finished!$(NC)"
-	@echo "$(GREEN)   - Mental models RAG: ✅$(NC)"
-	@echo "$(GREEN)   - Core beliefs RAG: ✅$(NC)"
-	@echo ""
-	@echo "$(YELLOW)💡 You can now search these knowledge bases using:$(NC)"
-	@echo "   cd .. && $(PYTHON) -m dk_rag.cli.knowledge_builder search-mental-models --persona-id \"$(PERSONA_NAME)\" --query \"your query\""
-	@echo "   cd .. && $(PYTHON) -m dk_rag.cli.knowledge_builder search-core-beliefs --persona-id \"$(PERSONA_NAME)\" --query \"your query\""
+	@echo "$(YELLOW)⚠️  This will delete existing mental models AND core beliefs databases for $(PERSONA_NAME)$(NC)"
+	@read -p "Continue? [y/N]: " confirm; \
+	if [ "$$confirm" = "y" ] || [ "$$confirm" = "Y" ]; then \
+		echo "$(BLUE)Removing old databases...$(NC)"; \
+		rm -rf "$(PERSONAS_DIR)/$(PERSONA_NAME)/vector_db_mental_models"; \
+		rm -rf "$(PERSONAS_DIR)/$(PERSONA_NAME)/vector_db_core_beliefs"; \
+		echo "$(GREEN)✓ Old databases removed$(NC)"; \
+		echo "$(BLUE)Clearing retrieval caches...$(NC)"; \
+		rm -rf "$(STORAGE_BASE_DIR)/retrieval_cache/mental_models/"* 2>/dev/null || true; \
+		rm -rf "$(STORAGE_BASE_DIR)/retrieval_cache/core_beliefs/"* 2>/dev/null || true; \
+		echo "$(GREEN)✓ Caches cleared$(NC)"; \
+		echo "🔍 Building mental models and core beliefs from latest Phase 1 artifact..."; \
+		echo ""; \
+		echo "$(YELLOW)Step 1/2: Mental Models...$(NC)"; \
+		cd $(PROJECT_ROOT) && $(PYTHON) -m dk_rag.cli.knowledge_builder build-mental-models-auto --persona-id "$(PERSONA_NAME)" --rebuild --verbose; \
+		echo "$(GREEN)✅ Mental models RAG build complete!$(NC)"; \
+		echo ""; \
+		echo "$(YELLOW)Step 2/2: Core Beliefs...$(NC)"; \
+		cd $(PROJECT_ROOT) && $(PYTHON) -m dk_rag.cli.knowledge_builder build-core-beliefs-auto --persona-id "$(PERSONA_NAME)" --rebuild --verbose; \
+		echo "$(GREEN)✅ Core beliefs RAG build complete!$(NC)"; \
+		echo ""; \
+		echo "$(GREEN)🎉 Complete knowledge RAG build finished!$(NC)"; \
+		echo "$(GREEN)   - Mental models RAG: ✅$(NC)"; \
+		echo "$(GREEN)   - Core beliefs RAG: ✅$(NC)"; \
+		echo ""; \
+		echo "$(YELLOW)💡 You can now search these knowledge bases using:$(NC)"; \
+		echo "   cd $(PROJECT_ROOT) && $(PYTHON) -m dk_rag.cli.knowledge_builder search-mental-models --persona-id \"$(PERSONA_NAME)\" --query \"your query\""; \
+		echo "   cd $(PROJECT_ROOT) && $(PYTHON) -m dk_rag.cli.knowledge_builder search-core-beliefs --persona-id \"$(PERSONA_NAME)\" --query \"your query\""; \
+	else \
+		echo "$(YELLOW)Cancelled$(NC)"; \
+	fi
 
 # =============================================================================
 # SEARCH & QUERY TARGETS
@@ -226,18 +278,22 @@ search: ## Search knowledge base (use SEARCH_QUERY="your query")
 		--n-results 10
 
 .PHONY: search-mental-models
-search-mental-models: ## Search for mental models and frameworks
-	@echo "$(BLUE)Searching for mental models...$(NC)"
-	@$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" search "mental models frameworks problem-solving" \
+search-mental-models: ## Search for mental models (use SEARCH_QUERY="your query")
+	@echo "$(BLUE)Searching mental models for: $(SEARCH_QUERY)$(NC)"
+	@cd $(PROJECT_ROOT) && $(PYTHON) -m dk_rag.cli.knowledge_builder search-mental-models \
 		--persona-id "$(PERSONA_NAME)" \
-		--n-results 15
+		--query "$(SEARCH_QUERY)" \
+		--top-k 15 \
+		--verbose
 
 .PHONY: search-beliefs
-search-beliefs: ## Search for core beliefs and principles
-	@echo "$(BLUE)Searching for core beliefs...$(NC)"
-	@$(PYTHON) -m $(MODULE) --config "$(CONFIG_FILE)" search "core beliefs principles values philosophy" \
+search-beliefs: ## Search for core beliefs (use SEARCH_QUERY="your query")
+	@echo "$(BLUE)Searching core beliefs for: $(SEARCH_QUERY)$(NC)"
+	@cd $(PROJECT_ROOT) && $(PYTHON) -m dk_rag.cli.knowledge_builder search-core-beliefs \
 		--persona-id "$(PERSONA_NAME)" \
-		--n-results 15
+		--query "$(SEARCH_QUERY)" \
+		--top-k 15 \
+		--verbose
 
 .PHONY: search-interactive
 search-interactive: ## Interactive search session
@@ -259,18 +315,18 @@ search-interactive: ## Interactive search session
 .PHONY: test
 test: ## Run all tests
 	@echo "$(BLUE)Running tests...$(NC)"
-	@cd .. && $(PYTEST) dk_rag/tests/
+	@cd $(PROJECT_ROOT) && $(PYTEST) dk_rag/tests/
 	@echo "$(GREEN)✓ All tests passed$(NC)"
 
 .PHONY: test-verbose
 test-verbose: ## Run tests with verbose output
 	@echo "$(BLUE)Running tests (verbose)...$(NC)"
-	@cd .. && $(PYTEST) dk_rag/tests/ -v
+	@cd $(PROJECT_ROOT) && $(PYTEST) dk_rag/tests/ -v
 
 .PHONY: test-coverage
 test-coverage: ## Run tests with coverage report
 	@echo "$(BLUE)Running tests with coverage...$(NC)"
-	@cd .. && $(PYTEST) dk_rag/tests/ --cov=dk_rag --cov-report=term-missing
+	@cd $(PROJECT_ROOT) && $(PYTEST) dk_rag/tests/ --cov=dk_rag --cov-report=term-missing
 
 .PHONY: validate
 validate: ## Validate configuration and setup
@@ -387,13 +443,20 @@ backup: ## Backup personas and knowledge base
 ui-chainlit: ## Launch Chainlit chat UI on port 9009
 	@echo "$(BLUE)Starting Chainlit UI on port 9009...$(NC)"
 	@echo "$(YELLOW)Access at: http://localhost:9009$(NC)"
-	@cd .. && poetry run chainlit run dk_rag/chainlit/app.py --port 9009
+	@cd $(PROJECT_ROOT) && poetry run chainlit run dk_rag/chainlit/app.py --port 9009
 
 .PHONY: ui-gradio
 ui-gradio: ## Launch Gradio chat UI on port 7860
 	@echo "$(BLUE)Starting Gradio UI on port 7860...$(NC)"
 	@echo "$(YELLOW)Access at: http://localhost:7860$(NC)"
-	@cd .. && $(PYTHON) dk_rag/ui/gradio_chat.py
+	@cd $(PROJECT_ROOT) && $(PYTHON) dk_rag/ui/gradio_chat.py
+
+.PHONY: ui-browser
+ui-browser: ## Launch Streamlit knowledge browser on port 8505
+	@echo "$(BLUE)Starting Knowledge Browser on port 8505...$(NC)"
+	@echo "$(YELLOW)Access at: http://localhost:8505$(NC)"
+	@echo "$(YELLOW)Browse mental models and core beliefs in article format$(NC)"
+	@cd $(PROJECT_ROOT) && poetry run streamlit run dk_rag/ui/knowledge_browser.py --server.port 8505
 
 # =============================================================================
 # DEVELOPMENT TARGETS
@@ -422,15 +485,15 @@ shell: ## Launch Python shell with modules loaded
 .PHONY: format
 format: ## Format code with black and isort
 	@echo "$(BLUE)Formatting code...$(NC)"
-	@cd .. && poetry run black dk_rag/
-	@cd .. && poetry run isort dk_rag/
+	@cd $(PROJECT_ROOT) && poetry run black dk_rag/
+	@cd $(PROJECT_ROOT) && poetry run isort dk_rag/
 	@echo "$(GREEN)✓ Code formatted$(NC)"
 
 .PHONY: lint
 lint: ## Run code linters
 	@echo "$(BLUE)Running linters...$(NC)"
-	@cd .. && poetry run flake8 dk_rag/ --max-line-length=120 || true
-	@cd .. && poetry run mypy dk_rag/ --ignore-missing-imports || true
+	@cd $(PROJECT_ROOT) && poetry run flake8 dk_rag/ --max-line-length=120 || true
+	@cd $(PROJECT_ROOT) && poetry run mypy dk_rag/ --ignore-missing-imports || true
 	@echo "$(GREEN)✓ Linting complete$(NC)"
 
 # =============================================================================
@@ -473,6 +536,7 @@ help: ## Display this help message
 	@echo "$(YELLOW)Common Variables:$(NC)"
 	@echo "  DOCS_DIR       - Directory containing documents (default: $(DOCS_DIR))"
 	@echo "  PERSONA_NAME   - Name for persona extraction (default: $(PERSONA_NAME))"
+	@echo "  CONTENT_LANG   - Content language: en (English) or zh (Chinese) (default: $(CONTENT_LANG))"
 	@echo "  SEARCH_QUERY   - Query for search operations (default: $(SEARCH_QUERY))"
 	@echo "  PATTERN        - File pattern to match (default: $(PATTERN))"
 	@echo "  BATCH_SIZE     - Documents per batch for extraction (default: $(BATCH_SIZE))"
@@ -507,6 +571,7 @@ help: ## Display this help message
 	@echo "  make quickstart                    # Complete setup and extraction"
 	@echo "  make build-kb DOCS_DIR=/my/docs   # Build KB from custom directory"
 	@echo "  make extract-persona PERSONA_NAME=gary_vee  # Extract specific persona"
+	@echo "  make build-kb PERSONA_NAME=nihaixia CONTENT_LANG=zh  # Build KB for Chinese content"
 	@echo "  make search SEARCH_QUERY='productivity tips' # Search knowledge base"
 	@echo ""
 	@echo "$(YELLOW)Phase 2 Knowledge RAG Examples:$(NC)"

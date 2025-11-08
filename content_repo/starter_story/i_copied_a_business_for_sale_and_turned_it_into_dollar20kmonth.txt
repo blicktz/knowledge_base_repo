@@ -1,0 +1,147 @@
+The number one question I get is, how do I come up with a good business idea? But the truth is, you don't have to. And this video is proof.
+
+Meet Adrian, a solo developer from Austin who had a different approach. I copied a successful app and now it makes me $20,000 a month. A year ago, he saw a successful app for sale, but instead of buying it, he rebuilt it himself and now it makes $20,000 a month.
+
+If something is working, you have a moral obligation to copy it. I invited Adrian onto the channel to share exactly how he did it, including the specific platform he used to find proven ideas, his method to validate if an idea is worth copying and the playbook he would use if he had to start over again today. If you've been looking for the right business idea, this episode might change everything for you.
+
+I'm Pat Walls and this is Starter Story. All right, Adrian, welcome to the channel. Tell me about who you are, what you built and what's your story.
+
+Hey, my name's Adrian. I'm a solopreneur. I built a SaaS to 20K a month and I found this idea not by coming up with something new, but rather I copied a successful app I found on an online business brokerage and built it myself.
+
+Okay, cool. So you built this API doing $20,000 a month. Can you share a little bit more about some of the numbers behind it?
+
+Sure, yeah. So monthly revenue is about 20,000 a month right now and it is a credit-based model. So you just pay for credits and then use them.
+
+There's no subscription. So right now we have 600 people who have paid but aren't necessarily paying on a regular basis. We do almost like 20 million API requests a month right now.
+
+Okay, cool. Before we get into how you found this idea and kind of the genius way that I think you did it, I do want to understand a little bit more about your background. How do you get to the point where you build a SaaS like this?
+
+So I moved to SF wanting to be a part of tech, learned how to code at this program called App Academy. It was a code bootcamp. Then got a job in Utah as an engineer for three years, always with the goal of starting my own business.
+
+Then quit with $30,000 in savings and then freelanced, built a course, built some products but didn't have success until I stuck with this one thing which was Scrape Creators. And then here we are now. All right, Adrian, what I love about your story is how you came up with this idea and how you validated that this was something that was worth building.
+
+Before we get into all that, can you share how you even come across the idea to build a web scraping API? Absolutely. One of my followers on Twitter actually DM'd me telling me to check out this listing for microacquire or acquire.com.
+
+And it was a scraping API. And the reason that he DM'd me that is because I already had a product that had to do with social media. So he thought that I might be interested in checking it out.
+
+Once I did, I saw the numbers and was completely blown away. I had no confidence myself that a scraping API could make that much money. The fact that they were only getting their customers through SEO, I thought this is a product for me.
+
+I'm going to do this exact same thing. Okay, so you see this idea on microacquire, which lists business for sale. You can kind of see how much money is making or how much the business is worth.
+
+How'd you know that this is something that you could replicate and could potentially be successful? Well, a couple of different things. One, I had this skillset because I had been studying scraping for three years.
+
+So I had already kind of built those APIs that were hosted on this website. So technically I had the confidence that I could build it. And then the reason that I thought I could make money off of it was because they were doing 30,000 monthly recurring.
+
+They were around for three years, only got their customers from SEO and they had less than a hundred customers. So doing that math in my head, I was like, I could probably do that. And I have a little bit of a presence on Twitter.
+
+So even if I just messaged people on Twitter, I probably could get there even without SEO. Okay, cool. Well, you find this idea.
+
+You think that is something that you could potentially replicate. How do you go about building this? So I am a Node.js developer.
+
+Everything is written in JavaScript. So really it was just a matter of hosting the APIs like on a server. So I had them all in one of my repos.
+
+So put those scrapers on a Node.js server on render.com. So then hosted the API there. For the documentation, I just put that actually in a Notion doc and then a basic website.
+
+And then that was it. So it was pretty bare bones. And it probably took just a couple of weeks because I had built that experience in those scrapers for my previous three years of experience and got my first customer a few weeks later.
+
+Okay, so you build this, you get your first customer pretty quickly. I think a lot of people watching this may be similar to you, software developer. They have the skills to build something like this, but the hard part is getting customers growing, scaling this and replicating what this business that you sort of cloned had already done.
+
+So how did you grow this business? How did you get customers? I hang out on Twitter a lot.
+
+So people see me there. People have seen my content. My first customer was just because I scraped a company's site and then the CTO actually commented on that post.
+
+So completely accident. And then also anytime someone has a launch video that has anything to do with scraping social media, then I comment saying, hey, I'll give you 10K free credits if you'll try my API. But the great thing about a scraping API also is that you don't have to have a lot of customers to have a decent MRR.
+
+So I have maybe like 12 who pay for the majority of that MRR. I love Adrian's strategy for copying successful apps, but here's the thing. He didn't just copy the idea.
+
+He got creative and made his idea 1% better than the rest. Nowadays, this creative edge is what separates winners from everyone else. And this is where the HubSpot for Startups Creative AI Use Cases Database comes in handy.
+
+It's a free database with over 100 creative ways to use AI in your business. These aren't the obvious AI apps that everyone's already building. These are the creative uses your competitors haven't discovered yet that can give you an unfair advantage.
+
+My favorite part is the fact that they break down the list by difficulty, business impact, and even steps on how to get started with which tools. Just find the one that resonates with you and run with it. So if you're ready to join Adrian and start your own SaaS business, then download the free AI differentiation database at the first link right below in the description.
+
+Thank you to HubSpot for Startups for sponsoring this video. Now let's get back into it. I wanna understand a little bit more about this framework.
+
+If you were to start over today in 2025 and go to Micro Acquire and find another idea, how would you do that? For people watching, can you break it down step-by-step? All right, this will be my playbook if I was doing this again.
+
+Step one, you're gonna visit the Micro Acquire Marketplace. Step two, filter by SaaS. And then step three, filter by asking price.
+
+So we're not looking for apps that aren't making any money. That's not great. We're looking for pre-validated ideas.
+
+So increase that asking price to at least 300,000, or you can filter by annual recurring revenue, whatever you want. All right, step four, you're going to look for things that you would be good at or market that you would know about. For example, I knew I wanted to build a product that had something to do with web scraping.
+
+That was my niche. I was niching down for that. You would want to build a product that you have some sort of knowledge about.
+
+All right, step five, we're going to try to find the website. Obviously, on Micro Acquire, they don't list what the website is, but we're going to reverse engineer and try to find the actual website. So a lot of these SaaS businesses are really easy to find because you can just Google what they have in their listing.
+
+So in the title or description, you can just Google part of that. And usually they're using like their title or H1 or description actually in the Micro Acquire description. So it's pretty easy to find.
+
+Or they actually list competitors if you scroll down. So all you have to do, a lot of times the website will write blog posts or pages that will say competitor name and then alternative. So all you need to Google is the competitor and then alternative or alternatives.
+
+One of those two ways will get you to the site. And then you can just view the site and see if the copy is similar, then boom, you got the site. All right, step six, try to reverse engineer how they acquired customers.
+
+This is arguably the most important part. Not so hard to build the product, but how are they getting customers? So for example, the app that I was copying, I knew that they got their customers mostly from SEO.
+
+Read everything that you can on the site, any information that they talk about how they're acquiring customers. Try to look up like the founder on Twitter, LinkedIn, try to find podcasts or YouTube videos, any way that they talk about the product or how to grow the product. Step seven, actually build the damn thing.
+
+Step eight, yeah, this is just don't copy word for word. Don't copy everything literally exactly. You just want to copy the concept, the idea.
+
+Step nine, don't get distracted with other projects. Do something every single day to promote or improve the product. You know that this idea is making money.
+
+So now you just have to execute, do something every single day to build the product or market it. And I guarantee you will make money. You will be successful.
+
+Okay, thanks Adrian for sharing that full playbook. I think that's awesome. We haven't really talked yet about what your API does specifically.
+
+You have this sort of micro SaaS API. Can you just share what it does, how it works, what type of customers use it? Yeah, so it scrapes specifically social media.
+
+That can be Instagram, YouTube, Twitter. And we just scrape public data. Gotta say that for the lawyers out there.
+
+We scrape social media as well as like their ad libraries as well. So the Facebook ad library, LinkedIn ad library, et cetera. And this obviously helps developers because scraping is a pain in the butt.
+
+So we scrape so you don't have to. We handle all of the infrastructure, proxy rotation, et cetera. And who uses this tool?
+
+There's a lot of like link and bio tools. Anyone who's tracking analytics, like short form content. Yeah, so it's a credit-based system.
+
+So pay as you go. So we have three payment plans right now. $10 for 5,000 credits, $50 for 25,000, and then 500,000 credits for $500.
+
+I think it does well because it works. Like there's a lot of scrapers out there, like social media in particular, that break pretty often. So with mine, I think people like it because it's reliable.
+
+And then if it's not reliable, then I'll communicate with people pretty frequently as well, as well as it's really easy to get ahold of me. Whereas a lot of developers who build these sort of things, you don't even have their email or a way to contact them. So I think that is also helpful.
+
+Okay, let's change topics a little bit. I want to understand tech stack. You're a developer.
+
+You have a scraping, pretty technical type of product. How did you build this? What's your tech stack?
+
+Yeah, honestly, it's pretty straightforward, pretty easy. So everything is written in Node.js, JavaScript, and it's just a bunch of HTTP requests. So one important thing that I use is this package called Input.
+
+It's developed by Appify, so another scraping framework. So you npm install Input, use that for HTTP requests, and then just a lot of proxies. So I have four main ones that I use, which are Evomi, Core Residential, which are the cheapest residential out there, Dakota, WebShare, and Massive.
+
+And then I host everything on Render.com, or I host subscripts on AWS Lambda. Obviously, I use Cursor, so that's 20 bucks a month, and then Supabase for the database. And then the front end is Astro plus React.
+
+And on a similar note, I'm also curious, what are the costs to use all these tools? What does the profit margin look like for your business? Yeah, margin is about 80%.
+
+Most of it is spent on proxies. So about $1,500 a month right now is spent on proxies. And I hire a developer in the Philippines to monitor the API for outages at night.
+
+So he's about $500. And then server costs are about $400. Okay, cool.
+
+Thank you for sharing that. Thank you for being transparent about all that. That's awesome.
+
+Last question that I want to ask, we ask everyone who comes on Starter Story, what would be your advice for anyone watching this starting out in 2025 about how to do something like you've done? Stop bouncing around ideas and just pick one thing. Do it every single day.
+
+Focus on it every single day and you'll make it. Stop getting distracted because that's exactly what happened to me. Cool.
+
+That's amazing, Adrian. Thank you for coming on. Thank you for sharing all this, being super transparent.
+
+I love the business you built. Thanks for coming on and sharing everything. Thanks, man.
+
+Appreciate it. Big thanks to Adrian for coming onto the channel. I love his story because it flips the startup myth on its head.
+
+Adrian didn't need to invent something brand new. He just saw a model. He copied it and he executed better and that turned into a SaaS that makes $20,000 a month and effectively changed his life.
+
+I think the lesson that anyone can take from this is stop waiting for that genius idea. Just start, build, and keep improving and you never know what might happen. This is exactly why we launched Starter Story Build where we will show you how to take your idea, use AI to build it fast, and launch in just a couple of weeks.
+
+Even if you're starting with no team, no money and no clear idea. If you want to finally build your first app, launch it, and potentially turn it into a profitable business, we'll head to the first link in the description and check out Starter Story Build. That's it for this episode, guys.
+
+Thank you for watching. I hope you enjoyed it. We'll see you in the next one.
+
+Peace.

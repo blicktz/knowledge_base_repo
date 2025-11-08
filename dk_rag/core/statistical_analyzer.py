@@ -23,6 +23,7 @@ from ..data.models.persona_constitution import StatisticalReport, CollocationIte
 from ..config.settings import Settings
 from ..utils.logging import get_logger
 from ..utils.device_manager import get_device_manager
+from ..utils.text_utils import count_words
 from .analysis_cache import AnalysisCacheManager
 
 
@@ -32,26 +33,40 @@ class StatisticalAnalyzer:
     and insights about speaking style and content themes.
     """
     
-    def __init__(self, settings: Settings, persona_id: Optional[str] = None):
-        """Initialize the statistical analyzer"""
+    def __init__(self, settings: Settings, persona_id: Optional[str] = None, language: str = "en"):
+        """Initialize the statistical analyzer
+
+        Args:
+            settings: Application settings
+            persona_id: Persona identifier
+            language: Content language ('en' for English, 'zh' for Chinese)
+        """
         self.settings = settings
         self.persona_id = persona_id
+        self.language = language.strip() if language else "en"
         self.logger = get_logger(__name__)
-        
-        # Initialize spaCy model
-        self.spacy_model = None
-        self._init_spacy()
-        
-        # Initialize NLTK components
-        self._init_nltk()
-        
-        # Report device usage for other libraries
-        self._report_library_devices()
+
+        # Skip spaCy/NLTK initialization for non-English languages
+        if self.language != "en":
+            self.logger.warning(f"Statistical analysis not supported for language '{self.language}'. Skipping spaCy/NLTK initialization.")
+            self.spacy_model = None
+            self.analysis_enabled = False
+        else:
+            self.analysis_enabled = True
+            # Initialize spaCy model
+            self.spacy_model = None
+            self._init_spacy()
+
+            # Initialize NLTK components
+            self._init_nltk()
+
+            # Report device usage for other libraries
+            self._report_library_devices()
         
         # Initialize cache manager if persona_id provided
         self.cache_manager = None
         if persona_id:
-            self.cache_manager = AnalysisCacheManager(settings, persona_id)
+            self.cache_manager = AnalysisCacheManager(settings, persona_id, self.language)
         
         # Analysis results storage (legacy in-memory cache)
         self.analysis_cache = {}
@@ -133,22 +148,37 @@ class StatisticalAnalyzer:
         # scikit-learn uses CPU (no built-in GPU support)
         device_manager.log_library_device_usage("scikit-learn", "CPU", "TF-IDF and statistical analysis")
     
-    def analyze_content(self, documents: List[Dict[str, Any]], 
-                       use_cache: bool = True, 
+    def analyze_content(self, documents: List[Dict[str, Any]],
+                       use_cache: bool = True,
                        force_reanalyze: bool = False,
                        max_cache_age_hours: Optional[int] = 24) -> StatisticalReport:
         """
         Perform comprehensive statistical analysis on the content
-        
+
         Args:
             documents: List of document dictionaries with 'content' key
             use_cache: Whether to use cached analysis if available
             force_reanalyze: Force fresh analysis even if cache exists
             max_cache_age_hours: Maximum age of cache in hours (None = no limit)
-            
+
         Returns:
             StatisticalReport with analysis results
         """
+        # Skip analysis for non-English languages
+        if not self.analysis_enabled:
+            self.logger.info(f"Statistical analysis skipped for language '{self.language}'")
+            # Return minimal empty report
+            # Note: StatisticalReport already imported at module level (line 22)
+            return StatisticalReport(
+                total_words=sum(count_words(doc.get('content', ''), self.language) for doc in documents),
+                unique_words=0,
+                average_sentence_length=0.0,
+                lexical_diversity=0.0,
+                top_keywords={},
+                top_ngrams=[],
+                top_collocations=[]
+            )
+
         # Try to load from cache first (if enabled and not forcing)
         if use_cache and not force_reanalyze and self.cache_manager:
             cached_report = self.cache_manager.load_analysis(documents, max_cache_age_hours)
@@ -158,10 +188,10 @@ class StatisticalAnalyzer:
         
         # Perform fresh analysis
         self.logger.info(f"Starting {'fresh ' if force_reanalyze else ''}statistical analysis of {len(documents)} documents")
-        
+
         # Combine all text content for most analyses
         all_text = " ".join([doc.get('content', '') for doc in documents])
-        total_words = len(all_text.split())
+        total_words = count_words(all_text, self.language)
         total_sentences = len(sent_tokenize(all_text))
         
         self.logger.info(f"Analyzing {total_words:,} words in {total_sentences:,} sentences")
@@ -509,7 +539,7 @@ class StatisticalAnalyzer:
             patterns['exclamation_ratio'] = len(exclamations) / len(sentences) if sentences else 0
             
             # Sentence length distribution
-            sentence_lengths = [len(s.split()) for s in sentences]
+            sentence_lengths = [count_words(s, self.language) for s in sentences]
             if sentence_lengths:
                 patterns['sentence_length_stats'] = {
                     'min': min(sentence_lengths),

@@ -255,7 +255,7 @@ retrieval:
   # Cross-Encoder Reranking
   reranking:
     enabled: true
-    model: "mixedbread-ai/mxbai-rerank-large-v1"
+    model: "mixedbread-ai/mxbai-rerank-large-v2"
     use_cohere: false  # Set to true to use Cohere API
     cohere_api_key: "${COHERE_API_KEY}"  # Optional Cohere API key
     cohere_model: "rerank-english-v3.0"
@@ -326,7 +326,7 @@ agent:
   # Synthesis Engine Configuration  
   synthesis:
     llm_provider: "litellm"
-    llm_model: "gemini/gemini-2.5-pro"  # Heavy lifting - best model
+    llm_model: "gemini/gemini-2.5-pro"  # Heavy lifting - best model  openrouter/x-ai/grok-4-fast, gemini/gemini-2.5-pro"
     temperature: 0.7  # Higher temperature for creative synthesis
     max_tokens: 10000
     timeout_seconds: 300

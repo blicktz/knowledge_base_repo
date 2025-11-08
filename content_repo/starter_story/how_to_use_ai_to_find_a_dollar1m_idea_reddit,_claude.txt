@@ -1,0 +1,207 @@
+The human brain is not wired to come up with a good business idea. Ego, bias, and overthinking, it often gets in the way. So what if you could outsource the whole process to AI?
+
+Well, the models just haven't really been powerful enough for this, but it's about to change. And that's exactly what we're going to show you today. Because I brought in one of the smartest people in the space, Steph France.
+
+Today, we're going to walk through something called the gold mining framework. Six tools, five prompts, 45 minutes. We'll go from nothing to a potential million dollar business idea and a complete landing page to go with it without writing a single line of code or copy.
+
+What's even cooler is you can follow along step by step. And at the end of this video, you can have one too. Watching this video will potentially change the way you think about ideas forever.
+
+So let's go. I'm Pat Walls, and this is the Starter Story Playbook. Welcome, Steph.
+
+Welcome to the channel. I'm glad to have you on. So you're going to show off today your new framework that you haven't unveiled yet, which is the gold mining framework.
+
+Could you walk us through that? Hi, Pat. So I'm really glad to be here at first.
+
+I'm Steph, Steph France. I qualify myself as a curious marketer, and I love the game of marketing and looking forward to present this framework. So this is a landing page for a co-parenting app.
+
+The landing page was created only with this framework A to Z. And if you have some knowledge in marketing, you can see that this is a really good marketing copy. And this landing page was created in an hour.
+
+And before starting the process, I had absolutely no idea about any problem in this niche. And the cool thing is that it takes all the pain points, all the wording from the people in this industry and put them in the landing page. So it's literally telling the customer their pain points in their own language and own wording.
+
+Okay. All right. Let's dive in, Steph.
+
+Can we go over what is the first step of the framework? So the first step is to find a market to explore. The idea is to start with what you have some edge or what you are interested in within the three core markets, which are health, wealth, and relationship, which are markets, which for sure people are okay to spend money.
+
+So you are already reducing the risk. So let's take an example. And we would only open the health market.
+
+Within these markets, we have a lot, a lot of categories and subcategories and niches and sub-niches and sub-sub-sub-sub-niches. We can go very, very deep in this market. But for now, let's say, for example, you are really into stress management, but you think, okay, that's not enough.
+
+I want more stress management. Fine. In this case, we are going to use a prompt.
+
+It's the market idea expander. And the goal is that if you put a sub-niches, any sub-niche or subcategory, it will continue to expand in the category you want to dig into. And this is a little trick.
+
+Markdown is a language that needs to be used as much as possible when we talk with LLM. So instead of just copying past, it works as well. But it's really better if we copy as markdown.
+
+So we keep the structure of the prompt. The LLM we work with doesn't matter. You can pick the one you like.
+
+I tend to prefer working with Cloud for different reasons. The first is that I think it's the most human-like LLM. Yeah.
+
+So the copywriting is good, and there is more emotion in the copywriting. I always tend to go with Cloud whenever I can. And when I need something specific, for example, the 1 million token context window in the same conversation, then I would go with Gemini, for example.
+
+But for the sake of this example, we won't go too far into the size, so we will work with Cloud. All right. So I simply copy the code, and I just did Control-V, and then I have the prompt that is copied here.
+
+And that's fine if it looks like that. It's just that Cloud reads the markdown this row. I always say, okay, I'm ready to help you.
+
+Just tell me which market do you want to go into. So we said stress management. And now we have, at first we have health, and it's a stress management.
+
+And now below stress management, we have physical stress relief, massage therapy, breathing techniques, mental stress management. And then within those, we have meditation, guided meditation, mindfulness meditation. All those potential markets can be the market that you are going to explore.
+
+And now the decision is for you to, first is with what you like, then it's what you have an edge on, which means do you have knowledge? Do you have network? Do you have anything that can be at your advantage to go in this market?
+
+Or if you don't have any, then just pick one that sounds good. Okay. So we talked about how to finding a market.
+
+Now, how do we validate that there's demand for this market? Or what do we do next? When we first pick a market, we don't know if it's a good market to go in.
+
+And that's what the step two is all about. We use Google as well as a Chrome extension, which is keyword everywhere, to quickly find the volume of search and all related keywords that can orientate us until we find something that is interesting to go further, to dig deeper. And then we look at the list that we have.
+
+For example, let's say Swedish massage. It's still a big one. And then I could find potentially another sub-niche by looking into the different programs.
+
+What do we have? Best massage technique, massage therapy description, Swedish massage history. Okay.
+
+If I go down, I have Swedish massage near me. Okay. 20,000 search.
+
+This is a very interesting query. And then we use Google Trends, which is one of the best tools to use when it comes to market research to know if we have a trending market or at least a stable market. And now we have Swedish massage.
+
+And we want to understand the difference between search term and topic. Topic will basically take all the related search term on Google and also in all different languages. So when you have a topic, it's already like it's a big thing.
+
+Sometimes you only have search term, but when you have topic, you just use the topic. And for this sake, we can see that is the trending market actually. It's not too bad.
+
+There is some kind of going down and we can see that probably here and COVID, while it was not crazy, it's a well trend. Because usually when a trend has so much research, you won't see those very big pike. Here you have them.
+
+So I wouldn't say it's a solid trend because we can see it's up and down, but it's a good trend. So we know for Swedish massage, it's a good one, but it could be better. Now let's look at other ones.
+
+For example, if I go back to my three core markets and I go to relationship, here in family relationship, we have parenting. Within parenting, we obviously have a lot of things, way more than that. But one that I have explored previously and that I found there is a lot of demand is co-parenting.
+
+And if I start digging into co-parenting, let's see what we have. So here we have a 40,000 search. And if we dig into it a little bit more, we can see co-parenting app.
+
+That's interesting, which means people are already aware that there are apps out there, maybe, or they are looking for it. Okay, co-parenting concealing. So that means I have a problem.
+
+I'm looking for a solution. Co-parenting classes. Okay, I need someone to help me.
+
+Those are very good signs. And now if I do the same and I use Google Trends, and here I have a topic again, which is cool. This is a good solid trend.
+
+So there are less frustration and it's a growing trend. So here we are not talking about all the AI huge trend that goes up and down and the tool comes up and it dies three months after. Here we are talking about human needs, society changes that creates needs that are growing and growing and growing.
+
+And those markets are big. So creating a business in the co-parenting niche, it's totally viable. It doesn't mean that as soon as you are when the co-parenting issue succeed, but at least it's definitely possible to find a problem and solve it in the co-parenting niche.
+
+Okay, so we validated the demand. Now what do we do next? We are now at the third step of the framework.
+
+We want to gather data. Now we need to find where are the people talking about their frustrations, their pain, about co-parenting specifically. And the best mind we actually have is Reddit.
+
+Why? Because Reddit is literally the place on the internet where the world is talking and the world is sharing their program because there is this anonymous kind of mindset and long conversation on Reddit that makes it a real goldmine when it comes to find customer pain points. So in the step three, we go on Google to find Reddit threads, but we will use a special query with advanced search on Google to surface the Reddit threads where people are talking about their program, expressing their pain.
+
+So we go straight to the point, straight where the important part is for us to gather. So I think, I feel, I was, I have been, I experienced all the words that would filter someone that is experiencing or explaining or asking about a specific problem. It's not 100% right, but it filters a lot of answer compared to what we could have only with the Reddit search.
+
+So I simply copy this one, which you also have here within the document is the Google query. So you have market to explore. You just put your market here, copy that and go on Google.
+
+And now this is the moment where we need to be careful and do the thing I mentioned earlier, which is carefully read and choose the right thread. In this case, we are not going to spend an hour reading, but I would tend to always go into it and make sure that all the subreddits that I chose are relevant. For example, this one, we have 60 comments and it was five months ago.
+
+This is co-parenting and this is from the subreddit co-parenting. So we are right into what we are looking for. Here, how did you make your piece with co-parenting?
+
+Definitely about programs. Just when you think you have this whole co-parenting thing, okay, 40 comments one month ago. I guess this one is probably interesting.
+
+Share the positive experience with co-parenting. Why not? If you don't have better, why not?
+
+Co-parenting, I was wrong. Okay. Here we are blended family for the subreddit, struggling with current partners' perspective on, okay, we are going to keep it short, but you can go on and on.
+
+Now the next step is going to be extremely simple. We are going to copy and paste. So we simply open text block.
+
+I copy the complete thread, enter, enter, three dash, just to say to the AI, okay, I'm having another thread. Putting that on the side. Okay, next one.
+
+Let's go down right away and move up. Going back to my text block. Here.
+
+Past. Three dash. Next thread.
+
+Sometimes it can be a lot of data. In this case, we just work with a few, but if you have like 20 red thread, good. All right, so now we got all of our data, we got all of our Reddit threads.
+
+What's next? All right, so the step four, now we process the data. And for that, we have three major prompts that we are going to use one after the other.
+
+The first one, we'll extract all the pain points and refine them so we have different categories and we have quotes from the people attached to the specific pain point. All right, so we just come to the Google Doc, copy as Markdown, and we go back to Cloud, new chat, brand new chat, and we simply copy. Here on Cloud, you can just copy like that.
+
+Now I'm just grabbing my data and I'm posting here. Same. So we have first the title, the designation of the pain point, and then we have a small description.
+
+So parents feel pressured to maintain unrealistic, friendly relationship with ex-partners for the sake of their children, often at the expense of their own boundaries or current relationship. And the cool thing is we have here quotes from the conversation that are related to this pain point. Here, for example, it's hard to co-parent with your abuser, which is a very good one.
+
+I find this type of post-read and death like I feel to share your co-parenting success, but don't make statements like try your absolute hardest to do this for the kids. We can see that those are deep conversation and they are all related to this specific pain point. And if we go down, we have navigating new relationship while co-parenting.
+
+So that's another set of problem. Then dealing with high conflict and neglectful ex-partners, probably another one. Emotional labor imbalance in blended families.
+
+I don't know exactly. Okay, parents feel their shoulder are unequal burden of emotional and practical labor in blended families, especially when caring for stepchildren without reciprocal care of their biological children. That's a more complex one, but this is the kind of thing that you can only come up with when you go deep into this kind of conversation.
+
+So let's move on to the next one, the market gap generator, which will take all those pain points and a framework which includes new paradigm, new technology, differentiation, basically how to find good business ideas in a saturated market, which like every market is saturated. This is why it's trained on this framework. Now, copy everything, control A, copy as markdown, come back here, and then past.
+
+And let it run. Now it's going to work from the framework before and come up with different business ideas. Here we have the different market segmentation framework is the approach of finding business ideas and those three business ideas are within this framework.
+
+Okay, solution one, co-parent ally, conflict-focused co-parenting platform, description, a specialist platform designed specifically for high-conflict co-parenting situation with built-in documentation tools, communication filters, I think this one is really interesting, and third-party mediation features. That's a very interesting one. Now we have product differentiation framework.
+
+So, child-centered custody transition tool. Okay, a specialized application focused solely on making children transition between households less traumatic with pre-transition preparation tool, emotional check-in, and structured hand-off protocols. Sounds pretty good.
+
+And then the last part is when we pick a business idea, which means it's just a simple choice. This is the one I'm interested in. We have the landing page prompt creator, which will take all the learnings we have, the business idea we want to create, and we'll transform it in prompts that we are going in lovable to create our landing page.
+
+The last one is a little bit confusing because we have a prompt to create a prompt to finally create our landing page, but it's only copy and pass. Let's pick the one that talks to you the most, and we simply highlight it and copy it. And now we are going to just tell Claude, this is the one I want to go for.
+
+All right. And now we are going to pass the next prompt, which is the landing page prompt creator. What is this prompt?
+
+Just before we go into it, I'm going to simply let it run, and then I will explain. Now I just pass the prompt and run. So this prompt is basically made from a research specifically on lovable, the tool that allows to create apps very fast.
+
+This specific tool. The research went out there on the internet, basically ChatGPT went out there on the internet and looked for all the best practices to create tools, to create prompts for lovable, as well as all the documentation about lovable, gathered everything. And then from that, I created a prompt that is made to take all the data that we have here in the context and create a new prompt specifically for lovable using all the best practices to prompt for lovable.
+
+Okay. So we've processed all the data and we've come up with our master prompt. What's next?
+
+So now we have our prompt that normally, if everything works, we just put that into lovable and we have our launch page. We're not going to read that one because it's made by AI for AI, so it's pretty boring, but we are simply going to copy it and we go into lovable and then we start running. Whoa.
+
+Look at that. Let's publish. All right.
+
+Transform custody transitions from tearful breakdowns to peaceful goodbyes. For separated parents whose children struggle with household transition, transition garden provides structured tools to reduce anxiety and create predictable child-centered hand-off without requiring perfect co-parenting relationship. Wow.
+
+Okay. We have the future child-friendly countdown tool. Oh, nice.
+
+Structured hand-off protocol that minimize parent conflict during exchanges. Emotional checking system designed by a child psychologist. You have to execute on that, but it's a good future.
+
+Documentation that helps identify and address transition patterns. Yeah. And we have even a nice FAQ to both parents need to transition garden for it to work.
+
+What age? And we have a form. Wow.
+
+That's it. We have it. There we have it.
+
+That's amazing. I mean, there you guys have it. That is the gold mining framework.
+
+I really wanted to just get it from idea to landing page and see if we could do it. And we did. And I don't think there's any video or any lesson like this on YouTube currently.
+
+And it just blows my mind, you know, these AI tools and how this is going to change. How, you know, how you can find ideas. But what would be the next steps for someone?
+
+Let's say they went through this whole process in turning this into a real idea. You mentioned maybe talking to some customers or something like that. So if I may push one of my YouTube videos, but I have a YouTube video that is actually exactly for that.
+
+What we just seen takes one big part of the whole process. But this video from zero to one explains how you can think of using a quiz to create a waiting list, asking the right question. Because even though you have the perfect landing page with the perfect copy for a very specific program in a trendy market, going from there to having the business, having an app running, it's still a lot of work.
+
+And yeah, Cursor can do it fast, but no, it's still a lot of work. And before you go into that, you can, if you are familiar with those tools, then just build it and try it and post everywhere. And then if you have users, it's fine.
+
+You can go build first and then see. But if you are not sure and if it's a lot of time investment and if your time is reduced, then I would always go by validating again. And for that, I love to use quizzes.
+
+So you simply tell to people, you show the page and then on the page there is a pop-up that says, thank you for being here. The app is in development right now. We are a small team and we would love to have your take on your current program.
+
+Would you mind answering a few questions? You ask a few questions and you say, do you want us to let you know when the app is out there? And most people would say yes.
+
+And then you have a list you can post everywhere about that and you grow your list and you decide for yourself, it's okay. When I have 100 people on my waiting list, I'm building the app as fast as I can. You build it, you launch it to the list via email the way you prefer and it starts.
+
+Perfect. Okay. All right.
+
+If you guys want to get access to this right now and you want to use this yourself, just click the first link in the description. We put it all in there and it's totally free. And thank you guys for watching.
+
+I hope you enjoyed this. Leave a comment if you'd like to have Steph come back on and share more business idea frameworks or even potentially some marketing and growth frameworks as well. So thanks for coming on, Steph.
+
+That was awesome. I think this is going to change the world. All right.
+
+I hope you guys enjoyed this video. I really think that this is just an amazing space to be right now, building in AI and building with AI tools. And look, these AI coding tools are powerful, but they're not magic yet.
+
+It's still really early days. I know that this space can feel really overwhelming and it's moving really fast. So it's important to have the right system and right framework to follow.
+
+So shameless plug here, but we've been working on something for a while. If you watch this, you found an idea and you want to take action on that idea. Well, I'm excited to announce Starter Story Build, which is our platform for learning AI tools and learning how to leverage AI tools to turn them into real ideas and real apps.
+
+Our flagship program is the AI App Accelerator. This is way more than just a course or a video on how to build stuff. You get to walk away with a real world app built completely with AI plus skills that might just change your life.
+
+Not only will you learn how to use these tools and build stuff you never thought possible, but this program will give you structure, accountability, and push you to actually take action, get it done, and ship. What's even cooler is we have office hours with AI coding experts to help you when you eventually get stuck because everyone gets stuck. And there's a whole other cohort of people building alongside of you and building apps.
+
+So if you're curious about actually building something and you want to surround yourself with other builders doing the same thing, then head to the first link in the description to see if the AI app accelerator might be worth it for you. All right, guys. Thanks for watching.
+
+I'll see you in the next one. Peace.

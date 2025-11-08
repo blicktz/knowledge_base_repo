@@ -27,40 +27,45 @@ class LangChainVectorStore:
     LangChain's Chroma implementation for full compatibility.
     """
     
-    def __init__(self, settings: Settings, persona_id: Optional[str] = None):
+    def __init__(self, settings: Settings, persona_id: Optional[str] = None, language: str = "en"):
         """
         Initialize the LangChain vector store.
-        
+
         Args:
             settings: Application settings containing vector DB configuration
             persona_id: Unique identifier for the persona (for multi-tenant support)
+            language: Content language for selecting appropriate embedding model ('en', 'zh', etc.)
         """
         self.settings = settings
         # Require persona_id - no fallback to maintain multi-tenant isolation
         if persona_id is None:
             raise ValueError("persona_id is required - multi-tenant isolation requires explicit persona identification")
         self.persona_id = persona_id
+        self.language = language.strip() if language else "en"
         self.logger = get_component_logger("LCVecStore", persona_id)
-        
+
         # Setup ChromaDB configuration
         self._setup_chroma()
-        
+
         self.logger.info(f"LangChain vector store initialized for persona: {persona_id}")
     
     def _setup_chroma(self):
         """Setup ChromaDB with LangChain's Chroma wrapper."""
         config = self.settings.vector_db.config if hasattr(self.settings.vector_db, 'config') else self.settings.vector_db
-        
+
         # Get configuration values
         if isinstance(config, dict):
             collection_base = config.get('collection_name', 'script_collection')
-            embedding_model = config.get('embedding_model', 'sentence-transformers/all-mpnet-base-v2')
             persist_directory = config.get('persist_directory', './data/storage/chroma_db')
         else:
             collection_base = getattr(config, 'collection_name', 'script_collection')
-            embedding_model = getattr(config, 'embedding_model', 'sentence-transformers/all-mpnet-base-v2')
             persist_directory = getattr(config, 'persist_directory', './data/storage/chroma_db')
-        
+
+        # Get language-appropriate embedding model from ModelManager
+        model_manager = get_model_manager()
+        embedding_model = model_manager.get_embedding_model_for_language(self.language)
+        self.logger.info(f"Selected embedding model for language '{self.language}': {embedding_model}")
+
         # Use persona-specific collection name
         collection_name = f"{self.persona_id}_documents"
         self.logger.info(f"Using persona-specific collection: {collection_name}")
@@ -217,7 +222,78 @@ class LangChainVectorStore:
             List of (document, score) tuples
         """
         return self.vector_store.similarity_search_by_vector_with_relevance_scores(embedding, k=k)
-    
+
+    def search(self, query: str, n_results: int = 10) -> List[Dict[str, Any]]:
+        """
+        Search documents and return results in dictionary format.
+
+        Wrapper around similarity_search_with_score that returns results in the
+        format expected by knowledge_indexer and CLI commands.
+
+        Args:
+            query: Search query string
+            n_results: Number of results to return
+
+        Returns:
+            List of result dictionaries with content, metadata, and similarity_score
+        """
+        try:
+            # Perform similarity search with scores
+            results_with_scores = self.similarity_search_with_score(query, k=n_results)
+
+            # Convert to expected dictionary format
+            formatted_results = []
+            for doc, score in results_with_scores:
+                formatted_results.append({
+                    'content': doc.page_content,
+                    'metadata': doc.metadata,
+                    'similarity_score': score
+                })
+
+            self.logger.debug(f"Search returned {len(formatted_results)} results")
+            return formatted_results
+
+        except Exception as e:
+            self.logger.error(f"Search failed: {e}")
+            return []
+
+    def search_by_source(self, query: str, source_filter: str, n_results: int = 10) -> List[Dict[str, Any]]:
+        """
+        Search documents filtered by source.
+
+        Args:
+            query: Search query string
+            source_filter: Source to filter by (exact match on metadata['source'])
+            n_results: Number of results to return
+
+        Returns:
+            List of result dictionaries with content, metadata, and similarity_score
+        """
+        try:
+            # Perform similarity search with metadata filter
+            filter_dict = {"source": source_filter}
+            results_with_scores = self.vector_store.similarity_search_with_score(
+                query,
+                k=n_results,
+                filter=filter_dict
+            )
+
+            # Convert to expected dictionary format
+            formatted_results = []
+            for doc, score in results_with_scores:
+                formatted_results.append({
+                    'content': doc.page_content,
+                    'metadata': doc.metadata,
+                    'similarity_score': score
+                })
+
+            self.logger.debug(f"Search by source '{source_filter}' returned {len(formatted_results)} results")
+            return formatted_results
+
+        except Exception as e:
+            self.logger.error(f"Search by source failed: {e}")
+            return []
+
     def get_all_documents(self) -> List[Dict[str, Any]]:
         """
         Get all documents from the collection for BM25 indexing.

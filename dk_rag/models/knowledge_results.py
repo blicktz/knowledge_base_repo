@@ -83,26 +83,38 @@ class BaseKnowledgeResult:
 class MentalModelResult(BaseKnowledgeResult):
     """
     Result from mental models knowledge base search.
-    
+
     Contains structured mental model information extracted from metadata.
     """
     # Mental model specific fields
     name: str = ""
     description: str = ""
-    steps: List[str] = field(default_factory=list)
-    categories: List[str] = field(default_factory=list) 
     confidence_score: float = 0.0
     frequency: int = 0
-    
+
     def __post_init__(self):
         """Extract mental model fields from metadata after initialization."""
         if self.metadata:
             self.name = self.metadata.get('name', '')
             self.description = self.metadata.get('description', '')
-            self.steps = self.metadata.get('steps', [])
-            self.categories = self.metadata.get('categories', [])
             self.confidence_score = self.metadata.get('confidence_score', 0.0)
             self.frequency = self.metadata.get('frequency', 0)
+
+    @property
+    def steps(self) -> List[str]:
+        """Parse steps from metadata text field."""
+        steps_text = self.metadata.get('steps_text', '')
+        if not steps_text:
+            return []
+        return [s.strip() for s in steps_text.split('\n') if s.strip()]
+
+    @property
+    def categories(self) -> List[str]:
+        """Parse categories from metadata text field."""
+        categories_text = self.metadata.get('categories_text', '')
+        if not categories_text:
+            return []
+        return [c.strip() for c in categories_text.split('|') if c.strip()]
     
     @classmethod
     def from_document(
@@ -156,24 +168,30 @@ class MentalModelResult(BaseKnowledgeResult):
 class CoreBeliefResult(BaseKnowledgeResult):
     """
     Result from core beliefs knowledge base search.
-    
+
     Contains structured core belief information extracted from metadata.
     """
     # Core belief specific fields
     statement: str = ""
     category: str = ""
-    supporting_evidence: List[str] = field(default_factory=list)
     confidence_score: float = 0.0
     frequency: int = 0
-    
+
     def __post_init__(self):
         """Extract core belief fields from metadata after initialization."""
         if self.metadata:
             self.statement = self.metadata.get('statement', '')
             self.category = self.metadata.get('category', '')
-            self.supporting_evidence = self.metadata.get('supporting_evidence', [])
             self.confidence_score = self.metadata.get('confidence_score', 0.0)
             self.frequency = self.metadata.get('frequency', 0)
+
+    @property
+    def supporting_evidence(self) -> List[str]:
+        """Parse supporting evidence from metadata text field."""
+        evidence_text = self.metadata.get('supporting_evidence_text', '')
+        if not evidence_text:
+            return []
+        return [e.strip() for e in evidence_text.split('\n') if e.strip()]
     
     @classmethod
     def from_document(

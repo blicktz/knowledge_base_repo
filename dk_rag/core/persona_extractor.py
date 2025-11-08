@@ -32,6 +32,7 @@ from ..core.extractor_cache import ExtractorCacheManager
 from ..config.settings import Settings
 from ..utils.logging import get_logger
 from ..utils.llm_utils import safe_json_loads
+from ..utils.text_utils import count_words
 
 
 class PersonaExtractor:
@@ -40,21 +41,28 @@ class PersonaExtractor:
     combined with statistical insights.
     """
     
-    def __init__(self, settings: Settings, persona_id: Optional[str] = None):
-        """Initialize the persona extractor"""
+    def __init__(self, settings: Settings, persona_id: Optional[str] = None, language: str = "en"):
+        """Initialize the persona extractor
+
+        Args:
+            settings: Application settings
+            persona_id: Optional persona identifier
+            language: Content language ('en', 'zh', etc.)
+        """
         self.settings = settings
         self.persona_id = persona_id
+        self.language = language.strip() if language else "en"
         self.logger = get_logger(__name__)
-        
+
         # Initialize LLM
         self.llm = None
         self._init_llm()
-        
-        # Initialize statistical analyzer with persona context for caching
-        self.statistical_analyzer = StatisticalAnalyzer(settings, persona_id)
+
+        # Initialize statistical analyzer with persona context and language
+        self.statistical_analyzer = StatisticalAnalyzer(settings, persona_id, self.language)
         
         # Initialize cache manager for linguistic style caching
-        self.cache_manager = ExtractorCacheManager(settings, persona_id)
+        self.cache_manager = ExtractorCacheManager(settings, persona_id, self.language)
         
         # Initialize map-reduce extractor if enabled
         self.map_reduce_extractor = None
@@ -253,9 +261,9 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
             PersonaConstitution object
         """
         self.extraction_start_time = time.time()
-        
+
         # Estimate total processing time based on content size
-        total_words = sum(len(doc.get('content', '').split()) for doc in documents)
+        total_words = sum(count_words(doc.get('content', ''), self.language) for doc in documents)
         estimated_time = self._estimate_processing_time(total_words, len(documents))
         
         self.logger.info(f"Starting persona extraction from {len(documents)} documents ({total_words:,} words)")
@@ -471,32 +479,37 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
     def _format_statistical_insights(self, report: StatisticalReport) -> str:
         """Format statistical insights for LLM consumption"""
         insights = []
-        
+
         insights.append(f"Total documents: {report.total_documents}")
         insights.append(f"Total words: {report.total_words:,}")
         insights.append(f"Total sentences: {report.total_sentences:,}")
-        
-        if report.top_keywords:
-            top_keywords = list(report.top_keywords.keys())[:10]
-            insights.append(f"Top keywords: {', '.join(top_keywords)}")
-        
-        if report.top_entities:
-            top_entities = list(report.top_entities.keys())[:10]
-            insights.append(f"Top entities: {', '.join(top_entities)}")
-        
-        if report.top_collocations:
-            top_collocations = [item.ngram for item in report.top_collocations[:5]]
-            insights.append(f"Top phrases: {', '.join(top_collocations)}")
-        
-        if report.readability_metrics:
-            flesch = report.readability_metrics.get('flesch_reading_ease', 0)
-            insights.append(f"Reading ease: {flesch}")
-        
-        if report.linguistic_patterns:
-            question_ratio = report.linguistic_patterns.get('question_ratio', 0)
-            exclamation_ratio = report.linguistic_patterns.get('exclamation_ratio', 0)
-            insights.append(f"Questions: {question_ratio:.1%}, Exclamations: {exclamation_ratio:.1%}")
-        
+
+        # Only include detailed statistics for English content
+        if self.language == "en":
+            if report.top_keywords:
+                top_keywords = list(report.top_keywords.keys())[:10]
+                insights.append(f"Top keywords: {', '.join(top_keywords)}")
+
+            if report.top_entities:
+                top_entities = list(report.top_entities.keys())[:10]
+                insights.append(f"Top entities: {', '.join(top_entities)}")
+
+            if report.top_collocations:
+                top_collocations = [item.ngram for item in report.top_collocations[:5]]
+                insights.append(f"Top phrases: {', '.join(top_collocations)}")
+
+            if report.readability_metrics:
+                flesch = report.readability_metrics.get('flesch_reading_ease', 0)
+                insights.append(f"Reading ease: {flesch}")
+
+            if report.linguistic_patterns:
+                question_ratio = report.linguistic_patterns.get('question_ratio', 0)
+                exclamation_ratio = report.linguistic_patterns.get('exclamation_ratio', 0)
+                insights.append(f"Questions: {question_ratio:.1%}, Exclamations: {exclamation_ratio:.1%}")
+        else:
+            # For non-English, add a note that detailed analysis is not available
+            insights.append(f"Note: Detailed statistical analysis is only available for English content (current language: {self.language})")
+
         return "\n".join(insights)
     
     def _parse_communication_style(self, comm_style_data: Dict[str, Any]) -> CommunicationStyle:
@@ -737,53 +750,59 @@ Confidence score should be 0.6-1.0 based on how clearly and frequently the belie
     def _extract_expertise_domains(self, report: StatisticalReport) -> List[str]:
         """Extract expertise domains from statistical analysis"""
         domains = []
-        
-        # Extract from top keywords
-        if report.top_keywords:
-            business_terms = ['business', 'marketing', 'sales', 'strategy', 'growth', 'profit']
-            tech_terms = ['technology', 'software', 'development', 'innovation', 'digital']
-            personal_terms = ['productivity', 'habits', 'success', 'mindset', 'leadership']
-            
-            keywords = list(report.top_keywords.keys())
-            
-            if any(term in ' '.join(keywords) for term in business_terms):
-                domains.append('business')
-            if any(term in ' '.join(keywords) for term in tech_terms):
-                domains.append('technology')
-            if any(term in ' '.join(keywords) for term in personal_terms):
-                domains.append('personal_development')
-        
-        # Extract from entities
-        if report.top_entities:
-            entity_text = ' '.join(report.top_entities.keys()).lower()
-            
-            if 'marketing' in entity_text:
-                domains.append('marketing')
-            if 'entrepreneur' in entity_text:
-                domains.append('entrepreneurship')
-            if 'invest' in entity_text:
-                domains.append('investing')
-        
+
+        # Only extract from statistical data for English content
+        if self.language == "en":
+            # Extract from top keywords
+            if report.top_keywords:
+                business_terms = ['business', 'marketing', 'sales', 'strategy', 'growth', 'profit']
+                tech_terms = ['technology', 'software', 'development', 'innovation', 'digital']
+                personal_terms = ['productivity', 'habits', 'success', 'mindset', 'leadership']
+
+                keywords = list(report.top_keywords.keys())
+
+                if any(term in ' '.join(keywords) for term in business_terms):
+                    domains.append('business')
+                if any(term in ' '.join(keywords) for term in tech_terms):
+                    domains.append('technology')
+                if any(term in ' '.join(keywords) for term in personal_terms):
+                    domains.append('personal_development')
+
+            # Extract from entities
+            if report.top_entities:
+                entity_text = ' '.join(report.top_entities.keys()).lower()
+
+                if 'marketing' in entity_text:
+                    domains.append('marketing')
+                if 'entrepreneur' in entity_text:
+                    domains.append('entrepreneurship')
+                if 'invest' in entity_text:
+                    domains.append('investing')
+
+        # For non-English, return empty list (domains will be inferred from LLM extraction)
         return list(set(domains))  # Remove duplicates
     
     def _extract_content_themes(self, report: StatisticalReport) -> List[str]:
         """Extract major content themes"""
         themes = []
-        
-        # Extract from collocations
-        if report.top_collocations:
-            for collocation in report.top_collocations[:10]:
-                ngram = collocation.ngram.lower()
-                
-                if any(term in ngram for term in ['make money', 'build business', 'start company']):
-                    themes.append('entrepreneurship')
-                elif any(term in ngram for term in ['time management', 'be productive', 'get things done']):
-                    themes.append('productivity') 
-                elif any(term in ngram for term in ['market', 'customer', 'sell']):
-                    themes.append('marketing_sales')
-                elif any(term in ngram for term in ['invest', 'wealth', 'financial']):
-                    themes.append('wealth_building')
-        
+
+        # Only extract from collocation data for English content
+        if self.language == "en":
+            # Extract from collocations
+            if report.top_collocations:
+                for collocation in report.top_collocations[:10]:
+                    ngram = collocation.ngram.lower()
+
+                    if any(term in ngram for term in ['make money', 'build business', 'start company']):
+                        themes.append('entrepreneurship')
+                    elif any(term in ngram for term in ['time management', 'be productive', 'get things done']):
+                        themes.append('productivity')
+                    elif any(term in ngram for term in ['market', 'customer', 'sell']):
+                        themes.append('marketing_sales')
+                    elif any(term in ngram for term in ['invest', 'wealth', 'financial']):
+                        themes.append('wealth_building')
+
+        # For non-English, return empty list (themes will be inferred from LLM extraction)
         return list(set(themes))
     
     def _infer_communication_preferences(self, linguistic_style: LinguisticStyle) -> Dict[str, Any]:

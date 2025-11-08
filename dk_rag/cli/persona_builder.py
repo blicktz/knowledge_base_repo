@@ -63,13 +63,14 @@ class PersonaBuilderCLI:
         self.logger.info("BUILDING KNOWLEDGE BASE")
         self.logger.info("=" * 60)
         
-        # Register or get persona
-        persona_id = self.persona_manager.get_or_create_persona(args.persona_id)
-        self.logger.info(f"Using persona: {persona_id}")
-        
-        # Initialize persona-specific knowledge indexer
-        self.knowledge_indexer = KnowledgeIndexer(self.settings, self.persona_manager, persona_id)
-        
+        # Register or get persona with language metadata
+        language = getattr(args, 'language', 'en').strip()
+        persona_id = self.persona_manager.get_or_create_persona(args.persona_id, language=language)
+        self.logger.info(f"Using persona: {persona_id} (language: {language})")
+
+        # Initialize persona-specific knowledge indexer with language
+        self.knowledge_indexer = KnowledgeIndexer(self.settings, self.persona_manager, persona_id, language=language)
+
         results = self.knowledge_indexer.build_knowledge_base(
             documents_dir=args.documents_dir,
             rebuild=args.rebuild,
@@ -578,16 +579,18 @@ Examples:
         build_parser.add_argument("--documents-dir", required=True, help="Directory containing documents")
         build_parser.add_argument("--pattern", default="*.md", help="File pattern to match")
         build_parser.add_argument("--rebuild", action="store_true", help="Rebuild from scratch")
+        build_parser.add_argument("--language", default="en", help="Content language: 'en' (English) or 'zh' (Chinese)")
         
         # Extract persona
         extract_parser = subparsers.add_parser("extract-persona", help="Extract persona from documents")
         extract_parser.add_argument("--documents-dir", required=True, help="Directory containing documents")
         extract_parser.add_argument("--name", required=True, help="Name for the persona")
         extract_parser.add_argument("--pattern", default="*.md", help="File pattern to match")
-        extract_parser.add_argument("--force-reanalyze", action="store_true", 
+        extract_parser.add_argument("--force-reanalyze", action="store_true",
                                    help="Force fresh statistical analysis even if cache exists")
-        extract_parser.add_argument("--skip-cache", action="store_true", 
+        extract_parser.add_argument("--skip-cache", action="store_true",
                                    help="Skip using cached analysis altogether")
+        extract_parser.add_argument("--language", default="en", help="Content language: 'en' (English) or 'zh' (Chinese)")
         
         # Extract persona - statistical analysis only (Phase 1-a)
         extract_stats_parser = subparsers.add_parser("extract-persona-stats", help="Phase 1-a: Statistical analysis only (spaCy/NLTK)")
@@ -595,8 +598,9 @@ Examples:
         extract_stats_parser.add_argument("--name", required=True, help="Name for the persona")
         extract_stats_parser.add_argument("--pattern", default="*.md", help="File pattern to match")
         extract_stats_parser.add_argument("--batch-size", type=int, help="Number of documents per batch (overrides config)")
-        extract_stats_parser.add_argument("--force-reanalyze", action="store_true", 
+        extract_stats_parser.add_argument("--force-reanalyze", action="store_true",
                                          help="Force fresh statistical analysis even if cache exists")
+        extract_stats_parser.add_argument("--language", default="en", help="Content language: 'en' (English) or 'zh' (Chinese)")
         
         # Extract persona - LLM processing only (Phase 1-b)
         extract_llm_parser = subparsers.add_parser("extract-persona-llm", help="Phase 1-b: LLM map-reduce processing only")
@@ -606,6 +610,7 @@ Examples:
         extract_llm_parser.add_argument("--batch-size", type=int, help="Number of documents per batch (overrides config)")
         extract_llm_parser.add_argument("--use-cached-stats", action="store_true", default=True,
                                        help="Use cached statistical analysis from Phase 1-a")
+        extract_llm_parser.add_argument("--language", default="en", help="Content language: 'en' (English) or 'zh' (Chinese)")
         
         # List personas
         list_parser = subparsers.add_parser("list-personas", help="List available personas")

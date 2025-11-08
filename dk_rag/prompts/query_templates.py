@@ -79,14 +79,31 @@ def generate_multi_queries(query: str, num_variations: int = 3) -> List[str]:
 def create_query_expansion_prompt(query: str) -> str:
     """
     Create a prompt for LLM-based query expansion.
-    
+
     Args:
         query: Original query
-        
+
     Returns:
         Query expansion prompt
     """
-    return f"""Generate 3 different variations of the following query that would help find relevant information.
+    return f"""## LANGUAGE HANDLING ##
+CRITICAL: Detect the primary language of the input and produce your ENTIRE output EXCLUSIVELY in that single language.
+
+**STRICT RULES:**
+1. **SINGLE LANGUAGE ONLY**: Use ONLY the detected input language. NO mixing of languages.
+2. **NO TRANSLATIONS**: Do not provide translations, explanations, or parenthetical notes in other languages.
+3. **NO ROMANIZATION**: If input is Chinese, do NOT include Pinyin romanization. If input is English, do NOT include IPA or phonetics.
+4. **ASSUME FLUENT READER**: The reader is a native/fluent speaker of the input language and does not need assistance from other languages.
+
+**Examples:**
+- ✅ CORRECT for Chinese input: "恢复秩序和繁荣"
+- ❌ WRONG for Chinese input: "恢复秩序 (huīfù zhìxù - restore order)"
+- ✅ CORRECT for English input: "Restore order and prosperity"
+- ❌ WRONG for English input: "Restore order (恢复秩序)"
+
+Your output language must match the input language, NOT the language this prompt is written in.
+
+Generate 3 different variations of the following query that would help find relevant information.
 The variations should:
 1. Use different words but maintain the same intent
 2. Be more specific or more general as appropriate
@@ -101,15 +118,32 @@ Query Variations:
 def create_answer_extraction_prompt(query: str, context: str) -> str:
     """
     Create a prompt for extracting answers from retrieved context.
-    
+
     Args:
         query: User query
         context: Retrieved context
-        
+
     Returns:
         Answer extraction prompt
     """
-    return f"""Based on the following context, provide a direct and comprehensive answer to the question.
+    return f"""## LANGUAGE HANDLING ##
+CRITICAL: Detect the primary language of the input and produce your ENTIRE output EXCLUSIVELY in that single language.
+
+**STRICT RULES:**
+1. **SINGLE LANGUAGE ONLY**: Use ONLY the detected input language. NO mixing of languages.
+2. **NO TRANSLATIONS**: Do not provide translations, explanations, or parenthetical notes in other languages.
+3. **NO ROMANIZATION**: If input is Chinese, do NOT include Pinyin romanization. If input is English, do NOT include IPA or phonetics.
+4. **ASSUME FLUENT READER**: The reader is a native/fluent speaker of the input language and does not need assistance from other languages.
+
+**Examples:**
+- ✅ CORRECT for Chinese input: "恢复秩序和繁荣"
+- ❌ WRONG for Chinese input: "恢复秩序 (huīfù zhìxù - restore order)"
+- ✅ CORRECT for English input: "Restore order and prosperity"
+- ❌ WRONG for English input: "Restore order (恢复秩序)"
+
+Your output language must match the input language, NOT the language this prompt is written in.
+
+Based on the following context, provide a direct and comprehensive answer to the question.
 If the context doesn't contain enough information, indicate what's missing.
 
 Context:

@@ -1,0 +1,151 @@
+I built a simple website that makes 40k a month. This is Angus Chang. He lives in Hong Kong and he built the simplest website I've ever seen.
+
+I built a website that literally does one thing. And what's even crazier is that he operates this business entirely as a solopreneur. Solo founder, zero employees, 100% bootstrapped.
+
+I bootstrapped this entire business by myself. I brought Angus onto the channel and he broke down how he found a silly idea that thousands of people also happen to need. Why spending money on ads actually hurt his business.
+
+And why having a big strategy is for losers. All right, let's dive in. I'm Pat Walls and this is Starter Story.
+
+All right, welcome Angus to the channel. Thank you for coming on. Tell me about who you are, what you built, and what's your story.
+
+My name is Angus Chang. I built a business that does just one thing. I launched it in 2021 and today it makes $40,000 a month.
+
+And I run it entirely by myself. All right, before we get into the numbers of this amazing business that you built, I want to hear how did you come up with the idea for Bank Statement Converter? I had just quit my job and I knew I was going to build some sort of product.
+
+Actually, I planned to build something else. But on the side, I was thinking, you know, I've got X amount of money in the bank. I want to know how long I can continue living the way I'm living.
+
+And to do that, I wanted multiple years of bank data. I wanted it all in a nice Excel spreadsheet so I could kind of figure out, okay, it looks like I'm spending this much a month. And that was a lot harder than I thought it would be because my bank only provided PDF bank statements.
+
+So I wrote some code to get the transaction data out of the bank statements. And that was also really hard. So I figured it must be a real problem.
+
+Okay, you found the idea. Lots of people have ideas all the time. How did you know that this could be a business?
+
+Often, I like to just make an MVP as quickly as possible, get it into production, and then get it in front of real users. And that's kind of what I did. So me and a friend worked on it for about a week.
+
+We got a domain, we launched it, and then we bought Google Ads to get people to start clicking into the domain. And immediately people started uploading bank statements, which kind of validated the problem, you know. I think a lot of people watching this will be looking for, how do I find a simple idea?
+
+How do I find this kind of app that can do one thing, I can build it myself, and it can become a business? Do you have any sort of framework or strategy around finding these ideas? I think a good way is if you encounter the problem yourself or a pain point yourself.
+
+Another way is your colleagues or friends complain about stuff at work. But sometimes I just get ideas, and I just think of the smallest possible way to implement that idea, you know, get it out there and see if people will use it. You can try to validate before launching, but if it takes you like one or two weeks to make an MVP, it's not that much of a risk anyway.
+
+So you might as well just build it. Okay, so we talked about finding the idea, but I want to hear more about how you actually built this thing. How'd you go from idea to real live website?
+
+When I proved this out, I had a local version that would work for my own bank. I wrote this in Kotlin. It was basically a console application.
+
+And then I generalized it a bit so that it would work with other bank statements. Like, obviously, I don't know if it works for every bank statement, but I tried it out with some of my other banks and some of my friends' banks. And then I convinced the friends to help me build the UI for this.
+
+And he did this in Next.js. And then we got the two things deployed. I got the front end on Netlify.
+
+I deployed the backend to EC2 on AWS. And that's kind of how we did it. Cool.
+
+You probably build a bunch of other apps, and you learn a lot in the process of what works and what doesn't. What's your kind of framework for building? What's the Angus method?
+
+It's kind of like a lean startup approach. You know, you make an MVP, launch it as quickly as possible. Try to get it in front of your target audience, whoever they are.
+
+Don't show it to your friends and family. You know, they will just lie to you, and they're probably not going to buy your product anyway. And then you build your features based on real user feedback.
+
+So maybe somebody emails you. Or maybe like analytics. So if you notice that people are dropping off on this page, maybe you need to do something there.
+
+If people are not using a certain feature, maybe don't continue working on it. All right. Well, let's get into some of the numbers of this.
+
+Can you give me a timeline of the growth of Bank Statement Converter? So 2021, we launched Bank Statement Converter. 2022, we hit 6,000 USD MRR.
+
+2023, 14,000. 2024, 27,000. And today it's at 40,000 USD MRR.
+
+Total number of users, 75,000. Paying customers, about 1,000. And traffic per month, about 40,000.
+
+All right. So everyone watching this right now is probably wondering, okay, it's cool how you built it, but how did you actually market it? How did you get customers?
+
+Was there a specific strategy that made this thing go up? At first, I bought Google search ads. These were good for getting the initial users, but I was never able to run an ad campaign profitably.
+
+So I would spend maybe 1,000 USD on ads and bring in about 300 USD in sales. I spent a lot of time trying to optimize these ads, trying to get them more profitable, but never really worked out. I tried blogging and building in public.
+
+That gets quite a lot of attention. However, I don't think I get many users from doing that because my users don't seem to be using Twitter or reading my blog. I also tried sending out cold emails.
+
+And in three months of doing that, I got one sale. And I also annoyed a lot of people. I got a lot of angry messages back.
+
+People don't really like cold emails. After about six months of running Google search ads, I decided, you know, I'm just not going to do this anymore. I might not even do this app anymore.
+
+I cut the ads and I thought maybe go back to work. And interestingly, I stopped paying for ads. So I knew everyone who was clicking on the website was an organic user.
+
+And I noticed I started getting new users. I'd get like two or three new signups a day. From that point on, I kind of focused on improving the products.
+
+When customers complained about things, I would fix them. And I just basically focused on doing what the customers wanted. All right, real quick, before we get into how Angus built this $30,000 per month business, let's talk about something that matters a lot once your business starts making money, banking.
+
+The truth is most banks aren't built for solo founders and SaaS builders. They slow you down with low card limits, delayed payments, and systems that feel like they were made in 2004. That's why we're partnering with Brex, the modern finance platform that's built from the ground up for startups.
+
+With Brex, you can get up to 20x higher card limits, earn high yields on your cash, automate expenses, invoices, and vendor payments, and move money instantly when you need it. It's fast, flexible, and made to scale with you, no matter how small or scrappy your SaaS is right now. We worked with them to put together a free guide called The Startup's Guide to Modern Banking.
+
+It breaks down how to protect your cash, extend runway, and upgrade your finance stack without wasting time. Just click the first link in the description to download it. Thank you to Brex for supporting the channel.
+
+Let's get back to the video. All right, so you got this website making a bunch of money. It's a great business.
+
+You have a team working on this? No, it's just me. I started this business with a friend, but he left after a few weeks.
+
+I do all the development, customer support, sales, and marketing. All right, so you went from working a nine-to-five job to being a solopreneur, running your own business. What was that transition like?
+
+Working for a company, you kind of spend a lot of time playing, refactoring code, trying out databases you think are cool. But when you work for yourself, you quickly realize these things don't make any money and potentially are a waste of time. So your focus is really different.
+
+You go from being a developer who cares about writing nice code to a developer who cares about business features and more business aligned, I suppose. Yeah. In your experience becoming a solopreneur, what are some of the pros and cons of the solopreneur lifestyle?
+
+When I first started, it was a big change. Most of my friends I knew, most of the people I hung out with were people from work. You know, you go out for drinks or whatever.
+
+And then I went to working for myself, just being at home all day, basically not socializing. It's kind of a big change when you go from making maybe like $10,000 a month to $200 a month and you're basically hanging out with no one. So being a solopreneur can be pretty depressing.
+
+Another thing is people often don't really get what you're doing, especially when you're failing to make money. I remember in the first two years, people didn't understand why I did it. And they would also, you know, hear the revenue and they would tell me, oh, this is like a crappy business.
+
+You shouldn't go after this. And then multiple years later, when it's making a lot more money, those same people will say like, oh, it's a great business. Some pros, it's good to have your own schedule.
+
+Often I wake up and go hiking instead of going to work. It's nice to be like on a different schedule to everyone else. If you're starting up a VC-backed startup, you have a boss, you have investors, you got a lot of time pressure.
+
+As a solopreneur, you can go a bit slower. I mean, depending on how much money you have saved up. And you can also go after much smaller markets.
+
+A venture capitalist wouldn't want to invest in bank statement converter. It doesn't make enough money. The market's not big enough.
+
+But for a single person, you know, it's enough, right? And you can be quite happy with that revenue. Cool.
+
+Now you have this great business. You're a solopreneur. What were you doing before?
+
+Were you a developer? What was your kind of journey to starting your own business? I've always been a developer.
+
+In 2010, I worked for an EPS machine company. 2010 to 2014, I worked for myself, developing indie games for the Xbox Live indie game store. I also developed a virtual girlfriend app for Android and iOS.
+
+It's called Girlfriend Plus. 2017 to 2019, I worked in an investment bank in Hong Kong. 2020, I worked at a crypto company.
+
+We're building a crypto exchange. 2021, I launched Bank Statement Converter. Okay, let's talk about Tech Stack.
+
+I know you're a developer. Can you share with me the entire stack of how you built this app? The core engine is written in Kotlin.
+
+It's like a JVM language. Next.js is what the front end is written in. I use Brevo for transactional emails.
+
+I use AWS EC2 instances to host the back end. Netlify to host the front end. Stripe for payment processing.
+
+And that's about it. A lot of profit. It's like 39 out of $40,000 is profit.
+
+Yeah. All right, so you built this awesome business. You've been working on it for a number of years.
+
+What have you learned in the process that surprised you? In the first two years, I was working extremely hard on the business and making basically no money. You know, I spent a lot of hours developing the app.
+
+I'd reply to customer emails as soon as possible. If a customer email came in at 3 a.m., I would deal with it right away. You know, at that time, every extra customer made a big impact on MRR.
+
+And what I realized was that those first two years of hard work, you don't get paid much, but you kind of get the money for that hard work in like years four and onwards. The last question that I want to ask is, well, we ask everyone who comes on to Starter Story. If you could stand on Angus's shoulder when you quit your job, you're building that app, it was making a few dollars in revenue, what advice would you give him?
+
+SaaS is an excellent business model. Make sure you save enough money to survive multiple years with no income. If you only have enough money for a few months of runway, you're probably not going to make it.
+
+You know, I mean, it took me two or three years before I could pay rent with the revenue I was getting in. Ignore social media. That's, you know, a lot of people think they need to build a following on social media before building a business.
+
+I think it's a waste of time. Building a following on social media is hard work. And even if you have it, your business might still not be very good.
+
+So just focus on the business. Focus on the products, get some real users, improve the product, and it should be easy to get more users. If your product solves their problem, don't make a Facebook, Instagram, and Twitter page for your business.
+
+See a lot of people do this. I think it's a waste of time as well. That was awesome.
+
+Thank you, Angus, for coming on. I love the business that you built. It's going to keep growing.
+
+It's awesome. Thanks for sharing everything with the audience and hope to see you back on soon. Angus is proof that you can build simple apps that actually make money.
+
+He found a tiny problem, built a solution for himself, and then turned it into a life-changing business. I think anyone can take this framework and strategy and turn it into their own micro SaaS. If you want to learn more about how to build simple apps, check out Starter Story Build.
+
+In about two weeks, you'll go from a simple idea to a fully operational app. We'll guide you on how to use AI to build and design your app, and then we'll challenge you on how to launch it into the real world. Just head to the link in the description to learn more and join Starter Story Build.
+
+All right, guys, thanks for watching. I'll see you in the next one. Peace.

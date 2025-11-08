@@ -1,0 +1,147 @@
+I prompted my way to $30,000 without writing a single line of code. This guy made $30,000 from an app he built on his morning commute. How?
+
+Two tools, Cursor and Bolt. I think a lot of people make cool stuff with Bolt and Cursor nowadays, but they don't monetize it because they need. In this video, we'll go over the wild story of how Polyus just built, launched, and marketed a SaaS product by himself and got traction in about 30 days.
+
+You probably have a winning idea already that you could just prompt your way and start building. Why? You should definitely tune into this video.
+
+Well, I had Polyus share with me his exact process on screen of how he builds fast with AI tools, how he creates beautiful designs, and how you can too, and how making money and marketing your app is as simple as a couple tweets. All right, let's get into it. I'm Pat Walls, and this is Starter Story.
+
+Welcome, Polyus, to the channel. Thanks for coming on. Tell me, what's your story?
+
+My name is Polus, and I used AI to build an app that made me 30K. It's an app that matches startups with influencers, and I built and launched it seven months ago. It's got over 1,000 users at the moment with over 350 paid users.
+
+I used Bolt and Cursor to make it, and I used Framer for design. I did it all myself without needing a team at all in my daily commute. Nice.
+
+Cool. Before you made 30K with your app, tell me a little bit more about your background, your story as an entrepreneur. It started when I was 18, and I needed to make money to get my way through college, and the only job that I could get was door-to-door sales.
+
+And one day, I ended up knocking on the wrong door, and someone literally grabbed me and held a knife to my throat. After that, I just had enough, and I wasn't really employable as a student, so I dove into every side hustle that I could. So I did web design, I did copywriting, sales funnels.
+
+I became kind of like a generalist. It paid enough to get my way through university. When I was in university, I did computer game development.
+
+But funny story, I actually completely sucked at code. I was very visual, and I just couldn't understand it. But now AI can actually code for you.
+
+And so the limitations that I had before are kind of removed. AI can do the heavy lifting in terms of code and kind of patch up the area where I'm not the best at. Nice.
+
+So tell me what got you into building online and realizing that you could make money online. So I was going through kind of a rut patch because I tried all these different business models, and I wasn't making enough money to break free from a nine-to-five. I got really frustrated one day that none of the things that I did really got me where I wanted to be.
+
+So I was pursuing creator-led services and products, just work with creators. And the idea of a database came to my mind, and I just started building it out because it's something I'd use myself. And I figured with AI, I could turn this into a fully-fledged SaaS if enough people wanted it.
+
+So I really just gave it a spin as kind of like an experiment, and it did pretty good. So tell me what it felt like to finally launch and have this validated idea and have it make its first dollar. Tell me about that.
+
+So for months before launch, I was building this database. It was a lot of effort, and I had no idea it would pay off. So when I launched my application, I remember I was sitting with my girlfriend and we were just having dinner.
+
+I pulled up my phone. I just see sale after sale. I was like, okay, how long is this going to keep going for?
+
+I'm going to go ahead and do that for a long time. And then I would just do that for a long time. I'd just take that out.
+
+And if you're going to do any new tool, any library, just tell it you're a complete noob and absolutely don't know how to do anything. And it'll give you really detailed step-by-step. And then I would just follow along.
+
+I would implement the first thing that Roplexity says. So it could be like the dashboard, importing the project, cloning a GitHub repository if there is. Once I'm in there, I just keep prompting it.
+
+And if there's errors, I just throw the error back at the AI. It fixes the error. Go on to the next thing.
+
+And I use Bolt to a point where I get a nice looking MVP with the functionality. And then I take that, download the project. I put it into Cursor.
+
+And here is where I hook up Superbase. So it writes all the scripts to connect the backend. And I get clerk auth.
+
+And that makes it very simple to plug and play the authentication. And this is all steps that Roplexity can provide for you. So you can just ask questions along the way and it'll give you some solutions.
+
+Roplexity is a great starting point. Bolt is a great way to make the MVP. And then you move to Cursor to dial in the details.
+
+So you're 80% of the way there. And Cursor will then just get you to the final finish line. Have users authenticating.
+
+You have a backend with real data. And with a bit of prompting and some scoring, it'll make it secure as well. Okay.
+
+Polyus is proof that it's never been easier or faster to build an app in 2025. Tools like Cursor and GPT-4 make it possible to go from idea to product in a weekend. But if you don't understand your customer or what they're searching for and how they describe their problems, then you're just building fast in the wrong direction.
+
+That's why we're excited to partner with SEMrush for this video. It's one of the best tools out there for figuring out what people actually want. You can plug in an idea and see what people are searching for, what's getting traffic, and where the gaps are.
+
+It's got 26 billion plus keywords across 140 countries. And yeah, most people think that it's just an SEO tool, but trust me, it's way more than that. You can use it to validate your idea before you build, find high intent keywords your competitors are ignoring, or even spin up landing pages that match what people are already looking for.
+
+I'm going to show you how you can find successful business ideas just like Polyus is in SEMrush with OneSearch right now. Go to SEMrush and find their topic research tool, search any topic or niche. Let's just do TikTok influencer since that's kind of similar to Polyus's business, but you could literally just search anything and I'm going to open some of the cards that look interesting.
+
+Like this one, TikTok influencer marketing. On here, you can see all the questions people are literally plugging into search engines. These are the real problems people have and are actively looking for a solution.
+
+I like this one because it's not a super high keyword difficulty and there's high volume of people searching for it. So maybe there's some low hanging fruit in there. And look right here, TikTok influencer search platform.
+
+What's the best way to hire TikTok influencers? Polyus's business can literally be tied back to a single page in SEMrush. And that's just crazy powerful.
+
+If you ask me right now, they're offering a free seven day trial to try out all 55 tools in the platform. Just head to the first link in the description if you want to try it out. All right, let's get back to it.
+
+We talked about the code building an MVP. Let's talk about one thing that I think is really cool about your stuff is how good it looks. How do you use AI to design amazing looking websites?
+
+It's really the simplest it can be. First thing I do is I pull up Framer and I pick a free template. So any template that you see on there that you like, it's simple enough and clean for you to edit.
+
+And then I just have to pick a nice font and a nice button. And then the rest just needs to be simple and clean. The most important part is just to get out.
+
+Focus on just editing the template really quick and just put it out there. Cool. Based on what you built and what you've learned working on lots of marketing stuff and also on your own.
+
+What do you think is like the most important thing to focus on when you're creating a good landing page and a good design? So I focus 80% of my time on everything that's above the fold. We'd call this the hero section.
+
+This is the first thing that people see when they open the website and has to have your full message just out there. And people really need to grab an understanding of what it is within the first couple seconds. Anything that you can save them time with, save them money, anything that solves a painful problem, you should have in the headline and subheading and just a big call to action.
+
+All right. So we talked about landing page design, which was awesome. But what about UI design when you're building an app?
+
+How do you use AI to design UI and UX? When I'm building it out in Cursor, you get the basic thing done and then you add some things to it. So the more features you add, the more things you work on.
+
+It's got to stay clean. It's got to stay cohesive and you got to make sense. So for everything UI related, I just ask it to make it clean, functional and modern.
+
+And I try to have it used like chat CN components and they're all free. But when I have ideas and when you have ideas for how you want onboarding flow to be or some other elements of the app, what I would suggest is just creating something in Figma. You can doodle if you want.
+
+You just plug it into Cursor and just explain the behavior that you want and then it'll spit out a nice looking page for you. All right. Well, thanks for sharing that.
+
+Let's dive into the marketing side of things because it seems like X, Twitter has really been working well for you. Tell me about that strategy. Show me a tweet that really took off for you and let's talk about that.
+
+So this post did the most in terms of numbers. It got close to 500K impressions. And I think the reason it worked is because I found an angle to attach it to trends happening in the space.
+
+A lot of people when they're billing in public never go viral because they never joined the bigger conversation and human attention span is limited. It's a hundred times easier to just bring your ideas to where the focus is already happening. So this post had a nice simple visual demo has like real like raw human like reaction.
+
+But most importantly, it tapped into the main debate at the time, which was this AI coding actually good enough to build a full SaaS. Thanks for sharing that. I'd love if you just shared a little bit more about the bigger strategy here, the bigger thing, which is build in public.
+
+I love if you just talked about that from, you know, kind of strategy perspective or what you love about building in public and why it's worked for you. So for me, what's worked is just shipping often. Don't just have like one big video release like a lot of VC startups.
+
+So for example, I tapped into the influencer conversation that was happening at the time. I saw Mark Liu posting a similar format. I figured I'd get some inspiration and then convert it into a post for CreatorHunter.
+
+What's not worked for me and what I see is there's been like a lot of competitors and copycats that come up, but they never really take off because either they're copying the exact same thing and people say, and people see right through that and you need an edge that no one can easily copy with AI tools nowadays. Nice. That's a good strategy.
+
+Okay. So now the exciting part, let's talk about tech stack, what tools, languages or whatever else you use to build this business. And if you don't mind me asking, what are the generally the costs to run this business?
+
+What kind of margins are we looking at? I use perplexity for the game plan, both for the functional MVP cursor for making a production ready. I use versatile, which is free and then super base also free.
+
+And then eight to five for scraping in terms of costs and margins. So it's about 90%. All right.
+
+So what I want to ask you is, you know, you, you built a bunch of stuff and you finally seeing success with CreatorHunter. What have you learned during that process that surprised you? I'm getting a lot of questions as well about how I did it.
+
+And people want the sauce on how to build stuff and build stuff fast. I think you could just start prompting and just prompt your way to making something and sell. I think people underestimate the knowledge they already have.
+
+So like if you have like a deep domain knowledge, you probably have like tons of ideas already on what to build. And you probably have like a winning idea already that you could just prompt your way and start building. I like that.
+
+Cool. All right. Now that you are working on this full time, tell me what a day in the life looks like you for now building CreatorHunter.
+
+Yeah. So it's a big change, more traveling and more work. When I was building out the MVP, I was at the same time traveling to China, New York, France, and seeing revenue while you're out and about exploring.
+
+It's a nice feeling. It's a real blessing. But I've been working on it full time on CreatorHunter since the 24th of December when I quit the job.
+
+So some days is more hours that I put in this than my nine to five, but I don't feel exhausted at all. Cool. I like that.
+
+Well, last question that we asked anybody that comes on StarterStory is if you could give advice to young polyists maybe a couple of years ago, what would you tell them? I think never underestimate how much you can do solo. AI as your CTO is like a superpower.
+
+I don't know how long this period of time will last, but we need to take advantage of it. Whatever ideas you have, you can probably execute it in a weekend. If you just figure out the most scrappy idea possible in the most scrappy way possible, you can get it out there.
+
+And then you put a buy button on it, share it on Twitter in the most scrappy way or TikTok. I think you'll be surprised by the amount of people that actually want to get it. Well, that's great advice.
+
+Thanks for coming on, Polyus. I love what you built. You're going to be a massive success.
+
+Keep building, keep going. And hopefully we'll see you back on the channel. Thank you.
+
+Thanks, Polyus, for coming on. I think his story is amazing. And it's proof that anybody right now can build anything with AI.
+
+I mean, he just got started. He built a bunch of stuff. And throughout that process, found the idea that would change everything.
+
+I see a lot of people waiting for the right time to start and just sitting on the sidelines. While others, like Polyus, are just getting started, playing around with these tools, throwing shit at the wall, and shipping stuff every week. If you got started right now and started playing with these tools and shipping stuff, imagine where you'd be in two weeks.
+
+Yes, it's early and not everything is perfect, but the early bird gets the bag. So if you're serious about shipping, want to build something real and put it out into the world, check out Starter Story Build. I put the first link in the description.
+
+Let's build. Thanks for watching. I'll see you guys in the next one.
+
+Peace.

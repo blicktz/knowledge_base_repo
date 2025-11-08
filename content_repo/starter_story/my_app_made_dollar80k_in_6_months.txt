@@ -1,0 +1,113 @@
+After launching my app and seeing no success, I rebuilt it and it made $80,000 in six months. Meet Praneeth, a builder from India who quit his software engineering job to go all in on building apps. But after launching the first version of his app, he saw pretty much no success.
+
+So he decided to make a simple pivot that changed everything. I was making $250k a year, but always knew I wanted to build my own thing. In this video, Praneeth will share what most builders get wrong about their first idea, the pricing change that made him $80,000 in six months, and specifically how you can price your first product so you can make money on day one.
+
+I would not recommend starting with a subscription model if you're bootstrapping. This one is going to be fun. I'm Pat Walls and this is Starter Story.
+
+Praneeth, welcome to the channel. Tell me about who you are, what you built, and what's your story. My name is Praneeth and I quit my $250k job last year and went all in on building my own apps.
+
+I built an app called Canvas Mode, which was formerly known as RabbitHoles AI, but when I built the first version of it, it didn't get any traction. But then I changed the pricing model and my app paid $80,000 in the last six months. Okay, well, before we get into that pricing change, which I'm really excited to talk about, I do want to understand what is your business?
+
+What is Rabbit Holes? RabbitHoles AI is an app, which is basically a Canvas first way to interact with AI models. If you've ever chatted with ChatGPT for a really long time, it tends to kind of forget or lose its place in the conversation.
+
+So it's really hard to have any meaningful long conversations with a linear app like ChatGPT. So what happens in a Canvas app like this is as soon as you see something is kind of getting interesting and you want to branch off or create a different kind of fork in that conversation, you could do that by creating a new node. So RabbitHoles AI, it's built for Power AI users to get more out of the AI, unlike linear conversation apps.
+
+Okay, let's talk about how you came up with the idea for this. Obviously, this app is huge, has lots of users. How did you find the idea to build this?
+
+I was initially trying to work on build on one of my old ideas. And I was using ChatGPT and I was using Perplexity and I was using Cloud to do that to teach myself. But soon I found myself like distributed across a bunch of different tabs.
+
+Each one of those had different kind of expertise. Cloud was much better for coding and GPT was much better for high level architectural kind of things. And Perplexity was much better for real time information.
+
+So the UX designer in me thought, okay, this is a frictionless experience and this is kind of broken. And if it's going to be much better, if I can do it all in one tab, then it kind of evolved as a design from there. Okay, so you have this idea, you start building it, but you sort of make almost a mistake when you start building it in terms of the pricing model.
+
+Can you tell me about when you started building it, what your plan was for how to price this thing and kind of how that whole process started? The default mode of how I operated about building products was the typical subscription model or the freemium model. So that's where I went with initially and launched a web app with free trial where you get like a few questions for free and then you have to pay after a little bit of usage, but that didn't get much traction.
+
+And I feel like there's multiple reasons to that. The top ones are that I did not have a huge personal brand trying to do the building public thing where I was talking on Twitter or kind of posting everywhere where I got a chance. I got some interest, but never really turned into any real dollars.
+
+And on top of it, I kind of decided that my ideal customer profile, ICP, is a Power AI user. So at that point, my ICP would already be saturated with a bunch of different subscriptions. They are paying for these multiple AI models.
+
+So that's when I had to change the product a little bit by moving away from web app into a desktop app and making it a one-time purchase. Okay. So you have this app, it's sort of working.
+
+You've got some users, you've got free trials, but you feel like there's maybe something missing and you make a change. Tell me about what that change was and what happened after you made that change. To balance all the things that were particular to my situation, I wanted to start with a one-time purchase and I had to convert the app into a one-time purchase, which means that I cannot incur any AI costs because AI usage costs me money.
+
+And I wanted to offload that to the users. So that was step one to make it bring your own keys. And the second step was to not even incur any server costs.
+
+If I were to like just build it once and sell it many times, I had to offload my server costs to the users as well. And the easiest way to do that was to just use the users computers. And to do that, I had to build a desktop app.
+
+This allows me to like ship and forget about my business cost and everything ran on the users. They paid for the AI. As soon as they changed it, a lot of people actually started paying.
+
+They were more serious in terms of giving feedback. It felt much more refreshing in the sense that people were not only more serious, but they were also more helpful in kind of like believing in this early stage product. So after we moved to a one-time purchase model, that change led to about $80,000 in the last six months.
+
+Okay. So for anyone watching this, I do want to reiterate that a lifetime deal doesn't make sense for all businesses. So I'd like to hear from you.
+
+When does a lifetime deal make sense? What type of business and what type of founder is this for? I think every bootstrap business should do an LTD model.
+
+The pricing and how they do it should obviously vary according to their unique product use cases and the costs that they incur. But I think a VC style of doing freemium would not work for a bootstrap model. Having venture capital would actually mean that you can offset your truth seeking in a sense, like you can kind of delay your product market fit.
+
+So you can kind of hope that people would come on board, but that's not a luxury that bootstrap businesses would have. So almost every bootstrap business should do a lifetime deal along with whatever they are doing. If you already have like a subscription model, have a lifetime deal, even if it's a limited thing, have it because it kind of gives you this boost in morale with this chunk of cash coming in and you have a much more validated idea and you have a good sizable user base who are willing to actively give feedback and be involved.
+
+And it's hugely, hugely beneficial if you're a solo founder or like a founder with like a small team trying to figure out what to build. Because usually what happens, which happened with me in the past as well, was that you kind of get into your own head and trying to think what to build and what not to build. All right.
+
+Before we get into how Praneeth successfully pivoted and relaunched his business, I do need to point something out. Making money online isn't as complicated as most people think. At its core, it's as simple as creating something valuable and putting a Stripe payment link on it.
+
+No, it won't always work, but you'll never know unless you ship it. And that's the beauty of the internet today. There are almost no barriers to trying.
+
+And this is why we created Starter Story Build. It's our action-oriented bootcamp where in just a couple of weeks, you'll come up with an idea, you'll build it with AI tools, and you'll actually launch it to the real world. Even if you have no coding experience or you're still working a full-time job, there has never been a better time to just try.
+
+So if you're ready to take action, click the first link in the description to learn more about Starter Story Build. All right. Now back to Praneeth's story.
+
+The next question I have is more specific and tactical is the pricing of lifetime deal. How did you price your lifetime deal? And how would you recommend anybody who's got similar products to price a lifetime deal?
+
+If you are building an AI product, I think it's absolutely worth it to have a bring your own keys model that offsets a lot of costs and it kind of offloads it from you to the user. So everybody should do that. The way I've done that for rabbit holes is that the pricing of the actual product actually started with something really small.
+
+I started off with $29 when I was under 100 users. Once it crossed 100, I bumped it to like 49 and we are going to be bumping the lifetime deal much higher and kind of moving on to a recurring model now that we are about 1200 users right now. So the initial offering was much lower and the early users who bought in got a much better deal.
+
+And it also gave me feedback of like that the market is wanting to buy something like this. On that tactical note, I do also want to talk about growth. Yes, you can create a lifetime deal and you can set your pricing, but you still need to drive users to the page.
+
+You still need to get it in front of people. How did you grow rabbit holes and what was the growth strategies? One of the first things I would still want people to do is to get their landing page right.
+
+To get that right, I need to think this is something that I haven't done in my past experiments, but this time I've done it right, which is to get my ICP correct. In my case, it was Power AI users. So my landing page copy was like completely tailored to Power AI users.
+
+I call them out in my H1 and I call them out in multiple places on my website. And this is very important. And there's like tons of places where you can find how to structure your website.
+
+And after I've done that, I started like talking more about it on Twitter. And I kind of like replied to conversations that were in relation to AI interactions and the new age of AI. And it was not just directly talking about my product in a sense, like, you know, buying a product or I'm building this in that sense, but I was just emptying towards something related to my product.
+
+On that note, I'd love to hear just some of the numbers of the business today. What does the business look like? Revenue, profit, users?
+
+What can you share? It's like around 80K-ish in gross revenue as we speak and about 75 around profits and minus the refunds and everything. We have about like 200 paying users and 60% of them are lifetime users.
+
+And about 40% are like people who bought it out of one-time purchase where they would have to renew it after a year to get more updates. And overall, we have about like 38,000 unique visitors to the site so far. Well, thanks for sharing that.
+
+On that same note, tell me about TechStack. How did you actually build this? I was saying in the beginning, I used AI as my co-founder in a sense, and I used Cursor for coding.
+
+The landing page is built on Next.js. The actual app is an electron app, and it uses React underneath and TypeScript to do it. And do you host the apps on Cloudflare?
+
+But that's not a huge deal. But another big thing I have to talk about or touch on is the AI SDK that is built by people at Vercel. And it's a huge accelerant in me being able to build this product because it allowed me to build a product with great abstraction where I could just focus on the front end and have almost nothing to worry about integrating with this multiple different kind of AI providers.
+
+AI SDK gives you the best abstraction in that sense. You use it and you're automatically capable of logging into all the top providers and then some. On a similar note, what I think is cool is you have this BYOK, bring your own keys, which basically means you don't have to pay for API LLM costs.
+
+So I'm curious, what are the costs and margins for a business like this? You really don't have big server costs and you don't have API costs. So what does it cost to run day to day?
+
+It's almost nothing. I only have to pay for my landing page hosting and almost I can bring it to zero, but because I'm like an XJ is spoiled person, I hosted on Vercel and I have some fancy things going on there. So it costs me about $50 a month and I have a cursor subscription about $200 a month.
+
+But that is something that I have to only spend because I have to keep working on new features, not to maintain the existing product. Cool. Well, last question that I have for you, a question that we ask all founders to come onto the channel.
+
+If you could stand on Praneeth's shoulder when you were just starting out before you had product market fit in this awesome product, that's made a bunch of revenue. What would be your advice? I've been trying building different products since the last six, seven years.
+
+And for the good chunk of last five years, I was operating as a skills man. As an entrepreneur, your goal is to find product market fit as soon as possible. And your goal is to build something that makes people's lives better.
+
+But what I was doing was appealing to my peers, which is totally not the mindset that I need to have as an entrepreneur, because your whole purpose should be about finding a product market fit, finding something that you're going to put out in the market, and they're going to give you money and reward you in return as a thank you for making their lives better. And that should be your only goal. That's really good advice.
+
+Thanks for sharing that, Praneeth. That was awesome. Thanks for coming onto the channel.
+
+What you built is awesome. I'm excited to see what you continue to do and continue to build. Thanks for coming on.
+
+And thanks for having me. It's a great pleasure. All right.
+
+Thank you, Praneeth for coming onto the channel. Hopefully you guys got a bunch of value from this video. I find it super inspiring about how Praneeth left his full-time job, decided to go build stuff, and especially how he didn't give up after the initial version of his app failed.
+
+If you're looking to do something similar and ship your own app, then definitely check out Starter Story Build. It's our program where in just a few weeks, we'll help you find an idea, build it with AI, and launch it to the real world with real users. If this sounds interesting to you, just head to the first link in the description to learn more about what Starter Story Build is about.
+
+All right. That's it for this episode. Thank you guys for watching.
+
+We'll see you in the next one. Peace.

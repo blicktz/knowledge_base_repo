@@ -1,0 +1,133 @@
+I used AI to build an app that's now making $300,000 and I didn't write a single line of code. AI coding has changed the game forever and this guy is proof. Alex Finn built and launched his app in just three months using Cursor.
+
+Every line of code was written with AI, all the marketing was done with AI. Today, I brought him onto the channel to share his entire playbook. How to build apps with Cursor the right way, the secret to actually finding a million dollar business idea, and how to have a launch so epic that you might never have to work another day in your life.
+
+On launch day, I made $100,000 in 15 minutes and $200,000 in two hours. If you're building anything online, you can't miss this one. I'm Pat Walls and this is Starter Story.
+
+Welcome Alex Finn to the channel. Tell me about who you are, what you built, and what's your story? I'm Alex Finn.
+
+I designed, launched, and built CreatorBuddy, an AI content app completely by myself. It automatically pulls in your tweets from X and then it has an AI model on top of it that reads all your tweets and is able to coach you on how to create better content. I started building this in August 2024 when I discovered Cursor.
+
+After about seven or eight months of building this, getting feedback, improving on it, iterating it, and then finally releasing it, we had a really successful launch day. Within 15 minutes, I got to $100,000 at ARR. And within two weeks, I got up to $300,000 at ARR.
+
+We have almost 500 active paid subscribers. And all I did was build a product that solved my own challenges. And along the way, I was able to build a super powerful AI product that I'm able to now run and ship all completely by myself.
+
+That's insane. I mean, this happened all so recently. Give me a little bit about your background and how you got into this.
+
+Yeah, for sure. So I've been in tech my whole life. Before this, I was leading a team of technical consultants at MongoDB.
+
+And I've always had the dream of building software. But with a nine to five, it was very difficult. And then around December 2021, I started creating content on, at the time, Twitter.
+
+So I built this entire system for myself around tweets so that I could have my nine to five while also creating content. And I was like putting tweets in a spreadsheet and seeing what worked and what doesn't. So in March 2023, Elon Musk open sources the X algorithm code, I immediately open up the GitHub, I go through all the code, and I decide to write a thread on Twitter about the open source algorithm.
+
+I go over like how it works, what are the different variables in it, like how things go viral. And that thread I wrote on the algorithm goes super viral. Elon retweets it, Mark Cuban engages with it.
+
+When I get hundreds of 1000s of followers, I decided like, I have a once in a lifetime opportunity here. I have this massive audience behind me, if I can figure out a way to build something, I can build a real business. And so I quit my job went all in and eventually came upon the idea of creator buddy and launched it.
+
+That's amazing. That's an insane story. Before we get into a lot of the audience stuff, which we're going to talk about, I understand that you taught yourself how to use cursor, and you built this without much coding experience.
+
+Can you tell me a little bit more about that? So August the last year, I discovered cursor for the first time. And within five minutes of using cursor, I have this realization that hits me that's like, I can with cursor, build enterprise level software software that required teams of hundreds of people before, now completely by myself, no help whatsoever.
+
+And so I had a working prototype day one, I go to my community on x, I say, Hey, this is what I built. What do you think? What can I add that makes this more helpful?
+
+And then I just spent the next six, seven months, getting feedback, improving, getting feedback, improving until I hit the point in January this year, where I felt like, okay, this is ready to launch, people are gonna be willing to pay money for this. Cool. I understand that you picked up cursor without a big software development background.
+
+What was kind of your framework of way of doing things and way of building in cursor without a bunch of experience? I think the separating factor from people who use cursor well, and don't use cursor well, is the way you communicate what you want the AI to do. And what I've kind of figured out is basically the smaller you can break down your problems, your challenges, your requests, the better your results will be.
+
+So let's say I'm trying to build a feature around AI brain dumps, right? What I would do is, is I would try to break that feature down into the smallest building blocks possible. So my first request would be, Hey, can you build an input where a user can enter in an essay or a brain dump?
+
+It would do that. And then I go, okay, next, I want you to build a button that will eventually repurpose the content and they build the button. And I go, okay, now I want you to command the AI model to take that essay and turn it into a tweet.
+
+And while it seems like that would take much longer, you actually get done a lot more and a lot faster because you're not going to run into bugs that way. And a little hack there. If you actually have chat GPT up on the side, you can say, here's a feature I want to build.
+
+Can you break it down into micro steps and then just take that output and put it into cursor. So that really is the biggest key breaking it down into micro steps for the AI. All right.
+
+So Pat from the future here, uh, real quick, I just wanted to pop in here because I love the way he explains how he builds with cursor so much that I actually reached out to him after this interview. And I asked him to put together a crash course on this exact framework that he just talked about. And oh man, he delivered.
+
+If you want to see the way that Alex builds with cursor, watch over his shoulder and see how he builds an MVP from scratch the right way. I put a link in the description to that. It's free to watch.
+
+And I think you're going to love it. This is one part of starter story build, which I'd also love if you checked out, but anyways, let's get back to the video. So this business is making $300,000 a year.
+
+How did you come up with this idea? Tell me about that. I think it's really simple.
+
+You know, for me, I just look for challenges I have. And as I talked about earlier, like I was putting my tweets in spreadsheets every night and reviewing my tweets so I can figure out what's working, what isn't. I'm like, okay, I'm going to build software that makes that process easier so I can automate reviewing my tweets, automate collecting my tweets.
+
+And odds are, if you have that challenge, someone probably has it as well. The worst case scenario, if you build products that solve your own challenges, is that you just make your life easier. So build software that solves those challenges, and then share that out with your audience.
+
+And eventually you're going to find other people that have those same challenges. On that topic of audience, let's talk about this launch, this launch where you launch it and immediately you were doing 100K ARR. Walk me through that story and tell me how you're able to pull that off.
+
+December of 2024, I basically say, okay, I want to beta test this. I want to get this in people's hands and get feedback. So I put out a message, hey, anyone subscribed to me on X, you can beta test creator buddy, you can just try it out.
+
+I got this in the hands of I think I had 150 beta testers, I met with each and every one of them to walk through how it worked and what they should be doing. And once I had it in people's hands, that's when I made the most improvements. Because I started seeing what people actually were using, what they were clicking on, where they were having challenges, where the bottlenecks were, I beta tested till the day before launch.
+
+So January 12, I announced I'm launching on January 24. I go live on spaces that day, I talk about creator buddy the entire day, because I was sharing my journey for like the six, seven months leading up to this day. I had hundreds of people ready to buy minute one of launch, we hit launch, I go for a 45 minute walk, I come back to 10 trillion DMs and messages, hey, this is broken, this doesn't work, can you fix this?
+
+And I would like to tell you that, you know, a successful launch day where I'm making 200k on day one was all roses and sunshine. But I think that's kind of what comes with the territory of launching on your own. Okay, real quick, before we dive into how Alex grew his app to 300,000 ARR, I want to zoom out for one second.
+
+So yes, you can build an app in a weekend, and you can launch fast, go viral hit 100k ARR in hours. But things like slow payments, low limits and no flexibility might be the thing that actually breaks your business. That's why we're partnering with Brex, the modern finance platform built to help startups spend smarter and move faster.
+
+Brex rebuilt cards and banking specifically for startups, you get up to 20 times higher card limits, built in expense tracking and rewards that actually help you grow and their banking product goes even deeper, high yield returns, same day liquidity and automated payments that save you time and protect your runway. One in three US startups use Brex and we worked with them to put together a free guide called the startups guide to modern banking head to the first link in the description to download it. Thank you to Brex for supporting the channel.
+
+All right, let's get back to Alex's story. I can already read the YouTube comments right now as okay, this is not interesting to me. I don't have an audience.
+
+This guy was just able to do it because of his audience. What would you say about that? Yeah, of course.
+
+Of course, that's why I was able to make so much money is because I have an audience. But at the same time, I have an audience because I spent three years creating content, right? A big reason why I blew up on Twitter so much is I was able to quickly form opinions around the way the algorithm worked, the way the platform worked.
+
+And I was able to express those opinions quickly and people formed around that and built a community around that. And all I did was consistently make content for three years before I launched a product, create content for a long time, create YouTube videos, tweet, right? It took me five minutes a day to tweet, do that.
+
+And then you can have an audience too. And you can make money. So yes, an audience is a big reason why I made money.
+
+But anyone can have an audience. I promise you. That's great.
+
+Let's change the topic a little bit here. Let's talk tech stack. What platforms, technologies and software used to build and grow this business?
+
+Yeah, so I started off on cursor. It felt like in October of last year, cursor, it just felt like the IQ went down. And so I discovered a tool called Windsurf.
+
+I've been on Windsurf ever since I use chat GPT 03 as my product manager to host the website. I use for sell because my app is built on XJS. $20 a month for that.
+
+Supabase for data. Supabase is extremely easy to use. $20 a month for Supabase.
+
+Other than that, I pay for the AI API. So I use Claude, I use chat GPT, I use a couple others. And all in all together, I think I pay about $250 a month.
+
+My emails are done through Resend, which is like an email API. I pay $5,000 a month for the XAPI, which not many people are willing to spend that much for that data. So the costs all together come out to about $5,300 a month.
+
+And on $25,000 a month of revenue, I think that puts that right around 80% margins, which are even with the insane Twitter API costs are pretty good. Wow. Nice.
+
+Okay. What has been like the key lesson you've learned through your journey? So I think the biggest lesson I learned is just like the moment I get a challenge.
+
+My mindset now needs to be for the first time ever, just figure it out. Instead of having that kind of gut instinct, which I think a lot of people have, oh, I'm going to hire a landing page consultant. Oh, I'm going to hire a thumbnail consultant.
+
+Oh, I'm going to hire whatever. I'm just going to go to AI and just figure it out. And if you change your mindset to figure it out mode, you can do anything.
+
+You can have a one person business with absolutely no help whatsoever. And then two, now that anyone can build any software they want, knowledge and product is no longer the moat. The moat is your distribution.
+
+You know, how can I get as many eyes and attention on this as possible? Because that's going to be my moat. Someone goes out and builds creator buddy 2.0, the exact same app in five seconds, but they have 10 followers.
+
+I'm going to outsell them in circles, right? They're not even going to know about the other person's app. So I always make sure no matter what I'm doing, I'm always putting my community first so that I can maintain that distribution so I can keep selling my product.
+
+That's great. This would be helpful for anyone who's working in tech like you used to. If you could go stand on Alex's shoulder when you were getting started, when you had the desire to build stuff, what would be your advice?
+
+The number one challenge I see is just they're not taking the action, right? They're doing a lot of overthinking. I don't know what app to build.
+
+I don't know what to tweet about. I don't know what to write about. The best way to solve all of those is to just do it.
+
+If you don't know what to build, just build something. If you don't know what to tweet about, just tweet anything. One of two things will happen.
+
+You either figure out what works or what doesn't work. So you either tweet something and you'll get no likes. You're like, okay, that doesn't work.
+
+I can move on to the next thing. Or you'll build something and it won't work. You're like, okay, I can build something else.
+
+Or you've discovered, okay, this does work. This is what the people want. So even if you have a nine to five, just find like five to 10 minutes a night to build something or create something.
+
+As long as you're taking action and you're building momentum, I promise you things will work out. All right. Well, that's great advice.
+
+Thank you, Alex, for coming on. And I hope to see you come back at a million dollars. I can't wait.
+
+Hopefully that'll be in two weeks. All right. I wanted to thank Alex again for coming on the channel.
+
+His story is amazing. He did this all in the last six months, which I think is really, really impressive how fast he's moving and how he's using AI to build. If you didn't need it already, this is proof that AI is going to change the game.
+
+Alex is proof of this. I put a link in the description to starter story build along with Alex's crash course on how to build MVPs with cursor the right way. Otherwise, I'll see you guys in the next one.
+
+Thank you for watching. Peace.

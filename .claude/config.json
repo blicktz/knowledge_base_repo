@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "persona-agent": {
+      "command": "python",
+      "args": ["-m", "dk_rag.mcp_server"],
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
+    }
+  }
+}

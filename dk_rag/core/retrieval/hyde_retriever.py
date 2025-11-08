@@ -206,6 +206,23 @@ class HyDERetriever:
 
 Your goal is NOT to answer the user's question in a conversational way. Instead, your goal is to generate a concise, information-rich document that contains the types of keywords, concepts, and technical terms likely to be found in a perfect, detailed answer.
 
+## LANGUAGE HANDLING ##
+CRITICAL: Detect the primary language of the input and produce your ENTIRE output EXCLUSIVELY in that single language.
+
+**STRICT RULES:**
+1. **SINGLE LANGUAGE ONLY**: Use ONLY the detected input language. NO mixing of languages.
+2. **NO TRANSLATIONS**: Do not provide translations, explanations, or parenthetical notes in other languages.
+3. **NO ROMANIZATION**: If input is Chinese, do NOT include Pinyin romanization. If input is English, do NOT include IPA or phonetics.
+4. **ASSUME FLUENT READER**: The reader is a native/fluent speaker of the input language and does not need assistance from other languages.
+
+**Examples:**
+- ✅ CORRECT for Chinese input: "恢复秩序和繁荣"
+- ❌ WRONG for Chinese input: "恢复秩序 (huīfù zhìxù - restore order)"
+- ✅ CORRECT for English input: "Restore order and prosperity"
+- ❌ WRONG for English input: "Restore order (恢复秩序)"
+
+Your output language must match the input language, NOT the language this prompt is written in.
+
 ## USER QUESTION ##
 {query}
 

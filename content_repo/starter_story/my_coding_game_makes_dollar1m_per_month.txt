@@ -1,0 +1,197 @@
+I built an online learning platform for software engineers to almost $1 million in monthly revenue. Sitting usually around 30k a day at the moment. How does this guy make a million dollars a month when he has hundreds of competitors in a saturated market?
+
+And a lot of that growth is due to something I call the purple cow strategy. Lane is a software engineer who decided to start a side project called boot.dev. He started to make a little money until one day he came across a marketing channel that would explode his business.
+
+The big shift was going from just blogging to starting boot. I sat down with Lane for a couple hours to learn about his story and figure out what it really takes to build an eight-figure business as a developer. And good news is he shared everything, including why you should never copy someone else's business idea, what most people get wrong about MVPs, and a full breakdown of his revenue, costs, and everything you want to know about his million-dollar-per-month business.
+
+Now, let's get into it. I'm Pat Walls, and this is Starter Story. All right.
+
+Welcome, Lane. Welcome to the channel. Tell me a little bit about who you are and what you built.
+
+Yeah, my name is Lane Wagoner. I'm the founder of boot.dev. It's an online learning platform for software engineers, and it's very interactive.
+
+That's kind of the defining unique trait of it. Really, we're just trying to get you doing as close to what you would be doing in the real world as a software engineer. So we're trying to, like, un-sandbox the experience and have you go through the courses like you would in the real world.
+
+And we're making almost a million dollars a month at the moment. Can you give me a further breakdown of how this works as a business? What's the business model here?
+
+So it's a coding-first platform where you write a ton of code, both on your local machine and in the browser, and all of our content is free. There's about 30 courses, but you lose interactivity after a certain point if you're not a paying member. And we're currently sitting at 25,332 active paying members.
+
+You built this website to almost a million dollars a month. There's a lot of coding courses and a lot of stuff out there. What did you do differently?
+
+What is your secret ingredient for this business? In this market, online learning, you've got to differentiate pretty hard because there's a lot of competition in the space. We kind of had different differentiators along the way as we grew the business over the last four years.
+
+The first was a content differentiation. So we're serving this market of people that want to learn back-end technologies and just aren't finding the resources because front-end is so dominant in the online learning space. The next differentiator was you should make your thing feel totally different, totally unique.
+
+And I really was inspired by Seth Godin's book, The Purple Cow. Fantastic marketing book. But the basic idea is when someone lands on your site, as a new entrepreneur, it can be really tempting to go look at a bunch of competitors' websites and like, oh man, they're so beautiful.
+
+They're so well-designed. I should make my website look like theirs. Absolutely, you should not do that.
+
+Let's go back. Let's, if you can give me a little bit of a timeline of what it looked like, how you came up with the idea for this and, you know, what were you doing before you're running this huge business? Yeah, so I was making about 200K total comp at the time, leading just a small team of three at that time.
+
+I've always wanted to build a business. I've always wanted to get out of the nine to five employee work. The business, BootDev, had just started making about $2,000 a month.
+
+So multiply that by 12, it's like 24K, right? And then take into account any expenses, like you're basically not making any money. So I'm talking to my wife about this.
+
+I'm like, you know, it's making 2K a month. Like that's, that's not so bad. And I really like it.
+
+And I feel like if I put more time into it, we could grow this thing. She was incredibly nervous about that idea because obviously I'm earning 200K a month. We've got our second child on the way.
+
+She did not like the risk. Frankly, I didn't even really like the idea of taking that much risk. So as it happens, the CFO, the company I was working at, went to go work with an ex-CEO of mine.
+
+So a mutual friend. And I went and pitched him and his partner on the idea of investing in BootDev. And so he gave me the angel funding.
+
+It was 330K. But it gave me enough of like assurance that, okay, we could at least have a couple of years of runway to try this new business. Okay, let's talk about ideas.
+
+How did you find this idea? Yeah, so I was a backend engineering manager. And the impetus for the whole thing was I was trying to hire Go developers.
+
+This is back in 2020. I was having a hard time. Like I'd open up, you know, a job position.
+
+And I'd get like five, six, seven people applying for the job. And so it really just seemed to be that people getting into coding were gravitating towards the front end side. And almost being pushed to the front end side by online learning platforms.
+
+So it just seemed to me like there's this huge vacuum in the market where if you wanted to learn backend stuff, you want to learn databases, infrastructure. It's very hard to do it online. All right, let's talk about building.
+
+As a developer, how did you take this idea from zero to one? So you should have a very good idea of who you're building for and what problem you're solving. And you should just solve that problem, but you should solve it really fucking well.
+
+Because if you don't have a great solution, you're not going to break into the space. But you should tightly scope what you're building. I see this mistake all the time too.
+
+The idea of just packing on new features, solving different problems. You should only be listening to what problems your customers have. And then you should be filtering out any problems from customers that aren't exactly the type of customer that you want to serve.
+
+In my opinion, the most dangerous thing you can do is try to serve multiple customer personas. What's your take on building MVPs? So I think a lot of people, even, I mean, myself, as I launched BootDev, think about this incorrectly.
+
+MVP doesn't mean shitty product. And it can't mean that. If it does mean that for you, your product is going to flop pretty hard.
+
+You should shoot for minimum quantity, not minimum quality. Okay, so before we get into growth, there's one thing that I wanted to ask you. Because I was looking at the notes, I noticed that you use PostHog for analytics, the software tool PostHog.
+
+And I just think that's super cool that both of us use this tool, love this tool. But I just want to hear specifically how you use PostHog and how it helps grow your business. PostHog is great.
+
+I was super happy when we switched over. Because I was using a different, like, product analytics tool. We realized that, like, PostHog is way cheaper.
+
+PostHog's feature set is way more expansive. So integrating with PostHog was super easy, right? Their pricing model makes sense from a, like, data usage standpoint.
+
+And to me, the biggest thing was that PostHog feels like it's run by developers who know marketing, not non-technical marketers. Anyways, yeah, I highly recommend PostHog for product analytics. Man, I completely agree.
+
+PostHog is today's sponsor. And I'm just going to go on their website real quick. This is PostHog.
+
+And by the way, how freaking cool is their website? They got this crazy dinosaur shooting flames right here. But for anyone that's launching anything and wants to track how their customers are using their product, you can install PostHog on your site with one line of code.
+
+And they have a very generous free plan. So it's free to start. And once it's installed, you'll have really good product analytics, web analytics, session replay, where you can see what people are actually doing on your website or in your product.
+
+They have A-B testing. They got surveys and they got more. One of my personal favorite features is the A-B testing.
+
+And I'm going to show you an A-B test for Starter Story right now in PostHog. And this A-B test increased our conversion rate by over 300%. You can see it right there.
+
+That's an insane number. And what I think is even cooler is that you can track the entire funnel of how this A-B test affects the entire conversion flow. And you can see that right here.
+
+A-B tests like these are super important to our business. And there's really just not like another tool that really can do it this well. So if you want to install PostHog, just click the first link in the description.
+
+You can install it for free. Just please let them know that you came from Starter Story. All right, back to the video.
+
+Let's get into how Lane grew this business. Marketing and distribution. How did you get users to boot.dev?
+
+And how did you grow this business? So from zero to about 2K a month, we really grew from my blog. It was great for finding people that were really interested in the product.
+
+And we did a ton of product development over those first year to 12 months. But then we weren't growing, right? We were like, we started to feel a lot more confident in what we were building.
+
+But we just weren't getting enough people in the door for it to make sense as a business. And what we quickly found was that trust building, especially in the education space, is extremely important. So working with influencers was like a cheat code because the influencers are already trusted by their audience.
+
+So if you can get an influencer to try your thing and like it, you kind of unlock a new little section of the market because now their followers will naturally trust you a lot more. So then from 10K to 30K, we really grew a lot off the back of these free Code Camp collabs, which was basically me recording an eight-hour course, giving it to free Code Camp for free so they can publish it on their YouTube channel and us getting some exposure through that. So going from 30K up to where we're at now, which is almost a million a month, we had to scale what we were doing.
+
+Like I wasn't going to be able to create all this video content that was going to drive that amount of traffic. YouTube integrations, YouTube marketing, we've been able to scale that with other creators. And the unique kind of cheat code that we have as boot dev is that we have such strong affinity with a gaming audience.
+
+So we've actually done most of our YouTube influencer marketing to gaming audiences rather than coding audiences. Yeah. If you had advice for someone to go do their first influencer collab, what would be like a couple of bullet points on that?
+
+So the most important thing is finding the right several influencers to test with. And the easiest way to find the right ones is to talk to your existing customers. Hopefully you have some.
+
+Go ask them who they watch, right? Who they listen to. This has been the best way for us to source new influencers to work with.
+
+Also, if you're going to work with influencers, there's one giant exploit that you can take advantage of that doesn't work in most other channels, which is if you're incredibly easy to work with and you do a lot of work for the influencer, you can get better deals. You can shoot your own B-roll for the influencer. There's a lot more room for arbitrage when doing one-off deals with influencers.
+
+Do everything you can to make their life as easy as possible. Let's talk about product. We could talk about growth channels all day, but nothing's going to work unless you have a truly great product that people love.
+
+So tell me what you think about that. I think the right way to think about where you should be spending your time, whether it's on the product or marketing, assuming you know you're a small team, is that the product is the thing that really is non-negotiable. You need the product to be good and you need to have confidence in the product before you spend a lot of time and money marketing the product.
+
+There's a minimal amount of marketing you do need to do to get some initial users to get product feedback. But in that first, you know, pre-product market fit cycle, all your focus should be on the product and making the product solve the very specific problem for a very specific person that you're trying to get it to solve. That's great.
+
+Let's talk about monetization. What I think is cool about your site is that you kind of give away your stuff for free and then you charge a small percentage of people who want that extra feature. Can you walk through how your business is monetized and what the customer journey typically looks like?
+
+It was really kind of experiment at first of like, could we just like make all the content free? And you lose interactivity after a certain point if you're not a paying member. It worked.
+
+And I think the right business takeaway was let people really understand the product before we ask them to pay for it. It was resonating enough with them. So that's again comes back to the like, you do need to spend all this time iterating on the product and making sure that you're actually solving the problem.
+
+And you need to be able to convince people that your product solves the problem before the purchasing decision happens, which just so happens in our case to be a longer free trial or free demo of the interactive features. Well, that's cool. And that brings me to my next topic, which is you could just break down what kind of tools and languages you use to build boot dev and also what tools you use to run the business.
+
+So for the tech nerds out there, it is a fully custom built web app. So we use Golang on the back end. Postgres is our database.
+
+We host everything on Google Cloud and Cloudflare. We use Kubernetes, Docker, Vue, Nux, JavaScript, TypeScript. Again, very, very custom tech stack.
+
+For the marketing nerds out there, of course, we use PostHog for all of our product analytics and we use SendGrid for all of our email stuff. We use their email API and using both together has, I mean, it eliminates another bill, but it also just makes integration easier. And then for the fintech nerds, we're just using Stripe.
+
+Stripe is great. I can't imagine using anything else at this point. On that same topic, these tools cost money.
+
+I'd love to get a little bit more details on the actual costs of this business, not just the tools, but just the cost as a whole. What are the costs and margins look like for boot dev? So our total revenue for 2024 was $5.7 million.
+
+The cost of goods sold on that revenue was only $300K. So we spent around $600,000 to $700,000 last year on salaries and like full-time contractors. And then the bulk of our expenses were marketing expenses.
+
+We spent almost $2 million on marketing, leaving us an actual profit at the end of the year of around $2.5 million. Cool. All right.
+
+Well, that kind of ends the technical section of the interview. I'd just love to hear a little bit more about your personal life or just your regular life. What does a day in the life look like for you?
+
+You work from an office or you're working from home or what does that look like? I've been working from home since the pandemic. So most days I have one meeting.
+
+And when I say meeting, I actually often mean something like this, like something on my calendar where I'm hopping, you know, on a call with somebody. Maybe we're recording a podcast. Maybe we're recording something for YouTube.
+
+And the rest of my time I'm spending writing courses. Like, and it really is that simple. I wake up, I get my coffee, I start writing courses.
+
+Later in the day, I have a meeting. Maybe it's an internal one. I honestly only have like three of those a week these days.
+
+Maybe it's an external one like this video. And then I'm back to writing courses or, you know, doing product design type work. Maybe working on a new ad that we're running.
+
+At some point during the day, taking my kids to the gym. I've got a two-year-old and a four-year-old. Third one on the way next month.
+
+So writing courses and trying to spend time, you know, with the kids and family. Nice, nice. So yeah, working on the product.
+
+Exactly where you should be. Last question that I have for you is, you know, for anyone watching this, it's going to be a lot of people, a lot of developers watching this. What advice would you have to, you know, someone who does want to start a business like you?
+
+If you could stand on Lane's shoulder when you're just starting out, what would be your advice? There's really two mistakes I see people making. The first one I think is to think about your business education as a content consumption phase and then an action phase.
+
+And I think, you know, through traditional education, we're kind of taught to think this way, right? I go to college for four years and then I do stuff. I think that's absolutely the wrong way to approach business.
+
+The biggest, the biggest mistake is not taking action early, not starting a side project. And the second biggest mistake I think is just focusing on kind of general content consumption about business and not digging into something really hard and specific. I think a lot of founders get way ahead of themselves thinking like, I'm going to be the CEO.
+
+I'm the fucking idea guy, right? I'm going to delegate everything. I'm going to hire that salesperson, hire that marketer, hire that developer.
+
+But omitting the hard skills is a big mistake. It's important. Yeah.
+
+If you're a developer, it may be, you know, really important to go and learn that marketing thing. Or if you're a marketer, it may be really important to go and learn that developer thing, depending on your business. So I think that's great advice.
+
+All right, Lane. Thank you for coming on. The business you built is amazing.
+
+Million dollars a month. It's just so impressive. It's just so cool.
+
+Thanks so much for having me on, man. Okay, so Lane is the perfect example of how a solo developer can turn a side project into thousands of dollars while still keeping his nine to five. But that comes with knowing the right information and finding the right problem that's worth solving.
+
+Now, imagine there is a place that gave you this. Problems to solve, blueprints for building different businesses, and the marketing strategies that turn side projects like Lane's into million dollar life changing online businesses. At Starter Story, we have a library of over 4,000 case studies, business idea breakdowns, and a ton of other stuff where you can learn this.
+
+And it's all backed by data by real entrepreneurs just like Lane. Right here, I'm looking at Lane's case study right now. We interviewed him a long time ago when his business was just doing a few thousand bucks a month.
+
+I just think it's so cool that we were able to talk to Lane while he was still doing this as a side project. This is the type of stuff that you'll get inside Starter Story. So if you're serious about building a profitable side project like Lane, head to that link in the description, and you'll be able to download 52 micro SaaS ideas for free and get started on your own journey of building something that might change your life.
+
+All right, guys. Thanks for watching, and I'll see you in the next one. Peace.
+
+Peace. Peace. Peace.
+
+Peace. Peace. Peace.
+
+Peace. Peace. Peace.
+
+Peace. Peace. Peace.
+
+Peace. Peace. Peace.
+
+Peace. Peace. Peace.
+
+Peace. Peace. Peace.
+
+Peace. Peace. Peace.
+
+Peace. Peace.

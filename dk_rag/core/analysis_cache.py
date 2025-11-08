@@ -13,6 +13,7 @@ from typing import Dict, List, Any, Optional, Tuple
 from ..data.models.persona_constitution import StatisticalReport
 from ..config.settings import Settings
 from ..utils.logging import get_logger
+from ..utils.text_utils import count_words
 
 
 class AnalysisCacheManager:
@@ -21,16 +22,18 @@ class AnalysisCacheManager:
     expensive analysis steps during persona extraction iterations
     """
     
-    def __init__(self, settings: Settings, persona_id: str):
+    def __init__(self, settings: Settings, persona_id: str, language: str = "en"):
         """
         Initialize the analysis cache manager
-        
+
         Args:
             settings: Application settings
             persona_id: Identifier for the persona (for multi-tenant isolation)
+            language: Content language ('en', 'zh', etc.)
         """
         self.settings = settings
         self.persona_id = persona_id
+        self.language = language.strip() if language else "en"
         self.logger = get_logger(__name__)
         
         # Setup cache directory
@@ -88,7 +91,7 @@ class AnalysisCacheManager:
             "latest_hash": content_hash,
             "timestamp": analysis_timestamp,
             "document_count": len(documents),
-            "total_words": sum(len(doc.get('content', '').split()) for doc in documents),
+            "total_words": sum(count_words(doc.get('content', ''), self.language) for doc in documents),
             "sources": [doc.get('source', 'unknown') for doc in documents],
             "analyzer_version": "1.0.0",
             "settings_hash": self._calculate_settings_hash()
@@ -139,7 +142,7 @@ class AnalysisCacheManager:
             "document_summaries": [
                 {
                     "source": doc.get('source', 'unknown'),
-                    "word_count": len(doc.get('content', '').split()),
+                    "word_count": count_words(doc.get('content', ''), self.language),
                     "char_count": len(doc.get('content', ''))
                 }
                 for doc in documents

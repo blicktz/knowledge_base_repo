@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "persona-agent": {
+      "command": "python",
+      "args": ["-m", "dk_rag.mcp_server"],
+      "env": {
+        "PYTHONPATH": "/Users/blickt/Documents/src/pdf_2_text"
+      }
+    }
+  }
+}

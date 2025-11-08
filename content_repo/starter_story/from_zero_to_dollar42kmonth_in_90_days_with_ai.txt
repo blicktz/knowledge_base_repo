@@ -1,0 +1,171 @@
+It took me 14 days to build CodeGuide.dev, and within 90 days, we've gone from zero to 42K per month. This is CJ, a longtime member of Starter Story, and a few weeks ago, he sent me a DM that blew me away. In just 49 days, he took his app from zero to $17,000 a month without spending a single dollar on marketing.
+
+But what's even crazier is he didn't even build the product until he knew it was validated. So I didn't build any product. I didn't have anything.
+
+I just had a glimpse of what a product can look like in a landing page, and people were signing up from left and right, and that was the moment when I decided, okay, now I need to take this and create a proper tool that solves this problem. Now, I know what you're thinking. He's probably got a huge audience, but that's actually not true.
+
+It all started when CJ set out to build 12 startups in 12 months, which ultimately led him to an idea that would change his life forever. I brought CJ onto the channel to tell his story, and he shared everything, including a full breakdown of the tweet that broke his startup, how he got thousands of signups before writing any code, and the unexpected marketing strategy that's grown his business to over 500,000 in ARR. If you're building an AI, this is a must watch because this is what is actually working right now.
+
+So let's get into it. I'm Pat Walls, and this is Starter Story. All right, CJ, thanks for coming on.
+
+Who are you, and what's your story? So my name is Sajilah Mazafir, and people on X know me by the name of CJZ. I am the founder of CodeGuide, an AI startup that helps AI developers write detailed documentation for AI coding models.
+
+So we launched on 24th of December, and in just last three months, we've grown CodeGuide to 42K MRR with a community of more than 4,800 AI developers, and we're projecting to cross around 90K this month. Zero to 42,000 MRR in just a couple months is almost unheard of. So tell me about what is the core issue that your product solves and what made it grow so fast?
+
+So basically, CodeGuide fixes a core problem in AI coding, which is AI coding models are not ready yet. They hallucinate, they assume things. So I just try to, say, fix just one problem, which is AI hallucinations, by building a knowledge base around the user's idea.
+
+Our core users are pretty much beginners to semi-developers, and they can attach this knowledge base to these AI coding tools. So you can say CodeGuide is just a bridge between two parties, and that's why it is growing really fast, because I'm not reinventing my own audience. I'm just utilizing the AI coding tools audience, and we're just making the AI coding workflow better.
+
+I mean, that growth is just amazing, and I think that there's something there, the opportunity around building around AI and building around AI apps. Why is AI coding such a big opportunity right now? So English is the most prominent coding language right now, and that was not possible before 2024.
+
+But now if you know English, you can literally code with AI. AI is writing 25% of Google's code. Cursor AI, which is just the top AI coding tool, that is one of the fastest growing companies right now.
+
+So if you learn how AI works, how to prompt AI, you can actually build a really profitable application right now that you can deploy online and make money from it, and people are doing that. You don't need to learn code, you just learn how to talk to this AI, and AI can execute code and build you the applications. What I think is, it's amazing what you built, and I know that you were a member of Starter Story for some time.
+
+I'd love if you could just briefly break down your backstory and how you got into building online. I moved to Canada in 2018, and I did my first 9 to 5, and that was like a horrible experience for me. I knew like I can do any 9 to 5, so I went back to the drawing board and stick to my basics, which is like just build stuff, just do something, and built a lot of agencies, built a lot of software products, SaaS products, you name it.
+
+And then in 2022, I was actually writing a lot of tweets about AI prompting, and I knew that AI coding is actually blowing up at the back end, and people are not noticing it. So I wanted to force myself to actually learn the craft, build and code with AI coding tools for like 10 to 12 hours per day, and I just publicly announced that I'll be doing 12 startups. And I ended up building 11 products of my own.
+
+Unfortunately, 10 collapsed. They didn't perform well, but one of them grew really fast, which is CodeGuide. And then in the end, you know, it was just like an overnight success after like all these seven years.
+
+And that's why I'm super stoked. I'm working 9 to 10 hours every single day just to make this product better, just to make it the best product out there for AI coders. So you built a bunch of stuff, but let's talk about how you found the idea that really kind of changed your life, right?
+
+How did you actually find this idea? I was just trying to solve my own problem with CodeGuide, actually. Like I said, I was running an MVP agency, and for each product, I had to chat with ChatGPT for like 9 to 10 hours to create all these technical documentations, to create a knowledge base that I can attach to these AI coding tools.
+
+So I turned my prompts into like a sequence using make.com, and I literally saved seven hours out of those nine hours, and that was magical for me. And then I created a landing page in like 30 minutes using both, and within two weeks, we got 1,800 waitlist signups. Nice, that's great.
+
+I would just love to hear a little bit more about your process for validating an idea. How did you know CodeGuide was validated? Yes, so Twitter is actually a really great platform to launch products.
+
+All you need to do is just share your screen, create a simple screen recording demo, and you just post it, and this type of content usually goes wild. So in this tweet, I'm just talking about like, what is my ideal cursor workflow? I just tweeted that out, and I was just mind blown that how many people were actually struggling with hallucination problem with AI.
+
+And then I just turned this thing into a landing page in like 20 minutes, the max using bold. And actual validation for me was when people starting to sign up. So I got more than 1,800 waitlist emails in like two weeks.
+
+That was the first stage of validation for me that people actually want this solution. And then I was just talking to all the beta users. I was trying to DM them, every single one that was commenting me just to asking them either they are using some other flow to remove or fix the AI hallucinations.
+
+And nobody was actually tackling in a better way than what we were trying to do. So that was the second stage of validation. And then that was the moment when I decided, okay, now I need to take this and put all my effort into it and create like a proper tool that solves this problem.
+
+I want to change the subject a little bit to building. I want to know how you actually built this. So could you walk through your step-by-step process for how you went from idea to actual launched app?
+
+Sure. So when I tweeted that and we got like 400 retweets and I got like 300 signups, that was a different feeling for me. And I knew like, okay, I am up to something.
+
+So what I did was I just sat for next, you know, 10 to 12 hours just documenting what can be the best UI and how I can take this thing to the production stage. And then spent like next three days just to design the proper front end so I can visualize it. Once I did that, I realized I can't do it myself because I have to launch it fast.
+
+So I just reached out to my friend and I said, hey, I'll take care of the front end and the marketing side. Can you do the backend and just the customer service? And he was very stoked about this idea because we were coding with AI for all these months.
+
+So now he takes care of the backend still. We're just team of two and I take care of the front end. So it took us just two weeks to actually from, that's just a raw UI to have a proper responsive web app launched for our users.
+
+And we got a hundred users the first day of launch that was on 24th of December, 2024. I just love CJ's story because it's proof that sometimes it's just about being in the right space at the right time. You got to try a lot of things, but when you finally find something that works, you're ready.
+
+And I really think that space right now is building in AI. Look, these AI coding tools are powerful, but they're still not magic yet. It's still really early days and the space can feel overwhelming if you don't have the right system or framework to follow.
+
+So shameless plug here, but we've been working on something for a while. It's called Starter Story Build, our platform for learning everything AI tools and vibe coding. Our flagship program is the AI app accelerator, where in about two weeks without knowing how to code, you'll ideate, build, and launch a real life production app using all AI tools, just like CJ.
+
+We've been running this program for a while behind the scenes. And every day I'm blown away by the stuff being built in there and just how fast things are moving. But this is way more than something you could get in the course because you walk away with a real world app completely built with AI, plus skills that might just change your life.
+
+Not only will you learn how to use these tools and to build stuff you never thought possible, but the program will also give you structure, accountability, and push you to actually take action, get it done, and ship it. What's even cooler is that we have office hours with AI coding experts to help you when you get stuck and a whole cohort of other people building alongside you. So if you're curious about building an app like CJ and you wanna surround yourself with other builders in AI, then head to the first link in the description to see if the AI app accelerator might be worth it for you.
+
+But we're keeping it small right now because we're focused on quality. So please make sure to head to that first link, put your email in if you wanna save your spot. Now let's get back to CJ.
+
+Okay, so you launched it, this kind of tweet thread blew up. Let's go deeper into the marketing. What's been working for you to market your SaaS and grow the SaaS since then?
+
+If I have to go all over again, I would do this playbook, which is content audience fit approach. You need to talk to users, what is the core problem and how you can fix it? I would literally go push content for next 14 days, warm up my audience.
+
+And then from there, I pick up what are their main core pain points. And for those pain points, what is the major one? And then I just build a product that fix just one problem.
+
+And then I push that product to that core group that gave me my initial users. And from there onwards, I would just double down on the content that works and I will find more people like the core audience. And that's how you can grow.
+
+And I coined this term called tutorial marketing. And what I do every single day is I just write a tutorial in the form of thread or long form tweet. And what I do is I write four threads per week and three long form posts.
+
+I just pick one topic, write a draft. And then the next day, I just edit that draft with clear mind. Then I design assets using Canva and Figma.
+
+So in this tutorial, same playbook. In the hook, you actually talk about the problem. And then you show them the exact blueprint, what's the ideal solution.
+
+And then you position your SaaS in between just a part of the solution. That type of content actually performs really well because that's bookmarkable content and shareable content. If your content is bookmarked, algorithm is in your side and people love that and you build credibility and trust.
+
+So that's how my churn rate is super low right now. And we're growing at massive pace. Nice.
+
+You're posting on Twitter. You're getting lots of attention, but how do you actually convert that into users and then to paying customers? Sure.
+
+My funnel is super simple. You just write content every single day and push that audience or traffic to your waitlist landing page. And you collect those emails because from those emails, you will get your first hundred customers because they already know that this is the pain that they want to solve.
+
+And they also trust you. And that's why they gave you your email address. Cool.
+
+Okay. So can you just explain your business model and your pricing? Sure.
+
+So our business model is pretty straightforward. We're not doing any trials because we're using top of the line AI models and AI models right now are not cheap. So we're using a mixture of models to create these well-structured documentation.
+
+Users can literally go to our landing page. They can sign up either for a monthly membership, which is right now at $29. That will be $39 to $49 in next six months.
+
+And we're also doing a heavy 40% discount on yearly membership, which also comes with different perks. Like we have official partnership with Cursor AI, WindServe, Bolt, Lovable, and all the top AI coding tools. Cool.
+
+Okay. Tell me about the tools, languages, and everything you use to build and run this business. So for a code guide, I use those tech stacks that are basically favored by AI coding models.
+
+So for the front end, we're using Next.js. And for Cloud, we use it to design our UI components that are using 3.7 model, and that costs at $20. For Cursor, basically this is our main IDE where we code all our stuff.
+
+That costs us $20. WindServe is another AI IDE that we use, $15 a month. Supabase, all our backend is PostgreSQL, Supabase, so $25 a month, and that covers our database and storage.
+
+Versal is where we deploy all our apps, so $48 a month. Hatchner is basically our cloud storage server. It costs us $25.
+
+The biggest bill is OpenAI API, which is $2,800. Then we also use Cloud API, and that costs us $300 plus. Gemini Flash API is free right now.
+
+Now, Cleric Dev is for user authentication. That's a very good tool. Then we use ConvertKit to send emails to our users.
+
+That costs us $45 a month. So all in all, cost is around like $3,500 per month. And obviously, we're not doing any paid marketing yet.
+
+We're doing everything organically from user acquisition to converting them into a paid user. Everything is organic. All my traffic is coming from X.
+
+So that's why the margins are higher. Let's move on to a little bit of personal stuff. So you live in Vancouver, you mentioned, and now you've got the successful startup.
+
+Tell me what a day in the life is like for CJ. Sure. So I wake up super early, like 5 a.m., and I just take a shower, go for prayer, and start my two hours of deep work session, just like you.
+
+Then I just go for a walk and start my second session, which involves research, coding, writing content. And then I take networking calls in the afternoon. And then in the evening, I listen to my favorite podcast, read a book for 10 minutes, and then write my schedule for the next day.
+
+So super simple, no fancy routines, but I'm sticking with this routine for the last one year now. One thing that I think is cool is that the reason why we're talking right now is that you actually sent me a message inside the Starter Story community. You've been a member of Starter Story for some time.
+
+And when I saw your message, I was just like so impressed with what you built. But I'd just love to hear about your experience joining Starter Story and how it helped you get to this place where you now have this successful startup. Sure.
+
+And I'm not promoting Starter Story. I actually got really good value out of Starter Story. There's a lot of valuable case studies, which I used actually to learn a lot about marketing myself, like how this guy actually created this idea, what was his flow and then how he ended up, you know, got like paying users.
+
+So I read like more than 100 plus, you know, case studies there. So Starter Story is like a huge asset for me personally. And then when I reached somewhere, you were the first guy that I reached out to on Slack that this is what I built, this is what we're trying to do.
+
+Just asking for different suggestions or advice from you. And yeah, here we are right now. Cool, man.
+
+That's awesome. Well, really the last question that I want to ask you is, you know, AI right now is really overwhelming. You know, things are changing so fast.
+
+You managed to find a way to make it work and you're already thinking ahead about the next thing. What advice would you have for someone watching this who wants to get into AI and building ideas and shipping ideas in the crazy world of AI? Sure.
+
+I think we are living in the best time to build software or any sort of product online. All you need to do is just make yourself AI native. The first step can be just go and chat GPT and have a chat with this AI.
+
+And you will know like how amazing this thing is. Next step can be, you can literally go have a voice-to-voice conversation, just brainstorm, just improve a skillset with that. So you understand like, okay, this is not a bubble.
+
+This is not a trend. This is actually a lot bigger than that. And from there onwards, you can just start coding.
+
+English is the hottest programming language right now. So all you need to do is use AI for research about the market, then write code, then write content, and then distribute the product. So every single thing or every piece of the puzzle is just right there for you.
+
+All you need to do is create your own canvas. All right. Well, that's the best advice I've heard all month.
+
+Thanks for coming on CJ. It was just so cool to see and enjoyed having you. Thanks Pat.
+
+Thanks for having me. Love the conversation. So I want to thank CJ for coming on.
+
+And when I look at his story, I want to say that CJ had some formula for success, but I just don't think that's the case. He just got started, shipped a bunch of stuff. And while doing that, he eventually kind of stumbled into an idea that changed his life.
+
+I see a lot of people waiting, waiting for the right time to start and sitting on the sidelines. And then I see others who are just getting started, playing around with these tools and shipping stuff every week. If you got started today, imagine where you'd be in two weeks.
+
+What's crazy about these AI tools is basically you can build anything you want without having to be an engineer or knowing how to code. Yes, it's early and not everything is perfect, but the early bird gets the bag. So if you're serious about building something, just click the first link in the description and let's build.
+
+All right. I'll see you guys in the next one. Peace.
+
+Peace. Peace. Peace.
+
+Peace. Peace. Peace.
+
+Peace. Peace. Peace.
+
+Peace. Peace. Peace.
+
+Peace. Peace. Peace.
+
+Peace. Peace. Peace.
+
+Peace.

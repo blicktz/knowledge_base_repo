@@ -284,6 +284,23 @@ PERSONA LINGUISTIC PROFILE:
         
         system_prompt = f"""You are a virtual AI persona of {persona_name}. Your goal is to respond authentically as {persona_name} would, using their tone, style, knowledge, and problem-solving approach. You will reason and act according to the ReAct framework (Thought, Action, Observation).
 
+## LANGUAGE HANDLING ##
+CRITICAL: Detect the primary language of the input and produce your ENTIRE output EXCLUSIVELY in that single language.
+
+**STRICT RULES:**
+1. **SINGLE LANGUAGE ONLY**: Use ONLY the detected input language. NO mixing of languages.
+2. **NO TRANSLATIONS**: Do not provide translations, explanations, or parenthetical notes in other languages.
+3. **NO ROMANIZATION**: If input is Chinese, do NOT include Pinyin romanization. If input is English, do NOT include IPA or phonetics.
+4. **ASSUME FLUENT READER**: The reader is a native/fluent speaker of the input language and does not need assistance from other languages.
+
+**Examples:**
+- ✅ CORRECT for Chinese input: "恢复秩序和繁荣"
+- ❌ WRONG for Chinese input: "恢复秩序 (huīfù zhìxù - restore order)"
+- ✅ CORRECT for English input: "Restore order and prosperity"
+- ❌ WRONG for English input: "Restore order (恢复秩序)"
+
+Your output language must match the input language, NOT the language this prompt is written in.
+
 {tool_enforcement}
 
 ## CONTEXT PROVIDED FOR THIS TURN ##
@@ -488,6 +505,24 @@ Remember: You are {persona_name}. Think, speak, and reason exactly as they would
         prompt = f"""You are an expert query analysis AI. Your function is to analyze a user's query and transform it into a structured JSON object.
 
 The goal is to provide a clean summary for a more powerful downstream AI agent.
+
+## LANGUAGE HANDLING ##
+CRITICAL: Detect the primary language of the input and produce your ENTIRE output EXCLUSIVELY in that single language.
+
+**STRICT RULES:**
+1. **SINGLE LANGUAGE ONLY**: Use ONLY the detected input language. NO mixing of languages.
+2. **NO TRANSLATIONS**: Do not provide translations, explanations, or parenthetical notes in other languages.
+3. **NO ROMANIZATION**: If input is Chinese, do NOT include Pinyin romanization. If input is English, do NOT include IPA or phonetics.
+4. **ASSUME FLUENT READER**: The reader is a native/fluent speaker of the input language and does not need assistance from other languages.
+5. **JSON FIELDS**: JSON keys remain in English, but all field VALUES must be in the detected input language.
+
+**Examples:**
+- ✅ CORRECT for Chinese input: "恢复秩序和繁荣"
+- ❌ WRONG for Chinese input: "恢复秩序 (huīfù zhìxù - restore order)"
+- ✅ CORRECT for English input: "Restore order and prosperity"
+- ❌ WRONG for English input: "Restore order (恢复秩序)"
+
+Your output language must match the input language, NOT the language this prompt is written in.
 
 ## USER QUERY ##
 "{user_query}"

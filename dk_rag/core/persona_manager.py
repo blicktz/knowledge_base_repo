@@ -137,31 +137,34 @@ class PersonaManager:
     def get_persona_vector_store(self, persona_id: str) -> VectorStore:
         """
         Get or create a vector store for a specific persona
-        
+
         Args:
             persona_id: The persona identifier
-            
+
         Returns:
             Persona-specific vector store instance
         """
         # Check if persona is registered
         if persona_id not in self.persona_registry:
             raise ValueError(f"Persona '{persona_id}' not registered. Register it first.")
-        
+
         # Return cached instance if available
         if persona_id in self.active_vector_stores:
             return self.active_vector_stores[persona_id]
-        
+
+        # Get persona language
+        language = self.get_persona_language(persona_id)
+
         # Create persona-specific settings
         persona_settings = self._create_persona_settings(persona_id)
-        
-        # Initialize persona-specific vector store with explicit persona_id
-        vector_store = VectorStore(persona_settings, persona_id)
-        
+
+        # Initialize persona-specific vector store with explicit persona_id and language
+        vector_store = VectorStore(persona_settings, persona_id, language=language)
+
         # Cache the instance
         self.active_vector_stores[persona_id] = vector_store
-        
-        self.logger.info(f"Initialized vector store for persona: {persona_id}")
+
+        self.logger.info(f"Initialized vector store for persona: {persona_id} (language: {language})")
         return vector_store
     
     
@@ -285,24 +288,43 @@ class PersonaManager:
         """
         return persona_id in self.persona_registry
     
-    def get_or_create_persona(self, persona_name: str, metadata: Optional[Dict[str, Any]] = None) -> str:
+    def get_or_create_persona(self, persona_name: str, metadata: Optional[Dict[str, Any]] = None, language: str = "en") -> str:
         """
         Get existing persona ID or create new one
-        
+
         Args:
             persona_name: Human-readable persona name
             metadata: Optional metadata about the persona
-            
+            language: Content language code ('en' for English, 'zh' for Chinese)
+
         Returns:
             The persona ID
         """
         persona_id = self._sanitize_persona_id(persona_name)
-        
+
         if not self.persona_exists(persona_id):
-            return self.register_persona(persona_name, metadata)
-        
+            # Add language to metadata
+            full_metadata = metadata or {}
+            full_metadata['language'] = language
+            return self.register_persona(persona_name, full_metadata)
+
         return persona_id
-    
+
+    def get_persona_language(self, persona_id: str) -> str:
+        """
+        Get the language for a persona.
+
+        Args:
+            persona_id: Persona identifier
+
+        Returns:
+            Language code ('en', 'zh', etc.), defaults to 'en' if not set
+        """
+        if persona_id in self.persona_registry:
+            metadata = self.persona_registry[persona_id].get('metadata', {})
+            return metadata.get('language', 'en')
+        return 'en'
+
     # Artifact Management Methods
     def _save_json(self, data: Union[Dict, List], file_path: Path, compress: bool = False):
         """Save data as JSON with optional compression."""

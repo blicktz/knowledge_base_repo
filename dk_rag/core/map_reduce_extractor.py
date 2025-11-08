@@ -138,6 +138,23 @@ class MapReduceExtractor:
         map_mental_models_prompt = """
 You are a highly precise AI analyst acting as a knowledge extractor. Your task is to identify and structure the repeatable, actionable frameworks ("Mental Models") an influencer teaches by following a strict input-output format.
 
+## LANGUAGE HANDLING ##
+CRITICAL: Detect the primary language of the input and produce your ENTIRE output EXCLUSIVELY in that single language.
+
+**STRICT RULES:**
+1. **SINGLE LANGUAGE ONLY**: Use ONLY the detected input language. NO mixing of languages.
+2. **NO TRANSLATIONS**: Do not provide translations, explanations, or parenthetical notes in other languages.
+3. **NO ROMANIZATION**: If input is Chinese, do NOT include Pinyin romanization. If input is English, do NOT include IPA or phonetics.
+4. **ASSUME FLUENT READER**: The reader is a native/fluent speaker of the input language and does not need assistance from other languages.
+
+**Examples:**
+- ✅ CORRECT for Chinese input: "恢复秩序和繁荣"
+- ❌ WRONG for Chinese input: "恢复秩序 (huīfù zhìxù - restore order)"
+- ✅ CORRECT for English input: "Restore order and prosperity"
+- ❌ WRONG for English input: "Restore order (恢复秩序)"
+
+Your output language must match the input language, NOT the language this prompt is written in.
+
 ## TASK DEFINITION & GOAL ##
 
 Your primary goal is to find and formalize structured, step-by-step processes from the provided text.
@@ -213,6 +230,23 @@ The user mentioned a "3-P Framework". It has three clear, sequential steps. This
         map_core_beliefs_prompt = """
 You are a highly precise AI analyst acting as a knowledge extractor. Your task is to identify and formalize the foundational principles, or "Core Beliefs," that guide an influencer's worldview and advice by following a strict input-output format.
 
+## LANGUAGE HANDLING ##
+CRITICAL: Detect the primary language of the input and produce your ENTIRE output EXCLUSIVELY in that single language.
+
+**STRICT RULES:**
+1. **SINGLE LANGUAGE ONLY**: Use ONLY the detected input language. NO mixing of languages.
+2. **NO TRANSLATIONS**: Do not provide translations, explanations, or parenthetical notes in other languages.
+3. **NO ROMANIZATION**: If input is Chinese, do NOT include Pinyin romanization. If input is English, do NOT include IPA or phonetics.
+4. **ASSUME FLUENT READER**: The reader is a native/fluent speaker of the input language and does not need assistance from other languages.
+
+**Examples:**
+- ✅ CORRECT for Chinese input: "恢复秩序和繁荣"
+- ❌ WRONG for Chinese input: "恢复秩序 (huīfù zhìxù - restore order)"
+- ✅ CORRECT for English input: "Restore order and prosperity"
+- ❌ WRONG for English input: "Restore order (恢复秩序)"
+
+Your output language must match the input language, NOT the language this prompt is written in.
+
 ## TASK DEFINITION & GOAL ##
 
 Your primary goal is to uncover the fundamental, often repeated, rules and assumptions that underpin the influencer's content.
@@ -282,6 +316,23 @@ The influencer repeatedly emphasizes action over planning. The phrase "Action pr
         # Reduce phase prompt for mental models
         reduce_mental_models_prompt = """
 You are a senior AI strategist. Your task is to analyze a large collection of candidate "Mental Models" and produce a final, consolidated, and de-duplicated list of the top {top_k} frameworks, strictly adhering to the provided instructions and the required JSON format.
+
+## LANGUAGE HANDLING ##
+CRITICAL: Detect the primary language of the input and produce your ENTIRE output EXCLUSIVELY in that single language.
+
+**STRICT RULES:**
+1. **SINGLE LANGUAGE ONLY**: Use ONLY the detected input language. NO mixing of languages.
+2. **NO TRANSLATIONS**: Do not provide translations, explanations, or parenthetical notes in other languages.
+3. **NO ROMANIZATION**: If input is Chinese, do NOT include Pinyin romanization. If input is English, do NOT include IPA or phonetics.
+4. **ASSUME FLUENT READER**: The reader is a native/fluent speaker of the input language and does not need assistance from other languages.
+
+**Examples:**
+- ✅ CORRECT for Chinese input: "恢复秩序和繁荣"
+- ❌ WRONG for Chinese input: "恢复秩序 (huīfù zhìxù - restore order)"
+- ✅ CORRECT for English input: "Restore order and prosperity"
+- ❌ WRONG for English input: "Restore order (恢复秩序)"
+
+Your output language must match the input language, NOT the language this prompt is written in.
 
 ## TASK DEFINITION & GOAL ##
 
@@ -357,6 +408,23 @@ The two candidate models clearly refer to the same "3-P Framework". I will merge
         # Reduce phase prompt for core beliefs
         reduce_core_beliefs_prompt = """
 You are a senior AI strategist and philosopher. Your task is to analyze a large collection of candidate "Core Beliefs" and produce a final, consolidated, and de-duplicated list of the top {top_k} foundational principles, strictly adhering to the provided instructions and the required JSON format.
+
+## LANGUAGE HANDLING ##
+CRITICAL: Detect the primary language of the input and produce your ENTIRE output EXCLUSIVELY in that single language.
+
+**STRICT RULES:**
+1. **SINGLE LANGUAGE ONLY**: Use ONLY the detected input language. NO mixing of languages.
+2. **NO TRANSLATIONS**: Do not provide translations, explanations, or parenthetical notes in other languages.
+3. **NO ROMANIZATION**: If input is Chinese, do NOT include Pinyin romanization. If input is English, do NOT include IPA or phonetics.
+4. **ASSUME FLUENT READER**: The reader is a native/fluent speaker of the input language and does not need assistance from other languages.
+
+**Examples:**
+- ✅ CORRECT for Chinese input: "恢复秩序和繁荣"
+- ❌ WRONG for Chinese input: "恢复秩序 (huīfù zhìxù - restore order)"
+- ✅ CORRECT for English input: "Restore order and prosperity"
+- ❌ WRONG for English input: "Restore order (恢复秩序)"
+
+Your output language must match the input language, NOT the language this prompt is written in.
 
 ## TASK DEFINITION & GOAL ##
 

@@ -34,20 +34,30 @@ class CoreBeliefsStore:
         self,
         settings: Settings,
         persona_id: str,
-        embedding_model: str = "sentence-transformers/all-mpnet-base-v2"
+        embedding_model: str = None,
+        language: str = "en"
     ):
         """
         Initialize core beliefs vector store.
-        
+
         Args:
             settings: Application settings
             persona_id: Unique persona identifier
-            embedding_model: Name of the embedding model to use
+            embedding_model: Name of the embedding model to use (if None, uses language-appropriate model)
+            language: Content language for selecting appropriate embedding model
         """
         self.settings = settings
         self.persona_id = persona_id
-        self.embedding_model = embedding_model
+        self.language = language.strip() if language else "en"
         self.logger = get_component_logger("CBStore", persona_id)
+
+        # Get language-appropriate embedding model if not specified
+        if embedding_model is None:
+            from ...utils.model_manager import get_model_manager
+            model_manager = get_model_manager()
+            embedding_model = model_manager.get_embedding_model_for_language(self.language)
+
+        self.embedding_model = embedding_model
         
         if not persona_id:
             raise ValueError("persona_id is required for multi-tenant isolation")
@@ -171,25 +181,66 @@ class CoreBeliefsStore:
             
             # Index documents in batches
             total_indexed = 0
-            
+            duplicate_names = []
+
             for i in range(0, len(documents), batch_size):
                 batch = documents[i:i + batch_size]
-                
+
                 try:
-                    # Add documents to collection
-                    self.collection.add_documents(batch)
+                    # Generate unique IDs based on core belief names
+                    # This prevents duplicates and ensures idempotent rebuilds
+                    batch_ids = []
+                    for doc in batch:
+                        name = doc.metadata.get('name', '')
+                        if not name:
+                            # Fallback for documents without names
+                            doc_id = f"cb_unnamed_{total_indexed + len(batch_ids)}"
+                            self.logger.warning(f"Document at index {len(batch_ids)} has no name, using ID: {doc_id}")
+                        else:
+                            # Create deterministic ID from core belief name
+                            # Format: cb_<sanitized_name>
+                            sanitized_name = name.lower().replace(' ', '_').replace('/', '_').replace('\\', '_')
+                            doc_id = f"cb_{sanitized_name}"
+
+                            # Check for duplicate names within batch
+                            if doc_id in batch_ids:
+                                duplicate_names.append(name)
+                                # Add suffix to make unique
+                                doc_id = f"{doc_id}_{batch_ids.count(doc_id)}"
+
+                        batch_ids.append(doc_id)
+
+                    # Add documents to collection with explicit IDs
+                    # This makes rebuilds idempotent and prevents duplicates
+                    self.collection.add_documents(batch, ids=batch_ids)
                     total_indexed += len(batch)
-                    
+
                     self.logger.debug(
                         f"Indexed batch {i//batch_size + 1}: "
-                        f"{len(batch)} documents ({total_indexed}/{len(documents)} total)"
+                        f"{len(batch)} documents ({total_indexed}/{len(documents)} total) "
+                        f"with unique IDs"
                     )
-                    
+
                 except Exception as e:
                     error_msg = f"Failed to index batch {i//batch_size + 1}: {e}"
                     result.add_error(error_msg)
                     continue
-            
+
+            # Report duplicate names if found
+            if duplicate_names:
+                unique_duplicates = set(duplicate_names)
+                duplicate_warning = (
+                    f"Found {len(duplicate_names)} duplicate core belief names "
+                    f"across {len(unique_duplicates)} unique names: {', '.join(list(unique_duplicates)[:5])}"
+                )
+                if len(unique_duplicates) > 5:
+                    duplicate_warning += f" (and {len(unique_duplicates) - 5} more)"
+
+                self.logger.warning(duplicate_warning)
+                result.add_warning(duplicate_warning)
+            else:
+                self.logger.info("No duplicate core belief names detected ✓")
+
             # Update results
             result.documents_indexed = total_indexed
             result.vector_store_created = True

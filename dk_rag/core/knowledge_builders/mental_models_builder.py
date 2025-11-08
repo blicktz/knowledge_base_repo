@@ -87,7 +87,17 @@ class MentalModelsBuilder(BaseKnowledgeBuilder):
                 continue
         
         self.logger.info(f"Successfully built {len(documents)} mental model documents")
-        
+
+        # Count mental models with empty steps
+        empty_steps_count = sum(1 for item in valid_items if not item.get('steps', []))
+        if empty_steps_count > 0:
+            self.logger.warning(
+                f"Found {empty_steps_count}/{len(valid_items)} mental models with no steps "
+                f"({empty_steps_count/len(valid_items)*100:.1f}%)"
+            )
+        else:
+            self.logger.info(f"All {len(valid_items)} mental models have steps defined")
+
         # Log statistics
         stats = self.get_document_stats(documents)
         self.logger.debug(f"Mental model document stats: {stats}")
@@ -133,7 +143,13 @@ class MentalModelsBuilder(BaseKnowledgeBuilder):
                         content_parts.append(step_text)
                     else:
                         content_parts.append(f"{i}. {step_text}")
-        
+        else:
+            # Warn about missing steps
+            name = item.get('name', 'Unknown')
+            self.logger.warning(
+                f"Mental model '{name}' has no steps - this may indicate incomplete data extraction"
+            )
+
         # Categories (topical classification)
         if categories:
             categories_text = ", ".join(str(cat).strip() for cat in categories if str(cat).strip())
@@ -169,10 +185,14 @@ class MentalModelsBuilder(BaseKnowledgeBuilder):
         
         # Add mental model specific metadata
         metadata.update({
-            # Core mental model fields (simple types only - complex data is in document content)
+            # Core mental model fields
             'name': item.get('name', '').strip(),
             'description': item.get('description', '').strip(),
-            
+
+            # Structured data (stored as delimited strings for ChromaDB compatibility)
+            'steps_text': '\n'.join(str(s) for s in item.get('steps', [])),
+            'categories_text': '|'.join(str(c) for c in item.get('categories', [])),
+
             # Derived metrics for search optimization
             'steps_count': len(item.get('steps', [])),
             'categories_count': len(item.get('categories', [])),

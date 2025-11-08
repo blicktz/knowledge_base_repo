@@ -13,24 +13,27 @@ import logging
 
 from ...config.settings import Settings
 from ...utils.logging import get_logger
+from ...utils.text_utils import count_words
 
 
 class Document:
     """Represents a loaded document with metadata."""
-    
-    def __init__(self, content: str, source: str, metadata: Optional[Dict[str, Any]] = None):
+
+    def __init__(self, content: str, source: str, metadata: Optional[Dict[str, Any]] = None, language: str = "en"):
         """
         Initialize a document.
-        
+
         Args:
             content: Document text content
             source: Source path or identifier
             metadata: Optional metadata dictionary
+            language: Content language ('en', 'zh', etc.)
         """
         self.content = content
         self.source = source
         self.metadata = metadata or {}
-        self.word_count = len(content.split()) if content else 0
+        self.language = language
+        self.word_count = count_words(content, language)
         self.char_count = len(content) if content else 0
     
     def __str__(self) -> str:
@@ -44,6 +47,7 @@ class Document:
         return {
             'content': self.content,
             'source': self.source,
+            'language': self.language,
             **self.metadata
         }
 
@@ -56,14 +60,16 @@ class TranscriptLoader:
     with automatic encoding detection and text cleaning.
     """
     
-    def __init__(self, settings: Optional[Settings] = None):
+    def __init__(self, settings: Optional[Settings] = None, language: str = "en"):
         """
         Initialize the transcript loader.
-        
+
         Args:
             settings: Optional application settings
+            language: Content language ('en', 'zh', etc.)
         """
         self.settings = settings
+        self.language = language.strip() if language else "en"
         self.logger = get_logger(__name__)
         
         # Text cleaning patterns
@@ -116,7 +122,8 @@ class TranscriptLoader:
             document = Document(
                 content=cleaned_content,
                 source=str(file_path),
-                metadata=metadata
+                metadata=metadata,
+                language=self.language
             )
             
             self.logger.debug(f"Loaded document: {file_path} ({document.word_count} words)")
@@ -256,7 +263,7 @@ class TranscriptLoader:
             'file_path': str(file_path),
             'file_size': file_path.stat().st_size,
             'file_extension': file_path.suffix.lower(),
-            'word_count': len(content.split()) if content else 0,
+            'word_count': count_words(content, self.language),
             'char_count': len(content) if content else 0,
             'line_count': content.count('\n') + 1 if content else 0,
         }
@@ -495,7 +502,8 @@ class TranscriptLoader:
         
         for doc in documents:
             content = doc.get('content', '')
-            word_count = len(content.split()) if content else 0
+            # Use the loader's language setting
+            word_count = count_words(content, self.language)
             word_counts.append(word_count)
             total_chars += len(content)
         

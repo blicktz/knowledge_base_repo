@@ -1,0 +1,125 @@
+So I'm Andy Cloak, I'm the founder of Data Fetcher and I make $23,000 a month in recurring revenue. This is Andy. He's a solo founder who lives in London and he built a successful micro SaaS with one simple strategy.
+
+So step one is you wanna find a... I brought him onto the channel to break down exactly how he built this $23,000 per month business. In this video, we'll go over the genius platform strategy hiding in plain sight, his six-step framework for finding $20,000 per month ideas and a few business ideas that you can build in 2025.
+
+All right, let's get into it. I'm Pat Walls and this is Starter Story. All right, Andy, welcome to the channel.
+
+Tell me about who you are, what you built and what's your story. Hey Pat, great to be here. So I'm Andy Cloak, I'm the founder of Data Fetcher.
+
+It's now at 600 paying customers and it makes $23,000 a month in recurring revenue and I work on it as a solo founder. All right, well, before we get into what Data Fetcher is, how it works, can you just give me a little bit of background on your story and how you got here? Yeah, sure.
+
+So I studied engineering at university, but I never loved it. I always wanted to launch my own projects. And so I taught myself to code and then I was working as a freelance React developer in London for various startups, kind of launching things on the side, trying to get something off the ground and none of them would go anywhere until the first one that kind of made some money, which was a TikTok influencer directory.
+
+So I was scraping TikTok, selling that data as a SaaS business. And that got to a few thousand dollars a month in MRR and I sold it. And that kind of bought me a few months off to come up with the next thing, something a bit more sustainable.
+
+And I was kind of trying to launch like an IPO's newsletter. I was pulling financial data into Airtable to manage it all there. And that really sowed the seed for what would then become Data Fetcher years later.
+
+Okay. Can you tell me a little bit more about Data Fetcher, what it is and what it actually does? Yeah.
+
+So Data Fetcher is an Airtable extension that lets you connect to any other platform. So rather than like manually pulling your data into your Airtable database, you can connect it up using APIs and then schedule that to happen automatically. And it's a super flexible tool.
+
+So we have people doing marketing data. So pulling in like Facebook ads, Google analytics. We have people doing operations type workflows.
+
+So the use cases honestly keep on surprising me like even five years in. And that's honestly one of the best parts of running the business is seeing what people build of it. That's awesome.
+
+You built your app on top of a platform, Airtable. How did you find the opportunity to build on this platform? And why did you decide to build a business on top?
+
+Yeah. So I saw a very similar add-on for Google Sheets called API Connector. And they were doing super well.
+
+They had like 100,000 users and seemed to be like smashing it, kind of the perfect lifestyle business. And having run into this problem on Airtable before, I thought, could I build this for this new platform that's taken off? Airtable was just growing super fast and they just launched this marketplace.
+
+And I kind of validated it by looking at their forums to see what problems people are running into. And there seemed to be this need for like a really flexible tool. That was kind of the validation stage.
+
+All right. Well, before we get back into how Andy built this $23,000 per month micro SaaS, let's talk about what made this possible. He didn't try to create the next unicorn.
+
+He just built a simple tool to solve his own problem. And what started as a small side project completely changed his life. This is exactly why we launched Starter Story Build.
+
+It's your place to build and launch your side project using AI tools like Lovable and Cursor. And in just a few days, you'll learn how to use AI to build fully working apps and actually launch your project to the world. We've had hundreds of people go through the program and launch their first side project.
+
+So if you're serious about launching something this year, this is where to start. Just head to the first link in the description to check out Starter Story Build. All right, let's get back to Andy's story.
+
+When it comes to building on platforms like Airtable, what are the pros and cons of building on top of a growing platform like Airtable? Yeah, so the main benefit, I guess, is distribution, right? So being on the marketplace, especially being early to a marketplace like that, on a growing platform, you've just got this steady stream of super qualified leads.
+
+And they trust you because you've been approved by the platform themselves. So the other benefit of it is just, it's big enough to kind of change my life financially, but it's not such a big opportunity that there's loads of people raising loads of money to come and build like $100 million business. So it's kind of in this perfect indie hacker opportunity space where it just like sits in that sweet spot.
+
+I guess the main downside is the platform risk. So like your tool becoming kind of redundant overnight. Airtable have been pretty good so far.
+
+They've been a great kind of platform to build on. And I look at it as Data Fetcher sits in this sweet spot between they have scripting and they have no code imports, but they're unlikely to build something that like goes completely in between the two of them. And so I think it's safe for now, touch wood.
+
+Cool. You mentioned to me that you have kind of a framework for finding ideas to build on growing platforms. Could you break that down a little bit for us?
+
+Yeah, of course. So the first step is obviously finding that platform. And there's a tool I love for this, which is Exploding Topics.
+
+Step two, you then want to find a pain point on that platform. And you can look in their forums, on Reddit, on Twitter. You just want to find that use case.
+
+Step three is you want to borrow a proven add-on or pattern from like a more established platform. So for me, that was obviously Google Sheets and Airtable and borrow all the kind of like UX from that, as well as making it native or feel native to the platform you're on. Step four is you want to check you can integrate with your growing platform.
+
+So you want to look for, is there a public API? Is there a marketplace, an extension SDK? Step five is you want to do some napkin maths to find the size of the opportunity and work out how many users does this platform have?
+
+How common is this problem? And then how much are people willing to pay for it? So again, you can use that established platform to look at price points on there and assume they'll be roughly similar on the growing platform.
+
+And step six, you want to work out, will the platform crush you? How likely is this platform to build this into their feature set? And so you can look at their roadmap, you can look at their support forums and things like that and work out what kind of noises are they putting out about this feature that you're trying to build?
+
+As well as how native does it feel? Like how likely are they to add this as a native feature? And that's the hardest one to do, right?
+
+Because how can we see into the future? But you can use all of the data that you can find on the internet and just kind of like back into does this feel like an opportunity? And then you just have to go for it.
+
+All right. So that framework's awesome. Based on your framework and kind of what's hot right now, what are some great platforms to be building on right now that the audience watching could potentially build something?
+
+Yeah. So I think Notion is a great platform to build on. So it's not the newest tool, but it's still growing like crazy.
+
+And the API is relatively new. So I think there's a bunch of opportunities around automation, around reporting and getting data in and out of Notion. Another one that I love is Figma.
+
+So I think there's loads of little opportunities with things like exporting Figma to Webflow, to Framer, to whatever kind of CMS or web design tool that you want to use or hosting tool. The last thing I'd say is probably not building on like ChatGPT or Claude. So although there's like huge growth in those tools, everyone and their dog is building for ChatGPT and Claude just because there's so much competition.
+
+I think you're better off trying to use those tools to superpower your business and your tool. That's great. How did you grow this app from basically zero to $23,000 a month?
+
+Yeah, so I got the first customer after a few days. As I said earlier, just the benefit of being on a platform so early. And then I found that I could see certain use cases coming up again and again, certain APIs that people are connecting to.
+
+So I started doing content marketing around those use cases. So writing blog posts, creating YouTube videos on the most popular integrations. And then that just drove it through to like 1K in MRR after a few months and then 3K after a year.
+
+And then I realized that I could make it even easier for people. So I started building these no-code integrations. So for even less technical people to use Data Fetcher and that drove it through to 10,000 in MRR after the first year.
+
+And then it was just that rinse and repeat for a couple of years. So talking to customers, getting the feedback, building it in, and then telling people about it through content marketing. Went to 20K after three years.
+
+Cool. Well, thank you for sharing that. Let's switch topics a little bit and let's talk about tech stack.
+
+How did you build this? What tech did you use? And kind of what tools do you use on a daily basis?
+
+Yeah, so the extension itself is TypeScript and React and Airtable's own extension SDK. And then the backend's also TypeScript and Postgres, GraphQL, Node, obviously. The frontends, like the web app, the marketing site is Next.js and Tailwind, ShadCN.
+
+It's all hosted on Heroku. So the API and the database and stuff like that. For the kind of schedule stuff, the workers, that's on Hetzner, which is like a super low-cost hosting provider.
+
+Help Scout for support tickets. It's FastMail for email, Plausible for analytics, MailerLite for the email newsletter, SharpMogul for analytics, and then obviously Airtable itself for like product roadmap, content pipeline, everything like that. Cool.
+
+That's awesome. On the same note, let's talk about costs. You're making $23,000 a month.
+
+What are the costs and margins look like for a business like this? Yeah. So the biggest cost by far is hosting.
+
+So the hosting is like $2,500 a month. The tools that I just mentioned, all those SaaS tools come to about $1,000. The office that I go to, the co-working is $150.
+
+So the total margin is 85%. The default state is super lean, which is the perks of the SaaS business. Cool.
+
+Well, thank you for sharing that. Have there been any lessons that you've learned going from, you know, trying to figure out what idea to build to actually being a really successful indie hacker in the space? The biggest lesson has been the power of focus over chasing shiny objects.
+
+So over the few years, I've wasted probably six months trying to launch side businesses. And each time that I was working on them, the thing that I tell myself is that it was because of platform risk or the market saturation or whatever it was. But really it was because growth had slowed and I was getting bored and losing motivation.
+
+What I do now, it's a bit weird, but I use Claude as kind of like a business coach. So every time I start to get distracted or I'm not working hard enough, I literally go to Claude and I say, be my business coach and make me focus on the thing that's working and talk me out of trying to launch something new. And I'm embarrassed to say that it actually works pretty well.
+
+And so it's almost like having a co-founder, having that accountability. That's amazing. Last question that we ask everyone who comes on the channel, if you could stand on Andy's shoulder, you know, before you had a successful business, what would be your advice to young Andy?
+
+So I tell young Andy to do proper user testing, do it early and do it often. because I wasted almost an entire year without ever speaking to the people that are using what I'd built. And one afternoon, I found all of these UX issues and solving those, you know, increased the revenue, increased the usage, increased everything almost overnight.
+
+You learn why they actually like your tool over other tools. As easy as it is not to do, speak to the people that are using what you've built. Well, that's great advice.
+
+Talk to your customers. Thank you, Andy, for coming on the channel and your business is awesome. Excited to see you hopefully come back sometime again.
+
+Thank you, man. Thanks so much. That was great.
+
+All right. I want to thank Andy for coming onto the channel. I love his story because he launched this thing as just a simple side project.
+
+And eventually he grew it into a business that changed his life. I think anyone can launch apps like these and start to work toward their dream business. And again, this is why we created Starter Story Build.
+
+It's a program where we teach you how to use AI to build your next project. And in just a few days, we'll take you from idea to a working app ready to ship to the world. Just head to the link in the description to learn more about how to join Starter Story Build.
+
+Thank you guys for watching. We'll see you in the next one. Peace.

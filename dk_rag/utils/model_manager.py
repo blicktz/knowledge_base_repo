@@ -77,11 +77,32 @@ class ModelManager:
         self._chroma_embedding_functions: Dict[str, Any] = {}
         self._model_info: Dict[str, ModelInfo] = {}
         
-        # Configuration
-        self.default_embedding_model = "sentence-transformers/all-mpnet-base-v2"
-        self.default_reranker_model = "mixedbread-ai/mxbai-rerank-large-v1"
-        
+        # Configuration - Language-specific models for optimal performance
+        self.language_embedding_models = {
+            "en": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",  # Multilingual, good for English
+            "zh": "Qwen/Qwen3-Embedding-0.6B",  # Optimized for Chinese
+        }
+
+        # Default models (for backward compatibility)
+        self.default_embedding_model = "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+        self.default_reranker_model = "mixedbread-ai/mxbai-rerank-large-v2"
+
         self.logger.info("🤖 ModelManager initialized")
+
+    def get_embedding_model_for_language(self, language: str = "en") -> str:
+        """
+        Get the appropriate embedding model name for a given language.
+
+        Args:
+            language: Language code ('en', 'zh', etc.)
+
+        Returns:
+            Model name for the language
+        """
+        language = language.strip() if language else "en"
+        model_name = self.language_embedding_models.get(language, self.default_embedding_model)
+        self.logger.debug(f"Selected embedding model for language '{language}': {model_name}")
+        return model_name
     
     def get_embedding_model(
         self, 
